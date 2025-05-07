@@ -106,8 +106,8 @@
     -  **DHS** (2025-02-05 to ??) 
     -  **FEMA** (2025-02-05 to ??) 
         - FEMA Grants Outcomes: 2025-02-07 - ongoing
-    -  **State** (2025-02-10 to ??) Senior Advisor
     -  **USAID** (2025-02-10 to ??) Senior Advisor
+    -  **State** (2025-02-10 to ??) Senior Advisor
     -  **CISA** (2025-02-19 to ??) Senior Advisor
         - Microsoft 365 **[admin access]**: 2025-02-20 - ongoing
     -  **Education** (2025-02-20 to ??) 
@@ -120,7 +120,7 @@
 # Scott Coulter
 - category: wrecker
 - positions:
-    -  **SSA** (2025-02-18 to 2025-03-24) [as "SSA-2"] 
+    -  **SSA** (2025-02-18 to 2025-03-23) [as "SSA-2"] 
     -  **SSA** (2025-03-24 to ??) [as "SSA-2"] **Chief Information Officer**
 
 # Steve Davis
@@ -206,11 +206,13 @@
 # Justin Fulcher
 - category: wrecker
 - positions:
-    -  **DOD** (2025-03-04 to ??) 
+    -  **DOD** (2025-03-04 to 2025-04-24) 
     -  **DOD** (2025-04-25 to ??) Senior Advisor
 
 # Mattieu Gamache-Asselin
 - category: wrecker
+- positions:
+    -  **HHS** (2025-01-XX to 2025-01-XX) Senior Advisor - DOGE
 
 # Joe Gebbia
 - category: wrecker
@@ -247,7 +249,7 @@
 # Michael Grimes
 - category: leadership
 - positions:
-    -  **Commerce** (2025-01-29 to ??) 
+    -  **Commerce** (2025-01-29 to ??) **Senior Advisor**
 
 # Josh Gruenbaum
 - category: enabler
@@ -693,7 +695,7 @@
 # Jordan Wick
 - category: wrecker
 - positions:
-    -  **CFPB** (2025-02-07 to 2025-03-05) 
+    -  **CFPB** (2025-02-07 to 2025-03-04) 
         - Concur: 2025-02-07 - 2025-03-28
         - HRConnect **[read-write access]**: 2025-02-07 - 2025-03-28
         - Invoice Processing Platform: 2025-02-07 - 2025-03-28

@@ -431,15 +431,6 @@
     start_date: 2025-02-05
     start_date_truth: reported
     source: https://www.washingtonpost.com/climate-environment/2025/02/07/musk-trump-fema-doge/
-  - id: detail-gsa-state-coristine
-    type: detailed
-    agency: State
-    from: GSA
-    start_date: 2025-02-10
-    start_date_truth: reported
-    title: Senior Advisor
-    office: Bureau of Diplomatic Technology
-    source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
   - id: detail-gsa-usaid-coristine
     type: detailed
     agency: USAID
@@ -448,6 +439,15 @@
     start_date_truth: reported
     title: Senior Advisor
     office: Office of the CIO
+    source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
+  - id: detail-gsa-state-coristine
+    type: detailed
+    agency: State
+    from: GSA
+    start_date: 2025-02-10
+    start_date_truth: reported
+    title: Senior Advisor
+    office: Bureau of Diplomatic Technology
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
   - id: cisa-coristine
     type: detailed
@@ -497,7 +497,7 @@
     start_date_truth: verified
     nte_date: 2026-02-18
     nte_date_truth: verified
-    end_date: 2025-03-24
+    end_date: 2025-03-23
     end_date_truth: verified
     signed_date: 2025-03-06
     reimbursed: true
@@ -803,6 +803,9 @@
     type: detailed
     start_date: 2025-03-04
     start_date_truth: reported
+    end_date: 2025-04-24
+    end_date_truth: reported
+    comment: Assuming this position replace by Senior Advisor role
     source: https://www.forbes.com/sites/davidjeans/2025/03/04/pentagon-doge-official-justin-fulcher/
     agency: DOD
   - id: dod-fulcher-advisor
@@ -821,7 +824,18 @@
   age: 34
   background: coder
   category: wrecker
-  positions: []
+  positions:
+  - id: hhs-gamache
+    agency: HHS
+    type: unknown
+    title: Senior Advisor - DOGE
+    office: Assistant Secretary for Financial Resources
+    start_date: 2025-01-XX
+    start_date_truth: reported
+    end_date: 2025-01-XX
+    end_date_truth: reported
+    comment: ProPublica just reports he was there in January
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Mattieu-Gamache-Asselin
 
 - name: Joe Gebbia
   sort_name: Gebbia
@@ -969,6 +983,7 @@
     start_date_truth: reported
     source: https://www.nytimes.com/2025/01/29/us/politics/morgan-stanley-grimes-trump-commerce.html
     agency: Commerce
+    title: Senior Advisor
     supervisory: true
 
 - name: Josh Gruenbaum
@@ -2624,7 +2639,7 @@
     from: DOGE
     start_date: 2025-02-07
     start_date_truth: verified
-    end_date: 2025-03-05
+    end_date: 2025-03-04
     end_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     comment: Dates provided in court documents. Converted to full position

@@ -49,7 +49,7 @@
 # Commerce Department
 - slug: commerce
 - people:
-  - **Michael Grimes** (2025-01-29)
+  - **Michael Grimes** (2025-01-29) Senior Advisor
 
 # Consumer Financial Protection Bureau
 - slug: cfpb
@@ -57,7 +57,7 @@
   - **Jeremy Lewin** (2025-02-06) (detailed from GSA)
   - **Luke Farritor** (2025-02-07 - 2025-03-04) (detailed from GSA)
   - **Nikhil Rajpal** (2025-02-07 - 2025-03-21) (detailed from OPM)
-  - **Jordan Wick** (2025-02-07 - 2025-03-05) (detailed from DOGE)
+  - **Jordan Wick** (2025-02-07 - 2025-03-04) (detailed from DOGE)
   - **Chris Young** (2025-02-07) (detailed from OPM)
   - **Jordan Wick** (2025-03-05) Expert/Consultant
 - systems:
@@ -117,7 +117,7 @@
 # Department of Defense
 - slug: defense
 - people:
-  - **Justin Fulcher** (2025-03-04) (detail)
+  - **Justin Fulcher** (2025-03-04 - 2025-04-24) (detail)
   - **Justin Fulcher** (2025-04-25) Senior Advisor
 
 # Department of the Interior
@@ -324,6 +324,7 @@
 - people:
   - **Luke Farritor** (2025-01-21) (detailed from GSA)
   - **Rachel Riley** (2025-01-27)
+  - **Mattieu Gamache-Asselin** (2025-01-XX - 2025-01-XX) Senior Advisor - DOGE
   - **Clark Minor** (2025-02-14) Chief Information Officer
   - **Conor Fennessy** (2025-02-20) (detailed from Education)
   - **Jeremy Lewin** (2025-02-21) (detailed from GSA)
@@ -524,7 +525,7 @@
   - **OPM-3 (Akash Bobba)** (2025-02-03) (detailed from OPM)
   - **SSA-1** (2025-02-09) Expert
   - **Leland Dudek** (2025-02-16) Acting Commissioner
-  - **SSA-2 (Scott Coulter)** (2025-02-18 - 2025-03-24) (detailed from NASA)
+  - **SSA-2 (Scott Coulter)** (2025-02-18 - 2025-03-23) (detailed from NASA)
   - **SSA-5** (2025-02-18) (detailed from DOGE)
   - **SSA-10 (Ethan Shaotran)** (2025-02-18) (detailed from GSA)
   - **SSA-7 (Marko Elez)** (2025-02-18) (detailed from DOL)
