@@ -41,3 +41,5 @@ gem "edtf", "~> 3.2"
 gem "edtf-humanize", "~> 2.3"
 gem "shortuuid", "~> 0.6.0"
 gem "sqlite3", "~> 2.6"
+
+gem "racc", "~> 1.8"

@@ -69,10 +69,18 @@ namespace :data do
   desc "Clean all generated data files"
   task clean: [:clean_db, :clean_yaml, :clean_api]
 
-  desc "Process the events YAML file"
-  task :process_events do
-    ruby "#{SCRIPTS_DIR}/process_events_yaml.rb"
+  desc "Process and validate the events YAML file"
+  task :validate_events_yaml do
+    ruby "#{SCRIPTS_DIR}/validate_events_yaml.rb"
   end
+
+  desc "Process and validate the people YAML file"
+  task :validate_people_yaml do
+    ruby "#{SCRIPTS_DIR}/validate_people_yaml.rb"
+  end
+
+  desc "Validate all raw data YAML files"
+  task validate: %i[validate_events_yaml validate_people_yaml]
 
   desc "Create an empty database for loading data"
   task :create_db do

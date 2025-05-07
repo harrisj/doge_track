@@ -102,29 +102,6 @@
             "description": "The type of the event",
             "$ref": "valid_names.json#event_types"
         },
-        "access_type": {
-            "description": "The type of the access granted/changed to",
-            "$ref": "valid_names.json#access_types"
-        },
-        "access_systems": {
-            "description": "The systems access granted/changed/revoked for",
-            "type": "array",
-            "items": {
-                "$ref": "valid_names.json#system_ids"
-            }
-        },
-        "onboard_type": {
-            "description": "What kind of onboarding it was for DOGE staff",
-            "$ref": "valid_names.json#onboard_types"
-        },
-        "detailed_from": {
-            "description": "The agency the staff in the event were detailed from",
-            "$ref": "valid_names.json#agency_ids"
-        },
-        "detail_id": {
-            "description": "A link to a specific record in the details.yaml data if we have info on the detail",
-            "type": "string"
-        },
         "case_no": {
             "description": "The relevant case_no for legal events",
             "type": "string"
@@ -139,7 +116,6 @@
             "description": "The case record inlined",
             "$ref": "case.json"
         }
-
     },
     "required": [
         "date",
