@@ -1,0 +1,138 @@
+{
+  "$id": "schemas/position",
+  "type": "object",
+  "title": "Position",
+  "description": "Information about a specific hiring appointment for a DOGE staffer",
+  "properties": {
+    "id": {
+      "description": "A unique ID for the employment term record",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the person being hired",
+      "$ref": "valid_names.json#people"
+    },
+    "alias": {
+      "description": "If this is an aliased position, the alias references",
+      "type": "string"
+    },
+    "agency": {
+      "description": "The agency where the term of employment is",
+      "$ref": "valid_names.json#agency_ids"
+    },
+    "type": {
+      "description": "The type of position this is",
+      "$ref": "valid_names.json#position_types"
+    },
+    "from": {
+      "description": "For details, where he is detailed from",
+      "$ref": "valid_names.json#agency_ids"
+    },
+    "start_date": {
+      "description": "When the term of employment started (might be approximate)",
+      "type": "string"
+    },
+    "start_date_truth": {
+      "description": "The precision for the start_date",
+      "$ref": "valid_names.json#truth_types"
+    },
+    "end_date": {
+      "description": "When the term of employment ended (if a person has left the specific role through departure, promotion or reassignment)",
+      "type": "string"
+    },
+    "end_date_truth": {
+      "description": "The precision for the end_date",
+      "$ref": "valid_names.json#truth_types"
+    },
+    "nte_date": {
+      "description": "If the NTE date for the appointment is known, it will be recorded here",
+      "type": "string"
+    },
+    "nte_date_truth": {
+      "description": "The precision for the nte_date",
+      "$ref": "valid_names.json#truth_types"
+    },
+    "signed_date": {
+      "description": "For detailing agreements, when it was signed",
+      "type": "string",
+      "format": "date"
+    },
+    "description": {
+      "description": "The position description",
+      "type": "string"
+    },
+    "fuzz": {
+      "description": "For comments on the fuzziness of some data",
+      "type": "string"
+    },
+    "appt_type_code": {
+      "description": "A numeric code for the type of appointment",
+      "type": "integer"
+    },
+    "appt_type": {
+      "description": "A string description of the appointment type",
+      "type": "string"
+    },
+    "pay_grade": {
+      "description": "A string description of the pay scale and grade (eg, GS-15)",
+      "type": "string"
+    },
+    "salary": {
+      "description": "A string description of the salary",
+      "type": "string"
+    },
+    "pd_code": {
+      "description": "The position description identifier for this specific position",
+      "type": "string"
+    },
+    "title": {
+      "description": "The title for the position",
+      "type": "string"
+    },
+    "series": {
+      "description": "The series for the position",
+      "type": "string"
+    },
+    "supervisory": {
+      "description": "Boolean to indicate if the position is supervisory",
+      "type": "boolean"
+    },
+    "office": {
+      "description": "The office where the position will report to",
+      "type": "string"
+    },
+    "source": {
+      "description": "A source for the information",
+      "type": "string"
+    },
+    "reimbursed": {
+      "description": "Is the detail reimbursed?",
+      "type": "boolean"
+    },
+    "reimbursement_amount": {
+      "description": "If it is reimbursed, the amount of the reimbursement",
+      "type": "string"
+    },
+    "documents": {
+      "description": "A collection of sources",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "comment": {
+      "description": "For free-form comments on the record",
+      "type": "string"
+    },
+    "qualifications": {
+      "description": "Qualifications listed for the special hiring",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "agency",
+    "type"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,107 @@
+{
+  "$id": "schemas/system-access",
+  "type": "object",
+  "title": "System Access",
+  "description": "Represents specific system access granted to 1 or more people at DOGE",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "A specific identifier for this access"
+    },
+    "name": {
+      "description": "Who of the DOGE crew was granted access",
+      "$ref": "valid_names.json#people"
+    },
+    "agency": {
+      "description": "For SSP/SaaS systems, the specific agency this access was granted at",
+      "$ref": "valid_names.json#agency_ids"
+    },
+    "type": {
+      "description": "The maximum type of access granted",
+      "$ref": "valid_names.json#access_types"
+    },
+    "date_requested": {
+      "description": "The date access was first requested (if known and predates granting)",
+      "$ref": "valid_names.json#fuzzy_date"
+    },
+    "date_req_truth": {
+      "description": "Sourcing on the date_requested",
+      "$ref": "valid_names.json#truth_types"
+    },
+    "date_granted": {
+      "description": "The date access was granted",
+      "$ref": "valid_names.json#fuzzy_date"
+    },
+    "date_grant_truth": {
+      "description": "Sourcing on the date_granted",
+      "$ref": "valid_names.json#truth_types"
+    },
+    "ao_name": {
+      "description": "If known, who granted the access",
+      "type": "string"
+    },
+    "ao_type": {
+      "description": "The type of the granting position",
+      "$ref": "valid_names.json#ao_types"
+    },
+    "bypassed": {
+      "description": "What procedures were skipped / staff were sidelined to provide such access",
+      "type": "string"
+    },
+    "date_last_used": {
+      "description": "The date access was granted",
+      "$ref": "valid_names.json#fuzzy_date"
+    },
+    "date_used_truth": {
+      "description": "Sourcing on the date_granted",
+      "$ref": "valid_names.json#truth_types"
+    },
+    "date_revoked": {
+      "description": "The date access was granted",
+      "$ref": "valid_names.json#fuzzy_date"
+    },
+    "date_revoked_truth": {
+      "description": "Sourcing on the date_granted",
+      "$ref": "valid_names.json#truth_types"
+    },
+    "date_nte": {
+      "description": "The date for which access grant is not to exceed. Also used for cases like court declarations where exact revocation hasn't been given",
+      "$ref": "valid_names.json#fuzzy_date"
+    },
+    "last_accessed": {
+      "description": "If known, the last day the person accessed the system",
+      "type": "string"
+    },
+    "never_accessed": {
+      "description": "True if the system was reportedly never accessed",
+      "type": "boolean"
+    },
+    "date_nte_truth": {
+      "description": "Sourcing on the date_granted",
+      "$ref": "valid_names.json#truth_types"
+    },
+    "source": {
+      "description": "One or more links to sources about the system granting",
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "comment": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "source"
+  ],
+  "additionalProperties": false
+}

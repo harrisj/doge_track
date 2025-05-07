@@ -1,0 +1,94 @@
+{
+    "$id": "schemas/system",
+    "type": "object",
+    "title": "System",
+    "description": "Information about a specific syatem accessed by DOGE staff",
+    "properties": {
+        "name": {
+            "description": "The name of the system",
+            "type": "string"
+        },
+        "id": {
+            "description": "An ID for the system (usually an acronym)",
+            "type": "string"
+        },
+        "type": {
+            "description": "What type of system is this?",
+            "$comment": "Internal = used mainly inside a single agency (can be public); SaaS is a tool like Google/Salesforce (enterprise, used at a single agency); SSP is a Shared Service Provider like GrantSolutions",
+            "enum": [
+                "internal",
+                "saas",
+                "ssp",
+                "unknown"
+            ]
+        },
+        "agency": {
+            "description": "Which agency owns the system",
+            "$ref": "valid_names.json#agency_ids"
+        },
+        "description": {
+            "description": "A description of the system",
+            "type": "string"
+        },
+        "comment": {
+            "description": "For comments and notes on this system",
+            "type": "string"
+        },
+        "category": {
+            "description": "Specific categories of systems that DOGE seem to be interested in",
+            "enum": [
+                "payments",
+                "personnel",
+                "obligations",
+                "immigration",
+                "taxes",
+                "oversight",
+                "access-control",
+                "communications",
+                "scientific",
+                "security"
+            ]
+        },
+        "population": {
+            "description": "A short description of what people's records are in the system",
+            "type": "string"
+        },
+        "risk": {
+            "description": "A short description of the date risks associated with DOGE accessing the system",
+            "type": "string"
+        },
+        "link": {
+            "description": "A link to an overview of the system",
+            "type": "string",
+            "format": "uri"
+        },
+        "pia": {
+            "description": "A URL linking to the Privacy Impact Assessment for the system",
+            "type": "string",
+            "format": "uri"
+        },
+        "sorn": {
+            "description": "A URL linking to a single SORN for the system if applicable (but read PIA for SORNs)",
+            "type": "string",
+            "format": "uri"
+        },
+        "serves": {
+            "description": "For SaaS tools, a list of agencies that use it as a service",
+            "type": "array",
+            "items": {
+                "$ref": "valid_names.json#agency_ids"
+            }
+        },
+        "access": {
+            "type": "array",
+            "items": {
+                "$ref": "system-access.json"
+            }
+        }
+    },
+    "required": [
+        "name",
+        "id"
+    ],
+    "additionalProperties": false
+}

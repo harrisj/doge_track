@@ -1,0 +1,49 @@
+{
+    "$id": "schemas/person",
+    "type": "object",
+    "title": "Person",
+    "description": "Information about a specific DOGE-affiliated person",
+    "properties": {
+        "name": {
+            "description": "The name of the person. This is also their primary key",
+            "$ref": "valid_names.json#people"
+        },
+        "sort_name": {
+            "description": "Usually the last name alone, but could include an initial in case of common names. Primarily used for sorting",
+            "type": "string"
+        },
+        "slug": {
+            "description": "A unique slug for use in URLs for this person",
+            "type": "string",
+            "format": "^[a-z\\-]+$"
+        },
+        "age": {
+            "description": "What was their age in early 2025 when this all started",
+            "type": "integer"
+        },
+        "background": {
+            "description": "What their background / specialization is",
+            "$ref": "valid_names.json#doge_backgrounds"
+        },
+        "category": {
+            "description": "What kind of work they are doing for DOGE",
+            "$ref": "valid_names.json#doge_categories"
+        },
+        "own_page": {
+            "description": "Do they have their own page?",
+            "type": "boolean"
+        },
+        "positions": {
+            "type": "array",
+            "items": {
+                "$ref": "position.json"
+            }
+        }
+    },
+    "required": [
+        "name",
+        "sort_name",
+        "category"
+    ],
+    "additionalProperties": false
+}

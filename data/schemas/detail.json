@@ -1,0 +1,82 @@
+{
+    "$id": "schemas/detail",
+    "type": "object",
+    "title": "Detail",
+    "description": "Information about a detailing arrangement where federal staff from one agency are assigned to work at another",
+    "properties": {
+        "id": {
+            "description": "A unique slug for referring to this detailing agreement",
+            "type": "string"
+        },
+        "signed_date": {
+            "description": "The date the detailing agreement was executed",
+            "type": "string",
+            "format": "date"
+        },
+        "start_date": {
+            "description": "The date the detailing agreement  is effective from",
+            "type": "string",
+            "format": "date"
+        },
+        "nte_date": {
+            "description": "The date the detailing agreement is effective to (not to exceed)",
+            "type": "string",
+            "format": "date"
+        },
+        "from": {
+            "description": "The agency that the staff is being detailed from",
+            "$ref": "valid_names.json#agency_ids"
+        },
+        "to": {
+            "description": "The agency that the staff is being detailed to",
+            "$ref": "valid_names.json#agency_ids"
+        },
+        "max_people": {
+            "description": "The maximum number of staff that are covered in this detail agreement",
+            "type": "integer"
+        },
+        "reimbursed": {
+            "description": "Will the agency reimburse the detailing agency for the work?",
+            "type": "boolean"
+        },
+        "reimbursement_amount": {
+            "desciption": "The amount of the reimbursement and duration",
+            "type": "string"
+        },
+        "source": {
+            "description": "A link to where this document was sourced from",
+            "type": "string",
+            "format": "uri"
+        },
+        "file": {
+            "description": "The name of the local file in agreements with the body of the MOU",
+            "type": "string"
+        },
+        "comment": {
+            "description": "For comments and notes",
+            "type": "string"
+        },
+        "named": {
+            "type": "array",
+            "description": "A list of names associated with the detail",
+            "items": {
+                "$ref": "valid_names.json#people"
+            }
+        },
+        "named_aliases": {
+            "type": "array",
+            "description": "A list of aliased names associated with the detail (common in redacted court filings / FOIAs)",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "start_date",
+        "from",
+        "to",
+        "source"
+    ],
+    "additionalProperties": false
+}
