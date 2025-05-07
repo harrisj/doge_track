@@ -59,6 +59,7 @@
 - people:
   - **Amy Gleason** (2024-12-30 - 2024-02-18)
   - **Cole Killian** (2025-01-20)
+  - **Elon Musk** (2025-01-20)
   - **Adam Ramada** (2025-01-23)
   - **Alexandra Beynon** (2025-02-04~)
   - **Kendall Lindemann** (2025-02-10~)
@@ -78,7 +79,7 @@
 - slug: doj
 - people:
   - **Christopher Stanley** (2025-04-02~) Senior Advisor (detailed from OPM)
-  - **SSA-6 (Jon Koval)** (2025-04-15) (detail)
+  - **Jon Koval** (2025-04-15) (detail)
   - **Payton Rehling** (2025-04-15) (detail)
   - **Adam Hoffman** (2025-04-21)
 
@@ -298,15 +299,16 @@
 # Office of Personnel Management
 - slug: opm
 - people:
-  - **Gavin Kliger** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
+  - **Noah Peters** (2025-01-20) Senior Advisor
   - **Anthony Armstrong** (2025-01-20) Expert
   - **Riccardo Biasini** (2025-01-20) Expert
   - **Brian Bjelde** (2025-01-20) Expert
   - **OPM-3 (Akash Bobba)** (2025-01-20) Expert
+  - **Charles Ezell** (2025-01-20) Acting Director
   - **Joanna Wischer** (2025-01-20) Senior Advisor to the Director
+  - **Greg Hogan** (2025-01-20 - 2025-02-11) Senior Advisor to the Director for Technology and Delivery
   - **Amanda Scales** (2025-01-20) Chief of Staff
-  - **Noah Peters** (2025-01-20) Senior Advisor
-  - **Greg Hogan** (2025-01-20 - 2025-02-11) Senior Advisor to the Director for Technology and De...
+  - **Gavin Kliger** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
   - **Jacob Altik** (2025-01-24) Senior Advisor to the Director
   - **OPM-6 (Nikhil Rajpal)** (2025-01-24) Expert
   - **Justin Monroe** (2025-01-28) Expert
@@ -314,12 +316,12 @@
   - **Edward Coristine** (2025-01-28~) (detailed from GSA)
   - **Chris Young** (2025-01-30) Expert
   - **Austin Raynor** (2025-01-30) Senior Advisor
+  - **Stephen Duarte** (2025-02-03) Expert
   - **Christina Hanna** (2025-02-03) Expert
   - **Bryanne-Michelle Mlodzianowski** (2025-02-03) Expert
-  - **Stephen Duarte** (2025-02-03) Expert
   - **Greg Hogan** (2025-02-11) Chief Information OFficer
-  - **Joe Gebbia** (2025-02-18) Expert
   - **Gavin Kliger** (2025-02-18) Senior Advisor to the Director for Information Technology
+  - **Joe Gebbia** (2025-02-18) Expert
 
 # Peace Corps
 - slug: peace-corps
@@ -343,20 +345,21 @@
 - people:
   - **Mike Russo** (2025-01-31 - 2024-03-24) Chief Information Officer
   - **OPM-3 (Akash Bobba)** (2025-02-03) (detailed from OPM)
-  - #<DogeAlias:0x00000001204658e0> (2025-02-09) Expert
-  - **SSA-7 (Marko Elez)** (2025-02-18) (detailed from DOL)
-  - #<DogeAlias:0x0000000120462be0> (2025-02-18) (detailed from DOGE)
+  - #<DogeAlias:0x000000010aa75390> (2025-02-09) Expert
+  - **Leland Dudek** (2025-02-16) Acting Commissioner
   - **SSA-2 (Scott Coulter)** (2025-02-18) (detailed from NASA)
+  - #<DogeAlias:0x000000010aa72f50> (2025-02-18) (detailed from DOGE)
   - **SSA-10 (Ethan Shaotran)** (2025-02-18) (detailed from GSA)
+  - **SSA-7 (Marko Elez)** (2025-02-18) (detailed from DOL)
   - **Cole Killian** (2025-02-20~)
   - **SSA-3 (Aram Moghaddassi)** (2025-02-22) (detailed from DOL)
+  - **SSA-9 (Payton Rehling)** (2025-02-23) Expert
   - **SSA-4 (Antonio Gracias)** (2025-02-23) Expert
   - **SSA-6 (Jon Koval)** (2025-02-23) Expert
-  - **SSA-9 (Payton Rehling)** (2025-02-23) Expert
   - **Mark Steffensen** (2025-02-25 - 2025-02-27) Senior Advisor
-  - #<DogeAlias:0x0000000120423238> (2025-02-26) (detailed from OPM)
+  - #<DogeAlias:0x000000010a5db870> (2025-02-26) (detailed from OPM)
   - **Mark Steffensen** (2025-02-27) Acting General Counsel
-  - #<DogeAlias:0x0000000120420ba0> (2025-03-16) Expert
+  - #<DogeAlias:0x000000010a5d9f20> (2025-03-16) Expert
   - **SSA-2 (Scott Coulter)** (2025-03-24) Chief Information Officer
   - **Mike Russo** (2025-03-25) Senior Advisor
 

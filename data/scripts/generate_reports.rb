@@ -17,6 +17,8 @@ def generate_people_md
       if person.positions.size > 0
         file.puts("- positions:")
         person.positions.each do |pos|
+          agency_str = "**#{pos.agency_id}**"
+
           if pos.start_date || pos.end_date
             if pos.end_date
               end_date = pos.end_date
@@ -32,18 +34,18 @@ def generate_people_md
           end
 
           alias_str = " as \"#{pos.doge_alias_id}\"" if pos.doge_alias_id
-          title = pos.title || ""
-          title += " #{pos.pay_grade}" if pos.pay_grade
+          title_str = pos.title || ""
+          title_str += " #{pos.pay_grade}" if pos.pay_grade
           if pos.supervisory and pos.title
-            title = "**#{title}**"
+            title_str = "**#{pos.title}**"
           end
 
           if pos.salary
-            salary ||= ", volunteer" if pos.salary == "$0"
-            salary ||= ", #{pos.salary}"
+            salary ||= "volunteer" if pos.salary == "$0"
+            salary ||= "#{pos.salary}"
           end
 
-          pos_string = "  - **#{pos.agency_id}** #{date_range}#{alias_str} #{title}#{salary}"
+          pos_string = "  -  #{[agency_str, date_range, alias_str, title_str, salary].reject(&:nil?).join(' ')}"
           file.puts pos_string
 
           # Put in system access
@@ -63,9 +65,7 @@ def generate_people_md
         end
       end
 
-      if person.system_roles.size > 0
-        file.puts("Systems:")
-      end
+      file.puts
     end
   end
 end
