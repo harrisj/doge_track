@@ -1,4 +1,121 @@
 # yaml-language-server: $schema=../schemas/aliases-file.json
+---
+
+- id: CFPB-1
+  agency: CFPB
+  name: Gavin Kliger
+  evidence:
+  - A declaration from https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf outlines access granted to CFPB staff
+  - The declaration names Jordan Wick, Chris Young, Nikhil Rajpal and Luke Farritor as well as 2 other CFPB staff not named (because they are not deemed DOGE employees)
+  - In the declaration, Mr. Farritor used Entra ID to provide access to a member of the DOGE Team who is not a DOGE Employee to the systems necessary to update the CFPB's public-facing website.
+  - Gavin Kliger is the only developer of those two
+
+- id: CFPB-2
+  agency: CFPB
+  name: Jeremy Lewin
+  evidence:
+  - A declaration from https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf outlines access granted to CFPB staff
+  - The declaration names Jordan Wick, Chris Young, Nikhil Rajpal and Luke Farritor as well as 2 other CFPB staff not named
+  - Based on reporting, Gavin Kliger and Jeremy Lewin were the other DOGE staff at the agency at the time of this action
+  - Gavin Kliger has already been unmasked as CFPB-1
+
+- id: ED-1
+  agency: Education
+  name: Akash Bobba
+  evidence:
+  - Detail agreement from OPM is signed on 2025-02-12
+  - This person appears in a detail from OPM to SSA, but also a detail from SSA back to OPM and Education
+  - This is the same person as OPM-3 because there is a detail document that appears with two diff redacted names
+  - In a separate document in filing from OPM, Akash Bobba is listed as the only person from OPM and with a start date of 2025-02-03
+  positions:
+  - id: detail-opm-education-akash-bobba
+    alias: ED-1
+    type: detailed
+    agency: Education
+    from: OPM
+    signed_date: 2025-02-12
+    start_date: 2025-02-03
+    start_date_truth: verified
+    nte_date: 2026-02-12
+    nte_date_truth: verified
+    reimbursed: false
+    documents:
+    - detail-20250212-opm-education-ed-1
+
+- id: ED-2
+  agency: Education
+  name: Conor Fennessy
+  evidence:
+  - Onboarded by appointment as a Senior Advisor on 2025-01-31 with a salary of $195K
+  - They included a list of DOGE staff at the agency and Conor Fennessy is listed as the only Senior Advisor on staff
+  positions:
+  - id: education-ed-2
+    type: appointed
+    agency: Education
+    start_date: 2025-01-31
+    start_date_truth: verified
+    appt_type_code: 44
+    appt_type: Regular C
+    pd_code: DBGS61164
+    title: Senior Advisor
+    pay_grade: GS-15/6
+    salary: "$195,200"
+    series: '0301'
+    supervisory: false
+    office: Office of the Secretary
+    documents:
+    - onboard-education-employee-2
+
+- id: ED-3
+  agency: Education
+  name: Ethan Shaotran
+  evidence:
+  - Detail from GSA was signed on 2025-02-12 for a for a SGE position so it is not reimbursed and for a maximum of 135 days from start of SGE term
+  - Position at GSA is listed as Software Engineer (Consultant)
+  - In a separate document in the release, Ethan Shaotran is listed as being from GSA on 2025-02-03 and Edward Coristine on 2025-02-20
+  - IN the case of ED-1, the detail agreement seems to have been signed after the start date; very likely here as well
+  positions:
+  - id: detail-gsa-education-3
+    type: detailed
+    from: GSA
+    agency: Education
+    signed_date: 2025-02-03
+    start_date: 2025-02-12
+    start_date_truth: verified
+    nte_date: 2026-02-26
+    nte_date_truth: verified
+    reimbursed: false
+    alias: ED-3
+    comment: ED-3 is Ethan Shaotran
+    documents:
+    - detail-20250212-gsa-education-ed-3
+
+- id: ED-4
+  agency: Education
+  name: Brooks Morgan
+  evidence:
+  - This is the only consultant in https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
+  - Further in doc a table lists one consultant starting on the same date unredacted and it's Brooks Morgan
+  positions:
+  - id: onboard-education-employee-4
+    type: consultant
+    comment: Part-time
+    start_date: 2025-02-04
+    start_date_truth: verified
+    nte_date: 2025-08-04
+    nte_date_truth: verified
+    agency: Education
+    salary: "$0"
+    documents:
+    - onboard-education-employee-4
+
+- id: FBI-1
+  agency: FBI
+  name: Justin Monroe
+  evidence:
+  - This person isn't named in the original NBC News report
+  - But they're identified specifically in a ProPublica roundup as being this person
+
 - id: OPM-1
   agency: OPM
   comment: Doesn't show up in any document releases, but must exist, right?
@@ -19,10 +136,43 @@
   - Detail to SSA is signed on 2025-02-12
   - PD number 6A39740 = one listed for Akash Bobba
   - See evidence that ED-1 is Akash Bobba
+  positions:
+  - id: opm-3
+    type: appointed
+    agency: OPM
+    alias: OPM-3
+    start_date: 2025-01-20
+    start_date_truth: verified
+    nte_date: 2025-07-18
+    nte_date_truth: verified
+    description: Exc Appt NTE
+    appt_type_code: 48
+    appt_type: Other (Except NonPerm)
+    pd_code: 6A39740
+    title: Expert
+    pay_grade: ED-00
+    salary: "$0"
+    series: '0301'
+    supervisory: false
+    office: Office of the Director
+    comment: I was able to confirm that OPM Employee 3 is Akash Bobba
+    documents:
+    - opm-foia-doge-positions
+    - onboard-opm-employee-3
+  - id: detail-opm-ssa-opm-3
+    alias: OPM-3
+    type: detailed
+    agency: SSA
+    from: OPM
+    signed_date: 2025-02-12
+    start_date: 2025-02-03
+    start_date_truth: verified
+    reimbursed: false
+    documents:
+    - detail-20250212-opm-education-ed-1
 
 - id: OPM-4
   agency: OPM
-  name:
   evidence:
   - Onboarded on 2025-01-24 as a volunteer SGE with the title Expert
   - Only person onboarded as an expert on 2025-01-24 was Nikhil Rajpal, but he's a match for OPM-6
@@ -45,38 +195,26 @@
   - Onboarded on 2025-01-24 as a vounteer SGE with a term not to exceed 2025-07-22
   - This is likely one of the other young DOGE crew like Jordan Wick or Luke Farritor, etc.
   - PD 6A39748 = Austin Raynor in another document
-
-- id: ED-1
-  agency: Education
-  name: Akash Bobba
-  evidence:
-  - Detail agreement from OPM is signed on 2025-02-12
-  - This person appears in a detail from OPM to SSA, but also a detail from SSA back to OPM and Education
-  - This is the same person as OPM-3 because there is a detail document that appears with two diff redacted names
-  - In a separate document in filing from OPM, Akash Bobba is listed as the only person from OPM and with a start date of 2025-02-03
-
-- id: ED-2
-  agency: Education
-  name: Conor Fennessy
-  evidence:
-  - Onboarded by appointment as a Senior Advisor on 2025-01-31 with a salary of $195K
-  - They included a list of DOGE staff at the agency and Conor Fennessy is listed as the only Senior Advisor on staff
-
-- id: ED-3
-  agency: Education
-  name: Ethan Shaotran
-  evidence:
-  - Detail from GSA was signed on 2025-02-12 for a for a SGE position so it is not reimbursed and for a maximum of 135 days from start of SGE term
-  - Position at GSA is listed as Software Engineer (Consultant)
-  - In a separate document in the release, Ethan Shaotran is listed as being from GSA on 2025-02-03 and Edward Coristine on 2025-02-20
-  - IN the case of ED-1, the detail agreement seems to have been signed after the start date; very likely here as well
-
-- id: ED-4
-  agency: Education
-  name: Brooks Morgan
-  evidence:
-  - This is the only consultant in https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
-  - Further in doc a table lists one consultant starting on the same date unredacted and it's Brooks Morgan
+  positions:
+  - id: opm-nikhil-rajpal
+    type: appointed
+    agency: OPM
+    start_date: 2025-01-24
+    start_date_truth: verified
+    description: Exc Appt NTE
+    appt_type_code: 48
+    appt_type: Other (Except NonPerm)
+    pd_code: 6A39738
+    title: Expert
+    pay_grade: ED-00
+    salary: "$0"
+    series: '0301'
+    supervisory: false
+    office: Office of the Director
+    comment: I confirmed that OPM Employee 6 is Nikhil but have no other info
+    documents:
+    - opm-foia-doge-positions
+    - onboard-opm-employee-6
 
 - id: SSA-1
   agency: SSA
@@ -89,25 +227,75 @@
   - It also would match Gavin Kliger, but he hasn't been linked to SSA
   positions:
   - id: ssa-employee-1
-    named_alias: SSA-1
+    type: appointed
     documents:
     - onboard-ssa-employee-1
     title: Expert
     office: Office of the Chief Information Officer
     pd_code: KNX0350
     start_date: 2025-02-09
-    start_date_precision: exact
+    start_date_truth: verified
     nte_date: 2026-02-08
-    nte_date_precision: exact
+    nte_date_truth: verified
     description: EXC APPT NTE
     appt_type_code: 171
     pay_grade: ED-00
-    series: "0301"
+    series: '0301'
     supervisory: false
-    salary: $90025
+    salary: "$90025"
     qualifications: >
-      Hands-on software engineer that is an expert in modern computer programming languages, cloud and other infrastructure, AI, etc. 5 years of experience using numerous computer code languages, leadership of teams in technical, software design, and infrastructure areas.
+      Hands-on software engineer that is an expert in modern computer programming languages, cloud and other infrastructure, AI, etc. 5 years of experience using numerous computer code languages, leadership
+      of teams in technical, software design, and infrastructure areas.
     agency: SSA
+
+- id: SSA-10
+  agency: SSA
+  name: Ethan Shaotran
+  evidence:
+  - Onboarded as a volunteer on 2025-02-18 as a detail from the GSA
+  - Flick testimony - Employee 10, a software engineer, was detailed from the Office of the Administrator at the General Services Administration to SSA"
+  - Ethan Shaotran was also detailed from GSA to USADF as an unpaid GSE o 2025-02-21
+  - Ethan Shaotran is identified for the first time at SSA on 2025-02-20
+  positions:
+  - id: detail-gsa-ssa-employee-10
+    type: detailed
+    from: GSA
+    agency: SSA
+    signed_date: 2025-02-18
+    start_date: 2025-02-18
+    start_date_truth: verified
+    nte_date: 2026-02-26
+    nte_date_truth: verified
+    reimbursed: false
+    documents:
+    - onboard-ssa-employee-10
+
+- id: SSA-11
+  agency: SSA
+  evidence:
+  - Started as a paid staffer at SSA on 2025-03-16
+  - Has 10 years of software development experience in geospatial software
+  - Unclear if this matches the DOGE people we know
+  positions:
+  - id: ssa-employee-11
+    type: appointed
+    alias: SSA-11
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    start_date: 2025-03-16
+    start_date_truth: verified
+    nte_date: 2026-03-15
+    nte_date_truth: verified
+    title: Expert
+    office: Office of the Chief Information Officer
+    pay_grade: ED-00
+    salary: "$162672"
+    pd_code: KNX0390
+    qualifications: >
+      is a Senior Software Engineer with over ten years of experience building cloud-native geospatial  solutions. Adept at architecting geospatial infrastructures, implementing geospatial algorithms, and
+      leading full- stack development. Experienced in collaborating with cross-functional teams to deliver mission-critical capabilities  and driving technical decisions and best practices.
+    agency: SSA
+    documents:
+    - onboard-ssa-employee-11
 
 - id: SSA-2
   agency: SSA
@@ -117,6 +305,30 @@
   - Scott Coulter is identified at NASA on 2025-03-14
   - Scott Coulter is identified at SSA on 2025-03-13
   - Signed SF-61 as CIO on 2025-03-24
+  positions:
+  - id: detail-nasa-ssa-employee-2
+    type: detailed
+    from: NASA
+    agency: SSA
+    start_date: 2025-02-18
+    start_date_truth: verified
+    nte_date: 2026-02-18
+    nte_date_truth: verified
+    signed_date: 2025-03-06
+    reimbursed: true
+    reimbursement_amount: Up to $120,579
+    documents:
+    - detail-20250306-nasa-ssa-employee-2
+    - onboard-ssa-employee-2
+  - id: ssa-employee-2-cio
+    type: appointed
+    agency: SSA
+    title: Chief Information Officer
+    start_date: 2025-03-24
+    start_date_truth: verified
+    supervisory: true
+    documents:
+    - onboard-ssa-employee-2
 
 - id: SSA-3
   agency: SSA
@@ -126,14 +338,48 @@
   - Marko Elez and Aram Moghaddassi are both DOL-based and paid?
   - Marko Elez was already identified as SSA-7
   - Cole Killian another possibility, but he appears to be a volunteer SGE
-  - Flick testimony - we began onboarding and training Employee 3, a Schedule C Policy Advisor, detailed from the Department of Labor to SSA" with it finalized on February 22. "His duties currently relate to improper payments and SSA's Death Master File.
+  - >-
+    Flick testimony - we began onboarding and training Employee 3, a Schedule C Policy Advisor, detailed from the Department of Labor to SSA" with it finalized on February 22. "His duties currently relate
+    to improper payments and SSA's Death Master File.
   - Aram was linked to changed to the Death Master File on the week of 2025-04-08
+  positions:
+  - id: detail-dol-ssa-aram-moghaddassi
+    type: detailed
+    alias: SSA-3
+    agency: SSA
+    from: DOL
+    start_date: 2025-02-22
+    start_date_truth: verified
+    reimbursed: true
+    reimbursement_amount: "$71,000 per quarter"
+    documents:
+    - detail-20250317-dol-ssa-employee-3
+    - onboard-ssa-employee-3
 
 - id: SSA-4
   agency: SSA
   name: Antonio Gracias
   evidence:
   - NPR has done analysis on docs to identify (source https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)
+  positions:
+  - id: ssa-antonio-gracias
+    type: appointed
+    agency: SSA
+    pd_code: KNX0370
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    start_date: 2025-02-23
+    start_date_truth: verified
+    nte_date: 2026-02-22
+    nte_date_truth: verified
+    title: Expert
+    pay_grade: ED-00
+    salary: "$0"
+    series: '0301'
+    office: Office of the Chief Information Officer
+    qualifications: Founder, CEO and Chief Investment Officer of [REDACTED]. Over 25 years of experience in private equity investing.
+    comment: SF-50 is a correction
+    documents:
+    - onboard-ssa-employee-4
 
 - id: SSA-5
   agency: SSA
@@ -146,8 +392,8 @@
     agency: SSA
     from: DOGE
     start_date: 2025-02-18
-    start_date_precision: exact
-    note: All I have is the date they completed training
+    start_date_truth: verified
+    comment: All I have is the date they completed training
     documents:
     - onboard-ssa-employee-5
 
@@ -156,12 +402,46 @@
   name: Jon Koval
   evidence:
   - NPR has done analysis on docs to identify (source https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)
+  positions:
+  - id: ssa-employee-6
+    type: appointed
+    agency: SSA
+    start_date: 2025-02-23
+    start_date_truth: verified
+    nte_date: 2026-02-22
+    nte_date_truth: verified
+    pd_code: KNX0360
+    pay_grade: ED-00
+    salary: "$0"
+    title: Expert
+    office: Office of the CIO
+    description: Excepted Appointment NTE
+    documents:
+    - onboard-ssa-employee-6
+  - id: detail-ssa-doj-koval
+    type: detailed
+    start_date: 2025-04-15
+    start_date_truth: reported
+    source: https://www.nytimes.com/2025/04/18/us/politics/doge-musk-social-security-justice-department.html
+    agency: DOJ
 
 - id: SSA-7
   agency: SSA
   name: Marko Elez
   evidence:
   - NPR has done analysis on docs to identify (source https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)
+  positions:
+  - id: detail-dol-ssa-employee-7
+    type: detailed
+    agency: SSA
+    from: DOL
+    start_date: 2025-02-18
+    start_date_truth: verified
+    reimbursed: true
+    reimbursement_amount: "$71,000 per quarter"
+    documents:
+    - detail-20250317-dol-ssa-employee-7
+    - onboard-ssa-employee-7
 
 - id: SSA-8
   agency: SSA
@@ -174,9 +454,9 @@
     agency: SSA
     signed_date: 2025-02-26
     start_date: 2025-02-26
-    start_date_precision: exact
+    start_date_truth: verified
     nte_date: 2026-02-26
-    nte_date_precision: exact
+    nte_date_truth: verified
     reimbursed: false
     alias: SSA-8
     documents:
@@ -188,65 +468,22 @@
   name: Payton Rehling
   evidence:
   - NPR has done analysis on docs to identify (source https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)
-  - In their qualifications, thety list being a Senior Associate, Data Engineer with a backgroun in AI, Airflow and Genetic Algorithms. Also built a Manufacturing Execution System (MES) for home battery deployments
-
-- id: SSA-10
-  agency: SSA
-  name: Ethan Shaotran
-  evidence:
-  - Onboarded as a volunteer on 2025-02-18 as a detail from the GSA
-  - Flick testimony - Employee 10, a software engineer, was detailed from the Office of the Administrator at the General Services Administration to SSA"
-  - Ethan Shaotran was also detailed from GSA to USADF as an unpaid GSE o 2025-02-21
-  - Ethan Shaotran is identified for the first time at SSA on 2025-02-20
-
-- id: SSA-11
-  agency: SSA
-  evidence:
-  - Started as a paid staffer at SSA on 2025-03-16
-  - Has 10 years of software development experience in geospatial software
-  - Unclear if this matches the DOGE people we know
+  - >-
+    In their qualifications, thety list being a Senior Associate, Data Engineer with a backgroun in AI, Airflow and Genetic Algorithms. Also built a Manufacturing Execution System (MES) for home battery
+    deployments
   positions:
-  - id: ssa-employee-11
-    alias: SSA-11
-    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
-    case_no: 1:25-cv-00596
-    file: onboard-ssa-employee-11.pdf
-    start_date: 2025-03-16
-    start_date_precision: exact
-    nte_date: 2026-03-15
-    nte_date_precision: exact
-    title: Expert
-    office: Office of the Chief Information Officer
-    grade: ED-00
-    salary: $162672
-    pd_code: KNX0390
-    qualifications: >
-      is a Senior Software Engineer with over ten years of experience building cloud-native geospatial  solutions. Adept at architecting geospatial infrastructures, implementing geospatial algorithms, and leading full- stack development. Experienced in collaborating with cross-functional teams to deliver mission-critical capabilities  and driving technical decisions and best practices.
+  - id: ssa-employee-9
     agency: SSA
+    type: appointed
+    start_date: 2025-02-23
+    start_date_truth: verified
+    nte_date: 2026-02-22
+    nte_date_truth: verified
+    pd_code: KNX0380
+    pay_grade: ED-00
+    salary: "$0"
+    title: Expert
+    office: Office of the CIO
+    description: Excepted Appointment NTE
     documents:
-    - onboard-ssa-employee-11
-
-- id: CFPB-1
-  agency: CFPB
-  name: Gavin Kliger
-  evidence:
-  - A declaration from https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf outlines access granted to CFPB staff
-  - The declaration names Jordan Wick, Chris Young, Nikhil Rajpal and Luke Farritor as well as 2 other CFPB staff not named (because they are not deemed DOGE employees)
-  - In the declaration, Mr. Farritor used Entra ID to provide access to a member of the DOGE Team who is not a DOGE Employee to the systems necessary to update the CFPB's public-facing website.
-  - Gavin Kliger is the only developer of those two
-
-- id: CFPB-2
-  agency: CFPB
-  name: Jeremy Lewin
-  evidence:
-  - A declaration from https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf outlines access granted to CFPB staff
-  - The declaration names Jordan Wick, Chris Young, Nikhil Rajpal and Luke Farritor as well as 2 other CFPB staff not named
-  - Based on reporting, Gavin Kliger and Jeremy Lewin were the other DOGE staff at the agency at the time of this action
-  - Gavin Kliger has already been unmasked as CFPB-1
-
-- id: FBI-1
-  agency: FBI
-  name: Justin Monroe
-  evidence:
-  - This person isn't named in the original NBC News report
-  - But they're identified specifically in a ProPublica roundup as being this person
+    - onboard-ssa-employee-9

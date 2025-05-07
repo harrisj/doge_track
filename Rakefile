@@ -52,18 +52,18 @@ SCRIPTS_DIR = "data/scripts"
 
 namespace :data do
   desc "Delete the SQLite database"
-  task :clean_yaml do
-    sh "rm data/doge.sqlite"
+  task :clean_db do
+    sh "rm -f data/doge.sqlite"
   end
 
   desc "Clean out all the generated YAML data"
   task :clean_yaml do
-    sh "rm src/_data/doge/**/*.yaml"
+    sh "rm -f src/_data/doge/**/*.yaml"
   end
 
   desc "Delete all the pregenerated API files"
   task :clean_api do
-    sh "rm src/api/**/*.json"
+    sh "rm -f src/api/**/*.json"
   end
 
   desc "Clean all generated data files"
@@ -74,8 +74,13 @@ namespace :data do
     ruby "#{SCRIPTS_DIR}/validate_events_yaml.rb"
   end
 
+  desc "Process and validate the events YAML file"
+  task :validate_aliases_yaml do
+    ruby "#{SCRIPTS_DIR}/validate_aliases_yaml.rb"
+  end
+
   desc "Process and validate the people YAML file"
-  task :validate_people_yaml do
+  task validate_people_yaml: "validate_aliases_yaml" do
     ruby "#{SCRIPTS_DIR}/validate_people_yaml.rb"
   end
 
@@ -93,7 +98,7 @@ namespace :data do
   end
   
   desc "Cleans all generated data, recreates the DB and loads it with data"
-  task rebuild_db: %w[clean create_db populate_db]
+  task rebuild_db: ["data:clean_db", "data:create_db", "data:populate_db"]
   
   desc "Build files in the _data dir for use by pages"
   task :build_data_yaml do

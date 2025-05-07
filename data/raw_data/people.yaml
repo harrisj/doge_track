@@ -36,6 +36,7 @@
   sort_name: Akis
   background: finance
   category: booster
+  positions: []
 
 - name: Jacob Altik
   sort_name: Altik
@@ -77,6 +78,7 @@
   slug: mark-andreesen
   background: executive
   category: booster
+  positions: []
 
 - name: Anthony Armstrong
   sort_name: Armstrong
@@ -116,6 +118,7 @@
   age: 36
   background: executive
   category: leadership
+  positions: []
 
 - name: Sam Beyda
   sort_name: Beyda
@@ -189,6 +192,7 @@
   sort_name: Birchall
   slug: jared-birchall
   category: booster
+  positions: []
 
 - name: Brian Bjelde
   sort_name: Bjelde
@@ -222,7 +226,7 @@
   own_page: true
   category: wrecker
   positions:
-  - id: akash-bobba-opm
+  - id: opm-3
     type: appointed
     agency: OPM
     alias: OPM-3
@@ -244,6 +248,7 @@
     documents:
     - opm-foia-doge-positions
     - onboard-opm-employee-3
+    name: Akash Bobba
   - id: detail-opm-education-akash-bobba
     alias: ED-1
     type: detailed
@@ -257,7 +262,8 @@
     reimbursed: false
     documents:
     - detail-20250212-opm-education-ed-1
-  - id: detail-opm-ssa-akash-bobba
+    name: Akash Bobba
+  - id: detail-opm-ssa-opm-3
     alias: OPM-3
     type: detailed
     agency: SSA
@@ -268,6 +274,7 @@
     reimbursed: false
     documents:
     - detail-20250212-opm-education-ed-1
+    name: Akash Bobba
 
 - name: Ashley Boizelle
   sort_name: Boizelle
@@ -304,6 +311,7 @@
   age: 41
   background: lawyer
   category: support
+  positions: []
 
 - name: Nate Cavanaugh
   sort_name: Cavanaugh
@@ -351,6 +359,7 @@
   sort_name: Cooper
   slug: george-cooper
   category: unknown
+  positions: []
 
 - name: Sam Corcos
   sort_name: Corcos
@@ -471,9 +480,8 @@
   background: finance
   category: wrecker
   positions:
-  - id: detail-nasa-ssa-scott-coulter
+  - id: detail-nasa-ssa-employee-2
     type: detailed
-    alias: SSA-2
     from: NASA
     agency: SSA
     start_date: 2025-02-18
@@ -486,9 +494,10 @@
     documents:
     - detail-20250306-nasa-ssa-employee-2
     - onboard-ssa-employee-2
-  - id: ssa-coulter-cio
-    type: appointed
+    name: Scott Coulter
     alias: SSA-2
+  - id: ssa-employee-2-cio
+    type: appointed
     agency: SSA
     title: Chief Information Officer
     start_date: 2025-03-24
@@ -496,6 +505,8 @@
     supervisory: true
     documents:
     - onboard-ssa-employee-2
+    name: Scott Coulter
+    alias: SSA-2
 
 - name: Steve Davis
   sort_name: Davis
@@ -503,6 +514,7 @@
   age: 45
   background: executive
   category: leadership
+  positions: []
 
 - name: Stephen Duarte
   sort_name: Duarte
@@ -534,6 +546,7 @@
   sort_name: Dudek
   background: political
   category: enabler
+  positions: []
 
 - name: Stephen Ehikian
   sort_name: Ehikian
@@ -577,8 +590,7 @@
     salary: "$84601"
     documents:
     - onboard-treasury-marko-elez
-  - id: detail-dol-ssa-marko-elez
-    alias: SSA-7
+  - id: detail-dol-ssa-employee-7
     type: detailed
     agency: SSA
     from: DOL
@@ -589,6 +601,8 @@
     documents:
     - detail-20250317-dol-ssa-employee-7
     - onboard-ssa-employee-7
+    name: Marko Elez
+    alias: SSA-7
   - id: detail-dol-hhs-marko-elez
     type: detailed
     agency: HHS
@@ -603,6 +617,7 @@
   slug: charles-ezell
   background: political
   category: enabler
+  positions: []
 
 - name: Luke Farritor
   sort_name: Farritor
@@ -687,10 +702,9 @@
   own_page: true
   category: wrecker
   positions:
-  - id: education-conor-fennessy
+  - id: education-ed-2
     type: appointed
     agency: Education
-    alias: ED-2
     start_date: 2025-01-31
     start_date_truth: verified
     appt_type_code: 44
@@ -704,6 +718,8 @@
     office: Office of the Secretary
     documents:
     - onboard-education-employee-2
+    name: Conor Fennessy
+    alias: ED-2
   - id: detail-education-hhs-fennessy
     type: detailed
     from: Education
@@ -755,6 +771,7 @@
   age: 34
   background: coder
   category: wrecker
+  positions: []
 
 - name: Joe Gebbia
   sort_name: Gebbia
@@ -851,6 +868,7 @@
   sort_name: Gonzalez
   slug: mike-gonzalez
   category: unknown
+  positions: []
 
 - name: Antonio Gracias
   age: 54
@@ -862,7 +880,6 @@
   - id: ssa-antonio-gracias
     type: appointed
     agency: SSA
-    alias: SSA-4
     pd_code: KNX0370
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
     start_date: 2025-02-23
@@ -880,6 +897,8 @@
     comment: SF-50 is a correction
     documents:
     - onboard-ssa-employee-4
+    name: Antonio Gracias
+    alias: SSA-4
 
 - name: Michael Grimes
   sort_name: Grimes
@@ -982,6 +1001,7 @@
   slug: vinay-hiremath
   background: executive
   category: booster
+  positions: []
 
 - name: Adam Hoffman
   sort_name: Hoffman
@@ -1082,6 +1102,7 @@
   slug: jared-isaacman
   background: executive
   category: enabler
+  positions: []
 
 - name: Kenneth Jackson
   sort_name: Jackson
@@ -1108,6 +1129,7 @@
   sort_name: Jancso
   slug: anthony-jancso
   category: booster
+  positions: []
 
 - name: Raj Jegannathan
   sort_name: Jegannathan
@@ -1277,6 +1299,7 @@
   age: 45
   background: lawyer
   category: support
+  positions: []
 
 - name: Jon Koval
   sort_name: Koval
@@ -1285,10 +1308,9 @@
   background: finance
   category: wrecker
   positions:
-  - id: ssa-jon-koval
+  - id: ssa-employee-6
     type: appointed
     agency: SSA
-    alias: SSA-6
     start_date: 2025-02-23
     start_date_truth: verified
     nte_date: 2026-02-22
@@ -1301,17 +1323,22 @@
     description: Excepted Appointment NTE
     documents:
     - onboard-ssa-employee-6
+    name: Jon Koval
+    alias: SSA-6
   - id: detail-ssa-doj-koval
     type: detailed
     start_date: 2025-04-15
     start_date_truth: reported
     source: https://www.nytimes.com/2025/04/18/us/politics/doge-musk-social-security-justice-department.html
     agency: DOJ
+    name: Jon Koval
+    alias: SSA-6
 
 - name: Michael Kratsios
   sort_name: Kratsios
   slug: michael-kratsios
   category: enabler
+  positions: []
 
 - name: Tom Krause
   sort_name: Krause
@@ -1338,11 +1365,13 @@
   slug: scott-kupor
   background: executive
   category: enabler
+  positions: []
 
 - name: Nicholas Lahera
   sort_name: Lahera
   slug: nicholas-lahera
   category: unknown
+  positions: []
 
 - name: Scott Langmack
   sort_name: Langmack
@@ -1480,6 +1509,7 @@
   slug: shaun-maguire
   background: executive
   category: booster
+  positions: []
 
 - name: Tarak Makecha
   sort_name: Makecha
@@ -1580,6 +1610,7 @@
   age: 33
   background: political
   category: booster
+  positions: []
 
 - name: Clark Minor
   sort_name: Minor
@@ -1680,6 +1711,7 @@
     documents:
     - detail-20250317-dol-ssa-employee-3
     - onboard-ssa-employee-3
+    name: Aram Moghaddassi
 
 - name: Justin Monroe
   sort_name: Monroe
@@ -1715,7 +1747,6 @@
   category: wrecker
   positions:
   - id: onboard-education-employee-4
-    alias: ED-4
     type: consultant
     comment: Part-time
     start_date: 2025-02-04
@@ -1726,6 +1757,8 @@
     salary: "$0"
     documents:
     - onboard-education-employee-4
+    name: Brooks Morgan
+    alias: ED-4
   - id: detail-education-fdic-morgan
     type: detailed
     start_date: 2025-04-10
@@ -1738,6 +1771,7 @@
   slug: elon-musk
   background: executive
   category: leadership
+  positions: []
 
 - name: Todd Newnam
   sort_name: Newnam
@@ -1787,7 +1821,6 @@
   positions:
   - id: opm-nikhil-rajpal
     type: appointed
-    alias: OPM-6
     agency: OPM
     start_date: 2025-01-24
     start_date_truth: verified
@@ -1805,6 +1838,8 @@
     documents:
     - opm-foia-doge-positions
     - onboard-opm-employee-6
+    name: Nikhil Rajpal
+    alias: OPM-6
   - id: detail-opm-cfpb-nikhil-rajpal
     type: detailed
     agency: CFPB
@@ -1907,8 +1942,7 @@
   own_page: true
   category: wrecker
   positions:
-  - id: ssa-payton-rehling
-    alias: SSA-9
+  - id: ssa-employee-9
     agency: SSA
     type: appointed
     start_date: 2025-02-23
@@ -1923,6 +1957,8 @@
     description: Excepted Appointment NTE
     documents:
     - onboard-ssa-employee-9
+    name: Payton Rehling
+    alias: SSA-9
   - id: detail-ssa-doj-rehling
     type: detailed
     start_date: 2025-04-15
@@ -2140,7 +2176,7 @@
     start_date_truth: inferred
     comment: Position inferred from early reporting and detailing to Education
     source: https://www.wired.com/story/elon-musk-lackeys-general-services-administration/
-  - id: detail-gsa-education-ethan-shaotran
+  - id: detail-gsa-education-3
     type: detailed
     from: GSA
     agency: Education
@@ -2154,7 +2190,8 @@
     comment: ED-3 is Ethan Shaotran
     documents:
     - detail-20250212-gsa-education-ed-3
-  - id: detail-gsa-ssa-ethan-shaotran
+    name: Ethan Shaotran
+  - id: detail-gsa-ssa-employee-10
     type: detailed
     from: GSA
     agency: SSA
@@ -2164,9 +2201,10 @@
     nte_date: 2026-02-26
     nte_date_truth: verified
     reimbursed: false
-    alias: SSA-10
     documents:
     - onboard-ssa-employee-10
+    name: Ethan Shaotran
+    alias: SSA-10
   - id: detail-gsa-usadf-ethan-shaotran
     type: detailed
     name: Ethan Shaotran
@@ -2318,6 +2356,7 @@
   sort_name: Spikes
   slug: branden-spikes
   category: unknown
+  positions: []
 
 - name: Christopher Stanley
   sort_name: Stanley

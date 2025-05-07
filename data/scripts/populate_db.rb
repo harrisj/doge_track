@@ -20,6 +20,12 @@ SystemRole.unrestrict_primary_key
 GovtSystem.plugin :nested_attributes
 GovtSystem.nested_attributes :system_roles
 
+Person.plugin :nested_attributes
+Person.nested_attributes :positions
+
+Alias.plugin :nested_attributes
+Alias.nested_attributes :positions
+
 pos_hashes = []
 
 # Load Agencies
@@ -149,7 +155,6 @@ events_yaml.each do |event_hash|
   event_hash.fetch(:named_aliases, []).each do |name|
     a = DogeAlias[name]
 
-    # FIXME: (add Alias name)
     if a&.person && !people_seen.key?(a.person.name)
       e.add_person(a.person)
       people_seen[a.person.name] = true
@@ -165,3 +170,8 @@ events_yaml.each do |event_hash|
 
   e.save
 end
+
+# Now, if Aliases have been named, update the alias pointers to include names
+DB.run "UPDATE events e JOIN doge_aliases d ON d.id = e.doge_alias_id SET e.name = d.name WHERE d.name IS NOT NULL"
+DB.run "UPDATE positions p JOIN doge_aliases d ON d.id = p.doge_alias_id SET p.name = d.name WHERE d.name IS NOT NULL"
+

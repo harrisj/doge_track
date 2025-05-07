@@ -34,14 +34,6 @@
                 "$ref": "event.json"
             }
         },
-        "details": {
-            "$comment": "This is added in the generated_aliases file",
-            "description": "An array of details where the alias is named",
-            "type": "array",
-            "items": {
-                "$ref": "event.json"
-            }
-        },
         "positions": {
             "type": "array",
             "items": {

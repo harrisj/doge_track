@@ -5,14 +5,30 @@ require 'date'
 require 'edtf'
 
 people_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'people.yaml')
+aliases_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'aliases.yaml')
 out_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'processed_people.yaml')
 
+aliases = YAML.unsafe_load_file(aliases_file, symbolize_names: true)
 people = YAML.unsafe_load_file(people_file, symbolize_names: true)
 
-people.each do |p|
-  # Any validation I need to do here?
-  if p.key? :positions
+named_aliases = aliases.select {|a| a[:name] && a[:positions] }
+named_alias_positions = named_aliases.map {|a| a[:positions].map {|p| p[:name] = a[:name]; p[:alias] = a[:id]; p}}.flatten
 
+people.each do |p|
+  raise "No name for #{p}" unless p[:name]
+
+  if p[:positions]
+    # Delete aliased positions  
+    p[:positions].reject! {|pos| pos.key? :alias }
+  end
+
+  my_aliased_positions = named_alias_positions.select {|a| a[:name] == p[:name]}
+  if my_aliased_positions
+    p[:positions] ||= []
+    p[:positions] += my_aliased_positions
+  end
+
+  if p.key? :positions
     p[:positions] = p[:positions].sort_by do |pos| 
       if pos.key? :start_date
         Date.edtf(pos[:start_date].to_s)
@@ -20,8 +36,6 @@ people.each do |p|
         Date.edtf("2025-01-20")
       end
     end
-  else
-    puts "No positions found for #{p[:name]}"
   end
 end
 

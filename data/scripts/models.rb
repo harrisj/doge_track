@@ -2,7 +2,7 @@
 
 require 'sequel'
 
-DB_PATH = File.join(File.dirname(__FILE__), 'doge.sqlite')
+DB_PATH = File.join(File.dirname(__FILE__), '..', 'doge.sqlite')
 DB = Sequel.sqlite(DB_PATH)
 
 # Represents a single agency
