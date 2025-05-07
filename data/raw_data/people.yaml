@@ -1,42 +1,5 @@
 # yaml-language-server: $schema=../schemas/people-file.json
-- name: Elon Musk
-  sort_name: Musk
-  slug: elon-musk
-  background: executive
-  category: leadership
-
-- name: Amy Gleason
-  sort_name: Gleason
-  slug: amy-gleason
-  age: 53
-  background: coder
-  category: leadership
-  positions:
-  - id: doge-amy-gleason
-    start_date: 2024-12-30
-    start_date_truth: verified
-    end_date: 2024-02-18
-    end_date_truth: verified
-    type: appointed
-    comment: Amy Gleason joins the USDS, according to her sworn testimony; not sure of her title for this before she is named Acting Director
-    source: https://www.documentcloud.org/documents/25564597-crewvdogereconmot031425/
-    agency: DOGE
-  - id: doge-amy-gleason-director
-    start_date: 2025-02-18
-    start_date_truth: verified
-    type: appointed
-    agency: DOGE
-    title: Acting Administrator, US DOGE Service and the DOGE Temporary Organization
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.4.pdf
-  - id: hhs-amy-gleason
-    agency: HHS
-    type: appointed
-    title: Expert/Consultant
-    start_date: 2025-03-04
-    start_date_truth: verified
-    comment: All I have is her SF-61
-    documents:
-    - onboard-hhs-amy-gleason
+---
 
 - name: Daniel Abrahamson
   sort_name: Abrahamson
@@ -49,14 +12,9 @@
     type: appointed
     title: Senior Advisor
     comment: Date unnkown but before 3/26
-    source: https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2025/03/26/doge-assembles-a-legal-army-00251903
+    source: >-
+      https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2025/03/26/doge-assembles-a-legal-army-00251903
     agency: DOT
-
-- name: Baris Akis
-  slug: baris-akis
-  sort_name: Akis
-  background: finance
-  category: booster
 
 - name: Justin Aimonetti
   sort_name: Aimonetti
@@ -72,6 +30,12 @@
     fuzz: Report just says started sometime in February
     source: https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
     agency: DOGE
+
+- name: Baris Akis
+  slug: baris-akis
+  sort_name: Akis
+  background: finance
+  category: booster
 
 - name: Jacob Altik
   sort_name: Altik
@@ -92,7 +56,7 @@
     pd_code: PMGS31263
     title: Senior Advisor to the Director
     pay_grade: GS-15
-    series: "0301"
+    series: '0301'
     supervisory: false
     office: Office of the Director
     comment: Sourced from FOIA documents
@@ -132,7 +96,7 @@
     pd_code: 6A39742
     title: Expert
     pay_grade: ED-00
-    series: "0301"
+    series: '0301'
     supervisory: false
     office: Office of the Director
     comment: From FOIA documents
@@ -162,8 +126,10 @@
     type: unknown
     start_date: 2025-02-13~
     start_date_truth: reported
-    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
-    source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
+    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on
+      2/5.
+    source: >-
+      https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
     agency: DOL
 
 - name: Alexandra Beynon
@@ -210,8 +176,8 @@
     pd_code: 6A39741
     title: Expert
     pay_grade: ED-00
-    salary: $0
-    series: "0301"
+    salary: "$0"
+    series: '0301'
     supervisory: false
     office: Office of the Director
     comment: I was able to confirm that OPM Employee 2 was Riccardo Biasini
@@ -242,7 +208,7 @@
     pd_code: 6A39743
     title: Expert
     pay_grade: ED-00
-    series: "0301"
+    series: '0301'
     supervisory: false
     office: Office of the Director
     documents:
@@ -270,8 +236,8 @@
     pd_code: 6A39740
     title: Expert
     pay_grade: ED-00
-    salary: $0
-    series: "0301"
+    salary: "$0"
+    series: '0301'
     supervisory: false
     office: Office of the Director
     comment: I was able to confirm that OPM Employee 3 is Akash Bobba
@@ -351,7 +317,9 @@
     type: appointed
     start_date: 2025-03-25
     start_date_truth: verified
-    comment: Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco Rubio and Pete Hegseth, and he is authorized to transfer all assets to the GSA
+    comment: >-
+      Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco
+      Rubio and Pete Hegseth, and he is authorized to transfer all assets to the GSA
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.14.1.pdf
     agency: USIP
   - id: imls-cavanaugh
@@ -373,7 +341,9 @@
     start_date: 2025-03-05
     start_date_truth: reported
     from: DOGE
-    comment: Wired reports on a detailing agreement between DOGE and DOL, but that could be for Adam Ramada and crew
+    comment: >-
+      Wired reports on a detailing agreement between DOGE and DOL, but that could be for Adam Ramada and
+      crew
     source: https://www.businessinsider.com/doge-staffer-fertility-clinic-pronatalist-department-of-labor
     agency: DOL
 
@@ -417,11 +387,14 @@
   - id: gsa-edward-coristine
     agency: GSA
     type: appointed
-    salary: $0
+    salary: "$0"
     start_date: 2025-01-20~
     start_date_truth: inferred
-    comment: Several documents have Coristine detailing from GSA, so assuming home agency. Also, not in FOIA release from OPM
-    source: https://www.wired.com/story/elon-musk-lackeys-office-personnel-management-opm-neuralink-x-boring-stalin/
+    comment: >-
+      Several documents have Coristine detailing from GSA, so assuming home agency. Also, not in FOIA
+      release from OPM
+    source: >-
+      https://www.wired.com/story/elon-musk-lackeys-office-personnel-management-opm-neuralink-x-boring-stalin/
   - id: detail-gsa-opm-coristine
     type: detailed
     agency: OPM
@@ -430,7 +403,8 @@
     start_date_truth: reported
     reimbursed: false
     comment: Edward Coristine is not named, but identfied. Mentions he reportd to Scales
-    source: https://www.wired.com/story/elon-musk-lackeys-office-personnel-management-opm-neuralink-x-boring-stalin/
+    source: >-
+      https://www.wired.com/story/elon-musk-lackeys-office-personnel-management-opm-neuralink-x-boring-stalin/
   - id: detail-gsa-dhs-coristine
     type: detailed
     from: GSA
@@ -508,7 +482,7 @@
     nte_date_truth: verified
     signed_date: 2025-03-06
     reimbursed: true
-    reimbursement_amount: "Up to $120,579"
+    reimbursement_amount: Up to $120,579
     documents:
     - detail-20250306-nasa-ssa-employee-2
     - onboard-ssa-employee-2
@@ -548,7 +522,7 @@
     pd_code: 6A39749
     title: Expert
     pay_grade: ED-00
-    series: "0301"
+    series: '0301'
     supervisory: false
     office: Office of the Director
     comment: Sources from a FOIA document
@@ -600,7 +574,7 @@
     office: Office of the Chief of Staff
     agency: Treasury
     pay_grade: GS-11/01
-    salary: $84601
+    salary: "$84601"
     documents:
     - onboard-treasury-marko-elez
   - id: detail-dol-ssa-marko-elez
@@ -644,7 +618,7 @@
     start_date: 2025-01-20
     start_date_truth: inferred
     comment: Luke is detailed to HHS from GSA on 2025-01-21, so date here is inferred
-    salary: $0
+    salary: "$0"
   - id: detail-gsa-hhs-luke-farritor
     type: detailed
     agency: HHS
@@ -724,8 +698,8 @@
     pd_code: DBGS61164
     title: Senior Advisor
     pay_grade: GS-15/6
-    salary: $195,200
-    series: "0301"
+    salary: "$195,200"
+    series: '0301'
     supervisory: false
     office: Office of the Secretary
     documents:
@@ -771,7 +745,8 @@
     start_date_truth: reported
     title: Senior Advisor
     office: Office of the Secretary
-    source: https://news.bloombergtax.com/international-trade/hegseth-taps-doge-staffer-as-senior-adviser-after-staff-exodus
+    source: >-
+      https://news.bloombergtax.com/international-trade/hegseth-taps-doge-staffer-as-senior-adviser-after-staff-exodus
     agency: DOD
 
 - name: Mattieu Gamache-Asselin
@@ -799,7 +774,7 @@
     pd_code: 6A39752
     title: Expert
     pay_grade: ED-00
-    series: "0301"
+    series: '0301'
     supervisory: false
     office: Office of the Director
     comment: Sourced from a FOIAed document
@@ -815,8 +790,10 @@
     type: unknown
     start_date: 2025-02-13~
     start_date_truth: reported
-    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
-    source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
+    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on
+      2/5.
+    source: >-
+      https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
     agency: DOL
 
 - name: Brady Glantz
@@ -834,6 +811,41 @@
     nte_date: 2025-02-20
     end_date_truth: verified
     source: https://www.wired.com/story/faa-doge-elon-musk-space-x/
+
+- name: Amy Gleason
+  sort_name: Gleason
+  slug: amy-gleason
+  age: 53
+  background: coder
+  category: leadership
+  positions:
+  - id: doge-amy-gleason
+    start_date: 2024-12-30
+    start_date_truth: verified
+    end_date: 2024-02-18
+    end_date_truth: verified
+    type: appointed
+    comment: >-
+      Amy Gleason joins the USDS, according to her sworn testimony; not sure of her title for this before
+      she is named Acting Director
+    source: https://www.documentcloud.org/documents/25564597-crewvdogereconmot031425/
+    agency: DOGE
+  - id: doge-amy-gleason-director
+    start_date: 2025-02-18
+    start_date_truth: verified
+    type: appointed
+    agency: DOGE
+    title: Acting Administrator, US DOGE Service and the DOGE Temporary Organization
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.4.pdf
+  - id: hhs-amy-gleason
+    agency: HHS
+    type: appointed
+    title: Expert/Consultant
+    start_date: 2025-03-04
+    start_date_truth: verified
+    comment: All I have is her SF-61
+    documents:
+    - onboard-hhs-amy-gleason
 
 - name: Mike Gonzalez
   sort_name: Gonzalez
@@ -859,10 +871,12 @@
     nte_date_truth: verified
     title: Expert
     pay_grade: ED-00
-    salary: $0
-    series: "0301"
+    salary: "$0"
+    series: '0301'
     office: Office of the Chief Information Officer
-    qualifications: Founder, CEO and Chief Investment Officer of [REDACTED]. Over 25 years of experience in private equity investing.
+    qualifications: >-
+      Founder, CEO and Chief Investment Officer of [REDACTED]. Over 25 years of experience in private
+      equity investing.
     comment: SF-50 is a correction
     documents:
     - onboard-ssa-employee-4
@@ -940,7 +954,7 @@
     pd_code: 6A39735
     title: Expert
     pay_grade: ED-00
-    series: "0301"
+    series: '0301'
     supervisory: false
     office: Office of the Director
     comment: Sourced from FOIAed document
@@ -1003,8 +1017,8 @@
     pd_code: 6A38081
     title: Senior Advisor to the Director for Technology and De...
     pay_grade: ES-00
-    salary: $195200
-    series: "0301"
+    salary: "$195200"
+    series: '0301'
     supervisory: true
     office: Office of the Director
     comment: details from FOIA doucments
@@ -1023,8 +1037,8 @@
     pd_code: 6A39566
     title: Chief Information OFficer
     pay_grade: ES-00
-    salary: $195200
-    series: "0301"
+    salary: "$195200"
+    series: '0301'
     supervisory: true
     office: Office of the Director
     comment: details from FOIA doucments
@@ -1059,7 +1073,8 @@
     start_date: 2025-02-24
     start_date_truth: reported
     title: Special Advisor / Acting Chief Human Capital Officer
-    source: https://subscriber.politicopro.com/article/eenews/2025/03/05/heres-the-people-connected-to-doge-at-interior-00213330
+    source: >-
+      https://subscriber.politicopro.com/article/eenews/2025/03/05/heres-the-people-connected-to-doge-at-interior-00213330
     agency: DOI
 
 - name: Jared Isaacman
@@ -1152,19 +1167,21 @@
     comment: Listed as interviewing USDS staff on 1/21, not in GSA or OPM crew
     source: https://www.wired.com/story/elon-musk-digital-coup-doge-data-ai/
     agency: DOGE
-  - id: detail-doge-dol-killian
-    type: detailed
-    start_date: 2025-02-13~
-    start_date_truth: reported
-    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
-    source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
-    agency: DOL
   - id: detaile-doge-epa-killian
     type: detailed
     start_date: 2025-02-12
     start_date_truth: reported
     source: https://www.eenews.net/articles/doge-lands-at-epa/
     agency: EPA
+  - id: detail-doge-dol-killian
+    type: detailed
+    start_date: 2025-02-13~
+    start_date_truth: reported
+    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on
+      2/5.
+    source: >-
+      https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
+    agency: DOL
   - id: detail-doge-ssa-killian
     type: unknown
     start_date: 2025-02-20~
@@ -1196,8 +1213,8 @@
     pd_code: 6A38025
     title: Senior Advisor to the Director for Information Technology
     pay_grade: GS-15
-    salary: $195,200
-    series: "0301"
+    salary: "$195,200"
+    series: '0301'
     supervisory: true
     office: Office of the Director
     comment: I confirmed he is OPM-5
@@ -1222,8 +1239,8 @@
     pd_code: 6A38025
     title: Senior Advisor to the Director for Information Technology
     pay_grade: GS-15
-    salary: $195,200
-    series: "0301"
+    salary: "$195,200"
+    series: '0301'
     supervisory: true
     office: Office of the Director
     comment: Converted from provisional to excepted position
@@ -1243,7 +1260,8 @@
     end_date_truth: reported
     signed_date: 2025-02-19
     comment: He was forcibly removed from agency on 2025-04-18
-    source: https://www.taxnotes.com/research/federal/legislative-documents/congressional-tax-correspondence/treasury-official-sends-memo-doge-detail-crapo/7rl0x
+    source: >-
+      https://www.taxnotes.com/research/federal/legislative-documents/congressional-tax-correspondence/treasury-official-sends-memo-doge-detail-crapo/7rl0x
   - id: detail-opm-ftc-kliger
     type: detailed
     from: OPM
@@ -1277,7 +1295,7 @@
     nte_date_truth: verified
     pd_code: KNX0360
     pay_grade: ED-00
-    salary: $0
+    salary: "$0"
     title: Expert
     office: Office of the CIO
     description: Excepted Appointment NTE
@@ -1311,7 +1329,7 @@
     nte_date: 2025-04-10
     nte_date_truth: verified
     agency: Treasury
-    salary: $0
+    salary: "$0"
     documents:
     - onboard-treasury-thomas-krause
 
@@ -1325,21 +1343,6 @@
   sort_name: Lahera
   slug: nicholas-lahera
   category: unknown
-
-- name: Sahil Lavingia
-  sort_name: Lavingia
-  slug: shail-lavingia
-  age: 32
-  background: executive
-  category: wrecker
-  positions:
-  - id: va-lavingia
-    start_date: 2025-03-25
-    start_date_truth: reported
-    type: appointed
-    title: Advisor to the Chief of Staff
-    source: https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
-    agency: VA
 
 - name: Scott Langmack
   sort_name: Langmack
@@ -1355,6 +1358,21 @@
     start_date_truth: reported
     source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
     agency: HUD
+
+- name: Sahil Lavingia
+  sort_name: Lavingia
+  slug: shail-lavingia
+  age: 32
+  background: executive
+  category: wrecker
+  positions:
+  - id: va-lavingia
+    start_date: 2025-03-25
+    start_date_truth: reported
+    type: appointed
+    title: Advisor to the Chief of Staff
+    source: https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
+    agency: VA
 
 - name: Jeremy Lewin
   sort_name: Lewin
@@ -1475,7 +1493,9 @@
     office: Human Resources
     start_date: 2025-03-30~
     start_date_truth: guessed
-    comment: Tarak Makacha has reportedly shown up in FBI directories as a Senior Advisor to the agency's executive assistant director for human resources. He reportedly has been there since the end of March
+    comment: >-
+      Tarak Makacha has reportedly shown up in FBI directories as a Senior Advisor to the agency's executive
+      assistant director for human resources. He reportedly has been there since the end of March
     source: https://theintercept.com/2025/04/18/doge-tesla-employee-justice-department-fbi/
     agency: FBI
   - id: detail-fcc-makecha
@@ -1528,18 +1548,6 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
     agency: IAF
 
-- name: Jonathan Mendelson
-  sort_name: Mendelson
-  slug: jonathan-mendelson
-  category: wrecker
-  positions:
-  - id: sec-mendelson
-    type: unknown
-    start_date: 2025-05-02~
-    start_date_truth: reported
-    source: https://www.reuters.com/sustainability/boards-policy-regulation/doge-expands-presence-wall-st-regulator-sources-say-2025-05-02/
-    agency: SEC
-
 - name: Antoine McCord
   sort_name: McCord
   slug: antoine-mccord
@@ -1552,6 +1560,26 @@
     start_date: 2025-03-11
     start_date_truth: reported
     source: https://www.nextgov.com/people/2025/03/dhs-taps-antoine-mccord-top-tech-post/403727/
+
+- name: Jonathan Mendelson
+  sort_name: Mendelson
+  slug: jonathan-mendelson
+  category: wrecker
+  positions:
+  - id: sec-mendelson
+    type: unknown
+    start_date: 2025-05-02~
+    start_date_truth: reported
+    source: >-
+      https://www.reuters.com/sustainability/boards-policy-regulation/doge-expands-presence-wall-st-regulator-sources-say-2025-05-02/
+    agency: SEC
+
+- name: Katie Miller
+  sort_name: Miller, K
+  slug: katie-miller
+  age: 33
+  background: political
+  category: booster
 
 - name: Clark Minor
   sort_name: Minor
@@ -1576,13 +1604,6 @@
     start_date_truth: reported
     office: NIH Business System
     source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
-
-- name: Katie Miller
-  sort_name: "Miller, K"
-  slug: katie-miller
-  age: 33
-  background: political
-  category: booster
 
 - name: Michael Mirski
   sort_name: Mirski
@@ -1629,7 +1650,7 @@
     pd_code: 6A39750
     title: Expert
     pay_grade: ED-00
-    series: "0301"
+    series: '0301'
     supervisory: false
     office: Office of the Director
     comment: Sourced from a FOIAed document
@@ -1679,7 +1700,7 @@
     pd_code: 6A39734
     title: Expert
     pay_grade: ED-00
-    series: "0301"
+    series: '0301'
     supervisory: false
     office: Office of the Director
     comment: Sourced from FOIA documents
@@ -1702,7 +1723,7 @@
     nte_date: 2025-08-04
     nte_date_truth: verified
     agency: Education
-    salary: $0
+    salary: "$0"
     documents:
     - onboard-education-employee-4
   - id: detail-education-fdic-morgan
@@ -1711,6 +1732,12 @@
     start_date_truth: reported
     source: https://www.thehandbasket.co/p/doge-fdic
     agency: FDIC
+
+- name: Elon Musk
+  sort_name: Musk
+  slug: elon-musk
+  background: executive
+  category: leadership
 
 - name: Todd Newnam
   sort_name: Newnam
@@ -1743,7 +1770,7 @@
     pd_code: 6A38859
     title: Senior Advisor
     pay_grade: GS-15
-    series: "0301"
+    series: '0301'
     supervisory: false
     office: Office of the Director
     comment: Details from a FOIA document
@@ -1770,8 +1797,8 @@
     pd_code: 6A39738
     title: Expert
     pay_grade: ED-00
-    salary: $0
-    series: "0301"
+    salary: "$0"
+    series: '0301'
     supervisory: false
     office: Office of the Director
     comment: I confirmed that OPM Employee 6 is Nikhil but have no other info
@@ -1816,16 +1843,10 @@
     nte_date: 2026-07-04
     nte_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.5_1.pdf
-    comment: He reports one other USDS detailee is there, 2 Education staffers, and 2 other detailees from elsewhere (OPM? GSA?)
+    comment: >-
+      He reports one other USDS detailee is there, 2 Education staffers, and 2 other detailees from elsewhere
+      (OPM? GSA?)
     reimbursed: false
-  - id: detail-doge-dol-ramada
-    type: detailed
-    from: DOGE
-    agency: DOL
-    start_date: 2025-02-05
-    start_date_truth: verified
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.16.1.pdf
-    comment: Testimony was on 2/6. DOGE showed up at agency on 2/5. Mentions 3 other DOGE staff there
   - id: detail-doge-energy-adam-ramada
     type: detailed
     from: DOGE
@@ -1835,6 +1856,14 @@
     end_date: 2025-02-08~
     end_date_truth: disputed
     comment: Start date was given by DOE spokesperson denying a news report
+  - id: detail-doge-dol-ramada
+    type: detailed
+    from: DOGE
+    agency: DOL
+    start_date: 2025-02-05
+    start_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.16.1.pdf
+    comment: Testimony was on 2/6. DOGE showed up at agency on 2/5. Mentions 3 other DOGE staff there
   - id: detail-doge-fdic-ramada
     type: detailed
     from: DOGE
@@ -1863,7 +1892,7 @@
     pd_code: 6A39748
     title: Senior Advisor
     pay_grade: GS-15
-    series: "0301"
+    series: '0301'
     supervisory: false
     office: Office of the Director
     comment: From a FOIA document
@@ -1888,7 +1917,7 @@
     nte_date_truth: verified
     pd_code: KNX0380
     pay_grade: ED-00
-    salary: $0
+    salary: "$0"
     title: Expert
     office: Office of the CIO
     description: Excepted Appointment NTE
@@ -1980,15 +2009,19 @@
     end_date_truth: reported
     comment: Reportedly removed for complying quickly with judge's orders to block access
     supervisory: true
-    source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
+    source: >-
+      https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
   - id: ssa-mike-russo-advisor
     type: appointed
     start_date: 2025-03-25
     start_date_truth: reported
     title: Senior Advisor
     supervisory: false
-    comment: Scott Coulter is named the new CIO at the Social Security Administration and Mike Russo is moved to a Senior Advisor role with a focus on modernizing systems
-    source: https://www.nextgov.com/people/2025/03/ssa-tech-shop-be-led-another-doge-associate/404031/?oref=ng-homepage-river
+    comment: >-
+      Scott Coulter is named the new CIO at the Social Security Administration and Mike Russo is moved
+      to a Senior Advisor role with a focus on modernizing systems
+    source: >-
+      https://www.nextgov.com/people/2025/03/ssa-tech-shop-be-led-another-doge-associate/404031/?oref=ng-homepage-river
     agency: SSA
 
 - name: Amanda Scales
@@ -2009,7 +2042,7 @@
     pd_code: GAPMES00905
     title: Chief of Staff
     pay_grade: ES-00
-    series: "0301"
+    series: '0301'
     supervisory: true
     office: Office of the Director
     comment: Sourced from a FOIA document
@@ -2076,48 +2109,6 @@
     source: https://www.businessinsider.com/tesla-employee-alexander-simonpour-nasa-doge-team-2025-3
     agency: NASA
 
-- name: Thomas Shedd
-  sort_name: Shedd
-  slug: thomas-shedd
-  age: 28
-  background: coder
-  own_page: true
-  category: enabler
-  positions:
-  - id: gsa-thomas-shedd
-    type: appointed
-    agency: GSA
-    title: Deputy FAS Commissioner / Administrator
-    office: Technology Transformation Service
-    start_date: 2025-01-24
-    start_date_truth: reported
-    source: https://federalnewsnetwork.com/people/2025/01/gsas-new-leadership-mostly-comes-from-tech-finance-sectors/
-    supervisory: true
-  - id: dol-shedd
-    type: appointed
-    start_date: 2025-03-14
-    start_date_truth: reported
-    agency: DOL
-    title: Chief Information Officer
-    supervisory: true
-    source: https://www.nextgov.com/people/2025/03/tts-director-tapped-serve-labor-cio/403855/?oref=ng-home-top-story
-
-- name: Sam Smeal
-  sort_name: Smeal
-  slug: sam-smeal
-  age: 29
-  background: coder
-  category: wrecker
-  positions:
-  - id: faa-smeal
-    type: appointed
-    agency: FAA
-    start_date: 2025-02-16
-    start_date_truth: reported
-    nte_date: 2025-02-20
-    end_date_truth: verified
-    source: https://www.wired.com/story/faa-doge-elon-musk-space-x/
-
 - name: Bryton Shang
   sort_name: Shang
   slug: bryton-shang
@@ -2144,7 +2135,7 @@
   - id: gsa-ethan-shaotran
     type: appointed
     agency: GSA
-    salary: $0
+    salary: "$0"
     start_date: 2025-01-20
     start_date_truth: inferred
     comment: Position inferred from early reporting and detailing to Education
@@ -2201,6 +2192,48 @@
     documents:
     - 20250312-gsa-usps-alex-simonpour
 
+- name: Thomas Shedd
+  sort_name: Shedd
+  slug: thomas-shedd
+  age: 28
+  background: coder
+  own_page: true
+  category: enabler
+  positions:
+  - id: gsa-thomas-shedd
+    type: appointed
+    agency: GSA
+    title: Deputy FAS Commissioner / Administrator
+    office: Technology Transformation Service
+    start_date: 2025-01-24
+    start_date_truth: reported
+    source: >-
+      https://federalnewsnetwork.com/people/2025/01/gsas-new-leadership-mostly-comes-from-tech-finance-sectors/
+    supervisory: true
+  - id: dol-shedd
+    type: appointed
+    start_date: 2025-03-14
+    start_date_truth: reported
+    agency: DOL
+    title: Chief Information Officer
+    supervisory: true
+    source: >-
+      https://www.nextgov.com/people/2025/03/tts-director-tapped-serve-labor-cio/403855/?oref=ng-home-top-story
+
+- name: Roland Shen
+  sort_name: Shen
+  slug: roland-shen
+  category: wrecker
+  positions:
+  - id: treasury-roland-shen
+    type: appointed
+    start_date: 2025-04-18
+    start_date_truth: reported
+    office: Bureau of Fiscal Services
+    agency: Treasury
+    source: >-
+      https://www.msn.com/en-us/money/companies/rampin-up-baby-that-thiel-start-up-hunting-the-motherlode-contract-is-inside-treasury/ar-AA1DesOc
+
 - name: Alexander Simonpour
   sort_name: Simonpour
   slug: alex-simonpour
@@ -2228,6 +2261,22 @@
     source: https://www.businessinsider.com/tesla-employee-alexander-simonpour-nasa-doge-team-2025-3
     agency: NASA
 
+- name: Sam Smeal
+  sort_name: Smeal
+  slug: sam-smeal
+  age: 29
+  background: coder
+  category: wrecker
+  positions:
+  - id: faa-smeal
+    type: appointed
+    agency: FAA
+    start_date: 2025-02-16
+    start_date_truth: reported
+    nte_date: 2025-02-20
+    end_date_truth: verified
+    source: https://www.wired.com/story/faa-doge-elon-musk-space-x/
+
 - name: Brad Smith
   sort_name: Smith
   slug: brad-smith
@@ -2243,90 +2292,6 @@
     comment: All I have is his signed SF-61
     documents:
     - onboard-hhs-brad-smith
-
-- name: Christopher Stanley
-  sort_name: Stanley
-  slug: christopher-stanley
-  age: 33
-  background: coder
-  category: wrecker
-  positions:
-  - id: opm-christopher-stanley
-    type: appointed
-    name: Christopher Stanley
-    agency: OPM
-    start_date: 2025-01-28
-    start_date_truth: verified
-    description: Exc Appt NTE
-    appt_type_code: 48
-    appt_type: Other (Except NonPerm)
-    pd_code: 6A39736
-    title: Expert
-    pay_grade: ED-00
-    series: "0301"
-    supervisory: false
-    office: Office of the Director
-    comment: Sourced from a FOIAed document
-    documents:
-    - opm-foia-doge-positions
-  - id: fhfa-christopher-stanley
-    title: Board Member, Fannie Mae/Freddie Mac
-    type: appointed
-    start_date: 2025-03-17
-    start_date_truth: reported
-    end_date: 2025-03-18
-    end_date_truth: reported
-    comment: Chris Stanley spent one day on the board before resigning
-    source: https://www.housingwire.com/articles/doge-fannie-mae-board-member-christopher-stanley-resignation/
-    agency: FHFA
-  - id: detail-opm-doj-stanley
-    type: detailed
-    from: OPM
-    start_date: 2025-04-02~
-    start_date_truth: reported
-    title: Senior Advisor
-    office: Deputy Attorney General
-    comment: Date is approximate. Assuming detailed from OPM
-    source: https://www.reuters.com/technology/cybersecurity/doge-official-doj-bragged-about-hacking-distributing-pirated-software-2025-04-02/
-    agency: DOJ
-
-- name: Mark Steffensen
-  sort_name: Steffensen
-  slug: mark-steffensen
-  background: lawyer
-  category: enabler
-  positions:
-  - id: ssa-steffensen
-    type: appointed
-    start_date: 2025-02-25
-    start_date_truth: reported
-    end_date: 2025-02-27
-    end_date_truth: reported
-    title: Senior Advisor
-    office: Office of the Commissioner
-    source: https://bsky.app/profile/chrisgeidner.bsky.social/post/3lipqblfluc2h
-    agency: SSA
-  - id: ssa-steffensen-1
-    type: appointed
-    start_date: 2025-02-27
-    start_date_truth: reported
-    title: Acting General Counsel
-    office: Office of the Commissioner
-    source: https://web-cdn.bsky.app/profile/chrisgeidner.bsky.social/post/3ljb6rufur22e
-    agency: SSA
-
-- name: Roland Shen
-  sort_name: Shen
-  slug: roland-shen
-  category: wrecker
-  positions:
-  - id: treasury-roland-shen
-    type: appointed
-    start_date: 2025-04-18
-    start_date_truth: reported
-    office: Bureau of Fiscal Services
-    agency: Treasury
-    source: https://www.msn.com/en-us/money/companies/rampin-up-baby-that-thiel-start-up-hunting-the-motherlode-contract-is-inside-treasury/ar-AA1DesOc
 
 - name: Keith Sonderling
   sort_name: Sonderling
@@ -2354,6 +2319,78 @@
   slug: branden-spikes
   category: unknown
 
+- name: Christopher Stanley
+  sort_name: Stanley
+  slug: christopher-stanley
+  age: 33
+  background: coder
+  category: wrecker
+  positions:
+  - id: opm-christopher-stanley
+    type: appointed
+    name: Christopher Stanley
+    agency: OPM
+    start_date: 2025-01-28
+    start_date_truth: verified
+    description: Exc Appt NTE
+    appt_type_code: 48
+    appt_type: Other (Except NonPerm)
+    pd_code: 6A39736
+    title: Expert
+    pay_grade: ED-00
+    series: '0301'
+    supervisory: false
+    office: Office of the Director
+    comment: Sourced from a FOIAed document
+    documents:
+    - opm-foia-doge-positions
+  - id: fhfa-christopher-stanley
+    title: Board Member, Fannie Mae/Freddie Mac
+    type: appointed
+    start_date: 2025-03-17
+    start_date_truth: reported
+    end_date: 2025-03-18
+    end_date_truth: reported
+    comment: Chris Stanley spent one day on the board before resigning
+    source: https://www.housingwire.com/articles/doge-fannie-mae-board-member-christopher-stanley-resignation/
+    agency: FHFA
+  - id: detail-opm-doj-stanley
+    type: detailed
+    from: OPM
+    start_date: 2025-04-02~
+    start_date_truth: reported
+    title: Senior Advisor
+    office: Deputy Attorney General
+    comment: Date is approximate. Assuming detailed from OPM
+    source: >-
+      https://www.reuters.com/technology/cybersecurity/doge-official-doj-bragged-about-hacking-distributing-pirated-software-2025-04-02/
+    agency: DOJ
+
+- name: Mark Steffensen
+  sort_name: Steffensen
+  slug: mark-steffensen
+  background: lawyer
+  category: enabler
+  positions:
+  - id: ssa-steffensen
+    type: appointed
+    start_date: 2025-02-25
+    start_date_truth: reported
+    end_date: 2025-02-27
+    end_date_truth: reported
+    title: Senior Advisor
+    office: Office of the Commissioner
+    source: https://bsky.app/profile/chrisgeidner.bsky.social/post/3lipqblfluc2h
+    agency: SSA
+  - id: ssa-steffensen-1
+    type: appointed
+    start_date: 2025-02-27
+    start_date_truth: reported
+    title: Acting General Counsel
+    office: Office of the Commissioner
+    source: https://web-cdn.bsky.app/profile/chrisgeidner.bsky.social/post/3ljb6rufur22e
+    agency: SSA
+
 - name: Christopher Sweet
   sort_name: Sweet
   slug: christopher-sweet
@@ -2364,7 +2401,10 @@
     start_date: 2025-04-10~
     start_date_truth: reported
     fuzz: Date is unspecified, just sometime earlier in April
-    comment: Scott Langmack sends a message that "I'd like to share with you that Chris Sweet has joined the HUD DOGE team with the title of special assistant, although a better title might be 'AI computer programming quant analyst'"
+    comment: >-
+      Scott Langmack sends a message that "I'd like to share with you that Chris Sweet has joined the
+      HUD DOGE team with the title of special assistant, although a better title might be 'AI computer
+      programming quant analyst'"
     source: https://www.wired.com/story/doge-college-student-ai-rewrite-regulations-deregulation/
     title: Special Assistant
     agency: HUD
@@ -2402,7 +2442,8 @@
     office: Office of the Secretary
     start_date: 2025-03-05
     start_date_truth: reported
-    source: https://subscriber.politicopro.com/article/eenews/2025/03/05/heres-the-people-connected-to-doge-at-interior-00213330
+    source: >-
+      https://subscriber.politicopro.com/article/eenews/2025/03/05/heres-the-people-connected-to-doge-at-interior-00213330
     agency: DOI
 
 - name: Cary Volpert
@@ -2417,6 +2458,19 @@
     type: unknown
     source: https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
     agency: VA
+
+- name: Linda Whitridge
+  slug: linda-whitridge
+  sort_name: Whitridge
+  category: wrecker
+  positions:
+  - id: treasury-whitridge
+    type: unknown
+    start_date: 2025-04-XX
+    start_date_truth: verified
+    fuzz: Identity is only revealed in a court filing
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.61.2.pdf
+    agency: Treasury
 
 - name: Jordan Wick
   sort_name: Wick
@@ -2441,8 +2495,11 @@
     from: DOGE
     start_date: 2025-02-13~
     start_date_truth: reported
-    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5. But was part of CFPB assault.
-    source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
+    comment: >-
+      No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5. But
+      was part of CFPB assault.
+    source: >-
+      https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
     agency: DOL
   - id: detail-doge-education-wick
     type: detailed
@@ -2470,19 +2527,6 @@
     comment: Assuming he has been detailed from the CFPB
     agency: FCC
 
-- name: Linda Whitridge
-  slug: linda-whitridge
-  sort_name: Whitridge
-  category: wrecker
-  positions:
-  - id: treasury-whitridge
-    type: unknown
-    start_date: 2025-04-XX
-    start_date_truth: verified
-    fuzz: Identity is only revealed in a court filing
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.61.2.pdf
-    agency: Treasury
-
 - name: Joanna Wischer
   slug: joanna-wischer
   sort_name: Wischer
@@ -2500,7 +2544,7 @@
     pd_code: 6A36647
     title: Senior Advisor to the Director
     pay_grade: GS-15
-    series: "0301"
+    series: '0301'
     supervisory: false
     office: Office of the Director
     comment: Sourced from a FOIA document; listed as Joanna Miller
@@ -2540,7 +2584,7 @@
     pd_code: 6A39737
     title: Expert
     pay_grade: ED-00
-    series: "0301"
+    series: '0301'
     supervisory: false
     office: Office of the Director
     comment: Sourced from FOIAed documents

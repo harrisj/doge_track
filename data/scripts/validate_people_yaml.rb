@@ -29,7 +29,8 @@ out = people.sort_by { |p| p[:sort_name] }
 
 File.open(out_file, 'w') do |file|
   schema_hdr = "# yaml-language-server: $schema=../schemas/people-file.json\n"
-  file.write(schema_hdr, YAML.dump(out, line_width: 100, stringify_names: true, header: false))
+  out_yaml = YAML.dump(out, line_width: 100, stringify_names: true, header: false)
+  file.write(schema_hdr, out_yaml.gsub(/^- /, "\n- "))
 end
 
-# File.rename(out_file, events_file)
+File.rename(out_file, people_file)

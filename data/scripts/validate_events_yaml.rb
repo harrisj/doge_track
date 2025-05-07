@@ -21,7 +21,8 @@ out = events.each_with_index.sort_by { |e, idx| [Date.edtf(e[:id].to_s), idx] }.
 
 File.open(out_file, 'w') do |file|
   schema_hdr = "# yaml-language-server: $schema=../schemas/events-file.json\n"
-  file.write(schema_hdr, YAML.dump(out, line_width: 100, stringify_names: true, header: false))
+  out_yaml = YAML.dump(out, line_width: 100, stringify_names: true, header: false)
+  file.write(schema_hdr, out_yaml.gsub(/^- /, "\n- "))
 end
 
 File.rename(out_file, events_file)
