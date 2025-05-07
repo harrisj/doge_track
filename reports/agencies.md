@@ -345,10 +345,10 @@
 - people:
   - **Mike Russo** (2025-01-31 - 2024-03-24) Chief Information Officer
   - **OPM-3 (Akash Bobba)** (2025-02-03) (detailed from OPM)
-  - #<DogeAlias:0x000000010aa75390> (2025-02-09) Expert
+  - **SSA-1** (2025-02-09) Expert
   - **Leland Dudek** (2025-02-16) Acting Commissioner
   - **SSA-2 (Scott Coulter)** (2025-02-18) (detailed from NASA)
-  - #<DogeAlias:0x000000010aa72f50> (2025-02-18) (detailed from DOGE)
+  - **SSA-5** (2025-02-18) (detailed from DOGE)
   - **SSA-10 (Ethan Shaotran)** (2025-02-18) (detailed from GSA)
   - **SSA-7 (Marko Elez)** (2025-02-18) (detailed from DOL)
   - **Cole Killian** (2025-02-20~)
@@ -357,9 +357,9 @@
   - **SSA-4 (Antonio Gracias)** (2025-02-23) Expert
   - **SSA-6 (Jon Koval)** (2025-02-23) Expert
   - **Mark Steffensen** (2025-02-25 - 2025-02-27) Senior Advisor
-  - #<DogeAlias:0x000000010a5db870> (2025-02-26) (detailed from OPM)
+  - **SSA-8** (2025-02-26) (detailed from OPM)
   - **Mark Steffensen** (2025-02-27) Acting General Counsel
-  - #<DogeAlias:0x000000010a5d9f20> (2025-03-16) Expert
+  - **SSA-11** (2025-03-16) Expert
   - **SSA-2 (Scott Coulter)** (2025-03-24) Chief Information Officer
   - **Mike Russo** (2025-03-25) Senior Advisor
 

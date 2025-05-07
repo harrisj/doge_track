@@ -33,7 +33,7 @@ def generate_people_md
             date_range = "dates unknown"
           end
 
-          alias_str = " as \"#{pos.doge_alias_id}\"" if pos.doge_alias_id
+          alias_str = "[as \"#{pos.doge_alias_id}\"]" if pos.doge_alias_id
           title_str = pos.title || ""
           title_str += " #{pos.pay_grade}" if pos.pay_grade
           if pos.supervisory and pos.title
@@ -45,7 +45,7 @@ def generate_people_md
             salary ||= "#{pos.salary}"
           end
 
-          pos_string = "  -  #{[agency_str, date_range, alias_str, title_str, salary].reject(&:nil?).join(' ')}"
+          pos_string = "    -  #{[agency_str, date_range, alias_str, title_str, salary].reject(&:nil?).join(' ')}"
           file.puts pos_string
 
           # Put in system access
@@ -60,7 +60,7 @@ def generate_people_md
             end_date ||= "ongoing"
 
             sys_date = "#{sr.date_granted} - #{end_date}"
-            file.puts "    - #{sys_name}#{sys_access}: #{sys_date}"
+            file.puts "        - #{sys_name}#{sys_access}: #{sys_date}"
           end
         end
       end
@@ -84,7 +84,7 @@ def generate_agency_md
 
         agency.positions.sort_by {|r| r.start_date ? r.start_date : '2025-01-20'}.each do |pos|
           if pos.doge_alias
-            name = pos.name ? "**#{pos.doge_alias_id} (#{pos.name})**" : pos.doge_alias
+            name = pos.name ? "**#{pos.doge_alias_id} (#{pos.name})**" : "**#{pos.doge_alias_id}**"
           else
             name = "**#{pos.name}**"
           end
