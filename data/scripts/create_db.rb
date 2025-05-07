@@ -51,6 +51,7 @@ DB.create_table! :positions do
   string :reimbursement_amount
   string :comment
   string :qualifications
+  string :documents # FIXME
 end
 
 DB.create_table! :people do

@@ -129,8 +129,7 @@
     type: unknown
     start_date: 2025-02-13~
     start_date_truth: reported
-    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on
-      2/5.
+    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
     source: >-
       https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
     agency: DOL
@@ -326,8 +325,7 @@
     start_date: 2025-03-25
     start_date_truth: verified
     comment: >-
-      Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco
-      Rubio and Pete Hegseth, and he is authorized to transfer all assets to the GSA
+      Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco Rubio and Pete Hegseth, and he is authorized to transfer all assets to the GSA
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.14.1.pdf
     agency: USIP
   - id: imls-cavanaugh
@@ -350,8 +348,7 @@
     start_date_truth: reported
     from: DOGE
     comment: >-
-      Wired reports on a detailing agreement between DOGE and DOL, but that could be for Adam Ramada and
-      crew
+      Wired reports on a detailing agreement between DOGE and DOL, but that could be for Adam Ramada and crew
     source: https://www.businessinsider.com/doge-staffer-fertility-clinic-pronatalist-department-of-labor
     agency: DOL
 
@@ -400,8 +397,7 @@
     start_date: 2025-01-20~
     start_date_truth: inferred
     comment: >-
-      Several documents have Coristine detailing from GSA, so assuming home agency. Also, not in FOIA
-      release from OPM
+      Several documents have Coristine detailing from GSA, so assuming home agency. Also, not in FOIA release from OPM
     source: >-
       https://www.wired.com/story/elon-musk-lackeys-office-personnel-management-opm-neuralink-x-boring-stalin/
   - id: detail-gsa-opm-coristine
@@ -546,7 +542,15 @@
   sort_name: Dudek
   background: political
   category: enabler
-  positions: []
+  positions:
+  - id: ssa-dudek
+    type: appointed
+    title: Acting Commissioner
+    agency: SSA
+    start_date: 2025-02-16
+    start_date_truth: reported
+    supervisory: true
+    source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
 
 - name: Stephen Ehikian
   sort_name: Ehikian
@@ -617,7 +621,14 @@
   slug: charles-ezell
   background: political
   category: enabler
-  positions: []
+  positions:
+  - id: opm-ezell
+    type: appointed
+    start_date: 2025-01-20
+    start_date_truth: verified
+    title: Acting Director
+    agency: OPM
+    source: https://www.govinfo.gov/content/pkg/DCPD-202500108/html/DCPD-202500108.htm
 
 - name: Luke Farritor
   sort_name: Farritor
@@ -807,8 +818,7 @@
     type: unknown
     start_date: 2025-02-13~
     start_date_truth: reported
-    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on
-      2/5.
+    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
     source: >-
       https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
     agency: DOL
@@ -843,8 +853,7 @@
     end_date_truth: verified
     type: appointed
     comment: >-
-      Amy Gleason joins the USDS, according to her sworn testimony; not sure of her title for this before
-      she is named Acting Director
+      Amy Gleason joins the USDS, according to her sworn testimony; not sure of her title for this before she is named Acting Director
     source: https://www.documentcloud.org/documents/25564597-crewvdogereconmot031425/
     agency: DOGE
   - id: doge-amy-gleason-director
@@ -892,8 +901,7 @@
     series: '0301'
     office: Office of the Chief Information Officer
     qualifications: >-
-      Founder, CEO and Chief Investment Officer of [REDACTED]. Over 25 years of experience in private
-      equity investing.
+      Founder, CEO and Chief Investment Officer of [REDACTED]. Over 25 years of experience in private equity investing.
     comment: SF-50 is a correction
     documents:
     - onboard-ssa-employee-4
@@ -1035,7 +1043,7 @@
     appt_type_code: 55
     appt_type: 55-Noncareer (Senior Exec Perm)
     pd_code: 6A38081
-    title: Senior Advisor to the Director for Technology and De...
+    title: Senior Advisor to the Director for Technology and Delivery
     pay_grade: ES-00
     salary: "$195200"
     series: '0301'
@@ -1199,8 +1207,7 @@
     type: detailed
     start_date: 2025-02-13~
     start_date_truth: reported
-    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on
-      2/5.
+    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
     source: >-
       https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
     agency: DOL
@@ -1333,6 +1340,12 @@
     agency: DOJ
     name: Jon Koval
     alias: SSA-6
+  - id: detail-ssa-doj-koval
+    type: detailed
+    start_date: 2025-04-15
+    start_date_truth: reported
+    source: https://www.nytimes.com/2025/04/18/us/politics/doge-musk-social-security-justice-department.html
+    agency: DOJ
 
 - name: Michael Kratsios
   sort_name: Kratsios
@@ -1524,8 +1537,7 @@
     start_date: 2025-03-30~
     start_date_truth: guessed
     comment: >-
-      Tarak Makacha has reportedly shown up in FBI directories as a Senior Advisor to the agency's executive
-      assistant director for human resources. He reportedly has been there since the end of March
+      Tarak Makacha has reportedly shown up in FBI directories as a Senior Advisor to the agency's executive assistant director for human resources. He reportedly has been there since the end of March
     source: https://theintercept.com/2025/04/18/doge-tesla-employee-justice-department-fbi/
     agency: FBI
   - id: detail-fcc-makecha
@@ -1771,7 +1783,12 @@
   slug: elon-musk
   background: executive
   category: leadership
-  positions: []
+  positions:
+  - id: musk-doge
+    type: appointed
+    start_date: 2025-01-20
+    start_date_truth: guessed
+    agency: DOGE
 
 - name: Todd Newnam
   sort_name: Newnam
@@ -1879,8 +1896,7 @@
     nte_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.5_1.pdf
     comment: >-
-      He reports one other USDS detailee is there, 2 Education staffers, and 2 other detailees from elsewhere
-      (OPM? GSA?)
+      He reports one other USDS detailee is there, 2 Education staffers, and 2 other detailees from elsewhere (OPM? GSA?)
     reimbursed: false
   - id: detail-doge-energy-adam-ramada
     type: detailed
@@ -2054,8 +2070,7 @@
     title: Senior Advisor
     supervisory: false
     comment: >-
-      Scott Coulter is named the new CIO at the Social Security Administration and Mike Russo is moved
-      to a Senior Advisor role with a focus on modernizing systems
+      Scott Coulter is named the new CIO at the Social Security Administration and Mike Russo is moved to a Senior Advisor role with a focus on modernizing systems
     source: >-
       https://www.nextgov.com/people/2025/03/ssa-tech-shop-be-led-another-doge-associate/404031/?oref=ng-homepage-river
     agency: SSA
@@ -2441,9 +2456,7 @@
     start_date_truth: reported
     fuzz: Date is unspecified, just sometime earlier in April
     comment: >-
-      Scott Langmack sends a message that "I'd like to share with you that Chris Sweet has joined the
-      HUD DOGE team with the title of special assistant, although a better title might be 'AI computer
-      programming quant analyst'"
+      Scott Langmack sends a message that "I'd like to share with you that Chris Sweet has joined the HUD DOGE team with the title of special assistant, although a better title might be 'AI computer programming quant analyst'"
     source: https://www.wired.com/story/doge-college-student-ai-rewrite-regulations-deregulation/
     title: Special Assistant
     agency: HUD
@@ -2535,8 +2548,7 @@
     start_date: 2025-02-13~
     start_date_truth: reported
     comment: >-
-      No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5. But
-      was part of CFPB assault.
+      No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5. But was part of CFPB assault.
     source: >-
       https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
     agency: DOL

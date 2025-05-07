@@ -17,14 +17,14 @@ Case.unrestrict_primary_key
 GovtSystem.unrestrict_primary_key
 SystemRole.unrestrict_primary_key
 
-GovtSystem.plugin :nested_attributes
-GovtSystem.nested_attributes :system_roles
+# GovtSystem.plugin :nested_attributes
+# GovtSystem.nested_attributes :system_roles
 
-Person.plugin :nested_attributes
-Person.nested_attributes :positions
+# Person.plugin :nested_attributes
+# Person.nested_attributes :positions
 
-Alias.plugin :nested_attributes
-Alias.nested_attributes :positions
+# DogeAlias.plugin :nested_attributes
+# DogeAlias.nested_attributes :positions
 
 pos_hashes = []
 
@@ -41,22 +41,21 @@ people_yaml.each do |p_hash|
   p = Person.new(p_hash.reject { |k, _| %i[positions alias].include?(k) })
 
   p_hash.fetch(:positions, []).each do |pos_hash|
-    puts pos_hash
-    pos_hashes.append(pos_hash) if pos_hash.key? :alias
-    pos = Position.new(pos_hash.reject { |k, _| %i[from alias documents agency].include?(k) })
-    pos.name = p.name
+    pos_hash.transform_keys!(alias: :doge_alias_id, from: :from_agency_id, agency: :agency_id)
+    pos_hash[:name] = p.name
+    pos_hash[:documents] = pos_hash[:documents].join(" ") if pos_hash[:documents]  # FIXME: load documents as separate table
 
-    if pos_hash.key? :agency
-      a = Agency[pos_hash[:agency]]
-      pos.agency = a
-    end
+    pos = Position.create(pos_hash) # .reject { |k, _| %i[from alias documents agency].include?(k) })
 
-    if pos_hash.key? :from
-      a = Agency[pos_hash[:from]]
-      pos.from_agency = a
-    end
+    # if pos_hash.key? :agency
+    #   a = Agency[pos_hash[:agency]]
+    #   pos.agency = a
+    # end
 
-    pos.save
+    # if pos_hash.key? :from
+    #   a = Agency[pos_hash[:from]]
+    #   pos.from_agency = a
+    # end
   end
 
   p.save
@@ -75,16 +74,17 @@ aliases_yaml.each do |alias_hash|
   end
 
   a.evidence = alias_hash[:evidence].join("\n") if alias_hash.key? :evidence
-
   a.save
-end
 
-pos_hashes.each do |pos_hash|
-  pos = Position[pos_hash[:id]]
-  p_alias = DogeAlias[pos_hash[:alias]]
-  pos.doge_alias = p_alias
-  pos.name ||= p_alias.name
-  pos.save
+  # Positions with names have already been loaded
+  unless a.name
+    alias_hash.fetch(:positions, []).each do |pos_hash|
+      pos_hash.transform_keys!(alias: :doge_alias_id, from: :from_agency_id, agency: :agency_id)
+      pos_hash[:doge_alias_id] = a.id
+      pos_hash[:documents] = pos_hash[:documents].join(" ") if pos_hash[:documents]
+      Position.create(pos_hash)
+    end
+  end
 end
 
 cases_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'cases.yaml'), symbolize_names: true)
@@ -172,6 +172,5 @@ events_yaml.each do |event_hash|
 end
 
 # Now, if Aliases have been named, update the alias pointers to include names
-DB.run "UPDATE events e JOIN doge_aliases d ON d.id = e.doge_alias_id SET e.name = d.name WHERE d.name IS NOT NULL"
-DB.run "UPDATE positions p JOIN doge_aliases d ON d.id = p.doge_alias_id SET p.name = d.name WHERE d.name IS NOT NULL"
+# DB.run "UPDATE events e JOIN doge_aliases d ON d.id = e.doge_alias_id SET e.name = d.name WHERE d.name IS NOT NULL"
 

@@ -14,7 +14,7 @@ class Agency < Sequel::Model
   one_to_many :children, key: :parent_id, class: self
 
   one_to_many :details_from, class: :Position, key: :from_agency
-  one_to_many :positions, key: :agency
+  one_to_many :positions
 
   one_to_many :doge_aliases
   one_to_many :govt_systems
@@ -65,6 +65,10 @@ class Position < Sequel::Model
   many_to_one :person, key: :name, primary_key: :name
   many_to_one :from_agency, class: :Agency, key: :from_agency_id
   many_to_one :agency
+
+  def detail?
+    self.type == 'detailed'
+  end
 end
 
 # Represents a single event
