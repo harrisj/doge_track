@@ -95,7 +95,7 @@
 # Sam Corcos
 - category: wrecker
 - positions:
-    -  **IRS** (2025-03-01 to ??) 
+    -  **IRS** (2025-03-01 to 2025-05-06~) 
     -  **IRS** (2025-05-06~ to ??) Chief Information Officer
 
 # Edward Coristine
@@ -112,11 +112,15 @@
         - Microsoft 365 **[admin access]**: 2025-02-20 - ongoing
     -  **Education** (2025-02-20 to ??) 
     -  **HHS** (2025-03-05 to ??) 
+    -  **CMS** (2025-03-05 to ??) 
+        - Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
+        - CMS Acquisition Lifecycle Management system: 2025-03-05 - ongoing
+        - Integrated Data Repository: 2025-03-11 - ongoing
 
 # Scott Coulter
 - category: wrecker
 - positions:
-    -  **SSA** (2025-02-18 to NTE 2026-02-18) [as "SSA-2"] 
+    -  **SSA** (2025-02-18 to 2025-03-24) [as "SSA-2"] 
     -  **SSA** (2025-03-24 to ??) [as "SSA-2"] **Chief Information Officer**
 
 # Steve Davis
@@ -147,6 +151,10 @@
     -  **SSA** (2025-02-18 to ??) [as "SSA-7"] 
     -  **HHS** (2025-03-05 to ??) 
         - National Directory of New Hires: 2025-03-06 - 2025-04-18
+    -  **CMS** (2025-03-05 to ??) 
+        - Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
+        - CMS Acquisition Lifecycle Management system: 2025-03-05 - ongoing
+        - Integrated Data Repository: 2025-03-05 - ongoing
 
 # Charles Ezell
 - category: enabler
@@ -163,6 +171,10 @@
         - Enterprise Human Capital Management System **[admin access]**: 2025-02-28 - ongoing
         - Grants.gov **[admin access]**: 2025-03-21 - 2025-04-18
     -  **USAID** (2025-01-27 to ??) 
+    -  **CMS** (2025-01-31 to ??) 
+        - Healthcare Integrated General Ledger Accounting System: 2025-01-31 - ongoing
+        - CMS Acquisition Lifecycle Management system: 2025-02-03 - ongoing
+        - Integrated Data Repository: 2025-02-18 - ongoing
     -  **Energy** (2025-02-04~ to 2025-02-08~) 
         - Microsoft 365: 2025-02-05 - ongoing
     -  **CFPB** (2025-02-07 to 2025-03-04) 
@@ -179,6 +191,8 @@
 - category: wrecker
 - positions:
     -  **Education** (2025-01-31 to ??) [as "ED-2"] Senior Advisor GS-15/6 $195,200
+    -  **CMS** (2025-02-03 to ??) 
+        - CMS Acquisition Lifecycle Management system: 2025-02-03 - 2025-04-18
     -  **HHS** (2025-02-20 to ??) 
         - Grants.gov **[admin access]**: 2025-02-28 - ongoing
         - GrantSolutions: 2025-02-28 - ongoing
@@ -218,6 +232,8 @@
 - positions:
     -  **DOGE** (2024-12-30 to 2024-02-18) 
     -  **DOGE** (2025-02-18 to ??) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
+    -  **CMS** (2025-02-24~ to ??) 
+        - CMS Acquisition Lifecycle Management system: 2025-02-24 - ongoing
     -  **HHS** (2025-03-04 to ??) Expert/Consultant
 
 # Mike Gonzalez
@@ -369,6 +385,8 @@
 - positions:
     -  **GSA** (2025-01-20 to ??) 
     -  **USAID** (2025-01-28 to 2025-03-18) Senior Advisor / Director for Strategy & Programs
+    -  **CMS** (2025-02-03 to ??) 
+        - CMS Acquisition Lifecycle Management system: 2025-02-03 - 2025-04-18
     -  **CFPB** (2025-02-06 to ??) 
     -  **HHS** (2025-02-21 to ??) 
         - GrantSolutions: 2025-02-28 - ongoing
@@ -461,6 +479,13 @@
 - positions:
     -  **DOL** dates unknown 
     -  **SSA** (2025-02-22 to ??) [as "SSA-3"] 
+    -  **HHS** (2025-03-05 to ??) 
+        - GrantSolutions: 2025-02-19 - ongoing
+        - National Directory of New Hires: 2025-03-06 - 2025-04-18
+    -  **CMS** (2025-03-05 to ??) 
+        - Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
+        - CMS Acquisition Lifecycle Management system: 2025-03-05 - ongoing
+        - Integrated Data Repository: 2025-03-05 - ongoing
 
 # Justin Monroe
 - category: wrecker
@@ -528,6 +553,8 @@
         - Financial Business Intelligence System: 2025-02-04 - ongoing
         - Business Intelligence Information System: 2025-02-06 - ongoing
         - GrantSolutions: 2025-02-20 - ongoing
+    -  **CMS** (2025-02-03 to ??) 
+        - CMS Acquisition Lifecycle Management system: 2025-02-03 - ongoing
     -  **NIH** (2025-02-24 to ??) 
         - EBS?: 2025-02-24 - ongoing
         - Procurement Request Information System Management: 2025-02-24 - ongoing
@@ -643,6 +670,8 @@
         - Financial Business Intelligence System: 2025-03-16 - ongoing
         - HHS Unified Financial Management System: 2025-03-18 - ongoing
         - Payment Management System: 2025-03-27 - ongoing
+    -  **CMS** (2025-03-11 to ??) 
+        - Integrated Data Repository: 2025-03-11 - ongoing
     -  **NSF** (2025-04-14 to ??) 
 
 # Katrine Trampe

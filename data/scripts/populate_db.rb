@@ -103,13 +103,13 @@ systems_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'systems.yaml'), symbol
 systems_yaml.each do |system_hash|
   input_hash = system_hash.transform_keys(alias: :doge_alias_id, agency: :agency_id)
 
-  puts(input_hash)
   s = GovtSystem.create(input_hash.reject { |k, _| %i[access serves].include?(k) })
 
   input_hash.fetch(:access, []).each do |access_hash|
     access_hash[:govt_system_id] = s.id
     access_hash[:source] = Array(access_hash[:source]).join(', ') if access_hash.key? :source
     access_hash.transform_keys!({ alias: :doge_alias_id, agency: :agency_id })
+    access_hash[:agency_id] ||= input_hash[:agency_id]
     SystemRole.create(access_hash)
   end
 

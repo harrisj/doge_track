@@ -74,7 +74,7 @@ def generate_agency_md
   report_file = File.join(REPORTS_DIR, "agencies.md")
 
   open(report_file, 'w') do |file|
-    Agency.eager(:govt_systems, :events).each do |agency|
+    Agency.all.each do |agency|
       file.puts("# #{agency.name}")
 
       file.puts("- slug: #{agency.slug}")
@@ -106,6 +106,39 @@ def generate_agency_md
           end
 
           file.puts("  - #{[name, dates, pos.title, detail].reject(&:nil?).join(" ")}")
+        end
+      end
+
+      systems = {}
+      agency.system_roles.each do |sr|
+        systems[sr.govt_system_id] ||= []
+        systems[sr.govt_system_id].append(sr)
+      end
+
+      if systems.size > 0
+        file.puts "- systems:"
+
+        systems.each do |system_id, roles|
+          system = roles[0].govt_system
+          file.puts "    - #{system.id}: #{system.name}"
+
+          roles.each do |sr|
+            if sr.doge_alias
+              name = sr.name ? "{sr.doge_alias_id} (#{sr.name})" : "#{sr.doge_alias_id}"
+            else
+              name = "#{sr.name}"
+            end
+
+            sys_access = "**[#{sr.type} access]**" if sr.type && sr.type != 'read' && sr.type != 'unknown'
+            
+            end_date = sr.date_revoked
+            end_date ||= "NTE #{sr.date_nte}" if sr.date_nte
+            end_date ||= "ongoing"
+
+            sys_date = "#{sr.date_granted} - #{end_date}"
+
+            file.puts "        - #{[name, sys_access, sys_date].reject(&:nil?).join(' ')}"
+          end
         end
       end
 

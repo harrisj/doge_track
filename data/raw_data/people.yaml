@@ -373,7 +373,9 @@
     type: unknown
     start_date: 2025-03-01
     start_date_truth: reported
-    comment: Likely earlier involvement, maybe when Gavin Kliger started there
+    end_date: 2025-05-06~
+    end_date_truth: inferred
+    comment: Likely earlier involvement, maybe when Gavin Kliger started there; ends when became CIO
     source: https://www.washingtonpost.com/business/2025/03/01/doge-irs-tax-records-benefits/
     agency: IRS
   - id: irs-corcos-cio
@@ -472,6 +474,13 @@
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: No document provided, date reported in court filing
+  - id: internal-hhs-cms-coristine
+    type: internal
+    agency: CMS
+    from: HHS
+    start_date: 2025-03-05
+    start_date_truth: verified
+    comment: Granted access to CALM system on the same day as his detail to HHS
 
 - name: Scott Coulter
   sort_name: Coulter
@@ -488,8 +497,11 @@
     start_date_truth: verified
     nte_date: 2026-02-18
     nte_date_truth: verified
+    end_date: 2025-03-24
+    end_date_truth: verified
     signed_date: 2025-03-06
     reimbursed: true
+    comment: Followed by Employee 2 being appointed the CIO
     reimbursement_amount: Up to $120,579
     documents:
     - detail-20250306-nasa-ssa-employee-2
@@ -620,6 +632,14 @@
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: No documentation, reported in court filing
+  - id: internal-hhs-cms-marko-elez
+    type: detailed
+    agency: CMS
+    from: HHS
+    start_date: 2025-03-05
+    start_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    comment: Reported access to system same day as start of detail to HHS
 
 - name: Charles Ezell
   sort_name: Ezell
@@ -665,6 +685,13 @@
     start_date: 2025-01-27
     start_date_truth: reported
     source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
+  - id: internal-hhs-cms-farritor
+    type: internal
+    agency: CMS
+    from: HHS
+    start_date: 2025-01-31
+    start_date_truth: inferred
+    comment: Guessing from first reported system access for HIGLAS
   - id: detail-doge-energy-luke-farritor
     type: detailed
     from: DOGE
@@ -693,8 +720,8 @@
     title: Senior Advisor
     office: Bureau of Diplomatic Technology
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
-  - id: detail-hhs-nih-farritor
-    type: detailed
+  - id: internal-hhs-nih-farritor
+    type: internal
     agency: NIH
     from: HHS
     start_date: 2025-02-24
@@ -736,6 +763,13 @@
     - onboard-education-employee-2
     name: Conor Fennessy
     alias: ED-2
+  - id: internal-hhs-cms-fennessy
+    type: internal
+    agency: CMS
+    from: HHS
+    start_date: 2025-02-03
+    start_date_truth: inferred
+    comment: Inferred from first reported access to CALM system
   - id: detail-education-hhs-fennessy
     type: detailed
     from: Education
@@ -870,6 +904,14 @@
     agency: DOGE
     title: Acting Administrator, US DOGE Service and the DOGE Temporary Organization
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.4.pdf
+  - id: internal-hhs-cms-gleason
+    type: detailed
+    agency: CMS
+    from: HHS
+    start_date: 2025-02-24~
+    start_date_truth: inferred
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    comment: Start date is just her reported first access to CALM system at CMS
   - id: hhs-amy-gleason
     agency: HHS
     type: appointed
@@ -1441,6 +1483,13 @@
     end_date_truth: inferred
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.77.2.pdf
     title: Senior Advisor / Director for Strategy & Programs
+  - id: internal-hhs-cms-lewin
+    type: internal
+    agency: CMS
+    from: HHS
+    start_date: 2025-02-03
+    start_date_truth: inferred
+    comment: Inferring based on first reported access to CMS CALM system
   - id: detail-gsa-cfpb-jeremy-lewin
     type: detailed
     agency: CFPB
@@ -1454,8 +1503,8 @@
     start_date: 2025-02-21
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
-  - id: detail-hhs-nih-lewin
-    type: detailed
+  - id: internal-hhs-nih-lewin
+    type: internal
     agency: NIH
     from: HHS
     start_date: 2025-02-24
@@ -1726,6 +1775,22 @@
     - detail-20250317-dol-ssa-employee-3
     - onboard-ssa-employee-3
     name: Aram Moghaddassi
+  - id: detail-dol-hhs-mohgaddassi
+    type: detailed
+    agency: HHS
+    from: DOL
+    start_date: 2025-03-05
+    start_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    comment: No documentation, reported in court filing
+  - id: internal-hhs-cms-mohgaddassi
+    type: detailed
+    agency: CMS
+    from: HHS
+    start_date: 2025-03-05
+    start_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    comment: Reported access to system same day as start of detail to HHS
 
 - name: Justin Monroe
   sort_name: Monroe
@@ -2016,8 +2081,15 @@
     comment: Hiring information given in court filing
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     agency: HHS
-  - id: detail-hhs-nih-riley
-    type: detailed
+  - id: internal-hhs-cms-riley
+    type: internal
+    agency: CMS
+    from: HHS
+    start_date: 2025-02-03
+    start_date_truth: inferred
+    comment: Dating from first reported access to CALM
+  - id: internal-hhs-nih-riley
+    type: internal
     agency: NIH
     from: HHS
     start_date: 2025-02-24
@@ -2477,6 +2549,14 @@
     start_date_truth: verified
     type: appointed
     agency: HHS
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+  - id: internal-hhs-cms-terrell
+    type: internal
+    start_date: 2025-03-11
+    start_date_truth: inferred
+    agency: CMS
+    from: HHS
+    comment: Inferring from first reported access to the IDR system at CMS
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: detail-hhs-nsf-terrell
     type: consultant
