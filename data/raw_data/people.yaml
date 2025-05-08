@@ -380,6 +380,14 @@
     end_date: 2025-03-24
     end_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.2.pdf
+  - id: detail-gsa-neh-cavanaugh
+    type: detailed
+    agency: NEH
+    from: GSA
+    start_date: 2025-03-13~
+    start_date_truth: verified
+    comment: Guessing it's a detail
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
   - id: usip-cavanaugh-president
     type: appointed
     start_date: 2025-03-25
@@ -397,6 +405,18 @@
     source: https://bsky.app/profile/marisakabas.bsky.social
     comment: DOGE put entire staff on admin leave and started cancelling grants, not many details
     agency: IMLS
+
+- name: Michael Cole
+  sort_name: Cole
+  slug: michael-cole
+  comment: Still investigating if he's a DOGE member or not. Seems to be in Director's office and working with Gavin Kliger at USDA in February
+  positions:
+  - id: usda-cole
+    type: unknown
+    agency: USDA
+    start_date: 2025-02-XX
+    comment: He's showing up in some emails in February with Gavin Kliger and has same type of email tag in Secretary office
+    source:
 
 - name: Miles Collins
   sort_name: Collins
@@ -455,16 +475,16 @@
   own_page: true
   category: wrecker
   positions:
-  - id: internal-dhs-tsa-coristine
-    type: internal
-    from: DHS
-    agency: TSA
-    comment: No details, but in NYT roundup
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-coristine
     type: internal
     from: DHS
     agency: USCIS
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-tsa-coristine
+    type: internal
+    from: DHS
+    agency: TSA
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: gsa-edward-coristine
@@ -491,6 +511,13 @@
     start_date: 2025-02-03
     start_date_truth: reported
     source: https://xcancel.com/lbarronlopez/status/1886491276729544809
+  - id: internal-hhs-fema-edward-coristine
+    type: internal
+    from: DHS
+    agency: FEMA
+    start_date: 2025-02-05
+    start_date_truth: reported
+    source: https://www.washingtonpost.com/climate-environment/2025/02/07/musk-trump-fema-doge/
   - id: detail-gsa-dhs-coristine
     type: detailed
     from: GSA
@@ -499,13 +526,6 @@
     start_date_truth: reported
     comment: Reported by the Post, I'm going to assume this predated the FEMA access
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
-  - id: internal-hhs-fema-edward-coristine
-    type: internal
-    from: DHS
-    agency: FEMA
-    start_date: 2025-02-05
-    start_date_truth: reported
-    source: https://www.washingtonpost.com/climate-environment/2025/02/07/musk-trump-fema-doge/
   - id: detail-gsa-state-coristine
     type: detailed
     agency: State
@@ -919,7 +939,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
 - name: Joshua Fox
-  sort_name: Fox
+  sort_name: Fox, Joshua
   slug: joshua-fox
   category: unknown
   positions:
@@ -930,6 +950,20 @@
     fuzz: Report just says started sometime in February
     source: https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
     agency: DOGE
+
+- name: Justin Fox
+  sort_name: Fox, Justin
+  slug: justin-fox
+  category: wrecker
+  positions:
+  - id: detail-neh-justin-fox
+    type: detailed
+    agency: NEH
+    from: GSA
+    start_date: 2025-03-13~
+    start_date_truth: verified
+    comment: Guessing GSA based on some past reporting
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
 
 - name: Justin Fulcher
   sort_name: Fulcher
@@ -1476,7 +1510,10 @@
     agency: USDA
     start_date: 2025-02-01~
     start_date_truth: inferred
-    comment: No details, but listed in a NYT roundup and adding here. On 2/14, USDA head said they'd been there a couple of weeks
+    office: Office of the Secretary
+    comment: >-
+      No details, but listed in a NYT roundup and adding here. On 2/14, USDA head said they'd been there a couple of weeks. An email from him has the label
+      OSEC - DC
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: gavin-kliger-opm-2
     type: appointed

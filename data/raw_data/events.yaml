@@ -1493,6 +1493,19 @@
   agency: IRS
   id: MD9eHvgr
 
+- date: 2025-02-20
+  type: report
+  event: >-
+    In emails with USDA staff to identify climate-related terms to look for and cancel in grants, Gavin Kliger also alludes to DOGE developing LLM models
+    for analyzing grant descriptions
+  case_no: 1:25-cv-01237
+  named:
+  - Gavin Kliger
+  - Michael Cole
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.85.5.pdf
+  agency: USDA
+  id: 54bW5YhN
+
 - date: 2025-02-21
   type: official
   event: USDA Secretary Rollins posts a photo of a grant-cancellation session on the @DOGE_USDA account
@@ -2259,6 +2272,18 @@
   id: 8DQvc2a6
   source_title: United States Institute of Peace v. Jackson (D.D.C.)
 
+- date: 2025-03-09
+  type: report
+  event: After receiving inquiries from the DOGE staff, the head of USIP security emailed them information about the private security firm and the HQ building
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.34.1.pdf
+  case_no: 1:25-cv-00804
+  named:
+  - Nate Cavanaugh
+  - James Burnham
+  - Jacob Altik
+  agency: USIP
+  id: 3hmKgSFY
+
 - date: 2025-03-10
   type: legal
   event: U.S. District Judge Christopher Cooper demands a rolling production of DOGE to produce documents in discovery within weeks
@@ -2331,6 +2356,18 @@
   source: https://www.nytimes.com/2025/03/12/arts/national-endowment-humanities-trump-shelly-lowe.html
   agency: NEH
   id: jH38H7KC
+
+- date: 2025-03-12
+  type: disruption
+  event: DOGE staffers contact NEH IT for access immediately after the departure of the agency's chair
+  source: https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2025/04/16/doge-comes-for-the-little-guy-00294469
+  source_name: Politico
+  source_title: DOGE comes for the little guy
+  named:
+  - Nate Cavanaugh
+  - Justin Fox
+  agency: NEH
+  id: 6xNXvDgl
 
 - date: 2025-03-12
   type: interagency
@@ -2449,7 +2486,10 @@
   type: official
   event: Trump issues a new executive order proclaiming that the IMLS among other agencies must be reduced to statutory functions only
   source: https://www.whitehouse.gov/presidential-actions/2025/03/continuing-the-reduction-of-the-federal-bureaucracy/
-  agency: IMLS
+  agency:
+  - IMLS
+  - MBDA
+  - FMCS
   id: 2SuEXjcm
 
 - date: 2025-03-14
@@ -3114,6 +3154,15 @@
   agency: DOI
   id: 3iSCE7j5
 
+- date: 2025-03-27
+  type: interagency
+  event: The EPA administrator's public calendar includes a "Meeting w/ Elon Musk West Wing 221" at 6:30pm (Musk reportedly did not attend)
+  interagency_doge_reps:
+    DOGE: Elon Musk
+  agency: EPA
+  source: https://www.eenews.net/articles/zeldin-schedule-shows-doge-huddle-mobile-van-media-hits/
+  id: 6oE47sYI
+
 - date: 2025-03-28
   type: report
   event: Michael Grimes conducts DOGE-style interviews with each member of the staff in the Chips Program Office
@@ -3381,6 +3430,26 @@
 - date: 2025-04-01
   type: disruption
   event: >-
+    NEH staff members are informed that DOGE sought a 70-80% reduction in staff and a cancellation of any grants made under the Biden administration that
+    were not fully disbursed
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
+  named:
+  - Nate Cavanaugh
+  - Justin Fox
+  agency: NEH
+  id: 1HLf6W8y
+
+- date: 2025-04-01
+  type: disruption
+  event: Defendants in the USIP lawsuit learn that GSA will be leasing the building to the Department of Labor
+  case_no: 1:25-cv-00804
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.34.1.pdf
+  agency: USIP
+  id: 1SIWo0cR
+
+- date: 2025-04-01
+  type: disruption
+  event: >-
     HHS terminates a large number of staff at CDC in the name of cost savings and realignment, with the HHS director, Robert F. Kennedy Jr., reportedly
     wanting to focus only on infectious diseases
   source: https://www.nytimes.com/2025/04/01/us/politics/trump-federal-layoffs-health-food.html
@@ -3480,6 +3549,20 @@
   id: mXTHtBac
 
 - date: 2025-04-02
+  type: disruption
+  event: >-
+    Approximately 1500 grantees receive grant cancellation emails sent from a nonstandard email address and bypassing the normal grant review process. The
+    email address Grant_Notifications@nehemail.onmicrosoft.com suggests it was sent from a global admin account for Microsoft Entra at the agency. The Acting
+    Director of the NEH seems unaware of the messages. Content of the message cites an incorrect executive order, suggesting it was copied from an earlier
+    email sent to IAF or USADF grantees.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
+  named:
+  - Nate Cavanaugh
+  - Justin Fox
+  agency: NEH
+  id: 3MPjhmac
+
+- date: 2025-04-02
   type: official
   event: A group of 22 house members send a letter to Commerce Secretary Lutnick expressing concern about the firing of 70 staffers at NIST
   source: >-
@@ -3504,6 +3587,18 @@
   agency: SSA
   source: https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting
   id: iUYtxUSw
+
+- date: 2025-04-03
+  type: disruption
+  event: >-
+    145 NEH staff members (approximately 80% of workforce) are abruptly placed on administrative leave. The remaining employees are pressured by Cavanaugh
+    and Fox to conduct a Reduction-in-Force (RIF) as quickly as possible
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
+  named:
+  - Nate Cavanaugh
+  - Justin Fox
+  agency: NEH
+  id: 6TOjUicO
 
 - date: 2025-04-03
   type: disruption
@@ -3767,6 +3862,13 @@
     https://federalnewsnetwork.com/agency-oversight/2025/04/many-doge-officials-appear-on-gsas-security-shortlist-acting-head-says-nobody-working-for-doge-here/
   agency: GSA
   id: HQUguBSH
+
+- date: 2025-04-10
+  type: disruption
+  event: Many NEH staff receive RIF notices that their positions will be terminated on 2025-06-10
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
+  agency: NEH
+  id: 7OKOH3M3
 
 - date: 2025-04-10
   type: report
@@ -4248,6 +4350,15 @@
   agency: SSA
   id: enUTyZZ7
 
+- date: 2025-04-24
+  type: disruption
+  event: >-
+    NEH posts a solicitation for up to $17 million in grants for statues in a "National Garden of American Heroes." Such grants would normally be made by
+    the NEA, which is also offering similar grants for this project. Most NEH grants are dispersed broadly across many projects and for no more than $500K.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
+  agency: NEH
+  id: WqzaqPWP
+
 - date: 2025-04-25
   type: report
   event: >-
@@ -4274,9 +4385,36 @@
   agency: Energy
   id: 2ZH8rMfL
 
+- date: 2025-05-05
+  type: report
+  event: USDA reports to Congress that 15,000 of its employees (15% of its workforce) have taken one of the two deferred resignation programs
+  source: https://www.reuters.com/world/us/more-than-15000-usda-employees-have-taken-trump-financial-incentive-leave-2025-05-04/
+  agency: USDA
+  id: 1QPIZzzA
+
 - date: 2025-05-07
   type: report
   event: Representatives from OpenAI reported to have met with several DOGE associates at the FDA to discuss using AI for drug evaluation work
   source: https://www.wired.com/story/openai-fda-doge-ai-drug-evaluation/
   agency: FDA
   id: RXwHP9h5
+
+- date: 2025-05-07
+  type: disruption
+  event: After two months of DOGE-directed cuts, IRS has lost 3600 (31% of that workforce) of the workers who perform audits
+  source: https://www.cbsnews.com/news/irs-doge-cuts-layoffs-31-percent-auditors-tax-revenue-impact/
+  source_title: The IRS has lost almost one-third of its tax auditors after 2 months of DOGE cuts, report says
+  source_name: CBS News
+  agency: IRS
+  id: 5GGqzxaQ
+
+- date: 2025-05-08
+  type: disruption
+  event: >-
+    IRS Input Correction Operation employees working at the Kansas City office receive notifications they must work on Saturdays for 2 weekends in May to
+    handle the growing backlog of returns flagged with errors
+  source: https://www.independent.co.uk/news/world/americas/us-politics/irs-mandatory-overtime-tax-returns-doge-b2747028.html
+  source_name: The Independent
+  source_title: IRS workers forced into ‘mandatory overtime’ to deal with flagged returns after DOGE cuts
+  agency: IRS
+  id: 7OPjt5xy

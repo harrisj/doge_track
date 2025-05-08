@@ -50,6 +50,16 @@
   id: USDA
   slug: usda
   doge_base: true
+  events:
+  - date: 2025-02-20
+    type: report
+    event: In emails with USDA staff to identify climate-related terms to look for and cancel in grants, Gavin Kliger also alludes to DOGE developing LLM models for analyzing grant descriptions
+    case_no: 1:25-cv-01237
+    named:
+    - Gavin Kliger
+    - Michael Cole
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.85.5.pdf
+    agency: USDA
 
 - name: Department of Defense
   id: DOD
@@ -142,6 +152,10 @@
   id: FDIC
   slug: fdic
 
+- name: Federal Mediation and Conciliation Service
+  id: FMCS
+  slug: fmcs
+
 - name: Federal Trade Commission
   id: FTC
   slug: ftc
@@ -177,6 +191,8 @@
 - name: Institute for Museum and Library Services
   id: IMLS
   slug: imls
+  events:
+
 
 - name: Inter-American Foundation
   id: IAF
@@ -191,6 +207,10 @@
 - name: Millennium Challenge Corporation
   id: MCC
   slug: mcc
+
+- name: Minority Business Development Agency
+  id: MBDA
+  slug: mbda
 
 - name: National Aeronautics and Space Administration
   id: NASA

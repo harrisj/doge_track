@@ -28,6 +28,12 @@
         "doge_base": {
             "description": "Is this an agency where DOGE is maintaining a permanent presence?",
             "type": "boolean"
+        },
+        "events": {
+            "type": "array",
+            "items": {
+                "$ref": "event.json"
+            }
         }
     },
     "required": [
