@@ -35,7 +35,22 @@
   sort_name: Akis
   background: finance
   category: booster
-  positions: []
+  positions:
+  - id: treasury-akis
+    type: unknown
+    agency: Treasury
+    comment: No details, but mentioned in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: opm-akis
+    type: unknown
+    agency: OPM
+    comment: No details, but mentioned in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: irs-akis
+    type: unknown
+    agency: IRS
+    comment: No details, but mentioned in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
 
 - name: Jacob Altik
   sort_name: Altik
@@ -103,6 +118,12 @@
     comment: From FOIA documents
     documents:
     - opm-foia-doge-positions
+  - id: detail-opm-dhs-armstrong
+    type: detailed
+    from: OPM
+    agency: DHS
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    comment: Find more definitive info for DHS link
   - id: detail-opm-fdic-armstrong
     type: detailed
     from: OPM
@@ -117,7 +138,12 @@
   age: 36
   background: executive
   category: leadership
-  positions: []
+  positions:
+  - id: education-balajadia
+    type: appointed
+    comment: No details, but identified in NYT roundup, claims in many other agencies
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    agency: Education
 
 - name: Sam Beyda
   sort_name: Beyda
@@ -144,7 +170,7 @@
     agency: DOGE
     start_date: 2025-02-04~
     start_date_truth: guessed
-    comment: FIXME, find earliest details of arrival
+    comment: FIXME, find earliest details of arrival; is she GSA?
   - id: detail-doge-education-alexandra-beynon
     type: detailed
     start_date: 2025-02-05
@@ -323,8 +349,7 @@
     start_date: 2025-03-25
     start_date_truth: verified
     comment: >-
-      Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco Rubio and Pete Hegseth, and he is authorized to
-      transfer all assets to the GSA
+      Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco Rubio and Pete Hegseth, and he is authorized to transfer all assets to the GSA
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.14.1.pdf
     agency: USIP
   - id: imls-cavanaugh
@@ -337,8 +362,10 @@
 
 - name: Miles Collins
   sort_name: Collins
+  age: 36
   slug: miles-collins
   own_page: true
+  background: finance
   category: wrecker
   positions:
   - id: dol-collins
@@ -415,8 +442,8 @@
     start_date_truth: reported
     comment: Reported by the Post, I'm going to assume this predated the FEMA access
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
-  - id: detail-gsa-fema-edward-coristine
-    type: detailed
+  - id: internal-hhs-fema-edward-coristine
+    type: internal
     from: DHS
     agency: FEMA
     start_date: 2025-02-05
@@ -440,8 +467,8 @@
     title: Senior Advisor
     office: Bureau of Diplomatic Technology
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
-  - id: cisa-coristine
-    type: detailed
+  - id: internal-dhs-cisa-coristine
+    type: internal
     from: DHS
     agency: CISA
     start_date: 2025-02-19
@@ -449,6 +476,18 @@
     title: Senior Advisor
     source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
     comment: Likely assigned from DHS to here
+  - id: internal-dhs-uscis-coristine
+    type: internal
+    from: DHS
+    agency: USCIS
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-tsa-coristine
+    type: internal
+    from: DHS
+    agency: TSA
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: detail-doge-education-coristine
     type: detailed
     agency: Education
@@ -630,6 +669,36 @@
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: Reported access to system same day as start of detail to HHS
+  - id: detail-dol-dhs-elez
+    type: detailed
+    agency: DHS
+    from: DOL
+    comment: No other info, just mentioned in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-cpb-elez
+    type: detailed
+    agency: CBP
+    from: DHS
+    comment: No other info, just mentioned in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-ice-elez
+    type: detailed
+    agency: ICE
+    from: DHS
+    comment: No other info, just mentioned in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-uscis-elez
+    type: detailed
+    agency: USCIS
+    from: DHS
+    comment: No other info, just mentioned in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-tsa-elez
+    type: detailed
+    agency: TSA
+    from: DHS
+    comment: No other info, just mentioned in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
 
 - name: Charles Ezell
   sort_name: Ezell
@@ -726,6 +795,30 @@
     comment: Showed up at the agency to do secondary round of grant reviews. Detail from HHS?
     source: https://fedscoop.com/national-science-foundation-nsf-doge-grants-data-systems/
     agency: NSF
+  - id: detail-gsa-dhs-farritor
+    type: detailed
+    from: GSA
+    agency: DHS
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-ice-farritor
+    type: internal
+    from: DHS
+    agency: ICE
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-uscis-farritor
+    type: internal
+    from: USCIS
+    agency: ICE
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-tsa-farritor
+    type: internal
+    from: DHS
+    agency: TSA
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
 
 - name: Conor Fennessy
   sort_name: Fennessy
@@ -735,6 +828,11 @@
   own_page: true
   category: wrecker
   positions:
+  - id: gsa-fennessy
+    type: unknown
+    agency: GSA
+    comment: No details, just info from NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: education-ed-2
     type: appointed
     agency: Education
@@ -958,6 +1056,8 @@
 - name: Michael Grimes
   sort_name: Grimes
   slug: michael-grimes
+  age: 58
+  background: finance
   category: leadership
   positions:
   - id: commerce-michael-grimes
@@ -1062,6 +1162,7 @@
 - name: Adam Hoffman
   sort_name: Hoffman
   slug: adam-hoffman
+  age: 24
   background: finance
   category: wrecker
   positions:
@@ -1183,6 +1284,7 @@
 - name: Anthony Jancso
   sort_name: Jancso
   slug: anthony-jancso
+  background: coder
   category: booster
   positions: []
 
@@ -1344,12 +1446,30 @@
     comment: Title is not given, reported as starting "last week" from 2025-04-04
     source: https://www.axios.com/pro/tech-policy/2025/04/04/doge-staffers-move-into-ftc-office
     agency: FTC
+  - id: detail-opm-dhs-kliger
+    type: detailed
+    from: OPM
+    agency: DHS
+    comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: detail-opm-usda-kliger
+    type: detailed
+    from: OPM
+    agency: USDA
+    comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-tsa-kliger
+    type: detailed
+    from: DHS
+    agency: TSA
+    comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
 
 - name: Keenan Kmiec
   sort_name: Kmiec
   slug: keenan-kmiec
   age: 45
-  background: lawyer
+  background: crypto
   category: support
   positions: []
 
@@ -1581,8 +1701,7 @@
     start_date: 2025-03-30~
     start_date_truth: guessed
     comment: >-
-      Tarak Makacha has reportedly shown up in FBI directories as a Senior Advisor to the agency's executive assistant director for human resources. He
-      reportedly has been there since the end of March
+      Tarak Makacha has reportedly shown up in FBI directories as a Senior Advisor to the agency's executive assistant director for human resources. He reportedly has been there since the end of March
     source: https://theintercept.com/2025/04/18/doge-tesla-employee-justice-department-fbi/
     agency: FBI
   - id: detail-fcc-makecha
@@ -1709,6 +1828,8 @@
 - name: Eliezer Mishory
   sort_name: Mishory
   slug: eli-mishory
+  age: 41
+  background: lawyer
   category: wrecker
   positions:
   - id: sec-mishory
@@ -1784,6 +1905,36 @@
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: Reported access to system same day as start of detail to HHS
+  - id: detail-dol-dhs-mohgaddassi
+    type: detailed
+    agency: DHS
+    from: DOL
+    comment: No details, but reported in NYT roundup. Assuming detailed from DOL
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-cpb-mohgaddassi
+    type: detailed
+    agency: CBP
+    from: DHS
+    comment: No details, but reported in NYT roundup. Assuming detailed from DOL
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-ice-mohgaddassi
+    type: detailed
+    agency: ICE
+    from: DHS
+    comment: No details, but reported in NYT roundup. Assuming detailed from DOL
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-uscis-mohgaddassi
+    type: detailed
+    agency: USCIS
+    from: DHS
+    comment: No details, but reported in NYT roundup. Assuming detailed from DOL
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-tsa-mohgaddassi
+    type: detailed
+    agency: TSA
+    from: DHS
+    comment: No details, but reported in NYT roundup. Assuming detailed from DOL
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
 
 - name: Justin Monroe
   sort_name: Monroe
@@ -1853,15 +2004,29 @@
 - name: Todd Newnam
   sort_name: Newnam
   slug: todd-newnam
+  background: executive
+  age: 42
   category: wrecker
   positions:
   - id: treasury-newnam
-    type: unknown
+    type: appointed
+    title: Senior Advisor
     start_date: 2025-04-XX
     start_date_truth: verified
     fuzz: Identity is only revealed in a court filing
+    comment: NYT says he is a Senior Advisor
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.61.2.pdf
     agency: Treasury
+  - id: internal-treasury-irs-newnam
+    type: internal
+    title: Senior Advisor
+    start_date: 2025-04-XX
+    start_date_truth: verified
+    fuzz: Identity is only revealed in a court filing
+    comment: NYT says he is a Senior Advisor
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.61.2.pdf
+    agency: IRS
+    from: Treasury
 
 - name: Noah Peters
   sort_name: Peters
@@ -2040,6 +2205,24 @@
     start_date_truth: reported
     source: https://www.nytimes.com/2025/04/18/us/politics/doge-musk-social-security-justice-department.html
     agency: DOJ
+  - id: detail-ssa-dhs-rehling
+    type: detailed
+    agency: DHS
+    from: SSA
+    comment: No info, but listed in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-uscis-rehling
+    type: detailed
+    agency: USCIS
+    from: DHS
+    comment: No info, but listed in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-tsa-rehling
+    type: detailed
+    agency: TSA
+    from: DHS
+    comment: No info, but listed in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
 
 - name: Ryan Riedel
   sort_name: Riedel
@@ -2135,8 +2318,7 @@
     title: Senior Advisor
     supervisory: false
     comment: >-
-      Scott Coulter is named the new CIO at the Social Security Administration and Mike Russo is moved to a Senior Advisor role with a focus on modernizing
-      systems
+      Scott Coulter is named the new CIO at the Social Security Administration and Mike Russo is moved to a Senior Advisor role with a focus on modernizing systems
     source: https://www.nextgov.com/people/2025/03/ssa-tech-shop-be-led-another-doge-associate/404031/?oref=ng-homepage-river
     agency: SSA
 
@@ -2187,14 +2369,52 @@
   own_page: true
   category: wrecker
   positions:
-  - id: detail-gsa-cisa-schutt
+  - id: detail-gsa-dhs-schutt
     type: detailed
     from: GSA
+    agency: DHS
+    start_date: 2025-02-19~
+    start_date_truth: reported
+    comment: No details on this, but mentioned in NYT roundup. Assuming detail from GSA
+    source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
+  - id: internal-dhs-cisa-schutt
+    type: detailed
+    from: DHS
     agency: CISA
     start_date: 2025-02-19
     start_date_truth: reported
     title: Senior Advisor
     source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
+  - id: internal-dhs-fema-schutt
+    type: internal
+    from: DHS
+    agency: FEMA
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-cbp-schutt
+    type: internal
+    from: DHS
+    agency: CBP
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-ice-schutt
+    type: internal
+    from: DHS
+    agency: ICE
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-uscis-schutt
+    type: internal
+    from: DHS
+    agency: USCIS
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-tsa-schutt
+    type: internal
+    from: DHS
+    agency: TSA
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: detail-gsa-hhs-kyle-schutt
     type: detailed
     agency: HHS
@@ -2506,6 +2726,22 @@
     source: https://web-cdn.bsky.app/profile/chrisgeidner.bsky.social/post/3ljb6rufur22e
     agency: SSA
 
+- name: Brian Stube
+  sort_name: Stube
+  slug: brian-stube
+  category: wrecker
+  positions:
+  - id: dot-stube
+    type: appointed
+    name: Brian Stube
+    start_date: 2025-05-07~
+    start_date_truth: reported
+    fuzz: Appeared in the ProPublica roundup
+    title: Senior Advisor to the Secretary
+    office: Office of the Secretary
+    agency: DOT
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Brian-Stube
+
 - name: Christopher Sweet
   sort_name: Sweet
   slug: christopher-sweet
@@ -2517,8 +2753,7 @@
     start_date_truth: reported
     fuzz: Date is unspecified, just sometime earlier in April
     comment: >-
-      Scott Langmack sends a message that "I'd like to share with you that Chris Sweet has joined the HUD DOGE team with the title of special assistant,
-      although a better title might be 'AI computer programming quant analyst'"
+      Scott Langmack sends a message that "I'd like to share with you that Chris Sweet has joined the HUD DOGE team with the title of special assistant, although a better title might be 'AI computer programming quant analyst'"
     source: https://www.wired.com/story/doge-college-student-ai-rewrite-regulations-deregulation/
     title: Special Assistant
     agency: HUD
@@ -2526,6 +2761,8 @@
 - name: Zach Terrell
   sort_name: Terrell
   slug: zach-terrell
+  age: 25
+  background: crypto
   category: wrecker
   positions:
   - id: hhs-terrell
@@ -2644,6 +2881,12 @@
     office: Office of the Chairman
     comment: Assuming he has been detailed from the CFPB
     agency: FCC
+  - id: detail-usda-wick
+    type: detailed
+    from: DOGE
+    agency: USDA
+    comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
 
 - name: Joanna Wischer
   slug: joanna-wischer
@@ -2719,7 +2962,8 @@
 - name: Bridget Youngs
   slug: bridget-youngs
   sort_name: Youngs
-  category: unknown
+  age: 29
+  category: finance
   positions:
   - id: detail-peace-corps-youngs
     type: detailed
