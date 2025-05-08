@@ -1,0 +1,170 @@
+# yaml-language-server: $schema=../schemas/interagency-events-file.json
+---
+
+- date: 2025-02-19
+  type: official
+  event: >-
+    Trump issues an Executive Order "Commencing the Reduction of the Federal Bureaucracy" targeting the Presidio Trust, the Inter-American Foundation, the
+    United States African Development Foundation and the United States Institute of Peace for reductions.
+  source: https://www.whitehouse.gov/presidential-actions/2025/02/commencing-the-reduction-of-the-federal-bureaucracy/
+  agency:
+  - IAF
+  - USADF
+  - USIP
+  id: KMD5RgCU
+
+- date: 2025-03-01
+  type: report
+  comment: Actual start date in March unknown
+  event: The Government Accountability Office (GAO) starts an audit of how DOGE handled data at several agencies
+  source: https://www.wired.com/story/gao-audit-elon-musk-doge-government-agencies/
+  agency:
+  - DOL
+  - Education
+  - DHS
+  - Treasury
+  - SSA
+  - OPM
+  id: hocQ5vQK
+
+- date: 2025-03-14
+  type: official
+  event: Trump issues a new executive order proclaiming that the IMLS among other agencies must be reduced to statutory functions only
+  source: https://www.whitehouse.gov/presidential-actions/2025/03/continuing-the-reduction-of-the-federal-bureaucracy/
+  agency:
+  - IMLS
+  - MBDA
+  - FMCS
+  id: 2SuEXjcm
+
+- date: 2025-03-24~
+  type: disruption
+  fuzz: Source mentions it was on or about this date
+  event: NLRB networking staff make a formal report of the suspicious activity to US-CERT at CISA
+  source: https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  agency:
+  - NLRB
+  - CISA
+  id: YB29uMET
+
+- date: 2025-03-28
+  type: interagency
+  event: Multiple DOGE staff appear in an interview on Fox News with Brett Baier
+  source: https://singjupost.com/transcript-of-elon-musk-doge-teams-interview-by-bret-baier-of-fox-news/
+  interagency_doge_reps:
+    DOGE:
+    - Elon Musk
+    - Steve Davis
+    OPM:
+    - Joe Gebbia
+    - Anthony Armstrong
+    SSA:
+    - Aram Moghaddassi
+    HHS:
+    - Brad Smith
+    Treasury:
+    - Tom Krause
+    DOI:
+    - Tyler Hassen
+  agency:
+  - DOGE
+  - OPM
+  - SSA
+  - HHS
+  - Treasury
+  - DOI
+  id: jqgpzyra
+
+- date: 2025-03-31
+  type: report
+  event: >-
+    Politico reports that Brad Smith, who crafted the plan to layoff 10,000 staffers within HHS, is facing criticism from other DOGE staffers for attempting
+    to shield CMS from the brunt of the layoffs. His aide, Rachel Riley is accused of being extraordinarily secretive with the plan.
+  source: https://www.politico.com/news/2025/03/31/doge-hhs-firings-delayed-00262115
+  named:
+  - Brad Smith
+  - Rachel Riley
+  agency:
+  - CMS
+  - HHS
+  id: SixRwXSZ
+
+- date: 2025-04-01
+  type: disruption
+  event: >-
+    HHS terminates 10,000 employees across many divisions (FDA, CDC, NIH, HHS) in the name of "bureaucratic realignment." Despite RFK's promises, the layoffs
+    do include many scientists
+  source: https://www.npr.org/sections/shots-health-news/2025/04/01/g-s1-57485/hhs-fda-layoffs-doge-cdc-nih/
+  agency:
+  - HHS
+  - FDA
+  - CDC
+  - NIH
+  - CMS
+  id: 6BGD7wuo
+
+- date: 2025-04-04
+  type: disruption
+  event: CISA informs NLRB networking staff that they should drop any investigation and not move forward on any reporting
+  source: https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  agency:
+  - NLRB
+  - CISA
+  id: 2SR8EJa8
+
+- date: 2025-04-07
+  type: legal
+  event: >-
+    In a 2-1 vote, the 4th U.S. Circuit Court of Appeals lifted a stay against DOGE data access at the Treasury, OPM and Department of Education imposed
+    in the case American Federation of Teachers v. Bessent (D. Maryland 2025)
+  source: https://storage.courtlistener.com/recap/gov.uscourts.ca4.178115/gov.uscourts.ca4.178115.17.0.pdf
+  case_no: 8:25-cv-00430
+  agency:
+  - Treasury
+  - OPM
+  - Education
+  id: aLxLCzjS
+  source_title: American Federation of Teachers et al v. Bessent et al (D. Md.)
+
+- date: 2025-04-07
+  type: interagency
+  event: >-
+    The IRS and DHS executed a Memorandum of Understanding (MOU) for data sharing between both agencies. Although DOGE is not named specifically in this
+    agreement, ICE is allowed to designate authorized individuals to access the shared data. AI usage must also be reviewed first by the IRS.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278147/gov.uscourts.dcd.278147.30.1_1.pdf
+  case_no: 1:25-cv-00677
+  agency:
+  - Treasury
+  - IRS
+  - DHS
+  - ICE
+  id: UaUYi68M
+  source_title: Centro de Trabajadores Unidos v. Bessent (D.D.C)
+
+- date: 2025-04-07
+  type: interagency
+  event: After some qualms about its legality, Leland Dudek signs two memos authorizing sharing data that would allow DHS and ICE to locate immigrants
+  source: https://www.washingtonpost.com/politics/2025/04/12/trump-immigrants-dead-social-security/
+  interagency_doge_reps:
+    SSA:
+    - Leland Dudek
+  agency:
+  - SSA
+  - DHS
+  - ICE
+  id: b3H44hoj
+
+- date: 2025-04-12
+  type: disruption
+  event: >-
+    A DOGE engineer has apparently removed the ability of government agencies to post new grants to grants.gov and requiring them to all be sent to a new
+    email address created this week for reviews
+  named:
+  - Luke Farritor
+  source: https://www.washingtonpost.com/politics/2025/04/11/doge-controls-federal-grant-postings/
+  agency:
+  - HHS
+  - DOI
+  - DOD
+  - NIH
+  id: Uasqbriy
