@@ -101,18 +101,25 @@
 
 # Customs and Border Patrol
 - slug: cpb
+- people:
+  - **Marko Elez**
+  - **Aram Moghaddassi**
+  - **Kyle Schutt**
 
 # Cybersecurity and Infrastructure Security Agency
 - slug: cisa
 - people:
-  - **Edward Coristine** (2025-02-19) Senior Advisor (detailed from DHS)
-  - **Kyle Schutt** (2025-02-19) Senior Advisor (detailed from GSA)
+  - **Edward Coristine** (2025-02-19) Senior Advisor
+  - **Kyle Schutt** (2025-02-19) Senior Advisor (detailed from DHS)
 - systems:
     - MS-Office: Microsoft 365
         - Edward Coristine **[admin access]** 2025-02-20 - ongoing
 
 # Department of Agriculture
 - slug: usda
+- people:
+  - **Gavin Kliger** (2025-02-01~) (detailed from OPM)
+  - **Jordan Wick** (2025-02-01~) (detailed from DOGE)
 
 # Department of Defense
 - slug: defense
@@ -150,7 +157,14 @@
 # Department of Homeland Security
 - slug: dhs
 - people:
+  - **Anthony Armstrong** (detailed from OPM)
+  - **Gavin Kliger** (detailed from OPM)
+  - **Aram Moghaddassi** (detailed from DOL)
+  - **Payton Rehling** (detailed from SSA)
+  - **Marko Elez** (detailed from DOL)
+  - **Luke Farritor** (detailed from GSA)
   - **Edward Coristine** (2025-02-05) (detailed from GSA)
+  - **Kyle Schutt** (2025-02-19~) (detailed from GSA)
   - **Antoine McCord** (2025-03-11) Chief Information Officer
 
 # Department of Justice
@@ -164,6 +178,7 @@
 # Department of Education
 - slug: education
 - people:
+  - **Jennifer Balajadia**
   - **Adam Ramada** (2025-01-28) (detailed from DOGE)
   - **ED-2 (Conor Fennessy)** (2025-01-31) Senior Advisor
   - **ED-1 (Akash Bobba)** (2025-02-03) (detailed from OPM)
@@ -220,11 +235,12 @@
 # Department of the Treasury
 - slug: treasury
 - people:
+  - **Baris Akis**
   - **Marko Elez** (2025-01-21 - 2025-02-06) Special Advisor (IT&M)
   - **Tom Krause** (2025-02-09 - NTE 2025-04-10)
   - **Ryan Wunderly** (2025-02-20)
   - **Roland Shen** (2025-04-18)
-  - **Todd Newnam** (2025-04-XX)
+  - **Todd Newnam** (2025-04-XX) Senior Advisor
   - **Linda Whitridge** (2025-04-XX)
 - systems:
     - PAM-DB: Payment Automation Manager DB
@@ -238,12 +254,13 @@
 - slug: dot
 - people:
   - **Daniel Abrahamson** Senior Advisor
+  - **Brian Stube** (2025-05-07~) Senior Advisor to the Secretary
 
 # Environmental Protection Agency
 - slug: epa
 - people:
+  - **Cole Killian** (2025-02-04) (detail)
   - **Erica Jehling** (2025-02-12)
-  - **Cole Killian** (2025-02-12) (detail)
   - **Kathryn Armstrong Loving** (2025-02-12) Federal Detailee
 - systems:
     - EAS: EPA Acquisition System
@@ -270,7 +287,8 @@
 # Federal Emergency Management Agency
 - slug: fema
 - people:
-  - **Edward Coristine** (2025-02-05) (detailed from DHS)
+  - **Kyle Schutt**
+  - **Edward Coristine** (2025-02-05)
 - systems:
     - FEMA-GO: FEMA Grants Outcomes
         - Edward Coristine 2025-02-07 - ongoing
@@ -306,18 +324,20 @@
 # General Services Administration
 - slug: gsa
 - people:
-  - **Jeremy Lewin** (2025-01-20)
+  - **Ethan Shaotran** (2025-01-20)
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
-  - **Ethan Shaotran** (2025-01-20)
+  - **Conor Fennessy**
   - **Nicole Hollander** (2025-01-20)
+  - **Jeremy Lewin** (2025-01-20)
   - **Edward Coristine** (2025-01-20~)
   - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
   - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
   - **Riley Sennott** (2025-02-12)
   - **Frank Schuler** (2025-02-18~) Senior Advisor
-  - **Raj Jegannathan** (2025-04-24~)
+  - **Nate Cavanaugh** (2025-02-XX)
   - **Dave Malcher** (2025-04-24~)
+  - **Raj Jegannathan** (2025-04-24~)
 
 # Health and Human Services
 - slug: hhs
@@ -390,6 +410,12 @@
 
 # Immigration and Customs Enforcement
 - slug: ice
+- people:
+  - **Marko Elez**
+  - **Luke Farritor**
+  - **Luke Farritor**
+  - **Aram Moghaddassi**
+  - **Kyle Schutt**
 
 # Institute for Museum and Library Services
 - slug: imls
@@ -406,8 +432,10 @@
 # Internal Revenue Service
 - slug: irs
 - people:
+  - **Baris Akis**
   - **Gavin Kliger** (2025-02-19 - 2025-04-18) (detailed from OPM)
-  - **Sam Corcos** (2025-03-01 - 2025-05-06~)
+  - **Sam Corcos** (2025-02-28 - 2025-05-06~)
+  - **Todd Newnam** (2025-04-XX) Senior Advisor
   - **Sam Corcos** (2025-05-06~) Chief Information Officer
 
 # Millennium Challenge Corporation
@@ -434,6 +462,7 @@
 # National Oceanic and Atmospheric Administration
 - slug: noaa
 - people:
+  - **Nikhil Rajpal** (2025-02-04) (detailed from OPM)
   - **Bryton Shang** (2025-04-02) Senior Advisor
 - systems:
     - GoogleDrive: Google Drive
@@ -478,19 +507,20 @@
 - slug: opm
 - people:
   - **Noah Peters** (2025-01-20) Senior Advisor
-  - **Anthony Armstrong** (2025-01-20) Expert
-  - **Riccardo Biasini** (2025-01-20) Expert
-  - **Brian Bjelde** (2025-01-20) Expert
-  - **OPM-3 (Akash Bobba)** (2025-01-20) Expert
   - **Charles Ezell** (2025-01-20) Acting Director
   - **Joanna Wischer** (2025-01-20) Senior Advisor to the Director
   - **Greg Hogan** (2025-01-20 - 2025-02-11) Senior Advisor to the Director for Technology and Delivery
   - **Amanda Scales** (2025-01-20) Chief of Staff
   - **Gavin Kliger** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
+  - **Anthony Armstrong** (2025-01-20) Expert
+  - **Riccardo Biasini** (2025-01-20) Expert
+  - **Brian Bjelde** (2025-01-20) Expert
+  - **OPM-3 (Akash Bobba)** (2025-01-20) Expert
+  - **Baris Akis**
   - **Jacob Altik** (2025-01-24) Senior Advisor to the Director
   - **OPM-6 (Nikhil Rajpal)** (2025-01-24) Expert
-  - **Justin Monroe** (2025-01-28) Expert
   - **Christopher Stanley** (2025-01-28) Expert
+  - **Justin Monroe** (2025-01-28) Expert
   - **Edward Coristine** (2025-01-28~) (detailed from GSA)
   - **Chris Young** (2025-01-30) Expert
   - **Austin Raynor** (2025-01-30) Senior Advisor
@@ -514,6 +544,8 @@
 
 # Small Business Administration
 - slug: sba
+- people:
+  - **Edward Coristine** (2025-02-03) (detailed from GSA)
 
 # The Smithsonian Institution
 - slug: smithsonian
@@ -550,11 +582,21 @@
 
 # Transportation Security Administration
 - slug: tsa
+- people:
+  - **Edward Coristine**
+  - **Marko Elez**
+  - **Luke Farritor**
+  - **Gavin Kliger** (detailed from DHS)
+  - **Aram Moghaddassi**
+  - **Payton Rehling** (detailed from DHS)
+  - **Kyle Schutt**
 
 # U.S. African Development Foundation
 - slug: usadf
 - people:
-  - **Ethan Shaotran** (2025-02-20) (detailed from GSA)
+  - **Ethan Shaotran** (2025-02-20 - 2025-03-06) (detailed from GSA)
+  - **Jacob Altik** (2025-02-21 - 2025-03-06) (detailed from OPM)
+  - **Nate Cavanaugh** (2025-02-21 - 2025-03-06) (detailed from GSA)
 
 # US Agency for International Development
 - slug: usaid
@@ -568,12 +610,19 @@
 
 # US Citizenship & Immigration Services
 - slug: uscis
+- people:
+  - **Edward Coristine**
+  - **Marko Elez**
+  - **Aram Moghaddassi**
+  - **Payton Rehling** (detailed from DHS)
+  - **Kyle Schutt**
 
 # US Institute of Peace
 - slug: usip
 - people:
+  - **Nate Cavanaugh** (2025-03-04 - 2025-03-24) (detailed from GSA)
   - **Kenneth Jackson** (2025-03-17) Acting President
-  - **Nate Cavanaugh** (2025-03-25)
+  - **Nate Cavanaugh** (2025-03-25) President
 
 # US Digital Service
 - slug: usds

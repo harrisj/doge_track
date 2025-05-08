@@ -200,7 +200,7 @@
 
 - date: 2025-01-20
   type: report
-  event: The DOGE team moves into OPM, installing sofa beds and armed security
+  event: The DOGE team moves into a secure office within OPM, installing sofa beds and armed security
   source: https://www.reuters.com/world/us/musk-aides-lock-government-workers-out-computer-systems-us-agency-sources-say-2025-01-31/
   agency: OPM
   id: BbMpQoge
@@ -225,13 +225,6 @@
   id: YcNgC9Yg
 
 - date: 2025-01-24
-  event: The Trump administration names Susan Monarez, an outsider to the agency, as acting director of the CDC
-  type: disruption
-  source: https://www.economist.com/united-states/2025/03/10/how-doge-is-driving-americas-public-health-guardians-mad
-  agency: CDC
-  id: EipcFcGC
-
-- date: 2025-01-24
   type: report
   event: A report from Business Insider names some of the DOGE staffers who were involved in transition activities
   source: https://www.yahoo.com/news/doge-just-got-hire-224212262.html
@@ -254,25 +247,6 @@
   source: https://www.nytimes.com/2025/02/06/us/politics/trump-musk-usaid.html
   agency: Treasury
   id: 9iHcDkyg
-
-- date: 2025-01-24
-  type: disruption
-  event: Trump fires approximately 17 Inspectors General in a late-night purge
-  source: https://www.nytimes.com/interactive/2025/02/11/us/politics/trump-musk-doge-federal-workers.html
-  agency:
-  - Commerce
-  - USDA
-  - DOD
-  - Education
-  - Energy
-  - DOL
-  - Treasury
-  - EPA
-  - HHS
-  - OPM
-  - SSA
-  - VA
-  id: o2TMNF83
 
 - date: 2025-01-26
   type: report
@@ -478,17 +452,6 @@
   id: GmvBm6qi
 
 - date: 2025-02-01
-  type: report
-  comment: FIXME with system access ticket
-  event: A ticket notes that Marko Elez's account was granted access to a DB2 database via remote SSH access
-  named:
-  - Marko Elez
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.48.1.pdf
-  case_no: 1:25-cv-00313
-  agency: Treasury
-  id: Xdv65nku
-
-- date: 2025-02-01
   type: disruption
   event: USAID Director of Security and deputy placed on administrative leave for trying to prevent DOGE from accessing personnel files and classified data
   source: https://www.nbcnews.com/politics/national-security/usaid-security-leaders-removed-refusing-elon-musks-doge-employees-acce-rcna190357
@@ -510,40 +473,6 @@
   id: 4uRgma5h
 
 - date: 2025-02-02
-  type: report
-  event: Wired Magazine identifies Akash Bobba, Gavin Kliger and Edward Coristine as special advisors reporting to Amanda Scales at OPM
-  named:
-  - Akash Bobba
-  - Edward Coristine
-  - Gavin Kliger
-  source: https://www.wired.com/story/elon-musk-government-young-engineers/
-  agency: OPM
-  id: ZRjioRJa
-
-- date: 2025-02-02
-  type: report
-  event: >-
-    Wired Magazine identifies several DOGE staffers with GSA email addresses and A-Suite Level clearances granting them access to all physical spaces and
-    IT systems
-  named:
-  - Akash Bobba
-  - Edward Coristine
-  - Luke Farritor
-  - Ethan Shaotran
-  source: https://www.wired.com/story/elon-musk-government-young-engineers/
-  agency: GSA
-  id: YHD5A3rG
-
-- date: 2025-02-02
-  type: report
-  event: Wired Magazine identifies Cole Killian as a volunteer at DOGE
-  named:
-  - Cole Killian
-  source: https://www.wired.com/story/elon-musk-government-young-engineers/
-  agency: DOGE
-  id: g9NjC2E3
-
-- date: 2025-02-02
   type: disruption
   event: Elon Musk posts a series of tweets calling USAID evil and saying it is "time for it to die"
   source: https://www.nbcnews.com/politics/doge/elon-musk-boosted-false-usaid-conspiracy-theories-global-aid-rcna190646
@@ -553,21 +482,11 @@
 - date: 2025-02-03
   type: report
   event: >-
-    Twenty DOGE staff are in the agency and "have gained access to multiple sensitive internal systems, the people said, including a financial aid dataset
+    Twenty DOGE staff are in the Department of Education and "have gained access to multiple sensitive internal systems, including a financial aid dataset
     that contains the personal information for millions of students enrolled in the federal student aid program."
   source: https://www.washingtonpost.com/education/2025/02/03/trump-education-department-dismantling-executive-order-draft/
   agency: Education
   id: RVANetiN
-
-- date: 2025-02-03
-  type: report
-  event: A ticket notes that Marko Elez was walked through access to the PAM system and confirms access was read only
-  named:
-  - Marko Elez
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.48.1.pdf
-  case_no: 1:25-cv-00313
-  agency: Treasury
-  id: UkKcG36X
 
 - date: 2025-02-03
   type: report
@@ -590,7 +509,7 @@
 
 - date: 2025-02-03
   type: report
-  event: An email informing USAID staff that the building was closed included Gavin Kliger's email address
+  event: An email informing USAID staff that the building was indefinitely closed included Gavin Kliger's email address
   named:
   - Gavin Kliger
   source: https://www.npr.org/2025/02/06/nx-s1-5289337/elon-musk-doge-treasury
@@ -642,6 +561,9 @@
   type: report
   event: DOGE staff enter NOAA facilities
   source: https://www.axios.com/2025/02/04/trump-nominates-noaa-head-neil-jacobs
+  named:
+  - Nikhil Rajpal
+  comment: This was later identified to include Nikhil Rajpal
   agency: NOAA
   id: CvdXhiXD
 
@@ -688,26 +610,6 @@
   source: https://www.theguardian.com/us-news/2025/feb/05/elon-musk-doge-labor-department-protest
   agency: DOL
   id: by9TUmm6
-
-- date: 2025-02-05
-  type: report
-  event: A ticket notes that Marko Elez was walked through read-only access to the SPS system
-  named:
-  - Marko Elez
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.48.1.pdf
-  case_no: 1:25-cv-00313
-  agency: Treasury
-  id: PhxH2BgH
-
-- date: 2025-02-05
-  type: report
-  event: >-
-    Marko Elez is sent an email requesting that he sign the rules of behavior document for the Bureau of the Fiscal Service; it should've been signed when
-    he received his laptop
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.44.1.pdf#page=36
-  case_no: 1:25-cv-00313
-  agency: Treasury
-  id: QDU6LUSA
 
 - date: 2025-02-05
   type: report
@@ -791,32 +693,10 @@
   source_title: Alliance for Retired Americans v. Scott Bessent et al (D.D.C.)
 
 - date: 2025-02-06
-  type: report
-  comment: FIXME
-  event: A ticket is updated to note Marko Elez's account remote access via SSH to a DB2 database has been revoked
-  named:
-  - Marko Elez
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.48.1.pdf
-  case_no: 1:25-cv-00313
-  agency: Treasury
-  id: Ddt9UeCF
-
-- date: 2025-02-06
-  type: report
-  event: >-
-    On the morning of February 6, Treasury discovers that Marko Elez's database access to SPS on February 5 had mistakenly been configured to have read/write
-    permissions instead of read-only
-  named:
-  - Marko Elez
-  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.3_1.pdf
-  case_no: 8:25-cv-00430
-  agency: Treasury
-  id: eMU3qFzW
-  source_title: American Federation of Teachers et al v. Bessent et al (D. Md.)
-
-- date: 2025-02-06
   type: legal
-  event: DOGE member and lawyer Jacob Altik joins the case for the defense
+  event: >-
+    DOGE member and lawyer Jacob Altik joins the case for the defense in Jane Does 1-2 v. Office of Personnel Management (D.D.C.) without revealing he works
+    for DOGE in OPM
   named:
   - Jacob Altik
   source: https://fedscoop.com/doge-lawyer-opm-email-lawsuit-jacob-altik/
@@ -865,13 +745,6 @@
   id: 2fUJZPvu
 
 - date: 2025-02-07
-  type: report
-  event: Sources indicate that 3 unidentified DOGE personnel are working at the Department of Energy
-  source: https://www.reuters.com/world/us/three-doge-members-raise-access-concerns-us-energy-department-sources-say-2025-02-07/
-  agency: Energy
-  id: Hqzq377Z
-
-- date: 2025-02-07
   type: disruption
   event: 168 employees who worked on environmental justice are placed on indefinite administrative leave
   source: https://subscriber.politicopro.com/article/eenews/2025/02/07/epas-environmental-justice-office-in-tatters-00203091
@@ -892,7 +765,7 @@
   agency: USAID
   id: dJnZqbb4
 
-- date: 2025-02-08~
+- date: 2025-02-07
   type: report
   fuzz: Date is approximate and unknown. Report is unconfirmed
   event: According to Dept. of Energy spokesperson, DOGE staff departed the agency within a few days of arrival
@@ -1144,49 +1017,6 @@
   agency: GSA
   id: dSVh8kxF
 
-- date: 2025-02-12
-  type: official
-  comment: These names are identified in another exhibit in the source
-  event: >-
-    The Department of Education signs a Memorandum of Understanding with DOGE stating that it will reimburse DOGE for up to 5 staffers through 2026. It
-    is signed by Steve Davis for DOGE.
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
-  case_no: 1:25-cv-00354
-  agency:
-  - Education
-  - DOGE
-  id: eKuZBbzW
-  source_title: University of California Student Assn. v. Carter et al
-
-- date: 2025-02-12
-  type: official
-  named_aliases:
-  - OPM-3
-  event: >-
-    The Office of Personnel Management executes a Memorandum of Understanding for a detailee from the Social Security Administration, who will also work
-    for Department of Education
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
-  case_no: 1:25-cv-00354
-  agency:
-  - OPM
-  - SSA
-  id: JbqPxwcC
-  source_title: University of California Student Assn. v. Carter et al
-
-- date: 2025-02-12
-  type: official
-  detail_id: 20250212-gsa-education-ed-3
-  named_aliases:
-  - ED-3
-  event: >-
-    An agreement is executed for a single detailee to the Dept. of Education from GSA. They are also identified as being a GSE who is not paid nor will
-    need to be reimbursed.
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
-  case_no: 1:25-cv-00354
-  agency: Education
-  id: Wfox3Em6
-  source_title: University of California Student Assn. v. Carter et al
-
 - date: 2025-02-13
   type: disruption
   event: Jordan Wick demands for mass termination notices to be sent to CFPB employees by February 14
@@ -1216,7 +1046,7 @@
 
 - date: 2025-02-13
   type: report
-  event: DOGE is granted authorization to use file transfer software
+  event: DOGE is granted authorization to use file transfer software at Department of Labor, alarming cybersecurity staff
   named:
   - Sam Beyda
   - Derek Geissler
@@ -1236,7 +1066,7 @@
 
 - date: 2025-02-14
   type: report
-  event: In a speech, Secretary of Agriculture says DOGE has been at the agency for "a few weeks"
+  event: In a speech, the Secretary of Agriculture says DOGE has been at the agency for "a few weeks"
   source: https://www.usda.gov/about-usda/news/press-releases/2025/02/14/secretary-rollins-delivers-opening-remarks-usda-headquarters
   agency: USDA
   id: hR7tzCWX
@@ -1307,7 +1137,7 @@
 
 - date: 2025-02-15
   type: report
-  event: Staff express concern to Acting Commissioner King that Bobba is accessing information remotely and in an insecure location (the OPM)
+  event: SSA Staff express concern to Acting Commissioner King that Bobba is accessing information remotely and in an insecure location (the OPM)
   source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
   named:
   - Akash Bobba
@@ -1350,8 +1180,7 @@
 - date: 2025-02-17
   type: report
   event: >-
-    The four SpaceX engineers at FAA are granted ethics waivers and designated as Special Government Employees, but must recuse from decisions affecting
-    SpaceX
+    Four SpaceX engineers at FAA are granted ethics waivers and designated as Special Government Employees, but must recuse from decisions affecting SpaceX
   source: https://www.bloomberg.com/news/features/2025-03-05/after-elon-musk-lands-at-faa-his-starlink-business-stands-to-gain-business
   agency: FAA
   id: PK8kSwx7
@@ -1584,16 +1413,6 @@
   id: GVnA5vun
   source_title: American Federation of State, County and Municipal Employees, AFL-CIO v. Social Security Administration (D. Md.)
 
-- date: 2025-02-19
-  type: official
-  detail_id: mou-20250219-opm-irs-gavin-kliger
-  event: Gavin Kliger's detail from OPM to IRS is executed
-  named:
-  - Gavin Kliger
-  source: https://www.taxnotes.com/research/federal/legislative-documents/congressional-tax-correspondence/treasury-official-sends-memo-doge-detail-crapo/7rl0x
-  agency: IRS
-  id: 3bxrpv2v
-
 - date: 2025-02-20
   type: report
   event: Defense Secretary Hegseth releases a video stating that he met with DOGE about cuts to the agency and many of them are veterans
@@ -1659,23 +1478,6 @@
   source_title: Brehm v. Marocco (D.D.C.)
 
 - date: 2025-02-20
-  type: official
-  event: >-
-    Amy Gleason and an SSA representative sign a modification to an existing agreement between USDS and SSA for 15FTEs at $4.5million to change it to be
-    about "increasing efficiency and the modernization of SSA IT infrastructure and systems, and detecting waste, fraud, and abuse."
-  comment: It's unclear how much had already been spent on the prior agreement. Amy Gleason makes an appearance though!
-  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-  case_no: 1:25-cv-00596
-  detail_id: 20250220-usds-ssa-modification
-  named:
-  - Amy Gleason
-  agency:
-  - DOGE
-  - SSA
-  id: 6czGQ6Eu
-  source_title: American Federation of State, County and Municipal Employees, AFL-CIO v. Social Security Administration (D. Md.)
-
-- date: 2025-02-20
   type: disruption
   event: Employees at the NLRB are alarmed to see that DOGE has claiming it has cancelled the lease for their office in Buffalo, NY
   source: https://www.huffpost.com/entry/nlrb-office-lease-doge-wall-of-receipts_n_67b76046e4b05145b9c4ca05
@@ -1721,23 +1523,10 @@
   - Ethan Shaotran
   - Jacob Altik
   - Nate Cavanaugh
-  detail_id: 20250220-gsa-usadf-ethan-shaotran
   case_no: 1:25-cv-00660
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
   agency: USADF
   id: 7v7sVWG5
-  source_title: Brehm v. Marocco (D.D.C.)
-
-- date: 2025-02-21
-  type: legal
-  event: The MOU for DOGE's IT Modernization is between USADF and GSA and only covers the activities of Ethan Shaotran
-  named:
-  - Ethan Shaotran
-  detail_id: 20250220-gsa-usadf-ethan-shaotran
-  case_no: 1:25-cv-00660
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.6.pdf
-  agency: USADF
-  id: ShwzJQ8D
   source_title: Brehm v. Marocco (D.D.C.)
 
 - date: 2025-02-21
@@ -1749,7 +1538,6 @@
   - Ethan Shaotran
   - Jacob Altik
   - Nate Cavanaugh
-  detail_id: 20250220-gsa-usadf-ethan-shaotran
   case_no: 1:25-cv-00660
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
   agency: USADF
@@ -1784,7 +1572,6 @@
 - date: 2025-02-21
   type: report
   event: USADF general cousel revokes their participation in the MOU based on it being under false pretenses
-  detail_id: 20250220-gsa-usadf-ethan-shaotran
   case_no: 1:25-cv-00660
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
   agency: USADF
@@ -1820,7 +1607,7 @@
 
 - date: 2025-02-24
   type: report
-  event: Four DOGE staffers have email addresses linked to NIH
+  event: Four DOGE staffers are indentified with email addresses linked to NIH
   named:
   - Luke Farritor
   - Rachel Riley
@@ -2821,17 +2608,6 @@
   agency: USIP
   id: nEGenYbj
   source_title: United States Institute of Peace v. Jackson (D.D.C.)
-
-- date: 2025-03-17
-  type: official
-  detail_id: 20250317-dol-ssa-employee-7
-  event: SSA executes a Memorandum of Understanding (MOU) for a detailee from Dept. of Labor that they will pay DOL for
-  comment: Name redacted in court filing
-  case_no: 1:25-cv-00596
-  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-  agency: SSA
-  id: irsHxHEt
-  source_title: American Federation of State, County and Municipal Employees, AFL-CIO v. Social Security Administration (D. Md.)
 
 - date: 2025-03-18
   type: official

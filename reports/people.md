@@ -10,11 +10,16 @@
 
 # Baris Akis
 - category: booster
+- positions:
+    -  **Treasury** dates unknown 
+    -  **OPM** dates unknown 
+    -  **IRS** dates unknown 
 
 # Jacob Altik
 - category: wrecker
 - positions:
     -  **OPM** (2025-01-24 to ??) Senior Advisor to the Director GS-15
+    -  **USADF** (2025-02-21 to 2025-03-06) 
     -  **FCC** (2025-04-04 to ??) 
 
 # Marc Andreessen
@@ -23,11 +28,14 @@
 # Anthony Armstrong
 - category: leadership
 - positions:
+    -  **DHS** dates unknown 
     -  **OPM** (2025-01-20 to ??) Expert ED-00
     -  **FDIC** (2025-04-10 to ??) 
 
 # Jennifer Balajadia
 - category: leadership
+- positions:
+    -  **Education** dates unknown 
 
 # Sam Beyda
 - category: unknown
@@ -76,7 +84,10 @@
 # Nate Cavanaugh
 - category: wrecker
 - positions:
-    -  **USIP** (2025-03-25 to ??) 
+    -  **USADF** (2025-02-21 to 2025-03-06) 
+    -  **GSA** (2025-02-XX to ??)  $120,500
+    -  **USIP** (2025-03-04 to 2025-03-24) 
+    -  **USIP** (2025-03-25 to ??) President
     -  **IMLS** (2025-03-31 to ??) 
 
 # Miles Collins
@@ -95,19 +106,22 @@
 # Sam Corcos
 - category: wrecker
 - positions:
-    -  **IRS** (2025-03-01 to 2025-05-06~) 
+    -  **IRS** (2025-02-28 to 2025-05-06~) 
     -  **IRS** (2025-05-06~ to ??) Chief Information Officer
 
 # Edward Coristine
 - category: wrecker
 - positions:
+    -  **TSA** dates unknown 
+    -  **USCIS** dates unknown 
     -  **GSA** (2025-01-20~ to ??)  volunteer
     -  **OPM** (2025-01-28~ to ??) 
+    -  **SBA** (2025-02-03 to ??) 
     -  **DHS** (2025-02-05 to ??) 
     -  **FEMA** (2025-02-05 to ??) 
         - FEMA Grants Outcomes: 2025-02-07 - ongoing
-    -  **USAID** (2025-02-10 to ??) Senior Advisor
     -  **State** (2025-02-10 to ??) Senior Advisor
+    -  **USAID** (2025-02-10 to ??) Senior Advisor
     -  **CISA** (2025-02-19 to ??) Senior Advisor
         - Microsoft 365 **[admin access]**: 2025-02-20 - ongoing
     -  **Education** (2025-02-20 to ??) 
@@ -144,17 +158,22 @@
 # Marko Elez
 - category: wrecker
 - positions:
+    -  **ICE** dates unknown 
+    -  **TSA** dates unknown 
+    -  **USCIS** dates unknown 
+    -  **DHS** dates unknown 
+    -  **CBP** dates unknown 
     -  **Treasury** (2025-01-21 to 2025-02-06) Special Advisor (IT&M) GS-11/01 $84601
         - Payment Automation Manager DB **[read-write access]**: 2025-02-03 - 2025-02-06
         - Payment Automation Manager File System: 2025-02-03 - 2025-02-06
         - Secure Payment System **[read-write access]**: 2025-02-05 - 2025-02-06
     -  **SSA** (2025-02-18 to ??) [as "SSA-7"] 
-    -  **HHS** (2025-03-05 to ??) 
-        - National Directory of New Hires: 2025-03-06 - 2025-04-18
     -  **CMS** (2025-03-05 to ??) 
         - Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
         - CMS Acquisition Lifecycle Management system: 2025-03-05 - ongoing
         - Integrated Data Repository: 2025-03-05 - ongoing
+    -  **HHS** (2025-03-05 to ??) 
+        - National Directory of New Hires: 2025-03-06 - 2025-04-18
 
 # Charles Ezell
 - category: enabler
@@ -164,6 +183,10 @@
 # Luke Farritor
 - category: wrecker
 - positions:
+    -  **DHS** dates unknown 
+    -  **ICE** dates unknown 
+    -  **ICE** dates unknown 
+    -  **TSA** dates unknown 
     -  **GSA** (2025-01-20 to ??)  volunteer
     -  **HHS** (2025-01-21 to ??) 
         - Payment Management System **[admin access]**: 2025-01-22 - ongoing
@@ -190,6 +213,7 @@
 # Conor Fennessy
 - category: wrecker
 - positions:
+    -  **GSA** dates unknown 
     -  **Education** (2025-01-31 to ??) [as "ED-2"] Senior Advisor GS-15/6 $195,200
     -  **CMS** (2025-02-03 to ??) 
         - CMS Acquisition Lifecycle Management system: 2025-02-03 - 2025-04-18
@@ -333,7 +357,7 @@
 - category: wrecker
 - positions:
     -  **DOGE** (2025-01-20 to ??) 
-    -  **EPA** (2025-02-12 to ??) 
+    -  **EPA** (2025-02-04 to ??) 
         - EPA Acquisition System: 2025-02-12 - ongoing
     -  **DOL** (2025-02-13~ to ??) 
     -  **SSA** (2025-02-20~ to ??) 
@@ -341,8 +365,11 @@
 # Gavin Kliger
 - category: wrecker
 - positions:
+    -  **DHS** dates unknown 
+    -  **TSA** dates unknown 
     -  **OPM** (2025-01-20 to 2025-02-18) **Senior Advisor to the Director for Information Technology** $195,200
     -  **USAID** (2025-01-27 to ??) 
+    -  **USDA** (2025-02-01~ to ??) 
     -  **OPM** (2025-02-18 to ??) **Senior Advisor to the Director for Information Technology** $195,200
     -  **IRS** (2025-02-19 to 2025-04-18) 
     -  **FTC** (2025-03-28~ to ??) 
@@ -480,6 +507,11 @@
 - category: wrecker
 - positions:
     -  **DOL** dates unknown 
+    -  **ICE** dates unknown 
+    -  **USCIS** dates unknown 
+    -  **TSA** dates unknown 
+    -  **DHS** dates unknown 
+    -  **CBP** dates unknown 
     -  **SSA** (2025-02-22 to ??) [as "SSA-3"] 
     -  **HHS** (2025-03-05 to ??) 
         - GrantSolutions: 2025-02-19 - ongoing
@@ -508,7 +540,8 @@
 # Todd Newnam
 - category: wrecker
 - positions:
-    -  **Treasury** (2025-04-XX to ??) 
+    -  **Treasury** (2025-04-XX to ??) Senior Advisor
+    -  **IRS** (2025-04-XX to ??) Senior Advisor
 
 # Noah Peters
 - category: support
@@ -519,6 +552,8 @@
 - category: wrecker
 - positions:
     -  **OPM** (2025-01-24 to ??) [as "OPM-6"] Expert ED-00 volunteer
+    -  **NOAA** (2025-02-04 to ??) 
+        - Google Drive **[read-write access]**: 2025-02-05 - ongoing
     -  **CFPB** (2025-02-07 to 2025-03-21) 
 
 # Adam Ramada
@@ -539,6 +574,9 @@
 # Payton Rehling
 - category: wrecker
 - positions:
+    -  **DHS** dates unknown 
+    -  **USCIS** dates unknown 
+    -  **TSA** dates unknown 
     -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-9"] Expert ED-00 volunteer
     -  **DOJ** (2025-04-15 to ??) 
 
@@ -586,7 +624,13 @@
 # Kyle Schutt
 - category: wrecker
 - positions:
+    -  **USCIS** dates unknown 
+    -  **TSA** dates unknown 
+    -  **FEMA** dates unknown 
+    -  **CBP** dates unknown 
+    -  **ICE** dates unknown 
     -  **CISA** (2025-02-19 to ??) Senior Advisor
+    -  **DHS** (2025-02-19~ to ??) 
     -  **HHS** (2025-03-14 to ??) 
         - Unaccompanied Alien Children (UAC) Portal: 2025-03-21 - ongoing
 
@@ -607,7 +651,7 @@
     -  **GSA** (2025-01-20 to ??)  volunteer
     -  **Education** (2025-02-12 to NTE 2026-02-26) [as "ED-3"] 
     -  **SSA** (2025-02-18 to NTE 2026-02-26) [as "SSA-10"] 
-    -  **USADF** (2025-02-20 to NTE 2026-07-04) 
+    -  **USADF** (2025-02-20 to 2025-03-06) 
     -  **USPS** (2025-03-12 to NTE 2025-06-15) 
 
 # Thomas Shedd
@@ -659,6 +703,11 @@
     -  **SSA** (2025-02-25 to 2025-02-27) Senior Advisor
     -  **SSA** (2025-02-27 to ??) Acting General Counsel
 
+# Brian Stube
+- category: wrecker
+- positions:
+    -  **DOT** (2025-05-07~ to ??) Senior Advisor to the Secretary
+
 # Christopher Sweet
 - category: wrecker
 - positions:
@@ -695,6 +744,7 @@
 # Jordan Wick
 - category: wrecker
 - positions:
+    -  **USDA** (2025-02-01~ to ??) 
     -  **CFPB** (2025-02-07 to 2025-03-04) 
         - Concur: 2025-02-07 - 2025-03-28
         - HRConnect **[read-write access]**: 2025-02-07 - 2025-03-28
@@ -740,7 +790,7 @@
     -  **CFPB** (2025-02-07 to ??) 
 
 # Bridget Youngs
-- category: unknown
+- category: wrecker
 - positions:
     -  **Peace** (2025-04-04 to ??) 
 
