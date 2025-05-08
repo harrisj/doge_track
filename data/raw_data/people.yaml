@@ -455,16 +455,16 @@
   own_page: true
   category: wrecker
   positions:
-  - id: internal-dhs-uscis-coristine
-    type: internal
-    from: DHS
-    agency: USCIS
-    comment: No details, but in NYT roundup
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-coristine
     type: internal
     from: DHS
     agency: TSA
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-uscis-coristine
+    type: internal
+    from: DHS
+    agency: USCIS
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: gsa-edward-coristine
@@ -491,13 +491,6 @@
     start_date: 2025-02-03
     start_date_truth: reported
     source: https://xcancel.com/lbarronlopez/status/1886491276729544809
-  - id: internal-hhs-fema-edward-coristine
-    type: internal
-    from: DHS
-    agency: FEMA
-    start_date: 2025-02-05
-    start_date_truth: reported
-    source: https://www.washingtonpost.com/climate-environment/2025/02/07/musk-trump-fema-doge/
   - id: detail-gsa-dhs-coristine
     type: detailed
     from: GSA
@@ -506,6 +499,13 @@
     start_date_truth: reported
     comment: Reported by the Post, I'm going to assume this predated the FEMA access
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
+  - id: internal-hhs-fema-edward-coristine
+    type: internal
+    from: DHS
+    agency: FEMA
+    start_date: 2025-02-05
+    start_date_truth: reported
+    source: https://www.washingtonpost.com/climate-environment/2025/02/07/musk-trump-fema-doge/
   - id: detail-gsa-state-coristine
     type: detailed
     agency: State
@@ -729,7 +729,7 @@
     name: Marko Elez
     alias: SSA-7
   - id: internal-hhs-cms-marko-elez
-    type: detailed
+    type: internal
     agency: CMS
     from: HHS
     start_date: 2025-03-05
@@ -1054,7 +1054,7 @@
     title: Acting Administrator, US DOGE Service and the DOGE Temporary Organization
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.4.pdf
   - id: internal-hhs-cms-gleason
-    type: detailed
+    type: internal
     agency: CMS
     from: HHS
     start_date: 2025-02-24~
@@ -1984,7 +1984,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: No documentation, reported in court filing
   - id: internal-hhs-cms-mohgaddassi
-    type: detailed
+    type: internal
     agency: CMS
     from: HHS
     start_date: 2025-03-05

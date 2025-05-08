@@ -112,14 +112,14 @@
 # Edward Coristine
 - category: wrecker
 - positions:
-    -  **USCIS** dates unknown 
     -  **TSA** dates unknown 
+    -  **USCIS** dates unknown 
     -  **GSA** (2025-01-20~ to ??)  volunteer
     -  **OPM** (2025-01-28~ to ??) 
     -  **SBA** (2025-02-03 to ??) 
+    -  **DHS** (2025-02-05 to ??) 
     -  **FEMA** (2025-02-05 to ??) 
         - FEMA Grants Outcomes: 2025-02-07 - ongoing
-    -  **DHS** (2025-02-05 to ??) 
     -  **State** (2025-02-10 to ??) Senior Advisor
     -  **USAID** (2025-02-10 to ??) Senior Advisor
     -  **CISA** (2025-02-19 to ??) Senior Advisor

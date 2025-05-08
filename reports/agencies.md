@@ -18,10 +18,10 @@
   - **Jeremy Lewin** (2025-02-03)
   - **Rachel Riley** (2025-02-03)
   - **Conor Fennessy** (2025-02-03)
-  - **Amy Gleason** (2025-02-24~) (detailed from HHS)
+  - **Amy Gleason** (2025-02-24~)
   - **Edward Coristine** (2025-03-05)
-  - **Marko Elez** (2025-03-05) (detailed from HHS)
-  - **Aram Moghaddassi** (2025-03-05) (detailed from HHS)
+  - **Marko Elez** (2025-03-05)
+  - **Aram Moghaddassi** (2025-03-05)
   - **Zach Terrell** (2025-03-11)
 - systems:
     - CALM: CMS Acquisition Lifecycle Management system
