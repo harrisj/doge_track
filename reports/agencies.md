@@ -3,6 +3,8 @@
 
 # Centers for Disease Control and Prevention
 - slug: cdc
+- people:
+  - **Luke Farritor** (2025-01-30)
 - systems:
     - APEX: Acquisition Performance and Execution
         - Luke Farritor 2025-02-04 - ongoing

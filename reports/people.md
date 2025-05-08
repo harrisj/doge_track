@@ -112,14 +112,14 @@
 # Edward Coristine
 - category: wrecker
 - positions:
-    -  **TSA** dates unknown 
     -  **USCIS** dates unknown 
+    -  **TSA** dates unknown 
     -  **GSA** (2025-01-20~ to ??)  volunteer
     -  **OPM** (2025-01-28~ to ??) 
     -  **SBA** (2025-02-03 to ??) 
-    -  **DHS** (2025-02-05 to ??) 
     -  **FEMA** (2025-02-05 to ??) 
         - FEMA Grants Outcomes: 2025-02-07 - ongoing
+    -  **DHS** (2025-02-05 to ??) 
     -  **State** (2025-02-10 to ??) Senior Advisor
     -  **USAID** (2025-02-10 to ??) Senior Advisor
     -  **CISA** (2025-02-19 to ??) Senior Advisor
@@ -194,6 +194,9 @@
         - Enterprise Human Capital Management System **[admin access]**: 2025-02-28 - ongoing
         - Grants.gov **[admin access]**: 2025-03-21 - 2025-04-18
     -  **USAID** (2025-01-27 to ??) 
+    -  **CDC** (2025-01-30 to ??) 
+        - Integrated Contracts Expert: 2025-01-30 - ongoing
+        - Acquisition Performance and Execution: 2025-02-04 - ongoing
     -  **CMS** (2025-01-31 to ??) 
         - Healthcare Integrated General Ledger Accounting System: 2025-01-31 - ongoing
         - CMS Acquisition Lifecycle Management system: 2025-02-03 - ongoing

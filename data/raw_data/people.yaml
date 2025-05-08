@@ -455,16 +455,16 @@
   own_page: true
   category: wrecker
   positions:
-  - id: internal-dhs-tsa-coristine
-    type: internal
-    from: DHS
-    agency: TSA
-    comment: No details, but in NYT roundup
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-coristine
     type: internal
     from: DHS
     agency: USCIS
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-tsa-coristine
+    type: internal
+    from: DHS
+    agency: TSA
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: gsa-edward-coristine
@@ -491,6 +491,13 @@
     start_date: 2025-02-03
     start_date_truth: reported
     source: https://xcancel.com/lbarronlopez/status/1886491276729544809
+  - id: internal-hhs-fema-edward-coristine
+    type: internal
+    from: DHS
+    agency: FEMA
+    start_date: 2025-02-05
+    start_date_truth: reported
+    source: https://www.washingtonpost.com/climate-environment/2025/02/07/musk-trump-fema-doge/
   - id: detail-gsa-dhs-coristine
     type: detailed
     from: GSA
@@ -499,13 +506,6 @@
     start_date_truth: reported
     comment: Reported by the Post, I'm going to assume this predated the FEMA access
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
-  - id: internal-hhs-fema-edward-coristine
-    type: internal
-    from: DHS
-    agency: FEMA
-    start_date: 2025-02-05
-    start_date_truth: reported
-    source: https://www.washingtonpost.com/climate-environment/2025/02/07/musk-trump-fema-doge/
   - id: detail-gsa-state-coristine
     type: detailed
     agency: State
@@ -813,6 +813,13 @@
     start_date: 2025-01-27
     start_date_truth: reported
     source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
+  - id: internal-hhs-cdc-farritor
+    type: internal
+    agency: CDC
+    from: HHS
+    start_date: 2025-01-30
+    start_date_truth: inferred
+    comment: Guessing from first reported system access for ICE system
   - id: internal-hhs-cms-farritor
     type: internal
     agency: CMS
