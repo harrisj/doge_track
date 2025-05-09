@@ -30,7 +30,7 @@ def generate_people_md
 
             date_range = "(#{pos.start_date} to #{end_date})"
           else
-            date_range = "dates unknown"
+            date_range = ""
           end
 
           alias_str = "[as \"#{pos.doge_alias_id}\"]" if pos.doge_alias_id
@@ -52,7 +52,7 @@ def generate_people_md
           system_roles = person.system_roles
           agency_system_roles = system_roles.select {|r| r.agency == pos.agency || r.govt_system.agency == pos.agency }
           agency_system_roles.each do |sr|
-            sys_name = sr.govt_system.name
+            sys_name = sr.govt_system.acronym ? "#{sr.govt_system.acronym}: #{sr.govt_system.name}" : sr.govt_system.name
             sys_access = " **[#{sr.type} access]**" if sr.type && sr.type != 'read' && sr.type != 'unknown'
 
             end_date = sr.date_revoked
@@ -125,7 +125,7 @@ def generate_agency_md
           else
             file.puts "    - #{system.name}"
           end
-          
+
           roles.each do |sr|
             if sr.doge_alias
               name = sr.name ? "{sr.doge_alias_id} (#{sr.name})" : "#{sr.doge_alias_id}"

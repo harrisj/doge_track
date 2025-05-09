@@ -175,6 +175,9 @@
     -  **USCIS**  
         - SAVE: SAVE: 2025-03-15 - ongoing
     -  **Treasury** (2025-01-21 to 2025-02-06) Special Advisor (IT&M) GS-11/01 $84601
+        - ASAP: Automated Standard Access For Payments **[source-code access]**: 2025-01-28 - ongoing
+        - PAM DB: Payment Automation Manager DB **[source-code access]**: 2025-01-28 - ongoing
+        - SPS: Secure Payment System **[source-code access]**: 2025-01-28 - ongoing
         - PAM DB: Payment Automation Manager DB **[read-write access]**: 2025-02-03 - 2025-02-06
         - PAM filesystem: Payment Automation Manager File System: 2025-02-03 - 2025-02-06
         - SPS: Secure Payment System **[read-write access]**: 2025-02-05 - 2025-02-06
@@ -675,6 +678,8 @@
 - positions:
     -  **CBP**  
     -  **FEMA**  
+        - FEMA-Go: FEMA Grants Outcomes: 2025-02-10 - ongoing
+        - IFMIS: Integrated Financial Management and Information System **[source-code access]**: 2025-02-10 - ongoing
     -  **ICE**  
     -  **TSA**  
     -  **USCIS**  
