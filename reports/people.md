@@ -1,7 +1,7 @@
 # Daniel Abrahamson
 - category: support
 - positions:
-    -  **DOT** dates unknown Senior Advisor
+    -  **DOT**  Senior Advisor
 
 # Justin Aimonetti
 - category: support
@@ -11,9 +11,9 @@
 # Baris Akis
 - category: booster
 - positions:
-    -  **IRS** dates unknown 
-    -  **OPM** dates unknown 
-    -  **Treasury** dates unknown 
+    -  **IRS**  
+    -  **OPM**  
+    -  **Treasury**  
 
 # Jacob Altik
 - category: wrecker
@@ -28,14 +28,14 @@
 # Anthony Armstrong
 - category: leadership
 - positions:
-    -  **DHS** dates unknown 
+    -  **DHS**  
     -  **OPM** (2025-01-20 to ??) Expert ED-00
     -  **FDIC** (2025-04-10 to ??) 
 
 # Jennifer Balajadia
 - category: leadership
 - positions:
-    -  **Education** dates unknown 
+    -  **Education**  
 
 # Sam Beyda
 - category: unknown
@@ -67,7 +67,7 @@
     -  **OPM** (2025-01-20 to NTE 2025-07-18) [as "OPM-3"] Expert ED-00 volunteer
     -  **Education** (2025-02-03 to NTE 2026-02-12) [as "ED-1"] 
     -  **SSA** (2025-02-03 to ??) [as "OPM-3"] 
-        - NUMIDENT files: 2025-02-10 - ongoing
+        - NUMIDENT: NUMIDENT files: 2025-02-10 - ongoing
 
 # Ashley Boizelle
 - category: support
@@ -102,13 +102,13 @@
 - category: wrecker
 - positions:
     -  **DOL** (2025-03-05 to ??) 
-        - Payment Management System:  - ongoing
+        - PMS: Payment Management System:  - ongoing
         - HRConnect: 2025-02-19 - ongoing
-        - New Core Financial Management System: 2025-02-20 - ongoing
-        - Directory Resource Administrator: 2025-02-26 - ongoing
-        - Office of Job Corps Electronic Information System: 2025-03-20 - ongoing
-        - National Farmworker Jobs Program: 2025-04-18 - ongoing
-        - Reentry Employment Opportunities: 2025-04-18 - ongoing
+        - NCFMS: New Core Financial Management System: 2025-02-20 - ongoing
+        - DRA: Directory Resource Administrator: 2025-02-26 - ongoing
+        - OJC-EIS: Office of Job Corps Electronic Information System: 2025-03-20 - ongoing
+        - NFJP: National Farmworker Jobs Program: 2025-04-18 - ongoing
+        - REO: Reentry Employment Opportunities: 2025-04-18 - ongoing
 
 # George Cooper
 - category: unknown
@@ -122,14 +122,14 @@
 # Edward Coristine
 - category: wrecker
 - positions:
-    -  **TSA** dates unknown 
-    -  **USCIS** dates unknown 
+    -  **TSA**  
+    -  **USCIS**  
     -  **GSA** (2025-01-20~ to ??)  volunteer
     -  **OPM** (2025-01-28~ to ??) 
     -  **SBA** (2025-02-03 to ??) 
     -  **DHS** (2025-02-05 to ??) 
     -  **FEMA** (2025-02-05 to ??) 
-        - FEMA Grants Outcomes: 2025-02-07 - ongoing
+        - FEMA-Go: FEMA Grants Outcomes: 2025-02-07 - ongoing
     -  **State** (2025-02-10 to ??) Senior Advisor
     -  **USAID** (2025-02-10 to ??) Senior Advisor
     -  **CISA** (2025-02-19 to ??) Senior Advisor
@@ -137,9 +137,9 @@
     -  **Education** (2025-02-20 to ??) 
     -  **HHS** (2025-03-05 to ??) 
     -  **CMS** (2025-03-05 to ??) 
-        - Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
-        - CMS Acquisition Lifecycle Management system: 2025-03-05 - ongoing
-        - Integrated Data Repository: 2025-03-11 - ongoing
+        - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
+        - CALM: CMS Acquisition Lifecycle Management system: 2025-03-05 - ongoing
+        - IDR: Integrated Data Repository: 2025-03-11 - ongoing
 
 # Scott Coulter
 - category: wrecker
@@ -168,26 +168,26 @@
 # Marko Elez
 - category: wrecker
 - positions:
-    -  **DHS** dates unknown 
-    -  **CBP** dates unknown 
-    -  **ICE** dates unknown 
-    -  **TSA** dates unknown 
-    -  **USCIS** dates unknown 
-        - SAVE: 2025-03-15 - ongoing
+    -  **DHS**  
+    -  **CBP**  
+    -  **ICE**  
+    -  **TSA**  
+    -  **USCIS**  
+        - SAVE: SAVE: 2025-03-15 - ongoing
     -  **Treasury** (2025-01-21 to 2025-02-06) Special Advisor (IT&M) GS-11/01 $84601
-        - Payment Automation Manager DB **[read-write access]**: 2025-02-03 - 2025-02-06
-        - Payment Automation Manager File System: 2025-02-03 - 2025-02-06
-        - Secure Payment System **[read-write access]**: 2025-02-05 - 2025-02-06
+        - PAM DB: Payment Automation Manager DB **[read-write access]**: 2025-02-03 - 2025-02-06
+        - PAM filesystem: Payment Automation Manager File System: 2025-02-03 - 2025-02-06
+        - SPS: Secure Payment System **[read-write access]**: 2025-02-05 - 2025-02-06
     -  **SSA** (2025-02-18 to ??) [as "SSA-7"] 
-        - Master Beneficiary Record: 2025-03-17 - ongoing
-        - NUMIDENT files: 2025-03-17 - ongoing
-        - Supplemental Security Record master records: 2025-03-17 - ongoing
+        - MBR: Master Beneficiary Record: 2025-03-17 - ongoing
+        - NUMIDENT: NUMIDENT files: 2025-03-17 - ongoing
+        - SSR: Supplemental Security Record master records: 2025-03-17 - ongoing
     -  **HHS** (2025-03-05 to ??) 
-        - National Directory of New Hires: 2025-03-06 - 2025-04-18
+        - NDNH: National Directory of New Hires: 2025-03-06 - 2025-04-18
     -  **CMS** (2025-03-05 to ??) 
-        - Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
-        - CMS Acquisition Lifecycle Management system: 2025-03-05 - ongoing
-        - Integrated Data Repository: 2025-03-05 - ongoing
+        - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
+        - CALM: CMS Acquisition Lifecycle Management system: 2025-03-05 - ongoing
+        - IDR: Integrated Data Repository: 2025-03-05 - ongoing
 
 # Charles Ezell
 - category: enabler
@@ -197,24 +197,24 @@
 # Luke Farritor
 - category: wrecker
 - positions:
-    -  **DHS** dates unknown 
-    -  **ICE** dates unknown 
-    -  **TSA** dates unknown 
-    -  **ICE** dates unknown 
+    -  **DHS**  
+    -  **ICE**  
+    -  **TSA**  
+    -  **ICE**  
     -  **GSA** (2025-01-20 to ??)  volunteer
     -  **HHS** (2025-01-21 to ??) 
-        - Payment Management System **[admin access]**: 2025-01-22 - ongoing
+        - PMS: Payment Management System **[admin access]**: 2025-01-22 - ongoing
         - GrantSolutions: 2025-01-27 - ongoing
-        - Enterprise Human Capital Management System **[admin access]**: 2025-02-28 - ongoing
+        - EHCM: Enterprise Human Capital Management System **[admin access]**: 2025-02-28 - ongoing
         - Grants.gov **[admin access]**: 2025-03-21 - 2025-04-18
     -  **USAID** (2025-01-27 to ??) 
     -  **CDC** (2025-01-30 to ??) 
-        - Integrated Contracts Expert: 2025-01-30 - ongoing
-        - Acquisition Performance and Execution: 2025-02-04 - ongoing
+        - ICE: Integrated Contracts Expert: 2025-01-30 - ongoing
+        - APEX: Acquisition Performance and Execution: 2025-02-04 - ongoing
     -  **CMS** (2025-01-31 to ??) 
-        - Healthcare Integrated General Ledger Accounting System: 2025-01-31 - ongoing
-        - CMS Acquisition Lifecycle Management system: 2025-02-03 - ongoing
-        - Integrated Data Repository: 2025-02-18 - ongoing
+        - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-01-31 - ongoing
+        - CALM: CMS Acquisition Lifecycle Management system: 2025-02-03 - ongoing
+        - IDR: Integrated Data Repository: 2025-02-18 - ongoing
     -  **Energy** (2025-02-04~ to 2025-02-08~) 
         - Microsoft 365: 2025-02-05 - ongoing
     -  **CFPB** (2025-02-07 to 2025-03-04) 
@@ -222,22 +222,22 @@
         - Microsoft Entra ID **[admin access]**: 2025-02-07 - 2025-03-04
     -  **State** (2025-02-10 to ??) Senior Advisor
     -  **NIH** (2025-02-24 to ??) 
-        - NIH Grant Management System: 2025-01-27 - ongoing
-        - Oracle E-Business Suite: 2025-02-28 - ongoing
-        - Procurement Request Information System Management: 2025-02-28 - ongoing
+        - eRA: NIH Grant Management System: 2025-01-27 - ongoing
+        - EBS: Oracle E-Business Suite: 2025-02-28 - ongoing
+        - PRISM: Procurement Request Information System Management: 2025-02-28 - ongoing
     -  **NSF** (2025-04-14 to ??) 
 
 # Conor Fennessy
 - category: wrecker
 - positions:
-    -  **GSA** dates unknown 
+    -  **GSA**  
     -  **Education** (2025-01-31 to ??) [as "ED-2"] Senior Advisor GS-15/6 $195,200
     -  **CMS** (2025-02-03 to ??) 
-        - CMS Acquisition Lifecycle Management system: 2025-02-03 - 2025-04-18
+        - CALM: CMS Acquisition Lifecycle Management system: 2025-02-03 - 2025-04-18
     -  **HHS** (2025-02-20 to ??) 
         - GrantSolutions: 2025-02-28 - ongoing
         - Grants.gov **[admin access]**: 2025-02-28 - ongoing
-        - Financial Business Intelligence System: 2025-03-07 - 2025-04-18
+        - FBIS: Financial Business Intelligence System: 2025-03-07 - 2025-04-18
 
 # Joshua Fox
 - category: unknown
@@ -282,7 +282,7 @@
     -  **DOGE** (2024-12-30 to 2024-02-18) 
     -  **DOGE** (2025-02-18 to ??) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
     -  **CMS** (2025-02-24~ to ??) 
-        - CMS Acquisition Lifecycle Management system: 2025-02-24 - ongoing
+        - CALM: CMS Acquisition Lifecycle Management system: 2025-02-24 - ongoing
     -  **HHS** (2025-03-04 to ??) Expert/Consultant
 
 # Mike Gonzalez
@@ -330,7 +330,7 @@
 - category: wrecker
 - positions:
     -  **DOJ** (2025-04-21 to ??) 
-        - Executive Office for Immigration Review's Court and Appeals System: 2025-04-21 - ongoing
+        - ECAS: Executive Office for Immigration Review's Court and Appeals System: 2025-04-21 - ongoing
 
 # Greg Hogan
 - category: enabler
@@ -347,7 +347,7 @@
 - category: wrecker
 - positions:
     -  **DOI** (2025-02-24 to ??) Special Advisor / Acting Chief Human Capital Officer
-        - Federal Personnel Payroll System **[admin access]**: 2025-03-29 - ongoing
+        - FPPS: Federal Personnel Payroll System **[admin access]**: 2025-03-29 - ongoing
 
 # Jared Isaacman
 - category: enabler
@@ -370,7 +370,7 @@
 - category: enabler
 - positions:
     -  **EPA** (2025-02-12 to ??) 
-        - EPA Acquisition System: 2025-02-12 - ongoing
+        - EAS: EPA Acquisition System: 2025-02-12 - ongoing
 
 # Thomas Kiernan
 - category: wrecker
@@ -382,15 +382,15 @@
 - positions:
     -  **DOGE** (2025-01-20 to ??) 
     -  **EPA** (2025-02-04 to ??) 
-        - EPA Acquisition System: 2025-02-12 - ongoing
+        - EAS: EPA Acquisition System: 2025-02-12 - ongoing
     -  **DOL** (2025-02-13~ to ??) 
     -  **SSA** (2025-02-20~ to ??) 
 
 # Gavin Kliger
 - category: wrecker
 - positions:
-    -  **DHS** dates unknown 
-    -  **TSA** dates unknown 
+    -  **DHS**  
+    -  **TSA**  
     -  **OPM** (2025-01-20 to 2025-02-18) **Senior Advisor to the Director for Information Technology** $195,200
     -  **USAID** (2025-01-27 to ??) 
     -  **USDA** (2025-02-01~ to ??) 
@@ -413,11 +413,11 @@
 - category: wrecker
 - positions:
     -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-6"] Expert ED-00 volunteer
-        - Master Beneficiary Record: 2025-03-17 - ongoing
-        - NUMIDENT files: 2025-03-17 - ongoing
-        - Supplemental Security Record master records: 2025-03-17 - ongoing
+        - MBR: Master Beneficiary Record: 2025-03-17 - ongoing
+        - NUMIDENT: NUMIDENT files: 2025-03-17 - ongoing
+        - SSR: Supplemental Security Record master records: 2025-03-17 - ongoing
     -  **DOJ** (2025-04-15 to ??) 
-        - Executive Office for Immigration Review's Court and Appeals System: 2025-04-21 - ongoing
+        - ECAS: Executive Office for Immigration Review's Court and Appeals System: 2025-04-21 - ongoing
 
 # Michael Kratsios
 - category: enabler
@@ -437,8 +437,8 @@
 - category: enabler
 - positions:
     -  **HUD** (2025-02-10 to ??) Senior Advisor
-        - HUD Central Accounting and Processing System **[read-write access]**: 2025-02-26 - ongoing
-        - Line of Credit Control System **[read-write access]**: 2025-02-26 - ongoing
+        - HUDCAPS: HUD Central Accounting and Processing System **[read-write access]**: 2025-02-26 - ongoing
+        - LOCCS: Line of Credit Control System **[read-write access]**: 2025-02-26 - ongoing
 
 # Sahil Lavingia
 - category: wrecker
@@ -451,7 +451,7 @@
     -  **GSA** (2025-01-20 to ??) 
     -  **USAID** (2025-01-28 to 2025-03-18) Senior Advisor / Director for Strategy & Programs
     -  **CMS** (2025-02-03 to ??) 
-        - CMS Acquisition Lifecycle Management system: 2025-02-03 - 2025-04-18
+        - CALM: CMS Acquisition Lifecycle Management system: 2025-02-03 - 2025-04-18
     -  **CFPB** (2025-02-06 to ??) 
     -  **HHS** (2025-02-21 to ??) 
         - GrantSolutions: 2025-02-28 - ongoing
@@ -468,7 +468,7 @@
 - category: wrecker
 - positions:
     -  **EPA** (2025-02-12 to ??) Federal Detailee
-        - EPA Acquisition System: 2025-02-12 - ongoing
+        - EAS: EPA Acquisition System: 2025-02-12 - ongoing
 
 # Matt Luby
 - category: wrecker
@@ -522,12 +522,12 @@
 - category: wrecker
 - positions:
     -  **HUD** (2025-02-10 to ??) 
-        - HUD Enforcement Management System: 2025-02-20 - ongoing
-        - Financial Assessment of Public Housing: 2025-02-26 - ongoing
-        - HUD Central Accounting and Processing System **[read-write access]**: 2025-02-26 - ongoing
-        - Integrated Disbursement and Information System: 2025-02-26 - ongoing
-        - Line of Credit Control System **[read-write access]**: 2025-02-26 - ongoing
-        - Web Access Security Subsystem **[read-write access]**: 2025-02-26 - ongoing
+        - HEMS: HUD Enforcement Management System: 2025-02-20 - ongoing
+        - FASS-PH: Financial Assessment of Public Housing: 2025-02-26 - ongoing
+        - HUDCAPS: HUD Central Accounting and Processing System **[read-write access]**: 2025-02-26 - ongoing
+        - IDIS: Integrated Disbursement and Information System: 2025-02-26 - ongoing
+        - LOCCS: Line of Credit Control System **[read-write access]**: 2025-02-26 - ongoing
+        - WASS: Web Access Security Subsystem **[read-write access]**: 2025-02-26 - ongoing
 
 # Eliezer Mishory
 - category: wrecker
@@ -542,25 +542,25 @@
 # Aram Moghaddassi
 - category: wrecker
 - positions:
-    -  **DHS** dates unknown 
-    -  **DOL** dates unknown 
-        - Foreign Labor Application Gateway **[admin access]**: 2025-04-18 - ongoing
-        - Reentry Employment Opportunities: 2025-04-18 - ongoing
-    -  **CBP** dates unknown 
-    -  **ICE** dates unknown 
-    -  **TSA** dates unknown 
-    -  **USCIS** dates unknown 
-        - Central Index System: 2025-03-17 - ongoing
-        - Electronic Immigration System: 2025-03-17 - ongoing
-        - USCIS Data Business Intelligence Services: 2025-03-17 - ongoing
+    -  **DHS**  
+    -  **DOL**  
+        - FLAG: Foreign Labor Application Gateway **[admin access]**: 2025-04-18 - ongoing
+        - REO: Reentry Employment Opportunities: 2025-04-18 - ongoing
+    -  **CBP**  
+    -  **ICE**  
+    -  **TSA**  
+    -  **USCIS**  
+        - CIS: Central Index System: 2025-03-17 - ongoing
+        - ELIS: Electronic Immigration System: 2025-03-17 - ongoing
+        - DBIS: USCIS Data Business Intelligence Services: 2025-03-17 - ongoing
     -  **SSA** (2025-02-22 to ??) [as "SSA-3"] 
     -  **HHS** (2025-03-05 to ??) 
         - GrantSolutions: 2025-02-19 - ongoing
-        - National Directory of New Hires: 2025-03-06 - 2025-04-18
+        - NDNH: National Directory of New Hires: 2025-03-06 - 2025-04-18
     -  **CMS** (2025-03-05 to ??) 
-        - Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
-        - CMS Acquisition Lifecycle Management system: 2025-03-05 - ongoing
-        - Integrated Data Repository: 2025-03-05 - ongoing
+        - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
+        - CALM: CMS Acquisition Lifecycle Management system: 2025-03-05 - ongoing
+        - IDR: Integrated Data Repository: 2025-03-05 - ongoing
 
 # Justin Monroe
 - category: wrecker
@@ -602,7 +602,7 @@
 - positions:
     -  **DOGE** (2025-01-23 to ??) 
     -  **Education** (2025-01-28 to NTE 2026-07-04) 
-        - Financial Management System: 2025-02-04 - 2025-03-06
+        - FMS: Financial Management System: 2025-02-04 - 2025-03-06
     -  **Energy** (2025-02-04~ to 2025-02-08~) 
     -  **DOL** (2025-02-05 to ??) 
     -  **FDIC** (2025-04-10 to ??) 
@@ -615,19 +615,19 @@
 # Payton Rehling
 - category: wrecker
 - positions:
-    -  **DHS** dates unknown 
-    -  **TSA** dates unknown 
-    -  **USCIS** dates unknown 
-        - Central Index System: 2025-03-25 - ongoing
-        - Electronic Immigration System: 2025-03-25 - ongoing
-        - USCIS Data Business Intelligence Services: 2025-03-25 - ongoing
+    -  **DHS**  
+    -  **TSA**  
+    -  **USCIS**  
+        - CIS: Central Index System: 2025-03-25 - ongoing
+        - ELIS: Electronic Immigration System: 2025-03-25 - ongoing
+        - DBIS: USCIS Data Business Intelligence Services: 2025-03-25 - ongoing
     -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-9"] Expert ED-00 volunteer
-        - PSSNAP: 2025-03-14 - ongoing
-        - Master Beneficiary Record: 2025-03-17 - ongoing
-        - NUMIDENT files: 2025-03-17 - ongoing
-        - Supplemental Security Record master records: 2025-03-17 - ongoing
+        - PSSNAP: PSSNAP: 2025-03-14 - ongoing
+        - MBR: Master Beneficiary Record: 2025-03-17 - ongoing
+        - NUMIDENT: NUMIDENT files: 2025-03-17 - ongoing
+        - SSR: Supplemental Security Record master records: 2025-03-17 - ongoing
     -  **DOJ** (2025-04-15 to ??) 
-        - Executive Office for Immigration Review's Court and Appeals System: 2025-04-21 - ongoing
+        - ECAS: Executive Office for Immigration Review's Court and Appeals System: 2025-04-21 - ongoing
 
 # Ryan Riedel
 - category: enabler
@@ -638,15 +638,15 @@
 - category: wrecker
 - positions:
     -  **HHS** (2025-01-27 to ??) 
-        - Enterprise Human Capital Management System: 2025-02-03 - ongoing
-        - Financial Business Intelligence System: 2025-02-04 - ongoing
-        - Business Intelligence Information System: 2025-02-06 - ongoing
+        - EHCM: Enterprise Human Capital Management System: 2025-02-03 - ongoing
+        - FBIS: Financial Business Intelligence System: 2025-02-04 - ongoing
+        - BIIS: Business Intelligence Information System: 2025-02-06 - ongoing
         - GrantSolutions: 2025-02-20 - ongoing
     -  **CMS** (2025-02-03 to ??) 
-        - CMS Acquisition Lifecycle Management system: 2025-02-03 - ongoing
+        - CALM: CMS Acquisition Lifecycle Management system: 2025-02-03 - ongoing
     -  **NIH** (2025-02-24 to ??) 
-        - Oracle E-Business Suite: 2025-02-24 - ongoing
-        - Procurement Request Information System Management: 2025-02-24 - ongoing
+        - EBS: Oracle E-Business Suite: 2025-02-24 - ongoing
+        - PRISM: Procurement Request Information System Management: 2025-02-24 - ongoing
     -  **NSF** (2025-04-14 to ??) 
 
 # Christopher Roussos
@@ -673,15 +673,15 @@
 # Kyle Schutt
 - category: wrecker
 - positions:
-    -  **CBP** dates unknown 
-    -  **FEMA** dates unknown 
-    -  **ICE** dates unknown 
-    -  **TSA** dates unknown 
-    -  **USCIS** dates unknown 
+    -  **CBP**  
+    -  **FEMA**  
+    -  **ICE**  
+    -  **TSA**  
+    -  **USCIS**  
     -  **CISA** (2025-02-19 to ??) Senior Advisor
     -  **DHS** (2025-02-19~ to ??) 
     -  **HHS** (2025-03-14 to ??) 
-        - Unaccompanied Alien Children (UAC) Portal: 2025-03-21 - ongoing
+        - UAC Portal: Unaccompanied Alien Children (UAC) Portal: 2025-03-21 - ongoing
 
 # Riley Sennott
 - category: wrecker
@@ -766,19 +766,19 @@
 - category: wrecker
 - positions:
     -  **HHS** (2025-03-06 to ??) 
-        - Enterprise Human Capital Management System: 2025-03-07 - ongoing
-        - Financial Business Intelligence System: 2025-03-16 - ongoing
-        - HHS Unified Financial Management System: 2025-03-18 - ongoing
-        - Payment Management System: 2025-03-27 - ongoing
+        - EHCM: Enterprise Human Capital Management System: 2025-03-07 - ongoing
+        - FBIS: Financial Business Intelligence System: 2025-03-16 - ongoing
+        - UFMS: HHS Unified Financial Management System: 2025-03-18 - ongoing
+        - PMS: Payment Management System: 2025-03-27 - ongoing
     -  **CMS** (2025-03-11 to ??) 
-        - Integrated Data Repository: 2025-03-11 - ongoing
+        - IDR: Integrated Data Repository: 2025-03-11 - ongoing
     -  **NSF** (2025-04-14 to ??) 
 
 # Katrine Trampe
 - category: wrecker
 - positions:
     -  **DOI** (2025-03-05 to ??) 
-        - Federal Personnel Payroll System **[admin access]**: 2025-03-29 - ongoing
+        - FPPS: Federal Personnel Payroll System **[admin access]**: 2025-03-29 - ongoing
 
 # Cary Volpert
 - category: wrecker
@@ -799,10 +799,10 @@
         - Data Insight: 2025-02-07 - 2025-03-28
         - G-Invoicing: 2025-02-07 - 2025-03-28
         - HRConnect **[read-write access]**: 2025-02-07 - 2025-03-28
-        - Invoice Processing Platform: 2025-02-07 - 2025-03-28
-        - Oracle Business Intelligence: 2025-02-07 - 2025-03-28
-        - Procurement Request Information System Management: 2025-02-07 - 2025-03-28
-        - Salesforce oneARC: 2025-02-07 - 2025-03-28
+        - IPP: Invoice Processing Platform: 2025-02-07 - 2025-03-28
+        - OBI: Oracle Business Intelligence: 2025-02-07 - 2025-03-28
+        - PRISM: Procurement Request Information System Management: 2025-02-07 - 2025-03-28
+        - onrARC: Salesforce oneARC: 2025-02-07 - 2025-03-28
         - USA Staffing: 2025-02-07 - 2025-03-28
         - webTA: 2025-02-07 - ongoing
         - Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
@@ -813,10 +813,10 @@
         - Data Insight: 2025-02-07 - 2025-03-28
         - G-Invoicing: 2025-02-07 - 2025-03-28
         - HRConnect **[read-write access]**: 2025-02-07 - 2025-03-28
-        - Invoice Processing Platform: 2025-02-07 - 2025-03-28
-        - Oracle Business Intelligence: 2025-02-07 - 2025-03-28
-        - Procurement Request Information System Management: 2025-02-07 - 2025-03-28
-        - Salesforce oneARC: 2025-02-07 - 2025-03-28
+        - IPP: Invoice Processing Platform: 2025-02-07 - 2025-03-28
+        - OBI: Oracle Business Intelligence: 2025-02-07 - 2025-03-28
+        - PRISM: Procurement Request Information System Management: 2025-02-07 - 2025-03-28
+        - onrARC: Salesforce oneARC: 2025-02-07 - 2025-03-28
         - USA Staffing: 2025-02-07 - 2025-03-28
         - webTA: 2025-02-07 - ongoing
         - Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
