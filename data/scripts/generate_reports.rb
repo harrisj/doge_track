@@ -120,8 +120,12 @@ def generate_agency_md
 
         systems.each do |system_id, roles|
           system = roles[0].govt_system
-          file.puts "    - #{system.id}: #{system.name}"
-
+          if system.acronym
+            file.puts "    - #{system.acronym}: #{system.name}"
+          else
+            file.puts "    - #{system.name}"
+          end
+          
           roles.each do |sr|
             if sr.doge_alias
               name = sr.name ? "{sr.doge_alias_id} (#{sr.name})" : "#{sr.doge_alias_id}"

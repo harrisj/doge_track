@@ -12,6 +12,10 @@
       "description": "Who of the DOGE crew was granted access",
       "$ref": "valid_names.json#people"
     },
+    "alias": {
+      "description": "If access was granted to an alias. This will overwrite the name field if the Alias is know",
+      "type": "string"
+    },
     "agency": {
       "description": "For SSP/SaaS systems, the specific agency this access was granted at",
       "$ref": "valid_names.json#agency_ids"

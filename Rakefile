@@ -84,8 +84,13 @@ namespace :data do
     ruby "#{SCRIPTS_DIR}/validate_people_yaml.rb"
   end
 
+  desc "Process and validate the systems YAML file"
+  task validate_systems_yaml: "validate_aliases_yaml" do
+    ruby "#{SCRIPTS_DIR}/validate_systems_yaml.rb"
+  end
+
   desc "Validate all raw data YAML files"
-  task validate: %i[validate_events_yaml validate_people_yaml]
+  task validate: %i[validate_aliases_yaml validate_events_yaml validate_people_yaml validate_systems_yaml]
 
   desc "Create an empty database for loading data"
   task :create_db do

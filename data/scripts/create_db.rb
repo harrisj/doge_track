@@ -62,6 +62,7 @@ DB.create_table! :people do
   string :background
   string :category, null: false, default: 'unknown'
   boolean :own_page, null: false, default: false
+  string :comment
 end
 
 DB.create_table! :events do
@@ -90,6 +91,7 @@ end
 
 DB.create_table! :govt_systems do
   string :id, primary_key: true
+  string :acronym
   string :name, null: false
   string :type, null: false, default: 'unknown'
   string :description

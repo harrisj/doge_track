@@ -11,9 +11,9 @@
 # Baris Akis
 - category: booster
 - positions:
-    -  **Treasury** dates unknown 
-    -  **OPM** dates unknown 
     -  **IRS** dates unknown 
+    -  **OPM** dates unknown 
+    -  **Treasury** dates unknown 
 
 # Jacob Altik
 - category: wrecker
@@ -67,6 +67,7 @@
     -  **OPM** (2025-01-20 to NTE 2025-07-18) [as "OPM-3"] Expert ED-00 volunteer
     -  **Education** (2025-02-03 to NTE 2026-02-12) [as "ED-1"] 
     -  **SSA** (2025-02-03 to ??) [as "OPM-3"] 
+        - NUMIDENT files: 2025-02-10 - ongoing
 
 # Ashley Boizelle
 - category: support
@@ -87,8 +88,15 @@
     -  **USADF** (2025-02-21 to 2025-03-06) 
     -  **GSA** (2025-02-XX to ??)  $120,500
     -  **USIP** (2025-03-04 to 2025-03-24) 
+    -  **NEH** (2025-03-13~ to ??) 
+        - Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
     -  **USIP** (2025-03-25 to ??) President
     -  **IMLS** (2025-03-31 to ??) 
+
+# Michael Cole
+- category: unknown
+- positions:
+    -  **USDA** (2025-02-XX to ??) 
 
 # Miles Collins
 - category: wrecker
@@ -99,6 +107,8 @@
         - New Core Financial Management System: 2025-02-20 - ongoing
         - Directory Resource Administrator: 2025-02-26 - ongoing
         - Office of Job Corps Electronic Information System: 2025-03-20 - ongoing
+        - National Farmworker Jobs Program: 2025-04-18 - ongoing
+        - Reentry Employment Opportunities: 2025-04-18 - ongoing
 
 # George Cooper
 - category: unknown
@@ -158,22 +168,26 @@
 # Marko Elez
 - category: wrecker
 - positions:
+    -  **DHS** dates unknown 
+    -  **CBP** dates unknown 
     -  **ICE** dates unknown 
     -  **TSA** dates unknown 
     -  **USCIS** dates unknown 
-    -  **DHS** dates unknown 
-    -  **CBP** dates unknown 
+        - SAVE: 2025-03-15 - ongoing
     -  **Treasury** (2025-01-21 to 2025-02-06) Special Advisor (IT&M) GS-11/01 $84601
         - Payment Automation Manager DB **[read-write access]**: 2025-02-03 - 2025-02-06
         - Payment Automation Manager File System: 2025-02-03 - 2025-02-06
         - Secure Payment System **[read-write access]**: 2025-02-05 - 2025-02-06
     -  **SSA** (2025-02-18 to ??) [as "SSA-7"] 
+        - Master Beneficiary Record: 2025-03-17 - ongoing
+        - NUMIDENT files: 2025-03-17 - ongoing
+        - Supplemental Security Record master records: 2025-03-17 - ongoing
+    -  **HHS** (2025-03-05 to ??) 
+        - National Directory of New Hires: 2025-03-06 - 2025-04-18
     -  **CMS** (2025-03-05 to ??) 
         - Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
         - CMS Acquisition Lifecycle Management system: 2025-03-05 - ongoing
         - Integrated Data Repository: 2025-03-05 - ongoing
-    -  **HHS** (2025-03-05 to ??) 
-        - National Directory of New Hires: 2025-03-06 - 2025-04-18
 
 # Charles Ezell
 - category: enabler
@@ -185,8 +199,8 @@
 - positions:
     -  **DHS** dates unknown 
     -  **ICE** dates unknown 
-    -  **ICE** dates unknown 
     -  **TSA** dates unknown 
+    -  **ICE** dates unknown 
     -  **GSA** (2025-01-20 to ??)  volunteer
     -  **HHS** (2025-01-21 to ??) 
         - Payment Management System **[admin access]**: 2025-01-22 - ongoing
@@ -209,7 +223,7 @@
     -  **State** (2025-02-10 to ??) Senior Advisor
     -  **NIH** (2025-02-24 to ??) 
         - NIH Grant Management System: 2025-01-27 - ongoing
-        - EBS?: 2025-02-28 - ongoing
+        - Oracle E-Business Suite: 2025-02-28 - ongoing
         - Procurement Request Information System Management: 2025-02-28 - ongoing
     -  **NSF** (2025-04-14 to ??) 
 
@@ -221,14 +235,20 @@
     -  **CMS** (2025-02-03 to ??) 
         - CMS Acquisition Lifecycle Management system: 2025-02-03 - 2025-04-18
     -  **HHS** (2025-02-20 to ??) 
-        - Grants.gov **[admin access]**: 2025-02-28 - ongoing
         - GrantSolutions: 2025-02-28 - ongoing
+        - Grants.gov **[admin access]**: 2025-02-28 - ongoing
         - Financial Business Intelligence System: 2025-03-07 - 2025-04-18
 
 # Joshua Fox
 - category: unknown
 - positions:
     -  **DOGE** (2025-02-XX to ??) 
+
+# Justin Fox
+- category: wrecker
+- positions:
+    -  **NEH** (2025-03-13~ to ??) 
+        - Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
 
 # Justin Fulcher
 - category: wrecker
@@ -310,6 +330,7 @@
 - category: wrecker
 - positions:
     -  **DOJ** (2025-04-21 to ??) 
+        - Executive Office for Immigration Review's Court and Appeals System: 2025-04-21 - ongoing
 
 # Greg Hogan
 - category: enabler
@@ -373,6 +394,14 @@
     -  **OPM** (2025-01-20 to 2025-02-18) **Senior Advisor to the Director for Information Technology** $195,200
     -  **USAID** (2025-01-27 to ??) 
     -  **USDA** (2025-02-01~ to ??) 
+    -  **CFPB** (2025-02-07 to 2025-05-08) 
+        - Microsoft Active Directory: 2025-02-07 - 2025-05-08
+        - Microsoft Entra ID: 2025-02-07 - 2025-05-08
+        - Physical Access Control: 2025-02-07 - 2025-05-08
+        - Agency Website **[read-write access]**: 2025-03-08 - 2025-05-08
+        - Microsoft Power Automate **[admin access]**: 2025-04-12 - 2025-04-13
+        - Microsoft Sharepoint **[admin access]**: 2025-04-12 - 2025-05-08
+        - Microsoft Power Automate **[admin access]**: 2025-04-17 - 2025-04-17
     -  **OPM** (2025-02-18 to ??) **Senior Advisor to the Director for Information Technology** $195,200
     -  **IRS** (2025-02-19 to 2025-04-18) 
     -  **FTC** (2025-03-28~ to ??) 
@@ -384,7 +413,11 @@
 - category: wrecker
 - positions:
     -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-6"] Expert ED-00 volunteer
+        - Master Beneficiary Record: 2025-03-17 - ongoing
+        - NUMIDENT files: 2025-03-17 - ongoing
+        - Supplemental Security Record master records: 2025-03-17 - ongoing
     -  **DOJ** (2025-04-15 to ??) 
+        - Executive Office for Immigration Review's Court and Appeals System: 2025-04-21 - ongoing
 
 # Michael Kratsios
 - category: enabler
@@ -509,12 +542,17 @@
 # Aram Moghaddassi
 - category: wrecker
 - positions:
-    -  **DOL** dates unknown 
-    -  **ICE** dates unknown 
-    -  **USCIS** dates unknown 
-    -  **TSA** dates unknown 
     -  **DHS** dates unknown 
+    -  **DOL** dates unknown 
+        - Foreign Labor Application Gateway **[admin access]**: 2025-04-18 - ongoing
+        - Reentry Employment Opportunities: 2025-04-18 - ongoing
     -  **CBP** dates unknown 
+    -  **ICE** dates unknown 
+    -  **TSA** dates unknown 
+    -  **USCIS** dates unknown 
+        - Central Index System: 2025-03-17 - ongoing
+        - Electronic Immigration System: 2025-03-17 - ongoing
+        - USCIS Data Business Intelligence Services: 2025-03-17 - ongoing
     -  **SSA** (2025-02-22 to ??) [as "SSA-3"] 
     -  **HHS** (2025-03-05 to ??) 
         - GrantSolutions: 2025-02-19 - ongoing
@@ -543,8 +581,8 @@
 # Todd Newnam
 - category: wrecker
 - positions:
-    -  **Treasury** (2025-04-XX to ??) Senior Advisor
     -  **IRS** (2025-04-XX to ??) Senior Advisor
+    -  **Treasury** (2025-04-XX to ??) Senior Advisor
 
 # Noah Peters
 - category: support
@@ -578,10 +616,18 @@
 - category: wrecker
 - positions:
     -  **DHS** dates unknown 
-    -  **USCIS** dates unknown 
     -  **TSA** dates unknown 
+    -  **USCIS** dates unknown 
+        - Central Index System: 2025-03-25 - ongoing
+        - Electronic Immigration System: 2025-03-25 - ongoing
+        - USCIS Data Business Intelligence Services: 2025-03-25 - ongoing
     -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-9"] Expert ED-00 volunteer
+        - PSSNAP: 2025-03-14 - ongoing
+        - Master Beneficiary Record: 2025-03-17 - ongoing
+        - NUMIDENT files: 2025-03-17 - ongoing
+        - Supplemental Security Record master records: 2025-03-17 - ongoing
     -  **DOJ** (2025-04-15 to ??) 
+        - Executive Office for Immigration Review's Court and Appeals System: 2025-04-21 - ongoing
 
 # Ryan Riedel
 - category: enabler
@@ -599,7 +645,7 @@
     -  **CMS** (2025-02-03 to ??) 
         - CMS Acquisition Lifecycle Management system: 2025-02-03 - ongoing
     -  **NIH** (2025-02-24 to ??) 
-        - EBS?: 2025-02-24 - ongoing
+        - Oracle E-Business Suite: 2025-02-24 - ongoing
         - Procurement Request Information System Management: 2025-02-24 - ongoing
     -  **NSF** (2025-04-14 to ??) 
 
@@ -627,11 +673,11 @@
 # Kyle Schutt
 - category: wrecker
 - positions:
-    -  **USCIS** dates unknown 
-    -  **TSA** dates unknown 
-    -  **FEMA** dates unknown 
     -  **CBP** dates unknown 
+    -  **FEMA** dates unknown 
     -  **ICE** dates unknown 
+    -  **TSA** dates unknown 
+    -  **USCIS** dates unknown 
     -  **CISA** (2025-02-19 to ??) Senior Advisor
     -  **DHS** (2025-02-19~ to ??) 
     -  **HHS** (2025-03-14 to ??) 
@@ -750,29 +796,29 @@
     -  **USDA** (2025-02-01~ to ??) 
     -  **CFPB** (2025-02-07 to 2025-03-04) 
         - Concur: 2025-02-07 - 2025-03-28
+        - Data Insight: 2025-02-07 - 2025-03-28
+        - G-Invoicing: 2025-02-07 - 2025-03-28
         - HRConnect **[read-write access]**: 2025-02-07 - 2025-03-28
         - Invoice Processing Platform: 2025-02-07 - 2025-03-28
-        - Salesforce oneARC: 2025-02-07 - 2025-03-28
-        - Procurement Request Information System Management: 2025-02-07 - 2025-03-28
-        - USA Staffing: 2025-02-07 - 2025-03-28
-        - G-Invoicing: 2025-02-07 - 2025-03-28
         - Oracle Business Intelligence: 2025-02-07 - 2025-03-28
+        - Procurement Request Information System Management: 2025-02-07 - 2025-03-28
+        - Salesforce oneARC: 2025-02-07 - 2025-03-28
+        - USA Staffing: 2025-02-07 - 2025-03-28
         - webTA: 2025-02-07 - ongoing
-        - Data Insight: 2025-02-07 - 2025-03-28
         - Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
     -  **DOL** (2025-02-13~ to ??) 
     -  **Education** (2025-02-20 to ??) 
     -  **CFPB** (2025-03-05 to ??) Expert/Consultant
         - Concur: 2025-02-07 - 2025-03-28
+        - Data Insight: 2025-02-07 - 2025-03-28
+        - G-Invoicing: 2025-02-07 - 2025-03-28
         - HRConnect **[read-write access]**: 2025-02-07 - 2025-03-28
         - Invoice Processing Platform: 2025-02-07 - 2025-03-28
-        - Salesforce oneARC: 2025-02-07 - 2025-03-28
-        - Procurement Request Information System Management: 2025-02-07 - 2025-03-28
-        - USA Staffing: 2025-02-07 - 2025-03-28
-        - G-Invoicing: 2025-02-07 - 2025-03-28
         - Oracle Business Intelligence: 2025-02-07 - 2025-03-28
+        - Procurement Request Information System Management: 2025-02-07 - 2025-03-28
+        - Salesforce oneARC: 2025-02-07 - 2025-03-28
+        - USA Staffing: 2025-02-07 - 2025-03-28
         - webTA: 2025-02-07 - ongoing
-        - Data Insight: 2025-02-07 - 2025-03-28
         - Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
     -  **FCC** (2025-04-04 to ??) 
 

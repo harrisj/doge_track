@@ -9,7 +9,11 @@
             "type": "string"
         },
         "id": {
-            "description": "An ID for the system (usually an acronym)",
+            "description": "An ID for the system (usually but not always an acronym)",
+            "type": "string"
+        },
+        "acronym": {
+            "description": "An acronym which can be used for the system",
             "type": "string"
         },
         "type": {

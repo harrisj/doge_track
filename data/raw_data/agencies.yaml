@@ -2150,11 +2150,13 @@
     id: nTUfmAV8
   - date: 2025-03-31
     type: disruption
-    event: DOGE arrives at the agency and notifies the entire staff of IMLS that they are being put on administrative leave effective immediately
+    event: >-
+      DOGE arrives at the agency and notifies the entire staff of IMLS that they are being put on administrative leave up to 90 days and effective immediately
     named:
     - Nate Cavanaugh
     - Gavin Hamrick
-    source: https://bsky.app/profile/marisakabas.bsky.social
+    source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.1.1_2.pdf
+    case_no: 1:25-cv-00128
     agency: IMLS
     id: oGkzQb5Y
   - date: 2025-03-31
@@ -2163,6 +2165,20 @@
     source: https://news.artnet.com/art-world/doge-decimates-institute-museum-library-services-imls-2626543
     agency: IMLS
     id: CK2DtEca
+  - date: 2025-04-02
+    type: disruption
+    event: DOGE terminates 15 grants under its "Grants to States" program
+    source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.35.3_1.pdf
+    case_no: 1:25-cv-00128
+    agency: IMLS
+    id: 1IOyNuWv
+  - date: 2025-04-09
+    type: disruption
+    event: DOGE terminates most of its remaining grants (over 1000)
+    source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.35.3_1.pdf
+    case_no: 1:25-cv-00128
+    agency: IMLS
+    id: 6W6tefIG
 
 - name: Inter-American Foundation
   id: IAF
@@ -2368,7 +2384,32 @@
 - name: Minority Business Development Agency
   id: MBDA
   slug: mbda
-  events: []
+  events:
+  - date: 2025-04-09
+    type: disruption
+    event: All but 5 employees are sent expedited 30-day termination notices and placed on immediate administrative leave
+    source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.35.4_1.pdf
+    case_no: 1:25-cv-00128
+    agency: MBDA
+    id: 6j9ucehC
+  - date: 2025-04-09~
+    type: disruption
+    fuzz: Date is unspecified
+    event: The remaining 5 employees of the MBDA are transferred out of the agency
+    source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.35.4_1.pdf
+    case_no: 1:25-cv-00128
+    agency: MBDA
+    id: 36tNGfZ7
+  - date: 2025-04-17
+    type: disruption
+    event: According to a sworn declaration by an employee of MBDA, Nate Cavanaugh sends emails terminating MBDA grants under the authority of Keith Sonderling
+    named:
+    - Nate Cavanaugh
+    - Keith Sonderling
+    source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.45.1.pdf
+    case_no: 1:25-cv-00128
+    agency: MBDA
+    id: 3Jza7CNg
 
 - name: National Aeronautics and Space Administration
   id: NASA
@@ -2389,6 +2430,14 @@
     source: https://www.theatlantic.com/technology/archive/2025/02/doge-god-mode-access/681719/
     agency: NASA
     id: ZzPoLUUi
+  - date: 2025-03-14
+    type: report
+    event: ProPublica reports that Scott Coulter has "wide access to internal databases at NASA"
+    named:
+    - Scott Coulter
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Scott-Coulter
+    agency: NASA
+    id: vfRpqtC4
   - date: 2025-03-14
     type: report
     event: >-
@@ -3228,6 +3277,7 @@
   - date: 2025-02-14
     type: report
     event: Leland Dudek is placed on administrative leave while under investigation that he committed inappropriate actions to help DOGE
+    case_no: 1:25-cv-00596
     named:
     - Leland Dudek
     source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
@@ -3237,10 +3287,23 @@
     type: report
     event: SSA Staff express concern to Acting Commissioner King that Bobba is accessing information remotely and in an insecure location (the OPM)
     source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
+    case_no: 1:25-cv-00596
     named:
     - Akash Bobba
     agency: SSA
     id: 7nTYjRY5
+  - date: 2025-02-15
+    type: report
+    event: >-
+      Frustrated with the questions and concerns about technical issues with the sandbox NUMIDENT data, Mike Russo goes to complain to the chief CIO in
+      the office of the OMB
+    source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
+    named:
+    - Mike Russo
+    - Akash Bobba
+    case_no: 1:25-cv-00596
+    agency: SSA
+    id: 2yiF5Rth
   - date: 2025-02-16
     type: disruption
     event: >-

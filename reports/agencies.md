@@ -58,45 +58,48 @@
 - people:
   - **Jeremy Lewin** (2025-02-06) (detailed from GSA)
   - **Luke Farritor** (2025-02-07 - 2025-03-04) (detailed from GSA)
+  - **Gavin Kliger** (2025-02-07 - 2025-05-08) (detailed from OPM)
   - **Nikhil Rajpal** (2025-02-07 - 2025-03-21) (detailed from OPM)
   - **Jordan Wick** (2025-02-07 - 2025-03-04) (detailed from DOGE)
   - **Chris Young** (2025-02-07) (detailed from OPM)
   - **Jordan Wick** (2025-03-05) Expert/Consultant
 - systems:
-    - Concur: Concur
+    - Agency Website
+        - Gavin Kliger **[read-write access]** 2025-03-08 - 2025-05-08
+    - Concur
         - Jordan Wick 2025-02-07 - 2025-03-28
-    - cfpb-physical-access: Physical Access Control
-        - Gavin Kliger 2025-02-07 - ongoing
-    - microsoft-ad: Microsoft Active Directory
-        - Gavin Kliger 2025-02-07 - ongoing
-        - Luke Farritor 2025-02-07 - 2025-03-04
-    - Entra: Microsoft Entra ID
-        - Luke Farritor **[admin access]** 2025-02-07 - 2025-03-04
-        - Jordan Wick **[admin access]** 2025-02-09 - 2025-03-05
-        - Gavin Kliger 2025-02-07 - ongoing
-    - HRConnect: HRConnect
+    - Data Insight
+        - Jordan Wick 2025-02-07 - 2025-03-28
+    - G-Invoicing
+        - Jordan Wick 2025-02-07 - 2025-03-28
+    - HRConnect
         - Jordan Wick **[read-write access]** 2025-02-07 - 2025-03-28
     - IPP: Invoice Processing Platform
         - Jordan Wick 2025-02-07 - 2025-03-28
-    - oneARC: Salesforce oneARC
-        - Jordan Wick 2025-02-07 - 2025-03-28
-    - PRISM: Procurement Request Information System Management
-        - Jordan Wick 2025-02-07 - 2025-03-28
-    - USAStaffing: USA Staffing
-        - Jordan Wick 2025-02-07 - 2025-03-28
-    - g-invoicing: G-Invoicing
-        - Jordan Wick 2025-02-07 - 2025-03-28
+    - Microsoft Active Directory
+        - Gavin Kliger 2025-02-07 - 2025-05-08
+        - Luke Farritor 2025-02-07 - 2025-03-04
+    - Microsoft Entra ID
+        - Luke Farritor **[admin access]** 2025-02-07 - 2025-03-04
+        - Jordan Wick **[admin access]** 2025-02-09 - 2025-03-05
+        - Gavin Kliger 2025-02-07 - 2025-05-08
+    - Microsoft Power Automate
+        - Gavin Kliger **[admin access]** 2025-04-12 - 2025-04-13
+        - Gavin Kliger **[admin access]** 2025-04-17 - 2025-04-17
+    - Microsoft Sharepoint
+        - Gavin Kliger **[admin access]** 2025-04-12 - 2025-05-08
     - OBI: Oracle Business Intelligence
         - Jordan Wick 2025-02-07 - 2025-03-28
-    - webTA: webTA
-        - Jordan Wick 2025-02-07 - ongoing
-    - data-insight: Data Insight
+    - Physical Access Control
+        - Gavin Kliger 2025-02-07 - 2025-05-08
+    - PRISM: Procurement Request Information System Management
         - Jordan Wick 2025-02-07 - 2025-03-28
-    - Sharepoint: Microsoft Sharepoint
-        - Gavin Kliger **[admin access]** 2024-04-12 - ongoing
-    - PowerAutomate: Microsoft Power Automate
-        - Gavin Kliger **[admin access]** 2025-04-12 - ongoing
-        - Gavin Kliger **[admin access]** 2025-04-17 - ongoing
+    - onrARC: Salesforce oneARC
+        - Jordan Wick 2025-02-07 - 2025-03-28
+    - USA Staffing
+        - Jordan Wick 2025-02-07 - 2025-03-28
+    - webTA
+        - Jordan Wick 2025-02-07 - ongoing
 
 # Census Bureau
 - slug: census
@@ -114,7 +117,7 @@
   - **Edward Coristine** (2025-02-19) Senior Advisor
   - **Kyle Schutt** (2025-02-19) Senior Advisor (detailed from DHS)
 - systems:
-    - MS-Office: Microsoft 365
+    - Microsoft 365
         - Edward Coristine **[admin access]** 2025-02-20 - ongoing
 
 # Department of Agriculture
@@ -122,6 +125,7 @@
 - people:
   - **Gavin Kliger** (2025-02-01~) (detailed from OPM)
   - **Jordan Wick** (2025-02-01~) (detailed from DOGE)
+  - **Michael Cole** (2025-02-XX)
 
 # Department of Defense
 - slug: defense
@@ -176,6 +180,12 @@
   - **Jon Koval** (2025-04-15) (detail)
   - **Payton Rehling** (2025-04-15) (detail)
   - **Adam Hoffman** (2025-04-21)
+- systems:
+    - ECAS: Executive Office for Immigration Review's Court and Appeals System
+        - Adam Hoffman 2025-04-21 - ongoing
+        - Marko Elez 2025-04-21 - ongoing
+        - Jon Koval 2025-04-21 - ongoing
+        - Payton Rehling 2025-04-21 - ongoing
 
 # Department of Education
 - slug: education
@@ -200,7 +210,7 @@
   - **Adam Ramada** (2025-02-04~ - 2025-02-08~) (detailed from DOGE)
   - **Ryan Riedel** (2025-02-07 - 2025-03-07) Chief Information Officer
 - systems:
-    - MS-Office: Microsoft 365
+    - Microsoft 365
         - Luke Farritor 2025-02-05 - ongoing
 
 # Department of Labor
@@ -219,20 +229,28 @@
     - DRA: Directory Resource Administrator
         - Marko Elez 2025-02-25 - ongoing
         - Miles Collins 2025-02-26 - ongoing
-    - EPACS: Enterprise Physical Access Control System
+    - ePACS: Enterprise Physical Access Control System
         - Marko Elez 2025-02-25 - ongoing
-    - HRConnect: HRConnect
+    - FLAG: Foreign Labor Application Gateway
+        - Aram Moghaddassi **[admin access]** 2025-04-18 - ongoing
+    - HRConnect
         - Miles Collins 2025-02-19 - ongoing
-    - PMS: Payment Management System
-        - Miles Collins  - ongoing
+    - NFJP: National Farmworker Jobs Program
+        - Miles Collins 2025-04-18 - ongoing
     - NCFMS: New Core Financial Management System
         - Miles Collins 2025-02-20 - ongoing
-    - UIDRR: Unemployment Insurance Data and Related Records
-        - Marko Elez 2025-03-21 - ongoing
-    - USAccess: USAccess
-        - Marko Elez 2025-02-25 - ongoing
     - OJC-EIS: Office of Job Corps Electronic Information System
         - Miles Collins 2025-03-20 - ongoing
+    - PMS: Payment Management System
+        - Miles Collins  - ongoing
+    - REO: Reentry Employment Opportunities
+        - Miles Collins 2025-04-18 - ongoing
+        - Aram Moghaddassi 2025-04-18 - ongoing
+        - Marko Elez 2025-04-18 - ongoing
+    - USAccess
+        - Marko Elez 2025-02-25 - ongoing
+    - Unemployment Insurance Data and Related Records
+        - Marko Elez 2025-03-21 - ongoing
 
 # Department of the Treasury
 - slug: treasury
@@ -245,9 +263,9 @@
   - **Todd Newnam** (2025-04-XX) Senior Advisor
   - **Linda Whitridge** (2025-04-XX)
 - systems:
-    - PAM-DB: Payment Automation Manager DB
+    - PAM DB: Payment Automation Manager DB
         - Marko Elez **[read-write access]** 2025-02-03 - 2025-02-06
-    - PAM-FS: Payment Automation Manager File System
+    - PAM filesystem: Payment Automation Manager File System
         - Marko Elez 2025-02-03 - 2025-02-06
     - SPS: Secure Payment System
         - Marko Elez **[read-write access]** 2025-02-05 - 2025-02-06
@@ -292,7 +310,7 @@
   - **Kyle Schutt**
   - **Edward Coristine** (2025-02-05)
 - systems:
-    - FEMA-GO: FEMA Grants Outcomes
+    - FEMA-Go: FEMA Grants Outcomes
         - Edward Coristine 2025-02-07 - ongoing
 
 # Federal Housing Finance Agency
@@ -313,6 +331,9 @@
   - **Anthony Armstrong** (2025-04-10) (detailed from OPM)
   - **Brooks Morgan** (2025-04-10) (detail)
   - **Adam Ramada** (2025-04-10) (detailed from DOGE)
+
+# Federal Mediation and Conciliation Service
+- slug: fmcs
 
 # Federal Trade Commission
 - slug: ftc
@@ -364,29 +385,29 @@
         - Rachel Riley 2025-02-03 - ongoing
         - Luke Farritor **[admin access]** 2025-02-28 - ongoing
         - Zach Terrell 2025-03-07 - ongoing
-    - Grants.gov: Grants.gov
-        - Conor Fennessy **[admin access]** 2025-02-28 - ongoing
-        - Luke Farritor **[admin access]** 2025-03-21 - 2025-04-18
-    - GrantSolutions: GrantSolutions
+    - FBIS: Financial Business Intelligence System
+        - Rachel Riley 2025-02-04 - ongoing
+        - Conor Fennessy 2025-03-07 - 2025-04-18
+        - Zach Terrell 2025-03-16 - ongoing
+    - GrantSolutions
         - Luke Farritor 2025-01-27 - ongoing
         - Aram Moghaddassi 2025-02-19 - ongoing
         - Rachel Riley 2025-02-20 - ongoing
         - Conor Fennessy 2025-02-28 - ongoing
         - Jeremy Lewin 2025-02-28 - ongoing
+    - Grants.gov
+        - Conor Fennessy **[admin access]** 2025-02-28 - ongoing
+        - Luke Farritor **[admin access]** 2025-03-21 - 2025-04-18
+    - UFMS: HHS Unified Financial Management System
+        - Zach Terrell 2025-03-18 - ongoing
     - NDNH: National Directory of New Hires
         - Marko Elez 2025-03-06 - 2025-04-18
         - Aram Moghaddassi 2025-03-06 - 2025-04-18
     - PMS: Payment Management System
         - Luke Farritor **[admin access]** 2025-01-22 - ongoing
         - Zach Terrell 2025-03-27 - ongoing
-    - UAC: Unaccompanied Alien Children (UAC) Portal
+    - UAC Portal: Unaccompanied Alien Children (UAC) Portal
         - Kyle Schutt 2025-03-21 - ongoing
-    - FBIS: Financial Business Intelligence System
-        - Rachel Riley 2025-02-04 - ongoing
-        - Conor Fennessy 2025-03-07 - 2025-04-18
-        - Zach Terrell 2025-03-16 - ongoing
-    - UFMS: HHS Unified Financial Management System
-        - Zach Terrell 2025-03-18 - ongoing
 
 # Housing and Urban Development
 - slug: hud
@@ -397,11 +418,11 @@
 - systems:
     - FASS-PH: Financial Assessment of Public Housing
         - Michael Mirski 2025-02-26 - ongoing
-    - HEMS: HUD Enforcement Management System
-        - Michael Mirski 2025-02-20 - ongoing
     - HUDCAPS: HUD Central Accounting and Processing System
         - Michael Mirski **[read-write access]** 2025-02-26 - ongoing
         - Scott Langmack **[read-write access]** 2025-02-26 - ongoing
+    - HEMS: HUD Enforcement Management System
+        - Michael Mirski 2025-02-20 - ongoing
     - IDIS: Integrated Disbursement and Information System
         - Michael Mirski 2025-02-26 - ongoing
     - LOCCS: Line of Credit Control System
@@ -443,6 +464,9 @@
 # Millennium Challenge Corporation
 - slug: mcc
 
+# Minority Business Development Agency
+- slug: mbda
+
 # National Aeronautics and Space Administration
 - slug: nasa
 - people:
@@ -454,6 +478,13 @@
 
 # National Endowment for the Humanities
 - slug: neh
+- people:
+  - **Nate Cavanaugh** (2025-03-13~) (detailed from GSA)
+  - **Justin Fox** (2025-03-13~) (detailed from GSA)
+- systems:
+    - Microsoft Entra ID
+        - Nate Cavanaugh **[admin access]** 2025-03-12~ - ongoing
+        - Justin Fox **[admin access]** 2025-03-12~ - ongoing
 
 # The National Gallery of Art
 - slug: national-gallery-art
@@ -467,7 +498,7 @@
   - **Nikhil Rajpal** (2025-02-04) (detailed from OPM)
   - **Bryton Shang** (2025-04-02) Senior Advisor
 - systems:
-    - GoogleDrive: Google Drive
+    - Google Drive
         - Nikhil Rajpal **[read-write access]** 2025-02-05 - ongoing
 
 # National Institute of Health
@@ -478,7 +509,9 @@
   - **Clark Minor** (2025-02-24) (detailed from HHS)
   - **Rachel Riley** (2025-02-24)
 - systems:
-    - EBS: EBS?
+    - eRA: NIH Grant Management System
+        - Luke Farritor 2025-01-27 - ongoing
+    - EBS: Oracle E-Business Suite
         - Rachel Riley 2025-02-24 - ongoing
         - Luke Farritor 2025-02-28 - ongoing
         - Conor Fennessy 2025-02-28 - 2025-04-18
@@ -486,8 +519,6 @@
         - Rachel Riley 2025-02-24 - ongoing
         - Luke Farritor 2025-02-28 - ongoing
         - Conor Fennessy 2025-02-28 - ongoing
-    - eRA: NIH Grant Management System
-        - Luke Farritor 2025-01-27 - ongoing
 
 # National Institute of Standards and Technology
 - slug: nist
@@ -574,6 +605,24 @@
   - **SSA-11** (2025-03-16) Expert
   - **SSA-2 (Scott Coulter)** (2025-03-24) Chief Information Officer
   - **Mike Russo** (2025-03-25) Senior Advisor
+- systems:
+    - IRON Website
+        - SSA-5 2025-03-12 - ongoing
+    - MBR: Master Beneficiary Record
+        - {sr.doge_alias_id} (Jon Koval) 2025-03-17 - ongoing
+        - {sr.doge_alias_id} (Marko Elez) 2025-03-17 - ongoing
+        - {sr.doge_alias_id} (Payton Rehling) 2025-03-17 - ongoing
+    - NUMIDENT: NUMIDENT files
+        - Akash Bobba 2025-02-10 - ongoing
+        - {sr.doge_alias_id} (Jon Koval) 2025-03-17 - ongoing
+        - {sr.doge_alias_id} (Marko Elez) 2025-03-17 - ongoing
+        - {sr.doge_alias_id} (Payton Rehling) 2025-03-17 - ongoing
+    - PSSNAP: PSSNAP
+        - {sr.doge_alias_id} (Payton Rehling) 2025-03-14 - ongoing
+    - SSR: Supplemental Security Record master records
+        - {sr.doge_alias_id} (Jon Koval) 2025-03-17 - ongoing
+        - {sr.doge_alias_id} (Marko Elez) 2025-03-17 - ongoing
+        - {sr.doge_alias_id} (Payton Rehling) 2025-03-17 - ongoing
 
 # State Department
 - slug: state
@@ -618,6 +667,18 @@
   - **Aram Moghaddassi**
   - **Payton Rehling** (detailed from DHS)
   - **Kyle Schutt**
+- systems:
+    - CIS: Central Index System
+        - Aram Moghaddassi 2025-03-17 - ongoing
+        - Payton Rehling 2025-03-25 - ongoing
+    - ELIS: Electronic Immigration System
+        - Aram Moghaddassi 2025-03-17 - ongoing
+        - Payton Rehling 2025-03-25 - ongoing
+    - SAVE: SAVE
+        - {sr.doge_alias_id} (Marko Elez) 2025-03-15 - ongoing
+    - DBIS: USCIS Data Business Intelligence Services
+        - Aram Moghaddassi 2025-03-17 - ongoing
+        - Payton Rehling 2025-03-25 - ongoing
 
 # US Institute of Peace
 - slug: usip

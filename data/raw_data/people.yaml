@@ -36,9 +36,9 @@
   background: finance
   category: booster
   positions:
-  - id: treasury-akis
+  - id: irs-akis
     type: unknown
-    agency: Treasury
+    agency: IRS
     comment: No details, but mentioned in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: opm-akis
@@ -46,9 +46,9 @@
     agency: OPM
     comment: No details, but mentioned in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - id: irs-akis
+  - id: treasury-akis
     type: unknown
-    agency: IRS
+    agency: Treasury
     comment: No details, but mentioned in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
 
@@ -111,6 +111,12 @@
   background: finance
   category: leadership
   positions:
+  - id: detail-opm-dhs-armstrong
+    type: detailed
+    from: OPM
+    agency: DHS
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    comment: Find more definitive info for DHS link
   - id: opm-anthony-armstrong
     type: appointed
     agency: OPM
@@ -128,12 +134,6 @@
     comment: From FOIA documents
     documents:
     - opm-foia-doge-positions
-  - id: detail-opm-dhs-armstrong
-    type: detailed
-    from: OPM
-    agency: DHS
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    comment: Find more definitive info for DHS link
   - id: detail-opm-fdic-armstrong
     type: detailed
     from: OPM
@@ -475,18 +475,6 @@
   own_page: true
   category: wrecker
   positions:
-  - id: internal-dhs-uscis-coristine
-    type: internal
-    from: DHS
-    agency: USCIS
-    comment: No details, but in NYT roundup
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - id: internal-dhs-tsa-coristine
-    type: internal
-    from: DHS
-    agency: TSA
-    comment: No details, but in NYT roundup
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: gsa-edward-coristine
     agency: GSA
     type: appointed
@@ -495,6 +483,18 @@
     start_date_truth: inferred
     comment: Several documents have Coristine detailing from GSA, so assuming home agency. Also, not in FOIA release from OPM
     source: https://www.wired.com/story/elon-musk-lackeys-office-personnel-management-opm-neuralink-x-boring-stalin/
+  - id: internal-dhs-tsa-coristine
+    type: internal
+    from: DHS
+    agency: TSA
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-uscis-coristine
+    type: internal
+    from: DHS
+    agency: USCIS
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: detail-gsa-opm-coristine
     type: detailed
     agency: OPM
@@ -511,13 +511,6 @@
     start_date: 2025-02-03
     start_date_truth: reported
     source: https://xcancel.com/lbarronlopez/status/1886491276729544809
-  - id: internal-hhs-fema-edward-coristine
-    type: internal
-    from: DHS
-    agency: FEMA
-    start_date: 2025-02-05
-    start_date_truth: reported
-    source: https://www.washingtonpost.com/climate-environment/2025/02/07/musk-trump-fema-doge/
   - id: detail-gsa-dhs-coristine
     type: detailed
     from: GSA
@@ -526,6 +519,13 @@
     start_date_truth: reported
     comment: Reported by the Post, I'm going to assume this predated the FEMA access
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
+  - id: internal-hhs-fema-edward-coristine
+    type: internal
+    from: DHS
+    agency: FEMA
+    start_date: 2025-02-05
+    start_date_truth: reported
+    source: https://www.washingtonpost.com/climate-environment/2025/02/07/musk-trump-fema-doge/
   - id: detail-gsa-state-coristine
     type: detailed
     agency: State
@@ -687,6 +687,18 @@
   own_page: true
   category: wrecker
   positions:
+  - id: detail-dol-dhs-elez
+    type: detailed
+    agency: DHS
+    from: DOL
+    comment: No other info, just mentioned in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-cpb-elez
+    type: internal
+    agency: CBP
+    from: DHS
+    comment: No other info, just mentioned in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-ice-elez
     type: internal
     agency: ICE
@@ -702,18 +714,6 @@
   - id: internal-dhs-uscis-elez
     type: internal
     agency: USCIS
-    from: DHS
-    comment: No other info, just mentioned in NYT roundup
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - id: detail-dol-dhs-elez
-    type: detailed
-    agency: DHS
-    from: DOL
-    comment: No other info, just mentioned in NYT roundup
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - id: internal-dhs-cpb-elez
-    type: internal
-    agency: CBP
     from: DHS
     comment: No other info, just mentioned in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -748,14 +748,6 @@
     - onboard-ssa-employee-7
     name: Marko Elez
     alias: SSA-7
-  - id: internal-hhs-cms-marko-elez
-    type: internal
-    agency: CMS
-    from: HHS
-    start_date: 2025-03-05
-    start_date_truth: verified
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    comment: Reported access to system same day as start of detail to HHS
   - id: detail-dol-hhs-marko-elez
     type: detailed
     agency: HHS
@@ -764,6 +756,14 @@
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: No documentation, reported in court filing
+  - id: internal-hhs-cms-marko-elez
+    type: internal
+    agency: CMS
+    from: HHS
+    start_date: 2025-03-05
+    start_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    comment: Reported access to system same day as start of detail to HHS
 
 - name: Charles Ezell
   sort_name: Ezell
@@ -787,6 +787,12 @@
   own_page: true
   category: wrecker
   positions:
+  - id: detail-gsa-dhs-farritor
+    type: detailed
+    from: GSA
+    agency: DHS
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: gsa-luke-farritor
     type: appointed
     agency: GSA
@@ -794,21 +800,9 @@
     start_date_truth: inferred
     comment: Luke is detailed to HHS from GSA on 2025-01-21, so date here is inferred
     salary: "$0"
-  - id: detail-gsa-dhs-farritor
-    type: detailed
-    from: GSA
-    agency: DHS
-    comment: No details, but in NYT roundup
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-ice-farritor
     type: internal
     from: DHS
-    agency: ICE
-    comment: No details, but in NYT roundup
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - id: internal-dhs-uscis-farritor
-    type: internal
-    from: USCIS
     agency: ICE
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -816,6 +810,12 @@
     type: internal
     from: DHS
     agency: TSA
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-uscis-farritor
+    type: internal
+    from: USCIS
+    agency: ICE
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: detail-gsa-hhs-luke-farritor
@@ -1462,6 +1462,12 @@
   own_page: true
   category: wrecker
   positions:
+  - id: detail-opm-dhs-kliger
+    type: detailed
+    from: OPM
+    agency: DHS
+    comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: gavin-kliger-opm
     type: appointed
     agency: OPM
@@ -1485,12 +1491,6 @@
     documents:
     - opm-foia-doge-positions
     - onboard-opm-employee-5
-  - id: detail-opm-dhs-kliger
-    type: detailed
-    from: OPM
-    agency: DHS
-    comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-kliger
     type: detailed
     from: DHS
@@ -1515,6 +1515,15 @@
       No details, but listed in a NYT roundup and adding here. On 2/14, USDA head said they'd been there a couple of weeks. An email from him has the label
       OSEC - DC
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: detail-opm-cfpb-kliger
+    type: detailed
+    agency: CFPB
+    from: OPM
+    start_date: 2025-02-07
+    start_date_truth: verified
+    end_date: 2025-05-08
+    end_date_truth: verified
+    source: https://news.bloomberglaw.com/banking-law/doge-employee-leaves-cfpb-after-leading-trumps-mass-firing-plan
   - id: gavin-kliger-opm-2
     type: appointed
     agency: OPM
@@ -1966,18 +1975,24 @@
   own_page: true
   category: wrecker
   positions:
+  - id: detail-dol-dhs-mohgaddassi
+    type: detailed
+    agency: DHS
+    from: DOL
+    comment: No details, but reported in NYT roundup. Assuming detailed from DOL
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: dol-moghaddassi
     type: unknown
     agency: DOL
-  - id: internal-dhs-ice-mohgaddassi
+  - id: internal-dhs-cpb-mohgaddassi
     type: internal
-    agency: ICE
+    agency: CBP
     from: DHS
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - id: internal-dhs-uscis-mohgaddassi
+  - id: internal-dhs-ice-mohgaddassi
     type: internal
-    agency: USCIS
+    agency: ICE
     from: DHS
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -1987,15 +2002,9 @@
     from: DHS
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - id: detail-dol-dhs-mohgaddassi
-    type: detailed
-    agency: DHS
-    from: DOL
-    comment: No details, but reported in NYT roundup. Assuming detailed from DOL
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - id: internal-dhs-cpb-mohgaddassi
+  - id: internal-dhs-uscis-mohgaddassi
     type: internal
-    agency: CBP
+    agency: USCIS
     from: DHS
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -2101,15 +2110,6 @@
   age: 42
   category: wrecker
   positions:
-  - id: treasury-newnam
-    type: appointed
-    title: Senior Advisor
-    start_date: 2025-04-XX
-    start_date_truth: verified
-    fuzz: Identity is only revealed in a court filing
-    comment: NYT says he is a Senior Advisor
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.61.2.pdf
-    agency: Treasury
   - id: internal-treasury-irs-newnam
     type: internal
     title: Senior Advisor
@@ -2120,6 +2120,15 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.61.2.pdf
     agency: IRS
     from: Treasury
+  - id: treasury-newnam
+    type: appointed
+    title: Senior Advisor
+    start_date: 2025-04-XX
+    start_date_truth: verified
+    fuzz: Identity is only revealed in a court filing
+    comment: NYT says he is a Senior Advisor
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.61.2.pdf
+    agency: Treasury
 
 - name: Noah Peters
   sort_name: Peters
@@ -2288,15 +2297,15 @@
     from: SSA
     comment: No info, but listed in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - id: internal-dhs-uscis-rehling
-    type: detailed
-    agency: USCIS
-    from: DHS
-    comment: No info, but listed in NYT roundup
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-rehling
     type: detailed
     agency: TSA
+    from: DHS
+    comment: No info, but listed in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-uscis-rehling
+    type: detailed
+    agency: USCIS
     from: DHS
     comment: No info, but listed in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -2470,16 +2479,10 @@
   own_page: true
   category: wrecker
   positions:
-  - id: internal-dhs-uscis-schutt
+  - id: internal-dhs-cbp-schutt
     type: internal
     from: DHS
-    agency: USCIS
-    comment: No details, but in NYT roundup
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - id: internal-dhs-tsa-schutt
-    type: internal
-    from: DHS
-    agency: TSA
+    agency: CBP
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-fema-schutt
@@ -2488,16 +2491,22 @@
     agency: FEMA
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - id: internal-dhs-cbp-schutt
-    type: internal
-    from: DHS
-    agency: CBP
-    comment: No details, but in NYT roundup
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-ice-schutt
     type: internal
     from: DHS
     agency: ICE
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-tsa-schutt
+    type: internal
+    from: DHS
+    agency: TSA
+    comment: No details, but in NYT roundup
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: internal-dhs-uscis-schutt
+    type: internal
+    from: DHS
+    agency: USCIS
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: detail-gsa-dhs-schutt

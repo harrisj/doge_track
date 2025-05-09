@@ -31,9 +31,9 @@ people.each do |p|
   if p.key? :positions
     p[:positions] = p[:positions].sort_by do |pos| 
       if pos.key? :start_date
-        Date.edtf(pos[:start_date].to_s)
+        [Date.edtf(pos[:start_date].to_s), pos[:id]]
       else
-        Date.edtf("2025-01-20")
+        [Date.edtf("2025-01-20"), pos[:id]]
       end
     end
   end

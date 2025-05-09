@@ -33,7 +33,7 @@ agencies.each do |a|
 
   a[:events] ||= []
   a[:events].each do |e|
-    e[:agency] ||= a.id
+    e[:agency] ||= a[:id]
     events.append(validate_event(e))
   end
 
