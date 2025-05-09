@@ -12,30 +12,26 @@ aliases = YAML.unsafe_load_file(aliases_file, symbolize_names: true)
 named_by_agency = {}
 
 aliases.each do |a|
-  unless a.key? :id
-    raise "No ID found for #{a}"
-  end
+  raise "No ID found for #{a}" unless a.key? :id
 
-  unless a.key? :agency
-    raise "No agency found for #{a[:id]}"
-  end
+  raise "No agency found for #{a[:id]}" unless a.key? :agency
 
-  if a.key? :name
-    named_by_agency[a[:agency]] ||= {}
-    named_by_agency[a[:agency]][a[:name]] ||= []
-    named_by_agency[a[:agency]][a[:name]].append(a[:id])    
-  end
+  next unless a.key? :name
+
+  named_by_agency[a[:agency]] ||= {}
+  named_by_agency[a[:agency]][a[:name]] ||= []
+  named_by_agency[a[:agency]][a[:name]].append(a[:id])
 end
 
 multiple_mappings = []
 named_by_agency.each do |agency, alias_names|
-  alias_names.each do |name, aliases|
-    multiple_mappings.append({agency: agency, name: name, aliases: aliases}) if aliases.size > 1
+  alias_names.each do |name, name_aliases|
+    multiple_mappings.append({ agency: agency, name: name, aliases: name_aliases }) if name_aliases.size > 1
   end
 end
 
-if multiple_mappings.size > 0
-  error = multiple_mappings.map {|rec| "#{rec[:agency]}> #{rec[:name]} -> #{rec[:aliases].join(", ")}" }.join("; ")
+if multiple_mappings.size.positive?
+  error = multiple_mappings.map { |rec| "#{rec[:agency]}> #{rec[:name]} -> #{rec[:aliases].join(', ')}" }.join('; ')
   raise "Multiple mappings at same agency: #{error}"
 end
 

@@ -11,30 +11,34 @@ out_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'processed_people
 aliases = YAML.unsafe_load_file(aliases_file, symbolize_names: true)
 people = YAML.unsafe_load_file(people_file, symbolize_names: true)
 
-named_aliases = aliases.select {|a| a[:name] && a[:positions] }
-named_alias_positions = named_aliases.map {|a| a[:positions].map {|p| p[:name] = a[:name]; p[:alias] = a[:id]; p}}.flatten
+named_aliases = aliases.select { |a| a[:name] && a[:positions] }
+named_alias_positions = named_aliases.map do |a|
+  a[:positions].map do |p|
+    p[:name] = a[:name]
+    p[:alias] = a[:id]
+    p
+  end
+end.flatten
 
 people.each do |p|
   raise "No name for #{p}" unless p[:name]
 
-  if p[:positions]
-    # Delete aliased positions  
-    p[:positions].reject! {|pos| pos.key? :alias }
-  end
+  # Delete aliased positions
+  p[:positions]&.reject! { |pos| pos.key? :alias }
 
-  my_aliased_positions = named_alias_positions.select {|a| a[:name] == p[:name]}
+  my_aliased_positions = named_alias_positions.select { |a| a[:name] == p[:name] }
   if my_aliased_positions
     p[:positions] ||= []
     p[:positions] += my_aliased_positions
   end
 
-  if p.key? :positions
-    p[:positions] = p[:positions].sort_by do |pos| 
-      if pos.key? :start_date
-        [Date.edtf(pos[:start_date].to_s), pos[:id]]
-      else
-        [Date.edtf("2025-01-20"), pos[:id]]
-      end
+  next unless p.key? :positions
+
+  p[:positions] = p[:positions].sort_by do |pos|
+    if pos.key? :start_date
+      [Date.edtf(pos[:start_date].to_s), pos[:id]]
+    else
+      [Date.edtf('2025-01-20'), pos[:id]]
     end
   end
 end

@@ -5,16 +5,15 @@ require 'date'
 require 'edtf'
 require 'shortuuid'
 
-def validate_agency(a)
-end
+def validate_agency(agency); end
 
-def validate_event(e)
-  unless e[:id]
+def validate_event(event)
+  unless event[:id]
     id = SecureRandom.uuid
-    e[:id] = ShortUUID.shorten(id)[0...8]
+    event[:id] = ShortUUID.shorten(id)[0...8]
   end
 
-  return e
+  event
 end
 
 interagency_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'interagency.yaml')
@@ -23,9 +22,8 @@ agencies_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'agencies.ya
 interagency = YAML.unsafe_load(File.read(interagency_file), symbolize_names: true)
 agencies = YAML.unsafe_load(File.read(agencies_file), symbolize_names: true)
 
-events = []
-interagency.each do |e|
-  events.append(validate_event(e))
+events = interagency.map do |e|
+  validate_event(e)
 end
 
 agencies.each do |a|
@@ -51,7 +49,7 @@ sorted_events.each do |event|
     interagency_events.append(event)
   else
     agency_id = event_agencies[0]
-    agency = agencies.find {|a| a[:id] == agency_id }
+    agency = agencies.find { |a| a[:id] == agency_id }
     agency[:events].append(event)
   end
 end

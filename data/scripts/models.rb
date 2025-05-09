@@ -67,7 +67,7 @@ class Position < Sequel::Model
   many_to_one :agency
 
   def detail?
-    self.type == 'detailed'
+    type == 'detailed'
   end
 end
 

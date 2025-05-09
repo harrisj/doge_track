@@ -59,6 +59,18 @@
   sorn: https://www.govinfo.gov/content/pkg/FR-2022-04-28/pdf/2022-09091.pdf
   agency: SSA
 
+- name: Automated Biometric Identification System
+  type: internal
+  id: dhs-ident
+  acronym: IDENT
+  category: security
+  description: A system storing hundreds of millions of biometric identity points
+  link: https://www.dhs.gov/obim
+  comment: >-
+    can retrieve data for an individual tied to a Department of State visa application, a U.S. Customs and Border Protection log of an entry into the United
+    States, and an immigration status change logged by U.S. Citizenship and Immigration Services.
+  agency: DHS
+
 - name: Automated Standard Access For Payments
   type: internal
   id: asap
@@ -972,6 +984,14 @@
     name: Aram Moghaddassi
     ao_type: cio
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+
+- name: Homeland Advanced Recognition Technology
+  type: internal
+  acronym: HART
+  id: dhs-hart
+  category: security
+  description: A planned replacement for the IDENT system that has been troubled by delays and cost overruns
+  agency: DHS
 
 - name: Human Resources System
   id: hrs

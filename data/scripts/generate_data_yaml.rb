@@ -43,9 +43,7 @@ def generate_agencies_yaml
     out['events'] = events_for_output(agency.events)
 
     output_path = File.join(output_dir, "#{agency.slug}.yaml")
-    File.open(output_path, 'w') do |file|
-      file.write(YAML.dump(out, line_width: 100, stringify_names: true, header: false))
-    end
+    File.write(output_path, YAML.dump(out, line_width: 100, stringify_names: true, header: false))
   end
 end
 
@@ -55,15 +53,14 @@ def generate_people_yaml
 
   Person.eager_graph(:events, positions: :agency, system_roles: :govt_system).all.each do |p|
     out = {
-      'person': p.to_hash,
-      'positions': p.positions.map(&:to_hash),
-      'events': events_for_output(p.events),
-      'systems': roles_for_output(p.system_roles)
+      person: p.to_hash,
+      positions: p.positions.map(&:to_hash),
+      events: events_for_output(p.events),
+      systems: roles_for_output(p.system_roles)
     }
 
-    File.open(File.join(output_dir, "#{p.slug}.yaml"), 'w') do |file|
-      file.write(YAML.dump(out, line_width: 100, stringify_names: true, header: false))
-    end
+    File.write(File.join(output_dir, "#{p.slug}.yaml"),
+               YAML.dump(out, line_width: 100, stringify_names: true, header: false))
   end
 end
 
@@ -77,9 +74,7 @@ def generate_alias_yaml
     out[a.id]['events'] = events_for_output(a.events)
   end
 
-  File.open(output_file, 'w') do |file|
-    file.write(YAML.dump(out, line_width: 100, stringify_names: true, header: false))
-  end
+  File.write(output_file, YAML.dump(out, line_width: 100, stringify_names: true, header: false))
 end
 
 def generate_people_by_category
@@ -91,9 +86,7 @@ def generate_people_by_category
     out[p.category].append({ slug: p.slug, own_page: p.own_page, name: p.name })
   end
 
-  File.open(output_path, 'w') do |file|
-    file.write(YAML.dump(out, line_width: 100, stringify_names: true, header: false))
-  end
+  File.write(output_path, YAML.dump(out, line_width: 100, stringify_names: true, header: false))
 end
 
 if __FILE__ == $PROGRAM_NAME

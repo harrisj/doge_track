@@ -1,0 +1,27 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.3.0
+  hooks:
+  - id: trailing-whitespace
+  - id: end-of-file-fixer
+- repo: https://github.com/mattlqx/pre-commit-ruby
+  rev: v1.3.5
+  hooks:
+  - id: rubocop
+- repo: local
+  hooks:
+  - id: Validate source date
+    name: Validate the data files
+    files: data/raw_data
+    types_or: [ csv, yaml ]
+    entry: "bundle exec rake data:validate"
+    pass_filenames: false
+    language: system
+
+  - id: Rebuild the database
+    name: Rebuild the database
+    files: data/raw_data
+    types_or: [ csv, yaml ]
+    entry: "bundle exec rake data:rebuild_db"
+    pass_filenames: false
+    language: system

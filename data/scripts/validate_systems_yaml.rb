@@ -11,7 +11,7 @@ aliases = YAML.unsafe_load_file(aliases_file, symbolize_names: true)
 systems = YAML.unsafe_load_file(systems_file, symbolize_names: true)
 
 aliases_lookup = {}
-aliases.select {|a| a[:name] }.each {|a| aliases_lookup[a[:id]] = a[:name]}
+aliases.select { |a| a[:name] }.each { |a| aliases_lookup[a[:id]] = a[:name] }
 
 systems.each do |system_hash|
   raise "Missing ID for #{system_hash.inspect}" unless system_hash.key? :id
@@ -20,13 +20,10 @@ systems.each do |system_hash|
     raise "Missing ID for system role #{sa.inspect}" unless sa.key? :id
     raise "Must have name or alias for #{sa.inspect}" unless sa[:name] || sa[:alias]
 
-    if sa[:alias]
-      if aliases_lookup.key? sa[:alias]
-        sa[:name] = aliases_lookup[sa[:alias]]
-      else
-        sa[:name] = nil  # In case name was set before
-      end
-    end
+    next unless sa[:alias]
+
+    sa[:name] = nil
+    sa[:name] = aliases_lookup[sa[:alias]] if aliases_lookup.key? sa[:alias]
   end
 end
 

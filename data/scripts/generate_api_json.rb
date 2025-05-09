@@ -34,9 +34,7 @@ def generate_agencies_json
 
   out = agencies.map(&:to_hash)
 
-  File.open(output_path, 'w') do |file|
-    file.write(JSON.pretty_generate(out))
-  end
+  File.write(output_path, JSON.pretty_generate(out))
 
   output_dir = output_path = File.join(OUTPUT_DIR, 'agencies')
   FileUtils.mkdir_p(output_dir)
@@ -46,9 +44,7 @@ def generate_agencies_json
     out['events'] = events_for_output(a.events)
 
     output_path = File.join(output_dir, "#{a.slug}.json")
-    File.open(output_path, 'w') do |file|
-      file.write(JSON.pretty_generate(out))
-    end
+    File.write(output_path, JSON.pretty_generate(out))
   end
 end
 

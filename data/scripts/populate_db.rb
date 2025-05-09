@@ -26,7 +26,7 @@ def create_event(event_hash)
   event_hash[:date] = Date.edtf(event_hash[:date].to_s)
   event_hash[:sort_date] = Date.edtf(event_hash[:date].to_s).precise!
 
-  e = Event.create(event_hash.reject {|k, _| %i[case_no named named_aliases agency interagency_doge_reps].include?(k)})
+  e = Event.create(event_hash.except(:case_no, :named, :named_aliases, :agency, :interagency_doge_reps))
   if event_hash.key? :case_no
     court_case = Case[event_hash[:case_no]]
     e.case = court_case
@@ -42,8 +42,8 @@ def create_event(event_hash)
   end
 
   if event_hash.key? :interagency_doge_reps
-    agency_ids += event_hash[:interagency_doge_reps].keys.map {|k| k.to_s }
-    event_hash[:interagency_doge_reps].values.each do |ia_names|
+    agency_ids += event_hash[:interagency_doge_reps].keys.map(&:to_s)
+    event_hash[:interagency_doge_reps].each_value do |ia_names|
       names += Array(ia_names)
     end
   end
@@ -58,13 +58,13 @@ def create_event(event_hash)
     e.add_agency(a)
   end
 
-  e.save
+  e.save_changes
 end
 
 # Load Agencies
 agencies_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'agencies.yaml'), symbolize_names: true)
 agencies_yaml.each do |a|
-  Agency.create(a.reject {|k, _| k == :events })
+  Agency.create(a.except(:events))
   all_events += a.fetch(:events, [])
 end
 
@@ -72,14 +72,15 @@ end
 people_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'people.yaml'), symbolize_names: true)
 
 people_yaml.each do |p_hash|
-  p = Person.new(p_hash.reject { |k, _| %i[positions alias].include?(k) })
+  p = Person.new(p_hash.except(:positions, :alias))
 
   p_hash.fetch(:positions, []).each do |pos_hash|
     pos_hash.transform_keys!(alias: :doge_alias_id, from: :from_agency_id, agency: :agency_id)
     pos_hash[:name] = p.name
-    pos_hash[:documents] = pos_hash[:documents].join(" ") if pos_hash[:documents]  # FIXME: load documents as separate table
+    # FIXME: load documents as separate table
+    pos_hash[:documents] = pos_hash[:documents].join(' ') if pos_hash[:documents]
 
-    pos = Position.create(pos_hash) # .reject { |k, _| %i[from alias documents agency].include?(k) })
+    Position.create(pos_hash) # .reject { |k, _| %i[from alias documents agency].include?(k) })
 
     # if pos_hash.key? :agency
     #   a = Agency[pos_hash[:agency]]
@@ -92,7 +93,7 @@ people_yaml.each do |p_hash|
     # end
   end
 
-  p.save
+  p.save_changes
 end
 
 aliases_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'aliases.yaml'), symbolize_names: true)
@@ -108,16 +109,16 @@ aliases_yaml.each do |alias_hash|
   end
 
   a.evidence = alias_hash[:evidence].join("\n") if alias_hash.key? :evidence
-  a.save
+  a.save_changes
 
   # Positions with names have already been loaded
-  unless a.name
-    alias_hash.fetch(:positions, []).each do |pos_hash|
-      pos_hash.transform_keys!(alias: :doge_alias_id, from: :from_agency_id, agency: :agency_id)
-      pos_hash[:doge_alias_id] = a.id
-      pos_hash[:documents] = pos_hash[:documents].join(" ") if pos_hash[:documents]
-      Position.create(pos_hash)
-    end
+  next if a.name
+
+  alias_hash.fetch(:positions, []).each do |pos_hash|
+    pos_hash.transform_keys!(alias: :doge_alias_id, from: :from_agency_id, agency: :agency_id)
+    pos_hash[:doge_alias_id] = a.id
+    pos_hash[:documents] = pos_hash[:documents].join(' ') if pos_hash[:documents]
+    Position.create(pos_hash)
   end
 end
 
@@ -137,7 +138,7 @@ systems_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'systems.yaml'), symbol
 systems_yaml.each do |system_hash|
   input_hash = system_hash.transform_keys(alias: :doge_alias_id, agency: :agency_id)
 
-  s = GovtSystem.create(input_hash.reject { |k, _| %i[access serves].include?(k) })
+  s = GovtSystem.create(input_hash.except(:access, :serves))
 
   input_hash.fetch(:access, []).each do |access_hash|
     access_hash[:govt_system_id] = s.id
