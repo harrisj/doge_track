@@ -38,9 +38,11 @@ def generate_agencies_yaml
   output_dir = File.join(OUTPUT_DIR, 'agencies')
   FileUtils.mkdir_p(output_dir)
 
-  Agency.all.each do |agency|
+  Agency.eager(positions: :person, system_roles: :govt_system, events: %i[people agencies]).each do |agency|
     out = agency.to_hash
+    out['positions'] = agency.positions.map(&:to_hash)
     out['events'] = events_for_output(agency.events)
+    out['system_access'] = agency.system_roles.map(&:to_hash)
 
     output_path = File.join(output_dir, "#{agency.slug}.yaml")
     File.write(output_path, YAML.dump(out, line_width: 100, stringify_names: true, header: false))
@@ -51,15 +53,24 @@ def generate_people_yaml
   output_dir = File.join(OUTPUT_DIR, 'people')
   FileUtils.mkdir_p(output_dir)
 
-  Person.eager_graph(:events, positions: :agency, system_roles: :govt_system).all.each do |p|
-    out = {
-      person: p.to_hash,
-      positions: p.positions.map(&:to_hash),
-      events: events_for_output(p.events),
-      systems: roles_for_output(p.system_roles)
-    }
+  Person.eager(:events, positions: :agency, system_roles: :govt_system).all.each do |p|
+    out = p.to_hash
+    out['positions'] = p.positions.map(&:to_hash)
+    out['events'] = events_for_output(p.events)
+    out['system_access'] = p.system_roles.map(&:to_hash)
 
     File.write(File.join(output_dir, "#{p.slug}.yaml"),
+               YAML.dump(out, line_width: 100, stringify_names: true, header: false))
+  end
+end
+
+def generate_systems_yaml
+  output_dir = File.join(OUTPUT_DIR, 'systems')
+  p
+
+  GovtSystem.each do |s|
+    out = s.to_hash
+    File.write(File.join(output_dir, "#{s.id}.yaml"),
                YAML.dump(out, line_width: 100, stringify_names: true, header: false))
   end
 end
@@ -92,6 +103,7 @@ end
 if __FILE__ == $PROGRAM_NAME
   generate_agencies_yaml
   generate_people_yaml
+  generate_systems_yaml
   generate_alias_yaml
   generate_people_by_category
 end

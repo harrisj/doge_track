@@ -7,7 +7,9 @@
     "esbuild-dev": "node esbuild.config.js --watch"
   },
   "devDependencies": {
+    "bulma": "^1.0.4",
     "esbuild": "^0.19.2",
+    "fork-awesome": "^1.2.0",
     "glob": "^10.3.3",
     "postcss": "^8.4.29",
     "postcss-flexbugs-fixes": "^5.0.2",
@@ -15,7 +17,10 @@
     "postcss-load-config": "^4.0.1",
     "postcss-preset-env": "^9.1.2",
     "read-cache": "^1.0.0",
-    "sass": "^1.66.1",
+    "sass": "^1.87.0",
     "sass-loader": "^13.3.2"
+  },
+  "dependencies": {
+    "sass-web-fonts": "^2.1.0"
   }
 }

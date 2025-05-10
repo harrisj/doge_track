@@ -13,7 +13,7 @@ def events_for_output(events)
     e_out['people'] = e.people.map { |x| x.to_hash.slice(:slug, :name, :sort_name) }
 
     e_out['aliases'] = []
-    e.aliases.each do |a|
+    e.doge_aliases.each do |a|
       if a.person
         existing_record = e_out['people'].find { |p| p[:name] == a.name }
         existing_record[:alias] = a.id
@@ -30,6 +30,8 @@ end
 
 def generate_agencies_json
   agencies = Agency.all
+
+  FileUtils.mkdir_p(OUTPUT_DIR)
   output_path = File.join(OUTPUT_DIR, 'agencies.json')
 
   out = agencies.map(&:to_hash)

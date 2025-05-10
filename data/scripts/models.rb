@@ -17,7 +17,7 @@ class Agency < Sequel::Model
   one_to_many :positions
 
   one_to_many :doge_aliases
-  one_to_many :govt_systems
+
   one_to_many :system_roles
   many_to_many :cases, right_key: :case_no, left_key: :agency_id
 end

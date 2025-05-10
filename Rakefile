@@ -123,4 +123,13 @@ namespace :generate do
   task :api_data do
     ruby "#{SCRIPTS_DIR}/generate_api_json.rb"
   end
+
+  desc 'Run all generate tasks'
+  task all: %i[reports page_data api_data]
 end
+
+desc 'Run generate tasks for the content'
+task generate: 'generate:all'
+
+desc 'Clean and regenerate all the pages'
+task regenerate: ['data:rebuild_db', 'generate']
