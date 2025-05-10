@@ -1,0 +1,26 @@
+---
+layout: 'page'
+---
+{% render "page_title", title: "The Wreckers" %}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Agencies</th>
+    </tr>
+  </thead>
+  <tbody>
+
+{% assign wreckers = site.data.doge.people_by_category['wrecker'] %}
+{% for wrecker in wreckers %}
+  <tr>
+    {% assign person = site.data.doge.people[wrecker.slug] %}
+    <td>{{ person.name }}</td>
+    <td>{{ person.age }}</td>
+    <td>{{ person.positions | map: "agency_id" | uniq | sort | join: ", " }}</td>
+  </tr>
+{%  endfor %}
+  </tbody>
+</table>
