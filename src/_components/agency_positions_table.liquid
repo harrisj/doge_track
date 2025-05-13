@@ -1,29 +1,32 @@
 {%  assign agency_positions = agency.positions | where: 'agency_id', agency.id %}
 {%  assign children_positions = agency.positions | reject: 'agency_id', agency.id | group_by: 'name' %}
 
-<strong>{{ children_positions }}</strong>
-<table class="table is-size-7">
+<table class="table is-size-6">
   <thead>
     <tr>
-      <th>Agency</th>
+      {% if agency_column %}
+        <th>Agency</th>
+      {% endif %}
+      <th>Name</th>
       <th>Start Date</th>
       <th>End Date</th>
       <th>Type</th>
-      <th>Name</th>
-      <th>Title</th>
-      <th>Salary</th>
+      <th>Notes</th>
     </tr>
   </thead>
   <tbody>
     {% for pos in agency.positions %}
       <tr>
-        <th><abbr title="{{ pos.agency.name }}">{{ pos.agency.short_name }}</abbr></th>
+        {% if agency_column %}
+          <th><abbr title="{{ pos.agency.name }}">{{ pos.agency.short_name }}</abbr></th>
+          <td>{{ pos.person.name }}</td>
+        {%  else %}
+          <th>{{ pos.person.name }}</th>
+        {% endif %}
         <td>{{ pos.start_date }}</td>
         <td>{{ pos.end_date }}</td>
         <td>{{ pos.type }}{% if pos.from_agency != blank %} from <a href="/agencies/{{ pos.from_agency.slug }}">{{ pos.from_agency.short_name }}</a>{% endif %}</td>
-        <td>{{ pos.person.name }}</td>
         <td>{{ pos.title }}</td>
-        <td>{{ pos.salary }}</td>
       </tr>
     {% endfor %}
   </tbody>
