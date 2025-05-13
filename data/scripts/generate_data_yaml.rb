@@ -9,7 +9,7 @@ OUTPUT_DIR = File.join(File.dirname(__FILE__), '..', '..', 'src', '_data', 'doge
 def events_for_output(events)
   events.map do |e|
     e_out = e.to_hash
-    e_out['agencies'] = e.agencies.map { |a| a.to_hash.slice(:id, :slug, :name) }
+    e_out['agencies'] = e.agencies.map { |a| a.to_hash.slice(:id, :slug, :name, :short_name) }
     e_out['people'] = e.people.map { |x| x.to_hash.slice(:slug, :name, :sort_name) }
 
     e_out['aliases'] = []
@@ -26,6 +26,21 @@ def events_for_output(events)
   end
 end
 
+def positions_for_output(positions)
+  positions.map do |x|
+    out = x.to_hash
+    out['duration_summary'] = x.duration_summary
+    out['agency'] = { agency_id: x.agency.id, name: x.agency.name, short_name: x.agency.short_name }
+    if x.from_agency
+      out['from_agency'] =
+        { agency_id: x.from_agency.id, name: x.from_agency.name, short_name: x.from_agency.short_name }
+    end
+    out['person'] = x.person.to_hash unless x.person.nil?
+    out['alias'] = x.doge_alias.to_hash unless x.doge_alias.nil?
+    out
+  end
+end
+
 def roles_for_output(roles)
   roles.map do |r|
     e_out = r.govt_system.to_hash
@@ -38,11 +53,14 @@ def generate_agencies_yaml
   output_dir = File.join(OUTPUT_DIR, 'agencies')
   FileUtils.mkdir_p(output_dir)
 
-  Agency.eager(positions: :person, system_roles: :govt_system, events: %i[people agencies]).each do |agency|
+  Agency.eager(positions: :person, system_roles: :govt_system,
+               events: %i[people agencies]).where(parent_id: nil).each do |agency|
     out = agency.to_hash
-    out['positions'] = agency.positions.map(&:to_hash)
-    out['events'] = events_for_output(agency.events)
-    out['system_access'] = agency.system_roles.map(&:to_hash)
+    agency['children'] = agency.children.map(&:to_hash)
+
+    out['positions'] = positions_for_output(agency.all_positions)
+    out['events'] = events_for_output(agency.all_events)
+    out['system_access'] = agency.all_system_roles.map(&:to_hash)
 
     output_path = File.join(output_dir, "#{agency.slug}.yaml")
     File.write(output_path, YAML.dump(out, line_width: 100, stringify_names: true, header: false))

@@ -378,11 +378,11 @@
   - **Clark Minor** (2025-02-14) Chief Information Officer
   - **Conor Fennessy** (2025-02-20) (detailed from Education)
   - **Jeremy Lewin** (2025-02-21) (detailed from GSA)
+  - **Brad Smith** (2025-03-04) Senior Advisor
   - **Amy Gleason** (2025-03-04) Expert/Consultant
   - **Edward Coristine** (2025-03-05) (detailed from GSA)
   - **Marko Elez** (2025-03-05) (detailed from DOL)
   - **Aram Moghaddassi** (2025-03-05) (detailed from DOL)
-  - **Brad Smith** (2025-03-05) Senior Advisor
   - **Zach Terrell** (2025-03-06)
   - **Kyle Schutt** (2025-03-14) (detailed from GSA)
 - systems:
@@ -693,9 +693,6 @@
   - **Nate Cavanaugh** (2025-03-04 - 2025-03-24) (detailed from GSA)
   - **Kenneth Jackson** (2025-03-17) Acting President
   - **Nate Cavanaugh** (2025-03-25) President
-
-# US Digital Service
-- slug: usds
 
 # US Postal Service
 - slug: usps

@@ -733,7 +733,7 @@
 # Brad Smith
 - category: enabler
 - positions:
-    -  **HHS** (2025-03-05 to ??) Senior Advisor
+    -  **HHS** (2025-03-04 to ??) Senior Advisor
 
 # Keith Sonderling
 - category: enabler

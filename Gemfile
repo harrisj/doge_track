@@ -49,3 +49,5 @@ gem 'racc', '~> 1.8'
 gem 'rubocop', '~> 1.75', group: :development
 
 gem 'rubocop-sequel', '~> 0.4.1', group: :development
+
+gem 'bridgetown-lit-renderer', '= 2.1.0.beta2'

@@ -9,6 +9,9 @@ DB.create_table! :agencies do
   string :id, primary_key: true
   string :name, null: false
   string :slug, null: false, unique: true
+  string :short_name, null: false, unique: true
+  string :blurb
+  string :blurb_date
   boolean :doge_base, null: false, default: false
   string :parent_id
 end

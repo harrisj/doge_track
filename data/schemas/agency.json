@@ -25,6 +25,19 @@
             "type": "string",
             "format": "uri"
         },
+        "short_name": {
+            "description": "A short display name for the agency",
+            "type": "string"
+        },
+        "blurb": {
+            "description": "A bit of text describing the agency and DOGE's activities there",
+            "type": "string"
+        },
+        "blurb_date": {
+            "description": "When the blurb was written",
+            "type": "string",
+            "format": "date"
+        },
         "doge_base": {
             "description": "Is this an agency where DOGE is maintaining a permanent presence?",
             "type": "boolean"
@@ -39,7 +52,10 @@
     "required": [
         "name",
         "id",
-        "slug"
+        "slug",
+        "short_name",
+        "blurb",
+        "blurb_date"
     ],
     "additionalProperties": false
 }

@@ -1,10 +1,24 @@
 ---
 layout: 'page'
 ---
-<h1 class="is-size-2">Title</h1>
+{%  assign test_person = site.data.doge.people.luke-farritor %}
+{%  assign test_people_group = site.data.doge.people_by_category.support %}
+{%  assign test_agency = site.data.doge.agencies.hhs %}
 
-{% render "page_title", title: "Main Title Test" %}
+<h1 class="title is-size-2">Title</h1>
 
-<h1 class="is-size-2">Blurb</h1>
-<p class="has-text-justified is-family-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+{% render "page_title", title: test_agency.name %}
+
+<h1 class="title is-size-2">Blurb</h1>
+
+{% render "agency_blurb", blurb: test_agency.blurb, blurb_date: test_agency.blurb_date %}
+{% comment %} <h1 class="is-size-2">Position Card</h1>
+
+{%  for position in test_agency.positions %}
+{%  render "position_card", position: position %}
+{%  endfor %} {% endcomment %}
+
+<h1 class="title is-size-2">Agency Positions</h1>
+
+{%  render "agency_positions_table" agency: test_agency %}
 

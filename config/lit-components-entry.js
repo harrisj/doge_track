@@ -1,0 +1,1 @@
+import components from "$components/**/*.{lit.js,lit.js.rb}"

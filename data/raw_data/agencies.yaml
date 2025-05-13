@@ -3,12 +3,14 @@
 
 - name: AmeriCorps
   id: AmeriCorps
+  short_name: AmeriCorps
   slug: americorps
   events: []
 
 - name: Centers for Disease Control and Prevention
   id: CDC
   slug: cdc
+  short_name: CDC
   parent_id: HHS
   doge_base: true
   events:
@@ -19,23 +21,27 @@
       to meet for each category.
     type: report
     source: https://www.economist.com/united-states/2025/03/10/how-doge-is-driving-americas-public-health-guardians-mad
+    source_name: The Economist
     agency: CDC
     id: RopNFssL
   - date: 2025-02-06
     type: report
     event: DOGE staff arrive at CDC HQ in Atlanta
     source: https://www.fox5atlanta.com/news/elon-musks-doge-team-visits-cdc-atlanta-reports-say
+    source_name: FOX 5 Atlanta
     agency: CDC
     id: jC9DATQu
   - date: 2025-02-15
     type: disruption
     event: Roughly 750 probationary workers receive termination notices from the OPM
     source: https://www.economist.com/united-states/2025/03/10/how-doge-is-driving-americas-public-health-guardians-mad
+    source_name: The Economist
     agency: CDC
     id: Ucq6WnMM
   - date: 2025-02-17
     type: report
     event: A senior manager at CDC comes back from a meeting to find two men in Tesla shirts leaving her office who said they "fixed" her computer
+    source_name: The Economist
     source: https://www.economist.com/united-states/2025/03/10/how-doge-is-driving-americas-public-health-guardians-mad
     agency: CDC
     id: 8qLVbYJB
@@ -43,18 +49,21 @@
     type: report
     event: Staff at the CDC CIO's office report not being contacted by DOGE yet
     source: https://www.theatlantic.com/technology/archive/2025/02/doge-god-mode-access/681719/
+    source_name: The Atlantic
     agency: CDC
     id: 5aycrTMg
   - date: 2025-02-28
     type: disruption
     event: After a federal judge overrules the mass firing of probationary workers, 180 workers (out of 750) return to work
     source: https://www.economist.com/united-states/2025/03/10/how-doge-is-driving-americas-public-health-guardians-mad
+    source_name: The Economist
     agency: CDC
     id: 9TW4PD58
   - date: 2025-03-25
     type: disruption
     event: CDC claws back $11.4 billion in funds allocated to various state and community health departments for COVID response
     source: https://www.nbcnews.com/health/health-news/cdc-pulling-back-11b-covid-funding-sent-health-departments-us-rcna198006
+    source_name: NBC News
     agency: CDC
     id: ChWumxau
   - date: 2025-04-01
@@ -62,12 +71,13 @@
     event: >-
       HHS terminates a large number of staff at CDC in the name of cost savings and realignment, with the HHS director, Robert F. Kennedy Jr., reportedly
       wanting to focus only on infectious diseases
-    source: https://www.nytimes.com/2025/04/01/us/politics/trump-federal-layoffs-health-food.html
+    source: The New York Times
     agency: CDC
     id: AeHQsaCe
 
 - name: Centers for Medicare and Medicaid Services
   id: CMS
+  short_name: CMS
   slug: cms
   parent_id: HHS
   doge_base: true
@@ -76,12 +86,14 @@
     type: report
     event: DOGE staff reportedly arrive at CMS HQ and are granted access to the CALM system, but sources deny they have access to HIGLAS
     source: https://www.wsj.com/politics/elon-musk-doge-medicare-medicaid-fraud-e697b162
+    source_name: Wall Street Journal
     agency: CMS
     id: mKix9GPm
   - date: 2025-02-05
     type: official
     event: CMS releases a press release stating that two agency veterans have been assigned to work with DOGE
     source: https://www.cms.gov/newsroom/press-releases/cms-statement-collaboration-doge
+    source_name: CMS Press Release
     agency: CMS
     id: HRb5mWmM
   - date: 2025-03-29
@@ -96,12 +108,14 @@
     - Amy Gleason
     agency: CMS
     id: iDxrzxfp
+    source_name: Legal Filing
     source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
   - date: 2025-04-07
     type: report
     event: Newly-appointed director of CMS, Dr. Mehmet Oz, suggests replacing front-line healthcare workers with AI avatars for cost savings
     agency: CMS
     source: https://www.wired.com/story/dr-oz-ai-health-care-medicare-cms-town-hall/
+    source_name: Wired
     id: 7o8RZJ6w
   - date: 2025-04-08
     type: legal
@@ -115,10 +129,15 @@
     agency: CMS
     id: BQGcBopa
     source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
+    source_name: Legal filing
 
 - name: Central Intelligence Agency
   id: CIA
+  short_name: CIA
   slug: cia
+  blurb: >-
+    As befitting a secretive intelligence agency, not much is known about DOGE's involvement at the CIA beyond Musk visitng the agency at the end of March.
+  blurb_date: 2025-05-12
   events:
   - date: 2025-03-31
     type: interagency
@@ -132,6 +151,7 @@
 
 - name: Commerce Department
   id: Commerce
+  short_name: Commerce
   slug: commerce
   doge_base: true
   events:
@@ -152,7 +172,17 @@
 
 - name: Consumer Financial Protection Bureau
   id: CFPB
+  short_name: CFPB
   slug: cfpb
+  blurb: >-
+    After several weeks of quiet, the DOGE wrecking crew descended on the CFPB on a Thursday in early February. By Friday, they had been granted admin access
+    to multiple systems with the support of acting director Russell Vought and had deleted the homepage for the website. By Monday, the entire workforce
+    of the agency had been place on administrative leave and blocked from accessing the building. Despite some still-lingering concerns about Musk gaining
+    access to proprietary financial data for his competitors, DOGE's main focus at the agency was making an example of it, with many of the crew who had
+    demolished USAID taking part in this effort. Their attempt at forcing mass layoffs on February 14 was stopped at only the last minute by a judge's temporary
+    restraining order, and DOGE assisted with another reduction-in-force (RIF) for 80% of the agency on April 17th, only for it to be overturned by the
+    same judge. Today, the CFPB is still alive, but in a precarious limbo that might make months or year to resolve.
+  blurb_date: 2025-05-12
   doge_base: true
   events:
   - date: 2025-02-06
@@ -357,12 +387,14 @@
 
 - name: Census Bureau
   id: Census
+  short_name: Census
   slug: census
   parent_id: Commerce
   events: []
 
 - name: Customs and Border Patrol
   id: CBP
+  short_name: CBP
   slug: cpb
   parent_id: DHS
   doge_base: true
@@ -370,6 +402,7 @@
 
 - name: Cybersecurity and Infrastructure Security Agency
   id: CISA
+  short_name: CISA
   slug: cisa
   parent_id: DHS
   doge_base: true
@@ -386,6 +419,7 @@
 
 - name: Department of Agriculture
   id: USDA
+  short_name: USDA
   slug: usda
   doge_base: true
   events:
@@ -447,6 +481,7 @@
 
 - name: Department of Defense
   id: DOD
+  short_name: Defense
   slug: defense
   doge_base: true
   events:
@@ -513,6 +548,7 @@
 
 - name: Department of the Interior
   id: DOI
+  short_name: Interior
   slug: interior
   doge_base: true
   events:
@@ -620,6 +656,7 @@
 
 - name: Department of Government Efficiency
   id: DOGE
+  short_name: DOGE
   slug: doge
   parent_id: EOP
   doge_base: true
@@ -1056,6 +1093,7 @@
 
 - name: Department of Homeland Security
   id: DHS
+  short_name: DHS
   slug: dhs
   doge_base: true
   events:
@@ -1119,6 +1157,7 @@
 
 - name: Department of Justice
   id: DOJ
+  short_name: DOJ
   slug: doj
   doge_base: true
   events:
@@ -1174,6 +1213,7 @@
 
 - name: Department of Education
   id: Education
+  short_name: Education
   slug: education
   doge_base: true
   events:
@@ -1267,6 +1307,7 @@
 
 - name: Department of Energy
   id: Energy
+  short_name: Energy
   slug: energy
   doge_base: true
   events:
@@ -1298,6 +1339,7 @@
 
 - name: Department of Labor
   id: DOL
+  short_name: DOL
   slug: labor
   doge_base: true
   events:
@@ -1380,6 +1422,7 @@
 
 - name: Department of the Treasury
   id: Treasury
+  short_name: Treasury
   slug: treasury
   doge_base: true
   events:
@@ -1513,6 +1556,7 @@
 
 - name: Department of Transformation
   id: DOT
+  short_name: DOT
   slug: dot
   doge_base: true
   events:
@@ -1525,6 +1569,7 @@
 
 - name: Environmental Protection Agency
   id: EPA
+  short_name: EPA
   slug: epa
   doge_base: true
   events:
@@ -1567,12 +1612,14 @@
 
 - name: Executive Office of the President
   id: EOP
+  short_name: White House
   slug: white-house
   doge_base: true
   events: []
 
 - name: Federal Aviation Administration
   id: FAA
+  short_name: FAA
   slug: faa
   parent_id: DOT
   events:
@@ -1616,6 +1663,7 @@
 
 - name: Federal Bureau of Investigation
   id: FBI
+  short_name: FBI
   slug: fbi
   parent_id: DOJ
   doge_base: true
@@ -1631,6 +1679,7 @@
 
 - name: Federal Emergency Management Agency
   id: FEMA
+  short_name: FEMA
   slug: fema
   parent_id: DHS
   doge_base: true
@@ -1645,11 +1694,13 @@
 
 - name: Federal Housing Finance Agency
   id: FHFA
+  short_name: FHFA
   slug: fhfa
   events: []
 
 - name: Federal Communications Commission
   id: FCC
+  short_name: FCC
   slug: fcc
   doge_base: true
   events:
@@ -1666,6 +1717,7 @@
 
 - name: Federal Deposit Insurance Commission
   id: FDIC
+  short_name: FDIC
   slug: fdic
   events:
   - date: 2025-04-10
@@ -1683,11 +1735,13 @@
 
 - name: Federal Mediation and Conciliation Service
   id: FMCS
+  short_name: FMCS
   slug: fmcs
   events: []
 
 - name: Federal Trade Commission
   id: FTC
+  short_name: FTC
   slug: ftc
   doge_base: true
   events:
@@ -1703,6 +1757,7 @@
 
 - name: Food and Drug Administration
   id: FDA
+  short_name: FDA
   slug: fda
   parent_id: HHS
   doge_base: true
@@ -1711,18 +1766,21 @@
     type: disruption
     event: The head of the medical device safety division at the FDA is fired amid mass layoffs
     source: https://www.statnews.com/2025/02/18/fda-trump-musk-doge-cuts-ross-segan-memo-medical-device-safety/
+    source_name: STAT News
     agency: FDA
     id: BazoqSxG
   - date: 2025-02-17
     type: disruption
     event: The head of the FDA's food safety division resigns because of 89 employees being indiscriminately fired
     source: https://thehill.com/policy/healthcare/5152084-fdas-food-safety-head-resigns/
+    source_name: The Hill
     agency: FDA
     id: RwfpHkqq
   - date: 2025-04-01
     type: disruption
     event: HHS terminates a large number of staff at FDA in the name of cost savings and realignment, as the new head of FDA is sworn in
     source: https://www.nytimes.com/2025/04/01/us/politics/trump-federal-layoffs-health-food.html
+    source_name: The New York Times
     agency: FDA
     id: GyTAGKsQ
   - date: 2025-04-21
@@ -1731,19 +1789,29 @@
       IT staff reported they were heavily targeted for layoffs despite complying with requests to provide information about critical systems, meaning much
       more of the FDA infrastructure is at risk of failure
     source: https://fedscoop.com/fda-tech-officials-complied-with-doges-requests-for-data-the-staff-reductions-still-came/
+    source_name: Fedscoop
     agency: FDA
     id: 34MikyKs
   - date: 2025-05-07
     type: report
     event: Representatives from OpenAI reported to have met with several DOGE associates at the FDA to discuss using AI for drug evaluation work
     source: https://www.wired.com/story/openai-fda-doge-ai-drug-evaluation/
+    source_name: Wired
     agency: FDA
     id: RXwHP9h5
 
 - name: General Services Administration
   id: GSA
+  short_name: GSA
   slug: gsa
   doge_base: true
+  blurb: >-
+    Once a relatively obscure agency that provided shared services and procurement services for the government, GSA became an integral part of DOGE's early-phase
+    plans for taking over parts of the federal bureaucracy precisely for those reasons. From the very first day of the Trump presidency, DOGE established
+    a sizable team at GSA. Some of these were focused on drastic cost-reduction efforts like cancelling government leases or unilaterally dropping the purchasing
+    limit of government purchase cards to curtail micro-purchases by government staff. GSA was also the base for many of DOGE's wrecking crews that were
+    detailed to other agencies, with agency leadership quickly creating a walled-off enclave protected by security guards exclusively for DOGE staff with
+    "A-level access."
   events:
   - date: 2025-01-29
     type: report
@@ -1962,7 +2030,17 @@
 - name: Health and Human Services
   id: HHS
   slug: hhs
+  short_name: HHS
   doge_base: true
+  blurb: >-
+    It has not always been easy to identify DOGE's activities within Health and Human Services. Early coverage following DOGE's activities at the children
+    of HHS – themselves massive agencies like CDC, CMS and FDA – often missed the forest for the trees. Thankfully, government-supplied declarations in
+    court cases like _AFL-CIO vs. DOL_ have provided details and context. HHS has been a target of every single one of DOGE's various initiatives. Early
+    cost-cutting efforts eliminated staff at the CDC and the FDA, which also was targeted for deregulation. As the parent of Medicare and Medicaid, CMS
+    was a natural target to be scrutinized for excessive costs, but DOGE has yet to make any wildly unsubstantiated claims there. More recently, DOGE has
+    been using some of the HHS databases to mine for data on immigrants, and their access to the medical claims of millions of Americans should be troubling
+    to all.
+  blurb_date: 2025-05-12
   events:
   - date: 2025-03-03
     type: report
@@ -1970,12 +2048,14 @@
       DOGE staff attempt to access "a system within a broader government database created to help enforce child support payments, which pulls a vast trove
       of information, including income data linked to nearly all workers"
     source: https://www.washingtonpost.com/business/2025/03/06/doge-hhs-ssa-data/
+    source_name: The Washington Post
     agency: HHS
     id: ceaPKABV
   - date: 2025-03-08
     type: disruption
     event: Federal staff who objected to DOGE getting access to NDNH are "no longer with the agency"
     source: https://www.washingtonpost.com/business/2025/03/08/hhs-doge-child-support
+    source_name: The Washington Post
     agency: HHS
     id: 8SdCKCzM
   - date: 2025-03-13
@@ -1984,6 +2064,7 @@
       As later reported in a declaration in AFL-CIO et al. vs. Department of Labor, HHS employee Mark Samburg finds DOGE staff at the agency listed in an
       online directory as Executive Engineers (and Rachel Riley as a Senior Advisor)
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.53.4.pdf
+    source_name: Legal filing
     case_no: 1:25-cv-00339
     named:
     - Edward Coristine
@@ -2000,6 +2081,7 @@
       HHS announces a large reorganization reducing HHS from 28 to 15 divisions and elimination 20,000 jobs (or 25% of total). The URL slug of the press
       release includes "DOGE" in it.
     source: https://www.hhs.gov/about/news/hhs-restructuring-doge.html
+    source_name: HHS Press Release
     agency: HHS
     id: 2bWLrWRv
   - date: 2025-03-28
@@ -2008,6 +2090,7 @@
       During an interview, the head of HHS reports that DOGE created the new organizational chart for the agency ahead of mass firings, says "we're not
       cutting scientists"
     source: https://www.newsnationnow.com/cuomo-show/rfk-defends-hhs-job-cuts/
+    source_name: News Nation
     agency: HHS
     id: RgFJHEtV
   - date: 2025-03-29
@@ -2024,6 +2107,7 @@
     agency: HHS
     id: KhdnaQWS
     source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
+    source_name: Legal filing
   - date: 2025-03-29
     type: report
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.4.pdf
@@ -2037,6 +2121,7 @@
     agency: HHS
     id: 2JU9Todn
     source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
+    source_name: Legal filing
   - date: 2025-04-01
     type: report
     event: >-
@@ -2046,10 +2131,20 @@
     named:
     - Amy Gleason
     agency: HHS
+    source_name: The San Francisco Chronicle
     id: mXTHtBac
 
 - name: Housing and Urban Development
   id: HUD
+  short_name: HUD
+  blurb: >-
+    DOGE's involvement at HUD has ostensibly been focused on fraud and waste rather than IT modernization. At the start, the DOGE staff at the agency focused
+    on cancelling contracts, especially if it could find opportunities to eliminate those focused on DEI or other initiatives to restore equity. There have
+    also been efforts to use highly sensitive HUD databases as a way to get access to extremely private information such as the income and wages of every
+    American, when earlier attempts to retrieve such information at Social Security and the IRS ran into legal opposition. DOGE claims this is needed for
+    the administration's anti-immigration efforts, but it's not hard to imagine many other shady scenarios for this data. Around the middle of April, DOGE
+    added a third staffer at the agency who is piloting effort to use a Large Language Model (LLM) to identify housing regulations to repeal.
+  blurb_date: 2025-05-12
   slug: hud
   doge_base: true
   events:
@@ -2140,6 +2235,7 @@
 
 - name: Immigration and Customs Enforcement
   id: ICE
+  short_name: ICE
   parent_id: DHS
   slug: ice
   doge_base: true
@@ -2147,6 +2243,7 @@
 
 - name: Institute for Museum and Library Services
   id: IMLS
+  short_name: IMLS
   slug: imls
   events:
   - date: 2025-03-19
@@ -2197,6 +2294,7 @@
 
 - name: Inter-American Foundation
   id: IAF
+  short_name: IAF
   slug: iaf
   events:
   - date: 2025-02-20
@@ -2245,6 +2343,7 @@
 
 - name: Internal Revenue Service
   id: IRS
+  short_name: IRS
   slug: irs
   parent_id: Treasury
   doge_base: true
@@ -2379,12 +2478,13 @@
       to handle the growing backlog of returns flagged with errors
     source: https://www.independent.co.uk/news/world/americas/us-politics/irs-mandatory-overtime-tax-returns-doge-b2747028.html
     source_name: The Independent
-    source_title: IRS workers forced into ‘mandatory overtime’ to deal with flagged returns after DOGE cuts
+    source_title: IRS workers forced into "mandatory overtime" to deal with flagged returns after DOGE cuts
     agency: IRS
     id: 7OPjt5xy
 
 - name: Millennium Challenge Corporation
   id: MCC
+  short_name: MCC
   slug: mcc
   events:
   - date: 2025-04-22
@@ -2398,6 +2498,7 @@
 
 - name: Minority Business Development Agency
   id: MBDA
+  short_name: MBDA
   slug: mbda
   events:
   - date: 2025-04-09
@@ -2428,6 +2529,7 @@
 
 - name: National Aeronautics and Space Administration
   id: NASA
+  short_name: NASA
   slug: nasa
   doge_base: true
   events:
@@ -2468,11 +2570,13 @@
 
 - name: National Archives
   id: NARA
+  short_name: NARA
   slug: nara
   events: []
 
 - name: National Endowment for the Humanities
   id: NEH
+  short_name: NEH
   slug: neh
   doge_base: true
   events:
@@ -2552,6 +2656,7 @@
 
 - name: The National Gallery of Art
   id: NationalGallery
+  short_name: National Gallery of Art
   slug: national-gallery-art
   events:
   - date: 2025-04-18
@@ -2563,6 +2668,7 @@
 
 - name: National Labor Relations Board
   id: NLRB
+  short_name: NLRB
   slug: nlrb
   events:
   - date: 2025-01-27
@@ -2706,6 +2812,7 @@
 
 - name: National Oceanic and Atmospheric Administration
   id: NOAA
+  short_name: NOAA
   slug: noaa
   parent_id: Commerce
   doge_base: true
@@ -2722,6 +2829,7 @@
 
 - name: National Institute of Health
   id: NIH
+  short_name: NIH
   slug: nih
   parent_id: HHS
   doge_base: true
@@ -2735,6 +2843,7 @@
     - Jeremy Lewin
     - Clark Minor
     source: https://www.wired.com/storxy/doge-is-inside-the-national-institutes-of-health-nih/
+    source_name: Wired
     agency: NIH
     id: khMRYKRf
   - date: 2025-02-24
@@ -2747,11 +2856,13 @@
     - Rachel Riley
     - Clark Minor
     source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
+    source_name: Wired
     agency: NIH
     id: 4Ffvq4fv
   - date: 2025-03-03
     type: report
     source: https://insidemedicine.substack.com/p/new-trump-controlled-nih-begins-targeted
+    source_name: Inside Medicine
     event: Joshua Hanley's name appeared in PDF metadata for grant cancellations sent out by the NIH to two researchers working on LGBTQ+-related scientific
       work
     named:
@@ -2762,17 +2873,20 @@
     type: disruption
     event: Access to purchase cards are restored at NIH for nonemergency purchases, but scientists face a huge backlog in processing orders for supplies.
     source: https://www.nytimes.com/2025/03/24/health/nih-doge-trump.html
+    source_name: The New York Times
     agency: NIH
     id: aUVDPFfS
   - date: 2025-04-01
     type: disruption
     event: HHS terminates a large number of staff at NIH in the name of cost savings and realignment, as the new head of NIH is sworn in
     source: https://www.nytimes.com/2025/04/01/us/politics/trump-federal-layoffs-health-food.html
+    source_name: The New York Times
     agency: NIH
     id: H3tom9FE
 
 - name: National Institute of Standards and Technology
   slug: nist
+  short_name: NIST
   id: NIST
   events:
   - date: 2025-02-14
@@ -2791,6 +2905,7 @@
 
 - name: National Science Foundation
   id: NSF
+  short_name: NSF
   slug: nsf
   events:
   - date: 2025-04-14
@@ -2819,6 +2934,7 @@
 
 - name: National Security Agency
   id: NSA
+  short_name: NSA
   slug: nsa
   parent_id: DOD
   events:
@@ -2840,6 +2956,7 @@
 
 - name: Office of the Director of National Intelligence
   id: ODNI
+  short_name: ODNI
   slug: odni
   events:
   - date: 2025-04-08
@@ -2853,6 +2970,7 @@
 
 - name: Office of Personnel Management
   id: OPM
+  short_name: OPM
   slug: opm
   doge_base: true
   events:
@@ -3181,6 +3299,7 @@
 
 - name: Peace Corps
   id: Peace
+  short_name: Peace Corps
   slug: peace-corps
   events:
   - date: 2025-04-04
@@ -3200,6 +3319,7 @@
 
 - name: Securities and Exchange Commission
   id: SEC
+  short_name: SEC
   slug: sec
   events:
   - date: 2025-03-28
@@ -3220,6 +3340,7 @@
 
 - name: Small Business Administration
   id: SBA
+  short_name: SBA
   slug: sba
   doge_base: true
   events:
@@ -3248,11 +3369,13 @@
 
 - name: The Smithsonian Institution
   id: Smithsonian
+  short_name: Smithsonian
   slug: smithsonian
   events: []
 
 - name: Social Security Administration
   id: SSA
+  short_name: SSA
   slug: ssa
   doge_base: true
   events:
@@ -3667,6 +3790,7 @@
 
 - name: State Department
   id: State
+  short_name: State
   slug: state
   doge_base: true
   events:
@@ -3682,12 +3806,14 @@
 
 - name: Transportation Security Administration
   id: TSA
+  short_name: TSA
   slug: tsa
   parent_id: DHS
   events: []
 
 - name: U.S. African Development Foundation
   id: USADF
+  short_name: USADF
   slug: usadf
   events:
   - date: 2025-02-19
@@ -3845,6 +3971,7 @@
 
 - name: US Agency for International Development
   id: USAID
+  short_name: USAID
   slug: usaid
   events:
   - date: 2025-01-27
@@ -3993,6 +4120,7 @@
 
 - name: US Citizenship & Immigration Services
   id: USCIS
+  short_name: USCIS
   slug: uscis
   parent_id: DHS
   events:
@@ -4010,6 +4138,7 @@
 
 - name: US Institute of Peace
   id: USIP
+  short_name: USIP
   slug: usip
   events:
   - date: 2025-02-24
@@ -4239,14 +4368,8 @@
     agency: USIP
     id: 1SIWo0cR
 
-- name: US Digital Service
-  id: USDS
-  slug: usds
-  parent_id: EOP
-  doge_base: true
-  events: []
-
 - name: US Postal Service
+  short_name: USPS
   id: USPS
   slug: usps
   doge_base: true
@@ -4266,6 +4389,7 @@
 
 - name: Veterans Administration
   id: VA
+  short_name: VA
   slug: va
   doge_base: true
   events:
@@ -4314,5 +4438,6 @@
 
 - name: Voice of America
   id: VOA
+  short_name: VOA
   slug: VOA
   events: []

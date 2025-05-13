@@ -1,0 +1,19 @@
+---
+layout: page
+
+---
+{% assign agency = site.data.doge.agencies.hhs %}
+
+{% render "agency_title", agency: agency %}
+
+{% render "agency_blurb", blurb: agency.blurb, blurb_date: agency.blurb_date %}
+
+<br/>
+
+<h2 class="title is-3">Events</h2>
+
+{% for event in agency.events %}
+  {% if event.type == 'report' or event.type == 'disruption' or event.type == 'official' %}
+    {% render 'event_report', event: event %}
+  {%  endif  %}
+{% endfor %}

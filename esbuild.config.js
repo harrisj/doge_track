@@ -1,4 +1,6 @@
 const build = require("./config/esbuild.defaults.js")
+const { plugins } = require("./config/esbuild-plugins.js")
+
 
 // You can customize this as you wish, perhaps to add new esbuild plugins.
 //
@@ -33,6 +35,7 @@ const build = require("./config/esbuild.defaults.js")
  */
 const esbuildOptions = {
   plugins: [
+    ...plugins,
     // add new plugins here...
   ],
   globOptions: {

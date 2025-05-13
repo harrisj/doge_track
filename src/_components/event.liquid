@@ -1,0 +1,7 @@
+{% if event.type == 'report' or event.type == 'official' or event.type == 'disruption' %}
+  {% render 'event_report', event: event %}
+{% elsif event.type == 'position' %}
+  {% render 'event_position', event: event %}
+{% elsif event.type == 'system' %}
+  {% render 'event_system', event: event %}
+{% endif %}
