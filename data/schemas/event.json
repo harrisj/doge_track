@@ -106,21 +106,30 @@
             "description": "The relevant case_no for legal events",
             "type": "string"
         },
-        "detail_info": {
-            "$comment": "Populated in the generated_events file",
-            "description": "The detail record inlined",
-            "$ref": "detail.json"
+        "system": {
+            "description": "If the event is linked to certain systems, they will be listed here",
+            "$comment": "The govt_systems/roles will be the definitive record for system access, but it can be useful to have events tracing it",
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "$comment": "Should I bring back an validator for system IDs?",
+                        "type": "string"
+                    }
+                }
+            ]
         },
-        "case_info": {
-            "$comment": "Populated in the generated_events file",
-            "description": "The case record inlined",
-            "$ref": "case.json"
+        "track_id": {
+            "description": "If the event is linked to a specific track, include it here",
+            "$ref": "valid_names.json#track_ids"
         }
     },
     "required": [
         "date",
         "event",
-        "agency",
         "source",
         "type"
     ],

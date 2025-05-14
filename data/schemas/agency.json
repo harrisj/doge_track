@@ -20,6 +20,10 @@
             "description": "A slug for the agency",
             "type": "string"
         },
+        "agency_page": {
+            "description": "The slug for the agency_page where this agency will be located (some pages might have multiple agencies)",
+            "type": "string"
+        },
         "link": {
             "description": "A link to an overview of the agency",
             "type": "string",
@@ -53,9 +57,7 @@
         "name",
         "id",
         "slug",
-        "short_name",
-        "blurb",
-        "blurb_date"
+        "short_name"
     ],
     "additionalProperties": false
 }

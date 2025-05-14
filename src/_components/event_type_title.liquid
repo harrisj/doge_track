@@ -1,0 +1,26 @@
+{% case type %}
+{% when 'access' %}
+  System Access
+{% when 'action' %}
+  Action
+{% when 'disruption' %}
+  Disruption
+{% when 'interagency' %}
+  Interagency Coordination
+{% when 'legal' %}
+  Legal Event
+{% when 'milestone' %}
+  Milestone
+{% when 'official' %}
+  Official Communication
+{% when "onboard" %}
+  Onboarding
+{% when "offboard" %}
+  Offboarding
+{% when 'report' %}
+  Report
+{% when 'sighting' %}
+  Sighting
+{% else %}
+  Other
+{% endcase %}

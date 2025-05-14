@@ -22,7 +22,7 @@ all_events = []
 def create_event(event_hash)
   raise "Event is missing a unique ID: #{event_hash.inspect}" unless event_hash.key? :id
 
-  event_hash.transform_keys!(event: :text)
+  event_hash.transform_keys!(event: :text, system: :system_id)
   event_hash[:date] = Date.edtf(event_hash[:date].to_s)
   event_hash[:sort_date] = Date.edtf(event_hash[:date].to_s).precise!
 

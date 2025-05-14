@@ -5,12 +5,20 @@ require 'date'
 require 'edtf'
 require 'shortuuid'
 
+cases_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'cases.yaml')
+cases = YAML.unsafe_load(File.read(cases_file), symbolize_names: true)
+
 def validate_agency(agency); end
 
-def validate_event(event)
+def validate_event(event, cases)
   unless event[:id]
     id = SecureRandom.uuid
     event[:id] = ShortUUID.shorten(id)[0...8]
+  end
+
+  if event[:case_no] && !event[:source_name]
+    event[:source_name] = 'Court Filing'
+    event[:source_title] = cases.find { |c| c[:case_no] == event[:case_no] }.fetch(:name)
   end
 
   event
@@ -23,7 +31,7 @@ interagency = YAML.unsafe_load(File.read(interagency_file), symbolize_names: tru
 agencies = YAML.unsafe_load(File.read(agencies_file), symbolize_names: true)
 
 events = interagency.map do |e|
-  validate_event(e)
+  validate_event(e, cases)
 end
 
 agencies.each do |a|
@@ -32,7 +40,7 @@ agencies.each do |a|
   a[:events] ||= []
   a[:events].each do |e|
     e[:agency] ||= a[:id]
-    events.append(validate_event(e))
+    events.append(validate_event(e, cases))
   end
 
   # Don't worry, we'll add them back

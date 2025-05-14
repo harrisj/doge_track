@@ -236,17 +236,17 @@
     "event_types": {
         "description": "Valid event types",
         "enum": [
-            "access_granted",
-            "access_changed",
-            "access_revoked",
+            "action",
+            "sighting",
             "disruption",
             "interagency",
             "legal",
-            "offboarded",
+            "onboard",
+            "offboard",
+            "access",
             "official",
-            "onboarded",
+            "milestone",
             "other",
-            "promotion",
             "report"
         ]
     },
@@ -290,6 +290,14 @@
             "isso",
             "other",
             "unknown"
+        ]
+    },
+    "track_ids": {
+        "enum": [
+            "personnel",
+            "spending",
+            "immigration",
+            "ai"
         ]
     }
 }

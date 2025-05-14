@@ -13,6 +13,7 @@ DB.create_table! :agencies do
   string :blurb
   string :blurb_date
   boolean :doge_base, null: false, default: false
+  string :agency_page
   string :parent_id
 end
 
@@ -33,8 +34,16 @@ DB.create_table! :positions do
 
   string :start_date
   string :start_date_truth
+  string :start_date_event
+  string :start_source
+  string :start_source_name
+
   string :end_date
   string :end_date_truth
+  string :end_date_event
+  string :end_source
+  string :end_source_name
+
   string :nte_date
   string :nte_date_truth
   string :signed_date
@@ -81,6 +90,8 @@ DB.create_table! :events do
   string :source_title
   string :source_name
   string :case_no
+  string :track_id
+  string :system_id
 end
 
 DB.create_table! :cases do

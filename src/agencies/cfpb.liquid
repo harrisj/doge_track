@@ -1,0 +1,20 @@
+---
+agency_id: cfpb
+---
+{% find agency in site.data.agencies, id == 'CFPB'  %}
+
+{% render "agency_title", agency: agency %}
+
+{% render "agency_blurb", blurb: agency.blurb, blurb_date: agency.blurb_date %} 
+
+<br/>
+
+<h2 class="title is-3">Positions</h2>
+
+{% find positions in site.data.positions, id == agency.id %}
+
+<h2 class="title is-3">Events</h2>
+
+{% find agency_events where site.data.events, agency_ids contains agency.id %}
+
+{% render 'event_timeline', events: agency_events %}
