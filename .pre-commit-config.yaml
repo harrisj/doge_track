@@ -5,7 +5,7 @@ repos:
   - id: rubocop
 - repo: local
   hooks:
-  - id: Validate
+  - id: validate
     name: Validate data files
     files: data/raw_data
     types_or: [ csv, yaml ]
@@ -13,8 +13,8 @@ repos:
     pass_filenames: false
     language: system
 
-  - id: Regenerate
-    name: Regeneate DB/files
+  - id: regenerate
+    name: Regenerate DB/files
     files: data/raw_data
     types_or: [ csv, yaml ]
     entry: "bundle exec rake -q regenerate"
