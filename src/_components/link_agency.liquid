@@ -1,7 +1,1 @@
-{% assign agency = pages.agencies[id] %}
-
-{% if agency and agency.path != 'none' %}
-  <a href="{{ agency.path }}"><span class="has-text-weight-bold"><abbr title="{{agency.name}}">{{ agency.id }}</agency></span></a>
-{% else %}
-  <span class="has-text-weight-bold">{{ id }}</span>
-{% endif %}
+{% assign agency = pages.agencies[id] %}{% if agency and agency.path != 'none' %}<a href="{{ agency.path }}"><abbr title="{{agency.name}}">{{ id }}</abbr></a>{% else %}{{ agency.id }}{% endif %}

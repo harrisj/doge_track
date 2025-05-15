@@ -1,7 +1,1 @@
-{% assign person = pages.people[name] %}
-
-{% if person and person.path != 'none' %}
-  <a href="{{ person.path }}"><span class="has-text-weight-bold">{{ person.name }}</span></a>
-{% else %}
-  <span class="has-text-weight-bold">{{ name }}</span>
-{% endif %}
+{% assign person = pages.people[name] %}{% if person and person.path != 'none' %}<a href="{{ person.path }}">{{ name }}</a>{% else %}{{ name }}{% endif %}

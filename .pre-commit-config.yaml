@@ -5,18 +5,18 @@ repos:
   - id: rubocop
 - repo: local
   hooks:
-  - id: Validate source date
-    name: Validate the data files
+  - id: Validate
+    name: Validate data files
     files: data/raw_data
     types_or: [ csv, yaml ]
-    entry: "bundle exec rake data:validate"
+    entry: "bundle exec rake -q data:validate"
     pass_filenames: false
     language: system
 
-  - id: Rebuild the database
-    name: Rebuild the database
+  - id: Regenerate
+    name: Regeneate DB/files
     files: data/raw_data
     types_or: [ csv, yaml ]
-    entry: "bundle exec rake data:rebuild_db"
+    entry: "bundle exec rake -q regenerate"
     pass_filenames: false
     language: system

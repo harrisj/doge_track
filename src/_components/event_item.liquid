@@ -25,7 +25,7 @@
         {% endif %}
         {% if event.people != blank %} 
             {% for person in event.people %}
-              <div class="level-item"><span class="icon is-small"><i class="fas fa-user"></i></span><a href="/people/{{ person.slug }}">{{ person.name }}</a></small></div>
+              <div class="level-item"><span class="icon is-small"><i class="fas fa-user"></i></span>{% render 'link_person', name: person.name, pages: pages %}</div>
             {% endfor %}
         {% endif %}
       </div>

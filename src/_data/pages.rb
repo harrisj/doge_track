@@ -17,7 +17,7 @@ Person.each do |p|
            "/people##{p.slug}"
          end
 
-  people_hash[p.name] = { name: p.name, slug: p.slug, path: path }
+  people_hash[p.name] = { name: p.name, slug: p.slug, path: path, sort_name: p.sort_name }
 end
 
 agency_hash = {}
