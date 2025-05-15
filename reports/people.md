@@ -68,6 +68,8 @@
     -  **Education** (2025-02-03 to NTE 2026-02-12) [as "ED-1"] 
     -  **SSA** (2025-02-03 to ??) [as "OPM-3"] 
         - NUMIDENT: NUMIDENT files: 2025-02-10 - ongoing
+    -  **SSA** (2025-02-09 to NTE 2026-02-08) [as "SSA-1"] Expert ED-00 $90025
+        - NUMIDENT: NUMIDENT files: 2025-02-10 - ongoing
 
 # Ashley Boizelle
 - category: support
@@ -92,11 +94,10 @@
         - Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
     -  **USIP** (2025-03-25 to ??) President
     -  **IMLS** (2025-03-31 to ??) 
+    -  **EXIM** (2025-05-14 to ??) 
 
 # Michael Cole
 - category: unknown
-- positions:
-    -  **USDA** (2025-02-XX to ??) 
 
 # Miles Collins
 - category: wrecker
@@ -116,7 +117,7 @@
 # Sam Corcos
 - category: wrecker
 - positions:
-    -  **IRS** (2025-02-28 to 2025-05-06~) 
+    -  **IRS** (2025-02-28 to 2025-05-06~) Senior Advisor for Technology and Modernization volunteer
     -  **IRS** (2025-05-06~ to ??) Chief Information Officer
 
 # Edward Coristine
@@ -260,12 +261,12 @@
     -  **DOD** (2025-04-25 to ??) Senior Advisor
 
 # Mattieu Gamache-Asselin
-- category: wrecker
+- category: unknown
 - positions:
     -  **HHS** (2025-01-XX to 2025-01-XX) Senior Advisor - DOGE
 
 # Joe Gebbia
-- category: wrecker
+- category: unknown
 - positions:
     -  **OPM** (2025-02-18 to ??) Expert ED-00
 
@@ -365,7 +366,7 @@
 - category: booster
 
 # Raj Jegannathan
-- category: wrecker
+- category: unknown
 - positions:
     -  **GSA** (2025-04-24~ to ??) 
 
@@ -406,7 +407,7 @@
         - Microsoft Sharepoint **[admin access]**: 2025-04-12 - 2025-05-08
         - Microsoft Power Automate **[admin access]**: 2025-04-17 - 2025-04-17
     -  **OPM** (2025-02-18 to ??) **Senior Advisor to the Director for Information Technology** $195,200
-    -  **IRS** (2025-02-19 to 2025-04-18) 
+    -  **IRS** (2025-02-19 to 2025-04-17) 
     -  **FTC** (2025-03-28~ to ??) 
 
 # Keenan Kmiec
@@ -428,7 +429,8 @@
 # Tom Krause
 - category: enabler
 - positions:
-    -  **Treasury** (2025-02-09 to NTE 2025-04-10)  volunteer
+    -  **Treasury** (2025-01-23 to 2025-02-12) Senior Advisor for Technology and Modernization volunteer
+    -  **Treasury** (2025-02-13 to NTE 2025-07-03)  GS-15
 
 # Scott Kupor
 - category: enabler
@@ -485,6 +487,7 @@
 - category: wrecker
 - positions:
     -  **FBI** (2025-03-30~ to ??) Senior Advisor
+    -  **OPM** (2025-03-XX to ??) Senior Advisor
     -  **FCC** (2025-04-04 to ??) 
 
 # Ted Malaska
@@ -514,6 +517,8 @@
 
 # Katie Miller
 - category: booster
+- positions:
+    -  **DOGE** (2025-01-20 to ??) 
 
 # Clark Minor
 - category: enabler
@@ -569,6 +574,7 @@
 - category: wrecker
 - positions:
     -  **OPM** (2025-01-28 to ??) Expert ED-00
+    -  **FBI** (2025-01-29 to ??) 
 
 # Brooks Morgan
 - category: wrecker
@@ -584,8 +590,13 @@
 # Todd Newnam
 - category: wrecker
 - positions:
+    -  **Treasury** (2025-03-06 to ??) Senior Advisor GS-15
     -  **IRS** (2025-04-XX to ??) Senior Advisor
-    -  **Treasury** (2025-04-XX to ??) Senior Advisor
+
+# Donald Park
+- category: wrecker
+- positions:
+    -  **EXIM** (2025-05-14 to ??) 
 
 # Noah Peters
 - category: support
@@ -793,11 +804,12 @@
 # Linda Whitridge
 - category: wrecker
 - positions:
-    -  **Treasury** (2025-04-XX to ??) 
+    -  **Treasury** (2025-02-25 to ??)  GS-12
 
 # Jordan Wick
 - category: wrecker
 - positions:
+    -  **DOGE** (2025-01-20~ to ??) 
     -  **USDA** (2025-02-01~ to ??) 
     -  **CFPB** (2025-02-07 to 2025-03-04) 
         - Concur: 2025-02-07 - 2025-03-28
@@ -838,7 +850,7 @@
     -  **Treasury** (2025-02-20 to ??) 
 
 # Chris Young
-- category: enabler
+- category: wrecker
 - positions:
     -  **OPM** (2025-01-30 to ??) Expert ED-00
     -  **CFPB** (2025-02-07 to ??) 

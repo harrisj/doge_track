@@ -57,7 +57,6 @@
   slug: jacob-altik
   age: 32
   background: lawyer
-  own_page: true
   category: wrecker
   positions:
   - id: opm-jacob-altik
@@ -256,7 +255,6 @@
   slug: akash-bobba
   age: 21
   background: coder
-  own_page: true
   category: wrecker
   positions:
   - id: opm-3
@@ -308,6 +306,29 @@
     documents:
     - detail-20250212-opm-education-ed-1
     name: Akash Bobba
+  - id: ssa-employee-1
+    type: appointed
+    documents:
+    - onboard-ssa-employee-1
+    title: Expert
+    office: Office of the Chief Information Officer
+    pd_code: KNX0350
+    start_date: 2025-02-09
+    start_date_truth: verified
+    nte_date: 2026-02-08
+    nte_date_truth: verified
+    description: EXC APPT NTE
+    appt_type_code: 171
+    pay_grade: ED-00
+    series: '0301'
+    supervisory: false
+    salary: "$90025"
+    qualifications: >
+      Hands-on software engineer that is an expert in modern computer programming languages, cloud and other infrastructure, AI, etc. 5 years of experience
+      using numerous computer code languages, leadership of teams in technical, software design, and infrastructure areas.
+    agency: SSA
+    name: Akash Bobba
+    alias: SSA-1
 
 - name: Ashley Boizelle
   sort_name: Boizelle
@@ -351,7 +372,6 @@
   slug: nate-cavanaugh
   age: 28
   background: executive
-  own_page: true
   category: wrecker
   positions:
   - id: gsa-cavanaugh
@@ -405,24 +425,25 @@
     source: https://bsky.app/profile/marisakabas.bsky.social
     comment: DOGE put entire staff on admin leave and started cancelling grants, not many details
     agency: IMLS
+  - id: detail-gsa-exim-cavanaugh
+    type: detailed
+    agency: EXIM
+    from: GSA
+    comment: Assuming detail is from GSA
+    start_date: 2025-05-14
+    start_date_truth: reported
+    source: https://bsky.app/profile/marisakabas.bsky.social/post/3lp5iwrmfv22y
 
 - name: Michael Cole
   sort_name: Cole
   slug: michael-cole
-  comment: Still investigating if he's a DOGE member or not. Seems to be in Director's office and working with Gavin Kliger at USDA in February
-  positions:
-  - id: usda-cole
-    type: unknown
-    agency: USDA
-    start_date: 2025-02-XX
-    comment: He's showing up in some emails in February with Gavin Kliger and has same type of email tag in Secretary office
-    source:
+  category: unknown
+  positions: []
 
 - name: Miles Collins
   sort_name: Collins
   age: 36
   slug: miles-collins
-  own_page: true
   background: finance
   category: wrecker
   positions:
@@ -446,18 +467,22 @@
   slug: sam-corcos
   age: 36
   background: executive
-  own_page: true
   category: wrecker
   positions:
   - id: irs-corcos
-    type: unknown
+    type: consultant
     start_date: 2025-02-28
     start_date_truth: reported
+    title: Senior Advisor for Technology and Modernization
+    sge: true
+    salary: "$0"
     end_date: 2025-05-06~
     end_date_truth: inferred
     comment: Likely earlier involvement, maybe when Gavin Kliger started there; ends when became CIO
     source: https://www.washingtonpost.com/business/2025/03/01/doge-irs-tax-records-benefits/
     agency: IRS
+    documents:
+    - gov.uscourts.nysd.636609.144.0
   - id: irs-corcos-cio
     type: appointed
     start_date: 2025-05-06~
@@ -472,7 +497,6 @@
   slug: edward-coristine
   age: 19
   background: coder
-  own_page: true
   category: wrecker
   positions:
   - id: gsa-edward-coristine
@@ -684,7 +708,6 @@
   slug: marko-elez
   age: 25
   background: coder
-  own_page: true
   category: wrecker
   positions:
   - id: detail-dol-dhs-elez
@@ -784,7 +807,6 @@
   slug: luke-farritor
   age: 23
   background: coder
-  own_page: true
   category: wrecker
   positions:
   - id: detail-gsa-dhs-farritor
@@ -897,7 +919,6 @@
   slug: conor-fennessy
   age: 32
   background: finance
-  own_page: true
   category: wrecker
   positions:
   - id: gsa-fennessy
@@ -970,7 +991,6 @@
   slug: justin-fulcher
   age: 32
   background: coder
-  own_page: true
   category: wrecker
   positions:
   - id: dod-fulcher
@@ -996,7 +1016,7 @@
   slug: mattieu-gamache
   age: 34
   background: coder
-  category: wrecker
+  category: unknown
   positions:
   - id: hhs-gamache
     agency: HHS
@@ -1015,7 +1035,7 @@
   slug: joe-gebbia
   age: 43
   background: executive
-  category: wrecker
+  category: unknown
   positions:
   - id: opm-joe-gebbia
     agency: OPM
@@ -1379,7 +1399,7 @@
   sort_name: Jegannathan
   slug: raj-jegannathan
   background: executive
-  category: wrecker
+  category: unknown
   positions:
   - id: gsa-jegannathan
     type: appointed
@@ -1423,7 +1443,6 @@
   slug: cole-killian
   age: 24
   background: coder
-  own_page: true
   category: wrecker
   positions:
   - id: doge-killian
@@ -1459,7 +1478,6 @@
   slug: gavin-kliger
   age: 25
   background: coder
-  own_page: true
   category: wrecker
   positions:
   - id: detail-opm-dhs-kliger
@@ -1552,11 +1570,13 @@
     start_date_truth: verified
     nte_date: 2025-06-19
     nte_date_truth: inferred
-    end_date: 2025-04-18
+    end_date: 2025-04-17
     end_date_truth: reported
     signed_date: 2025-02-19
-    comment: He was forcibly removed from agency on 2025-04-18
+    comment: He was forcibly removed from agency on 2025-04-17
     source: https://www.taxnotes.com/research/federal/legislative-documents/congressional-tax-correspondence/treasury-official-sends-memo-doge-detail-crapo/7rl0x
+    documents:
+    - gov.uscourts.nysd.636609.144.0
   - id: detail-opm-ftc-kliger
     type: detailed
     from: OPM
@@ -1621,15 +1641,34 @@
   - id: onboard-treasury-thomas-krause
     type: consultant
     comment: Part-time
-    signed_date: 2025-02-03
-    start_date: 2025-02-09
+    start_date: 2025-01-23
     start_date_truth: verified
+    end_date: 2025-02-12
+    end_date_truth: verified
     nte_date: 2025-04-10
     nte_date_truth: verified
     agency: Treasury
+    office: Office of the Chief of Staff
+    title: Senior Advisor for Technology and Modernization
+    sge: true
     salary: "$0"
     documents:
     - onboard-treasury-thomas-krause
+    - gov.uscourts.nysd.636609.144.0
+  - id: appoint-treasury-thomas-krause
+    type: appointed
+    comment: Changed to a full-time position
+    start_date: 2025-02-13
+    start_date_truth: verified
+    nte_date: 2025-07-03
+    nte_date_truth: verified
+    agency: Treasury
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
+    pay_grade: GS-15
+    appt_type: Schedule C
+    sge: true
+    documents:
+    - gov.uscourts.nysd.636609.144.0
 
 - name: Scott Kupor
   sort_name: Kupor
@@ -1679,7 +1718,6 @@
   slug: jeremy-lewin
   age: 28
   background: lawyer
-  own_page: true
   category: wrecker
   positions:
   - id: gsa-jeremy-lewin
@@ -1744,7 +1782,6 @@
   slug: kendall-lindemann
   age: 24
   background: executive
-  own_page: true
   category: support
   positions:
   - id: doge-lindemann
@@ -1792,9 +1829,15 @@
 - name: Tarak Makecha
   sort_name: Makecha
   slug: tarak-makecha
-  own_page: true
   category: wrecker
   positions:
+  - id: opm-makecha
+    type: appointed
+    title: Senior Advisor
+    start_date: 2025-03-XX
+    source: https://www.pogo.org/investigations/inside-the-shadowy-crew-leading-the-governments-hr-office
+    comment: POGO has his resume and listing as an OPM staffer
+    agency: OPM
   - id: fbi-makecha
     type: detailed
     title: Senior Advisor
@@ -1882,19 +1925,23 @@
     agency: SEC
 
 - name: Katie Miller
-  sort_name: Miller, K
+  sort_name: Miller
   slug: katie-miller
   age: 33
   background: political
   category: booster
-  positions: []
+  positions:
+  - id: doge-miller
+    type: appointed
+    agency: DOGE
+    start_date: 2025-01-20
+    start_date_truth: inferred
 
 - name: Clark Minor
   sort_name: Minor
   slug: clark-minor
   age: 35
   background: coder
-  own_page: true
   category: enabler
   positions:
   - id: hhs-minor
@@ -1972,7 +2019,6 @@
   slug: aram-mohghaddassi
   age: 26
   background: coder
-  own_page: true
   category: wrecker
   positions:
   - id: detail-dol-dhs-mohgaddassi
@@ -2043,7 +2089,6 @@
   slug: justin-monroe
   age: 36
   background: coder
-  own_page: true
   category: wrecker
   positions:
   - id: opm-justin-monroe
@@ -2063,6 +2108,15 @@
     comment: Sourced from FOIA documents
     documents:
     - opm-foia-doge-positions
+  - id: detail-opm-fbi-monroe
+    start_date: 2025-01-29
+    start_date_truth: reported
+    type: detailed
+    agency: FBI
+    from: OPM
+    comment: Reported as an unidentified SpaceX employee is reported to be working as an advisor to the Director of the FBI, but alias figured out later
+    office: Office of the Director
+    source: https://www.nbcnews.com/politics/national-security/people-ties-musk-top-fbi-critic-are-advising-fbi-director-rcna189567
 
 - name: Brooks Morgan
   sort_name: Morgan
@@ -2110,6 +2164,20 @@
   age: 42
   category: wrecker
   positions:
+  - id: treasury-newnam
+    type: appointed
+    title: Senior Advisor
+    start_date: 2025-03-06
+    start_date_truth: verified
+    sge: false
+    appt_type: Schedule C
+    pay_grade: GS-15
+    fuzz: Identity is only revealed in a court filing, using ethics training date for start date
+    comment: NYT says he is a Senior Advisor
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
+    agency: Treasury
+    documents:
+    - gov.uscourts.nysd.636609.144.0
   - id: internal-treasury-irs-newnam
     type: internal
     title: Senior Advisor
@@ -2120,15 +2188,19 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.61.2.pdf
     agency: IRS
     from: Treasury
-  - id: treasury-newnam
-    type: appointed
-    title: Senior Advisor
-    start_date: 2025-04-XX
-    start_date_truth: verified
-    fuzz: Identity is only revealed in a court filing
-    comment: NYT says he is a Senior Advisor
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.61.2.pdf
-    agency: Treasury
+
+- name: Donald Park
+  sort_name: Park
+  slug: donald-park
+  background: finance
+  category: wrecker
+  positions:
+  - id: detail-exim-park
+    type: detailed
+    agency: EXIM
+    start_date: 2025-05-14
+    start_date_truth: reported
+    source: https://bsky.app/profile/marisakabas.bsky.social/post/3lp5iwrmfv22y
 
 - name: Noah Peters
   sort_name: Peters
@@ -2160,7 +2232,6 @@
   slug: nikhil-rajpal
   age: 30
   background: coder
-  own_page: true
   category: wrecker
   positions:
   - id: opm-nikhil-rajpal
@@ -2207,7 +2278,6 @@
   slug: adam-ramada
   age: 35
   background: finance
-  own_page: true
   category: wrecker
   positions:
   - id: doge-adam-ramada
@@ -2288,7 +2358,6 @@
   slug: payton-rehling
   age: 27
   background: coder
-  own_page: true
   category: wrecker
   positions:
   - id: detail-ssa-dhs-rehling
@@ -2476,7 +2545,6 @@
   slug: kyle-schutt
   age: 37
   background: coder
-  own_page: true
   category: wrecker
   positions:
   - id: internal-dhs-cbp-schutt
@@ -2538,7 +2606,6 @@
   sort_name: Sennott
   slug: riley-sennott
   background: coder
-  own_page: true
   category: wrecker
   positions:
   - id: gsa-sennott
@@ -2575,7 +2642,6 @@
   slug: ethan-shaotran
   age: 22
   background: coder
-  own_page: true
   category: wrecker
   positions:
   - id: gsa-ethan-shaotran
@@ -2647,7 +2713,6 @@
   slug: thomas-shedd
   age: 28
   background: coder
-  own_page: true
   category: enabler
   positions:
   - id: gsa-thomas-shedd
@@ -2937,10 +3002,15 @@
   positions:
   - id: treasury-whitridge
     type: unknown
-    start_date: 2025-04-XX
+    start_date: 2025-02-25
     start_date_truth: verified
-    fuzz: Identity is only revealed in a court filing
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.61.2.pdf
+    fuzz: Identity is only revealed in a court filing, using ethics training date as start for now
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
+    appt_type: Schedule C
+    pay_grade: GS-12
+    sge: false
+    documents:
+    - gov.uscourts.nysd.636609.144.0
     agency: Treasury
 
 - name: Jordan Wick
@@ -2948,9 +3018,14 @@
   slug: jordan-wick
   age: 28
   background: coder
-  own_page: true
   category: wrecker
   positions:
+  - id: doge-wick
+    type: appointed
+    agency: DOGE
+    start_date: 2025-01-20~
+    start_date_truth: guessed
+    comment: No details, but guessing based on government declaration had been detailed from DOGE to CFPB
   - id: detail-usda-wick
     type: detailed
     from: DOGE
@@ -3032,7 +3107,6 @@
   slug: ryan-wunderly
   age: 26
   background: coder
-  own_page: true
   category: wrecker
   positions:
   - id: irs-wunderly
@@ -3047,7 +3121,7 @@
   slug: chris-young
   age: 36
   background: political
-  category: enabler
+  category: wrecker
   positions:
   - id: opm-chris-young
     type: appointed

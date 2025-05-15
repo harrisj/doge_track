@@ -104,8 +104,11 @@
 # Census Bureau
 - slug: census
 
-# Customs and Border Patrol
+# Corporation for Public Broadcasting
 - slug: cpb
+
+# Customs and Border Patrol
+- slug: cbp
 - people:
   - **Marko Elez**
   - **Aram Moghaddassi**
@@ -125,7 +128,6 @@
 - people:
   - **Gavin Kliger** (2025-02-01~) (detailed from OPM)
   - **Jordan Wick** (2025-02-01~) (detailed from DOGE)
-  - **Michael Cole** (2025-02-XX)
 
 # Department of Defense
 - slug: defense
@@ -149,16 +151,18 @@
 - slug: doge
 - people:
   - **Amy Gleason** (2024-12-30 - 2024-02-18)
-  - **Cole Killian** (2025-01-20)
   - **Elon Musk** (2025-01-20)
+  - **Katie Miller** (2025-01-20)
+  - **Cole Killian** (2025-01-20)
+  - **Jordan Wick** (2025-01-20~)
   - **Adam Ramada** (2025-01-23)
   - **Alexandra Beynon** (2025-02-04~)
   - **Kendall Lindemann** (2025-02-10~)
   - **Amy Gleason** (2025-02-18) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
   - **Joshua Hanley** (2025-02-XX)
-  - **Justin Aimonetti** (2025-02-XX)
-  - **Joshua Fox** (2025-02-XX)
   - **Ashley Boizelle** (2025-02-XX)
+  - **Joshua Fox** (2025-02-XX)
+  - **Justin Aimonetti** (2025-02-XX)
 
 # Department of Homeland Security
 - slug: dhs
@@ -257,11 +261,12 @@
 - people:
   - **Baris Akis**
   - **Marko Elez** (2025-01-21 - 2025-02-06) Special Advisor (IT&M)
-  - **Tom Krause** (2025-02-09 - NTE 2025-04-10)
+  - **Tom Krause** (2025-01-23 - 2025-02-12) Senior Advisor for Technology and Modernization
+  - **Tom Krause** (2025-02-13)
   - **Ryan Wunderly** (2025-02-20)
+  - **Linda Whitridge** (2025-02-25)
+  - **Todd Newnam** (2025-03-06) Senior Advisor
   - **Roland Shen** (2025-04-18)
-  - **Todd Newnam** (2025-04-XX) Senior Advisor
-  - **Linda Whitridge** (2025-04-XX)
 - systems:
     - ASAP: Automated Standard Access For Payments
         - Marko Elez **[source-code access]** 2025-01-28 - ongoing
@@ -293,7 +298,13 @@
         - Cole Killian 2025-02-12 - ongoing
 
 # Executive Office of the President
-- slug: white-house
+- slug: eop
+
+# Export-Import Bank of the United States
+- slug: exim
+- people:
+  - **Nate Cavanaugh** (2025-05-14) (detailed from GSA)
+  - **Donald Park** (2025-05-14) (detail)
 
 # Federal Aviation Administration
 - slug: faa
@@ -306,6 +317,7 @@
 # Federal Bureau of Investigation
 - slug: fbi
 - people:
+  - **Justin Monroe** (2025-01-29) (detailed from OPM)
   - **Tarak Makecha** (2025-03-30~) Senior Advisor (detail)
 
 # Federal Emergency Management Agency
@@ -463,8 +475,8 @@
 - slug: irs
 - people:
   - **Baris Akis**
-  - **Gavin Kliger** (2025-02-19 - 2025-04-18) (detailed from OPM)
-  - **Sam Corcos** (2025-02-28 - 2025-05-06~)
+  - **Gavin Kliger** (2025-02-19 - 2025-04-17) (detailed from OPM)
+  - **Sam Corcos** (2025-02-28 - 2025-05-06~) Senior Advisor for Technology and Modernization
   - **Todd Newnam** (2025-04-XX) Senior Advisor
   - **Sam Corcos** (2025-05-06~) Chief Information Officer
 
@@ -570,6 +582,7 @@
   - **Greg Hogan** (2025-02-11) Chief Information OFficer
   - **Gavin Kliger** (2025-02-18) Senior Advisor to the Director for Information Technology
   - **Joe Gebbia** (2025-02-18) Expert
+  - **Tarak Makecha** (2025-03-XX) Senior Advisor
 
 # Peace Corps
 - slug: peace-corps
@@ -595,17 +608,17 @@
 - people:
   - **Mike Russo** (2025-01-31 - 2024-03-24) Chief Information Officer
   - **OPM-3 (Akash Bobba)** (2025-02-03) (detailed from OPM)
-  - **SSA-1** (2025-02-09) Expert
+  - **SSA-1 (Akash Bobba)** (2025-02-09) Expert
   - **Leland Dudek** (2025-02-16) Acting Commissioner
   - **SSA-2 (Scott Coulter)** (2025-02-18 - 2025-03-23) (detailed from NASA)
   - **SSA-5** (2025-02-18) (detailed from DOGE)
-  - **SSA-10 (Ethan Shaotran)** (2025-02-18) (detailed from GSA)
   - **SSA-7 (Marko Elez)** (2025-02-18) (detailed from DOL)
+  - **SSA-10 (Ethan Shaotran)** (2025-02-18) (detailed from GSA)
   - **Cole Killian** (2025-02-20~)
   - **SSA-3 (Aram Moghaddassi)** (2025-02-22) (detailed from DOL)
-  - **SSA-9 (Payton Rehling)** (2025-02-23) Expert
   - **SSA-4 (Antonio Gracias)** (2025-02-23) Expert
   - **SSA-6 (Jon Koval)** (2025-02-23) Expert
+  - **SSA-9 (Payton Rehling)** (2025-02-23) Expert
   - **Mark Steffensen** (2025-02-25 - 2025-02-27) Senior Advisor
   - **SSA-8** (2025-02-26) (detailed from OPM)
   - **Mark Steffensen** (2025-02-27) Acting General Counsel

@@ -58,18 +58,13 @@ namespace :data do
     sh 'rm -f data/doge.sqlite'
   end
 
-  desc 'Clean out all the generated YAML data'
-  task :clean_yaml do
-    sh 'rm -f src/_data/doge/**/*.yaml'
-  end
-
   desc 'Delete all the pregenerated API files'
   task :clean_api do
     sh 'rm -f src/api/**/*.json'
   end
 
   desc 'Clean all generated data files'
-  task clean: %i[clean_db clean_yaml clean_api]
+  task clean: %i[clean_db clean_api]
 
   desc 'Process and validate the events YAML file'
   task :validate_events_yaml do
@@ -114,18 +109,13 @@ namespace :generate do
     ruby "#{SCRIPTS_DIR}/generate_reports.rb"
   end
 
-  desc 'Build files in the _data dir for use by pages'
-  task :page_data do
-    ruby "#{SCRIPTS_DIR}/generate_data_yaml.rb"
-  end
-
   desc 'Builds statically generated API JSON'
   task :api_data do
     ruby "#{SCRIPTS_DIR}/generate_api_json.rb"
   end
 
   desc 'Run all generate tasks'
-  task all: %i[reports page_data api_data]
+  task all: %i[reports]
 end
 
 desc 'Run generate tasks for the content'

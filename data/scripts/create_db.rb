@@ -9,6 +9,7 @@ DB.create_table! :agencies do
   string :id, primary_key: true
   string :name, null: false
   string :slug, null: false, unique: true
+  string :page_slug
   string :short_name, null: false, unique: true
   string :blurb
   string :blurb_date
@@ -54,6 +55,7 @@ DB.create_table! :positions do
   string :pay_grade
   string :salary
   string :pd_code
+  boolean :sge
   string :title
   string :series
   boolean :supervisory
@@ -70,6 +72,7 @@ DB.create_table! :people do
   string :name, primary_key: true
   string :sort_name, null: false
   string :slug, null: false, unique: true
+  string :page_slug
   integer :age
   string :background
   string :category, null: false, default: 'unknown'

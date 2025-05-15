@@ -35,6 +35,7 @@ people.each do |p|
   next unless p.key? :positions
 
   p[:positions] = p[:positions].sort_by do |pos|
+    # Array-to-array error here means an EDTF date wasn't parsable
     if pos.key? :start_date
       [Date.edtf(pos[:start_date].to_s), pos[:id]]
     else

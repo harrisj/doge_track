@@ -474,8 +474,9 @@
     source_title: National Treasury Employees Union v. Russell Vought (D.D.C.)
   - date: 2025-02-14
     type: disruption
-    event: The CFPB's social media accounts are deleted and videos are removed from its YouTube channel
+    event: The CFPB's videos are removed from its YouTube channel
     source: https://www.theverge.com/news/613567/trump-youtube-videos-cfpb
+    source_name: The Verge
     agency: CFPB
     id: jvA4LYFX
   - date: 2025-02-18
@@ -491,26 +492,35 @@
     type: offboard
     event: Luke Farritor officially offboards from the CFPB
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    case_no: 1:25-cv-00339
     named:
     - Luke Farritor
     agency: CFPB
     id: TwWSFLuZ
+    source_name: Court Filing
+    source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
   - date: 2025-03-04
-    type: action
+    type: onboard
     event: Jordan Wick is converted from a detailee to a full employee of the CFPB
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    case_no: 1:25-cv-00339
     named:
     - Jordan Wick
     agency: CFPB
     id: 3adk09oY
+    source_name: Court Filing
+    source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
   - date: 2025-03-21
     type: offboard
     event: Nikhil Rajpal officially offboards from the CFPB
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    case_no: 1:25-cv-00339
     named:
     - Nikhil Rajpal
     agency: CFPB
     id: 4q7ANp6B
+    source_name: Court Filing
+    source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
   - date: 2025-04-10
     type: official
     event: Gavin Kliger receives a warning from the CFPB Ethics Office that his stock holdings present serious concerns about a possible conflict of interest
@@ -518,6 +528,7 @@
     - Gavin Kliger
     agency: CFPB
     source: https://www.propublica.org/article/cfpb-gavin-kliger-doge-conflict-of-interest-consumer-financial-protection-bureau
+    source_name: ProPublica
     id: nAPDT6yN
   - date: 2025-04-12
     type: interagency
@@ -685,10 +696,62 @@
   parent_id: Commerce
   events: []
 
+- name: Corporation for Public Broadcasting
+  id: CPB
+  slug: cpb
+  short_name: CPB
+  events:
+  - date: 2025-04-28
+    type: disruption
+    event: >-
+      Three members of the board for the Corporation for Public Broadcasting receive an email from Trent Morse at the White House informing them that they
+      have been fired
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.279991/gov.uscourts.dcd.279991.2.2.pdf
+    case_no: 1:25-cv-01305
+    agency: CPB
+    id: 607kaJsp
+    source_name: Court Filing
+    source_title: Corporation for Public Broadcasting v. Trump (D.D.C.)
+  - date: 2025-04-29
+    type: interagency
+    event: >-
+      Nate Cavanaugh sends an email to the two remaining members of the CPB board requesting a meeting. He describes a DOGE team at GSA and cc's several
+      other members of DOGE
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.279991/gov.uscourts.dcd.279991.12.1.pdf
+    case_no: 1:25-cv-01305
+    interagency_doge_reps:
+      GSA:
+      - Nate Cavanaugh
+      - Justin Fox
+      - Jonathan Mendelson
+      DOGE:
+      - Justin Aimonetti
+    agency: CPB
+    id: 4p1Gdjkg
+    source_name: Court Filing
+    source_title: Corporation for Public Broadcasting v. Trump (D.D.C.)
+  - date: 2025-04-29
+    type: legal
+    event: >-
+      Citing harm inflicted at USIP among other agencies, the Corporation for Public Broadcasting receives a temporary restraining order from a judge until
+      its case can be heard on May https://finance.yahoo.com/news/sec-pushes-back-doge-request-175244386.html
+    source: https://radioink.com/2025/04/29/federal-court-halts-trump-move-to-fire-three-cpb-directors/
+    source_name: Radio Ink
+    agency: CPB
+    id: 22DlvADs
+  - date: 2025-05-01
+    type: official
+    event: Trump issues an executive order commanding that CPB should cease support for PBS and NPR, despite CPB being an independent agency.
+    source: https://www.whitehouse.gov/presidential-actions/2025/05/ending-taxpayer-subsidization-of-biased-media/
+    source_name: Executive Order
+    source_title: Ending Taxpayer Subsidization of Biased Media
+    agency: CPB
+    id: 6mAF9PCM
+
 - name: Customs and Border Patrol
   id: CBP
   short_name: CBP
-  slug: cpb
+  slug: cbp
   parent_id: DHS
   doge_base: true
   events: []
@@ -1946,10 +2009,26 @@
 
 - name: Executive Office of the President
   id: EOP
-  short_name: White House
-  slug: white-house
+  short_name: EOP
+  slug: eop
   doge_base: true
   events: []
+
+- name: Export-Import Bank of the United States
+  id: EXIM
+  short_name: Export-Import Bank
+  slug: exim
+  events:
+  - date: 2025-05-14
+    type: sighting
+    event: Two DOGE staffers reportedly have emails and assigned office space at the Export-Import Bank of the US
+    named:
+    - Nate Cavanaugh
+    - Donald Park
+    source: https://bsky.app/profile/marisakabas.bsky.social/post/3lp5iwrmfv22y
+    source_name: The Handbasket
+    agency: EXIM
+    id: 7W6wi7FV
 
 - name: Federal Aviation Administration
   id: FAA
@@ -3478,7 +3557,7 @@
     id: 3GL4CR65
   - date: 2025-01-28
     type: onboard
-    event: Justin Monroe  and Christopher Stanley starts working at OPM as a volunteer Expert
+    event: Justin Monroe  and Christopher Stanley start working at OPM as a volunteer Expert
     named:
     - Justin Monroe
     - Christopher Stanley
