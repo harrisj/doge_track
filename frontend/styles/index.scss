@@ -31,8 +31,7 @@
 // $box-padding: 1.4rem !default;
 // $footer-top-margin: 4rem !default;
 
-@use "../../node_modules/bulma/sass" with (
-  $family-primary: 'Raleway',
+@use "../../node_modules/bulma/sass" with ($family-primary: 'Raleway',
   $family-secondary: 'Special Elite',
 
   $size-1: 2.5rem,
@@ -42,6 +41,7 @@
   $size-5: 1rem,
   $size-6: 0.75rem,
   $size-7: 0.5rem,
+  $media-spacing: 0.5rem,
 );
 
 // @import "../../components/bulmatown/collection.scss";

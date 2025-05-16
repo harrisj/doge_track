@@ -489,6 +489,11 @@
   - **Todd Newnam** (2025-04-XX) Senior Advisor
   - **Sam Corcos** (2025-05-06~) Chief Information Officer
 
+# Merit System Protection Board
+- slug: MSPB
+- people:
+  - **Nate Cavanaugh** (2025-05-21) (detailed from GSA)
+
 # Millennium Challenge Corporation
 - slug: mcc
 
