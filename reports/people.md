@@ -56,6 +56,11 @@
 # Jared Birchall
 - category: booster
 
+# Frank Bisignano
+- category: enabler
+- positions:
+    -  **SSA**  
+
 # Brian Bjelde
 - category: support
 - positions:
@@ -97,7 +102,9 @@
     -  **EXIM** (2025-05-14 to ??) 
 
 # Michael Cole
-- category: unknown
+- category: wrecker
+- positions:
+    -  **USDA** (2025-02-XX to ??) 
 
 # Miles Collins
 - category: wrecker
@@ -147,6 +154,13 @@
 - positions:
     -  **SSA** (2025-02-18 to 2025-03-23) [as "SSA-2"] 
     -  **SSA** (2025-03-24 to ??) [as "SSA-2"] **Chief Information Officer**
+
+# Clayton Cromer
+- category: wrecker
+- positions:
+    -  **OPM** (2025-01-20 to ??) **Deputy General Counsel**
+    -  **USAID** (2025-02-XX to ??) 
+    -  **DOJ** (2025-03-XX to ??) 
 
 # Steve Davis
 - category: leadership
@@ -582,6 +596,11 @@
     -  **Education** (2025-02-04 to NTE 2025-08-04) [as "ED-4"]  volunteer
     -  **FDIC** (2025-04-10 to ??) 
 
+# Trent Morse
+- category: enabler
+- positions:
+    -  **EOP** (2025-01-23 to ??) **Deputy Assistant to the President / Deputy Director of Presidential Personnel**
+
 # Elon Musk
 - category: leadership
 - positions:
@@ -596,6 +615,7 @@
 # Donald Park
 - category: wrecker
 - positions:
+    -  **SBA** (2025-02-03 to ??) 
     -  **EXIM** (2025-05-14 to ??) 
 
 # Noah Peters
@@ -800,6 +820,12 @@
 - category: wrecker
 - positions:
     -  **VA** (2025-03-25 to ??) 
+
+# Russell Vought
+- category: enabler
+- positions:
+    -  **EOP**  
+    -  **CFPB** (2025-02-08 to ??) **Acting Director**
 
 # Linda Whitridge
 - category: wrecker

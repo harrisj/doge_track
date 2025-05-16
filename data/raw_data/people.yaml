@@ -226,6 +226,16 @@
   category: booster
   positions: []
 
+- name: Frank Bisignano
+  sort_name: Bisignano
+  slug: frank-bisignano
+  category: enabler
+  background: finance
+  positions:
+  - id: ssa-bisignano
+    type: appointed
+    agency: SSA
+
 - name: Brian Bjelde
   sort_name: Bjelde
   slug: brian-bjelde
@@ -437,8 +447,17 @@
 - name: Michael Cole
   sort_name: Cole
   slug: michael-cole
-  category: unknown
-  positions: []
+  category: wrecker
+  background: finance
+  positions:
+  - id: usda-cole
+    type: unknown
+    agency: USDA
+    start_date: 2025-02-XX
+    start_date_truth: inferred
+    comment: >-
+      CC'ed on an email 2025-02-20, by Gavin Kliger and has a USDS address. USDA administrator said on 2/14 that DOGE had been at the agency for several
+      weeks
 
 - name: Miles Collins
   sort_name: Collins
@@ -638,6 +657,44 @@
     - onboard-ssa-employee-2
     name: Scott Coulter
     alias: SSA-2
+
+- name: Clayton Cromer
+  sort_name: Cromer
+  slug: clayton-cromer
+  background: lawyer
+  category: wrecker
+  positions:
+  - id: opm-cromer
+    type: appointed
+    agency: OPM
+    start_date: 2025-01-20
+    start_date_truth: verified
+    description: SES Noncareer Appt
+    appt_type_code: 55
+    appt_type: 55-Noncareer (Senior Exec Perm)
+    pd_code: 6A38487
+    title: Deputy General Counsel
+    pay_grade: ES-00
+    series: '0301'
+    supervisory: true
+    office: Office of the Director
+    comment: Sourced from a FOIA document
+    documents:
+    - opm-foia-doge-positions
+  - id: detail-opm-usaid-cromer
+    type: detailed
+    agency: USAID
+    from: OPM
+    start_date: 2025-02-XX
+    start_date_truth: guessed
+    comment: Need to see if I can find any documentation linking him. NYT says he was involved.
+  - id: detail-opm-doj-cromer
+    type: detailed
+    agency: DOJ
+    from: OPM
+    start_date: 2025-03-XX
+    start_date_truth: inferred
+    comment: Vindman in early March reports receiving contacts from Cromer at DOJ
 
 - name: Steve Davis
   sort_name: Davis
@@ -2145,6 +2202,23 @@
     source: https://www.thehandbasket.co/p/doge-fdic
     agency: FDIC
 
+- name: Trent Morse
+  sort_name: Morse
+  slug: trent-morse
+  category: enabler
+  background: political
+  blurb: >-
+    Technically not a member of DOGE, Trent Morse has often coordinated with them on their operations against smaller independent agencies. In several examples,
+    when the Trump Administration has moved to fire board members and executives of independent agencies, that email has always come from Trent Morse.
+  positions:
+  - id: eop-morse
+    type: appointed
+    start_date: 2025-01-23
+    start_date_truth: reported
+    agency: EOP
+    title: Deputy Assistant to the President / Deputy Director of Presidential Personnel
+    supervisory: true
+
 - name: Elon Musk
   sort_name: Musk
   slug: elon-musk
@@ -2195,6 +2269,12 @@
   background: finance
   category: wrecker
   positions:
+  - id: sba-park
+    type: unknown
+    start_date: 2025-02-03
+    start_date_truth: reported
+    agency: SBA
+    comment: Reported in a tweet from the date
   - id: detail-exim-park
     type: detailed
     agency: EXIM
@@ -2994,6 +3074,24 @@
     type: unknown
     source: https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
     agency: VA
+
+- name: Russell Vought
+  sort_name: Vought
+  slug: russell-vought
+  category: enabler
+  background: political
+  positions:
+  - id: omb-vought
+    type: appointed
+    agency: EOP
+  - id: cfpb-acting-vought
+    type: appointed
+    agency: CFPB
+    title: Acting Director
+    supervisory: true
+    start_date: 2025-02-08
+    start_date_truth: verified
+    source: https://www.cnn.com/2025/02/08/business/cfpb-doge-vought-x/index.html
 
 - name: Linda Whitridge
   slug: linda-whitridge

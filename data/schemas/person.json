@@ -33,6 +33,14 @@
             "description": "Do they have their own page?",
             "type": "boolean"
         },
+        "blurb": {
+            "description": "A blurb about the person to appear on their page",
+            "type": "string"
+        },
+        "reporting_notes": {
+            "description": "A text field for collecting any notes about the reporting on the person",
+            "type": "string"
+        },
         "positions": {
             "type": "array",
             "items": {

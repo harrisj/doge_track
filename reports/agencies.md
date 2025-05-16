@@ -57,11 +57,12 @@
 - slug: cfpb
 - people:
   - **Jeremy Lewin** (2025-02-06) (detailed from GSA)
-  - **Luke Farritor** (2025-02-07 - 2025-03-04) (detailed from GSA)
   - **Gavin Kliger** (2025-02-07 - 2025-05-08) (detailed from OPM)
   - **Nikhil Rajpal** (2025-02-07 - 2025-03-21) (detailed from OPM)
+  - **Luke Farritor** (2025-02-07 - 2025-03-04) (detailed from GSA)
   - **Jordan Wick** (2025-02-07 - 2025-03-04) (detailed from DOGE)
   - **Chris Young** (2025-02-07) (detailed from OPM)
+  - **Russell Vought** (2025-02-08) Acting Director
   - **Jordan Wick** (2025-03-05) Expert/Consultant
 - systems:
     - Agency Website
@@ -131,6 +132,7 @@
 - people:
   - **Gavin Kliger** (2025-02-01~) (detailed from OPM)
   - **Jordan Wick** (2025-02-01~) (detailed from DOGE)
+  - **Michael Cole** (2025-02-XX)
 
 # Department of Defense
 - slug: defense
@@ -183,6 +185,7 @@
 # Department of Justice
 - slug: doj
 - people:
+  - **Clayton Cromer** (2025-03-XX) (detailed from OPM)
   - **Christopher Stanley** (2025-04-02~) Senior Advisor (detailed from OPM)
   - **Jon Koval** (2025-04-15) (detail)
   - **Payton Rehling** (2025-04-15) (detail)
@@ -302,6 +305,9 @@
 
 # Executive Office of the President
 - slug: eop
+- people:
+  - **Russell Vought**
+  - **Trent Morse** (2025-01-23) Deputy Assistant to the President / Deputy Director of Presidential Personnel
 
 # Export-Import Bank of the United States
 - slug: exim
@@ -571,6 +577,7 @@
   - **Riccardo Biasini** (2025-01-20) Expert
   - **Brian Bjelde** (2025-01-20) Expert
   - **OPM-3 (Akash Bobba)** (2025-01-20) Expert
+  - **Clayton Cromer** (2025-01-20) Deputy General Counsel
   - **Baris Akis**
   - **Jacob Altik** (2025-01-24) Senior Advisor to the Director
   - **OPM-6 (Nikhil Rajpal)** (2025-01-24) Expert
@@ -602,6 +609,7 @@
 - slug: sba
 - people:
   - **Edward Coristine** (2025-02-03) (detailed from GSA)
+  - **Donald Park** (2025-02-03)
 
 # The Smithsonian Institution
 - slug: smithsonian
@@ -609,14 +617,15 @@
 # Social Security Administration
 - slug: ssa
 - people:
+  - **Frank Bisignano**
   - **Mike Russo** (2025-01-31 - 2024-03-24) Chief Information Officer
   - **OPM-3 (Akash Bobba)** (2025-02-03) (detailed from OPM)
   - **SSA-1 (Akash Bobba)** (2025-02-09) Expert
   - **Leland Dudek** (2025-02-16) Acting Commissioner
-  - **SSA-2 (Scott Coulter)** (2025-02-18 - 2025-03-23) (detailed from NASA)
   - **SSA-5** (2025-02-18) (detailed from DOGE)
   - **SSA-7 (Marko Elez)** (2025-02-18) (detailed from DOL)
   - **SSA-10 (Ethan Shaotran)** (2025-02-18) (detailed from GSA)
+  - **SSA-2 (Scott Coulter)** (2025-02-18 - 2025-03-23) (detailed from NASA)
   - **Cole Killian** (2025-02-20~)
   - **SSA-3 (Aram Moghaddassi)** (2025-02-22) (detailed from DOL)
   - **SSA-4 (Antonio Gracias)** (2025-02-23) Expert
@@ -679,6 +688,7 @@
   - **Gavin Kliger** (2025-01-27) (detailed from OPM)
   - **Jeremy Lewin** (2025-01-28 - 2025-03-18) Senior Advisor / Director for Strategy & Programs (detailed from GSA)
   - **Edward Coristine** (2025-02-10) Senior Advisor (detailed from GSA)
+  - **Clayton Cromer** (2025-02-XX) (detailed from OPM)
   - **Kenneth Jackson** (2025-03-18) Deputy Administrator (Management and Resources)
   - **Jeremy Lewin** (2025-03-18) Deputy Administrator(Policy and Programming) / COO
 

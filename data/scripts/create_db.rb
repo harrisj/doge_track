@@ -77,6 +77,8 @@ DB.create_table! :people do
   string :background
   string :category, null: false, default: 'unknown'
   boolean :own_page, null: false, default: false
+  string :blurb
+  string :reporting_notes
   string :comment
 end
 
