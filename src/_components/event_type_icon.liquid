@@ -1,24 +1,26 @@
 {% case type %}
-{% when 'access' %}
-  fa-database
-{% when 'action' %}
-  fa-wrench
-{% when 'disruption' %}
-  fa-explosion
-{% when 'interagency' %}
-  fa-handshake
-{% when 'legal' %}
-  fa-legal
-{% when 'milestone' %}
-  fa-map-pin
-{% when 'official' %}
-  fa-landmark
-{% when "onboard" %}
-  fa-user-plus
-{% when "offboard" %}
-  fa-user-minus
-{% when 'sighting' %}
-  fa-binoculars
-{% else %}
-  fa-note-sticky
+  {% when 'access' %}
+    fa-database
+  {% when 'action' %}
+    fa-wrench
+  {% when 'disruption' %}
+    fa-explosion
+  {% when 'interagency' %}
+    fa-handshake
+  {% when 'legal' %}
+    fa-legal
+  {% when 'milestone' %}
+    fa-map-pin
+  {% when 'official' %}
+    fa-landmark
+  {% when 'onboard' %}
+    fa-user-plus
+  {% when 'oversight' %}
+    fa-magnifying-glass
+  {% when 'offboard' %}
+    fa-user-minus
+  {% when 'sighting' %}
+    fa-binoculars
+  {% else %}
+    fa-note-sticky
 {% endcase %}

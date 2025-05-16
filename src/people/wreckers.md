@@ -45,28 +45,127 @@ Since the beginning of March, DOGE has started to move some of its detailed staf
 Most of the DOGE staff within the DOGE agency also called the US DOGE Service and often also referred to as the EOP (for Executive Office of the President) is leadership and support for activities across the government. However, a few of the early DOGE wreckers were hired in that agency, possibly through practices related to the USDS.
 
 {% find doge_wreckers where wreckers, type == 'appointed', agency.id == 'DOGE' %}
-{% render "table_wreckers", wreckers: doge_wreckers, pages: site.data.pages, people: site.data.people %}
+<table class="table is-size-5">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Start Date</th>
+      <th>Background</th>
+      <th>Detailed To</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% assign wreckers_iter = doge_wreckers | sort: "start_date"  %}
+  {% for pos in wreckers_iter  %}
+    <tr>
+      <td>{% person_link pos.name %}</td>
+      <td>{{ pos.person.age }}</td>
+      <td>{{ pos.start_date }}</td>
+      <td>{% if pos.person.background %}{{ pos.person.background | titleize }}{% endif %}</td>
+      <td>{{ site.data.positions | where: "name", pos.name | where: "type", "detailed" | map: "agency_id" | agency_links }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
 
 Since the beginning of March, DOGE has been moving staff to work within agencies themselves, a move at least in part designed to allow the government to evade expedited discovery in the [*AFL-CIO v. DOL*](https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.51.1.pdf) case. For instance, Jordan Wick became an employee of the CFPB on March 4th, the same day that Amy Gleason and Brad Smith officially onboarded at HHS.
 
 ### Office of Personnel Management
 
 {% find opm_wreckers where wreckers, type == 'appointed', agency.id == 'OPM' %}
-{% render "table_wreckers", wreckers: opm_wreckers, pages: site.data.pages, people: site.data.people %}
+<table class="table is-size-5">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Start Date</th>
+      <th>Background</th>
+      <th>Detailed To</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% assign wreckers_iter = opm_wreckers | sort: "start_date"  %}
+  {% for pos in wreckers_iter  %}
+    <tr>
+      <td>{% person_link pos.name %}</td>
+      <td>{{ pos.person.age }}</td>
+      <td>{{ pos.start_date }}</td>
+      <td>{% if pos.person.background %}{{ pos.person.background | titleize }}{% endif %}</td>
+      <td>{{ site.data.positions | where: "name", pos.name | where: "type", "detailed" | map: "agency_id" | agency_links }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
 
 ### General Services Administration
 
 {% find gsa_wreckers where wreckers, type == 'appointed', agency.id == 'GSA' %}
-{% render "table_wreckers", wreckers: gsa_wreckers, pages: site.data.pages, people: site.data.people %}
+<table class="table is-size-5">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Start Date</th>
+      <th>Background</th>
+      <th>Detailed To</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% assign wreckers_iter = gsa_wreckers | sort: "start_date"  %}
+  {% for pos in wreckers_iter  %}
+    <tr>
+      <td>{% person_link pos.name %}</td>
+      <td>{{ pos.person.age }}</td>
+      <td>{{ pos.start_date }}</td>
+      <td>{% if pos.person.background %}{{ pos.person.background | titleize }}{% endif %}</td>
+      <td>{{ site.data.positions | where: "name", pos.name | where: "type", "detailed" | map: "agency_id" | agency_links }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
 
-### Unplaced / Unknown
+### Other Agencies
 
 There are very few firm public details about the early days of DOGE, so there are some staff where I don't yet know how they started. These are all the other wreckers I am still trying to figure out details on.
 
-FIXME
+{% assign based_wreckers = gsa_wreckers | concat: doge_wreckers | concat: opm_wreckers %}
+{% assign based_wrecker_names = based_wreckers | map: "name" %}
+{% assign grouped_wreckers = wreckers | group_by: "name" %}
+<table class="table is-size-5">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Agency</th>
+      <th>Start Date</th>
+      <th>Background</th>
+      <th>Detailed To</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% assign wreckers_iter = grouped_wreckers %}
+  
+  {% for g in wreckers_iter  %}
+    {% if based_wrecker_names contains g.name %}
+    {% else %}
+      {% assign positions = g.items %}
+      {% find first_pos in positions, type == 'appointed' %}
+      {% if first_pos != blank %}
+    <tr>
+      <td>{% person_link g.name %}</td>
+      <td>{{ first_pos.person.age }}</td>
+      <td>{% agency_link first_pos.agency_id %}</td>
+      <td>{{ first_pos.start_date }}</td>
+      <td>{% if first_pos.person.background %}{{ first_pos.person.background | titleize }}{% endif %}</td>
+      <td>{{ site.data.positions | where: "name", first_pos.name | where: "type", "detailed" | map: "agency_id" | agency_links }}</td>
+    </tr>
+    {% endif %}
+    {% endif %}
+  {% endfor %}
+  </tbody>
+</table>
 
 ## Raids On Other Agencies
 
-### Education
-
-### CFPB
+FIXME: Add an overview of raid timelines

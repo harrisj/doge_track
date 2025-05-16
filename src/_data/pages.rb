@@ -24,9 +24,9 @@ agency_hash = {}
 
 Agency.each do |a|
   path = if a.page_slug
-           if p.page_slug == 'self'
+           if a.page_slug == 'self'
              "/agencies/#{a.slug}"
-           elsif p.page_slug == 'none'
+           elsif a.page_slug == 'none'
              'none'
            else
              a.page_slug
@@ -35,7 +35,7 @@ Agency.each do |a|
            "/agencies##{a.slug}"
          end
 
-  agency_hash[a.id] = { name: a.name, slug: a.slug, path: path }
+  agency_hash[a.id] = { id: a.id, name: a.name, slug: a.slug, path: path }
 end
 
 { people: people_hash, agencies: agency_hash }

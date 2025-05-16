@@ -14,6 +14,6 @@ Over the past decade, Congress has established multiple independent agencies tha
 
 ## The Consumer Financial Protection Bureau
 
-See the page for the {% render 'link_agency', id: 'CFPB', pages: site.data.pages %}
+See the page for the {% agency_link CFPB %}
 
 ## The Corporation for Public Broadcasting

@@ -58,6 +58,8 @@ sorted_events.each do |event|
   else
     agency_id = event_agencies[0]
     agency = agencies.find { |a| a[:id] == agency_id }
+    raise "Unable to find agency for #{agency_id}, aborting!" if agency.nil?
+
     agency[:events].append(event)
   end
 end

@@ -104,6 +104,9 @@
 # Census Bureau
 - slug: census
 
+# Consumer Product Safety Commission
+- slug: cpsc
+
 # Corporation for Public Broadcasting
 - slug: cpb
 
@@ -720,6 +723,6 @@
   - **Christopher Roussos** (2025-03-25)
   - **Cary Volpert** (2025-03-25)
 
-# Voice of America
-- slug: VOA
+# US Agency for Global Media
+- slug: usagm
 
