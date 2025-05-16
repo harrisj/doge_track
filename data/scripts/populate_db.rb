@@ -108,7 +108,8 @@ aliases_yaml.each do |alias_hash|
     a.person = person
   end
 
-  a.evidence = alias_hash[:evidence].join("\n") if alias_hash.key? :evidence
+  a.evidence = alias_hash[:evidence].map { |x| "- #{x.strip}" }.join("\n") if alias_hash.key? :evidence
+
   a.save_changes
 
   # Positions with names have already been loaded
