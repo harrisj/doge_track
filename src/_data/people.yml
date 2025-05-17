@@ -27,6 +27,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -105,6 +106,7 @@
     aliases: []
   system_access: []
   start_date:
+  sort_date: '2025-01-20'
   start_agency: DOT
 - name: Justin Aimonetti
   sort_name: Aimonetti
@@ -134,6 +136,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-XX
     nte_date:
     nte_date_truth:
     signed_date:
@@ -352,6 +355,7 @@
     aliases: []
   system_access: []
   start_date: 2025-02-XX
+  sort_date: 2025-02-XX
   start_agency: DOGE
 - name: Baris Akis
   sort_name: Akis
@@ -381,6 +385,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2026-07-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -418,6 +423,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2026-07-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -455,6 +461,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2026-07-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -626,6 +633,7 @@
     aliases: []
   system_access: []
   start_date:
+  sort_date: '2026-07-04'
   start_agency: IRS
 - name: Jacob Altik
   sort_name: Altik
@@ -655,6 +663,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-24'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -692,6 +701,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-21'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -729,6 +739,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -1355,6 +1366,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-24'
+  sort_date: '2025-01-24'
   start_agency: OPM
 - name: Marc Andreessen
   sort_name: Andreessen
@@ -1544,6 +1556,7 @@
       sort_name: Wischer
     aliases: []
   system_access: []
+  sort_date: '2025-01-20'
 - name: Anthony Armstrong
   sort_name: Armstrong
   slug: anthony-armstrong
@@ -1556,43 +1569,6 @@
   reporting_notes:
   comment:
   positions:
-  - id: detail-opm-dhs-armstrong
-    type: detailed
-    agency_id: DHS
-    name: Anthony Armstrong
-    doge_alias_id:
-    from_agency_id: OPM
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: Find more definitive info for DHS link
-    qualifications:
-    documents:
   - id: opm-anthony-armstrong
     type: appointed
     agency_id: OPM
@@ -1609,6 +1585,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -1646,6 +1623,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-10'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -1665,6 +1643,44 @@
     reimbursed:
     reimbursement_amount:
     comment:
+    qualifications:
+    documents:
+  - id: detail-opm-dhs-armstrong
+    type: detailed
+    agency_id: DHS
+    name: Anthony Armstrong
+    doge_alias_id:
+    from_agency_id: OPM
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: Find more definitive info for DHS link
     qualifications:
     documents:
   events:
@@ -1889,8 +1905,9 @@
       sort_name: Ramada
     aliases: []
   system_access: []
-  start_date:
-  start_agency: DHS
+  start_date: '2025-01-20'
+  sort_date: '2025-01-20'
+  start_agency: OPM
 - name: Jennifer Balajadia
   sort_name: Balajadia
   slug: jennifer-balajadia
@@ -1919,6 +1936,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -1943,6 +1961,7 @@
   events: []
   system_access: []
   start_date:
+  sort_date: '2025-01-20'
   start_agency: Education
 - name: Sam Beyda
   sort_name: Beyda
@@ -1972,6 +1991,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-13~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -2032,6 +2052,7 @@
     aliases: []
   system_access: []
   start_date: 2025-02-13~
+  sort_date: 2025-02-13~
   start_agency: DOL
 - name: Alexandra Beynon
   sort_name: Beynon
@@ -2061,6 +2082,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-04~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -2098,6 +2120,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-05'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -2201,6 +2224,7 @@
     aliases: []
   system_access: []
   start_date: 2025-02-04~
+  sort_date: 2025-02-04~
   start_agency: DOGE
 - name: Riccardo Biasini
   sort_name: Biasini
@@ -2230,6 +2254,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date: '2025-07-18'
     nte_date_truth: verified
     signed_date:
@@ -2496,6 +2521,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: OPM
 - name: Jared Birchall
   sort_name: Birchall
@@ -2557,6 +2583,7 @@
       sort_name: Musk
     aliases: []
   system_access: []
+  sort_date: '2025-01-20'
 - name: Frank Bisignano
   sort_name: Bisignano
   slug: frank-bisignano
@@ -2585,6 +2612,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -2641,6 +2669,7 @@
     aliases: []
   system_access: []
   start_date:
+  sort_date: '2025-01-20'
   start_agency: SSA
 - name: Brian Bjelde
   sort_name: Bjelde
@@ -2670,6 +2699,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -2847,6 +2877,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: OPM
 - name: Akash Bobba
   sort_name: Bobba
@@ -2876,6 +2907,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date: '2025-07-18'
     nte_date_truth: verified
     signed_date:
@@ -2913,6 +2945,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-03'
     nte_date: '2026-02-12'
     nte_date_truth: verified
     signed_date: '2025-02-12'
@@ -2950,6 +2983,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-03'
     nte_date:
     nte_date_truth:
     signed_date: '2025-02-12'
@@ -2987,6 +3021,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-09'
     nte_date: '2026-02-08'
     nte_date_truth: verified
     signed_date:
@@ -3523,6 +3558,7 @@
     comment: >-
       Akash Bobba is rapidly trained and is granted access to anonymized and read-only "sandbox" NUMIDENT data from SSNEC for his purported fraud investigations
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: OPM
 - name: Ashley Boizelle
   sort_name: Boizelle
@@ -3552,6 +3588,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-XX
     nte_date:
     nte_date_truth:
     signed_date:
@@ -3766,6 +3803,7 @@
     aliases: []
   system_access: []
   start_date: 2025-02-XX
+  sort_date: 2025-02-XX
   start_agency: DOGE
 - name: Emily Bryant
   sort_name: Bryant
@@ -3779,12 +3817,50 @@
   reporting_notes:
   comment:
   positions:
+  - id: gsa-bryant
+    type: appointed
+    agency_id: GSA
+    name: Emily Bryant
+    doge_alias_id:
+    from_agency_id:
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-03-25'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source:
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but NYT links to her to GSA, so assuming she started there
+    qualifications:
+    documents:
   - id: detail-doge-ftc-bryant
     type: detailed
     agency_id: FTC
     name: Emily Bryant
     doge_alias_id:
-    from_agency_id: DOGE
+    from_agency_id: GSA
     start_date: 2025-03-28~
     start_date_truth: reported
     start_date_event:
@@ -3795,6 +3871,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-03-28~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -3845,8 +3922,9 @@
       sort_name: Kliger
     aliases: []
   system_access: []
-  start_date: 2025-03-28~
-  start_agency: FTC
+  start_date:
+  sort_date: '2025-03-25'
+  start_agency: GSA
 - name: James Burnham
   sort_name: Burnham
   slug: james-burnham
@@ -4108,6 +4186,7 @@
       sort_name: Raynor
     aliases: []
   system_access: []
+  sort_date: '2025-01-20'
 - name: Nate Cavanaugh
   sort_name: Cavanaugh
   slug: nate-cavanaugh
@@ -4120,43 +4199,6 @@
   reporting_notes:
   comment:
   positions:
-  - id: detail-gsa-usadf-cavanaugh
-    type: detailed
-    agency_id: USADF
-    name: Nate Cavanaugh
-    doge_alias_id:
-    from_agency_id: GSA
-    start_date: '2025-02-21'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date: '2025-03-06'
-    end_date_truth: reported
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
-    reimbursed:
-    reimbursement_amount:
-    comment:
-    qualifications:
-    documents:
   - id: gsa-cavanaugh
     type: appointed
     agency_id: GSA
@@ -4173,6 +4215,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-01'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -4194,6 +4237,44 @@
     comment: Introduces Frank Schuler on a video call at GSA in February
     qualifications:
     documents:
+  - id: detail-gsa-usadf-cavanaugh
+    type: detailed
+    agency_id: USADF
+    name: Nate Cavanaugh
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: '2025-02-21'
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date: '2025-03-06'
+    end_date_truth: reported
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-02-21'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
   - id: detail-gsa-usip-cavanaugh
     type: detailed
     agency_id: USIP
@@ -4210,6 +4291,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -4247,6 +4329,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-03-13~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -4284,6 +4367,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-25'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -4323,6 +4407,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-31'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -4360,6 +4445,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-05-14'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -4397,6 +4483,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-05-21'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -5264,8 +5351,9 @@
     comment: >-
       The lawsuit against NEH cites emails being sent from Grant_Notifications@nehemail.onmicrosoft.com which is the form of a Global Admin account for
       Microsoft Entra (probably for the NEH email systems)
-  start_date: '2025-02-21'
-  start_agency: USADF
+  start_date: 2025-02-XX
+  sort_date: '2025-02-01'
+  start_agency: GSA
 - name: Michael Cole
   sort_name: Cole
   slug: michael-cole
@@ -5294,6 +5382,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-XX
     nte_date:
     nte_date_truth:
     signed_date:
@@ -5349,6 +5438,7 @@
     aliases: []
   system_access: []
   start_date: 2025-02-XX
+  sort_date: 2025-02-XX
   start_agency: USDA
 - name: Miles Collins
   sort_name: Collins
@@ -5378,6 +5468,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-05'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -5597,6 +5688,7 @@
       Wired reports that three DOGE staffers at DOL were granted access to the DOL's Reentry Employment Opportunities (REO) program, which provides aid
       to people re-entering society from incarceration
   start_date: '2025-03-05'
+  sort_date: '2025-03-05'
   start_agency: DOL
 - name: George Cooper
   sort_name: Cooper
@@ -5612,13 +5704,14 @@
   positions: []
   events: []
   system_access: []
+  sort_date: '2025-01-20'
 - name: Sam Corcos
   sort_name: Corcos
   slug: sam-corcos
   page_slug:
   age: 36
   background: executive
-  category: wrecker
+  category: enabler
   own_page: false
   blurb:
   reporting_notes:
@@ -5640,6 +5733,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-28'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -5677,6 +5771,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-05-06~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -5821,6 +5916,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-28'
+  sort_date: '2025-02-28'
   start_agency: IRS
 - name: Edward Coristine
   sort_name: Coristine
@@ -5834,80 +5930,6 @@
   reporting_notes:
   comment:
   positions:
-  - id: internal-dhs-tsa-coristine
-    type: internal
-    agency_id: TSA
-    name: Edward Coristine
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but in NYT roundup
-    qualifications:
-    documents:
-  - id: internal-dhs-uscis-coristine
-    type: internal
-    agency_id: USCIS
-    name: Edward Coristine
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but in NYT roundup
-    qualifications:
-    documents:
   - id: gsa-edward-coristine
     type: appointed
     agency_id: GSA
@@ -5924,6 +5946,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-01-20~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -5961,6 +5984,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-01-28~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -5998,6 +6022,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-03'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -6035,6 +6060,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-05'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -6072,6 +6098,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-05'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -6093,43 +6120,6 @@
     comment:
     qualifications:
     documents:
-  - id: detail-gsa-state-coristine
-    type: detailed
-    agency_id: State
-    name: Edward Coristine
-    doge_alias_id:
-    from_agency_id: GSA
-    start_date: '2025-02-10'
-    start_date_truth: reported
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title: Senior Advisor
-    series:
-    supervisory:
-    office: Bureau of Diplomatic Technology
-    source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
-    reimbursed:
-    reimbursement_amount:
-    comment:
-    qualifications:
-    documents:
   - id: detail-gsa-usaid-coristine
     type: detailed
     agency_id: USAID
@@ -6146,6 +6136,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-10'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -6161,6 +6152,44 @@
     series:
     supervisory:
     office: Office of the CIO
+    source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+  - id: detail-gsa-state-coristine
+    type: detailed
+    agency_id: State
+    name: Edward Coristine
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: '2025-02-10'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-02-10'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title: Senior Advisor
+    series:
+    supervisory:
+    office: Bureau of Diplomatic Technology
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
     reimbursed:
     reimbursement_amount:
@@ -6183,6 +6212,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-19'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -6220,6 +6250,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -6257,6 +6288,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-05'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -6294,6 +6326,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-05'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -6313,6 +6346,82 @@
     reimbursed:
     reimbursement_amount:
     comment: Granted access to CALM system on the same day as his detail to HHS
+    qualifications:
+    documents:
+  - id: internal-dhs-tsa-coristine
+    type: internal
+    agency_id: TSA
+    name: Edward Coristine
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but in NYT roundup
+    qualifications:
+    documents:
+  - id: internal-dhs-uscis-coristine
+    type: internal
+    agency_id: USCIS
+    name: Edward Coristine
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but in NYT roundup
     qualifications:
     documents:
   events:
@@ -6650,6 +6759,33 @@
       name: Ethan Shaotran
       sort_name: Shaotran
     aliases: []
+  - id: 7OVMm6PD
+    type: access
+    date: '2025-03-05'
+    sort_date: '2025-03-05'
+    time:
+    text: Edward Coristine and Zach Terrell are granted read access to the Integrated Data Repository (IDR), a data warehouse of all Medicare claims
+    fuzz:
+    comment:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
+    source_name: Court Filing
+    case_no: 1:25-cv-00339
+    track_id: spending
+    system_id: IDR
+    agencies:
+    - id: CMS
+      slug: cms
+      name: Centers for Medicare and Medicaid Services
+      short_name: CMS
+    people:
+    - slug: edward-coristine
+      name: Edward Coristine
+      sort_name: Coristine
+    - slug: zach-terrell
+      name: Zach Terrell
+      sort_name: Terrell
+    aliases: []
   - id: 6R6QCxBv
     type: access
     date: '2025-03-05'
@@ -6681,33 +6817,6 @@
     - slug: aram-mohghaddassi
       name: Aram Moghaddassi
       sort_name: Moghaddassi
-    aliases: []
-  - id: 7OVMm6PD
-    type: access
-    date: '2025-03-05'
-    sort_date: '2025-03-05'
-    time:
-    text: Edward Coristine and Zach Terrell are granted read access to the Integrated Data Repository (IDR), a data warehouse of all Medicare claims
-    fuzz:
-    comment:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
-    source_name: Court Filing
-    case_no: 1:25-cv-00339
-    track_id: spending
-    system_id: IDR
-    agencies:
-    - id: CMS
-      slug: cms
-      name: Centers for Medicare and Medicaid Services
-      short_name: CMS
-    people:
-    - slug: edward-coristine
-      name: Edward Coristine
-      sort_name: Coristine
-    - slug: zach-terrell
-      name: Zach Terrell
-      sort_name: Terrell
     aliases: []
   - id: C9H7QGC5
     type: directory
@@ -6877,6 +6986,41 @@
       name: Kyle Schutt
       sort_name: Schutt
     aliases: []
+  - id: iDxrzxfp
+    type: legal
+    date: '2025-03-29'
+    sort_date: '2025-03-29'
+    time:
+    text: >-
+      In a legal filing, the DOJ identifies 4 DOGE staffers - Edward Coristine, Marko Elez, Luke Farritor and Amy Gleason - as present at CMS. It omits
+      the names of several other staffers with access to the CALM system.
+    fuzz:
+    comment:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
+    source_name: Legal Filing
+    case_no: 1:25-cv-00339
+    track_id:
+    system_id:
+    agencies:
+    - id: CMS
+      slug: cms
+      name: Centers for Medicare and Medicaid Services
+      short_name: CMS
+    people:
+    - slug: edward-coristine
+      name: Edward Coristine
+      sort_name: Coristine
+    - slug: marko-elez
+      name: Marko Elez
+      sort_name: Elez
+    - slug: luke-farritor
+      name: Luke Farritor
+      sort_name: Farritor
+    - slug: amy-gleason
+      name: Amy Gleason
+      sort_name: Gleason
+    aliases: []
   - id: KhdnaQWS
     type: directory
     date: '2025-03-29'
@@ -6912,41 +7056,6 @@
     - slug: kyle-schutt
       name: Kyle Schutt
       sort_name: Schutt
-    aliases: []
-  - id: iDxrzxfp
-    type: legal
-    date: '2025-03-29'
-    sort_date: '2025-03-29'
-    time:
-    text: >-
-      In a legal filing, the DOJ identifies 4 DOGE staffers - Edward Coristine, Marko Elez, Luke Farritor and Amy Gleason - as present at CMS. It omits
-      the names of several other staffers with access to the CALM system.
-    fuzz:
-    comment:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
-    source_name: Legal Filing
-    case_no: 1:25-cv-00339
-    track_id:
-    system_id:
-    agencies:
-    - id: CMS
-      slug: cms
-      name: Centers for Medicare and Medicaid Services
-      short_name: CMS
-    people:
-    - slug: edward-coristine
-      name: Edward Coristine
-      sort_name: Coristine
-    - slug: marko-elez
-      name: Marko Elez
-      sort_name: Elez
-    - slug: luke-farritor
-      name: Luke Farritor
-      sort_name: Farritor
-    - slug: amy-gleason
-      name: Amy Gleason
-      sort_name: Gleason
     aliases: []
   - id: HQUguBSH
     type: directory
@@ -7175,8 +7284,9 @@
     never_accessed: false
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment:
-  start_date:
-  start_agency: TSA
+  start_date: 2025-01-20~
+  sort_date: 2025-01-20~
+  start_agency: GSA
 - name: Scott Coulter
   sort_name: Coulter
   slug: scott-coulter
@@ -7205,6 +7315,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-18'
     nte_date: '2026-02-18'
     nte_date_truth: verified
     signed_date: '2025-03-06'
@@ -7242,6 +7353,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-24'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -7410,6 +7522,30 @@
       name: Ethan Shaotran
       sort_name: Shaotran
     aliases: []
+  - id: vfRpqtC4
+    type: access
+    date: '2025-03-14'
+    sort_date: '2025-03-14'
+    time:
+    text: ProPublica reports that Scott Coulter has "wide access to internal databases at NASA"
+    fuzz:
+    comment:
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Scott-Coulter
+    source_title:
+    source_name:
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: NASA
+      slug: nasa
+      name: National Aeronautics and Space Administration
+      short_name: NASA
+    people:
+    - slug: scott-coulter
+      name: Scott Coulter
+      sort_name: Coulter
+    aliases: []
   - id: FHj3Dgcw
     type: directory
     date: '2025-03-14'
@@ -7441,30 +7577,6 @@
     - slug: alex-simonpour
       name: Alexander Simonpour
       sort_name: Simonpour
-    aliases: []
-  - id: vfRpqtC4
-    type: access
-    date: '2025-03-14'
-    sort_date: '2025-03-14'
-    time:
-    text: ProPublica reports that Scott Coulter has "wide access to internal databases at NASA"
-    fuzz:
-    comment:
-    source: https://projects.propublica.org/elon-musk-doge-tracker/#Scott-Coulter
-    source_title:
-    source_name:
-    case_no:
-    track_id:
-    system_id:
-    agencies:
-    - id: NASA
-      slug: nasa
-      name: National Aeronautics and Space Administration
-      short_name: NASA
-    people:
-    - slug: scott-coulter
-      name: Scott Coulter
-      sort_name: Coulter
     aliases: []
   - id: H45eMwSg
     type: access
@@ -7547,6 +7659,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-18'
+  sort_date: '2025-02-18'
   start_agency: SSA
 - name: Clayton Cromer
   sort_name: Cromer
@@ -7576,6 +7689,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -7613,6 +7727,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-XX
     nte_date:
     nte_date_truth:
     signed_date:
@@ -7650,6 +7765,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-03-XX
     nte_date:
     nte_date_truth:
     signed_date:
@@ -7700,6 +7816,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: OPM
 - name: Steve Davis
   sort_name: Davis
@@ -8211,6 +8328,7 @@
       sort_name: Lewin
     aliases: []
   system_access: []
+  sort_date: '2025-01-20'
 - name: Stephen Duarte
   sort_name: Duarte
   slug: stephen-duarte
@@ -8239,6 +8357,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-03'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -8371,6 +8490,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-03'
+  sort_date: '2025-02-03'
   start_agency: OPM
 - name: Leland Dudek
   sort_name: Dudek
@@ -8400,6 +8520,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-16'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -8782,6 +8903,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-16'
+  sort_date: '2025-02-16'
   start_agency: SSA
 - name: Stephen Ehikian
   sort_name: Ehikian
@@ -8811,6 +8933,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -8976,6 +9099,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: GSA
 - name: Marko Elez
   sort_name: Elez
@@ -8989,191 +9113,6 @@
   reporting_notes:
   comment:
   positions:
-  - id: detail-dol-dhs-elez
-    type: detailed
-    agency_id: DHS
-    name: Marko Elez
-    doge_alias_id:
-    from_agency_id: DOL
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No other info, just mentioned in NYT roundup
-    qualifications:
-    documents:
-  - id: internal-dhs-cpb-elez
-    type: internal
-    agency_id: CBP
-    name: Marko Elez
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No other info, just mentioned in NYT roundup
-    qualifications:
-    documents:
-  - id: internal-dhs-ice-elez
-    type: internal
-    agency_id: ICE
-    name: Marko Elez
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No other info, just mentioned in NYT roundup
-    qualifications:
-    documents:
-  - id: internal-dhs-tsa-elez
-    type: internal
-    agency_id: TSA
-    name: Marko Elez
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No other info, just mentioned in NYT roundup
-    qualifications:
-    documents:
-  - id: internal-dhs-uscis-elez
-    type: internal
-    agency_id: USCIS
-    name: Marko Elez
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No other info, just mentioned in NYT roundup
-    qualifications:
-    documents:
   - id: treasury-marko-elez
     type: appointed
     agency_id: Treasury
@@ -9190,6 +9129,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-21'
     nte_date: '2025-05-25'
     nte_date_truth: verified
     signed_date:
@@ -9227,6 +9167,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-18'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -9264,6 +9205,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-05'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -9301,6 +9243,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-05'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -9320,6 +9263,196 @@
     reimbursed:
     reimbursement_amount:
     comment: Reported access to system same day as start of detail to HHS
+    qualifications:
+    documents:
+  - id: internal-dhs-tsa-elez
+    type: internal
+    agency_id: TSA
+    name: Marko Elez
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No other info, just mentioned in NYT roundup
+    qualifications:
+    documents:
+  - id: internal-dhs-uscis-elez
+    type: internal
+    agency_id: USCIS
+    name: Marko Elez
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No other info, just mentioned in NYT roundup
+    qualifications:
+    documents:
+  - id: detail-dol-dhs-elez
+    type: detailed
+    agency_id: DHS
+    name: Marko Elez
+    doge_alias_id:
+    from_agency_id: DOL
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No other info, just mentioned in NYT roundup
+    qualifications:
+    documents:
+  - id: internal-dhs-cpb-elez
+    type: internal
+    agency_id: CBP
+    name: Marko Elez
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No other info, just mentioned in NYT roundup
+    qualifications:
+    documents:
+  - id: internal-dhs-ice-elez
+    type: internal
+    agency_id: ICE
+    name: Marko Elez
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No other info, just mentioned in NYT roundup
     qualifications:
     documents:
   events:
@@ -9468,6 +9601,36 @@
       name: Ryan Wunderly
       sort_name: Wunderly
     aliases: []
+  - id: j66RVh4p
+    type: onboard
+    date: '2025-03-05'
+    sort_date: '2025-03-05'
+    time:
+    text: Business Insider reports Marko Elez, Aram Moghaddassi, and Miles B. Collins are new DOGE arrivals at Department of Labor
+    fuzz:
+    comment:
+    source: https://www.businessinsider.com/doge-staffer-fertility-clinic-pronatalist-department-of-labor
+    source_title:
+    source_name: Business Insider
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOL
+      slug: labor
+      name: Department of Labor
+      short_name: DOL
+    people:
+    - slug: miles-collins
+      name: Miles Collins
+      sort_name: Collins
+    - slug: marko-elez
+      name: Marko Elez
+      sort_name: Elez
+    - slug: aram-mohghaddassi
+      name: Aram Moghaddassi
+      sort_name: Moghaddassi
+    aliases: []
   - id: 3vG5MUdU
     type: access
     date: '2025-03-05'
@@ -9572,36 +9735,6 @@
     - slug: joshua-hanley
       name: Joshua Hanley
       sort_name: Hanley
-    aliases: []
-  - id: j66RVh4p
-    type: onboard
-    date: '2025-03-05'
-    sort_date: '2025-03-05'
-    time:
-    text: Business Insider reports Marko Elez, Aram Moghaddassi, and Miles B. Collins are new DOGE arrivals at Department of Labor
-    fuzz:
-    comment:
-    source: https://www.businessinsider.com/doge-staffer-fertility-clinic-pronatalist-department-of-labor
-    source_title:
-    source_name: Business Insider
-    case_no:
-    track_id:
-    system_id:
-    agencies:
-    - id: DOL
-      slug: labor
-      name: Department of Labor
-      short_name: DOL
-    people:
-    - slug: miles-collins
-      name: Miles Collins
-      sort_name: Collins
-    - slug: marko-elez
-      name: Marko Elez
-      sort_name: Elez
-    - slug: aram-mohghaddassi
-      name: Aram Moghaddassi
-      sort_name: Moghaddassi
     aliases: []
   - id: 7mtGbnRJ
     type: legal
@@ -10395,8 +10528,9 @@
     never_accessed: false
     source: https://www.washingtonpost.com/immigration/2025/04/21/doge-ecas-justice-immigration-courts-trump/
     comment:
-  start_date:
-  start_agency: DHS
+  start_date: '2025-01-21'
+  sort_date: '2025-01-21'
+  start_agency: Treasury
 - name: Charles Ezell
   sort_name: Ezell
   slug: charles-ezell
@@ -10425,6 +10559,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -10616,6 +10751,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: OPM
 - name: Luke Farritor
   sort_name: Farritor
@@ -10629,154 +10765,6 @@
   reporting_notes:
   comment:
   positions:
-  - id: detail-gsa-dhs-farritor
-    type: detailed
-    agency_id: DHS
-    name: Luke Farritor
-    doge_alias_id:
-    from_agency_id: GSA
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but in NYT roundup
-    qualifications:
-    documents:
-  - id: internal-dhs-ice-farritor
-    type: internal
-    agency_id: ICE
-    name: Luke Farritor
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but in NYT roundup
-    qualifications:
-    documents:
-  - id: internal-dhs-tsa-farritor
-    type: internal
-    agency_id: TSA
-    name: Luke Farritor
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but in NYT roundup
-    qualifications:
-    documents:
-  - id: internal-dhs-uscis-farritor
-    type: internal
-    agency_id: ICE
-    name: Luke Farritor
-    doge_alias_id:
-    from_agency_id: USCIS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but in NYT roundup
-    qualifications:
-    documents:
   - id: gsa-luke-farritor
     type: appointed
     agency_id: GSA
@@ -10793,6 +10781,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -10830,6 +10819,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-21'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -10867,6 +10857,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-27'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -10904,6 +10895,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-30'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -10941,6 +10933,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-31'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -10978,6 +10971,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-04~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -11015,6 +11009,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-07'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -11052,6 +11047,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-10'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -11089,6 +11085,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-24'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -11126,6 +11123,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-14'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -11145,6 +11143,158 @@
     reimbursed:
     reimbursement_amount:
     comment: Showed up at the agency to do secondary round of grant reviews. Detail from HHS?
+    qualifications:
+    documents:
+  - id: detail-gsa-dhs-farritor
+    type: detailed
+    agency_id: DHS
+    name: Luke Farritor
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but in NYT roundup
+    qualifications:
+    documents:
+  - id: internal-dhs-ice-farritor
+    type: internal
+    agency_id: ICE
+    name: Luke Farritor
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but in NYT roundup
+    qualifications:
+    documents:
+  - id: internal-dhs-tsa-farritor
+    type: internal
+    agency_id: TSA
+    name: Luke Farritor
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but in NYT roundup
+    qualifications:
+    documents:
+  - id: internal-dhs-uscis-farritor
+    type: internal
+    agency_id: ICE
+    name: Luke Farritor
+    doge_alias_id:
+    from_agency_id: USCIS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but in NYT roundup
     qualifications:
     documents:
   events:
@@ -11629,30 +11779,6 @@
       name: Luke Farritor
       sort_name: Farritor
     aliases: []
-  - id: 4C16pcax
-    type: access
-    date: '2025-03-05'
-    sort_date: '2025-03-05'
-    time:
-    text: Luke Farritor is granted read access to the Integrated Data Repository (IDR), a data warehouse of all Medicare claims
-    fuzz:
-    comment:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
-    source_name: Court Filing
-    case_no: 1:25-cv-00339
-    track_id: spending
-    system_id: IDR
-    agencies:
-    - id: CMS
-      slug: cms
-      name: Centers for Medicare and Medicaid Services
-      short_name: CMS
-    people:
-    - slug: luke-farritor
-      name: Luke Farritor
-      sort_name: Farritor
-    aliases: []
   - id: C9H7QGC5
     type: directory
     date: '2025-03-05'
@@ -11698,6 +11824,30 @@
     - slug: joshua-hanley
       name: Joshua Hanley
       sort_name: Hanley
+    aliases: []
+  - id: 4C16pcax
+    type: access
+    date: '2025-03-05'
+    sort_date: '2025-03-05'
+    time:
+    text: Luke Farritor is granted read access to the Integrated Data Repository (IDR), a data warehouse of all Medicare claims
+    fuzz:
+    comment:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
+    source_name: Court Filing
+    case_no: 1:25-cv-00339
+    track_id: spending
+    system_id: IDR
+    agencies:
+    - id: CMS
+      slug: cms
+      name: Centers for Medicare and Medicaid Services
+      short_name: CMS
+    people:
+    - slug: luke-farritor
+      name: Luke Farritor
+      sort_name: Farritor
     aliases: []
   - id: fPNqSkT8
     type: sighting
@@ -11841,6 +11991,41 @@
       name: Thomas Shedd
       sort_name: Shedd
     aliases: []
+  - id: iDxrzxfp
+    type: legal
+    date: '2025-03-29'
+    sort_date: '2025-03-29'
+    time:
+    text: >-
+      In a legal filing, the DOJ identifies 4 DOGE staffers - Edward Coristine, Marko Elez, Luke Farritor and Amy Gleason - as present at CMS. It omits
+      the names of several other staffers with access to the CALM system.
+    fuzz:
+    comment:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
+    source_name: Legal Filing
+    case_no: 1:25-cv-00339
+    track_id:
+    system_id:
+    agencies:
+    - id: CMS
+      slug: cms
+      name: Centers for Medicare and Medicaid Services
+      short_name: CMS
+    people:
+    - slug: edward-coristine
+      name: Edward Coristine
+      sort_name: Coristine
+    - slug: marko-elez
+      name: Marko Elez
+      sort_name: Elez
+    - slug: luke-farritor
+      name: Luke Farritor
+      sort_name: Farritor
+    - slug: amy-gleason
+      name: Amy Gleason
+      sort_name: Gleason
+    aliases: []
   - id: KhdnaQWS
     type: directory
     date: '2025-03-29'
@@ -11876,41 +12061,6 @@
     - slug: kyle-schutt
       name: Kyle Schutt
       sort_name: Schutt
-    aliases: []
-  - id: iDxrzxfp
-    type: legal
-    date: '2025-03-29'
-    sort_date: '2025-03-29'
-    time:
-    text: >-
-      In a legal filing, the DOJ identifies 4 DOGE staffers - Edward Coristine, Marko Elez, Luke Farritor and Amy Gleason - as present at CMS. It omits
-      the names of several other staffers with access to the CALM system.
-    fuzz:
-    comment:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
-    source_name: Legal Filing
-    case_no: 1:25-cv-00339
-    track_id:
-    system_id:
-    agencies:
-    - id: CMS
-      slug: cms
-      name: Centers for Medicare and Medicaid Services
-      short_name: CMS
-    people:
-    - slug: edward-coristine
-      name: Edward Coristine
-      sort_name: Coristine
-    - slug: marko-elez
-      name: Marko Elez
-      sort_name: Elez
-    - slug: luke-farritor
-      name: Luke Farritor
-      sort_name: Farritor
-    - slug: amy-gleason
-      name: Amy Gleason
-      sort_name: Gleason
     aliases: []
   - id: HQUguBSH
     type: directory
@@ -12448,8 +12598,9 @@
     never_accessed: false
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     comment: Revocation date likely earlier, not given in filing
-  start_date:
-  start_agency: DHS
+  start_date: '2025-01-20'
+  sort_date: '2025-01-20'
+  start_agency: GSA
 - name: Conor Fennessy
   sort_name: Fennessy
   slug: conor-fennessy
@@ -12462,43 +12613,6 @@
   reporting_notes:
   comment:
   positions:
-  - id: gsa-fennessy
-    type: unknown
-    agency_id: GSA
-    name: Conor Fennessy
-    doge_alias_id:
-    from_agency_id:
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, just info from NYT roundup
-    qualifications:
-    documents:
   - id: education-ed-2
     type: appointed
     agency_id: Education
@@ -12515,6 +12629,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-31'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -12552,6 +12667,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-03'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -12589,6 +12705,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -12608,6 +12725,44 @@
     reimbursed:
     reimbursement_amount:
     comment:
+    qualifications:
+    documents:
+  - id: gsa-fennessy
+    type: unknown
+    agency_id: GSA
+    name: Conor Fennessy
+    doge_alias_id:
+    from_agency_id:
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, just info from NYT roundup
     qualifications:
     documents:
   events:
@@ -12870,8 +13025,9 @@
     never_accessed: false
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     comment: Revocation date not given in filing, likely earlier; not granted access to view PII data
-  start_date:
-  start_agency: GSA
+  start_date: '2025-01-31'
+  sort_date: '2025-01-31'
+  start_agency: Education
 - name: Joshua Fox
   sort_name: Fox, Joshua
   slug: joshua-fox
@@ -12900,6 +13056,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-XX
     nte_date:
     nte_date_truth:
     signed_date:
@@ -13024,6 +13181,7 @@
     aliases: []
   system_access: []
   start_date: 2025-02-XX
+  sort_date: 2025-02-XX
   start_agency: DOGE
 - name: Justin Fox
   sort_name: Fox, Justin
@@ -13037,6 +13195,44 @@
   reporting_notes:
   comment:
   positions:
+  - id: gsa-justin-fox
+    type: appointed
+    agency_id: GSA
+    name: Justin Fox
+    doge_alias_id:
+    from_agency_id:
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-02-20'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source:
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but just guessing
+    qualifications:
+    documents:
   - id: detail-neh-justin-fox
     type: detailed
     agency_id: NEH
@@ -13053,6 +13249,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-03-13~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -13260,8 +13457,9 @@
     comment: >-
       The lawsuit against NEH cites emails being sent from Grant_Notifications@nehemail.onmicrosoft.com which is the form of a Global Admin account for
       Microsoft Entra (probably for the NEH email systems)
-  start_date: 2025-03-13~
-  start_agency: NEH
+  start_date:
+  sort_date: '2025-02-20'
+  start_agency: GSA
 - name: Justin Fulcher
   sort_name: Fulcher
   slug: justin-fulcher
@@ -13290,6 +13488,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -13327,6 +13526,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-25'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -13440,6 +13640,7 @@
     aliases: []
   system_access: []
   start_date: '2025-03-04'
+  sort_date: '2025-03-04'
   start_agency: DOD
 - name: Mattieu Gamache-Asselin
   sort_name: Gamache-Asselin
@@ -13469,6 +13670,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-01-XX
     nte_date:
     nte_date_truth:
     signed_date:
@@ -13493,6 +13695,7 @@
   events: []
   system_access: []
   start_date: 2025-01-XX
+  sort_date: 2025-01-XX
   start_agency: HHS
 - name: Joe Gebbia
   sort_name: Gebbia
@@ -13522,6 +13725,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-18'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -13667,6 +13871,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-18'
+  sort_date: '2025-02-18'
   start_agency: OPM
 - name: Derek Geissler
   sort_name: Geissler
@@ -13696,6 +13901,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-13~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -13833,6 +14039,7 @@
     aliases: []
   system_access: []
   start_date: 2025-02-13~
+  sort_date: 2025-02-13~
   start_agency: DOL
 - name: Brady Glantz
   sort_name: Glantz
@@ -13862,6 +14069,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-16'
     nte_date: '2025-02-20'
     nte_date_truth:
     signed_date:
@@ -13886,6 +14094,7 @@
   events: []
   system_access: []
   start_date: '2025-02-16'
+  sort_date: '2025-02-16'
   start_agency: FAA
 - name: Amy Gleason
   sort_name: Gleason
@@ -13915,6 +14124,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2024-12-30'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -13952,6 +14162,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-18'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -13989,6 +14200,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-24~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -14026,6 +14238,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -14247,6 +14460,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment:
   start_date: '2024-12-30'
+  sort_date: '2024-12-30'
   start_agency: DOGE
 - name: Mike Gonzalez
   sort_name: Gonzalez
@@ -14262,6 +14476,7 @@
   positions: []
   events: []
   system_access: []
+  sort_date: '2025-01-20'
 - name: Antonio Gracias
   sort_name: Gracias
   slug: antonio-gracias
@@ -14290,6 +14505,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-23'
     nte_date: '2026-02-22'
     nte_date_truth: verified
     signed_date:
@@ -14515,6 +14731,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-23'
+  sort_date: '2025-02-23'
   start_agency: SSA
 - name: Michael Grimes
   sort_name: Grimes
@@ -14544,6 +14761,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-29'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -14592,6 +14810,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-29'
+  sort_date: '2025-01-29'
   start_agency: Commerce
 - name: Josh Gruenbaum
   sort_name: Gruenbaum
@@ -14621,6 +14840,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-24'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -14678,6 +14898,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-24'
+  sort_date: '2025-01-24'
   start_agency: GSA
 - name: Gavin Hamrick
   sort_name: Hamrick
@@ -14707,6 +14928,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-31'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -14786,6 +15008,7 @@
     aliases: []
   system_access: []
   start_date: '2025-03-31'
+  sort_date: '2025-03-31'
   start_agency: IMLS
 - name: Joshua Hanley
   sort_name: Hanley
@@ -14815,6 +15038,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-XX
     nte_date:
     nte_date_truth:
     signed_date:
@@ -14964,6 +15188,7 @@
     aliases: []
   system_access: []
   start_date: 2025-02-XX
+  sort_date: 2025-02-XX
   start_agency: DOGE
 - name: Christina Hanna
   sort_name: Hanna
@@ -14993,6 +15218,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-03'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -15125,6 +15351,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-03'
+  sort_date: '2025-02-03'
   start_agency: OPM
 - name: Tyler Hassen
   sort_name: Hassen
@@ -15154,6 +15381,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-07'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -15379,6 +15607,7 @@
     aliases: []
   system_access: []
   start_date: '2025-03-07'
+  sort_date: '2025-03-07'
   start_agency: DOI
 - name: Vinay Hiremath
   sort_name: Hiremath
@@ -15447,6 +15676,7 @@
       sort_name: Wischer
     aliases: []
   system_access: []
+  sort_date: '2025-01-20'
 - name: Adam Hoffman
   sort_name: Hoffman
   slug: adam-hoffman
@@ -15475,6 +15705,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-21'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -15546,6 +15777,7 @@
     source: https://www.washingtonpost.com/immigration/2025/04/21/doge-ecas-justice-immigration-courts-trump/
     comment:
   start_date: '2025-04-21'
+  sort_date: '2025-04-21'
   start_agency: DOJ
 - name: Greg Hogan
   sort_name: Hogan
@@ -15575,6 +15807,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -15612,6 +15845,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-11'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -15773,6 +16007,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: OPM
 - name: Nicole Hollander
   sort_name: Hollander
@@ -15802,6 +16037,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -16024,6 +16260,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: GSA
 - name: Stephanie Holmes
   sort_name: Holmes
@@ -16053,6 +16290,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-24'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -16260,6 +16498,7 @@
       https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf, https://www.nytimes.com/2025/03/31/us/politics/doge-musk-federal-payroll.html
     comment:
   start_date: '2025-02-24'
+  sort_date: '2025-02-24'
   start_agency: DOI
 - name: Jared Isaacman
   sort_name: Isaacman
@@ -16275,6 +16514,7 @@
   positions: []
   events: []
   system_access: []
+  sort_date: '2025-01-20'
 - name: Kenneth Jackson
   sort_name: Jackson
   slug: kenneth-jackson
@@ -16303,6 +16543,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-17'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -16340,6 +16581,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-18'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -16485,6 +16727,7 @@
     aliases: []
   system_access: []
   start_date: '2025-03-17'
+  sort_date: '2025-03-17'
   start_agency: USIP
 - name: Anthony Jancso
   sort_name: Jancso
@@ -16551,6 +16794,7 @@
       sort_name: Jancso
     aliases: []
   system_access: []
+  sort_date: '2025-01-20'
 - name: Raj Jegannathan
   sort_name: Jegannathan
   slug: raj-jegannathan
@@ -16579,6 +16823,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-04-24~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -16603,6 +16848,7 @@
   events: []
   system_access: []
   start_date: 2025-04-24~
+  sort_date: 2025-04-24~
   start_agency: GSA
 - name: Erica Jehling
   sort_name: Jehling
@@ -16632,6 +16878,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-12'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -16679,6 +16926,7 @@
     source: https://www.eenews.net/articles/doge-lands-at-epa/
     comment:
   start_date: '2025-02-12'
+  sort_date: '2025-02-12'
   start_agency: EPA
 - name: Thomas Kiernan
   sort_name: Kiernan
@@ -16708,6 +16956,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-16'
     nte_date: '2025-02-20'
     nte_date_truth:
     signed_date:
@@ -16732,6 +16981,7 @@
   events: []
   system_access: []
   start_date: '2025-02-16'
+  sort_date: '2025-02-16'
   start_agency: FAA
 - name: Cole Killian
   sort_name: Killian
@@ -16761,6 +17011,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -16798,6 +17049,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -16835,6 +17087,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-13~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -16872,6 +17125,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-20~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -17097,6 +17351,7 @@
     source: https://www.eenews.net/articles/doge-lands-at-epa/
     comment:
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: DOGE
 - name: Gavin Kliger
   sort_name: Kliger
@@ -17110,80 +17365,6 @@
   reporting_notes:
   comment:
   positions:
-  - id: detail-opm-dhs-kliger
-    type: detailed
-    agency_id: DHS
-    name: Gavin Kliger
-    doge_alias_id:
-    from_agency_id: OPM
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
-    qualifications:
-    documents:
-  - id: internal-dhs-tsa-kliger
-    type: detailed
-    agency_id: TSA
-    name: Gavin Kliger
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
-    qualifications:
-    documents:
   - id: gavin-kliger-opm
     type: appointed
     agency_id: OPM
@@ -17200,6 +17381,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date: '2025-05-20'
     nte_date_truth: verified
     signed_date:
@@ -17237,6 +17419,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-27'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -17274,6 +17457,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-01~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -17313,6 +17497,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-07'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -17350,6 +17535,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-18'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -17387,6 +17573,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-19'
     nte_date: '2025-06-19'
     nte_date_truth: inferred
     signed_date: '2025-02-19'
@@ -17424,6 +17611,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-03-28~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -17443,6 +17631,82 @@
     reimbursed:
     reimbursement_amount:
     comment: Title is not given, reported as starting "last week" from 2025-04-04
+    qualifications:
+    documents:
+  - id: detail-opm-dhs-kliger
+    type: detailed
+    agency_id: DHS
+    name: Gavin Kliger
+    doge_alias_id:
+    from_agency_id: OPM
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
+    qualifications:
+    documents:
+  - id: internal-dhs-tsa-kliger
+    type: detailed
+    agency_id: TSA
+    name: Gavin Kliger
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
     qualifications:
     documents:
   events:
@@ -18450,8 +18714,9 @@
     never_accessed: false
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
     comment: Used to automate sending out layoff notices to all CFPB staff
-  start_date:
-  start_agency: DHS
+  start_date: '2025-01-20'
+  sort_date: '2025-01-20'
+  start_agency: OPM
 - name: Keenan Kmiec
   sort_name: Kmiec
   slug: keenan-kmiec
@@ -18547,6 +18812,7 @@
       sort_name: Raynor
     aliases: []
   system_access: []
+  sort_date: '2025-01-20'
 - name: Jon Koval
   sort_name: Koval
   slug: jon-koval
@@ -18575,6 +18841,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-23'
     nte_date: '2026-02-22'
     nte_date_truth: verified
     signed_date:
@@ -18612,6 +18879,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-15'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -18888,6 +19156,7 @@
     source: https://www.washingtonpost.com/immigration/2025/04/21/doge-ecas-justice-immigration-courts-trump/
     comment:
   start_date: '2025-02-23'
+  sort_date: '2025-02-23'
   start_agency: SSA
 - name: Michael Kratsios
   sort_name: Kratsios
@@ -18949,6 +19218,7 @@
       sort_name: Musk
     aliases: []
   system_access: []
+  sort_date: '2025-01-20'
 - name: Tom Krause
   sort_name: Krause
   slug: tom-krause
@@ -18977,6 +19247,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-23'
     nte_date: '2025-04-10'
     nte_date_truth: verified
     signed_date:
@@ -19014,6 +19285,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-13'
     nte_date: '2025-07-03'
     nte_date_truth: verified
     signed_date:
@@ -19221,6 +19493,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-23'
+  sort_date: '2025-01-23'
   start_agency: Treasury
 - name: Scott Kupor
   sort_name: Kupor
@@ -19307,6 +19580,7 @@
       sort_name: Kupor
     aliases: []
   system_access: []
+  sort_date: '2025-01-20'
 - name: Nicholas Lahera
   sort_name: Lahera
   slug: nicholas-lahera
@@ -19321,6 +19595,7 @@
   positions: []
   events: []
   system_access: []
+  sort_date: '2025-01-20'
 - name: Scott Langmack
   sort_name: Langmack
   slug: scott-langmack
@@ -19349,6 +19624,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-10'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -19503,6 +19779,7 @@
     source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
     comment:
   start_date: '2025-02-10'
+  sort_date: '2025-02-10'
   start_agency: HUD
 - name: Sahil Lavingia
   sort_name: Lavingia
@@ -19532,6 +19809,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-25'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -19597,6 +19875,7 @@
     aliases: []
   system_access: []
   start_date: '2025-03-25'
+  sort_date: '2025-03-25'
   start_agency: VA
 - name: Jeremy Lewin
   sort_name: Lewin
@@ -19626,6 +19905,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -19663,6 +19943,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-28'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -19700,6 +19981,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-03'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -19737,6 +20019,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-06'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -19774,6 +20057,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-21'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -19811,6 +20095,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-24'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -19848,6 +20133,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-18'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -19885,6 +20171,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-15'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -20520,6 +20807,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     comment:
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: GSA
 - name: Kendall Lindemann
   sort_name: Lindemann
@@ -20549,6 +20837,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-10~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -20597,6 +20886,7 @@
     aliases: []
   system_access: []
   start_date: 2025-02-10~
+  sort_date: 2025-02-10~
   start_agency: DOGE
 - name: Kathryn Armstrong Loving
   sort_name: Loving
@@ -20626,6 +20916,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-12'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -20673,6 +20964,7 @@
     source: https://www.eenews.net/articles/doge-lands-at-epa/
     comment:
   start_date: '2025-02-12'
+  sort_date: '2025-02-12'
   start_agency: EPA
 - name: Matt Luby
   sort_name: Luby
@@ -20702,6 +20994,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-17'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -20808,6 +21101,7 @@
     aliases: []
   system_access: []
   start_date: '2025-04-17'
+  sort_date: '2025-04-17'
   start_agency: DOI
 - name: Shaun Maguire
   sort_name: Maguire
@@ -20997,6 +21291,7 @@
       sort_name: Wischer
     aliases: []
   system_access: []
+  sort_date: '2025-01-20'
 - name: Tarak Makecha
   sort_name: Makecha
   slug: tarak-makecha
@@ -21009,6 +21304,44 @@
   reporting_notes:
   comment:
   positions:
+  - id: opm-makecha
+    type: appointed
+    agency_id: OPM
+    name: Tarak Makecha
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-03-XX
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-03-15'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title: Senior Advisor
+    series:
+    supervisory:
+    office:
+    source: https://www.pogo.org/investigations/inside-the-shadowy-crew-leading-the-governments-hr-office
+    reimbursed:
+    reimbursement_amount:
+    comment: POGO has his resume and listing as an OPM staffer
+    qualifications:
+    documents:
   - id: fbi-makecha
     type: detailed
     agency_id: FBI
@@ -21025,6 +21358,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-03-30~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -21048,43 +21382,6 @@
       reportedly has been there since the end of March
     qualifications:
     documents:
-  - id: opm-makecha
-    type: appointed
-    agency_id: OPM
-    name: Tarak Makecha
-    doge_alias_id:
-    from_agency_id:
-    start_date: 2025-03-XX
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title: Senior Advisor
-    series:
-    supervisory:
-    office:
-    source: https://www.pogo.org/investigations/inside-the-shadowy-crew-leading-the-governments-hr-office
-    reimbursed:
-    reimbursement_amount:
-    comment: POGO has his resume and listing as an OPM staffer
-    qualifications:
-    documents:
   - id: detail-fcc-makecha
     type: detailed
     agency_id: FCC
@@ -21101,6 +21398,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -21237,8 +21535,9 @@
       sort_name: Wick
     aliases: []
   system_access: []
-  start_date: 2025-03-30~
-  start_agency: FBI
+  start_date: 2025-03-XX
+  sort_date: '2025-03-15'
+  start_agency: OPM
 - name: Ted Malaska
   sort_name: Malaska
   slug: ted-malaska
@@ -21267,6 +21566,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-16'
     nte_date: '2025-02-20'
     nte_date_truth:
     signed_date:
@@ -21317,6 +21617,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-16'
+  sort_date: '2025-02-16'
   start_agency: FAA
 - name: Dave Malcher
   sort_name: Malcher
@@ -21346,6 +21647,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-04-24~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -21370,6 +21672,7 @@
   events: []
   system_access: []
   start_date: 2025-04-24~
+  sort_date: 2025-04-24~
   start_agency: GSA
 - name: Peter Marocco
   sort_name: Marocco
@@ -21399,6 +21702,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-28'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -21508,6 +21812,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-28'
+  sort_date: '2025-02-28'
   start_agency: IAF
 - name: Antoine McCord
   sort_name: McCord
@@ -21537,6 +21842,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-11'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -21561,6 +21867,7 @@
   events: []
   system_access: []
   start_date: '2025-03-11'
+  sort_date: '2025-03-11'
   start_agency: DHS
 - name: Jonathan Mendelson
   sort_name: Mendelson
@@ -21590,6 +21897,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-05-02~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -21657,6 +21965,7 @@
     aliases: []
   system_access: []
   start_date: 2025-05-02~
+  sort_date: 2025-05-02~
   start_agency: SEC
 - name: Katie Miller
   sort_name: Miller
@@ -21686,6 +21995,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -21758,6 +22068,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: DOGE
 - name: Clark Minor
   sort_name: Minor
@@ -21787,6 +22098,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-14'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -21824,6 +22136,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-24'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -21913,6 +22226,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-14'
+  sort_date: '2025-02-14'
   start_agency: HHS
 - name: Michael Mirski
   sort_name: Mirski
@@ -21942,6 +22256,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-10'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22157,6 +22472,7 @@
     source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
     comment:
   start_date: '2025-02-10'
+  sort_date: '2025-02-10'
   start_agency: HUD
 - name: Eliezer Mishory
   sort_name: Mishory
@@ -22186,6 +22502,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-04-05~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22234,6 +22551,7 @@
     aliases: []
   system_access: []
   start_date: 2025-04-05~
+  sort_date: 2025-04-05~
   start_agency: SEC
 - name: Bryanne-Michelle Mlodzianowski
   sort_name: Mlodzianowski
@@ -22263,6 +22581,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-03'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22395,6 +22714,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-03'
+  sort_date: '2025-02-03'
   start_agency: OPM
 - name: Aram Moghaddassi
   sort_name: Moghaddassi
@@ -22408,14 +22728,14 @@
   reporting_notes:
   comment:
   positions:
-  - id: detail-dol-dhs-mohgaddassi
+  - id: detail-dol-ssa-employee-3
     type: detailed
-    agency_id: DHS
+    agency_id: SSA
     name: Aram Moghaddassi
-    doge_alias_id:
+    doge_alias_id: SSA-3
     from_agency_id: DOL
-    start_date:
-    start_date_truth:
+    start_date: '2025-02-22'
+    start_date_truth: verified
     start_date_event:
     start_source:
     start_source_name:
@@ -22424,43 +22744,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but reported in NYT roundup. Assuming detailed from DOL
-    qualifications:
-    documents:
-  - id: dol-moghaddassi
-    type: unknown
-    agency_id: DOL
-    name: Aram Moghaddassi
-    doge_alias_id:
-    from_agency_id:
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
+    sort_date: '2025-02-22'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22477,9 +22761,85 @@
     supervisory:
     office:
     source:
+    reimbursed: true
+    reimbursement_amount: "$71,000 per quarter"
+    comment:
+    qualifications:
+    documents: detail-20250317-dol-ssa-employee-3 onboard-ssa-employee-3
+  - id: internal-hhs-cms-mohgaddassi
+    type: internal
+    agency_id: CMS
+    name: Aram Moghaddassi
+    doge_alias_id:
+    from_agency_id: HHS
+    start_date: '2025-03-05'
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-03-05'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     reimbursed:
     reimbursement_amount:
-    comment:
+    comment: Reported access to system same day as start of detail to HHS
+    qualifications:
+    documents:
+  - id: detail-dol-hhs-mohgaddassi
+    type: detailed
+    agency_id: HHS
+    name: Aram Moghaddassi
+    doge_alias_id:
+    from_agency_id: DOL
+    start_date: '2025-03-05'
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-03-05'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    reimbursed:
+    reimbursement_amount:
+    comment: No documentation, reported in court filing
     qualifications:
     documents:
   - id: internal-dhs-cpb-mohgaddassi
@@ -22498,6 +22858,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2026-07-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22535,6 +22896,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2026-07-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22572,6 +22934,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2026-07-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22609,6 +22972,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2026-07-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22630,14 +22994,14 @@
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     qualifications:
     documents:
-  - id: detail-dol-ssa-employee-3
+  - id: detail-dol-dhs-mohgaddassi
     type: detailed
-    agency_id: SSA
+    agency_id: DHS
     name: Aram Moghaddassi
-    doge_alias_id: SSA-3
+    doge_alias_id:
     from_agency_id: DOL
-    start_date: '2025-02-22'
-    start_date_truth: verified
+    start_date:
+    start_date_truth:
     start_date_event:
     start_source:
     start_source_name:
@@ -22646,6 +23010,45 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but reported in NYT roundup. Assuming detailed from DOL
+    qualifications:
+    documents:
+  - id: dol-moghaddassi
+    type: unknown
+    agency_id: DOL
+    name: Aram Moghaddassi
+    doge_alias_id:
+    from_agency_id:
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22662,83 +23065,9 @@
     supervisory:
     office:
     source:
-    reimbursed: true
-    reimbursement_amount: "$71,000 per quarter"
+    reimbursed:
+    reimbursement_amount:
     comment:
-    qualifications:
-    documents: detail-20250317-dol-ssa-employee-3 onboard-ssa-employee-3
-  - id: detail-dol-hhs-mohgaddassi
-    type: detailed
-    agency_id: HHS
-    name: Aram Moghaddassi
-    doge_alias_id:
-    from_agency_id: DOL
-    start_date: '2025-03-05'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    reimbursed:
-    reimbursement_amount:
-    comment: No documentation, reported in court filing
-    qualifications:
-    documents:
-  - id: internal-hhs-cms-mohgaddassi
-    type: internal
-    agency_id: CMS
-    name: Aram Moghaddassi
-    doge_alias_id:
-    from_agency_id: HHS
-    start_date: '2025-03-05'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    reimbursed:
-    reimbursement_amount:
-    comment: Reported access to system same day as start of detail to HHS
     qualifications:
     documents:
   events:
@@ -23383,8 +23712,9 @@
     comment: >-
       Wired reports that three DOGE staffers at DOL were granted access to the DOL's Reentry Employment Opportunities (REO) program, which provides aid
       to people re-entering society from incarceration
-  start_date:
-  start_agency: DHS
+  start_date: '2025-02-22'
+  sort_date: '2025-02-22'
+  start_agency: SSA
 - name: Justin Monroe
   sort_name: Monroe
   slug: justin-monroe
@@ -23413,6 +23743,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-28'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -23450,6 +23781,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-29'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -23604,6 +23936,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-28'
+  sort_date: '2025-01-28'
   start_agency: OPM
 - name: Brooks Morgan
   sort_name: Morgan
@@ -23633,6 +23966,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-04'
     nte_date: '2025-08-04'
     nte_date_truth: verified
     signed_date:
@@ -23670,6 +24004,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-10'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -23789,6 +24124,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-04'
+  sort_date: '2025-02-04'
   start_agency: Education
 - name: Trent Morse
   sort_name: Morse
@@ -23820,6 +24156,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-23'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -23921,6 +24258,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-23'
+  sort_date: '2025-01-23'
   start_agency: EOP
 - name: Elon Musk
   sort_name: Musk
@@ -23950,6 +24288,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -24268,6 +24607,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: DOGE
 - name: Todd Newnam
   sort_name: Newnam
@@ -24297,6 +24637,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-06'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -24334,6 +24675,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-04-XX
     nte_date:
     nte_date_truth:
     signed_date:
@@ -24397,6 +24739,7 @@
     aliases: []
   system_access: []
   start_date: '2025-03-06'
+  sort_date: '2025-03-06'
   start_agency: Treasury
 - name: Donald Park
   sort_name: Park
@@ -24426,6 +24769,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-03'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -24463,6 +24807,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-05-14'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -24541,6 +24886,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-03'
+  sort_date: '2025-02-03'
   start_agency: SBA
 - name: Noah Peters
   sort_name: Peters
@@ -24570,6 +24916,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -24981,6 +25328,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: OPM
 - name: Nikhil Rajpal
   sort_name: Rajpal
@@ -25010,6 +25358,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-24'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -25047,6 +25396,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -25084,6 +25434,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-07'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -25438,6 +25789,7 @@
     source: https://www.wired.com/story/doge-engineer-noaa-data-google-musk-climate-project-2025/
     comment:
   start_date: '2025-01-24'
+  sort_date: '2025-01-24'
   start_agency: OPM
 - name: Adam Ramada
   sort_name: Ramada
@@ -25467,6 +25819,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-23'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -25504,6 +25857,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-28'
     nte_date: '2026-07-04'
     nte_date_truth: verified
     signed_date: '2025-02-12'
@@ -25541,6 +25895,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-04~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -25578,6 +25933,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-05'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -25615,6 +25971,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-10'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -25814,6 +26171,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
     comment: Reported he could not access PII on system. Account locked after 30 days of inactivity
   start_date: '2025-01-23'
+  sort_date: '2025-01-23'
   start_agency: DOGE
 - name: Austin Raynor
   sort_name: Raynor
@@ -25843,6 +26201,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-30'
     nte_date: '2025-07-22'
     nte_date_truth: verified
     signed_date:
@@ -26026,6 +26385,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-30'
+  sort_date: '2025-01-30'
   start_agency: OPM
 - name: Payton Rehling
   sort_name: Rehling
@@ -26039,117 +26399,6 @@
   reporting_notes:
   comment:
   positions:
-  - id: detail-ssa-dhs-rehling
-    type: detailed
-    agency_id: DHS
-    name: Payton Rehling
-    doge_alias_id:
-    from_agency_id: SSA
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No info, but listed in NYT roundup
-    qualifications:
-    documents:
-  - id: internal-dhs-tsa-rehling
-    type: detailed
-    agency_id: TSA
-    name: Payton Rehling
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No info, but listed in NYT roundup
-    qualifications:
-    documents:
-  - id: internal-dhs-uscis-rehling
-    type: detailed
-    agency_id: USCIS
-    name: Payton Rehling
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No info, but listed in NYT roundup
-    qualifications:
-    documents:
   - id: ssa-employee-9
     type: appointed
     agency_id: SSA
@@ -26166,6 +26415,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-23'
     nte_date: '2026-02-22'
     nte_date_truth: verified
     signed_date:
@@ -26203,6 +26453,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-15'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -26222,6 +26473,120 @@
     reimbursed:
     reimbursement_amount:
     comment:
+    qualifications:
+    documents:
+  - id: detail-ssa-dhs-rehling
+    type: detailed
+    agency_id: DHS
+    name: Payton Rehling
+    doge_alias_id:
+    from_agency_id: SSA
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No info, but listed in NYT roundup
+    qualifications:
+    documents:
+  - id: internal-dhs-tsa-rehling
+    type: detailed
+    agency_id: TSA
+    name: Payton Rehling
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No info, but listed in NYT roundup
+    qualifications:
+    documents:
+  - id: internal-dhs-uscis-rehling
+    type: detailed
+    agency_id: USCIS
+    name: Payton Rehling
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No info, but listed in NYT roundup
     qualifications:
     documents:
   events:
@@ -26704,8 +27069,9 @@
     never_accessed: false
     source: https://www.washingtonpost.com/immigration/2025/04/21/doge-ecas-justice-immigration-courts-trump/
     comment:
-  start_date:
-  start_agency: DHS
+  start_date: '2025-02-23'
+  sort_date: '2025-02-23'
+  start_agency: SSA
 - name: Ryan Riedel
   sort_name: Riedel
   slug: ryan-riedel
@@ -26734,6 +27100,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-07'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -26758,6 +27125,7 @@
   events: []
   system_access: []
   start_date: '2025-02-07'
+  sort_date: '2025-02-07'
   start_agency: Energy
 - name: Rachel Riley
   sort_name: Riley
@@ -26787,6 +27155,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-27'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -26824,6 +27193,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-03'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -26861,6 +27231,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-24'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -26898,6 +27269,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-14'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -27056,38 +27428,6 @@
       name: Rachel Riley
       sort_name: Riley
     aliases: []
-  - id: 4Ffvq4fv
-    type: access
-    date: '2025-02-24'
-    sort_date: '2025-02-24'
-    time:
-    text: >-
-      Three DOGE staffers are placed within the NIH Business System Department for access to NIH's central electronic business system, which includes finance,
-      budget, procurement, a property-management system, and a grant-tracking system
-    fuzz:
-    comment:
-    source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
-    source_title:
-    source_name: Wired
-    case_no:
-    track_id:
-    system_id:
-    agencies:
-    - id: NIH
-      slug: nih
-      name: National Institute of Health
-      short_name: NIH
-    people:
-    - slug: luke-farritor
-      name: Luke Farritor
-      sort_name: Farritor
-    - slug: clark-minor
-      name: Clark Minor
-      sort_name: Minor
-    - slug: rachel-riley
-      name: Rachel Riley
-      sort_name: Riley
-    aliases: []
   - id: khMRYKRf
     type: sighting
     date: '2025-02-24'
@@ -27114,6 +27454,38 @@
     - slug: jeremy-lewin
       name: Jeremy Lewin
       sort_name: Lewin
+    - slug: clark-minor
+      name: Clark Minor
+      sort_name: Minor
+    - slug: rachel-riley
+      name: Rachel Riley
+      sort_name: Riley
+    aliases: []
+  - id: 4Ffvq4fv
+    type: access
+    date: '2025-02-24'
+    sort_date: '2025-02-24'
+    time:
+    text: >-
+      Three DOGE staffers are placed within the NIH Business System Department for access to NIH's central electronic business system, which includes finance,
+      budget, procurement, a property-management system, and a grant-tracking system
+    fuzz:
+    comment:
+    source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
+    source_title:
+    source_name: Wired
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: NIH
+      slug: nih
+      name: National Institute of Health
+      short_name: NIH
+    people:
+    - slug: luke-farritor
+      name: Luke Farritor
+      sort_name: Farritor
     - slug: clark-minor
       name: Clark Minor
       sort_name: Minor
@@ -27440,6 +27812,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     comment:
   start_date: '2025-01-27'
+  sort_date: '2025-01-27'
   start_agency: HHS
 - name: Christopher Roussos
   sort_name: Roussos
@@ -27469,6 +27842,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-25'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -27534,6 +27908,7 @@
     aliases: []
   system_access: []
   start_date: '2025-03-25'
+  sort_date: '2025-03-25'
   start_agency: VA
 - name: Mike Russo
   sort_name: Russo
@@ -27563,6 +27938,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-31'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -27600,6 +27976,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-25'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -27865,6 +28242,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-31'
+  sort_date: '2025-01-31'
   start_agency: SSA
 - name: Amanda Scales
   sort_name: Scales
@@ -27894,6 +28272,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -28198,6 +28577,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: OPM
 - name: Frank Schuler
   sort_name: Schuler
@@ -28227,6 +28607,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-18~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -28302,6 +28683,7 @@
     aliases: []
   system_access: []
   start_date: 2025-02-18~
+  sort_date: 2025-02-18~
   start_agency: GSA
 - name: Kyle Schutt
   sort_name: Schutt
@@ -28315,191 +28697,6 @@
   reporting_notes:
   comment:
   positions:
-  - id: internal-dhs-cbp-schutt
-    type: internal
-    agency_id: CBP
-    name: Kyle Schutt
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but in NYT roundup
-    qualifications:
-    documents:
-  - id: internal-dhs-fema-schutt
-    type: internal
-    agency_id: FEMA
-    name: Kyle Schutt
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but in NYT roundup
-    qualifications:
-    documents:
-  - id: internal-dhs-ice-schutt
-    type: internal
-    agency_id: ICE
-    name: Kyle Schutt
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but in NYT roundup
-    qualifications:
-    documents:
-  - id: internal-dhs-tsa-schutt
-    type: internal
-    agency_id: TSA
-    name: Kyle Schutt
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but in NYT roundup
-    qualifications:
-    documents:
-  - id: internal-dhs-uscis-schutt
-    type: internal
-    agency_id: USCIS
-    name: Kyle Schutt
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but in NYT roundup
-    qualifications:
-    documents:
   - id: internal-dhs-cisa-schutt
     type: detailed
     agency_id: CISA
@@ -28516,6 +28713,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-19'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -28553,6 +28751,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-19~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -28590,6 +28789,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-14'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -28609,6 +28809,196 @@
     reimbursed:
     reimbursement_amount:
     comment: No documentation, dates reported in court filing
+    qualifications:
+    documents:
+  - id: internal-dhs-ice-schutt
+    type: internal
+    agency_id: ICE
+    name: Kyle Schutt
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but in NYT roundup
+    qualifications:
+    documents:
+  - id: internal-dhs-tsa-schutt
+    type: internal
+    agency_id: TSA
+    name: Kyle Schutt
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but in NYT roundup
+    qualifications:
+    documents:
+  - id: internal-dhs-uscis-schutt
+    type: internal
+    agency_id: USCIS
+    name: Kyle Schutt
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but in NYT roundup
+    qualifications:
+    documents:
+  - id: internal-dhs-cbp-schutt
+    type: internal
+    agency_id: CBP
+    name: Kyle Schutt
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but in NYT roundup
+    qualifications:
+    documents:
+  - id: internal-dhs-fema-schutt
+    type: internal
+    agency_id: FEMA
+    name: Kyle Schutt
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but in NYT roundup
     qualifications:
     documents:
   events:
@@ -28938,8 +29328,9 @@
     never_accessed: false
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment:
-  start_date:
-  start_agency: CBP
+  start_date: '2025-02-19'
+  sort_date: '2025-02-19'
+  start_agency: CISA
 - name: Riley Sennott
   sort_name: Sennott
   slug: riley-sennott
@@ -28968,6 +29359,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-12'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -29005,6 +29397,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-03-14~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -29169,6 +29562,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-12'
+  sort_date: '2025-02-12'
   start_agency: GSA
 - name: Bryton Shang
   sort_name: Shang
@@ -29198,6 +29592,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-02'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -29249,6 +29644,7 @@
     aliases: []
   system_access: []
   start_date: '2025-04-02'
+  sort_date: '2025-04-02'
   start_agency: NOAA
 - name: Ethan Shaotran
   sort_name: Shaotran
@@ -29278,6 +29674,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -29315,6 +29712,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-12'
     nte_date: '2026-02-26'
     nte_date_truth: verified
     signed_date: '2025-02-03'
@@ -29352,6 +29750,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-18'
     nte_date: '2026-02-26'
     nte_date_truth: verified
     signed_date: '2025-02-18'
@@ -29389,6 +29788,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-20'
     nte_date: '2026-07-04'
     nte_date_truth: verified
     signed_date: '2025-02-21'
@@ -29426,6 +29826,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-12'
     nte_date: '2025-06-15'
     nte_date_truth: verified
     signed_date: '2025-03-12'
@@ -29822,6 +30223,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: GSA
 - name: Thomas Shedd
   sort_name: Shedd
@@ -29851,6 +30253,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-24'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -29888,6 +30291,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-14'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -30164,6 +30568,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-24'
+  sort_date: '2025-01-24'
   start_agency: GSA
 - name: Roland Shen
   sort_name: Shen
@@ -30193,6 +30598,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-18'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -30241,6 +30647,7 @@
     aliases: []
   system_access: []
   start_date: '2025-04-18'
+  sort_date: '2025-04-18'
   start_agency: Treasury
 - name: Alexander Simonpour
   sort_name: Simonpour
@@ -30270,6 +30677,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-07'
     nte_date: '2025-06-15'
     nte_date_truth: verified
     signed_date: '2025-03-12'
@@ -30307,6 +30715,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-14'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -30363,6 +30772,7 @@
     aliases: []
   system_access: []
   start_date: '2025-03-07'
+  sort_date: '2025-03-07'
   start_agency: USPS
 - name: Sam Smeal
   sort_name: Smeal
@@ -30392,6 +30802,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-16'
     nte_date: '2025-02-20'
     nte_date_truth:
     signed_date:
@@ -30416,6 +30827,7 @@
   events: []
   system_access: []
   start_date: '2025-02-16'
+  sort_date: '2025-02-16'
   start_agency: FAA
 - name: Brad Smith
   sort_name: Smith
@@ -30445,6 +30857,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -30668,6 +31081,7 @@
     aliases: []
   system_access: []
   start_date: '2025-03-04'
+  sort_date: '2025-03-04'
   start_agency: HHS
 - name: Keith Sonderling
   sort_name: Sonderling
@@ -30697,6 +31111,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-18'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -30734,6 +31149,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -30809,6 +31225,7 @@
     aliases: []
   system_access: []
   start_date: '2025-03-18'
+  sort_date: '2025-03-18'
   start_agency: DOL
 - name: Branden Spikes
   sort_name: Spikes
@@ -30824,6 +31241,7 @@
   positions: []
   events: []
   system_access: []
+  sort_date: '2025-01-20'
 - name: Christopher Stanley
   sort_name: Stanley
   slug: christopher-stanley
@@ -30852,6 +31270,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-28'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -30889,6 +31308,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-17'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -30926,6 +31346,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-04-02~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -31025,6 +31446,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-28'
+  sort_date: '2025-01-28'
   start_agency: OPM
 - name: Mark Steffensen
   sort_name: Steffensen
@@ -31054,6 +31476,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-25'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -31091,6 +31514,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-27'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -31139,6 +31563,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-25'
+  sort_date: '2025-02-25'
   start_agency: SSA
 - name: Brian Stube
   sort_name: Stube
@@ -31168,6 +31593,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-05-07~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -31192,6 +31618,7 @@
   events: []
   system_access: []
   start_date: 2025-05-07~
+  sort_date: 2025-05-07~
   start_agency: DOT
 - name: Christopher Sweet
   sort_name: Sweet
@@ -31221,6 +31648,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-04-10~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -31335,6 +31763,7 @@
     aliases: []
   system_access: []
   start_date: 2025-04-10~
+  sort_date: 2025-04-10~
   start_agency: HUD
 - name: Zach Terrell
   sort_name: Terrell
@@ -31364,6 +31793,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-06'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -31401,6 +31831,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-11'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -31438,6 +31869,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-14'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -31715,6 +32147,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     comment:
   start_date: '2025-03-06'
+  sort_date: '2025-03-06'
   start_agency: HHS
 - name: Katrine Trampe
   sort_name: Trampe
@@ -31744,6 +32177,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-05'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -31856,6 +32290,7 @@
       https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf, https://www.nytimes.com/2025/03/31/us/politics/doge-musk-federal-payroll.html
     comment:
   start_date: '2025-03-05'
+  sort_date: '2025-03-05'
   start_agency: DOI
 - name: Cary Volpert
   sort_name: Volpert
@@ -31885,6 +32320,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-25'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -31950,6 +32386,7 @@
     aliases: []
   system_access: []
   start_date: '2025-03-25'
+  sort_date: '2025-03-25'
   start_agency: VA
 - name: Russell Vought
   sort_name: Vought
@@ -31979,6 +32416,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -32016,6 +32454,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-08'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -32165,6 +32604,7 @@
     aliases: []
   system_access: []
   start_date:
+  sort_date: '2025-01-20'
   start_agency: EOP
 - name: Linda Whitridge
   sort_name: Whitridge
@@ -32194,6 +32634,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-25'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -32257,6 +32698,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-25'
+  sort_date: '2025-02-25'
   start_agency: Treasury
 - name: Jordan Wick
   sort_name: Wick
@@ -32286,6 +32728,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-01-20~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -32323,6 +32766,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-01~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -32360,6 +32804,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-07'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -32397,6 +32842,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: 2025-02-13~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -32434,6 +32880,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -32471,6 +32918,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-03-05'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -32508,6 +32956,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -33033,6 +33482,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment:
   start_date: 2025-01-20~
+  sort_date: 2025-01-20~
   start_agency: DOGE
 - name: Joanna Wischer
   sort_name: Wischer
@@ -33062,6 +33512,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -33349,6 +33800,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-20'
+  sort_date: '2025-01-20'
   start_agency: OPM
 - name: Ryan Wunderly
   sort_name: Wunderly
@@ -33378,6 +33830,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -33521,6 +33974,7 @@
     aliases: []
   system_access: []
   start_date: '2025-02-20'
+  sort_date: '2025-02-20'
   start_agency: Treasury
 - name: Chris Young
   sort_name: Young
@@ -33550,6 +34004,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-01-30'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -33587,6 +34042,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-02-07'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -33774,6 +34230,7 @@
     aliases: []
   system_access: []
   start_date: '2025-01-30'
+  sort_date: '2025-01-30'
   start_agency: OPM
 - name: Bridget Youngs
   sort_name: Youngs
@@ -33803,6 +34260,7 @@
     end_date_event:
     end_source:
     end_source_name:
+    sort_date: '2025-04-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -33851,4 +34309,5 @@
     aliases: []
   system_access: []
   start_date: '2025-04-04'
+  sort_date: '2025-04-04'
   start_agency: Peace

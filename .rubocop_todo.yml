@@ -25,6 +25,7 @@ AllCops:
 Lint/SuppressedException:
   Exclude:
   - 'Rakefile'
+  - 'plugins/builders/doge_links.rb'
 
 # Offense count: 6
 # Configuration parameters: AllowedMethods, AllowedPatterns, CountRepeatedAttributes.

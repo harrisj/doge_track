@@ -6,6 +6,8 @@ require 'sequel'
 require 'yaml'
 
 YAML_DIR = File.join(File.dirname(__FILE__), '..', 'raw_data')
+DEFAULT_POS_SORT_APPOINTED = '2025-01-20'
+DEFAULT_POS_SORT_OTHER = '2026-07-04'
 
 # Let us assign primary key
 Agency.unrestrict_primary_key
@@ -80,6 +82,10 @@ people_yaml.each do |p_hash|
     # FIXME: load documents as separate table
     pos_hash[:documents] = pos_hash[:documents].join(' ') if pos_hash[:documents]
 
+    pos_hash[:sort_date] ||= pos_hash[:start_date]
+    pos_hash[:sort_date] ||= DEFAULT_POS_SORT_APPOINTED if pos_hash[:type] == 'appointed'
+    pos_hash[:sort_date] ||= DEFAULT_POS_SORT_OTHER
+
     Position.create(pos_hash) # .reject { |k, _| %i[from alias documents agency].include?(k) })
 
     # if pos_hash.key? :agency
@@ -119,6 +125,10 @@ aliases_yaml.each do |alias_hash|
     pos_hash.transform_keys!(alias: :doge_alias_id, from: :from_agency_id, agency: :agency_id)
     pos_hash[:doge_alias_id] = a.id
     pos_hash[:documents] = pos_hash[:documents].join(' ') if pos_hash[:documents]
+    pos_hash[:sort_date] ||= pos_hash[:start_date]
+    pos_hash[:sort_date] ||= DEFAULT_POS_SORT_APPOINTED if pos_hash[:type] == 'appointed'
+    pos_hash[:sort_date] ||= DEFAULT_POS_SORT_OTHER
+
     Position.create(pos_hash)
   end
 end

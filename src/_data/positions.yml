@@ -16,6 +16,7 @@ dot-abrahamson:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -79,6 +80,7 @@ doge-aimonetti:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-XX
   nte_date:
   nte_date_truth:
   signed_date:
@@ -143,6 +145,7 @@ irs-akis:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -207,6 +210,7 @@ opm-akis:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -270,6 +274,7 @@ treasury-akis:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -333,6 +338,7 @@ opm-jacob-altik:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-24'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -396,6 +402,7 @@ detail-opm-usadf-altik:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-21'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -459,6 +466,7 @@ detail-opm-fcc-altik:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -522,6 +530,7 @@ detail-opm-dhs-armstrong:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -585,6 +594,7 @@ opm-anthony-armstrong:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -648,6 +658,7 @@ detail-opm-fdic-armstrong:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-10'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -711,6 +722,7 @@ education-balajadia:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -774,6 +786,7 @@ dol-sam-beyda:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-13~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -837,6 +850,7 @@ doge-beynon:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-04~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -901,6 +915,7 @@ detail-doge-education-alexandra-beynon:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-05'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -964,6 +979,7 @@ opm-riccardo-biasini:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date: '2025-07-18'
   nte_date_truth: verified
   signed_date:
@@ -1027,6 +1043,7 @@ ssa-bisignano:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -1090,6 +1107,7 @@ opm-brian-bjelde:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -1153,6 +1171,7 @@ opm-3:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date: '2025-07-18'
   nte_date_truth: verified
   signed_date:
@@ -1225,6 +1244,7 @@ detail-opm-education-akash-bobba:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-03'
   nte_date: '2026-02-12'
   nte_date_truth: verified
   signed_date: '2025-02-12'
@@ -1297,6 +1317,7 @@ detail-opm-ssa-opm-3:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-03'
   nte_date:
   nte_date_truth:
   signed_date: '2025-02-12'
@@ -1369,6 +1390,7 @@ ssa-employee-1:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-09'
   nte_date: '2026-02-08'
   nte_date_truth: verified
   signed_date:
@@ -1445,6 +1467,7 @@ doge-boizelle:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-XX
   nte_date:
   nte_date_truth:
   signed_date:
@@ -1492,13 +1515,83 @@ doge-boizelle:
   agency_ids:
   - DOGE
   - EOP
+gsa-bryant:
+  id: gsa-bryant
+  type: appointed
+  agency_id: GSA
+  name: Emily Bryant
+  doge_alias_id:
+  from_agency_id:
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: '2025-03-25'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  title:
+  series:
+  supervisory:
+  office:
+  source:
+  reimbursed:
+  reimbursement_amount:
+  comment: No details, but NYT links to her to GSA, so assuming she started there
+  qualifications:
+  documents:
+  person:
+    name: Emily Bryant
+    sort_name: Bryant
+    slug: emily-bryant
+    page_slug:
+    age: 23
+    background:
+    category: wrecker
+    own_page: false
+    blurb:
+    reporting_notes:
+    comment:
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    blurb: >-
+      Once a relatively obscure agency that provided shared services and procurement services for the government, GSA became an integral part of DOGE's
+      early-phase plans for taking over parts of the federal bureaucracy precisely for those reasons. From the very first day of the Trump presidency, DOGE
+      established a sizable team at GSA. Some of these were focused on drastic cost-reduction efforts like cancelling government leases or unilaterally
+      dropping the purchasing limit of government purchase cards to curtail micro-purchases by government staff. GSA was also the base for many of DOGE's
+      wrecking crews that were detailed to other agencies, with agency leadership quickly creating a walled-off enclave protected by security guards exclusively
+      for DOGE staff with "A-level access."
+    blurb_date:
+    doge_base: true
+    agency_page:
+    parent_id:
+  agency_ids:
+  - GSA
 detail-doge-ftc-bryant:
   id: detail-doge-ftc-bryant
   type: detailed
   agency_id: FTC
   name: Emily Bryant
   doge_alias_id:
-  from_agency_id: DOGE
+  from_agency_id: GSA
   start_date: 2025-03-28~
   start_date_truth: reported
   start_date_event:
@@ -1509,6 +1602,7 @@ detail-doge-ftc-bryant:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-03-28~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -1572,6 +1666,7 @@ gsa-cavanaugh:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-01'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -1641,6 +1736,7 @@ detail-gsa-usadf-cavanaugh:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-21'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -1704,6 +1800,7 @@ detail-gsa-usip-cavanaugh:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -1767,6 +1864,7 @@ detail-gsa-neh-cavanaugh:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-03-13~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -1830,6 +1928,7 @@ usip-cavanaugh-president:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-25'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -1895,6 +1994,7 @@ imls-cavanaugh:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-31'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -1958,6 +2058,7 @@ detail-gsa-exim-cavanaugh:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-05-14'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2021,6 +2122,7 @@ detail-gsa-mspb-cavanaugh:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-05-21'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2084,6 +2186,7 @@ usda-cole:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-XX
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2148,6 +2251,7 @@ dol-collins:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-05'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2211,6 +2315,7 @@ irs-corcos:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-28'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2239,7 +2344,7 @@ irs-corcos:
     page_slug:
     age: 36
     background: executive
-    category: wrecker
+    category: enabler
     own_page: false
     blurb:
     reporting_notes:
@@ -2275,6 +2380,7 @@ irs-corcos-cio:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-05-06~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2303,7 +2409,7 @@ irs-corcos-cio:
     page_slug:
     age: 36
     background: executive
-    category: wrecker
+    category: enabler
     own_page: false
     blurb:
     reporting_notes:
@@ -2339,6 +2445,7 @@ gsa-edward-coristine:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-01-20~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2408,6 +2515,7 @@ internal-dhs-tsa-coristine:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2472,6 +2580,7 @@ internal-dhs-uscis-coristine:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2536,6 +2645,7 @@ detail-gsa-opm-coristine:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-01-28~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2599,6 +2709,7 @@ detail-gsa-sba-coristine:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-03'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2662,6 +2773,7 @@ detail-gsa-dhs-coristine:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-05'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2725,6 +2837,7 @@ internal-hhs-fema-edward-coristine:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-05'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2789,6 +2902,7 @@ detail-gsa-state-coristine:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-10'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2852,6 +2966,7 @@ detail-gsa-usaid-coristine:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-10'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2915,6 +3030,7 @@ internal-dhs-cisa-coristine:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-19'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2979,6 +3095,7 @@ detail-doge-education-coristine:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3042,6 +3159,7 @@ detail-gsa-hhs-edward-coristine:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-05'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3112,6 +3230,7 @@ internal-hhs-cms-coristine:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-05'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3176,6 +3295,7 @@ detail-nasa-ssa-employee-2:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-18'
   nte_date: '2026-02-18'
   nte_date_truth: verified
   signed_date: '2025-03-06'
@@ -3249,6 +3369,7 @@ ssa-employee-2-cio:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-24'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3322,6 +3443,7 @@ opm-cromer:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3385,6 +3507,7 @@ detail-opm-usaid-cromer:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-XX
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3448,6 +3571,7 @@ detail-opm-doj-cromer:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-03-XX
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3511,6 +3635,7 @@ opm-stephen-duarte:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-03'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3574,6 +3699,7 @@ ssa-dudek:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-16'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3637,6 +3763,7 @@ gsa-stephen-ehikian:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3706,6 +3833,7 @@ detail-dol-dhs-elez:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3769,6 +3897,7 @@ internal-dhs-cpb-elez:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3833,6 +3962,7 @@ internal-dhs-ice-elez:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3897,6 +4027,7 @@ internal-dhs-tsa-elez:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3961,6 +4092,7 @@ internal-dhs-uscis-elez:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4025,6 +4157,7 @@ treasury-marko-elez:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-21'
   nte_date: '2025-05-25'
   nte_date_truth: verified
   signed_date:
@@ -4088,6 +4221,7 @@ detail-dol-ssa-employee-7:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-18'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4156,6 +4290,7 @@ detail-dol-hhs-marko-elez:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-05'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4226,6 +4361,7 @@ internal-hhs-cms-marko-elez:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-05'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4290,6 +4426,7 @@ opm-ezell:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4353,6 +4490,7 @@ detail-gsa-dhs-farritor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4416,6 +4554,7 @@ gsa-luke-farritor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4485,6 +4624,7 @@ internal-dhs-ice-farritor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4549,6 +4689,7 @@ internal-dhs-tsa-farritor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4613,6 +4754,7 @@ internal-dhs-uscis-farritor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4677,6 +4819,7 @@ detail-gsa-hhs-luke-farritor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-21'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4747,6 +4890,7 @@ detail-gsa-usaid-kliger:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-27'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4810,6 +4954,7 @@ internal-hhs-cdc-farritor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-30'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4874,6 +5019,7 @@ internal-hhs-cms-farritor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-31'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4938,6 +5084,7 @@ detail-doge-energy-luke-farritor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-04~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5001,6 +5148,7 @@ detail-gsa-cfpb-luke-farritor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-07'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5071,6 +5219,7 @@ detail-gsa-state-farritor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-10'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5134,6 +5283,7 @@ internal-hhs-nih-farritor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-24'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5198,6 +5348,7 @@ detail-gsa-nsf-farritor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-14'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5261,6 +5412,7 @@ gsa-fennessy:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5330,6 +5482,7 @@ education-ed-2:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-31'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5400,6 +5553,7 @@ internal-hhs-cms-fennessy:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-03'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5464,6 +5618,7 @@ detail-education-hhs-fennessy:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5534,6 +5689,7 @@ doge-joshua-fox:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-XX
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5581,6 +5737,76 @@ doge-joshua-fox:
   agency_ids:
   - DOGE
   - EOP
+gsa-justin-fox:
+  id: gsa-justin-fox
+  type: appointed
+  agency_id: GSA
+  name: Justin Fox
+  doge_alias_id:
+  from_agency_id:
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: '2025-02-20'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  title:
+  series:
+  supervisory:
+  office:
+  source:
+  reimbursed:
+  reimbursement_amount:
+  comment: No details, but just guessing
+  qualifications:
+  documents:
+  person:
+    name: Justin Fox
+    sort_name: Fox, Justin
+    slug: justin-fox
+    page_slug:
+    age:
+    background:
+    category: wrecker
+    own_page: false
+    blurb:
+    reporting_notes:
+    comment:
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    blurb: >-
+      Once a relatively obscure agency that provided shared services and procurement services for the government, GSA became an integral part of DOGE's
+      early-phase plans for taking over parts of the federal bureaucracy precisely for those reasons. From the very first day of the Trump presidency, DOGE
+      established a sizable team at GSA. Some of these were focused on drastic cost-reduction efforts like cancelling government leases or unilaterally
+      dropping the purchasing limit of government purchase cards to curtail micro-purchases by government staff. GSA was also the base for many of DOGE's
+      wrecking crews that were detailed to other agencies, with agency leadership quickly creating a walled-off enclave protected by security guards exclusively
+      for DOGE staff with "A-level access."
+    blurb_date:
+    doge_base: true
+    agency_page:
+    parent_id:
+  agency_ids:
+  - GSA
 detail-neh-justin-fox:
   id: detail-neh-justin-fox
   type: detailed
@@ -5598,6 +5824,7 @@ detail-neh-justin-fox:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-03-13~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5661,6 +5888,7 @@ dod-fulcher:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5724,6 +5952,7 @@ dod-fulcher-advisor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-25'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5787,6 +6016,7 @@ hhs-gamache:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-01-XX
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5857,6 +6087,7 @@ opm-joe-gebbia:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-18'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5920,6 +6151,7 @@ dol-derek-geissler:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-13~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -5983,6 +6215,7 @@ faa-glantz:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-16'
   nte_date: '2025-02-20'
   nte_date_truth:
   signed_date:
@@ -6047,6 +6280,7 @@ doge-amy-gleason:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2024-12-30'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -6111,6 +6345,7 @@ doge-amy-gleason-director:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-18'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -6175,6 +6410,7 @@ internal-hhs-cms-gleason:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-24~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -6239,6 +6475,7 @@ hhs-amy-gleason:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -6309,6 +6546,7 @@ ssa-antonio-gracias:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-23'
   nte_date: '2026-02-22'
   nte_date_truth: verified
   signed_date:
@@ -6377,6 +6615,7 @@ commerce-michael-grimes:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-29'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -6440,6 +6679,7 @@ gsa-josh-gruenbaum:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-24'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -6509,6 +6749,7 @@ imls-hamrick:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-31'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -6572,6 +6813,7 @@ doge-joshua-hanley:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-XX
   nte_date:
   nte_date_truth:
   signed_date:
@@ -6636,6 +6878,7 @@ opm-christina-hanna:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-03'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -6699,6 +6942,7 @@ doi-hassen-acting:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-07'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -6762,6 +7006,7 @@ doj-hoffman:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-21'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -6825,6 +7070,7 @@ greg-hogan-opm:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -6888,6 +7134,7 @@ greg-hogan-opm-2:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-11'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -6951,6 +7198,7 @@ gsa-hollander:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7020,6 +7268,7 @@ detail-doge-doi-holmes:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-24'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7083,6 +7332,7 @@ usip-jackson:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-17'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7146,6 +7396,7 @@ usaid-deputy-jackson:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-18'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7209,6 +7460,7 @@ gsa-jegannathan:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-04-24~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7278,6 +7530,7 @@ epa-jehling:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-12'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7341,6 +7594,7 @@ faa-kiernan:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-16'
   nte_date: '2025-02-20'
   nte_date_truth:
   signed_date:
@@ -7405,6 +7659,7 @@ doge-killian:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7469,6 +7724,7 @@ detaile-doge-epa-killian:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7532,6 +7788,7 @@ detail-doge-dol-killian:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-13~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7595,6 +7852,7 @@ detail-doge-ssa-killian:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-20~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7658,6 +7916,7 @@ detail-opm-dhs-kliger:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7721,6 +7980,7 @@ gavin-kliger-opm:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date: '2025-05-20'
   nte_date_truth: verified
   signed_date:
@@ -7784,6 +8044,7 @@ internal-dhs-tsa-kliger:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7848,6 +8109,7 @@ detail-opm-usaid-kliger:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-27'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7911,6 +8173,7 @@ detail-opm-usda-kliger:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-01~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7976,6 +8239,7 @@ detail-opm-cfpb-kliger:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-07'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -8046,6 +8310,7 @@ gavin-kliger-opm-2:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-18'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -8109,6 +8374,7 @@ detail-opm-irs-gavin-kliger:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-19'
   nte_date: '2025-06-19'
   nte_date_truth: inferred
   signed_date: '2025-02-19'
@@ -8173,6 +8439,7 @@ detail-opm-ftc-kliger:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-03-28~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -8236,6 +8503,7 @@ ssa-employee-6:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-23'
   nte_date: '2026-02-22'
   nte_date_truth: verified
   signed_date:
@@ -8304,6 +8572,7 @@ detail-ssa-doj-koval:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-15'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -8367,6 +8636,7 @@ onboard-treasury-thomas-krause:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-23'
   nte_date: '2025-04-10'
   nte_date_truth: verified
   signed_date:
@@ -8430,6 +8700,7 @@ appoint-treasury-thomas-krause:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-13'
   nte_date: '2025-07-03'
   nte_date_truth: verified
   signed_date:
@@ -8493,6 +8764,7 @@ hud-langmack:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-10'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -8563,6 +8835,7 @@ va-lavingia:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-25'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -8626,6 +8899,7 @@ gsa-jeremy-lewin:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -8695,6 +8969,7 @@ detail-usaid-jeremy-lewin:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-28'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -8758,6 +9033,7 @@ internal-hhs-cms-lewin:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-03'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -8822,6 +9098,7 @@ detail-gsa-cfpb-jeremy-lewin:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-06'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -8892,6 +9169,7 @@ detail-gsa-hhs-lewin:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-21'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -8962,6 +9240,7 @@ internal-hhs-nih-lewin:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-24'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9026,6 +9305,7 @@ usaid-jeremy-lewin-2:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-18'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9089,6 +9369,7 @@ state-lewin-foreign:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-15'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9152,6 +9433,7 @@ doge-lindemann:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-10~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9216,6 +9498,7 @@ epa-loving:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-12'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9279,6 +9562,7 @@ doi-luby:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-17'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9342,6 +9626,7 @@ opm-makecha:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-15'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9405,6 +9690,7 @@ fbi-makecha:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-03-30~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9471,6 +9757,7 @@ detail-fcc-makecha:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9534,6 +9821,7 @@ faa-malaska:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-16'
   nte_date: '2025-02-20'
   nte_date_truth:
   signed_date:
@@ -9598,6 +9886,7 @@ gsa-malcher:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-04-24~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9667,6 +9956,7 @@ iaf-marocco:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-28'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9730,6 +10020,7 @@ dhs-mccord:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-11'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9793,6 +10084,7 @@ sec-mendelson:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-05-02~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9856,6 +10148,7 @@ doge-miller:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9920,6 +10213,7 @@ hhs-minor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-14'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9990,6 +10284,7 @@ detail-hhs-nih-minor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-24'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10054,6 +10349,7 @@ hud-mirski:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-10'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10124,6 +10420,7 @@ sec-mishory:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-04-05~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10187,6 +10484,7 @@ opm-bryanne-mlodzianowski:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-03'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10250,6 +10548,7 @@ detail-dol-dhs-mohgaddassi:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10313,6 +10612,7 @@ dol-moghaddassi:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10376,6 +10676,7 @@ internal-dhs-cpb-mohgaddassi:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10440,6 +10741,7 @@ internal-dhs-ice-mohgaddassi:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10504,6 +10806,7 @@ internal-dhs-tsa-mohgaddassi:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10568,6 +10871,7 @@ internal-dhs-uscis-mohgaddassi:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10632,6 +10936,7 @@ detail-dol-ssa-employee-3:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-22'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10706,6 +11011,7 @@ detail-dol-hhs-mohgaddassi:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-05'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10776,6 +11082,7 @@ internal-hhs-cms-mohgaddassi:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-05'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10840,6 +11147,7 @@ opm-justin-monroe:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-28'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10903,6 +11211,7 @@ detail-opm-fbi-monroe:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-29'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10967,6 +11276,7 @@ onboard-education-employee-4:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-04'
   nte_date: '2025-08-04'
   nte_date_truth: verified
   signed_date:
@@ -11037,6 +11347,7 @@ detail-education-fdic-morgan:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-10'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11100,6 +11411,7 @@ eop-morse:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-23'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11166,6 +11478,7 @@ musk-doge:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11230,6 +11543,7 @@ treasury-newnam:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-06'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11293,6 +11607,7 @@ internal-treasury-irs-newnam:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-04-XX
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11357,6 +11672,7 @@ sba-park:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-03'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11420,6 +11736,7 @@ detail-exim-park:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-05-14'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11483,6 +11800,7 @@ noah-peters-opm:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11546,6 +11864,7 @@ opm-nikhil-rajpal:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-24'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11617,6 +11936,7 @@ detail-opm-noaa-rajpal:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11681,6 +12001,7 @@ detail-opm-cfpb-nikhil-rajpal:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-07'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11751,6 +12072,7 @@ doge-adam-ramada:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-23'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11815,6 +12137,7 @@ detail-doge-education-adam-ramada:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-28'
   nte_date: '2026-07-04'
   nte_date_truth: verified
   signed_date: '2025-02-12'
@@ -11878,6 +12201,7 @@ detail-doge-energy-adam-ramada:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-04~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11941,6 +12265,7 @@ detail-doge-dol-ramada:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-05'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12004,6 +12329,7 @@ detail-doge-fdic-ramada:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-10'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12067,6 +12393,7 @@ opm-austin-raynor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-30'
   nte_date: '2025-07-22'
   nte_date_truth: verified
   signed_date:
@@ -12130,6 +12457,7 @@ detail-ssa-dhs-rehling:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12193,6 +12521,7 @@ internal-dhs-tsa-rehling:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12257,6 +12586,7 @@ internal-dhs-uscis-rehling:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12321,6 +12651,7 @@ ssa-employee-9:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-23'
   nte_date: '2026-02-22'
   nte_date_truth: verified
   signed_date:
@@ -12391,6 +12722,7 @@ detail-ssa-doj-rehling:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-15'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12454,6 +12786,7 @@ energy-ryan-riedel:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-07'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12517,6 +12850,7 @@ hhs-rachel-riley:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-27'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12587,6 +12921,7 @@ internal-hhs-cms-riley:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-03'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12651,6 +12986,7 @@ internal-hhs-nih-riley:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-24'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12715,6 +13051,7 @@ detail-hhs-nsf-riley:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-14'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12778,6 +13115,7 @@ va-roussous:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-25'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12841,6 +13179,7 @@ ssa-mike-russo-cio:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-31'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12904,6 +13243,7 @@ ssa-mike-russo-advisor:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-25'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12969,6 +13309,7 @@ amanda-scales-opm:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -13032,6 +13373,7 @@ gsa-frank-schuler:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-18~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -13101,6 +13443,7 @@ internal-dhs-cbp-schutt:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -13165,6 +13508,7 @@ internal-dhs-fema-schutt:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -13229,6 +13573,7 @@ internal-dhs-ice-schutt:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -13293,6 +13638,7 @@ internal-dhs-tsa-schutt:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -13357,6 +13703,7 @@ internal-dhs-uscis-schutt:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2026-07-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -13421,6 +13768,7 @@ detail-gsa-dhs-schutt:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-19~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -13484,6 +13832,7 @@ internal-dhs-cisa-schutt:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-19'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -13548,6 +13897,7 @@ detail-gsa-hhs-kyle-schutt:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-14'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -13618,6 +13968,7 @@ gsa-sennott:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-12'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -13687,6 +14038,7 @@ detail-gsa-nasa-sennott:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-03-14~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -13750,6 +14102,7 @@ noaa-shang-cio:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-02'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -13814,6 +14167,7 @@ gsa-ethan-shaotran:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -13883,6 +14237,7 @@ detail-gsa-education-3:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-12'
   nte_date: '2026-02-26'
   nte_date_truth: verified
   signed_date: '2025-02-03'
@@ -13955,6 +14310,7 @@ detail-gsa-ssa-employee-10:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-18'
   nte_date: '2026-02-26'
   nte_date_truth: verified
   signed_date: '2025-02-18'
@@ -14027,6 +14383,7 @@ detail-gsa-usadf-ethan-shaotran:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-20'
   nte_date: '2026-07-04'
   nte_date_truth: verified
   signed_date: '2025-02-21'
@@ -14090,6 +14447,7 @@ detail-gsa-usps-ethan-shaotran:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-12'
   nte_date: '2025-06-15'
   nte_date_truth: verified
   signed_date: '2025-03-12'
@@ -14153,6 +14511,7 @@ gsa-thomas-shedd:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-24'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -14222,6 +14581,7 @@ dol-shedd:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-14'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -14285,6 +14645,7 @@ treasury-roland-shen:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-18'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -14348,6 +14709,7 @@ detail-gsa-usps-alex-simonpour:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-07'
   nte_date: '2025-06-15'
   nte_date_truth: verified
   signed_date: '2025-03-12'
@@ -14411,6 +14773,7 @@ detail-gsa-nasa-simonpour:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-14'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -14474,6 +14837,7 @@ faa-smeal:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-16'
   nte_date: '2025-02-20'
   nte_date_truth:
   signed_date:
@@ -14538,6 +14902,7 @@ hhs-brad-smith:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -14608,6 +14973,7 @@ labor-sonderling:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-18'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -14671,6 +15037,7 @@ imls-sonderling:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -14734,6 +15101,7 @@ opm-christopher-stanley:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-28'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -14797,6 +15165,7 @@ fhfa-christopher-stanley:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-17'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -14860,6 +15229,7 @@ detail-opm-doj-stanley:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-04-02~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -14923,6 +15293,7 @@ ssa-steffensen:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-25'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -14986,6 +15357,7 @@ ssa-steffensen-1:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-27'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15049,6 +15421,7 @@ dot-stube:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-05-07~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15112,6 +15485,7 @@ hud-sweet:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-04-10~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15184,6 +15558,7 @@ hhs-terrell:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-06'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15254,6 +15629,7 @@ internal-hhs-cms-terrell:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-11'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15318,6 +15694,7 @@ detail-hhs-nsf-terrell:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-14'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15381,6 +15758,7 @@ interior-trampe:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-05'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15444,6 +15822,7 @@ va-volpert:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-25'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15507,6 +15886,7 @@ omb-vought:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15570,6 +15950,7 @@ cfpb-acting-vought:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-08'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15640,6 +16021,7 @@ treasury-whitridge:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-25'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15703,6 +16085,7 @@ doge-wick:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-01-20~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15767,6 +16150,7 @@ detail-usda-wick:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-01~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15830,6 +16214,7 @@ detail-usds-cfpb-jordan-wick:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-07'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15900,6 +16285,7 @@ detail-doge-dol-wick:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: 2025-02-13~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15963,6 +16349,7 @@ detail-doge-education-wick:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -16026,6 +16413,7 @@ cfpb-jordan-wick:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-05'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -16096,6 +16484,7 @@ detail-cfpb-fcc-wick:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -16159,6 +16548,7 @@ joanna-wischer-opm:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -16222,6 +16612,7 @@ irs-wunderly:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -16285,6 +16676,7 @@ opm-chris-young:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-01-30'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -16348,6 +16740,7 @@ detail-opm-cfpb-chris-young:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-07'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -16418,6 +16811,7 @@ detail-peace-corps-youngs:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-04-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -16481,6 +16875,7 @@ ssa-employee-11:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-03-16'
   nte_date: '2026-03-15'
   nte_date_truth: verified
   signed_date:
@@ -16543,6 +16938,7 @@ ssa-employee-5:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-18'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -16601,6 +16997,7 @@ detail-opm-ssa-8:
   end_date_event:
   end_source:
   end_source_name:
+  sort_date: '2025-02-26'
   nte_date: '2026-02-26'
   nte_date_truth: verified
   signed_date: '2025-02-26'

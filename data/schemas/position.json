@@ -61,6 +61,10 @@
       "description": "The position description",
       "type": "string"
     },
+    "sort_date": {
+      "description": "Special string used for sorting if the start_date isn't set",
+      "type": "string"
+    },
     "fuzz": {
       "description": "For comments on the fuzziness of some data",
       "type": "string"

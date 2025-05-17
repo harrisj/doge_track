@@ -26,20 +26,22 @@ module Builders
 
     def edtf_string(attributes, tag)
       date_str, = attributes.split(',').map(&:strip)
-
       return '' if date_str.nil?
 
-      value = lookup_variable(tag.context, date_str)
-      date_str = value unless value.nil?
+      begin
+        value = lookup_variable(tag.context, date_str)
+        date_str = value unless value.nil?
+      rescue NoMethodError
+      end
 
       date = Date.edtf(date_str)
-      return '' if date.nil?
+      return '' if date.nil? || date_str.nil?
 
       if date_str =~ /~$/
         out_date = date_str.gsub('~', '')
         "<abbr title=\"#{date.humanize}\">#{out_date}<strong>~</strong></abbr>"
       elsif date_str =~ /-XX$/
-        "<abbr title=\"#{date.humanize}\">#{out_date}</abbr>"
+        "<abbr title=\"#{date.humanize}\">#{date_str}</abbr>"
       else
         date_str
       end
@@ -67,8 +69,12 @@ module Builders
       return nil if agency_id.nil?
       raise 'Nil Context' if context.nil?
 
-      value = lookup_variable(context, agency_id)
-      agency_id = value unless value.nil?
+      begin
+        value = lookup_variable(context, agency_id)
+        agency_id = value unless value.nil?
+      rescue NoMethodError
+        return nil
+      end
 
       agencies = context['site']['data']['pages']['agencies'].values
 
@@ -126,6 +132,7 @@ module Builders
       agency_id, = attributes.split(',').map(&:strip)
       url = link_agency_url(attributes, context)
 
+      # In case agency_id is null
       return agency_id || '' if url == NO_MATCH_URL_STRING
 
       agency = lookup_agency(context, agency_id)

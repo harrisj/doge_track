@@ -45,6 +45,8 @@ DB.create_table! :positions do
   string :end_source
   string :end_source_name
 
+  string :sort_date, null: false
+
   string :nte_date
   string :nte_date_truth
   string :signed_date

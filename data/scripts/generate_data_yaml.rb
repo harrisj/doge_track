@@ -9,7 +9,7 @@ require 'edtf-humanize'
 DATA_DIR = File.join(File.dirname(__FILE__), '..', '..', 'src', '_data')
 
 def events_for_output(events)
-  events.map do |e|
+  events.sort_by(&:sort_date).map do |e|
     e_out = e.to_hash
     e_out['agencies'] = e.agencies.map { |a| a.to_hash.slice(:id, :slug, :name, :short_name) }
     e_out['people'] = e.people.map { |x| x.to_hash.slice(:slug, :name, :sort_name) }
@@ -29,7 +29,7 @@ def events_for_output(events)
 end
 
 def positions_for_output(positions)
-  positions.map do |x|
+  positions.sort_by(&:sort_date).map do |x|
     out = x.to_hash
     out['duration_summary'] = x.duration_summary
     out['agency'] = { agency_id: x.agency.id, name: x.agency.name, short_name: x.agency.short_name }
@@ -124,16 +124,19 @@ end
 def generate_people_yaml
   out_file = File.join(DATA_DIR, 'people.yml')
 
-  out = Person.eager(:events, positions: :agency, system_roles: :govt_system).all.map do |p|
+  out = Person.eager(system_roles: :govt_system).all.map do |p|
     rec = p.to_hash
-    rec['positions'] = p.positions.map(&:to_hash)
+    rec['positions'] = p.positions.sort_by(&:sort_date).map(&:to_hash)
     rec['events'] = events_for_output(p.events)
     rec['system_access'] = p.system_roles.map(&:to_hash)
 
     if p.positions.any?
       pos = p.positions.first
       rec['start_date'] = pos.start_date
+      rec['sort_date'] = pos.sort_date
       rec['start_agency'] = pos.agency_id
+    else
+      rec['sort_date'] = '2025-01-20'
     end
 
     rec

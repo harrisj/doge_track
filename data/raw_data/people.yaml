@@ -360,9 +360,14 @@
   age: 23
   category: wrecker
   positions:
+  - id: gsa-bryant
+    type: appointed
+    agency: GSA
+    sort_date: 2025-03-25
+    comment: No details, but NYT links to her to GSA, so assuming she started there
   - id: detail-doge-ftc-bryant
     type: detailed
-    from: DOGE
+    from: GSA
     start_date: 2025-03-28~
     start_date_truth: reported
     comment: Title is not given, reported as starting "last week" from 2025-04-04
@@ -387,6 +392,7 @@
   - id: gsa-cavanaugh
     type: appointed
     agency: GSA
+    sort_date: 2025-02-01
     start_date: 2025-02-XX
     salary: "$120,500"
     comment: Introduces Frank Schuler on a video call at GSA in February
@@ -494,7 +500,7 @@
   slug: sam-corcos
   age: 36
   background: executive
-  category: wrecker
+  category: enabler
   positions:
   - id: irs-corcos
     type: consultant
@@ -1042,6 +1048,11 @@
   slug: justin-fox
   category: wrecker
   positions:
+  - id: gsa-justin-fox
+    type: appointed
+    agency: GSA
+    sort_date: 2025-02-20
+    comment: No details, but just guessing
   - id: detail-neh-justin-fox
     type: detailed
     agency: NEH
@@ -1899,6 +1910,7 @@
   - id: opm-makecha
     type: appointed
     title: Senior Advisor
+    sort_date: 2025-03-15
     start_date: 2025-03-XX
     source: https://www.pogo.org/investigations/inside-the-shadowy-crew-leading-the-governments-hr-office
     comment: POGO has his resume and listing as an OPM staffer

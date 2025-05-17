@@ -366,7 +366,7 @@
 # Federal Trade Commission
 - slug: ftc
 - people:
-  - **Emily Bryant** (2025-03-28~) (detailed from DOGE)
+  - **Emily Bryant** (2025-03-28~) (detailed from GSA)
   - **Gavin Kliger** (2025-03-28~) (detailed from OPM)
 
 # Food and Drug Administration
@@ -375,20 +375,22 @@
 # General Services Administration
 - slug: gsa
 - people:
-  - **Ethan Shaotran** (2025-01-20)
+  - **Emily Bryant**
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
   - **Conor Fennessy**
+  - **Justin Fox**
   - **Nicole Hollander** (2025-01-20)
   - **Jeremy Lewin** (2025-01-20)
+  - **Ethan Shaotran** (2025-01-20)
   - **Edward Coristine** (2025-01-20~)
   - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
   - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
   - **Riley Sennott** (2025-02-12)
   - **Frank Schuler** (2025-02-18~) Senior Advisor
   - **Nate Cavanaugh** (2025-02-XX)
-  - **Dave Malcher** (2025-04-24~)
   - **Raj Jegannathan** (2025-04-24~)
+  - **Dave Malcher** (2025-04-24~)
 
 # Health and Human Services
 - slug: hhs

@@ -110,7 +110,7 @@ end
 class Person < Sequel::Model
   one_to_many :doge_aliases, key: :name
   many_to_many :events, left_key: :name, order: :sort_date
-  one_to_many :positions, key: :name, order: :start_date
+  one_to_many :positions, key: :name, order: :sort_date
   one_to_many :system_roles, key: :name, order: :date_granted
 end
 
