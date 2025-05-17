@@ -100,7 +100,7 @@ namespace :data do
   end
 
   desc 'Cleans all generated data, recreates the DB and loads it with data'
-  task rebuild_db: ['data:clean_db', 'data:create_db', 'data:populate_db']
+  task rebuild_db: ['data:validate', 'data:clean_db', 'data:create_db', 'data:populate_db']
 end
 
 namespace :generate do
@@ -109,13 +109,18 @@ namespace :generate do
     ruby "#{SCRIPTS_DIR}/generate_reports.rb"
   end
 
+  desc 'Generate data files in the _data directory'
+  task :data_yaml do
+    ruby "#{SCRIPTS_DIR}/generate_data_yaml.rb"
+  end
+
   desc 'Builds statically generated API JSON'
   task :api_data do
     ruby "#{SCRIPTS_DIR}/generate_api_json.rb"
   end
 
   desc 'Run all generate tasks'
-  task all: %i[reports]
+  task all: %i[reports data_yaml]
 end
 
 desc 'Run generate tasks for the content'

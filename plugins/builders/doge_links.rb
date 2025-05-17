@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require 'edtf'
+require 'edtf-humanize'
+
 module Builders
   # Defines a collection of Liquid tags aka short-codes for dynamically linking to people/agencies/etc.
   # This lets me change a person's page in the database and have all the links update automatically
@@ -9,6 +12,7 @@ module Builders
     NO_MATCH_URL_STRING = '#'
 
     def build
+      liquid_tag :edtf, :edtf_string, as_block: false
       liquid_tag :person_url, :wrap_link_person_url, as_block: false
       liquid_tag :person_link, :wrap_link_person_tag, as_block: false
 
@@ -17,6 +21,27 @@ module Builders
 
       liquid_filter :agency_links do |agency_ids|
         agency_ids.map { |agency_id| link_agency_tag(agency_id, filters_context) }.join(', ')
+      end
+    end
+
+    def edtf_string(attributes, tag)
+      date_str, = attributes.split(',').map(&:strip)
+
+      return '' if date_str.nil?
+
+      value = lookup_variable(tag.context, date_str)
+      date_str = value unless value.nil?
+
+      date = Date.edtf(date_str)
+      return '' if date.nil?
+
+      if date_str =~ /~$/
+        out_date = date_str.gsub('~', '')
+        "<abbr title=\"#{date.humanize}\">#{out_date}<strong>~</strong></abbr>"
+      elsif date_str =~ /-XX$/
+        "<abbr title=\"#{date.humanize}\">#{out_date}</abbr>"
+      else
+        date_str
       end
     end
 

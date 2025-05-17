@@ -19,11 +19,19 @@
             <a href="{{ event.source }}">{{ event.source_name }}</a>
           </div>
         {% endif %}
-        {% if event.people != blank %}
-          {% for person in event.people %}
+        {% if event.names_aliases != blank %}
+          {% for person in event.names_aliases %}
             <div class="icon-text is-align-items-center ml-1">
-              <span class="icon is-small"><i class="fas fa-user"></i></span>
-              {%- render 'link_person', name: person.name, pages: pages %}
+              {% if person.alias != blank and person.name != blank %}
+                <span class="icon is-small"><i class="fas fa-user"></i></span>
+                {%- render 'link_person', name: person.name, pages: pages %} ({{ person.alias }})
+              {% elsif person.alias != blank %}
+                <span class="icon is-small"><i class="fas fa-user-secret"></i></span>
+                {{ person.alias }}
+              {% else %}
+                <span class="icon is-small"><i class="fas fa-user"></i></span>
+                {%- render 'link_person', name: person.name, pages: pages %}
+              {% endif %}
             </div>
           {% endfor %}
         {% endif %}

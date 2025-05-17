@@ -9,7 +9,7 @@ repos:
     name: Validate data files
     files: data/raw_data
     types_or: [ csv, yaml ]
-    entry: "bundle exec rake -q data:validate"
+    entry: "bundle exec rake data:validate"
     pass_filenames: false
     language: system
 
@@ -17,6 +17,6 @@ repos:
     name: Regenerate DB/files
     files: data/raw_data
     types_or: [ csv, yaml ]
-    entry: "bundle exec rake -q regenerate"
+    entry: "bundle exec rake regenerate"
     pass_filenames: false
     language: system
