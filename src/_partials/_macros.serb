@@ -1,0 +1,116 @@
+
+{% macro "person_url" do |name| 
+    person = site.data.people.find {|p| p.name.downcase == name || p.slug == name || p.sort_name.downcase == name.downcase }
+    person ? person.path : nil
+  end
+%}
+
+{% macro "person_link" do |name, display=nil|
+    person = site.data.people.find {|p| p.name.downcase == name.downcase || p.slug == name || p.sort_name.downcase == name.downcase }
+    if person && person.path && person.path != 'none'
+      display ||= person.name
+      "<a href=\"#{person.path}\">#{display}</a>".html_safe
+    else
+      display || name
+    end
+  end
+%}
+
+{% macro "agency_url" do |id| 
+    agency = site.data.agencies.find {|a| a.id == id || a.slug == id }
+    agency ? agency.path : nil
+  end
+%}
+
+{% macro "agency_link" do |id, display=nil|
+    agency = site.data.agencies.find {|x| x.id == id || x.slug == id }
+    if agency && agency.path
+      display ||= agency.id
+      "<a href=\"#{agency.path}\">#{display}</a>".html_safe
+    else
+      display || id
+    end
+  end
+%}
+
+{% macro "agency_links" do |agencies|
+    agencies.map {|a| agency_link(a.id)}.join(", ").html_safe
+  end
+%}
+
+{% macro "agencies" do |arr|
+    out = arr.map do |item|
+      if item.agency
+        item.agency
+      elsif item.agency_id
+        site.data.agencies.find {|a| a.id == item.agency_id }
+      else
+        nil
+      end
+    end.compact
+  end
+%}
+
+{% macro "event_icon" do |event|
+    case event.type
+    when 'access'
+      'fa-database'
+    when 'action'
+      'fa-wrench'
+    when 'directory'
+      'fa-users'
+    when 'disruption'
+      'fa-explosion'
+    when 'interagency'
+      'fa-handshake'
+    when 'legal'
+      'fa-legal'
+    when 'milestone'
+      'fa-map-pin'
+    when 'official'
+      'fa-landmark'
+    when 'onboard'
+      'fa-user-plus'
+    when 'oversight'
+      'fa-magnifying-glass'
+    when 'offboard'
+      'fa-user-minus'
+    when 'sighting'
+      'fa-binoculars'
+    else
+      'fa-note-sticky'
+    end
+  end
+%}
+
+{% macro "event_title" do |event|
+    case event.type
+    when 'access'
+      'System Access'
+    when 'action'
+      'Action'
+    when 'directory'
+      'Directory'
+    when 'disruption'
+      'Disruption'
+    when 'interagency'
+      'Interagency Coordination'
+    when 'legal'
+      'Legal'
+    when 'milestone'
+      'Milestone'
+    when 'official'
+      'Official'
+    when 'onboard'
+      'Onboard'
+    when 'oversight'
+      'Oversight'
+    when 'offboard'
+      'Offboard'
+    when 'sighting'
+      'Sighting'
+    else
+      'Report'
+    end
+  end
+%}

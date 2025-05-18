@@ -1,10 +1,11 @@
 ---
 layout: 'page'
 title: The Wreckers
+template_engine: serbea
 ---
-{% render "page_title", title: "The Wreckers" %}
+{%@ "title", title: "The Wreckers" %}
 
-{% find wreckers where site.data.people, category == 'wrecker' %}
+{% all_wreckers = site.data.people.select {|p| p.category == 'wrecker' } %}
 
 From the start, DOGE has moved aggressively across the federal government to shutter agencies, cancel spending and seize data for itself. To do this, they have relied on a specific type of person that I call "Wreckers" – usually young and male, from a technical background, willing to do whatever it takes to get the job done quickly. Scratch the surface of any horror story about DOGE's conduct and you'll usually find a wrecker at the core.
 
@@ -14,7 +15,7 @@ In the January 20th Executive Order "[Establishing and Implementing the Presiden
 
 > (c) DOGE Teams. In consultation with USDS, each Agency Head shall establish within their respective Agencies a DOGE Team of at least four employees, which may include Special Government Employees, hired or assigned within thirty days of the date of this Order. Agency Heads shall select the DOGE Team members in consultation with the USDS Administrator. Each DOGE Team will typically include one DOGE Team Lead, one engineer, one human resources specialist, and one attorney. Agency Heads shall ensure that DOGE Team Leads coordinate their work with USDS and advise their respective Agency Heads on implementing the President's DOGE Agenda.
 
-In this executive order, the DOGE teams were simply tasked with the vague goal of "IT Modernization" to make them seem like a continuation of the work that USDS had already been doing. However, what the DOGE Teams were actually there to do was to implement the "President's DOGE agenda." At first, this was left purposefully vague and undefined, but [a flurry of various executive orders]({% link topics/executive-orders.md %}) have made the goals of DOGE more clear.
+In this executive order, the DOGE teams were simply tasked with the vague goal of "IT Modernization" to make them seem like a continuation of the work that USDS had already been doing. However, what the DOGE Teams were actually there to do was to implement the "President's DOGE agenda." At first, this was left purposefully vague and undefined, but [a flurry of various executive orders]({% link "topics/executive-orders.md" %}) have made the goals of DOGE more clear.
 
 ## The Devil Is In The Details
 
@@ -40,31 +41,8 @@ Since the beginning of March, DOGE has started to move some of its detailed staf
 
 Most of the DOGE staff within the DOGE agency also called the US DOGE Service and often also referred to as the EOP (for Executive Office of the President) is leadership and support for activities across the government. However, a few of the early DOGE wreckers were hired in that agency, possibly through practices related to the USDS.
 
-{% find doge_wreckers where site.data.people, category == "wrecker", start_agency == "DOGE" %}
-<table class="table is-size-5">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Start Date</th>
-      <th>Background</th>
-      <th>Detailed To</th>
-    </tr>
-  </thead>
-  <tbody>
-  {% assign wreckers_iter = doge_wreckers | sort: "sort_date" %}
-  {% for person in wreckers_iter %}
-    {% find details where person.positions, type == "detailed" or type == "internal" %}
-    <tr>
-      <td>{% person_link person.name %}</td>
-      <td>{{ person.age }}</td>
-      <td>{% edtf person.start_date %}</td>
-      <td>{% if person.background %}{{ person.background | titleize }}{% endif %}</td>
-      <td>{{ details | map: "agency_id" | agency_links }}</td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
+{% doge_wreckers = all_wreckers.select {|w| w.start_agency == "DOGE" } %}
+{%@ "wrecker_table", wreckers: doge_wreckers %}
 
 Since the beginning of March, DOGE has been moving staff to work within agencies themselves, a move at least in part designed to allow the government to evade expedited discovery in the [*AFL-CIO v. DOL*](https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.51.1.pdf) case. For instance, Jordan Wick became an employee of the CFPB on March 4th, the same day that Amy Gleason and Brad Smith officially onboarded at HHS.
 
@@ -72,65 +50,19 @@ Since the beginning of March, DOGE has been moving staff to work within agencies
 
 Many of the early DOGE hires were formally appointed at the Office of Personnel Management. That
 
-{% find opm_wreckers where site.data.people, category == "wrecker", start_agency == "OPM" %}
-<table class="table is-size-5">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Start Date</th>
-      <th>Background</th>
-      <th>Detailed To</th>
-    </tr>
-  </thead>
-  <tbody>
-  {% assign wreckers_iter = opm_wreckers | sort: "sort_date" %}
-  {% for person in wreckers_iter %}
-    {% find details where person.positions, type == "detailed" or type == "internal" %}
-    <tr>
-      <td>{% person_link person.name %}</td>
-      <td>{{ person.age }}</td>
-      <td>{% edtf person.start_date %}</td>
-      <td>{% if person.background %}{{ person.background | titleize }}{% endif %}</td>
-      <td>{{ details | map: "agency_id" | agency_links }}</td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
+{% opm_wreckers = all_wreckers.select {|w| w.start_agency == "OPM" } %}
+{%@ "wrecker_table", wreckers: opm_wreckers %}
 
 ## General Services Administration
 
-{% find gsa_wreckers where site.data.people, category == "wrecker", start_agency == "GSA" %}
-<table class="table is-size-5">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Start Date</th>
-      <th>Background</th>
-      <th>Detailed To</th>
-    </tr>
-  </thead>
-  <tbody>
-  {% assign wreckers_iter = gsa_wreckers | sort: "sort_date" %}
-  {% for person in wreckers_iter  %}
-    {% find details where person.positions, type == "detailed" or type == "internal" %}
-    <tr>
-      <td>{% person_link person.name %}</td>
-      <td>{{ person.age }}</td>
-      <td>{% edtf person.start_date %}</td>
-      <td>{% if person.background %}{{ person.background | titleize }}{% endif %}</td>
-      <td>{{ details | map: "agency_id" | agency_links }}</td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
+{% gsa_wreckers = all_wreckers.select {|w| w.start_agency == "GSA" } %}
+{%@ "wrecker_table", wreckers: gsa_wreckers %}
 
 ### Other Agencies
 
 There are very few firm public details about the early days of DOGE, so there are some staff where I don't yet know how they started. These are all the other wreckers I am still trying to figure out details on.
 
-{% find other_wreckers where site.data.people, category == "wrecker", start_agency != "GSA", start_agency != "OPM", start_agency != "DOGE" %}
+{% other_wreckers = all_wreckers.select {|x| x.start_agency != "GSA" && x.start_agency != "OPM" && x.start_agency != "DOGE" } %}
 <table class="table is-size-5">
   <thead>
     <tr>
@@ -143,19 +75,17 @@ There are very few firm public details about the early days of DOGE, so there ar
     </tr>
   </thead>
   <tbody>
-  {% assign wreckers_iter = other_wreckers | sort: "sort_date" %}
-  {% for person in wreckers_iter  %}
-    {% assign details = person.positions | where_exp: "pos", "pos.type == 'detailed' or pos.type == 'internal'" %}
-    {% find diff_details where details, agency_id != person.start_agency %}
+  {% other_wreckers.each do |person|  %}
+    {% details = person.positions.select {|pos| (pos.type == "detailed" || pos.type == "internal") && pos.agency != person.start_agency } %}
     <tr>
-      <td>{% person_link person.name %}</td>
+      <td>{{ person_link(person.name) }}</td>
       <td>{{ person.age }}</td>
-      <td>{% agency_link person.start_agency %}</td>
-      <td>{% edtf person.start_date %}</td>
-      <td>{% if person.background %}{{ person.background | titleize }}{% endif %}</td>
-      <td>{{ diff_details | map: "agency_id" | agency_links }}</td>
+      <td>{{ agency_link(person.start_agency) }}</td>
+      <td>{{ person.start_date }}</td>
+      <td>{% if person.background %}{{ person.background | titleize }}{% end %}</td>
+      <td>{{ details | agencies | agency_links }}</td>
     </tr>
-  {% endfor %}
+  {% end %}
   </tbody>
 </table>
 

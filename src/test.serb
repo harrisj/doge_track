@@ -1,0 +1,13 @@
+---
+layout: page
+---
+
+{% event = site.data.events.first %}
+
+{%@ "event_item", event: event %}
+
+{% wreckers = site.data.people.select {|p| p.category == 'wrecker' } %}
+{% opm_wreckers = wreckers.select {|p| p.start_agency == 'OPM' } %}
+
+{%@ "wrecker_table", wreckers: opm_wreckers %}
+

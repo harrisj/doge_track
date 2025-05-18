@@ -14,7 +14,7 @@ DB.create_table! :agencies do
   string :blurb
   string :blurb_date
   boolean :doge_base, null: false, default: false
-  string :agency_page
+  string :path
   string :parent_id
 end
 
@@ -81,6 +81,7 @@ DB.create_table! :people do
   boolean :own_page, null: false, default: false
   string :blurb
   string :reporting_notes
+  string :path
   string :comment
 end
 

@@ -1,0 +1,3 @@
+{% for event in events %}
+  {%@ 'event_item', event: event %}
+{% end %}

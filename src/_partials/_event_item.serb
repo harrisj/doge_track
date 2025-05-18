@@ -1,0 +1,44 @@
+{% import "macros" %}
+
+<article class="media mb-1">
+  <div class="media-left mr-2">
+    <span class="icon is-small">
+      <i class="fa {{ event_icon(event) }}"></i>
+    </span>
+  </div>
+  <div class="media-content">
+    <div class="content mb-0">
+      <div class="is-flex is-mobile is-gap-0 is-size-6 is-align-content-flex-start is-align-items-center is-flex-wrap-wrap">
+        <div class="has-text-weight-bold is-size-5">{{ event_title(event) }}</div>
+        <div class="ml-2 is-size-5">{{ event.date }}</div>
+        <div class="icon-text is-align-items-center ml-2">
+          <span class="icon is-small"><i class="fas fa-building"></i></span>
+          {{ event.agencies | agency_links }}
+        </div>
+        {% if event.source_name %}
+          <div class="icon-text is-align-items-center ml-1">
+            <span class="icon is-small"><i class="fas fa-newspaper"></i></span>
+            <a href="{{ event.source }}">{{ event.source_name }}</a>
+          </div>
+        {% end %}
+        {% if event.names_aliases %}
+          {% for person in event.names_aliases %}
+            <div class="icon-text is-align-items-center ml-1">
+              {% if person.alias and person.name %}
+                <span class="icon is-small"><i class="fas fa-user"></i></span>
+                {{ person_link(person.name) }} ({{ person.alias }})
+              {% elsif person.alias %}
+                <span class="icon is-small"><i class="fas fa-user-secret"></i></span>
+                {{ person.alias }}
+              {% else %}
+                <span class="icon is-small"><i class="fas fa-user"></i></span>
+                {{ person_link(person.name) }}
+              {% end %}
+            </div>
+          {% end %}
+        {% end %}
+      </div>
+      <p class="is-size-5">{{ event.text }}</p>
+    </div>
+  </div>
+</article>
