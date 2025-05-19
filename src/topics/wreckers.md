@@ -7,7 +7,7 @@ template_engine: serbea
 
 {% all_wreckers = site.data.people.select {|p| p.category == 'wrecker' } %}
 
-From the start, DOGE has moved aggressively across the federal government to shutter agencies, cancel spending and seize data for itself. To do this, they have relied on a specific type of person that I call "Wreckers" – usually young and male, from a technical background, willing to do whatever it takes to get the job done quickly. Scratch the surface of any horror story about DOGE's conduct and you'll usually find a wrecker at the core.
+From the start, DOGE has moved aggressively across the federal government to shutter agencies, cancel spending and seize data for itself. To do this, they have relied on a specific type of person that I call "Wreckers" - usually young and male, from a technical background, willing to do whatever it takes to get the job done quickly. Scratch the surface of any horror story about DOGE's conduct and you'll usually find a wrecker at the core.
 
 ## The DOGE Teams
 
@@ -62,7 +62,7 @@ Many of the early DOGE hires were formally appointed at the Office of Personnel 
 
 There are very few firm public details about the early days of DOGE, so there are some staff where I don't yet know how they started. These are all the other wreckers I am still trying to figure out details on.
 
-{% other_wreckers = all_wreckers.select {|x| x.start_agency != "GSA" && x.start_agency != "OPM" && x.start_agency != "DOGE" } %}
+{% other_wreckers = all_wreckers.reject {|x| ["GSA", "OPM", "DOGE", "FAA"].include? x.start_agency }.sort_by {|x| [x.start_agency, x.sort_date]} %}
 <table class="table is-size-5">
   <thead>
     <tr>
@@ -71,19 +71,19 @@ There are very few firm public details about the early days of DOGE, so there ar
       <th>Agency</th>
       <th>Start Date</th>
       <th>Background</th>
-      <th>Detailed To</th>
+      <th>Other Agencies</th>
     </tr>
   </thead>
   <tbody>
   {% other_wreckers.each do |person|  %}
-    {% details = person.positions.select {|pos| (pos.type == "detailed" || pos.type == "internal") && pos.agency != person.start_agency } %}
+    {% details = person.positions.reject {|pos| pos.agency_id == person.start_agency } %}
     <tr>
       <td>{{ person_link(person.name) }}</td>
       <td>{{ person.age }}</td>
       <td>{{ agency_link(person.start_agency) }}</td>
-      <td>{{ person.start_date }}</td>
-      <td>{% if person.background %}{{ person.background | titleize }}{% end %}</td>
-      <td>{{ details | agencies | agency_links }}</td>
+      <td><nobr>{{ person.start_date }}</nobr></td>
+      <td>{{ person_background(person) }}</td>
+      <td>{{ details | agencies | uniq | agency_links }}</td>
     </tr>
   {% end %}
   </tbody>

@@ -39,7 +39,7 @@ out = aliases.sort_by { |a| a[:id] }
 
 File.open(out_file, 'w') do |file|
   schema_hdr = "# yaml-language-server: $schema=../schemas/aliases-file.json\n"
-  out_yaml = YAML.dump(out, line_width: 200, stringify_names: true, header: false)
+  out_yaml = YAML.dump(out, line_width: 300, stringify_names: true, header: false)
   file.write(schema_hdr, out_yaml.gsub(/^- /, "\n- "))
 end
 

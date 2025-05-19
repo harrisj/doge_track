@@ -7,18 +7,18 @@
       <th>Age</th>
       <th>Start Date</th>
       <th>Background</th>
-      <th>Detailed To</th>
+      <th>Other Agencies</th>
     </tr>
   </thead>
   <tbody>
   {% wreckers.sort_by {|x| x.sort_date}.each do |person| %}
-    {% details = person.positions.select {|pos| pos.type == "detailed" || pos.type == "internal" } %}
+    {% details = person.positions.reject {|pos| pos.agency_id == person.start_agency } %}
     <tr>
       <td>{{ person_link(person.name) }}</td>
       <td>{{ person.age }}</td>
-      <td>{{ person.start_date }}</td>
-      <td>{% if person.background %}{{ person.background | titleize }}{% end %}</td>
-      <td>{{ details | agencies | agency_links }}</td>
+      <td><nobr>{{ person.start_date }}</nobr></td>
+      <td>{{ person_background(person) }}</td>
+      <td>{{ details | agencies | uniq | agency_links }}</td>
     </tr>
   {% end %}
   </tbody>

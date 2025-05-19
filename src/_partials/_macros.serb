@@ -140,3 +140,14 @@
     end
   end
 %}
+
+{% macro "person_background" do |person|
+    if person.background.nil?
+      ""
+    elsif person.background == "hr"
+      "HR"
+    else
+      person.background.titleize
+    end
+   end
+%}

@@ -2228,6 +2228,29 @@
       name: Michael Grimes
       sort_name: Grimes
     aliases: []
+  - id: 7kWAzJ0K
+    type: disruption
+    date: '2025-05-16'
+    sort_date: '2025-05-16'
+    time:
+    text: >-
+      Because of DOGE-directed cuts, a National Weather Service office in Jackson, KY did not have an overnight forecaster who is able to track and forecast
+      tornado watches for a storm sweeping across the state
+    fuzz:
+    comment:
+    source: https://www.nytimes.com/2025/05/16/weather/nws-cuts-kentucky-tornado.html
+    source_title: After Cuts, a Kentucky Weather Office Scrambles for Staffing as Severe Storms Bear Down
+    source_name: The New York Times
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: NOAA
+      slug: noaa
+      name: National Oceanic and Atmospheric Administration
+      short_name: NOAA
+    people: []
+    aliases: []
   system_access:
   - id: google-noaa-rajpal
     govt_system_id: google-drive
@@ -5487,7 +5510,7 @@
     agency_id: DOI
     name: Stephanie Holmes
     doge_alias_id:
-    from_agency_id:
+    from_agency_id: DOGE
     start_date: '2025-02-24'
     start_date_truth: reported
     start_date_event:
@@ -5525,6 +5548,10 @@
       agency_id: DOI
       name: Department of the Interior
       short_name: Interior
+    from_agency:
+      agency_id: DOGE
+      name: Department of Government Efficiency
+      short_name: DOGE
     person:
       name: Stephanie Holmes
       sort_name: Holmes
@@ -6224,6 +6251,64 @@
       comment:
       obj_type: Person
     obj_type: Position
+  - id: doge-killian
+    type: appointed
+    agency_id: DOGE
+    name: Cole Killian
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-01-20'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-01-20'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.wired.com/story/elon-musk-digital-coup-doge-data-ai/
+    reimbursed:
+    reimbursement_amount:
+    comment: Listed as interviewing USDS staff on 1/21, not in GSA or OPM crew
+    qualifications:
+    documents:
+    duration_summary: from Jan 20, 2025
+    agency:
+      agency_id: DOGE
+      name: Department of Government Efficiency
+      short_name: DOGE
+    person:
+      name: Cole Killian
+      sort_name: Killian
+      slug: cole-killian
+      page_slug:
+      age: 24
+      background: coder
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#cole-killian"
+      comment:
+      obj_type: Person
+    obj_type: Position
   - id: musk-doge
     type: appointed
     agency_id: DOGE
@@ -6337,64 +6422,6 @@
       blurb:
       reporting_notes:
       path: "/people#katie-miller"
-      comment:
-      obj_type: Person
-    obj_type: Position
-  - id: doge-killian
-    type: appointed
-    agency_id: DOGE
-    name: Cole Killian
-    doge_alias_id:
-    from_agency_id:
-    start_date: '2025-01-20'
-    start_date_truth: reported
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.wired.com/story/elon-musk-digital-coup-doge-data-ai/
-    reimbursed:
-    reimbursement_amount:
-    comment: Listed as interviewing USDS staff on 1/21, not in GSA or OPM crew
-    qualifications:
-    documents:
-    duration_summary: from Jan 20, 2025
-    agency:
-      agency_id: DOGE
-      name: Department of Government Efficiency
-      short_name: DOGE
-    person:
-      name: Cole Killian
-      sort_name: Killian
-      slug: cole-killian
-      page_slug:
-      age: 24
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#cole-killian"
       comment:
       obj_type: Person
     obj_type: Position
@@ -6572,6 +6599,64 @@
       comment:
       obj_type: Person
     obj_type: Position
+  - id: doge-holmes
+    type: appointed
+    agency_id: DOGE
+    name: Stephanie Holmes
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-02-05~
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-02-05~
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
+    reimbursed:
+    reimbursement_amount:
+    comment: Was added to the ProPublica tracker on 2025-02-06
+    qualifications:
+    documents:
+    duration_summary: from ~ Feb 2025
+    agency:
+      agency_id: DOGE
+      name: Department of Government Efficiency
+      short_name: DOGE
+    person:
+      name: Stephanie Holmes
+      sort_name: Holmes
+      slug: stephanie-holmes
+      page_slug:
+      age: 43
+      background: hr
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#stephanie-holmes"
+      comment:
+      obj_type: Person
+    obj_type: Position
   - id: doge-lindemann
     type: appointed
     agency_id: DOGE
@@ -6688,6 +6773,64 @@
       comment:
       obj_type: Person
     obj_type: Position
+  - id: doge-aimonetti
+    type: appointed
+    agency_id: DOGE
+    name: Justin Aimonetti
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-02-XX
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-02-XX
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz: Report just says started sometime in February
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+    duration_summary: from ~ Feb 2025
+    agency:
+      agency_id: DOGE
+      name: Department of Government Efficiency
+      short_name: DOGE
+    person:
+      name: Justin Aimonetti
+      sort_name: Aimonetti
+      slug: justin-aimonetti
+      page_slug:
+      age: 31
+      background: lawyer
+      category: support
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#justin-aimonetti"
+      comment:
+      obj_type: Person
+    obj_type: Position
   - id: doge-joshua-hanley
     type: appointed
     agency_id: DOGE
@@ -6743,64 +6886,6 @@
       blurb:
       reporting_notes:
       path: "/people#joshua-hanley"
-      comment:
-      obj_type: Person
-    obj_type: Position
-  - id: doge-boizelle
-    type: appointed
-    agency_id: DOGE
-    name: Ashley Boizelle
-    doge_alias_id:
-    from_agency_id:
-    start_date: 2025-02-XX
-    start_date_truth: reported
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-02-XX
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz: Report just says started sometime in February
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
-    reimbursed:
-    reimbursement_amount:
-    comment:
-    qualifications:
-    documents:
-    duration_summary: from ~ Feb 2025
-    agency:
-      agency_id: DOGE
-      name: Department of Government Efficiency
-      short_name: DOGE
-    person:
-      name: Ashley Boizelle
-      sort_name: Boizelle
-      slug: ashley-boizelle
-      page_slug:
-      age:
-      background: lawyer
-      category: support
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#ashley-boizelle"
       comment:
       obj_type: Person
     obj_type: Position
@@ -6862,10 +6947,10 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: doge-aimonetti
+  - id: doge-boizelle
     type: appointed
     agency_id: DOGE
-    name: Justin Aimonetti
+    name: Ashley Boizelle
     doge_alias_id:
     from_agency_id:
     start_date: 2025-02-XX
@@ -6906,17 +6991,17 @@
       name: Department of Government Efficiency
       short_name: DOGE
     person:
-      name: Justin Aimonetti
-      sort_name: Aimonetti
-      slug: justin-aimonetti
+      name: Ashley Boizelle
+      sort_name: Boizelle
+      slug: ashley-boizelle
       page_slug:
-      age: 31
+      age:
       background: lawyer
       category: support
       own_page: false
       blurb:
       reporting_notes:
-      path: "/people#justin-aimonetti"
+      path: "/people#ashley-boizelle"
       comment:
       obj_type: Person
     obj_type: Position
@@ -9719,68 +9804,6 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: internal-dhs-uscis-farritor
-    type: internal
-    agency_id: ICE
-    name: Luke Farritor
-    doge_alias_id:
-    from_agency_id: USCIS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2026-07-04'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but in NYT roundup
-    qualifications:
-    documents:
-    duration_summary: dates unknown
-    agency:
-      agency_id: ICE
-      name: Immigration and Customs Enforcement
-      short_name: ICE
-    from_agency:
-      agency_id: USCIS
-      name: US Citizenship & Immigration Services
-      short_name: USCIS
-    person:
-      name: Luke Farritor
-      sort_name: Farritor
-      slug: luke-farritor
-      page_slug:
-      age: 23
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#luke-farritor"
-      comment:
-      obj_type: Person
-    obj_type: Position
   - id: internal-dhs-ice-mohgaddassi
     type: internal
     agency_id: ICE
@@ -10277,68 +10300,6 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: internal-dhs-ice-elez
-    type: internal
-    agency_id: ICE
-    name: Marko Elez
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2026-07-04'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No other info, just mentioned in NYT roundup
-    qualifications:
-    documents:
-    duration_summary: dates unknown
-    agency:
-      agency_id: ICE
-      name: Immigration and Customs Enforcement
-      short_name: ICE
-    from_agency:
-      agency_id: DHS
-      name: Department of Homeland Security
-      short_name: DHS
-    person:
-      name: Marko Elez
-      sort_name: Elez
-      slug: marko-elez
-      page_slug:
-      age: 25
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#marko-elez"
-      comment:
-      obj_type: Person
-    obj_type: Position
   - id: internal-dhs-tsa-schutt
     type: internal
     agency_id: TSA
@@ -10398,6 +10359,68 @@
       blurb:
       reporting_notes:
       path: "/people#kyle-schutt"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: internal-dhs-ice-elez
+    type: internal
+    agency_id: ICE
+    name: Marko Elez
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No other info, just mentioned in NYT roundup
+    qualifications:
+    documents:
+    duration_summary: dates unknown
+    agency:
+      agency_id: ICE
+      name: Immigration and Customs Enforcement
+      short_name: ICE
+    from_agency:
+      agency_id: DHS
+      name: Department of Homeland Security
+      short_name: DHS
+    person:
+      name: Marko Elez
+      sort_name: Elez
+      slug: marko-elez
+      page_slug:
+      age: 25
+      background: coder
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#marko-elez"
       comment:
       obj_type: Person
     obj_type: Position
@@ -10522,6 +10545,68 @@
       blurb:
       reporting_notes:
       path: "/people#marko-elez"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: internal-dhs-uscis-farritor
+    type: internal
+    agency_id: USCIS
+    name: Luke Farritor
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but in NYT roundup
+    qualifications:
+    documents:
+    duration_summary: dates unknown
+    agency:
+      agency_id: USCIS
+      name: US Citizenship & Immigration Services
+      short_name: USCIS
+    from_agency:
+      agency_id: DHS
+      name: Department of Homeland Security
+      short_name: DHS
+    person:
+      name: Luke Farritor
+      sort_name: Farritor
+      slug: luke-farritor
+      page_slug:
+      age: 23
+      background: coder
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#luke-farritor"
       comment:
       obj_type: Person
     obj_type: Position
@@ -13747,6 +13832,64 @@
       blurb:
       reporting_notes:
       path: "/people#sam-beyda"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: dol-marko-elez
+    type: appointed
+    agency_id: DOL
+    name: Marko Elez
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-02-14~
+    start_date_truth: inferred
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-02-14~
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source:
+    reimbursed:
+    reimbursement_amount:
+    comment: Marko is detailed from DOL to other agencies, so rehired there at some point in February
+    qualifications:
+    documents:
+    duration_summary: from ~ Feb 2025
+    agency:
+      agency_id: DOL
+      name: Department of Labor
+      short_name: DOL
+    person:
+      name: Marko Elez
+      sort_name: Elez
+      slug: marko-elez
+      page_slug:
+      age: 25
+      background: coder
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#marko-elez"
       comment:
       obj_type: Person
     obj_type: Position
@@ -17753,64 +17896,6 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: doge-adam-ramada
-    type: appointed
-    agency_id: DOGE
-    name: Adam Ramada
-    doge_alias_id:
-    from_agency_id:
-    start_date: '2025-01-23'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-23'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.5_1.pdf
-    reimbursed:
-    reimbursement_amount:
-    comment: Details provided in sworn testimony
-    qualifications:
-    documents:
-    duration_summary: from Jan 23, 2025
-    agency:
-      agency_id: DOGE
-      name: Department of Government Efficiency
-      short_name: DOGE
-    person:
-      name: Adam Ramada
-      sort_name: Ramada
-      slug: adam-ramada
-      page_slug:
-      age: 35
-      background: finance
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#adam-ramada"
-      comment:
-      obj_type: Person
-    obj_type: Position
   - id: eop-morse
     type: appointed
     agency_id: EOP
@@ -17872,6 +17957,64 @@
       comment:
       obj_type: Person
     obj_type: Position
+  - id: doge-adam-ramada
+    type: appointed
+    agency_id: DOGE
+    name: Adam Ramada
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-01-23'
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-01-23'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.5_1.pdf
+    reimbursed:
+    reimbursement_amount:
+    comment: Details provided in sworn testimony
+    qualifications:
+    documents:
+    duration_summary: from Jan 23, 2025
+    agency:
+      agency_id: DOGE
+      name: Department of Government Efficiency
+      short_name: DOGE
+    person:
+      name: Adam Ramada
+      sort_name: Ramada
+      slug: adam-ramada
+      page_slug:
+      age: 35
+      background: finance
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#adam-ramada"
+      comment:
+      obj_type: Person
+    obj_type: Position
   - id: doge-beynon
     type: appointed
     agency_id: DOGE
@@ -17927,6 +18070,64 @@
       blurb:
       reporting_notes:
       path: "/people#alexandra-beynon"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: doge-holmes
+    type: appointed
+    agency_id: DOGE
+    name: Stephanie Holmes
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-02-05~
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-02-05~
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
+    reimbursed:
+    reimbursement_amount:
+    comment: Was added to the ProPublica tracker on 2025-02-06
+    qualifications:
+    documents:
+    duration_summary: from ~ Feb 2025
+    agency:
+      agency_id: DOGE
+      name: Department of Government Efficiency
+      short_name: DOGE
+    person:
+      name: Stephanie Holmes
+      sort_name: Holmes
+      slug: stephanie-holmes
+      page_slug:
+      age: 43
+      background: hr
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#stephanie-holmes"
       comment:
       obj_type: Person
     obj_type: Position
@@ -18046,10 +18247,10 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: doge-joshua-hanley
+  - id: doge-boizelle
     type: appointed
     agency_id: DOGE
-    name: Joshua Hanley
+    name: Ashley Boizelle
     doge_alias_id:
     from_agency_id:
     start_date: 2025-02-XX
@@ -18090,17 +18291,17 @@
       name: Department of Government Efficiency
       short_name: DOGE
     person:
-      name: Joshua Hanley
-      sort_name: Hanley
-      slug: joshua-hanley
+      name: Ashley Boizelle
+      sort_name: Boizelle
+      slug: ashley-boizelle
       page_slug:
-      age: 27
+      age:
       background: lawyer
       category: support
       own_page: false
       blurb:
       reporting_notes:
-      path: "/people#joshua-hanley"
+      path: "/people#ashley-boizelle"
       comment:
       obj_type: Person
     obj_type: Position
@@ -18162,10 +18363,10 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: doge-boizelle
+  - id: doge-joshua-hanley
     type: appointed
     agency_id: DOGE
-    name: Ashley Boizelle
+    name: Joshua Hanley
     doge_alias_id:
     from_agency_id:
     start_date: 2025-02-XX
@@ -18206,17 +18407,17 @@
       name: Department of Government Efficiency
       short_name: DOGE
     person:
-      name: Ashley Boizelle
-      sort_name: Boizelle
-      slug: ashley-boizelle
+      name: Joshua Hanley
+      sort_name: Hanley
+      slug: joshua-hanley
       page_slug:
-      age:
+      age: 27
       background: lawyer
       category: support
       own_page: false
       blurb:
       reporting_notes:
-      path: "/people#ashley-boizelle"
+      path: "/people#joshua-hanley"
       comment:
       obj_type: Person
     obj_type: Position
@@ -21756,6 +21957,122 @@
   parent_id:
   children: []
   positions:
+  - id: gsa-jeremy-lewin
+    type: appointed
+    agency_id: GSA
+    name: Jeremy Lewin
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-01-20'
+    start_date_truth: guessed
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-01-20'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source:
+    reimbursed:
+    reimbursement_amount:
+    comment: I know he started at the GSA before 1/28
+    qualifications:
+    documents:
+    duration_summary: from Jan 20, 2025
+    agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Jeremy Lewin
+      sort_name: Lewin
+      slug: jeremy-lewin
+      page_slug:
+      age: 28
+      background: lawyer
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#jeremy-lewin"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: gsa-stephen-ehikian
+    type: appointed
+    agency_id: GSA
+    name: Stephen Ehikian
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-01-20'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-01-20'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title: Acting Administrator
+    series:
+    supervisory: true
+    office:
+    source: https://www.nextgov.com/people/2025/01/gsa-announces-new-fas-tts-leadership/402485/
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+    duration_summary: from Jan 20, 2025
+    agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Stephen Ehikian
+      sort_name: Ehikian
+      slug: stephen-ehikian
+      page_slug:
+      age: 43
+      background: executive
+      category: enabler
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#stephen-ehikian"
+      comment:
+      obj_type: Person
+    obj_type: Position
   - id: gsa-luke-farritor
     type: appointed
     agency_id: GSA
@@ -21872,64 +22189,6 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: gsa-jeremy-lewin
-    type: appointed
-    agency_id: GSA
-    name: Jeremy Lewin
-    doge_alias_id:
-    from_agency_id:
-    start_date: '2025-01-20'
-    start_date_truth: guessed
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: I know he started at the GSA before 1/28
-    qualifications:
-    documents:
-    duration_summary: from Jan 20, 2025
-    agency:
-      agency_id: GSA
-      name: General Services Administration
-      short_name: GSA
-    person:
-      name: Jeremy Lewin
-      sort_name: Lewin
-      slug: jeremy-lewin
-      page_slug:
-      age: 28
-      background: lawyer
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#jeremy-lewin"
-      comment:
-      obj_type: Person
-    obj_type: Position
   - id: gsa-hollander
     type: appointed
     agency_id: GSA
@@ -21985,64 +22244,6 @@
       blurb:
       reporting_notes:
       path: "/people#nicole-hollander"
-      comment:
-      obj_type: Person
-    obj_type: Position
-  - id: gsa-stephen-ehikian
-    type: appointed
-    agency_id: GSA
-    name: Stephen Ehikian
-    doge_alias_id:
-    from_agency_id:
-    start_date: '2025-01-20'
-    start_date_truth: reported
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title: Acting Administrator
-    series:
-    supervisory: true
-    office:
-    source: https://www.nextgov.com/people/2025/01/gsa-announces-new-fas-tts-leadership/402485/
-    reimbursed:
-    reimbursement_amount:
-    comment:
-    qualifications:
-    documents:
-    duration_summary: from Jan 20, 2025
-    agency:
-      agency_id: GSA
-      name: General Services Administration
-      short_name: GSA
-    person:
-      name: Stephen Ehikian
-      sort_name: Ehikian
-      slug: stephen-ehikian
-      page_slug:
-      age: 43
-      background: executive
-      category: enabler
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#stephen-ehikian"
       comment:
       obj_type: Person
     obj_type: Position
@@ -22220,14 +22421,14 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: gsa-cavanaugh
+  - id: gsa-park
     type: appointed
     agency_id: GSA
-    name: Nate Cavanaugh
+    name: Donald Park
     doge_alias_id:
     from_agency_id:
     start_date: 2025-02-XX
-    start_date_truth:
+    start_date_truth: inferred
     start_date_event:
     start_source:
     start_source_name:
@@ -22237,6 +22438,64 @@
     end_source:
     end_source_name:
     sort_date: '2025-02-01'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source:
+    reimbursed:
+    reimbursement_amount:
+    comment: Inferring detailed from GSA to SBA
+    qualifications:
+    documents:
+    duration_summary: from ~ Feb 2025
+    agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Donald Park
+      sort_name: Park
+      slug: donald-park
+      page_slug:
+      age:
+      background: finance
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#donald-park"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: gsa-cavanaugh
+    type: appointed
+    agency_id: GSA
+    name: Nate Cavanaugh
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-02-03'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-02-03'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22255,10 +22514,10 @@
     source: https://www.wired.com/story/doge-government-salaries-elon-musk/
     reimbursed:
     reimbursement_amount:
-    comment: Introduces Frank Schuler on a video call at GSA in February
+    comment: Introduces Frank Schuler on a video call at GSA in February; listed in ProPublica roundup on Feb 05; going to assume Monday start
     qualifications:
     documents:
-    duration_summary: from ~ Feb 2025
+    duration_summary: from Feb 03, 2025
     agency:
       agency_id: GSA
       name: General Services Administration
@@ -22510,14 +22769,14 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: gsa-jegannathan
+  - id: gsa-wood
     type: appointed
     agency_id: GSA
-    name: Raj Jegannathan
+    name: Marshall Wood
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-04-24~
-    start_date_truth: reported
+    start_date: 2025-04-XX
+    start_date_truth: guessed
     start_date_event:
     start_source:
     start_source_name:
@@ -22526,7 +22785,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-04-24~
+    sort_date: '2025-04-15'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22542,10 +22801,10 @@
     series:
     supervisory:
     office:
-    source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
     reimbursed:
     reimbursement_amount:
-    comment:
+    comment: FIXME, find more details on when started
     qualifications:
     documents:
     duration_summary: from ~ Apr 2025
@@ -22554,17 +22813,17 @@
       name: General Services Administration
       short_name: GSA
     person:
-      name: Raj Jegannathan
-      sort_name: Jegannathan
-      slug: raj-jegannathan
+      name: Marshall Wood
+      sort_name: Wood
+      slug: marshall-wood
       page_slug:
       age:
-      background: executive
-      category: unknown
+      background:
+      category: wrecker
       own_page: false
       blurb:
       reporting_notes:
-      path: "/people#raj-jegannathan"
+      path: "/people#marshall-wood"
       comment:
       obj_type: Person
     obj_type: Position
@@ -22626,14 +22885,14 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: gsa-wood
+  - id: gsa-jegannathan
     type: appointed
     agency_id: GSA
-    name: Marshall Wood
+    name: Raj Jegannathan
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-04-XX
-    start_date_truth: guessed
+    start_date: 2025-04-24~
+    start_date_truth: reported
     start_date_event:
     start_source:
     start_source_name:
@@ -22642,7 +22901,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-04-XX
+    sort_date: 2025-04-24~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22658,10 +22917,10 @@
     series:
     supervisory:
     office:
-    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
     reimbursed:
     reimbursement_amount:
-    comment: FIXME, find more details on when started
+    comment:
     qualifications:
     documents:
     duration_summary: from ~ Apr 2025
@@ -22670,17 +22929,17 @@
       name: General Services Administration
       short_name: GSA
     person:
-      name: Marshall Wood
-      sort_name: Wood
-      slug: marshall-wood
+      name: Raj Jegannathan
+      sort_name: Jegannathan
+      slug: raj-jegannathan
       page_slug:
       age:
-      background:
-      category: wrecker
+      background: executive
+      category: unknown
       own_page: false
       blurb:
       reporting_notes:
-      path: "/people#marshall-wood"
+      path: "/people#raj-jegannathan"
       comment:
       obj_type: Person
     obj_type: Position
@@ -22690,7 +22949,7 @@
     name: Jonathan Mendelson
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-04-XX
+    start_date: 2025-04-25~
     start_date_truth: inferred
     start_date_event:
     start_source:
@@ -22700,7 +22959,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-04-XX
+    sort_date: 2025-04-25~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22883,6 +23142,30 @@
       name: Nicole Hollander
       sort_name: Hollander
     aliases: []
+  - id: 3rNhg30Y
+    type: disruption
+    date: '2025-01-29'
+    sort_date: '2025-01-29'
+    time:
+    text: GSA regional managers receive instructions from HQ that "lease terminations are the clear priority at this time"
+    fuzz:
+    comment:
+    source: https://apnews.com/article/trump-musk-gsa-terminate-office-leases-f8faac5e2038722f705587c8dd21ab26
+    source_title: Trump and Musk demand termination of federal office leases through General Services Administration
+    source_name: AP
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GSA
+      slug: gsa
+      name: General Services Administration
+      short_name: GSA
+    people:
+    - slug: nicole-hollander
+      name: Nicole Hollander
+      sort_name: Hollander
+    aliases: []
   - id: kSAAPBQJ
     type: interagency
     date: '2025-01-30'
@@ -22988,15 +23271,17 @@
       name: Thomas Shedd
       sort_name: Shedd
     aliases: []
-  - id: 68sytFDv
+  - id: dSVh8kxF
     type: disruption
     date: '2025-02-12'
     sort_date: '2025-02-12'
     time:
-    text: Other GSA staff describe being subjected to 15-minute interviews where they felt they were asked to justify their jobs
+    text: >-
+      Dozens of probationary workers within the Technology Transformation Service (TTS) are fired, with many of the cuts focused on the US Digital Corps
+      and Presidential Innovation Fellows programs
     fuzz:
     comment:
-    source: https://www.politico.com/news/2025/02/12/government-workers-doge-interviews-016214
+    source: https://www.nextgov.com/people/2025/02/gsa-cut-least-100-employees-feds-inside-agency-say/402975/
     source_title:
     source_name:
     case_no:
@@ -23009,17 +23294,15 @@
       short_name: GSA
     people: []
     aliases: []
-  - id: dSVh8kxF
+  - id: 68sytFDv
     type: disruption
     date: '2025-02-12'
     sort_date: '2025-02-12'
     time:
-    text: >-
-      Dozens of probationary workers within the Technology Transformation Service (TTS) are fired, with many of the cuts focused on the US Digital Corps
-      and Presidential Innovation Fellows programs
+    text: Other GSA staff describe being subjected to 15-minute interviews where they felt they were asked to justify their jobs
     fuzz:
     comment:
-    source: https://www.nextgov.com/people/2025/02/gsa-cut-least-100-employees-feds-inside-agency-say/402975/
+    source: https://www.politico.com/news/2025/02/12/government-workers-doge-interviews-016214
     source_title:
     source_name:
     case_no:
@@ -23176,6 +23459,27 @@
       short_name: GSA
     people: []
     aliases: []
+  - id: R36jiNmY
+    type: disruption
+    date: '2025-03-01'
+    sort_date: '2025-03-01'
+    time:
+    text: Hours after the staff is hit with the RIF email, the DNS entry for 18F.gsa.gov is removed
+    fuzz:
+    comment:
+    source: https://18f.gsa.gov/
+    source_title:
+    source_name:
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GSA
+      slug: gsa
+      name: General Services Administration
+      short_name: GSA
+    people: []
+    aliases: []
   - id: oCmLwiJu
     type: disruption
     date: '2025-03-01'
@@ -23199,27 +23503,6 @@
     - slug: thomas-shedd
       name: Thomas Shedd
       sort_name: Shedd
-    aliases: []
-  - id: R36jiNmY
-    type: disruption
-    date: '2025-03-01'
-    sort_date: '2025-03-01'
-    time:
-    text: Hours after the staff is hit with the RIF email, the DNS entry for 18F.gsa.gov is removed
-    fuzz:
-    comment:
-    source: https://18f.gsa.gov/
-    source_title:
-    source_name:
-    case_no:
-    track_id:
-    system_id:
-    agencies:
-    - id: GSA
-      slug: gsa
-      name: General Services Administration
-      short_name: GSA
-    people: []
     aliases: []
   - id: MaJRwgfZ
     type: directory
@@ -28026,7 +28309,7 @@
       page_slug:
       age: 66
       background: executive
-      category: enabler
+      category: wrecker
       own_page: false
       blurb:
       reporting_notes:
@@ -28692,68 +28975,6 @@
       agency_id: DHS
       name: Department of Homeland Security
       short_name: DHS
-    person:
-      name: Luke Farritor
-      sort_name: Farritor
-      slug: luke-farritor
-      page_slug:
-      age: 23
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#luke-farritor"
-      comment:
-      obj_type: Person
-    obj_type: Position
-  - id: internal-dhs-uscis-farritor
-    type: internal
-    agency_id: ICE
-    name: Luke Farritor
-    doge_alias_id:
-    from_agency_id: USCIS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2026-07-04'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but in NYT roundup
-    qualifications:
-    documents:
-    duration_summary: dates unknown
-    agency:
-      agency_id: ICE
-      name: Immigration and Customs Enforcement
-      short_name: ICE
-    from_agency:
-      agency_id: USCIS
-      name: US Citizenship & Immigration Services
-      short_name: USCIS
     person:
       name: Luke Farritor
       sort_name: Farritor
@@ -32138,6 +32359,29 @@
       name: Nikhil Rajpal
       sort_name: Rajpal
     aliases: []
+  - id: 7kWAzJ0K
+    type: disruption
+    date: '2025-05-16'
+    sort_date: '2025-05-16'
+    time:
+    text: >-
+      Because of DOGE-directed cuts, a National Weather Service office in Jackson, KY did not have an overnight forecaster who is able to track and forecast
+      tornado watches for a storm sweeping across the state
+    fuzz:
+    comment:
+    source: https://www.nytimes.com/2025/05/16/weather/nws-cuts-kentucky-tornado.html
+    source_title: After Cuts, a Kentucky Weather Office Scrambles for Staffing as Severe Storms Bear Down
+    source_name: The New York Times
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: NOAA
+      slug: noaa
+      name: National Oceanic and Atmospheric Administration
+      short_name: NOAA
+    people: []
+    aliases: []
   system_access:
   - id: google-noaa-rajpal
     govt_system_id: google-drive
@@ -33231,238 +33475,6 @@
   parent_id:
   children: []
   positions:
-  - id: opm-cromer
-    type: appointed
-    agency_id: OPM
-    name: Clayton Cromer
-    doge_alias_id:
-    from_agency_id:
-    start_date: '2025-01-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: SES Noncareer Appt
-    fuzz:
-    appt_type_code: 55
-    appt_type: 55-Noncareer (Senior Exec Perm)
-    pay_grade: ES-00
-    salary:
-    pd_code: 6A38487
-    sge:
-    title: Deputy General Counsel
-    series: 301
-    supervisory: true
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Sourced from a FOIA document
-    qualifications:
-    documents: opm-foia-doge-positions
-    duration_summary: from Jan 20, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Clayton Cromer
-      sort_name: Cromer
-      slug: clayton-cromer
-      page_slug:
-      age:
-      background: lawyer
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#clayton-cromer"
-      comment:
-      obj_type: Person
-    obj_type: Position
-  - id: opm-ezell
-    type: appointed
-    agency_id: OPM
-    name: Charles Ezell
-    doge_alias_id:
-    from_agency_id:
-    start_date: '2025-01-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title: Acting Director
-    series:
-    supervisory:
-    office:
-    source: https://www.govinfo.gov/content/pkg/DCPD-202500108/html/DCPD-202500108.htm
-    reimbursed:
-    reimbursement_amount:
-    comment:
-    qualifications:
-    documents:
-    duration_summary: from Jan 20, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Charles Ezell
-      sort_name: Ezell
-      slug: charles-ezell
-      page_slug:
-      age:
-      background: political
-      category: enabler
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#charles-ezell"
-      comment:
-      obj_type: Person
-    obj_type: Position
-  - id: joanna-wischer-opm
-    type: appointed
-    agency_id: OPM
-    name: Joanna Wischer
-    doge_alias_id:
-    from_agency_id:
-    start_date: '2025-01-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 44
-    appt_type: Schedule C (Except NonPerm)
-    pay_grade: GS-15
-    salary:
-    pd_code: 6A36647
-    sge:
-    title: Senior Advisor to the Director
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Sourced from a FOIA document; listed as Joanna Miller
-    qualifications:
-    documents: opm-foia-doge-positions
-    duration_summary: from Jan 20, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Joanna Wischer
-      sort_name: Wischer
-      slug: joanna-wischer
-      page_slug:
-      age:
-      background: political
-      category: support
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#joanna-wischer"
-      comment:
-      obj_type: Person
-    obj_type: Position
-  - id: greg-hogan-opm
-    type: appointed
-    agency_id: OPM
-    name: Greg Hogan
-    doge_alias_id:
-    from_agency_id:
-    start_date: '2025-01-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date: '2025-02-11'
-    end_date_truth: verified
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: SES Noncareer Appt
-    fuzz:
-    appt_type_code: 55
-    appt_type: 55-Noncareer (Senior Exec Perm)
-    pay_grade: ES-00
-    salary: "$195200"
-    pd_code: 6A38081
-    sge:
-    title: Senior Advisor to the Director for Technology and Delivery
-    series: 301
-    supervisory: true
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: details from FOIA doucments
-    qualifications:
-    documents: opm-foia-doge-positions onboard-opm-greg-hogan
-    duration_summary: Jan 20, 2025 to Feb 11, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Greg Hogan
-      sort_name: Hogan
-      slug: greg-hogan
-      page_slug:
-      age: 42
-      background: coder
-      category: enabler
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#greg-hogan"
-      comment:
-      obj_type: Person
-    obj_type: Position
   - id: amanda-scales-opm
     type: appointed
     agency_id: OPM
@@ -33518,64 +33530,6 @@
       blurb:
       reporting_notes:
       path: "/people#amanda-scales"
-      comment:
-      obj_type: Person
-    obj_type: Position
-  - id: gavin-kliger-opm
-    type: appointed
-    agency_id: OPM
-    name: Gavin Kliger
-    doge_alias_id:
-    from_agency_id:
-    start_date: '2025-01-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date: '2025-02-18'
-    end_date_truth: verified
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date: '2025-05-20'
-    nte_date_truth: verified
-    signed_date:
-    description: Provisional Appt NTE
-    fuzz:
-    appt_type_code: 44
-    appt_type: Schedule C (Except NonPerm)
-    pay_grade: GS-15
-    salary: "$195,200"
-    pd_code: 6A38025
-    sge:
-    title: Senior Advisor to the Director for Information Technology
-    series: 301
-    supervisory: true
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: I confirmed he is OPM-5
-    qualifications:
-    documents: opm-foia-doge-positions onboard-opm-employee-5
-    duration_summary: Jan 20, 2025 to Feb 18, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Gavin Kliger
-      sort_name: Kliger
-      slug: gavin-kliger
-      page_slug:
-      age: 25
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#gavin-kliger"
       comment:
       obj_type: Person
     obj_type: Position
@@ -33821,6 +33775,238 @@
         - See evidence that ED-1 is Akash Bobba
       obj_type: Alias
     obj_type: Position
+  - id: opm-cromer
+    type: appointed
+    agency_id: OPM
+    name: Clayton Cromer
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-01-20'
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-01-20'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description: SES Noncareer Appt
+    fuzz:
+    appt_type_code: 55
+    appt_type: 55-Noncareer (Senior Exec Perm)
+    pay_grade: ES-00
+    salary:
+    pd_code: 6A38487
+    sge:
+    title: Deputy General Counsel
+    series: 301
+    supervisory: true
+    office: Office of the Director
+    source:
+    reimbursed:
+    reimbursement_amount:
+    comment: Sourced from a FOIA document
+    qualifications:
+    documents: opm-foia-doge-positions
+    duration_summary: from Jan 20, 2025
+    agency:
+      agency_id: OPM
+      name: Office of Personnel Management
+      short_name: OPM
+    person:
+      name: Clayton Cromer
+      sort_name: Cromer
+      slug: clayton-cromer
+      page_slug:
+      age:
+      background: lawyer
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#clayton-cromer"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: opm-ezell
+    type: appointed
+    agency_id: OPM
+    name: Charles Ezell
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-01-20'
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-01-20'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title: Acting Director
+    series:
+    supervisory:
+    office:
+    source: https://www.govinfo.gov/content/pkg/DCPD-202500108/html/DCPD-202500108.htm
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+    duration_summary: from Jan 20, 2025
+    agency:
+      agency_id: OPM
+      name: Office of Personnel Management
+      short_name: OPM
+    person:
+      name: Charles Ezell
+      sort_name: Ezell
+      slug: charles-ezell
+      page_slug:
+      age:
+      background: political
+      category: enabler
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#charles-ezell"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: greg-hogan-opm
+    type: appointed
+    agency_id: OPM
+    name: Greg Hogan
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-01-20'
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date: '2025-02-11'
+    end_date_truth: verified
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-01-20'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description: SES Noncareer Appt
+    fuzz:
+    appt_type_code: 55
+    appt_type: 55-Noncareer (Senior Exec Perm)
+    pay_grade: ES-00
+    salary: "$195200"
+    pd_code: 6A38081
+    sge:
+    title: Senior Advisor to the Director for Technology and Delivery
+    series: 301
+    supervisory: true
+    office: Office of the Director
+    source:
+    reimbursed:
+    reimbursement_amount:
+    comment: details from FOIA doucments
+    qualifications:
+    documents: opm-foia-doge-positions onboard-opm-greg-hogan
+    duration_summary: Jan 20, 2025 to Feb 11, 2025
+    agency:
+      agency_id: OPM
+      name: Office of Personnel Management
+      short_name: OPM
+    person:
+      name: Greg Hogan
+      sort_name: Hogan
+      slug: greg-hogan
+      page_slug:
+      age: 42
+      background: coder
+      category: enabler
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#greg-hogan"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: gavin-kliger-opm
+    type: appointed
+    agency_id: OPM
+    name: Gavin Kliger
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-01-20'
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date: '2025-02-18'
+    end_date_truth: verified
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-01-20'
+    nte_date: '2025-05-20'
+    nte_date_truth: verified
+    signed_date:
+    description: Provisional Appt NTE
+    fuzz:
+    appt_type_code: 44
+    appt_type: Schedule C (Except NonPerm)
+    pay_grade: GS-15
+    salary: "$195,200"
+    pd_code: 6A38025
+    sge:
+    title: Senior Advisor to the Director for Information Technology
+    series: 301
+    supervisory: true
+    office: Office of the Director
+    source:
+    reimbursed:
+    reimbursement_amount:
+    comment: I confirmed he is OPM-5
+    qualifications:
+    documents: opm-foia-doge-positions onboard-opm-employee-5
+    duration_summary: Jan 20, 2025 to Feb 18, 2025
+    agency:
+      agency_id: OPM
+      name: Office of Personnel Management
+      short_name: OPM
+    person:
+      name: Gavin Kliger
+      sort_name: Kliger
+      slug: gavin-kliger
+      page_slug:
+      age: 25
+      background: coder
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#gavin-kliger"
+      comment:
+      obj_type: Person
+    obj_type: Position
   - id: noah-peters-opm
     type: appointed
     agency_id: OPM
@@ -33876,6 +34062,64 @@
       blurb:
       reporting_notes:
       path: "/people#noah-peters"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: joanna-wischer-opm
+    type: appointed
+    agency_id: OPM
+    name: Joanna Wischer
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-01-20'
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-01-20'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description: Exc Appt NTE
+    fuzz:
+    appt_type_code: 44
+    appt_type: Schedule C (Except NonPerm)
+    pay_grade: GS-15
+    salary:
+    pd_code: 6A36647
+    sge:
+    title: Senior Advisor to the Director
+    series: 301
+    supervisory: false
+    office: Office of the Director
+    source:
+    reimbursed:
+    reimbursement_amount:
+    comment: Sourced from a FOIA document; listed as Joanna Miller
+    qualifications:
+    documents: opm-foia-doge-positions
+    duration_summary: from Jan 20, 2025
+    agency:
+      agency_id: OPM
+      name: Office of Personnel Management
+      short_name: OPM
+    person:
+      name: Joanna Wischer
+      sort_name: Wischer
+      slug: joanna-wischer
+      page_slug:
+      age:
+      background: political
+      category: support
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#joanna-wischer"
       comment:
       obj_type: Person
     obj_type: Position
@@ -34004,64 +34248,6 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: opm-justin-monroe
-    type: appointed
-    agency_id: OPM
-    name: Justin Monroe
-    doge_alias_id:
-    from_agency_id:
-    start_date: '2025-01-28'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-28'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 48
-    appt_type: Other (Except NonPerm)
-    pay_grade: ED-00
-    salary:
-    pd_code: 6A39734
-    sge:
-    title: Expert
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Sourced from FOIA documents
-    qualifications:
-    documents: opm-foia-doge-positions
-    duration_summary: from Jan 28, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Justin Monroe
-      sort_name: Monroe
-      slug: justin-monroe
-      page_slug:
-      age: 36
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#justin-monroe"
-      comment:
-      obj_type: Person
-    obj_type: Position
   - id: opm-christopher-stanley
     type: appointed
     agency_id: OPM
@@ -34117,6 +34303,64 @@
       blurb:
       reporting_notes:
       path: "/people#christopher-stanley"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: opm-justin-monroe
+    type: appointed
+    agency_id: OPM
+    name: Justin Monroe
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-01-28'
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-01-28'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description: Exc Appt NTE
+    fuzz:
+    appt_type_code: 48
+    appt_type: Other (Except NonPerm)
+    pay_grade: ED-00
+    salary:
+    pd_code: 6A39734
+    sge:
+    title: Expert
+    series: 301
+    supervisory: false
+    office: Office of the Director
+    source:
+    reimbursed:
+    reimbursement_amount:
+    comment: Sourced from FOIA documents
+    qualifications:
+    documents: opm-foia-doge-positions
+    duration_summary: from Jan 28, 2025
+    agency:
+      agency_id: OPM
+      name: Office of Personnel Management
+      short_name: OPM
+    person:
+      name: Justin Monroe
+      sort_name: Monroe
+      slug: justin-monroe
+      page_slug:
+      age: 36
+      background: coder
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#justin-monroe"
       comment:
       obj_type: Person
     obj_type: Position
@@ -34182,64 +34426,6 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: opm-chris-young
-    type: appointed
-    agency_id: OPM
-    name: Chris Young
-    doge_alias_id:
-    from_agency_id:
-    start_date: '2025-01-30'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-30'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 48
-    appt_type: Other (Except NonPerm)
-    pay_grade: ED-00
-    salary:
-    pd_code: 6A39737
-    sge:
-    title: Expert
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Sourced from FOIAed documents
-    qualifications:
-    documents: opm-foia-doge-positions
-    duration_summary: from Jan 30, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Chris Young
-      sort_name: Young
-      slug: chris-young
-      page_slug:
-      age: 36
-      background: political
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#chris-young"
-      comment:
-      obj_type: Person
-    obj_type: Position
   - id: opm-austin-raynor
     type: appointed
     agency_id: OPM
@@ -34298,13 +34484,13 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: opm-bryanne-mlodzianowski
+  - id: opm-chris-young
     type: appointed
     agency_id: OPM
-    name: Bryanne-Michelle Mlodzianowski
+    name: Chris Young
     doge_alias_id:
     from_agency_id:
-    start_date: '2025-02-03'
+    start_date: '2025-01-30'
     start_date_truth: verified
     start_date_event:
     start_source:
@@ -34314,7 +34500,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: '2025-02-03'
+    sort_date: '2025-01-30'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -34324,7 +34510,7 @@
     appt_type: Other (Except NonPerm)
     pay_grade: ED-00
     salary:
-    pd_code: 6A39750
+    pd_code: 6A39737
     sge:
     title: Expert
     series: 301
@@ -34333,26 +34519,26 @@
     source:
     reimbursed:
     reimbursement_amount:
-    comment: Sourced from a FOIAed document
+    comment: Sourced from FOIAed documents
     qualifications:
     documents: opm-foia-doge-positions
-    duration_summary: from Feb 03, 2025
+    duration_summary: from Jan 30, 2025
     agency:
       agency_id: OPM
       name: Office of Personnel Management
       short_name: OPM
     person:
-      name: Bryanne-Michelle Mlodzianowski
-      sort_name: Mlodzianowski
-      slug: mlodzianowski
+      name: Chris Young
+      sort_name: Young
+      slug: chris-young
       page_slug:
-      age: 40
-      background: hr
-      category: support
+      age: 36
+      background: political
+      category: wrecker
       own_page: false
       blurb:
       reporting_notes:
-      path: "/people#mlodzianowski"
+      path: "/people#chris-young"
       comment:
       obj_type: Person
     obj_type: Position
@@ -34469,6 +34655,64 @@
       blurb:
       reporting_notes:
       path: "/people#christina-hanna"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: opm-bryanne-mlodzianowski
+    type: appointed
+    agency_id: OPM
+    name: Bryanne-Michelle Mlodzianowski
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-02-03'
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-02-03'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description: Exc Appt NTE
+    fuzz:
+    appt_type_code: 48
+    appt_type: Other (Except NonPerm)
+    pay_grade: ED-00
+    salary:
+    pd_code: 6A39750
+    sge:
+    title: Expert
+    series: 301
+    supervisory: false
+    office: Office of the Director
+    source:
+    reimbursed:
+    reimbursement_amount:
+    comment: Sourced from a FOIAed document
+    qualifications:
+    documents: opm-foia-doge-positions
+    duration_summary: from Feb 03, 2025
+    agency:
+      agency_id: OPM
+      name: Office of Personnel Management
+      short_name: OPM
+    person:
+      name: Bryanne-Michelle Mlodzianowski
+      sort_name: Mlodzianowski
+      slug: mlodzianowski
+      page_slug:
+      age: 40
+      background: hr
+      category: support
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#mlodzianowski"
       comment:
       obj_type: Person
     obj_type: Position
@@ -34701,6 +34945,64 @@
       blurb:
       reporting_notes:
       path: "/people#tarak-makecha"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: opm-gonzalez
+    type: appointed
+    agency_id: OPM
+    name: Mike Gonzalez
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-03-XX
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-03-15'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title: Senior Advisor
+    series:
+    supervisory:
+    office:
+    source: https://techcrunch.com/2025/03/26/19-founders-and-vcs-working-with-elon-musks-doge/#mike-gonzalez
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+    duration_summary: from ~ Mar 2025
+    agency:
+      agency_id: OPM
+      name: Office of Personnel Management
+      short_name: OPM
+    person:
+      name: Mike Gonzalez
+      sort_name: Gonzalez
+      slug: mike-gonzalez
+      page_slug:
+      age:
+      background:
+      category: unknown
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#mike-gonzalez"
       comment:
       obj_type: Person
     obj_type: Position
@@ -36376,11 +36678,11 @@
       obj_type: Person
     obj_type: Position
   - id: sba-park
-    type: unknown
+    type: detailed
     agency_id: SBA
     name: Donald Park
     doge_alias_id:
-    from_agency_id:
+    from_agency_id: GSA
     start_date: '2025-02-03'
     start_date_truth: reported
     start_date_event:
@@ -36418,6 +36720,10 @@
       agency_id: SBA
       name: Small Business Administration
       short_name: SBA
+    from_agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
     person:
       name: Donald Park
       sort_name: Park
@@ -41982,6 +42288,68 @@
       blurb:
       reporting_notes:
       path: "/people#marko-elez"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: internal-dhs-uscis-farritor
+    type: internal
+    agency_id: USCIS
+    name: Luke Farritor
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No details, but in NYT roundup
+    qualifications:
+    documents:
+    duration_summary: dates unknown
+    agency:
+      agency_id: USCIS
+      name: US Citizenship & Immigration Services
+      short_name: USCIS
+    from_agency:
+      agency_id: DHS
+      name: Department of Homeland Security
+      short_name: DHS
+    person:
+      name: Luke Farritor
+      sort_name: Farritor
+      slug: luke-farritor
+      page_slug:
+      age: 23
+      background: coder
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#luke-farritor"
       comment:
       obj_type: Person
     obj_type: Position

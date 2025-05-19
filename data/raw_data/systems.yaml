@@ -23,9 +23,7 @@
   id: agx
   acronym: AGX
   category: obligations
-  description: >-
-    A web-based application that provides the Office of Acquisition and Grants Management with tools for contracting officers to use for conducting their
-    activities
+  description: A web-based application that provides the Office of Acquisition and Grants Management with tools for contracting officers to use for conducting their activities
   pia: https://www.hhs.gov/sites/default/files/cms-acquisition-and-grants-exchange.pdf
   agency: CMS
 
@@ -66,9 +64,7 @@
   category: security
   description: A system storing hundreds of millions of biometric identity points
   link: https://www.dhs.gov/obim
-  comment: >-
-    can retrieve data for an individual tied to a Department of State visa application, a U.S. Customs and Border Protection log of an entry into the United
-    States, and an immigration status change logged by U.S. Citizenship and Immigration Services.
+  comment: can retrieve data for an individual tied to a Department of State visa application, a U.S. Customs and Border Protection log of an entry into the United States, and an immigration status change logged by U.S. Citizenship and Immigration Services.
   agency: DHS
 
 - name: Automated Standard Access For Payments
@@ -82,9 +78,7 @@
   - id: asap-src-elez
     type: source-code
     name: Marko Elez
-    comment: >-
-      Marko Elez is provided with a laptop from Treasury with with copies of the source code for PAM, SPS, and ASAP in a separate, secure coding environment
-      known as a "secure code repository" or "sandbox."
+    comment: Marko Elez is provided with a laptop from Treasury with with copies of the source code for PAM, SPS, and ASAP in a separate, secure coding environment known as a "secure code repository" or "sandbox."
     date_granted: 2025-01-28
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.3_1.pdf
@@ -191,9 +185,7 @@
   type: internal
   category: immigration
   population: Immigrants in the US who use Alien Numbers, or A-Numbers. Can include undocumented and documented immigrants
-  description: >-
-    The CIS contains information about people who use Alien Numbers, or A-Numbers. These can include people who don't have legal authorization to be in
-    the country or who have interacted with Immigration and Customs Enforcement, the person said.
+  description: The CIS contains information about people who use Alien Numbers, or A-Numbers. These can include people who don't have legal authorization to be in the country or who have interacted with Immigration and Customs Enforcement, the person said.
   agency: USCIS
   access:
   - id: uscis-cis-mohgaddassi
@@ -301,9 +293,7 @@
   acronym: EAS
   type: internal
   category: obligations
-  description: >-
-    The Office of Acquisition Solutions (OAS) EPA Acquisition System (EAS) Software as a Service (SaaS) is used to initiate, award, modify and track acquisition
-    actions.
+  description: The Office of Acquisition Solutions (OAS) EPA Acquisition System (EAS) Software as a Service (SaaS) is used to initiate, award, modify and track acquisition actions.
   pia: https://www.epa.gov/system/files/documents/2023-12/eas-saas-pia-final.pdf
   agency: EPA
   access:
@@ -342,9 +332,7 @@
   acronym: ELIS
   type: internal
   category: immigration
-  description: >-
-    Part of DBIS; the system that processes legal immigration benefits. ELIS acts as a case management system for USCIS and includes information about green
-    cards and petitions, as well as details related to Temporary Protected Status and DACA applicants
+  description: Part of DBIS; the system that processes legal immigration benefits. ELIS acts as a case management system for USCIS and includes information about green cards and petitions, as well as details related to Temporary Protected Status and DACA applicants
   agency: USCIS
   access:
   - id: uscis-elis-mohgaddassi
@@ -423,9 +411,8 @@
   category: security
   link: https://catalog.data.gov/dataset/dol-enterprise-physical-access-control-system-dol-epacs-a41c6
   description: >-
-    DOL ePACS is the physical access control system that is used to manage authorized physical access to the DOL Frances Perkins Building and some regional
-    DOL locations. This system uses the GSA USAccess PIV badge issued for DOL, as the primary token for authenticating holders at the entrances of the DOL
-    FPB and regional integrated locations. Access is granted based on the employment status
+    DOL ePACS is the physical access control system that is used to manage authorized physical access to the DOL Frances Perkins Building and some regional DOL locations. This system uses the GSA USAccess PIV badge issued for DOL, as the primary token for authenticating holders at the entrances of the
+    DOL FPB and regional integrated locations. Access is granted based on the employment status
   population: Federal personnel with access to the Department of Labor
   risk: Ability to monitor when staff uses facilities, ability to control or grant access
   agency: DOL
@@ -537,9 +524,7 @@
   acronym: FPPS
   type: ssp
   category: personnel
-  description: >-
-    A shared service which processes payrolls for the Justice, Treasury and Homeland Security departments, as well as the Air Force, Nuclear Regulatory
-    Commission and the U.S. Customs and Border Protection, among other federal agencies.
+  description: A shared service which processes payrolls for the Justice, Treasury and Homeland Security departments, as well as the Air Force, Nuclear Regulatory Commission and the U.S. Customs and Border Protection, among other federal agencies.
   risk: PII and payment info for federal staff at several large agencies, including the ability to interfere with pay
   pia: https://www.doi.gov/sites/doi.gov/files/fpps-pia-revised-04222020_0.pdf
   agency: DOI
@@ -664,9 +649,7 @@
     date_granted: 2025-04-18
     name: Aram Moghaddassi
     date_grant_truth: reported
-    comment: >-
-      Wired reports that Aram Moghaddassi has been granted "OIG-level" admin access to the DOL's Foreign Labor Application Gateway (FLAG) system, which
-      would include visa applications of foreign workers
+    comment: Wired reports that Aram Moghaddassi has been granted "OIG-level" admin access to the DOL's Foreign Labor Application Gateway (FLAG) system, which would include visa applications of foreign workers
     source: https://www.wired.com/story/doge-access-immigration-data-department-of-labor/
 
 - name: G-Invoicing
@@ -710,9 +693,7 @@
   category: personnel
   pia: https://www.opm.gov/media/kfpozkad/gwes-pia.pdf
   sorn: https://www.federalregister.gov/documents/2017/12/05/2017-26107/privacy-act-of-1974-system-of-records
-  description: >-
-    A new system developed by DOGE for sending out email to all federal employees and collecting responses. It was most famously used for the Fork in The
-    Road email.
+  description: A new system developed by DOGE for sending out email to all federal employees and collecting responses. It was most famously used for the Fork in The Road email.
   risk: There are concerns it is an external system and did not go through a privacy review
   agency: OPM
 
@@ -847,9 +828,7 @@
   acronym: UFMS
   id: hhs-ufms
   link: https://www.hhs.gov/about/agencies/asa/psc/accounting/accounting-services/index.html
-  description: >-
-    The Unified Financial Management System (UFMS) is the Department of Health and Human Service's integrated department-wide financial management system
-    which supports all of HHS Program Service Center's Accounting Services and reporting
+  description: The Unified Financial Management System (UFMS) is the Department of Health and Human Service's integrated department-wide financial management system which supports all of HHS Program Service Center's Accounting Services and reporting
   agency: HHS
   access:
   - id: ufms-terrell
@@ -951,8 +930,7 @@
   type: internal
   category: payments
   link: https://www.cms.gov/about-cms/information-systems/higlas/higlas-architecture
-  description: A single, integrated dual-entry accounting system that standardizes and centralizes federal financial accounting functions for all of CMS's
-    programs.
+  description: A single, integrated dual-entry accounting system that standardizes and centralizes federal financial accounting functions for all of CMS's programs.
   population: Medical providers and others who would receive disbursements from Medicare or Medicaid
   agency: CMS
   access:
@@ -1184,9 +1162,8 @@
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
-      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental
-      Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the Fiscal
-      Service (BFS) for payment
+      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the
+      Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
@@ -1197,9 +1174,8 @@
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
-      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental
-      Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the Fiscal
-      Service (BFS) for payment
+      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the
+      Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
@@ -1210,9 +1186,8 @@
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
-      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental
-      Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the Fiscal
-      Service (BFS) for payment
+      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the
+      Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
@@ -1312,9 +1287,7 @@
     agency: NEH
     date_granted: 2025-03-12~
     date_grant_truth: inferred
-    comment: >-
-      The lawsuit against NEH cites emails being sent from Grant_Notifications@nehemail.onmicrosoft.com which is the form of a Global Admin account for
-      Microsoft Entra (probably for the NEH email systems)
+    comment: The lawsuit against NEH cites emails being sent from Grant_Notifications@nehemail.onmicrosoft.com which is the form of a Global Admin account for Microsoft Entra (probably for the NEH email systems)
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
   - id: entra-neh-justin-fox
     name: Justin Fox
@@ -1322,9 +1295,7 @@
     agency: NEH
     date_granted: 2025-03-12~
     date_grant_truth: inferred
-    comment: >-
-      The lawsuit against NEH cites emails being sent from Grant_Notifications@nehemail.onmicrosoft.com which is the form of a Global Admin account for
-      Microsoft Entra (probably for the NEH email systems)
+    comment: The lawsuit against NEH cites emails being sent from Grant_Notifications@nehemail.onmicrosoft.com which is the form of a Global Admin account for Microsoft Entra (probably for the NEH email systems)
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
 
 - name: Microsoft Power Automate
@@ -1374,9 +1345,7 @@
   acronym: NBS
   type: internal
   category: payments
-  description: >-
-    is the central electronic business system of the NIH including the general ledger, finance, budget, procurement, supply, travel, and property management
-    systems. NBS is aimed at improving data consolidation and financial reporting capabilities.
+  description: is the central electronic business system of the NIH including the general ledger, finance, budget, procurement, supply, travel, and property management systems. NBS is aimed at improving data consolidation and financial reporting capabilities.
   risk: As a payment system, includes names, SSNs, TINs, and other PII of persons/entities receiving payments from NIH
   sorn: https://www.federalregister.gov/documents/2002/08/22/02-21348/privacy-act-of-1974-proposed-new-system-of-records
   agency: NIH
@@ -1408,8 +1377,7 @@
     name: Akash Bobba
     date_granted: 2025-02-10
     date_grant_truth: reported
-    comment: >-
-      Akash Bobba is rapidly trained and is granted access to anonymized and read-only "sandbox" NUMIDENT data from SSNEC for his purported fraud investigations
+    comment: Akash Bobba is rapidly trained and is granted access to anonymized and read-only "sandbox" NUMIDENT data from SSNEC for his purported fraud investigations
     ao_name: Mike Russo
     ao_type: cio
     source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
@@ -1419,9 +1387,8 @@
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
-      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental
-      Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the Fiscal
-      Service (BFS) for payment
+      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the
+      Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
@@ -1432,9 +1399,8 @@
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
-      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental
-      Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the Fiscal
-      Service (BFS) for payment
+      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the
+      Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
@@ -1445,9 +1411,8 @@
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
-      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental
-      Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the Fiscal
-      Service (BFS) for payment
+      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the
+      Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
@@ -1494,11 +1459,8 @@
   type: internal
   category: immigration
   link: https://www.dol.gov/agencies/eta/agriculture
-  sorn: >-
-    https://www.federalregister.gov/documents/2016/04/29/2016-09510/privacy-act-of-1974-publication-in-full-of-all-notices-of-systems-of-records-including-several-new
-  description: >-
-    The National Farmworker Jobs Program (NFJP) is a nationally-directed, locally-administered program of services for migrant and seasonal farmworkers
-    and their dependents
+  sorn: https://www.federalregister.gov/documents/2016/04/29/2016-09510/privacy-act-of-1974-publication-in-full-of-all-notices-of-systems-of-records-including-several-new
+  description: The National Farmworker Jobs Program (NFJP) is a nationally-directed, locally-administered program of services for migrant and seasonal farmworkers and their dependents
   agency: DOL
   access:
   - id: njfp-collins
@@ -1506,9 +1468,7 @@
     date_granted: 2025-04-18
     date_grant_truth: reported
     name: Miles Collins
-    comment: >-
-      Wired reports that Miles Collins has access to the National Farmworker Jobs Program (NFJP) system, which provides grants to organizations that work
-      with migrant and seasonal labor
+    comment: Wired reports that Miles Collins has access to the National Farmworker Jobs Program (NFJP) system, which provides grants to organizations that work with migrant and seasonal labor
     source: https://www.wired.com/story/doge-access-immigration-data-department-of-labor/
 
 - name: National Student Loan Data System (New)
@@ -1516,9 +1476,7 @@
   acronym: NSLDS
   type: internal
   category: obligations
-  description: >-
-    A a comprehensive national database for the Federal financial aid history of recipients of student financial assistance and grants authorized under
-    Title IV of the Higher Education Act of 1965
+  description: A a comprehensive national database for the Federal financial aid history of recipients of student financial assistance and grants authorized under Title IV of the Higher Education Act of 1965
   risk: PII of students, including names, addresses, SSNs and financial details of student loans
   pia: https://www.ed.gov/about/ed-overview/required-notices/privacy/privacy-impact-assessments-pia
   sorn: https://www.federalregister.gov/documents/2024/05/21/2024-11136/privacy-act-of-1974-system-of-records
@@ -1546,9 +1504,7 @@
   type: internal
   category: oversight
   pia: https://www.nlrb.gov/sites/default/files/attachments/pages/node-172/pia-nxgen-august-2019.pdf
-  description: >-
-    NxGen is the Agency-wide interactive electronic database of information on the processing of all unfair labor practice and representation cases at all
-    stages. NxGen stores case handling information on all open and closed cases in the agency.
+  description: NxGen is the Agency-wide interactive electronic database of information on the processing of all unfair labor practice and representation cases at all stages. NxGen stores case handling information on all open and closed cases in the agency.
   agency: NLRB
 
 - name: Notice to Airmen
@@ -1597,9 +1553,7 @@
   id: onecdc
   type: internal
   category: scientific
-  description: >-
-    A system for centralizng health access, public-health data, including hundreds of thousands of daily anonymized lab tests, data from emergency-room
-    visits, and measurements from wastewater disease-reporting sites
+  description: A system for centralizng health access, public-health data, including hundreds of thousands of daily anonymized lab tests, data from emergency-room visits, and measurements from wastewater disease-reporting sites
   link: https://www.cdc.gov/public-health-data-strategy/php/about/index.html
   agency: CDC
 
@@ -1624,9 +1578,7 @@
   id: ebs
   acronym: EBS
   type: ssp
-  description: >-
-    Oracle E-Business Suite is a comprehensive suite of applications for finance, order management, logistics, procurement, projects, manufacturing, asset
-    lifecycle, and human capital management.
+  description: Oracle E-Business Suite is a comprehensive suite of applications for finance, order management, logistics, procurement, projects, manufacturing, asset lifecycle, and human capital management.
   access:
   - id: ebs-riley
     agency: NIH
@@ -1682,8 +1634,7 @@
   category: payments
   link: https://fiscal.treasury.gov/pam/
   description: >-
-    The U.S. government uses the Payment Automation Manager (PAM) to pay all bills, except payments in foreign currency. PAM processed over 1.2 billion
-    payments in FY 2024, valued at over 4.7 trillion dollars. PAM replaced many older systems that Federal Program Agencies used, saving money and increasing
+    The U.S. government uses the Payment Automation Manager (PAM) to pay all bills, except payments in foreign currency. PAM processed over 1.2 billion payments in FY 2024, valued at over 4.7 trillion dollars. PAM replaced many older systems that Federal Program Agencies used, saving money and increasing
     efficiency.
   risk: PII/CUI of entities receiving payments, SSNs, TINs, bank account info
   pia: https://www.fiscal.treasury.gov/files/pia/pampclia.pdf
@@ -1692,9 +1643,7 @@
   - id: pam-src-elez
     type: source-code
     name: Marko Elez
-    comment: >-
-      Marko Elez is provided with a laptop from Treasury with with copies of the source code for PAM, SPS, and ASAP in a separate, secure coding environment
-      known as a "secure code repository" or "sandbox."
+    comment: Marko Elez is provided with a laptop from Treasury with with copies of the source code for PAM, SPS, and ASAP in a separate, secure coding environment known as a "secure code repository" or "sandbox."
     date_granted: 2025-01-28
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.3_1.pdf
@@ -1718,8 +1667,7 @@
   category: payments
   link: https://fiscal.treasury.gov/pam/
   description: >-
-    The U.S. government uses the Payment Automation Manager (PAM) to pay all bills, except payments in foreign currency. PAM processed over 1.2 billion
-    payments in FY 2024, valued at over 4.7 trillion dollars. PAM replaced many older systems that Federal Program Agencies used, saving money and increasing
+    The U.S. government uses the Payment Automation Manager (PAM) to pay all bills, except payments in foreign currency. PAM processed over 1.2 billion payments in FY 2024, valued at over 4.7 trillion dollars. PAM replaced many older systems that Federal Program Agencies used, saving money and increasing
     efficiency.
   risk: PII/CUI of entities receiving payments, SSNs, TINs, bank account info
   pia: https://www.fiscal.treasury.gov/files/pia/pampclia.pdf
@@ -1772,9 +1720,7 @@
   id: pegasys
   type: internal
   category: payments
-  description: >-
-    Pegasys is the GSA core financial management system of records to make payments and record accounting transactions. This includes funds management (budget
-    execution and purchasing), credit cards, accounts payable, disbursements, standard general ledger, and reporting.
+  description: Pegasys is the GSA core financial management system of records to make payments and record accounting transactions. This includes funds management (budget execution and purchasing), credit cards, accounts payable, disbursements, standard general ledger, and reporting.
   risk: PII of individuals and companies that receive funds from the GSA
   pia: https://www.gsa.gov/system/files/Pegasys_PIA.pdf
   sorn: https://www.federalregister.gov/documents/2006/10/16/E6-17069/privacy-act-of-1974-notice-of-a-new-system-of-records
@@ -1847,9 +1793,7 @@
   id: reo
   type: internal
   category: immigration
-  description: >-
-    The Reentry Employment Opportunities (REO) program provides funding, authorized as Research and Evaluation under Section 169 of the Workforce Innovation
-    and Opportunity Act (WIOA) of 2014, for justice-involved youth and young adults and adults who were formerly incarcerated.
+  description: The Reentry Employment Opportunities (REO) program provides funding, authorized as Research and Evaluation under Section 169 of the Workforce Innovation and Opportunity Act (WIOA) of 2014, for justice-involved youth and young adults and adults who were formerly incarcerated.
   pia: https://www.dol.gov/agencies/oasam/centers-offices/ocio/privacy/eta/reo
   link: https://www.dol.gov/agencies/eta/reentry
   agency: DOL
@@ -1859,27 +1803,21 @@
     date_granted: 2025-04-18
     date_grant_truth: reported
     name: Miles Collins
-    comment: >-
-      Wired reports that three DOGE staffers at DOL were granted access to the DOL's Reentry Employment Opportunities (REO) program, which provides aid
-      to people re-entering society from incarceration
+    comment: Wired reports that three DOGE staffers at DOL were granted access to the DOL's Reentry Employment Opportunities (REO) program, which provides aid to people re-entering society from incarceration
     source: https://www.wired.com/story/doge-access-immigration-data-department-of-labor/
   - id: reo-moghaddassi
     type: unknown
     date_granted: 2025-04-18
     date_grant_truth: reported
     name: Aram Moghaddassi
-    comment: >-
-      Wired reports that three DOGE staffers at DOL were granted access to the DOL's Reentry Employment Opportunities (REO) program, which provides aid
-      to people re-entering society from incarceration
+    comment: Wired reports that three DOGE staffers at DOL were granted access to the DOL's Reentry Employment Opportunities (REO) program, which provides aid to people re-entering society from incarceration
     source: https://www.wired.com/story/doge-access-immigration-data-department-of-labor/
   - id: reo-elez
     type: unknown
     date_granted: 2025-04-18
     date_grant_truth: reported
     name: Marko Elez
-    comment: >-
-      Wired reports that three DOGE staffers at DOL were granted access to the DOL's Reentry Employment Opportunities (REO) program, which provides aid
-      to people re-entering society from incarceration
+    comment: Wired reports that three DOGE staffers at DOL were granted access to the DOL's Reentry Employment Opportunities (REO) program, which provides aid to people re-entering society from incarceration
     source: https://www.wired.com/story/doge-access-immigration-data-department-of-labor/
 
 - name: SAVE
@@ -1932,9 +1870,7 @@
   - id: sps-src-elez
     type: source-code
     name: Marko Elez
-    comment: >-
-      Marko Elez is provided with a laptop from Treasury with with copies of the source code for PAM, SPS, and ASAP in a separate, secure coding environment
-      known as a "secure code repository" or "sandbox."
+    comment: Marko Elez is provided with a laptop from Treasury with with copies of the source code for PAM, SPS, and ASAP in a separate, secure coding environment known as a "secure code repository" or "sandbox."
     date_granted: 2025-01-28
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.3_1.pdf
@@ -1981,9 +1917,8 @@
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
-      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental
-      Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the Fiscal
-      Service (BFS) for payment
+      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the
+      Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
@@ -1994,9 +1929,8 @@
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
-      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental
-      Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the Fiscal
-      Service (BFS) for payment
+      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the
+      Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
@@ -2007,9 +1941,8 @@
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
-      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental
-      Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the Fiscal
-      Service (BFS) for payment
+      Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the
+      Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
@@ -2115,9 +2048,7 @@
 
 - name: Unemployment Insurance Data and Related Records
   id: uidrr
-  description: >-
-    Unemployment insurance claims data from states' unemployment insurance agencies. This was explicitly transferred from the Inspector General's office
-    at DOL following a 2025-03-20 executive order
+  description: Unemployment insurance claims data from states' unemployment insurance agencies. This was explicitly transferred from the Inspector General's office at DOL following a 2025-03-20 executive order
   risk: PII include name, address, birth date, bank account information, address, SSN, matches to SSA Death Master File
   agency: DOL
   access:

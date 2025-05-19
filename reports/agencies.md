@@ -146,7 +146,7 @@
 # Department of the Interior
 - slug: interior
 - people:
-  - **Stephanie Holmes** (2025-02-24) Special Advisor / Acting Chief Human Capital Officer (detail)
+  - **Stephanie Holmes** (2025-02-24) Special Advisor / Acting Chief Human Capital Officer (detailed from DOGE)
   - **Katrine Trampe** (2025-03-05)
   - **Tyler Hassen** (2025-03-07) Acting Assistant Secretary of Policy, Management and Budget
   - **Matt Luby** (2025-04-17)
@@ -159,18 +159,19 @@
 - slug: doge
 - people:
   - **Amy Gleason** (2024-12-30 - 2024-02-18)
+  - **Cole Killian** (2025-01-20)
   - **Elon Musk** (2025-01-20)
   - **Katie Miller** (2025-01-20)
-  - **Cole Killian** (2025-01-20)
   - **Jordan Wick** (2025-01-20~)
   - **Adam Ramada** (2025-01-23)
   - **Alexandra Beynon** (2025-02-04~)
+  - **Stephanie Holmes** (2025-02-05~)
   - **Kendall Lindemann** (2025-02-10~)
   - **Amy Gleason** (2025-02-18) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
-  - **Joshua Hanley** (2025-02-XX)
-  - **Ashley Boizelle** (2025-02-XX)
-  - **Joshua Fox** (2025-02-XX)
   - **Justin Aimonetti** (2025-02-XX)
+  - **Joshua Hanley** (2025-02-XX)
+  - **Joshua Fox** (2025-02-XX)
+  - **Ashley Boizelle** (2025-02-XX)
 
 # Department of Homeland Security
 - slug: dhs
@@ -235,6 +236,7 @@
   - **Jordan Wick** (2025-02-13~) (detailed from DOGE)
   - **Derek Geissler** (2025-02-13~)
   - **Sam Beyda** (2025-02-13~)
+  - **Marko Elez** (2025-02-14~)
   - **Miles Collins** (2025-03-05)
   - **Thomas Shedd** (2025-03-14) Chief Information Officer
   - **Keith Sonderling** (2025-03-18) Deputy Secretary
@@ -378,25 +380,26 @@
 # General Services Administration
 - slug: gsa
 - people:
-  - **Jeremy Lewin** (2025-01-20)
-  - **Ethan Shaotran** (2025-01-20)
-  - **Justin Fox**
-  - **Nicole Hollander** (2025-01-20)
   - **Emily Bryant**
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
   - **Conor Fennessy**
+  - **Justin Fox**
+  - **Nicole Hollander** (2025-01-20)
+  - **Jeremy Lewin** (2025-01-20)
+  - **Ethan Shaotran** (2025-01-20)
   - **Edward Coristine** (2025-01-20~)
   - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
   - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
+  - **Nate Cavanaugh** (2025-02-03)
   - **Riley Sennott** (2025-02-12)
   - **Frank Schuler** (2025-02-18~) Senior Advisor
-  - **Nate Cavanaugh** (2025-02-XX)
-  - **Raj Jegannathan** (2025-04-24~)
+  - **Donald Park** (2025-02-XX)
   - **Dave Malcher** (2025-04-24~)
-  - **Jonathan Mendelson** (2025-04-XX)
-  - **Jack Stein** (2025-04-XX)
+  - **Raj Jegannathan** (2025-04-24~)
+  - **Jonathan Mendelson** (2025-04-25~)
   - **Marshall Wood** (2025-04-XX)
+  - **Jack Stein** (2025-04-XX)
 
 # Government Accountability Office
 - slug: gao
@@ -474,7 +477,6 @@
 - slug: ice
 - people:
   - **Marko Elez**
-  - **Luke Farritor**
   - **Luke Farritor**
   - **Aram Moghaddassi**
   - **Kyle Schutt**
@@ -586,31 +588,32 @@
 # Office of Personnel Management
 - slug: opm
 - people:
-  - **Noah Peters** (2025-01-20) Senior Advisor
-  - **Charles Ezell** (2025-01-20) Acting Director
-  - **Joanna Wischer** (2025-01-20) Senior Advisor to the Director
-  - **Greg Hogan** (2025-01-20 - 2025-02-11) Senior Advisor to the Director for Technology and Delivery
-  - **Amanda Scales** (2025-01-20) Chief of Staff
-  - **Gavin Kliger** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
+  - **Baris Akis**
   - **Anthony Armstrong** (2025-01-20) Expert
   - **Riccardo Biasini** (2025-01-20) Expert
   - **Brian Bjelde** (2025-01-20) Expert
   - **OPM-3 (Akash Bobba)** (2025-01-20) Expert
   - **Clayton Cromer** (2025-01-20) Deputy General Counsel
-  - **Baris Akis**
-  - **Jacob Altik** (2025-01-24) Senior Advisor to the Director
+  - **Charles Ezell** (2025-01-20) Acting Director
+  - **Greg Hogan** (2025-01-20 - 2025-02-11) Senior Advisor to the Director for Technology and Delivery
+  - **Gavin Kliger** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
+  - **Noah Peters** (2025-01-20) Senior Advisor
+  - **Amanda Scales** (2025-01-20) Chief of Staff
+  - **Joanna Wischer** (2025-01-20) Senior Advisor to the Director
   - **OPM-6 (Nikhil Rajpal)** (2025-01-24) Expert
-  - **Christopher Stanley** (2025-01-28) Expert
+  - **Jacob Altik** (2025-01-24) Senior Advisor to the Director
   - **Justin Monroe** (2025-01-28) Expert
+  - **Christopher Stanley** (2025-01-28) Expert
   - **Edward Coristine** (2025-01-28~) (detailed from GSA)
-  - **Chris Young** (2025-01-30) Expert
   - **Austin Raynor** (2025-01-30) Senior Advisor
-  - **Stephen Duarte** (2025-02-03) Expert
+  - **Chris Young** (2025-01-30) Expert
   - **Christina Hanna** (2025-02-03) Expert
   - **Bryanne-Michelle Mlodzianowski** (2025-02-03) Expert
+  - **Stephen Duarte** (2025-02-03) Expert
   - **Greg Hogan** (2025-02-11) Chief Information OFficer
   - **Gavin Kliger** (2025-02-18) Senior Advisor to the Director for Information Technology
   - **Joe Gebbia** (2025-02-18) Expert
+  - **Mike Gonzalez** (2025-03-XX) Senior Advisor
   - **Tarak Makecha** (2025-03-XX) Senior Advisor
 
 # Peace Corps
@@ -628,7 +631,7 @@
 - slug: sba
 - people:
   - **Edward Coristine** (2025-02-03) (detailed from GSA)
-  - **Donald Park** (2025-02-03)
+  - **Donald Park** (2025-02-03) (detailed from GSA)
 
 # The Smithsonian Institution
 - slug: smithsonian
@@ -720,6 +723,7 @@
 - people:
   - **Edward Coristine**
   - **Marko Elez**
+  - **Luke Farritor**
   - **Aram Moghaddassi**
   - **Payton Rehling** (detailed from DHS)
   - **Kyle Schutt**

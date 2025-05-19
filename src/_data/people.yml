@@ -4305,8 +4305,8 @@
     name: Nate Cavanaugh
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-02-XX
-    start_date_truth:
+    start_date: '2025-02-03'
+    start_date_truth: reported
     start_date_event:
     start_source:
     start_source_name:
@@ -4315,7 +4315,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: '2025-02-01'
+    sort_date: '2025-02-03'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -4334,7 +4334,7 @@
     source: https://www.wired.com/story/doge-government-salaries-elon-musk/
     reimbursed:
     reimbursement_amount:
-    comment: Introduces Frank Schuler on a video call at GSA in February
+    comment: Introduces Frank Schuler on a video call at GSA in February; listed in ProPublica roundup on Feb 05; going to assume Monday start
     qualifications:
     documents:
   - id: detail-gsa-usadf-cavanaugh
@@ -5656,8 +5656,8 @@
       The lawsuit against NEH cites emails being sent from Grant_Notifications@nehemail.onmicrosoft.com which is the form of a Global Admin account for
       Microsoft Entra (probably for the NEH email systems)
   obj_type: Person
-  start_date: 2025-02-XX
-  sort_date: '2025-02-01'
+  start_date: '2025-02-03'
+  sort_date: '2025-02-03'
   start_agency: GSA
 - name: Michael Cole
   sort_name: Cole
@@ -9517,6 +9517,44 @@
     comment: Marko Elez resigned when racist tweets were reported
     qualifications:
     documents: onboard-treasury-marko-elez
+  - id: dol-marko-elez
+    type: appointed
+    agency_id: DOL
+    name: Marko Elez
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-02-14~
+    start_date_truth: inferred
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-02-14~
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source:
+    reimbursed:
+    reimbursement_amount:
+    comment: Marko is detailed from DOL to other agencies, so rehired there at some point in February
+    qualifications:
+    documents:
   - id: detail-dol-ssa-employee-7
     type: detailed
     agency_id: SSA
@@ -9629,44 +9667,6 @@
     reimbursed:
     reimbursement_amount:
     comment: Reported access to system same day as start of detail to HHS
-    qualifications:
-    documents:
-  - id: internal-dhs-tsa-elez
-    type: internal
-    agency_id: TSA
-    name: Marko Elez
-    doge_alias_id:
-    from_agency_id: DHS
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2026-07-04'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No other info, just mentioned in NYT roundup
     qualifications:
     documents:
   - id: internal-dhs-uscis-elez
@@ -9786,6 +9786,44 @@
   - id: internal-dhs-ice-elez
     type: internal
     agency_id: ICE
+    name: Marko Elez
+    doge_alias_id:
+    from_agency_id: DHS
+    start_date:
+    start_date_truth:
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2026-07-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    reimbursed:
+    reimbursement_amount:
+    comment: No other info, just mentioned in NYT roundup
+    qualifications:
+    documents:
+  - id: internal-dhs-tsa-elez
+    type: internal
+    agency_id: TSA
     name: Marko Elez
     doge_alias_id:
     from_agency_id: DHS
@@ -11631,10 +11669,10 @@
     documents:
   - id: internal-dhs-uscis-farritor
     type: internal
-    agency_id: ICE
+    agency_id: USCIS
     name: Luke Farritor
     doge_alias_id:
-    from_agency_id: USCIS
+    from_agency_id: DHS
     start_date:
     start_date_truth:
     start_date_event:
@@ -14996,11 +15034,51 @@
   reporting_notes:
   path: "/people#mike-gonzalez"
   comment:
-  positions: []
+  positions:
+  - id: opm-gonzalez
+    type: appointed
+    agency_id: OPM
+    name: Mike Gonzalez
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-03-XX
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-03-15'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title: Senior Advisor
+    series:
+    supervisory:
+    office:
+    source: https://techcrunch.com/2025/03/26/19-founders-and-vcs-working-with-elon-musks-doge/#mike-gonzalez
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
   events: []
   system_access: []
   obj_type: Person
-  sort_date: '2025-01-20'
+  start_date: 2025-03-XX
+  sort_date: '2025-03-15'
+  start_agency: OPM
 - name: Antonio Gracias
   sort_name: Gracias
   slug: antonio-gracias
@@ -16605,6 +16683,30 @@
     qualifications:
     documents:
   events:
+  - id: 3rNhg30Y
+    type: disruption
+    date: '2025-01-29'
+    sort_date: '2025-01-29'
+    time:
+    text: GSA regional managers receive instructions from HQ that "lease terminations are the clear priority at this time"
+    fuzz:
+    comment:
+    source: https://apnews.com/article/trump-musk-gsa-terminate-office-leases-f8faac5e2038722f705587c8dd21ab26
+    source_title: Trump and Musk demand termination of federal office leases through General Services Administration
+    source_name: AP
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GSA
+      slug: gsa
+      name: General Services Administration
+      short_name: GSA
+    people:
+    - slug: nicole-hollander
+      name: Nicole Hollander
+      sort_name: Hollander
+    aliases: []
   - id: 54gGXtvR
     type: report
     date: '2025-01-29'
@@ -16821,12 +16923,50 @@
   path: "/people#stephanie-holmes"
   comment:
   positions:
+  - id: doge-holmes
+    type: appointed
+    agency_id: DOGE
+    name: Stephanie Holmes
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-02-05~
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-02-05~
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
+    reimbursed:
+    reimbursement_amount:
+    comment: Was added to the ProPublica tracker on 2025-02-06
+    qualifications:
+    documents:
   - id: detail-doge-doi-holmes
     type: detailed
     agency_id: DOI
     name: Stephanie Holmes
     doge_alias_id:
-    from_agency_id:
+    from_agency_id: DOGE
     start_date: '2025-02-24'
     start_date_truth: reported
     start_date_event:
@@ -17045,9 +17185,9 @@
       https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf, https://www.nytimes.com/2025/03/31/us/politics/doge-musk-federal-payroll.html
     comment:
   obj_type: Person
-  start_date: '2025-02-24'
-  sort_date: '2025-02-24'
-  start_agency: DOI
+  start_date: 2025-02-05~
+  sort_date: 2025-02-05~
+  start_agency: DOGE
 - name: Jared Isaacman
   sort_name: Isaacman
   slug: jared-isaacman
@@ -20178,7 +20318,7 @@
   page_slug:
   age: 66
   background: executive
-  category: enabler
+  category: wrecker
   own_page: false
   blurb:
   reporting_notes:
@@ -22482,6 +22622,44 @@
   path: "/people#jonathan-mendelson"
   comment:
   positions:
+  - id: gsa-mendelson
+    type: appointed
+    agency_id: GSA
+    name: Jonathan Mendelson
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-04-25~
+    start_date_truth: inferred
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-04-25~
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    reimbursed:
+    reimbursement_amount:
+    comment: Assuming a GSA start since named in NPR report as from GSA in detailing to other agencies
+    qualifications:
+    documents:
   - id: detail-gsa-dfc-mendelson
     type: detailed
     agency_id: USDFC
@@ -22518,44 +22696,6 @@
     reimbursed:
     reimbursement_amount:
     comment:
-    qualifications:
-    documents:
-  - id: gsa-mendelson
-    type: appointed
-    agency_id: GSA
-    name: Jonathan Mendelson
-    doge_alias_id:
-    from_agency_id:
-    start_date: 2025-04-XX
-    start_date_truth: inferred
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-04-XX
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
-    reimbursed:
-    reimbursement_amount:
-    comment: Assuming a GSA start since named in NPR report as from GSA in detailing to other agencies
     qualifications:
     documents:
   - id: detail-gsa-sec-mendelson
@@ -22716,9 +22856,9 @@
     aliases: []
   system_access: []
   obj_type: Person
-  start_date: '2025-04-28'
-  sort_date: '2025-04-28'
-  start_agency: USDFC
+  start_date: 2025-04-25~
+  sort_date: 2025-04-25~
+  start_agency: GSA
 - name: Katie Miller
   sort_name: Miller
   slug: katie-miller
@@ -25528,12 +25668,50 @@
   path: "/people#donald-park"
   comment:
   positions:
-  - id: sba-park
-    type: unknown
-    agency_id: SBA
+  - id: gsa-park
+    type: appointed
+    agency_id: GSA
     name: Donald Park
     doge_alias_id:
     from_agency_id:
+    start_date: 2025-02-XX
+    start_date_truth: inferred
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-02-01'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source:
+    reimbursed:
+    reimbursement_amount:
+    comment: Inferring detailed from GSA to SBA
+    qualifications:
+    documents:
+  - id: sba-park
+    type: detailed
+    agency_id: SBA
+    name: Donald Park
+    doge_alias_id:
+    from_agency_id: GSA
     start_date: '2025-02-03'
     start_date_truth: reported
     start_date_event:
@@ -25661,9 +25839,9 @@
     aliases: []
   system_access: []
   obj_type: Person
-  start_date: '2025-02-03'
-  sort_date: '2025-02-03'
-  start_agency: SBA
+  start_date: 2025-02-XX
+  sort_date: '2025-02-01'
+  start_agency: GSA
 - name: Noah Peters
   sort_name: Peters
   slug: noah-peters
@@ -34826,6 +35004,44 @@
   path: "/people#marshall-wood"
   comment:
   positions:
+  - id: gsa-wood
+    type: appointed
+    agency_id: GSA
+    name: Marshall Wood
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-04-XX
+    start_date_truth: guessed
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-04-15'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    reimbursed:
+    reimbursement_amount:
+    comment: FIXME, find more details on when started
+    qualifications:
+    documents:
   - id: detail-gsa-dfc-wood
     type: detailed
     agency_id: USDFC
@@ -34862,44 +35078,6 @@
     reimbursed:
     reimbursement_amount:
     comment:
-    qualifications:
-    documents:
-  - id: gsa-wood
-    type: appointed
-    agency_id: GSA
-    name: Marshall Wood
-    doge_alias_id:
-    from_agency_id:
-    start_date: 2025-04-XX
-    start_date_truth: guessed
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-04-XX
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
-    reimbursed:
-    reimbursement_amount:
-    comment: FIXME, find more details on when started
     qualifications:
     documents:
   events:
@@ -34979,9 +35157,9 @@
     aliases: []
   system_access: []
   obj_type: Person
-  start_date: '2025-04-28'
-  sort_date: '2025-04-28'
-  start_agency: USDFC
+  start_date: 2025-04-XX
+  sort_date: '2025-04-15'
+  start_agency: GSA
 - name: Ryan Wunderly
   sort_name: Wunderly
   slug: ryan-wunderly

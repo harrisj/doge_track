@@ -338,9 +338,9 @@
     series: '0301'
     supervisory: false
     salary: "$90025"
-    qualifications: >
-      Hands-on software engineer that is an expert in modern computer programming languages, cloud and other infrastructure, AI, etc. 5 years of experience
-      using numerous computer code languages, leadership of teams in technical, software design, and infrastructure areas.
+    qualifications: 'Hands-on software engineer that is an expert in modern computer programming languages, cloud and other infrastructure, AI, etc. 5 years of experience using numerous computer code languages, leadership of teams in technical, software design, and infrastructure areas.
+
+      '
     agency: SSA
     name: Akash Bobba
     alias: SSA-1
@@ -397,10 +397,11 @@
   - id: gsa-cavanaugh
     type: appointed
     agency: GSA
-    sort_date: 2025-02-01
-    start_date: 2025-02-XX
+    sort_date: 2025-02-03
+    start_date: 2025-02-03
+    start_date_truth: reported
     salary: "$120,500"
-    comment: Introduces Frank Schuler on a video call at GSA in February
+    comment: Introduces Frank Schuler on a video call at GSA in February; listed in ProPublica roundup on Feb 05; going to assume Monday start
     source: https://www.wired.com/story/doge-government-salaries-elon-musk/
   - id: detail-gsa-usadf-cavanaugh
     type: detailed
@@ -434,9 +435,7 @@
     start_date: 2025-03-25
     start_date_truth: verified
     title: President
-    comment: >-
-      Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco Rubio and Pete Hegseth, and he is authorized to
-      transfer all assets to the GSA
+    comment: Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco Rubio and Pete Hegseth, and he is authorized to transfer all assets to the GSA
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.14.1.pdf
     agency: USIP
   - id: imls-cavanaugh
@@ -488,9 +487,7 @@
     agency: USDA
     start_date: 2025-02-XX
     start_date_truth: inferred
-    comment: >-
-      CC'ed on an email 2025-02-20, by Gavin Kliger and has a USDS address. USDA administrator said on 2/14 that DOGE had been at the agency for several
-      weeks
+    comment: CC'ed on an email 2025-02-20, by Gavin Kliger and has a USDS address. USDA administrator said on 2/14 that DOGE had been at the agency for several weeks
 
 - name: Miles Collins
   sort_name: Collins
@@ -857,6 +854,12 @@
     salary: "$84601"
     documents:
     - onboard-treasury-marko-elez
+  - id: dol-marko-elez
+    type: appointed
+    agency: DOL
+    start_date: 2025-02-14~
+    start_date_truth: inferred
+    comment: Marko is detailed from DOL to other agencies, so rehired there at some point in February
   - id: detail-dol-ssa-employee-7
     type: detailed
     agency: SSA
@@ -935,8 +938,8 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-farritor
     type: internal
-    from: USCIS
-    agency: ICE
+    from: DHS
+    agency: USCIS
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: detail-gsa-hhs-luke-farritor
@@ -1240,7 +1243,15 @@
   sort_name: Gonzalez
   slug: mike-gonzalez
   category: unknown
-  positions: []
+  positions:
+  - id: opm-gonzalez
+    agency: OPM
+    type: appointed
+    sort_date: 2025-03-15
+    start_date: 2025-03-XX
+    start_date_truth: reported
+    title: Senior Advisor
+    source: https://techcrunch.com/2025/03/26/19-founders-and-vcs-working-with-elon-musks-doge/#mike-gonzalez
 
 - name: Antonio Gracias
   age: 54
@@ -1463,8 +1474,16 @@
   background: hr
   category: wrecker
   positions:
+  - id: doge-holmes
+    type: appointed
+    start_date: 2025-02-05~
+    start_date_truth: reported
+    comment: Was added to the ProPublica tracker on 2025-02-06
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
+    agency: DOGE
   - id: detail-doge-doi-holmes
     type: detailed
+    from: DOGE
     start_date: 2025-02-24
     start_date_truth: reported
     title: Special Advisor / Acting Chief Human Capital Officer
@@ -1640,9 +1659,7 @@
     start_date: 2025-02-01~
     start_date_truth: inferred
     office: Office of the Secretary
-    comment: >-
-      No details, but listed in a NYT roundup and adding here. On 2/14, USDA head said they'd been there a couple of weeks. An email from him has the label
-      OSEC - DC
+    comment: No details, but listed in a NYT roundup and adding here. On 2/14, USDA head said they'd been there a couple of weeks. An email from him has the label OSEC - DC
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: detail-opm-cfpb-kliger
     type: detailed
@@ -1799,7 +1816,7 @@
   slug: scott-langmack
   age: 66
   background: executive
-  category: enabler
+  category: wrecker
   positions:
   - id: hud-langmack
     type: unknown
@@ -1956,9 +1973,7 @@
     office: Human Resources
     start_date: 2025-03-30~
     start_date_truth: guessed
-    comment: >-
-      Tarak Makacha has reportedly shown up in FBI directories as a Senior Advisor to the agency's executive assistant director for human resources. He
-      reportedly has been there since the end of March
+    comment: Tarak Makacha has reportedly shown up in FBI directories as a Senior Advisor to the agency's executive assistant director for human resources. He reportedly has been there since the end of March
     source: https://theintercept.com/2025/04/18/doge-tesla-employee-justice-department-fbi/
     agency: FBI
   - id: detail-fcc-makecha
@@ -2031,7 +2046,7 @@
   positions:
   - id: gsa-mendelson
     type: appointed
-    start_date: 2025-04-XX
+    start_date: 2025-04-25~
     start_date_truth: inferred
     comment: Assuming a GSA start since named in NPR report as from GSA in detailing to other agencies
     source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
@@ -2278,8 +2293,7 @@
   category: enabler
   background: political
   blurb: >-
-    Technically not a member of DOGE, Trent Morse has often coordinated with them on their operations against smaller independent agencies. In several examples,
-    when the Trump Administration has moved to fire board members and executives of independent agencies, that email has always come from Trent Morse.
+    Technically not a member of DOGE, Trent Morse has often coordinated with them on their operations against smaller independent agencies. In several examples, when the Trump Administration has moved to fire board members and executives of independent agencies, that email has always come from Trent Morse.
   positions:
   - id: eop-morse
     type: appointed
@@ -2339,8 +2353,16 @@
   background: finance
   category: wrecker
   positions:
+  - id: gsa-park
+    type: appointed
+    sort_date: 2025-02-01
+    start_date: 2025-02-XX
+    start_date_truth: inferred
+    agency: GSA
+    comment: Inferring detailed from GSA to SBA
   - id: sba-park
-    type: unknown
+    type: detailed
+    from: GSA
     start_date: 2025-02-03
     start_date_truth: reported
     agency: SBA
@@ -2645,9 +2667,7 @@
     start_date_truth: reported
     title: Senior Advisor
     supervisory: false
-    comment: >-
-      Scott Coulter is named the new CIO at the Social Security Administration and Mike Russo is moved to a Senior Advisor role with a focus on modernizing
-      systems
+    comment: Scott Coulter is named the new CIO at the Social Security Administration and Mike Russo is moved to a Senior Advisor role with a focus on modernizing systems
     source: https://www.nextgov.com/people/2025/03/ssa-tech-shop-be-led-another-doge-associate/404031/?oref=ng-homepage-river
     agency: SSA
 
@@ -3100,9 +3120,7 @@
     start_date: 2025-04-10~
     start_date_truth: reported
     fuzz: Date is unspecified, just sometime earlier in April
-    comment: >-
-      Scott Langmack sends a message that "I'd like to share with you that Chris Sweet has joined the HUD DOGE team with the title of special assistant,
-      although a better title might be 'AI computer programming quant analyst'"
+    comment: Scott Langmack sends a message that "I'd like to share with you that Chris Sweet has joined the HUD DOGE team with the title of special assistant, although a better title might be 'AI computer programming quant analyst'"
     source: https://www.wired.com/story/doge-college-student-ai-rewrite-regulations-deregulation/
     title: Special Assistant
     agency: HUD
@@ -3300,6 +3318,7 @@
     type: appointed
     name: Marshall Wood
     agency: GSA
+    sort_date: 2025-04-15
     start_date: 2025-04-XX
     start_date_truth: guessed
     source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute

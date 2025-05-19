@@ -80,6 +80,6 @@ end
 
 File.open(agencies_file, 'w') do |file|
   schema_hdr = "# yaml-language-server: $schema=../schemas/agencies-file.json\n"
-  out_yaml = YAML.dump(agencies, line_width: 150, stringify_names: true, header: false)
+  out_yaml = YAML.dump(agencies, line_width: 300, stringify_names: true, header: false)
   file.write(schema_hdr, out_yaml.gsub(/^- /, "\n- "))
 end
