@@ -60,5 +60,6 @@ Bridgetown.configure do |config|
 
   # For more documentation on how to configure your site using this initializers file,
   # visit: https://edge.bridgetownrb.com/docs/configuration/initializers/
-  init :"bridgetown-lit-renderer" 
+  init :"bridgetown-sitemap"
+  init :"bridgetown-seo-tag"
 end

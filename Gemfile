@@ -37,17 +37,14 @@ gem 'puma', '< 7'
 # Or for faster parsing of HTML-only resources via Inspectors, use Nokolexbor:
 # gem "nokolexbor", "~> 0.4"
 
-gem 'sequel', '~> 5.92'
-
+gem 'bridgetown-seo-tag', '~> 6.0'
+gem 'bridgetown-sitemap', '~> 3.0'
 gem 'edtf', '~> 3.2'
 gem 'edtf-humanize', '~> 2.3'
+gem 'nokogiri', '~> 1.18'
+gem 'racc', '~> 1.8'
+gem 'rubocop', '~> 1.75', group: :development
+gem 'rubocop-sequel', '~> 0.4.1', group: :development
+gem 'sequel', '~> 5.92'
 gem 'shortuuid', '~> 0.6.0'
 gem 'sqlite3', '~> 2.6'
-
-gem 'racc', '~> 1.8'
-
-gem 'rubocop', '~> 1.75', group: :development
-
-gem 'rubocop-sequel', '~> 0.4.1', group: :development
-
-gem 'bridgetown-lit-renderer', '= 2.1.0.beta2'
