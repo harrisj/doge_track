@@ -83,6 +83,7 @@ DB.create_table! :people do
   string :reporting_notes
   string :path
   string :comment
+  string :table_note
 end
 
 DB.create_table! :events do

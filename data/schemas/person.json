@@ -41,6 +41,11 @@
             "description": "A text field for collecting any notes about the reporting on the person",
             "type": "string"
         },
+        "table_note": {
+            "description": "A very short note to display in tables about the person",
+            "type": "string",
+            "max_length": 30
+        },
         "positions": {
             "type": "array",
             "items": {

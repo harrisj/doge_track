@@ -48,21 +48,23 @@ Since the beginning of March, DOGE has been moving staff to work within agencies
 
 ### Office of Personnel Management
 
-Many of the early DOGE hires were formally appointed at the Office of Personnel Management. That
+Many of the early DOGE hires were formally appointed at the Office of Personnel Management. Some technical staff at OPM were supporting the 
 
 {% opm_wreckers = all_wreckers.select {|w| w.start_agency == "OPM" } %}
 {%@ "wrecker_table", wreckers: opm_wreckers %}
 
 ## General Services Administration
 
+The {{ agency_link("GSA", "General Service Administration") }} is an agency that provides shared services and procurement support to other federal agencies. Early on, DOGE focused on using the GSA to force cost reductions across government - _e.g._, through cancelling building leases or restricting the use of purchase cards - but GSA has also been the home base for a growing number of wreckers, with many recent hires starting there.
+
 {% gsa_wreckers = all_wreckers.select {|w| w.start_agency == "GSA" } %}
 {%@ "wrecker_table", wreckers: gsa_wreckers %}
 
 ### Other Agencies
 
-There are very few firm public details about the early days of DOGE, so there are some staff where I don't yet know how they started. These are all the other wreckers I am still trying to figure out details on.
+There are also a fair number of Wreckers who started at other agencies, possibly because agency policy or practices might have made it difficult to detail someone from elsewhere. Or, there might have been explicit direction from agency leadership to hire staff there. For instance, there were four Wreckers hired directly from SpaceX to work at the FAA for the short-term on the direction of the Department of Transportation head, Sean Duffy. Some of these names might also be reclassified if I am able to determine they started at GSA or OPM and were actually detailed to the agency listed below.
 
-{% other_wreckers = all_wreckers.reject {|x| ["GSA", "OPM", "DOGE", "FAA"].include? x.start_agency }.sort_by {|x| [x.start_agency, x.sort_date]} %}
+{% other_wreckers = all_wreckers.reject {|x| ["GSA", "OPM", "DOGE"].include? x.start_agency }.sort_by {|x| [x.start_agency, x.sort_date]} %}
 <table class="table is-size-5">
   <thead>
     <tr>
@@ -71,7 +73,7 @@ There are very few firm public details about the early days of DOGE, so there ar
       <th>Agency</th>
       <th>Start Date</th>
       <th>Background</th>
-      <th>Other Agencies</th>
+      <th>Notes</th>
     </tr>
   </thead>
   <tbody>
@@ -83,10 +85,10 @@ There are very few firm public details about the early days of DOGE, so there ar
       <td>{{ agency_link(person.start_agency) }}</td>
       <td><nobr>{{ person.start_date }}</nobr></td>
       <td>{{ person_background(person) }}</td>
-      <td>{{ details | agencies | uniq | agency_links }}</td>
+      <td>{% if person.table_note %}{{ person.table_note }} {% end %}
+          {% if details.any? %}Other: {{ details | agencies | uniq | agency_links }}{% end %}</td>
     </tr>
   {% end %}
   </tbody>
 </table>
 
-## Raids On Other Agencies

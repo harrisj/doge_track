@@ -389,11 +389,12 @@
   - **Jeremy Lewin** (2025-01-20)
   - **Ethan Shaotran** (2025-01-20)
   - **Edward Coristine** (2025-01-20~)
-  - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
   - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
+  - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
   - **Nate Cavanaugh** (2025-02-03)
   - **Riley Sennott** (2025-02-12)
   - **Frank Schuler** (2025-02-18~) Senior Advisor
+  - **Kyle Schutt** (2025-02-18~)
   - **Donald Park** (2025-02-XX)
   - **Dave Malcher** (2025-04-24~)
   - **Raj Jegannathan** (2025-04-24~)
