@@ -235,6 +235,11 @@
   - id: ssa-bisignano
     type: appointed
     agency: SSA
+    start_date: 2025-05-06
+    start_date_truth: verified
+    title: Commissioner
+    supervisory: true
+    source: https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
 
 - name: Brian Bjelde
   sort_name: Bjelde
@@ -441,6 +446,20 @@
     source: https://bsky.app/profile/marisakabas.bsky.social
     comment: DOGE put entire staff on admin leave and started cancelling grants, not many details
     agency: IMLS
+  - id: detail-gsa-nlrb-cavanaugh
+    type: detailed
+    agency: NLRB
+    from: GSA
+    start_date: 2025-04-16
+    start_date_truth: reported
+    source: https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+  - id: detail-gsa-dfc-cavanaugh
+    type: detailed
+    from: GSA
+    start_date: 2025-04-28
+    start_date_truth: reported
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    agency: USDFC
   - id: detail-gsa-exim-cavanaugh
     type: detailed
     agency: EXIM
@@ -749,14 +768,23 @@
   background: political
   category: enabler
   positions:
-  - id: ssa-dudek
+  - id: ssa-dudek-commissioner
     type: appointed
     title: Acting Commissioner
     agency: SSA
     start_date: 2025-02-16
-    start_date_truth: reported
+    start_date_truth: verified
+    end_date: 2025-05-06
+    end_date_truth: verified
     supervisory: true
     source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
+  - id: ssa-dudek
+    type: unknown
+    agency: SSA
+    start_date: 2025-05-06
+    start_date_truth: reported
+    comment: FIXME find out what Dudek is doing at SSA
+    source: https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
 
 - name: Stephen Ehikian
   sort_name: Ehikian
@@ -1061,6 +1089,13 @@
     start_date_truth: verified
     comment: Guessing GSA based on some past reporting
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
+  - id: detail-gsa-nlrb-fox
+    type: detailed
+    agency: NLRB
+    from: GSA
+    start_date: 2025-04-16
+    start_date_truth: reported
+    source: https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
 
 - name: Justin Fulcher
   sort_name: Fulcher
@@ -1994,8 +2029,23 @@
   slug: jonathan-mendelson
   category: wrecker
   positions:
-  - id: sec-mendelson
-    type: unknown
+  - id: gsa-mendelson
+    type: appointed
+    start_date: 2025-04-XX
+    start_date_truth: inferred
+    comment: Assuming a GSA start since named in NPR report as from GSA in detailing to other agencies
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    agency: GSA
+  - id: detail-gsa-dfc-mendelson
+    type: detailed
+    from: GSA
+    start_date: 2025-04-28
+    start_date_truth: reported
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    agency: USDFC
+  - id: detail-gsa-sec-mendelson
+    type: detailed
+    from: GSA
     start_date: 2025-05-02~
     start_date_truth: reported
     source: https://www.reuters.com/sustainability/boards-policy-regulation/doge-expands-presence-wall-st-regulator-sources-say-2025-05-02/
@@ -2807,6 +2857,13 @@
     signed_date: 2025-03-12
     documents:
     - 20250312-gsa-usps-alex-simonpour
+  - id: detail-gsa-dfc-shaotran
+    type: detailed
+    from: GSA
+    start_date: 2025-04-28
+    start_date_truth: reported
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    agency: USDFC
 
 - name: Thomas Shedd
   sort_name: Shedd
@@ -3002,6 +3059,20 @@
     office: Office of the Commissioner
     source: https://web-cdn.bsky.app/profile/chrisgeidner.bsky.social/post/3ljb6rufur22e
     agency: SSA
+
+- name: Jack Stein
+  sort_name: Stein
+  slug: jack-stein
+  category: wrecker
+  positions:
+  - id: gsa-stein
+    type: appointed
+    name: Jack Stein
+    agency: GSA
+    start_date: 2025-04-XX
+    start_date_truth: guessed
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    comment: FIXME, find more details on when started
 
 - name: Brian Stube
   sort_name: Stube
@@ -3219,6 +3290,27 @@
     comment: Sourced from a FOIA document; listed as Joanna Miller
     documents:
     - opm-foia-doge-positions
+
+- name: Marshall Wood
+  sort_name: Wood
+  slug: marshall-wood
+  category: wrecker
+  positions:
+  - id: gsa-wood
+    type: appointed
+    name: Marshall Wood
+    agency: GSA
+    start_date: 2025-04-XX
+    start_date_truth: guessed
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    comment: FIXME, find more details on when started
+  - id: detail-gsa-dfc-wood
+    type: detailed
+    from: GSA
+    start_date: 2025-04-28
+    start_date_truth: reported
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    agency: USDFC
 
 - name: Ryan Wunderly
   sort_name: Wunderly

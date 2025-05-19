@@ -59,7 +59,7 @@
 # Frank Bisignano
 - category: enabler
 - positions:
-    -  **SSA**  
+    -  **SSA** (2025-05-06 to ??) **Commissioner**
 
 # Brian Bjelde
 - category: support
@@ -100,6 +100,8 @@
         - Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
     -  **USIP** (2025-03-25 to ??) President
     -  **IMLS** (2025-03-31 to ??) 
+    -  **NLRB** (2025-04-16 to ??) 
+    -  **USDFC** (2025-04-28 to ??) 
     -  **EXIM** (2025-05-14 to ??) 
     -  **MSPB** (2025-05-21 to ??) 
 
@@ -175,7 +177,8 @@
 # Leland Dudek
 - category: enabler
 - positions:
-    -  **SSA** (2025-02-16 to ??) **Acting Commissioner**
+    -  **SSA** (2025-02-16 to 2025-05-06) **Acting Commissioner**
+    -  **SSA** (2025-05-06 to ??) 
 
 # Stephen Ehikian
 - category: enabler
@@ -270,6 +273,7 @@
     -  **GSA**  
     -  **NEH** (2025-03-13~ to ??) 
         - Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
+    -  **NLRB** (2025-04-16 to ??) 
 
 # Justin Fulcher
 - category: wrecker
@@ -530,6 +534,8 @@
 # Jonathan Mendelson
 - category: wrecker
 - positions:
+    -  **USDFC** (2025-04-28 to ??) 
+    -  **GSA** (2025-04-XX to ??) 
     -  **SEC** (2025-05-02~ to ??) 
 
 # Katie Miller
@@ -741,6 +747,7 @@
     -  **SSA** (2025-02-18 to NTE 2026-02-26) [as "SSA-10"] 
     -  **USADF** (2025-02-20 to 2025-03-06) 
     -  **USPS** (2025-03-12 to NTE 2025-06-15) 
+    -  **USDFC** (2025-04-28 to ??) 
 
 # Thomas Shedd
 - category: enabler
@@ -790,6 +797,11 @@
 - positions:
     -  **SSA** (2025-02-25 to 2025-02-27) Senior Advisor
     -  **SSA** (2025-02-27 to ??) Acting General Counsel
+
+# Jack Stein
+- category: wrecker
+- positions:
+    -  **GSA** (2025-04-XX to ??) 
 
 # Brian Stube
 - category: wrecker
@@ -872,6 +884,12 @@
 - category: support
 - positions:
     -  **OPM** (2025-01-20 to ??) Senior Advisor to the Director GS-15
+
+# Marshall Wood
+- category: wrecker
+- positions:
+    -  **USDFC** (2025-04-28 to ??) 
+    -  **GSA** (2025-04-XX to ??) 
 
 # Ryan Wunderly
 - category: wrecker

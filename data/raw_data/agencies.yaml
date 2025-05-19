@@ -1,6 +1,29 @@
 # yaml-language-server: $schema=../schemas/agencies-file.json
 ---
 
+- id: ACHP
+  name: Advisory Council on Historic Preservation
+  slug: achp
+  page_slug: independent
+  short_name: ACHP
+  events:
+  - date: 2025-04-17
+    type: official
+    event: DOGE contacts the leadership of ACHP requesting a meeting the following week with a new DOGE team assigned to the agency
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_name: NPR
+    source_title: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    agency: ACHP
+    id: 6sYzWZML
+  - date: 2025-04-23
+    type: sighting
+    event: After an initial video call, DOGE arrives at the agency offices for the Advisory Council on Historic Preservation
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_name: NPR
+    source_title: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    agency: ACHP
+    id: 7BTc0SXi
+
 - name: AmeriCorps
   id: AmeriCorps
   short_name: AmeriCorps
@@ -719,7 +742,7 @@
   id: CPSC
   slug: cpsc
   page_slug: independent
-  short_name: Consumer Product Safety
+  short_name: CPSC
   events:
   - date: 2025-05-08
     type: sighting
@@ -2156,7 +2179,7 @@
 
 - name: Export-Import Bank of the United States
   id: EXIM
-  short_name: Export-Import Bank
+  short_name: EXIM
   slug: exim
   page_slug: independent
   events:
@@ -2591,6 +2614,54 @@
       https://federalnewsnetwork.com/agency-oversight/2025/04/many-doge-officials-appear-on-gsas-security-shortlist-acting-head-says-nobody-working-for-doge-here/
     agency: GSA
     id: HQUguBSH
+
+- name: Government Accountability Office
+  id: GAO
+  slug: gao
+  short_name: GAO
+  page_slug: independent
+  blurb: >-
+    As a legislative-branch agency, the Government Accountability Office should be firmly outside the bounds of DOGE's interference. And yet, they have
+    tried. It's easy to see why; as the government agency actually tasked with identifying waste, fraud and abuse, they are doing the work that DOGE claims
+    to be doing, which makes DOGE's error-ridden Wall of Receipts look even worse. More recently, GAO has been directed by members of Congress to investigate
+    the specific activities of DOGE in various agencies. So, DOGE has attempted to gain access and control to GAO, but that has been resisted for now.
+  events:
+  - date: 2025-05-13
+    type: sighting
+    event: Justin Fox emails GAO asking for a call to get a DOGE team assigned to the agency, according to an email shared with NPR
+    named:
+    - Justin Fox
+    - Nate Cavanaugh
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_name: NPR
+    source_title: How DOGE has tried to embed beyond the executive branch
+    agency: GAO
+    id: 4puong1Y
+  - date: 2025-05-13
+    type: directory
+    event: >-
+      In an overview of how DOGE has tried to assign teams outside of the executive branch, NPR lists six DOGE staffers at GSA who are involved with those
+      efforts
+    named:
+    - Justin Fox
+    - Nate Cavanaugh
+    - Justin Aimonetti
+    - Jack Stein
+    - Jonathan Mendelson
+    - Marshall Wood
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_name: NPR
+    source_title: How DOGE has tried to embed beyond the executive branch
+    agency: GAO
+    id: 6amFFPAZ
+  - date: 2025-05-16
+    type: official
+    event: A GAO spokesman confirms that DOGE had attempted to assign a team to the agency but had been rebuffed by agency leadership.
+    agency: GAO
+    source: https://www.nytimes.com/2025/05/16/us/politics/doge-musk-gao-accountability-office.html
+    source_name: The New York Times
+    source_title: DOGE Seeks to Investigate Another Government Budget Watchdog
+    id: 3QZhm9bF
 
 - name: Health and Human Services
   id: HHS
@@ -3206,7 +3277,7 @@
 
 - name: National Archives
   id: NARA
-  short_name: NARA
+  short_name: Natl Archives
   slug: nara
   page_slug: archives
   events: []
@@ -3445,8 +3516,15 @@
     id: 7x2jXvup
   - date: 2025-04-16
     type: sighting
-    event: Two DOGE staffers are reportedly detailed from the GSA to work at the NLRB for the next few months
-    source: https://www.npr.org/2025/04/16/nx-s1-5366851/doge-nlrb-whistleblower-musk-data
+    event: Two DOGE staffers linked to the destruction of many small agencies are reportedly detailed from the GSA to work at the NLRB for the next few
+      months
+    named:
+    - Justin Fox
+    - Nate Cavanaugh
+    comment: Date is from an NPR piece
+    source: https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+    source_name: Bloomberg
+    source_title: Labor Board's DOGE Detailees Connected to Agency Take Downs
     agency: NLRB
     id: eCQoxNRz
   - date: 2025-05-15
@@ -4056,6 +4134,7 @@
 - name: Peace Corps
   id: Peace
   short_name: Peace Corps
+  page_slug: independent
   slug: peace-corps
   events:
   - date: 2025-04-04
@@ -4068,10 +4147,17 @@
     id: RmvrV2dc
   - date: 2025-04-28
     type: disruption
-    event: The head of a Peace Corps alumni group reports he had been told the agency is expecting large cuts in US staffing ordered by DOGE
+    event: The head of a Peace Corps alumni group reports he had been told the agency is expecting large cuts in US staffing, as ordered by DOGE
     source: https://www.nytimes.com/2025/04/28/us/politics/peace-corps-cuts-doge.html
     agency: Peace
     id: as2btrZU
+  - date: 2025-05-09
+    type: sighting
+    event: DOGE staff reportedly met with Peace Corps leadership to discuss staffing cuts and resignations
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_name: NPR
+    agency: Peace
+    id: 5fdC2pM1
 
 - name: Securities and Exchange Commission
   id: SEC
@@ -4585,6 +4671,36 @@
     source_name: The Washington Post
     agency: SSA
     id: enUTyZZ7
+  - date: 2025-04-30~
+    type: disruption
+    event: >-
+      Social Security introduces a new AI-based agent for phone calls from 350 field offices in the Southeast and Northeast regions. It frustrates many
+      users attempting to reach an actual person for assistance.
+    source: https://www.washingtonpost.com/politics/2025/05/16/doge-social-security-musk-trump-cuts/
+    source_name: The Washington Post
+    source_title: How DOGE's grand plan to remake Social Security is backfiring
+    agency: SSA
+    id: PBTtNmMD
+  - date: 2025-05-06
+    type: official
+    event: Frank Bisignano is confirmed by the Senate as Commissioner of the Social Security Administration
+    named:
+    - Frank Bisignano
+    source: https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
+    source_name: AP
+    source_title: Senate confirms Bisignano to lead Social Security Administration as agency faces DOGE overhaul
+    agency: SSA
+    id: 76GQmOLo
+  - date: 2025-05-14
+    type: disruption
+    event: >-
+      Many of the Social Security offices are in disarray, unable to buy paper for printers or shred documents because DOGE's $1 limit on expense cards
+      means that fewer than a dozen staff in SSA are able to authorize office expenses for all 1300 field offices.
+    source: https://www.washingtonpost.com/politics/2025/05/16/doge-social-security-musk-trump-cuts/
+    source_name: The Washington Post
+    source_title: How DOGE's grand plan to remake Social Security is backfiring
+    agency: SSA
+    id: 8cf4dBxA
   - date: 2025-05-16
     type: disruption
     event: >-
@@ -4799,6 +4915,21 @@
     source: https://www.senate.gov/legislative/LIS/executive_calendar/xcalv.pdf
     agency: USADF
     id: fnPuKCNX
+
+- name: U.S. Access Board
+  id: USAccess
+  short_name: Access Board
+  slug: usaccess
+  page_slug: independent
+  blurb: An independent agency that develops accessibility standards that meet requirements of the Americans with Disabilities Act (ADA)
+  events:
+  - date: 2025-04-22
+    type: sighting
+    event: US Access reports that the agency had a cordial meeting with DOGE and that additional meetings are expected
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_name: NPR
+    agency: USAccess
+    id: 2oGmeHjW
 
 - name: US Agency for International Development
   id: USAID
@@ -5235,6 +5366,25 @@
     id: 1SIWo0cR
     source_name: Court Filing
     source_title: United States Institute of Peace v. Jackson (D.D.C.)
+
+- name: US International Development Finance Corporation
+  id: USDFC
+  slug: usidfc
+  short_name: DFC
+  page_slug: independent
+  events:
+  - date: 2025-04-28
+    type: sighting
+    event: A team of DOGE personnel arrive at the headquarters of the US International Development Finance Corporation
+    named:
+    - Nate Cavanaugh
+    - Jonathan Mendelson
+    - Ethan Shaotran
+    - Marshall Wood
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    source_name: Politico
+    agency: USDFC
+    id: 6HPPymkF
 
 - name: US Postal Service
   short_name: USPS

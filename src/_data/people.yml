@@ -356,6 +356,47 @@
       name: Jonathan Mendelson
       sort_name: Mendelson
     aliases: []
+  - id: 6amFFPAZ
+    type: directory
+    date: '2025-05-13'
+    sort_date: '2025-05-13'
+    time:
+    text: >-
+      In an overview of how DOGE has tried to assign teams outside of the executive branch, NPR lists six DOGE staffers at GSA who are involved with those
+      efforts
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_title: How DOGE has tried to embed beyond the executive branch
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GAO
+      slug: gao
+      name: Government Accountability Office
+      short_name: GAO
+    people:
+    - slug: justin-aimonetti
+      name: Justin Aimonetti
+      sort_name: Aimonetti
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: justin-fox
+      name: Justin Fox
+      sort_name: Fox, Justin
+    - slug: jonathan-mendelson
+      name: Jonathan Mendelson
+      sort_name: Mendelson
+    - slug: jack-stein
+      name: Jack Stein
+      sort_name: Stein
+    - slug: marshall-wood
+      name: Marshall Wood
+      sort_name: Wood
+    aliases: []
   system_access: []
   obj_type: Person
   start_date: 2025-02-XX
@@ -2625,8 +2666,8 @@
     name: Frank Bisignano
     doge_alias_id:
     from_agency_id:
-    start_date:
-    start_date_truth:
+    start_date: '2025-05-06'
+    start_date_truth: verified
     start_date_event:
     start_source:
     start_source_name:
@@ -2635,7 +2676,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: '2025-01-20'
+    sort_date: '2025-05-06'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -2647,11 +2688,11 @@
     salary:
     pd_code:
     sge:
-    title:
+    title: Commissioner
     series:
-    supervisory:
+    supervisory: true
     office:
-    source:
+    source: https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
     reimbursed:
     reimbursement_amount:
     comment:
@@ -2690,10 +2731,34 @@
       name: Mike Russo
       sort_name: Russo
     aliases: []
+  - id: 76GQmOLo
+    type: official
+    date: '2025-05-06'
+    sort_date: '2025-05-06'
+    time:
+    text: Frank Bisignano is confirmed by the Senate as Commissioner of the Social Security Administration
+    fuzz:
+    comment:
+    source: https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
+    source_title: Senate confirms Bisignano to lead Social Security Administration as agency faces DOGE overhaul
+    source_name: AP
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: SSA
+      slug: ssa
+      name: Social Security Administration
+      short_name: SSA
+    people:
+    - slug: frank-bisignano
+      name: Frank Bisignano
+      sort_name: Bisignano
+    aliases: []
   system_access: []
   obj_type: Person
-  start_date:
-  sort_date: '2025-01-20'
+  start_date: '2025-05-06'
+  sort_date: '2025-05-06'
   start_agency: SSA
 - name: Brian Bjelde
   sort_name: Bjelde
@@ -4464,6 +4529,82 @@
     comment: DOGE put entire staff on admin leave and started cancelling grants, not many details
     qualifications:
     documents:
+  - id: detail-gsa-nlrb-cavanaugh
+    type: detailed
+    agency_id: NLRB
+    name: Nate Cavanaugh
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: '2025-04-16'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-04-16'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+  - id: detail-gsa-dfc-cavanaugh
+    type: detailed
+    agency_id: USDFC
+    name: Nate Cavanaugh
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: '2025-04-28'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-04-28'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
   - id: detail-gsa-exim-cavanaugh
     type: detailed
     agency_id: EXIM
@@ -5237,6 +5378,33 @@
       name: Luke Farritor
       sort_name: Farritor
     aliases: []
+  - id: eCQoxNRz
+    type: sighting
+    date: '2025-04-16'
+    sort_date: '2025-04-16'
+    time:
+    text: Two DOGE staffers linked to the destruction of many small agencies are reportedly detailed from the GSA to work at the NLRB for the next few months
+    fuzz:
+    comment: Date is from an NPR piece
+    source: https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+    source_title: Labor Board's DOGE Detailees Connected to Agency Take Downs
+    source_name: Bloomberg
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: NLRB
+      slug: nlrb
+      name: National Labor Relations Board
+      short_name: NLRB
+    people:
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: justin-fox
+      name: Justin Fox
+      sort_name: Fox, Justin
+    aliases: []
   - id: 3Jza7CNg
     type: disruption
     date: '2025-04-17'
@@ -5263,6 +5431,39 @@
     - slug: keith-sonderling
       name: Keith Sonderling
       sort_name: Sonderling
+    aliases: []
+  - id: 6HPPymkF
+    type: sighting
+    date: '2025-04-28'
+    sort_date: '2025-04-28'
+    time:
+    text: A team of DOGE personnel arrive at the headquarters of the US International Development Finance Corporation
+    fuzz:
+    comment:
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    source_title:
+    source_name: Politico
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: USDFC
+      slug: usidfc
+      name: US International Development Finance Corporation
+      short_name: DFC
+    people:
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: jonathan-mendelson
+      name: Jonathan Mendelson
+      sort_name: Mendelson
+    - slug: ethan-shaotran
+      name: Ethan Shaotran
+      sort_name: Shaotran
+    - slug: marshall-wood
+      name: Marshall Wood
+      sort_name: Wood
     aliases: []
   - id: 4p1Gdjkg
     type: interagency
@@ -5307,6 +5508,74 @@
       name: Jonathan Mendelson
       sort_name: Mendelson
     aliases: []
+  - id: 4puong1Y
+    type: sighting
+    date: '2025-05-13'
+    sort_date: '2025-05-13'
+    time:
+    text: Justin Fox emails GAO asking for a call to get a DOGE team assigned to the agency, according to an email shared with NPR
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_title: How DOGE has tried to embed beyond the executive branch
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GAO
+      slug: gao
+      name: Government Accountability Office
+      short_name: GAO
+    people:
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: justin-fox
+      name: Justin Fox
+      sort_name: Fox, Justin
+    aliases: []
+  - id: 6amFFPAZ
+    type: directory
+    date: '2025-05-13'
+    sort_date: '2025-05-13'
+    time:
+    text: >-
+      In an overview of how DOGE has tried to assign teams outside of the executive branch, NPR lists six DOGE staffers at GSA who are involved with those
+      efforts
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_title: How DOGE has tried to embed beyond the executive branch
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GAO
+      slug: gao
+      name: Government Accountability Office
+      short_name: GAO
+    people:
+    - slug: justin-aimonetti
+      name: Justin Aimonetti
+      sort_name: Aimonetti
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: justin-fox
+      name: Justin Fox
+      sort_name: Fox, Justin
+    - slug: jonathan-mendelson
+      name: Jonathan Mendelson
+      sort_name: Mendelson
+    - slug: jack-stein
+      name: Jack Stein
+      sort_name: Stein
+    - slug: marshall-wood
+      name: Marshall Wood
+      sort_name: Wood
+    aliases: []
   - id: 7W6wi7FV
     type: sighting
     date: '2025-05-14'
@@ -5325,7 +5594,7 @@
     - id: EXIM
       slug: exim
       name: Export-Import Bank of the United States
-      short_name: Export-Import Bank
+      short_name: EXIM
     people:
     - slug: nate-cavanaugh
       name: Nate Cavanaugh
@@ -8559,19 +8828,19 @@
   path: "/people#leland-dudek"
   comment:
   positions:
-  - id: ssa-dudek
+  - id: ssa-dudek-commissioner
     type: appointed
     agency_id: SSA
     name: Leland Dudek
     doge_alias_id:
     from_agency_id:
     start_date: '2025-02-16'
-    start_date_truth: reported
+    start_date_truth: verified
     start_date_event:
     start_source:
     start_source_name:
-    end_date:
-    end_date_truth:
+    end_date: '2025-05-06'
+    end_date_truth: verified
     end_date_event:
     end_source:
     end_source_name:
@@ -8595,6 +8864,44 @@
     reimbursed:
     reimbursement_amount:
     comment:
+    qualifications:
+    documents:
+  - id: ssa-dudek
+    type: unknown
+    agency_id: SSA
+    name: Leland Dudek
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-05-06'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-05-06'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
+    reimbursed:
+    reimbursement_amount:
+    comment: FIXME find out what Dudek is doing at SSA
     qualifications:
     documents:
   events:
@@ -13340,6 +13647,44 @@
     comment: Guessing GSA based on some past reporting
     qualifications:
     documents:
+  - id: detail-gsa-nlrb-fox
+    type: detailed
+    agency_id: NLRB
+    name: Justin Fox
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: '2025-04-16'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-04-16'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
   events:
   - id: 6xNXvDgl
     type: disruption
@@ -13457,6 +13802,33 @@
       name: Justin Fox
       sort_name: Fox, Justin
     aliases: []
+  - id: eCQoxNRz
+    type: sighting
+    date: '2025-04-16'
+    sort_date: '2025-04-16'
+    time:
+    text: Two DOGE staffers linked to the destruction of many small agencies are reportedly detailed from the GSA to work at the NLRB for the next few months
+    fuzz:
+    comment: Date is from an NPR piece
+    source: https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+    source_title: Labor Board's DOGE Detailees Connected to Agency Take Downs
+    source_name: Bloomberg
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: NLRB
+      slug: nlrb
+      name: National Labor Relations Board
+      short_name: NLRB
+    people:
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: justin-fox
+      name: Justin Fox
+      sort_name: Fox, Justin
+    aliases: []
   - id: 4p1Gdjkg
     type: interagency
     date: '2025-04-29'
@@ -13499,6 +13871,74 @@
     - slug: jonathan-mendelson
       name: Jonathan Mendelson
       sort_name: Mendelson
+    aliases: []
+  - id: 4puong1Y
+    type: sighting
+    date: '2025-05-13'
+    sort_date: '2025-05-13'
+    time:
+    text: Justin Fox emails GAO asking for a call to get a DOGE team assigned to the agency, according to an email shared with NPR
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_title: How DOGE has tried to embed beyond the executive branch
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GAO
+      slug: gao
+      name: Government Accountability Office
+      short_name: GAO
+    people:
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: justin-fox
+      name: Justin Fox
+      sort_name: Fox, Justin
+    aliases: []
+  - id: 6amFFPAZ
+    type: directory
+    date: '2025-05-13'
+    sort_date: '2025-05-13'
+    time:
+    text: >-
+      In an overview of how DOGE has tried to assign teams outside of the executive branch, NPR lists six DOGE staffers at GSA who are involved with those
+      efforts
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_title: How DOGE has tried to embed beyond the executive branch
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GAO
+      slug: gao
+      name: Government Accountability Office
+      short_name: GAO
+    people:
+    - slug: justin-aimonetti
+      name: Justin Aimonetti
+      sort_name: Aimonetti
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: justin-fox
+      name: Justin Fox
+      sort_name: Fox, Justin
+    - slug: jonathan-mendelson
+      name: Jonathan Mendelson
+      sort_name: Mendelson
+    - slug: jack-stein
+      name: Jack Stein
+      sort_name: Stein
+    - slug: marshall-wood
+      name: Marshall Wood
+      sort_name: Wood
     aliases: []
   system_access:
   - id: entra-neh-justin-fox
@@ -22042,12 +22482,88 @@
   path: "/people#jonathan-mendelson"
   comment:
   positions:
-  - id: sec-mendelson
-    type: unknown
-    agency_id: SEC
+  - id: detail-gsa-dfc-mendelson
+    type: detailed
+    agency_id: USDFC
+    name: Jonathan Mendelson
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: '2025-04-28'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-04-28'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+  - id: gsa-mendelson
+    type: appointed
+    agency_id: GSA
     name: Jonathan Mendelson
     doge_alias_id:
     from_agency_id:
+    start_date: 2025-04-XX
+    start_date_truth: inferred
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-04-XX
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    reimbursed:
+    reimbursement_amount:
+    comment: Assuming a GSA start since named in NPR report as from GSA in detailing to other agencies
+    qualifications:
+    documents:
+  - id: detail-gsa-sec-mendelson
+    type: detailed
+    agency_id: SEC
+    name: Jonathan Mendelson
+    doge_alias_id:
+    from_agency_id: GSA
     start_date: 2025-05-02~
     start_date_truth: reported
     start_date_event:
@@ -22081,6 +22597,39 @@
     qualifications:
     documents:
   events:
+  - id: 6HPPymkF
+    type: sighting
+    date: '2025-04-28'
+    sort_date: '2025-04-28'
+    time:
+    text: A team of DOGE personnel arrive at the headquarters of the US International Development Finance Corporation
+    fuzz:
+    comment:
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    source_title:
+    source_name: Politico
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: USDFC
+      slug: usidfc
+      name: US International Development Finance Corporation
+      short_name: DFC
+    people:
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: jonathan-mendelson
+      name: Jonathan Mendelson
+      sort_name: Mendelson
+    - slug: ethan-shaotran
+      name: Ethan Shaotran
+      sort_name: Shaotran
+    - slug: marshall-wood
+      name: Marshall Wood
+      sort_name: Wood
+    aliases: []
   - id: 4p1Gdjkg
     type: interagency
     date: '2025-04-29'
@@ -22124,11 +22673,52 @@
       name: Jonathan Mendelson
       sort_name: Mendelson
     aliases: []
+  - id: 6amFFPAZ
+    type: directory
+    date: '2025-05-13'
+    sort_date: '2025-05-13'
+    time:
+    text: >-
+      In an overview of how DOGE has tried to assign teams outside of the executive branch, NPR lists six DOGE staffers at GSA who are involved with those
+      efforts
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_title: How DOGE has tried to embed beyond the executive branch
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GAO
+      slug: gao
+      name: Government Accountability Office
+      short_name: GAO
+    people:
+    - slug: justin-aimonetti
+      name: Justin Aimonetti
+      sort_name: Aimonetti
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: justin-fox
+      name: Justin Fox
+      sort_name: Fox, Justin
+    - slug: jonathan-mendelson
+      name: Jonathan Mendelson
+      sort_name: Mendelson
+    - slug: jack-stein
+      name: Jack Stein
+      sort_name: Stein
+    - slug: marshall-wood
+      name: Marshall Wood
+      sort_name: Wood
+    aliases: []
   system_access: []
   obj_type: Person
-  start_date: 2025-05-02~
-  sort_date: 2025-05-02~
-  start_agency: SEC
+  start_date: '2025-04-28'
+  sort_date: '2025-04-28'
+  start_agency: USDFC
 - name: Katie Miller
   sort_name: Miller
   slug: katie-miller
@@ -25060,7 +25650,7 @@
     - id: EXIM
       slug: exim
       name: Export-Import Bank of the United States
-      short_name: Export-Import Bank
+      short_name: EXIM
     people:
     - slug: nate-cavanaugh
       name: Nate Cavanaugh
@@ -30063,6 +30653,44 @@
     comment:
     qualifications:
     documents: 20250312-gsa-usps-alex-simonpour
+  - id: detail-gsa-dfc-shaotran
+    type: detailed
+    agency_id: USDFC
+    name: Ethan Shaotran
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: '2025-04-28'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-04-28'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
   events:
   - id: bfo6pJUH
     type: action
@@ -30435,6 +31063,39 @@
     - slug: ethan-shaotran
       name: Ethan Shaotran
       sort_name: Shaotran
+    aliases: []
+  - id: 6HPPymkF
+    type: sighting
+    date: '2025-04-28'
+    sort_date: '2025-04-28'
+    time:
+    text: A team of DOGE personnel arrive at the headquarters of the US International Development Finance Corporation
+    fuzz:
+    comment:
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    source_title:
+    source_name: Politico
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: USDFC
+      slug: usidfc
+      name: US International Development Finance Corporation
+      short_name: DFC
+    people:
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: jonathan-mendelson
+      name: Jonathan Mendelson
+      sort_name: Mendelson
+    - slug: ethan-shaotran
+      name: Ethan Shaotran
+      sort_name: Shaotran
+    - slug: marshall-wood
+      name: Marshall Wood
+      sort_name: Wood
     aliases: []
   system_access: []
   obj_type: Person
@@ -31799,6 +32460,104 @@
   start_date: '2025-02-25'
   sort_date: '2025-02-25'
   start_agency: SSA
+- name: Jack Stein
+  sort_name: Stein
+  slug: jack-stein
+  page_slug:
+  age:
+  background:
+  category: wrecker
+  own_page: false
+  blurb:
+  reporting_notes:
+  path: "/people#jack-stein"
+  comment:
+  positions:
+  - id: gsa-stein
+    type: appointed
+    agency_id: GSA
+    name: Jack Stein
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-04-XX
+    start_date_truth: guessed
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-04-XX
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    reimbursed:
+    reimbursement_amount:
+    comment: FIXME, find more details on when started
+    qualifications:
+    documents:
+  events:
+  - id: 6amFFPAZ
+    type: directory
+    date: '2025-05-13'
+    sort_date: '2025-05-13'
+    time:
+    text: >-
+      In an overview of how DOGE has tried to assign teams outside of the executive branch, NPR lists six DOGE staffers at GSA who are involved with those
+      efforts
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_title: How DOGE has tried to embed beyond the executive branch
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GAO
+      slug: gao
+      name: Government Accountability Office
+      short_name: GAO
+    people:
+    - slug: justin-aimonetti
+      name: Justin Aimonetti
+      sort_name: Aimonetti
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: justin-fox
+      name: Justin Fox
+      sort_name: Fox, Justin
+    - slug: jonathan-mendelson
+      name: Jonathan Mendelson
+      sort_name: Mendelson
+    - slug: jack-stein
+      name: Jack Stein
+      sort_name: Stein
+    - slug: marshall-wood
+      name: Marshall Wood
+      sort_name: Wood
+    aliases: []
+  system_access: []
+  obj_type: Person
+  start_date: 2025-04-XX
+  sort_date: 2025-04-XX
+  start_agency: GSA
 - name: Brian Stube
   sort_name: Stube
   slug: brian-stube
@@ -34054,6 +34813,175 @@
   start_date: '2025-01-20'
   sort_date: '2025-01-20'
   start_agency: OPM
+- name: Marshall Wood
+  sort_name: Wood
+  slug: marshall-wood
+  page_slug:
+  age:
+  background:
+  category: wrecker
+  own_page: false
+  blurb:
+  reporting_notes:
+  path: "/people#marshall-wood"
+  comment:
+  positions:
+  - id: detail-gsa-dfc-wood
+    type: detailed
+    agency_id: USDFC
+    name: Marshall Wood
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: '2025-04-28'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-04-28'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+  - id: gsa-wood
+    type: appointed
+    agency_id: GSA
+    name: Marshall Wood
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-04-XX
+    start_date_truth: guessed
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-04-XX
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    reimbursed:
+    reimbursement_amount:
+    comment: FIXME, find more details on when started
+    qualifications:
+    documents:
+  events:
+  - id: 6HPPymkF
+    type: sighting
+    date: '2025-04-28'
+    sort_date: '2025-04-28'
+    time:
+    text: A team of DOGE personnel arrive at the headquarters of the US International Development Finance Corporation
+    fuzz:
+    comment:
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    source_title:
+    source_name: Politico
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: USDFC
+      slug: usidfc
+      name: US International Development Finance Corporation
+      short_name: DFC
+    people:
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: jonathan-mendelson
+      name: Jonathan Mendelson
+      sort_name: Mendelson
+    - slug: ethan-shaotran
+      name: Ethan Shaotran
+      sort_name: Shaotran
+    - slug: marshall-wood
+      name: Marshall Wood
+      sort_name: Wood
+    aliases: []
+  - id: 6amFFPAZ
+    type: directory
+    date: '2025-05-13'
+    sort_date: '2025-05-13'
+    time:
+    text: >-
+      In an overview of how DOGE has tried to assign teams outside of the executive branch, NPR lists six DOGE staffers at GSA who are involved with those
+      efforts
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_title: How DOGE has tried to embed beyond the executive branch
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GAO
+      slug: gao
+      name: Government Accountability Office
+      short_name: GAO
+    people:
+    - slug: justin-aimonetti
+      name: Justin Aimonetti
+      sort_name: Aimonetti
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: justin-fox
+      name: Justin Fox
+      sort_name: Fox, Justin
+    - slug: jonathan-mendelson
+      name: Jonathan Mendelson
+      sort_name: Mendelson
+    - slug: jack-stein
+      name: Jack Stein
+      sort_name: Stein
+    - slug: marshall-wood
+      name: Marshall Wood
+      sort_name: Wood
+    aliases: []
+  system_access: []
+  obj_type: Person
+  start_date: '2025-04-28'
+  sort_date: '2025-04-28'
+  start_agency: USDFC
 - name: Ryan Wunderly
   sort_name: Wunderly
   slug: ryan-wunderly

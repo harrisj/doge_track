@@ -1081,8 +1081,8 @@ ssa-bisignano:
   name: Frank Bisignano
   doge_alias_id:
   from_agency_id:
-  start_date:
-  start_date_truth:
+  start_date: '2025-05-06'
+  start_date_truth: verified
   start_date_event:
   start_source:
   start_source_name:
@@ -1091,7 +1091,7 @@ ssa-bisignano:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: '2025-01-20'
+  sort_date: '2025-05-06'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -1103,11 +1103,11 @@ ssa-bisignano:
   salary:
   pd_code:
   sge:
-  title:
+  title: Commissioner
   series:
-  supervisory:
+  supervisory: true
   office:
-  source:
+  source: https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
   reimbursed:
   reimbursement_amount:
   comment:
@@ -2138,6 +2138,140 @@ imls-cavanaugh:
     obj_type: Agency
   agency_ids:
   - IMLS
+detail-gsa-nlrb-cavanaugh:
+  id: detail-gsa-nlrb-cavanaugh
+  type: detailed
+  agency_id: NLRB
+  name: Nate Cavanaugh
+  doge_alias_id:
+  from_agency_id: GSA
+  start_date: '2025-04-16'
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: '2025-04-16'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  title:
+  series:
+  supervisory:
+  office:
+  source: https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  documents:
+  person:
+    name: Nate Cavanaugh
+    sort_name: Cavanaugh
+    slug: nate-cavanaugh
+    page_slug:
+    age: 28
+    background: executive
+    category: wrecker
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#nate-cavanaugh"
+    comment:
+    obj_type: Person
+  agency:
+    id: NLRB
+    name: National Labor Relations Board
+    slug: nlrb
+    page_slug: labor
+    short_name: NLRB
+    blurb:
+    blurb_date:
+    doge_base: false
+    path: "/agencies/labor"
+    parent_id:
+    obj_type: Agency
+  agency_ids:
+  - NLRB
+detail-gsa-dfc-cavanaugh:
+  id: detail-gsa-dfc-cavanaugh
+  type: detailed
+  agency_id: USDFC
+  name: Nate Cavanaugh
+  doge_alias_id:
+  from_agency_id: GSA
+  start_date: '2025-04-28'
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: '2025-04-28'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  title:
+  series:
+  supervisory:
+  office:
+  source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  documents:
+  person:
+    name: Nate Cavanaugh
+    sort_name: Cavanaugh
+    slug: nate-cavanaugh
+    page_slug:
+    age: 28
+    background: executive
+    category: wrecker
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#nate-cavanaugh"
+    comment:
+    obj_type: Person
+  agency:
+    id: USDFC
+    name: US International Development Finance Corporation
+    slug: usidfc
+    page_slug: independent
+    short_name: DFC
+    blurb:
+    blurb_date:
+    doge_base: false
+    path: "/agencies/independent"
+    parent_id:
+    obj_type: Agency
+  agency_ids:
+  - USDFC
 detail-gsa-exim-cavanaugh:
   id: detail-gsa-exim-cavanaugh
   type: detailed
@@ -2196,7 +2330,7 @@ detail-gsa-exim-cavanaugh:
     name: Export-Import Bank of the United States
     slug: exim
     page_slug: independent
-    short_name: Export-Import Bank
+    short_name: EXIM
     blurb:
     blurb_date:
     doge_base: false
@@ -3856,20 +3990,20 @@ opm-stephen-duarte:
     obj_type: Agency
   agency_ids:
   - OPM
-ssa-dudek:
-  id: ssa-dudek
+ssa-dudek-commissioner:
+  id: ssa-dudek-commissioner
   type: appointed
   agency_id: SSA
   name: Leland Dudek
   doge_alias_id:
   from_agency_id:
   start_date: '2025-02-16'
-  start_date_truth: reported
+  start_date_truth: verified
   start_date_event:
   start_source:
   start_source_name:
-  end_date:
-  end_date_truth:
+  end_date: '2025-05-06'
+  end_date_truth: verified
   end_date_event:
   end_source:
   end_source_name:
@@ -3893,6 +4027,73 @@ ssa-dudek:
   reimbursed:
   reimbursement_amount:
   comment:
+  qualifications:
+  documents:
+  person:
+    name: Leland Dudek
+    sort_name: Dudek
+    slug: leland-dudek
+    page_slug:
+    age:
+    background: political
+    category: enabler
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#leland-dudek"
+    comment:
+    obj_type: Person
+  agency:
+    id: SSA
+    name: Social Security Administration
+    slug: ssa
+    page_slug: social-security
+    short_name: SSA
+    blurb:
+    blurb_date:
+    doge_base: true
+    path: "/agencies/social-security"
+    parent_id:
+    obj_type: Agency
+  agency_ids:
+  - SSA
+ssa-dudek:
+  id: ssa-dudek
+  type: unknown
+  agency_id: SSA
+  name: Leland Dudek
+  doge_alias_id:
+  from_agency_id:
+  start_date: '2025-05-06'
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: '2025-05-06'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  title:
+  series:
+  supervisory:
+  office:
+  source: https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
+  reimbursed:
+  reimbursement_amount:
+  comment: FIXME find out what Dudek is doing at SSA
   qualifications:
   documents:
   person:
@@ -6146,6 +6347,73 @@ detail-neh-justin-fox:
     obj_type: Agency
   agency_ids:
   - NEH
+detail-gsa-nlrb-fox:
+  id: detail-gsa-nlrb-fox
+  type: detailed
+  agency_id: NLRB
+  name: Justin Fox
+  doge_alias_id:
+  from_agency_id: GSA
+  start_date: '2025-04-16'
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: '2025-04-16'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  title:
+  series:
+  supervisory:
+  office:
+  source: https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  documents:
+  person:
+    name: Justin Fox
+    sort_name: Fox, Justin
+    slug: justin-fox
+    page_slug:
+    age:
+    background:
+    category: wrecker
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#justin-fox"
+    comment:
+    obj_type: Person
+  agency:
+    id: NLRB
+    name: National Labor Relations Board
+    slug: nlrb
+    page_slug: labor
+    short_name: NLRB
+    blurb:
+    blurb_date:
+    doge_base: false
+    path: "/agencies/labor"
+    parent_id:
+    obj_type: Agency
+  agency_ids:
+  - NLRB
 dod-fulcher:
   id: dod-fulcher
   type: detailed
@@ -10536,13 +10804,153 @@ dhs-mccord:
     obj_type: Agency
   agency_ids:
   - DHS
-sec-mendelson:
-  id: sec-mendelson
-  type: unknown
-  agency_id: SEC
+gsa-mendelson:
+  id: gsa-mendelson
+  type: appointed
+  agency_id: GSA
   name: Jonathan Mendelson
   doge_alias_id:
   from_agency_id:
+  start_date: 2025-04-XX
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: 2025-04-XX
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  title:
+  series:
+  supervisory:
+  office:
+  source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+  reimbursed:
+  reimbursement_amount:
+  comment: Assuming a GSA start since named in NPR report as from GSA in detailing to other agencies
+  qualifications:
+  documents:
+  person:
+    name: Jonathan Mendelson
+    sort_name: Mendelson
+    slug: jonathan-mendelson
+    page_slug:
+    age:
+    background:
+    category: wrecker
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#jonathan-mendelson"
+    comment:
+    obj_type: Person
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    blurb: >-
+      Once a relatively obscure agency that provided shared services and procurement services for the government, GSA became an integral part of DOGE's
+      early-phase plans for taking over parts of the federal bureaucracy precisely for those reasons. From the very first day of the Trump presidency, DOGE
+      established a sizable team at GSA. Some of these were focused on drastic cost-reduction efforts like cancelling government leases or unilaterally
+      dropping the purchasing limit of government purchase cards to curtail micro-purchases by government staff. GSA was also the base for many of DOGE's
+      wrecking crews that were detailed to other agencies, with agency leadership quickly creating a walled-off enclave protected by security guards exclusively
+      for DOGE staff with "A-level access."
+    blurb_date:
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
+  agency_ids:
+  - GSA
+detail-gsa-dfc-mendelson:
+  id: detail-gsa-dfc-mendelson
+  type: detailed
+  agency_id: USDFC
+  name: Jonathan Mendelson
+  doge_alias_id:
+  from_agency_id: GSA
+  start_date: '2025-04-28'
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: '2025-04-28'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  title:
+  series:
+  supervisory:
+  office:
+  source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  documents:
+  person:
+    name: Jonathan Mendelson
+    sort_name: Mendelson
+    slug: jonathan-mendelson
+    page_slug:
+    age:
+    background:
+    category: wrecker
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#jonathan-mendelson"
+    comment:
+    obj_type: Person
+  agency:
+    id: USDFC
+    name: US International Development Finance Corporation
+    slug: usidfc
+    page_slug: independent
+    short_name: DFC
+    blurb:
+    blurb_date:
+    doge_base: false
+    path: "/agencies/independent"
+    parent_id:
+    obj_type: Agency
+  agency_ids:
+  - USDFC
+detail-gsa-sec-mendelson:
+  id: detail-gsa-sec-mendelson
+  type: detailed
+  agency_id: SEC
+  name: Jonathan Mendelson
+  doge_alias_id:
+  from_agency_id: GSA
   start_date: 2025-05-02~
   start_date_truth: reported
   start_date_event:
@@ -12323,7 +12731,7 @@ detail-exim-park:
     name: Export-Import Bank of the United States
     slug: exim
     page_slug: independent
-    short_name: Export-Import Bank
+    short_name: EXIM
     blurb:
     blurb_date:
     doge_base: false
@@ -15170,6 +15578,73 @@ detail-gsa-usps-ethan-shaotran:
     obj_type: Agency
   agency_ids:
   - USPS
+detail-gsa-dfc-shaotran:
+  id: detail-gsa-dfc-shaotran
+  type: detailed
+  agency_id: USDFC
+  name: Ethan Shaotran
+  doge_alias_id:
+  from_agency_id: GSA
+  start_date: '2025-04-28'
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: '2025-04-28'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  title:
+  series:
+  supervisory:
+  office:
+  source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  documents:
+  person:
+    name: Ethan Shaotran
+    sort_name: Shaotran
+    slug: ethan-shaotran
+    page_slug:
+    age: 22
+    background: coder
+    category: wrecker
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#ethan-shaotran"
+    comment:
+    obj_type: Person
+  agency:
+    id: USDFC
+    name: US International Development Finance Corporation
+    slug: usidfc
+    page_slug: independent
+    short_name: DFC
+    blurb:
+    blurb_date:
+    doge_base: false
+    path: "/agencies/independent"
+    parent_id:
+    obj_type: Agency
+  agency_ids:
+  - USDFC
 gsa-thomas-shedd:
   id: gsa-thomas-shedd
   type: appointed
@@ -16122,6 +16597,79 @@ ssa-steffensen-1:
     obj_type: Agency
   agency_ids:
   - SSA
+gsa-stein:
+  id: gsa-stein
+  type: appointed
+  agency_id: GSA
+  name: Jack Stein
+  doge_alias_id:
+  from_agency_id:
+  start_date: 2025-04-XX
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: 2025-04-XX
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  title:
+  series:
+  supervisory:
+  office:
+  source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+  reimbursed:
+  reimbursement_amount:
+  comment: FIXME, find more details on when started
+  qualifications:
+  documents:
+  person:
+    name: Jack Stein
+    sort_name: Stein
+    slug: jack-stein
+    page_slug:
+    age:
+    background:
+    category: wrecker
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#jack-stein"
+    comment:
+    obj_type: Person
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    blurb: >-
+      Once a relatively obscure agency that provided shared services and procurement services for the government, GSA became an integral part of DOGE's
+      early-phase plans for taking over parts of the federal bureaucracy precisely for those reasons. From the very first day of the Trump presidency, DOGE
+      established a sizable team at GSA. Some of these were focused on drastic cost-reduction efforts like cancelling government leases or unilaterally
+      dropping the purchasing limit of government purchase cards to curtail micro-purchases by government staff. GSA was also the base for many of DOGE's
+      wrecking crews that were detailed to other agencies, with agency leadership quickly creating a walled-off enclave protected by security guards exclusively
+      for DOGE staff with "A-level access."
+    blurb_date:
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
+  agency_ids:
+  - GSA
 dot-stube:
   id: dot-stube
   type: appointed
@@ -17367,6 +17915,146 @@ joanna-wischer-opm:
     obj_type: Agency
   agency_ids:
   - OPM
+gsa-wood:
+  id: gsa-wood
+  type: appointed
+  agency_id: GSA
+  name: Marshall Wood
+  doge_alias_id:
+  from_agency_id:
+  start_date: 2025-04-XX
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: 2025-04-XX
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  title:
+  series:
+  supervisory:
+  office:
+  source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+  reimbursed:
+  reimbursement_amount:
+  comment: FIXME, find more details on when started
+  qualifications:
+  documents:
+  person:
+    name: Marshall Wood
+    sort_name: Wood
+    slug: marshall-wood
+    page_slug:
+    age:
+    background:
+    category: wrecker
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#marshall-wood"
+    comment:
+    obj_type: Person
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    blurb: >-
+      Once a relatively obscure agency that provided shared services and procurement services for the government, GSA became an integral part of DOGE's
+      early-phase plans for taking over parts of the federal bureaucracy precisely for those reasons. From the very first day of the Trump presidency, DOGE
+      established a sizable team at GSA. Some of these were focused on drastic cost-reduction efforts like cancelling government leases or unilaterally
+      dropping the purchasing limit of government purchase cards to curtail micro-purchases by government staff. GSA was also the base for many of DOGE's
+      wrecking crews that were detailed to other agencies, with agency leadership quickly creating a walled-off enclave protected by security guards exclusively
+      for DOGE staff with "A-level access."
+    blurb_date:
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
+  agency_ids:
+  - GSA
+detail-gsa-dfc-wood:
+  id: detail-gsa-dfc-wood
+  type: detailed
+  agency_id: USDFC
+  name: Marshall Wood
+  doge_alias_id:
+  from_agency_id: GSA
+  start_date: '2025-04-28'
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: '2025-04-28'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  title:
+  series:
+  supervisory:
+  office:
+  source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  documents:
+  person:
+    name: Marshall Wood
+    sort_name: Wood
+    slug: marshall-wood
+    page_slug:
+    age:
+    background:
+    category: wrecker
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#marshall-wood"
+    comment:
+    obj_type: Person
+  agency:
+    id: USDFC
+    name: US International Development Finance Corporation
+    slug: usidfc
+    page_slug: independent
+    short_name: DFC
+    blurb:
+    blurb_date:
+    doge_base: false
+    path: "/agencies/independent"
+    parent_id:
+    obj_type: Agency
+  agency_ids:
+  - USDFC
 irs-wunderly:
   id: irs-wunderly
   type: appointed
@@ -17632,12 +18320,12 @@ detail-peace-corps-youngs:
     id: Peace
     name: Peace Corps
     slug: peace-corps
-    page_slug:
+    page_slug: independent
     short_name: Peace Corps
     blurb:
     blurb_date:
     doge_base: false
-    path: "/agencies#peace-corps"
+    path: "/agencies/independent"
     parent_id:
     obj_type: Agency
   agency_ids:

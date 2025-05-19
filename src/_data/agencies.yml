@@ -1,4 +1,61 @@
 ---
+- id: ACHP
+  name: Advisory Council on Historic Preservation
+  slug: achp
+  page_slug: independent
+  short_name: ACHP
+  blurb:
+  blurb_date:
+  doge_base: false
+  path: "/agencies/independent"
+  parent_id:
+  children: []
+  positions: []
+  events:
+  - id: 6sYzWZML
+    type: official
+    date: '2025-04-17'
+    sort_date: '2025-04-17'
+    time:
+    text: DOGE contacts the leadership of ACHP requesting a meeting the following week with a new DOGE team assigned to the agency
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_title: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: ACHP
+      slug: achp
+      name: Advisory Council on Historic Preservation
+      short_name: ACHP
+    people: []
+    aliases: []
+  - id: 7BTc0SXi
+    type: sighting
+    date: '2025-04-23'
+    sort_date: '2025-04-23'
+    time:
+    text: After an initial video call, DOGE arrives at the agency offices for the Advisory Council on Historic Preservation
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_title: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: ACHP
+      slug: achp
+      name: Advisory Council on Historic Preservation
+      short_name: ACHP
+    people: []
+    aliases: []
+  system_access: []
+  obj_type: Agency
 - id: AmeriCorps
   name: AmeriCorps
   slug: americorps
@@ -3963,7 +4020,7 @@
   name: Consumer Product Safety Commission
   slug: cpsc
   page_slug: independent
-  short_name: Consumer Product Safety
+  short_name: CPSC
   blurb:
   blurb_date:
   doge_base: false
@@ -3990,7 +4047,7 @@
     - id: CPSC
       slug: cpsc
       name: Consumer Product Safety Commission
-      short_name: Consumer Product Safety
+      short_name: CPSC
     people: []
     aliases: []
   - id: gPWQ1A2y
@@ -4011,7 +4068,7 @@
     - id: CPSC
       slug: cpsc
       name: Consumer Product Safety Commission
-      short_name: Consumer Product Safety
+      short_name: CPSC
     people: []
     aliases: []
   - id: 4ZxhrZFr
@@ -4032,7 +4089,7 @@
     - id: CPSC
       slug: cpsc
       name: Consumer Product Safety Commission
-      short_name: Consumer Product Safety
+      short_name: CPSC
     people: []
     aliases: []
   system_access: []
@@ -19840,7 +19897,7 @@
   name: Export-Import Bank of the United States
   slug: exim
   page_slug: independent
-  short_name: Export-Import Bank
+  short_name: EXIM
   blurb:
   blurb_date:
   doge_base: false
@@ -19890,7 +19947,7 @@
     agency:
       agency_id: EXIM
       name: Export-Import Bank of the United States
-      short_name: Export-Import Bank
+      short_name: EXIM
     from_agency:
       agency_id: GSA
       name: General Services Administration
@@ -19952,7 +20009,7 @@
     agency:
       agency_id: EXIM
       name: Export-Import Bank of the United States
-      short_name: Export-Import Bank
+      short_name: EXIM
     person:
       name: Donald Park
       sort_name: Park
@@ -19987,7 +20044,7 @@
     - id: EXIM
       slug: exim
       name: Export-Import Bank of the United States
-      short_name: Export-Import Bank
+      short_name: EXIM
     people:
     - slug: nate-cavanaugh
       name: Nate Cavanaugh
@@ -21699,14 +21756,14 @@
   parent_id:
   children: []
   positions:
-  - id: gsa-jeremy-lewin
+  - id: gsa-luke-farritor
     type: appointed
     agency_id: GSA
-    name: Jeremy Lewin
+    name: Luke Farritor
     doge_alias_id:
     from_agency_id:
     start_date: '2025-01-20'
-    start_date_truth: guessed
+    start_date_truth: inferred
     start_date_event:
     start_source:
     start_source_name:
@@ -21724,7 +21781,7 @@
     appt_type_code:
     appt_type:
     pay_grade:
-    salary:
+    salary: "$0"
     pd_code:
     sge:
     title:
@@ -21734,7 +21791,7 @@
     source:
     reimbursed:
     reimbursement_amount:
-    comment: I know he started at the GSA before 1/28
+    comment: Luke is detailed to HHS from GSA on 2025-01-21, so date here is inferred
     qualifications:
     documents:
     duration_summary: from Jan 20, 2025
@@ -21743,17 +21800,17 @@
       name: General Services Administration
       short_name: GSA
     person:
-      name: Jeremy Lewin
-      sort_name: Lewin
-      slug: jeremy-lewin
+      name: Luke Farritor
+      sort_name: Farritor
+      slug: luke-farritor
       page_slug:
-      age: 28
-      background: lawyer
+      age: 23
+      background: coder
       category: wrecker
       own_page: false
       blurb:
       reporting_notes:
-      path: "/people#jeremy-lewin"
+      path: "/people#luke-farritor"
       comment:
       obj_type: Person
     obj_type: Position
@@ -21815,72 +21872,14 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: gsa-luke-farritor
+  - id: gsa-jeremy-lewin
     type: appointed
     agency_id: GSA
-    name: Luke Farritor
+    name: Jeremy Lewin
     doge_alias_id:
     from_agency_id:
     start_date: '2025-01-20'
-    start_date_truth: inferred
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary: "$0"
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Luke is detailed to HHS from GSA on 2025-01-21, so date here is inferred
-    qualifications:
-    documents:
-    duration_summary: from Jan 20, 2025
-    agency:
-      agency_id: GSA
-      name: General Services Administration
-      short_name: GSA
-    person:
-      name: Luke Farritor
-      sort_name: Farritor
-      slug: luke-farritor
-      page_slug:
-      age: 23
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#luke-farritor"
-      comment:
-      obj_type: Person
-    obj_type: Position
-  - id: gsa-stephen-ehikian
-    type: appointed
-    agency_id: GSA
-    name: Stephen Ehikian
-    doge_alias_id:
-    from_agency_id:
-    start_date: '2025-01-20'
-    start_date_truth: reported
+    start_date_truth: guessed
     start_date_event:
     start_source:
     start_source_name:
@@ -21901,14 +21900,14 @@
     salary:
     pd_code:
     sge:
-    title: Acting Administrator
+    title:
     series:
-    supervisory: true
+    supervisory:
     office:
-    source: https://www.nextgov.com/people/2025/01/gsa-announces-new-fas-tts-leadership/402485/
+    source:
     reimbursed:
     reimbursement_amount:
-    comment:
+    comment: I know he started at the GSA before 1/28
     qualifications:
     documents:
     duration_summary: from Jan 20, 2025
@@ -21917,17 +21916,17 @@
       name: General Services Administration
       short_name: GSA
     person:
-      name: Stephen Ehikian
-      sort_name: Ehikian
-      slug: stephen-ehikian
+      name: Jeremy Lewin
+      sort_name: Lewin
+      slug: jeremy-lewin
       page_slug:
-      age: 43
-      background: executive
-      category: enabler
+      age: 28
+      background: lawyer
+      category: wrecker
       own_page: false
       blurb:
       reporting_notes:
-      path: "/people#stephen-ehikian"
+      path: "/people#jeremy-lewin"
       comment:
       obj_type: Person
     obj_type: Position
@@ -21989,6 +21988,64 @@
       comment:
       obj_type: Person
     obj_type: Position
+  - id: gsa-stephen-ehikian
+    type: appointed
+    agency_id: GSA
+    name: Stephen Ehikian
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-01-20'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-01-20'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title: Acting Administrator
+    series:
+    supervisory: true
+    office:
+    source: https://www.nextgov.com/people/2025/01/gsa-announces-new-fas-tts-leadership/402485/
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+    duration_summary: from Jan 20, 2025
+    agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Stephen Ehikian
+      sort_name: Ehikian
+      slug: stephen-ehikian
+      page_slug:
+      age: 43
+      background: executive
+      category: enabler
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#stephen-ehikian"
+      comment:
+      obj_type: Person
+    obj_type: Position
   - id: gsa-edward-coristine
     type: appointed
     agency_id: GSA
@@ -22047,64 +22104,6 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: gsa-thomas-shedd
-    type: appointed
-    agency_id: GSA
-    name: Thomas Shedd
-    doge_alias_id:
-    from_agency_id:
-    start_date: '2025-01-24'
-    start_date_truth: reported
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-24'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title: Deputy FAS Commissioner / Administrator
-    series:
-    supervisory: true
-    office: Technology Transformation Service
-    source: https://federalnewsnetwork.com/people/2025/01/gsas-new-leadership-mostly-comes-from-tech-finance-sectors/
-    reimbursed:
-    reimbursement_amount:
-    comment:
-    qualifications:
-    documents:
-    duration_summary: from Jan 24, 2025
-    agency:
-      agency_id: GSA
-      name: General Services Administration
-      short_name: GSA
-    person:
-      name: Thomas Shedd
-      sort_name: Shedd
-      slug: thomas-shedd
-      page_slug:
-      age: 28
-      background: coder
-      category: enabler
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#thomas-shedd"
-      comment:
-      obj_type: Person
-    obj_type: Position
   - id: gsa-josh-gruenbaum
     type: appointed
     agency_id: GSA
@@ -22160,6 +22159,64 @@
       blurb:
       reporting_notes:
       path: "/people#josh-gruenbaum"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: gsa-thomas-shedd
+    type: appointed
+    agency_id: GSA
+    name: Thomas Shedd
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-01-24'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-01-24'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title: Deputy FAS Commissioner / Administrator
+    series:
+    supervisory: true
+    office: Technology Transformation Service
+    source: https://federalnewsnetwork.com/people/2025/01/gsas-new-leadership-mostly-comes-from-tech-finance-sectors/
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+    duration_summary: from Jan 24, 2025
+    agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Thomas Shedd
+      sort_name: Shedd
+      slug: thomas-shedd
+      page_slug:
+      age: 28
+      background: coder
+      category: enabler
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#thomas-shedd"
       comment:
       obj_type: Person
     obj_type: Position
@@ -22566,6 +22623,180 @@
       blurb:
       reporting_notes:
       path: "/people#dave-malcher"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: gsa-wood
+    type: appointed
+    agency_id: GSA
+    name: Marshall Wood
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-04-XX
+    start_date_truth: guessed
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-04-XX
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    reimbursed:
+    reimbursement_amount:
+    comment: FIXME, find more details on when started
+    qualifications:
+    documents:
+    duration_summary: from ~ Apr 2025
+    agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Marshall Wood
+      sort_name: Wood
+      slug: marshall-wood
+      page_slug:
+      age:
+      background:
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#marshall-wood"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: gsa-mendelson
+    type: appointed
+    agency_id: GSA
+    name: Jonathan Mendelson
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-04-XX
+    start_date_truth: inferred
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-04-XX
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    reimbursed:
+    reimbursement_amount:
+    comment: Assuming a GSA start since named in NPR report as from GSA in detailing to other agencies
+    qualifications:
+    documents:
+    duration_summary: from ~ Apr 2025
+    agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Jonathan Mendelson
+      sort_name: Mendelson
+      slug: jonathan-mendelson
+      page_slug:
+      age:
+      background:
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#jonathan-mendelson"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: gsa-stein
+    type: appointed
+    agency_id: GSA
+    name: Jack Stein
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-04-XX
+    start_date_truth: guessed
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-04-XX
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    reimbursed:
+    reimbursement_amount:
+    comment: FIXME, find more details on when started
+    qualifications:
+    documents:
+    duration_summary: from ~ Apr 2025
+    agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Jack Stein
+      sort_name: Stein
+      slug: jack-stein
+      page_slug:
+      age:
+      background:
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#jack-stein"
       comment:
       obj_type: Person
     obj_type: Position
@@ -23367,6 +23598,114 @@
     - slug: jonathan-mendelson
       name: Jonathan Mendelson
       sort_name: Mendelson
+    aliases: []
+  system_access: []
+  obj_type: Agency
+- id: GAO
+  name: Government Accountability Office
+  slug: gao
+  page_slug: independent
+  short_name: GAO
+  blurb: >-
+    As a legislative-branch agency, the Government Accountability Office should be firmly outside the bounds of DOGE's interference. And yet, they have
+    tried. It's easy to see why; as the government agency actually tasked with identifying waste, fraud and abuse, they are doing the work that DOGE claims
+    to be doing, which makes DOGE's error-ridden Wall of Receipts look even worse. More recently, GAO has been directed by members of Congress to investigate
+    the specific activities of DOGE in various agencies. So, DOGE has attempted to gain access and control to GAO, but that has been resisted for now.
+  blurb_date:
+  doge_base: false
+  path: "/agencies/independent"
+  parent_id:
+  children: []
+  positions: []
+  events:
+  - id: 4puong1Y
+    type: sighting
+    date: '2025-05-13'
+    sort_date: '2025-05-13'
+    time:
+    text: Justin Fox emails GAO asking for a call to get a DOGE team assigned to the agency, according to an email shared with NPR
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_title: How DOGE has tried to embed beyond the executive branch
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GAO
+      slug: gao
+      name: Government Accountability Office
+      short_name: GAO
+    people:
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: justin-fox
+      name: Justin Fox
+      sort_name: Fox, Justin
+    aliases: []
+  - id: 6amFFPAZ
+    type: directory
+    date: '2025-05-13'
+    sort_date: '2025-05-13'
+    time:
+    text: >-
+      In an overview of how DOGE has tried to assign teams outside of the executive branch, NPR lists six DOGE staffers at GSA who are involved with those
+      efforts
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_title: How DOGE has tried to embed beyond the executive branch
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GAO
+      slug: gao
+      name: Government Accountability Office
+      short_name: GAO
+    people:
+    - slug: justin-aimonetti
+      name: Justin Aimonetti
+      sort_name: Aimonetti
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: justin-fox
+      name: Justin Fox
+      sort_name: Fox, Justin
+    - slug: jonathan-mendelson
+      name: Jonathan Mendelson
+      sort_name: Mendelson
+    - slug: jack-stein
+      name: Jack Stein
+      sort_name: Stein
+    - slug: marshall-wood
+      name: Marshall Wood
+      sort_name: Wood
+    aliases: []
+  - id: 3QZhm9bF
+    type: official
+    date: '2025-05-16'
+    sort_date: '2025-05-16'
+    time:
+    text: A GAO spokesman confirms that DOGE had attempted to assign a team to the agency but had been rebuffed by agency leadership.
+    fuzz:
+    comment:
+    source: https://www.nytimes.com/2025/05/16/us/politics/doge-musk-gao-accountability-office.html
+    source_title: DOGE Seeks to Investigate Another Government Budget Watchdog
+    source_name: The New York Times
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GAO
+      slug: gao
+      name: Government Accountability Office
+      short_name: GAO
+    people: []
     aliases: []
   system_access: []
   obj_type: Agency
@@ -30580,7 +30919,7 @@
   name: National Archives
   slug: nara
   page_slug: archives
-  short_name: NARA
+  short_name: Natl Archives
   blurb:
   blurb_date:
   doge_base: false
@@ -31030,7 +31369,131 @@
   path: "/agencies/labor"
   parent_id:
   children: []
-  positions: []
+  positions:
+  - id: detail-gsa-nlrb-cavanaugh
+    type: detailed
+    agency_id: NLRB
+    name: Nate Cavanaugh
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: '2025-04-16'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-04-16'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+    duration_summary: from Apr 16, 2025
+    agency:
+      agency_id: NLRB
+      name: National Labor Relations Board
+      short_name: NLRB
+    from_agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+      slug: nate-cavanaugh
+      page_slug:
+      age: 28
+      background: executive
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#nate-cavanaugh"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: detail-gsa-nlrb-fox
+    type: detailed
+    agency_id: NLRB
+    name: Justin Fox
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: '2025-04-16'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-04-16'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+    duration_summary: from Apr 16, 2025
+    agency:
+      agency_id: NLRB
+      name: National Labor Relations Board
+      short_name: NLRB
+    from_agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Justin Fox
+      sort_name: Fox, Justin
+      slug: justin-fox
+      page_slug:
+      age:
+      background:
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#justin-fox"
+      comment:
+      obj_type: Person
+    obj_type: Position
   events:
   - id: gC3dPbGm
     type: disruption
@@ -31473,12 +31936,12 @@
     date: '2025-04-16'
     sort_date: '2025-04-16'
     time:
-    text: Two DOGE staffers are reportedly detailed from the GSA to work at the NLRB for the next few months
+    text: Two DOGE staffers linked to the destruction of many small agencies are reportedly detailed from the GSA to work at the NLRB for the next few months
     fuzz:
-    comment:
-    source: https://www.npr.org/2025/04/16/nx-s1-5366851/doge-nlrb-whistleblower-musk-data
-    source_title:
-    source_name:
+    comment: Date is from an NPR piece
+    source: https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+    source_title: Labor Board's DOGE Detailees Connected to Agency Take Downs
+    source_name: Bloomberg
     case_no:
     track_id:
     system_id:
@@ -31487,7 +31950,13 @@
       slug: nlrb
       name: National Labor Relations Board
       short_name: NLRB
-    people: []
+    people:
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: justin-fox
+      name: Justin Fox
+      sort_name: Fox, Justin
     aliases: []
   - id: 5KA5f7HR
     type: oversight
@@ -35516,12 +35985,12 @@
 - id: Peace
   name: Peace Corps
   slug: peace-corps
-  page_slug:
+  page_slug: independent
   short_name: Peace Corps
   blurb:
   blurb_date:
   doge_base: false
-  path: "/agencies#peace-corps"
+  path: "/agencies/independent"
   parent_id:
   children: []
   positions:
@@ -35613,12 +36082,33 @@
     date: '2025-04-28'
     sort_date: '2025-04-28'
     time:
-    text: The head of a Peace Corps alumni group reports he had been told the agency is expecting large cuts in US staffing ordered by DOGE
+    text: The head of a Peace Corps alumni group reports he had been told the agency is expecting large cuts in US staffing, as ordered by DOGE
     fuzz:
     comment:
     source: https://www.nytimes.com/2025/04/28/us/politics/peace-corps-cuts-doge.html
     source_title:
     source_name:
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: Peace
+      slug: peace-corps
+      name: Peace Corps
+      short_name: Peace Corps
+    people: []
+    aliases: []
+  - id: 5fdC2pM1
+    type: sighting
+    date: '2025-05-09'
+    sort_date: '2025-05-09'
+    time:
+    text: DOGE staff reportedly met with Peace Corps leadership to discuss staffing cuts and resignations
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_title:
+    source_name: NPR
     case_no:
     track_id:
     system_id:
@@ -35701,12 +36191,12 @@
       comment:
       obj_type: Person
     obj_type: Position
-  - id: sec-mendelson
-    type: unknown
+  - id: detail-gsa-sec-mendelson
+    type: detailed
     agency_id: SEC
     name: Jonathan Mendelson
     doge_alias_id:
-    from_agency_id:
+    from_agency_id: GSA
     start_date: 2025-05-02~
     start_date_truth: reported
     start_date_event:
@@ -35744,6 +36234,10 @@
       agency_id: SEC
       name: Securities and Exchange Commission
       short_name: SEC
+    from_agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
     person:
       name: Jonathan Mendelson
       sort_name: Mendelson
@@ -36040,64 +36534,6 @@
   parent_id:
   children: []
   positions:
-  - id: ssa-bisignano
-    type: appointed
-    agency_id: SSA
-    name: Frank Bisignano
-    doge_alias_id:
-    from_agency_id:
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment:
-    qualifications:
-    documents:
-    duration_summary: dates unknown
-    agency:
-      agency_id: SSA
-      name: Social Security Administration
-      short_name: SSA
-    person:
-      name: Frank Bisignano
-      sort_name: Bisignano
-      slug: frank-bisignano
-      page_slug:
-      age:
-      background: finance
-      category: enabler
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#frank-bisignano"
-      comment:
-      obj_type: Person
-    obj_type: Position
   - id: ssa-mike-russo-cio
     type: appointed
     agency_id: SSA
@@ -36300,19 +36736,19 @@
         - [Akash Bobba's resume](https://www.documentcloud.org/documents/25940536-25-hq-0774-f-resumes-redacted-3/) lists 5 years of engineering experience and leadership skills
       obj_type: Alias
     obj_type: Position
-  - id: ssa-dudek
+  - id: ssa-dudek-commissioner
     type: appointed
     agency_id: SSA
     name: Leland Dudek
     doge_alias_id:
     from_agency_id:
     start_date: '2025-02-16'
-    start_date_truth: reported
+    start_date_truth: verified
     start_date_event:
     start_source:
     start_source_name:
-    end_date:
-    end_date_truth:
+    end_date: '2025-05-06'
+    end_date_truth: verified
     end_date_event:
     end_source:
     end_source_name:
@@ -36338,7 +36774,7 @@
     comment:
     qualifications:
     documents:
-    duration_summary: from Feb 16, 2025
+    duration_summary: Feb 16, 2025 to May 06, 2025
     agency:
       agency_id: SSA
       name: Social Security Administration
@@ -36357,202 +36793,6 @@
       path: "/people#leland-dudek"
       comment:
       obj_type: Person
-    obj_type: Position
-  - id: ssa-employee-5
-    type: detailed
-    agency_id: SSA
-    name:
-    doge_alias_id: SSA-5
-    from_agency_id: DOGE
-    start_date: '2025-02-18'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-18'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: All I have is the date they completed training
-    qualifications:
-    documents: onboard-ssa-employee-5
-    duration_summary: from Feb 18, 2025
-    agency:
-      agency_id: SSA
-      name: Social Security Administration
-      short_name: SSA
-    from_agency:
-      agency_id: DOGE
-      name: Department of Government Efficiency
-      short_name: DOGE
-    alias:
-      id: SSA-5
-      agency_id: SSA
-      name:
-      evidence: |-
-        - Onboarded as a volunteer on 2025-02-18 as a detail from the DOGE service
-        - Flick testimony - SSA began onboarding and training Employee 5, an engineer, detailed from the United States DOGE Service to SSA" with an inter-agency agreement to DOGE.
-      obj_type: Alias
-    obj_type: Position
-  - id: detail-dol-ssa-employee-7
-    type: detailed
-    agency_id: SSA
-    name: Marko Elez
-    doge_alias_id: SSA-7
-    from_agency_id: DOL
-    start_date: '2025-02-18'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-18'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed: true
-    reimbursement_amount: "$71,000 per quarter"
-    comment:
-    qualifications:
-    documents: detail-20250317-dol-ssa-employee-7 onboard-ssa-employee-7
-    duration_summary: from Feb 18, 2025
-    agency:
-      agency_id: SSA
-      name: Social Security Administration
-      short_name: SSA
-    from_agency:
-      agency_id: DOL
-      name: Department of Labor
-      short_name: DOL
-    person:
-      name: Marko Elez
-      sort_name: Elez
-      slug: marko-elez
-      page_slug:
-      age: 25
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#marko-elez"
-      comment:
-      obj_type: Person
-    alias:
-      id: SSA-7
-      agency_id: SSA
-      name: Marko Elez
-      evidence: "- [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
-      obj_type: Alias
-    obj_type: Position
-  - id: detail-gsa-ssa-employee-10
-    type: detailed
-    agency_id: SSA
-    name: Ethan Shaotran
-    doge_alias_id: SSA-10
-    from_agency_id: GSA
-    start_date: '2025-02-18'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-18'
-    nte_date: '2026-02-26'
-    nte_date_truth: verified
-    signed_date: '2025-02-18'
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed: false
-    reimbursement_amount:
-    comment:
-    qualifications:
-    documents: onboard-ssa-employee-10
-    duration_summary: from Feb 18, 2025
-    agency:
-      agency_id: SSA
-      name: Social Security Administration
-      short_name: SSA
-    from_agency:
-      agency_id: GSA
-      name: General Services Administration
-      short_name: GSA
-    person:
-      name: Ethan Shaotran
-      sort_name: Shaotran
-      slug: ethan-shaotran
-      page_slug:
-      age: 22
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#ethan-shaotran"
-      comment:
-      obj_type: Person
-    alias:
-      id: SSA-10
-      agency_id: SSA
-      name: Ethan Shaotran
-      evidence: |-
-        - Onboarded as a volunteer on 2025-02-18 as a detail from the GSA
-        - Flick testimony - Employee 10, a software engineer, was detailed from the Office of the Administrator at the General Services Administration to SSA"
-        - Ethan Shaotran was also detailed from GSA to USADF as an unpaid GSE on 2025-02-21
-        - Ethan Shaotran is identified for the first time at SSA on 2025-02-20
-      obj_type: Alias
     obj_type: Position
   - id: detail-nasa-ssa-employee-2
     type: detailed
@@ -36625,6 +36865,202 @@
         - Scott Coulter is identified at SSA on 2025-03-13
         - Signed SF-61 as CIO of SSA on 2025-03-24
         - Scott Coulter was named the CIO of SSA on 2025-03-24
+      obj_type: Alias
+    obj_type: Position
+  - id: detail-dol-ssa-employee-7
+    type: detailed
+    agency_id: SSA
+    name: Marko Elez
+    doge_alias_id: SSA-7
+    from_agency_id: DOL
+    start_date: '2025-02-18'
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-02-18'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source:
+    reimbursed: true
+    reimbursement_amount: "$71,000 per quarter"
+    comment:
+    qualifications:
+    documents: detail-20250317-dol-ssa-employee-7 onboard-ssa-employee-7
+    duration_summary: from Feb 18, 2025
+    agency:
+      agency_id: SSA
+      name: Social Security Administration
+      short_name: SSA
+    from_agency:
+      agency_id: DOL
+      name: Department of Labor
+      short_name: DOL
+    person:
+      name: Marko Elez
+      sort_name: Elez
+      slug: marko-elez
+      page_slug:
+      age: 25
+      background: coder
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#marko-elez"
+      comment:
+      obj_type: Person
+    alias:
+      id: SSA-7
+      agency_id: SSA
+      name: Marko Elez
+      evidence: "- [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
+      obj_type: Alias
+    obj_type: Position
+  - id: ssa-employee-5
+    type: detailed
+    agency_id: SSA
+    name:
+    doge_alias_id: SSA-5
+    from_agency_id: DOGE
+    start_date: '2025-02-18'
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-02-18'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source:
+    reimbursed:
+    reimbursement_amount:
+    comment: All I have is the date they completed training
+    qualifications:
+    documents: onboard-ssa-employee-5
+    duration_summary: from Feb 18, 2025
+    agency:
+      agency_id: SSA
+      name: Social Security Administration
+      short_name: SSA
+    from_agency:
+      agency_id: DOGE
+      name: Department of Government Efficiency
+      short_name: DOGE
+    alias:
+      id: SSA-5
+      agency_id: SSA
+      name:
+      evidence: |-
+        - Onboarded as a volunteer on 2025-02-18 as a detail from the DOGE service
+        - Flick testimony - SSA began onboarding and training Employee 5, an engineer, detailed from the United States DOGE Service to SSA" with an inter-agency agreement to DOGE.
+      obj_type: Alias
+    obj_type: Position
+  - id: detail-gsa-ssa-employee-10
+    type: detailed
+    agency_id: SSA
+    name: Ethan Shaotran
+    doge_alias_id: SSA-10
+    from_agency_id: GSA
+    start_date: '2025-02-18'
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-02-18'
+    nte_date: '2026-02-26'
+    nte_date_truth: verified
+    signed_date: '2025-02-18'
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source:
+    reimbursed: false
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents: onboard-ssa-employee-10
+    duration_summary: from Feb 18, 2025
+    agency:
+      agency_id: SSA
+      name: Social Security Administration
+      short_name: SSA
+    from_agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Ethan Shaotran
+      sort_name: Shaotran
+      slug: ethan-shaotran
+      page_slug:
+      age: 22
+      background: coder
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#ethan-shaotran"
+      comment:
+      obj_type: Person
+    alias:
+      id: SSA-10
+      agency_id: SSA
+      name: Ethan Shaotran
+      evidence: |-
+        - Onboarded as a volunteer on 2025-02-18 as a detail from the GSA
+        - Flick testimony - Employee 10, a software engineer, was detailed from the Office of the Administrator at the General Services Administration to SSA"
+        - Ethan Shaotran was also detailed from GSA to USADF as an unpaid GSE on 2025-02-21
+        - Ethan Shaotran is identified for the first time at SSA on 2025-02-20
       obj_type: Alias
     obj_type: Position
   - id: detail-doge-ssa-killian
@@ -37305,6 +37741,122 @@
       blurb:
       reporting_notes:
       path: "/people#mike-russo"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: ssa-dudek
+    type: unknown
+    agency_id: SSA
+    name: Leland Dudek
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-05-06'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-05-06'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
+    reimbursed:
+    reimbursement_amount:
+    comment: FIXME find out what Dudek is doing at SSA
+    qualifications:
+    documents:
+    duration_summary: from May 06, 2025
+    agency:
+      agency_id: SSA
+      name: Social Security Administration
+      short_name: SSA
+    person:
+      name: Leland Dudek
+      sort_name: Dudek
+      slug: leland-dudek
+      page_slug:
+      age:
+      background: political
+      category: enabler
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#leland-dudek"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: ssa-bisignano
+    type: appointed
+    agency_id: SSA
+    name: Frank Bisignano
+    doge_alias_id:
+    from_agency_id:
+    start_date: '2025-05-06'
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-05-06'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title: Commissioner
+    series:
+    supervisory: true
+    office:
+    source: https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+    duration_summary: from May 06, 2025
+    agency:
+      agency_id: SSA
+      name: Social Security Administration
+      short_name: SSA
+    person:
+      name: Frank Bisignano
+      sort_name: Bisignano
+      slug: frank-bisignano
+      page_slug:
+      age:
+      background: finance
+      category: enabler
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#frank-bisignano"
       comment:
       obj_type: Person
     obj_type: Position
@@ -38525,6 +39077,76 @@
     comment:
     source: https://www.washingtonpost.com/politics/2025/04/23/dead-social-security-doge-musk/
     source_title:
+    source_name: The Washington Post
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: SSA
+      slug: ssa
+      name: Social Security Administration
+      short_name: SSA
+    people: []
+    aliases: []
+  - id: PBTtNmMD
+    type: disruption
+    date: '2025-04-30'
+    sort_date: '2025-04-30'
+    time:
+    text: >-
+      Social Security introduces a new AI-based agent for phone calls from 350 field offices in the Southeast and Northeast regions. It frustrates many
+      users attempting to reach an actual person for assistance.
+    fuzz:
+    comment:
+    source: https://www.washingtonpost.com/politics/2025/05/16/doge-social-security-musk-trump-cuts/
+    source_title: How DOGE's grand plan to remake Social Security is backfiring
+    source_name: The Washington Post
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: SSA
+      slug: ssa
+      name: Social Security Administration
+      short_name: SSA
+    people: []
+    aliases: []
+  - id: 76GQmOLo
+    type: official
+    date: '2025-05-06'
+    sort_date: '2025-05-06'
+    time:
+    text: Frank Bisignano is confirmed by the Senate as Commissioner of the Social Security Administration
+    fuzz:
+    comment:
+    source: https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
+    source_title: Senate confirms Bisignano to lead Social Security Administration as agency faces DOGE overhaul
+    source_name: AP
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: SSA
+      slug: ssa
+      name: Social Security Administration
+      short_name: SSA
+    people:
+    - slug: frank-bisignano
+      name: Frank Bisignano
+      sort_name: Bisignano
+    aliases: []
+  - id: 8cf4dBxA
+    type: disruption
+    date: '2025-05-14'
+    sort_date: '2025-05-14'
+    time:
+    text: >-
+      Many of the Social Security offices are in disarray, unable to buy paper for printers or shred documents because DOGE's $1 limit on expense cards
+      means that fewer than a dozen staff in SSA are able to authorize office expenses for all 1300 field offices.
+    fuzz:
+    comment:
+    source: https://www.washingtonpost.com/politics/2025/05/16/doge-social-security-musk-trump-cuts/
+    source_title: How DOGE's grand plan to remake Social Security is backfiring
     source_name: The Washington Post
     case_no:
     track_id:
@@ -40154,6 +40776,42 @@
     - slug: russell-vought
       name: Russell Vought
       sort_name: Vought
+    aliases: []
+  system_access: []
+  obj_type: Agency
+- id: USAccess
+  name: U.S. Access Board
+  slug: usaccess
+  page_slug: independent
+  short_name: Access Board
+  blurb: An independent agency that develops accessibility standards that meet requirements of the Americans with Disabilities Act (ADA)
+  blurb_date:
+  doge_base: false
+  path: "/agencies/independent"
+  parent_id:
+  children: []
+  positions: []
+  events:
+  - id: 2oGmeHjW
+    type: sighting
+    date: '2025-04-22'
+    sort_date: '2025-04-22'
+    time:
+    text: US Access reports that the agency had a cordial meeting with DOGE and that additional meetings are expected
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source_title:
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: USAccess
+      slug: usaccess
+      name: U.S. Access Board
+      short_name: Access Board
+    people: []
     aliases: []
   system_access: []
   obj_type: Agency
@@ -42518,6 +43176,302 @@
       name: US Institute of Peace
       short_name: USIP
     people: []
+    aliases: []
+  system_access: []
+  obj_type: Agency
+- id: USDFC
+  name: US International Development Finance Corporation
+  slug: usidfc
+  page_slug: independent
+  short_name: DFC
+  blurb:
+  blurb_date:
+  doge_base: false
+  path: "/agencies/independent"
+  parent_id:
+  children: []
+  positions:
+  - id: detail-gsa-dfc-cavanaugh
+    type: detailed
+    agency_id: USDFC
+    name: Nate Cavanaugh
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: '2025-04-28'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-04-28'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+    duration_summary: from Apr 28, 2025
+    agency:
+      agency_id: USDFC
+      name: US International Development Finance Corporation
+      short_name: DFC
+    from_agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+      slug: nate-cavanaugh
+      page_slug:
+      age: 28
+      background: executive
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#nate-cavanaugh"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: detail-gsa-dfc-mendelson
+    type: detailed
+    agency_id: USDFC
+    name: Jonathan Mendelson
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: '2025-04-28'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-04-28'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+    duration_summary: from Apr 28, 2025
+    agency:
+      agency_id: USDFC
+      name: US International Development Finance Corporation
+      short_name: DFC
+    from_agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Jonathan Mendelson
+      sort_name: Mendelson
+      slug: jonathan-mendelson
+      page_slug:
+      age:
+      background:
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#jonathan-mendelson"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: detail-gsa-dfc-shaotran
+    type: detailed
+    agency_id: USDFC
+    name: Ethan Shaotran
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: '2025-04-28'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-04-28'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+    duration_summary: from Apr 28, 2025
+    agency:
+      agency_id: USDFC
+      name: US International Development Finance Corporation
+      short_name: DFC
+    from_agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Ethan Shaotran
+      sort_name: Shaotran
+      slug: ethan-shaotran
+      page_slug:
+      age: 22
+      background: coder
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#ethan-shaotran"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  - id: detail-gsa-dfc-wood
+    type: detailed
+    agency_id: USDFC
+    name: Marshall Wood
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: '2025-04-28'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-04-28'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    documents:
+    duration_summary: from Apr 28, 2025
+    agency:
+      agency_id: USDFC
+      name: US International Development Finance Corporation
+      short_name: DFC
+    from_agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Marshall Wood
+      sort_name: Wood
+      slug: marshall-wood
+      page_slug:
+      age:
+      background:
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#marshall-wood"
+      comment:
+      obj_type: Person
+    obj_type: Position
+  events:
+  - id: 6HPPymkF
+    type: sighting
+    date: '2025-04-28'
+    sort_date: '2025-04-28'
+    time:
+    text: A team of DOGE personnel arrive at the headquarters of the US International Development Finance Corporation
+    fuzz:
+    comment:
+    source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+    source_title:
+    source_name: Politico
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: USDFC
+      slug: usidfc
+      name: US International Development Finance Corporation
+      short_name: DFC
+    people:
+    - slug: nate-cavanaugh
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+    - slug: jonathan-mendelson
+      name: Jonathan Mendelson
+      sort_name: Mendelson
+    - slug: ethan-shaotran
+      name: Ethan Shaotran
+      sort_name: Shaotran
+    - slug: marshall-wood
+      name: Marshall Wood
+      sort_name: Wood
     aliases: []
   system_access: []
   obj_type: Agency

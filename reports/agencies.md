@@ -1,3 +1,6 @@
+# Advisory Council on Historic Preservation
+- slug: achp
+
 # AmeriCorps
 - slug: americorps
 
@@ -375,14 +378,14 @@
 # General Services Administration
 - slug: gsa
 - people:
+  - **Jeremy Lewin** (2025-01-20)
+  - **Ethan Shaotran** (2025-01-20)
+  - **Justin Fox**
+  - **Nicole Hollander** (2025-01-20)
   - **Emily Bryant**
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
   - **Conor Fennessy**
-  - **Justin Fox**
-  - **Nicole Hollander** (2025-01-20)
-  - **Jeremy Lewin** (2025-01-20)
-  - **Ethan Shaotran** (2025-01-20)
   - **Edward Coristine** (2025-01-20~)
   - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
   - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
@@ -391,6 +394,12 @@
   - **Nate Cavanaugh** (2025-02-XX)
   - **Raj Jegannathan** (2025-04-24~)
   - **Dave Malcher** (2025-04-24~)
+  - **Jonathan Mendelson** (2025-04-XX)
+  - **Jack Stein** (2025-04-XX)
+  - **Marshall Wood** (2025-04-XX)
+
+# Government Accountability Office
+- slug: gao
 
 # Health and Human Services
 - slug: hhs
@@ -526,6 +535,9 @@
 
 # National Labor Relations Board
 - slug: nlrb
+- people:
+  - **Nate Cavanaugh** (2025-04-16) (detailed from GSA)
+  - **Justin Fox** (2025-04-16) (detailed from GSA)
 
 # National Oceanic and Atmospheric Administration
 - slug: noaa
@@ -610,7 +622,7 @@
 - slug: sec
 - people:
   - **Eliezer Mishory** (2025-04-05~)
-  - **Jonathan Mendelson** (2025-05-02~)
+  - **Jonathan Mendelson** (2025-05-02~) (detailed from GSA)
 
 # Small Business Administration
 - slug: sba
@@ -624,15 +636,14 @@
 # Social Security Administration
 - slug: ssa
 - people:
-  - **Frank Bisignano**
   - **Mike Russo** (2025-01-31 - 2024-03-24) Chief Information Officer
   - **OPM-3 (Akash Bobba)** (2025-02-03) (detailed from OPM)
   - **SSA-1 (Akash Bobba)** (2025-02-09) Expert
-  - **Leland Dudek** (2025-02-16) Acting Commissioner
-  - **SSA-5** (2025-02-18) (detailed from DOGE)
+  - **Leland Dudek** (2025-02-16 - 2025-05-06) Acting Commissioner
   - **SSA-7 (Marko Elez)** (2025-02-18) (detailed from DOL)
-  - **SSA-10 (Ethan Shaotran)** (2025-02-18) (detailed from GSA)
   - **SSA-2 (Scott Coulter)** (2025-02-18 - 2025-03-23) (detailed from NASA)
+  - **SSA-5** (2025-02-18) (detailed from DOGE)
+  - **SSA-10 (Ethan Shaotran)** (2025-02-18) (detailed from GSA)
   - **Cole Killian** (2025-02-20~)
   - **SSA-3 (Aram Moghaddassi)** (2025-02-22) (detailed from DOL)
   - **SSA-4 (Antonio Gracias)** (2025-02-23) Expert
@@ -644,6 +655,8 @@
   - **SSA-11** (2025-03-16) Expert
   - **SSA-2 (Scott Coulter)** (2025-03-24) Chief Information Officer
   - **Mike Russo** (2025-03-25) Senior Advisor
+  - **Leland Dudek** (2025-05-06)
+  - **Frank Bisignano** (2025-05-06) Commissioner
 - systems:
     - IRON Website
         - SSA-5 2025-03-12 - ongoing
@@ -688,6 +701,9 @@
   - **Jacob Altik** (2025-02-21 - 2025-03-06) (detailed from OPM)
   - **Nate Cavanaugh** (2025-02-21 - 2025-03-06) (detailed from GSA)
 
+# U.S. Access Board
+- slug: usaccess
+
 # US Agency for International Development
 - slug: usaid
 - people:
@@ -726,6 +742,14 @@
   - **Nate Cavanaugh** (2025-03-04 - 2025-03-24) (detailed from GSA)
   - **Kenneth Jackson** (2025-03-17) Acting President
   - **Nate Cavanaugh** (2025-03-25) President
+
+# US International Development Finance Corporation
+- slug: usidfc
+- people:
+  - **Nate Cavanaugh** (2025-04-28) (detailed from GSA)
+  - **Jonathan Mendelson** (2025-04-28) (detailed from GSA)
+  - **Ethan Shaotran** (2025-04-28) (detailed from GSA)
+  - **Marshall Wood** (2025-04-28) (detailed from GSA)
 
 # US Postal Service
 - slug: usps

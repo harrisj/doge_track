@@ -8,7 +8,13 @@ require 'shortuuid'
 cases_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'cases.yaml')
 cases = YAML.unsafe_load(File.read(cases_file), symbolize_names: true)
 
-def validate_agency(agency); end
+def validate_agency(agency, short_name_uniq)
+  raise "Missing short_name for agency #{agency.inspect}" unless agency[:short_name]
+
+  raise "Short name #{agency[:short_name]} is not unique" if short_name_uniq.include? agency[:short_name]
+
+  short_name_uniq.add(agency[:short_name])
+end
 
 def validate_event(event, cases)
   unless event[:id]
@@ -34,8 +40,10 @@ events = interagency.map do |e|
   validate_event(e, cases)
 end
 
+short_name_uniq = Set[]
+
 agencies.each do |a|
-  validate_agency(a)
+  validate_agency(a, short_name_uniq)
 
   a[:events] ||= []
   a[:events].each do |e|

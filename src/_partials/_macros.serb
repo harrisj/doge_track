@@ -32,6 +32,8 @@
       site.data.agencies.find {|a| a.id == a_id || a.slug == a_id }
     elsif a_id.obj_type == 'Agency'
       a_id
+    elsif a_id.agency_id
+      site.data.agencies.find {|a| a.id == a_id.agency_id || a.slug == a_id.agency_id }
     else
       a_id
     end
@@ -51,10 +53,11 @@
       agency = find_agency(a_id)
 
       if agency && agency.path
-        display ||= agency.id
+        display ||= agency.short_name
         "<a href=\"#{agency.path}\">#{display}</a>".html_safe
       else
-        display || agency.short_name || ''
+        raise(a_id.inspect)
+        display || a_id
       end
     end
   end
