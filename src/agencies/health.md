@@ -1,6 +1,6 @@
 ---
-agency_id: HHS
+agency_id: hhs
 title: Health and Human Services
-layout: page
+template_engine: serbea
 ---
-{% render "page_agency", id: data.agency_id, site: site %}
+{%@ "agency_page_generic", id: data.agency_id %}

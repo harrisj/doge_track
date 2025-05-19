@@ -1,4 +1,6 @@
 ---
 agency_id: DHS
+title: Department of Homeland Security
+template_engine: serbea
 ---
-{% render "page_agency", id: data.agency_id, site: site %}
+{%@ "agency_page_generic", id: data.agency_id %}

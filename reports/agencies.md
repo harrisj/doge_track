@@ -56,10 +56,10 @@
 # Consumer Financial Protection Bureau
 - slug: cfpb
 - people:
-  - **Jeremy Lewin** (2025-02-06) (detailed from GSA)
-  - **Gavin Kliger** (2025-02-07 - 2025-05-08) (detailed from OPM)
-  - **Nikhil Rajpal** (2025-02-07 - 2025-03-21) (detailed from OPM)
   - **Luke Farritor** (2025-02-07 - 2025-03-04) (detailed from GSA)
+  - **Gavin Kliger** (2025-02-07 - 2025-05-08) (detailed from OPM)
+  - **Jeremy Lewin** (2025-02-07) (detailed from GSA)
+  - **Nikhil Rajpal** (2025-02-07 - 2025-03-21) (detailed from OPM)
   - **Jordan Wick** (2025-02-07 - 2025-03-04) (detailed from DOGE)
   - **Chris Young** (2025-02-07) (detailed from OPM)
   - **Russell Vought** (2025-02-08) Acting Director
@@ -178,7 +178,7 @@
   - **Payton Rehling** (detailed from SSA)
   - **Marko Elez** (detailed from DOL)
   - **Luke Farritor** (detailed from GSA)
-  - **Edward Coristine** (2025-02-05) (detailed from GSA)
+  - **Edward Coristine** (2025-02-04) (detailed from GSA)
   - **Kyle Schutt** (2025-02-19~) (detailed from GSA)
   - **Antoine McCord** (2025-03-11) Chief Information Officer
 

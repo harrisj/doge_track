@@ -1,3 +1,3 @@
-{% for event in events %}
+{% events.each do |event| %}
   {%@ 'event_item', event: event %}
 {% end %}

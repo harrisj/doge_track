@@ -5,15 +5,37 @@
   end
 %}
 
-{% macro "person_link" do |name, display=nil|
-    person = site.data.people.find {|p| p.name.downcase == name.downcase || p.slug == name || p.sort_name.downcase == name.downcase }
-    if person && person.path && person.path != 'none'
-      display ||= person.name
-      "<a href=\"#{person.path}\">#{display}</a>".html_safe
-    else
-      display || name
+{% macro "person_link" do |p_id, display=nil|
+    if p_id.nil?
+      raise "Null passed to person_link"
+    else 
+      if p_id.is_a?(String)
+        person = site.data.people.find {|p| p.name.downcase == p_id.downcase || p.slug == p_id || p.sort_name.downcase == p_id.downcase }
+      elsif p_id.obj_type && p_id.obj_type == 'Person'
+        person = p_id
+      else
+        raise "Unknown object passed to person_link #{p_id.inspect}"
+      end
+
+      if person && person.path && person.path != 'none'
+        display ||= person.name
+        "<a href=\"#{person.path}\">#{display}</a>".html_safe
+      else
+        display || p_id
+      end
     end
   end
+%}
+
+{% macro "find_agency" do |a_id|
+    if a_id.is_a?(String)
+      site.data.agencies.find {|a| a.id == a_id || a.slug == a_id }
+    elsif a_id.obj_type == 'Agency'
+      a_id
+    else
+      a_id
+    end
+   end
 %}
 
 {% macro "agency_url" do |id| 
@@ -22,32 +44,33 @@
   end
 %}
 
-{% macro "agency_link" do |id, display=nil|
-    agency = site.data.agencies.find {|x| x.id == id || x.slug == id }
-    if agency && agency.path
-      display ||= agency.id
-      "<a href=\"#{agency.path}\">#{display}</a>".html_safe
+{% macro "agency_link" do |a_id, display=nil|
+    if a_id.nil?
+      ""
     else
-      display || id
+      agency = find_agency(a_id)
+
+      if agency && agency.path
+        display ||= agency.id
+        "<a href=\"#{agency.path}\">#{display}</a>".html_safe
+      else
+        display || agency.short_name || ''
+      end
     end
   end
 %}
 
-{% macro "agency_links" do |agencies|
-    agencies.map {|a| agency_link(a.id)}.join(", ").html_safe
+{% macro "agencies" do |arr|
+    if arr.nil?
+      []
+    else
+      out = arr.map { |item| find_agency(item) }.compact
+    end
   end
 %}
 
-{% macro "agencies" do |arr|
-    out = arr.map do |item|
-      if item.agency
-        item.agency
-      elsif item.agency_id
-        site.data.agencies.find {|a| a.id == item.agency_id }
-      else
-        nil
-      end
-    end.compact
+{% macro "agency_links" do |agency_list|
+    agencies(agency_list).map {|a| agency_link(a)}.compact.join(", ").html_safe
   end
 %}
 

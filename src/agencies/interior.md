@@ -1,4 +1,6 @@
 ---
 agency_id: DOI
+title: Department of the Interior
+template_engine: serbea
 ---
-{% render "page_agency", id: data.agency_id, site: site %}
+{%@ "agency_page_generic", id: data.agency_id %}

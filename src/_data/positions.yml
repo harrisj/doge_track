@@ -51,6 +51,7 @@ dot-abrahamson:
     reporting_notes:
     path: "/people#daniel-abrahamson"
     comment:
+    obj_type: Person
   agency:
     id: DOT
     name: Department of Transportation
@@ -62,6 +63,7 @@ dot-abrahamson:
     doge_base: true
     path: "/agencies/transportation"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOT
 doge-aimonetti:
@@ -116,6 +118,7 @@ doge-aimonetti:
     reporting_notes:
     path: "/people#justin-aimonetti"
     comment:
+    obj_type: Person
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -127,6 +130,7 @@ doge-aimonetti:
     doge_base: true
     path: "/agencies/doge"
     parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOGE
   - EOP
@@ -182,6 +186,7 @@ irs-akis:
     reporting_notes:
     path: "/people#baris-akis"
     comment:
+    obj_type: Person
   agency:
     id: IRS
     name: Internal Revenue Service
@@ -193,6 +198,7 @@ irs-akis:
     doge_base: true
     path: "/agencies/treasury"
     parent_id: Treasury
+    obj_type: Agency
   agency_ids:
   - IRS
   - Treasury
@@ -248,6 +254,7 @@ opm-akis:
     reporting_notes:
     path: "/people#baris-akis"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -257,8 +264,9 @@ opm-akis:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 treasury-akis:
@@ -313,6 +321,7 @@ treasury-akis:
     reporting_notes:
     path: "/people#baris-akis"
     comment:
+    obj_type: Person
   agency:
     id: Treasury
     name: Department of the Treasury
@@ -322,8 +331,9 @@ treasury-akis:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agenciestreasury"
+    path: "/agencies#treasury"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Treasury
 opm-jacob-altik:
@@ -378,6 +388,7 @@ opm-jacob-altik:
     reporting_notes:
     path: "/people#jacob-altik"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -387,8 +398,9 @@ opm-jacob-altik:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 detail-opm-usadf-altik:
@@ -443,6 +455,7 @@ detail-opm-usadf-altik:
     reporting_notes:
     path: "/people#jacob-altik"
     comment:
+    obj_type: Person
   agency:
     id: USADF
     name: U.S. African Development Foundation
@@ -454,6 +467,7 @@ detail-opm-usadf-altik:
     doge_base: false
     path: "/agencies/usadf"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USADF
 detail-opm-fcc-altik:
@@ -508,6 +522,7 @@ detail-opm-fcc-altik:
     reporting_notes:
     path: "/people#jacob-altik"
     comment:
+    obj_type: Person
   agency:
     id: FCC
     name: Federal Communications Commission
@@ -519,6 +534,7 @@ detail-opm-fcc-altik:
     doge_base: true
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - FCC
 detail-opm-dhs-armstrong:
@@ -573,6 +589,7 @@ detail-opm-dhs-armstrong:
     reporting_notes:
     path: "/people#anthony-armstrong"
     comment:
+    obj_type: Person
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -584,6 +601,7 @@ detail-opm-dhs-armstrong:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 opm-anthony-armstrong:
@@ -638,6 +656,7 @@ opm-anthony-armstrong:
     reporting_notes:
     path: "/people#anthony-armstrong"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -647,8 +666,9 @@ opm-anthony-armstrong:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 detail-opm-fdic-armstrong:
@@ -703,6 +723,7 @@ detail-opm-fdic-armstrong:
     reporting_notes:
     path: "/people#anthony-armstrong"
     comment:
+    obj_type: Person
   agency:
     id: FDIC
     name: Federal Deposit Insurance Commission
@@ -714,6 +735,7 @@ detail-opm-fdic-armstrong:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - FDIC
 education-balajadia:
@@ -768,6 +790,7 @@ education-balajadia:
     reporting_notes:
     path: "/people#jennifer-balajadia"
     comment:
+    obj_type: Person
   agency:
     id: Education
     name: Department of Education
@@ -779,6 +802,7 @@ education-balajadia:
     doge_base: true
     path: "/agencies/education"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Education
 dol-sam-beyda:
@@ -833,6 +857,7 @@ dol-sam-beyda:
     reporting_notes:
     path: "/people#sam-beyda"
     comment:
+    obj_type: Person
   agency:
     id: DOL
     name: Department of Labor
@@ -844,6 +869,7 @@ dol-sam-beyda:
     doge_base: true
     path: "/agencies/labor"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOL
 doge-beynon:
@@ -898,6 +924,7 @@ doge-beynon:
     reporting_notes:
     path: "/people#alexandra-beynon"
     comment:
+    obj_type: Person
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -909,6 +936,7 @@ doge-beynon:
     doge_base: true
     path: "/agencies/doge"
     parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOGE
   - EOP
@@ -964,6 +992,7 @@ detail-doge-education-alexandra-beynon:
     reporting_notes:
     path: "/people#alexandra-beynon"
     comment:
+    obj_type: Person
   agency:
     id: Education
     name: Department of Education
@@ -975,6 +1004,7 @@ detail-doge-education-alexandra-beynon:
     doge_base: true
     path: "/agencies/education"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Education
 opm-riccardo-biasini:
@@ -1029,6 +1059,7 @@ opm-riccardo-biasini:
     reporting_notes:
     path: "/people#riccardo-biasini"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -1038,8 +1069,9 @@ opm-riccardo-biasini:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 ssa-bisignano:
@@ -1094,6 +1126,7 @@ ssa-bisignano:
     reporting_notes:
     path: "/people#frank-bisignano"
     comment:
+    obj_type: Person
   agency:
     id: SSA
     name: Social Security Administration
@@ -1105,6 +1138,7 @@ ssa-bisignano:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 opm-brian-bjelde:
@@ -1159,6 +1193,7 @@ opm-brian-bjelde:
     reporting_notes:
     path: "/people#brian-bjelde"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -1168,8 +1203,9 @@ opm-brian-bjelde:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 opm-3:
@@ -1224,6 +1260,7 @@ opm-3:
     reporting_notes:
     path: "/people#akash-bobba"
     comment:
+    obj_type: Person
   alias:
     id: OPM-3
     agency_id: OPM
@@ -1233,6 +1270,7 @@ opm-3:
       - Detail to SSA is signed on 2025-02-12
       - PD number 6A39740 = one listed for Akash Bobba
       - See evidence that ED-1 is Akash Bobba
+    obj_type: Alias
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -1242,8 +1280,9 @@ opm-3:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 detail-opm-education-akash-bobba:
@@ -1298,6 +1337,7 @@ detail-opm-education-akash-bobba:
     reporting_notes:
     path: "/people#akash-bobba"
     comment:
+    obj_type: Person
   alias:
     id: ED-1
     agency_id: Education
@@ -1307,6 +1347,7 @@ detail-opm-education-akash-bobba:
       - This person appears in a detail from OPM to SSA, but also a detail from SSA back to OPM and Education
       - This is the same person as OPM-3 because there is a detail document that appears with two diff redacted names
       - In a separate document in filing from OPM, Akash Bobba is listed as the only person from OPM and with a start date of 2025-02-03
+    obj_type: Alias
   agency:
     id: Education
     name: Department of Education
@@ -1318,6 +1359,7 @@ detail-opm-education-akash-bobba:
     doge_base: true
     path: "/agencies/education"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Education
 detail-opm-ssa-opm-3:
@@ -1372,6 +1414,7 @@ detail-opm-ssa-opm-3:
     reporting_notes:
     path: "/people#akash-bobba"
     comment:
+    obj_type: Person
   alias:
     id: OPM-3
     agency_id: OPM
@@ -1381,6 +1424,7 @@ detail-opm-ssa-opm-3:
       - Detail to SSA is signed on 2025-02-12
       - PD number 6A39740 = one listed for Akash Bobba
       - See evidence that ED-1 is Akash Bobba
+    obj_type: Alias
   agency:
     id: SSA
     name: Social Security Administration
@@ -1392,6 +1436,7 @@ detail-opm-ssa-opm-3:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 ssa-employee-1:
@@ -1448,6 +1493,7 @@ ssa-employee-1:
     reporting_notes:
     path: "/people#akash-bobba"
     comment:
+    obj_type: Person
   alias:
     id: SSA-1
     agency_id: SSA
@@ -1459,6 +1505,7 @@ ssa-employee-1:
       - Software engineer with 5 years of experience and some leadership experience
       - Date matches Akash Bobba start
       - [Akash Bobba's resume](https://www.documentcloud.org/documents/25940536-25-hq-0774-f-resumes-redacted-3/) lists 5 years of engineering experience and leadership skills
+    obj_type: Alias
   agency:
     id: SSA
     name: Social Security Administration
@@ -1470,6 +1517,7 @@ ssa-employee-1:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 doge-boizelle:
@@ -1524,6 +1572,7 @@ doge-boizelle:
     reporting_notes:
     path: "/people#ashley-boizelle"
     comment:
+    obj_type: Person
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -1535,6 +1584,7 @@ doge-boizelle:
     doge_base: true
     path: "/agencies/doge"
     parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOGE
   - EOP
@@ -1590,6 +1640,7 @@ gsa-bryant:
     reporting_notes:
     path: "/people#emily-bryant"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -1605,8 +1656,9 @@ gsa-bryant:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 detail-doge-ftc-bryant:
@@ -1661,6 +1713,7 @@ detail-doge-ftc-bryant:
     reporting_notes:
     path: "/people#emily-bryant"
     comment:
+    obj_type: Person
   agency:
     id: FTC
     name: Federal Trade Commission
@@ -1672,6 +1725,7 @@ detail-doge-ftc-bryant:
     doge_base: true
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - FTC
 gsa-cavanaugh:
@@ -1726,6 +1780,7 @@ gsa-cavanaugh:
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -1741,8 +1796,9 @@ gsa-cavanaugh:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 detail-gsa-usadf-cavanaugh:
@@ -1797,6 +1853,7 @@ detail-gsa-usadf-cavanaugh:
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
+    obj_type: Person
   agency:
     id: USADF
     name: U.S. African Development Foundation
@@ -1808,6 +1865,7 @@ detail-gsa-usadf-cavanaugh:
     doge_base: false
     path: "/agencies/usadf"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USADF
 detail-gsa-usip-cavanaugh:
@@ -1862,6 +1920,7 @@ detail-gsa-usip-cavanaugh:
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
+    obj_type: Person
   agency:
     id: USIP
     name: US Institute of Peace
@@ -1873,6 +1932,7 @@ detail-gsa-usip-cavanaugh:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USIP
 detail-gsa-neh-cavanaugh:
@@ -1927,6 +1987,7 @@ detail-gsa-neh-cavanaugh:
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
+    obj_type: Person
   agency:
     id: NEH
     name: National Endowment for the Humanities
@@ -1938,6 +1999,7 @@ detail-gsa-neh-cavanaugh:
     doge_base: true
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - NEH
 usip-cavanaugh-president:
@@ -1994,6 +2056,7 @@ usip-cavanaugh-president:
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
+    obj_type: Person
   agency:
     id: USIP
     name: US Institute of Peace
@@ -2005,6 +2068,7 @@ usip-cavanaugh-president:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USIP
 imls-cavanaugh:
@@ -2059,6 +2123,7 @@ imls-cavanaugh:
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
+    obj_type: Person
   agency:
     id: IMLS
     name: Institute for Museum and Library Services
@@ -2070,6 +2135,7 @@ imls-cavanaugh:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - IMLS
 detail-gsa-exim-cavanaugh:
@@ -2124,6 +2190,7 @@ detail-gsa-exim-cavanaugh:
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
+    obj_type: Person
   agency:
     id: EXIM
     name: Export-Import Bank of the United States
@@ -2135,6 +2202,7 @@ detail-gsa-exim-cavanaugh:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - EXIM
 detail-gsa-mspb-cavanaugh:
@@ -2189,6 +2257,7 @@ detail-gsa-mspb-cavanaugh:
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
+    obj_type: Person
   agency:
     id: MSPB
     name: Merit System Protection Board
@@ -2200,6 +2269,7 @@ detail-gsa-mspb-cavanaugh:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - MSPB
 usda-cole:
@@ -2255,6 +2325,7 @@ usda-cole:
     reporting_notes:
     path: "/people#michael-cole"
     comment:
+    obj_type: Person
   agency:
     id: USDA
     name: Department of Agriculture
@@ -2266,6 +2337,7 @@ usda-cole:
     doge_base: true
     path: "/agencies/agriculture"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USDA
 dol-collins:
@@ -2320,6 +2392,7 @@ dol-collins:
     reporting_notes:
     path: "/people#miles-collins"
     comment:
+    obj_type: Person
   agency:
     id: DOL
     name: Department of Labor
@@ -2331,6 +2404,7 @@ dol-collins:
     doge_base: true
     path: "/agencies/labor"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOL
 irs-corcos:
@@ -2385,6 +2459,7 @@ irs-corcos:
     reporting_notes:
     path: "/people#sam-corcos"
     comment:
+    obj_type: Person
   agency:
     id: IRS
     name: Internal Revenue Service
@@ -2396,6 +2471,7 @@ irs-corcos:
     doge_base: true
     path: "/agencies/treasury"
     parent_id: Treasury
+    obj_type: Agency
   agency_ids:
   - IRS
   - Treasury
@@ -2451,6 +2527,7 @@ irs-corcos-cio:
     reporting_notes:
     path: "/people#sam-corcos"
     comment:
+    obj_type: Person
   agency:
     id: IRS
     name: Internal Revenue Service
@@ -2462,6 +2539,7 @@ irs-corcos-cio:
     doge_base: true
     path: "/agencies/treasury"
     parent_id: Treasury
+    obj_type: Agency
   agency_ids:
   - IRS
   - Treasury
@@ -2517,6 +2595,7 @@ gsa-edward-coristine:
     reporting_notes:
     path: "/people#edward-coristine"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -2532,8 +2611,9 @@ gsa-edward-coristine:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 internal-dhs-tsa-coristine:
@@ -2588,6 +2668,7 @@ internal-dhs-tsa-coristine:
     reporting_notes:
     path: "/people#edward-coristine"
     comment:
+    obj_type: Person
   agency:
     id: TSA
     name: Transportation Security Administration
@@ -2599,6 +2680,7 @@ internal-dhs-tsa-coristine:
     doge_base: false
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - TSA
   - DHS
@@ -2654,6 +2736,7 @@ internal-dhs-uscis-coristine:
     reporting_notes:
     path: "/people#edward-coristine"
     comment:
+    obj_type: Person
   agency:
     id: USCIS
     name: US Citizenship & Immigration Services
@@ -2665,6 +2748,7 @@ internal-dhs-uscis-coristine:
     doge_base: false
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - USCIS
   - DHS
@@ -2720,6 +2804,7 @@ detail-gsa-opm-coristine:
     reporting_notes:
     path: "/people#edward-coristine"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -2729,8 +2814,9 @@ detail-gsa-opm-coristine:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 detail-gsa-sba-coristine:
@@ -2785,6 +2871,7 @@ detail-gsa-sba-coristine:
     reporting_notes:
     path: "/people#edward-coristine"
     comment:
+    obj_type: Person
   agency:
     id: SBA
     name: Small Business Administration
@@ -2796,6 +2883,7 @@ detail-gsa-sba-coristine:
     doge_base: true
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SBA
 detail-gsa-dhs-coristine:
@@ -2805,7 +2893,7 @@ detail-gsa-dhs-coristine:
   name: Edward Coristine
   doge_alias_id:
   from_agency_id: GSA
-  start_date: '2025-02-05'
+  start_date: '2025-02-04'
   start_date_truth: reported
   start_date_event:
   start_source:
@@ -2815,7 +2903,7 @@ detail-gsa-dhs-coristine:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: '2025-02-05'
+  sort_date: '2025-02-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2850,6 +2938,7 @@ detail-gsa-dhs-coristine:
     reporting_notes:
     path: "/people#edward-coristine"
     comment:
+    obj_type: Person
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -2861,6 +2950,7 @@ detail-gsa-dhs-coristine:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 internal-hhs-fema-edward-coristine:
@@ -2915,6 +3005,7 @@ internal-hhs-fema-edward-coristine:
     reporting_notes:
     path: "/people#edward-coristine"
     comment:
+    obj_type: Person
   agency:
     id: FEMA
     name: Federal Emergency Management Agency
@@ -2926,6 +3017,7 @@ internal-hhs-fema-edward-coristine:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - FEMA
   - DHS
@@ -2981,6 +3073,7 @@ detail-gsa-state-coristine:
     reporting_notes:
     path: "/people#edward-coristine"
     comment:
+    obj_type: Person
   agency:
     id: State
     name: State Department
@@ -2992,6 +3085,7 @@ detail-gsa-state-coristine:
     doge_base: true
     path: "/agencies/state"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - State
 detail-gsa-usaid-coristine:
@@ -3046,6 +3140,7 @@ detail-gsa-usaid-coristine:
     reporting_notes:
     path: "/people#edward-coristine"
     comment:
+    obj_type: Person
   agency:
     id: USAID
     name: US Agency for International Development
@@ -3057,6 +3152,7 @@ detail-gsa-usaid-coristine:
     doge_base: false
     path: "/agencies/usaid"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USAID
 internal-dhs-cisa-coristine:
@@ -3111,6 +3207,7 @@ internal-dhs-cisa-coristine:
     reporting_notes:
     path: "/people#edward-coristine"
     comment:
+    obj_type: Person
   agency:
     id: CISA
     name: Cybersecurity and Infrastructure Security Agency
@@ -3122,6 +3219,7 @@ internal-dhs-cisa-coristine:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - CISA
   - DHS
@@ -3177,6 +3275,7 @@ detail-doge-education-coristine:
     reporting_notes:
     path: "/people#edward-coristine"
     comment:
+    obj_type: Person
   agency:
     id: Education
     name: Department of Education
@@ -3188,6 +3287,7 @@ detail-doge-education-coristine:
     doge_base: true
     path: "/agencies/education"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Education
 detail-gsa-hhs-edward-coristine:
@@ -3242,6 +3342,7 @@ detail-gsa-hhs-edward-coristine:
     reporting_notes:
     path: "/people#edward-coristine"
     comment:
+    obj_type: Person
   agency:
     id: HHS
     name: Health and Human Services
@@ -3260,6 +3361,7 @@ detail-gsa-hhs-edward-coristine:
     doge_base: true
     path: "/agencies/health"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 internal-hhs-cms-coristine:
@@ -3314,6 +3416,7 @@ internal-hhs-cms-coristine:
     reporting_notes:
     path: "/people#edward-coristine"
     comment:
+    obj_type: Person
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -3325,6 +3428,7 @@ internal-hhs-cms-coristine:
     doge_base: true
     path: "/agencies/health"
     parent_id: HHS
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -3380,6 +3484,7 @@ detail-nasa-ssa-employee-2:
     reporting_notes:
     path: "/people#scott-coulter"
     comment:
+    obj_type: Person
   alias:
     id: SSA-2
     agency_id: SSA
@@ -3390,6 +3495,7 @@ detail-nasa-ssa-employee-2:
       - Scott Coulter is identified at SSA on 2025-03-13
       - Signed SF-61 as CIO of SSA on 2025-03-24
       - Scott Coulter was named the CIO of SSA on 2025-03-24
+    obj_type: Alias
   agency:
     id: SSA
     name: Social Security Administration
@@ -3401,6 +3507,7 @@ detail-nasa-ssa-employee-2:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 ssa-employee-2-cio:
@@ -3455,6 +3562,7 @@ ssa-employee-2-cio:
     reporting_notes:
     path: "/people#scott-coulter"
     comment:
+    obj_type: Person
   alias:
     id: SSA-2
     agency_id: SSA
@@ -3465,6 +3573,7 @@ ssa-employee-2-cio:
       - Scott Coulter is identified at SSA on 2025-03-13
       - Signed SF-61 as CIO of SSA on 2025-03-24
       - Scott Coulter was named the CIO of SSA on 2025-03-24
+    obj_type: Alias
   agency:
     id: SSA
     name: Social Security Administration
@@ -3476,6 +3585,7 @@ ssa-employee-2-cio:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 opm-cromer:
@@ -3530,6 +3640,7 @@ opm-cromer:
     reporting_notes:
     path: "/people#clayton-cromer"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -3539,8 +3650,9 @@ opm-cromer:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 detail-opm-usaid-cromer:
@@ -3595,6 +3707,7 @@ detail-opm-usaid-cromer:
     reporting_notes:
     path: "/people#clayton-cromer"
     comment:
+    obj_type: Person
   agency:
     id: USAID
     name: US Agency for International Development
@@ -3606,6 +3719,7 @@ detail-opm-usaid-cromer:
     doge_base: false
     path: "/agencies/usaid"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USAID
 detail-opm-doj-cromer:
@@ -3660,6 +3774,7 @@ detail-opm-doj-cromer:
     reporting_notes:
     path: "/people#clayton-cromer"
     comment:
+    obj_type: Person
   agency:
     id: DOJ
     name: Department of Justice
@@ -3671,6 +3786,7 @@ detail-opm-doj-cromer:
     doge_base: true
     path: "/agencies/justice"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOJ
 opm-stephen-duarte:
@@ -3725,6 +3841,7 @@ opm-stephen-duarte:
     reporting_notes:
     path: "/people#stephen-duarte"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -3734,8 +3851,9 @@ opm-stephen-duarte:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 ssa-dudek:
@@ -3790,6 +3908,7 @@ ssa-dudek:
     reporting_notes:
     path: "/people#leland-dudek"
     comment:
+    obj_type: Person
   agency:
     id: SSA
     name: Social Security Administration
@@ -3801,6 +3920,7 @@ ssa-dudek:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 gsa-stephen-ehikian:
@@ -3855,6 +3975,7 @@ gsa-stephen-ehikian:
     reporting_notes:
     path: "/people#stephen-ehikian"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -3870,8 +3991,9 @@ gsa-stephen-ehikian:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 detail-dol-dhs-elez:
@@ -3926,6 +4048,7 @@ detail-dol-dhs-elez:
     reporting_notes:
     path: "/people#marko-elez"
     comment:
+    obj_type: Person
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -3937,6 +4060,7 @@ detail-dol-dhs-elez:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 internal-dhs-cpb-elez:
@@ -3991,6 +4115,7 @@ internal-dhs-cpb-elez:
     reporting_notes:
     path: "/people#marko-elez"
     comment:
+    obj_type: Person
   agency:
     id: CBP
     name: Customs and Border Patrol
@@ -4002,6 +4127,7 @@ internal-dhs-cpb-elez:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - CBP
   - DHS
@@ -4057,6 +4183,7 @@ internal-dhs-ice-elez:
     reporting_notes:
     path: "/people#marko-elez"
     comment:
+    obj_type: Person
   agency:
     id: ICE
     name: Immigration and Customs Enforcement
@@ -4066,8 +4193,9 @@ internal-dhs-ice-elez:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agenciesice"
+    path: "/agencies#ice"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - ICE
   - DHS
@@ -4123,6 +4251,7 @@ internal-dhs-tsa-elez:
     reporting_notes:
     path: "/people#marko-elez"
     comment:
+    obj_type: Person
   agency:
     id: TSA
     name: Transportation Security Administration
@@ -4134,6 +4263,7 @@ internal-dhs-tsa-elez:
     doge_base: false
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - TSA
   - DHS
@@ -4189,6 +4319,7 @@ internal-dhs-uscis-elez:
     reporting_notes:
     path: "/people#marko-elez"
     comment:
+    obj_type: Person
   agency:
     id: USCIS
     name: US Citizenship & Immigration Services
@@ -4200,6 +4331,7 @@ internal-dhs-uscis-elez:
     doge_base: false
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - USCIS
   - DHS
@@ -4255,6 +4387,7 @@ treasury-marko-elez:
     reporting_notes:
     path: "/people#marko-elez"
     comment:
+    obj_type: Person
   agency:
     id: Treasury
     name: Department of the Treasury
@@ -4264,8 +4397,9 @@ treasury-marko-elez:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agenciestreasury"
+    path: "/agencies#treasury"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Treasury
 detail-dol-ssa-employee-7:
@@ -4320,11 +4454,13 @@ detail-dol-ssa-employee-7:
     reporting_notes:
     path: "/people#marko-elez"
     comment:
+    obj_type: Person
   alias:
     id: SSA-7
     agency_id: SSA
     name: Marko Elez
     evidence: "- [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
+    obj_type: Alias
   agency:
     id: SSA
     name: Social Security Administration
@@ -4336,6 +4472,7 @@ detail-dol-ssa-employee-7:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 detail-dol-hhs-marko-elez:
@@ -4390,6 +4527,7 @@ detail-dol-hhs-marko-elez:
     reporting_notes:
     path: "/people#marko-elez"
     comment:
+    obj_type: Person
   agency:
     id: HHS
     name: Health and Human Services
@@ -4408,6 +4546,7 @@ detail-dol-hhs-marko-elez:
     doge_base: true
     path: "/agencies/health"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 internal-hhs-cms-marko-elez:
@@ -4462,6 +4601,7 @@ internal-hhs-cms-marko-elez:
     reporting_notes:
     path: "/people#marko-elez"
     comment:
+    obj_type: Person
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -4473,6 +4613,7 @@ internal-hhs-cms-marko-elez:
     doge_base: true
     path: "/agencies/health"
     parent_id: HHS
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -4528,6 +4669,7 @@ opm-ezell:
     reporting_notes:
     path: "/people#charles-ezell"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -4537,8 +4679,9 @@ opm-ezell:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 detail-gsa-dhs-farritor:
@@ -4593,6 +4736,7 @@ detail-gsa-dhs-farritor:
     reporting_notes:
     path: "/people#luke-farritor"
     comment:
+    obj_type: Person
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -4604,6 +4748,7 @@ detail-gsa-dhs-farritor:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 gsa-luke-farritor:
@@ -4658,6 +4803,7 @@ gsa-luke-farritor:
     reporting_notes:
     path: "/people#luke-farritor"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -4673,8 +4819,9 @@ gsa-luke-farritor:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 internal-dhs-ice-farritor:
@@ -4729,6 +4876,7 @@ internal-dhs-ice-farritor:
     reporting_notes:
     path: "/people#luke-farritor"
     comment:
+    obj_type: Person
   agency:
     id: ICE
     name: Immigration and Customs Enforcement
@@ -4738,8 +4886,9 @@ internal-dhs-ice-farritor:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agenciesice"
+    path: "/agencies#ice"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - ICE
   - DHS
@@ -4795,6 +4944,7 @@ internal-dhs-tsa-farritor:
     reporting_notes:
     path: "/people#luke-farritor"
     comment:
+    obj_type: Person
   agency:
     id: TSA
     name: Transportation Security Administration
@@ -4806,6 +4956,7 @@ internal-dhs-tsa-farritor:
     doge_base: false
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - TSA
   - DHS
@@ -4861,6 +5012,7 @@ internal-dhs-uscis-farritor:
     reporting_notes:
     path: "/people#luke-farritor"
     comment:
+    obj_type: Person
   agency:
     id: ICE
     name: Immigration and Customs Enforcement
@@ -4870,8 +5022,9 @@ internal-dhs-uscis-farritor:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agenciesice"
+    path: "/agencies#ice"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - ICE
   - DHS
@@ -4927,6 +5080,7 @@ detail-gsa-hhs-luke-farritor:
     reporting_notes:
     path: "/people#luke-farritor"
     comment:
+    obj_type: Person
   agency:
     id: HHS
     name: Health and Human Services
@@ -4945,6 +5099,7 @@ detail-gsa-hhs-luke-farritor:
     doge_base: true
     path: "/agencies/health"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 detail-gsa-usaid-kliger:
@@ -4999,6 +5154,7 @@ detail-gsa-usaid-kliger:
     reporting_notes:
     path: "/people#luke-farritor"
     comment:
+    obj_type: Person
   agency:
     id: USAID
     name: US Agency for International Development
@@ -5010,6 +5166,7 @@ detail-gsa-usaid-kliger:
     doge_base: false
     path: "/agencies/usaid"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USAID
 internal-hhs-cdc-farritor:
@@ -5064,6 +5221,7 @@ internal-hhs-cdc-farritor:
     reporting_notes:
     path: "/people#luke-farritor"
     comment:
+    obj_type: Person
   agency:
     id: CDC
     name: Centers for Disease Control and Prevention
@@ -5075,6 +5233,7 @@ internal-hhs-cdc-farritor:
     doge_base: true
     path: "/agencies/health"
     parent_id: HHS
+    obj_type: Agency
   agency_ids:
   - CDC
   - HHS
@@ -5130,6 +5289,7 @@ internal-hhs-cms-farritor:
     reporting_notes:
     path: "/people#luke-farritor"
     comment:
+    obj_type: Person
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -5141,6 +5301,7 @@ internal-hhs-cms-farritor:
     doge_base: true
     path: "/agencies/health"
     parent_id: HHS
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -5196,6 +5357,7 @@ detail-doge-energy-luke-farritor:
     reporting_notes:
     path: "/people#luke-farritor"
     comment:
+    obj_type: Person
   agency:
     id: Energy
     name: Department of Energy
@@ -5207,6 +5369,7 @@ detail-doge-energy-luke-farritor:
     doge_base: true
     path: "/agencies/energy"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Energy
 detail-gsa-cfpb-luke-farritor:
@@ -5261,6 +5424,7 @@ detail-gsa-cfpb-luke-farritor:
     reporting_notes:
     path: "/people#luke-farritor"
     comment:
+    obj_type: Person
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -5277,8 +5441,9 @@ detail-gsa-cfpb-luke-farritor:
       to be overturned by the same judge. Today, the CFPB is still alive, but in a precarious limbo that might make months or year to resolve.
     blurb_date: '2025-05-12'
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/cfpb"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - CFPB
 detail-gsa-state-farritor:
@@ -5333,6 +5498,7 @@ detail-gsa-state-farritor:
     reporting_notes:
     path: "/people#luke-farritor"
     comment:
+    obj_type: Person
   agency:
     id: State
     name: State Department
@@ -5344,6 +5510,7 @@ detail-gsa-state-farritor:
     doge_base: true
     path: "/agencies/state"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - State
 internal-hhs-nih-farritor:
@@ -5398,6 +5565,7 @@ internal-hhs-nih-farritor:
     reporting_notes:
     path: "/people#luke-farritor"
     comment:
+    obj_type: Person
   agency:
     id: NIH
     name: National Institute of Health
@@ -5409,6 +5577,7 @@ internal-hhs-nih-farritor:
     doge_base: true
     path: "/agencies/health"
     parent_id: HHS
+    obj_type: Agency
   agency_ids:
   - NIH
   - HHS
@@ -5464,6 +5633,7 @@ detail-gsa-nsf-farritor:
     reporting_notes:
     path: "/people#luke-farritor"
     comment:
+    obj_type: Person
   agency:
     id: NSF
     name: National Science Foundation
@@ -5475,6 +5645,7 @@ detail-gsa-nsf-farritor:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - NSF
 gsa-fennessy:
@@ -5529,6 +5700,7 @@ gsa-fennessy:
     reporting_notes:
     path: "/people#conor-fennessy"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -5544,8 +5716,9 @@ gsa-fennessy:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 education-ed-2:
@@ -5600,6 +5773,7 @@ education-ed-2:
     reporting_notes:
     path: "/people#conor-fennessy"
     comment:
+    obj_type: Person
   alias:
     id: ED-2
     agency_id: Education
@@ -5607,6 +5781,7 @@ education-ed-2:
     evidence: |-
       - Onboarded by appointment as a Senior Advisor on 2025-01-31 with a salary of $195K
       - They included a list of DOGE staff at the agency and Conor Fennessy is listed as the only Senior Advisor on staff
+    obj_type: Alias
   agency:
     id: Education
     name: Department of Education
@@ -5618,6 +5793,7 @@ education-ed-2:
     doge_base: true
     path: "/agencies/education"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Education
 internal-hhs-cms-fennessy:
@@ -5672,6 +5848,7 @@ internal-hhs-cms-fennessy:
     reporting_notes:
     path: "/people#conor-fennessy"
     comment:
+    obj_type: Person
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -5683,6 +5860,7 @@ internal-hhs-cms-fennessy:
     doge_base: true
     path: "/agencies/health"
     parent_id: HHS
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -5738,6 +5916,7 @@ detail-education-hhs-fennessy:
     reporting_notes:
     path: "/people#conor-fennessy"
     comment:
+    obj_type: Person
   agency:
     id: HHS
     name: Health and Human Services
@@ -5756,6 +5935,7 @@ detail-education-hhs-fennessy:
     doge_base: true
     path: "/agencies/health"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 doge-joshua-fox:
@@ -5810,6 +5990,7 @@ doge-joshua-fox:
     reporting_notes:
     path: "/people#joshua-fox"
     comment:
+    obj_type: Person
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -5821,6 +6002,7 @@ doge-joshua-fox:
     doge_base: true
     path: "/agencies/doge"
     parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOGE
   - EOP
@@ -5876,6 +6058,7 @@ gsa-justin-fox:
     reporting_notes:
     path: "/people#justin-fox"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -5891,8 +6074,9 @@ gsa-justin-fox:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 detail-neh-justin-fox:
@@ -5947,6 +6131,7 @@ detail-neh-justin-fox:
     reporting_notes:
     path: "/people#justin-fox"
     comment:
+    obj_type: Person
   agency:
     id: NEH
     name: National Endowment for the Humanities
@@ -5958,6 +6143,7 @@ detail-neh-justin-fox:
     doge_base: true
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - NEH
 dod-fulcher:
@@ -6012,6 +6198,7 @@ dod-fulcher:
     reporting_notes:
     path: "/people#justin-fulcher"
     comment:
+    obj_type: Person
   agency:
     id: DOD
     name: Department of Defense
@@ -6023,6 +6210,7 @@ dod-fulcher:
     doge_base: true
     path: "/agencies/defense"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOD
 dod-fulcher-advisor:
@@ -6077,6 +6265,7 @@ dod-fulcher-advisor:
     reporting_notes:
     path: "/people#justin-fulcher"
     comment:
+    obj_type: Person
   agency:
     id: DOD
     name: Department of Defense
@@ -6088,6 +6277,7 @@ dod-fulcher-advisor:
     doge_base: true
     path: "/agencies/defense"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOD
 hhs-gamache:
@@ -6142,6 +6332,7 @@ hhs-gamache:
     reporting_notes:
     path: "/people#mattieu-gamache"
     comment:
+    obj_type: Person
   agency:
     id: HHS
     name: Health and Human Services
@@ -6160,6 +6351,7 @@ hhs-gamache:
     doge_base: true
     path: "/agencies/health"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 opm-joe-gebbia:
@@ -6214,6 +6406,7 @@ opm-joe-gebbia:
     reporting_notes:
     path: "/people#joe-gebbia"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -6223,8 +6416,9 @@ opm-joe-gebbia:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 dol-derek-geissler:
@@ -6279,6 +6473,7 @@ dol-derek-geissler:
     reporting_notes:
     path: "/people#derek-geissler"
     comment:
+    obj_type: Person
   agency:
     id: DOL
     name: Department of Labor
@@ -6290,6 +6485,7 @@ dol-derek-geissler:
     doge_base: true
     path: "/agencies/labor"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOL
 faa-glantz:
@@ -6344,6 +6540,7 @@ faa-glantz:
     reporting_notes:
     path: "/people#brady-glantz"
     comment:
+    obj_type: Person
   agency:
     id: FAA
     name: Federal Aviation Administration
@@ -6355,6 +6552,7 @@ faa-glantz:
     doge_base: false
     path: "/agencies/transportation"
     parent_id: DOT
+    obj_type: Agency
   agency_ids:
   - FAA
   - DOT
@@ -6410,6 +6608,7 @@ doge-amy-gleason:
     reporting_notes:
     path: "/people#amy-gleason"
     comment:
+    obj_type: Person
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -6421,6 +6620,7 @@ doge-amy-gleason:
     doge_base: true
     path: "/agencies/doge"
     parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOGE
   - EOP
@@ -6476,6 +6676,7 @@ doge-amy-gleason-director:
     reporting_notes:
     path: "/people#amy-gleason"
     comment:
+    obj_type: Person
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -6487,6 +6688,7 @@ doge-amy-gleason-director:
     doge_base: true
     path: "/agencies/doge"
     parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOGE
   - EOP
@@ -6542,6 +6744,7 @@ internal-hhs-cms-gleason:
     reporting_notes:
     path: "/people#amy-gleason"
     comment:
+    obj_type: Person
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -6553,6 +6756,7 @@ internal-hhs-cms-gleason:
     doge_base: true
     path: "/agencies/health"
     parent_id: HHS
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -6608,6 +6812,7 @@ hhs-amy-gleason:
     reporting_notes:
     path: "/people#amy-gleason"
     comment:
+    obj_type: Person
   agency:
     id: HHS
     name: Health and Human Services
@@ -6626,6 +6831,7 @@ hhs-amy-gleason:
     doge_base: true
     path: "/agencies/health"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 ssa-antonio-gracias:
@@ -6680,11 +6886,13 @@ ssa-antonio-gracias:
     reporting_notes:
     path: "/people#antonio-gracias"
     comment:
+    obj_type: Person
   alias:
     id: SSA-4
     agency_id: SSA
     name: Antonio Gracias
     evidence: "- [NPR has done analysis on docs to identify directly](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
+    obj_type: Alias
   agency:
     id: SSA
     name: Social Security Administration
@@ -6696,6 +6904,7 @@ ssa-antonio-gracias:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 commerce-michael-grimes:
@@ -6750,6 +6959,7 @@ commerce-michael-grimes:
     reporting_notes:
     path: "/people#michael-grimes"
     comment:
+    obj_type: Person
   agency:
     id: Commerce
     name: Commerce Department
@@ -6759,8 +6969,9 @@ commerce-michael-grimes:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agenciescommerce"
+    path: "/agencies#commerce"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Commerce
 gsa-josh-gruenbaum:
@@ -6815,6 +7026,7 @@ gsa-josh-gruenbaum:
     reporting_notes:
     path: "/people#josh-gruenbaum"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -6830,8 +7042,9 @@ gsa-josh-gruenbaum:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 imls-hamrick:
@@ -6886,6 +7099,7 @@ imls-hamrick:
     reporting_notes:
     path: "/people#gavin-hamrick"
     comment:
+    obj_type: Person
   agency:
     id: IMLS
     name: Institute for Museum and Library Services
@@ -6897,6 +7111,7 @@ imls-hamrick:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - IMLS
 doge-joshua-hanley:
@@ -6951,6 +7166,7 @@ doge-joshua-hanley:
     reporting_notes:
     path: "/people#joshua-hanley"
     comment:
+    obj_type: Person
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -6962,6 +7178,7 @@ doge-joshua-hanley:
     doge_base: true
     path: "/agencies/doge"
     parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOGE
   - EOP
@@ -7017,6 +7234,7 @@ opm-christina-hanna:
     reporting_notes:
     path: "/people#christina-hanna"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -7026,8 +7244,9 @@ opm-christina-hanna:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 doi-hassen-acting:
@@ -7082,6 +7301,7 @@ doi-hassen-acting:
     reporting_notes:
     path: "/people#tyler-hassen"
     comment:
+    obj_type: Person
   agency:
     id: DOI
     name: Department of the Interior
@@ -7093,6 +7313,7 @@ doi-hassen-acting:
     doge_base: true
     path: "/agencies/interior"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOI
 doj-hoffman:
@@ -7147,6 +7368,7 @@ doj-hoffman:
     reporting_notes:
     path: "/people#adam-hoffman"
     comment:
+    obj_type: Person
   agency:
     id: DOJ
     name: Department of Justice
@@ -7158,6 +7380,7 @@ doj-hoffman:
     doge_base: true
     path: "/agencies/justice"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOJ
 greg-hogan-opm:
@@ -7212,6 +7435,7 @@ greg-hogan-opm:
     reporting_notes:
     path: "/people#greg-hogan"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -7221,8 +7445,9 @@ greg-hogan-opm:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 greg-hogan-opm-2:
@@ -7277,6 +7502,7 @@ greg-hogan-opm-2:
     reporting_notes:
     path: "/people#greg-hogan"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -7286,8 +7512,9 @@ greg-hogan-opm-2:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 gsa-hollander:
@@ -7342,6 +7569,7 @@ gsa-hollander:
     reporting_notes:
     path: "/people#nicole-hollander"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -7357,8 +7585,9 @@ gsa-hollander:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 detail-doge-doi-holmes:
@@ -7413,6 +7642,7 @@ detail-doge-doi-holmes:
     reporting_notes:
     path: "/people#stephanie-holmes"
     comment:
+    obj_type: Person
   agency:
     id: DOI
     name: Department of the Interior
@@ -7424,6 +7654,7 @@ detail-doge-doi-holmes:
     doge_base: true
     path: "/agencies/interior"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOI
 usip-jackson:
@@ -7478,6 +7709,7 @@ usip-jackson:
     reporting_notes:
     path: "/people#kenneth-jackson"
     comment:
+    obj_type: Person
   agency:
     id: USIP
     name: US Institute of Peace
@@ -7489,6 +7721,7 @@ usip-jackson:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USIP
 usaid-deputy-jackson:
@@ -7543,6 +7776,7 @@ usaid-deputy-jackson:
     reporting_notes:
     path: "/people#kenneth-jackson"
     comment:
+    obj_type: Person
   agency:
     id: USAID
     name: US Agency for International Development
@@ -7554,6 +7788,7 @@ usaid-deputy-jackson:
     doge_base: false
     path: "/agencies/usaid"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USAID
 gsa-jegannathan:
@@ -7608,6 +7843,7 @@ gsa-jegannathan:
     reporting_notes:
     path: "/people#raj-jegannathan"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -7623,8 +7859,9 @@ gsa-jegannathan:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 epa-jehling:
@@ -7679,6 +7916,7 @@ epa-jehling:
     reporting_notes:
     path: "/people#erica-jehling"
     comment:
+    obj_type: Person
   agency:
     id: EPA
     name: Environmental Protection Agency
@@ -7688,8 +7926,9 @@ epa-jehling:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/epa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - EPA
 faa-kiernan:
@@ -7744,6 +7983,7 @@ faa-kiernan:
     reporting_notes:
     path: "/people#thomas-kiernan"
     comment:
+    obj_type: Person
   agency:
     id: FAA
     name: Federal Aviation Administration
@@ -7755,6 +7995,7 @@ faa-kiernan:
     doge_base: false
     path: "/agencies/transportation"
     parent_id: DOT
+    obj_type: Agency
   agency_ids:
   - FAA
   - DOT
@@ -7810,6 +8051,7 @@ doge-killian:
     reporting_notes:
     path: "/people#cole-killian"
     comment:
+    obj_type: Person
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -7821,6 +8063,7 @@ doge-killian:
     doge_base: true
     path: "/agencies/doge"
     parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOGE
   - EOP
@@ -7876,6 +8119,7 @@ detaile-doge-epa-killian:
     reporting_notes:
     path: "/people#cole-killian"
     comment:
+    obj_type: Person
   agency:
     id: EPA
     name: Environmental Protection Agency
@@ -7885,8 +8129,9 @@ detaile-doge-epa-killian:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/epa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - EPA
 detail-doge-dol-killian:
@@ -7941,6 +8186,7 @@ detail-doge-dol-killian:
     reporting_notes:
     path: "/people#cole-killian"
     comment:
+    obj_type: Person
   agency:
     id: DOL
     name: Department of Labor
@@ -7952,6 +8198,7 @@ detail-doge-dol-killian:
     doge_base: true
     path: "/agencies/labor"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOL
 detail-doge-ssa-killian:
@@ -8006,6 +8253,7 @@ detail-doge-ssa-killian:
     reporting_notes:
     path: "/people#cole-killian"
     comment:
+    obj_type: Person
   agency:
     id: SSA
     name: Social Security Administration
@@ -8017,6 +8265,7 @@ detail-doge-ssa-killian:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 detail-opm-dhs-kliger:
@@ -8071,6 +8320,7 @@ detail-opm-dhs-kliger:
     reporting_notes:
     path: "/people#gavin-kliger"
     comment:
+    obj_type: Person
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -8082,6 +8332,7 @@ detail-opm-dhs-kliger:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 gavin-kliger-opm:
@@ -8136,6 +8387,7 @@ gavin-kliger-opm:
     reporting_notes:
     path: "/people#gavin-kliger"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -8145,8 +8397,9 @@ gavin-kliger-opm:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 internal-dhs-tsa-kliger:
@@ -8201,6 +8454,7 @@ internal-dhs-tsa-kliger:
     reporting_notes:
     path: "/people#gavin-kliger"
     comment:
+    obj_type: Person
   agency:
     id: TSA
     name: Transportation Security Administration
@@ -8212,6 +8466,7 @@ internal-dhs-tsa-kliger:
     doge_base: false
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - TSA
   - DHS
@@ -8267,6 +8522,7 @@ detail-opm-usaid-kliger:
     reporting_notes:
     path: "/people#gavin-kliger"
     comment:
+    obj_type: Person
   agency:
     id: USAID
     name: US Agency for International Development
@@ -8278,6 +8534,7 @@ detail-opm-usaid-kliger:
     doge_base: false
     path: "/agencies/usaid"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USAID
 detail-opm-usda-kliger:
@@ -8334,6 +8591,7 @@ detail-opm-usda-kliger:
     reporting_notes:
     path: "/people#gavin-kliger"
     comment:
+    obj_type: Person
   agency:
     id: USDA
     name: Department of Agriculture
@@ -8345,6 +8603,7 @@ detail-opm-usda-kliger:
     doge_base: true
     path: "/agencies/agriculture"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USDA
 detail-opm-cfpb-kliger:
@@ -8399,6 +8658,7 @@ detail-opm-cfpb-kliger:
     reporting_notes:
     path: "/people#gavin-kliger"
     comment:
+    obj_type: Person
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -8415,8 +8675,9 @@ detail-opm-cfpb-kliger:
       to be overturned by the same judge. Today, the CFPB is still alive, but in a precarious limbo that might make months or year to resolve.
     blurb_date: '2025-05-12'
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/cfpb"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - CFPB
 gavin-kliger-opm-2:
@@ -8471,6 +8732,7 @@ gavin-kliger-opm-2:
     reporting_notes:
     path: "/people#gavin-kliger"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -8480,8 +8742,9 @@ gavin-kliger-opm-2:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 detail-opm-irs-gavin-kliger:
@@ -8536,6 +8799,7 @@ detail-opm-irs-gavin-kliger:
     reporting_notes:
     path: "/people#gavin-kliger"
     comment:
+    obj_type: Person
   agency:
     id: IRS
     name: Internal Revenue Service
@@ -8547,6 +8811,7 @@ detail-opm-irs-gavin-kliger:
     doge_base: true
     path: "/agencies/treasury"
     parent_id: Treasury
+    obj_type: Agency
   agency_ids:
   - IRS
   - Treasury
@@ -8602,6 +8867,7 @@ detail-opm-ftc-kliger:
     reporting_notes:
     path: "/people#gavin-kliger"
     comment:
+    obj_type: Person
   agency:
     id: FTC
     name: Federal Trade Commission
@@ -8613,6 +8879,7 @@ detail-opm-ftc-kliger:
     doge_base: true
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - FTC
 ssa-employee-6:
@@ -8667,11 +8934,13 @@ ssa-employee-6:
     reporting_notes:
     path: "/people#jon-koval"
     comment:
+    obj_type: Person
   alias:
     id: SSA-6
     agency_id: SSA
     name: Jon Koval
     evidence: "- [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
+    obj_type: Alias
   agency:
     id: SSA
     name: Social Security Administration
@@ -8683,6 +8952,7 @@ ssa-employee-6:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 detail-ssa-doj-koval:
@@ -8737,6 +9007,7 @@ detail-ssa-doj-koval:
     reporting_notes:
     path: "/people#jon-koval"
     comment:
+    obj_type: Person
   agency:
     id: DOJ
     name: Department of Justice
@@ -8748,6 +9019,7 @@ detail-ssa-doj-koval:
     doge_base: true
     path: "/agencies/justice"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOJ
 onboard-treasury-thomas-krause:
@@ -8802,6 +9074,7 @@ onboard-treasury-thomas-krause:
     reporting_notes:
     path: "/people#tom-krause"
     comment:
+    obj_type: Person
   agency:
     id: Treasury
     name: Department of the Treasury
@@ -8811,8 +9084,9 @@ onboard-treasury-thomas-krause:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agenciestreasury"
+    path: "/agencies#treasury"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Treasury
 appoint-treasury-thomas-krause:
@@ -8867,6 +9141,7 @@ appoint-treasury-thomas-krause:
     reporting_notes:
     path: "/people#tom-krause"
     comment:
+    obj_type: Person
   agency:
     id: Treasury
     name: Department of the Treasury
@@ -8876,8 +9151,9 @@ appoint-treasury-thomas-krause:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agenciestreasury"
+    path: "/agencies#treasury"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Treasury
 hud-langmack:
@@ -8932,6 +9208,7 @@ hud-langmack:
     reporting_notes:
     path: "/people#scott-langmack"
     comment:
+    obj_type: Person
   agency:
     id: HUD
     name: Housing and Urban Development
@@ -8950,6 +9227,7 @@ hud-langmack:
     doge_base: true
     path: "/agencies/housing"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HUD
 va-lavingia:
@@ -9004,6 +9282,7 @@ va-lavingia:
     reporting_notes:
     path: "/people#shail-lavingia"
     comment:
+    obj_type: Person
   agency:
     id: VA
     name: Veterans Administration
@@ -9015,6 +9294,7 @@ va-lavingia:
     doge_base: true
     path: "/agencies/veterans"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - VA
 gsa-jeremy-lewin:
@@ -9069,6 +9349,7 @@ gsa-jeremy-lewin:
     reporting_notes:
     path: "/people#jeremy-lewin"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -9084,8 +9365,9 @@ gsa-jeremy-lewin:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 detail-usaid-jeremy-lewin:
@@ -9140,6 +9422,7 @@ detail-usaid-jeremy-lewin:
     reporting_notes:
     path: "/people#jeremy-lewin"
     comment:
+    obj_type: Person
   agency:
     id: USAID
     name: US Agency for International Development
@@ -9151,6 +9434,7 @@ detail-usaid-jeremy-lewin:
     doge_base: false
     path: "/agencies/usaid"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USAID
 internal-hhs-cms-lewin:
@@ -9205,6 +9489,7 @@ internal-hhs-cms-lewin:
     reporting_notes:
     path: "/people#jeremy-lewin"
     comment:
+    obj_type: Person
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -9216,6 +9501,7 @@ internal-hhs-cms-lewin:
     doge_base: true
     path: "/agencies/health"
     parent_id: HHS
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -9226,7 +9512,7 @@ detail-gsa-cfpb-jeremy-lewin:
   name: Jeremy Lewin
   doge_alias_id:
   from_agency_id: GSA
-  start_date: '2025-02-06'
+  start_date: '2025-02-07'
   start_date_truth:
   start_date_event:
   start_source:
@@ -9236,7 +9522,7 @@ detail-gsa-cfpb-jeremy-lewin:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: '2025-02-06'
+  sort_date: '2025-02-07'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9271,6 +9557,7 @@ detail-gsa-cfpb-jeremy-lewin:
     reporting_notes:
     path: "/people#jeremy-lewin"
     comment:
+    obj_type: Person
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -9287,8 +9574,9 @@ detail-gsa-cfpb-jeremy-lewin:
       to be overturned by the same judge. Today, the CFPB is still alive, but in a precarious limbo that might make months or year to resolve.
     blurb_date: '2025-05-12'
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/cfpb"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - CFPB
 detail-gsa-hhs-lewin:
@@ -9343,6 +9631,7 @@ detail-gsa-hhs-lewin:
     reporting_notes:
     path: "/people#jeremy-lewin"
     comment:
+    obj_type: Person
   agency:
     id: HHS
     name: Health and Human Services
@@ -9361,6 +9650,7 @@ detail-gsa-hhs-lewin:
     doge_base: true
     path: "/agencies/health"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 internal-hhs-nih-lewin:
@@ -9415,6 +9705,7 @@ internal-hhs-nih-lewin:
     reporting_notes:
     path: "/people#jeremy-lewin"
     comment:
+    obj_type: Person
   agency:
     id: NIH
     name: National Institute of Health
@@ -9426,6 +9717,7 @@ internal-hhs-nih-lewin:
     doge_base: true
     path: "/agencies/health"
     parent_id: HHS
+    obj_type: Agency
   agency_ids:
   - NIH
   - HHS
@@ -9481,6 +9773,7 @@ usaid-jeremy-lewin-2:
     reporting_notes:
     path: "/people#jeremy-lewin"
     comment:
+    obj_type: Person
   agency:
     id: USAID
     name: US Agency for International Development
@@ -9492,6 +9785,7 @@ usaid-jeremy-lewin-2:
     doge_base: false
     path: "/agencies/usaid"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USAID
 state-lewin-foreign:
@@ -9546,6 +9840,7 @@ state-lewin-foreign:
     reporting_notes:
     path: "/people#jeremy-lewin"
     comment:
+    obj_type: Person
   agency:
     id: State
     name: State Department
@@ -9557,6 +9852,7 @@ state-lewin-foreign:
     doge_base: true
     path: "/agencies/state"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - State
 doge-lindemann:
@@ -9611,6 +9907,7 @@ doge-lindemann:
     reporting_notes:
     path: "/people#kendall-lindemann"
     comment:
+    obj_type: Person
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -9622,6 +9919,7 @@ doge-lindemann:
     doge_base: true
     path: "/agencies/doge"
     parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOGE
   - EOP
@@ -9677,6 +9975,7 @@ epa-loving:
     reporting_notes:
     path: "/people#kathryn-loving"
     comment:
+    obj_type: Person
   agency:
     id: EPA
     name: Environmental Protection Agency
@@ -9686,8 +9985,9 @@ epa-loving:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/epa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - EPA
 doi-luby:
@@ -9742,6 +10042,7 @@ doi-luby:
     reporting_notes:
     path: "/people#matt-luby"
     comment:
+    obj_type: Person
   agency:
     id: DOI
     name: Department of the Interior
@@ -9753,6 +10054,7 @@ doi-luby:
     doge_base: true
     path: "/agencies/interior"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOI
 opm-makecha:
@@ -9807,6 +10109,7 @@ opm-makecha:
     reporting_notes:
     path: "/people#tarak-makecha"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -9816,8 +10119,9 @@ opm-makecha:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 fbi-makecha:
@@ -9874,6 +10178,7 @@ fbi-makecha:
     reporting_notes:
     path: "/people#tarak-makecha"
     comment:
+    obj_type: Person
   agency:
     id: FBI
     name: Federal Bureau of Investigation
@@ -9885,6 +10190,7 @@ fbi-makecha:
     doge_base: true
     path: "/agencies/justice"
     parent_id: DOJ
+    obj_type: Agency
   agency_ids:
   - FBI
   - DOJ
@@ -9940,6 +10246,7 @@ detail-fcc-makecha:
     reporting_notes:
     path: "/people#tarak-makecha"
     comment:
+    obj_type: Person
   agency:
     id: FCC
     name: Federal Communications Commission
@@ -9951,6 +10258,7 @@ detail-fcc-makecha:
     doge_base: true
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - FCC
 faa-malaska:
@@ -10005,6 +10313,7 @@ faa-malaska:
     reporting_notes:
     path: "/people#ted-malaska"
     comment:
+    obj_type: Person
   agency:
     id: FAA
     name: Federal Aviation Administration
@@ -10016,6 +10325,7 @@ faa-malaska:
     doge_base: false
     path: "/agencies/transportation"
     parent_id: DOT
+    obj_type: Agency
   agency_ids:
   - FAA
   - DOT
@@ -10071,6 +10381,7 @@ gsa-malcher:
     reporting_notes:
     path: "/people#dave-malcher"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -10086,8 +10397,9 @@ gsa-malcher:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 iaf-marocco:
@@ -10142,6 +10454,7 @@ iaf-marocco:
     reporting_notes:
     path: "/people#peter-marocco"
     comment:
+    obj_type: Person
   agency:
     id: IAF
     name: Inter-American Foundation
@@ -10153,6 +10466,7 @@ iaf-marocco:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - IAF
 dhs-mccord:
@@ -10207,6 +10521,7 @@ dhs-mccord:
     reporting_notes:
     path: "/people#antoine-mccord"
     comment:
+    obj_type: Person
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -10218,6 +10533,7 @@ dhs-mccord:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 sec-mendelson:
@@ -10272,6 +10588,7 @@ sec-mendelson:
     reporting_notes:
     path: "/people#jonathan-mendelson"
     comment:
+    obj_type: Person
   agency:
     id: SEC
     name: Securities and Exchange Commission
@@ -10283,6 +10600,7 @@ sec-mendelson:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SEC
 doge-miller:
@@ -10337,6 +10655,7 @@ doge-miller:
     reporting_notes:
     path: "/people#katie-miller"
     comment:
+    obj_type: Person
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -10348,6 +10667,7 @@ doge-miller:
     doge_base: true
     path: "/agencies/doge"
     parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOGE
   - EOP
@@ -10403,6 +10723,7 @@ hhs-minor:
     reporting_notes:
     path: "/people#clark-minor"
     comment:
+    obj_type: Person
   agency:
     id: HHS
     name: Health and Human Services
@@ -10421,6 +10742,7 @@ hhs-minor:
     doge_base: true
     path: "/agencies/health"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 detail-hhs-nih-minor:
@@ -10475,6 +10797,7 @@ detail-hhs-nih-minor:
     reporting_notes:
     path: "/people#clark-minor"
     comment:
+    obj_type: Person
   agency:
     id: NIH
     name: National Institute of Health
@@ -10486,6 +10809,7 @@ detail-hhs-nih-minor:
     doge_base: true
     path: "/agencies/health"
     parent_id: HHS
+    obj_type: Agency
   agency_ids:
   - NIH
   - HHS
@@ -10541,6 +10865,7 @@ hud-mirski:
     reporting_notes:
     path: "/people#michael-mirski"
     comment:
+    obj_type: Person
   agency:
     id: HUD
     name: Housing and Urban Development
@@ -10559,6 +10884,7 @@ hud-mirski:
     doge_base: true
     path: "/agencies/housing"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HUD
 sec-mishory:
@@ -10613,6 +10939,7 @@ sec-mishory:
     reporting_notes:
     path: "/people#eli-mishory"
     comment:
+    obj_type: Person
   agency:
     id: SEC
     name: Securities and Exchange Commission
@@ -10624,6 +10951,7 @@ sec-mishory:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SEC
 opm-bryanne-mlodzianowski:
@@ -10678,6 +11006,7 @@ opm-bryanne-mlodzianowski:
     reporting_notes:
     path: "/people#mlodzianowski"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -10687,8 +11016,9 @@ opm-bryanne-mlodzianowski:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 detail-dol-dhs-mohgaddassi:
@@ -10743,6 +11073,7 @@ detail-dol-dhs-mohgaddassi:
     reporting_notes:
     path: "/people#aram-mohghaddassi"
     comment:
+    obj_type: Person
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -10754,6 +11085,7 @@ detail-dol-dhs-mohgaddassi:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 dol-moghaddassi:
@@ -10808,6 +11140,7 @@ dol-moghaddassi:
     reporting_notes:
     path: "/people#aram-mohghaddassi"
     comment:
+    obj_type: Person
   agency:
     id: DOL
     name: Department of Labor
@@ -10819,6 +11152,7 @@ dol-moghaddassi:
     doge_base: true
     path: "/agencies/labor"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOL
 internal-dhs-cpb-mohgaddassi:
@@ -10873,6 +11207,7 @@ internal-dhs-cpb-mohgaddassi:
     reporting_notes:
     path: "/people#aram-mohghaddassi"
     comment:
+    obj_type: Person
   agency:
     id: CBP
     name: Customs and Border Patrol
@@ -10884,6 +11219,7 @@ internal-dhs-cpb-mohgaddassi:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - CBP
   - DHS
@@ -10939,6 +11275,7 @@ internal-dhs-ice-mohgaddassi:
     reporting_notes:
     path: "/people#aram-mohghaddassi"
     comment:
+    obj_type: Person
   agency:
     id: ICE
     name: Immigration and Customs Enforcement
@@ -10948,8 +11285,9 @@ internal-dhs-ice-mohgaddassi:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agenciesice"
+    path: "/agencies#ice"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - ICE
   - DHS
@@ -11005,6 +11343,7 @@ internal-dhs-tsa-mohgaddassi:
     reporting_notes:
     path: "/people#aram-mohghaddassi"
     comment:
+    obj_type: Person
   agency:
     id: TSA
     name: Transportation Security Administration
@@ -11016,6 +11355,7 @@ internal-dhs-tsa-mohgaddassi:
     doge_base: false
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - TSA
   - DHS
@@ -11071,6 +11411,7 @@ internal-dhs-uscis-mohgaddassi:
     reporting_notes:
     path: "/people#aram-mohghaddassi"
     comment:
+    obj_type: Person
   agency:
     id: USCIS
     name: US Citizenship & Immigration Services
@@ -11082,6 +11423,7 @@ internal-dhs-uscis-mohgaddassi:
     doge_base: false
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - USCIS
   - DHS
@@ -11137,6 +11479,7 @@ detail-dol-ssa-employee-3:
     reporting_notes:
     path: "/people#aram-mohghaddassi"
     comment:
+    obj_type: Person
   alias:
     id: SSA-3
     agency_id: SSA
@@ -11148,6 +11491,7 @@ detail-dol-ssa-employee-3:
       - Cole Killian another possibility, but he appears to be a volunteer SGE
       - Flick testimony - "_we began onboarding and training Employee 3, a Schedule C Policy Advisor, detailed from the Department of Labor to SSA_" with it finalized on February 22. "_His duties currently relate to improper payments and SSA's Death Master File._"
       - Aram was linked to changed to the Death Master File on the week of 2025-04-08
+    obj_type: Alias
   agency:
     id: SSA
     name: Social Security Administration
@@ -11159,6 +11503,7 @@ detail-dol-ssa-employee-3:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 detail-dol-hhs-mohgaddassi:
@@ -11213,6 +11558,7 @@ detail-dol-hhs-mohgaddassi:
     reporting_notes:
     path: "/people#aram-mohghaddassi"
     comment:
+    obj_type: Person
   agency:
     id: HHS
     name: Health and Human Services
@@ -11231,6 +11577,7 @@ detail-dol-hhs-mohgaddassi:
     doge_base: true
     path: "/agencies/health"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 internal-hhs-cms-mohgaddassi:
@@ -11285,6 +11632,7 @@ internal-hhs-cms-mohgaddassi:
     reporting_notes:
     path: "/people#aram-mohghaddassi"
     comment:
+    obj_type: Person
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -11296,6 +11644,7 @@ internal-hhs-cms-mohgaddassi:
     doge_base: true
     path: "/agencies/health"
     parent_id: HHS
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -11351,6 +11700,7 @@ opm-justin-monroe:
     reporting_notes:
     path: "/people#justin-monroe"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -11360,8 +11710,9 @@ opm-justin-monroe:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 detail-opm-fbi-monroe:
@@ -11416,6 +11767,7 @@ detail-opm-fbi-monroe:
     reporting_notes:
     path: "/people#justin-monroe"
     comment:
+    obj_type: Person
   agency:
     id: FBI
     name: Federal Bureau of Investigation
@@ -11427,6 +11779,7 @@ detail-opm-fbi-monroe:
     doge_base: true
     path: "/agencies/justice"
     parent_id: DOJ
+    obj_type: Agency
   agency_ids:
   - FBI
   - DOJ
@@ -11482,6 +11835,7 @@ onboard-education-employee-4:
     reporting_notes:
     path: "/people#brooks-morgan"
     comment:
+    obj_type: Person
   alias:
     id: ED-4
     agency_id: Education
@@ -11489,6 +11843,7 @@ onboard-education-employee-4:
     evidence: |-
       - This is the only consultant position listed in [this legal document](https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf)
       - Further down the same document, a table lists one consultant starting on the same date unredacted and it's Brooks Morgan
+    obj_type: Alias
   agency:
     id: Education
     name: Department of Education
@@ -11500,6 +11855,7 @@ onboard-education-employee-4:
     doge_base: true
     path: "/agencies/education"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Education
 detail-education-fdic-morgan:
@@ -11554,6 +11910,7 @@ detail-education-fdic-morgan:
     reporting_notes:
     path: "/people#brooks-morgan"
     comment:
+    obj_type: Person
   agency:
     id: FDIC
     name: Federal Deposit Insurance Commission
@@ -11565,6 +11922,7 @@ detail-education-fdic-morgan:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - FDIC
 eop-morse:
@@ -11622,6 +11980,7 @@ eop-morse:
     reporting_notes:
     path: "/people#trent-morse"
     comment:
+    obj_type: Person
   agency:
     id: EOP
     name: Executive Office of the President
@@ -11633,6 +11992,7 @@ eop-morse:
     doge_base: true
     path: "/agencies/doge"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - EOP
 musk-doge:
@@ -11687,6 +12047,7 @@ musk-doge:
     reporting_notes:
     path: "/people#elon-musk"
     comment:
+    obj_type: Person
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -11698,6 +12059,7 @@ musk-doge:
     doge_base: true
     path: "/agencies/doge"
     parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOGE
   - EOP
@@ -11753,6 +12115,7 @@ treasury-newnam:
     reporting_notes:
     path: "/people#todd-newnam"
     comment:
+    obj_type: Person
   agency:
     id: Treasury
     name: Department of the Treasury
@@ -11762,8 +12125,9 @@ treasury-newnam:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agenciestreasury"
+    path: "/agencies#treasury"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Treasury
 internal-treasury-irs-newnam:
@@ -11818,6 +12182,7 @@ internal-treasury-irs-newnam:
     reporting_notes:
     path: "/people#todd-newnam"
     comment:
+    obj_type: Person
   agency:
     id: IRS
     name: Internal Revenue Service
@@ -11829,6 +12194,7 @@ internal-treasury-irs-newnam:
     doge_base: true
     path: "/agencies/treasury"
     parent_id: Treasury
+    obj_type: Agency
   agency_ids:
   - IRS
   - Treasury
@@ -11884,6 +12250,7 @@ sba-park:
     reporting_notes:
     path: "/people#donald-park"
     comment:
+    obj_type: Person
   agency:
     id: SBA
     name: Small Business Administration
@@ -11895,6 +12262,7 @@ sba-park:
     doge_base: true
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SBA
 detail-exim-park:
@@ -11949,6 +12317,7 @@ detail-exim-park:
     reporting_notes:
     path: "/people#donald-park"
     comment:
+    obj_type: Person
   agency:
     id: EXIM
     name: Export-Import Bank of the United States
@@ -11960,6 +12329,7 @@ detail-exim-park:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - EXIM
 noah-peters-opm:
@@ -12014,6 +12384,7 @@ noah-peters-opm:
     reporting_notes:
     path: "/people#noah-peters"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -12023,8 +12394,9 @@ noah-peters-opm:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 opm-nikhil-rajpal:
@@ -12079,6 +12451,7 @@ opm-nikhil-rajpal:
     reporting_notes:
     path: "/people#nikhil-rajpal"
     comment:
+    obj_type: Person
   alias:
     id: OPM-6
     agency_id: OPM
@@ -12087,6 +12460,7 @@ opm-nikhil-rajpal:
       - Onboarded on 2025-01-24 as a vounteer SGE with a term not to exceed 2025-07-22
       - This is likely one of the other young DOGE crew like Jordan Wick or Luke Farritor, etc.
       - PD 6A39738 listed on hiring forms = Nikhil Rajpal on FOIAed list of OPM positions
+    obj_type: Alias
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -12096,8 +12470,9 @@ opm-nikhil-rajpal:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 detail-opm-noaa-rajpal:
@@ -12152,6 +12527,7 @@ detail-opm-noaa-rajpal:
     reporting_notes:
     path: "/people#nikhil-rajpal"
     comment:
+    obj_type: Person
   agency:
     id: NOAA
     name: National Oceanic and Atmospheric Administration
@@ -12163,6 +12539,7 @@ detail-opm-noaa-rajpal:
     doge_base: true
     path: "/agencies/commerce"
     parent_id: Commerce
+    obj_type: Agency
   agency_ids:
   - NOAA
   - Commerce
@@ -12218,6 +12595,7 @@ detail-opm-cfpb-nikhil-rajpal:
     reporting_notes:
     path: "/people#nikhil-rajpal"
     comment:
+    obj_type: Person
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -12234,8 +12612,9 @@ detail-opm-cfpb-nikhil-rajpal:
       to be overturned by the same judge. Today, the CFPB is still alive, but in a precarious limbo that might make months or year to resolve.
     blurb_date: '2025-05-12'
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/cfpb"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - CFPB
 doge-adam-ramada:
@@ -12290,6 +12669,7 @@ doge-adam-ramada:
     reporting_notes:
     path: "/people#adam-ramada"
     comment:
+    obj_type: Person
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -12301,6 +12681,7 @@ doge-adam-ramada:
     doge_base: true
     path: "/agencies/doge"
     parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOGE
   - EOP
@@ -12356,6 +12737,7 @@ detail-doge-education-adam-ramada:
     reporting_notes:
     path: "/people#adam-ramada"
     comment:
+    obj_type: Person
   agency:
     id: Education
     name: Department of Education
@@ -12367,6 +12749,7 @@ detail-doge-education-adam-ramada:
     doge_base: true
     path: "/agencies/education"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Education
 detail-doge-energy-adam-ramada:
@@ -12421,6 +12804,7 @@ detail-doge-energy-adam-ramada:
     reporting_notes:
     path: "/people#adam-ramada"
     comment:
+    obj_type: Person
   agency:
     id: Energy
     name: Department of Energy
@@ -12432,6 +12816,7 @@ detail-doge-energy-adam-ramada:
     doge_base: true
     path: "/agencies/energy"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Energy
 detail-doge-dol-ramada:
@@ -12486,6 +12871,7 @@ detail-doge-dol-ramada:
     reporting_notes:
     path: "/people#adam-ramada"
     comment:
+    obj_type: Person
   agency:
     id: DOL
     name: Department of Labor
@@ -12497,6 +12883,7 @@ detail-doge-dol-ramada:
     doge_base: true
     path: "/agencies/labor"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOL
 detail-doge-fdic-ramada:
@@ -12551,6 +12938,7 @@ detail-doge-fdic-ramada:
     reporting_notes:
     path: "/people#adam-ramada"
     comment:
+    obj_type: Person
   agency:
     id: FDIC
     name: Federal Deposit Insurance Commission
@@ -12562,6 +12950,7 @@ detail-doge-fdic-ramada:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - FDIC
 opm-austin-raynor:
@@ -12616,6 +13005,7 @@ opm-austin-raynor:
     reporting_notes:
     path: "/people#austin-raynor"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -12625,8 +13015,9 @@ opm-austin-raynor:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 detail-ssa-dhs-rehling:
@@ -12681,6 +13072,7 @@ detail-ssa-dhs-rehling:
     reporting_notes:
     path: "/people#payton-rehling"
     comment:
+    obj_type: Person
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -12692,6 +13084,7 @@ detail-ssa-dhs-rehling:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 internal-dhs-tsa-rehling:
@@ -12746,6 +13139,7 @@ internal-dhs-tsa-rehling:
     reporting_notes:
     path: "/people#payton-rehling"
     comment:
+    obj_type: Person
   agency:
     id: TSA
     name: Transportation Security Administration
@@ -12757,6 +13151,7 @@ internal-dhs-tsa-rehling:
     doge_base: false
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - TSA
   - DHS
@@ -12812,6 +13207,7 @@ internal-dhs-uscis-rehling:
     reporting_notes:
     path: "/people#payton-rehling"
     comment:
+    obj_type: Person
   agency:
     id: USCIS
     name: US Citizenship & Immigration Services
@@ -12823,6 +13219,7 @@ internal-dhs-uscis-rehling:
     doge_base: false
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - USCIS
   - DHS
@@ -12878,6 +13275,7 @@ ssa-employee-9:
     reporting_notes:
     path: "/people#payton-rehling"
     comment:
+    obj_type: Person
   alias:
     id: SSA-9
     agency_id: SSA
@@ -12885,6 +13283,7 @@ ssa-employee-9:
     evidence: |-
       - [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)
       - In their qualifications, thety list being a Senior Associate, Data Engineer with a backgroun in AI, Airflow and Genetic Algorithms. Also built a Manufacturing Execution System (MES) for home battery deployments
+    obj_type: Alias
   agency:
     id: SSA
     name: Social Security Administration
@@ -12896,6 +13295,7 @@ ssa-employee-9:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 detail-ssa-doj-rehling:
@@ -12950,6 +13350,7 @@ detail-ssa-doj-rehling:
     reporting_notes:
     path: "/people#payton-rehling"
     comment:
+    obj_type: Person
   agency:
     id: DOJ
     name: Department of Justice
@@ -12961,6 +13362,7 @@ detail-ssa-doj-rehling:
     doge_base: true
     path: "/agencies/justice"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOJ
 energy-ryan-riedel:
@@ -13015,6 +13417,7 @@ energy-ryan-riedel:
     reporting_notes:
     path: "/people#ryan-riedel"
     comment:
+    obj_type: Person
   agency:
     id: Energy
     name: Department of Energy
@@ -13026,6 +13429,7 @@ energy-ryan-riedel:
     doge_base: true
     path: "/agencies/energy"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Energy
 hhs-rachel-riley:
@@ -13080,6 +13484,7 @@ hhs-rachel-riley:
     reporting_notes:
     path: "/people#rachel-riley"
     comment:
+    obj_type: Person
   agency:
     id: HHS
     name: Health and Human Services
@@ -13098,6 +13503,7 @@ hhs-rachel-riley:
     doge_base: true
     path: "/agencies/health"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 internal-hhs-cms-riley:
@@ -13152,6 +13558,7 @@ internal-hhs-cms-riley:
     reporting_notes:
     path: "/people#rachel-riley"
     comment:
+    obj_type: Person
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -13163,6 +13570,7 @@ internal-hhs-cms-riley:
     doge_base: true
     path: "/agencies/health"
     parent_id: HHS
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -13218,6 +13626,7 @@ internal-hhs-nih-riley:
     reporting_notes:
     path: "/people#rachel-riley"
     comment:
+    obj_type: Person
   agency:
     id: NIH
     name: National Institute of Health
@@ -13229,6 +13638,7 @@ internal-hhs-nih-riley:
     doge_base: true
     path: "/agencies/health"
     parent_id: HHS
+    obj_type: Agency
   agency_ids:
   - NIH
   - HHS
@@ -13284,6 +13694,7 @@ detail-hhs-nsf-riley:
     reporting_notes:
     path: "/people#rachel-riley"
     comment:
+    obj_type: Person
   agency:
     id: NSF
     name: National Science Foundation
@@ -13295,6 +13706,7 @@ detail-hhs-nsf-riley:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - NSF
 va-roussous:
@@ -13349,6 +13761,7 @@ va-roussous:
     reporting_notes:
     path: "/people#chris-roussos"
     comment:
+    obj_type: Person
   agency:
     id: VA
     name: Veterans Administration
@@ -13360,6 +13773,7 @@ va-roussous:
     doge_base: true
     path: "/agencies/veterans"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - VA
 ssa-mike-russo-cio:
@@ -13414,6 +13828,7 @@ ssa-mike-russo-cio:
     reporting_notes:
     path: "/people#mike-russo"
     comment:
+    obj_type: Person
   agency:
     id: SSA
     name: Social Security Administration
@@ -13425,6 +13840,7 @@ ssa-mike-russo-cio:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 ssa-mike-russo-advisor:
@@ -13481,6 +13897,7 @@ ssa-mike-russo-advisor:
     reporting_notes:
     path: "/people#mike-russo"
     comment:
+    obj_type: Person
   agency:
     id: SSA
     name: Social Security Administration
@@ -13492,6 +13909,7 @@ ssa-mike-russo-advisor:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 amanda-scales-opm:
@@ -13546,6 +13964,7 @@ amanda-scales-opm:
     reporting_notes:
     path: "/people#amanda-scales"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -13555,8 +13974,9 @@ amanda-scales-opm:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 gsa-frank-schuler:
@@ -13611,6 +14031,7 @@ gsa-frank-schuler:
     reporting_notes:
     path: "/people#frank-schuler"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -13626,8 +14047,9 @@ gsa-frank-schuler:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 internal-dhs-cbp-schutt:
@@ -13682,6 +14104,7 @@ internal-dhs-cbp-schutt:
     reporting_notes:
     path: "/people#kyle-schutt"
     comment:
+    obj_type: Person
   agency:
     id: CBP
     name: Customs and Border Patrol
@@ -13693,6 +14116,7 @@ internal-dhs-cbp-schutt:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - CBP
   - DHS
@@ -13748,6 +14172,7 @@ internal-dhs-fema-schutt:
     reporting_notes:
     path: "/people#kyle-schutt"
     comment:
+    obj_type: Person
   agency:
     id: FEMA
     name: Federal Emergency Management Agency
@@ -13759,6 +14184,7 @@ internal-dhs-fema-schutt:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - FEMA
   - DHS
@@ -13814,6 +14240,7 @@ internal-dhs-ice-schutt:
     reporting_notes:
     path: "/people#kyle-schutt"
     comment:
+    obj_type: Person
   agency:
     id: ICE
     name: Immigration and Customs Enforcement
@@ -13823,8 +14250,9 @@ internal-dhs-ice-schutt:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agenciesice"
+    path: "/agencies#ice"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - ICE
   - DHS
@@ -13880,6 +14308,7 @@ internal-dhs-tsa-schutt:
     reporting_notes:
     path: "/people#kyle-schutt"
     comment:
+    obj_type: Person
   agency:
     id: TSA
     name: Transportation Security Administration
@@ -13891,6 +14320,7 @@ internal-dhs-tsa-schutt:
     doge_base: false
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - TSA
   - DHS
@@ -13946,6 +14376,7 @@ internal-dhs-uscis-schutt:
     reporting_notes:
     path: "/people#kyle-schutt"
     comment:
+    obj_type: Person
   agency:
     id: USCIS
     name: US Citizenship & Immigration Services
@@ -13957,6 +14388,7 @@ internal-dhs-uscis-schutt:
     doge_base: false
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - USCIS
   - DHS
@@ -14012,6 +14444,7 @@ detail-gsa-dhs-schutt:
     reporting_notes:
     path: "/people#kyle-schutt"
     comment:
+    obj_type: Person
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -14023,6 +14456,7 @@ detail-gsa-dhs-schutt:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 internal-dhs-cisa-schutt:
@@ -14077,6 +14511,7 @@ internal-dhs-cisa-schutt:
     reporting_notes:
     path: "/people#kyle-schutt"
     comment:
+    obj_type: Person
   agency:
     id: CISA
     name: Cybersecurity and Infrastructure Security Agency
@@ -14088,6 +14523,7 @@ internal-dhs-cisa-schutt:
     doge_base: true
     path: "/agencies/homeland-security"
     parent_id: DHS
+    obj_type: Agency
   agency_ids:
   - CISA
   - DHS
@@ -14143,6 +14579,7 @@ detail-gsa-hhs-kyle-schutt:
     reporting_notes:
     path: "/people#kyle-schutt"
     comment:
+    obj_type: Person
   agency:
     id: HHS
     name: Health and Human Services
@@ -14161,6 +14598,7 @@ detail-gsa-hhs-kyle-schutt:
     doge_base: true
     path: "/agencies/health"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 gsa-sennott:
@@ -14215,6 +14653,7 @@ gsa-sennott:
     reporting_notes:
     path: "/people#riley-sennott"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -14230,8 +14669,9 @@ gsa-sennott:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 detail-gsa-nasa-sennott:
@@ -14286,6 +14726,7 @@ detail-gsa-nasa-sennott:
     reporting_notes:
     path: "/people#riley-sennott"
     comment:
+    obj_type: Person
   agency:
     id: NASA
     name: National Aeronautics and Space Administration
@@ -14295,8 +14736,9 @@ detail-gsa-nasa-sennott:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/nasa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - NASA
 noaa-shang-cio:
@@ -14351,6 +14793,7 @@ noaa-shang-cio:
     reporting_notes:
     path: "/people#bryton-shang"
     comment:
+    obj_type: Person
   agency:
     id: NOAA
     name: National Oceanic and Atmospheric Administration
@@ -14362,6 +14805,7 @@ noaa-shang-cio:
     doge_base: true
     path: "/agencies/commerce"
     parent_id: Commerce
+    obj_type: Agency
   agency_ids:
   - NOAA
   - Commerce
@@ -14417,6 +14861,7 @@ gsa-ethan-shaotran:
     reporting_notes:
     path: "/people#ethan-shaotran"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -14432,8 +14877,9 @@ gsa-ethan-shaotran:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 detail-gsa-education-3:
@@ -14488,6 +14934,7 @@ detail-gsa-education-3:
     reporting_notes:
     path: "/people#ethan-shaotran"
     comment:
+    obj_type: Person
   alias:
     id: ED-3
     agency_id: Education
@@ -14497,6 +14944,7 @@ detail-gsa-education-3:
       - Position at GSA is listed as Software Engineer (Consultant)
       - In a separate document in the release, Ethan Shaotran is listed as being from GSA on 2025-02-03 and Edward Coristine on 2025-02-20
       - IN the case of ED-1, the detail agreement seems to have been signed after the start date; very likely here as well
+    obj_type: Alias
   agency:
     id: Education
     name: Department of Education
@@ -14508,6 +14956,7 @@ detail-gsa-education-3:
     doge_base: true
     path: "/agencies/education"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Education
 detail-gsa-ssa-employee-10:
@@ -14562,6 +15011,7 @@ detail-gsa-ssa-employee-10:
     reporting_notes:
     path: "/people#ethan-shaotran"
     comment:
+    obj_type: Person
   alias:
     id: SSA-10
     agency_id: SSA
@@ -14571,6 +15021,7 @@ detail-gsa-ssa-employee-10:
       - Flick testimony - Employee 10, a software engineer, was detailed from the Office of the Administrator at the General Services Administration to SSA"
       - Ethan Shaotran was also detailed from GSA to USADF as an unpaid GSE on 2025-02-21
       - Ethan Shaotran is identified for the first time at SSA on 2025-02-20
+    obj_type: Alias
   agency:
     id: SSA
     name: Social Security Administration
@@ -14582,6 +15033,7 @@ detail-gsa-ssa-employee-10:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 detail-gsa-usadf-ethan-shaotran:
@@ -14636,6 +15088,7 @@ detail-gsa-usadf-ethan-shaotran:
     reporting_notes:
     path: "/people#ethan-shaotran"
     comment:
+    obj_type: Person
   agency:
     id: USADF
     name: U.S. African Development Foundation
@@ -14647,6 +15100,7 @@ detail-gsa-usadf-ethan-shaotran:
     doge_base: false
     path: "/agencies/usadf"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USADF
 detail-gsa-usps-ethan-shaotran:
@@ -14701,6 +15155,7 @@ detail-gsa-usps-ethan-shaotran:
     reporting_notes:
     path: "/people#ethan-shaotran"
     comment:
+    obj_type: Person
   agency:
     id: USPS
     name: US Postal Service
@@ -14712,6 +15167,7 @@ detail-gsa-usps-ethan-shaotran:
     doge_base: true
     path: "/agencies/usps"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USPS
 gsa-thomas-shedd:
@@ -14766,6 +15222,7 @@ gsa-thomas-shedd:
     reporting_notes:
     path: "/people#thomas-shedd"
     comment:
+    obj_type: Person
   agency:
     id: GSA
     name: General Services Administration
@@ -14781,8 +15238,9 @@ gsa-thomas-shedd:
       for DOGE staff with "A-level access."
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/gsa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - GSA
 dol-shedd:
@@ -14837,6 +15295,7 @@ dol-shedd:
     reporting_notes:
     path: "/people#thomas-shedd"
     comment:
+    obj_type: Person
   agency:
     id: DOL
     name: Department of Labor
@@ -14848,6 +15307,7 @@ dol-shedd:
     doge_base: true
     path: "/agencies/labor"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOL
 treasury-roland-shen:
@@ -14902,6 +15362,7 @@ treasury-roland-shen:
     reporting_notes:
     path: "/people#roland-shen"
     comment:
+    obj_type: Person
   agency:
     id: Treasury
     name: Department of the Treasury
@@ -14911,8 +15372,9 @@ treasury-roland-shen:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agenciestreasury"
+    path: "/agencies#treasury"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Treasury
 detail-gsa-usps-alex-simonpour:
@@ -14967,6 +15429,7 @@ detail-gsa-usps-alex-simonpour:
     reporting_notes:
     path: "/people#alex-simonpour"
     comment:
+    obj_type: Person
   agency:
     id: USPS
     name: US Postal Service
@@ -14978,6 +15441,7 @@ detail-gsa-usps-alex-simonpour:
     doge_base: true
     path: "/agencies/usps"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USPS
 detail-gsa-nasa-simonpour:
@@ -15032,6 +15496,7 @@ detail-gsa-nasa-simonpour:
     reporting_notes:
     path: "/people#alex-simonpour"
     comment:
+    obj_type: Person
   agency:
     id: NASA
     name: National Aeronautics and Space Administration
@@ -15041,8 +15506,9 @@ detail-gsa-nasa-simonpour:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/nasa"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - NASA
 faa-smeal:
@@ -15097,6 +15563,7 @@ faa-smeal:
     reporting_notes:
     path: "/people#sam-smeal"
     comment:
+    obj_type: Person
   agency:
     id: FAA
     name: Federal Aviation Administration
@@ -15108,6 +15575,7 @@ faa-smeal:
     doge_base: false
     path: "/agencies/transportation"
     parent_id: DOT
+    obj_type: Agency
   agency_ids:
   - FAA
   - DOT
@@ -15163,6 +15631,7 @@ hhs-brad-smith:
     reporting_notes:
     path: "/people#brad-smith"
     comment:
+    obj_type: Person
   agency:
     id: HHS
     name: Health and Human Services
@@ -15181,6 +15650,7 @@ hhs-brad-smith:
     doge_base: true
     path: "/agencies/health"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 labor-sonderling:
@@ -15235,6 +15705,7 @@ labor-sonderling:
     reporting_notes:
     path: "/people#keith-sonderling"
     comment:
+    obj_type: Person
   agency:
     id: DOL
     name: Department of Labor
@@ -15246,6 +15717,7 @@ labor-sonderling:
     doge_base: true
     path: "/agencies/labor"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOL
 imls-sonderling:
@@ -15300,6 +15772,7 @@ imls-sonderling:
     reporting_notes:
     path: "/people#keith-sonderling"
     comment:
+    obj_type: Person
   agency:
     id: IMLS
     name: Institute for Museum and Library Services
@@ -15311,6 +15784,7 @@ imls-sonderling:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - IMLS
 opm-christopher-stanley:
@@ -15365,6 +15839,7 @@ opm-christopher-stanley:
     reporting_notes:
     path: "/people#christopher-stanley"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -15374,8 +15849,9 @@ opm-christopher-stanley:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 fhfa-christopher-stanley:
@@ -15430,6 +15906,7 @@ fhfa-christopher-stanley:
     reporting_notes:
     path: "/people#christopher-stanley"
     comment:
+    obj_type: Person
   agency:
     id: FHFA
     name: Federal Housing Finance Agency
@@ -15441,6 +15918,7 @@ fhfa-christopher-stanley:
     doge_base: false
     path: "/agencies/housing"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - FHFA
 detail-opm-doj-stanley:
@@ -15495,6 +15973,7 @@ detail-opm-doj-stanley:
     reporting_notes:
     path: "/people#christopher-stanley"
     comment:
+    obj_type: Person
   agency:
     id: DOJ
     name: Department of Justice
@@ -15506,6 +15985,7 @@ detail-opm-doj-stanley:
     doge_base: true
     path: "/agencies/justice"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOJ
 ssa-steffensen:
@@ -15560,6 +16040,7 @@ ssa-steffensen:
     reporting_notes:
     path: "/people#mark-steffensen"
     comment:
+    obj_type: Person
   agency:
     id: SSA
     name: Social Security Administration
@@ -15571,6 +16052,7 @@ ssa-steffensen:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 ssa-steffensen-1:
@@ -15625,6 +16107,7 @@ ssa-steffensen-1:
     reporting_notes:
     path: "/people#mark-steffensen"
     comment:
+    obj_type: Person
   agency:
     id: SSA
     name: Social Security Administration
@@ -15636,6 +16119,7 @@ ssa-steffensen-1:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 dot-stube:
@@ -15690,6 +16174,7 @@ dot-stube:
     reporting_notes:
     path: "/people#brian-stube"
     comment:
+    obj_type: Person
   agency:
     id: DOT
     name: Department of Transportation
@@ -15701,6 +16186,7 @@ dot-stube:
     doge_base: true
     path: "/agencies/transportation"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOT
 hud-sweet:
@@ -15757,6 +16243,7 @@ hud-sweet:
     reporting_notes:
     path: "/people#christopher-sweet"
     comment:
+    obj_type: Person
   agency:
     id: HUD
     name: Housing and Urban Development
@@ -15775,6 +16262,7 @@ hud-sweet:
     doge_base: true
     path: "/agencies/housing"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HUD
 hhs-terrell:
@@ -15829,6 +16317,7 @@ hhs-terrell:
     reporting_notes:
     path: "/people#zach-terrell"
     comment:
+    obj_type: Person
   agency:
     id: HHS
     name: Health and Human Services
@@ -15847,6 +16336,7 @@ hhs-terrell:
     doge_base: true
     path: "/agencies/health"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 internal-hhs-cms-terrell:
@@ -15901,6 +16391,7 @@ internal-hhs-cms-terrell:
     reporting_notes:
     path: "/people#zach-terrell"
     comment:
+    obj_type: Person
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -15912,6 +16403,7 @@ internal-hhs-cms-terrell:
     doge_base: true
     path: "/agencies/health"
     parent_id: HHS
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -15967,6 +16459,7 @@ detail-hhs-nsf-terrell:
     reporting_notes:
     path: "/people#zach-terrell"
     comment:
+    obj_type: Person
   agency:
     id: NSF
     name: National Science Foundation
@@ -15978,6 +16471,7 @@ detail-hhs-nsf-terrell:
     doge_base: false
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - NSF
 interior-trampe:
@@ -16032,6 +16526,7 @@ interior-trampe:
     reporting_notes:
     path: "/people#katrine-trampe"
     comment:
+    obj_type: Person
   agency:
     id: DOI
     name: Department of the Interior
@@ -16043,6 +16538,7 @@ interior-trampe:
     doge_base: true
     path: "/agencies/interior"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOI
 va-volpert:
@@ -16097,6 +16593,7 @@ va-volpert:
     reporting_notes:
     path: "/people#cary-volpert"
     comment:
+    obj_type: Person
   agency:
     id: VA
     name: Veterans Administration
@@ -16108,6 +16605,7 @@ va-volpert:
     doge_base: true
     path: "/agencies/veterans"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - VA
 omb-vought:
@@ -16162,6 +16660,7 @@ omb-vought:
     reporting_notes:
     path: "/people#russell-vought"
     comment:
+    obj_type: Person
   agency:
     id: EOP
     name: Executive Office of the President
@@ -16173,6 +16672,7 @@ omb-vought:
     doge_base: true
     path: "/agencies/doge"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - EOP
 cfpb-acting-vought:
@@ -16227,6 +16727,7 @@ cfpb-acting-vought:
     reporting_notes:
     path: "/people#russell-vought"
     comment:
+    obj_type: Person
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -16243,8 +16744,9 @@ cfpb-acting-vought:
       to be overturned by the same judge. Today, the CFPB is still alive, but in a precarious limbo that might make months or year to resolve.
     blurb_date: '2025-05-12'
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/cfpb"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - CFPB
 treasury-whitridge:
@@ -16299,6 +16801,7 @@ treasury-whitridge:
     reporting_notes:
     path: "/people#linda-whitridge"
     comment:
+    obj_type: Person
   agency:
     id: Treasury
     name: Department of the Treasury
@@ -16308,8 +16811,9 @@ treasury-whitridge:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agenciestreasury"
+    path: "/agencies#treasury"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Treasury
 doge-wick:
@@ -16364,6 +16868,7 @@ doge-wick:
     reporting_notes:
     path: "/people#jordan-wick"
     comment:
+    obj_type: Person
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -16375,6 +16880,7 @@ doge-wick:
     doge_base: true
     path: "/agencies/doge"
     parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOGE
   - EOP
@@ -16430,6 +16936,7 @@ detail-usda-wick:
     reporting_notes:
     path: "/people#jordan-wick"
     comment:
+    obj_type: Person
   agency:
     id: USDA
     name: Department of Agriculture
@@ -16441,6 +16948,7 @@ detail-usda-wick:
     doge_base: true
     path: "/agencies/agriculture"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - USDA
 detail-usds-cfpb-jordan-wick:
@@ -16495,6 +17003,7 @@ detail-usds-cfpb-jordan-wick:
     reporting_notes:
     path: "/people#jordan-wick"
     comment:
+    obj_type: Person
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -16511,8 +17020,9 @@ detail-usds-cfpb-jordan-wick:
       to be overturned by the same judge. Today, the CFPB is still alive, but in a precarious limbo that might make months or year to resolve.
     blurb_date: '2025-05-12'
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/cfpb"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - CFPB
 detail-doge-dol-wick:
@@ -16567,6 +17077,7 @@ detail-doge-dol-wick:
     reporting_notes:
     path: "/people#jordan-wick"
     comment:
+    obj_type: Person
   agency:
     id: DOL
     name: Department of Labor
@@ -16578,6 +17089,7 @@ detail-doge-dol-wick:
     doge_base: true
     path: "/agencies/labor"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - DOL
 detail-doge-education-wick:
@@ -16632,6 +17144,7 @@ detail-doge-education-wick:
     reporting_notes:
     path: "/people#jordan-wick"
     comment:
+    obj_type: Person
   agency:
     id: Education
     name: Department of Education
@@ -16643,6 +17156,7 @@ detail-doge-education-wick:
     doge_base: true
     path: "/agencies/education"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Education
 cfpb-jordan-wick:
@@ -16697,6 +17211,7 @@ cfpb-jordan-wick:
     reporting_notes:
     path: "/people#jordan-wick"
     comment:
+    obj_type: Person
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -16713,8 +17228,9 @@ cfpb-jordan-wick:
       to be overturned by the same judge. Today, the CFPB is still alive, but in a precarious limbo that might make months or year to resolve.
     blurb_date: '2025-05-12'
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/cfpb"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - CFPB
 detail-cfpb-fcc-wick:
@@ -16769,6 +17285,7 @@ detail-cfpb-fcc-wick:
     reporting_notes:
     path: "/people#jordan-wick"
     comment:
+    obj_type: Person
   agency:
     id: FCC
     name: Federal Communications Commission
@@ -16780,6 +17297,7 @@ detail-cfpb-fcc-wick:
     doge_base: true
     path: "/agencies/independent"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - FCC
 joanna-wischer-opm:
@@ -16834,6 +17352,7 @@ joanna-wischer-opm:
     reporting_notes:
     path: "/people#joanna-wischer"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -16843,8 +17362,9 @@ joanna-wischer-opm:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 irs-wunderly:
@@ -16899,6 +17419,7 @@ irs-wunderly:
     reporting_notes:
     path: "/people#ryan-wunderly"
     comment:
+    obj_type: Person
   agency:
     id: Treasury
     name: Department of the Treasury
@@ -16908,8 +17429,9 @@ irs-wunderly:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agenciestreasury"
+    path: "/agencies#treasury"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Treasury
 opm-chris-young:
@@ -16964,6 +17486,7 @@ opm-chris-young:
     reporting_notes:
     path: "/people#chris-young"
     comment:
+    obj_type: Person
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -16973,8 +17496,9 @@ opm-chris-young:
     blurb:
     blurb_date:
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/opm"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 detail-opm-cfpb-chris-young:
@@ -17029,6 +17553,7 @@ detail-opm-cfpb-chris-young:
     reporting_notes:
     path: "/people#chris-young"
     comment:
+    obj_type: Person
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -17045,8 +17570,9 @@ detail-opm-cfpb-chris-young:
       to be overturned by the same judge. Today, the CFPB is still alive, but in a precarious limbo that might make months or year to resolve.
     blurb_date: '2025-05-12'
     doge_base: true
-    path: "/agencies/self"
+    path: "/agencies/cfpb"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - CFPB
 detail-peace-corps-youngs:
@@ -17101,6 +17627,7 @@ detail-peace-corps-youngs:
     reporting_notes:
     path: "/people#bridget-youngs"
     comment:
+    obj_type: Person
   agency:
     id: Peace
     name: Peace Corps
@@ -17110,8 +17637,9 @@ detail-peace-corps-youngs:
     blurb:
     blurb_date:
     doge_base: false
-    path: "/agenciespeace-corps"
+    path: "/agencies#peace-corps"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - Peace
 ssa-employee-11:
@@ -17164,6 +17692,7 @@ ssa-employee-11:
       - Started as a paid staffer at SSA on 2025-03-16
       - Has 10 years of software development experience in geospatial software
       - Unclear if this matches the DOGE people we know
+    obj_type: Alias
   agency:
     id: SSA
     name: Social Security Administration
@@ -17175,6 +17704,7 @@ ssa-employee-11:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 ssa-employee-5:
@@ -17223,6 +17753,7 @@ ssa-employee-5:
     evidence: |-
       - Onboarded as a volunteer on 2025-02-18 as a detail from the DOGE service
       - Flick testimony - SSA began onboarding and training Employee 5, an engineer, detailed from the United States DOGE Service to SSA" with an inter-agency agreement to DOGE.
+    obj_type: Alias
   agency:
     id: SSA
     name: Social Security Administration
@@ -17234,6 +17765,7 @@ ssa-employee-5:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 detail-opm-ssa-8:
@@ -17280,6 +17812,7 @@ detail-opm-ssa-8:
     agency_id: SSA
     name:
     evidence: "- All I have tor this one is a signed SF-61. They are an employee of SSA"
+    obj_type: Alias
   agency:
     id: SSA
     name: Social Security Administration
@@ -17291,5 +17824,6 @@ detail-opm-ssa-8:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA

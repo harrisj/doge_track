@@ -37,8 +37,9 @@ def positions_for_output(positions)
       out['from_agency'] =
         { agency_id: x.from_agency.id, name: x.from_agency.name, short_name: x.from_agency.short_name }
     end
-    out['person'] = x.person.to_hash unless x.person.nil?
-    out['alias'] = x.doge_alias.to_hash unless x.doge_alias.nil?
+    out['person'] = x.person.to_hash.merge(obj_type: 'Person') unless x.person.nil?
+    out['alias'] = x.doge_alias.to_hash.merge(obj_type: 'Alias') unless x.doge_alias.nil?
+    out['obj_type'] = 'Position'
     out
   end
 end
@@ -46,13 +47,14 @@ end
 def generate_agencies_yaml
   out_file = File.join(DATA_DIR, 'agencies.yml')
   agencies = Agency.eager(positions: :person, system_roles: :govt_system,
-                          events: %i[people agencies]).where(parent_id: nil).map do |agency|
+                          events: %i[people agencies]).map do |agency|
     out = agency.to_hash
     agency['children'] = agency.children.map(&:to_hash)
 
     out['positions'] = positions_for_output(agency.all_positions)
     out['events'] = events_for_output(agency.all_events)
     out['system_access'] = agency.all_system_roles.map(&:to_hash)
+    out['obj_type'] = 'Agency'
     out
   end
 
@@ -129,6 +131,7 @@ def generate_people_yaml
     rec['positions'] = p.positions.sort_by(&:sort_date).map(&:to_hash)
     rec['events'] = events_for_output(p.events)
     rec['system_access'] = p.system_roles.map(&:to_hash)
+    rec['obj_type'] = 'Person'
 
     if p.positions.any?
       pos = p.positions.first
@@ -155,9 +158,9 @@ def generate_positions_yaml
   Position.eager(:person, :doge_alias, :agency).map do |position|
     key = position.id
     out[key] = position.to_hash
-    out[key][:person] = position.person.to_hash if position.person
-    out[key][:alias] = position.doge_alias.to_hash if position.doge_alias
-    out[key][:agency] = position.agency.to_hash
+    out[key][:person] = position.person.to_hash.merge(obj_type: 'Person') if position.person
+    out[key][:alias] = position.doge_alias.to_hash.merge(obj_type: 'Alias') if position.doge_alias
+    out[key][:agency] = position.agency.to_hash.merge(obj_type: 'Agency')
     out[key][:agency_ids] = [position.agency.id, position.agency.parent_id].compact
   end
 
@@ -173,7 +176,7 @@ def generate_events_yaml
   out_events = events.map do |e|
     out = e.to_hash
     out['people'] = e.people.map(&:to_hash)
-    out['agencies'] = e.agencies.map(&:to_hash)
+    out['agency_ids'] = e.agencies.map(&:id)
     out['aliases'] = e.doge_aliases.map(&:to_hash)
 
     out['names_aliases'] = e.people.map { |p| { name: p.name, slug: p.slug, sort_name: p.sort_name } }
@@ -192,9 +195,10 @@ def generate_events_yaml
     end
     out['names'] = out['names'].sort_by { |x| x['sort_name'] } if out.key? 'names'
 
-    agency_ids = e.agencies.map(&:id).uniq
-    parent_ids = e.agencies.map(&:parent_id).uniq
-    out['agency_ids'] = (agency_ids + parent_ids).uniq
+    agency_ids = e.agencies.map(&:id)
+    parent_ids = e.agencies.map(&:parent_id)
+    out['agencies_parents'] = (agency_ids + parent_ids).uniq.compact
+    out['obj_type'] = 'Event'
 
     out
   end

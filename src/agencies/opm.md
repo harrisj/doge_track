@@ -1,4 +1,6 @@
 ---
 agency_id: OPM
+title: Office of Personnel Management
+template_engine: serbea
 ---
-{% render "page_agency", id: data.agency_id, site: site %}
+{%@ "agency_page_generic", id: data.agency_id %}

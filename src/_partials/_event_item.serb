@@ -1,5 +1,6 @@
 {% import "macros" %}
 
+{% raise "Not passed an event for event_icon: #{event.inspect}" unless event.obj_type == 'Event' %}
 <article class="media mb-1">
   <div class="media-left mr-2">
     <span class="icon is-small">
@@ -13,7 +14,7 @@
         <div class="ml-2 is-size-5">{{ event.date }}</div>
         <div class="icon-text is-align-items-center ml-2">
           <span class="icon is-small"><i class="fas fa-building"></i></span>
-          {{ event.agencies | agency_links }}
+          {{ event.agency_ids | agencies | agency_links }}
         </div>
         {% if event.source_name %}
           <div class="icon-text is-align-items-center ml-1">

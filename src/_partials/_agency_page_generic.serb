@@ -1,0 +1,21 @@
+{% import 'macros' %}
+
+{% agency = find_agency(id) %}
+
+{%@ "agency_title", agency: agency %}
+
+{%@ "blurb", text: agency.blurb %} 
+
+{% agency_positions = agency.positions %}
+
+{% if agency_positions.any? %}
+<h2 class="title is-3">People</h2>
+{%@ 'agency_positions_table', positions: agency_positions %}
+{% end %}
+
+{% agency_events = site.data.events.find_all {|e| e.agencies_parents.include? agency.id } %}
+
+{% if agency_events.any? %}
+<h2 class="title is-3">Events</h2>
+{%@ 'event_timeline', events: agency_events %}
+{% end %}

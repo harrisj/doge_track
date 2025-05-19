@@ -36,10 +36,12 @@ end
 def path_for_agency(agency_hash)
   if agency_hash[:page_slug] == 'none'
     nil
+  elsif agency_hash[:page_slug] == 'self'
+    "/agencies/#{agency_hash[:slug]}"
   elsif agency_hash[:page_slug]
     "/agencies/#{agency_hash[:page_slug]}"
   else
-    "/agencies#{agency_hash[:slug]}"
+    "/agencies##{agency_hash[:slug]}"
   end
 end
 
