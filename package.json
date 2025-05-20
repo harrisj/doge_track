@@ -8,6 +8,7 @@
     "heroku-postbuild": "bin/bridgetown deploy"
   },
   "devDependencies": {
+    "daisyui": "^5.0.35",
     "esbuild": "^0.19.2",
     "glob": "^10.3.3",
     "postcss": "^8.4.25",
@@ -15,13 +16,13 @@
     "postcss-import": "^15.1.0",
     "postcss-load-config": "^4.0.1",
     "postcss-preset-env": "^9.0.0",
-    "read-cache": "^1.0.0",
-    "tailwindcss": "^4.1.7"
+    "read-cache": "^1.0.0"
   },
   "dependencies": {
     "@fontsource-variable/readex-pro": "^5.0.8",
     "@hotwired/turbo": "^7.3.0",
+    "@tailwindcss/postcss": "^4.1.7",
     "@tailwindcss/typography": "^0.5.9",
-    "daisyui": "^3.1.0"
+    "tailwindcss": "^4.1.7"
   }
 }

@@ -1,7 +1,7 @@
-{%  assign agency_positions = agency.positions | where: 'agency_id', agency.id %}
-{%  assign children_positions = agency.positions | reject: 'agency_id', agency.id | group_by: 'name' %}
+{% assign agency_positions = agency.positions | where: 'agency_id', agency.id %}
+{% assign children_positions = agency.positions | reject: 'agency_id', agency.id | group_by: 'name' %}
 
-<table class="table is-size-6">
+<table class="table table-md">
   <thead>
     <tr>
       {% if agency_column %}
@@ -18,14 +18,21 @@
     {% for pos in agency.positions %}
       <tr>
         {% if agency_column %}
-          <th><abbr title="{{ pos.agency.name }}">{{ pos.agency.short_name }}</abbr></th>
+          <th>
+            <abbr title="{{ pos.agency.name }}">{{ pos.agency.short_name }}</abbr>
+          </th>
           <td>{{ pos.person.name }}</td>
-        {%  else %}
+        {% else %}
           <th>{{ pos.person.name }}</th>
         {% endif %}
         <td>{{ pos.start_date }}</td>
         <td>{{ pos.end_date }}</td>
-        <td>{{ pos.type }}{% if pos.from_agency != blank %} from <a href="/agencies/{{ pos.from_agency.slug }}">{{ pos.from_agency.short_name }}</a>{% endif %}</td>
+        <td>
+          {{ pos.type -}}
+          {%- if pos.from_agency != blank %}
+            from <a href="/agencies/{{ pos.from_agency.slug }}">{{ pos.from_agency.short_name }}</a>
+          {%- endif %}
+        </td>
         <td>{{ pos.title }}</td>
       </tr>
     {% endfor %}

@@ -3,14 +3,13 @@
 @import "jit-refresh.css"; /* triggers frontend rebuilds */
 
 /* Google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap')
+layer(base);
+
+@import 'tailwindcss';
+@plugin "daisyui";
 
 @config "../../tailwind.config.js";
-
-/* Set up Tailwind imports */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @layer base {
   :root {
@@ -22,7 +21,12 @@
   }
 
   html, body {
-    overflow-x: none;
+    font-family: "Raleway", system-ui, sans-serif;
+    /* overflow-x: none; */
+  }
+
+  h1 {
+    font-family: "Special Elite", serif;
   }
 
   code * {
@@ -37,9 +41,9 @@
 }
 
 @layer components {
-  .text-light {
+  /* .text-light {
     @apply text-base-content text-opacity-75;
-  }
+  } */
 
   .h1 {
     @apply text-2xl md:text-3xl;
@@ -108,3 +112,8 @@
 *::-webkit-scrollbar-thumb {
   @apply rounded bg-base-100 border;
 }
+
+
+/* Set up Tailwind imports */
+
+

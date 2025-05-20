@@ -10,12 +10,10 @@ import * as Turbo from "@hotwired/turbo"
 //
 import "./turbo_transitions.js"
 
-import "https://kit.fontawesome.com/7511933f33.js"
-
 // Import all JavaScript & CSS files from src/_components
 import components from "$components/**/*.{js,jsx,js.rb,css}"
 
-import "@fontsource-variable/readex-pro"
+// import "@fontsource-variable/readex-pro"
 // import "@fontsource-variable/fira-code"
 
 console.info("Bridgetown is loaded!")
