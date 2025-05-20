@@ -4,34 +4,36 @@
 
 {%@ "agency_title", agency: agency %}
 
-<div class="tabs tabs-border">
-  <input type="radio" name="generic_tabs" class="tab" aria-label="Info" checked="checked" />
-  <div class="tab-content bg-base-100">
-{%@ "blurb", text: agency.blurb %} 
-  </div>
+{% about_tab = capture do %}
+## About
 
-<input type="radio" name="generic_tabs" class="tab" aria-label="People" />
-<div class="tab-content bg-base-100">
+{{ blurb | markdownify }}
+{% end %}
+
+{% people_tab = capture do %}
+## People
+
 {% agency_positions = agency.positions %}
 
 {% if agency_positions.any? %}
 {%@ 'agency_positions_table', positions: agency_positions %}
 {% end %}
-</div>
+{% end %}
 
-<input type="radio" name="generic_tabs" class="tab" aria-label="Events" />
-<div class="tab-content  bg-base-100">
+{% events_tab = capture do %}
+## Events
+
 {% agency_events = site.data.events.find_all {|e| e.agencies_parents.include? agency.id } %}
 
 {% if agency_events.any? %}
 {%@ 'event_timeline', events: agency_events %}
 {% end %}  
-</div>
+{% end %}
 
-<input type="radio" name="generic_tabs" class="tab" aria-label="Systems" />
-<div class="tab-content bg-base-100">
+{% systems_tab = capture do %}
 Systems info will go here.
-</div>
-</div>
+{% end %}
+
+{%@ 'tabs', tabs: {"About": about_tab, "People": people_tab, "Events": events_tab, "Systems": systems_tab} %}
 
 

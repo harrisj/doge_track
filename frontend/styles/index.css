@@ -25,6 +25,10 @@ layer(base);
     /* overflow-x: none; */
   }
 
+  .font-title {
+    font-family: "Special Elite", serif;
+  }
+
   h1 {
     font-family: "Special Elite", serif;
   }
@@ -72,8 +76,12 @@ layer(base);
   body {
     @apply font-sans;
     @apply text-base-content;
-    @apply bg-base-300;
   }
+}
+
+.link {
+  text-decoration: none;
+  @apply hover:underline;
 }
 
 .prose div.highlight {

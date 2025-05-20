@@ -1,7 +1,5 @@
-{% events.each_with_index do |event, index| %}
-  {% if index > 0 %}
-  <div class="divider"></div>
-  {% end %}
-  
+<ul class="list">
+{% events.each do |event| %}
   {%@ 'event_item', event: event %}
 {% end %}
+</ul>

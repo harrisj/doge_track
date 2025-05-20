@@ -2,4 +2,8 @@
 agency_id: GSA
 template_engine: serbea
 ---
+{% blurb = capture do %}
+Once a relatively obscure agency that provided shared services and procurement services for the government, GSA became an integral part of DOGE's early-phase plans for taking over parts of the federal bureaucracy precisely for those reasons. From the very first day of the Trump presidency, DOGE established a sizable team at GSA. Some of these were focused on drastic cost-reduction efforts like cancelling government leases or unilaterally dropping the purchasing limit of government purchase cards to curtail micro-purchases by government staff. GSA was also the base for many of DOGE's wrecking crews that were detailed to other agencies, with agency leadership quickly creating a walled-off enclave protected by security guards exclusively for the use of DOGE staff with "A-level access."
+{% end %}
+
 {%@ "agency_page_generic", id: data.agency_id %}

@@ -1,11 +1,14 @@
+# frozen_string_literal: true
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.metadata.title }}, {{ site.metadata.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.metadata.myvariable }}.
-
-title: Your awesome title
-tagline: This site is totally awesome
-email: your-email@example.com
-description: >-
-  Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+{
+  title: 'DOGE Track',
+  tagline: 'Tracking The Damage',
+  email: 'mail@jacobharr.is',
+  description: 'A website tracking the various activities of the DOGE wrecking crew across government. Sunlight is the best disinfectant!',
+  generated: Time.now
+}

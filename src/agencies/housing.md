@@ -1,0 +1,10 @@
+---
+agency_id: DHS
+title: Housing and Urban Development
+template_engine: serbea
+---
+{% blurb = capture do %}
+DOGE's involvement at HUD has ostensibly been focused on fraud and waste rather than IT modernization. At the start, the DOGE staff at the agency focused on cancelling contracts, especially if it could find opportunities to eliminate those focused on DEI or other initiatives to restore equity. There have also been efforts to use highly sensitive HUD databases as a way to get access to extremely private information such as the income and wages of every American, when earlier attempts to retrieve such information at Social Security and the IRS ran into legal opposition. DOGE claims this is needed for the administration's anti-immigration efforts, but it's not hard to imagine many other shady scenarios for this data. Around the middle of April, DOGE added a third staffer at the agency who is piloting effort to use a Large Language Model (LLM) to identify housing regulations to repeal.
+{% end %}
+
+{%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}

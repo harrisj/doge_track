@@ -1,5 +1,6 @@
-<h1 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white">{{ agency.name }}</h1>
-
+<h1 class="text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white">{{ agency.name }}</h1>
 {% if agency.children.any? %}
-<h2 class="subtitle">subagencies: {{ agency.children | map: ->(a) { a.short_name } | sort | join: ", " }}</h2>
+<h2 class="text-l md:text-xl lg:text-2xl dark:text-white font-title">subagencies: {{ agency.children | map: ->(a) { a.short_name } | sort | join: ", " }}</h2>
 {% end %}
+
+<br/>

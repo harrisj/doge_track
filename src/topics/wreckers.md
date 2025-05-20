@@ -7,6 +7,7 @@ template_engine: serbea
 
 {% all_wreckers = site.data.people.select {|p| p.category == 'wrecker' } %}
 
+{% intro_tab = capture do %}
 From the start, DOGE has moved aggressively across the federal government to shutter agencies, cancel spending and seize data for itself. To do this, they have relied on a specific type of person that I call "Wreckers" - usually young and male, from a technical background, willing to do whatever it takes to get the job done quickly. Scratch the surface of any horror story about DOGE's conduct and you'll usually find a wrecker at the core.
 
 ## The DOGE Teams
@@ -22,7 +23,7 @@ In this executive order, the DOGE teams were simply tasked with the vague goal o
 Rather than hiring staff at specific agencies, DOGE has exploited a mechanism for sharing staff from one agency to another as the means to place its teams within multiple agencies quickly. Known as a "detail," this interagency transfer is formally defined through a legal document called a Memorandum of Understanding (MOU) which lays out the conditions of the detail assignment:
 
 - The start date and not-to-exceed (NTE) date for the detailing arrangement
-- The names or just what type of staffers are being detailed<
+- The names or just what type of staffers are being detailed
 - Who will be managing them in the host agency
 - If the host agency will be reimbursing the lending agency for their labor
 - Signatories for both agencies agreeing to the detail arrangement
@@ -30,7 +31,9 @@ Rather than hiring staff at specific agencies, DOGE has exploited a mechanism fo
 Detailing arrangements are relatively common in the government and can be a highly convenient way to reallocate resources or share knowledge across multiple agencies. They also are how the US Digital Service would embed its own staff within agencies, and DOGE simply appropriated that mechanism for its own ends. What DOGE has done that is unusual is to detail staff to many different agencies simultaneously, with staff sometimes juggling 5 or more simultaneous detailing assignments. For instance, sources described Gavin Kliger pulling 5 laptops out of his bag (one for each agency he was detailed to) when at an early meeting with the IRS. This is very much not normal, and it is likely that DOGE took this approach to both spread out its limited staff and cover its tracks.
 
 There are still many details we don't know about DOGE's details (*sorry, I had to do it!*). Some of the relevant MOUs have been made public through FOIA or court filings, but many of the detailing arrangements listed below are inferred rather than verified. We also don't yet know if serial details were also done from the home base or if an agency could detail its detailees onwards to other agencies. Also, while many details were not reimbursed, there are some cases where the host agency would pay for the DOGE staffer for reasons that aren't necessarily clear. Team selection is also a black box. Of course, there will be answers to many of these questions in time, but for now we have to make sense the best we can of a deliberately murky situation.
+{% end %}
 
+{% bases_tab = capture do %}
 ## Home Bases
 
 For reasons that aren't entirely clear, DOGE chose to distribute its staff across three different starting agencies as home bases rather than basing them entirely out of USDS/DOGE and detailing them from there. One possibility is that DOGE staff were involved with early work to seize control of centralized services and databases at both the GSA and OPM, so it made sense to start them there. One of the first moves of DOGE at both GSA and OPM was to create guarded and sealed enclaves where they could work and even live in, away from scrutiny. Perhaps, it simply was a matter of the DOGE headquarters at the Eisenhower Executive Office Building not being large enough to install sofas and bunks for all.
@@ -59,13 +62,15 @@ The {{ agency_link("GSA", "General Service Administration") }} is an agency that
 
 {% gsa_wreckers = all_wreckers.select {|w| w.start_agency == "GSA" } %}
 {%@ "wrecker_table", wreckers: gsa_wreckers %}
+{% end %}
 
-### Other Agencies
+{% other_tab = capture do %}
+## Other Agencies
 
 There are also a fair number of Wreckers who started at other agencies, possibly because agency policy or practices might have made it difficult to detail someone from elsewhere. Or, there might have been explicit direction from agency leadership to hire staff there. For instance, there were four Wreckers hired directly from SpaceX to work at the FAA for the short-term on the direction of the Department of Transportation head, Sean Duffy. Some of these names might also be reclassified if I am able to determine they started at GSA or OPM and were actually detailed to the agency listed below.
 
 {% other_wreckers = all_wreckers.reject {|x| ["GSA", "OPM", "DOGE"].include? x.start_agency }.sort_by {|x| [x.start_agency, x.sort_date]} %}
-<table class="table is-size-5">
+<table class="table table-sm lg:table-md">
   <thead>
     <tr>
       <th>Name</th>
@@ -91,4 +96,6 @@ There are also a fair number of Wreckers who started at other agencies, possibly
   {% end %}
   </tbody>
 </table>
+{% end %}
 
+{%@ "tabs", tabs: {"Intro": intro_tab, "Home Bases": bases_tab, "Other Agencies": other_tab} %}
