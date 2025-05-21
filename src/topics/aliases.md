@@ -11,8 +11,6 @@ In several examples, public documents obtained through FOIA and as exhibits in c
 
 {% aliases = site.data.aliases.sort_by(&:id).group_by(&:agency_id) %}
 
-raise(aliases.inspect)
-
 {% aliases.each do |group| %}
   {% agency_id = group[0] %}
   {% agency = find_agency(agency_id) %}

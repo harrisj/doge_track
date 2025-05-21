@@ -2,15 +2,68 @@
 layout: page
 title: Enablers
 ---
+{% import "macros" %}
 {%@ "title", title: "The Enablers" %}
 
+{%@ 'text' do %}
 ## Acting Leadership
 
-{% acting = site.data.positions.values.select { |p| p.title =~ /acting/i } %}
-{{ acting | inspect }}
+{% acting = site.data.positions.values.select { |p| p.title =~ /acting/i }.sort_by(&:sort_date) %}
+
+<table class="table table-md">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Agency</th>
+    <th>Date Appointed</th>
+    <th>Salary</th>
+    <th>Access Granted</th>
+  </tr>
+</thead>
+<tbody>
+{% acting.each do |pos| %}
+  <tr>
+    <td>{{ person_link(pos.name) }}</td>
+    <td>{{ agency_link(pos.agency_id)}}</td>
+    <td>{{ pos.start_date }}</td>
+    <td></td>
+    <td></td>
+  </tr>
+{% end %}
+</tbody>
+</table>
 
 ## Chief Information Officers
 
 {% cios = site.data.positions.values.select {|p| p.title == "Chief Information Officer" } %}
-{{ cios | inspect }}
+<table class="table table-md">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Agency</th>
+    <th>Date Appointed</th>
+    <th>Salary</th>
+    <th>Access Granted</th>
+  </tr>
+</thead>
+<tbody>
+{% cios.each do |pos| %}
+  <tr>
+    <td>{{ person_link(pos.name) }}</td>
+    <td>{{ agency_link(pos.agency_id)}}</td>
+    <td>{{ pos.start_date }}</td>
+    <td></td>
+    <td></td>
+  </tr>
+{% end %}
+</tbody>
+</table>
 
+Developing software for the federal government is different in many ways from the startup world. For instance, Privacy Act regulations have explicitly prohibited connecting systems together precisely because the American public doesn't want [a government panopticon system that gives insiders a "God" view of the public](https://www.wired.com/story/doge-collecting-immigrant-data-surveil-track/). While an agency's Privacy Office and Chief Counsel will often determine what information sharing is legally allowed, the agency's Chief Information Officer (CIO) usually oversees the technical mechanisms which ensure that compliance. Furthermore, the CIO is primarily responsible for tracking IT budgets and contracts, which makes them a tempting target to support DOGE's mission of centralizing and controlling all spending and procurement at federal agencies. CIOs are often able to order elevated access for DOGE staff with minimal oversight, making them crucial to the work that wrecker teams do. Finally, CIOs have the ability to issue Risk Acceptance Memos (RAMs) whereby they will personally accept the risk for nonstandard technologies and bypassing normal compliance processes. These "get out of jail free" cards have been used successfully in the past to right IT projects that have gone off course, but they also are easily prone to abuse in the wrong hands.
+
+So, it;s no surprises that DOGE's work started with replacing CIOs in some key agencies with people sympathetic to DOGE's aggressive actions and world view. As a particularly potent example oh ho, two DOGE staffers - {{ person_link('Marko Elez') }} and {{ person_link('Aram Moghaddassi') }} - at the Department of Labor were granted access to a highly-sensitive data system belonging to the Office of the Inspector General. This system contained sensitive data from Unemployment Insurance claims that DOGE wanted to scrape to use in anti-immigration efforts. Normally, such access would be out of the question, but an Executive Order issued on March 20 demanding widespread data access for DOGE explicitly declared that
+
+> the Secretary of Labor and the Secretary's designees shall receive, to the maximum extent consistent with law, unfettered access to all unemployment data and related payment records, including all such data and records currently available to the Department of Labor's Office of Inspector General.
+
+Despite the order here, this data was still considered so highly sensitive that DOL counsel determined that access would need to be explicitly granted by the agency CIO. Conveniently enough, the agency had just appointed a brand new CIO a week before. His name? {{ person_link('Thomas Shedd') }}.
+{% end %}

@@ -1,5 +1,0 @@
-<h1 class="title is-family-secondary is-size-2">{{ agency.name }}</h1>
-
-{% if agency.children != blank %}
-<h2 class="subtitle is-family-secondary is-5">subagencies: {{ agency.children | map: "short_name" | sort | join: ", " }}</h2>
-{% endif %}
