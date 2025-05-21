@@ -79,11 +79,6 @@ layer(base);
   }
 }
 
-.link {
-  text-decoration: none;
-  @apply hover:underline;
-}
-
 .prose div.highlight {
   @apply rounded-lg shadow-xl;
 }

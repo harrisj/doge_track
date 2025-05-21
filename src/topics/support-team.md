@@ -1,11 +1,12 @@
 ---
 layout: 'page'
 ---
-{% render "page_title", title: "The Support Team" %}
+{% import 'macros' %}
+{%@ "title", title: "The Support Team" %}
 
-If we can think of the [Wreckers]({% link topics/wreckers.md %}) as the offense for DOGE, there are a large number of staff that support their operations. The main group is at OPM
+If we can think of the [Wreckers]({{% link "topics/wreckers.md" }}) as the offense for DOGE, there are a large number of staff that support their operations. The main group is at OPM
 
-{% find support_team where site.data.people, category == 'support' %}
+{% support_team = site.data.people.select { |c| c.category == 'support'}.sort_by(&:sort_date) %}
 <table class="table is-size-5">
   <thead>
     <tr>
@@ -17,18 +18,17 @@ If we can think of the [Wreckers]({% link topics/wreckers.md %}) as the offense 
     </tr>
   </thead>
   <tbody>
-  {% assign support_iter = support_team | sort: "sort_date"  %}
-  {% for person in support_iter  %}
-    {% find pos in person.positions, type == 'appointed' %}
-    {% if pos != blank %}
+  {% support_team.each do | person|  %}
+    {% pos = person.positions.find {|x| x.type == 'appointed'} %}
+    {% if pos %}
     <tr>
-      <td>{% person_link person.name %}</td>
+      <td>{% person_link(person) %}</td>
       <td>{{ person.age }}</td>
-      <td>{% agency_link pos.agency_id %}</td>
-      <td>{% edtf person.start_date %}</td>
+      <td>{% agency_link(pos.agency_id) %}</td>
+      <td>{% person.start_date %}</td>
       <td>{{ pos.title }}</td>
     </tr>
-  {% endif %}
-  {% endfor %}
+  {% end %}
+  {% end %}
   </tbody>
 </table>
