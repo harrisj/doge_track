@@ -6,6 +6,10 @@ title: Enablers
 {%@ "title", title: "The Enablers" %}
 
 {%@ 'text' do %}
+
+TKTK Inside men
+
+
 ## Acting Leadership
 
 {% acting = site.data.positions.values.select { |p| p.title =~ /acting/i }.sort_by(&:sort_date) %}
