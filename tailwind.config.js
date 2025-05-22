@@ -11,9 +11,5 @@ module.exports = {
     require("@tailwindcss/typography"),
   ],
   theme: {
-    container: {
-      center: true,
-      padding: '3rem',
-    },
   },
 }

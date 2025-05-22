@@ -7,7 +7,9 @@
   background: lawyer
   category: support
   own_page: false
-  blurb:
+  blurb: >-
+    Apart from his identification in a few Politico articles naming him as DOGE's lawyer at the Department of Transportation, Daniel Abrahamson has kept
+    a relatively low profile.
   reporting_notes:
   path: "/people#daniel-abrahamson"
   comment:
@@ -48,8 +50,9 @@
     source: https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2025/03/26/doge-assembles-a-legal-army-00251903
     reimbursed:
     reimbursement_amount:
-    comment: Date unnkown but before 3/26
+    comment:
     qualifications:
+    table_note: Exact date unknown but before 3/26
     documents:
   events:
   - id: avfnFBSY
@@ -119,7 +122,9 @@
   background: lawyer
   category: support
   own_page: false
-  blurb:
+  blurb: >-
+    Identified as one of DOGE's growing army of lawyers, Justin Aimonetti has most recently been involved in DOGE's shutdown efforts against small independent
+    agencies like the Corporation for Public Broadcasting.
   reporting_notes:
   path: "/people#justin-aimonetti"
   comment:
@@ -162,6 +167,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note: Start date only reported as "some point in February"
     documents:
   events:
   - id: C9H7QGC5
@@ -412,126 +418,14 @@
   background: finance
   category: booster
   own_page: false
-  blurb:
+  blurb: >-
+    Baris Akis was a booster for DOGE before it even formally existed, and he has been linked to its activities at the IRS, Treasury and OPM by the _New
+    York Times_. However, there have been no explicit details about his involvement and actions for DOGE yet.
   reporting_notes:
   path: "/people#baris-akis"
   comment:
   table_note:
-  positions:
-  - id: irs-akis
-    type: unknown
-    agency_id: IRS
-    name: Baris Akis
-    doge_alias_id:
-    from_agency_id:
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2026-07-04'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but mentioned in NYT roundup
-    qualifications:
-    documents:
-  - id: opm-akis
-    type: unknown
-    agency_id: OPM
-    name: Baris Akis
-    doge_alias_id:
-    from_agency_id:
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2026-07-04'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but mentioned in NYT roundup
-    qualifications:
-    documents:
-  - id: treasury-akis
-    type: unknown
-    agency_id: Treasury
-    name: Baris Akis
-    doge_alias_id:
-    from_agency_id:
-    start_date:
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2026-07-04'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    reimbursed:
-    reimbursement_amount:
-    comment: No details, but mentioned in NYT roundup
-    qualifications:
-    documents:
+  positions: []
   events:
   - id: 8vDj2q7P
     type: directory
@@ -682,9 +576,7 @@
     aliases: []
   system_access: []
   obj_type: Person
-  start_date:
-  sort_date: '2026-07-04'
-  start_agency: IRS
+  sort_date: '2025-01-20'
 - name: Jacob Altik
   sort_name: Altik
   slug: jacob-altik
@@ -722,7 +614,7 @@
     description: Provisional Appt NTE
     fuzz:
     appt_type_code: 44
-    appt_type: Schedule C (Except NonPerm)
+    appt_type: Schedule C
     pay_grade: GS-15
     salary:
     pd_code: PMGS31263
@@ -736,6 +628,7 @@
     reimbursement_amount:
     comment: Sourced from FOIA documents
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions
   - id: detail-opm-usadf-altik
     type: detailed
@@ -774,6 +667,7 @@
     reimbursement_amount:
     comment: Assuming detailed from OPM
     qualifications:
+    table_note: Detail assumed to be from OPM
     documents:
   - id: detail-opm-fcc-altik
     type: detailed
@@ -812,6 +706,7 @@
     reimbursement_amount:
     comment: Assuming he has been detailed from OPM
     qualifications:
+    table_note: Detail assumed to be from OPM
     documents:
   events:
   - id: 58t4DLaO
@@ -1429,7 +1324,9 @@
   background: executive
   category: booster
   own_page: false
-  blurb:
+  blurb: >-
+    According to early reports, Marc Andreesen's only direct involvement with DOGE was interviewing potential candidates at Mar-a-Lago in December 2024.
+    However, he continues to be a strident booster of the effort.
   reporting_notes:
   path: "/people#mark-andreesen"
   comment:
@@ -1664,6 +1561,7 @@
     reimbursement_amount:
     comment: From FOIA documents
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions
   - id: detail-opm-fdic-armstrong
     type: detailed
@@ -1702,6 +1600,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: detail-opm-dhs-armstrong
     type: detailed
@@ -1740,6 +1639,7 @@
     reimbursement_amount:
     comment: Find more definitive info for DHS link
     qualifications:
+    table_note: DHS presence reported by _New York Times_
     documents:
   events:
   - id: 4F5kEan6
@@ -2018,6 +1918,7 @@
     reimbursement_amount:
     comment: No details, but identified in NYT roundup, claims in many other agencies
     qualifications:
+    table_note:
     documents:
   events: []
   system_access: []
@@ -2045,7 +1946,7 @@
     name: Sam Beyda
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-02-13~
+    start_date: 2025-02-(13)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -2055,7 +1956,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-13~
+    sort_date: 2025-02-(13)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -2076,6 +1977,7 @@
     reimbursement_amount:
     comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
     qualifications:
+    table_note:
     documents:
   events:
   - id: Laig7UCK
@@ -2116,8 +2018,8 @@
     aliases: []
   system_access: []
   obj_type: Person
-  start_date: 2025-02-13~
-  sort_date: 2025-02-13~
+  start_date: 2025-02-(13)~
+  sort_date: 2025-02-(13)~
   start_agency: DOL
 - name: Alexandra Beynon
   sort_name: Beynon
@@ -2139,7 +2041,7 @@
     name: Alexandra Beynon
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-02-04~
+    start_date: 2025-02-(04)~
     start_date_truth: guessed
     start_date_event:
     start_source:
@@ -2149,7 +2051,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-04~
+    sort_date: 2025-02-(04)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -2170,6 +2072,7 @@
     reimbursement_amount:
     comment: FIXME, find earliest details of arrival; is she GSA?
     qualifications:
+    table_note:
     documents:
   - id: detail-doge-education-alexandra-beynon
     type: detailed
@@ -2208,6 +2111,7 @@
     reimbursement_amount:
     comment: Details just provided in court testimony
     qualifications:
+    table_note:
     documents: doge-staff-education-20250407
   events:
   - id: 9GdCongC
@@ -2291,8 +2195,8 @@
     aliases: []
   system_access: []
   obj_type: Person
-  start_date: 2025-02-04~
-  sort_date: 2025-02-04~
+  start_date: 2025-02-(04)~
+  sort_date: 2025-02-(04)~
   start_agency: DOGE
 - name: Riccardo Biasini
   sort_name: Biasini
@@ -2345,6 +2249,7 @@
     reimbursement_amount:
     comment: I was able to confirm that OPM Employee 2 was Riccardo Biasini
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions onboard-opm-employee-2
   events:
   - id: 4F5kEan6
@@ -2709,6 +2614,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: akUHUm4h
@@ -2823,6 +2729,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions
   events:
   - id: JQXwpLN5
@@ -3034,6 +2941,7 @@
     reimbursement_amount:
     comment: I was able to confirm that OPM Employee 3 is Akash Bobba
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions onboard-opm-employee-3
   - id: detail-opm-education-akash-bobba
     type: detailed
@@ -3072,6 +2980,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents: detail-20250212-opm-education-ed-1
   - id: detail-opm-ssa-opm-3
     type: detailed
@@ -3110,6 +3019,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents: detail-20250212-opm-education-ed-1
   - id: ssa-employee-1
     type: appointed
@@ -3150,6 +3060,7 @@
     qualifications: >
       Hands-on software engineer that is an expert in modern computer programming languages, cloud and other infrastructure, AI, etc. 5 years of experience
       using numerous computer code languages, leadership of teams in technical, software design, and infrastructure areas.
+    table_note:
     documents: onboard-ssa-employee-1
   events:
   - id: 4F5kEan6
@@ -3718,6 +3629,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: C9H7QGC5
@@ -3929,6 +3841,45 @@
   comment:
   table_note:
   positions:
+  - id: detail-doge-ftc-bryant
+    type: detailed
+    agency_id: FTC
+    name: Emily Bryant
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: 2025-03-(28)~
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-03-(28)~
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.axios.com/pro/tech-policy/2025/04/04/doge-staffers-move-into-ftc-office
+    reimbursed:
+    reimbursement_amount:
+    comment: Title is not given, reported as starting "last week" from 2025-04-04
+    qualifications:
+    table_note:
+    documents:
   - id: gsa-bryant
     type: appointed
     agency_id: GSA
@@ -3966,44 +3917,7 @@
     reimbursement_amount:
     comment: No details, but NYT links to her to GSA, so assuming she started there
     qualifications:
-    documents:
-  - id: detail-doge-ftc-bryant
-    type: detailed
-    agency_id: FTC
-    name: Emily Bryant
-    doge_alias_id:
-    from_agency_id: GSA
-    start_date: 2025-03-28~
-    start_date_truth: reported
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-03-28~
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.axios.com/pro/tech-policy/2025/04/04/doge-staffers-move-into-ftc-office
-    reimbursed:
-    reimbursement_amount:
-    comment: Title is not given, reported as starting "last week" from 2025-04-04
-    qualifications:
+    table_note:
     documents:
   events:
   - id: GoJrDRSQ
@@ -4035,9 +3949,9 @@
     aliases: []
   system_access: []
   obj_type: Person
-  start_date:
-  sort_date: '2025-03-25'
-  start_agency: GSA
+  start_date: 2025-03-(28)~
+  sort_date: 2025-03-(28)~
+  start_agency: FTC
 - name: James Burnham
   sort_name: Burnham
   slug: james-burnham
@@ -4354,6 +4268,7 @@
     reimbursement_amount:
     comment: Introduces Frank Schuler on a video call at GSA in February; listed in ProPublica roundup on Feb 05; going to assume Monday start
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-usadf-cavanaugh
     type: detailed
@@ -4392,6 +4307,46 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
+    documents:
+  - id: detail-gsa-neh-cavanaugh
+    type: detailed
+    agency_id: NEH
+    name: Nate Cavanaugh
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: 2025-03-(13)~
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-03-(13)~
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
+    reimbursed:
+    reimbursement_amount:
+    comment: Guessing it's a detail
+    qualifications:
+    table_note:
     documents:
   - id: detail-gsa-usip-cavanaugh
     type: detailed
@@ -4430,44 +4385,7 @@
     reimbursement_amount:
     comment: Assuming this based on repors and where he is based. Becomes president of USIP next
     qualifications:
-    documents:
-  - id: detail-gsa-neh-cavanaugh
-    type: detailed
-    agency_id: NEH
-    name: Nate Cavanaugh
-    doge_alias_id:
-    from_agency_id: GSA
-    start_date: 2025-03-13~
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-03-13~
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
-    reimbursed:
-    reimbursement_amount:
-    comment: Guessing it's a detail
-    qualifications:
+    table_note:
     documents:
   - id: usip-cavanaugh-president
     type: appointed
@@ -4508,6 +4426,7 @@
       Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco Rubio and Pete Hegseth, and he is authorized to
       transfer all assets to the GSA
     qualifications:
+    table_note:
     documents:
   - id: imls-cavanaugh
     type: detailed
@@ -4546,6 +4465,7 @@
     reimbursement_amount:
     comment: DOGE put entire staff on admin leave and started cancelling grants, not many details
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-nlrb-cavanaugh
     type: detailed
@@ -4584,6 +4504,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-dfc-cavanaugh
     type: detailed
@@ -4622,6 +4543,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-exim-cavanaugh
     type: detailed
@@ -4660,6 +4582,7 @@
     reimbursement_amount:
     comment: Assuming detail is from GSA
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-mspb-cavanaugh
     type: detailed
@@ -4698,6 +4621,7 @@
     reimbursement_amount:
     comment: Email says detailing is from DOGE, but I assume it's from GSA
     qualifications:
+    table_note:
     documents:
   events:
   - id: j9cDuFZd
@@ -5730,6 +5654,7 @@
       CC'ed on an email 2025-02-20, by Gavin Kliger and has a USDS address. USDA administrator said on 2/14 that DOGE had been at the agency for several
       weeks
     qualifications:
+    table_note:
     documents:
   events:
   - id: 54bW5YhN
@@ -5817,6 +5742,7 @@
     reimbursement_amount:
     comment: Wired reports on a detailing agreement between DOGE and DOL, but that could be for Adam Ramada and crew
     qualifications:
+    table_note:
     documents:
   events:
   - id: j66RVh4p
@@ -6027,7 +5953,7 @@
   background:
   category: unknown
   own_page: false
-  blurb:
+  blurb: He has been identified as a DOGE member, but I have not been able to discover more details about his involvement yet.
   reporting_notes:
   path: "/people#george-cooper"
   comment:
@@ -6062,7 +5988,7 @@
     start_date_event:
     start_source:
     start_source_name:
-    end_date: 2025-05-06~
+    end_date: 2025-05-(06)~
     end_date_truth: inferred
     end_date_event:
     end_source:
@@ -6088,14 +6014,15 @@
     reimbursement_amount:
     comment: Likely earlier involvement, maybe when Gavin Kliger started there; ends when became CIO
     qualifications:
+    table_note:
     documents: gov.uscourts.nysd.636609.144.0
   - id: irs-corcos-cio
-    type: appointed
+    type: promotion
     agency_id: IRS
     name: Sam Corcos
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-05-06~
+    start_date: 2025-05-(06)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -6105,7 +6032,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-05-06~
+    sort_date: 2025-05-(06)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -6126,6 +6053,7 @@
     reimbursement_amount:
     comment: Date is approximate
     qualifications:
+    table_note:
     documents:
   events:
   - id: Np7Nfyaw
@@ -6261,7 +6189,9 @@
   background: coder
   category: wrecker
   own_page: false
-  blurb:
+  blurb: >-
+    Perhaps the most famous of the DOGE wreckers, Edward "Big Balls" Coristine achieved early attention for joining DOGE at the young age of 19. Hoever,
+    he has also accrued a large number of hits on his wrecking spree across the federal government.
   reporting_notes:
   path: "/people#edward-coristine"
   comment:
@@ -6273,7 +6203,7 @@
     name: Edward Coristine
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-01-20~
+    start_date: 2025-01-(20)~
     start_date_truth: inferred
     start_date_event:
     start_source:
@@ -6283,7 +6213,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-01-20~
+    sort_date: 2025-01-(20)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -6304,6 +6234,7 @@
     reimbursement_amount:
     comment: Several documents have Coristine detailing from GSA, so assuming home agency. Also, not in FOIA release from OPM
     qualifications:
+    table_note: Start date and agency inferred from reporting
     documents:
   - id: detail-gsa-opm-coristine
     type: detailed
@@ -6311,7 +6242,7 @@
     name: Edward Coristine
     doge_alias_id:
     from_agency_id: GSA
-    start_date: 2025-01-28~
+    start_date: 2025-01-(28)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -6321,7 +6252,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-01-28~
+    sort_date: 2025-01-(28)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -6342,6 +6273,7 @@
     reimbursement_amount:
     comment: Edward Coristine is not named, but identfied. Mentions he reportd to Scales
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-sba-coristine
     type: detailed
@@ -6380,6 +6312,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-dhs-coristine
     type: detailed
@@ -6418,6 +6351,7 @@
     reimbursement_amount:
     comment: Reported by the Post, I'm going to assume this predated the FEMA access
     qualifications:
+    table_note:
     documents:
   - id: internal-hhs-fema-edward-coristine
     type: internal
@@ -6456,6 +6390,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-usaid-coristine
     type: detailed
@@ -6494,6 +6429,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-state-coristine
     type: detailed
@@ -6532,6 +6468,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-cisa-coristine
     type: internal
@@ -6570,6 +6507,7 @@
     reimbursement_amount:
     comment: Likely assigned from DHS to here
     qualifications:
+    table_note:
     documents:
   - id: detail-doge-education-coristine
     type: detailed
@@ -6608,6 +6546,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents: doge-staff-education-20250407
   - id: detail-gsa-hhs-edward-coristine
     type: detailed
@@ -6646,6 +6585,7 @@
     reimbursement_amount:
     comment: No document provided, date reported in court filing
     qualifications:
+    table_note:
     documents:
   - id: internal-hhs-cms-coristine
     type: internal
@@ -6684,6 +6624,7 @@
     reimbursement_amount:
     comment: Granted access to CALM system on the same day as his detail to HHS
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-tsa-coristine
     type: internal
@@ -6722,6 +6663,7 @@
     reimbursement_amount:
     comment: No details, but in NYT roundup
     qualifications:
+    table_note: Listed by the _New York Times_ as being here
     documents:
   - id: internal-dhs-uscis-coristine
     type: internal
@@ -6760,6 +6702,7 @@
     reimbursement_amount:
     comment: No details, but in NYT roundup
     qualifications:
+    table_note:
     documents:
   events:
   - id: 3GL4CR65
@@ -7622,8 +7565,8 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment:
   obj_type: Person
-  start_date: 2025-01-20~
-  sort_date: 2025-01-20~
+  start_date: 2025-01-(20)~
+  sort_date: 2025-01-(20)~
   start_agency: GSA
 - name: Scott Coulter
   sort_name: Coulter
@@ -7631,9 +7574,11 @@
   page_slug:
   age: 40
   background: finance
-  category: wrecker
+  category: enabler
   own_page: false
-  blurb:
+  blurb: >-
+    Scott Coulter started his work for DOGE as a wrecker based in Social Security and detailed to NASA, but when Mile Russo was abruptly demoted as the
+    CIO for Social Security, Scott stepped up into the role.
   reporting_notes:
   path: "/people#scott-coulter"
   comment:
@@ -7676,6 +7621,7 @@
     reimbursement_amount: Up to $120,579
     comment: Followed by Employee 2 being appointed the CIO
     qualifications:
+    table_note:
     documents: detail-20250306-nasa-ssa-employee-2 onboard-ssa-employee-2
   - id: ssa-employee-2-cio
     type: appointed
@@ -7714,6 +7660,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents: onboard-ssa-employee-2
   events:
   - id: FP9n4cfD
@@ -8053,6 +8000,7 @@
     reimbursement_amount:
     comment: Sourced from a FOIA document
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions
   - id: detail-opm-usaid-cromer
     type: detailed
@@ -8091,6 +8039,7 @@
     reimbursement_amount:
     comment: Need to see if I can find any documentation linking him. NYT says he was involved.
     qualifications:
+    table_note:
     documents:
   - id: detail-opm-doj-cromer
     type: detailed
@@ -8129,6 +8078,7 @@
     reimbursement_amount:
     comment: Vindman in early March reports receiving contacts from Cromer at DOJ
     qualifications:
+    table_note:
     documents:
   events:
   - id: 6hBRdYWA
@@ -8727,6 +8677,7 @@
     reimbursement_amount:
     comment: Sources from a FOIA document
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions
   events:
   - id: 15xKjpfm
@@ -8893,9 +8844,10 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: ssa-dudek
-    type: unknown
+    type: demotion
     agency_id: SSA
     name: Leland Dudek
     doge_alias_id:
@@ -8931,6 +8883,7 @@
     reimbursement_amount:
     comment: FIXME find out what Dudek is doing at SSA
     qualifications:
+    table_note: Replaced by Bisignano as confirmed commissioner
     documents:
   events:
   - id: FP9n4cfD
@@ -9347,6 +9300,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: kSAAPBQJ
@@ -9534,7 +9488,7 @@
     appt_type_code:
     appt_type:
     pay_grade: GS-11/01
-    salary: "$84601"
+    salary: "$84,601"
     pd_code: 66893097 C00424
     sge:
     title: Special Advisor (IT&M)
@@ -9544,8 +9498,9 @@
     source:
     reimbursed:
     reimbursement_amount:
-    comment: Marko Elez resigned when racist tweets were reported
+    comment:
     qualifications:
+    table_note: Abruptly resigned when past racist tweets were reported
     documents: onboard-treasury-marko-elez
   - id: dol-marko-elez
     type: appointed
@@ -9553,7 +9508,7 @@
     name: Marko Elez
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-02-14~
+    start_date: 2025-02-(14)~
     start_date_truth: inferred
     start_date_event:
     start_source:
@@ -9563,7 +9518,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-14~
+    sort_date: 2025-02-(14)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -9584,6 +9539,7 @@
     reimbursement_amount:
     comment: Marko is detailed from DOL to other agencies, so rehired there at some point in February
     qualifications:
+    table_note:
     documents:
   - id: detail-dol-ssa-employee-7
     type: detailed
@@ -9622,6 +9578,7 @@
     reimbursement_amount: "$71,000 per quarter"
     comment:
     qualifications:
+    table_note:
     documents: detail-20250317-dol-ssa-employee-7 onboard-ssa-employee-7
   - id: detail-dol-hhs-marko-elez
     type: detailed
@@ -9660,6 +9617,7 @@
     reimbursement_amount:
     comment: No documentation, reported in court filing
     qualifications:
+    table_note:
     documents:
   - id: internal-hhs-cms-marko-elez
     type: internal
@@ -9698,6 +9656,7 @@
     reimbursement_amount:
     comment: Reported access to system same day as start of detail to HHS
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-uscis-elez
     type: internal
@@ -9736,6 +9695,7 @@
     reimbursement_amount:
     comment: No other info, just mentioned in NYT roundup
     qualifications:
+    table_note:
     documents:
   - id: detail-dol-dhs-elez
     type: detailed
@@ -9774,6 +9734,7 @@
     reimbursement_amount:
     comment: No other info, just mentioned in NYT roundup
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-cpb-elez
     type: internal
@@ -9812,6 +9773,7 @@
     reimbursement_amount:
     comment: No other info, just mentioned in NYT roundup
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-ice-elez
     type: internal
@@ -9850,6 +9812,7 @@
     reimbursement_amount:
     comment: No other info, just mentioned in NYT roundup
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-tsa-elez
     type: internal
@@ -9888,6 +9851,7 @@
     reimbursement_amount:
     comment: No other info, just mentioned in NYT roundup
     qualifications:
+    table_note:
     documents:
   events:
   - id: hRNeze4y
@@ -11017,6 +10981,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: GSsFm4n8
@@ -11242,6 +11207,7 @@
     reimbursement_amount:
     comment: Luke is detailed to HHS from GSA on 2025-01-21, so date here is inferred
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-hhs-luke-farritor
     type: detailed
@@ -11280,6 +11246,7 @@
     reimbursement_amount:
     comment: Date found in a court filing
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-usaid-kliger
     type: detailed
@@ -11318,6 +11285,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: internal-hhs-cdc-farritor
     type: internal
@@ -11356,6 +11324,7 @@
     reimbursement_amount:
     comment: Guessing from first reported system access for ICE system
     qualifications:
+    table_note:
     documents:
   - id: internal-hhs-cms-farritor
     type: internal
@@ -11394,6 +11363,7 @@
     reimbursement_amount:
     comment: Guessing from first reported system access for HIGLAS
     qualifications:
+    table_note:
     documents:
   - id: detail-doge-energy-luke-farritor
     type: detailed
@@ -11401,17 +11371,17 @@
     name: Luke Farritor
     doge_alias_id:
     from_agency_id: DOGE
-    start_date: 2025-02-04~
+    start_date: 2025-02-(04)~
     start_date_truth: disputed
     start_date_event:
     start_source:
     start_source_name:
-    end_date: 2025-02-08~
+    end_date: 2025-02-(08)~
     end_date_truth: disputed
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-04~
+    sort_date: 2025-02-(04)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -11432,6 +11402,7 @@
     reimbursement_amount:
     comment: Start date was given by DOE spokesperson denying a news report
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-cfpb-luke-farritor
     type: detailed
@@ -11470,6 +11441,7 @@
     reimbursement_amount:
     comment: Details from court filing
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-state-farritor
     type: detailed
@@ -11508,6 +11480,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: internal-hhs-nih-farritor
     type: internal
@@ -11546,6 +11519,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-nsf-farritor
     type: detailed
@@ -11584,6 +11558,7 @@
     reimbursement_amount:
     comment: Showed up at the agency to do secondary round of grant reviews. Detail from HHS?
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-dhs-farritor
     type: detailed
@@ -11622,6 +11597,7 @@
     reimbursement_amount:
     comment: No details, but in NYT roundup
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-ice-farritor
     type: internal
@@ -11660,6 +11636,7 @@
     reimbursement_amount:
     comment: No details, but in NYT roundup
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-tsa-farritor
     type: internal
@@ -11698,6 +11675,7 @@
     reimbursement_amount:
     comment: No details, but in NYT roundup
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-uscis-farritor
     type: internal
@@ -11736,6 +11714,7 @@
     reimbursement_amount:
     comment: No details, but in NYT roundup
     qualifications:
+    table_note:
     documents:
   events:
   - id: 24qgS3WS
@@ -13093,6 +13072,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents: onboard-education-employee-2
   - id: internal-hhs-cms-fennessy
     type: internal
@@ -13131,6 +13111,7 @@
     reimbursement_amount:
     comment: Inferred from first reported access to CALM system
     qualifications:
+    table_note:
     documents:
   - id: detail-education-hhs-fennessy
     type: detailed
@@ -13169,6 +13150,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: gsa-fennessy
     type: unknown
@@ -13207,6 +13189,7 @@
     reimbursement_amount:
     comment: No details, just info from NYT roundup
     qualifications:
+    table_note:
     documents:
   events:
   - id: CPQe7omt
@@ -13523,6 +13506,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: C9H7QGC5
@@ -13638,7 +13622,9 @@
   background:
   category: wrecker
   own_page: false
-  blurb:
+  blurb: >-
+    Joining GSA as a wrecker in mid-February, Justin Fox has mainly served as Nate Cavanaugh's sidekick for the destruction of several small independent
+    federal agencies.
   reporting_notes:
   path: "/people#justin-fox"
   comment:
@@ -13681,6 +13667,7 @@
     reimbursement_amount:
     comment: No details, but just guessing
     qualifications:
+    table_note:
     documents:
   - id: detail-neh-justin-fox
     type: detailed
@@ -13688,7 +13675,7 @@
     name: Justin Fox
     doge_alias_id:
     from_agency_id: GSA
-    start_date: 2025-03-13~
+    start_date: 2025-03-(13)~
     start_date_truth: verified
     start_date_event:
     start_source:
@@ -13698,7 +13685,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-03-13~
+    sort_date: 2025-03-(13)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -13719,6 +13706,7 @@
     reimbursement_amount:
     comment: Guessing GSA based on some past reporting
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-nlrb-fox
     type: detailed
@@ -13757,6 +13745,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: 6xNXvDgl
@@ -14094,6 +14083,7 @@
     reimbursement_amount:
     comment: Assuming this position replace by Senior Advisor role
     qualifications:
+    table_note:
     documents:
   - id: dod-fulcher-advisor
     type: appointed
@@ -14132,6 +14122,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: 2yiCepF3
@@ -14279,6 +14270,7 @@
     reimbursement_amount:
     comment: ProPublica just reports he was there in January
     qualifications:
+    table_note:
     documents:
   events: []
   system_access: []
@@ -14337,6 +14329,7 @@
     reimbursement_amount:
     comment: Sourced from a FOIAed document
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions
   events:
   - id: 54lcWZTH
@@ -14485,7 +14478,7 @@
     name: Derek Geissler
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-02-13~
+    start_date: 2025-02-(13)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -14495,7 +14488,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-13~
+    sort_date: 2025-02-(13)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -14516,6 +14509,7 @@
     reimbursement_amount:
     comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
     qualifications:
+    table_note:
     documents:
   events:
   - id: CPQe7omt
@@ -14633,8 +14627,8 @@
     aliases: []
   system_access: []
   obj_type: Person
-  start_date: 2025-02-13~
-  sort_date: 2025-02-13~
+  start_date: 2025-02-(13)~
+  sort_date: 2025-02-(13)~
   start_agency: DOL
 - name: Brady Glantz
   sort_name: Glantz
@@ -14687,6 +14681,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events: []
   system_access: []
@@ -14745,6 +14740,46 @@
     reimbursement_amount:
     comment: Amy Gleason joins the USDS, according to her sworn testimony; not sure of her title for this before she is named Acting Director
     qualifications:
+    table_note:
+    documents:
+  - id: internal-hhs-cms-gleason
+    type: internal
+    agency_id: CMS
+    name: Amy Gleason
+    doge_alias_id:
+    from_agency_id: HHS
+    start_date: 2025-02-(24)~
+    start_date_truth: inferred
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-02-(24)~
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    reimbursed:
+    reimbursement_amount:
+    comment: Start date is just her reported first access to CALM system at CMS
+    qualifications:
+    table_note:
     documents:
   - id: doge-amy-gleason-director
     type: appointed
@@ -14783,44 +14818,7 @@
     reimbursement_amount:
     comment:
     qualifications:
-    documents:
-  - id: internal-hhs-cms-gleason
-    type: internal
-    agency_id: CMS
-    name: Amy Gleason
-    doge_alias_id:
-    from_agency_id: HHS
-    start_date: 2025-02-24~
-    start_date_truth: inferred
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-02-24~
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    reimbursed:
-    reimbursement_amount:
-    comment: Start date is just her reported first access to CALM system at CMS
-    qualifications:
+    table_note:
     documents:
   - id: hhs-amy-gleason
     type: appointed
@@ -14859,6 +14857,7 @@
     reimbursement_amount:
     comment: All I have is her SF-61
     qualifications:
+    table_note:
     documents: onboard-hhs-amy-gleason
   events:
   - id: 4wVLWDce
@@ -15114,6 +15113,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events: []
   system_access: []
@@ -15172,6 +15172,7 @@
     reimbursement_amount:
     comment: SF-50 is a correction
     qualifications: Founder, CEO and Chief Investment Officer of [REDACTED]. Over 25 years of experience in private equity investing.
+    table_note:
     documents: onboard-ssa-employee-4
   events:
   - id: 7mtGbnRJ
@@ -15431,6 +15432,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: dqDnwCxi
@@ -15513,6 +15515,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: kaxNhRgZ
@@ -15604,6 +15607,7 @@
     reimbursement_amount:
     comment: DOGE put entire staff on admin leave and started cancelling grants, not many details
     qualifications:
+    table_note:
     documents:
   events:
   - id: 2WDroWS4
@@ -15717,6 +15721,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: o7wBfLA8
@@ -15900,6 +15905,7 @@
     reimbursement_amount:
     comment: Sourced from FOIAed document
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions
   events:
   - id: 15xKjpfm
@@ -16066,6 +16072,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: eSiT2dsb
@@ -16396,6 +16403,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: mZDXKZv5
@@ -16489,7 +16497,7 @@
     appt_type_code: 55
     appt_type: 55-Noncareer (Senior Exec Perm)
     pay_grade: ES-00
-    salary: "$195200"
+    salary: "$195,200"
     pd_code: 6A38081
     sge:
     title: Senior Advisor to the Director for Technology and Delivery
@@ -16501,6 +16509,7 @@
     reimbursement_amount:
     comment: details from FOIA doucments
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions onboard-opm-greg-hogan
   - id: greg-hogan-opm-2
     type: appointed
@@ -16527,7 +16536,7 @@
     appt_type_code: 55
     appt_type: 55-Noncareer (Senior Exec Perm)
     pay_grade: ES-00
-    salary: "$195200"
+    salary: "$195,200"
     pd_code: 6A39566
     sge:
     title: Chief Information OFficer
@@ -16539,6 +16548,7 @@
     reimbursement_amount:
     comment: details from FOIA doucments
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions onboard-opm-greg-hogan
   events:
   - id: GSsFm4n8
@@ -16734,6 +16744,7 @@
     reimbursement_amount:
     comment: FIXME
     qualifications:
+    table_note:
     documents:
   events:
   - id: 3rNhg30Y
@@ -16983,7 +16994,7 @@
     name: Stephanie Holmes
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-02-05~
+    start_date: 2025-02-(05)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -16993,7 +17004,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-05~
+    sort_date: 2025-02-(05)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -17014,6 +17025,7 @@
     reimbursement_amount:
     comment: Was added to the ProPublica tracker on 2025-02-06
     qualifications:
+    table_note:
     documents:
   - id: detail-doge-doi-holmes
     type: detailed
@@ -17052,6 +17064,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: 9CEKeLm7
@@ -17239,8 +17252,8 @@
       https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf, https://www.nytimes.com/2025/03/31/us/politics/doge-musk-federal-payroll.html
     comment:
   obj_type: Person
-  start_date: 2025-02-05~
-  sort_date: 2025-02-05~
+  start_date: 2025-02-(05)~
+  sort_date: 2025-02-(05)~
   start_agency: DOGE
 - name: Jared Isaacman
   sort_name: Isaacman
@@ -17311,6 +17324,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: usaid-deputy-jackson
     type: appointed
@@ -17349,6 +17363,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: gpJzqYTy
@@ -17566,7 +17581,7 @@
     name: Raj Jegannathan
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-04-24~
+    start_date: 2025-04-(24)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -17576,7 +17591,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-04-24~
+    sort_date: 2025-04-(24)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -17597,12 +17612,13 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events: []
   system_access: []
   obj_type: Person
-  start_date: 2025-04-24~
-  sort_date: 2025-04-24~
+  start_date: 2025-04-(24)~
+  sort_date: 2025-04-(24)~
   start_agency: GSA
 - name: Erica Jehling
   sort_name: Jehling
@@ -17655,6 +17671,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events: []
   system_access:
@@ -17736,6 +17753,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events: []
   system_access: []
@@ -17794,6 +17812,85 @@
     reimbursement_amount:
     comment: Listed as interviewing USDS staff on 1/21, not in GSA or OPM crew
     qualifications:
+    table_note:
+    documents:
+  - id: detail-doge-dol-killian
+    type: detailed
+    agency_id: DOL
+    name: Cole Killian
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-02-(13)~
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-02-(13)~
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
+    reimbursed:
+    reimbursement_amount:
+    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
+    qualifications:
+    table_note:
+    documents:
+  - id: detail-doge-ssa-killian
+    type: unknown
+    agency_id: SSA
+    name: Cole Killian
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-02-(20)~
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-02-(20)~
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.thehandbasket.co/p/leland-dudek-ssa-doge
+    reimbursed:
+    reimbursement_amount:
+    comment: Identified as being at the agency on 2/20; unclear how long before
+    qualifications:
+    table_note:
     documents:
   - id: detaile-doge-epa-killian
     type: detailed
@@ -17832,82 +17929,7 @@
     reimbursement_amount:
     comment:
     qualifications:
-    documents:
-  - id: detail-doge-dol-killian
-    type: detailed
-    agency_id: DOL
-    name: Cole Killian
-    doge_alias_id:
-    from_agency_id:
-    start_date: 2025-02-13~
-    start_date_truth: reported
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-02-13~
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
-    reimbursed:
-    reimbursement_amount:
-    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
-    qualifications:
-    documents:
-  - id: detail-doge-ssa-killian
-    type: unknown
-    agency_id: SSA
-    name: Cole Killian
-    doge_alias_id:
-    from_agency_id:
-    start_date: 2025-02-20~
-    start_date_truth: reported
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-02-20~
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.thehandbasket.co/p/leland-dudek-ssa-doge
-    reimbursed:
-    reimbursement_amount:
-    comment: Identified as being at the agency on 2/20; unclear how long before
-    qualifications:
+    table_note:
     documents:
   events:
   - id: 2y8WthBd
@@ -18167,6 +18189,7 @@
     reimbursement_amount:
     comment: I confirmed he is OPM-5
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions onboard-opm-employee-5
   - id: detail-opm-usaid-kliger
     type: detailed
@@ -18205,6 +18228,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: detail-opm-usda-kliger
     type: detailed
@@ -18212,7 +18236,7 @@
     name: Gavin Kliger
     doge_alias_id:
     from_agency_id: OPM
-    start_date: 2025-02-01~
+    start_date: 2025-02-(01)~
     start_date_truth: inferred
     start_date_event:
     start_source:
@@ -18222,7 +18246,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-01~
+    sort_date: 2025-02-(01)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -18245,6 +18269,7 @@
       No details, but listed in a NYT roundup and adding here. On 2/14, USDA head said they'd been there a couple of weeks. An email from him has the label
       OSEC - DC
     qualifications:
+    table_note:
     documents:
   - id: detail-opm-cfpb-kliger
     type: detailed
@@ -18283,6 +18308,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: gavin-kliger-opm-2
     type: appointed
@@ -18321,6 +18347,7 @@
     reimbursement_amount:
     comment: Converted from provisional to excepted position
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions onboard-opm-employee-5
   - id: detail-opm-irs-gavin-kliger
     type: detailed
@@ -18359,6 +18386,7 @@
     reimbursement_amount:
     comment: He was forcibly removed from agency on 2025-04-17
     qualifications:
+    table_note:
     documents: gov.uscourts.nysd.636609.144.0
   - id: detail-opm-ftc-kliger
     type: detailed
@@ -18366,7 +18394,7 @@
     name: Gavin Kliger
     doge_alias_id:
     from_agency_id: OPM
-    start_date: 2025-03-28~
+    start_date: 2025-03-(28)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -18376,7 +18404,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-03-28~
+    sort_date: 2025-03-(28)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -18397,6 +18425,7 @@
     reimbursement_amount:
     comment: Title is not given, reported as starting "last week" from 2025-04-04
     qualifications:
+    table_note:
     documents:
   - id: detail-opm-dhs-kliger
     type: detailed
@@ -18435,6 +18464,7 @@
     reimbursement_amount:
     comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-tsa-kliger
     type: detailed
@@ -18473,6 +18503,7 @@
     reimbursement_amount:
     comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
     qualifications:
+    table_note:
     documents:
   events:
   - id: 4F5kEan6
@@ -19633,6 +19664,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents: onboard-ssa-employee-6
   - id: detail-ssa-doj-koval
     type: detailed
@@ -19671,6 +19703,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: 7mtGbnRJ
@@ -20045,6 +20078,7 @@
     reimbursement_amount:
     comment: Part-time
     qualifications:
+    table_note:
     documents: onboard-treasury-thomas-krause gov.uscourts.nysd.636609.144.0
   - id: appoint-treasury-thomas-krause
     type: appointed
@@ -20083,6 +20117,7 @@
     reimbursement_amount:
     comment: Changed to a full-time position
     qualifications:
+    table_note:
     documents: gov.uscourts.nysd.636609.144.0
   events:
   - id: UsAfrk26
@@ -20431,6 +20466,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: TjkvD7jk
@@ -20619,6 +20655,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: ja9gwcUS
@@ -20718,6 +20755,7 @@
     reimbursement_amount:
     comment: I know he started at the GSA before 1/28
     qualifications:
+    table_note:
     documents:
   - id: detail-usaid-jeremy-lewin
     type: detailed
@@ -20756,6 +20794,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: internal-hhs-cms-lewin
     type: internal
@@ -20794,6 +20833,7 @@
     reimbursement_amount:
     comment: Inferring based on first reported access to CMS CALM system
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-cfpb-jeremy-lewin
     type: detailed
@@ -20832,6 +20872,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-hhs-lewin
     type: detailed
@@ -20870,6 +20911,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: internal-hhs-nih-lewin
     type: internal
@@ -20908,6 +20950,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: usaid-jeremy-lewin-2
     type: appointed
@@ -20946,6 +20989,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: state-lewin-foreign
     type: appointed
@@ -20984,6 +21028,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: 2VmzIcAJ
@@ -21622,7 +21667,7 @@
     name: Kendall Lindemann
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-02-10~
+    start_date: 2025-02-(10)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -21632,7 +21677,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-10~
+    sort_date: 2025-02-(10)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -21653,6 +21698,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: Gti7PARC
@@ -21681,8 +21727,8 @@
     aliases: []
   system_access: []
   obj_type: Person
-  start_date: 2025-02-10~
-  sort_date: 2025-02-10~
+  start_date: 2025-02-(10)~
+  sort_date: 2025-02-(10)~
   start_agency: DOGE
 - name: Kathryn Armstrong Loving
   sort_name: Loving
@@ -21735,6 +21781,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events: []
   system_access:
@@ -21816,6 +21863,7 @@
     reimbursement_amount:
     comment: Tyler Hassan reported to be working with Matt Luby to scrutinize grants
     qualifications:
+    table_note:
     documents:
   events:
   - id: V7Gkkvah
@@ -22111,6 +22159,47 @@
   comment:
   table_note:
   positions:
+  - id: fbi-makecha
+    type: detailed
+    agency_id: FBI
+    name: Tarak Makecha
+    doge_alias_id:
+    from_agency_id:
+    start_date: 2025-03-(30)~
+    start_date_truth: guessed
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-03-(30)~
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title: Senior Advisor
+    series:
+    supervisory:
+    office: Human Resources
+    source: https://theintercept.com/2025/04/18/doge-tesla-employee-justice-department-fbi/
+    reimbursed:
+    reimbursement_amount:
+    comment: >-
+      Tarak Makacha has reportedly shown up in FBI directories as a Senior Advisor to the agency's executive assistant director for human resources. He
+      reportedly has been there since the end of March
+    qualifications:
+    table_note:
+    documents:
   - id: opm-makecha
     type: appointed
     agency_id: OPM
@@ -22148,46 +22237,7 @@
     reimbursement_amount:
     comment: POGO has his resume and listing as an OPM staffer
     qualifications:
-    documents:
-  - id: fbi-makecha
-    type: detailed
-    agency_id: FBI
-    name: Tarak Makecha
-    doge_alias_id:
-    from_agency_id:
-    start_date: 2025-03-30~
-    start_date_truth: guessed
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-03-30~
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title: Senior Advisor
-    series:
-    supervisory:
-    office: Human Resources
-    source: https://theintercept.com/2025/04/18/doge-tesla-employee-justice-department-fbi/
-    reimbursed:
-    reimbursement_amount:
-    comment: >-
-      Tarak Makacha has reportedly shown up in FBI directories as a Senior Advisor to the agency's executive assistant director for human resources. He
-      reportedly has been there since the end of March
-    qualifications:
+    table_note:
     documents:
   - id: detail-fcc-makecha
     type: detailed
@@ -22226,6 +22276,7 @@
     reimbursement_amount:
     comment: Assuming detailed, but not sure from where
     qualifications:
+    table_note:
     documents:
   events:
   - id: CC2AMRi3
@@ -22343,9 +22394,9 @@
     aliases: []
   system_access: []
   obj_type: Person
-  start_date: 2025-03-XX
-  sort_date: '2025-03-15'
-  start_agency: OPM
+  start_date: 2025-03-(30)~
+  sort_date: 2025-03-(30)~
+  start_agency: FBI
 - name: Ted Malaska
   sort_name: Malaska
   slug: ted-malaska
@@ -22397,6 +22448,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: c2uFcNGD
@@ -22450,7 +22502,7 @@
     name: Dave Malcher
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-04-24~
+    start_date: 2025-04-(24)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -22460,7 +22512,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-04-24~
+    sort_date: 2025-04-(24)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22481,12 +22533,13 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events: []
   system_access: []
   obj_type: Person
-  start_date: 2025-04-24~
-  sort_date: 2025-04-24~
+  start_date: 2025-04-(24)~
+  sort_date: 2025-04-(24)~
   start_agency: GSA
 - name: Peter Marocco
   sort_name: Marocco
@@ -22539,6 +22592,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: 60ZEU148
@@ -22682,6 +22736,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events: []
   system_access: []
@@ -22709,7 +22764,7 @@
     name: Jonathan Mendelson
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-04-25~
+    start_date: 2025-04-(25)~
     start_date_truth: inferred
     start_date_event:
     start_source:
@@ -22719,7 +22774,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-04-25~
+    sort_date: 2025-04-(25)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22740,6 +22795,7 @@
     reimbursement_amount:
     comment: Assuming a GSA start since named in NPR report as from GSA in detailing to other agencies
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-dfc-mendelson
     type: detailed
@@ -22778,6 +22834,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-sec-mendelson
     type: detailed
@@ -22785,7 +22842,7 @@
     name: Jonathan Mendelson
     doge_alias_id:
     from_agency_id: GSA
-    start_date: 2025-05-02~
+    start_date: 2025-05-(02)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -22795,7 +22852,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-05-02~
+    sort_date: 2025-05-(02)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -22816,6 +22873,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: 6HPPymkF
@@ -22937,8 +22995,8 @@
     aliases: []
   system_access: []
   obj_type: Person
-  start_date: 2025-04-25~
-  sort_date: 2025-04-25~
+  start_date: 2025-04-(25)~
+  sort_date: 2025-04-(25)~
   start_agency: GSA
 - name: Katie Miller
   sort_name: Miller
@@ -22991,6 +23049,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: VdEHz47g
@@ -23097,6 +23156,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: detail-hhs-nih-minor
     type: detailed
@@ -23135,6 +23195,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: 4Ffvq4fv
@@ -23258,6 +23319,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: F3UCNb8e
@@ -23476,7 +23538,7 @@
     name: Eliezer Mishory
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-04-05~
+    start_date: 2025-04-(05)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -23486,7 +23548,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-04-05~
+    sort_date: 2025-04-(05)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -23507,6 +23569,7 @@
     reimbursement_amount:
     comment: Reporting on 4/15 just says he arrived "earlier this month"
     qualifications:
+    table_note:
     documents:
   events:
   - id: LP7ebs7r
@@ -23535,8 +23598,8 @@
     aliases: []
   system_access: []
   obj_type: Person
-  start_date: 2025-04-05~
-  sort_date: 2025-04-05~
+  start_date: 2025-04-(05)~
+  sort_date: 2025-04-(05)~
   start_agency: SEC
 - name: Bryanne-Michelle Mlodzianowski
   sort_name: Mlodzianowski
@@ -23589,6 +23652,7 @@
     reimbursement_amount:
     comment: Sourced from a FOIAed document
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions
   events:
   - id: 15xKjpfm
@@ -23755,6 +23819,7 @@
     reimbursement_amount: "$71,000 per quarter"
     comment:
     qualifications:
+    table_note:
     documents: detail-20250317-dol-ssa-employee-3 onboard-ssa-employee-3
   - id: internal-hhs-cms-mohgaddassi
     type: internal
@@ -23793,6 +23858,7 @@
     reimbursement_amount:
     comment: Reported access to system same day as start of detail to HHS
     qualifications:
+    table_note:
     documents:
   - id: detail-dol-hhs-mohgaddassi
     type: detailed
@@ -23831,6 +23897,7 @@
     reimbursement_amount:
     comment: No documentation, reported in court filing
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-cpb-mohgaddassi
     type: internal
@@ -23869,6 +23936,7 @@
     reimbursement_amount:
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-ice-mohgaddassi
     type: internal
@@ -23907,6 +23975,7 @@
     reimbursement_amount:
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-tsa-mohgaddassi
     type: internal
@@ -23945,6 +24014,7 @@
     reimbursement_amount:
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-uscis-mohgaddassi
     type: internal
@@ -23983,6 +24053,7 @@
     reimbursement_amount:
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     qualifications:
+    table_note:
     documents:
   - id: detail-dol-dhs-mohgaddassi
     type: detailed
@@ -24021,6 +24092,7 @@
     reimbursement_amount:
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     qualifications:
+    table_note:
     documents:
   - id: dol-moghaddassi
     type: unknown
@@ -24059,6 +24131,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: 3MdiqW9w
@@ -24757,6 +24830,7 @@
     reimbursement_amount:
     comment: Sourced from FOIA documents
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions
   - id: detail-opm-fbi-monroe
     type: detailed
@@ -24795,6 +24869,7 @@
     reimbursement_amount:
     comment: Reported as an unidentified SpaceX employee is reported to be working as an advisor to the Director of the FBI, but alias figured out later
     qualifications:
+    table_note:
     documents:
   events:
   - id: 1KTKczl5
@@ -24983,13 +25058,14 @@
     reimbursement_amount:
     comment: Part-time
     qualifications:
+    table_note:
     documents: onboard-education-employee-4
   - id: detail-education-fdic-morgan
     type: detailed
     agency_id: FDIC
     name: Brooks Morgan
     doge_alias_id:
-    from_agency_id:
+    from_agency_id: Education
     start_date: '2025-04-10'
     start_date_truth: reported
     start_date_event:
@@ -25021,6 +25097,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: CPQe7omt
@@ -25176,6 +25253,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: NrAucFtb
@@ -25311,6 +25389,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: 8vDj2q7P
@@ -25663,6 +25742,7 @@
     reimbursement_amount:
     comment: NYT says he is a Senior Advisor
     qualifications:
+    table_note:
     documents: gov.uscourts.nysd.636609.144.0
   - id: internal-treasury-irs-newnam
     type: internal
@@ -25701,6 +25781,7 @@
     reimbursement_amount:
     comment: NYT says he is a Senior Advisor
     qualifications:
+    table_note:
     documents:
   events:
   - id: hRNyXeoy
@@ -25798,6 +25879,7 @@
     reimbursement_amount:
     comment: Inferring detailed from GSA to SBA
     qualifications:
+    table_note:
     documents:
   - id: sba-park
     type: detailed
@@ -25836,6 +25918,7 @@
     reimbursement_amount:
     comment: Reported in a tweet from the date
     qualifications:
+    table_note:
     documents:
   - id: detail-exim-park
     type: detailed
@@ -25874,6 +25957,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: Qkjr7Ku3
@@ -25986,6 +26070,7 @@
     reimbursement_amount:
     comment: Details from a FOIA document
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions
   events:
   - id: JLTME6KA
@@ -26431,6 +26516,7 @@
     reimbursement_amount:
     comment: I confirmed that OPM Employee 6 is Nikhil but have no other info
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions onboard-opm-employee-6
   - id: detail-opm-noaa-rajpal
     type: detailed
@@ -26469,6 +26555,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: detail-opm-cfpb-nikhil-rajpal
     type: detailed
@@ -26507,6 +26594,7 @@
     reimbursement_amount:
     comment: Details from court filing
     qualifications:
+    table_note:
     documents:
   events:
   - id: 2y8WthBd
@@ -26895,6 +26983,7 @@
     reimbursement_amount:
     comment: Details provided in sworn testimony
     qualifications:
+    table_note:
     documents:
   - id: detail-doge-education-adam-ramada
     type: detailed
@@ -26933,6 +27022,7 @@
     reimbursement_amount:
     comment: He reports one other USDS detailee is there, 2 Education staffers, and 2 other detailees from elsewhere (OPM? GSA?)
     qualifications:
+    table_note:
     documents: 20250212-doge-education-all
   - id: detail-doge-energy-adam-ramada
     type: detailed
@@ -26940,17 +27030,17 @@
     name: Adam Ramada
     doge_alias_id:
     from_agency_id: DOGE
-    start_date: 2025-02-04~
+    start_date: 2025-02-(04)~
     start_date_truth: disputed
     start_date_event:
     start_source:
     start_source_name:
-    end_date: 2025-02-08~
+    end_date: 2025-02-(08)~
     end_date_truth: disputed
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-04~
+    sort_date: 2025-02-(04)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -26971,6 +27061,7 @@
     reimbursement_amount:
     comment: Start date was given by DOE spokesperson denying a news report
     qualifications:
+    table_note:
     documents:
   - id: detail-doge-dol-ramada
     type: detailed
@@ -27009,6 +27100,7 @@
     reimbursement_amount:
     comment: Testimony was on 2/6. DOGE showed up at agency on 2/5. Mentions 3 other DOGE staff there
     qualifications:
+    table_note:
     documents:
   - id: detail-doge-fdic-ramada
     type: detailed
@@ -27047,6 +27139,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: 9ApmChVN
@@ -27280,6 +27373,7 @@
     reimbursement_amount:
     comment: From a FOIA document
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions
   events:
   - id: 3tG7l53P
@@ -27497,6 +27591,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents: onboard-ssa-employee-9
   - id: detail-ssa-doj-rehling
     type: detailed
@@ -27535,6 +27630,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: detail-ssa-dhs-rehling
     type: detailed
@@ -27573,6 +27669,7 @@
     reimbursement_amount:
     comment: No info, but listed in NYT roundup
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-tsa-rehling
     type: detailed
@@ -27611,6 +27708,7 @@
     reimbursement_amount:
     comment: No info, but listed in NYT roundup
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-uscis-rehling
     type: detailed
@@ -27649,6 +27747,7 @@
     reimbursement_amount:
     comment: No info, but listed in NYT roundup
     qualifications:
+    table_note:
     documents:
   events:
   - id: 7mtGbnRJ
@@ -28185,6 +28284,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events: []
   system_access: []
@@ -28243,6 +28343,7 @@
     reimbursement_amount:
     comment: Hiring information given in court filing
     qualifications:
+    table_note:
     documents:
   - id: internal-hhs-cms-riley
     type: internal
@@ -28281,6 +28382,7 @@
     reimbursement_amount:
     comment: Dating from first reported access to CALM
     qualifications:
+    table_note:
     documents:
   - id: internal-hhs-nih-riley
     type: internal
@@ -28319,6 +28421,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: detail-hhs-nsf-riley
     type: consultant
@@ -28357,6 +28460,7 @@
     reimbursement_amount:
     comment: Showed up at the agency to do secondary round of grant reviews. Assuming a detail
     qualifications:
+    table_note:
     documents:
   events:
   - id: V7Gkkvah
@@ -28933,6 +29037,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: ja9gwcUS
@@ -29032,9 +29137,10 @@
     reimbursement_amount:
     comment: Reportedly removed for complying quickly with judge's orders to block access
     qualifications:
+    table_note:
     documents:
   - id: ssa-mike-russo-advisor
-    type: appointed
+    type: demotion
     agency_id: SSA
     name: Mike Russo
     doge_alias_id:
@@ -29072,6 +29178,7 @@
       Scott Coulter is named the new CIO at the Social Security Administration and Mike Russo is moved to a Senior Advisor role with a focus on modernizing
       systems
     qualifications:
+    table_note:
     documents:
   events:
   - id: FP9n4cfD
@@ -29369,6 +29476,7 @@
     reimbursement_amount:
     comment: Sourced from a FOIA document
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions
   events:
   - id: JQXwpLN5
@@ -29676,7 +29784,7 @@
     name: Frank Schuler
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-02-18~
+    start_date: 2025-02-(18)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -29686,7 +29794,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-18~
+    sort_date: 2025-02-(18)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -29707,6 +29815,7 @@
     reimbursement_amount:
     comment: Details from a news article
     qualifications:
+    table_note:
     documents:
   events:
   - id: NPiTTC4b
@@ -29762,8 +29871,8 @@
     aliases: []
   system_access: []
   obj_type: Person
-  start_date: 2025-02-18~
-  sort_date: 2025-02-18~
+  start_date: 2025-02-(18)~
+  sort_date: 2025-02-(18)~
   start_agency: GSA
 - name: Kyle Schutt
   sort_name: Schutt
@@ -29785,7 +29894,7 @@
     name: Kyle Schutt
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-02-18~
+    start_date: 2025-02-(18)~
     start_date_truth: inferred
     start_date_event:
     start_source:
@@ -29795,7 +29904,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-18~
+    sort_date: 2025-02-(18)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -29816,6 +29925,46 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
+    documents:
+  - id: detail-gsa-dhs-schutt
+    type: detailed
+    agency_id: DHS
+    name: Kyle Schutt
+    doge_alias_id:
+    from_agency_id: GSA
+    start_date: 2025-02-(19)~
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-02-(19)~
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
+    reimbursed:
+    reimbursement_amount:
+    comment: No details on this, but mentioned in NYT roundup. Assuming detail from GSA
+    qualifications:
+    table_note:
     documents:
   - id: internal-dhs-cisa-schutt
     type: detailed
@@ -29854,44 +30003,7 @@
     reimbursement_amount:
     comment:
     qualifications:
-    documents:
-  - id: detail-gsa-dhs-schutt
-    type: detailed
-    agency_id: DHS
-    name: Kyle Schutt
-    doge_alias_id:
-    from_agency_id: GSA
-    start_date: 2025-02-19~
-    start_date_truth: reported
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-02-19~
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
-    reimbursed:
-    reimbursement_amount:
-    comment: No details on this, but mentioned in NYT roundup. Assuming detail from GSA
-    qualifications:
+    table_note:
     documents:
   - id: detail-gsa-hhs-kyle-schutt
     type: detailed
@@ -29930,6 +30042,7 @@
     reimbursement_amount:
     comment: No documentation, dates reported in court filing
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-tsa-schutt
     type: internal
@@ -29968,6 +30081,7 @@
     reimbursement_amount:
     comment: No details, but in NYT roundup
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-uscis-schutt
     type: internal
@@ -30006,6 +30120,7 @@
     reimbursement_amount:
     comment: No details, but in NYT roundup
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-cbp-schutt
     type: internal
@@ -30044,6 +30159,7 @@
     reimbursement_amount:
     comment: No details, but in NYT roundup
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-fema-schutt
     type: internal
@@ -30082,6 +30198,7 @@
     reimbursement_amount:
     comment: No details, but in NYT roundup
     qualifications:
+    table_note:
     documents:
   - id: internal-dhs-ice-schutt
     type: internal
@@ -30120,6 +30237,7 @@
     reimbursement_amount:
     comment: No details, but in NYT roundup
     qualifications:
+    table_note:
     documents:
   events:
   - id: BGZKY6go
@@ -30449,8 +30567,8 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment:
   obj_type: Person
-  start_date: 2025-02-18~
-  sort_date: 2025-02-18~
+  start_date: 2025-02-(18)~
+  sort_date: 2025-02-(18)~
   start_agency: GSA
 - name: Riley Sennott
   sort_name: Sennott
@@ -30503,14 +30621,15 @@
     reimbursement_amount:
     comment: Riley Sennott's father reports that he started at GSA nine days after 2025-02-03
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-nasa-sennott
     type: detailed
     agency_id: NASA
     name: Riley Sennott
     doge_alias_id:
-    from_agency_id:
-    start_date: 2025-03-14~
+    from_agency_id: GSA
+    start_date: 2025-03-(14)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -30520,7 +30639,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-03-14~
+    sort_date: 2025-03-(14)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -30541,6 +30660,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: KvP48A34
@@ -30739,6 +30859,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: eSiT2dsb
@@ -30824,6 +30945,7 @@
     reimbursement_amount:
     comment: Position inferred from early reporting and detailing to Education
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-education-3
     type: detailed
@@ -30862,6 +30984,7 @@
     reimbursement_amount:
     comment: ED-3 is Ethan Shaotran
     qualifications:
+    table_note:
     documents: detail-20250212-gsa-education-ed-3
   - id: detail-gsa-ssa-employee-10
     type: detailed
@@ -30900,6 +31023,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents: onboard-ssa-employee-10
   - id: detail-gsa-usadf-ethan-shaotran
     type: detailed
@@ -30938,6 +31062,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents: detail-20250220-gsa-usadf-ethan-shaotran
   - id: detail-gsa-usps-ethan-shaotran
     type: detailed
@@ -30976,6 +31101,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents: 20250312-gsa-usps-alex-simonpour
   - id: detail-gsa-dfc-shaotran
     type: detailed
@@ -31014,6 +31140,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: bfo6pJUH
@@ -31477,6 +31604,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: dol-shedd
     type: appointed
@@ -31515,6 +31643,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: kSAAPBQJ
@@ -31825,6 +31954,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: 85e3G4Rn
@@ -31907,6 +32037,7 @@
     reimbursement_amount:
     comment: From FOIAed document
     qualifications:
+    table_note:
     documents: 20250312-gsa-usps-alex-simonpour
   - id: detail-gsa-nasa-simonpour
     type: detailed
@@ -31945,6 +32076,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: FHj3Dgcw
@@ -32035,6 +32167,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events: []
   system_access: []
@@ -32093,6 +32226,7 @@
     reimbursement_amount:
     comment: All I have is his signed SF-61
     qualifications:
+    table_note:
     documents: onboard-hhs-brad-smith
   events:
   - id: V7Gkkvah
@@ -32350,6 +32484,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: imls-sonderling
     type: appointed
@@ -32388,6 +32523,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: nTUfmAV8
@@ -32472,7 +32608,12 @@
   background: coder
   category: wrecker
   own_page: false
-  blurb:
+  blurb: >-
+    Christopher Stanley had been a long-time aide of Elon Musk with positions as a Security Engineer at both SpaceX and X.com before his arrival at DOGE.
+    He kicked off his involvement by greeting jailed January 6th protestors who had been pardoned by Trump. Since then, he has had a varierty of other erratic
+    appearances on the timeline. He briefly launched a custom AI chatbot on the DOGE website before it was noticed and taken down. On March 17th, he was
+    appointed to the board of Fannie Mae/Freddie Mac, only to resign immediately the next day. More recently, he has been embedded in the Department of
+    Justice as part of the DOGE team building a surveillance system to use against immigrants.
   reporting_notes:
   path: "/people#christopher-stanley"
   comment:
@@ -32515,6 +32656,7 @@
     reimbursement_amount:
     comment: Sourced from a FOIAed document
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions
   - id: fhfa-christopher-stanley
     type: appointed
@@ -32553,6 +32695,7 @@
     reimbursement_amount:
     comment: Chris Stanley spent one day on the board before resigning
     qualifications:
+    table_note:
     documents:
   - id: detail-opm-doj-stanley
     type: detailed
@@ -32560,7 +32703,7 @@
     name: Christopher Stanley
     doge_alias_id:
     from_agency_id: OPM
-    start_date: 2025-04-02~
+    start_date: 2025-04-(02)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -32570,7 +32713,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-04-02~
+    sort_date: 2025-04-(02)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -32591,6 +32734,7 @@
     reimbursement_amount:
     comment: Date is approximate. Assuming detailed from OPM
     qualifications:
+    table_note:
     documents:
   events:
   - id: 1KTKczl5
@@ -32724,6 +32868,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: ssa-steffensen-1
     type: appointed
@@ -32762,6 +32907,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: fFM8X63i
@@ -32844,6 +32990,7 @@
     reimbursement_amount:
     comment: FIXME, find more details on when started
     qualifications:
+    table_note:
     documents:
   events:
   - id: 6amFFPAZ
@@ -32912,7 +33059,7 @@
     name: Brian Stube
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-05-07~
+    start_date: 2025-05-(07)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -32922,7 +33069,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-05-07~
+    sort_date: 2025-05-(07)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -32943,12 +33090,13 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events: []
   system_access: []
   obj_type: Person
-  start_date: 2025-05-07~
-  sort_date: 2025-05-07~
+  start_date: 2025-05-(07)~
+  sort_date: 2025-05-(07)~
   start_agency: DOT
 - name: Christopher Sweet
   sort_name: Sweet
@@ -32958,7 +33106,9 @@
   background:
   category: wrecker
   own_page: false
-  blurb:
+  blurb: >-
+    Joining DOGE sometime in early April, Christopher Sweet has been based in the Department of Housing and Urban Development (HUD), where he building a
+    custom generative AI model to analyze the agency's regulations and make recommendations of specific parts to cut.
   reporting_notes:
   path: "/people#christopher-sweet"
   comment:
@@ -32970,7 +33120,7 @@
     name: Christopher Sweet
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-04-10~
+    start_date: 2025-04-(10)~
     start_date_truth: reported
     start_date_event:
     start_source:
@@ -32980,7 +33130,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-04-10~
+    sort_date: 2025-04-(10)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -33003,6 +33153,7 @@
       Scott Langmack sends a message that "I'd like to share with you that Chris Sweet has joined the HUD DOGE team with the title of special assistant,
       although a better title might be 'AI computer programming quant analyst'"
     qualifications:
+    table_note:
     documents:
   events:
   - id: mBJqiHKW
@@ -33095,8 +33246,8 @@
     aliases: []
   system_access: []
   obj_type: Person
-  start_date: 2025-04-10~
-  sort_date: 2025-04-10~
+  start_date: 2025-04-(10)~
+  sort_date: 2025-04-(10)~
   start_agency: HUD
 - name: Zach Terrell
   sort_name: Terrell
@@ -33149,6 +33300,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: internal-hhs-cms-terrell
     type: internal
@@ -33187,6 +33339,7 @@
     reimbursement_amount:
     comment: Inferring from first reported access to the IDR system at CMS
     qualifications:
+    table_note:
     documents:
   - id: detail-hhs-nsf-terrell
     type: consultant
@@ -33225,6 +33378,7 @@
     reimbursement_amount:
     comment: Showed up at the agency to do secondary round of grant reviews. Assuming a detail
     qualifications:
+    table_note:
     documents:
   events:
   - id: 7OVMm6PD
@@ -33536,6 +33690,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: j8cpRtDP
@@ -33682,6 +33837,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: ja9gwcUS
@@ -33781,6 +33937,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   - id: cfpb-acting-vought
     type: appointed
@@ -33819,6 +33976,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: 1pcExqWx
@@ -34002,6 +34160,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents: gov.uscourts.nysd.636609.144.0
   events:
   - id: hRNyXeoy
@@ -34068,7 +34227,7 @@
     name: Jordan Wick
     doge_alias_id:
     from_agency_id:
-    start_date: 2025-01-20~
+    start_date: 2025-01-(20)~
     start_date_truth: guessed
     start_date_event:
     start_source:
@@ -34078,7 +34237,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-01-20~
+    sort_date: 2025-01-(20)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -34099,6 +34258,7 @@
     reimbursement_amount:
     comment: No details, but guessing based on government declaration had been detailed from DOGE to CFPB
     qualifications:
+    table_note:
     documents:
   - id: detail-usda-wick
     type: detailed
@@ -34106,7 +34266,7 @@
     name: Jordan Wick
     doge_alias_id:
     from_agency_id: DOGE
-    start_date: 2025-02-01~
+    start_date: 2025-02-(01)~
     start_date_truth: inferred
     start_date_event:
     start_source:
@@ -34116,7 +34276,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-01~
+    sort_date: 2025-02-(01)~
     nte_date:
     nte_date_truth:
     signed_date:
@@ -34137,6 +34297,46 @@
     reimbursement_amount:
     comment: No details, but listed in a NYT roundup and adding here. USDA head said DOGE had been there a couple of weeks on 2/14
     qualifications:
+    table_note:
+    documents:
+  - id: detail-doge-dol-wick
+    type: detailed
+    agency_id: DOL
+    name: Jordan Wick
+    doge_alias_id:
+    from_agency_id: DOGE
+    start_date: 2025-02-(13)~
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: 2025-02-(13)~
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
+    reimbursed:
+    reimbursement_amount:
+    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5. But was part of CFPB assault.
+    qualifications:
+    table_note:
     documents:
   - id: detail-usds-cfpb-jordan-wick
     type: detailed
@@ -34175,44 +34375,7 @@
     reimbursement_amount:
     comment: Dates provided in court documents. Converted to full position
     qualifications:
-    documents:
-  - id: detail-doge-dol-wick
-    type: detailed
-    agency_id: DOL
-    name: Jordan Wick
-    doge_alias_id:
-    from_agency_id: DOGE
-    start_date: 2025-02-13~
-    start_date_truth: reported
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-02-13~
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
-    reimbursed:
-    reimbursement_amount:
-    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5. But was part of CFPB assault.
-    qualifications:
+    table_note:
     documents:
   - id: detail-doge-education-wick
     type: detailed
@@ -34251,6 +34414,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents: doge-staff-education-20250407
   - id: cfpb-jordan-wick
     type: appointed
@@ -34289,6 +34453,7 @@
     reimbursement_amount:
     comment: All I have is his SF-61
     qualifications:
+    table_note:
     documents: onboard-cfpb-jordan-wick
   - id: detail-cfpb-fcc-wick
     type: detailed
@@ -34327,6 +34492,7 @@
     reimbursement_amount:
     comment: Assuming he has been detailed from the CFPB
     qualifications:
+    table_note:
     documents:
   events:
   - id: HnJrpqPY
@@ -34832,8 +34998,8 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment:
   obj_type: Person
-  start_date: 2025-01-20~
-  sort_date: 2025-01-20~
+  start_date: 2025-01-(20)~
+  sort_date: 2025-01-(20)~
   start_agency: DOGE
 - name: Joanna Wischer
   sort_name: Wischer
@@ -34886,6 +35052,7 @@
     reimbursement_amount:
     comment: Sourced from a FOIA document; listed as Joanna Miller
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions
   events:
   - id: V7Gkkvah
@@ -35207,6 +35374,7 @@
     reimbursement_amount:
     comment: FIXME, find more details on when started
     qualifications:
+    table_note:
     documents:
   - id: detail-gsa-dfc-wood
     type: detailed
@@ -35245,6 +35413,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: 6HPPymkF
@@ -35377,6 +35546,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: 8RFcA4gh
@@ -35554,6 +35724,7 @@
     reimbursement_amount:
     comment: Sourced from FOIAed documents
     qualifications:
+    table_note:
     documents: opm-foia-doge-positions
   - id: detail-opm-cfpb-chris-young
     type: detailed
@@ -35592,6 +35763,7 @@
     reimbursement_amount:
     comment: FIXME
     qualifications:
+    table_note:
     documents:
   events:
   - id: 3tG7l53P
@@ -35813,6 +35985,7 @@
     reimbursement_amount:
     comment:
     qualifications:
+    table_note:
     documents:
   events:
   - id: RmvrV2dc

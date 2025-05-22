@@ -1,0 +1,33 @@
+{% import 'macros' %}
+<table class="mt-4 table-fixed md:table-auto my-text-small">
+  <thead>
+  <tr class="">
+    <th class="w-35 my-text-small text-left text-gray-700 sm:mt-0 dark:text-gray-100">Move</th>
+    <th class="w-40 my-text-small text-left text-gray-700 sm:mt-0 dark:text-gray-100">Timeframe</th>
+    <th class="text-left my-text-small text-gray-700 sm:mt-0 dark:text-gray-100">Position</th>
+  </tr>
+  </thead>
+  <tbody>
+    {% positions.each do |pos| %}
+    <tr>
+      <td class="align-top my-text-smallest"><nobr>
+          {% if pos.from_agency_id %}
+            {{ agency_link(pos.from_agency_id) }}
+            <i class="fa-solid fa-arrow-right"></i>
+            {{ agency_link(pos.agency_id) }}
+          {% elsif pos.type == 'appointed' %}
+            Hired at {{ agency_link(pos.agency_id) }}
+          {% elsif pos.type == 'promotion' %}
+            Promoted at {{ agency_link(pos.agency_id) }}
+          {% elsif pos.type == 'demotion' %}
+            Demoted at {{ agency_link(pos.agency_id) }}
+          {% else %}
+            {{ agency_link(pos.agency_id) }}
+          {% end %}</nobr>
+      </td>
+      <td class="align-top my-text-smallest">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact) }} - {{ render EdtfFormat.new(pos.end_date, :compact) }}{% else %}<em>dates unknown</em>{% end %}</td>
+      <td class="align-top my-text-smallest">{% if pos.type == 'detailed' %}Detailed {% end %}{% if pos.type == 'internal' %}Internal xfer {% end %}{{ position_title(pos) }}{% if pos.pay_grade %} <strong>{{ pos.pay_grade }}</strong> {% end %}{% if pos.salary %} {{ pos.salary }}{% end %}{% if pos.table_note %} <em>{{ pos.table_note | markdownify | remove: '<p>' | remove: '</p>' }}</em>{% end %}</td>
+    </tr>
+    {% end %}
+  </tbody>
+</table>

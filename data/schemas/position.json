@@ -135,6 +135,11 @@
     "qualifications": {
       "description": "Qualifications listed for the special hiring",
       "type": "string"
+    },
+    "table_note": {
+      "description": "A short note to display in the position",
+      "type": "string",
+      "max_length": 30
     }
   },
   "required": [

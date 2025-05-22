@@ -1,7 +1,0 @@
----
-layout: page
----
-{% assign people = site.data.people | sort: 'sort_name' %}
-{% for person in people %}
-  <h2 id="{{ person.slug }}">{{ person.name }}</h2>
-{% endfor %}

@@ -63,6 +63,15 @@
   end
 %}
 
+{% macro "load_agency" do |item|
+    if item && item.agency_id
+      item.agency = find_agency(item.agency_id)
+    else
+      item
+    end
+  end
+%}
+
 {% macro "agencies" do |arr|
     if arr.nil?
       []
@@ -151,3 +160,13 @@
     end
    end
 %}
+
+{% macro "position_title" do |position|
+    if position.title
+      position.title
+    elsif position.type == 'consultant'
+      'Consultant'
+    else
+      ''
+    end
+   end %}

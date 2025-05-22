@@ -7,11 +7,12 @@
   background: lawyer
   age: 41
   category: support
+  blurb: Apart from his identification in a few Politico articles naming him as DOGE's lawyer at the Department of Transportation, Daniel Abrahamson has kept a relatively low profile.
   positions:
   - id: dot-abrahamson
     type: appointed
     title: Senior Advisor
-    comment: Date unnkown but before 3/26
+    table_note: Exact date unknown but before 3/26
     source: https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2025/03/26/doge-assembles-a-legal-army-00251903
     agency: DOT
 
@@ -21,12 +22,14 @@
   age: 31
   background: lawyer
   category: support
+  blurb: Identified as one of DOGE's growing army of lawyers, Justin Aimonetti has most recently been involved in DOGE's shutdown efforts against small independent agencies like the Corporation for Public Broadcasting.
   positions:
   - id: doge-aimonetti
     type: appointed
     start_date: 2025-02-XX
     start_date_truth: reported
     fuzz: Report just says started sometime in February
+    table_note: Start date only reported as "some point in February"
     source: https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
     agency: DOGE
 
@@ -35,22 +38,8 @@
   sort_name: Akis
   background: finance
   category: booster
-  positions:
-  - id: irs-akis
-    type: unknown
-    agency: IRS
-    comment: No details, but mentioned in NYT roundup
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - id: opm-akis
-    type: unknown
-    agency: OPM
-    comment: No details, but mentioned in NYT roundup
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - id: treasury-akis
-    type: unknown
-    agency: Treasury
-    comment: No details, but mentioned in NYT roundup
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  blurb: Baris Akis was a booster for DOGE before it even formally existed, and he has been linked to its activities at the IRS, Treasury and OPM by the _New York Times_. However, there have been no explicit details about his involvement and actions for DOGE yet.
+  positions: []
 
 - name: Jacob Altik
   sort_name: Altik
@@ -66,7 +55,7 @@
     start_date_truth: verified
     description: Provisional Appt NTE
     appt_type_code: 44
-    appt_type: Schedule C (Except NonPerm)
+    appt_type: Schedule C
     pd_code: PMGS31263
     title: Senior Advisor to the Director
     pay_grade: GS-15
@@ -84,6 +73,7 @@
     start_date_truth: verified
     end_date: 2025-03-06
     end_date_truth: reported
+    table_note: Detail assumed to be from OPM
     comment: Assuming detailed from OPM
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
   - id: detail-opm-fcc-altik
@@ -93,6 +83,7 @@
     start_date_truth: reported
     source: https://www.theverge.com/news/644031/doge-federal-communications-commission-directory
     office: Office of the Chairman
+    table_note: Detail assumed to be from OPM
     comment: Assuming he has been detailed from OPM
     agency: FCC
 
@@ -101,6 +92,7 @@
   slug: mark-andreesen
   background: executive
   category: booster
+  blurb: According to early reports, Marc Andreesen's only direct involvement with DOGE was interviewing potential candidates at Mar-a-Lago in December 2024. However, he continues to be a strident booster of the effort.
   positions: []
 
 - name: Anthony Armstrong
@@ -115,6 +107,7 @@
     from: OPM
     agency: DHS
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    table_note: DHS presence reported by _New York Times_
     comment: Find more definitive info for DHS link
   - id: opm-anthony-armstrong
     type: appointed
@@ -161,7 +154,7 @@
   positions:
   - id: dol-sam-beyda
     type: unknown
-    start_date: 2025-02-13~
+    start_date: 2025-02-(13)~
     start_date_truth: reported
     comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
     source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
@@ -177,7 +170,7 @@
   - id: doge-beynon
     type: appointed
     agency: DOGE
-    start_date: 2025-02-04~
+    start_date: 2025-02-(04)~
     start_date_truth: guessed
     comment: FIXME, find earliest details of arrival; is she GSA?
   - id: detail-doge-education-alexandra-beynon
@@ -373,7 +366,7 @@
   - id: detail-doge-ftc-bryant
     type: detailed
     from: GSA
-    start_date: 2025-03-28~
+    start_date: 2025-03-(28)~
     start_date_truth: reported
     comment: Title is not given, reported as starting "last week" from 2025-04-04
     source: https://www.axios.com/pro/tech-policy/2025/04/04/doge-staffers-move-into-ftc-office
@@ -426,7 +419,7 @@
     type: detailed
     agency: NEH
     from: GSA
-    start_date: 2025-03-13~
+    start_date: 2025-03-(13)~
     start_date_truth: verified
     comment: Guessing it's a detail
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
@@ -509,6 +502,7 @@
   sort_name: Cooper
   slug: george-cooper
   category: unknown
+  blurb: He has been identified as a DOGE member, but I have not been able to discover more details about his involvement yet.
   positions: []
 
 - name: Sam Corcos
@@ -525,7 +519,7 @@
     title: Senior Advisor for Technology and Modernization
     sge: true
     salary: "$0"
-    end_date: 2025-05-06~
+    end_date: 2025-05-(06)~
     end_date_truth: inferred
     comment: Likely earlier involvement, maybe when Gavin Kliger started there; ends when became CIO
     source: https://www.washingtonpost.com/business/2025/03/01/doge-irs-tax-records-benefits/
@@ -533,8 +527,8 @@
     documents:
     - gov.uscourts.nysd.636609.144.0
   - id: irs-corcos-cio
-    type: appointed
-    start_date: 2025-05-06~
+    type: promotion
+    start_date: 2025-05-(06)~
     start_date_truth: reported
     title: Chief Information Officer
     comment: Date is approximate
@@ -547,19 +541,22 @@
   age: 19
   background: coder
   category: wrecker
+  blurb: Perhaps the most famous of the DOGE wreckers, Edward "Big Balls" Coristine achieved early attention for joining DOGE at the young age of 19. Hoever, he has also accrued a large number of hits on his wrecking spree across the federal government.
   positions:
   - id: gsa-edward-coristine
     agency: GSA
     type: appointed
     salary: "$0"
-    start_date: 2025-01-20~
+    start_date: 2025-01-(20)~
     start_date_truth: inferred
+    table_note: Start date and agency inferred from reporting
     comment: Several documents have Coristine detailing from GSA, so assuming home agency. Also, not in FOIA release from OPM
     source: https://www.wired.com/story/elon-musk-lackeys-office-personnel-management-opm-neuralink-x-boring-stalin/
   - id: internal-dhs-tsa-coristine
     type: internal
     from: DHS
     agency: TSA
+    table_note: Listed by the _New York Times_ as being here
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-coristine
@@ -572,7 +569,7 @@
     type: detailed
     agency: OPM
     from: GSA
-    start_date: 2025-01-28~
+    start_date: 2025-01-(28)~
     start_date_truth: reported
     reimbursed: false
     comment: Edward Coristine is not named, but identfied. Mentions he reportd to Scales
@@ -655,7 +652,8 @@
   slug: scott-coulter
   age: 40
   background: finance
-  category: wrecker
+  category: enabler
+  blurb: Scott Coulter started his work for DOGE as a wrecker based in Social Security and detailed to NASA, but when Mile Russo was abruptly demoted as the CIO for Social Security, Scott stepped up into the role.
   positions:
   - id: detail-nasa-ssa-employee-2
     type: detailed
@@ -776,10 +774,11 @@
     supervisory: true
     source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
   - id: ssa-dudek
-    type: unknown
+    type: demotion
     agency: SSA
     start_date: 2025-05-06
     start_date_truth: reported
+    table_note: Replaced by Bisignano as confirmed commissioner
     comment: FIXME find out what Dudek is doing at SSA
     source: https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
 
@@ -845,19 +844,19 @@
     nte_date_truth: verified
     end_date: 2025-02-06
     end_date_truth: verified
-    comment: Marko Elez resigned when racist tweets were reported
+    table_note: Abruptly resigned when past racist tweets were reported
     title: Special Advisor (IT&M)
     pd_code: 66893097 C00424
     office: Office of the Chief of Staff
     agency: Treasury
     pay_grade: GS-11/01
-    salary: "$84601"
+    salary: "$84,601"
     documents:
     - onboard-treasury-marko-elez
   - id: dol-marko-elez
     type: appointed
     agency: DOL
-    start_date: 2025-02-14~
+    start_date: 2025-02-(14)~
     start_date_truth: inferred
     comment: Marko is detailed from DOL to other agencies, so rehired there at some point in February
   - id: detail-dol-ssa-employee-7
@@ -975,9 +974,9 @@
     type: detailed
     from: DOGE
     agency: Energy
-    start_date: 2025-02-04~
+    start_date: 2025-02-(04)~
     start_date_truth: disputed
-    end_date: 2025-02-08~
+    end_date: 2025-02-(08)~
     end_date_truth: disputed
     comment: Start date was given by DOE spokesperson denying a news report
   - id: detail-gsa-cfpb-luke-farritor
@@ -1078,6 +1077,7 @@
   sort_name: Fox, Justin
   slug: justin-fox
   category: wrecker
+  blurb: Joining GSA as a wrecker in mid-February, Justin Fox has mainly served as Nate Cavanaugh's sidekick for the destruction of several small independent federal agencies.
   positions:
   - id: gsa-justin-fox
     type: appointed
@@ -1088,7 +1088,7 @@
     type: detailed
     agency: NEH
     from: GSA
-    start_date: 2025-03-13~
+    start_date: 2025-03-(13)~
     start_date_truth: verified
     comment: Guessing GSA based on some past reporting
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
@@ -1177,7 +1177,7 @@
   positions:
   - id: dol-derek-geissler
     type: unknown
-    start_date: 2025-02-13~
+    start_date: 2025-02-(13)~
     start_date_truth: reported
     comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
     source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
@@ -1226,7 +1226,7 @@
     type: internal
     agency: CMS
     from: HHS
-    start_date: 2025-02-24~
+    start_date: 2025-02-(24)~
     start_date_truth: inferred
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: Start date is just her reported first access to CALM system at CMS
@@ -1423,7 +1423,7 @@
     pd_code: 6A38081
     title: Senior Advisor to the Director for Technology and Delivery
     pay_grade: ES-00
-    salary: "$195200"
+    salary: "$195,200"
     series: '0301'
     supervisory: true
     office: Office of the Director
@@ -1443,7 +1443,7 @@
     pd_code: 6A39566
     title: Chief Information OFficer
     pay_grade: ES-00
-    salary: "$195200"
+    salary: "$195,200"
     series: '0301'
     supervisory: true
     office: Office of the Director
@@ -1477,7 +1477,7 @@
   positions:
   - id: doge-holmes
     type: appointed
-    start_date: 2025-02-05~
+    start_date: 2025-02-(05)~
     start_date_truth: reported
     comment: Was added to the ProPublica tracker on 2025-02-06
     source: https://projects.propublica.org/elon-musk-doge-tracker/
@@ -1534,7 +1534,7 @@
   positions:
   - id: gsa-jegannathan
     type: appointed
-    start_date: 2025-04-24~
+    start_date: 2025-04-(24)~
     start_date_truth: reported
     source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
     agency: GSA
@@ -1591,14 +1591,14 @@
     agency: EPA
   - id: detail-doge-dol-killian
     type: detailed
-    start_date: 2025-02-13~
+    start_date: 2025-02-(13)~
     start_date_truth: reported
     comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
     source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
     agency: DOL
   - id: detail-doge-ssa-killian
     type: unknown
-    start_date: 2025-02-20~
+    start_date: 2025-02-(20)~
     start_date_truth: reported
     comment: Identified as being at the agency on 2/20; unclear how long before
     source: https://www.thehandbasket.co/p/leland-dudek-ssa-doge
@@ -1657,7 +1657,7 @@
     type: detailed
     from: OPM
     agency: USDA
-    start_date: 2025-02-01~
+    start_date: 2025-02-(01)~
     start_date_truth: inferred
     office: Office of the Secretary
     comment: No details, but listed in a NYT roundup and adding here. On 2/14, USDA head said they'd been there a couple of weeks. An email from him has the label OSEC - DC
@@ -1709,7 +1709,7 @@
   - id: detail-opm-ftc-kliger
     type: detailed
     from: OPM
-    start_date: 2025-03-28~
+    start_date: 2025-03-(28)~
     start_date_truth: reported
     comment: Title is not given, reported as starting "last week" from 2025-04-04
     source: https://www.axios.com/pro/tech-policy/2025/04/04/doge-staffers-move-into-ftc-office
@@ -1915,7 +1915,7 @@
   positions:
   - id: doge-lindemann
     type: appointed
-    start_date: 2025-02-10~
+    start_date: 2025-02-(10)~
     start_date_truth: reported
     agency: DOGE
     source: https://www.consulting.us/news/11397/former-mckinsey-business-analyst-hired-to-musks-doge-nerd-army
@@ -1972,7 +1972,7 @@
     type: detailed
     title: Senior Advisor
     office: Human Resources
-    start_date: 2025-03-30~
+    start_date: 2025-03-(30)~
     start_date_truth: guessed
     comment: Tarak Makacha has reportedly shown up in FBI directories as a Senior Advisor to the agency's executive assistant director for human resources. He reportedly has been there since the end of March
     source: https://theintercept.com/2025/04/18/doge-tesla-employee-justice-department-fbi/
@@ -2009,7 +2009,7 @@
   positions:
   - id: gsa-malcher
     type: appointed
-    start_date: 2025-04-24~
+    start_date: 2025-04-(24)~
     start_date_truth: reported
     source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
     agency: GSA
@@ -2047,7 +2047,7 @@
   positions:
   - id: gsa-mendelson
     type: appointed
-    start_date: 2025-04-25~
+    start_date: 2025-04-(25)~
     start_date_truth: inferred
     comment: Assuming a GSA start since named in NPR report as from GSA in detailing to other agencies
     source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
@@ -2062,7 +2062,7 @@
   - id: detail-gsa-sec-mendelson
     type: detailed
     from: GSA
-    start_date: 2025-05-02~
+    start_date: 2025-05-(02)~
     start_date_truth: reported
     source: https://www.reuters.com/sustainability/boards-policy-regulation/doge-expands-presence-wall-st-regulator-sources-say-2025-05-02/
     agency: SEC
@@ -2126,7 +2126,7 @@
   positions:
   - id: sec-mishory
     type: unknown
-    start_date: 2025-04-05~
+    start_date: 2025-04-(05)~
     start_date_truth: reported
     comment: Reporting on 4/15 just says he arrived "earlier this month"
     source: https://finance.yahoo.com/news/sec-pushes-back-doge-request-175244386.html
@@ -2283,6 +2283,7 @@
     alias: ED-4
   - id: detail-education-fdic-morgan
     type: detailed
+    from: Education
     start_date: 2025-04-10
     start_date_truth: reported
     source: https://www.thehandbasket.co/p/doge-fdic
@@ -2478,9 +2479,9 @@
     type: detailed
     from: DOGE
     agency: Energy
-    start_date: 2025-02-04~
+    start_date: 2025-02-(04)~
     start_date_truth: disputed
-    end_date: 2025-02-08~
+    end_date: 2025-02-(08)~
     end_date_truth: disputed
     comment: Start date was given by DOE spokesperson denying a news report
   - id: detail-doge-dol-ramada
@@ -2663,7 +2664,7 @@
     supervisory: true
     source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
   - id: ssa-mike-russo-advisor
-    type: appointed
+    type: demotion
     start_date: 2025-03-25
     start_date_truth: reported
     title: Senior Advisor
@@ -2706,7 +2707,7 @@
     type: appointed
     title: Senior Advisor
     agency: GSA
-    start_date: 2025-02-18~
+    start_date: 2025-02-(18)~
     start_date_truth: reported
     comment: Details from a news article
     source: https://www.propublica.org/article/frank-schuler-gsa-doge-syndicated-conservation-easements-tax-scam
@@ -2751,7 +2752,7 @@
   - id: gsa-schutt
     type: appointed
     agency: GSA
-    start_date: 2025-02-18~
+    start_date: 2025-02-(18)~
     start_date_truth: inferred
     salary: "$195,200"
     pay_grade: GS-15/10
@@ -2761,7 +2762,7 @@
     type: detailed
     from: GSA
     agency: DHS
-    start_date: 2025-02-19~
+    start_date: 2025-02-(19)~
     start_date_truth: reported
     comment: No details on this, but mentioned in NYT roundup. Assuming detail from GSA
     source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
@@ -2797,7 +2798,8 @@
     source: https://www.cjr.org/opinion/doge-journalism-ethics-father-son.php
   - id: detail-gsa-nasa-sennott
     type: detailed
-    start_date: 2025-03-14~
+    from: GSA
+    start_date: 2025-03-(14)~
     start_date_truth: reported
     source: https://www.businessinsider.com/tesla-employee-alexander-simonpour-nasa-doge-team-2025-3
     agency: NASA
@@ -3025,6 +3027,10 @@
   age: 33
   background: coder
   category: wrecker
+  blurb: >-
+    Christopher Stanley had been a long-time aide of Elon Musk with positions as a Security Engineer at both SpaceX and X.com before his arrival at DOGE. He kicked off his involvement by greeting jailed January 6th protestors who had been pardoned by Trump. Since then, he has had a varierty of other erratic
+    appearances on the timeline. He briefly launched a custom AI chatbot on the DOGE website before it was noticed and taken down. On March 17th, he was appointed to the board of Fannie Mae/Freddie Mac, only to resign immediately the next day. More recently, he has been embedded in the Department of Justice
+    as part of the DOGE team building a surveillance system to use against immigrants.
   positions:
   - id: opm-christopher-stanley
     type: appointed
@@ -3057,7 +3063,7 @@
   - id: detail-opm-doj-stanley
     type: detailed
     from: OPM
-    start_date: 2025-04-02~
+    start_date: 2025-04-(02)~
     start_date_truth: reported
     title: Senior Advisor
     office: Deputy Attorney General
@@ -3112,7 +3118,7 @@
   - id: dot-stube
     type: appointed
     name: Brian Stube
-    start_date: 2025-05-07~
+    start_date: 2025-05-(07)~
     start_date_truth: reported
     fuzz: Appeared in the ProPublica roundup
     title: Senior Advisor to the Secretary
@@ -3124,10 +3130,11 @@
   sort_name: Sweet
   slug: christopher-sweet
   category: wrecker
+  blurb: Joining DOGE sometime in early April, Christopher Sweet has been based in the Department of Housing and Urban Development (HUD), where he building a custom generative AI model to analyze the agency's regulations and make recommendations of specific parts to cut.
   positions:
   - id: hud-sweet
     type: appointed
-    start_date: 2025-04-10~
+    start_date: 2025-04-(10)~
     start_date_truth: reported
     fuzz: Date is unspecified, just sometime earlier in April
     comment: Scott Langmack sends a message that "I'd like to share with you that Chris Sweet has joined the HUD DOGE team with the title of special assistant, although a better title might be 'AI computer programming quant analyst'"
@@ -3240,14 +3247,14 @@
   - id: doge-wick
     type: appointed
     agency: DOGE
-    start_date: 2025-01-20~
+    start_date: 2025-01-(20)~
     start_date_truth: guessed
     comment: No details, but guessing based on government declaration had been detailed from DOGE to CFPB
   - id: detail-usda-wick
     type: detailed
     from: DOGE
     agency: USDA
-    start_date: 2025-02-01~
+    start_date: 2025-02-(01)~
     start_date_truth: inferred
     comment: No details, but listed in a NYT roundup and adding here. USDA head said DOGE had been there a couple of weeks on 2/14
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -3264,7 +3271,7 @@
   - id: detail-doge-dol-wick
     type: detailed
     from: DOGE
-    start_date: 2025-02-13~
+    start_date: 2025-02-(13)~
     start_date_truth: reported
     comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5. But was part of CFPB assault.
     source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583

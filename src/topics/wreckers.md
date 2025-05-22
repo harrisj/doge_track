@@ -91,11 +91,15 @@ There are also a fair number of Wreckers who started at other agencies, possibly
       <td><nobr>{{ person.start_date }}</nobr></td>
       <td>{{ person_background(person) }}</td>
       <td>{% if person.table_note %}{{ person.table_note }} {% end %}
-          {% if details.any? %}Other: {{ details | agencies | uniq | agency_links }}{% end %}</td>
+          {% if details.any? %}{{ details | agencies | uniq | agency_links }}{% end %}</td>
     </tr>
   {% end %}
   </tbody>
 </table>
 {% end %}
 
-{%@ "tabs", tabs: {"Intro": intro_tab, "Home Bases": bases_tab, "Other Agencies": other_tab} %}
+{% more_details_tab = capture do %}
+
+{% end %}
+
+{%@ "tabs", tabs: {"Intro": intro_tab, "Home Bases": bases_tab, "At Other Agencies": other_tab, "More Details": more_details_tab } %}

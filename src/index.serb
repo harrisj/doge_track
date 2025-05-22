@@ -12,22 +12,39 @@ layout: page
   </div>
 </div>
 
-<section class="section prose">
-  <h2>Topics</h2>
-
-  <ul>
+<ul class="timeline timeline-vertical">
+  <li>
+    <hr/>
+    <div class="timeline-start">
+      <ul class="menu menu-lg">
+      <li class="menu-title font-2xl font-bold">What Is This?</li>
+      <li class="align-right"><a href="{{ link "about/this-site.md" }}">About This Site</a></li>
+      <li><a href="{{ link "about/this-data.md" }}">About This Data</a></li>
+      <li><a href="{{ link "about/this-moment.md" }}">About this Moment</a></li>
+      <li><a href="{{ link "about/contributing.md" }}">How to Contribute</a></li>
+      </ul>
+    </div>
+    <hr/>
+  </li>
+  <li>
+    <hr/>
+    <div class="timeline-end">
+    <ul class="menu menu-lg">
+    <li class="menu-title">Who's Involved</li>
     <li><a href="{{ link "topics/wreckers.md" }}">The Wreckers</a></li>
     <li><a href="{{ link "topics/support-team.md" }}">The Support Team</a></li>
     <li><a href="{{ link "topics/enablers.md" }}">The Enablers</a></li>
-    <li><a href="{{ link "topics/aliases.md" }}">Aliases</a></li>
+    <li><a href="{{ link "topics/aliases.md" }}">Unidentified Members</a></li>
     <li><a href="{{ link "topics/mysteries.md" }}">Open Questions</a></li>
-  </ul>
-</section>
-
-<section class="section prose">
-  <h2>Activity at Agencies</h2>
-
-  <ul>
+    </ul>
+    </div>
+    <hr/>
+  </li>
+  <li>
+    <hr/>
+    <div class="timeline-start">
+    <ul class="menu menu-lg">
+    <li class="menu-title">Agencies Targeted</li>
     <li><a href="{{ link "agencies/opm.md" }}">Office of Personnel Management (OPM)</a></li>
     <li><a href="{{ link "agencies/gsa.md" }}">General Services Administration (GSA)</a></li>
     <li><a href="{{ link "agencies/usaid.md" }}">US Agency for International Development (USAID)</a></li>
@@ -43,32 +60,19 @@ layout: page
     <li><a href="{{ link "agencies/treasury.md" }}">The Treasury Department</a></li>
     <li><a href="{{ link "agencies/other-majors.md" }}">Other Major Agencies</a></li>
     <li><a href="{{ link "agencies/independent.md" }}">Independent Agencies</a></li>
-  </ul>
-</section>
+    </ul>
+    </div>
+    <hr/>
+  </li>
+  <li>
+    <hr/>
+    <div class="timeline-end">
+    <ul class="menu menu-lg">
+    <li class="menu-title">Notable Names</li>
+    <li><a href="{{ link "people/luke-farritor.md" }}">Luke Farritor</a></li>
+    </ul>
+    </div>
+    <hr/>
+  </li>
+</li>
 
-<section class="section prose">
-  <h2>Everything All At Once</h2>
-
-  <ul>
-  <li><a href="{{ link "events.md" }}">All Events</li>
-  </ul>
-</section>
-
-<section class="section prose">
-  <h2>Systems Accessed</h2>
-
-  <ul>
-    <li>Coming soon...</li>
-  </ul>
-</section>
-
-<section class="section prose">
-  <h2>About This Project</h2>
-
-  <ul>
-    <li><a href="{{ link "about/this-site.md" }}">About This Site</a></li>
-    <li><a href="{{ link "about/this-data.md" }}">About This Data</a></li>
-    <li><a href="{{ link "about/this-moment.md" }}">About this Moment in Time</a></li>
-    <li><a href="{{ link "about/contributing.md" }}">How to Contribute</a></li>
-  </ul>
-</section>

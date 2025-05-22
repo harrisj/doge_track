@@ -1,0 +1,23 @@
+---
+layout: page
+title: All the People in DOGE
+description: An alphabetical listing of all the people being tracked as part of the DOGE tracker
+---
+{% people = site.data.people.sort_by(&:sort_name) %}
+{%@ 'title', title: "Who's Involved in DOGE" %}
+
+<div class="my-text mb-10">
+<p>This page provides a single overview of everybody who is is my database of DOGE affiliates. To better understand the roles of each person, I have sorted them into several distinct categories which are displayed here as icons and text:</p>
+
+<p><ul>
+<li> <strong>Boosters</strong> are people in DOGE's orbit who have helped with recruitment and its formation</li>
+<li><strong>Enablers</strong> are staff embedded in agencies who work to open the door for wreckers to come in. They are not always DOGE hires.</li>
+<li><strong>Leadership</strong> are the identified leaders of the operation</li>
+<li><strong>Support</strong> are the home team, largely based in DOGE and OPM and there to support operations</li>
+<li><strong>Wreckers</strong> are the away team and the muscle, dispatched to descend on agencies to infiltrate operations, exfiltrate data and possibly destroy entirely</li>
+</ul></p>
+</div>
+
+{% people.each do |person| %}
+  {%@ "people_page_person", person: person %}
+{% end %}

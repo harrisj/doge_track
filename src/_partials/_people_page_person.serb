@@ -1,0 +1,31 @@
+{% import 'macros' %}
+
+{% macro 'person_icon' do |person| 
+    case person.category
+    when 'booster'
+      'fa-thumbs-up'
+    when 'leadership'
+      'fa-briefcase'
+    when 'enabler'
+      'fa-door-open'
+    when 'support'
+      'fa-people-group'
+    when 'wrecker'
+      'fa-bomb'
+    else
+      'fa-person-circle-question'
+    end
+  end
+%}
+
+
+<h2 class="my-text-lg font-bold mt-5"><i class="fas {{ person_icon(person) }} mr-2"></i><span class="font-title">{{ person.name }}</span></h2>
+
+<div class="ml-8">
+  <p class="my-text"><strong>{{ person.category.titleize }}</strong> (field: {{ person_background(person) }}{% if person.age %}, age: {{ person.age }}{% end %})</p>
+  <p class="my-text-small">{% if person.blurb %}<div>{{ person.blurb | markdownify }}</div>{% end %}</p>
+
+  {% if person.positions.any? %}
+    {%@ 'person_positions_table', positions: person.positions %}
+  {% end %}
+</div>

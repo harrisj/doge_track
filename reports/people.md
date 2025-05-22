@@ -10,10 +10,6 @@
 
 # Baris Akis
 - category: booster
-- positions:
-    -  **IRS**  
-    -  **OPM**  
-    -  **Treasury**  
 
 # Jacob Altik
 - category: wrecker
@@ -40,12 +36,12 @@
 # Sam Beyda
 - category: unknown
 - positions:
-    -  **DOL** (2025-02-13~ to ??) 
+    -  **DOL** (2025-02-(13)~ to ??) 
 
 # Alexandra Beynon
 - category: wrecker
 - positions:
-    -  **DOGE** (2025-02-04~ to ??) 
+    -  **DOGE** (2025-02-(04)~ to ??) 
     -  **Education** (2025-02-05 to ??) 
 
 # Riccardo Biasini
@@ -84,8 +80,8 @@
 # Emily Bryant
 - category: wrecker
 - positions:
+    -  **FTC** (2025-03-(28)~ to ??) 
     -  **GSA**  
-    -  **FTC** (2025-03-28~ to ??) 
 
 # James Burnham
 - category: support
@@ -95,9 +91,9 @@
 - positions:
     -  **GSA** (2025-02-03 to ??)  $120,500
     -  **USADF** (2025-02-21 to 2025-03-06) 
-    -  **USIP** (2025-03-04 to 2025-03-24) 
-    -  **NEH** (2025-03-13~ to ??) 
+    -  **NEH** (2025-03-(13)~ to ??) 
         - Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
+    -  **USIP** (2025-03-04 to 2025-03-24) 
     -  **USIP** (2025-03-25 to ??) President
     -  **IMLS** (2025-03-31 to ??) 
     -  **NLRB** (2025-04-16 to ??) 
@@ -128,14 +124,14 @@
 # Sam Corcos
 - category: enabler
 - positions:
-    -  **IRS** (2025-02-28 to 2025-05-06~) Senior Advisor for Technology and Modernization volunteer
-    -  **IRS** (2025-05-06~ to ??) Chief Information Officer
+    -  **IRS** (2025-02-28 to 2025-05-(06)~) Senior Advisor for Technology and Modernization volunteer
+    -  **IRS** (2025-05-(06)~ to ??) Chief Information Officer
 
 # Edward Coristine
 - category: wrecker
 - positions:
-    -  **GSA** (2025-01-20~ to ??)  volunteer
-    -  **OPM** (2025-01-28~ to ??) 
+    -  **GSA** (2025-01-(20)~ to ??)  volunteer
+    -  **OPM** (2025-01-(28)~ to ??) 
     -  **SBA** (2025-02-03 to ??) 
     -  **DHS** (2025-02-04 to ??) 
     -  **FEMA** (2025-02-05 to ??) 
@@ -154,7 +150,7 @@
     -  **USCIS**  
 
 # Scott Coulter
-- category: wrecker
+- category: enabler
 - positions:
     -  **SSA** (2025-02-18 to 2025-03-23) [as "SSA-2"] 
     -  **SSA** (2025-03-24 to ??) [as "SSA-2"] **Chief Information Officer**
@@ -188,14 +184,14 @@
 # Marko Elez
 - category: wrecker
 - positions:
-    -  **Treasury** (2025-01-21 to 2025-02-06) Special Advisor (IT&M) GS-11/01 $84601
+    -  **Treasury** (2025-01-21 to 2025-02-06) Special Advisor (IT&M) GS-11/01 $84,601
         - ASAP: Automated Standard Access For Payments **[source-code access]**: 2025-01-28 - ongoing
         - PAM DB: Payment Automation Manager DB **[source-code access]**: 2025-01-28 - ongoing
         - SPS: Secure Payment System **[source-code access]**: 2025-01-28 - ongoing
         - PAM DB: Payment Automation Manager DB **[read-write access]**: 2025-02-03 - 2025-02-06
         - PAM filesystem: Payment Automation Manager File System: 2025-02-03 - 2025-02-06
         - SPS: Secure Payment System **[read-write access]**: 2025-02-05 - 2025-02-06
-    -  **DOL** (2025-02-14~ to ??) 
+    -  **DOL** (2025-02-(14)~ to ??) 
         - DRA: Directory Resource Administrator: 2025-02-25 - ongoing
         - ePACS: Enterprise Physical Access Control System: 2025-02-25 - ongoing
         - USAccess: 2025-02-25 - ongoing
@@ -240,7 +236,7 @@
         - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-01-31 - ongoing
         - CALM: CMS Acquisition Lifecycle Management system: 2025-02-03 - ongoing
         - IDR: Integrated Data Repository: 2025-02-18 - ongoing
-    -  **Energy** (2025-02-04~ to 2025-02-08~) 
+    -  **Energy** (2025-02-(04)~ to 2025-02-(08)~) 
         - Microsoft 365: 2025-02-05 - ongoing
     -  **CFPB** (2025-02-07 to 2025-03-04) 
         - Microsoft Active Directory: 2025-02-07 - 2025-03-04
@@ -277,7 +273,7 @@
 - category: wrecker
 - positions:
     -  **GSA**  
-    -  **NEH** (2025-03-13~ to ??) 
+    -  **NEH** (2025-03-(13)~ to ??) 
         - Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
     -  **NLRB** (2025-04-16 to ??) 
 
@@ -300,7 +296,7 @@
 # Derek Geissler
 - category: unknown
 - positions:
-    -  **DOL** (2025-02-13~ to ??) 
+    -  **DOL** (2025-02-(13)~ to ??) 
 
 # Brady Glantz
 - category: wrecker
@@ -311,9 +307,9 @@
 - category: leadership
 - positions:
     -  **DOGE** (2024-12-30 to 2024-02-18) 
-    -  **DOGE** (2025-02-18 to ??) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
-    -  **CMS** (2025-02-24~ to ??) 
+    -  **CMS** (2025-02-(24)~ to ??) 
         - CALM: CMS Acquisition Lifecycle Management system: 2025-02-24 - ongoing
+    -  **DOGE** (2025-02-18 to ??) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
     -  **HHS** (2025-03-04 to ??) Expert/Consultant
 
 # Mike Gonzalez
@@ -368,8 +364,8 @@
 # Greg Hogan
 - category: enabler
 - positions:
-    -  **OPM** (2025-01-20 to 2025-02-11) **Senior Advisor to the Director for Technology and Delivery** $195200
-    -  **OPM** (2025-02-11 to ??) **Chief Information OFficer** $195200
+    -  **OPM** (2025-01-20 to 2025-02-11) **Senior Advisor to the Director for Technology and Delivery** $195,200
+    -  **OPM** (2025-02-11 to ??) **Chief Information OFficer** $195,200
 
 # Nicole Hollander
 - category: enabler
@@ -379,7 +375,7 @@
 # Stephanie Holmes
 - category: wrecker
 - positions:
-    -  **DOGE** (2025-02-05~ to ??) 
+    -  **DOGE** (2025-02-(05)~ to ??) 
     -  **DOI** (2025-02-24 to ??) Special Advisor / Acting Chief Human Capital Officer
         - FPPS: Federal Personnel Payroll System **[admin access]**: 2025-03-29 - ongoing
 
@@ -398,7 +394,7 @@
 # Raj Jegannathan
 - category: unknown
 - positions:
-    -  **GSA** (2025-04-24~ to ??) 
+    -  **GSA** (2025-04-(24)~ to ??) 
 
 # Erica Jehling
 - category: enabler
@@ -415,17 +411,17 @@
 - category: wrecker
 - positions:
     -  **DOGE** (2025-01-20 to ??) 
+    -  **DOL** (2025-02-(13)~ to ??) 
+    -  **SSA** (2025-02-(20)~ to ??) 
     -  **EPA** (2025-02-04 to ??) 
         - EAS: EPA Acquisition System: 2025-02-12 - ongoing
-    -  **DOL** (2025-02-13~ to ??) 
-    -  **SSA** (2025-02-20~ to ??) 
 
 # Gavin Kliger
 - category: wrecker
 - positions:
     -  **OPM** (2025-01-20 to 2025-02-18) **Senior Advisor to the Director for Information Technology** $195,200
     -  **USAID** (2025-01-27 to ??) 
-    -  **USDA** (2025-02-01~ to ??) 
+    -  **USDA** (2025-02-(01)~ to ??) 
     -  **CFPB** (2025-02-07 to 2025-05-08) 
         - Microsoft Active Directory: 2025-02-07 - 2025-05-08
         - Microsoft Entra ID: 2025-02-07 - 2025-05-08
@@ -436,7 +432,7 @@
         - Microsoft Power Automate **[admin access]**: 2025-04-17 - 2025-04-17
     -  **OPM** (2025-02-18 to ??) **Senior Advisor to the Director for Information Technology** $195,200
     -  **IRS** (2025-02-19 to 2025-04-17) 
-    -  **FTC** (2025-03-28~ to ??) 
+    -  **FTC** (2025-03-(28)~ to ??) 
     -  **DHS**  
     -  **TSA**  
 
@@ -497,7 +493,7 @@
 # Kendall Lindemann
 - category: support
 - positions:
-    -  **DOGE** (2025-02-10~ to ??) 
+    -  **DOGE** (2025-02-(10)~ to ??) 
 
 # Kathryn Armstrong Loving
 - category: wrecker
@@ -516,8 +512,8 @@
 # Tarak Makecha
 - category: wrecker
 - positions:
+    -  **FBI** (2025-03-(30)~ to ??) Senior Advisor
     -  **OPM** (2025-03-XX to ??) Senior Advisor
-    -  **FBI** (2025-03-30~ to ??) Senior Advisor
     -  **FCC** (2025-04-04 to ??) 
 
 # Ted Malaska
@@ -528,7 +524,7 @@
 # Dave Malcher
 - category: wrecker
 - positions:
-    -  **GSA** (2025-04-24~ to ??) 
+    -  **GSA** (2025-04-(24)~ to ??) 
 
 # Peter Marocco
 - category: enabler
@@ -543,9 +539,9 @@
 # Jonathan Mendelson
 - category: wrecker
 - positions:
-    -  **GSA** (2025-04-25~ to ??) 
+    -  **GSA** (2025-04-(25)~ to ??) 
     -  **USDFC** (2025-04-28 to ??) 
-    -  **SEC** (2025-05-02~ to ??) 
+    -  **SEC** (2025-05-(02)~ to ??) 
 
 # Katie Miller
 - category: booster
@@ -572,7 +568,7 @@
 # Eliezer Mishory
 - category: wrecker
 - positions:
-    -  **SEC** (2025-04-05~ to ??) 
+    -  **SEC** (2025-04-(05)~ to ??) 
 
 # Bryanne-Michelle Mlodzianowski
 - category: support
@@ -656,7 +652,7 @@
     -  **DOGE** (2025-01-23 to ??) 
     -  **Education** (2025-01-28 to NTE 2026-07-04) 
         - FMS: Financial Management System: 2025-02-04 - 2025-03-06
-    -  **Energy** (2025-02-04~ to 2025-02-08~) 
+    -  **Energy** (2025-02-(04)~ to 2025-02-(08)~) 
     -  **DOL** (2025-02-05 to ??) 
     -  **FDIC** (2025-04-10 to ??) 
 
@@ -721,14 +717,14 @@
 # Frank Schuler
 - category: support
 - positions:
-    -  **GSA** (2025-02-18~ to ??) Senior Advisor
+    -  **GSA** (2025-02-(18)~ to ??) Senior Advisor
 
 # Kyle Schutt
 - category: wrecker
 - positions:
-    -  **GSA** (2025-02-18~ to ??)  GS-15/10 $195,200
+    -  **GSA** (2025-02-(18)~ to ??)  GS-15/10 $195,200
+    -  **DHS** (2025-02-(19)~ to ??) 
     -  **CISA** (2025-02-19 to ??) Senior Advisor
-    -  **DHS** (2025-02-19~ to ??) 
     -  **HHS** (2025-03-14 to ??) 
         - UAC Portal: Unaccompanied Alien Children (UAC) Portal: 2025-03-21 - ongoing
     -  **CBP**  
@@ -743,7 +739,7 @@
 - category: wrecker
 - positions:
     -  **GSA** (2025-02-12 to ??) 
-    -  **NASA** (2025-03-14~ to ??) 
+    -  **NASA** (2025-03-(14)~ to ??) 
 
 # Bryton Shang
 - category: enabler
@@ -801,7 +797,7 @@
 - positions:
     -  **OPM** (2025-01-28 to ??) Expert ED-00
     -  **FHFA** (2025-03-17 to 2025-03-18) Board Member, Fannie Mae/Freddie Mac
-    -  **DOJ** (2025-04-02~ to ??) Senior Advisor
+    -  **DOJ** (2025-04-(02)~ to ??) Senior Advisor
 
 # Mark Steffensen
 - category: enabler
@@ -817,12 +813,12 @@
 # Brian Stube
 - category: wrecker
 - positions:
-    -  **DOT** (2025-05-07~ to ??) Senior Advisor to the Secretary
+    -  **DOT** (2025-05-(07)~ to ??) Senior Advisor to the Secretary
 
 # Christopher Sweet
 - category: wrecker
 - positions:
-    -  **HUD** (2025-04-10~ to ??) Special Assistant
+    -  **HUD** (2025-04-(10)~ to ??) Special Assistant
 
 # Zach Terrell
 - category: wrecker
@@ -861,8 +857,9 @@
 # Jordan Wick
 - category: wrecker
 - positions:
-    -  **DOGE** (2025-01-20~ to ??) 
-    -  **USDA** (2025-02-01~ to ??) 
+    -  **DOGE** (2025-01-(20)~ to ??) 
+    -  **USDA** (2025-02-(01)~ to ??) 
+    -  **DOL** (2025-02-(13)~ to ??) 
     -  **CFPB** (2025-02-07 to 2025-03-04) 
         - Concur: 2025-02-07 - 2025-03-28
         - Data Insight: 2025-02-07 - 2025-03-28
@@ -875,7 +872,6 @@
         - USA Staffing: 2025-02-07 - 2025-03-28
         - webTA: 2025-02-07 - ongoing
         - Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
-    -  **DOL** (2025-02-13~ to ??) 
     -  **Education** (2025-02-20 to ??) 
     -  **CFPB** (2025-03-05 to ??) Expert/Consultant
         - Concur: 2025-02-07 - 2025-03-28

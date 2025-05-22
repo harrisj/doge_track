@@ -18,10 +18,10 @@
 - slug: cms
 - people:
   - **Luke Farritor** (2025-01-31)
+  - **Amy Gleason** (2025-02-(24)~)
   - **Jeremy Lewin** (2025-02-03)
   - **Rachel Riley** (2025-02-03)
   - **Conor Fennessy** (2025-02-03)
-  - **Amy Gleason** (2025-02-24~)
   - **Edward Coristine** (2025-03-05)
   - **Marko Elez** (2025-03-05)
   - **Aram Moghaddassi** (2025-03-05)
@@ -133,8 +133,8 @@
 # Department of Agriculture
 - slug: usda
 - people:
-  - **Gavin Kliger** (2025-02-01~) (detailed from OPM)
-  - **Jordan Wick** (2025-02-01~) (detailed from DOGE)
+  - **Gavin Kliger** (2025-02-(01)~) (detailed from OPM)
+  - **Jordan Wick** (2025-02-(01)~) (detailed from DOGE)
   - **Michael Cole** (2025-02-XX)
 
 # Department of Defense
@@ -159,14 +159,14 @@
 - slug: doge
 - people:
   - **Amy Gleason** (2024-12-30 - 2024-02-18)
+  - **Jordan Wick** (2025-01-(20)~)
   - **Cole Killian** (2025-01-20)
   - **Elon Musk** (2025-01-20)
   - **Katie Miller** (2025-01-20)
-  - **Jordan Wick** (2025-01-20~)
   - **Adam Ramada** (2025-01-23)
-  - **Alexandra Beynon** (2025-02-04~)
-  - **Stephanie Holmes** (2025-02-05~)
-  - **Kendall Lindemann** (2025-02-10~)
+  - **Alexandra Beynon** (2025-02-(04)~)
+  - **Stephanie Holmes** (2025-02-(05)~)
+  - **Kendall Lindemann** (2025-02-(10)~)
   - **Amy Gleason** (2025-02-18) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
   - **Justin Aimonetti** (2025-02-XX)
   - **Joshua Hanley** (2025-02-XX)
@@ -182,15 +182,15 @@
   - **Payton Rehling** (detailed from SSA)
   - **Marko Elez** (detailed from DOL)
   - **Luke Farritor** (detailed from GSA)
+  - **Kyle Schutt** (2025-02-(19)~) (detailed from GSA)
   - **Edward Coristine** (2025-02-04) (detailed from GSA)
-  - **Kyle Schutt** (2025-02-19~) (detailed from GSA)
   - **Antoine McCord** (2025-03-11) Chief Information Officer
 
 # Department of Justice
 - slug: doj
 - people:
   - **Clayton Cromer** (2025-03-XX) (detailed from OPM)
-  - **Christopher Stanley** (2025-04-02~) Senior Advisor (detailed from OPM)
+  - **Christopher Stanley** (2025-04-(02)~) Senior Advisor (detailed from OPM)
   - **Jon Koval** (2025-04-15) (detail)
   - **Payton Rehling** (2025-04-15) (detail)
   - **Adam Hoffman** (2025-04-21)
@@ -220,8 +220,8 @@
 # Department of Energy
 - slug: energy
 - people:
-  - **Luke Farritor** (2025-02-04~ - 2025-02-08~) (detailed from DOGE)
-  - **Adam Ramada** (2025-02-04~ - 2025-02-08~) (detailed from DOGE)
+  - **Luke Farritor** (2025-02-(04)~ - 2025-02-(08)~) (detailed from DOGE)
+  - **Adam Ramada** (2025-02-(04)~ - 2025-02-(08)~) (detailed from DOGE)
   - **Ryan Riedel** (2025-02-07 - 2025-03-07) Chief Information Officer
 - systems:
     - Microsoft 365
@@ -231,12 +231,12 @@
 - slug: labor
 - people:
   - **Aram Moghaddassi**
+  - **Jordan Wick** (2025-02-(13)~) (detailed from DOGE)
+  - **Derek Geissler** (2025-02-(13)~)
+  - **Cole Killian** (2025-02-(13)~) (detail)
+  - **Sam Beyda** (2025-02-(13)~)
+  - **Marko Elez** (2025-02-(14)~)
   - **Adam Ramada** (2025-02-05) (detailed from DOGE)
-  - **Cole Killian** (2025-02-13~) (detail)
-  - **Jordan Wick** (2025-02-13~) (detailed from DOGE)
-  - **Derek Geissler** (2025-02-13~)
-  - **Sam Beyda** (2025-02-13~)
-  - **Marko Elez** (2025-02-14~)
   - **Miles Collins** (2025-03-05)
   - **Thomas Shedd** (2025-03-14) Chief Information Officer
   - **Keith Sonderling** (2025-03-18) Deputy Secretary
@@ -270,7 +270,6 @@
 # Department of the Treasury
 - slug: treasury
 - people:
-  - **Baris Akis**
   - **Marko Elez** (2025-01-21 - 2025-02-06) Special Advisor (IT&M)
   - **Tom Krause** (2025-01-23 - 2025-02-12) Senior Advisor for Technology and Modernization
   - **Tom Krause** (2025-02-13)
@@ -294,7 +293,7 @@
 - slug: dot
 - people:
   - **Daniel Abrahamson** Senior Advisor
-  - **Brian Stube** (2025-05-07~) Senior Advisor to the Secretary
+  - **Brian Stube** (2025-05-(07)~) Senior Advisor to the Secretary
 
 # Environmental Protection Agency
 - slug: epa
@@ -332,7 +331,7 @@
 - slug: fbi
 - people:
   - **Justin Monroe** (2025-01-29) (detailed from OPM)
-  - **Tarak Makecha** (2025-03-30~) Senior Advisor (detail)
+  - **Tarak Makecha** (2025-03-(30)~) Senior Advisor (detail)
 
 # Federal Emergency Management Agency
 - slug: fema
@@ -362,7 +361,7 @@
 - slug: fdic
 - people:
   - **Anthony Armstrong** (2025-04-10) (detailed from OPM)
-  - **Brooks Morgan** (2025-04-10) (detail)
+  - **Brooks Morgan** (2025-04-10) (detailed from Education)
   - **Adam Ramada** (2025-04-10) (detailed from DOGE)
 
 # Federal Mediation and Conciliation Service
@@ -371,8 +370,8 @@
 # Federal Trade Commission
 - slug: ftc
 - people:
-  - **Emily Bryant** (2025-03-28~) (detailed from GSA)
-  - **Gavin Kliger** (2025-03-28~) (detailed from OPM)
+  - **Emily Bryant** (2025-03-(28)~) (detailed from GSA)
+  - **Gavin Kliger** (2025-03-(28)~) (detailed from OPM)
 
 # Food and Drug Administration
 - slug: fda
@@ -380,6 +379,7 @@
 # General Services Administration
 - slug: gsa
 - people:
+  - **Edward Coristine** (2025-01-(20)~)
   - **Emily Bryant**
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
@@ -388,19 +388,18 @@
   - **Nicole Hollander** (2025-01-20)
   - **Jeremy Lewin** (2025-01-20)
   - **Ethan Shaotran** (2025-01-20)
-  - **Edward Coristine** (2025-01-20~)
-  - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
   - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
+  - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
+  - **Frank Schuler** (2025-02-(18)~) Senior Advisor
+  - **Kyle Schutt** (2025-02-(18)~)
   - **Nate Cavanaugh** (2025-02-03)
   - **Riley Sennott** (2025-02-12)
-  - **Frank Schuler** (2025-02-18~) Senior Advisor
-  - **Kyle Schutt** (2025-02-18~)
   - **Donald Park** (2025-02-XX)
-  - **Dave Malcher** (2025-04-24~)
-  - **Raj Jegannathan** (2025-04-24~)
-  - **Jonathan Mendelson** (2025-04-25~)
-  - **Marshall Wood** (2025-04-XX)
+  - **Raj Jegannathan** (2025-04-(24)~)
+  - **Dave Malcher** (2025-04-(24)~)
+  - **Jonathan Mendelson** (2025-04-(25)~)
   - **Jack Stein** (2025-04-XX)
+  - **Marshall Wood** (2025-04-XX)
 
 # Government Accountability Office
 - slug: gao
@@ -457,7 +456,7 @@
 - people:
   - **Scott Langmack** (2025-02-10) Senior Advisor
   - **Michael Mirski** (2025-02-10)
-  - **Christopher Sweet** (2025-04-10~) Special Assistant
+  - **Christopher Sweet** (2025-04-(10)~) Special Assistant
 - systems:
     - FASS-PH: Financial Assessment of Public Housing
         - Michael Mirski 2025-02-26 - ongoing
@@ -497,11 +496,10 @@
 # Internal Revenue Service
 - slug: irs
 - people:
-  - **Baris Akis**
   - **Gavin Kliger** (2025-02-19 - 2025-04-17) (detailed from OPM)
-  - **Sam Corcos** (2025-02-28 - 2025-05-06~) Senior Advisor for Technology and Modernization
+  - **Sam Corcos** (2025-02-28 - 2025-05-(06)~) Senior Advisor for Technology and Modernization
   - **Todd Newnam** (2025-04-XX) Senior Advisor
-  - **Sam Corcos** (2025-05-06~) Chief Information Officer
+  - **Sam Corcos** (2025-05-(06)~) Chief Information Officer
 
 # Merit System Protection Board
 - slug: MSPB
@@ -517,8 +515,8 @@
 # National Aeronautics and Space Administration
 - slug: nasa
 - people:
+  - **Riley Sennott** (2025-03-(14)~) (detailed from GSA)
   - **Alexander Simonpour** (2025-03-14) (detail)
-  - **Riley Sennott** (2025-03-14~) (detail)
 
 # National Archives
 - slug: nara
@@ -526,8 +524,8 @@
 # National Endowment for the Humanities
 - slug: neh
 - people:
-  - **Nate Cavanaugh** (2025-03-13~) (detailed from GSA)
-  - **Justin Fox** (2025-03-13~) (detailed from GSA)
+  - **Nate Cavanaugh** (2025-03-(13)~) (detailed from GSA)
+  - **Justin Fox** (2025-03-(13)~) (detailed from GSA)
 - systems:
     - Microsoft Entra ID
         - Nate Cavanaugh **[admin access]** 2025-03-12~ - ongoing
@@ -589,33 +587,32 @@
 # Office of Personnel Management
 - slug: opm
 - people:
-  - **Baris Akis**
+  - **Edward Coristine** (2025-01-(28)~) (detailed from GSA)
   - **Anthony Armstrong** (2025-01-20) Expert
   - **Riccardo Biasini** (2025-01-20) Expert
   - **Brian Bjelde** (2025-01-20) Expert
   - **OPM-3 (Akash Bobba)** (2025-01-20) Expert
   - **Clayton Cromer** (2025-01-20) Deputy General Counsel
-  - **Charles Ezell** (2025-01-20) Acting Director
+  - **Noah Peters** (2025-01-20) Senior Advisor
+  - **Joanna Wischer** (2025-01-20) Senior Advisor to the Director
+  - **Amanda Scales** (2025-01-20) Chief of Staff
   - **Greg Hogan** (2025-01-20 - 2025-02-11) Senior Advisor to the Director for Technology and Delivery
   - **Gavin Kliger** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
-  - **Noah Peters** (2025-01-20) Senior Advisor
-  - **Amanda Scales** (2025-01-20) Chief of Staff
-  - **Joanna Wischer** (2025-01-20) Senior Advisor to the Director
-  - **OPM-6 (Nikhil Rajpal)** (2025-01-24) Expert
+  - **Charles Ezell** (2025-01-20) Acting Director
   - **Jacob Altik** (2025-01-24) Senior Advisor to the Director
+  - **OPM-6 (Nikhil Rajpal)** (2025-01-24) Expert
   - **Justin Monroe** (2025-01-28) Expert
   - **Christopher Stanley** (2025-01-28) Expert
-  - **Edward Coristine** (2025-01-28~) (detailed from GSA)
-  - **Austin Raynor** (2025-01-30) Senior Advisor
   - **Chris Young** (2025-01-30) Expert
-  - **Christina Hanna** (2025-02-03) Expert
+  - **Austin Raynor** (2025-01-30) Senior Advisor
   - **Bryanne-Michelle Mlodzianowski** (2025-02-03) Expert
   - **Stephen Duarte** (2025-02-03) Expert
+  - **Christina Hanna** (2025-02-03) Expert
   - **Greg Hogan** (2025-02-11) Chief Information OFficer
-  - **Gavin Kliger** (2025-02-18) Senior Advisor to the Director for Information Technology
   - **Joe Gebbia** (2025-02-18) Expert
-  - **Mike Gonzalez** (2025-03-XX) Senior Advisor
+  - **Gavin Kliger** (2025-02-18) Senior Advisor to the Director for Information Technology
   - **Tarak Makecha** (2025-03-XX) Senior Advisor
+  - **Mike Gonzalez** (2025-03-XX) Senior Advisor
 
 # Peace Corps
 - slug: peace-corps
@@ -625,8 +622,8 @@
 # Securities and Exchange Commission
 - slug: sec
 - people:
-  - **Eliezer Mishory** (2025-04-05~)
-  - **Jonathan Mendelson** (2025-05-02~) (detailed from GSA)
+  - **Eliezer Mishory** (2025-04-(05)~)
+  - **Jonathan Mendelson** (2025-05-(02)~) (detailed from GSA)
 
 # Small Business Administration
 - slug: sba
@@ -641,6 +638,7 @@
 - slug: ssa
 - people:
   - **Mike Russo** (2025-01-31 - 2024-03-24) Chief Information Officer
+  - **Cole Killian** (2025-02-(20)~)
   - **OPM-3 (Akash Bobba)** (2025-02-03) (detailed from OPM)
   - **SSA-1 (Akash Bobba)** (2025-02-09) Expert
   - **Leland Dudek** (2025-02-16 - 2025-05-06) Acting Commissioner
@@ -648,7 +646,6 @@
   - **SSA-2 (Scott Coulter)** (2025-02-18 - 2025-03-23) (detailed from NASA)
   - **SSA-5** (2025-02-18) (detailed from DOGE)
   - **SSA-10 (Ethan Shaotran)** (2025-02-18) (detailed from GSA)
-  - **Cole Killian** (2025-02-20~)
   - **SSA-3 (Aram Moghaddassi)** (2025-02-22) (detailed from DOL)
   - **SSA-4 (Antonio Gracias)** (2025-02-23) Expert
   - **SSA-6 (Jon Koval)** (2025-02-23) Expert

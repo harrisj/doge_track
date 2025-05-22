@@ -3,7 +3,7 @@
 @import "jit-refresh.css"; /* triggers frontend rebuilds */
 
 /* Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Special+Elite&display=swap')
 layer(base);
 
 @import 'tailwindcss';
@@ -21,7 +21,6 @@ layer(base);
   }
 
   html, body {
-    font-family: "Raleway", system-ui, sans-serif;
     /* overflow-x: none; */
   }
 
@@ -31,6 +30,10 @@ layer(base);
 
   h1 {
     font-family: "Special Elite", serif;
+  }
+
+  date {
+    @apply font-mono;
   }
 
   code * {
@@ -63,6 +66,30 @@ layer(base);
 
   .h4 {
     @apply text-lg;
+  }
+
+  .my-text-lg {
+    @apply prose sm:prose-lg md:prose-xl lg:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  }
+
+  .my-text {
+    @apply prose md:prose-lg lg:prose-xl xl:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  }
+
+  .my-text-fixed {
+    @apply prose prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  }
+
+  .my-text-small {
+    @apply prose lg:prose-lg xl:prose-xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  }
+
+  .my-text-smallest-fixed {
+    @apply prose prose-sm prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  }
+
+  .my-text-smallest {
+    @apply prose prose-sm lg:prose-base xl:prose-lg prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
   }
 }
 
@@ -116,6 +143,10 @@ layer(base);
   @apply rounded bg-base-100 border;
 }
 
+@theme {
+  --font-sans: "Raleway", system-ui, sans-serif;
+  --font-mono: "Roboto Mono", "ui-monospace";
+}
 
 /* Set up Tailwind imports */
 

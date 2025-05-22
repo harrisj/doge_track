@@ -42,16 +42,6 @@
 %}
 
 <table class="table table-sm">
-  <thead>
-    <tr>
-      <th>Start</th>
-      <th>End</th>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Move</th>
-      <th>Notes</th>
-    </tr>
-  </thead>
   <tbody>
   {% positions.sort_by {|p| p.sort_date}.each do |pos| %}
     <tr>
