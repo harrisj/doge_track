@@ -33678,6 +33678,40 @@
     aliases: []
   system_access: []
   obj_type: Agency
+- id: NTSB
+  name: National Transportation Safety Board
+  slug: NTSB
+  page_slug: independent
+  short_name: NTSB
+  doge_base: false
+  path: "/agencies/independent"
+  parent_id:
+  children: []
+  positions: []
+  events:
+  - id: 4h8xjbch
+    type: official
+    date: '2025-05-21'
+    sort_date: '2025-05-21'
+    time:
+    text: A spokesperson for the NTSB confirmed that a DOGE team had recently been assigned to the agency to review its operations
+    fuzz:
+    comment:
+    source: https://www.reuters.com/en/doge-team-assigned-review-national-transportation-safety-board-operations-2025-05-21/
+    source_title: DOGE team assigned to review National Transportation Safety Board operations
+    source_name: Reuters
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: NTSB
+      slug: NTSB
+      name: National Transportation Safety Board
+      short_name: NTSB
+    people: []
+    aliases: []
+  system_access: []
+  obj_type: Agency
 - id: ODNI
   name: Office of the Director of National Intelligence
   slug: odni
@@ -43588,27 +43622,6 @@
       short_name: USIP
     people: []
     aliases: []
-  - id: 4ySjWC8N
-    type: disruption
-    date: '2025-03-17'
-    sort_date: '2025-03-17'
-    time:
-    text: USIP President George Moose is escorted out of the building by DC police who entered with DOGE at 5:30pm
-    fuzz:
-    comment:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
-    source_title: United States Institute of Peace v. Jackson (D.D.C.)
-    source_name: Court Filing
-    case_no: 1:25-cv-00804
-    track_id:
-    system_id:
-    agencies:
-    - id: USIP
-      slug: usip
-      name: US Institute of Peace
-      short_name: USIP
-    people: []
-    aliases: []
   - id: 6itXQAa6
     type: disruption
     date: '2025-03-17'
@@ -43640,6 +43653,27 @@
     - slug: kenneth-jackson
       name: Kenneth Jackson
       sort_name: Jackson
+    aliases: []
+  - id: 4ySjWC8N
+    type: disruption
+    date: '2025-03-17'
+    sort_date: '2025-03-17'
+    time:
+    text: USIP President George Moose is escorted out of the building by DC police who entered with DOGE at 5:30pm
+    fuzz:
+    comment:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
+    source_title: United States Institute of Peace v. Jackson (D.D.C.)
+    source_name: Court Filing
+    case_no: 1:25-cv-00804
+    track_id:
+    system_id:
+    agencies:
+    - id: USIP
+      slug: usip
+      name: US Institute of Peace
+      short_name: USIP
+    people: []
     aliases: []
   - id: 9A3FaYQB
     type: disruption
@@ -43883,6 +43917,51 @@
     source_title: United States Institute of Peace v. Jackson (D.D.C.)
     source_name: Court Filing
     case_no: 1:25-cv-00804
+    track_id:
+    system_id:
+    agencies:
+    - id: USIP
+      slug: usip
+      name: US Institute of Peace
+      short_name: USIP
+    people: []
+    aliases: []
+  - id: 3ryF6bdi
+    type: legal
+    date: '2025-05-19'
+    sort_date: '2025-05-19'
+    time:
+    text: >-
+      The judge presiding over the USIP's lawsuit against the Trump administration found ruled that the firing of the agency's board was illegal, rendering
+      all subsequent actions taken by Nate Cavanaugh for DOGE as null and void.
+    fuzz:
+    comment:
+    source: https://apnews.com/article/trump-doge-institute-of-peace-lawsuit-39d79077c8fa5336634d518f30a9a807
+    source_title: Judge bars Trump administration from shutting peace institute that sought to end violent conflicts
+    source_name: AP
+    case_no: 1:25-cv-00804
+    track_id:
+    system_id:
+    agencies:
+    - id: USIP
+      slug: usip
+      name: US Institute of Peace
+      short_name: USIP
+    people: []
+    aliases: []
+  - id: 4t43UI0F
+    type: official
+    date: '2025-05-21'
+    sort_date: '2025-05-21'
+    time:
+    text: >-
+      The US Institute of Peace retook control of its headquarters and re-entered the premises for the first time since being escorted out in DOGE's takeover
+    fuzz:
+    comment: Should I have some sort of restoration event?
+    source: https://apnews.com/article/trump-musk-doge-institute-of-peace-headquarters-df9dc7d4b1ea744db647527a4b28d807
+    source_title: Institute of Peace reclaims its headquarters after court win over Musk’s cost-cutting team
+    source_name: AP
+    case_no:
     track_id:
     system_id:
     agencies:
