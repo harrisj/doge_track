@@ -7,7 +7,6 @@ template_engine: serbea
 
 {% all_wreckers = site.data.people.select {|p| p.category == 'wrecker' } %}
 
-{% intro_tab = capture do %}
 From the start, DOGE has moved aggressively across the federal government to shutter agencies, cancel spending and seize data for itself. To do this, they have relied on a specific type of person that I call "Wreckers" - usually young and male, from a technical background, willing to do whatever it takes to get the job done quickly. Scratch the surface of any horror story about DOGE's conduct and you'll usually find a wrecker at the core.
 
 ## The DOGE Teams
@@ -31,9 +30,7 @@ Rather than hiring staff at specific agencies, DOGE has exploited a mechanism fo
 Detailing arrangements are relatively common in the government and can be a highly convenient way to reallocate resources or share knowledge across multiple agencies. They also are how the US Digital Service would embed its own staff within agencies, and DOGE simply appropriated that mechanism for its own ends. What DOGE has done that is unusual is to detail staff to many different agencies simultaneously, with staff sometimes juggling 5 or more simultaneous detailing assignments. For instance, sources described Gavin Kliger pulling 5 laptops out of his bag (one for each agency he was detailed to) when at an early meeting with the IRS. This is very much not normal, and it is likely that DOGE took this approach to both spread out its limited staff and cover its tracks.
 
 There are still many details we don't know about DOGE's details (*sorry, I had to do it!*). Some of the relevant MOUs have been made public through FOIA or court filings, but many of the detailing arrangements listed below are inferred rather than verified. We also don't yet know if serial details were also done from the home base or if an agency could detail its detailees onwards to other agencies. Also, while many details were not reimbursed, there are some cases where the host agency would pay for the DOGE staffer for reasons that aren't necessarily clear. Team selection is also a black box. Of course, there will be answers to many of these questions in time, but for now we have to make sense the best we can of a deliberately murky situation.
-{% end %}
 
-{% bases_tab = capture do %}
 ## Home Bases
 
 For reasons that aren't entirely clear, DOGE chose to distribute its staff across three different starting agencies as home bases rather than basing them entirely out of USDS/DOGE and detailing them from there. One possibility is that DOGE staff were involved with early work to seize control of centralized services and databases at both the GSA and OPM, so it made sense to start them there. One of the first moves of DOGE at both GSA and OPM was to create guarded and sealed enclaves where they could work and even live in, away from scrutiny. Perhaps, it simply was a matter of the DOGE headquarters at the Eisenhower Executive Office Building not being large enough to install sofas and bunks for all.
@@ -62,44 +59,35 @@ The {{ agency_link("GSA", "General Service Administration") }} is an agency that
 
 {% gsa_wreckers = all_wreckers.select {|w| w.start_agency == "GSA" } %}
 {%@ "wrecker_table", wreckers: gsa_wreckers %}
-{% end %}
 
-{% other_tab = capture do %}
 ## Other Agencies
 
 There are also a fair number of Wreckers who started at other agencies, possibly because agency policy or practices might have made it difficult to detail someone from elsewhere. Or, there might have been explicit direction from agency leadership to hire staff there. For instance, there were four Wreckers hired directly from SpaceX to work at the FAA for the short-term on the direction of the Department of Transportation head, Sean Duffy. Some of these names might also be reclassified if I am able to determine they started at GSA or OPM and were actually detailed to the agency listed below.
 
 {% other_wreckers = all_wreckers.reject {|x| ["GSA", "OPM", "DOGE"].include? x.start_agency }.sort_by {|x| [x.start_agency, x.sort_date]} %}
-<table class="table table-sm lg:table-md">
+<table class="table table-xs sm:table-sm md:table-md lg:table-lg">
   <thead>
     <tr>
+      <th>Agency</th>
       <th>Name</th>
       <th>Age</th>
-      <th>Agency</th>
-      <th>Start Date</th>
-      <th>Background</th>
-      <th>Notes</th>
+      <th>Start</th>
+      <th>Skill</th>
+      <th>Detailed To</th>
     </tr>
   </thead>
   <tbody>
   {% other_wreckers.each do |person|  %}
     {% details = person.positions.reject {|pos| pos.agency_id == person.start_agency } %}
-    <tr>
-      <td>{{ person_link(person.name) }}</td>
-      <td>{{ person.age }}</td>
-      <td>{{ agency_link(person.start_agency) }}</td>
-      <td><nobr>{{ person.start_date }}</nobr></td>
-      <td>{{ person_background(person) }}</td>
-      <td>{% if person.table_note %}{{ person.table_note }} {% end %}
+    <tr class="my-table-sm text-left">
+      <td class="align-top">{{ agency_link(person.start_agency) }}</td>
+      <td class="align-top">{{ person_link(person.name) }}</td>
+      <td class="align-top">{{ person.age }}</td>
+      <td class="align-top"><nobr>{{ render EdtfFormat.new(person.start_date, :compact, :filled) }}</nobr></td>
+      <td class="align-top">{{ person_background(person) }}</td>
+      <td class="align-top">{% if person.table_note %}{{ person.table_note }} {% end %}
           {% if details.any? %}{{ details | agencies | uniq | agency_links }}{% end %}</td>
     </tr>
   {% end %}
   </tbody>
 </table>
-{% end %}
-
-{% more_details_tab = capture do %}
-
-{% end %}
-
-{%@ "tabs", tabs: {"Intro": intro_tab, "Home Bases": bases_tab, "At Other Agencies": other_tab, "More Details": more_details_tab } %}

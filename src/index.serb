@@ -16,7 +16,7 @@ layout: page
   <li>
     <hr/>
     <div class="timeline-start">
-      <ul class="menu menu-lg">
+      <ul class="menu menu-lg my-text-small-fixed">
       <li class="menu-title font-2xl font-bold">What Is This?</li>
       <li class="align-right"><a href="{{ link "about/this-site.md" }}">About This Site</a></li>
       <li><a href="{{ link "about/this-data.md" }}">About This Data</a></li>
@@ -29,11 +29,14 @@ layout: page
   <li>
     <hr/>
     <div class="timeline-end">
-    <ul class="menu menu-lg">
+    <ul class="menu menu-lg my-text-small-fixed">
     <li class="menu-title">Who's Involved</li>
+    <li><a href="{{ link "topics/categories.md" }}">Categorizing DOGE</a></li>
+    <li><a href="{{ link "people.serb" }}">Who Is Everybody?</a></li>
     <li><a href="{{ link "topics/wreckers.md" }}">The Wreckers</a></li>
     <li><a href="{{ link "topics/support-team.md" }}">The Support Team</a></li>
     <li><a href="{{ link "topics/enablers.md" }}">The Enablers</a></li>
+    <li><a href="{{ link "topics/leaders.md" }}">Leaders and Boosters</a></li>
     <li><a href="{{ link "topics/aliases.md" }}">Unidentified Members</a></li>
     <li><a href="{{ link "topics/mysteries.md" }}">Open Questions</a></li>
     </ul>
@@ -43,7 +46,7 @@ layout: page
   <li>
     <hr/>
     <div class="timeline-start">
-    <ul class="menu menu-lg">
+    <ul class="menu menu-lg my-text-small-fixed">
     <li class="menu-title">Agencies Targeted</li>
     <li><a href="{{ link "agencies/opm.md" }}">Office of Personnel Management (OPM)</a></li>
     <li><a href="{{ link "agencies/gsa.md" }}">General Services Administration (GSA)</a></li>
@@ -60,16 +63,6 @@ layout: page
     <li><a href="{{ link "agencies/treasury.md" }}">The Treasury Department</a></li>
     <li><a href="{{ link "agencies/other-majors.md" }}">Other Major Agencies</a></li>
     <li><a href="{{ link "agencies/independent.md" }}">Independent Agencies</a></li>
-    </ul>
-    </div>
-    <hr/>
-  </li>
-  <li>
-    <hr/>
-    <div class="timeline-end">
-    <ul class="menu menu-lg">
-    <li class="menu-title">Notable Names</li>
-    <li><a href="{{ link "people/luke-farritor.md" }}">Luke Farritor</a></li>
     </ul>
     </div>
     <hr/>

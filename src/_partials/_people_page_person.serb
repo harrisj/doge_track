@@ -18,12 +18,10 @@
   end
 %}
 
-
-<h2 class="my-text-lg font-bold mt-5"><i class="fas {{ person_icon(person) }} mr-2"></i><span class="font-title">{{ person.name }}</span></h2>
-
-<div class="ml-8">
-  <p class="my-text"><strong>{{ person.category.titleize }}</strong> (field: {{ person_background(person) }}{% if person.age %}, age: {{ person.age }}{% end %})</p>
-  <p class="my-text-small">{% if person.blurb %}<div>{{ person.blurb | markdownify }}</div>{% end %}</p>
+<h2 class="prose sm:prose-lg md:prose-xl lg:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-0 leading-none"><span class="sm:mr-2 collapse sm:visible"><i class="fas {{ person_icon(person) }}"></i><span class="font-title">{{ person.name }}</span></h2>
+<div class="sm:ml-7 md:ml-8 lg:ml-9.5">
+  <div class="prose prose-sm md:prose-base prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-2 leading-none"><strong>{{ person.category.titleize }}</strong>{% if person.background %}, {{ person_background(person) }}{% end %}{% if person.age %}, age {{ person.age }}{% end %}</div>
+  {% if person.blurb %}<p class="prose prose-sm md:prose-base prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-0 leading-none mb-2">{{ person.blurb | markdownify | remove: "<p>" | remove: "</p>" }}</p>{% end %}
 
   {% if person.positions.any? %}
     {%@ 'person_positions_table', positions: person.positions %}

@@ -24,10 +24,6 @@ layer(base);
     /* overflow-x: none; */
   }
 
-  .font-title {
-    font-family: "Special Elite", serif;
-  }
-
   h1 {
     font-family: "Special Elite", serif;
   }
@@ -68,12 +64,24 @@ layer(base);
     @apply text-lg;
   }
 
+  .font-title {
+    font-family: "Special Elite", serif;
+  }
+
+  .my-text-2xl {
+    @apply prose prose-xl sm:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  }
+
+  .my-text-xl {
+    @apply prose sm:prose-xl md:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  }
+
   .my-text-lg {
     @apply prose sm:prose-lg md:prose-xl lg:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
   }
 
   .my-text {
-    @apply prose md:prose-lg lg:prose-xl xl:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+    @apply prose prose-sm sm:prose-base md:prose-lg lg:prose-xl xl:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
   }
 
   .my-text-fixed {
@@ -81,7 +89,7 @@ layer(base);
   }
 
   .my-text-small {
-    @apply prose lg:prose-lg xl:prose-xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+    @apply prose prose-sm md:prose-base lg:prose-lg xl:prose-xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
   }
 
   .my-text-smallest-fixed {
@@ -90,6 +98,22 @@ layer(base);
 
   .my-text-smallest {
     @apply prose prose-sm lg:prose-base xl:prose-lg prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  }
+
+  .my-table {
+    @apply font-mono
+  }
+
+  .my-table {
+    @apply font-mono
+  }
+
+  .my-table-sm {
+    @apply font-mono
+  }
+
+  .my-table-2sm {
+    @apply font-mono
   }
 }
 

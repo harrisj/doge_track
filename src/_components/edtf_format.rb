@@ -4,17 +4,18 @@ require 'edtf'
 
 # A class for formatting EDTF dates in standard ways
 class EdtfFormat
-  def initialize(date_str, format = nil)
-    @date = Date.edtf(date_str)
-    @format = format || :iso
+  def initialize(date, format = :iso, filled = :none)
+    @date = Date.edtf(date)
+    @format = format
+    @filled = filled
   end
 
   def display_exact
     case @format
     when :compact
-      @date.strftime('%m/%d')
+      "#{'  ' if @filled}#{@date.strftime('%m/%d')}"
     when :iso
-      @date.strftime('%Y-%m-%d')
+      "#{'  ' if @filled}#{@date.strftime('%Y-%m-%d')}"
     when :human
       @date.humanize
     end
@@ -26,9 +27,9 @@ class EdtfFormat
     humanized = "Sometime in #{@date.strftime('%b %Y')}"
     case @format
     when :compact
-      "<abbr title=\"#{humanized}\">#{@date.strftime('%m-XX')}</abbr>"
+      "#{'  ' if @filled}<abbr title=\"#{humanized}\">#{@date.strftime('%m-XX')}</abbr>"
     when :iso
-      "<abbr title=\"#{humanized}\">#{@date.strftime('%Y-%m-XX')}</abbr>"
+      "#{'  ' if @filled}<abbr title=\"#{humanized}\">#{@date.strftime('%Y-%m-XX')}</abbr>"
     when :human
       @date.humanize
     end
@@ -39,9 +40,9 @@ class EdtfFormat
 
     case @format
     when :compact
-      "<abbr title=\"#{humanized}\">#{@date.strftime('ca. %m/%d')}~</abbr>"
+      "<abbr title=\"#{humanized}\">#{@date.strftime('c.%m/%d')}</abbr>"
     when :iso
-      "<abbr title=\"#{humanized}\">>#{@date}~</abbr>"
+      "<abbr title=\"#{humanized}\">c.#{@date}</abbr>"
     when :human
       @date.humanize
     end
