@@ -1,55 +1,10 @@
 {% import 'macros' %}
 
-{% macro 'position_summary' do |pos|
-    type_str = case pos.type
-      when 'other'
-        nil
-      when 'internal'
-        'internal xfer'
-      else
-        pos.type
-      end
-
-    title_str = ""
-    if pos.title
-      title_str += " <strong>#{pos.title}</strong>"
-
-      if pos.office
-        title_str += " (#{pos.office})"
-      end
-    end
-
-    hire_details = [
-      pos.sge ? "SGE" : nil,
-      pos.appt_type && pos.appt_type != 'Other' ? pos.appt_type : nil,
-      pos.nte_date ? "NTE #{pos.nte_date}" : nil,
-      pos.pay_grade,
-      pos.supervisory ? 'supervisory' : nil,
-      pos.excepted ? 'excepted' : nil ,
-      pos.salary == "$0" ? "volunteer" : nil ,
-      pos.salary && pos.salary != '$0' ? "<strong>#{pos.salary} annually</strong>" : nil,
-      pos.reimbursement_amount ? "reimbursed #{pos.reimbursement_amount}" : nil
-    ].compact
-
-    if hire_details.any?
-      hire_str = " (#{hire_details.join(', ')})"
-    end
-
-    if pos.table_note
-      note_str = "[#{pos.table_note}]"
-    end
-
-    out_str = [type_str, title_str, hire_str, note_str].map {|x| x.blank? ? nil : x }.compact.map {|x| "<span>#{x}</span>"}.join(" ")
-
-    out_str.html_safe
-   end
-%}
-
-<table class="mt-4 table-fixed table-xs sm:table-sm md:table-md border-4">
+<table class="mt-4 table-fixed table-xs sm:table-sm lg:table-md border-4">
   <thead>
   <tr class="my-text-2sm">
-    <th class="w-32 text-left">Move</th>
-    <th class="w-32 text-left">Timeframe</th>
+    <th class="w-24 sm:w-26 md:w-32 text-left">Position</th>
+    <th class="w-28 sm:w-30 md:w-34 lg:w-44 text-left">Times</th>
     <th class="text-left">Position</th>
   </tr>
   </thead>
@@ -57,7 +12,7 @@
     {% positions.each do |pos| %}
     <tr class="font-mono">
       <td class="align-top text-left"><nobr>{{ position_move(pos) }}</nobr></td>
-      <td class="align-top">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }} - {{ render EdtfFormat.new(pos.end_date, :compact) }}{% else %}<em>dates unknown</em>{% end %}</td>
+      <td class="align-top">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }} - {{ render EdtfFormat.new(pos.end_date, :compact) }}{% else %}-{% end %}</td>
       <td class="align-top">{{ position_summary(pos) }}</td>
     </tr>
     {% end %}

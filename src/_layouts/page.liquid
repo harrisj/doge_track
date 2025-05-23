@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
-<div class="md:container md:mx-auto p-10">
-  <div class="my-text">
+<div class="md:container md:mx-auto px-8">
+  {% render 'header_bar', metadata: site.metadata %}
+  <main class="my-text flex flex-col min-h-screen">
     {{ content }}
-  </div>
+  </main>
+  {% render 'footer', metadata: site.metadata %}
 </div>

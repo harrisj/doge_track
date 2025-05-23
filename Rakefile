@@ -29,7 +29,7 @@ end
 namespace :frontend do
   desc 'Build the frontend with esbuild for deployment'
   task :build do
-    sh 'touch frontend/styles/jit-refresh.css'
+    sh 'touch frontend/styles/jit-refresh.css' if BRIDGETOWN_ENV == 'production'
     sh 'yarn run esbuild'
   end
 
@@ -129,3 +129,8 @@ task generate: 'generate:all'
 
 desc 'Clean and regenerate all the pages'
 task regenerate: ['data:rebuild_db', 'generate']
+
+desc 'Trigger a deployment on Render'
+task :deploy do
+  sh 'curl $RENDER_HOOK'
+end
