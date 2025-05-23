@@ -129,8 +129,3 @@ task generate: 'generate:all'
 
 desc 'Clean and regenerate all the pages'
 task regenerate: ['data:rebuild_db', 'generate']
-
-desc 'Trigger a deployment on Render'
-task :deploy do
-  sh 'curl $RENDER_HOOK'
-end
