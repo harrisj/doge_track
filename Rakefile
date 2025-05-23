@@ -29,6 +29,7 @@ end
 namespace :frontend do
   desc 'Build the frontend with esbuild for deployment'
   task :build do
+    sh 'touch frontend/styles/jit-refresh.css'
     sh 'yarn run esbuild'
   end
 
