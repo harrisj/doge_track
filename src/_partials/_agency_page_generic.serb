@@ -1,39 +1,22 @@
 {% import 'macros' %}
 
 {% agency = find_agency(id) %}
+{%@ 'agency_title', agency: agency %}
 
-{%@ "agency_title", agency: agency %}
-
-{% about_tab = capture do %}
-## About
-
-{{ blurb | markdownify }}
+{% if blurb %}
+  <div class="prose my-text-smaller">{{ blurb | markdownify }}
 {% end %}
 
-{% people_tab = capture do %}
-## People
+{% if agency.positions.any? %}
+<h2>Positions</h2>
 
-{% agency_positions = agency.positions %}
-
-{% if agency_positions.any? %}
-{%@ 'agency_positions_table', positions: agency_positions %}
+{%@ 'agency_positions_table', positions: agency.positions %}
 {% end %}
-{% end %}
-
-{% events_tab = capture do %}
-## Events
 
 {% agency_events = site.data.events.find_all {|e| e.agencies_parents.include? agency.id } %}
 
 {% if agency_events.any? %}
+<h2>Events</h2>
+
 {%@ 'event_timeline', events: agency_events %}
-{% end %}  
 {% end %}
-
-{% systems_tab = capture do %}
-Systems info will go here.
-{% end %}
-
-{%@ 'tabs', tabs: {"About": about_tab, "People": people_tab, "Events": events_tab, "Systems": systems_tab} %}
-
-

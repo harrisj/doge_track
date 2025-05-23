@@ -170,3 +170,26 @@
       ''
     end
    end %}
+
+{% macro "position_move" do |pos| 
+  if pos.agency_id
+    raise pos.inspect unless pos.agency
+    
+    out = if pos.from_agency_id
+      arrow = pos.type == 'internal' ? 'arrows-left-right' : 'arrow-right'
+      "#{agency_link(pos.from_agency_id, pos.from_agency.short_name)} <i class=\"fa-solid fa-#{arrow}\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
+    elsif pos.type == 'appointed'
+      "<i class=\"fa-solid fa-right-to-bracket\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
+    elsif pos.type == 'promotion'
+      "<i class=\"fa-solid fa-up-long\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
+    elsif pos.type == 'demotion'
+      "<i class=\"fa-solid fa-down-long\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
+    else
+      agency_link(pos.agency_id, pos.agency.short_name)
+    end
+    
+    out.html_safe
+  else
+    ''
+  end
+end %}

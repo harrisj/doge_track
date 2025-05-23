@@ -18,12 +18,13 @@
   end
 %}
 
-<h2 class="prose sm:prose-lg md:prose-xl lg:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-0 leading-none"><span class="sm:mr-2 collapse sm:visible"><i class="fas {{ person_icon(person) }}"></i><span class="font-title">{{ person.name }}</span></h2>
+<h2 class="prose sm:prose-lg md:prose-xl lg:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-0 leading-none"><i class="fas {{ person_icon(person) }} sm:mr-2"></i><span class="font-title">{{ person.name }}</span></h2>
 <div class="sm:ml-7 md:ml-8 lg:ml-9.5">
   <div class="prose prose-sm md:prose-base prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-2 leading-none"><strong>{{ person.category.titleize }}</strong>{% if person.background %}, {{ person_background(person) }}{% end %}{% if person.age %}, age {{ person.age }}{% end %}</div>
   {% if person.blurb %}<p class="prose prose-sm md:prose-base prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-0 leading-none mb-2">{{ person.blurb | markdownify | remove: "<p>" | remove: "</p>" }}</p>{% end %}
-
-  {% if person.positions.any? %}
-    {%@ 'person_positions_table', positions: person.positions %}
-  {% end %}
 </div>
+  {% if person.positions.any? %}
+  <div class="sm:ml-3 md:ml-4 lg:ml-5 ">
+    {%@ 'person_positions_table', positions: person.positions %}
+  </div>
+  {% end %}

@@ -11,10 +11,10 @@ to all.
 
 Health and Human Services is the parent agency for several other important agencies where DOGE has also had a presence:
 
-- Centers for Disease Control and Prevention (CDC) do just that for disease response and management. They are headquartered in Atlanta.
-- Centers for Medicare and Medicaid Services (CMS) administers government-provided healthcare plans for millions of Americans.
-- Food and Drug Administration (FDA) is primarily responsible for ensuring the safety of many foods (except meat), medications and medical devices.
-- National Institutes of Health (NIH) are a collection of centers that fund and track research in various medical fields
+- **Centers for Disease Control and Prevention (CDC)** do just that for disease response and management. They are headquartered in Atlanta.
+- **Centers for Medicare and Medicaid Services (CMS)** administers government-provided healthcare plans for millions of Americans.
+- **Food and Drug Administration (FDA)** is primarily responsible for ensuring the safety of many foods (except meat), medications and medical devices.
+- **National Institutes of Health (NIH)** are a collection of centers that fund and track research in various medical fields
 
 Since DOGE staff have been granted wide access to systems across all these agencies, I have collected them all on this page, but I will still try to track internal transfers.
 {% end %}

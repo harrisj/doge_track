@@ -56,6 +56,7 @@
     description: Provisional Appt NTE
     appt_type_code: 44
     appt_type: Schedule C
+    excepted: true
     pd_code: PMGS31263
     title: Senior Advisor to the Director
     pay_grade: GS-15
@@ -74,7 +75,7 @@
     end_date: 2025-03-06
     end_date_truth: reported
     table_note: Detail assumed to be from OPM
-    comment: Assuming detailed from OPM
+    comment: Assuming detail from OPM
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
   - id: detail-opm-fcc-altik
     type: detailed
@@ -107,7 +108,7 @@
     from: OPM
     agency: DHS
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    table_note: DHS presence reported by _New York Times_
+    table_note: DHS position reported by NYT
     comment: Find more definitive info for DHS link
   - id: opm-anthony-armstrong
     type: appointed
@@ -116,7 +117,8 @@
     start_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 48
-    appt_type: Other (Except NonPerm)
+    appt_type: Other
+    excepted: true
     pd_code: 6A39742
     title: Expert
     pay_grade: ED-00
@@ -131,6 +133,7 @@
     from: OPM
     start_date: 2025-04-10
     start_date_truth: reported
+    table_note: No details available
     source: https://www.thehandbasket.co/p/doge-fdic
     agency: FDIC
 
@@ -143,13 +146,14 @@
   positions:
   - id: education-balajadia
     type: appointed
-    comment: No details, but identified in NYT roundup, claims in many other agencies
+    table_note: Reported by the NYT that she is in Education and other agencies, but no public documentation
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
     agency: Education
 
 - name: Sam Beyda
   sort_name: Beyda
   slug: sam-beyda
+  blurb: Only public mention is a single NBC reports. More information needed.
   category: unknown
   positions:
   - id: dol-sam-beyda
@@ -172,6 +176,7 @@
     agency: DOGE
     start_date: 2025-02-(04)~
     start_date_truth: guessed
+    table_note: Date guessed, reported as detailing from DOGE to Education
     comment: FIXME, find earliest details of arrival; is she GSA?
   - id: detail-doge-education-alexandra-beynon
     type: detailed
@@ -181,6 +186,7 @@
     agency: Education
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
     comment: Details just provided in court testimony
+    table_note: Details verified in court testimony
     documents:
     - doge-staff-education-20250407
 
@@ -200,7 +206,8 @@
     nte_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 48
-    appt_type: Other (Except NonPerm)
+    appt_type: Other
+    excepted: true
     pd_code: 6A39741
     title: Expert
     pay_grade: ED-00
@@ -248,7 +255,8 @@
     start_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 48
-    appt_type: Other (Except NonPerm)
+    appt_type: Other
+    excepted: true
     pd_code: 6A39743
     title: Expert
     pay_grade: ED-00
@@ -746,7 +754,8 @@
     start_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 48
-    appt_type: Other (Except NonPerm)
+    appt_type: Other
+    excepted: true
     pd_code: 6A39749
     title: Expert
     pay_grade: ED-00
@@ -1159,7 +1168,8 @@
     start_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 48
-    appt_type: Other (Except NonPerm)
+    appt_type: Other
+    excepted: true
     pd_code: 6A39752
     title: Expert
     pay_grade: ED-00
@@ -1354,7 +1364,8 @@
     start_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 48
-    appt_type: Other (Except NonPerm)
+    appt_type: Other
+    excepted: true
     pd_code: 6A39735
     title: Expert
     pay_grade: ED-00
@@ -2146,7 +2157,8 @@
     start_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 48
-    appt_type: Other (Except NonPerm)
+    appt_type: Other
+    excepted: true
     pd_code: 6A39750
     title: Expert
     pay_grade: ED-00
@@ -2241,7 +2253,8 @@
     start_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 48
-    appt_type: Other (Except NonPerm)
+    appt_type: Other
+    excepted: true
     pd_code: 6A39734
     title: Expert
     pay_grade: ED-00
@@ -2516,7 +2529,8 @@
     nte_date_truth: verified
     description: Provisional Appt NTE
     appt_type_code: 48
-    appt_type: Other (Except NonPerm)
+    appt_type: Other
+    excepted: true
     pd_code: 6A39748
     title: Senior Advisor
     pay_grade: GS-15
@@ -3040,7 +3054,8 @@
     start_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 48
-    appt_type: Other (Except NonPerm)
+    appt_type: Other
+    excepted: true
     pd_code: 6A39736
     title: Expert
     pay_grade: ED-00
@@ -3376,7 +3391,8 @@
     start_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 48
-    appt_type: Other (Except NonPerm)
+    appt_type: Other
+    excepted: true
     pd_code: 6A39737
     title: Expert
     pay_grade: ED-00

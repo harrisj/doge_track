@@ -28,6 +28,7 @@ dot-abrahamson:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -97,6 +98,7 @@ doge-aimonetti:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -167,6 +169,7 @@ opm-jacob-altik:
   salary:
   pd_code: PMGS31263
   sge:
+  excepted: true
   title: Senior Advisor to the Director
   series: 301
   supervisory: false
@@ -234,6 +237,7 @@ detail-opm-usadf-altik:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -241,7 +245,7 @@ detail-opm-usadf-altik:
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
   reimbursed:
   reimbursement_amount:
-  comment: Assuming detailed from OPM
+  comment: Assuming detail from OPM
   qualifications:
   table_note: Detail assumed to be from OPM
   documents:
@@ -268,6 +272,16 @@ detail-opm-usadf-altik:
     short_name: USADF
     doge_base: false
     path: "/agencies/usadf"
+    parent_id:
+    obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
     parent_id:
     obj_type: Agency
   agency_ids:
@@ -301,6 +315,7 @@ detail-opm-fcc-altik:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -337,6 +352,16 @@ detail-opm-fcc-altik:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - FCC
 detail-opm-dhs-armstrong:
@@ -368,6 +393,7 @@ detail-opm-dhs-armstrong:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -377,7 +403,7 @@ detail-opm-dhs-armstrong:
   reimbursement_amount:
   comment: Find more definitive info for DHS link
   qualifications:
-  table_note: DHS presence reported by _New York Times_
+  table_note: DHS position reported by NYT
   documents:
   person:
     name: Anthony Armstrong
@@ -402,6 +428,16 @@ detail-opm-dhs-armstrong:
     short_name: DHS
     doge_base: true
     path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
     parent_id:
     obj_type: Agency
   agency_ids:
@@ -430,11 +466,12 @@ opm-anthony-armstrong:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 48
-  appt_type: Other (Except NonPerm)
+  appt_type: Other
   pay_grade: ED-00
   salary:
   pd_code: 6A39742
   sge:
+  excepted: true
   title: Expert
   series: 301
   supervisory: false
@@ -502,6 +539,7 @@ detail-opm-fdic-armstrong:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -511,7 +549,7 @@ detail-opm-fdic-armstrong:
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: No details available
   documents:
   person:
     name: Anthony Armstrong
@@ -536,6 +574,16 @@ detail-opm-fdic-armstrong:
     short_name: FDIC
     doge_base: false
     path: "/agencies/independent"
+    parent_id:
+    obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
     parent_id:
     obj_type: Agency
   agency_ids:
@@ -569,6 +617,7 @@ education-balajadia:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -576,9 +625,9 @@ education-balajadia:
   source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   reimbursed:
   reimbursement_amount:
-  comment: No details, but identified in NYT roundup, claims in many other agencies
+  comment:
   qualifications:
-  table_note:
+  table_note: Reported by the NYT that she is in Education and other agencies, but no public documentation
   documents:
   person:
     name: Jennifer Balajadia
@@ -600,7 +649,7 @@ education-balajadia:
     name: Department of Education
     slug: education
     page_slug: education
-    short_name: Education
+    short_name: Ed
     doge_base: true
     path: "/agencies/education"
     parent_id:
@@ -636,6 +685,7 @@ dol-sam-beyda:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -656,7 +706,7 @@ dol-sam-beyda:
     background:
     category: unknown
     own_page: false
-    blurb:
+    blurb: Only public mention is a single NBC reports. More information needed.
     reporting_notes:
     path: "/people#sam-beyda"
     comment:
@@ -703,6 +753,7 @@ doge-beynon:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -712,7 +763,7 @@ doge-beynon:
   reimbursement_amount:
   comment: FIXME, find earliest details of arrival; is she GSA?
   qualifications:
-  table_note:
+  table_note: Date guessed, reported as detailing from DOGE to Education
   documents:
   person:
     name: Alexandra Beynon
@@ -771,6 +822,7 @@ detail-doge-education-alexandra-beynon:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -780,7 +832,7 @@ detail-doge-education-alexandra-beynon:
   reimbursement_amount:
   comment: Details just provided in court testimony
   qualifications:
-  table_note:
+  table_note: Details verified in court testimony
   documents: doge-staff-education-20250407
   person:
     name: Alexandra Beynon
@@ -802,10 +854,20 @@ detail-doge-education-alexandra-beynon:
     name: Department of Education
     slug: education
     page_slug: education
-    short_name: Education
+    short_name: Ed
     doge_base: true
     path: "/agencies/education"
     parent_id:
+    obj_type: Agency
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
     obj_type: Agency
   agency_ids:
   - Education
@@ -833,11 +895,12 @@ opm-riccardo-biasini:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 48
-  appt_type: Other (Except NonPerm)
+  appt_type: Other
   pay_grade: ED-00
   salary: "$0"
   pd_code: 6A39741
   sge:
+  excepted: true
   title: Expert
   series: 301
   supervisory: false
@@ -905,6 +968,7 @@ ssa-bisignano:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Commissioner
   series:
   supervisory: true
@@ -967,11 +1031,12 @@ opm-brian-bjelde:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 48
-  appt_type: Other (Except NonPerm)
+  appt_type: Other
   pay_grade: ED-00
   salary:
   pd_code: 6A39743
   sge:
+  excepted: true
   title: Expert
   series: 301
   supervisory: false
@@ -1039,6 +1104,7 @@ opm-3:
   salary: "$0"
   pd_code: 6A39740
   sge:
+  excepted:
   title: Expert
   series: 301
   supervisory: false
@@ -1116,6 +1182,7 @@ detail-opm-education-akash-bobba:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -1157,9 +1224,19 @@ detail-opm-education-akash-bobba:
     name: Department of Education
     slug: education
     page_slug: education
-    short_name: Education
+    short_name: Ed
     doge_base: true
     path: "/agencies/education"
+    parent_id:
+    obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
     parent_id:
     obj_type: Agency
   agency_ids:
@@ -1193,6 +1270,7 @@ detail-opm-ssa-opm-3:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -1239,6 +1317,16 @@ detail-opm-ssa-opm-3:
     path: "/agencies/social-security"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 ssa-employee-1:
@@ -1270,6 +1358,7 @@ ssa-employee-1:
   salary: "$90025"
   pd_code: KNX0350
   sge:
+  excepted:
   title: Expert
   series: 301
   supervisory: false
@@ -1351,6 +1440,7 @@ doge-boizelle:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -1419,6 +1509,7 @@ gsa-bryant:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -1486,6 +1577,7 @@ detail-doge-ftc-bryant:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -1522,6 +1614,16 @@ detail-doge-ftc-bryant:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - FTC
 gsa-cavanaugh:
@@ -1553,6 +1655,7 @@ gsa-cavanaugh:
   salary: "$120,500"
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -1620,6 +1723,7 @@ detail-gsa-usadf-cavanaugh:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -1656,6 +1760,16 @@ detail-gsa-usadf-cavanaugh:
     path: "/agencies/usadf"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USADF
 detail-gsa-usip-cavanaugh:
@@ -1687,6 +1801,7 @@ detail-gsa-usip-cavanaugh:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -1723,6 +1838,16 @@ detail-gsa-usip-cavanaugh:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USIP
 detail-gsa-neh-cavanaugh:
@@ -1754,6 +1879,7 @@ detail-gsa-neh-cavanaugh:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -1790,6 +1916,16 @@ detail-gsa-neh-cavanaugh:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - NEH
 usip-cavanaugh-president:
@@ -1821,6 +1957,7 @@ usip-cavanaugh-president:
   salary:
   pd_code:
   sge:
+  excepted:
   title: President
   series:
   supervisory:
@@ -1890,6 +2027,7 @@ imls-cavanaugh:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -1957,6 +2095,7 @@ detail-gsa-nlrb-cavanaugh:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -1993,6 +2132,16 @@ detail-gsa-nlrb-cavanaugh:
     path: "/agencies/labor"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - NLRB
 detail-gsa-dfc-cavanaugh:
@@ -2024,6 +2173,7 @@ detail-gsa-dfc-cavanaugh:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -2060,6 +2210,16 @@ detail-gsa-dfc-cavanaugh:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USDFC
 detail-gsa-exim-cavanaugh:
@@ -2091,6 +2251,7 @@ detail-gsa-exim-cavanaugh:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -2127,6 +2288,16 @@ detail-gsa-exim-cavanaugh:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - EXIM
 detail-gsa-mspb-cavanaugh:
@@ -2158,6 +2329,7 @@ detail-gsa-mspb-cavanaugh:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -2194,6 +2366,16 @@ detail-gsa-mspb-cavanaugh:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - MSPB
 usda-cole:
@@ -2225,6 +2407,7 @@ usda-cole:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -2293,6 +2476,7 @@ dol-collins:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -2329,6 +2513,16 @@ dol-collins:
     path: "/agencies/labor"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOL
 irs-corcos:
@@ -2360,6 +2554,7 @@ irs-corcos:
   salary: "$0"
   pd_code:
   sge: true
+  excepted:
   title: Senior Advisor for Technology and Modernization
   series:
   supervisory:
@@ -2428,6 +2623,7 @@ irs-corcos-cio:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Chief Information Officer
   series:
   supervisory:
@@ -2496,6 +2692,7 @@ gsa-edward-coristine:
   salary: "$0"
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -2565,6 +2762,7 @@ internal-dhs-tsa-coristine:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -2603,6 +2801,16 @@ internal-dhs-tsa-coristine:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - TSA
   - DHS
@@ -2635,6 +2843,7 @@ internal-dhs-uscis-coristine:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -2673,6 +2882,16 @@ internal-dhs-uscis-coristine:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USCIS
   - DHS
@@ -2705,6 +2924,7 @@ detail-gsa-opm-coristine:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -2743,6 +2963,16 @@ detail-gsa-opm-coristine:
     path: "/agencies/opm"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - OPM
 detail-gsa-sba-coristine:
@@ -2774,6 +3004,7 @@ detail-gsa-sba-coristine:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -2812,6 +3043,16 @@ detail-gsa-sba-coristine:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - SBA
 detail-gsa-dhs-coristine:
@@ -2843,6 +3084,7 @@ detail-gsa-dhs-coristine:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -2881,6 +3123,16 @@ detail-gsa-dhs-coristine:
     path: "/agencies/homeland-security"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 internal-hhs-fema-edward-coristine:
@@ -2912,6 +3164,7 @@ internal-hhs-fema-edward-coristine:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -2950,6 +3203,16 @@ internal-hhs-fema-edward-coristine:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - FEMA
   - DHS
@@ -2982,6 +3245,7 @@ detail-gsa-state-coristine:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -3020,6 +3284,16 @@ detail-gsa-state-coristine:
     path: "/agencies/state"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - State
 detail-gsa-usaid-coristine:
@@ -3051,6 +3325,7 @@ detail-gsa-usaid-coristine:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -3089,6 +3364,16 @@ detail-gsa-usaid-coristine:
     path: "/agencies/usaid"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USAID
 internal-dhs-cisa-coristine:
@@ -3120,6 +3405,7 @@ internal-dhs-cisa-coristine:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -3158,6 +3444,16 @@ internal-dhs-cisa-coristine:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CISA
   - DHS
@@ -3190,6 +3486,7 @@ detail-doge-education-coristine:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -3223,9 +3520,19 @@ detail-doge-education-coristine:
     name: Department of Education
     slug: education
     page_slug: education
-    short_name: Education
+    short_name: Ed
     doge_base: true
     path: "/agencies/education"
+    parent_id:
+    obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
     parent_id:
     obj_type: Agency
   agency_ids:
@@ -3259,6 +3566,7 @@ detail-gsa-hhs-edward-coristine:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -3297,6 +3605,16 @@ detail-gsa-hhs-edward-coristine:
     path: "/agencies/health"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 internal-hhs-cms-coristine:
@@ -3328,6 +3646,7 @@ internal-hhs-cms-coristine:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -3366,6 +3685,16 @@ internal-hhs-cms-coristine:
     path: "/agencies/health"
     parent_id: HHS
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -3398,6 +3727,7 @@ detail-nasa-ssa-employee-2:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -3447,6 +3777,16 @@ detail-nasa-ssa-employee-2:
     path: "/agencies/social-security"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: NASA
+    name: National Aeronautics and Space Administration
+    slug: nasa
+    page_slug: self
+    short_name: NASA
+    doge_base: true
+    path: "/agencies/nasa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 ssa-employee-2-cio:
@@ -3478,6 +3818,7 @@ ssa-employee-2-cio:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Chief Information Officer
   series:
   supervisory: true
@@ -3558,6 +3899,7 @@ opm-cromer:
   salary:
   pd_code: 6A38487
   sge:
+  excepted:
   title: Deputy General Counsel
   series: 301
   supervisory: true
@@ -3625,6 +3967,7 @@ detail-opm-usaid-cromer:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -3661,6 +4004,16 @@ detail-opm-usaid-cromer:
     path: "/agencies/usaid"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USAID
 detail-opm-doj-cromer:
@@ -3692,6 +4045,7 @@ detail-opm-doj-cromer:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -3728,6 +4082,16 @@ detail-opm-doj-cromer:
     path: "/agencies/justice"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - DOJ
 opm-stephen-duarte:
@@ -3754,11 +4118,12 @@ opm-stephen-duarte:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 48
-  appt_type: Other (Except NonPerm)
+  appt_type: Other
   pay_grade: ED-00
   salary:
   pd_code: 6A39749
   sge:
+  excepted: true
   title: Expert
   series: 301
   supervisory: false
@@ -3826,6 +4191,7 @@ ssa-dudek-commissioner:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Acting Commissioner
   series:
   supervisory: true
@@ -3893,6 +4259,7 @@ ssa-dudek:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -3960,6 +4327,7 @@ gsa-stephen-ehikian:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Acting Administrator
   series:
   supervisory: true
@@ -4027,6 +4395,7 @@ detail-dol-dhs-elez:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -4063,6 +4432,16 @@ detail-dol-dhs-elez:
     path: "/agencies/homeland-security"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: DOL
+    name: Department of Labor
+    slug: labor
+    page_slug: labor
+    short_name: DOL
+    doge_base: true
+    path: "/agencies/labor"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 internal-dhs-cpb-elez:
@@ -4094,6 +4473,7 @@ internal-dhs-cpb-elez:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -4130,6 +4510,16 @@ internal-dhs-cpb-elez:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CBP
   - DHS
@@ -4162,6 +4552,7 @@ internal-dhs-ice-elez:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -4198,6 +4589,16 @@ internal-dhs-ice-elez:
     path: "/agencies#ice"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - ICE
   - DHS
@@ -4230,6 +4631,7 @@ internal-dhs-tsa-elez:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -4266,6 +4668,16 @@ internal-dhs-tsa-elez:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - TSA
   - DHS
@@ -4298,6 +4710,7 @@ internal-dhs-uscis-elez:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -4334,6 +4747,16 @@ internal-dhs-uscis-elez:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USCIS
   - DHS
@@ -4366,6 +4789,7 @@ treasury-marko-elez:
   salary: "$84,601"
   pd_code: 66893097 C00424
   sge:
+  excepted:
   title: Special Advisor (IT&M)
   series:
   supervisory:
@@ -4433,6 +4857,7 @@ dol-marko-elez:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -4500,6 +4925,7 @@ detail-dol-ssa-employee-7:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -4542,6 +4968,16 @@ detail-dol-ssa-employee-7:
     path: "/agencies/social-security"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: DOL
+    name: Department of Labor
+    slug: labor
+    page_slug: labor
+    short_name: DOL
+    doge_base: true
+    path: "/agencies/labor"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 detail-dol-hhs-marko-elez:
@@ -4573,6 +5009,7 @@ detail-dol-hhs-marko-elez:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -4609,6 +5046,16 @@ detail-dol-hhs-marko-elez:
     path: "/agencies/health"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: DOL
+    name: Department of Labor
+    slug: labor
+    page_slug: labor
+    short_name: DOL
+    doge_base: true
+    path: "/agencies/labor"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 internal-hhs-cms-marko-elez:
@@ -4640,6 +5087,7 @@ internal-hhs-cms-marko-elez:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -4676,6 +5124,16 @@ internal-hhs-cms-marko-elez:
     path: "/agencies/health"
     parent_id: HHS
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -4708,6 +5166,7 @@ opm-ezell:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Acting Director
   series:
   supervisory:
@@ -4775,6 +5234,7 @@ detail-gsa-dhs-farritor:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -4811,6 +5271,16 @@ detail-gsa-dhs-farritor:
     path: "/agencies/homeland-security"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 gsa-luke-farritor:
@@ -4842,6 +5312,7 @@ gsa-luke-farritor:
   salary: "$0"
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -4909,6 +5380,7 @@ internal-dhs-ice-farritor:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -4945,6 +5417,16 @@ internal-dhs-ice-farritor:
     path: "/agencies#ice"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - ICE
   - DHS
@@ -4977,6 +5459,7 @@ internal-dhs-tsa-farritor:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -5013,6 +5496,16 @@ internal-dhs-tsa-farritor:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - TSA
   - DHS
@@ -5045,6 +5538,7 @@ internal-dhs-uscis-farritor:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -5081,6 +5575,16 @@ internal-dhs-uscis-farritor:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USCIS
   - DHS
@@ -5113,6 +5617,7 @@ detail-gsa-hhs-luke-farritor:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -5149,6 +5654,16 @@ detail-gsa-hhs-luke-farritor:
     path: "/agencies/health"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 detail-gsa-usaid-kliger:
@@ -5180,6 +5695,7 @@ detail-gsa-usaid-kliger:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -5216,6 +5732,16 @@ detail-gsa-usaid-kliger:
     path: "/agencies/usaid"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USAID
 internal-hhs-cdc-farritor:
@@ -5247,6 +5773,7 @@ internal-hhs-cdc-farritor:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -5283,6 +5810,16 @@ internal-hhs-cdc-farritor:
     path: "/agencies/health"
     parent_id: HHS
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CDC
   - HHS
@@ -5315,6 +5852,7 @@ internal-hhs-cms-farritor:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -5351,6 +5889,16 @@ internal-hhs-cms-farritor:
     path: "/agencies/health"
     parent_id: HHS
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -5383,6 +5931,7 @@ detail-doge-energy-luke-farritor:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -5419,6 +5968,16 @@ detail-doge-energy-luke-farritor:
     path: "/agencies/energy"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - Energy
 detail-gsa-cfpb-luke-farritor:
@@ -5450,6 +6009,7 @@ detail-gsa-cfpb-luke-farritor:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -5486,6 +6046,16 @@ detail-gsa-cfpb-luke-farritor:
     path: "/agencies/cfpb"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CFPB
 detail-gsa-state-farritor:
@@ -5517,6 +6087,7 @@ detail-gsa-state-farritor:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -5553,6 +6124,16 @@ detail-gsa-state-farritor:
     path: "/agencies/state"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - State
 internal-hhs-nih-farritor:
@@ -5584,6 +6165,7 @@ internal-hhs-nih-farritor:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -5620,6 +6202,16 @@ internal-hhs-nih-farritor:
     path: "/agencies/health"
     parent_id: HHS
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - NIH
   - HHS
@@ -5652,6 +6244,7 @@ detail-gsa-nsf-farritor:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -5688,6 +6281,16 @@ detail-gsa-nsf-farritor:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - NSF
 gsa-fennessy:
@@ -5719,6 +6322,7 @@ gsa-fennessy:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -5786,6 +6390,7 @@ education-ed-2:
   salary: "$195,200"
   pd_code: DBGS61164
   sge:
+  excepted:
   title: Senior Advisor
   series: 301
   supervisory: false
@@ -5825,7 +6430,7 @@ education-ed-2:
     name: Department of Education
     slug: education
     page_slug: education
-    short_name: Education
+    short_name: Ed
     doge_base: true
     path: "/agencies/education"
     parent_id:
@@ -5861,6 +6466,7 @@ internal-hhs-cms-fennessy:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -5897,6 +6503,16 @@ internal-hhs-cms-fennessy:
     path: "/agencies/health"
     parent_id: HHS
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -5929,6 +6545,7 @@ detail-education-hhs-fennessy:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -5965,6 +6582,16 @@ detail-education-hhs-fennessy:
     path: "/agencies/health"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: Education
+    name: Department of Education
+    slug: education
+    page_slug: education
+    short_name: Ed
+    doge_base: true
+    path: "/agencies/education"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 doge-joshua-fox:
@@ -5996,6 +6623,7 @@ doge-joshua-fox:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -6064,6 +6692,7 @@ gsa-justin-fox:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -6133,6 +6762,7 @@ detail-neh-justin-fox:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -6171,6 +6801,16 @@ detail-neh-justin-fox:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - NEH
 detail-gsa-nlrb-fox:
@@ -6202,6 +6842,7 @@ detail-gsa-nlrb-fox:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -6240,6 +6881,16 @@ detail-gsa-nlrb-fox:
     path: "/agencies/labor"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - NLRB
 dod-fulcher:
@@ -6271,6 +6922,7 @@ dod-fulcher:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -6338,6 +6990,7 @@ dod-fulcher-advisor:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -6405,6 +7058,7 @@ hhs-gamache:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor - DOGE
   series:
   supervisory:
@@ -6467,11 +7121,12 @@ opm-joe-gebbia:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 48
-  appt_type: Other (Except NonPerm)
+  appt_type: Other
   pay_grade: ED-00
   salary:
   pd_code: 6A39752
   sge:
+  excepted: true
   title: Expert
   series: 301
   supervisory: false
@@ -6539,6 +7194,7 @@ dol-derek-geissler:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -6606,6 +7262,7 @@ faa-glantz:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -6674,6 +7331,7 @@ doge-amy-gleason:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -6742,6 +7400,7 @@ doge-amy-gleason-director:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Acting Administrator, US DOGE Service and the DOGE Temporary Organization
   series:
   supervisory:
@@ -6810,6 +7469,7 @@ internal-hhs-cms-gleason:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -6846,6 +7506,16 @@ internal-hhs-cms-gleason:
     path: "/agencies/health"
     parent_id: HHS
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -6878,6 +7548,7 @@ hhs-amy-gleason:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Expert/Consultant
   series:
   supervisory:
@@ -6945,6 +7616,7 @@ opm-gonzalez:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -7012,6 +7684,7 @@ ssa-antonio-gracias:
   salary: "$0"
   pd_code: KNX0370
   sge:
+  excepted:
   title: Expert
   series: 301
   supervisory:
@@ -7085,6 +7758,7 @@ commerce-michael-grimes:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory: true
@@ -7152,6 +7826,7 @@ gsa-josh-gruenbaum:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Federal Acquisition Service Commissioner
   series:
   supervisory: true
@@ -7219,6 +7894,7 @@ imls-hamrick:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -7286,6 +7962,7 @@ doge-joshua-hanley:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -7349,11 +8026,12 @@ opm-christina-hanna:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 48
-  appt_type: Other (Except NonPerm)
+  appt_type: Other
   pay_grade: ED-00
   salary:
   pd_code: 6A39735
   sge:
+  excepted: true
   title: Expert
   series: 301
   supervisory: false
@@ -7421,6 +8099,7 @@ doi-hassen-acting:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Acting Assistant Secretary of Policy, Management and Budget
   series:
   supervisory: true
@@ -7452,7 +8131,7 @@ doi-hassen-acting:
     name: Department of the Interior
     slug: interior
     page_slug: interior
-    short_name: Interior
+    short_name: DOI
     doge_base: true
     path: "/agencies/interior"
     parent_id:
@@ -7488,6 +8167,7 @@ doj-hoffman:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -7555,6 +8235,7 @@ greg-hogan-opm:
   salary: "$195,200"
   pd_code: 6A38081
   sge:
+  excepted:
   title: Senior Advisor to the Director for Technology and Delivery
   series: 301
   supervisory: true
@@ -7622,6 +8303,7 @@ greg-hogan-opm-2:
   salary: "$195,200"
   pd_code: 6A39566
   sge:
+  excepted:
   title: Chief Information OFficer
   series: 301
   supervisory: true
@@ -7689,6 +8371,7 @@ gsa-hollander:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory: true
@@ -7756,6 +8439,7 @@ doge-holmes:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -7824,6 +8508,7 @@ detail-doge-doi-holmes:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Special Advisor / Acting Chief Human Capital Officer
   series:
   supervisory:
@@ -7855,10 +8540,20 @@ detail-doge-doi-holmes:
     name: Department of the Interior
     slug: interior
     page_slug: interior
-    short_name: Interior
+    short_name: DOI
     doge_base: true
     path: "/agencies/interior"
     parent_id:
+    obj_type: Agency
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
     obj_type: Agency
   agency_ids:
   - DOI
@@ -7891,6 +8586,7 @@ usip-jackson:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Acting President
   series:
   supervisory: true
@@ -7958,6 +8654,7 @@ usaid-deputy-jackson:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Deputy Administrator (Management and Resources)
   series:
   supervisory: true
@@ -8025,6 +8722,7 @@ gsa-jegannathan:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -8092,6 +8790,7 @@ epa-jehling:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -8159,6 +8858,7 @@ faa-kiernan:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -8227,6 +8927,7 @@ doge-killian:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -8295,6 +8996,7 @@ detaile-doge-epa-killian:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -8362,6 +9064,7 @@ detail-doge-dol-killian:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -8429,6 +9132,7 @@ detail-doge-ssa-killian:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -8496,6 +9200,7 @@ detail-opm-dhs-kliger:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -8532,6 +9237,16 @@ detail-opm-dhs-kliger:
     path: "/agencies/homeland-security"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 gavin-kliger-opm:
@@ -8563,6 +9278,7 @@ gavin-kliger-opm:
   salary: "$195,200"
   pd_code: 6A38025
   sge:
+  excepted:
   title: Senior Advisor to the Director for Information Technology
   series: 301
   supervisory: true
@@ -8630,6 +9346,7 @@ internal-dhs-tsa-kliger:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -8666,6 +9383,16 @@ internal-dhs-tsa-kliger:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - TSA
   - DHS
@@ -8698,6 +9425,7 @@ detail-opm-usaid-kliger:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -8734,6 +9462,16 @@ detail-opm-usaid-kliger:
     path: "/agencies/usaid"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USAID
 detail-opm-usda-kliger:
@@ -8765,6 +9503,7 @@ detail-opm-usda-kliger:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -8803,6 +9542,16 @@ detail-opm-usda-kliger:
     path: "/agencies/agriculture"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USDA
 detail-opm-cfpb-kliger:
@@ -8834,6 +9583,7 @@ detail-opm-cfpb-kliger:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -8870,6 +9620,16 @@ detail-opm-cfpb-kliger:
     path: "/agencies/cfpb"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CFPB
 gavin-kliger-opm-2:
@@ -8901,6 +9661,7 @@ gavin-kliger-opm-2:
   salary: "$195,200"
   pd_code: 6A38025
   sge:
+  excepted:
   title: Senior Advisor to the Director for Information Technology
   series: 301
   supervisory: true
@@ -8968,6 +9729,7 @@ detail-opm-irs-gavin-kliger:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -9004,6 +9766,16 @@ detail-opm-irs-gavin-kliger:
     path: "/agencies/treasury"
     parent_id: Treasury
     obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - IRS
   - Treasury
@@ -9036,6 +9808,7 @@ detail-opm-ftc-kliger:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -9072,6 +9845,16 @@ detail-opm-ftc-kliger:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - FTC
 ssa-employee-6:
@@ -9103,6 +9886,7 @@ ssa-employee-6:
   salary: "$0"
   pd_code: KNX0360
   sge:
+  excepted:
   title: Expert
   series:
   supervisory:
@@ -9176,6 +9960,7 @@ detail-ssa-doj-koval:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -9243,6 +10028,7 @@ onboard-treasury-thomas-krause:
   salary: "$0"
   pd_code:
   sge: true
+  excepted:
   title: Senior Advisor for Technology and Modernization
   series:
   supervisory:
@@ -9310,6 +10096,7 @@ appoint-treasury-thomas-krause:
   salary:
   pd_code:
   sge: true
+  excepted:
   title:
   series:
   supervisory:
@@ -9377,6 +10164,7 @@ hud-langmack:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -9444,6 +10232,7 @@ va-lavingia:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Advisor to the Chief of Staff
   series:
   supervisory:
@@ -9511,6 +10300,7 @@ gsa-jeremy-lewin:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -9578,6 +10368,7 @@ detail-usaid-jeremy-lewin:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor / Director for Strategy & Programs
   series:
   supervisory:
@@ -9614,6 +10405,16 @@ detail-usaid-jeremy-lewin:
     path: "/agencies/usaid"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USAID
 internal-hhs-cms-lewin:
@@ -9645,6 +10446,7 @@ internal-hhs-cms-lewin:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -9681,6 +10483,16 @@ internal-hhs-cms-lewin:
     path: "/agencies/health"
     parent_id: HHS
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -9713,6 +10525,7 @@ detail-gsa-cfpb-jeremy-lewin:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -9749,6 +10562,16 @@ detail-gsa-cfpb-jeremy-lewin:
     path: "/agencies/cfpb"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CFPB
 detail-gsa-hhs-lewin:
@@ -9780,6 +10603,7 @@ detail-gsa-hhs-lewin:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -9816,6 +10640,16 @@ detail-gsa-hhs-lewin:
     path: "/agencies/health"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 internal-hhs-nih-lewin:
@@ -9847,6 +10681,7 @@ internal-hhs-nih-lewin:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -9883,6 +10718,16 @@ internal-hhs-nih-lewin:
     path: "/agencies/health"
     parent_id: HHS
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - NIH
   - HHS
@@ -9915,6 +10760,7 @@ usaid-jeremy-lewin-2:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Deputy Administrator(Policy and Programming) / COO
   series:
   supervisory:
@@ -9982,6 +10828,7 @@ state-lewin-foreign:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Acting Head of Foreign Assistance
   series:
   supervisory:
@@ -10049,6 +10896,7 @@ doge-lindemann:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -10117,6 +10965,7 @@ epa-loving:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Federal Detailee
   series:
   supervisory:
@@ -10184,6 +11033,7 @@ doi-luby:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -10215,7 +11065,7 @@ doi-luby:
     name: Department of the Interior
     slug: interior
     page_slug: interior
-    short_name: Interior
+    short_name: DOI
     doge_base: true
     path: "/agencies/interior"
     parent_id:
@@ -10251,6 +11101,7 @@ opm-makecha:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -10318,6 +11169,7 @@ fbi-makecha:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -10388,6 +11240,7 @@ detail-fcc-makecha:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -10455,6 +11308,7 @@ faa-malaska:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -10523,6 +11377,7 @@ gsa-malcher:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -10590,6 +11445,7 @@ iaf-marocco:
   salary:
   pd_code:
   sge:
+  excepted:
   title: President/CEO
   series:
   supervisory:
@@ -10657,6 +11513,7 @@ dhs-mccord:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Chief Information Officer
   series:
   supervisory:
@@ -10724,6 +11581,7 @@ gsa-mendelson:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -10791,6 +11649,7 @@ detail-gsa-dfc-mendelson:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -10827,6 +11686,16 @@ detail-gsa-dfc-mendelson:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USDFC
 detail-gsa-sec-mendelson:
@@ -10858,6 +11727,7 @@ detail-gsa-sec-mendelson:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -10894,6 +11764,16 @@ detail-gsa-sec-mendelson:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - SEC
 doge-miller:
@@ -10925,6 +11805,7 @@ doge-miller:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -10993,6 +11874,7 @@ hhs-minor:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Chief Information Officer
   series:
   supervisory:
@@ -11060,6 +11942,7 @@ detail-hhs-nih-minor:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -11096,6 +11979,16 @@ detail-hhs-nih-minor:
     path: "/agencies/health"
     parent_id: HHS
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - NIH
   - HHS
@@ -11128,6 +12021,7 @@ hud-mirski:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -11195,6 +12089,7 @@ sec-mishory:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -11257,11 +12152,12 @@ opm-bryanne-mlodzianowski:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 48
-  appt_type: Other (Except NonPerm)
+  appt_type: Other
   pay_grade: ED-00
   salary:
   pd_code: 6A39750
   sge:
+  excepted: true
   title: Expert
   series: 301
   supervisory: false
@@ -11329,6 +12225,7 @@ detail-dol-dhs-mohgaddassi:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -11365,6 +12262,16 @@ detail-dol-dhs-mohgaddassi:
     path: "/agencies/homeland-security"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: DOL
+    name: Department of Labor
+    slug: labor
+    page_slug: labor
+    short_name: DOL
+    doge_base: true
+    path: "/agencies/labor"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 dol-moghaddassi:
@@ -11396,6 +12303,7 @@ dol-moghaddassi:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -11463,6 +12371,7 @@ internal-dhs-cpb-mohgaddassi:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -11499,6 +12408,16 @@ internal-dhs-cpb-mohgaddassi:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CBP
   - DHS
@@ -11531,6 +12450,7 @@ internal-dhs-ice-mohgaddassi:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -11567,6 +12487,16 @@ internal-dhs-ice-mohgaddassi:
     path: "/agencies#ice"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - ICE
   - DHS
@@ -11599,6 +12529,7 @@ internal-dhs-tsa-mohgaddassi:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -11635,6 +12566,16 @@ internal-dhs-tsa-mohgaddassi:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - TSA
   - DHS
@@ -11667,6 +12608,7 @@ internal-dhs-uscis-mohgaddassi:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -11703,6 +12645,16 @@ internal-dhs-uscis-mohgaddassi:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USCIS
   - DHS
@@ -11735,6 +12687,7 @@ detail-dol-ssa-employee-3:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -11783,6 +12736,16 @@ detail-dol-ssa-employee-3:
     path: "/agencies/social-security"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: DOL
+    name: Department of Labor
+    slug: labor
+    page_slug: labor
+    short_name: DOL
+    doge_base: true
+    path: "/agencies/labor"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 detail-dol-hhs-mohgaddassi:
@@ -11814,6 +12777,7 @@ detail-dol-hhs-mohgaddassi:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -11850,6 +12814,16 @@ detail-dol-hhs-mohgaddassi:
     path: "/agencies/health"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: DOL
+    name: Department of Labor
+    slug: labor
+    page_slug: labor
+    short_name: DOL
+    doge_base: true
+    path: "/agencies/labor"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 internal-hhs-cms-mohgaddassi:
@@ -11881,6 +12855,7 @@ internal-hhs-cms-mohgaddassi:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -11917,6 +12892,16 @@ internal-hhs-cms-mohgaddassi:
     path: "/agencies/health"
     parent_id: HHS
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -11944,11 +12929,12 @@ opm-justin-monroe:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 48
-  appt_type: Other (Except NonPerm)
+  appt_type: Other
   pay_grade: ED-00
   salary:
   pd_code: 6A39734
   sge:
+  excepted: true
   title: Expert
   series: 301
   supervisory: false
@@ -12016,6 +13002,7 @@ detail-opm-fbi-monroe:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -12052,6 +13039,16 @@ detail-opm-fbi-monroe:
     path: "/agencies/justice"
     parent_id: DOJ
     obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - FBI
   - DOJ
@@ -12084,6 +13081,7 @@ onboard-education-employee-4:
   salary: "$0"
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -12123,7 +13121,7 @@ onboard-education-employee-4:
     name: Department of Education
     slug: education
     page_slug: education
-    short_name: Education
+    short_name: Ed
     doge_base: true
     path: "/agencies/education"
     parent_id:
@@ -12159,6 +13157,7 @@ detail-education-fdic-morgan:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -12195,6 +13194,16 @@ detail-education-fdic-morgan:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: Education
+    name: Department of Education
+    slug: education
+    page_slug: education
+    short_name: Ed
+    doge_base: true
+    path: "/agencies/education"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - FDIC
 eop-morse:
@@ -12226,6 +13235,7 @@ eop-morse:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Deputy Assistant to the President / Deputy Director of Presidential Personnel
   series:
   supervisory: true
@@ -12296,6 +13306,7 @@ musk-doge:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -12364,6 +13375,7 @@ treasury-newnam:
   salary:
   pd_code:
   sge: false
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -12431,6 +13443,7 @@ internal-treasury-irs-newnam:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -12467,6 +13480,16 @@ internal-treasury-irs-newnam:
     path: "/agencies/treasury"
     parent_id: Treasury
     obj_type: Agency
+  from_agency:
+    id: Treasury
+    name: Department of the Treasury
+    slug: treasury
+    page_slug:
+    short_name: Treasury
+    doge_base: true
+    path: "/agencies#treasury"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - IRS
   - Treasury
@@ -12499,6 +13522,7 @@ gsa-park:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -12566,6 +13590,7 @@ sba-park:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -12602,6 +13627,16 @@ sba-park:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - SBA
 detail-exim-park:
@@ -12633,6 +13668,7 @@ detail-exim-park:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -12700,6 +13736,7 @@ noah-peters-opm:
   salary:
   pd_code: 6A38859
   sge:
+  excepted:
   title: Senior Advisor
   series: 301
   supervisory: false
@@ -12767,6 +13804,7 @@ opm-nikhil-rajpal:
   salary: "$0"
   pd_code: 6A39738
   sge:
+  excepted:
   title: Expert
   series: 301
   supervisory: false
@@ -12843,6 +13881,7 @@ detail-opm-noaa-rajpal:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -12879,6 +13918,16 @@ detail-opm-noaa-rajpal:
     path: "/agencies/commerce"
     parent_id: Commerce
     obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - NOAA
   - Commerce
@@ -12911,6 +13960,7 @@ detail-opm-cfpb-nikhil-rajpal:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -12947,6 +13997,16 @@ detail-opm-cfpb-nikhil-rajpal:
     path: "/agencies/cfpb"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CFPB
 doge-adam-ramada:
@@ -12978,6 +14038,7 @@ doge-adam-ramada:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -13046,6 +14107,7 @@ detail-doge-education-adam-ramada:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -13077,10 +14139,20 @@ detail-doge-education-adam-ramada:
     name: Department of Education
     slug: education
     page_slug: education
-    short_name: Education
+    short_name: Ed
     doge_base: true
     path: "/agencies/education"
     parent_id:
+    obj_type: Agency
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
     obj_type: Agency
   agency_ids:
   - Education
@@ -13113,6 +14185,7 @@ detail-doge-energy-adam-ramada:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -13149,6 +14222,16 @@ detail-doge-energy-adam-ramada:
     path: "/agencies/energy"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - Energy
 detail-doge-dol-ramada:
@@ -13180,6 +14263,7 @@ detail-doge-dol-ramada:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -13216,6 +14300,16 @@ detail-doge-dol-ramada:
     path: "/agencies/labor"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOL
 detail-doge-fdic-ramada:
@@ -13247,6 +14341,7 @@ detail-doge-fdic-ramada:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -13283,6 +14378,16 @@ detail-doge-fdic-ramada:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - FDIC
 opm-austin-raynor:
@@ -13309,11 +14414,12 @@ opm-austin-raynor:
   description: Provisional Appt NTE
   fuzz:
   appt_type_code: 48
-  appt_type: Other (Except NonPerm)
+  appt_type: Other
   pay_grade: GS-15
   salary:
   pd_code: 6A39748
   sge:
+  excepted: true
   title: Senior Advisor
   series: 301
   supervisory: false
@@ -13381,6 +14487,7 @@ detail-ssa-dhs-rehling:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -13417,6 +14524,16 @@ detail-ssa-dhs-rehling:
     path: "/agencies/homeland-security"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: SSA
+    name: Social Security Administration
+    slug: ssa
+    page_slug: social-security
+    short_name: SSA
+    doge_base: true
+    path: "/agencies/social-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 internal-dhs-tsa-rehling:
@@ -13448,6 +14565,7 @@ internal-dhs-tsa-rehling:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -13484,6 +14602,16 @@ internal-dhs-tsa-rehling:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - TSA
   - DHS
@@ -13516,6 +14644,7 @@ internal-dhs-uscis-rehling:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -13552,6 +14681,16 @@ internal-dhs-uscis-rehling:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USCIS
   - DHS
@@ -13584,6 +14723,7 @@ ssa-employee-9:
   salary: "$0"
   pd_code: KNX0380
   sge:
+  excepted:
   title: Expert
   series:
   supervisory:
@@ -13659,6 +14799,7 @@ detail-ssa-doj-rehling:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -13726,6 +14867,7 @@ energy-ryan-riedel:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Chief Information Officer
   series:
   supervisory:
@@ -13793,6 +14935,7 @@ hhs-rachel-riley:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -13860,6 +15003,7 @@ internal-hhs-cms-riley:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -13896,6 +15040,16 @@ internal-hhs-cms-riley:
     path: "/agencies/health"
     parent_id: HHS
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -13928,6 +15082,7 @@ internal-hhs-nih-riley:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -13964,6 +15119,16 @@ internal-hhs-nih-riley:
     path: "/agencies/health"
     parent_id: HHS
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - NIH
   - HHS
@@ -13996,6 +15161,7 @@ detail-hhs-nsf-riley:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -14032,6 +15198,16 @@ detail-hhs-nsf-riley:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - NSF
 va-roussous:
@@ -14063,6 +15239,7 @@ va-roussous:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -14130,6 +15307,7 @@ ssa-mike-russo-cio:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Chief Information Officer
   series:
   supervisory: true
@@ -14197,6 +15375,7 @@ ssa-mike-russo-advisor:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory: false
@@ -14266,6 +15445,7 @@ amanda-scales-opm:
   salary:
   pd_code: GAPMES00905
   sge:
+  excepted:
   title: Chief of Staff
   series: 301
   supervisory: true
@@ -14333,6 +15513,7 @@ gsa-frank-schuler:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -14400,6 +15581,7 @@ internal-dhs-cbp-schutt:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -14436,6 +15618,16 @@ internal-dhs-cbp-schutt:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CBP
   - DHS
@@ -14468,6 +15660,7 @@ internal-dhs-fema-schutt:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -14504,6 +15697,16 @@ internal-dhs-fema-schutt:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - FEMA
   - DHS
@@ -14536,6 +15739,7 @@ internal-dhs-ice-schutt:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -14572,6 +15776,16 @@ internal-dhs-ice-schutt:
     path: "/agencies#ice"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - ICE
   - DHS
@@ -14604,6 +15818,7 @@ internal-dhs-tsa-schutt:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -14640,6 +15855,16 @@ internal-dhs-tsa-schutt:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - TSA
   - DHS
@@ -14672,6 +15897,7 @@ internal-dhs-uscis-schutt:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -14708,6 +15934,16 @@ internal-dhs-uscis-schutt:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USCIS
   - DHS
@@ -14740,6 +15976,7 @@ gsa-schutt:
   salary: "$195,200"
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -14807,6 +16044,7 @@ detail-gsa-dhs-schutt:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -14843,6 +16081,16 @@ detail-gsa-dhs-schutt:
     path: "/agencies/homeland-security"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - DHS
 internal-dhs-cisa-schutt:
@@ -14874,6 +16122,7 @@ internal-dhs-cisa-schutt:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -14910,6 +16159,16 @@ internal-dhs-cisa-schutt:
     path: "/agencies/homeland-security"
     parent_id: DHS
     obj_type: Agency
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    path: "/agencies/homeland-security"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CISA
   - DHS
@@ -14942,6 +16201,7 @@ detail-gsa-hhs-kyle-schutt:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -14978,6 +16238,16 @@ detail-gsa-hhs-kyle-schutt:
     path: "/agencies/health"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - HHS
 gsa-sennott:
@@ -15009,6 +16279,7 @@ gsa-sennott:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -15076,6 +16347,7 @@ detail-gsa-nasa-sennott:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -15112,6 +16384,16 @@ detail-gsa-nasa-sennott:
     path: "/agencies/nasa"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - NASA
 noaa-shang-cio:
@@ -15143,6 +16425,7 @@ noaa-shang-cio:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -15211,6 +16494,7 @@ gsa-ethan-shaotran:
   salary: "$0"
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -15278,6 +16562,7 @@ detail-gsa-education-3:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -15319,9 +16604,19 @@ detail-gsa-education-3:
     name: Department of Education
     slug: education
     page_slug: education
-    short_name: Education
+    short_name: Ed
     doge_base: true
     path: "/agencies/education"
+    parent_id:
+    obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
     parent_id:
     obj_type: Agency
   agency_ids:
@@ -15355,6 +16650,7 @@ detail-gsa-ssa-employee-10:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -15401,6 +16697,16 @@ detail-gsa-ssa-employee-10:
     path: "/agencies/social-security"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - SSA
 detail-gsa-usadf-ethan-shaotran:
@@ -15432,6 +16738,7 @@ detail-gsa-usadf-ethan-shaotran:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -15468,6 +16775,16 @@ detail-gsa-usadf-ethan-shaotran:
     path: "/agencies/usadf"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USADF
 detail-gsa-usps-ethan-shaotran:
@@ -15499,6 +16816,7 @@ detail-gsa-usps-ethan-shaotran:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -15535,6 +16853,16 @@ detail-gsa-usps-ethan-shaotran:
     path: "/agencies/usps"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USPS
 detail-gsa-dfc-shaotran:
@@ -15566,6 +16894,7 @@ detail-gsa-dfc-shaotran:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -15602,6 +16931,16 @@ detail-gsa-dfc-shaotran:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USDFC
 gsa-thomas-shedd:
@@ -15633,6 +16972,7 @@ gsa-thomas-shedd:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Deputy FAS Commissioner / Administrator
   series:
   supervisory: true
@@ -15700,6 +17040,7 @@ dol-shedd:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Chief Information Officer
   series:
   supervisory: true
@@ -15767,6 +17108,7 @@ treasury-roland-shen:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -15834,6 +17176,7 @@ detail-gsa-usps-alex-simonpour:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -15870,6 +17213,16 @@ detail-gsa-usps-alex-simonpour:
     path: "/agencies/usps"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USPS
 detail-gsa-nasa-simonpour:
@@ -15901,6 +17254,7 @@ detail-gsa-nasa-simonpour:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -15968,6 +17322,7 @@ faa-smeal:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -16036,6 +17391,7 @@ hhs-brad-smith:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -16103,6 +17459,7 @@ labor-sonderling:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Deputy Secretary
   series:
   supervisory: true
@@ -16170,6 +17527,7 @@ imls-sonderling:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Acting Director
   series:
   supervisory:
@@ -16232,11 +17590,12 @@ opm-christopher-stanley:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 48
-  appt_type: Other (Except NonPerm)
+  appt_type: Other
   pay_grade: ED-00
   salary:
   pd_code: 6A39736
   sge:
+  excepted: true
   title: Expert
   series: 301
   supervisory: false
@@ -16309,6 +17668,7 @@ fhfa-christopher-stanley:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Board Member, Fannie Mae/Freddie Mac
   series:
   supervisory:
@@ -16381,6 +17741,7 @@ detail-opm-doj-stanley:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -16422,6 +17783,16 @@ detail-opm-doj-stanley:
     path: "/agencies/justice"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - DOJ
 ssa-steffensen:
@@ -16453,6 +17824,7 @@ ssa-steffensen:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor
   series:
   supervisory:
@@ -16520,6 +17892,7 @@ ssa-steffensen-1:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Acting General Counsel
   series:
   supervisory:
@@ -16587,6 +17960,7 @@ gsa-stein:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -16654,6 +18028,7 @@ dot-stube:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Senior Advisor to the Secretary
   series:
   supervisory:
@@ -16721,6 +18096,7 @@ hud-sweet:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Special Assistant
   series:
   supervisory:
@@ -16792,6 +18168,7 @@ hhs-terrell:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -16859,6 +18236,7 @@ internal-hhs-cms-terrell:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -16895,6 +18273,16 @@ internal-hhs-cms-terrell:
     path: "/agencies/health"
     parent_id: HHS
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CMS
   - HHS
@@ -16927,6 +18315,7 @@ detail-hhs-nsf-terrell:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -16963,6 +18352,16 @@ detail-hhs-nsf-terrell:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    path: "/agencies/health"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - NSF
 interior-trampe:
@@ -16994,6 +18393,7 @@ interior-trampe:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -17025,7 +18425,7 @@ interior-trampe:
     name: Department of the Interior
     slug: interior
     page_slug: interior
-    short_name: Interior
+    short_name: DOI
     doge_base: true
     path: "/agencies/interior"
     parent_id:
@@ -17061,6 +18461,7 @@ va-volpert:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -17128,6 +18529,7 @@ omb-vought:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -17195,6 +18597,7 @@ cfpb-acting-vought:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Acting Director
   series:
   supervisory: true
@@ -17262,6 +18665,7 @@ treasury-whitridge:
   salary:
   pd_code:
   sge: false
+  excepted:
   title:
   series:
   supervisory:
@@ -17329,6 +18733,7 @@ doge-wick:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -17397,6 +18802,7 @@ detail-usda-wick:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -17433,6 +18839,16 @@ detail-usda-wick:
     path: "/agencies/agriculture"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - USDA
 detail-usds-cfpb-jordan-wick:
@@ -17464,6 +18880,7 @@ detail-usds-cfpb-jordan-wick:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -17500,6 +18917,16 @@ detail-usds-cfpb-jordan-wick:
     path: "/agencies/cfpb"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - CFPB
 detail-doge-dol-wick:
@@ -17531,6 +18958,7 @@ detail-doge-dol-wick:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -17567,6 +18995,16 @@ detail-doge-dol-wick:
     path: "/agencies/labor"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
+    obj_type: Agency
   agency_ids:
   - DOL
 detail-doge-education-wick:
@@ -17598,6 +19036,7 @@ detail-doge-education-wick:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -17629,10 +19068,20 @@ detail-doge-education-wick:
     name: Department of Education
     slug: education
     page_slug: education
-    short_name: Education
+    short_name: Ed
     doge_base: true
     path: "/agencies/education"
     parent_id:
+    obj_type: Agency
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
     obj_type: Agency
   agency_ids:
   - Education
@@ -17665,6 +19114,7 @@ cfpb-jordan-wick:
   salary:
   pd_code:
   sge:
+  excepted:
   title: Expert/Consultant
   series:
   supervisory:
@@ -17732,6 +19182,7 @@ detail-cfpb-fcc-wick:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -17768,6 +19219,16 @@ detail-cfpb-fcc-wick:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: CFPB
+    name: Consumer Financial Protection Bureau
+    slug: cfpb
+    page_slug: self
+    short_name: CFPB
+    doge_base: true
+    path: "/agencies/cfpb"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - FCC
 joanna-wischer-opm:
@@ -17799,6 +19260,7 @@ joanna-wischer-opm:
   salary:
   pd_code: 6A36647
   sge:
+  excepted:
   title: Senior Advisor to the Director
   series: 301
   supervisory: false
@@ -17866,6 +19328,7 @@ gsa-wood:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -17933,6 +19396,7 @@ detail-gsa-dfc-wood:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -17969,6 +19433,16 @@ detail-gsa-dfc-wood:
     path: "/agencies/independent"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - USDFC
 irs-wunderly:
@@ -18000,6 +19474,7 @@ irs-wunderly:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -18062,11 +19537,12 @@ opm-chris-young:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 48
-  appt_type: Other (Except NonPerm)
+  appt_type: Other
   pay_grade: ED-00
   salary:
   pd_code: 6A39737
   sge:
+  excepted: true
   title: Expert
   series: 301
   supervisory: false
@@ -18134,6 +19610,7 @@ detail-opm-cfpb-chris-young:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -18170,6 +19647,16 @@ detail-opm-cfpb-chris-young:
     path: "/agencies/cfpb"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - CFPB
 detail-peace-corps-youngs:
@@ -18201,6 +19688,7 @@ detail-peace-corps-youngs:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -18268,6 +19756,7 @@ ssa-employee-11:
   salary: "$162672"
   pd_code: KNX0390
   sge:
+  excepted:
   title: Expert
   series:
   supervisory:
@@ -18332,6 +19821,7 @@ ssa-employee-5:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -18360,6 +19850,16 @@ ssa-employee-5:
     doge_base: true
     path: "/agencies/social-security"
     parent_id:
+    obj_type: Agency
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
     obj_type: Agency
   agency_ids:
   - SSA
@@ -18392,6 +19892,7 @@ detail-opm-ssa-8:
   salary:
   pd_code:
   sge:
+  excepted:
   title:
   series:
   supervisory:
@@ -18417,6 +19918,16 @@ detail-opm-ssa-8:
     short_name: SSA
     doge_base: true
     path: "/agencies/social-security"
+    parent_id:
+    obj_type: Agency
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    path: "/agencies/opm"
     parent_id:
     obj_type: Agency
   agency_ids:

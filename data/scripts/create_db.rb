@@ -56,6 +56,7 @@ DB.create_table! :positions do
   string :salary
   string :pd_code
   boolean :sge
+  boolean :excepted
   string :title
   string :series
   boolean :supervisory

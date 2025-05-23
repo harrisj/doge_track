@@ -49,7 +49,7 @@
       <td>{{ pos.end_date }}</td>
       <td>{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.alias %}<a href="/topics/aliases">{{ pos.alias.id }}</a>{% end %}</td>
       <td>{{ pos_type_display(pos) }}</td>
-      <td>{% if pos.from_agency_id %}<span class="icon-text">{{ agency_link(pos.from_agency_id) }} <span class="icon"><i class="fa-solid fa-arrow-right"></i></span> {{ agency_link(pos.agency_id) }}</span>{% end %}</td>
+      <td>{{ position_move(pos) }}</td>
       <td></td>
     </tr>
   {% end %}

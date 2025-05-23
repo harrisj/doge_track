@@ -128,7 +128,7 @@ def generate_people_yaml
 
   out = Person.eager(system_roles: :govt_system).all.map do |p|
     rec = p.to_hash
-    rec['positions'] = p.positions.sort_by(&:sort_date).map(&:to_hash)
+    rec['positions'] = positions_for_output(p.positions)
     rec['events'] = events_for_output(p.events)
     rec['system_access'] = p.system_roles.map(&:to_hash)
     rec['obj_type'] = 'Person'
@@ -161,6 +161,7 @@ def generate_positions_yaml
     out[key][:person] = position.person.to_hash.merge(obj_type: 'Person') if position.person
     out[key][:alias] = position.doge_alias.to_hash.merge(obj_type: 'Alias') if position.doge_alias
     out[key][:agency] = position.agency.to_hash.merge(obj_type: 'Agency')
+    out[key][:from_agency] = position.from_agency.to_hash.merge(obj_type: 'Agency') if position.from_agency_id
     out[key][:agency_ids] = [position.agency.id, position.agency.parent_id].compact
   end
 
