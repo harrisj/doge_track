@@ -33,6 +33,7 @@
     type: detailed
     agency: Education
     from: OPM
+    from_truth: verified
     signed_date: 2025-02-12
     start_date: 2025-02-03
     start_date_truth: verified
@@ -78,6 +79,7 @@
   - id: detail-gsa-education-3
     type: detailed
     from: GSA
+    from_truth: verified
     agency: Education
     signed_date: 2025-02-03
     start_date: 2025-02-12
@@ -143,7 +145,8 @@
     nte_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 48
-    appt_type: Other (Except NonPerm)
+    appt_type: Other
+    excepted: true
     pd_code: 6A39740
     title: Expert
     pay_grade: ED-00
@@ -160,6 +163,7 @@
     type: detailed
     agency: SSA
     from: OPM
+    from_truth: verified
     signed_date: 2025-02-12
     start_date: 2025-02-03
     start_date_truth: verified
@@ -199,7 +203,8 @@
     start_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 48
-    appt_type: Other (Except NonPerm)
+    appt_type: Other
+    excepted: true
     pd_code: 6A39738
     title: Expert
     pay_grade: ED-00
@@ -239,7 +244,7 @@
     pay_grade: ED-00
     series: '0301'
     supervisory: false
-    salary: "$90025"
+    salary: "$90,025"
     qualifications: 'Hands-on software engineer that is an expert in modern computer programming languages, cloud and other infrastructure, AI, etc. 5 years of experience using numerous computer code languages, leadership of teams in technical, software design, and infrastructure areas.
 
       '
@@ -257,6 +262,7 @@
   - id: detail-gsa-ssa-employee-10
     type: detailed
     from: GSA
+    from_truth: verified
     agency: SSA
     signed_date: 2025-02-18
     start_date: 2025-02-18
@@ -307,6 +313,7 @@
   - id: detail-nasa-ssa-employee-2
     type: detailed
     from: NASA
+    from_truth: verified
     agency: SSA
     start_date: 2025-02-18
     start_date_truth: verified
@@ -317,7 +324,7 @@
     signed_date: 2025-03-06
     reimbursed: true
     comment: Followed by Employee 2 being appointed the CIO
-    reimbursement_amount: Up to $120,579
+    reimbursement_amount: hourly, maximum of $120,579
     documents:
     - detail-20250306-nasa-ssa-employee-2
     - onboard-ssa-employee-2
@@ -347,6 +354,7 @@
     alias: SSA-3
     agency: SSA
     from: DOL
+    from_truth: verified
     start_date: 2025-02-22
     start_date_truth: verified
     reimbursed: true
@@ -390,6 +398,7 @@
     type: detailed
     agency: SSA
     from: DOGE
+    from_truth: verified
     start_date: 2025-02-18
     start_date_truth: verified
     comment: All I have is the date they completed training
@@ -428,6 +437,7 @@
     type: detailed
     agency: SSA
     from: DOL
+    from_truth: verified
     start_date: 2025-02-18
     start_date_truth: verified
     reimbursed: true

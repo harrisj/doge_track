@@ -160,18 +160,19 @@
 - people:
   - **Amy Gleason** (2024-12-30 - 2024-02-18)
   - **Jordan Wick** (2025-01-(20)~)
-  - **Cole Killian** (2025-01-20)
-  - **Elon Musk** (2025-01-20)
+  - **James Burnham** (2025-01-(23)~) General Counsel
   - **Katie Miller** (2025-01-20)
+  - **Elon Musk** (2025-01-20)
+  - **Cole Killian** (2025-01-20)
   - **Adam Ramada** (2025-01-23)
   - **Alexandra Beynon** (2025-02-(04)~)
   - **Stephanie Holmes** (2025-02-(05)~)
   - **Kendall Lindemann** (2025-02-(10)~)
   - **Amy Gleason** (2025-02-18) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
-  - **Justin Aimonetti** (2025-02-XX)
   - **Joshua Hanley** (2025-02-XX)
-  - **Joshua Fox** (2025-02-XX)
   - **Ashley Boizelle** (2025-02-XX)
+  - **Joshua Fox** (2025-02-XX)
+  - **Justin Aimonetti** (2025-02-XX)
 
 # Department of Homeland Security
 - slug: dhs
@@ -182,8 +183,8 @@
   - **Payton Rehling** (detailed from SSA)
   - **Marko Elez** (detailed from DOL)
   - **Luke Farritor** (detailed from GSA)
+  - **Edward Coristine** (2025-02-(04)~) (detailed from GSA)
   - **Kyle Schutt** (2025-02-(19)~) (detailed from GSA)
-  - **Edward Coristine** (2025-02-04) (detailed from GSA)
   - **Antoine McCord** (2025-03-11) Chief Information Officer
 
 # Department of Justice
@@ -220,7 +221,7 @@
 # Department of Energy
 - slug: energy
 - people:
-  - **Luke Farritor** (2025-02-(04)~ - 2025-02-(08)~) (detailed from DOGE)
+  - **Luke Farritor** (2025-02-(04)~ - 2025-02-(08)~) (detailed from GSA)
   - **Adam Ramada** (2025-02-(04)~ - 2025-02-(08)~) (detailed from DOGE)
   - **Ryan Riedel** (2025-02-07 - 2025-03-07) Chief Information Officer
 - systems:
@@ -380,23 +381,23 @@
 - slug: gsa
 - people:
   - **Edward Coristine** (2025-01-(20)~)
-  - **Emily Bryant**
+  - **Ethan Shaotran** (2025-01-20)
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
   - **Conor Fennessy**
   - **Justin Fox**
-  - **Nicole Hollander** (2025-01-20)
   - **Jeremy Lewin** (2025-01-20)
-  - **Ethan Shaotran** (2025-01-20)
-  - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
+  - **Nicole Hollander** (2025-01-20)
   - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
+  - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
   - **Frank Schuler** (2025-02-(18)~) Senior Advisor
   - **Kyle Schutt** (2025-02-(18)~)
   - **Nate Cavanaugh** (2025-02-03)
   - **Riley Sennott** (2025-02-12)
   - **Donald Park** (2025-02-XX)
-  - **Raj Jegannathan** (2025-04-(24)~)
+  - **Emily Bryant** (2025-03-XX)
   - **Dave Malcher** (2025-04-(24)~)
+  - **Raj Jegannathan** (2025-04-(24)~)
   - **Jonathan Mendelson** (2025-04-(25)~)
   - **Jack Stein** (2025-04-XX)
   - **Marshall Wood** (2025-04-XX)
@@ -516,7 +517,7 @@
 - slug: nasa
 - people:
   - **Riley Sennott** (2025-03-(14)~) (detailed from GSA)
-  - **Alexander Simonpour** (2025-03-14) (detail)
+  - **Alexander Simonpour** (2025-03-14) (detailed from GSA)
 
 # National Archives
 - slug: nara

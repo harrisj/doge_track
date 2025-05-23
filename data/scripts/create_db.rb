@@ -30,6 +30,7 @@ DB.create_table! :positions do
   string :name
   string :doge_alias_id
   string :from_agency_id
+  string :from_truth
 
   string :start_date
   string :start_date_truth

@@ -177,7 +177,7 @@
     
     out = if pos.from_agency_id
       arrow = pos.type == 'internal' ? 'arrows-left-right' : 'arrow-right'
-      "#{agency_link(pos.from_agency_id, pos.from_agency.short_name)} <i class=\"fa-solid fa-#{arrow}\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
+      "#{agency_link(pos.from_agency_id, pos.from_agency.short_name)}#{'?' if pos.from_truth == 'guessed'} <i class=\"fa-solid fa-#{arrow}\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
     elsif pos.type == 'appointed'
       "<i class=\"fa-solid fa-right-to-bracket\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
     elsif pos.type == 'promotion'
@@ -193,3 +193,48 @@
     ''
   end
 end %}
+
+{% macro 'position_summary' do |pos|
+    type_str = case pos.type
+      when 'other'
+        nil
+      when 'internal'
+        'internal xfer'
+      else
+        pos.type
+      end
+
+    title_str = ""
+    if pos.title
+      title_str += " <strong>#{pos.title}</strong>"
+
+      if pos.office
+        title_str += " (#{pos.office})"
+      end
+    end
+
+    hire_details = [
+      pos.sge ? "<abbr title=\"Special Government Employee\">SGE</abbr>" : nil,
+      pos.appt_type && pos.appt_type != 'Other' ? pos.appt_type : nil,
+      pos.nte_date ? "<abbr title=\"not to exceed\">NTE</abbr> #{pos.nte_date}" : nil,
+      pos.pay_grade,
+      pos.supervisory ? 'supervisory' : nil,
+      pos.excepted ? 'excepted' : nil ,
+      pos.salary == "$0" ? "volunteer" : nil ,
+      pos.salary && pos.salary != '$0' ? "<strong>#{pos.salary} annually</strong>" : nil,
+      pos.reimbursement_amount ? "reimbursed <strong>#{pos.reimbursement_amount}</strong>" : nil
+    ].compact
+
+    if hire_details.any?
+      hire_str = " (#{hire_details.join(', ')})"
+    end
+
+    if pos.table_note
+      note_str = "[#{pos.table_note}]"
+    end
+
+    out_str = [type_str, title_str, hire_str, note_str].map {|x| x.blank? ? nil : x }.compact.map {|x| "<span>#{x}</span>"}.join(" ")
+
+    out_str.html_safe
+   end
+%}

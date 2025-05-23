@@ -6,6 +6,7 @@ dot-abrahamson:
   name: Daniel Abrahamson
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date:
   start_date_truth:
   start_date_event:
@@ -38,7 +39,7 @@ dot-abrahamson:
   reimbursement_amount:
   comment:
   qualifications:
-  table_note: Exact date unknown but before 3/26
+  table_note: start date unknown but before 3/26
   documents:
   person:
     name: Daniel Abrahamson
@@ -51,7 +52,7 @@ dot-abrahamson:
     own_page: false
     blurb: >-
       Apart from his identification in a few Politico articles naming him as DOGE's lawyer at the Department of Transportation, Daniel Abrahamson has kept
-      a relatively low profile.
+      a relatively low profile. He was formerly a senior counsel at Tesla since 2022.
     reporting_notes:
     path: "/people#daniel-abrahamson"
     comment:
@@ -76,6 +77,7 @@ doge-aimonetti:
   name: Justin Aimonetti
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-XX
   start_date_truth: reported
   start_date_event:
@@ -108,7 +110,7 @@ doge-aimonetti:
   reimbursement_amount:
   comment:
   qualifications:
-  table_note: Start date only reported as "some point in February"
+  table_note: start date reported as "some point in February"
   documents:
   person:
     name: Justin Aimonetti
@@ -121,7 +123,8 @@ doge-aimonetti:
     own_page: false
     blurb: >-
       Identified as one of DOGE's growing army of lawyers, Justin Aimonetti has most recently been involved in DOGE's shutdown efforts against small independent
-      agencies like the Corporation for Public Broadcasting.
+      agencies like the Corporation for Public Broadcasting, acting as a point of contact between DOGE teams from the GSA and the White House through his
+      Executive Office of the President (EOP) email address.
     reporting_notes:
     path: "/people#justin-aimonetti"
     comment:
@@ -147,6 +150,7 @@ opm-jacob-altik:
   name: Jacob Altik
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-24'
   start_date_truth: verified
   start_date_event:
@@ -177,9 +181,9 @@ opm-jacob-altik:
   source:
   reimbursed:
   reimbursement_amount:
-  comment: Sourced from FOIA documents
+  comment:
   qualifications:
-  table_note:
+  table_note: sourced from FOIA
   documents: opm-foia-doge-positions
   person:
     name: Jacob Altik
@@ -215,6 +219,7 @@ detail-opm-usadf-altik:
   name: Jacob Altik
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: guessed
   start_date: '2025-02-21'
   start_date_truth: verified
   start_date_event:
@@ -247,7 +252,7 @@ detail-opm-usadf-altik:
   reimbursement_amount:
   comment: Assuming detail from OPM
   qualifications:
-  table_note: Detail assumed to be from OPM
+  table_note: info in govt legal declation
   documents:
   person:
     name: Jacob Altik
@@ -293,6 +298,7 @@ detail-opm-fcc-altik:
   name: Jacob Altik
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: guessed
   start_date: '2025-04-04'
   start_date_truth: reported
   start_date_event:
@@ -325,7 +331,7 @@ detail-opm-fcc-altik:
   reimbursement_amount:
   comment: Assuming he has been detailed from OPM
   qualifications:
-  table_note: Detail assumed to be from OPM
+  table_note:
   documents:
   person:
     name: Jacob Altik
@@ -371,6 +377,7 @@ detail-opm-dhs-armstrong:
   name: Anthony Armstrong
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: guessed
   start_date:
   start_date_truth:
   start_date_event:
@@ -403,7 +410,7 @@ detail-opm-dhs-armstrong:
   reimbursement_amount:
   comment: Find more definitive info for DHS link
   qualifications:
-  table_note: DHS position reported by NYT
+  table_note: reported by media, assuming from OPM
   documents:
   person:
     name: Anthony Armstrong
@@ -449,6 +456,7 @@ opm-anthony-armstrong:
   name: Anthony Armstrong
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: verified
   start_date_event:
@@ -517,6 +525,7 @@ detail-opm-fdic-armstrong:
   name: Anthony Armstrong
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: guessed
   start_date: '2025-04-10'
   start_date_truth: reported
   start_date_event:
@@ -549,7 +558,7 @@ detail-opm-fdic-armstrong:
   reimbursement_amount:
   comment:
   qualifications:
-  table_note: No details available
+  table_note: reported by media
   documents:
   person:
     name: Anthony Armstrong
@@ -595,6 +604,7 @@ education-balajadia:
   name: Jennifer Balajadia
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date:
   start_date_truth:
   start_date_event:
@@ -627,7 +637,7 @@ education-balajadia:
   reimbursement_amount:
   comment:
   qualifications:
-  table_note: Reported by the NYT that she is in Education and other agencies, but no public documentation
+  table_note: NYT links her to Education, but no other info
   documents:
   person:
     name: Jennifer Balajadia
@@ -663,6 +673,7 @@ dol-sam-beyda:
   name: Sam Beyda
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-(13)~
   start_date_truth: reported
   start_date_event:
@@ -693,9 +704,9 @@ dol-sam-beyda:
   source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
   reimbursed:
   reimbursement_amount:
-  comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
+  comment: 3 other DOGE staff besides Ramada at agency on 2/5.
   qualifications:
-  table_note:
+  table_note: No other info besides this report
   documents:
   person:
     name: Sam Beyda
@@ -731,6 +742,7 @@ doge-beynon:
   name: Alexandra Beynon
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-(04)~
   start_date_truth: guessed
   start_date_event:
@@ -763,7 +775,7 @@ doge-beynon:
   reimbursement_amount:
   comment: FIXME, find earliest details of arrival; is she GSA?
   qualifications:
-  table_note: Date guessed, reported as detailing from DOGE to Education
+  table_note: date guessed, reported as detailing from DOGE to Education
   documents:
   person:
     name: Alexandra Beynon
@@ -800,6 +812,7 @@ detail-doge-education-alexandra-beynon:
   name: Alexandra Beynon
   doge_alias_id:
   from_agency_id: DOGE
+  from_truth: verified
   start_date: '2025-02-05'
   start_date_truth: verified
   start_date_event:
@@ -832,7 +845,7 @@ detail-doge-education-alexandra-beynon:
   reimbursement_amount:
   comment: Details just provided in court testimony
   qualifications:
-  table_note: Details verified in court testimony
+  table_note: info in govt legal filing
   documents: doge-staff-education-20250407
   person:
     name: Alexandra Beynon
@@ -878,6 +891,7 @@ opm-riccardo-biasini:
   name: Riccardo Biasini
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: verified
   start_date_event:
@@ -910,7 +924,7 @@ opm-riccardo-biasini:
   reimbursement_amount:
   comment: I was able to confirm that OPM Employee 2 was Riccardo Biasini
   qualifications:
-  table_note:
+  table_note: info for alias SSA-2, who I've identified as him
   documents: opm-foia-doge-positions onboard-opm-employee-2
   person:
     name: Riccardo Biasini
@@ -946,6 +960,7 @@ ssa-bisignano:
   name: Frank Bisignano
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-05-06'
   start_date_truth: verified
   start_date_event:
@@ -1014,6 +1029,7 @@ opm-brian-bjelde:
   name: Brian Bjelde
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: verified
   start_date_event:
@@ -1082,6 +1098,7 @@ opm-3:
   name: Akash Bobba
   doge_alias_id: OPM-3
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: verified
   start_date_event:
@@ -1099,12 +1116,12 @@ opm-3:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 48
-  appt_type: Other (Except NonPerm)
+  appt_type: Other
   pay_grade: ED-00
   salary: "$0"
   pd_code: 6A39740
   sge:
-  excepted:
+  excepted: true
   title: Expert
   series: 301
   supervisory: false
@@ -1125,7 +1142,9 @@ opm-3:
     background: coder
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      Identified early in media reports as one of six engineers picked on Elon Musk's team, Akash Bobba was a prolific wrecker from the start, including
+      an unusual detailing document where we as assigned to OPM, Education and Social Security simultaneously.
     reporting_notes:
     path: "/people#akash-bobba"
     comment:
@@ -1160,6 +1179,7 @@ detail-opm-education-akash-bobba:
   name: Akash Bobba
   doge_alias_id: ED-1
   from_agency_id: OPM
+  from_truth: verified
   start_date: '2025-02-03'
   start_date_truth: verified
   start_date_event:
@@ -1203,7 +1223,9 @@ detail-opm-education-akash-bobba:
     background: coder
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      Identified early in media reports as one of six engineers picked on Elon Musk's team, Akash Bobba was a prolific wrecker from the start, including
+      an unusual detailing document where we as assigned to OPM, Education and Social Security simultaneously.
     reporting_notes:
     path: "/people#akash-bobba"
     comment:
@@ -1248,6 +1270,7 @@ detail-opm-ssa-opm-3:
   name: Akash Bobba
   doge_alias_id: OPM-3
   from_agency_id: OPM
+  from_truth: verified
   start_date: '2025-02-03'
   start_date_truth: verified
   start_date_event:
@@ -1291,7 +1314,9 @@ detail-opm-ssa-opm-3:
     background: coder
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      Identified early in media reports as one of six engineers picked on Elon Musk's team, Akash Bobba was a prolific wrecker from the start, including
+      an unusual detailing document where we as assigned to OPM, Education and Social Security simultaneously.
     reporting_notes:
     path: "/people#akash-bobba"
     comment:
@@ -1336,6 +1361,7 @@ ssa-employee-1:
   name: Akash Bobba
   doge_alias_id: SSA-1
   from_agency_id:
+  from_truth:
   start_date: '2025-02-09'
   start_date_truth: verified
   start_date_event:
@@ -1355,7 +1381,7 @@ ssa-employee-1:
   appt_type_code: 171
   appt_type:
   pay_grade: ED-00
-  salary: "$90025"
+  salary: "$90,025"
   pd_code: KNX0350
   sge:
   excepted:
@@ -1381,7 +1407,9 @@ ssa-employee-1:
     background: coder
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      Identified early in media reports as one of six engineers picked on Elon Musk's team, Akash Bobba was a prolific wrecker from the start, including
+      an unusual detailing document where we as assigned to OPM, Education and Social Security simultaneously.
     reporting_notes:
     path: "/people#akash-bobba"
     comment:
@@ -1418,6 +1446,7 @@ doge-boizelle:
   name: Ashley Boizelle
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-XX
   start_date_truth: reported
   start_date_event:
@@ -1450,7 +1479,7 @@ doge-boizelle:
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: reported by media as started in February
   documents:
   person:
     name: Ashley Boizelle
@@ -1487,7 +1516,8 @@ gsa-bryant:
   name: Emily Bryant
   doge_alias_id:
   from_agency_id:
-  start_date:
+  from_truth:
+  start_date: 2025-03-XX
   start_date_truth:
   start_date_event:
   start_source:
@@ -1517,7 +1547,7 @@ gsa-bryant:
   source:
   reimbursed:
   reimbursement_amount:
-  comment: No details, but NYT links to her to GSA, so assuming she started there
+  comment: Not verified, but NYT links to her to GSA also, so assuming she started there
   qualifications:
   table_note:
   documents:
@@ -1530,7 +1560,9 @@ gsa-bryant:
     background:
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      A relatively new arrival to DOGE. My only information on her is a sighting on the DOGE team at the FTC. ProPublica did report that she has an email
+      address at both GSA and EOP, so I am assuming she started there and was detailed out.
     reporting_notes:
     path: "/people#emily-bryant"
     comment:
@@ -1555,6 +1587,7 @@ detail-doge-ftc-bryant:
   name: Emily Bryant
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: 2025-03-(28)~
   start_date_truth: reported
   start_date_event:
@@ -1565,7 +1598,7 @@ detail-doge-ftc-bryant:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-03-(28)~
+  sort_date: '2025-03-28'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -1585,9 +1618,9 @@ detail-doge-ftc-bryant:
   source: https://www.axios.com/pro/tech-policy/2025/04/04/doge-staffers-move-into-ftc-office
   reimbursed:
   reimbursement_amount:
-  comment: Title is not given, reported as starting "last week" from 2025-04-04
+  comment:
   qualifications:
-  table_note:
+  table_note: limited info, 2025-04-04 report stated she started "last week"
   documents:
   person:
     name: Emily Bryant
@@ -1598,7 +1631,9 @@ detail-doge-ftc-bryant:
     background:
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      A relatively new arrival to DOGE. My only information on her is a sighting on the DOGE team at the FTC. ProPublica did report that she has an email
+      address at both GSA and EOP, so I am assuming she started there and was detailed out.
     reporting_notes:
     path: "/people#emily-bryant"
     comment:
@@ -1626,6 +1661,78 @@ detail-doge-ftc-bryant:
     obj_type: Agency
   agency_ids:
   - FTC
+doge-burnham:
+  id: doge-burnham
+  type: appointed
+  agency_id: DOGE
+  name: James Burnham
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-01-(23)~
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: 2025-01-(23)~
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: General Counsel
+  series:
+  supervisory:
+  office:
+  source: https://www.nytimes.com/2025/01/12/us/politics/elon-musk-doge-government-trump.html
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: NYT reported in DOGE in January, ProPublica provided title
+  documents:
+  person:
+    name: James Burnham
+    sort_name: Burnham
+    slug: james-burnham
+    page_slug:
+    age: 41
+    background: lawyer
+    category: support
+    own_page: false
+    blurb: >-
+      James Burnham served in the previous Trump administration at both the White House and the Department of Justice. The New York Times mentioned his
+      involvement with DOGE in an article from mid-January, and he has been listed in several subsequent media round-ups of DOGE's lawyers.
+    reporting_notes:
+    path: "/people#james-burnham"
+    comment:
+    table_note:
+    obj_type: Person
+  agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
+    obj_type: Agency
+  agency_ids:
+  - DOGE
+  - EOP
 gsa-cavanaugh:
   id: gsa-cavanaugh
   type: appointed
@@ -1633,6 +1740,7 @@ gsa-cavanaugh:
   name: Nate Cavanaugh
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-03'
   start_date_truth: reported
   start_date_event:
@@ -1676,7 +1784,12 @@ gsa-cavanaugh:
     background: executive
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      A former tech entrepeneur, Nate Cavanaugh was initially spotted as one of the DOGE staffers interviewing GSA federal staff to determine layoffs. Since
+      March however, he has been the de facto leader of DOGE's [sustained attacks against multiple independent agencies](/agencies/independent) such as
+      the NEH or IMLS. These attacks begin with Nate offering IT Modernization assistance from the GSA and then escalate through the White House firing
+      agency leadership and naming Nate (or an associate) as the new acting agency head. Once in power, he quickly places all employees on administrative
+      leave and starts firing staff and cancelling grants. Much like a vampire, if he shows up at the door of your agency, do not let him inside.
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
@@ -1701,6 +1814,7 @@ detail-gsa-usadf-cavanaugh:
   name: Nate Cavanaugh
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-02-21'
   start_date_truth: verified
   start_date_event:
@@ -1733,7 +1847,7 @@ detail-gsa-usadf-cavanaugh:
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: verified via court filing
   documents:
   person:
     name: Nate Cavanaugh
@@ -1744,7 +1858,12 @@ detail-gsa-usadf-cavanaugh:
     background: executive
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      A former tech entrepeneur, Nate Cavanaugh was initially spotted as one of the DOGE staffers interviewing GSA federal staff to determine layoffs. Since
+      March however, he has been the de facto leader of DOGE's [sustained attacks against multiple independent agencies](/agencies/independent) such as
+      the NEH or IMLS. These attacks begin with Nate offering IT Modernization assistance from the GSA and then escalate through the White House firing
+      agency leadership and naming Nate (or an associate) as the new acting agency head. Once in power, he quickly places all employees on administrative
+      leave and starts firing staff and cancelling grants. Much like a vampire, if he shows up at the door of your agency, do not let him inside.
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
@@ -1779,6 +1898,7 @@ detail-gsa-usip-cavanaugh:
   name: Nate Cavanaugh
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-03-04'
   start_date_truth: reported
   start_date_event:
@@ -1811,7 +1931,7 @@ detail-gsa-usip-cavanaugh:
   reimbursement_amount:
   comment: Assuming this based on repors and where he is based. Becomes president of USIP next
   qualifications:
-  table_note:
+  table_note: verified via court filing
   documents:
   person:
     name: Nate Cavanaugh
@@ -1822,7 +1942,12 @@ detail-gsa-usip-cavanaugh:
     background: executive
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      A former tech entrepeneur, Nate Cavanaugh was initially spotted as one of the DOGE staffers interviewing GSA federal staff to determine layoffs. Since
+      March however, he has been the de facto leader of DOGE's [sustained attacks against multiple independent agencies](/agencies/independent) such as
+      the NEH or IMLS. These attacks begin with Nate offering IT Modernization assistance from the GSA and then escalate through the White House firing
+      agency leadership and naming Nate (or an associate) as the new acting agency head. Once in power, he quickly places all employees on administrative
+      leave and starts firing staff and cancelling grants. Much like a vampire, if he shows up at the door of your agency, do not let him inside.
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
@@ -1857,6 +1982,7 @@ detail-gsa-neh-cavanaugh:
   name: Nate Cavanaugh
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: 2025-03-(13)~
   start_date_truth: verified
   start_date_event:
@@ -1887,9 +2013,9 @@ detail-gsa-neh-cavanaugh:
   source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
   reimbursed:
   reimbursement_amount:
-  comment: Guessing it's a detail
+  comment:
   qualifications:
-  table_note:
+  table_note: Verified via court filing
   documents:
   person:
     name: Nate Cavanaugh
@@ -1900,7 +2026,12 @@ detail-gsa-neh-cavanaugh:
     background: executive
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      A former tech entrepeneur, Nate Cavanaugh was initially spotted as one of the DOGE staffers interviewing GSA federal staff to determine layoffs. Since
+      March however, he has been the de facto leader of DOGE's [sustained attacks against multiple independent agencies](/agencies/independent) such as
+      the NEH or IMLS. These attacks begin with Nate offering IT Modernization assistance from the GSA and then escalate through the White House firing
+      agency leadership and naming Nate (or an associate) as the new acting agency head. Once in power, he quickly places all employees on administrative
+      leave and starts firing staff and cancelling grants. Much like a vampire, if he shows up at the door of your agency, do not let him inside.
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
@@ -1935,6 +2066,7 @@ usip-cavanaugh-president:
   name: Nate Cavanaugh
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-25'
   start_date_truth: verified
   start_date_event:
@@ -1969,7 +2101,7 @@ usip-cavanaugh-president:
     Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco Rubio and Pete Hegseth, and he is authorized to transfer
     all assets to the GSA
   qualifications:
-  table_note:
+  table_note: After the rest of board was ousted, Nate was named President of the agency by Marco Rubio and Pete Hegseth
   documents:
   person:
     name: Nate Cavanaugh
@@ -1980,7 +2112,12 @@ usip-cavanaugh-president:
     background: executive
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      A former tech entrepeneur, Nate Cavanaugh was initially spotted as one of the DOGE staffers interviewing GSA federal staff to determine layoffs. Since
+      March however, he has been the de facto leader of DOGE's [sustained attacks against multiple independent agencies](/agencies/independent) such as
+      the NEH or IMLS. These attacks begin with Nate offering IT Modernization assistance from the GSA and then escalate through the White House firing
+      agency leadership and naming Nate (or an associate) as the new acting agency head. Once in power, he quickly places all employees on administrative
+      leave and starts firing staff and cancelling grants. Much like a vampire, if he shows up at the door of your agency, do not let him inside.
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
@@ -2005,6 +2142,7 @@ imls-cavanaugh:
   name: Nate Cavanaugh
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-31'
   start_date_truth: reported
   start_date_event:
@@ -2035,9 +2173,9 @@ imls-cavanaugh:
   source: https://bsky.app/profile/marisakabas.bsky.social
   reimbursed:
   reimbursement_amount:
-  comment: DOGE put entire staff on admin leave and started cancelling grants, not many details
+  comment: DOGE put entire staff on admin leave and started cancelling grants, not many details. FIXME
   qualifications:
-  table_note:
+  table_note: Based on initial reports
   documents:
   person:
     name: Nate Cavanaugh
@@ -2048,7 +2186,12 @@ imls-cavanaugh:
     background: executive
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      A former tech entrepeneur, Nate Cavanaugh was initially spotted as one of the DOGE staffers interviewing GSA federal staff to determine layoffs. Since
+      March however, he has been the de facto leader of DOGE's [sustained attacks against multiple independent agencies](/agencies/independent) such as
+      the NEH or IMLS. These attacks begin with Nate offering IT Modernization assistance from the GSA and then escalate through the White House firing
+      agency leadership and naming Nate (or an associate) as the new acting agency head. Once in power, he quickly places all employees on administrative
+      leave and starts firing staff and cancelling grants. Much like a vampire, if he shows up at the door of your agency, do not let him inside.
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
@@ -2073,6 +2216,7 @@ detail-gsa-nlrb-cavanaugh:
   name: Nate Cavanaugh
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-04-16'
   start_date_truth: reported
   start_date_event:
@@ -2105,7 +2249,7 @@ detail-gsa-nlrb-cavanaugh:
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: Spotted by media
   documents:
   person:
     name: Nate Cavanaugh
@@ -2116,7 +2260,12 @@ detail-gsa-nlrb-cavanaugh:
     background: executive
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      A former tech entrepeneur, Nate Cavanaugh was initially spotted as one of the DOGE staffers interviewing GSA federal staff to determine layoffs. Since
+      March however, he has been the de facto leader of DOGE's [sustained attacks against multiple independent agencies](/agencies/independent) such as
+      the NEH or IMLS. These attacks begin with Nate offering IT Modernization assistance from the GSA and then escalate through the White House firing
+      agency leadership and naming Nate (or an associate) as the new acting agency head. Once in power, he quickly places all employees on administrative
+      leave and starts firing staff and cancelling grants. Much like a vampire, if he shows up at the door of your agency, do not let him inside.
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
@@ -2151,6 +2300,7 @@ detail-gsa-dfc-cavanaugh:
   name: Nate Cavanaugh
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-04-28'
   start_date_truth: reported
   start_date_event:
@@ -2183,7 +2333,7 @@ detail-gsa-dfc-cavanaugh:
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: Spotted by media
   documents:
   person:
     name: Nate Cavanaugh
@@ -2194,7 +2344,12 @@ detail-gsa-dfc-cavanaugh:
     background: executive
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      A former tech entrepeneur, Nate Cavanaugh was initially spotted as one of the DOGE staffers interviewing GSA federal staff to determine layoffs. Since
+      March however, he has been the de facto leader of DOGE's [sustained attacks against multiple independent agencies](/agencies/independent) such as
+      the NEH or IMLS. These attacks begin with Nate offering IT Modernization assistance from the GSA and then escalate through the White House firing
+      agency leadership and naming Nate (or an associate) as the new acting agency head. Once in power, he quickly places all employees on administrative
+      leave and starts firing staff and cancelling grants. Much like a vampire, if he shows up at the door of your agency, do not let him inside.
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
@@ -2229,6 +2384,7 @@ detail-gsa-exim-cavanaugh:
   name: Nate Cavanaugh
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-05-14'
   start_date_truth: reported
   start_date_event:
@@ -2259,9 +2415,9 @@ detail-gsa-exim-cavanaugh:
   source: https://bsky.app/profile/marisakabas.bsky.social/post/3lp5iwrmfv22y
   reimbursed:
   reimbursement_amount:
-  comment: Assuming detail is from GSA
+  comment:
   qualifications:
-  table_note:
+  table_note: Reported by media
   documents:
   person:
     name: Nate Cavanaugh
@@ -2272,7 +2428,12 @@ detail-gsa-exim-cavanaugh:
     background: executive
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      A former tech entrepeneur, Nate Cavanaugh was initially spotted as one of the DOGE staffers interviewing GSA federal staff to determine layoffs. Since
+      March however, he has been the de facto leader of DOGE's [sustained attacks against multiple independent agencies](/agencies/independent) such as
+      the NEH or IMLS. These attacks begin with Nate offering IT Modernization assistance from the GSA and then escalate through the White House firing
+      agency leadership and naming Nate (or an associate) as the new acting agency head. Once in power, he quickly places all employees on administrative
+      leave and starts firing staff and cancelling grants. Much like a vampire, if he shows up at the door of your agency, do not let him inside.
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
@@ -2307,6 +2468,7 @@ detail-gsa-mspb-cavanaugh:
   name: Nate Cavanaugh
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-05-21'
   start_date_truth: reported
   start_date_event:
@@ -2337,9 +2499,9 @@ detail-gsa-mspb-cavanaugh:
   source: https://bsky.app/profile/marisakabas.bsky.social/post/3lpclnw3x7s2c
   reimbursed:
   reimbursement_amount:
-  comment: Email says detailing is from DOGE, but I assume it's from GSA
+  comment:
   qualifications:
-  table_note:
+  table_note: Email cited mentioned he was from DOGE, but assuming detail from GSA
   documents:
   person:
     name: Nate Cavanaugh
@@ -2350,7 +2512,12 @@ detail-gsa-mspb-cavanaugh:
     background: executive
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      A former tech entrepeneur, Nate Cavanaugh was initially spotted as one of the DOGE staffers interviewing GSA federal staff to determine layoffs. Since
+      March however, he has been the de facto leader of DOGE's [sustained attacks against multiple independent agencies](/agencies/independent) such as
+      the NEH or IMLS. These attacks begin with Nate offering IT Modernization assistance from the GSA and then escalate through the White House firing
+      agency leadership and naming Nate (or an associate) as the new acting agency head. Once in power, he quickly places all employees on administrative
+      leave and starts firing staff and cancelling grants. Much like a vampire, if he shows up at the door of your agency, do not let him inside.
     reporting_notes:
     path: "/people#nate-cavanaugh"
     comment:
@@ -2385,6 +2552,7 @@ usda-cole:
   name: Michael Cole
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-XX
   start_date_truth: inferred
   start_date_event:
@@ -2418,7 +2586,7 @@ usda-cole:
   comment: >-
     CC'ed on an email 2025-02-20, by Gavin Kliger and has a USDS address. USDA administrator said on 2/14 that DOGE had been at the agency for several weeks
   qualifications:
-  table_note:
+  table_note: CC'ed on a leaked email. Date guessed from Ag Sec on 2/14 saying DOGE at agency for "a couple weeks"
   documents:
   person:
     name: Michael Cole
@@ -2454,6 +2622,7 @@ dol-collins:
   name: Miles Collins
   doge_alias_id:
   from_agency_id: DOGE
+  from_truth: reported
   start_date: '2025-03-05'
   start_date_truth: reported
   start_date_event:
@@ -2532,6 +2701,7 @@ irs-corcos:
   name: Sam Corcos
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-28'
   start_date_truth: reported
   start_date_event:
@@ -2562,9 +2732,9 @@ irs-corcos:
   source: https://www.washingtonpost.com/business/2025/03/01/doge-irs-tax-records-benefits/
   reimbursed:
   reimbursement_amount:
-  comment: Likely earlier involvement, maybe when Gavin Kliger started there; ends when became CIO
+  comment: FIXME earlier involvement, maybe when Gavin Kliger started there; ends when became CIO
   qualifications:
-  table_note:
+  table_note: Start date inferred and likely earlier.
   documents: gov.uscourts.nysd.636609.144.0
   person:
     name: Sam Corcos
@@ -2601,6 +2771,7 @@ irs-corcos-cio:
   name: Sam Corcos
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-05-(06)~
   start_date_truth: reported
   start_date_event:
@@ -2633,7 +2804,7 @@ irs-corcos-cio:
   reimbursement_amount:
   comment: Date is approximate
   qualifications:
-  table_note:
+  table_note: Date is approximate per reports. Will update as new details emerge.
   documents:
   person:
     name: Sam Corcos
@@ -2670,6 +2841,7 @@ gsa-edward-coristine:
   name: Edward Coristine
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-01-(20)~
   start_date_truth: inferred
   start_date_event:
@@ -2702,7 +2874,7 @@ gsa-edward-coristine:
   reimbursement_amount:
   comment: Several documents have Coristine detailing from GSA, so assuming home agency. Also, not in FOIA release from OPM
   qualifications:
-  table_note: Start date and agency inferred from reporting
+  table_note: Start date and agency inferred from later reporting
   documents:
   person:
     name: Edward Coristine
@@ -2740,6 +2912,7 @@ internal-dhs-tsa-coristine:
   name: Edward Coristine
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -2772,7 +2945,7 @@ internal-dhs-tsa-coristine:
   reimbursement_amount:
   comment: No details, but in NYT roundup
   qualifications:
-  table_note: Listed by the _New York Times_ as being here
+  table_note: NYT links him to TSA, but no other info
   documents:
   person:
     name: Edward Coristine
@@ -2821,6 +2994,7 @@ internal-dhs-uscis-coristine:
   name: Edward Coristine
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -2851,7 +3025,7 @@ internal-dhs-uscis-coristine:
   source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   reimbursed:
   reimbursement_amount:
-  comment: No details, but in NYT roundup
+  comment: NYT links him to USCIS, but no other info
   qualifications:
   table_note:
   documents:
@@ -2902,6 +3076,7 @@ detail-gsa-opm-coristine:
   name: Edward Coristine
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: reported
   start_date: 2025-01-(28)~
   start_date_truth: reported
   start_date_event:
@@ -2934,7 +3109,7 @@ detail-gsa-opm-coristine:
   reimbursement_amount:
   comment: Edward Coristine is not named, but identfied. Mentions he reportd to Scales
   qualifications:
-  table_note:
+  table_note: wasn't named due to young age; mentioned as reporting to Amanda Scales, so might be detail?
   documents:
   person:
     name: Edward Coristine
@@ -2982,6 +3157,7 @@ detail-gsa-sba-coristine:
   name: Edward Coristine
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-02-03'
   start_date_truth: reported
   start_date_event:
@@ -3014,7 +3190,7 @@ detail-gsa-sba-coristine:
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: Only source is a single tweet. More info needed. Assuming detail from GSA.
   documents:
   person:
     name: Edward Coristine
@@ -3062,7 +3238,8 @@ detail-gsa-dhs-coristine:
   name: Edward Coristine
   doge_alias_id:
   from_agency_id: GSA
-  start_date: '2025-02-04'
+  from_truth: guessed
+  start_date: 2025-02-(04)~
   start_date_truth: reported
   start_date_event:
   start_source:
@@ -3072,7 +3249,7 @@ detail-gsa-dhs-coristine:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: '2025-02-04'
+  sort_date: 2025-02-(04)~
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3094,7 +3271,7 @@ detail-gsa-dhs-coristine:
   reimbursement_amount:
   comment: Reported by the Post, I'm going to assume this predated the FEMA access
   qualifications:
-  table_note:
+  table_note: Date unverified, but assuming predates sighting at FEMA
   documents:
   person:
     name: Edward Coristine
@@ -3142,6 +3319,7 @@ internal-hhs-fema-edward-coristine:
   name: Edward Coristine
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date: '2025-02-05'
   start_date_truth: reported
   start_date_event:
@@ -3223,6 +3401,7 @@ detail-gsa-state-coristine:
   name: Edward Coristine
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: reported
   start_date: '2025-02-10'
   start_date_truth: reported
   start_date_event:
@@ -3303,6 +3482,7 @@ detail-gsa-usaid-coristine:
   name: Edward Coristine
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-02-10'
   start_date_truth: reported
   start_date_event:
@@ -3383,6 +3563,7 @@ internal-dhs-cisa-coristine:
   name: Edward Coristine
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date: '2025-02-19'
   start_date_truth: reported
   start_date_event:
@@ -3464,6 +3645,7 @@ detail-doge-education-coristine:
   name: Edward Coristine
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: verified
   start_date: '2025-02-20'
   start_date_truth: verified
   start_date_event:
@@ -3544,6 +3726,7 @@ detail-gsa-hhs-edward-coristine:
   name: Edward Coristine
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-03-05'
   start_date_truth: verified
   start_date_event:
@@ -3576,7 +3759,7 @@ detail-gsa-hhs-edward-coristine:
   reimbursement_amount:
   comment: No document provided, date reported in court filing
   qualifications:
-  table_note:
+  table_note: Date verified in court document, assuming detail from GSA
   documents:
   person:
     name: Edward Coristine
@@ -3624,6 +3807,7 @@ internal-hhs-cms-coristine:
   name: Edward Coristine
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: inferred
   start_date: '2025-03-05'
   start_date_truth: verified
   start_date_event:
@@ -3656,7 +3840,7 @@ internal-hhs-cms-coristine:
   reimbursement_amount:
   comment: Granted access to CALM system on the same day as his detail to HHS
   qualifications:
-  table_note:
+  table_note: Granted access to CMS systems on same day as detail to HHS
   documents:
   person:
     name: Edward Coristine
@@ -3705,6 +3889,7 @@ detail-nasa-ssa-employee-2:
   name: Scott Coulter
   doge_alias_id: SSA-2
   from_agency_id: NASA
+  from_truth: verified
   start_date: '2025-02-18'
   start_date_truth: verified
   start_date_event:
@@ -3734,7 +3919,7 @@ detail-nasa-ssa-employee-2:
   office:
   source:
   reimbursed: true
-  reimbursement_amount: Up to $120,579
+  reimbursement_amount: hourly, maximum of $120,579
   comment: Followed by Employee 2 being appointed the CIO
   qualifications:
   table_note:
@@ -3796,6 +3981,7 @@ ssa-employee-2-cio:
   name: Scott Coulter
   doge_alias_id: SSA-2
   from_agency_id:
+  from_truth:
   start_date: '2025-03-24'
   start_date_truth: verified
   start_date_event:
@@ -3877,6 +4063,7 @@ opm-cromer:
   name: Clayton Cromer
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: verified
   start_date_event:
@@ -3945,6 +4132,7 @@ detail-opm-usaid-cromer:
   name: Clayton Cromer
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: guessed
   start_date: 2025-02-XX
   start_date_truth: guessed
   start_date_event:
@@ -3977,7 +4165,7 @@ detail-opm-usaid-cromer:
   reimbursement_amount:
   comment: Need to see if I can find any documentation linking him. NYT says he was involved.
   qualifications:
-  table_note:
+  table_note: NYT links to USAID, but need to find public reports of this
   documents:
   person:
     name: Clayton Cromer
@@ -4023,6 +4211,7 @@ detail-opm-doj-cromer:
   name: Clayton Cromer
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: guessed
   start_date: 2025-03-XX
   start_date_truth: inferred
   start_date_event:
@@ -4055,7 +4244,7 @@ detail-opm-doj-cromer:
   reimbursement_amount:
   comment: Vindman in early March reports receiving contacts from Cromer at DOJ
   qualifications:
-  table_note:
+  table_note: Rep. Vindman reported in early March being contacted by Cromer at the DOJ
   documents:
   person:
     name: Clayton Cromer
@@ -4101,6 +4290,7 @@ opm-stephen-duarte:
   name: Stephen Duarte
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-03'
   start_date_truth: verified
   start_date_event:
@@ -4169,6 +4359,7 @@ ssa-dudek-commissioner:
   name: Leland Dudek
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-16'
   start_date_truth: verified
   start_date_event:
@@ -4237,6 +4428,7 @@ ssa-dudek:
   name: Leland Dudek
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-05-06'
   start_date_truth: reported
   start_date_event:
@@ -4305,6 +4497,7 @@ gsa-stephen-ehikian:
   name: Stephen Ehikian
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: reported
   start_date_event:
@@ -4373,6 +4566,7 @@ detail-dol-dhs-elez:
   name: Marko Elez
   doge_alias_id:
   from_agency_id: DOL
+  from_truth: guessed
   start_date:
   start_date_truth:
   start_date_event:
@@ -4451,6 +4645,7 @@ internal-dhs-cpb-elez:
   name: Marko Elez
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -4530,6 +4725,7 @@ internal-dhs-ice-elez:
   name: Marko Elez
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -4609,6 +4805,7 @@ internal-dhs-tsa-elez:
   name: Marko Elez
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -4641,7 +4838,7 @@ internal-dhs-tsa-elez:
   reimbursement_amount:
   comment: No other info, just mentioned in NYT roundup
   qualifications:
-  table_note:
+  table_note: linked to DHS by NYT, no public info
   documents:
   person:
     name: Marko Elez
@@ -4688,6 +4885,7 @@ internal-dhs-uscis-elez:
   name: Marko Elez
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -4718,7 +4916,7 @@ internal-dhs-uscis-elez:
   source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   reimbursed:
   reimbursement_amount:
-  comment: No other info, just mentioned in NYT roundup
+  comment: linked to DHS by NYT, no public info
   qualifications:
   table_note:
   documents:
@@ -4767,6 +4965,7 @@ treasury-marko-elez:
   name: Marko Elez
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-21'
   start_date_truth: verified
   start_date_event:
@@ -4835,6 +5034,7 @@ dol-marko-elez:
   name: Marko Elez
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-(14)~
   start_date_truth: inferred
   start_date_event:
@@ -4903,6 +5103,7 @@ detail-dol-ssa-employee-7:
   name: Marko Elez
   doge_alias_id: SSA-7
   from_agency_id: DOL
+  from_truth: verified
   start_date: '2025-02-18'
   start_date_truth: verified
   start_date_event:
@@ -4987,6 +5188,7 @@ detail-dol-hhs-marko-elez:
   name: Marko Elez
   doge_alias_id:
   from_agency_id: DOL
+  from_truth:
   start_date: '2025-03-05'
   start_date_truth: verified
   start_date_event:
@@ -5065,6 +5267,7 @@ internal-hhs-cms-marko-elez:
   name: Marko Elez
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: inferred
   start_date: '2025-03-05'
   start_date_truth: verified
   start_date_event:
@@ -5144,6 +5347,7 @@ opm-ezell:
   name: Charles Ezell
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: verified
   start_date_event:
@@ -5212,6 +5416,7 @@ detail-gsa-dhs-farritor:
   name: Luke Farritor
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date:
   start_date_truth:
   start_date_event:
@@ -5244,7 +5449,7 @@ detail-gsa-dhs-farritor:
   reimbursement_amount:
   comment: No details, but in NYT roundup
   qualifications:
-  table_note:
+  table_note: linked to DHS by NYT, no other info
   documents:
   person:
     name: Luke Farritor
@@ -5290,6 +5495,7 @@ gsa-luke-farritor:
   name: Luke Farritor
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: inferred
   start_date_event:
@@ -5358,6 +5564,7 @@ internal-dhs-ice-farritor:
   name: Luke Farritor
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -5437,6 +5644,7 @@ internal-dhs-tsa-farritor:
   name: Luke Farritor
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -5516,6 +5724,7 @@ internal-dhs-uscis-farritor:
   name: Luke Farritor
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -5595,6 +5804,7 @@ detail-gsa-hhs-luke-farritor:
   name: Luke Farritor
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: verified
   start_date: '2025-01-21'
   start_date_truth: verified
   start_date_event:
@@ -5666,13 +5876,14 @@ detail-gsa-hhs-luke-farritor:
     obj_type: Agency
   agency_ids:
   - HHS
-detail-gsa-usaid-kliger:
-  id: detail-gsa-usaid-kliger
+detail-gsa-usaid-farritor:
+  id: detail-gsa-usaid-farritor
   type: detailed
   agency_id: USAID
   name: Luke Farritor
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: inferred
   start_date: '2025-01-27'
   start_date_truth: reported
   start_date_event:
@@ -5751,6 +5962,7 @@ internal-hhs-cdc-farritor:
   name: Luke Farritor
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: inferred
   start_date: '2025-01-30'
   start_date_truth: inferred
   start_date_event:
@@ -5830,6 +6042,7 @@ internal-hhs-cms-farritor:
   name: Luke Farritor
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: inferred
   start_date: '2025-01-31'
   start_date_truth: inferred
   start_date_event:
@@ -5902,13 +6115,14 @@ internal-hhs-cms-farritor:
   agency_ids:
   - CMS
   - HHS
-detail-doge-energy-luke-farritor:
-  id: detail-doge-energy-luke-farritor
+detail-gsa-energy-luke-farritor:
+  id: detail-gsa-energy-luke-farritor
   type: detailed
   agency_id: Energy
   name: Luke Farritor
   doge_alias_id:
-  from_agency_id: DOGE
+  from_agency_id: GSA
+  from_truth: guessed
   start_date: 2025-02-(04)~
   start_date_truth: disputed
   start_date_event:
@@ -5969,14 +6183,14 @@ detail-doge-energy-luke-farritor:
     parent_id:
     obj_type: Agency
   from_agency:
-    id: DOGE
-    name: Department of Government Efficiency
-    slug: doge
-    page_slug: doge
-    short_name: DOGE
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
     doge_base: true
-    path: "/agencies/doge"
-    parent_id: EOP
+    path: "/agencies/gsa"
+    parent_id:
     obj_type: Agency
   agency_ids:
   - Energy
@@ -5987,6 +6201,7 @@ detail-gsa-cfpb-luke-farritor:
   name: Luke Farritor
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: verified
   start_date: '2025-02-07'
   start_date_truth: verified
   start_date_event:
@@ -6065,6 +6280,7 @@ detail-gsa-state-farritor:
   name: Luke Farritor
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-02-10'
   start_date_truth: reported
   start_date_event:
@@ -6143,6 +6359,7 @@ internal-hhs-nih-farritor:
   name: Luke Farritor
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: inferred
   start_date: '2025-02-24'
   start_date_truth: reported
   start_date_event:
@@ -6222,6 +6439,7 @@ detail-gsa-nsf-farritor:
   name: Luke Farritor
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-04-14'
   start_date_truth: reported
   start_date_event:
@@ -6300,6 +6518,7 @@ gsa-fennessy:
   name: Conor Fennessy
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date:
   start_date_truth:
   start_date_event:
@@ -6368,6 +6587,7 @@ education-ed-2:
   name: Conor Fennessy
   doge_alias_id: ED-2
   from_agency_id:
+  from_truth:
   start_date: '2025-01-31'
   start_date_truth: verified
   start_date_event:
@@ -6444,6 +6664,7 @@ internal-hhs-cms-fennessy:
   name: Conor Fennessy
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: inferred
   start_date: '2025-02-03'
   start_date_truth: inferred
   start_date_event:
@@ -6523,6 +6744,7 @@ detail-education-hhs-fennessy:
   name: Conor Fennessy
   doge_alias_id:
   from_agency_id: Education
+  from_truth: verified
   start_date: '2025-02-20'
   start_date_truth: verified
   start_date_event:
@@ -6601,6 +6823,7 @@ doge-joshua-fox:
   name: Joshua Fox
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-XX
   start_date_truth: reported
   start_date_event:
@@ -6670,6 +6893,7 @@ gsa-justin-fox:
   name: Justin Fox
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date:
   start_date_truth:
   start_date_event:
@@ -6740,6 +6964,7 @@ detail-neh-justin-fox:
   name: Justin Fox
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: 2025-03-(13)~
   start_date_truth: verified
   start_date_event:
@@ -6820,6 +7045,7 @@ detail-gsa-nlrb-fox:
   name: Justin Fox
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-04-16'
   start_date_truth: reported
   start_date_event:
@@ -6900,6 +7126,7 @@ dod-fulcher:
   name: Justin Fulcher
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-04'
   start_date_truth: reported
   start_date_event:
@@ -6968,6 +7195,7 @@ dod-fulcher-advisor:
   name: Justin Fulcher
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-04-25'
   start_date_truth: reported
   start_date_event:
@@ -7036,6 +7264,7 @@ hhs-gamache:
   name: Mattieu Gamache-Asselin
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-01-XX
   start_date_truth: reported
   start_date_event:
@@ -7104,6 +7333,7 @@ opm-joe-gebbia:
   name: Joe Gebbia
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-18'
   start_date_truth: verified
   start_date_event:
@@ -7172,6 +7402,7 @@ dol-derek-geissler:
   name: Derek Geissler
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-(13)~
   start_date_truth: reported
   start_date_event:
@@ -7240,6 +7471,7 @@ faa-glantz:
   name: Brady Glantz
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-16'
   start_date_truth: reported
   start_date_event:
@@ -7283,7 +7515,9 @@ faa-glantz:
     background: coder
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      One of the four SpaceX engineers who were brought into the FAA on an ad hoc basis, he was only approved to work for 4 days at the agency. It's unclear
+      however if he left afterwards or that term was extended.
     reporting_notes:
     path: "/people#brady-glantz"
     comment:
@@ -7309,6 +7543,7 @@ doge-amy-gleason:
   name: Amy Gleason
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2024-12-30'
   start_date_truth: verified
   start_date_event:
@@ -7373,11 +7608,12 @@ doge-amy-gleason:
   - EOP
 doge-amy-gleason-director:
   id: doge-amy-gleason-director
-  type: appointed
+  type: promotion
   agency_id: DOGE
   name: Amy Gleason
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-18'
   start_date_truth: verified
   start_date_event:
@@ -7447,6 +7683,7 @@ internal-hhs-cms-gleason:
   name: Amy Gleason
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: inferred
   start_date: 2025-02-(24)~
   start_date_truth: inferred
   start_date_event:
@@ -7526,6 +7763,7 @@ hhs-amy-gleason:
   name: Amy Gleason
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-04'
   start_date_truth: verified
   start_date_event:
@@ -7594,6 +7832,7 @@ opm-gonzalez:
   name: Mike Gonzalez
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-03-XX
   start_date_truth: reported
   start_date_event:
@@ -7662,6 +7901,7 @@ ssa-antonio-gracias:
   name: Antonio Gracias
   doge_alias_id: SSA-4
   from_agency_id:
+  from_truth:
   start_date: '2025-02-23'
   start_date_truth: verified
   start_date_event:
@@ -7736,6 +7976,7 @@ commerce-michael-grimes:
   name: Michael Grimes
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-29'
   start_date_truth: reported
   start_date_event:
@@ -7804,6 +8045,7 @@ gsa-josh-gruenbaum:
   name: Josh Gruenbaum
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-24'
   start_date_truth: verified
   start_date_event:
@@ -7872,6 +8114,7 @@ imls-hamrick:
   name: Gavin Hamrick
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-31'
   start_date_truth: reported
   start_date_event:
@@ -7940,6 +8183,7 @@ doge-joshua-hanley:
   name: Joshua Hanley
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-XX
   start_date_truth: reported
   start_date_event:
@@ -8009,6 +8253,7 @@ opm-christina-hanna:
   name: Christina Hanna
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-03'
   start_date_truth: verified
   start_date_event:
@@ -8077,6 +8322,7 @@ doi-hassen-acting:
   name: Tyler Hassen
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-07'
   start_date_truth: reported
   start_date_event:
@@ -8145,6 +8391,7 @@ doj-hoffman:
   name: Adam Hoffman
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-04-21'
   start_date_truth: reported
   start_date_event:
@@ -8213,6 +8460,7 @@ greg-hogan-opm:
   name: Greg Hogan
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: verified
   start_date_event:
@@ -8276,11 +8524,12 @@ greg-hogan-opm:
   - OPM
 greg-hogan-opm-2:
   id: greg-hogan-opm-2
-  type: appointed
+  type: promotion
   agency_id: OPM
   name: Greg Hogan
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-11'
   start_date_truth: verified
   start_date_event:
@@ -8349,6 +8598,7 @@ gsa-hollander:
   name: Nicole Hollander
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: guessed
   start_date_event:
@@ -8392,7 +8642,10 @@ gsa-hollander:
     background: executive
     category: enabler
     own_page: false
-    blurb:
+    blurb: >-
+      Nicole Hollander is married to fellow DOGE operative and ad hoc leader Steve Davis, and she has worked with Elon Musk at Twitter. She has reportedly
+      been involved with securing an enclave for DOGE to work from and live within GSA HQ (complete with laundry facilities). She also has been involved
+      with efforts to cancel GSA leases across the country. Her conenctions to other DOGE projects have not be publicly documented yet.
     reporting_notes:
     path: "/people#nicole-hollander"
     comment:
@@ -8417,6 +8670,7 @@ doge-holmes:
   name: Stephanie Holmes
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-(05)~
   start_date_truth: reported
   start_date_event:
@@ -8486,6 +8740,7 @@ detail-doge-doi-holmes:
   name: Stephanie Holmes
   doge_alias_id:
   from_agency_id: DOGE
+  from_truth: reported
   start_date: '2025-02-24'
   start_date_truth: reported
   start_date_event:
@@ -8564,6 +8819,7 @@ usip-jackson:
   name: Kenneth Jackson
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-17'
   start_date_truth: reported
   start_date_event:
@@ -8632,6 +8888,7 @@ usaid-deputy-jackson:
   name: Kenneth Jackson
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-18'
   start_date_truth: verified
   start_date_event:
@@ -8700,6 +8957,7 @@ gsa-jegannathan:
   name: Raj Jegannathan
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-04-(24)~
   start_date_truth: reported
   start_date_event:
@@ -8768,6 +9026,7 @@ epa-jehling:
   name: Erica Jehling
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-12'
   start_date_truth: reported
   start_date_event:
@@ -8836,6 +9095,7 @@ faa-kiernan:
   name: Thomas Kiernan
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-16'
   start_date_truth: reported
   start_date_event:
@@ -8879,7 +9139,9 @@ faa-kiernan:
     background: coder
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      One of the four SpaceX engineers who were brought into the FAA on an ad hoc basis, he was only approved to work for 4 days at the agency. It's unclear
+      however if he left afterwards or that term was extended.
     reporting_notes:
     path: "/people#thomas-kiernan"
     comment:
@@ -8905,6 +9167,7 @@ doge-killian:
   name: Cole Killian
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: reported
   start_date_event:
@@ -8974,6 +9237,7 @@ detaile-doge-epa-killian:
   name: Cole Killian
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-04'
   start_date_truth: reported
   start_date_event:
@@ -9042,6 +9306,7 @@ detail-doge-dol-killian:
   name: Cole Killian
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-(13)~
   start_date_truth: reported
   start_date_event:
@@ -9110,6 +9375,7 @@ detail-doge-ssa-killian:
   name: Cole Killian
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-(20)~
   start_date_truth: reported
   start_date_event:
@@ -9178,6 +9444,7 @@ detail-opm-dhs-kliger:
   name: Gavin Kliger
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: guessed
   start_date:
   start_date_truth:
   start_date_event:
@@ -9256,6 +9523,7 @@ gavin-kliger-opm:
   name: Gavin Kliger
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: verified
   start_date_event:
@@ -9273,12 +9541,12 @@ gavin-kliger-opm:
   description: Provisional Appt NTE
   fuzz:
   appt_type_code: 44
-  appt_type: Schedule C (Except NonPerm)
+  appt_type: Schedule C
   pay_grade: GS-15
   salary: "$195,200"
   pd_code: 6A38025
   sge:
-  excepted:
+  excepted: true
   title: Senior Advisor to the Director for Information Technology
   series: 301
   supervisory: true
@@ -9324,6 +9592,7 @@ internal-dhs-tsa-kliger:
   name: Gavin Kliger
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -9403,6 +9672,7 @@ detail-opm-usaid-kliger:
   name: Gavin Kliger
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: guessed
   start_date: '2025-01-27'
   start_date_truth: reported
   start_date_event:
@@ -9481,6 +9751,7 @@ detail-opm-usda-kliger:
   name: Gavin Kliger
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: guessed
   start_date: 2025-02-(01)~
   start_date_truth: inferred
   start_date_event:
@@ -9561,6 +9832,7 @@ detail-opm-cfpb-kliger:
   name: Gavin Kliger
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: verified
   start_date: '2025-02-07'
   start_date_truth: verified
   start_date_event:
@@ -9639,6 +9911,7 @@ gavin-kliger-opm-2:
   name: Gavin Kliger
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-18'
   start_date_truth: verified
   start_date_event:
@@ -9656,12 +9929,12 @@ gavin-kliger-opm-2:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 44
-  appt_type: Schedule C (Except NonPerm)
+  appt_type: Schedule C
   pay_grade: GS-15
   salary: "$195,200"
   pd_code: 6A38025
   sge:
-  excepted:
+  excepted: true
   title: Senior Advisor to the Director for Information Technology
   series: 301
   supervisory: true
@@ -9707,6 +9980,7 @@ detail-opm-irs-gavin-kliger:
   name: Gavin Kliger
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: verified
   start_date: '2025-02-19'
   start_date_truth: verified
   start_date_event:
@@ -9786,6 +10060,7 @@ detail-opm-ftc-kliger:
   name: Gavin Kliger
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: guessed
   start_date: 2025-03-(28)~
   start_date_truth: reported
   start_date_event:
@@ -9864,6 +10139,7 @@ ssa-employee-6:
   name: Jon Koval
   doge_alias_id: SSA-6
   from_agency_id:
+  from_truth:
   start_date: '2025-02-23'
   start_date_truth: verified
   start_date_event:
@@ -9938,6 +10214,7 @@ detail-ssa-doj-koval:
   name: Jon Koval
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-04-15'
   start_date_truth: reported
   start_date_event:
@@ -10006,6 +10283,7 @@ onboard-treasury-thomas-krause:
   name: Tom Krause
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-23'
   start_date_truth: verified
   start_date_event:
@@ -10074,6 +10352,7 @@ appoint-treasury-thomas-krause:
   name: Tom Krause
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-13'
   start_date_truth: verified
   start_date_event:
@@ -10142,6 +10421,7 @@ hud-langmack:
   name: Scott Langmack
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-10'
   start_date_truth: reported
   start_date_event:
@@ -10210,6 +10490,7 @@ va-lavingia:
   name: Sahil Lavingia
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-25'
   start_date_truth: reported
   start_date_event:
@@ -10278,6 +10559,7 @@ gsa-jeremy-lewin:
   name: Jeremy Lewin
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: guessed
   start_date_event:
@@ -10346,6 +10628,7 @@ detail-usaid-jeremy-lewin:
   name: Jeremy Lewin
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-01-28'
   start_date_truth: verified
   start_date_event:
@@ -10424,6 +10707,7 @@ internal-hhs-cms-lewin:
   name: Jeremy Lewin
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: inferred
   start_date: '2025-02-03'
   start_date_truth: inferred
   start_date_event:
@@ -10503,6 +10787,7 @@ detail-gsa-cfpb-jeremy-lewin:
   name: Jeremy Lewin
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: verified
   start_date: '2025-02-07'
   start_date_truth:
   start_date_event:
@@ -10581,6 +10866,7 @@ detail-gsa-hhs-lewin:
   name: Jeremy Lewin
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-02-21'
   start_date_truth: verified
   start_date_event:
@@ -10659,6 +10945,7 @@ internal-hhs-nih-lewin:
   name: Jeremy Lewin
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: inferred
   start_date: '2025-02-24'
   start_date_truth: reported
   start_date_event:
@@ -10738,6 +11025,7 @@ usaid-jeremy-lewin-2:
   name: Jeremy Lewin
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-18'
   start_date_truth: verified
   start_date_event:
@@ -10806,6 +11094,7 @@ state-lewin-foreign:
   name: Jeremy Lewin
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-04-15'
   start_date_truth: reported
   start_date_event:
@@ -10874,6 +11163,7 @@ doge-lindemann:
   name: Kendall Lindemann
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-(10)~
   start_date_truth: reported
   start_date_event:
@@ -10943,6 +11233,7 @@ epa-loving:
   name: Kathryn Armstrong Loving
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-12'
   start_date_truth: reported
   start_date_event:
@@ -11011,6 +11302,7 @@ doi-luby:
   name: Matt Luby
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-04-17'
   start_date_truth: reported
   start_date_event:
@@ -11079,6 +11371,7 @@ opm-makecha:
   name: Tarak Makecha
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-03-XX
   start_date_truth:
   start_date_event:
@@ -11147,6 +11440,7 @@ fbi-makecha:
   name: Tarak Makecha
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-03-(30)~
   start_date_truth: guessed
   start_date_event:
@@ -11218,6 +11512,7 @@ detail-fcc-makecha:
   name: Tarak Makecha
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-04-04'
   start_date_truth: reported
   start_date_event:
@@ -11286,6 +11581,7 @@ faa-malaska:
   name: Ted Malaska
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-16'
   start_date_truth: reported
   start_date_event:
@@ -11329,7 +11625,10 @@ faa-malaska:
     background: coder
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      One of the four SpaceX engineers who were brought into the FAA on an ad hoc basis, he was only approved to work for 4 days at the agency. It's unclear
+      however if he left afterwards or that term was extended. Ted was also named in several reports where he promised to steamroll any federal staff who
+      got in his way.
     reporting_notes:
     path: "/people#ted-malaska"
     comment:
@@ -11355,6 +11654,7 @@ gsa-malcher:
   name: Dave Malcher
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-04-(24)~
   start_date_truth: reported
   start_date_event:
@@ -11423,6 +11723,7 @@ iaf-marocco:
   name: Peter Marocco
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-28'
   start_date_truth: verified
   start_date_event:
@@ -11491,6 +11792,7 @@ dhs-mccord:
   name: Antoine McCord
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-11'
   start_date_truth: reported
   start_date_event:
@@ -11559,6 +11861,7 @@ gsa-mendelson:
   name: Jonathan Mendelson
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-04-(25)~
   start_date_truth: inferred
   start_date_event:
@@ -11627,6 +11930,7 @@ detail-gsa-dfc-mendelson:
   name: Jonathan Mendelson
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-04-28'
   start_date_truth: reported
   start_date_event:
@@ -11705,6 +12009,7 @@ detail-gsa-sec-mendelson:
   name: Jonathan Mendelson
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: 2025-05-(02)~
   start_date_truth: reported
   start_date_event:
@@ -11783,6 +12088,7 @@ doge-miller:
   name: Katie Miller
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: inferred
   start_date_event:
@@ -11852,6 +12158,7 @@ hhs-minor:
   name: Clark Minor
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-14'
   start_date_truth: reported
   start_date_event:
@@ -11920,6 +12227,7 @@ detail-hhs-nih-minor:
   name: Clark Minor
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: inferred
   start_date: '2025-02-24'
   start_date_truth: reported
   start_date_event:
@@ -11999,6 +12307,7 @@ hud-mirski:
   name: Michael Mirski
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-10'
   start_date_truth: reported
   start_date_event:
@@ -12067,6 +12376,7 @@ sec-mishory:
   name: Eliezer Mishory
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-04-(05)~
   start_date_truth: reported
   start_date_event:
@@ -12135,6 +12445,7 @@ opm-bryanne-mlodzianowski:
   name: Bryanne-Michelle Mlodzianowski
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-03'
   start_date_truth: verified
   start_date_event:
@@ -12203,6 +12514,7 @@ detail-dol-dhs-mohgaddassi:
   name: Aram Moghaddassi
   doge_alias_id:
   from_agency_id: DOL
+  from_truth: guessed
   start_date:
   start_date_truth:
   start_date_event:
@@ -12281,6 +12593,7 @@ dol-moghaddassi:
   name: Aram Moghaddassi
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date:
   start_date_truth:
   start_date_event:
@@ -12349,6 +12662,7 @@ internal-dhs-cpb-mohgaddassi:
   name: Aram Moghaddassi
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -12428,6 +12742,7 @@ internal-dhs-ice-mohgaddassi:
   name: Aram Moghaddassi
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -12507,6 +12822,7 @@ internal-dhs-tsa-mohgaddassi:
   name: Aram Moghaddassi
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -12586,6 +12902,7 @@ internal-dhs-uscis-mohgaddassi:
   name: Aram Moghaddassi
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -12665,6 +12982,7 @@ detail-dol-ssa-employee-3:
   name: Aram Moghaddassi
   doge_alias_id: SSA-3
   from_agency_id: DOL
+  from_truth: verified
   start_date: '2025-02-22'
   start_date_truth: verified
   start_date_event:
@@ -12755,6 +13073,7 @@ detail-dol-hhs-mohgaddassi:
   name: Aram Moghaddassi
   doge_alias_id:
   from_agency_id: DOL
+  from_truth:
   start_date: '2025-03-05'
   start_date_truth: verified
   start_date_event:
@@ -12833,6 +13152,7 @@ internal-hhs-cms-mohgaddassi:
   name: Aram Moghaddassi
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: inferred
   start_date: '2025-03-05'
   start_date_truth: verified
   start_date_event:
@@ -12912,6 +13232,7 @@ opm-justin-monroe:
   name: Justin Monroe
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-28'
   start_date_truth: verified
   start_date_event:
@@ -12980,6 +13301,7 @@ detail-opm-fbi-monroe:
   name: Justin Monroe
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: guessed
   start_date: '2025-01-29'
   start_date_truth: reported
   start_date_event:
@@ -13059,6 +13381,7 @@ onboard-education-employee-4:
   name: Brooks Morgan
   doge_alias_id: ED-4
   from_agency_id:
+  from_truth:
   start_date: '2025-02-04'
   start_date_truth: verified
   start_date_event:
@@ -13135,6 +13458,7 @@ detail-education-fdic-morgan:
   name: Brooks Morgan
   doge_alias_id:
   from_agency_id: Education
+  from_truth: guessed
   start_date: '2025-04-10'
   start_date_truth: reported
   start_date_event:
@@ -13213,6 +13537,7 @@ eop-morse:
   name: Trent Morse
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-23'
   start_date_truth: reported
   start_date_event:
@@ -13284,6 +13609,7 @@ musk-doge:
   name: Elon Musk
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: guessed
   start_date_event:
@@ -13353,6 +13679,7 @@ treasury-newnam:
   name: Todd Newnam
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-06'
   start_date_truth: verified
   start_date_event:
@@ -13421,6 +13748,7 @@ internal-treasury-irs-newnam:
   name: Todd Newnam
   doge_alias_id:
   from_agency_id: Treasury
+  from_truth: inferred
   start_date: 2025-04-XX
   start_date_truth: verified
   start_date_event:
@@ -13500,6 +13828,7 @@ gsa-park:
   name: Donald Park
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-XX
   start_date_truth: inferred
   start_date_event:
@@ -13568,6 +13897,7 @@ sba-park:
   name: Donald Park
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-02-03'
   start_date_truth: reported
   start_date_event:
@@ -13646,6 +13976,7 @@ detail-exim-park:
   name: Donald Park
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-05-14'
   start_date_truth: reported
   start_date_event:
@@ -13714,6 +14045,7 @@ noah-peters-opm:
   name: Noah Peters
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: verified
   start_date_event:
@@ -13731,12 +14063,12 @@ noah-peters-opm:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 44
-  appt_type: Schedule C (Except NonPerm)
+  appt_type: Schedule C
   pay_grade: GS-15
   salary:
   pd_code: 6A38859
   sge:
-  excepted:
+  excepted: true
   title: Senior Advisor
   series: 301
   supervisory: false
@@ -13782,6 +14114,7 @@ opm-nikhil-rajpal:
   name: Nikhil Rajpal
   doge_alias_id: OPM-6
   from_agency_id:
+  from_truth:
   start_date: '2025-01-24'
   start_date_truth: verified
   start_date_event:
@@ -13799,12 +14132,12 @@ opm-nikhil-rajpal:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 48
-  appt_type: Other (Except NonPerm)
+  appt_type: Other
   pay_grade: ED-00
   salary: "$0"
   pd_code: 6A39738
   sge:
-  excepted:
+  excepted: true
   title: Expert
   series: 301
   supervisory: false
@@ -13859,6 +14192,7 @@ detail-opm-noaa-rajpal:
   name: Nikhil Rajpal
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: guessed
   start_date: '2025-02-04'
   start_date_truth: reported
   start_date_event:
@@ -13938,6 +14272,7 @@ detail-opm-cfpb-nikhil-rajpal:
   name: Nikhil Rajpal
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: verified
   start_date: '2025-02-07'
   start_date_truth: verified
   start_date_event:
@@ -14016,6 +14351,7 @@ doge-adam-ramada:
   name: Adam Ramada
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-23'
   start_date_truth: verified
   start_date_event:
@@ -14085,6 +14421,7 @@ detail-doge-education-adam-ramada:
   name: Adam Ramada
   doge_alias_id:
   from_agency_id: DOGE
+  from_truth: verified
   start_date: '2025-01-28'
   start_date_truth: verified
   start_date_event:
@@ -14163,6 +14500,7 @@ detail-doge-energy-adam-ramada:
   name: Adam Ramada
   doge_alias_id:
   from_agency_id: DOGE
+  from_truth: guessed
   start_date: 2025-02-(04)~
   start_date_truth: disputed
   start_date_event:
@@ -14241,6 +14579,7 @@ detail-doge-dol-ramada:
   name: Adam Ramada
   doge_alias_id:
   from_agency_id: DOGE
+  from_truth: verified
   start_date: '2025-02-05'
   start_date_truth: verified
   start_date_event:
@@ -14319,6 +14658,7 @@ detail-doge-fdic-ramada:
   name: Adam Ramada
   doge_alias_id:
   from_agency_id: DOGE
+  from_truth: guessed
   start_date: '2025-04-10'
   start_date_truth: reported
   start_date_event:
@@ -14397,6 +14737,7 @@ opm-austin-raynor:
   name: Austin Raynor
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-30'
   start_date_truth: verified
   start_date_event:
@@ -14465,6 +14806,7 @@ detail-ssa-dhs-rehling:
   name: Payton Rehling
   doge_alias_id:
   from_agency_id: SSA
+  from_truth: guessed
   start_date:
   start_date_truth:
   start_date_event:
@@ -14543,6 +14885,7 @@ internal-dhs-tsa-rehling:
   name: Payton Rehling
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -14622,6 +14965,7 @@ internal-dhs-uscis-rehling:
   name: Payton Rehling
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -14701,6 +15045,7 @@ ssa-employee-9:
   name: Payton Rehling
   doge_alias_id: SSA-9
   from_agency_id:
+  from_truth:
   start_date: '2025-02-23'
   start_date_truth: verified
   start_date_event:
@@ -14777,6 +15122,7 @@ detail-ssa-doj-rehling:
   name: Payton Rehling
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-04-15'
   start_date_truth: reported
   start_date_event:
@@ -14845,6 +15191,7 @@ energy-ryan-riedel:
   name: Ryan Riedel
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-07'
   start_date_truth: reported
   start_date_event:
@@ -14913,6 +15260,7 @@ hhs-rachel-riley:
   name: Rachel Riley
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-27'
   start_date_truth: verified
   start_date_event:
@@ -14981,6 +15329,7 @@ internal-hhs-cms-riley:
   name: Rachel Riley
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: inferred
   start_date: '2025-02-03'
   start_date_truth: inferred
   start_date_event:
@@ -15060,6 +15409,7 @@ internal-hhs-nih-riley:
   name: Rachel Riley
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: inferred
   start_date: '2025-02-24'
   start_date_truth: reported
   start_date_event:
@@ -15139,6 +15489,7 @@ detail-hhs-nsf-riley:
   name: Rachel Riley
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: guessed
   start_date: '2025-04-14'
   start_date_truth: reported
   start_date_event:
@@ -15217,6 +15568,7 @@ va-roussous:
   name: Christopher Roussos
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-25'
   start_date_truth: reported
   start_date_event:
@@ -15285,6 +15637,7 @@ ssa-mike-russo-cio:
   name: Mike Russo
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-31'
   start_date_truth: reported
   start_date_event:
@@ -15353,6 +15706,7 @@ ssa-mike-russo-advisor:
   name: Mike Russo
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-25'
   start_date_truth: reported
   start_date_event:
@@ -15423,6 +15777,7 @@ amanda-scales-opm:
   name: Amanda Scales
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: verified
   start_date_event:
@@ -15466,7 +15821,7 @@ amanda-scales-opm:
     background: hr
     category: leadership
     own_page: false
-    blurb:
+    blurb: An associate of Elon Musk from xAI, Amanda Scales has been located at GSA since Day 1.
     reporting_notes:
     path: "/people#amanda-scales"
     comment:
@@ -15491,6 +15846,7 @@ gsa-frank-schuler:
   name: Frank Schuler
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-(18)~
   start_date_truth: reported
   start_date_event:
@@ -15534,7 +15890,10 @@ gsa-frank-schuler:
     background:
     category: support
     own_page: false
-    blurb:
+    blurb: >-
+      A former partner in a real-estate investment firm in Atlanta, Frank Schuler was mentioned as one of Stephen Ehikian's pending appointments on January
+      20th. He wasn't sighted in GSA until mid-February, when he appeared in a meeting and was introduced by Nate Cavanaugh. It's unclear what he is doing
+      for DOGE inside of GSA.
     reporting_notes:
     path: "/people#frank-schuler"
     comment:
@@ -15559,6 +15918,7 @@ internal-dhs-cbp-schutt:
   name: Kyle Schutt
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -15638,6 +15998,7 @@ internal-dhs-fema-schutt:
   name: Kyle Schutt
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -15717,6 +16078,7 @@ internal-dhs-ice-schutt:
   name: Kyle Schutt
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -15796,6 +16158,7 @@ internal-dhs-tsa-schutt:
   name: Kyle Schutt
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -15875,6 +16238,7 @@ internal-dhs-uscis-schutt:
   name: Kyle Schutt
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date:
   start_date_truth:
   start_date_event:
@@ -15954,6 +16318,7 @@ gsa-schutt:
   name: Kyle Schutt
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-02-(18)~
   start_date_truth: inferred
   start_date_event:
@@ -16022,6 +16387,7 @@ detail-gsa-dhs-schutt:
   name: Kyle Schutt
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: inferred
   start_date: 2025-02-(19)~
   start_date_truth: reported
   start_date_event:
@@ -16100,6 +16466,7 @@ internal-dhs-cisa-schutt:
   name: Kyle Schutt
   doge_alias_id:
   from_agency_id: DHS
+  from_truth: inferred
   start_date: '2025-02-19'
   start_date_truth: reported
   start_date_event:
@@ -16179,6 +16546,7 @@ detail-gsa-hhs-kyle-schutt:
   name: Kyle Schutt
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-03-14'
   start_date_truth: verified
   start_date_event:
@@ -16257,6 +16625,7 @@ gsa-sennott:
   name: Riley Sennott
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-12'
   start_date_truth: reported
   start_date_event:
@@ -16325,6 +16694,7 @@ detail-gsa-nasa-sennott:
   name: Riley Sennott
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: 2025-03-(14)~
   start_date_truth: reported
   start_date_event:
@@ -16403,6 +16773,7 @@ noaa-shang-cio:
   name: Bryton Shang
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-04-02'
   start_date_truth: verified
   start_date_event:
@@ -16472,6 +16843,7 @@ gsa-ethan-shaotran:
   name: Ethan Shaotran
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: inferred
   start_date_event:
@@ -16540,6 +16912,7 @@ detail-gsa-education-3:
   name: Ethan Shaotran
   doge_alias_id: ED-3
   from_agency_id: GSA
+  from_truth: verified
   start_date: '2025-02-12'
   start_date_truth: verified
   start_date_event:
@@ -16628,6 +17001,7 @@ detail-gsa-ssa-employee-10:
   name: Ethan Shaotran
   doge_alias_id: SSA-10
   from_agency_id: GSA
+  from_truth: verified
   start_date: '2025-02-18'
   start_date_truth: verified
   start_date_event:
@@ -16716,6 +17090,7 @@ detail-gsa-usadf-ethan-shaotran:
   name: Ethan Shaotran
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: verified
   start_date: '2025-02-20'
   start_date_truth: verified
   start_date_event:
@@ -16794,6 +17169,7 @@ detail-gsa-usps-ethan-shaotran:
   name: Ethan Shaotran
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: verified
   start_date: '2025-03-12'
   start_date_truth: verified
   start_date_event:
@@ -16872,6 +17248,7 @@ detail-gsa-dfc-shaotran:
   name: Ethan Shaotran
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-04-28'
   start_date_truth: reported
   start_date_event:
@@ -16950,6 +17327,7 @@ gsa-thomas-shedd:
   name: Thomas Shedd
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-24'
   start_date_truth: reported
   start_date_event:
@@ -17018,6 +17396,7 @@ dol-shedd:
   name: Thomas Shedd
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-14'
   start_date_truth: reported
   start_date_event:
@@ -17086,6 +17465,7 @@ treasury-roland-shen:
   name: Roland Shen
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-04-18'
   start_date_truth: reported
   start_date_event:
@@ -17154,6 +17534,7 @@ detail-gsa-usps-alex-simonpour:
   name: Alexander Simonpour
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: verified
   start_date: '2025-03-07'
   start_date_truth: verified
   start_date_event:
@@ -17231,7 +17612,8 @@ detail-gsa-nasa-simonpour:
   agency_id: NASA
   name: Alexander Simonpour
   doge_alias_id:
-  from_agency_id:
+  from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-03-14'
   start_date_truth: reported
   start_date_event:
@@ -17291,6 +17673,16 @@ detail-gsa-nasa-simonpour:
     path: "/agencies/nasa"
     parent_id:
     obj_type: Agency
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+    obj_type: Agency
   agency_ids:
   - NASA
 faa-smeal:
@@ -17300,6 +17692,7 @@ faa-smeal:
   name: Sam Smeal
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-16'
   start_date_truth: reported
   start_date_event:
@@ -17343,7 +17736,9 @@ faa-smeal:
     background: coder
     category: wrecker
     own_page: false
-    blurb:
+    blurb: >-
+      One of the four SpaceX engineers who were brought into the FAA on an ad hoc basis, he was only approved to work for 4 days at the agency. It's unclear
+      however if he left afterwards or that term was extended.
     reporting_notes:
     path: "/people#sam-smeal"
     comment:
@@ -17369,6 +17764,7 @@ hhs-brad-smith:
   name: Brad Smith
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-04'
   start_date_truth:
   start_date_event:
@@ -17437,6 +17833,7 @@ labor-sonderling:
   name: Keith Sonderling
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-18'
   start_date_truth: reported
   start_date_event:
@@ -17505,6 +17902,7 @@ imls-sonderling:
   name: Keith Sonderling
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-20'
   start_date_truth: reported
   start_date_event:
@@ -17573,6 +17971,7 @@ opm-christopher-stanley:
   name: Christopher Stanley
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-28'
   start_date_truth: verified
   start_date_event:
@@ -17646,6 +18045,7 @@ fhfa-christopher-stanley:
   name: Christopher Stanley
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-17'
   start_date_truth: reported
   start_date_event:
@@ -17719,6 +18119,7 @@ detail-opm-doj-stanley:
   name: Christopher Stanley
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: guessed
   start_date: 2025-04-(02)~
   start_date_truth: reported
   start_date_event:
@@ -17802,6 +18203,7 @@ ssa-steffensen:
   name: Mark Steffensen
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-25'
   start_date_truth: reported
   start_date_event:
@@ -17870,6 +18272,7 @@ ssa-steffensen-1:
   name: Mark Steffensen
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-27'
   start_date_truth: reported
   start_date_event:
@@ -17938,6 +18341,7 @@ gsa-stein:
   name: Jack Stein
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-04-XX
   start_date_truth: guessed
   start_date_event:
@@ -18006,6 +18410,7 @@ dot-stube:
   name: Brian Stube
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-05-(07)~
   start_date_truth: reported
   start_date_event:
@@ -18074,6 +18479,7 @@ hud-sweet:
   name: Christopher Sweet
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-04-(10)~
   start_date_truth: reported
   start_date_event:
@@ -18146,6 +18552,7 @@ hhs-terrell:
   name: Zach Terrell
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-06'
   start_date_truth: verified
   start_date_event:
@@ -18214,6 +18621,7 @@ internal-hhs-cms-terrell:
   name: Zach Terrell
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: inferred
   start_date: '2025-03-11'
   start_date_truth: inferred
   start_date_event:
@@ -18293,6 +18701,7 @@ detail-hhs-nsf-terrell:
   name: Zach Terrell
   doge_alias_id:
   from_agency_id: HHS
+  from_truth: inferred
   start_date: '2025-04-14'
   start_date_truth: reported
   start_date_event:
@@ -18371,6 +18780,7 @@ interior-trampe:
   name: Katrine Trampe
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-05'
   start_date_truth: reported
   start_date_event:
@@ -18439,6 +18849,7 @@ va-volpert:
   name: Cary Volpert
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-25'
   start_date_truth: reported
   start_date_event:
@@ -18507,6 +18918,7 @@ omb-vought:
   name: Russell Vought
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date:
   start_date_truth:
   start_date_event:
@@ -18575,6 +18987,7 @@ cfpb-acting-vought:
   name: Russell Vought
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-08'
   start_date_truth: verified
   start_date_event:
@@ -18643,6 +19056,7 @@ treasury-whitridge:
   name: Linda Whitridge
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-25'
   start_date_truth: verified
   start_date_event:
@@ -18711,6 +19125,7 @@ doge-wick:
   name: Jordan Wick
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-01-(20)~
   start_date_truth: guessed
   start_date_event:
@@ -18780,6 +19195,7 @@ detail-usda-wick:
   name: Jordan Wick
   doge_alias_id:
   from_agency_id: DOGE
+  from_truth: reported
   start_date: 2025-02-(01)~
   start_date_truth: inferred
   start_date_event:
@@ -18858,6 +19274,7 @@ detail-usds-cfpb-jordan-wick:
   name: Jordan Wick
   doge_alias_id:
   from_agency_id: DOGE
+  from_truth: verified
   start_date: '2025-02-07'
   start_date_truth: verified
   start_date_event:
@@ -18936,6 +19353,7 @@ detail-doge-dol-wick:
   name: Jordan Wick
   doge_alias_id:
   from_agency_id: DOGE
+  from_truth: inferred
   start_date: 2025-02-(13)~
   start_date_truth: reported
   start_date_event:
@@ -19014,6 +19432,7 @@ detail-doge-education-wick:
   name: Jordan Wick
   doge_alias_id:
   from_agency_id: DOGE
+  from_truth: inferred
   start_date: '2025-02-20'
   start_date_truth: verified
   start_date_event:
@@ -19092,6 +19511,7 @@ cfpb-jordan-wick:
   name: Jordan Wick
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-03-05'
   start_date_truth:
   start_date_event:
@@ -19160,6 +19580,7 @@ detail-cfpb-fcc-wick:
   name: Jordan Wick
   doge_alias_id:
   from_agency_id: CFPB
+  from_truth: guessed
   start_date: '2025-04-04'
   start_date_truth: reported
   start_date_event:
@@ -19238,6 +19659,7 @@ joanna-wischer-opm:
   name: Joanna Wischer
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-20'
   start_date_truth: verified
   start_date_event:
@@ -19255,12 +19677,12 @@ joanna-wischer-opm:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 44
-  appt_type: Schedule C (Except NonPerm)
+  appt_type: Schedule C
   pay_grade: GS-15
   salary:
   pd_code: 6A36647
   sge:
-  excepted:
+  excepted: true
   title: Senior Advisor to the Director
   series: 301
   supervisory: false
@@ -19306,6 +19728,7 @@ gsa-wood:
   name: Marshall Wood
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: 2025-04-XX
   start_date_truth: guessed
   start_date_event:
@@ -19374,6 +19797,7 @@ detail-gsa-dfc-wood:
   name: Marshall Wood
   doge_alias_id:
   from_agency_id: GSA
+  from_truth: reported
   start_date: '2025-04-28'
   start_date_truth: reported
   start_date_event:
@@ -19452,6 +19876,7 @@ irs-wunderly:
   name: Ryan Wunderly
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-02-20'
   start_date_truth: verified
   start_date_event:
@@ -19520,6 +19945,7 @@ opm-chris-young:
   name: Chris Young
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-01-30'
   start_date_truth: verified
   start_date_event:
@@ -19588,6 +20014,7 @@ detail-opm-cfpb-chris-young:
   name: Chris Young
   doge_alias_id:
   from_agency_id: OPM
+  from_truth: verified
   start_date: '2025-02-07'
   start_date_truth: verified
   start_date_event:
@@ -19666,6 +20093,7 @@ detail-peace-corps-youngs:
   name: Bridget Youngs
   doge_alias_id:
   from_agency_id:
+  from_truth:
   start_date: '2025-04-04'
   start_date_truth: reported
   start_date_event:
@@ -19734,6 +20162,7 @@ ssa-employee-11:
   name:
   doge_alias_id: SSA-11
   from_agency_id:
+  from_truth:
   start_date: '2025-03-16'
   start_date_truth: verified
   start_date_event:
@@ -19799,6 +20228,7 @@ ssa-employee-5:
   name:
   doge_alias_id: SSA-5
   from_agency_id: DOGE
+  from_truth: verified
   start_date: '2025-02-18'
   start_date_truth: verified
   start_date_event:
@@ -19870,6 +20300,7 @@ detail-opm-ssa-8:
   name:
   doge_alias_id: SSA-8
   from_agency_id: OPM
+  from_truth:
   start_date: '2025-02-26'
   start_date_truth: verified
   start_date_event:

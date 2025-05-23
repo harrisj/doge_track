@@ -28,6 +28,10 @@
       "description": "For details, where he is detailed from",
       "$ref": "valid_names.json#agency_ids"
     },
+    "from_truth": {
+      "description": "How confident are we in this being the source agency for detailing/transfers",
+      "$ref": "valid_names.json#truth_types"
+    },
     "start_date": {
       "description": "When the term of employment started (might be approximate)",
       "type": "string"
@@ -103,6 +107,10 @@
     },
     "supervisory": {
       "description": "Boolean to indicate if the position is supervisory",
+      "type": "boolean"
+    },
+    "excepted": {
+      "description": "Boolean to indicate if the position is excepted/non-competitive",
       "type": "boolean"
     },
     "office": {

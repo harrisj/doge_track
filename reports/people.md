@@ -69,7 +69,7 @@
     -  **Education** (2025-02-03 to NTE 2026-02-12) [as "ED-1"] 
     -  **SSA** (2025-02-03 to ??) [as "OPM-3"] 
         - NUMIDENT: NUMIDENT files: 2025-02-10 - ongoing
-    -  **SSA** (2025-02-09 to NTE 2026-02-08) [as "SSA-1"] Expert ED-00 $90025
+    -  **SSA** (2025-02-09 to NTE 2026-02-08) [as "SSA-1"] Expert ED-00 $90,025
         - NUMIDENT: NUMIDENT files: 2025-02-10 - ongoing
 
 # Ashley Boizelle
@@ -80,11 +80,13 @@
 # Emily Bryant
 - category: wrecker
 - positions:
+    -  **GSA** (2025-03-XX to ??) 
     -  **FTC** (2025-03-(28)~ to ??) 
-    -  **GSA**  
 
 # James Burnham
 - category: support
+- positions:
+    -  **DOGE** (2025-01-(23)~ to ??) General Counsel
 
 # Nate Cavanaugh
 - category: wrecker
@@ -132,8 +134,8 @@
 - positions:
     -  **GSA** (2025-01-(20)~ to ??)  volunteer
     -  **OPM** (2025-01-(28)~ to ??) 
+    -  **DHS** (2025-02-(04)~ to ??) 
     -  **SBA** (2025-02-03 to ??) 
-    -  **DHS** (2025-02-04 to ??) 
     -  **FEMA** (2025-02-05 to ??) 
         - FEMA-Go: FEMA Grants Outcomes: 2025-02-07 - ongoing
     -  **State** (2025-02-10 to ??) Senior Advisor

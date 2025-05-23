@@ -7,12 +7,12 @@
   background: lawyer
   age: 41
   category: support
-  blurb: Apart from his identification in a few Politico articles naming him as DOGE's lawyer at the Department of Transportation, Daniel Abrahamson has kept a relatively low profile.
+  blurb: Apart from his identification in a few Politico articles naming him as DOGE's lawyer at the Department of Transportation, Daniel Abrahamson has kept a relatively low profile. He was formerly a senior counsel at Tesla since 2022.
   positions:
   - id: dot-abrahamson
     type: appointed
     title: Senior Advisor
-    table_note: Exact date unknown but before 3/26
+    table_note: start date unknown but before 3/26
     source: https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2025/03/26/doge-assembles-a-legal-army-00251903
     agency: DOT
 
@@ -22,14 +22,16 @@
   age: 31
   background: lawyer
   category: support
-  blurb: Identified as one of DOGE's growing army of lawyers, Justin Aimonetti has most recently been involved in DOGE's shutdown efforts against small independent agencies like the Corporation for Public Broadcasting.
+  blurb: >-
+    Identified as one of DOGE's growing army of lawyers, Justin Aimonetti has most recently been involved in DOGE's shutdown efforts against small independent agencies like the Corporation for Public Broadcasting, acting as a point of contact between DOGE teams from the GSA and the White House through
+    his Executive Office of the President (EOP) email address.
   positions:
   - id: doge-aimonetti
     type: appointed
     start_date: 2025-02-XX
     start_date_truth: reported
     fuzz: Report just says started sometime in February
-    table_note: Start date only reported as "some point in February"
+    table_note: start date reported as "some point in February"
     source: https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
     agency: DOGE
 
@@ -63,28 +65,29 @@
     series: '0301'
     supervisory: false
     office: Office of the Director
-    comment: Sourced from FOIA documents
+    table_note: sourced from FOIA
     documents:
     - opm-foia-doge-positions
   - id: detail-opm-usadf-altik
     type: detailed
     from: OPM
+    from_truth: guessed
     agency: USADF
     start_date: 2025-02-21
     start_date_truth: verified
     end_date: 2025-03-06
     end_date_truth: reported
-    table_note: Detail assumed to be from OPM
+    table_note: info in govt legal declation
     comment: Assuming detail from OPM
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
   - id: detail-opm-fcc-altik
     type: detailed
     from: OPM
+    from_truth: guessed
     start_date: 2025-04-04
     start_date_truth: reported
     source: https://www.theverge.com/news/644031/doge-federal-communications-commission-directory
     office: Office of the Chairman
-    table_note: Detail assumed to be from OPM
     comment: Assuming he has been detailed from OPM
     agency: FCC
 
@@ -106,9 +109,10 @@
   - id: detail-opm-dhs-armstrong
     type: detailed
     from: OPM
+    from_truth: guessed
     agency: DHS
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    table_note: DHS position reported by NYT
+    table_note: reported by media, assuming from OPM
     comment: Find more definitive info for DHS link
   - id: opm-anthony-armstrong
     type: appointed
@@ -131,9 +135,10 @@
   - id: detail-opm-fdic-armstrong
     type: detailed
     from: OPM
+    from_truth: guessed
     start_date: 2025-04-10
     start_date_truth: reported
-    table_note: No details available
+    table_note: reported by media
     source: https://www.thehandbasket.co/p/doge-fdic
     agency: FDIC
 
@@ -146,7 +151,7 @@
   positions:
   - id: education-balajadia
     type: appointed
-    table_note: Reported by the NYT that she is in Education and other agencies, but no public documentation
+    table_note: NYT links her to Education, but no other info
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
     agency: Education
 
@@ -160,7 +165,8 @@
     type: unknown
     start_date: 2025-02-(13)~
     start_date_truth: reported
-    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
+    comment: 3 other DOGE staff besides Ramada at agency on 2/5.
+    table_note: No other info besides this report
     source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
     agency: DOL
 
@@ -176,17 +182,18 @@
     agency: DOGE
     start_date: 2025-02-(04)~
     start_date_truth: guessed
-    table_note: Date guessed, reported as detailing from DOGE to Education
+    table_note: date guessed, reported as detailing from DOGE to Education
     comment: FIXME, find earliest details of arrival; is she GSA?
   - id: detail-doge-education-alexandra-beynon
     type: detailed
     start_date: 2025-02-05
     start_date_truth: verified
     from: DOGE
+    from_truth: verified
     agency: Education
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
     comment: Details just provided in court testimony
-    table_note: Details verified in court testimony
+    table_note: info in govt legal filing
     documents:
     - doge-staff-education-20250407
 
@@ -215,6 +222,7 @@
     series: '0301'
     supervisory: false
     office: Office of the Director
+    table_note: info for alias SSA-2, who I've identified as him
     comment: I was able to confirm that OPM Employee 2 was Riccardo Biasini
     documents:
     - opm-foia-doge-positions
@@ -272,6 +280,7 @@
   age: 21
   background: coder
   category: wrecker
+  blurb: Identified early in media reports as one of six engineers picked on Elon Musk's team, Akash Bobba was a prolific wrecker from the start, including an unusual detailing document where we as assigned to OPM, Education and Social Security simultaneously.
   positions:
   - id: opm-3
     type: appointed
@@ -283,7 +292,8 @@
     nte_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 48
-    appt_type: Other (Except NonPerm)
+    appt_type: Other
+    excepted: true
     pd_code: 6A39740
     title: Expert
     pay_grade: ED-00
@@ -301,6 +311,7 @@
     type: detailed
     agency: Education
     from: OPM
+    from_truth: verified
     signed_date: 2025-02-12
     start_date: 2025-02-03
     start_date_truth: verified
@@ -315,6 +326,7 @@
     type: detailed
     agency: SSA
     from: OPM
+    from_truth: verified
     signed_date: 2025-02-12
     start_date: 2025-02-03
     start_date_truth: verified
@@ -338,7 +350,7 @@
     pay_grade: ED-00
     series: '0301'
     supervisory: false
-    salary: "$90025"
+    salary: "$90,025"
     qualifications: 'Hands-on software engineer that is an expert in modern computer programming languages, cloud and other infrastructure, AI, etc. 5 years of experience using numerous computer code languages, leadership of teams in technical, software design, and infrastructure areas.
 
       '
@@ -356,6 +368,7 @@
     type: appointed
     start_date: 2025-02-XX
     start_date_truth: reported
+    table_note: reported by media as started in February
     fuzz: Report just says started sometime in February
     source: https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
     agency: DOGE
@@ -365,18 +378,22 @@
   slug: emily-bryant
   age: 23
   category: wrecker
+  blurb: A relatively new arrival to DOGE. My only information on her is a sighting on the DOGE team at the FTC. ProPublica did report that she has an email address at both GSA and EOP, so I am assuming she started there and was detailed out.
   positions:
   - id: gsa-bryant
     type: appointed
     agency: GSA
+    start_date: 2025-03-XX
     sort_date: 2025-03-25
-    comment: No details, but NYT links to her to GSA, so assuming she started there
+    comment: Not verified, but NYT links to her to GSA also, so assuming she started there
   - id: detail-doge-ftc-bryant
     type: detailed
     from: GSA
+    from_truth: guessed
+    sort_date: 2025-03-28
     start_date: 2025-03-(28)~
     start_date_truth: reported
-    comment: Title is not given, reported as starting "last week" from 2025-04-04
+    table_note: limited info, 2025-04-04 report stated she started "last week"
     source: https://www.axios.com/pro/tech-policy/2025/04/04/doge-staffers-move-into-ftc-office
     agency: FTC
 
@@ -386,7 +403,15 @@
   age: 41
   background: lawyer
   category: support
-  positions: []
+  blurb: James Burnham served in the previous Trump administration at both the White House and the Department of Justice. The New York Times mentioned his involvement with DOGE in an article from mid-January, and he has been listed in several subsequent media round-ups of DOGE's lawyers.
+  positions:
+  - id: doge-burnham
+    agency: DOGE
+    type: appointed
+    start_date: 2025-01-(23)~
+    title: General Counsel
+    table_note: NYT reported in DOGE in January, ProPublica provided title
+    source: https://www.nytimes.com/2025/01/12/us/politics/elon-musk-doge-government-trump.html
 
 - name: Nate Cavanaugh
   sort_name: Cavanaugh
@@ -394,6 +419,10 @@
   age: 28
   background: executive
   category: wrecker
+  blurb: >-
+    A former tech entrepeneur, Nate Cavanaugh was initially spotted as one of the DOGE staffers interviewing GSA federal staff to determine layoffs. Since March however, he has been the de facto leader of DOGE's [sustained attacks against multiple independent agencies](/agencies/independent) such as the
+    NEH or IMLS. These attacks begin with Nate offering IT Modernization assistance from the GSA and then escalate through the White House firing agency leadership and naming Nate (or an associate) as the new acting agency head. Once in power, he quickly places all employees on administrative leave and
+    starts firing staff and cancelling grants. Much like a vampire, if he shows up at the door of your agency, do not let him inside.
   positions:
   - id: gsa-cavanaugh
     type: appointed
@@ -408,15 +437,19 @@
     type: detailed
     from: GSA
     agency: USADF
+    from_truth: guessed
     start_date: 2025-02-21
     start_date_truth: verified
     end_date: 2025-03-06
     end_date_truth: reported
+    table_note: verified via court filing
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
   - id: detail-gsa-usip-cavanaugh
     type: detailed
     agency: USIP
     from: GSA
+    from_truth: guessed
+    table_note: verified via court filing
     comment: Assuming this based on repors and where he is based. Becomes president of USIP next
     start_date: 2025-03-04
     start_date_truth: reported
@@ -427,15 +460,17 @@
     type: detailed
     agency: NEH
     from: GSA
+    from_truth: guessed
     start_date: 2025-03-(13)~
     start_date_truth: verified
-    comment: Guessing it's a detail
+    table_note: Verified via court filing
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
   - id: usip-cavanaugh-president
     type: appointed
     start_date: 2025-03-25
     start_date_truth: verified
     title: President
+    table_note: After the rest of board was ousted, Nate was named President of the agency by Marco Rubio and Pete Hegseth
     comment: Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco Rubio and Pete Hegseth, and he is authorized to transfer all assets to the GSA
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.14.1.pdf
     agency: USIP
@@ -444,27 +479,33 @@
     start_date_truth: reported
     type: detailed
     source: https://bsky.app/profile/marisakabas.bsky.social
-    comment: DOGE put entire staff on admin leave and started cancelling grants, not many details
+    table_note: Based on initial reports
+    comment: DOGE put entire staff on admin leave and started cancelling grants, not many details. FIXME
     agency: IMLS
   - id: detail-gsa-nlrb-cavanaugh
     type: detailed
     agency: NLRB
     from: GSA
+    from_truth: guessed
     start_date: 2025-04-16
+    table_note: Spotted by media
     start_date_truth: reported
     source: https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
   - id: detail-gsa-dfc-cavanaugh
     type: detailed
     from: GSA
+    from_truth: guessed
     start_date: 2025-04-28
     start_date_truth: reported
+    table_note: Spotted by media
     source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
     agency: USDFC
   - id: detail-gsa-exim-cavanaugh
     type: detailed
     agency: EXIM
     from: GSA
-    comment: Assuming detail is from GSA
+    from_truth: guessed
+    table_note: Reported by media
     start_date: 2025-05-14
     start_date_truth: reported
     source: https://bsky.app/profile/marisakabas.bsky.social/post/3lp5iwrmfv22y
@@ -472,7 +513,8 @@
     type: detailed
     agency: MSPB
     from: GSA
-    comment: Email says detailing is from DOGE, but I assume it's from GSA
+    from_truth: guessed
+    table_note: Email cited mentioned he was from DOGE, but assuming detail from GSA
     start_date: 2025-05-21
     start_date_truth: reported
     source: https://bsky.app/profile/marisakabas.bsky.social/post/3lpclnw3x7s2c
@@ -488,6 +530,7 @@
     agency: USDA
     start_date: 2025-02-XX
     start_date_truth: inferred
+    table_note: CC'ed on a leaked email. Date guessed from Ag Sec on 2/14 saying DOGE at agency for "a couple weeks"
     comment: CC'ed on an email 2025-02-20, by Gavin Kliger and has a USDS address. USDA administrator said on 2/14 that DOGE had been at the agency for several weeks
 
 - name: Miles Collins
@@ -502,6 +545,7 @@
     start_date: 2025-03-05
     start_date_truth: reported
     from: DOGE
+    from_truth: reported
     comment: Wired reports on a detailing agreement between DOGE and DOL, but that could be for Adam Ramada and crew
     source: https://www.businessinsider.com/doge-staffer-fertility-clinic-pronatalist-department-of-labor
     agency: DOL
@@ -529,7 +573,8 @@
     salary: "$0"
     end_date: 2025-05-(06)~
     end_date_truth: inferred
-    comment: Likely earlier involvement, maybe when Gavin Kliger started there; ends when became CIO
+    table_note: Start date inferred and likely earlier.
+    comment: FIXME earlier involvement, maybe when Gavin Kliger started there; ends when became CIO
     source: https://www.washingtonpost.com/business/2025/03/01/doge-irs-tax-records-benefits/
     agency: IRS
     documents:
@@ -539,6 +584,7 @@
     start_date: 2025-05-(06)~
     start_date_truth: reported
     title: Chief Information Officer
+    table_note: Date is approximate per reports. Will update as new details emerge.
     comment: Date is approximate
     source: https://fedscoop.com/doge-sam-corcos-treasury-chief-information-officer/
     agency: IRS
@@ -557,49 +603,58 @@
     salary: "$0"
     start_date: 2025-01-(20)~
     start_date_truth: inferred
-    table_note: Start date and agency inferred from reporting
+    table_note: Start date and agency inferred from later reporting
     comment: Several documents have Coristine detailing from GSA, so assuming home agency. Also, not in FOIA release from OPM
     source: https://www.wired.com/story/elon-musk-lackeys-office-personnel-management-opm-neuralink-x-boring-stalin/
   - id: internal-dhs-tsa-coristine
     type: internal
     from: DHS
+    from_truth: inferred
     agency: TSA
-    table_note: Listed by the _New York Times_ as being here
+    table_note: NYT links him to TSA, but no other info
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-coristine
     type: internal
     from: DHS
+    from_truth: inferred
     agency: USCIS
-    comment: No details, but in NYT roundup
+    comment: NYT links him to USCIS, but no other info
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: detail-gsa-opm-coristine
     type: detailed
     agency: OPM
     from: GSA
+    from_truth: reported
     start_date: 2025-01-(28)~
     start_date_truth: reported
     reimbursed: false
+    table_note: wasn't named due to young age; mentioned as reporting to Amanda Scales, so might be detail?
     comment: Edward Coristine is not named, but identfied. Mentions he reportd to Scales
     source: https://www.wired.com/story/elon-musk-lackeys-office-personnel-management-opm-neuralink-x-boring-stalin/
   - id: detail-gsa-sba-coristine
     type: detailed
     from: GSA
+    from_truth: guessed
     agency: SBA
     start_date: 2025-02-03
     start_date_truth: reported
+    table_note: Only source is a single tweet. More info needed. Assuming detail from GSA.
     source: https://xcancel.com/lbarronlopez/status/1886491276729544809
   - id: detail-gsa-dhs-coristine
     type: detailed
     from: GSA
+    from_truth: guessed
     agency: DHS
-    start_date: 2025-02-04
+    start_date: 2025-02-(04)~
     start_date_truth: reported
+    table_note: Date unverified, but assuming predates sighting at FEMA
     comment: Reported by the Post, I'm going to assume this predated the FEMA access
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
   - id: internal-hhs-fema-edward-coristine
     type: internal
     from: DHS
+    from_truth: inferred
     agency: FEMA
     start_date: 2025-02-05
     start_date_truth: reported
@@ -608,6 +663,7 @@
     type: detailed
     agency: State
     from: GSA
+    from_truth: reported
     start_date: 2025-02-10
     start_date_truth: reported
     title: Senior Advisor
@@ -617,6 +673,7 @@
     type: detailed
     agency: USAID
     from: GSA
+    from_truth: guessed
     start_date: 2025-02-10
     start_date_truth: reported
     title: Senior Advisor
@@ -625,6 +682,7 @@
   - id: internal-dhs-cisa-coristine
     type: internal
     from: DHS
+    from_truth: inferred
     agency: CISA
     start_date: 2025-02-19
     start_date_truth: reported
@@ -635,6 +693,7 @@
     type: detailed
     agency: Education
     from: GSA
+    from_truth: verified
     start_date: 2025-02-20
     start_date_truth: verified
     documents:
@@ -643,16 +702,20 @@
     type: detailed
     agency: HHS
     from: GSA
+    from_truth: guessed
     start_date: 2025-03-05
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: No document provided, date reported in court filing
+    table_note: Date verified in court document, assuming detail from GSA
   - id: internal-hhs-cms-coristine
     type: internal
+    from_truth: inferred
     agency: CMS
     from: HHS
     start_date: 2025-03-05
     start_date_truth: verified
+    table_note: Granted access to CMS systems on same day as detail to HHS
     comment: Granted access to CALM system on the same day as his detail to HHS
 
 - name: Scott Coulter
@@ -666,6 +729,7 @@
   - id: detail-nasa-ssa-employee-2
     type: detailed
     from: NASA
+    from_truth: verified
     agency: SSA
     start_date: 2025-02-18
     start_date_truth: verified
@@ -676,7 +740,7 @@
     signed_date: 2025-03-06
     reimbursed: true
     comment: Followed by Employee 2 being appointed the CIO
-    reimbursement_amount: Up to $120,579
+    reimbursement_amount: hourly, maximum of $120,579
     documents:
     - detail-20250306-nasa-ssa-employee-2
     - onboard-ssa-employee-2
@@ -721,15 +785,19 @@
     type: detailed
     agency: USAID
     from: OPM
+    from_truth: guessed
     start_date: 2025-02-XX
     start_date_truth: guessed
+    table_note: NYT links to USAID, but need to find public reports of this
     comment: Need to see if I can find any documentation linking him. NYT says he was involved.
   - id: detail-opm-doj-cromer
     type: detailed
     agency: DOJ
     from: OPM
+    from_truth: guessed
     start_date: 2025-03-XX
     start_date_truth: inferred
+    table_note: Rep. Vindman reported in early March being contacted by Cromer at the DOJ
     comment: Vindman in early March reports receiving contacts from Cromer at DOJ
 
 - name: Steve Davis
@@ -818,31 +886,37 @@
     type: detailed
     agency: DHS
     from: DOL
+    from_truth: guessed
     comment: No other info, just mentioned in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-cpb-elez
     type: internal
     agency: CBP
     from: DHS
+    from_truth: inferred
     comment: No other info, just mentioned in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-ice-elez
     type: internal
     agency: ICE
     from: DHS
+    from_truth: inferred
     comment: No other info, just mentioned in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-elez
     type: internal
     agency: TSA
     from: DHS
+    from_truth: inferred
+    table_note: linked to DHS by NYT, no public info
     comment: No other info, just mentioned in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-elez
     type: internal
     agency: USCIS
     from: DHS
-    comment: No other info, just mentioned in NYT roundup
+    from_truth: inferred
+    comment: linked to DHS by NYT, no public info
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: treasury-marko-elez
     type: appointed
@@ -872,6 +946,7 @@
     type: detailed
     agency: SSA
     from: DOL
+    from_truth: verified
     start_date: 2025-02-18
     start_date_truth: verified
     reimbursed: true
@@ -893,6 +968,7 @@
     type: internal
     agency: CMS
     from: HHS
+    from_truth: inferred
     start_date: 2025-03-05
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
@@ -922,7 +998,9 @@
   - id: detail-gsa-dhs-farritor
     type: detailed
     from: GSA
+    from_truth: guessed
     agency: DHS
+    table_note: linked to DHS by NYT, no other info
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: gsa-luke-farritor
@@ -935,18 +1013,21 @@
   - id: internal-dhs-ice-farritor
     type: internal
     from: DHS
+    from_truth: inferred
     agency: ICE
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-farritor
     type: internal
     from: DHS
+    from_truth: inferred
     agency: TSA
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-farritor
     type: internal
     from: DHS
+    from_truth: inferred
     agency: USCIS
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -954,14 +1035,16 @@
     type: detailed
     agency: HHS
     from: GSA
+    from_truth: verified
     start_date: 2025-01-21
     start_date_truth: verified
     comment: Date found in a court filing
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  - id: detail-gsa-usaid-kliger
+  - id: detail-gsa-usaid-farritor
     type: detailed
     agency: USAID
     from: GSA
+    from_truth: inferred
     start_date: 2025-01-27
     start_date_truth: reported
     source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
@@ -969,6 +1052,7 @@
     type: internal
     agency: CDC
     from: HHS
+    from_truth: inferred
     start_date: 2025-01-30
     start_date_truth: inferred
     comment: Guessing from first reported system access for ICE system
@@ -976,12 +1060,14 @@
     type: internal
     agency: CMS
     from: HHS
+    from_truth: inferred
     start_date: 2025-01-31
     start_date_truth: inferred
     comment: Guessing from first reported system access for HIGLAS
-  - id: detail-doge-energy-luke-farritor
+  - id: detail-gsa-energy-luke-farritor
     type: detailed
-    from: DOGE
+    from: GSA
+    from_truth: guessed
     agency: Energy
     start_date: 2025-02-(04)~
     start_date_truth: disputed
@@ -992,6 +1078,7 @@
     type: detailed
     agency: CFPB
     from: GSA
+    from_truth: verified
     start_date: 2025-02-07
     start_date_truth: verified
     end_date: 2025-03-04
@@ -1002,6 +1089,7 @@
     type: detailed
     agency: State
     from: GSA
+    from_truth: guessed
     start_date: 2025-02-10
     start_date_truth: reported
     title: Senior Advisor
@@ -1011,6 +1099,7 @@
     type: internal
     agency: NIH
     from: HHS
+    from_truth: inferred
     start_date: 2025-02-24
     start_date_truth: reported
     office: NIH Business System
@@ -1018,6 +1107,7 @@
   - id: detail-gsa-nsf-farritor
     type: detailed
     from: GSA
+    from_truth: guessed
     start_date: 2025-04-14
     start_date_truth: reported
     comment: Showed up at the agency to do secondary round of grant reviews. Detail from HHS?
@@ -1058,12 +1148,14 @@
     type: internal
     agency: CMS
     from: HHS
+    from_truth: inferred
     start_date: 2025-02-03
     start_date_truth: inferred
     comment: Inferred from first reported access to CALM system
   - id: detail-education-hhs-fennessy
     type: detailed
     from: Education
+    from_truth: verified
     agency: HHS
     start_date: 2025-02-20
     start_date_truth: verified
@@ -1097,6 +1189,7 @@
     type: detailed
     agency: NEH
     from: GSA
+    from_truth: guessed
     start_date: 2025-03-(13)~
     start_date_truth: verified
     comment: Guessing GSA based on some past reporting
@@ -1105,6 +1198,7 @@
     type: detailed
     agency: NLRB
     from: GSA
+    from_truth: guessed
     start_date: 2025-04-16
     start_date_truth: reported
     source: https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
@@ -1199,6 +1293,7 @@
   age: 27
   background: coder
   category: wrecker
+  blurb: One of the four SpaceX engineers who were brought into the FAA on an ad hoc basis, he was only approved to work for 4 days at the agency. It's unclear however if he left afterwards or that term was extended.
   positions:
   - id: faa-glantz
     type: appointed
@@ -1228,7 +1323,7 @@
   - id: doge-amy-gleason-director
     start_date: 2025-02-18
     start_date_truth: verified
-    type: appointed
+    type: promotion
     agency: DOGE
     title: Acting Administrator, US DOGE Service and the DOGE Temporary Organization
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.4.pdf
@@ -1236,6 +1331,7 @@
     type: internal
     agency: CMS
     from: HHS
+    from_truth: inferred
     start_date: 2025-02-(24)~
     start_date_truth: inferred
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
@@ -1443,7 +1539,7 @@
     - opm-foia-doge-positions
     - onboard-opm-greg-hogan
   - id: greg-hogan-opm-2
-    type: appointed
+    type: promotion
     name: Greg Hogan
     agency: OPM
     start_date: 2025-02-11
@@ -1469,6 +1565,9 @@
   age: 42
   background: executive
   category: enabler
+  blurb: >-
+    Nicole Hollander is married to fellow DOGE operative and ad hoc leader Steve Davis, and she has worked with Elon Musk at Twitter. She has reportedly been involved with securing an enclave for DOGE to work from and live within GSA HQ (complete with laundry facilities). She also has been involved with
+    efforts to cancel GSA leases across the country. Her conenctions to other DOGE projects have not be publicly documented yet.
   positions:
   - id: gsa-hollander
     type: appointed
@@ -1496,6 +1595,7 @@
   - id: detail-doge-doi-holmes
     type: detailed
     from: DOGE
+    from_truth: reported
     start_date: 2025-02-24
     start_date_truth: reported
     title: Special Advisor / Acting Chief Human Capital Officer
@@ -1570,6 +1670,7 @@
   age: 30
   background: coder
   category: wrecker
+  blurb: One of the four SpaceX engineers who were brought into the FAA on an ad hoc basis, he was only approved to work for 4 days at the agency. It's unclear however if he left afterwards or that term was extended.
   positions:
   - id: faa-kiernan
     type: appointed
@@ -1626,6 +1727,7 @@
     type: detailed
     from: OPM
     agency: DHS
+    from_truth: guessed
     comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: gavin-kliger-opm
@@ -1639,7 +1741,8 @@
     end_date_truth: verified
     description: Provisional Appt NTE
     appt_type_code: 44
-    appt_type: Schedule C (Except NonPerm)
+    appt_type: Schedule C
+    excepted: true
     pd_code: 6A38025
     title: Senior Advisor to the Director for Information Technology
     pay_grade: GS-15
@@ -1654,6 +1757,7 @@
   - id: internal-dhs-tsa-kliger
     type: detailed
     from: DHS
+    from_truth: inferred
     agency: TSA
     comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -1661,6 +1765,7 @@
     type: detailed
     agency: USAID
     from: OPM
+    from_truth: guessed
     start_date: 2025-01-27
     start_date_truth: reported
     source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
@@ -1668,6 +1773,7 @@
     type: detailed
     from: OPM
     agency: USDA
+    from_truth: guessed
     start_date: 2025-02-(01)~
     start_date_truth: inferred
     office: Office of the Secretary
@@ -1677,6 +1783,7 @@
     type: detailed
     agency: CFPB
     from: OPM
+    from_truth: verified
     start_date: 2025-02-07
     start_date_truth: verified
     end_date: 2025-05-08
@@ -1689,7 +1796,8 @@
     start_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 44
-    appt_type: Schedule C (Except NonPerm)
+    appt_type: Schedule C
+    excepted: true
     pd_code: 6A38025
     title: Senior Advisor to the Director for Information Technology
     pay_grade: GS-15
@@ -1705,6 +1813,7 @@
     type: detailed
     agency: IRS
     from: OPM
+    from_truth: verified
     reimbursed: true
     start_date: 2025-02-19
     start_date_truth: verified
@@ -1720,6 +1829,7 @@
   - id: detail-opm-ftc-kliger
     type: detailed
     from: OPM
+    from_truth: guessed
     start_date: 2025-03-(28)~
     start_date_truth: reported
     comment: Title is not given, reported as starting "last week" from 2025-04-04
@@ -1870,6 +1980,7 @@
     type: detailed
     agency: USAID
     from: GSA
+    from_truth: guessed
     start_date: 2025-01-28
     start_date_truth: verified
     end_date: 2025-03-18
@@ -1880,6 +1991,7 @@
     type: internal
     agency: CMS
     from: HHS
+    from_truth: inferred
     start_date: 2025-02-03
     start_date_truth: inferred
     comment: Inferring based on first reported access to CMS CALM system
@@ -1887,12 +1999,14 @@
     type: detailed
     agency: CFPB
     from: GSA
+    from_truth: verified
     start_date: 2025-02-07
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: detail-gsa-hhs-lewin
     type: detailed
     agency: HHS
     from: GSA
+    from_truth: guessed
     start_date: 2025-02-21
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
@@ -1900,6 +2014,7 @@
     type: internal
     agency: NIH
     from: HHS
+    from_truth: inferred
     start_date: 2025-02-24
     start_date_truth: reported
     source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
@@ -2002,6 +2117,9 @@
   slug: ted-malaska
   background: coder
   category: wrecker
+  blurb: >-
+    One of the four SpaceX engineers who were brought into the FAA on an ad hoc basis, he was only approved to work for 4 days at the agency. It's unclear however if he left afterwards or that term was extended. Ted was also named in several reports where he promised to steamroll any federal staff who
+    got in his way.
   positions:
   - id: faa-malaska
     type: appointed
@@ -2066,6 +2184,7 @@
   - id: detail-gsa-dfc-mendelson
     type: detailed
     from: GSA
+    from_truth: guessed
     start_date: 2025-04-28
     start_date_truth: reported
     source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
@@ -2073,6 +2192,7 @@
   - id: detail-gsa-sec-mendelson
     type: detailed
     from: GSA
+    from_truth: guessed
     start_date: 2025-05-(02)~
     start_date_truth: reported
     source: https://www.reuters.com/sustainability/boards-policy-regulation/doge-expands-presence-wall-st-regulator-sources-say-2025-05-02/
@@ -2109,6 +2229,7 @@
     type: detailed
     agency: NIH
     from: HHS
+    from_truth: inferred
     start_date: 2025-02-24
     start_date_truth: reported
     office: NIH Business System
@@ -2180,6 +2301,7 @@
     type: detailed
     agency: DHS
     from: DOL
+    from_truth: guessed
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: dol-moghaddassi
@@ -2189,24 +2311,28 @@
     type: internal
     agency: CBP
     from: DHS
+    from_truth: inferred
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-ice-mohgaddassi
     type: internal
     agency: ICE
     from: DHS
+    from_truth: inferred
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-mohgaddassi
     type: internal
     agency: TSA
     from: DHS
+    from_truth: inferred
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-mohgaddassi
     type: internal
     agency: USCIS
     from: DHS
+    from_truth: inferred
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: detail-dol-ssa-employee-3
@@ -2214,6 +2340,7 @@
     alias: SSA-3
     agency: SSA
     from: DOL
+    from_truth: verified
     start_date: 2025-02-22
     start_date_truth: verified
     reimbursed: true
@@ -2234,6 +2361,7 @@
     type: internal
     agency: CMS
     from: HHS
+    from_truth: inferred
     start_date: 2025-03-05
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
@@ -2270,6 +2398,7 @@
     type: detailed
     agency: FBI
     from: OPM
+    from_truth: guessed
     comment: Reported as an unidentified SpaceX employee is reported to be working as an advisor to the Director of the FBI, but alias figured out later
     office: Office of the Director
     source: https://www.nbcnews.com/politics/national-security/people-ties-musk-top-fbi-critic-are-advising-fbi-director-rcna189567
@@ -2297,6 +2426,7 @@
   - id: detail-education-fdic-morgan
     type: detailed
     from: Education
+    from_truth: guessed
     start_date: 2025-04-10
     start_date_truth: reported
     source: https://www.thehandbasket.co/p/doge-fdic
@@ -2361,6 +2491,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.61.2.pdf
     agency: IRS
     from: Treasury
+    from_truth: inferred
 
 - name: Donald Park
   sort_name: Park
@@ -2378,6 +2509,7 @@
   - id: sba-park
     type: detailed
     from: GSA
+    from_truth: guessed
     start_date: 2025-02-03
     start_date_truth: reported
     agency: SBA
@@ -2403,7 +2535,8 @@
     start_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 44
-    appt_type: Schedule C (Except NonPerm)
+    appt_type: Schedule C
+    excepted: true
     pd_code: 6A38859
     title: Senior Advisor
     pay_grade: GS-15
@@ -2428,7 +2561,8 @@
     start_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 48
-    appt_type: Other (Except NonPerm)
+    appt_type: Other
+    excepted: true
     pd_code: 6A39738
     title: Expert
     pay_grade: ED-00
@@ -2445,6 +2579,7 @@
   - id: detail-opm-noaa-rajpal
     type: detailed
     from: OPM
+    from_truth: guessed
     agency: NOAA
     start_date: 2025-02-04
     start_date_truth: reported
@@ -2453,6 +2588,7 @@
     type: detailed
     agency: CFPB
     from: OPM
+    from_truth: verified
     start_date: 2025-02-07
     start_date_truth: verified
     end_date: 2025-03-21
@@ -2479,6 +2615,7 @@
     start_date_truth: verified
     agency: Education
     from: DOGE
+    from_truth: verified
     type: detailed
     documents:
     - 20250212-doge-education-all
@@ -2491,6 +2628,7 @@
   - id: detail-doge-energy-adam-ramada
     type: detailed
     from: DOGE
+    from_truth: guessed
     agency: Energy
     start_date: 2025-02-(04)~
     start_date_truth: disputed
@@ -2500,6 +2638,7 @@
   - id: detail-doge-dol-ramada
     type: detailed
     from: DOGE
+    from_truth: verified
     agency: DOL
     start_date: 2025-02-05
     start_date_truth: verified
@@ -2508,6 +2647,7 @@
   - id: detail-doge-fdic-ramada
     type: detailed
     from: DOGE
+    from_truth: guessed
     start_date: 2025-04-10
     start_date_truth: reported
     source: https://www.thehandbasket.co/p/doge-fdic
@@ -2552,18 +2692,21 @@
     type: detailed
     agency: DHS
     from: SSA
+    from_truth: guessed
     comment: No info, but listed in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-rehling
     type: detailed
     agency: TSA
     from: DHS
+    from_truth: inferred
     comment: No info, but listed in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-rehling
     type: detailed
     agency: USCIS
     from: DHS
+    from_truth: inferred
     comment: No info, but listed in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: ssa-employee-9
@@ -2625,6 +2768,7 @@
     type: internal
     agency: CMS
     from: HHS
+    from_truth: inferred
     start_date: 2025-02-03
     start_date_truth: inferred
     comment: Dating from first reported access to CALM
@@ -2632,6 +2776,7 @@
     type: internal
     agency: NIH
     from: HHS
+    from_truth: inferred
     start_date: 2025-02-24
     start_date_truth: reported
     office: NIH Business System
@@ -2639,6 +2784,7 @@
   - id: detail-hhs-nsf-riley
     type: consultant
     from: HHS
+    from_truth: guessed
     start_date: 2025-04-14
     start_date_truth: reported
     comment: Showed up at the agency to do secondary round of grant reviews. Assuming a detail
@@ -2693,6 +2839,7 @@
   age: 34
   background: hr
   category: leadership
+  blurb: An associate of Elon Musk from xAI, Amanda Scales has been located at GSA since Day 1.
   positions:
   - id: amanda-scales-opm
     type: appointed
@@ -2716,6 +2863,9 @@
   sort_name: Schuler
   slug: frank-schuler
   category: support
+  blurb: >-
+    A former partner in a real-estate investment firm in Atlanta, Frank Schuler was mentioned as one of Stephen Ehikian's pending appointments on January 20th. He wasn't sighted in GSA until mid-February, when he appeared in a meeting and was introduced by Nate Cavanaugh. It's unclear what he is doing
+    for DOGE inside of GSA.
   positions:
   - id: gsa-frank-schuler
     type: appointed
@@ -2736,30 +2886,35 @@
   - id: internal-dhs-cbp-schutt
     type: internal
     from: DHS
+    from_truth: inferred
     agency: CBP
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-fema-schutt
     type: internal
     from: DHS
+    from_truth: inferred
     agency: FEMA
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-ice-schutt
     type: internal
     from: DHS
+    from_truth: inferred
     agency: ICE
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-schutt
     type: internal
     from: DHS
+    from_truth: inferred
     agency: TSA
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-schutt
     type: internal
     from: DHS
+    from_truth: inferred
     agency: USCIS
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -2775,6 +2930,7 @@
   - id: detail-gsa-dhs-schutt
     type: detailed
     from: GSA
+    from_truth: inferred
     agency: DHS
     start_date: 2025-02-(19)~
     start_date_truth: reported
@@ -2783,6 +2939,7 @@
   - id: internal-dhs-cisa-schutt
     type: detailed
     from: DHS
+    from_truth: inferred
     agency: CISA
     start_date: 2025-02-19
     start_date_truth: reported
@@ -2792,6 +2949,7 @@
     type: detailed
     agency: HHS
     from: GSA
+    from_truth: guessed
     start_date: 2025-03-14
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
@@ -2813,6 +2971,7 @@
   - id: detail-gsa-nasa-sennott
     type: detailed
     from: GSA
+    from_truth: guessed
     start_date: 2025-03-(14)~
     start_date_truth: reported
     source: https://www.businessinsider.com/tesla-employee-alexander-simonpour-nasa-doge-team-2025-3
@@ -2851,6 +3010,7 @@
   - id: detail-gsa-education-3
     type: detailed
     from: GSA
+    from_truth: verified
     agency: Education
     signed_date: 2025-02-03
     start_date: 2025-02-12
@@ -2866,6 +3026,7 @@
   - id: detail-gsa-ssa-employee-10
     type: detailed
     from: GSA
+    from_truth: verified
     agency: SSA
     signed_date: 2025-02-18
     start_date: 2025-02-18
@@ -2881,6 +3042,7 @@
     type: detailed
     name: Ethan Shaotran
     from: GSA
+    from_truth: verified
     agency: USADF
     start_date: 2025-02-20
     start_date_truth: verified
@@ -2894,6 +3056,7 @@
   - id: detail-gsa-usps-ethan-shaotran
     type: detailed
     from: GSA
+    from_truth: verified
     agency: USPS
     reimbursed: false
     start_date: 2025-03-12
@@ -2906,6 +3069,7 @@
   - id: detail-gsa-dfc-shaotran
     type: detailed
     from: GSA
+    from_truth: guessed
     start_date: 2025-04-28
     start_date_truth: reported
     source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
@@ -2959,6 +3123,7 @@
   - id: detail-gsa-usps-alex-simonpour
     type: detailed
     from: GSA
+    from_truth: verified
     agency: USPS
     reimbursed: false
     start_date: 2025-03-07
@@ -2975,12 +3140,15 @@
     start_date_truth: reported
     source: https://www.businessinsider.com/tesla-employee-alexander-simonpour-nasa-doge-team-2025-3
     agency: NASA
+    from: GSA
+    from_truth: guessed
 
 - name: Sam Smeal
   sort_name: Smeal
   slug: sam-smeal
   age: 29
   background: coder
+  blurb: One of the four SpaceX engineers who were brought into the FAA on an ad hoc basis, he was only approved to work for 4 days at the agency. It's unclear however if he left afterwards or that term was extended.
   category: wrecker
   positions:
   - id: faa-smeal
@@ -3078,6 +3246,7 @@
   - id: detail-opm-doj-stanley
     type: detailed
     from: OPM
+    from_truth: guessed
     start_date: 2025-04-(02)~
     start_date_truth: reported
     title: Senior Advisor
@@ -3176,12 +3345,14 @@
     start_date_truth: inferred
     agency: CMS
     from: HHS
+    from_truth: inferred
     comment: Inferring from first reported access to the IDR system at CMS
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: detail-hhs-nsf-terrell
     type: consultant
     office: Office of the Director
     from: HHS
+    from_truth: inferred
     start_date: 2025-04-14
     start_date_truth: reported
     comment: Showed up at the agency to do secondary round of grant reviews. Assuming a detail
@@ -3268,6 +3439,7 @@
   - id: detail-usda-wick
     type: detailed
     from: DOGE
+    from_truth: reported
     agency: USDA
     start_date: 2025-02-(01)~
     start_date_truth: inferred
@@ -3277,6 +3449,7 @@
     type: detailed
     agency: CFPB
     from: DOGE
+    from_truth: verified
     start_date: 2025-02-07
     start_date_truth: verified
     end_date: 2025-03-04
@@ -3286,6 +3459,7 @@
   - id: detail-doge-dol-wick
     type: detailed
     from: DOGE
+    from_truth: inferred
     start_date: 2025-02-(13)~
     start_date_truth: reported
     comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5. But was part of CFPB assault.
@@ -3295,6 +3469,7 @@
     type: detailed
     agency: Education
     from: DOGE
+    from_truth: inferred
     start_date: 2025-02-20
     start_date_truth: verified
     documents:
@@ -3310,6 +3485,7 @@
   - id: detail-cfpb-fcc-wick
     type: detailed
     from: CFPB
+    from_truth: guessed
     start_date: 2025-04-04
     start_date_truth: reported
     source: https://www.theverge.com/news/644031/doge-federal-communications-commission-directory
@@ -3330,7 +3506,8 @@
     start_date_truth: verified
     description: Exc Appt NTE
     appt_type_code: 44
-    appt_type: Schedule C (Except NonPerm)
+    appt_type: Schedule C
+    excepted: true
     pd_code: 6A36647
     title: Senior Advisor to the Director
     pay_grade: GS-15
@@ -3358,6 +3535,7 @@
   - id: detail-gsa-dfc-wood
     type: detailed
     from: GSA
+    from_truth: reported
     start_date: 2025-04-28
     start_date_truth: reported
     source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
@@ -3406,6 +3584,7 @@
     type: detailed
     agency: CFPB
     from: OPM
+    from_truth: verified
     start_date: 2025-02-07
     start_date_truth: verified
     comment: FIXME

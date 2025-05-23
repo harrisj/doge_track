@@ -1,9 +1,10 @@
 {% import "macros" %}
 
-<li class="list-row">
-  <div class="sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl align-top"><i class="fa {{ event_icon(event) }}"></i></div>
-  <div class="">
-    <div class="flex flex-wrap content-center align-top">
+<li class="list-row m-0 p-0 pb-1 pt-0.5 gap-1">
+  <div class="text-md sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-2xl align-top">
+    <i class="fa {{ event_icon(event) }}"></i></div>
+  <div class="mt-1 sm:mt-1.5 sm:ml-0.5">
+    <div class="flex flex-wrap content-center align-top leading-5 no-prose">
       <div class="flex-none font-bold pe-2">{{ event_title(event) }}</div>
       <div class="flex-none pe-2">{{ event.date }}</div>
       <div class="flex-none pe-2">
@@ -33,6 +34,6 @@
           {% end %}
         {% end %}
     </div>
-    <div class="leading-5 pt-1">{{ event.text }}</div>
+    <div class="pt-1 prose-sm sm:prose-sm md:prose-sm lg:prose-sm xl:prose-sm leading-5">{{ event.text }}</div>
   </div>
 </li>

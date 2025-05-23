@@ -4,7 +4,7 @@
 {%@ 'agency_title', agency: agency %}
 
 {% if blurb %}
-  <div class="prose my-text-smaller">{{ blurb | markdownify }}
+  <div class="rose prose-sm sm:prose-base md:prose-lg prose-stone prose-li:m-[0.1em] dark:prose-invert">{{ blurb | markdownify }}</div>
 {% end %}
 
 {% if agency.positions.any? %}
