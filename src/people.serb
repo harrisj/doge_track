@@ -6,7 +6,7 @@ description: An alphabetical listing of all the people being tracked as part of 
 {% people = site.data.people.sort_by(&:sort_name) %}
 {%@ 'title', title: "Who's Involved in DOGE" %}
 
-<div class="my-text-small mb-2">
+<div class="rose prose-sm sm:prose-base md:prose-md lg:prose-lg prose-stone prose-li:m-[0.1em] dark:prose-invert mb-2">
 <p>This page provides a single overview of everybody who is is my database of DOGE affiliates. To better understand the roles of each person, I have sorted them into several distinct categories which are displayed here as icons and text:</p>
 
 <p><ul>

@@ -7,6 +7,7 @@ template_engine: serbea
 
 {% all_wreckers = site.data.people.select {|p| p.category == 'wrecker' } %}
 
+{%@ 'text' do %}
 From the start, DOGE has moved aggressively across the federal government to shutter agencies, cancel spending and seize data for itself. To do this, they have relied on a specific type of person that I call "Wreckers" - usually young and male, from a technical background, willing to do whatever it takes to get the job done quickly. Scratch the surface of any horror story about DOGE's conduct and you'll usually find a wrecker at the core.
 
 ## The DOGE Teams
@@ -91,3 +92,4 @@ There are also a fair number of Wreckers who started at other agencies, possibly
   {% end %}
   </tbody>
 </table>
+{% end %}

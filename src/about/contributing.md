@@ -2,6 +2,8 @@
 title: How to Contributing
 layout: docs
 ---
+
+
 # Want To Contribute?
 
 Good news! Just by visiting this site and learning more, you already have contributed! In all seriousness, I started this project and made this site because I felt it was important to bear witness to all the damage that DOGE was doing and to drag their murky operations into the light. If this site has been useful for you to understand what is going on, nothing could make me happier about it. Thank you!
