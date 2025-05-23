@@ -29,6 +29,11 @@ const { plugins } = require("./config/esbuild-plugins.js")
 // }
 // ```
 
+const esbuildOptions = {
+  publicPath: "/assets/static",
+  ...
+}
+
 /**
  * @typedef { import("esbuild").BuildOptions } BuildOptions
  * @type {BuildOptions}
