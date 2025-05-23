@@ -29,7 +29,7 @@ end
 namespace :frontend do
   desc 'Build the frontend with esbuild for deployment'
   task :build do
-    sh 'touch frontend/styles/jit-refresh.css' if BRIDGETOWN_ENV == 'production'
+    sh 'touch frontend/styles/jit-refresh.css' if ENV['BRIDGETOWN_ENV'] == 'production'
     sh 'yarn run esbuild'
   end
 
