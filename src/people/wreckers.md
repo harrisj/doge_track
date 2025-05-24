@@ -71,9 +71,9 @@ There are also a fair number of Wreckers who started at other agencies, possibly
     <tr>
       <th>Agency</th>
       <th>Name</th>
-      <th>Age</th>
+      <th class="hidden sm:table-cell">Age</th>
       <th>Start</th>
-      <th>Skill</th>
+      <th class="hidden md:table-cell>Skill</th>
       <th>Detailed To</th>
     </tr>
   </thead>
@@ -83,9 +83,9 @@ There are also a fair number of Wreckers who started at other agencies, possibly
     <tr class="my-table-sm text-left">
       <td class="align-top">{{ agency_link(person.start_agency) }}</td>
       <td class="align-top">{{ person_link(person.name) }}</td>
-      <td class="align-top">{{ person.age }}</td>
+      <td class="align-top hidden sm:table-cell">{{ person.age }}</td>
       <td class="align-top"><nobr>{{ render EdtfFormat.new(person.start_date, :compact, :filled) }}</nobr></td>
-      <td class="align-top">{{ person_background(person) }}</td>
+      <td class="align-top hidden md:table-cell">{{ person_background(person) }}</td>
       <td class="align-top">{% if person.table_note %}{{ person.table_note }} {% end %}
           {% if details.any? %}{{ details | agencies | uniq | agency_links }}{% end %}</td>
     </tr>
