@@ -1,8 +1,7 @@
 ---
-title: How to Contributing
+title: How to Contribute
 layout: docs
 ---
-
 
 # Want To Contribute?
 

@@ -17,7 +17,7 @@ dot-abrahamson:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: '2025-01-20'
+  sort_date: '2025-03-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -684,7 +684,7 @@ dol-sam-beyda:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(13)~
+  sort_date: '2025-02-13'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -753,7 +753,7 @@ doge-beynon:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(04)~
+  sort_date: '2025-02-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -1679,7 +1679,7 @@ doge-burnham:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-01-(23)~
+  sort_date: '2025-01-23'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -1993,7 +1993,7 @@ detail-gsa-neh-cavanaugh:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-03-(13)~
+  sort_date: '2025-03-13'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2782,7 +2782,7 @@ irs-corcos-cio:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-05-(06)~
+  sort_date: '2025-05-06'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2852,7 +2852,7 @@ gsa-edward-coristine:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-01-(20)~
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3087,7 +3087,7 @@ detail-gsa-opm-coristine:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-01-(28)~
+  sort_date: '2025-01-28'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3249,7 +3249,7 @@ detail-gsa-dhs-coristine:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(04)~
+  sort_date: '2025-02-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4283,6 +4283,76 @@ detail-opm-doj-cromer:
     obj_type: Agency
   agency_ids:
   - DOJ
+doge-steve-davis:
+  id: doge-steve-davis
+  type: appointed
+  agency_id: DOGE
+  name: Steve Davis
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: '2025-01-20'
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: '2025-01-20'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  series:
+  supervisory:
+  office:
+  source:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: assuming he started on 2025-01-20
+  documents:
+  person:
+    name: Steve Davis
+    sort_name: Davis
+    slug: steve-davis
+    page_slug:
+    age: 45
+    background: executive
+    category: leadership
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#steve-davis"
+    comment:
+    table_note:
+    obj_type: Person
+  agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
+    obj_type: Agency
+  agency_ids:
+  - DOGE
+  - EOP
 opm-stephen-duarte:
   id: opm-stephen-duarte
   type: appointed
@@ -4354,7 +4424,7 @@ opm-stephen-duarte:
   - OPM
 ssa-dudek-commissioner:
   id: ssa-dudek-commissioner
-  type: appointed
+  type: promotion
   agency_id: SSA
   name: Leland Dudek
   doge_alias_id:
@@ -5045,7 +5115,7 @@ dol-marko-elez:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(14)~
+  sort_date: '2025-02-14'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -6133,7 +6203,7 @@ detail-gsa-energy-luke-farritor:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(04)~
+  sort_date: '2025-02-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -6975,7 +7045,7 @@ detail-neh-justin-fox:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-03-(13)~
+  sort_date: '2025-03-13'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7174,7 +7244,7 @@ dod-fulcher:
     reporting_notes:
     path: "/people#justin-fulcher"
     comment:
-    table_note: Unclear if started elsewhere
+    table_note: unclear if started elsewhere
     obj_type: Person
   agency:
     id: DOD
@@ -7243,7 +7313,7 @@ dod-fulcher-advisor:
     reporting_notes:
     path: "/people#justin-fulcher"
     comment:
-    table_note: Unclear if started elsewhere
+    table_note: unclear if started elsewhere
     obj_type: Person
   agency:
     id: DOD
@@ -7308,7 +7378,7 @@ hhs-gamache:
     background: coder
     category: unknown
     own_page: false
-    blurb:
+    blurb: Reported as present in HHS in January by ProPublica, but there are no other details about his time there or what he was doing.
     reporting_notes:
     path: "/people#mattieu-gamache"
     comment:
@@ -7413,7 +7483,7 @@ dol-derek-geissler:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(13)~
+  sort_date: '2025-02-13'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7446,7 +7516,7 @@ dol-derek-geissler:
     background:
     category: unknown
     own_page: false
-    blurb:
+    blurb: Apart from a single report by NBC News placing him at the Department of Labor in mid-February, there are no public details about Derek Geissler.
     reporting_notes:
     path: "/people#derek-geissler"
     comment:
@@ -8681,7 +8751,7 @@ doge-holmes:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(05)~
+  sort_date: '2025-02-05'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -8968,7 +9038,7 @@ gsa-jegannathan:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-04-(24)~
+  sort_date: '2025-04-24'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9317,7 +9387,7 @@ detail-doge-dol-killian:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(13)~
+  sort_date: '2025-02-13'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9386,7 +9456,7 @@ detail-doge-ssa-killian:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(20)~
+  sort_date: '2025-02-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9762,7 +9832,7 @@ detail-opm-usda-kliger:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(01)~
+  sort_date: '2025-02-01'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10071,7 +10141,7 @@ detail-opm-ftc-kliger:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-03-(28)~
+  sort_date: '2025-03-28'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10132,6 +10202,76 @@ detail-opm-ftc-kliger:
     obj_type: Agency
   agency_ids:
   - FTC
+doge-kmiec:
+  id: doge-kmiec
+  type: appointed
+  agency_id: DOGE
+  name: Keenan Kmiec
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-02-(07)~
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: '2025-02-07'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  series:
+  supervisory:
+  office:
+  source: https://www.propublica.org/article/elon-musk-doge-lawyers-supreme-court
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  documents:
+  person:
+    name: Keenan Kmiec
+    sort_name: Kmiec
+    slug: keenan-kmiec
+    page_slug:
+    age: 45
+    background: crypto
+    category: support
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#keenan-kmiec"
+    comment:
+    table_note:
+    obj_type: Person
+  agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: doge
+    short_name: DOGE
+    doge_base: true
+    path: "/agencies/doge"
+    parent_id: EOP
+    obj_type: Agency
+  agency_ids:
+  - DOGE
+  - EOP
 ssa-employee-6:
   id: ssa-employee-6
   type: appointed
@@ -11174,7 +11314,7 @@ doge-lindemann:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(10)~
+  sort_date: '2025-02-10'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11451,7 +11591,7 @@ fbi-makecha:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-03-(30)~
+  sort_date: '2025-03-30'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11665,7 +11805,7 @@ gsa-malcher:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-04-(24)~
+  sort_date: '2025-04-24'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -11872,7 +12012,7 @@ gsa-mendelson:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-04-(25)~
+  sort_date: '2025-04-25'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12020,7 +12160,7 @@ detail-gsa-sec-mendelson:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-05-(02)~
+  sort_date: '2025-05-02'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -12387,7 +12527,7 @@ sec-mishory:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-04-(05)~
+  sort_date: '2025-04-05'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -14511,7 +14651,7 @@ detail-doge-energy-adam-ramada:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(04)~
+  sort_date: '2025-02-04'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15857,7 +15997,7 @@ gsa-frank-schuler:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(18)~
+  sort_date: '2025-02-18'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15888,7 +16028,7 @@ gsa-frank-schuler:
     page_slug:
     age:
     background:
-    category: support
+    category: unknown
     own_page: false
     blurb: >-
       A former partner in a real-estate investment firm in Atlanta, Frank Schuler was mentioned as one of Stephen Ehikian's pending appointments on January
@@ -16329,7 +16469,7 @@ gsa-schutt:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(18)~
+  sort_date: '2025-02-18'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -16398,7 +16538,7 @@ detail-gsa-dhs-schutt:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(19)~
+  sort_date: '2025-02-19'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -16705,7 +16845,7 @@ detail-gsa-nasa-sennott:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-03-(14)~
+  sort_date: '2025-03-14'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -18130,7 +18270,7 @@ detail-opm-doj-stanley:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-04-(02)~
+  sort_date: '2025-04-02'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -18421,7 +18561,7 @@ dot-stube:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-05-(07)~
+  sort_date: '2025-05-07'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -18490,7 +18630,7 @@ hud-sweet:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-04-(10)~
+  sort_date: '2025-04-10'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -19136,7 +19276,7 @@ doge-wick:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-01-(20)~
+  sort_date: '2025-01-20'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -19206,7 +19346,7 @@ detail-usda-wick:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(01)~
+  sort_date: '2025-02-01'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -19364,7 +19504,7 @@ detail-doge-dol-wick:
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-02-(13)~
+  sort_date: '2025-02-13'
   nte_date:
   nte_date_truth:
   signed_date:

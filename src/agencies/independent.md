@@ -12,8 +12,40 @@ Over the past decade, Congress has established multiple independent agencies tha
 - Once inside, DOGE will often move quickly to seize control of the agency's financial systems and emails. Staff are immediately placed on indefinite administrative leave to prevent them from acting against them or monitoring what happens. DOGE will then send emails to terminate a large portion of grants with the justification that they no longer "effectuate administration priorities"
 - DOGE will then proceed with plan to conduct a massive layoff (known as a Reduction in Force or RIF in government terminology) to reduce the agency to the bare minimum of staff needed to meet its "statutory requirements." Much like obscenity, this is a seemingly precise definition that is remarkably arbitrary and in some cases, DOGE have used this justification to reduce an agency to a single person. Thus far, these arguments have not prevailed in court, but DOGE is hoping for a lucky break on this in a higher appeals court or the Supreme Court. Regardless, the agency is left functionally inert and unable to fulfill any of its duties towards the American public.
 
-## The Consumer Financial Protection Bureau
+## Early Assaults
+
+### US Agency for International Development
+
+### The Consumer Financial Protection Bureau
 
 See the page for the {% agency_link('CFPB') %}
 
-## The Corporation for Public Broadcasting
+### The Corporation for Public Broadcasting
+
+## Condensed Timeline of Events
+
+{% independent_agencies = site.data.agencies.select {|a| a.page_slug == 'independent' }.map(&:id) %}
+{% events = site.data.events.select {|e| e.agency_ids.any? {|a_id| independent_agencies.include?(a_id) } }.sort_by(&:sort_date) %}
+{% last_date = nil %}
+
+<table class="table table-xs sm:table-sm zebra">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Agency</th>
+      <th>Event</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% events.each do |event| %}
+    <tr>
+      <td class="align-top">{% if event.sort_date != last_date %}
+        {{ render EdtfFormat.new(event.date, :compact) }}
+        {% last_date = event.sort_date %}
+      {% end %}</td>
+      <td class="align-top">{{ event.agency_ids | agencies | map: ->(a) {a.short_name} | sort | join: ", " }}</td>
+      <td class="align-top">{{ event.text }}</td>
+    </tr>
+  {% end %}
+  </tbody>
+</table>

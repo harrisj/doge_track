@@ -163,10 +163,12 @@
   - **James Burnham** (2025-01-(23)~) General Counsel
   - **Katie Miller** (2025-01-20)
   - **Elon Musk** (2025-01-20)
+  - **Steve Davis** (2025-01-20)
   - **Cole Killian** (2025-01-20)
   - **Adam Ramada** (2025-01-23)
   - **Alexandra Beynon** (2025-02-(04)~)
   - **Stephanie Holmes** (2025-02-(05)~)
+  - **Keenan Kmiec** (2025-02-(07)~)
   - **Kendall Lindemann** (2025-02-(10)~)
   - **Amy Gleason** (2025-02-18) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
   - **Joshua Hanley** (2025-02-XX)

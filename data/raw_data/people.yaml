@@ -12,6 +12,7 @@
   - id: dot-abrahamson
     type: appointed
     title: Senior Advisor
+    sort_date: 2025-03-20
     table_note: start date unknown but before 3/26
     source: https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2025/03/26/doge-assembles-a-legal-army-00251903
     agency: DOT
@@ -163,6 +164,7 @@
   positions:
   - id: dol-sam-beyda
     type: unknown
+    sort_date: 2025-02-13
     start_date: 2025-02-(13)~
     start_date_truth: reported
     comment: 3 other DOGE staff besides Ramada at agency on 2/5.
@@ -180,6 +182,7 @@
   - id: doge-beynon
     type: appointed
     agency: DOGE
+    sort_date: 2025-02-04
     start_date: 2025-02-(04)~
     start_date_truth: guessed
     table_note: date guessed, reported as detailing from DOGE to Education
@@ -408,6 +411,7 @@
   - id: doge-burnham
     agency: DOGE
     type: appointed
+    sort_date: 2025-01-23
     start_date: 2025-01-(23)~
     title: General Counsel
     table_note: NYT reported in DOGE in January, ProPublica provided title
@@ -461,6 +465,7 @@
     agency: NEH
     from: GSA
     from_truth: guessed
+    sort_date: 2025-03-13
     start_date: 2025-03-(13)~
     start_date_truth: verified
     table_note: Verified via court filing
@@ -581,6 +586,7 @@
     - gov.uscourts.nysd.636609.144.0
   - id: irs-corcos-cio
     type: promotion
+    sort_date: 2025-05-06
     start_date: 2025-05-(06)~
     start_date_truth: reported
     title: Chief Information Officer
@@ -601,6 +607,7 @@
     agency: GSA
     type: appointed
     salary: "$0"
+    sort_date: 2025-01-20
     start_date: 2025-01-(20)~
     start_date_truth: inferred
     table_note: Start date and agency inferred from later reporting
@@ -626,6 +633,7 @@
     agency: OPM
     from: GSA
     from_truth: reported
+    sort_date: 2025-01-28
     start_date: 2025-01-(28)~
     start_date_truth: reported
     reimbursed: false
@@ -646,6 +654,7 @@
     from: GSA
     from_truth: guessed
     agency: DHS
+    sort_date: 2025-02-04
     start_date: 2025-02-(04)~
     start_date_truth: reported
     table_note: Date unverified, but assuming predates sighting at FEMA
@@ -806,7 +815,13 @@
   age: 45
   background: executive
   category: leadership
-  positions: []
+  positions:
+  - id: doge-steve-davis
+    type: appointed
+    agency: DOGE
+    start_date: 2025-01-20
+    start_date_truth: inferred
+    table_note: assuming he started on 2025-01-20
 
 - name: Stephen Duarte
   sort_name: Duarte
@@ -841,7 +856,7 @@
   category: enabler
   positions:
   - id: ssa-dudek-commissioner
-    type: appointed
+    type: promotion
     title: Acting Commissioner
     agency: SSA
     start_date: 2025-02-16
@@ -939,6 +954,7 @@
   - id: dol-marko-elez
     type: appointed
     agency: DOL
+    sort_date: 2025-02-14
     start_date: 2025-02-(14)~
     start_date_truth: inferred
     comment: Marko is detailed from DOL to other agencies, so rehired there at some point in February
@@ -1069,6 +1085,7 @@
     from: GSA
     from_truth: guessed
     agency: Energy
+    sort_date: 2025-02-04
     start_date: 2025-02-(04)~
     start_date_truth: disputed
     end_date: 2025-02-(08)~
@@ -1190,6 +1207,7 @@
     agency: NEH
     from: GSA
     from_truth: guessed
+    sort_date: 2025-03-13
     start_date: 2025-03-(13)~
     start_date_truth: verified
     comment: Guessing GSA based on some past reporting
@@ -1209,7 +1227,7 @@
   age: 32
   background: coder
   category: wrecker
-  table_note: Unclear if started elsewhere
+  table_note: unclear if started elsewhere
   positions:
   - id: dod-fulcher
     type: detailed
@@ -1235,6 +1253,7 @@
   age: 34
   background: coder
   category: unknown
+  blurb: Reported as present in HHS in January by ProPublica, but there are no other details about his time there or what he was doing.
   positions:
   - id: hhs-gamache
     agency: HHS
@@ -1277,10 +1296,12 @@
 - name: Derek Geissler
   sort_name: Geissler
   slug: derek-geissler
+  blurb: Apart from a single report by NBC News placing him at the Department of Labor in mid-February, there are no public details about Derek Geissler.
   category: unknown
   positions:
   - id: dol-derek-geissler
     type: unknown
+    sort_date: 2025-02-13
     start_date: 2025-02-(13)~
     start_date_truth: reported
     comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
@@ -1587,6 +1608,7 @@
   positions:
   - id: doge-holmes
     type: appointed
+    sort_date: 2025-02-05
     start_date: 2025-02-(05)~
     start_date_truth: reported
     comment: Was added to the ProPublica tracker on 2025-02-06
@@ -1645,6 +1667,7 @@
   positions:
   - id: gsa-jegannathan
     type: appointed
+    sort_date: 2025-04-24
     start_date: 2025-04-(24)~
     start_date_truth: reported
     source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
@@ -1703,6 +1726,7 @@
     agency: EPA
   - id: detail-doge-dol-killian
     type: detailed
+    sort_date: 2025-02-13
     start_date: 2025-02-(13)~
     start_date_truth: reported
     comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
@@ -1710,6 +1734,7 @@
     agency: DOL
   - id: detail-doge-ssa-killian
     type: unknown
+    sort_date: 2025-02-20
     start_date: 2025-02-(20)~
     start_date_truth: reported
     comment: Identified as being at the agency on 2/20; unclear how long before
@@ -1774,6 +1799,7 @@
     from: OPM
     agency: USDA
     from_truth: guessed
+    sort_date: 2025-02-01
     start_date: 2025-02-(01)~
     start_date_truth: inferred
     office: Office of the Secretary
@@ -1830,6 +1856,7 @@
     type: detailed
     from: OPM
     from_truth: guessed
+    sort_date: 2025-03-28
     start_date: 2025-03-(28)~
     start_date_truth: reported
     comment: Title is not given, reported as starting "last week" from 2025-04-04
@@ -1842,7 +1869,14 @@
   age: 45
   background: crypto
   category: support
-  positions: []
+  positions:
+  - id: doge-kmiec
+    type: appointed
+    agency: DOGE
+    start_date: 2025-02-(07)~
+    start_date_truth: reported
+    sort_date: 2025-02-07
+    source: https://www.propublica.org/article/elon-musk-doge-lawyers-supreme-court
 
 - name: Jon Koval
   sort_name: Koval
@@ -2041,6 +2075,7 @@
   positions:
   - id: doge-lindemann
     type: appointed
+    sort_date: 2025-02-10
     start_date: 2025-02-(10)~
     start_date_truth: reported
     agency: DOGE
@@ -2098,6 +2133,7 @@
     type: detailed
     title: Senior Advisor
     office: Human Resources
+    sort_date: 2025-03-30
     start_date: 2025-03-(30)~
     start_date_truth: guessed
     comment: Tarak Makacha has reportedly shown up in FBI directories as a Senior Advisor to the agency's executive assistant director for human resources. He reportedly has been there since the end of March
@@ -2138,6 +2174,7 @@
   positions:
   - id: gsa-malcher
     type: appointed
+    sort_date: 2025-04-24
     start_date: 2025-04-(24)~
     start_date_truth: reported
     source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
@@ -2176,6 +2213,7 @@
   positions:
   - id: gsa-mendelson
     type: appointed
+    sort_date: 2025-04-25
     start_date: 2025-04-(25)~
     start_date_truth: inferred
     comment: Assuming a GSA start since named in NPR report as from GSA in detailing to other agencies
@@ -2193,6 +2231,7 @@
     type: detailed
     from: GSA
     from_truth: guessed
+    sort_date: 2025-05-02
     start_date: 2025-05-(02)~
     start_date_truth: reported
     source: https://www.reuters.com/sustainability/boards-policy-regulation/doge-expands-presence-wall-st-regulator-sources-say-2025-05-02/
@@ -2258,6 +2297,7 @@
   positions:
   - id: sec-mishory
     type: unknown
+    sort_date: 2025-04-05
     start_date: 2025-04-(05)~
     start_date_truth: reported
     comment: Reporting on 4/15 just says he arrived "earlier this month"
@@ -2630,6 +2670,7 @@
     from: DOGE
     from_truth: guessed
     agency: Energy
+    sort_date: 2025-02-04
     start_date: 2025-02-(04)~
     start_date_truth: disputed
     end_date: 2025-02-(08)~
@@ -2862,7 +2903,7 @@
 - name: Frank Schuler
   sort_name: Schuler
   slug: frank-schuler
-  category: support
+  category: unknown
   blurb: >-
     A former partner in a real-estate investment firm in Atlanta, Frank Schuler was mentioned as one of Stephen Ehikian's pending appointments on January 20th. He wasn't sighted in GSA until mid-February, when he appeared in a meeting and was introduced by Nate Cavanaugh. It's unclear what he is doing
     for DOGE inside of GSA.
@@ -2871,6 +2912,7 @@
     type: appointed
     title: Senior Advisor
     agency: GSA
+    sort_date: 2025-02-18
     start_date: 2025-02-(18)~
     start_date_truth: reported
     comment: Details from a news article
@@ -2921,6 +2963,7 @@
   - id: gsa-schutt
     type: appointed
     agency: GSA
+    sort_date: 2025-02-18
     start_date: 2025-02-(18)~
     start_date_truth: inferred
     salary: "$195,200"
@@ -2932,6 +2975,7 @@
     from: GSA
     from_truth: inferred
     agency: DHS
+    sort_date: 2025-02-19
     start_date: 2025-02-(19)~
     start_date_truth: reported
     comment: No details on this, but mentioned in NYT roundup. Assuming detail from GSA
@@ -2972,6 +3016,7 @@
     type: detailed
     from: GSA
     from_truth: guessed
+    sort_date: 2025-03-14
     start_date: 2025-03-(14)~
     start_date_truth: reported
     source: https://www.businessinsider.com/tesla-employee-alexander-simonpour-nasa-doge-team-2025-3
@@ -3247,6 +3292,7 @@
     type: detailed
     from: OPM
     from_truth: guessed
+    sort_date: 2025-04-02
     start_date: 2025-04-(02)~
     start_date_truth: reported
     title: Senior Advisor
@@ -3302,6 +3348,7 @@
   - id: dot-stube
     type: appointed
     name: Brian Stube
+    sort_date: 2025-05-07
     start_date: 2025-05-(07)~
     start_date_truth: reported
     fuzz: Appeared in the ProPublica roundup
@@ -3318,6 +3365,7 @@
   positions:
   - id: hud-sweet
     type: appointed
+    sort_date: 2025-04-10
     start_date: 2025-04-(10)~
     start_date_truth: reported
     fuzz: Date is unspecified, just sometime earlier in April
@@ -3433,6 +3481,7 @@
   - id: doge-wick
     type: appointed
     agency: DOGE
+    sort_date: 2025-01-20
     start_date: 2025-01-(20)~
     start_date_truth: guessed
     comment: No details, but guessing based on government declaration had been detailed from DOGE to CFPB
@@ -3441,6 +3490,7 @@
     from: DOGE
     from_truth: reported
     agency: USDA
+    sort_date: 2025-02-01
     start_date: 2025-02-(01)~
     start_date_truth: inferred
     comment: No details, but listed in a NYT roundup and adding here. USDA head said DOGE had been there a couple of weeks on 2/14
@@ -3460,6 +3510,7 @@
     type: detailed
     from: DOGE
     from_truth: inferred
+    sort_date: 2025-02-13
     start_date: 2025-02-(13)~
     start_date_truth: reported
     comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5. But was part of CFPB assault.

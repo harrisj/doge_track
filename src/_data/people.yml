@@ -32,7 +32,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: '2025-01-20'
+    sort_date: '2025-03-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -137,7 +137,7 @@
   system_access: []
   obj_type: Person
   start_date:
-  sort_date: '2025-01-20'
+  sort_date: '2025-03-20'
   start_agency: DOT
 - name: Justin Aimonetti
   sort_name: Aimonetti
@@ -2186,7 +2186,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-(13)~
+    sort_date: '2025-02-13'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -2271,7 +2271,7 @@
   system_access: []
   obj_type: Person
   start_date: 2025-02-(13)~
-  sort_date: 2025-02-(13)~
+  sort_date: '2025-02-13'
   start_agency: DOL
 - name: Alexandra Beynon
   sort_name: Beynon
@@ -2304,7 +2304,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-(04)~
+    sort_date: '2025-02-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -2498,7 +2498,7 @@
   system_access: []
   obj_type: Person
   start_date: 2025-02-(04)~
-  sort_date: 2025-02-(04)~
+  sort_date: '2025-02-04'
   start_agency: DOGE
 - name: Riccardo Biasini
   sort_name: Biasini
@@ -4587,7 +4587,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-01-(23)~
+    sort_date: '2025-01-23'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -4885,7 +4885,7 @@
   system_access: []
   obj_type: Person
   start_date: 2025-01-(23)~
-  sort_date: 2025-01-(23)~
+  sort_date: '2025-01-23'
   start_agency: DOGE
 - name: Nate Cavanaugh
   sort_name: Cavanaugh
@@ -5044,77 +5044,6 @@
       table_note:
       obj_type: Person
     obj_type: Position
-  - id: detail-gsa-neh-cavanaugh
-    type: detailed
-    agency_id: NEH
-    name: Nate Cavanaugh
-    doge_alias_id:
-    from_agency_id: GSA
-    from_truth: guessed
-    start_date: 2025-03-(13)~
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-03-(13)~
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
-    reimbursed:
-    reimbursement_amount:
-    comment:
-    qualifications:
-    table_note: Verified via court filing
-    documents:
-    duration_summary: from ~ Mar 13, 2025
-    agency:
-      agency_id: NEH
-      name: National Endowment for the Humanities
-      short_name: NEH
-    from_agency:
-      agency_id: GSA
-      name: General Services Administration
-      short_name: GSA
-    person:
-      name: Nate Cavanaugh
-      sort_name: Cavanaugh
-      slug: nate-cavanaugh
-      page_slug:
-      age: 28
-      background: executive
-      category: wrecker
-      own_page: false
-      blurb: >-
-        A former tech entrepeneur, Nate Cavanaugh was initially spotted as one of the DOGE staffers interviewing GSA federal staff to determine layoffs.
-        Since March however, he has been the de facto leader of DOGE's [sustained attacks against multiple independent agencies](/agencies/independent)
-        such as the NEH or IMLS. These attacks begin with Nate offering IT Modernization assistance from the GSA and then escalate through the White House
-        firing agency leadership and naming Nate (or an associate) as the new acting agency head. Once in power, he quickly places all employees on administrative
-        leave and starts firing staff and cancelling grants. Much like a vampire, if he shows up at the door of your agency, do not let him inside.
-      reporting_notes:
-      path: "/people#nate-cavanaugh"
-      comment:
-      table_note:
-      obj_type: Person
-    obj_type: Position
   - id: detail-gsa-usip-cavanaugh
     type: detailed
     agency_id: USIP
@@ -5161,6 +5090,77 @@
       agency_id: USIP
       name: US Institute of Peace
       short_name: USIP
+    from_agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Nate Cavanaugh
+      sort_name: Cavanaugh
+      slug: nate-cavanaugh
+      page_slug:
+      age: 28
+      background: executive
+      category: wrecker
+      own_page: false
+      blurb: >-
+        A former tech entrepeneur, Nate Cavanaugh was initially spotted as one of the DOGE staffers interviewing GSA federal staff to determine layoffs.
+        Since March however, he has been the de facto leader of DOGE's [sustained attacks against multiple independent agencies](/agencies/independent)
+        such as the NEH or IMLS. These attacks begin with Nate offering IT Modernization assistance from the GSA and then escalate through the White House
+        firing agency leadership and naming Nate (or an associate) as the new acting agency head. Once in power, he quickly places all employees on administrative
+        leave and starts firing staff and cancelling grants. Much like a vampire, if he shows up at the door of your agency, do not let him inside.
+      reporting_notes:
+      path: "/people#nate-cavanaugh"
+      comment:
+      table_note:
+      obj_type: Person
+    obj_type: Position
+  - id: detail-gsa-neh-cavanaugh
+    type: detailed
+    agency_id: NEH
+    name: Nate Cavanaugh
+    doge_alias_id:
+    from_agency_id: GSA
+    from_truth: guessed
+    start_date: 2025-03-(13)~
+    start_date_truth: verified
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-03-13'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    excepted:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    table_note: Verified via court filing
+    documents:
+    duration_summary: from ~ Mar 13, 2025
+    agency:
+      agency_id: NEH
+      name: National Endowment for the Humanities
+      short_name: NEH
     from_agency:
       agency_id: GSA
       name: General Services Administration
@@ -7089,7 +7089,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-05-(06)~
+    sort_date: '2025-05-06'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -7293,7 +7293,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-01-(20)~
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -7357,7 +7357,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-01-(28)~
+    sort_date: '2025-01-28'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -7386,74 +7386,6 @@
       agency_id: OPM
       name: Office of Personnel Management
       short_name: OPM
-    from_agency:
-      agency_id: GSA
-      name: General Services Administration
-      short_name: GSA
-    person:
-      name: Edward Coristine
-      sort_name: Coristine
-      slug: edward-coristine
-      page_slug:
-      age: 19
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb: >-
-        Perhaps the most famous of the DOGE wreckers, Edward "Big Balls" Coristine achieved early attention for joining DOGE at the young age of 19. Hoever,
-        he has also accrued a large number of hits on his wrecking spree across the federal government.
-      reporting_notes:
-      path: "/people#edward-coristine"
-      comment:
-      table_note:
-      obj_type: Person
-    obj_type: Position
-  - id: detail-gsa-dhs-coristine
-    type: detailed
-    agency_id: DHS
-    name: Edward Coristine
-    doge_alias_id:
-    from_agency_id: GSA
-    from_truth: guessed
-    start_date: 2025-02-(04)~
-    start_date_truth: reported
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-02-(04)~
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
-    reimbursed:
-    reimbursement_amount:
-    comment: Reported by the Post, I'm going to assume this predated the FEMA access
-    qualifications:
-    table_note: Date unverified, but assuming predates sighting at FEMA
-    documents:
-    duration_summary: from ~ Feb 04, 2025
-    agency:
-      agency_id: DHS
-      name: Department of Homeland Security
-      short_name: DHS
     from_agency:
       agency_id: GSA
       name: General Services Administration
@@ -7522,6 +7454,74 @@
       agency_id: SBA
       name: Small Business Administration
       short_name: SBA
+    from_agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
+    person:
+      name: Edward Coristine
+      sort_name: Coristine
+      slug: edward-coristine
+      page_slug:
+      age: 19
+      background: coder
+      category: wrecker
+      own_page: false
+      blurb: >-
+        Perhaps the most famous of the DOGE wreckers, Edward "Big Balls" Coristine achieved early attention for joining DOGE at the young age of 19. Hoever,
+        he has also accrued a large number of hits on his wrecking spree across the federal government.
+      reporting_notes:
+      path: "/people#edward-coristine"
+      comment:
+      table_note:
+      obj_type: Person
+    obj_type: Position
+  - id: detail-gsa-dhs-coristine
+    type: detailed
+    agency_id: DHS
+    name: Edward Coristine
+    doge_alias_id:
+    from_agency_id: GSA
+    from_truth: guessed
+    start_date: 2025-02-(04)~
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-02-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    excepted:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
+    reimbursed:
+    reimbursement_amount:
+    comment: Reported by the Post, I'm going to assume this predated the FEMA access
+    qualifications:
+    table_note: Date unverified, but assuming predates sighting at FEMA
+    documents:
+    duration_summary: from ~ Feb 04, 2025
+    agency:
+      agency_id: DHS
+      name: Department of Homeland Security
+      short_name: DHS
     from_agency:
       agency_id: GSA
       name: General Services Administration
@@ -9018,7 +9018,7 @@
     comment:
   obj_type: Person
   start_date: 2025-01-(20)~
-  sort_date: 2025-01-(20)~
+  sort_date: '2025-01-20'
   start_agency: GSA
 - name: Scott Coulter
   sort_name: Coulter
@@ -9730,7 +9730,69 @@
   path: "/people#steve-davis"
   comment:
   table_note:
-  positions: []
+  positions:
+  - id: doge-steve-davis
+    type: appointed
+    agency_id: DOGE
+    name: Steve Davis
+    doge_alias_id:
+    from_agency_id:
+    from_truth:
+    start_date: '2025-01-20'
+    start_date_truth: inferred
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-01-20'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    excepted:
+    title:
+    series:
+    supervisory:
+    office:
+    source:
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    table_note: assuming he started on 2025-01-20
+    documents:
+    duration_summary: from Jan 20, 2025
+    agency:
+      agency_id: DOGE
+      name: Department of Government Efficiency
+      short_name: DOGE
+    person:
+      name: Steve Davis
+      sort_name: Davis
+      slug: steve-davis
+      page_slug:
+      age: 45
+      background: executive
+      category: leadership
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#steve-davis"
+      comment:
+      table_note:
+      obj_type: Person
+    obj_type: Position
   events:
   - id: 8vDj2q7P
     type: directory
@@ -10230,7 +10292,9 @@
     aliases: []
   system_access: []
   obj_type: Person
+  start_date: '2025-01-20'
   sort_date: '2025-01-20'
+  start_agency: DOGE
 - name: Stephen Duarte
   sort_name: Duarte
   slug: stephen-duarte
@@ -10436,7 +10500,7 @@
   table_note:
   positions:
   - id: ssa-dudek-commissioner
-    type: appointed
+    type: promotion
     agency_id: SSA
     name: Leland Dudek
     doge_alias_id:
@@ -11239,7 +11303,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-(14)~
+    sort_date: '2025-02-14'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -13501,7 +13565,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-(04)~
+    sort_date: '2025-02-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -16204,7 +16268,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-03-(13)~
+    sort_date: '2025-03-13'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -16620,7 +16684,7 @@
   reporting_notes:
   path: "/people#justin-fulcher"
   comment:
-  table_note: Unclear if started elsewhere
+  table_note: unclear if started elsewhere
   positions:
   - id: dod-fulcher
     type: detailed
@@ -16681,7 +16745,7 @@
       reporting_notes:
       path: "/people#justin-fulcher"
       comment:
-      table_note: Unclear if started elsewhere
+      table_note: unclear if started elsewhere
       obj_type: Person
     obj_type: Position
   - id: dod-fulcher-advisor
@@ -16743,7 +16807,7 @@
       reporting_notes:
       path: "/people#justin-fulcher"
       comment:
-      table_note: Unclear if started elsewhere
+      table_note: unclear if started elsewhere
       obj_type: Person
     obj_type: Position
   events:
@@ -16849,7 +16913,7 @@
   background: coder
   category: unknown
   own_page: false
-  blurb:
+  blurb: Reported as present in HHS in January by ProPublica, but there are no other details about his time there or what he was doing.
   reporting_notes:
   path: "/people#mattieu-gamache"
   comment:
@@ -16910,7 +16974,7 @@
       background: coder
       category: unknown
       own_page: false
-      blurb:
+      blurb: Reported as present in HHS in January by ProPublica, but there are no other details about his time there or what he was doing.
       reporting_notes:
       path: "/people#mattieu-gamache"
       comment:
@@ -17134,7 +17198,7 @@
   background:
   category: unknown
   own_page: false
-  blurb:
+  blurb: Apart from a single report by NBC News placing him at the Department of Labor in mid-February, there are no public details about Derek Geissler.
   reporting_notes:
   path: "/people#derek-geissler"
   comment:
@@ -17157,7 +17221,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-(13)~
+    sort_date: '2025-02-13'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -17195,7 +17259,7 @@
       background:
       category: unknown
       own_page: false
-      blurb:
+      blurb: Apart from a single report by NBC News placing him at the Department of Labor in mid-February, there are no public details about Derek Geissler.
       reporting_notes:
       path: "/people#derek-geissler"
       comment:
@@ -17319,7 +17383,7 @@
   system_access: []
   obj_type: Person
   start_date: 2025-02-(13)~
-  sort_date: 2025-02-(13)~
+  sort_date: '2025-02-13'
   start_agency: DOL
 - name: Brady Glantz
   sort_name: Glantz
@@ -20107,7 +20171,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-(05)~
+    sort_date: '2025-02-05'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -20405,7 +20469,7 @@
     comment:
   obj_type: Person
   start_date: 2025-02-(05)~
-  sort_date: 2025-02-(05)~
+  sort_date: '2025-02-05'
   start_agency: DOGE
 - name: Jared Isaacman
   sort_name: Isaacman
@@ -20790,7 +20854,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-04-(24)~
+    sort_date: '2025-04-24'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -20839,7 +20903,7 @@
   system_access: []
   obj_type: Person
   start_date: 2025-04-(24)~
-  sort_date: 2025-04-(24)~
+  sort_date: '2025-04-24'
   start_agency: GSA
 - name: Erica Jehling
   sort_name: Jehling
@@ -21108,6 +21172,68 @@
       table_note:
       obj_type: Person
     obj_type: Position
+  - id: detaile-doge-epa-killian
+    type: detailed
+    agency_id: EPA
+    name: Cole Killian
+    doge_alias_id:
+    from_agency_id:
+    from_truth:
+    start_date: '2025-02-04'
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-02-04'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    excepted:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.eenews.net/articles/doge-aide-pops-up-in-epa-staff-directory/
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    table_note:
+    documents:
+    duration_summary: from Feb 04, 2025
+    agency:
+      agency_id: EPA
+      name: Environmental Protection Agency
+      short_name: EPA
+    person:
+      name: Cole Killian
+      sort_name: Killian
+      slug: cole-killian
+      page_slug:
+      age: 24
+      background: coder
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#cole-killian"
+      comment:
+      table_note:
+      obj_type: Person
+    obj_type: Position
   - id: detail-doge-dol-killian
     type: detailed
     agency_id: DOL
@@ -21125,7 +21251,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-(13)~
+    sort_date: '2025-02-13'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -21187,7 +21313,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-(20)~
+    sort_date: '2025-02-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -21216,68 +21342,6 @@
       agency_id: SSA
       name: Social Security Administration
       short_name: SSA
-    person:
-      name: Cole Killian
-      sort_name: Killian
-      slug: cole-killian
-      page_slug:
-      age: 24
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#cole-killian"
-      comment:
-      table_note:
-      obj_type: Person
-    obj_type: Position
-  - id: detaile-doge-epa-killian
-    type: detailed
-    agency_id: EPA
-    name: Cole Killian
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-02-04'
-    start_date_truth: reported
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-04'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.eenews.net/articles/doge-aide-pops-up-in-epa-staff-directory/
-    reimbursed:
-    reimbursement_amount:
-    comment:
-    qualifications:
-    table_note:
-    documents:
-    duration_summary: from Feb 04, 2025
-    agency:
-      agency_id: EPA
-      name: Environmental Protection Agency
-      short_name: EPA
     person:
       name: Cole Killian
       sort_name: Killian
@@ -21660,7 +21724,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-(01)~
+    sort_date: '2025-02-01'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -21922,7 +21986,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-03-(28)~
+    sort_date: '2025-03-28'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -23125,7 +23189,69 @@
   path: "/people#keenan-kmiec"
   comment:
   table_note:
-  positions: []
+  positions:
+  - id: doge-kmiec
+    type: appointed
+    agency_id: DOGE
+    name: Keenan Kmiec
+    doge_alias_id:
+    from_agency_id:
+    from_truth:
+    start_date: 2025-02-(07)~
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-02-07'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    excepted:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.propublica.org/article/elon-musk-doge-lawyers-supreme-court
+    reimbursed:
+    reimbursement_amount:
+    comment:
+    qualifications:
+    table_note:
+    documents:
+    duration_summary: from ~ Feb 07, 2025
+    agency:
+      agency_id: DOGE
+      name: Department of Government Efficiency
+      short_name: DOGE
+    person:
+      name: Keenan Kmiec
+      sort_name: Kmiec
+      slug: keenan-kmiec
+      page_slug:
+      age: 45
+      background: crypto
+      category: support
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#keenan-kmiec"
+      comment:
+      table_note:
+      obj_type: Person
+    obj_type: Position
   events:
   - id: KLhbExN5
     type: action
@@ -23210,7 +23336,9 @@
     aliases: []
   system_access: []
   obj_type: Person
-  sort_date: '2025-01-20'
+  start_date: 2025-02-(07)~
+  sort_date: '2025-02-07'
+  start_agency: DOGE
 - name: Jon Koval
   sort_name: Koval
   slug: jon-koval
@@ -25624,7 +25752,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-(10)~
+    sort_date: '2025-02-10'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -25697,7 +25825,7 @@
   system_access: []
   obj_type: Person
   start_date: 2025-02-(10)~
-  sort_date: 2025-02-(10)~
+  sort_date: '2025-02-10'
   start_agency: DOGE
 - name: Kathryn Armstrong Loving
   sort_name: Loving
@@ -26174,70 +26302,6 @@
   comment:
   table_note:
   positions:
-  - id: fbi-makecha
-    type: detailed
-    agency_id: FBI
-    name: Tarak Makecha
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: 2025-03-(30)~
-    start_date_truth: guessed
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-03-(30)~
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title: Senior Advisor
-    series:
-    supervisory:
-    office: Human Resources
-    source: https://theintercept.com/2025/04/18/doge-tesla-employee-justice-department-fbi/
-    reimbursed:
-    reimbursement_amount:
-    comment: >-
-      Tarak Makacha has reportedly shown up in FBI directories as a Senior Advisor to the agency's executive assistant director for human resources. He
-      reportedly has been there since the end of March
-    qualifications:
-    table_note:
-    documents:
-    duration_summary: from ~ Mar 30, 2025
-    agency:
-      agency_id: FBI
-      name: Federal Bureau of Investigation
-      short_name: FBI
-    person:
-      name: Tarak Makecha
-      sort_name: Makecha
-      slug: tarak-makecha
-      page_slug:
-      age:
-      background:
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#tarak-makecha"
-      comment:
-      table_note:
-      obj_type: Person
-    obj_type: Position
   - id: opm-makecha
     type: appointed
     agency_id: OPM
@@ -26284,6 +26348,70 @@
       agency_id: OPM
       name: Office of Personnel Management
       short_name: OPM
+    person:
+      name: Tarak Makecha
+      sort_name: Makecha
+      slug: tarak-makecha
+      page_slug:
+      age:
+      background:
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#tarak-makecha"
+      comment:
+      table_note:
+      obj_type: Person
+    obj_type: Position
+  - id: fbi-makecha
+    type: detailed
+    agency_id: FBI
+    name: Tarak Makecha
+    doge_alias_id:
+    from_agency_id:
+    from_truth:
+    start_date: 2025-03-(30)~
+    start_date_truth: guessed
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-03-30'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    excepted:
+    title: Senior Advisor
+    series:
+    supervisory:
+    office: Human Resources
+    source: https://theintercept.com/2025/04/18/doge-tesla-employee-justice-department-fbi/
+    reimbursed:
+    reimbursement_amount:
+    comment: >-
+      Tarak Makacha has reportedly shown up in FBI directories as a Senior Advisor to the agency's executive assistant director for human resources. He
+      reportedly has been there since the end of March
+    qualifications:
+    table_note:
+    documents:
+    duration_summary: from ~ Mar 30, 2025
+    agency:
+      agency_id: FBI
+      name: Federal Bureau of Investigation
+      short_name: FBI
     person:
       name: Tarak Makecha
       sort_name: Makecha
@@ -26478,9 +26606,9 @@
     aliases: []
   system_access: []
   obj_type: Person
-  start_date: 2025-03-(30)~
-  sort_date: 2025-03-(30)~
-  start_agency: FBI
+  start_date: 2025-03-XX
+  sort_date: '2025-03-15'
+  start_agency: OPM
 - name: Ted Malaska
   sort_name: Malaska
   slug: ted-malaska
@@ -26626,7 +26754,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-04-(24)~
+    sort_date: '2025-04-24'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -26675,7 +26803,7 @@
   system_access: []
   obj_type: Person
   start_date: 2025-04-(24)~
-  sort_date: 2025-04-(24)~
+  sort_date: '2025-04-24'
   start_agency: GSA
 - name: Peter Marocco
   sort_name: Marocco
@@ -26957,7 +27085,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-04-(25)~
+    sort_date: '2025-04-25'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -27085,7 +27213,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-05-(02)~
+    sort_date: '2025-05-02'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -27255,7 +27383,7 @@
   system_access: []
   obj_type: Person
   start_date: 2025-04-(25)~
-  sort_date: 2025-04-(25)~
+  sort_date: '2025-04-25'
   start_agency: GSA
 - name: Katie Miller
   sort_name: Miller
@@ -27904,7 +28032,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-04-(05)~
+    sort_date: '2025-04-05'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -27977,7 +28105,7 @@
   system_access: []
   obj_type: Person
   start_date: 2025-04-(05)~
-  sort_date: 2025-04-(05)~
+  sort_date: '2025-04-05'
   start_agency: SEC
 - name: Bryanne-Michelle Mlodzianowski
   sort_name: Mlodzianowski
@@ -32132,7 +32260,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-(04)~
+    sort_date: '2025-02-04'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -35319,7 +35447,7 @@
   page_slug:
   age:
   background:
-  category: support
+  category: unknown
   own_page: false
   blurb: >-
     A former partner in a real-estate investment firm in Atlanta, Frank Schuler was mentioned as one of Stephen Ehikian's pending appointments on January
@@ -35347,7 +35475,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-(18)~
+    sort_date: '2025-02-18'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -35383,7 +35511,7 @@
       page_slug:
       age:
       background:
-      category: support
+      category: unknown
       own_page: false
       blurb: >-
         A former partner in a real-estate investment firm in Atlanta, Frank Schuler was mentioned as one of Stephen Ehikian's pending appointments on January
@@ -35450,7 +35578,7 @@
   system_access: []
   obj_type: Person
   start_date: 2025-02-(18)~
-  sort_date: 2025-02-(18)~
+  sort_date: '2025-02-18'
   start_agency: GSA
 - name: Kyle Schutt
   sort_name: Schutt
@@ -35483,7 +35611,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-(18)~
+    sort_date: '2025-02-18'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -35509,72 +35637,6 @@
     documents:
     duration_summary: from ~ Feb 18, 2025
     agency:
-      agency_id: GSA
-      name: General Services Administration
-      short_name: GSA
-    person:
-      name: Kyle Schutt
-      sort_name: Schutt
-      slug: kyle-schutt
-      page_slug:
-      age: 37
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#kyle-schutt"
-      comment:
-      table_note:
-      obj_type: Person
-    obj_type: Position
-  - id: detail-gsa-dhs-schutt
-    type: detailed
-    agency_id: DHS
-    name: Kyle Schutt
-    doge_alias_id:
-    from_agency_id: GSA
-    from_truth: inferred
-    start_date: 2025-02-(19)~
-    start_date_truth: reported
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-02-(19)~
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
-    reimbursed:
-    reimbursement_amount:
-    comment: No details on this, but mentioned in NYT roundup. Assuming detail from GSA
-    qualifications:
-    table_note:
-    documents:
-    duration_summary: from ~ Feb 19, 2025
-    agency:
-      agency_id: DHS
-      name: Department of Homeland Security
-      short_name: DHS
-    from_agency:
       agency_id: GSA
       name: General Services Administration
       short_name: GSA
@@ -35644,6 +35706,72 @@
       agency_id: DHS
       name: Department of Homeland Security
       short_name: DHS
+    person:
+      name: Kyle Schutt
+      sort_name: Schutt
+      slug: kyle-schutt
+      page_slug:
+      age: 37
+      background: coder
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#kyle-schutt"
+      comment:
+      table_note:
+      obj_type: Person
+    obj_type: Position
+  - id: detail-gsa-dhs-schutt
+    type: detailed
+    agency_id: DHS
+    name: Kyle Schutt
+    doge_alias_id:
+    from_agency_id: GSA
+    from_truth: inferred
+    start_date: 2025-02-(19)~
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-02-19'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    excepted:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
+    reimbursed:
+    reimbursement_amount:
+    comment: No details on this, but mentioned in NYT roundup. Assuming detail from GSA
+    qualifications:
+    table_note:
+    documents:
+    duration_summary: from ~ Feb 19, 2025
+    agency:
+      agency_id: DHS
+      name: Department of Homeland Security
+      short_name: DHS
+    from_agency:
+      agency_id: GSA
+      name: General Services Administration
+      short_name: GSA
     person:
       name: Kyle Schutt
       sort_name: Schutt
@@ -36385,7 +36513,7 @@
     comment:
   obj_type: Person
   start_date: 2025-02-(18)~
-  sort_date: 2025-02-(18)~
+  sort_date: '2025-02-18'
   start_agency: GSA
 - name: Riley Sennott
   sort_name: Sennott
@@ -36480,7 +36608,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-03-(14)~
+    sort_date: '2025-03-14'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -39057,7 +39185,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-04-(02)~
+    sort_date: '2025-04-02'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -39514,7 +39642,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-05-(07)~
+    sort_date: '2025-05-07'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -39563,7 +39691,7 @@
   system_access: []
   obj_type: Person
   start_date: 2025-05-(07)~
-  sort_date: 2025-05-(07)~
+  sort_date: '2025-05-07'
   start_agency: DOT
 - name: Christopher Sweet
   sort_name: Sweet
@@ -39598,7 +39726,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-04-(10)~
+    sort_date: '2025-04-10'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -39739,7 +39867,7 @@
   system_access: []
   obj_type: Person
   start_date: 2025-04-(10)~
-  sort_date: 2025-04-(10)~
+  sort_date: '2025-04-10'
   start_agency: HUD
 - name: Zach Terrell
   sort_name: Terrell
@@ -40922,7 +41050,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-01-(20)~
+    sort_date: '2025-01-20'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -40984,7 +41112,7 @@
     end_date_event:
     end_source:
     end_source_name:
-    sort_date: 2025-02-(01)~
+    sort_date: '2025-02-01'
     nte_date:
     nte_date_truth:
     signed_date:
@@ -41013,72 +41141,6 @@
       agency_id: USDA
       name: Department of Agriculture
       short_name: USDA
-    from_agency:
-      agency_id: DOGE
-      name: Department of Government Efficiency
-      short_name: DOGE
-    person:
-      name: Jordan Wick
-      sort_name: Wick
-      slug: jordan-wick
-      page_slug:
-      age: 28
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#jordan-wick"
-      comment:
-      table_note:
-      obj_type: Person
-    obj_type: Position
-  - id: detail-doge-dol-wick
-    type: detailed
-    agency_id: DOL
-    name: Jordan Wick
-    doge_alias_id:
-    from_agency_id: DOGE
-    from_truth: inferred
-    start_date: 2025-02-(13)~
-    start_date_truth: reported
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: 2025-02-(13)~
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
-    reimbursed:
-    reimbursement_amount:
-    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5. But was part of CFPB assault.
-    qualifications:
-    table_note:
-    documents:
-    duration_summary: from ~ Feb 13, 2025
-    agency:
-      agency_id: DOL
-      name: Department of Labor
-      short_name: DOL
     from_agency:
       agency_id: DOGE
       name: Department of Government Efficiency
@@ -41145,6 +41207,72 @@
       agency_id: CFPB
       name: Consumer Financial Protection Bureau
       short_name: CFPB
+    from_agency:
+      agency_id: DOGE
+      name: Department of Government Efficiency
+      short_name: DOGE
+    person:
+      name: Jordan Wick
+      sort_name: Wick
+      slug: jordan-wick
+      page_slug:
+      age: 28
+      background: coder
+      category: wrecker
+      own_page: false
+      blurb:
+      reporting_notes:
+      path: "/people#jordan-wick"
+      comment:
+      table_note:
+      obj_type: Person
+    obj_type: Position
+  - id: detail-doge-dol-wick
+    type: detailed
+    agency_id: DOL
+    name: Jordan Wick
+    doge_alias_id:
+    from_agency_id: DOGE
+    from_truth: inferred
+    start_date: 2025-02-(13)~
+    start_date_truth: reported
+    start_date_event:
+    start_source:
+    start_source_name:
+    end_date:
+    end_date_truth:
+    end_date_event:
+    end_source:
+    end_source_name:
+    sort_date: '2025-02-13'
+    nte_date:
+    nte_date_truth:
+    signed_date:
+    description:
+    fuzz:
+    appt_type_code:
+    appt_type:
+    pay_grade:
+    salary:
+    pd_code:
+    sge:
+    excepted:
+    title:
+    series:
+    supervisory:
+    office:
+    source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
+    reimbursed:
+    reimbursement_amount:
+    comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5. But was part of CFPB assault.
+    qualifications:
+    table_note:
+    documents:
+    duration_summary: from ~ Feb 13, 2025
+    agency:
+      agency_id: DOL
+      name: Department of Labor
+      short_name: DOL
     from_agency:
       agency_id: DOGE
       name: Department of Government Efficiency
@@ -41864,7 +41992,7 @@
     comment:
   obj_type: Person
   start_date: 2025-01-(20)~
-  sort_date: 2025-01-(20)~
+  sort_date: '2025-01-20'
   start_agency: DOGE
 - name: Joanna Wischer
   sort_name: Wischer

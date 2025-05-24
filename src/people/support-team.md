@@ -1,10 +1,11 @@
 ---
 layout: 'page'
+title: The Support Team
 ---
 {% import 'macros' %}
 {%@ "title", title: "The Support Team" %}
 
-If we can think of the [Wreckers]({{% link "topics/wreckers.md" }}) as the offense for DOGE, there are a large number of staff that support their operations. The main group is at OPM
+If we can think of the [Wreckers]({{% link "people/wreckers.md" }}) as the offense for DOGE, there are a large number of staff that support their operations. The main group is at OPM
 
 {% support_team = site.data.people.select { |c| c.category == 'support'}.sort_by(&:sort_date) %}
 <table class="table is-size-5">
@@ -19,16 +20,13 @@ If we can think of the [Wreckers]({{% link "topics/wreckers.md" }}) as the offen
   </thead>
   <tbody>
   {% support_team.each do | person|  %}
-    {% pos = person.positions.find {|x| x.type == 'appointed'} %}
-    {% if pos %}
     <tr>
-      <td>{% person_link(person) %}</td>
+      <td>{{ person_link(person.name) }}</td>
       <td>{{ person.age }}</td>
-      <td>{% agency_link(pos.agency_id) %}</td>
-      <td>{% person.start_date %}</td>
-      <td>{{ pos.title }}</td>
+      <td>{{ agency_link(person.start_agency ) }}</td>
+      <td>{{ render EdtfFormat.new(person.start_date, :compact, :filled) }}</td>
+      <td>{% if person.positions.any? %}{{ position_summary(person.positions.first) }}{% end %}</td>
     </tr>
-  {% end %}
   {% end %}
   </tbody>
 </table>

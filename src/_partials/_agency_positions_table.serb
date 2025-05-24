@@ -1,57 +1,22 @@
 {% import "macros" %}
 
-{% macro "pos_type_display" do |pos| 
-    case pos.type
-    when 'detailed'
-      "Detail"
-    when 'internal'
-      "Transfer"
-    when 'appointed'
-      "Appointed"
-    when 'consultant'
-      "Consultant"
-    else
-      pos.type.titleize
-    end
-  end
-%}
-
-{% macro "pos_notes" do |pos| 
-    case pos.type
-    when 'detailed'
-    when 'consultant'
-    when 'appointed'
-    when 'internal'
-    when 'unknown'
-      '(no public details)'
-    else
-      ''
-    end
-  end
-%}
-
-{% macro "pos_from_to" do |pos|
-   if pos.type == 'detailed' && pos.from_agency_id
-      "<span class=\"icon-text\"><span class=\"icon\"><i class=\"fa-solid fa-arrow-left\"></i></span> #{ agency_link(pos.from_agency_id) }</span>".html_safe
-    elsif pos.type == 'transfer'
-      "".html_safe
-    else
-      ""
-   end
-  end
-%}
-
-<table class="table table-sm">
-  <tbody>
-  {% positions.sort_by {|p| p.sort_date}.each do |pos| %}
-    <tr>
-      <td>{{ pos.start_date }}</td>
-      <td>{{ pos.end_date }}</td>
-      <td>{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.alias %}<a href="/topics/aliases">{{ pos.alias.id }}</a>{% end %}</td>
-      <td>{{ pos_type_display(pos) }}</td>
-      <td>{{ position_move(pos) }}</td>
-      <td></td>
+<table class="mt-4 sm:table-fixed table-xs sm:table-sm lg:table-md border-4">
+  <thead>
+  <tr>
+    <th class="sm:w-1/8 text-left">Date</th>
+    <th class="sm:w-1/8 text-left">Position</th>
+    <th class="sm:w-1/4 text-left">Person</th>
+    <th class="text-left">Notes</th>
+  </tr>
+  </thead>
+  <tbody class="">
+    {% positions.each do |pos| %}
+    <tr class="font-mono">
+      <td class="align-top">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }} - {{ render EdtfFormat.new(pos.end_date, :compact) }}{% else %}-{% end %}</td>
+      <td class="align-top text-left"><nobr>{{ position_move(pos) }}</nobr></td>
+      <td class="align-top">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.alias %}<a href="/topics/aliases">{{ pos.alias.id }}</a>{% end %}</td>
+      <td class="align-top">{{ position_summary(pos) }}</td>
     </tr>
-  {% end %}
+    {% end %}
   </tbody>
 </table>

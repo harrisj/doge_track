@@ -93,9 +93,9 @@
 - positions:
     -  **GSA** (2025-02-03 to ??)  $120,500
     -  **USADF** (2025-02-21 to 2025-03-06) 
+    -  **USIP** (2025-03-04 to 2025-03-24) 
     -  **NEH** (2025-03-(13)~ to ??) 
         - Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
-    -  **USIP** (2025-03-04 to 2025-03-24) 
     -  **USIP** (2025-03-25 to ??) President
     -  **IMLS** (2025-03-31 to ??) 
     -  **NLRB** (2025-04-16 to ??) 
@@ -134,8 +134,8 @@
 - positions:
     -  **GSA** (2025-01-(20)~ to ??)  volunteer
     -  **OPM** (2025-01-(28)~ to ??) 
-    -  **DHS** (2025-02-(04)~ to ??) 
     -  **SBA** (2025-02-03 to ??) 
+    -  **DHS** (2025-02-(04)~ to ??) 
     -  **FEMA** (2025-02-05 to ??) 
         - FEMA-Go: FEMA Grants Outcomes: 2025-02-07 - ongoing
     -  **State** (2025-02-10 to ??) Senior Advisor
@@ -166,6 +166,8 @@
 
 # Steve Davis
 - category: leadership
+- positions:
+    -  **DOGE** (2025-01-20 to ??) 
 
 # Stephen Duarte
 - category: support
@@ -413,10 +415,10 @@
 - category: wrecker
 - positions:
     -  **DOGE** (2025-01-20 to ??) 
-    -  **DOL** (2025-02-(13)~ to ??) 
-    -  **SSA** (2025-02-(20)~ to ??) 
     -  **EPA** (2025-02-04 to ??) 
         - EAS: EPA Acquisition System: 2025-02-12 - ongoing
+    -  **DOL** (2025-02-(13)~ to ??) 
+    -  **SSA** (2025-02-(20)~ to ??) 
 
 # Gavin Kliger
 - category: wrecker
@@ -440,6 +442,8 @@
 
 # Keenan Kmiec
 - category: support
+- positions:
+    -  **DOGE** (2025-02-(07)~ to ??) 
 
 # Jon Koval
 - category: wrecker
@@ -514,8 +518,8 @@
 # Tarak Makecha
 - category: wrecker
 - positions:
-    -  **FBI** (2025-03-(30)~ to ??) Senior Advisor
     -  **OPM** (2025-03-XX to ??) Senior Advisor
+    -  **FBI** (2025-03-(30)~ to ??) Senior Advisor
     -  **FCC** (2025-04-04 to ??) 
 
 # Ted Malaska
@@ -717,7 +721,7 @@
     -  **OPM** (2025-01-20 to ??) **Chief of Staff**
 
 # Frank Schuler
-- category: support
+- category: unknown
 - positions:
     -  **GSA** (2025-02-(18)~ to ??) Senior Advisor
 
@@ -861,7 +865,6 @@
 - positions:
     -  **DOGE** (2025-01-(20)~ to ??) 
     -  **USDA** (2025-02-(01)~ to ??) 
-    -  **DOL** (2025-02-(13)~ to ??) 
     -  **CFPB** (2025-02-07 to 2025-03-04) 
         - Concur: 2025-02-07 - 2025-03-28
         - Data Insight: 2025-02-07 - 2025-03-28
@@ -874,6 +877,7 @@
         - USA Staffing: 2025-02-07 - 2025-03-28
         - webTA: 2025-02-07 - ongoing
         - Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
+    -  **DOL** (2025-02-(13)~ to ??) 
     -  **Education** (2025-02-20 to ??) 
     -  **CFPB** (2025-03-05 to ??) Expert/Consultant
         - Concur: 2025-02-07 - 2025-03-28
