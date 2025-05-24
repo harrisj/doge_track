@@ -198,6 +198,10 @@ end %}
     type_str = case pos.type
       when 'other'
         nil
+      when 'promotion'
+        'promoted'
+      when 'demotion'
+        'demoted'
       when 'internal'
         'internal xfer'
       else
@@ -234,6 +238,10 @@ end %}
     end
 
     out_str = [type_str, title_str, hire_str, note_str].map {|x| x.blank? ? nil : x }.compact.map {|x| "<span>#{x}</span>"}.join(" ")
+
+    if pos.source && out_str
+      out_str += " <nobr>[<a href=\"#{pos.source}\ alt=\"Link to Source\"><i class=\"fa-solid fa-link\"></i></a>]</nobr>"
+    end
 
     out_str.html_safe
    end

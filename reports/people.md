@@ -47,7 +47,7 @@
 # Riccardo Biasini
 - category: support
 - positions:
-    -  **OPM** (2025-01-20 to NTE 2025-07-18) Expert ED-00 volunteer
+    -  **OPM** (2025-01-20 to NTE 2025-07-18) [as "OPM-2"] Expert ED-00 volunteer
 
 # Jared Birchall
 - category: booster

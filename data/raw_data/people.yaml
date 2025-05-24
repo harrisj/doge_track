@@ -177,6 +177,7 @@
   slug: alexandra-beynon
   age: 36
   background: coder
+  blurb: Not much is known about Alexandra Beynon's work on behalf of DOGE at the Department of Education. Prior to that, she worked as the head of engineering at her husband's startup company which sold guided ketamine therapy for use in the home.
   category: wrecker
   positions:
   - id: doge-beynon
@@ -186,6 +187,7 @@
     start_date: 2025-02-(04)~
     start_date_truth: guessed
     table_note: date guessed, reported as detailing from DOGE to Education
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Alexandra-T--Beynon
     comment: FIXME, find earliest details of arrival; is she GSA?
   - id: detail-doge-education-alexandra-beynon
     type: detailed
@@ -196,7 +198,7 @@
     agency: Education
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
     comment: Details just provided in court testimony
-    table_note: info in govt legal filing
+    table_note: info from a govt legal filing
     documents:
     - doge-staff-education-20250407
 
@@ -206,8 +208,11 @@
   age: 39
   background: executive
   category: support
+  blurb: >-
+    Riccardo Biasini is an executive and software engineer who has worked at both Tesla and the Boring Company, both of which are Musk-owned businesses. Since joining the DOGE staff at OPM on January 20th, he has largely been focused on personnel-related initiatives like modernizing an "AutoRIF" system
+    for automating layoffs at agencies. As a software developer, he likely has been connected to other initiatives like the Fork in the Road or the Five Things emails, but he has kept a lower profile than other engineers.
   positions:
-  - id: opm-riccardo-biasini
+  - id: opm-employee-2
     type: appointed
     agency: OPM
     start_date: 2025-01-20
@@ -230,6 +235,8 @@
     documents:
     - opm-foia-doge-positions
     - onboard-opm-employee-2
+    name: Riccardo Biasini
+    alias: OPM-2
 
 - name: Jared Birchall
   sort_name: Birchall
@@ -854,6 +861,10 @@
   sort_name: Dudek
   background: political
   category: enabler
+  blurb: >-
+    DOGE is only able to subvert agencies when it has the explicit cooperation and support of senior leadership there. Nobody better exemplifies than Leland Dudek, who was a relatively minor supervisor within Social Security before he was placed on leave for insubordination by giving DOGE access without
+    authorization. Soon, he was rewarded for his defiance by being named Acting Commissioner for the agency after the Trump administration fired the existing commissioner. Once elevated into that spot, he used all his powers to prioritize access for DOGE staff until a federal judge finally ordered him
+    to stop.
   positions:
   - id: ssa-dudek-commissioner
     type: promotion
@@ -1010,6 +1021,10 @@
   age: 23
   background: coder
   category: wrecker
+  blurb: >-
+    Although he doesn't have the same brash presence as his collegues Edward Coristine or Gavin Kliger, Luke Farritor has proven to be one of the most ruthless operatives among the DOGE wreckers. From the start, he has been dispatched to multiple agencies from the GSA with the sole purpose of seizing
+    control of their spending mechanisms (through grants or direct expenditures). At HHS, he has admin control of Grants.gov, which is used by 18 agencies to issue grants. And, at USAID, he worked with Gavin Kliger to completely lock out agency staff from being able to disburse funds, freezing millions
+    in grants and making him directly responsible for likely [hundreds of thousands of deaths](https://www.bu.edu/sph/news/articles/2025/tracking-anticipated-deaths-from-usaid-funding-cuts/) worldwide.
   positions:
   - id: detail-gsa-dhs-farritor
     type: detailed

@@ -595,7 +595,7 @@
 - people:
   - **Edward Coristine** (2025-01-(28)~) (detailed from GSA)
   - **Anthony Armstrong** (2025-01-20) Expert
-  - **Riccardo Biasini** (2025-01-20) Expert
+  - **OPM-2 (Riccardo Biasini)** (2025-01-20) Expert
   - **Brian Bjelde** (2025-01-20) Expert
   - **OPM-3 (Akash Bobba)** (2025-01-20) Expert
   - **Clayton Cromer** (2025-01-20) Deputy General Counsel

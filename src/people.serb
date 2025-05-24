@@ -6,15 +6,27 @@ description: An alphabetical listing of all the people being tracked as part of 
 {% people = site.data.people.sort_by(&:sort_name) %}
 {%@ 'title', title: "Who's Involved in DOGE" %}
 
-<div class="rose prose-sm sm:prose-base md:prose-md lg:prose-lg prose-stone prose-li:m-[0.1em] dark:prose-invert mb-2">
+<div class="prose prose-sm sm:prose-base md:prose-md lg:prose-lg prose-stone prose-li:m-[0.1em] dark:prose-invert mb-2">
 <p>This page provides a single overview of everybody who is is my database of DOGE affiliates. To better understand the roles of each person, I have sorted them into several distinct categories which are displayed here as icons and text:</p>
 
 <p><ul>
-<li> <strong>Boosters</strong> are people in DOGE's orbit who have helped with recruitment and its formation</li>
-<li><strong>Enablers</strong> are staff embedded in agencies who work to open the door for wreckers to come in. They are not always DOGE hires.</li>
-<li><strong>Leadership</strong> are the identified leaders of the operation</li>
-<li><strong>Support</strong> are the home team, largely based in DOGE and OPM and there to support operations</li>
-<li><strong>Wreckers</strong> are the away team and the muscle, dispatched to descend on agencies to infiltrate operations, exfiltrate data and possibly destroy entirely</li>
+<li> <strong>{{ link_to "Boosters", "/people/leaders.md" }}</strong> are people in DOGE's orbit who have helped with recruitment and its formation</li>
+<li><strong>{{ link_to "Enablers", "/people/enablers.md" }}</strong> are staff embedded in agencies who work to open the door for wreckers to come in. They are not always DOGE hires.</li>
+<li><strong>{{ link_to "Leaders", "/people/leaders.md" }}</strong> are the identified and hidden leaders of the operation</li>
+<li><strong>{{ link_to "Support", "/people/support-team.md" }}</strong> are the home team, largely based in DOGE and OPM and there to support operations</li>
+<li><strong>{{ link_to "Wreckers", "/people/wreckers.md" }}</strong> are the away team and the muscle, dispatched to descend on agencies to infiltrate operations, exfiltrate data and possibly destroy entirely</li>
+</ul></p>
+
+<p>First, a note on some government-specific terms that you might encounter in this table:</p>
+
+<p><ul>
+<li><em>Detail</em> is the government term for when an employee (or <em>detailee</em>) of one agency goes to work at another agency</li>
+<li><em>Excepted</em> means that the person was hired on an expedited and limited authority vs. the standard (aka <em>competitive</em>) hiring model. Usually, excepted appointments have limitations of a few years.</li>
+<li>A <em>Special Government Employee (SGE)</em> is someone hired on an extremely short-term basis (less than 180 days), but who, on the other hand,doesn't have to follow the standard government ethics rules.</li>
+<li>The <em>General Scale (GS)</em> is a series of 15 different pay levels (each with 10 steps) that standardize government pay for employees; there also is commonly a <em>locality adjustment</em> to reflect the cost of living in the employee's area.</li>
+<li>Above the GS scale, there is a <em>Special Executive Service (SES)</em> series of levels for limited numbers of high-ranking agency staff.</li>
+<li>Both excepted and SGE roles usually will have a <em>Not To Exceed (NTE)</em> date which is the maximum duration a person can be in that role.</li>
+<li><em>Schedule C</em> is another exemption from the normal civil service hiring rules for political staff in policy roles who are subordinate to other appointees like agency heads.</li>
 </ul></p>
 </div>
 
