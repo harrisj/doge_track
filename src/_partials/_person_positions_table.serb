@@ -1,18 +1,18 @@
 {% import 'macros' %}
 
-<table class="mt-4 sm:table-fixed table-xs sm:table-sm lg:table-md border-4">
+<table class="mt-4 table-xs table-auto sm:table-sm lg:table-md border-4">
   <thead>
   <tr class="my-text-2sm">
-    <th class="sm:w-26 md:w-32 text-left">Position</th>
-    <th class="sm:w-30 md:w-34 lg:w-44 text-left">Times</th>
     <th class="text-left">Position</th>
+    <th class="text-left">Notes</th>
   </tr>
   </thead>
   <tbody class="">
     {% positions.each do |pos| %}
+    {% summary = position_summary(pos) %}
     <tr class="font-mono">
-      <td class="align-top text-left"><nobr>{{ position_move(pos) }}</nobr></td>
-      <td class="align-top">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }} - {{ render EdtfFormat.new(pos.end_date, :compact) }}{% else %}-{% end %}</td>
+      <td class="align-top text-left min-w-[105px]"><div class="sm:inline-block"><nobr>{{ position_move(pos) }}</nobr></div>
+      <div class="sm:inline-block">{% if pos.start_date || pos.end_date %}<nobr>{{ render EdtfFormat.new(pos.start_date, :compact, :none) }} - {{ render EdtfFormat.new(pos.end_date, :compact) }}</nobr>{% end %}</div></td>
       <td class="align-top">{{ position_summary(pos) }}</td>
     </tr>
     {% end %}
