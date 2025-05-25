@@ -55,7 +55,6 @@
     comment:
     qualifications:
     table_note: start date unknown but before 3/26
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: DOT
@@ -78,6 +77,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: avfnFBSY
@@ -196,7 +196,6 @@
     comment:
     qualifications:
     table_note: start date reported as "some point in February"
-    documents:
     duration_summary: from ~ Feb 2025
     agency:
       agency_id: DOGE
@@ -220,6 +219,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: C9H7QGC5
@@ -643,67 +643,17 @@
   comment:
   table_note:
   positions:
-  - id: opm-jacob-altik
-    type: appointed
-    agency_id: OPM
-    name: Jacob Altik
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-24'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-24'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Provisional Appt NTE
-    fuzz:
-    appt_type_code: 44
-    appt_type: Schedule C
-    pay_grade: GS-15
-    salary:
-    pd_code: PMGS31263
-    sge:
-    excepted: true
-    title: Senior Advisor to the Director
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment:
-    qualifications:
-    table_note: sourced from FOIA
-    documents: opm-foia-doge-positions
-    duration_summary: from Jan 24, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Jacob Altik
-      sort_name: Altik
-      slug: jacob-altik
-      page_slug:
-      age: 32
-      background: lawyer
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#jacob-altik"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
     obj_type: Position
   - id: detail-opm-usadf-altik
     type: detailed
@@ -745,7 +695,6 @@
     comment: Assuming detail from OPM
     qualifications:
     table_note: info in govt legal declation
-    documents:
     duration_summary: Feb 21, 2025 to Mar 06, 2025
     agency:
       agency_id: USADF
@@ -770,6 +719,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-opm-fcc-altik
     type: detailed
@@ -811,7 +761,6 @@
     comment: Assuming he has been detailed from OPM
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 04, 2025
     agency:
       agency_id: FCC
@@ -836,6 +785,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 58t4DLaO
@@ -1653,67 +1603,17 @@
   comment:
   table_note:
   positions:
-  - id: opm-anthony-armstrong
-    type: appointed
-    agency_id: OPM
-    name: Anthony Armstrong
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 48
-    appt_type: Other
-    pay_grade: ED-00
-    salary:
-    pd_code: 6A39742
-    sge:
-    excepted: true
-    title: Expert
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: From FOIA documents
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions
-    duration_summary: from Jan 20, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Anthony Armstrong
-      sort_name: Armstrong
-      slug: anthony-armstrong
-      page_slug:
-      age: 57
-      background: finance
-      category: leadership
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#anthony-armstrong"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
     obj_type: Position
   - id: detail-opm-fdic-armstrong
     type: detailed
@@ -1755,7 +1655,6 @@
     comment:
     qualifications:
     table_note: reported by media
-    documents:
     duration_summary: from Apr 10, 2025
     agency:
       agency_id: FDIC
@@ -1780,6 +1679,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-opm-dhs-armstrong
     type: detailed
@@ -1821,7 +1721,6 @@
     comment: Find more definitive info for DHS link
     qualifications:
     table_note: reported by media, assuming from OPM
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: DHS
@@ -1846,6 +1745,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 4F5kEan6
@@ -2130,7 +2030,6 @@
     comment:
     qualifications:
     table_note: NYT links her to Education, but no other info
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: Education
@@ -2154,6 +2053,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events: []
   system_access: []
@@ -2215,7 +2115,6 @@
     comment: 3 other DOGE staff besides Ramada at agency on 2/5.
     qualifications:
     table_note: No other info besides this report
-    documents:
     duration_summary: from ~ Feb 13, 2025
     agency:
       agency_id: DOL
@@ -2236,6 +2135,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: Laig7UCK
@@ -2335,7 +2235,6 @@
     comment: FIXME, find earliest details of arrival; is she GSA?
     qualifications:
     table_note: date guessed, reported as detailing from DOGE to Education
-    documents:
     duration_summary: from ~ Feb 04, 2025
     agency:
       agency_id: DOGE
@@ -2358,74 +2257,18 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
-  - id: detail-doge-education-alexandra-beynon
-    type: detailed
-    agency_id: Education
-    name: Alexandra Beynon
-    doge_alias_id:
-    from_agency_id: DOGE
-    from_truth: verified
-    start_date: '2025-02-05'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-05'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
+  - id: doge-staff-education-20250407
+    name:
+    type: mou
+    alias:
+    date:
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
-    reimbursed:
-    reimbursement_amount:
-    comment: Details just provided in court testimony
-    qualifications:
-    table_note: info from a govt legal filing
-    documents: doge-staff-education-20250407
-    duration_summary: from Feb 05, 2025
-    agency:
-      agency_id: Education
-      name: Department of Education
-      short_name: Ed
-    from_agency:
-      agency_id: DOGE
-      name: Department of Government Efficiency
-      short_name: DOGE
-    person:
-      name: Alexandra Beynon
-      sort_name: Beynon
-      slug: alexandra-beynon
-      page_slug:
-      age: 36
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb: >-
-        Not much is known about Alexandra Beynon's work on behalf of DOGE at the Department of Education. Prior to that, she worked as the head of engineering
-        at her husband's startup company which sold guided ketamine therapy for use in the home.
-      reporting_notes:
-      path: "/people#alexandra-beynon"
-      comment:
-      table_note:
-      obj_type: Person
+    case_no: 1:25-cv-00354
+    comment:
+    file: doge-staff-education-20250407.pdf
+    url: "/documents/doge-staff-education-20250407.pdf"
     obj_type: Position
   events:
   - id: 9GdCongC
@@ -2530,80 +2373,16 @@
   comment:
   table_note:
   positions:
-  - id: opm-employee-2
-    type: appointed
-    agency_id: OPM
-    name: Riccardo Biasini
-    doge_alias_id: OPM-2
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date: '2025-07-18'
-    nte_date_truth: verified
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 48
-    appt_type: Other
-    pay_grade: ED-00
-    salary: "$0"
-    pd_code: 6A39741
-    sge:
-    excepted: true
-    title: Expert
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: I was able to confirm that OPM Employee 2 was Riccardo Biasini
-    qualifications:
-    table_note: info for alias SSA-2, who I've identified as him
-    documents: opm-foia-doge-positions onboard-opm-employee-2
-    duration_summary: from Jan 20, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Riccardo Biasini
-      sort_name: Biasini
-      slug: riccardo-biasini
-      page_slug:
-      age: 39
-      background: executive
-      category: support
-      own_page: false
-      blurb: >-
-        Riccardo Biasini is an executive and software engineer who has worked at both Tesla and the Boring Company, both of which are Musk-owned businesses.
-        Since joining the DOGE staff at OPM on January 20th, he has largely been focused on personnel-related initiatives like modernizing an "AutoRIF"
-        system for automating layoffs at agencies. As a software developer, he likely has been connected to other initiatives like the Fork in the Road
-        or the Five Things emails, but he has kept a lower profile than other engineers.
-      reporting_notes:
-      path: "/people#riccardo-biasini"
-      comment:
-      table_note:
-      obj_type: Person
-    alias:
-      id: OPM-2
-      agency_id: OPM
-      name: Riccardo Biasini
-      evidence: |-
-        - Onboarded on 2025-01-20 as a volunteer SGE
-        - This is likely one of the other young DOGE crew like Jordan Wick or Luke Farritor, etc.
-        - PD Number 6A39741 in redacted documents matches one for Riccard Biasini in a FOIA release from OPM
-      obj_type: Alias
+  - id: onboard-opm-employee-2
+    name:
+    type: onboard
+    alias: OPM-2
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
+    case_no: 8:25-cv-00430
+    comment:
+    file: onboard-opm-employee-2
+    url: "/documents/onboard-opm-employee-2"
     obj_type: Position
   events:
   - id: 4F5kEan6
@@ -2973,7 +2752,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from May 06, 2025
     agency:
       agency_id: SSA
@@ -2994,6 +2772,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: akUHUm4h
@@ -3071,67 +2850,17 @@
   comment:
   table_note:
   positions:
-  - id: opm-brian-bjelde
-    type: appointed
-    agency_id: OPM
-    name: Brian Bjelde
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 48
-    appt_type: Other
-    pay_grade: ED-00
-    salary:
-    pd_code: 6A39743
-    sge:
-    excepted: true
-    title: Expert
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment:
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions
-    duration_summary: from Jan 20, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Brian Bjelde
-      sort_name: Bjelde
-      slug: brian-bjelde
-      page_slug:
-      age: 44
-      background: executive
-      category: support
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#brian-bjelde"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
     obj_type: Position
   events:
   - id: JQXwpLN5
@@ -3308,313 +3037,49 @@
   comment:
   table_note:
   positions:
-  - id: opm-3
-    type: appointed
-    agency_id: OPM
-    name: Akash Bobba
-    doge_alias_id: OPM-3
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date: '2025-07-18'
-    nte_date_truth: verified
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 48
-    appt_type: Other
-    pay_grade: ED-00
-    salary: "$0"
-    pd_code: 6A39740
-    sge:
-    excepted: true
-    title: Expert
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: I was able to confirm that OPM Employee 3 is Akash Bobba
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions onboard-opm-employee-3
-    duration_summary: from Jan 20, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Akash Bobba
-      sort_name: Bobba
-      slug: akash-bobba
-      page_slug:
-      age: 21
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb: >-
-        Identified early in media reports as one of six engineers picked on Elon Musk's team, Akash Bobba was a prolific wrecker from the start, including
-        an unusual detailing document where we as assigned to OPM, Education and Social Security simultaneously.
-      reporting_notes:
-      path: "/people#akash-bobba"
-      comment:
-      table_note:
-      obj_type: Person
-    alias:
-      id: OPM-3
-      agency_id: OPM
-      name: Akash Bobba
-      evidence: |-
-        - This is the same person as ED-1 because there is a detail document that appears with two diff redacted names
-        - Detail to SSA is signed on 2025-02-12
-        - PD number 6A39740 = one listed for Akash Bobba
-        - See evidence that ED-1 is Akash Bobba
-      obj_type: Alias
-    obj_type: Position
-  - id: detail-opm-education-akash-bobba
-    type: detailed
-    agency_id: Education
-    name: Akash Bobba
-    doge_alias_id: ED-1
-    from_agency_id: OPM
-    from_truth: verified
-    start_date: '2025-02-03'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-03'
-    nte_date: '2026-02-12'
-    nte_date_truth: verified
-    signed_date: '2025-02-12'
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed: false
-    reimbursement_amount:
+  - id: onboard-opm-employee-3
+    name:
+    type: onboard
+    alias: OPM-3
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
+    case_no: 8:25-cv-00430
     comment:
-    qualifications:
-    table_note:
-    documents: detail-20250212-opm-education-ed-1
-    duration_summary: from Feb 03, 2025
-    agency:
-      agency_id: Education
-      name: Department of Education
-      short_name: Ed
-    from_agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Akash Bobba
-      sort_name: Bobba
-      slug: akash-bobba
-      page_slug:
-      age: 21
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb: >-
-        Identified early in media reports as one of six engineers picked on Elon Musk's team, Akash Bobba was a prolific wrecker from the start, including
-        an unusual detailing document where we as assigned to OPM, Education and Social Security simultaneously.
-      reporting_notes:
-      path: "/people#akash-bobba"
-      comment:
-      table_note:
-      obj_type: Person
-    alias:
-      id: ED-1
-      agency_id: Education
-      name: Akash Bobba
-      evidence: |-
-        - Detail agreement from OPM is signed on 2025-02-12
-        - This person appears in a detail from OPM to SSA, but also a detail from SSA back to OPM and Education
-        - This is the same person as OPM-3 because there is a detail document that appears with two diff redacted names
-        - In a separate document in filing from OPM, Akash Bobba is listed as the only person from OPM and with a start date of 2025-02-03
-      obj_type: Alias
+    file: onboard-opm-employee-3
+    url: "/documents/onboard-opm-employee-3"
     obj_type: Position
-  - id: detail-opm-ssa-opm-3
-    type: detailed
-    agency_id: SSA
-    name: Akash Bobba
-    doge_alias_id: OPM-3
-    from_agency_id: OPM
-    from_truth: verified
-    start_date: '2025-02-03'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-03'
-    nte_date:
-    nte_date_truth:
-    signed_date: '2025-02-12'
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed: false
-    reimbursement_amount:
-    comment:
-    qualifications:
-    table_note:
-    documents: detail-20250212-opm-education-ed-1
-    duration_summary: from Feb 03, 2025
-    agency:
-      agency_id: SSA
-      name: Social Security Administration
-      short_name: SSA
-    from_agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Akash Bobba
-      sort_name: Bobba
-      slug: akash-bobba
-      page_slug:
-      age: 21
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb: >-
-        Identified early in media reports as one of six engineers picked on Elon Musk's team, Akash Bobba was a prolific wrecker from the start, including
-        an unusual detailing document where we as assigned to OPM, Education and Social Security simultaneously.
-      reporting_notes:
-      path: "/people#akash-bobba"
-      comment:
-      table_note:
-      obj_type: Person
-    alias:
-      id: OPM-3
-      agency_id: OPM
-      name: Akash Bobba
-      evidence: |-
-        - This is the same person as ED-1 because there is a detail document that appears with two diff redacted names
-        - Detail to SSA is signed on 2025-02-12
-        - PD number 6A39740 = one listed for Akash Bobba
-        - See evidence that ED-1 is Akash Bobba
-      obj_type: Alias
+  - id: detail-20250212-opm-education-ed-1
+    name:
+    type: mou
+    alias: ED-1
+    date: '2025-02-12'
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
+    case_no:
+    comment: This is for a SGE position so it is not reimbursed and for a maximum of 135 days from start of SGE term
+    file: mou-20250212-opm-education-ed-1.pdf
+    url: "/documents/mou-20250212-opm-education-ed-1.pdf"
     obj_type: Position
-  - id: ssa-employee-1
-    type: appointed
-    agency_id: SSA
-    name: Akash Bobba
-    doge_alias_id: SSA-1
-    from_agency_id:
-    from_truth:
-    start_date: '2025-02-09'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-09'
-    nte_date: '2026-02-08'
-    nte_date_truth: verified
-    signed_date:
-    description: EXC APPT NTE
-    fuzz:
-    appt_type_code: 171
-    appt_type:
-    pay_grade: ED-00
-    salary: "$90,025"
-    pd_code: KNX0350
-    sge:
-    excepted:
-    title: Expert
-    series: 301
-    supervisory: false
-    office: Office of the Chief Information Officer
-    source:
-    reimbursed:
-    reimbursement_amount:
+  - id: detail-20250212-opm-education-ed-1
+    name:
+    type: mou
+    alias: ED-1
+    date: '2025-02-12'
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
+    case_no:
+    comment: This is for a SGE position so it is not reimbursed and for a maximum of 135 days from start of SGE term
+    file: mou-20250212-opm-education-ed-1.pdf
+    url: "/documents/mou-20250212-opm-education-ed-1.pdf"
+    obj_type: Position
+  - id: onboard-ssa-employee-1
+    name:
+    type: onboard
+    alias: SSA-1
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
     comment:
-    qualifications: >
-      Hands-on software engineer that is an expert in modern computer programming languages, cloud and other infrastructure, AI, etc. 5 years of experience
-      using numerous computer code languages, leadership of teams in technical, software design, and infrastructure areas.
-    table_note:
-    documents: onboard-ssa-employee-1
-    duration_summary: from Feb 09, 2025
-    agency:
-      agency_id: SSA
-      name: Social Security Administration
-      short_name: SSA
-    person:
-      name: Akash Bobba
-      sort_name: Bobba
-      slug: akash-bobba
-      page_slug:
-      age: 21
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb: >-
-        Identified early in media reports as one of six engineers picked on Elon Musk's team, Akash Bobba was a prolific wrecker from the start, including
-        an unusual detailing document where we as assigned to OPM, Education and Social Security simultaneously.
-      reporting_notes:
-      path: "/people#akash-bobba"
-      comment:
-      table_note:
-      obj_type: Person
-    alias:
-      id: SSA-1
-      agency_id: SSA
-      name: Akash Bobba
-      evidence: |-
-        - Appointed to position as "Expert" on 2025-02-10
-        - Appointment is as Expert with a salary of $90K
-        - Doing analysis of SSA payment data as focus
-        - Software engineer with 5 years of experience and some leadership experience
-        - Date matches Akash Bobba start
-        - [Akash Bobba's resume](https://www.documentcloud.org/documents/25940536-25-hq-0774-f-resumes-redacted-3/) lists 5 years of engineering experience and leadership skills
-      obj_type: Alias
+    file: onboard-ssa-employee-1.pdf
+    url: "/documents/onboard-ssa-employee-1.pdf"
     obj_type: Position
   events:
   - id: 4F5kEan6
@@ -4186,7 +3651,6 @@
     comment:
     qualifications:
     table_note: reported by media as started in February
-    documents:
     duration_summary: from ~ Feb 2025
     agency:
       agency_id: DOGE
@@ -4207,6 +3671,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: C9H7QGC5
@@ -4460,7 +3925,6 @@
     comment: Not verified, but NYT links to her to GSA also, so assuming she started there
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Mar 2025
     agency:
       agency_id: GSA
@@ -4483,6 +3947,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-doge-ftc-bryant
     type: detailed
@@ -4524,7 +3989,6 @@
     comment:
     qualifications:
     table_note: limited info, 2025-04-04 report stated she started "last week"
-    documents:
     duration_summary: from ~ Mar 28, 2025
     agency:
       agency_id: FTC
@@ -4551,6 +4015,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: GoJrDRSQ
@@ -4641,7 +4106,6 @@
     comment:
     qualifications:
     table_note: NYT reported in DOGE in January, ProPublica provided title
-    documents:
     duration_summary: from ~ Jan 23, 2025
     agency:
       agency_id: DOGE
@@ -4664,6 +4128,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: V7Gkkvah
@@ -4977,7 +4442,6 @@
     comment: Introduces Frank Schuler on a video call at GSA in February; listed in ProPublica roundup on Feb 05; going to assume Monday start
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 03, 2025
     agency:
       agency_id: GSA
@@ -5003,6 +4467,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-usadf-cavanaugh
     type: detailed
@@ -5044,7 +4509,6 @@
     comment:
     qualifications:
     table_note: verified via court filing
-    documents:
     duration_summary: Feb 21, 2025 to Mar 06, 2025
     agency:
       agency_id: USADF
@@ -5074,6 +4538,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-usip-cavanaugh
     type: detailed
@@ -5115,7 +4580,6 @@
     comment: Assuming this based on repors and where he is based. Becomes president of USIP next
     qualifications:
     table_note: verified via court filing
-    documents:
     duration_summary: Mar 04, 2025 to Mar 24, 2025
     agency:
       agency_id: USIP
@@ -5145,6 +4609,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-neh-cavanaugh
     type: detailed
@@ -5186,7 +4651,6 @@
     comment:
     qualifications:
     table_note: Verified via court filing
-    documents:
     duration_summary: from ~ Mar 13, 2025
     agency:
       agency_id: NEH
@@ -5216,6 +4680,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: usip-cavanaugh-president
     type: appointed
@@ -5259,7 +4724,6 @@
       transfer all assets to the GSA
     qualifications:
     table_note: After the rest of board was ousted, Nate was named President of the agency by Marco Rubio and Pete Hegseth
-    documents:
     duration_summary: from Mar 25, 2025
     agency:
       agency_id: USIP
@@ -5285,6 +4749,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: imls-cavanaugh
     type: detailed
@@ -5326,7 +4791,6 @@
     comment: DOGE put entire staff on admin leave and started cancelling grants, not many details. FIXME
     qualifications:
     table_note: Based on initial reports
-    documents:
     duration_summary: from Mar 31, 2025
     agency:
       agency_id: IMLS
@@ -5352,6 +4816,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-nlrb-cavanaugh
     type: detailed
@@ -5393,7 +4858,6 @@
     comment:
     qualifications:
     table_note: Spotted by media
-    documents:
     duration_summary: from Apr 16, 2025
     agency:
       agency_id: NLRB
@@ -5423,6 +4887,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-dfc-cavanaugh
     type: detailed
@@ -5464,7 +4929,6 @@
     comment:
     qualifications:
     table_note: Spotted by media
-    documents:
     duration_summary: from Apr 28, 2025
     agency:
       agency_id: USDFC
@@ -5494,6 +4958,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-exim-cavanaugh
     type: detailed
@@ -5535,7 +5000,6 @@
     comment:
     qualifications:
     table_note: Reported by media
-    documents:
     duration_summary: from May 14, 2025
     agency:
       agency_id: EXIM
@@ -5565,6 +5029,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-mspb-cavanaugh
     type: detailed
@@ -5606,7 +5071,6 @@
     comment:
     qualifications:
     table_note: Email cited mentioned he was from DOGE, but assuming detail from GSA
-    documents:
     duration_summary: from May 21, 2025
     agency:
       agency_id: MSPB
@@ -5636,6 +5100,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: j9cDuFZd
@@ -6671,7 +6136,6 @@
       weeks
     qualifications:
     table_note: CC'ed on a leaked email. Date guessed from Ag Sec on 2/14 saying DOGE at agency for "a couple weeks"
-    documents:
     duration_summary: from ~ Feb 2025
     agency:
       agency_id: USDA
@@ -6692,6 +6156,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 54bW5YhN
@@ -6782,7 +6247,6 @@
     comment: Wired reports on a detailing agreement between DOGE and DOL, but that could be for Adam Ramada and crew
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 05, 2025
     agency:
       agency_id: DOL
@@ -6807,6 +6271,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: j66RVh4p
@@ -7041,67 +6506,16 @@
   comment:
   table_note:
   positions:
-  - id: irs-corcos
-    type: consultant
-    agency_id: IRS
-    name: Sam Corcos
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-02-28'
-    start_date_truth: reported
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date: 2025-05-(06)~
-    end_date_truth: inferred
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-28'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary: "$0"
-    pd_code:
-    sge: true
-    excepted:
-    title: Senior Advisor for Technology and Modernization
-    series:
-    supervisory:
-    office:
-    source: https://www.washingtonpost.com/business/2025/03/01/doge-irs-tax-records-benefits/
-    reimbursed:
-    reimbursement_amount:
-    comment: FIXME earlier involvement, maybe when Gavin Kliger started there; ends when became CIO
-    qualifications:
-    table_note: Start date inferred and likely earlier.
-    documents: gov.uscourts.nysd.636609.144.0
-    duration_summary: Feb 28, 2025 to ~ May 06, 2025
-    agency:
-      agency_id: IRS
-      name: Internal Revenue Service
-      short_name: IRS
-    person:
-      name: Sam Corcos
-      sort_name: Corcos
-      slug: sam-corcos
-      page_slug:
-      age: 36
-      background: executive
-      category: enabler
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#sam-corcos"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: gov.uscourts.nysd.636609.144.0
+    name:
+    type: directory
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
+    case_no: 1:25-cv-01144
+    comment: Testimony about the positions of various IRS appointees
+    file: gov.uscourts.nysd.636609.144.0.pdf
+    url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
     obj_type: Position
   - id: irs-corcos-cio
     type: promotion
@@ -7143,7 +6557,6 @@
     comment: Date is approximate
     qualifications:
     table_note: Date is approximate per reports. Will update as new details emerge.
-    documents:
     duration_summary: from ~ May 06, 2025
     agency:
       agency_id: IRS
@@ -7164,6 +6577,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: Np7Nfyaw
@@ -7347,7 +6761,6 @@
     comment: Several documents have Coristine detailing from GSA, so assuming home agency. Also, not in FOIA release from OPM
     qualifications:
     table_note: Start date and agency inferred from later reporting
-    documents:
     duration_summary: from ~ Jan 20, 2025
     agency:
       agency_id: GSA
@@ -7370,6 +6783,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-opm-coristine
     type: detailed
@@ -7411,7 +6825,6 @@
     comment: Edward Coristine is not named, but identfied. Mentions he reportd to Scales
     qualifications:
     table_note: wasn't named due to young age; mentioned as reporting to Amanda Scales, so might be detail?
-    documents:
     duration_summary: from ~ Jan 28, 2025
     agency:
       agency_id: OPM
@@ -7438,6 +6851,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-sba-coristine
     type: detailed
@@ -7479,7 +6893,6 @@
     comment:
     qualifications:
     table_note: Only source is a single tweet. More info needed. Assuming detail from GSA.
-    documents:
     duration_summary: from Feb 03, 2025
     agency:
       agency_id: SBA
@@ -7506,6 +6919,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-dhs-coristine
     type: detailed
@@ -7547,7 +6961,6 @@
     comment: Reported by the Post, I'm going to assume this predated the FEMA access
     qualifications:
     table_note: Date unverified, but assuming predates sighting at FEMA
-    documents:
     duration_summary: from ~ Feb 04, 2025
     agency:
       agency_id: DHS
@@ -7574,6 +6987,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-hhs-fema-edward-coristine
     type: internal
@@ -7615,7 +7029,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 05, 2025
     agency:
       agency_id: FEMA
@@ -7642,6 +7055,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-usaid-coristine
     type: detailed
@@ -7683,7 +7097,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 10, 2025
     agency:
       agency_id: USAID
@@ -7710,6 +7123,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-state-coristine
     type: detailed
@@ -7751,7 +7165,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 10, 2025
     agency:
       agency_id: State
@@ -7778,6 +7191,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-cisa-coristine
     type: internal
@@ -7819,7 +7233,6 @@
     comment: Likely assigned from DHS to here
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 19, 2025
     agency:
       agency_id: CISA
@@ -7846,74 +7259,18 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
-  - id: detail-doge-education-coristine
-    type: detailed
-    agency_id: Education
-    name: Edward Coristine
-    doge_alias_id:
-    from_agency_id: GSA
-    from_truth: verified
-    start_date: '2025-02-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed:
-    reimbursement_amount:
+  - id: doge-staff-education-20250407
+    name:
+    type: mou
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
+    case_no: 1:25-cv-00354
     comment:
-    qualifications:
-    table_note:
-    documents: doge-staff-education-20250407
-    duration_summary: from Feb 20, 2025
-    agency:
-      agency_id: Education
-      name: Department of Education
-      short_name: Ed
-    from_agency:
-      agency_id: GSA
-      name: General Services Administration
-      short_name: GSA
-    person:
-      name: Edward Coristine
-      sort_name: Coristine
-      slug: edward-coristine
-      page_slug:
-      age: 19
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb: >-
-        Perhaps the most famous of the DOGE wreckers, Edward "Big Balls" Coristine achieved early attention for joining DOGE at the young age of 19. Hoever,
-        he has also accrued a large number of hits on his wrecking spree across the federal government.
-      reporting_notes:
-      path: "/people#edward-coristine"
-      comment:
-      table_note:
-      obj_type: Person
+    file: doge-staff-education-20250407.pdf
+    url: "/documents/doge-staff-education-20250407.pdf"
     obj_type: Position
   - id: detail-gsa-hhs-edward-coristine
     type: detailed
@@ -7955,7 +7312,6 @@
     comment: No document provided, date reported in court filing
     qualifications:
     table_note: Date verified in court document, assuming detail from GSA
-    documents:
     duration_summary: from Mar 05, 2025
     agency:
       agency_id: HHS
@@ -7982,6 +7338,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-hhs-cms-coristine
     type: internal
@@ -8023,7 +7380,6 @@
     comment: Granted access to CALM system on the same day as his detail to HHS
     qualifications:
     table_note: Granted access to CMS systems on same day as detail to HHS
-    documents:
     duration_summary: from Mar 05, 2025
     agency:
       agency_id: CMS
@@ -8050,6 +7406,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-tsa-coristine
     type: internal
@@ -8091,7 +7448,6 @@
     comment: No details, but in NYT roundup
     qualifications:
     table_note: NYT links him to TSA, but no other info
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: TSA
@@ -8118,6 +7474,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-uscis-coristine
     type: internal
@@ -8159,7 +7516,6 @@
     comment: NYT links him to USCIS, but no other info
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: USCIS
@@ -8186,6 +7542,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 3GL4CR65
@@ -9125,159 +8482,27 @@
   comment:
   table_note:
   positions:
-  - id: detail-nasa-ssa-employee-2
-    type: detailed
-    agency_id: SSA
-    name: Scott Coulter
-    doge_alias_id: SSA-2
-    from_agency_id: NASA
-    from_truth: verified
-    start_date: '2025-02-18'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date: '2025-03-23'
-    end_date_truth: verified
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-18'
-    nte_date: '2026-02-18'
-    nte_date_truth: verified
-    signed_date: '2025-03-06'
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed: true
-    reimbursement_amount: hourly, maximum of $120,579
-    comment: Followed by Employee 2 being appointed the CIO
-    qualifications:
-    table_note:
-    documents: detail-20250306-nasa-ssa-employee-2 onboard-ssa-employee-2
-    duration_summary: Feb 18, 2025 to Mar 23, 2025
-    agency:
-      agency_id: SSA
-      name: Social Security Administration
-      short_name: SSA
-    from_agency:
-      agency_id: NASA
-      name: National Aeronautics and Space Administration
-      short_name: NASA
-    person:
-      name: Scott Coulter
-      sort_name: Coulter
-      slug: scott-coulter
-      page_slug:
-      age: 40
-      background: finance
-      category: enabler
-      own_page: false
-      blurb: >-
-        Scott Coulter started his work for DOGE as a wrecker based in Social Security and detailed to NASA, but when Mile Russo was abruptly demoted as
-        the CIO for Social Security, Scott stepped up into the role.
-      reporting_notes:
-      path: "/people#scott-coulter"
-      comment:
-      table_note:
-      obj_type: Person
-    alias:
-      id: SSA-2
-      agency_id: SSA
-      name: Scott Coulter
-      evidence: |-
-        - Employees is detailed from NASA to SSA on 2025-02-18
-        - Scott Coulter is identified at NASA on 2025-03-14
-        - Scott Coulter is identified at SSA on 2025-03-13
-        - Signed SF-61 as CIO of SSA on 2025-03-24
-        - Scott Coulter was named the CIO of SSA on 2025-03-24
-      obj_type: Alias
-    obj_type: Position
-  - id: ssa-employee-2-cio
-    type: appointed
-    agency_id: SSA
-    name: Scott Coulter
-    doge_alias_id: SSA-2
-    from_agency_id:
-    from_truth:
-    start_date: '2025-03-24'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-03-24'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title: Chief Information Officer
-    series:
-    supervisory: true
-    office:
-    source:
-    reimbursed:
-    reimbursement_amount:
+  - id: onboard-ssa-employee-2
+    name:
+    type: onboard
+    alias: SSA-2
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
     comment:
-    qualifications:
-    table_note:
-    documents: onboard-ssa-employee-2
-    duration_summary: from Mar 24, 2025
-    agency:
-      agency_id: SSA
-      name: Social Security Administration
-      short_name: SSA
-    person:
-      name: Scott Coulter
-      sort_name: Coulter
-      slug: scott-coulter
-      page_slug:
-      age: 40
-      background: finance
-      category: enabler
-      own_page: false
-      blurb: >-
-        Scott Coulter started his work for DOGE as a wrecker based in Social Security and detailed to NASA, but when Mile Russo was abruptly demoted as
-        the CIO for Social Security, Scott stepped up into the role.
-      reporting_notes:
-      path: "/people#scott-coulter"
-      comment:
-      table_note:
-      obj_type: Person
-    alias:
-      id: SSA-2
-      agency_id: SSA
-      name: Scott Coulter
-      evidence: |-
-        - Employees is detailed from NASA to SSA on 2025-02-18
-        - Scott Coulter is identified at NASA on 2025-03-14
-        - Scott Coulter is identified at SSA on 2025-03-13
-        - Signed SF-61 as CIO of SSA on 2025-03-24
-        - Scott Coulter was named the CIO of SSA on 2025-03-24
-      obj_type: Alias
+    file: onboard-ssa-employee-2.pdf
+    url: "/documents/onboard-ssa-employee-2.pdf"
+    obj_type: Position
+  - id: onboard-ssa-employee-2
+    name:
+    type: onboard
+    alias: SSA-2
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
+    comment:
+    file: onboard-ssa-employee-2.pdf
+    url: "/documents/onboard-ssa-employee-2.pdf"
     obj_type: Position
   events:
   - id: FP9n4cfD
@@ -9580,67 +8805,17 @@
   comment:
   table_note:
   positions:
-  - id: opm-cromer
-    type: appointed
-    agency_id: OPM
-    name: Clayton Cromer
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: SES Noncareer Appt
-    fuzz:
-    appt_type_code: 55
-    appt_type: 55-Noncareer (Senior Exec Perm)
-    pay_grade: ES-00
-    salary:
-    pd_code: 6A38487
-    sge:
-    excepted:
-    title: Deputy General Counsel
-    series: 301
-    supervisory: true
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Sourced from a FOIA document
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions
-    duration_summary: from Jan 20, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Clayton Cromer
-      sort_name: Cromer
-      slug: clayton-cromer
-      page_slug:
-      age:
-      background: lawyer
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#clayton-cromer"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
     obj_type: Position
   - id: detail-opm-usaid-cromer
     type: detailed
@@ -9682,7 +8857,6 @@
     comment: Need to see if I can find any documentation linking him. NYT says he was involved.
     qualifications:
     table_note: NYT links to USAID, but need to find public reports of this
-    documents:
     duration_summary: from ~ Feb 2025
     agency:
       agency_id: USAID
@@ -9707,6 +8881,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-opm-doj-cromer
     type: detailed
@@ -9748,7 +8923,6 @@
     comment: Vindman in early March reports receiving contacts from Cromer at DOJ
     qualifications:
     table_note: Rep. Vindman reported in early March being contacted by Cromer at the DOJ
-    documents:
     duration_summary: from ~ Mar 2025
     agency:
       agency_id: DOJ
@@ -9773,6 +8947,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 6hBRdYWA
@@ -9860,7 +9035,6 @@
     comment:
     qualifications:
     table_note: assuming he started on 2025-01-20
-    documents:
     duration_summary: from Jan 20, 2025
     agency:
       agency_id: DOGE
@@ -9881,6 +9055,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 8vDj2q7P
@@ -10398,67 +9573,17 @@
   comment:
   table_note:
   positions:
-  - id: opm-stephen-duarte
-    type: appointed
-    agency_id: OPM
-    name: Stephen Duarte
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-02-03'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-03'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 48
-    appt_type: Other
-    pay_grade: ED-00
-    salary:
-    pd_code: 6A39749
-    sge:
-    excepted: true
-    title: Expert
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Sources from a FOIA document
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions
-    duration_summary: from Feb 03, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Stephen Duarte
-      sort_name: Duarte
-      slug: stephen-duarte
-      page_slug:
-      age: 32
-      background: hr
-      category: support
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#stephen-duarte"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
     obj_type: Position
   events:
   - id: 15xKjpfm
@@ -10633,7 +9758,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: Feb 16, 2025 to May 06, 2025
     agency:
       agency_id: SSA
@@ -10659,6 +9783,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: ssa-dudek
     type: demotion
@@ -10700,7 +9825,6 @@
     comment: FIXME find out what Dudek is doing at SSA
     qualifications:
     table_note: Replaced by Bisignano as confirmed commissioner
-    documents:
     duration_summary: from May 06, 2025
     agency:
       agency_id: SSA
@@ -10726,6 +9850,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: FP9n4cfD
@@ -11145,7 +10270,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 20, 2025
     agency:
       agency_id: GSA
@@ -11166,6 +10290,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: kSAAPBQJ
@@ -11328,67 +10453,16 @@
   comment:
   table_note:
   positions:
-  - id: treasury-marko-elez
-    type: appointed
-    agency_id: Treasury
+  - id: onboard-treasury-marko-elez
     name: Marko Elez
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-21'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date: '2025-02-06'
-    end_date_truth: verified
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-21'
-    nte_date: '2025-05-25'
-    nte_date_truth: verified
-    signed_date:
-    description: EXC APPT NTE
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade: GS-11/01
-    salary: "$84,601"
-    pd_code: 66893097 C00424
-    sge:
-    excepted:
-    title: Special Advisor (IT&M)
-    series:
-    supervisory:
-    office: Office of the Chief of Staff
+    type: onboard
+    alias:
+    date:
     source:
-    reimbursed:
-    reimbursement_amount:
+    case_no:
     comment:
-    qualifications:
-    table_note: Abruptly resigned when past racist tweets were reported
-    documents: onboard-treasury-marko-elez
-    duration_summary: Jan 21, 2025 to Feb 06, 2025
-    agency:
-      agency_id: Treasury
-      name: Department of the Treasury
-      short_name: Treasury
-    person:
-      name: Marko Elez
-      sort_name: Elez
-      slug: marko-elez
-      page_slug:
-      age: 25
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#marko-elez"
-      comment:
-      table_note:
-      obj_type: Person
+    file: onboard-treasury-marko-elez.pdf
+    url: "/documents/onboard-treasury-marko-elez.pdf"
     obj_type: Position
   - id: dol-marko-elez
     type: appointed
@@ -11430,7 +10504,6 @@
     comment: Marko is detailed from DOL to other agencies, so rehired there at some point in February
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 14, 2025
     agency:
       agency_id: DOL
@@ -11451,78 +10524,18 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
-  - id: detail-dol-ssa-employee-7
-    type: detailed
-    agency_id: SSA
-    name: Marko Elez
-    doge_alias_id: SSA-7
-    from_agency_id: DOL
-    from_truth: verified
-    start_date: '2025-02-18'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-18'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed: true
-    reimbursement_amount: "$71,000 per quarter"
+  - id: onboard-ssa-employee-7
+    name:
+    type: onboard
+    alias: SSA-7
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
     comment:
-    qualifications:
-    table_note:
-    documents: detail-20250317-dol-ssa-employee-7 onboard-ssa-employee-7
-    duration_summary: from Feb 18, 2025
-    agency:
-      agency_id: SSA
-      name: Social Security Administration
-      short_name: SSA
-    from_agency:
-      agency_id: DOL
-      name: Department of Labor
-      short_name: DOL
-    person:
-      name: Marko Elez
-      sort_name: Elez
-      slug: marko-elez
-      page_slug:
-      age: 25
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#marko-elez"
-      comment:
-      table_note:
-      obj_type: Person
-    alias:
-      id: SSA-7
-      agency_id: SSA
-      name: Marko Elez
-      evidence: "- [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
-      obj_type: Alias
+    file: onboard-ssa-employee-7.pdf
+    url: "/documents/onboard-ssa-employee-7.pdf"
     obj_type: Position
   - id: detail-dol-hhs-marko-elez
     type: detailed
@@ -11564,7 +10577,6 @@
     comment: No documentation, reported in court filing
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 05, 2025
     agency:
       agency_id: HHS
@@ -11589,6 +10601,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-hhs-cms-marko-elez
     type: internal
@@ -11630,7 +10643,6 @@
     comment: Reported access to system same day as start of detail to HHS
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 05, 2025
     agency:
       agency_id: CMS
@@ -11655,6 +10667,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-uscis-elez
     type: internal
@@ -11696,7 +10709,6 @@
     comment: linked to DHS by NYT, no public info
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: USCIS
@@ -11721,6 +10733,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-dol-dhs-elez
     type: detailed
@@ -11762,7 +10775,6 @@
     comment: No other info, just mentioned in NYT roundup
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: DHS
@@ -11787,6 +10799,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-cpb-elez
     type: internal
@@ -11828,7 +10841,6 @@
     comment: No other info, just mentioned in NYT roundup
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: CBP
@@ -11853,6 +10865,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-ice-elez
     type: internal
@@ -11894,7 +10907,6 @@
     comment: No other info, just mentioned in NYT roundup
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: ICE
@@ -11919,6 +10931,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-tsa-elez
     type: internal
@@ -11960,7 +10973,6 @@
     comment: No other info, just mentioned in NYT roundup
     qualifications:
     table_note: linked to DHS by NYT, no public info
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: TSA
@@ -11985,6 +10997,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: hRNeze4y
@@ -13117,7 +12130,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 20, 2025
     agency:
       agency_id: OPM
@@ -13138,6 +12150,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: GSsFm4n8
@@ -13372,7 +12385,6 @@
     comment: Luke is detailed to HHS from GSA on 2025-01-21, so date here is inferred
     qualifications:
     table_note: verified as detailed from GSA to HHS on 1/21, so assuming onboarded on 1/20
-    documents:
     duration_summary: from Jan 20, 2025
     agency:
       agency_id: GSA
@@ -13399,6 +12411,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-hhs-luke-farritor
     type: detailed
@@ -13440,7 +12453,6 @@
     comment: Date found in a court filing
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 21, 2025
     agency:
       agency_id: HHS
@@ -13471,6 +12483,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-usaid-farritor
     type: detailed
@@ -13512,7 +12525,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 27, 2025
     agency:
       agency_id: USAID
@@ -13543,6 +12555,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-hhs-cdc-farritor
     type: internal
@@ -13584,7 +12597,6 @@
     comment: Guessing from first reported system access for ICE system
     qualifications:
     table_note: date guessed from first system access at CDC
-    documents:
     duration_summary: from Jan 30, 2025
     agency:
       agency_id: CDC
@@ -13615,6 +12627,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-hhs-cms-farritor
     type: internal
@@ -13656,7 +12669,6 @@
     comment: Guessing from first reported system access for HIGLAS
     qualifications:
     table_note: date guessed from first system access at CMS
-    documents:
     duration_summary: from Jan 31, 2025
     agency:
       agency_id: CMS
@@ -13687,6 +12699,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-energy-luke-farritor
     type: detailed
@@ -13728,7 +12741,6 @@
     comment: Start date was given by DOE spokesperson denying a news report
     qualifications:
     table_note:
-    documents:
     duration_summary: "~ Feb 04, 2025 to ~ Feb 08, 2025"
     agency:
       agency_id: Energy
@@ -13759,6 +12771,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-cfpb-luke-farritor
     type: detailed
@@ -13800,7 +12813,6 @@
     comment: Details from court filing
     qualifications:
     table_note:
-    documents:
     duration_summary: Feb 07, 2025 to Mar 04, 2025
     agency:
       agency_id: CFPB
@@ -13831,6 +12843,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-state-farritor
     type: detailed
@@ -13872,7 +12885,6 @@
     comment:
     qualifications:
     table_note: info reported by news source
-    documents:
     duration_summary: from Feb 10, 2025
     agency:
       agency_id: State
@@ -13903,6 +12915,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-hhs-nih-farritor
     type: internal
@@ -13944,7 +12957,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 24, 2025
     agency:
       agency_id: NIH
@@ -13975,6 +12987,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-nsf-farritor
     type: detailed
@@ -14016,7 +13029,6 @@
     comment: Showed up at the agency to do secondary round of grant reviews. Detail from HHS?
     qualifications:
     table_note: arrived at agency to do secondary round of grant reviews with other DOGE staff at HHS.
-    documents:
     duration_summary: from Apr 14, 2025
     agency:
       agency_id: NSF
@@ -14047,6 +13059,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-dhs-farritor
     type: detailed
@@ -14088,7 +13101,6 @@
     comment: No details, but in NYT roundup
     qualifications:
     table_note: linked to DHS by NYT, no other info
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: DHS
@@ -14119,6 +13131,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-ice-farritor
     type: internal
@@ -14160,7 +13173,6 @@
     comment: No details, but in NYT roundup
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: ICE
@@ -14191,6 +13203,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-tsa-farritor
     type: internal
@@ -14232,7 +13245,6 @@
     comment: No details, but in NYT roundup
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: TSA
@@ -14263,6 +13275,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-uscis-farritor
     type: internal
@@ -14304,7 +13317,6 @@
     comment: No details, but in NYT roundup
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: USCIS
@@ -14335,6 +13347,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 24qgS3WS
@@ -15655,75 +14668,16 @@
   comment:
   table_note:
   positions:
-  - id: education-ed-2
-    type: appointed
-    agency_id: Education
+  - id: onboard-education-employee-2
     name: Conor Fennessy
-    doge_alias_id: ED-2
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-31'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-31'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code: 44
-    appt_type: Regular C
-    pay_grade: GS-15/6
-    salary: "$195,200"
-    pd_code: DBGS61164
-    sge:
-    excepted:
-    title: Senior Advisor
-    series: 301
-    supervisory: false
-    office: Office of the Secretary
+    type: onboard
+    alias: ED-2
+    date:
     source:
-    reimbursed:
-    reimbursement_amount:
-    comment:
-    qualifications:
-    table_note:
-    documents: onboard-education-employee-2
-    duration_summary: from Jan 31, 2025
-    agency:
-      agency_id: Education
-      name: Department of Education
-      short_name: Ed
-    person:
-      name: Conor Fennessy
-      sort_name: Fennessy
-      slug: conor-fennessy
-      page_slug:
-      age: 32
-      background: finance
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#conor-fennessy"
-      comment:
-      table_note:
-      obj_type: Person
-    alias:
-      id: ED-2
-      agency_id: Education
-      name: Conor Fennessy
-      evidence: |-
-        - Onboarded by appointment as a Senior Advisor on 2025-01-31 with a salary of $195K
-        - They included a list of DOGE staff at the agency and Conor Fennessy is listed as the only Senior Advisor on staff
-      obj_type: Alias
+    case_no: 1:25-cv-00354
+    comment: FIXME Doc 32-1
+    file: onboard-education-employee-2.pdf
+    url: "/documents/onboard-education-employee-2.pdf"
     obj_type: Position
   - id: internal-hhs-cms-fennessy
     type: internal
@@ -15765,7 +14719,6 @@
     comment: Inferred from first reported access to CALM system
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 03, 2025
     agency:
       agency_id: CMS
@@ -15790,6 +14743,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-education-hhs-fennessy
     type: detailed
@@ -15831,7 +14785,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 20, 2025
     agency:
       agency_id: HHS
@@ -15856,6 +14809,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: gsa-fennessy
     type: unknown
@@ -15897,7 +14851,6 @@
     comment: No details, just info from NYT roundup
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: GSA
@@ -15918,6 +14871,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: CPQe7omt
@@ -16237,7 +15191,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 2025
     agency:
       agency_id: DOGE
@@ -16258,6 +15211,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: C9H7QGC5
@@ -16421,7 +15375,6 @@
     comment: No details, but just guessing
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: GSA
@@ -16444,6 +15397,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-neh-justin-fox
     type: detailed
@@ -16485,7 +15439,6 @@
     comment: Guessing GSA based on some past reporting
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Mar 13, 2025
     agency:
       agency_id: NEH
@@ -16512,6 +15465,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-nlrb-fox
     type: detailed
@@ -16553,7 +15507,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 16, 2025
     agency:
       agency_id: NLRB
@@ -16580,6 +15533,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 6xNXvDgl
@@ -16920,7 +15874,6 @@
     comment: Assuming this position replace by Senior Advisor role
     qualifications:
     table_note:
-    documents:
     duration_summary: Mar 04, 2025 to Apr 24, 2025
     agency:
       agency_id: DOD
@@ -16941,6 +15894,7 @@
       comment:
       table_note: unclear if started elsewhere
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: dod-fulcher-advisor
     type: appointed
@@ -16982,7 +15936,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 25, 2025
     agency:
       agency_id: DOD
@@ -17003,6 +15956,7 @@
       comment:
       table_note: unclear if started elsewhere
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 2yiCepF3
@@ -17153,7 +16107,6 @@
     comment: ProPublica just reports he was there in January
     qualifications:
     table_note:
-    documents:
     duration_summary: "~ Jan 2025"
     agency:
       agency_id: HHS
@@ -17174,6 +16127,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events: []
   system_access: []
@@ -17195,67 +16149,17 @@
   comment:
   table_note:
   positions:
-  - id: opm-joe-gebbia
-    type: appointed
-    agency_id: OPM
-    name: Joe Gebbia
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-02-18'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-18'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 48
-    appt_type: Other
-    pay_grade: ED-00
-    salary:
-    pd_code: 6A39752
-    sge:
-    excepted: true
-    title: Expert
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Sourced from a FOIAed document
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions
-    duration_summary: from Feb 18, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Joe Gebbia
-      sort_name: Gebbia
-      slug: joe-gebbia
-      page_slug:
-      age: 43
-      background: executive
-      category: unknown
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#joe-gebbia"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
     obj_type: Position
   events:
   - id: 54lcWZTH
@@ -17438,7 +16342,6 @@
     comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 13, 2025
     agency:
       agency_id: DOL
@@ -17459,6 +16362,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: CPQe7omt
@@ -17635,7 +16539,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 16, 2025
     agency:
       agency_id: FAA
@@ -17658,6 +16561,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events: []
   system_access: []
@@ -17719,7 +16623,6 @@
     comment: Amy Gleason joins the USDS, according to her sworn testimony; not sure of her title for this before she is named Acting Director
     qualifications:
     table_note:
-    documents:
     duration_summary: Dec 30, 2024 to Feb 18, 2024
     agency:
       agency_id: DOGE
@@ -17740,6 +16643,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-hhs-cms-gleason
     type: internal
@@ -17781,7 +16685,6 @@
     comment: Start date is just her reported first access to CALM system at CMS
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 24, 2025
     agency:
       agency_id: CMS
@@ -17806,6 +16709,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: doge-amy-gleason-director
     type: promotion
@@ -17847,7 +16751,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 18, 2025
     agency:
       agency_id: DOGE
@@ -17868,68 +16771,18 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
-  - id: hhs-amy-gleason
-    type: appointed
-    agency_id: HHS
+  - id: onboard-hhs-amy-gleason
     name: Amy Gleason
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-03-04'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-03-04'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title: Expert/Consultant
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: All I have is her SF-61
-    qualifications:
-    table_note:
-    documents: onboard-hhs-amy-gleason
-    duration_summary: from Mar 04, 2025
-    agency:
-      agency_id: HHS
-      name: Health and Human Services
-      short_name: HHS
-    person:
-      name: Amy Gleason
-      sort_name: Gleason
-      slug: amy-gleason
-      page_slug:
-      age: 53
-      background: coder
-      category: leadership
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#amy-gleason"
-      comment:
-      table_note:
-      obj_type: Person
+    type: onboard
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.65.1_1.pdf
+    case_no:
+    comment:
+    file: onboard-hhs-amy-gleason.pdf
+    url: "/documents/onboard-hhs-amy-gleason.pdf"
     obj_type: Position
   events:
   - id: 4wVLWDce
@@ -18188,7 +17041,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Mar 2025
     agency:
       agency_id: OPM
@@ -18209,6 +17061,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events: []
   system_access: []
@@ -18230,73 +17083,16 @@
   comment:
   table_note:
   positions:
-  - id: ssa-antonio-gracias
-    type: appointed
-    agency_id: SSA
-    name: Antonio Gracias
-    doge_alias_id: SSA-4
-    from_agency_id:
-    from_truth:
-    start_date: '2025-02-23'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-23'
-    nte_date: '2026-02-22'
-    nte_date_truth: verified
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade: ED-00
-    salary: "$0"
-    pd_code: KNX0370
-    sge:
-    excepted:
-    title: Expert
-    series: 301
-    supervisory:
-    office: Office of the Chief Information Officer
+  - id: onboard-ssa-employee-4
+    name:
+    type: onboard
+    alias: SSA-4
+    date:
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
-    reimbursed:
-    reimbursement_amount:
-    comment: SF-50 is a correction
-    qualifications: Founder, CEO and Chief Investment Officer of [REDACTED]. Over 25 years of experience in private equity investing.
-    table_note:
-    documents: onboard-ssa-employee-4
-    duration_summary: from Feb 23, 2025
-    agency:
-      agency_id: SSA
-      name: Social Security Administration
-      short_name: SSA
-    person:
-      name: Antonio Gracias
-      sort_name: Gracias
-      slug: antonio-gracias
-      page_slug:
-      age: 54
-      background: finance
-      category: leadership
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#antonio-gracias"
-      comment:
-      table_note:
-      obj_type: Person
-    alias:
-      id: SSA-4
-      agency_id: SSA
-      name: Antonio Gracias
-      evidence: "- [NPR has done analysis on docs to identify directly](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
-      obj_type: Alias
+    case_no: 1:25-cv-00596
+    comment:
+    file: onboard-ssa-employee-4.pdf
+    url: "/documents/onboard-ssa-employee-4.pdf"
     obj_type: Position
   events:
   - id: 7mtGbnRJ
@@ -18589,7 +17385,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 29, 2025
     agency:
       agency_id: Commerce
@@ -18610,6 +17405,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: dqDnwCxi
@@ -18695,7 +17491,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 24, 2025
     agency:
       agency_id: GSA
@@ -18716,6 +17511,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: kaxNhRgZ
@@ -18810,7 +17606,6 @@
     comment: DOGE put entire staff on admin leave and started cancelling grants, not many details
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 31, 2025
     agency:
       agency_id: IMLS
@@ -18831,6 +17626,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 2WDroWS4
@@ -18947,7 +17743,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 2025
     agency:
       agency_id: DOGE
@@ -18968,6 +17763,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: o7wBfLA8
@@ -19114,67 +17910,17 @@
   comment:
   table_note:
   positions:
-  - id: opm-christina-hanna
-    type: appointed
-    agency_id: OPM
-    name: Christina Hanna
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-02-03'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-03'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 48
-    appt_type: Other
-    pay_grade: ED-00
-    salary:
-    pd_code: 6A39735
-    sge:
-    excepted: true
-    title: Expert
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Sourced from FOIAed document
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions
-    duration_summary: from Feb 03, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Christina Hanna
-      sort_name: Hanna
-      slug: christina-hanna
-      page_slug:
-      age: 39
-      background: hr
-      category: support
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#christina-hanna"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
     obj_type: Position
   events:
   - id: 15xKjpfm
@@ -19344,7 +18090,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 07, 2025
     agency:
       agency_id: DOI
@@ -19365,6 +18110,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: eSiT2dsb
@@ -19698,7 +18444,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 21, 2025
     agency:
       agency_id: DOJ
@@ -19719,6 +18464,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: mZDXKZv5
@@ -19787,129 +18533,27 @@
   comment:
   table_note:
   positions:
-  - id: greg-hogan-opm
-    type: appointed
-    agency_id: OPM
+  - id: onboard-opm-greg-hogan
     name: Greg Hogan
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date: '2025-02-11'
-    end_date_truth: verified
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: SES Noncareer Appt
-    fuzz:
-    appt_type_code: 55
-    appt_type: 55-Noncareer (Senior Exec Perm)
-    pay_grade: ES-00
-    salary: "$195,200"
-    pd_code: 6A38081
-    sge:
-    excepted:
-    title: Senior Advisor to the Director for Technology and Delivery
-    series: 301
-    supervisory: true
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: details from FOIA doucments
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions onboard-opm-greg-hogan
-    duration_summary: Jan 20, 2025 to Feb 11, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Greg Hogan
-      sort_name: Hogan
-      slug: greg-hogan
-      page_slug:
-      age: 42
-      background: coder
-      category: enabler
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#greg-hogan"
-      comment:
-      table_note:
-      obj_type: Person
+    type: onboard
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
+    case_no: 8:25-cv-00430
+    comment:
+    file: onboard-opm-greg-hogan
+    url: "/documents/onboard-opm-greg-hogan"
     obj_type: Position
-  - id: greg-hogan-opm-2
-    type: promotion
-    agency_id: OPM
+  - id: onboard-opm-greg-hogan
     name: Greg Hogan
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-02-11'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-11'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: SES Noncareer Appt
-    fuzz:
-    appt_type_code: 55
-    appt_type: 55-Noncareer (Senior Exec Perm)
-    pay_grade: ES-00
-    salary: "$195,200"
-    pd_code: 6A39566
-    sge:
-    excepted:
-    title: Chief Information OFficer
-    series: 301
-    supervisory: true
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: details from FOIA doucments
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions onboard-opm-greg-hogan
-    duration_summary: from Feb 11, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Greg Hogan
-      sort_name: Hogan
-      slug: greg-hogan
-      page_slug:
-      age: 42
-      background: coder
-      category: enabler
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#greg-hogan"
-      comment:
-      table_note:
-      obj_type: Person
+    type: onboard
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
+    case_no: 8:25-cv-00430
+    comment:
+    file: onboard-opm-greg-hogan
+    url: "/documents/onboard-opm-greg-hogan"
     obj_type: Position
   events:
   - id: GSsFm4n8
@@ -20111,7 +18755,6 @@
     comment: FIXME
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 20, 2025
     agency:
       agency_id: GSA
@@ -20135,6 +18778,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 3rNhg30Y
@@ -20418,7 +19062,6 @@
     comment: Was added to the ProPublica tracker on 2025-02-06
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 05, 2025
     agency:
       agency_id: DOGE
@@ -20439,6 +19082,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-doge-doi-holmes
     type: detailed
@@ -20480,7 +19124,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 24, 2025
     agency:
       agency_id: DOI
@@ -20505,6 +19148,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 9CEKeLm7
@@ -20793,7 +19437,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 17, 2025
     agency:
       agency_id: USIP
@@ -20814,6 +19457,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: usaid-deputy-jackson
     type: appointed
@@ -20855,7 +19499,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 18, 2025
     agency:
       agency_id: USAID
@@ -20876,6 +19519,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: gpJzqYTy
@@ -21127,7 +19771,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Apr 24, 2025
     agency:
       agency_id: GSA
@@ -21148,6 +19791,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events: []
   system_access: []
@@ -21209,7 +19853,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 12, 2025
     agency:
       agency_id: EPA
@@ -21230,6 +19873,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events: []
   system_access:
@@ -21316,7 +19960,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 16, 2025
     agency:
       agency_id: FAA
@@ -21339,6 +19982,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events: []
   system_access: []
@@ -21400,7 +20044,6 @@
     comment: Listed as interviewing USDS staff on 1/21, not in GSA or OPM crew
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 20, 2025
     agency:
       agency_id: DOGE
@@ -21421,6 +20064,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detaile-doge-epa-killian
     type: detailed
@@ -21462,7 +20106,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 04, 2025
     agency:
       agency_id: EPA
@@ -21483,6 +20126,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-doge-dol-killian
     type: detailed
@@ -21524,7 +20168,6 @@
     comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 13, 2025
     agency:
       agency_id: DOL
@@ -21545,6 +20188,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-doge-ssa-killian
     type: unknown
@@ -21586,7 +20230,6 @@
     comment: Identified as being at the agency on 2/20; unclear how long before
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 20, 2025
     agency:
       agency_id: SSA
@@ -21607,6 +20250,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 2y8WthBd
@@ -21829,67 +20473,16 @@
   comment:
   table_note:
   positions:
-  - id: gavin-kliger-opm
-    type: appointed
-    agency_id: OPM
-    name: Gavin Kliger
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date: '2025-02-18'
-    end_date_truth: verified
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date: '2025-05-20'
-    nte_date_truth: verified
-    signed_date:
-    description: Provisional Appt NTE
-    fuzz:
-    appt_type_code: 44
-    appt_type: Schedule C
-    pay_grade: GS-15
-    salary: "$195,200"
-    pd_code: 6A38025
-    sge:
-    excepted: true
-    title: Senior Advisor to the Director for Information Technology
-    series: 301
-    supervisory: true
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: I confirmed he is OPM-5
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions onboard-opm-employee-5
-    duration_summary: Jan 20, 2025 to Feb 18, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Gavin Kliger
-      sort_name: Kliger
-      slug: gavin-kliger
-      page_slug:
-      age: 25
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#gavin-kliger"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: onboard-opm-employee-5
+    name:
+    type: onboard
+    alias: OPM-5
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
+    case_no: 8:25-cv-00430
+    comment:
+    file: onboard-opm-employee-5
+    url: "/documents/onboard-opm-employee-5"
     obj_type: Position
   - id: detail-opm-usaid-kliger
     type: detailed
@@ -21931,7 +20524,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 27, 2025
     agency:
       agency_id: USAID
@@ -21956,6 +20548,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-opm-usda-kliger
     type: detailed
@@ -21999,7 +20592,6 @@
       OSEC - DC
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 01, 2025
     agency:
       agency_id: USDA
@@ -22024,6 +20616,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-opm-cfpb-kliger
     type: detailed
@@ -22065,7 +20658,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: Feb 07, 2025 to May 08, 2025
     agency:
       agency_id: CFPB
@@ -22090,134 +20682,29 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
-  - id: gavin-kliger-opm-2
-    type: appointed
-    agency_id: OPM
-    name: Gavin Kliger
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-02-18'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-18'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 44
-    appt_type: Schedule C
-    pay_grade: GS-15
-    salary: "$195,200"
-    pd_code: 6A38025
-    sge:
-    excepted: true
-    title: Senior Advisor to the Director for Information Technology
-    series: 301
-    supervisory: true
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Converted from provisional to excepted position
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions onboard-opm-employee-5
-    duration_summary: from Feb 18, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Gavin Kliger
-      sort_name: Kliger
-      slug: gavin-kliger
-      page_slug:
-      age: 25
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#gavin-kliger"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: onboard-opm-employee-5
+    name:
+    type: onboard
+    alias: OPM-5
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
+    case_no: 8:25-cv-00430
+    comment:
+    file: onboard-opm-employee-5
+    url: "/documents/onboard-opm-employee-5"
     obj_type: Position
-  - id: detail-opm-irs-gavin-kliger
-    type: detailed
-    agency_id: IRS
-    name: Gavin Kliger
-    doge_alias_id:
-    from_agency_id: OPM
-    from_truth: verified
-    start_date: '2025-02-19'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date: '2025-04-17'
-    end_date_truth: reported
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-19'
-    nte_date: '2025-06-19'
-    nte_date_truth: inferred
-    signed_date: '2025-02-19'
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://www.taxnotes.com/research/federal/legislative-documents/congressional-tax-correspondence/treasury-official-sends-memo-doge-detail-crapo/7rl0x
-    reimbursed: true
-    reimbursement_amount:
-    comment: He was forcibly removed from agency on 2025-04-17
-    qualifications:
-    table_note:
-    documents: gov.uscourts.nysd.636609.144.0
-    duration_summary: Feb 19, 2025 to Apr 17, 2025
-    agency:
-      agency_id: IRS
-      name: Internal Revenue Service
-      short_name: IRS
-    from_agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Gavin Kliger
-      sort_name: Kliger
-      slug: gavin-kliger
-      page_slug:
-      age: 25
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#gavin-kliger"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: gov.uscourts.nysd.636609.144.0
+    name:
+    type: directory
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
+    case_no: 1:25-cv-01144
+    comment: Testimony about the positions of various IRS appointees
+    file: gov.uscourts.nysd.636609.144.0.pdf
+    url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
     obj_type: Position
   - id: detail-opm-ftc-kliger
     type: detailed
@@ -22259,7 +20746,6 @@
     comment: Title is not given, reported as starting "last week" from 2025-04-04
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Mar 28, 2025
     agency:
       agency_id: FTC
@@ -22284,6 +20770,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-opm-dhs-kliger
     type: detailed
@@ -22325,7 +20812,6 @@
     comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: DHS
@@ -22350,6 +20836,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-tsa-kliger
     type: detailed
@@ -22391,7 +20878,6 @@
     comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: TSA
@@ -22416,6 +20902,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 4F5kEan6
@@ -23480,7 +21967,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 07, 2025
     agency:
       agency_id: DOGE
@@ -23501,6 +21987,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: KLhbExN5
@@ -23603,73 +22090,16 @@
   comment:
   table_note:
   positions:
-  - id: ssa-employee-6
-    type: appointed
-    agency_id: SSA
-    name: Jon Koval
-    doge_alias_id: SSA-6
-    from_agency_id:
-    from_truth:
-    start_date: '2025-02-23'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-23'
-    nte_date: '2026-02-22'
-    nte_date_truth: verified
-    signed_date:
-    description: Excepted Appointment NTE
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade: ED-00
-    salary: "$0"
-    pd_code: KNX0360
-    sge:
-    excepted:
-    title: Expert
-    series:
-    supervisory:
-    office: Office of the CIO
-    source:
-    reimbursed:
-    reimbursement_amount:
+  - id: onboard-ssa-employee-6
+    name:
+    type: onboard
+    alias: SSA-6
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
     comment:
-    qualifications:
-    table_note:
-    documents: onboard-ssa-employee-6
-    duration_summary: from Feb 23, 2025
-    agency:
-      agency_id: SSA
-      name: Social Security Administration
-      short_name: SSA
-    person:
-      name: Jon Koval
-      sort_name: Koval
-      slug: jon-koval
-      page_slug:
-      age: 27
-      background: finance
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#jon-koval"
-      comment:
-      table_note:
-      obj_type: Person
-    alias:
-      id: SSA-6
-      agency_id: SSA
-      name: Jon Koval
-      evidence: "- [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
-      obj_type: Alias
+    file: onboard-ssa-employee-6.pdf
+    url: "/documents/onboard-ssa-employee-6.pdf"
     obj_type: Position
   - id: detail-ssa-doj-koval
     type: detailed
@@ -23711,7 +22141,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 15, 2025
     agency:
       agency_id: DOJ
@@ -23732,6 +22161,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 7mtGbnRJ
@@ -24069,129 +22499,27 @@
   comment:
   table_note:
   positions:
-  - id: onboard-treasury-thomas-krause
-    type: consultant
-    agency_id: Treasury
-    name: Tom Krause
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-23'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date: '2025-02-12'
-    end_date_truth: verified
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-23'
-    nte_date: '2025-04-10'
-    nte_date_truth: verified
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary: "$0"
-    pd_code:
-    sge: true
-    excepted:
-    title: Senior Advisor for Technology and Modernization
-    series:
-    supervisory:
-    office: Office of the Chief of Staff
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Part-time
-    qualifications:
-    table_note:
-    documents: onboard-treasury-thomas-krause gov.uscourts.nysd.636609.144.0
-    duration_summary: Jan 23, 2025 to Feb 12, 2025
-    agency:
-      agency_id: Treasury
-      name: Department of the Treasury
-      short_name: Treasury
-    person:
-      name: Tom Krause
-      sort_name: Krause
-      slug: tom-krause
-      page_slug:
-      age: 47
-      background: executive
-      category: enabler
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#tom-krause"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: gov.uscourts.nysd.636609.144.0
+    name:
+    type: directory
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
+    case_no: 1:25-cv-01144
+    comment: Testimony about the positions of various IRS appointees
+    file: gov.uscourts.nysd.636609.144.0.pdf
+    url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
     obj_type: Position
-  - id: appoint-treasury-thomas-krause
-    type: appointed
-    agency_id: Treasury
-    name: Tom Krause
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-02-13'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-13'
-    nte_date: '2025-07-03'
-    nte_date_truth: verified
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type: Schedule C
-    pay_grade: GS-15
-    salary:
-    pd_code:
-    sge: true
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
-    reimbursed:
-    reimbursement_amount:
-    comment: Changed to a full-time position
-    qualifications:
-    table_note:
-    documents: gov.uscourts.nysd.636609.144.0
-    duration_summary: from Feb 13, 2025
-    agency:
-      agency_id: Treasury
-      name: Department of the Treasury
-      short_name: Treasury
-    person:
-      name: Tom Krause
-      sort_name: Krause
-      slug: tom-krause
-      page_slug:
-      age: 47
-      background: executive
-      category: enabler
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#tom-krause"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: gov.uscourts.nysd.636609.144.0
+    name:
+    type: directory
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
+    case_no: 1:25-cv-01144
+    comment: Testimony about the positions of various IRS appointees
+    file: gov.uscourts.nysd.636609.144.0.pdf
+    url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
     obj_type: Position
   events:
   - id: UsAfrk26
@@ -24543,7 +22871,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 10, 2025
     agency:
       agency_id: HUD
@@ -24564,6 +22891,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: TjkvD7jk
@@ -24755,7 +23083,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 25, 2025
     agency:
       agency_id: VA
@@ -24776,6 +23103,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: ja9gwcUS
@@ -24878,7 +23206,6 @@
     comment: I know he started at the GSA before 1/28
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 20, 2025
     agency:
       agency_id: GSA
@@ -24899,6 +23226,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-usaid-jeremy-lewin
     type: detailed
@@ -24940,7 +23268,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: Jan 28, 2025 to Mar 18, 2025
     agency:
       agency_id: USAID
@@ -24965,6 +23292,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-hhs-cms-lewin
     type: internal
@@ -25006,7 +23334,6 @@
     comment: Inferring based on first reported access to CMS CALM system
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 03, 2025
     agency:
       agency_id: CMS
@@ -25031,6 +23358,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-cfpb-jeremy-lewin
     type: detailed
@@ -25072,7 +23400,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 07, 2025
     agency:
       agency_id: CFPB
@@ -25097,6 +23424,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-hhs-lewin
     type: detailed
@@ -25138,7 +23466,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 21, 2025
     agency:
       agency_id: HHS
@@ -25163,6 +23490,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-hhs-nih-lewin
     type: internal
@@ -25204,7 +23532,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 24, 2025
     agency:
       agency_id: NIH
@@ -25229,6 +23556,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: usaid-jeremy-lewin-2
     type: appointed
@@ -25270,7 +23598,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 18, 2025
     agency:
       agency_id: USAID
@@ -25291,6 +23618,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: state-lewin-foreign
     type: appointed
@@ -25332,7 +23660,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 15, 2025
     agency:
       agency_id: State
@@ -25353,6 +23680,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 2VmzIcAJ
@@ -26025,7 +24353,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 10, 2025
     agency:
       agency_id: DOGE
@@ -26046,6 +24373,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: Gti7PARC
@@ -26131,7 +24459,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 12, 2025
     agency:
       agency_id: EPA
@@ -26152,6 +24479,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events: []
   system_access:
@@ -26236,7 +24564,6 @@
     comment: Tyler Hassan reported to be working with Matt Luby to scrutinize grants
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 17, 2025
     agency:
       agency_id: DOI
@@ -26257,6 +24584,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: V7Gkkvah
@@ -26592,7 +24920,6 @@
     comment: POGO has his resume and listing as an OPM staffer
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Mar 2025
     agency:
       agency_id: OPM
@@ -26613,6 +24940,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: fbi-makecha
     type: detailed
@@ -26656,7 +24984,6 @@
       reportedly has been there since the end of March
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Mar 30, 2025
     agency:
       agency_id: FBI
@@ -26677,6 +25004,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-fcc-makecha
     type: detailed
@@ -26718,7 +25046,6 @@
     comment: Assuming detailed, but not sure from where
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 04, 2025
     agency:
       agency_id: FCC
@@ -26739,6 +25066,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: CC2AMRi3
@@ -26916,7 +25244,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 16, 2025
     agency:
       agency_id: FAA
@@ -26940,6 +25267,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: c2uFcNGD
@@ -27027,7 +25355,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Apr 24, 2025
     agency:
       agency_id: GSA
@@ -27048,6 +25375,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events: []
   system_access: []
@@ -27109,7 +25437,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 28, 2025
     agency:
       agency_id: IAF
@@ -27130,6 +25457,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 60ZEU148
@@ -27276,7 +25604,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 11, 2025
     agency:
       agency_id: DHS
@@ -27297,6 +25624,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events: []
   system_access: []
@@ -27358,7 +25686,6 @@
     comment: Assuming a GSA start since named in NPR report as from GSA in detailing to other agencies
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Apr 25, 2025
     agency:
       agency_id: GSA
@@ -27379,6 +25706,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-dfc-mendelson
     type: detailed
@@ -27420,7 +25748,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 28, 2025
     agency:
       agency_id: USDFC
@@ -27445,6 +25772,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-sec-mendelson
     type: detailed
@@ -27486,7 +25814,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ May 02, 2025
     agency:
       agency_id: SEC
@@ -27511,6 +25838,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 6HPPymkF
@@ -27689,7 +26017,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 20, 2025
     agency:
       agency_id: DOGE
@@ -27710,6 +26037,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: VdEHz47g
@@ -27819,7 +26147,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 14, 2025
     agency:
       agency_id: HHS
@@ -27840,6 +26167,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-hhs-nih-minor
     type: detailed
@@ -27881,7 +26209,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 24, 2025
     agency:
       agency_id: NIH
@@ -27906,6 +26233,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 4Ffvq4fv
@@ -28032,7 +26360,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 10, 2025
     agency:
       agency_id: HUD
@@ -28053,6 +26380,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: F3UCNb8e
@@ -28305,7 +26633,6 @@
     comment: Reporting on 4/15 just says he arrived "earlier this month"
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Apr 05, 2025
     agency:
       agency_id: SEC
@@ -28326,6 +26653,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: LP7ebs7r
@@ -28371,67 +26699,17 @@
   comment:
   table_note:
   positions:
-  - id: opm-bryanne-mlodzianowski
-    type: appointed
-    agency_id: OPM
-    name: Bryanne-Michelle Mlodzianowski
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-02-03'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-03'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 48
-    appt_type: Other
-    pay_grade: ED-00
-    salary:
-    pd_code: 6A39750
-    sge:
-    excepted: true
-    title: Expert
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Sourced from a FOIAed document
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions
-    duration_summary: from Feb 03, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Bryanne-Michelle Mlodzianowski
-      sort_name: Mlodzianowski
-      slug: mlodzianowski
-      page_slug:
-      age: 40
-      background: hr
-      category: support
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#mlodzianowski"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
     obj_type: Position
   events:
   - id: 15xKjpfm
@@ -28561,83 +26839,16 @@
   comment:
   table_note:
   positions:
-  - id: detail-dol-ssa-employee-3
-    type: detailed
-    agency_id: SSA
-    name: Aram Moghaddassi
-    doge_alias_id: SSA-3
-    from_agency_id: DOL
-    from_truth: verified
-    start_date: '2025-02-22'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-22'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed: true
-    reimbursement_amount: "$71,000 per quarter"
-    comment:
-    qualifications:
-    table_note:
-    documents: detail-20250317-dol-ssa-employee-3 onboard-ssa-employee-3
-    duration_summary: from Feb 22, 2025
-    agency:
-      agency_id: SSA
-      name: Social Security Administration
-      short_name: SSA
-    from_agency:
-      agency_id: DOL
-      name: Department of Labor
-      short_name: DOL
-    person:
-      name: Aram Moghaddassi
-      sort_name: Moghaddassi
-      slug: aram-mohghaddassi
-      page_slug:
-      age: 26
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#aram-mohghaddassi"
-      comment:
-      table_note:
-      obj_type: Person
-    alias:
-      id: SSA-3
-      agency_id: SSA
-      name: Aram Moghaddassi
-      evidence: |-
-        - Employee is detailed from DOL to SSA on a reimbursed basis (ie, not a volunteer SGE) on 2025-02-22
-        - Marko Elez and Aram Moghaddassi are both DOL-based and seemingly paid
-        - Marko Elez was already identified as SSA-7 by NPR
-        - Cole Killian another possibility, but he appears to be a volunteer SGE
-        - Flick testimony - "_we began onboarding and training Employee 3, a Schedule C Policy Advisor, detailed from the Department of Labor to SSA_" with it finalized on February 22. "_His duties currently relate to improper payments and SSA's Death Master File._"
-        - Aram was linked to changed to the Death Master File on the week of 2025-04-08
-      obj_type: Alias
+  - id: onboard-ssa-employee-3
+    name:
+    type: onboard
+    alias: SSA-3
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
+    comment: Detail, so no SF-50
+    file: onboard-ssa-employee-3.pdf
+    url: "/documents/onboard-ssa-employee-3.pdf"
     obj_type: Position
   - id: internal-hhs-cms-mohgaddassi
     type: internal
@@ -28679,7 +26890,6 @@
     comment: Reported access to system same day as start of detail to HHS
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 05, 2025
     agency:
       agency_id: CMS
@@ -28704,6 +26914,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-dol-hhs-mohgaddassi
     type: detailed
@@ -28745,7 +26956,6 @@
     comment: No documentation, reported in court filing
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 05, 2025
     agency:
       agency_id: HHS
@@ -28770,6 +26980,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-cpb-mohgaddassi
     type: internal
@@ -28811,7 +27022,6 @@
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: CBP
@@ -28836,6 +27046,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-ice-mohgaddassi
     type: internal
@@ -28877,7 +27088,6 @@
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: ICE
@@ -28902,6 +27112,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-tsa-mohgaddassi
     type: internal
@@ -28943,7 +27154,6 @@
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: TSA
@@ -28968,6 +27178,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-uscis-mohgaddassi
     type: internal
@@ -29009,7 +27220,6 @@
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: USCIS
@@ -29034,6 +27244,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-dol-dhs-mohgaddassi
     type: detailed
@@ -29075,7 +27286,6 @@
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: DHS
@@ -29100,6 +27310,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: dol-moghaddassi
     type: unknown
@@ -29141,7 +27352,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: DOL
@@ -29162,6 +27372,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 3MdiqW9w
@@ -29823,67 +28034,17 @@
   comment:
   table_note:
   positions:
-  - id: opm-justin-monroe
-    type: appointed
-    agency_id: OPM
-    name: Justin Monroe
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-28'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-28'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 48
-    appt_type: Other
-    pay_grade: ED-00
-    salary:
-    pd_code: 6A39734
-    sge:
-    excepted: true
-    title: Expert
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Sourced from FOIA documents
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions
-    duration_summary: from Jan 28, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Justin Monroe
-      sort_name: Monroe
-      slug: justin-monroe
-      page_slug:
-      age: 36
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#justin-monroe"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
     obj_type: Position
   - id: detail-opm-fbi-monroe
     type: detailed
@@ -29925,7 +28086,6 @@
     comment: Reported as an unidentified SpaceX employee is reported to be working as an advisor to the Director of the FBI, but alias figured out later
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 29, 2025
     agency:
       agency_id: FBI
@@ -29950,6 +28110,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 1KTKczl5
@@ -30102,74 +28263,15 @@
   table_note:
   positions:
   - id: onboard-education-employee-4
-    type: consultant
-    agency_id: Education
     name: Brooks Morgan
-    doge_alias_id: ED-4
-    from_agency_id:
-    from_truth:
-    start_date: '2025-02-04'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-04'
-    nte_date: '2025-08-04'
-    nte_date_truth: verified
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary: "$0"
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Part-time
-    qualifications:
-    table_note:
-    documents: onboard-education-employee-4
-    duration_summary: from Feb 04, 2025
-    agency:
-      agency_id: Education
-      name: Department of Education
-      short_name: Ed
-    person:
-      name: Brooks Morgan
-      sort_name: Morgan
-      slug: brooks-morgan
-      page_slug:
-      age: 39
-      background: executive
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#brooks-morgan"
-      comment:
-      table_note:
-      obj_type: Person
+    type: onboard
     alias:
-      id: ED-4
-      agency_id: Education
-      name: Brooks Morgan
-      evidence: |-
-        - This is the only consultant position listed in [this legal document](https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf)
-        - Further down the same document, a table lists one consultant starting on the same date unredacted and it's Brooks Morgan
-      obj_type: Alias
+    date:
+    source:
+    case_no:
+    comment:
+    file: onboard-education-employee-4.pdf
+    url: "/documents/onboard-education-employee-4.pdf"
     obj_type: Position
   - id: detail-education-fdic-morgan
     type: detailed
@@ -30211,7 +28313,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 10, 2025
     agency:
       agency_id: FDIC
@@ -30236,6 +28337,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: CPQe7omt
@@ -30394,7 +28496,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 23, 2025
     agency:
       agency_id: EOP
@@ -30418,6 +28519,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: NrAucFtb
@@ -30556,7 +28658,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 20, 2025
     agency:
       agency_id: DOGE
@@ -30577,6 +28678,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 8vDj2q7P
@@ -30892,67 +28994,16 @@
   comment:
   table_note:
   positions:
-  - id: treasury-newnam
-    type: appointed
-    agency_id: Treasury
-    name: Todd Newnam
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-03-06'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-03-06'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz: Identity is only revealed in a court filing, using ethics training date for start date
-    appt_type_code:
-    appt_type: Schedule C
-    pay_grade: GS-15
-    salary:
-    pd_code:
-    sge: false
-    excepted:
-    title: Senior Advisor
-    series:
-    supervisory:
-    office:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
-    reimbursed:
-    reimbursement_amount:
-    comment: NYT says he is a Senior Advisor
-    qualifications:
-    table_note:
-    documents: gov.uscourts.nysd.636609.144.0
-    duration_summary: from Mar 06, 2025
-    agency:
-      agency_id: Treasury
-      name: Department of the Treasury
-      short_name: Treasury
-    person:
-      name: Todd Newnam
-      sort_name: Newnam
-      slug: todd-newnam
-      page_slug:
-      age: 42
-      background: executive
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#todd-newnam"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: gov.uscourts.nysd.636609.144.0
+    name:
+    type: directory
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
+    case_no: 1:25-cv-01144
+    comment: Testimony about the positions of various IRS appointees
+    file: gov.uscourts.nysd.636609.144.0.pdf
+    url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
     obj_type: Position
   - id: internal-treasury-irs-newnam
     type: internal
@@ -30994,7 +29045,6 @@
     comment: NYT says he is a Senior Advisor
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Apr 2025
     agency:
       agency_id: IRS
@@ -31019,6 +29069,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: hRNyXeoy
@@ -31119,7 +29170,6 @@
     comment: Inferring detailed from GSA to SBA
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 2025
     agency:
       agency_id: GSA
@@ -31140,6 +29190,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: sba-park
     type: detailed
@@ -31181,7 +29232,6 @@
     comment: Reported in a tweet from the date
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 03, 2025
     agency:
       agency_id: SBA
@@ -31206,6 +29256,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-exim-park
     type: detailed
@@ -31247,7 +29298,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from May 14, 2025
     agency:
       agency_id: EXIM
@@ -31268,6 +29318,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: Qkjr7Ku3
@@ -31343,67 +29394,17 @@
   comment:
   table_note:
   positions:
-  - id: noah-peters-opm
-    type: appointed
-    agency_id: OPM
-    name: Noah Peters
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 44
-    appt_type: Schedule C
-    pay_grade: GS-15
-    salary:
-    pd_code: 6A38859
-    sge:
-    excepted: true
-    title: Senior Advisor
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Details from a FOIA document
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions
-    duration_summary: from Jan 20, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Noah Peters
-      sort_name: Peters
-      slug: noah-peters
-      page_slug:
-      age: 39
-      background: lawyer
-      category: support
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#noah-peters"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
     obj_type: Position
   events:
   - id: JLTME6KA
@@ -31812,76 +29813,16 @@
   comment:
   table_note:
   positions:
-  - id: opm-nikhil-rajpal
-    type: appointed
-    agency_id: OPM
-    name: Nikhil Rajpal
-    doge_alias_id: OPM-6
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-24'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-24'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 48
-    appt_type: Other
-    pay_grade: ED-00
-    salary: "$0"
-    pd_code: 6A39738
-    sge:
-    excepted: true
-    title: Expert
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: I confirmed that OPM Employee 6 is Nikhil but have no other info
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions onboard-opm-employee-6
-    duration_summary: from Jan 24, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Nikhil Rajpal
-      sort_name: Rajpal
-      slug: nikhil-rajpal
-      page_slug:
-      age: 30
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#nikhil-rajpal"
-      comment:
-      table_note:
-      obj_type: Person
-    alias:
-      id: OPM-6
-      agency_id: OPM
-      name: Nikhil Rajpal
-      evidence: |-
-        - Onboarded on 2025-01-24 as a vounteer SGE with a term not to exceed 2025-07-22
-        - This is likely one of the other young DOGE crew like Jordan Wick or Luke Farritor, etc.
-        - PD 6A39738 listed on hiring forms = Nikhil Rajpal on FOIAed list of OPM positions
-      obj_type: Alias
+  - id: onboard-opm-employee-6
+    name:
+    type: onboard
+    alias: OPM-6
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
+    case_no: 8:25-cv-00430
+    comment:
+    file: onboard-opm-employee-6
+    url: "/documents/onboard-opm-employee-6"
     obj_type: Position
   - id: detail-opm-noaa-rajpal
     type: detailed
@@ -31923,7 +29864,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 04, 2025
     agency:
       agency_id: NOAA
@@ -31948,6 +29888,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-opm-cfpb-nikhil-rajpal
     type: detailed
@@ -31989,7 +29930,6 @@
     comment: Details from court filing
     qualifications:
     table_note:
-    documents:
     duration_summary: Feb 07, 2025 to Mar 21, 2025
     agency:
       agency_id: CFPB
@@ -32014,6 +29954,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 2y8WthBd
@@ -32405,7 +30346,6 @@
     comment: Details provided in sworn testimony
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 23, 2025
     agency:
       agency_id: DOGE
@@ -32426,72 +30366,18 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
-  - id: detail-doge-education-adam-ramada
-    type: detailed
-    agency_id: Education
-    name: Adam Ramada
-    doge_alias_id:
-    from_agency_id: DOGE
-    from_truth: verified
-    start_date: '2025-01-28'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-28'
-    nte_date: '2026-07-04'
-    nte_date_truth: verified
-    signed_date: '2025-02-12'
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.5_1.pdf
-    reimbursed: false
-    reimbursement_amount:
-    comment: He reports one other USDS detailee is there, 2 Education staffers, and 2 other detailees from elsewhere (OPM? GSA?)
-    qualifications:
-    table_note:
-    documents: 20250212-doge-education-all
-    duration_summary: from Jan 28, 2025
-    agency:
-      agency_id: Education
-      name: Department of Education
-      short_name: Ed
-    from_agency:
-      agency_id: DOGE
-      name: Department of Government Efficiency
-      short_name: DOGE
-    person:
-      name: Adam Ramada
-      sort_name: Ramada
-      slug: adam-ramada
-      page_slug:
-      age: 35
-      background: finance
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#adam-ramada"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: detail-20250212-doge-education-all
+    name:
+    type: mou
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
+    case_no:
+    comment:
+    file: mou-20250212-doge-education-all.pdf
+    url: "/documents/mou-20250212-doge-education-all.pdf"
     obj_type: Position
   - id: detail-doge-energy-adam-ramada
     type: detailed
@@ -32533,7 +30419,6 @@
     comment: Start date was given by DOE spokesperson denying a news report
     qualifications:
     table_note:
-    documents:
     duration_summary: "~ Feb 04, 2025 to ~ Feb 08, 2025"
     agency:
       agency_id: Energy
@@ -32558,6 +30443,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-doge-dol-ramada
     type: detailed
@@ -32599,7 +30485,6 @@
     comment: Testimony was on 2/6. DOGE showed up at agency on 2/5. Mentions 3 other DOGE staff there
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 05, 2025
     agency:
       agency_id: DOL
@@ -32624,6 +30509,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-doge-fdic-ramada
     type: detailed
@@ -32665,7 +30551,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 10, 2025
     agency:
       agency_id: FDIC
@@ -32690,6 +30575,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 9ApmChVN
@@ -32886,67 +30772,17 @@
   comment:
   table_note:
   positions:
-  - id: opm-austin-raynor
-    type: appointed
-    agency_id: OPM
-    name: Austin Raynor
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-30'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-30'
-    nte_date: '2025-07-22'
-    nte_date_truth: verified
-    signed_date:
-    description: Provisional Appt NTE
-    fuzz:
-    appt_type_code: 48
-    appt_type: Other
-    pay_grade: GS-15
-    salary:
-    pd_code: 6A39748
-    sge:
-    excepted: true
-    title: Senior Advisor
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: From a FOIA document
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions
-    duration_summary: from Jan 30, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Austin Raynor
-      sort_name: Raynor
-      slug: austin-raynor
-      page_slug:
-      age: 36
-      background: lawyer
-      category: support
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#austin-raynor"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
     obj_type: Position
   events:
   - id: 3tG7l53P
@@ -33127,75 +30963,16 @@
   comment:
   table_note:
   positions:
-  - id: ssa-empwloyee-9
-    type: appointed
-    agency_id: SSA
-    name: Payton Rehling
-    doge_alias_id: SSA-9
-    from_agency_id:
-    from_truth:
-    start_date: '2025-02-23'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-23'
-    nte_date: '2026-02-22'
-    nte_date_truth: verified
-    signed_date:
-    description: Excepted Appointment NTE
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade: ED-00
-    salary: "$0"
-    pd_code: KNX0380
-    sge:
-    excepted:
-    title: Expert
-    series:
-    supervisory:
-    office: Office of the CIO
-    source:
-    reimbursed:
-    reimbursement_amount:
+  - id: onboard-ssa-employee-9
+    name:
+    type: onboard
+    alias: SSA-9
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
     comment:
-    qualifications:
-    table_note:
-    documents: onboard-ssa-employee-9
-    duration_summary: from Feb 23, 2025
-    agency:
-      agency_id: SSA
-      name: Social Security Administration
-      short_name: SSA
-    person:
-      name: Payton Rehling
-      sort_name: Rehling
-      slug: payton-rehling
-      page_slug:
-      age: 27
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#payton-rehling"
-      comment:
-      table_note:
-      obj_type: Person
-    alias:
-      id: SSA-9
-      agency_id: SSA
-      name: Payton Rehling
-      evidence: |-
-        - [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)
-        - In their qualifications, thety list being a Senior Associate, Data Engineer with a backgroun in AI, Airflow and Genetic Algorithms. Also built a Manufacturing Execution System (MES) for home battery deployments
-      obj_type: Alias
+    file: onboard-ssa-employee-9.pdf
+    url: "/documents/onboard-ssa-employee-9.pdf"
     obj_type: Position
   - id: detail-ssa-doj-rehling
     type: detailed
@@ -33237,7 +31014,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 15, 2025
     agency:
       agency_id: DOJ
@@ -33258,6 +31034,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-ssa-dhs-rehling
     type: detailed
@@ -33299,7 +31076,6 @@
     comment: No info, but listed in NYT roundup
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: DHS
@@ -33324,6 +31100,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-tsa-rehling
     type: detailed
@@ -33365,7 +31142,6 @@
     comment: No info, but listed in NYT roundup
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: TSA
@@ -33390,6 +31166,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-uscis-rehling
     type: detailed
@@ -33431,7 +31208,6 @@
     comment: No info, but listed in NYT roundup
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: USCIS
@@ -33456,6 +31232,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 7mtGbnRJ
@@ -33995,7 +31772,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: Feb 07, 2025 to Mar 07, 2025
     agency:
       agency_id: Energy
@@ -34016,6 +31792,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events: []
   system_access: []
@@ -34077,7 +31854,6 @@
     comment: Hiring information given in court filing
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 27, 2025
     agency:
       agency_id: HHS
@@ -34098,6 +31874,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-hhs-cms-riley
     type: internal
@@ -34139,7 +31916,6 @@
     comment: Dating from first reported access to CALM
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 03, 2025
     agency:
       agency_id: CMS
@@ -34164,6 +31940,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-hhs-nih-riley
     type: internal
@@ -34205,7 +31982,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 24, 2025
     agency:
       agency_id: NIH
@@ -34230,6 +32006,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-hhs-nsf-riley
     type: consultant
@@ -34271,7 +32048,6 @@
     comment: Showed up at the agency to do secondary round of grant reviews. Assuming a detail
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 14, 2025
     agency:
       agency_id: NSF
@@ -34296,6 +32072,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: V7Gkkvah
@@ -34875,7 +32652,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 25, 2025
     agency:
       agency_id: VA
@@ -34896,6 +32672,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: ja9gwcUS
@@ -34998,7 +32775,6 @@
     comment: Reportedly removed for complying quickly with judge's orders to block access
     qualifications:
     table_note:
-    documents:
     duration_summary: Jan 31, 2025 to Mar 24, 2024
     agency:
       agency_id: SSA
@@ -35019,6 +32795,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: ssa-mike-russo-advisor
     type: demotion
@@ -35062,7 +32839,6 @@
       systems
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 25, 2025
     agency:
       agency_id: SSA
@@ -35083,6 +32859,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: FP9n4cfD
@@ -35343,67 +33120,17 @@
   comment:
   table_note:
   positions:
-  - id: amanda-scales-opm
-    type: appointed
-    agency_id: OPM
-    name: Amanda Scales
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: SES Noncareer Appt
-    fuzz:
-    appt_type_code: 55
-    appt_type: 55-Noncareer (Senior Exec Perm)
-    pay_grade: ES-00
-    salary:
-    pd_code: GAPMES00905
-    sge:
-    excepted:
-    title: Chief of Staff
-    series: 301
-    supervisory: true
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Sourced from a FOIA document
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions
-    duration_summary: from Jan 20, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Amanda Scales
-      sort_name: Scales
-      slug: amanda-scales
-      page_slug:
-      age: 34
-      background: hr
-      category: leadership
-      own_page: false
-      blurb: An associate of Elon Musk from xAI, Amanda Scales has been located at GSA since Day 1.
-      reporting_notes:
-      path: "/people#amanda-scales"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
     obj_type: Position
   events:
   - id: JQXwpLN5
@@ -35748,7 +33475,6 @@
     comment: Details from a news article
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 18, 2025
     agency:
       agency_id: GSA
@@ -35772,6 +33498,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: NPiTTC4b
@@ -35884,7 +33611,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 18, 2025
     agency:
       agency_id: GSA
@@ -35905,6 +33631,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-cisa-schutt
     type: detailed
@@ -35946,7 +33673,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 19, 2025
     agency:
       agency_id: CISA
@@ -35971,6 +33697,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-dhs-schutt
     type: detailed
@@ -36012,7 +33739,6 @@
     comment: No details on this, but mentioned in NYT roundup. Assuming detail from GSA
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 19, 2025
     agency:
       agency_id: DHS
@@ -36037,6 +33763,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-hhs-kyle-schutt
     type: detailed
@@ -36078,7 +33805,6 @@
     comment: No documentation, dates reported in court filing
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 14, 2025
     agency:
       agency_id: HHS
@@ -36103,6 +33829,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-tsa-schutt
     type: internal
@@ -36144,7 +33871,6 @@
     comment: No details, but in NYT roundup
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: TSA
@@ -36169,6 +33895,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-uscis-schutt
     type: internal
@@ -36210,7 +33937,6 @@
     comment: No details, but in NYT roundup
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: USCIS
@@ -36235,6 +33961,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-cbp-schutt
     type: internal
@@ -36276,7 +34003,6 @@
     comment: No details, but in NYT roundup
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: CBP
@@ -36301,6 +34027,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-fema-schutt
     type: internal
@@ -36342,7 +34069,6 @@
     comment: No details, but in NYT roundup
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: FEMA
@@ -36367,6 +34093,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-dhs-ice-schutt
     type: internal
@@ -36408,7 +34135,6 @@
     comment: No details, but in NYT roundup
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: ICE
@@ -36433,6 +34159,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: BGZKY6go
@@ -36877,7 +34604,6 @@
     comment: Riley Sennott's father reports that he started at GSA nine days after 2025-02-03
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 12, 2025
     agency:
       agency_id: GSA
@@ -36898,6 +34624,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-nasa-sennott
     type: detailed
@@ -36939,7 +34666,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Mar 14, 2025
     agency:
       agency_id: NASA
@@ -36964,6 +34690,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: KvP48A34
@@ -37165,7 +34892,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 02, 2025
     agency:
       agency_id: NOAA
@@ -37186,6 +34912,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: eSiT2dsb
@@ -37274,7 +35001,6 @@
     comment: Position inferred from early reporting and detailing to Education
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 20, 2025
     agency:
       agency_id: GSA
@@ -37295,290 +35021,51 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
-  - id: detail-gsa-education-3
-    type: detailed
-    agency_id: Education
+  - id: detail-20250212-gsa-education-ed-3
     name: Ethan Shaotran
-    doge_alias_id: ED-3
-    from_agency_id: GSA
-    from_truth: verified
-    start_date: '2025-02-12'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-12'
-    nte_date: '2026-02-26'
-    nte_date_truth: verified
-    signed_date: '2025-02-03'
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed: false
-    reimbursement_amount:
-    comment: ED-3 is Ethan Shaotran
-    qualifications:
-    table_note:
-    documents: detail-20250212-gsa-education-ed-3
-    duration_summary: from Feb 12, 2025
-    agency:
-      agency_id: Education
-      name: Department of Education
-      short_name: Ed
-    from_agency:
-      agency_id: GSA
-      name: General Services Administration
-      short_name: GSA
-    person:
-      name: Ethan Shaotran
-      sort_name: Shaotran
-      slug: ethan-shaotran
-      page_slug:
-      age: 22
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#ethan-shaotran"
-      comment:
-      table_note:
-      obj_type: Person
+    type: mou
+    alias: ED-3
+    date: '2025-02-03'
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
+    case_no:
+    comment:
+    file: mou-20250212-gsa-education-ed-3.pdf
+    url: "/documents/mou-20250212-gsa-education-ed-3.pdf"
+    obj_type: Position
+  - id: onboard-ssa-employee-10
+    name:
+    type: onboard
+    alias: SSA-10
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
+    comment:
+    file: onboard-ssa-employee-10.pdf
+    url: "/documents/onboard-ssa-employee-10.pdf"
+    obj_type: Position
+  - id: detail-20250220-gsa-usadf-ethan-shaotran
+    name: Ethan Shaotran
+    type: mou
     alias:
-      id: ED-3
-      agency_id: Education
-      name: Ethan Shaotran
-      evidence: |-
-        - Detail from GSA was signed on 2025-02-12 for an SGE position so it is not reimbursed and for a maximum of 135 days from start of SGE term
-        - Position at GSA is listed as Software Engineer (Consultant)
-        - In a separate document in the release, Ethan Shaotran is listed as being from GSA on 2025-02-03 and Edward Coristine on 2025-02-20
-        - IN the case of ED-1, the detail agreement seems to have been signed after the start date; very likely here as well
-      obj_type: Alias
-    obj_type: Position
-  - id: detail-gsa-ssa-employee-10
-    type: detailed
-    agency_id: SSA
-    name: Ethan Shaotran
-    doge_alias_id: SSA-10
-    from_agency_id: GSA
-    from_truth: verified
-    start_date: '2025-02-18'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-18'
-    nte_date: '2026-02-26'
-    nte_date_truth: verified
-    signed_date: '2025-02-18'
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed: false
-    reimbursement_amount:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.20.7.pdf
+    case_no:
     comment:
-    qualifications:
-    table_note:
-    documents: onboard-ssa-employee-10
-    duration_summary: from Feb 18, 2025
-    agency:
-      agency_id: SSA
-      name: Social Security Administration
-      short_name: SSA
-    from_agency:
-      agency_id: GSA
-      name: General Services Administration
-      short_name: GSA
-    person:
-      name: Ethan Shaotran
-      sort_name: Shaotran
-      slug: ethan-shaotran
-      page_slug:
-      age: 22
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#ethan-shaotran"
-      comment:
-      table_note:
-      obj_type: Person
+    file: mou-20250220-gsa-usadf-ethan-shaotran.pdf
+    url: "/documents/mou-20250220-gsa-usadf-ethan-shaotran.pdf"
+    obj_type: Position
+  - id: detail-20250312-gsa-usps-alex-simonpour
+    name: Alexander Simonpour
+    type: mou
     alias:
-      id: SSA-10
-      agency_id: SSA
-      name: Ethan Shaotran
-      evidence: |-
-        - Onboarded as a volunteer on 2025-02-18 as a detail from the GSA
-        - Flick testimony - Employee 10, a software engineer, was detailed from the Office of the Administrator at the General Services Administration to SSA"
-        - Ethan Shaotran was also detailed from GSA to USADF as an unpaid GSE on 2025-02-21
-        - Ethan Shaotran is identified for the first time at SSA on 2025-02-20
-      obj_type: Alias
-    obj_type: Position
-  - id: detail-gsa-usadf-ethan-shaotran
-    type: detailed
-    agency_id: USADF
-    name: Ethan Shaotran
-    doge_alias_id:
-    from_agency_id: GSA
-    from_truth: verified
-    start_date: '2025-02-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date: '2025-03-06'
-    end_date_truth: reported
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-20'
-    nte_date: '2026-07-04'
-    nte_date_truth: verified
-    signed_date: '2025-02-21'
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed:
-    reimbursement_amount:
+    date:
+    source: https://about.usps.com/who/legal/foia/documents/mou-alex-simonpour-executed-redacted.pdf
+    case_no:
     comment:
-    qualifications:
-    table_note:
-    documents: detail-20250220-gsa-usadf-ethan-shaotran
-    duration_summary: Feb 20, 2025 to Mar 06, 2025
-    agency:
-      agency_id: USADF
-      name: U.S. African Development Foundation
-      short_name: USADF
-    from_agency:
-      agency_id: GSA
-      name: General Services Administration
-      short_name: GSA
-    person:
-      name: Ethan Shaotran
-      sort_name: Shaotran
-      slug: ethan-shaotran
-      page_slug:
-      age: 22
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#ethan-shaotran"
-      comment:
-      table_note:
-      obj_type: Person
-    obj_type: Position
-  - id: detail-gsa-usps-ethan-shaotran
-    type: detailed
-    agency_id: USPS
-    name: Ethan Shaotran
-    doge_alias_id:
-    from_agency_id: GSA
-    from_truth: verified
-    start_date: '2025-03-12'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-03-12'
-    nte_date: '2025-06-15'
-    nte_date_truth: verified
-    signed_date: '2025-03-12'
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed: false
-    reimbursement_amount:
-    comment:
-    qualifications:
-    table_note:
-    documents: 20250312-gsa-usps-alex-simonpour
-    duration_summary: from Mar 12, 2025
-    agency:
-      agency_id: USPS
-      name: US Postal Service
-      short_name: USPS
-    from_agency:
-      agency_id: GSA
-      name: General Services Administration
-      short_name: GSA
-    person:
-      name: Ethan Shaotran
-      sort_name: Shaotran
-      slug: ethan-shaotran
-      page_slug:
-      age: 22
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#ethan-shaotran"
-      comment:
-      table_note:
-      obj_type: Person
+    file: mou-20250312-gsa-usps-alex-simonpour.pdf
+    url: "/documents/mou-20250312-gsa-usps-alex-simonpour.pdf"
     obj_type: Position
   - id: detail-gsa-dfc-shaotran
     type: detailed
@@ -37620,7 +35107,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 28, 2025
     agency:
       agency_id: USDFC
@@ -37645,6 +35131,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: bfo6pJUH
@@ -38137,7 +35624,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Jan 24, 2025
     agency:
       agency_id: GSA
@@ -38158,6 +35644,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: dol-shedd
     type: appointed
@@ -38199,7 +35686,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 14, 2025
     agency:
       agency_id: DOL
@@ -38220,6 +35706,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: kSAAPBQJ
@@ -38533,7 +36020,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 18, 2025
     agency:
       agency_id: Treasury
@@ -38554,6 +36040,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 85e3G4Rn
@@ -38599,71 +36086,16 @@
   comment:
   table_note:
   positions:
-  - id: detail-gsa-usps-alex-simonpour
-    type: detailed
-    agency_id: USPS
+  - id: detail-20250312-gsa-usps-alex-simonpour
     name: Alexander Simonpour
-    doge_alias_id:
-    from_agency_id: GSA
-    from_truth: verified
-    start_date: '2025-03-07'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-03-07'
-    nte_date: '2025-06-15'
-    nte_date_truth: verified
-    signed_date: '2025-03-12'
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed: false
-    reimbursement_amount:
-    comment: From FOIAed document
-    qualifications:
-    table_note:
-    documents: 20250312-gsa-usps-alex-simonpour
-    duration_summary: from Mar 07, 2025
-    agency:
-      agency_id: USPS
-      name: US Postal Service
-      short_name: USPS
-    from_agency:
-      agency_id: GSA
-      name: General Services Administration
-      short_name: GSA
-    person:
-      name: Alexander Simonpour
-      sort_name: Simonpour
-      slug: alex-simonpour
-      page_slug:
-      age: 28
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#alex-simonpour"
-      comment:
-      table_note:
-      obj_type: Person
+    type: mou
+    alias:
+    date:
+    source: https://about.usps.com/who/legal/foia/documents/mou-alex-simonpour-executed-redacted.pdf
+    case_no:
+    comment:
+    file: mou-20250312-gsa-usps-alex-simonpour.pdf
+    url: "/documents/mou-20250312-gsa-usps-alex-simonpour.pdf"
     obj_type: Position
   - id: detail-gsa-nasa-simonpour
     type: detailed
@@ -38705,7 +36137,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 14, 2025
     agency:
       agency_id: NASA
@@ -38730,6 +36161,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: FHj3Dgcw
@@ -38825,7 +36257,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 16, 2025
     agency:
       agency_id: FAA
@@ -38848,6 +36279,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events: []
   system_access: []
@@ -38869,67 +36301,16 @@
   comment:
   table_note:
   positions:
-  - id: hhs-brad-smith
-    type: appointed
-    agency_id: HHS
+  - id: onboard-hhs-brad-smith
     name: Brad Smith
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-03-04'
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-03-04'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title: Senior Advisor
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: All I have is his signed SF-61
-    qualifications:
-    table_note:
-    documents: onboard-hhs-brad-smith
-    duration_summary: from Mar 04, 2025
-    agency:
-      agency_id: HHS
-      name: Health and Human Services
-      short_name: HHS
-    person:
-      name: Brad Smith
-      sort_name: Smith
-      slug: brad-smith
-      page_slug:
-      age: 42
-      background: executive
-      category: enabler
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#brad-smith"
-      comment:
-      table_note:
-      obj_type: Person
+    type: onboard
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.65.3.pdf
+    case_no:
+    comment:
+    file: onboard-hhs-brad-smith.pdf
+    url: "/documents/onboard-hhs-brad-smith.pdf"
     obj_type: Position
   events:
   - id: V7Gkkvah
@@ -39190,7 +36571,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 18, 2025
     agency:
       agency_id: DOL
@@ -39211,6 +36591,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: imls-sonderling
     type: appointed
@@ -39252,7 +36633,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 20, 2025
     agency:
       agency_id: IMLS
@@ -39273,6 +36653,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: nTUfmAV8
@@ -39368,72 +36749,17 @@
   comment:
   table_note:
   positions:
-  - id: opm-christopher-stanley
-    type: appointed
-    agency_id: OPM
-    name: Christopher Stanley
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-28'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-28'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 48
-    appt_type: Other
-    pay_grade: ED-00
-    salary:
-    pd_code: 6A39736
-    sge:
-    excepted: true
-    title: Expert
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Sourced from a FOIAed document
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions
-    duration_summary: from Jan 28, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Christopher Stanley
-      sort_name: Stanley
-      slug: christopher-stanley
-      page_slug:
-      age: 33
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb: >-
-        Christopher Stanley had been a long-time aide of Elon Musk with positions as a Security Engineer at both SpaceX and X.com before his arrival at
-        DOGE. He kicked off his involvement by greeting jailed January 6th protestors who had been pardoned by Trump. Since then, he has had a varierty
-        of other erratic appearances on the timeline. He briefly launched a custom AI chatbot on the DOGE website before it was noticed and taken down.
-        On March 17th, he was appointed to the board of Fannie Mae/Freddie Mac, only to resign immediately the next day. More recently, he has been embedded
-        in the Department of Justice as part of the DOGE team building a surveillance system to use against immigrants.
-      reporting_notes:
-      path: "/people#christopher-stanley"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
     obj_type: Position
   - id: fhfa-christopher-stanley
     type: appointed
@@ -39475,7 +36801,6 @@
     comment: Chris Stanley spent one day on the board before resigning
     qualifications:
     table_note:
-    documents:
     duration_summary: Mar 17, 2025 to Mar 18, 2025
     agency:
       agency_id: FHFA
@@ -39501,6 +36826,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-opm-doj-stanley
     type: detailed
@@ -39542,7 +36868,6 @@
     comment: Date is approximate. Assuming detailed from OPM
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Apr 02, 2025
     agency:
       agency_id: DOJ
@@ -39572,6 +36897,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 1KTKczl5
@@ -39708,7 +37034,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: Feb 25, 2025 to Feb 27, 2025
     agency:
       agency_id: SSA
@@ -39729,6 +37054,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: ssa-steffensen-1
     type: appointed
@@ -39770,7 +37096,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 27, 2025
     agency:
       agency_id: SSA
@@ -39791,6 +37116,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: fFM8X63i
@@ -39876,7 +37202,6 @@
     comment: FIXME, find more details on when started
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Apr 2025
     agency:
       agency_id: GSA
@@ -39897,6 +37222,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 6amFFPAZ
@@ -39999,7 +37325,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ May 07, 2025
     agency:
       agency_id: DOT
@@ -40020,6 +37345,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events: []
   system_access: []
@@ -40085,7 +37411,6 @@
       although a better title might be 'AI computer programming quant analyst'"
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Apr 10, 2025
     agency:
       agency_id: HUD
@@ -40108,6 +37433,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: mBJqiHKW
@@ -40257,7 +37583,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 06, 2025
     agency:
       agency_id: HHS
@@ -40278,6 +37603,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: internal-hhs-cms-terrell
     type: internal
@@ -40319,7 +37645,6 @@
     comment: Inferring from first reported access to the IDR system at CMS
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 11, 2025
     agency:
       agency_id: CMS
@@ -40344,6 +37669,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-hhs-nsf-terrell
     type: consultant
@@ -40385,7 +37711,6 @@
     comment: Showed up at the agency to do secondary round of grant reviews. Assuming a detail
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 14, 2025
     agency:
       agency_id: NSF
@@ -40410,6 +37735,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 7OVMm6PD
@@ -40724,7 +38050,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 05, 2025
     agency:
       agency_id: DOI
@@ -40745,6 +38070,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: j8cpRtDP
@@ -40894,7 +38220,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Mar 25, 2025
     agency:
       agency_id: VA
@@ -40915,6 +38240,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: ja9gwcUS
@@ -41017,7 +38343,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: dates unknown
     agency:
       agency_id: EOP
@@ -41038,6 +38363,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: cfpb-acting-vought
     type: appointed
@@ -41079,7 +38405,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 08, 2025
     agency:
       agency_id: CFPB
@@ -41100,6 +38425,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 1pcExqWx
@@ -41246,67 +38572,16 @@
   comment:
   table_note:
   positions:
-  - id: treasury-whitridge
-    type: unknown
-    agency_id: Treasury
-    name: Linda Whitridge
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-02-25'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-25'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz: Identity is only revealed in a court filing, using ethics training date as start for now
-    appt_type_code:
-    appt_type: Schedule C
-    pay_grade: GS-12
-    salary:
-    pd_code:
-    sge: false
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
-    reimbursed:
-    reimbursement_amount:
-    comment:
-    qualifications:
-    table_note:
-    documents: gov.uscourts.nysd.636609.144.0
-    duration_summary: from Feb 25, 2025
-    agency:
-      agency_id: Treasury
-      name: Department of the Treasury
-      short_name: Treasury
-    person:
-      name: Linda Whitridge
-      sort_name: Whitridge
-      slug: linda-whitridge
-      page_slug:
-      age:
-      background:
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#linda-whitridge"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: gov.uscourts.nysd.636609.144.0
+    name:
+    type: directory
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
+    case_no: 1:25-cv-01144
+    comment: Testimony about the positions of various IRS appointees
+    file: gov.uscourts.nysd.636609.144.0.pdf
+    url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
     obj_type: Position
   events:
   - id: hRNyXeoy
@@ -41407,7 +38682,6 @@
     comment: No details, but guessing based on government declaration had been detailed from DOGE to CFPB
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Jan 20, 2025
     agency:
       agency_id: DOGE
@@ -41428,6 +38702,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-usda-wick
     type: detailed
@@ -41469,7 +38744,6 @@
     comment: No details, but listed in a NYT roundup and adding here. USDA head said DOGE had been there a couple of weeks on 2/14
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 01, 2025
     agency:
       agency_id: USDA
@@ -41494,6 +38768,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-usds-cfpb-jordan-wick
     type: detailed
@@ -41535,7 +38810,6 @@
     comment: Dates provided in court documents. Converted to full position
     qualifications:
     table_note:
-    documents:
     duration_summary: Feb 07, 2025 to Mar 04, 2025
     agency:
       agency_id: CFPB
@@ -41560,6 +38834,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-doge-dol-wick
     type: detailed
@@ -41601,7 +38876,6 @@
     comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5. But was part of CFPB assault.
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Feb 13, 2025
     agency:
       agency_id: DOL
@@ -41626,134 +38900,29 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
-  - id: detail-doge-education-wick
-    type: detailed
-    agency_id: Education
-    name: Jordan Wick
-    doge_alias_id:
-    from_agency_id: DOGE
-    from_truth: inferred
-    start_date: '2025-02-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-02-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title:
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed:
-    reimbursement_amount:
+  - id: doge-staff-education-20250407
+    name:
+    type: mou
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
+    case_no: 1:25-cv-00354
     comment:
-    qualifications:
-    table_note:
-    documents: doge-staff-education-20250407
-    duration_summary: from Feb 20, 2025
-    agency:
-      agency_id: Education
-      name: Department of Education
-      short_name: Ed
-    from_agency:
-      agency_id: DOGE
-      name: Department of Government Efficiency
-      short_name: DOGE
-    person:
-      name: Jordan Wick
-      sort_name: Wick
-      slug: jordan-wick
-      page_slug:
-      age: 28
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#jordan-wick"
-      comment:
-      table_note:
-      obj_type: Person
+    file: doge-staff-education-20250407.pdf
+    url: "/documents/doge-staff-education-20250407.pdf"
     obj_type: Position
-  - id: cfpb-jordan-wick
-    type: appointed
-    agency_id: CFPB
+  - id: onboard-cfpb-jordan-wick
     name: Jordan Wick
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-03-05'
-    start_date_truth:
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-03-05'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description:
-    fuzz:
-    appt_type_code:
-    appt_type:
-    pay_grade:
-    salary:
-    pd_code:
-    sge:
-    excepted:
-    title: Expert/Consultant
-    series:
-    supervisory:
-    office:
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: All I have is his SF-61
-    qualifications:
-    table_note:
-    documents: onboard-cfpb-jordan-wick
-    duration_summary: from Mar 05, 2025
-    agency:
-      agency_id: CFPB
-      name: Consumer Financial Protection Bureau
-      short_name: CFPB
-    person:
-      name: Jordan Wick
-      sort_name: Wick
-      slug: jordan-wick
-      page_slug:
-      age: 28
-      background: coder
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#jordan-wick"
-      comment:
-      table_note:
-      obj_type: Person
+    type: onboard
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.65.2.pdf
+    case_no:
+    comment:
+    file: onboard-cfpb-jordan-wick.pdf
+    url: "/documents/onboard-cfpb-jordan-wick.pdf"
     obj_type: Position
   - id: detail-cfpb-fcc-wick
     type: detailed
@@ -41795,7 +38964,6 @@
     comment: Assuming he has been detailed from the CFPB
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 04, 2025
     agency:
       agency_id: FCC
@@ -41820,6 +38988,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: HnJrpqPY
@@ -42342,67 +39511,17 @@
   comment:
   table_note:
   positions:
-  - id: joanna-wischer-opm
-    type: appointed
-    agency_id: OPM
-    name: Joanna Wischer
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-20'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-20'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 44
-    appt_type: Schedule C
-    pay_grade: GS-15
-    salary:
-    pd_code: 6A36647
-    sge:
-    excepted: true
-    title: Senior Advisor to the Director
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Sourced from a FOIA document; listed as Joanna Miller
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions
-    duration_summary: from Jan 20, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Joanna Wischer
-      sort_name: Wischer
-      slug: joanna-wischer
-      page_slug:
-      age:
-      background: political
-      category: support
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#joanna-wischer"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
     obj_type: Position
   events:
   - id: V7Gkkvah
@@ -42727,7 +39846,6 @@
     comment: FIXME, find more details on when started
     qualifications:
     table_note:
-    documents:
     duration_summary: from ~ Apr 2025
     agency:
       agency_id: GSA
@@ -42748,6 +39866,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   - id: detail-gsa-dfc-wood
     type: detailed
@@ -42789,7 +39908,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 28, 2025
     agency:
       agency_id: USDFC
@@ -42814,6 +39932,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 6HPPymkF
@@ -42949,7 +40068,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 20, 2025
     agency:
       agency_id: Treasury
@@ -42970,6 +40088,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 8RFcA4gh
@@ -43110,67 +40229,17 @@
   comment:
   table_note:
   positions:
-  - id: opm-chris-young
-    type: appointed
-    agency_id: OPM
-    name: Chris Young
-    doge_alias_id:
-    from_agency_id:
-    from_truth:
-    start_date: '2025-01-30'
-    start_date_truth: verified
-    start_date_event:
-    start_source:
-    start_source_name:
-    end_date:
-    end_date_truth:
-    end_date_event:
-    end_source:
-    end_source_name:
-    sort_date: '2025-01-30'
-    nte_date:
-    nte_date_truth:
-    signed_date:
-    description: Exc Appt NTE
-    fuzz:
-    appt_type_code: 48
-    appt_type: Other
-    pay_grade: ED-00
-    salary:
-    pd_code: 6A39737
-    sge:
-    excepted: true
-    title: Expert
-    series: 301
-    supervisory: false
-    office: Office of the Director
-    source:
-    reimbursed:
-    reimbursement_amount:
-    comment: Sourced from FOIAed documents
-    qualifications:
-    table_note:
-    documents: opm-foia-doge-positions
-    duration_summary: from Jan 30, 2025
-    agency:
-      agency_id: OPM
-      name: Office of Personnel Management
-      short_name: OPM
-    person:
-      name: Chris Young
-      sort_name: Young
-      slug: chris-young
-      page_slug:
-      age: 36
-      background: political
-      category: wrecker
-      own_page: false
-      blurb:
-      reporting_notes:
-      path: "/people#chris-young"
-      comment:
-      table_note:
-      obj_type: Person
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
     obj_type: Position
   - id: detail-opm-cfpb-chris-young
     type: detailed
@@ -43212,7 +40281,6 @@
     comment: FIXME
     qualifications:
     table_note:
-    documents:
     duration_summary: from Feb 07, 2025
     agency:
       agency_id: CFPB
@@ -43237,6 +40305,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: 3tG7l53P
@@ -43461,7 +40530,6 @@
     comment:
     qualifications:
     table_note:
-    documents:
     duration_summary: from Apr 04, 2025
     agency:
       agency_id: Peace
@@ -43482,6 +40550,7 @@
       comment:
       table_note:
       obj_type: Person
+    documents: []
     obj_type: Position
   events:
   - id: RmvrV2dc

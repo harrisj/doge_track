@@ -80,6 +80,7 @@ end
 # For documents
 class Document < Sequel::Model
   many_to_one :person
+  many_to_many :positions
 
   def url
     "/documents/#{file}"
@@ -129,6 +130,7 @@ class Position < Sequel::Model
   many_to_one :person, key: :name, primary_key: :name
   many_to_one :from_agency, class: :Agency, key: :from_agency_id
   many_to_one :agency
+  many_to_many :documents
 
   def detail?
     type == 'detailed'

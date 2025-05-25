@@ -111,15 +111,23 @@ people_yaml.each do |p_hash|
   p_hash.fetch(:positions, []).each do |pos_hash|
     pos_hash.transform_keys!(alias: :doge_alias_id, from: :from_agency_id, agency: :agency_id)
     pos_hash[:name] = p.name
-    # FIXME: load documents as separate table
-    pos_hash[:documents] = pos_hash[:documents].join(' ') if pos_hash[:documents]
 
     pos_hash[:sort_date] ||= pos_hash[:start_date]
     pos_hash[:sort_date] ||= DEFAULT_POS_SORT_APPOINTED if pos_hash[:type] == 'appointed'
     pos_hash[:sort_date] ||= DEFAULT_POS_SORT_OTHER
 
-    Position.create(pos_hash) # .reject { |k, _| %i[from alias documents agency].include?(k) })
+    pos = Position.create( # .reject { |k, _| %i[from alias documents agency].include?(k) })
+      pos_hash.except(:documents)
+    )
 
+    next unless pos_hash[:documents]
+
+    pos_hash[:documents].each do |doc_id|
+      doc = Document[doc_id]
+      raise "No document found for #{doc_id}" if doc.nil?
+
+      pos.add_document(doc)
+    end
     # if pos_hash.key? :agency
     #   a = Agency[pos_hash[:agency]]
     #   pos.agency = a
@@ -156,12 +164,11 @@ aliases_yaml.each do |alias_hash|
   alias_hash.fetch(:positions, []).each do |pos_hash|
     pos_hash.transform_keys!(alias: :doge_alias_id, from: :from_agency_id, agency: :agency_id)
     pos_hash[:doge_alias_id] = a.id
-    pos_hash[:documents] = pos_hash[:documents].join(' ') if pos_hash[:documents]
     pos_hash[:sort_date] ||= pos_hash[:start_date]
     pos_hash[:sort_date] ||= DEFAULT_POS_SORT_APPOINTED if pos_hash[:type] == 'appointed'
     pos_hash[:sort_date] ||= DEFAULT_POS_SORT_OTHER
 
-    Position.create(pos_hash)
+    Position.create(pos_hash.except(:documents))
   end
 end
 

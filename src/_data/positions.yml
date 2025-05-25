@@ -40,7 +40,6 @@ dot-abrahamson:
   comment:
   qualifications:
   table_note: start date unknown but before 3/26
-  documents:
   person:
     name: Daniel Abrahamson
     sort_name: Abrahamson
@@ -70,6 +69,7 @@ dot-abrahamson:
     obj_type: Agency
   agency_ids:
   - DOT
+  documents: []
 doge-aimonetti:
   id: doge-aimonetti
   type: appointed
@@ -111,7 +111,6 @@ doge-aimonetti:
   comment:
   qualifications:
   table_note: start date reported as "some point in February"
-  documents:
   person:
     name: Justin Aimonetti
     sort_name: Aimonetti
@@ -143,6 +142,7 @@ doge-aimonetti:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 opm-jacob-altik:
   id: opm-jacob-altik
   type: appointed
@@ -184,7 +184,6 @@ opm-jacob-altik:
   comment:
   qualifications:
   table_note: sourced from FOIA
-  documents: opm-foia-doge-positions
   person:
     name: Jacob Altik
     sort_name: Altik
@@ -212,6 +211,18 @@ opm-jacob-altik:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
 detail-opm-usadf-altik:
   id: detail-opm-usadf-altik
   type: detailed
@@ -253,7 +264,6 @@ detail-opm-usadf-altik:
   comment: Assuming detail from OPM
   qualifications:
   table_note: info in govt legal declation
-  documents:
   person:
     name: Jacob Altik
     sort_name: Altik
@@ -291,6 +301,7 @@ detail-opm-usadf-altik:
     obj_type: Agency
   agency_ids:
   - USADF
+  documents: []
 detail-opm-fcc-altik:
   id: detail-opm-fcc-altik
   type: detailed
@@ -332,7 +343,6 @@ detail-opm-fcc-altik:
   comment: Assuming he has been detailed from OPM
   qualifications:
   table_note:
-  documents:
   person:
     name: Jacob Altik
     sort_name: Altik
@@ -370,6 +380,7 @@ detail-opm-fcc-altik:
     obj_type: Agency
   agency_ids:
   - FCC
+  documents: []
 detail-opm-dhs-armstrong:
   id: detail-opm-dhs-armstrong
   type: detailed
@@ -411,7 +422,6 @@ detail-opm-dhs-armstrong:
   comment: Find more definitive info for DHS link
   qualifications:
   table_note: reported by media, assuming from OPM
-  documents:
   person:
     name: Anthony Armstrong
     sort_name: Armstrong
@@ -449,6 +459,7 @@ detail-opm-dhs-armstrong:
     obj_type: Agency
   agency_ids:
   - DHS
+  documents: []
 opm-anthony-armstrong:
   id: opm-anthony-armstrong
   type: appointed
@@ -490,7 +501,6 @@ opm-anthony-armstrong:
   comment: From FOIA documents
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions
   person:
     name: Anthony Armstrong
     sort_name: Armstrong
@@ -518,6 +528,18 @@ opm-anthony-armstrong:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
 detail-opm-fdic-armstrong:
   id: detail-opm-fdic-armstrong
   type: detailed
@@ -559,7 +581,6 @@ detail-opm-fdic-armstrong:
   comment:
   qualifications:
   table_note: reported by media
-  documents:
   person:
     name: Anthony Armstrong
     sort_name: Armstrong
@@ -597,6 +618,7 @@ detail-opm-fdic-armstrong:
     obj_type: Agency
   agency_ids:
   - FDIC
+  documents: []
 education-balajadia:
   id: education-balajadia
   type: appointed
@@ -638,7 +660,6 @@ education-balajadia:
   comment:
   qualifications:
   table_note: NYT links her to Education, but no other info
-  documents:
   person:
     name: Jennifer Balajadia
     sort_name: Balajadia
@@ -669,6 +690,7 @@ education-balajadia:
     obj_type: Agency
   agency_ids:
   - Education
+  documents: []
 dol-sam-beyda:
   id: dol-sam-beyda
   type: unknown
@@ -710,7 +732,6 @@ dol-sam-beyda:
   comment: 3 other DOGE staff besides Ramada at agency on 2/5.
   qualifications:
   table_note: No other info besides this report
-  documents:
   person:
     name: Sam Beyda
     sort_name: Beyda
@@ -738,6 +759,7 @@ dol-sam-beyda:
     obj_type: Agency
   agency_ids:
   - DOL
+  documents: []
 doge-beynon:
   id: doge-beynon
   type: appointed
@@ -779,7 +801,6 @@ doge-beynon:
   comment: FIXME, find earliest details of arrival; is she GSA?
   qualifications:
   table_note: date guessed, reported as detailing from DOGE to Education
-  documents:
   person:
     name: Alexandra Beynon
     sort_name: Beynon
@@ -810,6 +831,7 @@ doge-beynon:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 detail-doge-education-alexandra-beynon:
   id: detail-doge-education-alexandra-beynon
   type: detailed
@@ -851,7 +873,6 @@ detail-doge-education-alexandra-beynon:
   comment: Details just provided in court testimony
   qualifications:
   table_note: info from a govt legal filing
-  documents: doge-staff-education-20250407
   person:
     name: Alexandra Beynon
     sort_name: Beynon
@@ -891,6 +912,17 @@ detail-doge-education-alexandra-beynon:
     obj_type: Agency
   agency_ids:
   - Education
+  documents:
+  - id: doge-staff-education-20250407
+    name:
+    type: mou
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
+    case_no: 1:25-cv-00354
+    comment:
+    file: doge-staff-education-20250407.pdf
+    url: "/documents/doge-staff-education-20250407.pdf"
 opm-employee-2:
   id: opm-employee-2
   type: appointed
@@ -932,7 +964,6 @@ opm-employee-2:
   comment: I was able to confirm that OPM Employee 2 was Riccardo Biasini
   qualifications:
   table_note: info for alias SSA-2, who I've identified as him
-  documents: opm-foia-doge-positions onboard-opm-employee-2
   person:
     name: Riccardo Biasini
     sort_name: Biasini
@@ -973,6 +1004,28 @@ opm-employee-2:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
+  - id: onboard-opm-employee-2
+    name:
+    type: onboard
+    alias: OPM-2
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
+    case_no: 8:25-cv-00430
+    comment:
+    file: onboard-opm-employee-2
+    url: "/documents/onboard-opm-employee-2"
 ssa-bisignano:
   id: ssa-bisignano
   type: appointed
@@ -1014,7 +1067,6 @@ ssa-bisignano:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Frank Bisignano
     sort_name: Bisignano
@@ -1042,6 +1094,7 @@ ssa-bisignano:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents: []
 opm-brian-bjelde:
   id: opm-brian-bjelde
   type: appointed
@@ -1083,7 +1136,6 @@ opm-brian-bjelde:
   comment:
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions
   person:
     name: Brian Bjelde
     sort_name: Bjelde
@@ -1111,6 +1163,18 @@ opm-brian-bjelde:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
 opm-3:
   id: opm-3
   type: appointed
@@ -1152,7 +1216,6 @@ opm-3:
   comment: I was able to confirm that OPM Employee 3 is Akash Bobba
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions onboard-opm-employee-3
   person:
     name: Akash Bobba
     sort_name: Bobba
@@ -1192,6 +1255,28 @@ opm-3:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
+  - id: onboard-opm-employee-3
+    name:
+    type: onboard
+    alias: OPM-3
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
+    case_no: 8:25-cv-00430
+    comment:
+    file: onboard-opm-employee-3
+    url: "/documents/onboard-opm-employee-3"
 detail-opm-education-akash-bobba:
   id: detail-opm-education-akash-bobba
   type: detailed
@@ -1233,7 +1318,6 @@ detail-opm-education-akash-bobba:
   comment:
   qualifications:
   table_note:
-  documents: detail-20250212-opm-education-ed-1
   person:
     name: Akash Bobba
     sort_name: Bobba
@@ -1283,6 +1367,17 @@ detail-opm-education-akash-bobba:
     obj_type: Agency
   agency_ids:
   - Education
+  documents:
+  - id: detail-20250212-opm-education-ed-1
+    name:
+    type: mou
+    alias: ED-1
+    date: '2025-02-12'
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
+    case_no:
+    comment: This is for a SGE position so it is not reimbursed and for a maximum of 135 days from start of SGE term
+    file: mou-20250212-opm-education-ed-1.pdf
+    url: "/documents/mou-20250212-opm-education-ed-1.pdf"
 detail-opm-ssa-opm-3:
   id: detail-opm-ssa-opm-3
   type: detailed
@@ -1324,7 +1419,6 @@ detail-opm-ssa-opm-3:
   comment:
   qualifications:
   table_note:
-  documents: detail-20250212-opm-education-ed-1
   person:
     name: Akash Bobba
     sort_name: Bobba
@@ -1374,6 +1468,17 @@ detail-opm-ssa-opm-3:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents:
+  - id: detail-20250212-opm-education-ed-1
+    name:
+    type: mou
+    alias: ED-1
+    date: '2025-02-12'
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
+    case_no:
+    comment: This is for a SGE position so it is not reimbursed and for a maximum of 135 days from start of SGE term
+    file: mou-20250212-opm-education-ed-1.pdf
+    url: "/documents/mou-20250212-opm-education-ed-1.pdf"
 ssa-employee-1:
   id: ssa-employee-1
   type: appointed
@@ -1417,7 +1522,6 @@ ssa-employee-1:
     Hands-on software engineer that is an expert in modern computer programming languages, cloud and other infrastructure, AI, etc. 5 years of experience
     using numerous computer code languages, leadership of teams in technical, software design, and infrastructure areas.
   table_note:
-  documents: onboard-ssa-employee-1
   person:
     name: Akash Bobba
     sort_name: Bobba
@@ -1459,6 +1563,17 @@ ssa-employee-1:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents:
+  - id: onboard-ssa-employee-1
+    name:
+    type: onboard
+    alias: SSA-1
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
+    comment:
+    file: onboard-ssa-employee-1.pdf
+    url: "/documents/onboard-ssa-employee-1.pdf"
 doge-boizelle:
   id: doge-boizelle
   type: appointed
@@ -1500,7 +1615,6 @@ doge-boizelle:
   comment:
   qualifications:
   table_note: reported by media as started in February
-  documents:
   person:
     name: Ashley Boizelle
     sort_name: Boizelle
@@ -1529,6 +1643,7 @@ doge-boizelle:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 gsa-bryant:
   id: gsa-bryant
   type: appointed
@@ -1570,7 +1685,6 @@ gsa-bryant:
   comment: Not verified, but NYT links to her to GSA also, so assuming she started there
   qualifications:
   table_note:
-  documents:
   person:
     name: Emily Bryant
     sort_name: Bryant
@@ -1600,6 +1714,7 @@ gsa-bryant:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 detail-doge-ftc-bryant:
   id: detail-doge-ftc-bryant
   type: detailed
@@ -1641,7 +1756,6 @@ detail-doge-ftc-bryant:
   comment:
   qualifications:
   table_note: limited info, 2025-04-04 report stated she started "last week"
-  documents:
   person:
     name: Emily Bryant
     sort_name: Bryant
@@ -1681,6 +1795,7 @@ detail-doge-ftc-bryant:
     obj_type: Agency
   agency_ids:
   - FTC
+  documents: []
 doge-burnham:
   id: doge-burnham
   type: appointed
@@ -1722,7 +1837,6 @@ doge-burnham:
   comment:
   qualifications:
   table_note: NYT reported in DOGE in January, ProPublica provided title
-  documents:
   person:
     name: James Burnham
     sort_name: Burnham
@@ -1753,6 +1867,7 @@ doge-burnham:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 gsa-cavanaugh:
   id: gsa-cavanaugh
   type: appointed
@@ -1794,7 +1909,6 @@ gsa-cavanaugh:
   comment: Introduces Frank Schuler on a video call at GSA in February; listed in ProPublica roundup on Feb 05; going to assume Monday start
   qualifications:
   table_note:
-  documents:
   person:
     name: Nate Cavanaugh
     sort_name: Cavanaugh
@@ -1827,6 +1941,7 @@ gsa-cavanaugh:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 detail-gsa-usadf-cavanaugh:
   id: detail-gsa-usadf-cavanaugh
   type: detailed
@@ -1868,7 +1983,6 @@ detail-gsa-usadf-cavanaugh:
   comment:
   qualifications:
   table_note: verified via court filing
-  documents:
   person:
     name: Nate Cavanaugh
     sort_name: Cavanaugh
@@ -1911,6 +2025,7 @@ detail-gsa-usadf-cavanaugh:
     obj_type: Agency
   agency_ids:
   - USADF
+  documents: []
 detail-gsa-usip-cavanaugh:
   id: detail-gsa-usip-cavanaugh
   type: detailed
@@ -1952,7 +2067,6 @@ detail-gsa-usip-cavanaugh:
   comment: Assuming this based on repors and where he is based. Becomes president of USIP next
   qualifications:
   table_note: verified via court filing
-  documents:
   person:
     name: Nate Cavanaugh
     sort_name: Cavanaugh
@@ -1995,6 +2109,7 @@ detail-gsa-usip-cavanaugh:
     obj_type: Agency
   agency_ids:
   - USIP
+  documents: []
 detail-gsa-neh-cavanaugh:
   id: detail-gsa-neh-cavanaugh
   type: detailed
@@ -2036,7 +2151,6 @@ detail-gsa-neh-cavanaugh:
   comment:
   qualifications:
   table_note: Verified via court filing
-  documents:
   person:
     name: Nate Cavanaugh
     sort_name: Cavanaugh
@@ -2079,6 +2193,7 @@ detail-gsa-neh-cavanaugh:
     obj_type: Agency
   agency_ids:
   - NEH
+  documents: []
 usip-cavanaugh-president:
   id: usip-cavanaugh-president
   type: appointed
@@ -2122,7 +2237,6 @@ usip-cavanaugh-president:
     all assets to the GSA
   qualifications:
   table_note: After the rest of board was ousted, Nate was named President of the agency by Marco Rubio and Pete Hegseth
-  documents:
   person:
     name: Nate Cavanaugh
     sort_name: Cavanaugh
@@ -2155,6 +2269,7 @@ usip-cavanaugh-president:
     obj_type: Agency
   agency_ids:
   - USIP
+  documents: []
 imls-cavanaugh:
   id: imls-cavanaugh
   type: detailed
@@ -2196,7 +2311,6 @@ imls-cavanaugh:
   comment: DOGE put entire staff on admin leave and started cancelling grants, not many details. FIXME
   qualifications:
   table_note: Based on initial reports
-  documents:
   person:
     name: Nate Cavanaugh
     sort_name: Cavanaugh
@@ -2229,6 +2343,7 @@ imls-cavanaugh:
     obj_type: Agency
   agency_ids:
   - IMLS
+  documents: []
 detail-gsa-nlrb-cavanaugh:
   id: detail-gsa-nlrb-cavanaugh
   type: detailed
@@ -2270,7 +2385,6 @@ detail-gsa-nlrb-cavanaugh:
   comment:
   qualifications:
   table_note: Spotted by media
-  documents:
   person:
     name: Nate Cavanaugh
     sort_name: Cavanaugh
@@ -2313,6 +2427,7 @@ detail-gsa-nlrb-cavanaugh:
     obj_type: Agency
   agency_ids:
   - NLRB
+  documents: []
 detail-gsa-dfc-cavanaugh:
   id: detail-gsa-dfc-cavanaugh
   type: detailed
@@ -2354,7 +2469,6 @@ detail-gsa-dfc-cavanaugh:
   comment:
   qualifications:
   table_note: Spotted by media
-  documents:
   person:
     name: Nate Cavanaugh
     sort_name: Cavanaugh
@@ -2397,6 +2511,7 @@ detail-gsa-dfc-cavanaugh:
     obj_type: Agency
   agency_ids:
   - USDFC
+  documents: []
 detail-gsa-exim-cavanaugh:
   id: detail-gsa-exim-cavanaugh
   type: detailed
@@ -2438,7 +2553,6 @@ detail-gsa-exim-cavanaugh:
   comment:
   qualifications:
   table_note: Reported by media
-  documents:
   person:
     name: Nate Cavanaugh
     sort_name: Cavanaugh
@@ -2481,6 +2595,7 @@ detail-gsa-exim-cavanaugh:
     obj_type: Agency
   agency_ids:
   - EXIM
+  documents: []
 detail-gsa-mspb-cavanaugh:
   id: detail-gsa-mspb-cavanaugh
   type: detailed
@@ -2522,7 +2637,6 @@ detail-gsa-mspb-cavanaugh:
   comment:
   qualifications:
   table_note: Email cited mentioned he was from DOGE, but assuming detail from GSA
-  documents:
   person:
     name: Nate Cavanaugh
     sort_name: Cavanaugh
@@ -2565,6 +2679,7 @@ detail-gsa-mspb-cavanaugh:
     obj_type: Agency
   agency_ids:
   - MSPB
+  documents: []
 usda-cole:
   id: usda-cole
   type: unknown
@@ -2607,7 +2722,6 @@ usda-cole:
     CC'ed on an email 2025-02-20, by Gavin Kliger and has a USDS address. USDA administrator said on 2/14 that DOGE had been at the agency for several weeks
   qualifications:
   table_note: CC'ed on a leaked email. Date guessed from Ag Sec on 2/14 saying DOGE at agency for "a couple weeks"
-  documents:
   person:
     name: Michael Cole
     sort_name: Cole
@@ -2635,6 +2749,7 @@ usda-cole:
     obj_type: Agency
   agency_ids:
   - USDA
+  documents: []
 dol-collins:
   id: dol-collins
   type: unknown
@@ -2676,7 +2791,6 @@ dol-collins:
   comment: Wired reports on a detailing agreement between DOGE and DOL, but that could be for Adam Ramada and crew
   qualifications:
   table_note:
-  documents:
   person:
     name: Miles Collins
     sort_name: Collins
@@ -2714,6 +2828,7 @@ dol-collins:
     obj_type: Agency
   agency_ids:
   - DOL
+  documents: []
 irs-corcos:
   id: irs-corcos
   type: consultant
@@ -2755,7 +2870,6 @@ irs-corcos:
   comment: FIXME earlier involvement, maybe when Gavin Kliger started there; ends when became CIO
   qualifications:
   table_note: Start date inferred and likely earlier.
-  documents: gov.uscourts.nysd.636609.144.0
   person:
     name: Sam Corcos
     sort_name: Corcos
@@ -2784,6 +2898,17 @@ irs-corcos:
   agency_ids:
   - IRS
   - Treasury
+  documents:
+  - id: gov.uscourts.nysd.636609.144.0
+    name:
+    type: directory
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
+    case_no: 1:25-cv-01144
+    comment: Testimony about the positions of various IRS appointees
+    file: gov.uscourts.nysd.636609.144.0.pdf
+    url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
 irs-corcos-cio:
   id: irs-corcos-cio
   type: promotion
@@ -2825,7 +2950,6 @@ irs-corcos-cio:
   comment: Date is approximate
   qualifications:
   table_note: Date is approximate per reports. Will update as new details emerge.
-  documents:
   person:
     name: Sam Corcos
     sort_name: Corcos
@@ -2854,6 +2978,7 @@ irs-corcos-cio:
   agency_ids:
   - IRS
   - Treasury
+  documents: []
 gsa-edward-coristine:
   id: gsa-edward-coristine
   type: appointed
@@ -2895,7 +3020,6 @@ gsa-edward-coristine:
   comment: Several documents have Coristine detailing from GSA, so assuming home agency. Also, not in FOIA release from OPM
   qualifications:
   table_note: Start date and agency inferred from later reporting
-  documents:
   person:
     name: Edward Coristine
     sort_name: Coristine
@@ -2925,6 +3049,7 @@ gsa-edward-coristine:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 internal-dhs-tsa-coristine:
   id: internal-dhs-tsa-coristine
   type: internal
@@ -2966,7 +3091,6 @@ internal-dhs-tsa-coristine:
   comment: No details, but in NYT roundup
   qualifications:
   table_note: NYT links him to TSA, but no other info
-  documents:
   person:
     name: Edward Coristine
     sort_name: Coristine
@@ -3007,6 +3131,7 @@ internal-dhs-tsa-coristine:
   agency_ids:
   - TSA
   - DHS
+  documents: []
 internal-dhs-uscis-coristine:
   id: internal-dhs-uscis-coristine
   type: internal
@@ -3048,7 +3173,6 @@ internal-dhs-uscis-coristine:
   comment: NYT links him to USCIS, but no other info
   qualifications:
   table_note:
-  documents:
   person:
     name: Edward Coristine
     sort_name: Coristine
@@ -3089,6 +3213,7 @@ internal-dhs-uscis-coristine:
   agency_ids:
   - USCIS
   - DHS
+  documents: []
 detail-gsa-opm-coristine:
   id: detail-gsa-opm-coristine
   type: detailed
@@ -3130,7 +3255,6 @@ detail-gsa-opm-coristine:
   comment: Edward Coristine is not named, but identfied. Mentions he reportd to Scales
   qualifications:
   table_note: wasn't named due to young age; mentioned as reporting to Amanda Scales, so might be detail?
-  documents:
   person:
     name: Edward Coristine
     sort_name: Coristine
@@ -3170,6 +3294,7 @@ detail-gsa-opm-coristine:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents: []
 detail-gsa-sba-coristine:
   id: detail-gsa-sba-coristine
   type: detailed
@@ -3211,7 +3336,6 @@ detail-gsa-sba-coristine:
   comment:
   qualifications:
   table_note: Only source is a single tweet. More info needed. Assuming detail from GSA.
-  documents:
   person:
     name: Edward Coristine
     sort_name: Coristine
@@ -3251,6 +3375,7 @@ detail-gsa-sba-coristine:
     obj_type: Agency
   agency_ids:
   - SBA
+  documents: []
 detail-gsa-dhs-coristine:
   id: detail-gsa-dhs-coristine
   type: detailed
@@ -3292,7 +3417,6 @@ detail-gsa-dhs-coristine:
   comment: Reported by the Post, I'm going to assume this predated the FEMA access
   qualifications:
   table_note: Date unverified, but assuming predates sighting at FEMA
-  documents:
   person:
     name: Edward Coristine
     sort_name: Coristine
@@ -3332,6 +3456,7 @@ detail-gsa-dhs-coristine:
     obj_type: Agency
   agency_ids:
   - DHS
+  documents: []
 internal-hhs-fema-edward-coristine:
   id: internal-hhs-fema-edward-coristine
   type: internal
@@ -3373,7 +3498,6 @@ internal-hhs-fema-edward-coristine:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Edward Coristine
     sort_name: Coristine
@@ -3414,6 +3538,7 @@ internal-hhs-fema-edward-coristine:
   agency_ids:
   - FEMA
   - DHS
+  documents: []
 detail-gsa-state-coristine:
   id: detail-gsa-state-coristine
   type: detailed
@@ -3455,7 +3580,6 @@ detail-gsa-state-coristine:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Edward Coristine
     sort_name: Coristine
@@ -3495,6 +3619,7 @@ detail-gsa-state-coristine:
     obj_type: Agency
   agency_ids:
   - State
+  documents: []
 detail-gsa-usaid-coristine:
   id: detail-gsa-usaid-coristine
   type: detailed
@@ -3536,7 +3661,6 @@ detail-gsa-usaid-coristine:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Edward Coristine
     sort_name: Coristine
@@ -3576,6 +3700,7 @@ detail-gsa-usaid-coristine:
     obj_type: Agency
   agency_ids:
   - USAID
+  documents: []
 internal-dhs-cisa-coristine:
   id: internal-dhs-cisa-coristine
   type: internal
@@ -3617,7 +3742,6 @@ internal-dhs-cisa-coristine:
   comment: Likely assigned from DHS to here
   qualifications:
   table_note:
-  documents:
   person:
     name: Edward Coristine
     sort_name: Coristine
@@ -3658,6 +3782,7 @@ internal-dhs-cisa-coristine:
   agency_ids:
   - CISA
   - DHS
+  documents: []
 detail-doge-education-coristine:
   id: detail-doge-education-coristine
   type: detailed
@@ -3699,7 +3824,6 @@ detail-doge-education-coristine:
   comment:
   qualifications:
   table_note:
-  documents: doge-staff-education-20250407
   person:
     name: Edward Coristine
     sort_name: Coristine
@@ -3739,6 +3863,17 @@ detail-doge-education-coristine:
     obj_type: Agency
   agency_ids:
   - Education
+  documents:
+  - id: doge-staff-education-20250407
+    name:
+    type: mou
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
+    case_no: 1:25-cv-00354
+    comment:
+    file: doge-staff-education-20250407.pdf
+    url: "/documents/doge-staff-education-20250407.pdf"
 detail-gsa-hhs-edward-coristine:
   id: detail-gsa-hhs-edward-coristine
   type: detailed
@@ -3780,7 +3915,6 @@ detail-gsa-hhs-edward-coristine:
   comment: No document provided, date reported in court filing
   qualifications:
   table_note: Date verified in court document, assuming detail from GSA
-  documents:
   person:
     name: Edward Coristine
     sort_name: Coristine
@@ -3820,6 +3954,7 @@ detail-gsa-hhs-edward-coristine:
     obj_type: Agency
   agency_ids:
   - HHS
+  documents: []
 internal-hhs-cms-coristine:
   id: internal-hhs-cms-coristine
   type: internal
@@ -3861,7 +3996,6 @@ internal-hhs-cms-coristine:
   comment: Granted access to CALM system on the same day as his detail to HHS
   qualifications:
   table_note: Granted access to CMS systems on same day as detail to HHS
-  documents:
   person:
     name: Edward Coristine
     sort_name: Coristine
@@ -3902,6 +4036,7 @@ internal-hhs-cms-coristine:
   agency_ids:
   - CMS
   - HHS
+  documents: []
 detail-nasa-ssa-employee-2:
   id: detail-nasa-ssa-employee-2
   type: detailed
@@ -3943,7 +4078,6 @@ detail-nasa-ssa-employee-2:
   comment: Followed by Employee 2 being appointed the CIO
   qualifications:
   table_note:
-  documents: detail-20250306-nasa-ssa-employee-2 onboard-ssa-employee-2
   person:
     name: Scott Coulter
     sort_name: Coulter
@@ -3994,6 +4128,27 @@ detail-nasa-ssa-employee-2:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents:
+  - id: detail-20250306-nasa-ssa-employee-2
+    name:
+    type: mou
+    alias: SSA-2
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
+    case_no:
+    comment:
+    file: mou-20250306-nasa-ssa-employee-2.pdf
+    url: "/documents/mou-20250306-nasa-ssa-employee-2.pdf"
+  - id: onboard-ssa-employee-2
+    name:
+    type: onboard
+    alias: SSA-2
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
+    comment:
+    file: onboard-ssa-employee-2.pdf
+    url: "/documents/onboard-ssa-employee-2.pdf"
 ssa-employee-2-cio:
   id: ssa-employee-2-cio
   type: appointed
@@ -4035,7 +4190,6 @@ ssa-employee-2-cio:
   comment:
   qualifications:
   table_note:
-  documents: onboard-ssa-employee-2
   person:
     name: Scott Coulter
     sort_name: Coulter
@@ -4076,6 +4230,17 @@ ssa-employee-2-cio:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents:
+  - id: onboard-ssa-employee-2
+    name:
+    type: onboard
+    alias: SSA-2
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
+    comment:
+    file: onboard-ssa-employee-2.pdf
+    url: "/documents/onboard-ssa-employee-2.pdf"
 opm-cromer:
   id: opm-cromer
   type: appointed
@@ -4117,7 +4282,6 @@ opm-cromer:
   comment: Sourced from a FOIA document
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions
   person:
     name: Clayton Cromer
     sort_name: Cromer
@@ -4145,6 +4309,18 @@ opm-cromer:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
 detail-opm-usaid-cromer:
   id: detail-opm-usaid-cromer
   type: detailed
@@ -4186,7 +4362,6 @@ detail-opm-usaid-cromer:
   comment: Need to see if I can find any documentation linking him. NYT says he was involved.
   qualifications:
   table_note: NYT links to USAID, but need to find public reports of this
-  documents:
   person:
     name: Clayton Cromer
     sort_name: Cromer
@@ -4224,6 +4399,7 @@ detail-opm-usaid-cromer:
     obj_type: Agency
   agency_ids:
   - USAID
+  documents: []
 detail-opm-doj-cromer:
   id: detail-opm-doj-cromer
   type: detailed
@@ -4265,7 +4441,6 @@ detail-opm-doj-cromer:
   comment: Vindman in early March reports receiving contacts from Cromer at DOJ
   qualifications:
   table_note: Rep. Vindman reported in early March being contacted by Cromer at the DOJ
-  documents:
   person:
     name: Clayton Cromer
     sort_name: Cromer
@@ -4303,6 +4478,7 @@ detail-opm-doj-cromer:
     obj_type: Agency
   agency_ids:
   - DOJ
+  documents: []
 doge-steve-davis:
   id: doge-steve-davis
   type: appointed
@@ -4344,7 +4520,6 @@ doge-steve-davis:
   comment:
   qualifications:
   table_note: assuming he started on 2025-01-20
-  documents:
   person:
     name: Steve Davis
     sort_name: Davis
@@ -4373,6 +4548,7 @@ doge-steve-davis:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 opm-stephen-duarte:
   id: opm-stephen-duarte
   type: appointed
@@ -4414,7 +4590,6 @@ opm-stephen-duarte:
   comment: Sources from a FOIA document
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions
   person:
     name: Stephen Duarte
     sort_name: Duarte
@@ -4442,6 +4617,18 @@ opm-stephen-duarte:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
 ssa-dudek-commissioner:
   id: ssa-dudek-commissioner
   type: promotion
@@ -4483,7 +4670,6 @@ ssa-dudek-commissioner:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Leland Dudek
     sort_name: Dudek
@@ -4516,6 +4702,7 @@ ssa-dudek-commissioner:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents: []
 ssa-dudek:
   id: ssa-dudek
   type: demotion
@@ -4557,7 +4744,6 @@ ssa-dudek:
   comment: FIXME find out what Dudek is doing at SSA
   qualifications:
   table_note: Replaced by Bisignano as confirmed commissioner
-  documents:
   person:
     name: Leland Dudek
     sort_name: Dudek
@@ -4590,6 +4776,7 @@ ssa-dudek:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents: []
 gsa-stephen-ehikian:
   id: gsa-stephen-ehikian
   type: appointed
@@ -4631,7 +4818,6 @@ gsa-stephen-ehikian:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Stephen Ehikian
     sort_name: Ehikian
@@ -4659,6 +4845,7 @@ gsa-stephen-ehikian:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 detail-dol-dhs-elez:
   id: detail-dol-dhs-elez
   type: detailed
@@ -4700,7 +4887,6 @@ detail-dol-dhs-elez:
   comment: No other info, just mentioned in NYT roundup
   qualifications:
   table_note:
-  documents:
   person:
     name: Marko Elez
     sort_name: Elez
@@ -4738,6 +4924,7 @@ detail-dol-dhs-elez:
     obj_type: Agency
   agency_ids:
   - DHS
+  documents: []
 internal-dhs-cpb-elez:
   id: internal-dhs-cpb-elez
   type: internal
@@ -4779,7 +4966,6 @@ internal-dhs-cpb-elez:
   comment: No other info, just mentioned in NYT roundup
   qualifications:
   table_note:
-  documents:
   person:
     name: Marko Elez
     sort_name: Elez
@@ -4818,6 +5004,7 @@ internal-dhs-cpb-elez:
   agency_ids:
   - CBP
   - DHS
+  documents: []
 internal-dhs-ice-elez:
   id: internal-dhs-ice-elez
   type: internal
@@ -4859,7 +5046,6 @@ internal-dhs-ice-elez:
   comment: No other info, just mentioned in NYT roundup
   qualifications:
   table_note:
-  documents:
   person:
     name: Marko Elez
     sort_name: Elez
@@ -4898,6 +5084,7 @@ internal-dhs-ice-elez:
   agency_ids:
   - ICE
   - DHS
+  documents: []
 internal-dhs-tsa-elez:
   id: internal-dhs-tsa-elez
   type: internal
@@ -4939,7 +5126,6 @@ internal-dhs-tsa-elez:
   comment: No other info, just mentioned in NYT roundup
   qualifications:
   table_note: linked to DHS by NYT, no public info
-  documents:
   person:
     name: Marko Elez
     sort_name: Elez
@@ -4978,6 +5164,7 @@ internal-dhs-tsa-elez:
   agency_ids:
   - TSA
   - DHS
+  documents: []
 internal-dhs-uscis-elez:
   id: internal-dhs-uscis-elez
   type: internal
@@ -5019,7 +5206,6 @@ internal-dhs-uscis-elez:
   comment: linked to DHS by NYT, no public info
   qualifications:
   table_note:
-  documents:
   person:
     name: Marko Elez
     sort_name: Elez
@@ -5058,6 +5244,7 @@ internal-dhs-uscis-elez:
   agency_ids:
   - USCIS
   - DHS
+  documents: []
 treasury-marko-elez:
   id: treasury-marko-elez
   type: appointed
@@ -5099,7 +5286,6 @@ treasury-marko-elez:
   comment:
   qualifications:
   table_note: Abruptly resigned when past racist tweets were reported
-  documents: onboard-treasury-marko-elez
   person:
     name: Marko Elez
     sort_name: Elez
@@ -5127,6 +5313,17 @@ treasury-marko-elez:
     obj_type: Agency
   agency_ids:
   - Treasury
+  documents:
+  - id: onboard-treasury-marko-elez
+    name: Marko Elez
+    type: onboard
+    alias:
+    date:
+    source:
+    case_no:
+    comment:
+    file: onboard-treasury-marko-elez.pdf
+    url: "/documents/onboard-treasury-marko-elez.pdf"
 dol-marko-elez:
   id: dol-marko-elez
   type: appointed
@@ -5168,7 +5365,6 @@ dol-marko-elez:
   comment: Marko is detailed from DOL to other agencies, so rehired there at some point in February
   qualifications:
   table_note:
-  documents:
   person:
     name: Marko Elez
     sort_name: Elez
@@ -5196,6 +5392,7 @@ dol-marko-elez:
     obj_type: Agency
   agency_ids:
   - DOL
+  documents: []
 detail-dol-ssa-employee-7:
   id: detail-dol-ssa-employee-7
   type: detailed
@@ -5237,7 +5434,6 @@ detail-dol-ssa-employee-7:
   comment:
   qualifications:
   table_note:
-  documents: detail-20250317-dol-ssa-employee-7 onboard-ssa-employee-7
   person:
     name: Marko Elez
     sort_name: Elez
@@ -5281,6 +5477,27 @@ detail-dol-ssa-employee-7:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents:
+  - id: detail-20250317-dol-ssa-employee-7
+    name:
+    type: mou
+    alias: SSA-7
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
+    case_no:
+    comment:
+    file: mou-20250317-dol-ssa-employee-7.pdf
+    url: "/documents/mou-20250317-dol-ssa-employee-7.pdf"
+  - id: onboard-ssa-employee-7
+    name:
+    type: onboard
+    alias: SSA-7
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
+    comment:
+    file: onboard-ssa-employee-7.pdf
+    url: "/documents/onboard-ssa-employee-7.pdf"
 detail-dol-hhs-marko-elez:
   id: detail-dol-hhs-marko-elez
   type: detailed
@@ -5322,7 +5539,6 @@ detail-dol-hhs-marko-elez:
   comment: No documentation, reported in court filing
   qualifications:
   table_note:
-  documents:
   person:
     name: Marko Elez
     sort_name: Elez
@@ -5360,6 +5576,7 @@ detail-dol-hhs-marko-elez:
     obj_type: Agency
   agency_ids:
   - HHS
+  documents: []
 internal-hhs-cms-marko-elez:
   id: internal-hhs-cms-marko-elez
   type: internal
@@ -5401,7 +5618,6 @@ internal-hhs-cms-marko-elez:
   comment: Reported access to system same day as start of detail to HHS
   qualifications:
   table_note:
-  documents:
   person:
     name: Marko Elez
     sort_name: Elez
@@ -5440,6 +5656,7 @@ internal-hhs-cms-marko-elez:
   agency_ids:
   - CMS
   - HHS
+  documents: []
 opm-ezell:
   id: opm-ezell
   type: appointed
@@ -5481,7 +5698,6 @@ opm-ezell:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Charles Ezell
     sort_name: Ezell
@@ -5509,6 +5725,7 @@ opm-ezell:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents: []
 detail-gsa-dhs-farritor:
   id: detail-gsa-dhs-farritor
   type: detailed
@@ -5550,7 +5767,6 @@ detail-gsa-dhs-farritor:
   comment: No details, but in NYT roundup
   qualifications:
   table_note: linked to DHS by NYT, no other info
-  documents:
   person:
     name: Luke Farritor
     sort_name: Farritor
@@ -5594,6 +5810,7 @@ detail-gsa-dhs-farritor:
     obj_type: Agency
   agency_ids:
   - DHS
+  documents: []
 gsa-luke-farritor:
   id: gsa-luke-farritor
   type: appointed
@@ -5635,7 +5852,6 @@ gsa-luke-farritor:
   comment: Luke is detailed to HHS from GSA on 2025-01-21, so date here is inferred
   qualifications:
   table_note: verified as detailed from GSA to HHS on 1/21, so assuming onboarded on 1/20
-  documents:
   person:
     name: Luke Farritor
     sort_name: Farritor
@@ -5669,6 +5885,7 @@ gsa-luke-farritor:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 internal-dhs-ice-farritor:
   id: internal-dhs-ice-farritor
   type: internal
@@ -5710,7 +5927,6 @@ internal-dhs-ice-farritor:
   comment: No details, but in NYT roundup
   qualifications:
   table_note:
-  documents:
   person:
     name: Luke Farritor
     sort_name: Farritor
@@ -5755,6 +5971,7 @@ internal-dhs-ice-farritor:
   agency_ids:
   - ICE
   - DHS
+  documents: []
 internal-dhs-tsa-farritor:
   id: internal-dhs-tsa-farritor
   type: internal
@@ -5796,7 +6013,6 @@ internal-dhs-tsa-farritor:
   comment: No details, but in NYT roundup
   qualifications:
   table_note:
-  documents:
   person:
     name: Luke Farritor
     sort_name: Farritor
@@ -5841,6 +6057,7 @@ internal-dhs-tsa-farritor:
   agency_ids:
   - TSA
   - DHS
+  documents: []
 internal-dhs-uscis-farritor:
   id: internal-dhs-uscis-farritor
   type: internal
@@ -5882,7 +6099,6 @@ internal-dhs-uscis-farritor:
   comment: No details, but in NYT roundup
   qualifications:
   table_note:
-  documents:
   person:
     name: Luke Farritor
     sort_name: Farritor
@@ -5927,6 +6143,7 @@ internal-dhs-uscis-farritor:
   agency_ids:
   - USCIS
   - DHS
+  documents: []
 detail-gsa-hhs-luke-farritor:
   id: detail-gsa-hhs-luke-farritor
   type: detailed
@@ -5968,7 +6185,6 @@ detail-gsa-hhs-luke-farritor:
   comment: Date found in a court filing
   qualifications:
   table_note:
-  documents:
   person:
     name: Luke Farritor
     sort_name: Farritor
@@ -6012,6 +6228,7 @@ detail-gsa-hhs-luke-farritor:
     obj_type: Agency
   agency_ids:
   - HHS
+  documents: []
 detail-gsa-usaid-farritor:
   id: detail-gsa-usaid-farritor
   type: detailed
@@ -6053,7 +6270,6 @@ detail-gsa-usaid-farritor:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Luke Farritor
     sort_name: Farritor
@@ -6097,6 +6313,7 @@ detail-gsa-usaid-farritor:
     obj_type: Agency
   agency_ids:
   - USAID
+  documents: []
 internal-hhs-cdc-farritor:
   id: internal-hhs-cdc-farritor
   type: internal
@@ -6138,7 +6355,6 @@ internal-hhs-cdc-farritor:
   comment: Guessing from first reported system access for ICE system
   qualifications:
   table_note: date guessed from first system access at CDC
-  documents:
   person:
     name: Luke Farritor
     sort_name: Farritor
@@ -6183,6 +6399,7 @@ internal-hhs-cdc-farritor:
   agency_ids:
   - CDC
   - HHS
+  documents: []
 internal-hhs-cms-farritor:
   id: internal-hhs-cms-farritor
   type: internal
@@ -6224,7 +6441,6 @@ internal-hhs-cms-farritor:
   comment: Guessing from first reported system access for HIGLAS
   qualifications:
   table_note: date guessed from first system access at CMS
-  documents:
   person:
     name: Luke Farritor
     sort_name: Farritor
@@ -6269,6 +6485,7 @@ internal-hhs-cms-farritor:
   agency_ids:
   - CMS
   - HHS
+  documents: []
 detail-gsa-energy-luke-farritor:
   id: detail-gsa-energy-luke-farritor
   type: detailed
@@ -6310,7 +6527,6 @@ detail-gsa-energy-luke-farritor:
   comment: Start date was given by DOE spokesperson denying a news report
   qualifications:
   table_note:
-  documents:
   person:
     name: Luke Farritor
     sort_name: Farritor
@@ -6354,6 +6570,7 @@ detail-gsa-energy-luke-farritor:
     obj_type: Agency
   agency_ids:
   - Energy
+  documents: []
 detail-gsa-cfpb-luke-farritor:
   id: detail-gsa-cfpb-luke-farritor
   type: detailed
@@ -6395,7 +6612,6 @@ detail-gsa-cfpb-luke-farritor:
   comment: Details from court filing
   qualifications:
   table_note:
-  documents:
   person:
     name: Luke Farritor
     sort_name: Farritor
@@ -6439,6 +6655,7 @@ detail-gsa-cfpb-luke-farritor:
     obj_type: Agency
   agency_ids:
   - CFPB
+  documents: []
 detail-gsa-state-farritor:
   id: detail-gsa-state-farritor
   type: detailed
@@ -6480,7 +6697,6 @@ detail-gsa-state-farritor:
   comment:
   qualifications:
   table_note: info reported by news source
-  documents:
   person:
     name: Luke Farritor
     sort_name: Farritor
@@ -6524,6 +6740,7 @@ detail-gsa-state-farritor:
     obj_type: Agency
   agency_ids:
   - State
+  documents: []
 internal-hhs-nih-farritor:
   id: internal-hhs-nih-farritor
   type: internal
@@ -6565,7 +6782,6 @@ internal-hhs-nih-farritor:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Luke Farritor
     sort_name: Farritor
@@ -6610,6 +6826,7 @@ internal-hhs-nih-farritor:
   agency_ids:
   - NIH
   - HHS
+  documents: []
 detail-gsa-nsf-farritor:
   id: detail-gsa-nsf-farritor
   type: detailed
@@ -6651,7 +6868,6 @@ detail-gsa-nsf-farritor:
   comment: Showed up at the agency to do secondary round of grant reviews. Detail from HHS?
   qualifications:
   table_note: arrived at agency to do secondary round of grant reviews with other DOGE staff at HHS.
-  documents:
   person:
     name: Luke Farritor
     sort_name: Farritor
@@ -6695,6 +6911,7 @@ detail-gsa-nsf-farritor:
     obj_type: Agency
   agency_ids:
   - NSF
+  documents: []
 gsa-fennessy:
   id: gsa-fennessy
   type: unknown
@@ -6736,7 +6953,6 @@ gsa-fennessy:
   comment: No details, just info from NYT roundup
   qualifications:
   table_note:
-  documents:
   person:
     name: Conor Fennessy
     sort_name: Fennessy
@@ -6764,6 +6980,7 @@ gsa-fennessy:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 education-ed-2:
   id: education-ed-2
   type: appointed
@@ -6805,7 +7022,6 @@ education-ed-2:
   comment:
   qualifications:
   table_note:
-  documents: onboard-education-employee-2
   person:
     name: Conor Fennessy
     sort_name: Fennessy
@@ -6841,6 +7057,17 @@ education-ed-2:
     obj_type: Agency
   agency_ids:
   - Education
+  documents:
+  - id: onboard-education-employee-2
+    name: Conor Fennessy
+    type: onboard
+    alias: ED-2
+    date:
+    source:
+    case_no: 1:25-cv-00354
+    comment: FIXME Doc 32-1
+    file: onboard-education-employee-2.pdf
+    url: "/documents/onboard-education-employee-2.pdf"
 internal-hhs-cms-fennessy:
   id: internal-hhs-cms-fennessy
   type: internal
@@ -6882,7 +7109,6 @@ internal-hhs-cms-fennessy:
   comment: Inferred from first reported access to CALM system
   qualifications:
   table_note:
-  documents:
   person:
     name: Conor Fennessy
     sort_name: Fennessy
@@ -6921,6 +7147,7 @@ internal-hhs-cms-fennessy:
   agency_ids:
   - CMS
   - HHS
+  documents: []
 detail-education-hhs-fennessy:
   id: detail-education-hhs-fennessy
   type: detailed
@@ -6962,7 +7189,6 @@ detail-education-hhs-fennessy:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Conor Fennessy
     sort_name: Fennessy
@@ -7000,6 +7226,7 @@ detail-education-hhs-fennessy:
     obj_type: Agency
   agency_ids:
   - HHS
+  documents: []
 doge-joshua-fox:
   id: doge-joshua-fox
   type: appointed
@@ -7041,7 +7268,6 @@ doge-joshua-fox:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Joshua Fox
     sort_name: Fox, Joshua
@@ -7070,6 +7296,7 @@ doge-joshua-fox:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 gsa-justin-fox:
   id: gsa-justin-fox
   type: appointed
@@ -7111,7 +7338,6 @@ gsa-justin-fox:
   comment: No details, but just guessing
   qualifications:
   table_note:
-  documents:
   person:
     name: Justin Fox
     sort_name: Fox, Justin
@@ -7141,6 +7367,7 @@ gsa-justin-fox:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 detail-neh-justin-fox:
   id: detail-neh-justin-fox
   type: detailed
@@ -7182,7 +7409,6 @@ detail-neh-justin-fox:
   comment: Guessing GSA based on some past reporting
   qualifications:
   table_note:
-  documents:
   person:
     name: Justin Fox
     sort_name: Fox, Justin
@@ -7222,6 +7448,7 @@ detail-neh-justin-fox:
     obj_type: Agency
   agency_ids:
   - NEH
+  documents: []
 detail-gsa-nlrb-fox:
   id: detail-gsa-nlrb-fox
   type: detailed
@@ -7263,7 +7490,6 @@ detail-gsa-nlrb-fox:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Justin Fox
     sort_name: Fox, Justin
@@ -7303,6 +7529,7 @@ detail-gsa-nlrb-fox:
     obj_type: Agency
   agency_ids:
   - NLRB
+  documents: []
 dod-fulcher:
   id: dod-fulcher
   type: detailed
@@ -7344,7 +7571,6 @@ dod-fulcher:
   comment: Assuming this position replace by Senior Advisor role
   qualifications:
   table_note:
-  documents:
   person:
     name: Justin Fulcher
     sort_name: Fulcher
@@ -7372,6 +7598,7 @@ dod-fulcher:
     obj_type: Agency
   agency_ids:
   - DOD
+  documents: []
 dod-fulcher-advisor:
   id: dod-fulcher-advisor
   type: appointed
@@ -7413,7 +7640,6 @@ dod-fulcher-advisor:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Justin Fulcher
     sort_name: Fulcher
@@ -7441,6 +7667,7 @@ dod-fulcher-advisor:
     obj_type: Agency
   agency_ids:
   - DOD
+  documents: []
 hhs-gamache:
   id: hhs-gamache
   type: unknown
@@ -7482,7 +7709,6 @@ hhs-gamache:
   comment: ProPublica just reports he was there in January
   qualifications:
   table_note:
-  documents:
   person:
     name: Mattieu Gamache-Asselin
     sort_name: Gamache-Asselin
@@ -7510,6 +7736,7 @@ hhs-gamache:
     obj_type: Agency
   agency_ids:
   - HHS
+  documents: []
 opm-joe-gebbia:
   id: opm-joe-gebbia
   type: appointed
@@ -7551,7 +7778,6 @@ opm-joe-gebbia:
   comment: Sourced from a FOIAed document
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions
   person:
     name: Joe Gebbia
     sort_name: Gebbia
@@ -7579,6 +7805,18 @@ opm-joe-gebbia:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
 dol-derek-geissler:
   id: dol-derek-geissler
   type: unknown
@@ -7620,7 +7858,6 @@ dol-derek-geissler:
   comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
   qualifications:
   table_note:
-  documents:
   person:
     name: Derek Geissler
     sort_name: Geissler
@@ -7648,6 +7885,7 @@ dol-derek-geissler:
     obj_type: Agency
   agency_ids:
   - DOL
+  documents: []
 faa-glantz:
   id: faa-glantz
   type: appointed
@@ -7689,7 +7927,6 @@ faa-glantz:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Brady Glantz
     sort_name: Glantz
@@ -7720,6 +7957,7 @@ faa-glantz:
   agency_ids:
   - FAA
   - DOT
+  documents: []
 doge-amy-gleason:
   id: doge-amy-gleason
   type: appointed
@@ -7761,7 +7999,6 @@ doge-amy-gleason:
   comment: Amy Gleason joins the USDS, according to her sworn testimony; not sure of her title for this before she is named Acting Director
   qualifications:
   table_note:
-  documents:
   person:
     name: Amy Gleason
     sort_name: Gleason
@@ -7790,6 +8027,7 @@ doge-amy-gleason:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 doge-amy-gleason-director:
   id: doge-amy-gleason-director
   type: promotion
@@ -7831,7 +8069,6 @@ doge-amy-gleason-director:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Amy Gleason
     sort_name: Gleason
@@ -7860,6 +8097,7 @@ doge-amy-gleason-director:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 internal-hhs-cms-gleason:
   id: internal-hhs-cms-gleason
   type: internal
@@ -7901,7 +8139,6 @@ internal-hhs-cms-gleason:
   comment: Start date is just her reported first access to CALM system at CMS
   qualifications:
   table_note:
-  documents:
   person:
     name: Amy Gleason
     sort_name: Gleason
@@ -7940,6 +8177,7 @@ internal-hhs-cms-gleason:
   agency_ids:
   - CMS
   - HHS
+  documents: []
 hhs-amy-gleason:
   id: hhs-amy-gleason
   type: appointed
@@ -7981,7 +8219,6 @@ hhs-amy-gleason:
   comment: All I have is her SF-61
   qualifications:
   table_note:
-  documents: onboard-hhs-amy-gleason
   person:
     name: Amy Gleason
     sort_name: Gleason
@@ -8009,6 +8246,17 @@ hhs-amy-gleason:
     obj_type: Agency
   agency_ids:
   - HHS
+  documents:
+  - id: onboard-hhs-amy-gleason
+    name: Amy Gleason
+    type: onboard
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.65.1_1.pdf
+    case_no:
+    comment:
+    file: onboard-hhs-amy-gleason.pdf
+    url: "/documents/onboard-hhs-amy-gleason.pdf"
 opm-gonzalez:
   id: opm-gonzalez
   type: appointed
@@ -8050,7 +8298,6 @@ opm-gonzalez:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Mike Gonzalez
     sort_name: Gonzalez
@@ -8078,6 +8325,7 @@ opm-gonzalez:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents: []
 ssa-antonio-gracias:
   id: ssa-antonio-gracias
   type: appointed
@@ -8119,7 +8367,6 @@ ssa-antonio-gracias:
   comment: SF-50 is a correction
   qualifications: Founder, CEO and Chief Investment Officer of [REDACTED]. Over 25 years of experience in private equity investing.
   table_note:
-  documents: onboard-ssa-employee-4
   person:
     name: Antonio Gracias
     sort_name: Gracias
@@ -8153,6 +8400,17 @@ ssa-antonio-gracias:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents:
+  - id: onboard-ssa-employee-4
+    name:
+    type: onboard
+    alias: SSA-4
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
+    comment:
+    file: onboard-ssa-employee-4.pdf
+    url: "/documents/onboard-ssa-employee-4.pdf"
 commerce-michael-grimes:
   id: commerce-michael-grimes
   type: appointed
@@ -8194,7 +8452,6 @@ commerce-michael-grimes:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Michael Grimes
     sort_name: Grimes
@@ -8222,6 +8479,7 @@ commerce-michael-grimes:
     obj_type: Agency
   agency_ids:
   - Commerce
+  documents: []
 gsa-josh-gruenbaum:
   id: gsa-josh-gruenbaum
   type: appointed
@@ -8263,7 +8521,6 @@ gsa-josh-gruenbaum:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Josh Gruenbaum
     sort_name: Gruenbaum
@@ -8291,6 +8548,7 @@ gsa-josh-gruenbaum:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 imls-hamrick:
   id: imls-hamrick
   type: detailed
@@ -8332,7 +8590,6 @@ imls-hamrick:
   comment: DOGE put entire staff on admin leave and started cancelling grants, not many details
   qualifications:
   table_note:
-  documents:
   person:
     name: Gavin Hamrick
     sort_name: Hamrick
@@ -8360,6 +8617,7 @@ imls-hamrick:
     obj_type: Agency
   agency_ids:
   - IMLS
+  documents: []
 doge-joshua-hanley:
   id: doge-joshua-hanley
   type: appointed
@@ -8401,7 +8659,6 @@ doge-joshua-hanley:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Joshua Hanley
     sort_name: Hanley
@@ -8430,6 +8687,7 @@ doge-joshua-hanley:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 opm-christina-hanna:
   id: opm-christina-hanna
   type: appointed
@@ -8471,7 +8729,6 @@ opm-christina-hanna:
   comment: Sourced from FOIAed document
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions
   person:
     name: Christina Hanna
     sort_name: Hanna
@@ -8499,6 +8756,18 @@ opm-christina-hanna:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
 doi-hassen-acting:
   id: doi-hassen-acting
   type: appointed
@@ -8540,7 +8809,6 @@ doi-hassen-acting:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Tyler Hassen
     sort_name: Hassen
@@ -8568,6 +8836,7 @@ doi-hassen-acting:
     obj_type: Agency
   agency_ids:
   - DOI
+  documents: []
 doj-hoffman:
   id: doj-hoffman
   type: unknown
@@ -8609,7 +8878,6 @@ doj-hoffman:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Adam Hoffman
     sort_name: Hoffman
@@ -8637,6 +8905,7 @@ doj-hoffman:
     obj_type: Agency
   agency_ids:
   - DOJ
+  documents: []
 greg-hogan-opm:
   id: greg-hogan-opm
   type: appointed
@@ -8678,7 +8947,6 @@ greg-hogan-opm:
   comment: details from FOIA doucments
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions onboard-opm-greg-hogan
   person:
     name: Greg Hogan
     sort_name: Hogan
@@ -8706,6 +8974,28 @@ greg-hogan-opm:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
+  - id: onboard-opm-greg-hogan
+    name: Greg Hogan
+    type: onboard
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
+    case_no: 8:25-cv-00430
+    comment:
+    file: onboard-opm-greg-hogan
+    url: "/documents/onboard-opm-greg-hogan"
 greg-hogan-opm-2:
   id: greg-hogan-opm-2
   type: promotion
@@ -8747,7 +9037,6 @@ greg-hogan-opm-2:
   comment: details from FOIA doucments
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions onboard-opm-greg-hogan
   person:
     name: Greg Hogan
     sort_name: Hogan
@@ -8775,6 +9064,28 @@ greg-hogan-opm-2:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
+  - id: onboard-opm-greg-hogan
+    name: Greg Hogan
+    type: onboard
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
+    case_no: 8:25-cv-00430
+    comment:
+    file: onboard-opm-greg-hogan
+    url: "/documents/onboard-opm-greg-hogan"
 gsa-hollander:
   id: gsa-hollander
   type: appointed
@@ -8816,7 +9127,6 @@ gsa-hollander:
   comment: FIXME
   qualifications:
   table_note:
-  documents:
   person:
     name: Nicole Hollander
     sort_name: Hollander
@@ -8847,6 +9157,7 @@ gsa-hollander:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 doge-holmes:
   id: doge-holmes
   type: appointed
@@ -8888,7 +9199,6 @@ doge-holmes:
   comment: Was added to the ProPublica tracker on 2025-02-06
   qualifications:
   table_note:
-  documents:
   person:
     name: Stephanie Holmes
     sort_name: Holmes
@@ -8917,6 +9227,7 @@ doge-holmes:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 detail-doge-doi-holmes:
   id: detail-doge-doi-holmes
   type: detailed
@@ -8958,7 +9269,6 @@ detail-doge-doi-holmes:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Stephanie Holmes
     sort_name: Holmes
@@ -8996,6 +9306,7 @@ detail-doge-doi-holmes:
     obj_type: Agency
   agency_ids:
   - DOI
+  documents: []
 usip-jackson:
   id: usip-jackson
   type: appointed
@@ -9037,7 +9348,6 @@ usip-jackson:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Kenneth Jackson
     sort_name: Jackson
@@ -9065,6 +9375,7 @@ usip-jackson:
     obj_type: Agency
   agency_ids:
   - USIP
+  documents: []
 usaid-deputy-jackson:
   id: usaid-deputy-jackson
   type: appointed
@@ -9106,7 +9417,6 @@ usaid-deputy-jackson:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Kenneth Jackson
     sort_name: Jackson
@@ -9134,6 +9444,7 @@ usaid-deputy-jackson:
     obj_type: Agency
   agency_ids:
   - USAID
+  documents: []
 gsa-jegannathan:
   id: gsa-jegannathan
   type: appointed
@@ -9175,7 +9486,6 @@ gsa-jegannathan:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Raj Jegannathan
     sort_name: Jegannathan
@@ -9203,6 +9513,7 @@ gsa-jegannathan:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 epa-jehling:
   id: epa-jehling
   type: unknown
@@ -9244,7 +9555,6 @@ epa-jehling:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Erica Jehling
     sort_name: Jehling
@@ -9272,6 +9582,7 @@ epa-jehling:
     obj_type: Agency
   agency_ids:
   - EPA
+  documents: []
 faa-kiernan:
   id: faa-kiernan
   type: appointed
@@ -9313,7 +9624,6 @@ faa-kiernan:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Thomas Kiernan
     sort_name: Kiernan
@@ -9344,6 +9654,7 @@ faa-kiernan:
   agency_ids:
   - FAA
   - DOT
+  documents: []
 doge-killian:
   id: doge-killian
   type: appointed
@@ -9385,7 +9696,6 @@ doge-killian:
   comment: Listed as interviewing USDS staff on 1/21, not in GSA or OPM crew
   qualifications:
   table_note:
-  documents:
   person:
     name: Cole Killian
     sort_name: Killian
@@ -9414,6 +9724,7 @@ doge-killian:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 detaile-doge-epa-killian:
   id: detaile-doge-epa-killian
   type: detailed
@@ -9455,7 +9766,6 @@ detaile-doge-epa-killian:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Cole Killian
     sort_name: Killian
@@ -9483,6 +9793,7 @@ detaile-doge-epa-killian:
     obj_type: Agency
   agency_ids:
   - EPA
+  documents: []
 detail-doge-dol-killian:
   id: detail-doge-dol-killian
   type: detailed
@@ -9524,7 +9835,6 @@ detail-doge-dol-killian:
   comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
   qualifications:
   table_note:
-  documents:
   person:
     name: Cole Killian
     sort_name: Killian
@@ -9552,6 +9862,7 @@ detail-doge-dol-killian:
     obj_type: Agency
   agency_ids:
   - DOL
+  documents: []
 detail-doge-ssa-killian:
   id: detail-doge-ssa-killian
   type: unknown
@@ -9593,7 +9904,6 @@ detail-doge-ssa-killian:
   comment: Identified as being at the agency on 2/20; unclear how long before
   qualifications:
   table_note:
-  documents:
   person:
     name: Cole Killian
     sort_name: Killian
@@ -9621,6 +9931,7 @@ detail-doge-ssa-killian:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents: []
 detail-opm-dhs-kliger:
   id: detail-opm-dhs-kliger
   type: detailed
@@ -9662,7 +9973,6 @@ detail-opm-dhs-kliger:
   comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
   qualifications:
   table_note:
-  documents:
   person:
     name: Gavin Kliger
     sort_name: Kliger
@@ -9700,6 +10010,7 @@ detail-opm-dhs-kliger:
     obj_type: Agency
   agency_ids:
   - DHS
+  documents: []
 gavin-kliger-opm:
   id: gavin-kliger-opm
   type: appointed
@@ -9741,7 +10052,6 @@ gavin-kliger-opm:
   comment: I confirmed he is OPM-5
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions onboard-opm-employee-5
   person:
     name: Gavin Kliger
     sort_name: Kliger
@@ -9769,6 +10079,28 @@ gavin-kliger-opm:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
+  - id: onboard-opm-employee-5
+    name:
+    type: onboard
+    alias: OPM-5
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
+    case_no: 8:25-cv-00430
+    comment:
+    file: onboard-opm-employee-5
+    url: "/documents/onboard-opm-employee-5"
 internal-dhs-tsa-kliger:
   id: internal-dhs-tsa-kliger
   type: detailed
@@ -9810,7 +10142,6 @@ internal-dhs-tsa-kliger:
   comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
   qualifications:
   table_note:
-  documents:
   person:
     name: Gavin Kliger
     sort_name: Kliger
@@ -9849,6 +10180,7 @@ internal-dhs-tsa-kliger:
   agency_ids:
   - TSA
   - DHS
+  documents: []
 detail-opm-usaid-kliger:
   id: detail-opm-usaid-kliger
   type: detailed
@@ -9890,7 +10222,6 @@ detail-opm-usaid-kliger:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Gavin Kliger
     sort_name: Kliger
@@ -9928,6 +10259,7 @@ detail-opm-usaid-kliger:
     obj_type: Agency
   agency_ids:
   - USAID
+  documents: []
 detail-opm-usda-kliger:
   id: detail-opm-usda-kliger
   type: detailed
@@ -9971,7 +10303,6 @@ detail-opm-usda-kliger:
     OSEC - DC
   qualifications:
   table_note:
-  documents:
   person:
     name: Gavin Kliger
     sort_name: Kliger
@@ -10009,6 +10340,7 @@ detail-opm-usda-kliger:
     obj_type: Agency
   agency_ids:
   - USDA
+  documents: []
 detail-opm-cfpb-kliger:
   id: detail-opm-cfpb-kliger
   type: detailed
@@ -10050,7 +10382,6 @@ detail-opm-cfpb-kliger:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Gavin Kliger
     sort_name: Kliger
@@ -10088,6 +10419,7 @@ detail-opm-cfpb-kliger:
     obj_type: Agency
   agency_ids:
   - CFPB
+  documents: []
 gavin-kliger-opm-2:
   id: gavin-kliger-opm-2
   type: appointed
@@ -10129,7 +10461,6 @@ gavin-kliger-opm-2:
   comment: Converted from provisional to excepted position
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions onboard-opm-employee-5
   person:
     name: Gavin Kliger
     sort_name: Kliger
@@ -10157,6 +10488,28 @@ gavin-kliger-opm-2:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
+  - id: onboard-opm-employee-5
+    name:
+    type: onboard
+    alias: OPM-5
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
+    case_no: 8:25-cv-00430
+    comment:
+    file: onboard-opm-employee-5
+    url: "/documents/onboard-opm-employee-5"
 detail-opm-irs-gavin-kliger:
   id: detail-opm-irs-gavin-kliger
   type: detailed
@@ -10198,7 +10551,6 @@ detail-opm-irs-gavin-kliger:
   comment: He was forcibly removed from agency on 2025-04-17
   qualifications:
   table_note:
-  documents: gov.uscourts.nysd.636609.144.0
   person:
     name: Gavin Kliger
     sort_name: Kliger
@@ -10237,6 +10589,17 @@ detail-opm-irs-gavin-kliger:
   agency_ids:
   - IRS
   - Treasury
+  documents:
+  - id: gov.uscourts.nysd.636609.144.0
+    name:
+    type: directory
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
+    case_no: 1:25-cv-01144
+    comment: Testimony about the positions of various IRS appointees
+    file: gov.uscourts.nysd.636609.144.0.pdf
+    url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
 detail-opm-ftc-kliger:
   id: detail-opm-ftc-kliger
   type: detailed
@@ -10278,7 +10641,6 @@ detail-opm-ftc-kliger:
   comment: Title is not given, reported as starting "last week" from 2025-04-04
   qualifications:
   table_note:
-  documents:
   person:
     name: Gavin Kliger
     sort_name: Kliger
@@ -10316,6 +10678,7 @@ detail-opm-ftc-kliger:
     obj_type: Agency
   agency_ids:
   - FTC
+  documents: []
 doge-kmiec:
   id: doge-kmiec
   type: appointed
@@ -10357,7 +10720,6 @@ doge-kmiec:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Keenan Kmiec
     sort_name: Kmiec
@@ -10386,6 +10748,7 @@ doge-kmiec:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 ssa-employee-6:
   id: ssa-employee-6
   type: appointed
@@ -10427,7 +10790,6 @@ ssa-employee-6:
   comment:
   qualifications:
   table_note:
-  documents: onboard-ssa-employee-6
   person:
     name: Jon Koval
     sort_name: Koval
@@ -10461,6 +10823,17 @@ ssa-employee-6:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents:
+  - id: onboard-ssa-employee-6
+    name:
+    type: onboard
+    alias: SSA-6
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
+    comment:
+    file: onboard-ssa-employee-6.pdf
+    url: "/documents/onboard-ssa-employee-6.pdf"
 detail-ssa-doj-koval:
   id: detail-ssa-doj-koval
   type: detailed
@@ -10502,7 +10875,6 @@ detail-ssa-doj-koval:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Jon Koval
     sort_name: Koval
@@ -10530,6 +10902,7 @@ detail-ssa-doj-koval:
     obj_type: Agency
   agency_ids:
   - DOJ
+  documents: []
 onboard-treasury-thomas-krause:
   id: onboard-treasury-thomas-krause
   type: consultant
@@ -10571,7 +10944,6 @@ onboard-treasury-thomas-krause:
   comment: Part-time
   qualifications:
   table_note:
-  documents: onboard-treasury-thomas-krause gov.uscourts.nysd.636609.144.0
   person:
     name: Tom Krause
     sort_name: Krause
@@ -10599,6 +10971,27 @@ onboard-treasury-thomas-krause:
     obj_type: Agency
   agency_ids:
   - Treasury
+  documents:
+  - id: onboard-treasury-thomas-krause
+    name: Thomas Krause
+    type: onboard
+    alias:
+    date:
+    source:
+    case_no:
+    comment: FIXME link to court case
+    file: onboard-treasury-thomas-krause.pdf
+    url: "/documents/onboard-treasury-thomas-krause.pdf"
+  - id: gov.uscourts.nysd.636609.144.0
+    name:
+    type: directory
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
+    case_no: 1:25-cv-01144
+    comment: Testimony about the positions of various IRS appointees
+    file: gov.uscourts.nysd.636609.144.0.pdf
+    url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
 appoint-treasury-thomas-krause:
   id: appoint-treasury-thomas-krause
   type: appointed
@@ -10640,7 +11033,6 @@ appoint-treasury-thomas-krause:
   comment: Changed to a full-time position
   qualifications:
   table_note:
-  documents: gov.uscourts.nysd.636609.144.0
   person:
     name: Tom Krause
     sort_name: Krause
@@ -10668,6 +11060,17 @@ appoint-treasury-thomas-krause:
     obj_type: Agency
   agency_ids:
   - Treasury
+  documents:
+  - id: gov.uscourts.nysd.636609.144.0
+    name:
+    type: directory
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
+    case_no: 1:25-cv-01144
+    comment: Testimony about the positions of various IRS appointees
+    file: gov.uscourts.nysd.636609.144.0.pdf
+    url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
 hud-langmack:
   id: hud-langmack
   type: unknown
@@ -10709,7 +11112,6 @@ hud-langmack:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Scott Langmack
     sort_name: Langmack
@@ -10737,6 +11139,7 @@ hud-langmack:
     obj_type: Agency
   agency_ids:
   - HUD
+  documents: []
 va-lavingia:
   id: va-lavingia
   type: appointed
@@ -10778,7 +11181,6 @@ va-lavingia:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Sahil Lavingia
     sort_name: Lavingia
@@ -10806,6 +11208,7 @@ va-lavingia:
     obj_type: Agency
   agency_ids:
   - VA
+  documents: []
 gsa-jeremy-lewin:
   id: gsa-jeremy-lewin
   type: appointed
@@ -10847,7 +11250,6 @@ gsa-jeremy-lewin:
   comment: I know he started at the GSA before 1/28
   qualifications:
   table_note:
-  documents:
   person:
     name: Jeremy Lewin
     sort_name: Lewin
@@ -10875,6 +11277,7 @@ gsa-jeremy-lewin:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 detail-usaid-jeremy-lewin:
   id: detail-usaid-jeremy-lewin
   type: detailed
@@ -10916,7 +11319,6 @@ detail-usaid-jeremy-lewin:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Jeremy Lewin
     sort_name: Lewin
@@ -10954,6 +11356,7 @@ detail-usaid-jeremy-lewin:
     obj_type: Agency
   agency_ids:
   - USAID
+  documents: []
 internal-hhs-cms-lewin:
   id: internal-hhs-cms-lewin
   type: internal
@@ -10995,7 +11398,6 @@ internal-hhs-cms-lewin:
   comment: Inferring based on first reported access to CMS CALM system
   qualifications:
   table_note:
-  documents:
   person:
     name: Jeremy Lewin
     sort_name: Lewin
@@ -11034,6 +11436,7 @@ internal-hhs-cms-lewin:
   agency_ids:
   - CMS
   - HHS
+  documents: []
 detail-gsa-cfpb-jeremy-lewin:
   id: detail-gsa-cfpb-jeremy-lewin
   type: detailed
@@ -11075,7 +11478,6 @@ detail-gsa-cfpb-jeremy-lewin:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Jeremy Lewin
     sort_name: Lewin
@@ -11113,6 +11515,7 @@ detail-gsa-cfpb-jeremy-lewin:
     obj_type: Agency
   agency_ids:
   - CFPB
+  documents: []
 detail-gsa-hhs-lewin:
   id: detail-gsa-hhs-lewin
   type: detailed
@@ -11154,7 +11557,6 @@ detail-gsa-hhs-lewin:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Jeremy Lewin
     sort_name: Lewin
@@ -11192,6 +11594,7 @@ detail-gsa-hhs-lewin:
     obj_type: Agency
   agency_ids:
   - HHS
+  documents: []
 internal-hhs-nih-lewin:
   id: internal-hhs-nih-lewin
   type: internal
@@ -11233,7 +11636,6 @@ internal-hhs-nih-lewin:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Jeremy Lewin
     sort_name: Lewin
@@ -11272,6 +11674,7 @@ internal-hhs-nih-lewin:
   agency_ids:
   - NIH
   - HHS
+  documents: []
 usaid-jeremy-lewin-2:
   id: usaid-jeremy-lewin-2
   type: appointed
@@ -11313,7 +11716,6 @@ usaid-jeremy-lewin-2:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Jeremy Lewin
     sort_name: Lewin
@@ -11341,6 +11743,7 @@ usaid-jeremy-lewin-2:
     obj_type: Agency
   agency_ids:
   - USAID
+  documents: []
 state-lewin-foreign:
   id: state-lewin-foreign
   type: appointed
@@ -11382,7 +11785,6 @@ state-lewin-foreign:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Jeremy Lewin
     sort_name: Lewin
@@ -11410,6 +11812,7 @@ state-lewin-foreign:
     obj_type: Agency
   agency_ids:
   - State
+  documents: []
 doge-lindemann:
   id: doge-lindemann
   type: appointed
@@ -11451,7 +11854,6 @@ doge-lindemann:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Kendall Lindemann
     sort_name: Lindemann
@@ -11480,6 +11882,7 @@ doge-lindemann:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 epa-loving:
   id: epa-loving
   type: unknown
@@ -11521,7 +11924,6 @@ epa-loving:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Kathryn Armstrong Loving
     sort_name: Loving
@@ -11549,6 +11951,7 @@ epa-loving:
     obj_type: Agency
   agency_ids:
   - EPA
+  documents: []
 doi-luby:
   id: doi-luby
   type: unknown
@@ -11590,7 +11993,6 @@ doi-luby:
   comment: Tyler Hassan reported to be working with Matt Luby to scrutinize grants
   qualifications:
   table_note:
-  documents:
   person:
     name: Matt Luby
     sort_name: Luby
@@ -11618,6 +12020,7 @@ doi-luby:
     obj_type: Agency
   agency_ids:
   - DOI
+  documents: []
 opm-makecha:
   id: opm-makecha
   type: appointed
@@ -11659,7 +12062,6 @@ opm-makecha:
   comment: POGO has his resume and listing as an OPM staffer
   qualifications:
   table_note:
-  documents:
   person:
     name: Tarak Makecha
     sort_name: Makecha
@@ -11687,6 +12089,7 @@ opm-makecha:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents: []
 fbi-makecha:
   id: fbi-makecha
   type: detailed
@@ -11730,7 +12133,6 @@ fbi-makecha:
     has been there since the end of March
   qualifications:
   table_note:
-  documents:
   person:
     name: Tarak Makecha
     sort_name: Makecha
@@ -11759,6 +12161,7 @@ fbi-makecha:
   agency_ids:
   - FBI
   - DOJ
+  documents: []
 detail-fcc-makecha:
   id: detail-fcc-makecha
   type: detailed
@@ -11800,7 +12203,6 @@ detail-fcc-makecha:
   comment: Assuming detailed, but not sure from where
   qualifications:
   table_note:
-  documents:
   person:
     name: Tarak Makecha
     sort_name: Makecha
@@ -11828,6 +12230,7 @@ detail-fcc-makecha:
     obj_type: Agency
   agency_ids:
   - FCC
+  documents: []
 faa-malaska:
   id: faa-malaska
   type: appointed
@@ -11869,7 +12272,6 @@ faa-malaska:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Ted Malaska
     sort_name: Malaska
@@ -11901,6 +12303,7 @@ faa-malaska:
   agency_ids:
   - FAA
   - DOT
+  documents: []
 gsa-malcher:
   id: gsa-malcher
   type: appointed
@@ -11942,7 +12345,6 @@ gsa-malcher:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Dave Malcher
     sort_name: Malcher
@@ -11970,6 +12372,7 @@ gsa-malcher:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 iaf-marocco:
   id: iaf-marocco
   type: appointed
@@ -12011,7 +12414,6 @@ iaf-marocco:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Peter Marocco
     sort_name: Marocco
@@ -12039,6 +12441,7 @@ iaf-marocco:
     obj_type: Agency
   agency_ids:
   - IAF
+  documents: []
 dhs-mccord:
   id: dhs-mccord
   type: appointed
@@ -12080,7 +12483,6 @@ dhs-mccord:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Antoine McCord
     sort_name: McCord
@@ -12108,6 +12510,7 @@ dhs-mccord:
     obj_type: Agency
   agency_ids:
   - DHS
+  documents: []
 gsa-mendelson:
   id: gsa-mendelson
   type: appointed
@@ -12149,7 +12552,6 @@ gsa-mendelson:
   comment: Assuming a GSA start since named in NPR report as from GSA in detailing to other agencies
   qualifications:
   table_note:
-  documents:
   person:
     name: Jonathan Mendelson
     sort_name: Mendelson
@@ -12177,6 +12579,7 @@ gsa-mendelson:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 detail-gsa-dfc-mendelson:
   id: detail-gsa-dfc-mendelson
   type: detailed
@@ -12218,7 +12621,6 @@ detail-gsa-dfc-mendelson:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Jonathan Mendelson
     sort_name: Mendelson
@@ -12256,6 +12658,7 @@ detail-gsa-dfc-mendelson:
     obj_type: Agency
   agency_ids:
   - USDFC
+  documents: []
 detail-gsa-sec-mendelson:
   id: detail-gsa-sec-mendelson
   type: detailed
@@ -12297,7 +12700,6 @@ detail-gsa-sec-mendelson:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Jonathan Mendelson
     sort_name: Mendelson
@@ -12335,6 +12737,7 @@ detail-gsa-sec-mendelson:
     obj_type: Agency
   agency_ids:
   - SEC
+  documents: []
 doge-miller:
   id: doge-miller
   type: appointed
@@ -12376,7 +12779,6 @@ doge-miller:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Katie Miller
     sort_name: Miller
@@ -12405,6 +12807,7 @@ doge-miller:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 hhs-minor:
   id: hhs-minor
   type: appointed
@@ -12446,7 +12849,6 @@ hhs-minor:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Clark Minor
     sort_name: Minor
@@ -12474,6 +12876,7 @@ hhs-minor:
     obj_type: Agency
   agency_ids:
   - HHS
+  documents: []
 detail-hhs-nih-minor:
   id: detail-hhs-nih-minor
   type: detailed
@@ -12515,7 +12918,6 @@ detail-hhs-nih-minor:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Clark Minor
     sort_name: Minor
@@ -12554,6 +12956,7 @@ detail-hhs-nih-minor:
   agency_ids:
   - NIH
   - HHS
+  documents: []
 hud-mirski:
   id: hud-mirski
   type: unknown
@@ -12595,7 +12998,6 @@ hud-mirski:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Michael Mirski
     sort_name: Mirski
@@ -12623,6 +13025,7 @@ hud-mirski:
     obj_type: Agency
   agency_ids:
   - HUD
+  documents: []
 sec-mishory:
   id: sec-mishory
   type: unknown
@@ -12664,7 +13067,6 @@ sec-mishory:
   comment: Reporting on 4/15 just says he arrived "earlier this month"
   qualifications:
   table_note:
-  documents:
   person:
     name: Eliezer Mishory
     sort_name: Mishory
@@ -12692,6 +13094,7 @@ sec-mishory:
     obj_type: Agency
   agency_ids:
   - SEC
+  documents: []
 opm-bryanne-mlodzianowski:
   id: opm-bryanne-mlodzianowski
   type: appointed
@@ -12733,7 +13136,6 @@ opm-bryanne-mlodzianowski:
   comment: Sourced from a FOIAed document
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions
   person:
     name: Bryanne-Michelle Mlodzianowski
     sort_name: Mlodzianowski
@@ -12761,6 +13163,18 @@ opm-bryanne-mlodzianowski:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
 detail-dol-dhs-mohgaddassi:
   id: detail-dol-dhs-mohgaddassi
   type: detailed
@@ -12802,7 +13216,6 @@ detail-dol-dhs-mohgaddassi:
   comment: No details, but reported in NYT roundup. Assuming detailed from DOL
   qualifications:
   table_note:
-  documents:
   person:
     name: Aram Moghaddassi
     sort_name: Moghaddassi
@@ -12840,6 +13253,7 @@ detail-dol-dhs-mohgaddassi:
     obj_type: Agency
   agency_ids:
   - DHS
+  documents: []
 dol-moghaddassi:
   id: dol-moghaddassi
   type: unknown
@@ -12881,7 +13295,6 @@ dol-moghaddassi:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Aram Moghaddassi
     sort_name: Moghaddassi
@@ -12909,6 +13322,7 @@ dol-moghaddassi:
     obj_type: Agency
   agency_ids:
   - DOL
+  documents: []
 internal-dhs-cpb-mohgaddassi:
   id: internal-dhs-cpb-mohgaddassi
   type: internal
@@ -12950,7 +13364,6 @@ internal-dhs-cpb-mohgaddassi:
   comment: No details, but reported in NYT roundup. Assuming detailed from DOL
   qualifications:
   table_note:
-  documents:
   person:
     name: Aram Moghaddassi
     sort_name: Moghaddassi
@@ -12989,6 +13402,7 @@ internal-dhs-cpb-mohgaddassi:
   agency_ids:
   - CBP
   - DHS
+  documents: []
 internal-dhs-ice-mohgaddassi:
   id: internal-dhs-ice-mohgaddassi
   type: internal
@@ -13030,7 +13444,6 @@ internal-dhs-ice-mohgaddassi:
   comment: No details, but reported in NYT roundup. Assuming detailed from DOL
   qualifications:
   table_note:
-  documents:
   person:
     name: Aram Moghaddassi
     sort_name: Moghaddassi
@@ -13069,6 +13482,7 @@ internal-dhs-ice-mohgaddassi:
   agency_ids:
   - ICE
   - DHS
+  documents: []
 internal-dhs-tsa-mohgaddassi:
   id: internal-dhs-tsa-mohgaddassi
   type: internal
@@ -13110,7 +13524,6 @@ internal-dhs-tsa-mohgaddassi:
   comment: No details, but reported in NYT roundup. Assuming detailed from DOL
   qualifications:
   table_note:
-  documents:
   person:
     name: Aram Moghaddassi
     sort_name: Moghaddassi
@@ -13149,6 +13562,7 @@ internal-dhs-tsa-mohgaddassi:
   agency_ids:
   - TSA
   - DHS
+  documents: []
 internal-dhs-uscis-mohgaddassi:
   id: internal-dhs-uscis-mohgaddassi
   type: internal
@@ -13190,7 +13604,6 @@ internal-dhs-uscis-mohgaddassi:
   comment: No details, but reported in NYT roundup. Assuming detailed from DOL
   qualifications:
   table_note:
-  documents:
   person:
     name: Aram Moghaddassi
     sort_name: Moghaddassi
@@ -13229,6 +13642,7 @@ internal-dhs-uscis-mohgaddassi:
   agency_ids:
   - USCIS
   - DHS
+  documents: []
 detail-dol-ssa-employee-3:
   id: detail-dol-ssa-employee-3
   type: detailed
@@ -13270,7 +13684,6 @@ detail-dol-ssa-employee-3:
   comment:
   qualifications:
   table_note:
-  documents: detail-20250317-dol-ssa-employee-3 onboard-ssa-employee-3
   person:
     name: Aram Moghaddassi
     sort_name: Moghaddassi
@@ -13320,6 +13733,27 @@ detail-dol-ssa-employee-3:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents:
+  - id: detail-20250222-dol-ssa-employee-3
+    name:
+    type: mou
+    alias: SSA-3
+    date: '2025-02-18'
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
+    case_no:
+    comment:
+    file: mou-20250222-dol-ssa-employee-3.pdf
+    url: "/documents/mou-20250222-dol-ssa-employee-3.pdf"
+  - id: onboard-ssa-employee-3
+    name:
+    type: onboard
+    alias: SSA-3
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
+    comment: Detail, so no SF-50
+    file: onboard-ssa-employee-3.pdf
+    url: "/documents/onboard-ssa-employee-3.pdf"
 detail-dol-hhs-mohgaddassi:
   id: detail-dol-hhs-mohgaddassi
   type: detailed
@@ -13361,7 +13795,6 @@ detail-dol-hhs-mohgaddassi:
   comment: No documentation, reported in court filing
   qualifications:
   table_note:
-  documents:
   person:
     name: Aram Moghaddassi
     sort_name: Moghaddassi
@@ -13399,6 +13832,7 @@ detail-dol-hhs-mohgaddassi:
     obj_type: Agency
   agency_ids:
   - HHS
+  documents: []
 internal-hhs-cms-mohgaddassi:
   id: internal-hhs-cms-mohgaddassi
   type: internal
@@ -13440,7 +13874,6 @@ internal-hhs-cms-mohgaddassi:
   comment: Reported access to system same day as start of detail to HHS
   qualifications:
   table_note:
-  documents:
   person:
     name: Aram Moghaddassi
     sort_name: Moghaddassi
@@ -13479,6 +13912,7 @@ internal-hhs-cms-mohgaddassi:
   agency_ids:
   - CMS
   - HHS
+  documents: []
 opm-justin-monroe:
   id: opm-justin-monroe
   type: appointed
@@ -13520,7 +13954,6 @@ opm-justin-monroe:
   comment: Sourced from FOIA documents
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions
   person:
     name: Justin Monroe
     sort_name: Monroe
@@ -13548,6 +13981,18 @@ opm-justin-monroe:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
 detail-opm-fbi-monroe:
   id: detail-opm-fbi-monroe
   type: detailed
@@ -13589,7 +14034,6 @@ detail-opm-fbi-monroe:
   comment: Reported as an unidentified SpaceX employee is reported to be working as an advisor to the Director of the FBI, but alias figured out later
   qualifications:
   table_note:
-  documents:
   person:
     name: Justin Monroe
     sort_name: Monroe
@@ -13628,6 +14072,7 @@ detail-opm-fbi-monroe:
   agency_ids:
   - FBI
   - DOJ
+  documents: []
 onboard-education-employee-4:
   id: onboard-education-employee-4
   type: consultant
@@ -13669,7 +14114,6 @@ onboard-education-employee-4:
   comment: Part-time
   qualifications:
   table_note:
-  documents: onboard-education-employee-4
   person:
     name: Brooks Morgan
     sort_name: Morgan
@@ -13705,6 +14149,17 @@ onboard-education-employee-4:
     obj_type: Agency
   agency_ids:
   - Education
+  documents:
+  - id: onboard-education-employee-4
+    name: Brooks Morgan
+    type: onboard
+    alias:
+    date:
+    source:
+    case_no:
+    comment:
+    file: onboard-education-employee-4.pdf
+    url: "/documents/onboard-education-employee-4.pdf"
 detail-education-fdic-morgan:
   id: detail-education-fdic-morgan
   type: detailed
@@ -13746,7 +14201,6 @@ detail-education-fdic-morgan:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Brooks Morgan
     sort_name: Morgan
@@ -13784,6 +14238,7 @@ detail-education-fdic-morgan:
     obj_type: Agency
   agency_ids:
   - FDIC
+  documents: []
 eop-morse:
   id: eop-morse
   type: appointed
@@ -13825,7 +14280,6 @@ eop-morse:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Trent Morse
     sort_name: Morse
@@ -13856,6 +14310,7 @@ eop-morse:
     obj_type: Agency
   agency_ids:
   - EOP
+  documents: []
 musk-doge:
   id: musk-doge
   type: appointed
@@ -13897,7 +14352,6 @@ musk-doge:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Elon Musk
     sort_name: Musk
@@ -13926,6 +14380,7 @@ musk-doge:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 treasury-newnam:
   id: treasury-newnam
   type: appointed
@@ -13967,7 +14422,6 @@ treasury-newnam:
   comment: NYT says he is a Senior Advisor
   qualifications:
   table_note:
-  documents: gov.uscourts.nysd.636609.144.0
   person:
     name: Todd Newnam
     sort_name: Newnam
@@ -13995,6 +14449,17 @@ treasury-newnam:
     obj_type: Agency
   agency_ids:
   - Treasury
+  documents:
+  - id: gov.uscourts.nysd.636609.144.0
+    name:
+    type: directory
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
+    case_no: 1:25-cv-01144
+    comment: Testimony about the positions of various IRS appointees
+    file: gov.uscourts.nysd.636609.144.0.pdf
+    url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
 internal-treasury-irs-newnam:
   id: internal-treasury-irs-newnam
   type: internal
@@ -14036,7 +14501,6 @@ internal-treasury-irs-newnam:
   comment: NYT says he is a Senior Advisor
   qualifications:
   table_note:
-  documents:
   person:
     name: Todd Newnam
     sort_name: Newnam
@@ -14075,6 +14539,7 @@ internal-treasury-irs-newnam:
   agency_ids:
   - IRS
   - Treasury
+  documents: []
 gsa-park:
   id: gsa-park
   type: appointed
@@ -14116,7 +14581,6 @@ gsa-park:
   comment: Inferring detailed from GSA to SBA
   qualifications:
   table_note:
-  documents:
   person:
     name: Donald Park
     sort_name: Park
@@ -14144,6 +14608,7 @@ gsa-park:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 sba-park:
   id: sba-park
   type: detailed
@@ -14185,7 +14650,6 @@ sba-park:
   comment: Reported in a tweet from the date
   qualifications:
   table_note:
-  documents:
   person:
     name: Donald Park
     sort_name: Park
@@ -14223,6 +14687,7 @@ sba-park:
     obj_type: Agency
   agency_ids:
   - SBA
+  documents: []
 detail-exim-park:
   id: detail-exim-park
   type: detailed
@@ -14264,7 +14729,6 @@ detail-exim-park:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Donald Park
     sort_name: Park
@@ -14292,6 +14756,7 @@ detail-exim-park:
     obj_type: Agency
   agency_ids:
   - EXIM
+  documents: []
 noah-peters-opm:
   id: noah-peters-opm
   type: appointed
@@ -14333,7 +14798,6 @@ noah-peters-opm:
   comment: Details from a FOIA document
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions
   person:
     name: Noah Peters
     sort_name: Peters
@@ -14361,6 +14825,18 @@ noah-peters-opm:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
 opm-nikhil-rajpal:
   id: opm-nikhil-rajpal
   type: appointed
@@ -14402,7 +14878,6 @@ opm-nikhil-rajpal:
   comment: I confirmed that OPM Employee 6 is Nikhil but have no other info
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions onboard-opm-employee-6
   person:
     name: Nikhil Rajpal
     sort_name: Rajpal
@@ -14439,6 +14914,28 @@ opm-nikhil-rajpal:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
+  - id: onboard-opm-employee-6
+    name:
+    type: onboard
+    alias: OPM-6
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
+    case_no: 8:25-cv-00430
+    comment:
+    file: onboard-opm-employee-6
+    url: "/documents/onboard-opm-employee-6"
 detail-opm-noaa-rajpal:
   id: detail-opm-noaa-rajpal
   type: detailed
@@ -14480,7 +14977,6 @@ detail-opm-noaa-rajpal:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Nikhil Rajpal
     sort_name: Rajpal
@@ -14519,6 +15015,7 @@ detail-opm-noaa-rajpal:
   agency_ids:
   - NOAA
   - Commerce
+  documents: []
 detail-opm-cfpb-nikhil-rajpal:
   id: detail-opm-cfpb-nikhil-rajpal
   type: detailed
@@ -14560,7 +15057,6 @@ detail-opm-cfpb-nikhil-rajpal:
   comment: Details from court filing
   qualifications:
   table_note:
-  documents:
   person:
     name: Nikhil Rajpal
     sort_name: Rajpal
@@ -14598,6 +15094,7 @@ detail-opm-cfpb-nikhil-rajpal:
     obj_type: Agency
   agency_ids:
   - CFPB
+  documents: []
 doge-adam-ramada:
   id: doge-adam-ramada
   type: appointed
@@ -14639,7 +15136,6 @@ doge-adam-ramada:
   comment: Details provided in sworn testimony
   qualifications:
   table_note:
-  documents:
   person:
     name: Adam Ramada
     sort_name: Ramada
@@ -14668,6 +15164,7 @@ doge-adam-ramada:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 detail-doge-education-adam-ramada:
   id: detail-doge-education-adam-ramada
   type: detailed
@@ -14709,7 +15206,6 @@ detail-doge-education-adam-ramada:
   comment: He reports one other USDS detailee is there, 2 Education staffers, and 2 other detailees from elsewhere (OPM? GSA?)
   qualifications:
   table_note:
-  documents: 20250212-doge-education-all
   person:
     name: Adam Ramada
     sort_name: Ramada
@@ -14747,6 +15243,17 @@ detail-doge-education-adam-ramada:
     obj_type: Agency
   agency_ids:
   - Education
+  documents:
+  - id: detail-20250212-doge-education-all
+    name:
+    type: mou
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
+    case_no:
+    comment:
+    file: mou-20250212-doge-education-all.pdf
+    url: "/documents/mou-20250212-doge-education-all.pdf"
 detail-doge-energy-adam-ramada:
   id: detail-doge-energy-adam-ramada
   type: detailed
@@ -14788,7 +15295,6 @@ detail-doge-energy-adam-ramada:
   comment: Start date was given by DOE spokesperson denying a news report
   qualifications:
   table_note:
-  documents:
   person:
     name: Adam Ramada
     sort_name: Ramada
@@ -14826,6 +15332,7 @@ detail-doge-energy-adam-ramada:
     obj_type: Agency
   agency_ids:
   - Energy
+  documents: []
 detail-doge-dol-ramada:
   id: detail-doge-dol-ramada
   type: detailed
@@ -14867,7 +15374,6 @@ detail-doge-dol-ramada:
   comment: Testimony was on 2/6. DOGE showed up at agency on 2/5. Mentions 3 other DOGE staff there
   qualifications:
   table_note:
-  documents:
   person:
     name: Adam Ramada
     sort_name: Ramada
@@ -14905,6 +15411,7 @@ detail-doge-dol-ramada:
     obj_type: Agency
   agency_ids:
   - DOL
+  documents: []
 detail-doge-fdic-ramada:
   id: detail-doge-fdic-ramada
   type: detailed
@@ -14946,7 +15453,6 @@ detail-doge-fdic-ramada:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Adam Ramada
     sort_name: Ramada
@@ -14984,6 +15490,7 @@ detail-doge-fdic-ramada:
     obj_type: Agency
   agency_ids:
   - FDIC
+  documents: []
 opm-austin-raynor:
   id: opm-austin-raynor
   type: appointed
@@ -15025,7 +15532,6 @@ opm-austin-raynor:
   comment: From a FOIA document
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions
   person:
     name: Austin Raynor
     sort_name: Raynor
@@ -15053,6 +15559,18 @@ opm-austin-raynor:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
 detail-ssa-dhs-rehling:
   id: detail-ssa-dhs-rehling
   type: detailed
@@ -15094,7 +15612,6 @@ detail-ssa-dhs-rehling:
   comment: No info, but listed in NYT roundup
   qualifications:
   table_note:
-  documents:
   person:
     name: Payton Rehling
     sort_name: Rehling
@@ -15132,6 +15649,7 @@ detail-ssa-dhs-rehling:
     obj_type: Agency
   agency_ids:
   - DHS
+  documents: []
 internal-dhs-tsa-rehling:
   id: internal-dhs-tsa-rehling
   type: detailed
@@ -15173,7 +15691,6 @@ internal-dhs-tsa-rehling:
   comment: No info, but listed in NYT roundup
   qualifications:
   table_note:
-  documents:
   person:
     name: Payton Rehling
     sort_name: Rehling
@@ -15212,6 +15729,7 @@ internal-dhs-tsa-rehling:
   agency_ids:
   - TSA
   - DHS
+  documents: []
 internal-dhs-uscis-rehling:
   id: internal-dhs-uscis-rehling
   type: detailed
@@ -15253,7 +15771,6 @@ internal-dhs-uscis-rehling:
   comment: No info, but listed in NYT roundup
   qualifications:
   table_note:
-  documents:
   person:
     name: Payton Rehling
     sort_name: Rehling
@@ -15292,6 +15809,7 @@ internal-dhs-uscis-rehling:
   agency_ids:
   - USCIS
   - DHS
+  documents: []
 ssa-empwloyee-9:
   id: ssa-empwloyee-9
   type: appointed
@@ -15333,7 +15851,6 @@ ssa-empwloyee-9:
   comment:
   qualifications:
   table_note:
-  documents: onboard-ssa-employee-9
   person:
     name: Payton Rehling
     sort_name: Rehling
@@ -15369,6 +15886,17 @@ ssa-empwloyee-9:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents:
+  - id: onboard-ssa-employee-9
+    name:
+    type: onboard
+    alias: SSA-9
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
+    comment:
+    file: onboard-ssa-employee-9.pdf
+    url: "/documents/onboard-ssa-employee-9.pdf"
 detail-ssa-doj-rehling:
   id: detail-ssa-doj-rehling
   type: detailed
@@ -15410,7 +15938,6 @@ detail-ssa-doj-rehling:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Payton Rehling
     sort_name: Rehling
@@ -15438,6 +15965,7 @@ detail-ssa-doj-rehling:
     obj_type: Agency
   agency_ids:
   - DOJ
+  documents: []
 energy-ryan-riedel:
   id: energy-ryan-riedel
   type: appointed
@@ -15479,7 +16007,6 @@ energy-ryan-riedel:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Ryan Riedel
     sort_name: Riedel
@@ -15507,6 +16034,7 @@ energy-ryan-riedel:
     obj_type: Agency
   agency_ids:
   - Energy
+  documents: []
 hhs-rachel-riley:
   id: hhs-rachel-riley
   type: appointed
@@ -15548,7 +16076,6 @@ hhs-rachel-riley:
   comment: Hiring information given in court filing
   qualifications:
   table_note:
-  documents:
   person:
     name: Rachel Riley
     sort_name: Riley
@@ -15576,6 +16103,7 @@ hhs-rachel-riley:
     obj_type: Agency
   agency_ids:
   - HHS
+  documents: []
 internal-hhs-cms-riley:
   id: internal-hhs-cms-riley
   type: internal
@@ -15617,7 +16145,6 @@ internal-hhs-cms-riley:
   comment: Dating from first reported access to CALM
   qualifications:
   table_note:
-  documents:
   person:
     name: Rachel Riley
     sort_name: Riley
@@ -15656,6 +16183,7 @@ internal-hhs-cms-riley:
   agency_ids:
   - CMS
   - HHS
+  documents: []
 internal-hhs-nih-riley:
   id: internal-hhs-nih-riley
   type: internal
@@ -15697,7 +16225,6 @@ internal-hhs-nih-riley:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Rachel Riley
     sort_name: Riley
@@ -15736,6 +16263,7 @@ internal-hhs-nih-riley:
   agency_ids:
   - NIH
   - HHS
+  documents: []
 detail-hhs-nsf-riley:
   id: detail-hhs-nsf-riley
   type: consultant
@@ -15777,7 +16305,6 @@ detail-hhs-nsf-riley:
   comment: Showed up at the agency to do secondary round of grant reviews. Assuming a detail
   qualifications:
   table_note:
-  documents:
   person:
     name: Rachel Riley
     sort_name: Riley
@@ -15815,6 +16342,7 @@ detail-hhs-nsf-riley:
     obj_type: Agency
   agency_ids:
   - NSF
+  documents: []
 va-roussous:
   id: va-roussous
   type: unknown
@@ -15856,7 +16384,6 @@ va-roussous:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Christopher Roussos
     sort_name: Roussos
@@ -15884,6 +16411,7 @@ va-roussous:
     obj_type: Agency
   agency_ids:
   - VA
+  documents: []
 ssa-mike-russo-cio:
   id: ssa-mike-russo-cio
   type: appointed
@@ -15925,7 +16453,6 @@ ssa-mike-russo-cio:
   comment: Reportedly removed for complying quickly with judge's orders to block access
   qualifications:
   table_note:
-  documents:
   person:
     name: Mike Russo
     sort_name: Russo
@@ -15953,6 +16480,7 @@ ssa-mike-russo-cio:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents: []
 ssa-mike-russo-advisor:
   id: ssa-mike-russo-advisor
   type: demotion
@@ -15996,7 +16524,6 @@ ssa-mike-russo-advisor:
     systems
   qualifications:
   table_note:
-  documents:
   person:
     name: Mike Russo
     sort_name: Russo
@@ -16024,6 +16551,7 @@ ssa-mike-russo-advisor:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents: []
 amanda-scales-opm:
   id: amanda-scales-opm
   type: appointed
@@ -16065,7 +16593,6 @@ amanda-scales-opm:
   comment: Sourced from a FOIA document
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions
   person:
     name: Amanda Scales
     sort_name: Scales
@@ -16093,6 +16620,18 @@ amanda-scales-opm:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
 gsa-frank-schuler:
   id: gsa-frank-schuler
   type: appointed
@@ -16134,7 +16673,6 @@ gsa-frank-schuler:
   comment: Details from a news article
   qualifications:
   table_note:
-  documents:
   person:
     name: Frank Schuler
     sort_name: Schuler
@@ -16165,6 +16703,7 @@ gsa-frank-schuler:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 internal-dhs-cbp-schutt:
   id: internal-dhs-cbp-schutt
   type: internal
@@ -16206,7 +16745,6 @@ internal-dhs-cbp-schutt:
   comment: No details, but in NYT roundup
   qualifications:
   table_note:
-  documents:
   person:
     name: Kyle Schutt
     sort_name: Schutt
@@ -16245,6 +16783,7 @@ internal-dhs-cbp-schutt:
   agency_ids:
   - CBP
   - DHS
+  documents: []
 internal-dhs-fema-schutt:
   id: internal-dhs-fema-schutt
   type: internal
@@ -16286,7 +16825,6 @@ internal-dhs-fema-schutt:
   comment: No details, but in NYT roundup
   qualifications:
   table_note:
-  documents:
   person:
     name: Kyle Schutt
     sort_name: Schutt
@@ -16325,6 +16863,7 @@ internal-dhs-fema-schutt:
   agency_ids:
   - FEMA
   - DHS
+  documents: []
 internal-dhs-ice-schutt:
   id: internal-dhs-ice-schutt
   type: internal
@@ -16366,7 +16905,6 @@ internal-dhs-ice-schutt:
   comment: No details, but in NYT roundup
   qualifications:
   table_note:
-  documents:
   person:
     name: Kyle Schutt
     sort_name: Schutt
@@ -16405,6 +16943,7 @@ internal-dhs-ice-schutt:
   agency_ids:
   - ICE
   - DHS
+  documents: []
 internal-dhs-tsa-schutt:
   id: internal-dhs-tsa-schutt
   type: internal
@@ -16446,7 +16985,6 @@ internal-dhs-tsa-schutt:
   comment: No details, but in NYT roundup
   qualifications:
   table_note:
-  documents:
   person:
     name: Kyle Schutt
     sort_name: Schutt
@@ -16485,6 +17023,7 @@ internal-dhs-tsa-schutt:
   agency_ids:
   - TSA
   - DHS
+  documents: []
 internal-dhs-uscis-schutt:
   id: internal-dhs-uscis-schutt
   type: internal
@@ -16526,7 +17065,6 @@ internal-dhs-uscis-schutt:
   comment: No details, but in NYT roundup
   qualifications:
   table_note:
-  documents:
   person:
     name: Kyle Schutt
     sort_name: Schutt
@@ -16565,6 +17103,7 @@ internal-dhs-uscis-schutt:
   agency_ids:
   - USCIS
   - DHS
+  documents: []
 gsa-schutt:
   id: gsa-schutt
   type: appointed
@@ -16606,7 +17145,6 @@ gsa-schutt:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Kyle Schutt
     sort_name: Schutt
@@ -16634,6 +17172,7 @@ gsa-schutt:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 detail-gsa-dhs-schutt:
   id: detail-gsa-dhs-schutt
   type: detailed
@@ -16675,7 +17214,6 @@ detail-gsa-dhs-schutt:
   comment: No details on this, but mentioned in NYT roundup. Assuming detail from GSA
   qualifications:
   table_note:
-  documents:
   person:
     name: Kyle Schutt
     sort_name: Schutt
@@ -16713,6 +17251,7 @@ detail-gsa-dhs-schutt:
     obj_type: Agency
   agency_ids:
   - DHS
+  documents: []
 internal-dhs-cisa-schutt:
   id: internal-dhs-cisa-schutt
   type: detailed
@@ -16754,7 +17293,6 @@ internal-dhs-cisa-schutt:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Kyle Schutt
     sort_name: Schutt
@@ -16793,6 +17331,7 @@ internal-dhs-cisa-schutt:
   agency_ids:
   - CISA
   - DHS
+  documents: []
 detail-gsa-hhs-kyle-schutt:
   id: detail-gsa-hhs-kyle-schutt
   type: detailed
@@ -16834,7 +17373,6 @@ detail-gsa-hhs-kyle-schutt:
   comment: No documentation, dates reported in court filing
   qualifications:
   table_note:
-  documents:
   person:
     name: Kyle Schutt
     sort_name: Schutt
@@ -16872,6 +17410,7 @@ detail-gsa-hhs-kyle-schutt:
     obj_type: Agency
   agency_ids:
   - HHS
+  documents: []
 gsa-sennott:
   id: gsa-sennott
   type: appointed
@@ -16913,7 +17452,6 @@ gsa-sennott:
   comment: Riley Sennott's father reports that he started at GSA nine days after 2025-02-03
   qualifications:
   table_note:
-  documents:
   person:
     name: Riley Sennott
     sort_name: Sennott
@@ -16941,6 +17479,7 @@ gsa-sennott:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 detail-gsa-nasa-sennott:
   id: detail-gsa-nasa-sennott
   type: detailed
@@ -16982,7 +17521,6 @@ detail-gsa-nasa-sennott:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Riley Sennott
     sort_name: Sennott
@@ -17020,6 +17558,7 @@ detail-gsa-nasa-sennott:
     obj_type: Agency
   agency_ids:
   - NASA
+  documents: []
 noaa-shang-cio:
   id: noaa-shang-cio
   type: appointed
@@ -17061,7 +17600,6 @@ noaa-shang-cio:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Bryton Shang
     sort_name: Shang
@@ -17090,6 +17628,7 @@ noaa-shang-cio:
   agency_ids:
   - NOAA
   - Commerce
+  documents: []
 gsa-ethan-shaotran:
   id: gsa-ethan-shaotran
   type: appointed
@@ -17131,7 +17670,6 @@ gsa-ethan-shaotran:
   comment: Position inferred from early reporting and detailing to Education
   qualifications:
   table_note:
-  documents:
   person:
     name: Ethan Shaotran
     sort_name: Shaotran
@@ -17159,6 +17697,7 @@ gsa-ethan-shaotran:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 detail-gsa-education-3:
   id: detail-gsa-education-3
   type: detailed
@@ -17200,7 +17739,6 @@ detail-gsa-education-3:
   comment: ED-3 is Ethan Shaotran
   qualifications:
   table_note:
-  documents: detail-20250212-gsa-education-ed-3
   person:
     name: Ethan Shaotran
     sort_name: Shaotran
@@ -17248,6 +17786,17 @@ detail-gsa-education-3:
     obj_type: Agency
   agency_ids:
   - Education
+  documents:
+  - id: detail-20250212-gsa-education-ed-3
+    name: Ethan Shaotran
+    type: mou
+    alias: ED-3
+    date: '2025-02-03'
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
+    case_no:
+    comment:
+    file: mou-20250212-gsa-education-ed-3.pdf
+    url: "/documents/mou-20250212-gsa-education-ed-3.pdf"
 detail-gsa-ssa-employee-10:
   id: detail-gsa-ssa-employee-10
   type: detailed
@@ -17289,7 +17838,6 @@ detail-gsa-ssa-employee-10:
   comment:
   qualifications:
   table_note:
-  documents: onboard-ssa-employee-10
   person:
     name: Ethan Shaotran
     sort_name: Shaotran
@@ -17337,6 +17885,17 @@ detail-gsa-ssa-employee-10:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents:
+  - id: onboard-ssa-employee-10
+    name:
+    type: onboard
+    alias: SSA-10
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
+    comment:
+    file: onboard-ssa-employee-10.pdf
+    url: "/documents/onboard-ssa-employee-10.pdf"
 detail-gsa-usadf-ethan-shaotran:
   id: detail-gsa-usadf-ethan-shaotran
   type: detailed
@@ -17378,7 +17937,6 @@ detail-gsa-usadf-ethan-shaotran:
   comment:
   qualifications:
   table_note:
-  documents: detail-20250220-gsa-usadf-ethan-shaotran
   person:
     name: Ethan Shaotran
     sort_name: Shaotran
@@ -17416,6 +17974,17 @@ detail-gsa-usadf-ethan-shaotran:
     obj_type: Agency
   agency_ids:
   - USADF
+  documents:
+  - id: detail-20250220-gsa-usadf-ethan-shaotran
+    name: Ethan Shaotran
+    type: mou
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.20.7.pdf
+    case_no:
+    comment:
+    file: mou-20250220-gsa-usadf-ethan-shaotran.pdf
+    url: "/documents/mou-20250220-gsa-usadf-ethan-shaotran.pdf"
 detail-gsa-usps-ethan-shaotran:
   id: detail-gsa-usps-ethan-shaotran
   type: detailed
@@ -17457,7 +18026,6 @@ detail-gsa-usps-ethan-shaotran:
   comment:
   qualifications:
   table_note:
-  documents: 20250312-gsa-usps-alex-simonpour
   person:
     name: Ethan Shaotran
     sort_name: Shaotran
@@ -17495,6 +18063,17 @@ detail-gsa-usps-ethan-shaotran:
     obj_type: Agency
   agency_ids:
   - USPS
+  documents:
+  - id: detail-20250312-gsa-usps-alex-simonpour
+    name: Alexander Simonpour
+    type: mou
+    alias:
+    date:
+    source: https://about.usps.com/who/legal/foia/documents/mou-alex-simonpour-executed-redacted.pdf
+    case_no:
+    comment:
+    file: mou-20250312-gsa-usps-alex-simonpour.pdf
+    url: "/documents/mou-20250312-gsa-usps-alex-simonpour.pdf"
 detail-gsa-dfc-shaotran:
   id: detail-gsa-dfc-shaotran
   type: detailed
@@ -17536,7 +18115,6 @@ detail-gsa-dfc-shaotran:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Ethan Shaotran
     sort_name: Shaotran
@@ -17574,6 +18152,7 @@ detail-gsa-dfc-shaotran:
     obj_type: Agency
   agency_ids:
   - USDFC
+  documents: []
 gsa-thomas-shedd:
   id: gsa-thomas-shedd
   type: appointed
@@ -17615,7 +18194,6 @@ gsa-thomas-shedd:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Thomas Shedd
     sort_name: Shedd
@@ -17643,6 +18221,7 @@ gsa-thomas-shedd:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 dol-shedd:
   id: dol-shedd
   type: appointed
@@ -17684,7 +18263,6 @@ dol-shedd:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Thomas Shedd
     sort_name: Shedd
@@ -17712,6 +18290,7 @@ dol-shedd:
     obj_type: Agency
   agency_ids:
   - DOL
+  documents: []
 treasury-roland-shen:
   id: treasury-roland-shen
   type: appointed
@@ -17753,7 +18332,6 @@ treasury-roland-shen:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Roland Shen
     sort_name: Shen
@@ -17781,6 +18359,7 @@ treasury-roland-shen:
     obj_type: Agency
   agency_ids:
   - Treasury
+  documents: []
 detail-gsa-usps-alex-simonpour:
   id: detail-gsa-usps-alex-simonpour
   type: detailed
@@ -17822,7 +18401,6 @@ detail-gsa-usps-alex-simonpour:
   comment: From FOIAed document
   qualifications:
   table_note:
-  documents: 20250312-gsa-usps-alex-simonpour
   person:
     name: Alexander Simonpour
     sort_name: Simonpour
@@ -17860,6 +18438,17 @@ detail-gsa-usps-alex-simonpour:
     obj_type: Agency
   agency_ids:
   - USPS
+  documents:
+  - id: detail-20250312-gsa-usps-alex-simonpour
+    name: Alexander Simonpour
+    type: mou
+    alias:
+    date:
+    source: https://about.usps.com/who/legal/foia/documents/mou-alex-simonpour-executed-redacted.pdf
+    case_no:
+    comment:
+    file: mou-20250312-gsa-usps-alex-simonpour.pdf
+    url: "/documents/mou-20250312-gsa-usps-alex-simonpour.pdf"
 detail-gsa-nasa-simonpour:
   id: detail-gsa-nasa-simonpour
   type: detailed
@@ -17901,7 +18490,6 @@ detail-gsa-nasa-simonpour:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Alexander Simonpour
     sort_name: Simonpour
@@ -17939,6 +18527,7 @@ detail-gsa-nasa-simonpour:
     obj_type: Agency
   agency_ids:
   - NASA
+  documents: []
 faa-smeal:
   id: faa-smeal
   type: appointed
@@ -17980,7 +18569,6 @@ faa-smeal:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Sam Smeal
     sort_name: Smeal
@@ -18011,6 +18599,7 @@ faa-smeal:
   agency_ids:
   - FAA
   - DOT
+  documents: []
 hhs-brad-smith:
   id: hhs-brad-smith
   type: appointed
@@ -18052,7 +18641,6 @@ hhs-brad-smith:
   comment: All I have is his signed SF-61
   qualifications:
   table_note:
-  documents: onboard-hhs-brad-smith
   person:
     name: Brad Smith
     sort_name: Smith
@@ -18080,6 +18668,17 @@ hhs-brad-smith:
     obj_type: Agency
   agency_ids:
   - HHS
+  documents:
+  - id: onboard-hhs-brad-smith
+    name: Brad Smith
+    type: onboard
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.65.3.pdf
+    case_no:
+    comment:
+    file: onboard-hhs-brad-smith.pdf
+    url: "/documents/onboard-hhs-brad-smith.pdf"
 labor-sonderling:
   id: labor-sonderling
   type: appointed
@@ -18121,7 +18720,6 @@ labor-sonderling:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Keith Sonderling
     sort_name: Sonderling
@@ -18149,6 +18747,7 @@ labor-sonderling:
     obj_type: Agency
   agency_ids:
   - DOL
+  documents: []
 imls-sonderling:
   id: imls-sonderling
   type: appointed
@@ -18190,7 +18789,6 @@ imls-sonderling:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Keith Sonderling
     sort_name: Sonderling
@@ -18218,6 +18816,7 @@ imls-sonderling:
     obj_type: Agency
   agency_ids:
   - IMLS
+  documents: []
 opm-christopher-stanley:
   id: opm-christopher-stanley
   type: appointed
@@ -18259,7 +18858,6 @@ opm-christopher-stanley:
   comment: Sourced from a FOIAed document
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions
   person:
     name: Christopher Stanley
     sort_name: Stanley
@@ -18292,6 +18890,18 @@ opm-christopher-stanley:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
 fhfa-christopher-stanley:
   id: fhfa-christopher-stanley
   type: appointed
@@ -18333,7 +18943,6 @@ fhfa-christopher-stanley:
   comment: Chris Stanley spent one day on the board before resigning
   qualifications:
   table_note:
-  documents:
   person:
     name: Christopher Stanley
     sort_name: Stanley
@@ -18366,6 +18975,7 @@ fhfa-christopher-stanley:
     obj_type: Agency
   agency_ids:
   - FHFA
+  documents: []
 detail-opm-doj-stanley:
   id: detail-opm-doj-stanley
   type: detailed
@@ -18407,7 +19017,6 @@ detail-opm-doj-stanley:
   comment: Date is approximate. Assuming detailed from OPM
   qualifications:
   table_note:
-  documents:
   person:
     name: Christopher Stanley
     sort_name: Stanley
@@ -18450,6 +19059,7 @@ detail-opm-doj-stanley:
     obj_type: Agency
   agency_ids:
   - DOJ
+  documents: []
 ssa-steffensen:
   id: ssa-steffensen
   type: appointed
@@ -18491,7 +19101,6 @@ ssa-steffensen:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Mark Steffensen
     sort_name: Steffensen
@@ -18519,6 +19128,7 @@ ssa-steffensen:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents: []
 ssa-steffensen-1:
   id: ssa-steffensen-1
   type: appointed
@@ -18560,7 +19170,6 @@ ssa-steffensen-1:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Mark Steffensen
     sort_name: Steffensen
@@ -18588,6 +19197,7 @@ ssa-steffensen-1:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents: []
 gsa-stein:
   id: gsa-stein
   type: appointed
@@ -18629,7 +19239,6 @@ gsa-stein:
   comment: FIXME, find more details on when started
   qualifications:
   table_note:
-  documents:
   person:
     name: Jack Stein
     sort_name: Stein
@@ -18657,6 +19266,7 @@ gsa-stein:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 dot-stube:
   id: dot-stube
   type: appointed
@@ -18698,7 +19308,6 @@ dot-stube:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Brian Stube
     sort_name: Stube
@@ -18726,6 +19335,7 @@ dot-stube:
     obj_type: Agency
   agency_ids:
   - DOT
+  documents: []
 hud-sweet:
   id: hud-sweet
   type: appointed
@@ -18769,7 +19379,6 @@ hud-sweet:
     a better title might be 'AI computer programming quant analyst'"
   qualifications:
   table_note:
-  documents:
   person:
     name: Christopher Sweet
     sort_name: Sweet
@@ -18799,6 +19408,7 @@ hud-sweet:
     obj_type: Agency
   agency_ids:
   - HUD
+  documents: []
 hhs-terrell:
   id: hhs-terrell
   type: appointed
@@ -18840,7 +19450,6 @@ hhs-terrell:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Zach Terrell
     sort_name: Terrell
@@ -18868,6 +19477,7 @@ hhs-terrell:
     obj_type: Agency
   agency_ids:
   - HHS
+  documents: []
 internal-hhs-cms-terrell:
   id: internal-hhs-cms-terrell
   type: internal
@@ -18909,7 +19519,6 @@ internal-hhs-cms-terrell:
   comment: Inferring from first reported access to the IDR system at CMS
   qualifications:
   table_note:
-  documents:
   person:
     name: Zach Terrell
     sort_name: Terrell
@@ -18948,6 +19557,7 @@ internal-hhs-cms-terrell:
   agency_ids:
   - CMS
   - HHS
+  documents: []
 detail-hhs-nsf-terrell:
   id: detail-hhs-nsf-terrell
   type: consultant
@@ -18989,7 +19599,6 @@ detail-hhs-nsf-terrell:
   comment: Showed up at the agency to do secondary round of grant reviews. Assuming a detail
   qualifications:
   table_note:
-  documents:
   person:
     name: Zach Terrell
     sort_name: Terrell
@@ -19027,6 +19636,7 @@ detail-hhs-nsf-terrell:
     obj_type: Agency
   agency_ids:
   - NSF
+  documents: []
 interior-trampe:
   id: interior-trampe
   type: unknown
@@ -19068,7 +19678,6 @@ interior-trampe:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Katrine Trampe
     sort_name: Trampe
@@ -19096,6 +19705,7 @@ interior-trampe:
     obj_type: Agency
   agency_ids:
   - DOI
+  documents: []
 va-volpert:
   id: va-volpert
   type: unknown
@@ -19137,7 +19747,6 @@ va-volpert:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Cary Volpert
     sort_name: Volpert
@@ -19165,6 +19774,7 @@ va-volpert:
     obj_type: Agency
   agency_ids:
   - VA
+  documents: []
 omb-vought:
   id: omb-vought
   type: appointed
@@ -19206,7 +19816,6 @@ omb-vought:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Russell Vought
     sort_name: Vought
@@ -19234,6 +19843,7 @@ omb-vought:
     obj_type: Agency
   agency_ids:
   - EOP
+  documents: []
 cfpb-acting-vought:
   id: cfpb-acting-vought
   type: appointed
@@ -19275,7 +19885,6 @@ cfpb-acting-vought:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Russell Vought
     sort_name: Vought
@@ -19303,6 +19912,7 @@ cfpb-acting-vought:
     obj_type: Agency
   agency_ids:
   - CFPB
+  documents: []
 treasury-whitridge:
   id: treasury-whitridge
   type: unknown
@@ -19344,7 +19954,6 @@ treasury-whitridge:
   comment:
   qualifications:
   table_note:
-  documents: gov.uscourts.nysd.636609.144.0
   person:
     name: Linda Whitridge
     sort_name: Whitridge
@@ -19372,6 +19981,17 @@ treasury-whitridge:
     obj_type: Agency
   agency_ids:
   - Treasury
+  documents:
+  - id: gov.uscourts.nysd.636609.144.0
+    name:
+    type: directory
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
+    case_no: 1:25-cv-01144
+    comment: Testimony about the positions of various IRS appointees
+    file: gov.uscourts.nysd.636609.144.0.pdf
+    url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
 doge-wick:
   id: doge-wick
   type: appointed
@@ -19413,7 +20033,6 @@ doge-wick:
   comment: No details, but guessing based on government declaration had been detailed from DOGE to CFPB
   qualifications:
   table_note:
-  documents:
   person:
     name: Jordan Wick
     sort_name: Wick
@@ -19442,6 +20061,7 @@ doge-wick:
   agency_ids:
   - DOGE
   - EOP
+  documents: []
 detail-usda-wick:
   id: detail-usda-wick
   type: detailed
@@ -19483,7 +20103,6 @@ detail-usda-wick:
   comment: No details, but listed in a NYT roundup and adding here. USDA head said DOGE had been there a couple of weeks on 2/14
   qualifications:
   table_note:
-  documents:
   person:
     name: Jordan Wick
     sort_name: Wick
@@ -19521,6 +20140,7 @@ detail-usda-wick:
     obj_type: Agency
   agency_ids:
   - USDA
+  documents: []
 detail-usds-cfpb-jordan-wick:
   id: detail-usds-cfpb-jordan-wick
   type: detailed
@@ -19562,7 +20182,6 @@ detail-usds-cfpb-jordan-wick:
   comment: Dates provided in court documents. Converted to full position
   qualifications:
   table_note:
-  documents:
   person:
     name: Jordan Wick
     sort_name: Wick
@@ -19600,6 +20219,7 @@ detail-usds-cfpb-jordan-wick:
     obj_type: Agency
   agency_ids:
   - CFPB
+  documents: []
 detail-doge-dol-wick:
   id: detail-doge-dol-wick
   type: detailed
@@ -19641,7 +20261,6 @@ detail-doge-dol-wick:
   comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5. But was part of CFPB assault.
   qualifications:
   table_note:
-  documents:
   person:
     name: Jordan Wick
     sort_name: Wick
@@ -19679,6 +20298,7 @@ detail-doge-dol-wick:
     obj_type: Agency
   agency_ids:
   - DOL
+  documents: []
 detail-doge-education-wick:
   id: detail-doge-education-wick
   type: detailed
@@ -19720,7 +20340,6 @@ detail-doge-education-wick:
   comment:
   qualifications:
   table_note:
-  documents: doge-staff-education-20250407
   person:
     name: Jordan Wick
     sort_name: Wick
@@ -19758,6 +20377,17 @@ detail-doge-education-wick:
     obj_type: Agency
   agency_ids:
   - Education
+  documents:
+  - id: doge-staff-education-20250407
+    name:
+    type: mou
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
+    case_no: 1:25-cv-00354
+    comment:
+    file: doge-staff-education-20250407.pdf
+    url: "/documents/doge-staff-education-20250407.pdf"
 cfpb-jordan-wick:
   id: cfpb-jordan-wick
   type: appointed
@@ -19799,7 +20429,6 @@ cfpb-jordan-wick:
   comment: All I have is his SF-61
   qualifications:
   table_note:
-  documents: onboard-cfpb-jordan-wick
   person:
     name: Jordan Wick
     sort_name: Wick
@@ -19827,6 +20456,17 @@ cfpb-jordan-wick:
     obj_type: Agency
   agency_ids:
   - CFPB
+  documents:
+  - id: onboard-cfpb-jordan-wick
+    name: Jordan Wick
+    type: onboard
+    alias:
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.65.2.pdf
+    case_no:
+    comment:
+    file: onboard-cfpb-jordan-wick.pdf
+    url: "/documents/onboard-cfpb-jordan-wick.pdf"
 detail-cfpb-fcc-wick:
   id: detail-cfpb-fcc-wick
   type: detailed
@@ -19868,7 +20508,6 @@ detail-cfpb-fcc-wick:
   comment: Assuming he has been detailed from the CFPB
   qualifications:
   table_note:
-  documents:
   person:
     name: Jordan Wick
     sort_name: Wick
@@ -19906,6 +20545,7 @@ detail-cfpb-fcc-wick:
     obj_type: Agency
   agency_ids:
   - FCC
+  documents: []
 joanna-wischer-opm:
   id: joanna-wischer-opm
   type: appointed
@@ -19947,7 +20587,6 @@ joanna-wischer-opm:
   comment: Sourced from a FOIA document; listed as Joanna Miller
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions
   person:
     name: Joanna Wischer
     sort_name: Wischer
@@ -19975,6 +20614,18 @@ joanna-wischer-opm:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
 gsa-wood:
   id: gsa-wood
   type: appointed
@@ -20016,7 +20667,6 @@ gsa-wood:
   comment: FIXME, find more details on when started
   qualifications:
   table_note:
-  documents:
   person:
     name: Marshall Wood
     sort_name: Wood
@@ -20044,6 +20694,7 @@ gsa-wood:
     obj_type: Agency
   agency_ids:
   - GSA
+  documents: []
 detail-gsa-dfc-wood:
   id: detail-gsa-dfc-wood
   type: detailed
@@ -20085,7 +20736,6 @@ detail-gsa-dfc-wood:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Marshall Wood
     sort_name: Wood
@@ -20123,6 +20773,7 @@ detail-gsa-dfc-wood:
     obj_type: Agency
   agency_ids:
   - USDFC
+  documents: []
 irs-wunderly:
   id: irs-wunderly
   type: appointed
@@ -20164,7 +20815,6 @@ irs-wunderly:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Ryan Wunderly
     sort_name: Wunderly
@@ -20192,6 +20842,7 @@ irs-wunderly:
     obj_type: Agency
   agency_ids:
   - Treasury
+  documents: []
 opm-chris-young:
   id: opm-chris-young
   type: appointed
@@ -20233,7 +20884,6 @@ opm-chris-young:
   comment: Sourced from FOIAed documents
   qualifications:
   table_note:
-  documents: opm-foia-doge-positions
   person:
     name: Chris Young
     sort_name: Young
@@ -20261,6 +20911,18 @@ opm-chris-young:
     obj_type: Agency
   agency_ids:
   - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
 detail-opm-cfpb-chris-young:
   id: detail-opm-cfpb-chris-young
   type: detailed
@@ -20302,7 +20964,6 @@ detail-opm-cfpb-chris-young:
   comment: FIXME
   qualifications:
   table_note:
-  documents:
   person:
     name: Chris Young
     sort_name: Young
@@ -20340,6 +21001,7 @@ detail-opm-cfpb-chris-young:
     obj_type: Agency
   agency_ids:
   - CFPB
+  documents: []
 detail-peace-corps-youngs:
   id: detail-peace-corps-youngs
   type: detailed
@@ -20381,7 +21043,6 @@ detail-peace-corps-youngs:
   comment:
   qualifications:
   table_note:
-  documents:
   person:
     name: Bridget Youngs
     sort_name: Youngs
@@ -20409,6 +21070,7 @@ detail-peace-corps-youngs:
     obj_type: Agency
   agency_ids:
   - Peace
+  documents: []
 ssa-employee-11:
   id: ssa-employee-11
   type: appointed
@@ -20453,7 +21115,6 @@ ssa-employee-11:
     implementing geospatial algorithms, and leading full- stack development. Experienced in collaborating with cross-functional teams to deliver mission-critical
     capabilities  and driving technical decisions and best practices.
   table_note:
-  documents: onboard-ssa-employee-11
   alias:
     id: SSA-11
     agency_id: SSA
@@ -20475,6 +21136,7 @@ ssa-employee-11:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents: []
 ssa-employee-5:
   id: ssa-employee-5
   type: detailed
@@ -20516,7 +21178,6 @@ ssa-employee-5:
   comment: All I have is the date they completed training
   qualifications:
   table_note:
-  documents: onboard-ssa-employee-5
   alias:
     id: SSA-5
     agency_id: SSA
@@ -20547,6 +21208,7 @@ ssa-employee-5:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents: []
 detail-opm-ssa-8:
   id: detail-opm-ssa-8
   type: detailed
@@ -20588,7 +21250,6 @@ detail-opm-ssa-8:
   comment:
   qualifications:
   table_note:
-  documents: detail-20250226-opm-ssa-employee-8 onboard-ssa-employee-8
   alias:
     id: SSA-8
     agency_id: SSA
@@ -20617,3 +21278,4 @@ detail-opm-ssa-8:
     obj_type: Agency
   agency_ids:
   - SSA
+  documents: []

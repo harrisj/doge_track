@@ -14,7 +14,7 @@
     <tr class="font-mono">
       <td class="align-top">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }} - {{ render EdtfFormat.new(pos.end_date, :compact) }}{% else %}-{% end %}</td>
       <td class="align-top text-left"><nobr>{{ position_move(pos) }}</nobr></td>
-      <td class="align-top">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.alias %}<a href="/topics/aliases">{{ pos.alias.id }}</a>{% end %}</td>
+      <td class="align-top">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.alias %}<a href="/topics/aliases">{{ doge_alias(pos.alias) }}</a>{% end %}</td>
       <td class="align-top">{{ position_summary(pos) }}</td>
     </tr>
     {% end %}

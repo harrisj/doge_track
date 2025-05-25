@@ -39,6 +39,13 @@ def positions_for_output(positions)
     end
     out['person'] = x.person.to_hash.merge(obj_type: 'Person') unless x.person.nil?
     out['alias'] = x.doge_alias.to_hash.merge(obj_type: 'Alias') unless x.doge_alias.nil?
+
+    out['documents'] = x.documents.map do |d|
+      out = d.to_hash
+      out['url'] = d.url
+      out
+    end
+
     out['obj_type'] = 'Position'
     out
   end
@@ -163,6 +170,7 @@ def generate_positions_yaml
     out[key][:agency] = position.agency.to_hash.merge(obj_type: 'Agency')
     out[key][:from_agency] = position.from_agency.to_hash.merge(obj_type: 'Agency') if position.from_agency_id
     out[key][:agency_ids] = [position.agency.id, position.agency.parent_id].compact
+    out[key][:documents] = position.documents.map { |d| d.to_hash.merge(url: d.url) }
   end
 
   File.open(out_file, 'w') do |file|

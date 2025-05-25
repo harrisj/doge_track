@@ -68,7 +68,6 @@ DB.create_table! :positions do
   string :comment
   string :qualifications
   string :table_note
-  string :documents # FIXME
 end
 
 DB.create_table! :people do
@@ -90,6 +89,7 @@ end
 DB.create_table! :documents do
   string :id, primary_key: true
   string :name
+  string :type
   string :alias
   string :date
   string :source
@@ -181,6 +181,12 @@ DB.create_table! :agencies_events do
   foreign_key :agency_id, :agencies, null: false, type: :string
   foreign_key :event_id, :events, null: false, type: :string
   unique %i[agency_id event_id]
+end
+
+DB.create_table! :documents_positions do
+  foreign_key :document_id, :documents, null: false, type: :string
+  foreign_key :position_id, :positions, null: false, type: :string
+  unique %i[document_id position_id]
 end
 
 DB.create_table! :events_people do

@@ -171,6 +171,26 @@
     end
    end %}
 
+{% macro "document_type" do |doc| 
+    if doc.type == 'mou'
+      'MOU'
+    else
+      doc.type.titleize
+    end
+  end
+%}
+
+{% macro "doge_alias" do |doge_alias| 
+    if doge_alias.is_a?(String)
+      doge_alias
+    elsif doge_alias.id
+      doge_alias.id
+    else
+      'FIXME-ALIAS'
+    end
+   end
+%}
+
 {% macro "position_move" do |pos| 
   if pos.agency_id
     raise pos.inspect unless pos.agency
@@ -241,6 +261,13 @@ end %}
 
     if pos.source && out_str
       out_str += " <nobr>[<a href=\"#{pos.source}\ alt=\"Link to Source\"><i class=\"fa-solid fa-link\"></i></a>]</nobr>"
+    end
+
+    if pos.documents
+      links = pos.documents.map do |doc|
+        link_to(document_type(doc), doc.url)
+      end
+      out_str += " [#{links.join(', ')}]"
     end
 
     out_str.html_safe
