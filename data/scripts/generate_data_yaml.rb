@@ -39,12 +39,7 @@ def positions_for_output(positions)
     end
     out['person'] = x.person.to_hash.merge(obj_type: 'Person') unless x.person.nil?
     out['alias'] = x.doge_alias.to_hash.merge(obj_type: 'Alias') unless x.doge_alias.nil?
-
-    out['documents'] = x.documents.map do |d|
-      out = d.to_hash
-      out['url'] = d.url
-      out
-    end
+    out['documents'] = x.documents.map { |d| d.to_hash.merge(url: d.url) }
 
     out['obj_type'] = 'Position'
     out
