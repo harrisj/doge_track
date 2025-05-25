@@ -18,6 +18,7 @@ Position.unrestrict_primary_key
 Case.unrestrict_primary_key
 GovtSystem.unrestrict_primary_key
 SystemRole.unrestrict_primary_key
+Document.unrestrict_primary_key
 
 all_events = []
 
@@ -92,6 +93,12 @@ agencies_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'agencies.yaml'), symb
 agencies_yaml.each do |a|
   Agency.create(a.except(:events).merge({ path: path_for_agency(a) }))
   all_events += a.fetch(:events, [])
+end
+
+# Load Documents
+documents_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'documents.yaml'), symbolize_names: true)
+documents_yaml.each do |d|
+  Document.create(d)
 end
 
 # Load People

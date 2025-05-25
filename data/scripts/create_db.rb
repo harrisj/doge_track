@@ -87,6 +87,17 @@ DB.create_table! :people do
   string :table_note
 end
 
+DB.create_table! :documents do
+  string :id, primary_key: true
+  string :name
+  string :alias
+  string :date
+  string :source
+  string :case_no
+  string :comment
+  string :file
+end
+
 DB.create_table! :events do
   string :id, primary_key: true
   string :type, null: false

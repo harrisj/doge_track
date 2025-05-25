@@ -179,7 +179,9 @@
     background:
     category: booster
     own_page: false
-    blurb:
+    blurb: >-
+      Identified recently in a WSJ story as Elon Musk's longtime "fixer" and the manager of Musk's family office, Jared Birchall was instrumental in organizing
+      Musk's donations to the Trump campaign. He was part of the team in place before the Inauguration to interview DOGE staffers and build out the team.
     reporting_notes:
     path: "/people#jared-birchall"
     comment:
@@ -2817,6 +2819,28 @@
   names_aliases: []
   agencies_parents:
   - CFPB
+  obj_type: Event
+- id: 5N97IVsN
+  type: disruption
+  date: '2025-02-01'
+  sort_date: '2025-02-01'
+  time:
+  text: Engineers working for DOGE within OPM used Meta's LLama AI model locally to analyze responses to the Fork in the Road resignation offer
+  fuzz:
+  comment:
+  source: https://www.wired.com/story/doge-used-meta-ai-model-review-fork-emails-from-federal-workers/
+  source_title: DOGE Used a Meta AI Model to Review Emails From Federal Workers
+  source_name: Wired
+  case_no:
+  track_id:
+  system_id:
+  people: []
+  agency_ids:
+  - OPM
+  aliases: []
+  names_aliases: []
+  agencies_parents:
+  - OPM
   obj_type: Event
 - id: JM9cFsgE
   type: disruption
@@ -9191,6 +9215,64 @@
     sort_name: Morse
   agencies_parents:
   - USADF
+  obj_type: Event
+- id: 4ZZrgRGx
+  type: disruption
+  date: '2025-03-01'
+  sort_date: '2025-03-01'
+  time:
+  text: >-
+    DOGE staff reportedly have pressured staff at DHS to use Grok, a chatbot from Elon Musk's xAI, despite the fact it had not been approved for use in
+    the agency. A DHS spokesperson denied the allegations.
+  fuzz:
+  comment: DOGE staff told DHS officials over the last two months to use Grok even though it had not been approved for use at the sprawling agency
+  source: https://www.reuters.com/sustainability/boards-policy-regulation/musks-doge-expanding-his-grok-ai-us-government-raising-conflict-concerns-2025-05-23/
+  source_title: 'Exclusive: Musk''s DOGE expanding his Grok AI in US government, raising conflict concerns'
+  source_name: Reuters
+  case_no:
+  track_id:
+  system_id:
+  people:
+  - name: Edward Coristine
+    sort_name: Coristine
+    slug: edward-coristine
+    page_slug:
+    age: 19
+    background: coder
+    category: wrecker
+    own_page: false
+    blurb: >-
+      Perhaps the most famous of the DOGE wreckers, Edward "Big Balls" Coristine achieved early attention for joining DOGE at the young age of 19. Hoever,
+      he has also accrued a large number of hits on his wrecking spree across the federal government.
+    reporting_notes:
+    path: "/people#edward-coristine"
+    comment:
+    table_note:
+  - name: Kyle Schutt
+    sort_name: Schutt
+    slug: kyle-schutt
+    page_slug:
+    age: 37
+    background: coder
+    category: wrecker
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#kyle-schutt"
+    comment:
+    table_note:
+  agency_ids:
+  - DHS
+  aliases: []
+  names_aliases:
+  - name: Edward Coristine
+    slug: edward-coristine
+    sort_name: Coristine
+  - name: Kyle Schutt
+    slug: kyle-schutt
+    sort_name: Schutt
+  agencies_parents:
+  - DHS
   obj_type: Event
 - id: oCmLwiJu
   type: disruption
@@ -20556,6 +20638,29 @@
   agencies_parents:
   - SSA
   obj_type: Event
+- id: 6ywSOwFF
+  type: disruption
+  date: '2025-05-01'
+  sort_date: '2025-05-01'
+  time:
+  text: An internal survey reveals that over a fifth of Census Bureau leadership roles are vacant
+  fuzz:
+  comment:
+  source: https://www.npr.org/2025/05/23/nx-s1-5409331/doge-data-census-bureau
+  source_title: DOGE created a 'survey of surveys' for a push to cut some government data collection
+  source_name: NPR
+  case_no:
+  track_id:
+  system_id:
+  people: []
+  agency_ids:
+  - Census
+  aliases: []
+  names_aliases: []
+  agencies_parents:
+  - Census
+  - Commerce
+  obj_type: Event
 - id: 6mAF9PCM
   type: official
   date: '2025-05-01'
@@ -20577,6 +20682,46 @@
   names_aliases: []
   agencies_parents:
   - CPB
+  obj_type: Event
+- id: yenHvAv5
+  type: disruption
+  date: '2025-05-02'
+  sort_date: '2025-05-02'
+  time:
+  text: >-
+    Stephanie Holmes, in her role as acting chief human capital officers, sends an email ordering DOI staff to stop doing any detail work by May 18 to cover
+    for a steep loss in available staff due to DOGE's directed cuts
+  fuzz:
+  comment:
+  source: https://www.politico.com/news/2025/05/24/interior-department-land-bureau-pushes-against-doge-00360303
+  source_title: 'DOGE appointee sparks turf battle at Interior: ''Ignore the email from HR'''
+  source_name: Politico
+  case_no:
+  track_id:
+  system_id:
+  people:
+  - name: Stephanie Holmes
+    sort_name: Holmes
+    slug: stephanie-holmes
+    page_slug:
+    age: 43
+    background: hr
+    category: wrecker
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#stephanie-holmes"
+    comment:
+    table_note:
+  agency_ids:
+  - DOI
+  aliases: []
+  names_aliases:
+  - name: Stephanie Holmes
+    slug: stephanie-holmes
+    sort_name: Holmes
+  agencies_parents:
+  - DOI
   obj_type: Event
 - id: 1QPIZzzA
   type: disruption
@@ -21580,6 +21725,34 @@
   agencies_parents:
   - USIP
   obj_type: Event
+- id: 3zmjW3zT
+  type: disruption
+  date: '2025-05-20'
+  sort_date: '2025-05-20'
+  time:
+  text: >-
+    In a post on X, DOGE reports that it is working to review surveys conducted by the Census Bureau and claims to have eliminated 5 already about alcohol
+    consumption and internet usage
+  fuzz:
+  comment:
+  source: https://bsky.app/profile/hansilowang.bsky.social/post/3lpmvsh6byc2o
+  source_title:
+  source_name: Bluesky
+  case_no:
+  track_id:
+  system_id:
+  people: []
+  agency_ids:
+  - DOGE
+  - Census
+  aliases: []
+  names_aliases: []
+  agencies_parents:
+  - DOGE
+  - Census
+  - EOP
+  - Commerce
+  obj_type: Event
 - id: 4h8xjbch
   type: official
   date: '2025-05-21'
@@ -21612,7 +21785,7 @@
   fuzz:
   comment: Should I have some sort of restoration event?
   source: https://apnews.com/article/trump-musk-doge-institute-of-peace-headquarters-df9dc7d4b1ea744db647527a4b28d807
-  source_title: Institute of Peace reclaims its headquarters after court win over Musk’s cost-cutting team
+  source_title: Institute of Peace reclaims its headquarters after court win over Musk's cost-cutting team
   source_name: AP
   case_no:
   track_id:
@@ -21624,4 +21797,166 @@
   names_aliases: []
   agencies_parents:
   - USIP
+  obj_type: Event
+- id: 5fCND3ng
+  type: legal
+  date: '2025-05-23'
+  sort_date: '2025-05-23'
+  time:
+  text: The Supreme Court issues a stay on the order from an appeals court that DOGE must start producing documents for CREW
+  fuzz:
+  comment:
+  source: https://www.supremecourt.gov/orders/courtorders/052325zr1_1b8e.pdf
+  source_title:
+  source_name: The Supreme Court
+  case_no: 1:25-cv-00511
+  track_id:
+  system_id:
+  people: []
+  agency_ids:
+  - DOGE
+  aliases: []
+  names_aliases: []
+  agencies_parents:
+  - DOGE
+  - EOP
+  obj_type: Event
+- id: 395o34d5
+  type: disruption
+  date: '2025-05-23'
+  sort_date: '2025-05-23'
+  time:
+  text: >-
+    Reuters reports that DOGE staffers have attempted to gain access to DHS employee emails in recent months and ordered staff to train AI to identify communications
+    suggesting an employee is not "loyal" to Trump's political agenda
+  fuzz:
+  comment:
+  source: https://www.reuters.com/sustainability/boards-policy-regulation/musks-doge-expanding-his-grok-ai-us-government-raising-conflict-concerns-2025-05-23/
+  source_title: 'Exclusive: Musk''s DOGE expanding his Grok AI in US government, raising conflict concerns'
+  source_name: Reuters
+  case_no:
+  track_id:
+  system_id:
+  people:
+  - name: Edward Coristine
+    sort_name: Coristine
+    slug: edward-coristine
+    page_slug:
+    age: 19
+    background: coder
+    category: wrecker
+    own_page: false
+    blurb: >-
+      Perhaps the most famous of the DOGE wreckers, Edward "Big Balls" Coristine achieved early attention for joining DOGE at the young age of 19. Hoever,
+      he has also accrued a large number of hits on his wrecking spree across the federal government.
+    reporting_notes:
+    path: "/people#edward-coristine"
+    comment:
+    table_note:
+  - name: Kyle Schutt
+    sort_name: Schutt
+    slug: kyle-schutt
+    page_slug:
+    age: 37
+    background: coder
+    category: wrecker
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#kyle-schutt"
+    comment:
+    table_note:
+  agency_ids:
+  - DHS
+  aliases: []
+  names_aliases:
+  - name: Edward Coristine
+    slug: edward-coristine
+    sort_name: Coristine
+  - name: Kyle Schutt
+    slug: kyle-schutt
+    sort_name: Schutt
+  agencies_parents:
+  - DHS
+  obj_type: Event
+- id: 6XvVTqRw
+  type: disruption
+  date: '2025-05-23'
+  sort_date: '2025-05-23'
+  time:
+  text: >-
+    Ethan Shaotran sends a Survey of Surveys email to federal agencies asking them to report information on data-collection surveys. This is redundant to
+    the existing survey oversight already conducted by OMB.
+  fuzz:
+  comment:
+  source: https://www.npr.org/2025/05/23/nx-s1-5409331/doge-data-census-bureau
+  source_title: DOGE created a 'survey of surveys' for a push to cut some government data collection
+  source_name: NPR
+  case_no:
+  track_id:
+  system_id:
+  people:
+  - name: Ethan Shaotran
+    sort_name: Shaotran
+    slug: ethan-shaotran
+    page_slug:
+    age: 22
+    background: coder
+    category: wrecker
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#ethan-shaotran"
+    comment:
+    table_note:
+  agency_ids:
+  - GSA
+  aliases: []
+  names_aliases:
+  - name: Ethan Shaotran
+    slug: ethan-shaotran
+    sort_name: Shaotran
+  agencies_parents:
+  - GSA
+  obj_type: Event
+- id: 47a5ugPC
+  type: interagency
+  date: '2025-05-23'
+  sort_date: '2025-05-23'
+  time:
+  text: >-
+    In a podcast appearance, Antonio Gracias reported that the DOJ had requested for DOGE to find "10-20 cases" of alleged noncitizen voting in every state
+  fuzz:
+  comment:
+  source: https://www.democracydocket.com/news-alerts/the-doj-accelerates-its-hunt-for-voter-fraud-with-doges-help/
+  source_title: The DOJ Accelerates Its Hunt For Voter Fraud — With DOGE's Help
+  source_name: Democracy Docket
+  case_no:
+  track_id:
+  system_id:
+  people:
+  - name: Antonio Gracias
+    sort_name: Gracias
+    slug: antonio-gracias
+    page_slug:
+    age: 54
+    background: finance
+    category: leadership
+    own_page: false
+    blurb:
+    reporting_notes:
+    path: "/people#antonio-gracias"
+    comment:
+    table_note:
+  agency_ids:
+  - DOJ
+  - DHS
+  aliases: []
+  names_aliases:
+  - name: Antonio Gracias
+    slug: antonio-gracias
+    sort_name: Gracias
+  agencies_parents:
+  - DOJ
+  - DHS
   obj_type: Event

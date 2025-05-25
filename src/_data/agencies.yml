@@ -2277,6 +2277,27 @@
       name: Michael Grimes
       sort_name: Grimes
     aliases: []
+  - id: 6ywSOwFF
+    type: disruption
+    date: '2025-05-01'
+    sort_date: '2025-05-01'
+    time:
+    text: An internal survey reveals that over a fifth of Census Bureau leadership roles are vacant
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/23/nx-s1-5409331/doge-data-census-bureau
+    source_title: DOGE created a 'survey of surveys' for a push to cut some government data collection
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: Census
+      slug: census
+      name: Census Bureau
+      short_name: Census
+    people: []
+    aliases: []
   - id: 7kWAzJ0K
     type: disruption
     date: '2025-05-16'
@@ -2298,6 +2319,33 @@
       slug: noaa
       name: National Oceanic and Atmospheric Administration
       short_name: NOAA
+    people: []
+    aliases: []
+  - id: 3zmjW3zT
+    type: disruption
+    date: '2025-05-20'
+    sort_date: '2025-05-20'
+    time:
+    text: >-
+      In a post on X, DOGE reports that it is working to review surveys conducted by the Census Bureau and claims to have eliminated 5 already about alcohol
+      consumption and internet usage
+    fuzz:
+    comment:
+    source: https://bsky.app/profile/hansilowang.bsky.social/post/3lpmvsh6byc2o
+    source_title:
+    source_name: Bluesky
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOGE
+      slug: doge
+      name: Department of Government Efficiency
+      short_name: DOGE
+    - id: Census
+      slug: census
+      name: Census Bureau
+      short_name: Census
     people: []
     aliases: []
   system_access:
@@ -4112,7 +4160,55 @@
   parent_id: Commerce
   children: []
   positions: []
-  events: []
+  events:
+  - id: 6ywSOwFF
+    type: disruption
+    date: '2025-05-01'
+    sort_date: '2025-05-01'
+    time:
+    text: An internal survey reveals that over a fifth of Census Bureau leadership roles are vacant
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/23/nx-s1-5409331/doge-data-census-bureau
+    source_title: DOGE created a 'survey of surveys' for a push to cut some government data collection
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: Census
+      slug: census
+      name: Census Bureau
+      short_name: Census
+    people: []
+    aliases: []
+  - id: 3zmjW3zT
+    type: disruption
+    date: '2025-05-20'
+    sort_date: '2025-05-20'
+    time:
+    text: >-
+      In a post on X, DOGE reports that it is working to review surveys conducted by the Census Bureau and claims to have eliminated 5 already about alcohol
+      consumption and internet usage
+    fuzz:
+    comment:
+    source: https://bsky.app/profile/hansilowang.bsky.social/post/3lpmvsh6byc2o
+    source_title:
+    source_name: Bluesky
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOGE
+      slug: doge
+      name: Department of Government Efficiency
+      short_name: DOGE
+    - id: Census
+      slug: census
+      name: Census Bureau
+      short_name: Census
+    people: []
+    aliases: []
   system_access: []
   obj_type: Agency
 - id: CPSC
@@ -5989,53 +6085,6 @@
       name: Stephanie Holmes
       sort_name: Holmes
     aliases: []
-  - id: XFkAUFhR
-    type: disruption
-    date: '2025-03-28'
-    sort_date: '2025-03-28'
-    time:
-    text: >-
-      Expressing concerns about DOGE requesting access to FPPS, the CIO and CISO of the Department of the Interior present a memo to the Interior Secretary
-      about the risks for him to acknowledge and sign. He doesn't sign it
-    fuzz:
-    comment:
-    source: https://www.nytimes.com/2025/03/31/us/politics/doge-musk-federal-payroll.html
-    source_title:
-    source_name: The New York Times
-    case_no:
-    track_id:
-    system_id:
-    agencies:
-    - id: DOI
-      slug: interior
-      name: Department of the Interior
-      short_name: DOI
-    people: []
-    aliases: []
-  - id: AGxssd5s
-    type: disruption
-    date: '2025-03-28'
-    sort_date: '2025-03-28'
-    time:
-    text: Tyler Hassen places the CIO and CISO on admininstrative leave under investigation for raising alarm about DOGE access
-    fuzz:
-    comment:
-    source: https://www.nytimes.com/2025/03/31/us/politics/doge-musk-federal-payroll.html
-    source_title:
-    source_name: The New York Times
-    case_no:
-    track_id:
-    system_id:
-    agencies:
-    - id: DOI
-      slug: interior
-      name: Department of the Interior
-      short_name: DOI
-    people:
-    - slug: tyler-hassen
-      name: Tyler Hassen
-      sort_name: Hassen
-    aliases: []
   - id: e4rwFTP2
     type: interagency
     date: '2025-03-28'
@@ -6068,6 +6117,53 @@
     - slug: katrine-trampe
       name: Katrine Trampe
       sort_name: Trampe
+    aliases: []
+  - id: AGxssd5s
+    type: disruption
+    date: '2025-03-28'
+    sort_date: '2025-03-28'
+    time:
+    text: Tyler Hassen places the CIO and CISO on admininstrative leave under investigation for raising alarm about DOGE access
+    fuzz:
+    comment:
+    source: https://www.nytimes.com/2025/03/31/us/politics/doge-musk-federal-payroll.html
+    source_title:
+    source_name: The New York Times
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOI
+      slug: interior
+      name: Department of the Interior
+      short_name: DOI
+    people:
+    - slug: tyler-hassen
+      name: Tyler Hassen
+      sort_name: Hassen
+    aliases: []
+  - id: XFkAUFhR
+    type: disruption
+    date: '2025-03-28'
+    sort_date: '2025-03-28'
+    time:
+    text: >-
+      Expressing concerns about DOGE requesting access to FPPS, the CIO and CISO of the Department of the Interior present a memo to the Interior Secretary
+      about the risks for him to acknowledge and sign. He doesn't sign it
+    fuzz:
+    comment:
+    source: https://www.nytimes.com/2025/03/31/us/politics/doge-musk-federal-payroll.html
+    source_title:
+    source_name: The New York Times
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOI
+      slug: interior
+      name: Department of the Interior
+      short_name: DOI
+    people: []
     aliases: []
   - id: jqgpzyra
     type: interagency
@@ -6248,6 +6344,32 @@
     - slug: tyler-hassen
       name: Tyler Hassen
       sort_name: Hassen
+    aliases: []
+  - id: yenHvAv5
+    type: disruption
+    date: '2025-05-02'
+    sort_date: '2025-05-02'
+    time:
+    text: >-
+      Stephanie Holmes, in her role as acting chief human capital officers, sends an email ordering DOI staff to stop doing any detail work by May 18 to
+      cover for a steep loss in available staff due to DOGE's directed cuts
+    fuzz:
+    comment:
+    source: https://www.politico.com/news/2025/05/24/interior-department-land-bureau-pushes-against-doge-00360303
+    source_title: 'DOGE appointee sparks turf battle at Interior: ''Ignore the email from HR'''
+    source_name: Politico
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOI
+      slug: interior
+      name: Department of the Interior
+      short_name: DOI
+    people:
+    - slug: stephanie-holmes
+      name: Stephanie Holmes
+      sort_name: Holmes
     aliases: []
   system_access:
   - id: fpps-holmes
@@ -8134,6 +8256,29 @@
       short_name: DOGE
     people: []
     aliases: []
+  - id: Af8KwhwZ
+    type: official
+    date: '2025-02-26'
+    sort_date: '2025-02-26'
+    time:
+    text: >-
+      Trump issues an executive order mandating that DOGE teams will have approval over awarding any contract at any agency and freezes purchase cards for
+      90 days
+    fuzz:
+    comment:
+    source: https://www.whitehouse.gov/presidential-actions/2025/02/implementing-the-presidents-department-of-government-efficiency-cost-efficiency-initiative/
+    source_title:
+    source_name:
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOGE
+      slug: doge
+      name: Department of Government Efficiency
+      short_name: DOGE
+    people: []
+    aliases: []
   - id: jUGZwRWr
     type: official
     date: '2025-02-26'
@@ -8159,29 +8304,6 @@
     - slug: amy-gleason
       name: Amy Gleason
       sort_name: Gleason
-    aliases: []
-  - id: Af8KwhwZ
-    type: official
-    date: '2025-02-26'
-    sort_date: '2025-02-26'
-    time:
-    text: >-
-      Trump issues an executive order mandating that DOGE teams will have approval over awarding any contract at any agency and freezes purchase cards for
-      90 days
-    fuzz:
-    comment:
-    source: https://www.whitehouse.gov/presidential-actions/2025/02/implementing-the-presidents-department-of-government-efficiency-cost-efficiency-initiative/
-    source_title:
-    source_name:
-    case_no:
-    track_id:
-    system_id:
-    agencies:
-    - id: DOGE
-      slug: doge
-      name: Department of Government Efficiency
-      short_name: DOGE
-    people: []
     aliases: []
   - id: dq7CdXaH
     type: legal
@@ -8974,6 +9096,54 @@
     source_title: Watchdog Effort to Obtain DOGE Records Can Proceed, Appeals Court Rules
     source_name: The New York Times
     case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOGE
+      slug: doge
+      name: Department of Government Efficiency
+      short_name: DOGE
+    people: []
+    aliases: []
+  - id: 3zmjW3zT
+    type: disruption
+    date: '2025-05-20'
+    sort_date: '2025-05-20'
+    time:
+    text: >-
+      In a post on X, DOGE reports that it is working to review surveys conducted by the Census Bureau and claims to have eliminated 5 already about alcohol
+      consumption and internet usage
+    fuzz:
+    comment:
+    source: https://bsky.app/profile/hansilowang.bsky.social/post/3lpmvsh6byc2o
+    source_title:
+    source_name: Bluesky
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOGE
+      slug: doge
+      name: Department of Government Efficiency
+      short_name: DOGE
+    - id: Census
+      slug: census
+      name: Census Bureau
+      short_name: Census
+    people: []
+    aliases: []
+  - id: 5fCND3ng
+    type: legal
+    date: '2025-05-23'
+    sort_date: '2025-05-23'
+    time:
+    text: The Supreme Court issues a stay on the order from an appeals court that DOGE must start producing documents for CREW
+    fuzz:
+    comment:
+    source: https://www.supremecourt.gov/orders/courtorders/052325zr1_1b8e.pdf
+    source_title:
+    source_name: The Supreme Court
+    case_no: 1:25-cv-00511
     track_id:
     system_id:
     agencies:
@@ -11393,6 +11563,35 @@
       short_name: DHS
     people: []
     aliases: []
+  - id: 4ZZrgRGx
+    type: disruption
+    date: '2025-03-01'
+    sort_date: '2025-03-01'
+    time:
+    text: >-
+      DOGE staff reportedly have pressured staff at DHS to use Grok, a chatbot from Elon Musk's xAI, despite the fact it had not been approved for use in
+      the agency. A DHS spokesperson denied the allegations.
+    fuzz:
+    comment: DOGE staff told DHS officials over the last two months to use Grok even though it had not been approved for use at the sprawling agency
+    source: https://www.reuters.com/sustainability/boards-policy-regulation/musks-doge-expanding-his-grok-ai-us-government-raising-conflict-concerns-2025-05-23/
+    source_title: 'Exclusive: Musk''s DOGE expanding his Grok AI in US government, raising conflict concerns'
+    source_name: Reuters
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DHS
+      slug: dhs
+      name: Department of Homeland Security
+      short_name: DHS
+    people:
+    - slug: edward-coristine
+      name: Edward Coristine
+      sort_name: Coristine
+    - slug: kyle-schutt
+      name: Kyle Schutt
+      sort_name: Schutt
+    aliases: []
   - id: hocQ5vQK
     type: report
     date: '2025-03-01'
@@ -11756,6 +11955,65 @@
       name: Cybersecurity and Infrastructure Security Agency
       short_name: CISA
     people: []
+    aliases: []
+  - id: 395o34d5
+    type: disruption
+    date: '2025-05-23'
+    sort_date: '2025-05-23'
+    time:
+    text: >-
+      Reuters reports that DOGE staffers have attempted to gain access to DHS employee emails in recent months and ordered staff to train AI to identify
+      communications suggesting an employee is not "loyal" to Trump's political agenda
+    fuzz:
+    comment:
+    source: https://www.reuters.com/sustainability/boards-policy-regulation/musks-doge-expanding-his-grok-ai-us-government-raising-conflict-concerns-2025-05-23/
+    source_title: 'Exclusive: Musk''s DOGE expanding his Grok AI in US government, raising conflict concerns'
+    source_name: Reuters
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DHS
+      slug: dhs
+      name: Department of Homeland Security
+      short_name: DHS
+    people:
+    - slug: edward-coristine
+      name: Edward Coristine
+      sort_name: Coristine
+    - slug: kyle-schutt
+      name: Kyle Schutt
+      sort_name: Schutt
+    aliases: []
+  - id: 47a5ugPC
+    type: interagency
+    date: '2025-05-23'
+    sort_date: '2025-05-23'
+    time:
+    text: >-
+      In a podcast appearance, Antonio Gracias reported that the DOJ had requested for DOGE to find "10-20 cases" of alleged noncitizen voting in every
+      state
+    fuzz:
+    comment:
+    source: https://www.democracydocket.com/news-alerts/the-doj-accelerates-its-hunt-for-voter-fraud-with-doges-help/
+    source_title: The DOJ Accelerates Its Hunt For Voter Fraud — With DOGE's Help
+    source_name: Democracy Docket
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOJ
+      slug: doj
+      name: Department of Justice
+      short_name: DOJ
+    - id: DHS
+      slug: dhs
+      name: Department of Homeland Security
+      short_name: DHS
+    people:
+    - slug: antonio-gracias
+      name: Antonio Gracias
+      sort_name: Gracias
     aliases: []
   system_access:
   - id: fema-go-coristine
@@ -12684,6 +12942,36 @@
       name: Tarak Makecha
       sort_name: Makecha
     aliases: []
+  - id: 47a5ugPC
+    type: interagency
+    date: '2025-05-23'
+    sort_date: '2025-05-23'
+    time:
+    text: >-
+      In a podcast appearance, Antonio Gracias reported that the DOJ had requested for DOGE to find "10-20 cases" of alleged noncitizen voting in every
+      state
+    fuzz:
+    comment:
+    source: https://www.democracydocket.com/news-alerts/the-doj-accelerates-its-hunt-for-voter-fraud-with-doges-help/
+    source_title: The DOJ Accelerates Its Hunt For Voter Fraud — With DOGE's Help
+    source_name: Democracy Docket
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOJ
+      slug: doj
+      name: Department of Justice
+      short_name: DOJ
+    - id: DHS
+      slug: dhs
+      name: Department of Homeland Security
+      short_name: DHS
+    people:
+    - slug: antonio-gracias
+      name: Antonio Gracias
+      sort_name: Gracias
+    aliases: []
   system_access:
   - id: ecas-hoffman
     govt_system_id: ecas
@@ -12843,7 +13131,10 @@
       background: executive
       category: leadership
       own_page: false
-      blurb:
+      blurb: >-
+        An longtime personal assistant to Elon Musk – who reportedly once told a Twitter employee that "Elon is special in this world. It is our job to
+        protect him and make sure what he wants to have happen" – Jennifer "Jehn" Balajadia has been linked to the Department of Education and possibly
+        a few other agencies by the _New York Times_, but actual details of her activity have been scarce.
       reporting_notes:
       path: "/people#jennifer-balajadia"
       comment:
@@ -20101,6 +20392,29 @@
       short_name: DOGE
     people: []
     aliases: []
+  - id: Af8KwhwZ
+    type: official
+    date: '2025-02-26'
+    sort_date: '2025-02-26'
+    time:
+    text: >-
+      Trump issues an executive order mandating that DOGE teams will have approval over awarding any contract at any agency and freezes purchase cards for
+      90 days
+    fuzz:
+    comment:
+    source: https://www.whitehouse.gov/presidential-actions/2025/02/implementing-the-presidents-department-of-government-efficiency-cost-efficiency-initiative/
+    source_title:
+    source_name:
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOGE
+      slug: doge
+      name: Department of Government Efficiency
+      short_name: DOGE
+    people: []
+    aliases: []
   - id: jUGZwRWr
     type: official
     date: '2025-02-26'
@@ -20126,29 +20440,6 @@
     - slug: amy-gleason
       name: Amy Gleason
       sort_name: Gleason
-    aliases: []
-  - id: Af8KwhwZ
-    type: official
-    date: '2025-02-26'
-    sort_date: '2025-02-26'
-    time:
-    text: >-
-      Trump issues an executive order mandating that DOGE teams will have approval over awarding any contract at any agency and freezes purchase cards for
-      90 days
-    fuzz:
-    comment:
-    source: https://www.whitehouse.gov/presidential-actions/2025/02/implementing-the-presidents-department-of-government-efficiency-cost-efficiency-initiative/
-    source_title:
-    source_name:
-    case_no:
-    track_id:
-    system_id:
-    agencies:
-    - id: DOGE
-      slug: doge
-      name: Department of Government Efficiency
-      short_name: DOGE
-    people: []
     aliases: []
   - id: dq7CdXaH
     type: legal
@@ -20941,6 +21232,54 @@
     source_title: Watchdog Effort to Obtain DOGE Records Can Proceed, Appeals Court Rules
     source_name: The New York Times
     case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOGE
+      slug: doge
+      name: Department of Government Efficiency
+      short_name: DOGE
+    people: []
+    aliases: []
+  - id: 3zmjW3zT
+    type: disruption
+    date: '2025-05-20'
+    sort_date: '2025-05-20'
+    time:
+    text: >-
+      In a post on X, DOGE reports that it is working to review surveys conducted by the Census Bureau and claims to have eliminated 5 already about alcohol
+      consumption and internet usage
+    fuzz:
+    comment:
+    source: https://bsky.app/profile/hansilowang.bsky.social/post/3lpmvsh6byc2o
+    source_title:
+    source_name: Bluesky
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOGE
+      slug: doge
+      name: Department of Government Efficiency
+      short_name: DOGE
+    - id: Census
+      slug: census
+      name: Census Bureau
+      short_name: Census
+    people: []
+    aliases: []
+  - id: 5fCND3ng
+    type: legal
+    date: '2025-05-23'
+    sort_date: '2025-05-23'
+    time:
+    text: The Supreme Court issues a stay on the order from an appeals court that DOGE must start producing documents for CREW
+    fuzz:
+    comment:
+    source: https://www.supremecourt.gov/orders/courtorders/052325zr1_1b8e.pdf
+    source_title:
+    source_name: The Supreme Court
+    case_no: 1:25-cv-00511
     track_id:
     system_id:
     agencies:
@@ -24216,17 +24555,17 @@
       obj_type: Person
     obj_type: Position
   events:
-  - id: 54gGXtvR
-    type: report
+  - id: 3rNhg30Y
+    type: disruption
     date: '2025-01-29'
     sort_date: '2025-01-29'
     time:
-    text: A team of high-ranking GSA employees meets to discuss building special "resting rooms" for DOGE and other A-suite staff
+    text: GSA regional managers receive instructions from HQ that "lease terminations are the clear priority at this time"
     fuzz:
     comment:
-    source: https://www.wired.com/story/elon-musk-lackeys-general-services-administration/
-    source_title:
-    source_name:
+    source: https://apnews.com/article/trump-musk-gsa-terminate-office-leases-f8faac5e2038722f705587c8dd21ab26
+    source_title: Trump and Musk demand termination of federal office leases through General Services Administration
+    source_name: AP
     case_no:
     track_id:
     system_id:
@@ -24240,17 +24579,17 @@
       name: Nicole Hollander
       sort_name: Hollander
     aliases: []
-  - id: 3rNhg30Y
-    type: disruption
+  - id: 54gGXtvR
+    type: report
     date: '2025-01-29'
     sort_date: '2025-01-29'
     time:
-    text: GSA regional managers receive instructions from HQ that "lease terminations are the clear priority at this time"
+    text: A team of high-ranking GSA employees meets to discuss building special "resting rooms" for DOGE and other A-suite staff
     fuzz:
     comment:
-    source: https://apnews.com/article/trump-musk-gsa-terminate-office-leases-f8faac5e2038722f705587c8dd21ab26
-    source_title: Trump and Musk demand termination of federal office leases through General Services Administration
-    source_name: AP
+    source: https://www.wired.com/story/elon-musk-lackeys-general-services-administration/
+    source_title:
+    source_name:
     case_no:
     track_id:
     system_id:
@@ -24557,27 +24896,6 @@
       short_name: GSA
     people: []
     aliases: []
-  - id: R36jiNmY
-    type: disruption
-    date: '2025-03-01'
-    sort_date: '2025-03-01'
-    time:
-    text: Hours after the staff is hit with the RIF email, the DNS entry for 18F.gsa.gov is removed
-    fuzz:
-    comment:
-    source: https://18f.gsa.gov/
-    source_title:
-    source_name:
-    case_no:
-    track_id:
-    system_id:
-    agencies:
-    - id: GSA
-      slug: gsa
-      name: General Services Administration
-      short_name: GSA
-    people: []
-    aliases: []
   - id: oCmLwiJu
     type: disruption
     date: '2025-03-01'
@@ -24601,6 +24919,27 @@
     - slug: thomas-shedd
       name: Thomas Shedd
       sort_name: Shedd
+    aliases: []
+  - id: R36jiNmY
+    type: disruption
+    date: '2025-03-01'
+    sort_date: '2025-03-01'
+    time:
+    text: Hours after the staff is hit with the RIF email, the DNS entry for 18F.gsa.gov is removed
+    fuzz:
+    comment:
+    source: https://18f.gsa.gov/
+    source_title:
+    source_name:
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GSA
+      slug: gsa
+      name: General Services Administration
+      short_name: GSA
+    people: []
     aliases: []
   - id: MaJRwgfZ
     type: directory
@@ -24979,6 +25318,32 @@
     - slug: jonathan-mendelson
       name: Jonathan Mendelson
       sort_name: Mendelson
+    aliases: []
+  - id: 6XvVTqRw
+    type: disruption
+    date: '2025-05-23'
+    sort_date: '2025-05-23'
+    time:
+    text: >-
+      Ethan Shaotran sends a Survey of Surveys email to federal agencies asking them to report information on data-collection surveys. This is redundant
+      to the existing survey oversight already conducted by OMB.
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/23/nx-s1-5409331/doge-data-census-bureau
+    source_title: DOGE created a 'survey of surveys' for a push to cut some government data collection
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GSA
+      slug: gsa
+      name: General Services Administration
+      short_name: GSA
+    people:
+    - slug: ethan-shaotran
+      name: Ethan Shaotran
+      sort_name: Shaotran
     aliases: []
   system_access: []
   obj_type: Agency
@@ -36912,6 +37277,27 @@
       name: Amanda Scales
       sort_name: Scales
     aliases: []
+  - id: 5N97IVsN
+    type: disruption
+    date: '2025-02-01'
+    sort_date: '2025-02-01'
+    time:
+    text: Engineers working for DOGE within OPM used Meta's LLama AI model locally to analyze responses to the Fork in the Road resignation offer
+    fuzz:
+    comment:
+    source: https://www.wired.com/story/doge-used-meta-ai-model-review-fork-emails-from-federal-workers/
+    source_title: DOGE Used a Meta AI Model to Review Emails From Federal Workers
+    source_name: Wired
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: OPM
+      slug: opm
+      name: Office of Personnel Management
+      short_name: OPM
+    people: []
+    aliases: []
   - id: 15xKjpfm
     type: onboard
     date: '2025-02-03'
@@ -45223,7 +45609,7 @@
     fuzz:
     comment: Should I have some sort of restoration event?
     source: https://apnews.com/article/trump-musk-doge-institute-of-peace-headquarters-df9dc7d4b1ea744db647527a4b28d807
-    source_title: Institute of Peace reclaims its headquarters after court win over Musk’s cost-cutting team
+    source_title: Institute of Peace reclaims its headquarters after court win over Musk's cost-cutting team
     source_name: AP
     case_no:
     track_id:

@@ -696,7 +696,15 @@
   slug: census
   page_slug: commerce
   parent_id: Commerce
-  events: []
+  events:
+  - date: 2025-05-XX
+    type: disruption
+    event: An internal survey reveals that over a fifth of Census Bureau leadership roles are vacant
+    source: https://www.npr.org/2025/05/23/nx-s1-5409331/doge-data-census-bureau
+    source_name: NPR
+    source_title: DOGE created a 'survey of surveys' for a push to cut some government data collection
+    agency: Census
+    id: 6ywSOwFF
 
 - name: Consumer Product Safety Commission
   id: CPSC
@@ -1055,6 +1063,16 @@
     source_name: The Washington Post
     agency: DOI
     id: f5MfXn7G
+  - date: 2025-05-02
+    type: disruption
+    event: Stephanie Holmes, in her role as acting chief human capital officers, sends an email ordering DOI staff to stop doing any detail work by May 18 to cover for a steep loss in available staff due to DOGE's directed cuts
+    named:
+    - Stephanie Holmes
+    source: https://www.politico.com/news/2025/05/24/interior-department-land-bureau-pushes-against-doge-00360303
+    source_name: Politico
+    source_title: 'DOGE appointee sparks turf battle at Interior: ''Ignore the email from HR'''
+    agency: DOI
+    id: yenHvAv5
 
 - name: Department of Government Efficiency
   id: DOGE
@@ -1483,6 +1501,14 @@
     source_title: Watchdog Effort to Obtain DOGE Records Can Proceed, Appeals Court Rules
     agency: DOGE
     id: 3b9znEPp
+  - date: 2025-05-23
+    type: legal
+    event: The Supreme Court issues a stay on the order from an appeals court that DOGE must start producing documents for CREW
+    source: https://www.supremecourt.gov/orders/courtorders/052325zr1_1b8e.pdf
+    source_name: The Supreme Court
+    case_no: 1:25-cv-00511
+    agency: DOGE
+    id: 5fCND3ng
 
 - name: Department of Homeland Security
   id: DHS
@@ -1519,6 +1545,18 @@
     source: https://www.bankinfosecurity.com/house-committee-blocks-probe-into-doge-access-to-dhs-systems-a-27608
     agency: DHS
     id: EAo8rM7V
+  - date: 2025-03-XX
+    type: disruption
+    event: DOGE staff reportedly have pressured staff at DHS to use Grok, a chatbot from Elon Musk's xAI, despite the fact it had not been approved for use in the agency. A DHS spokesperson denied the allegations.
+    source: https://www.reuters.com/sustainability/boards-policy-regulation/musks-doge-expanding-his-grok-ai-us-government-raising-conflict-concerns-2025-05-23/
+    source_name: Reuters
+    source_title: 'Exclusive: Musk''s DOGE expanding his Grok AI in US government, raising conflict concerns'
+    comment: DOGE staff told DHS officials over the last two months to use Grok even though it had not been approved for use at the sprawling agency
+    named:
+    - Kyle Schutt
+    - Edward Coristine
+    agency: DHS
+    id: 4ZZrgRGx
   - date: 2025-03-21
     type: disruption
     event: Trump administration eliminates the DHS Office for Civil Rights and Civil Liberties and two ombudsman offices responsible for investigating allegations of abuse from immigrants. This also includes the CRCL program that was characterized as "money laundering" by DOGE staffer Kyle Schutt.
@@ -1544,6 +1582,17 @@
     source: https://fedscoop.com/doge-arrives-at-homeland-security-biometrics-operations/
     agency: DHS
     id: 1OvaP6aP
+  - date: 2025-05-23
+    type: disruption
+    event: Reuters reports that DOGE staffers have attempted to gain access to DHS employee emails in recent months and ordered staff to train AI to identify communications suggesting an employee is not "loyal" to Trump's political agenda
+    source: https://www.reuters.com/sustainability/boards-policy-regulation/musks-doge-expanding-his-grok-ai-us-government-raising-conflict-concerns-2025-05-23/
+    source_name: Reuters
+    source_title: 'Exclusive: Musk''s DOGE expanding his Grok AI in US government, raising conflict concerns'
+    named:
+    - Kyle Schutt
+    - Edward Coristine
+    agency: DHS
+    id: 395o34d5
 
 - name: Department of Justice
   id: DOJ
@@ -2449,6 +2498,16 @@
     source: https://federalnewsnetwork.com/agency-oversight/2025/04/many-doge-officials-appear-on-gsas-security-shortlist-acting-head-says-nobody-working-for-doge-here/
     agency: GSA
     id: HQUguBSH
+  - date: 2025-05-23
+    type: disruption
+    event: Ethan Shaotran sends a Survey of Surveys email to federal agencies asking them to report information on data-collection surveys. This is redundant to the existing survey oversight already conducted by OMB.
+    named:
+    - Ethan Shaotran
+    source: https://www.npr.org/2025/05/23/nx-s1-5409331/doge-data-census-bureau
+    source_name: NPR
+    source_title: DOGE created a 'survey of surveys' for a push to cut some government data collection
+    agency: GSA
+    id: 6XvVTqRw
 
 - name: Government Accountability Office
   id: GAO
@@ -3635,6 +3694,14 @@
     source_name: Reuters
     agency: OPM
     id: GmvBm6qi
+  - date: 2025-02-XX
+    type: disruption
+    event: Engineers working for DOGE within OPM used Meta's LLama AI model locally to analyze responses to the Fork in the Road resignation offer
+    source: https://www.wired.com/story/doge-used-meta-ai-model-review-fork-emails-from-federal-workers/
+    source_name: Wired
+    source_title: DOGE Used a Meta AI Model to Review Emails From Federal Workers
+    agency: OPM
+    id: 5N97IVsN
   - date: 2025-02-03
     type: onboard
     event: Several more DOGE staffers start working at OPM
@@ -5003,7 +5070,7 @@
     comment: Should I have some sort of restoration event?
     source_name: AP
     source: https://apnews.com/article/trump-musk-doge-institute-of-peace-headquarters-df9dc7d4b1ea744db647527a4b28d807
-    source_title: Institute of Peace reclaims its headquarters after court win over Musk’s cost-cutting team
+    source_title: Institute of Peace reclaims its headquarters after court win over Musk's cost-cutting team
     agency: USIP
     id: 4t43UI0F
 

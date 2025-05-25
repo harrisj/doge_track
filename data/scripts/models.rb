@@ -77,6 +77,15 @@ class Agency < Sequel::Model
   end
 end
 
+# For documents
+class Document < Sequel::Model
+  many_to_one :person
+
+  def url
+    "/documents/#{file}"
+  end
+end
+
 # Represents an alias
 class DogeAlias < Sequel::Model
   many_to_one :agency

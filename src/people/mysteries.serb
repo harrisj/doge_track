@@ -1,0 +1,32 @@
+---
+layout: page
+title: Mystery People and Other Questions
+---
+{%@ "title", title: "Open Questions and Other Mysteries" %}
+
+{% markdownify do %}
+Over the course of assembling this data, I have noticed at least a few different unusual things that I don't have enough context yet to explain, but I am collecting them here for convenience.
+
+## Questions About People
+
+### Unknowns
+
+There are a few DOGE staffers that have been identified in individual reports, but I have no other details about who they are or what they have done exactly.
+
+{% people = site.data.people.select {|p| p.category == 'unknown'}.sort_by(&:sort_name) %}
+
+{% people.each do |person| %}
+  {%@ "people_page_person", person: person %}
+{% end %}
+
+### Suddenly Quiet Wreckers
+
+## Operational Questions
+
+### A Single Day of System Access
+
+### Also Detailed to DOGE?
+
+One recurring phrase in recent
+
+{% end %}

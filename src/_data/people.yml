@@ -2081,7 +2081,10 @@
   background: executive
   category: leadership
   own_page: false
-  blurb:
+  blurb: >-
+    An longtime personal assistant to Elon Musk – who reportedly once told a Twitter employee that "Elon is special in this world. It is our job to protect
+    him and make sure what he wants to have happen" – Jennifer "Jehn" Balajadia has been linked to the Department of Education and possibly a few other
+    agencies by the _New York Times_, but actual details of her activity have been scarce.
   reporting_notes:
   path: "/people#jennifer-balajadia"
   comment:
@@ -2142,7 +2145,10 @@
       background: executive
       category: leadership
       own_page: false
-      blurb:
+      blurb: >-
+        An longtime personal assistant to Elon Musk – who reportedly once told a Twitter employee that "Elon is special in this world. It is our job to
+        protect him and make sure what he wants to have happen" – Jennifer "Jehn" Balajadia has been linked to the Department of Education and possibly
+        a few other agencies by the _New York Times_, but actual details of her activity have been scarce.
       reporting_notes:
       path: "/people#jennifer-balajadia"
       comment:
@@ -2855,7 +2861,9 @@
   background:
   category: booster
   own_page: false
-  blurb:
+  blurb: >-
+    Identified recently in a WSJ story as Elon Musk's longtime "fixer" and the manager of Musk's family office, Jared Birchall was instrumental in organizing
+    Musk's donations to the Trump campaign. He was part of the team in place before the Inauguration to interview DOGE staffers and build out the team.
   reporting_notes:
   path: "/people#jared-birchall"
   comment:
@@ -8314,6 +8322,30 @@
       name: Aram Moghaddassi
       sort_name: Moghaddassi
     aliases: []
+  - id: bJckd7pu
+    type: sighting
+    date: '2025-02-10'
+    sort_date: '2025-02-10'
+    time:
+    text: Edward Coristine appears in a DHS directory as a "senior advisor"
+    fuzz:
+    comment:
+    source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
+    source_title:
+    source_name:
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DHS
+      slug: dhs
+      name: Department of Homeland Security
+      short_name: DHS
+    people:
+    - slug: edward-coristine
+      name: Edward Coristine
+      sort_name: Coristine
+    aliases: []
   - id: Ru3gqWWt
     type: sighting
     date: '2025-02-10'
@@ -8340,30 +8372,6 @@
     - slug: luke-farritor
       name: Luke Farritor
       sort_name: Farritor
-    aliases: []
-  - id: bJckd7pu
-    type: sighting
-    date: '2025-02-10'
-    sort_date: '2025-02-10'
-    time:
-    text: Edward Coristine appears in a DHS directory as a "senior advisor"
-    fuzz:
-    comment:
-    source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
-    source_title:
-    source_name:
-    case_no:
-    track_id:
-    system_id:
-    agencies:
-    - id: DHS
-      slug: dhs
-      name: Department of Homeland Security
-      short_name: DHS
-    people:
-    - slug: edward-coristine
-      name: Edward Coristine
-      sort_name: Coristine
     aliases: []
   - id: 9CEKeLm7
     type: directory
@@ -8462,6 +8470,35 @@
       slug: cisa
       name: Cybersecurity and Infrastructure Security Agency
       short_name: CISA
+    people:
+    - slug: edward-coristine
+      name: Edward Coristine
+      sort_name: Coristine
+    - slug: kyle-schutt
+      name: Kyle Schutt
+      sort_name: Schutt
+    aliases: []
+  - id: 4ZZrgRGx
+    type: disruption
+    date: '2025-03-01'
+    sort_date: '2025-03-01'
+    time:
+    text: >-
+      DOGE staff reportedly have pressured staff at DHS to use Grok, a chatbot from Elon Musk's xAI, despite the fact it had not been approved for use in
+      the agency. A DHS spokesperson denied the allegations.
+    fuzz:
+    comment: DOGE staff told DHS officials over the last two months to use Grok even though it had not been approved for use at the sprawling agency
+    source: https://www.reuters.com/sustainability/boards-policy-regulation/musks-doge-expanding-his-grok-ai-us-government-raising-conflict-concerns-2025-05-23/
+    source_title: 'Exclusive: Musk''s DOGE expanding his Grok AI in US government, raising conflict concerns'
+    source_name: Reuters
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DHS
+      slug: dhs
+      name: Department of Homeland Security
+      short_name: DHS
     people:
     - slug: edward-coristine
       name: Edward Coristine
@@ -8922,6 +8959,35 @@
     - slug: joe-gebbia
       name: Joe Gebbia
       sort_name: Gebbia
+    aliases: []
+  - id: 395o34d5
+    type: disruption
+    date: '2025-05-23'
+    sort_date: '2025-05-23'
+    time:
+    text: >-
+      Reuters reports that DOGE staffers have attempted to gain access to DHS employee emails in recent months and ordered staff to train AI to identify
+      communications suggesting an employee is not "loyal" to Trump's political agenda
+    fuzz:
+    comment:
+    source: https://www.reuters.com/sustainability/boards-policy-regulation/musks-doge-expanding-his-grok-ai-us-government-raising-conflict-concerns-2025-05-23/
+    source_title: 'Exclusive: Musk''s DOGE expanding his Grok AI in US government, raising conflict concerns'
+    source_name: Reuters
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DHS
+      slug: dhs
+      name: Department of Homeland Security
+      short_name: DHS
+    people:
+    - slug: edward-coristine
+      name: Edward Coristine
+      sort_name: Coristine
+    - slug: kyle-schutt
+      name: Kyle Schutt
+      sort_name: Schutt
     aliases: []
   system_access:
   - id: higlas-coristine
@@ -18434,6 +18500,36 @@
       name: Kyle Schutt
       sort_name: Schutt
     aliases: []
+  - id: 47a5ugPC
+    type: interagency
+    date: '2025-05-23'
+    sort_date: '2025-05-23'
+    time:
+    text: >-
+      In a podcast appearance, Antonio Gracias reported that the DOJ had requested for DOGE to find "10-20 cases" of alleged noncitizen voting in every
+      state
+    fuzz:
+    comment:
+    source: https://www.democracydocket.com/news-alerts/the-doj-accelerates-its-hunt-for-voter-fraud-with-doges-help/
+    source_title: The DOJ Accelerates Its Hunt For Voter Fraud — With DOGE's Help
+    source_name: Democracy Docket
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOJ
+      slug: doj
+      name: Department of Justice
+      short_name: DOJ
+    - id: DHS
+      slug: dhs
+      name: Department of Homeland Security
+      short_name: DHS
+    people:
+    - slug: antonio-gracias
+      name: Antonio Gracias
+      sort_name: Gracias
+    aliases: []
   system_access: []
   obj_type: Person
   start_date: '2025-02-23'
@@ -20557,6 +20653,32 @@
     source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
     source_title:
     source_name: Internal Investigation
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DOI
+      slug: interior
+      name: Department of the Interior
+      short_name: DOI
+    people:
+    - slug: stephanie-holmes
+      name: Stephanie Holmes
+      sort_name: Holmes
+    aliases: []
+  - id: yenHvAv5
+    type: disruption
+    date: '2025-05-02'
+    sort_date: '2025-05-02'
+    time:
+    text: >-
+      Stephanie Holmes, in her role as acting chief human capital officers, sends an email ordering DOI staff to stop doing any detail work by May 18 to
+      cover for a steep loss in available staff due to DOGE's directed cuts
+    fuzz:
+    comment:
+    source: https://www.politico.com/news/2025/05/24/interior-department-land-bureau-pushes-against-doge-00360303
+    source_title: 'DOGE appointee sparks turf battle at Interior: ''Ignore the email from HR'''
+    source_name: Politico
     case_no:
     track_id:
     system_id:
@@ -36366,6 +36488,35 @@
       name: Kyle Schutt
       sort_name: Schutt
     aliases: []
+  - id: 4ZZrgRGx
+    type: disruption
+    date: '2025-03-01'
+    sort_date: '2025-03-01'
+    time:
+    text: >-
+      DOGE staff reportedly have pressured staff at DHS to use Grok, a chatbot from Elon Musk's xAI, despite the fact it had not been approved for use in
+      the agency. A DHS spokesperson denied the allegations.
+    fuzz:
+    comment: DOGE staff told DHS officials over the last two months to use Grok even though it had not been approved for use at the sprawling agency
+    source: https://www.reuters.com/sustainability/boards-policy-regulation/musks-doge-expanding-his-grok-ai-us-government-raising-conflict-concerns-2025-05-23/
+    source_title: 'Exclusive: Musk''s DOGE expanding his Grok AI in US government, raising conflict concerns'
+    source_name: Reuters
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DHS
+      slug: dhs
+      name: Department of Homeland Security
+      short_name: DHS
+    people:
+    - slug: edward-coristine
+      name: Edward Coristine
+      sort_name: Coristine
+    - slug: kyle-schutt
+      name: Kyle Schutt
+      sort_name: Schutt
+    aliases: []
   - id: MaJRwgfZ
     type: directory
     date: '2025-03-04'
@@ -36565,6 +36716,35 @@
     - slug: payton-rehling
       name: Payton Rehling
       sort_name: Rehling
+    - slug: kyle-schutt
+      name: Kyle Schutt
+      sort_name: Schutt
+    aliases: []
+  - id: 395o34d5
+    type: disruption
+    date: '2025-05-23'
+    sort_date: '2025-05-23'
+    time:
+    text: >-
+      Reuters reports that DOGE staffers have attempted to gain access to DHS employee emails in recent months and ordered staff to train AI to identify
+      communications suggesting an employee is not "loyal" to Trump's political agenda
+    fuzz:
+    comment:
+    source: https://www.reuters.com/sustainability/boards-policy-regulation/musks-doge-expanding-his-grok-ai-us-government-raising-conflict-concerns-2025-05-23/
+    source_title: 'Exclusive: Musk''s DOGE expanding his Grok AI in US government, raising conflict concerns'
+    source_name: Reuters
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: DHS
+      slug: dhs
+      name: Department of Homeland Security
+      short_name: DHS
+    people:
+    - slug: edward-coristine
+      name: Edward Coristine
+      sort_name: Coristine
     - slug: kyle-schutt
       name: Kyle Schutt
       sort_name: Schutt
@@ -37871,6 +38051,32 @@
     - slug: marshall-wood
       name: Marshall Wood
       sort_name: Wood
+    aliases: []
+  - id: 6XvVTqRw
+    type: disruption
+    date: '2025-05-23'
+    sort_date: '2025-05-23'
+    time:
+    text: >-
+      Ethan Shaotran sends a Survey of Surveys email to federal agencies asking them to report information on data-collection surveys. This is redundant
+      to the existing survey oversight already conducted by OMB.
+    fuzz:
+    comment:
+    source: https://www.npr.org/2025/05/23/nx-s1-5409331/doge-data-census-bureau
+    source_title: DOGE created a 'survey of surveys' for a push to cut some government data collection
+    source_name: NPR
+    case_no:
+    track_id:
+    system_id:
+    agencies:
+    - id: GSA
+      slug: gsa
+      name: General Services Administration
+      short_name: GSA
+    people:
+    - slug: ethan-shaotran
+      name: Ethan Shaotran
+      sort_name: Shaotran
     aliases: []
   system_access: []
   obj_type: Person
