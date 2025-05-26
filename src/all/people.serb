@@ -1,0 +1,10 @@
+---
+layout: page
+title: All the People in DOGE
+description: An alphabetical listing of all the people being tracked as part of the DOGE tracker
+---
+{% people = site.data.people.sort_by(&:sort_name) %}
+
+{% people.each do |person| %}
+  {%@ "people_page_person", person: person %}
+{% end %}

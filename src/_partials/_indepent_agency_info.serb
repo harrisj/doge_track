@@ -1,0 +1,4 @@
+{% events = site.date.events.find {|e| e.agency_ids.include?(agency_id) } %}
+{% names = events.map {|e| e.names }.flatten.uniq %}
+
+{%@ 'event_timeline', events: events %}

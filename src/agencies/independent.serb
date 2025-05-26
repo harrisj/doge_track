@@ -14,15 +14,20 @@ Over the past decade, Congress has established multiple independent agencies tha
 - Once inside, DOGE will often move quickly to seize control of the agency's financial systems and emails. Staff are immediately placed on indefinite administrative leave to prevent them from acting against them or monitoring what happens. DOGE will then send emails to terminate a large portion of grants with the justification that they no longer "effectuate administration priorities"
 - DOGE will then proceed with plan to conduct a massive layoff (known as a Reduction in Force or RIF in government terminology) to reduce the agency to the bare minimum of staff needed to meet its "statutory requirements." Much like obscenity, this is a seemingly precise definition that is remarkably arbitrary and in some cases, DOGE have used this justification to reduce an agency to a single person. Thus far, these arguments have not prevailed in court, but DOGE is hoping for a lucky break on this in a higher appeals court or the Supreme Court. Regardless, the agency is left functionally inert and unable to fulfill any of its duties towards the American public.
 
-## Early Assaults
+DOGE honed its moves against independent agencies by first attacking {{ agency_link('USAID') }} and {{ agency_link('CFPB') }}, and details on those can be found on their respective pages. This page is going to look at a flurry of individual incidents against each agency.
 
-### US Agency for International Development
+## Teams and Timelines
 
-### The Consumer Financial Protection Bureau
+{% independent_agencies = site.data.agencies.select {|a| a.page_slug == 'independent' } %}
+{% independent_agency_ids = independent_agencies.map(&:id) %}
+{% events = site.data.events.select {|e| e.agency_ids.any? {|a_id| independent_agency_ids.include?(a_id) } }.sort_by(&:sort_date) %}
 
-See the page for the {% agency_link('CFPB') %}
+{%@ 'independent_agency_first_contacts', independent_agencies: independent_agencies, events: events %}
+
+## Inde
 
 ### The Corporation for Public Broadcasting
+
 
 ## Condensed Timeline of Events
 

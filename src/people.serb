@@ -1,9 +1,8 @@
 ---
 layout: page
-title: All the People in DOGE
+title: Who's Involved in DOGE
 description: An alphabetical listing of all the people being tracked as part of the DOGE tracker
 ---
-{% people = site.data.people.sort_by(&:sort_name) %}
 {%@ 'title', title: "Who's Involved in DOGE" %}
 
 <div class="prose prose-sm sm:prose-base md:prose-md lg:prose-lg prose-stone prose-li:m-[0.1em] dark:prose-invert mb-2">
@@ -29,7 +28,3 @@ description: An alphabetical listing of all the people being tracked as part of 
 <li><em>Schedule C</em> is another exemption from the normal civil service hiring rules for political staff in policy roles who are subordinate to other appointees like agency heads.</li>
 </ul></p>
 </div>
-
-{% people.each do |person| %}
-  {%@ "people_page_person", person: person %}
-{% end %}

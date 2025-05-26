@@ -1,0 +1,8 @@
+---
+layout: page
+title: Every Staffing Move
+---
+{% import "macros" %}
+
+{% positions = site.data.positions.sort_by {|p| p.sort_date } %}
+{%@ 'agency_positions_table', positions: positions %}

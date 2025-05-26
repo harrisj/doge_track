@@ -10,22 +10,16 @@ layout: homepage
   </div>
 </div>
 
-<ul class="timeline timeline-vertical">
-  {% timeline_start = true %}
+<div class="mx-auto mt-10">
+{% site.data.page_listing.sections.each do |section| %}
+<section class="prose mb-10">
+<h2 class="title mb-1">{{ section.name }}</h2>
 
-  {% site.data.page_listing.sections.each do |section| %}
-  <li>
-    <hr/>
-    <div class="{% if timeline_start %}timeline-start{% else %}timeline-end{% end %}">
-      <ul class="menu menu-lg my-text-small-fixed">
-      <li class="menu-title font-2xl font-bold">{{ section.name }}</li>
-      {% section.pages.each do |page| %}
-      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-      {% end %}
-      {% timeline_start = !timeline_start %}
-      </ul>
-    </div>
-    <hr/>
-  </li>
- {% end %}
+<ul>
+  {% section.pages.each do |page| %}
+  <li class="mt-0 mb-0"><a href="{{ page.url }}">{{ page.title }}</a></li>
+  {% end %}
 </ul>
+</section>
+{% end %}
+</div>

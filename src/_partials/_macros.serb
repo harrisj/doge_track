@@ -1,4 +1,17 @@
 
+{% macro "find_person" do |p_id|
+    if p_id.is_a?(String)
+      site.data.people.find {|p| p.name.downcase == p_id || p.slug == p_id || p.sort_name.downcase == p_id.downcase }
+    elsif p_id.obj_type == 'Person'
+      p_id
+    elsif p_id.name
+      site.data.people.find {|p| p.name == p_id.name }
+    else
+      a_id
+    end
+   end
+%}
+
 {% macro "person_url" do |name| 
     person = site.data.people.find {|p| p.name.downcase == name || p.slug == name || p.sort_name.downcase == name.downcase }
     person ? person.path : nil
@@ -23,6 +36,15 @@
       else
         display || p_id
       end
+    end
+  end
+%}
+
+{% macro "people" do |arr|
+    if arr.nil?
+      []
+    else
+      out = arr.map { |item| find_person(item) }.compact
     end
   end
 %}
@@ -83,6 +105,11 @@
 
 {% macro "agency_links" do |agency_list|
     agencies(agency_list).map {|a| agency_link(a)}.compact.join(", ").html_safe
+  end
+%}
+
+{% macro "people_links" do |people_list|
+    people(people_list).map {|p| person_link(p)}.compact.join(", ").html_safe
   end
 %}
 
@@ -220,6 +247,10 @@
 end %}
 
 {% macro 'position_summary' do |pos|
+    if pos.doge_alias_id && pos.name
+      alias_ident_str = "<strong>[as #{pos.doge_alias_id}]</strong>"
+    end
+
     type_str = case pos.type
       when 'other'
         nil
@@ -262,7 +293,7 @@ end %}
       note_str = "[#{pos.table_note}]"
     end
 
-    out_str = [type_str, title_str, hire_str, note_str].map {|x| x.blank? ? nil : x }.compact.map {|x| "<span>#{x}</span>"}.join(" ")
+    out_str = [alias_ident_str, type_str, title_str, hire_str, note_str].map {|x| x.blank? ? nil : x }.compact.map {|x| "<span>#{x}</span>"}.join(" ")
 
     if pos.source && out_str
       out_str += " <nobr>[<a href=\"#{pos.source}\ alt=\"Link to Source\"><i class=\"fa-solid fa-link\"></i></a>]</nobr>"
