@@ -1,6 +1,6 @@
 {% import "macros" %}
 
-<table class="table table-xs sm:table-sm md:table-md lg:table-lg">
+<table class="table table-xs sm:table-sm md:table-md">
   <thead>
     <tr class="text-left">
       <th>Agency</th>
@@ -13,7 +13,7 @@
   </thead>
   <tbody>
   {% wreckers.sort_by {|x| x.sort_date}.each do |person| %}
-    {% details = person.positions.reject {|pos| pos.agency_id == person.start_agency } %}
+    {% details = person.positions.reject {|pos| pos.agency.id == person.start_agency } %}
     <tr class="my-table-sm text-left">
       <td class="align-top">{{ agency_link(person.start_agency) }}</td>
       <td class="align-top">{{ person_link(person.name) }}</td>

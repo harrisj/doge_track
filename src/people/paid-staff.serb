@@ -4,4 +4,4 @@ title: Paid Staff in DOGE
 description: One of the early messages about DOGE was that everybody was working for free because they loved the mission so much. Since then, we've learned that a fair number of the DOGE crew have been appointed into paying government roles. Here is a list of who we know so far is being paid.
 ---
 
-{% paid_positions = site.data.positions.values.filter {|pos| pos.salary && pos.salary != '$0' } %}
+{% paid_positions = site.data.positions.filter {|pos| pos.salary && pos.salary != '$0' } %}

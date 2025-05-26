@@ -12,7 +12,7 @@ TKTK Inside men
 
 ## Acting Leadership
 
-{% acting = site.data.positions.values.select { |p| p.title =~ /acting/i }.sort_by(&:sort_date) %}
+{% acting = site.data.positions.select { |p| p.title =~ /acting/i }.sort_by(&:sort_date) %}
 
 <table class="table table-md">
 <thead>
@@ -39,7 +39,7 @@ TKTK Inside men
 
 ## Chief Information Officers
 
-{% cios = site.data.positions.values.select {|p| p.title == "Chief Information Officer" } %}
+{% cios = site.data.positions.select {|p| p.title == "Chief Information Officer" } %}
 <table class="table table-md">
 <thead>
   <tr>

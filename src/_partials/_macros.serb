@@ -175,9 +175,14 @@
     if doc.type == 'mou'
       'MOU'
     else
-      doc.type.titleize
+      doc.type
     end
   end
+%}
+
+{% macro "document_url" do |doc| 
+     "/documents/#{doc.file}"
+   end
 %}
 
 {% macro "doge_alias" do |doge_alias| 
@@ -193,7 +198,7 @@
 
 {% macro "position_move" do |pos| 
   if pos.agency_id
-    raise pos.inspect unless pos.agency
+    raise pos.inspect if pos.agency.nil?
     
     out = if pos.from_agency_id
       arrow = pos.type == 'internal' ? 'arrows-left-right' : 'arrow-right'
@@ -263,11 +268,11 @@ end %}
       out_str += " <nobr>[<a href=\"#{pos.source}\ alt=\"Link to Source\"><i class=\"fa-solid fa-link\"></i></a>]</nobr>"
     end
 
-    if pos.documents
+    if pos.documents.any?
       links = pos.documents.map do |doc|
-        link_to(document_type(doc), doc.url)
+        link_to(document_type(doc), document_url(doc))
       end
-      out_str += " [#{links.join(', ')}]"
+      out_str += " [docs: #{links.join(', ')}]"
     end
 
     out_str.html_safe

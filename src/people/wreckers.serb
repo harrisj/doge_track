@@ -66,7 +66,7 @@ The {{ agency_link("GSA", "General Service Administration") }} is an agency that
 There are also a fair number of Wreckers who started at other agencies, possibly because agency policy or practices might have made it difficult to detail someone from elsewhere. Or, there might have been explicit direction from agency leadership to hire staff there. For instance, there were four Wreckers hired directly from SpaceX to work at the FAA for the short-term on the direction of the Department of Transportation head, Sean Duffy. Some of these names might also be reclassified if I am able to determine they started at GSA or OPM and were actually detailed to the agency listed below.
 
 {% other_wreckers = all_wreckers.reject {|x| ["GSA", "OPM", "DOGE"].include? x.start_agency }.sort_by {|x| [x.start_agency, x.sort_date]} %}
-<table class="table table-xs sm:table-sm md:table-md lg:table-lg">
+<table class="table table-xs sm:table-sm md:table-md">
   <thead>
     <tr>
       <th>Agency</th>
@@ -87,7 +87,7 @@ There are also a fair number of Wreckers who started at other agencies, possibly
       <td class="align-top"><nobr>{{ render EdtfFormat.new(person.start_date, :compact, :filled) }}</nobr></td>
       <td class="align-top hidden md:table-cell">{{ person_background(person) }}</td>
       <td class="align-top">{% if person.table_note %}{{ person.table_note }} {% end %}
-          {% if details.any? %}{{ details | agencies | uniq | agency_links }}{% end %}</td>
+          {% if details.any? %}{{ details | map: ->p {p.agency} | uniq | agency_links }}{% end %}</td>
     </tr>
   {% end %}
   </tbody>
