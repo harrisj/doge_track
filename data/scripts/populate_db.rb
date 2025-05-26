@@ -30,7 +30,7 @@ def path_for_person(person_hash)
   elsif person_hash[:page_slug]
     "/#{person_hash[:page_slug]}/##{person_hash[:slug]}"
   else
-    "/people##{person_hash[:slug]}"
+    "/all/people##{person_hash[:slug]}"
   end
 end
 
