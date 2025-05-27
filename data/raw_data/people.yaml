@@ -241,7 +241,7 @@
     - opm-foia-doge-positions
     - onboard-opm-employee-2
     name: Riccardo Biasini
-    alias: OPM-2
+    alias: OPM-02
 
 - name: Jared Birchall
   sort_name: Birchall
@@ -304,7 +304,6 @@
   - id: opm-3
     type: appointed
     agency: OPM
-    alias: OPM-3
     start_date: 2025-01-20
     start_date_truth: verified
     nte_date: 2025-07-18
@@ -325,8 +324,8 @@
     - opm-foia-doge-positions
     - onboard-opm-employee-3
     name: Akash Bobba
+    alias: OPM-03
   - id: detail-opm-education-akash-bobba
-    alias: ED-1
     type: detailed
     agency: Education
     from: OPM
@@ -340,8 +339,8 @@
     documents:
     - detail-20250212-opm-education-ed-1
     name: Akash Bobba
+    alias: ED-01
   - id: detail-opm-ssa-opm-3
-    alias: OPM-3
     type: detailed
     agency: SSA
     from: OPM
@@ -353,6 +352,7 @@
     documents:
     - detail-20250212-opm-education-ed-1
     name: Akash Bobba
+    alias: OPM-03
   - id: ssa-employee-1
     type: appointed
     documents:
@@ -370,12 +370,10 @@
     series: '0301'
     supervisory: false
     salary: "$90,025"
-    qualifications: 'Hands-on software engineer that is an expert in modern computer programming languages, cloud and other infrastructure, AI, etc. 5 years of experience using numerous computer code languages, leadership of teams in technical, software design, and infrastructure areas.
-
-      '
+    qualifications: Hands-on software engineer that is an expert in modern computer programming languages, cloud and other infrastructure, AI, etc. 5 years of experience using numerous computer code languages, leadership of teams in technical, software design, and infrastructure areas.
     agency: SSA
     name: Akash Bobba
-    alias: SSA-1
+    alias: SSA-01
 
 - name: Ashley Boizelle
   sort_name: Boizelle
@@ -777,7 +775,7 @@
     - detail-20250306-nasa-ssa-employee-2
     - onboard-ssa-employee-2
     name: Scott Coulter
-    alias: SSA-2
+    alias: SSA-02
   - id: ssa-employee-2-cio
     type: appointed
     agency: SSA
@@ -788,7 +786,7 @@
     documents:
     - onboard-ssa-employee-2
     name: Scott Coulter
-    alias: SSA-2
+    alias: SSA-02
 
 - name: Clayton Cromer
   sort_name: Cromer
@@ -988,6 +986,7 @@
     sort_date: 2025-02-14
     start_date: 2025-02-(14)~
     start_date_truth: inferred
+    table_note: no public info, but I assume this is a paid position because his detail to SSA is reimbursed
     comment: Marko is detailed from DOL to other agencies, so rehired there at some point in February
   - id: detail-dol-ssa-employee-7
     type: detailed
@@ -1002,7 +1001,7 @@
     - detail-20250317-dol-ssa-employee-7
     - onboard-ssa-employee-7
     name: Marko Elez
-    alias: SSA-7
+    alias: SSA-07
   - id: detail-dol-hhs-marko-elez
     type: detailed
     agency: HHS
@@ -1198,7 +1197,7 @@
     documents:
     - onboard-education-employee-2
     name: Conor Fennessy
-    alias: ED-2
+    alias: ED-02
   - id: internal-hhs-cms-fennessy
     type: internal
     agency: CMS
@@ -1448,7 +1447,7 @@
     documents:
     - onboard-ssa-employee-4
     name: Antonio Gracias
-    alias: SSA-4
+    alias: SSA-04
 
 - name: Michael Grimes
   sort_name: Grimes
@@ -1542,15 +1541,36 @@
   background: executive
   category: enabler
   page_slug: "/people/enabler-staff/"
+  blurb: >-
+    As a Texas oil executive with myriad investments in the field, it's clear why Tyler Hassen would want a senior role in the Department of the Interior, even though his personal connection to Musk's orbit is unknown. At DOI, Hassen has been promoted into increasingly senior roles and responsibilities
+    while being shunted into positions that do not require Senate confirmation or for him to address his vast conflicts of interest.
   positions:
-  - id: doi-hassen-acting
+  - id: doi-hassen
     type: appointed
+    start_date: 2025-01-(27)~
+    start_date_truth: inferred
+    table_note: AP reports in DOI in January, inferring before water pump stunt
+    agency: DOI
+    source: https://apnews.com/article/hassen-burgum-musk-interior-energy-conflicts-830e9df68c7869e943f96c4b5e384f20
+  - id: doi-hassen-acting
+    type: promotion
     start_date: 2025-03-07
     start_date_truth: reported
+    end_date: 2025-04-XX
+    end_date_truth: reported
     title: Acting Assistant Secretary of Policy, Management and Budget
+    table_note: ended with title change to Principal Deputy Assistant Secretary
     supervisory: true
     agency: DOI
     source: https://www.eenews.net/articles/doge-official-appointed-head-of-policy-at-interior/
+  - id: doi-hassan-principal
+    agency: DOI
+    type: promotion
+    start_date: 2025-04-XX
+    start_date_truth: reported
+    table_note: title change allows him to avoid Senate approval/ethics rules; date of change unclear
+    source: https://apnews.com/article/hassen-burgum-musk-interior-energy-conflicts-830e9df68c7869e943f96c4b5e384f20
+    supervisory: true
 
 - name: Vinay Hiremath
   sort_name: Hiremath
@@ -1591,13 +1611,14 @@
     end_date_truth: verified
     description: SES Noncareer Appt
     appt_type_code: 55
-    appt_type: 55-Noncareer (Senior Exec Perm)
+    appt_type: SES Noncareer
     pd_code: 6A38081
     title: Senior Advisor to the Director for Technology and Delivery
     pay_grade: ES-00
     salary: "$195,200"
     series: '0301'
     supervisory: true
+    table_note: ended by promotion to CIO
     office: Office of the Director
     comment: details from FOIA doucments
     documents:
@@ -1611,7 +1632,7 @@
     start_date_truth: verified
     description: SES Noncareer Appt
     appt_type_code: 55
-    appt_type: 55-Noncareer (Senior Exec Perm)
+    appt_type: SES Noncareer
     pd_code: 6A39566
     title: Chief Information OFficer
     pay_grade: ES-00
@@ -1795,6 +1816,10 @@
   age: 25
   background: coder
   category: wrecker
+  blurb: >-
+    A poster boy for DOGE's wanton cruelty and destruction, Gavin Kliger is a software developer with five years of experience who has shown a particular flair for being the face of DOGE's abuse of federal personnel. At USAID, he was the one who locked staff out of the building. At CFPB, he vandalized
+    the website and later returned to run a marathon 36-hour prep session for massive layoffs where he reportedly screamed at staff to work even harder at laying off their colleagues. Arriving at the IRS, he reportedly pulled out five different laptops from his bag to show the various agencies he had
+    been granted access to. He has since left a few of those positions – or very possibly been fired – but he still has his fingers in a lot of pies, and the collection of laptops to prove it.
   positions:
   - id: detail-opm-dhs-kliger
     type: detailed
@@ -1823,6 +1848,7 @@
     series: '0301'
     supervisory: true
     office: Office of the Director
+    table_note: hired at maximum salary for GS federal employee in DC
     comment: I confirmed he is OPM-5
     documents:
     - opm-foia-doge-positions
@@ -1864,7 +1890,7 @@
     end_date_truth: verified
     source: https://news.bloomberglaw.com/banking-law/doge-employee-leaves-cfpb-after-leading-trumps-mass-firing-plan
   - id: gavin-kliger-opm-2
-    type: appointed
+    type: promotion
     agency: OPM
     start_date: 2025-02-18
     start_date_truth: verified
@@ -1879,7 +1905,7 @@
     series: '0301'
     supervisory: true
     office: Office of the Director
-    comment: Converted from provisional to excepted position
+    comment: converted from provisional to excepted position
     documents:
     - opm-foia-doge-positions
     - onboard-opm-employee-5
@@ -1896,7 +1922,7 @@
     end_date: 2025-04-17
     end_date_truth: reported
     signed_date: 2025-02-19
-    comment: He was forcibly removed from agency on 2025-04-17
+    comment: he was forcibly removed from agency in purge by Bessent
     source: https://www.taxnotes.com/research/federal/legislative-documents/congressional-tax-correspondence/treasury-official-sends-memo-doge-detail-crapo/7rl0x
     documents:
     - gov.uscourts.nysd.636609.144.0
@@ -1949,7 +1975,7 @@
     documents:
     - onboard-ssa-employee-6
     name: Jon Koval
-    alias: SSA-6
+    alias: SSA-06
   - id: detail-ssa-doj-koval
     type: detailed
     start_date: 2025-04-15
@@ -2449,7 +2475,6 @@
     table_note: assuming start at DOL because listed later as detailee from there
   - id: detail-dol-ssa-employee-3
     type: detailed
-    alias: SSA-3
     agency: SSA
     from: DOL
     from_truth: verified
@@ -2461,6 +2486,7 @@
     - detail-20250222-dol-ssa-employee-3
     - onboard-ssa-employee-3
     name: Aram Moghaddassi
+    alias: SSA-03
   - id: detail-dol-hhs-mohgaddassi
     type: detailed
     agency: HHS
@@ -2537,7 +2563,7 @@
     documents:
     - onboard-education-employee-4
     name: Brooks Morgan
-    alias: ED-4
+    alias: ED-04
   - id: detail-education-fdic-morgan
     type: detailed
     from: Education
@@ -2693,7 +2719,7 @@
     - opm-foia-doge-positions
     - onboard-opm-employee-6
     name: Nikhil Rajpal
-    alias: OPM-6
+    alias: OPM-06
   - id: detail-opm-noaa-rajpal
     type: detailed
     from: OPM
@@ -2846,7 +2872,7 @@
     documents:
     - onboard-ssa-employee-9
     name: Payton Rehling
-    alias: SSA-9
+    alias: SSA-09
   - id: detail-ssa-doj-rehling
     type: detailed
     start_date: 2025-04-15
@@ -3147,11 +3173,11 @@
     nte_date: 2026-02-26
     nte_date_truth: verified
     reimbursed: false
-    alias: ED-3
     comment: ED-3 is Ethan Shaotran
     documents:
     - detail-20250212-gsa-education-ed-3
     name: Ethan Shaotran
+    alias: ED-03
   - id: detail-gsa-ssa-employee-10
     type: detailed
     from: GSA

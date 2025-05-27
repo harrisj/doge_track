@@ -150,6 +150,28 @@
   - DOGE
   - EOP
   obj_type: Event
+- id: 4j2BznnH
+  type: disruption
+  date: '2025-01-01'
+  sort_date: '2025-01-01'
+  time:
+  text: Tyler Hassen reviewed every single contract and grant and sent action items for review to the Secretary
+  fuzz:
+  comment:
+  source: https://apnews.com/article/hassen-burgum-musk-interior-energy-conflicts-830e9df68c7869e943f96c4b5e384f20
+  source_title: Here's what a Texas oil executive from DOGE is doing inside the Interior Department
+  source_name: AP
+  case_no:
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - DOI
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - DOI
+  obj_type: Event
 - id: KvP48A34
   type: directory
   date: '2025-01-06'
@@ -1214,7 +1236,7 @@
   agency_ids:
   - FBI
   alias_ids:
-  - id: FBI-1
+  - id: FBI-01
     agency_id: FBI
     name: Justin Monroe
     evidence: |-
@@ -1225,7 +1247,7 @@
     slug: justin-monroe
     sort_name: Monroe
     category: wrecker
-    alias: FBI-1
+    alias: FBI-01
   agencies_parents:
   - FBI
   - DOJ
@@ -6210,7 +6232,7 @@
   agency_ids:
   - SSA
   alias_ids:
-  - id: SSA-5
+  - id: SSA-05
     agency_id: SSA
     name:
     evidence: |-
@@ -6221,8 +6243,8 @@
     slug: leland-dudek
     sort_name: Dudek
     category: enabler
-  - alias: SSA-5
-    sort_name: ZZZ-SSA-5
+  - alias: SSA-05
+    sort_name: ZZZ-SSA-05
   agencies_parents:
   - SSA
   obj_type: Event
@@ -7897,7 +7919,7 @@
   agency_ids:
   - SSA
   alias_ids:
-  - id: SSA-1
+  - id: SSA-01
     agency_id: SSA
     name: Akash Bobba
     evidence: |-
@@ -7907,7 +7929,7 @@
       - Software engineer with 5 years of experience and some leadership experience
       - Date matches Akash Bobba start
       - [Akash Bobba's resume](https://www.documentcloud.org/documents/25940536-25-hq-0774-f-resumes-redacted-3/) lists 5 years of engineering experience and leadership skills
-  - id: SSA-2
+  - id: SSA-02
     agency_id: SSA
     name: Scott Coulter
     evidence: |-
@@ -7916,7 +7938,7 @@
       - Scott Coulter is identified at SSA on 2025-03-13
       - Signed SF-61 as CIO of SSA on 2025-03-24
       - Scott Coulter was named the CIO of SSA on 2025-03-24
-  - id: SSA-3
+  - id: SSA-03
     agency_id: SSA
     name: Aram Moghaddassi
     evidence: |-
@@ -7926,29 +7948,29 @@
       - Cole Killian another possibility, but he appears to be a volunteer SGE
       - Flick testimony - "_we began onboarding and training Employee 3, a Schedule C Policy Advisor, detailed from the Department of Labor to SSA_" with it finalized on February 22. "_His duties currently relate to improper payments and SSA's Death Master File._"
       - Aram was linked to changed to the Death Master File on the week of 2025-04-08
-  - id: SSA-4
+  - id: SSA-04
     agency_id: SSA
     name: Antonio Gracias
     evidence: "- [NPR has done analysis on docs to identify directly](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
-  - id: SSA-5
+  - id: SSA-05
     agency_id: SSA
     name:
     evidence: |-
       - Onboarded as a volunteer on 2025-02-18 as a detail from the DOGE service
       - Flick testimony - SSA began onboarding and training Employee 5, an engineer, detailed from the United States DOGE Service to SSA" with an inter-agency agreement to DOGE.
-  - id: SSA-6
+  - id: SSA-06
     agency_id: SSA
     name: Jon Koval
     evidence: "- [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
-  - id: SSA-7
+  - id: SSA-07
     agency_id: SSA
     name: Marko Elez
     evidence: "- [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
-  - id: SSA-8
+  - id: SSA-08
     agency_id: SSA
     name:
     evidence: "- All I have tor this one is a signed SF-61. They are an employee of SSA"
-  - id: SSA-9
+  - id: SSA-09
     agency_id: SSA
     name: Payton Rehling
     evidence: |-
@@ -7967,46 +7989,46 @@
     slug: akash-bobba
     sort_name: Bobba
     category: wrecker
-    alias: SSA-1
+    alias: SSA-01
   - name: Scott Coulter
     slug: scott-coulter
     sort_name: Coulter
     category: enabler
-    alias: SSA-2
+    alias: SSA-02
   - name: Marko Elez
     slug: marko-elez
     sort_name: Elez
     category: wrecker
-    alias: SSA-7
+    alias: SSA-07
   - name: Antonio Gracias
     slug: antonio-gracias
     sort_name: Gracias
     category: leadership
-    alias: SSA-4
+    alias: SSA-04
   - name: Jon Koval
     slug: jon-koval
     sort_name: Koval
     category: wrecker
-    alias: SSA-6
+    alias: SSA-06
   - name: Aram Moghaddassi
     slug: aram-mohghaddassi
     sort_name: Moghaddassi
     category: wrecker
-    alias: SSA-3
+    alias: SSA-03
   - name: Payton Rehling
     slug: payton-rehling
     sort_name: Rehling
     category: wrecker
-    alias: SSA-9
+    alias: SSA-09
   - name: Ethan Shaotran
     slug: ethan-shaotran
     sort_name: Shaotran
     category: wrecker
     alias: SSA-10
-  - alias: SSA-5
-    sort_name: ZZZ-SSA-5
-  - alias: SSA-8
-    sort_name: ZZZ-SSA-8
+  - alias: SSA-05
+    sort_name: ZZZ-SSA-05
+  - alias: SSA-08
+    sort_name: ZZZ-SSA-08
   agencies_parents:
   - SSA
   obj_type: Event
@@ -8352,15 +8374,15 @@
   agency_ids:
   - SSA
   alias_ids:
-  - id: SSA-5
+  - id: SSA-05
     agency_id: SSA
     name:
     evidence: |-
       - Onboarded as a volunteer on 2025-02-18 as a detail from the DOGE service
       - Flick testimony - SSA began onboarding and training Employee 5, an engineer, detailed from the United States DOGE Service to SSA" with an inter-agency agreement to DOGE.
   names_aliases:
-  - alias: SSA-5
-    sort_name: ZZZ-SSA-5
+  - alias: SSA-05
+    sort_name: ZZZ-SSA-05
   agencies_parents:
   - SSA
   obj_type: Event
@@ -9023,7 +9045,7 @@
   agency_ids:
   - SSA
   alias_ids:
-  - id: SSA-9
+  - id: SSA-09
     agency_id: SSA
     name: Payton Rehling
     evidence: |-
@@ -9034,7 +9056,7 @@
     slug: payton-rehling
     sort_name: Rehling
     category: wrecker
-    alias: SSA-9
+    alias: SSA-09
   agencies_parents:
   - SSA
   obj_type: Event
@@ -10169,7 +10191,7 @@
   agency_ids:
   - SSA
   alias_ids:
-  - id: SSA-1
+  - id: SSA-01
     agency_id: SSA
     name: Akash Bobba
     evidence: |-
@@ -10179,17 +10201,17 @@
       - Software engineer with 5 years of experience and some leadership experience
       - Date matches Akash Bobba start
       - [Akash Bobba's resume](https://www.documentcloud.org/documents/25940536-25-hq-0774-f-resumes-redacted-3/) lists 5 years of engineering experience and leadership skills
-  - id: SSA-5
+  - id: SSA-05
     agency_id: SSA
     name:
     evidence: |-
       - Onboarded as a volunteer on 2025-02-18 as a detail from the DOGE service
       - Flick testimony - SSA began onboarding and training Employee 5, an engineer, detailed from the United States DOGE Service to SSA" with an inter-agency agreement to DOGE.
-  - id: SSA-8
+  - id: SSA-08
     agency_id: SSA
     name:
     evidence: "- All I have tor this one is a signed SF-61. They are an employee of SSA"
-  - id: SSA-9
+  - id: SSA-09
     agency_id: SSA
     name: Payton Rehling
     evidence: |-
@@ -10200,7 +10222,7 @@
     slug: akash-bobba
     sort_name: Bobba
     category: wrecker
-    alias: SSA-1
+    alias: SSA-01
   - name: Leland Dudek
     slug: leland-dudek
     sort_name: Dudek
@@ -10209,11 +10231,11 @@
     slug: payton-rehling
     sort_name: Rehling
     category: wrecker
-    alias: SSA-9
-  - alias: SSA-5
-    sort_name: ZZZ-SSA-5
-  - alias: SSA-8
-    sort_name: ZZZ-SSA-8
+    alias: SSA-09
+  - alias: SSA-05
+    sort_name: ZZZ-SSA-05
+  - alias: SSA-08
+    sort_name: ZZZ-SSA-08
   agencies_parents:
   - SSA
   obj_type: Event
@@ -14227,6 +14249,28 @@
   names_aliases: []
   agencies_parents:
   - USDA
+  obj_type: Event
+- id: 7456Y62T
+  type: official
+  date: '2025-05-05'
+  sort_date: '2025-05-05'
+  time:
+  text: DOI extends its freeze on issuing any new regulation out to June 4
+  fuzz:
+  comment:
+  source: https://www.federalregister.gov/documents/2025/05/05/2025-07725/practices-before-the-department-of-the-interior-delay-of-effective-date
+  source_title:
+  source_name: Federal Register
+  case_no:
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - DOI
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - DOI
   obj_type: Event
 - id: 7AiK0YC5
   type: official

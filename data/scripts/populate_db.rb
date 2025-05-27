@@ -65,6 +65,8 @@ def create_event(event_hash)
 
   event_hash.fetch(:named_aliases, []).each do |doge_alias_id|
     a = DogeAlias[doge_alias_id]
+    raise "Couldn't find alias #{doge_alias_id} in event" if a.nil?
+
     e.add_doge_alias(a)
     names.append(a.name) if a.name
   end

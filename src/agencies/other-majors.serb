@@ -1,18 +1,51 @@
 ---
 title: Other Major Agencies
+template: page
 ---
-{%@ 'text' do %}
-# Agriculture
 
-# Central Intelligence Agency (CIA)
-
-# Defense
-
-# Energy
-
-# Transportation
-
-# US Postal Service
-
-# Veterans Administration
+{% blurb = capture do %}
+TKTK
 {% end %}
+{%@ 'agency_page_generic', id: 'USDA', blurb: blurb %}
+
+<hr/>
+
+{% blurb = capture do %}
+TKTK
+{% end %}
+{%@ 'agency_page_generic', id: 'CIA', blurb: blurb %}
+
+<hr/>
+
+{% blurb = capture do %}
+TKTK
+{% end %}
+{%@ 'agency_page_generic', id: 'DOD', blurb: blurb %}
+
+<hr/>
+
+{% blurb = capture do %}
+TKTK
+{% end %}
+{%@ 'agency_page_generic', id: 'Energy', blurb: blurb %}
+
+<hr/>
+
+{% blurb = capture do %}
+TKTK
+{% end %}
+{%@ 'agency_page_generic', id: 'DOT', blurb: blurb %}
+
+<hr/>
+
+{% blurb = capture do %}
+TKTK
+{% end %}
+{%@ 'agency_page_generic', id: 'USPS', blurb: blurb %}
+
+<hr/>
+
+{% blurb = capture do %}
+TKTK
+{% end %}
+{%@ 'agency_page_generic', id: 'VA', blurb: blurb %}

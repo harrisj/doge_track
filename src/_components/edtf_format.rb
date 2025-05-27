@@ -17,7 +17,7 @@ class EdtfFormat
   def display_exact
     case @format
     when :compact
-      "#{'  ' if fill?}#{@date.strftime('%m/%d')}"
+      "#{'  ' if fill?}#{@date.strftime('%-m/%d')}"
     when :iso
       "#{'  ' if fill?}#{@date.strftime('%Y-%m-%d')}"
     when :human
@@ -31,7 +31,7 @@ class EdtfFormat
     humanized = "Sometime in #{@date.strftime('%b %Y')}"
     case @format
     when :compact
-      "#{'  ' if fill?}<abbr title=\"#{humanized}\">#{@date.strftime('%m-XX')}</abbr>"
+      "#{'  ' if fill?}<abbr title=\"#{humanized}\">#{@date.strftime('%-m/XX')}</abbr>"
     when :iso
       "#{'  ' if fill?}<abbr title=\"#{humanized}\">#{@date.strftime('%Y-%m-XX')}</abbr>"
     when :human
@@ -44,7 +44,7 @@ class EdtfFormat
 
     case @format
     when :compact
-      "<abbr title=\"#{humanized}\">#{@date.strftime('c.%m/%d')}</abbr>"
+      "<abbr title=\"#{humanized}\">#{@date.strftime('c.%-m/%d')}</abbr>"
     when :iso
       "<abbr title=\"#{humanized}\">c.#{@date}</abbr>"
     when :human

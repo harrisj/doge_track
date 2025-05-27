@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=../schemas/aliases-file.json
 ---
 
-- id: CFPB-1
+- id: CFPB-01
   agency: CFPB
   name: Gavin Kliger
   evidence:
@@ -10,7 +10,7 @@
   - In the declaration, Mr. Farritor used Entra ID to provide access to a member of the DOGE Team who is not a DOGE Employee to the systems necessary to update the CFPB's public-facing website.
   - Gavin Kliger is the only developer of those two
 
-- id: CFPB-2
+- id: CFPB-02
   agency: CFPB
   name: Jeremy Lewin
   evidence:
@@ -19,7 +19,7 @@
   - Based on reporting, Gavin Kliger and Jeremy Lewin were the other DOGE staff at the agency at the time of this action
   - Gavin Kliger has already been unmasked as CFPB-1
 
-- id: ED-1
+- id: ED-01
   agency: Education
   name: Akash Bobba
   evidence:
@@ -29,7 +29,6 @@
   - In a separate document in filing from OPM, Akash Bobba is listed as the only person from OPM and with a start date of 2025-02-03
   positions:
   - id: detail-opm-education-akash-bobba
-    alias: ED-1
     type: detailed
     agency: Education
     from: OPM
@@ -43,7 +42,7 @@
     documents:
     - detail-20250212-opm-education-ed-1
 
-- id: ED-2
+- id: ED-02
   agency: Education
   name: Conor Fennessy
   evidence:
@@ -67,7 +66,7 @@
     documents:
     - onboard-education-employee-2
 
-- id: ED-3
+- id: ED-03
   agency: Education
   name: Ethan Shaotran
   evidence:
@@ -87,12 +86,11 @@
     nte_date: 2026-02-26
     nte_date_truth: verified
     reimbursed: false
-    alias: ED-3
     comment: ED-3 is Ethan Shaotran
     documents:
     - detail-20250212-gsa-education-ed-3
 
-- id: ED-4
+- id: ED-04
   agency: Education
   name: Brooks Morgan
   evidence:
@@ -111,19 +109,18 @@
     documents:
     - onboard-education-employee-4
 
-- id: FBI-1
+- id: FBI-01
   agency: FBI
   name: Justin Monroe
   evidence:
   - This person isn't named in the original NBC News report
   - But they're identified specifically in a ProPublica roundup as being this person
 
-- id: OPM-2
+- id: OPM-02
   agency: OPM
   name: Riccardo Biasini
   evidence:
   - Onboarded on 2025-01-20 as a volunteer SGE
-  - This is likely one of the other young DOGE crew like Jordan Wick or Luke Farritor, etc.
   - PD Number 6A39741 in redacted documents matches one for Riccard Biasini in a FOIA release from OPM
   positions:
   - id: opm-employee-2
@@ -150,7 +147,7 @@
     - opm-foia-doge-positions
     - onboard-opm-employee-2
 
-- id: OPM-3
+- id: OPM-03
   agency: OPM
   name: Akash Bobba
   evidence:
@@ -162,7 +159,6 @@
   - id: opm-3
     type: appointed
     agency: OPM
-    alias: OPM-3
     start_date: 2025-01-20
     start_date_truth: verified
     nte_date: 2025-07-18
@@ -183,7 +179,6 @@
     - opm-foia-doge-positions
     - onboard-opm-employee-3
   - id: detail-opm-ssa-opm-3
-    alias: OPM-3
     type: detailed
     agency: SSA
     from: OPM
@@ -195,14 +190,14 @@
     documents:
     - detail-20250212-opm-education-ed-1
 
-- id: OPM-4
+- id: OPM-04
   agency: OPM
   evidence:
   - Onboarded on 2025-01-24 as a volunteer SGE with the title Expert
   - Only person onboarded as an expert on 2025-01-24 was Nikhil Rajpal, but he's a match for OPM-6
   - Possibly someone doing the affadavit late (3 other experts on 2025-01-20
 
-- id: OPM-5
+- id: OPM-05
   agency: OPM
   name: Gavin Kliger
   evidence:
@@ -212,7 +207,7 @@
   - GS-15/10 with pay of $195,200
   - Converted to an excepted appointment on 2025-02-18
 
-- id: OPM-6
+- id: OPM-06
   agency: OPM
   name: Nikhil Rajpal
   evidence:
@@ -241,7 +236,7 @@
     - opm-foia-doge-positions
     - onboard-opm-employee-6
 
-- id: SSA-1
+- id: SSA-01
   agency: SSA
   name: Akash Bobba
   evidence:
@@ -269,62 +264,10 @@
     series: '0301'
     supervisory: false
     salary: "$90,025"
-    qualifications: 'Hands-on software engineer that is an expert in modern computer programming languages, cloud and other infrastructure, AI, etc. 5 years of experience using numerous computer code languages, leadership of teams in technical, software design, and infrastructure areas.
-
-      '
+    qualifications: Hands-on software engineer that is an expert in modern computer programming languages, cloud and other infrastructure, AI, etc. 5 years of experience using numerous computer code languages, leadership of teams in technical, software design, and infrastructure areas.
     agency: SSA
 
-- id: SSA-10
-  agency: SSA
-  name: Ethan Shaotran
-  evidence:
-  - Onboarded as a volunteer on 2025-02-18 as a detail from the GSA
-  - Flick testimony - Employee 10, a software engineer, was detailed from the Office of the Administrator at the General Services Administration to SSA"
-  - Ethan Shaotran was also detailed from GSA to USADF as an unpaid GSE on 2025-02-21
-  - Ethan Shaotran is identified for the first time at SSA on 2025-02-20
-  positions:
-  - id: detail-gsa-ssa-employee-10
-    type: detailed
-    from: GSA
-    from_truth: verified
-    agency: SSA
-    signed_date: 2025-02-18
-    start_date: 2025-02-18
-    start_date_truth: verified
-    nte_date: 2026-02-26
-    nte_date_truth: verified
-    reimbursed: false
-    documents:
-    - onboard-ssa-employee-10
-
-- id: SSA-11
-  agency: SSA
-  evidence:
-  - Started as a paid staffer at SSA on 2025-03-16
-  - Has 10 years of software development experience in geospatial software
-  - Unclear if this matches the DOGE people we know
-  positions:
-  - id: ssa-employee-11
-    type: appointed
-    alias: SSA-11
-    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
-    start_date: 2025-03-16
-    start_date_truth: verified
-    nte_date: 2026-03-15
-    nte_date_truth: verified
-    title: Expert
-    office: Office of the Chief Information Officer
-    pay_grade: ED-00
-    salary: "$162672"
-    pd_code: KNX0390
-    qualifications: >
-      is a Senior Software Engineer with over ten years of experience building cloud-native geospatial  solutions. Adept at architecting geospatial infrastructures, implementing geospatial algorithms, and leading full- stack development. Experienced in collaborating with cross-functional teams to deliver
-      mission-critical capabilities  and driving technical decisions and best practices.
-    agency: SSA
-    documents:
-    - onboard-ssa-employee-11
-
-- id: SSA-2
+- id: SSA-02
   agency: SSA
   name: Scott Coulter
   evidence:
@@ -362,7 +305,7 @@
     documents:
     - onboard-ssa-employee-2
 
-- id: SSA-3
+- id: SSA-03
   agency: SSA
   name: Aram Moghaddassi
   evidence:
@@ -375,7 +318,6 @@
   positions:
   - id: detail-dol-ssa-employee-3
     type: detailed
-    alias: SSA-3
     agency: SSA
     from: DOL
     from_truth: verified
@@ -387,7 +329,7 @@
     - detail-20250222-dol-ssa-employee-3
     - onboard-ssa-employee-3
 
-- id: SSA-4
+- id: SSA-04
   agency: SSA
   name: Antonio Gracias
   evidence:
@@ -412,7 +354,7 @@
     documents:
     - onboard-ssa-employee-4
 
-- id: SSA-5
+- id: SSA-05
   agency: SSA
   evidence:
   - Onboarded as a volunteer on 2025-02-18 as a detail from the DOGE service
@@ -429,7 +371,7 @@
     documents:
     - onboard-ssa-employee-5
 
-- id: SSA-6
+- id: SSA-06
   agency: SSA
   name: Jon Koval
   evidence:
@@ -451,7 +393,7 @@
     documents:
     - onboard-ssa-employee-6
 
-- id: SSA-7
+- id: SSA-07
   agency: SSA
   name: Marko Elez
   evidence:
@@ -470,7 +412,7 @@
     - detail-20250317-dol-ssa-employee-7
     - onboard-ssa-employee-7
 
-- id: SSA-8
+- id: SSA-08
   agency: SSA
   evidence:
   - All I have tor this one is a signed SF-61. They are an employee of SSA
@@ -485,12 +427,11 @@
     nte_date: 2026-02-26
     nte_date_truth: verified
     reimbursed: false
-    alias: SSA-8
     documents:
     - detail-20250226-opm-ssa-employee-8
     - onboard-ssa-employee-8
 
-- id: SSA-9
+- id: SSA-09
   agency: SSA
   name: Payton Rehling
   evidence:
@@ -512,3 +453,52 @@
     description: Excepted Appointment NTE
     documents:
     - onboard-ssa-employee-9
+
+- id: SSA-10
+  agency: SSA
+  name: Ethan Shaotran
+  evidence:
+  - Onboarded as a volunteer on 2025-02-18 as a detail from the GSA
+  - Flick testimony - Employee 10, a software engineer, was detailed from the Office of the Administrator at the General Services Administration to SSA"
+  - Ethan Shaotran was also detailed from GSA to USADF as an unpaid GSE on 2025-02-21
+  - Ethan Shaotran is identified for the first time at SSA on 2025-02-20
+  positions:
+  - id: detail-gsa-ssa-employee-10
+    type: detailed
+    from: GSA
+    from_truth: verified
+    agency: SSA
+    signed_date: 2025-02-18
+    start_date: 2025-02-18
+    start_date_truth: verified
+    nte_date: 2026-02-26
+    nte_date_truth: verified
+    reimbursed: false
+    documents:
+    - onboard-ssa-employee-10
+
+- id: SSA-11
+  agency: SSA
+  evidence:
+  - Started as a paid staffer at SSA on 2025-03-16
+  - Has 10 years of software development experience in geospatial software
+  - Unclear if this matches the DOGE people we know
+  positions:
+  - id: ssa-employee-11
+    type: appointed
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    start_date: 2025-03-16
+    start_date_truth: verified
+    nte_date: 2026-03-15
+    nte_date_truth: verified
+    title: Expert
+    office: Office of the Chief Information Officer
+    pay_grade: ED-00
+    salary: "$162672"
+    pd_code: KNX0390
+    qualifications: >
+      is a Senior Software Engineer with over ten years of experience building cloud-native geospatial  solutions. Adept at architecting geospatial infrastructures, implementing geospatial algorithms, and leading full- stack development. Experienced in collaborating with cross-functional teams to deliver
+      mission-critical capabilities  and driving technical decisions and best practices.
+    agency: SSA
+    documents:
+    - onboard-ssa-employee-11

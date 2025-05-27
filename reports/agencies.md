@@ -146,10 +146,12 @@
 # Department of the Interior
 - slug: interior
 - people:
+  - **Tyler Hassen** (2025-01-(27)~)
   - **Stephanie Holmes** (2025-02-24) Special Advisor / Acting Chief Human Capital Officer (detailed from DOGE)
   - **Katrine Trampe** (2025-03-05)
-  - **Tyler Hassen** (2025-03-07) Acting Assistant Secretary of Policy, Management and Budget
+  - **Tyler Hassen** (2025-03-07 - 2025-04-XX) Acting Assistant Secretary of Policy, Management and Budget
   - **Matt Luby** (2025-04-17)
+  - **Tyler Hassen** (2025-04-XX)
 - systems:
     - FPPS: Federal Personnel Payroll System
         - Stephanie Holmes **[admin access]** 2025-03-29 - ongoing
@@ -209,11 +211,11 @@
 - people:
   - **Jennifer Balajadia**
   - **Adam Ramada** (2025-01-28) (detailed from DOGE)
-  - **ED-2 (Conor Fennessy)** (2025-01-31) Senior Advisor
-  - **ED-1 (Akash Bobba)** (2025-02-03) (detailed from OPM)
-  - **ED-4 (Brooks Morgan)** (2025-02-04)
+  - **ED-02 (Conor Fennessy)** (2025-01-31) Senior Advisor
+  - **ED-01 (Akash Bobba)** (2025-02-03) (detailed from OPM)
+  - **ED-04 (Brooks Morgan)** (2025-02-04)
   - **Alexandra Beynon** (2025-02-05) (detailed from DOGE)
-  - **ED-3 (Ethan Shaotran)** (2025-02-12) (detailed from GSA)
+  - **ED-03 (Ethan Shaotran)** (2025-02-12) (detailed from GSA)
   - **Edward Coristine** (2025-02-20) (detailed from GSA)
   - **Jordan Wick** (2025-02-20) (detailed from DOGE)
 - systems:
@@ -595,9 +597,9 @@
 - people:
   - **Edward Coristine** (2025-01-(28)~) (detailed from GSA)
   - **Anthony Armstrong** (2025-01-20) Expert
-  - **OPM-2 (Riccardo Biasini)** (2025-01-20) Expert
+  - **OPM-02 (Riccardo Biasini)** (2025-01-20) Expert
   - **Brian Bjelde** (2025-01-20) Expert
-  - **OPM-3 (Akash Bobba)** (2025-01-20) Expert
+  - **OPM-03 (Akash Bobba)** (2025-01-20) Expert
   - **Clayton Cromer** (2025-01-20) Deputy General Counsel
   - **Noah Peters** (2025-01-20) Senior Advisor
   - **Joanna Wischer** (2025-01-20) Senior Advisor to the Director
@@ -606,7 +608,7 @@
   - **Gavin Kliger** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
   - **Charles Ezell** (2025-01-20) Acting Director
   - **Jacob Altik** (2025-01-24) Senior Advisor to the Director
-  - **OPM-6 (Nikhil Rajpal)** (2025-01-24) Expert
+  - **OPM-06 (Nikhil Rajpal)** (2025-01-24) Expert
   - **Justin Monroe** (2025-01-28) Expert
   - **Christopher Stanley** (2025-01-28) Expert
   - **Chris Young** (2025-01-30) Expert
@@ -645,43 +647,43 @@
 - people:
   - **Mike Russo** (2025-01-31 - 2024-03-24) Chief Information Officer
   - **Cole Killian** (2025-02-(20)~)
-  - **OPM-3 (Akash Bobba)** (2025-02-03) (detailed from OPM)
-  - **SSA-1 (Akash Bobba)** (2025-02-09) Expert
+  - **OPM-03 (Akash Bobba)** (2025-02-03) (detailed from OPM)
+  - **SSA-01 (Akash Bobba)** (2025-02-09) Expert
   - **Leland Dudek** (2025-02-16 - 2025-05-06) Acting Commissioner
-  - **SSA-7 (Marko Elez)** (2025-02-18) (detailed from DOL)
-  - **SSA-2 (Scott Coulter)** (2025-02-18 - 2025-03-23) (detailed from NASA)
-  - **SSA-5** (2025-02-18) (detailed from DOGE)
+  - **SSA-02 (Scott Coulter)** (2025-02-18 - 2025-03-23) (detailed from NASA)
   - **SSA-10 (Ethan Shaotran)** (2025-02-18) (detailed from GSA)
-  - **SSA-3 (Aram Moghaddassi)** (2025-02-22) (detailed from DOL)
-  - **SSA-4 (Antonio Gracias)** (2025-02-23) Expert
-  - **SSA-6 (Jon Koval)** (2025-02-23) Expert
-  - **SSA-9 (Payton Rehling)** (2025-02-23) Expert
+  - **SSA-05** (2025-02-18) (detailed from DOGE)
+  - **SSA-07 (Marko Elez)** (2025-02-18) (detailed from DOL)
+  - **SSA-03 (Aram Moghaddassi)** (2025-02-22) (detailed from DOL)
+  - **SSA-04 (Antonio Gracias)** (2025-02-23) Expert
+  - **SSA-06 (Jon Koval)** (2025-02-23) Expert
+  - **SSA-09 (Payton Rehling)** (2025-02-23) Expert
   - **Mark Steffensen** (2025-02-25 - 2025-02-27) Senior Advisor
-  - **SSA-8** (2025-02-26) (detailed from OPM)
+  - **SSA-08** (2025-02-26) (detailed from OPM)
   - **Mark Steffensen** (2025-02-27) Acting General Counsel
   - **SSA-11** (2025-03-16) Expert
-  - **SSA-2 (Scott Coulter)** (2025-03-24) Chief Information Officer
+  - **SSA-02 (Scott Coulter)** (2025-03-24) Chief Information Officer
   - **Mike Russo** (2025-03-25) Senior Advisor
   - **Leland Dudek** (2025-05-06)
   - **Frank Bisignano** (2025-05-06) Commissioner
 - systems:
     - IRON Website
-        - SSA-5 2025-03-12 - ongoing
+        -  2025-03-12 - ongoing
     - MBR: Master Beneficiary Record
-        - {sr.doge_alias_id} (Jon Koval) 2025-03-17 - ongoing
-        - {sr.doge_alias_id} (Marko Elez) 2025-03-17 - ongoing
-        - {sr.doge_alias_id} (Payton Rehling) 2025-03-17 - ongoing
+        -  2025-03-17 - ongoing
+        -  2025-03-17 - ongoing
+        -  2025-03-17 - ongoing
     - NUMIDENT: NUMIDENT files
         - Akash Bobba 2025-02-10 - ongoing
-        - {sr.doge_alias_id} (Jon Koval) 2025-03-17 - ongoing
-        - {sr.doge_alias_id} (Marko Elez) 2025-03-17 - ongoing
-        - {sr.doge_alias_id} (Payton Rehling) 2025-03-17 - ongoing
+        -  2025-03-17 - ongoing
+        -  2025-03-17 - ongoing
+        -  2025-03-17 - ongoing
     - PSSNAP: PSSNAP
-        - {sr.doge_alias_id} (Payton Rehling) 2025-03-14 - ongoing
+        -  2025-03-14 - ongoing
     - SSR: Supplemental Security Record master records
-        - {sr.doge_alias_id} (Jon Koval) 2025-03-17 - ongoing
-        - {sr.doge_alias_id} (Marko Elez) 2025-03-17 - ongoing
-        - {sr.doge_alias_id} (Payton Rehling) 2025-03-17 - ongoing
+        -  2025-03-17 - ongoing
+        -  2025-03-17 - ongoing
+        -  2025-03-17 - ongoing
 
 # State Department
 - slug: state
@@ -739,7 +741,7 @@
         - Aram Moghaddassi 2025-03-17 - ongoing
         - Payton Rehling 2025-03-25 - ongoing
     - SAVE: SAVE
-        - {sr.doge_alias_id} (Marko Elez) 2025-03-15 - ongoing
+        -  2025-03-15 - ongoing
     - DBIS: USCIS Data Business Intelligence Services
         - Aram Moghaddassi 2025-03-17 - ongoing
         - Payton Rehling 2025-03-25 - ongoing

@@ -7,11 +7,9 @@ title: Enablers
 
 {%@ 'text' do %}
 
-TKTK Inside men
-
+DOGE are not a collection of super-hackers. They don't trick their way into agencies through side doors. Rather, they are almost always invited in by a senior leader who authorizes them with wide-ranging access and supports them if they need to steamroll any opposition. I call this category enablers, and they aren't always DOGE associates (for instance, Marco Rubio or other appointees are often enablers). This page doesn't list all the enablers for DOGE's activities in the federal government, but it does list those that come from within DOGE's orbit.
 
 ## Acting Leadership
-
 {% acting = site.data.positions.select { |p| p.title =~ /acting/i }.sort_by(&:sort_date) %}
 
 <table class="table table-xs sm:table-sm md:table-md">
@@ -35,6 +33,15 @@ TKTK Inside men
 </tbody>
 </table>
 
+In one of its more novel tactics, the Trump Administration has repeatedly used acting directors as the mechanisms of agency destruction. Because many agency directors require Senate confirmation before they can be appointed and this process takes time, the Vacancies Act was passed to ensure continuity of operations when during a change of administration or when an agency leadership position is vacated. This act allows the President to name people as "acting" directors or other positions who are granted full powers until a Senate-confirmed appointee can be sworn in. The Vacancies Act does set some conditions for who can serve as acting directors:
+
+By default, the "first assistant to the office" (i.e., the deputy director) fills the position
+However, the President may direct a person serving in a different Senate-confirmed position to serve as the acting officer
+Alternatively, the President can select a senior officer of the same agency to be acting director, provided they are at a certain high level and have been at the agency for more than 90 days
+In the past, Acting Directors have largely acted as custodial roles, ensuring the operations of the agency continue but usually not making any major changes, since they are filling the seat until the real director can come in. The general assumption has been that agency directors would feel some loyalty to their staff or responsibility to be good stewards of the agency that has been entrusted to their care. The standard practice before this year for government transitions has been that an agency head appointed by the previous administration resigns on Inauguration Day and their deputy or another designee identified during the Presidential transition then serves as acting director until a permanent appointee is sworn in. To give an idea, here is the list of acting officials on January 20th, almost all of whom were current acting officials.
+
+The Trump administration has dramatically upended this practice, using Acting Directors as a way to significantly change or even completely demolish other agencies. For the destruction of {{ agency_link('USAID') }}, Trump fired the agency's acting head and then declared the recently appointed Secretary of State, Marco Rubio, as the new acting director. Rubio then authorized all the activities of DOGE to demolish the agency. Similarly, within hours of being sworn in as director of the OMB, {{ person_link('Russell Vought') }} was named the acting director of the {{ agency_link('CFPB') }} and ordered similar actions. This tactic has been instrumental in the DOGE takeover at many agencies - in their first acts, the acting directors usually order that DOGE staff are given superuser access and that normal processes for approval should be bypassed and staff be placed on administrative leave so they can't prevent or observe what is happening. It's a bit like a bank heist where the branch manager is spearheading the crime.
+
 ## Chief Information Officers
 
 {% cios = site.data.positions.select {|p| p.title == "Chief Information Officer" } %}
@@ -43,8 +50,8 @@ TKTK Inside men
   <tr>
     <th>Name</th>
     <th>Agency</th>
-    <th>Title</th>
     <th>Date</th>
+    <th>Notes</th>
   </tr>
 </thead>
 <tbody>
@@ -52,8 +59,8 @@ TKTK Inside men
   <tr>
     <td>{{ person_link(pos.name) }}</td>
     <td>{{ agency_link(pos.agency_id)}}</td>
-    <td>{{ pos.title }}</td>
     <td>{{render EdtfFormat.new(pos.start_date, :compact, :filled) }}</td>
+    <td>{{ position_summary(pos) | md }}</td>
   </tr>
 {% end %}
 </tbody>
@@ -66,4 +73,12 @@ So, it;s no surprises that DOGE's work started with replacing CIOs in some key a
 > the Secretary of Labor and the Secretary's designees shall receive, to the maximum extent consistent with law, unfettered access to all unemployment data and related payment records, including all such data and records currently available to the Department of Labor's Office of Inspector General.
 
 Despite the order here, this data was still considered so highly sensitive that DOL counsel determined that access would need to be explicitly granted by the agency CIO. Conveniently enough, the agency had just appointed a brand new CIO a week before. His name? {{ person_link('Thomas Shedd') }}.
+{% end %}
+
+## All Enablers
+
+{% people = site.data.people.select {|p| p.category == 'enabler'}.sort_by(&:sort_name) %}
+
+{% people.each do |person| %}
+  {%@ "people_page_person", person: person %}
 {% end %}

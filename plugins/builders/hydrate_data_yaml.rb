@@ -40,14 +40,14 @@ module Builders
 
     def hydrate_aliases(site)
       site.data.aliases.each do |a|
-        a.events = a.events.map { |e_id| lookup_event(e_id) }
+        a.events = a.event_ids.map { |e_id| lookup_event(e_id) }
+        a.positions = a.position_ids.map { |p_id| lookup_position(p_id) }
       end
     end
 
     def hydrate_positions(site)
       site.data.positions.each do |pos|
         pos.person = lookup_person(pos.name) unless pos.name.nil?
-        pos.alias = lookup_alias(pos.doge_alias_id) unless pos.doge_alias_id.blank?
         # pos.agency = lookup_agency(pos.agency_id) unless pos.agency_id.blank?
         # pos.from_agency = lookup_agency(pos.from_agency_id) unless pos.from_agency_id.blank?
       end

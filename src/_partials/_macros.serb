@@ -1,4 +1,9 @@
 
+{% macro "md" do |text|
+    markdownify(text).gsub(/^<p>/, '').gsub(/<p>$/, '').html_safe
+  end
+%}
+
 {% macro "find_person" do |p_id|
     if p_id.is_a?(String)
       site.data.people.find {|p| p.name.downcase == p_id || p.slug == p_id || p.sort_name.downcase == p_id.downcase }
@@ -283,7 +288,7 @@ end %}
 
 {% macro 'position_summary' do |pos|
     if pos.doge_alias_id && pos.name
-      alias_ident_str = "<strong>[as #{pos.doge_alias_id}]</strong>"
+      alias_ident_str = "**[as [#{pos.doge_alias_id}](/people/aliases##{pos.doge_alias_id})]**"
     end
 
     type_str = case pos.type
@@ -301,7 +306,7 @@ end %}
 
     title_str = ""
     if pos.title
-      title_str += " <strong>#{pos.title}</strong>"
+      title_str += " **#{pos.title}**"
 
       if pos.office
         title_str += " (#{pos.office})"
@@ -316,8 +321,8 @@ end %}
       pos.supervisory ? 'supervisory' : nil,
       pos.excepted ? 'excepted' : nil ,
       pos.salary == "$0" ? "volunteer" : nil ,
-      pos.salary && pos.salary != '$0' ? "<strong>#{pos.salary} annually</strong>" : nil,
-      pos.reimbursement_amount ? "reimbursed <strong>#{pos.reimbursement_amount}</strong>" : nil
+      pos.salary && pos.salary != '$0' ? "**#{pos.salary} annually**" : nil,
+      pos.reimbursement_amount ? "reimbursed **#{pos.reimbursement_amount}**" : nil
     ].compact
 
     if hire_details.any?
@@ -331,7 +336,7 @@ end %}
     out_str = [alias_ident_str, type_str, title_str, hire_str, note_str].map {|x| x.blank? ? nil : x }.compact.map {|x| "<span>#{x}</span>"}.join(" ")
 
     if pos.source && out_str
-      out_str += " <nobr>[<a href=\"#{pos.source}\ alt=\"Link to Source\"><i class=\"fa-solid fa-link\"></i></a>]</nobr>"
+      out_str += " [[<i class=\"fa-solid fa-link\"></i>]](#{pos.doge_alias_id})".html_safe
     end
 
     if pos.documents.any?

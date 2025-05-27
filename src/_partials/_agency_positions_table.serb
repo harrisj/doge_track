@@ -1,10 +1,10 @@
 {% import "macros" %}
 
-<table class="sm:table-fixed table-xs sm:table-sm lg:table-md border-4">
+<table class="table-xs sm:table-sm lg:table-md border-4 mb-0">
   <thead>
   <tr>
     <th class="sm:w-1/8 text-left">Date</th>
-    <th class="sm:w-1/8 text-left">Position</th>
+    <th class="sm:w-1/6 text-left">Position</th>
     <th class="sm:w-1/4 text-left">Person</th>
     <th class="text-left">Notes</th>
   </tr>
@@ -12,10 +12,10 @@
   <tbody class="">
     {% positions.each do |pos| %}
     <tr class="font-mono">
-      <td class="align-top">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }} - {{ render EdtfFormat.new(pos.end_date, :compact) }}{% else %}-{% end %}</td>
+      <td class="align-top">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% else %}{% end %}</td>
       <td class="align-top text-left"><nobr>{{ position_move(pos) }}</nobr></td>
       <td class="align-top">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.alias %}<a href="/topics/aliases">{{ doge_alias(pos.alias) }}</a>{% end %}</td>
-      <td class="align-top">{{ position_summary(pos) }}</td>
+      <td class="align-top">{{ position_summary(pos) | md }}</td>
     </tr>
     {% if pos.questions %}
       {% open_questions = pos.questions.select {|q| q.answer.blank?} %}

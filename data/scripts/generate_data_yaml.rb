@@ -69,7 +69,9 @@ def generate_aliases_yaml
   out_file = File.join(DATA_DIR, 'aliases.yml')
   out_array = DogeAlias.map do |a|
     out = a.to_hash
-    out['events'] = a.events.map(&:id)
+    # out['events'] = a.events.map(&:id)
+    out['position_ids'] = a.positions.map(&:id)
+    out['event_ids'] = a.events.map(&:id)
     out
   end
 

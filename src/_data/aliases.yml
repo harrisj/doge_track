@@ -1,5 +1,5 @@
 ---
-- id: CFPB-1
+- id: CFPB-01
   agency_id: CFPB
   name: Gavin Kliger
   evidence: |-
@@ -7,8 +7,9 @@
     - The declaration names Jordan Wick, Chris Young, Nikhil Rajpal and Luke Farritor as well as 2 other CFPB staff not named (because they are not deemed DOGE employees)
     - In the declaration, Mr. Farritor used Entra ID to provide access to a member of the DOGE Team who is not a DOGE Employee to the systems necessary to update the CFPB's public-facing website.
     - Gavin Kliger is the only developer of those two
-  events: []
-- id: CFPB-2
+  position_ids: []
+  event_ids: []
+- id: CFPB-02
   agency_id: CFPB
   name: Jeremy Lewin
   evidence: |-
@@ -16,8 +17,9 @@
     - The declaration names Jordan Wick, Chris Young, Nikhil Rajpal and Luke Farritor as well as 2 other CFPB staff not named
     - Based on reporting, Gavin Kliger and Jeremy Lewin were the other DOGE staff at the agency at the time of this action
     - Gavin Kliger has already been unmasked as CFPB-1
-  events: []
-- id: ED-1
+  position_ids: []
+  event_ids: []
+- id: ED-01
   agency_id: Education
   name: Akash Bobba
   evidence: |-
@@ -25,15 +27,19 @@
     - This person appears in a detail from OPM to SSA, but also a detail from SSA back to OPM and Education
     - This is the same person as OPM-3 because there is a detail document that appears with two diff redacted names
     - In a separate document in filing from OPM, Akash Bobba is listed as the only person from OPM and with a start date of 2025-02-03
-  events: []
-- id: ED-2
+  position_ids:
+  - detail-opm-education-akash-bobba
+  event_ids: []
+- id: ED-02
   agency_id: Education
   name: Conor Fennessy
   evidence: |-
     - Onboarded by appointment as a Senior Advisor on 2025-01-31 with a salary of $195K
     - They included a list of DOGE staff at the agency and Conor Fennessy is listed as the only Senior Advisor on staff
-  events: []
-- id: ED-3
+  position_ids:
+  - education-ed-2
+  event_ids: []
+- id: ED-03
   agency_id: Education
   name: Ethan Shaotran
   evidence: |-
@@ -41,31 +47,37 @@
     - Position at GSA is listed as Software Engineer (Consultant)
     - In a separate document in the release, Ethan Shaotran is listed as being from GSA on 2025-02-03 and Edward Coristine on 2025-02-20
     - IN the case of ED-1, the detail agreement seems to have been signed after the start date; very likely here as well
-  events: []
-- id: ED-4
+  position_ids:
+  - detail-gsa-education-3
+  event_ids: []
+- id: ED-04
   agency_id: Education
   name: Brooks Morgan
   evidence: |-
     - This is the only consultant position listed in [this legal document](https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf)
     - Further down the same document, a table lists one consultant starting on the same date unredacted and it's Brooks Morgan
-  events: []
-- id: FBI-1
+  position_ids:
+  - onboard-education-employee-4
+  event_ids: []
+- id: FBI-01
   agency_id: FBI
   name: Justin Monroe
   evidence: |-
     - This person isn't named in the original NBC News report
     - But they're identified specifically in a ProPublica roundup as being this person
-  events:
+  position_ids: []
+  event_ids:
   - gBSE6bzh
-- id: OPM-2
+- id: OPM-02
   agency_id: OPM
   name: Riccardo Biasini
   evidence: |-
     - Onboarded on 2025-01-20 as a volunteer SGE
-    - This is likely one of the other young DOGE crew like Jordan Wick or Luke Farritor, etc.
     - PD Number 6A39741 in redacted documents matches one for Riccard Biasini in a FOIA release from OPM
-  events: []
-- id: OPM-3
+  position_ids:
+  - opm-employee-2
+  event_ids: []
+- id: OPM-03
   agency_id: OPM
   name: Akash Bobba
   evidence: |-
@@ -73,16 +85,20 @@
     - Detail to SSA is signed on 2025-02-12
     - PD number 6A39740 = one listed for Akash Bobba
     - See evidence that ED-1 is Akash Bobba
-  events: []
-- id: OPM-4
+  position_ids:
+  - opm-3
+  - detail-opm-ssa-opm-3
+  event_ids: []
+- id: OPM-04
   agency_id: OPM
   name:
   evidence: |-
     - Onboarded on 2025-01-24 as a volunteer SGE with the title Expert
     - Only person onboarded as an expert on 2025-01-24 was Nikhil Rajpal, but he's a match for OPM-6
     - Possibly someone doing the affadavit late (3 other experts on 2025-01-20
-  events: []
-- id: OPM-5
+  position_ids: []
+  event_ids: []
+- id: OPM-05
   agency_id: OPM
   name: Gavin Kliger
   evidence: |-
@@ -91,16 +107,19 @@
     - PD 6A38025 = matches for Gavin Kliger in a FOIA release
     - GS-15/10 with pay of $195,200
     - Converted to an excepted appointment on 2025-02-18
-  events: []
-- id: OPM-6
+  position_ids: []
+  event_ids: []
+- id: OPM-06
   agency_id: OPM
   name: Nikhil Rajpal
   evidence: |-
     - Onboarded on 2025-01-24 as a vounteer SGE with a term not to exceed 2025-07-22
     - This is likely one of the other young DOGE crew like Jordan Wick or Luke Farritor, etc.
     - PD 6A39738 listed on hiring forms = Nikhil Rajpal on FOIAed list of OPM positions
-  events: []
-- id: SSA-1
+  position_ids:
+  - opm-nikhil-rajpal
+  event_ids: []
+- id: SSA-01
   agency_id: SSA
   name: Akash Bobba
   evidence: |-
@@ -110,28 +129,12 @@
     - Software engineer with 5 years of experience and some leadership experience
     - Date matches Akash Bobba start
     - [Akash Bobba's resume](https://www.documentcloud.org/documents/25940536-25-hq-0774-f-resumes-redacted-3/) lists 5 years of engineering experience and leadership skills
-  events:
+  position_ids:
+  - ssa-employee-1
+  event_ids:
   - 7mtGbnRJ
   - aympP8hu
-- id: SSA-10
-  agency_id: SSA
-  name: Ethan Shaotran
-  evidence: |-
-    - Onboarded as a volunteer on 2025-02-18 as a detail from the GSA
-    - Flick testimony - Employee 10, a software engineer, was detailed from the Office of the Administrator at the General Services Administration to SSA"
-    - Ethan Shaotran was also detailed from GSA to USADF as an unpaid GSE on 2025-02-21
-    - Ethan Shaotran is identified for the first time at SSA on 2025-02-20
-  events:
-  - 7mtGbnRJ
-- id: SSA-11
-  agency_id: SSA
-  name:
-  evidence: |-
-    - Started as a paid staffer at SSA on 2025-03-16
-    - Has 10 years of software development experience in geospatial software
-    - Unclear if this matches the DOGE people we know
-  events: []
-- id: SSA-2
+- id: SSA-02
   agency_id: SSA
   name: Scott Coulter
   evidence: |-
@@ -140,9 +143,12 @@
     - Scott Coulter is identified at SSA on 2025-03-13
     - Signed SF-61 as CIO of SSA on 2025-03-24
     - Scott Coulter was named the CIO of SSA on 2025-03-24
-  events:
+  position_ids:
+  - detail-nasa-ssa-employee-2
+  - ssa-employee-2-cio
+  event_ids:
   - 7mtGbnRJ
-- id: SSA-3
+- id: SSA-03
   agency_id: SSA
   name: Aram Moghaddassi
   evidence: |-
@@ -152,51 +158,87 @@
     - Cole Killian another possibility, but he appears to be a volunteer SGE
     - Flick testimony - "_we began onboarding and training Employee 3, a Schedule C Policy Advisor, detailed from the Department of Labor to SSA_" with it finalized on February 22. "_His duties currently relate to improper payments and SSA's Death Master File._"
     - Aram was linked to changed to the Death Master File on the week of 2025-04-08
-  events:
+  position_ids:
+  - detail-dol-ssa-employee-3
+  event_ids:
   - 7mtGbnRJ
-- id: SSA-4
+- id: SSA-04
   agency_id: SSA
   name: Antonio Gracias
   evidence: "- [NPR has done analysis on docs to identify directly](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
-  events:
+  position_ids:
+  - ssa-antonio-gracias
+  event_ids:
   - 7mtGbnRJ
-- id: SSA-5
+- id: SSA-05
   agency_id: SSA
   name:
   evidence: |-
     - Onboarded as a volunteer on 2025-02-18 as a detail from the DOGE service
     - Flick testimony - SSA began onboarding and training Employee 5, an engineer, detailed from the United States DOGE Service to SSA" with an inter-agency agreement to DOGE.
-  events:
+  position_ids:
+  - ssa-employee-5
+  event_ids:
   - 5KzocaBU
   - 7mtGbnRJ
   - SYJpQj5D
   - aympP8hu
-- id: SSA-6
+- id: SSA-06
   agency_id: SSA
   name: Jon Koval
   evidence: "- [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
-  events:
+  position_ids:
+  - ssa-employee-6
+  event_ids:
   - 7mtGbnRJ
-- id: SSA-7
+- id: SSA-07
   agency_id: SSA
   name: Marko Elez
   evidence: "- [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
-  events:
+  position_ids:
+  - detail-dol-ssa-employee-7
+  event_ids:
   - 7mtGbnRJ
-- id: SSA-8
+- id: SSA-08
   agency_id: SSA
   name:
   evidence: "- All I have tor this one is a signed SF-61. They are an employee of SSA"
-  events:
+  position_ids:
+  - detail-opm-ssa-8
+  event_ids:
   - 7mtGbnRJ
   - aympP8hu
-- id: SSA-9
+- id: SSA-09
   agency_id: SSA
   name: Payton Rehling
   evidence: |-
     - [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)
     - In their qualifications, thety list being a Senior Associate, Data Engineer with a backgroun in AI, Airflow and Genetic Algorithms. Also built a Manufacturing Execution System (MES) for home battery deployments
-  events:
+  position_ids:
+  - ssa-empwloyee-9
+  event_ids:
   - 7mtGbnRJ
   - Pej3DDWx
   - aympP8hu
+- id: SSA-10
+  agency_id: SSA
+  name: Ethan Shaotran
+  evidence: |-
+    - Onboarded as a volunteer on 2025-02-18 as a detail from the GSA
+    - Flick testimony - Employee 10, a software engineer, was detailed from the Office of the Administrator at the General Services Administration to SSA"
+    - Ethan Shaotran was also detailed from GSA to USADF as an unpaid GSE on 2025-02-21
+    - Ethan Shaotran is identified for the first time at SSA on 2025-02-20
+  position_ids:
+  - detail-gsa-ssa-employee-10
+  event_ids:
+  - 7mtGbnRJ
+- id: SSA-11
+  agency_id: SSA
+  name:
+  evidence: |-
+    - Started as a paid staffer at SSA on 2025-03-16
+    - Has 10 years of software development experience in geospatial software
+    - Unclear if this matches the DOGE people we know
+  position_ids:
+  - ssa-employee-11
+  event_ids: []

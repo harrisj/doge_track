@@ -4,7 +4,7 @@ layout: docs
 ---
 # About This Data
 
-## An Important Caveat
+I will write more on this once I have other stuff filled out
 
 ## Data collection
 

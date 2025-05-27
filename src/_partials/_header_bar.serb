@@ -1,7 +1,19 @@
 <header class="navbar bg-neutral text-neutral-content mb-8 p-4">
-  <div class="breadcrumbs text-lg">
-  <ul>
-    <li class="font-title"><a href="/">DOGE Track</a></li>
-  </ul>
+  <div class="">
+    {% if prev_pg %}
+    <a class="btn btn-sm md:btn-md gap-2 lg:gap-3 btn-neutral hover:invert" href="{{ prev_pg.url }}" alt="Prev Page">
+        <svg class="h-6 w-6 fill-current md:h-8 md:w-8 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"></path>
+    </svg></a>
+    {% end %}
+  </div>
+  <div class="mx-auto font-title text-xl sm:text-2xl md:text-3xl"><a href="/" alt="Home">DOGE Track</a></div>
+  <div class="">
+    {% if next_pg %}
+    <a class="btn btn-sm md:btn-md gap-2 lg:gap-3 btn-neutral hover:invert" href="{{ next_pg.url }}" alt="Next Page">
+      <svg class="h-6 w-6 fill-current md:h-8 md:w-8 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"></path>
+      </svg></a>
+    {% end %}
   </div>
 </header>

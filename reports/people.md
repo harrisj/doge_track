@@ -47,7 +47,7 @@
 # Riccardo Biasini
 - category: support
 - positions:
-    -  **OPM** (2025-01-20 to NTE 2025-07-18) [as "OPM-2"] Expert ED-00 volunteer
+    -  **OPM** (2025-01-20 to NTE 2025-07-18) [as "OPM-02"] Expert ED-00 volunteer
 
 # Jared Birchall
 - category: booster
@@ -65,11 +65,11 @@
 # Akash Bobba
 - category: wrecker
 - positions:
-    -  **OPM** (2025-01-20 to NTE 2025-07-18) [as "OPM-3"] Expert ED-00 volunteer
-    -  **Education** (2025-02-03 to NTE 2026-02-12) [as "ED-1"] 
-    -  **SSA** (2025-02-03 to ??) [as "OPM-3"] 
+    -  **OPM** (2025-01-20 to NTE 2025-07-18) [as "OPM-03"] Expert ED-00 volunteer
+    -  **Education** (2025-02-03 to NTE 2026-02-12) [as "ED-01"] 
+    -  **SSA** (2025-02-03 to ??) [as "OPM-03"] 
         - NUMIDENT: NUMIDENT files: 2025-02-10 - ongoing
-    -  **SSA** (2025-02-09 to NTE 2026-02-08) [as "SSA-1"] Expert ED-00 $90,025
+    -  **SSA** (2025-02-09 to NTE 2026-02-08) [as "SSA-01"] Expert ED-00 $90,025
         - NUMIDENT: NUMIDENT files: 2025-02-10 - ongoing
 
 # Ashley Boizelle
@@ -154,8 +154,8 @@
 # Scott Coulter
 - category: enabler
 - positions:
-    -  **SSA** (2025-02-18 to 2025-03-23) [as "SSA-2"] 
-    -  **SSA** (2025-03-24 to ??) [as "SSA-2"] **Chief Information Officer**
+    -  **SSA** (2025-02-18 to 2025-03-23) [as "SSA-02"] 
+    -  **SSA** (2025-03-24 to ??) [as "SSA-02"] **Chief Information Officer**
 
 # Clayton Cromer
 - category: wrecker
@@ -201,10 +201,7 @@
         - USAccess: 2025-02-25 - ongoing
         - Unemployment Insurance Data and Related Records: 2025-03-21 - ongoing
         - REO: Reentry Employment Opportunities: 2025-04-18 - ongoing
-    -  **SSA** (2025-02-18 to ??) [as "SSA-7"] 
-        - MBR: Master Beneficiary Record: 2025-03-17 - ongoing
-        - NUMIDENT: NUMIDENT files: 2025-03-17 - ongoing
-        - SSR: Supplemental Security Record master records: 2025-03-17 - ongoing
+    -  **SSA** (2025-02-18 to ??) [as "SSA-07"] 
     -  **HHS** (2025-03-05 to ??) 
         - NDNH: National Directory of New Hires: 2025-03-06 - 2025-04-18
     -  **CMS** (2025-03-05 to ??) 
@@ -216,7 +213,6 @@
     -  **ICE**  
     -  **TSA**  
     -  **USCIS**  
-        - SAVE: SAVE: 2025-03-15 - ongoing
 
 # Charles Ezell
 - category: enabler
@@ -259,7 +255,7 @@
 # Conor Fennessy
 - category: wrecker
 - positions:
-    -  **Education** (2025-01-31 to ??) [as "ED-2"] Senior Advisor GS-15/6 $195,200
+    -  **Education** (2025-01-31 to ??) [as "ED-02"] Senior Advisor GS-15/6 $195,200
     -  **CMS** (2025-02-03 to ??) 
         - CALM: CMS Acquisition Lifecycle Management system: 2025-02-03 - 2025-04-18
     -  **HHS** (2025-02-20 to ??) 
@@ -323,7 +319,7 @@
 # Antonio Gracias
 - category: leadership
 - positions:
-    -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-4"] Expert ED-00 volunteer
+    -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-04"] Expert ED-00 volunteer
 
 # Michael Grimes
 - category: leadership
@@ -353,7 +349,9 @@
 # Tyler Hassen
 - category: enabler
 - positions:
-    -  **DOI** (2025-03-07 to ??) **Acting Assistant Secretary of Policy, Management and Budget**
+    -  **DOI** (2025-01-(27)~ to ??) 
+    -  **DOI** (2025-03-07 to 2025-04-XX) **Acting Assistant Secretary of Policy, Management and Budget**
+    -  **DOI** (2025-04-XX to ??) 
 
 # Vinay Hiremath
 - category: booster
@@ -447,10 +445,7 @@
 # Jon Koval
 - category: wrecker
 - positions:
-    -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-6"] Expert ED-00 volunteer
-        - MBR: Master Beneficiary Record: 2025-03-17 - ongoing
-        - NUMIDENT: NUMIDENT files: 2025-03-17 - ongoing
-        - SSR: Supplemental Security Record master records: 2025-03-17 - ongoing
+    -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-06"] Expert ED-00 volunteer
     -  **DOJ** (2025-04-15 to ??) 
         - ECAS: Executive Office for Immigration Review's Court and Appeals System: 2025-04-21 - ongoing
 
@@ -586,7 +581,7 @@
     -  **DOL** (2025-02-XX to ??) 
         - FLAG: Foreign Labor Application Gateway **[admin access]**: 2025-04-18 - ongoing
         - REO: Reentry Employment Opportunities: 2025-04-18 - ongoing
-    -  **SSA** (2025-02-22 to ??) [as "SSA-3"] 
+    -  **SSA** (2025-02-22 to ??) [as "SSA-03"] 
     -  **HHS** (2025-03-05 to ??) 
         - GrantSolutions: 2025-02-19 - ongoing
         - NDNH: National Directory of New Hires: 2025-03-06 - 2025-04-18
@@ -612,7 +607,7 @@
 # Brooks Morgan
 - category: wrecker
 - positions:
-    -  **Education** (2025-02-04 to NTE 2025-08-04) [as "ED-4"]  volunteer
+    -  **Education** (2025-02-04 to NTE 2025-08-04) [as "ED-04"]  volunteer
     -  **FDIC** (2025-04-10 to ??) 
 
 # Trent Morse
@@ -646,7 +641,7 @@
 # Nikhil Rajpal
 - category: wrecker
 - positions:
-    -  **OPM** (2025-01-24 to ??) [as "OPM-6"] Expert ED-00 volunteer
+    -  **OPM** (2025-01-24 to ??) [as "OPM-06"] Expert ED-00 volunteer
     -  **NOAA** (2025-02-04 to ??) 
         - Google Drive **[read-write access]**: 2025-02-05 - ongoing
     -  **CFPB** (2025-02-07 to 2025-03-21) 
@@ -669,11 +664,7 @@
 # Payton Rehling
 - category: wrecker
 - positions:
-    -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-9"] Expert ED-00 volunteer
-        - PSSNAP: PSSNAP: 2025-03-14 - ongoing
-        - MBR: Master Beneficiary Record: 2025-03-17 - ongoing
-        - NUMIDENT: NUMIDENT files: 2025-03-17 - ongoing
-        - SSR: Supplemental Security Record master records: 2025-03-17 - ongoing
+    -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-09"] Expert ED-00 volunteer
     -  **DOJ** (2025-04-15 to ??) 
         - ECAS: Executive Office for Immigration Review's Court and Appeals System: 2025-04-21 - ongoing
     -  **DHS**  
@@ -755,7 +746,7 @@
 - category: wrecker
 - positions:
     -  **GSA** (2025-01-20 to ??)  volunteer
-    -  **Education** (2025-02-12 to NTE 2026-02-26) [as "ED-3"] 
+    -  **Education** (2025-02-12 to NTE 2026-02-26) [as "ED-03"] 
     -  **SSA** (2025-02-18 to NTE 2026-02-26) [as "SSA-10"] 
     -  **USADF** (2025-02-20 to 2025-03-06) 
     -  **USPS** (2025-03-12 to NTE 2025-06-15) 

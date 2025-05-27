@@ -1,8 +1,23 @@
 {% import "macros" %}
 
-<h3 class="mt-4 mb-0">{{ doge_alias.id }}{% if doge_alias.name %}: {{ person_link(doge_alias.name) }}{% end %}</h3>
+<div class="pb-4">
+<h3 class="mt-4 mb-0" id="{{ doge_alias.id }}">{{ doge_alias.id }}{% if doge_alias.name %}: {{ person_link(doge_alias.name) }}{% end %}</h3>
 
 {% if doge_alias.evidence %}
-  <div class="prose max-w-7/8">{{ doge_alias.evidence | markdownify }}</div>
+
+<h4 class="mt-5 mb-0">Supporting Evidence:</h4>
+  <div class="prose max-w-none">{{ doge_alias.evidence | markdownify }}</div>
 {% end %}
 
+{% if doge_alias.positions && doge_alias.positions.any? %}
+
+<h4 class="mt-5 mb-0">Positions:</h4>
+{%@ 'person_positions_table', positions: doge_alias.positions %}
+{% end %}
+
+{% if doge_alias.events && doge_alias.events.any? %}
+<h4 class="mt-5 mb-0">Events:</h4>
+
+{%@ 'event_timeline', events: doge_alias.events %}
+{% end %}
+</div>
