@@ -288,7 +288,7 @@ end %}
 
 {% macro 'position_summary' do |pos|
     if pos.doge_alias_id && pos.name
-      alias_ident_str = "**[as [#{pos.doge_alias_id}](/people/aliases##{pos.doge_alias_id})]**"
+      alias_ident_str = "[as <a href=\"/people/aliases##{pos.doge_alias_id}\" class=\"link-hover\">#{pos.doge_alias_id}</a>]"
     end
 
     type_str = case pos.type
@@ -333,18 +333,18 @@ end %}
       note_str = "[#{pos.table_note}]"
     end
 
-    out_str = [alias_ident_str, type_str, title_str, hire_str, note_str].map {|x| x.blank? ? nil : x }.compact.map {|x| "<span>#{x}</span>"}.join(" ")
-
-    if pos.source && out_str
-      out_str += " [[<i class=\"fa-solid fa-link\"></i>]](#{pos.doge_alias_id})".html_safe
+    if pos.source
+      source_str = "<a href=\"#{pos.source}\" class=\"link-hover\"><i class=\"fa-solid fa-link\"></i></a>"
     end
 
     if pos.documents.any?
       links = pos.documents.map do |doc|
-        link_to(document_type(doc), document_url(doc))
+        "<a class=\"link-hover\" href=\"#{document_url(doc)}\">#{document_type(doc)}</a>"
       end
-      out_str += " [docs: #{links.join(', ')}]"
+      docs_str = "[docs: #{links.join(', ')}]"
     end
+
+    out_str = [alias_ident_str, type_str, title_str, hire_str, note_str, source_str, docs_str].map {|x| x.blank? ? nil : x }.compact.map {|x| "<span>#{x}</span>"}.join(" ")
 
     out_str.html_safe
    end

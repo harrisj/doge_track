@@ -1,4 +1,4 @@
-<h1 class="text-2xl sm:text-3xl md:text-4xl leading-none tracking-tight font-title mb-1">{{ agency.name }}</h1>
+<h1 {% if id %}id="{{id}}"{% end %} class="text-2xl sm:text-3xl md:text-4xl leading-none tracking-tight font-title mb-1">{{ agency.name }}</h1>
 {% if agency.children.any? %}
 <h2 class="text-lg sm:text-xl md:text-2xl leading-none tracking-tight font-title mt-0">subagencies: {{ agency.children | map: ->(a) { a.short_name } | sort | join: ", " }}</h2>
 {% end %}

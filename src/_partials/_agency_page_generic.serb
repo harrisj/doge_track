@@ -1,10 +1,10 @@
 {% import 'macros' %}
 
 {% agency = find_agency(id) %}
-{%@ 'agency_title', agency: agency %}
+{%@ 'agency_title', agency: agency, id: agency.slug %}
 
 {% if blurb %}
-  <div class="rose prose-sm sm:prose-base md:prose-lg prose-stone prose-li:m-[0.1em] dark:prose-invert">{{ blurb | markdownify }}</div>
+  <div class="prose prose-sm sm:prose-base md:prose-lg prose-stone prose-li:m-[0.1em] dark:prose-invert">{{ blurb | md }}</div>
 {% end %}
 
 {% if agency.positions.any? %}
