@@ -66,6 +66,7 @@ The {{ agency_link("GSA", "General Service Administration") }} is an agency that
 There are also a fair number of Wreckers who started at other agencies, possibly because agency policy or practices might have made it difficult to detail someone from elsewhere. Or, there might have been explicit direction from agency leadership to hire staff there. For instance, there were four Wreckers hired directly from SpaceX to work at the FAA for the short-term on the direction of the Department of Transportation head, Sean Duffy. Some of these names might also be reclassified if I am able to determine they started at GSA or OPM and were actually detailed to the agency listed below.
 
 {% other_wreckers = all_wreckers.reject {|x| ["GSA", "OPM", "DOGE"].include? x.start_agency }.sort_by {|x| [x.start_agency, x.sort_date]} %}
+{% last_agency = other_wreckers[0].start_agency %}
 <table class="table table-xs sm:table-sm md:table-md">
   <thead>
     <tr>
@@ -80,7 +81,7 @@ There are also a fair number of Wreckers who started at other agencies, possibly
   <tbody>
   {% other_wreckers.each do |person|  %}
     {% details = person.positions.reject {|pos| pos.agency_id == person.start_agency } %}
-    <tr class="my-table-sm text-left">
+    <tr class="my-table-sm text-left {% if person.start_agency != last_agency %}border-t-black border-t-2{% end %}">
       <td class="align-top">{{ agency_link(person.start_agency) }}</td>
       <td class="align-top">{{ person_link(person.name) }}</td>
       <td class="align-top hidden sm:table-cell">{{ person.age }}</td>
@@ -88,6 +89,7 @@ There are also a fair number of Wreckers who started at other agencies, possibly
       <td class="align-top hidden md:table-cell">{{ person_background(person) }}</td>
       <td class="align-top">{% if details.any? %}{{ details | map: ->p {p.agency} | uniq | agency_links }}{% end %}</td>
     </tr>
+    {% last_agency = person.start_agency %}
   {% end %}
   </tbody>
 </table>
