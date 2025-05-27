@@ -1,10 +1,8 @@
 {% import "macros" %}
 
-<div class="card bg-base-100 w-96 shadow-sm">
-  <div class="card-body">
-    <h2 class="card-title">{{ doge_alias.id }}{% if doge_alias.name %}: {% person_link(doge_alias.name) %}{% end %}</h2>
-    {% if doge_alias.evidence %}
-      <p class="prose">{{ doge_alias.evidence | markdownify }}</p>
-    {% end %}
-  </div>
-</div>
+<h3 class="mt-4 mb-0">{{ doge_alias.id }}{% if doge_alias.name %}: {{ person_link(doge_alias.name) }}{% end %}</h3>
+
+{% if doge_alias.evidence %}
+  <div class="prose max-w-7/8">{{ doge_alias.evidence | markdownify }}</div>
+{% end %}
+
