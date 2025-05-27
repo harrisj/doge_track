@@ -24,5 +24,4 @@ layout: docs
 
 ### Creating Markdown Reports
 
-### Creating a Static April
-Coming soon
+### Creating a Static Site

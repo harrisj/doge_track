@@ -11,10 +11,15 @@ However, if you find yourself wanting to do more, there are a few other concrete
 
 ## Flagging Gaps and Errors in the Dataset
 
+## Writing Content
+None of the text on here is AI-generated or lifted from other sites.
+
 ## Improving the Data Models
 
 ## Improving the Look and Feel of the Site
 
 If it weren't obvious, I am not a designer or a front-end master. There is a lot of work that could be put into the site to make it prettier. If this is something that would be exciting to you, I'd welcome you to 
+
+
 
 ## Creating Derivative Works
