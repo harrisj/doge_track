@@ -4,11 +4,11 @@
 {%@ 'agency_title', agency: agency, id: agency.slug %}
 
 {% if blurb %}
-  <div class="prose prose-sm sm:prose-base md:prose-lg prose-stone prose-li:m-[0.1em] dark:prose-invert">{{ blurb | md }}</div>
+  <div class="prose prose-sm sm:prose-base md:prose-md lg:prose-lg max-w-none prose-stone prose-li:m-[0.1em] dark:prose-invert">{{ blurb | md }}</div>
 {% end %}
 
 {% if agency.positions.any? %}
-<h2 class="mt-4 mb-0">Positions</h2>
+<h2 class="mt-4 mb-0 text-lg sm:text-xl md:text-2xl">Positions</h2>
 
 {%@ 'agency_positions_table', positions: agency.positions %}
 {% end %}
@@ -16,7 +16,7 @@
 {% agency_events = site.data.events.find_all {|e| e.agencies_parents.include? agency.id } %}
 
 {% if agency_events.any? %}
-<h2 class="mt-0 mb-0">Events</h2>
+<h2 class="mt-0 mb-0 text-lg sm:text-xl md:text-2xl">Events</h2>
 
-{%@ 'event_timeline', events: agency_events %}
+{%@ 'compact_event_timeline', events: agency_events %}
 {% end %}

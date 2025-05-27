@@ -1,6 +1,6 @@
 
 {% macro "md" do |text|
-    markdownify(text).gsub(/^<p>/, '').gsub(/<p>$/, '').html_safe
+    markdownify(text).gsub(/^<p>/, '').gsub(/<p><\/p>$/, '').gsub(/<\/p>$/, '').html_safe
   end
 %}
 
@@ -252,6 +252,23 @@
    end
 %}
 
+{% macro "linkify" do |text|
+      site.data.people.each do |person|
+        text.gsub!(/\b#{person.name}\b/, person_link(person.name))
+      end
+
+      site.data.agencies.each do |agency|
+        text.gsub!(/\b#{agency.id}\b/, agency_link(agency.id))
+      end
+
+      site.data.aliases.each do |a|
+        text.gsub!(/\b#{a.id}\b/, "/people/aliases##{a.id}")
+      end
+
+      text.html_safe
+   end
+%}
+
 {% macro "doge_alias" do |doge_alias| 
     if doge_alias.is_a?(String)
       doge_alias
@@ -344,7 +361,12 @@ end %}
       docs_str = "[docs: #{links.join(', ')}]"
     end
 
-    out_str = [alias_ident_str, type_str, title_str, hire_str, note_str, source_str, docs_str].map {|x| x.blank? ? nil : x }.compact.map {|x| "<span>#{x}</span>"}.join(" ")
+    if pos.questions && pos.questions.any?
+      questions = pos.questions.map {|q| "<a class=\"link-hover tooltip\" href=\"/questions##{q.id}\" data-tip=\"Open Question: #{q.question}\"><i class=\"fa-solid fa-circle-question\"></i></a>"}
+      questions_str = questions.join(" ")
+    end
+
+    out_str = [alias_ident_str, type_str, title_str, hire_str, note_str, source_str, docs_str, questions_str].map {|x| x.blank? ? nil : x }.compact.map {|x| "<span>#{x}</span>"}.join(" ")
 
     out_str.html_safe
    end

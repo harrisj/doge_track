@@ -10,7 +10,7 @@
 {% if person.positions.any? %}
     {%@ 'person_positions_table', positions: person.positions %}
 {% else %}
-&nbpsp;
+&nbsp;
 {% end %}
 </div>
 

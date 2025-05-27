@@ -1,0 +1,28 @@
+{% agency_col = false if agency_col.nil? %}
+{% icon_col = false if icon_col.nil? %}
+{% last_date = '' %}
+<table class="table table-auto table-xs sm:table-sm lg:table-md border-4 mb-0">
+  <tbody>
+  {% events.each do |event| %}
+    <tr class="font-mono">
+      <td class="align-top">{% if event.sort_date != last_date %}
+        {{ render EdtfFormat.new(event.date, :compact) }}
+        {% last_date = event.sort_date %}
+      {% end %}  
+      </td>
+      {% if icon_col %}<td class="align-top w-min-content"><i class="fa {{ event_icon(event) }}"></i></td>{% end %}
+      {% if agency_col %}<td class="align-top">{{ event.agencies | map: ->a { a.short_name } | sort | join: ", " }}</td>{% end %}
+      <td class="align-top">
+        <div>{{ event.text | linkify }} {% if event.source %}<a href="{{ event.source }}" class="link-hover tooltip" {% if event.source_name %}data-tip="{{ event.source_name }}"{% end %}><i class="fa-solid fa-newspaper"></i></a>{% end %}</div>
+        {% if event.type == 'directory' %}
+          <div>
+            {% event.names_aliases.group_by(&:category).sort_by {|c, p| p.size}.reverse.each do |category, people| %}
+              <div><i class="fas {{ person_icon(people.first) }}"></i> {{ people.map(&:name) | people_links }}</div>
+            {% end %}
+          </div>
+        {% end %}
+      </td>
+    </tr>
+  {% end %}
+  </tbody>
+</table>

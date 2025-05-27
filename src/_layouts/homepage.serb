@@ -5,7 +5,7 @@ layout: default
 
 {% page_index = urls.find_index {|x| x.url == resource.relative_url } %}
 
-<div class="lg:container lg:mx-auto px-8">
+<div class="md:container md:max-w-5xl md:mx-auto px-8">
   <main class="my-text flex flex-col min-h-screen">
     {{ content }}
   </main>

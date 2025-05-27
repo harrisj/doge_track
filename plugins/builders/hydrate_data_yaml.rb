@@ -28,6 +28,7 @@ module Builders
         ag.positions = ag.position_ids.map { |p_id| lookup_position(p_id) } || []
         ag.children = ag.children.map { |a_id| lookup_agency(a_id) } || []
         ag.events = ag.event_ids.map { |e_id| lookup_event(e_id) } || []
+        ag.questions = []
       end
     end
 
@@ -42,12 +43,14 @@ module Builders
       site.data.aliases.each do |a|
         a.events = a.event_ids.map { |e_id| lookup_event(e_id) }
         a.positions = a.position_ids.map { |p_id| lookup_position(p_id) }
+        a.questions = []
       end
     end
 
     def hydrate_positions(site)
       site.data.positions.each do |pos|
         pos.person = lookup_person(pos.name) unless pos.name.nil?
+        pos.questions = []
         # pos.agency = lookup_agency(pos.agency_id) unless pos.agency_id.blank?
         # pos.from_agency = lookup_agency(pos.from_agency_id) unless pos.from_agency_id.blank?
       end
@@ -57,6 +60,7 @@ module Builders
       site.data.events.each do |event|
         event.people = event.names.map { |n| lookup_person(n) } unless event.names.nil?
         event.agencies = event.agency_ids.map { |a| lookup_agency(a) } unless event.agency_ids.nil?
+        event.questions = []
       end
     end
 
@@ -64,6 +68,7 @@ module Builders
       site.data.people.each do |person|
         person.positions = person.position_ids.map { |p| lookup_position(p) } || []
         person.events = person.event_ids.map { |e| lookup_event(e) } || []
+        person.questions = []
       end
     end
 
@@ -90,7 +95,6 @@ module Builders
         next if q.position_id.blank?
 
         q.position = lookup_position(q.position_id)
-        q.position.questions ||= []
         q.position.questions.append(q)
       end
     end
@@ -100,8 +104,8 @@ module Builders
         hydrate_aliases(site)
         hydrate_documents(site)
         hydrate_events(site)
-        hydrate_people(site)
         hydrate_positions(site)
+        hydrate_people(site)
         hydrate_agencies(site)
         hydrate_questions(site)
       end

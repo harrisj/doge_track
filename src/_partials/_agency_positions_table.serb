@@ -1,10 +1,10 @@
 {% import "macros" %}
 
-<table class="table table-fixed table-xs sm:table-sm lg:table-md border-4 mb-0">
+<table class="table table-auto table-xs sm:table-sm lg:table-md border-4 mb-0">
   <thead>
   <tr>
-    <th class="text-left">Date</th>
-    <th class="text-left">Position</th>
+    <th class="text-left hidden sm:table-cell">Date</th>
+    <th class="text-left min-width-[104px] sm:w-auto">Position</th>
     <th class="text-left">Person</th>
     <th class="text-left">Notes</th>
   </tr>
@@ -12,19 +12,13 @@
   <tbody class="">
     {% positions.each do |pos| %}
     <tr class="font-mono">
-      <td class="align-top w-1/8">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% else %}{% end %}</td>
-      <td class="align-top min-width-[104px] w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6"><nobr>{{ position_move(pos) }}</nobr></td>
+      <td class="align-top hidden sm:table-cell">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% end %}</td>
+      <td class="align-top min-width-[104px] "><nobr>{{ position_move(pos) }}</nobr>
+      <div class="sm:hidden">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% end %}</div>
+      </td>
       <td class="align-top">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.alias %}<a href="/topics/aliases">{{ doge_alias(pos.alias) }}</a>{% end %}</td>
-      <td class="align-top w-auto sm:w-2/3 md:w-3/4 lg:w-4/5 xl:w-5/6">{{ position_summary(pos) | md }}</td>
+      <td class="align-top">{{ position_summary(pos) | md }}</td>
     </tr>
-    {% if pos.questions %}
-      {% open_questions = pos.questions.select {|q| q.answer.blank?} %}
-      {% if open_questions %}
-      <tr>
-        <td class="colspan-4"><i class="fa-solid fa-circle-question"></i> <span class="font-italic">{{ open_questions.join(' ') }}</td>
-      </tr>
-      {% end %}
-    {% end %}
     {% end %}
   </tbody>
 </table>
