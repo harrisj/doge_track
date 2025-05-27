@@ -46,6 +46,11 @@
             "type": "string",
             "max_length": 30
         },
+        "page_slug": {
+            "description": "Where to link the person name to",
+            "$comment": "I should just make this an explicit path",
+            "type": "string"
+        },
         "positions": {
             "type": "array",
             "items": {

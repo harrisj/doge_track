@@ -19,6 +19,7 @@ Case.unrestrict_primary_key
 GovtSystem.unrestrict_primary_key
 SystemRole.unrestrict_primary_key
 Document.unrestrict_primary_key
+Question.unrestrict_primary_key
 
 all_events = []
 
@@ -181,6 +182,14 @@ cases_yaml.each do |case_hash|
     a = Agency[agency_id]
     c.add_agency(a)
   end
+end
+
+questions_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'questions.yaml'), symbolize_names: true)
+questions_yaml.each do |q_hash|
+  next if q_hash.nil?
+
+  input_hash = q_hash.transform_keys!(alias: :doge_alias_id, system_id: :govt_system_id)
+  Question.create(input_hash)
 end
 
 systems_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'systems.yaml'), symbolize_names: true)

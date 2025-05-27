@@ -21,13 +21,13 @@
           {% for person in event.names_aliases %}
             <div class="flex-none pe-2">
               {% if person.alias and person.name %}
-                <span class="icon is-small"><i class="fas fa-user"></i></span>
+                <span class="icon is-small"><i class="fas {{ person_icon(person) }}"></i></span>
                 {{ person_link(person.name) }} ({{ person.alias }})
               {% elsif person.alias %}
                 <span class="icon is-small"><i class="fas fa-user-secret"></i></span>
                 {{ person.alias }}
               {% else %}
-                <span class="icon is-small"><i class="fas fa-user"></i></span>
+                <span class="icon is-small"><i class="fas {{ person_icon(person) }}"></i></span>
                 {{ person_link(person.name) }}
               {% end %}
             </div>

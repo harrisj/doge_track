@@ -172,3 +172,6 @@ class Event < Sequel::Model
   many_to_many :people, right_key: :name, order: :sort_name
   many_to_one :case, key: :case_no
 end
+
+class Question < Sequel::Model
+end

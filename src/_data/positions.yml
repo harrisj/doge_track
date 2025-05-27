@@ -5132,58 +5132,6 @@
   agency_and_parent:
   - NSF
   documents: []
-- id: gsa-fennessy
-  type: unknown
-  agency_id: GSA
-  name: Conor Fennessy
-  doge_alias_id:
-  from_agency_id:
-  from_truth:
-  start_date:
-  start_date_truth:
-  start_date_event:
-  start_source:
-  start_source_name:
-  end_date:
-  end_date_truth:
-  end_date_event:
-  end_source:
-  end_source_name:
-  sort_date: '2026-07-04'
-  nte_date:
-  nte_date_truth:
-  signed_date:
-  description:
-  fuzz:
-  appt_type_code:
-  appt_type:
-  pay_grade:
-  salary:
-  pd_code:
-  sge:
-  excepted:
-  title:
-  series:
-  supervisory:
-  office:
-  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  reimbursed:
-  reimbursement_amount:
-  comment: No details, just info from NYT roundup
-  qualifications:
-  table_note:
-  agency:
-    id: GSA
-    name: General Services Administration
-    slug: gsa
-    page_slug: self
-    short_name: GSA
-    doge_base: true
-    path: "/agencies/gsa"
-    parent_id:
-  agency_and_parent:
-  - GSA
-  documents: []
 - id: education-ed-2
   type: appointed
   agency_id: Education
@@ -9409,8 +9357,8 @@
   doge_alias_id:
   from_agency_id:
   from_truth:
-  start_date: 2025-04-(25)~
-  start_date_truth: inferred
+  start_date: '2025-04-09'
+  start_date_truth: reported
   start_date_event:
   start_source:
   start_source_name:
@@ -9419,7 +9367,7 @@
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: '2025-04-25'
+  sort_date: '2025-04-09'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -9439,7 +9387,7 @@
   source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
   reimbursed:
   reimbursement_amount:
-  comment: Assuming a GSA start since named in NPR report as from GSA in detailing to other agencies
+  comment:
   qualifications:
   table_note:
   agency:
@@ -9615,7 +9563,7 @@
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: no public details on when she started with DOGE, but date inferred
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -9971,58 +9919,6 @@
   agency_and_parent:
   - DHS
   documents: []
-- id: dol-moghaddassi
-  type: unknown
-  agency_id: DOL
-  name: Aram Moghaddassi
-  doge_alias_id:
-  from_agency_id:
-  from_truth:
-  start_date:
-  start_date_truth:
-  start_date_event:
-  start_source:
-  start_source_name:
-  end_date:
-  end_date_truth:
-  end_date_event:
-  end_source:
-  end_source_name:
-  sort_date: '2026-07-04'
-  nte_date:
-  nte_date_truth:
-  signed_date:
-  description:
-  fuzz:
-  appt_type_code:
-  appt_type:
-  pay_grade:
-  salary:
-  pd_code:
-  sge:
-  excepted:
-  title:
-  series:
-  supervisory:
-  office:
-  source:
-  reimbursed:
-  reimbursement_amount:
-  comment:
-  qualifications:
-  table_note:
-  agency:
-    id: DOL
-    name: Department of Labor
-    slug: labor
-    page_slug: labor
-    short_name: DOL
-    doge_base: true
-    path: "/agencies/labor"
-    parent_id:
-  agency_and_parent:
-  - DOL
-  documents: []
 - id: internal-dhs-cpb-mohgaddassi
   type: internal
   agency_id: CBP
@@ -10270,6 +10166,58 @@
   agency_and_parent:
   - USCIS
   - DHS
+  documents: []
+- id: dol-moghaddassi
+  type: unknown
+  agency_id: DOL
+  name: Aram Moghaddassi
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-02-XX
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: '2025-02-07'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  series:
+  supervisory:
+  office:
+  source:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: assuming start at DOL because listed later as detailee from there
+  agency:
+    id: DOL
+    name: Department of Labor
+    slug: labor
+    page_slug: labor
+    short_name: DOL
+    doge_base: true
+    path: "/agencies/labor"
+    parent_id:
+  agency_and_parent:
+  - DOL
   documents: []
 - id: detail-dol-ssa-employee-3
   type: detailed
@@ -13872,6 +13820,58 @@
   agency_and_parent:
   - Treasury
   documents: []
+- id: gsa-simonpour
+  type: appointed
+  agency_id: GSA
+  name: Alexander Simonpour
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-03-XX
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  sort_date: '2025-03-01'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  series:
+  supervisory:
+  office:
+  source:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: he was detailed to USPS from GSA, so assuming appointed at GSA but info unknown
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    path: "/agencies/gsa"
+    parent_id:
+  agency_and_parent:
+  - GSA
+  documents: []
 - id: detail-gsa-usps-alex-simonpour
   type: detailed
   agency_id: USPS
@@ -14452,7 +14452,7 @@
   - SSA
   documents: []
 - id: ssa-steffensen-1
-  type: appointed
+  type: promotion
   agency_id: SSA
   name: Mark Steffensen
   doge_alias_id:
@@ -14490,7 +14490,7 @@
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: promoted within two days of being appointed
   agency:
     id: SSA
     name: Social Security Administration
@@ -14510,8 +14510,8 @@
   doge_alias_id:
   from_agency_id:
   from_truth:
-  start_date: 2025-04-XX
-  start_date_truth: guessed
+  start_date: '2025-04-15'
+  start_date_truth: reported
   start_date_event:
   start_source:
   start_source_name:
@@ -14520,7 +14520,7 @@
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: 2025-04-XX
+  sort_date: '2025-04-15'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15606,8 +15606,8 @@
   doge_alias_id:
   from_agency_id:
   from_truth:
-  start_date: 2025-04-XX
-  start_date_truth: guessed
+  start_date: '2025-04-21'
+  start_date_truth: reported
   start_date_event:
   start_source:
   start_source_name:
@@ -15616,7 +15616,7 @@
   end_date_event:
   end_source:
   end_source_name:
-  sort_date: '2025-04-15'
+  sort_date: '2025-04-21'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -15927,7 +15927,7 @@
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: unknown who this is and if sent to other agencies
   agency:
     id: Peace
     name: Peace Corps

@@ -1,6 +1,6 @@
 {% import "macros" %}
 
-<table class="mt-4 sm:table-fixed table-xs sm:table-sm lg:table-md border-4">
+<table class="sm:table-fixed table-xs sm:table-sm lg:table-md border-4">
   <thead>
   <tr>
     <th class="sm:w-1/8 text-left">Date</th>
@@ -17,6 +17,14 @@
       <td class="align-top">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.alias %}<a href="/topics/aliases">{{ doge_alias(pos.alias) }}</a>{% end %}</td>
       <td class="align-top">{{ position_summary(pos) }}</td>
     </tr>
+    {% if pos.questions %}
+      {% open_questions = pos.questions.select {|q| q.answer.blank?} %}
+      {% if open_questions %}
+      <tr>
+        <td class="colspan-4"><i class="fa-solid fa-circle-question"></i> <span class="font-italic">{{ open_questions.join(' ') }}</td>
+      </tr>
+      {% end %}
+    {% end %}
     {% end %}
   </tbody>
 </table>

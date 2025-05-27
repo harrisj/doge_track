@@ -12,9 +12,26 @@
    end
 %}
 
-{% macro "person_url" do |name| 
-    person = site.data.people.find {|p| p.name.downcase == name || p.slug == name || p.sort_name.downcase == name.downcase }
-    person ? person.path : nil
+{% macro "person_url" do |person|
+    if person.is_a?(String)
+      person = site.data.people.find {|p| p.name.downcase == name || p.slug == name || p.sort_name.downcase == name.downcase }
+    end
+
+    if person
+      if person.custom_path
+        person.custom_path
+      elsif person.category == 'wrecker'
+        "/people/wrecker-staff##{person.slug}"
+      elsif person.category == 'enabler'
+        "/people/enabler-staff##{person.slug}"
+      elsif person.category == 'support'
+        "/people/support-team##{person.slug}"
+      elsif person.category == 'unknown'
+        "/people/unknowns##{person.slug}"
+      else
+        "/all/people##{person.slug}"
+      end
+    end
   end
 %}
 
@@ -32,7 +49,7 @@
 
       if person && person.path && person.path != 'none'
         display ||= person.name
-        "<a class=\"link-hover\" href=\"#{person.path}\">#{display}</a>".html_safe
+        "<a class=\"link-hover\" href=\"#{person_url(person)}\">#{display}</a>".html_safe
       else
         display || p_id
       end
@@ -173,6 +190,24 @@
       'Sighting'
     else
       'Report'
+    end
+  end
+%}
+
+{% macro 'person_icon' do |person| 
+    case person.category
+    when 'booster'
+      'fa-thumbs-up'
+    when 'leadership'
+      'fa-briefcase'
+    when 'enabler'
+      'fa-door-open'
+    when 'support'
+      'fa-people-group'
+    when 'wrecker'
+      'fa-bomb'
+    else
+      'fa-circle-question'
     end
   end
 %}

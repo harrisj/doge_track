@@ -19,9 +19,8 @@ TKTK Inside men
   <tr>
     <th>Name</th>
     <th>Agency</th>
-    <th>Date Appointed</th>
-    <th>Salary</th>
-    <th>Access Granted</th>
+    <th>Title</th>
+    <th>Date</th>
   </tr>
 </thead>
 <tbody>
@@ -29,9 +28,8 @@ TKTK Inside men
   <tr>
     <td>{{ person_link(pos.name) }}</td>
     <td>{{ agency_link(pos.agency_id)}}</td>
-    <td>{{ pos.start_date }}</td>
-    <td></td>
-    <td></td>
+    <td>{{ pos.title }}</td>
+    <td>{{ render EdtfFormat.new(pos.start_date, :compact) }}{% if pos.end_date %} - {{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}</td>
   </tr>
 {% end %}
 </tbody>
@@ -45,9 +43,8 @@ TKTK Inside men
   <tr>
     <th>Name</th>
     <th>Agency</th>
-    <th>Date Appointed</th>
-    <th>Salary</th>
-    <th>Access Granted</th>
+    <th>Title</th>
+    <th>Date</th>
   </tr>
 </thead>
 <tbody>
@@ -55,9 +52,8 @@ TKTK Inside men
   <tr>
     <td>{{ person_link(pos.name) }}</td>
     <td>{{ agency_link(pos.agency_id)}}</td>
-    <td>{{ pos.start_date }}</td>
-    <td></td>
-    <td></td>
+    <td>{{ pos.title }}</td>
+    <td>{{render EdtfFormat.new(pos.start_date, :compact, :filled) }}</td>
   </tr>
 {% end %}
 </tbody>

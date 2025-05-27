@@ -92,9 +92,14 @@ namespace :data do
     ruby "#{SCRIPTS_DIR}/validate_systems_yaml.rb"
   end
 
+  desc 'Process and validate the questions YAML file'
+  task :validate_questions_yaml do
+    ruby "#{SCRIPTS_DIR}/validate_questions_yaml.rb"
+  end
+
   desc 'Validate all raw data YAML files'
   task validate: %i[validate_aliases_yaml validate_documents_yaml validate_events_yaml validate_people_yaml
-                    validate_systems_yaml]
+                    validate_systems_yaml validate_questions_yaml]
 
   desc 'Create an empty database for loading data'
   task :create_db do

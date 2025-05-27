@@ -144,13 +144,16 @@ def generate_events_yaml
     out['agency_ids'] = e.agencies.map(&:id)
     out['alias_ids'] = e.doge_aliases.map(&:to_hash)
 
-    out['names_aliases'] = e.people.map { |p| { name: p.name, slug: p.slug, sort_name: p.sort_name } }
+    out['names_aliases'] = e.people.map do |p|
+      { name: p.name, slug: p.slug, sort_name: p.sort_name, category: p.category }
+    end
     e.doge_aliases.each do |a|
       if a.name
         ap = out['names_aliases'].find { |x| x[:name] == a.name }
 
         if ap.nil?
-          out['names_aliases'].append({ alias: a.id, name: a.name, slug: a.person.slug, sort_name: a.person.sort_name })
+          out['names_aliases'].append({ alias: a.id, name: a.name, slug: a.person.slug, sort_name: a.person.sort_name,
+                                        category: a.person.category })
         else
           ap['alias'] = a.id
         end
@@ -189,6 +192,17 @@ def generate_systems_yaml
   end
 end
 
+def generate_questions_yaml
+  out_file = File.join(DATA_DIR, 'questions.yml')
+
+  out = Question.map(&:to_hash)
+
+  File.open(out_file, 'w') do |file|
+    out_yaml = YAML.dump(out, line_width: 150, stringify_names: true, header: false)
+    file.write(out_yaml)
+  end
+end
+
 if __FILE__ == $PROGRAM_NAME
   generate_aliases_yaml
   generate_documents_yaml
@@ -197,4 +211,5 @@ if __FILE__ == $PROGRAM_NAME
   generate_positions_yaml
   generate_events_yaml
   generate_systems_yaml
+  generate_questions_yaml
 end

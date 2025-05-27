@@ -67,6 +67,34 @@ module Builders
       end
     end
 
+    def hydrate_questions(site)
+      site.data.questions.each do |q|
+        unless q.name.blank?
+          q.person = lookup_person(q.name)
+          q.person.questions ||= []
+          q.person.questions.append(q)
+        end
+
+        unless q.agency_id.blank?
+          q.agency = lookup_agency(q.agency_id)
+          q.agency.questions ||= []
+          q.agency.questions.append(q)
+        end
+
+        unless q.alias.blank?
+          q.alias = lookup_alias(q.alias)
+          q.alias.questions ||= []
+          q.alias.questions.append(q)
+        end
+
+        next if q.position_id.blank?
+
+        q.position = lookup_position(q.position_id)
+        q.position.questions ||= []
+        q.position.questions.append(q)
+      end
+    end
+
     def build
       hook :site, :post_read do |site|
         hydrate_aliases(site)
@@ -75,6 +103,7 @@ module Builders
         hydrate_people(site)
         hydrate_positions(site)
         hydrate_agencies(site)
+        hydrate_questions(site)
       end
     end
   end

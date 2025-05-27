@@ -6,29 +6,13 @@ title: The Support Team
 {%@ "title", title: "The Support Team" %}
 
 {%@ 'text' do %}
-If we can think of the [Wreckers]({{% link "people/wreckers.md" }}) as the offense for DOGE, there are a large number of staff that support their operations. The main group is at OPM
+If we can think of the [Wreckers]({{% link "people/wreckers.md" }}) as the offense for DOGE, there are a large number of stable staff of HR and legal professionals that support their operations. The main group is at {{ agency_link('OPM') }}, where they likely assisted in the overlapping projects to fire large swaths of the workforce and demoralize the rest. 
 {% end %}
 
-{% support_team = site.data.people.select { |c| c.category == 'support'}.sort_by(&:sort_date) %}
-<table class="table is-size-5">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Agency</th>
-      <th>Start Date</th>
-      <th>Position</th>
-    </tr>
-  </thead>
-  <tbody>
-  {% support_team.each do | person|  %}
-    <tr>
-      <td>{{ person_link(person.name) }}</td>
-      <td>{{ person.age }}</td>
-      <td>{{ agency_link(person.start_agency ) }}</td>
-      <td>{{ render EdtfFormat.new(person.start_date, :compact, :filled) }}</td>
-      <td>{% if person.positions.any? %}{{ position_summary(person.positions.first) }}{% end %}</td>
-    </tr>
-  {% end %}
-  </tbody>
-</table>
+<div class="mt-5">
+{% people = site.data.people.select {|p| p.category == 'support'}.sort_by(&:sort_name) %}
+
+{% people.each do |person| %}
+  {%@ "people_page_person", person: person %}
+{% end %}
+</div>

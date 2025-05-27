@@ -8,7 +8,7 @@
 {% end %}
 
 {% if agency.positions.any? %}
-<h2>Positions</h2>
+<h2 class="mt-4 mb-0">Positions</h2>
 
 {%@ 'agency_positions_table', positions: agency.positions %}
 {% end %}
@@ -16,7 +16,7 @@
 {% agency_events = site.data.events.find_all {|e| e.agencies_parents.include? agency.id } %}
 
 {% if agency_events.any? %}
-<h2>Events</h2>
+<h2 class="mt-0 mb-0">Events</h2>
 
 {%@ 'event_timeline', events: agency_events %}
 {% end %}

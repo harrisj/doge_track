@@ -86,6 +86,22 @@ DB.create_table! :people do
   string :table_note
 end
 
+DB.create_table! :questions do
+  string :id, primary_key: true
+  string :question, null: false
+  string :context
+  string :date
+  string :answer
+  string :answer_date
+
+  string :name
+  string :doge_alias_id
+  string :case_no
+  string :agency_id
+  string :govt_system_id
+  string :position_id
+end
+
 DB.create_table! :documents do
   string :id, primary_key: true
   string :name

@@ -1,0 +1,18 @@
+---
+title: Enablers In Depth
+layout: page
+description: A more in-depth look at the specific people within DOGE and the type of work they've done
+---
+{%@ 'title', title: 'Enablers In Depth' %}
+
+{%@ 'text' do %}
+TKTK
+{% end %}
+
+<div class="mt-5">
+{% people = site.data.people.select {|p| p.category == 'enabler'}.sort_by(&:sort_name) %}
+
+{% people.each do |person| %}
+  {%@ "people_page_person", person: person %}
+{% end %}
+</div>

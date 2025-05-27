@@ -233,13 +233,13 @@
 # Department of Labor
 - slug: labor
 - people:
-  - **Aram Moghaddassi**
-  - **Jordan Wick** (2025-02-(13)~) (detailed from DOGE)
+  - **Sam Beyda** (2025-02-(13)~)
   - **Derek Geissler** (2025-02-(13)~)
   - **Cole Killian** (2025-02-(13)~) (detail)
-  - **Sam Beyda** (2025-02-(13)~)
+  - **Jordan Wick** (2025-02-(13)~) (detailed from DOGE)
   - **Marko Elez** (2025-02-(14)~)
   - **Adam Ramada** (2025-02-05) (detailed from DOGE)
+  - **Aram Moghaddassi** (2025-02-XX)
   - **Miles Collins** (2025-03-05)
   - **Thomas Shedd** (2025-03-14) Chief Information Officer
   - **Keith Sonderling** (2025-03-18) Deputy Secretary
@@ -384,25 +384,25 @@
 - people:
   - **Edward Coristine** (2025-01-(20)~)
   - **Ethan Shaotran** (2025-01-20)
+  - **Nicole Hollander** (2025-01-20)
+  - **Jeremy Lewin** (2025-01-20)
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
-  - **Conor Fennessy**
   - **Justin Fox**
-  - **Jeremy Lewin** (2025-01-20)
-  - **Nicole Hollander** (2025-01-20)
   - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
   - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
-  - **Frank Schuler** (2025-02-(18)~) Senior Advisor
   - **Kyle Schutt** (2025-02-(18)~)
+  - **Frank Schuler** (2025-02-(18)~) Senior Advisor
   - **Nate Cavanaugh** (2025-02-03)
   - **Riley Sennott** (2025-02-12)
   - **Donald Park** (2025-02-XX)
+  - **Alexander Simonpour** (2025-03-XX)
   - **Emily Bryant** (2025-03-XX)
   - **Dave Malcher** (2025-04-(24)~)
   - **Raj Jegannathan** (2025-04-(24)~)
-  - **Jonathan Mendelson** (2025-04-(25)~)
-  - **Jack Stein** (2025-04-XX)
-  - **Marshall Wood** (2025-04-XX)
+  - **Jonathan Mendelson** (2025-04-09)
+  - **Jack Stein** (2025-04-15)
+  - **Marshall Wood** (2025-04-21)
 
 # Government Accountability Office
 - slug: gao

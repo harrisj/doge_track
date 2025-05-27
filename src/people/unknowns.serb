@@ -1,0 +1,16 @@
+---
+layout: page
+title: Unknowns
+---
+{%@ "title", title: "Unknowns" %}
+
+{% markdownify do %}
+There are a few DOGE staffers that have been identified in individual reports, but I have no other details about who they are or what they have done exactly.
+
+{% people = site.data.people.select {|p| p.category == 'unknown'}.sort_by(&:sort_name) %}
+
+{% people.each do |person| %}
+  {%@ "people_page_person", person: person %}
+{% end %}
+
+{% end %}
