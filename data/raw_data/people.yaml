@@ -12,8 +12,11 @@
   - id: dot-abrahamson
     type: appointed
     title: Senior Advisor
-    sort_date: 2025-03-20
-    table_note: start date unknown but before 3/26
+    title_type: advisor
+    sort_date: 2025-02-01
+    start_date: 2025-02-XX
+    start_date_truth: reported
+    table_note: start date unknown but ProPublica says "early February"
     source: https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2025/03/26/doge-assembles-a-legal-army-00251903
     agency: DOT
 
@@ -51,6 +54,9 @@
   background: lawyer
   category: wrecker
   page_slug: "/people/wrecker-staff"
+  blurb: >-
+    Jacob Altik is a 2021 graduate of the University of Michigan Law School. Prior to joining DOGE, he clerked for DC Circuit Appeals Judge Neomi Rao, who was a protege of Russell Vought in the first Trump administration. As a lawyer, he is often responsible for backing up DOGE's actions with legal threats,
+    and there are several reported cases of him attempting to browbeat independent agencies into compliance with administration policy. He has also been selected to be a clerk for Supreme Court Justice Neil Gorsuch this summer, so it's unclear how long his tenure with DOGE will last.
   positions:
   - id: opm-jacob-altik
     type: appointed
@@ -63,6 +69,7 @@
     excepted: true
     pd_code: PMGS31263
     title: Senior Advisor to the Director
+    title_type: advisor
     pay_grade: GS-15
     series: '0301'
     supervisory: false
@@ -88,6 +95,7 @@
     from_truth: guessed
     start_date: 2025-04-04
     start_date_truth: reported
+    title_type: advisor
     source: https://www.theverge.com/news/644031/doge-federal-communications-commission-directory
     office: Office of the Chairman
     comment: Assuming he has been detailed from OPM
@@ -106,7 +114,10 @@
   slug: anthony-armstrong
   age: 57
   background: finance
-  category: leadership
+  category: wrecker
+  blurb: >-
+    Anthony Armstrong comes to DOGE from the world of finance, where he worked on Musk's acquisition of Twitter as a bank executive at Morgan Stanley. Since joining DOGE at OPM, he has mostly operated quietly in a support role, but in April he was spotted at the FDIC, and I would expect him to be involved
+    with DOGE's work against other independent financial entities.
   positions:
   - id: detail-opm-dhs-armstrong
     type: detailed
@@ -127,6 +138,7 @@
     excepted: true
     pd_code: 6A39742
     title: Expert
+    title_type: advisor
     pay_grade: ED-00
     series: '0301'
     supervisory: false
@@ -156,7 +168,7 @@
   positions:
   - id: education-balajadia
     type: appointed
-    table_note: NYT links her to Education, but no other info
+    table_note: NYT links her to Education, but no other info found
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
     agency: Education
 
@@ -181,7 +193,9 @@
   slug: alexandra-beynon
   age: 36
   background: coder
-  blurb: Not much is known about Alexandra Beynon's work on behalf of DOGE at the Department of Education. Prior to that, she worked as the head of engineering at her husband's startup company which sold guided ketamine therapy for use in the home.
+  blurb: >-
+    Not much is known about Alexandra Beynon's work on behalf of DOGE at the Department of Education. Prior to that, she worked as the head of engineering at her husband's startup company which sold guided ketamine therapy for use in the home. Although she hasn't been publicly linked to DOGE work at other
+    agencies, Alexandra was one of the recipients cc'ed in an email organizing mass layoffs at the CFPB sent by Gavin Kliger. It's unclear if she has a similar role in the staffing reducations at the Department of Education.
   category: wrecker
   page_slug: "/people/wrecker-staff"
   positions:
@@ -256,6 +270,7 @@
   slug: frank-bisignano
   category: enabler
   page_slug: "/people/enabler-staff/"
+  blurb: Only recently appointed to the head of the Social Security Administration (SSA), Frank Bisignano has admitted to some back-channel coordination the DOGE-affiliated CIO Mike Russo, but he denies that he secretly gave direction to the DOGE team before his nomination was confirmed.
   background: finance
   positions:
   - id: ssa-bisignano
@@ -264,6 +279,7 @@
     start_date: 2025-05-06
     start_date_truth: verified
     title: Commissioner
+    title_type: director
     supervisory: true
     source: https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
 
@@ -285,6 +301,7 @@
     excepted: true
     pd_code: 6A39743
     title: Expert
+    title_type: advisor
     pay_grade: ED-00
     series: '0301'
     supervisory: false
@@ -491,6 +508,7 @@
     start_date: 2025-03-25
     start_date_truth: verified
     title: President
+    title_type: director
     table_note: After the rest of board was ousted, Nate was named President of the agency by Marco Rubio and Pete Hegseth
     comment: Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco Rubio and Pete Hegseth, and he is authorized to transfer all assets to the GSA
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.14.1.pdf
@@ -593,6 +611,7 @@
     start_date: 2025-02-28
     start_date_truth: reported
     title: Senior Advisor for Technology and Modernization
+    title_type: advisor
     sge: true
     salary: "$0"
     end_date: 2025-05-(06)~
@@ -609,6 +628,7 @@
     start_date: 2025-05-(06)~
     start_date_truth: reported
     title: Chief Information Officer
+    title_type: cio
     table_note: Date is approximate per reports. Will update as new details emerge.
     comment: Date is approximate
     source: https://fedscoop.com/doge-sam-corcos-treasury-chief-information-officer/
@@ -696,6 +716,7 @@
     start_date: 2025-02-10
     start_date_truth: reported
     title: Senior Advisor
+    title_type: advisor
     office: Bureau of Diplomatic Technology
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
   - id: detail-gsa-usaid-coristine
@@ -706,6 +727,7 @@
     start_date: 2025-02-10
     start_date_truth: reported
     title: Senior Advisor
+    title_type: advisor
     office: Office of the CIO
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
   - id: internal-dhs-cisa-coristine
@@ -716,6 +738,7 @@
     start_date: 2025-02-19
     start_date_truth: reported
     title: Senior Advisor
+    title_type: advisor
     source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
     comment: Likely assigned from DHS to here
   - id: detail-doge-education-coristine
@@ -802,7 +825,7 @@
     start_date_truth: verified
     description: SES Noncareer Appt
     appt_type_code: 55
-    appt_type: 55-Noncareer (Senior Exec Perm)
+    appt_type: Senior Exec Perm
     pd_code: 6A38487
     title: Deputy General Counsel
     pay_grade: ES-00
@@ -863,6 +886,7 @@
     excepted: true
     pd_code: 6A39749
     title: Expert
+    title_type: advisor
     pay_grade: ED-00
     series: '0301'
     supervisory: false
@@ -885,6 +909,7 @@
   - id: ssa-dudek-commissioner
     type: promotion
     title: Acting Commissioner
+    title_type: director
     agency: SSA
     start_date: 2025-02-16
     start_date_truth: verified
@@ -912,6 +937,7 @@
   - id: gsa-stephen-ehikian
     type: appointed
     title: Acting Administrator
+    title_type: director
     agency: GSA
     start_date: 2025-01-20
     start_date_truth: reported
@@ -973,6 +999,7 @@
     end_date_truth: verified
     table_note: Abruptly resigned when past racist tweets were reported
     title: Special Advisor (IT&M)
+    title_type: advisor
     pd_code: 66893097 C00424
     office: Office of the Chief of Staff
     agency: Treasury
@@ -1032,6 +1059,7 @@
     start_date: 2025-01-20
     start_date_truth: verified
     title: Acting Director
+    title_type: director
     agency: OPM
     source: https://www.govinfo.gov/content/pkg/DCPD-202500108/html/DCPD-202500108.htm
 
@@ -1149,6 +1177,7 @@
     start_date: 2025-02-10
     start_date_truth: reported
     title: Senior Advisor
+    title_type: advisor
     office: Bureau of Diplomatic Technology
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
     table_note: info reported by news source
@@ -1282,6 +1311,7 @@
     start_date: 2025-04-25
     start_date_truth: reported
     title: Senior Advisor
+    title_type: advisor
     office: Office of the Secretary
     source: https://news.bloombergtax.com/international-trade/hegseth-taps-doge-staffer-as-senior-adviser-after-staff-exodus
     agency: DOD
@@ -1298,6 +1328,7 @@
     agency: HHS
     type: unknown
     title: Senior Advisor - DOGE
+    title_type: advisor
     office: Assistant Secretary for Financial Resources
     start_date: 2025-01-XX
     start_date_truth: reported
@@ -1324,6 +1355,7 @@
     excepted: true
     pd_code: 6A39752
     title: Expert
+    title_type: advisor
     pay_grade: ED-00
     series: '0301'
     supervisory: false
@@ -1387,6 +1419,7 @@
     type: promotion
     agency: DOGE
     title: Acting Administrator, US DOGE Service and the DOGE Temporary Organization
+    title_type: director
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.4.pdf
   - id: internal-hhs-cms-gleason
     type: internal
@@ -1401,6 +1434,7 @@
     agency: HHS
     type: appointed
     title: Expert/Consultant
+    title_type: advisor
     start_date: 2025-03-04
     start_date_truth: verified
     comment: All I have is her SF-61
@@ -1419,6 +1453,7 @@
     start_date: 2025-03-XX
     start_date_truth: reported
     title: Senior Advisor
+    title_type: advisor
     source: https://techcrunch.com/2025/03/26/19-founders-and-vcs-working-with-elon-musks-doge/#mike-gonzalez
 
 - name: Antonio Gracias
@@ -1463,6 +1498,7 @@
     source: https://www.nytimes.com/2025/01/29/us/politics/morgan-stanley-grimes-trump-commerce.html
     agency: Commerce
     title: Senior Advisor
+    title_type: advisor
     supervisory: true
 
 - name: Josh Gruenbaum
@@ -1477,6 +1513,7 @@
     type: appointed
     agency: GSA
     title: Federal Acquisition Service Commissioner
+    title_type: dept_head
     supervisory: true
 
 - name: Gavin Hamrick
@@ -1527,6 +1564,7 @@
     excepted: true
     pd_code: 6A39735
     title: Expert
+    title_type: advisor
     pay_grade: ED-00
     series: '0301'
     supervisory: false
@@ -1560,6 +1598,7 @@
     end_date: 2025-04-XX
     end_date_truth: reported
     title: Acting Assistant Secretary of Policy, Management and Budget
+    title_type: dept_head
     table_note: ended with title change to Principal Deputy Assistant Secretary
     supervisory: true
     agency: DOI
@@ -1617,6 +1656,7 @@
     appt_type: SES Noncareer
     pd_code: 6A38081
     title: Senior Advisor to the Director for Technology and Delivery
+    title_type: advisor
     pay_grade: ES-00
     salary: "$195,200"
     series: '0301'
@@ -1638,6 +1678,7 @@
     appt_type: SES Noncareer
     pd_code: 6A39566
     title: Chief Information OFficer
+    title_type: cio
     pay_grade: ES-00
     salary: "$195,200"
     series: '0301'
@@ -1690,6 +1731,7 @@
     start_date: 2025-02-24
     start_date_truth: reported
     title: Special Advisor / Acting Chief Human Capital Officer
+    title_type: dept_head
     source: https://subscriber.politicopro.com/article/eenews/2025/03/05/heres-the-people-connected-to-doge-at-interior-00213330
     agency: DOI
 
@@ -1712,6 +1754,7 @@
     start_date: 2025-03-17
     start_date_truth: reported
     title: Acting President
+    title_type: director
     agency: USIP
     supervisory: true
   - id: usaid-deputy-jackson
@@ -1719,6 +1762,7 @@
     start_date: 2025-03-18
     start_date_truth: verified
     title: Deputy Administrator (Management and Resources)
+    title_type: dept_head
     supervisory: true
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.77.2.pdf
     agency: USAID
@@ -1734,6 +1778,7 @@
   sort_name: Jegannathan
   slug: raj-jegannathan
   background: executive
+  blurb: A relatively new addition to the DOGE staff based in GSA, it's unclear yet what he will be doing.
   category: unknown
   positions:
   - id: gsa-jegannathan
@@ -1846,6 +1891,7 @@
     excepted: true
     pd_code: 6A38025
     title: Senior Advisor to the Director for Information Technology
+    title_type: advisor
     pay_grade: GS-15
     salary: "$195,200"
     series: '0301'
@@ -1903,6 +1949,7 @@
     excepted: true
     pd_code: 6A38025
     title: Senior Advisor to the Director for Information Technology
+    title_type: advisor
     pay_grade: GS-15
     salary: "$195,200"
     series: '0301'
@@ -2013,6 +2060,7 @@
     agency: Treasury
     office: Office of the Chief of Staff
     title: Senior Advisor for Technology and Modernization
+    title_type: advisor
     sge: true
     salary: "$0"
     documents:
@@ -2059,6 +2107,7 @@
     type: unknown
     start_date: 2025-02-10
     title: Senior Advisor
+    title_type: advisor
     start_date_truth: reported
     source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
     agency: HUD
@@ -2075,6 +2124,7 @@
     start_date_truth: reported
     type: appointed
     title: Advisor to the Chief of Staff
+    title_type: advisor
     source: https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
     agency: VA
 
@@ -2102,6 +2152,7 @@
     end_date_truth: inferred
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.77.2.pdf
     title: Senior Advisor / Director for Strategy & Programs
+    title_type: dept_head
   - id: internal-hhs-cms-lewin
     type: internal
     agency: CMS
@@ -2140,11 +2191,13 @@
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.77.2.pdf
     title: Deputy Administrator(Policy and Programming) / COO
+    title_type: dept_head
   - id: state-lewin-foreign
     type: appointed
     start_date: 2025-04-15
     start_date_truth: reported
     title: Acting Head of Foreign Assistance
+    title_type: dept_head
     agency: State
 
 - name: Kendall Lindemann
@@ -2209,6 +2262,7 @@
   - id: opm-makecha
     type: appointed
     title: Senior Advisor
+    title_type: advisor
     sort_date: 2025-03-15
     start_date: 2025-03-XX
     source: https://www.pogo.org/investigations/inside-the-shadowy-crew-leading-the-governments-hr-office
@@ -2217,6 +2271,7 @@
   - id: fbi-makecha
     type: detailed
     title: Senior Advisor
+    title_type: advisor
     office: Human Resources
     sort_date: 2025-03-30
     start_date: 2025-03-(30)~
@@ -2289,6 +2344,7 @@
   - id: dhs-mccord
     type: appointed
     title: Chief Information Officer
+    title_type: cio
     agency: DHS
     start_date: 2025-03-11
     start_date_truth: reported
@@ -2354,6 +2410,7 @@
     type: appointed
     agency: HHS
     title: Chief Information Officer
+    title_type: cio
     start_date: 2025-02-14
     start_date_truth: reported
     source: https://orangeslices.ai/hhs-it-office-recruits-new-chief-from-palantir/
@@ -2415,6 +2472,7 @@
     excepted: true
     pd_code: 6A39750
     title: Expert
+    title_type: advisor
     pay_grade: ED-00
     series: '0301'
     supervisory: false
@@ -2528,6 +2586,7 @@
     excepted: true
     pd_code: 6A39734
     title: Expert
+    title_type: advisor
     pay_grade: ED-00
     series: '0301'
     supervisory: false
@@ -2590,6 +2649,7 @@
     start_date_truth: reported
     agency: EOP
     title: Deputy Assistant to the President / Deputy Director of Presidential Personnel
+    title_type: dept_head
     supervisory: true
 
 - name: Elon Musk
@@ -2615,6 +2675,7 @@
   - id: treasury-newnam
     type: appointed
     title: Senior Advisor
+    title_type: advisor
     start_date: 2025-03-06
     start_date_truth: verified
     sge: false
@@ -2629,6 +2690,7 @@
   - id: internal-treasury-irs-newnam
     type: internal
     title: Senior Advisor
+    title_type: advisor
     start_date: 2025-04-XX
     start_date_truth: verified
     fuzz: Identity is only revealed in a court filing
@@ -2685,6 +2747,7 @@
     excepted: true
     pd_code: 6A38859
     title: Senior Advisor
+    title_type: advisor
     pay_grade: GS-15
     series: '0301'
     supervisory: false
@@ -2822,6 +2885,7 @@
     excepted: true
     pd_code: 6A39748
     title: Senior Advisor
+    title_type: advisor
     pay_grade: GS-15
     series: '0301'
     supervisory: false
@@ -2894,6 +2958,7 @@
     type: appointed
     agency: Energy
     title: Chief Information Officer
+    title_type: cio
     start_date: 2025-02-07
     start_date_truth: reported
     end_date: 2025-03-07
@@ -2966,6 +3031,7 @@
   - id: ssa-mike-russo-cio
     type: appointed
     title: Chief Information Officer
+    title_type: cio
     agency: SSA
     start_date: 2025-01-31
     start_date_truth: reported
@@ -2979,6 +3045,7 @@
     start_date: 2025-03-25
     start_date_truth: reported
     title: Senior Advisor
+    title_type: advisor
     supervisory: false
     comment: Scott Coulter is named the new CIO at the Social Security Administration and Mike Russo is moved to a Senior Advisor role with a focus on modernizing systems
     source: https://www.nextgov.com/people/2025/03/ssa-tech-shop-be-led-another-doge-associate/404031/?oref=ng-homepage-river
@@ -3002,6 +3069,7 @@
     appt_type: 55-Noncareer (Senior Exec Perm)
     pd_code: GAPMES00905
     title: Chief of Staff
+    title_type: dept_head
     pay_grade: ES-00
     series: '0301'
     supervisory: true
@@ -3021,6 +3089,7 @@
   - id: gsa-frank-schuler
     type: appointed
     title: Senior Advisor
+    title_type: advisor
     agency: GSA
     sort_date: 2025-02-18
     start_date: 2025-02-(18)~
@@ -3099,6 +3168,7 @@
     start_date: 2025-02-19
     start_date_truth: reported
     title: Senior Advisor
+    title_type: advisor
     source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
   - id: detail-gsa-hhs-kyle-schutt
     type: detailed
@@ -3146,6 +3216,7 @@
     start_date_truth: verified
     type: appointed
     title: Senior Advisor
+    title_type: advisor
     office: Office of the Administrator
     agency: NOAA
 
@@ -3244,6 +3315,7 @@
     type: appointed
     agency: GSA
     title: Deputy FAS Commissioner / Administrator
+    title_type: cio
     office: Technology Transformation Service
     start_date: 2025-01-24
     start_date_truth: reported
@@ -3255,6 +3327,7 @@
     start_date_truth: reported
     agency: DOL
     title: Chief Information Officer
+    title_type: cio
     supervisory: true
     source: https://www.nextgov.com/people/2025/03/tts-director-tapped-serve-labor-cio/403855/?oref=ng-home-top-story
 
@@ -3339,6 +3412,7 @@
     agency: HHS
     type: appointed
     title: Senior Advisor
+    title_type: advisor
     start_date: 2025-03-04
     comment: All I have is his signed SF-61
     documents:
@@ -3354,6 +3428,7 @@
     start_date: 2025-03-18
     start_date_truth: reported
     title: Deputy Secretary
+    title_type: dept_head
     supervisory: true
     source: https://news.artnet.com/art-world/doge-imls-institute-museum-library-services-2623286
     agency: DOL
@@ -3362,6 +3437,7 @@
     start_date: 2025-03-20
     start_date_truth: reported
     title: Acting Director
+    title_type: director
     source: https://news.artnet.com/art-world/doge-imls-institute-museum-library-services-2623286
     agency: IMLS
 
@@ -3396,6 +3472,7 @@
     excepted: true
     pd_code: 6A39736
     title: Expert
+    title_type: advisor
     pay_grade: ED-00
     series: '0301'
     supervisory: false
@@ -3405,6 +3482,7 @@
     - opm-foia-doge-positions
   - id: fhfa-christopher-stanley
     title: Board Member, Fannie Mae/Freddie Mac
+    title_type: other
     type: appointed
     start_date: 2025-03-17
     start_date_truth: reported
@@ -3422,6 +3500,7 @@
     start_date: 2025-04-(02)~
     start_date_truth: reported
     title: Senior Advisor
+    title_type: advisor
     office: Deputy Attorney General
     comment: Date is approximate. Assuming detailed from OPM
     source: https://www.reuters.com/technology/cybersecurity/doge-official-doj-bragged-about-hacking-distributing-pirated-software-2025-04-02/
@@ -3440,6 +3519,7 @@
     end_date: 2025-02-27
     end_date_truth: reported
     title: Senior Advisor
+    title_type: advisor
     office: Office of the Commissioner
     source: https://bsky.app/profile/chrisgeidner.bsky.social/post/3lipqblfluc2h
     agency: SSA
@@ -3448,6 +3528,7 @@
     start_date: 2025-02-27
     start_date_truth: reported
     title: Acting General Counsel
+    title_type: chief_counsel
     office: Office of the Commissioner
     table_note: promoted within two days of being appointed
     source: https://web-cdn.bsky.app/profile/chrisgeidner.bsky.social/post/3ljb6rufur22e
@@ -3483,6 +3564,7 @@
     start_date_truth: reported
     fuzz: Appeared in the ProPublica roundup
     title: Senior Advisor to the Secretary
+    title_type: advisor
     office: Office of the Secretary
     agency: DOT
     source: https://projects.propublica.org/elon-musk-doge-tracker/#Brian-Stube
@@ -3582,6 +3664,7 @@
     type: appointed
     agency: CFPB
     title: Acting Director
+    title_type: director
     supervisory: true
     start_date: 2025-02-08
     start_date_truth: verified
@@ -3667,6 +3750,7 @@
   - id: cfpb-jordan-wick
     type: appointed
     title: Expert/Consultant
+    title_type: advisor
     comment: All I have is his SF-61
     start_date: 2025-03-05
     documents:
@@ -3700,6 +3784,7 @@
     excepted: true
     pd_code: 6A36647
     title: Senior Advisor to the Director
+    title_type: advisor
     pay_grade: GS-15
     series: '0301'
     supervisory: false
@@ -3766,6 +3851,7 @@
     excepted: true
     pd_code: 6A39737
     title: Expert
+    title_type: advisor
     pay_grade: ED-00
     series: '0301'
     supervisory: false

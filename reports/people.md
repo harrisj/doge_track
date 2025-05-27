@@ -1,7 +1,7 @@
 # Daniel Abrahamson
 - category: support
 - positions:
-    -  **DOT**  Senior Advisor
+    -  **DOT** (2025-02-XX to ??) Senior Advisor
 
 # Justin Aimonetti
 - category: support
@@ -22,7 +22,7 @@
 - category: booster
 
 # Anthony Armstrong
-- category: leadership
+- category: wrecker
 - positions:
     -  **OPM** (2025-01-20 to ??) Expert ED-00
     -  **FDIC** (2025-04-10 to ??) 

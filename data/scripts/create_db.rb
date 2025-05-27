@@ -59,6 +59,7 @@ DB.create_table! :positions do
   boolean :sge
   boolean :excepted
   string :title
+  string :title_type
   string :series
   boolean :supervisory
   string :office

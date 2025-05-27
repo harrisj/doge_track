@@ -297,7 +297,7 @@
 # Department of Transportation
 - slug: dot
 - people:
-  - **Daniel Abrahamson** Senior Advisor
+  - **Daniel Abrahamson** (2025-02-XX) Senior Advisor
   - **Brian Stube** (2025-05-(07)~) Senior Advisor to the Secretary
 
 # Environmental Protection Agency

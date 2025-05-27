@@ -131,7 +131,7 @@
 %}
 
 {% macro "people_links" do |people_list|
-    people(people_list).map {|p| person_link(p)}.compact.join(", ").html_safe
+    people_list.map {|p| person_link(p)}.compact.join(", ").html_safe
   end
 %}
 

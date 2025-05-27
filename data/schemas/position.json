@@ -101,6 +101,10 @@
       "description": "The title for the position",
       "type": "string"
     },
+    "title_type": {
+      "description": "The type of the title",
+      "$ref": "valid_names.json#title_types"
+    },
     "series": {
       "description": "The series for the position",
       "type": "string"

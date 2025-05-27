@@ -9,6 +9,39 @@ title: Enablers
 
 DOGE are not a collection of super-hackers. They don't trick their way into agencies through side doors. Rather, they are almost always invited in by a senior leader who authorizes them with wide-ranging access and supports them if they need to steamroll any opposition. I call this category enablers, and they aren't always DOGE associates (for instance, Marco Rubio or other appointees are often enablers). This page doesn't list all the enablers for DOGE's activities in the federal government, but it does list those that come from within DOGE's orbit.
 
+## Shielding from Scrutiny
+
+At major agencies, the DOGE staff are given titles like "Senior Advisor" and situated within the Office of the Director. In the case of {{ agency_link('OPM') }} and {{ agency_link('GSA') }}, DOGE staff have taken this literally and built walled-off and guarded enclaves accessible only to DOGE employees, but even as just an org-chart designation, it provides powerful protection to DOGE staff as they work in the agency. By being in the Director's Office, they are often granted enhanced privileges but with reduced oversight. The following table illustrates how common this practice is. It is a list of DOGE staff at various agencies with the documented title of "Senior Advisor" (or similar) or who report into either the agency director or the CIO (who often has delegated authority over the systems that DOGE wants access to).
+
+{% agencies = site.data.agencies.select {|a| a.parent_id.blank?} %}
+
+<table class="table table-xs sm:table-sm md:table-md">
+<thead>
+  <tr>
+    <th>Agency</th>
+    <th>DOGE Leader</th>
+    <th>Advisors</th>
+  </tr>
+</thead>
+<tbody>
+{% agencies.each do |agency| %}
+   {% if agency.positions && agency.positions.any? {|pos| %w[director cio].include?(pos.title_type)} %}
+    {% doge_heads = agency.positions.select {|pos| %w[director].include?(pos.title_type) }.map(&:name).uniq.compact %}
+    {% front_office_names = ["Office of the Director", "Office of the Chairman", "Office of the Chief Information Officer", "Office of the CIO", "Office of the Chief of Staff", "Office of the Secretary", "Office of the Administrator", "Office of the Deputy Administrator", "Office of the Commissioner"] %}
+    {% other_doge = agency.positions.select {|pos| (%w[advisor cio chief_counsel dept_head].include?(pos.title_type) || front_office_names.include?(pos.office)) && !doge_heads.include?(pos.name) }.map(&:name).uniq.compact %}
+    {% next unless other_doge.any? %}
+    <tr>
+      <td>{{ agency_link(agency) }}</td>
+      <td>{% if doge_heads %}{{ doge_heads | people_links }}{% end %}</td>
+      <td>{{ other_doge | people_links }}</td>
+    </tr>
+   {% end %}
+{% end %}
+</tbody>
+</table>
+
+This table only includes people who whom we have definite information about their titles or offices. The actual list is likely even larger. In addition, gaps in the DOGE heads column don't indicate that agency leadership is indifferent or even hostile to DOGE. For instance, I'm not counting Secretary of State Marco Rubio in my list of DOGE names, but I don't think I've seen any examples of him thwarting their ambitions at any agency he is either the director or acting director of. And speaking of acting...
+
 ## Acting Leadership
 {% acting = site.data.positions.select { |p| p.title =~ /acting/i }.sort_by(&:sort_date) %}
 
