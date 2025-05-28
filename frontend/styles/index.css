@@ -68,6 +68,10 @@ layer(base);
     font-family: "Special Elite", serif;
   }
 
+  .tab-cell-first {
+    @apply text-left min-w-[95px] sm:min-w-auto;
+  }
+
   .my-text-2xl {
     @apply prose prose-xl sm:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
   }

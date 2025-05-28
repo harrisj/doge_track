@@ -1,0 +1,5 @@
+<ul class="prose max-w-none mt-0 mb-0">
+  {% questions.each do |q| %}
+  <li>{{ q.question }}</li>
+  {% end %}
+</ul>

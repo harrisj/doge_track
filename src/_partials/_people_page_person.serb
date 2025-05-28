@@ -10,6 +10,7 @@
 </div>
 
 {% if person.positions.any? %}
+<h3 class="sm:ml-7 md:ml-8 lg:ml-9.5 mb-0 mt-0 text-lg md:text-xl">Positions</h3>
 <div class="sm:ml-3 md:ml-4 lg:ml-5 ">
     {%@ 'person_positions_table', positions: person.positions %}
 </div>
@@ -22,3 +23,11 @@
 </div>
 {% end %}
 </div>
+
+{% open_questions = site.data.questions.select {|q| q.name == person.name && q.answer.blank?} %}
+{% if open_questions.any? %}
+<h3 class="sm:ml-7 md:ml-8 lg:ml-9.5 mb-0 mt-0 text-lg md:text-xl">Open Questions</h3>
+<div class="sm:ml-5 md:ml-6 lg:ml-7 ">
+    {%@ 'questions_list', questions: open_questions %}
+</div>   
+{% end %}

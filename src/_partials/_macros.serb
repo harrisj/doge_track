@@ -4,6 +4,26 @@
   end
 %}
 
+{% macro "lookup_person" do |name|
+    site.data.people.find { |p| p.name == name } || raise("Couldn't find person #{name}")
+end %}
+
+{% macro 'lookup_agency' do |agency_id|
+    site.data.agencies.find { |a| a.id == agency_id } || raise("Couldn't find agency #{agency_id}")
+end %}
+
+{% macro 'lookup_alias' do |alias_id|
+    site.data.aliases.find { |a| a.id == alias_id } || raise("Couldn't find alias #{alias_id}")
+  end %}
+
+{% macro 'lookup_event' do |event_id|
+    site.data.events.find { |e| e.id == event_id } || raise("Couldn't find event #{event_id}")
+  end %}
+
+{% macro 'lookup_position' do |pos_id|
+    site.data.positions.find { |p| p.id == pos_id } || raise("Couldn't find position #{pos_id}")
+  end %}
+
 {% macro "find_person" do |p_id|
     if p_id.is_a?(String)
       site.data.people.find {|p| p.name.downcase == p_id || p.slug == p_id || p.sort_name.downcase == p_id.downcase }
@@ -263,6 +283,16 @@
    end
 %}
 
+{% macro "question_links" do |obj| 
+    if obj.questions && obj.questions.any?
+      questions = obj.questions.map {|q| "<a class=\"link-hover tooltip\" href=\"/questions##{q.id}\" data-tip=\"Open Question: #{q.question}\"><i class=\"fa-solid fa-circle-question\"></i></a>"}
+      questions_str = questions.join(" ")
+    else
+      nil
+    end
+   end
+%}
+
 {% macro "position_move" do |pos| 
   if pos.agency_id
     raise pos.inspect if pos.agency.nil?
@@ -344,10 +374,7 @@ end %}
       docs_str = "[docs: #{links.join(', ')}]"
     end
 
-    if pos.questions && pos.questions.any?
-      questions = pos.questions.map {|q| "<a class=\"link-hover tooltip\" href=\"/questions##{q.id}\" data-tip=\"Open Question: #{q.question}\"><i class=\"fa-solid fa-circle-question\"></i></a>"}
-      questions_str = questions.join(" ")
-    end
+    questions_str = question_links(pos)
 
     out_str = [alias_ident_str, type_str, title_str, hire_str, note_str, source_str, docs_str, questions_str].map {|x| x.blank? ? nil : x }.compact.map {|x| "<span>#{x}</span>"}.join(" ")
 

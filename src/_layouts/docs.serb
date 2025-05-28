@@ -1,6 +1,6 @@
 ---
 layout: page
 ---
-<div class="prose prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert">
-  {{ content | markdownify }}
+<div class="prose max-w-none prose-li:m-[0.1em] dark:prose-invert">
+  {{ content | md }}
 </div>

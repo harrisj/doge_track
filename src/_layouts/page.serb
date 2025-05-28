@@ -15,7 +15,7 @@ layout: default
 
 <div class="md:container md:max-w-5xl md:mx-auto px-1 sm:px-2">
   {%@ 'header_bar', metadata: site.metadata, prev_pg: prev_pg, next_pg: next_pg %}
-  <main class="my-text flex flex-col min-h-screen px-3">
+  <main class="min-h-screen px-3">
     {{ content }}
   </main>
 

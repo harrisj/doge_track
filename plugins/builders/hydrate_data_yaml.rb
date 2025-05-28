@@ -75,27 +75,32 @@ module Builders
     def hydrate_questions(site)
       site.data.questions.each do |q|
         unless q.name.blank?
-          q.person = lookup_person(q.name)
-          q.person.questions ||= []
-          q.person.questions.append(q)
+          person = lookup_person(q.name)
+          person.questions.append(q)
         end
 
         unless q.agency_id.blank?
-          q.agency = lookup_agency(q.agency_id)
-          q.agency.questions ||= []
-          q.agency.questions.append(q)
+          agency = lookup_agency(q.agency_id)
+          agency.questions ||= []
+          agency.questions.append(q)
         end
 
         unless q.alias.blank?
-          q.alias = lookup_alias(q.alias)
-          q.alias.questions ||= []
-          q.alias.questions.append(q)
+          doge_alias = lookup_alias(q.alias)
+          doge_alias.questions ||= []
+          doge_alias.questions.append(q)
+        end
+
+        unless q.event_id.blank?
+          event = lookup_event(q.event_id)
+          devent.questions ||= []
+          event.questions.append(q)
         end
 
         next if q.position_id.blank?
 
-        q.position = lookup_position(q.position_id)
-        q.position.questions.append(q)
+        position = lookup_position(q.position_id)
+        position.questions.append(q)
       end
     end
 

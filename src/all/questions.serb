@@ -1,0 +1,38 @@
+---
+title: All Open Questions
+description: A page collecting all the open questions about people, agencies, systems, etc. that I am curious about
+layout: page
+---
+{%@ 'title', title: 'All Questions' %}
+{% import "macros" %}
+
+<ul class="list px-0">
+{% site.data.questions.each do |q| %}
+<li class="list-row m-0 p-0 pb-1 pt-0.5 gap-1">
+  <div class="text-md font-serif sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl align-top">Q</div>
+  <div class="mt-1 sm:mt-1.5 sm:ml-0.5">
+    <div class="flex flex-wrap content-center align-top leading-5 no-prose">
+      <div class="flex-none pe-2">{{ render EdtfFormat.new(q.date, :iso) }}</div>
+      {% if q.agency_id %}
+        <div class="flex-none pe-2"><i class="fas fa-building mr-1"></i>{{ agency_link(q.agency_id) }}</div>
+      {% end %}
+      {% if q.name %}
+        <div class="flex-none pe-2"><i class="fas fa-user mr-1"></i>{{ person_link(q.name) }}</div>
+      {% end %}
+      {% if q.alias %}
+        <div class="flex-none pe-2"><i class="fas fa-secret-user mr-1"></i>{{ q.alias }}</div>
+      {% end %}
+      {% if q.event_id %}
+        <div class="flex-none pe-2">Event {{ q.event_id }}</div>
+      {% end %}
+      {% if q.position_id %}
+        <div class="flex-none pe-2">Event {{ q.position_id }}</div>
+      {% end %}
+    </div>
+    <div class="pt-1 prose-sm sm:prose-md md:prose-md lg:prose-lg xl:prose-lg leading-5">{{ q.question }}</div>
+    <div class="pt-1 prose-sm prose-sm lg:prose-md leading-5">{{ q.context }}</div>
+  </div>
+</li>
+{% end %}
+</ul>
+
