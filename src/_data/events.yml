@@ -371,7 +371,7 @@
   date: 2025-01-(16)~
   sort_date: '2025-01-16'
   time:
-  text: Noah Peters discusses using administrative leave to sideline federal employees with Keenan Kmiec
+  text: Noah Peters outlines with Keenan Kmiec the plan on how to use administrative leave to sideline federal employees
   fuzz: Date is approximate in deposition
   comment:
   source: https://storage.courtlistener.com/recap/gov.uscourts.cand.444883/gov.uscourts.cand.444883.188.1.pdf
@@ -399,8 +399,8 @@
   - OPM
   obj_type: Event
   linkified_text: >-
-    <a class="link-hover" href="/people/support-team#noah-peters">Noah Peters</a> discusses using administrative leave to sideline federal employees with
-    <a class="link-hover" href="/people/support-team#keenan-kmiec">Keenan Kmiec</a>
+    <a class="link-hover" href="/people/support-team#noah-peters">Noah Peters</a> outlines with <a class="link-hover" href="/people/support-team#keenan-kmiec">Keenan
+    Kmiec</a> the plan on how to use administrative leave to sideline federal employees
 - id: VkGMhZUR
   type: action
   date: 2025-01-(16)~
@@ -8718,8 +8718,8 @@
   - EOP
   obj_type: Event
   linkified_text: >-
-    <a class="link-hover" href="/all/people#elon-musk">Elon Musk</a> visits the <a class="link-hover" href="/agencies/underreported">NSA</a> to meet with
-    its top administrator, General Timothy Haugh
+    <a class="link-hover" href="/all/people#elon-musk">Elon Musk</a> visits the <a class="link-hover" href="/agencies/defense">NSA</a> to meet with its
+    top administrator, General Timothy Haugh
 - id: 7mtGbnRJ
   type: legal
   date: '2025-03-12'
@@ -12135,9 +12135,9 @@
     wanting to focus only on infectious diseases
   fuzz:
   comment:
-  source: The New York Times
+  source: https://www.nytimes.com/2025/04/01/us/politics/trump-federal-layoffs-health-food.html
   source_title:
-  source_name:
+  source_name: NYT
   case_no:
   track_id:
   system_id:
@@ -12636,7 +12636,7 @@
   - NSA
   - DOD
   obj_type: Event
-  linkified_text: The head and deputy leader of the <a class="link-hover" href="/agencies/underreported">NSA</a> are both relieved of their command
+  linkified_text: The head and deputy leader of the <a class="link-hover" href="/agencies/defense">NSA</a> are both relieved of their command
 - id: iUYtxUSw
   type: disruption
   date: '2025-04-02'
@@ -16274,6 +16274,37 @@
     Ruling in Rhode Island v. Trump, Judge McConnell grants a preliminary injunction preventing <a class="link-hover" href="/agencies/white-house">DOGE</a>
     and the Trump Administration from dismantling the <a class="link-hover" href="/agencies/independent">IMLS</a>, <a class="link-hover" href="/agencies/independent">MBDA</a>
     and <a class="link-hover" href="/agencies/independent">FMCS</a> while the case is active.
+- id: 50bUuY8i
+  type: disruption
+  date: '2025-05-14'
+  sort_date: '2025-05-14'
+  time:
+  text: After rescinding 300 layoffs, the head of human resources at CDC emails Rachel Riley to share a plan to fire someone else for anybody who returns
+  fuzz:
+  comment:
+  source: https://www.govexec.com/workforce/2025/05/CDC-cut-one-employee-each-it-recalling-layoffs/405336/
+  source_title: https://www.govexec.com/workforce/2025/05/CDC-cut-one-employee-each-it-recalling-layoffs/405336/
+  source_name: GovExec
+  case_no:
+  track_id:
+  system_id:
+  names:
+  - Rachel Riley
+  agency_ids:
+  - CDC
+  alias_ids: []
+  names_aliases:
+  - name: Rachel Riley
+    slug: rachel-riley
+    sort_name: Riley
+    category: wrecker
+  agencies_parents:
+  - CDC
+  - HHS
+  obj_type: Event
+  linkified_text: >-
+    After rescinding 300 layoffs, the head of human resources at <a class="link-hover" href="/agencies/health">CDC</a> emails <a class="link-hover" href="/people/wrecker-staff#rachel-riley">Rachel
+    Riley</a> to share a plan to fire someone else for anybody who returns
 - id: 3b9znEPp
   type: legal
   date: '2025-05-14'

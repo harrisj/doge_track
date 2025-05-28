@@ -112,6 +112,7 @@ def generate_people_yaml
     rec['event_ids'] = p.events.map(&:id) # events_for_output(p.events)
     rec['system_access'] = p.system_roles.map(&:id)
     rec['obj_type'] = 'Person'
+    rec['linkified_blurb'] = linkify_text(p.blurb) unless p.blurb.nil?
 
     if p.positions.any?
       pos = p.positions.first

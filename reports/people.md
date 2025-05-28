@@ -843,7 +843,7 @@
 # Russell Vought
 - category: enabler
 - positions:
-    -  **EOP**  
+    -  **EOP** (2025-02-07 to ??) **Director**
     -  **CFPB** (2025-02-08 to ??) **Acting Director**
 
 # Linda Whitridge

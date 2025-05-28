@@ -315,8 +315,8 @@
 # Executive Office of the President
 - slug: eop
 - people:
-  - **Russell Vought**
   - **Trent Morse** (2025-01-23) Deputy Assistant to the President / Deputy Director of Presidential Personnel
+  - **Russell Vought** (2025-02-07) Director
 
 # Export-Import Bank of the United States
 - slug: exim

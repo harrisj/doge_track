@@ -19,6 +19,6 @@ end
 
 File.open(questions_file, 'w') do |file|
   schema_hdr = "# yaml-language-server: $schema=../schemas/questions-file.json\n"
-  out_yaml = YAML.dump(questions, line_width: 300, stringify_names: true, header: false)
+  out_yaml = YAML.dump(questions, line_width: 100, stringify_names: true, header: false)
   file.write(schema_hdr, out_yaml.gsub(/^- /, "\n- "))
 end

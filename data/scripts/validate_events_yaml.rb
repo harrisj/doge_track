@@ -22,8 +22,10 @@ def validate_event(event, cases)
     event[:id] = ShortUUID.shorten(id)[0...8]
   end
 
+  raise "Event #{event[:id]} has no source" unless event.key?(:source)
+
   if event[:case_no] && !event[:source_name]
-    event[:source_name] = 'Court Filing'
+    event[:source_name] = 'court doc'
     event[:source_title] = cases.find { |c| c[:case_no] == event[:case_no] }.fetch(:name)
   end
 
@@ -74,12 +76,12 @@ end
 
 File.open(interagency_file, 'w') do |file|
   schema_hdr = "# yaml-language-server: $schema=../schemas/interagency-events-file.json\n"
-  out_yaml = YAML.dump(interagency_events, line_width: 150, stringify_names: true, header: false)
+  out_yaml = YAML.dump(interagency_events, line_width: 100, stringify_names: true, header: false)
   file.write(schema_hdr, out_yaml.gsub(/^- /, "\n- "))
 end
 
 File.open(agencies_file, 'w') do |file|
   schema_hdr = "# yaml-language-server: $schema=../schemas/agencies-file.json\n"
-  out_yaml = YAML.dump(agencies, line_width: 300, stringify_names: true, header: false)
+  out_yaml = YAML.dump(agencies, line_width: 100, stringify_names: true, header: false)
   file.write(schema_hdr, out_yaml.gsub(/^- /, "\n- "))
 end
