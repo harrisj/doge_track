@@ -25,7 +25,7 @@ num_cols +=1 if icon_col %}
       {% if icon_col %}<td class="align-top w-min-content"><i class="fa {{ event_icon(event) }}"></i></td>{% end %}
       {% if agency_col %}<td class="align-top">{{ event.agencies | map: ->a { a.short_name } | sort | join: ", " }}</td>{% end %}
       <td class="align-top">
-        <div class="font-mono">{{ event.linkified_text | raw }}{% if event.fuzz %}&nbsp;[{{ event.fuzz | md }}]{% end %}{% if event.source && event.source_name %} <span class="text-nowrap">(<a href="{{ event.source }}" class="link-hover"><i class="fa-regular fa-newspaper"></i>&nbsp;<span class="italic text-xs">{{ event.source_name }}</a></span>)</span>{% end %}</div>
+        <div class="font-mono">{{ event.linkified_text | raw }}{% if event.fuzz %}&nbsp;[{{ event.fuzz | md }}]{% end %}{% if event.source && event.source_name %} <span class="text-nowrap">(<a href="{{ event.source }}" class="link-hover"><i class="fa-regular fa-newspaper"></i>&nbsp;<span class="italic text-xs">{{ event.source_name }}</span></a>)</span>{% end %}</div>
         {% if event.type == 'directory' %}
           <div>
             {% event.names_aliases.group_by(&:category).sort_by {|c, p| p.size}.reverse.each do |category, people| %}

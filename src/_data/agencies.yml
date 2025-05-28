@@ -5,8 +5,8 @@
   page_slug: independent
   short_name: ACHP
   doge_base: false
-  path: "/agencies/independent#achp"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids: []
   event_ids:
@@ -20,8 +20,8 @@
   page_slug: independent
   short_name: AmeriCorps
   doge_base: false
-  path: "/agencies/independent#americorps"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids: []
   event_ids:
@@ -36,8 +36,8 @@
   page_slug: health
   short_name: CDC
   doge_base: true
-  path: "/agencies/health#cdc"
   parent_id: HHS
+  path: "/agencies/health"
   children: []
   position_ids:
   - internal-hhs-cdc-farritor
@@ -63,8 +63,8 @@
   page_slug: health
   short_name: CMS
   doge_base: true
-  path: "/agencies/health#cms"
   parent_id: HHS
+  path: "/agencies/health"
   children: []
   position_ids:
   - internal-hhs-cms-farritor
@@ -117,8 +117,8 @@
   page_slug: other-majors
   short_name: CIA
   doge_base: false
-  path: "/agencies/other-majors#cia"
   parent_id:
+  path: "/agencies/cia#cia"
   children: []
   position_ids: []
   event_ids:
@@ -131,8 +131,8 @@
   page_slug:
   short_name: Commerce
   doge_base: true
-  path: "/agencies#commerce"
   parent_id:
+  path: "/agencies#commerce"
   children:
   - Census
   - NOAA
@@ -156,8 +156,8 @@
   page_slug: self
   short_name: CFPB
   doge_base: true
-  path: "/agencies/cfpb"
   parent_id:
+  path: "/agencies/cfpb"
   children: []
   position_ids:
   - detail-gsa-cfpb-luke-farritor
@@ -226,8 +226,8 @@
   page_slug: commerce
   short_name: Census
   doge_base: false
-  path: "/agencies/commerce#census"
   parent_id: Commerce
+  path: "/agencies/commerce"
   children: []
   position_ids: []
   event_ids:
@@ -241,8 +241,8 @@
   page_slug: independent
   short_name: CPSC
   doge_base: false
-  path: "/agencies/independent#cpsc"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids: []
   event_ids:
@@ -257,8 +257,8 @@
   page_slug: independent
   short_name: CPB
   doge_base: false
-  path: "/agencies/independent#cpb"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids: []
   event_ids:
@@ -274,8 +274,8 @@
   page_slug: homeland-security
   short_name: CBP
   doge_base: true
-  path: "/agencies/homeland-security#cbp"
   parent_id: DHS
+  path: "/agencies/homeland-security"
   children: []
   position_ids:
   - internal-dhs-cpb-elez
@@ -290,8 +290,8 @@
   page_slug: homeland-security
   short_name: CISA
   doge_base: true
-  path: "/agencies/homeland-security#cisa"
   parent_id: DHS
+  path: "/agencies/homeland-security"
   children: []
   position_ids:
   - internal-dhs-cisa-coristine
@@ -310,8 +310,8 @@
   page_slug: other-majors
   short_name: USDA
   doge_base: true
-  path: "/agencies/other-majors#usda"
   parent_id:
+  path: "/agencies/usda#usda"
   children: []
   position_ids:
   - detail-opm-usda-kliger
@@ -333,8 +333,8 @@
   page_slug: defense
   short_name: Defense
   doge_base: true
-  path: "/agencies/defense#defense"
   parent_id:
+  path: "/agencies/defense"
   children:
   - NSA
   position_ids:
@@ -362,8 +362,8 @@
   page_slug: interior
   short_name: DOI
   doge_base: true
-  path: "/agencies/interior#interior"
   parent_id:
+  path: "/agencies/interior"
   children: []
   position_ids:
   - doi-hassen
@@ -399,8 +399,8 @@
   page_slug: white-house
   short_name: DOGE
   doge_base: true
-  path: "/agencies/white-house#doge"
   parent_id: EOP
+  path: "/agencies/white-house"
   children: []
   position_ids:
   - doge-amy-gleason
@@ -487,8 +487,8 @@
   page_slug: homeland-security
   short_name: DHS
   doge_base: true
-  path: "/agencies/homeland-security#dhs"
   parent_id:
+  path: "/agencies/homeland-security"
   children:
   - CBP
   - CISA
@@ -571,8 +571,8 @@
   page_slug: justice
   short_name: DOJ
   doge_base: true
-  path: "/agencies/justice#doj"
   parent_id:
+  path: "/agencies/justice"
   children:
   - FBI
   position_ids:
@@ -605,8 +605,8 @@
   page_slug: education
   short_name: Ed
   doge_base: true
-  path: "/agencies/education#education"
   parent_id:
+  path: "/agencies/education"
   children: []
   position_ids:
   - education-balajadia
@@ -639,11 +639,11 @@
 - id: Energy
   name: Department of Energy
   slug: energy
-  page_slug: energy
+  page_slug: other-majors
   short_name: Energy
   doge_base: true
-  path: "/agencies/energy#energy"
   parent_id:
+  path: "/agencies/energy#energy"
   children: []
   position_ids:
   - detail-gsa-energy-luke-farritor
@@ -662,8 +662,8 @@
   page_slug: labor
   short_name: DOL
   doge_base: true
-  path: "/agencies/labor#labor"
   parent_id:
+  path: "/agencies/labor"
   children: []
   position_ids:
   - dol-sam-beyda
@@ -708,8 +708,8 @@
   page_slug:
   short_name: Treasury
   doge_base: true
-  path: "/agencies#treasury"
   parent_id:
+  path: "/agencies#treasury"
   children:
   - IRS
   position_ids:
@@ -777,8 +777,8 @@
   page_slug: transportation
   short_name: DOT
   doge_base: true
-  path: "/agencies/transportation#dot"
   parent_id:
+  path: "/agencies/transportation"
   children:
   - FAA
   position_ids:
@@ -803,8 +803,8 @@
   page_slug: other-majors
   short_name: EPA
   doge_base: true
-  path: "/agencies/other-majors#epa"
   parent_id:
+  path: "/agencies/epa#epa"
   children: []
   position_ids:
   - detaile-doge-epa-killian
@@ -827,8 +827,8 @@
   page_slug: doge
   short_name: EOP
   doge_base: true
-  path: "/agencies/doge#eop"
   parent_id:
+  path: "/agencies/doge"
   children:
   - DOGE
   position_ids:
@@ -918,8 +918,8 @@
   page_slug: independent
   short_name: EXIM
   doge_base: false
-  path: "/agencies/independent#exim"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - detail-gsa-exim-cavanaugh
@@ -934,8 +934,8 @@
   page_slug: transportation
   short_name: FAA
   doge_base: false
-  path: "/agencies/transportation#faa"
   parent_id: DOT
+  path: "/agencies/transportation"
   children: []
   position_ids:
   - faa-glantz
@@ -956,8 +956,8 @@
   page_slug: justice
   short_name: FBI
   doge_base: true
-  path: "/agencies/justice#fbi"
   parent_id: DOJ
+  path: "/agencies/justice"
   children: []
   position_ids:
   - detail-opm-fbi-monroe
@@ -972,8 +972,8 @@
   page_slug: homeland-security
   short_name: FEMA
   doge_base: true
-  path: "/agencies/homeland-security#fema"
   parent_id: DHS
+  path: "/agencies/homeland-security"
   children: []
   position_ids:
   - internal-dhs-fema-schutt
@@ -991,8 +991,8 @@
   page_slug: housing
   short_name: FHFA
   doge_base: false
-  path: "/agencies/housing#fhfa"
   parent_id:
+  path: "/agencies/housing"
   children: []
   position_ids:
   - fhfa-christopher-stanley
@@ -1005,8 +1005,8 @@
   page_slug: independent
   short_name: FCC
   doge_base: true
-  path: "/agencies/independent#fcc"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - detail-opm-fcc-altik
@@ -1022,8 +1022,8 @@
   page_slug: independent
   short_name: FDIC
   doge_base: false
-  path: "/agencies/independent#fdic"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - detail-opm-fdic-armstrong
@@ -1039,8 +1039,8 @@
   page_slug: independent
   short_name: FMCS
   doge_base: false
-  path: "/agencies/independent#fmcs"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids: []
   event_ids:
@@ -1054,8 +1054,8 @@
   page_slug: independent
   short_name: FTC
   doge_base: true
-  path: "/agencies/independent#ftc"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - detail-doge-ftc-bryant
@@ -1070,8 +1070,8 @@
   page_slug: health
   short_name: FDA
   doge_base: true
-  path: "/agencies/health#fda"
   parent_id: HHS
+  path: "/agencies/health"
   children: []
   position_ids: []
   event_ids:
@@ -1089,8 +1089,8 @@
   page_slug: self
   short_name: GSA
   doge_base: true
-  path: "/agencies/gsa"
   parent_id:
+  path: "/agencies/gsa"
   children: []
   position_ids:
   - gsa-edward-coristine
@@ -1151,8 +1151,8 @@
   page_slug: independent
   short_name: GAO
   doge_base: false
-  path: "/agencies/independent#gao"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids: []
   event_ids:
@@ -1167,8 +1167,8 @@
   page_slug: health
   short_name: HHS
   doge_base: true
-  path: "/agencies/health#hhs"
   parent_id:
+  path: "/agencies/health"
   children:
   - CDC
   - CMS
@@ -1308,8 +1308,8 @@
   page_slug: housing
   short_name: HUD
   doge_base: true
-  path: "/agencies/housing#hud"
   parent_id:
+  path: "/agencies/housing"
   children: []
   position_ids:
   - hud-langmack
@@ -1341,8 +1341,8 @@
   page_slug: homeland-security
   short_name: ICE
   doge_base: true
-  path: "/agencies/homeland-security#ice"
   parent_id: DHS
+  path: "/agencies/homeland-security"
   children: []
   position_ids:
   - internal-dhs-ice-elez
@@ -1360,8 +1360,8 @@
   page_slug: independent
   short_name: IMLS
   doge_base: false
-  path: "/agencies/independent#imls"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - imls-sonderling
@@ -1385,8 +1385,8 @@
   page_slug: independent
   short_name: IAF
   doge_base: false
-  path: "/agencies/independent#iaf"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - iaf-marocco
@@ -1406,8 +1406,8 @@
   page_slug: treasury
   short_name: IRS
   doge_base: true
-  path: "/agencies/treasury#irs"
   parent_id: Treasury
+  path: "/agencies/treasury"
   children: []
   position_ids:
   - detail-opm-irs-gavin-kliger
@@ -1443,8 +1443,8 @@
   page_slug: independent
   short_name: MSPB
   doge_base: false
-  path: "/agencies/independent#MSPB"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - detail-gsa-mspb-cavanaugh
@@ -1458,8 +1458,8 @@
   page_slug: independent
   short_name: MCC
   doge_base: false
-  path: "/agencies/independent#mcc"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids: []
   event_ids:
@@ -1472,8 +1472,8 @@
   page_slug: independent
   short_name: MBDA
   doge_base: false
-  path: "/agencies/independent#mbda"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids: []
   event_ids:
@@ -1490,8 +1490,8 @@
   page_slug: other-majors
   short_name: NASA
   doge_base: true
-  path: "/agencies/other-majors#nasa"
   parent_id:
+  path: "/agencies/nasa#nasa"
   children: []
   position_ids:
   - detail-gsa-nasa-sennott
@@ -1509,8 +1509,8 @@
   page_slug: archives
   short_name: Archives
   doge_base: false
-  path: "/agencies/archives#nara"
   parent_id:
+  path: "/agencies/archives"
   children: []
   position_ids: []
   event_ids: []
@@ -1522,8 +1522,8 @@
   page_slug: independent
   short_name: NEH
   doge_base: true
-  path: "/agencies/independent#neh"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - detail-gsa-neh-cavanaugh
@@ -1547,8 +1547,8 @@
   page_slug: independent
   short_name: Nat Gallery
   doge_base: false
-  path: "/agencies/independent#national-gallery-art"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids: []
   event_ids:
@@ -1561,8 +1561,8 @@
   page_slug: independent
   short_name: NLRB
   doge_base: false
-  path: "/agencies/independent#nlrb"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - detail-gsa-nlrb-cavanaugh
@@ -1597,8 +1597,8 @@
   page_slug: commerce
   short_name: NOAA
   doge_base: true
-  path: "/agencies/commerce#noaa"
   parent_id: Commerce
+  path: "/agencies/commerce"
   children: []
   position_ids:
   - detail-opm-noaa-rajpal
@@ -1615,8 +1615,8 @@
   page_slug: health
   short_name: NIH
   doge_base: true
-  path: "/agencies/health#nih"
   parent_id: HHS
+  path: "/agencies/health"
   children: []
   position_ids:
   - internal-hhs-nih-farritor
@@ -1646,8 +1646,8 @@
   page_slug: commerce
   short_name: NIST
   doge_base: false
-  path: "/agencies/commerce#nist"
   parent_id:
+  path: "/agencies/commerce"
   children: []
   position_ids: []
   event_ids:
@@ -1661,8 +1661,8 @@
   page_slug: independent
   short_name: NSF
   doge_base: false
-  path: "/agencies/independent#nsf"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - detail-gsa-nsf-farritor
@@ -1679,8 +1679,8 @@
   page_slug: underreported
   short_name: NSA
   doge_base: false
-  path: "/agencies/underreported#nsa"
   parent_id: DOD
+  path: "/agencies/underreported"
   children: []
   position_ids: []
   event_ids:
@@ -1694,8 +1694,8 @@
   page_slug: independent
   short_name: NTSB
   doge_base: false
-  path: "/agencies/independent#NTSB"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids: []
   event_ids:
@@ -1708,8 +1708,8 @@
   page_slug: underreported
   short_name: ODNI
   doge_base: false
-  path: "/agencies/underreported#odni"
   parent_id:
+  path: "/agencies/underreported"
   children: []
   position_ids: []
   event_ids:
@@ -1722,8 +1722,8 @@
   page_slug: self
   short_name: OPM
   doge_base: true
-  path: "/agencies/opm"
   parent_id:
+  path: "/agencies/opm"
   children: []
   position_ids:
   - detail-gsa-opm-coristine
@@ -1804,8 +1804,8 @@
   page_slug: independent
   short_name: Peace Corps
   doge_base: false
-  path: "/agencies/independent#peace-corps"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - detail-peace-corps-youngs
@@ -1821,8 +1821,8 @@
   page_slug: independent
   short_name: SEC
   doge_base: false
-  path: "/agencies/independent#sec"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - sec-mishory
@@ -1838,8 +1838,8 @@
   page_slug: independent
   short_name: SBA
   doge_base: true
-  path: "/agencies/independent#sba"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - detail-gsa-sba-coristine
@@ -1857,8 +1857,8 @@
   page_slug: independent
   short_name: Smithsonian
   doge_base: false
-  path: "/agencies/independent#smithsonian"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids: []
   event_ids: []
@@ -1870,8 +1870,8 @@
   page_slug: social-security
   short_name: SSA
   doge_base: true
-  path: "/agencies/social-security#ssa"
   parent_id:
+  path: "/agencies/social-security"
   children: []
   position_ids:
   - ssa-mike-russo-cio
@@ -1962,8 +1962,8 @@
   page_slug: state
   short_name: State
   doge_base: true
-  path: "/agencies/state#state"
   parent_id:
+  path: "/agencies/state"
   children: []
   position_ids:
   - detail-gsa-state-coristine
@@ -1979,8 +1979,8 @@
   page_slug: homeland-security
   short_name: TSA
   doge_base: false
-  path: "/agencies/homeland-security#tsa"
   parent_id: DHS
+  path: "/agencies/homeland-security"
   children: []
   position_ids:
   - internal-dhs-tsa-coristine
@@ -1999,8 +1999,8 @@
   page_slug: independent
   short_name: USADF
   doge_base: false
-  path: "/agencies/independent#usadf"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - detail-gsa-usadf-ethan-shaotran
@@ -2031,8 +2031,8 @@
   page_slug: independent
   short_name: Access Brd
   doge_base: false
-  path: "/agencies/independent#usaccess"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids: []
   event_ids:
@@ -2045,8 +2045,8 @@
   page_slug: usaid
   short_name: USAID
   doge_base: false
-  path: "/agencies/usaid#usaid"
   parent_id:
+  path: "/agencies/usaid"
   children: []
   position_ids:
   - detail-gsa-usaid-farritor
@@ -2089,8 +2089,8 @@
   page_slug: homeland-security
   short_name: USCIS
   doge_base: false
-  path: "/agencies/homeland-security#uscis"
   parent_id: DHS
+  path: "/agencies/homeland-security"
   children: []
   position_ids:
   - internal-dhs-uscis-coristine
@@ -2116,8 +2116,8 @@
   page_slug: independent
   short_name: USIP
   doge_base: false
-  path: "/agencies/independent#usip"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - detail-gsa-usip-cavanaugh
@@ -2159,8 +2159,8 @@
   page_slug: independent
   short_name: DFC
   doge_base: false
-  path: "/agencies/independent#usidfc"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids:
   - detail-gsa-dfc-cavanaugh
@@ -2177,8 +2177,8 @@
   page_slug: other-majors
   short_name: USPS
   doge_base: true
-  path: "/agencies/other-majors#usps"
   parent_id:
+  path: "/agencies/usps#usps"
   children: []
   position_ids:
   - detail-gsa-usps-alex-simonpour
@@ -2194,8 +2194,8 @@
   page_slug: veterans
   short_name: VA
   doge_base: true
-  path: "/agencies/veterans#va"
   parent_id:
+  path: "/agencies/veterans"
   children: []
   position_ids:
   - va-lavingia
@@ -2215,8 +2215,8 @@
   page_slug: independent
   short_name: Global Media
   doge_base: false
-  path: "/agencies/independent#usagm"
   parent_id:
+  path: "/agencies/independent"
   children: []
   position_ids: []
   event_ids:

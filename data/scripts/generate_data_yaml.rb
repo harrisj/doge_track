@@ -24,7 +24,17 @@ def person_url(person)
 end
 
 def agency_url(agency)
-  agency.path
+  if agency.page_slug == 'none'
+    nil
+  elsif agency.page_slug == 'self'
+    "/agencies/#{agency.slug}"
+  elsif agency.page_slug == 'other-majors' # FIXME
+    "/agencies/#{agency.slug}##{agency.slug}"
+  elsif agency.page_slug
+    "/agencies/#{agency.page_slug}"
+  else
+    "/agencies##{agency.slug}"
+  end
 end
 
 def internal_link(url, display)
@@ -50,6 +60,7 @@ def generate_agencies_yaml
   out_file = File.join(DATA_DIR, 'agencies.yml')
   agencies = Agency.map do |agency|
     out = agency.to_hash
+    agency['path'] = agency_url(agency)
     agency['children'] = agency.children.map(&:id)
 
     out['position_ids'] = agency.all_positions.map(&:id)
@@ -96,6 +107,7 @@ def generate_people_yaml
 
   out = Person.all.map do |p|
     rec = p.to_hash
+    rec['path'] = person_url(p)
     rec['position_ids'] = p.positions.map(&:id) # positions_for_output(p.positions)
     rec['event_ids'] = p.events.map(&:id) # events_for_output(p.events)
     rec['system_access'] = p.system_roles.map(&:id)
@@ -124,8 +136,11 @@ def generate_positions_yaml
 
   out = Position.map do |position|
     p_hash = position.to_hash
-    p_hash[:agency] = position.agency.to_hash
-    p_hash[:from_agency] = position.from_agency.to_hash unless position.from_agency.nil?
+    p_hash[:agency] = position.agency.to_hash.merge(path: agency_url(position.agency))
+    unless position.from_agency.nil?
+      p_hash[:from_agency] =
+        position.from_agency.to_hash.merge(path: agency_url(position.from_agency))
+    end
     p_hash[:agency_and_parent] = [position.agency.id, position.agency.parent_id].compact
     p_hash[:documents] = position.documents.map { |d| d.to_hash.merge(url: d.url) }
     p_hash

@@ -23,30 +23,6 @@ Question.unrestrict_primary_key
 
 all_events = []
 
-def path_for_person(person_hash)
-  if person_hash[:page_slug] == 'self'
-    "/people/#{person_hash[:slug]}"
-  elsif person_hash[:page_slug] == 'none'
-    nil
-  elsif person_hash[:page_slug]
-    "/#{person_hash[:page_slug]}/##{person_hash[:slug]}"
-  else
-    "/all/people##{person_hash[:slug]}"
-  end
-end
-
-def path_for_agency(agency_hash)
-  if agency_hash[:page_slug] == 'none'
-    nil
-  elsif agency_hash[:page_slug] == 'self'
-    "/agencies/#{agency_hash[:slug]}"
-  elsif agency_hash[:page_slug]
-    "/agencies/#{agency_hash[:page_slug]}##{agency_hash[:slug]}"
-  else
-    "/agencies##{agency_hash[:slug]}"
-  end
-end
-
 def create_event(event_hash)
   raise "Event is missing a unique ID: #{event_hash.inspect}" unless event_hash.key? :id
 
@@ -96,7 +72,7 @@ end
 # Load Agencies
 agencies_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'agencies.yaml'), symbolize_names: true)
 agencies_yaml.each do |a|
-  Agency.create(a.except(:events).merge({ path: path_for_agency(a) }))
+  Agency.create(a.except(:events))
   all_events += a.fetch(:events, [])
 end
 
@@ -111,7 +87,6 @@ people_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'people.yaml'), symboliz
 
 people_yaml.each do |p_hash|
   p = Person.new(p_hash.except(:positions, :alias))
-  p.path = path_for_person(p)
 
   p_hash.fetch(:positions, []).each do |pos_hash|
     pos_hash.transform_keys!(alias: :doge_alias_id, from: :from_agency_id, agency: :agency_id)

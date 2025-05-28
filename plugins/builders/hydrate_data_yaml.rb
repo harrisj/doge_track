@@ -51,8 +51,8 @@ module Builders
       site.data.positions.each do |pos|
         pos.person = lookup_person(pos.name) unless pos.name.nil?
         pos.questions = []
-        # pos.agency = lookup_agency(pos.agency_id) unless pos.agency_id.blank?
-        # pos.from_agency = lookup_agency(pos.from_agency_id) unless pos.from_agency_id.blank?
+        pos.agency = lookup_agency(pos.agency_id) unless pos.agency_id.blank?
+        pos.from_agency = lookup_agency(pos.from_agency_id) unless pos.from_agency_id.blank?
       end
     end
 

@@ -12,7 +12,6 @@ DB.create_table! :agencies do
   string :page_slug
   string :short_name, null: false, unique: true
   boolean :doge_base, null: false, default: false
-  string :path
   string :parent_id
 end
 
@@ -82,7 +81,6 @@ DB.create_table! :people do
   boolean :own_page, null: false, default: false
   string :blurb
   string :reporting_notes
-  string :path
   string :comment
   string :table_note
 end
