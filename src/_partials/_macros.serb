@@ -253,6 +253,7 @@
 %}
 
 {% macro "linkify" do |text|
+      if false
       site.data.people.each do |person|
         text.gsub!(/\b#{person.name}\b/, person_link(person.name))
       end
@@ -264,7 +265,8 @@
       site.data.aliases.each do |a|
         text.gsub!(/\b#{a.id}\b/, "/people/aliases##{a.id}")
       end
-
+      end
+      
       text.html_safe
    end
 %}
