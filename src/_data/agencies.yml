@@ -1704,20 +1704,6 @@
   - 4h8xjbch
   system_access: []
   obj_type: Agency
-- id: ODNI
-  name: Office of the Director of National Intelligence
-  slug: odni
-  page_slug: other-majors
-  short_name: ODNI
-  doge_base: false
-  parent_id:
-  path: "/agencies/odni#odni"
-  children: []
-  position_ids: []
-  event_ids:
-  - SrRZVUDa
-  system_access: []
-  obj_type: Agency
 - id: OPM
   name: Office of Personnel Management
   slug: opm
@@ -1837,11 +1823,11 @@
 - id: SBA
   name: Small Business Administration
   slug: sba
-  page_slug: independent
+  page_slug: other-majors
   short_name: SBA
   doge_base: true
   parent_id:
-  path: "/agencies/independent"
+  path: "/agencies/sba#sba"
   children: []
   position_ids:
   - detail-gsa-sba-coristine

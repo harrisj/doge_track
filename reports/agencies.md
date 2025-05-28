@@ -589,9 +589,6 @@
 # National Transportation Safety Board
 - slug: NTSB
 
-# Office of the Director of National Intelligence
-- slug: odni
-
 # Office of Personnel Management
 - slug: opm
 - people:

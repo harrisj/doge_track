@@ -42,15 +42,14 @@ To report errors or point out information that I might have missed, the best app
 This is just the beginning of what is possible for this data and the site, and I am working through things as quickly as I can design them:
 
 Content Tweaks:
-
 - Independent Agencies
 - How to Contribute
 - An in-depth writeup of the data ingestion process
 - Repo instructions on how to load a SQLite database
-- DOGE's major projects
+- DOGE's major projects described
 
-Sharing more data:
-- Open questions
+Linking in more data:
+- Open questions I have
 - Systems accessed at each agency
 - Court cases linked to DOGE activities
 - Media roundups
@@ -58,6 +57,7 @@ Sharing more data:
 Site Functionality:
 - Accessibility improvements
 - Site search
+- CSV downloads
 - Better navigation
 - Better look and feel by someone who actually knows web design?
 - Maybe some pictures?

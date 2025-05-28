@@ -3,23 +3,28 @@ title: How to Contribute
 layout: docs
 ---
 
-# Want To Contribute?
+# How To Contribute
 
 Good news! Just by visiting this site and learning more, you already have contributed! In all seriousness, I started this project and made this site because I felt it was important to bear witness to all the damage that DOGE was doing and to drag their murky operations into the light. If this site has been useful for you to understand what is going on, nothing could make me happier about it. Thank you!
 
-However, if you find yourself wanting to do more, there are a few other concrete ways in which you can help.
+However, if you find yourself wanting to do more, there are a few other concrete ways in which you are welcome to help.
 
 ## Flagging Gaps and Errors in the Dataset
 
-## Writing Content
-None of the text on here is AI-generated or lifted from other sites.
+Perhaps the most important area where I need help is more eyes to spot things I might have missed. This could include things like news articles, blog posts, tweets, news segments or court documents. As long as it's publicly-reported information that touches on the activities of DOGE, I am interested. This is especially true if you stumble across information that relates to one of my {{ link_to 'Open Questions', '/all/questions/' }}, but anything that you find that sheds some small bit of light is helpful
 
-## Improving the Data Models
+## Flagging Problems with Content
+
+I also appreciate if you notice and particular errors or omissions in my dataset, or if there are things I have mischaracterized in my writeups. I have attempted to capture the facts while also presenting my own interpretation, but I don't want to willfully misstate anything. None of this text is AI-generated nor is any of it copied from other copyrighted sources. So, there's been a lot to write and I'm sure there are things that could be more artfully phrased or accurately described. If you have edits, the best way is probably just to fork the GitHub repo and submit PRs. We also could discuss adding you as a writer if you want to seriously commit to helping out in that regard.
 
 ## Improving the Look and Feel of the Site
 
-If it weren't obvious, I am not a designer or a front-end master. There is a lot of work that could be put into the site to make it prettier. If this is something that would be exciting to you, I'd welcome you to 
-
-
+If it weren't obvious, I am not a designer or a front-end master. There is a lot of work that could be put into the site to make it prettier, or at least less monochrome. I welcome any tips or pull requests on how to restyle the site. Currently, it is using a stack with DaisyUI and Tailwind CSS, but everything else is negotiable. If you want to contribute here, the best way is probably to fork the site and submit a pull request.
 
 ## Creating Derivative Works
+
+There are copyrights or any license for the data on this site. It is completely in the public domain for you to make any derivative works, as long as you understand the risks of the data containing errors. Go wild! If you do something cool that you want to share with me, please let me know though! Maybe we can even link to it or include it as part of this site.
+
+## Contributing Money
+
+I have had a few people ask me about a tip jar, but I to be honest, I just don't feel like having that conversation with the ethics lawyers to get any approval for that. This is a simple no-frills static site. I'm not even paying for the pro version of Font Awesome. Maybe if I find myself facing hosting costs, I'll change my mind. But in the meantime, please consider donating money to a worthy cause near you like a food bank or legal defense fund. We're all in this together, after all.
