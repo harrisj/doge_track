@@ -12,9 +12,8 @@
 </div>
 {% end %}
 
-
 {% if person.events.any? %}
-<h3 class="sm:ml-7 md:ml-8 lg:ml-9.5 mb-0 text-lg md:text-xl">Events</h3>
+<h3 class="sm:ml-7 md:ml-8 lg:ml-9.5 mb-0 mt-0 text-lg md:text-xl">Events</h3>
 <div class="sm:ml-3 md:ml-4 lg:ml-5 ">
     {%@ 'compact_event_timeline', agency_col: true, events: person.events, month_separator: false, show_directories: false, always_show_date: true %}
 </div>
