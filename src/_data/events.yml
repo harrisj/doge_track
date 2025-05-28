@@ -15129,6 +15129,30 @@
   agencies_parents:
   - USIP
   obj_type: Event
+- id: 7IgxVbzx
+  type: official
+  date: '2025-05-22'
+  sort_date: '2025-05-22'
+  time:
+  text: >-
+    Appearing before Congress, the SBA Administrator Kelly Loefler claimed that DOGE had cancelled contracts worth more than $3 billion dollars in savings.
+    DOGE's "wall of receipts" only lists $22 million in savings.
+  fuzz:
+  comment:
+  source: https://fedscoop.com/doge-cost-savings-small-business-administration/
+  source_title: DOGE receipts for SBA fall billions short of administrator's cost-savings claim
+  source_name: FedScoop
+  case_no:
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - SBA
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - SBA
+  obj_type: Event
 - id: 5fCND3ng
   type: legal
   date: '2025-05-23'
@@ -15244,4 +15268,101 @@
   agencies_parents:
   - DOJ
   - DHS
+  obj_type: Event
+- id: 6ozDhEa2
+  type: disruption
+  date: '2025-05-26'
+  sort_date: '2025-05-26'
+  time:
+  text: >-
+    After Politico published a report that included an email from a 30-year veteran of the Bureau of Land Management telling staff to ignore instructions
+    from Stephanie Holmes about filling in for empty roles, he is escorted out of the building by security.
+  fuzz:
+  comment:
+  source: https://www.washingtonpost.com/climate-environment/2025/05/27/bureau-land-management-doge-nedd/
+  source_title: Bureau of Land Management ousts official who reportedly resisted DOGE
+  source_name: The Washington Post
+  case_no:
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - DOI
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - DOI
+  obj_type: Event
+- id: onhIeTZy
+  type: legal
+  date: '2025-05-26'
+  sort_date: '2025-05-26'
+  time:
+  text: >-
+    Judge Vargas, ruling in New York v. Donald Trump lifted restrictions on DOGE staff accessing Treasury systems, saying that the government had demonstrated
+    it was following proper procedures
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.156.0.pdf
+  source_title: New York et al v. Donald J. Trump (S.D.N.Y.)
+  source_name: Court Filing
+  case_no: 1:25-cv-01144
+  track_id:
+  system_id:
+  names:
+  - Sam Corcos
+  - Tom Krause
+  - Todd Newnam
+  - Linda Whitridge
+  - Ryan Wunderly
+  agency_ids:
+  - Treasury
+  alias_ids: []
+  names_aliases:
+  - name: Sam Corcos
+    slug: sam-corcos
+    sort_name: Corcos
+    category: enabler
+  - name: Tom Krause
+    slug: tom-krause
+    sort_name: Krause
+    category: enabler
+  - name: Todd Newnam
+    slug: todd-newnam
+    sort_name: Newnam
+    category: wrecker
+  - name: Linda Whitridge
+    slug: linda-whitridge
+    sort_name: Whitridge
+    category: wrecker
+  - name: Ryan Wunderly
+    slug: ryan-wunderly
+    sort_name: Wunderly
+    category: wrecker
+  agencies_parents:
+  - Treasury
+  obj_type: Event
+- id: 6YIY3WIh
+  type: disruption
+  date: '2025-05-27'
+  sort_date: '2025-05-27'
+  time:
+  text: >-
+    Pentagon staff are told they now no longer have to submit the Five Things email, but they are now tasked with a mandatory exercise to submit one thing
+    that improves efficiency or reduces waste
+  fuzz:
+  comment:
+  source: https://defensescoop.com/2025/05/27/dod-doge-instructions-survey-end-5-bullet-points-emails/
+  source_title: DOD civilians get new instructions on DOGE-inspired productivity reports
+  source_name: DefencseScoop
+  case_no:
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - DOD
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - DOD
   obj_type: Event

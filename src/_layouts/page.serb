@@ -13,9 +13,9 @@ layout: default
   end
 %}
 
-<div class="md:container md:max-w-5xl md:mx-auto px-8">
+<div class="md:container md:max-w-5xl md:mx-auto">
   {%@ 'header_bar', metadata: site.metadata, prev_pg: prev_pg, next_pg: next_pg %}
-  <main class="my-text flex flex-col min-h-screen">
+  <main class="my-text flex flex-col min-h-screen px-3">
     {{ content }}
   </main>
 
