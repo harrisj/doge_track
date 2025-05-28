@@ -1,11 +1,11 @@
 {% import 'macros' %}
 
-<table class="mt-4 table-fixed md:table-auto table-xs table-auto sm:table-sm lg:table-md border-4">
+<table class="mt-4 table-fixed md:table-auto table-xs sm:table-sm lg:table-md border-4">
   <thead>
-  <tr class="my-text-2sm">
-    <th class="text-left min-width-[104px] w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">Position</th>
-    <th class="text-left hidden lg:table-cell">Dates</th>
-    <th class="text-left">Notes</th>
+  <tr class="">
+    <th class="text-left min-width-[104px] w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 text-xs ">Position</th>
+    <th class="text-left hidden lg:table-cell text-xs ">Dates</th>
+    <th class="text-left text-xs ">Notes</th>
   </tr>
   </thead>
   <tbody class="">
@@ -14,7 +14,7 @@
     <tr class="font-mono">
       <td class="align-top text-left min-width-[104px] w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6"><div class="sm:inline-block"><nobr>{{ position_move(pos) }}</nobr></div>
       <div class="lg:hidden">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}</div></td>
-      <td class="align-top hidden lg:table-cell">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}</td>
+      <td class="align-top hidden lg:table-cell">{% if pos.start_date || pos.end_date %}<span class="md:text-nowrap">{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}-{{ render EdtfFormat.new(pos.end_date, :compact) }}</span>{% end %}</td>
       <td class="align-top w-auto sm:w-2/3 md:w-3/4 lg:w-4/5 xl:w-5/6">{{ position_summary(pos) | md}}</td>
     </tr>
     {% end %}

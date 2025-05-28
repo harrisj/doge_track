@@ -134,12 +134,13 @@ end
 def generate_positions_yaml
   out_file = File.join(DATA_DIR, 'positions.yml')
 
+  # FIXME: Figure out why my hydration isn't working for positions
   out = Position.map do |position|
     p_hash = position.to_hash
-    p_hash[:agency] = position.agency.to_hash.merge(path: agency_url(position.agency))
+    p_hash[:agency] = position.agency.to_hash.merge(obj_type: 'Agency', path: agency_url(position.agency))
     unless position.from_agency.nil?
       p_hash[:from_agency] =
-        position.from_agency.to_hash.merge(path: agency_url(position.from_agency))
+        position.from_agency.to_hash.merge(obj_type: 'Agency', path: agency_url(position.from_agency))
     end
     p_hash[:agency_and_parent] = [position.agency.id, position.agency.parent_id].compact
     p_hash[:documents] = position.documents.map { |d| d.to_hash.merge(url: d.url) }

@@ -1,32 +1,46 @@
 {% num_cols = 2 
 agency_col = false if agency_col.nil?
 icon_col = false if icon_col.nil?
+month_separator = true if month_separator.nil?
+always_show_date = false if always_show_date.nil?
+show_directories = true if show_directories.nil?
 num_cols +=1 if agency_col
 num_cols +=1 if icon_col %}
  
  {% prior_row_date = Date.edtf(events[0].date)-1 %}
 
-<table class="table table-auto table-xs sm:table-sm lg:table-md border-4 mb-0">
+<table class="table table-auto table-xs sm:table-sm lg:table-md border-4 mb-0 mt-0">
+  <thead>
+    <tr>
+      <th class="min-width-[104px] text-xs">Date</th>
+      {% if icon_col %}<th class="text-xs">Type</th>{% end %}
+      {% if agency_col %}<th class="hidden sm:table-cell text-xs">Agency</th>{% end %}
+      <th class="text-xs">Event</th>
+    </tr>
+  </thead>
   <tbody>
   {% events.each do |event| %}
     {% parsed_date = Date.edtf(event.date) %}
-    {% if parsed_date.month > prior_row_date.month %}
+    {% if month_separator && parsed_date.month > prior_row_date.month %}
     <tr>
       <td class="bg-base-200" colspan="{{ num_cols - 1 }}" /><td class="bg-base-200 font-bold">{{ parsed_date.strftime("%B %Y") }}</td>
     </tr>
     {% end %}
     <tr class="font-mono">
-      <td class="align-top">
-       {% if parsed_date.edtf != prior_row_date.edtf %}
-        {{ render EdtfFormat.new(event.date, :compact) }}
+      <td class="align-top min-width-[104px]">
+       {% if always_show_date || parsed_date.edtf != prior_row_date.edtf %}
+        <div>{{ render EdtfFormat.new(event.date, :compact) }}</div>
       {% end %}  
       {% prior_row_date = parsed_date %}
+      {% if agency_col %}
+      <div class="sm:hidden">{{ event.agencies | agency_links }}</div>
+      {% end %}
       </td>
       {% if icon_col %}<td class="align-top w-min-content"><i class="fa {{ event_icon(event) }}"></i></td>{% end %}
-      {% if agency_col %}<td class="align-top">{{ event.agencies | map: ->a { a.short_name } | sort | join: ", " }}</td>{% end %}
-      <td class="align-top">
-        <div class="font-mono">{{ event.linkified_text | raw }}{% if event.fuzz %}&nbsp;[{{ event.fuzz | md }}]{% end %}{% if event.source && event.source_name %} <span class="text-nowrap">(<a href="{{ event.source }}" class="link-hover"><i class="fa-regular fa-newspaper"></i>&nbsp;<span class="italic text-xs">{{ event.source_name }}</span></a>)</span>{% end %}</div>
-        {% if event.type == 'directory' %}
+      {% if agency_col %}<td class="align-top hidden sm:table-cell">{{ event.agencies | agency_links }}</td>{% end %}
+      <td class="align-top overflow-auto">
+        <div class="font-mono">{{ event.linkified_text | raw }}{% if event.fuzz %}&nbsp;[{{ event.fuzz | md }}]{% end %}{% if event.source && event.source_name %} <span class="text-nowrap">(<a href="{{ event.source }}" class="link-hover"><i class="fa-regular fa-newspaper"></i>&nbsp;<span class="italic text-2xs sm:text-xs">{{ event.source_name }}</span></a>)</span>{% end %}</div>
+        {% if show_directories && event.type == 'directory' %}
           <div>
             {% event.names_aliases.group_by(&:category).sort_by {|c, p| p.size}.reverse.each do |category, people| %}
               <div><i class="fas {{ person_icon(people.first) }}"></i> {{ people.map(&:name) | people_links }}</div>
