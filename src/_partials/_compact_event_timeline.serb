@@ -1,13 +1,25 @@
-{% agency_col = false if agency_col.nil? %}
-{% icon_col = false if icon_col.nil? %}
-{% last_date = '' %}
+{% num_cols = 2 
+agency_col = false if agency_col.nil?
+icon_col = false if icon_col.nil?
+num_cols +=1 if agency_col
+num_cols +=1 if icon_col %}
+ 
+ {% prior_row_date = Date.edtf(events[0].date)-1 %}
+
 <table class="table table-auto table-xs sm:table-sm lg:table-md border-4 mb-0">
   <tbody>
   {% events.each do |event| %}
+    {% parsed_date = Date.edtf(event.date) %}
+    {% if parsed_date.month > prior_row_date.month %}
+    <tr>
+      <td class="bg-base-200" colspan="{{ num_cols - 1 }}" /><td class="bg-base-200 font-bold">{{ parsed_date.strftime("%B %Y") }}</td>
+    </tr>
+    {% end %}
     <tr class="font-mono">
-      <td class="align-top">{% if event.sort_date != last_date %}
+      <td class="align-top">
+       {% if parsed_date != prior_row_date %}
         {{ render EdtfFormat.new(event.date, :compact) }}
-        {% last_date = event.sort_date %}
+        {% prior_row_date = parsed_date %}
       {% end %}  
       </td>
       {% if icon_col %}<td class="align-top w-min-content"><i class="fa {{ event_icon(event) }}"></i></td>{% end %}
