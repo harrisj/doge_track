@@ -50,9 +50,11 @@ end
 def create_event(event_hash)
   raise "Event is missing a unique ID: #{event_hash.inspect}" unless event_hash.key? :id
 
+  event_date = event_hash[:date].is_a?(Date) ? event_hash[:date].edtf : event_hash[:date]
+
   event_hash.transform_keys!(event: :text, system: :system_id)
-  event_hash[:date] = Date.edtf(event_hash[:date].to_s)
-  event_hash[:sort_date] = Date.edtf(event_hash[:date].to_s).precise!
+  event_hash[:date] = event_date
+  event_hash[:sort_date] = Date.edtf!(event_date.to_s).to_s
 
   e = Event.create(event_hash.except(:case_no, :named, :named_aliases, :agency, :interagency_doge_reps))
   if event_hash.key? :case_no

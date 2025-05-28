@@ -8,43 +8,43 @@ require 'edtf-humanize'
 
 DATA_DIR = File.join(File.dirname(__FILE__), '..', '..', 'src', '_data')
 
-# def events_for_output(events)
-#   events.sort_by(&:sort_date).map do |e|
-#     e_out = e.to_hash
-#     e_out['agencies'] = e.agencies.map { |a| a.to_hash.slice(:id, :slug, :name, :short_name) }
-#     e_out['people'] = e.people.map { |x| x.to_hash.slice(:slug, :name, :sort_name) }
+def person_url(person)
+  case person.category
+  when 'wrecker'
+    "/people/wrecker-staff##{person.slug}"
+  when 'enabler'
+    "/people/enabler-staff##{person.slug}"
+  when 'support'
+    "/people/support-team##{person.slug}"
+  when 'unknown'
+    "/people/unknowns##{person.slug}"
+  else
+    "/all/people##{person.slug}"
+  end
+end
 
-#     e_out['aliases'] = []
-#     e.doge_aliases.each do |a|
-#       if a.person
-#         existing_record = e_out['people'].find { |p| p[:name] == a.name }
-#         existing_record[:alias] = a.id
-#       else
-#         e_out['aliases'].append(a.id)
-#       end
-#     end
+def agency_url(agency)
+  agency.path
+end
 
-#     e_out
-#   end
-# end
+def internal_link(url, display)
+  "<a class=\"link-hover\" href=\"#{url}\">#{display}</a>"
+end
 
-# def positions_for_output(positions)
-#   positions.sort_by(&:sort_date).map do |x|
-#     out = x.to_hash
-#     out['duration_summary'] = x.duration_summary
-#     out['agency'] = { agency_id: x.agency.id, name: x.agency.name, short_name: x.agency.short_name }
-#     if x.from_agency
-#       out['from_agency'] =
-#         { agency_id: x.from_agency.id, name: x.from_agency.name, short_name: x.from_agency.short_name }
-#     end
-#     out['person'] = x.person.to_hash.merge(obj_type: 'Person') unless x.person.nil?
-#     out['alias'] = x.doge_alias.to_hash.merge(obj_type: 'Alias') unless x.doge_alias.nil?
-#     out['documents'] = x.documents.map { |d| d.to_hash.merge(url: d.url) }
+def linkify_text(text)
+  out = text.dup
 
-#     out['obj_type'] = 'Position'
-#     out
-#   end
-# end
+  Person.each do |person|
+    out.gsub!(/\b#{person.name}\b/, internal_link(person_url(person), person.name))
+  end
+
+  Agency.each do |agency|
+    out.gsub!(/\b#{agency.id}\b/, internal_link(agency_url(agency), agency.id))
+    out.gsub!(/\b#{agency.name}\b/, internal_link(agency_url(agency), agency.name))
+  end
+
+  out
+end
 
 def generate_agencies_yaml
   out_file = File.join(DATA_DIR, 'agencies.yml')
@@ -168,7 +168,7 @@ def generate_events_yaml
     parent_ids = e.agencies.map(&:parent_id)
     out['agencies_parents'] = (agency_ids + parent_ids).uniq.compact
     out['obj_type'] = 'Event'
-
+    out['linkified_text'] = linkify_text(e.text)
     out
   end
 

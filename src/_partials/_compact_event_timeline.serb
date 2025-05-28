@@ -17,15 +17,15 @@ num_cols +=1 if icon_col %}
     {% end %}
     <tr class="font-mono">
       <td class="align-top">
-       {% if parsed_date != prior_row_date %}
+       {% if parsed_date.edtf != prior_row_date.edtf %}
         {{ render EdtfFormat.new(event.date, :compact) }}
-        {% prior_row_date = parsed_date %}
       {% end %}  
+      {% prior_row_date = parsed_date %}
       </td>
       {% if icon_col %}<td class="align-top w-min-content"><i class="fa {{ event_icon(event) }}"></i></td>{% end %}
       {% if agency_col %}<td class="align-top">{{ event.agencies | map: ->a { a.short_name } | sort | join: ", " }}</td>{% end %}
       <td class="align-top">
-        <div>{{ event.text | linkify }}{% if event.source %}&nbsp;<a href="{{ event.source }}" class="link-hover tooltip" {% if event.source_name %}data-tip="{{ event.source_name }}"{% end %}><i class="fa-solid fa-newspaper"></i></a>{% end %}</div>
+        <div class="font-mono">{{ event.linkified_text | raw }}{% if event.fuzz %}&nbsp;[{{ event.fuzz | md }}]{% end %}{% if event.source && event.source_name %} <span class="text-nowrap">(<a href="{{ event.source }}" class="link-hover font-italic tooltip" {% if event.source_name %}data-tip="{{ event.source_name }}"{% end %}><i class="fa-regular fa-newspaper"></i>&nbsp;<span class="italic text-xs">{{ event.source_name }}</a></span>)</span>{% end %}</div>
         {% if event.type == 'directory' %}
           <div>
             {% event.names_aliases.group_by(&:category).sort_by {|c, p| p.size}.reverse.each do |category, people| %}
