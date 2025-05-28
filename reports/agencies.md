@@ -698,9 +698,9 @@
   - **Edward Coristine**
   - **Marko Elez**
   - **Luke Farritor**
-  - **Gavin Kliger** (detailed from DHS)
+  - **Gavin Kliger**
   - **Aram Moghaddassi**
-  - **Payton Rehling** (detailed from DHS)
+  - **Payton Rehling**
   - **Kyle Schutt**
 
 # U.S. African Development Foundation
@@ -731,7 +731,7 @@
   - **Marko Elez**
   - **Luke Farritor**
   - **Aram Moghaddassi**
-  - **Payton Rehling** (detailed from DHS)
+  - **Payton Rehling**
   - **Kyle Schutt**
 - systems:
     - CIS: Central Index System

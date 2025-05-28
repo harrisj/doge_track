@@ -1,5 +1,12 @@
 {% import "macros" %}
 
+{% unless agency.nil?
+   dated_positions, undated_positions = positions.partition {|pos| pos.start_date }
+   else
+   dated_positions = positions
+   undated_positions = nil
+   end %}
+
 <table class="table table-auto table-xs sm:table-sm lg:table-md border-4 mb-0">
   <thead>
   <tr>
@@ -10,15 +17,37 @@
   </tr>
   </thead>
   <tbody class="">
-    {% positions.each do |pos| %}
-    <tr class="font-mono">
-      <td class="align-top hidden sm:table-cell">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% end %}</td>
-      <td class="align-top min-width-[104px] "><nobr>{{ position_move(pos) }}</nobr>
-      <div class="sm:hidden">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% end %}</div>
-      </td>
-      <td class="align-top">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.alias %}<a href="/topics/aliases">{{ doge_alias(pos.alias) }}</a>{% end %}</td>
-      <td class="align-top">{{ position_summary(pos) | md }}</td>
-    </tr>
+    {% dated_positions.each do |pos| %}
+      <tr class="font-mono">
+        <td class="align-top hidden sm:table-cell">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% end %}</td>
+        <td class="align-top min-width-[104px] "><nobr>{{ position_move(pos) }}</nobr>
+        <div class="sm:hidden">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% end %}</div>
+        </td>
+        <td class="align-top">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.alias %}<a href="/topics/aliases">{{ doge_alias(pos.alias) }}</a>{% end %}</td>
+        <td class="align-top">{{ position_summary(pos) | md }}</td>
+      </tr>
+    {% end %}
+    {% if agency && undated_positions.any? %}
+      <tr>
+        <td colspan="4" class="text-center bg-base-200 font-bold">No Start Date Known</a>
+      </tr>
+      {% to_agency, from_agency = undated_positions.partition {|pos| pos.agency_id == agency.id } %}
+      {% grouped_undated = to_agency.group_by {|pos| [pos.agency_id, pos.type, pos.from_agency_id].compact } %}
+      {% grouped_undated.sort_by {|grp, _| grp[2]}.each do |grp, positions| %}
+        <tr class="font-mono">
+        <td class="align-top hidden sm:table-cell"/>
+        <td class="align-top min-width-[104px] "><nobr>{{ position_move(positions[0]) }}</nobr></td>
+        <td colspan="2" class="align-top">{{ positions.map(&:person) | people_links }}</td>
+        </tr>
+      {% end %}
+      {% grouped_undated = from_agency.group_by {|pos| [pos.agency_id, pos.type, pos.from_agency_id].compact } %}
+      {% grouped_undated.sort_by {|grp, _| grp[0]}.each do |grp, positions| %}
+        <tr class="font-mono">
+        <td class="align-top hidden sm:table-cell"/>
+        <td class="align-top min-width-[104px] "><nobr>{{ position_move(positions[0]) }}</nobr></td>
+        <td colspan="2" class="align-top">{{ positions.map(&:person) | people_links }}</td>
+        </tr>
+      {% end %}
     {% end %}
   </tbody>
 </table>

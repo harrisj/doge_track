@@ -1904,7 +1904,7 @@
     - opm-foia-doge-positions
     - onboard-opm-employee-5
   - id: internal-dhs-tsa-kliger
-    type: detailed
+    type: internal
     from: DHS
     from_truth: inferred
     agency: TSA
@@ -2907,20 +2907,23 @@
     type: detailed
     agency: DHS
     from: SSA
+    sort_date: 2025-03-15
     from_truth: guessed
     comment: No info, but listed in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-rehling
-    type: detailed
+    type: internal
     agency: TSA
     from: DHS
+    sort_date: 2025-03-15
     from_truth: inferred
     comment: No info, but listed in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-rehling
-    type: detailed
+    type: internal
     agency: USCIS
     from: DHS
+    sort_date: 2025-03-15
     from_truth: inferred
     comment: No info, but listed in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -3110,12 +3113,14 @@
     type: internal
     from: DHS
     from_truth: inferred
+    sort_date: 2025-02-20
     agency: CBP
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-fema-schutt
     type: internal
     from: DHS
+    sort_date: 2025-02-20
     from_truth: inferred
     agency: FEMA
     comment: No details, but in NYT roundup
@@ -3123,6 +3128,7 @@
   - id: internal-dhs-ice-schutt
     type: internal
     from: DHS
+    sort_date: 2025-02-20
     from_truth: inferred
     agency: ICE
     comment: No details, but in NYT roundup
@@ -3130,6 +3136,7 @@
   - id: internal-dhs-tsa-schutt
     type: internal
     from: DHS
+    sort_date: 2025-02-20
     from_truth: inferred
     agency: TSA
     comment: No details, but in NYT roundup
@@ -3137,6 +3144,7 @@
   - id: internal-dhs-uscis-schutt
     type: internal
     from: DHS
+    sort_date: 2025-02-20
     from_truth: inferred
     agency: USCIS
     comment: No details, but in NYT roundup

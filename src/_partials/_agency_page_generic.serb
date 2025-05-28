@@ -10,7 +10,7 @@
 {% if agency.positions.any? %}
 <h2 class="mt-4 mb-0 text-lg sm:text-xl md:text-2xl">Positions</h2>
 
-{%@ 'agency_positions_table', positions: agency.positions %}
+{%@ 'agency_positions_table', positions: agency.positions, agency: agency %}
 {% end %}
 
 {% agency_events = site.data.events.find_all {|e| e.agencies_parents.include? agency.id } %}
