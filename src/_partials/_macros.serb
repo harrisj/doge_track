@@ -334,7 +334,7 @@ end %}
     end
 
     if pos.source
-      source_str = "<a href=\"#{pos.source}\" class=\"link-hover\"><i class=\"fa-solid fa-link\"></i></a>"
+      source_str = "<a href=\"#{pos.source}\" class=\"link-hover\"><i class=\"fa-regular fa-newspaper\"></i></a>"
     end
 
     if pos.documents.any?
