@@ -31,11 +31,12 @@ num_cols +=1 if icon_col %}
       <td class="align-top tab-cell-first">
        {% if always_show_date || parsed_date.edtf != prior_row_date.edtf %}
         <div class="inline-block">{{ render EdtfFormat.new(event.date, :compact) }}</div>
-      {% end %}  
+      {% end %}
       {% prior_row_date = parsed_date %}
       {% if agency_col %}
       <div class="inline-block sm:hidden">{{ event.agencies | agency_links }}</div>
       {% end %}
+      <div class="text-xs">{{ event_title(event) }}</div>
       </td>
       {% if icon_col %}<td class="align-top w-min-content"><i class="fa {{ event_icon(event) }}"></i></td>{% end %}
       {% if agency_col %}<td class="align-top hidden sm:table-cell">{{ event.agencies | agency_links }}</td>{% end %}

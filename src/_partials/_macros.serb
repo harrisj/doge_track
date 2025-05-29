@@ -198,7 +198,7 @@ end %}
 {% macro "event_title" do |event|
     case event.type
     when 'access'
-      'System Access'
+      'Access'
     when 'action'
       'Action'
     when 'directory'
@@ -206,7 +206,7 @@ end %}
     when 'disruption'
       'Disruption'
     when 'interagency'
-      'Interagency Coordination'
+      'Interagency'
     when 'legal'
       'Legal'
     when 'milestone'
