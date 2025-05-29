@@ -1,8 +1,8 @@
 {% import 'macros' %}
 <div class="mb-10 mt-1">
-  <div class="flex justify-between sm:justify-start items-end">
+  <div class="flex justify-between sm:justify-start items-end not-prose">
     <div class="flex-none order-last sm:order-first text-lg sm:text-xl md:text-2xl leading-none mb-0 sm:pr-2"><i class="fas {{ person_icon(person) }}"></i></div>
-    <div class="flex-none order-first sm:order-1ast"><h2 id="{{person.slug}}" class="text-lg sm:text-xl md:text-2xl leading-none mb-0 font-title">{{ person.name }}</h2></div>
+    <div class="flex-none order-first sm:order-1ast"><h2 id="{{person.slug}}" class="mt-0 mb-0 text-lg sm:text-xl md:text-2xl leading-none font-title">{{ person.name }}</h2></div>
   </div>
   <div class="sm:ml-7 md:ml-8 lg:ml-9.5 lining-nums">
     <div>

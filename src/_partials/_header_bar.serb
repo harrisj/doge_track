@@ -7,7 +7,7 @@
     </svg></a>
     {% end %}
   </div>
-  <div class="mx-auto font-title text-xl sm:text-2xl md:text-3xl"><a href="/" alt="Home">DOGE Track</a></div>
+  <div class="mx-auto text-xl sm:text-2xl md:text-3xl"><a href="/" alt="Home"><span class="font-title ">DOGE Track</span> <span class="text-xs md:text-sm">(beta)<span></a></div>
   <div class="">
     {% if next_pg %}
     <a class="btn btn-sm md:btn-md gap-2 lg:gap-3 btn-neutral hover:invert" href="{{ next_pg.url }}" alt="Next Page">

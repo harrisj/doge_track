@@ -1,7 +1,7 @@
 {% import "macros" %}
 
 <div class="pb-4">
-<div class="mb-5 mt-5">
+<div class="mb-5 mt-5 not-prose">
   <div class="flex justify-between sm:justify-start items-end">
     <div class="flex-none order-last sm:order-first text-lg sm:text-xl md:text-2xl leading-none mb-0 sm:pr-2"><i class="fas fa-user-secret"></i></div>
     <div class="flex-none order-first sm:order-1ast"><h2 id="{{ doge_alias.id }}" class="text-lg sm:text-xl md:text-2xl leading-none font-title">{{ doge_alias.id }}{% if doge_alias.name %}: {{ person_link(doge_alias.name) }}{% end %}</h2></div>

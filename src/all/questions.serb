@@ -11,7 +11,7 @@ layout: page
 <li class="list-row m-0 p-0 pb-1 pt-0.5 gap-1">
   <div class="text-md font-serif sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl align-top">Q</div>
   <div class="mt-1 sm:mt-1.5 sm:ml-0.5">
-    <div class="flex flex-wrap content-center align-top leading-5 no-prose">
+    <div class="flex flex-wrap content-center align-top leading-5 not-prose">
       <div class="flex-none pe-2">{{ render EdtfFormat.new(q.date, :iso) }}</div>
       {% if q.agency_id %}
         <div class="flex-none pe-2"><i class="fas fa-building mr-1"></i>{{ agency_link(q.agency_id) }}</div>

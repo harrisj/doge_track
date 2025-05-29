@@ -167,7 +167,7 @@
 # Steve Davis
 - category: leadership
 - positions:
-    -  **DOGE** (2025-01-20 to ??) 
+    -  **DOGE** (2025-01-20 to 2025-05-29) 
 
 # Stephen Duarte
 - category: support
@@ -842,7 +842,7 @@
     -  **VA** (2025-03-25 to ??) 
 
 # Russell Vought
-- category: enabler
+- category: leadership
 - positions:
     -  **EOP** (2025-02-07 to ??) **Director**
     -  **CFPB** (2025-02-08 to ??) **Acting Director**

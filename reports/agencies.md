@@ -165,7 +165,7 @@
   - **James Burnham** (2025-01-(23)~) General Counsel
   - **Katie Miller** (2025-01-20)
   - **Elon Musk** (2025-01-20)
-  - **Steve Davis** (2025-01-20)
+  - **Steve Davis** (2025-01-20 - 2025-05-29)
   - **Cole Killian** (2025-01-20)
   - **Adam Ramada** (2025-01-23)
   - **Alexandra Beynon** (2025-02-(04)~)

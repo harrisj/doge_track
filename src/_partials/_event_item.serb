@@ -4,7 +4,7 @@
   <div class="text-md sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-2xl align-top">
     <i class="fa {{ event_icon(event) }}"></i></div>
   <div class="mt-1 sm:mt-1.5 sm:ml-0.5">
-    <div class="flex flex-wrap content-center align-top leading-5 no-prose">
+    <div class="flex flex-wrap content-center align-top leading-5 not-prose">
       <div class="flex-none font-bold pe-2">{{ event_title(event) }}</div>
       <div class="flex-none pe-2">{{ render EdtfFormat.new(event.date, :iso) }}</div>
       <div class="flex-none pe-2">

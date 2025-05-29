@@ -1,6 +1,6 @@
 {% num_cols = 2 
 agency_col = false if agency_col.nil?
-icon_col = false if icon_col.nil?
+icon_col = true if icon_col.nil?
 month_separator = true if month_separator.nil?
 always_show_date = false if always_show_date.nil?
 show_directories = true if show_directories.nil?
@@ -14,7 +14,6 @@ num_cols +=1 if icon_col %}
   <thead>
     <tr>
       <th class="tab-cell-first text-xs">Date</th>
-      {% if icon_col %}<th class="text-xs">Type</th>{% end %}
       {% if agency_col %}<th class="hidden sm:table-cell text-xs">Agency</th>{% end %}
       <th class="text-xs">Event</th>
     </tr>
@@ -36,13 +35,12 @@ num_cols +=1 if icon_col %}
       {% if agency_col %}
       <div class="inline-block sm:hidden">{{ event.agencies | agency_links }}</div>
       {% end %}
-      <div class="text-xs">{{ event_title(event) }}</div>
       </td>
-      {% if icon_col %}<td class="align-top w-min-content"><i class="fa {{ event_icon(event) }}"></i></td>{% end %}
       {% if agency_col %}<td class="align-top hidden sm:table-cell">{{ event.agencies | agency_links }}</td>{% end %}
       <td class="align-top overflow-auto">
         <div class="font-mono">
-        {% if event.type == 'interagency' %}<strong>interagency: </strong>{% end %}
+        {% if icon_col %}<span><i class="fa {{ event_icon(event) }}"></i> </span>{% end %}
+        {% if icon_col || event.type == 'interagency' %}{{ event_title(event) }}: {% end %}
         {{ event.linkified_text | raw }}
         {% if event.fuzz %}&nbsp;[{{ event.fuzz | md }}]{% end %}
         {% if event.source && event.source_name %} <span class="text-nowrap">(<a href="{{ event.source }}" class="link-hover"><i class="fa-regular fa-newspaper"></i>&nbsp;<span class="italic text-2xs sm:text-xs">{{ event.source_name }}</span></a>)</span>{% end %}

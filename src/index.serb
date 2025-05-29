@@ -10,6 +10,11 @@ layout: homepage
   </div>
 </div>
 
+<div role="alert" class="alert alert-warning alert">
+  <i class="fa-solid fa-person-digging"></i>
+  <span><strong>Site is in beta.</strong> There is missing content and broken links. Layouts might change. Data might have bugs. Bear with me!</span>
+</div>
+
 <div class="mx-auto mt-10">
 {% site.data.page_listing.sections.each do |section| %}
 <section class="prose mb-10">
