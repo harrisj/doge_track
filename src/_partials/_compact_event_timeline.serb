@@ -7,7 +7,8 @@ show_directories = true if show_directories.nil?
 num_cols +=1 if agency_col
 num_cols +=1 if icon_col %}
  
- {% prior_row_date = Date.edtf(events[0].date)-1 %}
+ {% if events.any? %}
+ {% prior_row_date = Date.edtf!(events[0].date)-1 %}
 
 <table class="table table-auto table-xs sm:table-sm lg:table-md border-4 mb-0 mt-0">
   <thead>
@@ -26,7 +27,7 @@ num_cols +=1 if icon_col %}
       <td class="bg-base-200" colspan="{{ num_cols - 1 }}" /><td class="bg-base-200 font-bold">{{ parsed_date.strftime("%B %Y") }}</td>
     </tr>
     {% end %}
-    <tr class="font-mono">
+    <tr class="font-mono" id="{{ event.id }}">
       <td class="align-top tab-cell-first">
        {% if always_show_date || parsed_date.edtf != prior_row_date.edtf %}
         <div class="inline-block">{{ render EdtfFormat.new(event.date, :compact) }}</div>
@@ -67,3 +68,4 @@ num_cols +=1 if icon_col %}
   {% end %}
   </tbody>
 </table>
+{% end %}

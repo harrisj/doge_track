@@ -520,8 +520,8 @@
 # National Aeronautics and Space Administration
 - slug: nasa
 - people:
-  - **Riley Sennott** (2025-03-(14)~) (detailed from GSA)
-  - **Alexander Simonpour** (2025-03-14) (detailed from GSA)
+  - **Riley Sennott** (2025-03-(14)~) Senior Advisor (detailed from GSA)
+  - **Alexander Simonpour** (2025-03-14) Advisor (detailed from GSA)
 
 # National Archives
 - slug: nara
@@ -768,7 +768,7 @@
 - slug: va
 - people:
   - **Justin Fulcher** (2025-02-(04)~)
-  - **Sahil Lavingia** (2025-03-17 - 2025-05-09) Advisor to the Chief of Staff
+  - **Sahil Lavingia** (2025-03-17 - 2025-05-09) Senior Advisor
   - **Christopher Roussos** (2025-03-25)
   - **Cary Volpert** (2025-03-25)
 

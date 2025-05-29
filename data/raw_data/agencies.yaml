@@ -86,7 +86,7 @@
     type: action
     source: >-
       https://www.economist.com/united-states/2025/03/10/how-doge-is-driving-americas-public-health-guardians-mad
-    source_name: The Economist
+    source_name: Economist
     source_title: How DOGE is driving America's public-health guardians mad
     agency: CDC
     track_id: personnel
@@ -133,7 +133,7 @@
     source: >-
       https://www.economist.com/united-states/2025/03/10/how-doge-is-driving-americas-public-health-guardians-mad
     source_title: How DOGE is driving America's public-health guardians mad
-    source_name: The Economist
+    source_name: Economist
     track_id: personnel
     agency: CDC
     id: Ucq6WnMM
@@ -142,7 +142,7 @@
     event: >-
       A senior manager at CDC comes back from a meeting to find two men in Tesla shirts leaving her office
       who said they "fixed" her computer
-    source_name: The Economist
+    source_name: Economist
     source: >-
       https://www.economist.com/united-states/2025/03/10/how-doge-is-driving-americas-public-health-guardians-mad
     source_title: How DOGE is driving America's public-health guardians mad
@@ -153,7 +153,7 @@
     event: Staff at the CIO office at the CDC claim to not have been contacted by DOGE yet
     source: https://www.theatlantic.com/technology/archive/2025/02/doge-god-mode-access/681719/
     source_title: DOGE Has 'God Mode' Access to Government Data
-    source_name: The Atlantic
+    source_name: Atlantic
     agency: CDC
     track_id: spending
     id: 5aycrTMg
@@ -165,7 +165,7 @@
     source: >-
       https://www.economist.com/united-states/2025/03/10/how-doge-is-driving-americas-public-health-guardians-mad
     source_title: How DOGE is driving America's public-health guardians mad
-    source_name: The Economist
+    source_name: Economist
     agency: CDC
     id: 9TW4PD58
   - date: 2025-03-25
@@ -175,7 +175,7 @@
       for COVID response
     source: >-
       https://www.nbcnews.com/health/health-news/cdc-pulling-back-11b-covid-funding-sent-health-departments-us-rcna198006
-    source_name: NBC News
+    source_name: NBC
     source_title: CDC is pulling back $11B in Covid funding sent to health departments across the U.S.
     agency: CDC
     track_id: spending
@@ -248,7 +248,7 @@
       DOGE staff arrive at CMS HQ and are reportedly granted access to the CALM system, but sources at
       CMS deny they have access to HIGLAS
     source: https://www.wsj.com/politics/elon-musk-doge-medicare-medicaid-fraud-e697b162
-    source_name: Wall Street Journal
+    source_name: WSJ
     agency: CMS
     id: mKix9GPm
   - date: 2025-02-05
@@ -273,7 +273,7 @@
     event: CMS releases a press release stating that two agency veterans have been assigned to work with
       DOGE
     source: https://www.cms.gov/newsroom/press-releases/cms-statement-collaboration-doge
-    source_name: CMS Press Release
+    source_name: press release
     agency: CMS
     id: HRb5mWmM
   - date: 2025-02-24
@@ -401,7 +401,7 @@
   id: CIA
   short_name: CIA
   slug: cia
-  page_slug: other-majors
+  page_slug: none
   events:
   - date: 2025-03-31
     type: interagency
@@ -410,6 +410,7 @@
       DOGE:
       - Elon Musk
     source: https://www.washingtonpost.com/national-security/2025/03/31/elon-musk-cia-doge/
+    source_name: Wash. Post
     agency: CIA
     id: EvqS5mPP
 
@@ -436,6 +437,7 @@
     named:
     - Michael Grimes
     source: https://www.ft.com/content/21ad2223-2a7f-44d4-8004-38956597bb9d
+    source_name: FT
     agency: Commerce
     id: dqDnwCxi
 
@@ -482,6 +484,7 @@
     event: Elon Musk posts a tweet "CFPB RIP" with a tombstone emoji
     source: >-
       https://news.bloomberglaw.com/banking-law/musks-doge-descends-on-consumer-financial-protection-bureau
+    source_name: Bloomberg
     agency: CFPB
     id: fHLJXQSP
   - date: 2025-02-07
@@ -913,7 +916,7 @@
       CPB being an independent agency.
     source: >-
       https://www.whitehouse.gov/presidential-actions/2025/05/ending-taxpayer-subsidization-of-biased-media/
-    source_name: Executive Order
+    source_name: exec order
     source_title: Ending Taxpayer Subsidization of Biased Media
     agency: CPB
     id: 6mAF9PCM
@@ -960,12 +963,13 @@
   id: USDA
   short_name: USDA
   slug: usda
-  page_slug: other-majors
+  page_slug: agriculture
   doge_base: true
   events:
   - date: 2025-02-14
     type: sighting
     event: In a speech, the Secretary of Agriculture says DOGE has been at the agency for "a few weeks"
+    source_name: press release
     source: >-
       https://www.usda.gov/about-usda/news/press-releases/2025/02/14/secretary-rollins-delivers-opening-remarks-usda-headquarters
     agency: USDA
@@ -989,6 +993,7 @@
     type: official
     event: USDA Secretary Rollins posts a photo of a grant-cancellation session on the @DOGE_USDA account
     source: https://xcancel.com/SecRollins/status/1892777526704885880#m
+    source_name: X.com
     agency: USDA
     id: Rvoj6n6y
   - date: 2025-02-25
@@ -1008,6 +1013,7 @@
       Federal staff at the USDA are sent an email offering them another chance to do a deferred resignation
       if they enroll within the next week or so
     source: https://www.nytimes.com/2025/04/01/us/politics/federal-layoff-buyout-offers.html
+    source_name: NYT
     agency: USDA
     id: UWEbC7Qn
   - date: 2025-05-05
@@ -1017,6 +1023,7 @@
       two deferred resignation programs
     source: >-
       https://www.reuters.com/world/us/more-than-15000-usda-employees-have-taken-trump-financial-incentive-leave-2025-05-04/
+    source_name: Reuters
     agency: USDA
     id: 1QPIZzzA
   - date: 2025-05-06
@@ -1027,6 +1034,7 @@
       access to federal and state data and demanding they turn over data on recipients dating back to
       2020-01-01 or face consequences
     source: https://www.fns.usda.gov/snap/data-sharing-guidance
+    source_name: official notice
     agency: USDA
     id: 7AiK0YC5
 
@@ -1096,6 +1104,7 @@
       if they enroll within the next week or so
     source: >-
       https://www.defense.gov/News/News-Stories/Article/Article/4138965/hegseth-orders-civilian-workforce-realignment-in-dod-reopens-drp/
+    source_name: press release
     agency: DOD
     id: UGT527xz
   - date: 2025-04-08
@@ -1121,7 +1130,7 @@
     event: >-
       Pentagon staff are told they now no longer have to submit the Five Things email, but they are now
       tasked with a mandatory exercise to submit one thing that improves efficiency or reduces waste
-    source_name: DefencseScoop
+    source_name: DefenseScoop
     source_title: DOD civilians get new instructions on DOGE-inspired productivity reports
     source: https://defensescoop.com/2025/05/27/dod-doge-instructions-survey-end-5-bullet-points-emails/
     agency: DOD
@@ -1162,7 +1171,7 @@
       Stephanie Holmes requests full admin access to the FPPS system to process actions for herself as
       well as DOGE members Katrine Trampe and Tyler Hassen
     source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
-    source_name: Internal Investigation
+    source_name: PEER
     named:
     - Stephanie Holmes
     - Katrine Trampe
@@ -1175,7 +1184,7 @@
       Stephanie Holmes' request for admin access to the FPPS system is approved by an Jarrod Agen, Senior
       Advisor to the Secretary of the Interior
     source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
-    source_name: Internal Investigation
+    source_name: PEER
     named:
     - Stephanie Holmes
     agency: DOI
@@ -1196,7 +1205,7 @@
       granted full admin access to FPPS. The CIO said he would do it once the Secretary accepted the risk.
       Holmes did not convey the report to the Secretary.
     source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
-    source_name: Internal Investigation
+    source_name: PEER
     named:
     - Stephanie Holmes
     agency: DOI
@@ -1233,7 +1242,7 @@
       Julie Bednar, a senior advisor in human resources at DOI, is pulled into a call with Katrine Trampe
       and Gavin Kliger calling from IRS who asked to speak to the system owner for FPPS directly
     source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
-    source_name: Internal Investigation
+    source_name: PEER
     agency: DOI
     id: e4rwFTP2
   - date: 2025-04-01
@@ -1242,7 +1251,7 @@
       The manager of the DOI's labor relations branch initiates an investigation of the DOI's CIO, Deputy
       CIO, Associate Solicitor and a Special Advisor over attempts to prevent DOGE access to DOI systems
     source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
-    source_name: Internal Investigation
+    source_name: PEER
     agency: DOI
     id: Acsi6Z5A
   - date: 2025-04-17
@@ -1391,6 +1400,7 @@
     - Rachel Riley
     - James Burnham
     source: https://www.nytimes.com/2025/01/12/us/politics/elon-musk-doge-government-trump.html
+    source_name: NYT
     agency: DOGE
     id: V7Gkkvah
   - date: 2025-01-16
@@ -1403,6 +1413,7 @@
     - Shaun Maguire
     source: >-
       https://www.washingtonexaminer.com/news/investigations/3287555/maga-conservative-non-profits-doge-research/
+    source_name: Wash. Examiner
     agency: DOGE
     id: TfWVwUjM
   - date: 2025-01-17
@@ -1417,6 +1428,7 @@
     - Conor Fennessy
     source: >-
       https://www.msn.com/en-us/money/companies/we-found-a-doge-guy-at-nasa-because-his-google-calendar-was-public/ar-AA1At75X
+    source_name: MSN
     agency: DOGE
     id: CPQe7omt
   - date: 2025-01-20
@@ -1427,6 +1439,7 @@
       DOGE agenda"
     source: >-
       https://www.whitehouse.gov/presidential-actions/2025/01/establishing-and-implementing-the-presidents-department-of-government-efficiency/
+    source_name: executive order
     agency: DOGE
     id: 2Qe7j4uD
   - date: 2025-01-20
@@ -1435,6 +1448,7 @@
       In another executive order, Trump declares a hiring freeze and that DOGE will work with OMB and
       OPM to submit a plan to reduce the size of the government within 90 days
     source: https://www.whitehouse.gov/presidential-actions/2025/01/hiring-freeze/
+    source_name: executive order
     agency: DOGE
     id: cSecvrNE
   - date: 2025-01-20
@@ -1443,6 +1457,7 @@
       USDS is transferred out of the Office of Management and Budget (OMB) and established a standalone
       office in the Executive Office of the President
     source: https://www.documentcloud.org/documents/25564597-crewvdogereconmot031425/
+    source_name: court doc
     agency: DOGE
     id: bT57eChF
   - date: 2025-01-21
@@ -1454,6 +1469,7 @@
     - Cole Killian
     - Nikhil Rajpal
     source: https://www.wired.com/story/elon-musk-digital-coup-doge-data-ai/
+    source_name: Wired
     agency: DOGE
     id: 2y8WthBd
   - date: 2025-01-24
@@ -1461,6 +1477,7 @@
     event: >-
       A report from Business Insider names some of the DOGE staffers who were involved in transition activities
     source: https://www.yahoo.com/news/doge-just-got-hire-224212262.html
+    source_name: Yahoo
     named:
     - Katie Miller
     - Brad Smith
@@ -1493,12 +1510,14 @@
       sets quota of 1 new hire for 4 departures
     source: >-
       https://www.whitehouse.gov/presidential-actions/2025/02/implementing-the-presidents-department-of-government-efficiency-workforce-optimization-initiative/
+    source_name: executive order
     agency: DOGE
     id: 8jFnTPVN
   - date: 2025-02-13
     type: official
     event: DOGE announces that its website is now live with an organizational chart and tweets
     source: https://xcancel.com/DOGE/status/1889897384122982604#m
+    source_name: X.com
     agency: DOGE
     id: dKmuYfJv
   - date: 2025-02-14
@@ -1507,6 +1526,7 @@
       Approximately 50 USDS staff are fired, with most of terminations focused on project managers and
       designers (removing approximately 1/3 of the USDS staff that predated DOGE)
     source: https://www.wired.com/story/doge-major-government-tech-projects-efficiency/
+    source_name: Wired
     agency: DOGE
     id: 53SzbRoa
   - date: 2025-02-17
@@ -1529,6 +1549,7 @@
     - Christopher Stanley
     source: >-
       https://techcrunch.com/2025/02/18/elon-musk-staffer-created-a-doge-ai-assistant-for-making-government-less-dumb/
+    source_name: Techcrunch
     agency: DOGE
     id: c8PWENvT
   - date: 2025-02-19
@@ -1539,6 +1560,7 @@
       systems
     source: >-
       https://www.whitehouse.gov/presidential-actions/2025/02/ending-taxpayer-subsidization-of-open-borders/
+    source_name: executive order
     agency: DOGE
     id: 4jLJWhw6
   - date: 2025-02-19
@@ -1549,6 +1571,7 @@
       teams on deregulatory efforts.
     source: >-
       https://www.whitehouse.gov/presidential-actions/2025/02/ensuring-lawful-governance-and-implementing-the-presidents-department-of-government-efficiency-regulatory-initiative/
+    source_name: executive order
     agency: DOGE
     id: YAentsgx
   - date: 2025-02-24
@@ -1557,11 +1580,13 @@
       In a hearing for "Alliance for Retired Americans v. Bessent," Judge Kollar-Kotelly repeatedly grills
       DOJ lawyers on who the USDS Administrator is
     source: https://www.lawfaremedia.org/article/who-is-running-the-u.s.-doge-service
+    source_name: Lawfare
     agency: DOGE
     id: AJPVbMyh
   - date: 2025-02-25
     type: disruption
     event: 21 remaining USDS staff publicly resign in protest of DOGE's actions
+    source_name: AP
     source: >-
       https://apnews.com/article/doge-elon-musk-federal-government-resignations-usds-6b7e9b7022e6d89d69305e9510f2a43c
     agency: DOGE
@@ -1579,6 +1604,7 @@
     event: >-
       Trump issues an executive order mandating that DOGE teams will have approval over awarding any contract
       at any agency and freezes purchase cards for 90 days
+    source_name: executive order
     source: >-
       https://www.whitehouse.gov/presidential-actions/2025/02/implementing-the-presidents-department-of-government-efficiency-cost-efficiency-initiative/
     agency: DOGE
@@ -1590,6 +1616,7 @@
       name of Amy Gleason. It is unclear how long she had been in the role.
     named:
     - Amy Gleason
+    source_name: NPR
     source: https://www.npr.org/2025/02/26/nx-s1-5310634/amy-gleason-doge-administrator
     agency: DOGE
     id: jUGZwRWr
@@ -1598,17 +1625,18 @@
     event: >-
       U.S. District Judge John Bates orders that some DOGE officials should be required to testify under
       oath
+    source_name: Politico
     source: https://www.politico.com/news/2025/02/27/doge-depositions-union-lawsuits-00206542
     case_no: 1:25-cv-00339
     agency: DOGE
     id: dq7CdXaH
     source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
-    source_name: court doc
   - date: 2025-03-05
     type: directory
     event: >-
       The Intercept receives a list of 30 DOGE staffers working within the Executive Office of the President
       (EOP), including 4 lawyers previously not listed
+    source_name: Intercept
     source: https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
     named:
     - Steve Davis
@@ -1637,6 +1665,7 @@
     event: >-
       The Engineering Director of USDS publicly resigns in protest, stating "this is not the mission I
       joined"
+    source_name: Cloudbrain
     source: https://cloudbrain.in/engineering-director-of-usds-steps-down-this-is-not-the-mission-i-joined/
     agency: DOGE
     id: MqbymWLE
@@ -1646,16 +1675,16 @@
       U.S. District Judge Christopher Cooper demands a rolling production of DOGE to produce documents
       in discovery within weeks
     case_no: 1:25-cv-00511
+    source_name: Politico
     source: https://www.politico.com/news/2025/03/10/judge-orders-doge-record-release-00223151
     agency: DOGE
     id: 9mT2W8db
-    source_title: Citizens For Responsibility and Ethics in Washington (CREW) vs. DOGE Service (D.D.C.)
-    source_name: court doc
   - date: 2025-03-10
     type: directory
     event: >-
       Elon Musk claims there are about 100 DOGE staffers and he has plans to double to 200. He also claims
       they are in every federal Department.
+    source_name: NBC News
     source: >-
       https://www.nbcnews.com/politics/doge/musk-says-doge-almost-every-federal-agency-plans-double-staff-rcna195735
     agency: DOGE
@@ -1669,8 +1698,7 @@
     case_no: 1:25-cv-00429
     agency: DOGE
     id: Vfm7HbS4
-    source_title: New Mexico et al v. Musk (D.D.C.)
-    source_name: court doc
+    source_name: Politico
   - date: 2025-03-18
     type: official
     event: >-
@@ -1736,6 +1764,7 @@
       but also "to the maximum extent consistent with law."
     source: >-
       https://www.whitehouse.gov/presidential-actions/2025/03/stopping-waste-fraud-and-abuse-by-eliminating-information-silos/
+    source_name: executive order
     agency: DOGE
     id: V6ZVi48F
   - date: 2025-03-25
@@ -1744,6 +1773,7 @@
       Within a large executive order about voting, Trump orders DOGE "to review each State's publicly
       available voter registration list and available records concerning voter list maintenance activities."
     source: https://www.businessinsider.com/trump-doge-voter-rolls-executive-order-2025-3
+    source_name: executive order
     agency: DOGE
     id: 8rQqTtqy
   - date: 2025-03-26
@@ -1804,6 +1834,7 @@
       Three DOGE staffers are reported to be working with staff from DHS, the State Department and USCIS
       on implementing an application process for a $5 Million "Gold Card" visa
     source: https://www.nytimes.com/2025/04/16/us/politics/gold-card-visa-trump-musk.html
+    source_name: NYT
     named:
     - Marko Elez
     - Edward Coristine
@@ -1837,10 +1868,22 @@
       The Supreme Court issues a stay on the order from an appeals court that DOGE must start producing
       documents for CREW
     source: https://www.supremecourt.gov/orders/courtorders/052325zr1_1b8e.pdf
-    source_name: The Supreme Court
+    source_name: Supreme Court
     case_no: 1:25-cv-00511
     agency: DOGE
     id: 5fCND3ng
+  - date: 2025-05-28
+    type: official
+    event: >-
+      Elon Musk claims on his X.com account that he has ended his time as a Special Government Employee
+      but that he remains on good terms with the team. It's unclear if this marks an end to Elon's murky
+      relationship with DOGE.
+    source: https://www.nytimes.com/2025/05/28/us/politics/elon-musk-trump-doge.html
+    source_name: NYT
+    named:
+    - Elon Musk
+    agency: DOGE
+    id: 2av8Swnp
 
 - name: Department of Homeland Security
   id: DHS
@@ -1861,6 +1904,7 @@
     - Edward Coristine
     event: Edward Coristine appears in a DHS directory as a "senior advisor"
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
+    source_name: Wash. Post
     agency: DHS
     id: bJckd7pu
   - date: 2025-02-10
@@ -1871,6 +1915,7 @@
     named:
     - Kyle Schutt
     source: https://www.politico.com/news/2025/03/29/doge-marco-elez-software-engineer-us-payroll-00259303
+    source_name: Politico
     agency: DHS
     id: BGZKY6go
   - date: 2025-02-26
@@ -1880,6 +1925,7 @@
       of inquiry into DOGE activities at DHS
     source: >-
       https://www.bankinfosecurity.com/house-committee-blocks-probe-into-doge-access-to-dhs-systems-a-27608
+    source_name: Bank Info Security
     agency: DHS
     id: EAo8rM7V
   - date: 2025-03-XX
@@ -2157,7 +2203,7 @@
   id: Energy
   short_name: Energy
   slug: energy
-  page_slug: other-majors
+  page_slug: energy
   doge_base: true
   events:
   - date: 2025-02-07
@@ -2502,7 +2548,7 @@
   id: EPA
   short_name: EPA
   slug: epa
-  page_slug: other-majors
+  page_slug: epa
   doge_base: true
   events:
   - date: 2025-02-04
@@ -3058,6 +3104,17 @@
     source_title: DOGE created a 'survey of surveys' for a push to cut some government data collection
     agency: GSA
     id: 6XvVTqRw
+  - date: 2025-05-28
+    type: legal
+    event: >-
+      Former 18F employees file a class-action appeal with the Merit Systems Protection Board stating
+      that GSA did not provide a valid reason for eliminating the agency and the firings were acts of
+      retaliation because of their perceived political affiliations.
+    source: https://fedscoop.com/former-18f-employees-file-appeal-of-doge-firings/
+    source_name: FedScoop
+    source_title: Former 18F employees file appeal of DOGE firings
+    agency: GSA
+    id: aDKiKq5b
 
 - name: Government Accountability Office
   id: GAO
@@ -3712,7 +3769,7 @@
   short_name: NASA
   slug: nasa
   doge_base: true
-  page_slug: other-majors
+  page_slug: nasa
   events:
   - date: 2025-02-13
     type: official
@@ -3758,6 +3815,21 @@
     source: https://www.businessinsider.com/tesla-employee-alexander-simonpour-nasa-doge-team-2025-3
     agency: NASA
     id: FHj3Dgcw
+  - date: 2025-04-08
+    type: oversight
+    source: >-
+      https://democrats-science.house.gov/imo/media/doc/SST%20RM%20Lofgren%20Foushee%20Sykes%20-%20Letter%20to%20Acting%20Administrator%20Petro%20-%20DOGE%20Team%20Access%20-%204.8.25.pdf
+    source_name: congressional letter
+    event: >-
+      A letter from Democrats on the House Committee of Science, Space, and Technology expresses specific
+      concern about the lack of qualifications of DOGE staff at the agency and explicitly names Scott
+      Coulter, Riley Sennott and Alexander Simonpour.
+    named:
+    - Alexander Simonpour
+    - Scott Coulter
+    - Riley Sennott
+    agency: NASA
+    id: 3jW4EtlY
 
 - name: National Archives
   id: NARA
@@ -6186,7 +6258,7 @@
   id: USPS
   slug: usps
   doge_base: true
-  page_slug: other-majors
+  page_slug: usps
   events:
   - date: 2025-03-13
     type: official

@@ -475,7 +475,7 @@
 # Sahil Lavingia
 - category: wrecker
 - positions:
-    -  **VA** (2025-03-17 to 2025-05-09) Advisor to the Chief of Staff
+    -  **VA** (2025-03-17 to 2025-05-09) Senior Advisor volunteer
 
 # Jeremy Lewin
 - category: wrecker
@@ -736,7 +736,7 @@
 - category: wrecker
 - positions:
     -  **GSA** (2025-02-12 to ??) 
-    -  **NASA** (2025-03-(14)~ to ??) 
+    -  **NASA** (2025-03-(14)~ to ??) Senior Advisor
 
 # Bryton Shang
 - category: enabler
@@ -769,7 +769,7 @@
 - positions:
     -  **GSA** (2025-03-XX to ??) 
     -  **USPS** (2025-03-07 to NTE 2025-06-15) 
-    -  **NASA** (2025-03-14 to ??) 
+    -  **NASA** (2025-03-14 to ??) Advisor
 
 # Sam Smeal
 - category: wrecker

@@ -115,11 +115,11 @@
 - id: CIA
   name: Central Intelligence Agency
   slug: cia
-  page_slug: other-majors
+  page_slug: none
   short_name: CIA
   doge_base: false
   parent_id:
-  path: "/agencies/cia#cia"
+  path:
   children: []
   position_ids: []
   event_ids:
@@ -308,11 +308,11 @@
 - id: USDA
   name: Department of Agriculture
   slug: usda
-  page_slug: other-majors
+  page_slug: agriculture
   short_name: USDA
   doge_base: true
   parent_id:
-  path: "/agencies/usda#usda"
+  path: "/agencies/agriculture"
   children: []
   position_ids:
   - detail-opm-usda-kliger
@@ -480,6 +480,7 @@
   - 3b9znEPp
   - 3zmjW3zT
   - 5fCND3ng
+  - 2av8Swnp
   system_access: []
   obj_type: Agency
 - id: DHS
@@ -640,11 +641,11 @@
 - id: Energy
   name: Department of Energy
   slug: energy
-  page_slug: other-majors
+  page_slug: energy
   short_name: Energy
   doge_base: true
   parent_id:
-  path: "/agencies/energy#energy"
+  path: "/agencies/energy"
   children: []
   position_ids:
   - detail-gsa-energy-luke-farritor
@@ -801,11 +802,11 @@
 - id: EPA
   name: Environmental Protection Agency
   slug: epa
-  page_slug: other-majors
+  page_slug: epa
   short_name: EPA
   doge_base: true
   parent_id:
-  path: "/agencies/epa#epa"
+  path: "/agencies/epa"
   children: []
   position_ids:
   - detail-doge-epa-killian
@@ -911,6 +912,7 @@
   - 3b9znEPp
   - 3zmjW3zT
   - 5fCND3ng
+  - 2av8Swnp
   system_access: []
   obj_type: Agency
 - id: EXIM
@@ -1144,6 +1146,7 @@
   - HQUguBSH
   - 4p1Gdjkg
   - 6XvVTqRw
+  - aDKiKq5b
   system_access: []
   obj_type: Agency
 - id: GAO
@@ -1489,11 +1492,11 @@
 - id: NASA
   name: National Aeronautics and Space Administration
   slug: nasa
-  page_slug: other-majors
+  page_slug: nasa
   short_name: NASA
   doge_base: true
   parent_id:
-  path: "/agencies/nasa#nasa"
+  path: "/agencies/nasa"
   children: []
   position_ids:
   - detail-gsa-nasa-sennott
@@ -1504,6 +1507,7 @@
   - ZzPoLUUi
   - FHj3Dgcw
   - vfRpqtC4
+  - 3jW4EtlY
   system_access: []
   obj_type: Agency
 - id: NARA
@@ -2163,11 +2167,11 @@
 - id: USPS
   name: US Postal Service
   slug: usps
-  page_slug: other-majors
+  page_slug: usps
   short_name: USPS
   doge_base: true
   parent_id:
-  path: "/agencies/usps#usps"
+  path: "/agencies/usps"
   children: []
   position_ids:
   - detail-gsa-usps-alex-simonpour

@@ -1,0 +1,11 @@
+---
+agency_id: DOT
+title: Department of Transportation
+template_engine: serbea
+---
+
+{% blurb = capture do %}
+
+{% end %}
+
+{%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}
