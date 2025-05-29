@@ -74,7 +74,7 @@ end %}
 
       if person && person.path && person.path != 'none'
         display ||= person.name
-        "<a class=\"link-hover whitespace-nowrap\" href=\"#{person_url(person)}\">#{display}</a>".html_safe
+        "<a class=\"link-hover sm:whitespace-nowrap\" href=\"#{person_url(person)}\">#{display}</a>".html_safe
       else
         display || p_id
       end
