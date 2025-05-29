@@ -82,6 +82,11 @@ end %}
   end
 %}
 
+{% macro "alias_link" do |alias_id|
+  "<a class=\"link-hover\" href=\"/people/aliases##{alias_id}\">#{alias_id}</a>".html_safe
+  end
+%}
+
 {% macro "people" do |arr|
     if arr.nil?
       []
@@ -113,16 +118,19 @@ end %}
 {% macro "agency_link" do |a_id, display=nil|
     if a_id.nil?
       ""
-    else
+    elsif a_id.is_a?(String)
       agency = find_agency(a_id)
-
-      if agency && agency.path
-        display ||= agency.short_name
-        "<a class=\"link-hover\" href=\"#{agency.path}\">#{display}</a>".html_safe
+      agency_link(agency)
+    elsif a_id.key? :path
+      if a_id.key? :short_name
+        display ||= a_id.short_name
       else
-        raise(a_id.inspect)
-        display || a_id
+        display ||= a_id
       end
+
+      "<a class=\"link-hover\" href=\"#{a_id.path}\">#{display}</a>".html_safe
+    else
+      a_id
     end
   end
 %}
