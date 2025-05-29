@@ -48,6 +48,10 @@ layer(base);
     @apply text-base-content text-opacity-75;
   } */
 
+  a {
+    @apply font-extrabold sm:font-bold;
+  }
+
   .h1 {
     @apply text-xl sm:text-2xl md:text-3xl
   }

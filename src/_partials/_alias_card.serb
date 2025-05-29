@@ -1,23 +1,33 @@
 {% import "macros" %}
 
 <div class="pb-4">
-<h3 class="mt-4 mb-0" id="{{ doge_alias.id }}">{{ doge_alias.id }}{% if doge_alias.name %}: {{ person_link(doge_alias.name) }}{% end %}</h3>
+<div class="mb-10 mt-1">
+  <div class="flex justify-between sm:justify-start items-end">
+    <div class="flex-none order-last sm:order-first text-lg sm:text-xl md:text-2xl leading-none mb-0 sm:pr-2"><i class="fas fa-user-secret"></i></div>
+    <div class="flex-none order-first sm:order-1ast"><h2 id="{{ doge_alias.id }}" class="text-lg sm:text-xl md:text-2xl leading-none font-title">{{ doge_alias.id }}{% if doge_alias.name %}: {{ person_link(doge_alias.name) }}{% end %}</h2></div>
+  </div>
+  
+  <div class="sm:ml-7 md:ml-8 lg:ml-9.5 lining-nums">
+    {% if doge_alias.evidence %}
+    <div>
+    <h3 class="h3 mt-5 mb-0">Supporting Evidence:</h4>
+    <div class="prose prose-sm md:prose-base max-w-none">{{ doge_alias.evidence | markdownify }}</div>
+    </div>
+    {% end %}
 
-{% if doge_alias.evidence %}
+    {% if doge_alias.positions && doge_alias.positions.any? %}
+    <div>
+    <h3 class="h3 mt-5 mb-0">Positions:</h4>
+    {%@ 'person_positions_table', positions: doge_alias.positions %}
+    </div>
+    {% end %}
 
-<h4 class="mt-5 mb-0">Supporting Evidence:</h4>
-  <div class="prose max-w-none">{{ doge_alias.evidence | markdownify }}</div>
-{% end %}
-
-{% if doge_alias.positions && doge_alias.positions.any? %}
-
-<h4 class="mt-5 mb-0">Positions:</h4>
-{%@ 'person_positions_table', positions: doge_alias.positions %}
-{% end %}
-
-{% if doge_alias.events && doge_alias.events.any? %}
-<h4 class="mt-5 mb-0">Events:</h4>
-
-{%@ 'event_timeline', events: doge_alias.events %}
-{% end %}
+    {% events = site.data.events.select {|e| e.names_aliases.any? {|a| a.alias == doge_alias.id } } %}
+    {% if events.any? %}
+    <div>
+      <h3 class="h3 mt-5 mb-0">Events:</h3>
+      {%@ 'compact_event_timeline', events: events %}
+    </div>
+    {% end %}
+  </div>
 </div>

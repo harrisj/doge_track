@@ -1,33 +1,35 @@
 {% import 'macros' %}
-<div class="mb-5 mt-1">
-<div class="flex justify-between sm:justify-start items-end">
-  <div class="flex-none order-last sm:order-first text-lg sm:text-xl md:text-2xl leading-none mb-0 sm:pr-2"><i class="fas {{ person_icon(person) }}"></i></div>
-  <div class="flex-none order-first sm:order-1ast"><h2 id="{{person.slug}}" class="text-lg sm:text-xl md:text-2xl leading-none mb-0 font-title">{{ person.name }}</h2></div>
-</div>
-<div class="sm:ml-7 md:ml-8 lg:ml-9.5 lining-nums">
-  <div class="prose prose-sm md:prose-base prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-2 leading-none"><strong>{{ person.category.titleize }}</strong>{% if person.age %}, age {{ person.age }}{% end %}</div>
-  {% if person.linkified_blurb %}<p class="prose prose-sm md:prose-base prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-0 mt-0.5 leading-5 mb-2">{{ person.linkified_blurb | md }}</p>{% end %}
-</div>
+<div class="mb-10 mt-1">
+  <div class="flex justify-between sm:justify-start items-end">
+    <div class="flex-none order-last sm:order-first text-lg sm:text-xl md:text-2xl leading-none mb-0 sm:pr-2"><i class="fas {{ person_icon(person) }}"></i></div>
+    <div class="flex-none order-first sm:order-1ast"><h2 id="{{person.slug}}" class="text-lg sm:text-xl md:text-2xl leading-none mb-0 font-title">{{ person.name }}</h2></div>
+  </div>
+  <div class="sm:ml-7 md:ml-8 lg:ml-9.5 lining-nums">
+    <div>
+      <div class="prose prose-sm md:prose-base prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-2 leading-none"><strong>{{ person.category.titleize }}</strong>{% if person.age %}, age {{ person.age }}{% end %}</div>
+      {% if person.linkified_blurb %}<p class="prose prose-sm md:prose-base prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-0 mt-0.5 leading-5 mb-2">{{ person.linkified_blurb | md }}</p>{% end %}
+    </div>
 
-{% if person.positions.any? %}
-<h3 class="sm:ml-7 md:ml-8 lg:ml-9.5 mb-0 mt-0 text-lg md:text-xl">Positions</h3>
-<div class="sm:ml-3 md:ml-4 lg:ml-5 ">
-    {%@ 'person_positions_table', positions: person.positions %}
-</div>
-{% end %}
+    {% if person.positions.any? %}
+      <div class="mt-3">
+        <h3 class="mb-0 mt-0 h3">Positions</h3>
+        {%@ 'person_positions_table', positions: person.positions %}
+      </div>
+    {% end %}
 
-{% if person.events.any? %}
-<h3 class="sm:ml-7 md:ml-8 lg:ml-9.5 mb-0 mt-0 text-lg md:text-xl">Events</h3>
-<div class="sm:ml-3 md:ml-4 lg:ml-5 ">
-    {%@ 'compact_event_timeline', agency_col: true, events: person.events, month_separator: false, show_directories: false, always_show_date: true %}
-</div>
-{% end %}
-</div>
+    {% if person.events.any? %}
+    <div class="mt-3">
+      <h3 class="mb-0 mt-0 h3">Events</h3>
+      {%@ 'compact_event_timeline', agency_col: true, events: person.events, month_separator: false, show_directories: false, always_show_date: true %}
+    </div>
+    {% end %}
 
-{% open_questions = site.data.questions.select {|q| q.name == person.name && q.answer.blank?} %}
-{% if open_questions.any? %}
-<h3 class="sm:ml-7 md:ml-8 lg:ml-9.5 mb-0 mt-0 text-lg md:text-xl">Open Questions</h3>
-<div class="sm:ml-5 md:ml-6 lg:ml-7 ">
+  {% open_questions = site.data.questions.select {|q| q.name == person.name && q.answer.blank?} %}
+  {% if open_questions.any? %}
+  <div class="mt-3">
+    <h3 class="mb-0 mt-0 h3">Open Questions</h3>
     {%@ 'questions_list', questions: open_questions %}
-</div>   
-{% end %}
+  </div>
+  {% end %}
+  </div>
+</div>

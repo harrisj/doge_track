@@ -26,10 +26,58 @@ DOGE honed its moves against independent agencies by first attacking {{ agency_l
 
 ## Waves of Attack
 
-### The Corporation for Public Broadcasting
+### 2/19: "Commencing the Reduction of the Federal Bureaucracy"
 
+The pattern of assaulting independent agencies began with an Executive Order ["Commencing the Reduction of the Federal Bureaucracy"](https://www.presidency.ucsb.edu/documents/executive-order-14217-commencing-the-reduction-the-federal-bureaucracy) issued on 2025-02-19 that mandated that "The non-statutory components and functions of the following governmental entities shall be eliminated to the maximum extent consistent with applicable law" for the Presidio Trust, Inter-American Foundation, United States African Development Foundation and US Institute of Peace. This was followed by DOGE taking over the various agencies. 
 
-## Condensed Timeline of Events
+It started with the USADF and IAF
+
+{% events = site.data.events.select {|e| e.agency_ids.include?('IAF') || e.agency_ids.include?('USADF') } %}
+{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+
+Thanks to testimony entered in the lawsuit of _United States Institute of Peace v. Jackson (D.D.C.)_, we have a remarkably detailed timeline for the DOGE assault on the US Institute of Peace:
+
+{% events = site.data.events.select {|e| e.agency_ids.include?('USIP') && e.sort_date < '2025-05-01' } %}
+{%@ 'compact_event_timeline', events: events, agency_col: false, month_separator: false %}
+
+### 3/14: "Continuing the Reduction of the Federal Bureaucracy"
+
+In another executive order ["Continuing the Reduction of the Federal Bureaucracy"](https://www.presidency.ucsb.edu/documents/executive-order-14238-continuing-the-reduction-the-federal-bureaucracy), the Trump administration amplified the tactics of the first order, both by widening the number of agencies being examined and reducing the timeframes for their compliance. This order targeted the Federal Mediation and Conciliation Service, the United States Agency for Global Media (aka Voice of America), the Woodrow Wilson International Center for Scholars in the Smithsonian Institution, the Institute of Museum and Library Services, the United States Interagency Council on Homelessness, the Community Development Financial Institutions Fund; and the Minority Business Development Agency.
+
+{% events = site.data.events.select {|e| (e.agency_ids & %w[FMCS USAGM IMLS USICH CDFIF MBDA]).any? } %}
+{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+
+### Targeting the Arts
+
+{% events = site.data.events.select {|e| (e.agency_ids & %w[NEH CPB ACHP ]).any? } %}
+{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+
+### Finance and Regulations
+
+{% events = site.data.events.select {|e| (e.agency_ids & %w[FDIC SEC EXIM DFC FTC CPSC NTSB]).any? } %}
+{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+
+### National Science Foundation
+
+{% events = site.data.events.select {|e| (e.agency_ids & %w[NSF]).any? } %}
+{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+
+### Service Organizations
+
+{% events = site.data.events.select {|e| (e.agency_ids & %w[Peace AmeriCorps]).any? } %}
+{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+
+### Legislative Branch Agencies
+
+{% events = site.data.events.select {|e| (e.agency_ids & %w[LOC GAO]).any? } %}
+{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+
+### Merit System Protection Board
+
+{% events = site.data.events.select {|e| (e.agency_ids & %w[MSPB]).any? } %}
+{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+
+## DEBUGGING BELOW
 
 {% independent_agencies = site.data.agencies.select {|a| a.page_slug == 'independent' }.map(&:id) %}
 {% events = site.data.events.select {|e| e.agency_ids.any? {|a_id| independent_agencies.include?(a_id) } }.sort_by(&:sort_date) %}

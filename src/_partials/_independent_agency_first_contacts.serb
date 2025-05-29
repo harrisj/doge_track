@@ -21,17 +21,17 @@
 <table class="table table-xs sm:table-sm zebra">
   <thead>
     <tr>
-    <th class="align-left">Date</th>
-    <th class="align-left">Agency</th>
-    <th class="align-left">DOGE Team</th>
+    <th>Date</th>
+    <th>Agency</th>
+    <th>DOGE Team</th>
     </tr>
   </thead>
   <tbody>
     {% agency_contacts.each do |ac| %}
     <tr>
-      <th class="align-left">{{ render EdtfFormat.new(ac[:first_contact], :compact) }}</th>
-      <td class="align-left"><a href="#{{ ac[:id] }}">{{ ac[:name] }}</a></td>
-      <td class="align-left">{{ ac[:people] | people_links }}</td>
+      <th class="align-left align-top">{{ render EdtfFormat.new(ac[:first_contact], :compact) }}</th>
+      <td class="align-left align-top"><a href="#{{ ac[:id] }}">{{ ac[:name] }}</a></td>
+      <td class="align-left align-top">{{ ac[:people] | people_links }}</td>
     </tr>
     {% end %}
   </tbody>

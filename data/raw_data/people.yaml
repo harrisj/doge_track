@@ -1386,6 +1386,14 @@
   category: wrecker
   page_slug: "/people/wrecker-staff"
   positions:
+  - id: va-fulcher
+    type: appointed
+    agency: VA
+    start_date: 2025-02-(04)~
+    start_date_truth: reported
+    source: >-
+      https://www.military.com/daily-news/2025/02/05/elon-musk-aide-now-working-va-and-accessing-its-computer-systems.html
+    table_note: reported in early Feb but named later
   - id: dod-fulcher
     type: detailed
     start_date: 2025-03-04
@@ -1966,13 +1974,15 @@
     type: appointed
     start_date: 2025-01-20
     start_date_truth: reported
+    table_note: reported as interviewing USDS staff about jobs, not found in GSA or OPM lists
     comment: Listed as interviewing USDS staff on 1/21, not in GSA or OPM crew
     source: https://www.wired.com/story/elon-musk-digital-coup-doge-data-ai/
     agency: DOGE
-  - id: detaile-doge-epa-killian
+  - id: detail-doge-epa-killian
     type: detailed
     start_date: 2025-02-04
     start_date_truth: reported
+    title: Federal Detailee
     source: https://www.eenews.net/articles/doge-aide-pops-up-in-epa-staff-directory/
     agency: EPA
   - id: detail-doge-dol-killian
@@ -1990,6 +2000,7 @@
     sort_date: 2025-02-20
     start_date: 2025-02-(20)~
     start_date_truth: reported
+    table_note: I have been unble to confirm if one of SSA aliases
     comment: Identified as being at the agency on 2/20; unclear how long before
     source: https://www.thehandbasket.co/p/leland-dudek-ssa-doge
     agency: SSA
@@ -2274,12 +2285,15 @@
   category: wrecker
   positions:
   - id: va-lavingia
-    start_date: 2025-03-25
-    start_date_truth: reported
+    start_date: 2025-03-17
+    start_date_truth: verified
+    end_date: 2025-05-09
+    end_date_truth: verified
+    table_note: fired for talking to media, dates from his blog
     type: appointed
     title: Advisor to the Chief of Staff
     title_type: advisor
-    source: https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
+    source: https://sahillavingia.com/doge
     agency: VA
 
 - name: Jeremy Lewin
@@ -2841,6 +2855,11 @@
   slug: elon-musk
   background: executive
   category: leadership
+  blurb: >-
+    An obscure and modest businessman, he has served as merely a humble advisor to the administration,
+    just raising his hand meekly during occasional meetings to offer a suggestion or two. Or not. He's
+    just a humble little advisor working for a non-agency that doesn't do anything important enough to
+    keep records for.
   positions:
   - id: musk-doge
     type: appointed

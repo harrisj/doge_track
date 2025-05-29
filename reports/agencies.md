@@ -303,7 +303,7 @@
 # Environmental Protection Agency
 - slug: epa
 - people:
-  - **Cole Killian** (2025-02-04) (detail)
+  - **Cole Killian** (2025-02-04) Federal Detailee (detail)
   - **Erica Jehling** (2025-02-12)
   - **Kathryn Armstrong Loving** (2025-02-12) Federal Detailee
 - systems:
@@ -767,7 +767,8 @@
 # Veterans Administration
 - slug: va
 - people:
-  - **Sahil Lavingia** (2025-03-25) Advisor to the Chief of Staff
+  - **Justin Fulcher** (2025-02-(04)~)
+  - **Sahil Lavingia** (2025-03-17 - 2025-05-09) Advisor to the Chief of Staff
   - **Christopher Roussos** (2025-03-25)
   - **Cary Volpert** (2025-03-25)
 

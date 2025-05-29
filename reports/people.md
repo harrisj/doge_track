@@ -279,6 +279,7 @@
 # Justin Fulcher
 - category: wrecker
 - positions:
+    -  **VA** (2025-02-(04)~ to ??) 
     -  **DOD** (2025-03-04 to 2025-04-24) 
     -  **DOD** (2025-04-25 to ??) Senior Advisor
 
@@ -412,7 +413,7 @@
 - category: wrecker
 - positions:
     -  **DOGE** (2025-01-20 to ??) 
-    -  **EPA** (2025-02-04 to ??) 
+    -  **EPA** (2025-02-04 to ??) Federal Detailee
         - EAS: EPA Acquisition System: 2025-02-12 - ongoing
     -  **DOL** (2025-02-(13)~ to ??) 
     -  **SSA** (2025-02-(20)~ to ??) 
@@ -474,7 +475,7 @@
 # Sahil Lavingia
 - category: wrecker
 - positions:
-    -  **VA** (2025-03-25 to ??) Advisor to the Chief of Staff
+    -  **VA** (2025-03-17 to 2025-05-09) Advisor to the Chief of Staff
 
 # Jeremy Lewin
 - category: wrecker

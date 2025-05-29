@@ -1,10 +1,10 @@
 ---
 agency_id: EOP
-title: White House/DOGE
+title: White House/DOGE/USDS
 template_engine: serbea
 ---
 {% blurb = capture do %}
-TKTK
+One of the challenging thing about tracking reporting about DOGE is that DOGE itself is purposefully vague by design. When it's time for them to threaten an agency or demand control over their systems, then it's a firmly defined entity backed by the authority of Elon Musk and also the President. When it's time to handle pesky reporters or legal discovery demands, it's just a vague concept located somewhere within the Executive Office of the President (EOP). As a result, this page is also a muddled mix of various White House-affiliated staff, including people assigned directly to DOGE and people who work elsewhere in the White House.
 {% end %}
 
 {%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}

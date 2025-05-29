@@ -1,5 +1,6 @@
 {% import 'macros' %}
 
+<div class="mb-10 mt-1">
 {% agency = find_agency(id) %}
 {%@ 'agency_title', agency: agency, id: agency.slug %}
 
@@ -20,3 +21,4 @@
 
 {%@ 'compact_event_timeline', events: agency_events %}
 {% end %}
+</div>

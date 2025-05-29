@@ -27,4 +27,4 @@ There are copyrights or any license for the data on this site. It is completely 
 
 ## Contributing Money
 
-I have had a few people ask me about a tip jar, but I to be honest, I just don't feel like having that conversation with the ethics lawyers to get any approval for that. This is a simple no-frills static site. I'm not even paying for the pro version of Font Awesome. Maybe if I find myself facing hosting costs, I'll change my mind. But in the meantime, please consider donating money to a worthy cause near you like a food bank or legal defense fund. We're all in this together, after all.
+**Don't.** I have had a few people ask me about a tip jar, but I to be honest, I just don't feel like having that conversation with the ethics lawyers to get any approval for that. This is a simple no-frills static site. I'm not even paying for the pro version of Font Awesome. Maybe if I find myself facing hosting costs, I'll change my mind. But in the meantime, please consider donating money instead to a worthy cause near you like a food bank or legal defense fund. We're all in this together, after all.

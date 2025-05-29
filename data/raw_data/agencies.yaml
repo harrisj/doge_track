@@ -424,7 +424,7 @@
     event: DOGE staff enter the Commerce Department headquarters
     source: >-
       https://www.govexec.com/management/2025/02/doge-enters-noaa-accesses-it-systems-and-removes-top-hr-official/402776/
-    source_name: Government Executive
+    source_name: GovExec
     source_title: DOGE enters NOAA, accesses IT systems and removes the top HR official
     agency: Commerce
     id: 7kf2GFmh
@@ -3714,6 +3714,16 @@
   doge_base: true
   page_slug: other-majors
   events:
+  - date: 2025-02-13
+    type: official
+    event: >-
+      NASA leadership replies to a congressional iquiry that DOGE had identified a single individual who
+      would be employed at the agency.
+    source: >-
+      https://democrats-science.house.gov/imo/media/doc/2.13.25%20NASA%20Response%20to%202.6.25%20SST%20Letter%20on%20DOGE%20Access.pdf
+    source_name: agency comms
+    agency: NASA
+    id: 537YrWiF
   - date: 2025-02-14
     type: sighting
     event: NASA administrator emails all staff to report that "DOGE has arrived"
@@ -3864,7 +3874,7 @@
   id: NLRB
   short_name: NLRB
   slug: nlrb
-  page_slug: independent
+  page_slug: nlrb
   events:
   - date: 2025-01-27
     type: disruption
@@ -4426,7 +4436,7 @@
     id: 3GL4CR65
   - date: 2025-01-28
     type: onboard
-    event: Justin Monroe  and Christopher Stanley start working at OPM as a volunteer Expert
+    event: Justin Monroe and Christopher Stanley start working at OPM as a volunteer Expert
     named:
     - Justin Monroe
     - Christopher Stanley
@@ -6251,6 +6261,16 @@
     - Jon Koval
     agency: VA
     id: ja9gwcUS
+  - date: 2025-05-08
+    type: report
+    event: Fast Company runs an interview with Sahil Lavingia, who is promptly fired by DOGE the following
+      day.
+    source: https://www.fastcompany.com/91330297/doge-sahil-lavignia-gumroad
+    source_name: Fast Company
+    named:
+    - Sahil Lavingia
+    agency: VA
+    id: 520nNb7r
 
 - name: US Agency for Global Media
   id: USAGM
