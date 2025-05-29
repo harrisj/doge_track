@@ -189,6 +189,7 @@
     type: appointed
     table_note: NYT links her to Education, but no other info found
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    sort_date: 2025-02-05
     agency: Education
 
 - name: Sam Beyda
@@ -272,6 +273,7 @@
     excepted: true
     pd_code: 6A39741
     title: Expert
+    title_type: advisor
     pay_grade: ED-00
     salary: "$0"
     series: '0301'
@@ -368,6 +370,7 @@
     excepted: true
     pd_code: 6A39740
     title: Expert
+    title_type: advisor
     pay_grade: ED-00
     salary: "$0"
     series: '0301'
@@ -412,6 +415,7 @@
     documents:
     - onboard-ssa-employee-1
     title: Expert
+    title_type: advisor
     office: Office of the Chief Information Officer
     pd_code: KNX0350
     start_date: 2025-02-09
@@ -879,6 +883,7 @@
     type: appointed
     agency: SSA
     title: Chief Information Officer
+    title_type: cio
     start_date: 2025-03-24
     start_date_truth: verified
     supervisory: true
@@ -1304,6 +1309,7 @@
     appt_type: Regular C
     pd_code: DBGS61164
     title: Senior Advisor
+    title_type: advisor
     pay_grade: GS-15/6
     salary: "$195,200"
     series: '0301'
@@ -1389,6 +1395,7 @@
   - id: va-fulcher
     type: appointed
     agency: VA
+    sort_date: 2025-02-04
     start_date: 2025-02-(04)~
     start_date_truth: reported
     source: >-
@@ -1538,6 +1545,7 @@
     agency: CMS
     from: HHS
     from_truth: inferred
+    sort_date: 2025-02-24
     start_date: 2025-02-(24)~
     start_date_truth: inferred
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
@@ -1708,6 +1716,7 @@
   positions:
   - id: doi-hassen
     type: appointed
+    sort_date: 2025-01-27
     start_date: 2025-01-(27)~
     start_date_truth: inferred
     table_note: AP reports in DOI in January, inferring before water pump stunt
@@ -2158,9 +2167,9 @@
   - id: doge-kmiec
     type: appointed
     agency: DOGE
+    sort_date: 2025-02-07
     start_date: 2025-02-(07)~
     start_date_truth: reported
-    sort_date: 2025-02-07
     source: https://www.propublica.org/article/elon-musk-doge-lawyers-supreme-court
 
 - name: Jon Koval
@@ -2181,6 +2190,7 @@
     pay_grade: ED-00
     salary: "$0"
     title: Expert
+    title_type: advisor
     office: Office of the CIO
     description: Excepted Appointment NTE
     documents:
@@ -2980,6 +2990,7 @@
     excepted: true
     pd_code: 6A39738
     title: Expert
+    title_type: advisor
     pay_grade: ED-00
     salary: "$0"
     series: '0301'
@@ -3133,7 +3144,7 @@
     from_truth: inferred
     comment: No info, but listed in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - id: ssa-empwloyee-9
+  - id: ssa-employee-9
     agency: SSA
     type: appointed
     start_date: 2025-02-23
@@ -3144,6 +3155,7 @@
     pay_grade: ED-00
     salary: "$0"
     title: Expert
+    title_type: advisor
     office: Office of the CIO
     description: Excepted Appointment NTE
     documents:

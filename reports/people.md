@@ -307,9 +307,9 @@
 - category: leadership
 - positions:
     -  **DOGE** (2024-12-30 to 2024-02-18) 
+    -  **DOGE** (2025-02-18 to ??) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
     -  **CMS** (2025-02-(24)~ to ??) 
         - CALM: CMS Acquisition Lifecycle Management system: 2025-02-24 - ongoing
-    -  **DOGE** (2025-02-18 to ??) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
     -  **HHS** (2025-03-04 to ??) Expert/Consultant
 
 # Mike Gonzalez

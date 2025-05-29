@@ -138,6 +138,7 @@ def generate_positions_yaml
   # FIXME: Figure out why my hydration isn't working for positions
   out = Position.map do |position|
     p_hash = position.to_hash
+    p_hash[:sort_date] ||= p_hash[:start_date]
     p_hash[:agency] = position.agency.to_hash.merge(obj_type: 'Agency', path: agency_url(position.agency))
     unless position.from_agency.nil?
       p_hash[:from_agency] =

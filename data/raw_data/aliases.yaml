@@ -77,6 +77,7 @@
     appt_type: Regular C
     pd_code: DBGS61164
     title: Senior Advisor
+    title_type: advisor
     pay_grade: GS-15/6
     salary: "$195,200"
     series: '0301'
@@ -164,6 +165,7 @@
     excepted: true
     pd_code: 6A39741
     title: Expert
+    title_type: advisor
     pay_grade: ED-00
     salary: "$0"
     series: '0301'
@@ -199,6 +201,7 @@
     excepted: true
     pd_code: 6A39740
     title: Expert
+    title_type: advisor
     pay_grade: ED-00
     salary: "$0"
     series: '0301'
@@ -256,6 +259,7 @@
     excepted: true
     pd_code: 6A39738
     title: Expert
+    title_type: advisor
     pay_grade: ED-00
     salary: "$0"
     series: '0301'
@@ -284,6 +288,7 @@
     documents:
     - onboard-ssa-employee-1
     title: Expert
+    title_type: advisor
     office: Office of the Chief Information Officer
     pd_code: KNX0350
     start_date: 2025-02-09
@@ -334,6 +339,7 @@
     type: appointed
     agency: SSA
     title: Chief Information Officer
+    title_type: cio
     start_date: 2025-03-24
     start_date_truth: verified
     supervisory: true
@@ -410,7 +416,11 @@
     from_truth: verified
     start_date: 2025-02-18
     start_date_truth: verified
+    nte_date: 2026-07-04
+    nte_date_truth: verified
+    table_note: limited onboarding docs, court docs about them
     comment: All I have is the date they completed training
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.53.1.pdf
     documents:
     - onboard-ssa-employee-5
 
@@ -432,6 +442,7 @@
     pay_grade: ED-00
     salary: "$0"
     title: Expert
+    title_type: advisor
     office: Office of the CIO
     description: Excepted Appointment NTE
     documents:
@@ -460,7 +471,8 @@
 - id: SSA-08
   agency: SSA
   evidence:
-  - All I have tor this one is a signed SF-61. They are an employee of SSA
+  - Detailed from OPM to SSA on 2025-02-26
+  - His duties currently relate to improper payments and death data.
   positions:
   - id: detail-opm-ssa-8
     type: detailed
@@ -487,7 +499,7 @@
     Airflow and Genetic Algorithms. Also built a Manufacturing Execution System (MES) for home battery
     deployments
   positions:
-  - id: ssa-empwloyee-9
+  - id: ssa-employee-9
     agency: SSA
     type: appointed
     start_date: 2025-02-23
@@ -498,6 +510,7 @@
     pay_grade: ED-00
     salary: "$0"
     title: Expert
+    title_type: advisor
     office: Office of the CIO
     description: Excepted Appointment NTE
     documents:
@@ -543,6 +556,7 @@
     nte_date: 2026-03-15
     nte_date_truth: verified
     title: Expert
+    title_type: advisor
     office: Office of the Chief Information Officer
     pay_grade: ED-00
     salary: "$162672"

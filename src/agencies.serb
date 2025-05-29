@@ -1,0 +1,32 @@
+---
+layout: page
+title: Agency Timeline
+---
+{%@ 'title', title: 'Agency Timeline' %}
+
+{% majors, indies = site.data.agencies.partition {|a| a.page_slug != 'independent' } %}
+{% majors.reject! {|a| %w[DOGE EOP].include?(a.id) } %}
+{% major_ids = majors.map(&:id) %}
+{% independent_agency_ids = indies.map(&:id) %}
+
+<section class="mb-10">
+{%@ 'text' do %}
+## Major Agencies
+{% end %}
+
+<div class="mt-2">
+{%@ 'agency_first_contacts', agencies: majors %}
+</div>
+</section>
+
+<section>
+{%@ 'text' do %}
+## Small Independents
+
+The second fork of DOGE's project has been to harrass and shutdown multiple independent agencies. Most of these are relatively small and focused that were purposefully created by Congress to be outside of the direct control of the President. As such, their very existence is deemed a threat to the Trump administration's idea of a unitary executive where every part of the executive branch is completely under the command of the President.
+{% end %}
+
+<div class="mt-2">
+{%@ 'agency_first_contacts', agencies: indies %}
+</div>
+</section>

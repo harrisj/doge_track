@@ -16,15 +16,10 @@ Over the past decade, Congress has established multiple independent agencies tha
 
 DOGE honed its moves against independent agencies by first attacking {{ agency_link('USAID') }} and {{ agency_link('CFPB') }}, and details on those can be found on their respective pages. This page is going to look at a flurry of individual incidents against each agency.
 
-## Teams and Timelines
-
 {% independent_agencies = site.data.agencies.select {|a| a.page_slug == 'independent' } %}
 {% independent_agency_ids = independent_agencies.map(&:id) %}
-{% events = site.data.events.select {|e| e.agency_ids.any? {|a_id| independent_agency_ids.include?(a_id) } }.sort_by(&:sort_date) %}
 
-{%@ 'independent_agency_first_contacts', independent_agencies: independent_agencies, events: events %}
-
-## Waves of Attack
+## Phases of Attack
 
 ### 2/19: "Commencing the Reduction of the Federal Bureaucracy"
 
