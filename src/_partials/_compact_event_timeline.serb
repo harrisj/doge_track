@@ -2,20 +2,19 @@
 agency_col = false if agency_col.nil?
 icon_col = true if icon_col.nil?
 month_separator = true if month_separator.nil?
-always_show_date = false if always_show_date.nil?
+always_show_date = true if always_show_date.nil?
 show_directories = true if show_directories.nil?
-num_cols +=1 if agency_col
-num_cols +=1 if icon_col %}
+num_cols +=1 if agency_col %}
  
  {% if events.any? %}
  {% prior_row_date = Date.edtf!(events[0].date)-1 %}
 
-<table class="table table-auto table-xs sm:table-sm lg:table-md border-4 mb-0 mt-0">
+<table class="table table-fixed sm:table-auto table-xs sm:table-sm lg:table-md border-4 mb-0 mt-0">
   <thead>
     <tr>
-      <th class="tab-cell-first text-xs">Date</th>
-      {% if agency_col %}<th class="hidden sm:table-cell text-xs">Agency</th>{% end %}
-      <th class="text-xs">Event</th>
+      {% if agency_col %}<th class="hidden sm:table-cell sm:w-2/12 text-xs">Loc</th>{% end %}
+      <th class="w-3/12 sm:w-1/12 text-xs">Date</th>
+      <th class="w-9/12 text-xs">Event</th>
     </tr>
   </thead>
   <tbody>
@@ -27,17 +26,17 @@ num_cols +=1 if icon_col %}
     </tr>
     {% end %}
     <tr class="font-mono" id="{{ event.id }}">
-      <td class="align-top tab-cell-first">
+      {% if agency_col %}<td class="align-top hidden sm:table-cell">{{ event.agencies | agency_links }}</td>{% end %}
+      <td class="align-top">
        {% if always_show_date || parsed_date.edtf != prior_row_date.edtf %}
         <div class="inline-block">{{ render EdtfFormat.new(event.date, :compact) }}</div>
       {% end %}
       {% prior_row_date = parsed_date %}
       {% if agency_col %}
-      <div class="inline-block sm:hidden">{{ event.agencies | agency_links }}</div>
+      <div class="sm:hidden">{{ event.agencies | agency_links }}</div>
       {% end %}
       </td>
-      {% if agency_col %}<td class="align-top hidden sm:table-cell">{{ event.agencies | agency_links }}</td>{% end %}
-      <td class="align-top overflow-auto">
+      <td class="align-top">
         <div class="font-mono">
         {% if icon_col %}<span><i class="fa {{ event_icon(event) }}"></i> </span>{% end %}
         {% if icon_col || event.type == 'interagency' %}{{ event_title(event) }}: {% end %}

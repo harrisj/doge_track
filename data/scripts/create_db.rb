@@ -68,6 +68,7 @@ DB.create_table! :positions do
   string :comment
   string :qualifications
   string :table_note
+  string :replaced_by
 end
 
 DB.create_table! :people do

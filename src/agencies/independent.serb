@@ -33,7 +33,7 @@ It started with the USADF and IAF
 Thanks to testimony entered in the lawsuit of _United States Institute of Peace v. Jackson (D.D.C.)_, we have a remarkably detailed timeline for the DOGE assault on the US Institute of Peace:
 
 {% events = site.data.events.select {|e| e.agency_ids.include?('USIP') && e.sort_date < '2025-05-01' } %}
-{%@ 'compact_event_timeline', events: events, agency_col: false, month_separator: false %}
+{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### 3/14: "Continuing the Reduction of the Federal Bureaucracy"
 

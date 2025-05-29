@@ -152,6 +152,10 @@
       "description": "A short note to display in the position",
       "type": "string",
       "max_length": 30
+    },
+    "replaced_by": {
+      "description": "If the role was succeeded by another, give by here",
+      "type": "string"
     }
   },
   "required": [

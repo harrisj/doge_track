@@ -384,7 +384,11 @@ end %}
 
     questions_str = question_links(pos)
 
-    out_str = [alias_ident_str, type_str, title_str, hire_str, note_str, source_str, docs_str, questions_str].map {|x| x.blank? ? nil : x }.compact.map {|x| "<span>#{x}</span>"}.join(" ")
+    unless pos.replaced_by.blank?
+      replace_str = "<a class=\"link-hover\" href=\"##{pos.replaced_by}\">[replaced]</a>"
+    end
+
+    out_str = [alias_ident_str, type_str, title_str, hire_str, replace_str, note_str, source_str, docs_str, questions_str].map {|x| x.blank? ? nil : x }.compact.map {|x| "<span>#{x}</span>"}.join(" ")
 
     out_str.html_safe
    end

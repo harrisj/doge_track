@@ -19,6 +19,6 @@
 {% if agency_events.any? %}
 <h2 class="mt-0 mb-0 text-lg sm:text-xl md:text-2xl">Events</h2>
 
-{%@ 'compact_event_timeline', events: agency_events, icon_col: false %}
+{%@ 'compact_event_timeline', events: agency_events, icon_col: true, agency_col: true %}
 {% end %}
 </div>
