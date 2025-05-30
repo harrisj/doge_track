@@ -418,6 +418,7 @@
   id: Commerce
   short_name: Commerce
   slug: commerce
+  page_slug: self
   doge_base: true
   events:
   - date: 2025-02-05
@@ -1143,16 +1144,6 @@
   page_slug: interior
   doge_base: true
   events:
-  - date: 2025-01-XX
-    type: disruption
-    event: >-
-      Tyler Hassen reviewed every single contract and grant and sent action items for review to the Secretary
-    source: >-
-      https://apnews.com/article/hassen-burgum-musk-interior-energy-conflicts-830e9df68c7869e943f96c4b5e384f20
-    source_name: AP
-    source_title: Here's what a Texas oil executive from DOGE is doing inside the Interior Department
-    agency: DOI
-    id: 4j2BznnH
   - date: 2025-01-28
     type: disruption
     event: >-
@@ -1165,6 +1156,17 @@
     source_name: CNN
     agency: DOI
     id: eSiT2dsb
+  - date: 2025-01-(30)~
+    type: disruption
+    event: >-
+      Tyler Hassen conducts a review of every single contract and grant from DOI and sends action items
+      for review directly to Secretary Burgum
+    source: >-
+      https://apnews.com/article/hassen-burgum-musk-interior-energy-conflicts-830e9df68c7869e943f96c4b5e384f20
+    source_name: AP
+    source_title: Here's what a Texas oil executive from DOGE is doing inside the Interior Department
+    agency: DOI
+    id: 4j2BznnH
   - date: 2025-02-24
     type: access
     event: >-
@@ -1490,6 +1492,20 @@
     - James Burnham
     agency: DOGE
     id: VdEHz47g
+  - date: 2025-01-(25)~
+    type: report
+    fuzz: date not given, but source published Feb 4th
+    event: >-
+      Elon Musk makes a request for Baris Akis to be allowed to work for DOGE, even though he is a noncitizen
+      and it wouldn't normally be allowed. His request is denied.
+    source: https://www.theatlantic.com/politics/archive/2025/02/elon-musk-doge-green-card-trump/681575/
+    source_name: Atlantic
+    source_title: Trump Advisers Stopped Musk From Hiring a Noncitizen at DOGE
+    named:
+    - Elon Musk
+    - Baris Akis
+    agency: DOGE
+    id: 1rzb08sG
   - date: 2025-02-05
     type: official
     case_no: 1:25-cv-00339
@@ -1776,6 +1792,25 @@
     source_name: executive order
     agency: DOGE
     id: 8rQqTtqy
+  - date: 2025-03-(26)~
+    type: directory
+    fuzz: >-
+      date is given as "late March," assuming a Wednesday bc others reported DOGE meetings during that
+      time
+    named:
+    - Elon Musk
+    - Steve Davis
+    - Baris Akis
+    - Anthony Armstrong
+    event: >-
+      In a later interview, Sahil Lavingia describes attending an "E-meeting" for DOGE that included Elon
+      Musk but was essentially run by Steve Davis as well as two other Musk loyalists, Anthony Armstrong
+      and Baris Akis.
+    source: https://www.wired.com/story/fired-doge-staffer-who-is-in-charge/
+    source_name: Wired
+    source_title: WIRED Talked to a Fired DOGE Staffer About Who Was Really in Charge
+    agency: DOGE
+    id: VDqi9Jgg
   - date: 2025-03-26
     type: directory
     event: Under increasing pressure from litigation, DOGE expands its own legal team to 10 lawyers
@@ -2032,12 +2067,14 @@
     type: sighting
     event: Several DOGE representatives are reportedly seen at DOJ
     source: https://abcnews.go.com/US/ag-pam-bondi-forms-internal-team-work-doge/story?id=119751049
+    source_name: ABC News
     agency: DOJ
     id: 2hcXx5ue
   - date: 2025-03-13
     type: official
     event: Attorney General Pam Bondi announces she is forming a "JUST DOGE" team to look at restructuring
     source: https://abcnews.go.com/US/ag-pam-bondi-forms-internal-team-work-doge/story?id=119751049
+    source_name: ABC News
     agency: DOJ
     id: 9vZuxTFv
   - date: 2025-04-01
@@ -2867,6 +2904,7 @@
       A team of high-ranking GSA employees meets to discuss building special "resting rooms" for DOGE
       and other A-suite staff
     source: https://www.wired.com/story/elon-musk-lackeys-general-services-administration/
+    source_name: Wired
     named:
     - Nicole Hollander
     agency: GSA
@@ -2890,6 +2928,7 @@
       Elon Musk reportedly visits GSA to meet with staff, several of whom are identified from appearances
       in the internal directory
     source: https://www.nextgov.com/people/2025/01/musk-visits-and-asserts-growing-influence-gsa/402628/
+    source_name: NextGov
     interagency_doge_reps:
       DOGE:
       - Elon Musk
@@ -2913,6 +2952,7 @@
     - Edward Coristine
     - Ethan Shaotran
     source: https://www.wired.com/story/elon-musk-lackeys-general-services-administration/
+    source_name: Wired
     agency: GSA
     id: bfo6pJUH
   - date: 2025-02-10
@@ -2923,6 +2963,7 @@
     named:
     - Thomas Shedd
     source: https://fedscoop.com/doge-sessions-gsa-staff-probationary-terminations/
+    source_name: FedScoop
     agency: GSA
     id: MVeUVFvr
   - date: 2025-02-12
@@ -2931,6 +2972,7 @@
       Other GSA staff describe being subjected to 15-minute interviews where they felt they were asked
       to justify their jobs
     source: https://www.politico.com/news/2025/02/12/government-workers-doge-interviews-016214
+    source_name: Politico
     agency: GSA
     id: 68sytFDv
   - date: 2025-02-12
@@ -2939,6 +2981,7 @@
       Dozens of probationary workers within the Technology Transformation Service (TTS) are fired, with
       many of the cuts focused on the US Digital Corps and Presidential Innovation Fellows programs
     source: https://www.nextgov.com/people/2025/02/gsa-cut-least-100-employees-feds-inside-agency-say/402975/
+    source_name: NextGov
     agency: GSA
     id: dSVh8kxF
   - date: 2025-02-18
@@ -2949,6 +2992,7 @@
     - Thomas Shedd
     source: >-
       https://www.404media.co/musk-ally-demands-admin-access-to-system-that-lets-government-text-the-public/
+    source_name: 404 Media
     agency: GSA
     id: Lcina8tE
   - date: 2025-02-(18)~
@@ -2958,6 +3002,7 @@
     named:
     - Frank Schuler
     source: https://www.propublica.org/article/frank-schuler-gsa-doge-syndicated-conservation-easements-tax-scam
+    source_name: ProPublica
     agency: GSA
     id: NPiTTC4b
   - date: 2025-02-(18)~
@@ -2968,6 +3013,7 @@
     - Frank Schuler
     - Nate Cavanaugh
     source: https://www.propublica.org/article/frank-schuler-gsa-doge-syndicated-conservation-easements-tax-scam
+    source_name: ProPublica
     agency: GSA
     id: j9cDuFZd
   - date: 2025-02-19
@@ -2976,6 +3022,7 @@
     named:
     - Thomas Shedd
     source: https://www.theatlantic.com/technology/archive/2025/02/doge-god-mode-access/681719/
+    source_name: Atlantic
     agency: GSA
     id: BBGTRSgD
   - date: 2025-02-25
@@ -2985,6 +3032,7 @@
       by DOGE
     source: >-
       https://timesofindia.indiatimes.com/world/us/doges-controversial-office-culture-ikea-beds-and-secret-sleeping-spaces-among-federal-staff/articleshow/118782925.cms
+    source_name: Times of India
     agency: GSA
     id: c3p8qCiA
   - date: 2025-02-26
@@ -2994,6 +3042,7 @@
       executive order by Trump. This predictably creates a large amount of chaos by destroying the ability
       of agencies to do micro-purchases allowed by law.
     source: https://www.washingtonpost.com/politics/2025/03/09/doge-government-credit-card-limits
+    source_name: Wash. Post
     agency: GSA
     id: mVDCRqG7
   - date: 2025-03-01
@@ -3004,6 +3053,7 @@
     named:
     - Thomas Shedd
     source: https://www.nextgov.com/people/2025/03/gsa-eliminates-18f/403400/
+    source_name: NextGov
     agency: GSA
     id: oCmLwiJu
   - date: 2025-03-01
@@ -3015,6 +3065,7 @@
   - date: 2025-03-04
     type: directory
     source: https://www.wired.com/story/doge-government-salaries-elon-musk/
+    source_name: Wired
     event: >-
       Wired reports that some DOGE staff (Kyle Schutt, Nate Cavanaugh) are being paid as full-time GSA
       employees, but other staff are listed as volunteers for that agency
@@ -3034,12 +3085,14 @@
     named:
     - Thomas Shedd
     source: https://www.theatlantic.com/technology/archive/2025/03/gsa-chat-doge-ai/681987/
+    source_name: Atlantic
     agency: GSA
     id: J7wz934t
   - date: 2025-03-07
     type: report
     event: DOGE rolls out a custom GSAi custom chatbot to 1500 workers
     source: https://www.wired.com/story/gsai-chatbot-1500-federal-workers/
+    source_name: Wired
     agency: GSA
     id: dadXjzXN
   - date: 2025-03-13
@@ -3056,6 +3109,7 @@
       GSA hosts a deep-background media briefing to demo its GSAi tool with invitations sent to reporters
       from Bloomberg, The Atlantic, and Fox among others.
     source: https://www.wired.com/story/gsa-staff-all-hands-meeting-ai/
+    source_name: Wired
     agency: GSA
     id: CL9N6tJ2
   - date: 2025-03-20
@@ -3086,6 +3140,7 @@
     - Justin Aimonetti
     - Ashley Boizelle
     source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
+    source_name: Wired
     agency: GSA
     id: 8PXutJ5n
   - date: 2025-03-21
@@ -4406,8 +4461,8 @@
   - date: 2025-01-17
     type: action
     event: >-
-      Several of the DOGE staff meet to plan for their first day at OPM. They are not federal employees
-      at that time.
+      Noah Peters recalls that he met with Amanda Scales and Brian Bjelde to plan for their upcoming first
+      day at OPM.
     named:
     - Noah Peters
     - Amanda Scales
@@ -4419,7 +4474,7 @@
     source_title: American Federation Of Government Employees, AFL-CIO v. OPM and Ezell (N.D. Cal.)
     source_name: court doc
   - date: 2025-01-20
-    type: onboard
+    type: disruption
     event: >-
       Acting OPM Director Charles Ezell replaces existing CIO Melvin Brown with Greg Hogan in an acting
       capacity
@@ -4430,7 +4485,7 @@
     agency: OPM
     id: GSsFm4n8
   - date: 2025-01-20
-    type: onboard
+    type: directory
     event: Multiple DOGE staff start working at OPM within the Director's office
     agency: OPM
     named:
@@ -4844,7 +4899,7 @@
     id: 3jUop1qX
 
 - name: Peace Corps
-  id: Peace
+  id: PeaceCorps
   short_name: Peace Corps
   page_slug: independent
   slug: peace-corps
@@ -4857,23 +4912,23 @@
     named:
     - Bridget Youngs
     source: https://www.theguardian.com/us-news/2025/apr/04/elon-musk-doge-peace-corps
-    agency: Peace
     id: RmvrV2dc
+    agency: PeaceCorps
   - date: 2025-04-28
     type: disruption
     event: >-
       The head of a Peace Corps alumni group reports he had been told the agency is expecting large cuts
       in US staffing, as ordered by DOGE
     source: https://www.nytimes.com/2025/04/28/us/politics/peace-corps-cuts-doge.html
-    agency: Peace
     id: as2btrZU
+    agency: PeaceCorps
   - date: 2025-05-09
     type: sighting
     event: DOGE staff reportedly met with Peace Corps leadership to discuss staffing cuts and resignations
     source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
     source_name: NPR
-    agency: Peace
     id: 5fdC2pM1
+    agency: PeaceCorps
 
 - name: Securities and Exchange Commission
   id: SEC
@@ -5781,6 +5836,8 @@
       DOGE discovers that some USAID grants had been paid automatically through HHS despite a declared
       freeze
     source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
+    source_title: The Blinding Contempt of the DOGE Bros
+    source_name: Wash. Post
     agency: USAID
     id: 6qeF82NN
   - date: 2025-01-30
@@ -5792,6 +5849,8 @@
     - Luke Farritor
     - Gavin Kliger
     source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
+    source_title: The Blinding Contempt of the DOGE Bros
+    source_name: Wash. Post
     agency: USAID
     id: 2Soci5N2
   - date: 2025-02-01
@@ -5801,12 +5860,14 @@
       from accessing personnel files and classified data
     source: >-
       https://www.nbcnews.com/politics/national-security/usaid-security-leaders-removed-refusing-elon-musks-doge-employees-acce-rcna190357
+    source_name: Wired
     agency: USAID
     id: JM9cFsgE
   - date: 2025-02-01
     type: disruption
     event: USAID website and 6 other related websites are taken offline by DOGE
     source: https://www.wired.com/story/us-government-websites-are-disappearing-in-real-time/
+    source_name: Wired
     agency: USAID
     id: K5Ry8Q4a
   - date: 2025-02-01
@@ -5814,6 +5875,7 @@
     event: Approximately 2000 USAID email accounts are deactivated
     source: >-
       https://fedscoop.com/usaid-website-goes-dark-staff-emails-deactivated-amid-doge-takeover-source-says/
+    source_name: FedScoop
     agency: USAID
     id: 4uRgma5h
   - date: 2025-02-02
@@ -5821,6 +5883,7 @@
     event: Elon Musk posts a series of tweets calling USAID evil and saying it is "time for it to die"
     source: >-
       https://www.nbcnews.com/politics/doge/elon-musk-boosted-false-usaid-conspiracy-theories-global-aid-rcna190646
+    source_name: NBC News
     agency: USAID
     id: bejcmPHZ
   - date: 2025-02-03
@@ -5831,6 +5894,7 @@
     named:
     - Gavin Kliger
     source: https://www.npr.org/2025/02/06/nx-s1-5289337/elon-musk-doge-treasury
+    source_name: NPR
     agency: USAID
     id: RphjFc2Q
   - date: 2025-02-03
@@ -5839,6 +5903,7 @@
       Elon Musk tweets that he and President Trump are shutting down USAID, bragging he had fed the agency
       "into the wood chipper"
     source: https://www.nbcnews.com/politics/politics-news/elon-musk-says-trump-are-shutting-usaid-rcna190388
+    source_name: NBC News
     agency: USAID
     id: G92wpTpH
   - date: 2025-02-04
@@ -5856,12 +5921,14 @@
     type: disruption
     event: DOGE staff attempt to use their access to Treasury systems to stop payment to USAID programs
     source: https://apnews.com/article/treasury-doge-musk-read-only-access-489231c6db1a9f07fc68f9f08803f815
+    source_name: AP
     agency: USAID
     id: iCkoWkYF
   - date: 2025-02-07
     type: disruption
     event: DOGE posts a tweet boasting about the removal of signage for USAID
     source: https://xcancel.com/DOGE/status/1887959408555995416#m
+    source_name: X.com
     agency: USAID
     id: h2LuoY4U
   - date: 2025-02-07
@@ -5870,6 +5937,7 @@
     source: >-
       https://www.nbcnews.com/politics/politics-news/usaid-reduce-foreign-service-officers-trump-cuts-federal-government-rcna191122
     agency: USAID
+    source_name: NBC News
     id: dJnZqbb4
   - date: 2025-02-09
     type: disruption
@@ -5880,12 +5948,14 @@
     - Gavin Kliger
     - Luke Farritor
     source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
+    source_name: Wash. Post
     agency: USAID
     id: 6eXUJiZM
   - date: 2025-02-11
     type: disruption
     event: USAID Inspector General is illegally fired after releasing a report critical of DOGE's actions
     source: https://www.cnn.com/2025/02/11/politics/usaid-inspector-general-fired-trump/index.html
+    source_name: CNN
     agency: USAID
     id: bwTxGSiq
   - date: 2025-02-17
@@ -5895,6 +5965,7 @@
       and approved by the Agency over the past weeks." in the payment system were causing certain allowance
       statements to be delayed
     source: https://abcnews.go.com/US/usaid-official-system-delayed-payments-staffers/story?id=118759911
+    source_name: ABC News
     agency: USAID
     id: iEaZoYn2
   - date: 2025-02-23
@@ -5929,6 +6000,7 @@
     - Jeremy Lewin
     - Kenneth Jackson
     source: https://www.nytimes.com/2025/03/19/us/politics/usaid-doge-leadership.html
+    source_name: NYT
     agency: USAID
     id: DnzAaqdz
   - date: 2025-03-28
@@ -5940,6 +6012,7 @@
     - Jeremy Lewin
     source: >-
       https://www.npr.org/sections/goats-and-soda/2025/03/28/g-s1-56968/usaid-terminates-nearly-all-its-remaining-employees
+    source_name: NPR
     agency: USAID
     id: 8mDKCq9a
 

@@ -163,31 +163,6 @@
   linkified_text: >-
     A report on the tech billionaires steering Trump's transition mentions Musk and other <a class="link-hover" href="/agencies/white-house">DOGE</a> staff,
     and how they have been interviewing people at Mar-a-Lago
-- id: 4j2BznnH
-  type: disruption
-  date: 2025-01-XX
-  sort_date: '2025-01-01'
-  time:
-  text: Tyler Hassen reviewed every single contract and grant and sent action items for review to the Secretary
-  fuzz:
-  comment:
-  source: https://apnews.com/article/hassen-burgum-musk-interior-energy-conflicts-830e9df68c7869e943f96c4b5e384f20
-  source_title: Here's what a Texas oil executive from DOGE is doing inside the Interior Department
-  source_name: AP
-  case_no:
-  track_id:
-  system_id:
-  names: []
-  agency_ids:
-  - DOI
-  alias_ids: []
-  names_aliases: []
-  agencies_parents:
-  - DOI
-  obj_type: Event
-  linkified_text: >-
-    <a class="link-hover" href="/people/enabler-staff#tyler-hassen">Tyler Hassen</a> reviewed every single contract and grant and sent action items for
-    review to the Secretary
 - id: KvP48A34
   type: directory
   date: '2025-01-06'
@@ -514,7 +489,7 @@
   date: '2025-01-17'
   sort_date: '2025-01-17'
   time:
-  text: Several of the DOGE staff meet to plan for their first day at OPM. They are not federal employees at that time.
+  text: Noah Peters recalls that he met with Amanda Scales and Brian Bjelde to plan for their upcoming first day at OPM.
   fuzz:
   comment:
   source: https://storage.courtlistener.com/recap/gov.uscourts.cand.444883/gov.uscourts.cand.444883.188.1.pdf
@@ -547,8 +522,9 @@
   - OPM
   obj_type: Event
   linkified_text: >-
-    Several of the <a class="link-hover" href="/agencies/white-house">DOGE</a> staff meet to plan for their first day at <a class="link-hover" href="/agencies/opm">OPM</a>.
-    They are not federal employees at that time.
+    <a class="link-hover" href="/people/support-team#noah-peters">Noah Peters</a> recalls that he met with <a class="link-hover" href="/all/people#amanda-scales">Amanda
+    Scales</a> and <a class="link-hover" href="/people/support-team#brian-bjelde">Brian Bjelde</a> to plan for their upcoming first day at <a class="link-hover"
+    href="/agencies/opm">OPM</a>.
 - id: 2Qe7j4uD
   type: official
   date: '2025-01-20'
@@ -633,7 +609,7 @@
     USDS is transferred out of the Office of Management and Budget (OMB) and established a standalone office in the <a class="link-hover" href="/agencies/doge">Executive
     Office of the President</a>
 - id: GSsFm4n8
-  type: onboard
+  type: disruption
   date: '2025-01-20'
   sort_date: '2025-01-20'
   time:
@@ -668,7 +644,7 @@
     Acting <a class="link-hover" href="/agencies/opm">OPM</a> Director <a class="link-hover" href="/people/enabler-staff#charles-ezell">Charles Ezell</a>
     replaces existing CIO Melvin Brown with <a class="link-hover" href="/people/enabler-staff#greg-hogan">Greg Hogan</a> in an acting capacity
 - id: 4F5kEan6
-  type: onboard
+  type: directory
   date: '2025-01-20'
   sort_date: '2025-01-20'
   time:
@@ -697,7 +673,7 @@
   - name: Anthony Armstrong
     slug: anthony-armstrong
     sort_name: Armstrong
-    category: wrecker
+    category: leadership
   - name: Riccardo Biasini
     slug: riccardo-biasini
     sort_name: Biasini
@@ -949,6 +925,45 @@
   linkified_text: >-
     <a class="link-hover" href="/people/wrecker-staff#jacob-altik">Jacob Altik</a> and <a class="link-hover" href="/people/wrecker-staff#nikhil-rajpal">Nikhil
     Rajpal</a> start working at the <a class="link-hover" href="/agencies/opm">OPM</a>
+- id: 1rzb08sG
+  type: report
+  date: 2025-01-(25)~
+  sort_date: '2025-01-25'
+  time:
+  text: >-
+    Elon Musk makes a request for Baris Akis to be allowed to work for DOGE, even though he is a noncitizen and it wouldn't normally be allowed. His request
+    is denied.
+  fuzz: date not given, but source published Feb 4th
+  comment:
+  source: https://www.theatlantic.com/politics/archive/2025/02/elon-musk-doge-green-card-trump/681575/
+  source_title: Trump Advisers Stopped Musk From Hiring a Noncitizen at DOGE
+  source_name: Atlantic
+  case_no:
+  track_id:
+  system_id:
+  names:
+  - Baris Akis
+  - Elon Musk
+  agency_ids:
+  - DOGE
+  alias_ids: []
+  names_aliases:
+  - name: Baris Akis
+    slug: baris-akis
+    sort_name: Akis
+    category: booster
+  - name: Elon Musk
+    slug: elon-musk
+    sort_name: Musk
+    category: leadership
+  agencies_parents:
+  - DOGE
+  - EOP
+  obj_type: Event
+  linkified_text: >-
+    <a class="link-hover" href="/all/people#elon-musk">Elon Musk</a> makes a request for <a class="link-hover" href="/all/people#baris-akis">Baris Akis</a>
+    to be allowed to work for <a class="link-hover" href="/agencies/white-house">DOGE</a>, even though he is a noncitizen and it wouldn't normally be allowed.
+    His request is denied.
 - id: Ykzp8vjp
   type: disruption
   date: '2025-01-26'
@@ -1379,7 +1394,7 @@
   comment:
   source: https://www.wired.com/story/elon-musk-lackeys-general-services-administration/
   source_title:
-  source_name:
+  source_name: Wired
   case_no:
   track_id:
   system_id:
@@ -1460,6 +1475,31 @@
   linkified_text: >-
     <a class="link-hover" href="/people/wrecker-staff#luke-farritor">Luke Farritor</a> is granted access to the <a class="link-hover" href="/agencies/health">CDC</a>'s
     Integrated Contract Expert (<a class="link-hover" href="/agencies/homeland-security">ICE</a>) system for contracts
+- id: 4j2BznnH
+  type: disruption
+  date: 2025-01-(30)~
+  sort_date: '2025-01-30'
+  time:
+  text: Tyler Hassen conducts a review of every single contract and grant from DOI and sends action items for review directly to Secretary Burgum
+  fuzz:
+  comment:
+  source: https://apnews.com/article/hassen-burgum-musk-interior-energy-conflicts-830e9df68c7869e943f96c4b5e384f20
+  source_title: Here's what a Texas oil executive from DOGE is doing inside the Interior Department
+  source_name: AP
+  case_no:
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - DOI
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - DOI
+  obj_type: Event
+  linkified_text: >-
+    <a class="link-hover" href="/people/enabler-staff#tyler-hassen">Tyler Hassen</a> conducts a review of every single contract and grant from <a class="link-hover"
+    href="/agencies/interior">DOI</a> and sends action items for review directly to Secretary Burgum
 - id: kSAAPBQJ
   type: interagency
   date: '2025-01-30'
@@ -1470,7 +1510,7 @@
   comment:
   source: https://www.nextgov.com/people/2025/01/musk-visits-and-asserts-growing-influence-gsa/402628/
   source_title:
-  source_name:
+  source_name: NextGov
   case_no:
   track_id:
   system_id:
@@ -1608,8 +1648,8 @@
   fuzz:
   comment:
   source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
-  source_title:
-  source_name:
+  source_title: The Blinding Contempt of the DOGE Bros
+  source_name: Wash. Post
   case_no:
   track_id:
   system_id:
@@ -1634,8 +1674,8 @@
   fuzz:
   comment:
   source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
-  source_title:
-  source_name:
+  source_title: The Blinding Contempt of the DOGE Bros
+  source_name: Wash. Post
   case_no:
   track_id:
   system_id:
@@ -1702,7 +1742,7 @@
   comment:
   source: https://www.wired.com/story/elon-musk-lackeys-general-services-administration/
   source_title:
-  source_name:
+  source_name: Wired
   case_no:
   track_id:
   system_id:
@@ -1840,7 +1880,7 @@
   comment:
   source: https://www.nbcnews.com/politics/national-security/usaid-security-leaders-removed-refusing-elon-musks-doge-employees-acce-rcna190357
   source_title:
-  source_name:
+  source_name: Wired
   case_no:
   track_id:
   system_id:
@@ -1865,7 +1905,7 @@
   comment:
   source: https://www.wired.com/story/us-government-websites-are-disappearing-in-real-time/
   source_title:
-  source_name:
+  source_name: Wired
   case_no:
   track_id:
   system_id:
@@ -1889,7 +1929,7 @@
   comment:
   source: https://fedscoop.com/usaid-website-goes-dark-staff-emails-deactivated-amid-doge-takeover-source-says/
   source_title:
-  source_name:
+  source_name: FedScoop
   case_no:
   track_id:
   system_id:
@@ -1912,7 +1952,7 @@
   comment:
   source: https://www.nbcnews.com/politics/doge/elon-musk-boosted-false-usaid-conspiracy-theories-global-aid-rcna190646
   source_title:
-  source_name:
+  source_name: NBC News
   case_no:
   track_id:
   system_id:
@@ -2148,7 +2188,7 @@
   comment:
   source: https://www.npr.org/2025/02/06/nx-s1-5289337/elon-musk-doge-treasury
   source_title:
-  source_name:
+  source_name: NPR
   case_no:
   track_id:
   system_id:
@@ -2178,7 +2218,7 @@
   comment:
   source: https://www.nbcnews.com/politics/politics-news/elon-musk-says-trump-are-shutting-usaid-rcna190388
   source_title:
-  source_name:
+  source_name: NBC News
   case_no:
   track_id:
   system_id:
@@ -2522,7 +2562,7 @@
   - Commerce
   obj_type: Event
   linkified_text: >-
-    <a class="link-hover" href="/agencies/white-house">DOGE</a> staff enter the <a class="link-hover" href="/agencies#commerce">Commerce</a> Department
+    <a class="link-hover" href="/agencies/white-house">DOGE</a> staff enter the <a class="link-hover" href="/agencies/commerce">Commerce</a> Department
     headquarters
 - id: nhBU8qVd
   type: official
@@ -2878,7 +2918,7 @@
   comment:
   source: https://apnews.com/article/treasury-doge-musk-read-only-access-489231c6db1a9f07fc68f9f08803f815
   source_title:
-  source_name:
+  source_name: AP
   case_no:
   track_id:
   system_id:
@@ -3070,7 +3110,7 @@
   comment:
   source: https://xcancel.com/DOGE/status/1887959408555995416#m
   source_title:
-  source_name:
+  source_name: X.com
   case_no:
   track_id:
   system_id:
@@ -3094,7 +3134,7 @@
   comment:
   source: https://www.nbcnews.com/politics/politics-news/usaid-reduce-foreign-service-officers-trump-cuts-federal-government-rcna191122
   source_title:
-  source_name:
+  source_name: NBC News
   case_no:
   track_id:
   system_id:
@@ -3177,7 +3217,7 @@
   comment:
   source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
   source_title:
-  source_name:
+  source_name: Wash. Post
   case_no:
   track_id:
   system_id:
@@ -3325,7 +3365,7 @@
   comment:
   source: https://fedscoop.com/doge-sessions-gsa-staff-probationary-terminations/
   source_title:
-  source_name:
+  source_name: FedScoop
   case_no:
   track_id:
   system_id:
@@ -3690,7 +3730,7 @@
   comment:
   source: https://www.cnn.com/2025/02/11/politics/usaid-inspector-general-fired-trump/index.html
   source_title:
-  source_name:
+  source_name: CNN
   case_no:
   track_id:
   system_id:
@@ -3775,7 +3815,7 @@
   comment:
   source: https://www.politico.com/news/2025/02/12/government-workers-doge-interviews-016214
   source_title:
-  source_name:
+  source_name: Politico
   case_no:
   track_id:
   system_id:
@@ -3802,7 +3842,7 @@
   comment:
   source: https://www.nextgov.com/people/2025/02/gsa-cut-least-100-employees-feds-inside-agency-say/402975/
   source_title:
-  source_name:
+  source_name: NextGov
   case_no:
   track_id:
   system_id:
@@ -3862,7 +3902,7 @@
   - name: Anthony Armstrong
     slug: anthony-armstrong
     sort_name: Armstrong
-    category: wrecker
+    category: leadership
   - name: Riccardo Biasini
     slug: riccardo-biasini
     sort_name: Biasini
@@ -4677,7 +4717,7 @@
   comment:
   source: https://abcnews.go.com/US/usaid-official-system-delayed-payments-staffers/story?id=118759911
   source_title:
-  source_name:
+  source_name: ABC News
   case_no:
   track_id:
   system_id:
@@ -4866,7 +4906,7 @@
   comment:
   source: https://www.404media.co/musk-ally-demands-admin-access-to-system-that-lets-government-text-the-public/
   source_title:
-  source_name:
+  source_name: 404 Media
   case_no:
   track_id:
   system_id:
@@ -4896,7 +4936,7 @@
   comment:
   source: https://www.propublica.org/article/frank-schuler-gsa-doge-syndicated-conservation-easements-tax-scam
   source_title:
-  source_name:
+  source_name: ProPublica
   case_no:
   track_id:
   system_id:
@@ -4926,7 +4966,7 @@
   comment:
   source: https://www.propublica.org/article/frank-schuler-gsa-doge-syndicated-conservation-easements-tax-scam
   source_title:
-  source_name:
+  source_name: ProPublica
   case_no:
   track_id:
   system_id:
@@ -5212,7 +5252,7 @@
   comment:
   source: https://www.theatlantic.com/technology/archive/2025/02/doge-god-mode-access/681719/
   source_title:
-  source_name:
+  source_name: Atlantic
   case_no:
   track_id:
   system_id:
@@ -5355,8 +5395,7 @@
   obj_type: Event
   linkified_text: >-
     Trump issues an Executive Order "Commencing the Reduction of the Federal Bureaucracy" targeting the Presidio Trust, the <a class="link-hover" href="/agencies/independent">Inter-American
-    Foundation</a>, the United States African Development Foundation and the United States Institute of <a class="link-hover" href="/agencies/independent">Peace</a>
-    for reductions.
+    Foundation</a>, the United States African Development Foundation and the United States Institute of Peace for reductions.
 - id: 54bW5YhN
   type: official
   date: '2025-02-20'
@@ -6446,7 +6485,7 @@
   source: >-
     https://timesofindia.indiatimes.com/world/us/doges-controversial-office-culture-ikea-beds-and-secret-sleeping-spaces-among-federal-staff/articleshow/118782925.cms
   source_title:
-  source_name:
+  source_name: Times of India
   case_no:
   track_id:
   system_id:
@@ -6614,7 +6653,7 @@
   comment:
   source: https://www.washingtonpost.com/politics/2025/03/09/doge-government-credit-card-limits
   source_title:
-  source_name:
+  source_name: Wash. Post
   case_no:
   track_id:
   system_id:
@@ -6919,22 +6958,28 @@
   system_id:
   names:
   - Leland Dudek
+  - Cole Killian
   agency_ids:
   - SSA
   alias_ids:
   - id: SSA-05
     agency_id: SSA
-    name:
+    name: Cole Killian
     evidence: |-
       - Onboarded as a volunteer on 2025-02-18 as a detail from the DOGE service
       - Flick testimony - SSA began onboarding and training Employee 5, an engineer, detailed from the United States DOGE Service to SSA" with an inter-agency agreement to DOGE.
+      - A nonprofit identified that Marko Elez, Cole Killian, Nikhil Rajpal, Ethan Shaotran were at SSA on 2/18
+      - Of this list, only Cole Killian was hired at DOGE
   names_aliases:
   - name: Leland Dudek
     slug: leland-dudek
     sort_name: Dudek
     category: enabler
-  - alias: SSA-05
-    sort_name: ZZZ-SSA-05
+  - name: Cole Killian
+    slug: cole-killian
+    sort_name: Killian
+    category: wrecker
+    alias: SSA-05
   agencies_parents:
   - SSA
   obj_type: Event
@@ -7024,7 +7069,7 @@
   comment:
   source: https://www.nextgov.com/people/2025/03/gsa-eliminates-18f/403400/
   source_title:
-  source_name:
+  source_name: NextGov
   case_no:
   track_id:
   system_id:
@@ -7445,7 +7490,7 @@
   comment:
   source: https://www.wired.com/story/doge-government-salaries-elon-musk/
   source_title:
-  source_name:
+  source_name: Wired
   case_no:
   track_id:
   system_id:
@@ -8134,7 +8179,7 @@
   comment:
   source: https://www.theatlantic.com/technology/archive/2025/03/gsa-chat-doge-ai/681987/
   source_title:
-  source_name:
+  source_name: Atlantic
   case_no:
   track_id:
   system_id:
@@ -8260,7 +8305,7 @@
   comment:
   source: https://www.wired.com/story/gsai-chatbot-1500-federal-workers/
   source_title:
-  source_name:
+  source_name: Wired
   case_no:
   track_id:
   system_id:
@@ -8655,7 +8700,7 @@
   comment:
   source: https://abcnews.go.com/US/ag-pam-bondi-forms-internal-team-work-doge/story?id=119751049
   source_title:
-  source_name:
+  source_name: ABC News
   case_no:
   track_id:
   system_id:
@@ -8784,8 +8829,10 @@
   - Scott Coulter
   - Marko Elez
   - Antonio Gracias
+  - Cole Killian
   - Jon Koval
   - Aram Moghaddassi
+  - Nikhil Rajpal
   - Payton Rehling
   - Ethan Shaotran
   agency_ids:
@@ -8826,10 +8873,12 @@
     evidence: "- [NPR has done analysis on docs to identify directly](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
   - id: SSA-05
     agency_id: SSA
-    name:
+    name: Cole Killian
     evidence: |-
       - Onboarded as a volunteer on 2025-02-18 as a detail from the DOGE service
       - Flick testimony - SSA began onboarding and training Employee 5, an engineer, detailed from the United States DOGE Service to SSA" with an inter-agency agreement to DOGE.
+      - A nonprofit identified that Marko Elez, Cole Killian, Nikhil Rajpal, Ethan Shaotran were at SSA on 2/18
+      - Of this list, only Cole Killian was hired at DOGE
   - id: SSA-06
     agency_id: SSA
     name: Jon Koval
@@ -8840,10 +8889,13 @@
     evidence: "- [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
   - id: SSA-08
     agency_id: SSA
-    name:
+    name: Nikhil Rajpal
     evidence: |-
       - Detailed from OPM to SSA on 2025-02-26
       - His duties currently relate to improper payments and death data.
+      - On 3/13, Wired reported that 10 staffers were visible at SSA Teams Directory. They were Akash Bobba, Marko Elez, Luke Farritor, Cole Killian, Jon Koval, Nikhil Rajpal, Payton Rehling, Ethan Shaotran, Antonio Gracias, Scott Coulter
+      - Of this list, only Akash Bobba and Nikhil Rajpal wre hired from OPM
+      - Akash Bobba has already been identified
   - id: SSA-09
     agency_id: SSA
     name: Payton Rehling
@@ -8879,6 +8931,11 @@
     sort_name: Gracias
     category: leadership
     alias: SSA-04
+  - name: Cole Killian
+    slug: cole-killian
+    sort_name: Killian
+    category: wrecker
+    alias: SSA-05
   - name: Jon Koval
     slug: jon-koval
     sort_name: Koval
@@ -8889,6 +8946,11 @@
     sort_name: Moghaddassi
     category: wrecker
     alias: SSA-03
+  - name: Nikhil Rajpal
+    slug: nikhil-rajpal
+    sort_name: Rajpal
+    category: wrecker
+    alias: SSA-08
   - name: Payton Rehling
     slug: payton-rehling
     sort_name: Rehling
@@ -8899,10 +8961,6 @@
     sort_name: Shaotran
     category: wrecker
     alias: SSA-10
-  - alias: SSA-05
-    sort_name: ZZZ-SSA-05
-  - alias: SSA-08
-    sort_name: ZZZ-SSA-08
   agencies_parents:
   - SSA
   obj_type: Event
@@ -8946,7 +9004,7 @@
   comment:
   source: https://abcnews.go.com/US/ag-pam-bondi-forms-internal-team-work-doge/story?id=119751049
   source_title:
-  source_name:
+  source_name: ABC News
   case_no:
   track_id:
   system_id:
@@ -9276,19 +9334,25 @@
   case_no: 1:25-cv-00596
   track_id:
   system_id:
-  names: []
+  names:
+  - Cole Killian
   agency_ids:
   - SSA
   alias_ids:
   - id: SSA-05
     agency_id: SSA
-    name:
+    name: Cole Killian
     evidence: |-
       - Onboarded as a volunteer on 2025-02-18 as a detail from the DOGE service
       - Flick testimony - SSA began onboarding and training Employee 5, an engineer, detailed from the United States DOGE Service to SSA" with an inter-agency agreement to DOGE.
+      - A nonprofit identified that Marko Elez, Cole Killian, Nikhil Rajpal, Ethan Shaotran were at SSA on 2/18
+      - Of this list, only Cole Killian was hired at DOGE
   names_aliases:
-  - alias: SSA-05
-    sort_name: ZZZ-SSA-05
+  - name: Cole Killian
+    slug: cole-killian
+    sort_name: Killian
+    category: wrecker
+    alias: SSA-05
   agencies_parents:
   - SSA
   obj_type: Event
@@ -9954,7 +10018,7 @@
   comment:
   source: https://www.wired.com/story/gsa-staff-all-hands-meeting-ai/
   source_title:
-  source_name:
+  source_name: Wired
   case_no:
   track_id:
   system_id:
@@ -10068,7 +10132,7 @@
   comment:
   source: https://www.nytimes.com/2025/03/19/us/politics/usaid-doge-leadership.html
   source_title:
-  source_name:
+  source_name: NYT
   case_no:
   track_id:
   system_id:
@@ -10276,7 +10340,7 @@
   comment: Coristine, Shaotran, Hollander, and Farritor are all listed as volunteer SGEs
   source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
   source_title:
-  source_name:
+  source_name: Wired
   case_no:
   track_id:
   system_id:
@@ -10987,6 +11051,56 @@
     Tech staffers and contractors noticed a new <a class="link-hover" href="/agencies/white-house">DOGE</a> staffer, <a class="link-hover" href="/people/wrecker-staff#shail-lavingia">Sahil
     Lavingia</a>, was pushing code to a repo in the <a class="link-hover" href="/agencies/veterans">VA</a>'s Github instance. He also appeared to be using
     an AI tool to write code.
+- id: VDqi9Jgg
+  type: directory
+  date: 2025-03-(26)~
+  sort_date: '2025-03-26'
+  time:
+  text: >-
+    In a later interview, Sahil Lavingia describes attending an "E-meeting" for DOGE that included Elon Musk but was essentially run by Steve Davis as well
+    as two other Musk loyalists, Anthony Armstrong and Baris Akis.
+  fuzz: date is given as "late March," assuming a Wednesday bc others reported DOGE meetings during that time
+  comment:
+  source: https://www.wired.com/story/fired-doge-staffer-who-is-in-charge/
+  source_title: WIRED Talked to a Fired DOGE Staffer About Who Was Really in Charge
+  source_name: Wired
+  case_no:
+  track_id:
+  system_id:
+  names:
+  - Baris Akis
+  - Anthony Armstrong
+  - Steve Davis
+  - Elon Musk
+  agency_ids:
+  - DOGE
+  alias_ids: []
+  names_aliases:
+  - name: Baris Akis
+    slug: baris-akis
+    sort_name: Akis
+    category: booster
+  - name: Anthony Armstrong
+    slug: anthony-armstrong
+    sort_name: Armstrong
+    category: leadership
+  - name: Steve Davis
+    slug: steve-davis
+    sort_name: Davis
+    category: leadership
+  - name: Elon Musk
+    slug: elon-musk
+    sort_name: Musk
+    category: leadership
+  agencies_parents:
+  - DOGE
+  - EOP
+  obj_type: Event
+  linkified_text: >-
+    In a later interview, <a class="link-hover" href="/people/wrecker-staff#shail-lavingia">Sahil Lavingia</a> describes attending an "E-meeting" for <a
+    class="link-hover" href="/agencies/white-house">DOGE</a> that included <a class="link-hover" href="/all/people#elon-musk">Elon Musk</a> but was essentially
+    run by <a class="link-hover" href="/all/people#steve-davis">Steve Davis</a> as well as two other Musk loyalists, <a class="link-hover" href="/all/people#anthony-armstrong">Anthony
+    Armstrong</a> and <a class="link-hover" href="/all/people#baris-akis">Baris Akis</a>.
 - id: avfnFBSY
   type: directory
   date: '2025-03-26'
@@ -11302,6 +11416,8 @@
   names:
   - Akash Bobba
   - Leland Dudek
+  - Cole Killian
+  - Nikhil Rajpal
   - Payton Rehling
   agency_ids:
   - SSA
@@ -11318,16 +11434,21 @@
       - [Akash Bobba's resume](https://www.documentcloud.org/documents/25940536-25-hq-0774-f-resumes-redacted-3/) lists 5 years of engineering experience and leadership skills
   - id: SSA-05
     agency_id: SSA
-    name:
+    name: Cole Killian
     evidence: |-
       - Onboarded as a volunteer on 2025-02-18 as a detail from the DOGE service
       - Flick testimony - SSA began onboarding and training Employee 5, an engineer, detailed from the United States DOGE Service to SSA" with an inter-agency agreement to DOGE.
+      - A nonprofit identified that Marko Elez, Cole Killian, Nikhil Rajpal, Ethan Shaotran were at SSA on 2/18
+      - Of this list, only Cole Killian was hired at DOGE
   - id: SSA-08
     agency_id: SSA
-    name:
+    name: Nikhil Rajpal
     evidence: |-
       - Detailed from OPM to SSA on 2025-02-26
       - His duties currently relate to improper payments and death data.
+      - On 3/13, Wired reported that 10 staffers were visible at SSA Teams Directory. They were Akash Bobba, Marko Elez, Luke Farritor, Cole Killian, Jon Koval, Nikhil Rajpal, Payton Rehling, Ethan Shaotran, Antonio Gracias, Scott Coulter
+      - Of this list, only Akash Bobba and Nikhil Rajpal wre hired from OPM
+      - Akash Bobba has already been identified
   - id: SSA-09
     agency_id: SSA
     name: Payton Rehling
@@ -11344,15 +11465,21 @@
     slug: leland-dudek
     sort_name: Dudek
     category: enabler
+  - name: Cole Killian
+    slug: cole-killian
+    sort_name: Killian
+    category: wrecker
+    alias: SSA-05
+  - name: Nikhil Rajpal
+    slug: nikhil-rajpal
+    sort_name: Rajpal
+    category: wrecker
+    alias: SSA-08
   - name: Payton Rehling
     slug: payton-rehling
     sort_name: Rehling
     category: wrecker
     alias: SSA-09
-  - alias: SSA-05
-    sort_name: ZZZ-SSA-05
-  - alias: SSA-08
-    sort_name: ZZZ-SSA-08
   agencies_parents:
   - SSA
   obj_type: Event
@@ -11688,7 +11815,7 @@
   comment:
   source: https://www.npr.org/sections/goats-and-soda/2025/03/28/g-s1-56968/usaid-terminates-nearly-all-its-remaining-employees
   source_title:
-  source_name:
+  source_name: NPR
   case_no:
   track_id:
   system_id:
@@ -12657,7 +12784,7 @@
   - NIST
   obj_type: Event
   linkified_text: >-
-    A group of 22 house members send a letter to <a class="link-hover" href="/agencies#commerce">Commerce</a> Secretary Lutnick expressing concern about
+    A group of 22 house members send a letter to <a class="link-hover" href="/agencies/commerce">Commerce</a> Secretary Lutnick expressing concern about
     the firing of 70 staffers at <a class="link-hover" href="/agencies/commerce">NIST</a>
 - id: ATa2VGxh
   type: disruption
@@ -13033,7 +13160,7 @@
   names:
   - Bridget Youngs
   agency_ids:
-  - Peace
+  - PeaceCorps
   alias_ids: []
   names_aliases:
   - name: Bridget Youngs
@@ -13041,11 +13168,11 @@
     sort_name: Youngs
     category: wrecker
   agencies_parents:
-  - Peace
+  - PeaceCorps
   obj_type: Event
   linkified_text: >-
     <a class="link-hover" href="/agencies/white-house">DOGE</a> staffer <a class="link-hover" href="/people/wrecker-staff#bridget-youngs">Bridget Youngs</a>
-    reportedly visits the <a class="link-hover" href="/agencies/independent">Peace</a> Corps, planning to work over the weeked to review records and access
+    reportedly visits the <a class="link-hover" href="/agencies/independent">Peace Corps</a>, planning to work over the weeked to review records and access
     IT systems
 - id: KqoNYw6T
   type: disruption
@@ -13673,7 +13800,7 @@
   - name: Anthony Armstrong
     slug: anthony-armstrong
     sort_name: Armstrong
-    category: wrecker
+    category: leadership
   - name: Brooks Morgan
     slug: brooks-morgan
     sort_name: Morgan
@@ -13687,7 +13814,7 @@
   obj_type: Event
   linkified_text: >-
     <a class="link-hover" href="/people/wrecker-staff#brooks-morgan">Brooks Morgan</a>, <a class="link-hover" href="/people/wrecker-staff#adam-ramada">Adam
-    Ramada</a> and <a class="link-hover" href="/people/wrecker-staff#anthony-armstrong">Anthony Armstrong</a> visit the <a class="link-hover" href="/agencies/independent">FDIC</a>
+    Ramada</a> and <a class="link-hover" href="/all/people#anthony-armstrong">Anthony Armstrong</a> visit the <a class="link-hover" href="/agencies/independent">FDIC</a>
     headquarters. Their arrival is later confirmed for staff with an email stating they have not been granted access to any sensitive bank information.
 - id: mBJqiHKW
   type: onboard
@@ -15497,14 +15624,14 @@
   system_id:
   names: []
   agency_ids:
-  - Peace
+  - PeaceCorps
   alias_ids: []
   names_aliases: []
   agencies_parents:
-  - Peace
+  - PeaceCorps
   obj_type: Event
   linkified_text: >-
-    The head of a <a class="link-hover" href="/agencies/independent">Peace</a> Corps alumni group reports he had been told the agency is expecting large
+    The head of a <a class="link-hover" href="/agencies/independent">Peace Corps</a> alumni group reports he had been told the agency is expecting large
     cuts in US staffing, as ordered by <a class="link-hover" href="/agencies/white-house">DOGE</a>
 - id: 6HPPymkF
   type: sighting
@@ -16171,14 +16298,14 @@
   system_id:
   names: []
   agency_ids:
-  - Peace
+  - PeaceCorps
   alias_ids: []
   names_aliases: []
   agencies_parents:
-  - Peace
+  - PeaceCorps
   obj_type: Event
   linkified_text: >-
-    <a class="link-hover" href="/agencies/white-house">DOGE</a> staff reportedly met with <a class="link-hover" href="/agencies/independent">Peace</a> Corps
+    <a class="link-hover" href="/agencies/white-house">DOGE</a> staff reportedly met with <a class="link-hover" href="/agencies/independent">Peace Corps</a>
     leadership to discuss staffing cuts and resignations
 - id: 1tBAJ7d7
   type: disruption
@@ -16819,7 +16946,7 @@
   - USIP
   obj_type: Event
   linkified_text: >-
-    The US Institute of <a class="link-hover" href="/agencies/independent">Peace</a> retook control of its headquarters and re-entered the premises for
+    The <a class="link-hover" href="/agencies/independent">US Institute of Peace</a> retook control of its headquarters and re-entered the premises for
     the first time since being escorted out in <a class="link-hover" href="/agencies/white-house">DOGE</a>'s takeover
 - id: 7IgxVbzx
   type: official

@@ -1,17 +1,21 @@
 {% import "macros" %}
 
-<div class="mt-4 mb-8">
+<div class="mt-8 mb-8">
 <div class="mb-5 mt-5">
   <div class="flex justify-between sm:justify-start items-end">
     <div class="flex-none order-last sm:order-first text-lg sm:text-xl md:text-2xl leading-none mb-0 sm:pr-2"><i class="fas fa-user-secret"></i></div>
-    <div class="flex-none order-first sm:order-1ast"><h2 id="{{ doge_alias.id }}" class="text-lg sm:text-xl md:text-2xl leading-none font-title">{{ doge_alias.id }}{% if doge_alias.name %}: {{ person_link(doge_alias.name) }}{% end %}</h2></div>
+    <div class="flex-none order-first sm:order-1ast"><h2 id="{{ doge_alias.id }}" class="text-lg sm:text-xl md:text-2xl leading-none font-title">{{ doge_alias.id }}</h2></div>
   </div>
   
+  {% if doge_alias.name %}
+  <h3>Likely: {{ person_link(doge_alias.name) }}</h3>
+  {% end %}
+
   <div class="sm:ml-7 md:ml-8 lg:ml-9.5 lining-nums">
     {% if doge_alias.evidence %}
     <div>
     <h3 class="h3 mt-5 mb-0">Supporting Evidence:</h4>
-    <div class="prose prose-sm md:prose-base max-w-none">{{ doge_alias.evidence | markdownify }}</div>
+    <div class="prose prose-sm lg:prose-base max-w-none">{{ doge_alias.evidence | markdownify }}</div>
     </div>
     {% end %}
 

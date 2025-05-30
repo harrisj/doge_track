@@ -1,9 +1,0 @@
----
-layout: page
----
-
-{%= markdownify do %}
-{% site.data.documents.each do |doc| %}
-{% if doc.person %} - {{ doc.id }}: {{ doc.person.name }}{% end %}
-{% end %}
-{% end %}

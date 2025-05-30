@@ -15,14 +15,14 @@ layout: homepage
   <span><strong>Site is in beta.</strong> There is missing content and broken links. Layouts might change. Data might have bugs. Bear with me!</span>
 </div>
 
-<div class="mx-auto mt-10">
+<div class="mx-auto mt-10 prose">
 {% site.data.page_listing.sections.each do |section| %}
 <section class="prose mb-10">
 <h2 class="title mb-1">{{ section.name }}</h2>
 
 <ul>
   {% section.pages.each do |page| %}
-  <li class="mt-0 mb-0"><a href="{{ page.url }}">{{ page.title }}</a></li>
+  <li class="mt-0 mb-0"><a class="link-hover" href="{{ page.url }}">{{ page.title }}</a></li>
   {% end %}
 </ul>
 </section>

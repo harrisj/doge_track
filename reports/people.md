@@ -22,7 +22,7 @@
 - category: booster
 
 # Anthony Armstrong
-- category: wrecker
+- category: leadership
 - positions:
     -  **OPM** (2025-01-20 to ??) Expert ED-00
     -  **FDIC** (2025-04-10 to ??) 
@@ -121,7 +121,7 @@
         - REO: Reentry Employment Opportunities: 2025-04-18 - ongoing
 
 # George Cooper
-- category: unknown
+- category: booster
 
 # Sam Corcos
 - category: enabler
@@ -416,6 +416,7 @@
     -  **EPA** (2025-02-04 to ??) Federal Detailee
         - EAS: EPA Acquisition System: 2025-02-12 - ongoing
     -  **DOL** (2025-02-(13)~ to ??) 
+    -  **SSA** (2025-02-18 to NTE 2026-07-04) [as "SSA-05"] 
     -  **SSA** (2025-02-(20)~ to ??) 
 
 # Gavin Kliger
@@ -646,6 +647,7 @@
     -  **NOAA** (2025-02-04 to ??) 
         - Google Drive **[read-write access]**: 2025-02-05 - ongoing
     -  **CFPB** (2025-02-07 to 2025-03-21) 
+    -  **SSA** (2025-02-26 to NTE 2026-02-26) [as "SSA-08"] 
 
 # Adam Ramada
 - category: wrecker
@@ -910,5 +912,5 @@
 # Bridget Youngs
 - category: wrecker
 - positions:
-    -  **Peace** (2025-04-04 to ??) 
+    -  **PeaceCorps** (2025-04-04 to ??) 
 

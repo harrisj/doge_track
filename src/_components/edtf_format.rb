@@ -52,7 +52,7 @@ class EdtfFormat
     end
   end
 
-  def render_in(_view_context)
+  def to_s
     return '' if @date.nil?
 
     if @date.approximate?
@@ -62,5 +62,9 @@ class EdtfFormat
     else
       display_exact
     end
+  end
+
+  def render_in(_view_context)
+    to_s
   end
 end

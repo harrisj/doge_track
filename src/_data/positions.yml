@@ -1350,7 +1350,7 @@
   reimbursement_amount:
   comment: Not verified, but NYT links to her to GSA also, so assuming she started there
   qualifications:
-  table_note:
+  table_note: linked to GSA by NYT, start date guessed
   replaced_by:
   agency:
     id: GSA
@@ -6788,12 +6788,12 @@
     id: Commerce
     name: Commerce Department
     slug: commerce
-    page_slug:
+    page_slug: self
     short_name: Commerce
     doge_base: true
     parent_id:
     obj_type: Agency
-    path: "/agencies#commerce"
+    path: "/agencies/commerce"
   agency_and_parent:
   - Commerce
   documents: []
@@ -8040,6 +8040,82 @@
   agency_and_parent:
   - DOL
   documents: []
+- id: ssa-employee-5
+  type: detailed
+  agency_id: SSA
+  name: Cole Killian
+  doge_alias_id: SSA-05
+  from_agency_id: DOGE
+  from_truth: verified
+  start_date: '2025-02-18'
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-18'
+  nte_date: '2026-07-04'
+  nte_date_truth: verified
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.53.1.pdf
+  reimbursed:
+  reimbursement_amount:
+  comment: All I have is the date they completed training
+  qualifications:
+  table_note: limited onboarding docs, court docs about them
+  replaced_by:
+  agency:
+    id: SSA
+    name: Social Security Administration
+    slug: ssa
+    page_slug: social-security
+    short_name: SSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/social-security"
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: white-house
+    short_name: DOGE
+    doge_base: true
+    parent_id: EOP
+    obj_type: Agency
+    path: "/agencies/white-house"
+  agency_and_parent:
+  - SSA
+  documents:
+  - id: onboard-ssa-employee-5
+    name:
+    type: onboard
+    alias: SSA-05
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
+    comment:
+    file: onboard-ssa-employee-5.pdf
+    url: "/documents/onboard-ssa-employee-5.pdf"
 - id: detail-doge-ssa-killian
   type: unknown
   agency_id: SSA
@@ -11933,7 +12009,7 @@
   reimbursement_amount:
   comment: Inferring detailed from GSA to SBA
   qualifications:
-  table_note:
+  table_note: assuming hired at GSA
   replaced_by:
   agency:
     id: GSA
@@ -11989,7 +12065,7 @@
   reimbursement_amount:
   comment: Reported in a tweet from the date
   qualifications:
-  table_note:
+  table_note: assuming detail from GSA
   replaced_by:
   agency:
     id: SBA
@@ -12347,6 +12423,92 @@
   agency_and_parent:
   - CFPB
   documents: []
+- id: detail-opm-ssa-8
+  type: detailed
+  agency_id: SSA
+  name: Nikhil Rajpal
+  doge_alias_id: SSA-08
+  from_agency_id: OPM
+  from_truth:
+  start_date: '2025-02-26'
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-26'
+  nte_date: '2026-02-26'
+  nte_date_truth: verified
+  signed_date: '2025-02-26'
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  reimbursed: false
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  agency:
+    id: SSA
+    name: Social Security Administration
+    slug: ssa
+    page_slug: social-security
+    short_name: SSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/social-security"
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - SSA
+  documents:
+  - id: detail-20250226-opm-ssa-employee-8
+    name:
+    type: mou
+    alias: SSA-08
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
+    case_no:
+    comment:
+    file: mou-20250226-opm-ssa-employee-8.pdf
+    url: "/documents/mou-20250226-opm-ssa-employee-8.pdf"
+  - id: onboard-ssa-employee-8
+    name:
+    type: onboard
+    alias: SSA-08
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
+    comment:
+    file: onboard-ssa-employee-8.pdf
+    url: "/documents/onboard-ssa-employee-8.pdf"
 - id: doge-adam-ramada
   type: appointed
   agency_id: DOGE
@@ -14303,7 +14465,7 @@
   reimbursement_amount:
   comment: Riley Sennott's father reports that he started at GSA nine days after 2025-02-03
   qualifications:
-  table_note:
+  table_note: start inferred from [his father's article about his role](https://www.cjr.org/opinion/doge-journalism-ethics-father-son.php)
   replaced_by:
   agency:
     id: GSA
@@ -17261,7 +17423,7 @@
   documents: []
 - id: detail-peace-corps-youngs
   type: detailed
-  agency_id: Peace
+  agency_id: PeaceCorps
   name: Bridget Youngs
   doge_alias_id:
   from_agency_id:
@@ -17303,7 +17465,7 @@
   table_note: unknown who this is and if sent to other agencies
   replaced_by:
   agency:
-    id: Peace
+    id: PeaceCorps
     name: Peace Corps
     slug: peace-corps
     page_slug: independent
@@ -17313,139 +17475,7 @@
     obj_type: Agency
     path: "/agencies/independent"
   agency_and_parent:
-  - Peace
-  documents: []
-- id: ssa-employee-5
-  type: detailed
-  agency_id: SSA
-  name:
-  doge_alias_id: SSA-05
-  from_agency_id: DOGE
-  from_truth: verified
-  start_date: '2025-02-18'
-  start_date_truth: verified
-  start_date_event:
-  start_source:
-  start_source_name:
-  end_date:
-  end_date_truth:
-  end_date_event:
-  end_source:
-  end_source_name:
-  end_type:
-  sort_date: '2025-02-18'
-  nte_date: '2026-07-04'
-  nte_date_truth: verified
-  signed_date:
-  description:
-  fuzz:
-  appt_type_code:
-  appt_type:
-  pay_grade:
-  salary:
-  pd_code:
-  sge:
-  excepted:
-  title:
-  title_type:
-  series:
-  supervisory:
-  office:
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.53.1.pdf
-  reimbursed:
-  reimbursement_amount:
-  comment: All I have is the date they completed training
-  qualifications:
-  table_note: limited onboarding docs, court docs about them
-  replaced_by:
-  agency:
-    id: SSA
-    name: Social Security Administration
-    slug: ssa
-    page_slug: social-security
-    short_name: SSA
-    doge_base: true
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/social-security"
-  from_agency:
-    id: DOGE
-    name: Department of Government Efficiency
-    slug: doge
-    page_slug: white-house
-    short_name: DOGE
-    doge_base: true
-    parent_id: EOP
-    obj_type: Agency
-    path: "/agencies/white-house"
-  agency_and_parent:
-  - SSA
-  documents: []
-- id: detail-opm-ssa-8
-  type: detailed
-  agency_id: SSA
-  name:
-  doge_alias_id: SSA-08
-  from_agency_id: OPM
-  from_truth:
-  start_date: '2025-02-26'
-  start_date_truth: verified
-  start_date_event:
-  start_source:
-  start_source_name:
-  end_date:
-  end_date_truth:
-  end_date_event:
-  end_source:
-  end_source_name:
-  end_type:
-  sort_date: '2025-02-26'
-  nte_date: '2026-02-26'
-  nte_date_truth: verified
-  signed_date: '2025-02-26'
-  description:
-  fuzz:
-  appt_type_code:
-  appt_type:
-  pay_grade:
-  salary:
-  pd_code:
-  sge:
-  excepted:
-  title:
-  title_type:
-  series:
-  supervisory:
-  office:
-  source:
-  reimbursed: false
-  reimbursement_amount:
-  comment:
-  qualifications:
-  table_note:
-  replaced_by:
-  agency:
-    id: SSA
-    name: Social Security Administration
-    slug: ssa
-    page_slug: social-security
-    short_name: SSA
-    doge_base: true
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/social-security"
-  from_agency:
-    id: OPM
-    name: Office of Personnel Management
-    slug: opm
-    page_slug: self
-    short_name: OPM
-    doge_base: true
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/opm"
-  agency_and_parent:
-  - SSA
+  - PeaceCorps
   documents: []
 - id: ssa-employee-11
   type: appointed

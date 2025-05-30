@@ -129,11 +129,11 @@
 - id: Commerce
   name: Commerce Department
   slug: commerce
-  page_slug:
+  page_slug: self
   short_name: Commerce
   doge_base: true
   parent_id:
-  path: "/agencies#commerce"
+  path: "/agencies/commerce"
   children:
   - Census
   - NOAA
@@ -374,8 +374,8 @@
   - doi-luby
   - doi-hassan-principal
   event_ids:
-  - 4j2BznnH
   - eSiT2dsb
+  - 4j2BznnH
   - j8cpRtDP
   - TNkATrog
   - 2kfvoFQv
@@ -435,6 +435,7 @@
   - cSecvrNE
   - 2y8WthBd
   - VdEHz47g
+  - 1rzb08sG
   - FP9n4cfD
   - kSAAPBQJ
   - NseepQVk
@@ -466,6 +467,7 @@
   - V6ZVi48F
   - bvMjErqQ
   - 8rQqTtqy
+  - VDqi9Jgg
   - avfnFBSY
   - 6oE47sYI
   - HDyeD2he
@@ -868,6 +870,7 @@
   - cSecvrNE
   - 2y8WthBd
   - VdEHz47g
+  - 1rzb08sG
   - FP9n4cfD
   - kSAAPBQJ
   - NseepQVk
@@ -899,6 +902,7 @@
   - V6ZVi48F
   - bvMjErqQ
   - 8rQqTtqy
+  - VDqi9Jgg
   - avfnFBSY
   - 6oE47sYI
   - HDyeD2he
@@ -1794,7 +1798,7 @@
   - 3jUop1qX
   system_access: []
   obj_type: Agency
-- id: Peace
+- id: PeaceCorps
   name: Peace Corps
   slug: peace-corps
   page_slug: independent
@@ -1875,14 +1879,14 @@
   - detail-opm-ssa-opm-3
   - ssa-employee-1
   - ssa-dudek-commissioner
-  - detail-nasa-ssa-employee-2
   - detail-gsa-ssa-employee-10
-  - ssa-employee-5
+  - detail-nasa-ssa-employee-2
   - detail-dol-ssa-employee-7
+  - ssa-employee-5
   - detail-dol-ssa-employee-3
-  - ssa-antonio-gracias
   - ssa-employee-6
   - ssa-employee-9
+  - ssa-antonio-gracias
   - ssa-steffensen
   - detail-opm-ssa-8
   - ssa-steffensen-1

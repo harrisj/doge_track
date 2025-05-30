@@ -1,0 +1,30 @@
+---
+title: DOGE Timeline
+layout: page
+---
+{% import 'macros' %}
+{%@ 'title', title: 'The DOGE Timeline' %}
+
+{%@ 'text' do %}
+It can be hard to see the patterns in the noise of DOGE's chaos, but there has been a structure to the destruction. In the initial phase of this site, I am focusing more on the people rather than DOGE's projects, but this timeline is an overview of DOGE's activities and shifting focus.
+{% end %}
+
+<ul class="mt-10 timeline timeline-vertical timeline-snap-icon max-md:timeline-compact">
+  {% timeline_start = false %}
+
+  {% site.data.timeline.each do |tl| %}
+  <li>
+    {% if tl != site.data.timeline.first %}<hr/>{% end %}
+    <div class="timeline-middle">
+      <i class="fa-solid fa-burst"></i>
+    </div>
+    <div class="prose prose-a:font-semibold mb-10 {% if timeline_start %}timeline-start md:text-end{% else %}timeline-end{% end %}">
+        <time class="font-mono italic">{{ tl.date }}</time>
+        <div class="text-lg font-black">{{ tl.title }}</div>
+        {{ tl.text | linkify_text | md }}
+        {% timeline_start = !timeline_start %}
+    </div>
+    {% if tl != site.data.timeline.last %}<hr/>{% end %}
+  </li>
+  {% end %}
+</ul>

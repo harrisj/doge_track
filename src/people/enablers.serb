@@ -12,7 +12,7 @@ DOGE are not a collection of super-hackers. They don't trick their way into agen
 ## Shielding from Scrutiny
 
 At major agencies, the DOGE staff are given titles like "Senior Advisor" and situated within the Office of the Director. In the case of {{ agency_link('OPM') }} and {{ agency_link('GSA') }}, DOGE staff have taken this literally and built walled-off and guarded enclaves accessible only to DOGE employees, but even as just an org-chart designation, it provides powerful protection to DOGE staff as they work in the agency. By being in the Director's Office, they are often granted enhanced privileges but with reduced oversight. The following table illustrates how common this practice is. It is a list of DOGE staff at various agencies with the documented title of "Senior Advisor" (or similar) or who report into either the agency director or the CIO (who often has delegated authority over the systems that DOGE wants access to).
-
+{% end %}
 {% agencies = site.data.agencies.select {|a| a.parent_id.blank?} %}
 
 <table class="table table-xs sm:table-sm md:table-md">
@@ -40,9 +40,11 @@ At major agencies, the DOGE staff are given titles like "Senior Advisor" and sit
 </tbody>
 </table>
 
+{%@ 'text' do %}
 This table only includes people who whom we have definite information about their titles or offices. The actual list is likely even larger. In addition, gaps in the DOGE heads column don't indicate that agency leadership is indifferent or even hostile to DOGE. For instance, I'm not counting Secretary of State Marco Rubio in my list of DOGE names, but I don't think I've seen any examples of him thwarting their ambitions at any agency he is either the director or acting director of. And speaking of acting...
 
 ## Acting Leadership
+{% end %}
 {% acting = site.data.positions.select { |p| p.title =~ /acting/i }.sort_by(&:sort_date) %}
 
 <table class="table table-xs sm:table-sm md:table-md">
@@ -66,6 +68,7 @@ This table only includes people who whom we have definite information about thei
 </tbody>
 </table>
 
+{%@ 'text' do %}
 In one of its more novel tactics, the Trump Administration has repeatedly used acting directors as the mechanisms of agency destruction. Because many agency directors require Senate confirmation before they can be appointed and this process takes time, the Vacancies Act was passed to ensure continuity of operations when during a change of administration or when an agency leadership position is vacated. This act allows the President to name people as "acting" directors or other positions who are granted full powers until a Senate-confirmed appointee can be sworn in. The Vacancies Act does set some conditions for who can serve as acting directors:
 
 By default, the "first assistant to the office" (i.e., the deputy director) fills the position
@@ -76,6 +79,7 @@ In the past, Acting Directors have largely acted as custodial roles, ensuring th
 The Trump administration has dramatically upended this practice, using Acting Directors as a way to significantly change or even completely demolish other agencies. For the destruction of {{ agency_link('USAID') }}, Trump fired the agency's acting head and then declared the recently appointed Secretary of State, Marco Rubio, as the new acting director. Rubio then authorized all the activities of DOGE to demolish the agency. Similarly, within hours of being sworn in as director of the OMB, {{ person_link('Russell Vought') }} was named the acting director of the {{ agency_link('CFPB') }} and ordered similar actions. This tactic has been instrumental in the DOGE takeover at many agencies - in their first acts, the acting directors usually order that DOGE staff are given superuser access and that normal processes for approval should be bypassed and staff be placed on administrative leave so they can't prevent or observe what is happening. It's a bit like a bank heist where the branch manager is spearheading the crime.
 
 ## Chief Information Officers
+{% end %}
 
 {% cios = site.data.positions.select {|p| p.title == "Chief Information Officer" } %}
 <table class="table table-xs sm:table-sm md:table-md">
@@ -98,7 +102,7 @@ The Trump administration has dramatically upended this practice, using Acting Di
 {% end %}
 </tbody>
 </table>
-
+{%@ 'text' do %}
 Developing software for the federal government is different in many ways from the startup world. For instance, Privacy Act regulations have explicitly prohibited connecting systems together precisely because the American public doesn't want [a government panopticon system that gives insiders a "God" view of the public](https://www.wired.com/story/doge-collecting-immigrant-data-surveil-track/). While an agency's Privacy Office and Chief Counsel will often determine what information sharing is legally allowed, the agency's Chief Information Officer (CIO) usually oversees the technical mechanisms which ensure that compliance. Furthermore, the CIO is primarily responsible for tracking IT budgets and contracts, which makes them a tempting target to support DOGE's mission of centralizing and controlling all spending and procurement at federal agencies. CIOs are often able to order elevated access for DOGE staff with minimal oversight, making them crucial to the work that wrecker teams do. Finally, CIOs have the ability to issue Risk Acceptance Memos (RAMs) whereby they will personally accept the risk for nonstandard technologies and bypassing normal compliance processes. These "get out of jail free" cards have been used successfully in the past to right IT projects that have gone off course, but they also are easily prone to abuse in the wrong hands.
 
 So, it;s no surprises that DOGE's work started with replacing CIOs in some key agencies with people sympathetic to DOGE's aggressive actions and world view. As a particularly potent example oh ho, two DOGE staffers - {{ person_link('Marko Elez') }} and {{ person_link('Aram Moghaddassi') }} - at the Department of Labor were granted access to a highly-sensitive data system belonging to the Office of the Inspector General. This system contained sensitive data from Unemployment Insurance claims that DOGE wanted to scrape to use in anti-immigration efforts. Normally, such access would be out of the question, but an Executive Order issued on March 20 demanding widespread data access for DOGE explicitly declared that
@@ -106,12 +110,4 @@ So, it;s no surprises that DOGE's work started with replacing CIOs in some key a
 > the Secretary of Labor and the Secretary's designees shall receive, to the maximum extent consistent with law, unfettered access to all unemployment data and related payment records, including all such data and records currently available to the Department of Labor's Office of Inspector General.
 
 Despite the order here, this data was still considered so highly sensitive that DOL counsel determined that access would need to be explicitly granted by the agency CIO. Conveniently enough, the agency had just appointed a brand new CIO a week before. His name? {{ person_link('Thomas Shedd') }}.
-{% end %}
-
-## All Enablers
-
-{% people = site.data.people.select {|p| p.category == 'enabler'}.sort_by(&:sort_name) %}
-
-{% people.each do |person| %}
-  {%@ "people_page_person", person: person %}
 {% end %}
