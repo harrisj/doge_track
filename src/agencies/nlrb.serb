@@ -3,7 +3,6 @@ agency_id: NLRB
 title: National Labor Relations Board
 ---
 {% blurb = capture do %}
-TKTK
 {% end %}
 
 {%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}

@@ -3,7 +3,6 @@ agency_id: NASA
 title: National Aeronautics and Space Administration
 ---
 {% blurb = capture do %}
-TKTK
 {% end %}
 
 {%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}
