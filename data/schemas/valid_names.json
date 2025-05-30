@@ -280,6 +280,16 @@
             "unknown"
         ]
     },
+    "offboard_types": {
+        "description": "Valid offboarding types",
+        "enum": [
+            "fired",
+            "resigned",
+            "detail_ended",
+            "replaced",
+            "unknown"
+        ]
+    },
     "access_types": {
         "description": "Valid access types",
         "enum": [

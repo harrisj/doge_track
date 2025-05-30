@@ -17151,31 +17151,68 @@
   sort_date: '2025-05-29'
   time:
   text: >-
-    In the wake of Elon Musk's departure, Steve Davis has reportedly also left DOGE. He had reportedly been running the day-to-day operations of DOGE, and
-    it's unclear who will take that over.
+    In the wake of Elon Musk's departure, Steve Davis, Katie Miller and James Burnham have reportedly also left DOGE. Davis had reportedly been running
+    the day-to-day operations of DOGE, and it's unclear who will take that over.
   fuzz:
   comment:
-  source: https://www.wsj.com/us-news/steve-davis-leaves-doge-411a2d1b
-  source_title: Elon Musk’s Chief Lieutenant at DOGE Leaves Agency
-  source_name: WSJ
+  source: https://thehill.com/homenews/administration/5324467-doge-officials-exit-trump-adminstration/
+  source_title:
+  source_name: The Hill
   case_no:
   track_id:
   system_id:
   names:
+  - James Burnham
   - Steve Davis
+  - Katie Miller
   agency_ids:
   - DOGE
   alias_ids: []
   names_aliases:
+  - name: James Burnham
+    slug: james-burnham
+    sort_name: Burnham
+    category: support
   - name: Steve Davis
     slug: steve-davis
     sort_name: Davis
     category: leadership
+  - name: Katie Miller
+    slug: katie-miller
+    sort_name: Miller
+    category: booster
   agencies_parents:
   - DOGE
   - EOP
   obj_type: Event
   linkified_text: >-
     In the wake of <a class="link-hover" href="/all/people#elon-musk">Elon Musk</a>'s departure, <a class="link-hover" href="/all/people#steve-davis">Steve
-    Davis</a> has reportedly also left <a class="link-hover" href="/agencies/white-house">DOGE</a>. He had reportedly been running the day-to-day operations
-    of <a class="link-hover" href="/agencies/white-house">DOGE</a>, and it's unclear who will take that over.
+    Davis</a>, <a class="link-hover" href="/all/people#katie-miller">Katie Miller</a> and <a class="link-hover" href="/people/support-team#james-burnham">James
+    Burnham</a> have reportedly also left <a class="link-hover" href="/agencies/white-house">DOGE</a>. Davis had reportedly been running the day-to-day
+    operations of <a class="link-hover" href="/agencies/white-house">DOGE</a>, and it's unclear who will take that over.
+- id: qGW3IvqQ
+  type: offboard
+  date: '2025-05-29'
+  sort_date: '2025-05-29'
+  time:
+  text: Steve Davis and Nicole Hollander have reportedly departed from the GSA in the wake of Elon Musk leaving DOGE
+  fuzz:
+  comment:
+  source: https://www.wired.com/story/nicole-hollander-top-musk-lieutenant-leaving-doge/
+  source_title: Another Top Musk Lieutenant Appears to Be Leaving DOGE
+  source_name: Wired
+  case_no:
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - GSA
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - GSA
+  obj_type: Event
+  linkified_text: >-
+    <a class="link-hover" href="/all/people#steve-davis">Steve Davis</a> and <a class="link-hover" href="/people/enabler-staff#nicole-hollander">Nicole
+    Hollander</a> have reportedly departed from the <a class="link-hover" href="/agencies/gsa">GSA</a> in the wake of <a class="link-hover" href="/all/people#elon-musk">Elon
+    Musk</a> leaving <a class="link-hover" href="/agencies/white-house">DOGE</a>

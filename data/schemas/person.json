@@ -51,6 +51,19 @@
             "$comment": "I should just make this an explicit path",
             "type": "string"
         },
+        "govt_exit_type": {
+            "description": "How they offboarded",
+            "$ref": "valid_names.json#offboard_types"
+        },
+        "govt_exit_date": {
+            "description": "A date when they left DOGE entirely",
+            "type": "string",
+            "$ref": "valid_names.json#fuzzy_date"
+        },
+        "govt_exit_truth": {
+            "description": "Accuracy of the info",
+            "$ref": "valid_names.json#truth_types"
+        },
         "positions": {
             "type": "array",
             "items": {

@@ -483,6 +483,9 @@
   sort_name: Burnham
   slug: james-burnham
   age: 41
+  govt_exit_type: resigned
+  govt_exit_date: 2025-05-29
+  govt_exit_truth: verified
   background: lawyer
   category: support
   blurb: >-
@@ -495,6 +498,10 @@
     type: appointed
     sort_date: 2025-01-23
     start_date: 2025-01-(23)~
+    start_date_truth: reported
+    end_date: 2025-05-29
+    end_date_truth: verified
+    end_type: resigned
     title: General Counsel
     table_note: NYT reported in DOGE in January, ProPublica provided title
     source: https://www.nytimes.com/2025/01/12/us/politics/elon-musk-doge-government-trump.html
@@ -535,6 +542,7 @@
     start_date: 2025-02-21
     start_date_truth: verified
     end_date: 2025-03-06
+    comment: FIXME
     end_date_truth: reported
     table_note: verified via court filing
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
@@ -549,6 +557,8 @@
     start_date_truth: reported
     end_date: 2025-03-24
     end_date_truth: verified
+    end_type: replaced
+    replaced_by: usip-cavanaugh-president
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.2.pdf
   - id: detail-gsa-neh-cavanaugh
     type: detailed
@@ -686,6 +696,8 @@
     salary: "$0"
     end_date: 2025-05-(06)~
     end_date_truth: inferred
+    end_type: replaced
+    replaced_by: irs-corcos-cio
     table_note: Start date inferred and likely earlier.
     comment: FIXME earlier involvement, maybe when Gavin Kliger started there; ends when became CIO
     source: https://www.washingtonpost.com/business/2025/03/01/doge-irs-tax-records-benefits/
@@ -870,6 +882,8 @@
     nte_date_truth: verified
     end_date: 2025-03-23
     end_date_truth: verified
+    end_type: replaced
+    replaced_by: ssa-employee-2-cio
     signed_date: 2025-03-06
     reimbursed: true
     comment: Followed by Employee 2 being appointed the CIO
@@ -941,6 +955,9 @@
   age: 45
   background: executive
   category: leadership
+  govt_exit_type: resigned
+  govt_exit_date: 2025-05-29
+  govt_exit_truth: confirmed
   positions:
   - id: doge-steve-davis
     type: appointed
@@ -1261,6 +1278,7 @@
     start_date_truth: verified
     end_date: 2025-03-04
     end_date_truth: verified
+    end_type: detail_ended
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: Details from court filing
   - id: detail-gsa-state-farritor
@@ -1410,6 +1428,8 @@
     start_date_truth: reported
     end_date: 2025-04-24
     end_date_truth: reported
+    end_type: replaced
+    replaced_by: dod-fulcher-advisor
     comment: Assuming this position replace by Senior Advisor role
     source: https://www.forbes.com/sites/davidjeans/2025/03/04/pentagon-doge-official-justin-fulcher/
     agency: DOD
@@ -1444,6 +1464,7 @@
     start_date_truth: reported
     end_date: 2025-01-XX
     end_date_truth: reported
+    end_type: unknown
     comment: ProPublica just reports he was there in January
     source: https://projects.propublica.org/elon-musk-doge-tracker/#Mattieu-Gamache-Asselin
 
@@ -1514,7 +1535,7 @@
     start_date: 2025-02-16
     start_date_truth: reported
     nte_date: 2025-02-20
-    end_date_truth: verified
+    nte_date_truth: verified
     source: https://www.wired.com/story/faa-doge-elon-musk-space-x/
 
 - name: Amy Gleason
@@ -1529,6 +1550,8 @@
     start_date_truth: verified
     end_date: 2024-02-18
     end_date_truth: verified
+    end_type: replaced
+    replaced_by: doge-amy-gleason-director
     type: appointed
     table_note: this is Amy's role in USDS until she was named the administrator of DOGE
     comment: >-
@@ -1536,7 +1559,6 @@
       she is named Acting Director
     source: https://www.documentcloud.org/documents/25564597-crewvdogereconmot031425/
     agency: DOGE
-    replaced_by: doge-amy-gleason-director
   - id: doge-amy-gleason-director
     start_date: 2025-02-18
     start_date_truth: verified
@@ -1724,6 +1746,10 @@
     sort_date: 2025-01-27
     start_date: 2025-01-(27)~
     start_date_truth: inferred
+    end_date: 2025-03-07
+    end_date_truth: verified
+    end_type: replaced
+    replaced_by: doi-hassen-acting
     table_note: AP reports in DOI in January, inferring before water pump stunt
     agency: DOI
     source: >-
@@ -1734,6 +1760,8 @@
     start_date_truth: reported
     end_date: 2025-04-XX
     end_date_truth: reported
+    end_type: replaced
+    replaced_by: doi-hassan-principal
     title: Acting Assistant Secretary of Policy, Management and Budget
     title_type: dept_head
     table_note: ended with title change to Principal Deputy Assistant Secretary
@@ -1794,6 +1822,8 @@
     start_date_truth: verified
     end_date: 2025-02-11
     end_date_truth: verified
+    end_type: replaced
+    replaced_by: greg-hogan-opm-2
     description: SES Noncareer Appt
     appt_type_code: 55
     appt_type: SES Noncareer
@@ -1838,6 +1868,9 @@
   age: 42
   background: executive
   category: enabler
+  govt_exit_type: resigned
+  govt_exit_date: 2025-05-29
+  govt_exit_truth: reported
   page_slug: "/people/enabler-staff/"
   blurb: >-
     Nicole Hollander is married to fellow DOGE operative and ad hoc leader Steve Davis, and she has worked
@@ -1850,9 +1883,13 @@
     type: appointed
     start_date: 2025-01-20
     start_date_truth: guessed
-    comment: FIXME
+    end_date: 2025-05-29
+    end_date_truth: reported
+    end_type: resigned
+    comment: Reportedly, has left the government in the wake of Steve Davis and Elon Musk leaving
     office: Office of the Administrator
     supervisory: true
+    source: https://www.wired.com/story/nicole-hollander-top-musk-lieutenant-leaving-doge/
     agency: GSA
 
 - name: Stephanie Holmes
@@ -1967,7 +2004,7 @@
     start_date: 2025-02-16
     start_date_truth: reported
     nte_date: 2025-02-20
-    end_date_truth: verified
+    nte_date_truth: verified
     source: https://www.wired.com/story/faa-doge-elon-musk-space-x/
 
 - name: Cole Killian
@@ -2051,6 +2088,8 @@
     nte_date_truth: verified
     end_date: 2025-02-18
     end_date_truth: verified
+    end_type: replaced
+    replaced_by: gavin-kliger-opm-2
     description: Provisional Appt NTE
     appt_type_code: 44
     appt_type: Schedule C
@@ -2065,7 +2104,6 @@
     office: Office of the Director
     table_note: hired at maximum salary for GS federal employee in DC
     comment: I confirmed he is OPM-5
-    replaced_by: gavin-kliger-opm-2
     documents:
     - opm-foia-doge-positions
     - onboard-opm-employee-5
@@ -2106,6 +2144,7 @@
     start_date_truth: verified
     end_date: 2025-05-08
     end_date_truth: verified
+    end_type: fired
     source: >-
       https://news.bloomberglaw.com/banking-law/doge-employee-leaves-cfpb-after-leading-trumps-mass-firing-plan
   - id: gavin-kliger-opm-2
@@ -2141,6 +2180,7 @@
     nte_date_truth: inferred
     end_date: 2025-04-17
     end_date_truth: reported
+    end_type: fired
     signed_date: 2025-02-19
     comment: he was forcibly removed from agency in purge by Bessent
     source: >-
@@ -2232,6 +2272,8 @@
     start_date_truth: verified
     end_date: 2025-02-12
     end_date_truth: verified
+    end_type: replaced
+    replaced_by: appoint-treasury-thomas-krause
     nte_date: 2025-04-10
     nte_date_truth: verified
     agency: Treasury
@@ -2299,12 +2341,16 @@
   age: 32
   background: executive
   category: wrecker
+  govt_exit_type: fired
+  govt_exit_date: 2025-05-09
+  govt_exit_truth: verified
   positions:
   - id: va-lavingia
     start_date: 2025-03-17
     start_date_truth: verified
     end_date: 2025-05-09
     end_date_truth: verified
+    end_type: fired
     table_note: fired for talking to media, dates from his blog
     type: appointed
     title: Senior Advisor
@@ -2336,6 +2382,8 @@
     start_date_truth: verified
     end_date: 2025-03-18
     end_date_truth: inferred
+    end_type: replaced
+    replaced_by: usaid-jeremy-lewin-2
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.77.2.pdf
     title: Senior Advisor / Director for Strategy & Programs
     title_type: dept_head
@@ -2498,7 +2546,7 @@
     start_date: 2025-02-16
     start_date_truth: reported
     nte_date: 2025-02-20
-    end_date_truth: verified
+    nte_date_truth: verified
     source: https://www.wired.com/story/faa-doge-elon-musk-space-x/
 
 - name: Dave Malcher
@@ -2873,6 +2921,9 @@
   slug: elon-musk
   background: executive
   category: leadership
+  govt_exit_type: resigned
+  govt_exit_date: 2025-05-28
+  govt_exit_truth: reported
   blurb: >-
     An obscure and modest businessman, he has served as merely a humble advisor to the administration,
     just raising his hand meekly during occasional meetings to offer a suggestion or two. Or not. He's
@@ -2883,6 +2934,9 @@
     type: appointed
     start_date: 2025-01-20
     start_date_truth: guessed
+    end_date: 2025-05-28
+    end_date_truth: verified
+    end_type: resigned
     agency: DOGE
 
 - name: Todd Newnam
@@ -3025,6 +3079,7 @@
     start_date_truth: verified
     end_date: 2025-03-21
     end_date_truth: verified
+    end_type: detail_ended
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: Details from court filing
 
@@ -3191,6 +3246,7 @@
     start_date_truth: reported
     end_date: 2025-03-07
     end_date_truth: reported
+    end_type: resigned
     source: https://www.nextgov.com/people/2025/03/energy-cio-departs-after-short-tenure/403596/
 
 - name: Rachel Riley
@@ -3265,6 +3321,8 @@
     start_date_truth: reported
     end_date: 2024-03-24
     end_date_truth: reported
+    end_type: replaced
+    replaced_by: ssa-mike-russo-advisor
     comment: Reportedly removed for complying quickly with judge's orders to block access
     supervisory: true
     source: >-
@@ -3645,7 +3703,7 @@
     start_date: 2025-02-16
     start_date_truth: reported
     nte_date: 2025-02-20
-    end_date_truth: verified
+    nte_date_truth: verified
     source: https://www.wired.com/story/faa-doge-elon-musk-space-x/
 
 - name: Brad Smith
@@ -3741,6 +3799,7 @@
     start_date_truth: reported
     end_date: 2025-03-18
     end_date_truth: reported
+    end_type: resigned
     table_note: resigned abruptly the day after being appointed
     comment: Chris Stanley spent one day on the board before resigning
     source: https://www.housingwire.com/articles/doge-fannie-mae-board-member-christopher-stanley-resignation/
@@ -3772,6 +3831,8 @@
     start_date_truth: reported
     end_date: 2025-02-27
     end_date_truth: reported
+    end_type: replaced
+    replaced_by: ssa-steffensen-1
     title: Senior Advisor
     title_type: advisor
     office: Office of the Commissioner
@@ -3997,6 +4058,8 @@
     start_date_truth: verified
     end_date: 2025-03-04
     end_date_truth: verified
+    end_type: replaced
+    replaced_by: cfpb-jordan-wick
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     table_note: detail ended because he became a full-time CFPB employee on 3/5
     comment: Dates provided in court documents. Converted to full position

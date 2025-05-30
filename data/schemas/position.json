@@ -48,6 +48,10 @@
       "description": "The precision for the end_date",
       "$ref": "valid_names.json#truth_types"
     },
+    "end_type": {
+      "description": "The type of departure for this position",
+      "$ref": "valid_names.json#offboard_types"
+    },
     "nte_date": {
       "description": "If the NTE date for the appointment is known, it will be recorded here",
       "type": "string"

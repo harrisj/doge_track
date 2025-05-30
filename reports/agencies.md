@@ -146,7 +146,7 @@
 # Department of the Interior
 - slug: interior
 - people:
-  - **Tyler Hassen** (2025-01-(27)~)
+  - **Tyler Hassen** (2025-01-(27)~ - 2025-03-07)
   - **Stephanie Holmes** (2025-02-24) Special Advisor / Acting Chief Human Capital Officer (detailed from DOGE)
   - **Katrine Trampe** (2025-03-05)
   - **Tyler Hassen** (2025-03-07 - 2025-04-XX) Acting Assistant Secretary of Policy, Management and Budget
@@ -162,9 +162,9 @@
 - people:
   - **Amy Gleason** (2024-12-30 - 2024-02-18)
   - **Jordan Wick** (2025-01-(20)~)
-  - **James Burnham** (2025-01-(23)~) General Counsel
+  - **James Burnham** (2025-01-(23)~ - 2025-05-29) General Counsel
   - **Katie Miller** (2025-01-20)
-  - **Elon Musk** (2025-01-20)
+  - **Elon Musk** (2025-01-20 - 2025-05-28)
   - **Steve Davis** (2025-01-20 - 2025-05-29)
   - **Cole Killian** (2025-01-20)
   - **Adam Ramada** (2025-01-23)
@@ -386,7 +386,7 @@
 - people:
   - **Edward Coristine** (2025-01-(20)~)
   - **Ethan Shaotran** (2025-01-20)
-  - **Nicole Hollander** (2025-01-20)
+  - **Nicole Hollander** (2025-01-20 - 2025-05-29)
   - **Jeremy Lewin** (2025-01-20)
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)

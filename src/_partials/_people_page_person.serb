@@ -5,9 +5,10 @@
     <div class="flex-none order-first sm:order-1ast"><h2 id="{{person.slug}}" class="mt-0 mb-0 text-lg sm:text-xl md:text-2xl leading-none font-title">{{ person.name }}</h2></div>
   </div>
   <div class="sm:ml-7 md:ml-8 lg:ml-9.5 lining-nums">
-    <div>
-      <div class="prose prose-sm md:prose-base prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-2 leading-none"><strong>{{ person.category.titleize }}</strong>{% if person.age %}, age {{ person.age }}{% end %}</div>
-      {% if person.linkified_blurb %}<p class="prose prose-sm md:prose-base prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-0 mt-0.5 leading-5 mb-2">{{ person.linkified_blurb | md }}</p>{% end %}
+    <div class="prose prose-sm md:prose-base prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-2">
+      <div class="leading-none"><strong>{{ person.category.titleize }}</strong>{% if person.age %}, age {{ person.age }}{% end %}</div>
+      {% if person.govt_exit_date %}<div><strong>Exited government:</strong> {{ render EdtfFormat.new(person.govt_exit_date) }}{% if person.govt_exit_type %} ({{ person.govt_exit_type}}){% end %}</div>{% end %}
+      {% if person.linkified_blurb %}<p class="mb-0 mt-0.5 leading-5 mb-2">{{ person.linkified_blurb | md }}</p>{% end %}
     </div>
 
     {% if person.positions.any? %}

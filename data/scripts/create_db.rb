@@ -42,6 +42,7 @@ DB.create_table! :positions do
   string :end_date_event
   string :end_source
   string :end_source_name
+  string :end_type
 
   string :sort_date, null: false
 
@@ -83,6 +84,9 @@ DB.create_table! :people do
   string :blurb
   string :reporting_notes
   string :comment
+  string :govt_exit_date
+  string :govt_exit_truth
+  string :govt_exit_type
   string :table_note
 end
 

@@ -86,7 +86,7 @@
 # James Burnham
 - category: support
 - positions:
-    -  **DOGE** (2025-01-(23)~ to ??) General Counsel
+    -  **DOGE** (2025-01-(23)~ to 2025-05-29) General Counsel
 
 # Nate Cavanaugh
 - category: wrecker
@@ -350,7 +350,7 @@
 # Tyler Hassen
 - category: enabler
 - positions:
-    -  **DOI** (2025-01-(27)~ to ??) 
+    -  **DOI** (2025-01-(27)~ to 2025-03-07) 
     -  **DOI** (2025-03-07 to 2025-04-XX) **Acting Assistant Secretary of Policy, Management and Budget**
     -  **DOI** (2025-04-XX to ??) 
 
@@ -372,7 +372,7 @@
 # Nicole Hollander
 - category: enabler
 - positions:
-    -  **GSA** (2025-01-20 to ??) 
+    -  **GSA** (2025-01-20 to 2025-05-29) 
 
 # Stephanie Holmes
 - category: wrecker
@@ -619,7 +619,7 @@
 # Elon Musk
 - category: leadership
 - positions:
-    -  **DOGE** (2025-01-20 to ??) 
+    -  **DOGE** (2025-01-20 to 2025-05-28) 
 
 # Todd Newnam
 - category: wrecker
