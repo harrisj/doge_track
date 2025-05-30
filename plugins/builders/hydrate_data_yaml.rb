@@ -93,7 +93,7 @@ module Builders
 
         unless q.event_id.blank?
           event = lookup_event(q.event_id)
-          devent.questions ||= []
+          event.questions ||= []
           event.questions.append(q)
         end
 
