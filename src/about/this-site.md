@@ -27,7 +27,7 @@ Once I have loaded the data, other scripts will extract the data from the databa
 
 For your convenience, I have included a "Last Updated" date in the footer for the site. I will update the entire site at a single time, so it does not apply to specific pages only.
 
-## Reporting Errors
+## Reporting Errors and Ommissions
 
 This website may be an act of journalism, but I am **not** a professional journalist. I will continue to strive to update the data and fix any errors that arise, but DOGE has made itself intentionally hard to track and some errors are almost certain to result. All of which is to say, **use this data at your own risk**. If you are using it as the basis for further investigations or legal arguments, please double-check my work (and let me know if you find any errors). I generally will link to original sources and have also started collecting significant documents.
 

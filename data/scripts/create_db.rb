@@ -104,6 +104,7 @@ DB.create_table! :questions do
   string :agency_id
   string :govt_system_id
   string :position_id
+  string :event_id
 end
 
 DB.create_table! :documents do

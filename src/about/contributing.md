@@ -27,9 +27,9 @@ If it weren't obvious, I am not a designer or a front-end master. There is a lot
 
 ## Creating Derivative Works
 
-There are copyrights or any license for the data on this site. It is completely in the public domain for you to make any derivative works, as long as you understand the risks of the data containing errors. Go wild! If you do something cool that you want to share with me, please let me know though! Maybe we can even link to it or include it as part of this site.
+There are no copyrights or any licenses for the data on this site. It is completely in the public domain for you to make any derivative works, as long as you understand the risks of the data containing errors. Go wild! If you do something cool that you want to share with me, please let me know though! Maybe we can even link to it or include it as part of this site.
 
 
 ## Contributing Money
 
-**Don't.** I have had a few people ask me about a tip jar, but I to be honest, I just don't feel like having that conversation with the ethics lawyers to get any approval for that. This is a simple no-frills static site. I'm not even paying for the pro version of Font Awesome. Maybe if I find myself facing hosting costs, I'll change my mind. But in the meantime, please consider donating money instead to a worthy cause near you like a food bank or legal defense fund. We're all in this together, after all.
+**Don't.** I have had a few people ask me about a tip jar, but to be honest... I just don't feel like having that conversation with the ethics lawyers to get the approval to do that. This is a simple no-frills static site. I'm not even paying for the pro version of Font Awesome. Of course, maybe if I find myself facing massive hosting costs, I'll change my mind. But in the meantime, please consider donating money instead to a worthy cause near you like a food bank or legal defense fund. Also, as my many citations show, this site would also not be possible without the intrepid work of journalists at many publications. Get a subscription maybe? Even if you don't feel like supporting a major media property, there has been especially stellar work by The Rolling Stone, Wired and The Handbasket. 
