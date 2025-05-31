@@ -1354,14 +1354,6 @@
     - onboard-education-employee-2
     name: Conor Fennessy
     alias: ED-02
-  - id: internal-hhs-cms-fennessy
-    type: internal
-    agency: CMS
-    from: HHS
-    from_truth: inferred
-    start_date: 2025-02-03
-    start_date_truth: inferred
-    comment: Inferred from first reported access to CALM system
   - id: detail-education-hhs-fennessy
     type: detailed
     from: Education
@@ -1370,6 +1362,14 @@
     start_date: 2025-02-20
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+  - id: internal-hhs-cms-fennessy
+    type: internal
+    agency: CMS
+    from: HHS
+    from_truth: inferred
+    start_date: 2025-03-03
+    start_date_truth: inferred
+    comment: Inferred from first reported access to CALM system
 
 - name: Joshua Fox
   sort_name: Fox, Joshua
@@ -1438,6 +1438,8 @@
     table_note: reported in early Feb but named later
   - id: dod-fulcher
     type: detailed
+    from: DOD
+    table_note: no info, but assuming detailed from VA
     start_date: 2025-03-04
     start_date_truth: reported
     end_date: 2025-04-24
@@ -1521,8 +1523,15 @@
     are no public details about Derek Geissler.
   category: unknown
   positions:
+  - id: gsa-geissler
+    type: appointed
+    start_date: 2025-02-XX
+    start_date_truth: inferred
+    sort_date: 2025-02-01
+    agency: GSA
+    table_note: Assuming early Feb start from appear at DOL, being in Riley Sennott's calendar
   - id: dol-derek-geissler
-    type: unknown
+    type: detailed
     sort_date: 2025-02-13
     start_date: 2025-02-(13)~
     start_date_truth: reported
@@ -1531,6 +1540,7 @@
     source: >-
       https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
     agency: DOL
+    from: GSA
 
 - name: Brady Glantz
   sort_name: Glantz
@@ -2056,6 +2066,8 @@
     agency: DOGE
   - id: detail-doge-epa-killian
     type: detailed
+    from: DOGE
+    table_note: assuming detail from DOGE
     start_date: 2025-02-04
     start_date_truth: reported
     title: Federal Detailee
@@ -2288,8 +2300,10 @@
     alias: SSA-06
   - id: detail-ssa-doj-koval
     type: detailed
+    from: SSA
     start_date: 2025-04-15
     start_date_truth: reported
+    table_note: assuming detail from SSA
     source: https://www.nytimes.com/2025/04/18/us/politics/doge-musk-social-security-justice-department.html
     agency: DOJ
 
@@ -2350,8 +2364,8 @@
   category: enabler
   blurb: >-
     A managing partner at Andreesen Horowitz, Scott Kupor was advanced by a Senate committee as the nomination
-    for the permanent head of the OPM to replace Charles Ezell. However, it still has not come up for
-    a floor vote in the Senate.
+    for the permanent head of the OPM to replace Charles Ezell. However, his nomination still has not
+    come up for a floor vote in the Senate.
   page_slug: "/people/enabler-staff/"
   positions: []
 
@@ -2359,7 +2373,9 @@
   sort_name: Lahera
   slug: nicholas-lahera
   category: unknown
-  blurb: Mentioned in a FOIA request to DOGE from the House Judiciary Committee, but I have no other details.
+  blurb: >-
+    Named as a member of DOGE in a FOIA request to DOGE from the House Judiciary Committee, but I have
+    no other details.
   positions: []
 
 - name: Scott Langmack
@@ -2382,6 +2398,12 @@
   sort_name: Lavingia
   slug: shail-lavingia
   age: 32
+  blurb: >-
+    A tech founder who created the site Gumroad, Sahil Lavingia showed up late to DOGE, with the goal
+    of helping veterans at the VA. Despite displaying a remarkable and frankly infuriating naivete about
+    both DOGE's real mission and how civic technology operated before, his [blog post about his experiences](https://sahillavingia.com/doge)
+    has given us the best view of how DOGE actually operated. Sadly, it's also what got him fired from
+    the "most transparent organization in government"
   background: executive
   category: wrecker
   govt_exit_type: fired

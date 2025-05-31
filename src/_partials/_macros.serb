@@ -308,7 +308,7 @@ end %}
     out = if pos.from_agency_id
       arrow = pos.type == 'internal' ? 'arrows-left-right' : 'arrow-right'
       "#{agency_link(pos.from_agency_id, pos.from_agency.short_name)}#{'?' if pos.from_truth == 'guessed'} <i class=\"fa-solid fa-#{arrow}\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
-    elsif pos.type == 'appointed'
+    elsif pos.type == 'appointed' || pos.type == 'consultant'
       "<i class=\"fa-solid fa-right-to-bracket\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
     elsif pos.type == 'promotion'
       "<i class=\"fa-solid fa-up-long\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"

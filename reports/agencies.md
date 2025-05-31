@@ -21,7 +21,7 @@
   - **Amy Gleason** (2025-02-(24)~)
   - **Jeremy Lewin** (2025-02-03)
   - **Rachel Riley** (2025-02-03)
-  - **Conor Fennessy** (2025-02-03)
+  - **Conor Fennessy** (2025-03-03)
   - **Edward Coristine** (2025-03-05)
   - **Marko Elez** (2025-03-05)
   - **Aram Moghaddassi** (2025-03-05)
@@ -140,7 +140,7 @@
 # Department of Defense
 - slug: defense
 - people:
-  - **Justin Fulcher** (2025-03-04 - 2025-04-24) (detail)
+  - **Justin Fulcher** (2025-03-04 - 2025-04-24) (detailed from DOD)
   - **Justin Fulcher** (2025-04-25) Senior Advisor
 
 # Department of the Interior
@@ -196,7 +196,7 @@
 - people:
   - **Clayton Cromer** (2025-03-XX) (detailed from OPM)
   - **Christopher Stanley** (2025-04-(02)~) Senior Advisor (detailed from OPM)
-  - **Jon Koval** (2025-04-15) (detail)
+  - **Jon Koval** (2025-04-15) (detailed from SSA)
   - **Payton Rehling** (2025-04-15) (detail)
   - **Adam Hoffman** (2025-04-21)
 - systems:
@@ -236,7 +236,7 @@
 - slug: labor
 - people:
   - **Sam Beyda** (2025-02-(13)~)
-  - **Derek Geissler** (2025-02-(13)~)
+  - **Derek Geissler** (2025-02-(13)~) (detailed from GSA)
   - **Cole Killian** (2025-02-(13)~) (detailed from DOGE)
   - **Jordan Wick** (2025-02-(13)~) (detailed from DOGE)
   - **Marko Elez** (2025-02-(14)~)
@@ -303,7 +303,7 @@
 # Environmental Protection Agency
 - slug: epa
 - people:
-  - **Cole Killian** (2025-02-04) Federal Detailee (detail)
+  - **Cole Killian** (2025-02-04) Federal Detailee (detailed from DOGE)
   - **Erica Jehling** (2025-02-12)
   - **Kathryn Armstrong Loving** (2025-02-12) Federal Detailee
 - systems:
@@ -386,17 +386,18 @@
 - people:
   - **Edward Coristine** (2025-01-(20)~)
   - **Ethan Shaotran** (2025-01-20)
-  - **Nicole Hollander** (2025-01-20 - 2025-05-29)
-  - **Jeremy Lewin** (2025-01-20)
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
   - **Justin Fox**
-  - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
+  - **Nicole Hollander** (2025-01-20 - 2025-05-29)
+  - **Jeremy Lewin** (2025-01-20)
   - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
-  - **Kyle Schutt** (2025-02-(18)~)
+  - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
   - **Frank Schuler** (2025-02-(18)~) Senior Advisor
+  - **Kyle Schutt** (2025-02-(18)~)
   - **Nate Cavanaugh** (2025-02-03)
   - **Riley Sennott** (2025-02-12)
+  - **Derek Geissler** (2025-02-XX)
   - **Donald Park** (2025-02-XX)
   - **Alexander Simonpour** (2025-03-XX)
   - **Emily Bryant** (2025-03-XX)

@@ -5600,73 +5600,6 @@
     comment: FIXME Doc 32-1
     file: onboard-education-employee-2.pdf
     url: "/documents/onboard-education-employee-2.pdf"
-- id: internal-hhs-cms-fennessy
-  type: internal
-  agency_id: CMS
-  name: Conor Fennessy
-  doge_alias_id:
-  from_agency_id: HHS
-  from_truth: inferred
-  start_date: '2025-02-03'
-  start_date_truth: inferred
-  start_date_event:
-  start_source:
-  start_source_name:
-  end_date:
-  end_date_truth:
-  end_date_event:
-  end_source:
-  end_source_name:
-  end_type:
-  sort_date: '2025-02-03'
-  nte_date:
-  nte_date_truth:
-  signed_date:
-  description:
-  fuzz:
-  appt_type_code:
-  appt_type:
-  pay_grade:
-  salary:
-  pd_code:
-  sge:
-  excepted:
-  title:
-  title_type:
-  series:
-  supervisory:
-  office:
-  source:
-  reimbursed:
-  reimbursement_amount:
-  comment: Inferred from first reported access to CALM system
-  qualifications:
-  table_note:
-  replaced_by:
-  agency:
-    id: CMS
-    name: Centers for Medicare and Medicaid Services
-    slug: cms
-    page_slug: health
-    short_name: CMS
-    doge_base: true
-    parent_id: HHS
-    obj_type: Agency
-    path: "/agencies/health"
-  from_agency:
-    id: HHS
-    name: Health and Human Services
-    slug: hhs
-    page_slug: health
-    short_name: HHS
-    doge_base: true
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/health"
-  agency_and_parent:
-  - CMS
-  - HHS
-  documents: []
 - id: detail-education-hhs-fennessy
   type: detailed
   agency_id: HHS
@@ -5731,6 +5664,73 @@
     obj_type: Agency
     path: "/agencies/education"
   agency_and_parent:
+  - HHS
+  documents: []
+- id: internal-hhs-cms-fennessy
+  type: internal
+  agency_id: CMS
+  name: Conor Fennessy
+  doge_alias_id:
+  from_agency_id: HHS
+  from_truth: inferred
+  start_date: '2025-03-03'
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-03-03'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  reimbursed:
+  reimbursement_amount:
+  comment: Inferred from first reported access to CALM system
+  qualifications:
+  table_note:
+  replaced_by:
+  agency:
+    id: CMS
+    name: Centers for Medicare and Medicaid Services
+    slug: cms
+    page_slug: health
+    short_name: CMS
+    doge_base: true
+    parent_id: HHS
+    obj_type: Agency
+    path: "/agencies/health"
+  from_agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/health"
+  agency_and_parent:
+  - CMS
   - HHS
   documents: []
 - id: doge-joshua-fox
@@ -6039,7 +6039,7 @@
   agency_id: DOD
   name: Justin Fulcher
   doge_alias_id:
-  from_agency_id:
+  from_agency_id: DOD
   from_truth:
   start_date: '2025-03-04'
   start_date_truth: reported
@@ -6075,9 +6075,19 @@
   reimbursement_amount:
   comment: Assuming this position replace by Senior Advisor role
   qualifications:
-  table_note:
+  table_note: no info, but assuming detailed from VA
   replaced_by: dod-fulcher-advisor
   agency:
+    id: DOD
+    name: Department of Defense
+    slug: defense
+    page_slug: defense
+    short_name: Defense
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/defense"
+  from_agency:
     id: DOD
     name: Department of Defense
     slug: defense
@@ -6269,12 +6279,68 @@
     comment: Files sourced from FOIA request by Jason Leopold
     file: opm-new-hires.png
     url: "/documents/opm-new-hires.png"
-- id: dol-derek-geissler
-  type: unknown
-  agency_id: DOL
+- id: gsa-geissler
+  type: appointed
+  agency_id: GSA
   name: Derek Geissler
   doge_alias_id:
   from_agency_id:
+  from_truth:
+  start_date: 2025-02-XX
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-01'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Assuming early Feb start from appear at DOL, being in Riley Sennott's calendar
+  replaced_by:
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - GSA
+  documents: []
+- id: dol-derek-geissler
+  type: detailed
+  agency_id: DOL
+  name: Derek Geissler
+  doge_alias_id:
+  from_agency_id: GSA
   from_truth:
   start_date: 2025-02-(13)~
   start_date_truth: reported
@@ -6322,6 +6388,16 @@
     parent_id:
     obj_type: Agency
     path: "/agencies/labor"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
   agency_and_parent:
   - DOL
   documents: []
@@ -7943,7 +8019,7 @@
   agency_id: EPA
   name: Cole Killian
   doge_alias_id:
-  from_agency_id:
+  from_agency_id: DOGE
   from_truth:
   start_date: '2025-02-04'
   start_date_truth: reported
@@ -7979,7 +8055,7 @@
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: assuming detail from DOGE
   replaced_by:
   agency:
     id: EPA
@@ -7991,6 +8067,16 @@
     parent_id:
     obj_type: Agency
     path: "/agencies/epa"
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: white-house
+    short_name: DOGE
+    doge_base: true
+    parent_id: EOP
+    obj_type: Agency
+    path: "/agencies/white-house"
   agency_and_parent:
   - EPA
   documents: []
@@ -8950,7 +9036,7 @@
   agency_id: DOJ
   name: Jon Koval
   doge_alias_id:
-  from_agency_id:
+  from_agency_id: SSA
   from_truth:
   start_date: '2025-04-15'
   start_date_truth: reported
@@ -8986,7 +9072,7 @@
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: assuming detail from SSA
   replaced_by:
   agency:
     id: DOJ
@@ -8998,6 +9084,16 @@
     parent_id:
     obj_type: Agency
     path: "/agencies/justice"
+  from_agency:
+    id: SSA
+    name: Social Security Administration
+    slug: ssa
+    page_slug: social-security
+    short_name: SSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/social-security"
   agency_and_parent:
   - DOJ
   documents: []

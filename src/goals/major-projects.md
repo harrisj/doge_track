@@ -8,12 +8,12 @@ FIXME: an overview of DOGE's major projects
 
 ## Anti-personnel Mining
 
-## Centralizing and Seizing Control of Spending
+## Centralizing Control of Spending
+
+## Rampant Deregulation
 
 ## The $5 Million Gold Card Visa
 
 ## An Immigration Panopticon
 
 ## Replacing Bureaucrats with AI
-
-## Creatively Destroying Regulations

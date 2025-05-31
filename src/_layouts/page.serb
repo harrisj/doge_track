@@ -3,7 +3,7 @@ layout: default
 ---
 {% urls = site.data.page_listing.sections.map {|s| s.pages }.flatten %}
 
-{% page_index = urls.find_index {|x| x.url == resource.relative_url }
+{% page_index = urls.find_index {|x| x.url.gsub(/\/$/, '') == resource.relative_url.gsub(/\/$/, '') }
   if page_index
     prev_pg = urls[page_index-1]
     next_pg = urls[page_index+1]
