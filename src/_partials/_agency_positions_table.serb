@@ -5,7 +5,10 @@
    else
    dated_positions = positions
    undated_positions = nil
-   end %}
+   end 
+   
+   grouped_data_positions = dated_positions.group_by{|pos| pos.name || pos.doge_alias_id}.sort_by {|_, positions| positions[0].sort_date }   
+%}
 
 <table class="table table-fixed sm:table-auto table-xs sm:table-sm lg:table-md border-4 mb-0">
   <thead>
@@ -17,7 +20,8 @@
   </tr>
   </thead>
   <tbody class="">
-    {% dated_positions.each do |pos| %}
+    {% grouped_data_positions.each do |_, positions| %}
+    {% positions.each do |pos| %}
       <tr class="font-mono" id="{{ pos.id }}">
         <td class="align-top"><nobr>{{ position_move(pos) }}</nobr>  
         <div class="sm:hidden">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% end %}</div>
@@ -26,6 +30,7 @@
         <td class="align-top">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.doge_alias_id %}{{ alias_link(pos.doge_alias_id) }}{% end %}</td>
         <td class="align-top">{{ position_summary(pos) | md }}</td>
       </tr>
+    {% end %}
     {% end %}
     {% if agency && undated_positions.any? %}
       <tr>

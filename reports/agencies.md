@@ -237,7 +237,7 @@
 - people:
   - **Sam Beyda** (2025-02-(13)~)
   - **Derek Geissler** (2025-02-(13)~)
-  - **Cole Killian** (2025-02-(13)~) (detail)
+  - **Cole Killian** (2025-02-(13)~) (detailed from DOGE)
   - **Jordan Wick** (2025-02-(13)~) (detailed from DOGE)
   - **Marko Elez** (2025-02-(14)~)
   - **Adam Ramada** (2025-02-05) (detailed from DOGE)

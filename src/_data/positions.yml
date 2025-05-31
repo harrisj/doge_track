@@ -7999,7 +7999,7 @@
   agency_id: DOL
   name: Cole Killian
   doge_alias_id:
-  from_agency_id:
+  from_agency_id: DOGE
   from_truth:
   start_date: 2025-02-(13)~
   start_date_truth: reported
@@ -8047,6 +8047,16 @@
     parent_id:
     obj_type: Agency
     path: "/agencies/labor"
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: white-house
+    short_name: DOGE
+    doge_base: true
+    parent_id: EOP
+    obj_type: Agency
+    path: "/agencies/white-house"
   agency_and_parent:
   - DOL
   documents: []
