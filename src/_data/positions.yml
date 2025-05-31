@@ -8278,62 +8278,6 @@
     comment:
     file: onboard-ssa-employee-5.pdf
     url: "/documents/onboard-ssa-employee-5.pdf"
-- id: detail-doge-ssa-killian
-  type: unknown
-  agency_id: SSA
-  name: Cole Killian
-  doge_alias_id:
-  from_agency_id:
-  from_truth:
-  start_date: 2025-02-(20)~
-  start_date_truth: reported
-  start_date_event:
-  start_source:
-  start_source_name:
-  end_date:
-  end_date_truth:
-  end_date_event:
-  end_source:
-  end_source_name:
-  end_type:
-  sort_date: '2025-02-20'
-  nte_date:
-  nte_date_truth:
-  signed_date:
-  description:
-  fuzz:
-  appt_type_code:
-  appt_type:
-  pay_grade:
-  salary:
-  pd_code:
-  sge:
-  excepted:
-  title:
-  title_type:
-  series:
-  supervisory:
-  office:
-  source: https://www.thehandbasket.co/p/leland-dudek-ssa-doge
-  reimbursed:
-  reimbursement_amount:
-  comment: Identified as being at the agency on 2/20; unclear how long before
-  qualifications:
-  table_note: I have been unble to confirm if one of SSA aliases
-  replaced_by:
-  agency:
-    id: SSA
-    name: Social Security Administration
-    slug: ssa
-    page_slug: social-security
-    short_name: SSA
-    doge_base: true
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/social-security"
-  agency_and_parent:
-  - SSA
-  documents: []
 - id: detail-opm-dhs-kliger
   type: detailed
   agency_id: DHS
@@ -9230,7 +9174,7 @@
     file: gov.uscourts.nysd.636609.144.0.pdf
     url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
 - id: appoint-treasury-thomas-krause
-  type: appointed
+  type: promotion
   agency_id: Treasury
   name: Tom Krause
   doge_alias_id:
@@ -9296,7 +9240,7 @@
     file: gov.uscourts.nysd.636609.144.0.pdf
     url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
 - id: hud-langmack
-  type: unknown
+  type: appointed
   agency_id: HUD
   name: Scott Langmack
   doge_alias_id:
@@ -9336,7 +9280,7 @@
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: assuming appointed
   replaced_by:
   agency:
     id: HUD
@@ -9570,7 +9514,7 @@
   reimbursement_amount:
   comment: Inferring based on first reported access to CMS CALM system
   qualifications:
-  table_note:
+  table_note: date inferred from access to CMS CALM system
   replaced_by:
   agency:
     id: CMS
@@ -10137,7 +10081,7 @@
   agency_id: FBI
   name: Tarak Makecha
   doge_alias_id:
-  from_agency_id:
+  from_agency_id: OPM
   from_truth:
   start_date: 2025-03-(30)~
   start_date_truth: guessed
@@ -10187,6 +10131,16 @@
     parent_id: DOJ
     obj_type: Agency
     path: "/agencies/justice"
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
   agency_and_parent:
   - FBI
   - DOJ
@@ -10196,7 +10150,7 @@
   agency_id: FCC
   name: Tarak Makecha
   doge_alias_id:
-  from_agency_id:
+  from_agency_id: OPM
   from_truth:
   start_date: '2025-04-04'
   start_date_truth: reported
@@ -10230,9 +10184,9 @@
   source: https://www.theverge.com/news/644031/doge-federal-communications-commission-directory
   reimbursed:
   reimbursement_amount:
-  comment: Assuming detailed, but not sure from where
+  comment:
   qualifications:
-  table_note:
+  table_note: assuming detail from OPM
   replaced_by:
   agency:
     id: FCC
@@ -10244,6 +10198,16 @@
     parent_id:
     obj_type: Agency
     path: "/agencies/independent"
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
   agency_and_parent:
   - FCC
   documents: []
@@ -10774,7 +10738,7 @@
   - HHS
   documents: []
 - id: detail-hhs-nih-minor
-  type: detailed
+  type: internal
   agency_id: NIH
   name: Clark Minor
   doge_alias_id:
@@ -10814,7 +10778,7 @@
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: date inferred from system access
   replaced_by:
   agency:
     id: NIH

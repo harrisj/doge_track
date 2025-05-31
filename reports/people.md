@@ -419,7 +419,6 @@
         - EAS: EPA Acquisition System: 2025-02-12 - ongoing
     -  **DOL** (2025-02-(13)~ to ??) 
     -  **SSA** (2025-02-18 to NTE 2026-07-04) [as "SSA-05"] 
-    -  **SSA** (2025-02-(20)~ to ??) 
 
 # Gavin Kliger
 - category: wrecker

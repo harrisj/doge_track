@@ -2120,15 +2120,6 @@
     - onboard-ssa-employee-5
     name: Cole Killian
     alias: SSA-05
-  - id: detail-doge-ssa-killian
-    type: unknown
-    sort_date: 2025-02-20
-    start_date: 2025-02-(20)~
-    start_date_truth: reported
-    table_note: I have been unble to confirm if one of SSA aliases
-    comment: Identified as being at the agency on 2/20; unclear how long before
-    source: https://www.thehandbasket.co/p/leland-dudek-ssa-doge
-    agency: SSA
 
 - name: Gavin Kliger
   sort_name: Kliger
@@ -2363,7 +2354,7 @@
     - onboard-treasury-thomas-krause
     - gov.uscourts.nysd.636609.144.0
   - id: appoint-treasury-thomas-krause
-    type: appointed
+    type: promotion
     comment: Changed to a full-time position
     start_date: 2025-02-13
     start_date_truth: verified
@@ -2406,11 +2397,12 @@
   category: wrecker
   positions:
   - id: hud-langmack
-    type: unknown
+    type: appointed
     start_date: 2025-02-10
     title: Senior Advisor
     title_type: advisor
     start_date_truth: reported
+    table_note: assuming appointed
     source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
     agency: HUD
 
@@ -2479,6 +2471,7 @@
     from_truth: inferred
     start_date: 2025-02-03
     start_date_truth: inferred
+    table_note: date inferred from access to CMS CALM system
     comment: Inferring based on first reported access to CMS CALM system
   - id: detail-gsa-cfpb-jeremy-lewin
     type: detailed
@@ -2595,6 +2588,7 @@
     agency: OPM
   - id: fbi-makecha
     type: detailed
+    from: OPM
     title: Senior Advisor
     title_type: advisor
     office: Human Resources
@@ -2607,12 +2601,13 @@
     source: https://theintercept.com/2025/04/18/doge-tesla-employee-justice-department-fbi/
     agency: FBI
   - id: detail-fcc-makecha
+    from: OPM
     type: detailed
     start_date: 2025-04-04
     start_date_truth: reported
     source: https://www.theverge.com/news/644031/doge-federal-communications-commission-directory
     office: Office of the Chairman
-    comment: Assuming detailed, but not sure from where
+    table_note: assuming detail from OPM
     agency: FCC
 
 - name: Ted Malaska
@@ -2761,12 +2756,13 @@
     start_date_truth: reported
     source: https://orangeslices.ai/hhs-it-office-recruits-new-chief-from-palantir/
   - id: detail-hhs-nih-minor
-    type: detailed
+    type: internal
     agency: NIH
     from: HHS
     from_truth: inferred
     start_date: 2025-02-24
     start_date_truth: reported
+    table_note: date inferred from system access
     office: NIH Business System
     source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
 
