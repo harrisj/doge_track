@@ -2,6 +2,8 @@
 layout: page
 title: Every Staffing Move
 ---
+{%@ "title", title: "Every DOGE Move" %}
+
 {% import "macros" %}
 
 {% positions = site.data.positions.sort_by {|p| p.sort_date } %}

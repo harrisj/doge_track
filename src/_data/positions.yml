@@ -1805,8 +1805,8 @@
   agency_id: IMLS
   name: Nate Cavanaugh
   doge_alias_id:
-  from_agency_id:
-  from_truth:
+  from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-03-31'
   start_date_truth: reported
   start_date_event:
@@ -1853,6 +1853,16 @@
     parent_id:
     obj_type: Agency
     path: "/agencies/independent"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
   agency_and_parent:
   - IMLS
   documents: []

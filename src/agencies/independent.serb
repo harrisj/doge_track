@@ -44,7 +44,7 @@ In another executive order ["Continuing the Reduction of the Federal Bureaucracy
 
 ### Targeting the Arts
 
-{% events = site.data.events.select {|e| (e.agency_ids & %w[NEH CPB ACHP ]).any? } %}
+{% events = site.data.events.select {|e| (e.agency_ids & %w[NEH CPB ACHP NationalGallery]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### Finance and Regulations
@@ -72,16 +72,18 @@ In another executive order ["Continuing the Reduction of the Federal Bureaucracy
 {% events = site.data.events.select {|e| (e.agency_ids & %w[MSPB]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
-### Everboydy Else
+### Everybody Else
 
-{% events = site.data.events.select {|e| (e.agency_ids & %w[USIP USADF IAF FMCS USAGM IMLS USICH CDFIF MBDA NEH CPB ACHP FDIC SEC EXIM DFC FTC CPSC NTSB NSF Peace AmeriCorps MSPB LOC GAO]).none? } %}
+{% independent_agency_ids = site.data.agencies.select {|a| a.page_slug == 'independent' }.map(&:id) %}
+{% remaining_ids = independent_agency_ids - %w[USIP USADF IAF FMCS USAGM IMLS USICH CDFIF MBDA NEH CPB ACHP FDIC SEC EXIM DFC FTC CPSC NTSB NSF Peace AmeriCorps MSPB LOC GAO NationalGallery]%}
+{% events = site.data.events.select {|e| (e.agency_ids & remaining_ids).any? } %}
 {% if events.any? %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 {% end %}
 
 ## DEBUGGING BELOW
 
-{%# {% independent_agencies = site.data.agencies.select {|a| a.page_slug == 'independent' }.map(&:id) %}
+{% independent_agencies = site.data.agencies.select {|a| a.page_slug == 'independent' }.map(&:id) %}
 {% events = site.data.events.select {|e| e.agency_ids.any? {|a_id| independent_agencies.include?(a_id) } }.sort_by(&:sort_date) %}
 {%@ 'compact_event_timeline', events: events, agency_col: true %}
 {% end %} %}

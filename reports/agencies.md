@@ -490,7 +490,7 @@
 - slug: imls
 - people:
   - **Keith Sonderling** (2025-03-20) Acting Director
-  - **Nate Cavanaugh** (2025-03-31) (detail)
+  - **Nate Cavanaugh** (2025-03-31) (detailed from GSA)
   - **Gavin Hamrick** (2025-03-31) (detail)
 
 # Inter-American Foundation
