@@ -367,7 +367,8 @@
 # Greg Hogan
 - category: enabler
 - positions:
-    -  **OPM** (2025-01-20 to 2025-02-11) **Senior Advisor to the Director for Technology and Delivery** $195,200
+    -  **OPM** (2025-01-20 to 2025-01-20) **Senior Advisor to the Director for Technology and Delivery** $195,200
+    -  **OPM** (2025-01-20 to 2025-02-11) **Acting Chief Information OFficer** $195,200
     -  **OPM** (2025-02-11 to ??) **Chief Information OFficer** $195,200
 
 # Nicole Hollander

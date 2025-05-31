@@ -327,17 +327,17 @@ end %}
 {% macro 'position_end_type' do |pos| 
     case pos.end_type
     when 'detail_ended'
-      'end of detail'
+      'Detail ended'
     when 'replaced'
       if pos.replaced_by
-        "to [new role](##{pos.replaced_by})"
+        "[Role changed](##{pos.replaced_by})"
       else
-        'to new role'
+        'Role changed'
       end
     when 'unknown'
-      'why unknown'
+      'Unknown ended'
     when nil
-      'no info'
+      'Ended'
     else
       pos.end_type.titleize
    end
@@ -352,6 +352,8 @@ end %}
     type_str = case pos.type
       when 'other'
         nil
+      when 'detailed'
+        'detail'
       when 'promotion'
         'promoted'
       when 'demotion'
@@ -410,7 +412,7 @@ end %}
       if pos.person && !pos.person.govt_exit_date.nil?
         end_date_str = "**Left Govt** (#{position_end_type(pos)}) #{EdtfFormat.new(pos.person.govt_exit_date, :compact)}"
       else
-        end_date_str = "Left (#{position_end_type(pos)}) #{EdtfFormat.new(pos.exit_date, :compact)}"
+        end_date_str = "(#{position_end_type(pos)}) #{EdtfFormat.new(pos.exit_date, :compact)}"
       end
       out_str += "<br/>#{end_date_str}"
     end

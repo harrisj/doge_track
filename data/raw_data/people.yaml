@@ -1154,6 +1154,7 @@
     from: DOL
     start_date: 2025-03-05
     start_date_truth: verified
+    table_note: date/source in court filing
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: No documentation, reported in court filing
   - id: internal-hhs-cms-marko-elez
@@ -1163,6 +1164,7 @@
     from_truth: inferred
     start_date: 2025-03-05
     start_date_truth: verified
+    table_note: granted access to CMS system on date
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: Reported access to system same day as start of detail to HHS
 
@@ -1174,7 +1176,7 @@
   page_slug: "/people/enabler-staff/"
   positions:
   - id: opm-ezell
-    type: appointed
+    type: promotion
     start_date: 2025-01-20
     start_date_truth: verified
     title: Acting Director
@@ -1848,10 +1850,10 @@
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
-    end_date: 2025-02-11
+    end_date: 2025-01-20
     end_date_truth: verified
     end_type: replaced
-    replaced_by: greg-hogan-opm-2
+    replaced_by: opm-hogan-cio
     description: SES Noncareer Appt
     appt_type_code: 55
     appt_type: SES Noncareer
@@ -1868,7 +1870,24 @@
     documents:
     - opm-foia-doge-positions
     - onboard-opm-greg-hogan
-  - id: greg-hogan-opm-2
+  - id: opm-hogan-cio
+    type: promotion
+    start_date: 2025-01-20
+    start_date_truth: reported
+    end_date: 2025-02-11
+    end_date_truth: verified
+    table_note: >-
+      testimony says Hogan was made CIO on 1/20, but official docs say 2/11; assuming was acting CIO between,
+      and paid same salary
+    title: Acting Chief Information OFficer
+    title_type: cio
+    pay_grade: ES-00
+    salary: "$195,200"
+    series: '0301'
+    supervisory: true
+    agency: OPM
+    replaced_by: opm-hogan-cio-official
+  - id: opm-hogan-cio-official
     type: promotion
     name: Greg Hogan
     agency: OPM

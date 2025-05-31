@@ -599,21 +599,22 @@
   - **Brian Bjelde** (2025-01-20) Expert
   - **OPM-03 (Akash Bobba)** (2025-01-20) Expert
   - **Clayton Cromer** (2025-01-20) Deputy General Counsel
-  - **Noah Peters** (2025-01-20) Senior Advisor
   - **Joanna Wischer** (2025-01-20) Senior Advisor to the Director
-  - **Amanda Scales** (2025-01-20) Chief of Staff
-  - **Greg Hogan** (2025-01-20 - 2025-02-11) Senior Advisor to the Director for Technology and Delivery
-  - **Gavin Kliger** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
   - **Charles Ezell** (2025-01-20) Acting Director
+  - **Amanda Scales** (2025-01-20) Chief of Staff
+  - **Noah Peters** (2025-01-20) Senior Advisor
+  - **Gavin Kliger** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
+  - **Greg Hogan** (2025-01-20 - 2025-02-11) Acting Chief Information OFficer
+  - **Greg Hogan** (2025-01-20 - 2025-01-20) Senior Advisor to the Director for Technology and Delivery
   - **Jacob Altik** (2025-01-24) Senior Advisor to the Director
   - **OPM-06 (Nikhil Rajpal)** (2025-01-24) Expert
   - **Justin Monroe** (2025-01-28) Expert
   - **Christopher Stanley** (2025-01-28) Expert
   - **Chris Young** (2025-01-30) Expert
   - **Austin Raynor** (2025-01-30) Senior Advisor
+  - **Christina Hanna** (2025-02-03) Expert
   - **Bryanne-Michelle Mlodzianowski** (2025-02-03) Expert
   - **Stephen Duarte** (2025-02-03) Expert
-  - **Christina Hanna** (2025-02-03) Expert
   - **Greg Hogan** (2025-02-11) Chief Information OFficer
   - **Joe Gebbia** (2025-02-18) Expert
   - **Gavin Kliger** (2025-02-18) Senior Advisor to the Director for Information Technology
