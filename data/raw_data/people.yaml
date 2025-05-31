@@ -580,11 +580,13 @@
     type: appointed
     start_date: 2025-03-25
     start_date_truth: verified
+    end_date: 2025-05-19
+    end_date_truth: verified
     title: President
     title_type: director
     table_note: >-
       After the rest of board was ousted, Nate was named President of the agency by Marco Rubio and Pete
-      Hegseth
+      Hegseth. Voided by court order on 2025-05-19
     comment: >-
       Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco
       Rubio and Pete Hegseth, and he is authorized to transfer all assets to the GSA
@@ -976,6 +978,7 @@
     start_date_truth: inferred
     end_date: 2025-05-29
     end_date_truth: reported
+    end_type: resigned
     source: https://www.wsj.com/us-news/steve-davis-leaves-doge-411a2d1b
     table_note: assuming he started on 2025-01-20
 
@@ -1289,6 +1292,7 @@
     end_date: 2025-03-04
     end_date_truth: verified
     end_type: detail_ended
+    title_type: advisor
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: Details from court filing
   - id: detail-gsa-state-farritor
@@ -2182,6 +2186,7 @@
     end_date: 2025-05-08
     end_date_truth: verified
     end_type: fired
+    title_type: advisor
     source: >-
       https://news.bloomberglaw.com/banking-law/doge-employee-leaves-cfpb-after-leading-trumps-mass-firing-plan
   - id: gavin-kliger-opm-2
@@ -2437,6 +2442,7 @@
     agency: CFPB
     from: GSA
     from_truth: verified
+    title_type: advisor
     start_date: 2025-02-07
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: detail-gsa-hhs-lewin
@@ -2672,16 +2678,24 @@
   slug: katie-miller
   age: 33
   background: political
+  govt_exit_date: 2025-05-29
+  govt_exit_truth: verified
+  govt_exit_type: resigned
   category: booster
   blurb: >-
     The wife of Stephen Miller, Katie is in some sort of communications role for DOGE, but it's unclear
-    what her day-to-day responsibilities for his entail.
+    what her day-to-day responsibilities for his entail. Sharing the virulent anti-immigrant politics
+    of her husband, she likely has been a conduit for coordinating DOGE's anti-immigration focus. Recently,
+    she notably left DOGE along Elon Musk to go work for him instead.
   positions:
   - id: doge-miller
     type: appointed
     agency: DOGE
     start_date: 2025-01-20
     start_date_truth: inferred
+    end_date: 2025-05-29
+    end_date_truth: verified
+    end_type: resigned
     table_note: no public details on when she started with DOGE, but date inferred
 
 - name: Clark Minor
@@ -3119,6 +3133,7 @@
     end_date: 2025-03-21
     end_date_truth: verified
     end_type: detail_ended
+    title_type: advisor
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: Details from court filing
   - id: detail-opm-ssa-8
@@ -4123,6 +4138,7 @@
     end_date: 2025-03-04
     end_date_truth: verified
     end_type: replaced
+    title_type: advisor
     replaced_by: cfpb-jordan-wick
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     table_note: detail ended because he became a full-time CFPB employee on 3/5

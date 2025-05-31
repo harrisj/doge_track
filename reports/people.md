@@ -96,7 +96,7 @@
     -  **USIP** (2025-03-04 to 2025-03-24) 
     -  **NEH** (2025-03-(13)~ to ??) 
         - Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
-    -  **USIP** (2025-03-25 to ??) President
+    -  **USIP** (2025-03-25 to 2025-05-19) President
     -  **IMLS** (2025-03-31 to ??) 
     -  **NLRB** (2025-04-16 to ??) 
     -  **USDFC** (2025-04-28 to ??) 
@@ -548,7 +548,7 @@
 # Katie Miller
 - category: booster
 - positions:
-    -  **DOGE** (2025-01-20 to ??) 
+    -  **DOGE** (2025-01-20 to 2025-05-29) 
 
 # Clark Minor
 - category: enabler

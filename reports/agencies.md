@@ -163,7 +163,7 @@
   - **Amy Gleason** (2024-12-30 - 2024-02-18)
   - **Jordan Wick** (2025-01-(20)~)
   - **James Burnham** (2025-01-(23)~ - 2025-05-29) General Counsel
-  - **Katie Miller** (2025-01-20)
+  - **Katie Miller** (2025-01-20 - 2025-05-29)
   - **Elon Musk** (2025-01-20 - 2025-05-28)
   - **Steve Davis** (2025-01-20 - 2025-05-29)
   - **Cole Killian** (2025-01-20)
@@ -748,7 +748,7 @@
 - people:
   - **Nate Cavanaugh** (2025-03-04 - 2025-03-24) (detailed from GSA)
   - **Kenneth Jackson** (2025-03-17) Acting President
-  - **Nate Cavanaugh** (2025-03-25) President
+  - **Nate Cavanaugh** (2025-03-25 - 2025-05-19) President
 
 # US International Development Finance Corporation
 - slug: usidfc

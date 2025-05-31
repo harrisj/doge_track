@@ -337,7 +337,7 @@ end %}
     when 'unknown'
       'why unknown'
     when nil
-      'why unknown'
+      'no info'
     else
       pos.end_type.titleize
    end
