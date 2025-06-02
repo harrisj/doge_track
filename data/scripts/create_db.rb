@@ -172,8 +172,14 @@ DB.create_table! :system_roles do
   string :date_req_truth
   string :date_granted
   string :date_grant_truth
+
   string :ao_name
   string :ao_type
+  string :ao_title
+  string :ao_office
+  boolean :ao_doge
+  string :ao_truth
+
   string :bypassed
   string :date_last_used
   string :date_used_truth
@@ -185,6 +191,7 @@ DB.create_table! :system_roles do
   boolean :never_accessed, null: false, default: false
   string :source
   string :comment
+  string :table_note
 end
 
 DB.create_table! :doge_aliases_events do

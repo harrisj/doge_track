@@ -11,7 +11,7 @@
   <tbody class="">
     {% positions.each do |pos| %}
     {% summary = position_summary(pos) %}
-    <tr class="font-mono" id="{{ pos.id }}">
+    <tr class="font-sans" id="{{ pos.id }}">
       <td class="align-top"><div class="sm:inline-block sm:text-nowrap">{{ position_move(pos) }}</div>
       <div class="sm:hidden">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}</div></td>
       <td class="align-top hidden sm:table-cell">{% if pos.start_date || pos.end_date %}<span class="md:text-nowrap">{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}-{{ render EdtfFormat.new(pos.end_date, :compact) }}</span>{% end %}</td>

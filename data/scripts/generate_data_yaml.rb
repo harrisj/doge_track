@@ -198,12 +198,27 @@ end
 
 def generate_systems_yaml
   out_file = File.join(DATA_DIR, 'systems.yml')
-  out = {}
 
-  GovtSystem.each do |s|
-    key = s.id
-    out[key] = s.to_hash
-    out[key]['roles'] = s.system_roles.map(&:to_hash)
+  out = GovtSystem.map do |s|
+    sys_out = s.to_hash
+    sys_out['all_agency_ids'] = ([s.agency_id] + s.system_roles.map(&:agency_id)).compact.uniq
+    sys_out['all_names'] = s.system_roles.map(&:name)
+    sys_out['access_ids'] = s.system_roles.map(&:id)
+    sys_out
+  end
+
+  File.open(out_file, 'w') do |file|
+    out_yaml = YAML.dump(out, line_width: 150, stringify_names: true, header: false)
+    file.write(out_yaml)
+  end
+end
+
+def generate_roles_yaml
+  out_file = File.join(DATA_DIR, 'system_roles.yml')
+
+  out = SystemRole.map do |s|
+    sys_out = s.to_hash
+    sys_out
   end
 
   File.open(out_file, 'w') do |file|
@@ -231,5 +246,6 @@ if __FILE__ == $PROGRAM_NAME
   generate_positions_yaml
   generate_events_yaml
   generate_systems_yaml
+  generate_roles_yaml
   generate_questions_yaml
 end

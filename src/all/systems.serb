@@ -1,0 +1,58 @@
+---
+title: All the Systems
+layout: page
+---
+{%@ 'title', title: 'All Systems' %}
+
+<h2 class="h2" id="obligations">Contracting and Grants</h2>
+
+{% systems = site.data.systems.select {|s| s.category == 'obligations'} %}
+{% systems.each do |govt_system| %}
+  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% next unless roles.any? %}
+  {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
+{% end %}
+
+<hr/>
+
+<h2 class="h2" id="payments">Payment Processing</h2>
+
+{% systems = site.data.systems.select {|s| s.category == 'payments'} %}
+{% systems.each do |govt_system| %}
+  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% next unless roles.any? %}
+  {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
+{% end %}
+
+<hr/>
+
+<h2 class="h2" id="personnel">Federal Personnel</h2>
+
+{% systems = site.data.systems.select {|s| s.category == 'personnel'} %}
+{% systems.each do |govt_system| %}
+  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% next unless roles.any? %}
+  {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
+{% end %}
+
+<hr/>
+
+<h2 class="h2" id="security">Security</h2>
+
+{% systems = site.data.systems.select {|s| s.category == 'security'} %}
+{% systems.each do |govt_system| %}
+  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% next unless roles.any? %}
+  {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
+{% end %}
+
+<hr/>
+
+<h2 class="h2" id="communications">Communications</h2>
+
+{% systems = site.data.systems.select {|s| s.category == 'communications'} %}
+{% systems.each do |govt_system| %}
+  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% next unless roles.any? %}
+  {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
+{% end %}

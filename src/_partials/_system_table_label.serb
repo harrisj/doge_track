@@ -1,0 +1,1 @@
+<a href="/all/systems#{{ govt_system.id }}">{% if govt_system.acronym %}<abbr title="{{ govt_system.name }}">{{ govt_system.acronym }}</abbr>{% else %}{{ govt_system.name }}{% end %}</a>

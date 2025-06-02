@@ -74,7 +74,7 @@ end %}
 
       if person && person.path && person.path != 'none'
         display ||= person.name
-        "<a class=\"link-hover sm:whitespace-nowrap\" href=\"#{person_url(person)}\">#{display}</a>".html_safe
+        "<a class=\"link-hover\" href=\"#{person_url(person)}\">#{display}</a>".html_safe
       else
         display || p_id
       end
@@ -342,6 +342,38 @@ end %}
       pos.end_type.titleize
    end
   end
+%}
+
+{% macro 'system_access_type' do |role| 
+    case role.type
+    when 'admin'
+      '**admin**'
+    when 'read_write'
+      '**read/write**'
+    when 'source-code'
+      'source code'
+    else
+      role.type
+    end    
+  end
+%}
+
+{% macro 'ao_type_display' do |role| 
+    case role.ao_type
+      when 'director'
+        'Agency Director'
+      when 'deputy'
+        'Deputy Director'
+      when 'cio'
+        'CIO'
+      when 'cto'
+        'CTO'
+      when 'isso'
+        'ISSO'
+      else
+        'Other'
+      end
+   end
 %}
 
 {% macro 'position_summary' do |pos|

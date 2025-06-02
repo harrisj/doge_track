@@ -1,0 +1,32 @@
+<h3 class="prose prose-lg h3" id="{{ govt_system.id }}">{{ govt_system.acronym || govt_system.name }}</h3>
+
+<table class="table table-fixed sm:table-auto table-xs sm:table-sm lg:table-md border-4">
+  <thead>
+  <tr class="">
+    <th class="w-3/12 sm:w-2/12 text-xs">Person</th>
+    <th class="text-left hidden sm:table-cell text-xs sm:w-1/12">Dates</th>
+    <th class="w-9/12 text-left text-xs max-w-auto sm:min-w-auto">Info</th>
+  </tr>
+  </thead>
+  <tbody class="">
+    {% roles.each do |role| %}
+    <tr class="font-sans" id="{{ role.id }}">
+      <td class="align-top">{% if role.name %}{{ person_link(role.name) }}{% elsif role.doge_alias_id %}{{ alias_link(role.doge_alias_id) }}{% end %}
+      {% if govt_system.id == 'saas' || govt_system.id == 'shared' %} [{{ agency_link(role.agency_id) }}]{% end %}</div>
+      <div class="sm:hidden">{%@ 'system_access_type', role: role %}</div>
+      <div class="sm:hidden">{{ render EdtfFormat.new(role.date_granted, :compact) }}-{{ render EdtfFormat.new(role.date_revoked, :compact) }}</div></td>
+      <td class="align-top hidden sm:table-cell text-wrap-pre">
+         <div>{%@ 'system_access_type', role: role %}</div>
+         <div>{{ render EdtfFormat.new(role.date_granted, :compact) }}-{{ render EdtfFormat.new(role.date_revoked, :compact) }}</div>
+      </td>
+      <td class="align-top">
+      {% if role.last_accessed %} (last access {{ render EdtfFormat.new(role.last_accessed, :compact) }}){% end %}
+      {% if role.never_accessed %} (never accessed){% end %}
+      {% if role.ao_type %} granted by {{ ao_type_display(role) }}{% end %}
+      {% if role.ao_name %}{{ role.ao_name }}{% end %}{% if role.ao_title %}, {{ role.ao_title}}{% end %}{% if role.ao_office %}, {{ role.ao_office }}{% end %}
+      {% if role.ao_doge && role.ao_name %} {{ person_link(role.ao_name) }} (also in DOGE){% end %}
+      </td>
+    </tr>
+    {% end %}
+  </tbody>
+</table>

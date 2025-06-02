@@ -23,6 +23,14 @@ module Builders
       site.data.positions.find { |p| p.id == pos_id } || raise("Couldn't find position #{pos_id}")
     end
 
+    def lookup_system(sys_id)
+      site.data.systems.find { |s| s.id == sys_id } || raise("Couldn't find system #{sys_id}")
+    end
+
+    def lookup_system_role(role_id)
+      site.data.system_roles.find { |s| s.id == role_id } || raise("Couldn't find system role #{role_id}")
+    end
+
     def hydrate_agencies(site)
       site.data.agencies.each do |ag|
         ag.positions = ag.position_ids.map { |p_id| lookup_position(p_id) } || []
@@ -68,7 +76,23 @@ module Builders
       site.data.people.each do |person|
         person.positions = person.position_ids.map { |p| lookup_position(p) } || []
         person.events = person.event_ids.map { |e| lookup_event(e) } || []
+        person.system_roles = person.system_access.map do |sa_id|
+          role = lookup_system_role(sa_id)
+          role.system = lookup_system(role.govt_system_id)
+          role
+        end
         person.questions = []
+      end
+    end
+
+    def hydrate_system_roles(site)
+      site.data.system_roles.each do |role|
+        role.agency = lookup_agency(role.agency_id) unless role.agency_id.blank?
+        role.person = lookup_person(role.name) unless role.name.blank?
+        role.alias = lookup_alias(role.doge_alias_id) unless role.doge_alias_id.blank?
+        role.system = lookup_system(role.govt_system_id)
+
+        role.agency = lookup_agency(role.system.agency_id) if role.agency_id.blank? && !role.system.agency_id.blank?
       end
     end
 
@@ -112,6 +136,7 @@ module Builders
         hydrate_positions(site)
         hydrate_people(site)
         hydrate_agencies(site)
+        hydrate_system_roles(site)
         hydrate_questions(site)
       end
     end

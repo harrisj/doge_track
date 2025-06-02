@@ -22,7 +22,7 @@
   <tbody class="">
     {% grouped_data_positions.each do |_, positions| %}
     {% positions.each do |pos| %}
-      <tr class="font-mono" id="{{ pos.id }}">
+      <tr class="font-sans" id="{{ pos.id }}">
         <td class="align-top"><nobr>{{ position_move(pos) }}</nobr>  
         <div class="sm:hidden">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% end %}</div>
         </td>
@@ -39,7 +39,7 @@
       {% to_agency, from_agency = undated_positions.partition {|pos| pos.agency_id == agency.id } %}
       {% grouped_undated = to_agency.group_by {|pos| [pos.agency_id, pos.type, pos.from_agency_id].compact } %}
       {% grouped_undated.sort_by {|grp, _| grp[2]}.each do |grp, positions| %}
-        <tr class="font-mono">
+        <tr class="font-sans">
         <td class="align-top hidden sm:table-cell"/>
         <td class="align-top min-width-[104px] "><nobr>{{ position_move(positions[0]) }}</nobr></td>
         <td colspan="2" class="align-top">{{ positions.map(&:person) | people_links }}</td>
@@ -47,7 +47,7 @@
       {% end %}
       {% grouped_undated = from_agency.group_by {|pos| [pos.agency_id, pos.type, pos.from_agency_id].compact } %}
       {% grouped_undated.sort_by {|grp, _| grp[0]}.each do |grp, positions| %}
-        <tr class="font-mono">
+        <tr class="font-sans">
         <td class="align-top hidden sm:table-cell"/>
         <td class="align-top min-width-[104px] "><nobr>{{ position_move(positions[0]) }}</nobr></td>
         <td colspan="2" class="align-top">{{ positions.map(&:person) | people_links }}</td>

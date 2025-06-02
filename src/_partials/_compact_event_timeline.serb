@@ -25,7 +25,7 @@ num_cols +=1 if agency_col %}
       <td class="bg-base-200 font-bold text-center" colspan="100%">{{ parsed_date.strftime("%B %Y") }}</td>
     </tr>
     {% end %}
-    <tr class="font-mono" id="{{ event.id }}">
+    <tr class="font-sans" id="{{ event.id }}">
       {% if agency_col %}<td class="align-top hidden sm:table-cell">{{ event.agencies | agency_links }}</td>{% end %}
       <td class="align-top">
        {% if always_show_date || parsed_date.edtf != prior_row_date.edtf %}
@@ -37,7 +37,7 @@ num_cols +=1 if agency_col %}
       {% end %}
       </td>
       <td class="align-top">
-        <div class="font-mono">
+        <div class="font-sans">
         {% if icon_col %}<span><i class="fa {{ event_icon(event) }}"></i> </span>{% end %}
         {% if icon_col || event.type == 'interagency' %}{{ event_title(event) }}: {% end %}
         {{ event.linkified_text | raw }}

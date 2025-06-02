@@ -14,8 +14,14 @@
 {%@ 'agency_positions_table', positions: agency.positions, agency: agency %}
 {% end %}
 
-{% agency_events = site.data.events.find_all {|e| e.agencies_parents.include? agency.id } %}
+{% agency_roles = site.data.system_roles.select {|sr| sr.agency && (sr.agency.id == agency.id || sr.agency.parent_id == agency.id) } || [] %}
+{% if agency_roles.any? %}
+<h2 class="mt-4 mb-0 text-lg sm:text-xl md:text-2xl">Systems</h2>
 
+{%@ 'agency_system_access_table', roles: agency_roles, agency: agency %}
+{% end %}
+
+{% agency_events = site.data.events.find_all {|e| e.agencies_parents.include? agency.id } %}
 {% if agency_events.any? %}
 <h2 class="mt-0 mb-0 text-lg sm:text-xl md:text-2xl">Events</h2>
 

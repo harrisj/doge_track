@@ -7,7 +7,7 @@
   type: internal
   category: obligations
   comment: I can't find any public data on this system
-  description: A relatively new (~2022) system at the CDC for procurement tracking
+  description: A relatively new (~2022) system for tracking procurement at the CDC
   agency: CDC
   access:
   - id: apex-access
@@ -16,6 +16,7 @@
     date_granted: 2025-02-04
     date_grant_truth: verified
     ao_type: cio
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
 
 - name: Acquistions and Grants Exchange
@@ -29,11 +30,43 @@
   pia: https://www.hhs.gov/sites/default/files/cms-acquisition-and-grants-exchange.pdf
   agency: CMS
 
+- name: Active Directory
+  id: microsoft-ad
+  type: saas
+  category: security
+  description: A system for controlling access to other systems within an agency
+  access:
+  - id: ad-cfpb-kliger
+    name: Gavin Kliger
+    agency: CFPB
+    type: unknown
+    never_accessed: true
+    date_granted: 2025-02-07
+    date_grant_truth: verified
+    date_revoked: 2025-05-08
+    date_revoked_truth: inferred
+    ao_name: Chris Chilbert
+    ao_type: cio
+    ao_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+  - id: ad-cfpb-farritor
+    name: Luke Farritor
+    agency: CFPB
+    type: unknown
+    date_granted: 2025-02-07
+    date_grant_truth: verified
+    date_revoked: 2025-03-04
+    date_revoked_truth: verified
+    ao_name: Chris Chilbert
+    ao_type: cio
+    ao_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+
 - name: Agency Website
   id: website
   type: saas
   category: communications
-  description: I'm just going to use this category as a way to track DOGE access to various agency websites
+  description: This is a stand-in for whatever website platform an agency is using
   access:
   - id: doge-cfpb-website
     type: read-write
@@ -46,6 +79,9 @@
     date_revoked_truth: inferred
     ao_name: Luke Farritor
     ao_type: other
+    ao_doge: true
+    ao_truth: verified
+    table_note: admin Entra access used to grant website access
 
 - name: Anti-Fraud Enterprise Solution
   type: internal
@@ -64,7 +100,9 @@
   id: dhs-ident
   acronym: IDENT
   category: security
-  description: A system storing hundreds of millions of biometric identity points
+  description: >-
+    A system storing hundreds of millions of biometric identity points, the largest such repository in
+    the world.
   link: https://www.dhs.gov/obim
   comment: >-
     can retrieve data for an individual tied to a Department of State visa application, a U.S. Customs
@@ -78,7 +116,8 @@
   acronym: ASAP
   category: payments
   description: >-
-    A payment system that allows recipients to draw down funds from an established account for that recipient.
+    A payment system that allows recipients to draw down funds from an established bank account for that
+    recipient.
   agency: Treasury
   access:
   - id: asap-src-elez
@@ -95,7 +134,8 @@
   acronym: BIIS
   id: biis
   agency: HHS
-  description: FIXME
+  category: obligations
+  description: Used to track expenditures at HHS
   comment: Not sure what this is
   access:
   - id: biis-riley
@@ -104,6 +144,7 @@
     date_granted: 2025-02-06
     date_grant_truth: verified
     ao_type: cio
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
 - name: CMS Acquisition Lifecycle Management system
@@ -118,6 +159,7 @@
     type: read
     name: Luke Farritor
     ao_type: cio
+    ao_truth: verified
     date_granted: 2025-02-03
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
@@ -125,6 +167,7 @@
     type: read
     name: Rachel Riley
     ao_type: cio
+    ao_truth: verified
     date_granted: 2025-02-03
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
@@ -136,12 +179,14 @@
     date_grant_truth: verified
     date_revoked: 2025-04-18
     date_revoked_truth: verified
+    table_note: revoked earlier
     comment: Date revoked is likely earlier, not given in court filing
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: calm-lewin
     type: read
     name: Jeremy Lewin
     ao_type: cio
+    ao_truth: verified
     date_granted: 2025-02-03
     date_grant_truth: verified
     date_revoked: 2025-04-18
@@ -152,6 +197,7 @@
     type: read
     name: Edward Coristine
     ao_type: cio
+    ao_truth: verified
     date_granted: 2025-03-05
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
@@ -159,6 +205,7 @@
     type: read
     name: Marko Elez
     ao_type: cio
+    ao_truth: verified
     date_granted: 2025-03-05
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
@@ -166,6 +213,7 @@
     type: read
     name: Aram Moghaddassi
     ao_type: cio
+    ao_truth: verified
     date_granted: 2025-03-05
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
@@ -173,6 +221,7 @@
     type: read
     name: Amy Gleason
     ao_type: cio
+    ao_truth: verified
     date_granted: 2025-02-24
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
@@ -195,10 +244,7 @@
   population: >-
     Immigrants in the US who use Alien Numbers, or A-Numbers. Can include undocumented and documented
     immigrants
-  description: >-
-    The CIS contains information about people who use Alien Numbers, or A-Numbers. These can include people
-    who don't have legal authorization to be in the country or who have interacted with Immigration and
-    Customs Enforcement, the person said.
+  description: The CIS contains information about immigrants who use Alien Numbers, or A-Numbers.
   agency: USCIS
   access:
   - id: uscis-cis-mohgaddassi
@@ -207,6 +253,7 @@
     source: https://fedscoop.com/doge-granted-access-to-naturalization-immigration-it-systems/
     ao_name: Antoine McCord
     ao_type: cio
+    ao_doge: true
     date_granted: 2025-03-17
     date_grant_truth: reported
   - id: uscis-cis-rehling
@@ -215,6 +262,7 @@
     source: https://fedscoop.com/doge-granted-access-to-naturalization-immigration-it-systems/
     ao_name: Antoine McCord
     ao_type: cio
+    ao_doge: true
     date_granted: 2025-03-25
     date_grant_truth: reported
 
@@ -235,7 +283,8 @@
 - name: Concur
   id: concur
   type: ssp
-  description: Shared service for booking travel for government employees
+  category: personnel
+  description: Shared service for booking government travel
   access:
   - id: concur-cfpb-wick
     agency: CFPB
@@ -247,13 +296,17 @@
     date_revoked_truth: verified
     never_accessed: true
     ao_type: deputy
-    ao_name: Regina Braham of the Office of Finance and Procurement
+    ao_name: Regina Braham
+    ao_office: Office of Finance and Procurement
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
 - name: Data Insight
   id: data-insight
-  type: saas
-  description: Seems liek a SaaS. FIXME
+  type: internal
+  agency: CFPB
+  category: personnel
+  description: Provides information on CFPB reporting structure
   access:
   - id: data-insight-cfpb-wick
     type: read
@@ -263,7 +316,8 @@
     date_grant_truth: verified
     date_revoked: 2025-03-28
     date_revoked_truth: verified
-    ao_name: Nikki L. DiPalma of the Office of Human Capital
+    ao_name: Nikki L. DiPalma
+    ao_office: Office of Human Capital
     ao_type: deputy
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
@@ -282,26 +336,33 @@
 - name: Directory Resource Administrator
   id: dra
   category: security
+  link: >-
+    https://www.netiq.com/documentation/directory-and-resource-administrator-92/pdfdoc/drauserguide/drauserguide.pdf
   acronym: DRA
-  description: FIXME
-  agency: DOL
+  type: saas
+  description: A tool for managing access control to systems built on top of ActiveDirectory
   access:
   - id: dra-elez
+    agency: DOL
     type: read
     name: Marko Elez
     date_granted: 2025-02-25
     date_grant_truth: verified
     ao_type: deputy
     never_accessed: true
-    ao_name: Troy Finnegan, Assistant Secretary for Administration and Management
+    ao_name: Troy Finnegan
+    ao_title: Assistant Secretary for Administration and Management
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   - id: dra-collins
+    agency: DOL
     type: read
     name: Miles Collins
     date_granted: 2025-02-26
     date_grant_truth: verified
     ao_type: deputy
-    ao_name: Troy Finnegan, Assistant Secretary for Administration and Management
+    ao_name: Troy Finnegan
+    ao_title: Assistant Secretary for Administration and Management
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
 
 - name: EPA Acquisition System
@@ -309,9 +370,7 @@
   acronym: EAS
   type: internal
   category: obligations
-  description: >-
-    The Office of Acquisition Solutions (OAS) EPA Acquisition System (EAS) Software as a Service (SaaS)
-    is used to initiate, award, modify and track acquisition actions.
+  description: System used at the EPA to initiate, award, modify and track acquisition actions.
   pia: https://www.epa.gov/system/files/documents/2023-12/eas-saas-pia-final.pdf
   agency: EPA
   access:
@@ -353,9 +412,8 @@
   type: internal
   category: immigration
   description: >-
-    Part of DBIS; the system that processes legal immigration benefits. ELIS acts as a case management
-    system for USCIS and includes information about green cards and petitions, as well as details related
-    to Temporary Protected Status and DACA applicants
+    ELIS acts as a case management system for USCIS and includes information about green cards and petitions,
+    as well as details related to Temporary Protected Status and DACA applicants
   agency: USCIS
   access:
   - id: uscis-elis-mohgaddassi
@@ -364,6 +422,8 @@
     source: https://fedscoop.com/doge-granted-access-to-naturalization-immigration-it-systems/
     ao_name: Antoine McCord
     ao_type: cio
+    ao_doge: true
+    ao_truth: reported
     date_granted: 2025-03-17
     date_grant_truth: reported
   - id: uscis-elis-rehling
@@ -372,6 +432,8 @@
     source: https://fedscoop.com/doge-granted-access-to-naturalization-immigration-it-systems/
     ao_name: Antoine McCord
     ao_type: cio
+    ao_doge: true
+    ao_truth: reported
     date_granted: 2025-03-25
     date_grant_truth: reported
 
@@ -395,22 +457,25 @@
   - id: ehcm-riley
     type: read
     ao_type: cio
+    ao_truth: verified
     name: Rachel Riley
     date_granted: 2025-02-03
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: ehcm-farritor
     type: admin
-    ao_type: other
+    ao_type: isso
     name: Luke Farritor
-    ao_name: Human Resources Information System Security Officer
+    ao_title: Human Resources Information System Security Officer
+    ao_truth: verified
     date_granted: 2025-02-28
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   - id: ehcm-terrell
     type: read
     ao_type: other
-    ao_name: HR Information System Security Officer
+    ao_title: HR Information System Security Officer
+    ao_truth: verified
     name: Zach Terrell
     date_granted: 2025-03-07
     date_grant_truth: verified
@@ -435,10 +500,8 @@
   category: security
   link: https://catalog.data.gov/dataset/dol-enterprise-physical-access-control-system-dol-epacs-a41c6
   description: >-
-    DOL ePACS is the physical access control system that is used to manage authorized physical access
-    to the DOL Frances Perkins Building and some regional DOL locations. This system uses the GSA USAccess
-    PIV badge issued for DOL, as the primary token for authenticating holders at the entrances of the
-    DOL FPB and regional integrated locations. Access is granted based on the employment status
+    Used to control physical access to the DOL HQ and several other buildings. Could track when employees
+    enter and leave
   population: Federal personnel with access to the Department of Labor
   risk: Ability to monitor when staff uses facilities, ability to control or grant access
   agency: DOL
@@ -450,14 +513,16 @@
     date_granted: 2025-02-25
     date_grant_truth: verified
     ao_type: deputy
-    ao_name: Troy Finnegan, Assistant Secretary for Administration and Management
+    ao_name: Troy Finnegan
+    ao_title: Assistant Secretary for Administration and Management
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
 
 - name: Executive Office for Immigration Review's Court and Appeals System
   id: ecas
   acronym: ECAS
   category: immigration
-  description: A system used by DOJ for tracking immigration cases
+  description: A system used by DOJ for tracking the status of immigration cases
   population: Immigrants who have interacted with the US immigration system
   risk: Names, addresses, court testimony and any prior interactions with the system
   pia: https://www.justice.gov/media/982096/dl?inline
@@ -562,9 +627,8 @@
   type: ssp
   category: personnel
   description: >-
-    A shared service which processes payrolls for the Justice, Treasury and Homeland Security departments,
-    as well as the Air Force, Nuclear Regulatory Commission and the U.S. Customs and Border Protection,
-    among other federal agencies.
+    A shared service which processes payrolls for Interior, but also DOJ, Treasury, DHS, the Air Force,
+    Nuclear Regulatory Commission and other agencies. Covers about half of federal personnel.
   risk: >-
     PII and payment info for federal staff at several large agencies, including the ability to interfere
     with pay
@@ -585,6 +649,9 @@
     date_req_truth: verified
     date_granted: 2025-03-29
     date_grant_truth: reported
+    ao_type: deputy
+    ao_name: Jarrod Agen
+    ao_title: Senior Advisor to the Secretary
     bypassed: >-
       CIO, CISO, Deputy Counsel who wanted Director to sign risk-acceptance memo. They are placed on administrative
       leave
@@ -598,6 +665,9 @@
     date_req_truth: verified
     date_granted: 2025-03-29
     date_grant_truth: reported
+    ao_type: deputy
+    ao_name: Jarrod Agen
+    ao_title: Senior Advisor to the Secretary
     bypassed: >-
       CIO, CISO, Deputy Counsel who wanted Director to sign risk-acceptance memo. They are placed on administrative
       leave
@@ -626,7 +696,8 @@
 - name: Financial Business Intelligence System
   acronym: FBIS
   id: fbis
-  description: FIXME
+  category: obligations
+  description: A system for tracking business operations at HHS
   link: https://www.hhs.gov/about/agencies/asa/psc/accounting/accounting-services/index.html
   agency: HHS
   access:
@@ -636,8 +707,8 @@
     date_granted: 2025-02-04
     date_grant_truth: verified
     ao_type: deputy
-    ao_name: Assistant Secretary for Financial Resources (ASFR)
-    comment: not granted access to view PII data
+    ao_title: Assistant Secretary for Financial Resources (ASFR)
+    table_note: not granted access to view PII data
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: fbis-fennessy
     type: read
@@ -647,7 +718,8 @@
     date_revoked: 2025-04-18
     date_revoked_truth: verified
     ao_type: deputy
-    ao_name: Assistant Secretary for Financial Resources (ASFR)
+    ao_title: Assistant Secretary for Financial Resources (ASFR)
+    table_note: revoke date likely earlier
     comment: Revocation date not given in filing, likely earlier; not granted access to view PII data
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: fbis-terrell
@@ -656,7 +728,8 @@
     date_granted: 2025-03-16
     date_grant_truth: verified
     ao_type: deputy
-    ao_name: Assistant Secretary for Financial Resources (ASFR)
+    ao_title: Assistant Secretary for Financial Resources (ASFR)
+    table_note: revoke date likely earlier
     comment: only the application and not the database and was not granted access to view PII data
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
@@ -681,6 +754,7 @@
     last_accessed: 2025-02-04
     date_revoked: 2025-03-06
     date_revoked_truth: verified
+    table_note: not allowed to view PII
     comment: Reported he could not access PII on system. Account locked after 30 days of inactivity
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
 
@@ -702,6 +776,7 @@
     date_granted: 2025-04-18
     name: Aram Moghaddassi
     date_grant_truth: reported
+    table_note: granted "OIG-level" admin access
     comment: >-
       Wired reports that Aram Moghaddassi has been granted "OIG-level" admin access to the DOL's Foreign
       Labor Application Gateway (FLAG) system, which would include visa applications of foreign workers
@@ -719,7 +794,9 @@
     agency: CFPB
     name: Jordan Wick
     ao_type: deputy
-    ao_name: Sheryl Kidd of the Office of Finance and Procurement
+    ao_name: Sheryl Kidd
+    ao_office: Office of Finance and Procurement
+    ao_truth: verified
     never_accessed: true
     date_granted: 2025-02-07
     date_grant_truth: verified
@@ -736,9 +813,11 @@
     name: Nikhil Rajpal
     agency: NOAA
     ao_type: director
-    ao_name: Acting Commerce Secretart, Jeremy Pelter
+    ao_title: Acting Commerce Secretary
+    ao_name: Jeremy Pelter
+    ao_truth: reported
     date_granted: 2025-02-05
-    date_grant_truth: verified
+    date_grant_truth: reported
     source: https://www.wired.com/story/doge-engineer-noaa-data-google-musk-climate-project-2025/
 
 - name: Government-Wide Email System
@@ -755,7 +834,7 @@
   risk: There are concerns it is an external system and did not go through a privacy review
   agency: OPM
 
-- name: GrantSolutions
+- name: Grant Solutions
   id: grantsolutions
   type: ssp
   category: obligations
@@ -767,7 +846,9 @@
     type: read
     name: Luke Farritor
     ao_type: deputy
-    ao_name: Director, Security and Data Project Management Office, HHS Office of Grants
+    ao_title: Director, Security and Data Project Management Office
+    ao_office: HHS Office of Grants
+    ao_truth: verified
     date_granted: 2025-01-27
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
@@ -775,7 +856,9 @@
     type: read
     name: Aram Moghaddassi
     ao_type: deputy
-    ao_name: Director, Security and Data Project Management Office, HHS Office of Grants
+    ao_title: Director, Security and Data Project Management Office
+    ao_office: HHS Office of Grants
+    ao_truth: verified
     date_granted: 2025-02-19
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
@@ -783,7 +866,9 @@
     type: read
     name: Rachel Riley
     ao_type: deputy
-    ao_name: Director, Security and Data Project Management Office, HHS Office of Grants
+    ao_title: Director, Security and Data Project Management Office
+    ao_office: HHS Office of Grants
+    ao_truth: verified
     date_granted: 2025-02-20
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
@@ -791,7 +876,9 @@
     type: read
     name: Conor Fennessy
     ao_type: deputy
-    ao_name: Director, Security and Data Project Management Office, HHS Office of Grants
+    ao_title: Director, Security and Data Project Management Office
+    ao_office: HHS Office of Grants
+    ao_truth: verified
     date_granted: 2025-02-28
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
@@ -799,7 +886,9 @@
     type: read
     name: Jeremy Lewin
     ao_type: deputy
-    ao_name: Director, Security and Data Project Management Office, HHS Office of Grants
+    ao_title: Director, Security and Data Project Management Office
+    ao_office: HHS Office of Grants
+    ao_truth: verified
     date_granted: 2025-02-28
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
@@ -809,8 +898,8 @@
   type: ssp
   category: obligations
   description: >-
-    A system run and administered by HHS that is used for publishing grants, finding recipients and delivering
-    funds
+    A system run and administered by HHS that is used at 18+ agencies for publishing grants, finding recipients
+    and delivering funds
   agency: HHS
   serves:
   - USDA
@@ -835,6 +924,8 @@
   - id: grants-fennessy
     type: admin
     ao_type: deputy
+    ao_title: Assistant Secretary for Financial Resources (ASFR)
+    ao_truth: verified
     name: Conor Fennessy
     date_granted: 2025-02-28
     date_grant_truth: verified
@@ -843,7 +934,8 @@
     type: admin
     ao_type: deputy
     name: Luke Farritor
-    ao_name: Assistant Secretary for Financial Resources (ASFR)
+    ao_title: Assistant Secretary for Financial Resources (ASFR)
+    ao_truth: verified
     date_granted: 2025-03-21
     date_grant_truth: verified
     date_revoked: 2025-04-18
@@ -855,6 +947,7 @@
   id: hcas
   acronym: HCAS
   description: FIXME
+  agency: HHS
   access:
   - id: hcas-farritor
     type: admin
@@ -862,6 +955,9 @@
     date_grant_truth: verified
     name: Luke Farritor
     ao_type: deputy
+    ao_title: Executive Director, Strategic Programs and Business Systems
+    ao_office: Office of the Assistant Secretary for Financial Resources (ASFR)
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   - id: hcas-riley
     type: admin
@@ -869,6 +965,9 @@
     date_grant_truth: verified
     name: Rachel Riley
     ao_type: deputy
+    ao_title: Executive Director, Strategic Programs and Business Systems
+    ao_office: Office of the Assistant Secretary for Financial Resources (ASFR)
+    ao_truth: verified
     date_revoked: 2025-04-18
     date_revoked_truth: verified
     comment: Revocation date not given in filing, likely earlier
@@ -882,7 +981,9 @@
     date_revoked_truth: verified
     comment: Revocation date not given in filing, likely earlier
     ao_type: deputy
-    ao_name: Executive Director, Strategic Programs and Business Systems at the office of the ASFR
+    ao_title: Executive Director, Strategic Programs and Business Systems
+    ao_office: Office of the Assistant Secretary for Financial Resources (ASFR)
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
 - name: HHS Unified Financial Management System
@@ -890,16 +991,17 @@
   id: hhs-ufms
   link: https://www.hhs.gov/about/agencies/asa/psc/accounting/accounting-services/index.html
   description: >-
-    The Unified Financial Management System (UFMS) is the Department of Health and Human Service's integrated
-    department-wide financial management system which supports all of HHS Program Service Center's Accounting
+    A department-wide financial management system which supports all of HHS Program Service Center's Accounting
     Services and reporting
   agency: HHS
   access:
   - id: ufms-terrell
     type: read
     name: Zach Terrell
-    ao_type: deputy
-    ao_name: Assistant Secretary for Financial Resources (ASFR)
+    ao_title: Executive Director, Strategic Programs and Business Systems
+    ao_office: Office of the Assistant Secretary for Financial Resources (ASFR)
+    ao_truth: verified
+    table_note: app access only, no DB access
     comment: Access only to the application and not the database
     date_granted: 2025-03-18
     date_grant_truth: verified
@@ -919,8 +1021,10 @@
     type: unknown
     date_granted: 2025-02-19
     date_grant_truth: verified
-    ao_name: Troy Finnegan, Former Assistant Secretary for Administration and Management
+    ao_name: Troy Finnegan
+    ao_title: Former Assistant Secretary for Administration and Management
     ao_type: deputy
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: hrconnect-cfpb-wick
     type: read-write
@@ -930,8 +1034,10 @@
     date_grant_truth: verified
     date_revoked: 2025-03-28
     date_revoked_truth: verified
-    ao_name: Nikki L. DiPalma of the Office of Human Capital
+    ao_name: Nikki L. DiPalma
+    ao_office: Office of Human Capital
     ao_type: deputy
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
 - name: HUD Central Accounting and Processing System
@@ -1005,8 +1111,8 @@
   category: payments
   link: https://www.cms.gov/about-cms/information-systems/higlas/higlas-architecture
   description: >-
-    A single, integrated dual-entry accounting system that standardizes and centralizes federal financial
-    accounting functions for all of CMS's programs.
+    A single, integrated dual-entry accounting system that centralizes accounting for CMS programs, including
+    Medicare and Medicaid.
   population: Medical providers and others who would receive disbursements from Medicare or Medicaid
   agency: CMS
   access:
@@ -1016,6 +1122,8 @@
     date_grant_truth: verified
     name: Luke Farritor
     ao_type: cio
+    ao_office: CMS Office of Information Technology
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   - id: higlas-coristine
     type: read
@@ -1023,6 +1131,8 @@
     date_grant_truth: verified
     name: Edward Coristine
     ao_type: cio
+    ao_office: CMS Office of Information Technology
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   - id: higlas-elez
     type: read
@@ -1030,6 +1140,8 @@
     date_grant_truth: verified
     name: Marko Elez
     ao_type: cio
+    ao_office: CMS Office of Information Technology
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   - id: higlas-moghaddassi
     type: read
@@ -1037,6 +1149,8 @@
     date_grant_truth: verified
     name: Aram Moghaddassi
     ao_type: cio
+    ao_office: CMS Office of Information Technology
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
 
 - name: Homeland Advanced Recognition Technology
@@ -1061,33 +1175,35 @@
   id: iron
   type: internal
   category: obligations
-  comment: I don't know what this is yet, but there is a mention of access to IRON Website in a SSA declaration
+  comment: System unknown, named in internal SSA emails as way to investigate people
   description: FIXME
   agency: SSA
   access:
   - id: iron-ssa-5
     type: unknown
     date_granted: 2025-03-12
-    alias: SSA-5
+    alias: SSA-05
     comment: >-
       Leland Dudek approves "Employee 5" access to the IRON Website to investigate people beyond a reasonable
       age who could be marked dead
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
     agency: SSA
-    name:
+    name: Cole Killian
 
 - name: Integrated Contracts Expert
   id: ice
   acronym: ICE
   type: internal
   category: obligations
-  description: FIXME
+  description: A system for tracking contracts at CDC
   agency: CDC
   access:
   - id: ice-farritor
     type: read
     name: Luke Farritor
     ao_type: cio
+    ao_office: CDC Office of the Chief Information Officer
+    ao_truth: verified
     date_granted: 2025-01-30
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
@@ -1097,7 +1213,7 @@
   id: idr
   type: internal
   category: oversight
-  description: A data warehouse of all Medicare claims after they have been approved for payment
+  description: A data warehouse that receives all Medicare claims after they have been approved for payment
   population: Anybody who has received treatment under Medicare
   risk: This includes highly-sensitive PII and PHI for millions of Americans
   sorn: https://www.hhs.gov/foia/privacy/sorns/09700571/index.html
@@ -1107,6 +1223,8 @@
     type: read
     name: Luke Farritor
     ao_type: cio
+    ao_office: CMS Office of the Chief Information Officer
+    ao_truth: verified
     date_granted: 2025-02-18
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
@@ -1114,6 +1232,8 @@
     type: read
     name: Marko Elez
     ao_type: cio
+    ao_office: CMS Office of the Chief Information Officer
+    ao_truth: verified
     date_granted: 2025-03-05
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
@@ -1121,6 +1241,8 @@
     type: read
     name: Aram Moghaddassi
     ao_type: cio
+    ao_office: CMS Office of the Chief Information Officer
+    ao_truth: verified
     date_granted: 2025-03-05
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
@@ -1128,6 +1250,8 @@
     type: read
     name: Edward Coristine
     ao_type: cio
+    ao_office: CMS Office of the Chief Information Officer
+    ao_truth: verified
     date_granted: 2025-03-11
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
@@ -1135,6 +1259,8 @@
     type: read
     name: Zach Terrell
     ao_type: cio
+    ao_office: CMS Office of the Chief Information Officer
+    ao_truth: verified
     date_granted: 2025-03-11
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
@@ -1159,7 +1285,9 @@
   acronym: IDIS
   type: internal
   category: oversight
-  description: A database for tracking all HUD programs nationwide
+  description: >-
+    A database for tracking all HUD programs nationwide, it includes hidden locations of domestic violence
+    shelters
   risk: Among other things, it includes hidden locations of domestic violence shelters
   pia: https://www.hud.gov/sites/dfiles/OCHCO/documents/CPD-1IDISPIA.pdf
   agency: HUD
@@ -1196,7 +1324,8 @@
     name: Jordan Wick
     agency: CFPB
     ao_type: deputy
-    ao_name: Antona Bailey of the Office of Finance and Procurement
+    ao_name: Antona Bailey
+    ao_office: Office of Finance and Procurement
     date_granted: 2025-02-07
     date_grant_truth: verified
     date_revoked: 2025-03-28
@@ -1228,6 +1357,24 @@
     date_grant_truth: reported
     source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
 
+- name: MS Sharepoint
+  id: sharepoint
+  type: saas
+  description: Microsoft service for sharing documents within an organization
+  access:
+  - id: sharepoint-kliger
+    type: admin
+    agency: CFPB
+    name: Gavin Kliger
+    date_granted: 2025-04-12
+    date_grant_truth: verified
+    date_revoked: 2025-05-08
+    date_revoked_truth: inferred
+    ao_type: cio
+    ao_truth: reported
+    table_note: Used by Gavin to access documents to run layoffs
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
+
 - name: Master Beneficiary Record
   acronym: MBR
   id: mbr
@@ -1239,7 +1386,7 @@
   access:
   - id: mbr-ssa-6
     type: read
-    alias: SSA-6
+    alias: SSA-06
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
@@ -1249,11 +1396,12 @@
       Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
+    ao_doge: true
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-    name:
+    name: Jon Koval
   - id: mbr-ssa-7
     type: read
-    alias: SSA-7
+    alias: SSA-07
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
@@ -1263,11 +1411,12 @@
       Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
+    ao_doge: true
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-    name:
+    name: Marko Elez
   - id: mbr-ssa-9
     type: read
-    alias: SSA-9
+    alias: SSA-09
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
@@ -1277,12 +1426,14 @@
       Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
+    ao_doge: true
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-    name:
+    name: Payton Rehling
 
 - name: Microsoft 365
   id: ms-office
   type: saas
+  description: Microsoft Office 365 is used for agency email and knowledge management systems.
   access:
   - id: cisa-office-coristine
     agency: CISA
@@ -1300,40 +1451,13 @@
     date_grant_truth: reported
     source: https://www.cnn.com/2025/02/06/climate/doge-energy-department-trump/index.html
 
-- name: Microsoft Active Directory
-  id: microsoft-ad
-  type: saas
-  category: security
-  access:
-  - id: ad-cfpb-kliger
-    name: Gavin Kliger
-    agency: CFPB
-    type: unknown
-    never_accessed: true
-    date_granted: 2025-02-07
-    date_grant_truth: verified
-    date_revoked: 2025-05-08
-    date_revoked_truth: inferred
-    ao_name: Chris Chilbert
-    ao_type: cio
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
-  - id: ad-cfpb-farritor
-    name: Luke Farritor
-    agency: CFPB
-    type: unknown
-    date_granted: 2025-02-07
-    date_grant_truth: verified
-    date_revoked: 2025-03-04
-    date_revoked_truth: verified
-    ao_name: Chris Chilbert
-    ao_type: cio
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
-
 - name: Microsoft Entra ID
   id: entra
+  acronym: Entra
   type: saas
-  description: Microsoft Entra is a centralized identity provider used to support single-sign-on (SSO)
-    at agencies
+  description: >-
+    A centralized identity provider used to support single-sign-on (SSO) and centralize access control
+    for agencies.
   category: security
   access:
   - id: entra-farritor
@@ -1342,6 +1466,7 @@
     ao_type: cio
     name: Luke Farritor
     ao_name: Chris Chilbert
+    ao_truth: verified
     date_granted: 2025-02-07
     date_grant_truth: verified
     date_revoked: 2025-03-04
@@ -1353,6 +1478,7 @@
     ao_type: cio
     name: Jordan Wick
     ao_name: Chris Chilbert
+    ao_truth: verified
     date_granted: 2025-02-09
     date_grant_truth: verified
     date_revoked: 2025-03-05
@@ -1369,6 +1495,7 @@
     date_revoked_truth: inferred
     ao_name: Chris Chilbert
     ao_type: cio
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: entra-neh-cavanaugh
     name: Nate Cavanaugh
@@ -1376,6 +1503,8 @@
     agency: NEH
     date_granted: 2025-03-12~
     date_grant_truth: inferred
+    table_note: inferred because he sent emails from what looks like a global admin account for Entra
+    ao_truth: inferred
     comment: >-
       The lawsuit against NEH cites emails being sent from Grant_Notifications@nehemail.onmicrosoft.com
       which is the form of a Global Admin account for Microsoft Entra (probably for the NEH email systems)
@@ -1386,52 +1515,12 @@
     agency: NEH
     date_granted: 2025-03-12~
     date_grant_truth: inferred
+    table_note: inferred because he sent emails from what looks like a global admin account for Entra
+    ao_truth: inferred
     comment: >-
       The lawsuit against NEH cites emails being sent from Grant_Notifications@nehemail.onmicrosoft.com
       which is the form of a Global Admin account for Microsoft Entra (probably for the NEH email systems)
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
-
-- name: Microsoft Power Automate
-  id: power-automate
-  type: saas
-  link: https://www.microsoft.com/en-us/power-platform/products/power-automate
-  description: A Microsoft tool for automating tasks that work on documents and providing to staff
-  access:
-  - id: automate-kliger
-    type: admin
-    name: Gavin Kliger
-    date_granted: 2025-04-12
-    date_grant_truth: verified
-    date_revoked: 2025-04-13
-    date_revoked_truth: verified
-    agency: CFPB
-    comment: Used to automate sending out layoff notices to all CFPB staff
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
-  - id: automate-kliger-2
-    type: admin
-    name: Gavin Kliger
-    date_granted: 2025-04-17
-    date_grant_truth: verified
-    date_revoked: 2025-04-17
-    date_revoked_truth: inferred
-    agency: CFPB
-    comment: Used to automate sending out layoff notices to all CFPB staff
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
-
-- name: Microsoft Sharepoint
-  id: sharepoint
-  type: saas
-  description: Microsoft tool for sharing documents
-  access:
-  - id: sharepoint-kliger
-    type: admin
-    agency: CFPB
-    name: Gavin Kliger
-    date_granted: 2025-04-12
-    date_grant_truth: verified
-    date_revoked: 2025-05-08
-    date_revoked_truth: inferred
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
 
 - name: NIH Business System
   id: nbs
@@ -1461,6 +1550,8 @@
     date_granted: 2025-01-27
     date_grant_truth: verified
     ao_type: cio
+    ao_title: NIH Office of the CIO
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
 
 - name: NUMIDENT files
@@ -1481,11 +1572,13 @@
       data from SSNEC for his purported fraud investigations
     ao_name: Mike Russo
     ao_type: cio
+    ao_doge: true
+    ao_truth: reported
     source: >-
       https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
   - id: numident-ssa-6
     type: read
-    alias: SSA-6
+    alias: SSA-06
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
@@ -1495,11 +1588,13 @@
       Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
+    ao_truth: verified
+    ao_doge: true
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-    name:
+    name: Jon Koval
   - id: numident-ssa-7
     type: read
-    alias: SSA-7
+    alias: SSA-07
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
@@ -1509,11 +1604,13 @@
       Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
+    ao_truth: verified
+    ao_doge: true
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-    name:
+    name: Marko Elez
   - id: numident-ssa-9
     type: read
-    alias: SSA-9
+    alias: SSA-09
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
@@ -1523,8 +1620,10 @@
       Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
+    ao_truth: verified
+    ao_doge: true
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-    name:
+    name: Payton Rehling
 
 - name: National Directory of New Hires
   id: ndnh
@@ -1544,7 +1643,8 @@
     date_grant_truth: verified
     name: Marko Elez
     ao_type: cto
-    ao_name: Administration for Children and Families (ACF) Chief Technology Officer
+    ao_title: Administration for Children and Families (ACF) Chief Technology Officer
+    ao_truth: verified
     date_revoked: 2025-04-18
     date_revoked_truth: verified
     comment: Revocation date likely earlier, not given in filing
@@ -1555,7 +1655,8 @@
     date_grant_truth: verified
     name: Aram Moghaddassi
     ao_type: cto
-    ao_name: Administration for Children and Families (ACF) Chief Technology Officer
+    ao_title: Administration for Children and Families (ACF) Chief Technology Officer
+    ao_truth: verified
     date_revoked: 2025-04-18
     date_revoked_truth: verified
     comment: Revocation date likely earlier, not given in filing
@@ -1570,8 +1671,8 @@
   sorn: >-
     https://www.federalregister.gov/documents/2016/04/29/2016-09510/privacy-act-of-1974-publication-in-full-of-all-notices-of-systems-of-records-including-several-new
   description: >-
-    The National Farmworker Jobs Program (NFJP) is a nationally-directed, locally-administered program
-    of services for migrant and seasonal farmworkers and their dependents
+    System for a nationally-directed, locally-administered program of services for migrant and seasonal
+    farmworkers and their dependents
   agency: DOL
   access:
   - id: njfp-collins
@@ -1611,7 +1712,9 @@
     date_grant_truth: verified
     never_accessed: true
     ao_type: deputy
-    ao_name: Troy Finnegan, Former Assistant Secretary for Administration and Management.
+    ao_name: Troy Finnegan
+    ao_title: Former Assistant Secretary for Administration and Management
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
 - name: Next Generation Case Management System
@@ -1621,9 +1724,8 @@
   category: oversight
   pia: https://www.nlrb.gov/sites/default/files/attachments/pages/node-172/pia-nxgen-august-2019.pdf
   description: >-
-    NxGen is the Agency-wide interactive electronic database of information on the processing of all unfair
-    labor practice and representation cases at all stages. NxGen stores case handling information on all
-    open and closed cases in the agency.
+    Database that stores information on all open and closed investigatations into possible unfair labor
+    practices nationwide
   agency: NLRB
 
 - name: Notice to Airmen
@@ -1666,7 +1768,9 @@
     date_granted: 2025-03-20
     date_grant_truth: verified
     ao_type: deputy
-    ao_name: Dean Heyl, Assistant Secretary for Administration and Management
+    ao_name: Dean Heyl
+    ao_title: Assistant Secretary for Administration and Management
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
 - name: One CDC Data Platform
@@ -1690,7 +1794,9 @@
     agency: CFPB
     name: Jordan Wick
     ao_type: deputy
-    ao_name: Antona Bailey of the Office of Finance and Procurement
+    ao_name: Antona Bailey
+    ao_office: Office of Finance and Procurement
+    ao_truth: verified
     date_granted: 2025-02-07
     date_grant_truth: verified
     date_revoked: 2025-03-28
@@ -1709,6 +1815,8 @@
     agency: NIH
     type: read
     ao_type: cio
+    ao_office: NIH Office of the CIO
+    ao_truth: verified
     name: Rachel Riley
     date_granted: 2025-02-24
     date_grant_truth: verified
@@ -1717,6 +1825,8 @@
     agency: NIH
     type: read
     ao_type: cio
+    ao_office: NIH Office of the CIO
+    ao_truth: verified
     name: Luke Farritor
     date_granted: 2025-02-28
     date_grant_truth: verified
@@ -1725,6 +1835,8 @@
     agency: NIH
     type: read
     ao_type: cio
+    ao_office: NIH Office of the CIO
+    ao_truth: verified
     name: Conor Fennessy
     date_granted: 2025-02-28
     date_grant_truth: verified
@@ -1739,20 +1851,21 @@
   type: internal
   category: obligations
   description: SSN application process data (Phone). This is a data extract file rather than an independent
-    system
+    system.
   agency: SSA
   access:
   - id: pssnap-ssa-9
     type: read
-    alias: SSA-9
+    alias: SSA-09
     date_granted: 2025-03-14
     date_grant_truth: verified
     comment: >-
       Leland Dudek approves access of "Employee 9" to review PSSNAP data with the Enterprise Data Warehouse
     ao_type: director
     ao_name: Leland Dudek
+    ao_doge: true
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-    name:
+    name: Payton Rehling
 
 - name: Payment Automation Manager DB
   id: pam-db
@@ -1763,8 +1876,7 @@
   description: >-
     The U.S. government uses the Payment Automation Manager (PAM) to pay all bills, except payments in
     foreign currency. PAM processed over 1.2 billion payments in FY 2024, valued at over 4.7 trillion
-    dollars. PAM replaced many older systems that Federal Program Agencies used, saving money and increasing
-    efficiency.
+    dollars.
   risk: PII/CUI of entities receiving payments, SSNs, TINs, bank account info
   pia: https://www.fiscal.treasury.gov/files/pia/pampclia.pdf
   agency: Treasury
@@ -1775,8 +1887,15 @@
     comment: >-
       Marko Elez is provided with a laptop from Treasury with with copies of the source code for PAM,
       SPS, and ASAP in a separate, secure coding environment known as a "secure code repository" or "sandbox."
+    ao_type: deputy
+    ao_name: Joseph Gioeli III
+    ao_title: Deputy Commissioner for Transformation and Modernization
+    ao_office: Bureau of the Fiscal Service
+    ao_truth: verified
     date_granted: 2025-01-28
     date_grant_truth: verified
+    date_revoked: 2025-02-06
+    date_revoked_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.3_1.pdf
   - id: pam-db-elez
     type: read-write
@@ -1788,8 +1907,10 @@
     date_last_used: 2025-02-05
     date_revoked: 2025-02-06
     date_revoked_truth: verified
-    ao_name: Joseph Gioeli III, Deputy Commissioner for Transformation and Modernization
-    ao_type: deputy
+    ao_name: Joseph Gioeli III
+    ao_title: Deputy Commissioner for Transformation and Modernization
+    ao_office: Bureau of the Fiscal Service
+    ao_truth: verified
 
 - name: Payment Automation Manager File System
   acronym: PAM filesystem
@@ -1798,10 +1919,8 @@
   category: payments
   link: https://fiscal.treasury.gov/pam/
   description: >-
-    The U.S. government uses the Payment Automation Manager (PAM) to pay all bills, except payments in
-    foreign currency. PAM processed over 1.2 billion payments in FY 2024, valued at over 4.7 trillion
-    dollars. PAM replaced many older systems that Federal Program Agencies used, saving money and increasing
-    efficiency.
+    Where payment files are transmitted from initiating agencies before they are certified and processed
+    by Treasury
   risk: PII/CUI of entities receiving payments, SSNs, TINs, bank account info
   pia: https://www.fiscal.treasury.gov/files/pia/pampclia.pdf
   agency: Treasury
@@ -1815,8 +1934,10 @@
     date_last_used: 2025-02-05
     date_revoked: 2025-02-06
     date_revoked_truth: verified
-    ao_name: Joseph Gioeli III, Deputy Commissioner for Transformation and Modernization
-    ao_type: deputy
+    ao_name: Joseph Gioeli III
+    ao_title: Deputy Commissioner for Transformation and Modernization
+    ao_office: Bureau of the Fiscal Service
+    ao_truth: verified
 
 - name: Payment Management System
   id: pms
@@ -1831,6 +1952,9 @@
     date_granted: 2025-01-22
     date_grant_truth: verified
     name: Luke Farritor
+    ao_type: cto
+    ao_office: Program Support Center
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   - id: pms-terrell
     type: read
@@ -1839,6 +1963,8 @@
     date_granted: 2025-03-27
     date_grant_truth: verified
     ao_type: cto
+    ao_office: Program Support Center
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: pms-collins
     type: unknown
@@ -1865,7 +1991,7 @@
 
 - name: Physical Access Control
   id: cfpb-pac
-  description: This seems like it might be administration for physical access to the building
+  description: Possibly a system for controlling and monitoring physical access to CFPB buildings
   category: security
   agency: CFPB
   access:
@@ -1878,7 +2004,35 @@
     date_revoked_truth: inferred
     ao_name: Chris Chilbert
     ao_type: cio
+    ao_truth: reported
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+
+- name: Power Automate
+  id: power-automate
+  type: saas
+  link: https://www.microsoft.com/en-us/power-platform/products/power-automate
+  description: A Microsoft tool for automating tasks that operate on documents and providing to staff
+  access:
+  - id: automate-kliger
+    type: admin
+    name: Gavin Kliger
+    date_granted: 2025-04-12
+    date_grant_truth: verified
+    date_revoked: 2025-04-13
+    date_revoked_truth: verified
+    agency: CFPB
+    comment: Used to automate sending out layoff notices to all CFPB staff
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
+  - id: automate-kliger-2
+    type: admin
+    name: Gavin Kliger
+    date_granted: 2025-04-17
+    date_grant_truth: verified
+    date_revoked: 2025-04-17
+    date_revoked_truth: inferred
+    agency: CFPB
+    comment: Used to automate sending out layoff notices to all CFPB staff
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
 
 - name: Procurement Request Information System Management
   acronym: PRISM
@@ -1894,6 +2048,8 @@
     type: read
     name: Rachel Riley
     ao_type: cio
+    ao_office: NIH Office of the CIO
+    ao_truth: verified
     date_granted: 2025-02-24
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
@@ -1902,6 +2058,8 @@
     type: read
     name: Luke Farritor
     ao_type: cio
+    ao_office: NIH Office of the CIO
+    ao_truth: verified
     date_granted: 2025-02-28
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
@@ -1910,6 +2068,8 @@
     type: read
     name: Conor Fennessy
     ao_type: cio
+    ao_office: NIH Office of the CIO
+    ao_truth: verified
     date_granted: 2025-02-28
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
@@ -1922,7 +2082,9 @@
     date_revoked: 2025-03-28
     date_revoked_truth: verified
     ao_type: deputy
-    ao_name: Joshua Galicki of the Office of Finance and procurement
+    ao_name: Joshua Galicki
+    ao_office: Office of Finance and Procurement
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
 - name: Reentry Employment Opportunities
@@ -1931,9 +2093,8 @@
   type: internal
   category: immigration
   description: >-
-    The Reentry Employment Opportunities (REO) program provides funding, authorized as Research and Evaluation
-    under Section 169 of the Workforce Innovation and Opportunity Act (WIOA) of 2014, for justice-involved
-    youth and young adults and adults who were formerly incarcerated.
+    System which tracks funding provided for justice-involved youth and young adults and adults who were
+    formerly incarcerated.
   pia: https://www.dol.gov/agencies/oasam/centers-offices/ocio/privacy/eta/reo
   link: https://www.dol.gov/agencies/eta/reentry
   agency: DOL
@@ -1966,30 +2127,13 @@
       Opportunities (REO) program, which provides aid to people re-entering society from incarceration
     source: https://www.wired.com/story/doge-access-immigration-data-department-of-labor/
 
-- name: SAVE
-  id: save
-  acronym: SAVE
-  type: ssp
-  category: immigration
-  description: FIXME
-  agency: USCIS
-  access:
-  - id: uscis-ssa-7
-    type: unknown
-    date_granted: 2025-03-15
-    date_grant_truth: verified
-    comment: >-
-      Unidentified "Employee 7" at Social Security Administration is granted access to the USCIS SAVE
-      system
-    alias: SSA-7
-    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-    name:
-
 - name: Salesforce oneARC
   acronym: onrARC
   id: onearc
   link: https://fs-arc.my.site.com/portal/s/
   type: saas
+  category: obligations
+  description: A system for tracking business processes within Salesforce
   access:
   - id: onearc-cfpb-wick
     type: read
@@ -2001,7 +2145,8 @@
     date_revoked: 2025-03-28
     date_revoked_truth: verified
     ao_type: deputy
-    ao_name: Antona Bailey of the Office of Finance and Procurement
+    ao_name: Antona Bailey
+    ao_office: Office of Finance and Procurement
 
 - name: Secure Payment System
   id: sps
@@ -2010,8 +2155,8 @@
   category: payments
   link: https://www.fiscal.treasury.gov/sps/
   description: >-
-    Secure Payment System (SPS) is used by federal government agencies to securely create, certify, and
-    submit payments to the Fiscal Service.
+    Used by federal government agencies to securely create, certify, and submit payments to the Fiscal
+    Service.
   risk: Access to CUI/PII of entities submitting/receiving payments. Access to private encryption keys.
   pia: https://www.fiscal.treasury.gov/files/pia/spspclia.pdf
   sorn: >-
@@ -2025,7 +2170,14 @@
       Marko Elez is provided with a laptop from Treasury with with copies of the source code for PAM,
       SPS, and ASAP in a separate, secure coding environment known as a "secure code repository" or "sandbox."
     date_granted: 2025-01-28
+    ao_name: Joseph Gioeli III
+    ao_title: Deputy Commissioner for Transformation and Modernization
+    ao_type: deputy
+    ao_office: Bureau of the Fiscal Service
+    ao_truth: verified
     date_grant_truth: verified
+    date_revoked: 2025-02-06
+    date_revoked_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.3_1.pdf
   - id: sps-elez
     type: read-write
@@ -2036,16 +2188,12 @@
     date_last_used: 2025-02-05
     date_revoked: 2025-02-06
     date_revoked_truth: verified
-    ao_name: Joseph Gioeli III, Deputy Commissioner for Transformation and Modernization
+    ao_name: Joseph Gioeli III
+    ao_title: Deputy Commissioner for Transformation and Modernization
     ao_type: deputy
+    ao_office: Bureau of the Fiscal Service
+    ao_truth: verified
     comment: His access to SPS was accidentally set to read-write and one point
-
-- name: Sharepoint [CFPB]
-  id: Sharepoint-CFPB
-  type: saas
-  category: personnel
-  description: Systems used for sharing documents
-  agency: CFPB
 
 - name: Social Security Number Establishment and Correction System
   id: ssnec
@@ -2065,12 +2213,12 @@
 - name: Supplemental Security Record master records
   id: ssr
   acronym: SSR
-  description: FIXME
+  description: A master record used by the SSA for the Supplemental Security Income (SSI) program
   agency: SSA
   access:
   - id: ssr-ssa-6
     type: read
-    alias: SSA-6
+    alias: SSA-06
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
@@ -2080,11 +2228,13 @@
       Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
+    ao_truth: verified
+    ao_doge: true
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-    name:
+    name: Jon Koval
   - id: ssr-ssa-7
     type: read
-    alias: SSA-7
+    alias: SSA-07
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
@@ -2094,11 +2244,13 @@
       Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
+    ao_truth: verified
+    ao_doge: true
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-    name:
+    name: Marko Elez
   - id: ssr-ssa-9
     type: read
-    alias: SSA-9
+    alias: SSA-09
     date_granted: 2025-03-17
     date_grant_truth: reported
     comment: >-
@@ -2108,8 +2260,31 @@
       Fiscal Service (BFS) for payment
     ao_name: Mike Russo
     ao_type: cio
+    ao_truth: verified
+    ao_doge: true
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-    name:
+    name: Payton Rehling
+
+- name: Systematic Alien Verification for Entitlements
+  id: save
+  acronym: SAVE
+  type: ssp
+  category: immigration
+  description: >-
+    An online service for agencies to verify immigration status and naturalized/acquired U.S. citizenship
+    of applicants seeking benefits or licenses.
+  agency: USCIS
+  access:
+  - id: uscis-ssa-7
+    type: unknown
+    date_granted: 2025-03-15
+    date_grant_truth: verified
+    comment: >-
+      Unidentified "Employee 7" at Social Security Administration is granted access to the USCIS SAVE
+      system
+    alias: SSA-07
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
+    name: Marko Elez
 
 - name: USA Performance
   id: usa-performance
@@ -2126,7 +2301,7 @@
   id: usa-staffing
   type: ssp
   category: personnel
-  description: System tracking onboarding of federal employees
+  description: System for tracking the onboarding of federal employees
   sorn: >-
     https://www.federalregister.gov/documents/2021/12/01/2021-26086/privacy-act-of-1974-system-of-records
   risk: agency-specific CUI related to onboarding
@@ -2140,8 +2315,10 @@
     date_grant_truth: verified
     date_revoked: 2025-03-28
     date_revoked_truth: verified
-    ao_name: Nikki L. DiPalma of the Office of Human Capital
+    ao_name: Nikki L. DiPalma
+    ao_office: Office of Human Capital
     ao_type: deputy
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
 - name: USAJobs
@@ -2169,7 +2346,9 @@
     date_granted: 2025-02-25
     date_grant_truth: verified
     ao_type: deputy
-    ao_name: Troy Finnegan, Assistant Secretary for Administration and Management
+    ao_name: Troy Finnegan
+    ao_title: Assistant Secretary for Administration and Management
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
 
 - name: USCIS Data Business Intelligence Services
@@ -2177,7 +2356,7 @@
   acronym: DBIS
   category: payments
   agency: USCIS
-  description: FIXME
+  description: A system for tracking payments and business operations of USCIS
   access:
   - id: uscis-dbis-mohgaddassi
     type: unknown
@@ -2185,6 +2364,8 @@
     source: https://fedscoop.com/doge-granted-access-to-naturalization-immigration-it-systems/
     ao_name: Antoine McCord
     ao_type: cio
+    ao_doge: true
+    ao_truth: verified
     date_granted: 2025-03-17
     date_grant_truth: reported
   - id: uscis-dbis-rehling
@@ -2193,6 +2374,8 @@
     source: https://fedscoop.com/doge-granted-access-to-naturalization-immigration-it-systems/
     ao_name: Antoine McCord
     ao_type: cio
+    ao_doge: true
+    ao_truth: verified
     date_granted: 2025-03-25
     date_grant_truth: reported
 
@@ -2218,6 +2401,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
 
 - name: Unemployment Insurance Data and Related Records
+  acronym: UI Data
   id: uidrr
   description: >-
     Unemployment insurance claims data from states' unemployment insurance agencies. This was explicitly
@@ -2231,6 +2415,8 @@
     type: read
     ao_name: Thomas Shedd
     ao_type: cio
+    ao_truth: verified
+    ao_doge: true
     name: Marko Elez
     date_granted: 2025-03-21
     date_grant_truth: verified
@@ -2264,6 +2450,8 @@
     name: Jordan Wick
     date_granted: 2025-02-07
     date_grant_truth: verified
-    ao_name: Nikki L. DiPalma of the Office of Human Capital
+    ao_name: Nikki L. DiPalma
+    ao_office: Office of Human Capital
+    ao_truth: verified
     ao_type: deputy
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf

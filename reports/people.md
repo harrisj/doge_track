@@ -95,7 +95,7 @@
     -  **USADF** (2025-02-21 to 2025-03-06) 
     -  **USIP** (2025-03-04 to 2025-03-24) 
     -  **NEH** (2025-03-(13)~ to ??) 
-        - Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
+        - Entra: Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
     -  **USIP** (2025-03-25 to 2025-05-19) President
     -  **IMLS** (2025-03-31 to ??) 
     -  **NLRB** (2025-04-16 to ??) 
@@ -190,8 +190,8 @@
 - positions:
     -  **Treasury** (2025-01-21 to 2025-02-06) Special Advisor (IT&M) GS-11/01 $84,601
         - ASAP: Automated Standard Access For Payments **[source-code access]**: 2025-01-28 - ongoing
-        - PAM DB: Payment Automation Manager DB **[source-code access]**: 2025-01-28 - ongoing
-        - SPS: Secure Payment System **[source-code access]**: 2025-01-28 - ongoing
+        - PAM DB: Payment Automation Manager DB **[source-code access]**: 2025-01-28 - 2025-02-06
+        - SPS: Secure Payment System **[source-code access]**: 2025-01-28 - 2025-02-06
         - PAM DB: Payment Automation Manager DB **[read-write access]**: 2025-02-03 - 2025-02-06
         - PAM filesystem: Payment Automation Manager File System: 2025-02-03 - 2025-02-06
         - SPS: Secure Payment System **[read-write access]**: 2025-02-05 - 2025-02-06
@@ -199,9 +199,12 @@
         - DRA: Directory Resource Administrator: 2025-02-25 - ongoing
         - ePACS: Enterprise Physical Access Control System: 2025-02-25 - ongoing
         - USAccess: 2025-02-25 - ongoing
-        - Unemployment Insurance Data and Related Records: 2025-03-21 - ongoing
+        - UI Data: Unemployment Insurance Data and Related Records: 2025-03-21 - ongoing
         - REO: Reentry Employment Opportunities: 2025-04-18 - ongoing
     -  **SSA** (2025-02-18 to ??) [as "SSA-07"] 
+        - MBR: Master Beneficiary Record: 2025-03-17 - ongoing
+        - NUMIDENT: NUMIDENT files: 2025-03-17 - ongoing
+        - SSR: Supplemental Security Record master records: 2025-03-17 - ongoing
     -  **HHS** (2025-03-05 to ??) 
         - NDNH: National Directory of New Hires: 2025-03-06 - 2025-04-18
     -  **CMS** (2025-03-05 to ??) 
@@ -213,6 +216,7 @@
     -  **ICE**  
     -  **TSA**  
     -  **USCIS**  
+        - SAVE: Systematic Alien Verification for Entitlements: 2025-03-15 - ongoing
 
 # Charles Ezell
 - category: enabler
@@ -225,7 +229,8 @@
     -  **GSA** (2025-01-20 to ??)  volunteer
     -  **HHS** (2025-01-21 to ??) 
         - PMS: Payment Management System **[admin access]**: 2025-01-22 - ongoing
-        - GrantSolutions: 2025-01-27 - ongoing
+        - Grant Solutions: 2025-01-27 - ongoing
+        - HCAS: HHS Consolidated Acquisition System **[admin access]**: 2025-01-29 - ongoing
         - EHCM: Enterprise Human Capital Management System **[admin access]**: 2025-02-28 - ongoing
         - Grants.gov **[admin access]**: 2025-03-21 - 2025-04-18
     -  **USAID** (2025-01-27 to ??) 
@@ -239,8 +244,8 @@
     -  **Energy** (2025-02-(04)~ to 2025-02-(08)~) 
         - Microsoft 365: 2025-02-05 - ongoing
     -  **CFPB** (2025-02-07 to 2025-03-04) 
-        - Microsoft Active Directory: 2025-02-07 - 2025-03-04
-        - Microsoft Entra ID **[admin access]**: 2025-02-07 - 2025-03-04
+        - Active Directory: 2025-02-07 - 2025-03-04
+        - Entra: Microsoft Entra ID **[admin access]**: 2025-02-07 - 2025-03-04
     -  **State** (2025-02-10 to ??) Senior Advisor
     -  **NIH** (2025-02-24 to ??) 
         - eRA: NIH Grant Management System: 2025-01-27 - ongoing
@@ -257,8 +262,9 @@
 - positions:
     -  **Education** (2025-01-31 to ??) [as "ED-02"] Senior Advisor GS-15/6 $195,200
     -  **HHS** (2025-02-20 to ??) 
-        - GrantSolutions: 2025-02-28 - ongoing
+        - Grant Solutions: 2025-02-28 - ongoing
         - Grants.gov **[admin access]**: 2025-02-28 - ongoing
+        - HCAS: HHS Consolidated Acquisition System: 2025-02-28 - 2025-04-18
         - FBIS: Financial Business Intelligence System: 2025-03-07 - 2025-04-18
     -  **CMS** (2025-03-03 to ??) 
         - CALM: CMS Acquisition Lifecycle Management system: 2025-02-03 - 2025-04-18
@@ -273,7 +279,7 @@
 - positions:
     -  **GSA**  
     -  **NEH** (2025-03-(13)~ to ??) 
-        - Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
+        - Entra: Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
     -  **NLRB** (2025-04-16 to ??) 
 
 # Justin Fulcher
@@ -419,6 +425,7 @@
         - EAS: EPA Acquisition System: 2025-02-12 - ongoing
     -  **DOL** (2025-02-(13)~ to ??) 
     -  **SSA** (2025-02-18 to NTE 2026-07-04) [as "SSA-05"] 
+        - IRON Website: 2025-03-12 - ongoing
 
 # Gavin Kliger
 - category: wrecker
@@ -427,13 +434,13 @@
     -  **USAID** (2025-01-27 to ??) 
     -  **USDA** (2025-02-(01)~ to ??) 
     -  **CFPB** (2025-02-07 to 2025-05-08) 
-        - Microsoft Active Directory: 2025-02-07 - 2025-05-08
-        - Microsoft Entra ID: 2025-02-07 - 2025-05-08
+        - Active Directory: 2025-02-07 - 2025-05-08
+        - Entra: Microsoft Entra ID: 2025-02-07 - 2025-05-08
         - Physical Access Control: 2025-02-07 - 2025-05-08
         - Agency Website **[read-write access]**: 2025-03-08 - 2025-05-08
-        - Microsoft Power Automate **[admin access]**: 2025-04-12 - 2025-04-13
-        - Microsoft Sharepoint **[admin access]**: 2025-04-12 - 2025-05-08
-        - Microsoft Power Automate **[admin access]**: 2025-04-17 - 2025-04-17
+        - MS Sharepoint **[admin access]**: 2025-04-12 - 2025-05-08
+        - Power Automate **[admin access]**: 2025-04-12 - 2025-04-13
+        - Power Automate **[admin access]**: 2025-04-17 - 2025-04-17
     -  **OPM** (2025-02-18 to ??) **Senior Advisor to the Director for Information Technology** $195,200
     -  **IRS** (2025-02-19 to 2025-04-17) 
     -  **FTC** (2025-03-(28)~ to ??) 
@@ -449,6 +456,9 @@
 - category: wrecker
 - positions:
     -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-06"] Expert ED-00 volunteer
+        - MBR: Master Beneficiary Record: 2025-03-17 - ongoing
+        - NUMIDENT: NUMIDENT files: 2025-03-17 - ongoing
+        - SSR: Supplemental Security Record master records: 2025-03-17 - ongoing
     -  **DOJ** (2025-04-15 to ??) 
         - ECAS: Executive Office for Immigration Review's Court and Appeals System: 2025-04-21 - ongoing
 
@@ -488,7 +498,7 @@
         - CALM: CMS Acquisition Lifecycle Management system: 2025-02-03 - 2025-04-18
     -  **CFPB** (2025-02-07 to ??) 
     -  **HHS** (2025-02-21 to ??) 
-        - GrantSolutions: 2025-02-28 - ongoing
+        - Grant Solutions: 2025-02-28 - ongoing
     -  **NIH** (2025-02-24 to ??) 
     -  **USAID** (2025-03-18 to ??) Deputy Administrator(Policy and Programming) / COO
     -  **State** (2025-04-15 to ??) Acting Head of Foreign Assistance
@@ -586,7 +596,7 @@
         - REO: Reentry Employment Opportunities: 2025-04-18 - ongoing
     -  **SSA** (2025-02-22 to ??) [as "SSA-03"] 
     -  **HHS** (2025-03-05 to ??) 
-        - GrantSolutions: 2025-02-19 - ongoing
+        - Grant Solutions: 2025-02-19 - ongoing
         - NDNH: National Directory of New Hires: 2025-03-06 - 2025-04-18
     -  **CMS** (2025-03-05 to ??) 
         - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
@@ -669,6 +679,10 @@
 - category: wrecker
 - positions:
     -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-09"] Expert ED-00 volunteer
+        - PSSNAP: PSSNAP: 2025-03-14 - ongoing
+        - MBR: Master Beneficiary Record: 2025-03-17 - ongoing
+        - NUMIDENT: NUMIDENT files: 2025-03-17 - ongoing
+        - SSR: Supplemental Security Record master records: 2025-03-17 - ongoing
     -  **DHS**  
     -  **TSA**  
     -  **USCIS**  
@@ -688,9 +702,10 @@
 - positions:
     -  **HHS** (2025-01-27 to ??) 
         - EHCM: Enterprise Human Capital Management System: 2025-02-03 - ongoing
+        - HCAS: HHS Consolidated Acquisition System **[admin access]**: 2025-02-03 - 2025-04-18
         - FBIS: Financial Business Intelligence System: 2025-02-04 - ongoing
         - BIIS: Business Intelligence Information System: 2025-02-06 - ongoing
-        - GrantSolutions: 2025-02-20 - ongoing
+        - Grant Solutions: 2025-02-20 - ongoing
     -  **CMS** (2025-02-03 to ??) 
         - CALM: CMS Acquisition Lifecycle Management system: 2025-02-03 - ongoing
     -  **NIH** (2025-02-24 to ??) 
@@ -871,7 +886,7 @@
         - onrARC: Salesforce oneARC: 2025-02-07 - 2025-03-28
         - USA Staffing: 2025-02-07 - 2025-03-28
         - webTA: 2025-02-07 - ongoing
-        - Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
+        - Entra: Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
     -  **DOL** (2025-02-(13)~ to ??) 
     -  **Education** (2025-02-20 to ??) 
     -  **CFPB** (2025-03-05 to ??) Expert/Consultant
@@ -885,7 +900,7 @@
         - onrARC: Salesforce oneARC: 2025-02-07 - 2025-03-28
         - USA Staffing: 2025-02-07 - 2025-03-28
         - webTA: 2025-02-07 - ongoing
-        - Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
+        - Entra: Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
     -  **FCC** (2025-04-04 to ??) 
 
 # Joanna Wischer

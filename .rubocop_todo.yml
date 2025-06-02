@@ -53,6 +53,10 @@ Metrics/MethodLength:
 Metrics/PerceivedComplexity:
   Max: 35
 
+Metrics/ClassLength:
+  Exclude:
+  - 'plugins/builders/hydrate_data_yaml.rb'
+
 Layout/LineLength:
   Exclude:
   - 'src/_data/site_metadata.rb'

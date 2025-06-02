@@ -1,0 +1,30 @@
+{% import "macros" %}
+{% govt_systems = roles.group_by {|r| r.system} %}
+
+<table class="table table-fixed sm:table-auto table-xs sm:table-sm lg:table-md mb-0">
+  <thead>
+  <tr>
+    <th class="text-left w-3/12 sm:w-2/12 md:text-base lg:text-lg">System</th>
+    <th class="text-left w-1/12 hidden sm:table-cell md:text-base lg:text-lg">Date</th>
+    <th class="text-left w-3/12 md:text-base lg:text-lg">Person</th>
+    <th class="text-left w-6/12 sm:w-auto md:text-base lg:text-lg">Notes</th>
+  </tr>
+  </thead>
+  <tbody class="">
+    {% govt_systems.each do |govt_system, roles| %}
+      {% next unless roles.any? %}
+        {% roles.each do |role| %}
+           <tr {% unless role == roles[-1] %}class="border-b-0"{% end %}>
+              {% if role == roles[0] %}<td class="align-top" rowspan="{{ roles.count }}"><a href="/all/systems#{{ govt_system.id }}">{% if govt_system.acronym %}<abbr title="{{ govt_system.name }}">{{ govt_system.acronym }}</abbr>{% else %}{{ govt_system.name }}{% end %}</a></td>{% end %}
+              <td class="align-top hidden sm:table-cell">{{ render EdtfFormat.new(role.date_granted, :compact, :none) }}-{{ render EdtfFormat.new(role.date_revoked, :compact) }}</td>
+              <td class="align-top">{{ person_link(role.name) }}
+              <div>{%@ 'system_access_type', role: role %} access</div>
+              {% if role.ao_doge %}<div>by DOGE {{ person_link(role.ao_name) }}</div>{% end %}</td>
+              {% if role == roles[0] %}<td class="align-top" rowspan="{{ roles.count }}">
+              <strong><a href="/all/systems#{{ govt_system.id }}">{{ govt_system.name }}</a></strong>
+              {{ govt_system.description }}</td>{% end %}
+          </tr>
+      {% end %}
+    {% end %}
+  </tbody>
+</table>

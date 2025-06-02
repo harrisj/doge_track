@@ -48,6 +48,22 @@
       "description": "The type of the granting position",
       "$ref": "valid_names.json#ao_types"
     },
+    "ao_title": {
+      "description": "The title of the authorizing officer",
+      "type": "string"
+    },
+    "ao_office": {
+      "description": "The office of the authorizing officer",
+      "type": "string"
+    },
+    "ao_doge": {
+      "description": "Is the AO a DOGE person?",
+      "type": "boolean"
+    },
+    "ao_truth": {
+      "description": "How fuzzy is this AO information",
+      "$ref": "valid_names.json#truth_types"
+    },
     "bypassed": {
       "description": "What procedures were skipped / staff were sidelined to provide such access",
       "type": "string"
@@ -99,6 +115,9 @@
       ]
     },
     "comment": {
+      "type": "string"
+    },
+    "table_note": {
       "type": "string"
     }
   },
