@@ -64,6 +64,7 @@ DB.create_table! :positions do
   boolean :supervisory
   string :office
   string :source
+  string :source_name
   boolean :reimbursed
   string :reimbursement_amount
   string :comment

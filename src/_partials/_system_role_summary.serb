@@ -5,7 +5,7 @@
 {% if role.last_accessed %} (last access {{ render EdtfFormat.new(role.last_accessed, :compact) }}){% end %}
 {% if role.never_accessed %} (never accessed){% end %}
 {% if role.ao_type %} granted by {{ ao_type_display(role) }}{% end %}
-{% if role.ao_doge && role.ao_name %} {{ person_link(role.ao_name) }} (also in DOGE){% end %}
+{% if role.ao_doge && role.ao_name %} {{ person_link(role.ao_name) }}{% end %}
 {% if role.table_note %} [{{ role.table_note | md }}] {% end %}
 <br/>
 <span class="italic">{{ role.system.description | md }}</span> <span class="hidden sm:inline">({{ agency_link(role.agency_id) }})</span> <a href="{{ role.source }}" class="link-hover"><i class="fa-regular fa-newspaper"></i></a>

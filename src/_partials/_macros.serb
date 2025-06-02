@@ -385,7 +385,11 @@ end %}
       when 'other'
         nil
       when 'detailed'
-        'detail'
+        if pos.from_truth != 'reported' && pos.from_truth != 'verified'
+          'likely detailed'
+        else
+          'detail'
+        end
       when 'promotion'
         'promoted'
       when 'demotion'
@@ -422,11 +426,11 @@ end %}
     end
 
     if pos.table_note
-      note_str = "[#{pos.table_note}]"
+      note_str = "[_#{pos.table_note}_]"
     end
 
     if pos.source
-      source_str = "<a href=\"#{pos.source}\" class=\"link-hover\"><i class=\"fa-regular fa-newspaper\"></i></a>"
+      source_str = "<a href=\"#{pos.source}\" class=\"link-hover\"><i class=\"fa-regular fa-newspaper\"></i> #{ pos.source_name if pos.source_name }</a>"
     end
 
     if pos.documents.any?
