@@ -27,7 +27,7 @@
   - **Aram Moghaddassi** (2025-03-05)
   - **Zach Terrell** (2025-03-11)
 - systems:
-    - CALM: CMS Acquisition Lifecycle Management system
+    - CALM: CMS Acquisition Lifecycle Management System
         - Luke Farritor 2025-02-03 - ongoing
         - Rachel Riley 2025-02-03 - ongoing
         - Conor Fennessy 2025-02-03 - 2025-04-18
@@ -68,41 +68,41 @@
   - **Russell Vought** (2025-02-08) Acting Director
   - **Jordan Wick** (2025-03-05) Expert/Consultant
 - systems:
-    - Active Directory
+    - Microsoft AD: Active Directory
         - Gavin Kliger 2025-02-07 - 2025-05-08
         - Luke Farritor 2025-02-07 - 2025-03-04
-    - Agency Website
+    - website: Agency Website
         - Gavin Kliger **[read-write access]** 2025-03-08 - 2025-05-08
-    - Concur
+    - Concur: Concur
         - Jordan Wick 2025-02-07 - 2025-03-28
-    - Data Insight
+    - DI: Data Insight
         - Jordan Wick 2025-02-07 - 2025-03-28
-    - G-Invoicing
+    - G-invoice: G-Invoicing
         - Jordan Wick 2025-02-07 - 2025-03-28
-    - HRConnect
+    - HRConnect: HRConnect
         - Jordan Wick **[read-write access]** 2025-02-07 - 2025-03-28
     - IPP: Invoice Processing Platform
         - Jordan Wick 2025-02-07 - 2025-03-28
-    - MS Sharepoint
-        - Gavin Kliger **[admin access]** 2025-04-12 - 2025-05-08
     - Entra: Microsoft Entra ID
         - Luke Farritor **[admin access]** 2025-02-07 - 2025-03-04
         - Jordan Wick **[admin access]** 2025-02-09 - 2025-03-05
         - Gavin Kliger 2025-02-07 - 2025-05-08
+    - Sharepoint: Microsoft Sharepoint
+        - Gavin Kliger **[admin access]** 2025-04-12 - 2025-05-08
     - OBI: Oracle Business Intelligence
         - Jordan Wick 2025-02-07 - 2025-03-28
-    - Physical Access Control
+    - PAC: Physical Access Control
         - Gavin Kliger 2025-02-07 - 2025-05-08
-    - Power Automate
+    - Automate: Power Automate
         - Gavin Kliger **[admin access]** 2025-04-12 - 2025-04-13
         - Gavin Kliger **[admin access]** 2025-04-17 - 2025-04-17
     - PRISM: Procurement Request Information System Management
         - Jordan Wick 2025-02-07 - 2025-03-28
-    - onrARC: Salesforce oneARC
+    - oneARC: Salesforce oneARC
         - Jordan Wick 2025-02-07 - 2025-03-28
-    - USA Staffing
+    - USA Staff: USA Staffing
         - Jordan Wick 2025-02-07 - 2025-03-28
-    - webTA
+    - WebTA: WebTA
         - Jordan Wick 2025-02-07 - ongoing
 
 # Census Bureau
@@ -127,7 +127,7 @@
   - **Edward Coristine** (2025-02-19) Senior Advisor
   - **Kyle Schutt** (2025-02-19) Senior Advisor (detailed from DHS)
 - systems:
-    - Microsoft 365
+    - Office365: Microsoft Office 365
         - Edward Coristine **[admin access]** 2025-02-20 - ongoing
 
 # Department of Agriculture
@@ -229,7 +229,7 @@
   - **Adam Ramada** (2025-02-(04)~ - 2025-02-(08)~) (detailed from DOGE)
   - **Ryan Riedel** (2025-02-07 - 2025-03-07) Chief Information Officer
 - systems:
-    - Microsoft 365
+    - Office365: Microsoft Office 365
         - Luke Farritor 2025-02-05 - ongoing
 
 # Department of Labor
@@ -253,7 +253,7 @@
         - Marko Elez 2025-02-25 - ongoing
     - FLAG: Foreign Labor Application Gateway
         - Aram Moghaddassi **[admin access]** 2025-04-18 - ongoing
-    - HRConnect
+    - HRConnect: HRConnect
         - Miles Collins 2025-02-19 - ongoing
     - NFJP: National Farmworker Jobs Program
         - Miles Collins 2025-04-18 - ongoing
@@ -267,7 +267,7 @@
         - Miles Collins 2025-04-18 - ongoing
         - Aram Moghaddassi 2025-04-18 - ongoing
         - Marko Elez 2025-04-18 - ongoing
-    - USAccess
+    - USAccess: USAccess
         - Marko Elez 2025-02-25 - ongoing
     - UI Data: Unemployment Insurance Data and Related Records
         - Marko Elez 2025-03-21 - ongoing
@@ -288,7 +288,7 @@
     - PAM DB: Payment Automation Manager DB
         - Marko Elez **[source-code access]** 2025-01-28 - 2025-02-06
         - Marko Elez **[read-write access]** 2025-02-03 - 2025-02-06
-    - PAM filesystem: Payment Automation Manager File System
+    - PAM FS: Payment Automation Manager File System
         - Marko Elez 2025-02-03 - 2025-02-06
     - SPS: Secure Payment System
         - Marko Elez **[source-code access]** 2025-01-28 - 2025-02-06
@@ -437,13 +437,13 @@
         - Rachel Riley 2025-02-04 - ongoing
         - Conor Fennessy 2025-03-07 - 2025-04-18
         - Zach Terrell 2025-03-16 - ongoing
-    - Grant Solutions
+    - Grant Sol.: Grant Solutions
         - Luke Farritor 2025-01-27 - ongoing
         - Aram Moghaddassi 2025-02-19 - ongoing
         - Rachel Riley 2025-02-20 - ongoing
         - Conor Fennessy 2025-02-28 - ongoing
         - Jeremy Lewin 2025-02-28 - ongoing
-    - Grants.gov
+    - Grants.gov: Grants.gov
         - Conor Fennessy 2025-02-28 - ongoing
         - Luke Farritor **[admin access]** 2025-03-21 - 2025-04-18
     - HCAS: HHS Consolidated Acquisition System
@@ -556,7 +556,7 @@
   - **Nikhil Rajpal** (2025-02-04) (detailed from OPM)
   - **Bryton Shang** (2025-04-02) Senior Advisor
 - systems:
-    - Google Drive
+    - Google: Google Drive
         - Nikhil Rajpal **[read-write access]** 2025-02-05 - ongoing
 
 # National Institute of Health
@@ -669,7 +669,7 @@
   - **Leland Dudek** (2025-05-06)
   - **Frank Bisignano** (2025-05-06) Commissioner
 - systems:
-    - IRON Website
+    - IRON: IRON Website
         - {sr.doge_alias_id} (Cole Killian) 2025-03-12 - ongoing
     - MBR: Master Beneficiary Record
         - {sr.doge_alias_id} (Jon Koval) 2025-03-17 - ongoing
@@ -680,7 +680,7 @@
         - {sr.doge_alias_id} (Jon Koval) 2025-03-17 - ongoing
         - {sr.doge_alias_id} (Marko Elez) 2025-03-17 - ongoing
         - {sr.doge_alias_id} (Payton Rehling) 2025-03-17 - ongoing
-    - PSSNAP: PSSNAP
+    - PSSNAP: Phone Social Security Number Application Process data
         - {sr.doge_alias_id} (Payton Rehling) 2025-03-14 - ongoing
     - SSR: Supplemental Security Record master records
         - {sr.doge_alias_id} (Jon Koval) 2025-03-17 - ongoing

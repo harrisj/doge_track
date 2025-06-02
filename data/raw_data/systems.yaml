@@ -32,6 +32,7 @@
 
 - name: Active Directory
   id: microsoft-ad
+  acronym: Microsoft AD
   type: saas
   category: security
   description: A system for controlling access to other systems within an agency
@@ -63,6 +64,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
 - name: Agency Website
+  acronym: website
   id: website
   type: saas
   category: communications
@@ -147,7 +149,7 @@
     ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
-- name: CMS Acquisition Lifecycle Management system
+- name: CMS Acquisition Lifecycle Management System
   type: internal
   id: calm
   acronym: CALM
@@ -281,6 +283,7 @@
   agency: Education
 
 - name: Concur
+  acronym: Concur
   id: concur
   type: ssp
   category: personnel
@@ -302,6 +305,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
 - name: Data Insight
+  acronym: DI
   id: data-insight
   type: internal
   agency: CFPB
@@ -785,6 +789,7 @@
 - name: G-Invoicing
   id: g-invoicing
   link: https://www.fiscal.treasury.gov/g-invoice/
+  acronym: G-invoice
   agency: Treasury
   type: ssp
   description: A shared service from BFS for handling intergovernmental invoicing
@@ -805,6 +810,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
 - name: Google Drive
+  acronym: Google
   id: google-drive
   type: saas
   access:
@@ -836,6 +842,7 @@
 
 - name: Grant Solutions
   id: grantsolutions
+  acronym: Grant Sol.
   type: ssp
   category: obligations
   description: A shared-service provider tool for federal agencies to track grants across their entire
@@ -894,6 +901,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
 - name: Grants.gov
+  acronym: Grants.gov
   id: givenrants.gov
   type: ssp
   category: obligations
@@ -1009,6 +1017,7 @@
 
 - name: HRConnect
   type: ssp
+  acronym: HRConnect
   category: personnel
   id: hrconnect
   description: HR system for tracking employee information
@@ -1173,6 +1182,7 @@
 
 - name: IRON Website
   id: iron
+  acronym: IRON
   type: internal
   category: obligations
   comment: System unknown, named in internal SSA emails as way to investigate people
@@ -1357,24 +1367,6 @@
     date_grant_truth: reported
     source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
 
-- name: MS Sharepoint
-  id: sharepoint
-  type: saas
-  description: Microsoft service for sharing documents within an organization
-  access:
-  - id: sharepoint-kliger
-    type: admin
-    agency: CFPB
-    name: Gavin Kliger
-    date_granted: 2025-04-12
-    date_grant_truth: verified
-    date_revoked: 2025-05-08
-    date_revoked_truth: inferred
-    ao_type: cio
-    ao_truth: reported
-    table_note: Used by Gavin to access documents to run layoffs
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
-
 - name: Master Beneficiary Record
   acronym: MBR
   id: mbr
@@ -1429,27 +1421,6 @@
     ao_doge: true
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
     name: Payton Rehling
-
-- name: Microsoft 365
-  id: ms-office
-  type: saas
-  description: Microsoft Office 365 is used for agency email and knowledge management systems.
-  access:
-  - id: cisa-office-coristine
-    agency: CISA
-    name: Edward Coristine
-    type: admin
-    date_granted: 2025-02-20
-    date_grant_truth: reported
-    source: >-
-      https://www.nbcnews.com/politics/donald-trump/live-blog/trump-france-emmanuel-macron-white-house-ukraine-tariffs-live-updates-rcna193386#rcrd73638
-  - id: energy-office-farritor
-    type: unknown
-    agency: Energy
-    name: Luke Farritor
-    date_granted: 2025-02-05
-    date_grant_truth: reported
-    source: https://www.cnn.com/2025/02/06/climate/doge-energy-department-trump/index.html
 
 - name: Microsoft Entra ID
   id: entra
@@ -1521,6 +1492,47 @@
       The lawsuit against NEH cites emails being sent from Grant_Notifications@nehemail.onmicrosoft.com
       which is the form of a Global Admin account for Microsoft Entra (probably for the NEH email systems)
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
+
+- name: Microsoft Office 365
+  id: ms-office
+  acronym: Office365
+  type: saas
+  description: Microsoft Office 365 is used for agency email and knowledge management systems.
+  access:
+  - id: cisa-office-coristine
+    agency: CISA
+    name: Edward Coristine
+    type: admin
+    date_granted: 2025-02-20
+    date_grant_truth: reported
+    source: >-
+      https://www.nbcnews.com/politics/donald-trump/live-blog/trump-france-emmanuel-macron-white-house-ukraine-tariffs-live-updates-rcna193386#rcrd73638
+  - id: energy-office-farritor
+    type: unknown
+    agency: Energy
+    name: Luke Farritor
+    date_granted: 2025-02-05
+    date_grant_truth: reported
+    source: https://www.cnn.com/2025/02/06/climate/doge-energy-department-trump/index.html
+
+- name: Microsoft Sharepoint
+  acronym: Sharepoint
+  id: sharepoint
+  type: saas
+  description: Microsoft service for sharing documents within an organization
+  access:
+  - id: sharepoint-kliger
+    type: admin
+    agency: CFPB
+    name: Gavin Kliger
+    date_granted: 2025-04-12
+    date_grant_truth: verified
+    date_revoked: 2025-05-08
+    date_revoked_truth: inferred
+    ao_type: cio
+    ao_truth: reported
+    table_note: Used by Gavin to access documents to run layoffs
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
 
 - name: NIH Business System
   id: nbs
@@ -1738,6 +1750,7 @@
   agency: FAA
 
 - name: Notify.gov
+  acronym: Notify
   id: notify.gov
   type: internal
   category: communications
@@ -1845,28 +1858,6 @@
     comment: Revoked date is likely earlier
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
-- name: PSSNAP
-  id: pssnap
-  acronym: PSSNAP
-  type: internal
-  category: obligations
-  description: SSN application process data (Phone). This is a data extract file rather than an independent
-    system.
-  agency: SSA
-  access:
-  - id: pssnap-ssa-9
-    type: read
-    alias: SSA-09
-    date_granted: 2025-03-14
-    date_grant_truth: verified
-    comment: >-
-      Leland Dudek approves access of "Employee 9" to review PSSNAP data with the Enterprise Data Warehouse
-    ao_type: director
-    ao_name: Leland Dudek
-    ao_doge: true
-    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-    name: Payton Rehling
-
 - name: Payment Automation Manager DB
   id: pam-db
   acronym: PAM DB
@@ -1913,7 +1904,7 @@
     ao_truth: verified
 
 - name: Payment Automation Manager File System
-  acronym: PAM filesystem
+  acronym: PAM FS
   id: pam-fs
   type: internal
   category: payments
@@ -1977,6 +1968,7 @@
 
 - name: Pegasys
   id: pegasys
+  acronym: Pegasys
   type: internal
   category: payments
   description: >-
@@ -1989,8 +1981,31 @@
     https://www.federalregister.gov/documents/2006/10/16/E6-17069/privacy-act-of-1974-notice-of-a-new-system-of-records
   agency: GSA
 
+- name: Phone Social Security Number Application Process data
+  id: pssnap
+  acronym: PSSNAP
+  type: internal
+  category: obligations
+  description: SSN application process data (Phone). This is a data extract file rather than an independent
+    system.
+  agency: SSA
+  access:
+  - id: pssnap-ssa-9
+    type: read
+    alias: SSA-09
+    date_granted: 2025-03-14
+    date_grant_truth: verified
+    comment: >-
+      Leland Dudek approves access of "Employee 9" to review PSSNAP data with the Enterprise Data Warehouse
+    ao_type: director
+    ao_name: Leland Dudek
+    ao_doge: true
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
+    name: Payton Rehling
+
 - name: Physical Access Control
   id: cfpb-pac
+  acronym: PAC
   description: Possibly a system for controlling and monitoring physical access to CFPB buildings
   category: security
   agency: CFPB
@@ -2009,6 +2024,7 @@
 
 - name: Power Automate
   id: power-automate
+  acronym: Automate
   type: saas
   link: https://www.microsoft.com/en-us/power-platform/products/power-automate
   description: A Microsoft tool for automating tasks that operate on documents and providing to staff
@@ -2128,7 +2144,7 @@
     source: https://www.wired.com/story/doge-access-immigration-data-department-of-labor/
 
 - name: Salesforce oneARC
-  acronym: onrARC
+  acronym: oneARC
   id: onearc
   link: https://fs-arc.my.site.com/portal/s/
   type: saas
@@ -2288,6 +2304,7 @@
 
 - name: USA Performance
   id: usa-performance
+  acronym: USA Perf
   type: ssp
   category: personnel
   description: System tracking job performance of federal employees
@@ -2299,6 +2316,7 @@
 
 - name: USA Staffing
   id: usa-staffing
+  acronym: USA Staff
   type: ssp
   category: personnel
   description: System for tracking the onboarding of federal employees
@@ -2323,6 +2341,7 @@
 
 - name: USAJobs
   id: usa-jobs
+  acronym: USA Jobs
   type: ssp
   category: personnel
   description: Official hiring site for the federal government
@@ -2335,6 +2354,7 @@
 
 - name: USAccess
   id: usaccess
+  acronym: USAccess
   type: ssp
   description: Shared service access provider system
   agency: GSA
@@ -2439,8 +2459,9 @@
     date_grant_truth: reported
     source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
 
-- name: webTA
+- name: WebTA
   id: webta
+  acronym: WebTA
   type: ssp
   description: System for tracking timecards
   access:

@@ -113,7 +113,7 @@
 - positions:
     -  **DOL** (2025-03-05 to ??) 
         - PMS: Payment Management System:  - ongoing
-        - HRConnect: 2025-02-19 - ongoing
+        - HRConnect: HRConnect: 2025-02-19 - ongoing
         - NCFMS: New Core Financial Management System: 2025-02-20 - ongoing
         - DRA: Directory Resource Administrator: 2025-02-26 - ongoing
         - OJC-EIS: Office of Job Corps Electronic Information System: 2025-03-20 - ongoing
@@ -141,12 +141,12 @@
     -  **State** (2025-02-10 to ??) Senior Advisor
     -  **USAID** (2025-02-10 to ??) Senior Advisor
     -  **CISA** (2025-02-19 to ??) Senior Advisor
-        - Microsoft 365 **[admin access]**: 2025-02-20 - ongoing
+        - Office365: Microsoft Office 365 **[admin access]**: 2025-02-20 - ongoing
     -  **Education** (2025-02-20 to ??) 
     -  **HHS** (2025-03-05 to ??) 
     -  **CMS** (2025-03-05 to ??) 
         - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
-        - CALM: CMS Acquisition Lifecycle Management system: 2025-03-05 - ongoing
+        - CALM: CMS Acquisition Lifecycle Management System: 2025-03-05 - ongoing
         - IDR: Integrated Data Repository: 2025-03-11 - ongoing
     -  **TSA**  
     -  **USCIS**  
@@ -193,12 +193,12 @@
         - PAM DB: Payment Automation Manager DB **[source-code access]**: 2025-01-28 - 2025-02-06
         - SPS: Secure Payment System **[source-code access]**: 2025-01-28 - 2025-02-06
         - PAM DB: Payment Automation Manager DB **[read-write access]**: 2025-02-03 - 2025-02-06
-        - PAM filesystem: Payment Automation Manager File System: 2025-02-03 - 2025-02-06
+        - PAM FS: Payment Automation Manager File System: 2025-02-03 - 2025-02-06
         - SPS: Secure Payment System **[read-write access]**: 2025-02-05 - 2025-02-06
     -  **DOL** (2025-02-(14)~ to ??) 
         - DRA: Directory Resource Administrator: 2025-02-25 - ongoing
         - ePACS: Enterprise Physical Access Control System: 2025-02-25 - ongoing
-        - USAccess: 2025-02-25 - ongoing
+        - USAccess: USAccess: 2025-02-25 - ongoing
         - UI Data: Unemployment Insurance Data and Related Records: 2025-03-21 - ongoing
         - REO: Reentry Employment Opportunities: 2025-04-18 - ongoing
     -  **SSA** (2025-02-18 to ??) [as "SSA-07"] 
@@ -209,7 +209,7 @@
         - NDNH: National Directory of New Hires: 2025-03-06 - 2025-04-18
     -  **CMS** (2025-03-05 to ??) 
         - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
-        - CALM: CMS Acquisition Lifecycle Management system: 2025-03-05 - ongoing
+        - CALM: CMS Acquisition Lifecycle Management System: 2025-03-05 - ongoing
         - IDR: Integrated Data Repository: 2025-03-05 - ongoing
     -  **DHS**  
     -  **CBP**  
@@ -229,22 +229,22 @@
     -  **GSA** (2025-01-20 to ??)  volunteer
     -  **HHS** (2025-01-21 to ??) 
         - PMS: Payment Management System **[admin access]**: 2025-01-22 - ongoing
-        - Grant Solutions: 2025-01-27 - ongoing
+        - Grant Sol.: Grant Solutions: 2025-01-27 - ongoing
         - HCAS: HHS Consolidated Acquisition System **[admin access]**: 2025-01-29 - ongoing
         - EHCM: Enterprise Human Capital Management System **[admin access]**: 2025-02-28 - ongoing
-        - Grants.gov **[admin access]**: 2025-03-21 - 2025-04-18
+        - Grants.gov: Grants.gov **[admin access]**: 2025-03-21 - 2025-04-18
     -  **USAID** (2025-01-27 to ??) 
     -  **CDC** (2025-01-30 to ??) 
         - ICE: Integrated Contracts Expert: 2025-01-30 - ongoing
         - APEX: Acquisition Performance and Execution: 2025-02-04 - ongoing
     -  **CMS** (2025-01-31 to ??) 
         - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-01-31 - ongoing
-        - CALM: CMS Acquisition Lifecycle Management system: 2025-02-03 - ongoing
+        - CALM: CMS Acquisition Lifecycle Management System: 2025-02-03 - ongoing
         - IDR: Integrated Data Repository: 2025-02-18 - ongoing
     -  **Energy** (2025-02-(04)~ to 2025-02-(08)~) 
-        - Microsoft 365: 2025-02-05 - ongoing
+        - Office365: Microsoft Office 365: 2025-02-05 - ongoing
     -  **CFPB** (2025-02-07 to 2025-03-04) 
-        - Active Directory: 2025-02-07 - 2025-03-04
+        - Microsoft AD: Active Directory: 2025-02-07 - 2025-03-04
         - Entra: Microsoft Entra ID **[admin access]**: 2025-02-07 - 2025-03-04
     -  **State** (2025-02-10 to ??) Senior Advisor
     -  **NIH** (2025-02-24 to ??) 
@@ -262,12 +262,12 @@
 - positions:
     -  **Education** (2025-01-31 to ??) [as "ED-02"] Senior Advisor GS-15/6 $195,200
     -  **HHS** (2025-02-20 to ??) 
-        - Grant Solutions: 2025-02-28 - ongoing
-        - Grants.gov: 2025-02-28 - ongoing
+        - Grant Sol.: Grant Solutions: 2025-02-28 - ongoing
+        - Grants.gov: Grants.gov: 2025-02-28 - ongoing
         - HCAS: HHS Consolidated Acquisition System: 2025-02-28 - 2025-04-18
         - FBIS: Financial Business Intelligence System: 2025-03-07 - 2025-04-18
     -  **CMS** (2025-03-03 to ??) 
-        - CALM: CMS Acquisition Lifecycle Management system: 2025-02-03 - 2025-04-18
+        - CALM: CMS Acquisition Lifecycle Management System: 2025-02-03 - 2025-04-18
 
 # Joshua Fox
 - category: unknown
@@ -316,7 +316,7 @@
     -  **DOGE** (2024-12-30 to 2024-02-18) 
     -  **DOGE** (2025-02-18 to ??) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
     -  **CMS** (2025-02-(24)~ to ??) 
-        - CALM: CMS Acquisition Lifecycle Management system: 2025-02-24 - ongoing
+        - CALM: CMS Acquisition Lifecycle Management System: 2025-02-24 - ongoing
     -  **HHS** (2025-03-04 to ??) Expert/Consultant
 
 # Mike Gonzalez
@@ -425,7 +425,7 @@
         - EAS: EPA Acquisition System: 2025-02-12 - ongoing
     -  **DOL** (2025-02-(13)~ to ??) 
     -  **SSA** (2025-02-18 to NTE 2026-07-04) [as "SSA-05"] 
-        - IRON Website: 2025-03-12 - ongoing
+        - IRON: IRON Website: 2025-03-12 - ongoing
 
 # Gavin Kliger
 - category: wrecker
@@ -434,13 +434,13 @@
     -  **USAID** (2025-01-27 to ??) 
     -  **USDA** (2025-02-(01)~ to ??) 
     -  **CFPB** (2025-02-07 to 2025-05-08) 
-        - Active Directory: 2025-02-07 - 2025-05-08
+        - Microsoft AD: Active Directory: 2025-02-07 - 2025-05-08
         - Entra: Microsoft Entra ID: 2025-02-07 - 2025-05-08
-        - Physical Access Control: 2025-02-07 - 2025-05-08
-        - Agency Website **[read-write access]**: 2025-03-08 - 2025-05-08
-        - MS Sharepoint **[admin access]**: 2025-04-12 - 2025-05-08
-        - Power Automate **[admin access]**: 2025-04-12 - 2025-04-13
-        - Power Automate **[admin access]**: 2025-04-17 - 2025-04-17
+        - PAC: Physical Access Control: 2025-02-07 - 2025-05-08
+        - website: Agency Website **[read-write access]**: 2025-03-08 - 2025-05-08
+        - Sharepoint: Microsoft Sharepoint **[admin access]**: 2025-04-12 - 2025-05-08
+        - Automate: Power Automate **[admin access]**: 2025-04-12 - 2025-04-13
+        - Automate: Power Automate **[admin access]**: 2025-04-17 - 2025-04-17
     -  **OPM** (2025-02-18 to ??) **Senior Advisor to the Director for Information Technology** $195,200
     -  **IRS** (2025-02-19 to 2025-04-17) 
     -  **FTC** (2025-03-(28)~ to ??) 
@@ -495,10 +495,10 @@
     -  **GSA** (2025-01-20 to ??) 
     -  **USAID** (2025-01-28 to 2025-03-18) Senior Advisor / Director for Strategy & Programs
     -  **CMS** (2025-02-03 to ??) 
-        - CALM: CMS Acquisition Lifecycle Management system: 2025-02-03 - 2025-04-18
+        - CALM: CMS Acquisition Lifecycle Management System: 2025-02-03 - 2025-04-18
     -  **CFPB** (2025-02-07 to ??) 
     -  **HHS** (2025-02-21 to ??) 
-        - Grant Solutions: 2025-02-28 - ongoing
+        - Grant Sol.: Grant Solutions: 2025-02-28 - ongoing
     -  **NIH** (2025-02-24 to ??) 
     -  **USAID** (2025-03-18 to ??) Deputy Administrator(Policy and Programming) / COO
     -  **State** (2025-04-15 to ??) Acting Head of Foreign Assistance
@@ -596,11 +596,11 @@
         - REO: Reentry Employment Opportunities: 2025-04-18 - ongoing
     -  **SSA** (2025-02-22 to ??) [as "SSA-03"] 
     -  **HHS** (2025-03-05 to ??) 
-        - Grant Solutions: 2025-02-19 - ongoing
+        - Grant Sol.: Grant Solutions: 2025-02-19 - ongoing
         - NDNH: National Directory of New Hires: 2025-03-06 - 2025-04-18
     -  **CMS** (2025-03-05 to ??) 
         - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
-        - CALM: CMS Acquisition Lifecycle Management system: 2025-03-05 - ongoing
+        - CALM: CMS Acquisition Lifecycle Management System: 2025-03-05 - ongoing
         - IDR: Integrated Data Repository: 2025-03-05 - ongoing
     -  **DHS**  
     -  **CBP**  
@@ -656,7 +656,7 @@
 - positions:
     -  **OPM** (2025-01-24 to ??) [as "OPM-06"] Expert ED-00 volunteer
     -  **NOAA** (2025-02-04 to ??) 
-        - Google Drive **[read-write access]**: 2025-02-05 - ongoing
+        - Google: Google Drive **[read-write access]**: 2025-02-05 - ongoing
     -  **CFPB** (2025-02-07 to 2025-03-21) 
     -  **SSA** (2025-02-26 to NTE 2026-02-26) [as "SSA-08"] 
 
@@ -679,7 +679,7 @@
 - category: wrecker
 - positions:
     -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-09"] Expert ED-00 volunteer
-        - PSSNAP: PSSNAP: 2025-03-14 - ongoing
+        - PSSNAP: Phone Social Security Number Application Process data: 2025-03-14 - ongoing
         - MBR: Master Beneficiary Record: 2025-03-17 - ongoing
         - NUMIDENT: NUMIDENT files: 2025-03-17 - ongoing
         - SSR: Supplemental Security Record master records: 2025-03-17 - ongoing
@@ -705,9 +705,9 @@
         - HCAS: HHS Consolidated Acquisition System **[admin access]**: 2025-02-03 - 2025-04-18
         - FBIS: Financial Business Intelligence System: 2025-02-04 - ongoing
         - BIIS: Business Intelligence Information System: 2025-02-06 - ongoing
-        - Grant Solutions: 2025-02-20 - ongoing
+        - Grant Sol.: Grant Solutions: 2025-02-20 - ongoing
     -  **CMS** (2025-02-03 to ??) 
-        - CALM: CMS Acquisition Lifecycle Management system: 2025-02-03 - ongoing
+        - CALM: CMS Acquisition Lifecycle Management System: 2025-02-03 - ongoing
     -  **NIH** (2025-02-24 to ??) 
         - EBS: Oracle E-Business Suite: 2025-02-24 - ongoing
         - PRISM: Procurement Request Information System Management: 2025-02-24 - ongoing
@@ -876,30 +876,30 @@
     -  **DOGE** (2025-01-(20)~ to ??) 
     -  **USDA** (2025-02-(01)~ to ??) 
     -  **CFPB** (2025-02-07 to 2025-03-04) 
-        - Concur: 2025-02-07 - 2025-03-28
-        - Data Insight: 2025-02-07 - 2025-03-28
-        - G-Invoicing: 2025-02-07 - 2025-03-28
-        - HRConnect **[read-write access]**: 2025-02-07 - 2025-03-28
+        - Concur: Concur: 2025-02-07 - 2025-03-28
+        - DI: Data Insight: 2025-02-07 - 2025-03-28
+        - G-invoice: G-Invoicing: 2025-02-07 - 2025-03-28
+        - HRConnect: HRConnect **[read-write access]**: 2025-02-07 - 2025-03-28
         - IPP: Invoice Processing Platform: 2025-02-07 - 2025-03-28
         - OBI: Oracle Business Intelligence: 2025-02-07 - 2025-03-28
         - PRISM: Procurement Request Information System Management: 2025-02-07 - 2025-03-28
-        - onrARC: Salesforce oneARC: 2025-02-07 - 2025-03-28
-        - USA Staffing: 2025-02-07 - 2025-03-28
-        - webTA: 2025-02-07 - ongoing
+        - oneARC: Salesforce oneARC: 2025-02-07 - 2025-03-28
+        - USA Staff: USA Staffing: 2025-02-07 - 2025-03-28
+        - WebTA: WebTA: 2025-02-07 - ongoing
         - Entra: Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
     -  **DOL** (2025-02-(13)~ to ??) 
     -  **Education** (2025-02-20 to ??) 
     -  **CFPB** (2025-03-05 to ??) Expert/Consultant
-        - Concur: 2025-02-07 - 2025-03-28
-        - Data Insight: 2025-02-07 - 2025-03-28
-        - G-Invoicing: 2025-02-07 - 2025-03-28
-        - HRConnect **[read-write access]**: 2025-02-07 - 2025-03-28
+        - Concur: Concur: 2025-02-07 - 2025-03-28
+        - DI: Data Insight: 2025-02-07 - 2025-03-28
+        - G-invoice: G-Invoicing: 2025-02-07 - 2025-03-28
+        - HRConnect: HRConnect **[read-write access]**: 2025-02-07 - 2025-03-28
         - IPP: Invoice Processing Platform: 2025-02-07 - 2025-03-28
         - OBI: Oracle Business Intelligence: 2025-02-07 - 2025-03-28
         - PRISM: Procurement Request Information System Management: 2025-02-07 - 2025-03-28
-        - onrARC: Salesforce oneARC: 2025-02-07 - 2025-03-28
-        - USA Staffing: 2025-02-07 - 2025-03-28
-        - webTA: 2025-02-07 - ongoing
+        - oneARC: Salesforce oneARC: 2025-02-07 - 2025-03-28
+        - USA Staff: USA Staffing: 2025-02-07 - 2025-03-28
+        - WebTA: WebTA: 2025-02-07 - ongoing
         - Entra: Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
     -  **FCC** (2025-04-04 to ??) 
 

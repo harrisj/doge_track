@@ -38,7 +38,7 @@
   all_names: []
   access_ids: []
 - id: microsoft-ad
-  acronym:
+  acronym: Microsoft AD
   name: Active Directory
   type: saas
   description: A system for controlling access to other systems within an agency
@@ -59,7 +59,7 @@
   - ad-cfpb-kliger
   - ad-cfpb-farritor
 - id: website
-  acronym:
+  acronym: website
   name: Agency Website
   type: saas
   description: This is a stand-in for whatever website platform an agency is using
@@ -153,7 +153,7 @@
   - biis-riley
 - id: calm
   acronym: CALM
-  name: CMS Acquisition Lifecycle Management system
+  name: CMS Acquisition Lifecycle Management System
   type: internal
   description: System for tracking CMS acquisitions, contracts, milestones and audits.
   comment:
@@ -240,7 +240,7 @@
   all_names: []
   access_ids: []
 - id: concur
-  acronym:
+  acronym: Concur
   name: Concur
   type: ssp
   description: Shared service for booking government travel
@@ -259,7 +259,7 @@
   access_ids:
   - concur-cfpb-wick
 - id: data-insight
-  acronym:
+  acronym: DI
   name: Data Insight
   type: internal
   description: Provides information on CFPB reporting structure
@@ -655,7 +655,7 @@
   access_ids:
   - flag-mohgaddassi
 - id: g-invoicing
-  acronym:
+  acronym: G-invoice
   name: G-Invoicing
   type: ssp
   description: A shared service from BFS for handling intergovernmental invoicing
@@ -675,7 +675,7 @@
   access_ids:
   - ginvoicing-cfpb-wick
 - id: google-drive
-  acronym:
+  acronym: Google
   name: Google Drive
   type: saas
   description:
@@ -713,7 +713,7 @@
   all_names: []
   access_ids: []
 - id: grantsolutions
-  acronym:
+  acronym: Grant Sol.
   name: Grant Solutions
   type: ssp
   description: A shared-service provider tool for federal agencies to track grants across their entire lifecycles
@@ -740,7 +740,7 @@
   - grantsolutions-fennessy
   - grantsolutions-lewin
 - id: givenrants.gov
-  acronym:
+  acronym: Grants.gov
   name: Grants.gov
   type: ssp
   description: A system run and administered by HHS that is used at 18+ agencies for publishing grants, finding recipients and delivering funds
@@ -803,7 +803,7 @@
   access_ids:
   - ufms-terrell
 - id: hrconnect
-  acronym:
+  acronym: HRConnect
   name: HRConnect
   type: ssp
   description: HR system for tracking employee information
@@ -941,7 +941,7 @@
   all_names: []
   access_ids: []
 - id: iron
-  acronym:
+  acronym: IRON
   name: IRON Website
   type: internal
   description: FIXME
@@ -1100,25 +1100,6 @@
   access_ids:
   - locss-mirski
   - locss-langmack
-- id: sharepoint
-  acronym:
-  name: MS Sharepoint
-  type: saas
-  description: Microsoft service for sharing documents within an organization
-  comment:
-  category:
-  population:
-  risk:
-  link:
-  pia:
-  sorn:
-  agency_id:
-  all_agency_ids:
-  - CFPB
-  all_names:
-  - Gavin Kliger
-  access_ids:
-  - sharepoint-kliger
 - id: mbr
   acronym: MBR
   name: Master Beneficiary Record
@@ -1142,28 +1123,6 @@
   - mbr-ssa-6
   - mbr-ssa-7
   - mbr-ssa-9
-- id: ms-office
-  acronym:
-  name: Microsoft 365
-  type: saas
-  description: Microsoft Office 365 is used for agency email and knowledge management systems.
-  comment:
-  category:
-  population:
-  risk:
-  link:
-  pia:
-  sorn:
-  agency_id:
-  all_agency_ids:
-  - CISA
-  - Energy
-  all_names:
-  - Edward Coristine
-  - Luke Farritor
-  access_ids:
-  - cisa-office-coristine
-  - energy-office-farritor
 - id: entra
   acronym: Entra
   name: Microsoft Entra ID
@@ -1192,6 +1151,47 @@
   - entra-kliger
   - entra-neh-cavanaugh
   - entra-neh-justin-fox
+- id: ms-office
+  acronym: Office365
+  name: Microsoft Office 365
+  type: saas
+  description: Microsoft Office 365 is used for agency email and knowledge management systems.
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - CISA
+  - Energy
+  all_names:
+  - Edward Coristine
+  - Luke Farritor
+  access_ids:
+  - cisa-office-coristine
+  - energy-office-farritor
+- id: sharepoint
+  acronym: Sharepoint
+  name: Microsoft Sharepoint
+  type: saas
+  description: Microsoft service for sharing documents within an organization
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - CFPB
+  all_names:
+  - Gavin Kliger
+  access_ids:
+  - sharepoint-kliger
 - id: nbs
   acronym: NBS
   name: NIH Business System
@@ -1369,7 +1369,7 @@
   all_names: []
   access_ids: []
 - id: notify.gov
-  acronym:
+  acronym: Notify
   name: Notify.gov
   type: internal
   description: System for sending text messages to the public
@@ -1484,25 +1484,6 @@
   - ebs-riley
   - ebs-farritor
   - ebs-fennesy
-- id: pssnap
-  acronym: PSSNAP
-  name: PSSNAP
-  type: internal
-  description: SSN application process data (Phone). This is a data extract file rather than an independent system.
-  comment:
-  category: obligations
-  population:
-  risk:
-  link:
-  pia:
-  sorn:
-  agency_id: SSA
-  all_agency_ids:
-  - SSA
-  all_names:
-  - Payton Rehling
-  access_ids:
-  - pssnap-ssa-9
 - id: pam-db
   acronym: PAM DB
   name: Payment Automation Manager DB
@@ -1527,7 +1508,7 @@
   - pam-src-elez
   - pam-db-elez
 - id: pam-fs
-  acronym: PAM filesystem
+  acronym: PAM FS
   name: Payment Automation Manager File System
   type: internal
   description: Where payment files are transmitted from initiating agencies before they are certified and processed by Treasury
@@ -1570,7 +1551,7 @@
   - pms-terrell
   - pms-collins
 - id: pegasys
-  acronym:
+  acronym: Pegasys
   name: Pegasys
   type: internal
   description: >-
@@ -1588,8 +1569,27 @@
   - GSA
   all_names: []
   access_ids: []
+- id: pssnap
+  acronym: PSSNAP
+  name: Phone Social Security Number Application Process data
+  type: internal
+  description: SSN application process data (Phone). This is a data extract file rather than an independent system.
+  comment:
+  category: obligations
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: SSA
+  all_agency_ids:
+  - SSA
+  all_names:
+  - Payton Rehling
+  access_ids:
+  - pssnap-ssa-9
 - id: cfpb-pac
-  acronym:
+  acronym: PAC
   name: Physical Access Control
   type: unknown
   description: Possibly a system for controlling and monitoring physical access to CFPB buildings
@@ -1608,7 +1608,7 @@
   access_ids:
   - physical-access-kliger
 - id: power-automate
-  acronym:
+  acronym: Automate
   name: Power Automate
   type: saas
   description: A Microsoft tool for automating tasks that operate on documents and providing to staff
@@ -1678,7 +1678,7 @@
   - reo-moghaddassi
   - reo-elez
 - id: onearc
-  acronym: onrARC
+  acronym: oneARC
   name: Salesforce oneARC
   type: saas
   description: A system for tracking business processes within Salesforce
@@ -1777,7 +1777,7 @@
   access_ids:
   - uscis-ssa-7
 - id: usa-performance
-  acronym:
+  acronym: USA Perf
   name: USA Performance
   type: ssp
   description: System tracking job performance of federal employees
@@ -1794,7 +1794,7 @@
   all_names: []
   access_ids: []
 - id: usa-staffing
-  acronym:
+  acronym: USA Staff
   name: USA Staffing
   type: ssp
   description: System for tracking the onboarding of federal employees
@@ -1814,7 +1814,7 @@
   access_ids:
   - usastaffing-cfpb-wick
 - id: usa-jobs
-  acronym:
+  acronym: USA Jobs
   name: USAJobs
   type: ssp
   description: Official hiring site for the federal government
@@ -1831,7 +1831,7 @@
   all_names: []
   access_ids: []
 - id: usaccess
-  acronym:
+  acronym: USAccess
   name: USAccess
   type: ssp
   description: Shared service access provider system
@@ -1931,8 +1931,8 @@
   access_ids:
   - wass-mirski
 - id: webta
-  acronym:
-  name: webTA
+  acronym: WebTA
+  name: WebTA
   type: ssp
   description: System for tracking timecards
   comment:

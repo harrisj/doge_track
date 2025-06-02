@@ -2161,34 +2161,6 @@
   source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
   comment:
   table_note:
-- id: sharepoint-kliger
-  govt_system_id: sharepoint
-  name: Gavin Kliger
-  doge_alias_id:
-  agency_id: CFPB
-  type: admin
-  date_requested:
-  date_req_truth:
-  date_granted: '2025-04-12'
-  date_grant_truth: verified
-  ao_name:
-  ao_type: cio
-  ao_title:
-  ao_office:
-  ao_doge:
-  ao_truth: reported
-  bypassed:
-  date_last_used:
-  date_used_truth:
-  date_revoked: '2025-05-08'
-  date_revoked_truth: inferred
-  date_nte:
-  date_nte_truth:
-  last_accessed:
-  never_accessed: false
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
-  comment:
-  table_note: Used by Gavin to access documents to run layoffs
 - id: mbr-ssa-6
   govt_system_id: mbr
   name: Jon Koval
@@ -2281,62 +2253,6 @@
     Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental
     Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the Fiscal
     Service (BFS) for payment
-  table_note:
-- id: cisa-office-coristine
-  govt_system_id: ms-office
-  name: Edward Coristine
-  doge_alias_id:
-  agency_id: CISA
-  type: admin
-  date_requested:
-  date_req_truth:
-  date_granted: '2025-02-20'
-  date_grant_truth: reported
-  ao_name:
-  ao_type:
-  ao_title:
-  ao_office:
-  ao_doge:
-  ao_truth:
-  bypassed:
-  date_last_used:
-  date_used_truth:
-  date_revoked:
-  date_revoked_truth:
-  date_nte:
-  date_nte_truth:
-  last_accessed:
-  never_accessed: false
-  source: https://www.nbcnews.com/politics/donald-trump/live-blog/trump-france-emmanuel-macron-white-house-ukraine-tariffs-live-updates-rcna193386#rcrd73638
-  comment:
-  table_note:
-- id: energy-office-farritor
-  govt_system_id: ms-office
-  name: Luke Farritor
-  doge_alias_id:
-  agency_id: Energy
-  type: unknown
-  date_requested:
-  date_req_truth:
-  date_granted: '2025-02-05'
-  date_grant_truth: reported
-  ao_name:
-  ao_type:
-  ao_title:
-  ao_office:
-  ao_doge:
-  ao_truth:
-  bypassed:
-  date_last_used:
-  date_used_truth:
-  date_revoked:
-  date_revoked_truth:
-  date_nte:
-  date_nte_truth:
-  last_accessed:
-  never_accessed: false
-  source: https://www.cnn.com/2025/02/06/climate/doge-energy-department-trump/index.html
-  comment:
   table_note:
 - id: entra-farritor
   govt_system_id: entra
@@ -2482,6 +2398,90 @@
     The lawsuit against NEH cites emails being sent from Grant_Notifications@nehemail.onmicrosoft.com which is the form of a Global Admin account for Microsoft
     Entra (probably for the NEH email systems)
   table_note: inferred because he sent emails from what looks like a global admin account for Entra
+- id: cisa-office-coristine
+  govt_system_id: ms-office
+  name: Edward Coristine
+  doge_alias_id:
+  agency_id: CISA
+  type: admin
+  date_requested:
+  date_req_truth:
+  date_granted: '2025-02-20'
+  date_grant_truth: reported
+  ao_name:
+  ao_type:
+  ao_title:
+  ao_office:
+  ao_doge:
+  ao_truth:
+  bypassed:
+  date_last_used:
+  date_used_truth:
+  date_revoked:
+  date_revoked_truth:
+  date_nte:
+  date_nte_truth:
+  last_accessed:
+  never_accessed: false
+  source: https://www.nbcnews.com/politics/donald-trump/live-blog/trump-france-emmanuel-macron-white-house-ukraine-tariffs-live-updates-rcna193386#rcrd73638
+  comment:
+  table_note:
+- id: energy-office-farritor
+  govt_system_id: ms-office
+  name: Luke Farritor
+  doge_alias_id:
+  agency_id: Energy
+  type: unknown
+  date_requested:
+  date_req_truth:
+  date_granted: '2025-02-05'
+  date_grant_truth: reported
+  ao_name:
+  ao_type:
+  ao_title:
+  ao_office:
+  ao_doge:
+  ao_truth:
+  bypassed:
+  date_last_used:
+  date_used_truth:
+  date_revoked:
+  date_revoked_truth:
+  date_nte:
+  date_nte_truth:
+  last_accessed:
+  never_accessed: false
+  source: https://www.cnn.com/2025/02/06/climate/doge-energy-department-trump/index.html
+  comment:
+  table_note:
+- id: sharepoint-kliger
+  govt_system_id: sharepoint
+  name: Gavin Kliger
+  doge_alias_id:
+  agency_id: CFPB
+  type: admin
+  date_requested:
+  date_req_truth:
+  date_granted: '2025-04-12'
+  date_grant_truth: verified
+  ao_name:
+  ao_type: cio
+  ao_title:
+  ao_office:
+  ao_doge:
+  ao_truth: reported
+  bypassed:
+  date_last_used:
+  date_used_truth:
+  date_revoked: '2025-05-08'
+  date_revoked_truth: inferred
+  date_nte:
+  date_nte_truth:
+  last_accessed:
+  never_accessed: false
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
+  comment:
+  table_note: Used by Gavin to access documents to run layoffs
 - id: era-farritor
   govt_system_id: nih-era
   name: Luke Farritor
@@ -2886,34 +2886,6 @@
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   comment: Revoked date is likely earlier
   table_note:
-- id: pssnap-ssa-9
-  govt_system_id: pssnap
-  name: Payton Rehling
-  doge_alias_id: SSA-09
-  agency_id: SSA
-  type: read
-  date_requested:
-  date_req_truth:
-  date_granted: '2025-03-14'
-  date_grant_truth: verified
-  ao_name: Leland Dudek
-  ao_type: director
-  ao_title:
-  ao_office:
-  ao_doge: true
-  ao_truth:
-  bypassed:
-  date_last_used:
-  date_used_truth:
-  date_revoked:
-  date_revoked_truth:
-  date_nte:
-  date_nte_truth:
-  last_accessed:
-  never_accessed: false
-  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-  comment: Leland Dudek approves access of "Employee 9" to review PSSNAP data with the Enterprise Data Warehouse
-  table_note:
 - id: pam-src-elez
   govt_system_id: pam-db
   name: Marko Elez
@@ -3083,6 +3055,34 @@
   never_accessed: false
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   comment: Access date not provided by DOL, believes it was granted by HHS
+  table_note:
+- id: pssnap-ssa-9
+  govt_system_id: pssnap
+  name: Payton Rehling
+  doge_alias_id: SSA-09
+  agency_id: SSA
+  type: read
+  date_requested:
+  date_req_truth:
+  date_granted: '2025-03-14'
+  date_grant_truth: verified
+  ao_name: Leland Dudek
+  ao_type: director
+  ao_title:
+  ao_office:
+  ao_doge: true
+  ao_truth:
+  bypassed:
+  date_last_used:
+  date_used_truth:
+  date_revoked:
+  date_revoked_truth:
+  date_nte:
+  date_nte_truth:
+  last_accessed:
+  never_accessed: false
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
+  comment: Leland Dudek approves access of "Employee 9" to review PSSNAP data with the Enterprise Data Warehouse
   table_note:
 - id: physical-access-kliger
   govt_system_id: cfpb-pac
