@@ -4,6 +4,7 @@ layout: page
 ---
 {%@ 'title', title: 'All Systems' %}
 
+<section class="mb-10">
 <h2 class="h2" id="obligations">Contracting and Grants</h2>
 
 {% systems = site.data.systems.select {|s| s.category == 'obligations'} %}
@@ -12,9 +13,9 @@ layout: page
   {% next unless roles.any? %}
   {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
 {% end %}
+</section>
 
-<hr/>
-
+<section class="mb-10">
 <h2 class="h2" id="payments">Payment Processing</h2>
 
 {% systems = site.data.systems.select {|s| s.category == 'payments'} %}
@@ -23,9 +24,9 @@ layout: page
   {% next unless roles.any? %}
   {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
 {% end %}
+</section>
 
-<hr/>
-
+<section class="mb-10">
 <h2 class="h2" id="personnel">Federal Personnel</h2>
 
 {% systems = site.data.systems.select {|s| s.category == 'personnel'} %}
@@ -34,9 +35,9 @@ layout: page
   {% next unless roles.any? %}
   {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
 {% end %}
+</section>
 
-<hr/>
-
+<section class="mb-10">
 <h2 class="h2" id="security">Security</h2>
 
 {% systems = site.data.systems.select {|s| s.category == 'security'} %}
@@ -45,9 +46,9 @@ layout: page
   {% next unless roles.any? %}
   {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
 {% end %}
+</section>
 
-<hr/>
-
+<section class="mb-2">
 <h2 class="h2" id="communications">Communications</h2>
 
 {% systems = site.data.systems.select {|s| s.category == 'communications'} %}
@@ -56,3 +57,4 @@ layout: page
   {% next unless roles.any? %}
   {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
 {% end %}
+</section>

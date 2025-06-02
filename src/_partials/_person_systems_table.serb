@@ -10,7 +10,7 @@
   </thead>
   <tbody class="">
     {% roles.each do |role| %}
-      {% govt_system = role.govt_system %}
+      {% govt_system = site.data.systems.find {|s| s.id == role.govt_system_id } %}
     <tr class="font-sans" id="{{ role.id }}">
       <td class="align-top">
       {% if govt_system && govt_system.acronym %}<div><abbr title="{{ govt_system.name }}">{{ govt_system.acronym }}</abbr></div>{% end %}

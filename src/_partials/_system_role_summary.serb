@@ -1,5 +1,5 @@
 {% import 'macros' %}
-<a href="/all/systems#{{ role.system_id }}">{{ role.system.name }}</a>{% if role.system.acronym %} ({{ role.system.acronym }}){% end %}
+<a href="/all/systems#{{ role.system_id }}">{{ role.system.name }}</a>
 <br/>
 {%@ 'system_access_type', role: role %} access
 {% if role.last_accessed %} (last access {{ render EdtfFormat.new(role.last_accessed, :compact) }}){% end %}
