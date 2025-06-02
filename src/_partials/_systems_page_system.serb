@@ -10,6 +10,7 @@
   end
 %}
 
+<div class="mb-5">
 <h3 class="prose prose-lg h3" id="{{ govt_system.id }}">{{ govt_system.acronym || govt_system.name }}</h3>
 
 <table class="table table-xs sm:table-sm lg:table-md border-4">
@@ -84,3 +85,4 @@
   </tr>
 </tbody>
 </table>
+</div>

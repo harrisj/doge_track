@@ -48,6 +48,28 @@ layout: page
 {% end %}
 </section>
 
+<section class="mb-10">
+<h2 class="h2" id="immigration">Immigration</h2>
+
+{% systems = site.data.systems.select {|s| s.category == 'immigration'} %}
+{% systems.each do |govt_system| %}
+  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% next unless roles.any? %}
+  {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
+{% end %}
+</section>
+
+<section class="mb-10">
+<h2 class="h2" id="taxes">Taxes</h2>
+
+{% systems = site.data.systems.select {|s| s.category == 'taxes'} %}
+{% systems.each do |govt_system| %}
+  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% next unless roles.any? %}
+  {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
+{% end %}
+</section>
+
 <section class="mb-2">
 <h2 class="h2" id="communications">Communications</h2>
 
