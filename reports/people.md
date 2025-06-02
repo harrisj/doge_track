@@ -263,7 +263,7 @@
     -  **Education** (2025-01-31 to ??) [as "ED-02"] Senior Advisor GS-15/6 $195,200
     -  **HHS** (2025-02-20 to ??) 
         - Grant Solutions: 2025-02-28 - ongoing
-        - Grants.gov **[admin access]**: 2025-02-28 - ongoing
+        - Grants.gov: 2025-02-28 - ongoing
         - HCAS: HHS Consolidated Acquisition System: 2025-02-28 - 2025-04-18
         - FBIS: Financial Business Intelligence System: 2025-03-07 - 2025-04-18
     -  **CMS** (2025-03-03 to ??) 

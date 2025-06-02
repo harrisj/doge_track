@@ -444,7 +444,7 @@
         - Conor Fennessy 2025-02-28 - ongoing
         - Jeremy Lewin 2025-02-28 - ongoing
     - Grants.gov
-        - Conor Fennessy **[admin access]** 2025-02-28 - ongoing
+        - Conor Fennessy 2025-02-28 - ongoing
         - Luke Farritor **[admin access]** 2025-03-21 - 2025-04-18
     - HCAS: HHS Consolidated Acquisition System
         - Luke Farritor **[admin access]** 2025-01-29 - ongoing
