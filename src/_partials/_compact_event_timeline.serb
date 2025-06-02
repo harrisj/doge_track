@@ -28,18 +28,18 @@ num_cols +=1 if agency_col %}
     <tr class="font-sans" id="{{ event.id }}">
       {% if agency_col %}<td class="align-top hidden sm:table-cell">{{ event.agencies | agency_links }}</td>{% end %}
       <td class="align-top">
-       {% if always_show_date || parsed_date.edtf != prior_row_date.edtf %}
+      {% if always_show_date || parsed_date.edtf != prior_row_date.edtf %}
         <div class="inline-block">{{ render EdtfFormat.new(event.date, :compact) }}</div>
       {% end %}
-      {% prior_row_date = parsed_date %}
       {% if agency_col %}
       <div class="sm:hidden">{{ event.agencies | agency_links }}</div>
       {% end %}
+        {% if icon_col %}<div><i class="fa {{ event_icon(event) }}"></i> {{ event_title(event) }}</div>{% end %}
+
+      {% prior_row_date = parsed_date %}
       </td>
       <td class="align-top">
         <div class="font-sans">
-        {% if icon_col %}<span><i class="fa {{ event_icon(event) }}"></i> </span>{% end %}
-        {% if icon_col || event.type == 'interagency' %}{{ event_title(event) }}: {% end %}
         {{ event.linkified_text | raw }}
         {% if event.fuzz %}&nbsp;[{{ event.fuzz | md }}]{% end %}
         {% if event.source && event.source_name %} <span class="text-nowrap">(<a href="{{ event.source }}" class="link-hover"><i class="fa-regular fa-newspaper"></i>&nbsp;<span class="italic text-2xs sm:text-xs">{{ event.source_name }}</span></a>)</span>{% end %}
