@@ -1,0 +1,10 @@
+---
+agency_id: Energy
+title: Department of Energy
+template_engine: serbea
+---
+{% blurb = capture do %}
+Despite its name, the Department of Energy isn't just a government agency in charge of energy suppy and efficiency. It actually is the agency responsible for America's nuclear weapon arsenal. Which is why there has been no amount of consternation that DOGE may have posted two of its engineers into systems that contain highly classified information.
+{% end %}
+
+{%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}
