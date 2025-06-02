@@ -1,0 +1,11 @@
+<ul class="menu menu-xs sm:menu-sm md:menu-md bg-base-200 min-h-full w-auto p-4">
+      <!-- Sidebar content here -->
+  {% site.data.page_listing.sections.each do |section| %}
+  {{ section.name }}
+  <ul class="mb-1">
+    {% section.pages.each do |page| %}
+    <li><a href="{{ page.url }}">{{ page.short_title || page.title }}</a></li>
+    {% end %}
+  </ul>
+  {% end %}
+</ul>
