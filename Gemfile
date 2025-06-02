@@ -48,3 +48,5 @@ gem 'rubocop-sequel', '~> 0.4.1', group: :development
 gem 'sequel', '~> 5.92'
 gem 'shortuuid', '~> 0.6.0'
 gem 'sqlite3', '~> 2.6'
+
+gem 'bridgetown-quick-search', '~> 3.0'

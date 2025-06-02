@@ -62,4 +62,5 @@ Bridgetown.configure do |config|
   # visit: https://edge.bridgetownrb.com/docs/configuration/initializers/
   init :"bridgetown-sitemap"
   init :"bridgetown-seo-tag"
+  init :"bridgetown-quick-search"
 end
