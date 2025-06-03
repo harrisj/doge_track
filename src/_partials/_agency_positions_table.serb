@@ -37,7 +37,7 @@
         <td colspan="4" class="text-center bg-base-200 font-bold">No Start Date Known</a>
       </tr>
       {% to_agency, from_agency = undated_positions.partition {|pos| pos.agency_id == agency.id } %}
-      {% grouped_undated = to_agency.group_by {|pos| [pos.agency_id, pos.type, pos.from_agency_id].compact } %}
+      {% grouped_undated = to_agency.group_by {|pos| [pos.agency_id, pos.type, pos.from_agency_id || ''] } %}
       {% grouped_undated.sort_by {|grp, _| grp[2]}.each do |grp, positions| %}
         <tr class="font-sans">
         <td class="align-top hidden sm:table-cell"/>
@@ -45,7 +45,7 @@
         <td colspan="2" class="align-top">{{ positions.map(&:person) | people_links }}</td>
         </tr>
       {% end %}
-      {% grouped_undated = from_agency.group_by {|pos| [pos.agency_id, pos.type, pos.from_agency_id].compact } %}
+      {% grouped_undated = from_agency.group_by {|pos| [pos.agency_id, pos.type, pos.from_agency_id || ''] } %}
       {% grouped_undated.sort_by {|grp, _| grp[0]}.each do |grp, positions| %}
         <tr class="font-sans">
         <td class="align-top hidden sm:table-cell"/>

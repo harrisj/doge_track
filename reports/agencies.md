@@ -388,20 +388,20 @@
   - **Ethan Shaotran** (2025-01-20)
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
-  - **Justin Fox**
   - **OPM-05 (Gavin Kliger)** (detailed from OPM)
+  - **Nicole Hollander** (2025-01-20 - 2025-05-29)
   - **OPM-04** (2025-01-20) Senior Advisor
   - **Jeremy Lewin** (2025-01-20)
-  - **Nicole Hollander** (2025-01-20 - 2025-05-29)
   - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
   - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
-  - **Kyle Schutt** (2025-02-(18)~)
   - **Frank Schuler** (2025-02-(18)~) Senior Advisor
+  - **Kyle Schutt** (2025-02-(18)~)
   - **Nate Cavanaugh** (2025-02-03)
   - **Riley Sennott** (2025-02-12)
   - **Donald Park** (2025-02-XX)
   - **Derek Geissler** (2025-02-XX)
   - **Emily Bryant** (2025-03-XX)
+  - **Justin Fox** (2025-03-XX)
   - **Alexander Simonpour** (2025-03-XX)
   - **Dave Malcher** (2025-04-(24)~)
   - **Raj Jegannathan** (2025-04-(24)~)
