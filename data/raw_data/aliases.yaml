@@ -270,6 +270,54 @@
   - Converted to an excepted appointment on 2025-02-18
   - Has been detailed to the GSA, the IRS, USAID, USDA, and the U.S. Agency for Global Media
   positions:
+  - id: opm-temp-employee-5
+    type: appointed
+    agency: OPM
+    start_date: 2025-01-20
+    start_date_truth: verified
+    nte_date: 2025-05-20
+    nte_date_truth: verified
+    end_date: 2025-02-18
+    end_date_truth: verified
+    end_type: replaced
+    replaced_by: opm-perm-employee-5
+    description: Provisional Appt NTE
+    appt_type_code: 44
+    appt_type: Schedule C
+    excepted: true
+    pd_code: 6A38025
+    title: Senior Advisor to the Director for Information Technology
+    title_type: advisor
+    pay_grade: GS-15
+    salary: "$195,200"
+    series: '0301'
+    supervisory: true
+    office: Office of the Director
+    table_note: hired at maximum salary for GS federal employee in DC
+    documents:
+    - opm-foia-doge-positions
+    - onboard-opm-employee-5
+  - id: opm-perm-employee-5
+    type: promotion
+    agency: OPM
+    start_date: 2025-02-18
+    start_date_truth: verified
+    description: Exc Appt NTE
+    appt_type_code: 44
+    appt_type: Schedule C
+    excepted: true
+    pd_code: 6A38025
+    title: Senior Advisor to the Director for Information Technology
+    title_type: advisor
+    pay_grade: GS-15
+    salary: "$195,200"
+    series: '0301'
+    supervisory: true
+    office: Office of the Director
+    comment: converted from provisional to excepted position
+    documents:
+    - opm-foia-doge-positions
+    - onboard-opm-employee-5
   - id: opm-05-gsa
     type: detailed
     agency: GSA
@@ -318,6 +366,36 @@
     documents:
     - opm-foia-doge-positions
     - onboard-opm-employee-6
+
+- id: OPM-07
+  agency: OPM
+  evidence:
+  - On January 16, 2025, FSEM received 's new hire package
+  - Clearance above were completed on January 17, 2025, and FSEM cleared to enter on duty at OPM
+  - January 29, 2025, OPM's HR team requested clearance for to enter on duty on a permanent appointment
+  - After a favorable review, was reciprocally approved for a permanent position on January 31 , 2025
+  - Referred to as "his" oath of office
+  positions:
+  - id: opm-temp-employee-07
+    type: appointed
+    agency: OPM
+    start_date: 2025-01-20
+    comment: Not sure who this is
+    start_date_truth: verified
+    end_date: 2025-01-31
+    end_date_truth: verified
+    end_type: replaced
+    replaced_by: opm-perm-employee-07
+    table_note: likely Schedule C
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+    source_name: court doc
+  - id: opm-perm-employee-07
+    type: appointed
+    agency: OPM
+    start_date: 2025-01-31
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.0.pdf
+    source_name: court doc
+    table_note: permanent position approved
 
 - id: SSA-01
   agency: SSA

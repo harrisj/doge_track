@@ -8475,84 +8475,6 @@
   agency_and_parent:
   - DHS
   documents: []
-- id: gavin-kliger-opm
-  type: appointed
-  agency_id: OPM
-  name: Gavin Kliger
-  doge_alias_id:
-  from_agency_id:
-  from_truth:
-  start_date: '2025-01-20'
-  start_date_truth: verified
-  start_date_event:
-  start_source:
-  start_source_name:
-  end_date: '2025-02-18'
-  end_date_truth: verified
-  end_date_event:
-  end_source:
-  end_source_name:
-  end_type: replaced
-  sort_date: '2025-01-20'
-  nte_date: '2025-05-20'
-  nte_date_truth: verified
-  signed_date:
-  description: Provisional Appt NTE
-  fuzz:
-  appt_type_code: 44
-  appt_type: Schedule C
-  pay_grade: GS-15
-  salary: "$195,200"
-  pd_code: 6A38025
-  sge:
-  excepted: true
-  title: Senior Advisor to the Director for Information Technology
-  title_type: advisor
-  series: 301
-  supervisory: true
-  office: Office of the Director
-  source:
-  source_name:
-  reimbursed:
-  reimbursement_amount:
-  comment: I confirmed he is OPM-5
-  qualifications:
-  table_note: hired at maximum salary for GS federal employee in DC
-  replaced_by: gavin-kliger-opm-2
-  agency:
-    id: OPM
-    name: Office of Personnel Management
-    slug: opm
-    page_slug: self
-    short_name: OPM
-    doge_base: true
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/opm"
-  agency_and_parent:
-  - OPM
-  documents:
-  - id: opm-foia-doge-positions
-    name:
-    type: directory
-    alias:
-    date:
-    source: >-
-      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
-    case_no:
-    comment: Files sourced from FOIA request by Jason Leopold
-    file: opm-new-hires.png
-    url: "/documents/opm-new-hires.png"
-  - id: onboard-opm-employee-5
-    name:
-    type: onboard
-    alias: OPM-05
-    date:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
-    case_no: 8:25-cv-00430
-    comment:
-    file: onboard-opm-employee-5.pdf
-    url: "/documents/onboard-opm-employee-5.pdf"
 - id: internal-dhs-tsa-kliger
   type: internal
   agency_id: TSA
@@ -8755,6 +8677,84 @@
   agency_and_parent:
   - USAGM
   documents: []
+- id: opm-temp-employee-5
+  type: appointed
+  agency_id: OPM
+  name: Gavin Kliger
+  doge_alias_id: OPM-05
+  from_agency_id:
+  from_truth:
+  start_date: '2025-01-20'
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date: '2025-02-18'
+  end_date_truth: verified
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type: replaced
+  sort_date: '2025-01-20'
+  nte_date: '2025-05-20'
+  nte_date_truth: verified
+  signed_date:
+  description: Provisional Appt NTE
+  fuzz:
+  appt_type_code: 44
+  appt_type: Schedule C
+  pay_grade: GS-15
+  salary: "$195,200"
+  pd_code: 6A38025
+  sge:
+  excepted: true
+  title: Senior Advisor to the Director for Information Technology
+  title_type: advisor
+  series: 301
+  supervisory: true
+  office: Office of the Director
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: hired at maximum salary for GS federal employee in DC
+  replaced_by: opm-perm-employee-5
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
+  documents:
+  - id: opm-foia-doge-positions
+    name:
+    type: directory
+    alias:
+    date:
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0NjE5ODU4MywiZXhwIjoxNzQ2ODAzMzgzLCJhcnRpY2xlSWQiOiJTVk4xTU5UMEFGQjQwMCIsImJjb25uZWN0SWQiOiIyQjE3NzFFOTlEODc0QzRDOTY1Njg1RTZBQkJGM0QwRCJ9.RrUJ2FTuZ6CU23loflotaFlRBPRLxsw0S6piuEYuX0I
+    case_no:
+    comment: Files sourced from FOIA request by Jason Leopold
+    file: opm-new-hires.png
+    url: "/documents/opm-new-hires.png"
+  - id: onboard-opm-employee-5
+    name:
+    type: onboard
+    alias: OPM-05
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.51.1.pdf
+    case_no: 8:25-cv-00430
+    comment:
+    file: onboard-opm-employee-5.pdf
+    url: "/documents/onboard-opm-employee-5.pdf"
 - id: detail-opm-usaid-kliger
   type: detailed
   agency_id: USAID
@@ -8958,11 +8958,11 @@
   agency_and_parent:
   - CFPB
   documents: []
-- id: gavin-kliger-opm-2
+- id: opm-perm-employee-5
   type: promotion
   agency_id: OPM
   name: Gavin Kliger
-  doge_alias_id:
+  doge_alias_id: OPM-05
   from_agency_id:
   from_truth:
   start_date: '2025-02-18'
@@ -16023,8 +16023,133 @@
   - FAA
   - DOT
   documents: []
-- id: hhs-brad-smith
+- id: detail-doge-hhs-smith
+  type: detailed
+  agency_id: HHS
+  name: Brad Smith
+  doge_alias_id:
+  from_agency_id: DOGE
+  from_truth:
+  start_date: 2025-02-XX
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date: '2025-03-04'
+  end_date_truth: verified
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type: replaced
+  sort_date: '2025-02-02'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: detail started before 2/13
+  replaced_by: hhs-brad-smith
+  agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/health"
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: white-house
+    short_name: DOGE
+    doge_base: true
+    parent_id: EOP
+    obj_type: Agency
+    path: "/agencies/white-house"
+  agency_and_parent:
+  - HHS
+  documents: []
+- id: doge-brad-smith
   type: appointed
+  agency_id: DOGE
+  name: Brad Smith
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-02-XX
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-01'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.82.3.pdf
+  source_name: court doc
+  reimbursed:
+  reimbursement_amount:
+  comment: identified as USDS detail on 2/13 declaration
+  qualifications:
+  table_note: identified as dual appointee at HHS and DOGE / detailed from USDS
+  replaced_by:
+  agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: white-house
+    short_name: DOGE
+    doge_base: true
+    parent_id: EOP
+    obj_type: Agency
+    path: "/agencies/white-house"
+  agency_and_parent:
+  - DOGE
+  - EOP
+  documents: []
+- id: hhs-brad-smith
+  type: promotion
   agency_id: HHS
   name: Brad Smith
   doge_alias_id:
@@ -18137,6 +18262,120 @@
     path: "/agencies/gsa"
   agency_and_parent:
   - GSA
+  documents: []
+- id: opm-temp-employee-07
+  type: appointed
+  agency_id: OPM
+  name:
+  doge_alias_id: OPM-07
+  from_agency_id:
+  from_truth:
+  start_date: '2025-01-20'
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date: '2025-01-31'
+  end_date_truth: verified
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type: replaced
+  sort_date: '2025-01-20'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+  source_name: court doc
+  reimbursed:
+  reimbursement_amount:
+  comment: Not sure who this is
+  qualifications:
+  table_note: likely Schedule C
+  replaced_by: opm-perm-employee-07
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
+  documents: []
+- id: opm-perm-employee-07
+  type: appointed
+  agency_id: OPM
+  name:
+  doge_alias_id: OPM-07
+  from_agency_id:
+  from_truth:
+  start_date: '2025-01-31'
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-01-31'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.0.pdf
+  source_name: court doc
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: permanent position approved
+  replaced_by:
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
   documents: []
 - id: ssa-employee-11
   type: appointed

@@ -115,6 +115,8 @@
   position_ids:
   - opm-05-gsa
   - opm-05-usagm
+  - opm-temp-employee-5
+  - opm-perm-employee-5
   event_ids: []
 - id: OPM-06
   agency_id: OPM
@@ -127,6 +129,19 @@
     - PD 6A39738 listed on hiring forms = Nikhil Rajpal on FOIAed list of OPM positions
   position_ids:
   - opm-nikhil-rajpal
+  event_ids: []
+- id: OPM-07
+  agency_id: OPM
+  name:
+  evidence: |-
+    - On January 16, 2025, FSEM received 's new hire package
+    - Clearance above were completed on January 17, 2025, and FSEM cleared to enter on duty at OPM
+    - January 29, 2025, OPM's HR team requested clearance for to enter on duty on a permanent appointment
+    - After a favorable review, was reciprocally approved for a permanent position on January 31 , 2025
+    - Referred to as "his" oath of office
+  position_ids:
+  - opm-temp-employee-07
+  - opm-perm-employee-07
   event_ids: []
 - id: SSA-01
   agency_id: SSA

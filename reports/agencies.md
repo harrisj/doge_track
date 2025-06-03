@@ -164,8 +164,8 @@
   - **Jordan Wick** (2025-01-(20)~)
   - **James Burnham** (2025-01-(23)~ - 2025-05-29) General Counsel
   - **Katie Miller** (2025-01-20 - 2025-05-29)
-  - **Elon Musk** (2025-01-20 - 2025-05-28)
   - **Steve Davis** (2025-01-20 - 2025-05-29)
+  - **Elon Musk** (2025-01-20 - 2025-05-28)
   - **Cole Killian** (2025-01-20)
   - **Adam Ramada** (2025-01-23)
   - **Alexandra Beynon** (2025-02-(04)~)
@@ -173,10 +173,11 @@
   - **Keenan Kmiec** (2025-02-(07)~)
   - **Kendall Lindemann** (2025-02-(10)~)
   - **Amy Gleason** (2025-02-18) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
-  - **Joshua Hanley** (2025-02-XX)
-  - **Ashley Boizelle** (2025-02-XX)
-  - **Joshua Fox** (2025-02-XX)
+  - **Brad Smith** (2025-02-XX)
   - **Justin Aimonetti** (2025-02-XX)
+  - **Ashley Boizelle** (2025-02-XX)
+  - **Joshua Hanley** (2025-02-XX)
+  - **Joshua Fox** (2025-02-XX)
 
 # Department of Homeland Security
 - slug: dhs
@@ -421,8 +422,9 @@
   - **Clark Minor** (2025-02-14) Chief Information Officer
   - **Conor Fennessy** (2025-02-20) (detailed from Education)
   - **Jeremy Lewin** (2025-02-21) (detailed from GSA)
-  - **Brad Smith** (2025-03-04) Senior Advisor
+  - **Brad Smith** (2025-02-XX - 2025-03-04) (detailed from DOGE)
   - **Amy Gleason** (2025-03-04) Expert/Consultant
+  - **Brad Smith** (2025-03-04) Senior Advisor
   - **Edward Coristine** (2025-03-05) (detailed from GSA)
   - **Marko Elez** (2025-03-05) (detailed from DOL)
   - **Aram Moghaddassi** (2025-03-05) (detailed from DOL)
@@ -605,28 +607,35 @@
   - **Brian Bjelde** (2025-01-20) Expert
   - **OPM-03 (Akash Bobba)** (2025-01-20) Expert
   - **Clayton Cromer** (2025-01-20) Deputy General Counsel
-  - **Noah Peters** (2025-01-20) Senior Advisor
-  - **Amanda Scales** (2025-01-20 - 2025-03-28) Chief of Staff
-  - **Greg Hogan** (2025-01-20 - 2025-01-20) Senior Advisor to the Director for Technology and Delivery
-  - **Greg Hogan** (2025-01-20 - 2025-02-11) Acting Chief Information OFficer
-  - **Gavin Kliger** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
+  - **OPM-07** (2025-01-20 - 2025-01-31)
   - **Charles Ezell** (2025-01-20) Acting Director
   - **Joanna Wischer** (2025-01-20) Senior Advisor to the Director
+  - **Amanda Scales** (2025-01-20 - 2025-03-28) Chief of Staff
+  - **Noah Peters** (2025-01-20) Senior Advisor
+  - **Greg Hogan** (2025-01-20 - 2025-01-20) Senior Advisor to the Director for Technology and Delivery
+  - **OPM-05 (Gavin Kliger)** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
+  - **Greg Hogan** (2025-01-20 - 2025-02-11) Acting Chief Information OFficer
   - **Jacob Altik** (2025-01-24) Senior Advisor to the Director
   - **OPM-06 (Nikhil Rajpal)** (2025-01-24) Expert
   - **Justin Monroe** (2025-01-28) Expert
   - **Christopher Stanley** (2025-01-28) Expert
   - **Chris Young** (2025-01-30) Expert
   - **Austin Raynor** (2025-01-30) Senior Advisor
-  - **Bryanne-Michelle Mlodzianowski** (2025-02-03) Expert
-  - **Stephen Duarte** (2025-02-03) Expert
+  - **OPM-07** (2025-01-31)
   - **Christina Hanna** (2025-02-03) Expert
+  - **Stephen Duarte** (2025-02-03) Expert
+  - **Bryanne-Michelle Mlodzianowski** (2025-02-03) Expert
   - **Greg Hogan** (2025-02-11) Chief Information OFficer
+  - **OPM-05 (Gavin Kliger)** (2025-02-18) Senior Advisor to the Director for Information Technology
   - **Joe Gebbia** (2025-02-18) Expert
-  - **Gavin Kliger** (2025-02-18) Senior Advisor to the Director for Information Technology
   - **Amanda Scales** (2025-03-28) Senior Advisor
-  - **Tarak Makecha** (2025-03-XX) Senior Advisor
   - **Mike Gonzalez** (2025-03-XX) Senior Advisor
+  - **Tarak Makecha** (2025-03-XX) Senior Advisor
+- systems:
+    - USA Staff: USA Staffing
+        - Amanda Scales **[admin access]** 2025-01-(20)~ - ongoing
+        - {sr.doge_alias_id} (Nikhil Rajpal) **[admin access]** 2025-01-(20)~ - ongoing
+        - OPM-07 **[admin access]** 2025-01-(20)~ - ongoing
 
 # Peace Corps
 - slug: peace-corps

@@ -430,7 +430,7 @@
 # Gavin Kliger
 - category: wrecker
 - positions:
-    -  **OPM** (2025-01-20 to 2025-02-18) **Senior Advisor to the Director for Information Technology** $195,200
+    -  **OPM** (2025-01-20 to 2025-02-18) [as "OPM-05"] **Senior Advisor to the Director for Information Technology** $195,200
     -  **USAID** (2025-01-27 to ??) 
     -  **USDA** (2025-02-(01)~ to ??) 
     -  **CFPB** (2025-02-07 to 2025-05-08) 
@@ -441,7 +441,7 @@
         - Sharepoint: Microsoft Sharepoint **[admin access]**: 2025-04-12 - 2025-05-08
         - Automate: Power Automate **[admin access]**: 2025-04-12 - 2025-04-13
         - Automate: Power Automate **[admin access]**: 2025-04-17 - 2025-04-17
-    -  **OPM** (2025-02-18 to ??) **Senior Advisor to the Director for Information Technology** $195,200
+    -  **OPM** (2025-02-18 to ??) [as "OPM-05"] **Senior Advisor to the Director for Information Technology** $195,200
     -  **IRS** (2025-02-19 to 2025-04-17) 
     -  **FTC** (2025-03-(28)~ to ??) 
     -  **DHS**  
@@ -657,6 +657,7 @@
 - category: wrecker
 - positions:
     -  **OPM** (2025-01-24 to ??) [as "OPM-06"] Expert ED-00 volunteer
+        - USA Staff: USA Staffing **[admin access]**: 2025-01-(20)~ - ongoing
     -  **NOAA** (2025-02-04 to ??) 
         - Google: Google Drive **[read-write access]**: 2025-02-05 - ongoing
     -  **CFPB** (2025-02-07 to 2025-03-21) 
@@ -730,7 +731,9 @@
 - category: leadership
 - positions:
     -  **OPM** (2025-01-20 to 2025-03-28) **Chief of Staff**
+        - USA Staff: USA Staffing **[admin access]**: 2025-01-(20)~ - ongoing
     -  **OPM** (2025-03-28 to ??) Senior Advisor ES-00
+        - USA Staff: USA Staffing **[admin access]**: 2025-01-(20)~ - ongoing
 
 # Frank Schuler
 - category: unknown
@@ -800,6 +803,8 @@
 # Brad Smith
 - category: enabler
 - positions:
+    -  **DOGE** (2025-02-XX to ??) 
+    -  **HHS** (2025-02-XX to 2025-03-04) 
     -  **HHS** (2025-03-04 to ??) Senior Advisor
 
 # Keith Sonderling
