@@ -42,32 +42,61 @@ In another executive order ["Continuing the Reduction of the Federal Bureaucracy
 {% events = site.data.events.select {|e| (e.agency_ids & %w[FMCS USAGM IMLS USICH CDFIF MBDA]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
+From there, it's just been open season on every independent agency from DOGE. Here are the attacks grouped by agency types.
+
 ### Targeting the Arts
+
+The arts have been a natural target for DOGE, which shares the Trump Administration's disdain for supporting the arts, unless it's the creation of statues for a garden of American heroes. To be clear, there have been many assaults on arts organizations outside of DOGE's involvement - just recently, Trump has attempted to oust the head of the National Portrait Gallery for instance - but there have been a few organizations that have seen DOGE target them specifically:
+
+- The Corporation for Public Broadcasting (CPB)
+- The National Endowment for the Humanities (NEH)
+- The Advisory Council on Historic Preservation (ACHP)
+- The National Gallery of Art (technically, this is not an executive branch agency, but that doesn't deter DOGE)
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[NEH CPB ACHP NationalGallery]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### Finance and Regulations
 
+DOGE has also attempted to target several financial and trade regulatory agencies
+
+- Federal Deposit Insurance Commission (FDIC)
+- Securities and Exchange Commission (SEC)
+- Export-Import Bank of America (EXIM)
+- Federal Trade Commission (FTC)
+- Consumer Product Safety Commission (CPSC)
+- National Transportation Safety Board (NTSB)
+
 {% events = site.data.events.select {|e| (e.agency_ids & %w[FDIC SEC EXIM DFC FTC CPSC NTSB]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### National Science Foundation
+
+The National Science Foundation has also found itself under the thumb of DOGE
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[NSF]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### Service Organizations
 
+Service organizations have also been a focus
+
+- AmeriCorps
+- The Peace Corps
+
 {% events = site.data.events.select {|e| (e.agency_ids & %w[Peace AmeriCorps]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### Legislative Branch Agencies
 
+In one of DOGE's most bizarre turns, thet have attempted to embed DOGE teams into the Library of Congress and Government Accountability Office (GAO). The problem is that both of these are legislative branch agencies and thus well outside the authority of DOGE to police them or shut them down.
+
 {% events = site.data.events.select {|e| (e.agency_ids & %w[LOC GAO]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### Merit System Protection Board
+
+Finally, DOGE has picked up its original mission of harrassing federal workers by attempting to shut down the Merit System Protection Board (MSPB), which ensures that government personnel rules are fairly enforced.
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[MSPB]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
