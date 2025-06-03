@@ -330,7 +330,7 @@ end %}
       'Detail ended'
     when 'replaced'
       if pos.replaced_by
-        "[to new role](##{pos.replaced_by})"
+        "replaced with [new role](##{pos.replaced_by})"
       else
         'left to new role'
       end
@@ -446,11 +446,11 @@ end %}
 
     if pos.end_date
       if pos.person && !pos.person.govt_exit_date.nil?
-        end_date_str = "**Left Govt** (#{position_end_type(pos)}) #{EdtfFormat.new(pos.person.govt_exit_date, :compact)}"
+        end_date_str = "<br/>**Left Govt** (#{position_end_type(pos)}) #{EdtfFormat.new(pos.person.govt_exit_date, :compact)}"
       else
         end_date_str = "(#{position_end_type(pos)}) #{EdtfFormat.new(pos.exit_date, :compact)}"
       end
-      out_str += "<br/>#{end_date_str}"
+      out_str += " #{end_date_str}"
     end
 
     out_str.html_safe

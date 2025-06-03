@@ -31,9 +31,9 @@ At major agencies, the DOGE staff are given titles like "Senior Advisor" and sit
     {% other_doge = agency.positions.select {|pos| (%w[advisor cio chief_counsel dept_head].include?(pos.title_type) || front_office_names.include?(pos.office)) && !doge_heads.include?(pos.name) }.map(&:name).uniq.compact %}
     {% next unless other_doge.any? %}
     <tr>
-      <td>{{ agency_link(agency) }}</td>
-      <td>{% if doge_heads %}{{ doge_heads | people_links }}{% end %}</td>
-      <td>{{ other_doge | people_links }}</td>
+      <td class="align-top">{{ agency_link(agency) }}</td>
+      <td class="align-top">{% if doge_heads %}{{ doge_heads | people_links }}{% end %}</td>
+      <td class="align-top">{{ other_doge | people_links }}</td>
     </tr>
    {% end %}
 {% end %}
@@ -44,10 +44,11 @@ At major agencies, the DOGE staff are given titles like "Senior Advisor" and sit
 This table only includes people who whom we have definite information about their titles or offices. The actual list is likely even larger. In addition, gaps in the DOGE heads column don't indicate that agency leadership is indifferent or even hostile to DOGE. For instance, I'm not counting Secretary of State Marco Rubio in my list of DOGE names, but I don't think I've seen any examples of him thwarting their ambitions at any agency he is either the director or acting director of. And speaking of acting...
 
 ## Acting Leadership
+
 {% end %}
 {% acting = site.data.positions.select { |p| p.title =~ /acting/i }.sort_by(&:sort_date) %}
 
-<table class="table table-xs sm:table-sm md:table-md">
+<table class="table table-xs sm:table-sm md:table-md table-zebra my-2">
 <thead>
   <tr>
     <th>Name</th>
@@ -59,14 +60,15 @@ This table only includes people who whom we have definite information about thei
 <tbody>
 {% acting.each do |pos| %}
   <tr>
-    <td>{{ person_link(pos.name) }}</td>
-    <td>{{ agency_link(pos.agency_id)}}</td>
-    <td>{{ pos.title }}</td>
-    <td>{{ render EdtfFormat.new(pos.start_date, :compact) }}{% if pos.end_date %} - {{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}</td>
+    <td class="align-top">{{ person_link(pos.name) }}</td>
+    <td class="align-top">{{ agency_link(pos.agency_id)}}</td>
+    <td class="align-top">{{ pos.title }}</td>
+    <td class="align-top">{{ render EdtfFormat.new(pos.start_date, :compact) }}{% if pos.end_date %} - {{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}</td>
   </tr>
 {% end %}
 </tbody>
 </table>
+
 
 {%@ 'text' do %}
 In one of its more novel tactics, the Trump Administration has repeatedly used acting directors as the mechanisms of agency destruction. Because many agency directors require Senate confirmation before they can be appointed and this process takes time, the Vacancies Act was passed to ensure continuity of operations when during a change of administration or when an agency leadership position is vacated. This act allows the President to name people as "acting" directors or other positions who are granted full powers until a Senate-confirmed appointee can be sworn in. The Vacancies Act does set some conditions for who can serve as acting directors:
@@ -79,25 +81,30 @@ In the past, Acting Directors have largely acted as custodial roles, ensuring th
 The Trump administration has dramatically upended this practice, using Acting Directors as a way to significantly change or even completely demolish other agencies. For the destruction of {{ agency_link('USAID') }}, Trump fired the agency's acting head and then declared the recently appointed Secretary of State, Marco Rubio, as the new acting director. Rubio then authorized all the activities of DOGE to demolish the agency. Similarly, within hours of being sworn in as director of the OMB, {{ person_link('Russell Vought') }} was named the acting director of the {{ agency_link('CFPB') }} and ordered similar actions. This tactic has been instrumental in the DOGE takeover at many agencies - in their first acts, the acting directors usually order that DOGE staff are given superuser access and that normal processes for approval should be bypassed and staff be placed on administrative leave so they can't prevent or observe what is happening. It's a bit like a bank heist where the branch manager is spearheading the crime.
 
 ## Chief Information Officers
+
+Several of the DOGE crew have been named directly to the title of Chief Information Officer, giving them authority over IT resources at their agency. In some cases, they have used their positions to explicitly grant access to DOGE representatives at the agency. This table only list direct authorizations that have been documented. Indirect influence has likely been more widespread.
 {% end %}
 
-{% cios = site.data.positions.select {|p| p.title == "Chief Information Officer" } %}
-<table class="table table-xs sm:table-sm md:table-md">
+{% cios = site.data.positions.select {|p| p.title_type == "cto" || p.title_type == "cio" }.sort_by(&:sort_date) %}
+<table class="table table-xs sm:table-sm md:table-md table-zebra my-2">
 <thead>
   <tr>
     <th>Name</th>
     <th>Agency</th>
     <th>Date</th>
-    <th>Notes</th>
+    <th>Title</th>
+    <th>Access Grants</th>
   </tr>
 </thead>
 <tbody>
 {% cios.each do |pos| %}
+  {% access_granted = site.data.system_roles.select { |sr| sr.ao_name == pos.name && sr.agency_id == pos.agency_id } %}
   <tr>
-    <td>{{ person_link(pos.name) }}</td>
-    <td>{{ agency_link(pos.agency_id)}}</td>
-    <td>{{render EdtfFormat.new(pos.start_date, :compact, :filled) }}</td>
-    <td>{{ position_summary(pos) | md }}</td>
+    <td class="align-top">{{ person_link(pos.name) }}</td>
+    <td class="align-top">{{ agency_link(pos.agency_id)}}</td>
+    <td class="align-top">{{render EdtfFormat.new(pos.start_date, :compact, :filled) }}</td>
+    <td class="align-top">{{ pos.title }}</td>
+    <td class="align-top">{{ access_granted.map(&:name).uniq.compact | people_links }}</td>
   </tr>
 {% end %}
 </tbody>

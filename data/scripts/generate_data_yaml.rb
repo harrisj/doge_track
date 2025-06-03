@@ -202,8 +202,8 @@ def generate_systems_yaml
   out = GovtSystem.map do |s|
     sys_out = s.to_hash
     sys_out['all_agency_ids'] = ([s.agency_id] + s.system_roles.map(&:agency_id)).compact.uniq
-    sys_out['all_names'] = s.system_roles.map(&:name)
-    sys_out['access_ids'] = s.system_roles.map(&:id)
+    sys_out['all_names'] = s.system_roles.map(&:name).compact
+    sys_out['access_ids'] = s.system_roles.map(&:id).compact
     sys_out
   end
 
