@@ -2274,19 +2274,31 @@
     comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
     source_name: NYT
+  - id: opm-05-gsa
+    type: detailed
+    agency: GSA
+    from: OPM
+    from_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+    source_name: court_doc
+    table_note: detail in court doc
+    name: Gavin Kliger
+    alias: OPM-05
   - id: opm-05-usagm
     type: detailed
     agency: USAGM
     from: OPM
     from_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+    source_name: court_doc
+    table_note: detail in court doc
     name: Gavin Kliger
     alias: OPM-05
   - id: detail-opm-usaid-kliger
     type: detailed
     agency: USAID
     from: OPM
-    from_truth: guessed
+    from_truth: verified
     start_date: 2025-01-27
     start_date_truth: reported
     source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
@@ -2295,7 +2307,7 @@
     type: detailed
     from: OPM
     agency: USDA
-    from_truth: guessed
+    from_truth: verified
     sort_date: 2025-02-01
     start_date: 2025-02-(01)~
     start_date_truth: inferred
@@ -2303,8 +2315,8 @@
     comment: >-
       No details, but listed in a NYT roundup and adding here. On 2/14, USDA head said they'd been there
       a couple of weeks. An email from him has the label OSEC - DC
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    source_name: NYT
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+    source_name: court doc
   - id: detail-opm-cfpb-kliger
     type: detailed
     agency: CFPB

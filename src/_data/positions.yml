@@ -8621,6 +8621,73 @@
   - TSA
   - DHS
   documents: []
+- id: opm-05-gsa
+  type: detailed
+  agency_id: GSA
+  name: Gavin Kliger
+  doge_alias_id: OPM-05
+  from_agency_id: OPM
+  from_truth: verified
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2026-07-04'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+  source_name: court_doc
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: detail in court doc
+  replaced_by:
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - GSA
+  documents: []
 - id: opm-05-usagm
   type: detailed
   agency_id: USAGM
@@ -8658,12 +8725,12 @@
   supervisory:
   office:
   source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
-  source_name:
+  source_name: court_doc
   reimbursed:
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: detail in court doc
   replaced_by:
   agency:
     id: USAGM
@@ -8694,7 +8761,7 @@
   name: Gavin Kliger
   doge_alias_id:
   from_agency_id: OPM
-  from_truth: guessed
+  from_truth: verified
   start_date: '2025-01-27'
   start_date_truth: reported
   start_date_event:
@@ -8761,7 +8828,7 @@
   name: Gavin Kliger
   doge_alias_id:
   from_agency_id: OPM
-  from_truth: guessed
+  from_truth: verified
   start_date: 2025-02-(01)~
   start_date_truth: inferred
   start_date_event:
@@ -8791,8 +8858,8 @@
   series:
   supervisory:
   office: Office of the Secretary
-  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  source_name: NYT
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+  source_name: court doc
   reimbursed:
   reimbursement_amount:
   comment: >-

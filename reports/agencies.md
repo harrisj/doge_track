@@ -389,9 +389,10 @@
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
   - **Justin Fox**
+  - **OPM-05 (Gavin Kliger)** (detailed from OPM)
   - **OPM-04** (2025-01-20) Senior Advisor
-  - **Nicole Hollander** (2025-01-20 - 2025-05-29)
   - **Jeremy Lewin** (2025-01-20)
+  - **Nicole Hollander** (2025-01-20 - 2025-05-29)
   - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
   - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
   - **Kyle Schutt** (2025-02-(18)~)
