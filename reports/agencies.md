@@ -381,6 +381,8 @@
 
 # Food and Drug Administration
 - slug: fda
+- people:
+  - **Clark Minor** (2025-02-(25)~)
 
 # General Services Administration
 - slug: gsa
