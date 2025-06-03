@@ -20,8 +20,8 @@ layout: default
     {%@ 'navbar' %}
 
     <!-- Page content here -->
-    <div class="md:container md:max-w-5xl md:mx-auto px-1 sm:px-2">
-      <main class="min-h-screen px-3">
+    <div class="md:container md:max-w-5xl md:mx-auto px-0 sm:px-2">      
+      <main class="min-h-screen mt-4 px-3">
         {{ content }}
       </main>
 

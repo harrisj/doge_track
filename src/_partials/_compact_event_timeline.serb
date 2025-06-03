@@ -40,25 +40,25 @@ num_cols +=1 if agency_col %}
       </td>
       <td class="align-top">
         <div class="font-sans">
-        {% if icon_col %}<div class="inline"><i class="fa {{ event_icon(event) }}"></i> <span class="hidden md:inline font-bold">{{ event_title(event) }}: </span></div>{% end %}
+        {% if icon_col %}<div class="inline"><i class="fa-sharp fa-solid {{ event_icon(event) }}"></i> <span class="hidden md:inline font-bold">{{ event_title(event) }}: </span></div>{% end %}
         {{ event.linkified_text | raw }}
         {% if event.fuzz %}&nbsp;[{{ event.fuzz | md }}]{% end %}
-        {% if event.source && event.source_name %} <span class="text-nowrap float-right"><a href="{{ event.source }}" class="link-hover"><i class="fa-regular fa-newspaper"></i>&nbsp;<span class="italic text-2xs sm:text-xs">{{ event.source_name }}</span></a></span>{% end %}
+        {% if event.source && event.source_name %} <span class="text-nowrap float-right"><a href="{{ event.source }}" class="link-hover"><i class="fa-sharp fa-solid fa-link-simple"></i>&nbsp;<span class="italic text-2xs sm:text-xs">{{ event.source_name }}</span></a></span>{% end %}
         {% questions_str = question_links(event)%}
         {% if questions_str %}{{ questions_str | raw }}{% end %}
         </div>
         {% if event.type == 'interagency' %}
           <div>
-              <div><i class="fas fa-landmark"></i> {{ event.agency_ids | agency_links }}</div>
+              <div><i class="fa-sharp fa-solid fa-landmark"></i> {{ event.agency_ids | agency_links }}</div>
               {% event.names_aliases.group_by(&:category).sort_by {|c, p| p.size}.reverse.each do |category, people| %}
-                <div><i class="fas {{ person_icon(people.first) }}"></i> {{ people.map(&:name) | people_links }}</div>
+                <div><i class="fa-sharp fa-solid {{ person_icon(people.first) }}"></i> {{ people.map(&:name) | people_links }}</div>
               {% end %}
           </div>
         {% end %}
         {% if show_directories && event.type == 'directory' %}
           <div>
             {% event.names_aliases.group_by(&:category).sort_by {|c, p| p.size}.reverse.each do |category, people| %}
-              <div><i class="fas {{ person_icon(people.first) }}"></i> {{ people.map(&:name) | people_links }}</div>
+              <div><i class="fa-sharp fa-solid {{ person_icon(people.first) }}"></i> {{ people.map(&:name) | people_links }}</div>
             {% end %}
           </div>
         {% end %}

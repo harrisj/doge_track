@@ -2,18 +2,18 @@
 
 <li class="list-row m-0 p-0 pb-1 pt-0.5 gap-1">
   <div class="text-md sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-2xl align-top">
-    <i class="fa {{ event_icon(event) }}"></i></div>
+    <i class="fa-sharp fa-solid {{ event_icon(event) }}"></i></div>
   <div class="mt-1 sm:mt-1.5 sm:ml-0.5">
     <div class="flex flex-wrap content-center align-top leading-5 not-prose">
       <div class="flex-none font-bold pe-2">{{ event_title(event) }}</div>
       <div class="flex-none pe-2">{{ render EdtfFormat.new(event.date, :iso) }}</div>
       <div class="flex-none pe-2">
-        <i class="fas fa-building mr-1"></i>
+        <i class="fa-sharp fa-solid fa-building mr-1"></i>
         {{ event.agencies | agency_links }}
       </div>
       {% if event.source_name %}
       <div class="flex-none pe-2">
-        <i class="fas fa-newspaper mr-1"></i>
+        <i class="fa-sharp fa-solid fa-link-simple mr-1"></i>
         <a class="link-hover" href="{{ event.source }}">{{ event.source_name }}</a>
       </div>
       {% end %}
@@ -21,13 +21,13 @@
           {% for person in event.names_aliases %}
             <div class="flex-none pe-2">
               {% if person.alias and person.name %}
-                <span class="icon is-small"><i class="fas {{ person_icon(person) }}"></i></span>
+                <span class="icon is-small"><i class="fa-sharp fa-solid {{ person_icon(person) }}"></i></span>
                 {{ person_link(person.name) }} ({{ person.alias }})
               {% elsif person.alias %}
-                <span class="icon is-small"><i class="fas fa-user-secret"></i></span>
+                <span class="icon is-small"><i class="fa-sharp fa-solid fa-user-secret"></i></span>
                 {{ person.alias }}
               {% else %}
-                <span class="icon is-small"><i class="fas {{ person_icon(person) }}"></i></span>
+                <span class="icon is-small"><i class="fa-sharp fa-solid {{ person_icon(person) }}"></i></span>
                 {{ person_link(person.name) }}
               {% end %}
             </div>

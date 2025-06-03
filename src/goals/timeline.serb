@@ -16,7 +16,7 @@ It can be hard to see the patterns in the noise of DOGE's chaos, but there has b
   <li>
     {% if tl != site.data.timeline.first %}<hr/>{% end %}
     <div class="timeline-middle">
-      <i class="fa-solid fa-burst"></i>
+      <i class="fa-sharp fa-solid fa-burst"></i>
     </div>
     <div class="prose prose-a:font-semibold mb-10 {% if timeline_start %}timeline-start md:text-end{% else %}timeline-end{% end %}">
         <time class="font-mono italic">{{ tl.date }}</time>

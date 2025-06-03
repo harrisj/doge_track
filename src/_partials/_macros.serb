@@ -168,13 +168,13 @@ end %}
     when 'access'
       'fa-database'
     when 'action'
-      'fa-wrench'
+      'fa-hammer-crash'
     when 'directory'
-      'fa-users'
+      'fa-people-group'
     when 'disruption'
       'fa-explosion'
     when 'interagency'
-      'fa-handshake'
+      'fa-diagram-venn'
     when 'legal'
       'fa-legal'
     when 'milestone'
@@ -182,15 +182,15 @@ end %}
     when 'official'
       'fa-landmark'
     when 'onboard'
-      'fa-user-plus'
+      'fa-person-to-door'
     when 'oversight'
-      'fa-magnifying-glass'
+      'fa-landmark-magnifying-glass'
     when 'offboard'
-      'fa-user-minus'
+      'fa-left-from-bracket'
     when 'sighting'
-      'fa-binoculars'
+      'fa-users-viewfinder'
     else
-      'fa-note-sticky'
+      'fa-newspaper'
     end
   end
 %}
@@ -230,13 +230,13 @@ end %}
 {% macro 'person_icon' do |person| 
     case person.category
     when 'booster'
-      'fa-thumbs-up'
+      'fa-megaphone'
     when 'leadership'
       'fa-briefcase'
     when 'enabler'
       'fa-door-open'
     when 'support'
-      'fa-people-group'
+      'fa-chair-office'
     when 'wrecker'
       'fa-bomb'
     else
@@ -293,7 +293,7 @@ end %}
 
 {% macro "question_links" do |obj| 
     if obj.questions && obj.questions.any?
-      questions = obj.questions.map {|q| "<a class=\"link-hover tooltip\" href=\"/questions##{q.id}\" data-tip=\"Open Question: #{q.question}\"><i class=\"fa-solid fa-circle-question\"></i></a>"}
+      questions = obj.questions.map {|q| "<a class=\"link-hover tooltip\" href=\"/questions##{q.id}\" data-tip=\"Open Question: #{q.question}\"><i class=\"fa-sharp fa-solid fa-circle-question\"></i></a>"}
       questions_str = questions.join(" ")
     else
       nil
@@ -307,13 +307,13 @@ end %}
     
     out = if pos.from_agency_id
       arrow = pos.type == 'internal' ? 'arrows-left-right' : 'arrow-right'
-      "#{agency_link(pos.from_agency_id, pos.from_agency.short_name)}#{'?' if pos.from_truth == 'guessed'} <i class=\"fa-solid fa-#{arrow}\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
+      "#{agency_link(pos.from_agency_id, pos.from_agency.short_name)}#{'?' if pos.from_truth == 'guessed'} <i class=\"fa-sharp fa-solid fa-#{arrow}\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
     elsif pos.type == 'appointed' || pos.type == 'consultant'
-      "<i class=\"fa-solid fa-right-to-bracket\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
+      "<i class=\"fa-sharp fa-solid fa-person-to-door\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
     elsif pos.type == 'promotion'
-      "<i class=\"fa-solid fa-up-long\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
+      "<i class=\"fa-sharp fa-solid fa-up\"></i>\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
     elsif pos.type == 'demotion'
-      "<i class=\"fa-solid fa-down-long\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
+      "<i class=\"fa-sharp fa-solid fa-down\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
     else
       agency_link(pos.agency_id, pos.agency.short_name)
     end
@@ -430,7 +430,7 @@ end %}
     end
 
     if pos.source
-      source_str = "<span class=\"text-nowrap float-right\"><a href=\"#{pos.source}\" class=\"link-hover\"><i class=\"fa-regular fa-newspaper\"></i> <span class=\"italic text-2xs sm:text-xs\">#{ pos.source_name if pos.source_name }</span></a></span>"
+      source_str = "<span class=\"text-nowrap float-right\"><a href=\"#{pos.source}\" class=\"link-hover\"><i class=\"fa-regular fa-sharp-duotone fa-link-simple\"></i> <span class=\"italic text-2xs sm:text-xs\">#{ pos.source_name if pos.source_name }</span></a></span>"
     end
 
     if pos.documents.any?
