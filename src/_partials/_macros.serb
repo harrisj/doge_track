@@ -330,9 +330,9 @@ end %}
       'Detail ended'
     when 'replaced'
       if pos.replaced_by
-        "[Role changed](##{pos.replaced_by})"
+        "[to new role](##{pos.replaced_by})"
       else
-        'Role changed'
+        'left to new role'
       end
     when 'unknown'
       'Unknown ended'

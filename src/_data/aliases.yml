@@ -93,10 +93,14 @@
   agency_id: OPM
   name:
   evidence: |-
-    - Onboarded on 2025-01-24 as a volunteer SGE with the title Expert
+    - SF-50 is for GSA appointment on 2025-01-20
+    - Appointed as an expert at OPM on 2025-01-24
+    - Because OPM and GSA share an electronic personnel processing system (HR Links), a separate form SF-50 (Notification of Personnel Action) could not be generated for this separate appointment
     - Only person onboarded as an expert on 2025-01-24 was Nikhil Rajpal, but he's a match for OPM-6
     - Possibly someone doing the affadavit late (3 other experts on 2025-01-20
-  position_ids: []
+    - I _think_ it might be Edward Coristine because Wired spotted him at OPM on 2025-01-28
+  position_ids:
+  - opm-04
   event_ids: []
 - id: OPM-05
   agency_id: OPM
@@ -107,7 +111,9 @@
     - PD 6A38025 = matches for Gavin Kliger in a FOIA release
     - GS-15/10 with pay of $195,200
     - Converted to an excepted appointment on 2025-02-18
-  position_ids: []
+    - Has been detailed to the GSA, the IRS, USAID, USDA, and the U.S. Agency for Global Media
+  position_ids:
+  - opm-05-usagm
   event_ids: []
 - id: OPM-06
   agency_id: OPM
@@ -115,6 +121,8 @@
   evidence: |-
     - Onboarded on 2025-01-24 as a vounteer SGE with a term not to exceed 2025-07-22
     - This is likely one of the other young DOGE crew like Jordan Wick or Luke Farritor, etc.
+    - Detailed to the U.S. Department of Commerce, the Consumer Financial Protection Bureau
+    - Has also been detailed to the SSA during the course of his appointment at OPM
     - PD 6A39738 listed on hiring forms = Nikhil Rajpal on FOIAed list of OPM positions
   position_ids:
   - opm-nikhil-rajpal

@@ -389,18 +389,19 @@
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
   - **Justin Fox**
+  - **OPM-04** (2025-01-20) Senior Advisor
   - **Nicole Hollander** (2025-01-20 - 2025-05-29)
   - **Jeremy Lewin** (2025-01-20)
-  - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
   - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
-  - **Frank Schuler** (2025-02-(18)~) Senior Advisor
+  - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
   - **Kyle Schutt** (2025-02-(18)~)
+  - **Frank Schuler** (2025-02-(18)~) Senior Advisor
   - **Nate Cavanaugh** (2025-02-03)
   - **Riley Sennott** (2025-02-12)
-  - **Derek Geissler** (2025-02-XX)
   - **Donald Park** (2025-02-XX)
-  - **Alexander Simonpour** (2025-03-XX)
+  - **Derek Geissler** (2025-02-XX)
   - **Emily Bryant** (2025-03-XX)
+  - **Alexander Simonpour** (2025-03-XX)
   - **Dave Malcher** (2025-04-(24)~)
   - **Raj Jegannathan** (2025-04-(24)~)
   - **Jonathan Mendelson** (2025-04-09)
@@ -603,25 +604,26 @@
   - **Brian Bjelde** (2025-01-20) Expert
   - **OPM-03 (Akash Bobba)** (2025-01-20) Expert
   - **Clayton Cromer** (2025-01-20) Deputy General Counsel
-  - **Joanna Wischer** (2025-01-20) Senior Advisor to the Director
-  - **Charles Ezell** (2025-01-20) Acting Director
-  - **Amanda Scales** (2025-01-20) Chief of Staff
   - **Noah Peters** (2025-01-20) Senior Advisor
-  - **Gavin Kliger** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
-  - **Greg Hogan** (2025-01-20 - 2025-02-11) Acting Chief Information OFficer
+  - **Amanda Scales** (2025-01-20 - 2025-03-28) Chief of Staff
   - **Greg Hogan** (2025-01-20 - 2025-01-20) Senior Advisor to the Director for Technology and Delivery
+  - **Greg Hogan** (2025-01-20 - 2025-02-11) Acting Chief Information OFficer
+  - **Gavin Kliger** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
+  - **Charles Ezell** (2025-01-20) Acting Director
+  - **Joanna Wischer** (2025-01-20) Senior Advisor to the Director
   - **Jacob Altik** (2025-01-24) Senior Advisor to the Director
   - **OPM-06 (Nikhil Rajpal)** (2025-01-24) Expert
   - **Justin Monroe** (2025-01-28) Expert
   - **Christopher Stanley** (2025-01-28) Expert
   - **Chris Young** (2025-01-30) Expert
   - **Austin Raynor** (2025-01-30) Senior Advisor
-  - **Christina Hanna** (2025-02-03) Expert
   - **Bryanne-Michelle Mlodzianowski** (2025-02-03) Expert
   - **Stephen Duarte** (2025-02-03) Expert
+  - **Christina Hanna** (2025-02-03) Expert
   - **Greg Hogan** (2025-02-11) Chief Information OFficer
   - **Joe Gebbia** (2025-02-18) Expert
   - **Gavin Kliger** (2025-02-18) Senior Advisor to the Director for Information Technology
+  - **Amanda Scales** (2025-03-28) Senior Advisor
   - **Tarak Makecha** (2025-03-XX) Senior Advisor
   - **Mike Gonzalez** (2025-03-XX) Senior Advisor
 
@@ -779,4 +781,6 @@
 
 # US Agency for Global Media
 - slug: usagm
+- people:
+  - **OPM-05 (Gavin Kliger)** (detailed from OPM)
 

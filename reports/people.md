@@ -446,6 +446,7 @@
     -  **FTC** (2025-03-(28)~ to ??) 
     -  **DHS**  
     -  **TSA**  
+    -  **USAGM**  [as "OPM-05"] 
 
 # Keenan Kmiec
 - category: support
@@ -727,7 +728,8 @@
 # Amanda Scales
 - category: leadership
 - positions:
-    -  **OPM** (2025-01-20 to ??) **Chief of Staff**
+    -  **OPM** (2025-01-20 to 2025-03-28) **Chief of Staff**
+    -  **OPM** (2025-03-28 to ??) Senior Advisor ES-00
 
 # Frank Schuler
 - category: unknown
