@@ -430,7 +430,7 @@ end %}
     end
 
     if pos.source
-      source_str = "<span class=\"text-nowrap float-right\"><a href=\"#{pos.source}\" class=\"link-hover\"><i class=\"fa-regular fa-sharp-duotone fa-link-simple\"></i> <span class=\"italic text-2xs sm:text-xs\">#{ pos.source_name if pos.source_name }</span></a></span>"
+      source_str = "<span class=\"text-nowrap float-right\"><a href=\"#{pos.source}\" class=\"link-hover\"><i class=\"fa-sharp fa-solid fa-link-simple\"></i> <span class=\"italic text-2xs sm:text-xs\">#{ pos.source_name if pos.source_name }</span></a></span>"
     end
 
     if pos.documents.any?
