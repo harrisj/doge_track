@@ -43,7 +43,7 @@ num_cols +=1 if agency_col %}
         {% if icon_col %}<div class="inline"><i class="fa {{ event_icon(event) }}"></i> <span class="hidden md:inline font-bold">{{ event_title(event) }}: </span></div>{% end %}
         {{ event.linkified_text | raw }}
         {% if event.fuzz %}&nbsp;[{{ event.fuzz | md }}]{% end %}
-        {% if event.source && event.source_name %} <span class="text-nowrap"><a href="{{ event.source }}" class="link-hover"><i class="fa-regular fa-newspaper"></i>&nbsp;<span class="italic text-2xs sm:text-xs">{{ event.source_name }}</span></a></span>{% end %}
+        {% if event.source && event.source_name %} <span class="text-nowrap float-right"><a href="{{ event.source }}" class="link-hover"><i class="fa-regular fa-newspaper"></i>&nbsp;<span class="italic text-2xs sm:text-xs">{{ event.source_name }}</span></a></span>{% end %}
         {% questions_str = question_links(event)%}
         {% if questions_str %}{{ questions_str | raw }}{% end %}
         </div>

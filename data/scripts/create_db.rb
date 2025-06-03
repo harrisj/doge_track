@@ -191,6 +191,7 @@ DB.create_table! :system_roles do
   string :last_accessed
   boolean :never_accessed, null: false, default: false
   string :source
+  string :source_name
   string :comment
   string :table_note
 end

@@ -8,4 +8,4 @@
 {% if role.ao_doge && role.ao_name %} {{ person_link(role.ao_name) }}{% end %}
 {% if role.table_note %} [{{ role.table_note | md }}] {% end %}
 <br/>
-<span class="italic">{{ role.system.description | md }}</span> <span class="hidden sm:inline">({{ agency_link(role.agency_id) }})</span> <a href="{{ role.source }}" class="link-hover"><i class="fa-regular fa-newspaper"></i></a>
+<span class="italic">{{ role.system.description | md }}</span> <span class="hidden sm:inline">({{ agency_link(role.agency_id) }})</span> {% if role.source && role.source_name %}<span class="text-nowrap float-right"><a href="{{ role.source }}" class="link-hover"><i class="fa-regular fa-newspaper"></i> <span class="italic text-2xs sm:text-xs">{{ role.source_name }}</span></a></span>{% end %}

@@ -17,7 +17,7 @@
            <tr {% unless role == roles[-1] %}class="border-b-0"{% end %}>
               {% if role == roles[0] %}<td class="align-top" rowspan="{{ roles.count }}"><a href="/all/systems#{{ govt_system.id }}">{% if govt_system.acronym %}<abbr title="{{ govt_system.name }}">{{ govt_system.acronym }}</abbr>{% else %}{{ govt_system.name }}{% end %}</a></td>{% end %}
               <td class="align-top hidden sm:table-cell">{{ render EdtfFormat.new(role.date_granted, :compact, :none) }}-{{ render EdtfFormat.new(role.date_revoked, :compact) }}</td>
-              <td class="align-top">{% if role.name %}{{ person_link(role.name) }}{% elsif role.alias %}{{ alias_link(role.alias) }}{% end %}
+              <td class="align-top">{% if role.name %}{{ person_link(role.name) }}{% elsif role.doge_alias_id %}{{ alias_link(role.doge_alias_id) }}{% end %}
               <div>{%@ 'system_access_type', role: role %} access</div>
               {% if role.ao_doge %}<div>by DOGE {{ person_link(role.ao_name) }}</div>{% end %}
               <div class="align-top sm:hidden">{{ render EdtfFormat.new(role.date_granted, :compact, :none) }}-{{ render EdtfFormat.new(role.date_revoked, :compact) }}</div>
