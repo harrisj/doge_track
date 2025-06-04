@@ -17,8 +17,8 @@
       <div class="sm:hidden">{{ render EdtfFormat.new(role.date_granted, :compact) }}-{{ render EdtfFormat.new(role.date_revoked, :compact) }}</div>
       <div class="sm:hidden">{{ agency_link(role.agency_id) }}</div>
       </td>
-      <td class="align-top hidden sm:table-cell">{{ render EdtfFormat.new(role.date_granted, :compact) }}-{{ render EdtfFormat.new(role.date_revoked, :compact) }}</td>
-      <td class="align-top font-sans">{%@ 'system_role_summary', role: role %}</td>
+      <td class="align-top hidden sm:table-cell py-2">{{ render EdtfFormat.new(role.date_granted, :compact) }}-{{ render EdtfFormat.new(role.date_revoked, :compact) }}</td>
+      <td class="align-top font-sans py-2">{%@ 'system_role_summary', role: role %}</td>
     </tr>
     {% end %}
   </tbody>

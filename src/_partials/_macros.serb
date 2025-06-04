@@ -87,6 +87,11 @@ end %}
   end
 %}
 
+{% macro "alias_links" do |arr| 
+    arr.compact.map {|a| alias_link(a)}.join(", ").html_safe
+   end
+%}
+
 {% macro "people" do |arr|
     if arr.nil?
       []
@@ -184,7 +189,7 @@ end %}
     when 'onboard'
       'fa-person-to-door'
     when 'oversight'
-      'fa-landmark-magnifying-glass'
+      'fa-microscope'
     when 'offboard'
       'fa-left-from-bracket'
     when 'sighting'

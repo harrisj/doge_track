@@ -39,22 +39,22 @@ To report errors or point out information that I might have missed, the best app
 
 ## What's Coming Next
 
-This is just the beginning of what is possible for this data and the site, and I am working through things as quickly as I can design them:
+This is just the beginning of what is possible for this data and the site, and I am working through things as quickly as I can design them.
 
-Content Tweaks:
+### Content Tweaks
 - Independent Agencies
 - How to Contribute
 - An in-depth writeup of the data ingestion process
 - Repo instructions on how to load a SQLite database
 - DOGE's major projects described
 
-Linking in more data:
+### Linking in More Data
 - Open questions I have
 - Systems accessed at each agency
 - Court cases linked to DOGE activities
 - Media roundups
 
-Site Functionality:
+### Site Functionality
 - Accessibility improvements
 - Site search
 - CSV downloads

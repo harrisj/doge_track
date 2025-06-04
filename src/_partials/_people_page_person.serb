@@ -7,11 +7,18 @@
   <div class="sm:ml-7 md:ml-8 lg:ml-9.5 lining-nums">
     <div class="prose prose-sm md:prose-base prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-2">
       <div class="leading-none"><strong>{{ person.category.titleize }}</strong>{% if person.age %}, age {{ person.age }}{% end %}  <a class="permalink" href="#{{person.slug}}"><i class="fa-sharp fa-solid fa-link"></i></a></div>
-      {% if person.govt_exit_date %}<div><strong>Exited government:</strong> {{ render EdtfFormat.new(person.govt_exit_date) }}{% if person.govt_exit_type %} ({{ person.govt_exit_type}}){% end %}</div>{% end %}
+      {% if person.govt_exit_date %}<div><strong>Exited govt:</strong> {{ render EdtfFormat.new(person.govt_exit_date) }}{% if person.govt_exit_type %} ({{ person.govt_exit_type}}){% end %}</div>{% end %}
       {% if person.linkified_blurb %}<p class="mb-0 mt-0.5 leading-5 mb-2">{{ person.linkified_blurb | md }}</p>{% end %}
     </div>
 
     {% if person.positions.any? %}
+      {% aliases = person.positions.map(&:doge_alias_id).compact.uniq.sort %}
+      {% if aliases.any? %}
+      <div class="mt3">
+      Likely aliases: {{ aliases | alias_links }}
+      </div>
+      {% end %}
+
       <div class="mt-3">
         <h3 class="mb-0 mt-0 h3">Positions</h3>
         {%@ 'person_positions_table', positions: person.positions %}

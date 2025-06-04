@@ -3,6 +3,6 @@ layout: page
 ---
 {% import 'macros' %}
 
-<div class="prose max-w-none prose-li:m-[0.1em] dark:prose-invert">
+<div class="prose prose-sm md:prose-base lg:prose-md prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert prose-h2:mt-4 prose-h2:mb-1 prose-h3:mt-1 prose-h3:mb-0.5">
   {{ content | md }}
 </div>

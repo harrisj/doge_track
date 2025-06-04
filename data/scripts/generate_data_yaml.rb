@@ -178,7 +178,7 @@ def generate_events_yaml
           ap['alias'] = a.id
         end
       else
-        out['names_aliases'].append({ alias: a.id, sort_name: "ZZZ-#{a.id}" })
+        out['names_aliases'].append({ alias: a.id, sort_name: "ZZZ-#{a.id}", category: 'alias' })
       end
     end
 

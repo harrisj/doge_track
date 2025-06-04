@@ -2,7 +2,6 @@
 title: How to Contribute
 layout: docs
 ---
-
 # How To Contribute
 
 Good news! Just by visiting this site and learning more, you already have contributed! In all seriousness, I started this project and made this site because I felt it was important to bear witness to all the damage that DOGE was doing and to drag their murky operations into the light. If this site has been useful for you to understand what is going on, nothing could make me happier about it. Thank you!
@@ -32,4 +31,4 @@ There are no copyrights or any licenses for the data on this site. It is complet
 
 ## Contributing Money
 
-**Don't.** I have had a few people ask me about a tip jar, but to be honest... I just don't feel like having that conversation with the ethics lawyers to get the approval to do that. This is a simple no-frills static site. I'm not even paying for the pro version of Font Awesome. Of course, maybe if I find myself facing massive hosting costs, I'll change my mind. But in the meantime, please consider donating money instead to a worthy cause near you like a food bank or legal defense fund. Also, as my many citations show, this site would also not be possible without the intrepid work of journalists at many publications. Get a subscription maybe? Even if you don't feel like supporting a major media property, there has been especially stellar work by The Rolling Stone, Wired and The Handbasket. 
+**Don't.** I have had a few people ask me about a tip jar, but to be honest... I just don't feel like having that conversation with the ethics lawyers to get the approval to do that. This is a simple no-frills static site, with my only expensive being the pro version of [Font Awesome](https://fontawesome.com/). Of course, maybe if I find myself facing massive hosting costs, I'll change my mind. But in the meantime, please consider donating money instead to a worthy cause near you like a food bank or legal defense fund. Also, as my many citations show, this site would also not be possible without the intrepid work of journalists at many publications. Get a subscription maybe? Even if you don't feel like supporting a major media property, there has been especially stellar work by The Rolling Stone, Wired and The Handbasket. 
