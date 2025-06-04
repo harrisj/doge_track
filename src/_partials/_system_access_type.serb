@@ -1,5 +1,5 @@
 {% if role.type == 'admin' || role.type == 'read-write' %}
-<i class="fa-sharp fa-solid fa-square-exclamation"></i> <strong> {{ role.type }}</strong>
+<i class="fa-sharp fa-regular fa-triangle-exclamation"></i> <strong> {{ role.type }}</strong>
 {% else %}
 {{ role.type }}
 {% end %}
