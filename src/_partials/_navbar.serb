@@ -4,7 +4,7 @@
           <i class="fa-sharp fa-solid fa-bars"></i>
         </label>
       </div>
-      <div class="mx-2 mt-[4px] flex-1 px-2 text-lg font-title"><a href="/">DOGE Track <small>(beta)</small></a></div>
-      <div class="flex-right">{%= liquid_render "bridgetown_quick_search/search", placeholder: 'search', input_class: "input input-neutral text-neutral input-sm sm:input-md" %}</div>
+      <div class="mx-2 mt-[4px] flex-1 px-2 text-sm sm:text-md md:text-lg font-title"><a href="/">DOGE Track <small>(beta)</small></a></div>
+      <div class="flex-right">{%= liquid_render "bridgetown_quick_search/search", placeholder: 'search', input_class: "input input-neutral text-neutral input-xs sm:input-sm md:input-md" %}</div>
     </div>
     

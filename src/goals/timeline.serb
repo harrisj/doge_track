@@ -9,7 +9,7 @@ layout: page
 It can be hard to see the patterns in the noise of DOGE's chaos, but there has been a structure to the destruction. In the initial phase of this site, I am focusing more on the people rather than DOGE's projects, but this timeline is an overview of DOGE's activities and shifting focus.
 {% end %}
 
-<ul class="mt-10 timeline timeline-vertical timeline-snap-icon max-md:timeline-compact">
+<ul class="mt-5 md:max-w-8/12 mx-auto timeline timeline-vertical timeline-snap-icon max-md:timeline-compact">
   {% timeline_start = false %}
 
   {% site.data.timeline.each do |tl| %}
@@ -18,10 +18,12 @@ It can be hard to see the patterns in the noise of DOGE's chaos, but there has b
     <div class="timeline-middle">
       <i class="fa-sharp fa-solid fa-burst"></i>
     </div>
-    <div class="prose prose-a:font-semibold mb-10 {% if timeline_start %}timeline-start md:text-end{% else %}timeline-end{% end %}">
-        <time class="font-mono italic">{{ tl.date }}</time>
-        <div class="text-lg font-black">{{ tl.title }}</div>
+    <div class="prose prose-a:font-semibold mb-5 {% if timeline_start %}timeline-start md:text-end{% else %}timeline-end{% end %}">
+        <time class="text-md lg:text-lg font-mono italic">{{ tl.date }}</time>
+        <div class="text-md lg:text-lg font-black">{{ tl.title }}</div>
+        <div class="text-sm sm:text-md lg:text-lg">
         {{ tl.text | linkify_text | md }}
+        </div>
         {% timeline_start = !timeline_start %}
     </div>
     {% if tl != site.data.timeline.last %}<hr/>{% end %}
