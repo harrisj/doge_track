@@ -72,8 +72,8 @@
   position_ids:
   - internal-hhs-cms-farritor
   - internal-hhs-cms-gleason
-  - internal-hhs-cms-lewin
   - internal-hhs-cms-riley
+  - internal-hhs-cms-lewin
   - internal-hhs-cms-fennessy
   - internal-hhs-cms-coristine
   - internal-hhs-cms-marko-elez
@@ -100,16 +100,16 @@
   - higlas-farritor
   - calm-riley
   - calm-fennessy
-  - calm-lewin
   - calm-farritor
   - higlas-elez
   - higlas-moghaddassi
   - higlas-coristine
   - idr-farritor
   - calm-gleason
+  - calm-lewin
+  - calm-coristine
   - calm-elez
   - calm-moghaddassi
-  - calm-coristine
   - idr-elez
   - idr-moghaddassi
   - idr-coristine
@@ -1205,7 +1205,6 @@
   - hhs-gamache
   - internal-hhs-cms-gleason
   - transfer-hhs-fda-minor
-  - internal-hhs-cms-lewin
   - internal-hhs-cms-riley
   - hhs-minor
   - detail-education-hhs-fennessy
@@ -1215,14 +1214,16 @@
   - internal-hhs-nih-lewin
   - detail-hhs-nih-minor
   - detail-doge-hhs-smith
+  - doge-hhs-gleason
+  - internal-hhs-cms-lewin
   - internal-hhs-cms-fennessy
   - hhs-amy-gleason
   - hhs-brad-smith
-  - internal-hhs-cms-coristine
-  - detail-dol-hhs-mohgaddassi
   - internal-hhs-cms-mohgaddassi
+  - internal-hhs-cms-coristine
   - detail-dol-hhs-marko-elez
   - detail-gsa-hhs-edward-coristine
+  - detail-dol-hhs-mohgaddassi
   - internal-hhs-cms-marko-elez
   - hhs-terrell
   - internal-hhs-cms-terrell
@@ -1299,24 +1300,23 @@
   - hcas-farritor
   - ice-farritor
   - higlas-farritor
-  - calm-riley
-  - calm-farritor
   - ehcm-riley
-  - calm-lewin
-  - hcas-riley
+  - calm-riley
   - calm-fennessy
+  - calm-farritor
+  - hcas-riley
   - apex-access
   - fbis-riley
-  - higlas-moghaddassi
-  - higlas-coristine
   - higlas-elez
+  - higlas-coristine
+  - higlas-moghaddassi
   - biis-riley
   - idr-farritor
   - grantsolutions-moghaddassi
   - grantsolutions-riley
+  - calm-gleason
   - ebs-riley
   - prism-nih-riley
-  - calm-gleason
   - grants-fennessy
   - ehcm-farritor
   - grantsolutions-fennessy
@@ -1326,17 +1326,18 @@
   - ebs-fennesy
   - prism-nih-farritor
   - prism-nih-fennessy
-  - calm-coristine
+  - calm-lewin
   - calm-moghaddassi
+  - calm-elez
+  - calm-coristine
   - idr-elez
   - idr-moghaddassi
-  - calm-elez
   - ndnh-moghaddassi
   - ndnh-elez
   - fbis-fennessy
   - ehcm-terrell
-  - idr-terrell
   - idr-coristine
+  - idr-terrell
   - fbis-terrell
   - ufms-terrell
   - uac-schutt

@@ -316,7 +316,7 @@ end %}
     elsif pos.type == 'appointed' || pos.type == 'consultant'
       "<i class=\"fa-sharp fa-solid fa-person-to-door\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
     elsif pos.type == 'promotion'
-      "<i class=\"fa-sharp fa-solid fa-up\"></i>\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
+      "<i class=\"fa-sharp fa-solid fa-up\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
     elsif pos.type == 'demotion'
       "<i class=\"fa-sharp fa-solid fa-down\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
     else

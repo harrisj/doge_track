@@ -314,6 +314,7 @@
 - category: leadership
 - positions:
     -  **DOGE** (2024-12-30 to 2024-02-18) 
+    -  **HHS** (2025-02-XX to ??) 
     -  **DOGE** (2025-02-18 to ??) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
     -  **CMS** (2025-02-(24)~ to ??) 
         - CALM: CMS Acquisition Lifecycle Management System: 2025-02-24 - ongoing
@@ -496,12 +497,12 @@
 - positions:
     -  **GSA** (2025-01-20 to ??) 
     -  **USAID** (2025-01-28 to 2025-03-18) Senior Advisor / Director for Strategy & Programs
-    -  **CMS** (2025-02-03 to ??) 
-        - CALM: CMS Acquisition Lifecycle Management System: 2025-02-03 - 2025-04-18
     -  **CFPB** (2025-02-07 to ??) 
     -  **HHS** (2025-02-21 to ??) 
         - Grant Sol.: Grant Solutions: 2025-02-28 - ongoing
     -  **NIH** (2025-02-24 to ??) 
+    -  **CMS** (2025-03-03 to ??) 
+        - CALM: CMS Acquisition Lifecycle Management System: 2025-03-03 - 2025-04-18
     -  **USAID** (2025-03-18 to ??) Deputy Administrator(Policy and Programming) / COO
     -  **State** (2025-04-15 to ??) Acting Head of Foreign Assistance
 
@@ -566,9 +567,9 @@
 # Clark Minor
 - category: enabler
 - positions:
-    -  **FDA** (2025-02-(25)~ to ??) 
     -  **HHS** (2025-02-14 to ??) Chief Information Officer
     -  **NIH** (2025-02-24 to ??) 
+    -  **FDA** (2025-02-(25)~ to ??) 
 
 # Michael Mirski
 - category: wrecker

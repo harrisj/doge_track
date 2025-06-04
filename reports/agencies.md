@@ -19,8 +19,8 @@
 - people:
   - **Luke Farritor** (2025-01-31)
   - **Amy Gleason** (2025-02-(24)~)
-  - **Jeremy Lewin** (2025-02-03)
   - **Rachel Riley** (2025-02-03)
+  - **Jeremy Lewin** (2025-03-03)
   - **Conor Fennessy** (2025-03-03)
   - **Edward Coristine** (2025-03-05)
   - **Marko Elez** (2025-03-05)
@@ -31,7 +31,7 @@
         - Luke Farritor 2025-02-03 - ongoing
         - Rachel Riley 2025-02-03 - ongoing
         - Conor Fennessy 2025-02-03 - 2025-04-18
-        - Jeremy Lewin 2025-02-03 - 2025-04-18
+        - Jeremy Lewin 2025-03-03 - 2025-04-18
         - Edward Coristine 2025-03-05 - ongoing
         - Marko Elez 2025-03-05 - ongoing
         - Aram Moghaddassi 2025-03-05 - ongoing
@@ -425,8 +425,9 @@
   - **Conor Fennessy** (2025-02-20) (detailed from Education)
   - **Jeremy Lewin** (2025-02-21) (detailed from GSA)
   - **Brad Smith** (2025-02-XX - 2025-03-04) (detailed from DOGE)
-  - **Amy Gleason** (2025-03-04) Expert/Consultant
+  - **Amy Gleason** (2025-02-XX) (detail)
   - **Brad Smith** (2025-03-04) Senior Advisor
+  - **Amy Gleason** (2025-03-04) Expert/Consultant
   - **Edward Coristine** (2025-03-05) (detailed from GSA)
   - **Marko Elez** (2025-03-05) (detailed from DOL)
   - **Aram Moghaddassi** (2025-03-05) (detailed from DOL)
