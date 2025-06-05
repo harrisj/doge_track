@@ -380,6 +380,7 @@
   - This matches Brian Bjelde in a FOIAed list of OPM new hires
   positions:
   - id: opm-temp-employee-07
+    same_as: opm-brian-bjelde
     type: appointed
     agency: OPM
     start_date: 2025-01-20
@@ -403,7 +404,7 @@
     - onboard-opm-employee-7
     source_name: court doc
   - id: opm-perm-employee-07
-    type: appointed
+    type: promotion
     agency: OPM
     start_date: 2025-01-31
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.0.pdf
@@ -438,46 +439,109 @@
   agency: OPM
   evidence:
   - Granted access to USA Performance on 1/31
+  positions:
+  - id: opm-employee-09
+    type: unknown
+    agency: OPM
+    start_date: 2025-01-31
+    start_date_truth: inferred
+    table_note: Start date guessed from system access
 
 - id: OPM-10
   agency: OPM
   evidence:
   - Granted access to USA Performance on 1/31
+  positions:
+  - id: opm-employee-10
+    type: unknown
+    agency: OPM
+    start_date: 2025-01-31
+    start_date_truth: inferred
+    table_note: Start date guessed from system access
 
 - id: OPM-11
   agency: OPM
   evidence:
   - Granted access to USA Perfomance on 2/7
+  positions:
+  - id: opm-employee-11
+    type: unknown
+    agency: OPM
+    start_date: 2025-02-07
+    start_date_truth: inferred
+    table_note: Start date guessed from system access
 
 - id: OPM-12
   agency: OPM
   evidence:
   - Granted access to USA Performance on 2/7
+  positions:
+  - id: opm-employee-12
+    type: unknown
+    agency: OPM
+    start_date: 2025-02-07
+    start_date_truth: inferred
+    table_note: Start date guessed from system access
 
 - id: OPM-13
   agency: OPM
   evidence:
   - Granted access to USA Performance on 1/31
+  positions:
+  - id: opm-employee-13
+    type: unknown
+    agency: OPM
+    start_date: 2025-01-31
+    start_date_truth: inferred
+    table_note: Start date guessed from system access
 
 - id: OPM-14
   agency: OPM
   evidence:
   - Granted access to USA Performance on 2/7
+  positions:
+  - id: opm-employee-14
+    type: unknown
+    agency: OPM
+    start_date: 2025-02-07
+    start_date_truth: inferred
+    table_note: Start date guessed from system access
 
 - id: OPM-15
   agency: OPM
   evidence:
   - Granted access to USA Performance on 2/7
+  positions:
+  - id: opm-employee-15
+    type: unknown
+    agency: OPM
+    start_date: 2025-02-07
+    start_date_truth: inferred
+    table_note: Start date guessed from system access
 
 - id: OPM-16
   agency: OPM
   evidence:
   - Granted access to USA Performance on 1/31
+  positions:
+  - id: opm-employee-16
+    type: unknown
+    agency: OPM
+    start_date: 2025-01-31
+    start_date_truth: inferred
+    table_note: Start date guessed from system access
 
 - id: OPM-17
   agency: OPM
   evidence:
   - Granted access to USA Performance on 1/31
+  positions:
+  - id: opm-employee-17
+    type: unknown
+    agency: OPM
+    start_date: 2025-01-31
+    start_date_truth: inferred
+    table_note: Start date guessed from system access
 
 - id: OPM-18
   agency: OPM
@@ -485,6 +549,13 @@
   - Granted access to USA Performance on 1/24
   - >-
     Granted accces to STAMP on 2/3 (only Charles Ezell and Amanda Scales were also granted access to that)
+  positions:
+  - id: opm-employee-18
+    type: unknown
+    agency: OPM
+    start_date: 2025-01-24
+    start_date_truth: inferred
+    table_note: Start date guessed from system access
 
 - id: SSA-01
   agency: SSA

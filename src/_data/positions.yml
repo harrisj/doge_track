@@ -43,6 +43,7 @@
   qualifications:
   table_note: start date unknown but ProPublica says "early February"
   replaced_by:
+  same_as:
   agency:
     id: DOT
     name: Department of Transportation
@@ -100,6 +101,7 @@
   qualifications:
   table_note: start date reported as "some point in February"
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -158,6 +160,7 @@
   qualifications:
   table_note: Salary range is for a GS-15 in DC
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -226,6 +229,7 @@
   qualifications:
   table_note: info in govt legal declation
   replaced_by:
+  same_as:
   agency:
     id: USADF
     name: U.S. African Development Foundation
@@ -293,6 +297,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: FCC
     name: Federal Communications Commission
@@ -360,6 +365,7 @@
   qualifications:
   table_note: reported by media, assuming from OPM
   replaced_by:
+  same_as:
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -427,6 +433,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -495,6 +502,7 @@
   qualifications:
   table_note: reported by media
   replaced_by:
+  same_as:
   agency:
     id: FDIC
     name: Federal Deposit Insurance Commission
@@ -562,6 +570,7 @@
   qualifications:
   table_note: NYT links her to Education, but no other info found
   replaced_by:
+  same_as:
   agency:
     id: Education
     name: Department of Education
@@ -619,6 +628,7 @@
   qualifications:
   table_note: No other info besides this report
   replaced_by:
+  same_as:
   agency:
     id: DOL
     name: Department of Labor
@@ -676,6 +686,7 @@
   qualifications:
   table_note: date guessed, reported as detailing from DOGE to Education
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -734,6 +745,7 @@
   qualifications:
   table_note: info from a govt legal filing
   replaced_by:
+  same_as:
   agency:
     id: Education
     name: Department of Education
@@ -811,6 +823,7 @@
   qualifications:
   table_note: info for alias SSA-2, who I've identified as him
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -889,6 +902,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -906,7 +920,7 @@
   type: appointed
   agency_id: OPM
   name: Brian Bjelde
-  doge_alias_id:
+  doge_alias_id: OPM-07
   from_agency_id:
   from_truth:
   start_date: '2025-01-20'
@@ -914,22 +928,22 @@
   start_date_event:
   start_source:
   start_source_name:
-  end_date:
-  end_date_truth:
+  end_date: '2025-01-31'
+  end_date_truth: verified
   end_date_event:
   end_source:
   end_source_name:
-  end_type:
+  end_type: replaced
   sort_date: '2025-01-20'
-  nte_date:
-  nte_date_truth:
+  nte_date: '2025-07-18'
+  nte_date_truth: verified
   signed_date:
   description: Exc Appt NTE
   fuzz:
   appt_type_code: 48
   appt_type: Other
   pay_grade: ED-00
-  salary:
+  salary: "$0"
   pd_code: 6A39743
   sge:
   excepted: true
@@ -938,14 +952,15 @@
   series: 301
   supervisory: false
   office: Office of the Director
-  source:
-  source_name:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+  source_name: court doc
   reimbursed:
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
-  replaced_by:
+  table_note: likely Schedule C
+  replaced_by: opm-perm-employee-07
+  same_as: opm-brian-bjelde
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -970,75 +985,8 @@
     comment: Files sourced from FOIA request by Jason Leopold
     file: opm-new-hires.png
     url: "/documents/opm-new-hires.png"
-- id: opm-temp-employee-07
-  type: appointed
-  agency_id: OPM
-  name: Brian Bjelde
-  doge_alias_id: OPM-07
-  from_agency_id:
-  from_truth:
-  start_date: '2025-01-20'
-  start_date_truth: verified
-  start_date_event:
-  start_source:
-  start_source_name:
-  end_date: '2025-01-31'
-  end_date_truth: verified
-  end_date_event:
-  end_source:
-  end_source_name:
-  end_type: replaced
-  sort_date: '2025-01-20'
-  nte_date: '2025-07-18'
-  nte_date_truth: verified
-  signed_date:
-  description:
-  fuzz:
-  appt_type_code:
-  appt_type:
-  pay_grade: ED-00
-  salary: "$0"
-  pd_code: 6A39743
-  sge:
-  excepted:
-  title: Expert
-  title_type: advisor
-  series: 301
-  supervisory:
-  office: Office of the Director
-  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
-  source_name: court doc
-  reimbursed:
-  reimbursement_amount:
-  comment:
-  qualifications:
-  table_note: likely Schedule C
-  replaced_by: opm-perm-employee-07
-  agency:
-    id: OPM
-    name: Office of Personnel Management
-    slug: opm
-    page_slug: self
-    short_name: OPM
-    doge_base: true
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/opm"
-  agency_and_parent:
-  - OPM
-  documents:
-  - id: onboard-opm-employee-7
-    name:
-    type: onboard
-    alias: OPM-07
-    date:
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
-    case_no: 1:25-cv-01237
-    comment:
-    file: onboard-opm-employee-7.pdf
-    url: "/documents/onboard-opm-employee-7.pdf"
 - id: opm-perm-employee-07
-  type: appointed
+  type: promotion
   agency_id: OPM
   name: Brian Bjelde
   doge_alias_id: OPM-07
@@ -1081,6 +1029,7 @@
   qualifications:
   table_note: permanent position approved
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -1138,6 +1087,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -1216,6 +1166,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: Education
     name: Department of Education
@@ -1293,6 +1244,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -1372,6 +1324,7 @@
     using numerous computer code languages, leadership of teams in technical, software design, and infrastructure areas.
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -1439,6 +1392,7 @@
   qualifications:
   table_note: reported by media as started in February
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -1497,6 +1451,7 @@
   qualifications:
   table_note: linked to GSA by NYT, start date guessed
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -1554,6 +1509,7 @@
   qualifications:
   table_note: limited info, 2025-04-04 report stated she started "last week"
   replaced_by:
+  same_as:
   agency:
     id: FTC
     name: Federal Trade Commission
@@ -1621,6 +1577,7 @@
   qualifications:
   table_note: NYT reported in DOGE in January, ProPublica provided title
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -1679,6 +1636,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -1736,6 +1694,7 @@
   qualifications:
   table_note: verified via court filing
   replaced_by:
+  same_as:
   agency:
     id: USADF
     name: U.S. African Development Foundation
@@ -1803,6 +1762,7 @@
   qualifications:
   table_note: verified via court filing
   replaced_by: usip-cavanaugh-president
+  same_as:
   agency:
     id: USIP
     name: US Institute of Peace
@@ -1870,6 +1830,7 @@
   qualifications:
   table_note: Verified via court filing
   replaced_by:
+  same_as:
   agency:
     id: NEH
     name: National Endowment for the Humanities
@@ -1939,6 +1900,7 @@
   qualifications:
   table_note: After the rest of board was ousted, Nate was named President of the agency by Marco Rubio and Pete Hegseth. Voided by court order on 2025-05-19
   replaced_by:
+  same_as:
   agency:
     id: USIP
     name: US Institute of Peace
@@ -1996,6 +1958,7 @@
   qualifications:
   table_note: Based on initial reports
   replaced_by:
+  same_as:
   agency:
     id: IMLS
     name: Institute for Museum and Library Services
@@ -2063,6 +2026,7 @@
   qualifications:
   table_note: Spotted by media
   replaced_by:
+  same_as:
   agency:
     id: NLRB
     name: National Labor Relations Board
@@ -2130,6 +2094,7 @@
   qualifications:
   table_note: Spotted by media
   replaced_by:
+  same_as:
   agency:
     id: USDFC
     name: US International Development Finance Corporation
@@ -2197,6 +2162,7 @@
   qualifications:
   table_note: Reported by media
   replaced_by:
+  same_as:
   agency:
     id: EXIM
     name: Export-Import Bank of the United States
@@ -2264,6 +2230,7 @@
   qualifications:
   table_note: Email cited mentioned he was from DOGE, but assuming detail from GSA
   replaced_by:
+  same_as:
   agency:
     id: MSPB
     name: Merit System Protection Board
@@ -2332,6 +2299,7 @@
   qualifications:
   table_note: CC'ed on a leaked email. Date guessed from Ag Sec on 2/14 saying DOGE at agency for "a couple weeks"
   replaced_by:
+  same_as:
   agency:
     id: USDA
     name: Department of Agriculture
@@ -2389,6 +2357,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOL
     name: Department of Labor
@@ -2456,6 +2425,7 @@
   qualifications:
   table_note: Start date inferred and likely earlier.
   replaced_by: irs-corcos-cio
+  same_as:
   agency:
     id: IRS
     name: Internal Revenue Service
@@ -2524,6 +2494,7 @@
   qualifications:
   table_note: Date is approximate per reports. Will update as new details emerge.
   replaced_by:
+  same_as:
   agency:
     id: IRS
     name: Internal Revenue Service
@@ -2582,6 +2553,7 @@
   qualifications:
   table_note: Start date and agency inferred from later reporting
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -2639,6 +2611,7 @@
   qualifications:
   table_note: NYT links him to TSA, but no other info
   replaced_by:
+  same_as:
   agency:
     id: TSA
     name: Transportation Security Administration
@@ -2707,6 +2680,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USCIS
     name: US Citizenship & Immigration Services
@@ -2775,6 +2749,7 @@
   qualifications:
   table_note: wasn't named due to young age; mentioned as reporting to Amanda Scales, so might be detail?
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -2842,6 +2817,7 @@
   qualifications:
   table_note: Only source is a single tweet. More info needed. Assuming detail from GSA.
   replaced_by:
+  same_as:
   agency:
     id: SBA
     name: Small Business Administration
@@ -2909,6 +2885,7 @@
   qualifications:
   table_note: Date unverified, but assuming predates sighting at FEMA
   replaced_by:
+  same_as:
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -2976,6 +2953,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: FEMA
     name: Federal Emergency Management Agency
@@ -3044,6 +3022,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: State
     name: State Department
@@ -3111,6 +3090,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USAID
     name: US Agency for International Development
@@ -3178,6 +3158,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CISA
     name: Cybersecurity and Infrastructure Security Agency
@@ -3246,6 +3227,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: Education
     name: Department of Education
@@ -3323,6 +3305,7 @@
   qualifications:
   table_note: Date verified in court document, assuming detail from GSA
   replaced_by:
+  same_as:
   agency:
     id: HHS
     name: Health and Human Services
@@ -3390,6 +3373,7 @@
   qualifications:
   table_note: Granted access to CMS systems on same day as detail to HHS
   replaced_by:
+  same_as:
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -3458,6 +3442,7 @@
   qualifications:
   table_note: Salary range for GS-15 in DC
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -3515,6 +3500,7 @@
   qualifications:
   table_note:
   replaced_by: ssa-employee-2-cio
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -3602,6 +3588,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -3669,6 +3656,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -3737,6 +3725,7 @@
   qualifications:
   table_note: NYT links to USAID, but need to find public reports of this
   replaced_by:
+  same_as:
   agency:
     id: USAID
     name: US Agency for International Development
@@ -3804,6 +3793,7 @@
   qualifications:
   table_note: Rep. Vindman reported in early March being contacted by Cromer at the DOJ
   replaced_by:
+  same_as:
   agency:
     id: DOJ
     name: Department of Justice
@@ -3871,6 +3861,7 @@
   qualifications:
   table_note: assuming he started on 2025-01-20
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -3929,6 +3920,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -3997,6 +3989,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -4054,6 +4047,7 @@
   qualifications:
   table_note: Replaced by Bisignano as confirmed commissioner
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -4111,6 +4105,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -4168,6 +4163,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -4235,6 +4231,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CBP
     name: Customs and Border Patrol
@@ -4303,6 +4300,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: ICE
     name: Immigration and Customs Enforcement
@@ -4371,6 +4369,7 @@
   qualifications:
   table_note: linked to DHS by NYT, no public info
   replaced_by:
+  same_as:
   agency:
     id: TSA
     name: Transportation Security Administration
@@ -4439,6 +4438,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USCIS
     name: US Citizenship & Immigration Services
@@ -4507,6 +4507,7 @@
   qualifications:
   table_note: Abruptly resigned when past racist tweets were reported
   replaced_by:
+  same_as:
   agency:
     id: Treasury
     name: Department of the Treasury
@@ -4574,6 +4575,7 @@
   qualifications:
   table_note: no public info, but I assume this is a paid position because his detail to SSA is reimbursed
   replaced_by:
+  same_as:
   agency:
     id: DOL
     name: Department of Labor
@@ -4631,6 +4633,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -4718,6 +4721,7 @@
   qualifications:
   table_note: date/source in court filing
   replaced_by:
+  same_as:
   agency:
     id: HHS
     name: Health and Human Services
@@ -4785,6 +4789,7 @@
   qualifications:
   table_note: granted access to CMS system on date
   replaced_by:
+  same_as:
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -4853,6 +4858,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -4910,6 +4916,7 @@
   qualifications:
   table_note: linked to DHS by NYT, no other info
   replaced_by:
+  same_as:
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -4977,6 +4984,7 @@
   qualifications:
   table_note: verified as detailed from GSA to HHS on 1/21, so assuming onboarded on 1/20
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -5034,6 +5042,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: ICE
     name: Immigration and Customs Enforcement
@@ -5102,6 +5111,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: TSA
     name: Transportation Security Administration
@@ -5170,6 +5180,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USCIS
     name: US Citizenship & Immigration Services
@@ -5238,6 +5249,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: HHS
     name: Health and Human Services
@@ -5305,6 +5317,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USAID
     name: US Agency for International Development
@@ -5372,6 +5385,7 @@
   qualifications:
   table_note: date guessed from first system access at CDC
   replaced_by:
+  same_as:
   agency:
     id: CDC
     name: Centers for Disease Control and Prevention
@@ -5440,6 +5454,7 @@
   qualifications:
   table_note: date guessed from first system access at CMS
   replaced_by:
+  same_as:
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -5508,6 +5523,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: Energy
     name: Department of Energy
@@ -5575,6 +5591,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -5642,6 +5659,7 @@
   qualifications:
   table_note: info reported by news source
   replaced_by:
+  same_as:
   agency:
     id: State
     name: State Department
@@ -5709,6 +5727,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: NIH
     name: National Institute of Health
@@ -5777,6 +5796,7 @@
   qualifications:
   table_note: arrived at agency to do secondary round of grant reviews with other DOGE staff at HHS.
   replaced_by:
+  same_as:
   agency:
     id: NSF
     name: National Science Foundation
@@ -5844,6 +5864,7 @@
   qualifications:
   table_note: Salary range for GS-15 in DC
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -5901,6 +5922,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: Education
     name: Department of Education
@@ -5968,6 +5990,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: HHS
     name: Health and Human Services
@@ -6035,6 +6058,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -6103,6 +6127,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -6161,6 +6186,7 @@
   qualifications:
   table_note: No idea on GSA start but before 3/13
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -6218,6 +6244,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: NEH
     name: National Endowment for the Humanities
@@ -6285,6 +6312,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: NLRB
     name: National Labor Relations Board
@@ -6352,6 +6380,7 @@
   qualifications:
   table_note: reported in early Feb but named later
   replaced_by:
+  same_as:
   agency:
     id: VA
     name: Veterans Administration
@@ -6409,6 +6438,7 @@
   qualifications:
   table_note: no info, but assuming detailed from VA
   replaced_by: dod-fulcher-advisor
+  same_as:
   agency:
     id: DOD
     name: Department of Defense
@@ -6476,6 +6506,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOD
     name: Department of Defense
@@ -6533,6 +6564,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: HHS
     name: Health and Human Services
@@ -6590,6 +6622,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -6658,6 +6691,7 @@
   qualifications:
   table_note: Assuming early Feb start from appear at DOL, being in Riley Sennott's calendar
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -6715,6 +6749,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOL
     name: Department of Labor
@@ -6782,6 +6817,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: FAA
     name: Federal Aviation Administration
@@ -6840,6 +6876,7 @@
   qualifications:
   table_note: this is Amy's role in USDS until she was named the administrator of DOGE
   replaced_by: doge-amy-gleason-director
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -6898,6 +6935,7 @@
   qualifications:
   table_note: assuming a detail from DOGE to HHS
   replaced_by:
+  same_as:
   agency:
     id: HHS
     name: Health and Human Services
@@ -6955,6 +6993,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -7013,6 +7052,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -7081,6 +7121,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: HHS
     name: Health and Human Services
@@ -7148,6 +7189,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -7205,6 +7247,7 @@
   qualifications: Founder, CEO and Chief Investment Officer of [REDACTED]. Over 25 years of experience in private equity investing.
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -7272,6 +7315,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: Commerce
     name: Commerce Department
@@ -7329,6 +7373,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -7386,6 +7431,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: IMLS
     name: Institute for Museum and Library Services
@@ -7443,6 +7489,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -7501,6 +7548,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -7569,6 +7617,7 @@
   qualifications:
   table_note: AP reports in DOI in January, inferring before water pump stunt
   replaced_by: doi-hassen-acting
+  same_as:
   agency:
     id: DOI
     name: Department of the Interior
@@ -7626,6 +7675,7 @@
   qualifications:
   table_note: ended with title change to Principal Deputy Assistant Secretary
   replaced_by: doi-hassan-principal
+  same_as:
   agency:
     id: DOI
     name: Department of the Interior
@@ -7683,6 +7733,7 @@
   qualifications:
   table_note: title change allows him to avoid Senate approval/ethics rules; date of change unclear
   replaced_by:
+  same_as:
   agency:
     id: DOI
     name: Department of the Interior
@@ -7740,6 +7791,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOJ
     name: Department of Justice
@@ -7797,6 +7849,7 @@
   qualifications:
   table_note: ended by promotion to CIO
   replaced_by: opm-hogan-cio
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -7875,6 +7928,7 @@
   qualifications:
   table_note: testified he started as Senior Advisor but was made Acting CIO same day. Made permanent CIO on 2/11
   replaced_by: opm-hogan-cio-official
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -7932,6 +7986,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -8010,6 +8065,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -8067,6 +8123,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -8125,6 +8182,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOI
     name: Department of the Interior
@@ -8192,6 +8250,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USIP
     name: US Institute of Peace
@@ -8249,6 +8308,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USAID
     name: US Agency for International Development
@@ -8306,6 +8366,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -8363,6 +8424,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: EPA
     name: Environmental Protection Agency
@@ -8420,6 +8482,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: FAA
     name: Federal Aviation Administration
@@ -8478,6 +8541,7 @@
   qualifications:
   table_note: reported as interviewing USDS staff about jobs, not found in GSA or OPM lists
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -8536,6 +8600,7 @@
   qualifications:
   table_note: assuming detail from DOGE
   replaced_by:
+  same_as:
   agency:
     id: EPA
     name: Environmental Protection Agency
@@ -8603,6 +8668,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOL
     name: Department of Labor
@@ -8670,6 +8736,7 @@
   qualifications:
   table_note: limited onboarding docs, court docs about them
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -8747,6 +8814,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -8814,6 +8882,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: TSA
     name: Transportation Security Administration
@@ -8882,6 +8951,7 @@
   qualifications:
   table_note: detail in court doc
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -8949,6 +9019,7 @@
   qualifications:
   table_note: detail in court doc
   replaced_by:
+  same_as:
   agency:
     id: USAGM
     name: US Agency for Global Media
@@ -9016,6 +9087,7 @@
   qualifications:
   table_note: hired at maximum salary for GS federal employee in DC
   replaced_by: opm-perm-employee-5
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -9094,6 +9166,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USAID
     name: US Agency for International Development
@@ -9163,6 +9236,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USDA
     name: Department of Agriculture
@@ -9230,6 +9304,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -9297,6 +9372,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -9375,6 +9451,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: IRS
     name: Internal Revenue Service
@@ -9453,6 +9530,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: FTC
     name: Federal Trade Commission
@@ -9520,6 +9598,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -9578,6 +9657,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -9645,6 +9725,7 @@
   qualifications:
   table_note: assuming detail from SSA
   replaced_by:
+  same_as:
   agency:
     id: DOJ
     name: Department of Justice
@@ -9712,6 +9793,7 @@
   qualifications:
   table_note:
   replaced_by: appoint-treasury-thomas-krause
+  same_as:
   agency:
     id: Treasury
     name: Department of the Treasury
@@ -9789,6 +9871,7 @@
   qualifications:
   table_note: Salary range for GS-15 in DC
   replaced_by:
+  same_as:
   agency:
     id: Treasury
     name: Department of the Treasury
@@ -9856,6 +9939,7 @@
   qualifications:
   table_note: assuming appointed
   replaced_by:
+  same_as:
   agency:
     id: HUD
     name: Housing and Urban Development
@@ -9913,6 +9997,7 @@
   qualifications:
   table_note: fired for talking to media, dates from his blog
   replaced_by:
+  same_as:
   agency:
     id: VA
     name: Veterans Administration
@@ -9970,6 +10055,7 @@
   qualifications:
   table_note: salary reported by Wired
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -10027,6 +10113,7 @@
   qualifications:
   table_note:
   replaced_by: usaid-jeremy-lewin-2
+  same_as:
   agency:
     id: USAID
     name: US Agency for International Development
@@ -10094,6 +10181,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -10161,6 +10249,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: HHS
     name: Health and Human Services
@@ -10228,6 +10317,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: NIH
     name: National Institute of Health
@@ -10296,6 +10386,7 @@
   qualifications:
   table_note: date inferred from access to CMS CALM system
   replaced_by:
+  same_as:
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -10364,6 +10455,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USAID
     name: US Agency for International Development
@@ -10421,6 +10513,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: State
     name: State Department
@@ -10478,6 +10571,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -10536,6 +10630,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: EPA
     name: Environmental Protection Agency
@@ -10593,6 +10688,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOI
     name: Department of the Interior
@@ -10650,6 +10746,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -10709,6 +10806,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: FBI
     name: Federal Bureau of Investigation
@@ -10777,6 +10875,7 @@
   qualifications:
   table_note: assuming detail from OPM
   replaced_by:
+  same_as:
   agency:
     id: FCC
     name: Federal Communications Commission
@@ -10844,6 +10943,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: FAA
     name: Federal Aviation Administration
@@ -10902,6 +11002,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -10959,6 +11060,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: IAF
     name: Inter-American Foundation
@@ -11016,6 +11118,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -11073,6 +11176,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -11130,6 +11234,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USDFC
     name: US International Development Finance Corporation
@@ -11197,6 +11302,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SEC
     name: Securities and Exchange Commission
@@ -11264,6 +11370,7 @@
   qualifications:
   table_note: no public details on when she started with DOGE, but date inferred
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -11322,6 +11429,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: HHS
     name: Health and Human Services
@@ -11379,6 +11487,7 @@
   qualifications:
   table_note: date inferred from system access
   replaced_by:
+  same_as:
   agency:
     id: NIH
     name: National Institute of Health
@@ -11447,6 +11556,7 @@
   qualifications:
   table_note: mentioned as meeting with FDA staff in late Feb/early March
   replaced_by:
+  same_as:
   agency:
     id: FDA
     name: Food and Drug Administration
@@ -11515,6 +11625,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: HUD
     name: Housing and Urban Development
@@ -11572,6 +11683,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SEC
     name: Securities and Exchange Commission
@@ -11629,6 +11741,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -11697,6 +11810,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -11764,6 +11878,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CBP
     name: Customs and Border Patrol
@@ -11832,6 +11947,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: ICE
     name: Immigration and Customs Enforcement
@@ -11900,6 +12016,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: TSA
     name: Transportation Security Administration
@@ -11968,6 +12085,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USCIS
     name: US Citizenship & Immigration Services
@@ -12036,6 +12154,7 @@
   qualifications:
   table_note: assuming start at DOL because listed later as detailee from there
   replaced_by:
+  same_as:
   agency:
     id: DOL
     name: Department of Labor
@@ -12093,6 +12212,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -12180,6 +12300,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: HHS
     name: Health and Human Services
@@ -12247,6 +12368,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -12315,6 +12437,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -12383,6 +12506,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: FBI
     name: Federal Bureau of Investigation
@@ -12451,6 +12575,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: Education
     name: Department of Education
@@ -12518,6 +12643,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: FDIC
     name: Federal Deposit Insurance Commission
@@ -12585,6 +12711,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: EOP
     name: Executive Office of the President
@@ -12642,6 +12769,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -12700,6 +12828,7 @@
   qualifications:
   table_note: Salary range for GS-15 in DC
   replaced_by:
+  same_as:
   agency:
     id: Treasury
     name: Department of the Treasury
@@ -12767,6 +12896,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: IRS
     name: Internal Revenue Service
@@ -12835,6 +12965,7 @@
   qualifications:
   table_note: assuming hired at GSA
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -12892,6 +13023,7 @@
   qualifications:
   table_note: assuming detail from GSA
   replaced_by:
+  same_as:
   agency:
     id: SBA
     name: Small Business Administration
@@ -12959,6 +13091,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: EXIM
     name: Export-Import Bank of the United States
@@ -13016,6 +13149,7 @@
   qualifications:
   table_note: Salary range for GS-15 in DC
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -13084,6 +13218,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -13162,6 +13297,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: NOAA
     name: National Oceanic and Atmospheric Administration
@@ -13230,6 +13366,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -13297,6 +13434,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -13384,6 +13522,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -13442,6 +13581,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: Education
     name: Department of Education
@@ -13519,6 +13659,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: Energy
     name: Department of Energy
@@ -13586,6 +13727,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOL
     name: Department of Labor
@@ -13653,6 +13795,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: FDIC
     name: Federal Deposit Insurance Commission
@@ -13720,6 +13863,7 @@
   qualifications:
   table_note: Salary range for GS-15 in DC
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -13788,6 +13932,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -13855,6 +14000,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: TSA
     name: Transportation Security Administration
@@ -13923,6 +14069,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USCIS
     name: US Citizenship & Immigration Services
@@ -13991,6 +14138,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -14058,6 +14206,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOJ
     name: Department of Justice
@@ -14115,6 +14264,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: Energy
     name: Department of Energy
@@ -14172,6 +14322,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: HHS
     name: Health and Human Services
@@ -14229,6 +14380,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -14297,6 +14449,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: NIH
     name: National Institute of Health
@@ -14365,6 +14518,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: NSF
     name: National Science Foundation
@@ -14432,6 +14586,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: VA
     name: Veterans Administration
@@ -14489,6 +14644,7 @@
   qualifications:
   table_note:
   replaced_by: ssa-mike-russo-advisor
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -14548,6 +14704,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -14605,6 +14762,7 @@
   qualifications:
   table_note:
   replaced_by: amanda-scales-demotion
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -14673,6 +14831,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -14730,6 +14889,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -14787,6 +14947,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CBP
     name: Customs and Border Patrol
@@ -14855,6 +15016,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: FEMA
     name: Federal Emergency Management Agency
@@ -14923,6 +15085,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: ICE
     name: Immigration and Customs Enforcement
@@ -14991,6 +15154,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: TSA
     name: Transportation Security Administration
@@ -15059,6 +15223,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USCIS
     name: US Citizenship & Immigration Services
@@ -15127,6 +15292,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -15184,6 +15350,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DHS
     name: Department of Homeland Security
@@ -15251,6 +15418,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CISA
     name: Cybersecurity and Infrastructure Security Agency
@@ -15319,6 +15487,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: HHS
     name: Health and Human Services
@@ -15386,6 +15555,7 @@
   qualifications:
   table_note: start inferred from [his father's article about his role](https://www.cjr.org/opinion/doge-journalism-ethics-father-son.php)
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -15443,6 +15613,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: NASA
     name: National Aeronautics and Space Administration
@@ -15510,6 +15681,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: NOAA
     name: National Oceanic and Atmospheric Administration
@@ -15568,6 +15740,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -15625,6 +15798,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: Education
     name: Department of Education
@@ -15702,6 +15876,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -15779,6 +15954,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USADF
     name: U.S. African Development Foundation
@@ -15856,6 +16032,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USPS
     name: US Postal Service
@@ -15933,6 +16110,7 @@
   qualifications:
   table_note: Salary range for GS-14 in DC
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -15990,6 +16168,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USDFC
     name: US International Development Finance Corporation
@@ -16057,6 +16236,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -16114,6 +16294,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOL
     name: Department of Labor
@@ -16171,6 +16352,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: Treasury
     name: Department of the Treasury
@@ -16228,6 +16410,7 @@
   qualifications:
   table_note: he was detailed to USPS from GSA, so assuming appointed at GSA but info unknown
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -16285,6 +16468,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USPS
     name: US Postal Service
@@ -16362,6 +16546,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: NASA
     name: National Aeronautics and Space Administration
@@ -16429,6 +16614,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: FAA
     name: Federal Aviation Administration
@@ -16487,6 +16673,7 @@
   qualifications:
   table_note: detail started before 2/13
   replaced_by: hhs-brad-smith
+  same_as:
   agency:
     id: HHS
     name: Health and Human Services
@@ -16554,6 +16741,7 @@
   qualifications:
   table_note: identified as dual appointee at HHS and DOGE / detailed from USDS
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -16612,6 +16800,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: HHS
     name: Health and Human Services
@@ -16679,6 +16868,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOL
     name: Department of Labor
@@ -16736,6 +16926,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: IMLS
     name: Institute for Museum and Library Services
@@ -16793,6 +16984,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -16861,6 +17053,7 @@
   qualifications:
   table_note: resigned abruptly the day after being appointed
   replaced_by:
+  same_as:
   agency:
     id: FHFA
     name: Federal Housing Finance Agency
@@ -16918,6 +17111,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOJ
     name: Department of Justice
@@ -16985,6 +17179,7 @@
   qualifications:
   table_note:
   replaced_by: ssa-steffensen-1
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -17042,6 +17237,7 @@
   qualifications:
   table_note: promoted within two days of being appointed
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration
@@ -17099,6 +17295,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -17156,6 +17353,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOT
     name: Department of Transportation
@@ -17213,6 +17411,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -17280,6 +17479,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -17339,6 +17539,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: HUD
     name: Housing and Urban Development
@@ -17396,6 +17597,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: HHS
     name: Health and Human Services
@@ -17453,6 +17655,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CMS
     name: Centers for Medicare and Medicaid Services
@@ -17521,6 +17724,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: NSF
     name: National Science Foundation
@@ -17588,6 +17792,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOI
     name: Department of the Interior
@@ -17645,6 +17850,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: VA
     name: Veterans Administration
@@ -17702,6 +17908,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: EOP
     name: Executive Office of the President
@@ -17759,6 +17966,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -17816,6 +18024,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: Treasury
     name: Department of the Treasury
@@ -17883,6 +18092,7 @@
   qualifications:
   table_note: guessed from govt declaration detailed from DOGE to CFPB
   replaced_by:
+  same_as:
   agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -17941,6 +18151,7 @@
   qualifications:
   table_note: no direct confirmation, but linked to agency by NYT, and other DOGE staff there in early Feb
   replaced_by:
+  same_as:
   agency:
     id: USDA
     name: Department of Agriculture
@@ -18008,6 +18219,7 @@
   qualifications:
   table_note: detail ended because he became a full-time CFPB employee on 3/5
   replaced_by: cfpb-jordan-wick
+  same_as:
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -18075,6 +18287,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: DOL
     name: Department of Labor
@@ -18142,6 +18355,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: Education
     name: Department of Education
@@ -18219,6 +18433,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -18286,6 +18501,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: FCC
     name: Federal Communications Commission
@@ -18353,6 +18569,7 @@
   qualifications:
   table_note: Salary range for GS-15 in DC
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -18421,6 +18638,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -18478,6 +18696,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: USDFC
     name: US International Development Finance Corporation
@@ -18545,6 +18764,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: Treasury
     name: Department of the Treasury
@@ -18602,6 +18822,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: OPM
     name: Office of Personnel Management
@@ -18670,6 +18891,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -18737,6 +18959,7 @@
   qualifications:
   table_note: unknown who this is and if sent to other agencies
   replaced_by:
+  same_as:
   agency:
     id: PeaceCorps
     name: Peace Corps
@@ -18794,6 +19017,7 @@
   qualifications:
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: GSA
     name: General Services Administration
@@ -18806,6 +19030,586 @@
     path: "/agencies/gsa"
   agency_and_parent:
   - GSA
+  documents: []
+- id: opm-employee-09
+  type: unknown
+  agency_id: OPM
+  name:
+  doge_alias_id: OPM-09
+  from_agency_id:
+  from_truth:
+  start_date: '2025-01-31'
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-01-31'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Start date guessed from system access
+  replaced_by:
+  same_as:
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
+  documents: []
+- id: opm-employee-10
+  type: unknown
+  agency_id: OPM
+  name:
+  doge_alias_id: OPM-10
+  from_agency_id:
+  from_truth:
+  start_date: '2025-01-31'
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-01-31'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Start date guessed from system access
+  replaced_by:
+  same_as:
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
+  documents: []
+- id: opm-employee-11
+  type: unknown
+  agency_id: OPM
+  name:
+  doge_alias_id: OPM-11
+  from_agency_id:
+  from_truth:
+  start_date: '2025-02-07'
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-07'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Start date guessed from system access
+  replaced_by:
+  same_as:
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
+  documents: []
+- id: opm-employee-12
+  type: unknown
+  agency_id: OPM
+  name:
+  doge_alias_id: OPM-12
+  from_agency_id:
+  from_truth:
+  start_date: '2025-02-07'
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-07'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Start date guessed from system access
+  replaced_by:
+  same_as:
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
+  documents: []
+- id: opm-employee-13
+  type: unknown
+  agency_id: OPM
+  name:
+  doge_alias_id: OPM-13
+  from_agency_id:
+  from_truth:
+  start_date: '2025-01-31'
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-01-31'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Start date guessed from system access
+  replaced_by:
+  same_as:
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
+  documents: []
+- id: opm-employee-14
+  type: unknown
+  agency_id: OPM
+  name:
+  doge_alias_id: OPM-14
+  from_agency_id:
+  from_truth:
+  start_date: '2025-02-07'
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-07'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Start date guessed from system access
+  replaced_by:
+  same_as:
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
+  documents: []
+- id: opm-employee-15
+  type: unknown
+  agency_id: OPM
+  name:
+  doge_alias_id: OPM-15
+  from_agency_id:
+  from_truth:
+  start_date: '2025-02-07'
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-07'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Start date guessed from system access
+  replaced_by:
+  same_as:
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
+  documents: []
+- id: opm-employee-16
+  type: unknown
+  agency_id: OPM
+  name:
+  doge_alias_id: OPM-16
+  from_agency_id:
+  from_truth:
+  start_date: '2025-01-31'
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-01-31'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Start date guessed from system access
+  replaced_by:
+  same_as:
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
+  documents: []
+- id: opm-employee-17
+  type: unknown
+  agency_id: OPM
+  name:
+  doge_alias_id: OPM-17
+  from_agency_id:
+  from_truth:
+  start_date: '2025-01-31'
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-01-31'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Start date guessed from system access
+  replaced_by:
+  same_as:
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
+  documents: []
+- id: opm-employee-18
+  type: unknown
+  agency_id: OPM
+  name:
+  doge_alias_id: OPM-18
+  from_agency_id:
+  from_truth:
+  start_date: '2025-01-24'
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-01-24'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Start date guessed from system access
+  replaced_by:
+  same_as:
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
   documents: []
 - id: ssa-employee-11
   type: appointed
@@ -18854,6 +19658,7 @@
     capabilities  and driving technical decisions and best practices.
   table_note:
   replaced_by:
+  same_as:
   agency:
     id: SSA
     name: Social Security Administration

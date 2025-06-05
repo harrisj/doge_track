@@ -164,6 +164,10 @@
     "replaced_by": {
       "description": "If the role was succeeded by another, give by here",
       "type": "string"
+    },
+    "same_as": {
+      "description": "For use in aliases, indicates that the position is the same as another one publicly known (the two can be merged)",
+      "type": "string"
     }
   },
   "required": [

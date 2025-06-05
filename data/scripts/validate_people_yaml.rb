@@ -24,12 +24,27 @@ people.each do |p|
   raise "No name for #{p}" unless p[:name]
 
   # Delete aliased positions
-  p[:positions]&.reject! { |pos| pos.key? :alias }
+  p[:positions]&.reject! { |pos| pos.key?(:alias) && !pos.key?(:same_as) }
 
   my_aliased_positions = named_alias_positions.select { |a| a[:name] == p[:name] }
   if my_aliased_positions
     p[:positions] ||= []
-    p[:positions] += my_aliased_positions
+
+    my_aliased_positions.each do |apos|
+      if apos.key? :same_as
+        pos = p[:positions].find { |x| x[:id] == apos[:same_as] }
+        raise "Unable to find position #{apos[:same_as]} used in alias position" if pos.nil?
+        unless apos[:name] == p[:name]
+          raise "Position #{pos[:id]} has a different person (#{p[:name]}) than #{apos[:name]}"
+        end
+
+        apos.each do |k, v|
+          pos[k] = v unless pos.key?(k)
+        end
+      else
+        p[:positions].append(apos)
+      end
+    end
   end
 
   next unless p.key? :positions

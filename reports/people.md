@@ -65,13 +65,6 @@
 # Brian Bjelde
 - category: support
 - positions:
-    -  **OPM** (2025-01-20 to ??) Expert ED-00
-        - website: Agency Website: 2025-01-20 - ongoing
-        - github: GitHub: 2025-01-20 - ongoing
-        - github: GitHub: 2025-01-20 - ongoing
-        - USA Perf: USA Performance: 2025-01-20 - ongoing
-        - USA Perf: USA Performance: 2025-01-20 - ongoing
-        - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
     -  **OPM** (2025-01-20 to 2025-01-31) [as "OPM-07"] Expert ED-00 volunteer
         - website: Agency Website: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing

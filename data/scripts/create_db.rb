@@ -71,6 +71,7 @@ DB.create_table! :positions do
   string :qualifications
   string :table_note
   string :replaced_by
+  string :same_as
 end
 
 DB.create_table! :people do
