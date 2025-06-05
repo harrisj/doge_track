@@ -26,7 +26,7 @@
               <div class="align-top sm:hidden">{{ render EdtfFormat.new(roles[0].date_granted, :compact, :none) }}-{{ render EdtfFormat.new(roles[0].date_revoked, :compact) }}</div>
               </td>
               {% if i == 0 %}<td class="align-top" rowspan="{{ grouped_roles.size }}">
-              <strong><a href="/all/systems#{{ govt_system.id }}">{{ govt_system.name }}</a></strong>
+              <div class="bold"><a href="/all/systems#{{ govt_system.id }}">{{ govt_system.name }}</a></div>
               {{ govt_system.description }}</td>{% end %}
           </tr>
       {% end %}
