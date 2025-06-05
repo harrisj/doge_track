@@ -69,7 +69,7 @@ num_cols +=1 if agency_col %}
           </div>
         {% end %}
 
-        {% if event.source && event.source_name %} <div class="text-nowrap float-right ml-2"><a href="{{ event.source }}" class="link-hover"><i class="fa-sharp fa-solid fa-link-simple"></i>&nbsp;<span class="italic text-2xs sm:text-xs">{{ event.source_name }}</span></a></div>{% end %}
+        {% if event.source && event.source_name %} <div class="text-nowrap float-right pl-4"><a href="{{ event.source }}" class="link-hover"><i class="fa-sharp fa-solid fa-link-simple"></i>&nbsp;<span class="italic text-2xs sm:text-xs">{{ event.source_name }}</span></a></div>{% end %}
         </div>
       </td>
     </tr>
