@@ -88,6 +88,83 @@
     ao_doge: true
     ao_truth: verified
     table_note: admin Entra access used to grant website access
+  - id: opm-website-scales
+    type: unknown
+    name: Amanda Scales
+    agency: OPM
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    table_note: listed as grant for "Web Admin" on 1/20. Not revoked as of 2/12
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+  - id: opm-website-ezell
+    type: unknown
+    name: Charles Ezell
+    agency: OPM
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    table_note: listed as grant for "Web Admin" on 1/20. Not revoked as of 2/12
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+  - id: opm-02-website
+    type: unknown
+    alias: OPM-03
+    agency: OPM
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    table_note: listed as grant for "Web Admin" on 1/20. Not revoked as of 2/12
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    name: Akash Bobba
+  - id: opm-03-website
+    type: unknown
+    alias: OPM-03
+    agency: OPM
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    table_note: listed as grant for "Web Admin" on 1/20. Not revoked as of 2/12
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    name: Akash Bobba
+  - id: opm-website-opm-5
+    type: unknown
+    alias: OPM-05
+    agency: OPM
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    table_note: listed as grant for "Web Admin" on 1/20. Not revoked as of 2/12
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    name: Gavin Kliger
+  - id: opm-website-opm-6
+    type: unknown
+    alias: OPM-06
+    agency: OPM
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    table_note: listed as grant for "Web Admin" on 1/20. Not revoked as of 2/12
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    name: Nikhil Rajpal
+  - id: opm-website-employee-7
+    type: unknown
+    alias: OPM-07
+    agency: OPM
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    table_note: listed as grant for "Web Admin" on 1/20. Not revoked as of 2/12
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    name: Brian Bjelde
+  - id: opm-website-greg-hogan
+    type: unknown
+    name: Greg Hogan
+    agency: OPM
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    table_note: listed as grant for "Web Admin" on 1/20. Not revoked as of 2/12
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
 
 - name: Anti-Fraud Enterprise Solution
   type: internal
@@ -343,6 +420,72 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     source_name: court doc
 
+- name: Databricks
+  acronym: Databricks
+  id: databricks
+  type: saas
+  category: data
+  description: A hosted or self-hosted service that simplifies systems for processing big Data
+  access:
+  - id: databricks-opm-scales
+    type: admin
+    name: Amanda Scales
+    date_granted: 2025-02-03
+    date_grant_truth: verified
+    never_accessed: true
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    agency: OPM
+  - id: databricks-opm-hogan
+    type: admin
+    name: Amanda Scales
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    never_accessed: true
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    agency: OPM
+  - id: databricks-opm-employee-2
+    type: admin
+    table_note: listed as "OPM Data Azure Databricks Admin + NP / PRD Azure Subscriptions"
+    alias: OPM-02
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    agency: OPM
+    name: Riccardo Biasini
+  - id: databricks-opm-employee-6
+    type: admin
+    table_note: listed as "OPM Data Azure Databricks Admin + NP / PRD Azure Subscriptions"
+    alias: OPM-06
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    agency: OPM
+    name: Nikhil Rajpal
+  - id: databricks-opm-employee-5
+    type: admin
+    table_note: listed as "OPM Data Azure Databricks Admin + NP / PRD Azure Subscriptions"
+    alias: OPM-06
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    agency: OPM
+    name: Nikhil Rajpal
+  - id: databricks-opm-employee-8
+    type: admin
+    table_note: listed as "OPM Data Azure Databricks Admin + NP / PRD Azure Subscriptions"
+    alias: OPM-08
+    date_granted: 2025-02-03
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    agency: OPM
+    name: James Sullivan
+
 - name: Debt Management and Collection System
   id: dmcs
   acronym: DMCS
@@ -524,6 +667,29 @@
   description: Database of all federal employees
   risk: PII including SSN, date of birth, salary, home address, and job description
   agency: OPM
+  access:
+  - id: ehri-opm-2
+    type: unknown
+    alias: OPM-02
+    never_accessed: true
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    date_revoked: 2025-02-06
+    date_revoked_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    name: Riccardo Biasini
+  - id: ehri-opm-6
+    type: unknown
+    alias: OPM-06
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    never_accessed: true
+    date_revoked: 2025-02-06
+    date_revoked_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    name: Nikhil Rajpal
 
 - name: Enterprise Physical Access Control System
   id: epacs
@@ -848,6 +1014,76 @@
     date_revoked_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     source_name: court doc
+
+- name: GitHub
+  id: github
+  acronym: github
+  type: saas
+  description: >-
+    A service owned by Microsoft for developers to run version control on their applications and back
+    them up to shared repositories that can be used by other developers. Github is provided as both a
+    hosted service (at github.com) or via versions that can be installed with agency data centers (aka
+    GitHub Enterprise or GHE). Access to Github would be expected for developers, but doesn't necessarily
+    mean the person is a coder.
+  access:
+  - id: opm-github-employee-2
+    type: unknown
+    alias: OPM-02
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    table_note: Github Enterprise
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    agency: OPM
+    name: Riccardo Biasini
+  - id: opm-github-employee-5
+    type: unknown
+    alias: OPM-05
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    table_note: Github Enterprise
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    agency: OPM
+    name: Gavin Kliger
+  - id: opm-github-employee-7
+    type: unknown
+    alias: OPM-07
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    table_note: Github Enterprise
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    agency: OPM
+    name: Brian Bjelde
+  - id: opm-github-employee-3
+    type: unknown
+    alias: OPM-07
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    table_note: Github Enterprise
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    agency: OPM
+    name: Brian Bjelde
+  - id: opm-github-hogan
+    type: unknown
+    name: Greg Hogan
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    table_note: Github Enterprise
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    agency: OPM
+  - id: opm-github-scale
+    type: unknown
+    name: Amanda Scales
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    table_note: Github Enterprise
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    agency: OPM
 
 - name: Google Drive
   acronym: Google
@@ -2258,6 +2494,37 @@
     source: https://www.wired.com/story/doge-access-immigration-data-department-of-labor/
     source_name: Wired
 
+- name: STAMP
+  id: STAMP
+  acronym: STAMP
+  type: unknown
+  category: personnel
+  description: This is a system at OPM that I do not have information about yet
+  agency: OPM
+  access:
+  - id: opm-stamp-scales
+    name: Amanda Scales
+    type: unknown
+    date_granted: 2025-01-31
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+  - id: opm-stamp-ezell
+    name: Charles Ezell
+    type: unknown
+    date_granted: 2025-01-24
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+  - id: opm-stamp-employee-18
+    alias: OPM-18
+    type: unknown
+    date_granted: 2025-02-03
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    name:
+
 - name: Salesforce oneARC
   acronym: oneARC
   id: onearc
@@ -2435,6 +2702,151 @@
     https://www.opm.gov/information-management/privacy-policy/sorn/opm-sorn-govt-2-employee-performance-file-system-records.pdf
   pia: https://www.opm.gov/information-management/privacy-policy/privacy-policy/usap-pia.pdf
   agency: OPM
+  access:
+  - id: usa-performance-opm-2
+    type: unknown
+    agency: OPM
+    table_note: system name is listed as "USA Performance - U.S. Office of Personnel Management"
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-02
+    name: Riccardo Biasini
+  - id: usa-performance-opm-3
+    type: unknown
+    agency: OPM
+    table_note: system name is listed as "USA Performance - U.S. Office of Personnel Management"
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-03
+    name: Akash Bobba
+  - id: usa-performance-opm-4
+    type: unknown
+    agency: OPM
+    table_note: system name is listed as "USA Performance - U.S. Office of Personnel Management"
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-04
+    name:
+  - id: usa-performance-opm-6
+    type: unknown
+    agency: OPM
+    table_note: system name is listed as "USA Performance - U.S. Office of Personnel Management"
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-06
+    name: Nikhil Rajpal
+  - id: usa-performance-opm-7
+    type: unknown
+    agency: OPM
+    table_note: system name is listed as "USA Performance - U.S. Office of Personnel Management"
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-07
+    name: Brian Bjelde
+  - id: usa-performance-opm-9
+    type: unknown
+    agency: OPM
+    table_note: system name is listed as "USA Performance - Office of the Director"
+    date_granted: 2025-01-31
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-09
+    name:
+  - id: usa-performance-opm-10
+    type: unknown
+    agency: OPM
+    table_note: system name is listed as "USA Performance - Office of the Director"
+    date_granted: 2025-02-07
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-10
+    name:
+  - id: usa-performance-opm-11
+    type: unknown
+    agency: OPM
+    table_note: system name is listed as "USA Performance - Office of the Director"
+    date_granted: 2025-02-07
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-11
+    name:
+  - id: usa-performance-opm-12
+    type: unknown
+    agency: OPM
+    table_note: system name is listed as "USA Performance - Office of the Director"
+    date_granted: 2025-02-07
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-12
+    name:
+  - id: usa-performance-opm-13
+    type: unknown
+    agency: OPM
+    table_note: system name is listed as "USA Performance - Office of the Director"
+    date_granted: 2025-01-31
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-13
+    name:
+  - id: usa-performance-opm-14
+    type: unknown
+    agency: OPM
+    table_note: system name is listed as "USA Performance - Office of the Director"
+    date_granted: 2025-02-07
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-14
+    name:
+  - id: usa-performance-opm-15
+    type: unknown
+    agency: OPM
+    table_note: system name is listed as "USA Performance - Office of the Director"
+    date_granted: 2025-02-07
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-15
+    name:
+  - id: usa-performance-opm-16
+    type: unknown
+    agency: OPM
+    table_note: system name is listed as "USA Performance - Office of the Director"
+    date_granted: 2025-01-31
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-16
+    name:
+  - id: usa-performance-opm-17
+    type: unknown
+    agency: OPM
+    table_note: system name is listed as "USA Performance - Office of the Director"
+    date_granted: 2025-01-31
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-17
+    name:
+  - id: usa-performance-opm-18
+    type: unknown
+    agency: OPM
+    table_note: system name is listed as "USA Performance - Office of the Director"
+    date_granted: 2025-01-24
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-18
+    name:
+  - id: usa-performance-hogan
+    type: unknown
+    agency: OPM
+    name: Brian Bjelde
+    table_note: system name is listed as "USA Performance - U.S. Office of Personnel Management"
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    alias: OPM-07
 
 - name: USA Staffing
   id: usa-staffing
@@ -2465,20 +2877,41 @@
     type: admin
     agency: OPM
     name: Amanda Scales
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    table_note: for verifying the govt-wide hiring freeze
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    date_last_used: 2025-02-28
+  - id: usastaffing-opm-2
+    type: admin
+    agency: OPM
+    alias: OPM-02
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.98.0.pdf
     source_name: court doc
-    table_note: for the govt-wide hiring freeze
-    date_granted: 2025-01-(20)~
-    date_grant_truth: inferred
+    table_note: USA Staffing Core + Admin Portal - DEV/TST/STG/TRN/PRD
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    name: Riccardo Biasini
+  - id: usastaffing-opm-5
+    type: admin
+    agency: OPM
+    alias: OPM-05
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.98.0.pdf
+    source_name: court doc
+    table_note: USA Staffing Core + Admin Portal - DEV/TST/STG/TRN/PRD
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    name: Gavin Kliger
   - id: usastaffing-opm-6
     type: admin
     agency: OPM
     alias: OPM-06
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.98.0.pdf
     source_name: court doc
-    table_note: for the govt-wide hiring freeze
-    date_granted: 2025-01-(20)~
-    date_grant_truth: inferred
+    table_note: USA Staffing Core + Admin Portal - DEV/TST/STG/TRN/PRD
+    date_granted: 2025-01-28
+    date_grant_truth: verified
     name: Nikhil Rajpal
   - id: usastaffing-opm-7
     type: admin
@@ -2487,9 +2920,19 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.98.0.pdf
     source_name: court doc
     table_note: for the govt-wide hiring freeze
-    date_granted: 2025-01-(20)~
-    date_grant_truth: inferred
-    name:
+    date_granted: 2025-01-20
+    date_grant_truth: verified
+    name: Brian Bjelde
+  - id: usastaffing-opm-8
+    type: admin
+    agency: OPM
+    alias: OPM-08
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.98.0.pdf
+    source_name: court doc
+    table_note: for the govt-wide hiring freeze
+    date_granted: 2025-02-03
+    date_grant_truth: verified
+    name: James Sullivan
 
 - name: USAJobs
   id: usa-jobs
@@ -2635,3 +3078,34 @@
     ao_type: deputy
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     source_name: court_doc
+
+- name: eOPF
+  id: eopf
+  acronym: eOPF
+  category: personnel
+  description: >-
+    An system for government employees to access their personnel files electronically. These are updated
+    when staff receive changes in salary or duty station or title, or receive performance reviews.
+  access:
+  - id: eopf-opm-2
+    type: unknown
+    alias: OPM-02
+    never_accessed: true
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    date_revoked: 2025-02-06
+    date_revoked_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    name: Riccardo Biasini
+  - id: eopf-opm-6
+    type: unknown
+    alias: OPM-02
+    never_accessed: true
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    date_revoked: 2025-02-06
+    date_revoked_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    name: Riccardo Biasini

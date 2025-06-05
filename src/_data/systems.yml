@@ -73,10 +73,27 @@
   agency_id:
   all_agency_ids:
   - CFPB
+  - OPM
   all_names:
   - Gavin Kliger
+  - Amanda Scales
+  - Charles Ezell
+  - Akash Bobba
+  - Akash Bobba
+  - Gavin Kliger
+  - Nikhil Rajpal
+  - Brian Bjelde
+  - Greg Hogan
   access_ids:
   - doge-cfpb-website
+  - opm-website-scales
+  - opm-website-ezell
+  - opm-02-website
+  - opm-03-website
+  - opm-website-opm-5
+  - opm-website-opm-6
+  - opm-website-employee-7
+  - opm-website-greg-hogan
 - id: afes
   acronym: AFES
   name: Anti-Fraud Enterprise Solution
@@ -277,6 +294,35 @@
   - Jordan Wick
   access_ids:
   - data-insight-cfpb-wick
+- id: databricks
+  acronym: Databricks
+  name: Databricks
+  type: saas
+  description: A hosted or self-hosted service that simplifies systems for processing big Data
+  comment:
+  category: data
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - OPM
+  all_names:
+  - Amanda Scales
+  - Amanda Scales
+  - Riccardo Biasini
+  - Nikhil Rajpal
+  - Nikhil Rajpal
+  - James Sullivan
+  access_ids:
+  - databricks-opm-scales
+  - databricks-opm-hogan
+  - databricks-opm-employee-2
+  - databricks-opm-employee-6
+  - databricks-opm-employee-5
+  - databricks-opm-employee-8
 - id: dmcs
   acronym: DMCS
   name: Debt Management and Collection System
@@ -433,8 +479,12 @@
   agency_id: OPM
   all_agency_ids:
   - OPM
-  all_names: []
-  access_ids: []
+  all_names:
+  - Riccardo Biasini
+  - Nikhil Rajpal
+  access_ids:
+  - ehri-opm-2
+  - ehri-opm-6
 - id: epacs
   acronym: ePACS
   name: Enterprise Physical Access Control System
@@ -674,6 +724,38 @@
   - Jordan Wick
   access_ids:
   - ginvoicing-cfpb-wick
+- id: github
+  acronym: github
+  name: GitHub
+  type: saas
+  description: >-
+    A service owned by Microsoft for developers to run version control on their applications and back them up to shared repositories that can be used by
+    other developers. Github is provided as both a hosted service (at github.com) or via versions that can be installed with agency data centers (aka GitHub
+    Enterprise or GHE). Access to Github would be expected for developers, but doesn't necessarily mean the person is a coder.
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - OPM
+  all_names:
+  - Riccardo Biasini
+  - Gavin Kliger
+  - Brian Bjelde
+  - Brian Bjelde
+  - Greg Hogan
+  - Amanda Scales
+  access_ids:
+  - opm-github-employee-2
+  - opm-github-employee-5
+  - opm-github-employee-7
+  - opm-github-employee-3
+  - opm-github-hogan
+  - opm-github-scale
 - id: google-drive
   acronym: Google
   name: Google Drive
@@ -1677,6 +1759,28 @@
   - reo-collins
   - reo-moghaddassi
   - reo-elez
+- id: STAMP
+  acronym: STAMP
+  name: STAMP
+  type: unknown
+  description: This is a system at OPM that I do not have information about yet
+  comment:
+  category: personnel
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: OPM
+  all_agency_ids:
+  - OPM
+  all_names:
+  - Amanda Scales
+  - Charles Ezell
+  access_ids:
+  - opm-stamp-scales
+  - opm-stamp-ezell
+  - opm-stamp-employee-18
 - id: onearc
   acronym: oneARC
   name: Salesforce oneARC
@@ -1791,8 +1895,29 @@
   agency_id: OPM
   all_agency_ids:
   - OPM
-  all_names: []
-  access_ids: []
+  all_names:
+  - Riccardo Biasini
+  - Akash Bobba
+  - Nikhil Rajpal
+  - Brian Bjelde
+  - Brian Bjelde
+  access_ids:
+  - usa-performance-opm-2
+  - usa-performance-opm-3
+  - usa-performance-opm-4
+  - usa-performance-opm-6
+  - usa-performance-opm-7
+  - usa-performance-opm-9
+  - usa-performance-opm-10
+  - usa-performance-opm-11
+  - usa-performance-opm-12
+  - usa-performance-opm-13
+  - usa-performance-opm-14
+  - usa-performance-opm-15
+  - usa-performance-opm-16
+  - usa-performance-opm-17
+  - usa-performance-opm-18
+  - usa-performance-hogan
 - id: usa-staffing
   acronym: USA Staff
   name: USA Staffing
@@ -1812,12 +1937,19 @@
   all_names:
   - Jordan Wick
   - Amanda Scales
+  - Riccardo Biasini
+  - Gavin Kliger
   - Nikhil Rajpal
+  - Brian Bjelde
+  - James Sullivan
   access_ids:
   - usastaffing-cfpb-wick
   - usastaffing-opm-scales
+  - usastaffing-opm-2
+  - usastaffing-opm-5
   - usastaffing-opm-6
   - usastaffing-opm-7
+  - usastaffing-opm-8
 - id: usa-jobs
   acronym: USA Jobs
   name: USAJobs
@@ -1954,3 +2086,25 @@
   - Jordan Wick
   access_ids:
   - webta-cfpb-wick
+- id: eopf
+  acronym: eOPF
+  name: eOPF
+  type: unknown
+  description: >-
+    An system for government employees to access their personnel files electronically. These are updated when staff receive changes in salary or duty station
+    or title, or receive performance reviews.
+  comment:
+  category: personnel
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids: []
+  all_names:
+  - Riccardo Biasini
+  - Riccardo Biasini
+  access_ids:
+  - eopf-opm-2
+  - eopf-opm-6

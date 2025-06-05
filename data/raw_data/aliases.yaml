@@ -368,6 +368,7 @@
     - onboard-opm-employee-6
 
 - id: OPM-07
+  name: Brian Bjelde
   agency: OPM
   evidence:
   - On January 16, 2025, FSEM received 's new hire package
@@ -375,19 +376,31 @@
   - January 29, 2025, OPM's HR team requested clearance for to enter on duty on a permanent appointment
   - After a favorable review, was reciprocally approved for a permanent position on January 31 , 2025
   - Referred to as "his" oath of office
+  - Court docs include a PD code 6A39743
+  - This matches Brian Bjelde in a FOIAed list of OPM new hires
   positions:
   - id: opm-temp-employee-07
     type: appointed
     agency: OPM
     start_date: 2025-01-20
-    comment: Not sure who this is
     start_date_truth: verified
     end_date: 2025-01-31
+    nte_date: 2025-07-18
+    nte_date_truth: verified
     end_date_truth: verified
     end_type: replaced
     replaced_by: opm-perm-employee-07
+    pd_code: 6A39743
+    title: Expert
+    title_type: advisor
+    office: Office of the Director
+    pay_grade: ED-00
+    series: '0301'
+    salary: "$0"
     table_note: likely Schedule C
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+    documents:
+    - onboard-opm-employee-7
     source_name: court doc
   - id: opm-perm-employee-07
     type: appointed
@@ -396,6 +409,82 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.0.pdf
     source_name: court doc
     table_note: permanent position approved
+
+- id: OPM-08
+  agency: OPM
+  name: James Sullivan
+  evidence:
+  - PD code matches his name in FOIAed list of OPM new hires
+  - Title and start date also match
+  positions:
+  - id: opm-employee-08
+    type: appointed
+    start_date: 2025-01-20
+    start_date_truth: verified
+    appt_type: SES Noncareer
+    title: Senior Advisor to the Director
+    title_type: advisor
+    pay_grade: ES-00
+    salary: "$195,200"
+    series: '0301'
+    pd_code: 6A37370
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    source_name: court doc
+    agency: OPM
+    documents:
+    - onboard-opm-employee-8
+
+- id: OPM-09
+  agency: OPM
+  evidence:
+  - Granted access to USA Performance on 1/31
+
+- id: OPM-10
+  agency: OPM
+  evidence:
+  - Granted access to USA Performance on 1/31
+
+- id: OPM-11
+  agency: OPM
+  evidence:
+  - Granted access to USA Perfomance on 2/7
+
+- id: OPM-12
+  agency: OPM
+  evidence:
+  - Granted access to USA Performance on 2/7
+
+- id: OPM-13
+  agency: OPM
+  evidence:
+  - Granted access to USA Performance on 1/31
+
+- id: OPM-14
+  agency: OPM
+  evidence:
+  - Granted access to USA Performance on 2/7
+
+- id: OPM-15
+  agency: OPM
+  evidence:
+  - Granted access to USA Performance on 2/7
+
+- id: OPM-16
+  agency: OPM
+  evidence:
+  - Granted access to USA Performance on 1/31
+
+- id: OPM-17
+  agency: OPM
+  evidence:
+  - Granted access to USA Performance on 1/31
+
+- id: OPM-18
+  agency: OPM
+  evidence:
+  - Granted access to USA Performance on 1/24
+  - >-
+    Granted accces to STAMP on 2/3 (only Charles Ezell and Amanda Scales were also granted access to that)
 
 - id: SSA-01
   agency: SSA

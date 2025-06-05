@@ -357,7 +357,14 @@
   - 9CEKeLm7
   - C3QCySiU
   - 3FJ5yaAx
-  system_access: []
+  system_access:
+  - databricks-opm-employee-2
+  - ehri-opm-2
+  - opm-github-employee-2
+  - usa-performance-opm-2
+  - usastaffing-opm-2
+  - eopf-opm-2
+  - eopf-opm-6
   obj_type: Person
   linkified_blurb: >-
     <a class="link-hover" href="/people/support-team#riccardo-biasini">Riccardo Biasini</a> is an executive and software engineer who has worked at both
@@ -449,11 +456,19 @@
   path: "/people/support-team#brian-bjelde"
   position_ids:
   - opm-brian-bjelde
+  - opm-temp-employee-07
+  - opm-perm-employee-07
   event_ids:
   - JQXwpLN5
   - 4F5kEan6
   - 9CEKeLm7
-  system_access: []
+  system_access:
+  - opm-website-employee-7
+  - opm-github-employee-7
+  - opm-github-employee-3
+  - usa-performance-opm-7
+  - usa-performance-hogan
+  - usastaffing-opm-7
   obj_type: Person
   start_date: '2025-01-20'
   sort_date: '2025-01-20'
@@ -495,6 +510,9 @@
   - aympP8hu
   - HQUguBSH
   system_access:
+  - opm-03-website
+  - usa-performance-opm-3
+  - opm-02-website
   - numident-bobba
   obj_type: Person
   linkified_blurb: >-
@@ -829,6 +847,7 @@
   - detail-doge-education-coristine
   - detail-gsa-hhs-edward-coristine
   - internal-hhs-cms-coristine
+  - gsa-edward-coristine-fulltime
   - internal-dhs-tsa-coristine
   - internal-dhs-uscis-coristine
   event_ids:
@@ -1168,7 +1187,9 @@
   - GmvBm6qi
   - 9CEKeLm7
   - FoSzFb5k
-  system_access: []
+  system_access:
+  - opm-website-ezell
+  - opm-stamp-ezell
   obj_type: Person
   start_date: '2025-01-20'
   sort_date: '2025-01-20'
@@ -1206,6 +1227,7 @@
   - detail-gsa-state-farritor
   - internal-hhs-nih-farritor
   - detail-gsa-nsf-farritor
+  - gsa-farritor-fulltime
   - detail-gsa-dhs-farritor
   - internal-dhs-ice-farritor
   - internal-dhs-tsa-farritor
@@ -1876,7 +1898,9 @@
   - 9CEKeLm7
   - FoSzFb5k
   - tvAusFx6
-  system_access: []
+  system_access:
+  - opm-website-greg-hogan
+  - opm-github-hogan
   obj_type: Person
   linkified_blurb: >-
     It's not surprising that there are reports that <a class="link-hover" href="/agencies/opm">OPM</a> has been training AI models with information on government
@@ -2233,6 +2257,9 @@
   - dHm7PvDq
   - 5o5MwpMZ
   system_access:
+  - opm-website-opm-5
+  - opm-github-employee-5
+  - usastaffing-opm-5
   - ad-cfpb-kliger
   - entra-kliger
   - physical-access-kliger
@@ -3313,6 +3340,11 @@
   - 4q7ANp6B
   - aympP8hu
   system_access:
+  - opm-website-opm-6
+  - databricks-opm-employee-6
+  - databricks-opm-employee-5
+  - ehri-opm-6
+  - usa-performance-opm-6
   - usastaffing-opm-6
   - google-noaa-rajpal
   obj_type: Person
@@ -3577,8 +3609,14 @@
   - GmvBm6qi
   - 9CEKeLm7
   - FoSzFb5k
+  - 4JJspL6C
   system_access:
+  - opm-website-scales
+  - opm-github-scale
   - usastaffing-opm-scales
+  - databricks-opm-hogan
+  - opm-stamp-scales
+  - databricks-opm-scales
   obj_type: Person
   linkified_blurb: >-
     An associate of <a class="link-hover" href="/all/people#elon-musk">Elon Musk</a> from xAI, <a class="link-hover" href="/all/people#amanda-scales">Amanda
@@ -3742,6 +3780,7 @@
   - detail-gsa-ssa-employee-10
   - detail-gsa-usadf-ethan-shaotran
   - detail-gsa-usps-ethan-shaotran
+  - gsa-shaotran-fulltime
   - detail-gsa-dfc-shaotran
   event_ids:
   - bfo6pJUH
@@ -4081,6 +4120,42 @@
   start_date: 2025-05-(07)~
   sort_date: '2025-05-07'
   start_agency: DOT
+- name: James Sullivan
+  sort_name: Sullivan
+  slug: james-sullivan
+  page_slug:
+  age:
+  background:
+  category: unknown
+  own_page: false
+  blurb: >-
+    A veteran of the first Trump Administration, James Sullivan might not have been considered DOGE before by any media organizations. But he was hired
+    with the Senior Advisor title and on 3/28, he took over as the Chief of Staff at OPM from Amanda Scales. He also is one of the redacted identies in
+    court filings from the OPM. So, I think he counts?
+  reporting_notes:
+  comment:
+  govt_exit_date:
+  govt_exit_truth:
+  govt_exit_type:
+  table_note:
+  path: "/people/unknowns#james-sullivan"
+  position_ids:
+  - opm-employee-08
+  - opm-james-sullivan-demotion
+  event_ids:
+  - 4JJspL6C
+  system_access:
+  - databricks-opm-employee-8
+  - usastaffing-opm-8
+  obj_type: Person
+  linkified_blurb: >-
+    A veteran of the first Trump Administration, <a class="link-hover" href="/people/unknowns#james-sullivan">James Sullivan</a> might not have been considered
+    <a class="link-hover" href="/agencies/white-house">DOGE</a> before by any media organizations. But he was hired with the Senior Advisor title and on
+    3/28, he took over as the Chief of Staff at <a class="link-hover" href="/agencies/opm">OPM</a> from <a class="link-hover" href="/all/people#amanda-scales">Amanda
+    Scales</a>. He also is one of the redacted identies in court filings from the <a class="link-hover" href="/agencies/opm">OPM</a>. So, I think he counts?
+  start_date: '2025-01-20'
+  sort_date: '2025-01-20'
+  start_agency: OPM
 - name: Christopher Sweet
   sort_name: Sweet
   slug: christopher-sweet

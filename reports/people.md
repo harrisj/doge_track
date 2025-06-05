@@ -14,7 +14,7 @@
 # Jacob Altik
 - category: wrecker
 - positions:
-    -  **OPM** (2025-01-24 to ??) Senior Advisor to the Director GS-15
+    -  **OPM** (2025-01-24 to ??) Senior Advisor to the Director GS-15 $167,603 - $195,200
     -  **USADF** (2025-02-21 to 2025-03-06) 
     -  **FCC** (2025-04-04 to ??) 
 
@@ -48,6 +48,11 @@
 - category: support
 - positions:
     -  **OPM** (2025-01-20 to NTE 2025-07-18) [as "OPM-02"] Expert ED-00 volunteer
+        - Databricks: Databricks **[admin access]**: 2025-01-28 - ongoing
+        - EHRI: Enterprise Human Resources Integration: 2025-01-28 - 2025-02-06
+        - github: GitHub: 2025-01-28 - ongoing
+        - USA Perf: USA Performance: 2025-01-28 - ongoing
+        - USA Staff: USA Staffing **[admin access]**: 2025-01-28 - ongoing
 
 # Jared Birchall
 - category: booster
@@ -61,11 +66,34 @@
 - category: support
 - positions:
     -  **OPM** (2025-01-20 to ??) Expert ED-00
+        - website: Agency Website: 2025-01-20 - ongoing
+        - github: GitHub: 2025-01-20 - ongoing
+        - github: GitHub: 2025-01-20 - ongoing
+        - USA Perf: USA Performance: 2025-01-20 - ongoing
+        - USA Perf: USA Performance: 2025-01-20 - ongoing
+        - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
+    -  **OPM** (2025-01-20 to 2025-01-31) [as "OPM-07"] Expert ED-00 volunteer
+        - website: Agency Website: 2025-01-20 - ongoing
+        - github: GitHub: 2025-01-20 - ongoing
+        - github: GitHub: 2025-01-20 - ongoing
+        - USA Perf: USA Performance: 2025-01-20 - ongoing
+        - USA Perf: USA Performance: 2025-01-20 - ongoing
+        - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
+    -  **OPM** (2025-01-31 to ??) [as "OPM-07"] 
+        - website: Agency Website: 2025-01-20 - ongoing
+        - github: GitHub: 2025-01-20 - ongoing
+        - github: GitHub: 2025-01-20 - ongoing
+        - USA Perf: USA Performance: 2025-01-20 - ongoing
+        - USA Perf: USA Performance: 2025-01-20 - ongoing
+        - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
 
 # Akash Bobba
 - category: wrecker
 - positions:
     -  **OPM** (2025-01-20 to NTE 2025-07-18) [as "OPM-03"] Expert ED-00 volunteer
+        - website: Agency Website: 2025-01-20 - ongoing
+        - USA Perf: USA Performance: 2025-01-20 - ongoing
+        - website: Agency Website: 2025-01-28 - ongoing
     -  **Education** (2025-02-03 to NTE 2026-02-12) [as "ED-01"] 
     -  **SSA** (2025-02-03 to ??) [as "OPM-03"] 
         - NUMIDENT: NUMIDENT files: 2025-02-10 - ongoing
@@ -148,6 +176,7 @@
         - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
         - CALM: CMS Acquisition Lifecycle Management System: 2025-03-05 - ongoing
         - IDR: Integrated Data Repository: 2025-03-11 - ongoing
+    -  **GSA** (2025-05-31 to ??) Senior Advisor GS-15 $167,603 - $195,200
     -  **TSA**  
     -  **USCIS**  
 
@@ -222,6 +251,8 @@
 - category: enabler
 - positions:
     -  **OPM** (2025-01-20 to ??) Acting Director
+        - website: Agency Website: 2025-01-20 - ongoing
+        - STAMP: STAMP: 2025-01-24 - ongoing
 
 # Luke Farritor
 - category: wrecker
@@ -252,6 +283,7 @@
         - EBS: Oracle E-Business Suite: 2025-02-28 - ongoing
         - PRISM: Procurement Request Information System Management: 2025-02-28 - ongoing
     -  **NSF** (2025-04-14 to ??) 
+    -  **GSA** (2025-05-31 to ??) Senior Advisor GS-15 $167,603 - $195,200
     -  **DHS**  
     -  **ICE**  
     -  **TSA**  
@@ -375,8 +407,14 @@
 - category: enabler
 - positions:
     -  **OPM** (2025-01-20 to 2025-01-20) **Senior Advisor to the Director for Technology and Delivery** $195,200
+        - website: Agency Website: 2025-01-20 - ongoing
+        - github: GitHub: 2025-01-20 - ongoing
     -  **OPM** (2025-01-20 to 2025-02-11) **Acting Chief Information OFficer** $195,200
+        - website: Agency Website: 2025-01-20 - ongoing
+        - github: GitHub: 2025-01-20 - ongoing
     -  **OPM** (2025-02-11 to ??) **Chief Information OFficer** $195,200
+        - website: Agency Website: 2025-01-20 - ongoing
+        - github: GitHub: 2025-01-20 - ongoing
 
 # Nicole Hollander
 - category: enabler
@@ -432,6 +470,9 @@
 - category: wrecker
 - positions:
     -  **OPM** (2025-01-20 to 2025-02-18) [as "OPM-05"] **Senior Advisor to the Director for Information Technology** $195,200
+        - website: Agency Website: 2025-01-20 - ongoing
+        - github: GitHub: 2025-01-20 - ongoing
+        - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
     -  **USAID** (2025-01-27 to ??) 
     -  **USDA** (2025-02-(01)~ to ??) 
     -  **CFPB** (2025-02-07 to 2025-05-08) 
@@ -443,6 +484,9 @@
         - Automate: Power Automate **[admin access]**: 2025-04-12 - 2025-04-13
         - Automate: Power Automate **[admin access]**: 2025-04-17 - 2025-04-17
     -  **OPM** (2025-02-18 to ??) [as "OPM-05"] **Senior Advisor to the Director for Information Technology** $195,200
+        - website: Agency Website: 2025-01-20 - ongoing
+        - github: GitHub: 2025-01-20 - ongoing
+        - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
     -  **IRS** (2025-02-19 to 2025-04-17) 
     -  **FTC** (2025-03-(28)~ to ??) 
     -  **DHS**  
@@ -472,7 +516,7 @@
 - category: enabler
 - positions:
     -  **Treasury** (2025-01-23 to 2025-02-12) Senior Advisor for Technology and Modernization volunteer
-    -  **Treasury** (2025-02-13 to NTE 2025-07-03)  GS-15
+    -  **Treasury** (2025-02-13 to NTE 2025-07-03)  GS-15 $167,603 - $195,200
 
 # Scott Kupor
 - category: enabler
@@ -640,7 +684,7 @@
 # Todd Newnam
 - category: wrecker
 - positions:
-    -  **Treasury** (2025-03-06 to ??) Senior Advisor GS-15
+    -  **Treasury** (2025-03-06 to ??) Senior Advisor GS-15 $167,603 - $195,200
     -  **IRS** (2025-04-XX to ??) Senior Advisor
 
 # Donald Park
@@ -653,13 +697,18 @@
 # Noah Peters
 - category: support
 - positions:
-    -  **OPM** (2025-01-20 to ??) Senior Advisor GS-15
+    -  **OPM** (2025-01-20 to ??) Senior Advisor GS-15 $167,603 - $195,200
 
 # Nikhil Rajpal
 - category: wrecker
 - positions:
     -  **OPM** (2025-01-24 to ??) [as "OPM-06"] Expert ED-00 volunteer
-        - USA Staff: USA Staffing **[admin access]**: 2025-01-(20)~ - ongoing
+        - website: Agency Website: 2025-01-28 - ongoing
+        - Databricks: Databricks **[admin access]**: 2025-01-28 - ongoing
+        - Databricks: Databricks **[admin access]**: 2025-01-28 - ongoing
+        - EHRI: Enterprise Human Resources Integration: 2025-01-28 - 2025-02-06
+        - USA Perf: USA Performance: 2025-01-28 - ongoing
+        - USA Staff: USA Staffing **[admin access]**: 2025-01-28 - ongoing
     -  **NOAA** (2025-02-04 to ??) 
         - Google: Google Drive **[read-write access]**: 2025-02-05 - ongoing
     -  **CFPB** (2025-02-07 to 2025-03-21) 
@@ -678,7 +727,7 @@
 # Austin Raynor
 - category: support
 - positions:
-    -  **OPM** (2025-01-30 to NTE 2025-07-22) Senior Advisor GS-15
+    -  **OPM** (2025-01-30 to NTE 2025-07-22) Senior Advisor GS-15 $167,603 - $195,200
 
 # Payton Rehling
 - category: wrecker
@@ -733,9 +782,19 @@
 - category: leadership
 - positions:
     -  **OPM** (2025-01-20 to 2025-03-28) **Chief of Staff**
-        - USA Staff: USA Staffing **[admin access]**: 2025-01-(20)~ - ongoing
+        - website: Agency Website: 2025-01-20 - ongoing
+        - github: GitHub: 2025-01-20 - ongoing
+        - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
+        - Databricks: Databricks **[admin access]**: 2025-01-28 - ongoing
+        - STAMP: STAMP: 2025-01-31 - ongoing
+        - Databricks: Databricks **[admin access]**: 2025-02-03 - ongoing
     -  **OPM** (2025-03-28 to ??) Senior Advisor ES-00
-        - USA Staff: USA Staffing **[admin access]**: 2025-01-(20)~ - ongoing
+        - website: Agency Website: 2025-01-20 - ongoing
+        - github: GitHub: 2025-01-20 - ongoing
+        - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
+        - Databricks: Databricks **[admin access]**: 2025-01-28 - ongoing
+        - STAMP: STAMP: 2025-01-31 - ongoing
+        - Databricks: Databricks **[admin access]**: 2025-02-03 - ongoing
 
 # Frank Schuler
 - category: unknown
@@ -777,6 +836,7 @@
     -  **SSA** (2025-02-18 to NTE 2026-02-26) [as "SSA-10"] 
     -  **USADF** (2025-02-20 to 2025-03-06) 
     -  **USPS** (2025-03-12 to NTE 2025-06-15) 
+    -  **GSA** (2025-04-10 to ??) Senior Advisor GS-14 $142,488 - $185,234
     -  **USDFC** (2025-04-28 to ??) 
 
 # Thomas Shedd
@@ -841,6 +901,16 @@
 - positions:
     -  **DOT** (2025-05-(07)~ to ??) Senior Advisor to the Secretary
 
+# James Sullivan
+- category: unknown
+- positions:
+    -  **OPM** (2025-01-20 to ??) [as "OPM-08"] Senior Advisor to the Director ES-00 $195,200
+        - Databricks: Databricks **[admin access]**: 2025-02-03 - ongoing
+        - USA Staff: USA Staffing **[admin access]**: 2025-02-03 - ongoing
+    -  **OPM** (2025-03-28 to ??) Chief of Staff ES-00
+        - Databricks: Databricks **[admin access]**: 2025-02-03 - ongoing
+        - USA Staff: USA Staffing **[admin access]**: 2025-02-03 - ongoing
+
 # Christopher Sweet
 - category: wrecker
 - positions:
@@ -878,7 +948,7 @@
 # Linda Whitridge
 - category: wrecker
 - positions:
-    -  **Treasury** (2025-02-25 to ??)  GS-12
+    -  **Treasury** (2025-02-25 to ??)  GS-12 $101,401 - $131,826
 
 # Jordan Wick
 - category: wrecker
@@ -916,7 +986,7 @@
 # Joanna Wischer
 - category: support
 - positions:
-    -  **OPM** (2025-01-20 to ??) Senior Advisor to the Director GS-15
+    -  **OPM** (2025-01-20 to ??) Senior Advisor to the Director GS-15 $167,603 - $195,200
 
 # Marshall Wood
 - category: wrecker

@@ -141,7 +141,7 @@
   appt_type_code: 44
   appt_type: Schedule C
   pay_grade: GS-15
-  salary:
+  salary: "$167,603 - $195,200"
   pd_code: PMGS31263
   sge:
   excepted: true
@@ -156,7 +156,7 @@
   reimbursement_amount:
   comment:
   qualifications:
-  table_note: sourced from FOIA
+  table_note: Salary range is for a GS-15 in DC
   replaced_by:
   agency:
     id: OPM
@@ -970,6 +970,130 @@
     comment: Files sourced from FOIA request by Jason Leopold
     file: opm-new-hires.png
     url: "/documents/opm-new-hires.png"
+- id: opm-temp-employee-07
+  type: appointed
+  agency_id: OPM
+  name: Brian Bjelde
+  doge_alias_id: OPM-07
+  from_agency_id:
+  from_truth:
+  start_date: '2025-01-20'
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date: '2025-01-31'
+  end_date_truth: verified
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type: replaced
+  sort_date: '2025-01-20'
+  nte_date: '2025-07-18'
+  nte_date_truth: verified
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade: ED-00
+  salary: "$0"
+  pd_code: 6A39743
+  sge:
+  excepted:
+  title: Expert
+  title_type: advisor
+  series: 301
+  supervisory:
+  office: Office of the Director
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+  source_name: court doc
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: likely Schedule C
+  replaced_by: opm-perm-employee-07
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
+  documents:
+  - id: onboard-opm-employee-7
+    name:
+    type: onboard
+    alias: OPM-07
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    case_no: 1:25-cv-01237
+    comment:
+    file: onboard-opm-employee-7.pdf
+    url: "/documents/onboard-opm-employee-7.pdf"
+- id: opm-perm-employee-07
+  type: appointed
+  agency_id: OPM
+  name: Brian Bjelde
+  doge_alias_id: OPM-07
+  from_agency_id:
+  from_truth:
+  start_date: '2025-01-31'
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-01-31'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.0.pdf
+  source_name: court doc
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: permanent position approved
+  replaced_by:
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
+  documents: []
 - id: opm-3
   type: appointed
   agency_id: OPM
@@ -3289,6 +3413,63 @@
   agency_and_parent:
   - CMS
   - HHS
+  documents: []
+- id: gsa-edward-coristine-fulltime
+  type: promotion
+  agency_id: GSA
+  name: Edward Coristine
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: '2025-05-31'
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-05-31'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade: GS-15
+  salary: "$167,603 - $195,200"
+  pd_code:
+  sge:
+  excepted:
+  title: Senior Advisor
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://www.wired.com/story/big-balls-young-doge-converted-into-full-time-government-employees/
+  source_name: Wired
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Salary range for GS-15 in DC
+  replaced_by:
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - GSA
   documents: []
 - id: detail-nasa-ssa-employee-2
   type: detailed
@@ -5618,6 +5799,63 @@
     path: "/agencies/gsa"
   agency_and_parent:
   - NSF
+  documents: []
+- id: gsa-farritor-fulltime
+  type: promotion
+  agency_id: GSA
+  name: Luke Farritor
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: '2025-05-31'
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-05-31'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade: GS-15
+  salary: "$167,603 - $195,200"
+  pd_code:
+  sge:
+  excepted:
+  title: Senior Advisor
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://www.wired.com/story/big-balls-young-doge-converted-into-full-time-government-employees/
+  source_name: Wired
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Salary range for GS-15 in DC
+  replaced_by:
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - GSA
   documents: []
 - id: education-ed-2
   type: appointed
@@ -9534,7 +9772,7 @@
   appt_type_code:
   appt_type: Schedule C
   pay_grade: GS-15
-  salary:
+  salary: "$167,603 - $195,200"
   pd_code:
   sge: true
   excepted:
@@ -9549,7 +9787,7 @@
   reimbursement_amount:
   comment: Changed to a full-time position
   qualifications:
-  table_note:
+  table_note: Salary range for GS-15 in DC
   replaced_by:
   agency:
     id: Treasury
@@ -12445,7 +12683,7 @@
   appt_type_code:
   appt_type: Schedule C
   pay_grade: GS-15
-  salary:
+  salary: "$167,603 - $195,200"
   pd_code:
   sge: false
   excepted:
@@ -12460,7 +12698,7 @@
   reimbursement_amount:
   comment: NYT says he is a Senior Advisor
   qualifications:
-  table_note:
+  table_note: Salary range for GS-15 in DC
   replaced_by:
   agency:
     id: Treasury
@@ -12761,7 +12999,7 @@
   appt_type_code: 44
   appt_type: Schedule C
   pay_grade: GS-15
-  salary:
+  salary: "$167,603 - $195,200"
   pd_code: 6A38859
   sge:
   excepted: true
@@ -12776,7 +13014,7 @@
   reimbursement_amount:
   comment: Details from a FOIA document
   qualifications:
-  table_note:
+  table_note: Salary range for GS-15 in DC
   replaced_by:
   agency:
     id: OPM
@@ -13465,7 +13703,7 @@
   appt_type_code: 48
   appt_type: Other
   pay_grade: GS-15
-  salary:
+  salary: "$167,603 - $195,200"
   pd_code: 6A39748
   sge:
   excepted: true
@@ -13480,7 +13718,7 @@
   reimbursement_amount:
   comment: From a FOIA document
   qualifications:
-  table_note:
+  table_note: Salary range for GS-15 in DC
   replaced_by:
   agency:
     id: OPM
@@ -15651,6 +15889,63 @@
     comment:
     file: mou-20250312-gsa-usps-alex-simonpour.pdf
     url: "/documents/mou-20250312-gsa-usps-alex-simonpour.pdf"
+- id: gsa-shaotran-fulltime
+  type: promotion
+  agency_id: GSA
+  name: Ethan Shaotran
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: '2025-04-10'
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-04-10'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade: GS-14
+  salary: "$142,488 - $185,234"
+  pd_code:
+  sge:
+  excepted:
+  title: Senior Advisor
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://www.wired.com/story/big-balls-young-doge-converted-into-full-time-government-employees/
+  source_name: Wired
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Salary range for GS-14 in DC
+  replaced_by:
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - GSA
+  documents: []
 - id: detail-gsa-dfc-shaotran
   type: detailed
   agency_id: USDFC
@@ -16874,6 +17169,130 @@
   agency_and_parent:
   - DOT
   documents: []
+- id: opm-employee-08
+  type: appointed
+  agency_id: OPM
+  name: James Sullivan
+  doge_alias_id: OPM-08
+  from_agency_id:
+  from_truth:
+  start_date: '2025-01-20'
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-01-20'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type: SES Noncareer
+  pay_grade: ES-00
+  salary: "$195,200"
+  pd_code: 6A37370
+  sge:
+  excepted:
+  title: Senior Advisor to the Director
+  title_type: advisor
+  series: 301
+  supervisory:
+  office:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+  source_name: court doc
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
+  documents:
+  - id: onboard-opm-employee-8
+    name:
+    type: onboard
+    alias: OPM-08
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    case_no: 1:25-cv-01237
+    comment:
+    file: onboard-opm-employee-8.pdf
+    url: "/documents/onboard-opm-employee-8.pdf"
+- id: opm-james-sullivan-demotion
+  type: promotion
+  agency_id: OPM
+  name: James Sullivan
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: '2025-03-28'
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-03-28'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description: SES Noncareer Appt
+  fuzz:
+  appt_type_code: 55
+  appt_type: 55-Noncareer (Senior Exec Perm)
+  pay_grade: ES-00
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Chief of Staff
+  title_type: advisor
+  series: 301
+  supervisory: false
+  office: Office of the Director
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.3.pdf
+  source_name: court doc
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
+  documents: []
 - id: hud-sweet
   type: appointed
   agency_id: HUD
@@ -17380,7 +17799,7 @@
   appt_type_code:
   appt_type: Schedule C
   pay_grade: GS-12
-  salary:
+  salary: "$101,401 - $131,826"
   pd_code:
   sge: false
   excepted:
@@ -17917,7 +18336,7 @@
   appt_type_code: 44
   appt_type: Schedule C
   pay_grade: GS-15
-  salary:
+  salary: "$167,603 - $195,200"
   pd_code: 6A36647
   sge:
   excepted: true
@@ -17932,7 +18351,7 @@
   reimbursement_amount:
   comment: Sourced from a FOIA document; listed as Joanna Miller
   qualifications:
-  table_note:
+  table_note: Salary range for GS-15 in DC
   replaced_by:
   agency:
     id: OPM
@@ -18387,120 +18806,6 @@
     path: "/agencies/gsa"
   agency_and_parent:
   - GSA
-  documents: []
-- id: opm-temp-employee-07
-  type: appointed
-  agency_id: OPM
-  name:
-  doge_alias_id: OPM-07
-  from_agency_id:
-  from_truth:
-  start_date: '2025-01-20'
-  start_date_truth: verified
-  start_date_event:
-  start_source:
-  start_source_name:
-  end_date: '2025-01-31'
-  end_date_truth: verified
-  end_date_event:
-  end_source:
-  end_source_name:
-  end_type: replaced
-  sort_date: '2025-01-20'
-  nte_date:
-  nte_date_truth:
-  signed_date:
-  description:
-  fuzz:
-  appt_type_code:
-  appt_type:
-  pay_grade:
-  salary:
-  pd_code:
-  sge:
-  excepted:
-  title:
-  title_type:
-  series:
-  supervisory:
-  office:
-  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
-  source_name: court doc
-  reimbursed:
-  reimbursement_amount:
-  comment: Not sure who this is
-  qualifications:
-  table_note: likely Schedule C
-  replaced_by: opm-perm-employee-07
-  agency:
-    id: OPM
-    name: Office of Personnel Management
-    slug: opm
-    page_slug: self
-    short_name: OPM
-    doge_base: true
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/opm"
-  agency_and_parent:
-  - OPM
-  documents: []
-- id: opm-perm-employee-07
-  type: appointed
-  agency_id: OPM
-  name:
-  doge_alias_id: OPM-07
-  from_agency_id:
-  from_truth:
-  start_date: '2025-01-31'
-  start_date_truth:
-  start_date_event:
-  start_source:
-  start_source_name:
-  end_date:
-  end_date_truth:
-  end_date_event:
-  end_source:
-  end_source_name:
-  end_type:
-  sort_date: '2025-01-31'
-  nte_date:
-  nte_date_truth:
-  signed_date:
-  description:
-  fuzz:
-  appt_type_code:
-  appt_type:
-  pay_grade:
-  salary:
-  pd_code:
-  sge:
-  excepted:
-  title:
-  title_type:
-  series:
-  supervisory:
-  office:
-  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.0.pdf
-  source_name: court doc
-  reimbursed:
-  reimbursement_amount:
-  comment:
-  qualifications:
-  table_note: permanent position approved
-  replaced_by:
-  agency:
-    id: OPM
-    name: Office of Personnel Management
-    slug: opm
-    page_slug: self
-    short_name: OPM
-    doge_base: true
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/opm"
-  agency_and_parent:
-  - OPM
   documents: []
 - id: ssa-employee-11
   type: appointed

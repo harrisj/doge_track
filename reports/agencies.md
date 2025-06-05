@@ -388,29 +388,32 @@
 - slug: gsa
 - people:
   - **Edward Coristine** (2025-01-(20)~)
-  - **Ethan Shaotran** (2025-01-20)
+  - **OPM-04** (2025-01-20) Senior Advisor
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
-  - **OPM-05 (Gavin Kliger)** (detailed from OPM)
   - **Nicole Hollander** (2025-01-20 - 2025-05-29)
-  - **OPM-04** (2025-01-20) Senior Advisor
+  - **OPM-05 (Gavin Kliger)** (detailed from OPM)
   - **Jeremy Lewin** (2025-01-20)
-  - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
+  - **Ethan Shaotran** (2025-01-20)
   - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
+  - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
   - **Frank Schuler** (2025-02-(18)~) Senior Advisor
   - **Kyle Schutt** (2025-02-(18)~)
   - **Nate Cavanaugh** (2025-02-03)
   - **Riley Sennott** (2025-02-12)
-  - **Donald Park** (2025-02-XX)
   - **Derek Geissler** (2025-02-XX)
-  - **Emily Bryant** (2025-03-XX)
+  - **Donald Park** (2025-02-XX)
   - **Justin Fox** (2025-03-XX)
+  - **Emily Bryant** (2025-03-XX)
   - **Alexander Simonpour** (2025-03-XX)
-  - **Dave Malcher** (2025-04-(24)~)
   - **Raj Jegannathan** (2025-04-(24)~)
+  - **Dave Malcher** (2025-04-(24)~)
   - **Jonathan Mendelson** (2025-04-09)
+  - **Ethan Shaotran** (2025-04-10) Senior Advisor
   - **Jack Stein** (2025-04-15)
   - **Marshall Wood** (2025-04-21)
+  - **Edward Coristine** (2025-05-31) Senior Advisor
+  - **Luke Farritor** (2025-05-31) Senior Advisor
 
 # Government Accountability Office
 - slug: gao
@@ -608,37 +611,89 @@
   - **Anthony Armstrong** (2025-01-20) Expert
   - **OPM-02 (Riccardo Biasini)** (2025-01-20) Expert
   - **Brian Bjelde** (2025-01-20) Expert
+  - **OPM-07 (Brian Bjelde)** (2025-01-20 - 2025-01-31) Expert
   - **OPM-03 (Akash Bobba)** (2025-01-20) Expert
-  - **Clayton Cromer** (2025-01-20) Deputy General Counsel
-  - **OPM-07** (2025-01-20 - 2025-01-31)
-  - **Charles Ezell** (2025-01-20) Acting Director
-  - **Joanna Wischer** (2025-01-20) Senior Advisor to the Director
-  - **Amanda Scales** (2025-01-20 - 2025-03-28) Chief of Staff
   - **Noah Peters** (2025-01-20) Senior Advisor
+  - **Amanda Scales** (2025-01-20 - 2025-03-28) Chief of Staff
   - **Greg Hogan** (2025-01-20 - 2025-01-20) Senior Advisor to the Director for Technology and Delivery
-  - **OPM-05 (Gavin Kliger)** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
   - **Greg Hogan** (2025-01-20 - 2025-02-11) Acting Chief Information OFficer
+  - **OPM-05 (Gavin Kliger)** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
+  - **Clayton Cromer** (2025-01-20) Deputy General Counsel
+  - **Joanna Wischer** (2025-01-20) Senior Advisor to the Director
+  - **Charles Ezell** (2025-01-20) Acting Director
+  - **OPM-08 (James Sullivan)** (2025-01-20) Senior Advisor to the Director
   - **Jacob Altik** (2025-01-24) Senior Advisor to the Director
   - **OPM-06 (Nikhil Rajpal)** (2025-01-24) Expert
-  - **Justin Monroe** (2025-01-28) Expert
   - **Christopher Stanley** (2025-01-28) Expert
+  - **Justin Monroe** (2025-01-28) Expert
   - **Chris Young** (2025-01-30) Expert
   - **Austin Raynor** (2025-01-30) Senior Advisor
-  - **OPM-07** (2025-01-31)
+  - **OPM-07 (Brian Bjelde)** (2025-01-31)
   - **Christina Hanna** (2025-02-03) Expert
-  - **Stephen Duarte** (2025-02-03) Expert
   - **Bryanne-Michelle Mlodzianowski** (2025-02-03) Expert
+  - **Stephen Duarte** (2025-02-03) Expert
   - **Greg Hogan** (2025-02-11) Chief Information OFficer
-  - **OPM-05 (Gavin Kliger)** (2025-02-18) Senior Advisor to the Director for Information Technology
   - **Joe Gebbia** (2025-02-18) Expert
+  - **OPM-05 (Gavin Kliger)** (2025-02-18) Senior Advisor to the Director for Information Technology
   - **Amanda Scales** (2025-03-28) Senior Advisor
+  - **James Sullivan** (2025-03-28) Chief of Staff
   - **Mike Gonzalez** (2025-03-XX) Senior Advisor
   - **Tarak Makecha** (2025-03-XX) Senior Advisor
 - systems:
+    - website: Agency Website
+        - Amanda Scales 2025-01-20 - ongoing
+        - Charles Ezell 2025-01-20 - ongoing
+        - {sr.doge_alias_id} (Akash Bobba) 2025-01-28 - ongoing
+        - {sr.doge_alias_id} (Akash Bobba) 2025-01-20 - ongoing
+        - {sr.doge_alias_id} (Gavin Kliger) 2025-01-20 - ongoing
+        - {sr.doge_alias_id} (Nikhil Rajpal) 2025-01-28 - ongoing
+        - {sr.doge_alias_id} (Brian Bjelde) 2025-01-20 - ongoing
+        - Greg Hogan 2025-01-20 - ongoing
+    - Databricks: Databricks
+        - Amanda Scales **[admin access]** 2025-02-03 - ongoing
+        - Amanda Scales **[admin access]** 2025-01-28 - ongoing
+        - {sr.doge_alias_id} (Riccardo Biasini) **[admin access]** 2025-01-28 - ongoing
+        - {sr.doge_alias_id} (Nikhil Rajpal) **[admin access]** 2025-01-28 - ongoing
+        - {sr.doge_alias_id} (Nikhil Rajpal) **[admin access]** 2025-01-28 - ongoing
+        - {sr.doge_alias_id} (James Sullivan) **[admin access]** 2025-02-03 - ongoing
+    - EHRI: Enterprise Human Resources Integration
+        - {sr.doge_alias_id} (Riccardo Biasini) 2025-01-28 - 2025-02-06
+        - {sr.doge_alias_id} (Nikhil Rajpal) 2025-01-28 - 2025-02-06
+    - github: GitHub
+        - {sr.doge_alias_id} (Riccardo Biasini) 2025-01-28 - ongoing
+        - {sr.doge_alias_id} (Gavin Kliger) 2025-01-20 - ongoing
+        - {sr.doge_alias_id} (Brian Bjelde) 2025-01-20 - ongoing
+        - {sr.doge_alias_id} (Brian Bjelde) 2025-01-20 - ongoing
+        - Greg Hogan 2025-01-20 - ongoing
+        - Amanda Scales 2025-01-20 - ongoing
+    - STAMP: STAMP
+        - Amanda Scales 2025-01-31 - ongoing
+        - Charles Ezell 2025-01-24 - ongoing
+        - OPM-18 2025-02-03 - ongoing
+    - USA Perf: USA Performance
+        - {sr.doge_alias_id} (Riccardo Biasini) 2025-01-28 - ongoing
+        - {sr.doge_alias_id} (Akash Bobba) 2025-01-20 - ongoing
+        - OPM-04 2025-01-28 - ongoing
+        - {sr.doge_alias_id} (Nikhil Rajpal) 2025-01-28 - ongoing
+        - {sr.doge_alias_id} (Brian Bjelde) 2025-01-20 - ongoing
+        - OPM-09 2025-01-31 - ongoing
+        - OPM-10 2025-02-07 - ongoing
+        - OPM-11 2025-02-07 - ongoing
+        - OPM-12 2025-02-07 - ongoing
+        - OPM-13 2025-01-31 - ongoing
+        - OPM-14 2025-02-07 - ongoing
+        - OPM-15 2025-02-07 - ongoing
+        - OPM-16 2025-01-31 - ongoing
+        - OPM-17 2025-01-31 - ongoing
+        - OPM-18 2025-01-24 - ongoing
+        - {sr.doge_alias_id} (Brian Bjelde) 2025-01-20 - ongoing
     - USA Staff: USA Staffing
-        - Amanda Scales **[admin access]** 2025-01-(20)~ - ongoing
-        - {sr.doge_alias_id} (Nikhil Rajpal) **[admin access]** 2025-01-(20)~ - ongoing
-        - OPM-07 **[admin access]** 2025-01-(20)~ - ongoing
+        - Amanda Scales **[admin access]** 2025-01-20 - ongoing
+        - {sr.doge_alias_id} (Riccardo Biasini) **[admin access]** 2025-01-28 - ongoing
+        - {sr.doge_alias_id} (Gavin Kliger) **[admin access]** 2025-01-20 - ongoing
+        - {sr.doge_alias_id} (Nikhil Rajpal) **[admin access]** 2025-01-28 - ongoing
+        - {sr.doge_alias_id} (Brian Bjelde) **[admin access]** 2025-01-20 - ongoing
+        - {sr.doge_alias_id} (James Sullivan) **[admin access]** 2025-02-03 - ongoing
 
 # Peace Corps
 - slug: peace-corps
