@@ -840,6 +840,18 @@
     source_title: DOGE created a 'survey of surveys' for a push to cut some government data collection
     agency: Census
     id: 6ywSOwFF
+  - date: 2025-06-04
+    type: disruption
+    event: >-
+      Field representatives for the Census surveys share that the public is growing increasingly distrustful
+      of participating in government surveys due to concerns that their data might be used against them,
+      due to DOGE's efforts to combine data from multiple agencies. This is especially true for minority
+      and vulnerable populations, increasing the real risk of skewed statistics.
+    source: https://www.npr.org/2025/06/04/nx-s1-5397191/us-census-bureau-labor-statistics-doge-data
+    source_name: NPR
+    source_title: How DOGE's push to amass data could hurt the reliability of future U.S. statistics
+    agency: Census
+    id: HSNBGnh4
 
 - name: Consumer Product Safety Commission
   id: CPSC
@@ -1965,6 +1977,42 @@
     source_name: The Hill
     agency: DOGE
     id: MJJHVXvK
+  - date: 2025-06-02
+    type: official
+    event: >-
+      In the budget for next year, the White House requests $45 million total for DOGE, forecasting 150
+      employees would work for the agency. From this amount, it allocates $10 million for a "software
+      modernization initiative," with $35 million being provided to DOGE through reimbursement from agencies
+      where DOGE staff will be embedded.
+    source: >-
+      https://www.nextgov.com/policy/2025/06/white-house-budget-request-includes-45-million-doge-funding/405744/
+    source_name: NextGov
+    agency: DOGE
+    id: 7F1ZKLk8
+  - date: 2025-06-04
+    type: official
+    event: >-
+      In an appendix for next year's budget request, the White Houre reports that approximately 89 staffers
+      have worked for DOGE this fiscal year, and this number includes direct employees as well as staff
+      on reimburable details. It's unclear if this count includes remaining members of the USDS, but that
+      seems likely.
+    source: >-
+      https://www.politico.com/news/2025/06/03/budget-documents-reveal-plan-to-increase-doge-staffing-00382294
+    source_name: Politico
+    agency: DOGE
+    id: 6a115zfz
+  - date: 2025-06-04
+    type: official
+    event: >-
+      Testifying to Congress, Russell Vought says the White House is in "the midst of … establishing the
+      leadership on an ongoing basis." But he also says more DOGE staff will be embedded directly in agencies
+      to report to leadership there. Amy Gleason is not mentioned.
+    source: https://fedscoop.com/russell-vought-doge-will-be-far-more-institutionalized-at-agencies/
+    source_name: FedScoop
+    named:
+    - Russell Vought
+    agency: DOGE
+    id: 5Kjz8pzk
 
 - name: Department of Homeland Security
   id: DHS
@@ -3598,7 +3646,17 @@
   slug: ice
   doge_base: true
   page_slug: homeland-security
-  events: []
+  events:
+  - date: 2025-06-04
+    type: disruption
+    event: >-
+      A $47 million dollar contract for expanding a major immigration facility in Georgia is paused pending
+      review by DOGE under a new policy that requires review for any DHS contract worth more than $20
+      million. Previously, DHS had been exempt from such spending controls by DOGE.
+    source: https://www.washingtonpost.com/business/2025/06/04/ice-detention-georgia-geo/
+    source_name: Wash. Post
+    agency: ICE
+    id: JVRX7BOe
 
 - name: Institute for Museum and Library Services
   id: IMLS
