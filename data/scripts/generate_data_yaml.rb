@@ -13,7 +13,7 @@ def person_url(person)
 
   case person.category
   when 'wrecker'
-    "/people/wrecker-staff##{person.slug}"
+    "/wreckers/other##{person.slug}"
   when 'enabler'
     "/people/enabler-staff##{person.slug}"
   when 'support'

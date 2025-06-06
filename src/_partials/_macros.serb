@@ -46,7 +46,7 @@ end %}
       if person.custom_path
         person.custom_path
       elsif person.category == 'wrecker'
-        "/people/wrecker-staff##{person.slug}"
+        "/wreckers/other##{person.slug}"
       elsif person.category == 'enabler'
         "/people/enabler-staff##{person.slug}"
       elsif person.category == 'support'
