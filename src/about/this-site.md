@@ -36,28 +36,3 @@ Just remember, **this data is sometimes very messy.** DOGE has purposefully foug
 ## Contacting Me
 
 To report errors or point out information that I might have missed, the best approach is probably to either email me at <a href="mailto:mail@jacobharr.is">mail@jacobharr.is</a> or on Signal at <strong>jacobharris.28</strong>. Please limit any tips or corrections to <strong>public information only</strong> (e.g., news reports, legal documents, official government reports). As I mentioned earlier, I am not a professional journalist. I do not have the time or ability to cross-check any confidential information, and I do not have the resources to protect leakers from investigation and retaliation. There are many other news sites that would accept leaked info and once they publish it, I will be able to pick it up.
-
-## What's Coming Next
-
-This is just the beginning of what is possible for this data and the site, and I am working through things as quickly as I can design them.
-
-### Content Tweaks
-- Independent Agencies
-- How to Contribute
-- An in-depth writeup of the data ingestion process
-- Repo instructions on how to load a SQLite database
-- DOGE's major projects described
-
-### Linking in More Data
-- Open questions I have
-- Systems accessed at each agency
-- Court cases linked to DOGE activities
-- Media roundups
-
-### Site Functionality
-- Accessibility improvements
-- Site search
-- CSV downloads
-- Better navigation
-- Better look and feel by someone who actually knows web design?
-- Maybe some pictures?

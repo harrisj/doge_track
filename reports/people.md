@@ -72,7 +72,7 @@
         - USA Perf: USA Performance: 2025-01-20 - ongoing
         - USA Perf: USA Performance: 2025-01-20 - ongoing
         - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
-    -  **OPM** (2025-01-31 to ??) [as "OPM-07"] 
+    -  **OPM** (2025-01-31 to ??) [as "OPM-07"] Expert ED-00
         - website: Agency Website: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing
@@ -180,7 +180,7 @@
     -  **SSA** (2025-03-24 to ??) [as "SSA-02"] **Chief Information Officer**
 
 # Clayton Cromer
-- category: wrecker
+- category: support
 - positions:
     -  **OPM** (2025-01-20 to ??) **Deputy General Counsel**
     -  **USAID** (2025-02-XX to ??) 
@@ -210,7 +210,7 @@
 # Marko Elez
 - category: wrecker
 - positions:
-    -  **Treasury** (2025-01-21 to 2025-02-06) Special Advisor (IT&M) GS-11/01 $84,601
+    -  **Treasury** (2025-01-21 to 2025-02-06) Special Advisor (IT&M) GS-11/01 $84,601 (for 4 months)
         - ASAP: Automated Standard Access For Payments **[source-code access]**: 2025-01-28 - ongoing
         - PAM DB: Payment Automation Manager DB **[source-code access]**: 2025-01-28 - 2025-02-06
         - SPS: Secure Payment System **[source-code access]**: 2025-01-28 - 2025-02-06
@@ -366,7 +366,7 @@
     -  **GSA** (2025-01-24 to ??) **Federal Acquisition Service Commissioner**
 
 # Gavin Hamrick
-- category: wrecker
+- category: unknown
 - positions:
     -  **IMLS** (2025-03-31 to ??) 
 
@@ -402,10 +402,10 @@
     -  **OPM** (2025-01-20 to 2025-01-20) **Senior Advisor to the Director for Technology and Delivery** $195,200
         - website: Agency Website: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing
-    -  **OPM** (2025-01-20 to 2025-02-11) **Acting Chief Information OFficer** $195,200
+    -  **OPM** (2025-01-20 to 2025-02-11) **Acting Chief Information Officer** $195,200
         - website: Agency Website: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing
-    -  **OPM** (2025-02-11 to ??) **Chief Information OFficer** $195,200
+    -  **OPM** (2025-02-11 to ??) **Chief Information Officer** $195,200
         - website: Agency Website: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing
 
@@ -420,9 +420,6 @@
     -  **DOGE** (2025-02-(05)~ to ??) 
     -  **DOI** (2025-02-24 to ??) Special Advisor / Acting Chief Human Capital Officer
         - FPPS: Federal Personnel Payroll System **[admin access]**: 2025-03-29 - ongoing
-
-# Jared Isaacman
-- category: enabler
 
 # Kenneth Jackson
 - category: enabler
@@ -761,7 +758,7 @@
     -  **NSF** (2025-04-14 to ??) 
 
 # Christopher Roussos
-- category: unknown
+- category: enabler
 - positions:
     -  **VA** (2025-03-25 to ??) 
 
@@ -895,7 +892,7 @@
     -  **DOT** (2025-05-(07)~ to ??) Senior Advisor to the Secretary
 
 # James Sullivan
-- category: unknown
+- category: enabler
 - positions:
     -  **OPM** (2025-01-20 to ??) [as "OPM-08"] Senior Advisor to the Director ES-00 $195,200
         - Databricks: Databricks **[admin access]**: 2025-02-03 - ongoing
@@ -993,7 +990,7 @@
     -  **Treasury** (2025-02-20 to ??) 
 
 # Chris Young
-- category: wrecker
+- category: enabler
 - positions:
     -  **OPM** (2025-01-30 to ??) Expert ED-00
     -  **CFPB** (2025-02-07 to ??) 

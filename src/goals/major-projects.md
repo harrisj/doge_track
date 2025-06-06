@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: docs
 title: DOGE's Major Projects
 ---
 {%@ 'title', title: 'Major Projects' %}
 
-FIXME: an overview of DOGE's major projects
+We can think of DOGE as having several major projects that they have tried to accomplish in their brief tenure within the federal government.
 
 ## Anti-personnel Mining
 

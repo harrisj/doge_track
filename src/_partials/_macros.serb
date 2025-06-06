@@ -319,6 +319,8 @@ end %}
       "<i class=\"fa-sharp fa-solid fa-up\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
     elsif pos.type == 'demotion'
       "<i class=\"fa-sharp fa-solid fa-down\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
+    elsif pos.type == 'converted'
+      "<i class=\"fa-sharp fa-solid fa-person-shelter\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
     else
       agency_link(pos.agency_id, pos.agency.short_name)
     end
@@ -391,14 +393,16 @@ end %}
         nil
       when 'detailed'
         if pos.from_truth != 'reported' && pos.from_truth != 'verified'
-          'likely detailed'
+          pos.title ? 'likely detailed as' : 'likely detailed'
         else
-          'detail'
+          pos.title ? 'detail to' : 'detail'
         end
       when 'promotion'
-        'promoted'
+        pos.title ? 'promoted to' : 'promoted'
       when 'demotion'
-        'demoted'
+        pos.title ? 'demoted to' : 'demoted'
+      when 'converted'
+        'converted to permanent position'
       when 'internal'
         'internal xfer'
       else
@@ -410,7 +414,7 @@ end %}
       title_str += " **#{pos.title}**"
 
       if pos.office
-        title_str += " (#{pos.office})"
+        title_str += ", #{pos.office}"
       end
     end
 
@@ -422,7 +426,7 @@ end %}
       pos.supervisory ? 'supervisory' : nil,
       pos.excepted ? 'excepted' : nil ,
       pos.salary == "$0" ? "volunteer" : nil ,
-      pos.salary && pos.salary != '$0' ? "**#{pos.salary} annually**" : nil,
+      pos.salary && pos.salary != '$0' ? "**#{pos.salary}**" : nil,
       pos.reimbursement_amount ? "reimbursed **#{pos.reimbursement_amount}**" : nil
     ].compact
 
@@ -431,23 +435,19 @@ end %}
     end
 
     if pos.table_note
-      note_str = "[_#{pos.table_note}_]"
-    end
-
-    if pos.source
-      source_str = "<span class=\"text-nowrap float-right\"><a href=\"#{pos.source}\" class=\"link-hover\"><i class=\"fa-sharp fa-solid fa-link-simple\"></i> <span class=\"italic text-2xs sm:text-xs\">#{ pos.source_name if pos.source_name }</span></a></span>"
+      note_str = " «_#{pos.table_note}_»"
     end
 
     if pos.documents.any?
       links = pos.documents.map do |doc|
         "<a class=\"link-hover\" href=\"#{document_url(doc)}\">#{document_type(doc)}</a>"
       end
-      docs_str = "[docs: #{links.join(', ')}]"
+      docs_str = " docs: #{links.join(', ')}"
     end
 
     questions_str = question_links(pos)
 
-    out_str = [alias_ident_str, type_str, title_str, hire_str, note_str, source_str, docs_str, questions_str].map {|x| x.blank? ? nil : x }.compact.map {|x| "<span>#{x}</span>"}.join(" ")
+    out_str = [alias_ident_str, type_str, title_str, hire_str, note_str, docs_str, questions_str].map {|x| x.blank? ? nil : x }.compact.join(" ")
 
     if pos.end_date
       if pos.person && !pos.person.govt_exit_date.nil?
@@ -457,6 +457,11 @@ end %}
       end
       out_str += " #{end_date_str}"
     end
+
+    if pos.source
+      out_str += " <span class=\"text-nowrap float-right\"><a href=\"#{pos.source}\" class=\"link-hover\"><i class=\"fa-sharp fa-solid fa-link-simple\"></i> <span class=\"italic text-2xs sm:text-xs\">#{ pos.source_name if pos.source_name }</span></a></span>"
+    end
+
 
     out_str.html_safe
    end

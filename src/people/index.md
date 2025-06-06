@@ -15,6 +15,45 @@ This page provides a single overview of everybody who is is my database of DOGE 
 
 Like any categorization, this is an approximation that provides useful clarity but also masks the messy nuances of reality. I have no idea if DOGE has their own internal categories and how well these map to their own. My categorization also does not account for people changing their roles over time. For instance, {{ person_link("Scott Coulter") }} originally would have been classified as a Wrecker since he was detailed into other agencies like NASA, but I have reclassified him as an Enabler since he was promoted to a Chief Information Officer at Social Security.
 
+Here are the current members of DOGE that I know about
+
+{% grouped_people = site.data.people.group_by(&:category) %}
+<table class="table table-sm sm:table-md md:table-lg table-zebra">
+<thead>
+  <tr>
+    <th class="align-left">Category</th>
+    <th class="align-left">People</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><a class="link-hover" href="/people/leaders">Leaders</a></td>
+    <td>{% grouped_people['leadership'].each_with_index do |p, i| %}{% if i != 0%}, {% end %}<span class="sm:text-nowrap">{{ person_link(p) }}</span>{% end %}</td>
+  </tr>
+  <tr>
+    <td><a class="link-hover" href="/people/leaders">Boosters</a></td>
+    <td>{% grouped_people['booster'].each_with_index do |p, i| %}{% if i != 0%}, {% end %}<span class="sm:text-nowrap">{{ person_link(p) }}</span>{% end %}</td>
+  </tr>
+  <tr>
+    <td><a class="link-hover" href="/people/enablers">Enablers</a></td>
+    <td>{% grouped_people['enabler'].each_with_index do |p, i| %}{% if i != 0%}, {% end %}<span class="sm:text-nowrap">{{ person_link(p) }}</span>{% end %}</td>
+  </tr>
+    <tr>
+    <td><a class="link-hover" href="/people/support-team">Support Team</a></td>
+    <td>{% grouped_people['support'].each_with_index do |p, i| %}{% if i != 0%}, {% end %}<span class="sm:text-nowrap">{{ person_link(p) }}</span>{% end %}</td>
+  </tr>
+  <tr>
+    <td><a class="link-hover" href="/people/wreckers">Wreckers</a></td>
+    <td>{% grouped_people['wrecker'].each_with_index do |p, i| %}{% if i != 0%}, {% end %}<span class="sm:text-nowrap">{{ person_link(p) }}</span>{% end %}</td>
+  </tr>
+  <tr>
+    <td><a class="link-hover" href="/people/unknowns">Unknowns</a></td>
+    <td>{% grouped_people['unknown'].each_with_index do |p, i| %}{% if i != 0%}, {% end %}<span class="sm:text-nowrap">{{ person_link(p) }}</span>{% end %}</td>
+  </tr>
+</tbody>
+</table>
+
+
 Finally, a note on some government-specific terms that you might encounter in the tables listing details on DOGE staffing:
 
 - **Detail** is the government term for when an employee (or **detailee**) of one agency goes to work at another agency

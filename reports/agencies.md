@@ -615,7 +615,7 @@
   - **OPM-13** (2025-01-(31)~)
   - **OPM-10** (2025-01-(31)~)
   - **Greg Hogan** (2025-01-20 - 2025-01-20) Senior Advisor to the Director for Technology and Delivery
-  - **Greg Hogan** (2025-01-20 - 2025-02-11) Acting Chief Information OFficer
+  - **Greg Hogan** (2025-01-20 - 2025-02-11) Acting Chief Information Officer
   - **OPM-05 (Gavin Kliger)** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
   - **Joanna Wischer** (2025-01-20) Senior Advisor to the Director
   - **OPM-08 (James Sullivan)** (2025-01-20) Senior Advisor to the Director
@@ -633,7 +633,7 @@
   - **Justin Monroe** (2025-01-28) Expert
   - **Austin Raynor** (2025-01-30) Senior Advisor
   - **Chris Young** (2025-01-30) Expert
-  - **OPM-07 (Brian Bjelde)** (2025-01-31)
+  - **OPM-07 (Brian Bjelde)** (2025-01-31) Expert
   - **OPM-11** (2025-02-(07)~)
   - **OPM-15** (2025-02-(07)~)
   - **OPM-14** (2025-02-(07)~)
@@ -641,7 +641,7 @@
   - **Bryanne-Michelle Mlodzianowski** (2025-02-03) Expert
   - **Christina Hanna** (2025-02-03) Expert
   - **Stephen Duarte** (2025-02-03) Expert
-  - **Greg Hogan** (2025-02-11) Chief Information OFficer
+  - **Greg Hogan** (2025-02-11) Chief Information Officer
   - **OPM-05 (Gavin Kliger)** (2025-02-18) Senior Advisor to the Director for Information Technology
   - **Joe Gebbia** (2025-02-18) Expert
   - **Amanda Scales** (2025-03-28) Senior Advisor

@@ -1,8 +1,9 @@
 ---
-title: Wrecker Names
+title: All The Wreckers
 layout: page
 description: A more in-depth look at the specific people within DOGE and the type of work they've done
 ---
+{% import 'macros' %}
 {%@ 'title', title: 'Wrecker Details' %}
 
 {%@ 'text' do %}
@@ -13,6 +14,10 @@ Acting as the face of DOGE to many agencies, wreckers have proven to be both eas
 {% people = site.data.people.select {|p| p.category == 'wrecker'}.sort_by(&:sort_name) %}
 
 {% people.each do |person| %}
-  {%@ "people_page_person", person: person %}
+  {% if person.custom_path %}
+    {%@ "people_page_redirect", person: person %}
+  {% else %}
+    {%@ "people_page_person", person: person %}
+  {% end %}
 {% end %}
 </div>

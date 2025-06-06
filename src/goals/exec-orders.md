@@ -65,8 +65,14 @@ Another Feb 19th Executive Order ([Ending Taxpayer Subsidization of Open Borders
 > (i) identify all other sources of Federal funding for illegal aliens; and
 > (ii) recommend additional agency actions to align Federal spending with the purposes of this order, and, where relevant, enhance eligibility verification systems.
 
-Since then, DOGE has been involved with a large project to build an immigration panopticon. MORE TKTK
+Since then, DOGE has been involved with a large project to [build a large survillance system to identify targets for arrest by ICE](https://www.wired.com/story/doge-collecting-immigrant-data-surveil-track/). This system is designed to combine data from the IRS, DHS, and Social Security Administration in probably-illegal ways and I personally fear the damage that will ensue from trying to jam together datasets that weren't meant to be combined and how tempting this system will be as a target for hackers looking to steal personal data. It already has irreperably damaged the trust that the public once had for giving sensitive data to the government without worrying that it might be misused.
 
 ## Targeting Independent Agencies
 
-## Going Nuclear?
+Trump's biggest successes have been acts of destruction and not creation. Nothing has exemplified this more than when DOGE have been deployed to shut down independent agencies. They started this with the destruction of USAID, continued it with the shuttering of the CFPB, and expanded it at scale with [targeted harrassment against independent agencies](/agencies/independent). For instance, the language in these executive orders specifically named agencies:
+
+- ["Commencing the Reduction of the Federal Bureaucracy"](https://www.presidency.ucsb.edu/documents/executive-order-14217-commencing-the-reduction-the-federal-bureaucracy)
+- ["Continuing the Reduction of the Federal Bureaucracy"](https://www.presidency.ucsb.edu/documents/executive-order-14238-continuing-the-reduction-the-federal-bureaucracy)
+
+
+DOGE was not specifically mentioned in these executive orders, but they have provided legal justifications for DOGE's activities, even if these arguments have failed to sway the courts.

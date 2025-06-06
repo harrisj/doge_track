@@ -78,7 +78,7 @@ DB.create_table! :people do
   string :name, primary_key: true
   string :sort_name, null: false
   string :slug, null: false, unique: true
-  string :page_slug
+  string :custom_path
   integer :age
   string :background
   string :category, null: false, default: 'unknown'

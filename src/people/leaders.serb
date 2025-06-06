@@ -5,9 +5,10 @@ layout: page
 {%@ 'title', title: 'Leaders and Boosters' %}
 
 {%@ 'text' do %}
-This page is a mix of people who have been identified as leadership for DOGE, although many of the details of who is in charge and how they coordinate have been purposefully obscured by DOGE.œ
+This page is a mix of people who have been identified as leadership for DOGE, although many of the details of who is in charge and how they coordinate have been purposefully obscured by DOGE.
 
 <div class="mt-5">
+<h2 class="h2">Leaders</h2>
 {% people = site.data.people.select {|p| p.category == 'leadership'}.sort_by(&:sort_name) %}
 
 {% people.each do |person| %}
@@ -15,6 +16,7 @@ This page is a mix of people who have been identified as leadership for DOGE, al
 {% end %}
 </div>
 
+<h2 class="h2">Boosters</h2>
 DOGE has also attracted a number of boosters. These are Silicon Valley-adjacent or Musk-affiliated people who have been promoting the agency's operations or even active recruitment, but do not have a connection to the daily operations within government. 
 
 <div class="mt-5">

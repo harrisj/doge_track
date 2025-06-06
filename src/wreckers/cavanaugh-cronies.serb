@@ -1,0 +1,19 @@
+---
+title: Cavanaugh's Cronies
+---
+{% import 'macros' %}
+{%@ 'title', title: "Cavanaugh's Cronies" %}
+
+{%@ 'text' do %}
+Nate Cavnaugh doesn't do his work alone. He is helped by a growing group of other DOGE members who either show up with him at agencies or handle things alone.
+{% end %}
+
+{% names = ['Justin Fox', 'Jacob Altik', 'Jack Stein', 'Jonathan Mendelson', 'Eliezer Mishory', 'Emily Bryant', 'Bridget Youngs', 'Donald Park', 'Marshall Wood'] %}
+
+<div class="mt-5">
+{% people = site.data.people.select {|p| names.include?(p.name) }.sort_by(&:sort_name) %}
+
+{% people.each do |person| %}
+  {%@ "people_page_person", person: person %}
+{% end %}
+</div>

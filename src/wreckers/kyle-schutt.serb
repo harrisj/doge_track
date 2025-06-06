@@ -1,0 +1,5 @@
+---
+title: Kyle Schutt
+---
+{% person = site.data.people.find {|p| p.name == 'Kyle Schutt' } %}
+{%@ "people_page_person", person: person %}

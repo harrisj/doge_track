@@ -9,6 +9,8 @@ require 'edtf-humanize'
 DATA_DIR = File.join(File.dirname(__FILE__), '..', '..', 'src', '_data')
 
 def person_url(person)
+  return person.custom_path unless person.custom_path.nil?
+
   case person.category
   when 'wrecker'
     "/people/wrecker-staff##{person.slug}"
