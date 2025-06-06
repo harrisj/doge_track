@@ -1,0 +1,2110 @@
+---
+- id: apex
+  acronym: APEX
+  name: Acquisition Performance and Execution
+  type: internal
+  description: A relatively new (~2022) system for tracking procurement at the CDC
+  comment: I can't find any public data on this system
+  category: obligations
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: CDC
+  all_agency_ids:
+  - CDC
+  all_names:
+  - Luke Farritor
+  access_ids:
+  - apex-access
+- id: agx
+  acronym: AGX
+  name: Acquistions and Grants Exchange
+  type: internal
+  description: >-
+    A web-based application that provides the Office of Acquisition and Grants Management with tools for contracting officers to use for conducting their
+    activities
+  comment:
+  category: obligations
+  population:
+  risk:
+  link:
+  pia: https://www.hhs.gov/sites/default/files/cms-acquisition-and-grants-exchange.pdf
+  sorn:
+  agency_id: CMS
+  all_agency_ids:
+  - CMS
+  all_names: []
+  access_ids: []
+- id: microsoft-ad
+  acronym: Microsoft AD
+  name: Active Directory
+  type: saas
+  description: A system for controlling access to other systems within an agency
+  comment:
+  category: security
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - CFPB
+  all_names:
+  - Gavin Kliger
+  - Luke Farritor
+  access_ids:
+  - ad-cfpb-kliger
+  - ad-cfpb-farritor
+- id: website
+  acronym: website
+  name: Agency Website
+  type: saas
+  description: This is a stand-in for whatever website platform an agency is using
+  comment:
+  category: communications
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - CFPB
+  - OPM
+  all_names:
+  - Gavin Kliger
+  - Amanda Scales
+  - Charles Ezell
+  - Akash Bobba
+  - Akash Bobba
+  - Gavin Kliger
+  - Nikhil Rajpal
+  - Brian Bjelde
+  - Greg Hogan
+  access_ids:
+  - doge-cfpb-website
+  - opm-website-scales
+  - opm-website-ezell
+  - opm-02-website
+  - opm-03-website
+  - opm-website-opm-5
+  - opm-website-opm-6
+  - opm-website-employee-7
+  - opm-website-greg-hogan
+- id: afes
+  acronym: AFES
+  name: Anti-Fraud Enterprise Solution
+  type: internal
+  description: System for detecting and preventing fraud in Social Security
+  comment:
+  category: payments
+  population: SSA payees, SSA employees, people doing business with the SSA
+  risk: PII of individuals stored in other systems and copied here for investigation
+  link:
+  pia: https://www.ssa.gov/privacy/pia/AFES_OPD%20Draft_PIA_04-17-2018.htm
+  sorn: https://www.govinfo.gov/content/pkg/FR-2022-04-28/pdf/2022-09091.pdf
+  agency_id: SSA
+  all_agency_ids:
+  - SSA
+  all_names: []
+  access_ids: []
+- id: dhs-ident
+  acronym: IDENT
+  name: Automated Biometric Identification System
+  type: internal
+  description: A system storing hundreds of millions of biometric identity points, the largest such repository in the world.
+  comment: >-
+    can retrieve data for an individual tied to a Department of State visa application, a U.S. Customs and Border Protection log of an entry into the United
+    States, and an immigration status change logged by U.S. Citizenship and Immigration Services.
+  category: security
+  population:
+  risk:
+  link: https://www.dhs.gov/obim
+  pia:
+  sorn:
+  agency_id: DHS
+  all_agency_ids:
+  - DHS
+  all_names: []
+  access_ids: []
+- id: asap
+  acronym: ASAP
+  name: Automated Standard Access For Payments
+  type: internal
+  description: A payment system that allows recipients to draw down funds from an established bank account for that recipient.
+  comment:
+  category: payments
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: Treasury
+  all_agency_ids:
+  - Treasury
+  all_names:
+  - Marko Elez
+  access_ids:
+  - asap-src-elez
+- id: biis
+  acronym: BIIS
+  name: Business Intelligence Information System
+  type: unknown
+  description: Used to track expenditures at HHS
+  comment: Not sure what this is
+  category: obligations
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: HHS
+  all_agency_ids:
+  - HHS
+  all_names:
+  - Rachel Riley
+  access_ids:
+  - biis-riley
+- id: calm
+  acronym: CALM
+  name: CMS Acquisition Lifecycle Management System
+  type: internal
+  description: System for tracking CMS acquisitions, contracts, milestones and audits.
+  comment:
+  category: obligations
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: CMS
+  all_agency_ids:
+  - CMS
+  all_names:
+  - Luke Farritor
+  - Rachel Riley
+  - Conor Fennessy
+  - Jeremy Lewin
+  - Edward Coristine
+  - Marko Elez
+  - Aram Moghaddassi
+  - Amy Gleason
+  access_ids:
+  - calm-farritor
+  - calm-riley
+  - calm-fennessy
+  - calm-lewin
+  - calm-coristine
+  - calm-elez
+  - calm-moghaddassi
+  - calm-gleason
+- id: cars
+  acronym: CARS
+  name: Central Accounting Reporting System
+  type: internal
+  description: A system which handles accounting for all federal agencies
+  comment:
+  category: payments
+  population:
+  risk:
+  link: https://fiscal.treasury.gov/cars/
+  pia: https://www.fiscal.treasury.gov/files/pia/cars-pclia.pdf
+  sorn:
+  agency_id: Treasury
+  all_agency_ids:
+  - Treasury
+  all_names: []
+  access_ids: []
+- id: cis
+  acronym: CIS
+  name: Central Index System
+  type: internal
+  description: The CIS contains information about immigrants who use Alien Numbers, or A-Numbers.
+  comment:
+  category: immigration
+  population: Immigrants in the US who use Alien Numbers, or A-Numbers. Can include undocumented and documented immigrants
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: USCIS
+  all_agency_ids:
+  - USCIS
+  all_names:
+  - Aram Moghaddassi
+  - Payton Rehling
+  access_ids:
+  - uscis-cis-mohgaddassi
+  - uscis-cis-rehling
+- id: cods
+  acronym: COD
+  name: Common Origination and Disbursement System
+  type: internal
+  description: A system for disbursing grants and loans that are paid to institutions of higher education directly (who then provide to students)
+  comment:
+  category: payments
+  population: Institutions of higher learning and their representatives
+  risk: PII and bank account information for institutions of higher education
+  link:
+  pia: https://www.ed.gov/sites/ed/files/notices/pia/fsa-pia-cod.pdf
+  sorn: https://www.federalregister.gov/documents/2023/06/28/2023-13698/privacy-act-of-1974-system-of-record
+  agency_id: Education
+  all_agency_ids:
+  - Education
+  all_names: []
+  access_ids: []
+- id: concur
+  acronym: Concur
+  name: Concur
+  type: ssp
+  description: Shared service for booking government travel
+  comment:
+  category: personnel
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - CFPB
+  all_names:
+  - Jordan Wick
+  access_ids:
+  - concur-cfpb-wick
+- id: data-insight
+  acronym: DI
+  name: Data Insight
+  type: internal
+  description: Provides information on CFPB reporting structure
+  comment:
+  category: personnel
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: CFPB
+  all_agency_ids:
+  - CFPB
+  all_names:
+  - Jordan Wick
+  access_ids:
+  - data-insight-cfpb-wick
+- id: databricks
+  acronym: Databricks
+  name: Databricks
+  type: saas
+  description: A hosted or self-hosted service that simplifies systems for processing big Data
+  comment:
+  category: data
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - OPM
+  all_names:
+  - Amanda Scales
+  - Amanda Scales
+  - Riccardo Biasini
+  - Nikhil Rajpal
+  - Nikhil Rajpal
+  - James Sullivan
+  access_ids:
+  - databricks-opm-scales
+  - databricks-opm-hogan
+  - databricks-opm-employee-2
+  - databricks-opm-employee-6
+  - databricks-opm-employee-5
+  - databricks-opm-employee-8
+- id: dmcs
+  acronym: DMCS
+  name: Debt Management and Collection System
+  type: internal
+  description: A system used for tracking and assisting in collection of federal student loans in default
+  comment:
+  category: payments
+  population:
+  risk: PII and details of debt amounts for individuals who have defaulted on their loans
+  link:
+  pia: https://www.ed.gov/sites/ed/files/2025-01/PIA_FSA_DMCS_11_22_2024.pdf
+  sorn: https://www.federalregister.gov/documents/2023/07/27/2023-15931/privacy-act-of-1974-system-of-records
+  agency_id: Education
+  all_agency_ids:
+  - Education
+  all_names: []
+  access_ids: []
+- id: dra
+  acronym: DRA
+  name: Directory Resource Administrator
+  type: saas
+  description: A tool for managing access control to systems built on top of ActiveDirectory
+  comment:
+  category: security
+  population:
+  risk:
+  link: https://www.netiq.com/documentation/directory-and-resource-administrator-92/pdfdoc/drauserguide/drauserguide.pdf
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - DOL
+  all_names:
+  - Marko Elez
+  - Miles Collins
+  access_ids:
+  - dra-elez
+  - dra-collins
+- id: eas
+  acronym: EAS
+  name: EPA Acquisition System
+  type: internal
+  description: System used at the EPA to initiate, award, modify and track acquisition actions.
+  comment:
+  category: obligations
+  population:
+  risk:
+  link:
+  pia: https://www.epa.gov/system/files/documents/2023-12/eas-saas-pia-final.pdf
+  sorn:
+  agency_id: EPA
+  all_agency_ids:
+  - EPA
+  all_names:
+  - Kathryn Armstrong Loving
+  - Erica Jehling
+  - Cole Killian
+  access_ids:
+  - eas-loving
+  - eas-jehling
+  - eas-killian
+- id: edib
+  acronym: eDib
+  name: Electronic Disability System
+  type: internal
+  description: System for processing disability claims against Social Security
+  comment:
+  category: obligations
+  population:
+  risk: PII and PHI of individuals applying for disability benefits, including names, SSNs, and medical information related to their disability
+  link:
+  pia: https://www.ssa.gov/privacy/pia/eDib%20PIA%20OPD%20Final_Feb%201,%202018.pdf
+  sorn: https://www.govinfo.gov/content/pkg/FR-2020-06-04/pdf/2020-12067.pdf
+  agency_id: SSA
+  all_agency_ids:
+  - SSA
+  all_names: []
+  access_ids: []
+- id: elis
+  acronym: ELIS
+  name: Electronic Immigration System
+  type: internal
+  description: >-
+    ELIS acts as a case management system for USCIS and includes information about green cards and petitions, as well as details related to Temporary Protected
+    Status and DACA applicants
+  comment:
+  category: immigration
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: USCIS
+  all_agency_ids:
+  - USCIS
+  all_names:
+  - Aram Moghaddassi
+  - Payton Rehling
+  access_ids:
+  - uscis-elis-mohgaddassi
+  - uscis-elis-rehling
+- id: ewr
+  acronym: EWR
+  name: Electronic Wage Reporting System
+  type: internal
+  description: A system for employers to submit W-2 records every year for their employees
+  comment:
+  category: taxes
+  population:
+  risk: Private tax information for every American
+  link:
+  pia: https://www.ssa.gov/privacy/pia/Final%20PIA%20for%20the%20EWR%20System.htm
+  sorn: https://www.ssa.gov/privacy/sorn/60-0059.pdf
+  agency_id: SSA
+  all_agency_ids:
+  - SSA
+  all_names: []
+  access_ids: []
+- id: ehcm
+  acronym: EHCM
+  name: Enterprise Human Capital Management System
+  type: unknown
+  description: FIXME
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: HHS
+  all_agency_ids:
+  - HHS
+  all_names:
+  - Rachel Riley
+  - Luke Farritor
+  - Zach Terrell
+  access_ids:
+  - ehcm-riley
+  - ehcm-farritor
+  - ehcm-terrell
+- id: ehri
+  acronym: EHRI
+  name: Enterprise Human Resources Integration
+  type: internal
+  description: Database of all federal employees
+  comment:
+  category: personnel
+  population:
+  risk: PII including SSN, date of birth, salary, home address, and job description
+  link:
+  pia: https://www.opm.gov/information-management/privacy-policy/privacy-policy/ehridw.pdf
+  sorn: https://www.federalregister.gov/documents/2023/08/17/2023-17651/privacy-act-of-1974-system-of-records
+  agency_id: OPM
+  all_agency_ids:
+  - OPM
+  all_names:
+  - Riccardo Biasini
+  - Nikhil Rajpal
+  access_ids:
+  - ehri-opm-2
+  - ehri-opm-6
+- id: epacs
+  acronym: ePACS
+  name: Enterprise Physical Access Control System
+  type: internal
+  description: Used to control physical access to the DOL HQ and several other buildings. Could track when employees enter and leave
+  comment:
+  category: security
+  population: Federal personnel with access to the Department of Labor
+  risk: Ability to monitor when staff uses facilities, ability to control or grant access
+  link: https://catalog.data.gov/dataset/dol-enterprise-physical-access-control-system-dol-epacs-a41c6
+  pia:
+  sorn:
+  agency_id: DOL
+  all_agency_ids:
+  - DOL
+  all_names:
+  - Marko Elez
+  access_ids:
+  - epacs-elez
+- id: ecas
+  acronym: ECAS
+  name: Executive Office for Immigration Review's Court and Appeals System
+  type: unknown
+  description: A system used by DOJ for tracking the status of immigration cases
+  comment:
+  category: immigration
+  population: Immigrants who have interacted with the US immigration system
+  risk: Names, addresses, court testimony and any prior interactions with the system
+  link:
+  pia: https://www.justice.gov/media/982096/dl?inline
+  sorn:
+  agency_id: DOJ
+  all_agency_ids:
+  - DOJ
+  all_names:
+  - Adam Hoffman
+  - Marko Elez
+  - Jon Koval
+  - Payton Rehling
+  access_ids:
+  - ecas-hoffman
+  - ecas-elez
+  - ecas-koval
+  - ecas-rehling
+- id: fps
+  acronym: FPS
+  name: FAFSA Processing System
+  type: internal
+  description: The system for receiving and evaluating applications for federal student aid and sharing determinations with universities
+  comment:
+  category: obligations
+  population:
+  risk: PII of student and parents, include names, address, SSNs, tax information and schools receiving the form
+  link:
+  pia: https://www.ed.gov/sites/ed/files/notices/pia/pia-fps.pdf
+  sorn: https://www.federalregister.gov/documents/2023/06/15/2023-12831/privacy-act-of-1974-system-of-records
+  agency_id: Education
+  all_agency_ids:
+  - Education
+  all_names: []
+  access_ids: []
+- id: fema-go
+  acronym: FEMA-Go
+  name: FEMA Grants Outcomes
+  type: internal
+  description: A system for managing grant program for communities affected by disasters
+  comment:
+  category: obligations
+  population:
+  risk: PII of grant recipients, including names, addresses and bank information
+  link: https://go.fema.gov/
+  pia: https://www.dhs.gov/sites/default/files/publications/privacy-pia-fema013-gmp-appendixupdate-march2020.pdf
+  sorn: https://www.federalregister.gov/documents/2022/07/11/2022-14673/privacy-act-of-1974-system-of-records
+  agency_id: FEMA
+  all_agency_ids:
+  - FEMA
+  all_names:
+  - Edward Coristine
+  - Kyle Schutt
+  access_ids:
+  - fema-go-coristine
+  - fema-go-schutt
+- id: fas
+  acronym: FAS
+  name: FUTURE Act Systems
+  type: internal
+  description: Systems for implementing the FUTURE Act, allowing FAFSA to obtain federal tax information for students
+  comment:
+  category: taxes
+  population: Applicants for the FAFSA financial aid form
+  risk: Sensitive tax information of students and parents
+  link:
+  pia: https://www.ed.gov/media/document/federal-tax-information-module-107894.pdf
+  sorn: https://www.federalregister.gov/documents/2023/06/29/2023-13980/privacy-act-of-1974-system-of-records
+  agency_id: Education
+  all_agency_ids:
+  - Education
+  all_names: []
+  access_ids: []
+- id: fds
+  acronym: FDS
+  name: Federal Disbursement Services
+  type: internal
+  description: The Federal Disbursement Services (FDS) pays out money, helps collect money, handles foreign transactions, and supports Fiscal Service programs.
+  comment:
+  category: payments
+  population:
+  risk:
+  link: https://fiscal.treasury.gov/fds/
+  pia:
+  sorn:
+  agency_id: Treasury
+  all_agency_ids:
+  - Treasury
+  all_names: []
+  access_ids: []
+- id: fpps
+  acronym: FPPS
+  name: Federal Personnel Payroll System
+  type: ssp
+  description: >-
+    A shared service which processes payrolls for Interior, but also DOJ, Treasury, DHS, the Air Force, Nuclear Regulatory Commission and other agencies.
+    Covers about half of federal personnel.
+  comment:
+  category: personnel
+  population:
+  risk: PII and payment info for federal staff at several large agencies, including the ability to interfere with pay
+  link:
+  pia: https://www.doi.gov/sites/doi.gov/files/fpps-pia-revised-04222020_0.pdf
+  sorn:
+  agency_id: DOI
+  all_agency_ids:
+  - DOI
+  all_names:
+  - Stephanie Holmes
+  - Katrine Trampe
+  access_ids:
+  - fpps-holmes
+  - fpps-trampe
+- id: fass-ph
+  acronym: FASS-PH
+  name: Financial Assessment of Public Housing
+  type: internal
+  description: A database to measure the financial condition of public housing agencies and assess their ability to provide safe and decent housing.
+  comment:
+  category: oversight
+  population:
+  risk:
+  link: https://www.hud.gov/program_offices/public_indian_housing/reac/products/fassph
+  pia:
+  sorn:
+  agency_id: HUD
+  all_agency_ids:
+  - HUD
+  all_names:
+  - Michael Mirski
+  access_ids:
+  - fass-mirski
+- id: fbis
+  acronym: FBIS
+  name: Financial Business Intelligence System
+  type: unknown
+  description: A system for tracking business operations at HHS
+  comment:
+  category: obligations
+  population:
+  risk:
+  link: https://www.hhs.gov/about/agencies/asa/psc/accounting/accounting-services/index.html
+  pia:
+  sorn:
+  agency_id: HHS
+  all_agency_ids:
+  - HHS
+  all_names:
+  - Rachel Riley
+  - Conor Fennessy
+  - Zach Terrell
+  access_ids:
+  - fbis-riley
+  - fbis-fennessy
+  - fbis-terrell
+- id: fms
+  acronym: FMS
+  name: Financial Management System
+  type: internal
+  description: A system that consolidates grants, loans and work-study funds for students under Title IV of the Higher Education Act
+  comment:
+  category: obligations
+  population:
+  risk: PII of students, including names, addresses, SSNs and financial details of payments
+  link:
+  pia: https://www.ed.gov/sites/ed/files/notices/pia/fsa-financ-manag-syst.pdf
+  sorn: https://www.ed.gov/sites/ed/files/notices/sorn/18-11-17_010208.pdf
+  agency_id: Education
+  all_agency_ids:
+  - Education
+  all_names:
+  - Adam Ramada
+  access_ids:
+  - fms-ramada
+- id: flag
+  acronym: FLAG
+  name: Foreign Labor Application Gateway
+  type: internal
+  description: This newly-modernized portal will help U.S. employers find qualified workers while ensuring protections for U.S. and foreign workers.
+  comment:
+  category: immigration
+  population:
+  risk:
+  link: https://flag.dol.gov/
+  pia:
+  sorn: https://www.federalregister.gov/documents/2022/02/14/2022-03063/privacy-act-of-1974-system-of-records
+  agency_id: DOL
+  all_agency_ids:
+  - DOL
+  all_names:
+  - Aram Moghaddassi
+  access_ids:
+  - flag-mohgaddassi
+- id: g-invoicing
+  acronym: G-invoice
+  name: G-Invoicing
+  type: ssp
+  description: A shared service from BFS for handling intergovernmental invoicing
+  comment:
+  category:
+  population:
+  risk:
+  link: https://www.fiscal.treasury.gov/g-invoice/
+  pia:
+  sorn:
+  agency_id: Treasury
+  all_agency_ids:
+  - Treasury
+  - CFPB
+  all_names:
+  - Jordan Wick
+  access_ids:
+  - ginvoicing-cfpb-wick
+- id: github
+  acronym: github
+  name: GitHub
+  type: saas
+  description: >-
+    A service owned by Microsoft for developers to run version control on their applications and back them up to shared repositories that can be used by
+    other developers. Github is provided as both a hosted service (at github.com) or via versions that can be installed with agency data centers (aka GitHub
+    Enterprise or GHE). Access to Github would be expected for developers, but doesn't necessarily mean the person is a coder.
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - OPM
+  all_names:
+  - Riccardo Biasini
+  - Gavin Kliger
+  - Brian Bjelde
+  - Brian Bjelde
+  - Greg Hogan
+  - Amanda Scales
+  access_ids:
+  - opm-github-employee-2
+  - opm-github-employee-5
+  - opm-github-employee-7
+  - opm-github-employee-3
+  - opm-github-hogan
+  - opm-github-scale
+- id: google-drive
+  acronym: Google
+  name: Google Drive
+  type: saas
+  description:
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - NOAA
+  all_names:
+  - Nikhil Rajpal
+  access_ids:
+  - google-noaa-rajpal
+- id: gwes
+  acronym: GWES
+  name: Government-Wide Email System
+  type: internal
+  description: >-
+    A new system developed by DOGE for sending out email to all federal employees and collecting responses. It was most famously used for the Fork in The
+    Road email.
+  comment:
+  category: personnel
+  population:
+  risk: There are concerns it is an external system and did not go through a privacy review
+  link:
+  pia: https://www.opm.gov/media/kfpozkad/gwes-pia.pdf
+  sorn: https://www.federalregister.gov/documents/2017/12/05/2017-26107/privacy-act-of-1974-system-of-records
+  agency_id: OPM
+  all_agency_ids:
+  - OPM
+  all_names: []
+  access_ids: []
+- id: grantsolutions
+  acronym: Grant Sol.
+  name: Grant Solutions
+  type: ssp
+  description: A shared-service provider tool for federal agencies to track grants across their entire lifecycles
+  comment:
+  category: obligations
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: HHS
+  all_agency_ids:
+  - HHS
+  all_names:
+  - Luke Farritor
+  - Aram Moghaddassi
+  - Rachel Riley
+  - Conor Fennessy
+  - Jeremy Lewin
+  access_ids:
+  - grantsolutions-farritor
+  - grantsolutions-moghaddassi
+  - grantsolutions-riley
+  - grantsolutions-fennessy
+  - grantsolutions-lewin
+- id: givenrants.gov
+  acronym: Grants.gov
+  name: Grants.gov
+  type: ssp
+  description: A system run and administered by HHS that is used at 18+ agencies for publishing grants, finding recipients and delivering funds
+  comment:
+  category: obligations
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: HHS
+  all_agency_ids:
+  - HHS
+  all_names:
+  - Conor Fennessy
+  - Luke Farritor
+  access_ids:
+  - grants-fennessy
+  - grants-farritor
+- id: hcas
+  acronym: HCAS
+  name: HHS Consolidated Acquisition System
+  type: unknown
+  description: FIXME
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: HHS
+  all_agency_ids:
+  - HHS
+  all_names:
+  - Luke Farritor
+  - Rachel Riley
+  - Conor Fennessy
+  access_ids:
+  - hcas-farritor
+  - hcas-riley
+  - hcas-fennessy
+- id: hhs-ufms
+  acronym: UFMS
+  name: HHS Unified Financial Management System
+  type: unknown
+  description: A department-wide financial management system which supports all of HHS Program Service Center's Accounting Services and reporting
+  comment:
+  category:
+  population:
+  risk:
+  link: https://www.hhs.gov/about/agencies/asa/psc/accounting/accounting-services/index.html
+  pia:
+  sorn:
+  agency_id: HHS
+  all_agency_ids:
+  - HHS
+  all_names:
+  - Zach Terrell
+  access_ids:
+  - ufms-terrell
+- id: hrconnect
+  acronym: HRConnect
+  name: HRConnect
+  type: ssp
+  description: HR system for tracking employee information
+  comment:
+  category: personnel
+  population:
+  risk: PII of CFPB employees, including SSN, home address, and employment records
+  link:
+  pia:
+  sorn: https://www.consumerfinance.gov/privacy/system-records-notices/employee-administrative-records/
+  agency_id:
+  all_agency_ids:
+  - DOL
+  - CFPB
+  all_names:
+  - Miles Collins
+  - Jordan Wick
+  access_ids:
+  - hrconnect-dol-collins
+  - hrconnect-cfpb-wick
+- id: hubcaps
+  acronym: HUDCAPS
+  name: HUD Central Accounting and Processing System
+  type: internal
+  description: Integrated management system for Section 8 programs under the jurisdiction of the Office of Public and Indian Housing
+  comment:
+  category: oversight
+  population:
+  risk: PII of individuals applying for housing vouchers including medical records and personal narratives
+  link:
+  pia: https://www.hud.gov/sites/dfiles/OCHCO/documents/OCFO33_A75.pdf
+  sorn: https://www.federalregister.gov/documents/2022/08/17/2022-17709/privacy-act-of-1974-system-of-records
+  agency_id: HUD
+  all_agency_ids:
+  - HUD
+  all_names:
+  - Michael Mirski
+  - Scott Langmack
+  access_ids:
+  - hudcaps-mirski
+  - hudcaps-langmack
+- id: hems
+  acronym: HEMS
+  name: HUD Enforcement Management System
+  type: internal
+  description: A database for tracking housing discrimination complaints and enforcement actions, including accusations of domestic violence
+  comment:
+  category: oversight
+  population:
+  risk: PII and PHI of individuals, including medical records, legal records and case files
+  link: https://www.hud.gov/program_offices/fair_housing_equal_opp/system/hems
+  pia: https://www.hud.gov/sites/dfiles/OCHCO/documents/FHEO-V05-HEMS-PIA.pdf
+  sorn: https://www.federalregister.gov/documents/2023/12/14/2023-27443/privacy-act-of-1974-system-of-records
+  agency_id: HUD
+  all_agency_ids:
+  - HUD
+  all_names:
+  - Michael Mirski
+  access_ids:
+  - hems-mirski
+- id: opm-hi
+  acronym: HI
+  name: Health Insurance Data Warehouse
+  type: internal
+  description: System tracking health claims of government employees and their dependents on FEHB health insurance plans
+  comment:
+  category: personnel
+  population:
+  risk: PII and PHI of government employees and their dependents
+  link:
+  pia: https://www.opm.gov/information-management/privacy-policy/privacy-policy/hidw-pia.pdf
+  sorn: https://www.opm.gov/information-management/privacy-policy/sorn/opm-sorn-central-15-health-claims-data-warehouse.pdf
+  agency_id: OPM
+  all_agency_ids:
+  - OPM
+  all_names: []
+  access_ids: []
+- id: higlas
+  acronym: HIGLAS
+  name: Healthcare Integrated General Ledger Accounting System
+  type: internal
+  description: A single, integrated dual-entry accounting system that centralizes accounting for CMS programs, including Medicare and Medicaid.
+  comment:
+  category: payments
+  population: Medical providers and others who would receive disbursements from Medicare or Medicaid
+  risk:
+  link: https://www.cms.gov/about-cms/information-systems/higlas/higlas-architecture
+  pia:
+  sorn:
+  agency_id: CMS
+  all_agency_ids:
+  - CMS
+  all_names:
+  - Luke Farritor
+  - Edward Coristine
+  - Marko Elez
+  - Aram Moghaddassi
+  access_ids:
+  - higlas-farritor
+  - higlas-coristine
+  - higlas-elez
+  - higlas-moghaddassi
+- id: dhs-hart
+  acronym: HART
+  name: Homeland Advanced Recognition Technology
+  type: internal
+  description: A planned replacement for the IDENT system that has been troubled by delays and cost overruns
+  comment:
+  category: security
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: DHS
+  all_agency_ids:
+  - DHS
+  all_names: []
+  access_ids: []
+- id: hrs
+  acronym: HRS
+  name: Human Resources System
+  type: internal
+  description: Collection of systems for human resources, timekeeping and payroll for SSA employees
+  comment:
+  category: personnel
+  population:
+  risk: PII of SSA employees, including names, SSNs, and payroll information
+  link:
+  pia: https://www.ssa.gov/privacy/pia/HRS%20PIA.htm
+  sorn:
+  agency_id: SSA
+  all_agency_ids:
+  - SSA
+  all_names: []
+  access_ids: []
+- id: iron
+  acronym: IRON
+  name: IRON Website
+  type: internal
+  description: FIXME
+  comment: System unknown, named in internal SSA emails as way to investigate people
+  category: obligations
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: SSA
+  all_agency_ids:
+  - SSA
+  all_names:
+  - Cole Killian
+  access_ids:
+  - iron-ssa-5
+- id: ice
+  acronym: ICE
+  name: Integrated Contracts Expert
+  type: internal
+  description: A system for tracking contracts at CDC
+  comment:
+  category: obligations
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: CDC
+  all_agency_ids:
+  - CDC
+  all_names:
+  - Luke Farritor
+  access_ids:
+  - ice-farritor
+- id: idr
+  acronym: IDR
+  name: Integrated Data Repository
+  type: internal
+  description: A data warehouse that receives all Medicare claims after they have been approved for payment
+  comment:
+  category: oversight
+  population: Anybody who has received treatment under Medicare
+  risk: This includes highly-sensitive PII and PHI for millions of Americans
+  link:
+  pia:
+  sorn: https://www.hhs.gov/foia/privacy/sorns/09700571/index.html
+  agency_id: CMS
+  all_agency_ids:
+  - CMS
+  all_names:
+  - Luke Farritor
+  - Marko Elez
+  - Aram Moghaddassi
+  - Edward Coristine
+  - Zach Terrell
+  access_ids:
+  - idr-farritor
+  - idr-elez
+  - idr-moghaddassi
+  - idr-coristine
+  - idr-terrell
+- id: idrs
+  acronym: IDRS
+  name: Integrated Data Retrieval System
+  type: internal
+  description: The IDRS contains some of the most sensitive financial information on American taxpayers.
+  comment:
+  category: taxes
+  population:
+  risk: Access to PII and financial data of American taxpayers, including names, SSNs, tax returns, bank account numbers, etc.
+  link: https://www.irs.gov/irm/part2/irm_02-009-001r
+  pia: https://www.irs.gov/pub/irs-pia/idrs-pia.pdf
+  sorn: https://www.federalregister.gov/documents/2015/09/08/2015-21980/privacy-act-of-1974-as-amended-system-of-records-notice
+  agency_id: IRS
+  all_agency_ids:
+  - IRS
+  all_names: []
+  access_ids: []
+- id: idis
+  acronym: IDIS
+  name: Integrated Disbursement and Information System
+  type: internal
+  description: A database for tracking all HUD programs nationwide, it includes hidden locations of domestic violence shelters
+  comment:
+  category: oversight
+  population:
+  risk: Among other things, it includes hidden locations of domestic violence shelters
+  link:
+  pia: https://www.hud.gov/sites/dfiles/OCHCO/documents/CPD-1IDISPIA.pdf
+  sorn:
+  agency_id: HUD
+  all_agency_ids:
+  - HUD
+  all_names:
+  - Michael Mirski
+  access_ids:
+  - idis-mirski
+- id: ifmis
+  acronym: IFMIS
+  name: Integrated Financial Management and Information System
+  type: internal
+  description: A system for processing all FEMA grant payments
+  comment:
+  category: payments
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: FEMA
+  all_agency_ids:
+  - FEMA
+  all_names:
+  - Kyle Schutt
+  access_ids:
+  - ifmis-source-schutt
+- id: ipp
+  acronym: IPP
+  name: Invoice Processing Platform
+  type: ssp
+  description:
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - CFPB
+  all_names:
+  - Jordan Wick
+  access_ids:
+  - ipp-cfpb-wick
+- id: loccs
+  acronym: LOCCS
+  name: Line of Credit Control System
+  type: internal
+  description: Handles disbursement and cash management for the majority of HUD's grant programs
+  comment:
+  category: payments
+  population:
+  risk: Access to PII of grant recipients, including names, addresses and bank information
+  link: https://www.hud.gov/sites/dfiles/CFO/documents/eLOCCS_Getting_Started_Guide-Sept_2022.pdf
+  pia: https://www.hud.gov/sites/dfiles/OCHCO/documents/OCFO29_A67.pdf
+  sorn: https://www.govinfo.gov/content/pkg/FR-2022-03-07/pdf/2022-04715.pdf
+  agency_id: HUD
+  all_agency_ids:
+  - HUD
+  all_names:
+  - Michael Mirski
+  - Scott Langmack
+  access_ids:
+  - locss-mirski
+  - locss-langmack
+- id: mbr
+  acronym: MBR
+  name: Master Beneficiary Record
+  type: internal
+  description: A large record of all individuals elgible to receive social security benefits
+  comment:
+  category: taxes
+  population:
+  risk:
+  link:
+  pia:
+  sorn: https://www.ssa.gov/privacy/sorn/60-0090.pdf
+  agency_id: SSA
+  all_agency_ids:
+  - SSA
+  all_names:
+  - Jon Koval
+  - Marko Elez
+  - Payton Rehling
+  access_ids:
+  - mbr-ssa-6
+  - mbr-ssa-7
+  - mbr-ssa-9
+- id: entra
+  acronym: Entra
+  name: Microsoft Entra ID
+  type: saas
+  description: A centralized identity provider used to support single-sign-on (SSO) and centralize access control for agencies.
+  comment:
+  category: security
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - CFPB
+  - NEH
+  all_names:
+  - Luke Farritor
+  - Jordan Wick
+  - Gavin Kliger
+  - Nate Cavanaugh
+  - Justin Fox
+  access_ids:
+  - entra-farritor
+  - entra-wick
+  - entra-kliger
+  - entra-neh-cavanaugh
+  - entra-neh-justin-fox
+- id: ms-office
+  acronym: Office365
+  name: Microsoft Office 365
+  type: saas
+  description: Microsoft Office 365 is used for agency email and knowledge management systems.
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - CISA
+  - Energy
+  all_names:
+  - Edward Coristine
+  - Luke Farritor
+  access_ids:
+  - cisa-office-coristine
+  - energy-office-farritor
+- id: sharepoint
+  acronym: Sharepoint
+  name: Microsoft Sharepoint
+  type: saas
+  description: Microsoft service for sharing documents within an organization
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - CFPB
+  all_names:
+  - Gavin Kliger
+  access_ids:
+  - sharepoint-kliger
+- id: nbs
+  acronym: NBS
+  name: NIH Business System
+  type: internal
+  description: >-
+    is the central electronic business system of the NIH including the general ledger, finance, budget, procurement, supply, travel, and property management
+    systems. NBS is aimed at improving data consolidation and financial reporting capabilities.
+  comment:
+  category: payments
+  population:
+  risk: As a payment system, includes names, SSNs, TINs, and other PII of persons/entities receiving payments from NIH
+  link:
+  pia:
+  sorn: https://www.federalregister.gov/documents/2002/08/22/02-21348/privacy-act-of-1974-proposed-new-system-of-records
+  agency_id: NIH
+  all_agency_ids:
+  - NIH
+  all_names: []
+  access_ids: []
+- id: nih-era
+  acronym: eRA
+  name: NIH Grant Management System
+  type: unknown
+  description: FIXME
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: NIH
+  all_agency_ids:
+  - NIH
+  all_names:
+  - Luke Farritor
+  access_ids:
+  - era-farritor
+- id: numident
+  acronym: NUMIDENT
+  name: NUMIDENT files
+  type: internal
+  description: NUMIDENT files that have been extracted from SSA systems, these contain SSNs for everybody
+  comment:
+  category: taxes
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: SSA
+  all_agency_ids:
+  - SSA
+  all_names:
+  - Akash Bobba
+  - Jon Koval
+  - Marko Elez
+  - Payton Rehling
+  access_ids:
+  - numident-bobba
+  - numident-ssa-6
+  - numident-ssa-7
+  - numident-ssa-9
+- id: ndnh
+  acronym: NDNH
+  name: National Directory of New Hires
+  type: internal
+  description: A system for tracking wages and new hires that's used for child support location
+  comment:
+  category: taxes
+  population:
+  risk: Contains wage information and unemployment claims for all Americans
+  link: https://acf.gov/css/training-technical-assistance/overview-federal-parent-locator-service
+  pia: https://www.hhs.gov/sites/default/files/acf-national-directory-of-new-hires.pdf
+  sorn: https://www.federalregister.gov/documents/2021/07/28/2021-16098/privacy-act-of-1974-matching-program
+  agency_id: HHS
+  all_agency_ids:
+  - HHS
+  all_names:
+  - Marko Elez
+  - Aram Moghaddassi
+  access_ids:
+  - ndnh-elez
+  - ndnh-moghaddassi
+- id: nfjp
+  acronym: NFJP
+  name: National Farmworker Jobs Program
+  type: internal
+  description: System for a nationally-directed, locally-administered program of services for migrant and seasonal farmworkers and their dependents
+  comment:
+  category: immigration
+  population:
+  risk:
+  link: https://www.dol.gov/agencies/eta/agriculture
+  pia:
+  sorn: >-
+    https://www.federalregister.gov/documents/2016/04/29/2016-09510/privacy-act-of-1974-publication-in-full-of-all-notices-of-systems-of-records-including-several-new
+  agency_id: DOL
+  all_agency_ids:
+  - DOL
+  all_names:
+  - Miles Collins
+  access_ids:
+  - njfp-collins
+- id: nslds
+  acronym: NSLDS
+  name: National Student Loan Data System (New)
+  type: internal
+  description: >-
+    A a comprehensive national database for the Federal financial aid history of recipients of student financial assistance and grants authorized under
+    Title IV of the Higher Education Act of 1965
+  comment:
+  category: obligations
+  population:
+  risk: PII of students, including names, addresses, SSNs and financial details of student loans
+  link:
+  pia: https://www.ed.gov/about/ed-overview/required-notices/privacy/privacy-impact-assessments-pia
+  sorn: https://www.federalregister.gov/documents/2024/05/21/2024-11136/privacy-act-of-1974-system-of-records
+  agency_id: Education
+  all_agency_ids:
+  - Education
+  all_names: []
+  access_ids: []
+- id: ncfms
+  acronym: NCFMS
+  name: New Core Financial Management System
+  type: unknown
+  description: FIXME
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: DOL
+  all_agency_ids:
+  - DOL
+  all_names:
+  - Miles Collins
+  access_ids:
+  - ncfms-collins
+- id: nxgen
+  acronym: NxGen
+  name: Next Generation Case Management System
+  type: internal
+  description: Database that stores information on all open and closed investigatations into possible unfair labor practices nationwide
+  comment:
+  category: oversight
+  population:
+  risk:
+  link:
+  pia: https://www.nlrb.gov/sites/default/files/attachments/pages/node-172/pia-nxgen-august-2019.pdf
+  sorn:
+  agency_id: NLRB
+  all_agency_ids:
+  - NLRB
+  all_names: []
+  access_ids: []
+- id: notam
+  acronym: NOTAM
+  name: Notice to Airmen
+  type: internal
+  description: System for alerting pilots and airports of events that might affect air travel
+  comment:
+  category: communications
+  population:
+  risk:
+  link: https://www.faa.gov/about/initiatives/notam/what_is_a_notam
+  pia:
+  sorn:
+  agency_id: FAA
+  all_agency_ids:
+  - FAA
+  all_names: []
+  access_ids: []
+- id: notify.gov
+  acronym: Notify
+  name: Notify.gov
+  type: internal
+  description: System for sending text messages to the public
+  comment:
+  category: communications
+  population:
+  risk: Access to PII like phone numbers as well as private information like participation in Medicaid, etc.
+  link:
+  pia:
+  sorn:
+  agency_id: GSA
+  all_agency_ids:
+  - GSA
+  all_names: []
+  access_ids: []
+- id: obis
+  acronym: OBIS
+  name: OSHA Business Information Systems
+  type: internal
+  description: Information gathered as part of whistleblowing and used for enforcement
+  comment:
+  category: oversight
+  population:
+  risk: PII of individuals reporting problems as well as confidential whistleblower information
+  link:
+  pia: https://www.dol.gov/agencies/oasam/centers-offices/ocio/privacy/osha/obis
+  sorn:
+  agency_id: DOL
+  all_agency_ids:
+  - DOL
+  all_names: []
+  access_ids: []
+- id: ojc-eis
+  acronym: OJC-EIS
+  name: Office of Job Corps Electronic Information System
+  type: unknown
+  description: FIXME
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: DOL
+  all_agency_ids:
+  - DOL
+  all_names:
+  - Miles Collins
+  access_ids:
+  - eis-collins
+- id: onecdc
+  acronym:
+  name: One CDC Data Platform
+  type: internal
+  description: >-
+    A system for centralizng health access, public-health data, including hundreds of thousands of daily anonymized lab tests, data from emergency-room
+    visits, and measurements from wastewater disease-reporting sites
+  comment:
+  category: scientific
+  population:
+  risk:
+  link: https://www.cdc.gov/public-health-data-strategy/php/about/index.html
+  pia:
+  sorn:
+  agency_id: CDC
+  all_agency_ids:
+  - CDC
+  all_names: []
+  access_ids: []
+- id: obi
+  acronym: OBI
+  name: Oracle Business Intelligence
+  type: saas
+  description:
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - CFPB
+  all_names:
+  - Jordan Wick
+  access_ids:
+  - obi-cfpb-wick
+- id: ebs
+  acronym: EBS
+  name: Oracle E-Business Suite
+  type: ssp
+  description: >-
+    Oracle E-Business Suite is a comprehensive suite of applications for finance, order management, logistics, procurement, projects, manufacturing, asset
+    lifecycle, and human capital management.
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - NIH
+  all_names:
+  - Rachel Riley
+  - Luke Farritor
+  - Conor Fennessy
+  access_ids:
+  - ebs-riley
+  - ebs-farritor
+  - ebs-fennesy
+- id: pam-db
+  acronym: PAM DB
+  name: Payment Automation Manager DB
+  type: internal
+  description: >-
+    The U.S. government uses the Payment Automation Manager (PAM) to pay all bills, except payments in foreign currency. PAM processed over 1.2 billion
+    payments in FY 2024, valued at over 4.7 trillion dollars.
+  comment:
+  category: payments
+  population:
+  risk: PII/CUI of entities receiving payments, SSNs, TINs, bank account info
+  link: https://fiscal.treasury.gov/pam/
+  pia: https://www.fiscal.treasury.gov/files/pia/pampclia.pdf
+  sorn:
+  agency_id: Treasury
+  all_agency_ids:
+  - Treasury
+  all_names:
+  - Marko Elez
+  - Marko Elez
+  access_ids:
+  - pam-src-elez
+  - pam-db-elez
+- id: pam-fs
+  acronym: PAM FS
+  name: Payment Automation Manager File System
+  type: internal
+  description: Where payment files are transmitted from initiating agencies before they are certified and processed by Treasury
+  comment:
+  category: payments
+  population:
+  risk: PII/CUI of entities receiving payments, SSNs, TINs, bank account info
+  link: https://fiscal.treasury.gov/pam/
+  pia: https://www.fiscal.treasury.gov/files/pia/pampclia.pdf
+  sorn:
+  agency_id: Treasury
+  all_agency_ids:
+  - Treasury
+  all_names:
+  - Marko Elez
+  access_ids:
+  - pam-fs-elez
+- id: pms
+  acronym: PMS
+  name: Payment Management System
+  type: ssp
+  description: A shared-services program provided by HHS for managing payments for grants
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: HHS
+  all_agency_ids:
+  - HHS
+  - DOL
+  all_names:
+  - Luke Farritor
+  - Zach Terrell
+  - Miles Collins
+  access_ids:
+  - pms-admin
+  - pms-terrell
+  - pms-collins
+- id: pegasys
+  acronym: Pegasys
+  name: Pegasys
+  type: internal
+  description: >-
+    Pegasys is the GSA core financial management system of records to make payments and record accounting transactions. This includes funds management (budget
+    execution and purchasing), credit cards, accounts payable, disbursements, standard general ledger, and reporting.
+  comment:
+  category: payments
+  population:
+  risk: PII of individuals and companies that receive funds from the GSA
+  link:
+  pia: https://www.gsa.gov/system/files/Pegasys_PIA.pdf
+  sorn: https://www.federalregister.gov/documents/2006/10/16/E6-17069/privacy-act-of-1974-notice-of-a-new-system-of-records
+  agency_id: GSA
+  all_agency_ids:
+  - GSA
+  all_names: []
+  access_ids: []
+- id: pssnap
+  acronym: PSSNAP
+  name: Phone Social Security Number Application Process data
+  type: internal
+  description: SSN application process data (Phone). This is a data extract file rather than an independent system.
+  comment:
+  category: obligations
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: SSA
+  all_agency_ids:
+  - SSA
+  all_names:
+  - Payton Rehling
+  access_ids:
+  - pssnap-ssa-9
+- id: cfpb-pac
+  acronym: PAC
+  name: Physical Access Control
+  type: unknown
+  description: Possibly a system for controlling and monitoring physical access to CFPB buildings
+  comment:
+  category: security
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: CFPB
+  all_agency_ids:
+  - CFPB
+  all_names:
+  - Gavin Kliger
+  access_ids:
+  - physical-access-kliger
+- id: power-automate
+  acronym: Automate
+  name: Power Automate
+  type: saas
+  description: A Microsoft tool for automating tasks that operate on documents and providing to staff
+  comment:
+  category:
+  population:
+  risk:
+  link: https://www.microsoft.com/en-us/power-platform/products/power-automate
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - CFPB
+  all_names:
+  - Gavin Kliger
+  - Gavin Kliger
+  access_ids:
+  - automate-kliger
+  - automate-kliger-2
+- id: prism
+  acronym: PRISM
+  name: Procurement Request Information System Management
+  type: ssp
+  description: System for tracking procurement and contracting
+  comment:
+  category: obligations
+  population:
+  risk: PII/CUI of contracting recipients
+  link: https://www.doi.gov/ibc/services/finance/financial-systems/prism
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - NIH
+  - CFPB
+  all_names:
+  - Rachel Riley
+  - Luke Farritor
+  - Conor Fennessy
+  - Jordan Wick
+  access_ids:
+  - prism-nih-riley
+  - prism-nih-farritor
+  - prism-nih-fennessy
+  - prism-cfpb-wick
+- id: reo
+  acronym: REO
+  name: Reentry Employment Opportunities
+  type: internal
+  description: System which tracks funding provided for justice-involved youth and young adults and adults who were formerly incarcerated.
+  comment:
+  category: immigration
+  population:
+  risk:
+  link: https://www.dol.gov/agencies/eta/reentry
+  pia: https://www.dol.gov/agencies/oasam/centers-offices/ocio/privacy/eta/reo
+  sorn:
+  agency_id: DOL
+  all_agency_ids:
+  - DOL
+  all_names:
+  - Miles Collins
+  - Aram Moghaddassi
+  - Marko Elez
+  access_ids:
+  - reo-collins
+  - reo-moghaddassi
+  - reo-elez
+- id: STAMP
+  acronym: STAMP
+  name: STAMP
+  type: unknown
+  description: This is a system at OPM that I do not have information about yet
+  comment:
+  category: personnel
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: OPM
+  all_agency_ids:
+  - OPM
+  all_names:
+  - Amanda Scales
+  - Charles Ezell
+  access_ids:
+  - opm-stamp-scales
+  - opm-stamp-ezell
+  - opm-stamp-employee-18
+- id: onearc
+  acronym: oneARC
+  name: Salesforce oneARC
+  type: saas
+  description: A system for tracking business processes within Salesforce
+  comment:
+  category: obligations
+  population:
+  risk:
+  link: https://fs-arc.my.site.com/portal/s/
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - CFPB
+  all_names:
+  - Jordan Wick
+  access_ids:
+  - onearc-cfpb-wick
+- id: sps
+  acronym: SPS
+  name: Secure Payment System
+  type: internal
+  description: Used by federal government agencies to securely create, certify, and submit payments to the Fiscal Service.
+  comment:
+  category: payments
+  population:
+  risk: Access to CUI/PII of entities submitting/receiving payments. Access to private encryption keys.
+  link: https://www.fiscal.treasury.gov/sps/
+  pia: https://www.fiscal.treasury.gov/files/pia/spspclia.pdf
+  sorn: https://www.federalregister.gov/documents/2020/02/27/2020-03969/privacy-act-of-1974-system-of-records
+  agency_id: Treasury
+  all_agency_ids:
+  - Treasury
+  all_names:
+  - Marko Elez
+  - Marko Elez
+  access_ids:
+  - sps-src-elez
+  - sps-elez
+- id: ssnec
+  acronym: SSNEC
+  name: Social Security Number Establishment and Correction System
+  type: internal
+  description: The system for issuing new SSNs as well as replacement SSN cards. This system also sources the NUMIDENT files
+  comment:
+  category: obligations
+  population:
+  risk: PII of individual include SSNs and information submitted on birth certificates
+  link:
+  pia: https://www.ssa.gov/privacy/pia/Social%20Security%20Number%20Establishment%20and%20Correction%20System.updtdSept%2028.htm
+  sorn: https://www.federalregister.gov/documents/2024/12/31/2024-31131/privacy-act-of-1974-system-of-records
+  agency_id: SSA
+  all_agency_ids:
+  - SSA
+  all_names: []
+  access_ids: []
+- id: ssr
+  acronym: SSR
+  name: Supplemental Security Record master records
+  type: unknown
+  description: A master record used by the SSA for the Supplemental Security Income (SSI) program
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: SSA
+  all_agency_ids:
+  - SSA
+  all_names:
+  - Jon Koval
+  - Marko Elez
+  - Payton Rehling
+  access_ids:
+  - ssr-ssa-6
+  - ssr-ssa-7
+  - ssr-ssa-9
+- id: save
+  acronym: SAVE
+  name: Systematic Alien Verification for Entitlements
+  type: ssp
+  description: An online service for agencies to verify immigration status and naturalized/acquired U.S. citizenship of applicants seeking benefits or licenses.
+  comment:
+  category: immigration
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: USCIS
+  all_agency_ids:
+  - USCIS
+  all_names:
+  - Marko Elez
+  access_ids:
+  - uscis-ssa-7
+- id: usa-performance
+  acronym: USA Perf
+  name: USA Performance
+  type: ssp
+  description: System tracking job performance of federal employees
+  comment:
+  category: personnel
+  population:
+  risk: PII and performance reviews of federal employees
+  link:
+  pia: https://www.opm.gov/information-management/privacy-policy/privacy-policy/usap-pia.pdf
+  sorn: https://www.opm.gov/information-management/privacy-policy/sorn/opm-sorn-govt-2-employee-performance-file-system-records.pdf
+  agency_id: OPM
+  all_agency_ids:
+  - OPM
+  all_names:
+  - Riccardo Biasini
+  - Akash Bobba
+  - Nikhil Rajpal
+  - Brian Bjelde
+  - Brian Bjelde
+  access_ids:
+  - usa-performance-opm-2
+  - usa-performance-opm-3
+  - usa-performance-opm-4
+  - usa-performance-opm-6
+  - usa-performance-opm-7
+  - usa-performance-opm-9
+  - usa-performance-opm-10
+  - usa-performance-opm-11
+  - usa-performance-opm-12
+  - usa-performance-opm-13
+  - usa-performance-opm-14
+  - usa-performance-opm-15
+  - usa-performance-opm-16
+  - usa-performance-opm-17
+  - usa-performance-opm-18
+  - usa-performance-hogan
+- id: usa-staffing
+  acronym: USA Staff
+  name: USA Staffing
+  type: ssp
+  description: System for tracking the onboarding of federal employees
+  comment:
+  category: personnel
+  population:
+  risk: agency-specific CUI related to onboarding
+  link:
+  pia:
+  sorn: https://www.federalregister.gov/documents/2021/12/01/2021-26086/privacy-act-of-1974-system-of-records
+  agency_id: OPM
+  all_agency_ids:
+  - OPM
+  - CFPB
+  all_names:
+  - Jordan Wick
+  - Amanda Scales
+  - Riccardo Biasini
+  - Gavin Kliger
+  - Nikhil Rajpal
+  - Brian Bjelde
+  - James Sullivan
+  access_ids:
+  - usastaffing-cfpb-wick
+  - usastaffing-opm-scales
+  - usastaffing-opm-2
+  - usastaffing-opm-5
+  - usastaffing-opm-6
+  - usastaffing-opm-7
+  - usastaffing-opm-8
+- id: usa-jobs
+  acronym: USA Jobs
+  name: USAJobs
+  type: ssp
+  description: Official hiring site for the federal government
+  comment:
+  category: personnel
+  population:
+  risk: PII of individuals who have applied for federal jobs, including SSN, home address, and employment records
+  link:
+  pia:
+  sorn: https://www.federalregister.gov/documents/2014/03/26/2014-06593/privacy-act-of-1974-update-and-amend-system-of-records
+  agency_id: OPM
+  all_agency_ids:
+  - OPM
+  all_names: []
+  access_ids: []
+- id: usaccess
+  acronym: USAccess
+  name: USAccess
+  type: ssp
+  description: Shared service access provider system
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: GSA
+  all_agency_ids:
+  - GSA
+  - DOL
+  all_names:
+  - Marko Elez
+  access_ids:
+  - usaccess-elez
+- id: dbis
+  acronym: DBIS
+  name: USCIS Data Business Intelligence Services
+  type: unknown
+  description: A system for tracking payments and business operations of USCIS
+  comment:
+  category: payments
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: USCIS
+  all_agency_ids:
+  - USCIS
+  all_names:
+  - Aram Moghaddassi
+  - Payton Rehling
+  access_ids:
+  - uscis-dbis-mohgaddassi
+  - uscis-dbis-rehling
+- id: uac
+  acronym: UAC Portal
+  name: Unaccompanied Alien Children (UAC) Portal
+  type: internal
+  description: The UC Portal manages all medical (mental and dental health included), educational, and sponsorship information for UC in ORR custody
+  comment:
+  category: immigration
+  population:
+  risk:
+  link:
+  pia: https://www.hhs.gov/sites/default/files/acf-unaccompanied-children-portal.pdf
+  sorn: https://www.federalregister.gov/documents/2022/02/08/2022-02535/privacy-act-of-1974-system-of-records
+  agency_id: HHS
+  all_agency_ids:
+  - HHS
+  all_names:
+  - Kyle Schutt
+  access_ids:
+  - uac-schutt
+- id: uidrr
+  acronym: UI Data
+  name: Unemployment Insurance Data and Related Records
+  type: unknown
+  description: >-
+    Unemployment insurance claims data from states' unemployment insurance agencies. This was explicitly transferred from the Inspector General's office
+    at DOL following a 2025-03-20 executive order
+  comment:
+  category:
+  population:
+  risk: PII include name, address, birth date, bank account information, address, SSN, matches to SSA Death Master File
+  link:
+  pia:
+  sorn:
+  agency_id: DOL
+  all_agency_ids:
+  - DOL
+  all_names:
+  - Marko Elez
+  access_ids:
+  - uidrr-elez
+- id: wass
+  acronym: WASS
+  name: Web Access Security Subsystem
+  type: internal
+  description: System for authorizing access and setting permissions to talk to other systems at HUD
+  comment:
+  category: security
+  population:
+  risk: With read-write access, DOGE staff were able to grant and revoke access to other systems without oversight
+  link:
+  pia:
+  sorn:
+  agency_id: HUD
+  all_agency_ids:
+  - HUD
+  all_names:
+  - Michael Mirski
+  access_ids:
+  - wass-mirski
+- id: webta
+  acronym: WebTA
+  name: WebTA
+  type: ssp
+  description: System for tracking timecards
+  comment:
+  category:
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids:
+  - CFPB
+  all_names:
+  - Jordan Wick
+  access_ids:
+  - webta-cfpb-wick
+- id: eopf
+  acronym: eOPF
+  name: eOPF
+  type: unknown
+  description: >-
+    An system for government employees to access their personnel files electronically. These are updated when staff receive changes in salary or duty station
+    or title, or receive performance reviews.
+  comment:
+  category: personnel
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id:
+  all_agency_ids: []
+  all_names:
+  - Riccardo Biasini
+  - Riccardo Biasini
+  access_ids:
+  - eopf-opm-2
+  - eopf-opm-6
