@@ -11,7 +11,7 @@ task default: :deploy
 # Standard set of tasks, which you can customize if you wish:
 #
 desc 'Build the Bridgetown site for deployment'
-task deploy: [:clean, 'frontend:build'] do
+task deploy: [:clean, :regenerate, 'frontend:build'] do
   Bridgetown::Commands::Build.start
 end
 
