@@ -424,7 +424,7 @@
 # Stephanie Holmes
 - category: wrecker
 - positions:
-    -  **DOGE** (2025-02-(05)~ to ??) 
+    -  **DOGE** (2025-02-(01)~ to ??) 
     -  **DOI** (2025-02-24 to ??) Special Advisor / Acting Chief Human Capital Officer
         - FPPS: Federal Personnel Payroll System **[admin access]**: 2025-03-29 - ongoing
 

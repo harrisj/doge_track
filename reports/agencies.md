@@ -169,8 +169,8 @@
   - **Carl Coe**
   - **Cole Killian** (2025-01-20)
   - **Adam Ramada** (2025-01-23)
+  - **Stephanie Holmes** (2025-02-(01)~)
   - **Alexandra Beynon** (2025-02-(04)~)
-  - **Stephanie Holmes** (2025-02-(05)~)
   - **Keenan Kmiec** (2025-02-(07)~)
   - **Kendall Lindemann** (2025-02-(10)~)
   - **Amy Gleason** (2025-02-18) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
