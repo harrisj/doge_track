@@ -124,6 +124,13 @@
     -  **EXIM** (2025-05-14 to ??) 
     -  **MSPB** (2025-05-21 to ??) 
 
+# Carl Coe
+- category: enabler
+- positions:
+    -  **DOGE**  
+    -  **EPA** (2025-05-02 to ??) **Chief of Staff**
+    -  **EPA**  
+
 # Michael Cole
 - category: wrecker
 - positions:

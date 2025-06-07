@@ -692,6 +692,36 @@
     source: https://bsky.app/profile/marisakabas.bsky.social/post/3lpclnw3x7s2c
     source_name: The Handbasket
 
+- name: Carl Coe
+  sort_name: Coe
+  slug: carl-coe
+  category: enabler
+  background: coder
+  positions:
+  - id: coe-detail-epa
+    type: detailed
+    from: DOGE
+    from_truth: guessed
+    table_note: Carl Coe, who currently leads the Department of Government Efficiency (DOGE) at DOE
+    source: https://www.energy.gov/articles/doe-announces-new-leadership-tackle-challenges-growing-energy-demand
+    source_name: press release
+    agency: EPA
+  - id: coe-doge
+    type: appointed
+    agency: DOGE
+    table_note: Just a wild guess, this is a placeholder for working backwards from what I know about
+      his tenure
+  - id: epa-coe-chief-staff
+    type: converted
+    title: Chief of Staff
+    title_type: dept_head
+    supervisory: true
+    agency: EPA
+    start_date: 2025-05-02
+    start_date_truth: verified
+    source: https://www.nytimes.com/2025/06/07/us/politics/trump-musk-doge-interior-epa.html
+    source_name: NYT
+
 - name: Michael Cole
   sort_name: Cole
   slug: michael-cole

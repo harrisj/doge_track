@@ -2254,6 +2254,191 @@
   agency_and_parent:
   - MSPB
   documents: []
+- id: coe-detail-epa
+  type: detailed
+  agency_id: EPA
+  name: Carl Coe
+  doge_alias_id:
+  from_agency_id: DOGE
+  from_truth: guessed
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2026-07-04'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://www.energy.gov/articles/doe-announces-new-leadership-tackle-challenges-growing-energy-demand
+  source_name: press release
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Carl Coe, who currently leads the Department of Government Efficiency (DOGE) at DOE
+  replaced_by:
+  same_as:
+  agency:
+    id: EPA
+    name: Environmental Protection Agency
+    slug: epa
+    page_slug: epa
+    short_name: EPA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/epa"
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: white-house
+    short_name: DOGE
+    doge_base: true
+    parent_id: EOP
+    obj_type: Agency
+    path: "/agencies/white-house"
+  agency_and_parent:
+  - EPA
+  documents: []
+- id: coe-doge
+  type: appointed
+  agency_id: DOGE
+  name: Carl Coe
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-01-20'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Just a wild guess, this is a placeholder for working backwards from what I know about his tenure
+  replaced_by:
+  same_as:
+  agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: white-house
+    short_name: DOGE
+    doge_base: true
+    parent_id: EOP
+    obj_type: Agency
+    path: "/agencies/white-house"
+  agency_and_parent:
+  - DOGE
+  - EOP
+  documents: []
+- id: epa-coe-chief-staff
+  type: converted
+  agency_id: EPA
+  name: Carl Coe
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: '2025-05-02'
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-05-02'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Chief of Staff
+  title_type: dept_head
+  series:
+  supervisory: true
+  office:
+  source: https://www.nytimes.com/2025/06/07/us/politics/trump-musk-doge-interior-epa.html
+  source_name: NYT
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: EPA
+    name: Environmental Protection Agency
+    slug: epa
+    page_slug: epa
+    short_name: EPA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/epa"
+  agency_and_parent:
+  - EPA
+  documents: []
 - id: usda-cole
   type: unknown
   agency_id: USDA
