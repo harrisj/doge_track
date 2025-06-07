@@ -28,3 +28,11 @@
 {%@ 'compact_event_timeline', events: agency_events, icon_col: true, agency_col: true %}
 {% end %}
 </div>
+
+{% open_questions = site.data.questions.select {|q| q.agency_id == id && q.answer.blank?} %}
+{% if open_questions.any? %}
+<h2 class="mt-4 mb-0 text-lg sm:text-xl md:text-2xl">Questions</h2>
+  <div class="mt-3">
+    {%@ 'questions_list', questions: open_questions %}
+  </div>
+{% end %}
