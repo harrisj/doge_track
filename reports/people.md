@@ -128,8 +128,8 @@
 - category: enabler
 - positions:
     -  **DOGE**  
-    -  **EPA** (2025-05-02 to ??) **Chief of Staff**
     -  **EPA**  
+    -  **EPA** (2025-05-02 to ??) **Chief of Staff**
 
 # Michael Cole
 - category: wrecker
