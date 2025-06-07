@@ -4,7 +4,18 @@ title: White House/DOGE/USDS
 template_engine: serbea
 ---
 {% blurb = capture do %}
-One of the challenging thing about tracking reporting about DOGE is that DOGE itself is purposefully vague by design. When it's time for them to threaten an agency or demand control over their systems, then it's a firmly defined entity backed by the authority of Elon Musk and also the President. When it's time to handle pesky reporters or legal discovery demands, it's just a vague concept located somewhere within the Executive Office of the President (EOP). As a result, this page is also a muddled mix of various White House-affiliated staff, including people assigned directly to DOGE and people who work elsewhere in the White House.
+One of the challenging thing about tracking reporting about DOGE is that DOGE itself is purposefully vague by design. When it's time for them to threaten an agency or demand control over their systems, then it's a firmly defined entity backed by the authority of Elon Musk and also the President. When it's time to handle pesky reporters or legal discovery demands, it's just a vague concept located somewhere within the Executive Office of the President (EOP).
+
+DOGE itself is also hard to define, since it can be used interchangably to mean:
+
+- The DOGE Temporary Organization/USDS entity within the White House
+- Staff that have been detailed to other agencies from DOGE specifically
+- Staff that are detailed from other agencies besides DOGE (see [The Wreckers](/people/wreckers) for what this means) who are taking direction from DOGE leadership
+- Staff hired at other agencies who are following DOGE's aims.
+
+DOGE has attempted to use this ambiguity in legal cases (for instance, not reporting the activities Gavin Kliger and Jeremy Lewin on behalf of DOGE at the CFPB, because technically they worked for the GSA), and media can sometimes be very imprecise as well. So, when an article reports a new person at an agency is from DOGE, does that mean they report to the White House or were detailed from there? It can be hard to figure out.
+
+ As a result, this page has a large amount of ambiguity within. Not only does it include people working for DOGE who might not be. It is also a muddled mix of various White House-affiliated staff, including people assigned directly to DOGE and people who work elsewhere in the White House.
 {% end %}
 
 {%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}

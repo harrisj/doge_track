@@ -327,7 +327,7 @@
     -  **HHS** (2025-01-XX to 2025-01-XX) Senior Advisor - DOGE
 
 # Joe Gebbia
-- category: unknown
+- category: wrecker
 - positions:
     -  **OPM** (2025-02-18 to ??) Expert ED-00
 

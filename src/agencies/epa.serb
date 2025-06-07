@@ -4,6 +4,7 @@ title: Environmental Protection Agency
 template_engine: serbea
 ---
 {% blurb = capture do %}
+Long vilified by conservatives as the face of the regulatory state, the Environmental Protection Agency was of course one of DOGE's early targets. DOGE's main activities at the agency have been focused on reducing the agency's effectiveness through layoffs and eliminating contracts. I would expect they will also turn to eliminating regulations, but their activities at the agency have not been heavily covered.
 {% end %}
 
 {%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}
