@@ -1,6 +1,7 @@
 ---
 title: How to Contribute
 layout: docs
+description: Some of the ways you can contribute to DOGE Track. My main area of need is for information, but other feedback and help is also welcome!
 ---
 # How To Contribute
 

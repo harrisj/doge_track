@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: What's Next?
-description: An overview of the potential next steps for DOGE Track in the weeks and months ahead
+description: An overview of the potential next steps for DOGE Track in the weeks and months ahead.
 ---
 # What's Next?
 
