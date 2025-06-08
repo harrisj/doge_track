@@ -25,12 +25,12 @@ DOGE honed its moves against independent agencies by first attacking {{ agency_l
 
 The pattern of assaulting independent agencies began with an Executive Order ["Commencing the Reduction of the Federal Bureaucracy"](https://www.presidency.ucsb.edu/documents/executive-order-14217-commencing-the-reduction-the-federal-bureaucracy) issued on 2025-02-19 that mandated that "The non-statutory components and functions of the following governmental entities shall be eliminated to the maximum extent consistent with applicable law" for the Presidio Trust, Inter-American Foundation, United States African Development Foundation and US Institute of Peace. This was followed by DOGE taking over the various agencies. 
 
-It started with the USADF and IAF
+It started with the US African Development Foundation and the Inter-American Foundation. Both are small independent agencies established by Congress to invest in projects in the developing world. Thanks to litigation, we have some visibility into how events unfolded.
 
 {% events = site.data.events.select {|e| e.agency_ids.include?('IAF') || e.agency_ids.include?('USADF') } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
-Thanks to testimony entered in the lawsuit of _United States Institute of Peace v. Jackson (D.D.C.)_, we have a remarkably detailed timeline for the DOGE assault on the US Institute of Peace:
+The next target outlined in the executive order was the US Institute of Peace. Thanks to testimony entered in the lawsuit of _United States Institute of Peace v. Jackson (D.D.C.)_, we have a remarkably detailed timeline for the DOGE assault on the US Institute of Peace:
 
 {% events = site.data.events.select {|e| e.agency_ids.include?('USIP') && e.sort_date < '2025-05-01' } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
@@ -72,14 +72,14 @@ DOGE has also attempted to target several financial and trade regulatory agencie
 
 ### National Science Foundation
 
-The National Science Foundation has also found itself under the thumb of DOGE
+The National Science Foundation has also found itself under the thumb of DOGE, with {{ person_link('Luke Farritor') }} leading a delegation of people from HHS to scrutinize all their funding. Their target is to cut all grant funding by 55%, which will have a catastrophic effect on science in America.
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[NSF]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### Service Organizations
 
-Service organizations have also been a focus
+Service organizations have also been a focus of the Trump Administration's ire. Recently, there have been moves to shut down the funding and staffing for the Peace Corps and the AmeriCorps, with vague allegations of fraud used as a cover for sweeping reductions.
 
 - AmeriCorps
 - The Peace Corps

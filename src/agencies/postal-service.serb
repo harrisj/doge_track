@@ -1,9 +1,0 @@
----
-agency_id: USPS
-title: US Postal Service
-template_engine: serbea
----
-{% blurb = capture do %}
-{% end %}
-
-{%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}

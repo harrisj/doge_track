@@ -22,7 +22,7 @@ num_cols +=1 if agency_col %}
     {% parsed_date = Date.edtf(event.date) %}
     {% if month_separator && parsed_date.month > prior_row_date.month %}
     <tr>
-      <td class="bg-base-200 font-bold text-center" colspan="100%">{{ parsed_date.strftime("%B %Y") }}</td>
+      <td class="text-center font-bold italic" colspan="100%">{{ parsed_date.strftime("%B %Y") }}</td>
     </tr>
     {% end %}
     <tr class="font-sans" id="{{ event.id }}">
