@@ -22,7 +22,7 @@ It can be hard to see the patterns in the noise of DOGE's chaos, but there has b
         <time class="text-md lg:text-lg font-mono italic">{{ tl.date }}</time>
         <div class="text-md lg:text-lg font-black">{{ tl.title }}</div>
         <div class="text-sm sm:text-md lg:text-lg">
-        {{ tl.text | linkify_text | md }}
+        {{ tl.text | linkify_text | md | strip_p }}
         </div>
         {% timeline_start = !timeline_start %}
     </div>

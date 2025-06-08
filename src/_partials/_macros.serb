@@ -1,6 +1,11 @@
 
 {% macro "md" do |text|
-    markdownify(text).gsub(/^<p>/, '').gsub(/<p><\/p>$/, '').gsub(/<\/p>$/, '').gsub('<a href=', '<a class="link-hover" href=').html_safe
+    markdownify(text).gsub('<a href=', '<a class="link-hover" href=').html_safe
+  end
+%}
+
+{% macro "strip_p" do |text|
+    text.gsub("<p>", '').gsub("</p>", '').html_safe
   end
 %}
 

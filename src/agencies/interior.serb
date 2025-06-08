@@ -4,6 +4,7 @@ title: Department of the Interior
 template_engine: serbea
 ---
 {% blurb = capture do %}
+The Department of Interior might not seem like an important target for DOGE - the tech titans aren't as interested in extracting oil and gas or lumber - but the head of the DOGE team at the agency comes from an oil industry background. More recently, DOGE has been focused on getting super-user access for a payroll system provided as a shared service for half of the agencies in the federal government.
 {% end %}
 
 {%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}

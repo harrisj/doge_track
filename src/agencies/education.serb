@@ -4,6 +4,7 @@ title: Department of Education
 template_engine: serbea
 ---
 {% blurb = capture do %}
+A DOGE delegation arrived at the Department of Education only a week after the Inauguration, and in early February there were reports of up to 10 DOGE staffers embedded within the agency and feeding data to an AI system for analysis. DOGE's primary mission at the Department of Education is to support the administration's goal of eliminating the agency without needing approval from Congress. DOGE has contributed both its antipersonnel practicea and a tight control over spending, axing many key contracts in February for assessing the performance of American schools. These efforts have met some resistance in the courts, but DOGE is very much embedded in the Trump administration's war on education.
 {% end %}
 
 {%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}

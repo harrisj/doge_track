@@ -4,6 +4,7 @@ title: Department of Commerce
 template_engine: serbea
 ---
 {% blurb = capture do %}
+DOGE made an early foray into the agency with a visit to the headquarters of the National Oceanic and Atmospheric Administration (NOAA), but their presence at Commerce has seemed relatively muted in comparison to other agencies. However, DOGE has had a staunch ally in Commerce Secretary Howard Lutnick and reseachers are getting increasingly alarmed about DOGE interfering with the operations of the Census.
 {% end %}
 
 {%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}
