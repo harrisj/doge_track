@@ -5590,31 +5590,45 @@
   linkified_text: >-
     John York, a senior counselor to Bessent, wrote in a sworn statement that <a class="link-hover" href="/wreckers/other#ryan-wunderly">Ryan Wunderly</a>
     would take over <a class="link-hover" href="/wreckers/marko-elez/">Marko Elez</a>'s work at the BFS
-- id: YrRbcEEt
-  type: access
+- id: 431d9XI3
+  type: sighting
   date: '2025-02-20'
   sort_date: '2025-02-20'
   time:
-  text: DOGE staff arrived at IAF HQ and were granted immediate access to IT systems, as reported by IAF CEO Sara Aviel the following day
+  text: >-
+    IAF President Sara Aviel learns that DOGE will be visiting her agency. That afternoon, she meets Nate Cavanaugh and Ethan Shaotran who both represent
+    they are from the GSA. They showed little interest in efficiency initiatives at the agency and just wanted access to systems.
   fuzz:
   comment:
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
-  source_title: Brehm v. Marocco (D.D.C.)
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  source_title: Aviel v. Gor (D.D.C.)
   source_name: court doc
-  case_no: 1:25-cv-00660
+  case_no: 1:25-cv-00778
   track_id:
   system_id:
-  names: []
+  names:
+  - Nate Cavanaugh
+  - Ethan Shaotran
   agency_ids:
   - IAF
   alias_ids: []
-  names_aliases: []
+  names_aliases:
+  - name: Nate Cavanaugh
+    slug: nate-cavanaugh
+    sort_name: Cavanaugh
+    category: wrecker
+  - name: Ethan Shaotran
+    slug: ethan-shaotran
+    sort_name: Shaotran
+    category: wrecker
   agencies_parents:
   - IAF
   obj_type: Event
   linkified_text: >-
-    <a class="link-hover" href="/agencies/white-house">DOGE</a> staff arrived at <a class="link-hover" href="/agencies/independent">IAF</a> HQ and were
-    granted immediate access to IT systems, as reported by <a class="link-hover" href="/agencies/independent">IAF</a> CEO Sara Aviel the following day
+    <a class="link-hover" href="/agencies/independent">IAF</a> President Sara Aviel learns that <a class="link-hover" href="/agencies/white-house">DOGE</a>
+    will be visiting her agency. That afternoon, she meets <a class="link-hover" href="/wreckers/nate-cavanaugh">Nate Cavanaugh</a> and <a class="link-hover"
+    href="/wreckers/ethan-shaotran/">Ethan Shaotran</a> who both represent they are from the <a class="link-hover" href="/agencies/gsa">GSA</a>. They showed
+    little interest in efficiency initiatives at the agency and just wanted access to systems.
 - id: Fwq6uees
   type: interagency
   date: '2025-02-20'
@@ -5833,7 +5847,7 @@
   date: '2025-02-21'
   sort_date: '2025-02-21'
   time:
-  text: IAF CEO Sara Aviel confirms to a friend at USADF that DOGE plans to dismantle the agency
+  text: IAF CEO Sara Aviel confirms to a friend at USADF that DOGE plans to dismantle the agency.
   fuzz:
   comment:
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
@@ -5852,7 +5866,7 @@
   obj_type: Event
   linkified_text: >-
     <a class="link-hover" href="/agencies/independent">IAF</a> CEO Sara Aviel confirms to a friend at <a class="link-hover" href="/agencies/independent">USADF</a>
-    that <a class="link-hover" href="/agencies/white-house">DOGE</a> plans to dismantle the agency
+    that <a class="link-hover" href="/agencies/white-house">DOGE</a> plans to dismantle the agency.
 - id: PuLGSMRa
   type: interagency
   date: '2025-02-21'
@@ -6054,29 +6068,58 @@
   obj_type: Event
   linkified_text: >-
     <a class="link-hover" href="/agencies/independent">USADF</a> general cousel revokes their participation in the MOU based on it being under false pretenses
-- id: GAxo4wTH
-  type: disruption
-  date: '2025-02-23'
-  sort_date: '2025-02-23'
+- id: CuJmM2lv
+  type: interagency
+  date: '2025-02-21'
+  sort_date: '2025-02-21'
   time:
-  text: Sara Aviel is dismissed as the CEO of the Inter-American Foundation
+  text: >-
+    Ethan Shaotran and Nate Cavanaugh return to the IAF with Jacob Altik, who presented himself as representing the EOP. Altik confirms that DOGE plans
+    to reduce IAF to what he considers the statutory minimum (a board and president, a location in DC, some grants) and DOGE will be conducting a Reduction
+    in Force of all employees and terminating all grants. The demand approval from the board and threaten the board will be fired otherwise.
   fuzz:
   comment:
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
   source_title:
-  source_name:
-  case_no:
+  source_name: court doc
+  case_no: 1:25-cv-00778
   track_id:
   system_id:
-  names: []
+  names:
+  - Jacob Altik
+  - Nate Cavanaugh
+  - Ethan Shaotran
   agency_ids:
   - IAF
+  - GSA
+  - DOGE
   alias_ids: []
-  names_aliases: []
+  names_aliases:
+  - name: Jacob Altik
+    slug: jacob-altik
+    sort_name: Altik
+    category: wrecker
+  - name: Nate Cavanaugh
+    slug: nate-cavanaugh
+    sort_name: Cavanaugh
+    category: wrecker
+  - name: Ethan Shaotran
+    slug: ethan-shaotran
+    sort_name: Shaotran
+    category: wrecker
   agencies_parents:
   - IAF
+  - GSA
+  - DOGE
+  - EOP
   obj_type: Event
-  linkified_text: Sara Aviel is dismissed as the CEO of the <a class="link-hover" href="/agencies/independent">Inter-American Foundation</a>
+  linkified_text: >-
+    <a class="link-hover" href="/wreckers/ethan-shaotran/">Ethan Shaotran</a> and <a class="link-hover" href="/wreckers/nate-cavanaugh">Nate Cavanaugh</a>
+    return to the <a class="link-hover" href="/agencies/independent">IAF</a> with <a class="link-hover" href="/wreckers/cavanaugh-cronies">Jacob Altik</a>,
+    who presented himself as representing the <a class="link-hover" href="/agencies/doge">EOP</a>. Altik confirms that <a class="link-hover" href="/agencies/white-house">DOGE</a>
+    plans to reduce <a class="link-hover" href="/agencies/independent">IAF</a> to what he considers the statutory minimum (a board and president, a location
+    in DC, some grants) and <a class="link-hover" href="/agencies/white-house">DOGE</a> will be conducting a Reduction in Force of all employees and terminating
+    all grants. The demand approval from the board and threaten the board will be fired otherwise.
 - id: 60ZEU148
   type: disruption
   date: '2025-02-23'
@@ -6236,6 +6279,64 @@
     In a ruling, a judge declared "<a class="link-hover" href="/agencies/white-house">DOGE</a> affiliates have been granted access to systems of record
     that contain some of the plaintiffs' most sensitive data - Social Security numbers, dates of birth, home addresses, income and assets, citizenship status,
     and disability status - and their access to this trove of personal information is ongoing"
+- id: 5BH8pXk4
+  type: report
+  date: '2025-02-24'
+  sort_date: '2025-02-24'
+  time:
+  text: >-
+    IAF President confers with the board of the IAF and members of Congress who inform her a reduction in force would be in contravention of appropriations
+    already enacted into law.
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  source_title: Aviel v. Gor (D.D.C.)
+  source_name: court doc
+  case_no: 1:25-cv-00778
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - IAF
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - IAF
+  obj_type: Event
+  linkified_text: >-
+    <a class="link-hover" href="/agencies/independent">IAF</a> President confers with the board of the <a class="link-hover" href="/agencies/independent">IAF</a>
+    and members of Congress who inform her a reduction in force would be in contravention of appropriations already enacted into law.
+- id: 2qZVmknt
+  type: disruption
+  date: '2025-02-24'
+  sort_date: '2025-02-24'
+  time:
+  text: >-
+    The IAF President Sara Aviel reports her findings on a call with Nate Cavanaugh and Jacob Altik, who claim that all but one of the board members have
+    been terminated. They demand that Aviel approves DOGE's plan for the agency, which she declines to do, and that she sign a MOU assigning a DOGE member
+    to the agency and granting them access to systems. After the call, she confirms that no board members had received a termination notice.
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  source_title: Aviel v. Gor (D.D.C.)
+  source_name: court doc
+  case_no: 1:25-cv-00778
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - IAF
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - IAF
+  obj_type: Event
+  linkified_text: >-
+    The <a class="link-hover" href="/agencies/independent">IAF</a> President Sara Aviel reports her findings on a call with <a class="link-hover" href="/wreckers/nate-cavanaugh">Nate
+    Cavanaugh</a> and <a class="link-hover" href="/wreckers/cavanaugh-cronies">Jacob Altik</a>, who claim that all but one of the board members have been
+    terminated. They demand that Aviel approves <a class="link-hover" href="/agencies/white-house">DOGE</a>'s plan for the agency, which she declines to
+    do, and that she sign a MOU assigning a <a class="link-hover" href="/agencies/white-house">DOGE</a> member to the agency and granting them access to
+    systems. After the call, she confirms that no board members had received a termination notice.
 - id: Gjp7Za9k
   type: sighting
   date: 2025-02-(24)~
@@ -6865,6 +6966,59 @@
     There is reportedly a 6-person <a class="link-hover" href="/agencies/white-house">DOGE</a> team working at <a class="link-hover" href="/agencies/housing">HUD</a>,
     with 4 of the staff being existing <a class="link-hover" href="/agencies/housing">HUD</a> employees and <a class="link-hover" href="/wreckers/other#michael-mirski">Michael
     Mirski</a> and <a class="link-hover" href="/wreckers/other#scott-langmack">Scott Langmack</a> from <a class="link-hover" href="/agencies/white-house">DOGE</a>
+- id: 5ATjrwp0
+  type: disruption
+  date: '2025-02-26'
+  sort_date: '2025-02-26'
+  time:
+  text: >-
+    The IAF President learns in the morning that the Senior Procurement Executive at the Treasury had been ordered by DOGE to unilaterally cancel all contracts
+    by the end of business on 2025-02-27
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.5_1.pdf
+  source_title: Aviel v. Gor (D.D.C.)
+  source_name: court doc
+  case_no: 1:25-cv-00778
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - IAF
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - IAF
+  obj_type: Event
+  linkified_text: >-
+    The <a class="link-hover" href="/agencies/independent">IAF</a> President learns in the morning that the Senior Procurement Executive at the <a class="link-hover"
+    href="/agencies/treasury">Treasury</a> had been ordered by <a class="link-hover" href="/agencies/white-house">DOGE</a> to unilaterally cancel all contracts
+    by the end of business on 2025-02-27
+- id: 1x0KLZpR
+  type: disruption
+  date: '2025-02-26'
+  sort_date: '2025-02-26'
+  time:
+  text: Sara Aviel receives an email from Trent Morse informing her that Trump has now terminated her position.
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.6_1.pdf
+  source_title: Aviel v. Gor (D.D.C.)
+  source_name: court doc
+  case_no: 1:25-cv-00778
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - IAF
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - IAF
+  obj_type: Event
+  linkified_text: >-
+    Sara Aviel receives an email from <a class="link-hover" href="/people/enabler-staff#trent-morse">Trent Morse</a> informing her that Trump has now terminated
+    her position.
 - id: TNkATrog
   type: access
   date: '2025-02-27'
@@ -6978,6 +7132,101 @@
   obj_type: Event
   linkified_text: >-
     After a federal judge overrules the mass firing of probationary workers, only 180 workers (out of 750) return to work at the <a class="link-hover" href="/agencies/health">CDC</a>
+- id: 3bCDhPDD
+  type: disruption
+  date: '2025-02-28'
+  sort_date: '2025-02-28'
+  time:
+  text: Trent Morse sends an email to the office director at the IAF that states that Peter Marocco has been appointed the acting Chairman
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.9_1.pdf
+  source_title: Aviel v. Gor (D.D.C.)
+  source_name: court doc
+  case_no: 1:25-cv-00778
+  track_id:
+  system_id:
+  names:
+  - Peter Marocco
+  - Trent Morse
+  agency_ids:
+  - IAF
+  alias_ids: []
+  names_aliases:
+  - name: Peter Marocco
+    slug: peter-marocco
+    sort_name: Marocco
+    category: enabler
+  - name: Trent Morse
+    slug: trent-morse
+    sort_name: Morse
+    category: enabler
+  agencies_parents:
+  - IAF
+  obj_type: Event
+  linkified_text: >-
+    <a class="link-hover" href="/people/enabler-staff#trent-morse">Trent Morse</a> sends an email to the office director at the <a class="link-hover" href="/agencies/independent">IAF</a>
+    that states that <a class="link-hover" href="/people/enabler-staff#peter-marocco">Peter Marocco</a> has been appointed the acting Chairman
+- id: 6VRWYSuW
+  type: disruption
+  date: '2025-02-28'
+  sort_date: '2025-02-28'
+  time:
+  text: >-
+    Peter Marocco declares an emergency board meeting (where the emergency is Trump issued an executive order), claiming that means he does not need to
+    inform the board with a 1-week notice as required. In attendance at the meeting are Ethan Shaotran and Nate Cavanaugh. This is where he declares himself
+    the new President and Acting CIO.
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.10_1.pdf
+  source_title: Aviel v. Gor (D.D.C.)
+  source_name: court doc
+  case_no: 1:25-cv-00778
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - IAF
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - IAF
+  obj_type: Event
+  linkified_text: >-
+    <a class="link-hover" href="/people/enabler-staff#peter-marocco">Peter Marocco</a> declares an emergency board meeting (where the emergency is Trump
+    issued an executive order), claiming that means he does not need to inform the board with a 1-week notice as required. In attendance at the meeting
+    are <a class="link-hover" href="/wreckers/ethan-shaotran/">Ethan Shaotran</a> and <a class="link-hover" href="/wreckers/nate-cavanaugh">Nate Cavanaugh</a>.
+    This is where he declares himself the new President and Acting CIO.
+- id: 5S3jGEF2
+  type: disruption
+  date: '2025-02-28'
+  sort_date: '2025-02-28'
+  time:
+  text: >-
+    Peter Marocco declares an emergency board meeting (where the emergency is Trump issued an executive order), claiming that means he does not need to
+    inform the board with a 1-week notice as required. In attendance at the meeting are Ethan Shaotran and Nate Cavanaugh. This is where he declares himself
+    the new President and Acting CIO.
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.10_1.pdf
+  source_title: Aviel v. Gor (D.D.C.)
+  source_name: court doc
+  case_no: 1:25-cv-00778
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - IAF
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - IAF
+  obj_type: Event
+  linkified_text: >-
+    <a class="link-hover" href="/people/enabler-staff#peter-marocco">Peter Marocco</a> declares an emergency board meeting (where the emergency is Trump
+    issued an executive order), claiming that means he does not need to inform the board with a 1-week notice as required. In attendance at the meeting
+    are <a class="link-hover" href="/wreckers/ethan-shaotran/">Ethan Shaotran</a> and <a class="link-hover" href="/wreckers/nate-cavanaugh">Nate Cavanaugh</a>.
+    This is where he declares himself the new President and Acting CIO.
 - id: Np7Nfyaw
   type: official
   date: '2025-02-28'
@@ -7750,7 +7999,7 @@
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
   source_title:
   source_name: court doc
-  case_no:
+  case_no: 1:25-cv-00778
   track_id:
   system_id:
   names:
@@ -7774,7 +8023,7 @@
   date: '2025-03-04'
   sort_date: '2025-03-04'
   time:
-  text: DOGE brags on its X account that the IAF has been reduced to a single employee
+  text: DOGE brags on its X account that the IAF has been reduced to a single employee.
   fuzz:
   comment:
   source: https://xcancel.com/DOGE/status/1897023739960680843
@@ -7793,7 +8042,61 @@
   obj_type: Event
   linkified_text: >-
     <a class="link-hover" href="/agencies/white-house">DOGE</a> brags on its X account that the <a class="link-hover" href="/agencies/independent">IAF</a>
-    has been reduced to a single employee
+    has been reduced to a single employee.
+- id: 3od3PFqF
+  type: disruption
+  date: '2025-03-04'
+  sort_date: '2025-03-04'
+  time:
+  text: DOGE takes the IAF's website offline
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  source_title: Aviel v. Gor (D.D.C.)
+  source_name: court doc
+  case_no: 1:25-cv-00778
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - IAF
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - IAF
+  obj_type: Event
+  linkified_text: <a class="link-hover" href="/agencies/white-house">DOGE</a> takes the <a class="link-hover" href="/agencies/independent">IAF</a>'s website
+    offline
+- id: 7jnfoDik
+  type: disruption
+  date: '2025-03-04'
+  sort_date: '2025-03-04'
+  time:
+  text: Peter Marocco sends emails terminating all of IAF's existing grants except one (which was mostly over)
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  source_title: Aviel v. Gor (D.D.C.)
+  source_name: court doc
+  case_no: 1:25-cv-00778
+  track_id:
+  system_id:
+  names:
+  - Peter Marocco
+  agency_ids:
+  - IAF
+  alias_ids: []
+  names_aliases:
+  - name: Peter Marocco
+    slug: peter-marocco
+    sort_name: Marocco
+    category: enabler
+  agencies_parents:
+  - IAF
+  obj_type: Event
+  linkified_text: >-
+    <a class="link-hover" href="/people/enabler-staff#peter-marocco">Peter Marocco</a> sends emails terminating all of <a class="link-hover" href="/agencies/independent">IAF</a>'s
+    existing grants except one (which was mostly over)
 - id: FcsxtUH6
   type: disruption
   date: '2025-03-04'
@@ -8205,6 +8508,31 @@
     Business Insider reports <a class="link-hover" href="/wreckers/marko-elez/">Marko Elez</a>, <a class="link-hover" href="/wreckers/aram-mohghaddassi/">Aram
     Moghaddassi</a>, and Miles B. Collins are new <a class="link-hover" href="/agencies/white-house">DOGE</a> arrivals at <a class="link-hover" href="/agencies/labor">Department
     of Labor</a>
+- id: 3FMvKeDT
+  type: disruption
+  date: 2025-03-(05)~
+  sort_date: '2025-03-05'
+  time:
+  text: Peter Marocco names the remaining employee, the Chief Information Security Officer, as the new President of the IAF
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  source_title: Aviel v. Gor (D.D.C.)
+  source_name: court doc
+  case_no: 1:25-cv-00778
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - IAF
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - IAF
+  obj_type: Event
+  linkified_text: >-
+    <a class="link-hover" href="/people/enabler-staff#peter-marocco">Peter Marocco</a> names the remaining employee, the Chief Information Security Officer,
+    as the new President of the <a class="link-hover" href="/agencies/independent">IAF</a>
 - id: BbaC77YN
   type: disruption
   date: '2025-03-05'
@@ -13450,6 +13778,69 @@
   linkified_text: >-
     Axios reports that <a class="link-hover" href="/wreckers/gavin-kliger">Gavin Kliger</a> and <a class="link-hover" href="/wreckers/cavanaugh-cronies">Emily
     Bryant</a> have started work at the <a class="link-hover" href="/agencies/independent">FTC</a>, looking at grants and contracts
+- id: 5X4SGtZV
+  type: legal
+  date: '2025-04-04'
+  sort_date: '2025-04-04'
+  time:
+  text: A judge has ordered that Sara Aviel must be reinstated as the president of the IAF while her lawsuit proceeds against the administration.
+  fuzz:
+  comment:
+  source: https://thehill.com/regulation/court-battles/5233012-inter-american-foundation-trump-blocked/
+  source_title:
+  source_name: The Hill
+  case_no: 1:25-cv-00778
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - IAF
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - IAF
+  obj_type: Event
+  linkified_text: >-
+    A judge has ordered that Sara Aviel must be reinstated as the president of the <a class="link-hover" href="/agencies/independent">IAF</a> while her
+    lawsuit proceeds against the administration.
+- id: 6dgqQSWL
+  type: legal
+  date: '2025-04-04'
+  sort_date: '2025-04-04'
+  time:
+  text: >-
+    Sara Aviel discovers that a `team@iaf.gov` created for the use of Ethan Shaotran and Nate Cavanaugh had deactivated the admin access for the remaining
+    IAF employee that day before Aviel's return
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  source_title: Aviel v. Gor (D.D.C.)
+  source_name: court doc
+  case_no: 1:25-cv-00778
+  track_id:
+  system_id:
+  names:
+  - Nate Cavanaugh
+  - Ethan Shaotran
+  agency_ids:
+  - IAF
+  alias_ids: []
+  names_aliases:
+  - name: Nate Cavanaugh
+    slug: nate-cavanaugh
+    sort_name: Cavanaugh
+    category: wrecker
+  - name: Ethan Shaotran
+    slug: ethan-shaotran
+    sort_name: Shaotran
+    category: wrecker
+  agencies_parents:
+  - IAF
+  obj_type: Event
+  linkified_text: >-
+    Sara Aviel discovers that a `team@iaf.gov` created for the use of <a class="link-hover" href="/wreckers/ethan-shaotran/">Ethan Shaotran</a> and <a class="link-hover"
+    href="/wreckers/nate-cavanaugh">Nate Cavanaugh</a> had deactivated the admin access for the remaining <a class="link-hover" href="/agencies/independent">IAF</a>
+    employee that day before Aviel's return
 - id: RmvrV2dc
   type: sighting
   date: '2025-04-04'

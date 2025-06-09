@@ -1718,6 +1718,74 @@
   agency_and_parent:
   - USADF
   documents: []
+- id: detail-gsa-iaf-cavanaugh
+  type: detailed
+  agency_id: IAF
+  name: Nate Cavanaugh
+  doge_alias_id:
+  from_agency_id: GSA
+  from_truth: verified
+  start_date: '2025-02-28'
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date: '2025-04-04'
+  end_date_truth: verified
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-28'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  source_name: court doc
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: agency contact was earlier, but assuming MOU signed when Marocco seized power
+  replaced_by:
+  same_as:
+  agency:
+    id: IAF
+    name: Inter-American Foundation
+    slug: iaf
+    page_slug: independent
+    short_name: IAF
+    doge_base: false
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/independent"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - IAF
+  documents: []
 - id: detail-gsa-usip-cavanaugh
   type: detailed
   agency_id: USIP
@@ -16175,6 +16243,74 @@
     comment:
     file: mou-20250220-gsa-usadf-ethan-shaotran.pdf
     url: "/documents/mou-20250220-gsa-usadf-ethan-shaotran.pdf"
+- id: detail-gsa-iaf-shaotran
+  type: detailed
+  agency_id: IAF
+  name: Ethan Shaotran
+  doge_alias_id:
+  from_agency_id: GSA
+  from_truth: verified
+  start_date: '2025-02-28'
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date: '2025-04-04'
+  end_date_truth: verified
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-28'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  source_name: court doc
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: agency contact was earlier, but assuming MOU signed when Marocco seized power
+  replaced_by:
+  same_as:
+  agency:
+    id: IAF
+    name: Inter-American Foundation
+    slug: iaf
+    page_slug: independent
+    short_name: IAF
+    doge_base: false
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/independent"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - IAF
+  documents: []
 - id: detail-gsa-usps-ethan-shaotran
   type: detailed
   agency_id: USPS

@@ -596,6 +596,18 @@
     table_note: verified via court filing
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
     source_name: court doc
+  - id: detail-gsa-iaf-cavanaugh
+    type: detailed
+    from: GSA
+    agency: IAF
+    from_truth: verified
+    start_date: 2025-02-28
+    start_date_truth: inferred
+    end_date: 2025-04-04
+    end_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+    source_name: court doc
+    table_note: agency contact was earlier, but assuming MOU signed when Marocco seized power
   - id: detail-gsa-usip-cavanaugh
     type: detailed
     agency: USIP
@@ -4037,6 +4049,18 @@
     signed_date: 2025-02-21
     documents:
     - detail-20250220-gsa-usadf-ethan-shaotran
+  - id: detail-gsa-iaf-shaotran
+    type: detailed
+    from: GSA
+    agency: IAF
+    from_truth: verified
+    start_date: 2025-02-28
+    start_date_truth: inferred
+    end_date: 2025-04-04
+    end_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+    source_name: court doc
+    table_note: agency contact was earlier, but assuming MOU signed when Marocco seized power
   - id: detail-gsa-usps-ethan-shaotran
     type: detailed
     from: GSA

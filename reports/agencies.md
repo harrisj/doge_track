@@ -514,7 +514,9 @@
 # Inter-American Foundation
 - slug: iaf
 - people:
+  - **Nate Cavanaugh** (2025-02-28 - 2025-04-04) (detailed from GSA)
   - **Peter Marocco** (2025-02-28) President/CEO
+  - **Ethan Shaotran** (2025-02-28 - 2025-04-04) (detailed from GSA)
 
 # Internal Revenue Service
 - slug: irs
