@@ -20,19 +20,22 @@ At major agencies, the DOGE staff are given titles like "Senior Advisor" and sit
     <th>Agency</th>
     <th>DOGE Leader</th>
     <th>Advisors</th>
+    <th>Titles</th>
   </tr>
 </thead>
 <tbody>
 {% agencies.each do |agency| %}
-   {% if agency.positions && agency.positions.any? {|pos| %w[director cio].include?(pos.title_type)} %}
+   {% if agency.positions && agency.positions.any? {|pos| %w[director cio dept_head chief_counsel advisor].include?(pos.title_type)} %}
     {% doge_heads = agency.positions.select {|pos| %w[director cio dept_head chief_counsel].include?(pos.title_type) }.map(&:name).uniq.compact %}
     {% front_office_names = ["Office of the Director", "Office of the Chairman", "Office of the Chief Information Officer", "Office of the CIO", "Office of the Chief of Staff", "Office of the Secretary", "Office of the Administrator", "Office of the Deputy Administrator", "Office of the Commissioner"] %}
     {% other_doge = agency.positions.select {|pos| (%w[advisor].include?(pos.title_type) || front_office_names.include?(pos.office)) && !doge_heads.include?(pos.name) }.map(&:name).uniq.compact %}
+    {% titles =  agency.positions.select {|pos| pos.title_type == 'advisor'}.map(&:title).compact.uniq.sort %}
     {% next unless other_doge.any? %}
     <tr>
       <td class="align-top">{{ agency_link(agency) }}</td>
       <td class="align-top">{% if doge_heads %}{{ doge_heads | people_links }}{% end %}</td>
       <td class="align-top">{{ other_doge | people_links }}</td>
+      <td class="align-top">{{ titles | join: ', '}}
     </tr>
    {% end %}
 {% end %}
