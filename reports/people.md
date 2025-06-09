@@ -128,8 +128,8 @@
 # Carl Coe
 - category: enabler
 - positions:
-    -  **DOGE**  
-    -  **EPA**  
+    -  **DOGE** (2025-02-XX to ??) 
+    -  **EPA** (2025-02-XX to ??) 
     -  **EPA** (2025-05-02 to ??) **Chief of Staff**
 
 # Michael Cole

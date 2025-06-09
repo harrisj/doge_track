@@ -163,11 +163,10 @@
   - **Amy Gleason** (2024-12-30 - 2024-02-18)
   - **Jordan Wick** (2025-01-(20)~)
   - **James Burnham** (2025-01-(23)~ - 2025-05-29) General Counsel
+  - **Cole Killian** (2025-01-20)
   - **Steve Davis** (2025-01-20 - 2025-05-29)
   - **Katie Miller** (2025-01-20 - 2025-05-29)
   - **Elon Musk** (2025-01-20 - 2025-05-28)
-  - **Carl Coe**
-  - **Cole Killian** (2025-01-20)
   - **Adam Ramada** (2025-01-23)
   - **Stephanie Holmes** (2025-02-(01)~)
   - **Alexandra Beynon** (2025-02-(04)~)
@@ -176,6 +175,7 @@
   - **Amy Gleason** (2025-02-18) Acting Administrator, US DOGE Service and the DOGE Temporary Organization
   - **Joshua Hanley** (2025-02-XX)
   - **Ashley Boizelle** (2025-02-XX)
+  - **Carl Coe** (2025-02-XX)
   - **Joshua Fox** (2025-02-XX)
   - **Justin Aimonetti** (2025-02-XX)
   - **Brad Smith** (2025-02-XX)
@@ -305,10 +305,10 @@
 # Environmental Protection Agency
 - slug: epa
 - people:
-  - **Carl Coe** (detailed from DOGE)
   - **Cole Killian** (2025-02-04) Federal Detailee (detailed from DOGE)
   - **Erica Jehling** (2025-02-12)
   - **Kathryn Armstrong Loving** (2025-02-12) Federal Detailee
+  - **Carl Coe** (2025-02-XX) (detailed from DOGE)
   - **Carl Coe** (2025-05-02) Chief of Staff
 - systems:
     - EAS: EPA Acquisition System

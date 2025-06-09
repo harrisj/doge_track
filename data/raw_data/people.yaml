@@ -715,7 +715,9 @@
     type: detailed
     from: DOGE
     from_truth: guessed
-    sort_date: 2025-03-01
+    start_date: 2025-02-XX
+    start_date_truth: guessed
+    sort_date: 2025-02-20
     table_note: Carl Coe, who currently leads the Department of Government Efficiency (DOGE) at DOE
     source: https://www.energy.gov/articles/doe-announces-new-leadership-tackle-challenges-growing-energy-demand
     source_name: press release
@@ -723,9 +725,11 @@
   - id: coe-doge
     type: appointed
     sort_date: 2025-02-01
+    start_date: 2025-02-XX
     agency: DOGE
-    table_note: Just a wild guess, this is a placeholder for working backwards from what I know about
-      his tenure
+    table_note: His linkedin reports Feb 2026 as start
+    source: https://www.linkedin.com/in/carl-coe-912b82/
+    source_name: LinkedIn
   - id: epa-coe-chief-staff
     type: converted
     title: Chief of Staff
