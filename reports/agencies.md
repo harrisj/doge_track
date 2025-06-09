@@ -331,10 +331,10 @@
 # Federal Aviation Administration
 - slug: faa
 - people:
-  - **Brady Glantz** (2025-02-16 - NTE 2025-02-20)
-  - **Thomas Kiernan** (2025-02-16 - NTE 2025-02-20)
-  - **Ted Malaska** (2025-02-16 - NTE 2025-02-20)
-  - **Sam Smeal** (2025-02-16 - NTE 2025-02-20)
+  - **Brady Glantz** (2025-02-16 - 2025-06-02) Senior Advisor
+  - **Thomas Kiernan** (2025-02-16 - 2025-06-02) Senior Advisor
+  - **Ted Malaska** (2025-02-16 - 2025-06-02) Senior Advisor
+  - **Sam Smeal** (2025-02-16 - 2025-06-02) Senior Advisor
 
 # Federal Bureau of Investigation
 - slug: fbi

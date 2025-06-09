@@ -341,7 +341,7 @@
 # Brady Glantz
 - category: wrecker
 - positions:
-    -  **FAA** (2025-02-16 to NTE 2025-02-20) 
+    -  **FAA** (2025-02-16 to 2025-06-02) Senior Advisor
 
 # Amy Gleason
 - category: leadership
@@ -452,7 +452,7 @@
 # Thomas Kiernan
 - category: wrecker
 - positions:
-    -  **FAA** (2025-02-16 to NTE 2025-02-20) 
+    -  **FAA** (2025-02-16 to 2025-06-02) Senior Advisor
 
 # Cole Killian
 - category: wrecker
@@ -577,7 +577,7 @@
 # Ted Malaska
 - category: wrecker
 - positions:
-    -  **FAA** (2025-02-16 to NTE 2025-02-20) 
+    -  **FAA** (2025-02-16 to 2025-06-02) Senior Advisor
 
 # Dave Malcher
 - category: unknown
@@ -859,7 +859,7 @@
 # Sam Smeal
 - category: wrecker
 - positions:
-    -  **FAA** (2025-02-16 to NTE 2025-02-20) 
+    -  **FAA** (2025-02-16 to 2025-06-02) Senior Advisor
 
 # Brad Smith
 - category: enabler
