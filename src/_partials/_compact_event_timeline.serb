@@ -42,7 +42,7 @@ num_cols +=1 if agency_col %}
         <div class="font-sans">
         {% if icon_col %}<div class="inline"><i class="fa-sharp fa-solid {{ event_icon(event) }}"></i> <span class="hidden md:inline font-bold">{{ event_title(event) }}: </span></div>{% end %}
         {{ event.linkified_text | raw }}
-        {% if event.fuzz %}&nbsp;[{{ event.fuzz | md }}]{% end %}
+        {% if event.fuzz %}&nbsp;[{{ event.fuzz | md | strip_p }}]{% end %}
         {% questions_str = question_links(event)%}
         {% if questions_str %}{{ questions_str | raw }}{% end %}
         {% if event.type == 'interagency' %}

@@ -39,7 +39,7 @@
 
   <tr>
   <th class="align-top">Description</th>
-  <td class="align-top">{{ govt_system.description | md }}</td>
+  <td class="align-top">{{ govt_system.description | md | strip_p }}</td>
   </tr>
 
   {% if govt_system.pia || govt_system.sorn %}

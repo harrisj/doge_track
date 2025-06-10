@@ -6,7 +6,7 @@
   </div>
   <div class="sm:ml-7 md:ml-8 lg:ml-9.5 lining-nums">
     <div class="prose prose-sm md:prose-base prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert mb-2">
-      <p class="mb-0 mt-0.5 leading-5 mb-2">{{ content | md }}</p>
+      <p class="mb-0 mt-0.5 leading-5 mb-2">{{ content | md | strip_p }}</p>
     </div>
 
     {% names = people.map(&:name).compact %}

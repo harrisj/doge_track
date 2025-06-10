@@ -6,6 +6,6 @@
 {% if role.never_accessed %} (never accessed){% end %}
 {% if role.ao_type %} granted by {{ ao_type_display(role) }}{% end %}
 {% if role.ao_doge && role.ao_name %} {{ person_link(role.ao_name) }}{% end %}
-{% if role.table_note %} [{{ role.table_note | md }}] {% end %}
+{% if role.table_note %} «<em>{{ role.table_note | md | strip_p }}</em>» {% end %}
 <br/>
-<span class="italic">{{ role.system.description | md }}</span> <span class="hidden sm:inline">({{ agency_link(role.agency_id) }})</span> {% if role.source && role.source_name %}<span class="text-nowrap float-right"><a href="{{ role.source }}" class="link-hover"><i class="fa-sharp fa-solid fa-link-simple"></i> <span class="italic text-2xs sm:text-xs">{{ role.source_name }}</span></a></span>{% end %}
+<span class="italic">{{ role.system.description | md | strip_p }}</span> <span class="hidden sm:inline">({{ agency_link(role.agency_id) }})</span> {% if role.source && role.source_name %}<span class="text-nowrap float-right"><a href="{{ role.source }}" class="link-hover"><i class="fa-sharp fa-solid fa-link-simple"></i> <span class="italic text-2xs sm:text-xs">{{ role.source_name }}</span></a></span>{% end %}
