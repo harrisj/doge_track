@@ -74,9 +74,13 @@
   evidence: |-
     - Onboarded on 2025-01-20 as a volunteer SGE
     - PD Number 6A39741 in redacted documents matches one for Riccard Biasini in a FOIA release from OPM
+    - "Listed as the contact point for GWES on the PIA"
+    - "On March 18, clearance was requested to convert him to permanent appointment"
   position_ids:
   - opm-employee-2
-  event_ids: []
+  event_ids:
+  - 6SWKtlSa
+  - 2v67bjVr
 - id: OPM-03
   agency_id: OPM
   name: Akash Bobba
@@ -85,10 +89,12 @@
     - Detail to SSA is signed on 2025-02-12
     - PD number 6A39740 = one listed for Akash Bobba
     - See evidence that ED-1 is Akash Bobba
+    - [He has also been appointed to SSA, which pays his salary, and DOE](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf)
   position_ids:
   - opm-3
   - detail-opm-ssa-opm-3
-  event_ids: []
+  event_ids:
+  - DAe2NKHp
 - id: OPM-04
   agency_id: OPM
   name:
@@ -99,9 +105,12 @@
     - Only person onboarded as an expert on 2025-01-24 was Nikhil Rajpal, but he's a match for OPM-6
     - Possibly someone doing the affadavit late (3 other experts on 2025-01-20
     - I _think_ it might be Edward Coristine because Wired spotted him at OPM on 2025-01-28
+    - Judge Cote in [injunction in AFGE v. OPM](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf) "OPM-4 is 19 years old. Press reports indicate that he is known online as 'Big Balls.'"
   position_ids:
   - opm-04
-  event_ids: []
+  event_ids:
+  - 6SWKtlSa
+  - 2v67bjVr
 - id: OPM-05
   agency_id: OPM
   name: Gavin Kliger
@@ -117,7 +126,8 @@
   - opm-05-usagm
   - opm-temp-employee-5
   - opm-perm-employee-5
-  event_ids: []
+  event_ids:
+  - DAe2NKHp
 - id: OPM-06
   agency_id: OPM
   name: Nikhil Rajpal
@@ -129,7 +139,9 @@
     - PD 6A39738 listed on hiring forms = Nikhil Rajpal on FOIAed list of OPM positions
   position_ids:
   - opm-nikhil-rajpal
-  event_ids: []
+  event_ids:
+  - 6SWKtlSa
+  - 2v67bjVr
 - id: OPM-07
   agency_id: OPM
   name: Brian Bjelde
@@ -144,13 +156,15 @@
   position_ids:
   - opm-brian-bjelde
   - opm-perm-employee-07
-  event_ids: []
+  event_ids:
+  - DAe2NKHp
 - id: OPM-08
   agency_id: OPM
   name: James Sullivan
   evidence: |-
     - PD code matches his name in FOIAed list of OPM new hires
     - Title and start date also match
+    - "James Sullivan (formerly known as OPM-8)" in a ruling by Judge Cote
   position_ids:
   - opm-employee-08
   event_ids: []
@@ -160,6 +174,7 @@
   evidence: |-
     - Granted access to USA Performance on 1/31
     - Based on known starts, this likely could be Edward Coristine, Justin Monroe, Christopher Stanley, Chris Young or Austin Raynor
+    - who was given administrative access to USA Performance, FEHB, PSHB, and OPM Data
   position_ids:
   - opm-employee-09
   event_ids: []
@@ -201,12 +216,14 @@
   event_ids: []
 - id: OPM-14
   agency_id: OPM
-  name:
+  name: Chris Young
   evidence: |-
     - Granted access to USA Performance on 2/7
     - Based on start, likely could be Bryanne-Michelle Mlodzianowski, Christina Hanna or Stephen Duarte
+    - According to [Judge Cote ruling](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf), OPM-14 is detailed from OPM to USDS and CFPB
+    - Chris Young is the only OPM alias linked to CFPB who hadn't been identified elsewhere
   position_ids:
-  - opm-employee-14
+  - opm-chris-young
   event_ids: []
 - id: OPM-15
   agency_id: OPM
@@ -219,12 +236,14 @@
   event_ids: []
 - id: OPM-16
   agency_id: OPM
-  name:
+  name: Jacob Altik
   evidence: |-
     - Granted access to USA Performance on 1/31
     - Based on known starts, this likely could be Edward Coristine, Justin Monroe, Christopher Stanley, Chris Young or Austin Raynor
+    - According to [Judge Cote ruling](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf). OPM-16 is a lawyer associated with DOGE. Similar to OPM14, he is identified in the Feleke declaration as having been involved in the termination of the employment of individuals at USADF.
+    - Chris Young is only other OPM person linked to USADF, but he is already identified as OPM-14
   position_ids:
-  - opm-employee-16
+  - opm-jacob-altik
   event_ids: []
 - id: OPM-17
   agency_id: OPM

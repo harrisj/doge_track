@@ -468,11 +468,13 @@
   acronym: EHRI
   name: Enterprise Human Resources Integration
   type: internal
-  description: Database of all federal employees
+  description: >-
+    The Enterprise Human Resources Integration Data Warehouse (“EHRI”) collects human resources, payroll, and training data from several dozen sources outside
+    of OPM, including other federal agencies.
   comment:
   category: personnel
   population:
-  risk: PII including SSN, date of birth, salary, home address, and job description
+  risk: social security numbers, job descriptions of Government workers, employment histories, contact information, and payroll information.
   link:
   pia: https://www.opm.gov/information-management/privacy-policy/privacy-policy/ehridw.pdf
   sorn: https://www.federalregister.gov/documents/2023/08/17/2023-17651/privacy-act-of-1974-system-of-records
@@ -599,6 +601,23 @@
   agency_id: Treasury
   all_agency_ids:
   - Treasury
+  all_names: []
+  access_ids: []
+- id: fehb
+  acronym: FEHB
+  name: Federal Employee Health benefits
+  type: internal
+  description: A system administered by OPM that is used to manage the healthcare of federal Government employees.
+  comment:
+  category:
+  population:
+  risk: PII and PHI for federal employees and others covered by their health plans, including children
+  link:
+  pia:
+  sorn:
+  agency_id: OPM
+  all_agency_ids:
+  - OPM
   all_names: []
   access_ids: []
 - id: fpps
@@ -1689,6 +1708,25 @@
   - Gavin Kliger
   access_ids:
   - physical-access-kliger
+- id: pshb
+  acronym: PSHB
+  name: Postal Service Health benefits
+  type: internal
+  description: >-
+    Postal Service Health Benefits (“PSHB”) is a program within FEHB that provides health benefits plans to eligible Postal Service employees, Postal Service
+    annuitants, and their eligible family members.
+  comment:
+  category: personnel
+  population:
+  risk: PII/PHI for postal service workers and their dependents
+  link:
+  pia:
+  sorn:
+  agency_id: OPM
+  all_agency_ids:
+  - OPM
+  all_names: []
+  access_ids: []
 - id: power-automate
   acronym: Automate
   name: Power Automate
@@ -1888,7 +1926,8 @@
   comment:
   category: personnel
   population:
-  risk: PII and performance reviews of federal employees
+  risk: >-
+    social security numbers, various other PII, and information related to employee performance reviews, such as individual development plans and work plans.
   link:
   pia: https://www.opm.gov/information-management/privacy-policy/privacy-policy/usap-pia.pdf
   sorn: https://www.opm.gov/information-management/privacy-policy/sorn/opm-sorn-govt-2-employee-performance-file-system-records.pdf
@@ -1900,6 +1939,8 @@
   - Akash Bobba
   - Nikhil Rajpal
   - Brian Bjelde
+  - Chris Young
+  - Jacob Altik
   - Brian Bjelde
   access_ids:
   - usa-performance-opm-2
@@ -1922,11 +1963,12 @@
   acronym: USA Staff
   name: USA Staffing
   type: ssp
-  description: System for tracking the onboarding of federal employees
+  description: A platform for federal agencies to recruit and onboard employees.
   comment:
   category: personnel
   population:
-  risk: agency-specific CUI related to onboarding
+  risk: >-
+    social security numbers, demographic information, and any information agencies using the platform choose to collect, which may include banking information.
   link:
   pia:
   sorn: https://www.federalregister.gov/documents/2021/12/01/2021-26086/privacy-act-of-1974-system-of-records
@@ -2096,7 +2138,7 @@
   comment:
   category: personnel
   population:
-  risk:
+  risk: eOPF contains social security numbers, bank account information, dates of birth, addresses, and PII regarding family members
   link:
   pia:
   sorn:

@@ -741,6 +741,120 @@
   linkified_text: >-
     The <a class="link-hover" href="/agencies/white-house">DOGE</a> team moves into a secure office within <a class="link-hover" href="/agencies/opm">OPM</a>,
     installing sofa beds and armed security
+- id: DAe2NKHp
+  type: access
+  date: '2025-01-20'
+  sort_date: '2025-01-20'
+  time:
+  text: >-
+    IT staff at OPM are pulled into a "911-esque call" requesting that "a political team" of 6 individuals must be given access to OPM systems. There are
+    granted administrative access to USAJOBS, USA Staffing, and USA Performance.
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf
+  source_title: American Federation of Government Employees, et al. v. Office of Personnel Management et al (S.D.N.Y)
+  source_name: court doc
+  case_no: 1:25-cv-01237
+  track_id:
+  system_id:
+  names:
+  - Brian Bjelde
+  - Akash Bobba
+  - Charles Ezell
+  - Greg Hogan
+  - Gavin Kliger
+  - Amanda Scales
+  agency_ids:
+  - OPM
+  alias_ids:
+  - id: OPM-03
+    agency_id: OPM
+    name: Akash Bobba
+    evidence: |-
+      - This is the same person as ED-1 because there is a detail document that appears with two diff redacted names
+      - Detail to SSA is signed on 2025-02-12
+      - PD number 6A39740 = one listed for Akash Bobba
+      - See evidence that ED-1 is Akash Bobba
+      - [He has also been appointed to SSA, which pays his salary, and DOE](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf)
+  - id: OPM-05
+    agency_id: OPM
+    name: Gavin Kliger
+    evidence: |-
+      - Onboarded on 2025-01-20 as a provisional appt not to exceed 2025-05-20
+      - Senior Advisor to the Director for IT
+      - PD 6A38025 = matches for Gavin Kliger in a FOIA release
+      - GS-15/10 with pay of $195,200
+      - Converted to an excepted appointment on 2025-02-18
+      - Has been detailed to the GSA, the IRS, USAID, USDA, and the U.S. Agency for Global Media
+  - id: OPM-07
+    agency_id: OPM
+    name: Brian Bjelde
+    evidence: |-
+      - On January 16, 2025, FSEM received 's new hire package
+      - Clearance above were completed on January 17, 2025, and FSEM cleared to enter on duty at OPM
+      - January 29, 2025, OPM's HR team requested clearance for to enter on duty on a permanent appointment
+      - After a favorable review, was reciprocally approved for a permanent position on January 31 , 2025
+      - Referred to as "his" oath of office
+      - Court docs include a PD code 6A39743
+      - This matches Brian Bjelde in a FOIAed list of OPM new hires
+  names_aliases:
+  - name: Brian Bjelde
+    slug: brian-bjelde
+    sort_name: Bjelde
+    category: support
+    alias: OPM-07
+  - name: Akash Bobba
+    slug: akash-bobba
+    sort_name: Bobba
+    category: wrecker
+    alias: OPM-03
+  - name: Charles Ezell
+    slug: charles-ezell
+    sort_name: Ezell
+    category: enabler
+  - name: Greg Hogan
+    slug: greg-hogan
+    sort_name: Hogan
+    category: enabler
+  - name: Gavin Kliger
+    slug: gavin-kliger
+    sort_name: Kliger
+    category: wrecker
+    alias: OPM-05
+  - name: Amanda Scales
+    slug: amanda-scales
+    sort_name: Scales
+    category: leadership
+  agencies_parents:
+  - OPM
+  obj_type: Event
+  linkified_text: >-
+    IT staff at <a class="link-hover" href="/agencies/opm">OPM</a> are pulled into a "911-esque call" requesting that "a political team" of 6 individuals
+    must be given access to <a class="link-hover" href="/agencies/opm">OPM</a> systems. There are granted administrative access to USAJOBS, USA Staffing,
+    and USA Performance.
+- id: 592OFjrH
+  type: disruption
+  date: '2025-01-20'
+  sort_date: '2025-01-20'
+  time:
+  text: Career IT staff in the Office of the CIO at OPM have their database access revoked.
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf
+  source_title: American Federation of Government Employees, et al. v. Office of Personnel Management et al (S.D.N.Y)
+  source_name: court doc
+  case_no: 1:25-cv-01237
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - OPM
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - OPM
+  obj_type: Event
+  linkified_text: Career IT staff in the Office of the CIO at <a class="link-hover" href="/agencies/opm">OPM</a> have their database access revoked.
 - id: 2y8WthBd
   type: disruption
   date: '2025-01-21'
@@ -1047,6 +1161,79 @@
   linkified_text: >-
     President Trump illegally fires <a class="link-hover" href="/agencies/nlrb">NLRB</a> Chair Gwynne Wilcox and <a class="link-hover" href="/agencies/nlrb">NLRB</a>
     General Counsel Jennifer Abruzzo. This leaves the agency without quorum to act.
+- id: 6SWKtlSa
+  type: access
+  date: '2025-01-27'
+  sort_date: '2025-01-27'
+  time:
+  text: Charles Ezell sends an email stating that OPM-2, OPM-4, and OPM-6 "urgently" needed access
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf
+  source_title: American Federation of Government Employees, et al. v. Office of Personnel Management et al (S.D.N.Y)
+  source_name: court doc
+  case_no: 1:25-cv-01237
+  track_id:
+  system_id:
+  names:
+  - Riccardo Biasini
+  - Charles Ezell
+  - Nikhil Rajpal
+  agency_ids:
+  - OPM
+  alias_ids:
+  - id: OPM-02
+    agency_id: OPM
+    name: Riccardo Biasini
+    evidence: |-
+      - Onboarded on 2025-01-20 as a volunteer SGE
+      - PD Number 6A39741 in redacted documents matches one for Riccard Biasini in a FOIA release from OPM
+      - "Listed as the contact point for GWES on the PIA"
+      - "On March 18, clearance was requested to convert him to permanent appointment"
+  - id: OPM-04
+    agency_id: OPM
+    name:
+    evidence: |-
+      - SF-50 is for GSA appointment on 2025-01-20
+      - Appointed as an expert at OPM on 2025-01-24
+      - Because OPM and GSA share an electronic personnel processing system (HR Links), a separate form SF-50 (Notification of Personnel Action) could not be generated for this separate appointment
+      - Only person onboarded as an expert on 2025-01-24 was Nikhil Rajpal, but he's a match for OPM-6
+      - Possibly someone doing the affadavit late (3 other experts on 2025-01-20
+      - I _think_ it might be Edward Coristine because Wired spotted him at OPM on 2025-01-28
+      - Judge Cote in [injunction in AFGE v. OPM](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf) "OPM-4 is 19 years old. Press reports indicate that he is known online as 'Big Balls.'"
+  - id: OPM-06
+    agency_id: OPM
+    name: Nikhil Rajpal
+    evidence: |-
+      - Onboarded on 2025-01-24 as a vounteer SGE with a term not to exceed 2025-07-22
+      - This is likely one of the other young DOGE crew like Jordan Wick or Luke Farritor, etc.
+      - Detailed to the U.S. Department of Commerce, the Consumer Financial Protection Bureau
+      - Has also been detailed to the SSA during the course of his appointment at OPM
+      - PD 6A39738 listed on hiring forms = Nikhil Rajpal on FOIAed list of OPM positions
+  names_aliases:
+  - name: Riccardo Biasini
+    slug: riccardo-biasini
+    sort_name: Biasini
+    category: support
+    alias: OPM-02
+  - name: Charles Ezell
+    slug: charles-ezell
+    sort_name: Ezell
+    category: enabler
+  - name: Nikhil Rajpal
+    slug: nikhil-rajpal
+    sort_name: Rajpal
+    category: wrecker
+    alias: OPM-06
+  - alias: OPM-04
+    sort_name: ZZZ-OPM-04
+    category: alias
+  agencies_parents:
+  - OPM
+  obj_type: Event
+  linkified_text: >-
+    <a class="link-hover" href="/people/enabler-staff#charles-ezell">Charles Ezell</a> sends an email stating that <a class="link-hover" href="/agencies/opm">OPM</a>-2,
+    <a class="link-hover" href="/agencies/opm">OPM</a>-4, and <a class="link-hover" href="/agencies/opm">OPM</a>-6 "urgently" needed access
 - id: UBodNip9
   type: disruption
   date: '2025-01-27'
@@ -1355,6 +1542,77 @@
   linkified_text: >-
     <a class="link-hover" href="/wreckers/other#justin-monroe">Justin Monroe</a> and <a class="link-hover" href="/wreckers/other#christopher-stanley">Christopher
     Stanley</a> start working at <a class="link-hover" href="/agencies/opm">OPM</a> as a volunteer Expert
+- id: 2v67bjVr
+  type: access
+  date: '2025-01-28'
+  sort_date: '2025-01-28'
+  time:
+  text: >-
+    OPM granted OPM-2, OPM-4, and OPM-6 administrative access to USAJOBS, USA Staffing, USA Performance, eOPF, and EHRI. Their access included “[c]ode read
+    and write permissions.”
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf
+  source_title: American Federation of Government Employees, et al. v. Office of Personnel Management et al (S.D.N.Y)
+  source_name: court doc
+  case_no: 1:25-cv-01237
+  track_id:
+  system_id:
+  names:
+  - Riccardo Biasini
+  - Nikhil Rajpal
+  agency_ids:
+  - OPM
+  alias_ids:
+  - id: OPM-02
+    agency_id: OPM
+    name: Riccardo Biasini
+    evidence: |-
+      - Onboarded on 2025-01-20 as a volunteer SGE
+      - PD Number 6A39741 in redacted documents matches one for Riccard Biasini in a FOIA release from OPM
+      - "Listed as the contact point for GWES on the PIA"
+      - "On March 18, clearance was requested to convert him to permanent appointment"
+  - id: OPM-04
+    agency_id: OPM
+    name:
+    evidence: |-
+      - SF-50 is for GSA appointment on 2025-01-20
+      - Appointed as an expert at OPM on 2025-01-24
+      - Because OPM and GSA share an electronic personnel processing system (HR Links), a separate form SF-50 (Notification of Personnel Action) could not be generated for this separate appointment
+      - Only person onboarded as an expert on 2025-01-24 was Nikhil Rajpal, but he's a match for OPM-6
+      - Possibly someone doing the affadavit late (3 other experts on 2025-01-20
+      - I _think_ it might be Edward Coristine because Wired spotted him at OPM on 2025-01-28
+      - Judge Cote in [injunction in AFGE v. OPM](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf) "OPM-4 is 19 years old. Press reports indicate that he is known online as 'Big Balls.'"
+  - id: OPM-06
+    agency_id: OPM
+    name: Nikhil Rajpal
+    evidence: |-
+      - Onboarded on 2025-01-24 as a vounteer SGE with a term not to exceed 2025-07-22
+      - This is likely one of the other young DOGE crew like Jordan Wick or Luke Farritor, etc.
+      - Detailed to the U.S. Department of Commerce, the Consumer Financial Protection Bureau
+      - Has also been detailed to the SSA during the course of his appointment at OPM
+      - PD 6A39738 listed on hiring forms = Nikhil Rajpal on FOIAed list of OPM positions
+  names_aliases:
+  - name: Riccardo Biasini
+    slug: riccardo-biasini
+    sort_name: Biasini
+    category: support
+    alias: OPM-02
+  - name: Nikhil Rajpal
+    slug: nikhil-rajpal
+    sort_name: Rajpal
+    category: wrecker
+    alias: OPM-06
+  - alias: OPM-04
+    sort_name: ZZZ-OPM-04
+    category: alias
+  agencies_parents:
+  - OPM
+  obj_type: Event
+  linkified_text: >-
+    <a class="link-hover" href="/agencies/opm">OPM</a> granted <a class="link-hover" href="/agencies/opm">OPM</a>-2, <a class="link-hover" href="/agencies/opm">OPM</a>-4,
+    and <a class="link-hover" href="/agencies/opm">OPM</a>-6 administrative access to USAJOBS, USA Staffing, USA Performance, eOPF, and EHRI. Their access
+    included “[c]ode read and write permissions.”
 - id: gBSE6bzh
   type: sighting
   date: '2025-01-29'
@@ -2959,6 +3217,36 @@
   linkified_text: >-
     The court dismisses the motion for a temporary restraining order against the <a class="link-hover" href="/agencies/opm">OPM</a> email system since there
     is now a PIA available for it
+- id: 39TYKG04
+  type: access
+  date: '2025-02-06'
+  sort_date: '2025-02-06'
+  time:
+  text: Career IT staff in the Office of the CIO at OPM have their database access restored by order of Greg Hogan
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf
+  source_title: American Federation of Government Employees, et al. v. Office of Personnel Management et al (S.D.N.Y)
+  source_name: court doc
+  case_no: 1:25-cv-01237
+  track_id:
+  system_id:
+  names:
+  - Greg Hogan
+  agency_ids:
+  - OPM
+  alias_ids: []
+  names_aliases:
+  - name: Greg Hogan
+    slug: greg-hogan
+    sort_name: Hogan
+    category: enabler
+  agencies_parents:
+  - OPM
+  obj_type: Event
+  linkified_text: >-
+    Career IT staff in the Office of the CIO at <a class="link-hover" href="/agencies/opm">OPM</a> have their database access restored by order of <a class="link-hover"
+    href="/people/enabler-staff#greg-hogan">Greg Hogan</a>
 - id: iCkoWkYF
   type: disruption
   date: '2025-02-06'
@@ -18680,3 +18968,32 @@
     In a 6-3 ruling on an emergency application, the Supreme Court rejected an injunction that prevented <a class="link-hover" href="/agencies/white-house">DOGE</a>
     from accessing Social Security data. In a setback for privacy advocates, this will allow for <a class="link-hover" href="/agencies/social-security">SSA</a>
     to share data with <a class="link-hover" href="/agencies/white-house">DOGE</a> and other agencies, while the case about the legality of that proceeds.
+- id: 657iS0Kg
+  type: legal
+  date: '2025-06-09'
+  sort_date: '2025-06-09'
+  time:
+  text: >-
+    Judge Cote, presiding over AFGE v. OPM, grants a preliminary injunction against DOGE having access to systems at OPM and orders them to destroy any
+    information they have copied, due to her finding that OPM failed to follow proper procedures for granting access.
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf
+  source_title: American Federation of Government Employees, et al. v. Office of Personnel Management et al (S.D.N.Y)
+  source_name: court doc
+  case_no: 1:25-cv-01237
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - OPM
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - OPM
+  obj_type: Event
+  linkified_text: >-
+    Judge Cote, presiding over AFGE v. <a class="link-hover" href="/agencies/opm">OPM</a>, grants a preliminary injunction against <a class="link-hover"
+    href="/agencies/white-house">DOGE</a> having access to systems at <a class="link-hover" href="/agencies/opm">OPM</a> and orders them to destroy any
+    information they have copied, due to her finding that <a class="link-hover" href="/agencies/opm">OPM</a> failed to follow proper procedures for granting
+    access.

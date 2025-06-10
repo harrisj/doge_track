@@ -664,8 +664,12 @@
   sorn: >-
     https://www.federalregister.gov/documents/2023/08/17/2023-17651/privacy-act-of-1974-system-of-records
   pia: https://www.opm.gov/information-management/privacy-policy/privacy-policy/ehridw.pdf
-  description: Database of all federal employees
-  risk: PII including SSN, date of birth, salary, home address, and job description
+  description: >-
+    The Enterprise Human Resources Integration Data Warehouse (“EHRI”) collects human resources, payroll,
+    and training data from several dozen sources outside of OPM, including other federal agencies.
+  risk: >-
+    social security numbers, job descriptions of Government workers, employment histories, contact information,
+    and payroll information.
   agency: OPM
   access:
   - id: ehri-opm-2
@@ -825,6 +829,15 @@
     and supports Fiscal Service programs.
   link: https://fiscal.treasury.gov/fds/
   agency: Treasury
+
+- name: Federal Employee Health benefits
+  id: fehb
+  acronym: FEHB
+  type: internal
+  description: A system administered by OPM that is used to manage the healthcare of federal Government
+    employees.
+  risk: PII and PHI for federal employees and others covered by their health plans, including children
+  agency: OPM
 
 - name: Federal Personnel Payroll System
   id: fpps
@@ -2364,6 +2377,17 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     source_name: court doc
 
+- name: Postal Service Health benefits
+  type: internal
+  category: personnel
+  id: pshb
+  acronym: PSHB
+  description: >-
+    Postal Service Health Benefits (“PSHB”) is a program within FEHB that provides health benefits plans
+    to eligible Postal Service employees, Postal Service annuitants, and their eligible family members.
+  risk: PII/PHI for postal service workers and their dependents
+  agency: OPM
+
 - name: Power Automate
   id: power-automate
   acronym: Automate
@@ -2697,7 +2721,9 @@
   type: ssp
   category: personnel
   description: System tracking job performance of federal employees
-  risk: PII and performance reviews of federal employees
+  risk: >-
+    social security numbers, various other PII, and information related to employee performance reviews,
+    such as individual development plans and work plans.
   sorn: >-
     https://www.opm.gov/information-management/privacy-policy/sorn/opm-sorn-govt-2-employee-performance-file-system-records.pdf
   pia: https://www.opm.gov/information-management/privacy-policy/privacy-policy/usap-pia.pdf
@@ -2801,7 +2827,7 @@
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
     alias: OPM-14
-    name:
+    name: Chris Young
   - id: usa-performance-opm-15
     type: unknown
     agency: OPM
@@ -2819,7 +2845,7 @@
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
     alias: OPM-16
-    name:
+    name: Jacob Altik
   - id: usa-performance-opm-17
     type: unknown
     agency: OPM
@@ -2853,10 +2879,12 @@
   acronym: USA Staff
   type: ssp
   category: personnel
-  description: System for tracking the onboarding of federal employees
+  description: A platform for federal agencies to recruit and onboard employees.
   sorn: >-
     https://www.federalregister.gov/documents/2021/12/01/2021-26086/privacy-act-of-1974-system-of-records
-  risk: agency-specific CUI related to onboarding
+  risk: >-
+    social security numbers, demographic information, and any information agencies using the platform
+    choose to collect, which may include banking information.
   agency: OPM
   access:
   - id: usastaffing-cfpb-wick
@@ -3083,6 +3111,9 @@
   id: eopf
   acronym: eOPF
   category: personnel
+  risk: >-
+    eOPF contains social security numbers, bank account information, dates of birth, addresses, and PII
+    regarding family members
   description: >-
     An system for government employees to access their personnel files electronically. These are updated
     when staff receive changes in salary or duty station or title, or receive performance reviews.

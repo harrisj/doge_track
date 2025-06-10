@@ -615,14 +615,14 @@
   - **OPM-18** (2025-01-(24)~)
   - **Edward Coristine** (2025-01-(28)~) (detailed from GSA)
   - **OPM-17** (2025-01-(31)~)
-  - **OPM-09** (2025-01-(31)~)
-  - **OPM-16** (2025-01-(31)~)
   - **OPM-13** (2025-01-(31)~)
   - **OPM-10** (2025-01-(31)~)
+  - **OPM-09** (2025-01-(31)~)
+  - **Charles Ezell** (2025-01-20) Acting Director
   - **Greg Hogan** (2025-01-20 - 2025-01-20) Senior Advisor to the Director for Technology and Delivery
   - **Greg Hogan** (2025-01-20 - 2025-02-11) Acting Chief Information Officer
-  - **OPM-05 (Gavin Kliger)** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
   - **Joanna Wischer** (2025-01-20) Senior Advisor to the Director
+  - **OPM-05 (Gavin Kliger)** (2025-01-20 - 2025-02-18) Senior Advisor to the Director for Information Technology
   - **OPM-08 (James Sullivan)** (2025-01-20) Senior Advisor to the Director
   - **Noah Peters** (2025-01-20) Senior Advisor
   - **Amanda Scales** (2025-01-20 - 2025-03-28) Chief of Staff
@@ -631,17 +631,15 @@
   - **OPM-07 (Brian Bjelde)** (2025-01-20 - 2025-01-31) Expert
   - **OPM-03 (Akash Bobba)** (2025-01-20) Expert
   - **Clayton Cromer** (2025-01-20) Deputy General Counsel
-  - **Charles Ezell** (2025-01-20) Acting Director
-  - **Jacob Altik** (2025-01-24) Senior Advisor to the Director
+  - **OPM-16 (Jacob Altik)** (2025-01-24) Senior Advisor to the Director
   - **OPM-06 (Nikhil Rajpal)** (2025-01-24) Expert
-  - **Christopher Stanley** (2025-01-28) Expert
   - **Justin Monroe** (2025-01-28) Expert
+  - **Christopher Stanley** (2025-01-28) Expert
+  - **OPM-14 (Chris Young)** (2025-01-30) Expert
   - **Austin Raynor** (2025-01-30) Senior Advisor
-  - **Chris Young** (2025-01-30) Expert
   - **OPM-07 (Brian Bjelde)** (2025-01-31) Expert
   - **OPM-11** (2025-02-(07)~)
   - **OPM-15** (2025-02-(07)~)
-  - **OPM-14** (2025-02-(07)~)
   - **OPM-12** (2025-02-(07)~)
   - **Bryanne-Michelle Mlodzianowski** (2025-02-03) Expert
   - **Christina Hanna** (2025-02-03) Expert
@@ -695,9 +693,9 @@
         - OPM-11 2025-02-07 - ongoing
         - OPM-12 2025-02-07 - ongoing
         - OPM-13 2025-01-31 - ongoing
-        - OPM-14 2025-02-07 - ongoing
+        - {sr.doge_alias_id} (Chris Young) 2025-02-07 - ongoing
         - OPM-15 2025-02-07 - ongoing
-        - OPM-16 2025-01-31 - ongoing
+        - {sr.doge_alias_id} (Jacob Altik) 2025-01-31 - ongoing
         - OPM-17 2025-01-31 - ongoing
         - OPM-18 2025-01-24 - ongoing
         - {sr.doge_alias_id} (Brian Bjelde) 2025-01-20 - ongoing
