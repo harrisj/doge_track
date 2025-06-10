@@ -208,6 +208,22 @@
     sort_date: 2025-02-05
     agency: Education
 
+- name: Ankur Bansai
+  sort_name: Bansai
+  slug: ankur-bansai
+  blurb: >-
+    He is the president of Homelight, which makes software for the real estate industry. Prior to that,
+    he founded SnapSaves, a startup that was later acquired.
+  category: wrecker
+  positions:
+  - id: dot-bansai
+    agency: DOT
+    type: appointed
+    sort_date: 2025-05-15
+    table_note: Reportedly reviewing DOT grants to cancel
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Ankur-Bansal
+    source_name: ProPublica
+
 - name: Sam Beyda
   sort_name: Beyda
   slug: sam-beyda
@@ -709,6 +725,25 @@
     source: https://bsky.app/profile/marisakabas.bsky.social/post/3lpclnw3x7s2c
     source_name: The Handbasket
 
+- name: Alison Childs
+  sort_name: Childs
+  slug: alison-childs
+  category: support
+  blurb: >-
+    According to ProPublica, she has been hired at GSA to work on [a website promoting use of AI within
+    the government](https://www.404media.co/github-is-leaking-trumps-plans-to-accelerate-ai-across-government/)
+  positions:
+  - id: gsa-childs
+    agency: GSA
+    type: appointed
+    sort_date: 2025-05-15
+    start_date: 2025-05-XX
+    start_date_truth: guessed
+    table_note: Date guessed based on reporting from ProPublica and 404 Media on ai.gov
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Alison-Childs
+    office: Technology Transformation Services
+    source_name: ProPublica
+
 - name: Carl Coe
   sort_name: Coe
   slug: carl-coe
@@ -752,15 +787,14 @@
   background: finance
   positions:
   - id: usda-cole
-    type: unknown
+    type: appointed
     agency: USDA
-    start_date: 2025-02-XX
-    start_date_truth: inferred
-    table_note: CC'ed on a leaked email. Date guessed from Ag Sec on 2/14 saying DOGE at agency for "a
-      couple weeks"
-    comment: >-
-      CC'ed on an email 2025-02-20, by Gavin Kliger and has a USDS address. USDA administrator said on
-      2/14 that DOGE had been at the agency for several weeks
+    title: Senior Team Leader on Government Efficiency
+    start_date: 2025-02-10
+    start_date_truth: verified
+    source: >-
+      https://www.documentcloud.org/documents/25963272-cole-michael-appointees-2025-new-entrant-278-2025-2025-04-03/
+    source_name: ProPublica
 
 - name: Miles Collins
   sort_name: Collins
@@ -1324,6 +1358,25 @@
     source_name: court doc
     comment: Reported access to system same day as start of detail to HHS
 
+- name: Bee Elvy
+  sort_name: Elvy
+  slug: bee-elvy
+  category: support
+  blurb: >-
+    According to ProPublica, he has been hired at GSA to work on [a website promoting use of AI within
+    the government](https://www.404media.co/github-is-leaking-trumps-plans-to-accelerate-ai-across-government/)
+  positions:
+  - id: gsa-elvy
+    agency: GSA
+    type: appointed
+    sort_date: 2025-05-15
+    start_date: 2025-05-XX
+    start_date_truth: guessed
+    table_note: Date guessed based on reporting from ProPublica and 404 Media on ai.gov
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Bee-Elvy
+    office: Technology Transformation Services
+    source_name: ProPublica
+
 - name: Charles Ezell
   sort_name: Ezell
   slug: charles-ezell
@@ -1568,6 +1621,7 @@
 - name: Justin Fox
   sort_name: Fox, Justin
   slug: justin-fox
+  age: 27
   category: wrecker
   custom_path: "/wreckers/cavanaugh-cronies"
   blurb: >-
@@ -1647,6 +1701,26 @@
     source_name: Bloomberg
     agency: DOD
 
+- name: Nicholas Gallagher
+  sort_name: Gallagher
+  slug: nicholas-gallagher
+  category: support
+  age: 36
+  blurb: >-
+    Nicholas Gallagher is a lawyer working within GSA. Prior to that, he worked at a law firm Clement
+    & Murphy, "which specializes in arguing conservative causes before the U.S. Supreme Court" according
+    to ProPublica.
+  positions:
+  - id: gsa-gallagher
+    type: appointed
+    agency: GSA
+    start_date: 2025-05-XX
+    start_date_truth: guessed
+    sort_date: 2025-05-15
+    table_note: Named in ProPublica roundup, start date guessed
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Nicholas-Gallagher
+    source_name: ProPublica
+
 - name: Mattieu Gamache-Asselin
   sort_name: Gamache-Asselin
   slug: mattieu-gamache
@@ -1710,7 +1784,9 @@
   slug: derek-geissler
   blurb: >-
     Apart from a single report by NBC News placing him at the Department of Labor in mid-February, there
-    are no public details about Derek Geissler.
+    are no public details about Derek Geissler. According to ProPublica, "Geissler has been working at
+    the GSA since the beginning of the administration in close coordination with political leadership
+    on DOGE special projects, including artificial intelligence and data sharing efforts."
   category: unknown
   positions:
   - id: gsa-geissler
@@ -1732,6 +1808,26 @@
     source_name: NBC News
     agency: DOL
     from: GSA
+
+- name: Patrick George
+  sort_name: George
+  slug: patrick-george
+  age: 42
+  blurb: >-
+    Patrick George is reportedly the DOGE lead in the US Navy, where he has been involved in reviewing
+    contracts. He comes from a venture capital background, but was also a Marine.
+  category: wrecker
+  positions:
+  - id: dod-george
+    agency: DOD
+    type: appointed
+    start_date: 2025-02-(18)?
+    start_date_truth: inferred
+    table_note: >-
+      Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting on 2/20 that many were
+      veterans
+    sort_date: 2025-02-18
+    office: U.S. Navy
 
 - name: Brady Glantz
   sort_name: Glantz
@@ -1828,10 +1924,12 @@
 - name: Mike Gonzalez
   sort_name: Gonzalez
   slug: mike-gonzalez
+  age: 36
   category: unknown
   blurb: >-
-    Mike Gonzalez was included in a roundup by Techcrunch of 19 founders and VCs who are part of DOGE,
-    but I have been unable to find any other information about who he is or what exactly he is doing.
+    Mike Gonzalez was included in a roundup by Techcrunch of 19 founders and VCs who are part of DOGE.
+    He is linked to Trump administation AI czar David Sacks; both worked at the company Zenefits. He also
+    founded another human resources startup.
   positions:
   - id: opm-gonzalez
     agency: OPM
@@ -2023,6 +2121,29 @@
       https://apnews.com/article/hassen-burgum-musk-interior-energy-conflicts-830e9df68c7869e943f96c4b5e384f20
     source_name: AP
     supervisory: true
+
+- name: Jim Hickey
+  sort_name: Hickey
+  slug: jim-hickey
+  age: 42
+  blurb: >-
+    Identified by ProPublica as one of the DOGE crew who have secretly been working at the Department
+    of Defense, Jim Hickey was formerly a director at MITRE and before that a senior advisor for the Air
+    Force
+  category: wrecker
+  positions:
+  - id: dod-hickey
+    type: appointed
+    agency: DOD
+    start_date: 2025-02-(18)?
+    start_date_truth: inferred
+    table_note: >-
+      Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting on 2/20 that many were
+      veterans. LinkedIn says Feb.
+    sort_date: 2025-02-18
+    title: Senior Advisor
+    title_type: advisor
+    office: Undersecretary of Defense
 
 - name: Vinay Hiremath
   sort_name: Hiremath
@@ -2241,8 +2362,12 @@
 - name: Raj Jegannathan
   sort_name: Jegannathan
   slug: raj-jegannathan
+  age: 41
   background: executive
-  blurb: A relatively new addition to the DOGE staff based in GSA, it's unclear yet what he will be doing.
+  blurb: >-
+    A relatively new addition to the DOGE staff based in GSA, Raj is the serving as the vice president
+    of IT for AI infrastructure and vehicle support operations at Tesla. Jegannathan is "working closely
+    with senior political leadership at the GSA on federal acquisition efforts," according to [ProPublica](https://projects.propublica.org/elon-musk-doge-tracker/#Rajasekar-Jegannathan)
   category: unknown
   positions:
   - id: gsa-jegannathan
@@ -2252,6 +2377,7 @@
     start_date_truth: reported
     source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
     source_name: Wired
+    title: Data Engineer
     agency: GSA
 
 - name: Erica Jehling
@@ -2875,18 +3001,23 @@
 - name: Tarak Makecha
   sort_name: Makecha
   slug: tarak-makecha
+  age: 38
   category: wrecker
   custom_path: "/wreckers/tarak-makecha"
+  blurb: >-
+    Tarak Makecha is the former head of stategic planning for Tesla Energy. He has been reviewing and
+    cancelling grants for the DOJ and FBI, but recent sources have also linked him to the US Agency for
+    Global Media and grant cancellations there.
   positions:
   - id: opm-makecha
     type: appointed
     title: Senior Advisor
     title_type: advisor
-    sort_date: 2025-03-15
-    start_date: 2025-03-XX
+    start_date: 2025-02-28
     source: https://www.pogo.org/investigations/inside-the-shadowy-crew-leading-the-governments-hr-office
     source_name: POGO
-    comment: POGO has his resume and listing as an OPM staffer
+    comment: POGO has his resume and listing as an OPM staffer. ProPublica had financial disclosures on
+      2/28
     agency: OPM
   - id: fbi-makecha
     type: detailed
@@ -2913,6 +3044,17 @@
     office: Office of the Chairman
     table_note: assuming detail from OPM
     agency: FCC
+  - id: detail-usagm-makecha
+    agency: USAGM
+    from: OPM
+    from_truth: guessed
+    type: detailed
+    sort_date: 2025-05-15
+    start_date: 2025-05-XX
+    start_date_truth: inferred
+    table_note: Date unknown, but likely around mid-May due to news reports
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Tarak-Makecha
+    source_name: ProPublica
 
 - name: Ted Malaska
   sort_name: Malaska
@@ -2947,11 +3089,12 @@
 - name: Dave Malcher
   sort_name: Malcher
   slug: dave-malcher
-  background: coder
-  category: unknown
+  age: 31
+  background: finance
   blurb: >-
-    Dave Malcher was identified as a former SpaceX engineer and a new DOGE staffer at GSA in April, but
-    it's still unclear what he is doing for the agency yet.
+    Previously a financial analyst at SpaceX, he apparently has been detailed from GSA to the VA in recent
+    months.
+  category: wrecker
   positions:
   - id: gsa-malcher
     type: appointed
@@ -2961,6 +3104,66 @@
     source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
     source_name: Wired
     agency: GSA
+  - id: detail-gs-va-malcher
+    type: detailed
+    from: GSA
+    from_truth: inferred
+    agency: VA
+    sort_date: 2025-04-25
+    start_date: 2025-04-(25)~
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#David-Malcher
+    source_name: ProPublica
+
+- name: Allan Mangaser
+  sort_name: Mangaser
+  slug: allan-mangaser
+  category: wrecker
+  age: 44
+  blurb: >-
+    According to [ProPublica](https://projects.propublica.org/elon-musk-doge-tracker/#Allan-Mangaser),
+    he previously worked for Palantir and Theorem, a financial services startup. They report he has met
+    with officials from the TSA and CISA
+  positions:
+  - id: detail-opm-dhs-mangaser
+    type: detailed
+    agency: DHS
+    from: OPM
+    start_date: 2025-04-XX
+    start_date_truth: guessed
+    sort_date: 2025-04-16
+    table_note: Based on reports talked to TSA and CISA, assuming detail to DHS
+  - id: internal-dhs-cisa-mangaser
+    type: internal
+    agency: CISA
+    from: DHS
+    start_date: 2025-04-XX
+    start_date_truth: guessed
+    sort_date: 2025-04-17
+    table_note: Reportedly met with CISA
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Allan-Mangaser
+    source_name: ProPublica
+  - id: internal-dhs-tsa-mangaser
+    type: internal
+    agency: TSA
+    from: DHS
+    start_date: 2025-04-XX
+    start_date_truth: guessed
+    sort_date: 2025-04-17
+    table_note: Reportedly met with TSA
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Allan-Mangaser
+    source_name: ProPublica
+  - id: opm-mangaser
+    type: appointed
+    agency: EOP
+    title: Senior Advisor to the US Federal CIO
+    title_type: advisor
+    office: Office of Management and Budget
+    start_date: 2025-04-XX
+    sort_date: 2025-04-15
+    start_date_truth: verified
+    table_note: LinkedIn says he started there in April
+    source: https://www.linkedin.com/in/allanmangaser/
+    source_name: LinkedIn
 
 - name: Peter Marocco
   sort_name: Marocco
@@ -2998,6 +3201,7 @@
     An April addition to the DOGE lineup, Jonathan Mendelson has been part of Nate Cavanaugh's wrecking
     crew that visits small independent executive agencies to subvert and destroy them. He has been spotted
     at the SEC and the USDFC so far, but I expect more details of their work to come out with court filings.
+    Prior to DOGE, he was an investor in the Silicon Valley VC firm Accel.
   category: wrecker
   custom_path: "/wreckers/cavanaugh-cronies"
   positions:
@@ -3025,6 +3229,10 @@
     sort_date: 2025-05-02
     start_date: 2025-05-(02)~
     start_date_truth: reported
+    title: Senior Advisor
+    title_type: advisor
+    office: Chairman of the SEC
+    table_note: title sourced from ProPublica
     source: >-
       https://www.reuters.com/sustainability/boards-policy-regulation/doge-expands-presence-wall-st-regulator-sources-say-2025-05-02/
     source_name: Reuters
@@ -3411,8 +3619,12 @@
 - name: Donald Park
   sort_name: Park
   slug: donald-park
+  age: 45
   background: finance
   category: wrecker
+  blurb: >-
+    Mr. Park is the cofounder of a private equity company named Ionic Partners and located in Austin,
+    Texas. He has been involved in efforts to discover fraud in SBA loans.
   custom_path: "/wreckers/cavanaugh-cronies"
   positions:
   - id: gsa-park
@@ -3439,6 +3651,28 @@
     start_date_truth: reported
     source: https://bsky.app/profile/marisakabas.bsky.social/post/3lp5iwrmfv22y
     source_name: The Handbasket
+
+- name: Matthew Parkhurst-Session
+  sort_name: Parkhurst
+  slug: matthew-parkhurst
+  category: support
+  blurb: >-
+    He is the founder/CEO of cloud company Antimetal. According to ProPublica, he has been linked to the
+    "Department of Housing and Urban Development, the Department of Labor and the Environmental Protection
+    Agency," but unclear if these are detailing arrangements or meetings. He also has apparently been
+    involved in meetings with tech firms who are vendors to the federal government.
+  positions:
+  - id: gsa-parkhurst
+    agency: GSA
+    type: appointed
+    start_date: 2025-03-03
+    start_date_truth: verified
+    title: Senior Advisor
+    title_type: advisor
+    excepted: true
+    source: >-
+      https://www.documentcloud.org/documents/25950459-parkhurst-session-matthew-noncareer-ses-and-schedule-cs-new-entrant-278-2025-2025-03-04/
+    source_name: ProPublica
 
 - name: Noah Peters
   sort_name: Peters
@@ -3992,6 +4226,7 @@
 
 - name: Riley Sennott
   sort_name: Sennott
+  age: 26
   slug: riley-sennott
   background: coder
   category: wrecker
@@ -4143,6 +4378,34 @@
       https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
     source_name: Politico
     agency: USDFC
+
+- name: Ryan Shea
+  sort_name: Shea
+  slug: ryan-shea
+  age: 34
+  background: crypto
+  category: wrecker
+  positions:
+  - id: detail-gsa-hhs-shea
+    type: detailed
+    agency: HHS
+    from: GSA
+    from_truth: guessed
+    start_date: 2025-05-XX
+    start_date_truth: guessed
+    sort_date: 2025-05-17
+    table_note: ProPublica reports he was working on HHS projects, assuming detail from GSA
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Ryan-Shea
+    source_name: ProPublica
+  - id: gsa-shea
+    type: appointed
+    agency: GSA
+    start_date: 2025-05-XX
+    start_date_truth: guessed
+    table_note: Start date guessed
+    sort_date: 2025-05-15
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Ryan-Shea
+    source_name: ProPublica
 
 - name: Thomas Shedd
   sort_name: Shedd

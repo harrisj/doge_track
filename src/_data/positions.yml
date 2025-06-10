@@ -584,6 +584,64 @@
   agency_and_parent:
   - Education
   documents: []
+- id: dot-bansai
+  type: appointed
+  agency_id: DOT
+  name: Ankur Bansai
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-05-15'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://projects.propublica.org/elon-musk-doge-tracker/#Ankur-Bansal
+  source_name: ProPublica
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Reportedly reviewing DOT grants to cancel
+  replaced_by:
+  same_as:
+  agency:
+    id: DOT
+    name: Department of Transportation
+    slug: dot
+    page_slug: transportation
+    short_name: DOT
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/transportation"
+  agency_and_parent:
+  - DOT
+  documents: []
 - id: dol-sam-beyda
   type: unknown
   agency_id: DOL
@@ -2322,6 +2380,64 @@
   agency_and_parent:
   - MSPB
   documents: []
+- id: gsa-childs
+  type: appointed
+  agency_id: GSA
+  name: Alison Childs
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-05-XX
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-05-15'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office: Technology Transformation Services
+  source: https://projects.propublica.org/elon-musk-doge-tracker/#Alison-Childs
+  source_name: ProPublica
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Date guessed based on reporting from ProPublica and 404 Media on ai.gov
+  replaced_by:
+  same_as:
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - GSA
+  documents: []
 - id: coe-detail-epa
   type: detailed
   agency_id: EPA
@@ -2508,14 +2624,14 @@
   - EPA
   documents: []
 - id: usda-cole
-  type: unknown
+  type: appointed
   agency_id: USDA
   name: Michael Cole
   doge_alias_id:
   from_agency_id:
   from_truth:
-  start_date: 2025-02-XX
-  start_date_truth: inferred
+  start_date: '2025-02-10'
+  start_date_truth: verified
   start_date_event:
   start_source:
   start_source_name:
@@ -2525,7 +2641,7 @@
   end_source:
   end_source_name:
   end_type:
-  sort_date: 2025-02-XX
+  sort_date: '2025-02-10'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -2538,19 +2654,18 @@
   pd_code:
   sge:
   excepted:
-  title:
+  title: Senior Team Leader on Government Efficiency
   title_type:
   series:
   supervisory:
   office:
-  source:
-  source_name:
+  source: https://www.documentcloud.org/documents/25963272-cole-michael-appointees-2025-new-entrant-278-2025-2025-04-03/
+  source_name: ProPublica
   reimbursed:
   reimbursement_amount:
-  comment: >-
-    CC'ed on an email 2025-02-20, by Gavin Kliger and has a USDS address. USDA administrator said on 2/14 that DOGE had been at the agency for several weeks
+  comment:
   qualifications:
-  table_note: CC'ed on a leaked email. Date guessed from Ag Sec on 2/14 saying DOGE at agency for "a couple weeks"
+  table_note:
   replaced_by:
   same_as:
   agency:
@@ -5069,6 +5184,64 @@
   - CMS
   - HHS
   documents: []
+- id: gsa-elvy
+  type: appointed
+  agency_id: GSA
+  name: Bee Elvy
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-05-XX
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-05-15'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office: Technology Transformation Services
+  source: https://projects.propublica.org/elon-musk-doge-tracker/#Bee-Elvy
+  source_name: ProPublica
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Date guessed based on reporting from ProPublica and 404 Media on ai.gov
+  replaced_by:
+  same_as:
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - GSA
+  documents: []
 - id: opm-ezell
   type: promotion
   agency_id: OPM
@@ -6775,6 +6948,64 @@
   agency_and_parent:
   - DOD
   documents: []
+- id: gsa-gallagher
+  type: appointed
+  agency_id: GSA
+  name: Nicholas Gallagher
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-05-XX
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-05-15'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://projects.propublica.org/elon-musk-doge-tracker/#Nicholas-Gallagher
+  source_name: ProPublica
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Named in ProPublica roundup, start date guessed
+  replaced_by:
+  same_as:
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - GSA
+  documents: []
 - id: hhs-gamache
   type: unknown
   agency_id: HHS
@@ -7027,6 +7258,64 @@
     path: "/agencies/gsa"
   agency_and_parent:
   - DOL
+  documents: []
+- id: dod-george
+  type: appointed
+  agency_id: DOD
+  name: Patrick George
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-02-(18)?
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-18'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office: U.S. Navy
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting on 2/20 that many were veterans
+  replaced_by:
+  same_as:
+  agency:
+    id: DOD
+    name: Department of Defense
+    slug: defense
+    page_slug: defense
+    short_name: Defense
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/defense"
+  agency_and_parent:
+  - DOD
   documents: []
 - id: faa-glantz
   type: appointed
@@ -8002,6 +8291,64 @@
   agency_and_parent:
   - DOI
   documents: []
+- id: dod-hickey
+  type: appointed
+  agency_id: DOD
+  name: Jim Hickey
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-02-(18)?
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-18'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Senior Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office: Undersecretary of Defense
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting on 2/20 that many were veterans. LinkedIn says Feb.
+  replaced_by:
+  same_as:
+  agency:
+    id: DOD
+    name: Department of Defense
+    slug: defense
+    page_slug: defense
+    short_name: Defense
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/defense"
+  agency_and_parent:
+  - DOD
+  documents: []
 - id: doj-hoffman
   type: unknown
   agency_id: DOJ
@@ -8608,7 +8955,7 @@
   pd_code:
   sge:
   excepted:
-  title:
+  title: Data Engineer
   title_type:
   series:
   supervisory:
@@ -10964,7 +11311,7 @@
   doge_alias_id:
   from_agency_id:
   from_truth:
-  start_date: 2025-03-XX
+  start_date: '2025-02-28'
   start_date_truth:
   start_date_event:
   start_source:
@@ -10975,7 +11322,7 @@
   end_source:
   end_source_name:
   end_type:
-  sort_date: '2025-03-15'
+  sort_date: '2025-02-28'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -10997,7 +11344,7 @@
   source_name: POGO
   reimbursed:
   reimbursement_amount:
-  comment: POGO has his resume and listing as an OPM staffer
+  comment: POGO has his resume and listing as an OPM staffer. ProPublica had financial disclosures on 2/28
   qualifications:
   table_note:
   replaced_by:
@@ -11154,6 +11501,74 @@
   agency_and_parent:
   - FCC
   documents: []
+- id: detail-usagm-makecha
+  type: detailed
+  agency_id: USAGM
+  name: Tarak Makecha
+  doge_alias_id:
+  from_agency_id: OPM
+  from_truth: guessed
+  start_date: 2025-05-XX
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-05-15'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://projects.propublica.org/elon-musk-doge-tracker/#Tarak-Makecha
+  source_name: ProPublica
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Date unknown, but likely around mid-May due to news reports
+  replaced_by:
+  same_as:
+  agency:
+    id: USAGM
+    name: US Agency for Global Media
+    slug: usagm
+    page_slug: independent
+    short_name: Global Media
+    doge_base: false
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/independent"
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - USAGM
+  documents: []
 - id: faa-malaska
   type: appointed
   agency_id: FAA
@@ -11270,6 +11685,338 @@
     path: "/agencies/gsa"
   agency_and_parent:
   - GSA
+  documents: []
+- id: detail-gs-va-malcher
+  type: detailed
+  agency_id: VA
+  name: Dave Malcher
+  doge_alias_id:
+  from_agency_id: GSA
+  from_truth: inferred
+  start_date: 2025-04-(25)~
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-04-25'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://projects.propublica.org/elon-musk-doge-tracker/#David-Malcher
+  source_name: ProPublica
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: VA
+    name: Veterans Administration
+    slug: va
+    page_slug: veterans
+    short_name: VA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/veterans"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - VA
+  documents: []
+- id: detail-opm-dhs-mangaser
+  type: detailed
+  agency_id: DHS
+  name: Allan Mangaser
+  doge_alias_id:
+  from_agency_id: OPM
+  from_truth:
+  start_date: 2025-04-XX
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-04-16'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Based on reports talked to TSA and CISA, assuming detail to DHS
+  replaced_by:
+  same_as:
+  agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/homeland-security"
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - DHS
+  documents: []
+- id: internal-dhs-cisa-mangaser
+  type: internal
+  agency_id: CISA
+  name: Allan Mangaser
+  doge_alias_id:
+  from_agency_id: DHS
+  from_truth:
+  start_date: 2025-04-XX
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-04-17'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://projects.propublica.org/elon-musk-doge-tracker/#Allan-Mangaser
+  source_name: ProPublica
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Reportedly met with CISA
+  replaced_by:
+  same_as:
+  agency:
+    id: CISA
+    name: Cybersecurity and Infrastructure Security Agency
+    slug: cisa
+    page_slug: homeland-security
+    short_name: CISA
+    doge_base: true
+    parent_id: DHS
+    obj_type: Agency
+    path: "/agencies/homeland-security"
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/homeland-security"
+  agency_and_parent:
+  - CISA
+  - DHS
+  documents: []
+- id: internal-dhs-tsa-mangaser
+  type: internal
+  agency_id: TSA
+  name: Allan Mangaser
+  doge_alias_id:
+  from_agency_id: DHS
+  from_truth:
+  start_date: 2025-04-XX
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-04-17'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://projects.propublica.org/elon-musk-doge-tracker/#Allan-Mangaser
+  source_name: ProPublica
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Reportedly met with TSA
+  replaced_by:
+  same_as:
+  agency:
+    id: TSA
+    name: Transportation Security Administration
+    slug: tsa
+    page_slug: homeland-security
+    short_name: TSA
+    doge_base: false
+    parent_id: DHS
+    obj_type: Agency
+    path: "/agencies/homeland-security"
+  from_agency:
+    id: DHS
+    name: Department of Homeland Security
+    slug: dhs
+    page_slug: homeland-security
+    short_name: DHS
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/homeland-security"
+  agency_and_parent:
+  - TSA
+  - DHS
+  documents: []
+- id: opm-mangaser
+  type: appointed
+  agency_id: EOP
+  name: Allan Mangaser
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-04-XX
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-04-15'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Senior Advisor to the US Federal CIO
+  title_type: advisor
+  series:
+  supervisory:
+  office: Office of Management and Budget
+  source: https://www.linkedin.com/in/allanmangaser/
+  source_name: LinkedIn
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: LinkedIn says he started there in April
+  replaced_by:
+  same_as:
+  agency:
+    id: EOP
+    name: Executive Office of the President
+    slug: eop
+    page_slug: doge
+    short_name: EOP
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/doge"
+  agency_and_parent:
+  - EOP
   documents: []
 - id: iaf-marocco
   type: appointed
@@ -11544,18 +12291,18 @@
   pd_code:
   sge:
   excepted:
-  title:
-  title_type:
+  title: Senior Advisor
+  title_type: advisor
   series:
   supervisory:
-  office:
+  office: Chairman of the SEC
   source: https://www.reuters.com/sustainability/boards-policy-regulation/doge-expands-presence-wall-st-regulator-sources-say-2025-05-02/
   source_name: Reuters
   reimbursed:
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: title sourced from ProPublica
   replaced_by:
   same_as:
   agency:
@@ -13359,6 +14106,64 @@
     path: "/agencies/independent"
   agency_and_parent:
   - EXIM
+  documents: []
+- id: gsa-parkhurst
+  type: appointed
+  agency_id: GSA
+  name: Matthew Parkhurst-Session
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: '2025-03-03'
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-03-03'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted: true
+  title: Senior Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office:
+  source: https://www.documentcloud.org/documents/25950459-parkhurst-session-matthew-noncareer-ses-and-schedule-cs-new-entrant-278-2025-2025-03-04/
+  source_name: ProPublica
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - GSA
   documents: []
 - id: noah-peters-opm
   type: appointed
@@ -16514,6 +17319,132 @@
     path: "/agencies/gsa"
   agency_and_parent:
   - USDFC
+  documents: []
+- id: detail-gsa-hhs-shea
+  type: detailed
+  agency_id: HHS
+  name: Ryan Shea
+  doge_alias_id:
+  from_agency_id: GSA
+  from_truth: guessed
+  start_date: 2025-05-XX
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-05-17'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://projects.propublica.org/elon-musk-doge-tracker/#Ryan-Shea
+  source_name: ProPublica
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: ProPublica reports he was working on HHS projects, assuming detail from GSA
+  replaced_by:
+  same_as:
+  agency:
+    id: HHS
+    name: Health and Human Services
+    slug: hhs
+    page_slug: health
+    short_name: HHS
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/health"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - HHS
+  documents: []
+- id: gsa-shea
+  type: appointed
+  agency_id: GSA
+  name: Ryan Shea
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-05-XX
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-05-15'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://projects.propublica.org/elon-musk-doge-tracker/#Ryan-Shea
+  source_name: ProPublica
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Start date guessed
+  replaced_by:
+  same_as:
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - GSA
   documents: []
 - id: gsa-thomas-shedd
   type: appointed

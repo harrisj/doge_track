@@ -126,6 +126,7 @@
 - people:
   - **Edward Coristine** (2025-02-19) Senior Advisor
   - **Kyle Schutt** (2025-02-19) Senior Advisor (detailed from DHS)
+  - **Allan Mangaser** (2025-04-XX)
 - systems:
     - Office365: Microsoft Office 365
         - Edward Coristine **[admin access]** 2025-02-20 - ongoing
@@ -135,11 +136,13 @@
 - people:
   - **Gavin Kliger** (2025-02-(01)~) (detailed from OPM)
   - **Jordan Wick** (2025-02-(01)~) (detailed from DOGE)
-  - **Michael Cole** (2025-02-XX)
+  - **Michael Cole** (2025-02-10) Senior Team Leader on Government Efficiency
 
 # Department of Defense
 - slug: defense
 - people:
+  - **Patrick George** (2025-02-(18)?)
+  - **Jim Hickey** (2025-02-(18)?) Senior Advisor
   - **Justin Fulcher** (2025-03-04 - 2025-04-24) (detailed from DOD)
   - **Justin Fulcher** (2025-04-25) Senior Advisor
 
@@ -183,15 +186,16 @@
 # Department of Homeland Security
 - slug: dhs
 - people:
-  - **Anthony Armstrong** (detailed from OPM)
-  - **Gavin Kliger** (detailed from OPM)
   - **Aram Moghaddassi** (detailed from DOL)
-  - **Payton Rehling** (detailed from SSA)
   - **Marko Elez** (detailed from DOL)
   - **Luke Farritor** (detailed from GSA)
+  - **Gavin Kliger** (detailed from OPM)
+  - **Anthony Armstrong** (detailed from OPM)
+  - **Payton Rehling** (detailed from SSA)
   - **Edward Coristine** (2025-02-(04)~) (detailed from GSA)
   - **Kyle Schutt** (2025-02-(19)~) (detailed from GSA)
   - **Antoine McCord** (2025-03-11) Chief Information Officer
+  - **Allan Mangaser** (2025-04-XX) (detailed from OPM)
 
 # Department of Justice
 - slug: doj
@@ -299,6 +303,7 @@
 # Department of Transportation
 - slug: dot
 - people:
+  - **Ankur Bansai**
   - **Daniel Abrahamson** (2025-02-XX) Senior Advisor
   - **Brian Stube** (2025-05-(07)~) Senior Advisor to the Secretary
 
@@ -321,6 +326,7 @@
 - people:
   - **Trent Morse** (2025-01-23) Deputy Assistant to the President / Deputy Director of Presidential Personnel
   - **Russell Vought** (2025-02-07) Director
+  - **Allan Mangaser** (2025-04-XX) Senior Advisor to the US Federal CIO
 
 # Export-Import Bank of the United States
 - slug: exim
@@ -391,32 +397,37 @@
 - slug: gsa
 - people:
   - **Edward Coristine** (2025-01-(20)~)
-  - **Jeremy Lewin** (2025-01-20)
-  - **OPM-04 (Edward Coristine)** (2025-01-20) Senior Advisor
-  - **Nicole Hollander** (2025-01-20 - 2025-05-29)
-  - **Ethan Shaotran** (2025-01-20)
   - **OPM-05 (Gavin Kliger)** (detailed from OPM)
+  - **OPM-04 (Edward Coristine)** (2025-01-20) Senior Advisor
+  - **Ethan Shaotran** (2025-01-20)
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
-  - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
+  - **Nicole Hollander** (2025-01-20 - 2025-05-29)
+  - **Jeremy Lewin** (2025-01-20)
   - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
-  - **Frank Schuler** (2025-02-(18)~) Senior Advisor
+  - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
   - **Kyle Schutt** (2025-02-(18)~)
+  - **Frank Schuler** (2025-02-(18)~) Senior Advisor
   - **Nate Cavanaugh** (2025-02-03)
   - **Riley Sennott** (2025-02-12)
   - **Donald Park** (2025-02-XX)
   - **Derek Geissler** (2025-02-XX)
+  - **Matthew Parkhurst-Session** (2025-03-03) Senior Advisor
   - **Emily Bryant** (2025-03-XX)
   - **Justin Fox** (2025-03-XX)
   - **Alexander Simonpour** (2025-03-XX)
   - **Dave Malcher** (2025-04-(24)~)
-  - **Raj Jegannathan** (2025-04-(24)~)
+  - **Raj Jegannathan** (2025-04-(24)~) Data Engineer
   - **Jonathan Mendelson** (2025-04-09)
   - **Ethan Shaotran** (2025-04-10) Senior Advisor
   - **Jack Stein** (2025-04-15)
   - **Marshall Wood** (2025-04-21)
-  - **Edward Coristine** (2025-05-31) Senior Advisor
   - **Luke Farritor** (2025-05-31) Senior Advisor
+  - **Edward Coristine** (2025-05-31) Senior Advisor
+  - **Nicholas Gallagher** (2025-05-XX)
+  - **Bee Elvy** (2025-05-XX)
+  - **Ryan Shea** (2025-05-XX)
+  - **Alison Childs** (2025-05-XX)
 
 # Government Accountability Office
 - slug: gao
@@ -439,6 +450,7 @@
   - **Aram Moghaddassi** (2025-03-05) (detailed from DOL)
   - **Zach Terrell** (2025-03-06)
   - **Kyle Schutt** (2025-03-14) (detailed from GSA)
+  - **Ryan Shea** (2025-05-XX) (detailed from GSA)
 - systems:
     - BIIS: Business Intelligence Information System
         - Rachel Riley 2025-02-06 - ongoing
@@ -637,19 +649,19 @@
   - **OPM-14 (Chris Young)** (2025-01-30) Expert
   - **Austin Raynor** (2025-01-30) Senior Advisor
   - **OPM-07 (Brian Bjelde)** (2025-01-31) Expert
-  - **OPM-11** (2025-02-(07)~)
   - **OPM-15** (2025-02-(07)~)
   - **OPM-12** (2025-02-(07)~)
+  - **OPM-11** (2025-02-(07)~)
   - **Bryanne-Michelle Mlodzianowski** (2025-02-03) Expert
-  - **Christina Hanna** (2025-02-03) Expert
   - **Stephen Duarte** (2025-02-03) Expert
+  - **Christina Hanna** (2025-02-03) Expert
   - **Greg Hogan** (2025-02-11) Chief Information Officer
   - **OPM-05 (Gavin Kliger)** (2025-02-18) Senior Advisor to the Director for Information Technology
   - **Joe Gebbia** (2025-02-18) Expert
+  - **Tarak Makecha** (2025-02-28) Senior Advisor
   - **Amanda Scales** (2025-03-28) Senior Advisor
   - **James Sullivan** (2025-03-28) Chief of Staff
   - **Mike Gonzalez** (2025-03-XX) Senior Advisor
-  - **Tarak Makecha** (2025-03-XX) Senior Advisor
 - systems:
     - website: Agency Website
         - Amanda Scales 2025-01-20 - ongoing
@@ -715,7 +727,7 @@
 - slug: sec
 - people:
   - **Eliezer Mishory** (2025-04-(05)~)
-  - **Jonathan Mendelson** (2025-05-(02)~) (detailed from GSA)
+  - **Jonathan Mendelson** (2025-05-(02)~) Senior Advisor (detailed from GSA)
 
 # Small Business Administration
 - slug: sba
@@ -782,9 +794,10 @@
   - **Marko Elez**
   - **Luke Farritor**
   - **Gavin Kliger**
+  - **Kyle Schutt**
   - **Aram Moghaddassi**
   - **Payton Rehling**
-  - **Kyle Schutt**
+  - **Allan Mangaser** (2025-04-XX)
 
 # U.S. African Development Foundation
 - slug: usadf
@@ -857,9 +870,11 @@
   - **Sahil Lavingia** (2025-03-17 - 2025-05-09) Senior Advisor
   - **Christopher Roussos** (2025-03-25)
   - **Cary Volpert** (2025-03-25)
+  - **Dave Malcher** (2025-04-(25)~) (detailed from GSA)
 
 # US Agency for Global Media
 - slug: usagm
 - people:
   - **OPM-05 (Gavin Kliger)** (detailed from OPM)
+  - **Tarak Makecha** (2025-05-XX) (detailed from OPM)
 

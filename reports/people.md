@@ -34,6 +34,11 @@
 - positions:
     -  **Education**  
 
+# Ankur Bansai
+- category: wrecker
+- positions:
+    -  **DOT**  
+
 # Sam Beyda
 - category: unknown
 - positions:
@@ -126,6 +131,11 @@
     -  **EXIM** (2025-05-14 to ??) 
     -  **MSPB** (2025-05-21 to ??) 
 
+# Alison Childs
+- category: support
+- positions:
+    -  **GSA** (2025-05-XX to ??) 
+
 # Carl Coe
 - category: enabler
 - positions:
@@ -136,7 +146,7 @@
 # Michael Cole
 - category: wrecker
 - positions:
-    -  **USDA** (2025-02-XX to ??) 
+    -  **USDA** (2025-02-10 to ??) Senior Team Leader on Government Efficiency
 
 # Miles Collins
 - category: wrecker
@@ -249,6 +259,11 @@
     -  **USCIS**  
         - SAVE: Systematic Alien Verification for Entitlements: 2025-03-15 - ongoing
 
+# Bee Elvy
+- category: support
+- positions:
+    -  **GSA** (2025-05-XX to ??) 
+
 # Charles Ezell
 - category: enabler
 - positions:
@@ -323,6 +338,11 @@
     -  **DOD** (2025-03-04 to 2025-04-24) 
     -  **DOD** (2025-04-25 to ??) Senior Advisor
 
+# Nicholas Gallagher
+- category: support
+- positions:
+    -  **GSA** (2025-05-XX to ??) 
+
 # Mattieu Gamache-Asselin
 - category: unknown
 - positions:
@@ -338,6 +358,11 @@
 - positions:
     -  **GSA** (2025-02-XX to ??) 
     -  **DOL** (2025-02-(13)~ to ??) 
+
+# Patrick George
+- category: wrecker
+- positions:
+    -  **DOD** (2025-02-(18)? to ??) 
 
 # Brady Glantz
 - category: wrecker
@@ -396,6 +421,11 @@
     -  **DOI** (2025-03-07 to 2025-04-XX) **Acting Assistant Secretary of Policy, Management and Budget**
     -  **DOI** (2025-04-XX to ??) 
 
+# Jim Hickey
+- category: wrecker
+- positions:
+    -  **DOD** (2025-02-(18)? to ??) Senior Advisor
+
 # Vinay Hiremath
 - category: booster
 
@@ -442,7 +472,7 @@
 # Raj Jegannathan
 - category: unknown
 - positions:
-    -  **GSA** (2025-04-(24)~ to ??) 
+    -  **GSA** (2025-04-(24)~ to ??) Data Engineer
 
 # Erica Jehling
 - category: enabler
@@ -571,9 +601,10 @@
 # Tarak Makecha
 - category: wrecker
 - positions:
-    -  **OPM** (2025-03-XX to ??) Senior Advisor
+    -  **OPM** (2025-02-28 to ??) Senior Advisor
     -  **FBI** (2025-03-(30)~ to ??) Senior Advisor
     -  **FCC** (2025-04-04 to ??) 
+    -  **USAGM** (2025-05-XX to ??) 
 
 # Ted Malaska
 - category: wrecker
@@ -581,9 +612,18 @@
     -  **FAA** (2025-02-16 to 2025-06-02) Senior Advisor
 
 # Dave Malcher
-- category: unknown
+- category: wrecker
 - positions:
     -  **GSA** (2025-04-(24)~ to ??) 
+    -  **VA** (2025-04-(25)~ to ??) 
+
+# Allan Mangaser
+- category: wrecker
+- positions:
+    -  **EOP** (2025-04-XX to ??) Senior Advisor to the US Federal CIO
+    -  **DHS** (2025-04-XX to ??) 
+    -  **CISA** (2025-04-XX to ??) 
+    -  **TSA** (2025-04-XX to ??) 
 
 # Peter Marocco
 - category: enabler
@@ -600,7 +640,7 @@
 - positions:
     -  **GSA** (2025-04-09 to ??) 
     -  **USDFC** (2025-04-28 to ??) 
-    -  **SEC** (2025-05-(02)~ to ??) 
+    -  **SEC** (2025-05-(02)~ to ??) Senior Advisor
 
 # Katie Miller
 - category: booster
@@ -692,6 +732,11 @@
     -  **GSA** (2025-02-XX to ??) 
     -  **SBA** (2025-02-03 to ??) 
     -  **EXIM** (2025-05-14 to ??) 
+
+# Matthew Parkhurst-Session
+- category: support
+- positions:
+    -  **GSA** (2025-03-03 to ??) Senior Advisor
 
 # Noah Peters
 - category: support
@@ -838,6 +883,12 @@
     -  **USPS** (2025-03-12 to NTE 2025-06-15) 
     -  **GSA** (2025-04-10 to ??) Senior Advisor GS-14 $142,488 - $185,234
     -  **USDFC** (2025-04-28 to ??) 
+
+# Ryan Shea
+- category: wrecker
+- positions:
+    -  **GSA** (2025-05-XX to ??) 
+    -  **HHS** (2025-05-XX to ??) 
 
 # Thomas Shedd
 - category: enabler
