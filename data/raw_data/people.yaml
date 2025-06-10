@@ -875,20 +875,32 @@
     comment: NYT links him to USCIS, but no other info
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
     source_name: NYT
-  - id: detail-gsa-opm-coristine
-    type: detailed
-    agency: OPM
-    from: GSA
-    from_truth: reported
-    sort_date: 2025-01-28
-    start_date: 2025-01-(28)~
-    start_date_truth: reported
-    reimbursed: false
-    table_note: wasn't named due to young age; mentioned as reporting to Amanda Scales, so might be detail?
-    comment: Edward Coristine is not named, but identfied. Mentions he reportd to Scales
-    source: >-
-      https://www.wired.com/story/elon-musk-lackeys-office-personnel-management-opm-neuralink-x-boring-stalin/
-    source_name: Wired
+  - id: opm-04
+    type: appointed
+    agency: GSA
+    start_date: 2025-01-20
+    start_date_truth: verified
+    nte_date: 2026-01-19
+    nte_date_truth: verified
+    description: Exc Appt NTE
+    appt_type_code: 48
+    appt_type: Other
+    excepted: true
+    sge: true
+    pd_code: X0A1614
+    title: Senior Advisor
+    title_type: advisor
+    pay_grade: EF-00
+    salary: "$0"
+    series: '0301'
+    supervisory: false
+    office: Immediate Office of the Administrator
+    comment: This is GSA appointment
+    table_note: A GSA employee too, but legal docs state dual appointment and not detail from GSA to OPM
+    documents:
+    - onboard-opm-employee-4
+    name: Edward Coristine
+    alias: OPM-04
   - id: detail-gsa-sba-coristine
     type: detailed
     from: GSA
@@ -4566,6 +4578,11 @@
   background: finance
   slug: katrine-trampe
   category: wrecker
+  blurb: >-
+    Katrine came from a background working for real-estate investment firms. She also reportedly uses
+    the title "Comtesse" because her father is a Count with ties to the Danish royal family. All of these
+    are important skills that explain why she needed to be given high-level administrative access to a
+    system at DOI that handles payroll for half of the federal government.
   positions:
   - id: interior-trampe
     type: unknown

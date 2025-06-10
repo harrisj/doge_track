@@ -1177,6 +1177,7 @@
   system_id:
   names:
   - Riccardo Biasini
+  - Edward Coristine
   - Charles Ezell
   - Nikhil Rajpal
   agency_ids:
@@ -1192,7 +1193,7 @@
       - "On March 18, clearance was requested to convert him to permanent appointment"
   - id: OPM-04
     agency_id: OPM
-    name:
+    name: Edward Coristine
     evidence: |-
       - SF-50 is for GSA appointment on 2025-01-20
       - Appointed as an expert at OPM on 2025-01-24
@@ -1216,6 +1217,11 @@
     sort_name: Biasini
     category: support
     alias: OPM-02
+  - name: Edward Coristine
+    slug: edward-coristine
+    sort_name: Coristine
+    category: wrecker
+    alias: OPM-04
   - name: Charles Ezell
     slug: charles-ezell
     sort_name: Ezell
@@ -1225,9 +1231,6 @@
     sort_name: Rajpal
     category: wrecker
     alias: OPM-06
-  - alias: OPM-04
-    sort_name: ZZZ-OPM-04
-    category: alias
   agencies_parents:
   - OPM
   obj_type: Event
@@ -1560,6 +1563,7 @@
   system_id:
   names:
   - Riccardo Biasini
+  - Edward Coristine
   - Nikhil Rajpal
   agency_ids:
   - OPM
@@ -1574,7 +1578,7 @@
       - "On March 18, clearance was requested to convert him to permanent appointment"
   - id: OPM-04
     agency_id: OPM
-    name:
+    name: Edward Coristine
     evidence: |-
       - SF-50 is for GSA appointment on 2025-01-20
       - Appointed as an expert at OPM on 2025-01-24
@@ -1598,14 +1602,16 @@
     sort_name: Biasini
     category: support
     alias: OPM-02
+  - name: Edward Coristine
+    slug: edward-coristine
+    sort_name: Coristine
+    category: wrecker
+    alias: OPM-04
   - name: Nikhil Rajpal
     slug: nikhil-rajpal
     sort_name: Rajpal
     category: wrecker
     alias: OPM-06
-  - alias: OPM-04
-    sort_name: ZZZ-OPM-04
-    category: alias
   agencies_parents:
   - OPM
   obj_type: Event
@@ -18937,6 +18943,39 @@
   linkified_text: >-
     A report in the _Times_ suggests that <a class="link-hover" href="/people/enabler-staff#mike-russo">Mike Russo</a> and <a class="link-hover" href="/wreckers/aram-mohghaddassi/">Aram
     Moghaddassi</a> have essentially been acting as joint CIOs at the agency.
+- id: 7C9WQbvz
+  type: report
+  date: '2025-06-06'
+  sort_date: '2025-06-06'
+  time:
+  text: >-
+    ProPublica analyzes public code by Sahil Lavingia for an AI-powered tool to evaluate contracts at the VA and determine which ones are "munchable" (meaning
+    they should be canceled). The analysis finds the AI was given poor instructions and lacks context to correctly make these decisions.
+  fuzz:
+  comment:
+  source: https://www.propublica.org/article/inside-ai-tool-doge-veterans-affairs-contracts-sahil-lavingia
+  source_title:
+  source_name: ProPublica
+  case_no:
+  track_id:
+  system_id:
+  names:
+  - Sahil Lavingia
+  agency_ids:
+  - VA
+  alias_ids: []
+  names_aliases:
+  - name: Sahil Lavingia
+    slug: shail-lavingia
+    sort_name: Lavingia
+    category: wrecker
+  agencies_parents:
+  - VA
+  obj_type: Event
+  linkified_text: >-
+    ProPublica analyzes public code by <a class="link-hover" href="/wreckers/other#shail-lavingia">Sahil Lavingia</a> for an AI-powered tool to evaluate
+    contracts at the <a class="link-hover" href="/agencies/veterans">VA</a> and determine which ones are "munchable" (meaning they should be canceled).
+    The analysis finds the AI was given poor instructions and lacks context to correctly make these decisions.
 - id: 5RHujvBq
   type: legal
   date: '2025-06-06'
@@ -18997,3 +19036,31 @@
     href="/agencies/white-house">DOGE</a> having access to systems at <a class="link-hover" href="/agencies/opm">OPM</a> and orders them to destroy any
     information they have copied, due to her finding that <a class="link-hover" href="/agencies/opm">OPM</a> failed to follow proper procedures for granting
     access.
+- id: 7hXwZjX4
+  type: report
+  date: '2025-06-09'
+  sort_date: '2025-06-09'
+  time:
+  text: >-
+    In a recent interview with the _Wall Street Journal_, the new head of SSA, Frank Bisignano, states that "DOGE personnel, including eight engineers,
+    are integral to getting the job done"
+  fuzz:
+  comment:
+  source: https://www.wsj.com/politics/policy/social-security-chief-says-musks-doge-figures-heavily-in-agencys-plans-45cc0f35
+  source_title:
+  source_name: WSJ
+  case_no:
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - SSA
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - SSA
+  obj_type: Event
+  linkified_text: >-
+    In a recent interview with the _Wall Street Journal_, the new head of <a class="link-hover" href="/agencies/social-security">SSA</a>, <a class="link-hover"
+    href="/people/enabler-staff#frank-bisignano">Frank Bisignano</a>, states that "<a class="link-hover" href="/agencies/white-house">DOGE</a> personnel,
+    including eight engineers, are integral to getting the job done"
