@@ -5300,6 +5300,64 @@
   agency_and_parent:
   - OPM
   documents: []
+- id: epa-cio-farmer
+  type: appointed
+  agency_id: EPA
+  name: Carter Farmer
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-05-(08)~
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-05-04'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Chief Information Officer
+  title_type: cio
+  series:
+  supervisory:
+  office:
+  source: https://federalnewsnetwork.com/cio-news/2025/05/federal-cio-outlines-16-operating-principles-for-it-leaders/
+  source_name: Fed News Network
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: EPA
+    name: Environmental Protection Agency
+    slug: epa
+    page_slug: epa
+    short_name: EPA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/epa"
+  agency_and_parent:
+  - EPA
+  documents: []
 - id: detail-gsa-dhs-farritor
   type: detailed
   agency_id: DHS
@@ -12133,6 +12191,64 @@
     path: "/agencies/homeland-security"
   agency_and_parent:
   - DHS
+  documents: []
+- id: doi-mcinery
+  type: appointed
+  agency_id: DOI
+  name: Paul McInery
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: '2025-05-05'
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-05-05'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Chief Information Officer
+  title_type: cio
+  series:
+  supervisory: true
+  office:
+  source: https://www.nextgov.com/people/2025/05/spacex-alum-tapped-interior-cio/405060/
+  source_name: NextGov
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: DOI
+    name: Department of the Interior
+    slug: interior
+    page_slug: interior
+    short_name: DOI
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/interior"
+  agency_and_parent:
+  - DOI
   documents: []
 - id: gsa-mendelson
   type: appointed

@@ -1393,6 +1393,28 @@
     source: https://www.govinfo.gov/content/pkg/DCPD-202500108/html/DCPD-202500108.htm
     source_name: GovInfo
 
+- name: Carter Farmer
+  sort_name: Farmer
+  slug: carter-farmer
+  background: coder
+  category: enabler
+  blurb: >-
+    A former director of IT Systems and Solutions at the USIP, he apparently joined up with DOGE after
+    they took over and destroyed that agency. Since  then, he has been named the new CIO of the Environmental
+    Protection Agency.
+  positions:
+  - id: epa-cio-farmer
+    type: appointed
+    agency: EPA
+    start_date: 2025-05-(08)~
+    start_date_truth: reported
+    sort_date: 2025-05-04
+    title: Chief Information Officer
+    title_type: cio
+    source: >-
+      https://federalnewsnetwork.com/cio-news/2025/05/federal-cio-outlines-16-operating-principles-for-it-leaders/
+    source_name: Fed News Network
+
 - name: Luke Farritor
   sort_name: Farritor
   slug: luke-farritor
@@ -3193,6 +3215,28 @@
     start_date_truth: reported
     source: https://www.nextgov.com/people/2025/03/dhs-taps-antoine-mccord-top-tech-post/403727/
     source_name: NextGov
+
+- name: Paul McInery
+  sort_name: McInery
+  slug: paul-mcinery
+  category: enabler
+  blurb: >-
+    Another alumn of SpaceX, Paul McInery left the company in 2020 to be the VP of Engineering at a lawncare-oriented
+    startup named Lawn Love. Despite no experience at being either in government, he was tapped to be
+    the new CIO of the Department of the Interior, after the previous one was forced out of the position
+    for not granting Stephanie Holmes admin access to the FPDS system that manages payroll for half of
+    the federal government.
+  positions:
+  - id: doi-mcinery
+    type: appointed
+    agency: DOI
+    title: Chief Information Officer
+    title_type: cio
+    start_date: 2025-05-05
+    start_date_truth: reported
+    source: https://www.nextgov.com/people/2025/05/spacex-alum-tapped-interior-cio/405060/
+    source_name: NextGov
+    supervisory: true
 
 - name: Jonathan Mendelson
   sort_name: Mendelson

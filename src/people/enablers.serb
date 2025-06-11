@@ -84,7 +84,7 @@ The Trump administration has dramatically upended this practice, using Acting Di
 
 ## Chief Information Officers
 
-Several of the DOGE crew have been named directly to the title of Chief Information Officer, giving them authority over IT resources at their agency. In some cases, they have used their positions to explicitly grant access to DOGE representatives at the agency. This table only list direct authorizations that have been documented. Indirect influence has likely been more widespread.
+In February, OPM urged [agencies to reclassify how Chief Information Officers are hired](https://www.opm.gov/media/juna3mhp/opm-memo-guidance-regarding-redesignating-ses-cio-positions-2-4-2025-final.pdf), with a rule change that makes it easier to fill the position with private sector staff. Since then, several of the DOGE crew have been named directly to the title of Chief Information Officer, giving them authority over IT resources at their agency, in a few cases after the current CIO has been ousted by agency leadership. In some cases, they have used their positions to explicitly grant access to DOGE representatives at the agency. This table only list direct authorizations that have been documented. Indirect influence has likely been more widespread.
 {% end %}
 
 {% cios = site.data.positions.select {|p| p.title_type == "cto" || p.title_type == "cio" }.sort_by(&:sort_date) %}

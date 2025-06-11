@@ -271,6 +271,11 @@
         - website: Agency Website: 2025-01-20 - ongoing
         - STAMP: STAMP: 2025-01-24 - ongoing
 
+# Carter Farmer
+- category: enabler
+- positions:
+    -  **EPA** (2025-05-(08)~ to ??) Chief Information Officer
+
 # Luke Farritor
 - category: wrecker
 - positions:
@@ -634,6 +639,11 @@
 - category: enabler
 - positions:
     -  **DHS** (2025-03-11 to ??) Chief Information Officer
+
+# Paul McInery
+- category: enabler
+- positions:
+    -  **DOI** (2025-05-05 to ??) **Chief Information Officer**
 
 # Jonathan Mendelson
 - category: wrecker

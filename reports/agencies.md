@@ -157,6 +157,7 @@
   - **Tyler Hassen** (2025-03-07 - 2025-04-XX) Acting Assistant Secretary of Policy, Management and Budget
   - **Matt Luby** (2025-04-17)
   - **Tyler Hassen** (2025-04-XX)
+  - **Paul McInery** (2025-05-05) Chief Information Officer
 - systems:
     - FPPS: Federal Personnel Payroll System
         - Stephanie Holmes **[admin access]** 2025-03-29 - ongoing
@@ -316,6 +317,7 @@
   - **Erica Jehling** (2025-02-12)
   - **Kathryn Armstrong Loving** (2025-02-12) Federal Detailee
   - **Carl Coe** (2025-02-XX) (detailed from DOGE)
+  - **Carter Farmer** (2025-05-(08)~) Chief Information Officer
   - **Carl Coe** (2025-05-02) Chief of Staff
 - systems:
     - EAS: EPA Acquisition System
