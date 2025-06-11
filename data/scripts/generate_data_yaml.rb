@@ -5,6 +5,7 @@ require 'yaml'
 require 'fileutils'
 require_relative 'models'
 require 'edtf-humanize'
+require 'kramdown'
 
 DATA_DIR = File.join(File.dirname(__FILE__), '..', '..', 'src', '_data')
 
@@ -51,11 +52,11 @@ def linkify_text(text)
   end
 
   Agency.each do |agency|
-    out.gsub!(/\b#{agency.id}\b/, internal_link(agency_url(agency), agency.id))
+    out.gsub!(/\b#{agency.id}\b/, internal_link(agency_url(agency), agency.id)) if agency.id =~ /^[A-Z]+$/
     out.gsub!(/\b#{agency.name}\b/, internal_link(agency_url(agency), agency.name))
   end
 
-  out
+  Kramdown::Document.new(out).to_html.gsub(%r{</?p>}, '')
 end
 
 def generate_agencies_yaml
