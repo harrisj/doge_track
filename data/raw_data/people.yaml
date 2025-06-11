@@ -4492,6 +4492,28 @@
     from: GSA
     from_truth: guessed
 
+- name: Mike Slagh
+  sort_name: Slagh
+  slug: mike-slagh
+  category: wrecker
+  age: 40
+  blurb: >-
+    The founder of a company that apparently connects defense contractors with government buyers. Before
+    that, he was the founder of a company that did job training for veterans. It's unclear where he is
+    working inside of the Pentagon. He served in the Navy.
+  positions:
+  - id: dod-slagh
+    type: appointed
+    agency: DOD
+    start_date: 2025-02-(18)?
+    start_date_truth: inferred
+    table_note: >-
+      Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting on 2/20 that many were
+      veterans
+    sort_date: 2025-02-18
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Mike-Slagh
+    source_name: ProPublica
+
 - name: Sam Smeal
   sort_name: Smeal
   slug: sam-smeal
@@ -4695,6 +4717,7 @@
 - name: Jack Stein
   sort_name: Stein
   slug: jack-stein
+  age: 25
   category: wrecker
   custom_path: "/wreckers/cavanaugh-cronies"
   blurb: >-
@@ -4897,6 +4920,27 @@
     source: https://www.cnn.com/2025/02/08/business/cfpb-doge-vought-x/index.html
     source_name: CNN
 
+- name: Yinon Weiss
+  sort_name: Weiss
+  slug: yinon-weiss
+  age: 47
+  category: wrecker
+  blurb: >-
+    A former Army Special Forces captain, Yinon Weiss is the founder of a startup that sells software
+    for automobile repair shops.
+  positions:
+  - id: dod-weiss
+    type: appointed
+    agency: DOD
+    start_date: 2025-02-(18)?
+    start_date_truth: inferred
+    table_note: >-
+      Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting on 2/20 that many were
+      veterans
+    sort_date: 2025-02-18
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Yinon-Weiss
+    source_name: ProPublica
+
 - name: Linda Whitridge
   slug: linda-whitridge
   sort_name: Whitridge
@@ -5046,6 +5090,7 @@
 
 - name: Marshall Wood
   sort_name: Wood
+  age: 27
   slug: marshall-wood
   category: wrecker
   blurb: >-

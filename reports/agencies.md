@@ -143,6 +143,8 @@
 - people:
   - **Patrick George** (2025-02-(18)?)
   - **Jim Hickey** (2025-02-(18)?) Senior Advisor
+  - **Mike Slagh** (2025-02-(18)?)
+  - **Yinon Weiss** (2025-02-(18)?)
   - **Justin Fulcher** (2025-03-04 - 2025-04-24) (detailed from DOD)
   - **Justin Fulcher** (2025-04-25) Senior Advisor
 

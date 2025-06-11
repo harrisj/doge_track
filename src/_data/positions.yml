@@ -17824,6 +17824,64 @@
   agency_and_parent:
   - NASA
   documents: []
+- id: dod-slagh
+  type: appointed
+  agency_id: DOD
+  name: Mike Slagh
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-02-(18)?
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-18'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://projects.propublica.org/elon-musk-doge-tracker/#Mike-Slagh
+  source_name: ProPublica
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting on 2/20 that many were veterans
+  replaced_by:
+  same_as:
+  agency:
+    id: DOD
+    name: Department of Defense
+    slug: defense
+    page_slug: defense
+    short_name: Defense
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/defense"
+  agency_and_parent:
+  - DOD
+  documents: []
 - id: faa-smeal
   type: appointed
   agency_id: FAA
@@ -19233,6 +19291,64 @@
     path: "/agencies/cfpb"
   agency_and_parent:
   - CFPB
+  documents: []
+- id: dod-weiss
+  type: appointed
+  agency_id: DOD
+  name: Yinon Weiss
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-02-(18)?
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-18'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://projects.propublica.org/elon-musk-doge-tracker/#Yinon-Weiss
+  source_name: ProPublica
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting on 2/20 that many were veterans
+  replaced_by:
+  same_as:
+  agency:
+    id: DOD
+    name: Department of Defense
+    slug: defense
+    page_slug: defense
+    short_name: Defense
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/defense"
+  agency_and_parent:
+  - DOD
   documents: []
 - id: treasury-whitridge
   type: unknown

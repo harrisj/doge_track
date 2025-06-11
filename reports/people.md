@@ -908,6 +908,11 @@
     -  **USPS** (2025-03-07 to NTE 2025-06-15) 
     -  **NASA** (2025-03-14 to ??) Advisor
 
+# Mike Slagh
+- category: wrecker
+- positions:
+    -  **DOD** (2025-02-(18)? to ??) 
+
 # Sam Smeal
 - category: wrecker
 - positions:
@@ -995,6 +1000,11 @@
 - positions:
     -  **EOP** (2025-02-07 to ??) **Director**
     -  **CFPB** (2025-02-08 to ??) **Acting Director**
+
+# Yinon Weiss
+- category: wrecker
+- positions:
+    -  **DOD** (2025-02-(18)? to ??) 
 
 # Linda Whitridge
 - category: wrecker
