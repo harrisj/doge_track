@@ -4,13 +4,15 @@
 - name: Daniel Abrahamson
   sort_name: Abrahamson
   slug: daniel-abrahamson
-  background: lawyer
   age: 41
   category: support
   blurb: >-
     Apart from his identification in a few Politico articles naming him as DOGE's lawyer at the Department
     of Transportation, Daniel Abrahamson has kept a relatively low profile. He was formerly a senior counsel
     at Tesla since 2022.
+  tech_links:
+  - Tesla
+  skill: lawyer
   positions:
   - id: dot-abrahamson
     type: appointed
@@ -29,7 +31,7 @@
   sort_name: Aimonetti
   slug: justin-aimonetti
   age: 31
-  background: lawyer
+  skill: lawyer
   category: support
   blurb: >-
     Identified as one of DOGE's growing army of lawyers, Justin Aimonetti has most recently been involved
@@ -50,21 +52,23 @@
 - name: Baris Akis
   slug: baris-akis
   sort_name: Akis
-  background: finance
-  category: booster
+  skill: recruiter
+  category: leadership
   blurb: >-
     Baris Akis was a booster for DOGE before it even formally existed, and he has been linked to its activities
     at the IRS, Treasury and OPM by the _New York Times_. As a non-US citizen (he has a green card), Mr.
     Akis is not formally a part of DOGE, but he was identified as leading operations as recently as March
     alongside fellow Musk loyalists Anthony Armstrong and Steve Davis. He is the president and co-founder
     of the company Human Capital.
+  tech_links:
+  - Human Capital
   positions: []
 
 - name: Jacob Altik
   sort_name: Altik
   slug: jacob-altik
   age: 32
-  background: lawyer
+  skill: lawyer
   category: wrecker
   custom_path: "/wreckers/cavanaugh-cronies"
   blurb: >-
@@ -128,8 +132,10 @@
 - name: Marc Andreessen
   sort_name: Andreessen
   slug: mark-andreesen
-  background: executive
+  skill: recruiter
   category: booster
+  tech_links:
+  - Andreessen Horowitz
   blurb: >-
     According to early reports, Marc Andreesen's only direct involvement with DOGE was interviewing potential
     candidates at Mar-a-Lago in December 2024. However, he continues to be a strident booster of the effort.
@@ -139,7 +145,7 @@
   sort_name: Armstrong
   slug: anthony-armstrong
   age: 57
-  background: finance
+  skill: strategic
   category: leadership
   blurb: >-
     Anthony Armstrong comes to DOGE from the world of finance, where he worked on Musk's acquisition of
@@ -192,12 +198,15 @@
   sort_name: Balajadia
   slug: jennifer-balajadia
   age: 36
+  skill: administrator
+  tech_links:
+  - Musk family
+  - Twitter
   blurb: >-
     An longtime personal assistant to Elon Musk – who reportedly once told a Twitter employee that "Elon
     is special in this world. It is our job to protect him and make sure what he wants to have happen"
     – Jennifer "Jehn" Balajadia has been linked to the Department of Education and possibly a few other
     agencies by the _New York Times_, but actual details of her activity have been scarce.
-  background: executive
   category: leadership
   positions:
   - id: education-balajadia
@@ -214,6 +223,7 @@
   blurb: >-
     He is the president of Homelight, which makes software for the real estate industry. Prior to that,
     he founded SnapSaves, a startup that was later acquired.
+  skill: executive
   category: wrecker
   positions:
   - id: dot-bansai
@@ -246,7 +256,7 @@
   sort_name: Beynon
   slug: alexandra-beynon
   age: 36
-  background: coder
+  skill: coder
   blurb: >-
     Not much is known about Alexandra Beynon's work on behalf of DOGE at the Department of Education.
     Prior to that, she worked as the head of engineering at her husband's startup company which sold guided
@@ -284,8 +294,11 @@
   sort_name: Biasini
   slug: riccardo-biasini
   age: 39
-  background: executive
+  skill: coder
   category: support
+  tech_links:
+  - Tesla
+  - Boring Co.
   blurb: >-
     Riccardo Biasini is an executive and software engineer who has worked at both Tesla and the Boring
     Company, both of which are Musk-owned businesses. Since joining the DOGE staff at OPM on January 20th,
@@ -325,6 +338,9 @@
   sort_name: Birchall
   slug: jared-birchall
   category: booster
+  skill: recruiter
+  tech_links:
+  - Musk family
   blurb: >-
     Identified recently in a WSJ story as Elon Musk's longtime "fixer" and the manager of Musk's family
     office, Jared Birchall was instrumental in organizing Musk's donations to the Trump campaign. He was
@@ -339,7 +355,7 @@
     Only recently appointed to the head of the Social Security Administration (SSA), Frank Bisignano has
     admitted to some back-channel coordination the DOGE-affiliated CIO Mike Russo, but he denies that
     he secretly gave direction to the DOGE team before his nomination was confirmed.
-  background: finance
+  skill: executive
   positions:
   - id: ssa-bisignano
     type: appointed
@@ -357,8 +373,11 @@
   sort_name: Bjelde
   slug: brian-bjelde
   age: 44
-  background: executive
+  skill: administrator
   category: support
+  tech_links:
+  - SpaceX
+  - Twitter
   positions:
   - id: opm-brian-bjelde
     type: appointed
@@ -410,7 +429,7 @@
   sort_name: Bobba
   slug: akash-bobba
   age: 21
-  background: coder
+  skill: coder
   category: wrecker
   custom_path: "/wreckers/akash-bobba"
   blurb: >-
@@ -501,7 +520,7 @@
 - name: Ashley Boizelle
   sort_name: Boizelle
   slug: ashley-boizelle
-  background: lawyer
+  skill: lawyer
   category: support
   positions:
   - id: doge-boizelle
@@ -518,6 +537,7 @@
   sort_name: Bryant
   slug: emily-bryant
   age: 23
+  skill: recruiter
   category: wrecker
   custom_path: "/wreckers/cavanaugh-cronies"
   blurb: >-
@@ -552,7 +572,7 @@
   govt_exit_type: resigned
   govt_exit_date: 2025-05-29
   govt_exit_truth: verified
-  background: lawyer
+  skill: lawyer
   category: support
   blurb: >-
     James Burnham served in the previous Trump administration at both the White House and the Department
@@ -578,7 +598,7 @@
   sort_name: Cavanaugh
   slug: nate-cavanaugh
   age: 28
-  background: executive
+  skill: coder
   category: wrecker
   custom_path: "/wreckers/nate-cavanaugh"
   blurb: >-
@@ -728,7 +748,10 @@
 - name: Alison Childs
   sort_name: Childs
   slug: alison-childs
+  skill: designer
   category: support
+  tech_links:
+  - Twitter
   blurb: >-
     According to ProPublica, she has been hired at GSA to work on [a website promoting use of AI within
     the government](https://www.404media.co/github-is-leaking-trumps-plans-to-accelerate-ai-across-government/)
@@ -748,7 +771,7 @@
   sort_name: Coe
   slug: carl-coe
   category: enabler
-  background: coder
+  skill: executive
   positions:
   - id: coe-detail-epa
     type: detailed
@@ -784,7 +807,7 @@
   sort_name: Cole
   slug: michael-cole
   category: wrecker
-  background: finance
+  skill: executive
   positions:
   - id: usda-cole
     type: appointed
@@ -800,7 +823,15 @@
   sort_name: Collins
   age: 36
   slug: miles-collins
-  background: finance
+  blurb: >-
+    Before working for DOGE, Miles Collins worked for a financial firm and also ran a fertility clinic
+    in Los Angeles. This might be his connection to Musk, who has had stridently pro-natalist politics.
+    His focus at the Department of Labor has reportedly been on spending and obligations. Unlike other
+    members of DOGE hired at the DOL – Marko Elez and Aram Moghaddassi – he does not seem to have been
+    detailed to other agencies, and it's unclear what he has been doing recently. In April, he was given
+    access to multiple sensitive databases focused on immigrant populations, likely in support of DOGE's
+    anti-immigrant surveillance project.
+  skill: executive
   category: wrecker
   positions:
   - id: dol-collins
@@ -820,6 +851,7 @@
   sort_name: Cooper
   slug: george-cooper
   category: booster
+  skill: recruiter
   blurb: >-
     After Anthony Jancso posted his [initial recruitment messages for DOGE](https://www.wired.com/story/elon-musk-doge-recruiting-palantir/)
     to a chat group for Palantir alumni, George Cooper chimed in to say he was also recruting for the
@@ -830,9 +862,15 @@
 - name: Sam Corcos
   sort_name: Corcos
   slug: sam-corcos
+  blurb: >-
+    Sam Corcos is the co-founder of lifestyle business Levels Health (with Casey Means, the nominee for
+    Surgeon General) which sells metabolic tracking devices. It has received funding from Andreessen Horowitz,
+    and that is probably the connection to DOGE.
   age: 36
-  background: executive
+  skill: executive
   category: enabler
+  tech_links:
+  - Andreessen Horowitz
   positions:
   - id: irs-corcos
     type: consultant
@@ -870,12 +908,13 @@
   sort_name: Coristine
   slug: edward-coristine
   age: 19
-  background: coder
+  skill: coder
   category: wrecker
   custom_path: "/wreckers/edward-coristine"
+  tech_links:
+  - Neuralink
   blurb: |-
     Perhaps the most famous of the DOGE wreckers, Edward "Big Balls" Coristine achieved early attention for joining DOGE at the young age of 19. Previously, he had been a camp counselor and a summer intern at Neuralink, who grew up in wealth and joined up with hacking groups online, before eagerly jumping on to the DOGE bandwagon.
-    \
     However, he has also accrued a large number of hits on his wrecking spree across the federal government, starting at the GSA on Day One and then detailing to OPM and a large number of other agencies within a short amount of time; for instance, he appears to have been DOGE's vanguard within the Department of Homeland Security. Most recently, he has been linked to a team developing an online application for a $5 Million "Gold Card" Visa that has been promoted by Trump as a new revenue stream for the US.
   positions:
   - id: gsa-edward-coristine
@@ -1047,12 +1086,14 @@
   sort_name: Coulter
   slug: scott-coulter
   age: 40
-  background: finance
+  skill: executive
   category: enabler
   blurb: >-
     Scott Coulter started his work for DOGE as a wrecker based in Social Security and detailed to NASA,
     but when Mike Russo was abruptly demoted as the CIO for Social Security, Scott stepped up into the
-    role.
+    role. Recently, however, the _New York Times_ reported that Aram Mohgaddassi and Mike Russo were acting
+    informally as co-CIOs within Social Security, leading to questions if Scott Coulter is still there
+    or if he's just occupying a figurehead role.
   positions:
   - id: detail-nasa-ssa-employee-2
     type: detailed
@@ -1092,7 +1133,7 @@
 - name: Clayton Cromer
   sort_name: Cromer
   slug: clayton-cromer
-  background: lawyer
+  skill: lawyer
   category: support
   positions:
   - id: opm-cromer
@@ -1135,11 +1176,18 @@
   sort_name: Davis
   slug: steve-davis
   age: 45
-  background: executive
   category: leadership
   govt_exit_type: resigned
   govt_exit_date: 2025-05-29
   govt_exit_truth: verified
+  blurb: |-
+    Reportedly so loyal to Elon Musk that associates have joked he would jump off a cliff if Musk asked him, Steve Davis has long been besides Musk's side at various companies, serving in senior executive roles at the Boring Company and Twitter. At Twitter, he was reportedly so dedicated to the work that he moved into the offices with his wife, Nicole Hollander, and their small child. And it is also reported that he was once so distressed by setbacks and failures that he started pulling out his own hair.
+    It's been a thinly-veiled secret that Steve Davis was running the show at DOGE, well before Amy Gleason was publicly named as the administrator. And recent interviews with Sahil Lavingia and other insiders suggested he had continued to fill that role, until he abruptly departed after Elon Musk left. His work at DOGE might have ended, but I suspect it'll be months and possibly years to get a full reckoning of his involvement.
+  tech_links:
+  - Twitter
+  - Boring Co.
+  - SpaceX
+  skill: executive
   positions:
   - id: doge-steve-davis
     type: appointed
@@ -1157,8 +1205,13 @@
   sort_name: Duarte
   slug: stephen-duarte
   age: 32
-  background: hr
+  blurb: >-
+    Like three other new DOGE staffers who started early t OPM, Stephen Duarte was previously a HR specialist
+    at SpaceX. He reportedly has worked closely with Brian Bjelde.
+  skill: administrator
   category: support
+  tech_links:
+  - SpaceX
   positions:
   - id: opm-stephen-duarte
     type: appointed
@@ -1183,15 +1236,11 @@
 - name: Leland Dudek
   slug: leland-dudek
   sort_name: Dudek
-  background: political
+  skill: administrator
   category: enabler
-  blurb: >-
-    DOGE is only able to subvert agencies when it has the explicit cooperation and support of senior leadership
-    there. Nobody better exemplifies than Leland Dudek, who was a relatively minor supervisor within Social
-    Security before he was placed on leave for insubordination by giving DOGE access without authorization.
-    Soon, he was rewarded for his defiance by being named Acting Commissioner for the agency after the
-    Trump administration fired the existing commissioner. Once elevated into that spot, he used all his
-    powers to prioritize access for DOGE staff until a federal judge finally ordered him to stop.
+  blurb: |-
+    DOGE is only able to subvert agencies when it has the explicit cooperation and support of senior leadership there. Nobody better exemplifies than Leland Dudek, who was a relatively minor supervisor within Social Security before he was placed on leave for insubordination by giving DOGE access without authorization. Soon, he was rewarded for his defiance by being named Acting Commissioner for the agency after the Trump administration fired the existing commissioner. Once elevated into that spot, he used all his powers to prioritize access for DOGE staff until a federal judge finally ordered him to stop.
+    With the appointment of Steve Bisignano to the role of Commissioner, Leland Dudek has stepped aside out of the limelight. Recent posts suggest he might be looking for opportunities outside of government.
   positions:
   - id: ssa-dudek-commissioner
     type: promotion
@@ -1220,8 +1269,16 @@
 - name: Stephen Ehikian
   sort_name: Ehikian
   slug: stephen-ehikian
+  blurb: >-
+    Stephen Ehikian is an executive from Silicon Valley, like so many of the DOGE leaders. His specific
+    background involves stints at Salesforce and an AI-related startup. Since starting at GSA, he has
+    been a prime supporter of DOGE's various efforts both within the agency (staffing up a team of wreckers,
+    cancelling building leases) as well as ways in which GSA's central role can affect the wider government
+    (canceling purchase cards, controlling shared services). He also has been a vocal booster to roll
+    out an AI-based tool named GSAi to the whole workforce, despite it demonstrating lackluster results
+    in pilot tests.
   age: 43
-  background: executive
+  skill: executive
   category: enabler
   positions:
   - id: gsa-stephen-ehikian
@@ -1239,9 +1296,12 @@
   sort_name: Elez
   slug: marko-elez
   age: 25
-  background: coder
+  skill: coder
   category: wrecker
   custom_path: "/wreckers/marko-elez/"
+  tech_links:
+  - Twitter
+  - SpaceX
   blurb: >-
     Marko Elez first appeared as the only DOGE member who was authorized to access confidential systems
     at the Bureau of Fiscal Services within the Treasury Department, a development which was swiftly blocked
@@ -1361,6 +1421,9 @@
 - name: Bee Elvy
   sort_name: Elvy
   slug: bee-elvy
+  skill: designer
+  tech_links:
+  - Twitter
   category: support
   blurb: >-
     According to ProPublica, he has been hired at GSA to work on [a website promoting use of AI within
@@ -1380,8 +1443,11 @@
 - name: Charles Ezell
   sort_name: Ezell
   slug: charles-ezell
-  background: political
+  skill: executive
   category: enabler
+  blurb: |-
+    Before the Trump inauguration, Charles Ezell's title was Branch Chief for OPM's Data & Analytics division located in Macon, GA. Through circumstances currently unknown, he was named the new Acting Director for the agency on January 20th. Since then, he has used his position to be the quintessential [enabler](/people/enablers/), providing cover (and sometimes firepower) to ensure the DOGE is able to get its way within the agency. Ths included such work as immediately replacing the CIO with Greg Hogan or issuing directives asking for data on probationary workers or other data calls with ridiculously tight deadlines. At some times, even Ezell seemed like he was caught flat-footed by DOGE's plans, including the confusing rollouts for the "Fork in the Road" or the "Five Things" emails. He also has wildly overstated the control that OPM has over federal hiring and firing.
+    He certainly has done the most work for DOGE of any acting administrator. Perhaps this is why he's still in the role months later, with nominee Scott Kupor still waiting for a floor vote in the Senate.
   positions:
   - id: opm-ezell
     type: promotion
@@ -1396,12 +1462,12 @@
 - name: Carter Farmer
   sort_name: Farmer
   slug: carter-farmer
-  background: coder
+  skill: coder
   category: enabler
   blurb: >-
     A former director of IT Systems and Solutions at the USIP, he apparently joined up with DOGE after
     they took over and destroyed that agency. Since  then, he has been named the new CIO of the Environmental
-    Protection Agency.
+    Protection Agency, presumably providing access and support for DOGE teams within the agency.
   positions:
   - id: epa-cio-farmer
     type: appointed
@@ -1419,9 +1485,11 @@
   sort_name: Farritor
   slug: luke-farritor
   age: 23
-  background: coder
+  skill: coder
   category: wrecker
   custom_path: "/wreckers/luke-farritor"
+  tech_links:
+  - SpaceX
   blurb: >-
     Although he doesn't have the same brash presence as his collegues Edward Coristine or Gavin Kliger,
     Luke Farritor has proven to be one of the most ruthless operatives among the DOGE wreckers. From the
@@ -1585,7 +1653,13 @@
   sort_name: Fennessy
   slug: conor-fennessy
   age: 32
-  background: finance
+  skill: analyst
+  blurb: >-
+    There aren't many public details about Conor Fennessy, except that he apparently has a background
+    in finance. Whatever his story, he joined up early with DOGE, starting as a part-time consultant at
+    the Department of Education before heading over to HHS and then the Department of the Interior. His
+    main specialization seems to be reviewing grants for cancellation if they match certain _verboten_
+    topics like climate change or "DEI."
   category: wrecker
   custom_path: "/wreckers/conor-fennessy"
   positions:
@@ -1625,11 +1699,25 @@
     start_date: 2025-03-03
     start_date_truth: inferred
     comment: Inferred from first reported access to CALM system
+  - id: detail-doi-fennessy
+    type: detailed
+    from: Education
+    from_truth: guessed
+    agency: DOI
+    start_date: 2025-05-(01)?
+    start_date_truth: inferred
+    table_note: Guessed because created a spreadsheet at DOI on grant cancellations around 5/07
+    source: https://www.nytimes.com/2025/05/07/climate/trump-park-service-grants-cuts.html
+    source_name: NYT
 
 - name: Joshua Fox
   sort_name: Fox, Joshua
   slug: joshua-fox
+  skill: lawyer
   category: unknown
+  blurb: >-
+    Apart from his appearance on a leaked list of DOGE's lawyers, there isn't much public information
+    about Joshua Fox.
   positions:
   - id: doge-joshua-fox
     type: appointed
@@ -1644,12 +1732,14 @@
   sort_name: Fox, Justin
   slug: justin-fox
   age: 27
+  skill: analyst
   category: wrecker
   custom_path: "/wreckers/cavanaugh-cronies"
   blurb: >-
     Joining GSA as a wrecker in mid-February, Justin Fox has mainly served as Nate Cavanaugh's sidekick
-    for the destruction of several small independent federal agencies. He was college friends with fellow
-    wrecker Marshall Wood.
+    for the destruction of several small independent federal agencies. Prior to his career as a visigoth,
+    he worked as an analyst at several different investment firms. He was all friends in college with
+    fellow wrecker Marshall Wood.
   positions:
   - id: gsa-justin-fox
     type: appointed
@@ -1684,8 +1774,14 @@
   sort_name: Fulcher
   slug: justin-fulcher
   age: 32
-  background: coder
+  skill: coder
   category: wrecker
+  blurb: >-
+    Justin Fulcher is a programmer and entrepeneur, whose last project was a telehealth startup called
+    RingMD (although there are [some questions about its success and his life story](https://www.forbes.com/sites/davidjeans/2025/03/04/pentagon-doge-official-justin-fulcher/)).
+    Justin started his work for DOGE as an employee working within the VA and keeping a low profile. More
+    recently, he has moved over to the Department of Defense, where he is a Special Advisor in Pete Hegseth's
+    office.
   positions:
   - id: va-fulcher
     type: appointed
@@ -1727,6 +1823,7 @@
   sort_name: Gallagher
   slug: nicholas-gallagher
   category: support
+  skill: lawyer
   age: 36
   blurb: >-
     Nicholas Gallagher is a lawyer working within GSA. Prior to that, he worked at a law firm Clement
@@ -1747,7 +1844,7 @@
   sort_name: Gamache-Asselin
   slug: mattieu-gamache
   age: 34
-  background: coder
+  skill: coder
   category: unknown
   blurb: >-
     Reported as present in HHS in January by ProPublica, but there are no other details about his time
@@ -1772,7 +1869,7 @@
   sort_name: Gebbia
   slug: joe-gebbia
   age: 43
-  background: executive
+  skill: executive
   blurb: >-
     Joe Gebbia is very much a known person – he is a co-founder of AirBnB and has appeared among the DOGE
     staff on several television interviews. He started in February at OPM, where he has worked to accelerate
@@ -1804,6 +1901,7 @@
 - name: Derek Geissler
   sort_name: Geissler
   slug: derek-geissler
+  skill: coder
   blurb: >-
     Apart from a single report by NBC News placing him at the Department of Labor in mid-February, there
     are no public details about Derek Geissler. According to ProPublica, "Geissler has been working at
@@ -1837,7 +1935,9 @@
   age: 42
   blurb: >-
     Patrick George is reportedly the DOGE lead in the US Navy, where he has been involved in reviewing
-    contracts. He comes from a venture capital background, but was also a Marine.
+    contracts. He comes from a venture capital background, and was also a Marine. Pete Hegseth has claimed
+    that all of the DOGE staff within the Department of Defense will be veterans.
+  skill: executive
   category: wrecker
   positions:
   - id: dod-george
@@ -1855,7 +1955,9 @@
   sort_name: Glantz
   slug: brady-glantz
   age: 27
-  background: coder
+  skill: coder
+  tech_links:
+  - SpaceX
   category: wrecker
   blurb: >-
     One of the four SpaceX engineers who were brought into the FAA on an ad hoc basis, he was only approved
@@ -1884,7 +1986,15 @@
   sort_name: Gleason
   slug: amy-gleason
   age: 53
-  background: coder
+  blurb: >-
+    Amy Gleason was suddenly thrusted into the public spotlight on Feb. 18, 2025 when the White House
+    Press Secretary identified her as the Administrator of DOGE. Conveniently, she was on vacation in
+    Mexico at the time, so the press was unable to clarify if she was also blindsided by the news. Since
+    then, she has gamely testified for a few times as the administrator of DOGE, but since early March
+    she has largely resumed working full-time as an official employee within HHS, where she had started
+    work in January 2025 for the US Digital Service. Nobody in DOGE seems to even be pretending anymore
+    that she is running things.
+  skill: coder
   category: leadership
   positions:
   - id: doge-amy-gleason
@@ -1947,6 +2057,7 @@
   sort_name: Gonzalez
   slug: mike-gonzalez
   age: 36
+  skill: executive
   category: unknown
   blurb: >-
     Mike Gonzalez was included in a roundup by Techcrunch of 19 founders and VCs who are part of DOGE.
@@ -1968,8 +2079,18 @@
   age: 54
   sort_name: Gracias
   slug: antonio-gracias
-  background: finance
+  skill: executive
+  blurb: >-
+    Antonio Gracias has had a longtime connection with Elon Musk as an early investor in both Tesla and
+    SpaceX, and he has also sat on the boards of both companies. He also was involved with Musk's purchase
+    of Twitter. He has been stationed as part of the DOGE team within Social Security Administration,
+    since late February. Over the last few months, he has regularly appeared on friendly media outlets
+    to describe alleged instances of fraud within SSA.
   category: leadership
+  tech_links:
+  - Tesla
+  - SpaceX
+  - Twitter
   positions:
   - id: ssa-antonio-gracias
     type: appointed
@@ -1999,23 +2120,36 @@
   sort_name: Grimes
   slug: michael-grimes
   age: 58
-  background: finance
+  skill: executive
+  blurb: >-
+    Michael Grimes is one of the two members of DOGE who came to the agency from Morgan Stanley, the investment
+    bank that coordinated Musk's takeover of Twitter. At Commerce, he has kept a relatively low profile,
+    but there were some reports of him subjecting staff in the [CHIPS for America program](https://www.nist.gov/chips)
+    to DOGE-style interviews.
   category: leadership
+  tech_links:
+  - Twitter
   positions:
   - id: commerce-michael-grimes
     type: appointed
-    start_date: 2025-01-29
-    start_date_truth: reported
-    source: https://www.nytimes.com/2025/01/29/us/politics/morgan-stanley-grimes-trump-commerce.html
-    source_name: NYT
-    agency: Commerce
+    start_date: 2025-02-27
+    start_date_truth: verified
     title: Senior Advisor
     title_type: advisor
-    supervisory: true
+    agency: Commerce
+    source: https://www.documentcloud.org/documents/25969697-grimes-michael-d-278e278t-2025/
+    source_name: ProPublica
 
 - name: Josh Gruenbaum
   sort_name: Gruenbaum
   slug: josh-gruenbaum
+  skill: executive
+  blurb: >-
+    Josh Gruenbaum is another DOGE member who comes from the world of private equity and mergers & acquisitions,
+    having worked at KKR & Co and Moelis. At the GSA, he was appointed as commissioner over the Federal
+    Acquisition Service (FAS) at GSA, giving him oversight over all the ways in which GSA procures _stuff_,
+    whether it's office supplies or custom software. He is the direct supervisor of Thomas Shedd and he
+    himself reports to Stephen Ehikian who also is in DOGE.
   category: enabler
   positions:
   - id: gsa-josh-gruenbaum
@@ -2030,7 +2164,7 @@
 - name: Gavin Hamrick
   sort_name: Hamrick
   slug: gavin-hamrick
-  background: political
+  skill: analyst
   category: unknown
   blurb: >-
     He was identified as part of Nate Cavanaugh's crew in a raid on IMLS, but I want to confirm he's part
@@ -2049,7 +2183,12 @@
   age: 27
   sort_name: Hanley
   slug: joshua-hanley
-  background: lawyer
+  blurb: >-
+    Part of DOGE's army of lawyers, there isn't much public information about his activities, although
+    his name did appear in the metadata for some grant cancellation documents that were sent out by NIH.
+    This doesn't mean necessarily that he was detailed to that agency; but it does indicate some role
+    in crafting the justifications given to agencies about these moves.
+  skill: lawyer
   category: support
   positions:
   - id: doge-joshua-hanley
@@ -2065,11 +2204,14 @@
   sort_name: Hanna
   slug: christina-hanna
   age: 39
-  background: hr
+  skill: administrator
   category: support
   blurb: >-
     Before DOGE, Christina Hanna worked at both SpaceX and for Elon Musk personally as an HR manager.
     Her activities at OPM since her start have not been publicly disclosed.
+  tech_links:
+  - SpaceX
+  - Musk family
   positions:
   - id: opm-christina-hanna
     type: appointed
@@ -2095,11 +2237,11 @@
   sort_name: Hassen
   slug: tyler-hassen
   age: 42
-  background: executive
+  skill: executive
   category: enabler
   blurb: >-
     As a Texas oil executive with myriad investments in the field, it's clear why Tyler Hassen would want
-    a senior role in the Department of the Interior, even though his personal connection to Musk's orbit
+    a senior role in the Department of the Interior even though his personal connection to Musk's orbit
     is unknown. At DOI, Hassen has been promoted into increasingly senior roles and responsibilities while
     being shunted into positions that do not require Senate confirmation or for him to address his vast
     conflicts of interest.
@@ -2148,6 +2290,7 @@
   sort_name: Hickey
   slug: jim-hickey
   age: 42
+  skill: executive
   blurb: >-
     Identified by ProPublica as one of the DOGE crew who have secretly been working at the Department
     of Defense, Jim Hickey was formerly a director at MITRE and before that a senior advisor for the Air
@@ -2170,7 +2313,7 @@
 - name: Vinay Hiremath
   sort_name: Hiremath
   slug: vinay-hiremath
-  background: executive
+  skill: recruiter
   category: booster
   blurb: >-
     Identified by the New York Times as part of [DOGE's pre-inauguration recruitment push](https://www.nytimes.com/2025/01/12/us/politics/elon-musk-doge-government-trump.html),
@@ -2182,7 +2325,7 @@
   sort_name: Hoffman
   slug: adam-hoffman
   age: 24
-  background: finance
+  skill: analyst
   category: wrecker
   blurb: >-
     A former staffer at the Griffin's Citadel hedge fund, he joined DOGE sometime in April and was assigned
@@ -2200,11 +2343,13 @@
   sort_name: Hogan
   slug: greg-hogan
   age: 42
-  background: coder
+  skill: coder
   blurb: >-
     It's not surprising that there are reports that OPM has been training AI models with information on
     government personnel. Greg Hogan, the agency's CIO, previously worked for an AI company that was backed
     Marc Andreesen's firm Andreesen Horowitz.
+  tech_links:
+  - Andreessen Horowitz
   category: enabler
   positions:
   - id: greg-hogan-opm
@@ -2279,17 +2424,21 @@
   slug: nicole-hollander
   sort_name: Hollander
   age: 42
-  background: executive
+  skill: executive
   category: enabler
   govt_exit_type: resigned
   govt_exit_date: 2025-05-29
   govt_exit_truth: reported
   blurb: >-
     Nicole Hollander is married to fellow DOGE operative and ad hoc leader Steve Davis, and she has worked
-    with Elon Musk at Twitter. She has reportedly been involved with securing an enclave for DOGE to work
-    from and live within GSA HQ (complete with laundry facilities). She also has been involved with efforts
-    to cancel GSA leases across the country. Her conenctions to other DOGE projects have not be publicly
-    documented yet.
+    with Elon Musk at Twitter. She had reportedly been involved with securing an enclave for DOGE to work
+    from and live within GSA HQ (complete with laundry facilities). Her biggest effort has been the ongoing
+    march to cancel GSA leases across the country. Her conenctions to other DOGE projects have not be
+    publicly documented yet, and she left the agency (and working for the government) where her husband
+    also resigned.
+  tech_links:
+  - Twitter
+  - Boring Co.
   positions:
   - id: gsa-hollander
     type: appointed
@@ -2309,14 +2458,14 @@
   sort_name: Holmes
   slug: stephanie-holmes
   age: 43
-  background: hr
+  skill: administrator
   blurb: >-
     Stephanie Holmes is an employment attorney and consultant who previously offered courses on "non-woke"
     HR and redefining DEI to be more "Christian," in a conventional conservative evangelical sense. After
     being an HR head at DOGE, she was detailed to the Department of the Interior, where she was named
     the acting Chief Human Capital Officer. At DOI, she had the CIO and other senior staff sidelined so
     she could be granted admin powers over a shared service that handles payroll for approximately half
-    of the federal government. I'm sure it's fine. What could go wrong?
+    of the federal government. I'm sure it's fine.
   category: wrecker
   positions:
   - id: doge-holmes
@@ -2370,7 +2519,7 @@
 - name: Anthony Jancso
   sort_name: Jancso
   slug: anthony-jancso
-  background: coder
+  skill: recruiter
   category: booster
   blurb: >-
     In late November and early December, Jancso was actively recruiting for DOGE on message boards for
@@ -2385,12 +2534,14 @@
   sort_name: Jegannathan
   slug: raj-jegannathan
   age: 41
-  background: executive
+  skill: executive
   blurb: >-
-    A relatively new addition to the DOGE staff based in GSA, Raj is the serving as the vice president
-    of IT for AI infrastructure and vehicle support operations at Tesla. Jegannathan is "working closely
-    with senior political leadership at the GSA on federal acquisition efforts," according to [ProPublica](https://projects.propublica.org/elon-musk-doge-tracker/#Rajasekar-Jegannathan)
-  category: unknown
+    A relatively new addition to the DOGE staff based in GSA, Raj is also working for his job as the vice
+    president of IT for AI infrastructure and vehicle support operations at Tesla. These dual-employment
+    scenarios would be unthinkable in other presidential admininstrations; for DOGE, they're routine.
+    Jegannathan is "working closely with senior political leadership at the GSA on federal acquisition
+    efforts," according to [ProPublica](https://projects.propublica.org/elon-musk-doge-tracker/#Rajasekar-Jegannathan)
+  category: support
   positions:
   - id: gsa-jegannathan
     type: appointed
@@ -2406,11 +2557,26 @@
   sort_name: Jehling
   slug: erica-jehling
   age: 40
-  background: executive
-  category: enabler
+  skill: administrator
+  blurb: >-
+    She is another SpaceX alumna; her most recent role before DOGE was as a purchasing director. She has
+    been part of the EPA team and has also been linked to the GSA.
+  category: wrecker
+  tech_links:
+  - SpaceX
   positions:
+  - id: gsa-jehling
+    type: appointed
+    sort_date: 2025-02-01
+    start_date: 2025-02-XX
+    start_date_truth: guessed
+    agency: GSA
+    table_note: Assuming GSA start because linked there by ProPublica and at time, people were detailed
+      from there
   - id: epa-jehling
-    type: unknown
+    type: detailed
+    from: GSA
+    from_truth: guessed
     start_date: 2025-02-12
     start_date_truth: reported
     source: https://www.eenews.net/articles/doge-lands-at-epa/
@@ -2421,8 +2587,10 @@
   sort_name: Kiernan
   slug: thomas-kiernan
   age: 30
-  background: coder
+  skill: coder
   category: wrecker
+  tech_links:
+  - SpaceX
   blurb: >-
     One of the four SpaceX engineers who were brought into the FAA on an ad hoc basis, he was only approved
     to work for 4 days at the agency. That short term was extended until June 4th, when it was revoked
@@ -2451,7 +2619,7 @@
   sort_name: Killian
   slug: cole-killian
   age: 24
-  background: coder
+  skill: coder
   category: wrecker
   custom_path: "/wreckers/cole-killian"
   blurb: >-
@@ -2515,7 +2683,7 @@
   sort_name: Kliger
   slug: gavin-kliger
   age: 25
-  background: coder
+  skill: coder
   category: wrecker
   custom_path: "/wreckers/gavin-kliger"
   blurb: >-
@@ -2689,7 +2857,7 @@
   sort_name: Kmiec
   slug: keenan-kmiec
   age: 45
-  background: crypto
+  skill: lawyer
   category: support
   blurb: >-
     One of the DOGE team of lawyers, there aren't many public details about Keenan Kmiec's specific contributions,
@@ -2710,7 +2878,11 @@
   sort_name: Koval
   slug: jon-koval
   age: 27
-  background: finance
+  skill: executive
+  blurb: >-
+    Jon Koval is a vice president at Valor Equity Partners, the private-equity firm operated by Antonio
+    Gracias. He has been working alongside Gracias at the SSA, but recently he was detailed to the DOJ
+    to help build up DOGE's immigrant-tracking panopticon.
   category: wrecker
   positions:
   - id: ssa-employee-6
@@ -2751,7 +2923,13 @@
   sort_name: Krause
   slug: tom-krause
   age: 47
-  background: executive
+  blurb: >-
+    Tom Krause is the CEO of Cloud Software Group, which sells the Citrix tool used for remote desktops
+    in enterprise environments. He has been involved with DOGE's attempts to control all payments flowing
+    through the Bureau of the Fiscal Service (BFS) department in the US Treasury. Due to ethics concerns,
+    he onboarded as a volunteer part-time consultant, but in mid-February he was converted to a Schedule
+    C appointment on the GS-15 payscale, which could mean he is being paid up to $195,200 a year.
+  skill: executive
   category: enabler
   positions:
   - id: onboard-treasury-thomas-krause
@@ -2775,7 +2953,7 @@
     - onboard-treasury-thomas-krause
     - gov.uscourts.nysd.636609.144.0
   - id: appoint-treasury-thomas-krause
-    type: promotion
+    type: converted
     comment: Changed to a full-time position
     start_date: 2025-02-13
     start_date_truth: verified
@@ -2795,8 +2973,10 @@
 - name: Scott Kupor
   sort_name: Kupor
   slug: scott-kupor
-  background: executive
+  skill: executive
   category: enabler
+  tech_links:
+  - Andreessen Horowitz
   blurb: >-
     A managing partner at Andreesen Horowitz, Scott Kupor was advanced by a Senate committee as the nomination
     for the permanent head of the OPM to replace Charles Ezell. However, his nomination still has not
@@ -2816,7 +2996,13 @@
   sort_name: Langmack
   slug: scott-langmack
   age: 66
-  background: executive
+  blurb: >-
+    According to his LinkedIn, Scott Langmack is also continuing to serve as the CEO of Kukun, a real
+    estate technology company, while he is also heading the DOGE team at HUD. At HUD, he seems to be focused
+    mostly on searching for fraud they're convinced is in the system and figuring out how to delete grants
+    from HUD. It's no coincidence that both of these missions will impact the poor and vulnerable the
+    most.
+  skill: executive
   category: wrecker
   positions:
   - id: hud-langmack
@@ -2836,11 +3022,11 @@
   age: 32
   blurb: >-
     A tech founder who created the site Gumroad, Sahil Lavingia showed up late to DOGE, with the goal
-    of helping veterans at the VA. Despite displaying a remarkable and frankly infuriating naivete about
-    both DOGE's real mission and how civic technology operated before, his [blog post about his experiences](https://sahillavingia.com/doge)
-    has given us the best view of how DOGE actually operated. Sadly, it's also what got him fired from
-    the "most transparent organization in government"
-  background: executive
+    of helping veterans at the VA. Despite displaying a remarkable and sometimes frankly infuriating naivete
+    about both DOGE's real mission and how civic technology operated before, his [blog post about his
+    experiences](https://sahillavingia.com/doge) has given us the best view of how DOGE actually operated.
+    Sadly, it's also what got him fired from the "most transparent organization in government"
+  skill: coder
   category: wrecker
   govt_exit_type: fired
   govt_exit_date: 2025-05-09
@@ -2866,7 +3052,7 @@
   sort_name: Lewin
   slug: jeremy-lewin
   age: 28
-  background: lawyer
+  skill: lawyer
   category: wrecker
   custom_path: "/wreckers/jeremy-lewin"
   blurb: >-
@@ -2962,8 +3148,11 @@
   sort_name: Lindemann
   slug: kendall-lindemann
   age: 24
-  background: executive
+  skill: analyst
   category: support
+  blurb: >-
+    Coming to DOGE from McKinsey, she has also been the person to testify in a deposition as a DOGE representative
+    in a court case.
   positions:
   - id: doge-lindemann
     type: appointed
@@ -2978,7 +3167,7 @@
   sort_name: Loving
   slug: kathryn-loving
   age: 44
-  background: coder
+  skill: analyst
   category: wrecker
   blurb: >-
     There aren't many details about Loving's work for DOGE, apart from a brief sighting at the EPA, where
@@ -2999,6 +3188,7 @@
   sort_name: Luby
   slug: matt-luby
   category: wrecker
+  skill: administrator
   blurb: >-
     A childhood friend and chief of staff for Vivek Ramaswamy, he has apparently stayed involved in DOGE
     even as Vivek departed. He is linked to DOGE in January 2025 and was spotted at the Department of
@@ -3016,7 +3206,7 @@
 - name: Shaun Maguire
   sort_name: Maguire
   slug: shaun-maguire
-  background: executive
+  skill: recruiter
   category: booster
   positions: []
 
@@ -3025,11 +3215,14 @@
   slug: tarak-makecha
   age: 38
   category: wrecker
+  skill: analyst
   custom_path: "/wreckers/tarak-makecha"
   blurb: >-
     Tarak Makecha is the former head of stategic planning for Tesla Energy. He has been reviewing and
     cancelling grants for the DOJ and FBI, but recent sources have also linked him to the US Agency for
     Global Media and grant cancellations there.
+  tech_links:
+  - Tesla
   positions:
   - id: opm-makecha
     type: appointed
@@ -3081,13 +3274,15 @@
 - name: Ted Malaska
   sort_name: Malaska
   slug: ted-malaska
-  background: coder
+  skill: coder
   category: wrecker
   blurb: >-
     One of the four SpaceX engineers who were brought into the FAA on an ad hoc basis, he was only approved
     to work for 4 days at the agency. It seems like that term was extended however, only to be revoked
     in the wake of Elon Musk's departure. Ted was also named in several reports where he promised to steamroll
     any federal staff who got in his way.
+  tech_links:
+  - SpaceX
   govt_exit_date: 2025-06-02
   govt_exit_truth: reported
   govt_exit_type: removed
@@ -3112,7 +3307,9 @@
   sort_name: Malcher
   slug: dave-malcher
   age: 31
-  background: finance
+  skill: analyst
+  tech_links:
+  - SpaceX
   blurb: >-
     Previously a financial analyst at SpaceX, he apparently has been detailed from GSA to the VA in recent
     months.
@@ -3140,6 +3337,9 @@
   sort_name: Mangaser
   slug: allan-mangaser
   category: wrecker
+  skill: analyst
+  tech_links:
+  - Palantir
   age: 44
   blurb: >-
     According to [ProPublica](https://projects.propublica.org/elon-musk-doge-tracker/#Allan-Mangaser),
@@ -3205,6 +3405,10 @@
   sort_name: McCord
   slug: antoine-mccord
   category: enabler
+  blurb: >-
+    A former Marine with a background in intelligence, McCord was named as the CIO for DHS the same week
+    as the DOGE delegation started there. He has been a frequent enabler of their access to various systems
+    and is reportedly also very excited about the application of AI at the agency.
   positions:
   - id: dhs-mccord
     type: appointed
@@ -3220,6 +3424,9 @@
   sort_name: McInery
   slug: paul-mcinery
   category: enabler
+  skill: executive
+  tech_links:
+  - SpaceX
   blurb: >-
     Another alumn of SpaceX, Paul McInery left the company in 2020 to be the VP of Engineering at a lawncare-oriented
     startup named Lawn Love. Despite no experience at being either in government, he was tapped to be
@@ -3244,9 +3451,10 @@
   blurb: >-
     An April addition to the DOGE lineup, Jonathan Mendelson has been part of Nate Cavanaugh's wrecking
     crew that visits small independent executive agencies to subvert and destroy them. He has been spotted
-    at the SEC and the USDFC so far, but I expect more details of their work to come out with court filings.
-    Prior to DOGE, he was an investor in the Silicon Valley VC firm Accel.
+    at the SEC and the USDFC so far, which is concerning considering he comes from a background in venture
+    capital and investment banking. Prior to DOGE, he was an investor in the Silicon Valley VC firm Accel.
   category: wrecker
+  skill: analyst
   custom_path: "/wreckers/cavanaugh-cronies"
   positions:
   - id: gsa-mendelson
@@ -3286,16 +3494,16 @@
   sort_name: Miller
   slug: katie-miller
   age: 33
-  background: political
   govt_exit_date: 2025-05-29
   govt_exit_truth: verified
   govt_exit_type: resigned
   category: booster
+  skill: administrator
   blurb: >-
     The wife of Stephen Miller, Katie is in some sort of communications role for DOGE, but it's unclear
     what her day-to-day responsibilities for his entail. Sharing the virulent anti-immigrant politics
     of her husband, she likely has been a conduit for coordinating DOGE's anti-immigration focus. Recently,
-    she notably left DOGE along Elon Musk to go work for him instead.
+    she notably left DOGE along with Elon Musk to go work for him instead.
   positions:
   - id: doge-miller
     type: appointed
@@ -3311,8 +3519,10 @@
   sort_name: Minor
   slug: clark-minor
   age: 35
-  background: coder
+  skill: coder
   category: enabler
+  tech_links:
+  - Palantir
   blurb: >-
     A former head of cloud strategy at Palantir, Clark Minor was named the CIO for Health and Human Services
     in February. in that position, he is able to grant access for DOGE staff to many systems.
@@ -3353,7 +3563,7 @@
   sort_name: Mirski
   slug: michael-mirski
   age: 32
-  background: coder
+  skill: coder
   category: wrecker
   positions:
   - id: hud-mirski
@@ -3368,7 +3578,11 @@
   sort_name: Mishory
   slug: eli-mishory
   age: 41
-  background: lawyer
+  skill: lawyer
+  blurb: >-
+    A perfect enacapsulation of the ethical quagmires surrounding DOGE. Prior to his current assignement,
+    he was the chief regulatory officer at a prediction and betting company, for whom Donald Trump Jr.
+    is an advisor. Now he gets to undo the SEC!
   category: wrecker
   custom_path: "/wreckers/cavanaugh-cronies"
   positions:
@@ -3385,8 +3599,14 @@
   sort_name: Mlodzianowski
   slug: mlodzianowski
   age: 40
-  background: hr
+  skill: administrator
   category: support
+  blurb: >-
+    The DOGE member who did HR at SpaceX. Nope, not that one. Not that one either. She actually is one
+    of four HR specialists who came from SpaceX to OPM, presumably to work on ways to reduce the federal
+    workforces. All of which leaves me wondering how HR is for employees at SpaceX.
+  tech_links:
+  - SpaceX
   positions:
   - id: opm-bryanne-mlodzianowski
     agency: OPM
@@ -3412,8 +3632,11 @@
   sort_name: Moghaddassi
   slug: aram-mohghaddassi
   age: 26
-  background: coder
+  skill: coder
   custom_path: "/wreckers/aram-mohghaddassi/"
+  tech_links:
+  - Neuralink
+  - Twitter
   blurb: >-
     A former employee at both X and Neuralink, Aram Moghaddassi arrived as a hire at the Department of
     Labor in February and has been detailed to other agencies like Social Security or DHS to work at important
@@ -3507,12 +3730,15 @@
   sort_name: Monroe
   slug: justin-monroe
   age: 36
-  background: coder
+  skill: coder
   category: wrecker
   blurb: >-
     Justin Monroe started at the OPM about a week after the Inauguration and was dispatched to the FBI
     the following day as a Senior Advisor to the Director. It's unclear what role he might be playing
-    in the Attorney General's own "JUST-US" project to bring DOGE-style interventions to the DOJ.
+    in the Attorney General's own "JUST-US" project to bring DOGE-style interventions to the DOJ. Prior
+    to DOGE, he was a SpaceX employee.
+  tech_links:
+  - SpaceX
   positions:
   - id: opm-justin-monroe
     type: appointed
@@ -3552,7 +3778,7 @@
   sort_name: Morgan
   slug: brooks-morgan
   age: 39
-  background: executive
+  skill: administrator
   category: wrecker
   positions:
   - id: onboard-education-employee-4
@@ -3582,7 +3808,7 @@
   sort_name: Morse
   slug: trent-morse
   category: enabler
-  background: political
+  skill: lawyer
   blurb: >-
     Technically not a member of DOGE, Trent Morse has often coordinated with them on their operations
     against smaller independent agencies. In several examples, when the Trump Administration has moved
@@ -3601,7 +3827,7 @@
 - name: Elon Musk
   sort_name: Musk
   slug: elon-musk
-  background: executive
+  skill: executive
   category: leadership
   govt_exit_type: resigned
   govt_exit_date: 2025-05-28
@@ -3610,7 +3836,7 @@
     An obscure and modest businessman, he has served as merely a humble advisor to the administration,
     just raising his hand meekly during occasional meetings to offer a suggestion or two. Or not. He's
     just a humble little advisor working for a non-agency that doesn't do anything important enough to
-    keep records for.
+    keep records for. That's the story. Yeah... that's it.
   positions:
   - id: musk-doge
     type: appointed
@@ -3624,7 +3850,12 @@
 - name: Todd Newnam
   sort_name: Newnam
   slug: todd-newnam
-  background: executive
+  skill: executive
+  blurb: >-
+    One of the newer DOGE staffers who have been assigned to the IRS, Todd Newnam was the CEO of an IT
+    Consulting firm located in South Carolina. Prior to that, he was associated with the Carlyle Group.
+    His financial disclosure reveal that he also owns shares of Intuit, the maker of TurboTax, which is
+    concerning form someone being given oversight powers at the IRS.
   age: 42
   category: wrecker
   positions:
@@ -3637,7 +3868,7 @@
     sge: false
     appt_type: Schedule C
     pay_grade: GS-15
-    table_note: Salary range for GS-15 in DC
+    table_note: Salary range for GS-15 in DC, disclosure
     salary: "$167,603 - $195,200"
     fuzz: Identity is only revealed in a court filing, using ethics training date for start date
     comment: NYT says he is a Senior Advisor
@@ -3664,7 +3895,7 @@
   sort_name: Park
   slug: donald-park
   age: 45
-  background: finance
+  skill: analyst
   category: wrecker
   blurb: >-
     Mr. Park is the cofounder of a private equity company named Ionic Partners and located in Austin,
@@ -3699,6 +3930,7 @@
 - name: Matthew Parkhurst-Session
   sort_name: Parkhurst
   slug: matthew-parkhurst
+  skill: executive
   category: support
   blurb: >-
     He is the founder/CEO of cloud company Antimetal. According to ProPublica, he has been linked to the
@@ -3722,7 +3954,7 @@
   sort_name: Peters
   slug: noah-peters
   age: 39
-  background: lawyer
+  skill: lawyer
   category: support
   positions:
   - id: noah-peters-opm
@@ -3751,7 +3983,7 @@
   sort_name: Rajpal
   slug: nikhil-rajpal
   age: 30
-  background: coder
+  skill: coder
   category: wrecker
   blurb: >-
     An arrival to DOGE from Twitter, Nikhil Rajpal was a visible member in early Wrecker raids (including
@@ -3826,7 +4058,7 @@
   sort_name: Ramada
   slug: adam-ramada
   age: 35
-  background: finance
+  skill: coder
   category: wrecker
   blurb: >-
     Adam Ramada is thus far the only DOGE wrecker to have testified under oath in a deposition, appearing
@@ -3897,7 +4129,7 @@
   sort_name: Raynor
   slug: austin-raynor
   age: 36
-  background: lawyer
+  skill: lawyer
   category: support
   positions:
   - id: opm-austin-raynor
@@ -3928,7 +4160,7 @@
   sort_name: Rehling
   slug: payton-rehling
   age: 27
-  background: coder
+  skill: coder
   category: wrecker
   custom_path: "/wreckers/payton-rehling"
   positions:
@@ -3989,8 +4221,18 @@
   sort_name: Riedel
   slug: ryan-riedel
   age: 37
-  background: coder
+  skill: coder
   category: enabler
+  govt_exit_date: 2025-03-07
+  govt_exit_truth: reported
+  govt_exit_type: resigned
+  blurb: >-
+    Before being named to the role of Chief Information Officer at the Department of Energy, Ryan Riedel
+    was a lead network security engineer at SpaceX. After initially granting elevated access to Adam Ramada
+    and Luke Farritor, he lasted for about a month in the role before resigning and presumably leaving
+    government service.
+  tech_links:
+  - SpaceX
   positions:
   - id: energy-ryan-riedel
     type: appointed
@@ -4009,7 +4251,7 @@
   sort_name: Riley
   slug: rachel-riley
   age: 33
-  background: executive
+  skill: administrator
   category: wrecker
   positions:
   - id: hhs-rachel-riley
@@ -4053,7 +4295,7 @@
   sort_name: Roussos
   slug: chris-roussos
   age: 60
-  background: executive
+  skill: executive
   category: enabler
   positions:
   - id: va-roussous
@@ -4068,8 +4310,20 @@
   sort_name: Russo
   slug: mike-russo
   age: 67
-  background: executive
+  skill: executive
   category: enabler
+  blurb: >-
+    Reportedly a favorite of incoming SSA commissioner Frank Bisignano, Mike Russo was named the CIO of
+    Social Security in early February and immediately advocated for the expedited onboarding of Akash
+    Bobba. The DOGE contingent eventually swelled to 11 engineers under his watch. In late March, he was
+    removed from the CIO position and demoted to a Senior Advisor, reportedly because the Trump administration
+    was displeased that he cooperated with a judge's order to revoke DOGE access to SSA systems. However,
+    recent reports by the _New York Times_ claim that he is effectively acting as a co-CIO with Aram Mohgaddassi
+    under Frank Bisignano's leadership, so perhaps he has returned to good graces. Prior to government
+    service, he was a senior executive at Shift4 Payments, which is an investor in SpaceX and a payment
+    processor for Starlink.
+  tech_links:
+  - SpaceX
   positions:
   - id: ssa-mike-russo-cio
     type: appointed
@@ -4106,7 +4360,7 @@
   sort_name: Scales
   slug: amanda-scales
   age: 34
-  background: hr
+  skill: administrator
   category: leadership
   blurb: An associate of Elon Musk from xAI, Amanda Scales has been located at GSA since Day 1.
   positions:
@@ -4175,8 +4429,16 @@
   sort_name: Schutt
   slug: kyle-schutt
   age: 37
-  background: coder
+  skill: coder
   category: wrecker
+  blurb: >-
+    Kyle Schutt is from the intersection of technologist and Republican party politics, having built an
+    online fundraising platform Revv, that is frequently used by the GOP. He was also [linked to the development](https://xcancel.com/samwcyo/status/1889527715029557607)
+    of DOGE's website [doge.gov](https://doge.gov/), which was [hacked and vandalized at launch because
+    he left the database accessible to the outside world](https://www.404media.co/anyone-can-push-updates-to-the-doge-gov-website-2/),
+    and his computer has been [infected with credential-stealing malware multiple times](https://cyberpress.org/stolen-credentials-from-doge-employee/).
+    For its part, DOGE gave him access to a highly-sensitive database containing information on unaccompanied
+    migrant children and admin credentials at CISA.
   custom_path: "/wreckers/kyle-schutt"
   positions:
   - id: internal-dhs-cbp-schutt
@@ -4272,7 +4534,7 @@
   sort_name: Sennott
   age: 26
   slug: riley-sennott
-  background: coder
+  skill: coder
   category: wrecker
   positions:
   - id: gsa-sennott
@@ -4301,7 +4563,7 @@
   sort_name: Shang
   slug: bryton-shang
   age: 33
-  background: coder
+  skill: coder
   category: enabler
   positions:
   - id: noaa-shang-cio
@@ -4317,9 +4579,19 @@
   sort_name: Shaotran
   slug: ethan-shaotran
   age: 22
-  background: coder
+  skill: coder
   category: wrecker
   custom_path: "/wreckers/ethan-shaotran/"
+  blurb: >-
+    "I dropped out of Harvard and came here to serve my country... most of campus hates me now" is what
+    Ethan Shaotran boasted about his alma mater in a recent TV interview. He dropped out of the school
+    in his senior year to join DOGE, where he was part of the initial wrecking crew formed in GSA. Why
+    would they hate him? For going to the Department of Education to destroy student loan programs under
+    the cover of fighting fraud? For being part of the same organization that has destroyed medical research
+    grants? For joining the DOGE contingents threatening to make major changes within USPS and Social
+    Security? For being part of Nate Cavanaugh's wreecking crew as they have demolished small independent
+    agencies like the USIP or USADF? Was he really serving his country or greedy people with ulterior
+    motives? Maybe one day he will figure it out.
   positions:
   - id: gsa-ethan-shaotran
     type: appointed
@@ -4427,7 +4699,7 @@
   sort_name: Shea
   slug: ryan-shea
   age: 34
-  background: crypto
+  skill: coder
   category: wrecker
   positions:
   - id: detail-gsa-hhs-shea
@@ -4455,8 +4727,21 @@
   sort_name: Shedd
   slug: thomas-shedd
   age: 28
-  background: coder
+  skill: coder
   category: enabler
+  blurb: >-
+    When he was named the Deputy Administrator of FAS (under Josh Gruenbaum) and the head of GSA's innovative
+    Technology Transformation Service (which includes 18F and login.gov), the press releases touted his
+    most recent experience, 8 years of being a software developer at Tesla. It turns out that was his
+    only experience, and he hasn't ever been a senior executive or worked within government before. Instead,
+    his main skills seem to be a loyalty to Musk and a willingness to destroy the parts of the agency
+    in his care if asked. To this end, he has eliminated 18F and tried to gain admin access to services
+    like Notify.gov or Login.gov, that would give him unprecedented control over government services.
+    He also has been a big booster of replacing staff with AI. Since March, he has also been serving as
+    the CIO at the Department of Labor, an arrangement that largely seems to exist so he can grant access
+    for sensitive systems to DOGE staff.
+  tech_links:
+  - Tesla
   positions:
   - id: gsa-thomas-shedd
     type: appointed
@@ -4486,6 +4771,7 @@
   sort_name: Shen
   slug: roland-shen
   category: wrecker
+  skill: coder
   positions:
   - id: treasury-roland-shen
     type: appointed
@@ -4501,7 +4787,7 @@
   sort_name: Simonpour
   slug: alex-simonpour
   age: 28
-  background: coder
+  skill: coder
   category: wrecker
   positions:
   - id: gsa-simonpour
@@ -4540,6 +4826,7 @@
   sort_name: Slagh
   slug: mike-slagh
   category: wrecker
+  skill: executive
   age: 40
   blurb: >-
     The founder of a company that apparently connects defense contractors with government buyers. Before
@@ -4562,11 +4849,13 @@
   sort_name: Smeal
   slug: sam-smeal
   age: 29
-  background: coder
+  skill: coder
   blurb: >-
     One of the four SpaceX engineers who were brought into the FAA on an ad hoc basis, he was only approved
     to work for 4 days at the agency. That term was apparently extended until June 2, when their access
     was abruptly revoked.
+  tech_links:
+  - SpaceX
   category: wrecker
   govt_exit_date: 2025-06-02
   govt_exit_truth: reported
@@ -4592,7 +4881,7 @@
   sort_name: Smith
   slug: brad-smith
   age: 42
-  background: executive
+  skill: executive
   category: enabler
   positions:
   - id: detail-doge-hhs-smith
@@ -4665,8 +4954,11 @@
   sort_name: Stanley
   slug: christopher-stanley
   age: 33
-  background: coder
+  skill: coder
   category: wrecker
+  tech_links:
+  - Twitter
+  - SpaceX
   blurb: >-
     Christopher Stanley had been a long-time aide of Elon Musk with positions as a Security Engineer at
     both SpaceX and X.com before his arrival at DOGE. He kicked off his involvement by greeting jailed
@@ -4729,7 +5021,7 @@
 - name: Mark Steffensen
   sort_name: Steffensen
   slug: mark-steffensen
-  background: lawyer
+  skill: lawyer
   category: enabler
   positions:
   - id: ssa-steffensen
@@ -4763,6 +5055,7 @@
   slug: jack-stein
   age: 25
   category: wrecker
+  skill: analyst
   custom_path: "/wreckers/cavanaugh-cronies"
   blurb: >-
     Recently an investment banking associate at Salem Partners, he is one of the newer members of Nate
@@ -4782,6 +5075,10 @@
   sort_name: Stube
   slug: brian-stube
   category: wrecker
+  skill: analyst
+  blurb: >-
+    Brian Stube was a "quant" at the the hedge fund Citadel before 2012, which is also where Adam Hoffman
+    works.
   positions:
   - id: dot-stube
     type: appointed
@@ -4870,7 +5167,7 @@
   sort_name: Terrell
   slug: zach-terrell
   age: 25
-  background: crypto
+  skill: coder
   category: wrecker
   positions:
   - id: hhs-terrell
@@ -4905,7 +5202,7 @@
 - name: Katrine Trampe
   sort_name: Trampe
   age: 29
-  background: finance
+  skill: analyst
   slug: katrine-trampe
   category: wrecker
   blurb: >-
@@ -4927,7 +5224,7 @@
 - name: Cary Volpert
   sort_name: Volpert
   slug: cary-volpert
-  background: coder
+  skill: coder
   category: wrecker
   positions:
   - id: va-volpert
@@ -4942,7 +5239,7 @@
   sort_name: Vought
   slug: russell-vought
   category: leadership
-  background: political
+  skill: executive
   positions:
   - id: omb-vought
     type: appointed
@@ -4969,6 +5266,7 @@
   slug: yinon-weiss
   age: 47
   category: wrecker
+  skill: coder
   blurb: >-
     A former Army Special Forces captain, Yinon Weiss is the founder of a startup that sells software
     for automobile repair shops.
@@ -4989,6 +5287,10 @@
   slug: linda-whitridge
   sort_name: Whitridge
   category: wrecker
+  blurb: >-
+    There aren't many public details about Linda Whitridge that provide clues to what she is doing for
+    DOGE at the IRS. Her ethics disclosures have revealed that she owns shares of Intuit (who make TurboTax)
+    which is a glaring conflict of interest for someone in her role.
   positions:
   - id: treasury-whitridge
     type: unknown
@@ -5009,7 +5311,7 @@
   sort_name: Wick
   slug: jordan-wick
   age: 28
-  background: coder
+  skill: coder
   category: wrecker
   custom_path: "/wreckers/jordan-wick"
   blurb: >-
@@ -5107,7 +5409,7 @@
 - name: Joanna Wischer
   slug: joanna-wischer
   sort_name: Wischer
-  background: political
+  skill: administrator
   category: support
   positions:
   - id: joanna-wischer-opm
@@ -5136,6 +5438,7 @@
   sort_name: Wood
   age: 27
   slug: marshall-wood
+  skill: analyst
   category: wrecker
   blurb: >-
     A former investment banking associate at Jefferies, Marshall Wood is part of the wrecking crew led
@@ -5167,8 +5470,10 @@
   sort_name: Wunderly
   slug: ryan-wunderly
   age: 26
-  background: coder
+  skill: coder
   category: wrecker
+  tech_links:
+  - Anduril
   positions:
   - id: irs-wunderly
     type: appointed
@@ -5182,7 +5487,7 @@
   sort_name: Young
   slug: chris-young
   age: 36
-  background: political
+  skill: executive
   category: enabler
   positions:
   - id: opm-chris-young
@@ -5223,7 +5528,7 @@
   sort_name: Youngs
   age: 29
   category: wrecker
-  background: finance
+  skill: coder
   custom_path: "/wreckers/cavanaugh-cronies"
   positions:
   - id: detail-peace-corps-youngs

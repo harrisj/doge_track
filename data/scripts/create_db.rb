@@ -80,7 +80,7 @@ DB.create_table! :people do
   string :slug, null: false, unique: true
   string :custom_path
   integer :age
-  string :background
+  string :skill
   string :category, null: false, default: 'unknown'
   boolean :own_page, null: false, default: false
   string :blurb
@@ -90,6 +90,7 @@ DB.create_table! :people do
   string :govt_exit_truth
   string :govt_exit_type
   string :table_note
+  string :tech_links
 end
 
 DB.create_table! :questions do

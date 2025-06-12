@@ -256,15 +256,13 @@ end %}
   end
 %}
 
-{% macro "person_background" do |person|
-    if person.background.nil?
-      ""
-    elsif person.background == "hr"
-      "HR"
+{% macro 'person_skill' do |person| 
+    if person.skill.nil?
+      ''
     else
-      person.background.titleize
+      person.skill.titleize
     end
-   end
+  end
 %}
 
 {% macro "position_title" do |position|
@@ -485,7 +483,7 @@ end %}
       end
 
       site.data.agencies.each do |agency|
-        out.gsub!(/\b#{agency.id}\b/, agency_link(agency)) # if agency.id =~ /^[A-Z]+$/
+        out.gsub!(/\b#{agency.id}\b/, agency_link(agency)) if agency.id =~ /^[A-Z]+$/
         out.gsub!(/\b#{agency.name}\b/, agency_link(agency, agency.name))
       end
     end

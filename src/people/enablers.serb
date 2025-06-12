@@ -20,7 +20,7 @@ At major agencies, the DOGE staff are given titles like "Senior Advisor" and sit
     <th>Agency</th>
     <th>DOGE Leader</th>
     <th>Advisors</th>
-    <th>Titles</th>
+    <th>Adv. Titles</th>
   </tr>
 </thead>
 <tbody>
@@ -94,7 +94,7 @@ In February, OPM urged [agencies to reclassify how Chief Information Officers ar
     <th>Name</th>
     <th>Agency</th>
     <th>Date</th>
-    <th>Title</th>
+    <th>Tech Links</th>
     <th>Access Grants</th>
   </tr>
 </thead>
@@ -105,7 +105,7 @@ In February, OPM urged [agencies to reclassify how Chief Information Officers ar
     <td class="align-top">{{ person_link(pos.name) }}</td>
     <td class="align-top">{{ agency_link(pos.agency_id)}}</td>
     <td class="align-top">{{render EdtfFormat.new(pos.start_date, :compact, :filled) }}</td>
-    <td class="align-top">{{ pos.title }}</td>
+    <td class="align-top">{{ pos.person.tech_links }}</td>
     <td class="align-top">{{ access_granted.map(&:name).uniq.compact | people_links }}</td>
   </tr>
 {% end %}

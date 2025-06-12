@@ -6569,6 +6569,74 @@
   - CMS
   - HHS
   documents: []
+- id: detail-doi-fennessy
+  type: detailed
+  agency_id: DOI
+  name: Conor Fennessy
+  doge_alias_id:
+  from_agency_id: Education
+  from_truth: guessed
+  start_date: 2025-05-(01)?
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: 2025-05-(01)?
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://www.nytimes.com/2025/05/07/climate/trump-park-service-grants-cuts.html
+  source_name: NYT
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Guessed because created a spreadsheet at DOI on grant cancellations around 5/07
+  replaced_by:
+  same_as:
+  agency:
+    id: DOI
+    name: Department of the Interior
+    slug: interior
+    page_slug: interior
+    short_name: DOI
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/interior"
+  from_agency:
+    id: Education
+    name: Department of Education
+    slug: education
+    page_slug: education
+    short_name: ED
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/education"
+  agency_and_parent:
+  - DOI
+  documents: []
 - id: doge-joshua-fox
   type: appointed
   agency_id: DOGE
@@ -7880,8 +7948,8 @@
   doge_alias_id:
   from_agency_id:
   from_truth:
-  start_date: '2025-01-29'
-  start_date_truth: reported
+  start_date: '2025-02-27'
+  start_date_truth: verified
   start_date_event:
   start_source:
   start_source_name:
@@ -7891,7 +7959,7 @@
   end_source:
   end_source_name:
   end_type:
-  sort_date: '2025-01-29'
+  sort_date: '2025-02-27'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -7907,10 +7975,10 @@
   title: Senior Advisor
   title_type: advisor
   series:
-  supervisory: true
+  supervisory:
   office:
-  source: https://www.nytimes.com/2025/01/29/us/politics/morgan-stanley-grimes-trump-commerce.html
-  source_name: NYT
+  source: https://www.documentcloud.org/documents/25969697-grimes-michael-d-278e278t-2025/
+  source_name: ProPublica
   reimbursed:
   reimbursement_amount:
   comment:
@@ -9040,13 +9108,71 @@
   agency_and_parent:
   - GSA
   documents: []
-- id: epa-jehling
-  type: unknown
-  agency_id: EPA
+- id: gsa-jehling
+  type: appointed
+  agency_id: GSA
   name: Erica Jehling
   doge_alias_id:
   from_agency_id:
   from_truth:
+  start_date: 2025-02-XX
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-01'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Assuming GSA start because linked there by ProPublica and at time, people were detailed from there
+  replaced_by:
+  same_as:
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - GSA
+  documents: []
+- id: epa-jehling
+  type: detailed
+  agency_id: EPA
+  name: Erica Jehling
+  doge_alias_id:
+  from_agency_id: GSA
+  from_truth: guessed
   start_date: '2025-02-12'
   start_date_truth: reported
   start_date_event:
@@ -9095,6 +9221,16 @@
     parent_id:
     obj_type: Agency
     path: "/agencies/epa"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
   agency_and_parent:
   - EPA
   documents: []
@@ -10488,7 +10624,7 @@
     file: gov.uscourts.nysd.636609.144.0.pdf
     url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
 - id: appoint-treasury-thomas-krause
-  type: promotion
+  type: converted
   agency_id: Treasury
   name: Tom Krause
   doge_alias_id:
@@ -13944,7 +14080,7 @@
   reimbursement_amount:
   comment: NYT says he is a Senior Advisor
   qualifications:
-  table_note: Salary range for GS-15 in DC
+  table_note: Salary range for GS-15 in DC, disclosure
   replaced_by:
   same_as:
   agency:

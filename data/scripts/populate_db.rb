@@ -86,6 +86,7 @@ end
 people_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'people.yaml'), symbolize_names: true)
 
 people_yaml.each do |p_hash|
+  p_hash[:tech_links] = p_hash[:tech_links].join(', ') if p_hash[:tech_links]
   p = Person.new(p_hash.except(:positions, :alias))
 
   p_hash.fetch(:positions, []).each do |pos_hash|

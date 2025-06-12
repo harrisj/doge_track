@@ -9,7 +9,7 @@
     -  **DOGE** (2025-02-XX to ??) 
 
 # Baris Akis
-- category: booster
+- category: leadership
 
 # Jacob Altik
 - category: wrecker
@@ -322,6 +322,7 @@
         - FBIS: Financial Business Intelligence System: 2025-03-07 - 2025-04-18
     -  **CMS** (2025-03-03 to ??) 
         - CALM: CMS Acquisition Lifecycle Management System: 2025-02-03 - 2025-04-18
+    -  **DOI** (2025-05-(01)? to ??) 
 
 # Joshua Fox
 - category: unknown
@@ -397,7 +398,7 @@
 # Michael Grimes
 - category: leadership
 - positions:
-    -  **Commerce** (2025-01-29 to ??) **Senior Advisor**
+    -  **Commerce** (2025-02-27 to ??) Senior Advisor
 
 # Josh Gruenbaum
 - category: enabler
@@ -475,13 +476,14 @@
 - category: booster
 
 # Raj Jegannathan
-- category: unknown
+- category: support
 - positions:
     -  **GSA** (2025-04-(24)~ to ??) Data Engineer
 
 # Erica Jehling
-- category: enabler
+- category: wrecker
 - positions:
+    -  **GSA** (2025-02-XX to ??) 
     -  **EPA** (2025-02-12 to ??) 
         - EAS: EPA Acquisition System: 2025-02-12 - ongoing
 

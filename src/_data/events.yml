@@ -131,7 +131,7 @@
   - name: Baris Akis
     slug: baris-akis
     sort_name: Akis
-    category: booster
+    category: leadership
   - name: Marc Andreessen
     slug: mark-andreesen
     sort_name: Andreessen
@@ -264,7 +264,7 @@
   - name: Baris Akis
     slug: baris-akis
     sort_name: Akis
-    category: booster
+    category: leadership
   - name: Marc Andreessen
     slug: mark-andreesen
     sort_name: Andreessen
@@ -952,7 +952,7 @@
   - name: Baris Akis
     slug: baris-akis
     sort_name: Akis
-    category: booster
+    category: leadership
   - name: Marc Andreessen
     slug: mark-andreesen
     sort_name: Andreessen
@@ -1078,7 +1078,7 @@
   - name: Baris Akis
     slug: baris-akis
     sort_name: Akis
-    category: booster
+    category: leadership
   - name: Elon Musk
     slug: elon-musk
     sort_name: Musk
@@ -1375,7 +1375,10 @@
   date: '2025-01-28'
   sort_date: '2025-01-28'
   time:
-  text: Two DOGE staffers attempted to force water pumps to be turned on in a large reservoir in California for a photo op
+  text: >-
+    Two DOGE staffers – Tyler Hassen and Bryton Shang – show up an Army Corp of Engineers dam in California and attempt to turn on water pumps to drain
+    more wate one of California's reservoirs to help fight fires in LA. This dam fed water to central California, far away from the LA wildfires the water
+    was supposed to help.
   fuzz:
   comment:
   source: https://www.cnn.com/2025/03/07/climate/trump-doge-california-water/index.html
@@ -1403,8 +1406,10 @@
   - DOI
   obj_type: Event
   linkified_text: >
-    Two <a class="link-hover" href="/agencies/white-house">DOGE</a> staffers attempted to force water pumps to be turned on in a large reservoir in California
-    for a photo op
+    Two <a class="link-hover" href="/agencies/white-house">DOGE</a> staffers – <a class="link-hover" href="/people/enabler-staff#tyler-hassen">Tyler Hassen</a>
+    and <a class="link-hover" href="/people/enabler-staff#bryton-shang">Bryton Shang</a> – show up an Army Corp of Engineers dam in California and attempt
+    to turn on water pumps to drain more wate one of California’s reservoirs to help fight fires in LA. This dam fed water to central California, far away
+    from the LA wildfires the water was supposed to help.
 - id: hRNeze4y
   type: access
   date: '2025-01-28'
@@ -4009,6 +4014,37 @@
   linkified_text: >
     Trump issues an executive order giving <a class="link-hover" href="/agencies/white-house">DOGE</a> teams in every agency final approval on any hiring
     decisions. It also expresses a rule that an agency can only hire 1 new person if 4 people have left.
+- id: 6Zr8aMzw
+  type: report
+  date: '2025-02-11'
+  sort_date: '2025-02-11'
+  time:
+  text: Online security researchers find evidence that the DOGE website was developed and hosted by Outburst Data, a company run and operated by Kyle Schutt.
+  fuzz:
+  comment:
+  source: https://xcancel.com/samwcyo/status/1889527715029557607
+  source_title:
+  source_name: X.com
+  case_no:
+  track_id:
+  system_id:
+  names:
+  - Kyle Schutt
+  agency_ids:
+  - DOGE
+  alias_ids: []
+  names_aliases:
+  - name: Kyle Schutt
+    slug: kyle-schutt
+    sort_name: Schutt
+    category: wrecker
+  agencies_parents:
+  - DOGE
+  - EOP
+  obj_type: Event
+  linkified_text: >
+    Online security researchers find evidence that the <a class="link-hover" href="/agencies/white-house">DOGE</a> website was developed and hosted by Outburst
+    Data, a company run and operated by <a class="link-hover" href="/wreckers/kyle-schutt">Kyle Schutt</a>.
 - id: iG5SW62c
   type: legal
   date: '2025-02-11'
@@ -12029,7 +12065,7 @@
   - name: Baris Akis
     slug: baris-akis
     sort_name: Akis
-    category: booster
+    category: leadership
   - name: Anthony Armstrong
     slug: anthony-armstrong
     sort_name: Armstrong
@@ -17145,6 +17181,41 @@
   linkified_text: >
     <a class="link-hover" href="/people/enabler-staff#frank-bisignano">Frank Bisignano</a> is confirmed by the Senate as Commissioner of the <a class="link-hover"
     href="/agencies/social-security">Social Security Administration</a>
+- id: 6muY9B4b
+  type: disruption
+  date: '2025-05-07'
+  sort_date: '2025-05-07'
+  time:
+  text: >-
+    A spreadsheet created by Conor Fennessy outlines a reported $26 million in grant reductions for programs in the National Parks, including those identified
+    as "DEI" or studying climate change. It also axes a popular Scientists in Parks program, that provides educational opportunities for early-career scientists
+    and students. A $400K project to make a park accessible for children with disabilities was targeted because it was "DEI."
+  fuzz:
+  comment:
+  source: https://www.nytimes.com/2025/05/07/climate/trump-park-service-grants-cuts.html
+  source_title:
+  source_name: NYT
+  case_no:
+  track_id:
+  system_id:
+  names:
+  - Conor Fennessy
+  agency_ids:
+  - DOI
+  alias_ids: []
+  names_aliases:
+  - name: Conor Fennessy
+    slug: conor-fennessy
+    sort_name: Fennessy
+    category: wrecker
+  agencies_parents:
+  - DOI
+  obj_type: Event
+  linkified_text: >
+    A spreadsheet created by <a class="link-hover" href="/wreckers/conor-fennessy">Conor Fennessy</a> outlines a reported $26 million in grant reductions
+    for programs in the National Parks, including those identified as “DEI” or studying climate change. It also axes a popular Scientists in Parks program,
+    that provides educational opportunities for early-career scientists and students. A $400K project to make a park accessible for children with disabilities
+    was targeted because it was “DEI.”
 - id: RXwHP9h5
   type: report
   date: '2025-05-07'

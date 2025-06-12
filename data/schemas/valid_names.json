@@ -126,6 +126,7 @@
             "Frank Schuler",
             "Kyle Schutt",
             "Riley Sennott",
+            "Ryan Shea",
             "Mike Slagh",
             "Sam Smeal",
             "Bryton Shang",
@@ -154,18 +155,6 @@
             "Ryan Wunderly",
             "Chris Young",
             "Bridget Youngs"
-        ]
-    },
-    "doge_backgrounds": {
-        "description": "The backgrounds of DOGE people",
-        "enum": [
-            "coder",
-            "executive",
-            "lawyer",
-            "finance",
-            "crypto",
-            "hr",
-            "political"
         ]
     },
     "doge_categories": {
@@ -355,6 +344,32 @@
             "chief_counsel",
             "other",
             "unknown"
+        ]
+    },
+    "skill_types": {
+        "enum": [
+            "lawyer",
+            "strategic",
+            "political",
+            "designer",
+            "administrator",
+            "analyst",
+            "coder",
+            "executive",
+            "recruiter"
+        ]
+    },
+    "tech_link_values": {
+        "enum": [
+            "Andreessen Horowitz",
+            "Boring Co.",
+            "Human Capital",
+            "Neuralink",
+            "Musk family",
+            "Palantir",
+            "SpaceX",
+            "Tesla",
+            "Twitter"
         ]
     }
 }

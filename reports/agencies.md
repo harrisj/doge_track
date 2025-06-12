@@ -54,7 +54,7 @@
 # Commerce Department
 - slug: commerce
 - people:
-  - **Michael Grimes** (2025-01-29) Senior Advisor
+  - **Michael Grimes** (2025-02-27) Senior Advisor
 
 # Consumer Financial Protection Bureau
 - slug: cfpb
@@ -157,6 +157,7 @@
   - **Tyler Hassen** (2025-03-07 - 2025-04-XX) Acting Assistant Secretary of Policy, Management and Budget
   - **Matt Luby** (2025-04-17)
   - **Tyler Hassen** (2025-04-XX)
+  - **Conor Fennessy** (2025-05-(01)?) (detailed from Education)
   - **Paul McInery** (2025-05-05) Chief Information Officer
 - systems:
     - FPPS: Federal Personnel Payroll System
@@ -314,7 +315,7 @@
 - slug: epa
 - people:
   - **Cole Killian** (2025-02-04) Federal Detailee (detailed from DOGE)
-  - **Erica Jehling** (2025-02-12)
+  - **Erica Jehling** (2025-02-12) (detailed from GSA)
   - **Kathryn Armstrong Loving** (2025-02-12) Federal Detailee
   - **Carl Coe** (2025-02-XX) (detailed from DOGE)
   - **Carter Farmer** (2025-05-(08)~) Chief Information Officer
@@ -401,13 +402,13 @@
 - slug: gsa
 - people:
   - **Edward Coristine** (2025-01-(20)~)
-  - **OPM-05 (Gavin Kliger)** (detailed from OPM)
+  - **Jeremy Lewin** (2025-01-20)
   - **OPM-04 (Edward Coristine)** (2025-01-20) Senior Advisor
   - **Ethan Shaotran** (2025-01-20)
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
   - **Nicole Hollander** (2025-01-20 - 2025-05-29)
-  - **Jeremy Lewin** (2025-01-20)
+  - **OPM-05 (Gavin Kliger)** (detailed from OPM)
   - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
   - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
   - **Kyle Schutt** (2025-02-(18)~)
@@ -416,6 +417,7 @@
   - **Riley Sennott** (2025-02-12)
   - **Donald Park** (2025-02-XX)
   - **Derek Geissler** (2025-02-XX)
+  - **Erica Jehling** (2025-02-XX)
   - **Matthew Parkhurst-Session** (2025-03-03) Senior Advisor
   - **Emily Bryant** (2025-03-XX)
   - **Justin Fox** (2025-03-XX)
