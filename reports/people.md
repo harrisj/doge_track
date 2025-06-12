@@ -931,7 +931,7 @@
     -  **FAA** (2025-02-16 to 2025-06-02) Senior Advisor
 
 # Brad Smith
-- category: leader
+- category: leadership
 - positions:
     -  **DOGE** (2025-02-XX to ??) 
     -  **HHS** (2025-02-XX to 2025-03-04) 
