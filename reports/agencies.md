@@ -449,7 +449,7 @@
   - **Jeremy Lewin** (2025-02-21) (detailed from GSA)
   - **Brad Smith** (2025-02-XX - 2025-03-04) (detailed from DOGE)
   - **Amy Gleason** (2025-02-XX) (detail)
-  - **Brad Smith** (2025-03-04) Senior Advisor
+  - **Brad Smith** (2025-03-04 - 2025-05-23) Senior Advisor
   - **Amy Gleason** (2025-03-04) Expert/Consultant
   - **Edward Coristine** (2025-03-05) (detailed from GSA)
   - **Marko Elez** (2025-03-05) (detailed from DOL)
@@ -644,7 +644,7 @@
   - **OPM-08 (James Sullivan)** (2025-01-20) Senior Advisor to the Director
   - **Noah Peters** (2025-01-20) Senior Advisor
   - **Amanda Scales** (2025-01-20 - 2025-03-28) Chief of Staff
-  - **Anthony Armstrong** (2025-01-20) Expert
+  - **Anthony Armstrong** (2025-01-20 - 2025-04-(30)~) Expert
   - **OPM-02 (Riccardo Biasini)** (2025-01-20) Expert
   - **OPM-07 (Brian Bjelde)** (2025-01-20 - 2025-01-31) Expert
   - **OPM-03 (Akash Bobba)** (2025-01-20) Expert
@@ -665,7 +665,7 @@
   - **OPM-05 (Gavin Kliger)** (2025-02-18) Senior Advisor to the Director for Information Technology
   - **Joe Gebbia** (2025-02-18) Expert
   - **Tarak Makecha** (2025-02-28) Senior Advisor
-  - **Amanda Scales** (2025-03-28) Senior Advisor
+  - **Amanda Scales** (2025-03-28 - 2025-05-29) Senior Advisor
   - **James Sullivan** (2025-03-28) Chief of Staff
   - **Mike Gonzalez** (2025-03-XX) Senior Advisor
 - systems:

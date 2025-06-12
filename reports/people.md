@@ -25,7 +25,7 @@
 # Anthony Armstrong
 - category: leadership
 - positions:
-    -  **OPM** (2025-01-20 to ??) Expert ED-00
+    -  **OPM** (2025-01-20 to 2025-04-(30)~) Expert ED-00
     -  **FDIC** (2025-04-10 to ??) 
     -  **DHS**  
 
@@ -844,7 +844,7 @@
         - Databricks: Databricks **[admin access]**: 2025-01-28 - ongoing
         - STAMP: STAMP: 2025-01-31 - ongoing
         - Databricks: Databricks **[admin access]**: 2025-02-03 - ongoing
-    -  **OPM** (2025-03-28 to ??) Senior Advisor ES-00
+    -  **OPM** (2025-03-28 to 2025-05-29) Senior Advisor ES-00
         - website: Agency Website: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing
         - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
@@ -935,7 +935,7 @@
 - positions:
     -  **DOGE** (2025-02-XX to ??) 
     -  **HHS** (2025-02-XX to 2025-03-04) 
-    -  **HHS** (2025-03-04 to ??) Senior Advisor
+    -  **HHS** (2025-03-04 to 2025-05-23) Senior Advisor
 
 # Keith Sonderling
 - category: enabler

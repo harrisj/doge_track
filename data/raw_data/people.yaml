@@ -153,7 +153,11 @@
     in a support role, but in April he was spotted at the FDIC, and I would expect him to be involved
     with DOGE's work against other independent financial entities. Although he has a relatively modest
     title, recently departed DOGE member Sahil Lavingia indicated that he was running operations for teams
-    across government with Baris Akis and Steve Davis.
+    across government with Baris Akis and Steve Davis. Reportedly, he left OPM and government service
+    sometime in April.
+  govt_exit_date: 2025-04-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: detail-opm-dhs-armstrong
     type: detailed
@@ -169,6 +173,11 @@
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
+    end_date: 2025-04-(30)~
+    end_date_truth: reported
+    table_note: reportedly left OPM in April, but as at FDIC on 4/10, so maybe end of month
+    source: https://www.notus.org/trump-white-house/musk-doge-allies-trump-administration-feud
+    source_name: NOTUS
     description: Exc Appt NTE
     appt_type_code: 48
     appt_type: Other
@@ -4362,7 +4371,13 @@
   age: 34
   skill: administrator
   category: leadership
-  blurb: An associate of Elon Musk from xAI, Amanda Scales has been located at GSA since Day 1.
+  blurb: >-
+    An associate of Elon Musk from xAI, Amanda Scales has been located at GSA since Day 1, where she acted
+    as the Chief of Staff until swapping places with James Sullivan at the end of March. She reportedly
+    has left OPM as part of the exodus after Musk's departure.
+  govt_exit_type: resigned
+  govt_exit_date: 2025-05-29
+  govt_exit_truth: reported
   positions:
   - id: amanda-scales-opm
     type: appointed
@@ -4391,6 +4406,8 @@
     agency: OPM
     start_date: 2025-03-28
     start_date_truth: verified
+    end_date: 2025-05-29
+    end_date_truth: reported
     description: SES Noncareer Appt
     appt_type_code: 55
     appt_type: 55-Noncareer (Senior Exec Perm)
@@ -4883,6 +4900,9 @@
   age: 42
   skill: executive
   category: enabler
+  govt_exit_date: 2025-05-23
+  govt_exit_truth: reported
+  govt_exit_type: reported
   positions:
   - id: detail-doge-hhs-smith
     type: detailed
@@ -4912,6 +4932,9 @@
     title: Senior Advisor
     title_type: advisor
     start_date: 2025-03-04
+    end_date: 2025-05-23
+    end_date_truth: reported
+    end_type: resigned
     comment: All I have is his signed SF-61
     documents:
     - onboard-hhs-brad-smith
