@@ -16,7 +16,7 @@
 - positions:
     -  **OPM** (2025-01-24 to ??) [as "OPM-16"] Senior Advisor to the Director GS-15 $167,603 - $195,200
         - USA Perf: USA Performance: 2025-01-31 - ongoing
-    -  **USADF** (2025-02-21 to 2025-03-06) 
+    -  **USADF** (2025-02-21 to ??) 
     -  **FCC** (2025-04-04 to ??) 
 
 # Marc Andreessen
@@ -119,7 +119,7 @@
 - category: wrecker
 - positions:
     -  **GSA** (2025-02-03 to ??)  $120,500
-    -  **USADF** (2025-02-21 to 2025-03-06) 
+    -  **USADF** (2025-02-21 to ??) 
     -  **IAF** (2025-02-28 to 2025-04-04) 
     -  **USIP** (2025-03-04 to 2025-03-24) 
     -  **NEH** (2025-03-(13)~ to ??) 
@@ -294,7 +294,7 @@
         - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-01-31 - ongoing
         - CALM: CMS Acquisition Lifecycle Management System: 2025-02-03 - ongoing
         - IDR: Integrated Data Repository: 2025-02-18 - ongoing
-    -  **Energy** (2025-02-(04)~ to 2025-02-(08)~) 
+    -  **Energy** (2025-02-(04)~ to ??) 
         - Office365: Microsoft Office 365: 2025-02-05 - ongoing
     -  **CFPB** (2025-02-07 to 2025-03-04) 
         - Microsoft AD: Active Directory: 2025-02-07 - 2025-03-04
@@ -776,7 +776,7 @@
     -  **DOGE** (2025-01-23 to ??) 
     -  **Education** (2025-01-28 to NTE 2026-07-04) 
         - FMS: Financial Management System: 2025-02-04 - 2025-03-06
-    -  **Energy** (2025-02-(04)~ to 2025-02-(08)~) 
+    -  **Energy** (2025-02-(04)~ to ??) 
     -  **DOL** (2025-02-05 to ??) 
     -  **FDIC** (2025-04-10 to ??) 
 
@@ -890,7 +890,7 @@
     -  **GSA** (2025-01-20 to ??)  volunteer
     -  **Education** (2025-02-12 to NTE 2026-02-26) [as "ED-03"] 
     -  **SSA** (2025-02-18 to NTE 2026-02-26) [as "SSA-10"] 
-    -  **USADF** (2025-02-20 to 2025-03-06) 
+    -  **USADF** (2025-02-20 to NTE 2026-07-04) 
     -  **IAF** (2025-02-28 to 2025-04-04) 
     -  **USPS** (2025-03-12 to NTE 2025-06-15) 
     -  **GSA** (2025-04-10 to ??) Senior Advisor GS-14 $142,488 - $185,234

@@ -235,8 +235,8 @@
 # Department of Energy
 - slug: energy
 - people:
-  - **Luke Farritor** (2025-02-(04)~ - 2025-02-(08)~) (detailed from GSA)
-  - **Adam Ramada** (2025-02-(04)~ - 2025-02-(08)~) (detailed from DOGE)
+  - **Luke Farritor** (2025-02-(04)~) (detailed from GSA)
+  - **Adam Ramada** (2025-02-(04)~) (detailed from DOGE)
   - **Ryan Riedel** (2025-02-07 - 2025-03-07) Chief Information Officer
 - systems:
     - Office365: Microsoft Office 365
@@ -808,9 +808,9 @@
 # U.S. African Development Foundation
 - slug: usadf
 - people:
-  - **Ethan Shaotran** (2025-02-20 - 2025-03-06) (detailed from GSA)
-  - **Jacob Altik** (2025-02-21 - 2025-03-06) (detailed from OPM)
-  - **Nate Cavanaugh** (2025-02-21 - 2025-03-06) (detailed from GSA)
+  - **Ethan Shaotran** (2025-02-20) (detailed from GSA)
+  - **Jacob Altik** (2025-02-21) (detailed from OPM)
+  - **Nate Cavanaugh** (2025-02-21) (detailed from GSA)
 
 # U.S. Access Board
 - slug: usaccess

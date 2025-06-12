@@ -1,0 +1,74 @@
+---
+template: page
+title: Who Has Left?
+description: It has always been easier to track when DOGE staff have arrived at an agency vs. when they have left. They often tend to retain access to systems and networks, even when they have moved on. This page collects departures that we know about.
+---
+{% import 'macros' %}
+{%@ 'title', title: "Who Has Left?" %}
+
+{%@ 'text' do %}
+It has always been easier to track when DOGE staff have arrived at an agency vs. when they have left. For instance, when a wrecker like {{ person_link("Gavin Kliger") }} starts working at an agency, they might retain access (and an agency laptop) long after they've left the building. DOGE has also been purposefully opaque about departures, since they might puncture the aura of invulnerability they have been trying to project. But, with time and details that have emerged from reporting and court filings, we are starting to get a better picture of who has left agencies.
+{% end %}
+
+{% people_gone = site.data.people.select {|p| p.govt_exit_date }.sort_by(&:govt_exit_date) %}
+
+<table class="my-4 table table-xs sm:table-sm md:table-md table-zebra">
+  <thead>
+    <tr>
+      <th class="sm:hidden"></th>
+      <th>Name</th>
+      <th class="hidden sm:table-cell">Category</th>
+      <th>Exit</th>
+      <th>Exit Type</th>
+      <th>Agencies</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% people_gone.each do |person| %}
+      {% agency_positions = person.positions.group_by {|pos| pos.agency_id } %}
+      {% agencies = agency_positions.map {|a_id, positions| {agency_id: a_id, start: positions.map(&:start_date).min, end: positions.map(&:end_date).max }} %}
+    <tr>
+      <td class="sm:hidden align-top"><i class="fa-sharp fa-solid {{ person_icon(person) }}"></i></td>
+      <td class="align-top">{{ person_link(person) }}</td>
+      <td class="hidden sm:table-cell align-top"><i class="fa-sharp fa-solid {{ person_icon(person) }}"></i> {{ person.category | titleize }}</td>
+      <td class="align-top">{{ EdtfFormat.new(person.govt_exit_date, :compact ) | raw }}</td>
+      <td class="align-top">{{ person.govt_exit_type | titleize }}</td>
+      <td class="align-top">{% agencies.each_with_index do |rec, i| %}{% if rec[:start] %} <span class="text-nowrap px-0.5">{{ agency_link(rec[:agency_id]) }} <small>({{ render EdtfFormat.new(rec[:start], :compact, :none) }}{%if false && rec[:end] %}-{{ render EdtfFormat.new(rec[:end], :compact) }}{% end %})</small></span>{% end %}{% end %}</td>
+    </tr>
+    {% end %}
+  </tbody>
+</table>
+
+<div class="py-2">
+{%@ 'text' do %}
+Some cases like the firing of {{ person_link("Sahil Lavingia")}} or the exodus in the wake of {{ person_link("Elon Musk") }}'s departure have been very public, but some have been not previously visible. Until now. It is especially remarkable how much of DOGE's leadership has departed in recent months. And also how purges like the SpaceX contingent at the FAA have also followed.
+{% end %}
+</div>
+
+In addition, there are some cases where we also know DOGE staff have left positions at specific agencies. In some cases, this has been willingly, but in other cases the removal has been due to court orders or even being fired.
+
+<table class="my-4 table table-xs sm:table-sm md:table-md table-zebra">
+  <thead>
+    <tr>
+      <th class="sm:hidden"></th>
+      <th>Name</th>
+      <th class="hidden sm:table-cell">Category</th>
+      <th>Agency</th>
+      <th>Exit</th>
+      <th>Exit Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% left_positions = site.data.positions.select {|pos| pos.end_date && !pos.person.govt_exit_date && pos.end_type != 'replaced' } %}
+    {% left_positions.each do |pos| %}
+    <tr>
+      <td class="sm:hidden align-top"><i class="fa-sharp fa-solid {{ person_icon(pos.person) }}"></i></td>
+      <td class="align-top">{{ person_link(pos.person) }}</td>
+      <td class="hidden sm:table-cell align-top"><i class="fa-sharp fa-solid {{ person_icon(pos.person) }}"></i> {{ pos.person.category | titleize }}</td>
+      <td class="align-top">{{ agency_link(pos.agency_id) }}</td>
+      <td class="align-top">{{ EdtfFormat.new(pos.end_date, :compact ) | raw }}</td>
+      <td class="align-top">{{ position_end_type(pos) }}</td>
+    </tr>
+    {% end %}
+  </tbody>
+</table>

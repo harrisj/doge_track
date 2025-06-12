@@ -110,8 +110,6 @@
     agency: USADF
     start_date: 2025-02-21
     start_date_truth: verified
-    end_date: 2025-03-06
-    end_date_truth: reported
     table_note: info in govt legal declation
     comment: Assuming detail from OPM
     source_name: court doc
@@ -639,8 +637,6 @@
     from_truth: guessed
     start_date: 2025-02-21
     start_date_truth: verified
-    end_date: 2025-03-06
-    comment: FIXME
     end_date_truth: reported
     table_note: verified via court filing
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
@@ -654,6 +650,7 @@
     start_date_truth: inferred
     end_date: 2025-04-04
     end_date_truth: verified
+    end_type: removed
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
     source_name: court doc
     table_note: agency contact was earlier, but assuming MOU signed when Marocco seized power
@@ -689,6 +686,7 @@
     start_date_truth: verified
     end_date: 2025-05-19
     end_date_truth: verified
+    end_type: removed
     title: President
     title_type: director
     table_note: >-
@@ -1260,6 +1258,8 @@
     start_date_truth: verified
     end_date: 2025-05-06
     end_date_truth: verified
+    end_type: replaced
+    replaced_by: ssa-dudek
     supervisory: true
     source: >-
       https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
@@ -1595,8 +1595,6 @@
     sort_date: 2025-02-04
     start_date: 2025-02-(04)~
     start_date_truth: disputed
-    end_date: 2025-02-(08)~
-    end_date_truth: disputed
     comment: Start date was given by DOE spokesperson denying a news report
   - id: detail-gsa-cfpb-luke-farritor
     type: detailed
@@ -1973,7 +1971,7 @@
     to work for 4 days at the agency. That term was extended, only to be forcibly ended on June 2nd.
   govt_exit_date: 2025-06-02
   govt_exit_truth: reported
-  govt_exit_type: removed
+  govt_exit_type: fired
   positions:
   - id: faa-glantz
     type: appointed
@@ -1984,7 +1982,7 @@
     nte_date_truth: verified
     end_date: 2025-06-02
     end_date_truth: reported
-    end_type: removed
+    end_type: fired
     title: Senior Advisor
     title_type: advisor
     office: Office of the Administrator
@@ -2606,7 +2604,7 @@
     suddenly in the wake of Musk's departure.
   govt_exit_date: 2025-06-02
   govt_exit_truth: reported
-  govt_exit_type: removed
+  govt_exit_type: fired
   positions:
   - id: faa-kiernan
     type: appointed
@@ -2617,7 +2615,7 @@
     nte_date_truth: verified
     end_date: 2025-06-02
     end_date_truth: reported
-    end_type: removed
+    end_type: fired
     title: Senior Advisor
     title_type: advisor
     office: Office of the Administrator
@@ -3294,7 +3292,7 @@
   - SpaceX
   govt_exit_date: 2025-06-02
   govt_exit_truth: reported
-  govt_exit_type: removed
+  govt_exit_type: fired
   positions:
   - id: faa-malaska
     type: appointed
@@ -3305,7 +3303,7 @@
     nte_date_truth: verified
     end_date: 2025-06-02
     end_date_truth: reported
-    end_type: removed
+    end_type: fired
     title: Senior Advisor
     title_type: advisor
     office: Office of the Administrator
@@ -4111,8 +4109,6 @@
     sort_date: 2025-02-04
     start_date: 2025-02-(04)~
     start_date_truth: disputed
-    end_date: 2025-02-(08)~
-    end_date_truth: disputed
     comment: Start date was given by DOE spokesperson denying a news report
   - id: detail-doge-dol-ramada
     type: detailed
@@ -4345,7 +4341,7 @@
     end_date_truth: reported
     end_type: replaced
     replaced_by: ssa-mike-russo-advisor
-    comment: Reportedly removed for complying quickly with judge's orders to block access
+    comment: Reportedly removed from CIO role for complying quickly with judge's orders to block access
     supervisory: true
     source: >-
       https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
@@ -4658,8 +4654,6 @@
     agency: USADF
     start_date: 2025-02-20
     start_date_truth: verified
-    end_date: 2025-03-06
-    end_date_truth: reported
     nte_date: 2026-07-04
     nte_date_truth: verified
     signed_date: 2025-02-21
@@ -4673,6 +4667,7 @@
     start_date: 2025-02-28
     start_date_truth: inferred
     end_date: 2025-04-04
+    end_type: removed
     end_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
     source_name: court doc
@@ -4876,7 +4871,7 @@
   category: wrecker
   govt_exit_date: 2025-06-02
   govt_exit_truth: reported
-  govt_exit_type: removed
+  govt_exit_type: fired
   positions:
   - id: faa-smeal
     type: appointed
@@ -4887,7 +4882,7 @@
     nte_date_truth: verified
     end_date: 2025-06-02
     end_date_truth: reported
-    end_type: removed
+    end_type: fired
     title: Senior Advisor
     title_type: advisor
     office: Office of the Administrator

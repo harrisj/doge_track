@@ -338,7 +338,7 @@ end %}
 {% macro 'position_end_type' do |pos| 
     case pos.end_type
     when 'detail_ended'
-      'Detail ended'
+      'Detail end'
     when 'replaced'
       if pos.replaced_by
         "replaced with [new role](##{pos.replaced_by})"
