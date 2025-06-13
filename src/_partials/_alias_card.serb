@@ -15,7 +15,7 @@
     {% if doge_alias.evidence %}
     <div>
     <h3 class="h3 mt-5 mb-0">Supporting Evidence:</h4>
-    <div class="prose text-xs sm:prose-sm lg:prose-base max-w-none">{{ doge_alias.evidence | linkify_text | md }}</div>
+    <div class="prose text-xs sm:prose-sm lg:prose-base max-w-none">{{ doge_alias.evidence | linkify_text | md | strip_p }}</div>
     </div>
     {% end %}
 
