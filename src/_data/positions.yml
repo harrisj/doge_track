@@ -9771,74 +9771,6 @@
   agency_and_parent:
   - GSA
   documents: []
-- id: opm-05-usagm
-  type: detailed
-  agency_id: USAGM
-  name: Gavin Kliger
-  doge_alias_id: OPM-05
-  from_agency_id: OPM
-  from_truth: verified
-  start_date:
-  start_date_truth:
-  start_date_event:
-  start_source:
-  start_source_name:
-  end_date:
-  end_date_truth:
-  end_date_event:
-  end_source:
-  end_source_name:
-  end_type:
-  sort_date: '2026-07-04'
-  nte_date:
-  nte_date_truth:
-  signed_date:
-  description:
-  fuzz:
-  appt_type_code:
-  appt_type:
-  pay_grade:
-  salary:
-  pd_code:
-  sge:
-  excepted:
-  title:
-  title_type:
-  series:
-  supervisory:
-  office:
-  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
-  source_name: court doc
-  reimbursed:
-  reimbursement_amount:
-  comment:
-  qualifications:
-  table_note: detail in court doc
-  replaced_by:
-  same_as:
-  agency:
-    id: USAGM
-    name: US Agency for Global Media
-    slug: usagm
-    page_slug: independent
-    short_name: Global Media
-    doge_base: false
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/independent"
-  from_agency:
-    id: OPM
-    name: Office of Personnel Management
-    slug: opm
-    page_slug: self
-    short_name: OPM
-    doge_base: true
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/opm"
-  agency_and_parent:
-  - USAGM
-  documents: []
 - id: opm-temp-employee-5
   type: appointed
   agency_id: OPM
@@ -10282,6 +10214,74 @@
     comment: Testimony about the positions of various IRS appointees
     file: gov.uscourts.nysd.636609.144.0.pdf
     url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
+- id: opm-05-usagm
+  type: detailed
+  agency_id: USAGM
+  name: Gavin Kliger
+  doge_alias_id: OPM-05
+  from_agency_id: OPM
+  from_truth: verified
+  start_date: 2025-03-(01)~
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: 2025-03-(01)~
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+  source_name: court doc
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: detail in court doc, date from Kliger spotted at VOA around start of March
+  replaced_by:
+  same_as:
+  agency:
+    id: USAGM
+    name: US Agency for Global Media
+    slug: usagm
+    page_slug: independent
+    short_name: Global Media
+    doge_base: false
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/independent"
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - USAGM
+  documents: []
 - id: detail-opm-ftc-kliger
   type: detailed
   agency_id: FTC
@@ -11556,6 +11556,74 @@
   agency_and_parent:
   - OPM
   documents: []
+- id: detail-usagm-makecha
+  type: detailed
+  agency_id: USAGM
+  name: Tarak Makecha
+  doge_alias_id:
+  from_agency_id: OPM
+  from_truth: guessed
+  start_date: 2025-03-(01)~
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-03-01'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://projects.propublica.org/elon-musk-doge-tracker/#Tarak-Makecha
+  source_name: ProPublica
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Date unknown, but assuming with Kliger who was at USAGM in early March
+  replaced_by:
+  same_as:
+  agency:
+    id: USAGM
+    name: US Agency for Global Media
+    slug: usagm
+    page_slug: independent
+    short_name: Global Media
+    doge_base: false
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/independent"
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - USAGM
+  documents: []
 - id: fbi-makecha
   type: detailed
   agency_id: FBI
@@ -11694,74 +11762,6 @@
     path: "/agencies/opm"
   agency_and_parent:
   - FCC
-  documents: []
-- id: detail-usagm-makecha
-  type: detailed
-  agency_id: USAGM
-  name: Tarak Makecha
-  doge_alias_id:
-  from_agency_id: OPM
-  from_truth: guessed
-  start_date: 2025-05-XX
-  start_date_truth: inferred
-  start_date_event:
-  start_source:
-  start_source_name:
-  end_date:
-  end_date_truth:
-  end_date_event:
-  end_source:
-  end_source_name:
-  end_type:
-  sort_date: '2025-05-15'
-  nte_date:
-  nte_date_truth:
-  signed_date:
-  description:
-  fuzz:
-  appt_type_code:
-  appt_type:
-  pay_grade:
-  salary:
-  pd_code:
-  sge:
-  excepted:
-  title:
-  title_type:
-  series:
-  supervisory:
-  office:
-  source: https://projects.propublica.org/elon-musk-doge-tracker/#Tarak-Makecha
-  source_name: ProPublica
-  reimbursed:
-  reimbursement_amount:
-  comment:
-  qualifications:
-  table_note: Date unknown, but likely around mid-May due to news reports
-  replaced_by:
-  same_as:
-  agency:
-    id: USAGM
-    name: US Agency for Global Media
-    slug: usagm
-    page_slug: independent
-    short_name: Global Media
-    doge_base: false
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/independent"
-  from_agency:
-    id: OPM
-    name: Office of Personnel Management
-    slug: opm
-    page_slug: self
-    short_name: OPM
-    doge_base: true
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/opm"
-  agency_and_parent:
-  - USAGM
   documents: []
 - id: faa-malaska
   type: appointed

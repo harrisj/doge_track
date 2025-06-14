@@ -524,11 +524,11 @@
         - github: GitHub: 2025-01-20 - ongoing
         - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
     -  **IRS** (2025-02-19 to 2025-04-17) 
+    -  **USAGM** (2025-03-(01)~ to ??) [as "OPM-05"] 
     -  **FTC** (2025-03-(28)~ to ??) 
     -  **DHS**  
     -  **TSA**  
     -  **GSA**  [as "OPM-05"] 
-    -  **USAGM**  [as "OPM-05"] 
 
 # Keenan Kmiec
 - category: support
@@ -609,9 +609,9 @@
 - category: wrecker
 - positions:
     -  **OPM** (2025-02-28 to ??) Senior Advisor
+    -  **USAGM** (2025-03-(01)~ to ??) 
     -  **FBI** (2025-03-(30)~ to ??) Senior Advisor
     -  **FCC** (2025-04-04 to ??) 
-    -  **USAGM** (2025-05-XX to ??) 
 
 # Ted Malaska
 - category: wrecker

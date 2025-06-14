@@ -881,6 +881,6 @@
 # US Agency for Global Media
 - slug: usagm
 - people:
-  - **OPM-05 (Gavin Kliger)** (detailed from OPM)
-  - **Tarak Makecha** (2025-05-XX) (detailed from OPM)
+  - **OPM-05 (Gavin Kliger)** (2025-03-(01)~) (detailed from OPM)
+  - **Tarak Makecha** (2025-03-(01)~) (detailed from OPM)
 

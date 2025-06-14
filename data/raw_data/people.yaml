@@ -2733,16 +2733,6 @@
     table_note: detail in court doc
     name: Gavin Kliger
     alias: OPM-05
-  - id: opm-05-usagm
-    type: detailed
-    agency: USAGM
-    from: OPM
-    from_truth: verified
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
-    source_name: court doc
-    table_note: detail in court doc
-    name: Gavin Kliger
-    alias: OPM-05
   - id: opm-temp-employee-5
     type: appointed
     agency: OPM
@@ -2852,6 +2842,18 @@
     source_name: Tax Notes
     documents:
     - gov.uscourts.nysd.636609.144.0
+  - id: opm-05-usagm
+    type: detailed
+    agency: USAGM
+    from: OPM
+    from_truth: verified
+    start_date: 2025-03-(01)~
+    start_date_truth: reported
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+    source_name: court doc
+    table_note: detail in court doc, date from Kliger spotted at VOA around start of March
+    name: Gavin Kliger
+    alias: OPM-05
   - id: detail-opm-ftc-kliger
     type: detailed
     from: OPM
@@ -3245,6 +3247,17 @@
     comment: POGO has his resume and listing as an OPM staffer. ProPublica had financial disclosures on
       2/28
     agency: OPM
+  - id: detail-usagm-makecha
+    agency: USAGM
+    from: OPM
+    from_truth: guessed
+    type: detailed
+    sort_date: 2025-03-01
+    start_date: 2025-03-(01)~
+    start_date_truth: guessed
+    table_note: Date unknown, but assuming with Kliger who was at USAGM in early March
+    source: https://projects.propublica.org/elon-musk-doge-tracker/#Tarak-Makecha
+    source_name: ProPublica
   - id: fbi-makecha
     type: detailed
     from: OPM
@@ -3270,17 +3283,6 @@
     office: Office of the Chairman
     table_note: assuming detail from OPM
     agency: FCC
-  - id: detail-usagm-makecha
-    agency: USAGM
-    from: OPM
-    from_truth: guessed
-    type: detailed
-    sort_date: 2025-05-15
-    start_date: 2025-05-XX
-    start_date_truth: inferred
-    table_note: Date unknown, but likely around mid-May due to news reports
-    source: https://projects.propublica.org/elon-musk-doge-tracker/#Tarak-Makecha
-    source_name: ProPublica
 
 - name: Ted Malaska
   sort_name: Malaska
