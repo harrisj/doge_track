@@ -1980,6 +1980,74 @@
   agency_and_parent:
   - NEH
   documents: []
+- id: detail-gsa-mcc-cavanaugh
+  type: detailed
+  agency_id: MCC
+  name: Nate Cavanaugh
+  doge_alias_id:
+  from_agency_id: GSA
+  from_truth: guessed
+  start_date: 2025-03-(22)?
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-03-22'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+  source_name: NPR
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Linked to MCC by NPR, start date guessed from disruption there
+  replaced_by:
+  same_as:
+  agency:
+    id: MCC
+    name: Millennium Challenge Corporation
+    slug: mcc
+    page_slug: independent#other
+    short_name: MCC
+    doge_base: false
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/independent#other"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - MCC
+  documents: []
 - id: usip-cavanaugh-president
   type: appointed
   agency_id: USIP

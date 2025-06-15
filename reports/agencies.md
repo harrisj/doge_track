@@ -552,6 +552,7 @@
 # Millennium Challenge Corporation
 - slug: mcc
 - people:
+  - **Nate Cavanaugh** (2025-03-(22)?) (detailed from GSA)
   - **Justin Fox** (2025-03-(22)?) (detailed from GSA)
 
 # Minority Business Development Agency
