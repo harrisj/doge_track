@@ -4,7 +4,7 @@ title: Agency Timeline
 ---
 {%@ 'title', title: 'Agency Timeline' %}
 
-{% majors, indies = site.data.agencies.partition {|a| a.page_slug != 'independent' } %}
+{% indies, majors = site.data.agencies.partition {|a| a.page_slug =~ /^independent/ } %}
 {% majors.reject! {|a| %w[DOGE EOP].include?(a.id) } %}
 {% major_ids = majors.map(&:id) %}
 {% independent_agency_ids = indies.map(&:id) %}
