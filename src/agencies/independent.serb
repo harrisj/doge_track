@@ -6,6 +6,11 @@ layout: page
 {%@ 'text' do %}
 # The Independent Agencies
 
+{% indies = site.data.agencies.select {|a| a.page_slug =~ /^independent/ } %}
+<div class="mb-2">
+{%@ 'agency_first_contacts', agencies: indies %}
+</div>
+
 Over the past decade, Congress has established multiple independent agencies that are supposed to be insulated from interference from the Executive Branch in how they operate. Many of these are small and specialized and relatively unknown to the general public. That hasn't stopped DOGE from interfering with them, in a coordinated effort with the White House that usually included the following steps:
 
 - President Trump will issue an executive order targeting one or more independent agencies by name (_e.g._, [this executive order that targeted the USIP, USADF and IAF](https://www.whitehouse.gov/presidential-actions/2025/02/commencing-the-reduction-of-the-federal-bureaucracy/)). This is meant to provide the legal cover.
@@ -23,11 +28,6 @@ DOGE honed its moves against independent agencies by first attacking {{ agency_l
 
 ### 2/19: "Commencing the Reduction of the Federal Bureaucracy"  {#eo1}
 
-- Presidio Trust
-- {:#iaf} Inter-American Foundation (IAF)
-- {:#usadf} US African Development Foundation (USADF) 
-- {:#usip} US Institute of Peace (USIP)
-
 The pattern of assaulting independent agencies began with an Executive Order ["Commencing the Reduction of the Federal Bureaucracy"](https://www.presidency.ucsb.edu/documents/executive-order-14217-commencing-the-reduction-the-federal-bureaucracy) issued on 2025-02-19 that mandated that "The non-statutory components and functions of the following governmental entities shall be eliminated to the maximum extent consistent with applicable law" for the Presidio Trust, Inter-American Foundation, United States African Development Foundation and US Institute of Peace. This was followed by DOGE taking over the various agencies. 
 
 It started with the US African Development Foundation and the Inter-American Foundation. Both are small independent agencies established by Congress to invest in projects in the developing world. Thanks to litigation, we have some visibility into how events unfolded.
@@ -42,14 +42,6 @@ The next target outlined in the executive order was the US Institute of Peace. T
 
 ### 3/14: "Continuing the Reduction of the Federal Bureaucracy"  {#eo2} 
 
-- {:#fmcs} Federal Mediation and Conciliation Service (FMCS)
-- {:#imls} Institute of Museum and Library Services (IMLS)
-- {:#mbda} Minority Business Development Agency (MBDA)
-- {:#usagm} US Agency for Global Media (USAGM), including Voice of America (VOA)
-- {:#usich} US Interagency Council on Homelessness
-- {:#cdfif} Community Development Financial Institutions Fund
-- {:#wwics} Woodrow Wilson International Center for Scholars
-
 In another executive order ["Continuing the Reduction of the Federal Bureaucracy"](https://www.presidency.ucsb.edu/documents/executive-order-14238-continuing-the-reduction-the-federal-bureaucracy), the Trump administration amplified the tactics of the first order, both by widening the number of agencies being examined and reducing the timeframes for their compliance. This order targeted the Federal Mediation and Conciliation Service, the United States Agency for Global Media (aka Voice of America), the Woodrow Wilson International Center for Scholars in the Smithsonian Institution, the Institute of Museum and Library Services, the United States Interagency Council on Homelessness, the Community Development Financial Institutions Fund; and the Minority Business Development Agency.
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[FMCS USAGM IMLS USICH CDFIF MBDA WWICS]).any? } %}
@@ -61,25 +53,12 @@ From there, it's just been open season on every independent agency from DOGE. He
 
 The arts have been a natural target for DOGE, which shares the Trump Administration's disdain for supporting the arts, unless it's the creation of statues for a garden of American heroes. To be clear, there have been many assaults on arts organizations outside of DOGE's involvement - just recently, Trump has attempted to oust the head of the National Portrait Gallery for instance - but there have been a few organizations that have seen DOGE target them specifically:
 
-- {:#cpb} The Corporation for Public Broadcasting (CPB)
-- {:#neh} The National Endowment for the Humanities (NEH)
-- {:#achp} The Advisory Council on Historic Preservation (ACHP)
-- The National Gallery of Art (technically, this is not an executive branch agency, but that doesn't deter DOGE)
-
 {% events = site.data.events.select {|e| (e.agency_ids & %w[NEH CPB ACHP NationalGallery]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### Finance and Regulations {#regs}
 
 DOGE has also attempted to target several financial and trade regulatory agencies
-
-- {:#fdic} Federal Deposit Insurance Commission (FDIC)
-- {:#sec} Securities and Exchange Commission (SEC)
-- {:#exim} Export-Import Bank of America (EXIM)
-- {:#ftc} Federal Trade Commission (FTC)
-- {:#cpsc} Consumer Product Safety Commission (CPSC)
-- {:#ntsb} National Transportation Safety Board (NTSB)
-- US International Development Finance Corporation
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[FDIC SEC EXIM DFC FTC CPSC NTSB]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
@@ -94,9 +73,6 @@ The National Science Foundation has also found itself under the thumb of DOGE, w
 ### Service Organizations {#service} 
 
 Service organizations have also been a focus of the Trump Administration's ire. Recently, there have been moves to shut down the funding and staffing for the Peace Corps and the AmeriCorps, with vague allegations of fraud used as a cover for sweeping reductions.
-
-- {:#americorps} AmeriCorps
-- {:#peace-corps} The Peace Corps
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[Peace AmeriCorps]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
