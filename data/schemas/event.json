@@ -54,6 +54,14 @@
                 "$ref": "valid_names.json#people"
             }
         },
+        "linked": {
+            "type": "array",
+            "description": "A list of DOGE staff not directly named but linked with the event",
+            "items": {
+                "description": "The names of DOGE staff in the incident.",
+                "$ref": "valid_names.json#people"
+            }
+        },
         "interagency_doge_reps": {
             "description": "A list of DOGE staff representing different agencies at interagency meetings",
             "type": "object",

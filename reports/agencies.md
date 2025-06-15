@@ -551,6 +551,8 @@
 
 # Millennium Challenge Corporation
 - slug: mcc
+- people:
+  - **Justin Fox** (2025-03-(22)?) (detailed from GSA)
 
 # Minority Business Development Agency
 - slug: mbda
@@ -856,7 +858,7 @@
   - **Nate Cavanaugh** (2025-03-25 - 2025-05-19) President
 
 # US International Development Finance Corporation
-- slug: usidfc
+- slug: usdfc
 - people:
   - **Nate Cavanaugh** (2025-04-28) (detailed from GSA)
   - **Jonathan Mendelson** (2025-04-28) (detailed from GSA)
@@ -883,4 +885,9 @@
 - people:
   - **OPM-05 (Gavin Kliger)** (2025-03-(01)~) (detailed from OPM)
   - **Tarak Makecha** (2025-03-(01)~) (detailed from OPM)
+
+# Woodrow Wilson Intl. Center for Scholars
+- slug: wwics
+- people:
+  - **Justin Fox** (2025-03-31) (detailed from GSA)
 

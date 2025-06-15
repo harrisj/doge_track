@@ -4,7 +4,7 @@
 - id: ACHP
   name: Advisory Council on Historic Preservation
   slug: achp
-  page_slug: independent
+  page_slug: independent#arts
   short_name: ACHP
   events:
   - date: 2025-04-17
@@ -32,7 +32,7 @@
   id: AmeriCorps
   short_name: AmeriCorps
   slug: americorps
-  page_slug: independent
+  page_slug: independent#service
   events:
   - date: 2025-04-10
     type: disruption
@@ -867,7 +867,7 @@
 - name: Consumer Product Safety Commission
   id: CPSC
   slug: cpsc
-  page_slug: independent
+  page_slug: independent#regs
   short_name: CPSC
   events:
   - date: 2025-05-08
@@ -904,7 +904,7 @@
   id: CPB
   slug: cpb
   short_name: CPB
-  page_slug: independent
+  page_slug: independent#arts
   events:
   - date: 2025-04-28
     type: disruption
@@ -2861,7 +2861,7 @@
   id: EXIM
   short_name: EXIM
   slug: exim
-  page_slug: independent
+  page_slug: independent#regs
   events:
   - date: 2025-05-14
     type: sighting
@@ -3006,7 +3006,7 @@
   id: FCC
   short_name: FCC
   slug: fcc
-  page_slug: independent
+  page_slug: independent#fcc
   doge_base: true
   events:
   - date: 2025-04-04
@@ -3027,7 +3027,7 @@
   id: FDIC
   short_name: FDIC
   slug: fdic
-  page_slug: independent
+  page_slug: independent#regs
   events:
   - date: 2025-04-10
     type: sighting
@@ -3048,14 +3048,14 @@
   id: FMCS
   short_name: FMCS
   slug: fmcs
-  page_slug: independent
+  page_slug: independent#eo2
   events: []
 
 - name: Federal Trade Commission
   id: FTC
   short_name: FTC
   slug: ftc
-  page_slug: independent
+  page_slug: independent#regs
   doge_base: true
   events:
   - date: 2025-04-04
@@ -3477,7 +3477,7 @@
   id: GAO
   slug: gao
   short_name: GAO
-  page_slug: independent
+  page_slug: independent#leg
   events:
   - date: 2025-05-13
     type: sighting
@@ -3784,7 +3784,7 @@
   id: IMLS
   short_name: IMLS
   slug: imls
-  page_slug: independent
+  page_slug: independent#eo2
   events:
   - date: 2025-03-19
     type: sighting
@@ -3857,7 +3857,7 @@
 - name: Inter-American Foundation
   id: IAF
   short_name: IAF
-  page_slug: independent
+  page_slug: independent#eo1
   slug: iaf
   events:
   - date: 2025-02-20
@@ -4242,7 +4242,7 @@
   id: MSPB
   slug: MSPB
   short_name: MSPB
-  page_slug: independent
+  page_slug: independent#mspb
   events:
   - date: 2025-05-16
     type: sighting
@@ -4261,7 +4261,7 @@
   id: MCC
   short_name: MCC
   slug: mcc
-  page_slug: independent
+  page_slug: independent#other
   events:
   - date: 2025-04-22
     type: report
@@ -4277,7 +4277,7 @@
 - name: Minority Business Development Agency
   id: MBDA
   short_name: MBDA
-  page_slug: independent
+  page_slug: independent#eo2
   slug: mbda
   events:
   - date: 2025-04-09
@@ -4401,7 +4401,7 @@
   id: NEH
   short_name: NEH
   slug: neh
-  page_slug: independent
+  page_slug: independent#arts
   doge_base: true
   events:
   - date: 2025-03-12
@@ -4446,6 +4446,9 @@
       grants that haven't been paid out
     source: https://www.nytimes.com/2025/04/01/arts/trump-doge-federal-cuts-humanities.html
     source_name: NYT
+    linked:
+    - Justin Fox
+    - Nate Cavanaugh
     agency: NEH
     id: VeWn4JfX
   - date: 2025-04-02
@@ -4458,7 +4461,7 @@
       suggesting it was copied from an earlier email sent to IAF or USADF grantees.
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
     source_name: court doc
-    named:
+    linked:
     - Nate Cavanaugh
     - Justin Fox
     agency: NEH
@@ -4498,7 +4501,7 @@
   id: NationalGallery
   short_name: Nat Gallery
   slug: national-gallery-art
-  page_slug: independent
+  page_slug: independent#arts
   events:
   - date: 2025-04-18
     type: sighting
@@ -4875,7 +4878,7 @@
   id: NSF
   short_name: NSF
   slug: nsf
-  page_slug: independent
+  page_slug: independent#nsf
   events:
   - date: 2025-04-14
     type: sighting
@@ -4884,7 +4887,7 @@
       through a "secondary review." They were later identified as Luke Farritor, Rachel Riley and Zach
       Terrell.
     comment: These three were named in later reporting, so adding here
-    named:
+    linked:
     - Luke Farritor
     - Zach Terrell
     - Rachel Riley
@@ -4937,7 +4940,7 @@
   id: NTSB
   short_name: NTSB
   slug: NTSB
-  page_slug: independent
+  page_slug: independent#regs
   events:
   - date: 2025-05-21
     type: official
@@ -5169,11 +5172,12 @@
     comment: >-
       This report originally did not mention Edward Coristine or Akash Bobba by name because of their
       ages, but Wired revealed it later
+    linked:
+    - Edward Coristine
+    - Akash Bobba
     named:
     - Amanda Scales
     - Riccardo Biasini
-    - Edward Coristine
-    - Akash Bobba
     - Noah Peters
     - Joanna Wischer
     source: >-
@@ -5532,7 +5536,7 @@
       https://www.reuters.com/business/world-at-work/doge-led-software-revamp-speed-us-job-cuts-even-musk-steps-back-2025-05-08/
     source_name: Reuters
     comment: He's not named in this article, but tagging Biasini since he was linked to it earlier
-    named:
+    linked:
     - Riccardo Biasini
     agency: OPM
     id: 3FJ5yaAx
@@ -5578,7 +5582,7 @@
 - name: Peace Corps
   id: PeaceCorps
   short_name: Peace Corps
-  page_slug: independent
+  page_slug: independent#service
   slug: peace-corps
   events:
   - date: 2025-04-04
@@ -5613,7 +5617,7 @@
   id: SEC
   short_name: SEC
   slug: sec
-  page_slug: independent
+  page_slug: independent#regs
   events:
   - date: 2025-03-28
     type: sighting
@@ -5687,7 +5691,7 @@
   id: Smithsonian
   short_name: Smithsonian
   slug: smithsonian
-  page_slug: independent
+  page_slug: independent#other
   events: []
 
 - name: Social Security Administration
@@ -6310,7 +6314,7 @@
   id: USADF
   short_name: USADF
   slug: usadf
-  page_slug: independent
+  page_slug: independent#eo1
   events:
   - date: 2025-02-19
     type: report
@@ -6505,7 +6509,7 @@
   id: USAccess
   short_name: Access Brd
   slug: usaccess
-  page_slug: independent
+  page_slug: independent#other
   events:
   - date: 2025-04-22
     type: sighting
@@ -6748,7 +6752,7 @@
   id: USIP
   short_name: USIP
   slug: usip
-  page_slug: independent
+  page_slug: independent#eo1
   events:
   - date: 2025-02-24
     type: interagency
@@ -7066,9 +7070,9 @@
 
 - name: US International Development Finance Corporation
   id: USDFC
-  slug: usidfc
+  slug: usdfc
   short_name: DFC
-  page_slug: independent
+  page_slug: independent#regs
   events:
   - date: 2025-04-28
     type: sighting
@@ -7126,6 +7130,8 @@
     source: >-
       https://www.military.com/daily-news/2025/02/05/elon-musk-aide-now-working-va-and-accessing-its-computer-systems.html
     source_name: Military.com
+    linked:
+    - Justin Fulcher
     agency: VA
     id: aTnKGs75
   - date: 2025-02-10
@@ -7200,7 +7206,7 @@
   id: USAGM
   short_name: Global Media
   slug: usagm
-  page_slug: independent
+  page_slug: independent#eo2
   events:
   - date: 2025-03-(01)~
     type: sighting
@@ -7272,3 +7278,29 @@
     source_name: Politico
     agency: USAGM
     id: 7GI672HF
+
+- name: Woodrow Wilson Intl. Center for Scholars
+  id: WWICS
+  short_name: Wilson Ctr.
+  slug: wwics
+  page_slug: idependent#eo2
+  events:
+  - date: 2025-03-31
+    type: sighting
+    event: DOGE staff reportedly visit the Wilson Center for Scholars headquarters
+    source: https://www.nytimes.com/2025/04/02/us/politics/doge-wilson-center.html
+    source_name: NYT
+    comment: Linked to WWICS by NPR
+    linked:
+    - Justin Fox
+    agency: WWICS
+    id: 2Etft9eI
+  - date: 2025-04-01
+    type: disruption
+    event: >-
+      Mark Green, a Republican who once worked for Trump, is forced out as the head of the Wilson Center.
+      Several members of the board were also reportedly fired earlier.
+    source: https://www.nytimes.com/2025/04/02/us/politics/doge-wilson-center.html
+    source_name: NYT
+    agency: WWICS
+    id: 1wT0qavH

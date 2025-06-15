@@ -32,14 +32,14 @@ def create_event(event_hash)
   event_hash[:date] = event_date
   event_hash[:sort_date] = Date.edtf!(event_date.to_s).to_s
 
-  e = Event.create(event_hash.except(:case_no, :named, :named_aliases, :agency, :interagency_doge_reps))
+  e = Event.create(event_hash.except(:case_no, :named, :linked, :named_aliases, :agency, :interagency_doge_reps))
   if event_hash.key? :case_no
     court_case = Case[event_hash[:case_no]]
     e.case = court_case
   end
 
   agency_ids = Array(event_hash[:agency])
-  names = event_hash.fetch(:named, [])
+  names = (event_hash.fetch(:named, []) + event_hash.fetch(:linked, [])).uniq
 
   event_hash.fetch(:named_aliases, []).each do |doge_alias_id|
     a = DogeAlias[doge_alias_id]

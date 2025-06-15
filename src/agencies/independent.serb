@@ -21,7 +21,12 @@ DOGE honed its moves against independent agencies by first attacking {{ agency_l
 
 ## Phases of Attack
 
-### 2/19: "Commencing the Reduction of the Federal Bureaucracy"
+### 2/19: "Commencing the Reduction of the Federal Bureaucracy"  {#eo1}
+
+- Presidio Trust
+- {:#iaf} Inter-American Foundation (IAF)
+- {:#usadf} US African Development Foundation (USADF) 
+- {:#usip} US Institute of Peace (USIP)
 
 The pattern of assaulting independent agencies began with an Executive Order ["Commencing the Reduction of the Federal Bureaucracy"](https://www.presidency.ucsb.edu/documents/executive-order-14217-commencing-the-reduction-the-federal-bureaucracy) issued on 2025-02-19 that mandated that "The non-statutory components and functions of the following governmental entities shall be eliminated to the maximum extent consistent with applicable law" for the Presidio Trust, Inter-American Foundation, United States African Development Foundation and US Institute of Peace. This was followed by DOGE taking over the various agencies. 
 
@@ -35,84 +40,87 @@ The next target outlined in the executive order was the US Institute of Peace. T
 {% events = site.data.events.select {|e| e.agency_ids.include?('USIP') && e.sort_date < '2025-05-01' } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
-### 3/14: "Continuing the Reduction of the Federal Bureaucracy"
+### 3/14: "Continuing the Reduction of the Federal Bureaucracy"  {#eo2} 
+
+- {:#fmcs} Federal Mediation and Conciliation Service (FMCS)
+- {:#imls} Institute of Museum and Library Services (IMLS)
+- {:#mbda} Minority Business Development Agency (MBDA)
+- {:#usagm} US Agency for Global Media (USAGM), including Voice of America (VOA)
+- {:#usich} US Interagency Council on Homelessness
+- {:#cdfif} Community Development Financial Institutions Fund
+- {:#wwics} Woodrow Wilson International Center for Scholars
 
 In another executive order ["Continuing the Reduction of the Federal Bureaucracy"](https://www.presidency.ucsb.edu/documents/executive-order-14238-continuing-the-reduction-the-federal-bureaucracy), the Trump administration amplified the tactics of the first order, both by widening the number of agencies being examined and reducing the timeframes for their compliance. This order targeted the Federal Mediation and Conciliation Service, the United States Agency for Global Media (aka Voice of America), the Woodrow Wilson International Center for Scholars in the Smithsonian Institution, the Institute of Museum and Library Services, the United States Interagency Council on Homelessness, the Community Development Financial Institutions Fund; and the Minority Business Development Agency.
 
-{% events = site.data.events.select {|e| (e.agency_ids & %w[FMCS USAGM IMLS USICH CDFIF MBDA]).any? } %}
+{% events = site.data.events.select {|e| (e.agency_ids & %w[FMCS USAGM IMLS USICH CDFIF MBDA WWICS]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 From there, it's just been open season on every independent agency from DOGE. Here are the attacks grouped by agency types.
 
-### Targeting the Arts
+### Targeting the Arts  {#arts} 
 
 The arts have been a natural target for DOGE, which shares the Trump Administration's disdain for supporting the arts, unless it's the creation of statues for a garden of American heroes. To be clear, there have been many assaults on arts organizations outside of DOGE's involvement - just recently, Trump has attempted to oust the head of the National Portrait Gallery for instance - but there have been a few organizations that have seen DOGE target them specifically:
 
-- The Corporation for Public Broadcasting (CPB)
-- The National Endowment for the Humanities (NEH)
-- The Advisory Council on Historic Preservation (ACHP)
+- {:#cpb} The Corporation for Public Broadcasting (CPB)
+- {:#neh} The National Endowment for the Humanities (NEH)
+- {:#achp} The Advisory Council on Historic Preservation (ACHP)
 - The National Gallery of Art (technically, this is not an executive branch agency, but that doesn't deter DOGE)
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[NEH CPB ACHP NationalGallery]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
-### Finance and Regulations
+### Finance and Regulations {#regs}
 
 DOGE has also attempted to target several financial and trade regulatory agencies
 
-- Federal Deposit Insurance Commission (FDIC)
-- Securities and Exchange Commission (SEC)
-- Export-Import Bank of America (EXIM)
-- Federal Trade Commission (FTC)
-- Consumer Product Safety Commission (CPSC)
-- National Transportation Safety Board (NTSB)
+- {:#fdic} Federal Deposit Insurance Commission (FDIC)
+- {:#sec} Securities and Exchange Commission (SEC)
+- {:#exim} Export-Import Bank of America (EXIM)
+- {:#ftc} Federal Trade Commission (FTC)
+- {:#cpsc} Consumer Product Safety Commission (CPSC)
+- {:#ntsb} National Transportation Safety Board (NTSB)
+- US International Development Finance Corporation
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[FDIC SEC EXIM DFC FTC CPSC NTSB]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
-### National Science Foundation
+### National Science Foundation {#nsf}
 
 The National Science Foundation has also found itself under the thumb of DOGE, with {{ person_link('Luke Farritor') }} leading a delegation of people from HHS to scrutinize all their funding. Their target is to cut all grant funding by 55%, which will have a catastrophic effect on science in America.
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[NSF]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
-### Service Organizations
+### Service Organizations {#service} 
 
 Service organizations have also been a focus of the Trump Administration's ire. Recently, there have been moves to shut down the funding and staffing for the Peace Corps and the AmeriCorps, with vague allegations of fraud used as a cover for sweeping reductions.
 
-- AmeriCorps
-- The Peace Corps
+- {:#americorps} AmeriCorps
+- {:#peace-corps} The Peace Corps
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[Peace AmeriCorps]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
-### Legislative Branch Agencies
+### Legislative Branch Agencies {#leg}
 
 In one of DOGE's most bizarre turns, thet have attempted to embed DOGE teams into the Library of Congress and Government Accountability Office (GAO). The problem is that both of these are legislative branch agencies and thus well outside the authority of DOGE to police them or shut them down.
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[LOC GAO]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
-### Merit System Protection Board
+### Merit System Protection Board {#mspb}
 
 Finally, DOGE has picked up its original mission of harrassing federal workers by attempting to shut down the Merit System Protection Board (MSPB), which ensures that government personnel rules are fairly enforced.
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[MSPB]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
-### Everybody Else
+### Everybody Else {#other}
 
 {% independent_agency_ids = site.data.agencies.select {|a| a.page_slug == 'independent' }.map(&:id) %}
-{% remaining_ids = independent_agency_ids - %w[USIP USADF IAF FMCS USAGM IMLS USICH CDFIF MBDA NEH CPB ACHP FDIC SEC EXIM DFC FTC CPSC NTSB NSF Peace AmeriCorps MSPB LOC GAO NationalGallery]%}
+{% remaining_ids = independent_agency_ids - %w[USIP USADF IAF FMCS USAGM WWICS IMLS USICH CDFIF MBDA NEH CPB ACHP FDIC SEC EXIM DFC FTC CPSC NTSB NSF Peace AmeriCorps MSPB LOC GAO NationalGallery]%}
 {% events = site.data.events.select {|e| (e.agency_ids & remaining_ids).any? } %}
 {% if events.any? %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 {% end %}
-
-## DEBUGGING BELOW
-
-{% independent_agencies = site.data.agencies.select {|a| a.page_slug == 'independent' }.map(&:id) %}
-{% events = site.data.events.select {|e| e.agency_ids.any? {|a_id| independent_agencies.include?(a_id) } }.sort_by(&:sort_date) %}
-{%@ 'compact_event_timeline', events: events, agency_col: true %}
-{% end %} %}
+{% end %}

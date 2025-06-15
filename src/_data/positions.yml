@@ -234,12 +234,12 @@
     id: USADF
     name: U.S. African Development Foundation
     slug: usadf
-    page_slug: independent
+    page_slug: independent#eo1
     short_name: USADF
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#eo1"
   from_agency:
     id: OPM
     name: Office of Personnel Management
@@ -302,12 +302,12 @@
     id: FCC
     name: Federal Communications Commission
     slug: fcc
-    page_slug: independent
+    page_slug: independent#fcc
     short_name: FCC
     doge_base: true
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#fcc"
   from_agency:
     id: OPM
     name: Office of Personnel Management
@@ -507,12 +507,12 @@
     id: FDIC
     name: Federal Deposit Insurance Commission
     slug: fdic
-    page_slug: independent
+    page_slug: independent#regs
     short_name: FDIC
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#regs"
   from_agency:
     id: OPM
     name: Office of Personnel Management
@@ -1572,12 +1572,12 @@
     id: FTC
     name: Federal Trade Commission
     slug: ftc
-    page_slug: independent
+    page_slug: independent#regs
     short_name: FTC
     doge_base: true
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#regs"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -1757,12 +1757,12 @@
     id: USADF
     name: U.S. African Development Foundation
     slug: usadf
-    page_slug: independent
+    page_slug: independent#eo1
     short_name: USADF
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#eo1"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -1825,12 +1825,12 @@
     id: IAF
     name: Inter-American Foundation
     slug: iaf
-    page_slug: independent
+    page_slug: independent#eo1
     short_name: IAF
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#eo1"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -1893,12 +1893,12 @@
     id: USIP
     name: US Institute of Peace
     slug: usip
-    page_slug: independent
+    page_slug: independent#eo1
     short_name: USIP
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#eo1"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -1961,12 +1961,12 @@
     id: NEH
     name: National Endowment for the Humanities
     slug: neh
-    page_slug: independent
+    page_slug: independent#arts
     short_name: NEH
     doge_base: true
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#arts"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -2031,12 +2031,12 @@
     id: USIP
     name: US Institute of Peace
     slug: usip
-    page_slug: independent
+    page_slug: independent#eo1
     short_name: USIP
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#eo1"
   agency_and_parent:
   - USIP
   documents: []
@@ -2089,12 +2089,12 @@
     id: IMLS
     name: Institute for Museum and Library Services
     slug: imls
-    page_slug: independent
+    page_slug: independent#eo2
     short_name: IMLS
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#eo2"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -2224,13 +2224,13 @@
   agency:
     id: USDFC
     name: US International Development Finance Corporation
-    slug: usidfc
-    page_slug: independent
+    slug: usdfc
+    page_slug: independent#regs
     short_name: DFC
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#regs"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -2293,12 +2293,12 @@
     id: EXIM
     name: Export-Import Bank of the United States
     slug: exim
-    page_slug: independent
+    page_slug: independent#regs
     short_name: EXIM
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#regs"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -2361,12 +2361,12 @@
     id: MSPB
     name: Merit System Protection Board
     slug: MSPB
-    page_slug: independent
+    page_slug: independent#mspb
     short_name: MSPB
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#mspb"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -6287,12 +6287,12 @@
     id: NSF
     name: National Science Foundation
     slug: nsf
-    page_slug: independent
+    page_slug: independent#nsf
     short_name: NSF
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#nsf"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -6803,12 +6803,12 @@
     id: NEH
     name: National Endowment for the Humanities
     slug: neh
-    page_slug: independent
+    page_slug: independent#arts
     short_name: NEH
     doge_base: true
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#arts"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -6821,6 +6821,142 @@
     path: "/agencies/gsa"
   agency_and_parent:
   - NEH
+  documents: []
+- id: detail-gsa-mcc-fox
+  type: detailed
+  agency_id: MCC
+  name: Justin Fox
+  doge_alias_id:
+  from_agency_id: GSA
+  from_truth: guessed
+  start_date: 2025-03-(22)?
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: 2025-03-(22)?
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+  source_name: NPR
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Linked to MCC by NPR, start date guessed from disruption there
+  replaced_by:
+  same_as:
+  agency:
+    id: MCC
+    name: Millennium Challenge Corporation
+    slug: mcc
+    page_slug: independent#other
+    short_name: MCC
+    doge_base: false
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/independent#other"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - MCC
+  documents: []
+- id: detail-gsa-wwics-fox
+  type: detailed
+  agency_id: WWICS
+  name: Justin Fox
+  doge_alias_id:
+  from_agency_id: GSA
+  from_truth: guessed
+  start_date: '2025-03-31'
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-03-31'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+  source_name: NPR
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Linked to WWICS by NPR, date is first DOGE sighting at agency
+  replaced_by:
+  same_as:
+  agency:
+    id: WWICS
+    name: Woodrow Wilson Intl. Center for Scholars
+    slug: wwics
+    page_slug: idependent#eo2
+    short_name: Wilson Ctr.
+    doge_base: false
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/idependent#eo2"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - WWICS
   documents: []
 - id: detail-gsa-nlrb-fox
   type: detailed
@@ -8106,12 +8242,12 @@
     id: IMLS
     name: Institute for Museum and Library Services
     slug: imls
-    page_slug: independent
+    page_slug: independent#eo2
     short_name: IMLS
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#eo2"
   agency_and_parent:
   - IMLS
   documents: []
@@ -8983,12 +9119,12 @@
     id: USIP
     name: US Institute of Peace
     slug: usip
-    page_slug: independent
+    page_slug: independent#eo1
     short_name: USIP
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#eo1"
   agency_and_parent:
   - USIP
   documents: []
@@ -10263,12 +10399,12 @@
     id: USAGM
     name: US Agency for Global Media
     slug: usagm
-    page_slug: independent
+    page_slug: independent#eo2
     short_name: Global Media
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#eo2"
   from_agency:
     id: OPM
     name: Office of Personnel Management
@@ -10331,12 +10467,12 @@
     id: FTC
     name: Federal Trade Commission
     slug: ftc
-    page_slug: independent
+    page_slug: independent#regs
     short_name: FTC
     doge_base: true
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#regs"
   from_agency:
     id: OPM
     name: Office of Personnel Management
@@ -11605,12 +11741,12 @@
     id: USAGM
     name: US Agency for Global Media
     slug: usagm
-    page_slug: independent
+    page_slug: independent#eo2
     short_name: Global Media
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#eo2"
   from_agency:
     id: OPM
     name: Office of Personnel Management
@@ -11744,12 +11880,12 @@
     id: FCC
     name: Federal Communications Commission
     slug: fcc
-    page_slug: independent
+    page_slug: independent#fcc
     short_name: FCC
     doge_base: true
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#fcc"
   from_agency:
     id: OPM
     name: Office of Personnel Management
@@ -12261,12 +12397,12 @@
     id: IAF
     name: Inter-American Foundation
     slug: iaf
-    page_slug: independent
+    page_slug: independent#eo1
     short_name: IAF
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#eo1"
   agency_and_parent:
   - IAF
   documents: []
@@ -12492,13 +12628,13 @@
   agency:
     id: USDFC
     name: US International Development Finance Corporation
-    slug: usidfc
-    page_slug: independent
+    slug: usdfc
+    page_slug: independent#regs
     short_name: DFC
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#regs"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -12561,12 +12697,12 @@
     id: SEC
     name: Securities and Exchange Commission
     slug: sec
-    page_slug: independent
+    page_slug: independent#regs
     short_name: SEC
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#regs"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -12942,12 +13078,12 @@
     id: SEC
     name: Securities and Exchange Commission
     slug: sec
-    page_slug: independent
+    page_slug: independent#regs
     short_name: SEC
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#regs"
   agency_and_parent:
   - SEC
   documents: []
@@ -13902,12 +14038,12 @@
     id: FDIC
     name: Federal Deposit Insurance Commission
     slug: fdic
-    page_slug: independent
+    page_slug: independent#regs
     short_name: FDIC
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#regs"
   from_agency:
     id: Education
     name: Department of Education
@@ -14350,12 +14486,12 @@
     id: EXIM
     name: Export-Import Bank of the United States
     slug: exim
-    page_slug: independent
+    page_slug: independent#regs
     short_name: EXIM
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#regs"
   agency_and_parent:
   - EXIM
   documents: []
@@ -15112,12 +15248,12 @@
     id: FDIC
     name: Federal Deposit Insurance Commission
     slug: fdic
-    page_slug: independent
+    page_slug: independent#regs
     short_name: FDIC
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#regs"
   from_agency:
     id: DOGE
     name: Department of Government Efficiency
@@ -15835,12 +15971,12 @@
     id: NSF
     name: National Science Foundation
     slug: nsf
-    page_slug: independent
+    page_slug: independent#nsf
     short_name: NSF
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#nsf"
   from_agency:
     id: HHS
     name: Health and Human Services
@@ -17271,12 +17407,12 @@
     id: USADF
     name: U.S. African Development Foundation
     slug: usadf
-    page_slug: independent
+    page_slug: independent#eo1
     short_name: USADF
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#eo1"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -17349,12 +17485,12 @@
     id: IAF
     name: Inter-American Foundation
     slug: iaf
-    page_slug: independent
+    page_slug: independent#eo1
     short_name: IAF
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#eo1"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -17552,13 +17688,13 @@
   agency:
     id: USDFC
     name: US International Development Finance Corporation
-    slug: usidfc
-    page_slug: independent
+    slug: usdfc
+    page_slug: independent#regs
     short_name: DFC
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#regs"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -18495,12 +18631,12 @@
     id: IMLS
     name: Institute for Museum and Library Services
     slug: imls
-    page_slug: independent
+    page_slug: independent#eo2
     short_name: IMLS
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#eo2"
   agency_and_parent:
   - IMLS
   documents: []
@@ -19293,12 +19429,12 @@
     id: NSF
     name: National Science Foundation
     slug: nsf
-    page_slug: independent
+    page_slug: independent#nsf
     short_name: NSF
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#nsf"
   from_agency:
     id: HHS
     name: Health and Human Services
@@ -20128,12 +20264,12 @@
     id: FCC
     name: Federal Communications Commission
     slug: fcc
-    page_slug: independent
+    page_slug: independent#fcc
     short_name: FCC
     doge_base: true
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#fcc"
   from_agency:
     id: CFPB
     name: Consumer Financial Protection Bureau
@@ -20322,13 +20458,13 @@
   agency:
     id: USDFC
     name: US International Development Finance Corporation
-    slug: usidfc
-    page_slug: independent
+    slug: usdfc
+    page_slug: independent#regs
     short_name: DFC
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#regs"
   from_agency:
     id: GSA
     name: General Services Administration
@@ -20586,12 +20722,12 @@
     id: PeaceCorps
     name: Peace Corps
     slug: peace-corps
-    page_slug: independent
+    page_slug: independent#service
     short_name: Peace Corps
     doge_base: false
     parent_id:
     obj_type: Agency
-    path: "/agencies/independent"
+    path: "/agencies/independent#service"
   agency_and_parent:
   - PeaceCorps
   documents: []
