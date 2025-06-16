@@ -48,6 +48,7 @@ class Agency < Sequel::Model
 
   one_to_many :system_roles
   many_to_many :cases, right_key: :case_no, left_key: :agency_id
+  many_to_many :executive_orders
 
   def all_positions
     out = positions
@@ -115,6 +116,11 @@ class SystemRole < Sequel::Model
   many_to_one :agency
   many_to_one :person, key: :name
   many_to_one :doge_alias
+end
+
+# Represents an executive order
+class ExecutiveOrder < Sequel::Model
+  many_to_many :agencies
 end
 
 # Represents a single DOGE member

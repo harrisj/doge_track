@@ -158,6 +158,21 @@ def generate_positions_yaml
   end
 end
 
+def generate_exec_orders_yaml
+  out_file = File.join(DATA_DIR, 'executive_orders.yml')
+  out_array = ExecutiveOrder.map do |e|
+    out = e.to_hash
+    out['linkified_summary'] = linkify_text(e.summary)
+    out['agency_ids'] = e.agencies.map(&:id)
+    out
+  end
+
+  File.open(out_file, 'w') do |file|
+    out_yaml = YAML.dump(out_array, line_width: 150, stringify_names: true, header: false)
+    file.write(out_yaml)
+  end
+end
+
 def generate_events_yaml
   out_file = File.join(DATA_DIR, 'events.yml')
 
@@ -248,6 +263,7 @@ if __FILE__ == $PROGRAM_NAME
   generate_people_yaml
   generate_positions_yaml
   generate_events_yaml
+  generate_exec_orders_yaml
   generate_systems_yaml
   generate_roles_yaml
   generate_questions_yaml

@@ -198,6 +198,16 @@ DB.create_table! :system_roles do
   string :table_note
 end
 
+DB.create_table! :executive_orders do
+  integer :id, primary_key: true
+  string :title, null: false
+  string :date, null: false
+  string :link, null: false
+  string :summary, null: false
+  boolean :all_agencies, null: false, default: false
+  boolean :directs_doge, null: false, default: false
+end
+
 DB.create_table! :doge_aliases_events do
   foreign_key :doge_alias_id, :doge_aliases, type: :string
   foreign_key :event_id, :events, type: :string
@@ -213,6 +223,12 @@ DB.create_table! :agencies_events do
   foreign_key :agency_id, :agencies, null: false, type: :string
   foreign_key :event_id, :events, null: false, type: :string
   unique %i[agency_id event_id]
+end
+
+DB.create_table! :agencies_executive_orders do
+  foreign_key :agency_id, :agencies, null: false, type: :string
+  foreign_key :executive_order_id, :executive_orders, null: false
+  unique %i[agency_id executive_order_id]
 end
 
 DB.create_table! :documents_positions do

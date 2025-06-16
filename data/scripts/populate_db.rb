@@ -20,6 +20,7 @@ GovtSystem.unrestrict_primary_key
 SystemRole.unrestrict_primary_key
 Document.unrestrict_primary_key
 Question.unrestrict_primary_key
+ExecutiveOrder.unrestrict_primary_key
 
 all_events = []
 
@@ -170,6 +171,15 @@ questions_yaml.each do |q_hash|
 
   input_hash = q_hash.transform_keys!(alias: :doge_alias_id, system_id: :govt_system_id)
   Question.create(input_hash)
+end
+
+exec_orders_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'exec_orders.yaml'), symbolize_names: true)
+exec_orders_yaml.each do |eo_hash|
+  eo = ExecutiveOrder.create(eo_hash.except(:agencies))
+  eo_hash.fetch(:agencies, []).each do |a_id|
+    agency = Agency[a_id]
+    eo.add_agency(agency)
+  end
 end
 
 systems_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'systems.yaml'), symbolize_names: true)

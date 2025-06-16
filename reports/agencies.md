@@ -56,6 +56,9 @@
 - people:
   - **Michael Grimes** (2025-02-27) Senior Advisor
 
+# Community Development Financial Institutions Fund
+- slug: cdfif
+
 # Consumer Financial Protection Bureau
 - slug: cfpb
 - people:
@@ -353,6 +356,9 @@
   - **Justin Monroe** (2025-01-29) (detailed from OPM)
   - **Tarak Makecha** (2025-03-(30)~) Senior Advisor (detailed from OPM)
 
+# Federal Election Commission
+- slug: fec
+
 # Federal Emergency Management Agency
 - slug: fema
 - people:
@@ -628,7 +634,10 @@
 - slug: nsa
 
 # National Transportation Safety Board
-- slug: NTSB
+- slug: ntsb
+
+# Nuclear Regulatory Commission
+- slug: nrc
 
 # Office of Personnel Management
 - slug: opm
@@ -869,8 +878,8 @@
 # US Postal Service
 - slug: usps
 - people:
-  - **Alexander Simonpour** (2025-03-07) (detailed from GSA)
-  - **Ethan Shaotran** (2025-03-12) (detailed from GSA)
+  - **Alexander Simonpour** (2025-03-07 - NTE 2025-06-15) (detailed from GSA)
+  - **Ethan Shaotran** (2025-03-12 - NTE 2025-06-15) (detailed from GSA)
 
 # Veterans Administration
 - slug: va
@@ -886,6 +895,9 @@
 - people:
   - **OPM-05 (Gavin Kliger)** (2025-03-(01)~) (detailed from OPM)
   - **Tarak Makecha** (2025-03-(01)~) (detailed from OPM)
+
+# US Interagency Council on Homelessness
+- slug: usich
 
 # Woodrow Wilson Intl. Center for Scholars
 - slug: wwics

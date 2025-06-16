@@ -157,6 +157,19 @@
   system_access:
   - google-noaa-rajpal
   obj_type: Agency
+- id: CDFIF
+  name: Community Development Financial Institutions Fund
+  slug: cdfif
+  page_slug: independent#eo2
+  short_name: CDFI Fund
+  doge_base: false
+  parent_id:
+  path: "/agencies/independent#eo2"
+  children: []
+  position_ids: []
+  event_ids: []
+  system_access: []
+  obj_type: Agency
 - id: CFPB
   name: Consumer Financial Protection Bureau
   slug: cfpb
@@ -1026,6 +1039,19 @@
   - gBSE6bzh
   system_access: []
   obj_type: Agency
+- id: FEC
+  name: Federal Election Commission
+  slug: fec
+  page_slug: independent#regs
+  short_name: FEC
+  doge_base: false
+  parent_id:
+  path: "/agencies/independent#regs"
+  children: []
+  position_ids: []
+  event_ids: []
+  system_access: []
+  obj_type: Agency
 - id: FEMA
   name: Federal Emergency Management Agency
   slug: fema
@@ -1816,7 +1842,7 @@
   obj_type: Agency
 - id: NTSB
   name: National Transportation Safety Board
-  slug: NTSB
+  slug: ntsb
   page_slug: independent#regs
   short_name: NTSB
   doge_base: false
@@ -1826,6 +1852,19 @@
   position_ids: []
   event_ids:
   - 4h8xjbch
+  system_access: []
+  obj_type: Agency
+- id: NRC
+  name: Nuclear Regulatory Commission
+  slug: nrc
+  page_slug: independent#regs
+  short_name: NRC
+  doge_base: false
+  parent_id:
+  path: "/agencies/independent#regs"
+  children: []
+  position_ids: []
+  event_ids: []
   system_access: []
   obj_type: Agency
 - id: OPM
@@ -2420,14 +2459,27 @@
   - 7GI672HF
   system_access: []
   obj_type: Agency
+- id: USICH
+  name: US Interagency Council on Homelessness
+  slug: usich
+  page_slug: independent#eo2
+  short_name: USICH
+  doge_base: false
+  parent_id:
+  path: "/agencies/independent#eo2"
+  children: []
+  position_ids: []
+  event_ids: []
+  system_access: []
+  obj_type: Agency
 - id: WWICS
   name: Woodrow Wilson Intl. Center for Scholars
   slug: wwics
-  page_slug: idependent#eo2
+  page_slug: independent#eo2
   short_name: Wilson Ctr.
   doge_base: false
   parent_id:
-  path: "/agencies/idependent#eo2"
+  path: "/agencies/independent#eo2"
   children: []
   position_ids:
   - detail-gsa-wwics-fox
