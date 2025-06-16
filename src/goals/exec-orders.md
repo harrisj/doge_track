@@ -10,11 +10,10 @@ From the very beginning, all of DOGE's influences and responsibilities have been
 This page lists the executive orders that have been applicable to DOGE's actions.
 
 {% site.data.executive_orders.each do |eo| %}
-<table class="table table-xs sm:table-sm lg:table-md border-4">
+<table class="table table-sm lg:table-md border-4">
 <tbody>
   <tr>
-  <th class="align-top w-2/12">Title</th>
-  <td class="align-top w-10/12"><a class="link-hover" href="{{ eo.link }}">EO {{ eo.id }}: {{ eo.title }}</a></td>
+  <th colspan="100%" class="text-base sm:text-lg align-top w-10/12"><a class="link-hover" href="{{ eo.link }}">EO {{ eo.id }}: {{ eo.title }}</a></th>
   </tr>
 
   <tr>
@@ -22,14 +21,15 @@ This page lists the executive orders that have been applicable to DOGE's actions
   <td class="align-top w-10/12">{{ render EdtfFormat.new(eo.date) }}</td>
   </tr>
 
-  {% if eo.directs_doge || eo.all_agencies %}
+  {% specific_agencies = eo.agency_ids.reject {|x| x == 'DOGE'} %}
+  {% if eo.directs_doge || eo.all_agencies || specific_agencies.any? %}
   <tr>
     <th class="align-top w-2/12">Directives</th>
-    <td class="align-top w-10/12">{% if eo.directs_doge %}<span class="pr-1"><i class="fa-sharp fa-solid fa-square-check"></i> DOGE</span>{% end %} {% if eo.all_agencies %}<span class="pr-1"><i class="fa-sharp fa-solid fa-square-check"></i> All Agencies</span>{% end %}</td>
+    <td class="align-top w-10/12">{% if eo.directs_doge %}<span class="pr-1 text-nowrap"><i class="fa-sharp fa-solid fa-square-check"></i> DOGE</span>{% end %} {% if eo.all_agencies %}<span class="pr-1 text-nowrap"><i class="fa-sharp fa-solid fa-square-check"></i> All Agencies</span>{% end %}  {% if specific_agencies.any? %}<span class="pr-1 text-nowrap"><i class="fa-sharp fa-solid fa-square-check"></i> Specific Agencies</span>{% end %}</td>
   </tr>
   {% end %}
 
-  {% if eo.agency_ids.any? %}
+  {% if specific_agencies.any? %}
   <tr>
     <th class="align-top w-2/12">Specified</th>
     <td class="align-top w-10/12">{{ eo.agency_ids | agency_links }}</td>
