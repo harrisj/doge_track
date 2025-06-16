@@ -1,6 +1,21 @@
 # yaml-language-server: $schema=../schemas/interagency-events-file.json
 ---
 
+- date: 2025-02-07
+  type: report
+  fuzz: article just reports this as early Feb; but Musk tweets said he was informed on 2/7
+  event: >-
+    After gaining access to the PAM DB system, DOGE members at the Treasury department see what appear
+    to be payments flowing to recipients without Social Security numbers. Other recipients appear to be
+    dead. This triggered Musk accusing SSA of massive fraud. It was later reveled to be DOGE not understanding
+    the data.
+  source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
+  source_name: NYT
+  agency:
+  - SSA
+  - Treasury
+  id: 1sruV2vD
+
 - date: 2025-02-19
   type: official
   event: >-
@@ -93,6 +108,24 @@
   - CMS
   - HHS
   id: SixRwXSZ
+
+- date: 2025-04-01
+  type: disruption
+  event: >-
+    Alarmed at the viral spread of DOGE's false claim that 40% of all calls to Social Security are fraud,
+    agency staff at SSA draft a public statement to correct the errors in the claim. They are specifically
+    ordered by Katie Miller not to release it. "The number is 40 percent."
+  interagency_doge_reps:
+    DOGE:
+    - Katie Miller
+    SSA:
+    - Leland Dudek
+  source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
+  source_name: NYT
+  agency:
+  - SSA
+  - DOGE
+  id: 1YdIZqg4
 
 - date: 2025-04-01
   type: disruption

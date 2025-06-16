@@ -167,6 +167,41 @@
   linkified_text: >
     A report on the tech billionaires steering Trump’s transition mentions <a class="link-hover" href="/all/people#elon-musk">Elon Musk</a> and other names
     we now know to be <a class="link-hover" href="/agencies/white-house">DOGE</a> staffers, and it describes how they have been interviewing people at Mar-a-Lago
+- id: 2AXaug8A
+  type: Event
+  date: 2024-12-(15)~
+  sort_date: '2024-12-15'
+  time:
+  text: A contractor for SSA arranges an introduction for Leland Dudek to meet Steve Davis
+  fuzz: Date is just given as "mid-December"
+  comment:
+  source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
+  source_title:
+  source_name: NYT
+  case_no:
+  track_id:
+  system_id:
+  names:
+  - Steve Davis
+  - Leland Dudek
+  agency_ids:
+  - SSA
+  alias_ids: []
+  names_aliases:
+  - name: Steve Davis
+    slug: steve-davis
+    sort_name: Davis
+    category: leadership
+  - name: Leland Dudek
+    slug: leland-dudek
+    sort_name: Dudek
+    category: enabler
+  agencies_parents:
+  - SSA
+  obj_type: Event
+  linkified_text: >
+    A contractor for <a class="link-hover" href="/agencies/social-security">SSA</a> arranges an introduction for <a class="link-hover" href="/people/enabler-staff#leland-dudek">Leland
+    Dudek</a> to meet <a class="link-hover" href="/all/people#steve-davis">Steve Davis</a>
 - id: KvP48A34
   type: directory
   date: '2025-01-06'
@@ -3520,6 +3555,38 @@
   linkified_text: 'All <a class="link-hover" href="/agencies/usaid">USAID</a> staff are placed on indefinite administrative leave
 
     '
+- id: 1sruV2vD
+  type: report
+  date: '2025-02-07'
+  sort_date: '2025-02-07'
+  time:
+  text: >-
+    After gaining access to the PAM DB system, DOGE members at the Treasury department see what appear to be payments flowing to recipients without Social
+    Security numbers. Other recipients appear to be dead. This triggered Musk accusing SSA of massive fraud. It was later reveled to be DOGE not understanding
+    the data.
+  fuzz: article just reports this as early Feb; but Musk tweets said he was informed on 2/7
+  comment:
+  source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
+  source_title:
+  source_name: NYT
+  case_no:
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - SSA
+  - Treasury
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - SSA
+  - Treasury
+  obj_type: Event
+  linkified_text: >
+    After gaining access to the PAM DB system, <a class="link-hover" href="/agencies/white-house">DOGE</a> members at the Treasury department see what appear
+    to be payments flowing to recipients without Social Security numbers. Other recipients appear to be dead. This triggered Musk accusing <a class="link-hover"
+    href="/agencies/social-security">SSA</a> of massive fraud. It was later reveled to be <a class="link-hover" href="/agencies/white-house">DOGE</a> not
+    understanding the data.
 - id: dLc2F3xm
   type: disruption
   date: '2025-02-08'
@@ -3583,6 +3650,36 @@
     NBC News reports that <a class="link-hover" href="/wreckers/akash-bobba">Akash Bobba</a> and <a class="link-hover" href="/wreckers/ethan-shaotran/">Ethan
     Shaotran</a> have admin access to email and had also accessed the backend admin for the <a class="link-hover" href="/agencies/education">Department
     of Education</a> website.
+- id: 4jWM1sc2
+  type: official
+  date: '2025-02-09'
+  sort_date: '2025-02-09'
+  time:
+  text: Elon Musk posts tweets claiming to have discovered sources of "massive fraud" within SSA
+  fuzz:
+  comment:
+  source: https://xcancel.com/elonmusk/status/1888484555092312466
+  source_title:
+  source_name: X.com
+  case_no:
+  track_id:
+  system_id:
+  names:
+  - Elon Musk
+  agency_ids:
+  - SSA
+  alias_ids: []
+  names_aliases:
+  - name: Elon Musk
+    slug: elon-musk
+    sort_name: Musk
+    category: leadership
+  agencies_parents:
+  - SSA
+  obj_type: Event
+  linkified_text: >
+    <a class="link-hover" href="/all/people#elon-musk">Elon Musk</a> posts tweets claiming to have discovered sources of “massive fraud” within <a class="link-hover"
+    href="/agencies/social-security">SSA</a>
 - id: 6eXUJiZM
   type: disruption
   date: '2025-02-09'
@@ -3796,6 +3893,53 @@
     Employees at <a class="link-hover" href="/agencies/housing">HUD</a> receive an email from new <a class="link-hover" href="/agencies/white-house">DOGE</a>
     staffer <a class="link-hover" href="/wreckers/other#scott-langmack">Scott Langmack</a> asking them to list every contract at <a class="link-hover" href="/agencies/housing">HUD</a>
     and whether it is critical and/or has DEI components
+- id: 4QdEVdg4
+  type: report
+  date: '2025-02-10'
+  sort_date: '2025-02-10'
+  time:
+  text: >-
+    Mike Russo summons Leland Dudek to his office and asks him to explain discrepancies cited by Musk. Leland convened a team of dozens of SSA engineers
+    who reviewed data from the Treasury department. They carefully documented fallacies in DOGE's reasoning in a memo presented to Russo. Mike Russo reportedly
+    declared that DOGE would not trust career civil servants and demanded that Akash Bobba do his own analysis.
+  fuzz:
+  comment:
+  source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
+  source_title:
+  source_name: NYT
+  case_no:
+  track_id:
+  system_id:
+  names:
+  - Akash Bobba
+  - Leland Dudek
+  - Mike Russo
+  agency_ids:
+  - SSA
+  alias_ids: []
+  names_aliases:
+  - name: Akash Bobba
+    slug: akash-bobba
+    sort_name: Bobba
+    category: wrecker
+  - name: Leland Dudek
+    slug: leland-dudek
+    sort_name: Dudek
+    category: enabler
+  - name: Mike Russo
+    slug: mike-russo
+    sort_name: Russo
+    category: enabler
+  agencies_parents:
+  - SSA
+  obj_type: Event
+  linkified_text: >
+    <a class="link-hover" href="/people/enabler-staff#mike-russo">Mike Russo</a> summons <a class="link-hover" href="/people/enabler-staff#leland-dudek">Leland
+    Dudek</a> to his office and asks him to explain discrepancies cited by Musk. Leland convened a team of dozens of <a class="link-hover" href="/agencies/social-security">SSA</a>
+    engineers who reviewed data from the Treasury department. They carefully documented fallacies in <a class="link-hover" href="/agencies/white-house">DOGE</a>’s
+    reasoning in a memo presented to Russo. <a class="link-hover" href="/people/enabler-staff#mike-russo">Mike Russo</a> reportedly declared that <a class="link-hover"
+    href="/agencies/white-house">DOGE</a> would not trust career civil servants and demanded that <a class="link-hover" href="/wreckers/akash-bobba">Akash
+    Bobba</a> do his own analysis.
 - id: MDr4Wvod
   type: disruption
   date: '2025-02-10'
@@ -7481,6 +7625,46 @@
   linkified_text: >
     <a class="link-hover" href="/wreckers/other#joe-gebbia">Joe Gebbia</a> announces on his social media account that he will be working on a project at
     the <a class="link-hover" href="/agencies/opm">OPM</a> to modernize retirement processing and move it away from paper records
+- id: 4Xh3hZ2F
+  type: disruption
+  date: '2025-02-27'
+  sort_date: '2025-02-27'
+  time:
+  text: >-
+    Ethan Shaotran contacts Leland Dudek to inform him that DOGE had identified roughly 3 dozen federal contracts in Maine as "nonessential" and that "we
+    should cancel them" in response to the Maine governor publicly countering abuse from the President over transgender athletes. Two of those contracts
+    are for Social Security services in the State.
+  fuzz:
+  comment:
+  source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
+  source_title:
+  source_name: NYT
+  case_no:
+  track_id:
+  system_id:
+  names:
+  - Leland Dudek
+  - Ethan Shaotran
+  agency_ids:
+  - SSA
+  alias_ids: []
+  names_aliases:
+  - name: Leland Dudek
+    slug: leland-dudek
+    sort_name: Dudek
+    category: enabler
+  - name: Ethan Shaotran
+    slug: ethan-shaotran
+    sort_name: Shaotran
+    category: wrecker
+  agencies_parents:
+  - SSA
+  obj_type: Event
+  linkified_text: >
+    <a class="link-hover" href="/wreckers/ethan-shaotran/">Ethan Shaotran</a> contacts <a class="link-hover" href="/people/enabler-staff#leland-dudek">Leland
+    Dudek</a> to inform him that <a class="link-hover" href="/agencies/white-house">DOGE</a> had identified roughly 3 dozen federal contracts in Maine as
+    “nonessential” and that “we should cancel them” in response to the Maine governor publicly countering abuse from the President over transgender athletes.
+    Two of those contracts are for Social Security services in the State.
 - id: 9TW4PD58
   type: disruption
   date: '2025-02-28'
@@ -9317,6 +9501,34 @@
   linkified_text: >
     Networking staff at <a class="link-hover" href="/agencies/nlrb">NLRB</a> determines that 10GB of data was exfiltrated from the NxGen case management
     system and then from <a class="link-hover" href="/agencies/nlrb">NLRB</a>. It’s possible this is the compressed size and represents many more records
+- id: 62L1c5Ar
+  type: official
+  date: '2025-03-07'
+  sort_date: '2025-03-07'
+  time:
+  text: >-
+    After political blowback causes SSA to reverse its decision to cancel some contracts for the state of Maine, Leland Dudek posts an offical apology claiming
+    it was his direction to cancel the contracts to obscure that the direction had come from DOGE.
+  fuzz:
+  comment:
+  source: https://www.ssa.gov/news/press/releases/2025/#2025-03-07
+  source_title:
+  source_name: press release
+  case_no:
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - SSA
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - SSA
+  obj_type: Event
+  linkified_text: >
+    After political blowback causes <a class="link-hover" href="/agencies/social-security">SSA</a> to reverse its decision to cancel some contracts for
+    the state of Maine, <a class="link-hover" href="/people/enabler-staff#leland-dudek">Leland Dudek</a> posts an offical apology claiming it was his direction
+    to cancel the contracts to obscure that the direction had come from <a class="link-hover" href="/agencies/white-house">DOGE</a>.
 - id: 8SdCKCzM
   type: disruption
   date: '2025-03-08'
@@ -11565,12 +11777,14 @@
   date: '2025-03-20'
   sort_date: '2025-03-20'
   time:
-  text: Leland Dudek threatens to shut down the entire Social Security Administration instead of complying with the order
+  text: >-
+    Leland Dudek threatens to shut down the entire Social Security Administration instead of complying with the order. He reportedly reaches this conclusion
+    on the advice of two unnamed senior DOGE leaders.
   fuzz:
   comment:
-  source: https://www.washingtonpost.com/politics/2025/03/21/social-security-benefits-trump-doge/
+  source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
   source_title:
-  source_name:
+  source_name: NYT
   case_no:
   track_id:
   system_id:
@@ -11589,7 +11803,8 @@
   obj_type: Event
   linkified_text: >
     <a class="link-hover" href="/people/enabler-staff#leland-dudek">Leland Dudek</a> threatens to shut down the entire <a class="link-hover" href="/agencies/social-security">Social
-    Security Administration</a> instead of complying with the order
+    Security Administration</a> instead of complying with the order. He reportedly reaches this conclusion on the advice of two unnamed senior <a class="link-hover"
+    href="/agencies/white-house">DOGE</a> leaders.
 - id: cNrE379u
   type: disruption
   date: '2025-03-20'
@@ -13843,6 +14058,47 @@
   linkified_text: >
     Mark Green, a Republican who once worked for Trump, is forced out as the head of the Wilson Center. Several members of the board were also reportedly
     fired earlier.
+- id: 1YdIZqg4
+  type: disruption
+  date: '2025-04-01'
+  sort_date: '2025-04-01'
+  time:
+  text: >-
+    Alarmed at the viral spread of DOGE's false claim that 40% of all calls to Social Security are fraud, agency staff at SSA draft a public statement to
+    correct the errors in the claim. They are specifically ordered by Katie Miller not to release it. "The number is 40 percent."
+  fuzz:
+  comment:
+  source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
+  source_title:
+  source_name: NYT
+  case_no:
+  track_id:
+  system_id:
+  names:
+  - Leland Dudek
+  - Katie Miller
+  agency_ids:
+  - SSA
+  - DOGE
+  alias_ids: []
+  names_aliases:
+  - name: Leland Dudek
+    slug: leland-dudek
+    sort_name: Dudek
+    category: enabler
+  - name: Katie Miller
+    slug: katie-miller
+    sort_name: Miller
+    category: booster
+  agencies_parents:
+  - SSA
+  - DOGE
+  - EOP
+  obj_type: Event
+  linkified_text: >
+    Alarmed at the viral spread of <a class="link-hover" href="/agencies/white-house">DOGE</a>’s false claim that 40% of all calls to Social Security are
+    fraud, agency staff at <a class="link-hover" href="/agencies/social-security">SSA</a> draft a public statement to correct the errors in the claim. They
+    are specifically ordered by <a class="link-hover" href="/all/people#katie-miller">Katie Miller</a> not to release it. “The number is 40 percent.”
 - id: 6BGD7wuo
   type: disruption
   date: '2025-04-01'
@@ -19552,3 +19808,60 @@
   linkified_text: >
     Surprised by Israel’s strikes on Iran and unable to counter Iranian programming, the Voice of America orders all of its Farsi-speaking members of the
     Voice of America’s Persian wing immediately back to work after being on administrative leave for several months.
+- id: fIZjw7yF
+  type: disruption
+  date: '2025-06-16'
+  sort_date: '2025-06-16'
+  time:
+  text: >-
+    Citing "heavy workload and limited resources," the FDA informs a drug manufacturer that it will be unable to meet a deadline to approve a new drug to
+    treat a life-threatening hereditary condition. This is a first-time event for the agency, and some suggest it's a direct result of DOGE-directed staff
+    reductions at the FDA.
+  fuzz:
+  comment:
+  source: https://www.axios.com/2025/06/16/doge-cuts-fda-delay-angioedema-drug
+  source_title:
+  source_name: Axios
+  case_no:
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - FDA
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - FDA
+  - HHS
+  obj_type: Event
+  linkified_text: >
+    Citing “heavy workload and limited resources,” the <a class="link-hover" href="/agencies/health">FDA</a> informs a drug manufacturer that it will be
+    unable to meet a deadline to approve a new drug to treat a life-threatening hereditary condition. This is a first-time event for the agency, and some
+    suggest it’s a direct result of <a class="link-hover" href="/agencies/white-house">DOGE</a>-directed staff reductions at the <a class="link-hover" href="/agencies/health">FDA</a>.
+- id: 6w8Oownm
+  type: oversight
+  date: '2025-06-16'
+  sort_date: '2025-06-16'
+  time:
+  text: >-
+    The top Democrat on the House Oversight Committee sends a letter to Microsoft requesting access and information about Jordan Wick's now-private Github
+    account, specifically to see details about the NxGenBdoorExtract program.
+  fuzz:
+  comment:
+  source: https://www.npr.org/2025/06/16/nx-s1-5435330/congress-doge-nlrb-whistleblower-github
+  source_title:
+  source_name: NPR
+  case_no:
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - NLRB
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - NLRB
+  obj_type: Event
+  linkified_text: >
+    The top Democrat on the House Oversight Committee sends a letter to Microsoft requesting access and information about <a class="link-hover" href="/wreckers/jordan-wick">Jordan
+    Wick</a>’s now-private Github account, specifically to see details about the NxGenBdoorExtract program.
