@@ -1315,7 +1315,7 @@
   date: '2025-01-27'
   sort_date: '2025-01-27'
   time:
-  text: Charles Ezell sends an email stating that OPM-2, OPM-4, and OPM-6 "urgently" needed access
+  text: Charles Ezell sends an email stating that OPM-02, OPM-04, and OPM-06 "urgently" needed access to several sensitive systems within the agency.
   fuzz:
   comment:
   source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf
@@ -1384,8 +1384,9 @@
   - OPM
   obj_type: Event
   linkified_text: >
-    <a class="link-hover" href="/people/enabler-staff#charles-ezell">Charles Ezell</a> sends an email stating that OPM-2, OPM-4, and OPM-6 “urgently” needed
-    access
+    <a class="link-hover" href="/people/enabler-staff#charles-ezell">Charles Ezell</a> sends an email stating that OPM-02 (<a class="link-hover" href="/people/support-team#riccardo-biasini">Riccardo
+    Biasini</a>), OPM-04 (<a class="link-hover" href="/wreckers/edward-coristine">Edward Coristine</a>), and OPM-06 (<a class="link-hover" href="/wreckers/nikhil-rajpal/">Nikhil
+    Rajpal</a>) “urgently” needed access to several sensitive systems within the agency.
 - id: UBodNip9
   type: disruption
   date: '2025-01-27'
@@ -1706,8 +1707,8 @@
   sort_date: '2025-01-28'
   time:
   text: >-
-    OPM granted OPM-2, OPM-4, and OPM-6 administrative access to USAJOBS, USA Staffing, USA Performance, eOPF, and EHRI. Their access included “[c]ode read
-    and write permissions.”
+    OPM grants OPM-02, OPM-04, and OPM-06 full administrative access to the systems USAJOBS, USA Staffing, USA Performance, eOPF, and EHRI. This access
+    included “[c]ode read and write permissions.”
   fuzz:
   comment:
   source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf
@@ -1771,8 +1772,10 @@
   - OPM
   obj_type: Event
   linkified_text: >
-    <a class="link-hover" href="/agencies/opm">OPM</a> granted OPM-2, OPM-4, and OPM-6 administrative access to USAJOBS, USA Staffing, USA Performance,
-    eOPF, and EHRI. Their access included “[c]ode read and write permissions.”
+    <a class="link-hover" href="/agencies/opm">OPM</a> grants OPM-02 (<a class="link-hover" href="/people/support-team#riccardo-biasini">Riccardo Biasini</a>),
+    OPM-04 (<a class="link-hover" href="/wreckers/edward-coristine">Edward Coristine</a>), and OPM-06 (<a class="link-hover" href="/wreckers/nikhil-rajpal/">Nikhil
+    Rajpal</a>) full administrative access to the systems USAJOBS, USA Staffing, USA Performance, eOPF, and EHRI. This access included “[c]ode read and
+    write permissions.”
 - id: gBSE6bzh
   type: sighting
   date: '2025-01-29'
@@ -10964,7 +10967,9 @@
   date: '2025-03-14'
   sort_date: '2025-03-14'
   time:
-  text: Leland Dudek approves for "Employee 5" to run the proposed tool for death data improvement
+  text: >-
+    Leland Dudek grants approval for SSA-05 to run the proposed tool for modifying the death data records to eliminate implausibly old people. DOGE was
+    convinced these data errors were a massive source of fraud, despite evidence to the contrary from SSA staff.
   fuzz:
   comment:
   source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
@@ -10996,7 +11001,10 @@
   - SSA
   obj_type: Event
   linkified_text: >
-    <a class="link-hover" href="/people/enabler-staff#leland-dudek">Leland Dudek</a> approves for “Employee 5” to run the proposed tool for death data improvement
+    <a class="link-hover" href="/people/enabler-staff#leland-dudek">Leland Dudek</a> grants approval for SSA-05 (<a class="link-hover" href="/wreckers/cole-killian">Cole
+    Killian</a>) to run the proposed tool for modifying the death data records to eliminate implausibly old people. <a class="link-hover" href="/agencies/white-house">DOGE</a>
+    was convinced these data errors were a massive source of fraud, despite evidence to the contrary from <a class="link-hover" href="/agencies/social-security">SSA</a>
+    staff.
 - id: aqE3KGWn
   type: disruption
   date: '2025-03-14'
@@ -13146,9 +13154,8 @@
   sort_date: '2025-03-27'
   time:
   text: >-
-    In a sworn declaration, Leland Dudek justifies access to PII in SSA records for Employee 1, Employee 5, Employee 8 and Employee 9 on the DOGE team.
-    This access is through the SSA's Enterprise Data Warehouse (EDW) system. He claims DOGE staff are being granted only the minimum levels of schema access
-    required.
+    In a sworn declaration, Leland Dudek justifies access to PII in SSA records for SSA-01, SSA-05, SSA-08 and SSA-09 on the DOGE team. This access is through
+    the SSA's Enterprise Data Warehouse (EDW) system. He claims DOGE staff are being granted only the minimum levels of schema access required.
   fuzz:
   comment:
   source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.62.1.pdf
@@ -13229,9 +13236,11 @@
   obj_type: Event
   linkified_text: >
     In a sworn declaration, <a class="link-hover" href="/people/enabler-staff#leland-dudek">Leland Dudek</a> justifies access to PII in <a class="link-hover"
-    href="/agencies/social-security">SSA</a> records for Employee 1, Employee 5, Employee 8 and Employee 9 on the <a class="link-hover" href="/agencies/white-house">DOGE</a>
-    team. This access is through the SSA’s Enterprise Data Warehouse (EDW) system. He claims <a class="link-hover" href="/agencies/white-house">DOGE</a>
-    staff are being granted only the minimum levels of schema access required.
+    href="/agencies/social-security">SSA</a> records for SSA-01 (<a class="link-hover" href="/wreckers/akash-bobba">Akash Bobba</a>), SSA-05 (<a class="link-hover"
+    href="/wreckers/cole-killian">Cole Killian</a>), SSA-08 (<a class="link-hover" href="/wreckers/nikhil-rajpal/">Nikhil Rajpal</a>) and SSA-09 (<a class="link-hover"
+    href="/wreckers/payton-rehling">Payton Rehling</a>) on the <a class="link-hover" href="/agencies/white-house">DOGE</a> team. This access is through
+    the SSA’s Enterprise Data Warehouse (EDW) system. He claims <a class="link-hover" href="/agencies/white-house">DOGE</a> staff are being granted only
+    the minimum levels of schema access required.
 - id: dqDnwCxi
   type: action
   date: '2025-03-28'
