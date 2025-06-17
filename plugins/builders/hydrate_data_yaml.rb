@@ -51,6 +51,7 @@ module Builders
       site.data.aliases.each do |a|
         a.events = a.event_ids.map { |e_id| lookup_event(e_id) }
         a.positions = a.position_ids.map { |p_id| lookup_position(p_id) }
+        a.person = lookup_person(a.name) unless a.name.blank?
         a.questions = []
       end
     end

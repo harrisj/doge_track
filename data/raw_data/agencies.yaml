@@ -2988,7 +2988,17 @@
   short_name: FEC
   slug: fec
   page_slug: independent#regs
-  events: []
+  events:
+  - date: 2025-04-30
+    type: disruption
+    event: >-
+      FEC staffers receive an email stating they will be required to send daily updates of their location
+      as part of a new Daily Occupancy Tool that will possibly be rolled out across the government by
+      the GSA
+    source: https://www.washingtonpost.com/dc-md-va/2025/04/30/return-to-office-track-federal-office-occupancy/
+    source_name: Wash. Post
+    agency: FEC
+    id: 7BDIH39X
 
 - name: Federal Emergency Management Agency
   id: FEMA
@@ -3179,6 +3189,40 @@
   page_slug: self
   doge_base: true
   events:
+  - date: 2025-01-20
+    type: onboard
+    event: Stephen Ehikian is named the Acting Administrator of the GSA
+    source: https://www.nextgov.com/people/2025/01/gsa-announces-new-fas-tts-leadership/402485/
+    source_name: NextGov
+    named:
+    - Stephen Ehikian
+    agency: GSA
+    id: 8CVj0JL8
+  - date: 2025-01-20
+    type: directory
+    event: >-
+      Multiple DOGE staffers start working within GSA in the office of the Administrator with the title
+      Senior Advisor
+    linked:
+    - Jeremy Lewin
+    - Edward Coristine
+    - Ethan Shaotran
+    - Luke Farritor
+    - Nicole Hollander
+    agency: GSA
+    id: 6CLFIGtN
+    source: https://www.wired.com/story/elon-musk-lackeys-general-services-administration/
+    source_name: Wired
+  - date: 2025-01-24
+    type: onboard
+    event: >-
+      Thomas Shedd is named as the new head of the Technology Transformation Service (TTS), the parent
+      organization of 18F as well as shared services like Login.gov. He reports to Josh Gruenbaum, who
+      is also appointed today as the Federal Acquisition Service (FAS) Commissioner.
+    source: https://www.nextgov.com/people/2025/01/gsa-announces-new-fas-tts-leadership/402485/
+    source_name: NextGov
+    agency: GSA
+    id: 5TxZ48qN
   - date: 2025-01-29
     type: report
     event: >-
@@ -3450,6 +3494,18 @@
     source_name: Federal News Network
     agency: GSA
     id: HQUguBSH
+  - date: 2025-04-10
+    type: report
+    event: >-
+      Ethan Shaotran is converted to a regular position at the GSA at the GS-14 level, which would mean
+      an annual salary of $142,488 - $185,234 in Washington, DC. This is a relatively senior position
+      for any government worker.
+    named:
+    - Ethan Shaotran
+    source: https://www.wired.com/story/big-balls-young-doge-converted-into-full-time-government-employees/
+    source_name: Wired
+    agency: GSA
+    id: 43N5ZJ1g
   - date: 2025-05-13
     type: directory
     event: >-
@@ -3501,6 +3557,19 @@
     source_title: Another Top Musk Lieutenant Appears to Be Leaving DOGE
     agency: GSA
     id: qGW3IvqQ
+  - date: 2025-05-31
+    type: report
+    event: >-
+      Edward Coristine and Luke Farritor are both converted into regular positions at the GSA at the GS-15
+      level, which would mean an annual salary of $167,603 - $195,200 in Washington, DC. This is the maximum
+      level possible for a general government worker, and it often takes years or decades to reach.
+    named:
+    - Luke Farritor
+    - Edward Coristine
+    source: https://www.wired.com/story/big-balls-young-doge-converted-into-full-time-government-employees/
+    source_name: Wired
+    agency: GSA
+    id: 1p5jvsJN
   - date: 2025-06-06
     type: report
     event: >-
@@ -4435,12 +4504,29 @@
   page_slug: archives
   events: []
 
+- name: National Endowment for the Arts
+  id: NEA
+  short_name: NEA
+  slug: nea
+  page_slug: independent#arts
+  events:
+  - date: 2025-05-02
+    type: disruption
+    event: >-
+      Hundreds of arts groups across the country receive emails informing them that their grants from
+      the NEA have been terminated. These emails originate from a generic `arts.gov` email address and
+      arrive late on Friday hours after Trump proposes eliminating the agency in his budget.
+    source: >-
+      https://www.npr.org/2025/05/03/nx-s1-5385888/sweeping-cuts-hit-nea-after-trump-administration-calls-to-eliminate-the-agency
+    source_name: NPR
+    agency: NEA
+    id: SY6QhbUj
+
 - name: National Endowment for the Humanities
   id: NEH
   short_name: NEH
   slug: neh
   page_slug: independent#arts
-  doge_base: true
   events:
   - date: 2025-03-12
     type: disruption
@@ -5007,7 +5093,40 @@
   short_name: NRC
   slug: nrc
   page_slug: independent#regs
-  events: []
+  events:
+  - date: 2025-05-20
+    type: official
+    event: >-
+      A memo directed to NRC from the White House Office of Information and Regulatory Affairs (OIRA)
+      declares that OIRA should have oversight over regulations made at the independent agency and NRC
+      staff "may not know or be privy to the bases for OMB decisions for why an action is significant.”
+    source: https://www.energyintel.com/00000197-3ceb-d30d-a79f-beeb5ff40000
+    source_name: Energy Intelligence
+    agency: NRC
+    id: 28wzRBnN
+  - date: 2025-05-31
+    type: official
+    event: >-
+      President Trump issues EO 14300, which orders the NRC to relax its regulatory oversight over the
+      nuclear industry. It also demands that the agency must plan for a reduction in force and realign
+      its priorities. Following the model used for other independent agencies, this is probably the prelude
+      for DOGE to arrive at the agency.
+    source: >-
+      https://www.presidency.ucsb.edu/documents/executive-order-14300-ordering-the-reform-the-nuclear-regulatory-commission
+    source_name: executive order
+    agency: NRC
+    id: 6oj0XhzA
+  - date: 2025-06-16
+    type: disruption
+    event: >-
+      Trent Morse sends a letter firing one of the five members of the board (and the only Biden appointee)
+      for the Nuclear Regulatory Commission.
+    named:
+    - Trent Morse
+    source: https://www.npr.org/2025/06/16/nx-s1-5435285/trump-fires-nuclear-regulatory-commission-member-nrc
+    source_name: NPR
+    agency: NRC
+    id: WOPqsi6l
 
 - name: Office of Personnel Management
   id: OPM
@@ -5747,7 +5866,18 @@
   short_name: Smithsonian
   slug: smithsonian
   page_slug: independent#other
-  events: []
+  events:
+  - date: 2025-01-29
+    type: disruption
+    event: >-
+      The Smithsonian Institution announces it is closing a diversity office and freezing all federal
+      hiring. It is not a federal agency, but most of its funding comes from appropriaions and two-thirds
+      of staff are federal workers.
+    source: >-
+      https://www.npr.org/2025/01/29/nx-s1-5279225/smithsonian-diversity-office-president-trump-executive-order
+    source_name: NPR
+    agency: Smithsonian
+    id: 2VbieCgy
 
 - name: Social Security Administration
   id: SSA

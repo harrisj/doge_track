@@ -53,6 +53,20 @@
   case_no: 1:25-cv-00778
   id: CuJmM2lv
 
+- date: 2025-02-(26)~
+  type: interagency
+  fuzz: Date is just given as "Late February"
+  event: >-
+    During a call of human capital officers led by OPM, a representative for the GSA announces they are
+    working on a "new federal daily check-in tool." A test email was sent out on the same day. They announce
+    plans to debut the tool by the first week in March.
+  source: https://www.washingtonpost.com/dc-md-va/2025/04/30/return-to-office-track-federal-office-occupancy/
+  source_name: Wash. Post
+  agency:
+  - OPM
+  - GSA
+  id: 5zOTAHYX
+
 - date: 2025-03-01
   type: report
   comment: Actual start date in March unknown
@@ -215,6 +229,20 @@
   - DOD
   - NIH
   id: Uasqbriy
+
+- date: 2025-04-21
+  type: official
+  event: >-
+    OMB issues a new memo mandating that agencies must collect daily occupancy data on all workers by
+    May 4th. To support this effort, GSA unveils a website outlining methods to track federal workers,
+    including mandatory daily surveys, monitoring badge usage or even video surveillance.
+  source: >-
+    https://www.gsa.gov/real-estate/real-estate-services/for-federal-customers/use-it-act-and-occupancy-data
+  source_name: GSA resources
+  agency:
+  - EOP
+  - GSA
+  id: 4Dk4zhPh
 
 - date: 2025-05-13
   type: legal

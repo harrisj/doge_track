@@ -407,16 +407,15 @@
 # General Services Administration
 - slug: gsa
 - people:
-  - **Edward Coristine** (2025-01-(20)~)
+  - **OPM-04 (Edward Coristine)** (2025-01-(20)~) Senior Advisor
   - **Jeremy Lewin** (2025-01-20)
-  - **OPM-04 (Edward Coristine)** (2025-01-20) Senior Advisor
   - **Ethan Shaotran** (2025-01-20)
   - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
   - **Nicole Hollander** (2025-01-20 - 2025-05-29)
   - **OPM-05 (Gavin Kliger)** (detailed from OPM)
-  - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
   - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
+  - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
   - **Kyle Schutt** (2025-02-(18)~)
   - **Frank Schuler** (2025-02-(18)~) Senior Advisor
   - **Nate Cavanaugh** (2025-02-03)
@@ -572,6 +571,9 @@
 
 # National Archives
 - slug: nara
+
+# National Endowment for the Arts
+- slug: nea
 
 # National Endowment for the Humanities
 - slug: neh

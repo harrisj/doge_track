@@ -173,8 +173,7 @@
 # Edward Coristine
 - category: wrecker
 - positions:
-    -  **GSA** (2025-01-(20)~ to ??)  volunteer
-    -  **GSA** (2025-01-20 to NTE 2026-01-19) [as "OPM-04"] Senior Advisor EF-00 volunteer
+    -  **GSA** (2025-01-(20)~ to NTE 2026-01-19) [as "OPM-04"] Senior Advisor EF-00 volunteer
     -  **SBA** (2025-02-03 to ??) 
     -  **DHS** (2025-02-(04)~ to ??) 
     -  **FEMA** (2025-02-05 to ??) 
