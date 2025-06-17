@@ -18,6 +18,8 @@ class EdtfFormat
     case @format
     when :compact
       "#{'  ' if fill?}#{@date.strftime('%-m/%d')}"
+    when :compact_year
+      "#{'  ' if fill?}#{@date.strftime('%-m/%d/%y')}"
     when :iso
       "#{'  ' if fill?}#{@date.strftime('%Y-%m-%d')}"
     when :human
@@ -32,6 +34,8 @@ class EdtfFormat
     case @format
     when :compact
       "#{'  ' if fill?}<abbr title=\"#{humanized}\">#{@date.strftime('%-m/XX')}</abbr>"
+    when :compact_year
+      "#{'  ' if fill?}<abbr title=\"#{humanized}\">#{@date.strftime('%-m/XX/%y')}</abbr>"
     when :iso
       "#{'  ' if fill?}<abbr title=\"#{humanized}\">#{@date.strftime('%Y-%m-XX')}</abbr>"
     when :human
@@ -45,6 +49,8 @@ class EdtfFormat
     case @format
     when :compact
       "<abbr title=\"#{humanized}\">#{@date.strftime('c.%-m/%d')}</abbr>"
+    when :compact_year
+      "<abbr title=\"#{humanized}\">#{@date.strftime('c.%-m/%d/%y')}</abbr>"
     when :iso
       "<abbr title=\"#{humanized}\">c.#{@date}</abbr>"
     when :human

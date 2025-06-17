@@ -290,7 +290,7 @@
 - people:
   - **Marko Elez** (2025-01-21 - 2025-02-06) Special Advisor (IT&M)
   - **Tom Krause** (2025-01-23 - 2025-02-12) Senior Advisor for Technology and Modernization
-  - **Tom Krause** (2025-02-13)
+  - **Tom Krause** (2025-02-13 - 2025-06-06)
   - **Ryan Wunderly** (2025-02-20)
   - **Linda Whitridge** (2025-02-25)
   - **Todd Newnam** (2025-03-06) Senior Advisor

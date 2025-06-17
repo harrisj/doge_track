@@ -42,10 +42,10 @@ It has always been easier to track when DOGE staff have arrived at an agency vs.
 <div class="py-2">
 {%@ 'text' do %}
 Some cases like the firing of {{ person_link("Sahil Lavingia")}} or the exodus in the wake of {{ person_link("Elon Musk") }}'s departure have been very public, but some have been not previously visible. Until now. It is especially remarkable how much of DOGE's leadership has departed in recent months. And also how purges like the SpaceX contingent at the FAA have also followed.
-{% end %}
-</div>
 
 In addition, there are some cases where we also know DOGE staff have left positions at specific agencies. In some cases, this has been willingly, but in other cases the removal has been due to court orders or even being fired.
+{% end %}
+</div>
 
 <table class="my-4 table table-xs sm:table-sm md:table-md table-zebra">
   <thead>
@@ -70,5 +70,41 @@ In addition, there are some cases where we also know DOGE staff have left positi
       <td class="align-top">{{ position_end_type(pos) }}</td>
     </tr>
     {% end %}
+  </tbody>
+</table>
+
+{%@ 'text' do %}
+Finally, there are some DOGE staff who will have to depart the government in the future when they reach the Not-To-Exceed date for their positions. There are multiple reasons why a position might have a not-to-exceed date:
+
+- Some staff have joined DOGE as Special Government Employees (SGEs). Those positions allow them to continue to be employed at their current job and to avoid ethics disclosures. These positions have a strict 130-day limit however.
+- In many detailing arrangements where the employee of one agency is working in another, there often is a NTE date for the agreement.
+- Finally, some positions might be hired under alternative (or _excepted_) methods (called _schedules_) that offer more flexibility in hiring compared to ordinary civil service jobs. Since these positions are not paths into the competitive civil service, they usually have a limit on their duration of 1-2 years, with a possible extension of a few years more. This was the method that 18F used to hire federal staff quickly and it seems like DOGE is using those same mechanisms at GSA and other agencies.
+
+Here are the current positions which have NTE dates and have not ended (either through normal reasons or because they were replaced with another positions). This does not necessarily mean that the person is still working in that position; I only have limited visibility into DOGE's staffing operations and it's not always easy to know if someone has definitively left an agency.
+{% end %}
+
+{% nte_positions = site.data.positions.select {|pos| (pos.nte_date || pos.sge) && !pos.end_date }.sort_by(&:nte_date) %}
+
+<table class="my-4 table table-xs sm:table-sm md:table-md table-zebra">
+ <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th class="hidden sm:table-cell">Start</th>
+      <th><abbr title="Not To Exceed Date">NTE</abbr></th>
+      <th>Summary</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% nte_positions.each do |pos| %}
+    {% next unless pos.person %}
+    <tr>
+      <td class="align-top"><span class="text-xs sm:text-nowrap">{{ position_move(pos) }}</span></td>
+      <td class="align-top">{{ person_link(pos.person) }}</td>
+      <td class="align-top hidden sm:table-cell"><span class="sm:text-nowrap">{{ EdtfFormat.new(pos.start_date, :compact_year) | raw }}</span></td>
+      <td class="align-top"><span class="sm:text-nowrap {% if Date.edtf(pos.nte_date) < Date.today + 90 %}font-bold{% end %}">{{ EdtfFormat.new(pos.nte_date, :compact_year) | raw }}</span></td>
+      <td class="align-top">{{ position_summary(pos) | md }}</td>
+    </tr>
+  {% end %}
   </tbody>
 </table>

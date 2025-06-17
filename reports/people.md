@@ -554,7 +554,7 @@
 - category: enabler
 - positions:
     -  **Treasury** (2025-01-23 to 2025-02-12) Senior Advisor for Technology and Modernization volunteer
-    -  **Treasury** (2025-02-13 to NTE 2025-07-03)  GS-15 $167,603 - $195,200
+    -  **Treasury** (2025-02-13 to 2025-06-06)  GS-15 $167,603 - $195,200
 
 # Scott Kupor
 - category: enabler

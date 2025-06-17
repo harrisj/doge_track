@@ -168,7 +168,7 @@
     A report on the tech billionaires steering Trump’s transition mentions <a class="link-hover" href="/all/people#elon-musk">Elon Musk</a> and other names
     we now know to be <a class="link-hover" href="/agencies/white-house">DOGE</a> staffers, and it describes how they have been interviewing people at Mar-a-Lago
 - id: 2AXaug8A
-  type: Event
+  type: interagency
   date: 2024-12-(15)~
   sort_date: '2024-12-15'
   time:
@@ -20197,6 +20197,39 @@
     In a 6-3 ruling on an emergency application, the US Supreme Court overturned rulings from lower courts that <a class="link-hover" href="/agencies/white-house">DOGE</a>
     would have to comply immediately with records requests from CREW in their lawsuit. This rejection does not terminate the case, but it allows for an
     indefinite pause as cases are being considered.
+- id: 3suHuULH
+  type: offboard
+  date: '2025-06-06'
+  sort_date: '2025-06-06'
+  time:
+  text: >-
+    Tom Krause resigns his position at Treasury and exits government service, according to an email that he sent to employees at the Cloud Software Group,
+    which he was simultaneously running. He departed Treasury a month before his SGE status would have required him to leave.
+  fuzz:
+  comment:
+  source: https://www.crn.com/news/cloud/2025/citrix-parent-ceo-krause-leaves-doge-us-treasury-post
+  source_title:
+  source_name: CRN
+  case_no:
+  track_id:
+  system_id:
+  names:
+  - Tom Krause
+  agency_ids:
+  - Treasury
+  alias_ids: []
+  names_aliases:
+  - name: Tom Krause
+    slug: tom-krause
+    sort_name: Krause
+    category: enabler
+  agencies_parents:
+  - Treasury
+  obj_type: Event
+  linkified_text: >
+    <a class="link-hover" href="/people/enabler-staff#tom-krause">Tom Krause</a> resigns his position at Treasury and exits government service, according
+    to an email that he sent to employees at the Cloud Software Group, which he was simultaneously running. He departed Treasury a month before his SGE
+    status would have required him to leave.
 - id: 6LLgEiFQ
   type: report
   date: '2025-06-06'

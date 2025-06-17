@@ -22,7 +22,7 @@ def validate_event(event, cases)
     event[:id] = ShortUUID.shorten(id)[0...8]
   end
 
-  raise "Event #{event[:id]} has no source" unless event.key?(:source)
+  raise "Event #{event.inspect} has no source" unless event.key?(:source)
 
   if event[:case_no] && !event[:source_name]
     event[:source_name] = 'court doc'
