@@ -127,6 +127,8 @@
     -  **MCC** (2025-03-(22)? to ??) 
     -  **USIP** (2025-03-25 to 2025-05-19) President
     -  **IMLS** (2025-03-31 to ??) 
+    -  **Commerce** (2025-04-(09)~ to ??) 
+    -  **MBDA** (2025-04-(09)~ to ??) 
     -  **NLRB** (2025-04-16 to ??) 
     -  **USDFC** (2025-04-28 to ??) 
     -  **EXIM** (2025-05-14 to ??) 
@@ -944,6 +946,7 @@
 - positions:
     -  **DOL** (2025-03-18 to ??) **Deputy Secretary**
     -  **IMLS** (2025-03-20 to ??) Acting Director
+    -  **MBDA** (2025-04-(17)~ to ??) **Acting Undersecretary**
 
 # Branden Spikes
 - category: unknown

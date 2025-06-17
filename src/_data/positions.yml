@@ -2176,6 +2176,142 @@
   agency_and_parent:
   - IMLS
   documents: []
+- id: detail-gsa-commerce-cavanaugh
+  type: detailed
+  agency_id: Commerce
+  name: Nate Cavanaugh
+  doge_alias_id:
+  from_agency_id: GSA
+  from_truth: inferred
+  start_date: 2025-04-(09)~
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-04-09'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://www.commerce.senate.gov/services/files/F6A7EAB6-BACE-4A67-A64D-688BA38A0726
+  source_name: official letter
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Senate Democrats note that Cavanaugh has a commerce email address. Guessing date is around detail to MBDA.
+  replaced_by:
+  same_as:
+  agency:
+    id: Commerce
+    name: Commerce Department
+    slug: commerce
+    page_slug: self
+    short_name: Commerce
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/commerce"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - Commerce
+  documents: []
+- id: detail-gsa-mbda-cavanaugh
+  type: detailed
+  agency_id: MBDA
+  name: Nate Cavanaugh
+  doge_alias_id:
+  from_agency_id: GSA
+  from_truth: inferred
+  start_date: 2025-04-(09)~
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-04-09'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.35.4_1.pdf
+  source_name: court doc
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: inferred from disruptions at MBDA starting
+  replaced_by:
+  same_as:
+  agency:
+    id: MBDA
+    name: Minority Business Development Agency
+    slug: mbda
+    page_slug: independent#eo2
+    short_name: MBDA
+    doge_base: false
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/independent#eo2"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - MBDA
+  documents: []
 - id: detail-gsa-nlrb-cavanaugh
   type: detailed
   agency_id: NLRB
@@ -4534,7 +4670,7 @@
   supervisory:
   office:
   source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  source_name:
+  source_name: NYT
   reimbursed:
   reimbursement_amount:
   comment: No other info, just mentioned in NYT roundup
@@ -18649,6 +18785,64 @@
     path: "/agencies/independent#eo2"
   agency_and_parent:
   - IMLS
+  documents: []
+- id: mbda-sonderling
+  type: appointed
+  agency_id: MBDA
+  name: Keith Sonderling
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-04-(17)~
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: 2025-04-(17)~
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Acting Undersecretary
+  title_type:
+  series:
+  supervisory: true
+  office:
+  source: https://www.commerce.senate.gov/services/files/F6A7EAB6-BACE-4A67-A64D-688BA38A0726
+  source_name: official letter
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Nate Cavanaugh sent out grant rejections under the authority of Sonderling as Acting Undersecretary
+  replaced_by:
+  same_as:
+  agency:
+    id: MBDA
+    name: Minority Business Development Agency
+    slug: mbda
+    page_slug: independent#eo2
+    short_name: MBDA
+    doge_base: false
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/independent#eo2"
+  agency_and_parent:
+  - MBDA
   documents: []
 - id: opm-christopher-stanley
   type: appointed

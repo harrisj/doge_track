@@ -722,6 +722,29 @@
     table_note: Based on initial reports
     comment: DOGE put entire staff on admin leave and started cancelling grants, not many details. FIXME
     agency: IMLS
+  - id: detail-gsa-commerce-cavanaugh
+    type: detailed
+    agency: Commerce
+    from: GSA
+    from_truth: inferred
+    start_date: 2025-04-(09)~
+    start_date_truth: guessed
+    sort_date: 2025-04-09
+    source: https://www.commerce.senate.gov/services/files/F6A7EAB6-BACE-4A67-A64D-688BA38A0726
+    source_name: official letter
+    table_note: >-
+      Senate Democrats note that Cavanaugh has a commerce email address. Guessing date is around detail
+      to MBDA.
+  - id: detail-gsa-mbda-cavanaugh
+    type: detailed
+    agency: MBDA
+    from: GSA
+    start_date: 2025-04-(09)~
+    sort_date: 2025-04-09
+    from_truth: inferred
+    source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.35.4_1.pdf
+    source_name: court doc
+    table_note: inferred from disruptions at MBDA starting
   - id: detail-gsa-nlrb-cavanaugh
     type: detailed
     agency: NLRB
@@ -1334,6 +1357,7 @@
     from_truth: guessed
     comment: No other info, just mentioned in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    source_name: NYT
   - id: internal-dhs-cpb-elez
     type: internal
     agency: CBP
@@ -4995,6 +5019,16 @@
     source: https://news.artnet.com/art-world/doge-imls-institute-museum-library-services-2623286
     source_name: ArtNet
     agency: IMLS
+  - id: mbda-sonderling
+    type: appointed
+    agency: MBDA
+    start_date: 2025-04-(17)~
+    start_date_truth: reported
+    title: Acting Undersecretary
+    supervisory: true
+    source: https://www.commerce.senate.gov/services/files/F6A7EAB6-BACE-4A67-A64D-688BA38A0726
+    source_name: official letter
+    table_note: Nate Cavanaugh sent out grant rejections under the authority of Sonderling as Acting Undersecretary
 
 - name: Branden Spikes
   sort_name: Spikes

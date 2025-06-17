@@ -55,6 +55,7 @@
 - slug: commerce
 - people:
   - **Michael Grimes** (2025-02-27) Senior Advisor
+  - **Nate Cavanaugh** (2025-04-(09)~) (detailed from GSA)
 
 # Community Development Financial Institutions Fund
 - slug: cdfif
@@ -562,6 +563,9 @@
 
 # Minority Business Development Agency
 - slug: mbda
+- people:
+  - **Nate Cavanaugh** (2025-04-(09)~) (detailed from GSA)
+  - **Keith Sonderling** (2025-04-(17)~) Acting Undersecretary
 
 # National Aeronautics and Space Administration
 - slug: nasa
