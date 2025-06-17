@@ -60,7 +60,7 @@ The arts have been a natural target for DOGE, which shares the Trump Administrat
 
 DOGE has also attempted to target several financial and trade regulatory agencies
 
-{% events = site.data.events.select {|e| (e.agency_ids & %w[FDIC SEC EXIM DFC FTC CPSC NTSB]).any? } %}
+{% events = site.data.events.select {|e| (e.agency_ids & %w[FDIC SEC EXIM DFC FTC CPSC NTSB FEC NRC]).any? } %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### National Science Foundation {#nsf}
@@ -94,7 +94,7 @@ Finally, DOGE has picked up its original mission of harrassing federal workers b
 ### Everybody Else {#other}
 
 {% independent_agency_ids = site.data.agencies.select {|a| a.page_slug == 'independent' }.map(&:id) %}
-{% remaining_ids = independent_agency_ids - %w[USIP USADF IAF FMCS USAGM WWICS IMLS USICH CDFIF MBDA NEH CPB ACHP FDIC SEC EXIM DFC FTC CPSC NTSB NSF Peace AmeriCorps MSPB LOC GAO NationalGallery]%}
+{% remaining_ids = independent_agency_ids - %w[USIP USADF IAF FMCS USAGM WWICS IMLS USICH CDFIF MBDA NEH CPB ACHP FDIC SEC EXIM FEC NRC DFC FTC CPSC NTSB NSF Peace AmeriCorps MSPB LOC GAO NationalGallery]%}
 {% events = site.data.events.select {|e| (e.agency_ids & remaining_ids).any? } %}
 {% if events.any? %}
 {%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}

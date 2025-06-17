@@ -1,7 +1,7 @@
 <div class="prose max-w-none">
 <ul class="mt-0 mb-0">
   {% questions.each do |q| %}
-  <li>{{ q.question }}{% if q.context %}<br/><em>{{ q. context }}</em>{% end %}</li>
+  <li>{{ q.question }}{% if q.context %}<br/><em>{{ q.context | md }}</em>{% end %}</li>
   {% end %}
 </ul>
 </div>

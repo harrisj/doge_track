@@ -30,7 +30,7 @@ layout: page
       {% end %}
     </div>
     <div class="pt-1 prose-sm sm:prose-md md:prose-md lg:prose-lg xl:prose-lg leading-5">{{ q.question }}</div>
-    <div class="pt-1 prose-sm prose-sm lg:prose-md leading-5 italic">{{ q.context }}</div>
+    <div class="pt-1 prose-sm prose-sm lg:prose-md leading-5 italic">{{ q.context | md }}</div>
   </div>
 </li>
 {% end %}

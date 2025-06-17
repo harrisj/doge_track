@@ -51,8 +51,15 @@ def linkify_text(text)
     out.gsub!(/\b#{person.name}\b/, internal_link(person_url(person), person.name))
   end
 
+  DogeAlias.each do |doge_alias|
+    if doge_alias.person
+      out.gsub!(/\b#{doge_alias.id}\b/,
+                "#{doge_alias.id} (#{internal_link(person_url(doge_alias.person), doge_alias.person.name)})")
+    end
+  end
+
   Agency.each do |agency|
-    out.gsub!(/\b#{agency.id}\b/, internal_link(agency_url(agency), agency.id)) if agency.id =~ /^[A-Z]+$/
+    out.gsub!(/\b#{agency.id}(?=[\s.,!])/, internal_link(agency_url(agency), agency.id)) if agency.id =~ /^[A-Z]+$/
     out.gsub!(/\b#{agency.name}\b/, internal_link(agency_url(agency), agency.name))
   end
 
