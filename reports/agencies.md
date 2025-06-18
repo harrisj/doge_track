@@ -249,6 +249,7 @@
 # Department of Labor
 - slug: labor
 - people:
+  - **Keith Sonderling** (2025-01-22 - 2025-03-18) Senior Advisor
   - **Sam Beyda** (2025-02-(13)~)
   - **Derek Geissler** (2025-02-(13)~) (detailed from GSA)
   - **Cole Killian** (2025-02-(13)~) (detailed from DOGE)

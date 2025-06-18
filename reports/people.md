@@ -944,6 +944,7 @@
 # Keith Sonderling
 - category: enabler
 - positions:
+    -  **DOL** (2025-01-22 to 2025-03-18) Senior Advisor
     -  **DOL** (2025-03-18 to ??) **Deputy Secretary**
     -  **IMLS** (2025-03-20 to ??) Acting Director
     -  **MBDA** (2025-04-(17)~ to ??) **Acting Undersecretary**

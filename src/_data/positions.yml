@@ -18677,6 +18677,64 @@
   doge_alias_id:
   from_agency_id:
   from_truth:
+  start_date: '2025-01-22'
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date: '2025-03-18'
+  end_date_truth: verified
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type: replaced
+  sort_date: '2025-01-22'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Senior Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office: Office of the Secretary
+  source: https://ntlakis.com/president-trump-designates-new-leadership-at-workplace-compliance-agencies/
+  source_name: NT Lakis
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: At confirmation hearing, noted he was Senior Advisor at DOL
+  replaced_by: labor-sonderling-secy
+  same_as:
+  agency:
+    id: DOL
+    name: Department of Labor
+    slug: labor
+    page_slug: labor
+    short_name: DOL
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/labor"
+  agency_and_parent:
+  - DOL
+  documents: []
+- id: labor-sonderling-secy
+  type: promotion
+  agency_id: DOL
+  name: Keith Sonderling
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
   start_date: '2025-03-18'
   start_date_truth: reported
   start_date_event:
