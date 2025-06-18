@@ -1,4 +1,4 @@
-<div class="prose max-w-none">
+<div class="my-text max-w-none">
 <ul class="mt-0 mb-0">
   {% questions.each do |q| %}
   <li>{{ q.question }}{% if q.context %}<br/><em>{{ q.context | md }}</em>{% end %}</li>

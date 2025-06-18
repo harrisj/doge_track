@@ -19,8 +19,8 @@ At major agencies, the DOGE staff are given titles like "Senior Advisor" and sit
   <tr>
     <th>Agency</th>
     <th>DOGE Leader</th>
-    <th>Advisors</th>
-    <th>Adv. Titles</th>
+    <th>Sr. Advisors</th>
+    <th class="hidden sm:table-cell">Adv. Titles</th>
   </tr>
 </thead>
 <tbody>
@@ -35,7 +35,7 @@ At major agencies, the DOGE staff are given titles like "Senior Advisor" and sit
       <td class="align-top">{{ agency_link(agency) }}</td>
       <td class="align-top">{% if doge_heads %}{{ doge_heads | people_links }}{% end %}</td>
       <td class="align-top">{{ other_doge | people_links }}</td>
-      <td class="align-top">{{ titles | join: ', '}}
+      <td class="align-top hidden sm:table-cell">{{ titles | join: ', '}}
     </tr>
    {% end %}
 {% end %}

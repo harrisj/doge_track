@@ -14,8 +14,7 @@
   <div class="sm:ml-7 md:ml-8 lg:ml-9.5 lining-nums">
     {% if doge_alias.evidence %}
     <div>
-    <h3 class="h3 mt-5 mb-0">Supporting Evidence:</h4>
-    <div class="prose text-xs sm:prose-sm lg:prose-base max-w-none">{{ doge_alias.evidence | linkify_text | md | strip_p }}</div>
+    <div class="my-text">{{ doge_alias.evidence | linkify_text | md | strip_p }}</div>
     </div>
     {% end %}
 

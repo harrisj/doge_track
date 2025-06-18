@@ -5,7 +5,7 @@
 {%@ 'agency_title', agency: agency, id: agency.slug %}
 
 {% if blurb %}
-  <div class="prose text-xs sm:prose-sm max-w-none prose-li:m-[0.1em] dark:prose-invert">{{ blurb | linkify_text | md  }}</div>
+  <div class="my-text">{{ blurb | linkify_text | md  }}</div>
 {% end %}
 
 {% if agency.positions.any? %}

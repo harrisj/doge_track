@@ -5,7 +5,7 @@ description: An alphabetical listing of all the people being tracked as part of 
 ---
 {%@ 'title', title: "Who's Involved in DOGE" %}
 
-This page provides a single overview of everybody who is is my database of DOGE affiliates. To better understand the types of roles I've seen within DOGE, I have sorted them into several distinct categories of my own design. These are demarcated with specific icons in tables and text where convenient:</p>
+This page provides a single overview of everybody who is is my database of DOGE affiliates. To better understand the types of roles I've seen within DOGE, I have sorted them into several distinct categories of my own design. These are demarcated with specific icons in tables and text where convenient:
 
 - <i class="fa-sharp fa-solid fa-megaphone"></i> <strong>{{ link_to "Boosters", "/people/leaders/" }}</strong> are people in DOGE's orbit who have helped with recruitment and establishing the organization.
 - <i class="fa-sharp fa-solid fa-door-open"></i> <strong>{{ link_to "Enablers", "/people/enablers/" }}</strong> are staff embedded in agencies who work to open the door for wreckers to come in. They are not always DOGE hires.

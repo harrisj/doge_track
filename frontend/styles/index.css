@@ -80,7 +80,11 @@ layer(base);
     @apply text-left min-w-[65px] sm:min-w-auto;
   }
 
-  .my-text-2xl {
+  .my-text {
+    @apply prose prose-sm prose-a:font-semibold prose-a:link-hover md:prose-base max-w-none prose-li:m-[0.1em] dark:prose-invert prose-h2:mt-1 prose-h2:mb-0.5 prose-h3:mt-1 prose-h3:mb-0.5 leading-tight;
+  }
+
+  /* .my-text-2xl {
     @apply prose prose-xl sm:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
   }
 
@@ -126,7 +130,7 @@ layer(base);
 
   .my-table-2sm {
     @apply font-mono
-  }
+  } */
 }
 
 @layer base {
