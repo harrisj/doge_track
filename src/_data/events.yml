@@ -7199,7 +7199,7 @@
   - SSA
   obj_type: Event
   linkified_text: >
-    Unidentfied alias SSA-03 (<a class="link-hover" href="/wreckers/aram-mohghaddassi/">Aram Moghaddassi</a>) is detailed over from the <a class="link-hover"
+    Unidentfied alias SSA-03 (<a class="link-hover" href="/wreckers/aram-moghaddassi">Aram Moghaddassi</a>) is detailed over from the <a class="link-hover"
     href="/agencies/labor">Department of Labor</a>
 - id: 5cMzKdBH
   type: onboard
@@ -9685,8 +9685,8 @@
   - HHS
   obj_type: Event
   linkified_text: >
-    <a class="link-hover" href="/wreckers/aram-mohghaddassi/">Aram Moghaddassi</a> and <a class="link-hover" href="/wreckers/marko-elez/">Marko Elez</a>
-    are granted read access to the Integrated Data Repository (IDR), a data warehouse of all Medicare claims
+    <a class="link-hover" href="/wreckers/aram-moghaddassi">Aram Moghaddassi</a> and <a class="link-hover" href="/wreckers/marko-elez/">Marko Elez</a> are
+    granted read access to the Integrated Data Repository (IDR), a data warehouse of all Medicare claims
 - id: 7OVMm6PD
   type: access
   date: '2025-03-05'
@@ -9859,7 +9859,7 @@
   - DOL
   obj_type: Event
   linkified_text: >
-    Business Insider reports <a class="link-hover" href="/wreckers/marko-elez/">Marko Elez</a>, <a class="link-hover" href="/wreckers/aram-mohghaddassi/">Aram
+    Business Insider reports <a class="link-hover" href="/wreckers/marko-elez/">Marko Elez</a>, <a class="link-hover" href="/wreckers/aram-moghaddassi">Aram
     Moghaddassi</a>, and Miles B. Collins are new <a class="link-hover" href="/agencies/white-house">DOGE</a> arrivals at <a class="link-hover" href="/agencies/labor">Department
     of Labor</a>
 - id: 3FMvKeDT
@@ -11182,7 +11182,11 @@
   date: '2025-03-13'
   sort_date: '2025-03-13'
   time:
-  text: Postmaster General Louis DeJoy sends a letter to Congress informing he has signed an agreement with GSA and DOGE to eliminate 10,000 jobs
+  text: >-
+    Postmaster General Louis DeJoy sends a letter to Congress informing he has signed an agreement with GSA and DOGE to eliminate 10,000 jobs. He also authorized
+    DOGE to only work with his agency on matters related to USPS retirement plans, workers compensation costs, congressional liaisoning regarding costs
+    incurred by legislative mandates, reforms to its regulatory requirements, retail lease renewals, business opportunities with other federal agencies
+    and counterfeit postage.
   fuzz:
   comment:
   source: https://apnews.com/article/us-postal-service-doge-agreement-daf3bf54fa0718908791fcb368b4d9d8
@@ -11201,7 +11205,10 @@
   obj_type: Event
   linkified_text: >
     Postmaster General Louis DeJoy sends a letter to Congress informing he has signed an agreement with <a class="link-hover" href="/agencies/gsa">GSA</a>
-    and <a class="link-hover" href="/agencies/white-house">DOGE</a> to eliminate 10,000 jobs
+    and <a class="link-hover" href="/agencies/white-house">DOGE</a> to eliminate 10,000 jobs. He also authorized <a class="link-hover" href="/agencies/white-house">DOGE</a>
+    to only work with his agency on matters related to <a class="link-hover" href="/agencies/usps">USPS</a> retirement plans, workers compensation costs,
+    congressional liaisoning regarding costs incurred by legislative mandates, reforms to its regulatory requirements, retail lease renewals, business opportunities
+    with other federal agencies and counterfeit postage.
 - id: vfRpqtC4
   type: access
   date: '2025-03-14'
@@ -12892,7 +12899,7 @@
   date: '2025-03-24'
   sort_date: '2025-03-24'
   time:
-  text: Postmaster General DeJoy resigns
+  text: Postmaster General DeJoy resigns, reportedly forced out by the Trump Administration
   fuzz:
   comment:
   source: https://www.usatoday.com/story/news/nation/2025/03/30/postal-service-changes-doge-musk/82696231007/
@@ -12909,9 +12916,45 @@
   agencies_parents:
   - USPS
   obj_type: Event
-  linkified_text: 'Postmaster General DeJoy resigns
+  linkified_text: 'Postmaster General DeJoy resigns, reportedly forced out by the Trump Administration
 
     '
+- id: 6zWL2hm3
+  type: action
+  date: '2025-03-24'
+  sort_date: '2025-03-24'
+  time:
+  text: Acting Postmaster General Doug Tulino met with the DOGE team embedded there (Ethan Shaotran and Alexander Simonpour), reportedly to discuss ethics.
+  fuzz:
+  comment: Listed as the day he was sworn in. That was March 24
+  source: https://www.govexec.com/management/2025/06/white-house-holds-meetings-new-postal-leadership-doge-and-treasury-discuss-reforming-usps/406202/
+  source_title:
+  source_name: GovExec
+  case_no:
+  track_id:
+  system_id:
+  names:
+  - Ethan Shaotran
+  - Alexander Simonpour
+  agency_ids:
+  - USPS
+  alias_ids: []
+  names_aliases:
+  - name: Ethan Shaotran
+    slug: ethan-shaotran
+    sort_name: Shaotran
+    category: wrecker
+  - name: Alexander Simonpour
+    slug: alex-simonpour
+    sort_name: Simonpour
+    category: wrecker
+  agencies_parents:
+  - USPS
+  obj_type: Event
+  linkified_text: >
+    Acting Postmaster General Doug Tulino met with the <a class="link-hover" href="/agencies/white-house">DOGE</a> team embedded there (<a class="link-hover"
+    href="/wreckers/ethan-shaotran/">Ethan Shaotran</a> and <a class="link-hover" href="/wreckers/other#alex-simonpour">Alexander Simonpour</a>), reportedly
+    to discuss ethics.
 - id: YB29uMET
   type: disruption
   date: 2025-03-(24)~
@@ -13948,7 +13991,7 @@
   - SSA
   obj_type: Event
   linkified_text: >
-    As part of an interview on Fox News, <a class="link-hover" href="/wreckers/aram-mohghaddassi/">Aram Moghaddassi</a> spreads the debunked statistic that
+    As part of an interview on Fox News, <a class="link-hover" href="/wreckers/aram-moghaddassi">Aram Moghaddassi</a> spreads the debunked statistic that
     40% of call to <a class="link-hover" href="/agencies/social-security">SSA</a> are from fraudsters
 - id: 8mDKCq9a
   type: disruption
@@ -14835,6 +14878,45 @@
   linkified_text: >
     Defendants in the <a class="link-hover" href="/agencies/independent#eo1">USIP</a> lawsuit learn that <a class="link-hover" href="/agencies/gsa">GSA</a>
     will be leasing the building to the <a class="link-hover" href="/agencies/labor">Department of Labor</a>
+- id: 5GVJ0gVG
+  type: action
+  date: 2025-04-XX
+  sort_date: '2025-04-01'
+  time:
+  text: >-
+    Ethan Shaotran and Alexander Simonpour meet again with the acting Postmaster General as well as other senior staff. This includes a meeting discussing
+    an  as some other senior staff in USPS to discuss price increases, a topic outside the scope of their MOUs to work at USPS.
+  fuzz:
+  comment:
+  source: https://www.govexec.com/management/2025/06/white-house-holds-meetings-new-postal-leadership-doge-and-treasury-discuss-reforming-usps/406202/
+  source_title:
+  source_name: GovExec
+  case_no:
+  track_id:
+  system_id:
+  names:
+  - Ethan Shaotran
+  - Alexander Simonpour
+  agency_ids:
+  - USPS
+  alias_ids: []
+  names_aliases:
+  - name: Ethan Shaotran
+    slug: ethan-shaotran
+    sort_name: Shaotran
+    category: wrecker
+  - name: Alexander Simonpour
+    slug: alex-simonpour
+    sort_name: Simonpour
+    category: wrecker
+  agencies_parents:
+  - USPS
+  obj_type: Event
+  linkified_text: >
+    <a class="link-hover" href="/wreckers/ethan-shaotran/">Ethan Shaotran</a> and <a class="link-hover" href="/wreckers/other#alex-simonpour">Alexander
+    Simonpour</a> meet again with the acting Postmaster General as well as other senior staff. This includes a meeting discussing an  as some other senior
+    staff in <a class="link-hover" href="/agencies/usps">USPS</a> to discuss price increases, a topic outside the scope of their MOUs to work at <a class="link-hover"
+    href="/agencies/usps">USPS</a>.
 - id: 1wT0qavH
   type: disruption
   date: '2025-04-01'
@@ -16025,8 +16107,8 @@
   - SSA
   obj_type: Event
   linkified_text: >
-    <a class="link-hover" href="/wreckers/aram-mohghaddassi/">Aram Moghaddassi</a> adds 6300 names of suspected immigrants to the “death master file” as
-    a way of forcing them to “self-deport” by making it impossible to use financial products. It included 7 minors.
+    <a class="link-hover" href="/wreckers/aram-moghaddassi">Aram Moghaddassi</a> adds 6300 names of suspected immigrants to the “death master file” as a
+    way of forcing them to “self-deport” by making it impossible to use financial products. It included 7 minors.
 - id: 6W6tefIG
   type: disruption
   date: '2025-04-09'
@@ -18462,6 +18544,52 @@
   linkified_text: >
     Trump issues an executive order commanding that <a class="link-hover" href="/agencies/independent#arts">Corporation for Public Broadcasting</a> should
     cease any financial support for PBS and NPR, despite <a class="link-hover" href="/agencies/independent#arts">CPB</a> being an independent agency.
+- id: 36WoUM5z
+  type: interagency
+  date: 2025-05-XX
+  sort_date: '2025-05-01'
+  time:
+  text: >-
+    In May, Clark Milner, a senior advisor for policy in the White House, organized a meeting between USPS staff and their DOGE representatives and DOGE
+    staff and members of the Domestic Policy Council.
+  fuzz: No other specific date information is given
+  comment:
+  source: https://www.govexec.com/management/2025/06/white-house-holds-meetings-new-postal-leadership-doge-and-treasury-discuss-reforming-usps/406202/
+  source_title:
+  source_name: GovExec
+  case_no:
+  track_id:
+  system_id:
+  names:
+  - James Burnham
+  - Ethan Shaotran
+  - Alexander Simonpour
+  agency_ids:
+  - USPS
+  - DOGE
+  alias_ids: []
+  names_aliases:
+  - name: James Burnham
+    slug: james-burnham
+    sort_name: Burnham
+    category: support
+  - name: Ethan Shaotran
+    slug: ethan-shaotran
+    sort_name: Shaotran
+    category: wrecker
+  - name: Alexander Simonpour
+    slug: alex-simonpour
+    sort_name: Simonpour
+    category: wrecker
+  agencies_parents:
+  - USPS
+  - DOGE
+  - EOP
+  obj_type: Event
+  linkified_text: >
+    In May, Clark Milner, a senior advisor for policy in the White House, organized a meeting between <a class="link-hover" href="/agencies/usps">USPS</a>
+    staff and their <a class="link-hover" href="/agencies/white-house">DOGE</a> representatives and <a class="link-hover" href="/agencies/white-house">DOGE</a>
+    staff and members of the Domestic Policy Council.
 - id: yenHvAv5
   type: disruption
   date: '2025-05-02'
@@ -20747,6 +20875,34 @@
     Wired reports that <a class="link-hover" href="/people/enabler-staff#thomas-shedd">Thomas Shedd</a> is in need of in-house developers and is looking
     to revamp and restart the Presidential Innovation Fellows program months after it was eliminated due to the hiring freeze and mass layoffs initiated
     by <a class="link-hover" href="/people/enabler-staff#thomas-shedd">Thomas Shedd</a>.
+- id: 32ULtG04
+  type: disruption
+  date: '2025-06-06'
+  sort_date: '2025-06-06'
+  time:
+  text: >-
+    The SSA website takes down for maintenance a page that provided service metrics. When it is restored after serveral weeks, certain metrics that would
+    have shown the impact of DOGE like average phone wait times are no longer provided.
+  fuzz:
+  comment:
+  source: https://www.washingtonpost.com/politics/2025/06/20/social-security-wait-times-cuts/
+  source_title:
+  source_name: Wash. Post
+  case_no:
+  track_id:
+  system_id:
+  names: []
+  agency_ids:
+  - SSA
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - SSA
+  obj_type: Event
+  linkified_text: >
+    The <a class="link-hover" href="/agencies/social-security">SSA</a> website takes down for maintenance a page that provided service metrics. When it
+    is restored after serveral weeks, certain metrics that would have shown the impact of <a class="link-hover" href="/agencies/white-house">DOGE</a> like
+    average phone wait times are no longer provided.
 - id: 10KZKaAF
   type: sighting
   date: '2025-06-06'
@@ -20781,7 +20937,7 @@
   obj_type: Event
   linkified_text: >
     A report in the <em>Times</em> suggests that <a class="link-hover" href="/people/enabler-staff#mike-russo">Mike Russo</a> and <a class="link-hover"
-    href="/wreckers/aram-mohghaddassi/">Aram Moghaddassi</a> have essentially been acting as joint CIOs at the agency.
+    href="/wreckers/aram-moghaddassi">Aram Moghaddassi</a> have essentially been acting as joint CIOs at the agency.
 - id: 7C9WQbvz
   type: report
   date: '2025-06-06'

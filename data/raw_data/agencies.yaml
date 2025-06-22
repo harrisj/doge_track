@@ -6782,6 +6782,16 @@
     agency: SSA
     id: 528Ro1KK
   - date: 2025-06-06
+    type: disruption
+    event: >-
+      The SSA website takes down for maintenance a page that provided service metrics. When it is restored
+      after serveral weeks, certain metrics that would have shown the impact of DOGE like average phone
+      wait times are no longer provided.
+    source: https://www.washingtonpost.com/politics/2025/06/20/social-security-wait-times-cuts/
+    source_name: Wash. Post
+    agency: SSA
+    id: 32ULtG04
+  - date: 2025-06-06
     type: sighting
     event: >-
       A report in the _Times_ suggests that Mike Russo and Aram Moghaddassi have essentially been acting
@@ -7622,18 +7632,49 @@
     type: official
     event: >-
       Postmaster General Louis DeJoy sends a letter to Congress informing he has signed an agreement with
-      GSA and DOGE to eliminate 10,000 jobs
+      GSA and DOGE to eliminate 10,000 jobs. He also authorized DOGE to only work with his agency on matters
+      related to USPS retirement plans, workers compensation costs, congressional liaisoning regarding
+      costs incurred by legislative mandates, reforms to its regulatory requirements, retail lease renewals,
+      business opportunities with other federal agencies and counterfeit postage.
     source: https://apnews.com/article/us-postal-service-doge-agreement-daf3bf54fa0718908791fcb368b4d9d8
     source_name: AP
     agency: USPS
     id: VpxRy6SM
   - date: 2025-03-24
     type: disruption
-    event: Postmaster General DeJoy resigns
+    event: Postmaster General DeJoy resigns, reportedly forced out by the Trump Administration
     source: https://www.usatoday.com/story/news/nation/2025/03/30/postal-service-changes-doge-musk/82696231007/
     source_name: USA Today
     agency: USPS
     id: iLjg4Kvb
+  - date: 2025-03-24
+    type: action
+    event: >-
+      Acting Postmaster General Doug Tulino met with the DOGE team embedded there (Ethan Shaotran and
+      Alexander Simonpour), reportedly to discuss ethics.
+    named:
+    - Ethan Shaotran
+    - Alexander Simonpour
+    comment: Listed as the day he was sworn in. That was March 24
+    source: >-
+      https://www.govexec.com/management/2025/06/white-house-holds-meetings-new-postal-leadership-doge-and-treasury-discuss-reforming-usps/406202/
+    source_name: GovExec
+    agency: USPS
+    id: 6zWL2hm3
+  - date: 2025-04-XX
+    type: action
+    event: >-
+      Ethan Shaotran and Alexander Simonpour meet again with the acting Postmaster General as well as
+      other senior staff. This includes a meeting discussing an  as some other senior staff in USPS to
+      discuss price increases, a topic outside the scope of their MOUs to work at USPS.
+    named:
+    - Ethan Shaotran
+    - Alexander Simonpour
+    source: >-
+      https://www.govexec.com/management/2025/06/white-house-holds-meetings-new-postal-leadership-doge-and-treasury-discuss-reforming-usps/406202/
+    source_name: GovExec
+    agency: USPS
+    id: 5GVJ0gVG
 
 - name: Veterans Administration
   id: VA

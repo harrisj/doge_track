@@ -20,7 +20,14 @@ layout: default
     {%@ 'navbar' %}
 
     <!-- Page content here -->
-    <div class="md:container md:max-w-5xl md:mx-auto px-0 sm:px-2">      
+    <div class="md:container md:max-w-5xl md:mx-auto px-0 sm:px-2">
+      {% if site.metadata.vacation%}
+        <div role="alert" class="alert alert-success">
+          <i class="fa-sharp fa-solid fa-island-tropical"></i>
+          <span><strong>On Vacation</strong> I'll update the data when I get back.</span>
+        </div>
+      {% end %}
+
       <main class="min-h-screen mt-4 px-3">
         {{ content }}
       </main>
@@ -33,7 +40,7 @@ layout: default
       {%@ 'footer', metadata: site.metadata %}
       
   </div>
-  <div class="drawer-side">
+  <div class="drawer-side z-100">
     <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
     {%@ 'menu' %}
   </div>

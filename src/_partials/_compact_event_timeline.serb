@@ -40,7 +40,7 @@ num_cols +=1 if agency_col %}
       </td>
       <td class="align-top">
         <div class="font-sans">
-        {% if icon_col %}<div class="inline"><i class="fa-sharp fa-solid {{ event_icon(event) }}"></i> <span class="hidden md:inline font-bold">{{ event_title(event) }}: </span></div>{% end %}
+        {% if icon_col %}<div class="inline"><i class="fa-sharp fa-solid {{ event_icon(event.type) }}"></i> <span class="hidden md:inline font-bold">{{ event_title(event.type) }}: </span></div>{% end %}
         {{ event.linkified_text | raw }}
         {% if event.fuzz %}&nbsp;[{{ event.fuzz | md | strip_p }}]{% end %}
         {% questions_str = question_links(event)%}

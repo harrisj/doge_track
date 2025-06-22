@@ -7,8 +7,9 @@
 # in the templates via {{ site.metadata.myvariable }}.
 {
   title: 'DOGE Track',
-  tagline: 'Tracking The Damage',
+  tagline: 'Tracking the Damage to Our Government',
   email: 'mail@jacobharr.is',
-  description: 'A website tracking the various activities of the DOGE wrecking crew across government. Sunlight is the best disinfectant!',
+  description: 'A website tracking the various activities of the DOGE wrecking crew across government that is automatically regenerated as new data is added.',
+  vacation: true,
   generated: Time.now
 }
