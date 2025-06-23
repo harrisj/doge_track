@@ -14309,6 +14309,84 @@
     comment:
     file: onboard-education-employee-4.pdf
     url: "/documents/onboard-education-employee-4.pdf"
+- id: detail-education-treasury-morgan
+  type: detailed
+  agency_id: Treasury
+  name: Brooks Morgan
+  doge_alias_id:
+  from_agency_id: Education
+  from_truth:
+  start_date: '2025-04-09'
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-04-09'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Senior Treasury Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed: false
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: Treasury
+    name: Department of the Treasury
+    slug: treasury
+    page_slug: treasury
+    short_name: Treasury
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/treasury"
+  from_agency:
+    id: Education
+    name: Department of Education
+    slug: education
+    page_slug: education
+    short_name: ED
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/education"
+  agency_and_parent:
+  - Treasury
+  documents:
+  - id: detail-20250408-education-treasury
+    name:
+    type: mou
+    alias:
+    date:
+    source: https://www.supremecourt.gov/DocketPDF/24/24A1203/363201/20250613155147555_24A1203_State%20Plaintiffs%20Opp%20to%20Stay-pdfa.pdf
+    case_no:
+    comment:
+    file: mou-20250408-education-treasury.pdf
+    url: "/documents/mou-20250408-education-treasury.pdf"
 - id: detail-education-fdic-morgan
   type: detailed
   agency_id: FDIC
@@ -15519,6 +15597,84 @@
   agency_and_parent:
   - DOL
   documents: []
+- id: detail-education-treasury-ramada
+  type: detailed
+  agency_id: Treasury
+  name: Adam Ramada
+  doge_alias_id:
+  from_agency_id: Education
+  from_truth:
+  start_date: '2025-04-09'
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-04-09'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Senior Treasury Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed: false
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Was he detailed from Education after detailed from DOGE? Or has he been hired by Education since?
+  replaced_by:
+  same_as:
+  agency:
+    id: Treasury
+    name: Department of the Treasury
+    slug: treasury
+    page_slug: treasury
+    short_name: Treasury
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/treasury"
+  from_agency:
+    id: Education
+    name: Department of Education
+    slug: education
+    page_slug: education
+    short_name: ED
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/education"
+  agency_and_parent:
+  - Treasury
+  documents:
+  - id: detail-20250408-education-treasury
+    name:
+    type: mou
+    alias:
+    date:
+    source: https://www.supremecourt.gov/DocketPDF/24/24A1203/363201/20250613155147555_24A1203_State%20Plaintiffs%20Opp%20to%20Stay-pdfa.pdf
+    case_no:
+    comment:
+    file: mou-20250408-education-treasury.pdf
+    url: "/documents/mou-20250408-education-treasury.pdf"
 - id: detail-doge-fdic-ramada
   type: detailed
   agency_id: FDIC

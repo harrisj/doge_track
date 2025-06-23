@@ -727,6 +727,7 @@
 - category: wrecker
 - positions:
     -  **Education** (2025-02-04 to NTE 2025-08-04) [as "ED-04"]  volunteer
+    -  **Treasury** (2025-04-09 to ??) Senior Treasury Advisor
     -  **FDIC** (2025-04-10 to ??) 
 
 # Trent Morse
@@ -785,6 +786,7 @@
         - FMS: Financial Management System: 2025-02-04 - 2025-03-06
     -  **Energy** (2025-02-(04)~ to ??) 
     -  **DOL** (2025-02-05 to ??) 
+    -  **Treasury** (2025-04-09 to ??) Senior Treasury Advisor
     -  **FDIC** (2025-04-10 to ??) 
 
 # Austin Raynor

@@ -3911,6 +3911,17 @@
     - onboard-education-employee-4
     name: Brooks Morgan
     alias: ED-04
+  - id: detail-education-treasury-morgan
+    type: detailed
+    agency: Treasury
+    from: Education
+    reimbursed: false
+    title: Senior Treasury Advisor
+    title_type: advisor
+    start_date: 2025-04-09
+    start_date_truth: verified
+    documents:
+    - detail-20250408-education-treasury
   - id: detail-education-fdic-morgan
     type: detailed
     from: Education
@@ -4230,6 +4241,19 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.16.1.pdf
     source_name: court doc
     comment: Testimony was on 2/6. DOGE showed up at agency on 2/5. Mentions 3 other DOGE staff there
+  - id: detail-education-treasury-ramada
+    type: detailed
+    agency: Treasury
+    from: Education
+    reimbursed: false
+    title: Senior Treasury Advisor
+    title_type: advisor
+    start_date: 2025-04-09
+    start_date_truth: verified
+    table_note: Was he detailed from Education after detailed from DOGE? Or has he been hired by Education
+      since?
+    documents:
+    - detail-20250408-education-treasury
   - id: detail-doge-fdic-ramada
     type: detailed
     from: DOGE
