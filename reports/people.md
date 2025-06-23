@@ -429,7 +429,7 @@
 - positions:
     -  **DOI** (2025-01-(27)~ to 2025-03-07) 
     -  **DOI** (2025-03-07 to 2025-04-XX) **Acting Assistant Secretary of Policy, Management and Budget**
-    -  **DOI** (2025-04-XX to ??) 
+    -  **DOI** (2025-04-XX to ??) **Principal Deputy Assistant Secretary**
 
 # Jim Hickey
 - category: wrecker
