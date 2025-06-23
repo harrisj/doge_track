@@ -42,12 +42,26 @@
   <td class="align-top">{{ govt_system.description | md | strip_p }}</td>
   </tr>
 
+  {% if govt_system.population %}
+  <tr>
+  <th class="align-top">Covers</th>
+  <td class="align-top">{{ govt_system.population }}</td>
+  </tr>
+  {% end %}
+
+  {% if govt_system.risk %}
+  <tr>
+  <th class="align-top">Privacy Risk</th>
+  <td class="align-top">{{ govt_system.risk }}</td>
+  </tr>
+  {% end %}
+
   {% if govt_system.pia || govt_system.sorn %}
   <tr>
-  <th class="align-top">Privacy</th>
+  <th class="align-top">Privacy Docs</th>
   <td class="align-top">
-  {% if govt_system.pia %}<a href="{{ govt_system.pia }}">[PIA]</a>{% end %}
-  {% if govt_system.sorn %}<a href="{{ govt_system.sorn }}">[SORN]</a>{% end %}
+  {% if govt_system.pia %}<a href="{{ govt_system.pia }}">[Privacy Impact]</a>{% end %}
+  {% if govt_system.sorn %}<a href="{{ govt_system.sorn }}">[System Records]</a>{% end %}
   </td>
   </tr>
   {% end %}

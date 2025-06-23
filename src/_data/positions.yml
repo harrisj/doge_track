@@ -3287,6 +3287,74 @@
   - USCIS
   - DHS
   documents: []
+- id: detail-gsa-usaid-coristine
+  type: detailed
+  agency_id: USAID
+  name: Edward Coristine
+  doge_alias_id:
+  from_agency_id: GSA
+  from_truth: guessed
+  start_date: '2025-01-27'
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-01-27'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Senior Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office: Office of the CIO
+  source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
+  source_name: Wash. Post
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Date at USAID reported by NYT
+  replaced_by:
+  same_as:
+  agency:
+    id: USAID
+    name: US Agency for International Development
+    slug: usaid
+    page_slug: usaid
+    short_name: USAID
+    doge_base: false
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/usaid"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - USAID
+  documents: []
 - id: detail-gsa-sba-coristine
   type: detailed
   agency_id: SBA
@@ -3559,74 +3627,6 @@
     path: "/agencies/gsa"
   agency_and_parent:
   - State
-  documents: []
-- id: detail-gsa-usaid-coristine
-  type: detailed
-  agency_id: USAID
-  name: Edward Coristine
-  doge_alias_id:
-  from_agency_id: GSA
-  from_truth: guessed
-  start_date: '2025-02-10'
-  start_date_truth: reported
-  start_date_event:
-  start_source:
-  start_source_name:
-  end_date:
-  end_date_truth:
-  end_date_event:
-  end_source:
-  end_source_name:
-  end_type:
-  sort_date: '2025-02-10'
-  nte_date:
-  nte_date_truth:
-  signed_date:
-  description:
-  fuzz:
-  appt_type_code:
-  appt_type:
-  pay_grade:
-  salary:
-  pd_code:
-  sge:
-  excepted:
-  title: Senior Advisor
-  title_type: advisor
-  series:
-  supervisory:
-  office: Office of the CIO
-  source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
-  source_name: Wash. Post
-  reimbursed:
-  reimbursement_amount:
-  comment:
-  qualifications:
-  table_note:
-  replaced_by:
-  same_as:
-  agency:
-    id: USAID
-    name: US Agency for International Development
-    slug: usaid
-    page_slug: usaid
-    short_name: USAID
-    doge_base: false
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/usaid"
-  from_agency:
-    id: GSA
-    name: General Services Administration
-    slug: gsa
-    page_slug: self
-    short_name: GSA
-    doge_base: true
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/gsa"
-  agency_and_parent:
-  - USAID
   documents: []
 - id: internal-dhs-cisa-coristine
   type: internal
@@ -4202,8 +4202,8 @@
   doge_alias_id:
   from_agency_id: OPM
   from_truth: guessed
-  start_date: 2025-02-XX
-  start_date_truth: guessed
+  start_date: '2025-01-27'
+  start_date_truth: reported
   start_date_event:
   start_source:
   start_source_name:
@@ -4213,7 +4213,7 @@
   end_source:
   end_source_name:
   end_type:
-  sort_date: 2025-02-XX
+  sort_date: '2025-01-27'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -4231,11 +4231,11 @@
   series:
   supervisory:
   office:
-  source:
-  source_name:
+  source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+  source_name: NYT
   reimbursed:
   reimbursement_amount:
-  comment: Need to see if I can find any documentation linking him. NYT says he was involved.
+  comment:
   qualifications:
   table_note: NYT links to USAID, but need to find public reports of this
   replaced_by:
@@ -12494,6 +12494,122 @@
   agency_and_parent:
   - EOP
   documents: []
+- id: state-marocco
+  type: appointed
+  agency_id: State
+  name: Peter Marocco
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: '2025-01-20'
+  start_date_truth: inferred
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date: '2025-04-13'
+  end_date_truth: reported
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-01-20'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Director of Foreign Assistance
+  title_type: director
+  series:
+  supervisory:
+  office:
+  source: https://www.reuters.com/world/us/trump-official-who-oversaw-closure-usaid-has-left-state-department-wsj-reports-2025-04-13/
+  source_name: Reuters
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: State
+    name: State Department
+    slug: state
+    page_slug: state
+    short_name: State
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/state"
+  agency_and_parent:
+  - State
+  documents: []
+- id: usaid-marocco
+  type: appointed
+  agency_id: USAID
+  name: Peter Marocco
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: '2025-02-01'
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date: '2025-03-19'
+  end_date_truth: reported
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-01'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://www.nytimes.com/2025/03/19/us/politics/usaid-doge-leadership.html
+  source_name: NYT
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: USAID
+    name: US Agency for International Development
+    slug: usaid
+    page_slug: usaid
+    short_name: USAID
+    doge_base: false
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/usaid"
+  agency_and_parent:
+  - USAID
+  documents: []
 - id: iaf-marocco
   type: appointed
   agency_id: IAF
@@ -12551,6 +12667,64 @@
     path: "/agencies/independent#eo1"
   agency_and_parent:
   - IAF
+  documents: []
+- id: usadf-marocco
+  type: appointed
+  agency_id: USADF
+  name: Peter Marocco
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: '2025-02-28'
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-02-28'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Acting Chair of the Board
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+  source_name: court doc
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: USADF
+    name: U.S. African Development Foundation
+    slug: usadf
+    page_slug: independent#eo1
+    short_name: USADF
+    doge_base: false
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/independent#eo1"
+  agency_and_parent:
+  - USADF
   documents: []
 - id: dhs-mccord
   type: appointed

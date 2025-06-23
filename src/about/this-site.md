@@ -1,9 +1,9 @@
 ---
 layout: docs
-title: About This Site
+title: Important Disclaimer
 description: Despite claims they are the most transparent agency in history, DOGE is remarkably hard to keep track of. This site collects information sourced from media reports and court documents to build up a dataset of who is in DOGE and where they have been working.
 ---
-# About This Site
+# An Important Disclaimer
 
 We are now several months into the second Trump presidency. It's been hard keeping track of all that is being damaged and lost within the federal government. Emboldened by Musk and the absence of oversight, the so-called "Department of Government Efficiency" (DOGE) has been rampaging through agencies to subvert their security, cancel contracts, fire staff and siphon up confidential data into large data warehouses. It's going to take years to both undo the damage and for any of them to face consequences.
 
@@ -28,11 +28,15 @@ Once I have loaded the data, other scripts will extract the data from the databa
 
 For your convenience, I have included a "Last Updated" date in the footer for the site. I will update the entire site at a single time, so it does not apply to specific pages only.
 
-## Reporting Errors and Ommissions
+## Reporting Errors and Omissions
 
-This website may be an act of journalism, but I am **not** a professional journalist. I will continue to strive to update the data and fix any errors that arise, but DOGE has made itself intentionally hard to track and some errors are almost certain to result. All of which is to say, **use this data at your own risk**. If you are using it as the basis for further investigations or legal arguments, please double-check my work (and let me know if you find any errors). I generally will link to original sources and have also started collecting significant documents.
+This website may be an act of journalism, but I am **not** a professional journalist. I will continue to strive to update the data and fix any errors that arise, but DOGE has made itself intentionally hard to track and some errors are almost certain to result. All of which is to say, **use this data at your own risk**. If you are using it as the basis for further investigations or legal arguments, please double-check my work (and let me know if you find any errors). I generally will link to original sources and have also started collecting significant documents. Use those as the basis for any citations.
 
-Just remember, **this data is sometimes very messy.** DOGE has purposefully fought any attempts at transparency and has used staffing arrangements that are meant to deter tracking their movements. I often am working from second-hand news reports of rumored sightings. There are several ways in which I will indicate uncertainty and vagueness. For dates, I am using the [Extended Date Time Format](https://www.loc.gov/standards/datetime/) to indicate situations where dates are approximate (_2025-01-(23)~_) or even unknown (_2025-01-XX_). I will also sometimes flag errors with notes on tables.
+Just remember, **this data is sometimes very messy.** DOGE has purposefully fought any attempts at transparency and has used staffing arrangements that are meant to deter tracking their movements. I often am working from second-hand news reports of rumored sightings. There are several ways in which I will indicate uncertainty and vagueness. For dates, I am using the [Extended Date Time Format](https://www.loc.gov/standards/datetime/) to indicate situations where dates are approximate (_2025-01-(23)~_) or even unknown (_2025-01-XX_). I will also sometimes flag errors with notes on tables. But there might be ambiguities that I miss or were not conveyed in the source material. Be careful of assuming a precise date or report denotes absolute certainty. Be skeptical of [data smells](https://github.com/nikeiubel/data-smells/wiki/Ensuring-Accuracy-in-Data-Journalism).
+
+## This Site is a Beta
+
+Furthermore, this site is currently undergoing active development for new features and ways of displaying the data. I'm moving very fast and breaking things (acceptable for personal projects, unacceptable for government services), so this means that things might change. Data might be missing. Internal links might go to the wrong place or not work at all. Page contents might be updated. URLs might break. Bear with me!
 
 ## Contacting Me
 

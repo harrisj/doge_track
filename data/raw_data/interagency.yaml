@@ -1,6 +1,37 @@
 # yaml-language-server: $schema=../schemas/interagency-events-file.json
 ---
 
+- date: 2025-01-23
+  type: interagency
+  event: >-
+    An unnamed USAID official receives an angry late-night phone call from Peter Marocco, the newly appointed
+    Director of Foreign Assistance at the US State Department, accusing employees of trying to subvert
+    the President's executive order imposing a 90-day pause on all foreign aid.
+  source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+  source_name: NYT
+  agency:
+  - USAID
+  - State
+  interagency_doge_reps:
+    State:
+    - Peter Marocco
+  id: 5H2A8pfs
+
+- date: 2025-01-24
+  type: official
+  event: >-
+    The State Department issues a memo written by Peter Marocco and signed by Marco Rubio that not only
+    puts a halt to future foreign aid but also insists on stop-work orders for ~6200 current grants and
+    contracts at USAID.
+  named:
+  - Peter Marocco
+  agency:
+  - State
+  - USAID
+  source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+  source_name: NYT
+  id: 34gvpQTX
+
 - date: 2025-02-07
   type: report
   fuzz: article just reports this as early Feb; but Musk tweets said he was informed on 2/7

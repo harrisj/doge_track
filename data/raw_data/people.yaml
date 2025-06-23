@@ -1010,6 +1010,19 @@
     comment: NYT links him to USCIS, but no other info
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
     source_name: NYT
+  - id: detail-gsa-usaid-coristine
+    type: detailed
+    agency: USAID
+    from: GSA
+    from_truth: guessed
+    start_date: 2025-01-27
+    start_date_truth: reported
+    title: Senior Advisor
+    title_type: advisor
+    office: Office of the CIO
+    table_note: Date at USAID reported by NYT
+    source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
+    source_name: Wash. Post
   - id: detail-gsa-sba-coristine
     type: detailed
     from: GSA
@@ -1051,18 +1064,6 @@
     title: Senior Advisor
     title_type: advisor
     office: Bureau of Diplomatic Technology
-    source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
-    source_name: Wash. Post
-  - id: detail-gsa-usaid-coristine
-    type: detailed
-    agency: USAID
-    from: GSA
-    from_truth: guessed
-    start_date: 2025-02-10
-    start_date_truth: reported
-    title: Senior Advisor
-    title_type: advisor
-    office: Office of the CIO
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
     source_name: Wash. Post
   - id: internal-dhs-cisa-coristine
@@ -1194,10 +1195,11 @@
     agency: USAID
     from: OPM
     from_truth: guessed
-    start_date: 2025-02-XX
-    start_date_truth: guessed
+    start_date: 2025-01-27
+    start_date_truth: reported
     table_note: NYT links to USAID, but need to find public reports of this
-    comment: Need to see if I can find any documentation linking him. NYT says he was involved.
+    source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+    source_name: NYT
   - id: detail-opm-doj-cromer
     type: detailed
     agency: DOJ
@@ -3459,7 +3461,38 @@
   sort_name: Marocco
   slug: peter-marocco
   category: enabler
+  blurb: >-
+    A veteran of the first Trump administration, he was reportedly placed on administrative leave in 2020
+    for establishing a pattern in a division of USAID that he ran where he would unilaterally freeze or
+    revoke grants that he felt didn't reflect administration priorities. When employees spoke up about
+    it, he would then accuse them of insubordination and attempt to get them suspended or fired. He sounds
+    like a really nice guy, so it's probably not surprising that placing him in charge of USAID this year
+    led to the rapid destruction of the agency. And it's also possibly why he himself was reportedly ousted
+    from the State Department after the damage was complete. It would be comically ironic, if it didn't
+    mean the loss of hundreds of valuable people in USAID and [hundreds of thousands of deaths](https://www.bu.edu/sph/news/articles/2025/tracking-anticipated-deaths-from-usaid-funding-cuts/)
+    worldwide.
   positions:
+  - id: state-marocco
+    type: appointed
+    start_date: 2025-01-20
+    start_date_truth: inferred
+    end_date: 2025-04-13
+    end_date_truth: reported
+    agency: State
+    title: Director of Foreign Assistance
+    title_type: director
+    source: >-
+      https://www.reuters.com/world/us/trump-official-who-oversaw-closure-usaid-has-left-state-department-wsj-reports-2025-04-13/
+    source_name: Reuters
+  - id: usaid-marocco
+    agency: USAID
+    type: appointed
+    start_date: 2025-02-01
+    start_date_truth: reported
+    end_date: 2025-03-19
+    end_date_truth: reported
+    source: https://www.nytimes.com/2025/03/19/us/politics/usaid-doge-leadership.html
+    source_name: NYT
   - id: iaf-marocco
     type: appointed
     start_date: 2025-02-28
@@ -3468,6 +3501,14 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
     source_name: court doc
     agency: IAF
+  - id: usadf-marocco
+    type: appointed
+    agency: USADF
+    title: Acting Chair of the Board
+    start_date: 2025-02-28
+    start_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+    source_name: court doc
 
 - name: Antoine McCord
   sort_name: McCord

@@ -135,8 +135,8 @@ DB.create_table! :events do
   string :source_title
   string :source_name
   string :case_no
-  string :track_id
   string :system_id
+  string :theme
 end
 
 DB.create_table! :cases do
@@ -156,6 +156,7 @@ DB.create_table! :govt_systems do
   string :description
   string :comment
   string :category
+  string :theme
   string :population
   string :risk
   string :link

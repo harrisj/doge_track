@@ -72,7 +72,7 @@
   - **Russell Vought** (2025-02-08) Acting Director
   - **Jordan Wick** (2025-03-05) Expert/Consultant
 - systems:
-    - Microsoft AD: Active Directory
+    - AD: Active Directory
         - Gavin Kliger 2025-02-07 - 2025-05-08
         - Luke Farritor 2025-02-07 - 2025-03-04
     - website: Agency Website
@@ -87,7 +87,7 @@
         - Jordan Wick **[read-write access]** 2025-02-07 - 2025-03-28
     - IPP: Invoice Processing Platform
         - Jordan Wick 2025-02-07 - 2025-03-28
-    - Entra: Microsoft Entra ID
+    - Microsoft Entra ID
         - Luke Farritor **[admin access]** 2025-02-07 - 2025-03-04
         - Jordan Wick **[admin access]** 2025-02-09 - 2025-03-05
         - Gavin Kliger 2025-02-07 - 2025-05-08
@@ -97,16 +97,16 @@
         - Jordan Wick 2025-02-07 - 2025-03-28
     - PAC: Physical Access Control
         - Gavin Kliger 2025-02-07 - 2025-05-08
-    - Automate: Power Automate
+    - Power Automate
         - Gavin Kliger **[admin access]** 2025-04-12 - 2025-04-13
         - Gavin Kliger **[admin access]** 2025-04-17 - 2025-04-17
     - PRISM: Procurement Request Information System Management
         - Jordan Wick 2025-02-07 - 2025-03-28
     - oneARC: Salesforce oneARC
         - Jordan Wick 2025-02-07 - 2025-03-28
-    - USA Staff: USA Staffing
+    - USA Staffing
         - Jordan Wick 2025-02-07 - 2025-03-28
-    - WebTA: WebTA
+    - WebTA
         - Jordan Wick 2025-02-07 - ongoing
 
 # Census Bureau
@@ -282,7 +282,7 @@
         - Miles Collins 2025-04-18 - ongoing
         - Aram Moghaddassi 2025-04-18 - ongoing
         - Marko Elez 2025-04-18 - ongoing
-    - USAccess: USAccess
+    - USAccess
         - Marko Elez 2025-02-25 - ongoing
     - UI Data: Unemployment Insurance Data and Related Records
         - Marko Elez 2025-03-21 - ongoing
@@ -475,13 +475,13 @@
         - Rachel Riley 2025-02-04 - ongoing
         - Conor Fennessy 2025-03-07 - 2025-04-18
         - Zach Terrell 2025-03-16 - ongoing
-    - Grant Sol.: Grant Solutions
+    - Grant Solutions
         - Luke Farritor 2025-01-27 - ongoing
         - Aram Moghaddassi 2025-02-19 - ongoing
         - Rachel Riley 2025-02-20 - ongoing
         - Conor Fennessy 2025-02-28 - ongoing
         - Jeremy Lewin 2025-02-28 - ongoing
-    - Grants.gov: Grants.gov
+    - Grants.gov
         - Conor Fennessy 2025-02-28 - ongoing
         - Luke Farritor **[admin access]** 2025-03-21 - 2025-04-18
     - HCAS: HHS Consolidated Acquisition System
@@ -586,7 +586,7 @@
   - **Nate Cavanaugh** (2025-03-(13)~) (detailed from GSA)
   - **Justin Fox** (2025-03-(13)~) (detailed from GSA)
 - systems:
-    - Entra: Microsoft Entra ID
+    - Microsoft Entra ID
         - Nate Cavanaugh **[admin access]** 2025-03-12~ - ongoing
         - Justin Fox **[admin access]** 2025-03-12~ - ongoing
 
@@ -718,7 +718,7 @@
         - Amanda Scales 2025-01-31 - ongoing
         - Charles Ezell 2025-01-24 - ongoing
         - OPM-18 2025-02-03 - ongoing
-    - USA Perf: USA Performance
+    - USA Performance
         - {sr.doge_alias_id} (Riccardo Biasini) 2025-01-28 - ongoing
         - {sr.doge_alias_id} (Akash Bobba) 2025-01-20 - ongoing
         - {sr.doge_alias_id} (Edward Coristine) 2025-01-28 - ongoing
@@ -735,7 +735,7 @@
         - OPM-17 2025-01-31 - ongoing
         - OPM-18 2025-01-24 - ongoing
         - {sr.doge_alias_id} (Brian Bjelde) 2025-01-20 - ongoing
-    - USA Staff: USA Staffing
+    - USA Staffing
         - Amanda Scales **[admin access]** 2025-01-20 - ongoing
         - {sr.doge_alias_id} (Riccardo Biasini) **[admin access]** 2025-01-28 - ongoing
         - {sr.doge_alias_id} (Gavin Kliger) **[admin access]** 2025-01-20 - ongoing
@@ -793,7 +793,7 @@
         - {sr.doge_alias_id} (Jon Koval) 2025-03-17 - ongoing
         - {sr.doge_alias_id} (Marko Elez) 2025-03-17 - ongoing
         - {sr.doge_alias_id} (Payton Rehling) 2025-03-17 - ongoing
-    - NUMIDENT: NUMIDENT files
+    - NUMIDENT: Numerical Identification System
         - Akash Bobba 2025-02-10 - ongoing
         - {sr.doge_alias_id} (Jon Koval) 2025-03-17 - ongoing
         - {sr.doge_alias_id} (Marko Elez) 2025-03-17 - ongoing
@@ -808,6 +808,7 @@
 # State Department
 - slug: state
 - people:
+  - **Peter Marocco** (2025-01-20 - 2025-04-13) Director of Foreign Assistance
   - **Edward Coristine** (2025-02-10) Senior Advisor (detailed from GSA)
   - **Luke Farritor** (2025-02-10) Senior Advisor (detailed from GSA)
   - **Jeremy Lewin** (2025-04-15) Acting Head of Foreign Assistance
@@ -830,6 +831,7 @@
   - **Ethan Shaotran** (2025-02-20) (detailed from GSA)
   - **Jacob Altik** (2025-02-21) (detailed from OPM)
   - **Nate Cavanaugh** (2025-02-21) (detailed from GSA)
+  - **Peter Marocco** (2025-02-28) Acting Chair of the Board
 
 # U.S. Access Board
 - slug: usaccess
@@ -837,13 +839,14 @@
 # US Agency for International Development
 - slug: usaid
 - people:
+  - **Edward Coristine** (2025-01-27) Senior Advisor (detailed from GSA)
+  - **Clayton Cromer** (2025-01-27) (detailed from OPM)
   - **Luke Farritor** (2025-01-27) (detailed from GSA)
   - **Gavin Kliger** (2025-01-27) (detailed from OPM)
   - **Jeremy Lewin** (2025-01-28 - 2025-03-18) Senior Advisor / Director for Strategy & Programs (detailed from GSA)
-  - **Edward Coristine** (2025-02-10) Senior Advisor (detailed from GSA)
-  - **Clayton Cromer** (2025-02-XX) (detailed from OPM)
-  - **Kenneth Jackson** (2025-03-18) Deputy Administrator (Management and Resources)
+  - **Peter Marocco** (2025-02-01 - 2025-03-19)
   - **Jeremy Lewin** (2025-03-18) Deputy Administrator(Policy and Programming) / COO
+  - **Kenneth Jackson** (2025-03-18) Deputy Administrator (Management and Resources)
 
 # US Citizenship & Immigration Services
 - slug: uscis

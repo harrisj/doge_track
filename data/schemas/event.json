@@ -130,9 +130,9 @@
                 }
             ]
         },
-        "track_id": {
-            "description": "If the event is linked to a specific track, include it here",
-            "$ref": "valid_names.json#track_ids"
+        "theme": {
+            "description": "If system access is linked to a specific theme",
+            "$ref": "valid_names.json#theme_ids"
         }
     },
     "required": [

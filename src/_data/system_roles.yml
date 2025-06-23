@@ -2092,7 +2092,7 @@
   comment:
   table_note:
 - id: grants-fennessy
-  govt_system_id: givenrants.gov
+  govt_system_id: grants.gov
   name: Conor Fennessy
   doge_alias_id:
   agency_id: HHS
@@ -2121,7 +2121,7 @@
   comment:
   table_note:
 - id: grants-farritor
-  govt_system_id: givenrants.gov
+  govt_system_id: grants.gov
   name: Luke Farritor
   doge_alias_id:
   agency_id: HHS
@@ -3235,6 +3235,124 @@
   source_name: court doc
   comment:
   table_note:
+- id: ndnh-elez
+  govt_system_id: ndnh
+  name: Marko Elez
+  doge_alias_id:
+  agency_id: HHS
+  type: read
+  date_requested:
+  date_req_truth:
+  date_granted: '2025-03-06'
+  date_grant_truth: verified
+  ao_name:
+  ao_type: cto
+  ao_title: Administration for Children and Families (ACF) Chief Technology Officer
+  ao_office:
+  ao_doge:
+  ao_truth: verified
+  bypassed:
+  date_last_used:
+  date_used_truth:
+  date_revoked: '2025-04-18'
+  date_revoked_truth: verified
+  date_nte:
+  date_nte_truth:
+  last_accessed:
+  never_accessed: false
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+  source_name: court doc
+  comment: Revocation date likely earlier, not given in filing
+  table_note:
+- id: ndnh-moghaddassi
+  govt_system_id: ndnh
+  name: Aram Moghaddassi
+  doge_alias_id:
+  agency_id: HHS
+  type: read
+  date_requested:
+  date_req_truth:
+  date_granted: '2025-03-06'
+  date_grant_truth: verified
+  ao_name:
+  ao_type: cto
+  ao_title: Administration for Children and Families (ACF) Chief Technology Officer
+  ao_office:
+  ao_doge:
+  ao_truth: verified
+  bypassed:
+  date_last_used:
+  date_used_truth:
+  date_revoked: '2025-04-18'
+  date_revoked_truth: verified
+  date_nte:
+  date_nte_truth:
+  last_accessed:
+  never_accessed: false
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+  source_name: court doc
+  comment: Revocation date likely earlier, not given in filing
+  table_note:
+- id: njfp-collins
+  govt_system_id: nfjp
+  name: Miles Collins
+  doge_alias_id:
+  agency_id: DOL
+  type: unknown
+  date_requested:
+  date_req_truth:
+  date_granted: '2025-04-18'
+  date_grant_truth: reported
+  ao_name:
+  ao_type:
+  ao_title:
+  ao_office:
+  ao_doge:
+  ao_truth:
+  bypassed:
+  date_last_used:
+  date_used_truth:
+  date_revoked:
+  date_revoked_truth:
+  date_nte:
+  date_nte_truth:
+  last_accessed:
+  never_accessed: false
+  source: https://www.wired.com/story/doge-access-immigration-data-department-of-labor/
+  source_name: Wired
+  comment: >-
+    Wired reports that Miles Collins has access to the National Farmworker Jobs Program (NFJP) system, which provides grants to organizations that work
+    with migrant and seasonal labor
+  table_note:
+- id: ncfms-collins
+  govt_system_id: ncfms
+  name: Miles Collins
+  doge_alias_id:
+  agency_id: DOL
+  type: unknown
+  date_requested:
+  date_req_truth:
+  date_granted: '2025-02-20'
+  date_grant_truth: verified
+  ao_name: Troy Finnegan
+  ao_type: deputy
+  ao_title: Former Assistant Secretary for Administration and Management
+  ao_office:
+  ao_doge:
+  ao_truth: verified
+  bypassed:
+  date_last_used:
+  date_used_truth:
+  date_revoked:
+  date_revoked_truth:
+  date_nte:
+  date_nte_truth:
+  last_accessed:
+  never_accessed: true
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+  source_name: court doc
+  comment:
+  table_note:
 - id: numident-bobba
   govt_system_id: numident
   name: Akash Bobba
@@ -3360,124 +3478,6 @@
     Employees "6, 7 and 9" are approved to access the SSA Enterprise Data Warehouse to access the Numident, Master Beneficiary Record (MBR) and Supplemental
     Security Record (SSR) master records, as well as copies of SSA payment files that SSA transmits to the Department of the Treasury, Bureau of the Fiscal
     Service (BFS) for payment
-  table_note:
-- id: ndnh-elez
-  govt_system_id: ndnh
-  name: Marko Elez
-  doge_alias_id:
-  agency_id: HHS
-  type: read
-  date_requested:
-  date_req_truth:
-  date_granted: '2025-03-06'
-  date_grant_truth: verified
-  ao_name:
-  ao_type: cto
-  ao_title: Administration for Children and Families (ACF) Chief Technology Officer
-  ao_office:
-  ao_doge:
-  ao_truth: verified
-  bypassed:
-  date_last_used:
-  date_used_truth:
-  date_revoked: '2025-04-18'
-  date_revoked_truth: verified
-  date_nte:
-  date_nte_truth:
-  last_accessed:
-  never_accessed: false
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
-  source_name: court doc
-  comment: Revocation date likely earlier, not given in filing
-  table_note:
-- id: ndnh-moghaddassi
-  govt_system_id: ndnh
-  name: Aram Moghaddassi
-  doge_alias_id:
-  agency_id: HHS
-  type: read
-  date_requested:
-  date_req_truth:
-  date_granted: '2025-03-06'
-  date_grant_truth: verified
-  ao_name:
-  ao_type: cto
-  ao_title: Administration for Children and Families (ACF) Chief Technology Officer
-  ao_office:
-  ao_doge:
-  ao_truth: verified
-  bypassed:
-  date_last_used:
-  date_used_truth:
-  date_revoked: '2025-04-18'
-  date_revoked_truth: verified
-  date_nte:
-  date_nte_truth:
-  last_accessed:
-  never_accessed: false
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
-  source_name: court doc
-  comment: Revocation date likely earlier, not given in filing
-  table_note:
-- id: njfp-collins
-  govt_system_id: nfjp
-  name: Miles Collins
-  doge_alias_id:
-  agency_id: DOL
-  type: unknown
-  date_requested:
-  date_req_truth:
-  date_granted: '2025-04-18'
-  date_grant_truth: reported
-  ao_name:
-  ao_type:
-  ao_title:
-  ao_office:
-  ao_doge:
-  ao_truth:
-  bypassed:
-  date_last_used:
-  date_used_truth:
-  date_revoked:
-  date_revoked_truth:
-  date_nte:
-  date_nte_truth:
-  last_accessed:
-  never_accessed: false
-  source: https://www.wired.com/story/doge-access-immigration-data-department-of-labor/
-  source_name: Wired
-  comment: >-
-    Wired reports that Miles Collins has access to the National Farmworker Jobs Program (NFJP) system, which provides grants to organizations that work
-    with migrant and seasonal labor
-  table_note:
-- id: ncfms-collins
-  govt_system_id: ncfms
-  name: Miles Collins
-  doge_alias_id:
-  agency_id: DOL
-  type: unknown
-  date_requested:
-  date_req_truth:
-  date_granted: '2025-02-20'
-  date_grant_truth: verified
-  ao_name: Troy Finnegan
-  ao_type: deputy
-  ao_title: Former Assistant Secretary for Administration and Management
-  ao_office:
-  ao_doge:
-  ao_truth: verified
-  bypassed:
-  date_last_used:
-  date_used_truth:
-  date_revoked:
-  date_revoked_truth:
-  date_nte:
-  date_nte_truth:
-  last_accessed:
-  never_accessed: true
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
-  source_name: court doc
-  comment:
   table_note:
 - id: eis-collins
   govt_system_id: ojc-eis

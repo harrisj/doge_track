@@ -6,6 +6,7 @@
   description: A relatively new (~2022) system for tracking procurement at the CDC
   comment: I can't find any public data on this system
   category: obligations
+  theme: spending
   population:
   risk:
   link:
@@ -27,6 +28,7 @@
     activities
   comment:
   category: obligations
+  theme: spending
   population:
   risk:
   link:
@@ -38,12 +40,13 @@
   all_names: []
   access_ids: []
 - id: microsoft-ad
-  acronym: Microsoft AD
+  acronym: AD
   name: Active Directory
   type: saas
   description: A system for controlling access to other systems within an agency
   comment:
   category: security
+  theme: personnel
   population:
   risk:
   link:
@@ -65,6 +68,7 @@
   description: This is a stand-in for whatever website platform an agency is using
   comment:
   category: communications
+  theme: it-modernization
   population:
   risk:
   link:
@@ -101,6 +105,7 @@
   description: System for detecting and preventing fraud in Social Security
   comment:
   category: payments
+  theme:
   population: SSA payees, SSA employees, people doing business with the SSA
   risk: PII of individuals stored in other systems and copied here for investigation
   link:
@@ -120,6 +125,7 @@
     can retrieve data for an individual tied to a Department of State visa application, a U.S. Customs and Border Protection log of an entry into the United
     States, and an immigration status change logged by U.S. Citizenship and Immigration Services.
   category: security
+  theme:
   population:
   risk:
   link: https://www.dhs.gov/obim
@@ -137,6 +143,7 @@
   description: A payment system that allows recipients to draw down funds from an established bank account for that recipient.
   comment:
   category: payments
+  theme: spending
   population:
   risk:
   link:
@@ -156,6 +163,7 @@
   description: Used to track expenditures at HHS
   comment: Not sure what this is
   category: obligations
+  theme: spending
   population:
   risk:
   link:
@@ -175,6 +183,7 @@
   description: System for tracking CMS acquisitions, contracts, milestones and audits.
   comment:
   category: obligations
+  theme: spending
   population:
   risk:
   link:
@@ -208,6 +217,7 @@
   description: A system which handles accounting for all federal agencies
   comment:
   category: payments
+  theme:
   population:
   risk:
   link: https://fiscal.treasury.gov/cars/
@@ -225,6 +235,7 @@
   description: The CIS contains information about immigrants who use Alien Numbers, or A-Numbers.
   comment:
   category: immigration
+  theme: panopticon
   population: Immigrants in the US who use Alien Numbers, or A-Numbers. Can include undocumented and documented immigrants
   risk:
   link:
@@ -246,6 +257,7 @@
   description: A system for disbursing grants and loans that are paid to institutions of higher education directly (who then provide to students)
   comment:
   category: payments
+  theme: spending
   population: Institutions of higher learning and their representatives
   risk: PII and bank account information for institutions of higher education
   link:
@@ -263,6 +275,7 @@
   description: Shared service for booking government travel
   comment:
   category: personnel
+  theme: personnel
   population:
   risk:
   link:
@@ -282,6 +295,7 @@
   description: Provides information on CFPB reporting structure
   comment:
   category: personnel
+  theme: personnel
   population:
   risk:
   link:
@@ -301,6 +315,7 @@
   description: A hosted or self-hosted service that simplifies systems for processing big Data
   comment:
   category: data
+  theme:
   population:
   risk:
   link:
@@ -330,6 +345,7 @@
   description: A system used for tracking and assisting in collection of federal student loans in default
   comment:
   category: payments
+  theme:
   population:
   risk: PII and details of debt amounts for individuals who have defaulted on their loans
   link:
@@ -347,6 +363,7 @@
   description: A tool for managing access control to systems built on top of ActiveDirectory
   comment:
   category: security
+  theme: personnel
   population:
   risk:
   link: https://www.netiq.com/documentation/directory-and-resource-administrator-92/pdfdoc/drauserguide/drauserguide.pdf
@@ -368,6 +385,7 @@
   description: System used at the EPA to initiate, award, modify and track acquisition actions.
   comment:
   category: obligations
+  theme: spending
   population:
   risk:
   link:
@@ -391,6 +409,7 @@
   description: System for processing disability claims against Social Security
   comment:
   category: obligations
+  theme:
   population:
   risk: PII and PHI of individuals applying for disability benefits, including names, SSNs, and medical information related to their disability
   link:
@@ -410,6 +429,7 @@
     Status and DACA applicants
   comment:
   category: immigration
+  theme: panopticon
   population:
   risk:
   link:
@@ -431,6 +451,7 @@
   description: A system for employers to submit W-2 records every year for their employees
   comment:
   category: taxes
+  theme:
   population:
   risk: Private tax information for every American
   link:
@@ -448,6 +469,7 @@
   description: FIXME
   comment:
   category:
+  theme: personnel
   population:
   risk:
   link:
@@ -473,6 +495,7 @@
     of OPM, including other federal agencies.
   comment:
   category: personnel
+  theme: personnel
   population:
   risk: social security numbers, job descriptions of Government workers, employment histories, contact information, and payroll information.
   link:
@@ -494,6 +517,7 @@
   description: Used to control physical access to the DOL HQ and several other buildings. Could track when employees enter and leave
   comment:
   category: security
+  theme: personnel
   population: Federal personnel with access to the Department of Labor
   risk: Ability to monitor when staff uses facilities, ability to control or grant access
   link: https://catalog.data.gov/dataset/dol-enterprise-physical-access-control-system-dol-epacs-a41c6
@@ -513,6 +537,7 @@
   description: A system used by DOJ for tracking the status of immigration cases
   comment:
   category: immigration
+  theme: panopticon
   population: Immigrants who have interacted with the US immigration system
   risk: Names, addresses, court testimony and any prior interactions with the system
   link:
@@ -538,6 +563,7 @@
   description: The system for receiving and evaluating applications for federal student aid and sharing determinations with universities
   comment:
   category: obligations
+  theme:
   population:
   risk: PII of student and parents, include names, address, SSNs, tax information and schools receiving the form
   link:
@@ -555,6 +581,7 @@
   description: A system for managing grant program for communities affected by disasters
   comment:
   category: obligations
+  theme: spending
   population:
   risk: PII of grant recipients, including names, addresses and bank information
   link: https://go.fema.gov/
@@ -576,6 +603,7 @@
   description: Systems for implementing the FUTURE Act, allowing FAFSA to obtain federal tax information for students
   comment:
   category: taxes
+  theme:
   population: Applicants for the FAFSA financial aid form
   risk: Sensitive tax information of students and parents
   link:
@@ -593,6 +621,7 @@
   description: The Federal Disbursement Services (FDS) pays out money, helps collect money, handles foreign transactions, and supports Fiscal Service programs.
   comment:
   category: payments
+  theme:
   population:
   risk:
   link: https://fiscal.treasury.gov/fds/
@@ -610,6 +639,7 @@
   description: A system administered by OPM that is used to manage the healthcare of federal Government employees.
   comment:
   category:
+  theme:
   population:
   risk: PII and PHI for federal employees and others covered by their health plans, including children
   link:
@@ -629,6 +659,7 @@
     Covers about half of federal personnel.
   comment:
   category: personnel
+  theme: personnel
   population:
   risk: PII and payment info for federal staff at several large agencies, including the ability to interfere with pay
   link:
@@ -650,6 +681,7 @@
   description: A database to measure the financial condition of public housing agencies and assess their ability to provide safe and decent housing.
   comment:
   category: oversight
+  theme: deregulation
   population:
   risk:
   link: https://www.hud.gov/program_offices/public_indian_housing/reac/products/fassph
@@ -669,6 +701,7 @@
   description: A system for tracking business operations at HHS
   comment:
   category: obligations
+  theme: spending
   population:
   risk:
   link: https://www.hhs.gov/about/agencies/asa/psc/accounting/accounting-services/index.html
@@ -692,6 +725,7 @@
   description: A system that consolidates grants, loans and work-study funds for students under Title IV of the Higher Education Act
   comment:
   category: obligations
+  theme:
   population:
   risk: PII of students, including names, addresses, SSNs and financial details of payments
   link:
@@ -711,6 +745,7 @@
   description: This newly-modernized portal will help U.S. employers find qualified workers while ensuring protections for U.S. and foreign workers.
   comment:
   category: immigration
+  theme: panopticon
   population:
   risk:
   link: https://flag.dol.gov/
@@ -730,6 +765,7 @@
   description: A shared service from BFS for handling intergovernmental invoicing
   comment:
   category:
+  theme:
   population:
   risk:
   link: https://www.fiscal.treasury.gov/g-invoice/
@@ -753,6 +789,7 @@
     Enterprise or GHE). Access to Github would be expected for developers, but doesn't necessarily mean the person is a coder.
   comment:
   category:
+  theme:
   population:
   risk:
   link:
@@ -782,6 +819,7 @@
   description:
   comment:
   category:
+  theme:
   population:
   risk:
   link:
@@ -803,6 +841,7 @@
     Road email.
   comment:
   category: personnel
+  theme: personnel
   population:
   risk: There are concerns it is an external system and did not go through a privacy review
   link:
@@ -814,12 +853,13 @@
   all_names: []
   access_ids: []
 - id: grantsolutions
-  acronym: Grant Sol.
+  acronym:
   name: Grant Solutions
   type: ssp
   description: A shared-service provider tool for federal agencies to track grants across their entire lifecycles
   comment:
   category: obligations
+  theme: spending
   population:
   risk:
   link:
@@ -840,13 +880,14 @@
   - grantsolutions-riley
   - grantsolutions-fennessy
   - grantsolutions-lewin
-- id: givenrants.gov
-  acronym: Grants.gov
+- id: grants.gov
+  acronym:
   name: Grants.gov
   type: ssp
   description: A system run and administered by HHS that is used at 18+ agencies for publishing grants, finding recipients and delivering funds
   comment:
   category: obligations
+  theme: spending
   population:
   risk:
   link:
@@ -868,6 +909,7 @@
   description: FIXME
   comment:
   category:
+  theme: spending
   population:
   risk:
   link:
@@ -891,6 +933,7 @@
   description: A department-wide financial management system which supports all of HHS Program Service Center's Accounting Services and reporting
   comment:
   category:
+  theme: spending
   population:
   risk:
   link: https://www.hhs.gov/about/agencies/asa/psc/accounting/accounting-services/index.html
@@ -910,6 +953,7 @@
   description: HR system for tracking employee information
   comment:
   category: personnel
+  theme: personnel
   population:
   risk: PII of CFPB employees, including SSN, home address, and employment records
   link:
@@ -932,6 +976,7 @@
   description: Integrated management system for Section 8 programs under the jurisdiction of the Office of Public and Indian Housing
   comment:
   category: oversight
+  theme:
   population:
   risk: PII of individuals applying for housing vouchers including medical records and personal narratives
   link:
@@ -953,6 +998,7 @@
   description: A database for tracking housing discrimination complaints and enforcement actions, including accusations of domestic violence
   comment:
   category: oversight
+  theme:
   population:
   risk: PII and PHI of individuals, including medical records, legal records and case files
   link: https://www.hud.gov/program_offices/fair_housing_equal_opp/system/hems
@@ -972,6 +1018,7 @@
   description: System tracking health claims of government employees and their dependents on FEHB health insurance plans
   comment:
   category: personnel
+  theme:
   population:
   risk: PII and PHI of government employees and their dependents
   link:
@@ -989,6 +1036,7 @@
   description: A single, integrated dual-entry accounting system that centralizes accounting for CMS programs, including Medicare and Medicaid.
   comment:
   category: payments
+  theme: spending
   population: Medical providers and others who would receive disbursements from Medicare or Medicaid
   risk:
   link: https://www.cms.gov/about-cms/information-systems/higlas/higlas-architecture
@@ -1014,6 +1062,7 @@
   description: A planned replacement for the IDENT system that has been troubled by delays and cost overruns
   comment:
   category: security
+  theme:
   population:
   risk:
   link:
@@ -1031,6 +1080,7 @@
   description: Collection of systems for human resources, timekeeping and payroll for SSA employees
   comment:
   category: personnel
+  theme:
   population:
   risk: PII of SSA employees, including names, SSNs, and payroll information
   link:
@@ -1048,6 +1098,7 @@
   description: FIXME
   comment: System unknown, named in internal SSA emails as way to investigate people
   category: obligations
+  theme:
   population:
   risk:
   link:
@@ -1067,6 +1118,7 @@
   description: A system for tracking contracts at CDC
   comment:
   category: obligations
+  theme:
   population:
   risk:
   link:
@@ -1086,6 +1138,7 @@
   description: A data warehouse that receives all Medicare claims after they have been approved for payment
   comment:
   category: oversight
+  theme: panopticon
   population: Anybody who has received treatment under Medicare
   risk: This includes highly-sensitive PII and PHI for millions of Americans
   link:
@@ -1113,6 +1166,7 @@
   description: The IDRS contains some of the most sensitive financial information on American taxpayers.
   comment:
   category: taxes
+  theme:
   population:
   risk: Access to PII and financial data of American taxpayers, including names, SSNs, tax returns, bank account numbers, etc.
   link: https://www.irs.gov/irm/part2/irm_02-009-001r
@@ -1130,6 +1184,7 @@
   description: A database for tracking all HUD programs nationwide, it includes hidden locations of domestic violence shelters
   comment:
   category: oversight
+  theme: spending
   population:
   risk: Among other things, it includes hidden locations of domestic violence shelters
   link:
@@ -1149,6 +1204,7 @@
   description: A system for processing all FEMA grant payments
   comment:
   category: payments
+  theme: spending
   population:
   risk:
   link:
@@ -1168,6 +1224,7 @@
   description:
   comment:
   category:
+  theme: spending
   population:
   risk:
   link:
@@ -1187,6 +1244,7 @@
   description: Handles disbursement and cash management for the majority of HUD's grant programs
   comment:
   category: payments
+  theme: spending
   population:
   risk: Access to PII of grant recipients, including names, addresses and bank information
   link: https://www.hud.gov/sites/dfiles/CFO/documents/eLOCCS_Getting_Started_Guide-Sept_2022.pdf
@@ -1208,6 +1266,7 @@
   description: A large record of all individuals elgible to receive social security benefits
   comment:
   category: taxes
+  theme: panopticon
   population:
   risk:
   link:
@@ -1225,12 +1284,13 @@
   - mbr-ssa-7
   - mbr-ssa-9
 - id: entra
-  acronym: Entra
+  acronym:
   name: Microsoft Entra ID
   type: saas
   description: A centralized identity provider used to support single-sign-on (SSO) and centralize access control for agencies.
   comment:
   category: security
+  theme: personnel
   population:
   risk:
   link:
@@ -1259,6 +1319,7 @@
   description: Microsoft Office 365 is used for agency email and knowledge management systems.
   comment:
   category:
+  theme: personnel
   population:
   risk:
   link:
@@ -1281,6 +1342,7 @@
   description: Microsoft service for sharing documents within an organization
   comment:
   category:
+  theme:
   population:
   risk:
   link:
@@ -1302,6 +1364,7 @@
     systems. NBS is aimed at improving data consolidation and financial reporting capabilities.
   comment:
   category: payments
+  theme: spending
   population:
   risk: As a payment system, includes names, SSNs, TINs, and other PII of persons/entities receiving payments from NIH
   link:
@@ -1319,6 +1382,7 @@
   description: FIXME
   comment:
   category:
+  theme: spending
   population:
   risk:
   link:
@@ -1331,31 +1395,6 @@
   - Luke Farritor
   access_ids:
   - era-farritor
-- id: numident
-  acronym: NUMIDENT
-  name: NUMIDENT files
-  type: internal
-  description: NUMIDENT files that have been extracted from SSA systems, these contain SSNs for everybody
-  comment:
-  category: taxes
-  population:
-  risk:
-  link:
-  pia:
-  sorn:
-  agency_id: SSA
-  all_agency_ids:
-  - SSA
-  all_names:
-  - Akash Bobba
-  - Jon Koval
-  - Marko Elez
-  - Payton Rehling
-  access_ids:
-  - numident-bobba
-  - numident-ssa-6
-  - numident-ssa-7
-  - numident-ssa-9
 - id: ndnh
   acronym: NDNH
   name: National Directory of New Hires
@@ -1363,6 +1402,7 @@
   description: A system for tracking wages and new hires that's used for child support location
   comment:
   category: taxes
+  theme: panopticon
   population:
   risk: Contains wage information and unemployment claims for all Americans
   link: https://acf.gov/css/training-technical-assistance/overview-federal-parent-locator-service
@@ -1384,6 +1424,7 @@
   description: System for a nationally-directed, locally-administered program of services for migrant and seasonal farmworkers and their dependents
   comment:
   category: immigration
+  theme: panopticon
   population:
   risk:
   link: https://www.dol.gov/agencies/eta/agriculture
@@ -1406,6 +1447,7 @@
     Title IV of the Higher Education Act of 1965
   comment:
   category: obligations
+  theme:
   population:
   risk: PII of students, including names, addresses, SSNs and financial details of student loans
   link:
@@ -1423,6 +1465,7 @@
   description: FIXME
   comment:
   category:
+  theme: spending
   population:
   risk:
   link:
@@ -1442,6 +1485,7 @@
   description: Database that stores information on all open and closed investigatations into possible unfair labor practices nationwide
   comment:
   category: oversight
+  theme:
   population:
   risk:
   link:
@@ -1459,6 +1503,7 @@
   description: System for alerting pilots and airports of events that might affect air travel
   comment:
   category: communications
+  theme:
   population:
   risk:
   link: https://www.faa.gov/about/initiatives/notam/what_is_a_notam
@@ -1476,6 +1521,7 @@
   description: System for sending text messages to the public
   comment:
   category: communications
+  theme:
   population:
   risk: Access to PII like phone numbers as well as private information like participation in Medicaid, etc.
   link:
@@ -1486,6 +1532,32 @@
   - GSA
   all_names: []
   access_ids: []
+- id: numident
+  acronym: NUMIDENT
+  name: Numerical Identification System
+  type: internal
+  description: NUMIDENT files that have been extracted from SSA systems, these contain SSNs for everybody
+  comment:
+  category: taxes
+  theme: spending
+  population:
+  risk:
+  link:
+  pia:
+  sorn:
+  agency_id: SSA
+  all_agency_ids:
+  - SSA
+  all_names:
+  - Akash Bobba
+  - Jon Koval
+  - Marko Elez
+  - Payton Rehling
+  access_ids:
+  - numident-bobba
+  - numident-ssa-6
+  - numident-ssa-7
+  - numident-ssa-9
 - id: obis
   acronym: OBIS
   name: OSHA Business Information Systems
@@ -1493,6 +1565,7 @@
   description: Information gathered as part of whistleblowing and used for enforcement
   comment:
   category: oversight
+  theme:
   population:
   risk: PII of individuals reporting problems as well as confidential whistleblower information
   link:
@@ -1507,9 +1580,13 @@
   acronym: OJC-EIS
   name: Office of Job Corps Electronic Information System
   type: unknown
-  description: FIXME
+  description: >-
+    The Job Corps program helps eligible young people ages 16 through 24 complete their high school education, trains them for meaningful careers, and assists
+    them with obtaining employment. Job Corps has trained and educated over two million individuals since 1964. DOGE may have been initially been interested
+    in this system as part of its fraud investigations, but it could be valuable for surveillance on immigrants.
   comment:
   category:
+  theme: panopticon
   population:
   risk:
   link:
@@ -1531,6 +1608,7 @@
     visits, and measurements from wastewater disease-reporting sites
   comment:
   category: scientific
+  theme:
   population:
   risk:
   link: https://www.cdc.gov/public-health-data-strategy/php/about/index.html
@@ -1548,6 +1626,7 @@
   description:
   comment:
   category:
+  theme: personnel
   population:
   risk:
   link:
@@ -1569,6 +1648,7 @@
     lifecycle, and human capital management.
   comment:
   category:
+  theme: spending
   population:
   risk:
   link:
@@ -1594,6 +1674,7 @@
     payments in FY 2024, valued at over 4.7 trillion dollars.
   comment:
   category: payments
+  theme: spending
   population:
   risk: PII/CUI of entities receiving payments, SSNs, TINs, bank account info
   link: https://fiscal.treasury.gov/pam/
@@ -1615,6 +1696,7 @@
   description: Where payment files are transmitted from initiating agencies before they are certified and processed by Treasury
   comment:
   category: payments
+  theme: spending
   population:
   risk: PII/CUI of entities receiving payments, SSNs, TINs, bank account info
   link: https://fiscal.treasury.gov/pam/
@@ -1634,6 +1716,7 @@
   description: A shared-services program provided by HHS for managing payments for grants
   comment:
   category:
+  theme: spending
   population:
   risk:
   link:
@@ -1660,6 +1743,7 @@
     execution and purchasing), credit cards, accounts payable, disbursements, standard general ledger, and reporting.
   comment:
   category: payments
+  theme: spending
   population:
   risk: PII of individuals and companies that receive funds from the GSA
   link:
@@ -1677,6 +1761,7 @@
   description: SSN application process data (Phone). This is a data extract file rather than an independent system.
   comment:
   category: obligations
+  theme: spending
   population:
   risk:
   link:
@@ -1696,6 +1781,7 @@
   description: Possibly a system for controlling and monitoring physical access to CFPB buildings
   comment:
   category: security
+  theme: personnel
   population:
   risk:
   link:
@@ -1717,6 +1803,7 @@
     annuitants, and their eligible family members.
   comment:
   category: personnel
+  theme: personnel
   population:
   risk: PII/PHI for postal service workers and their dependents
   link:
@@ -1728,12 +1815,13 @@
   all_names: []
   access_ids: []
 - id: power-automate
-  acronym: Automate
+  acronym:
   name: Power Automate
   type: saas
   description: A Microsoft tool for automating tasks that operate on documents and providing to staff
   comment:
   category:
+  theme:
   population:
   risk:
   link: https://www.microsoft.com/en-us/power-platform/products/power-automate
@@ -1755,6 +1843,7 @@
   description: System for tracking procurement and contracting
   comment:
   category: obligations
+  theme: spending
   population:
   risk: PII/CUI of contracting recipients
   link: https://www.doi.gov/ibc/services/finance/financial-systems/prism
@@ -1781,6 +1870,7 @@
   description: System which tracks funding provided for justice-involved youth and young adults and adults who were formerly incarcerated.
   comment:
   category: immigration
+  theme: panopticon
   population:
   risk:
   link: https://www.dol.gov/agencies/eta/reentry
@@ -1804,6 +1894,7 @@
   description: This is a system at OPM that I do not have information about yet
   comment:
   category: personnel
+  theme:
   population:
   risk:
   link:
@@ -1826,6 +1917,7 @@
   description: A system for tracking business processes within Salesforce
   comment:
   category: obligations
+  theme: spending
   population:
   risk:
   link: https://fs-arc.my.site.com/portal/s/
@@ -1845,6 +1937,7 @@
   description: Used by federal government agencies to securely create, certify, and submit payments to the Fiscal Service.
   comment:
   category: payments
+  theme: spending
   population:
   risk: Access to CUI/PII of entities submitting/receiving payments. Access to private encryption keys.
   link: https://www.fiscal.treasury.gov/sps/
@@ -1866,6 +1959,7 @@
   description: The system for issuing new SSNs as well as replacement SSN cards. This system also sources the NUMIDENT files
   comment:
   category: obligations
+  theme: panopticon
   population:
   risk: PII of individual include SSNs and information submitted on birth certificates
   link:
@@ -1883,6 +1977,7 @@
   description: A master record used by the SSA for the Supplemental Security Income (SSI) program
   comment:
   category:
+  theme: panopticon
   population:
   risk:
   link:
@@ -1906,6 +2001,7 @@
   description: An online service for agencies to verify immigration status and naturalized/acquired U.S. citizenship of applicants seeking benefits or licenses.
   comment:
   category: immigration
+  theme:
   population:
   risk:
   link:
@@ -1919,12 +2015,13 @@
   access_ids:
   - uscis-ssa-7
 - id: usa-performance
-  acronym: USA Perf
+  acronym:
   name: USA Performance
   type: ssp
   description: System tracking job performance of federal employees
   comment:
   category: personnel
+  theme: personnel
   population:
   risk: >-
     social security numbers, various other PII, and information related to employee performance reviews, such as individual development plans and work plans.
@@ -1961,12 +2058,13 @@
   - usa-performance-opm-18
   - usa-performance-hogan
 - id: usa-staffing
-  acronym: USA Staff
+  acronym:
   name: USA Staffing
   type: ssp
   description: A platform for federal agencies to recruit and onboard employees.
   comment:
   category: personnel
+  theme: personnel
   population:
   risk: >-
     social security numbers, demographic information, and any information agencies using the platform choose to collect, which may include banking information.
@@ -2000,6 +2098,7 @@
   description: Official hiring site for the federal government
   comment:
   category: personnel
+  theme: personnel
   population:
   risk: PII of individuals who have applied for federal jobs, including SSN, home address, and employment records
   link:
@@ -2011,12 +2110,13 @@
   all_names: []
   access_ids: []
 - id: usaccess
-  acronym: USAccess
+  acronym:
   name: USAccess
   type: ssp
   description: Shared service access provider system
   comment:
-  category:
+  category: security
+  theme: personnel
   population:
   risk:
   link:
@@ -2037,6 +2137,7 @@
   description: A system for tracking payments and business operations of USCIS
   comment:
   category: payments
+  theme: spending
   population:
   risk:
   link:
@@ -2058,6 +2159,7 @@
   description: The UC Portal manages all medical (mental and dental health included), educational, and sponsorship information for UC in ORR custody
   comment:
   category: immigration
+  theme: panopticon
   population:
   risk:
   link:
@@ -2079,6 +2181,7 @@
     at DOL following a 2025-03-20 executive order
   comment:
   category:
+  theme: panopticon
   population:
   risk: PII include name, address, birth date, bank account information, address, SSN, matches to SSA Death Master File
   link:
@@ -2098,6 +2201,7 @@
   description: System for authorizing access and setting permissions to talk to other systems at HUD
   comment:
   category: security
+  theme: personnel
   population:
   risk: With read-write access, DOGE staff were able to grant and revoke access to other systems without oversight
   link:
@@ -2111,12 +2215,13 @@
   access_ids:
   - wass-mirski
 - id: webta
-  acronym: WebTA
+  acronym:
   name: WebTA
   type: ssp
   description: System for tracking timecards
   comment:
   category:
+  theme: personnel
   population:
   risk:
   link:
@@ -2138,6 +2243,7 @@
     or title, or receive performance reviews.
   comment:
   category: personnel
+  theme: personnel
   population:
   risk: eOPF contains social security numbers, bank account information, dates of birth, addresses, and PII regarding family members
   link:

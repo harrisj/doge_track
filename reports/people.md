@@ -15,7 +15,7 @@
 - category: wrecker
 - positions:
     -  **OPM** (2025-01-24 to ??) [as "OPM-16"] Senior Advisor to the Director GS-15 $167,603 - $195,200
-        - USA Perf: USA Performance: 2025-01-31 - ongoing
+        - USA Performance: 2025-01-31 - ongoing
     -  **USADF** (2025-02-21 to ??) 
     -  **FCC** (2025-04-04 to ??) 
 
@@ -57,8 +57,8 @@
         - Databricks: Databricks **[admin access]**: 2025-01-28 - ongoing
         - EHRI: Enterprise Human Resources Integration: 2025-01-28 - 2025-02-06
         - github: GitHub: 2025-01-28 - ongoing
-        - USA Perf: USA Performance: 2025-01-28 - ongoing
-        - USA Staff: USA Staffing **[admin access]**: 2025-01-28 - ongoing
+        - USA Performance: 2025-01-28 - ongoing
+        - USA Staffing **[admin access]**: 2025-01-28 - ongoing
 
 # Jared Birchall
 - category: booster
@@ -75,29 +75,29 @@
         - website: Agency Website: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing
-        - USA Perf: USA Performance: 2025-01-20 - ongoing
-        - USA Perf: USA Performance: 2025-01-20 - ongoing
-        - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
+        - USA Performance: 2025-01-20 - ongoing
+        - USA Performance: 2025-01-20 - ongoing
+        - USA Staffing **[admin access]**: 2025-01-20 - ongoing
     -  **OPM** (2025-01-31 to ??) [as "OPM-07"] Expert ED-00
         - website: Agency Website: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing
-        - USA Perf: USA Performance: 2025-01-20 - ongoing
-        - USA Perf: USA Performance: 2025-01-20 - ongoing
-        - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
+        - USA Performance: 2025-01-20 - ongoing
+        - USA Performance: 2025-01-20 - ongoing
+        - USA Staffing **[admin access]**: 2025-01-20 - ongoing
 
 # Akash Bobba
 - category: wrecker
 - positions:
     -  **OPM** (2025-01-20 to NTE 2025-07-18) [as "OPM-03"] Expert ED-00 volunteer
         - website: Agency Website: 2025-01-20 - ongoing
-        - USA Perf: USA Performance: 2025-01-20 - ongoing
+        - USA Performance: 2025-01-20 - ongoing
         - website: Agency Website: 2025-01-28 - ongoing
     -  **Education** (2025-02-03 to NTE 2026-02-12) [as "ED-01"] 
     -  **SSA** (2025-02-03 to ??) [as "OPM-03"] 
-        - NUMIDENT: NUMIDENT files: 2025-02-10 - ongoing
+        - NUMIDENT: Numerical Identification System: 2025-02-10 - ongoing
     -  **SSA** (2025-02-09 to NTE 2026-02-08) [as "SSA-01"] Expert ED-00 $90,025
-        - NUMIDENT: NUMIDENT files: 2025-02-10 - ongoing
+        - NUMIDENT: Numerical Identification System: 2025-02-10 - ongoing
 
 # Ashley Boizelle
 - category: support
@@ -123,7 +123,7 @@
     -  **IAF** (2025-02-28 to 2025-04-04) 
     -  **USIP** (2025-03-04 to 2025-03-24) 
     -  **NEH** (2025-03-(13)~ to ??) 
-        - Entra: Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
+        - Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
     -  **MCC** (2025-03-(22)? to ??) 
     -  **USIP** (2025-03-25 to 2025-05-19) President
     -  **IMLS** (2025-03-31 to ??) 
@@ -176,12 +176,12 @@
 - category: wrecker
 - positions:
     -  **GSA** (2025-01-(20)~ to NTE 2026-01-19) [as "OPM-04"] Senior Advisor EF-00 volunteer
+    -  **USAID** (2025-01-27 to ??) Senior Advisor
     -  **SBA** (2025-02-03 to ??) 
     -  **DHS** (2025-02-(04)~ to ??) 
     -  **FEMA** (2025-02-05 to ??) 
         - FEMA-Go: FEMA Grants Outcomes: 2025-02-07 - ongoing
     -  **State** (2025-02-10 to ??) Senior Advisor
-    -  **USAID** (2025-02-10 to ??) Senior Advisor
     -  **CISA** (2025-02-19 to ??) Senior Advisor
         - Office365: Microsoft Office 365 **[admin access]**: 2025-02-20 - ongoing
     -  **Education** (2025-02-20 to ??) 
@@ -204,7 +204,7 @@
 - category: support
 - positions:
     -  **OPM** (2025-01-20 to ??) **Deputy General Counsel**
-    -  **USAID** (2025-02-XX to ??) 
+    -  **USAID** (2025-01-27 to ??) 
     -  **DOJ** (2025-03-XX to ??) 
 
 # Steve Davis
@@ -241,12 +241,12 @@
     -  **DOL** (2025-02-(14)~ to ??) 
         - DRA: Directory Resource Administrator: 2025-02-25 - ongoing
         - ePACS: Enterprise Physical Access Control System: 2025-02-25 - ongoing
-        - USAccess: USAccess: 2025-02-25 - ongoing
+        - USAccess: 2025-02-25 - ongoing
         - UI Data: Unemployment Insurance Data and Related Records: 2025-03-21 - ongoing
         - REO: Reentry Employment Opportunities: 2025-04-18 - ongoing
     -  **SSA** (2025-02-18 to ??) [as "SSA-07"] 
         - MBR: Master Beneficiary Record: 2025-03-17 - ongoing
-        - NUMIDENT: NUMIDENT files: 2025-03-17 - ongoing
+        - NUMIDENT: Numerical Identification System: 2025-03-17 - ongoing
         - SSR: Supplemental Security Record master records: 2025-03-17 - ongoing
     -  **HHS** (2025-03-05 to ??) 
         - NDNH: National Directory of New Hires: 2025-03-06 - 2025-04-18
@@ -284,10 +284,10 @@
     -  **GSA** (2025-01-20 to ??)  volunteer
     -  **HHS** (2025-01-21 to ??) 
         - PMS: Payment Management System **[admin access]**: 2025-01-22 - ongoing
-        - Grant Sol.: Grant Solutions: 2025-01-27 - ongoing
+        - Grant Solutions: 2025-01-27 - ongoing
         - HCAS: HHS Consolidated Acquisition System **[admin access]**: 2025-01-29 - ongoing
         - EHCM: Enterprise Human Capital Management System **[admin access]**: 2025-02-28 - ongoing
-        - Grants.gov: Grants.gov **[admin access]**: 2025-03-21 - 2025-04-18
+        - Grants.gov **[admin access]**: 2025-03-21 - 2025-04-18
     -  **USAID** (2025-01-27 to ??) 
     -  **CDC** (2025-01-30 to ??) 
         - ICE: Integrated Contracts Expert: 2025-01-30 - ongoing
@@ -299,8 +299,8 @@
     -  **Energy** (2025-02-(04)~ to ??) 
         - Office365: Microsoft Office 365: 2025-02-05 - ongoing
     -  **CFPB** (2025-02-07 to 2025-03-04) 
-        - Microsoft AD: Active Directory: 2025-02-07 - 2025-03-04
-        - Entra: Microsoft Entra ID **[admin access]**: 2025-02-07 - 2025-03-04
+        - AD: Active Directory: 2025-02-07 - 2025-03-04
+        - Microsoft Entra ID **[admin access]**: 2025-02-07 - 2025-03-04
     -  **State** (2025-02-10 to ??) Senior Advisor
     -  **NIH** (2025-02-24 to ??) 
         - eRA: NIH Grant Management System: 2025-01-27 - ongoing
@@ -318,8 +318,8 @@
 - positions:
     -  **Education** (2025-01-31 to ??) [as "ED-02"] Senior Advisor GS-15/6 $195,200
     -  **HHS** (2025-02-20 to ??) 
-        - Grant Sol.: Grant Solutions: 2025-02-28 - ongoing
-        - Grants.gov: Grants.gov: 2025-02-28 - ongoing
+        - Grant Solutions: 2025-02-28 - ongoing
+        - Grants.gov: 2025-02-28 - ongoing
         - HCAS: HHS Consolidated Acquisition System: 2025-02-28 - 2025-04-18
         - FBIS: Financial Business Intelligence System: 2025-03-07 - 2025-04-18
     -  **CMS** (2025-03-03 to ??) 
@@ -336,7 +336,7 @@
 - positions:
     -  **GSA** (2025-03-XX to ??) 
     -  **NEH** (2025-03-(13)~ to ??) 
-        - Entra: Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
+        - Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
     -  **MCC** (2025-03-(22)? to ??) 
     -  **WWICS** (2025-03-31 to ??) 
     -  **NLRB** (2025-04-16 to ??) 
@@ -512,21 +512,21 @@
     -  **OPM** (2025-01-20 to 2025-02-18) [as "OPM-05"] **Senior Advisor to the Director for Information Technology** $195,200
         - website: Agency Website: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing
-        - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
+        - USA Staffing **[admin access]**: 2025-01-20 - ongoing
     -  **USAID** (2025-01-27 to ??) 
     -  **USDA** (2025-02-(01)~ to ??) 
     -  **CFPB** (2025-02-07 to 2025-05-08) 
-        - Microsoft AD: Active Directory: 2025-02-07 - 2025-05-08
-        - Entra: Microsoft Entra ID: 2025-02-07 - 2025-05-08
+        - AD: Active Directory: 2025-02-07 - 2025-05-08
+        - Microsoft Entra ID: 2025-02-07 - 2025-05-08
         - PAC: Physical Access Control: 2025-02-07 - 2025-05-08
         - website: Agency Website **[read-write access]**: 2025-03-08 - 2025-05-08
         - Sharepoint: Microsoft Sharepoint **[admin access]**: 2025-04-12 - 2025-05-08
-        - Automate: Power Automate **[admin access]**: 2025-04-12 - 2025-04-13
-        - Automate: Power Automate **[admin access]**: 2025-04-17 - 2025-04-17
+        - Power Automate **[admin access]**: 2025-04-12 - 2025-04-13
+        - Power Automate **[admin access]**: 2025-04-17 - 2025-04-17
     -  **OPM** (2025-02-18 to ??) [as "OPM-05"] **Senior Advisor to the Director for Information Technology** $195,200
         - website: Agency Website: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing
-        - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
+        - USA Staffing **[admin access]**: 2025-01-20 - ongoing
     -  **IRS** (2025-02-19 to 2025-04-17) 
     -  **USAGM** (2025-03-(01)~ to ??) [as "OPM-05"] 
     -  **FTC** (2025-03-(28)~ to ??) 
@@ -544,7 +544,7 @@
 - positions:
     -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-06"] Expert ED-00 volunteer
         - MBR: Master Beneficiary Record: 2025-03-17 - ongoing
-        - NUMIDENT: NUMIDENT files: 2025-03-17 - ongoing
+        - NUMIDENT: Numerical Identification System: 2025-03-17 - ongoing
         - SSR: Supplemental Security Record master records: 2025-03-17 - ongoing
     -  **DOJ** (2025-04-15 to ??) 
         - ECAS: Executive Office for Immigration Review's Court and Appeals System: 2025-04-21 - ongoing
@@ -583,7 +583,7 @@
     -  **USAID** (2025-01-28 to 2025-03-18) Senior Advisor / Director for Strategy & Programs
     -  **CFPB** (2025-02-07 to ??) 
     -  **HHS** (2025-02-21 to ??) 
-        - Grant Sol.: Grant Solutions: 2025-02-28 - ongoing
+        - Grant Solutions: 2025-02-28 - ongoing
     -  **NIH** (2025-02-24 to ??) 
     -  **CMS** (2025-03-03 to ??) 
         - CALM: CMS Acquisition Lifecycle Management System: 2025-03-03 - 2025-04-18
@@ -639,7 +639,10 @@
 # Peter Marocco
 - category: enabler
 - positions:
+    -  **State** (2025-01-20 to 2025-04-13) Director of Foreign Assistance
+    -  **USAID** (2025-02-01 to 2025-03-19) 
     -  **IAF** (2025-02-28 to ??) President/CEO
+    -  **USADF** (2025-02-28 to ??) Acting Chair of the Board
 
 # Antoine McCord
 - category: enabler
@@ -699,7 +702,7 @@
         - REO: Reentry Employment Opportunities: 2025-04-18 - ongoing
     -  **SSA** (2025-02-22 to ??) [as "SSA-03"] 
     -  **HHS** (2025-03-05 to ??) 
-        - Grant Sol.: Grant Solutions: 2025-02-19 - ongoing
+        - Grant Solutions: 2025-02-19 - ongoing
         - NDNH: National Directory of New Hires: 2025-03-06 - 2025-04-18
     -  **CMS** (2025-03-05 to ??) 
         - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
@@ -767,8 +770,8 @@
         - Databricks: Databricks **[admin access]**: 2025-01-28 - ongoing
         - Databricks: Databricks **[admin access]**: 2025-01-28 - ongoing
         - EHRI: Enterprise Human Resources Integration: 2025-01-28 - 2025-02-06
-        - USA Perf: USA Performance: 2025-01-28 - ongoing
-        - USA Staff: USA Staffing **[admin access]**: 2025-01-28 - ongoing
+        - USA Performance: 2025-01-28 - ongoing
+        - USA Staffing **[admin access]**: 2025-01-28 - ongoing
     -  **NOAA** (2025-02-04 to ??) 
         - Google: Google Drive **[read-write access]**: 2025-02-05 - ongoing
     -  **CFPB** (2025-02-07 to 2025-03-21) 
@@ -795,7 +798,7 @@
     -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-09"] Expert ED-00 volunteer
         - PSSNAP: Phone Social Security Number Application Process data: 2025-03-14 - ongoing
         - MBR: Master Beneficiary Record: 2025-03-17 - ongoing
-        - NUMIDENT: NUMIDENT files: 2025-03-17 - ongoing
+        - NUMIDENT: Numerical Identification System: 2025-03-17 - ongoing
         - SSR: Supplemental Security Record master records: 2025-03-17 - ongoing
     -  **DHS**  
     -  **TSA**  
@@ -819,7 +822,7 @@
         - HCAS: HHS Consolidated Acquisition System **[admin access]**: 2025-02-03 - 2025-04-18
         - FBIS: Financial Business Intelligence System: 2025-02-04 - ongoing
         - BIIS: Business Intelligence Information System: 2025-02-06 - ongoing
-        - Grant Sol.: Grant Solutions: 2025-02-20 - ongoing
+        - Grant Solutions: 2025-02-20 - ongoing
     -  **CMS** (2025-02-03 to ??) 
         - CALM: CMS Acquisition Lifecycle Management System: 2025-02-03 - ongoing
     -  **NIH** (2025-02-24 to ??) 
@@ -844,14 +847,14 @@
     -  **OPM** (2025-01-20 to 2025-03-28) **Chief of Staff**
         - website: Agency Website: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing
-        - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
+        - USA Staffing **[admin access]**: 2025-01-20 - ongoing
         - Databricks: Databricks **[admin access]**: 2025-01-28 - ongoing
         - STAMP: STAMP: 2025-01-31 - ongoing
         - Databricks: Databricks **[admin access]**: 2025-02-03 - ongoing
     -  **OPM** (2025-03-28 to 2025-05-29) Senior Advisor ES-00
         - website: Agency Website: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing
-        - USA Staff: USA Staffing **[admin access]**: 2025-01-20 - ongoing
+        - USA Staffing **[admin access]**: 2025-01-20 - ongoing
         - Databricks: Databricks **[admin access]**: 2025-01-28 - ongoing
         - STAMP: STAMP: 2025-01-31 - ongoing
         - Databricks: Databricks **[admin access]**: 2025-02-03 - ongoing
@@ -980,10 +983,10 @@
 - positions:
     -  **OPM** (2025-01-20 to ??) [as "OPM-08"] Senior Advisor to the Director ES-00 $195,200
         - Databricks: Databricks **[admin access]**: 2025-02-03 - ongoing
-        - USA Staff: USA Staffing **[admin access]**: 2025-02-03 - ongoing
+        - USA Staffing **[admin access]**: 2025-02-03 - ongoing
     -  **OPM** (2025-03-28 to ??) Chief of Staff ES-00
         - Databricks: Databricks **[admin access]**: 2025-02-03 - ongoing
-        - USA Staff: USA Staffing **[admin access]**: 2025-02-03 - ongoing
+        - USA Staffing **[admin access]**: 2025-02-03 - ongoing
 
 # Christopher Sweet
 - category: wrecker
@@ -1043,9 +1046,9 @@
         - OBI: Oracle Business Intelligence: 2025-02-07 - 2025-03-28
         - PRISM: Procurement Request Information System Management: 2025-02-07 - 2025-03-28
         - oneARC: Salesforce oneARC: 2025-02-07 - 2025-03-28
-        - USA Staff: USA Staffing: 2025-02-07 - 2025-03-28
-        - WebTA: WebTA: 2025-02-07 - ongoing
-        - Entra: Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
+        - USA Staffing: 2025-02-07 - 2025-03-28
+        - WebTA: 2025-02-07 - ongoing
+        - Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
     -  **DOL** (2025-02-(13)~ to ??) 
     -  **Education** (2025-02-20 to ??) 
     -  **CFPB** (2025-03-05 to ??) Expert/Consultant
@@ -1057,9 +1060,9 @@
         - OBI: Oracle Business Intelligence: 2025-02-07 - 2025-03-28
         - PRISM: Procurement Request Information System Management: 2025-02-07 - 2025-03-28
         - oneARC: Salesforce oneARC: 2025-02-07 - 2025-03-28
-        - USA Staff: USA Staffing: 2025-02-07 - 2025-03-28
-        - WebTA: WebTA: 2025-02-07 - ongoing
-        - Entra: Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
+        - USA Staffing: 2025-02-07 - 2025-03-28
+        - WebTA: 2025-02-07 - ongoing
+        - Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
     -  **FCC** (2025-04-04 to ??) 
 
 # Joanna Wischer
@@ -1082,7 +1085,7 @@
 - category: enabler
 - positions:
     -  **OPM** (2025-01-30 to ??) [as "OPM-14"] Expert ED-00
-        - USA Perf: USA Performance: 2025-02-07 - ongoing
+        - USA Performance: 2025-02-07 - ongoing
     -  **CFPB** (2025-02-07 to ??) 
 
 # Bridget Youngs

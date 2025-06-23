@@ -989,11 +989,11 @@
   path: "/wreckers/edward-coristine"
   position_ids:
   - gsa-edward-coristine
+  - detail-gsa-usaid-coristine
   - detail-gsa-sba-coristine
   - detail-gsa-dhs-coristine
   - internal-hhs-fema-edward-coristine
   - detail-gsa-state-coristine
-  - detail-gsa-usaid-coristine
   - internal-dhs-cisa-coristine
   - detail-doge-education-coristine
   - detail-gsa-hhs-edward-coristine
@@ -1003,6 +1003,7 @@
   - internal-dhs-uscis-coristine
   event_ids:
   - 6CLFIGtN
+  - 4PFoynfJ
   - 6SWKtlSa
   - 2v67bjVr
   - 3GL4CR65
@@ -1110,6 +1111,8 @@
   - detail-opm-usaid-cromer
   - detail-opm-doj-cromer
   event_ids:
+  - 4PFoynfJ
+  - 1cz7UamT
   - 6hBRdYWA
   system_access: []
   obj_type: Person
@@ -1511,9 +1514,11 @@
   event_ids:
   - 24qgS3WS
   - 6CLFIGtN
+  - 4PFoynfJ
   - WR9Xb7Ar
   - 2Soci5N2
   - 6uQmxIej
+  - 7Bwt01Ed
   - kSAAPBQJ
   - 6aacfCAk
   - 2VmzIcAJ
@@ -3092,6 +3097,7 @@
   - state-lewin-foreign
   event_ids:
   - 6CLFIGtN
+  - wT1UbmGQ
   - 2VmzIcAJ
   - R9JtW4eJ
   - DbgzC9iA
@@ -3102,6 +3108,7 @@
   - avfnFBSY
   - 8mDKCq9a
   - 2JU9Todn
+  - 7dyfN7Hx
   - 3XxWRrBu
   - 7a5wZUiM
   - MXinRonY
@@ -3397,7 +3404,13 @@
   skill:
   category: enabler
   own_page: false
-  blurb:
+  blurb: >-
+    A veteran of the first Trump administration, he was reportedly placed on administrative leave in 2020 for establishing a pattern in a division of USAID
+    that he ran where he would unilaterally freeze or revoke grants that he felt didn't reflect administration priorities. When employees spoke up about
+    it, he would then accuse them of insubordination and attempt to get them suspended or fired. He sounds like a really nice guy, so it's probably not
+    surprising that placing him in charge of USAID this year led to the rapid destruction of the agency. And it's also possibly why he himself was reportedly
+    ousted from the State Department after the damage was complete. It would be comically ironic, if it didn't mean the loss of hundreds of valuable people
+    in USAID and [hundreds of thousands of deaths](https://www.bu.edu/sph/news/articles/2025/tracking-anticipated-deaths-from-usaid-funding-cuts/) worldwide.
   reporting_notes:
   comment:
   govt_exit_date:
@@ -3407,19 +3420,37 @@
   tech_links:
   path: "/people/enabler-staff#peter-marocco"
   position_ids:
+  - state-marocco
+  - usaid-marocco
   - iaf-marocco
+  - usadf-marocco
   event_ids:
+  - 5H2A8pfs
+  - 34gvpQTX
+  - 4PFoynfJ
+  - wT1UbmGQ
+  - 5uaSIHkZ
   - 60ZEU148
   - 3bCDhPDD
   - 7jnfoDik
   - HBHAt2jo
   - kdrdnrsa
   - DnzAaqdz
+  - 7dyfN7Hx
   system_access: []
   obj_type: Person
-  start_date: '2025-02-28'
-  sort_date: '2025-02-28'
-  start_agency: IAF
+  linkified_blurb: >
+    A veteran of the first Trump administration, he was reportedly placed on administrative leave in 2020 for establishing a pattern in a division of <a
+    class="link-hover" href="/agencies/usaid">USAID</a> that he ran where he would unilaterally freeze or revoke grants that he felt didn’t reflect administration
+    priorities. When employees spoke up about it, he would then accuse them of insubordination and attempt to get them suspended or fired. He sounds like
+    a really nice guy, so it’s probably not surprising that placing him in charge of <a class="link-hover" href="/agencies/usaid">USAID</a> this year led
+    to the rapid destruction of the agency. And it’s also possibly why he himself was reportedly ousted from the <a class="link-hover" href="/agencies/state">State
+    Department</a> after the damage was complete. It would be comically ironic, if it didn’t mean the loss of hundreds of valuable people in <a class="link-hover"
+    href="/agencies/usaid">USAID</a> and <a href="https://www.bu.edu/sph/news/articles/2025/tracking-anticipated-deaths-from-usaid-funding-cuts/">hundreds
+    of thousands of deaths</a> worldwide.
+  start_date: '2025-01-20'
+  sort_date: '2025-01-20'
+  start_agency: State
 - name: Antoine McCord
   sort_name: McCord
   slug: antoine-mccord
@@ -3889,6 +3920,7 @@
   - 8vDj2q7P
   - 1rzb08sG
   - kSAAPBQJ
+  - wT1UbmGQ
   - NseepQVk
   - 4jWM1sc2
   - QZojvztE

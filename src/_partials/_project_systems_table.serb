@@ -1,0 +1,38 @@
+<table class="table table-xs sm:table-sm lg:table-md border-4">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Agency</th>
+    <th>Description</th>
+  </tr>
+</thead>
+<tbody>
+{% systems.each do |govt_system| %}
+  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% next unless roles.any? %}
+  <tr>
+    <td class="align-top w-1/4 sm:w-1/3"><a class="link-hover" href="/all/systems#{{ govt_system.id }}">{% if govt_system.acronym %}{{ govt_system.acronym }}: {% end %}{{ govt_system.name }}</a></td>
+    <td class="align-top">
+      {% if govt_system.type == 'ssp' %}
+        <abbr title="Shared Service Provider">SSP</abbr>
+      {% elsif govt_system.type == 'saas' %}
+        <abbr title="Software as a Service">SaaS</abbr>
+      {% elsif govt_system.agency_id %}
+        {{ agency_link(govt_system.agency_id) }}
+      {% end %}</td>
+    <td class="align-top">
+      <div class="italic">{{ govt_system.description }}</div>
+
+      {% roles.each do |role| %}
+      <span class="block sm:inline sm:text-nowrap pr-1">
+      {% if govt_system.type == 'ssp' || govt_system.type == 'saas' %}
+        {{ agency_link(role.agency_id) }}:
+      {% end %}
+      {% if role.name %}{{ person_link(role.name) }}{% elsif role.doge_alias_id %}{{ alias_link(role.doge_alias_id) }}{% end %}
+      {% if role.date_revoked %}({{ render EdtfFormat.new(role.date_granted, :compact) }}-{{ render EdtfFormat.new(role.date_revoked, :compact) }}{% else %}({{ render EdtfFormat.new(role.date_granted, :compact) }}{% end %}{% if role.type != 'read' && role.type != 'unknown' %}, {%@ 'system_access_type', role: role %} access{% end %})</span>
+      {% end %}
+    </td>
+  </tr>
+{% end %}
+</tbody>
+</table>

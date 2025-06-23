@@ -1,0 +1,29 @@
+{
+  "$id": "schemas/theme",
+  "type": "object",
+  "title": "Theme",
+  "description": "DOGE's activities can be described as fitting one of several themes",
+  "properties": {
+    "id": {
+      "description": "The unique ID for the theme",
+      "$ref": "valid_names.json#theme_ids"
+    },
+    "title": {
+      "description": "The title of the theme",
+      "type": "string"
+    },
+    "path": {
+      "description": "The path for the theme",
+      "type": "string"
+    },
+    "blurb": {
+      "description": "A blurb in markdown for the theme",
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "id",
+    "path"
+  ]
+}

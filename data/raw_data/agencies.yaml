@@ -42,7 +42,7 @@
     source_name: Wash. Post
     source: https://www.washingtonpost.com/politics/2025/04/10/trump-presidency-news-tariffs/
     source_title: AmeriCorps plans to slash staff by 50 percent, end public health grant
-    track_id: personnel
+    theme: personnel
     agency: AmeriCorps
     id: E2XtrgBb
   - date: 2025-04-16
@@ -53,7 +53,7 @@
     source_name: Wash. Post
     source: https://www.washingtonpost.com/nation/2025/04/16/americorps-cuts-doge-trump/
     source_title: AmeriCorps staff members placed on leave after DOGE visit
-    track_id: personnel
+    theme: personnel
     agency: AmeriCorps
     id: mdSXmD4G
   - date: 2025-04-25
@@ -65,7 +65,7 @@
     source: https://www.washingtonpost.com/nation/2025/04/25/americorps-grant-cuts-doge/
     source_name: Wash. Post
     source_title: DOGE orders major cut to AmeriCorps funding, imperiling agency's work
-    track_id: spending
+    theme: spending
     agency: AmeriCorps
     id: 3RVlVWPN
 
@@ -89,7 +89,7 @@
     source_name: Economist
     source_title: How DOGE is driving America's public-health guardians mad
     agency: CDC
-    track_id: personnel
+    theme: personnel
     id: RopNFssL
   - date: 2025-01-30
     type: access
@@ -111,7 +111,7 @@
     named:
     - Luke Farritor
     system: APEX
-    track_id: spending
+    theme: spending
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     case_no: 1:25-cv-00339
     agency: CDC
@@ -124,7 +124,7 @@
     source: https://www.washingtonpost.com/health/2025/02/05/doge-health-agencies-labor/
     source_title: DOGE broadens sweep of federal agencies, gains access to health payment systems
     source_name: Wash. Post
-    track_id: personnel
+    theme: personnel
     agency: CDC
     id: jC9DATQu
   - date: 2025-02-15
@@ -134,7 +134,7 @@
       https://www.economist.com/united-states/2025/03/10/how-doge-is-driving-americas-public-health-guardians-mad
     source_title: How DOGE is driving America's public-health guardians mad
     source_name: Economist
-    track_id: personnel
+    theme: personnel
     agency: CDC
     id: Ucq6WnMM
   - date: 2025-02-17
@@ -155,7 +155,7 @@
     source_title: DOGE Has 'God Mode' Access to Government Data
     source_name: Atlantic
     agency: CDC
-    track_id: spending
+    theme: spending
     id: 5aycrTMg
   - date: 2025-02-28
     type: disruption
@@ -178,7 +178,7 @@
     source_name: NBC News
     source_title: CDC is pulling back $11B in Covid funding sent to health departments across the U.S.
     agency: CDC
-    track_id: spending
+    theme: spending
     id: ChWumxau
   - date: 2025-04-01
     type: disruption
@@ -247,7 +247,7 @@
     - Jeremy Lewin
     case_no: 1:25-cv-00339
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    track_id: spending
+    theme: spending
     agency: CMS
     id: 2VmzIcAJ
     source_name: court doc
@@ -273,7 +273,7 @@
     system: HIGLAS
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     case_no: 1:25-cv-00339
-    track_id: spending
+    theme: spending
     agency: CMS
     id: 3MdiqW9w
     source_name: court doc
@@ -296,7 +296,7 @@
     system: CALM
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     case_no: 1:25-cv-00339
-    track_id: spending
+    theme: spending
     agency: CMS
     id: 4wVLWDce
     source_name: court doc
@@ -311,7 +311,7 @@
     system: CALM
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     case_no: 1:25-cv-00339
-    track_id: spending
+    theme: spending
     agency: CMS
     id: 4PyOz3TV
     source_name: court doc
@@ -326,7 +326,7 @@
     system: IDR
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     case_no: 1:25-cv-00339
-    track_id: spending
+    theme: spending
     agency: CMS
     id: 4C16pcax
     source_name: court doc
@@ -343,7 +343,7 @@
     system: CALM
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     case_no: 1:25-cv-00339
-    track_id: spending
+    theme: spending
     agency: CMS
     id: 6R6QCxBv
     source_name: court doc
@@ -359,7 +359,7 @@
     system: IDR
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     case_no: 1:25-cv-00339
-    track_id: spending
+    theme: spending
     agency: CMS
     id: 3vG5MUdU
     source_name: court doc
@@ -375,7 +375,7 @@
     system: IDR
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     case_no: 1:25-cv-00339
-    track_id: spending
+    theme: spending
     agency: CMS
     id: 7OVMm6PD
     source_name: court doc
@@ -7058,11 +7058,49 @@
   slug: usaid
   page_slug: usaid
   events:
-  - date: 2025-01-27
-    type: sighting
+  - date: 2025-01-20
+    type: official
     event: >-
-      A DOGE official first arrives at USAID. Later, senior staff are summoned to a meeting with Gavin
-      Kliger and Luke Farritor.
+      President Trump signs an executive order [Reevaluating and Realigning United States Foreign Aid](/exec-orders#eo-14169)
+      that places a 90-day halt on foreign aid, but it's unclear to USAID staff if that applies to just
+      new disbursements or existing grants.
+    source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+    source_name: NYT
+    agency: USAID
+    id: 1cYzVrAV
+  - date: 2025-01-24
+    type: report
+    event: >-
+      Senior USAID staff meet to explain to unnamed admininstration officials that the slow way in which
+      USAID payments are processed through other agencies led to the appearance that funds allocated before
+      the Trump executive order took effect were directly subverting it. The administration officials
+      seem confident they can explain to Peter Marocco.
+    source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+    source_name: NYT
+    agency: USAID
+    id: 1LD8L7Na
+  - date: 2025-01-27
+    type: onboard
+    event: >-
+      Still convinced that USAID is deliberately committing insubordination against the executive order,
+      Peter Marocco arrives at USAID with DOGE staffers Luke Farritor, Edward Coristine and Clayton Cromer
+      to audit USAID's accounts.
+    named:
+    - Peter Marocco
+    - Luke Farritor
+    - Edward Coristine
+    - Clayton Cromer
+    source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+    source_name: NYT
+    agency: USAID
+    id: 4PFoynfJ
+  - date: 2025-01-27
+    type: disruption
+    event: >-
+      After the arrival, senior staff are summoned to a meeting with Gavin Kliger and Luke Farritor. They
+      then presented agency leadership with a list of 57 employees involved with payments to be placed
+      on immediate administrative leave. The list reportedly made little sense and involved many staff
+      not involved with payments.
     named:
     - Gavin Kliger
     - Luke Farritor
@@ -7074,13 +7112,42 @@
   - date: 2025-01-30
     type: report
     event: >-
-      DOGE discovers that some USAID grants had been paid automatically through HHS despite a declared
-      freeze
-    source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
-    source_title: The Blinding Contempt of the DOGE Bros
-    source_name: Wash. Post
+      DOGE presents their evidence that the employees should be placed on leave based on a single email
+      analysis made by Luke Farritor and sent to other DOGE members. "I could be wrong. My numbers could
+      be off." he writes, but the conclusions are not questioned or checked.
+    named:
+    - Luke Farritor
+    source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+    source_name: NYT
     agency: USAID
-    id: 6qeF82NN
+    id: 7Bwt01Ed
+  - date: 2025-01-30
+    type: disruption
+    event: >-
+      After USAID's director of labor relations pushed back against the evidence presented to suspend
+      and fire the employees, he threatens to report it to the Office of Special Counsel and emails the
+      employees saying he has no grounds to keep them on leave. This leads to Clayton Cromer forcibly
+      removing him from the building by security.
+    named:
+    - Clayton Cromer
+    source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+    source_name: NYT
+    agency: USAID
+    id: 1cz7UamT
+  - date: 2025-01-30
+    type: disruption
+    event: >-
+      Jeremy Lewin and Elon Musk order the acting head of USAID to consent to locking every USAID employee
+      worldwide out of all email and systems. He refuses, stating a sudden loss of access could get aid
+      workers killed.
+    named:
+    - Jeremy Lewin
+    - Elon Musk
+    - Peter Marocco
+    source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+    source_name: NYT
+    agency: USAID
+    id: wT1UbmGQ
   - date: 2025-01-30
     type: disruption
     event: >-
@@ -7097,8 +7164,20 @@
   - date: 2025-02-01
     type: disruption
     event: >-
-      USAID Director of Security and deputy placed on administrative leave for trying to prevent DOGE
-      from accessing personnel files and classified data
+      The acting head of the USAID, Jason Gray, is removed and replaced by Marco Rubio who then names
+      Peter Marocco the Acting Deputy Administrator for the agency, giving him absolute power to force
+      his demands.
+    named:
+    - Peter Marocco
+    source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+    source_name: NYT
+    agency: USAID
+    id: 5uaSIHkZ
+  - date: 2025-02-01
+    type: disruption
+    event: >-
+      USAID Director of Security and deputy placed on administrative leave for reportedly trying to prevent
+      DOGE from accessing personnel files and classified data
     source: >-
       https://www.nbcnews.com/politics/national-security/usaid-security-leaders-removed-refusing-elon-musks-doge-employees-acce-rcna190357
     source_name: Wired
@@ -7111,6 +7190,16 @@
     source_name: Wired
     agency: USAID
     id: K5Ry8Q4a
+  - date: 2025-02-01
+    type: report
+    event: >-
+      DOGE staff wanted to work in the administrator's suite at USAID, but their badges were not properly
+      coded to provide access. The DOGE staff concluded this meant agency staff were keeping them out
+      and could not be trusted.
+    source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+    source_name: NYT
+    agency: USAID
+    id: 48h1YV1D
   - date: 2025-02-01
     type: disruption
     event: Approximately 2000 USAID email accounts are deactivated
@@ -7213,7 +7302,7 @@
     type: disruption
     event: >-
       Employees at USAID receive emails with a "Specific Notice of a RIF" effective in 60 days and signed
-      by Pete Marocco. Employees were also placed on administrative leave.
+      by Peter Marocco. Employees were also placed on administrative leave.
     case_no: 8:25-cv-00462
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.111.1.pdf
     named:
@@ -7256,6 +7345,21 @@
     source_name: NPR
     agency: USAID
     id: 8mDKCq9a
+  - date: 2025-04-08
+    type: disruption
+    event: >-
+      After Rubio and the Trump administration promised to keep many lifesaving humanitarian grant programs
+      active, almost all of them are slashed over a weekend, only for some to be restored later. In one
+      example, Peter Marocco ordered staff to comply with White House orders to stop all funds to Afghanistan.
+      In other cases, Jeremy Lewin appears to have been involved with the alterations. USAID staff are
+      not informed directly but find out from aid organizations whose funds have been cut.
+    named:
+    - Jeremy Lewin
+    - Peter Marocco
+    source: https://www.nytimes.com/2025/04/09/us/politics/usaid-cuts.html
+    source_name: NYT
+    agency: USAID
+    id: 7dyfN7Hx
 
 - name: US Citizenship & Immigration Services
   id: USCIS

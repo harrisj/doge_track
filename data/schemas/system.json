@@ -75,6 +75,10 @@
             "type": "string",
             "format": "uri"
         },
+        "theme": {
+            "description": "If system access is linked to a specific theme",
+            "$ref": "valid_names.json#theme_ids"
+        },
         "serves": {
             "description": "For SaaS tools, a list of agencies that use it as a service",
             "type": "array",
