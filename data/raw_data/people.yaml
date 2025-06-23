@@ -3480,6 +3480,7 @@
     start_date_truth: inferred
     end_date: 2025-04-13
     end_date_truth: reported
+    end_type: fired
     agency: State
     title: Director of Foreign Assistance
     title_type: director
@@ -3493,12 +3494,17 @@
     start_date_truth: reported
     end_date: 2025-03-19
     end_date_truth: reported
+    end_type: resigned
     source: https://www.nytimes.com/2025/03/19/us/politics/usaid-doge-leadership.html
     source_name: NYT
   - id: iaf-marocco
     type: appointed
     start_date: 2025-02-28
     start_date_truth: verified
+    end_date: 2025-04-04
+    end_date_truth: inferred
+    end_type: removed
+    table_note: Assuming removed with Sara Aviel reinstatement by court order
     title: President/CEO
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
     source_name: court doc

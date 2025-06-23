@@ -641,7 +641,7 @@
 - positions:
     -  **State** (2025-01-20 to 2025-04-13) Director of Foreign Assistance
     -  **USAID** (2025-02-01 to 2025-03-19) 
-    -  **IAF** (2025-02-28 to ??) President/CEO
+    -  **IAF** (2025-02-28 to 2025-04-04) President/CEO
     -  **USADF** (2025-02-28 to ??) Acting Chair of the Board
 
 # Antoine McCord
