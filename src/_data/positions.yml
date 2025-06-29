@@ -3093,12 +3093,12 @@
   start_date_event:
   start_source:
   start_source_name:
-  end_date:
-  end_date_truth:
+  end_date: '2025-05-23'
+  end_date_truth: reported
   end_date_event:
   end_source:
   end_source_name:
-  end_type:
+  end_type: replaced
   sort_date: '2025-01-20'
   nte_date: '2026-01-19'
   nte_date_truth: verified
@@ -3124,7 +3124,7 @@
   comment: Several documents have Coristine detailing from GSA, so assuming home agency. Also, not in FOIA release from OPM
   qualifications:
   table_note: Start date and agency inferred from later reporting
-  replaced_by:
+  replaced_by: gsa-edward-coristine-fulltime
   same_as: gsa-edward-coristine
   agency:
     id: GSA
@@ -3167,7 +3167,7 @@
   end_source:
   end_source_name:
   end_type:
-  sort_date: '2026-07-04'
+  sort_date: '2025-02-14'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3191,7 +3191,7 @@
   reimbursement_amount:
   comment: No details, but in NYT roundup
   qualifications:
-  table_note: NYT links him to TSA, but no other info
+  table_note: NYT links him to TSA, but no other info public
   replaced_by:
   same_as:
   agency:
@@ -3236,7 +3236,7 @@
   end_source:
   end_source_name:
   end_type:
-  sort_date: '2026-07-04'
+  sort_date: '2025-02-14'
   nte_date:
   nte_date_truth:
   signed_date:
@@ -3258,7 +3258,7 @@
   source_name: NYT
   reimbursed:
   reimbursement_amount:
-  comment: NYT links him to USCIS, but no other info
+  comment: NYT links him to USCIS, but no other info public
   qualifications:
   table_note:
   replaced_by:
@@ -3924,12 +3924,12 @@
   start_date_event:
   start_source:
   start_source_name:
-  end_date:
-  end_date_truth:
+  end_date: '2025-06-23'
+  end_date_truth: reported
   end_date_event:
   end_source:
   end_source_name:
-  end_type:
+  end_type: resigned
   sort_date: '2025-05-31'
   nte_date:
   nte_date_truth:
@@ -3948,7 +3948,7 @@
   series:
   supervisory:
   office:
-  source: https://www.wired.com/story/big-balls-young-doge-converted-into-full-time-government-employees/
+  source: https://www.wired.com/story/big-balls-coristine-doge-resigned-us-government/
   source_name: Wired
   reimbursed:
   reimbursement_amount:
@@ -3969,6 +3969,64 @@
     path: "/agencies/gsa"
   agency_and_parent:
   - GSA
+  documents: []
+- id: ssa-coristine
+  type: appointed
+  agency_id: SSA
+  name: Edward Coristine
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-06-(23)~
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-06-23'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz: Exact start date not given by SSA spokesperson
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge: true
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://www.wired.com/story/big-balls-social-security-administration/
+  source_name: Wired
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: SSA
+    name: Social Security Administration
+    slug: ssa
+    page_slug: social-security
+    short_name: SSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/social-security"
+  agency_and_parent:
+  - SSA
   documents: []
 - id: detail-nasa-ssa-employee-2
   type: detailed

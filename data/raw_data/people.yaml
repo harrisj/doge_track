@@ -967,6 +967,9 @@
     sort_date: 2025-01-20
     start_date: 2025-01-(20)~
     start_date_truth: inferred
+    end_date: 2025-05-23
+    end_date_truth: reported
+    end_type: replaced
     table_note: Start date and agency inferred from later reporting
     comment: >-
       Several documents have Coristine detailing from GSA, so assuming home agency. Also, not in FOIA
@@ -989,6 +992,7 @@
     supervisory: false
     office: Immediate Office of the Administrator
     same_as: gsa-edward-coristine
+    replaced_by: gsa-edward-coristine-fulltime
     documents:
     - onboard-opm-employee-4
     name: Edward Coristine
@@ -997,8 +1001,9 @@
     type: internal
     from: DHS
     from_truth: inferred
+    sort_date: 2025-02-14
     agency: TSA
-    table_note: NYT links him to TSA, but no other info
+    table_note: NYT links him to TSA, but no other info public
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
     source_name: NYT
@@ -1007,7 +1012,8 @@
     from: DHS
     from_truth: inferred
     agency: USCIS
-    comment: NYT links him to USCIS, but no other info
+    sort_date: 2025-02-14
+    comment: NYT links him to USCIS, but no other info public
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
     source_name: NYT
   - id: detail-gsa-usaid-coristine
@@ -1116,7 +1122,20 @@
     salary: "$167,603 - $195,200"
     start_date: 2025-05-31
     start_date_truth: reported
-    source: https://www.wired.com/story/big-balls-young-doge-converted-into-full-time-government-employees/
+    end_date: 2025-06-23
+    end_date_truth: reported
+    end_type: resigned
+    source: https://www.wired.com/story/big-balls-coristine-doge-resigned-us-government/
+    source_name: Wired
+  - id: ssa-coristine
+    agency: SSA
+    type: appointed
+    sge: true
+    sort_date: 2025-06-23
+    start_date: 2025-06-(23)~
+    start_date_truth: verified
+    fuzz: Exact start date not given by SSA spokesperson
+    source: https://www.wired.com/story/big-balls-social-security-administration/
     source_name: Wired
 
 - name: Scott Coulter
