@@ -4,6 +4,9 @@
 # AmeriCorps
 - slug: americorps
 
+# Bureau of Alcohol, Tobacco and Firearms
+- slug: atf
+
 # Centers for Disease Control and Prevention
 - slug: cdc
 - people:
@@ -772,23 +775,24 @@
   - **OPM-03 (Akash Bobba)** (2025-02-03) (detailed from OPM)
   - **SSA-01 (Akash Bobba)** (2025-02-09) Expert
   - **Leland Dudek** (2025-02-16 - 2025-05-06) Acting Commissioner
-  - **SSA-10 (Ethan Shaotran)** (2025-02-18) (detailed from GSA)
-  - **SSA-02 (Scott Coulter)** (2025-02-18 - 2025-03-23) (detailed from NASA)
   - **SSA-07 (Marko Elez)** (2025-02-18) (detailed from DOL)
   - **SSA-05 (Cole Killian)** (2025-02-18) (detailed from DOGE)
+  - **SSA-02 (Scott Coulter)** (2025-02-18 - 2025-03-23) (detailed from NASA)
+  - **SSA-10 (Ethan Shaotran)** (2025-02-18) (detailed from GSA)
   - **SSA-03 (Aram Moghaddassi)** (2025-02-22) (detailed from DOL)
-  - **SSA-04 (Antonio Gracias)** (2025-02-23) Expert
   - **SSA-09 (Payton Rehling)** (2025-02-23) Expert
+  - **SSA-04 (Antonio Gracias)** (2025-02-23) Expert
   - **SSA-06 (Jon Koval)** (2025-02-23) Expert
   - **Mark Steffensen** (2025-02-25 - 2025-02-27) Senior Advisor
   - **SSA-08 (Nikhil Rajpal)** (2025-02-26) (detailed from OPM)
   - **Mark Steffensen** (2025-02-27) Acting General Counsel
   - **SSA-11** (2025-03-16) Expert
-  - **SSA-02 (Scott Coulter)** (2025-03-24) Chief Information Officer
+  - **SSA-02 (Scott Coulter)** (2025-03-24 - 2025-06-XX) Chief Information Officer
   - **Mike Russo** (2025-03-25) Senior Advisor
   - **Leland Dudek** (2025-05-06)
   - **Frank Bisignano** (2025-05-06) Commissioner
   - **Edward Coristine** (2025-06-(23)~)
+  - **Aram Moghaddassi** (2025-06-XX) Chief Information Officer
 - systems:
     - IRON: IRON Website
         - {sr.doge_alias_id} (Cole Killian) 2025-03-12 - ongoing

@@ -30,6 +30,20 @@
   - 3RVlVWPN
   system_access: []
   obj_type: Agency
+- id: ATF
+  name: Bureau of Alcohol, Tobacco and Firearms
+  slug: atf
+  page_slug: justice
+  short_name: ATF
+  doge_base: false
+  parent_id: DOJ
+  path: "/agencies/justice"
+  children: []
+  position_ids: []
+  event_ids:
+  - 1RnL7eiV
+  system_access: []
+  obj_type: Agency
 - id: CDC
   name: Centers for Disease Control and Prevention
   slug: cdc
@@ -56,6 +70,7 @@
   - 1drAwyyf
   - 50bUuY8i
   - 5Gti8aTf
+  - hcQYCnwZ
   system_access:
   - ice-farritor
   - apex-access
@@ -98,6 +113,7 @@
   - 5Gti8aTf
   - 2qesnQ5E
   - 5Mk65UMZ
+  - hcQYCnwZ
   system_access:
   - higlas-farritor
   - calm-riley
@@ -155,6 +171,7 @@
   - 7kWAzJ0K
   - 3zmjW3zT
   - HSNBGnh4
+  - 7lpMwcEg
   system_access:
   - google-noaa-rajpal
   obj_type: Agency
@@ -393,6 +410,8 @@
   - Uasqbriy
   - 963b8pxz
   - 6YIY3WIh
+  - 7lpMwcEg
+  - CqrtsKU5
   system_access: []
   obj_type: Agency
 - id: DOI
@@ -612,6 +631,7 @@
   - b3H44hoj
   - VXSiUz7f
   - 1OvaP6aP
+  - 6v58lA7s
   - 1tBAJ7d7
   - 395o34d5
   - 47a5ugPC
@@ -639,6 +659,7 @@
   parent_id:
   path: "/agencies/justice"
   children:
+  - ATF
   - FBI
   position_ids:
   - detail-opm-fbi-monroe
@@ -658,6 +679,7 @@
   - eB4QfKtt
   - kaxNhRgZ
   - 47a5ugPC
+  - 1RnL7eiV
   system_access:
   - ecas-hoffman
   - ecas-elez
@@ -753,6 +775,8 @@
   - QL984GQg
   - Hh8waXmD
   - Sgw2gk7i
+  - 6McXgDX4
+  - hcQYCnwZ
   system_access:
   - pms-collins
   - hrconnect-dol-collins
@@ -1197,6 +1221,7 @@
   - RXwHP9h5
   - 5Gti8aTf
   - fIZjw7yF
+  - hcQYCnwZ
   system_access: []
   obj_type: Agency
 - id: GSA
@@ -1283,6 +1308,7 @@
   - 1p5jvsJN
   - 6LLgEiFQ
   - 7P6wvu1k
+  - 1nJG7vMh
   system_access: []
   obj_type: Agency
 - id: GAO
@@ -1414,6 +1440,10 @@
   - 2qesnQ5E
   - 5Mk65UMZ
   - fIZjw7yF
+  - hcQYCnwZ
+  - hcQYCnwZ
+  - hcQYCnwZ
+  - hcQYCnwZ
   system_access:
   - pms-admin
   - era-farritor
@@ -1488,6 +1518,7 @@
   - 4jNjj3vF
   - AsjWbK8C
   - Q4hkKRZT
+  - 1nJG7vMh
   system_access:
   - hems-mirski
   - hudcaps-mirski
@@ -1807,6 +1838,7 @@
   event_ids:
   - CvdXhiXD
   - 7kWAzJ0K
+  - 7lpMwcEg
   system_access:
   - google-noaa-rajpal
   obj_type: Agency
@@ -1875,6 +1907,7 @@
   event_ids:
   - UyobwqMu
   - meBB4VsV
+  - 1nJG7vMh
   system_access: []
   obj_type: Agency
 - id: NSA
@@ -2154,13 +2187,13 @@
   - detail-opm-ssa-opm-3
   - ssa-employee-1
   - ssa-dudek-commissioner
-  - detail-gsa-ssa-employee-10
-  - detail-nasa-ssa-employee-2
   - detail-dol-ssa-employee-7
   - ssa-employee-5
+  - detail-nasa-ssa-employee-2
+  - detail-gsa-ssa-employee-10
   - detail-dol-ssa-employee-3
-  - ssa-antonio-gracias
   - ssa-employee-9
+  - ssa-antonio-gracias
   - ssa-employee-6
   - ssa-steffensen
   - detail-opm-ssa-8
@@ -2171,6 +2204,7 @@
   - ssa-dudek
   - ssa-bisignano
   - ssa-coristine
+  - ssa-cio-moghaddassi
   event_ids:
   - 2AXaug8A
   - FP9n4cfD
@@ -2235,6 +2269,7 @@
   - 5RHujvBq
   - 7hXwZjX4
   - 5eFonNQd
+  - 6yPCBgrt
   system_access:
   - numident-bobba
   - iron-ssa-5
@@ -2524,6 +2559,7 @@
   - ja9gwcUS
   - 520nNb7r
   - 7C9WQbvz
+  - 5h6D4Qhp
   system_access: []
   obj_type: Agency
 - id: USAGM

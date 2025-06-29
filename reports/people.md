@@ -199,7 +199,7 @@
 - category: enabler
 - positions:
     -  **SSA** (2025-02-18 to 2025-03-23) [as "SSA-02"] 
-    -  **SSA** (2025-03-24 to ??) [as "SSA-02"] **Chief Information Officer**
+    -  **SSA** (2025-03-24 to 2025-06-XX) [as "SSA-02"] **Chief Information Officer**
 
 # Clayton Cromer
 - category: support
@@ -709,6 +709,7 @@
         - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
         - CALM: CMS Acquisition Lifecycle Management System: 2025-03-05 - ongoing
         - IDR: Integrated Data Repository: 2025-03-05 - ongoing
+    -  **SSA** (2025-06-XX to ??) **Chief Information Officer**
     -  **DHS**  
     -  **CBP**  
     -  **ICE**  

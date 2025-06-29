@@ -69,6 +69,23 @@
     agency: AmeriCorps
     id: 3RVlVWPN
 
+- name: Bureau of Alcohol, Tobacco and Firearms
+  id: ATF
+  slug: atf
+  parent_id: DOJ
+  page_slug: justice
+  short_name: ATF
+  events:
+  - date: 2025-06-27
+    type: sighting
+    event: >-
+      DOGE staff are reportedly detailed to work with the ATF General Counsel on revising or eliminating
+      over 50 regulations by July 4th. This would likely make it easier to purchase firearms.
+    source: https://www.washingtonpost.com/national-security/2025/06/27/atf-doge-regulations-cuts-guns/
+    source_name: Wash. Post
+    agency: ATF
+    id: 1RnL7eiV
+
 - name: Centers for Disease Control and Prevention
   id: CDC
   slug: cdc
@@ -1359,6 +1376,17 @@
     source: https://defensescoop.com/2025/05/27/dod-doge-instructions-survey-end-5-bullet-points-emails/
     agency: DOD
     id: 6YIY3WIh
+  - date: 2025-06-27
+    type: disruption
+    event: >-
+      The head of acquisition for the Department of Defense orders that all new contract and task orders
+      for IT consulting, management services, and advisory and assistance support must be approved by
+      the DOGE team embedded within the DOD before they will be granted.
+    source: >-
+      https://www.washingtontechnology.com/contracts/2025/06/doge-now-has-approval-authority-defense-it-consulting-contracts/406369/
+    source_name: Wash. Tech.
+    agency: DOD
+    id: CqrtsKU5
 
 - name: Department of the Interior
   id: DOI
@@ -2380,6 +2408,15 @@
     source_name: FedScoop
     agency: DHS
     id: 1OvaP6aP
+  - date: 2025-05-12
+    agency: DHS
+    type: access
+    event: >-
+      The Department of Homeland Security issues a subpoena to the state of California and Los Angeles
+      County to demand records from a cash assistance program for immigrants (CAPI)
+    source: https://www.cbsnews.com/news/homeland-security-subpoenas-california-immigrant-assistance-program/
+    source_name: CBS News
+    id: 6v58lA7s
   - date: 2025-05-23
     type: disruption
     event: >-
@@ -2768,6 +2805,18 @@
     source_name: Politico
     agency: DOL
     id: Sgw2gk7i
+  - date: 2025-06-25
+    type: disruption
+    event: >-
+      Jerome Powell, the Chair of the Federal Reserve, expresses public concerns that DOGE-directed staffing
+      cuts at the Bureau of Labor Statistics have started to affect the quality of economic data used
+      for forecasting and decisions. In a recent survey on prices, the rate of imputed (or guessed) prices
+      jumped from 10% to 30% due to staffing shortfalls.
+    agency: DOL
+    source: >-
+      https://www.businessinsider.com/econmic-data-jerome-powell-bls-labor-market-inflation-cpi-economy-2025-6
+    source_name: Business Insider
+    id: 6McXgDX4
 
 - name: Department of the Treasury
   id: Treasury
@@ -6837,6 +6886,21 @@
     source: https://www.wired.com/story/big-balls-social-security-administration/
     source_name: Wired
     id: 5eFonNQd
+  - date: 2025-06-28
+    agency: SSA
+    type: disruption
+    event: >-
+      According to a page update on the Federal CIO site, Aram Moghaddassi is named the new CIO of the
+      Social Security Administration, making him the third DOGE-affiliated CIO in a row at the agency.
+      This follows on reports that he had been acting in a co-CIO role with former CIO Mike Russo. He
+      replaces Scott Coulter who was the CIO as recently as late May.
+    source: https://fedscoop.com/social-security-administration-doge-chief-information-officer/
+    source_name: FedScoop
+    named:
+    - Aram Moghaddassi
+    - Mike Russo
+    - Scott Coulter
+    id: 6yPCBgrt
 
 - name: State Department
   id: State
@@ -7891,6 +7955,24 @@
     source_name: ProPublica
     agency: VA
     id: 7C9WQbvz
+  - date: 2025-06-25
+    agency: VA
+    type: oversight
+    event: >-
+      Democratic Congressman Mark Takano sends an angry letter to Secretary Collins of the VA demanding
+      answers about DOGE activities including if they have installed spyware on agency machines, if they
+      have been piloting AI, and if they have accessed medical records. He also asks for detailed information
+      on DOGE staff at the agency.
+    named:
+    - Justin Fulcher
+    - Sahil Lavingia
+    - Christopher Roussos
+    - Payton Rehling
+    - Cary Volpert
+    - Jon Koval
+    source: https://www.stripes.com/veterans/2025-06-27/veterans-spyware-doge-18265276.html
+    source_name: Stars and Stripes
+    id: 5h6D4Qhp
 
 - name: US Agency for Global Media
   id: USAGM

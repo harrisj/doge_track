@@ -4128,12 +4128,12 @@
   start_date_event:
   start_source:
   start_source_name:
-  end_date:
+  end_date: 2025-06-XX
   end_date_truth:
   end_date_event:
   end_source:
   end_source_name:
-  end_type:
+  end_type: removed
   sort_date: '2025-03-24'
   nte_date:
   nte_date_truth:
@@ -4158,7 +4158,7 @@
   reimbursement_amount:
   comment:
   qualifications:
-  table_note:
+  table_note: Was listed as CIO on May 30, but Aram took over in June
   replaced_by:
   same_as:
   agency:
@@ -13978,7 +13978,7 @@
   reimbursement_amount: "$71,000 per quarter"
   comment:
   qualifications:
-  table_note:
+  table_note: Unclear if this ended bc named to CIO
   replaced_by:
   same_as:
   agency:
@@ -14160,6 +14160,64 @@
   agency_and_parent:
   - CMS
   - HHS
+  documents: []
+- id: ssa-cio-moghaddassi
+  type: promotion
+  agency_id: SSA
+  name: Aram Moghaddassi
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-06-XX
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-06-28'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Chief Information Officer
+  title_type: cio
+  series:
+  supervisory: true
+  office:
+  source: https://fedscoop.com/social-security-administration-doge-chief-information-officer/
+  source_name: FedScoop
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: SSA
+    name: Social Security Administration
+    slug: ssa
+    page_slug: social-security
+    short_name: SSA
+    doge_base: true
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/social-security"
+  agency_and_parent:
+  - SSA
   documents: []
 - id: opm-justin-monroe
   type: appointed

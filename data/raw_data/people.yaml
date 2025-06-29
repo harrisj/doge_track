@@ -1180,6 +1180,9 @@
     title_type: cio
     start_date: 2025-03-24
     start_date_truth: verified
+    end_date: 2025-06-XX
+    end_type: removed
+    table_note: Was listed as CIO on May 30, but Aram took over in June
     supervisory: true
     documents:
     - onboard-ssa-employee-2
@@ -3837,6 +3840,7 @@
     start_date_truth: verified
     reimbursed: true
     reimbursement_amount: "$71,000 per quarter"
+    table_note: Unclear if this ended bc named to CIO
     documents:
     - detail-20250222-dol-ssa-employee-3
     - onboard-ssa-employee-3
@@ -3861,6 +3865,17 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     source_name: court doc
     comment: Reported access to system same day as start of detail to HHS
+  - id: ssa-cio-moghaddassi
+    type: promotion
+    agency: SSA
+    sort_date: 2025-06-28
+    start_date: 2025-06-XX
+    start_date_truth: reported
+    source: https://fedscoop.com/social-security-administration-doge-chief-information-officer/
+    source_name: FedScoop
+    title: Chief Information Officer
+    title_type: cio
+    supervisory: true
 
 - name: Justin Monroe
   sort_name: Monroe
