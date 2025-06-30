@@ -1,0 +1,73 @@
+# frozen_string_literal: true
+
+require 'yaml'
+require 'date'
+
+# git log -p --since="2025-06-10" --until="2025-06-12" ./data/raw_data/people.yaml | grep 'id:'
+# git log -p --since="2025-06-10" --until="2025-06-12" ./data/raw_data/agencies.yaml | grep 'id:'
+
+def diff_people(changes)
+  changes.each do |rec|
+    puts "git log -p --since=\"#{(rec[:start] - 1).iso8601}\" --until=\"#{rec[:end].iso8601}\" ./data/raw_data/people.yaml"
+
+    log_output = `git log -p --since="#{(rec[:start] - 1).iso8601}" --until="#{rec[:end].iso8601}" ./data/raw_data/people.yaml`
+    rec[:positions] = []
+    rec[:names] = []
+    log_output.each_line do |l|
+      if l =~ /^\+\s+- id: /
+        id = l.gsub(/^\+\s+- id: /, '').strip
+        rec[:positions].append(id)
+      elsif l =~ /^\+- name: /
+        name = l.gsub(/^\+- name: /, '').strip
+        rec[:names].append(name)
+      end
+    end
+
+    rec[:positions].uniq!
+    rec[:names].uniq!
+  end
+end
+
+def diff_events(changes)
+  changes.each do |rec|
+    rec[:agencies] = []
+    rec[:events] = []
+
+    ['agencies.yaml', 'interagency.yaml'].each do |file|
+      log_output = `git log -p --since="#{(rec[:start] - 1).iso8601}" --until="#{rec[:end].iso8601}" ./data/raw_data/#{file}`
+      log_output.each_line do |l|
+        next unless l =~ /^\+\s+id: /
+
+        id = l.gsub(/^\+\s+id: /, '').strip
+
+        if id.size == 8
+          rec[:events].append(id)
+        else
+          rec[:agencies].append(id)
+        end
+      end
+    end
+
+    rec[:agencies].uniq!
+    rec[:events].uniq!
+  end
+end
+
+changes = []
+start_of_week = Date.today - Date.today.wday
+end_of_week = start_of_week + 6
+
+while start_of_week > Date.parse('2025-05-10')
+  changes.append({ start: start_of_week, end: end_of_week })
+  start_of_week -= 7
+  end_of_week -= 7
+end
+
+diff_people(changes)
+diff_events(changes)
+
+changes_file = File.join(File.dirname(__FILE__), '..', '..', 'src', '_data', 'changes.yml')
+File.open(changes_file, 'w') do |file|
+  out_yaml = YAML.dump(changes, line_width: 150, stringify_names: true, header: false)
+  file.write(out_yaml)
+end

@@ -1,4 +1,8 @@
-{% num_cols = 2 
+{% 
+require 'edtf'
+import 'macros'
+
+num_cols = 2 
 agency_col = false if agency_col.nil?
 icon_col = true if icon_col.nil?
 month_separator = true if month_separator.nil?

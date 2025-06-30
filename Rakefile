@@ -131,8 +131,13 @@ namespace :generate do
     ruby "#{SCRIPTS_DIR}/generate_api_json.rb"
   end
 
+  desc 'The changes file'
+  task :changed do
+    ruby "#{SCRIPTS_DIR}/generate_changed.rb"
+  end
+
   desc 'Run all generate tasks'
-  task all: %i[reports data_yaml]
+  task all: %i[reports data_yaml changed]
 end
 
 desc 'Run generate tasks for the content'
