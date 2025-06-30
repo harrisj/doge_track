@@ -6,9 +6,38 @@ require 'date'
 # git log -p --since="2025-06-10" --until="2025-06-12" ./data/raw_data/people.yaml | grep 'id:'
 # git log -p --since="2025-06-10" --until="2025-06-12" ./data/raw_data/agencies.yaml | grep 'id:'
 
+def load_change_log(changes)
+  change_log_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'change_log.yaml')
+  change_log = YAML.unsafe_load_file(change_log_file, symbolize_names: true)
+  changes.each do |rec|
+    log_rec = change_log.find { |x| x[:week] == rec[:start] }
+    rec[:notes] = log_rec[:notes] if log_rec
+  end
+end
+
+def count_changed(changes)
+  changes.each do |rec|
+    rec[:added] = 0
+    rec[:deleted] = 0
+
+    log_output = `git log -p --since="#{(rec[:start] - 1).iso8601}" --until="#{rec[:end].iso8601}" -q --numstat`
+
+    log_output.each_line do |l|
+      next unless (match = l.match(/^(\d+)\s+(\d+)\s+([^\s]+)$/))
+
+      added, deleted, path = match.captures
+
+      next unless path =~ /src/ && path !~ /_data/
+
+      rec[:added] += added.to_i
+      rec[:deleted] += deleted.to_i
+    end
+  end
+end
+
 def diff_people(changes)
   changes.each do |rec|
-    puts "git log -p --since=\"#{(rec[:start] - 1).iso8601}\" --until=\"#{rec[:end].iso8601}\" ./data/raw_data/people.yaml"
+    # puts "git log -p --since=\"#{(rec[:start] - 1).iso8601}\" --until=\"#{rec[:end].iso8601}\" ./data/raw_data/people.yaml"
 
     log_output = `git log -p --since="#{(rec[:start] - 1).iso8601}" --until="#{rec[:end].iso8601}" ./data/raw_data/people.yaml`
     rec[:positions] = []
@@ -63,6 +92,8 @@ while start_of_week > Date.parse('2025-05-10')
   end_of_week -= 7
 end
 
+load_change_log(changes)
+count_changed(changes)
 diff_people(changes)
 diff_events(changes)
 
