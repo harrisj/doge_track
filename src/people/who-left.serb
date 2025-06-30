@@ -103,7 +103,7 @@ Here are the current positions which have NTE dates and have not ended (either t
       <td class="align-top">{{ person_link(pos.person) }}</td>
       <td class="align-top hidden sm:table-cell"><span class="sm:text-nowrap">{{ EdtfFormat.new(pos.start_date, :compact_year) | raw }}</span></td>
       <td class="align-top"><span class="sm:text-nowrap {% if Date.edtf(pos.nte_date) < Date.today + 90 %}font-bold{% end %}">{{ EdtfFormat.new(pos.nte_date, :compact_year) | raw }}</span></td>
-      <td class="align-top">{{ position_summary(pos) | md }}</td>
+      <td class="align-top">{{ position_summary(pos) | md | strip_p }}</td>
     </tr>
   {% end %}
   </tbody>
