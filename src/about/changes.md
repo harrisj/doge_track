@@ -13,8 +13,8 @@ This is not a definitive list (for that you can always do diffs on the [GitHub r
 <div class="collapse bg-base-100 border border-base-300">
   <input type="radio" name="change-log-accordion"/>
 
-  <div class="collapse-title flex justify-between">
-    <div class="font-semibold h2">Week of {{ rec.start }}</div>
+  <div class="collapse-title flex justify-between leading-none items-center">
+    <div class="font-semibold text-xl">Week of {{ rec.start }}</div>
     <div class="font-mono"><span class="text-success">+{{rec.added}}</span> <span class="text-error">-{{rec.deleted}}</span></div>
   </div>
   <div class="collapse-content">
@@ -31,7 +31,7 @@ This is not a definitive list (for that you can always do diffs on the [GitHub r
 {% if rec.names.any? %}
 <h2 class="text-lg mt:2">Names Added</h2>
 
-{% rec.names.each_with_index do |name, i| %}{% if i > 0 %}, {% end %}{{ person_link(name) }}{% end %}
+<p>{% rec.names.each_with_index do |name, i| %}{% if i > 0 %}, {% end %}{{ person_link(name) }}{% end %}</p>
 {% end %}
 
 {% if rec.positions.any? %}
