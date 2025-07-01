@@ -469,7 +469,7 @@
     agency: Commerce
     id: 7kf2GFmh
   - date: 2025-03-28
-    type: action
+    type: sighting
     event: >-
       Michael Grimes conducts DOGE-style interviews with each member of the staff in the Chips Program
       Office
@@ -1701,7 +1701,7 @@
     agency: DOGE
     id: TfWVwUjM
   - date: 2025-01-17
-    type: action
+    type: sighting
     event: >-
       The public calendar of Riley Sennott mentions a 30-minute "SGE Ethics Discussion" meeting with other
       new DOGE members Derek Geissler, Brooks Morgan and Conor Fennessy. SGE stands for Special Government
@@ -3991,6 +3991,18 @@
     agency: HHS
     source_name: The San Francisco Chronicle
     id: mXTHtBac
+  - date: 2025-04-11
+    type: disruption
+    event: >-
+      Luke Farritor uses his admin access to lock out all government officials at multiple agencies from
+      using grants.gov to issue new grants. Instead, all grants must not be sent to a new email address
+      which will be reviewed by DOGE before grants can be posted.
+    named:
+    - Luke Farritor
+    source: https://www.washingtonpost.com/politics/2025/04/11/doge-controls-federal-grant-postings/
+    source_name: Wash. Post
+    agency: HHS
+    id: 3J3t5FxO
   - date: 2025-05-14
     type: official
     event: >-
@@ -4003,6 +4015,20 @@
     source: https://www.washingtonpost.com/health/2025/05/14/rfk-jr-congress-testimony/
     source_name: Wash. Post
     id: obOu9SpT
+  - date: 2025-06-26
+    type: official
+    event: >-
+      In an email to agency partners, the operators of grants.gov declare that the revised mechanism added
+      in April that routed all Notices of Funding Opportunities (NOFOs) through a DOGE email address has
+      been reversed. Instead, agencies are to return to using the tool like that did previously. This
+      doesn't necessarily mean that DOGE or political appointees will not be reviewing grants, but they
+      have no longer locked other users out of the system.
+    linked:
+    - Luke Farritor
+    agency: HHS
+    source: https://www.washingtonpost.com/politics/2025/06/27/doge-loses-control-federal-grants/
+    source_name: Wash. Post
+    id: 5FtSVXWx
 
 - name: Housing and Urban Development
   id: HUD
@@ -5495,7 +5521,7 @@
     source_title: Here Are the Job Titles and Salary Ranges of Some DOGE Staffers
     id: 4F5kEan6
   - date: 2025-01-20
-    type: action
+    type: sighting
     event: The DOGE team moves into a secure office within OPM, installing sofa beds and armed security
     source: >-
       https://www.reuters.com/world/us/musk-aides-lock-government-workers-out-computer-systems-us-agency-sources-say-2025-01-31/
@@ -6901,6 +6927,17 @@
     - Mike Russo
     - Scott Coulter
     id: 6yPCBgrt
+  - date: 2025-06-30
+    agency: SSA
+    type: disruption
+    event: >-
+      Due to staffing cuts, there is now an average of 1 SSA worker per 1480 benficiaries, or almost triple
+      the ratio in 1967. This is a direct result of DOGE-driven cuts reducing agency staffing by 7000
+      since January
+    source: >-
+      https://www.afge.org/article/due-to-doge-cuts-1-ssa-employee-is-expected-to-serve-1480-beneficiaries/
+    source_name: AFGE
+    id: 3y58APCa
 
 - name: State Department
   id: State
@@ -7448,6 +7485,16 @@
     source_name: NYT
     agency: USAID
     id: 7dyfN7Hx
+  - date: 2025-07-01
+    type: disruption
+    event: >-
+      Under the direction of Marco Rubio, USAID officially ceases all operations for foreign aid. A study
+      in the medical journal Lancet suggests that the end of USAID will lead to [14 million deaths worldwide
+      by 2030, with 4.5 million of those being children under that age of 5](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01186-9/fulltext).
+    source: https://www.cnn.com/2025/07/01/politics/us-aid-elimination-study-14-million-deaths
+    source_name: CNN
+    agency: USAID
+    id: 1BnDlVM6
 
 - name: US Citizenship & Immigration Services
   id: USCIS
@@ -7840,7 +7887,7 @@
     agency: USPS
     id: iLjg4Kvb
   - date: 2025-03-24
-    type: action
+    type: sighting
     event: >-
       Acting Postmaster General Doug Tulino met with the DOGE team embedded there (Ethan Shaotran and
       Alexander Simonpour), reportedly to discuss ethics.
@@ -7854,7 +7901,7 @@
     agency: USPS
     id: 6zWL2hm3
   - date: 2025-04-XX
-    type: action
+    type: sighting
     event: >-
       Ethan Shaotran and Alexander Simonpour meet again with the acting Postmaster General as well as
       other senior staff. This includes a meeting discussing an  as some other senior staff in USPS to

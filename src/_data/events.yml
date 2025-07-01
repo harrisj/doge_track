@@ -478,7 +478,7 @@
     <a class="link-hover" href="/people/support-team#noah-peters">Noah Peters</a> starts working on two memos around temporary authorities for Schedule
     C and another on probationary employees and admininstrative leave. These are to be issued on January 20th.
 - id: CPQe7omt
-  type: action
+  type: sighting
   date: '2025-01-17'
   sort_date: '2025-01-17'
   time:
@@ -832,7 +832,7 @@
     Multiple <a class="link-hover" href="/agencies/white-house">DOGE</a> staff start working at <a class="link-hover" href="/agencies/opm">OPM</a> within
     the Director’s office
 - id: BbMpQoge
-  type: action
+  type: sighting
   date: '2025-01-20'
   sort_date: '2025-01-20'
   time:
@@ -13249,7 +13249,7 @@
 
     '
 - id: 6zWL2hm3
-  type: action
+  type: sighting
   date: '2025-03-24'
   sort_date: '2025-03-24'
   time:
@@ -13931,7 +13931,7 @@
     the SSA’s Enterprise Data Warehouse (EDW) system. He claims <a class="link-hover" href="/agencies/white-house">DOGE</a> staff are being granted only
     the minimum levels of schema access required.
 - id: dqDnwCxi
-  type: action
+  type: sighting
   date: '2025-03-28'
   sort_date: '2025-03-28'
   time:
@@ -15208,7 +15208,7 @@
     Defendants in the <a class="link-hover" href="/agencies/independent#eo1">USIP</a> lawsuit learn that <a class="link-hover" href="/agencies/gsa">GSA</a>
     will be leasing the building to the <a class="link-hover" href="/agencies/labor">Department of Labor</a>
 - id: 5GVJ0gVG
-  type: action
+  type: sighting
   date: 2025-04-XX
   sort_date: '2025-04-01'
   time:
@@ -16987,6 +16987,39 @@
   linkified_text: >
     In a legal filing, the government describes the <a class="link-hover" href="/agencies/white-house">DOGE</a> team at Treasury of consisting of six people,
     some previously unknown
+- id: 3J3t5FxO
+  type: disruption
+  date: '2025-04-11'
+  sort_date: '2025-04-11'
+  time:
+  text: >-
+    Luke Farritor uses his admin access to lock out all government officials at multiple agencies from using grants.gov to issue new grants. Instead, all
+    grants must not be sent to a new email address which will be reviewed by DOGE before grants can be posted.
+  fuzz:
+  comment:
+  source: https://www.washingtonpost.com/politics/2025/04/11/doge-controls-federal-grant-postings/
+  source_title:
+  source_name: Wash. Post
+  case_no:
+  system_id:
+  theme:
+  names:
+  - Luke Farritor
+  agency_ids:
+  - HHS
+  alias_ids: []
+  names_aliases:
+  - name: Luke Farritor
+    slug: luke-farritor
+    sort_name: Farritor
+    category: wrecker
+  agencies_parents:
+  - HHS
+  obj_type: Event
+  linkified_text: >
+    <a class="link-hover" href="/wreckers/luke-farritor">Luke Farritor</a> uses his admin access to lock out all government officials at multiple agencies
+    from using grants.gov to issue new grants. Instead, all grants must not be sent to a new email address which will be reviewed by <a class="link-hover"
+    href="/agencies/white-house">DOGE</a> before grants can be posted.
 - id: jY8TJybS
   type: legal
   date: '2025-04-11'
@@ -21822,6 +21855,41 @@
     and the Commissioner for <a class="link-hover" href="/agencies/housing">HUD</a> announce that they will be kicking out the <a class="link-hover" href="/agencies/independent#nsf">National
     Science Foundation</a> (NSF) from its Virginia headquarters and moving <a class="link-hover" href="/agencies/housing">HUD</a> there. There are details
     provided on where <a class="link-hover" href="/agencies/independent#nsf">NSF</a> is expected to relocate to.
+- id: 5FtSVXWx
+  type: official
+  date: '2025-06-26'
+  sort_date: '2025-06-26'
+  time:
+  text: >-
+    In an email to agency partners, the operators of grants.gov declare that the revised mechanism added in April that routed all Notices of Funding Opportunities
+    (NOFOs) through a DOGE email address has been reversed. Instead, agencies are to return to using the tool like that did previously. This doesn't necessarily
+    mean that DOGE or political appointees will not be reviewing grants, but they have no longer locked other users out of the system.
+  fuzz:
+  comment:
+  source: https://www.washingtonpost.com/politics/2025/06/27/doge-loses-control-federal-grants/
+  source_title:
+  source_name: Wash. Post
+  case_no:
+  system_id:
+  theme:
+  names:
+  - Luke Farritor
+  agency_ids:
+  - HHS
+  alias_ids: []
+  names_aliases:
+  - name: Luke Farritor
+    slug: luke-farritor
+    sort_name: Farritor
+    category: wrecker
+  agencies_parents:
+  - HHS
+  obj_type: Event
+  linkified_text: >
+    In an email to agency partners, the operators of grants.gov declare that the revised mechanism added in April that routed all Notices of Funding Opportunities
+    (NOFOs) through a <a class="link-hover" href="/agencies/white-house">DOGE</a> email address has been reversed. Instead, agencies are to return to using
+    the tool like that did previously. This doesn’t necessarily mean that <a class="link-hover" href="/agencies/white-house">DOGE</a> or political appointees
+    will not be reviewing grants, but they have no longer locked other users out of the system.
 - id: 7lpMwcEg
   type: disruption
   date: '2025-06-26'
@@ -21991,3 +22059,58 @@
     of the <a class="link-hover" href="/agencies/social-security">Social Security Administration</a>, making him the third DOGE-affiliated CIO in a row
     at the agency. This follows on reports that he had been acting in a co-CIO role with former CIO <a class="link-hover" href="/people/enabler-staff#mike-russo">Mike
     Russo</a>. He replaces <a class="link-hover" href="/people/enabler-staff#scott-coulter">Scott Coulter</a> who was the CIO as recently as late May.
+- id: 3y58APCa
+  type: disruption
+  date: '2025-06-30'
+  sort_date: '2025-06-30'
+  time:
+  text: >-
+    Due to staffing cuts, there is now an average of 1 SSA worker per 1480 benficiaries, or almost triple the ratio in 1967. This is a direct result of
+    DOGE-driven cuts reducing agency staffing by 7000 since January
+  fuzz:
+  comment:
+  source: https://www.afge.org/article/due-to-doge-cuts-1-ssa-employee-is-expected-to-serve-1480-beneficiaries/
+  source_title:
+  source_name: AFGE
+  case_no:
+  system_id:
+  theme:
+  names: []
+  agency_ids:
+  - SSA
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - SSA
+  obj_type: Event
+  linkified_text: >
+    Due to staffing cuts, there is now an average of 1 <a class="link-hover" href="/agencies/social-security">SSA</a> worker per 1480 benficiaries, or almost
+    triple the ratio in 1967. This is a direct result of DOGE-driven cuts reducing agency staffing by 7000 since January
+- id: 1BnDlVM6
+  type: disruption
+  date: '2025-07-01'
+  sort_date: '2025-07-01'
+  time:
+  text: >-
+    Under the direction of Marco Rubio, USAID officially ceases all operations for foreign aid. A study in the medical journal Lancet suggests that the
+    end of USAID will lead to [14 million deaths worldwide by 2030, with 4.5 million of those being children under that age of 5](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01186-9/fulltext).
+  fuzz:
+  comment:
+  source: https://www.cnn.com/2025/07/01/politics/us-aid-elimination-study-14-million-deaths
+  source_title:
+  source_name: CNN
+  case_no:
+  system_id:
+  theme:
+  names: []
+  agency_ids:
+  - USAID
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - USAID
+  obj_type: Event
+  linkified_text: >
+    Under the direction of Marco Rubio, <a class="link-hover" href="/agencies/usaid">USAID</a> officially ceases all operations for foreign aid. A study
+    in the medical journal Lancet suggests that the end of <a class="link-hover" href="/agencies/usaid">USAID</a> will lead to <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01186-9/fulltext">14
+    million deaths worldwide by 2030, with 4.5 million of those being children under that age of 5</a>.

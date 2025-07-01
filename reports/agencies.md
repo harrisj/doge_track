@@ -689,7 +689,7 @@
   - **OPM-05 (Gavin Kliger)** (2025-02-18) Senior Advisor to the Director for Information Technology
   - **Joe Gebbia** (2025-02-18) Expert
   - **Tarak Makecha** (2025-02-28) Senior Advisor
-  - **Amanda Scales** (2025-03-28 - 2025-05-29) Senior Advisor
+  - **Amanda Scales** (2025-03-28 - 2025-03-(29)?) Senior Advisor
   - **James Sullivan** (2025-03-28) Chief of Staff
   - **Mike Gonzalez** (2025-03-XX) Senior Advisor
 - systems:

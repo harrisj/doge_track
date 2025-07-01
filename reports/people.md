@@ -855,7 +855,7 @@
         - Databricks: Databricks **[admin access]**: 2025-01-28 - ongoing
         - STAMP: STAMP: 2025-01-31 - ongoing
         - Databricks: Databricks **[admin access]**: 2025-02-03 - ongoing
-    -  **OPM** (2025-03-28 to 2025-05-29) Senior Advisor ES-00
+    -  **OPM** (2025-03-28 to 2025-03-(29)?) Senior Advisor ES-00
         - website: Agency Website: 2025-01-20 - ongoing
         - github: GitHub: 2025-01-20 - ongoing
         - USA Staffing **[admin access]**: 2025-01-20 - ongoing
