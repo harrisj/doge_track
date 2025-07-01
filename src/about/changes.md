@@ -15,7 +15,7 @@ This is not a definitive list (for that you can always do diffs on the [GitHub r
 
   <div class="collapse-title flex justify-between leading-none items-center">
     <div class="font-semibold text-xl">Week of {{ rec.start }}</div>
-    <div class="font-mono"><span class="text-success">+{{rec.added}}</span> <span class="text-error">-{{rec.deleted}}</span></div>
+    <div class="font-mono"><span class="text-nowrap">+{{rec.added}}</span> <span class="text-nowrap">-{{rec.deleted}}</span></div>
   </div>
   <div class="collapse-content">
 
