@@ -137,7 +137,7 @@ namespace :generate do
   end
 
   desc 'Run all generate tasks'
-  task all: %i[reports data_yaml changed]
+  task all: %i[reports data_yaml]
 end
 
 desc 'Run generate tasks for the content'
@@ -145,3 +145,6 @@ task generate: 'generate:all'
 
 desc 'Clean and regenerate all the pages'
 task regenerate: ['data:rebuild_db', 'generate']
+
+desc 'Record what has changed (slower to run)'
+task changed: 'generate:changed'
