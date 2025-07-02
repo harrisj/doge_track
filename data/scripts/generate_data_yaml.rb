@@ -19,6 +19,8 @@ def person_url(person)
     "/people/enabler-staff##{person.slug}"
   when 'support'
     "/people/support-team##{person.slug}"
+  when 'booster', 'leadership'
+    "/people/leaders##{person.slug}"
   when 'unknown'
     "/people/unknowns##{person.slug}"
   else
