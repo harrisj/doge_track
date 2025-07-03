@@ -70,6 +70,10 @@
                 "$ref": "valid_names.json#tech_link_values"
             }
         },
+        "linkedin": {
+            "description": "A likely LinkedIn url for a person (but remember it could be faked)",
+            "type": "string"
+        },
         "positions": {
             "type": "array",
             "items": {

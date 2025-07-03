@@ -92,6 +92,7 @@ DB.create_table! :people do
   string :govt_exit_type
   string :table_note
   string :tech_links
+  string :linkedin
 end
 
 DB.create_table! :questions do
