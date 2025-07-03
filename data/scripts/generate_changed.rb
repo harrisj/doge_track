@@ -27,7 +27,7 @@ def count_changed(changes)
 
       added, deleted, path = match.captures
 
-      next unless path =~ /src/ && path !~ /_data/
+      next unless (path =~ %r{src/} && path !~ %r{_data/}) || path =~ %r{data/}
 
       rec[:added] += added.to_i
       rec[:deleted] += deleted.to_i
