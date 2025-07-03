@@ -3,10 +3,4 @@ agency_id: SBA
 title: Small Business Association
 template_engine: serbea
 ---
-{% blurb = capture do %}
-What is going on at the Small Business Administration?
-
-Seriously. I'd like to know. DOGE showed up there remarkably early in their operations (2025-02-03). And since then, it has largely been radio silence. I know some things must have happened there - the CIO was abruptly forced out at the end of March just before DOGE announced a change to loan processing - but there just hasn't been much reported yet. Hopefully that will change in the future.
-{% end %}
-
-{%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}
+{%@ "agency_page_generic", id: data.agency_id  %}

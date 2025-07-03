@@ -3,8 +3,4 @@ agency_id: USDA
 title: Department of Agriculture
 template_engine: serbea
 ---
-{% blurb = capture do %}
-According to Secretary Brooke Collins speaking on February 14th, DOGE has been working within the agency since the beginning of February. It's clear why DOGE would be active within USDA - the agency not only distributes a large number of grants and is a significant regulatory entity. But there has been limited visibility into what DOGE has actually been doing there.
-{% end %}
-
-{%@ 'agency_page_generic', id: 'USDA', blurb: blurb %}
+{%@ 'agency_page_generic', id: 'USDA' %}

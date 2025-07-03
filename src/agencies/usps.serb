@@ -3,8 +3,4 @@ agency_id: USPS
 title: US Postal Service
 template_engine: serbea
 ---
-{% blurb = capture do %}
-We don't know much about what DOGE is doing at USPS, apart from the fact that Ethan Shaotran and Alexander Simonpour were detailed there (because of specific skills or because their names were next to each other in an alphabetical list?). USPS has long been a target of conservative ire, with many arguing it's "losing money" (as if it were a business and not a service) and calling for its privatization. DOGE's efforts at USPS will probably hew to their standard staffing reductions and elimination of contracts.
-{% end %}
-
-{%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}
+{%@ "agency_page_generic", id: data.agency_id %}

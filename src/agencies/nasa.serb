@@ -2,8 +2,4 @@
 agency_id: NASA
 title: National Aeronautics and Space Administration
 ---
-{% blurb = capture do %}
-We largely know about DOGE's activities at NASA because Riley Sennott forgot to make his calendar private. Given the vast involvement of SpaceX at NASA already, observers have naturally been concerned about what sort of industrial espionage or procurement interference that DOGE might get up to. This fear was amplified when Musk ally Jared Isaacman was nominated to lead the agency. However, DOGE's activities at the agency have been the same severe cost-cutting and personnel reduction they've tried everywhere else. Not even science is safe.
-{% end %}
-
-{%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}
+{%@ "agency_page_generic", id: data.agency_id %}

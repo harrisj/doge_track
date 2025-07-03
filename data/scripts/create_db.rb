@@ -12,6 +12,7 @@ DB.create_table! :agencies do
   string :page_slug
   string :short_name, null: false, unique: true
   boolean :doge_base, null: false, default: false
+  string :blurb
   string :parent_id
 end
 

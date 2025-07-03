@@ -2,8 +2,4 @@
 agency_id: Treasury
 template_engine: serbea
 ---
-{% blurb = capture do %}
-The Treasury Department is where DOGE first explored its plan to achieve impoundment through controlling the mechanisms that the government uses for payments.
-{% end %}
-
-{%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}
+{%@ "agency_page_generic", id: data.agency_id %}

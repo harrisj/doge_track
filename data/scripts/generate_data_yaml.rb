@@ -79,6 +79,7 @@ def generate_agencies_yaml
     out['event_ids'] = agency.all_events.map(&:id)
     out['system_access'] = agency.all_system_roles.map(&:id)
     out['obj_type'] = 'Agency'
+    out['linkified_blurb'] = linkify_text(agency.blurb) if agency.blurb
     out
   end
 

@@ -2,8 +2,4 @@
 agency_id: NLRB
 title: National Labor Relations Board
 ---
-{% blurb = capture do %}
-DOGE first arrived at this relatively small and independent agency that ensures that the union rights of workers are protected at the end of February, and they quickly proceeded to do the same scuttling of contracts and termination of employees that they have tried at other agencies under the guide of "IT modernization." However, it appears they also tried to remove sensitive data from the agency, and thanks to a whistleblower, we are now able to see some sophisticated attacks that were made against IT resourcea at the agency.
-{% end %}
-
-{%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}
+{%@ "agency_page_generic", id: data.agency_id %}

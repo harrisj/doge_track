@@ -3,8 +3,4 @@ agency_id: DOJ
 title: Department of Justice
 template_engine: serbea
 ---
-{% blurb = capture do %}
-One of the overarching stories of the Trump admininstration has been the destruction of the Department of Justice's independence and the view of new leadership that they are the President's lawyers and will take command from him on what to prosecute. The old DOJ would not let DOGE within ten miles of its operations. The current DOJ has welcomed them in, with Attorney General Pam Bondi kicking off a DOGE-style initiative to reorganize the DOJ and FBI.
-{% end %}
-
-{%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}
+{%@ "agency_page_generic", id: data.agency_id %}
