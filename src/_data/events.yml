@@ -5384,6 +5384,32 @@
   linkified_text: >
     <a class="link-hover" href="/agencies/white-house">DOGE</a> is granted authorization to use file transfer software at <a class="link-hover" href="/agencies/labor">Department
     of Labor</a>, alarming cybersecurity staff
+- id: 5PimPow9
+  type: official
+  date: '2025-02-13'
+  sort_date: '2025-02-13'
+  time:
+  text: HUD issues a press release reporting that it has launched a "DOGE Task Force" comprising both DOGE personnel and HUD staffers.
+  fuzz:
+  comment:
+  source: https://www.hud.gov/news/hud-no-25-030
+  source_title:
+  source_name: press release
+  case_no:
+  system_id:
+  theme:
+  names: []
+  agency_ids:
+  - HUD
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - HUD
+  obj_type: Event
+  linkified_text: >
+    <a class="link-hover" href="/agencies/housing">HUD</a> issues a press release reporting that it has launched a “<a class="link-hover" href="/agencies/white-house">DOGE</a>
+    Task Force” comprising both <a class="link-hover" href="/agencies/white-house">DOGE</a> personnel and <a class="link-hover" href="/agencies/housing">HUD</a>
+    staffers.
 - id: 537YrWiF
   type: official
   date: '2025-02-13'
@@ -22142,3 +22168,30 @@
     Under the direction of Marco Rubio, <a class="link-hover" href="/agencies/usaid">USAID</a> officially ceases all operations for foreign aid. A study
     in the medical journal Lancet suggests that the end of <a class="link-hover" href="/agencies/usaid">USAID</a> will lead to <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01186-9/fulltext">14
     million deaths worldwide by 2030, with 4.5 million of those being children under that age of 5</a>.
+- id: 6gNKgovS
+  type: disruption
+  date: '2025-07-02'
+  sort_date: '2025-07-02'
+  time:
+  text: >-
+    An analysis by a news organization finds that wait times on calls to Social Security routinely exceed 3 hours, with the system also hanging up on people
+    after 2 hours many times and promising a callback that never arrives. The Social Security website reports the average wait time as 18 minutes.
+  fuzz:
+  comment:
+  source: https://www.8newsnow.com/investigators/social-security-call-wait-times-can-exceed-3-hours-after-doge-cuts/
+  source_title:
+  source_name: KLAS News
+  case_no:
+  system_id:
+  theme:
+  names: []
+  agency_ids:
+  - SSA
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - SSA
+  obj_type: Event
+  linkified_text: >
+    An analysis by a news organization finds that wait times on calls to Social Security routinely exceed 3 hours, with the system also hanging up on people
+    after 2 hours many times and promising a callback that never arrives. The Social Security website reports the average wait time as 18 minutes.
