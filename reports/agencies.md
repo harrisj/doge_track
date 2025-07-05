@@ -177,8 +177,8 @@
   - **Amy Gleason** (2024-12-30 - 2024-02-18)
   - **Jordan Wick** (2025-01-(20)~)
   - **James Burnham** (2025-01-(23)~ - 2025-05-29) General Counsel
-  - **Cole Killian** (2025-01-20)
   - **Steve Davis** (2025-01-20 - 2025-05-29)
+  - **Cole Killian** (2025-01-20)
   - **Katie Miller** (2025-01-20 - 2025-05-29)
   - **Elon Musk** (2025-01-20 - 2025-05-28)
   - **Adam Ramada** (2025-01-23)
@@ -193,6 +193,7 @@
   - **Joshua Fox** (2025-02-XX)
   - **Justin Aimonetti** (2025-02-XX)
   - **Brad Smith** (2025-02-XX)
+  - **Emily Bryant** (2025-03-XX)
 
 # Department of Homeland Security
 - slug: dhs
@@ -415,37 +416,38 @@
 - slug: gsa
 - people:
   - **OPM-04 (Edward Coristine)** (2025-01-(20)~ - 2025-05-23) Senior Advisor
-  - **Jeremy Lewin** (2025-01-20)
-  - **Ethan Shaotran** (2025-01-20)
-  - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Luke Farritor** (2025-01-20)
   - **Nicole Hollander** (2025-01-20 - 2025-05-29)
   - **OPM-05 (Gavin Kliger)** (detailed from OPM)
+  - **Ethan Shaotran** (2025-01-20)
+  - **Jeremy Lewin** (2025-01-20)
+  - **Stephen Ehikian** (2025-01-20) Acting Administrator
   - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
   - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
-  - **Kyle Schutt** (2025-02-(18)~)
   - **Frank Schuler** (2025-02-(18)~) Senior Advisor
+  - **Kyle Schutt** (2025-02-(18)~)
   - **Nate Cavanaugh** (2025-02-03)
   - **Riley Sennott** (2025-02-12)
-  - **Donald Park** (2025-02-XX)
+  - **Ashley Boizelle** (2025-02-XX)
   - **Derek Geissler** (2025-02-XX)
   - **Erica Jehling** (2025-02-XX)
+  - **Donald Park** (2025-02-XX)
   - **Matthew Parkhurst-Session** (2025-03-03) Senior Advisor
   - **Emily Bryant** (2025-03-XX)
-  - **Justin Fox** (2025-03-XX)
   - **Alexander Simonpour** (2025-03-XX)
+  - **Justin Fox** (2025-03-XX)
   - **Dave Malcher** (2025-04-(24)~)
   - **Raj Jegannathan** (2025-04-(24)~) Data Engineer
   - **Jonathan Mendelson** (2025-04-09)
   - **Ethan Shaotran** (2025-04-10) Senior Advisor
   - **Jack Stein** (2025-04-15)
   - **Marshall Wood** (2025-04-21)
-  - **Luke Farritor** (2025-05-31) Senior Advisor
   - **Edward Coristine** (2025-05-31 - 2025-06-23) Senior Advisor
-  - **Nicholas Gallagher** (2025-05-XX)
-  - **Bee Elvy** (2025-05-XX)
+  - **Luke Farritor** (2025-05-31) Senior Advisor
   - **Ryan Shea** (2025-05-XX)
   - **Alison Childs** (2025-05-XX)
+  - **Nicholas Gallagher** (2025-05-XX)
+  - **Bee Elvy** (2025-05-XX)
 
 # Government Accountability Office
 - slug: gao
