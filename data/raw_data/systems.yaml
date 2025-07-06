@@ -638,7 +638,9 @@
   id: ehcm
   acronym: EHCM
   agency: HHS
-  description: FIXME
+  description: >-
+    This system is used at HHS for managing all aspects of human-capital related tasks, including staffing
+    notes and performance plans.
   theme: personnel
   access:
   - id: ehcm-riley
@@ -1276,7 +1278,9 @@
 - name: HHS Consolidated Acquisition System
   id: hcas
   acronym: HCAS
-  description: FIXME
+  description: >-
+    This appears to be a system used at HHS for tracking acquisition and procurement efforts across the
+    agency.
   theme: spending
   agency: HHS
   access:
@@ -1525,7 +1529,9 @@
   type: internal
   category: obligations
   comment: System unknown, named in internal SSA emails as way to investigate people
-  description: FIXME
+  description: >-
+    I have not found any public details about this system. It was named in internal emails from SSA as
+    a way for Cole Killian to investigate people beyound a reasonable age whould could be declared dead.
   agency: SSA
   access:
   - id: iron-ssa-5
@@ -2020,7 +2026,9 @@
 - name: New Core Financial Management System
   acronym: NCFMS
   id: ncfms
-  description: FIXME
+  description: >-
+    This appears to be a system that is used for tracking spending and procurement at the Department of
+    Labor
   agency: DOL
   theme: spending
   access:

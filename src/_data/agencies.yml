@@ -913,7 +913,11 @@
   page_slug: treasury
   short_name: Treasury
   doge_base: true
-  blurb:
+  blurb: "One of DOGE's overarching projects has been to [seize control of federal spending](/projects/spending-control/), so it makes sense that DOGE would
+    try to infiltrate the Bureau of the Fiscal Service with Department of the Treasury from the start. This is highly-sensitive data to entrust to a few
+    rogue engineers, so there have been a number of high-profile court cases that attempted to forestall and limit DOGE's access. Unfortunately, DOGE has
+    prevailed and has also increased its access to the highly-sensitive taxpayer data at the IRS in order to support DOGE's efforts to build a total surveillance
+    system for immigrants. "
   parent_id:
   path: "/agencies/treasury"
   children:
@@ -981,6 +985,13 @@
   - pam-fs-elez
   - sps-elez
   obj_type: Agency
+  linkified_blurb: >
+    One of DOGE’s overarching projects has been to <a href="/projects/spending-control/">seize control of federal spending</a>, so it makes sense that <a
+    class="link-hover" href="/agencies/white-house">DOGE</a> would try to infiltrate the Bureau of the Fiscal Service with <a class="link-hover" href="/agencies/treasury">Department
+    of the Treasury</a> from the start. This is highly-sensitive data to entrust to a few rogue engineers, so there have been a number of high-profile court
+    cases that attempted to forestall and limit DOGE’s access. Unfortunately, <a class="link-hover" href="/agencies/white-house">DOGE</a> has prevailed
+    and has also increased its access to the highly-sensitive taxpayer data at the <a class="link-hover" href="/agencies/treasury">IRS</a> in order to support
+    DOGE’s efforts to build a total surveillance system for immigrants.
 - id: DOT
   name: Department of Transportation
   slug: dot
