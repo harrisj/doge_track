@@ -20,7 +20,7 @@ def count_changed(changes)
     rec[:added] = 0
     rec[:deleted] = 0
 
-    log_output = `git log -p --since="#{(rec[:start] - 1).iso8601}" --until="#{rec[:end].iso8601}" -q --numstat`
+    log_output = `git diff --numstat @{#{(rec[:start] - 1).iso8601}}..@{#{rec[:end].iso8601}}`
 
     log_output.each_line do |l|
       next unless (match = l.match(/^(\d+)\s+(\d+)\s+([^\s]+)$/))
@@ -37,9 +37,9 @@ end
 
 def diff_people(changes)
   changes.each do |rec|
-    # puts "git log -p --since=\"#{(rec[:start] - 1).iso8601}\" --until=\"#{rec[:end].iso8601}\" ./data/raw_data/people.yaml"
+    puts "git diff @{#{(rec[:start] - 1).iso8601}}..@{#{rec[:end].iso8601}} -- ./data/raw_data/people.yaml"
 
-    log_output = `git log -p --since="#{(rec[:start] - 1).iso8601}" --until="#{rec[:end].iso8601}" ./data/raw_data/people.yaml`
+    log_output = `git diff @{#{(rec[:start] - 1).iso8601}}..@{#{rec[:end].iso8601}} -- ./data/raw_data/people.yaml`
     rec[:positions] = []
     rec[:names] = []
     log_output.each_line do |l|
@@ -63,7 +63,7 @@ def diff_events(changes)
     rec[:events] = []
 
     ['agencies.yaml', 'interagency.yaml'].each do |file|
-      log_output = `git log -p --since="#{(rec[:start] - 1).iso8601}" --until="#{rec[:end].iso8601}" ./data/raw_data/#{file}`
+      log_output = `git diff @{#{(rec[:start] - 1).iso8601}}..@{#{rec[:end].iso8601}} -- ./data/raw_data/#{file}`
       log_output.each_line do |l|
         next unless l =~ /^\+\s+id: /
 
