@@ -2,10 +2,6 @@
 agency_id: DOD
 title: Department of Defense
 template_engine: serbea
+description: The DOGE staff and activities at the US Department of Defense
 ---
-
-{% blurb = capture do %}
-Due to the typical secrecy within the military, it's not always clear what DOGE has been doing within the Pentagon, especially since Secretary of Defense Pete Hegseth claimed he would be hiring his own staff directly instead of accepting detailees. But DOGE has been increasingly involved in cancelling contracts, especially for weapons systems that Elon Musk doesn't find cool.
-{% end %}
-
-{%@ "agency_page_generic", id: data.agency_id, blurb: blurb %}
+{%@ "agency_page_generic", id: data.agency_id %}

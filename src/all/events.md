@@ -1,6 +1,8 @@
 ---
 layout: page
 template_engine: serbea
+title: All Events
+description: A comprehensive listing of all the events of DOGE staff on a single page
 ---
 {%@ "title", title: "All The Events" %}
 

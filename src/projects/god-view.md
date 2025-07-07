@@ -1,5 +1,5 @@
 ---
-title: DOGE Projects | "God View"
+title: "God View"
 description: At many Web2.0 Silicon Valley startups, it was common for management to build "god mode" views that let them see the activities of any and all users. It's bad enough when Uber is doing this for rideshares; imagine how harmful it could be with government data. 
 layout: docs
 ---

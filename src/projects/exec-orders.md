@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: DOGE's Executive Orders
+title: Executive Orders
 description: DOGE has been granted its sweeping powers through multiple executive orders issued by the Trump Administration from Day One.
 ---
 {%@ 'title', title: 'Executive Orders' %}
