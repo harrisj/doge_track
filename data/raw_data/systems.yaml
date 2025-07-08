@@ -1231,6 +1231,9 @@
     A system run and administered by HHS that is used at 18+ agencies for publishing grants, finding recipients
     and delivering funds
   agency: HHS
+  doge_modifications: >-
+    DOGE modified the system to lock out all grant submissions, directing all agencies to use a designated
+    email inbox instead. This was reversed after 3 months.
   serves:
   - USDA
   - Commerce
@@ -2009,6 +2012,24 @@
       which provides grants to organizations that work with migrant and seasonal labor
     source: https://www.wired.com/story/doge-access-immigration-data-department-of-labor/
     source_name: Wired
+
+- name: National SNAP Information Database
+  id: NSID
+  acronym: NSID
+  type: internal
+  category: payments
+  theme: panopticon
+  doge_created: true
+  sorn: >-
+    https://www.federalregister.gov/documents/2025/06/23/2025-11463/privacy-act-of-1974-system-of-records
+  population: Individuals who have received, are currently receiving, or have applied to receive SNAP
+    benefits.
+  risk: PII, including SSNs, addresses, DOB, address, transaction info.
+  description: >-
+    This is a new system ordered in [Executive Order 14243](/projects/exec-orders#eo-14243) that collects
+    information on participants in the Supplemental Nutrition Assistance Program (SNAP) that is provided
+    by the states. As indicated by a reference in the SORN to [Executive Order 14218](/projects/exec-orders#eo-14218),
+    this data will almost be certainly used to look for information on immigrants receiving food assistance.
 
 - name: National Student Loan Data System (New)
   id: nslds

@@ -975,7 +975,9 @@
   sorn:
   agency_id: HHS
   doge_created: false
-  doge_modifications:
+  doge_modifications: >-
+    DOGE modified the system to lock out all grant submissions, directing all agencies to use a designated email inbox instead. This was reversed after
+    3 months.
   all_agency_ids:
   - HHS
   all_names:
@@ -1572,6 +1574,28 @@
   - Miles Collins
   access_ids:
   - njfp-collins
+- id: NSID
+  acronym: NSID
+  name: National SNAP Information Database
+  type: internal
+  description: >-
+    This is a new system ordered in [Executive Order 14243](/projects/exec-orders#eo-14243) that collects information on participants in the Supplemental
+    Nutrition Assistance Program (SNAP) that is provided by the states. As indicated by a reference in the SORN to [Executive Order 14218](/projects/exec-orders#eo-14218),
+    this data will almost be certainly used to look for information on immigrants receiving food assistance.
+  comment:
+  category: payments
+  theme: panopticon
+  population: Individuals who have received, are currently receiving, or have applied to receive SNAP benefits.
+  risk: PII, including SSNs, addresses, DOB, address, transaction info.
+  link:
+  pia:
+  sorn: https://www.federalregister.gov/documents/2025/06/23/2025-11463/privacy-act-of-1974-system-of-records
+  agency_id:
+  doge_created: true
+  doge_modifications:
+  all_agency_ids: []
+  all_names: []
+  access_ids: []
 - id: nslds
   acronym: NSLDS
   name: National Student Loan Data System (New)
