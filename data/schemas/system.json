@@ -91,6 +91,14 @@
             "items": {
                 "$ref": "system-access.json"
             }
+        },
+        "doge_created": {
+            "description": "Did DOGE create this system?",
+            "type": "boolean"
+        },
+        "doge_modifications": {
+            "description": "What modifications has DOGE made to the system",
+            "type": "string"
         }
     },
     "required": [

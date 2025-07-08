@@ -165,6 +165,8 @@ DB.create_table! :govt_systems do
   string :pia
   string :sorn
   string :agency_id
+  boolean :doge_created, null: false, default: false
+  string :doge_modifications
 end
 
 DB.create_table! :system_roles do
