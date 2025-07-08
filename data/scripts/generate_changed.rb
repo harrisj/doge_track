@@ -37,9 +37,9 @@ end
 
 def diff_people(changes)
   changes.each do |rec|
-    puts "git diff @{#{(rec[:start] - 1).iso8601}}..@{#{rec[:end].iso8601}} -- ./data/raw_data/people.yaml"
+    puts "git diff '@{#{rec[:start].iso8601} 00:00}..@{#{rec[:end].iso8601} 23:59}' -- ./data/raw_data/people.yaml"
 
-    log_output = `git diff @{#{(rec[:start] - 1).iso8601}}..@{#{rec[:end].iso8601}} -- ./data/raw_data/people.yaml`
+    log_output = `git diff '@{#{rec[:start].iso8601} 00:00}..@{#{rec[:end].iso8601} 23:59}' -- ./data/raw_data/people.yaml`
     rec[:positions] = []
     rec[:names] = []
     log_output.each_line do |l|
@@ -63,7 +63,7 @@ def diff_events(changes)
     rec[:events] = []
 
     ['agencies.yaml', 'interagency.yaml'].each do |file|
-      log_output = `git diff @{#{(rec[:start] - 1).iso8601}}..@{#{rec[:end].iso8601}} -- ./data/raw_data/#{file}`
+      log_output = `git diff '@{#{rec[:start].iso8601} 00:00}..@{#{rec[:end].iso8601} 23:59}' -- ./data/raw_data/#{file}`
       log_output.each_line do |l|
         next unless l =~ /^\+\s+id: /
 
