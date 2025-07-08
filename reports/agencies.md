@@ -318,7 +318,7 @@
 # Department of Transportation
 - slug: dot
 - people:
-  - **Ankur Bansai**
+  - **Ankur Bansal**
   - **Daniel Abrahamson** (2025-02-XX) Senior Advisor
   - **Brian Stube** (2025-05-(07)~) Senior Advisor to the Secretary
 

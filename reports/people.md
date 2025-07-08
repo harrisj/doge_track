@@ -34,7 +34,7 @@
 - positions:
     -  **Education**  
 
-# Ankur Bansai
+# Ankur Bansal
 - category: wrecker
 - positions:
     -  **DOT**  
