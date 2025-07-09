@@ -578,6 +578,7 @@
 # National Aeronautics and Space Administration
 - slug: nasa
 - people:
+  - **Scott Coulter** (2025-01-XX)
   - **Riley Sennott** (2025-03-(14)~) Senior Advisor (detailed from GSA)
   - **Alexander Simonpour** (2025-03-14) Advisor (detailed from GSA)
 
