@@ -789,7 +789,7 @@
   - **SSA-08 (Nikhil Rajpal)** (2025-02-26) (detailed from OPM)
   - **Mark Steffensen** (2025-02-27) Acting General Counsel
   - **SSA-11** (2025-03-16) Expert
-  - **SSA-02 (Scott Coulter)** (2025-03-24 - 2025-06-XX) Chief Information Officer
+  - **SSA-02 (Scott Coulter)** (2025-03-24 - 2025-06-(05)~) Chief Information Officer
   - **Mike Russo** (2025-03-25) Senior Advisor
   - **Leland Dudek** (2025-05-06)
   - **Frank Bisignano** (2025-05-06) Commissioner

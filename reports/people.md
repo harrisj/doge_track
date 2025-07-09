@@ -201,7 +201,7 @@
 - category: enabler
 - positions:
     -  **SSA** (2025-02-18 to 2025-03-23) [as "SSA-02"] 
-    -  **SSA** (2025-03-24 to 2025-06-XX) [as "SSA-02"] **Chief Information Officer**
+    -  **SSA** (2025-03-24 to 2025-06-(05)~) [as "SSA-02"] **Chief Information Officer**
 
 # Clayton Cromer
 - category: support
