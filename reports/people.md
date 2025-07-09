@@ -584,7 +584,7 @@
 - category: wrecker
 - positions:
     -  **GSA** (2025-01-20 to ??)  $167,000
-    -  **USAID** (2025-01-28 to 2025-03-18) Senior Advisor / Director for Strategy & Programs
+    -  **USAID** (2025-01-27 to 2025-03-18) Senior Advisor / Director for Strategy & Programs
     -  **CFPB** (2025-02-07 to ??) 
     -  **HHS** (2025-02-21 to ??) 
         - Grant Solutions: 2025-02-28 - ongoing

@@ -12274,8 +12274,8 @@
   name: Jeremy Lewin
   doge_alias_id:
   from_agency_id: GSA
-  from_truth: guessed
-  start_date: '2025-01-28'
+  from_truth: verified
+  start_date: '2025-01-27'
   start_date_truth: verified
   start_date_event:
   start_source:
@@ -12286,9 +12286,9 @@
   end_source:
   end_source_name:
   end_type: replaced
-  sort_date: '2025-01-28'
-  nte_date:
-  nte_date_truth:
+  sort_date: '2025-01-27'
+  nte_date: '2025-07-25'
+  nte_date_truth: verified
   signed_date:
   description:
   fuzz:
@@ -12306,7 +12306,7 @@
   office:
   source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.77.2.pdf
   source_name: court doc
-  reimbursed:
+  reimbursed: false
   reimbursement_amount:
   comment:
   qualifications:
@@ -12343,7 +12343,17 @@
     path: "/agencies/gsa"
   agency_and_parent:
   - USAID
-  documents: []
+  documents:
+  - id: detail-20250127-gsa-usaid-lewin
+    name: Jeremy Lewin
+    type: mou
+    alias:
+    date:
+    source:
+    case_no:
+    comment:
+    file: mou-20250127-gsa-usaid-lewin.pdf
+    url: "/documents/mou-20250127-gsa-usaid-lewin.pdf"
 - id: detail-gsa-cfpb-jeremy-lewin
   type: detailed
   agency_id: CFPB

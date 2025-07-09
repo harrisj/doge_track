@@ -3249,10 +3249,13 @@
     type: detailed
     agency: USAID
     from: GSA
-    from_truth: guessed
-    start_date: 2025-01-28
+    reimbursed: false
+    from_truth: verified
+    start_date: 2025-01-27
     start_date_truth: verified
     end_date: 2025-03-18
+    nte_date: 2025-07-25
+    nte_date_truth: verified
     end_date_truth: inferred
     end_type: replaced
     replaced_by: usaid-jeremy-lewin-2
@@ -3260,6 +3263,8 @@
     source_name: court doc
     title: Senior Advisor / Director for Strategy & Programs
     title_type: dept_head
+    documents:
+    - detail-20250127-gsa-usaid-lewin
   - id: detail-gsa-cfpb-jeremy-lewin
     type: detailed
     agency: CFPB

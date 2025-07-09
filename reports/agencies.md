@@ -853,10 +853,10 @@
   - **Clayton Cromer** (2025-01-27) (detailed from OPM)
   - **Luke Farritor** (2025-01-27) (detailed from GSA)
   - **Gavin Kliger** (2025-01-27) (detailed from OPM)
-  - **Jeremy Lewin** (2025-01-28 - 2025-03-18) Senior Advisor / Director for Strategy & Programs (detailed from GSA)
+  - **Jeremy Lewin** (2025-01-27 - 2025-03-18) Senior Advisor / Director for Strategy & Programs (detailed from GSA)
   - **Peter Marocco** (2025-02-01 - 2025-03-19)
-  - **Jeremy Lewin** (2025-03-18) Deputy Administrator(Policy and Programming) / COO
   - **Kenneth Jackson** (2025-03-18) Deputy Administrator (Management and Resources)
+  - **Jeremy Lewin** (2025-03-18) Deputy Administrator(Policy and Programming) / COO
 
 # US Citizenship & Immigration Services
 - slug: uscis
