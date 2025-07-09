@@ -338,19 +338,21 @@ end %}
 {% macro 'position_end_type' do |pos| 
     case pos.end_type
     when 'detail_ended'
-      'Detail end'
+      'detail end'
     when 'replaced'
       if pos.replaced_by
-        "replaced with [new role](##{pos.replaced_by})"
+        "<a class=\"link-hover sm:text-nowrap\" href=\"##{pos.replaced_by}\"><i class=\"fa-sharp fa-solid fa-up-right-from-square\"></i> next role</a>"
       else
-        'left to new role'
+        'replaced'
       end
+    when 'fired'
+      '<i class="fa-sharp fa-regular fa-triangle-exclamation"></i> <strong>fired</strong>'
     when 'unknown'
-      'Unknown ended'
+      nil
     when nil
-      'Ended'
+      nil
     else
-      pos.end_type.titleize
+      pos.end_type
    end
   end
 %}
@@ -453,19 +455,9 @@ end %}
 
     out_str = [alias_ident_str, type_str, title_str, hire_str, note_str, docs_str, questions_str].map {|x| x.blank? ? nil : x }.compact.join(" ")
 
-    if pos.end_date
-      if pos.person && !pos.person.govt_exit_date.nil?
-        end_date_str = "<br/>**Left Govt** (#{position_end_type(pos)}) #{EdtfFormat.new(pos.person.govt_exit_date, :compact)}"
-      else
-        end_date_str = "(#{position_end_type(pos)}) #{EdtfFormat.new(pos.exit_date, :compact)}"
-      end
-      out_str += " #{end_date_str}"
-    end
-
     if pos.source
       out_str += " <span class=\"text-nowrap float-right\"><a href=\"#{pos.source}\" class=\"link-hover\"><i class=\"fa-sharp fa-solid fa-link-simple\"></i> <span class=\"italic text-2xs sm:text-xs\">#{ pos.source_name if pos.source_name }</span></a></span>"
     end
-
 
     out_str.html_safe
    end
