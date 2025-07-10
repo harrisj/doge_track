@@ -17,8 +17,8 @@ num_cols +=1 if agency_col %}
   <thead>
     <tr>
       {% if agency_col %}<th class="hidden sm:table-cell sm:w-2/12 text-xs">Agency</th>{% end %}
-      <th class="w-3/12 sm:w-1/12 text-xs">Date</th>
-      <th class="w-9/12 text-xs">Event</th>
+      <th class="w-3/12 sm:w-2/12 text-xs">Date</th>
+      <th class="w-8/12 text-xs">Event</th>
     </tr>
   </thead>
   <tbody>
