@@ -1,5 +1,7 @@
 {% import 'macros' %}
-<a href="/all/systems#{{ role.system_id }}">{{ role.system.name }}</a>
+<a href="/all/systems#{{ role.govt_system_id }}">{{ role.system.name }}</a>
+<br/>
+<span class="italic">{{ role.system.description | md | strip_p }}</span> <span class="hidden sm:inline">({{ agency_link(role.agency_id) }})</span>
 <br/>
 {%@ 'system_access_type', role: role %} access
 {% if role.last_accessed %} (last access {{ render EdtfFormat.new(role.last_accessed, :compact) }}){% end %}
@@ -7,5 +9,4 @@
 {% if role.ao_type %} granted by {{ ao_type_display(role) }}{% end %}
 {% if role.ao_doge && role.ao_name %} {{ person_link(role.ao_name) }}{% end %}
 {% if role.table_note %} «<em>{{ role.table_note | md | strip_p }}</em>» {% end %}
-<br/>
-<span class="italic">{{ role.system.description | md | strip_p }}</span> <span class="hidden sm:inline">({{ agency_link(role.agency_id) }})</span> {% if role.source && role.source_name %}<span class="text-nowrap float-right"><a href="{{ role.source }}" class="link-hover"><i class="fa-sharp fa-solid fa-link-simple"></i> <span class="italic text-2xs sm:text-xs">{{ role.source_name }}</span></a></span>{% end %}
+{% if role.source && role.source_name %}<span class="text-nowrap float-right"><a href="{{ role.source }}" class="link-hover"><i class="fa-sharp fa-solid fa-link-simple"></i> <span class="italic text-2xs sm:text-xs">{{ role.source_name }}</span></a></span>{% end %}

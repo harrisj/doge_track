@@ -13,11 +13,11 @@
       {% govt_system = site.data.systems.find {|s| s.id == role.govt_system_id } %}
     <tr class="font-sans" id="{{ role.id }}">
       <td class="align-top">
-      {% if govt_system && govt_system.acronym %}<div><abbr title="{{ govt_system.name }}">{{ govt_system.acronym }}</abbr></div>{% end %}
+      {% if govt_system %}<div>{% if govt_system.acronym %}<abbr title="{{ govt_system.name }}">{{ govt_system.acronym }}</abbr>{% else %}{{ govt_system.name }}{% end %}</div>{% end %}
       <div class="sm:hidden">{{ render EdtfFormat.new(role.date_granted, :compact) }}-{{ render EdtfFormat.new(role.date_revoked, :compact) }}</div>
       <div class="sm:hidden">{{ agency_link(role.agency_id) }}</div>
       </td>
-      <td class="align-top hidden sm:table-cell py-2">{{ render EdtfFormat.new(role.date_granted, :compact) }}-{{ render EdtfFormat.new(role.date_revoked, :compact) }}</td>
+      <td class="align-top hidden sm:table-cell py-2 text-nowrap">{{ render EdtfFormat.new(role.date_granted, :compact) }}-{{ render EdtfFormat.new(role.date_revoked, :compact) }}</td>
       <td class="align-top font-sans py-2">{%@ 'system_role_summary', role: role %}</td>
     </tr>
     {% end %}
