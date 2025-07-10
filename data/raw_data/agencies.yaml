@@ -2313,6 +2313,18 @@
     agency: DOGE
     id: 7F1ZKLk8
   - date: 2025-06-04
+    type: oversight
+    event: >-
+      Testifying before the House Appropriations Financial Services and General Government Subcommittee,
+      Russell Vought shares that he expects DOGE staff to be internalized into the agencies they are currently
+      based at and leadership to become more decentralized.
+    named:
+    - Russell Vought
+    source: https://fedscoop.com/russell-vought-doge-will-be-far-more-institutionalized-at-agencies/
+    source_name: FedScoop
+    agency: DOGE
+    id: 3pCka5KL
+  - date: 2025-06-04
     type: official
     event: >-
       In an appendix for next year's budget request, the White Houre reports that approximately 89 staffers
@@ -2390,6 +2402,15 @@
   short_name: DHS
   slug: dhs
   page_slug: homeland-security
+  blurb: |
+    Created in the wake of the September 11 attacks, the Department of Homeland Security is a massive agency which contains variety of agencies concerned with law enforcement, immigration, disaster response and even cybersecurity.
+
+    DHS contains the following agencies where DOGE has had linked activities:
+    - **Customs and Border Patrol (CPB)**: the agency that secures America's border (and can act 100 miles within from any of those borders). This is also the agency that collects tariff duties.
+    - **Cybersecurity & Infrastructure Security Agency (CISA)**: a centralized clearinghouse and coordinator for defense of America's physical and network infrastructure. This is also the agency that must be notified when breaches of government systems occur.
+    - **Federal Emergency Management (FEMA)**: the agency for coordinating federal responses to natural disasters - **Immigration and Customs Enforcement (ICE)**: the agency that handles immigration arrests. The Trump administration is looking to dramatically expand its size and scope for detentions and deportations.
+    - **Transportation Security Administration (TSA)**: this agency handles security at airports. DOGE is reportedly involved with activities in this agency, but there are no details on this.
+    - **US Citizenship and Immigration Services (USCIS)**: the agency that supports legal immigration and naturalization to America has been targeted by DOGE for reductions and to create a new $5 million immigration visa.
   doge_base: true
   events:
   - date: 2025-02-08
@@ -3441,6 +3462,19 @@
     source_name: Law and Crime
     agency: FEMA
     id: Rw5dRRNx
+  - date: 2025-07-10
+    type: disruption
+    event: >-
+      As predicted by experts, the newly created process that mandates that all contracts abot $100,000
+      must be reviewed and approved by agency head Kristi Noem delayed the ability of FEMA to proactively
+      respond to disastrous flash flooding in central Texas. For instance, FEMA could not get approval
+      to stage Search and Rescue teams in the area before the disaster. The agency also was unable to
+      approve additional staff for outreach and responding to calls from affected Americans.
+    agency:
+    - FEMA
+    source: https://www.cnn.com/2025/07/09/politics/fema-texas-flood-noem
+    source_name: CNN
+    id: cbMdgMEs
 
 - name: Federal Housing Finance Agency
   id: FHFA
@@ -4361,6 +4395,18 @@
       - Christopher Sweet
     agency: HUD
     id: Q4hkKRZT
+  - date: 2025-07-(01)~
+    type: action
+    event: >-
+      Christopher Sweet participates in a meeting at HUD to discuss more permanent hosting options for
+      the AI deregulation tool. This could be the precursor to providing it as a service to other agencies.
+    named:
+    - Christopher Sweet
+    fuzz: Meeting reported as in week of 2025-06-30
+    source: https://www.wired.com/story/next-stage-doge-elon-musk/
+    source_name: Wired
+    agency: HUD
+    id: XTCC1TGA
   - date: 2025-07-06
     type: disruption
     event: >-
@@ -4378,21 +4424,6 @@
   parent_id: DHS
   slug: ice
   doge_base: true
-  blurb: "Created in the wake of the September 11 attacks, the Department of Homeland Security is a massive
-    agency which contains a variety of agencies concerned with law enforcement, immigration, disaster
-    response and even cybersecurity. \nDHS contains the following agencies where DOGE has had linked activities:
-    - **Customs and Border Patrol (CPB)**: the agency that secures America's border (and can act 100 miles
-    within from any of those borders). This is also the agency that collects tariff duties. - **Cybersecurity
-    & Infrastructure Security Agency (CISA)**: a centralized clearinghouse and coordinator for defense
-    of America's physical and network infrastructure. This is also the agency that must be notified when
-    breaches of government systems occur. - **Federal Emergency Management (FEMA)**: the agency for coordinating
-    federal responses to natural disasters - **Immigration and Customs Enforcement (ICE)**: the agency
-    that handles immigration arrests. The Trump administration is looking to dramatically expand its size
-    and scope for detentions and deportations. - **Transportation Security Administration (TSA)**: this
-    agency handles security at airports. DOGE is reportedly involved with activities in this agency, but
-    there are no details on this. - **US Citizenship and Immigration Services (USCIS)**: the agency that
-    supports legal immigration and naturalization to America has been targeted by DOGE for reductions
-    and to create a new $5 million immigration visa."
   page_slug: homeland-security
   events:
   - date: 2025-06-04

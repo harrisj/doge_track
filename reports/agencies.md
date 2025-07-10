@@ -264,6 +264,7 @@
   - **Miles Collins** (2025-03-05)
   - **Thomas Shedd** (2025-03-14) Chief Information Officer
   - **Keith Sonderling** (2025-03-18) Deputy Secretary
+  - **Luke Farritor** (2025-06-XX) (detailed from GSA)
 - systems:
     - DRA: Directory Resource Administrator
         - Marko Elez 2025-02-25 - ongoing

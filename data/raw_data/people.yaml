@@ -1813,6 +1813,16 @@
     start_date_truth: reported
     source: https://www.wired.com/story/big-balls-young-doge-converted-into-full-time-government-employees/
     source_name: Wired
+  - id: detail-gsa-dol-farritor
+    type: detailed
+    agency: DOL
+    from: GSA
+    from_truth: inferred
+    start_date: 2025-06-XX
+    start_date_truth: guessed
+    table_note: Only info I have is Wired confirmed he was detailed to Labor
+    source: https://www.wired.com/story/next-stage-doge-elon-musk/
+    source_name: Wired
 
 - name: Conor Fennessy
   sort_name: Fennessy
@@ -2064,6 +2074,8 @@
     an inter-agency collaboration between DHS, State and USCIS to develop a $5 Million "Gold Card" immigration
     visa.
   category: wrecker
+  tech_links:
+  - Airbnb
   positions:
   - id: opm-joe-gebbia
     agency: OPM
