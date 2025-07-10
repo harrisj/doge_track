@@ -635,6 +635,28 @@
     source: https://www.nytimes.com/2025/01/12/us/politics/elon-musk-doge-government-trump.html
     source_name: NYT
 
+- name: Brian Burroughs
+  sort_name: Burroughs
+  slug: brian-burroughs
+  skill: coder
+  category: unknown
+  blurb: >-
+    Brian Burroughs was apparently introduced to GSA staff in June by Thomas Shedd and Stephen Ehikian.
+    It apparently seemed “like they were looking for things for him to work on.” Until I find out what
+    those things might be, I am classifying him as an unknown.
+  positions:
+  - id: gsa-burroughs
+    type: unknown
+    agency: GSA
+    start_date: 2025-06-XX
+    start_date_truth: reported
+    sort_date: 2025-06-15
+    table_note: >-
+      Not many details besides start date "in June." Because he is a former IT consultant, I'm not sure
+      if he has been hired or is consulting.
+    source: https://www.wired.com/story/next-stage-doge-elon-musk/
+    source_name: Wired
+
 - name: Nate Cavanaugh
   sort_name: Cavanaugh
   slug: nate-cavanaugh
@@ -841,6 +863,23 @@
     source: https://projects.propublica.org/elon-musk-doge-tracker/#Alison-Childs
     office: Technology Transformation Services
     source_name: ProPublica
+
+- name: Yat Choi
+  sort_name: Choi
+  slug: yat-choi
+  category: unknown
+  tech_links:
+  - Airbnb
+  positions:
+  - id: opm-choi
+    type: appointed
+    agency: OPM
+    start_date: 2025-06-XX
+    start_date_truth: reported
+    sort_date: 2025-06-15
+    table_note: reportedly a Canadian working on temp visa which would disqualify for federal role
+    source: https://www.wired.com/story/next-stage-doge-elon-musk/
+    source_name: Wired
 
 - name: Carl Coe
   sort_name: Coe
@@ -5245,6 +5284,43 @@
     comment: All I have is his signed SF-61
     documents:
     - onboard-hhs-brad-smith
+
+- name: John Solly
+  sort_name: Solly
+  slug: john-solly
+  category: wrecker
+  skill: coder
+  linkedin: https://www.linkedin.com/in/jsolly
+  blurb: >-
+    A software expert in cloud-native geospatial analysis, he has been working at Social Security in March
+    and apparently has not been listed on the internal directory to keep a low profile. He couldn't help
+    marking the time on his LinkedIn however, noting his DOGE career as "stealth mode” for a “key skunkswork
+    project at a major org."
+  positions:
+  - id: ssa-employee-11
+    type: appointed
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    source_name: court doc
+    start_date: 2025-03-16
+    start_date_truth: verified
+    nte_date: 2026-03-15
+    nte_date_truth: verified
+    title: Expert
+    title_type: advisor
+    office: Office of the Chief Information Officer
+    pay_grade: ED-00
+    salary: "$162,672"
+    pd_code: KNX0390
+    qualifications: >
+      is a Senior Software Engineer with over ten years of experience building cloud-native geospatial 
+      solutions. Adept at architecting geospatial infrastructures, implementing geospatial algorithms,
+      and leading full- stack development. Experienced in collaborating with cross-functional teams to
+      deliver mission-critical capabilities  and driving technical decisions and best practices.
+    agency: SSA
+    documents:
+    - onboard-ssa-employee-11
+    name: John Solly
+    alias: SSA-11
 
 - name: Keith Sonderling
   sort_name: Sonderling

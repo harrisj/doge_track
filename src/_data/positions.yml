@@ -1872,6 +1872,71 @@
   - DOGE
   - EOP
   documents: []
+- id: gsa-burroughs
+  type: unknown
+  agency_id: GSA
+  name: Brian Burroughs
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-06-XX
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-06-15'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://www.wired.com/story/next-stage-doge-elon-musk/
+  source_name: Wired
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Not many details besides start date "in June." Because he is a former IT consultant, I'm not sure if he has been hired or is consulting.
+  replaced_by:
+  same_as:
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    blurb: >-
+      Once a relatively obscure agency that provided shared services and procurement services for the government, GSA became an integral part of DOGE's
+      early-phase plans for taking over parts of the federal bureaucracy precisely for those reasons. From the very first day of the Trump presidency, DOGE
+      established a sizable team at GSA. Some of these were focused on drastic cost-reduction efforts like cancelling government leases or unilaterally
+      dropping the purchasing limit of government purchase cards to curtail micro-purchases by government staff. GSA was also the base for many of DOGE's
+      wrecking crews that were detailed to other agencies, with agency leadership quickly creating a walled-off enclave protected by security guards exclusively
+      for the use of DOGE staff with "A-level access."
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - GSA
+  documents: []
 - id: gsa-cavanaugh
   type: appointed
   agency_id: GSA
@@ -2981,6 +3046,67 @@
     path: "/agencies/gsa"
   agency_and_parent:
   - GSA
+  documents: []
+- id: opm-choi
+  type: appointed
+  agency_id: OPM
+  name: Yat Choi
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-06-XX
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-06-15'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://www.wired.com/story/next-stage-doge-elon-musk/
+  source_name: Wired
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: reportedly a Canadian working on temp visa which would disqualify for federal role
+  replaced_by:
+  same_as:
+  agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    blurb: |-
+      One of the ways in which DOGE surprised everybody was how it turned a relatively sleepy agency into a weapon against the entire government bureaucracy. Created by law in 1978, OPM's main role before now was to standardize government policies around personnel and to offer shared services for human capital like the federal health plans. It also tracks all the paperwork around hiring, promotions, changes and retirement. And so, for most federal staff, their main interactions with OPM were receiving paperwork they were hired, fired or retired; or picking a health plan; or looking at the rules around various practices. But, all the other aspects of human resources were handled by their own agencies. Federal staff are hired to their specific agencies, their performance rankings are defined by their agency, they're promoted by their agencies, they're paid by their agencies, they follow the HR policies of their agencies. OPM provides the guidance, but it's the agencies that implement it.
+      This is why OPM's turn towards the dark side has been so confounding. Very early on, DOGE concentrated a large number of staff within OPM to capture control of the centralized databases and install a new email server to send/receive messages from every federal worker. The acting director was forced out and replaced by Charles Ezell, who then let DOGE wall off an area and keep out permanent agency staff. DOGE also brought in a slew of HR executives from startups who seemingly expected the agency to work for the entire federal government in the same way that HR operates within a single company. And so, they started acting like OPM had more centralized authority: ordering workers to the "five things" email; blasting [commands to human capital officers at other agencies](https://www.chcoc.gov/transmittals); asking for lists of workers so they could command agencies to fire probationary workers and short-cut established procedures for reductions in force. OPM used to be deliberative and formal with its rulemaking - the new OPM was fond of sending out memos to all agencies on Wednesdays demanding a response by Friday. None of this was normal; some of it was [probably illegal](https://www.npr.org/2025/03/13/nx-s1-5325959/federal-employees-court-firing). And the breach in trust has been irrevocable.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - OPM
   documents: []
 - id: coe-detail-epa
   type: detailed
@@ -20795,6 +20921,78 @@
     comment:
     file: onboard-hhs-brad-smith.pdf
     url: "/documents/onboard-hhs-brad-smith.pdf"
+- id: ssa-employee-11
+  type: appointed
+  agency_id: SSA
+  name: John Solly
+  doge_alias_id: SSA-11
+  from_agency_id:
+  from_truth:
+  start_date: '2025-03-16'
+  start_date_truth: verified
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-03-16'
+  nte_date: '2026-03-15'
+  nte_date_truth: verified
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade: ED-00
+  salary: "$162,672"
+  pd_code: KNX0390
+  sge:
+  excepted:
+  title: Expert
+  title_type: advisor
+  series:
+  supervisory:
+  office: Office of the Chief Information Officer
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+  source_name: court doc
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications: >
+    is a Senior Software Engineer with over ten years of experience building cloud-native geospatial  solutions. Adept at architecting geospatial infrastructures,
+    implementing geospatial algorithms, and leading full- stack development. Experienced in collaborating with cross-functional teams to deliver mission-critical
+    capabilities  and driving technical decisions and best practices.
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: SSA
+    name: Social Security Administration
+    slug: ssa
+    page_slug: social-security
+    short_name: SSA
+    doge_base: true
+    blurb:
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/social-security"
+  agency_and_parent:
+  - SSA
+  documents:
+  - id: onboard-ssa-employee-11
+    name:
+    type: onboard
+    alias: SSA-11
+    date:
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+    case_no: 1:25-cv-00596
+    comment:
+    file: onboard-ssa-employee-11.pdf
+    url: "/documents/onboard-ssa-employee-11.pdf"
 - id: labor-sonderling
   type: appointed
   agency_id: DOL
@@ -23779,66 +23977,4 @@
     path: "/agencies/opm"
   agency_and_parent:
   - OPM
-  documents: []
-- id: ssa-employee-11
-  type: appointed
-  agency_id: SSA
-  name:
-  doge_alias_id: SSA-11
-  from_agency_id:
-  from_truth:
-  start_date: '2025-03-16'
-  start_date_truth: verified
-  start_date_event:
-  start_source:
-  start_source_name:
-  end_date:
-  end_date_truth:
-  end_date_event:
-  end_source:
-  end_source_name:
-  end_type:
-  sort_date: '2025-03-16'
-  nte_date: '2026-03-15'
-  nte_date_truth: verified
-  signed_date:
-  description:
-  fuzz:
-  appt_type_code:
-  appt_type:
-  pay_grade: ED-00
-  salary: "$162,672"
-  pd_code: KNX0390
-  sge:
-  excepted:
-  title: Expert
-  title_type: advisor
-  series:
-  supervisory:
-  office: Office of the Chief Information Officer
-  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
-  source_name: court doc
-  reimbursed:
-  reimbursement_amount:
-  comment:
-  qualifications: >
-    is a Senior Software Engineer with over ten years of experience building cloud-native geospatial  solutions. Adept at architecting geospatial infrastructures,
-    implementing geospatial algorithms, and leading full- stack development. Experienced in collaborating with cross-functional teams to deliver mission-critical
-    capabilities  and driving technical decisions and best practices.
-  table_note:
-  replaced_by:
-  same_as:
-  agency:
-    id: SSA
-    name: Social Security Administration
-    slug: ssa
-    page_slug: social-security
-    short_name: SSA
-    doge_base: true
-    blurb:
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/social-security"
-  agency_and_parent:
-  - SSA
   documents: []

@@ -117,6 +117,11 @@
 - positions:
     -  **DOGE** (2025-01-(23)~ to 2025-05-29) General Counsel
 
+# Brian Burroughs
+- category: unknown
+- positions:
+    -  **GSA** (2025-06-XX to ??) 
+
 # Nate Cavanaugh
 - category: wrecker
 - positions:
@@ -140,6 +145,11 @@
 - category: support
 - positions:
     -  **GSA** (2025-05-XX to ??) 
+
+# Yat Choi
+- category: unknown
+- positions:
+    -  **OPM** (2025-06-XX to ??) 
 
 # Carl Coe
 - category: enabler
@@ -950,6 +960,11 @@
     -  **DOGE** (2025-02-XX to ??) 
     -  **HHS** (2025-02-XX to 2025-03-04) 
     -  **HHS** (2025-03-04 to 2025-05-23) Senior Advisor
+
+# John Solly
+- category: wrecker
+- positions:
+    -  **SSA** (2025-03-16 to NTE 2026-03-15) [as "SSA-11"] Expert ED-00 $162,672
 
 # Keith Sonderling
 - category: enabler
