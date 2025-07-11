@@ -310,7 +310,7 @@ end %}
    end
 %}
 
-{% macro "category_link" do |cat| 
+{% macro "DISABLEcategory_link" do |cat| 
   case cat
   when 'wrecker'
     '<a class="link-hover" href="/people/wreckers">Wrecker</a>'

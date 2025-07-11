@@ -1,0 +1,14 @@
+{% case category %}
+{% when 'wrecker' %}
+  <a class="link-hover" href="/people/wreckers">Wrecker</a>
+{% when 'leadership' %}
+  <a class="link-hover" href="/people/leaders">Leader</a>
+{% when 'booster' %}
+  <a class="link-hover" href="/people/leaders">Booster</a>
+{% when 'support' %}
+  <a class="link-hover" href="/people/support-team">Support</a>
+{% when 'enabler' %}
+  <a class="link-hover" href="/people/enablers">Enabler</a>
+{% else %}
+  <a class="link-hover" href="/people/unknowns">Unknown</a>
+{% end %}
