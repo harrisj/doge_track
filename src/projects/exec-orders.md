@@ -10,10 +10,10 @@ From the very beginning, all of DOGE's influences and responsibilities have been
 This page lists the executive orders that have been applicable to DOGE's actions.
 
 {% site.data.executive_orders.each do |eo| %}
-<table class="table table-sm lg:table-md border-4">
+<table class="table table-sm lg:table-md border-4" id="eo-{{ eo.id }}">
 <tbody>
   <tr>
-  <th colspan="100%" class="text-base sm:text-lg align-top w-10/12"><a class="link-hover" href="{{ eo.link }}">EO {{ eo.id }}: {{ eo.title }}</a></th>
+  <th colspan="100%" class="text-base sm:text-lg align-top w-10/12"><a class="link-hover" href="{{ eo.link }}">EO {{ eo.id }}: {{ eo.title }}</a> <a class="permalink" href="#eo-{{ eo.id }}"><i class="fa-sharp fa-solid fa-link"></i></a></th>
   </tr>
 
   <tr>

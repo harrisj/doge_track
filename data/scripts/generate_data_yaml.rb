@@ -49,6 +49,10 @@ end
 def linkify_text(text)
   out = text.dup
 
+  ExecutiveOrder.each do |eo|
+    out.gsub!(/\bEO #{eo.id}\b/, internal_link("/projects/exec-orders/#eo-#{eo.id}", "EO #{eo.id}"))
+  end
+
   Person.each do |person|
     out.gsub!(/\b#{person.name}\b/, internal_link(person_url(person), person.name))
   end
