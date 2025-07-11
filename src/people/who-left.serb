@@ -67,7 +67,7 @@ In addition, there are some cases where we also know DOGE staff have left positi
       <td class="hidden sm:table-cell align-top"><i class="fa-sharp fa-solid {{ person_icon(pos.person) }}"></i> {{ pos.person.category | titleize }}</td>
       <td class="align-top">{{ agency_link(pos.agency_id) }}</td>
       <td class="align-top">{{ EdtfFormat.new(pos.end_date, :compact ) | raw }}</td>
-      <td class="align-top">{{ position_end_type(pos) }}</td>
+      <td class="align-top">{{ position_end_type(pos) | raw }}</td>
     </tr>
     {% end %}
   </tbody>
