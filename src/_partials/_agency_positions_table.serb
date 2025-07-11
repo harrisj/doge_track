@@ -14,9 +14,9 @@
   <thead>
   <tr>
     <th class="text-left w-3/12 sm:w-2/12 md:text-base lg:text-lg">Position</th>
-    <th class="text-left w-1/12 hidden sm:table-cell md:text-base lg:text-lg">Date</th>
-    <th class="text-left w-3/12 md:text-base lg:text-lg">Person</th>
-    <th class="text-left w-6/12 sm:w-auto md:text-base lg:text-lg">Notes</th>
+    <th class="text-left w-2/12 hidden sm:table-cell md:text-base lg:text-lg">Date</th>
+    <th class="text-left hidden sm:table-cell w-3/12 sm:w-2/12 md:text-base lg:text-lg">Person</th>
+    <th class="text-left w-9/12 sm:w-6/12 sm:w-auto md:text-base lg:text-lg">Notes</th>
   </tr>
   </thead>
   <tbody class="">
@@ -30,8 +30,8 @@
           {% if pos.start_date || pos.end_date %}<div class="md:text-nowrap">{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}</div>{% end %}
           {% if pos.end_date && position_end_type(pos) %}<div>{% if pos.person && !pos.person.govt_exit_date.nil? %}<strong>Left DOGE</strong>{% else %}{{ position_end_type(pos) | raw }}{% end %}</div>{% end %}
         </td>
-        <td class="align-top">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.doge_alias_id %}{{ alias_link(pos.doge_alias_id) }}{% end %}</td>
-        <td class="align-top">{{ position_summary(pos) | md | strip_p}}</td>
+        <td class="align-top hidden sm:table-cell">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.doge_alias_id %}{{ alias_link(pos.doge_alias_id) }}{% end %}</td>
+        <td class="align-top"><div class="sm:hidden">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.doge_alias_id %}{{ alias_link(pos.doge_alias_id) }}{% end %}</div>{{ position_summary(pos) | md | strip_p}}</td>
       </tr>
     {% end %}
     {% if agency && undated_positions.any? %}
