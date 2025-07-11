@@ -1612,12 +1612,16 @@
   category: enabler
   blurb: |-
     Before the Trump inauguration, Charles Ezell's title was Branch Chief for OPM's Data & Analytics division located in Macon, GA. Through circumstances currently unknown, he was named the new Acting Director for the agency on January 20th. Since then, he has used his position to be the quintessential [enabler](/people/enablers/), providing cover (and sometimes firepower) to ensure the DOGE is able to get its way within the agency. Ths included such work as immediately replacing the CIO with Greg Hogan or issuing directives asking for data on probationary workers or other data calls with ridiculously tight deadlines. At some times, even Ezell seemed like he was caught flat-footed by DOGE's plans, including the confusing rollouts for the "Fork in the Road" or the "Five Things" emails. He also has wildly overstated the control that OPM has over federal hiring and firing.
-    He certainly has done the most work for DOGE of any acting administrator. Perhaps this is why he's still in the role months later, with nominee Scott Kupor still waiting for a floor vote in the Senate.
+
+    He certainly has done the most work for DOGE of any acting administrator. Perhaps this is why he was still in the role months later, with nominee Scott Kupor not being confirmed by the Senate until July 9th.
   positions:
   - id: opm-ezell
     type: promotion
     start_date: 2025-01-20
     start_date_truth: verified
+    end_date: 2025-07-09
+    end_date_truth: inferred
+    table_note: Replaced by Scott Kupor's appointment
     title: Acting Director
     title_type: director
     agency: OPM
@@ -3197,9 +3201,20 @@
   - Andreessen Horowitz
   blurb: >-
     A managing partner at Andreesen Horowitz, Scott Kupor was advanced by a Senate committee as the nomination
-    for the permanent head of the OPM to replace Charles Ezell. However, his nomination still has not
-    come up for a floor vote in the Senate.
-  positions: []
+    for the permanent head of the OPM to replace Charles Ezell. Now that he has finally been confirmed
+    to the role in July, many expect him to be the new driver of the administration's efforts to decimate
+    the federal workforce.
+  positions:
+  - id: opm-kupor
+    type: appointed
+    agency: OPM
+    start_date: 2025-07-09
+    start_date_truth: verified
+    title: Director
+    title_type: director
+    source: >-
+      https://federalnewsnetwork.com/congress/2025/07/senate-confirms-new-opm-director-to-take-the-reins-on-federal-workforce-overhauls/
+    source_name: Fed. News Network
 
 - name: Nicholas Lahera
   sort_name: Lahera

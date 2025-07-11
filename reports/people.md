@@ -283,7 +283,7 @@
 # Charles Ezell
 - category: enabler
 - positions:
-    -  **OPM** (2025-01-20 to ??) Acting Director
+    -  **OPM** (2025-01-20 to 2025-07-09) Acting Director
         - website: Agency Website: 2025-01-20 - ongoing
         - STAMP: STAMP: 2025-01-24 - ongoing
 
@@ -575,6 +575,8 @@
 
 # Scott Kupor
 - category: enabler
+- positions:
+    -  **OPM** (2025-07-09 to ??) Director
 
 # Nicholas Lahera
 - category: unknown
