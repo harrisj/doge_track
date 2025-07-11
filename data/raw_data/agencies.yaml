@@ -467,12 +467,13 @@
   short_name: Commerce
   slug: commerce
   page_slug: self
-  blurb: >-
-    DOGE made an early foray into the agency with a visit to the headquarters of the National Oceanic
-    and Atmospheric Administration (NOAA), but their presence at Commerce has seemed relatively muted
-    in comparison to other agencies. However, DOGE has had a staunch ally in Commerce Secretary Howard
-    Lutnick and reseachers are getting increasingly alarmed about DOGE interfering with the operations
-    of the Census.
+  blurb: |
+    DOGE made an early foray into the agency with a visit to the headquarters of the National Oceanic and Atmospheric Administration (NOAA), but their presence at Commerce has seemed relatively muted in comparison to other agencies. However, DOGE has had a staunch ally in Commerce Secretary Howard Lutnick and reseachers are getting increasingly alarmed about DOGE interfering with the operations of the Census.
+
+    The Commerce Department contains the following important subagencies that have been affected by DOGE:
+    - **The Census Department** conducts the national census every 10 years (important for redistricting) as well as other important surveys of the American public.
+    - **National Institute of Standards and Technologies (NIST)** sets standards for technical products in industry (and references for units of measure). It also defines the cybersecurity requirements for software used in the federal government.
+    - **National Oceanic and Atmospheric Administration (NOAA)** is most prominently known for its role in weather forecasting and climate modeling. It also charts the oceans and manages fisheries around the US.
   doge_base: true
   events:
   - date: 2025-02-05
@@ -488,7 +489,8 @@
     type: sighting
     event: >-
       Michael Grimes conducts DOGE-style interviews with each member of the staff in the Chips Program
-      Office
+      Office. This group administers grants following the CHIPS and Science Act of 2022 (signed by Biden)
+      to encourage semiconductor manufacturing in the US.
     named:
     - Michael Grimes
     source: https://www.ft.com/content/21ad2223-2a7f-44d4-8004-38956597bb9d
@@ -5663,6 +5665,7 @@
   short_name: NIST
   page_slug: commerce
   id: NIST
+  parent_id: Commerce
   events:
   - date: 2025-02-14
     type: sighting
@@ -5675,7 +5678,7 @@
     agency: NIST
     id: TRTyxS2E
   - date: 2025-04-02
-    type: official
+    type: oversight
     event: >-
       A group of 22 house members send a letter to Commerce Secretary Lutnick expressing concern about
       the firing of 70 staffers at NIST

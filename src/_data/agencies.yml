@@ -160,15 +160,19 @@
   page_slug: self
   short_name: Commerce
   doge_base: true
-  blurb: >-
-    DOGE made an early foray into the agency with a visit to the headquarters of the National Oceanic and Atmospheric Administration (NOAA), but their presence
-    at Commerce has seemed relatively muted in comparison to other agencies. However, DOGE has had a staunch ally in Commerce Secretary Howard Lutnick and
-    reseachers are getting increasingly alarmed about DOGE interfering with the operations of the Census.
+  blurb: |
+    DOGE made an early foray into the agency with a visit to the headquarters of the National Oceanic and Atmospheric Administration (NOAA), but their presence at Commerce has seemed relatively muted in comparison to other agencies. However, DOGE has had a staunch ally in Commerce Secretary Howard Lutnick and reseachers are getting increasingly alarmed about DOGE interfering with the operations of the Census.
+
+    The Commerce Department contains the following important subagencies that have been affected by DOGE:
+    - **The Census Department** conducts the national census every 10 years (important for redistricting) as well as other important surveys of the American public.
+    - **National Institute of Standards and Technologies (NIST)** sets standards for technical products in industry (and references for units of measure). It also defines the cybersecurity requirements for software used in the federal government.
+    - **National Oceanic and Atmospheric Administration (NOAA)** is most prominently known for its role in weather forecasting and climate modeling. It also charts the oceans and manages fisheries around the US.
   parent_id:
   path: "/agencies/commerce"
   children:
   - Census
   - NOAA
+  - NIST
   position_ids:
   - detail-opm-noaa-rajpal
   - commerce-michael-grimes
@@ -177,7 +181,9 @@
   event_ids:
   - CvdXhiXD
   - 7kf2GFmh
+  - TRTyxS2E
   - dqDnwCxi
+  - HoTTKNtS
   - 6ywSOwFF
   - 7kWAzJ0K
   - 3zmjW3zT
@@ -186,12 +192,13 @@
   system_access:
   - google-noaa-rajpal
   obj_type: Agency
-  linkified_blurb: >
-    <a class="link-hover" href="/agencies/white-house">DOGE</a> made an early foray into the agency with a visit to the headquarters of the <a class="link-hover"
-    href="/agencies/commerce">National Oceanic and Atmospheric Administration</a> (NOAA), but their presence at Commerce has seemed relatively muted in
-    comparison to other agencies. However, <a class="link-hover" href="/agencies/white-house">DOGE</a> has had a staunch ally in Commerce Secretary Howard
-    Lutnick and reseachers are getting increasingly alarmed about <a class="link-hover" href="/agencies/white-house">DOGE</a> interfering with the operations
-    of the Census.
+  linkified_blurb: |
+    <a class="link-hover" href="/agencies/white-house">DOGE</a> made an early foray into the agency with a visit to the headquarters of the <a class="link-hover" href="/agencies/commerce">National Oceanic and Atmospheric Administration</a> (NOAA), but their presence at Commerce has seemed relatively muted in comparison to other agencies. However, <a class="link-hover" href="/agencies/white-house">DOGE</a> has had a staunch ally in Commerce Secretary Howard Lutnick and reseachers are getting increasingly alarmed about <a class="link-hover" href="/agencies/white-house">DOGE</a> interfering with the operations of the Census.
+
+    The <a class="link-hover" href="/agencies/commerce">Commerce Department</a> contains the following important subagencies that have been affected by DOGE:
+    - <strong>The Census Department</strong> conducts the national census every 10 years (important for redistricting) as well as other important surveys of the American public.
+    - <strong>National Institute of Standards and Technologies (NIST)</strong> sets standards for technical products in industry (and references for units of measure). It also defines the cybersecurity requirements for software used in the federal government.
+    - <strong><a class="link-hover" href="/agencies/commerce">National Oceanic and Atmospheric Administration</a> (NOAA)</strong> is most prominently known for its role in weather forecasting and climate modeling. It also charts the oceans and manages fisheries around the US.
 - id: CDFIF
   name: Community Development Financial Institutions Fund
   slug: cdfif
@@ -2198,7 +2205,7 @@
   short_name: NIST
   doge_base: false
   blurb:
-  parent_id:
+  parent_id: Commerce
   path: "/agencies/commerce"
   children: []
   position_ids: []

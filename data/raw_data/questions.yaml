@@ -8,6 +8,8 @@
     of the radar. It's possible that he might be one of DOGE staff embedded in SSA or is working quietly
     in other agencies.
   date: 2025-05-15
+  answer: I confirmed that Nikhil Rajpal was detailed into the SSA, where he has been part of the team
+    there.
   id: 1irW2fJK
 
 - name: Greg Hogan
@@ -28,6 +30,9 @@
     In a recent opinion in AFGE v. OPM, Judge Cote states about Amanda Scales. "She no longer occupies
     that role, and it does not appear that she works at OPM any longer." I know that Scales was demoted
     in mid-March, was that actually because she was leaving?
+  answer: >-
+    I was able to infer when Amanda Scales left based on both a demotion from her Chief of Staff role
+    and the dates offered on her LinkedIn
   id: 2Ricpd7F
 
 - name: Carl Coe
@@ -105,6 +110,14 @@
     from a single tweet. What have they been up to there?
   id: iUew36HG
 
+- agency_id: Commerce
+  question: Who else from DOGE was detailed to the Department of Commerce?
+  context: >-
+    There were reports in early February of DOGE visiting multiple Commerce Department agencies, but Nikhil
+    Rajpal was the only person identified at that time. Who else was involved?
+  date: 2025-07-10
+  id: 3lXKctFn
+
 - agency_id: USDA
   question: Has DOGE tried to seize control of the National Finance Center operations at the USDA?
   context: >-
@@ -135,6 +148,16 @@
     there?
   id: 793PHbbX
 
+- event_id: MXinRonY
+  question: >-
+    Why did Jeremy Lewin send an email with planning information about the CFPB RIF to Alexandra Beynon
+    (at Education) and Zach Terrell (at HHS)?
+  context: >-
+    They have no known link to the CFPB nor have they been linked to past RIFs. Were they included here
+    as representatives of their agencies or just sent that because those were emails they were checking?
+  date: 2025-06-23
+  id: 3faIdKQU
+
 - name: Jennifer Balajadia
   question: Is Jennifer Balajadia still in DOGE? Is she still at Education?
   context: >-
@@ -157,20 +180,11 @@
   date: 2025-06-23
   id: xpTRcHXQ
 
-- position_id: doge-adam-ramada
-  question: Can we find more details on Adam Ramada's position within DOGE?
-  date: 2025-06-23
-  id: 4fN12w8Q
-
-- event_id: MXinRonY
+- name: Christopher Stanley
   question: >-
-    Why did Jeremy Lewin send an email with planning information about the CFPB RIF to Alexandra Beynon
-    (at Education) and Zach Terrell (at HHS)?
-  context: >-
-    They have no known link to the CFPB nor have they been linked to past RIFs. Were they included here
-    as representatives of their agencies or just sent that because those were emails they were checking?
-  date: 2025-06-23
-  id: 3faIdKQU
+    Christopher Stanley has reportedly left DOGE in the wake of Musk's departure. Are there more details?
+  date: 2025-07-10
+  id: 5OGfpDrS
 
 - name: Edward Coristine
   question: >-
@@ -178,3 +192,8 @@
     ended? How many of them were still open?
   date: 2025-06-25
   id: 2iH7ggP7
+
+- position_id: doge-adam-ramada
+  question: Can we find more details on Adam Ramada's position within DOGE?
+  date: 2025-06-23
+  id: 4fN12w8Q
