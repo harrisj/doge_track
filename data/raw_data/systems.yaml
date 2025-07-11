@@ -2013,6 +2013,33 @@
     source: https://www.wired.com/story/doge-access-immigration-data-department-of-labor/
     source_name: Wired
 
+- name: National Payment Service
+  id: NPS
+  acronym: NPS
+  type: internal
+  category: payments
+  theme: spending
+  agency: USDA
+  description: >-
+    A system which tracks information about payments and loans for farmers, ranchers and other agricultural
+    producers. The Farm Service Agency already provides public data extracts, so this system would only
+    be used to get access to sensitive information in loan applications and disbursements. It might also
+    possibly be used in DOGE's anti-immigration efforts.
+  risk: >-
+    Sensitive PII like names, SSNs and addresses; private financial info in loan applications; race and
+    demographic information for groups that had been previously discriminated against by the USDA. Info
+    about farms and ranches that employ seasonal migrant workers.
+  population: Any farm or agricultural producer that has applied for a loan or received a payment from
+    the USDA
+  access:
+  - id: nps-wick
+    name: Jordan Wick
+    type: admin
+    date_granted: 2025-04-XX
+    date_grant_truth: reported
+    source: https://www.npr.org/2025/07/10/nx-s1-5455779/doge-usda-farmers-data
+    source_name: NPR
+
 - name: National SNAP Information Database
   id: NSID
   acronym: NSID

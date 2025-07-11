@@ -144,6 +144,9 @@
   - **Gavin Kliger** (2025-02-(01)~) (detailed from OPM)
   - **Jordan Wick** (2025-02-(01)~) (detailed from DOGE)
   - **Michael Cole** (2025-02-10) Senior Team Leader on Government Efficiency
+- systems:
+    - NPS: National Payment Service
+        - Jordan Wick **[admin access]** 2025-04-XX - ongoing
 
 # Department of Defense
 - slug: defense

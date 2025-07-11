@@ -1574,6 +1574,33 @@
   - Miles Collins
   access_ids:
   - njfp-collins
+- id: NPS
+  acronym: NPS
+  name: National Payment Service
+  type: internal
+  description: >-
+    A system which tracks information about payments and loans for farmers, ranchers and other agricultural producers. The Farm Service Agency already provides
+    public data extracts, so this system would only be used to get access to sensitive information in loan applications and disbursements. It might also
+    possibly be used in DOGE's anti-immigration efforts.
+  comment:
+  category: payments
+  theme: spending
+  population: Any farm or agricultural producer that has applied for a loan or received a payment from the USDA
+  risk: >-
+    Sensitive PII like names, SSNs and addresses; private financial info in loan applications; race and demographic information for groups that had been
+    previously discriminated against by the USDA. Info about farms and ranches that employ seasonal migrant workers.
+  link:
+  pia:
+  sorn:
+  agency_id: USDA
+  doge_created: false
+  doge_modifications:
+  all_agency_ids:
+  - USDA
+  all_names:
+  - Jordan Wick
+  access_ids:
+  - nps-wick
 - id: NSID
   acronym: NSID
   name: National SNAP Information Database

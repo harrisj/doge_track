@@ -1060,6 +1060,7 @@
 - positions:
     -  **DOGE** (2025-01-(20)~ to ??) 
     -  **USDA** (2025-02-(01)~ to ??) 
+        - NPS: National Payment Service **[admin access]**: 2025-04-XX - ongoing
     -  **CFPB** (2025-02-07 to 2025-03-04) 
         - Concur: Concur: 2025-02-07 - 2025-03-28
         - DI: Data Insight: 2025-02-07 - 2025-03-28
