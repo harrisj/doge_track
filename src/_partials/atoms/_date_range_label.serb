@@ -1,0 +1,1 @@
+{% if first || last %}<div class="md:text-nowrap">{{ render EdtfFormat.new(first, :compact, :none) }}{%if last %}-{{ render EdtfFormat.new(last, :compact) }}{% end %}</div>{% end %}

@@ -27,7 +27,7 @@
           {% if pos.end_date && position_end_type(pos) %}<div class="sm:hidden">{% if pos.person && !pos.person.govt_exit_date.nil? %}<strong>Left DOGE</strong>{% else %}{{ position_end_type(pos) | raw }}{% end %}</div>{% end %}
         </td>
         <td class="align-top hidden sm:table-cell">
-          {% if pos.start_date || pos.end_date %}<div class="md:text-nowrap">{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}</div>{% end %}
+          {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}
           {% if pos.end_date && position_end_type(pos) %}<div>{% if pos.person && !pos.person.govt_exit_date.nil? %}<strong>Left DOGE</strong>{% else %}{{ position_end_type(pos) | raw }}{% end %}</div>{% end %}
         </td>
         <td class="align-top hidden sm:table-cell">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.doge_alias_id %}{{ alias_link(pos.doge_alias_id) }}{% end %}</td>
