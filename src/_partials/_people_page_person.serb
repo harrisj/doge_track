@@ -29,7 +29,7 @@
     {% if person.system_roles.any? %}
       <div class="mt-3">
         <h3 class="mb-0 mt-0 h3">Systems</h3>
-        {%@ 'person_systems_table', roles: person.system_roles %}
+        {%@ 'tables/person_systems', roles: person.system_roles %}
       </div>
     {% end %}
 
