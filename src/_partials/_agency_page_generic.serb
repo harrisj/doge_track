@@ -2,7 +2,7 @@
 
 <div class="mb-10 mt-1">
 {% agency = find_agency(id) %}
-{%@ 'agency_title', agency: agency, id: agency.slug %}
+{%@ 'atoms/agency_title', agency: agency, id: agency.slug %}
 
 {% if agency.linkified_blurb %}
   <div class="my-text">{{ agency.linkified_blurb | md  }}</div>

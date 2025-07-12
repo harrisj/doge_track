@@ -22,16 +22,17 @@
   <tbody class="">
     {% dated_positions.sort_by(&:sort_date).each do |pos| %}
       <tr class="font-sans" id="{{ pos.id }}">
-        <td class="align-top">{%@ 'atoms/position_move_label', position: pos %}
-          <div class="sm:hidden">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% end %}</div>
-          {% if pos.end_date && position_end_type(pos) %}<div class="sm:hidden">{% if pos.person && !pos.person.govt_exit_date.nil? %}<strong>Left DOGE</strong>{% else %}{{ position_end_type(pos) | raw }}{% end %}</div>{% end %}
+        <td class="align-top">
+          {%@ 'atoms/position_move_label', position: pos %}
+          <div class="sm:hidden">{%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}</div>
+          <div class="sm:hidden">{%@ 'atoms/doge_exit_label', position: pos %}</div>
         </td>
         <td class="align-top hidden sm:table-cell">
           {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}
-          {% if pos.end_date && position_end_type(pos) %}<div>{% if pos.person && !pos.person.govt_exit_date.nil? %}<strong>Left DOGE</strong>{% else %}{{ position_end_type(pos) | raw }}{% end %}</div>{% end %}
+          {%@ 'atoms/doge_exit_label', position: pos %}
         </td>
-        <td class="align-top hidden sm:table-cell">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.doge_alias_id %}{{ alias_link(pos.doge_alias_id) }}{% end %}</td>
-        <td class="align-top"><div class="sm:hidden">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.doge_alias_id %}{{ alias_link(pos.doge_alias_id) }}{% end %}</div>{{ position_summary(pos) | md | strip_p}}</td>
+        <td class="align-top hidden sm:table-cell">{%@ 'atoms/position_person_link', position: pos %}</td>
+        <td class="align-top"><div class="sm:hidden">{%@ 'atoms/position_person_link', position: pos %}</div>{{ position_summary(pos) | md | strip_p}}</td>
       </tr>
     {% end %}
     {% if agency && undated_positions.any? %}
