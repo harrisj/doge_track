@@ -18,7 +18,7 @@
       <div class="sm:hidden">{{ agency_link(role.agency_id) }}</div>
       </td>
       <td class="align-top hidden sm:table-cell py-2 text-nowrap">{%@ 'atoms/date_range_label', first: role.date_granted, last: role.date_revoked %}</td>
-      <td class="align-top font-sans py-2">{%@ 'system_role_summary', role: role %}</td>
+      <td class="align-top font-sans py-2">{%@ 'molecules/system_role_summary', role: role %}</td>
     </tr>
     {% end %}
   </tbody>
