@@ -328,7 +328,7 @@ end %}
 end
 %}
 
-{% macro "position_move" do |pos| 
+{% macro "DISABLED_position_move" do |pos| 
   if pos.agency_id
     raise pos.inspect if pos.agency.nil?
     

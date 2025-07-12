@@ -1,0 +1,18 @@
+{% if position.agency_id %}
+  {% raise position.inspect if position.agency.nil? %}
+  
+  <span class="text-nowrap">{% if position.from_agency_id %}
+    {% arrow = position.type == 'internal' ? 'arrows-left-right' : 'arrow-right' %}
+    {{ agency_link(position.from_agency_id, position.from_agency.short_name) }}{% if position.from_truth == 'guessed' %}?{% end %} <i class="fa-sharp fa-solid fa-{{ arrow }}"></i> {{ agency_link(position.agency_id, position.agency.short_name) }}
+  {% elsif position.type == 'appointed' || position.type == 'consultant' %}
+    <i class="fa-sharp fa-solid fa-person-to-door"></i> {{ agency_link(position.agency_id, position.agency.short_name) }}
+  {% elsif position.type == 'promotion' %}
+    <i class="fa-sharp fa-solid fa-up"></i> {{ agency_link(position.agency_id, position.agency.short_name) }}
+  {% elsif position.type == 'demotion' %}
+    <i class="fa-sharp fa-solid fa-down"></i> {{ agency_link(position.agency_id, position.agency.short_name) }}
+  {% elsif position.type == 'converted' %}
+    <i class="fa-sharp fa-solid fa-person-shelter"></i> {{ agency_link(position.agency_id, position.agency.short_name) }}
+  {% else %}
+    {{ agency_link(position.agency_id, position.agency.short_name) }}
+  {% end %}</span>
+{% end %}
