@@ -3,7 +3,7 @@ layout: docs
 title: Who's Involved in DOGE
 description: An alphabetical listing of all the people being tracked as part of the DOGE tracker
 ---
-{%@ 'title', title: "Who's Involved in DOGE" %}
+{%@ 'atoms/title', title: "Who's Involved in DOGE" %}
 
 This page provides a single overview of everybody who is is my database of DOGE affiliates. To better understand the types of roles I've seen within DOGE, I have sorted them into several distinct categories of my own design. These are demarcated with specific icons in tables and text where convenient:
 

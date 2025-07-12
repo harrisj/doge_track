@@ -3,7 +3,7 @@ layout: page
 title: All The People
 description: An alphabetical listing of all the people being tracked as part of the DOGE tracker
 ---
-{%@ "title", title: "All The People" %}
+{%@ 'atoms/title', title: 'All The People' %}
 
 {% people = site.data.people.sort_by(&:sort_name) %}
 

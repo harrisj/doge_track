@@ -3,7 +3,7 @@ layout: page
 title: Agency Timeline
 description: An overview and timeline of DOGE's activities in various federal agencies.
 ---
-{%@ 'title', title: 'Agency Timeline' %}
+{%@ 'atoms/title', title: 'Agency Timeline' %}
 
 {% indies, majors = site.data.agencies.partition {|a| a.page_slug =~ /^independent/ } %}
 {% majors.reject! {|a| %w[DOGE EOP].include?(a.id) } %}

@@ -4,7 +4,7 @@ title: Who Has Left?
 description: It has always been easier to track when DOGE staff have arrived at an agency vs. when they have left. They often tend to retain access to systems and networks, even when they have moved on. This page collects departures that we know about.
 ---
 {% import 'macros' %}
-{%@ 'title', title: "Who Has Left?" %}
+{%@ 'atoms/title', title: "Who Has Left?" %}
 
 {%@ 'text' do %}
 It has always been easier to track when DOGE staff have arrived at an agency vs. when they have left. For instance, when a wrecker like {{ person_link("Gavin Kliger") }} starts working at an agency, they might retain access (and an agency laptop) long after they've left the building. DOGE has also been purposefully opaque about departures, since they might puncture the aura of invulnerability they have been trying to project. But, with time and details that have emerged from reporting and court filings, we are starting to get a better picture of who has left agencies.

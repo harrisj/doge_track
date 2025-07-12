@@ -3,7 +3,7 @@ layout: page
 title: Unknowns
 description: Sometimes I have only a name or a single event linked to a DOGE staffer but there are no other details. If you know more, let me know!
 ---
-{%@ "title", title: "Unknowns" %}
+{%@ '/atoms/title', title: "Unknowns" %}
 
 {%@ 'text' do %}
 There are a few DOGE staffers that have been identified in individual reports, but I have no other details about who they are or what they have done exactly.
