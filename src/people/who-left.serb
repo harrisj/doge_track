@@ -99,7 +99,7 @@ Here are the current positions which have NTE dates and have not ended (either t
   {% nte_positions.each do |pos| %}
     {% next unless pos.person %}
     <tr>
-      <td class="align-top"><span class="text-xs sm:text-nowrap">{{ position_move(pos) }}</span></td>
+      <td class="align-top">{%@ 'atoms/position_move_label', position: pos %}</td>
       <td class="align-top">{{ person_link(pos.person) }}</td>
       <td class="align-top hidden sm:table-cell"><span class="sm:text-nowrap">{{ EdtfFormat.new(pos.start_date, :compact_year) | raw }}</span></td>
       <td class="align-top"><span class="sm:text-nowrap {% if Date.edtf(pos.nte_date) < Date.today + 90 %}font-bold{% end %}">{{ EdtfFormat.new(pos.nte_date, :compact_year) | raw }}</span></td>

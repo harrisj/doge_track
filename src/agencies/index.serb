@@ -16,7 +16,7 @@ description: An overview and timeline of DOGE's activities in various federal ag
 {% end %}
 
 <div class="mt-2">
-{%@ 'agency_first_contacts', agencies: majors %}
+{%@ 'tables/agency_first_contacts', agencies: majors %}
 </div>
 </section>
 
@@ -28,6 +28,6 @@ The second fork of DOGE's project has been to harrass and shutdown multiple inde
 {% end %}
 
 <div class="mt-2">
-{%@ 'agency_first_contacts', agencies: indies %}
+{%@ 'tables/agency_first_contacts', agencies: indies %}
 </div>
 </section>

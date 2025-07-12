@@ -11,14 +11,14 @@
 {% if agency.positions.any? %}
 <h2 class="mt-4 mb-0 text-lg sm:text-xl md:text-2xl">Positions</h2>
 
-{%@ 'agency_positions_table', positions: agency.positions, agency: agency %}
+{%@ 'tables/agency_positions', positions: agency.positions, agency: agency %}
 {% end %}
 
 {% agency_roles = site.data.system_roles.select {|sr| sr.agency && (sr.agency.id == agency.id || sr.agency.parent_id == agency.id) } || [] %}
 {% if agency_roles.any? %}
 <h2 class="mt-4 mb-0 text-lg sm:text-xl md:text-2xl">Systems</h2>
 
-{%@ 'agency_system_access_table', roles: agency_roles, agency: agency %}
+{%@ 'tables/agency_system_access', roles: agency_roles, agency: agency %}
 {% end %}
 
 {% agency_events = site.data.events.find_all {|e| e.agencies_parents.include? agency.id } %}

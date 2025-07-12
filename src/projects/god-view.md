@@ -20,4 +20,4 @@ More recently, DOGE has focused these efforts to use as a tool against immigrant
 DOGE has also been focused on building a [master database to track and surveil immigrants](https://www.wired.com/story/doge-collecting-immigrant-data-surveil-track/) within DHS. It's unclear how much development work DOGE has been doing for this project vs. feeding data into existing data lakes and products from Palantir. There are a lot of unknowns about what data is being pulled into this system, how they are attempting to join wildly disparate data sets, how much this system is being validated or blindly trusted, and how this data collection could be wielded against other populations in America. There is a lot we don't know yet, but it doesn't sound good. The following systems are possible data sources for this panopticon:
 
 {% systems = site.data.systems.select {|s| s.theme == 'panopticon'} || [] %}
-{%@ 'project_systems_table', systems: systems %}
+{%@ 'tables/project_systems', systems: systems %}

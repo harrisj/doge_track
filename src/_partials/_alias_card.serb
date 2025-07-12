@@ -21,7 +21,7 @@
     {% if doge_alias.positions && doge_alias.positions.any? %}
     <div>
     <h3 class="h3 mt-5 mb-0">Positions:</h4>
-    {%@ 'person_positions_table', positions: doge_alias.positions %}
+    {%@ 'tables/person_positions', positions: doge_alias.positions %}
     </div>
     {% end %}
 

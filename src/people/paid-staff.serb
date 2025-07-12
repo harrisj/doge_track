@@ -12,5 +12,5 @@ There are multiple places where salary information could be sourced from. In som
 {% end %}
 
 {% paid_positions = site.data.positions.select {|pos| pos.salary && pos.salary != '$0' }.sort_by(&:sort_date) %}
-{%@ 'agency_positions_table', agency: nil, positions: paid_positions %}
+{%@ 'tables/agency_positions', agency: nil, positions: paid_positions %}
 

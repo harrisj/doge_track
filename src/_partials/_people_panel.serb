@@ -14,7 +14,7 @@
     {% if positions.any? %}
       <div class="mt-3">
         <h3 class="mb-0 mt-0 h3">Positions</h3>
-        {%@ 'agency_positions_table', positions: positions, agency: nil %}
+        {%@ 'tables/agency_positions', positions: positions, agency: nil %}
       </div>
     {% end %}
 
@@ -22,7 +22,7 @@
     {% if system_roles.any? %}
       <div class="mt-3">
         <h3 class="mb-0 mt-0 h3">Systems</h3>
-        {%@ 'agency_system_access_table', roles: system_roles %}
+        {%@ 'tables/agency_system_access', roles: system_roles %}
       </div>
     {% end %}
 

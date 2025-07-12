@@ -38,7 +38,7 @@ This is not a definitive list of all changes to the project (completists can alw
 <h2 class="text-lg mt:2">Positions Added</h2>
 
 {% positions = rec.positions.map {|e_id| site.data.positions.find {|x| x.id == e_id}}.compact %}
-{%@ 'agency_positions_table', positions: positions, agency: nil%}
+{%@ 'tables/agency_positions', positions: positions, agency: nil%}
 {% end %}
 
 {% if rec.events.any? %}
