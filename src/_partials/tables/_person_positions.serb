@@ -10,7 +10,6 @@
   </thead>
   <tbody class="">
     {% positions.each do |pos| %}
-    {% summary = position_summary(pos) %}
     <tr class="font-sans" id="{{ pos.id }}">
       <td class="align-top"><div class="sm:inline-block>{%@ 'atoms/position_move_label', position: pos %}</div>
         <div class="sm:hidden">
@@ -22,7 +21,7 @@
         {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}
         {% if pos.end_date && position_end_type(pos) %}<div>{% if pos.person && !pos.person.govt_exit_date.nil? %}<strong>Left DOGE</strong>{% else %}{{ position_end_type(pos) | raw }}{% end %}</div>{% end %}
       </td>
-      <td class="align-top">{{ position_summary(pos) | md | strip_p }}</td>
+      <td class="align-top">{%@ 'molecules/position_summary', position: pos %}</td>
     </tr>
     {% end %}
   </tbody>
