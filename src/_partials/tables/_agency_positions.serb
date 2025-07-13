@@ -13,10 +13,9 @@
 <table class="table table-fixed sm:table-auto table-xs sm:table-sm lg:table-md border-4 mb-0">
   <thead>
   <tr>
-    <th class="text-left w-3/12 sm:w-2/12 md:text-base lg:text-lg">Position</th>
-    <th class="text-left w-2/12 hidden sm:table-cell md:text-base lg:text-lg">Date</th>
-    <th class="text-left hidden sm:table-cell w-3/12 sm:w-2/12 md:text-base lg:text-lg">Person</th>
-    <th class="text-left w-9/12 sm:w-6/12 sm:w-auto md:text-base lg:text-lg">Notes</th>
+    <th class="text-left my-3col-table-col1 md:text-base lg:text-lg">Position</th>
+    <th class="text-left my-3col-table-col2 md:text-base lg:text-lg">Date</th>
+    <th class="text-left my-3col-table-col3 md:text-base lg:text-lg">Person</th>
   </tr>
   </thead>
   <tbody class="">
@@ -24,15 +23,14 @@
       <tr class="font-sans" id="{{ pos.id }}">
         <td class="align-top">
           {%@ 'atoms/position_move_label', position: pos %}
-          <div class="sm:hidden">{%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}</div>
-          <div class="sm:hidden">{%@ 'atoms/doge_exit_label', position: pos %}</div>
+          <div class="only-mobile">{%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}</div>
+          <div class="only-mobile">{%@ 'atoms/doge_exit_label', position: pos %}</div>
         </td>
-        <td class="align-top hidden sm:table-cell">
+        <td class="align-top hide-cell-mobile">
           {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}
           {%@ 'atoms/doge_exit_label', position: pos %}
         </td>
-        <td class="align-top hidden sm:table-cell">{%@ 'atoms/position_person_link', position: pos %}</td>
-        <td class="align-top"><div class="sm:hidden">{%@ 'atoms/position_person_link', position: pos %}</div>{%@ 'molecules/position_summary', position: pos %}</td>
+        <td class="align-top"><div>{%@ 'atoms/position_person_link', position: pos %}</div>{%@ 'molecules/position_summary', position: pos %}</td>
       </tr>
     {% end %}
     {% if agency && undated_positions.any? %}
@@ -43,7 +41,7 @@
       {% grouped_undated = to_agency.group_by {|pos| [pos.agency_id, pos.type, pos.from_agency_id || ''] } %}
       {% grouped_undated.sort_by {|grp, _| grp[2]}.each do |grp, positions| %}
         <tr class="font-sans">
-        <td class="align-top hidden sm:table-cell"/>
+        <td class="align-top hide-cell-mobile"/>
         <td class="align-top">{%@ 'atoms/position_move_label', position: positions[0] %}</td>
         <td colspan="2" class="align-top">{{ positions.map(&:person) | people_links }}</td>
         </tr>
@@ -51,7 +49,7 @@
       {% grouped_undated = from_agency.group_by {|pos| [pos.agency_id, pos.type, pos.from_agency_id || ''] } %}
       {% grouped_undated.sort_by {|grp, _| grp[0]}.each do |grp, positions| %}
         <tr class="font-sans">
-        <td class="align-top hidden sm:table-cell"/>
+        <td class="align-top hide-cell-mobile"/>
         <td class="align-top">{%@ 'atoms/position_move_label', position: positions[0] %}</td>
         <td colspan="2" class="align-top">{{ positions.map(&:person) | people_links }}</td>
         </tr>

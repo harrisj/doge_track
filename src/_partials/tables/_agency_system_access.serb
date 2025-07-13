@@ -4,32 +4,39 @@
 <table class="table table-fixed sm:table-auto table-xs sm:table-sm lg:table-md mb-0">
   <thead>
   <tr>
-    <th class="text-left w-3/12 sm:w-2/12 md:text-base lg:text-lg">System</th>
-    <th class="text-left w-2/12 hidden sm:table-cell md:text-base lg:text-lg">Date</th>
-    <th class="text-left w-2/12 hidden sm:table-cell md:text-base lg:text-lg">Person</th>
-    <th class="text-left w-9/12 sm:w-6/12 sm:w-auto md:text-base lg:text-lg">Notes</th>
+    <th class="text-left my-3col-table-col1 md:text-base lg:text-lg">System</th>
+    <th class="text-left my-3col-table-col2 md:text-base lg:text-lg">Dates</th>
+    <th class="text-left my-3col-table-col3 md:text-base lg:text-lg">Access</th>
   </tr>
   </thead>
   <tbody class="">
     {% govt_systems.each do |govt_system, sys_roles| %}
       {% next unless sys_roles.any? %}
+      {% min_date = sys_roles.map(&:date_granted).compact.min %}
+      {% max_date = sys_roles.map(&:date_revoked).compact.max unless sys_roles.any? {|r| r.date_revoked.nil? } %}
       {% grouped_roles = sys_roles.group_by {|r| [r.date_granted, r.date_revoked || Date.today, r.type, r.ao_doge || '']}.sort_by {|grp| grp[0].inspect } %}
-      {% grouped_roles.each_with_index do |grp, i| %}
-        {% roles = grp[1] %}
-        {% govt_system = site.data.systems.find {|g| g.id == roles[0].govt_system_id} %}
-           <tr {% unless i == grouped_roles.size-1 %}class="border-b-0"{% end %}>
-              {% if i == 0 %}<td class="align-top" rowspan="{{ grouped_roles.size }}"><a href="/all/systems#{{ govt_system.id }}">{% if govt_system.acronym %}<abbr title="{{ govt_system.name }}">{{ govt_system.acronym }}</abbr>{% else %}{{ govt_system.name }}{% end %}</a></td>{% end %}
-              <td class="align-top hidden sm:table-cell">{%@ 'atoms/date_range_label', first: roles[0].date_granted, last: roles[0].date_revoked %}</td>
-              <td class="hidden sm:table-cell align-top">{% roles.each_with_index do |role, i| %}{% if i > 0 %}, {% end %}<span class="md:text-nowrap">{% if role.name %}{{ person_link(role.name) }}{% elsif role.doge_alias_id %}{{ alias_link(role.doge_alias_id) }}{% end %}</span>{% end %}
-              {% if roles[0].type != 'unknown' %}<div>{%@ 'system_access_type', role: roles[0] %}<span class="hidden sm:inline"> access</span></div>{% end %}
-              {% if roles[0].ao_doge %}<div>by DOGE {{ person_link(roles[0].ao_name) }}</div>{% end %}
-              <div class="align-top sm:hidden">{%@ 'atoms/date_range_label', first: roles[0].date_granted, last: roles[0].date_revoked %}</div>
+           <tr>
+              <td class="align-top"><a href="/all/systems#{{ govt_system.id }}">{% if govt_system.acronym %}<abbr title="{{ govt_system.name }}">{{ govt_system.acronym }}</abbr>{% else %}{{ govt_system.name }}{% end %}</a></td>
+              <td class="align-top hide-cell-mobile">{%@ 'atoms/date_range_label', first: min_date, last: max_date, always_dash: true %}</td>
+              <td class="align-top">
+                <div class="bold"><a href="/all/systems#{{ govt_system.id }}">{{ govt_system.name }}</a></div>
+                {{ govt_system.description }}
+
+                <div class="mt-1">
+                  <ul>
+                {% grouped_roles.each_with_index do |grp, i| %}
+                  {% roles = grp[1] %}
+                  <li>
+                  {%@ 'atoms/date_range_label', first: roles[0].date_granted, last: roles[0].date_revoked, always_dash: true %}
+                  {{ roles.map(&:name).compact | people_links }}
+                  {% if roles[0].type != 'unknown' %}<span>({%@ 'system_access_type', role: roles[0] %}<span class="hidden sm:inline"> access</span></span>){% end %}
+                  {% if roles[0].ao_doge %}<span>grant by {{ person_link(roles[0].ao_name) }}</span>{% end %}
+                  </li>
+                {% end %}
+                </ul>
+                </div>
               </td>
-              {% if i == 0 %}<td class="align-top" rowspan="{{ grouped_roles.size }}">
-              <div class="bold"><a href="/all/systems#{{ govt_system.id }}">{{ govt_system.name }}</a></div>
-              {{ govt_system.description }}</td>{% end %}
           </tr>
-      {% end %}
     {% end %}
   </tbody>
 </table>

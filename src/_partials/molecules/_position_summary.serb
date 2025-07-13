@@ -45,10 +45,10 @@
   end
 %}
 
-{% if position.doge_alias_id && position.name %}[as <a href="/people/aliases#{{ position.doge_alias_id }}" class="link-hover">#{{ position.doge_alias_id }}</a>{% end %}
+{% if position.doge_alias_id && position.name %}[as <a href="/people/aliases#{{ position.doge_alias_id }}" class="link-hover">{{ position.doge_alias_id }}</a>]{% end %}
 {{ type_str(position) | raw }}
 {% if position.title %}<strong>{{ position.title }}</strong>{% if position.office %}, {{ position.office }}{% end %}{% end %}
 {{ hire_details(position) | raw }}
 {% if position.table_note %}«<span class="italic">{{ position.table_note | md | strip_p }}</span>»{% end %}
-{% if position.documents.any? %}<div>{% position.documents.each_with_index do |doc, i| %}{% if i > 0 %}, {% end %}<a class="link-hover" href="{{ document_url(doc) }}">{{ document_type(doc) }}</a>{% end %}</div>{% end %}
+{% if position.documents.any? %}<div><i class="fa-sharp fa-solid fa-file"></i> {% position.documents.each_with_index do |doc, i| %}{% if i > 0 %}, {% end %}<a class="link-hover" href="{{ document_url(doc) }}">{{ document_type(doc) }}</a>{% end %}</div>{% end %}
 {%@ 'atoms/source_link', item: position %}

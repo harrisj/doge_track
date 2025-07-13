@@ -3,22 +3,22 @@
 <table class="table table-fixed sm:table-auto table-xs sm:table-sm lg:table-md border-4">
   <thead>
   <tr class="">
-    <th class="w-3/12 sm:w-2/12 text-xs">System</th>
-    <th class="text-left hidden sm:table-cell text-xs sm:w-2/12">Dates</th>
-    <th class="w-8/12 text-left text-xs max-w-auto sm:min-w-auto">Details</th>
+    <th class="text-left my-3col-table-col1 text-xs">System</th>
+    <th class="text-left my-3col-table-col2 text-xs">Dates</th>
+    <th class="text-left my-3col-table-col2 text-left text-xs">Details</th>
   </tr>
   </thead>
   <tbody class="">
     {% roles.each do |role| %}
       {% govt_system = site.data.systems.find {|s| s.id == role.govt_system_id } %}
     <tr class="font-sans" id="{{ role.id }}">
-      <td class="align-top">
+      <td class="align-top my-3col-table-col1">
       {% if govt_system %}<div>{% if govt_system.acronym %}<abbr title="{{ govt_system.name }}">{{ govt_system.acronym }}</abbr>{% else %}{{ govt_system.name }}{% end %}</div>{% end %}
       <div class="sm:hidden">{%@ 'atoms/date_range_label', first: role.date_granted, last: role.date_revoked %}</div>
-      <div class="sm:hidden">{{ agency_link(role.agency_id) }}</div>
+      <div>{{ agency_link(role.agency_id) }}</div>
       </td>
-      <td class="align-top hidden sm:table-cell py-2 text-nowrap">{%@ 'atoms/date_range_label', first: role.date_granted, last: role.date_revoked %}</td>
-      <td class="align-top font-sans py-2">{%@ 'molecules/system_role_summary', role: role %}</td>
+      <td class="align-top my-3col-table-col2">{%@ 'atoms/date_range_label', first: role.date_granted, last: role.date_revoked %}</td>
+      <td class="align-top my-3col-table-col3">{%@ 'molecules/system_role_summary', role: role %}</td>
     </tr>
     {% end %}
   </tbody>
