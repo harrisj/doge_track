@@ -86,6 +86,12 @@
         - USA Performance: 2025-01-20 - ongoing
         - USA Staffing **[admin access]**: 2025-01-20 - ongoing
 
+# Adam Blake
+- category: wrecker
+- positions:
+    -  **Energy**  
+    -  **NRC** (2025-07-(11)? to ??) 
+
 # Akash Bobba
 - category: wrecker
 - positions:

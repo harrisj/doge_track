@@ -439,6 +439,29 @@
     name: Brian Bjelde
     alias: OPM-07
 
+- name: Adam Blake
+  sort_name: Blake
+  slug: adam-blake
+  category: wrecker
+  positions:
+  - id: energy-blake
+    type: unknown
+    agency: Energy
+    sort_date: 2025-06-15
+    table_note: I have no info on this yet, but he was detailed from Energy to NRC
+  - id: detail-energy-nrc-blake
+    type: detailed
+    agency: NRC
+    from: Energy
+    office: Office of the Executive Director for Operations
+    table_note: In charge of implementing EO 14300
+    sort_date: 2025-07-11
+    start_date: 2025-07-(11)?
+    start_date_truth: reported
+    source: >-
+      https://thehill.com/policy/energy-environment/5397152-doge-staffer-trump-reforms-nrc-nuclear-regulatory-commission/
+    source_name: The Hill
+
 - name: Akash Bobba
   sort_name: Bobba
   slug: akash-bobba
@@ -5435,6 +5458,9 @@
     it was noticed and taken down. On March 17th, he was appointed to the board of Fannie Mae/Freddie
     Mac, only to resign immediately the next day. More recently, he has been embedded in the Department
     of Justice as part of the DOGE team building a surveillance system to use against immigrants.
+  govt_exit_date: 2025-06-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: opm-christopher-stanley
     type: appointed

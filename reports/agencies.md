@@ -246,6 +246,7 @@
 # Department of Energy
 - slug: energy
 - people:
+  - **Adam Blake**
   - **Luke Farritor** (2025-02-(04)~) (detailed from GSA)
   - **Adam Ramada** (2025-02-(04)~) (detailed from DOGE)
   - **Ryan Riedel** (2025-02-07 - 2025-03-07) Chief Information Officer
@@ -658,6 +659,8 @@
 
 # Nuclear Regulatory Commission
 - slug: nrc
+- people:
+  - **Adam Blake** (2025-07-(11)?) (detailed from Energy)
 
 # Office of Personnel Management
 - slug: opm

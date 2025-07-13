@@ -1172,6 +1172,141 @@
   agency_and_parent:
   - OPM
   documents: []
+- id: energy-blake
+  type: unknown
+  agency_id: Energy
+  name: Adam Blake
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-06-15'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: I have no info on this yet, but he was detailed from Energy to NRC
+  replaced_by:
+  same_as:
+  agency:
+    id: Energy
+    name: Department of Energy
+    slug: energy
+    page_slug: energy
+    short_name: Energy
+    doge_base: true
+    blurb: >-
+      Despite its name, the Department of Energy isn't just a government agency in charge of energy suppy and efficiency. It actually is the agency responsible
+      for America's nuclear weapon arsenal. Which is why there has been no amount of consternation that DOGE may have posted two of its engineers into systems
+      that contain highly classified information.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/energy"
+  agency_and_parent:
+  - Energy
+  documents: []
+- id: detail-energy-nrc-blake
+  type: detailed
+  agency_id: NRC
+  name: Adam Blake
+  doge_alias_id:
+  from_agency_id: Energy
+  from_truth:
+  start_date: 2025-07-(11)?
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-07-11'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office: Office of the Executive Director for Operations
+  source: https://thehill.com/policy/energy-environment/5397152-doge-staffer-trump-reforms-nrc-nuclear-regulatory-commission/
+  source_name: The Hill
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: In charge of implementing EO 14300
+  replaced_by:
+  same_as:
+  agency:
+    id: NRC
+    name: Nuclear Regulatory Commission
+    slug: nrc
+    page_slug: independent#regs
+    short_name: NRC
+    doge_base: false
+    blurb:
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/independent#regs"
+  from_agency:
+    id: Energy
+    name: Department of Energy
+    slug: energy
+    page_slug: energy
+    short_name: Energy
+    doge_base: true
+    blurb: >-
+      Despite its name, the Department of Energy isn't just a government agency in charge of energy suppy and efficiency. It actually is the agency responsible
+      for America's nuclear weapon arsenal. Which is why there has been no amount of consternation that DOGE may have posted two of its engineers into systems
+      that contain highly classified information.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/energy"
+  agency_and_parent:
+  - NRC
+  documents: []
 - id: opm-3
   type: appointed
   agency_id: OPM
