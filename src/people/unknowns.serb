@@ -9,7 +9,7 @@ description: Sometimes I have only a name or a single event linked to a DOGE sta
 There are a few DOGE staffers that have been identified in individual reports, but I have no other details about who they are or what they have done exactly.
 {% end %}
 
-<div class="mt-5">
+<div class="mt-10">
 {% people = site.data.people.select {|p| p.category == 'unknown'}.sort_by(&:sort_name) %}
 {% people.each do |person| %}
   {%@ 'sections/people_page_person', person: person %}

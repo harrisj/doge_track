@@ -11,7 +11,7 @@
   <tbody class="">
     {% positions.each do |pos| %}
     <tr class="font-sans" id="{{ pos.id }}">
-      <td class="align-top"><div class="sm:inline-block>{%@ 'atoms/position_move_label', position: pos %}</div>
+      <td class="align-top"><div class="inline-block">{%@ 'atoms/position_move_label', position: pos %}</div>
         <div class="sm:hidden">
           {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}
           {%@ 'atoms/doge_exit_label', position: pos %}

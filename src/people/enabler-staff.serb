@@ -9,7 +9,7 @@ description: A more in-depth look at the Enablers within DOGE and the type of wo
 This page provides details on the staff at DOGE that I have identified as [Enablers](/people/enablers/), those DOGE staff whose main work is clearing the path for [Wreckers](/people/wreckers/).
 {% end %}
 
-<div class="mt-5">
+<div class="mt-10">
 {% people = site.data.people.select {|p| p.category == 'enabler'}.sort_by(&:sort_name) %}
 
 {% people.each do |person| %}
