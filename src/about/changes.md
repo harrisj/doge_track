@@ -45,7 +45,7 @@ This is not a definitive list of all changes to the project (completists can alw
 <h2 class="text-lg mt:2">Events Added</h2>
 
 {% events = rec.events.map {|e_id| site.data.events.find {|x| x.id == e_id}}.compact %}
-{%@ 'compact_event_timeline', events: events, month_separator: false, agency_col: true %}
+{%@ 'tables/compact_event_timeline', events: events, month_separator: false, agency_col: true %}
 {% end %}
   </div>
 </div>

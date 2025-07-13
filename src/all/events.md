@@ -8,4 +8,4 @@ description: A comprehensive listing of all the events of DOGE staff on a single
 
 <p class="my-text">For the maximalists (and my debugging), here is a page with all of the events that happened in order.</p>
 
-{%@ 'compact_event_timeline', events: site.data.events, agency_col: true, icon_col: true %}
+{%@ 'tables/compact_event_timeline', events: site.data.events, agency_col: true, icon_col: true %}
