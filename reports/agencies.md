@@ -829,6 +829,7 @@
 - slug: state
 - people:
   - **Peter Marocco** (2025-01-20 - 2025-04-13) Director of Foreign Assistance
+  - **Kenneth Jackson** (2025-01-XX)
   - **Edward Coristine** (2025-02-10) Senior Advisor (detailed from GSA)
   - **Luke Farritor** (2025-02-10) Senior Advisor (detailed from GSA)
   - **Jeremy Lewin** (2025-04-15) Acting Head of Foreign Assistance
@@ -895,7 +896,7 @@
 - people:
   - **Nate Cavanaugh** (2025-03-04 - 2025-03-24) (detailed from GSA)
   - **Kenneth Jackson** (2025-03-17) Acting President
-  - **Nate Cavanaugh** (2025-03-25 - 2025-05-19) President
+  - **Nate Cavanaugh** (2025-03-25) President
 
 # US International Development Finance Corporation
 - slug: usdfc

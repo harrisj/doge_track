@@ -2337,7 +2337,7 @@
   source_name: court doc
   reimbursed:
   reimbursement_amount:
-  comment: Assuming this based on repors and where he is based. Becomes president of USIP next
+  comment: Assuming this based on reports and where he is based. Becomes president of USIP next
   qualifications:
   table_note: verified via court filing
   replaced_by: usip-cavanaugh-president
@@ -2537,12 +2537,12 @@
   start_date_event:
   start_source:
   start_source_name:
-  end_date: '2025-05-19'
-  end_date_truth: verified
+  end_date:
+  end_date_truth:
   end_date_event:
   end_source:
   end_source_name:
-  end_type: removed
+  end_type:
   sort_date: '2025-03-25'
   nte_date:
   nte_date_truth:
@@ -2569,7 +2569,9 @@
     Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco Rubio and Pete Hegseth, and he is authorized to transfer
     all assets to the GSA
   qualifications:
-  table_note: After the rest of board was ousted, Nate was named President of the agency by Marco Rubio and Pete Hegseth. Voided by court order on 2025-05-19
+  table_note: >-
+    After the rest of board was ousted, Nate was named President of the agency by Marco Rubio and Pete Hegseth. Voided by court order on 2025-05-19 but
+    restored by appeals court on 2025-06-27
   replaced_by:
   same_as:
   agency:
@@ -10651,6 +10653,65 @@
     path: "/agencies/white-house"
   agency_and_parent:
   - DOI
+  documents: []
+- id: state-jackson
+  type: appointed
+  agency_id: State
+  name: Kenneth Jackson
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: 2025-01-XX
+  start_date_truth: guessed
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-01-20'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source:
+  source_name:
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: I know Kenneth Jackson started at State, but I haven't found more info of when and where
+  replaced_by:
+  same_as:
+  agency:
+    id: State
+    name: State Department
+    slug: state
+    page_slug: state
+    short_name: State
+    doge_base: true
+    blurb:
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/state"
+  agency_and_parent:
+  - State
   documents: []
 - id: usip-jackson
   type: appointed

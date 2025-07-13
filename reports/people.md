@@ -138,7 +138,7 @@
     -  **NEH** (2025-03-(13)~ to ??) 
         - Microsoft Entra ID **[admin access]**: 2025-03-12~ - ongoing
     -  **MCC** (2025-03-(22)? to ??) 
-    -  **USIP** (2025-03-25 to 2025-05-19) President
+    -  **USIP** (2025-03-25 to ??) President
     -  **IMLS** (2025-03-31 to ??) 
     -  **Commerce** (2025-04-(09)~ to ??) 
     -  **MBDA** (2025-04-(09)~ to ??) 
@@ -494,6 +494,7 @@
 # Kenneth Jackson
 - category: enabler
 - positions:
+    -  **State** (2025-01-XX to ??) 
     -  **USIP** (2025-03-17 to ??) **Acting President**
     -  **USAID** (2025-03-18 to ??) **Deputy Administrator (Management and Resources)**
 

@@ -739,7 +739,7 @@
     from: GSA
     from_truth: guessed
     table_note: verified via court filing
-    comment: Assuming this based on repors and where he is based. Becomes president of USIP next
+    comment: Assuming this based on reports and where he is based. Becomes president of USIP next
     start_date: 2025-03-04
     start_date_truth: reported
     end_date: 2025-03-24
@@ -774,14 +774,11 @@
     type: appointed
     start_date: 2025-03-25
     start_date_truth: verified
-    end_date: 2025-05-19
-    end_date_truth: verified
-    end_type: removed
     title: President
     title_type: director
     table_note: >-
       After the rest of board was ousted, Nate was named President of the agency by Marco Rubio and Pete
-      Hegseth. Voided by court order on 2025-05-19
+      Hegseth. Voided by court order on 2025-05-19 but restored by appeals court on 2025-06-27
     comment: >-
       Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco
       Rubio and Pete Hegseth, and he is authorized to transfer all assets to the GSA
@@ -2729,6 +2726,13 @@
   slug: kenneth-jackson
   category: enabler
   positions:
+  - id: state-jackson
+    type: appointed
+    start_date: 2025-01-XX
+    start_date_truth: guessed
+    sort_date: 2025-01-20
+    agency: State
+    table_note: I know Kenneth Jackson started at State, but I haven't found more info of when and where
   - id: usip-jackson
     type: appointed
     start_date: 2025-03-17
