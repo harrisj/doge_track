@@ -38,7 +38,7 @@ It started with the US African Development Foundation and the Inter-American Fou
 
 The next target outlined in the executive order was the US Institute of Peace. Thanks to testimony entered in the lawsuit of _United States Institute of Peace v. Jackson (D.D.C.)_, we have a remarkably detailed timeline for the DOGE assault on the US Institute of Peace:
 
-{% events = site.data.events.select {|e| e.agency_ids.include?('USIP') && e.sort_date < '2025-05-01' } %}
+{% events = site.data.events.select {|e| e.agency_ids.include?('USIP') } %}
 {%@ 'tables/compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### 3/14: "Continuing the Reduction of the Federal Bureaucracy"  {#eo2} 
