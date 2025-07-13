@@ -13,7 +13,7 @@ This page is a mix of people who have been identified as leadership for DOGE, al
 {% people = site.data.people.select {|p| p.category == 'leadership'}.sort_by(&:sort_name) %}
 
 {% people.each do |person| %}
-  {%@ "people_page_person", person: person %}
+  {%@ 'sections/people_page_person', person: person %}
 {% end %}
 </div>
 
@@ -24,7 +24,7 @@ DOGE has also attracted a number of boosters. These are Silicon Valley-adjacent 
 {% people = site.data.people.select {|p| p.category == 'booster'}.sort_by(&:sort_name) %}
 
 {% people.each do |person| %}
-  {%@ "people_page_person", person: person %}
+  {%@ 'sections/people_page_person', person: person %}
 {% end %}
 </div>
 {% end %}

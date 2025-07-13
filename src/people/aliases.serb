@@ -16,6 +16,6 @@ In several examples, public documents obtained through FOIA and as exhibits in c
   {% agency = find_agency(agency_id) %}
 
   {% group[1].each do |doge_alias| %}
-    {%@ 'alias_card', doge_alias: doge_alias %}
+    {%@ 'sections/alias_card', doge_alias: doge_alias %}
   {% end %}
 {% end %}

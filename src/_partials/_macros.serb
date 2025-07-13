@@ -310,24 +310,6 @@ end %}
    end
 %}
 
-{% macro "DISABLEcategory_link" do |cat| 
-  case cat
-  when 'wrecker'
-    '<a class="link-hover" href="/people/wreckers">Wrecker</a>'
-  when 'leadership'
-    '<a class="link-hover" href="/people/leaders">Leader</a>'
-  when 'booster'
-    '<a class="link-hover" href="/people/leaders">Booster</a>'
-  when 'support'
-    '<a class="link-hover" href="/people/support-team">Support</a>'
-  when 'enabler'
-    '<a class="link-hover" href="/people/enablers">Enabler</a>'
-  else
-    '<a class="link-hover" href="/people/unknowns">Unknown</a>'
-  end.html_safe
-end
-%}
-
 {% macro "DISABLED_position_move" do |pos| 
   if pos.agency_id
     raise pos.inspect if pos.agency.nil?
@@ -407,7 +389,7 @@ end %}
    end
 %}
 
-{% macro 'position_summary' do |pos|
+{% macro 'position_summaryOLD' do |pos|
     if pos.doge_alias_id && pos.name
       alias_ident_str = "[as <a href=\"/people/aliases##{pos.doge_alias_id}\" class=\"link-hover\">#{pos.doge_alias_id}</a>]"
     end

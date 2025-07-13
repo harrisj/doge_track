@@ -2,4 +2,4 @@
 title: Jordan Wick
 ---
 {% person = site.data.people.find {|p| p.name == 'Jordan Wick' } %}
-{%@ "people_page_person", person: person %}
+{%@ 'sections/people_page_person', person: person %}

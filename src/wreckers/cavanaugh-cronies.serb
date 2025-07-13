@@ -15,6 +15,6 @@ Nate Cavnaugh doesn't do his work alone. He is helped by a growing group of othe
 {% people = site.data.people.select {|p| names.include?(p.name) }.sort_by(&:sort_name) %}
 
 {% people.each do |person| %}
-  {%@ "people_page_person", person: person %}
+  {%@ 'sections/people_page_person', person: person %}
 {% end %}
 </div>

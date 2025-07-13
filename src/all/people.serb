@@ -8,5 +8,5 @@ description: An alphabetical listing of all the people being tracked as part of 
 {% people = site.data.people.sort_by(&:sort_name) %}
 
 {% people.each do |person| %}
-  {%@ "people_page_person", person: person %}
+  {%@ 'sections/people_page_person', person: person %}
 {% end %}

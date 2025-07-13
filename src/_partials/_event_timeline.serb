@@ -1,5 +1,0 @@
-<ul class="list px-0">
-{% events.each do |event| %}
-  {%@ 'event_item', event: event %}
-{% end %}
-</ul>
