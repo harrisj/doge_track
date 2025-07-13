@@ -17,4 +17,4 @@ Despite many of these setbacks and haphazard roll-outs, attacking the bureaucrac
 
 This work has probably involved access to the following systems:
 {% systems = site.data.systems.select {|s| s.theme == 'personnel'} || [] %}
-{%@ 'project_systems_table', systems: systems %}
+{%@ 'tables/project_systems', systems: systems %}

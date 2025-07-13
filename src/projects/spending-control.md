@@ -17,4 +17,4 @@ The goal here is to force budgetary cutbacks even if Congress or the courts migh
 
 This work has probably involved access to the following systems:
 {% systems = site.data.systems.select {|s| s.theme == 'spending'} || [] %}
-{%@ 'project_systems_table', systems: systems %}
+{%@ 'tables/project_systems', systems: systems %}

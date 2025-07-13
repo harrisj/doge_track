@@ -1,0 +1,59 @@
+{% import "macros" %}
+
+{% unless agency.nil?
+   dated_positions, undated_positions = positions.partition {|pos| pos.start_date }
+   else
+   dated_positions = positions
+   undated_positions = nil
+   end 
+   
+   grouped_data_positions = dated_positions.group_by{|pos| pos.name || pos.doge_alias_id}.sort_by {|_, positions| positions[0].sort_date }   
+%}
+
+<table class="table table-fixed sm:table-auto table-xs sm:table-sm lg:table-md border-4 mb-0">
+  <thead>
+  <tr>
+    <th class="text-left my-3col-table-col1">Position</th>
+    <th class="text-left my-3col-table-col2">Date</th>
+    <th class="text-left my-3col-table-col3">Person</th>
+  </tr>
+  </thead>
+  <tbody class="">
+    {% dated_positions.sort_by(&:sort_date).each do |pos| %}
+      <tr class="font-sans" id="{{ pos.id }}">
+        <td class="align-top">
+          {%@ 'atoms/position_move_label', position: pos %}
+          <div class="only-mobile">{%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}</div>
+          <div class="only-mobile">{%@ 'atoms/doge_exit_label', position: pos %}</div>
+        </td>
+        <td class="align-top hide-cell-mobile">
+          {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}
+          {%@ 'atoms/doge_exit_label', position: pos %}
+        </td>
+        <td class="align-top"><div>{%@ 'atoms/position_person_link', position: pos %}</div>{%@ 'molecules/position_summary', position: pos %}</td>
+      </tr>
+    {% end %}
+    {% if agency && undated_positions.any? %}
+      <tr>
+        <td colspan="100%" class="text-center font-bold italic">No Start Date Known</a>
+      </tr>
+      {% to_agency, from_agency = undated_positions.partition {|pos| pos.agency_id == agency.id } %}
+      {% grouped_undated = to_agency.group_by {|pos| [pos.agency_id, pos.type, pos.from_agency_id || ''] } %}
+      {% grouped_undated.sort_by {|grp, _| grp[2]}.each do |grp, positions| %}
+        <tr class="font-sans">
+        <td class="align-top hide-cell-mobile"/>
+        <td class="align-top">{%@ 'atoms/position_move_label', position: positions[0] %}</td>
+        <td colspan="2" class="align-top">{{ positions.map(&:person) | people_links }}</td>
+        </tr>
+      {% end %}
+      {% grouped_undated = from_agency.group_by {|pos| [pos.agency_id, pos.type, pos.from_agency_id || ''] } %}
+      {% grouped_undated.sort_by {|grp, _| grp[0]}.each do |grp, positions| %}
+        <tr class="font-sans">
+        <td class="align-top hide-cell-mobile"/>
+        <td class="align-top">{%@ 'atoms/position_move_label', position: positions[0] %}</td>
+        <td colspan="2" class="align-top">{{ positions.map(&:person) | people_links }}</td>
+        </tr>
+      {% end %}
+    {% end %}
+  </tbody>
+</table>

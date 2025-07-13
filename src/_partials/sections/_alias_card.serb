@@ -21,7 +21,7 @@
     {% if doge_alias.positions && doge_alias.positions.any? %}
     <div>
     <h3 class="h3 mt-5 mb-0">Positions:</h4>
-    {%@ 'person_positions_table', positions: doge_alias.positions %}
+    {%@ 'tables/person_positions', positions: doge_alias.positions %}
     </div>
     {% end %}
 
@@ -29,7 +29,7 @@
     {% if events.any? %}
     <div>
       <h3 class="h3 mt-5 mb-0">Events:</h3>
-      {%@ 'compact_event_timeline', events: events %}
+      {%@ 'tables/compact_event_timeline', events: events %}
     </div>
     {% end %}
 
@@ -37,7 +37,7 @@
     {% if roles.any? %}
       <div class="mt-3">
         <h3 class="mb-0 mt-0 h3">Systems</h3>
-        {%@ 'person_systems_table', roles: roles %}
+        {%@ 'tables/person_systems', roles: roles %}
       </div>
     {% end %}
   </div>

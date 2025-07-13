@@ -1,6 +1,0 @@
-<div class="tabs tabs-sm sm:tabs md:tabs-lg">
-  {% tabs.each_with_index do |key_value, i| %}
-  <input type="radio" name="generic_tabs" class="tab" aria-label="{{ key_value[0] }}" {% if i == 0 %}checked="checked"{% end %} />
-  <div class="tab-content"><div class="my-text">{{ key_value[1] | markdownify }}</div></div>
-  {% end %}
-</div>

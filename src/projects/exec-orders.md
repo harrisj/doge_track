@@ -3,7 +3,7 @@ layout: docs
 title: Executive Orders
 description: DOGE has been granted its sweeping powers through multiple executive orders issued by the Trump Administration from Day One.
 ---
-{%@ 'title', title: 'Executive Orders' %}
+{%@ 'atoms/title', title: 'Executive Orders' %}
 
 From the very beginning, all of DOGE's influences and responsibilities have been defined through executive orders. These are directives issued by the President that are meant to apply to the Executive branch agencies. Notably, executive orders do not carry the same weight as laws that have passed both houses of Congress or agency regulations that have followed the process in the [Administrative Procedure Act](https://en.wikipedia.org/wiki/Administrative_Procedure_Act). In this sense, much of DOGE's mandate and power has rested on bluster and overreach in these executive orders, which is why the administration continues to lose legal challenges in the courts for DOGE's actions.
 

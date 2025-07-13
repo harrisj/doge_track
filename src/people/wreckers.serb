@@ -4,7 +4,7 @@ title: The Wreckers
 template_engine: serbea
 description: The most well-known of DOGE's projects has been their spread into multiple agencies to quickly cancel contracts and access systems. These Wreckers (as I call them) have usually been based within OPM, GSA or DOGE itself.
 ---
-{%@ "title", title: "The Wreckers" %}
+{%@ '/atoms/title', title: "The Wreckers" %}
 
 {% all_wreckers = site.data.people.select {|p| p.category == 'wrecker' } %}
 
@@ -44,7 +44,7 @@ Since the beginning of March, DOGE has started to move some of its detailed staf
 Most of the DOGE staff within the DOGE agency also called the US DOGE Service and often also referred to as the EOP (for Executive Office of the President) is leadership and support for activities across the government. However, a few of the early DOGE wreckers were hired in that agency, possibly through practices related to the USDS.
 
 {% doge_wreckers = all_wreckers.select {|w| w.start_agency == "DOGE" } %}
-{%@ "wrecker_table", wreckers: doge_wreckers %}
+{%@ 'tables/wrecker_table', wreckers: doge_wreckers %}
 
 Since the beginning of March, DOGE has been moving staff to work within agencies themselves, a move at least in part designed to allow the government to evade expedited discovery in the [*AFL-CIO v. DOL*](https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.51.1.pdf) case. For instance, Jordan Wick became an employee of the CFPB on March 4th, the same day that Amy Gleason and Brad Smith officially onboarded at HHS.
 
@@ -53,14 +53,14 @@ Since the beginning of March, DOGE has been moving staff to work within agencies
 Many of the early DOGE hires were formally appointed at the Office of Personnel Management. Some technical staff at OPM were supporting the 
 
 {% opm_wreckers = all_wreckers.select {|w| w.start_agency == "OPM" } %}
-{%@ "wrecker_table", wreckers: opm_wreckers %}
+{%@ 'tables/wrecker_table', wreckers: opm_wreckers %}
 
 ## General Services Administration
 
 The {{ agency_link("GSA", "General Service Administration") }} is an agency that provides shared services and procurement support to other federal agencies. Early on, DOGE focused on using the GSA to force cost reductions across government - _e.g._, through cancelling building leases or restricting the use of purchase cards - but GSA has also been the home base for a growing number of wreckers, with many recent hires starting there.
 
 {% gsa_wreckers = all_wreckers.select {|w| w.start_agency == "GSA" } %}
-{%@ "wrecker_table", wreckers: gsa_wreckers %}
+{%@ 'tables/wrecker_table', wreckers: gsa_wreckers %}
 
 ## Other Agencies
 

@@ -1,7 +1,7 @@
 ---
 title: About This Data
 layout: docs
-description: An explanation of the symbols used throughout the site
+description: An explanation of the iconography used throughout the site to present categories.
 ---
 {% import 'macros' %}
 # Symbols Used On This Site

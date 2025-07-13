@@ -2,7 +2,7 @@
 
 <div class="mb-10 mt-1">
 {% agency = find_agency(id) %}
-{%@ 'agency_title', agency: agency, id: agency.slug %}
+{%@ 'atoms/agency_title', agency: agency, id: agency.slug %}
 
 {% if agency.linkified_blurb %}
   <div class="my-text">{{ agency.linkified_blurb | md  }}</div>
@@ -11,21 +11,21 @@
 {% if agency.positions.any? %}
 <h2 class="mt-4 mb-0 text-lg sm:text-xl md:text-2xl">Positions</h2>
 
-{%@ 'agency_positions_table', positions: agency.positions, agency: agency %}
+{%@ 'tables/agency_positions', positions: agency.positions, agency: agency %}
 {% end %}
 
 {% agency_roles = site.data.system_roles.select {|sr| sr.agency && (sr.agency.id == agency.id || sr.agency.parent_id == agency.id) } || [] %}
 {% if agency_roles.any? %}
 <h2 class="mt-4 mb-0 text-lg sm:text-xl md:text-2xl">Systems</h2>
 
-{%@ 'agency_system_access_table', roles: agency_roles, agency: agency %}
+{%@ 'tables/agency_system_access', roles: agency_roles, agency: agency %}
 {% end %}
 
 {% agency_events = site.data.events.find_all {|e| e.agencies_parents.include? agency.id } %}
 {% if agency_events.any? %}
 <h2 class="mt-0 mb-0 text-lg sm:text-xl md:text-2xl">Events</h2>
 
-{%@ 'compact_event_timeline', events: agency_events, icon_col: true, agency_col: true %}
+{%@ 'tables/compact_event_timeline', events: agency_events, icon_col: true, agency_col: true %}
 {% end %}
 </div>
 

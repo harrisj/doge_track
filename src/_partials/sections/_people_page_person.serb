@@ -6,7 +6,7 @@
   </div>
   <div class="sm:ml-7 md:ml-8 lg:ml-9.5 lining-nums">
     <div class="my-text mb-2">
-      <div class="leading-none">{{ category_link(person.category) }}{% if person.skill %}, {{ person.skill }}{% end %}{% if person.age %}, age {{ person.age }}{% end %}{% if person.linkedin %} <a href="{{person.linkedin}}"><i class="fa-brands fa-linkedin"></i></a>{% end %} <a class="permalink" href="#{{person.slug}}"><i class="fa-sharp fa-solid fa-link"></i></a></div>
+      <div class="leading-none">{%@ "atoms/category_link", category: person.category %}{% if person.skill %}, {{ person.skill }}{% end %}{% if person.age %}, age {{ person.age }}{% end %}{% if person.linkedin %} <a href="{{person.linkedin}}"><i class="fa-brands fa-linkedin"></i></a>{% end %} <a class="permalink" href="#{{person.slug}}"><i class="fa-sharp fa-solid fa-link"></i></a></div>
       {% if person.tech_links %}<div>Tech Industry Links: {{ person.tech_links }}</div>{% end %}
       {% if person.govt_exit_date %}<div><strong>Exited govt:</strong> {{ render EdtfFormat.new(person.govt_exit_date) }}{% if person.govt_exit_type %} ({{ person.govt_exit_type}}){% end %}</div>{% end %}
       {% if person.linkified_blurb %}<div class="mb-0 mt-2 mb-2 italic">{{ person.linkified_blurb | md }}</div>{% end %}
@@ -22,21 +22,21 @@
 
       <div class="mt-3">
         <h3 class="mb-0 mt-0 h3">Positions</h3>
-        {%@ 'person_positions_table', positions: person.positions %}
+        {%@ 'tables/person_positions', positions: person.positions %}
       </div>
     {% end %}
 
     {% if person.system_roles.any? %}
       <div class="mt-3">
         <h3 class="mb-0 mt-0 h3">Systems</h3>
-        {%@ 'person_systems_table', roles: person.system_roles %}
+        {%@ 'tables/person_systems', roles: person.system_roles %}
       </div>
     {% end %}
 
     {% if person.events.any? %}
     <div class="mt-3">
       <h3 class="mb-0 mt-0 h3">Events</h3>
-      {%@ 'compact_event_timeline', agency_col: true, events: person.events, month_separator: false, show_directories: true, always_show_date: true %}
+      {%@ 'tables/compact_event_timeline', agency_col: true, events: person.events, month_separator: false, show_directories: true, always_show_date: true %}
     </div>
     {% end %}
 

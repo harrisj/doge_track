@@ -84,53 +84,43 @@ layer(base);
     @apply prose prose-sm prose-a:font-semibold prose-a:link-hover md:prose-base max-w-none prose-li:m-[0.1em] dark:prose-invert prose-h2:mt-1 prose-h2:mb-0.5 prose-h3:mt-1 prose-h3:mb-0.5 leading-tight;
   }
 
-  /* .my-text-2xl {
-    @apply prose prose-xl sm:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  .only-mobile {
+    @apply sm:hidden;
   }
 
-  .my-text-xl {
-    @apply prose sm:prose-xl md:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  .hide-cell-mobile {
+    @apply hidden sm:table-cell;
   }
 
-  .my-text-lg {
-    @apply prose sm:prose-lg md:prose-xl lg:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  /* Aligned 3 Column Table where 2nd col is hidden on mobile */
+  .my-3col-table-col1 {
+    @apply w-3/12 sm:w-2/12;
   }
 
-  .my-text {
-    @apply prose prose-sm sm:prose-base md:prose-lg lg:prose-xl xl:prose-2xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  .my-3col-table-col2 {
+    @apply w-2/12 hidden sm:table-cell;
   }
 
-  .my-text-fixed {
-    @apply prose prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  .my-3col-table-col3 {
+    @apply w-9/12;
   }
 
-  .my-text-small {
-    @apply prose prose-sm md:prose-base lg:prose-lg xl:prose-xl prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  /* Aligned 4 Column Table where 2nd col is hidden on mobile */
+  .my-4col-table-col1 {
+    @apply w-3/12 sm:w-2/12;
   }
 
-  .my-text-smallest-fixed {
-    @apply prose prose-sm prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  .my-4col-table-col2 {
+    @apply w-2/12 hidden sm:table-cell;
   }
 
-  .my-text-smallest {
-    @apply prose prose-sm lg:prose-base xl:prose-lg prose-stone max-w-none prose-li:m-[0.1em] dark:prose-invert;
+  .my-4col-table-col3 {
+    @apply hidden sm:table-cell w-3/12 sm:w-2/12;
   }
 
-  .my-table {
-    @apply font-mono
+  .my-4col-table-col4 {
+    @apply w-9/12 sm:w-6/12;
   }
-
-  .my-table {
-    @apply font-mono
-  }
-
-  .my-table-sm {
-    @apply font-mono
-  }
-
-  .my-table-2sm {
-    @apply font-mono
-  } */
 }
 
 @layer base {

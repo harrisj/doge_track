@@ -3,8 +3,7 @@ layout: page
 title: Unmasked Aliases
 description: Often in court cases (or in news reports), the specific identities of DOGE staffers might be obscured with aliases like "Employee 6." However, it is possible to identify many of them through clues. This page lists all the aliases I know of and the identities of those I have been able to determine.
 ---
-{% import "macros" %}
-{%@ "title", title: "Unmasked Aliases" %}
+{%@ 'atoms/title', title: 'Unmasked Aliases' %}
 
 {%@ "text" do %}
 In several examples, public documents obtained through FOIA and as exhibits in courts cases will obscure the identities of DOGE staffers. For instance, the testimony of Tiffany Flick and subsequent disclosures from the lawsuit against Social Security redact the identities of DOGE staffers as "Employee 1" etc. However, it is possible to figure out the identities of many of these aliases and link them to their real names if you happen to have a database of DOGE activities and documents and are able to correlate by evidence. When I am able to make such a positive identification, my system will then automatically link events and positions associated with the alias to the person as well. This page however is an overview of aliases.
@@ -17,6 +16,6 @@ In several examples, public documents obtained through FOIA and as exhibits in c
   {% agency = find_agency(agency_id) %}
 
   {% group[1].each do |doge_alias| %}
-    {%@ 'alias_card', doge_alias: doge_alias %}
+    {%@ 'sections/alias_card', doge_alias: doge_alias %}
   {% end %}
 {% end %}

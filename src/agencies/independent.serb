@@ -9,7 +9,7 @@ description: A page documenting DOGE's actions to subvert and demolish small ind
 
 {% indies = site.data.agencies.select {|a| a.page_slug =~ /^independent/ } %}
 <div class="mb-2">
-{%@ 'agency_first_contacts', agencies: indies %}
+{%@ 'tables/agency_first_contacts', agencies: indies %}
 </div>
 
 Over the past decade, Congress has established multiple independent agencies that are supposed to be insulated from interference from the Executive Branch in how they operate. Many of these are small and specialized and relatively unknown to the general public. That hasn't stopped DOGE from interfering with them, in a coordinated effort with the White House that usually included the following steps:
@@ -34,19 +34,19 @@ The pattern of assaulting independent agencies began with an Executive Order ["C
 It started with the US African Development Foundation and the Inter-American Foundation. Both are small independent agencies established by Congress to invest in projects in the developing world. Thanks to litigation, we have some visibility into how events unfolded.
 
 {% events = site.data.events.select {|e| e.agency_ids.include?('IAF') || e.agency_ids.include?('USADF') } %}
-{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+{%@ 'tables/compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 The next target outlined in the executive order was the US Institute of Peace. Thanks to testimony entered in the lawsuit of _United States Institute of Peace v. Jackson (D.D.C.)_, we have a remarkably detailed timeline for the DOGE assault on the US Institute of Peace:
 
 {% events = site.data.events.select {|e| e.agency_ids.include?('USIP') && e.sort_date < '2025-05-01' } %}
-{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+{%@ 'tables/compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### 3/14: "Continuing the Reduction of the Federal Bureaucracy"  {#eo2} 
 
 In another executive order ["Continuing the Reduction of the Federal Bureaucracy"](https://www.presidency.ucsb.edu/documents/executive-order-14238-continuing-the-reduction-the-federal-bureaucracy), the Trump administration amplified the tactics of the first order, both by widening the number of agencies being examined and reducing the timeframes for their compliance. This order targeted the Federal Mediation and Conciliation Service, the United States Agency for Global Media (aka Voice of America), the Woodrow Wilson International Center for Scholars in the Smithsonian Institution, the Institute of Museum and Library Services, the United States Interagency Council on Homelessness, the Community Development Financial Institutions Fund; and the Minority Business Development Agency.
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[FMCS USAGM IMLS USICH CDFIF MBDA WWICS]).any? } %}
-{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+{%@ 'tables/compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 From there, it's just been open season on every independent agency from DOGE. Here are the attacks grouped by agency types.
 
@@ -55,42 +55,42 @@ From there, it's just been open season on every independent agency from DOGE. He
 The arts have been a natural target for DOGE, which shares the Trump Administration's disdain for supporting the arts, unless it's the creation of statues for a garden of American heroes. To be clear, there have been many assaults on arts organizations outside of DOGE's involvement - just recently, Trump has attempted to oust the head of the National Portrait Gallery for instance - but there have been a few organizations that have seen DOGE target them specifically:
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[NEH CPB ACHP NEA Smithsonian NationalGallery]).any? } %}
-{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+{%@ 'tables/compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### Finance and Regulations {#regs}
 
 DOGE has also attempted to target several financial and trade regulatory agencies
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[FDIC SEC EXIM DFC FTC CPSC NTSB FEC NRC]).any? } %}
-{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+{%@ 'tables/compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### National Science Foundation {#nsf}
 
 The National Science Foundation has also found itself under the thumb of DOGE, with {{ person_link('Luke Farritor') }} leading a delegation of people from HHS to scrutinize all their funding. Their target is to cut all grant funding by 55%, which will have a catastrophic effect on science in America.
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[NSF]).any? } %}
-{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+{%@ 'tables/compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### Service Organizations {#service} 
 
 Service organizations have also been a focus of the Trump Administration's ire. Recently, there have been moves to shut down the funding and staffing for the Peace Corps and the AmeriCorps, with vague allegations of fraud used as a cover for sweeping reductions.
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[Peace AmeriCorps]).any? } %}
-{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+{%@ 'tables/compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### Legislative Branch Agencies {#leg}
 
 In one of DOGE's most bizarre turns, thet have attempted to embed DOGE teams into the Library of Congress and Government Accountability Office (GAO). The problem is that both of these are legislative branch agencies and thus well outside the authority of DOGE to police them or shut them down.
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[LOC GAO]).any? } %}
-{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+{%@ 'tables/compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### Merit System Protection Board {#mspb}
 
 Finally, DOGE has picked up its original mission of harrassing federal workers by attempting to shut down the Merit System Protection Board (MSPB), which ensures that government personnel rules are fairly enforced.
 
 {% events = site.data.events.select {|e| (e.agency_ids & %w[MSPB]).any? } %}
-{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+{%@ 'tables/compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 
 ### Everybody Else {#other}
 
@@ -98,6 +98,6 @@ Finally, DOGE has picked up its original mission of harrassing federal workers b
 {% remaining_ids = independent_agency_ids - %w[USIP USADF IAF FMCS USAGM WWICS IMLS USICH CDFIF MBDA NEH CPB ACHP FDIC SEC EXIM FEC NRC DFC FTC CPSC NTSB NSF Peace AmeriCorps MSPB LOC GAO NationalGallery NEA Smithsonian]%}
 {% events = site.data.events.select {|e| (e.agency_ids & remaining_ids).any? } %}
 {% if events.any? %}
-{%@ 'compact_event_timeline', events: events, agency_col: true, month_separator: false %}
+{%@ 'tables/compact_event_timeline', events: events, agency_col: true, month_separator: false %}
 {% end %}
 {% end %}

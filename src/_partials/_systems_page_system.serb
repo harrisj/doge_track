@@ -84,11 +84,7 @@
         {{ agency_link(role.agency_id) }}:
       {% end %}
       {% if role.name %}{{ person_link(role.name) }}{% elsif role.doge_alias_id %}{{ alias_link(role.doge_alias_id) }}{% end %}
-      {% if role.date_revoked %}
-        {{ render EdtfFormat.new(role.date_granted, :compact) }}-{{ render EdtfFormat.new(role.date_revoked, :compact) }}
-      {% else %}
-        {{ render EdtfFormat.new(role.date_granted, :compact) }}
-      {% end %}
+      {%@ 'atoms/date_range_label', first: role.date_granted, last: role.date_revoked %}
       {% if role.type != 'read' %}
       ({%@ 'system_access_type', role: role %} access)
       {% end %}

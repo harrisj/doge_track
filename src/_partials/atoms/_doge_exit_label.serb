@@ -1,0 +1,2 @@
+{% import 'macros' %}
+{% if position.end_date && position_end_type(position) %}<div>{% if position.person && !position.person.govt_exit_date.nil? %}<strong>Left DOGE</strong>{% else %}{{ position_end_type(position) | raw }}{% end %}</div>{% end %}
