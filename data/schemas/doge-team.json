@@ -1,0 +1,57 @@
+{
+  "$id": "schemas/doge-team",
+  "type": "object",
+  "title": "DOGE Team",
+  "description": "A listing of who seems to have helped with specific roles on DOGE teams at various agencies",
+  "properties": {
+    "agency": {
+      "description": "The agency where the DOGE team is located",
+      "$ref": "valid_names.json#agency_ids"
+    },
+    "data": {
+      "description": "Staff focused on data access/sharing to other parts of government",
+      "type": "array",
+      "items": {
+        "$ref": "valid_names.json#people"
+      }
+    },
+    "lead": {
+      "description": "People who have been described as DOGE team leads",
+      "type": "array",
+      "items": {
+        "$ref": "valid_names.json#people"
+      }
+    },
+    "personnel": {
+      "description": "DOGE team members who have been focused on identifying personnel reductions",
+      "type": "array",
+      "items": {
+        "$ref": "valid_names.json#people"
+      }
+    },
+    "regulations": {
+      "description": "DOGE team members who have been focused on identifying personnel reductions",
+      "type": "array",
+      "items": {
+        "$ref": "valid_names.json#people"
+      }
+    },
+    "spending": {
+      "description": "DOGE team members who have been focused on spending/contract control",
+      "type": "array",
+      "items": {
+        "$ref": "valid_names.json#people"
+      }
+    },
+    "waste": {
+      "description": "Staff focused on chasing down what ghosts of fraud and waste",
+      "type": "array",
+      "items": {
+        "$ref": "valid_names.json#people"
+      }
+    }
+  },
+  "requiredProperties": [
+    "agency"
+  ]
+}
