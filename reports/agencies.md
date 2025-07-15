@@ -207,7 +207,7 @@
   - **Gavin Kliger** (detailed from OPM)
   - **Anthony Armstrong** (detailed from OPM)
   - **Payton Rehling** (detailed from SSA)
-  - **Edward Coristine** (2025-02-(04)~) (detailed from GSA)
+  - **Edward Coristine** (2025-02-(04)~) Senior Advisor (detailed from GSA)
   - **Kyle Schutt** (2025-02-(19)~) (detailed from GSA)
   - **Antoine McCord** (2025-03-11) Chief Information Officer
   - **Allan Mangaser** (2025-04-XX) (detailed from OPM)
@@ -461,8 +461,8 @@
 # Health and Human Services
 - slug: hhs
 - people:
-  - **Luke Farritor** (2025-01-21) (detailed from GSA)
-  - **Rachel Riley** (2025-01-27)
+  - **Luke Farritor** (2025-01-21) Executive Engineer (detailed from GSA)
+  - **Rachel Riley** (2025-01-27) Senior Advisor
   - **Mattieu Gamache-Asselin** (2025-01-XX - 2025-01-XX) Senior Advisor - DOGE
   - **Clark Minor** (2025-02-14) Chief Information Officer
   - **Conor Fennessy** (2025-02-20) (detailed from Education)
@@ -471,9 +471,9 @@
   - **Amy Gleason** (2025-02-XX) (detail)
   - **Brad Smith** (2025-03-04 - 2025-05-23) Senior Advisor
   - **Amy Gleason** (2025-03-04) Expert/Consultant
-  - **Edward Coristine** (2025-03-05) (detailed from GSA)
-  - **Marko Elez** (2025-03-05) (detailed from DOL)
-  - **Aram Moghaddassi** (2025-03-05) (detailed from DOL)
+  - **Edward Coristine** (2025-03-05) Executive Engineer (detailed from GSA)
+  - **Marko Elez** (2025-03-05) Executive Engineer (detailed from DOL)
+  - **Aram Moghaddassi** (2025-03-05) Executive Engineer (detailed from DOL)
   - **Zach Terrell** (2025-03-06)
   - **Kyle Schutt** (2025-03-14) (detailed from GSA)
   - **Ryan Shea** (2025-05-XX) (detailed from GSA)

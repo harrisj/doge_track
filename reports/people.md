@@ -196,7 +196,7 @@
     -  **GSA** (2025-01-(20)~ to 2025-05-23) [as "OPM-04"] Senior Advisor EF-00 volunteer
     -  **USAID** (2025-01-27 to ??) Senior Advisor
     -  **SBA** (2025-02-03 to ??) 
-    -  **DHS** (2025-02-(04)~ to ??) 
+    -  **DHS** (2025-02-(04)~ to ??) Senior Advisor
     -  **FEMA** (2025-02-05 to ??) 
         - FEMA-Go: FEMA Grants Outcomes: 2025-02-07 - ongoing
     -  **State** (2025-02-10 to ??) Senior Advisor
@@ -205,7 +205,7 @@
     -  **CISA** (2025-02-19 to ??) Senior Advisor
         - Office365: Microsoft Office 365 **[admin access]**: 2025-02-20 - ongoing
     -  **Education** (2025-02-20 to ??) 
-    -  **HHS** (2025-03-05 to ??) 
+    -  **HHS** (2025-03-05 to ??) Executive Engineer
     -  **CMS** (2025-03-05 to ??) 
         - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
         - CALM: CMS Acquisition Lifecycle Management System: 2025-03-05 - ongoing
@@ -268,7 +268,7 @@
         - MBR: Master Beneficiary Record: 2025-03-17 - ongoing
         - NUMIDENT: Numerical Identification System: 2025-03-17 - ongoing
         - SSR: Supplemental Security Record master records: 2025-03-17 - ongoing
-    -  **HHS** (2025-03-05 to ??) 
+    -  **HHS** (2025-03-05 to ??) Executive Engineer
         - NDNH: National Directory of New Hires: 2025-03-06 - 2025-04-18
     -  **CMS** (2025-03-05 to ??) 
         - HIGLAS: Healthcare Integrated General Ledger Accounting System: 2025-02-05 - ongoing
@@ -302,7 +302,7 @@
 - category: wrecker
 - positions:
     -  **GSA** (2025-01-20 to ??)  volunteer
-    -  **HHS** (2025-01-21 to ??) 
+    -  **HHS** (2025-01-21 to ??) Executive Engineer
         - PMS: Payment Management System **[admin access]**: 2025-01-22 - ongoing
         - Grant Solutions: 2025-01-27 - ongoing
         - HCAS: HHS Consolidated Acquisition System **[admin access]**: 2025-01-29 - ongoing
@@ -725,7 +725,7 @@
         - FLAG: Foreign Labor Application Gateway **[admin access]**: 2025-04-18 - ongoing
         - REO: Reentry Employment Opportunities: 2025-04-18 - ongoing
     -  **SSA** (2025-02-22 to ??) [as "SSA-03"] 
-    -  **HHS** (2025-03-05 to ??) 
+    -  **HHS** (2025-03-05 to ??) Executive Engineer
         - Grant Solutions: 2025-02-19 - ongoing
         - NDNH: National Directory of New Hires: 2025-03-06 - 2025-04-18
     -  **CMS** (2025-03-05 to ??) 
@@ -844,7 +844,7 @@
 # Rachel Riley
 - category: wrecker
 - positions:
-    -  **HHS** (2025-01-27 to ??) 
+    -  **HHS** (2025-01-27 to ??) Senior Advisor
         - EHCM: Enterprise Human Capital Management System: 2025-02-03 - ongoing
         - HCAS: HHS Consolidated Acquisition System **[admin access]**: 2025-02-03 - 2025-04-18
         - FBIS: Financial Business Intelligence System: 2025-02-04 - ongoing

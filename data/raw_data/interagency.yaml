@@ -36,10 +36,11 @@
   type: report
   fuzz: article just reports this as early Feb; but Musk tweets said he was informed on 2/7
   event: >-
-    After gaining access to the PAM DB system, DOGE members at the Treasury department see what appear
-    to be payments flowing to recipients without Social Security numbers. Other recipients appear to be
-    dead. This triggered Musk accusing SSA of massive fraud. It was later reveled to be DOGE not understanding
-    the data.
+    After gaining access to the PAM DB system for payments, DOGE members at the Treasury department discover
+    what appear to be payments flowing to recipients without Social Security numbers. Other recipients
+    appear to be dead. These discrepancies lead to Musk accusing SSA of massive fraud on his Twitter feed,
+    but later analysis by SSA staff reveal these were cases of DOGE not understanding how the data was
+    structured.
   source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
   source_name: NYT
   agency:
@@ -50,9 +51,8 @@
 - date: 2025-02-19
   type: official
   event: >-
-    Trump issues an Executive Order "Commencing the Reduction of the Federal Bureaucracy" targeting the
-    Presidio Trust, the Inter-American Foundation, the United States African Development Foundation and
-    the United States Institute of Peace for reductions.
+    Trump issues EO 14217, which explicitly targets the Presidio Trust, the Inter-American Foundation,
+    the United States African Development Foundation and the United States Institute of Peace for reductions.
   source: >-
     https://www.whitehouse.gov/presidential-actions/2025/02/commencing-the-reduction-of-the-federal-bureaucracy/
   agency:
@@ -102,7 +102,8 @@
   type: report
   comment: Actual start date in March unknown
   event: >-
-    The Government Accountability Office (GAO) starts an audit of how DOGE handled data at several agencies
+    The Government Accountability Office (GAO) starts an audit of how DOGE has handled data at several
+    agencies.
   source: https://www.wired.com/story/gao-audit-elon-musk-doge-government-agencies/
   agency:
   - DOL
@@ -116,8 +117,11 @@
 - date: 2025-03-14
   type: official
   event: >-
-    Trump issues a new executive order proclaiming that the IMLS among other agencies must be reduced
-    to statutory functions only
+    Trump issues a new executive order EO 14238 targeting the Federal Mediation and Conciliation Service,
+    the United States Agency for Global Media (parent of VOA, the Woodrow Wilson International Center
+    for Scholars in the Smithsonian Institution, the Institute of Museum and Library Services, the United
+    States Interagency Council on Homelessness, the Community Development Financial Institutions Fund
+    and the Minority Business Development Agency for reduction actions by DOGE.
   source: >-
     https://www.whitehouse.gov/presidential-actions/2025/03/continuing-the-reduction-of-the-federal-bureaucracy/
   agency:
@@ -153,8 +157,9 @@
   type: interagency
   event: >-
     During a discussion on how to strip grants from the University of Pennsylvania and San Jose State,
-    GSA FAS Commissioner sends an email to coordinate grant freezes from DOD, DHS and the EPA. He includes
-    DOGE staffers Kyle Schutt, Adam Hoffman and Kathryn Armstrong Loving as the recipients.
+    GSA FAS Commissioner Josh Gruenbaum sends an email to coordinate grant freezes from DOD, DHS and the
+    EPA. He includes DOGE staffers Kyle Schutt, Adam Hoffman and Kathryn Armstrong Loving as the recipients
+    of these requests.
   interagency_doge_reps:
     GSA:
     - Josh Gruenbaum
@@ -176,7 +181,9 @@
 - date: 2025-03-(24)~
   type: disruption
   fuzz: Source mentions it was on or about this date
-  event: NLRB networking staff make a formal report of the suspicious activity to US-CERT at CISA
+  event: >-
+    NLRB networking staff make a formal report to US-CERT at CISA of the suspicious activity they had
+    detected from DOGE's activities at the agency.
   source: >-
     https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
   agency:
@@ -223,7 +230,7 @@
   event: >-
     Alarmed at the viral spread of DOGE's false claim that 40% of all calls to Social Security are fraud,
     agency staff at SSA draft a public statement to correct the errors in the claim. They are specifically
-    ordered by Katie Miller not to release it. "The number is 40 percent."
+    ordered by Katie Miller not to release it. She asserts "the number is 40 percent."
   interagency_doge_reps:
     DOGE:
     - Katie Miller
@@ -239,8 +246,8 @@
 - date: 2025-04-01
   type: disruption
   event: >-
-    HHS terminates 10,000 employees across many divisions (FDA, CDC, NIH, HHS) in the name of "bureaucratic
-    realignment." Despite RFK's promises, the layoffs do include many scientists
+    HHS issues Reduction-in-Force orders for 10,000 employees across many divisions (FDA, CDC, NIH, HHS)
+    in the name of "bureaucratic realignment." Despite RFK's promises, the layoffs do include many scientists
   source: https://www.npr.org/sections/shots-health-news/2025/04/01/g-s1-57485/hhs-fda-layoffs-doge-cdc-nih/
   agency:
   - HHS
@@ -254,7 +261,7 @@
   type: disruption
   event: >-
     CISA informs NLRB networking staff that they should drop any investigation and not move forward on
-    any reporting
+    any reporting of the suspicious activity at the agency.
   source: >-
     https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
   agency:
@@ -266,8 +273,8 @@
   type: legal
   event: >-
     In a 2-1 vote, the 4th U.S. Circuit Court of Appeals lifted a stay against DOGE data access at the
-    Treasury, OPM and Department of Education imposed in the case American Federation of Teachers v. Bessent
-    (D. Maryland 2025)
+    Treasury, OPM and Department of Education imposed in the case _American Federation of Teachers v.
+    Bessent et al_.
   source: https://storage.courtlistener.com/recap/gov.uscourts.ca4.178115/gov.uscourts.ca4.178115.17.0.pdf
   case_no: 8:25-cv-00430
   agency:
@@ -281,7 +288,7 @@
 - date: 2025-04-07
   type: interagency
   event: >-
-    The IRS and DHS executed a Memorandum of Understanding (MOU) for data sharing between both agencies.
+    The IRS and DHS execute a Memorandum of Understanding (MOU) for data sharing between both agencies.
     Although DOGE is not named specifically in this agreement, ICE is allowed to designate authorized
     individuals to access the shared data. AI usage must also be reviewed first by the IRS.
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278147/gov.uscourts.dcd.278147.30.1_1.pdf
@@ -298,8 +305,9 @@
 - date: 2025-04-07
   type: interagency
   event: >-
-    After some qualms about its legality, Leland Dudek signs two memos authorizing sharing data that would
-    allow DHS and ICE to locate immigrants
+    After some qualms about its legality, Leland Dudek signs two memos authorizing sharing data from the
+    Social Security Administration that would allow DHS and ICE to locate immigrants who had been paying
+    taxes to Social Security (despite not being able to collect it).
   source: https://www.washingtonpost.com/politics/2025/04/12/trump-immigrants-dead-social-security/
   interagency_doge_reps:
     SSA:
@@ -310,20 +318,55 @@
   - ICE
   id: b3H44hoj
 
-- date: 2025-04-12
+- date: 2025-04-10
   type: disruption
   event: >-
-    A DOGE engineer has apparently removed the ability of government agencies to post new grants to grants.gov
-    and requiring them to all be sent to a new email address created this week for reviews
+    A leaked OMB budget proposal memorandum propose major changes to the discretionary budget for the
+    Department of Health and Human Services. Specifically, it includes cutting that budget by a third
+    and also consolidating various health and safety-related agencies into a new Administration for a
+    Healthy America (AHA) overseen by the HHS Secretary.
+  source: >-
+    https://natlawreview.com/article/recent-developments-consumer-product-safety-commission-potential-changes-and
+  source_name: Natl. Law Review
+  agency:
+  - HHS
+  - CMS
+  - CDC
+  - NIH
+  - FDA
+  - CPSC
+  id: 2abB0Nt3
+
+- date: 2025-04-11
+  type: disruption
+  event: >-
+    Luke Farritor uses his admin access to lock out all government officials at multiple agencies from
+    using grants.gov to issue new grants. Instead, all grants must now be sent to a new email address
+    which will be reviewed by DOGE staffers before grants can be posted.
   named:
   - Luke Farritor
   source: https://www.washingtonpost.com/politics/2025/04/11/doge-controls-federal-grant-postings/
+  source_name: Wash. Post
   agency:
   - HHS
-  - DOI
+  - USDA
+  - Commerce
   - DOD
-  - NIH
-  id: Uasqbriy
+  - Education
+  - Energy
+  - HUD
+  - DOJ
+  - DOL
+  - State
+  - DOT
+  - VA
+  - EPA
+  - NASA
+  - NARA
+  - NEH
+  - NSF
+  - SBA
+  id: 3J3t5FxO
 
 - date: 2025-04-21
   type: official
@@ -344,7 +387,8 @@
   fuzz: No other specific date information is given
   event: >-
     In May, Clark Milner, a senior advisor for policy in the White House, organized a meeting between
-    USPS staff and their DOGE representatives and DOGE staff and members of the Domestic Policy Council.
+    USPS staff, the DOGE representatives at the agency, other DOGE staffers and members of the Domestic
+    Policy Council.
   interagency_doge_reps:
     USPS:
     - Ethan Shaotran
@@ -362,8 +406,8 @@
 - date: 2025-05-13
   type: legal
   event: >-
-    Ruling in Rhode Island v. Trump, Judge McConnell grants a preliminary injunction preventing DOGE and
-    the Trump Administration from dismantling the IMLS, MBDA and FMCS while the case is active.
+    Ruling in _Rhode Island v. Trump_, Judge McConnell grants a preliminary injunction preventing DOGE
+    and the Trump Administration from dismantling the IMLS, MBDA and FMCS while the case is active.
   case_no: 1:25-cv-00128
   source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.60.0_1.pdf
   agency:
@@ -377,8 +421,9 @@
 - date: 2025-05-20
   type: disruption
   event: >-
-    In a post on X, DOGE reports that it is working to review surveys conducted by the Census Bureau and
-    claims to have eliminated 5 already about alcohol consumption and internet usage
+    In a post on its X account, DOGE reports that it is working to review surveys conducted by the Census
+    Bureau and claims to have already eliminated 5 surveys that include questions about alcohol consumption
+    and internet usage.
   source: https://bsky.app/profile/hansilowang.bsky.social/post/3lpmvsh6byc2o
   source_name: Bluesky
   agency:
@@ -393,8 +438,8 @@
   source_name: Democracy Docket
   source_title: The DOJ Accelerates Its Hunt For Voter Fraud — With DOGE's Help
   event: >-
-    In a podcast appearance, Antonio Gracias reported that the DOJ had requested for DOGE to find "10-20
-    cases" of alleged noncitizen voting in every state
+    In a podcast appearance, Antonio Gracias reported that the Department of Justice had requested for
+    DOGE to find "10-20 cases" of alleged noncitizen voting in every state.
   named:
   - Antonio Gracias
   agency:
@@ -406,9 +451,8 @@
   type: report
   event: >-
     After several DOGE staffers expressed concerns that he should not have access to government information
-    or continue to direct DOGE staff, Steve Davis has reportedly pushed for their firing and calling it
-    an attempted coup. He urged firing and the silent treatment for Sam Corcos and other DOGE staffers
-    when they suggested he no longer had any authority.
+    or continue to direct DOGE staff, Steve Davis reportedly pushes for their firing, calling it an attempted
+    coup. Sam Corcos is named as one DOGE staffer who was given the silent treatment by Davis and allies.
   named:
   - Steve Davis
   - Sam Corcos
@@ -452,8 +496,8 @@
   type: access
   event: >-
     Medicaid staff at CMS are ordered by CMS and HHS leadership to immediately share with DHS data from
-    Medicaid that provides information about non-US citizens who are legally enrolled in the program in
-    a few select states.
+    Medicaid program in certain states that allow non-US citizens to be enrolled. This information could
+    be used by ICE to target and deport immigrants who are legally collecting state benefits.
   source: https://apnews.com/article/medicaid-deportation-immigrants-trump-4e0f979e4290a4d10a067da0acca8e22
   source_name: AP
   agency:
@@ -483,8 +527,8 @@
   event: >-
     In a surprise move, the Republican governor of Virginia, the head of public buildings service at GSA
     and the Commissioner for HUD announce that they will be kicking out the National Science Foundation
-    (NSF) from its Virginia headquarters and moving HUD there. There are no details provided on where
-    NSF is expected to relocate to.
+    (NSF) from its Virginia headquarters and moving HUD to that location. There are no details provided
+    on where NSF is expected to relocate to.
   source: >-
     https://www.govexec.com/management/2025/06/hud-move-national-science-foundation-headquarters-no-current-plan-where-relocate-nsf-employees/406315/
   source_name: GovExec
@@ -498,8 +542,8 @@
   type: disruption
   event: >-
     The Department of Defense announced that it would immediately stop ingesting and sharing data from
-    3 microwave-imaging satellites with NOAA and the National Hurricane Center. This imaging is used to
-    prevent "sunrise surprises" by allowing forecasters to monitor hurricanes at night. This is expected
+    3 microwave-imaging satellites with NOAA's National Hurricane Center. This imaging is used to prevent
+    "sunrise surprises" by allowing forecasters to monitor hurricanes at night. The change is expected
     to degrade the quality of hurricane forecasts.
   source: https://michaelrlowry.substack.com/p/critical-hurricane-forecast-tool
   source_name: Michael Lowry
@@ -507,6 +551,39 @@
   - NOAA
   - DOD
   id: 7lpMwcEg
+
+- date: 2025-06-26
+  type: official
+  event: >-
+    In an email to agency partners, the operators of grants.gov declare that the revised mechanism added
+    in April that routed all Notices of Funding Opportunities (NOFOs) through a DOGE email address has
+    been reversed. Instead, agencies are to return to using the tool like that did previously. This doesn't
+    necessarily mean that DOGE or political appointees will not be reviewing grants, but they have no
+    longer locked other users out of the system.
+  linked:
+  - Luke Farritor
+  agency:
+  - HHS
+  - USDA
+  - Commerce
+  - DOD
+  - Education
+  - Energy
+  - HUD
+  - DOJ
+  - DOL
+  - State
+  - DOT
+  - VA
+  - EPA
+  - NASA
+  - NARA
+  - NEH
+  - NSF
+  - SBA
+  source: https://www.washingtonpost.com/politics/2025/06/27/doge-loses-control-federal-grants/
+  source_name: Wash. Post
+  id: 5FtSVXWx
 
 - date: 2025-06-27
   type: legal
