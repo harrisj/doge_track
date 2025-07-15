@@ -22015,6 +22015,39 @@
     roles are both converted into regular positions at the <a class="link-hover" href="/agencies/gsa">GSA</a> at the GS-15 level, which would mean an annual
     salary of $167,603 - $195,200 in Washington, DC. This is the maximum level possible for a general government worker, and it often takes years or decades
     to reach. It would not normally be granted to staff with such limited work experience.
+- id: 2F23z1OO
+  type: official
+  date: 2025-06-XX
+  sort_date: '2025-06-01'
+  time:
+  text: >-
+    The White House Presidential Personnel Office contacts DOGE leads across the government to inform them that Steve Davis is no longer an employee of
+    DOGE and they should cease all contact with him.
+  fuzz: Not named, but linking to Trent Morse, since this is his office.
+  comment:
+  source: https://www.politico.com/news/2025/07/14/doge-lead-steve-davis-did-not-go-quietly-00452257
+  source_title:
+  source_name: Politico
+  case_no:
+  system_id:
+  theme:
+  names:
+  - Trent Morse
+  agency_ids:
+  - EOP
+  alias_ids: []
+  names_aliases:
+  - name: Trent Morse
+    slug: trent-morse
+    sort_name: Morse
+    category: enabler
+  agencies_parents:
+  - EOP
+  obj_type: Event
+  linkified_text: >
+    The White House Presidential Personnel Office contacts <a class="link-hover" href="/agencies/white-house">DOGE</a> leads across the government to inform
+    them that <a class="link-hover" href="/people/leaders#steve-davis">Steve Davis</a> is no longer an employee of <a class="link-hover" href="/agencies/white-house">DOGE</a>
+    and they should cease all contact with him.
 - id: 4nZTdaoY
   type: report
   date: 2025-06-XX
@@ -22328,6 +22361,69 @@
     A $47 million dollar contract for expanding a major immigration facility in Georgia is paused pending review by <a class="link-hover" href="/agencies/white-house">DOGE</a>
     under a new policy that requires review for any <a class="link-hover" href="/agencies/homeland-security">DHS</a> contract worth more than $20 million.
     Previously, <a class="link-hover" href="/agencies/homeland-security">DHS</a> had been exempt from such spending controls by <a class="link-hover" href="/agencies/white-house">DOGE</a>.
+- id: 5iPb1g7n
+  type: disruption
+  date: 2025-06-(05)~
+  sort_date: '2025-06-05'
+  time:
+  text: >-
+    Concerned by Steve Davis' attempts to stay involved with DOGE despite no longer being employed by the agency and instructions to not interact with him,
+    DOGE staffers Yinon Weiss, Sam Corcos, Ryan Shea, and Adam Blake privately questioned Davis about his involvement. They also reportedly contacted DOGE
+    general counsel Austin Raynor about the legality of his continued involvement.
+  fuzz: date is not given in article, unclear if at meeting or afterwards
+  comment:
+  source: https://www.politico.com/news/2025/07/14/doge-lead-steve-davis-did-not-go-quietly-00452257
+  source_title:
+  source_name: Politico
+  case_no:
+  system_id:
+  theme:
+  names:
+  - Adam Blake
+  - Sam Corcos
+  - Steve Davis
+  - Austin Raynor
+  - Ryan Shea
+  - Yinon Weiss
+  agency_ids:
+  - DOGE
+  alias_ids: []
+  names_aliases:
+  - name: Adam Blake
+    slug: adam-blake
+    sort_name: Blake
+    category: wrecker
+  - name: Sam Corcos
+    slug: sam-corcos
+    sort_name: Corcos
+    category: enabler
+  - name: Steve Davis
+    slug: steve-davis
+    sort_name: Davis
+    category: leadership
+  - name: Austin Raynor
+    slug: austin-raynor
+    sort_name: Raynor
+    category: support
+  - name: Ryan Shea
+    slug: ryan-shea
+    sort_name: Shea
+    category: wrecker
+  - name: Yinon Weiss
+    slug: yinon-weiss
+    sort_name: Weiss
+    category: wrecker
+  agencies_parents:
+  - DOGE
+  - EOP
+  obj_type: Event
+  linkified_text: >
+    Concerned by <a class="link-hover" href="/people/leaders#steve-davis">Steve Davis</a>’ attempts to stay involved with <a class="link-hover" href="/agencies/white-house">DOGE</a>
+    despite no longer being employed by the agency and instructions to not interact with him, <a class="link-hover" href="/agencies/white-house">DOGE</a>
+    staffers <a class="link-hover" href="/wreckers/other#yinon-weiss">Yinon Weiss</a>, <a class="link-hover" href="/people/enabler-staff#sam-corcos">Sam
+    Corcos</a>, <a class="link-hover" href="/wreckers/other#ryan-shea">Ryan Shea</a>, and <a class="link-hover" href="/wreckers/other#adam-blake">Adam Blake</a>
+    privately questioned Davis about his involvement. They also reportedly contacted <a class="link-hover" href="/agencies/white-house">DOGE</a> general
+    counsel <a class="link-hover" href="/people/support-team#austin-raynor">Austin Raynor</a> about the legality of his continued involvement.
 - id: 3jzcZqoH
   type: report
   date: 2025-06-(05)~
@@ -22370,6 +22466,103 @@
     and Space Administration</a>.” The date and person isn’t named, but the CIO replacement at <a class="link-hover" href="/agencies/social-security">SSA</a>
     and <a class="link-hover" href="/agencies/nasa">NASA</a> connection suggest it’s <a class="link-hover" href="/people/enabler-staff#scott-coulter">Scott
     Coulter</a> who was removed in early June.
+- id: 7aqPkVR2
+  type: action
+  date: '2025-06-05'
+  sort_date: '2025-06-05'
+  time:
+  text: >-
+    Despite having left DOGE a week prior, Steve Davis reportedly holds a meeting with DOGE staff hosted on the sixth floor of the GSA headquarters. At
+    the meeting, he reportedly proposes a "DOGE 2.0" which would be more collaborative with agency heads.
+  fuzz:
+  comment:
+  source: https://www.politico.com/news/2025/07/14/doge-lead-steve-davis-did-not-go-quietly-00452257
+  source_title:
+  source_name: Politico
+  case_no:
+  system_id:
+  theme:
+  names:
+  - Steve Davis
+  - Stephen Ehikian
+  agency_ids:
+  - DOGE
+  - GSA
+  alias_ids: []
+  names_aliases:
+  - name: Steve Davis
+    slug: steve-davis
+    sort_name: Davis
+    category: leadership
+  - name: Stephen Ehikian
+    slug: stephen-ehikian
+    sort_name: Ehikian
+    category: enabler
+  agencies_parents:
+  - DOGE
+  - GSA
+  - EOP
+  obj_type: Event
+  linkified_text: >
+    Despite having left <a class="link-hover" href="/agencies/white-house">DOGE</a> a week prior, <a class="link-hover" href="/people/leaders#steve-davis">Steve
+    Davis</a> reportedly holds a meeting with <a class="link-hover" href="/agencies/white-house">DOGE</a> staff hosted on the sixth floor of the <a class="link-hover"
+    href="/agencies/gsa">GSA</a> headquarters. At the meeting, he reportedly proposes a “<a class="link-hover" href="/agencies/white-house">DOGE</a> 2.0”
+    which would be more collaborative with agency heads.
+- id: 1nLi50HW
+  type: disruption
+  date: 2025-06-(05)~
+  sort_date: '2025-06-05'
+  time:
+  text: >-
+    Concerned by people questioning his continued authority, Steve Davis reportedly taps Anthony Armstrong, Josh Gruenbaum and Stephen Ehikian to assess
+    the loyalty of DOGE staffers and assert they are the leadership of DOGE now, acting under the authority of JD Vance and Susie Wiles in the White House.
+    This is a bluff, and staffers in the White House counter that their authority is only within GSA itself.
+  fuzz:
+  comment:
+  source: https://www.politico.com/news/2025/07/14/doge-lead-steve-davis-did-not-go-quietly-00452257
+  source_title:
+  source_name: Poltico
+  case_no:
+  system_id:
+  theme:
+  names:
+  - Anthony Armstrong
+  - Steve Davis
+  - Stephen Ehikian
+  - Josh Gruenbaum
+  agency_ids:
+  - GSA
+  - DOGE
+  alias_ids: []
+  names_aliases:
+  - name: Anthony Armstrong
+    slug: anthony-armstrong
+    sort_name: Armstrong
+    category: leadership
+  - name: Steve Davis
+    slug: steve-davis
+    sort_name: Davis
+    category: leadership
+  - name: Stephen Ehikian
+    slug: stephen-ehikian
+    sort_name: Ehikian
+    category: enabler
+  - name: Josh Gruenbaum
+    slug: josh-gruenbaum
+    sort_name: Gruenbaum
+    category: enabler
+  agencies_parents:
+  - GSA
+  - DOGE
+  - EOP
+  obj_type: Event
+  linkified_text: >
+    Concerned by people questioning his continued authority, <a class="link-hover" href="/people/leaders#steve-davis">Steve Davis</a> reportedly taps <a
+    class="link-hover" href="/people/leaders#anthony-armstrong">Anthony Armstrong</a>, <a class="link-hover" href="/people/enabler-staff#josh-gruenbaum">Josh
+    Gruenbaum</a> and <a class="link-hover" href="/people/enabler-staff#stephen-ehikian">Stephen Ehikian</a> to assess the loyalty of <a class="link-hover"
+    href="/agencies/white-house">DOGE</a> staffers and assert they are the leadership of <a class="link-hover" href="/agencies/white-house">DOGE</a> now,
+    acting under the authority of JD Vance and Susie Wiles in the White House. This is a bluff, and staffers in the White House counter that their authority
+    is only within <a class="link-hover" href="/agencies/gsa">GSA</a> itself.
 - id: 5Mk65UMZ
   type: report
   date: '2025-06-06'
@@ -22749,6 +22942,64 @@
     class="link-hover" href="/agencies/health">HHS</a> leadership to immediately share with <a class="link-hover" href="/agencies/homeland-security">DHS</a>
     data from Medicaid program in certain states that allow non-US citizens to be enrolled. This information could be used by <a class="link-hover" href="/agencies/homeland-security">ICE</a>
     to target and deport immigrants who are legally collecting state benefits.
+- id: 7mh9D1Rv
+  type: disruption
+  date: '2025-06-07'
+  sort_date: '2025-06-07'
+  time:
+  text: >-
+    Steve Davis removed DOGE staffers that he considered disloyal from shared Signal chats that DOGE had continued to use for coordination. He also used
+    his influence at GSA to have Ryan Shea removed from his position. Other Davis targets – Yinon Weiss, Sam Corcos and Adam Blake – were able to remain
+    at their posts but were shut out from DOGE communications
+  fuzz:
+  comment:
+  source: https://www.politico.com/news/2025/07/14/doge-lead-steve-davis-did-not-go-quietly-00452257
+  source_title:
+  source_name: Poltico
+  case_no:
+  system_id:
+  theme:
+  names:
+  - Adam Blake
+  - Sam Corcos
+  - Steve Davis
+  - Ryan Shea
+  - Yinon Weiss
+  agency_ids:
+  - DOGE
+  alias_ids: []
+  names_aliases:
+  - name: Adam Blake
+    slug: adam-blake
+    sort_name: Blake
+    category: wrecker
+  - name: Sam Corcos
+    slug: sam-corcos
+    sort_name: Corcos
+    category: enabler
+  - name: Steve Davis
+    slug: steve-davis
+    sort_name: Davis
+    category: leadership
+  - name: Ryan Shea
+    slug: ryan-shea
+    sort_name: Shea
+    category: wrecker
+  - name: Yinon Weiss
+    slug: yinon-weiss
+    sort_name: Weiss
+    category: wrecker
+  agencies_parents:
+  - DOGE
+  - EOP
+  obj_type: Event
+  linkified_text: >
+    <a class="link-hover" href="/people/leaders#steve-davis">Steve Davis</a> removed <a class="link-hover" href="/agencies/white-house">DOGE</a> staffers
+    that he considered disloyal from shared Signal chats that <a class="link-hover" href="/agencies/white-house">DOGE</a> had continued to use for coordination.
+    He also used his influence at <a class="link-hover" href="/agencies/gsa">GSA</a> to have <a class="link-hover" href="/wreckers/other#ryan-shea">Ryan
+    Shea</a> removed from his position. Other Davis targets – <a class="link-hover" href="/wreckers/other#yinon-weiss">Yinon Weiss</a>, <a class="link-hover"
+    href="/people/enabler-staff#sam-corcos">Sam Corcos</a> and <a class="link-hover" href="/wreckers/other#adam-blake">Adam Blake</a> – were able to remain
+    at their posts but were shut out from <a class="link-hover" href="/agencies/white-house">DOGE</a> communications
 - id: 657iS0Kg
   type: legal
   date: '2025-06-09'

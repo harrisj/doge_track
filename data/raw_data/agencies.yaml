@@ -2442,6 +2442,25 @@
     - Russell Vought
     agency: DOGE
     id: 5Kjz8pzk
+  - date: 2025-06-(05)~
+    type: disruption
+    event: >-
+      Concerned by Steve Davis' attempts to stay involved with DOGE despite no longer being employed by
+      the agency and instructions to not interact with him, DOGE staffers Yinon Weiss, Sam Corcos, Ryan
+      Shea, and Adam Blake privately questioned Davis about his involvement. They also reportedly contacted
+      DOGE general counsel Austin Raynor about the legality of his continued involvement.
+    fuzz: date is not given in article, unclear if at meeting or afterwards
+    named:
+    - Steve Davis
+    - Yinon Weiss
+    - Sam Corcos
+    - Ryan Shea
+    - Adam Blake
+    - Austin Raynor
+    source: https://www.politico.com/news/2025/07/14/doge-lead-steve-davis-did-not-go-quietly-00452257
+    source_name: Politico
+    agency: DOGE
+    id: 5iPb1g7n
   - date: 2025-06-06
     type: report
     event: >-
@@ -2465,6 +2484,23 @@
     source_name: NYT
     agency: DOGE
     id: 7ROgHwXL
+  - date: 2025-06-07
+    type: disruption
+    event: >-
+      Steve Davis removed DOGE staffers that he considered disloyal from shared Signal chats that DOGE
+      had continued to use for coordination. He also used his influence at GSA to have Ryan Shea removed
+      from his position. Other Davis targets – Yinon Weiss, Sam Corcos and Adam Blake – were able to remain
+      at their posts but were shut out from DOGE communications
+    named:
+    - Steve Davis
+    - Ryan Shea
+    - Sam Corcos
+    - Yinon Weiss
+    - Adam Blake
+    source: https://www.politico.com/news/2025/07/14/doge-lead-steve-davis-did-not-go-quietly-00452257
+    source_name: Poltico
+    agency: DOGE
+    id: 7mh9D1Rv
   - date: 2025-06-10
     type: report
     event: >-
@@ -3430,7 +3466,19 @@
     DOGE has attempted to use this ambiguity in legal cases (for instance, not reporting the activities Gavin Kliger and Jeremy Lewin on behalf of DOGE at the CFPB, because technically they worked for the GSA), and media can sometimes be very imprecise as well. So, when an article reports a new person at an agency is from DOGE, does that mean they report to the White House or were detailed from there? It can be hard to figure out.
     As a result, this page has a large amount of ambiguity within. Not only does it include people working for DOGE who might not be. It is also a muddled mix of various White House-affiliated staff, including people assigned directly to DOGE and people who work elsewhere in the White House.
   doge_base: true
-  events: []
+  events:
+  - date: 2025-06-XX
+    type: official
+    event: >-
+      The White House Presidential Personnel Office contacts DOGE leads across the government to inform
+      them that Steve Davis is no longer an employee of DOGE and they should cease all contact with him.
+    fuzz: Not named, but linking to Trent Morse, since this is his office.
+    linked:
+    - Trent Morse
+    agency: EOP
+    source: https://www.politico.com/news/2025/07/14/doge-lead-steve-davis-did-not-go-quietly-00452257
+    source_name: Politico
+    id: 2F23z1OO
 
 - name: Export-Import Bank of the United States
   id: EXIM

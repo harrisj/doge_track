@@ -451,7 +451,7 @@
   - **Luke Farritor** (2025-05-31) Senior Advisor
   - **Nicholas Gallagher** (2025-05-XX)
   - **Bee Elvy** (2025-05-XX)
-  - **Ryan Shea** (2025-05-XX)
+  - **Ryan Shea** (2025-05-XX - 2025-06-07)
   - **Alison Childs** (2025-05-XX)
   - **Brian Burroughs** (2025-06-XX)
 

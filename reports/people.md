@@ -933,7 +933,7 @@
 # Ryan Shea
 - category: wrecker
 - positions:
-    -  **GSA** (2025-05-XX to ??) 
+    -  **GSA** (2025-05-XX to 2025-06-07) 
     -  **HHS** (2025-05-XX to ??) 
 
 # Thomas Shedd
