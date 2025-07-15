@@ -210,6 +210,20 @@
   - EPA
   id: 5SAkewbh
 
+- date: 2025-03-(25)~
+  type: interagency
+  event: >-
+    At a meeting on data sharing, an official from ICE requests that the IRS should create a service where
+    DHS staff could simply provide the names and states of potential targets and get a list of all applicable
+    addresses. IRS lawyers are stunned by the possible illegality and continued pressure leads to a series
+    of resignations among staff in legal, privacy and IT offices within the IRS.
+  source: https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
+  source_name: ProPublica
+  agency:
+  - IRS
+  - ICE
+  id: CTZmHEIp
+
 - date: 2025-03-31
   type: report
   event: >-
@@ -463,6 +477,21 @@
   - Treasury
   id: 4nZTdaoY
 
+- date: 2025-06-XX
+  type: interagency
+  event: >-
+    A lawyer at ICE proposes expanding the original data sharing MOU between the agency to also support
+    requesting data on US citizens and lawful permanent residents (it had been limited to undocumented
+    immigrants previously). Anthony DeMello rejected this change at the IRS and insisted that senior leadership
+    at Treasury would have to sign off on this due to possible legal risks.
+  source: https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
+  source_name: ProPublica
+  fuzz: meeting date not given
+  agency:
+  - IRS
+  - ICE
+  id: 4KKta0mn
+
 - date: 2025-06-03
   type: legal
   event: >-
@@ -574,6 +603,21 @@
   - NSF
   id: 1nJG7vMh
 
+- date: 2025-06-25
+  type: interagency
+  event: >-
+    Although he was considered more friendly to the Trump admininstration and DOGE, Andrew DeMello, the
+    acting general counsel for the IRS refuses to turn over the addresses of 7.3 million taxpayers that
+    had been requested by ICE. He declares there are multiple legal "deficiencies" with the request that
+    do not meet the legal safeguards that were listed in the Memorandum of Understanding (MOU) for this
+    process, which declared that such data could only be shared for open criminal investigations.
+  source: https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
+  source_name: ProPublica
+  agency:
+  - IRS
+  - ICE
+  id: 3cyyrMrH
+
 - date: 2025-06-26
   type: disruption
   event: >-
@@ -638,3 +682,41 @@
   id: hcQYCnwZ
   source_name: court doc
   source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
+
+- date: 2025-07-14
+  type: disruption
+  event: >-
+    Declaring that a Supreme Court shadown docket ruling on July 8th gave them the go-ahead, HHS declares
+    a Reduction-in-Force that was initiated on April 1st is still in effect by sending affected employees
+    a messages stating "You are hereby notified that you are officially separated from HHS at the close
+    of business on July 14, 2025. Thank you for your service to the American people." The number of affected
+    employees is in the thousands, but some of the 10,000 fired in the original RIF are still protected
+    by another case _New York v. Kennedy_.
+  agency:
+  - HHS
+  - FDA
+  - CDC
+  - CMS
+  - NIH
+  source: https://www.cnn.com/2025/07/14/health/hhs-layoffs-supreme-court
+  source_name: CNN
+  id: 6jAlgVJa
+
+- date: 2025-07-14
+  type: disruption
+  event: >-
+    Months after the destruction of USAID and folding in some of its staff and responsibilities into the
+    US Department of State, the Trump administration incinerates 500 million tons of emergency food biscuits
+    worth $800,000 rather than sending it to Afghanistan and Pakistan, where it could have fed 1.5 million
+    children for a week because it was due to expire. Marco Rubio had promised the House Appropriations
+    Committee that he would ensure food aid is distributed before expiration, but the government eliminated
+    all aid to Afghanistan and refused to divert the food to other emergency crises. The cost of destroying
+    the biscuits will be $130,000 making this nearly a $1 million dollar loss incurred by DOGE (not to
+    mention lives that will be lost).
+  source: >-
+    https://www.theatlantic.com/health/archive/2025/07/usaid-emergency-food-incinerate-trump/683532/?gift=MyeD1MinhSiXWFRRGViAl0pj0v8-kcNr6rQW3-QS1YU
+  source_name: Atlantic
+  agency:
+  - USAID
+  - State
+  id: 2JQwgqr4

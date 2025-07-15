@@ -2526,6 +2526,21 @@
     source_name: WSJ
     agency: DOGE
     id: 1yivsqc3
+  - date: 2025-07-15
+    type: legal
+    event: >-
+      In a setback for the Trump administration, an appeals court rules in _CREW v. DOGE_ that the agency
+      must comply with records requests being made by CREW and that the official DOGE administrator Amy
+      Gleason must be made available to testify. This came after CREW modified its initial request to
+      exclude certain communications that the Supreme Court had ruled should be exempted. Those changes
+      were enough to satisfy the appeals court.
+    named:
+    - Amy Gleason
+    agency: DOGE
+    source: >-
+      https://www.bloomberg.com/news/articles/2025-07-15/doge-head-must-testify-in-fight-over-records-access-court-rules
+    source_name: Bloomberg
+    id: 6p1CHIrc
 
 - name: Department of Homeland Security
   id: DHS
@@ -4468,6 +4483,18 @@
     source_name: Rolling Stone
     agency: HHS
     id: 6ivxCK11
+  - date: 2025-07-10
+    type: official
+    event: >-
+      HHS issues a press release announces that it is cracking down on ensuring that benefits are not
+      being provided to undocumented immigrants, including Head Start among its list of programs that
+      will be receiving greater scrutiny. This policy shift will also likely be used to justify increased
+      information sharing between HHS and ICE.
+    source: >-
+      https://www.hhs.gov/press-room/prwora-hhs-bans-illegal-aliens-accessing-taxpayer-funded-programs.html
+    source_name: press release
+    agency: HHS
+    id: 6EA733IH
   - date: 2025-07-11
     type: disruption
     event: >-
@@ -5138,6 +5165,29 @@
     source_name: official letter
     agency: IRS
     id: 5CqG0eNe
+  - date: 2025-06-27
+    type: disruption
+    event: >-
+      Two days after preventing a data sharing request from ICE due to legal issues, the acting counself
+      for the IRS is fired and removed from his job.
+    source: https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
+    source_name: ProPublica
+    agency:
+    - IRS
+    id: ECAU4796
+  - date: 2025-07-15
+    type: report
+    event: >-
+      Reporting on DOGE's efforts to import IRS data into immigration enforcement databases, ProPublica
+      reports that 7.3 million addresses requested by ICE have still not yet been shared with the agency
+      by the IRS. IRS staff do not believe that ICE has 7 million open investigations and are concerned
+      that outdated or inaccurate information in the dataset could lead to false arrests and detentions.
+      However, IRS is still building this system and is targeting a late July launch date.
+    source: https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
+    source_name: ProPublica
+    agency:
+    - IRS
+    id: V6Rntzya
 
 - name: Merit System Protection Board
   id: MSPB
@@ -7667,6 +7717,19 @@
     source_name: KLAS News
     agency: SSA
     id: 6gNKgovS
+  - date: 2025-07-14
+    type: disruption
+    agency: SSA
+    event: >-
+      The Social Security Administration begins to warn approximately half a million Americans who still
+      receive their benefits by paper check that they will need to call the Treasury Department themselves
+      and request a waiver. Those who have not had their waivers processed by the end of September may
+      experience a delay in receiving benefits even if their waiver application is pending. This action
+      is being taken to comply with EO 14247.
+    source: >-
+      https://www.govexec.com/management/2025/07/social-security-signals-potential-benefit-disruptions-fall-those-still-getting-paper-checks/406710/
+    source_name: GovExec
+    id: 2ckAriW2
 
 - name: State Department
   id: State
