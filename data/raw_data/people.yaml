@@ -5792,6 +5792,9 @@
   age: 47
   category: wrecker
   skill: coder
+  govt_exit_date: 2025-07-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   blurb: >-
     A former Army Special Forces captain, Yinon Weiss is the founder of a startup that sells software
     for automobile repair shops.
@@ -5801,12 +5804,35 @@
     agency: DOD
     start_date: 2025-02-(18)?
     start_date_truth: inferred
+    end_date: 2025-07-XX
+    end_date_truth: reported
+    end_type: resigned
     table_note: >-
       Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting on 2/20 that many were
-      veterans
+      veterans. Reported as having left DOD in July by Wash. Post
     sort_date: 2025-02-18
     source: https://projects.propublica.org/elon-musk-doge-tracker/#Yinon-Weiss
     source_name: ProPublica
+
+- name: Owen West
+  slug: owen-west
+  sort_name: West
+  category: wrecker
+  skill: analyst
+  blurb: >-
+    Owen West is a Marine Corps veteran and former financial analyst at Goldman Sachs. He served as an
+    assistant secretary of defense in the first Trump administration and was reportedly tapped to lead
+    the DOGE team at the Pentagon after the departure of Yinon Weiss.
+  positions:
+  - id: dod-west
+    type: appointed
+    agency: DOD
+    title_type: advisor
+    start_date: 2025-07-XX
+    start_date_truth: reported
+    sort_date: 2025-07-15
+    source: https://www.washingtonpost.com/national-security/2025/07/15/hegseth-doge-justin-fulcher-yinon-weiss/
+    source_name: Wash. Post
 
 - name: Linda Whitridge
   slug: linda-whitridge

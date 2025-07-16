@@ -1486,6 +1486,17 @@
     source_name: press release
     agency: DOD
     id: UGT527xz
+  - date: 2025-04-04
+    type: disruption
+    fuzz: date given as just early April
+    event: >-
+      Defense Secretary Pete Hegseth reportedly lashed out at Yinon Weiss for seeming to overstep his
+      authority. The altercation was apparently triggered by Justin Fulcher storming out of a meeting
+      with Weiss because he thought that Weiss has reported him to the Pentagon's police service.
+    source: https://www.washingtonpost.com/national-security/2025/07/15/hegseth-doge-justin-fulcher-yinon-weiss/
+    source_name: Wash. Post
+    agency: DOD
+    id: 5zI2DHfy
   - date: 2025-04-08
     type: access
     event: >-
@@ -1525,6 +1536,20 @@
     source_name: Wash. Tech.
     agency: DOD
     id: CqrtsKU5
+  - date: 2025-07-10
+    type: official
+    event: >-
+      The Pentagon releases a memo calling for "drone dominance," including increasing manufacturing,
+      embedding drones within armed units and assuming more risk in developing new technologies. The memo
+      is signed by Pete Hegseth, but it was disributed with a DOGE Controlled tag and revealed the appointment
+      of Owen West as the chief point of contact. This is a marked departure from DOGE's spending control
+      and personnel reduction efforts at the agency.
+    source: https://www.washingtonpost.com/national-security/2025/07/15/hegseth-doge-justin-fulcher-yinon-weiss/
+    source_name: Wash. Post
+    named:
+    - Owen West
+    agency: DOD
+    id: 2MJyYkrF
 
 - name: Department of the Interior
   id: DOI
@@ -3847,6 +3872,16 @@
     source_name: Axios
     agency: FDA
     id: fIZjw7yF
+  - date: 2025-07-15
+    type: report
+    event: >-
+      As an example of one of the many ways that DOGE's simplistic cost-cutting can have downstream effects,
+      IPOs for biotech startups have dramatically slowed this year with many companies expressing concern
+      that the reduced capacity of a diminished FDA will significantly affect their businesses.
+    agency: FDA
+    source: https://www.axios.com/2025/07/15/doge-cuts-fda-hhs-biotech
+    source_name: Axios
+    id: 2HgIdWJJ
 
 - name: General Services Administration
   id: GSA

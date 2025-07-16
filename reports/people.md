@@ -1057,7 +1057,12 @@
 # Yinon Weiss
 - category: wrecker
 - positions:
-    -  **DOD** (2025-02-(18)? to ??) 
+    -  **DOD** (2025-02-(18)? to 2025-07-XX) 
+
+# Owen West
+- category: wrecker
+- positions:
+    -  **DOD** (2025-07-XX to ??) 
 
 # Linda Whitridge
 - category: wrecker

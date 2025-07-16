@@ -154,9 +154,10 @@
   - **Patrick George** (2025-02-(18)?)
   - **Jim Hickey** (2025-02-(18)?) Senior Advisor
   - **Mike Slagh** (2025-02-(18)?)
-  - **Yinon Weiss** (2025-02-(18)?)
+  - **Yinon Weiss** (2025-02-(18)? - 2025-07-XX)
   - **Justin Fulcher** (2025-03-04 - 2025-04-24) (detailed from DOD)
   - **Justin Fulcher** (2025-04-25) Senior Advisor
+  - **Owen West** (2025-07-XX)
 
 # Department of the Interior
 - slug: interior

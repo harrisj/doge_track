@@ -16513,6 +16513,34 @@
   linkified_text: >
     Social Security employees received an offer from the human resources department for voluntary reassignments to “mission-critical” front-line roles in
     call services and hearing offices to replace staff that were eliminated.
+- id: 5zI2DHfy
+  type: disruption
+  date: '2025-04-04'
+  sort_date: '2025-04-04'
+  time:
+  text: >-
+    Defense Secretary Pete Hegseth reportedly lashed out at Yinon Weiss for seeming to overstep his authority. The altercation was apparently triggered
+    by Justin Fulcher storming out of a meeting with Weiss because he thought that Weiss has reported him to the Pentagon's police service.
+  fuzz: date given as just early April
+  comment:
+  source: https://www.washingtonpost.com/national-security/2025/07/15/hegseth-doge-justin-fulcher-yinon-weiss/
+  source_title:
+  source_name: Wash. Post
+  case_no:
+  system_id:
+  theme:
+  names: []
+  agency_ids:
+  - DOD
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - DOD
+  obj_type: Event
+  linkified_text: >
+    Defense Secretary Pete Hegseth reportedly lashed out at <a class="link-hover" href="/wreckers/other#yinon-weiss">Yinon Weiss</a> for seeming to overstep
+    his authority. The altercation was apparently triggered by <a class="link-hover" href="/wreckers/other#justin-fulcher">Justin Fulcher</a> storming out
+    of a meeting with Weiss because he thought that Weiss has reported him to the Pentagon’s police service.
 - id: FTRMb3dA
   type: sighting
   date: '2025-04-04'
@@ -24275,6 +24303,41 @@
     A <a class="link-hover" href="/agencies/agriculture">USDA</a> staffer (and <a class="link-hover" href="/agencies/agriculture">USDA</a> spokesperson
     later confirms) that the <a class="link-hover" href="/agencies/white-house">DOGE</a> team in the agency is now referred to as the <a class="link-hover"
     href="/agencies/agriculture">USDA</a> Efficiency Team or “E Team.”
+- id: 2MJyYkrF
+  type: official
+  date: '2025-07-10'
+  sort_date: '2025-07-10'
+  time:
+  text: >-
+    The Pentagon releases a memo calling for "drone dominance," including increasing manufacturing, embedding drones within armed units and assuming more
+    risk in developing new technologies. The memo is signed by Pete Hegseth, but it was disributed with a DOGE Controlled tag and revealed the appointment
+    of Owen West as the chief point of contact. This is a marked departure from DOGE's spending control and personnel reduction efforts at the agency.
+  fuzz:
+  comment:
+  source: https://www.washingtonpost.com/national-security/2025/07/15/hegseth-doge-justin-fulcher-yinon-weiss/
+  source_title:
+  source_name: Wash. Post
+  case_no:
+  system_id:
+  theme:
+  names:
+  - Owen West
+  agency_ids:
+  - DOD
+  alias_ids: []
+  names_aliases:
+  - name: Owen West
+    slug: owen-west
+    sort_name: West
+    category: wrecker
+  agencies_parents:
+  - DOD
+  obj_type: Event
+  linkified_text: >
+    The Pentagon releases a memo calling for “drone dominance,” including increasing manufacturing, embedding drones within armed units and assuming more
+    risk in developing new technologies. The memo is signed by Pete Hegseth, but it was disributed with a <a class="link-hover" href="/agencies/white-house">DOGE</a>
+    Controlled tag and revealed the appointment of <a class="link-hover" href="/wreckers/other#owen-west">Owen West</a> as the chief point of contact. This
+    is a marked departure from DOGE’s spending control and personnel reduction efforts at the agency.
 - id: cbMdgMEs
   type: disruption
   date: '2025-07-10'
@@ -24632,6 +24695,35 @@
     by CREW and that the official <a class="link-hover" href="/agencies/white-house">DOGE</a> administrator <a class="link-hover" href="/people/leaders#amy-gleason">Amy
     Gleason</a> must be made available to testify. This came after CREW modified its initial request to exclude certain communications that the Supreme
     Court had ruled should be exempted. Those changes were enough to satisfy the appeals court.
+- id: 2HgIdWJJ
+  type: report
+  date: '2025-07-15'
+  sort_date: '2025-07-15'
+  time:
+  text: >-
+    As an example of one of the many ways that DOGE's simplistic cost-cutting can have downstream effects, IPOs for biotech startups have dramatically slowed
+    this year with many companies expressing concern that the reduced capacity of a diminished FDA will significantly affect their businesses.
+  fuzz:
+  comment:
+  source: https://www.axios.com/2025/07/15/doge-cuts-fda-hhs-biotech
+  source_title:
+  source_name: Axios
+  case_no:
+  system_id:
+  theme:
+  names: []
+  agency_ids:
+  - FDA
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - FDA
+  - HHS
+  obj_type: Event
+  linkified_text: >
+    As an example of one of the many ways that DOGE’s simplistic cost-cutting can have downstream effects, IPOs for biotech startups have dramatically slowed
+    this year with many companies expressing concern that the reduced capacity of a diminished <a class="link-hover" href="/agencies/health">FDA</a> will
+    significantly affect their businesses.
 - id: V6Rntzya
   type: report
   date: '2025-07-15'
