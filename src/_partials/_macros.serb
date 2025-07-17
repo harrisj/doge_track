@@ -278,6 +278,8 @@ end %}
 {% macro "document_type" do |doc| 
     if doc.type == 'mou'
       'MOU'
+    elsif doc.type == 'onboard'
+      'onboarding'
     else
       doc.type
     end
