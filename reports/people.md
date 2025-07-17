@@ -1,6 +1,7 @@
 # Daniel Abrahamson
 - category: support
 - positions:
+    -  **USDA**  Senior Advisor on Government Efficiency
     -  **DOT** (2025-02-XX to ??) Senior Advisor
 
 # Justin Aimonetti
@@ -43,6 +44,11 @@
 - category: wrecker
 - positions:
     -  **DOT**  
+
+# Samuel Berry
+- category: unknown
+- positions:
+    -  **USDA**  Special Advisor
 
 # Sam Beyda
 - category: unknown
@@ -183,7 +189,7 @@
 # Miles Collins
 - category: wrecker
 - positions:
-    -  **DOL** (2025-03-05 to ??) 
+    -  **DOL** (2025-02-18 to NTE 2025-06-17) Policy Advisor GS-11/03 $90,239
         - PMS: Payment Management System:  - ongoing
         - HRConnect: HRConnect: 2025-02-19 - ongoing
         - NCFMS: New Core Financial Management System: 2025-02-20 - ongoing
@@ -275,7 +281,7 @@
         - PAM DB: Payment Automation Manager DB **[read-write access]**: 2025-02-03 - 2025-02-06
         - PAM FS: Payment Automation Manager File System: 2025-02-03 - 2025-02-06
         - SPS: Secure Payment System **[read-write access]**: 2025-02-05 - 2025-02-06
-    -  **DOL** (2025-02-(14)~ to ??) 
+    -  **DOL** (2025-02-12 to NTE 2025-06-11) Policy Advisor GS-11/01 $84,601
         - DRA: Directory Resource Administrator: 2025-02-25 - ongoing
         - ePACS: Enterprise Physical Access Control System: 2025-02-25 - ongoing
         - USAccess: 2025-02-25 - ongoing
@@ -637,6 +643,11 @@
     -  **USAID** (2025-03-18 to ??) Deputy Administrator(Policy and Programming) / COO
     -  **State** (2025-04-15 to ??) Acting Head of Foreign Assistance
 
+# Jeremy Lichtman
+- category: unknown
+- positions:
+    -  **USDA**  Advisor on Government Efficiency
+
 # Kendall Lindemann
 - category: support
 - positions:
@@ -744,7 +755,7 @@
 # Aram Moghaddassi
 - category: wrecker
 - positions:
-    -  **DOL** (2025-02-XX to ??) 
+    -  **DOL** (2025-02-18 to NTE 2025-06-17) Policy Advisor GS-11/01 $84,601
         - FLAG: Foreign Labor Application Gateway **[admin access]**: 2025-04-18 - ongoing
         - REO: Reentry Employment Opportunities: 2025-04-18 - ongoing
     -  **SSA** (2025-02-22 to ??) [as "SSA-03"] 
@@ -881,6 +892,11 @@
         - PRISM: Procurement Request Information System Management: 2025-02-24 - ongoing
     -  **NSF** (2025-04-14 to ??) 
 
+# Timothy Ronan
+- category: unknown
+- positions:
+    -  **USDA**  Special Advisor
+
 # Christopher Roussos
 - category: enabler
 - positions:
@@ -1004,9 +1020,9 @@
 # Keith Sonderling
 - category: enabler
 - positions:
-    -  **DOL** (2025-01-22 to 2025-03-18) Senior Advisor
-    -  **DOL** (2025-03-18 to ??) **Deputy Secretary**
+    -  **DOL** (2025-01-20 to 2025-03-23) Senior Advisor $195,200
     -  **IMLS** (2025-03-20 to ??) Acting Director
+    -  **DOL** (2025-03-23 to ??) **Deputy Secretary of Labor** $183,100
     -  **MBDA** (2025-04-(17)~ to ??) **Acting Undersecretary**
 
 # Branden Spikes

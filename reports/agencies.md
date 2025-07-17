@@ -141,6 +141,10 @@
 # Department of Agriculture
 - slug: usda
 - people:
+  - **Daniel Abrahamson** Senior Advisor on Government Efficiency
+  - **Samuel Berry** Special Advisor
+  - **Jeremy Lichtman** Advisor on Government Efficiency
+  - **Timothy Ronan** Special Advisor
   - **Gavin Kliger** (2025-02-(01)~) (detailed from OPM)
   - **Jordan Wick** (2025-02-(01)~) (detailed from DOGE)
   - **Michael Cole** (2025-02-10) Senior Team Leader on Government Efficiency
@@ -258,17 +262,17 @@
 # Department of Labor
 - slug: labor
 - people:
-  - **Keith Sonderling** (2025-01-22 - 2025-03-18) Senior Advisor
+  - **Keith Sonderling** (2025-01-20 - 2025-03-23) Senior Advisor
   - **Sam Beyda** (2025-02-(13)~)
   - **Derek Geissler** (2025-02-(13)~) (detailed from GSA)
   - **Cole Killian** (2025-02-(13)~) (detailed from DOGE)
   - **Jordan Wick** (2025-02-(13)~) (detailed from DOGE)
-  - **Marko Elez** (2025-02-(14)~)
   - **Adam Ramada** (2025-02-05) (detailed from DOGE)
-  - **Aram Moghaddassi** (2025-02-XX)
-  - **Miles Collins** (2025-03-05)
+  - **Marko Elez** (2025-02-12 - NTE 2025-06-11) Policy Advisor
+  - **Aram Moghaddassi** (2025-02-18 - NTE 2025-06-17) Policy Advisor
+  - **Miles Collins** (2025-02-18 - NTE 2025-06-17) Policy Advisor
   - **Thomas Shedd** (2025-03-14) Chief Information Officer
-  - **Keith Sonderling** (2025-03-18) Deputy Secretary
+  - **Keith Sonderling** (2025-03-23) Deputy Secretary of Labor
   - **Luke Farritor** (2025-06-XX) (detailed from GSA)
 - systems:
     - DRA: Directory Resource Administrator

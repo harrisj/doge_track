@@ -14,6 +14,14 @@
   - Tesla
   skill: lawyer
   positions:
+  - id: usda-abrahamson
+    agency: USDA
+    type: appointed
+    title: Senior Advisor on Government Efficiency
+    title_type: advisor
+    table_note: Not listed as a detailee, so suggests appointed
+    source: https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
+    source_name: American Oversight
   - id: dot-abrahamson
     type: appointed
     title: Senior Advisor
@@ -257,6 +265,21 @@
     table_note: Reportedly reviewing DOT grants to cancel
     source: https://projects.propublica.org/elon-musk-doge-tracker/#Ankur-Bansal
     source_name: ProPublica
+
+- name: Samuel Berry
+  sort_name: Berry
+  slug: sam-berry
+  category: unknown
+  blurb: >-
+    He was named as a member of the DOGE team at USDA in response to a FOIA request from American Oversight.
+    Otherwise, I have no other info yet.
+  positions:
+  - id: usda-berry
+    agency: USDA
+    type: appointed
+    title: Special Advisor
+    source: https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
+    source_name: American Oversight
 
 - name: Sam Beyda
   sort_name: Beyda
@@ -1017,16 +1040,21 @@
   category: wrecker
   positions:
   - id: dol-collins
-    type: unknown
-    start_date: 2025-03-05
-    start_date_truth: reported
-    from: DOGE
-    from_truth: reported
-    comment: >-
-      Wired reports on a detailing agreement between DOGE and DOL, but that could be for Adam Ramada and
-      crew
-    source: https://www.businessinsider.com/doge-staffer-fertility-clinic-pronatalist-department-of-labor
-    source_name: Business Insider
+    type: appointed
+    appt_type: Schedule C
+    start_date: 2025-02-18
+    start_date_truth: verified
+    nte_date: 2025-06-17
+    nte_date_truth: verified
+    pd_code: '66899121'
+    series: '0301'
+    pay_grade: GS-11/03
+    salary: "$90,239"
+    title: Policy Advisor
+    title_type: advisor
+    office: Office of the Secretary
+    documents:
+    - onboard-dol-miles-collins
     agency: DOL
 
 - name: George Cooper
@@ -1634,11 +1662,19 @@
   - id: dol-marko-elez
     type: appointed
     agency: DOL
-    sort_date: 2025-02-14
-    start_date: 2025-02-(14)~
+    start_date: 2025-02-12
     start_date_truth: inferred
-    table_note: no public info, but I assume this is a paid position because his detail to SSA is reimbursed
-    comment: Marko is detailed from DOL to other agencies, so rehired there at some point in February
+    nte_date: 2025-06-11
+    nte_date_truth: verified
+    title: Policy Advisor
+    title_type: advisor
+    office: Office of the Secretary
+    pd_code: '66899208'
+    series: '0301'
+    pay_grade: GS-11/01
+    salary: "$84,601"
+    documents:
+    - onboard-dol-marko-elez
   - id: detail-dol-ssa-employee-7
     type: detailed
     agency: SSA
@@ -3514,6 +3550,21 @@
     title_type: dept_head
     agency: State
 
+- name: Jeremy Lichtman
+  sort_name: Lichtman
+  slug: jeremy-lichtman
+  category: unknown
+  blurb: >-
+    He was named as a member of the DOGE team at USDA in response to a FOIA request from American Oversight.
+    Otherwise, I have no other info yet.
+  positions:
+  - id: usda-lichtman
+    agency: USDA
+    type: appointed
+    title: Advisor on Government Efficiency
+    source: https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
+    source_name: American Oversight
+
 - name: Kendall Lindemann
   sort_name: Lindemann
   slug: kendall-lindemann
@@ -4117,12 +4168,21 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
     source_name: NYT
   - id: dol-moghaddassi
-    type: unknown
+    type: appointed
     agency: DOL
-    sort_date: 2025-02-07
-    start_date: 2025-02-XX
-    start_date_truth: guessed
-    table_note: assuming start at DOL because listed later as detailee from there
+    start_date: 2025-02-18
+    start_date_truth: verified
+    nte_date: 2025-06-17
+    nte_date_truth: verified
+    appt_type: Schedule C
+    pd_code: '66899120'
+    pay_grade: GS-11/01
+    salary: "$84,601"
+    title: Policy Advisor
+    title_type: advisor
+    office: Office of the Secretary
+    documents:
+    - onboard-dol-aram-moghaddassi
   - id: detail-dol-ssa-employee-3
     type: detailed
     agency: SSA
@@ -4790,6 +4850,21 @@
     source: https://fedscoop.com/national-science-foundation-nsf-doge-grants-data-systems/
     source_name: FedScoop
     agency: NSF
+
+- name: Timothy Ronan
+  sort_name: Ronan
+  slug: tim-ronan
+  category: unknown
+  blurb: >-
+    He was named as a member of the DOGE team at USDA in response to a FOIA request from American Oversight.
+    Otherwise, I have no other info yet.
+  positions:
+  - id: usda-ronan
+    agency: USDA
+    type: appointed
+    title: Special Advisor
+    source: https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
+    source_name: American Oversight
 
 - name: Christopher Roussos
   sort_name: Roussos
@@ -5527,29 +5602,22 @@
   positions:
   - id: labor-sonderling
     type: appointed
+    appt_type: SES Noncareer
     agency: DOL
-    start_date: 2025-01-22
+    start_date: 2025-01-20
     start_date_truth: verified
-    end_date: 2025-03-18
+    end_date: 2025-03-23
     end_date_truth: verified
     end_type: replaced
     replaced_by: labor-sonderling-secy
-    source: https://ntlakis.com/president-trump-designates-new-leadership-at-workplace-compliance-agencies/
-    source_name: NT Lakis
+    pd_code: '66895170'
+    series: '0301'
+    salary: "$195,200"
     title: Senior Advisor
     title_type: advisor
-    office: Office of the Secretary
-    table_note: At confirmation hearing, noted he was Senior Advisor at DOL
-  - id: labor-sonderling-secy
-    type: promotion
-    start_date: 2025-03-18
-    start_date_truth: reported
-    title: Deputy Secretary
-    title_type: dept_head
-    supervisory: true
-    source: https://news.artnet.com/art-world/doge-imls-institute-museum-library-services-2623286
-    source_name: ArtNet
-    agency: DOL
+    office: Office of the Assistant Secretary
+    documents:
+    - onboard-dol-keith-sonderling
   - id: imls-sonderling
     type: appointed
     start_date: 2025-03-20
@@ -5559,6 +5627,21 @@
     source: https://news.artnet.com/art-world/doge-imls-institute-museum-library-services-2623286
     source_name: ArtNet
     agency: IMLS
+  - id: labor-sonderling-secy
+    type: promotion
+    start_date: 2025-03-23
+    start_date_truth: verified
+    title: Deputy Secretary of Labor
+    title_type: dept_head
+    supervisory: true
+    agency: DOL
+    pd_code: '65834327'
+    series: '0340'
+    appt_type: Exec Appt
+    salary: "$183,100"
+    office: Office of the Secretary
+    documents:
+    - onboard-dol-keith-sonderling
   - id: mbda-sonderling
     type: appointed
     agency: MBDA
