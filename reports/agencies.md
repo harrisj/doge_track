@@ -776,8 +776,18 @@
 # Small Business Administration
 - slug: sba
 - people:
+  - **Jordan Wick** Special Advisor (detailed from DOGE)
+  - **Akash Bobba** Senior Advisor (detailed from OPM)
+  - **Joshua Carter** Senior Advisor
+  - **Edward Coristine** DOGE Advisor (detailed from GSA)
+  - **Riley Sennott** Senior Advisor (detailed from GSA)
+  - **Micaela Lopez Ballefin** Senior Advisor
+  - **Ethan Damiano** Special Advisor
+  - **Conor Fennessy** Senior Advisor (detailed from Education)
+  - **Patricia Gibson** Senior Advisor
+  - **Aram Moghaddassi** Special Advisor (detailed from OPM)
   - **Edward Coristine** (2025-02-03) (detailed from GSA)
-  - **Donald Park** (2025-02-03) (detailed from GSA)
+  - **Donald Park** (2025-02-03) Senior Advisor, DOGE (detailed from GSA)
 
 # The Smithsonian Institution
 - slug: smithsonian

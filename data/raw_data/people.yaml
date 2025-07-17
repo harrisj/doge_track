@@ -225,6 +225,22 @@
     sort_date: 2025-02-05
     agency: Education
 
+- name: Micaela Lopez Ballefin
+  sort_name: Ballefin
+  slug: micaela-lopez
+  category: unknown
+  blurb: >-
+    I don't have much info on this person yet, but they were named as being a Senior Advisor at the SBA,
+    which was a title also assigned to known DOGE members at that agency
+  positions:
+  - id: sba-lopez-ballefin
+    type: unknown
+    agency: SBA
+    title: Senior Advisor
+    title_type: advisor
+    source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+    source_name: American Oversight
+
 - name: Ankur Bansal
   sort_name: Bansal
   slug: ankur-bansal
@@ -478,6 +494,16 @@
   tech_links:
   - Palantir
   positions:
+  - id: detail-sba-bobba
+    agency: SBA
+    from: OPM
+    from_truth: guessed
+    title: Senior Advisor
+    title_type: advisor
+    type: detailed
+    table_note: identified by agency FOIA as having been at the agency, guessing detailed
+    source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+    source_name: American Oversight
   - id: opm-3
     type: appointed
     agency: OPM
@@ -679,6 +705,22 @@
       if he has been hired or is consulting.
     source: https://www.wired.com/story/next-stage-doge-elon-musk/
     source_name: Wired
+
+- name: Joshua Carter
+  sort_name: Carter
+  slug: joshua-carter
+  category: unknown
+  blurb: >-
+    I don't have much info on this person yet, but they were named as being a Senior Advisor at the SBA,
+    which was a title also assigned to known DOGE members at that agency
+  positions:
+  - id: sba-carter
+    type: unknown
+    agency: SBA
+    title: Senior Advisor
+    title_type: advisor
+    source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+    source_name: American Oversight
 
 - name: Nate Cavanaugh
   sort_name: Cavanaugh
@@ -1061,6 +1103,16 @@
     Perhaps the most famous of the DOGE wreckers, Edward "Big Balls" Coristine achieved early attention for joining DOGE at the young age of 19. Previously, he had been a camp counselor and a summer intern at Neuralink, who grew up in wealth and joined up with hacking groups online, before eagerly jumping on to the DOGE bandwagon.
     However, he has also accrued a large number of hits on his wrecking spree across the federal government, starting at the GSA on Day One and then detailing to OPM and a large number of other agencies within a short amount of time; for instance, he appears to have been DOGE's vanguard within the Department of Homeland Security. Most recently, he has been linked to a team developing an online application for a $5 Million "Gold Card" Visa that has been promoted by Trump as a new revenue stream for the US.
   positions:
+  - id: detail-sba-coristine
+    agency: SBA
+    from: GSA
+    from_truth: guessed
+    title: DOGE Advisor
+    title_type: advisor
+    type: detailed
+    table_note: identified by agency FOIA as having been at the agency, guessing detailed
+    source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+    source_name: American Oversight
   - id: gsa-edward-coristine
     agency: GSA
     type: appointed
@@ -1355,6 +1407,22 @@
     source: >-
       https://www.msn.com/en-us/news/us/dc-us-attorney-targets-ukraine-whistleblower-rep-vindman/ar-AA1AIUw3
     source_name: Wash. Post
+
+- name: Ethan Damiano
+  sort_name: Damiano
+  slug: ethan-damiano
+  category: unknown
+  blurb: >-
+    I don't have much info on this person yet, but they were named as being a Special Advisor at the SBA,
+    which was a title also assigned to known DOGE member Aram Moghaddassi
+  positions:
+  - id: sba-damiano
+    type: unknown
+    agency: SBA
+    title: Special Advisor
+    title_type: advisor
+    source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+    source_name: American Oversight
 
 - name: Steve Davis
   sort_name: Davis
@@ -1870,6 +1938,16 @@
   category: wrecker
   custom_path: "/wreckers/conor-fennessy"
   positions:
+  - id: detail-sba-fennessy
+    agency: SBA
+    from: Education
+    from_truth: guessed
+    title: Senior Advisor
+    title_type: advisor
+    type: detailed
+    table_note: identified by agency FOIA as having been at the agency, guessing detailed
+    source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+    source_name: American Oversight
   - id: education-ed-2
     type: appointed
     agency: Education
@@ -2182,6 +2260,22 @@
       veterans
     sort_date: 2025-02-18
     office: U.S. Navy
+
+- name: Patricia Gibson
+  sort_name: Gibson
+  slug: patricia-gibson
+  category: unknown
+  blurb: >-
+    I don't have much info on this person yet, but they were named as being a Senior Advisor at the SBA,
+    which was a title also assigned to known DOGE members at that agency
+  positions:
+  - id: sba-gibson
+    type: unknown
+    agency: SBA
+    title: Senior Advisor
+    title_type: advisor
+    source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+    source_name: American Oversight
 
 - name: Brady Glantz
   sort_name: Glantz
@@ -3980,6 +4074,16 @@
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
     source_name: NYT
+  - id: detail-sba-moghaddassi
+    agency: SBA
+    from: OPM
+    from_truth: guessed
+    title: Special Advisor
+    title_type: advisor
+    type: detailed
+    table_note: identified by agency FOIA as having been at the agency, guessing detailed
+    source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+    source_name: American Oversight
   - id: internal-dhs-cpb-mohgaddassi
     type: internal
     agency: CBP
@@ -4277,9 +4381,13 @@
     from_truth: guessed
     start_date: 2025-02-03
     start_date_truth: reported
+    title: Senior Advisor, DOGE
+    title_type: advisor
     agency: SBA
-    table_note: assuming detail from GSA
     comment: Reported in a tweet from the date
+    table_note: identified by agency FOIA as having been at the agency, guessing detailed
+    source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+    source_name: American Oversight
   - id: detail-exim-park
     type: detailed
     agency: EXIM
@@ -4946,6 +5054,16 @@
   skill: coder
   category: wrecker
   positions:
+  - id: detail-sba-sennott
+    agency: SBA
+    from: GSA
+    from_truth: guessed
+    title: Senior Advisor
+    title_type: advisor
+    type: detailed
+    table_note: identified by agency FOIA as having been at the agency, guessing detailed
+    source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+    source_name: American Oversight
   - id: gsa-sennott
     agency: GSA
     type: appointed
@@ -5792,6 +5910,7 @@
   age: 47
   category: wrecker
   skill: coder
+  linkedin: https://www.linkedin.com/in/yweiss/
   govt_exit_date: 2025-07-XX
   govt_exit_truth: reported
   govt_exit_type: resigned
@@ -5874,6 +5993,16 @@
     of the CFPB, and he has stayed on as a full-time staffer at the agency since March 5th, even as he
     has been deployed elsewhere.
   positions:
+  - id: detail-sba-wick
+    agency: SBA
+    from: DOGE
+    from_truth: guessed
+    title: Special Advisor
+    title_type: advisor
+    type: detailed
+    table_note: identified by agency FOIA as having been at the agency, guessing detailed
+    source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+    source_name: American Oversight
   - id: doge-wick
     type: appointed
     agency: DOGE

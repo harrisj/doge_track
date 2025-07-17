@@ -34,6 +34,11 @@
 - positions:
     -  **Education**  
 
+# Micaela Lopez Ballefin
+- category: unknown
+- positions:
+    -  **SBA**  Senior Advisor
+
 # Ankur Bansal
 - category: wrecker
 - positions:
@@ -104,6 +109,7 @@
         - NUMIDENT: Numerical Identification System: 2025-02-10 - ongoing
     -  **SSA** (2025-02-09 to NTE 2026-02-08) [as "SSA-01"] Expert ED-00 $90,025
         - NUMIDENT: Numerical Identification System: 2025-02-10 - ongoing
+    -  **SBA**  Senior Advisor
 
 # Ashley Boizelle
 - category: support
@@ -127,6 +133,11 @@
 - category: unknown
 - positions:
     -  **GSA** (2025-06-XX to ??) 
+
+# Joshua Carter
+- category: unknown
+- positions:
+    -  **SBA**  Senior Advisor
 
 # Nate Cavanaugh
 - category: wrecker
@@ -212,6 +223,7 @@
         - IDR: Integrated Data Repository: 2025-03-11 - ongoing
     -  **GSA** (2025-05-31 to 2025-06-23) Senior Advisor GS-15 $167,603 - $195,200
     -  **SSA** (2025-06-(23)~ to ??) 
+    -  **SBA**  DOGE Advisor
 
 # Scott Coulter
 - category: enabler
@@ -226,6 +238,11 @@
     -  **OPM** (2025-01-20 to ??) **Deputy General Counsel**
     -  **USAID** (2025-01-27 to ??) 
     -  **DOJ** (2025-03-XX to ??) 
+
+# Ethan Damiano
+- category: unknown
+- positions:
+    -  **SBA**  Special Advisor
 
 # Steve Davis
 - category: leadership
@@ -346,6 +363,7 @@
     -  **CMS** (2025-03-03 to ??) 
         - CALM: CMS Acquisition Lifecycle Management System: 2025-02-03 - 2025-04-18
     -  **DOI** (2025-05-(01)? to ??) 
+    -  **SBA**  Senior Advisor
 
 # Joshua Fox
 - category: unknown
@@ -394,6 +412,11 @@
 - category: wrecker
 - positions:
     -  **DOD** (2025-02-(18)? to ??) 
+
+# Patricia Gibson
+- category: unknown
+- positions:
+    -  **SBA**  Senior Advisor
 
 # Brady Glantz
 - category: wrecker
@@ -734,6 +757,7 @@
         - IDR: Integrated Data Repository: 2025-03-05 - ongoing
     -  **SSA** (2025-06-XX to ??) **Chief Information Officer**
     -  **DHS**  
+    -  **SBA**  Special Advisor
     -  **CBP**  
     -  **ICE**  
     -  **TSA**  
@@ -775,7 +799,7 @@
 - category: wrecker
 - positions:
     -  **GSA** (2025-02-XX to ??) 
-    -  **SBA** (2025-02-03 to ??) 
+    -  **SBA** (2025-02-03 to ??) Senior Advisor, DOGE
     -  **EXIM** (2025-05-14 to ??) 
 
 # Matthew Parkhurst-Session
@@ -912,6 +936,7 @@
 - positions:
     -  **GSA** (2025-02-12 to ??) 
     -  **NASA** (2025-03-(14)~ to ??) Senior Advisor
+    -  **SBA**  Senior Advisor
 
 # Bryton Shang
 - category: enabler
@@ -1102,6 +1127,7 @@
         - WebTA: 2025-02-07 - ongoing
         - Microsoft Entra ID **[admin access]**: 2025-02-09 - 2025-03-05
     -  **FCC** (2025-04-04 to ??) 
+    -  **SBA**  Special Advisor
 
 # Joanna Wischer
 - category: support

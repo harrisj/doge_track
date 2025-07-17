@@ -627,6 +627,68 @@
   agency_and_parent:
   - Education
   documents: []
+- id: sba-lopez-ballefin
+  type: unknown
+  agency_id: SBA
+  name: Micaela Lopez Ballefin
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2026-07-04'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Senior Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office:
+  source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+  source_name: American Oversight
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: SBA
+    name: Small Business Administration
+    slug: sba
+    page_slug: sba
+    short_name: SBA
+    doge_base: true
+    blurb: |-
+      What is going on at the Small Business Administration?
+
+      Seriously. I'd like to know. DOGE showed up there remarkably early in their operations (2025-02-03). And since then, it has largely been radio silence. I know some things must have happened there - the CIO was abruptly forced out at the end of March just before DOGE announced a change to loan processing - but there just hasn't been much reported yet. Hopefully that will change in the future.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/sba"
+  agency_and_parent:
+  - SBA
+  documents: []
 - id: dot-bansal
   type: appointed
   agency_id: DOT
@@ -1306,6 +1368,81 @@
     path: "/agencies/energy"
   agency_and_parent:
   - NRC
+  documents: []
+- id: detail-sba-bobba
+  type: detailed
+  agency_id: SBA
+  name: Akash Bobba
+  doge_alias_id:
+  from_agency_id: OPM
+  from_truth: guessed
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2026-07-04'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Senior Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office:
+  source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+  source_name: American Oversight
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: identified by agency FOIA as having been at the agency, guessing detailed
+  replaced_by:
+  same_as:
+  agency:
+    id: SBA
+    name: Small Business Administration
+    slug: sba
+    page_slug: sba
+    short_name: SBA
+    doge_base: true
+    blurb: |-
+      What is going on at the Small Business Administration?
+
+      Seriously. I'd like to know. DOGE showed up there remarkably early in their operations (2025-02-03). And since then, it has largely been radio silence. I know some things must have happened there - the CIO was abruptly forced out at the end of March just before DOGE announced a change to loan processing - but there just hasn't been much reported yet. Hopefully that will change in the future.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/sba"
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    blurb: |-
+      One of the ways in which DOGE surprised everybody was how it turned a relatively sleepy agency into a weapon against the entire government bureaucracy. Created by law in 1978, OPM's main role before now was to standardize government policies around personnel and to offer shared services for human capital like the federal health plans. It also tracks all the paperwork around hiring, promotions, changes and retirement. And so, for most federal staff, their main interactions with OPM were receiving paperwork they were hired, fired or retired; or picking a health plan; or looking at the rules around various practices. But, all the other aspects of human resources were handled by their own agencies. Federal staff are hired to their specific agencies, their performance rankings are defined by their agency, they're promoted by their agencies, they're paid by their agencies, they follow the HR policies of their agencies. OPM provides the guidance, but it's the agencies that implement it.
+      This is why OPM's turn towards the dark side has been so confounding. Very early on, DOGE concentrated a large number of staff within OPM to capture control of the centralized databases and install a new email server to send/receive messages from every federal worker. The acting director was forced out and replaced by Charles Ezell, who then let DOGE wall off an area and keep out permanent agency staff. DOGE also brought in a slew of HR executives from startups who seemingly expected the agency to work for the entire federal government in the same way that HR operates within a single company. And so, they started acting like OPM had more centralized authority: ordering workers to the "five things" email; blasting [commands to human capital officers at other agencies](https://www.chcoc.gov/transmittals); asking for lists of workers so they could command agencies to fire probationary workers and short-cut established procedures for reductions in force. OPM used to be deliberative and formal with its rulemaking - the new OPM was fond of sending out memos to all agencies on Wednesdays demanding a response by Friday. None of this was normal; some of it was [probably illegal](https://www.npr.org/2025/03/13/nx-s1-5325959/federal-employees-court-firing). And the breach in trust has been irrevocable.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - SBA
   documents: []
 - id: opm-3
   type: appointed
@@ -2079,6 +2216,68 @@
     path: "/agencies/gsa"
   agency_and_parent:
   - GSA
+  documents: []
+- id: sba-carter
+  type: unknown
+  agency_id: SBA
+  name: Joshua Carter
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2026-07-04'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Senior Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office:
+  source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+  source_name: American Oversight
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: SBA
+    name: Small Business Administration
+    slug: sba
+    page_slug: sba
+    short_name: SBA
+    doge_base: true
+    blurb: |-
+      What is going on at the Small Business Administration?
+
+      Seriously. I'd like to know. DOGE showed up there remarkably early in their operations (2025-02-03). And since then, it has largely been radio silence. I know some things must have happened there - the CIO was abruptly forced out at the end of March just before DOGE announced a change to loan processing - but there just hasn't been much reported yet. Hopefully that will change in the future.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/sba"
+  agency_and_parent:
+  - SBA
   documents: []
 - id: gsa-cavanaugh
   type: appointed
@@ -3720,6 +3919,85 @@
   - IRS
   - Treasury
   documents: []
+- id: detail-sba-coristine
+  type: detailed
+  agency_id: SBA
+  name: Edward Coristine
+  doge_alias_id:
+  from_agency_id: GSA
+  from_truth: guessed
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2026-07-04'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: DOGE Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office:
+  source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+  source_name: American Oversight
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: identified by agency FOIA as having been at the agency, guessing detailed
+  replaced_by:
+  same_as:
+  agency:
+    id: SBA
+    name: Small Business Administration
+    slug: sba
+    page_slug: sba
+    short_name: SBA
+    doge_base: true
+    blurb: |-
+      What is going on at the Small Business Administration?
+
+      Seriously. I'd like to know. DOGE showed up there remarkably early in their operations (2025-02-03). And since then, it has largely been radio silence. I know some things must have happened there - the CIO was abruptly forced out at the end of March just before DOGE announced a change to loan processing - but there just hasn't been much reported yet. Hopefully that will change in the future.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/sba"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    blurb: >-
+      Once a relatively obscure agency that provided shared services and procurement services for the government, GSA became an integral part of DOGE's
+      early-phase plans for taking over parts of the federal bureaucracy precisely for those reasons. From the very first day of the Trump presidency, DOGE
+      established a sizable team at GSA. Some of these were focused on drastic cost-reduction efforts like cancelling government leases or unilaterally
+      dropping the purchasing limit of government purchase cards to curtail micro-purchases by government staff. GSA was also the base for many of DOGE's
+      wrecking crews that were detailed to other agencies, with agency leadership quickly creating a walled-off enclave protected by security guards exclusively
+      for the use of DOGE staff with "A-level access."
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - SBA
+  documents: []
 - id: gsa-edward-coristine
   type: appointed
   agency_id: GSA
@@ -5241,6 +5519,68 @@
     path: "/agencies/opm"
   agency_and_parent:
   - DOJ
+  documents: []
+- id: sba-damiano
+  type: unknown
+  agency_id: SBA
+  name: Ethan Damiano
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2026-07-04'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Special Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office:
+  source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+  source_name: American Oversight
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: SBA
+    name: Small Business Administration
+    slug: sba
+    page_slug: sba
+    short_name: SBA
+    doge_base: true
+    blurb: |-
+      What is going on at the Small Business Administration?
+
+      Seriously. I'd like to know. DOGE showed up there remarkably early in their operations (2025-02-03). And since then, it has largely been radio silence. I know some things must have happened there - the CIO was abruptly forced out at the end of March just before DOGE announced a change to loan processing - but there just hasn't been much reported yet. Hopefully that will change in the future.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/sba"
+  agency_and_parent:
+  - SBA
   documents: []
 - id: doge-steve-davis
   type: appointed
@@ -7743,6 +8083,84 @@
   agency_and_parent:
   - DOL
   documents: []
+- id: detail-sba-fennessy
+  type: detailed
+  agency_id: SBA
+  name: Conor Fennessy
+  doge_alias_id:
+  from_agency_id: Education
+  from_truth: guessed
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2026-07-04'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Senior Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office:
+  source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+  source_name: American Oversight
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: identified by agency FOIA as having been at the agency, guessing detailed
+  replaced_by:
+  same_as:
+  agency:
+    id: SBA
+    name: Small Business Administration
+    slug: sba
+    page_slug: sba
+    short_name: SBA
+    doge_base: true
+    blurb: |-
+      What is going on at the Small Business Administration?
+
+      Seriously. I'd like to know. DOGE showed up there remarkably early in their operations (2025-02-03). And since then, it has largely been radio silence. I know some things must have happened there - the CIO was abruptly forced out at the end of March just before DOGE announced a change to loan processing - but there just hasn't been much reported yet. Hopefully that will change in the future.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/sba"
+  from_agency:
+    id: Education
+    name: Department of Education
+    slug: education
+    page_slug: education
+    short_name: ED
+    doge_base: true
+    blurb: >-
+      A DOGE delegation arrived at the Department of Education only a week after the Inauguration, and in early February there were reports of up to 10
+      DOGE staffers embedded within the agency and feeding data to an AI system for analysis. DOGE's primary mission at the Department of Education is to
+      support the administration's goal of eliminating the agency without needing approval from Congress. DOGE has contributed both its antipersonnel practicea
+      and a tight control over spending, axing many key contracts in February for assessing the performance of American schools. These efforts have met
+      some resistance in the courts, but DOGE is very much embedded in the Trump administration's war on education.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/education"
+  agency_and_parent:
+  - SBA
+  documents: []
 - id: education-ed-2
   type: appointed
   agency_id: Education
@@ -9081,6 +9499,68 @@
     path: "/agencies/defense"
   agency_and_parent:
   - DOD
+  documents: []
+- id: sba-gibson
+  type: unknown
+  agency_id: SBA
+  name: Patricia Gibson
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2026-07-04'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Senior Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office:
+  source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+  source_name: American Oversight
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: SBA
+    name: Small Business Administration
+    slug: sba
+    page_slug: sba
+    short_name: SBA
+    doge_base: true
+    blurb: |-
+      What is going on at the Small Business Administration?
+
+      Seriously. I'd like to know. DOGE showed up there remarkably early in their operations (2025-02-03). And since then, it has largely been radio silence. I know some things must have happened there - the CIO was abruptly forced out at the end of March just before DOGE announced a change to loan processing - but there just hasn't been much reported yet. Hopefully that will change in the future.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/sba"
+  agency_and_parent:
+  - SBA
   documents: []
 - id: faa-glantz
   type: appointed
@@ -15465,6 +15945,81 @@
   agency_and_parent:
   - DHS
   documents: []
+- id: detail-sba-moghaddassi
+  type: detailed
+  agency_id: SBA
+  name: Aram Moghaddassi
+  doge_alias_id:
+  from_agency_id: OPM
+  from_truth: guessed
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2026-07-04'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Special Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office:
+  source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+  source_name: American Oversight
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: identified by agency FOIA as having been at the agency, guessing detailed
+  replaced_by:
+  same_as:
+  agency:
+    id: SBA
+    name: Small Business Administration
+    slug: sba
+    page_slug: sba
+    short_name: SBA
+    doge_base: true
+    blurb: |-
+      What is going on at the Small Business Administration?
+
+      Seriously. I'd like to know. DOGE showed up there remarkably early in their operations (2025-02-03). And since then, it has largely been radio silence. I know some things must have happened there - the CIO was abruptly forced out at the end of March just before DOGE announced a change to loan processing - but there just hasn't been much reported yet. Hopefully that will change in the future.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/sba"
+  from_agency:
+    id: OPM
+    name: Office of Personnel Management
+    slug: opm
+    page_slug: self
+    short_name: OPM
+    doge_base: true
+    blurb: |-
+      One of the ways in which DOGE surprised everybody was how it turned a relatively sleepy agency into a weapon against the entire government bureaucracy. Created by law in 1978, OPM's main role before now was to standardize government policies around personnel and to offer shared services for human capital like the federal health plans. It also tracks all the paperwork around hiring, promotions, changes and retirement. And so, for most federal staff, their main interactions with OPM were receiving paperwork they were hired, fired or retired; or picking a health plan; or looking at the rules around various practices. But, all the other aspects of human resources were handled by their own agencies. Federal staff are hired to their specific agencies, their performance rankings are defined by their agency, they're promoted by their agencies, they're paid by their agencies, they follow the HR policies of their agencies. OPM provides the guidance, but it's the agencies that implement it.
+      This is why OPM's turn towards the dark side has been so confounding. Very early on, DOGE concentrated a large number of staff within OPM to capture control of the centralized databases and install a new email server to send/receive messages from every federal worker. The acting director was forced out and replaced by Charles Ezell, who then let DOGE wall off an area and keep out permanent agency staff. DOGE also brought in a slew of HR executives from startups who seemingly expected the agency to work for the entire federal government in the same way that HR operates within a single company. And so, they started acting like OPM had more centralized authority: ordering workers to the "five things" email; blasting [commands to human capital officers at other agencies](https://www.chcoc.gov/transmittals); asking for lists of workers so they could command agencies to fire probationary workers and short-cut established procedures for reductions in force. OPM used to be deliberative and formal with its rulemaking - the new OPM was fond of sending out memos to all agencies on Wednesdays demanding a response by Friday. None of this was normal; some of it was [probably illegal](https://www.npr.org/2025/03/13/nx-s1-5325959/federal-employees-court-firing). And the breach in trust has been irrevocable.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/opm"
+  agency_and_parent:
+  - SBA
+  documents: []
 - id: internal-dhs-cpb-mohgaddassi
   type: internal
   agency_id: CBP
@@ -16897,18 +17452,18 @@
   pd_code:
   sge:
   excepted:
-  title:
-  title_type:
+  title: Senior Advisor, DOGE
+  title_type: advisor
   series:
   supervisory:
   office:
-  source:
-  source_name:
+  source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+  source_name: American Oversight
   reimbursed:
   reimbursement_amount:
   comment: Reported in a tweet from the date
   qualifications:
-  table_note: assuming detail from GSA
+  table_note: identified by agency FOIA as having been at the agency, guessing detailed
   replaced_by:
   same_as:
   agency:
@@ -19780,6 +20335,85 @@
     path: "/agencies/gsa"
   agency_and_parent:
   - HHS
+  documents: []
+- id: detail-sba-sennott
+  type: detailed
+  agency_id: SBA
+  name: Riley Sennott
+  doge_alias_id:
+  from_agency_id: GSA
+  from_truth: guessed
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2026-07-04'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Senior Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office:
+  source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+  source_name: American Oversight
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: identified by agency FOIA as having been at the agency, guessing detailed
+  replaced_by:
+  same_as:
+  agency:
+    id: SBA
+    name: Small Business Administration
+    slug: sba
+    page_slug: sba
+    short_name: SBA
+    doge_base: true
+    blurb: |-
+      What is going on at the Small Business Administration?
+
+      Seriously. I'd like to know. DOGE showed up there remarkably early in their operations (2025-02-03). And since then, it has largely been radio silence. I know some things must have happened there - the CIO was abruptly forced out at the end of March just before DOGE announced a change to loan processing - but there just hasn't been much reported yet. Hopefully that will change in the future.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/sba"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    blurb: >-
+      Once a relatively obscure agency that provided shared services and procurement services for the government, GSA became an integral part of DOGE's
+      early-phase plans for taking over parts of the federal bureaucracy precisely for those reasons. From the very first day of the Trump presidency, DOGE
+      established a sizable team at GSA. Some of these were focused on drastic cost-reduction efforts like cancelling government leases or unilaterally
+      dropping the purchasing limit of government purchase cards to curtail micro-purchases by government staff. GSA was also the base for many of DOGE's
+      wrecking crews that were detailed to other agencies, with agency leadership quickly creating a walled-off enclave protected by security guards exclusively
+      for the use of DOGE staff with "A-level access."
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - SBA
   documents: []
 - id: gsa-sennott
   type: appointed
@@ -23143,6 +23777,79 @@
     comment: Testimony about the positions of various IRS appointees
     file: gov.uscourts.nysd.636609.144.0.pdf
     url: "/documents/gov.uscourts.nysd.636609.144.0.pdf"
+- id: detail-sba-wick
+  type: detailed
+  agency_id: SBA
+  name: Jordan Wick
+  doge_alias_id:
+  from_agency_id: DOGE
+  from_truth: guessed
+  start_date:
+  start_date_truth:
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2026-07-04'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Special Advisor
+  title_type: advisor
+  series:
+  supervisory:
+  office:
+  source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+  source_name: American Oversight
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: identified by agency FOIA as having been at the agency, guessing detailed
+  replaced_by:
+  same_as:
+  agency:
+    id: SBA
+    name: Small Business Administration
+    slug: sba
+    page_slug: sba
+    short_name: SBA
+    doge_base: true
+    blurb: |-
+      What is going on at the Small Business Administration?
+
+      Seriously. I'd like to know. DOGE showed up there remarkably early in their operations (2025-02-03). And since then, it has largely been radio silence. I know some things must have happened there - the CIO was abruptly forced out at the end of March just before DOGE announced a change to loan processing - but there just hasn't been much reported yet. Hopefully that will change in the future.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/sba"
+  from_agency:
+    id: DOGE
+    name: Department of Government Efficiency
+    slug: doge
+    page_slug: white-house
+    short_name: DOGE
+    doge_base: true
+    blurb:
+    parent_id: EOP
+    obj_type: Agency
+    path: "/agencies/white-house"
+  agency_and_parent:
+  - SBA
+  documents: []
 - id: doge-wick
   type: appointed
   agency_id: DOGE
