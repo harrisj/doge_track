@@ -278,8 +278,18 @@
     agency: USDA
     type: appointed
     title: Special Advisor
+    title_type: advisor
     source: https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
     source_name: American Oversight
+  - id: usda-berry-sr-advisor
+    type: converted
+    agency: USDA
+    title: Senior Advisor on Government Efficiency
+    office: Office of the Chief Information Officer
+    start_date: 2025-05-19
+    start_date_truth: verified
+    source: https://www.flickr.com/photos/usdagov/54530624479/in/photostream/
+    source_name: USDA Flickr
 
 - name: Sam Beyda
   sort_name: Beyda
@@ -732,16 +742,23 @@
 - name: Joshua Carter
   sort_name: Carter
   slug: joshua-carter
+  linkedin: https://www.linkedin.com/in/josh-carter-cfa-caia-0a854b4b/
   category: unknown
+  skill: analyst
   blurb: >-
     I don't have much info on this person yet, but they were named as being a Senior Advisor at the SBA,
-    which was a title also assigned to known DOGE members at that agency
+    which was a title also assigned to known DOGE members at that agency. He seems to have come from an
+    investment background at Morgan Stanley and his own firm, Sepio Capital.
   positions:
   - id: sba-carter
-    type: unknown
+    type: appointed
     agency: SBA
     title: Senior Advisor
     title_type: advisor
+    sort_date: 2025-03-15
+    start_date: 2025-03-XX
+    start_date_truth: verified
+    table_note: Start month sourced from his LinkedIn
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
     source_name: American Oversight
 
@@ -2300,16 +2317,23 @@
 - name: Patricia Gibson
   sort_name: Gibson
   slug: patricia-gibson
+  linkedin: https://www.linkedin.com/in/patriciagibsondc/
   category: unknown
   blurb: >-
     I don't have much info on this person yet, but they were named as being a Senior Advisor at the SBA,
-    which was a title also assigned to known DOGE members at that agency
+    which was a title also assigned to known DOGE members at that agency. I know that she worked at SBA
+    as a Senior Advisor in the previous Trump administration, so this might be a false alarm, but her
+    LinkedIn listed her current role just as "Organizational Development Consultant" which seems like
+    DOGE's evasion. However, this is looking like a false alarm.
   positions:
   - id: sba-gibson
     type: unknown
     agency: SBA
     title: Senior Advisor
     title_type: advisor
+    start_date: 2025-02-XX
+    start_date_truth: verified
+    table_note: Start month sourced from her LinkedIn
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
     source_name: American Oversight
 

@@ -49,6 +49,7 @@
 - category: unknown
 - positions:
     -  **USDA**  Special Advisor
+    -  **USDA** (2025-05-19 to ??) Senior Advisor on Government Efficiency
 
 # Sam Beyda
 - category: unknown
@@ -143,7 +144,7 @@
 # Joshua Carter
 - category: unknown
 - positions:
-    -  **SBA**  Senior Advisor
+    -  **SBA** (2025-03-XX to ??) Senior Advisor
 
 # Nate Cavanaugh
 - category: wrecker
@@ -422,7 +423,7 @@
 # Patricia Gibson
 - category: unknown
 - positions:
-    -  **SBA**  Senior Advisor
+    -  **SBA** (2025-02-XX to ??) Senior Advisor
 
 # Brady Glantz
 - category: wrecker

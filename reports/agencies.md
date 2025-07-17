@@ -141,13 +141,14 @@
 # Department of Agriculture
 - slug: usda
 - people:
-  - **Daniel Abrahamson** Senior Advisor on Government Efficiency
   - **Samuel Berry** Special Advisor
   - **Jeremy Lichtman** Advisor on Government Efficiency
+  - **Daniel Abrahamson** Senior Advisor on Government Efficiency
   - **Timothy Ronan** Special Advisor
-  - **Gavin Kliger** (2025-02-(01)~) (detailed from OPM)
   - **Jordan Wick** (2025-02-(01)~) (detailed from DOGE)
+  - **Gavin Kliger** (2025-02-(01)~) (detailed from OPM)
   - **Michael Cole** (2025-02-10) Senior Team Leader on Government Efficiency
+  - **Samuel Berry** (2025-05-19) Senior Advisor on Government Efficiency
 - systems:
     - NPS: National Payment Service
         - Jordan Wick **[admin access]** 2025-04-XX - ongoing
@@ -782,16 +783,16 @@
 - people:
   - **Jordan Wick** Special Advisor (detailed from DOGE)
   - **Akash Bobba** Senior Advisor (detailed from OPM)
-  - **Joshua Carter** Senior Advisor
-  - **Edward Coristine** DOGE Advisor (detailed from GSA)
+  - **Conor Fennessy** Senior Advisor (detailed from Education)
+  - **Aram Moghaddassi** Special Advisor (detailed from OPM)
   - **Riley Sennott** Senior Advisor (detailed from GSA)
   - **Micaela Lopez Ballefin** Senior Advisor
+  - **Edward Coristine** DOGE Advisor (detailed from GSA)
   - **Ethan Damiano** Special Advisor
-  - **Conor Fennessy** Senior Advisor (detailed from Education)
-  - **Patricia Gibson** Senior Advisor
-  - **Aram Moghaddassi** Special Advisor (detailed from OPM)
-  - **Edward Coristine** (2025-02-03) (detailed from GSA)
   - **Donald Park** (2025-02-03) Senior Advisor, DOGE (detailed from GSA)
+  - **Edward Coristine** (2025-02-03) (detailed from GSA)
+  - **Patricia Gibson** (2025-02-XX) Senior Advisor
+  - **Joshua Carter** (2025-03-XX) Senior Advisor
 
 # The Smithsonian Institution
 - slug: smithsonian
