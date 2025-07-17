@@ -19233,6 +19233,34 @@
   linkified_text: >
     <a class="link-hover" href="/agencies/white-house">DOGE</a> staff reportedly meet with the leaders of the Smithsonian’s National Gallery of Art to discuss
     its legal status and funding. <a class="link-hover" href="/agencies/independent#arts">The National Gallery of Art</a> is not an executive agency.
+- id: 3EfTSjmu
+  type: disruption
+  date: '2025-04-18'
+  sort_date: '2025-04-18'
+  time:
+  text: >-
+    In retribution against Harvard University for rejecting demands from the Trump Administration on April 14th, the National Science Foundation begins
+    rejecting scientific grants, stating they weren't in alignment with current NSF priorities.
+  fuzz:
+  comment:
+  source: https://www.thecrimson.com/article/2025/7/17/grant-termination-details-doge/
+  source_title:
+  source_name: The Crimson
+  case_no:
+  system_id:
+  theme:
+  names: []
+  agency_ids:
+  - NSF
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - NSF
+  obj_type: Event
+  linkified_text: >
+    In retribution against Harvard University for rejecting demands from the Trump Administration on April 14th, the <a class="link-hover" href="/agencies/independent#nsf">National
+    Science Foundation</a> begins rejecting scientific grants, stating they weren’t in alignment with current <a class="link-hover" href="/agencies/independent#nsf">NSF</a>
+    priorities.
 - id: Tb3wbZWT
   type: disruption
   date: '2025-04-18'
@@ -20010,6 +20038,48 @@
   linkified_text: >
     Social Security introduces a new AI-based agent for handling phone calls to 350 field offices in the Southeast and Northeast regions. It frustrates
     many users attempting to reach an actual person for assistance.
+- id: XTNDoswP
+  type: interagency
+  date: '2025-04-30'
+  sort_date: '2025-04-30'
+  time:
+  text: >-
+    As part of a DOGE-driven effort to find ways to punish Harvard by pulling its grants from the federal govenment, Josh Gruenbaum emails Alexander Simonpour
+    to ask if there are grants that can be revoked by NASA. The next day, Simonpour relayed the request to other NASA staffers and then followed up on May
+    8th stating that the White House had imposed a 5pm deadline for the information.
+  fuzz:
+  comment:
+  source: https://www.thecrimson.com/article/2025/7/17/grant-termination-details-doge/
+  source_title:
+  source_name: The Crimson
+  case_no:
+  system_id:
+  theme:
+  names:
+  - Josh Gruenbaum
+  - Alexander Simonpour
+  agency_ids:
+  - GSA
+  - NASA
+  alias_ids: []
+  names_aliases:
+  - name: Josh Gruenbaum
+    slug: josh-gruenbaum
+    sort_name: Gruenbaum
+    category: enabler
+  - name: Alexander Simonpour
+    slug: alex-simonpour
+    sort_name: Simonpour
+    category: wrecker
+  agencies_parents:
+  - GSA
+  - NASA
+  obj_type: Event
+  linkified_text: >
+    As part of a DOGE-driven effort to find ways to punish Harvard by pulling its grants from the federal govenment, <a class="link-hover" href="/people/enabler-staff#josh-gruenbaum">Josh
+    Gruenbaum</a> emails <a class="link-hover" href="/wreckers/other#alex-simonpour">Alexander Simonpour</a> to ask if there are grants that can be revoked
+    by <a class="link-hover" href="/agencies/nasa">NASA</a>. The next day, Simonpour relayed the request to other <a class="link-hover" href="/agencies/nasa">NASA</a>
+    staffers and then followed up on May 8th stating that the White House had imposed a 5pm deadline for the information.
 - id: gHQolQlg
   type: legal
   date: '2025-05-01'
@@ -20633,6 +20703,87 @@
   linkified_text: >
     Fast Company runs an interview with <a class="link-hover" href="/wreckers/other#shail-lavingia">Sahil Lavingia</a>, who is promptly fired by <a class="link-hover"
     href="/agencies/white-house">DOGE</a> the following day.
+- id: 5Hd8y5Og
+  type: interagency
+  date: '2025-05-08'
+  sort_date: '2025-05-08'
+  time:
+  text: >-
+    DOGE staff at NASA, GSA and the White House finalize a list of five NASA grants to be killed and discuss the language for the terminiation letters in
+    a series of email discussions and meetings to 11pm that night. The agency sends a letter to Harvard the following day.
+  fuzz:
+  comment:
+  source: https://www.thecrimson.com/article/2025/7/17/grant-termination-details-doge/
+  source_title:
+  source_name: The Crimson
+  case_no:
+  system_id:
+  theme:
+  names:
+  - Josh Gruenbaum
+  - Alexander Simonpour
+  agency_ids:
+  - GSA
+  - NASA
+  alias_ids: []
+  names_aliases:
+  - name: Josh Gruenbaum
+    slug: josh-gruenbaum
+    sort_name: Gruenbaum
+    category: enabler
+  - name: Alexander Simonpour
+    slug: alex-simonpour
+    sort_name: Simonpour
+    category: wrecker
+  agencies_parents:
+  - GSA
+  - NASA
+  obj_type: Event
+  linkified_text: >
+    <a class="link-hover" href="/agencies/white-house">DOGE</a> staff at <a class="link-hover" href="/agencies/nasa">NASA</a>, <a class="link-hover" href="/agencies/gsa">GSA</a>
+    and the White House finalize a list of five <a class="link-hover" href="/agencies/nasa">NASA</a> grants to be killed and discuss the language for the
+    terminiation letters in a series of email discussions and meetings to 11pm that night. The agency sends a letter to Harvard the following day.
+- id: ZinXzZnu
+  type: interagency
+  date: '2025-05-08'
+  sort_date: '2025-05-08'
+  time:
+  text: >-
+    Jeremy Lichtman emails USDA officials to inform them that GSA (likely Josh Gruenbaum) had directed them to review several agency grants for termination.
+    These terminations were reportedly "awaiting final greenlight from the White House."
+  fuzz:
+  comment:
+  source: https://www.thecrimson.com/article/2025/7/17/grant-termination-details-doge/
+  source_title:
+  source_name: The Crimson
+  case_no:
+  system_id:
+  theme:
+  names:
+  - Josh Gruenbaum
+  - Jeremy Lichtman
+  agency_ids:
+  - GSA
+  - USDA
+  alias_ids: []
+  names_aliases:
+  - name: Josh Gruenbaum
+    slug: josh-gruenbaum
+    sort_name: Gruenbaum
+    category: enabler
+  - name: Jeremy Lichtman
+    slug: jeremy-lichtman
+    sort_name: Lichtman
+    category: unknown
+  agencies_parents:
+  - GSA
+  - USDA
+  obj_type: Event
+  linkified_text: >
+    <a class="link-hover" href="/people/unknowns#jeremy-lichtman">Jeremy Lichtman</a> emails <a class="link-hover" href="/agencies/agriculture">USDA</a>
+    officials to inform them that <a class="link-hover" href="/agencies/gsa">GSA</a> (likely <a class="link-hover" href="/people/enabler-staff#josh-gruenbaum">Josh
+    Gruenbaum</a>) had directed them to review several agency grants for termination. These terminations were reportedly “awaiting final greenlight from
+    the White House.”
 - id: 4ZxhrZFr
   type: sighting
   date: '2025-05-09'
@@ -20805,6 +20956,45 @@
   linkified_text: >
     The <a class="link-hover" href="/agencies/homeland-security">Department of Homeland Security</a> issues a subpoena to the state of California and Los
     Angeles County to demand records from a cash assistance program for immigrants (CAPI).
+- id: 63fh5vI1
+  type: disruption
+  date: '2025-05-12'
+  sort_date: '2025-05-12'
+  time:
+  text: >-
+    In a retaliation against the university coordinated by GSA, grants for Harvard University from DOD, HUD, the Department of Energy and the Department
+    of Education are all terminated. There were 200 grants from DOD alone. The stated reasons varied but included that they no longer effectuated the administration's
+    priorities or directly accusing Harvard of fostering antisemitism on campus.
+  fuzz:
+  comment:
+  source: https://www.thecrimson.com/article/2025/7/17/grant-termination-details-doge/
+  source_title:
+  source_name: The Crimson
+  case_no:
+  system_id:
+  theme:
+  names: []
+  agency_ids:
+  - GSA
+  - DOD
+  - HUD
+  - Energy
+  - Education
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - GSA
+  - DOD
+  - HUD
+  - Energy
+  - Education
+  obj_type: Event
+  linkified_text: >
+    In a retaliation against the university coordinated by <a class="link-hover" href="/agencies/gsa">GSA</a>, grants for Harvard University from <a class="link-hover"
+    href="/agencies/defense">DOD</a>, <a class="link-hover" href="/agencies/housing">HUD</a>, the <a class="link-hover" href="/agencies/energy">Department
+    of Energy</a> and the <a class="link-hover" href="/agencies/education">Department of Education</a> are all terminated. There were 200 grants from <a
+    class="link-hover" href="/agencies/defense">DOD</a> alone. The stated reasons varied but included that they no longer effectuated the administration’s
+    priorities or directly accusing Harvard of fostering antisemitism on campus.
 - id: 7cif37rv
   type: disruption
   date: '2025-05-13'
