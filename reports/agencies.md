@@ -686,9 +686,9 @@
   - **Noah Peters** (2025-01-20) Senior Advisor
   - **Amanda Scales** (2025-01-20 - 2025-03-28) Chief of Staff
   - **Anthony Armstrong** (2025-01-20 - 2025-04-(30)~) Expert
-  - **OPM-02 (Riccardo Biasini)** (2025-01-20) Expert
+  - **OPM-02 (Riccardo Biasini)** (2025-01-20 - NTE 2025-07-18) Expert
   - **OPM-07 (Brian Bjelde)** (2025-01-20 - 2025-01-31) Expert
-  - **OPM-03 (Akash Bobba)** (2025-01-20) Expert
+  - **OPM-03 (Akash Bobba)** (2025-01-20 - NTE 2025-07-18) Expert
   - **OPM-16 (Jacob Altik)** (2025-01-24) Senior Advisor to the Director
   - **OPM-06 (Nikhil Rajpal)** (2025-01-24) Expert
   - **Christopher Stanley** (2025-01-28) Expert
