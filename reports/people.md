@@ -270,7 +270,8 @@
 # Stephen Ehikian
 - category: enabler
 - positions:
-    -  **GSA** (2025-01-20 to ??) **Acting Administrator**
+    -  **GSA** (2025-01-20 to 2025-07-21) **Acting Administrator**
+    -  **GSA** (2025-07-21 to ??) **Deputy Administrator**
 
 # Marko Elez
 - category: wrecker

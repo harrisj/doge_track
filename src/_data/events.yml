@@ -5622,6 +5622,42 @@
   linkified_text: >
     <a class="link-hover" href="/agencies/nasa">NASA</a> leadership replies to a congressional inquiry to report that <a class="link-hover" href="/agencies/white-house">DOGE</a>
     had identified a single individual who would be employed at the agency.
+- id: 149BygfY
+  type: interagency
+  date: '2025-02-13'
+  sort_date: '2025-02-13'
+  time:
+  text: >-
+    Representing DOGE and OPM, Noah Peters finalizes mass layoffs at the USDA just before Secretary Rollins is to be sworn in that evening. When asked later
+    by Congress about the layoffs, she deflects and says it happened before she started.
+  fuzz:
+  comment:
+  source: https://investigatemidwest.org/2025/07/16/farming-in-the-dark-brooke-rollins-leadership-doges-grip-and-the-cost-to-american-agriculture/
+  source_title:
+  source_name: Investigate Midwest
+  case_no:
+  system_id:
+  theme:
+  names:
+  - Noah Peters
+  agency_ids:
+  - USDA
+  - OPM
+  alias_ids: []
+  names_aliases:
+  - name: Noah Peters
+    slug: noah-peters
+    sort_name: Peters
+    category: support
+  agencies_parents:
+  - USDA
+  - OPM
+  obj_type: Event
+  linkified_text: >
+    Representing <a class="link-hover" href="/agencies/white-house">DOGE</a> and <a class="link-hover" href="/agencies/opm">OPM</a>, <a class="link-hover"
+    href="/people/support-team#noah-peters">Noah Peters</a> finalizes mass layoffs at the <a class="link-hover" href="/agencies/agriculture">USDA</a> just
+    before Secretary Rollins is to be sworn in that evening. When asked later by Congress about the layoffs, she deflects and says it happened before she
+    started.
 - id: 5cr9YjJj
   type: action
   date: '2025-02-14'
@@ -7495,7 +7531,9 @@
   date: '2025-02-21'
   sort_date: '2025-02-21'
   time:
-  text: USDA Secretary Rollins posts a photo of a grant-cancellation session on the @DOGE_USDA account
+  text: >-
+    USDA Secretary Rollins posts a photo of a grant-cancellation session on the @DOGE_USDA account. None of the participants are identified, but it looks
+    like Gavin Kliger is in the picture.
   fuzz:
   comment:
   source: https://xcancel.com/SecRollins/status/1892777526704885880#m
@@ -7504,18 +7542,22 @@
   case_no:
   system_id:
   theme:
-  names: []
+  names:
+  - Gavin Kliger
   agency_ids:
   - USDA
   alias_ids: []
-  names_aliases: []
+  names_aliases:
+  - name: Gavin Kliger
+    slug: gavin-kliger
+    sort_name: Kliger
+    category: wrecker
   agencies_parents:
   - USDA
   obj_type: Event
-  linkified_text: '<a class="link-hover" href="/agencies/agriculture">USDA</a> Secretary Rollins posts a photo of a grant-cancellation session on the @DOGE_USDA
-    account
-
-    '
+  linkified_text: >
+    <a class="link-hover" href="/agencies/agriculture">USDA</a> Secretary Rollins posts a photo of a grant-cancellation session on the @DOGE_USDA account.
+    None of the participants are identified, but it looks like <a class="link-hover" href="/wreckers/gavin-kliger">Gavin Kliger</a> is in the picture.
 - id: 3GLAQY5f
   type: disruption
   date: '2025-02-21'
@@ -25192,3 +25234,64 @@
     (DAFSTS) Contract for $4.8 billion in avoided costs. This however was an umbrella contract for a wide variety of IT modernization and consulting services,
     for which money had not been allocated, meaning that this tally might be affected by the same fuzzy double-counting and hypothetical savings that were
     an issue on the DOGE’s own tally of cost recovery.
+- id: 2AYfCe2r
+  type: offboard
+  date: '2025-07-21'
+  sort_date: '2025-07-21'
+  time:
+  text: >-
+    In a move that is seen as reprisal for GSA leadership's support of Steve Davis attempt to continue running DOGE after he left, the Trump White House
+    names Mike Rigas as the new acting administrator of GSA. This demotes Stephen Ehikian to his role as Deputy Administrator of GSA only.
+  fuzz:
+  comment:
+  source: https://www.politico.com/news/2025/07/21/trump-installs-new-gsa-acting-administrator-sidelines-doge-leaders-00465468
+  source_title:
+  source_name: Politico
+  case_no:
+  system_id:
+  theme:
+  names:
+  - Stephen Ehikian
+  agency_ids:
+  - GSA
+  alias_ids: []
+  names_aliases:
+  - name: Stephen Ehikian
+    slug: stephen-ehikian
+    sort_name: Ehikian
+    category: enabler
+  agencies_parents:
+  - GSA
+  obj_type: Event
+  linkified_text: >
+    In a move that is seen as reprisal for <a class="link-hover" href="/agencies/gsa">GSA</a> leadership’s support of <a class="link-hover" href="/people/leaders#steve-davis">Steve
+    Davis</a> attempt to continue running <a class="link-hover" href="/agencies/white-house">DOGE</a> after he left, the Trump White House names Mike Rigas
+    as the new acting administrator of <a class="link-hover" href="/agencies/gsa">GSA</a>. This demotes <a class="link-hover" href="/people/enabler-staff#stephen-ehikian">Stephen
+    Ehikian</a> to his role as Deputy Administrator of <a class="link-hover" href="/agencies/gsa">GSA</a> only.
+- id: 6woiuaP3
+  type: report
+  date: '2025-07-21'
+  sort_date: '2025-07-21'
+  time:
+  text: >-
+    The head of security for the US Institute of Peace sits for an interview discussing how he was betrayed by the security contractor for the agency and
+    taking back custody of the building after the May 21st court ruling.
+  fuzz:
+  comment:
+  source: https://www.asisonline.org/security-management-magazine/articles/2025/07/USIP/reviving-security/
+  source_title: Reviving USIP Security Amidst a DOGE Takeover
+  source_name: Security Management
+  case_no:
+  system_id:
+  theme:
+  names: []
+  agency_ids:
+  - USIP
+  alias_ids: []
+  names_aliases: []
+  agencies_parents:
+  - USIP
+  obj_type: Event
+  linkified_text: >
+    The head of security for the <a class="link-hover" href="/agencies/independent#eo1">US Institute of Peace</a> sits for an interview discussing how he
+    was betrayed by the security contractor for the agency and taking back custody of the building after the May 21st court ruling.

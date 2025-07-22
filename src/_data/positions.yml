@@ -6029,8 +6029,8 @@
   start_date_event:
   start_source:
   start_source_name:
-  end_date:
-  end_date_truth:
+  end_date: '2025-07-21'
+  end_date_truth: reported
   end_date_event:
   end_source:
   end_source_name:
@@ -6060,6 +6060,71 @@
   comment:
   qualifications:
   table_note:
+  replaced_by:
+  same_as:
+  agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    blurb: >-
+      Once a relatively obscure agency that provided shared services and procurement services for the government, GSA became an integral part of DOGE's
+      early-phase plans for taking over parts of the federal bureaucracy precisely for those reasons. From the very first day of the Trump presidency, DOGE
+      established a sizable team at GSA. Some of these were focused on drastic cost-reduction efforts like cancelling government leases or unilaterally
+      dropping the purchasing limit of government purchase cards to curtail micro-purchases by government staff. GSA was also the base for many of DOGE's
+      wrecking crews that were detailed to other agencies, with agency leadership quickly creating a walled-off enclave protected by security guards exclusively
+      for the use of DOGE staff with "A-level access."
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - GSA
+  documents: []
+- id: gsa-ehikian-deputy
+  type: demotion
+  agency_id: GSA
+  name: Stephen Ehikian
+  doge_alias_id:
+  from_agency_id:
+  from_truth:
+  start_date: '2025-07-21'
+  start_date_truth: reported
+  start_date_event:
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_date_event:
+  end_source:
+  end_source_name:
+  end_type:
+  sort_date: '2025-07-21'
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title: Deputy Administrator
+  title_type: dept_head
+  series:
+  supervisory: true
+  office:
+  source: https://www.politico.com/news/2025/07/21/trump-installs-new-gsa-acting-administrator-sidelines-doge-leaders-00465468
+  source_name: Politico
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Had been in the Deputy Administrator role since 1/20 but serving as Acting Administrator
   replaced_by:
   same_as:
   agency:
@@ -24762,7 +24827,7 @@
   reimbursement_amount:
   comment: Sourced from a FOIA document; listed as Joanna Miller
   qualifications:
-  table_note: Salary range for GS-15 in DC
+  table_note: Salary range for GS-15 in DC; LinkedIn says she is working for OMB "Made in America" initiative since March 2025
   replaced_by:
   same_as:
   agency:

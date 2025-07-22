@@ -1589,9 +1589,23 @@
     agency: GSA
     start_date: 2025-01-20
     start_date_truth: reported
+    end_date: 2025-07-21
+    end_date_truth: reported
     supervisory: true
     source: https://www.nextgov.com/people/2025/01/gsa-announces-new-fas-tts-leadership/402485/
     source_name: NextGov
+  - id: gsa-ehikian-deputy
+    type: demotion
+    title: Deputy Administrator
+    title_type: dept_head
+    agency: GSA
+    start_date: 2025-07-21
+    start_date_truth: reported
+    table_note: Had been in the Deputy Administrator role since 1/20 but serving as Acting Administrator
+    supervisory: true
+    source: >-
+      https://www.politico.com/news/2025/07/21/trump-installs-new-gsa-acting-administrator-sidelines-doge-leaders-00465468
+    source_name: Politico
 
 - name: Marko Elez
   sort_name: Elez
@@ -6215,12 +6229,14 @@
     title: Senior Advisor to the Director
     title_type: advisor
     pay_grade: GS-15
-    table_note: Salary range for GS-15 in DC
     salary: "$167,603 - $195,200"
     series: '0301'
     supervisory: false
     office: Office of the Director
     comment: Sourced from a FOIA document; listed as Joanna Miller
+    table_note: >-
+      Salary range for GS-15 in DC; LinkedIn says she is working for OMB "Made in America" initiative
+      since March 2025
     documents:
     - opm-foia-doge-positions
 
