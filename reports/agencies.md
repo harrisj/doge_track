@@ -694,7 +694,7 @@
   - **OPM-06 (Nikhil Rajpal)** (2025-01-24) Expert
   - **Christopher Stanley** (2025-01-28) Expert
   - **Justin Monroe** (2025-01-28) Expert
-  - **Austin Raynor** (2025-01-30) Senior Advisor
+  - **Austin Raynor** (2025-01-30 - NTE 2025-07-22) Senior Advisor
   - **OPM-14 (Chris Young)** (2025-01-30) Expert
   - **OPM-07 (Brian Bjelde)** (2025-01-31) Expert
   - **OPM-15** (2025-02-(07)~)
@@ -849,7 +849,8 @@
   - **Kenneth Jackson** (2025-01-XX)
   - **Edward Coristine** (2025-02-10) Senior Advisor (detailed from GSA)
   - **Luke Farritor** (2025-02-10) Senior Advisor (detailed from GSA)
-  - **Jeremy Lewin** (2025-04-15) Acting Head of Foreign Assistance
+  - **Jeremy Lewin** (2025-04-15 - 2025-07-11) Acting Head of Foreign Assistance
+  - **Jeremy Lewin** (2025-07-11) Under Secretary for Foreign Assistance, Humanitarian Affairs and Religious Freedom
 
 # Transportation Security Administration
 - slug: tsa

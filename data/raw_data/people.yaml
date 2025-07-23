@@ -3591,9 +3591,22 @@
     type: appointed
     start_date: 2025-04-15
     start_date_truth: reported
+    end_date: 2025-07-11
+    end_date_truth: verified
+    end_type: replaced
+    replaced_by: state-lewin-undersecretary
     title: Acting Head of Foreign Assistance
     title_type: dept_head
     agency: State
+  - id: state-lewin-undersecretary
+    agency: State
+    type: promotion
+    start_date: 2025-07-11
+    start_date_truth: verified
+    title: Under Secretary for Foreign Assistance, Humanitarian Affairs and Religious Freedom
+    source: https://www.state.gov/biographies/jeremy-p-lewin/
+    source_name: State Dept.
+    supervisory: true
 
 - name: Jeremy Lichtman
   sort_name: Lichtman

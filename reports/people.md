@@ -643,7 +643,8 @@
     -  **CMS** (2025-03-03 to ??) 
         - CALM: CMS Acquisition Lifecycle Management System: 2025-03-03 - 2025-04-18
     -  **USAID** (2025-03-18 to ??) Deputy Administrator(Policy and Programming) / COO
-    -  **State** (2025-04-15 to ??) Acting Head of Foreign Assistance
+    -  **State** (2025-04-15 to 2025-07-11) Acting Head of Foreign Assistance
+    -  **State** (2025-07-11 to ??) **Under Secretary for Foreign Assistance, Humanitarian Affairs and Religious Freedom**
 
 # Jeremy Lichtman
 - category: unknown
