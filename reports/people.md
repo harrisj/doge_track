@@ -449,7 +449,7 @@
 # Antonio Gracias
 - category: leadership
 - positions:
-    -  **SSA** (2025-02-23 to NTE 2026-02-22) [as "SSA-04"] Expert ED-00 volunteer
+    -  **SSA** (2025-02-23 to 2025-07-01) [as "SSA-04"] Expert ED-00 volunteer
 
 # Michael Grimes
 - category: leadership

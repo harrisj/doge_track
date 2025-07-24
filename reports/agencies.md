@@ -811,7 +811,7 @@
   - **SSA-10 (Ethan Shaotran)** (2025-02-18) (detailed from GSA)
   - **SSA-03 (Aram Moghaddassi)** (2025-02-22) (detailed from DOL)
   - **SSA-09 (Payton Rehling)** (2025-02-23) Expert
-  - **SSA-04 (Antonio Gracias)** (2025-02-23) Expert
+  - **SSA-04 (Antonio Gracias)** (2025-02-23 - 2025-07-01) Expert
   - **SSA-06 (Jon Koval)** (2025-02-23) Expert
   - **Mark Steffensen** (2025-02-25 - 2025-02-27) Senior Advisor
   - **SSA-08 (Nikhil Rajpal)** (2025-02-26) (detailed from OPM)
