@@ -136,6 +136,11 @@ namespace :generate do
     ruby "#{SCRIPTS_DIR}/generate_changed.rb"
   end
 
+  desc 'The CSV files'
+  task :csv do
+    ruby "#{SCRIPTS_DIR}/generate_csv_files.rb"
+  end
+
   desc 'Run all generate tasks'
   task all: %i[reports data_yaml]
 end
