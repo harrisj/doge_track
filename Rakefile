@@ -11,7 +11,7 @@ task default: :deploy
 # Standard set of tasks, which you can customize if you wish:
 #
 desc 'Build the Bridgetown site for deployment'
-task deploy: [:clean, 'frontend:build'] do
+task deploy: [:clean, 'frontend:build', 'data:deploy_db'] do
   Bridgetown::Commands::Build.start
 end
 
@@ -110,6 +110,8 @@ namespace :data do
   task :populate_db do
     ruby "#{SCRIPTS_DIR}/populate_db.rb"
   end
+
+  task deploy_db: ['data:clean_db', 'data:create_db', 'data:populate_db']
 
   desc 'Cleans all generated data, recreates the DB and loads it with data'
   task rebuild_db: ['data:validate', 'data:clean_db', 'data:create_db', 'data:populate_db']
