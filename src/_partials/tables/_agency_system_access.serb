@@ -1,7 +1,7 @@
 {% import "macros" %}
 {% govt_systems = roles.group_by {|r| r.system} %}
 
-<table class="table table-fixed sm:table-auto table-xs sm:table-sm lg:table-md mb-0">
+<table class="my-table-style">
   <thead>
   <tr>
     <th class="text-left my-3col-table-col1">System</th>

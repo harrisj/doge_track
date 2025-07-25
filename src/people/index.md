@@ -18,7 +18,7 @@ Like any categorization, this is an approximation that provides useful clarity b
 Here are the current members of DOGE that I know about
 
 {% grouped_people = site.data.people.group_by(&:category) %}
-<table class="table table-sm sm:table-md md:table-lg table-zebra">
+<table class="my-table-style table-zebra">
 <thead>
   <tr>
     <th class="align-left">Category</th>

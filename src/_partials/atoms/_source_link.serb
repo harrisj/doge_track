@@ -1,1 +1,1 @@
-{% if item.source && item.source_name %}<span class="text-nowrap float-right"><a href="{{ item.source }}" class="link-hover"><i class="fa-sharp fa-solid fa-link-simple"></i> <span class="italic text-2xs sm:text-xs">{{ item.source_name }}</span></a></span>{% end %}
+{% if item.source && item.source_name %}<div class="text-nowrap inline-block float-right ml-2"><a href="{{ item.source }}" class="link-hover"><i class="fa-sharp fa-solid fa-link-simple"></i> <span class="italic text-2xs sm:text-xs">{{ item.source_name }}</span></a></div>{% end %}

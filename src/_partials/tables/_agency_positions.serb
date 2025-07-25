@@ -10,7 +10,7 @@
    grouped_data_positions = dated_positions.group_by{|pos| pos.name || pos.doge_alias_id}.sort_by {|_, positions| positions[0].sort_date }   
 %}
 
-<table class="table table-fixed sm:table-auto table-xs sm:table-sm lg:table-md border-4 mb-0">
+<table class="my-table-style">
   <thead>
   <tr>
     <th class="text-left my-3col-table-col1">Position</th>

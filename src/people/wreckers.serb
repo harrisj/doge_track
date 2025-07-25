@@ -68,7 +68,7 @@ There are also a fair number of Wreckers who started at other agencies, possibly
 
 {% other_wreckers = all_wreckers.reject {|x| ["GSA", "OPM", "DOGE"].include? x.start_agency }.sort_by {|x| [x.start_agency, x.sort_date]} %}
 {% last_agency = other_wreckers[0].start_agency %}
-<table class="table table-xs sm:table-sm md:table-md table-zebra">
+<table class="my-table-style table-zebra">
   <thead>
     <tr>
       <th>Agency</th>

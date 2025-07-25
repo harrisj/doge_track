@@ -15,7 +15,7 @@ At major agencies, the DOGE staff are given titles like "Senior Advisor" and sit
 {% end %}
 {% agencies = site.data.agencies.select {|a| a.parent_id.blank?} %}
 
-<table class="table table-xs sm:table-sm md:table-md">
+<table class="my-table-style">
 <thead>
   <tr>
     <th>Agency</th>
@@ -51,7 +51,7 @@ This table only includes people who whom we have definite information about thei
 {% end %}
 {% acting = site.data.positions.select { |p| p.title =~ /acting/i }.sort_by(&:sort_date) %}
 
-<table class="table table-xs sm:table-sm md:table-md table-zebra my-2">
+<table class="my-table-style table-zebra my-2">
 <thead>
   <tr>
     <th>Name</th>
@@ -89,7 +89,7 @@ In February, OPM urged [agencies to reclassify how Chief Information Officers ar
 {% end %}
 
 {% cios = site.data.positions.select {|p| p.title_type == "cto" || p.title_type == "cio" }.sort_by(&:sort_date) %}
-<table class="table table-xs sm:table-sm md:table-md table-zebra my-2">
+<table class="my-table-style table-zebra my-2">
 <thead>
   <tr>
     <th>Name</th>

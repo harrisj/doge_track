@@ -1,6 +1,6 @@
 {% import 'macros' %}
 
-<table class="table table-fixed sm:table-auto table-xs sm:table-sm lg:table-md border-4">
+<table class="my-table-style">
   <thead>
   <tr class="">
     <th class="text-left my-3col-table-col1">Position</th>
@@ -12,12 +12,12 @@
     {% positions.each do |pos| %}
     <tr class="font-sans" id="{{ pos.id }}">
       <td class="align-top"><div class="inline-block">{%@ 'atoms/position_move_label', position: pos %}</div>
-        <div class="sm:hidden">
+        <div class="only-mobile">
           {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}
           {%@ 'atoms/doge_exit_label', position: pos %}
         </div>    
       </td>
-      <td class="align-top hidden sm:table-cell">
+      <td class="align-top hide-cell-mobile">
         {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}
         {%@ 'atoms/doge_exit_label', position: pos %}
       </td>

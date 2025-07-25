@@ -13,7 +13,7 @@
 <div class="mb-5">
 <h3 class="prose prose-lg h3" id="{{ govt_system.id }}">{{ govt_system.acronym || govt_system.name }}</h3>
 
-<table class="table table-xs sm:table-sm lg:table-md border-4">
+<table class="my-table-style">
 <tbody>
   <tr>
   <th class="align-top w-1/4">Name</th>
