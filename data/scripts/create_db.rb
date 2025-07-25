@@ -34,15 +34,12 @@ DB.create_table! :positions do
 
   string :start_date
   string :start_date_truth
-  string :start_date_event
   string :start_source
   string :start_source_name
 
   string :end_date
   string :end_date_truth
-  string :end_date_event
   string :end_source
-  string :end_source_name
   string :end_type
 
   string :sort_date, null: false

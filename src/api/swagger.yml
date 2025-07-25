@@ -1,0 +1,392 @@
+openapi: 3.0.4
+info:
+  title: DOGE Track API
+  description: |-
+    This is an API for the data on dogetrack.info. Much like the site it is a series of statically-generated files so there is no API key required!
+  termsOfService: https://dogetrack.info/about/this-site/
+  contact:
+    email: mail@jacobharr.is
+  license:
+    name: CC0 Public Domain
+    url: https://creativecommons.org/public-domain/cc0/
+  version: 1.0.12
+externalDocs:
+  description: DOGE Track
+  url: https://dogetrack.info/
+servers:
+- url: https://dogetrack.info/api/
+paths:
+  /people.json:
+    get:
+      summary: people.json
+      description: A listing of all the people in DOGE Track with summary information.
+      operationId: getPeople
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PersonItem'
+  /people/{slug}.json:
+    get:
+      summary: people/{slug}.json
+      description: Find a person by their slug
+      operationId: getPerson
+      parameters:
+      - name: slug
+        in: path
+        description: slug of the person to return
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PersonRecord'
+  /agencies.json:
+    get:
+      summary: agencies.json
+      description: A listing of all the agencies in DOGE track with summary information.
+      operationId: getAgencies
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AgencyRecord'
+  /agencies/{id}.json:
+    get:
+      summary: agencies/{slug}.json
+      description: Returns a single agency.
+      operationId: getAgency
+      parameters:
+      - name: slug
+        in: path
+        description: id of the agency to return
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AgencyItem'
+components:
+  schemas:
+    CategoryType:
+      description: The categories of DOGE people
+      enum:
+      - booster
+      - leadership
+      - enabler
+      - support
+      - wrecker
+      - unknown
+    TruthType:
+      description: Valid values for the precision assessment on dates in positions.
+      enum:
+      - verified
+      - reported
+      - inferred
+      - guessed
+      - disputed
+    EventType:
+      enum:
+      - action
+      - directory
+      - sighting
+      - disruption
+      - interagency
+      - legal
+      - onboard
+      - offboard
+      - oversight
+      - access
+      - official
+      - milestone
+      - other
+      - report
+    PositionType:
+      enum:
+      - appointed
+      - detailed
+      - consultant
+      - internal
+      - converted
+      - promotion
+      - demotion
+      - unknown
+    ExitType:
+      enum:
+      - fired
+      - resigned
+      - detail_ended
+      - replaced
+      - removed
+      - unknown
+    AgencyRef:
+      type: object
+      properties:
+        id:
+          type: string
+          example: USDA
+        name:
+          type: string
+          example: Department of Agriculture
+        short_name:
+          type: string
+          example: Agriculture
+        parent_id:
+          type: string
+          example: nil
+        path:
+          description: The location of the full record for the agency
+          type: string
+          example: 'https://dogetrack.info/api/usda.json'
+      required:
+      - id
+      - name
+      - short_name
+      - path
+    AgencyItem:
+      allOf:
+      - $ref: '#/components/schemas/AgencyRef'
+      - type: object
+        properties:
+          num_events:
+            type: integer
+          num_positions:
+            type: integer
+          num_doge:
+            type: integer
+        required:
+        - num_events
+        - num_positions
+        - num_doge
+    AgencyRecord:
+      allOf:
+      - $ref: '#/components/schemas/AgencyRef'
+      - properties:
+          events:
+            type: array
+            items:
+              $ref: '#/components/schemas/EventRecord'
+          positions:
+            type: array
+            items:
+              $ref: '#/components/schemas/PositionRecord'
+    EdtfType:
+      type: string
+      description: A date in ISO 8601 Extended Date Time Format representation
+    EventRecord:
+      type: object
+      properties:
+        id:
+          type: string
+        type:
+          $ref: '#/components/schemas/EventType'
+        date:
+          $ref: '#/components/schemas/EdtfType'
+        sort_date:
+          type: string
+          description: A date in ISO 8601 format
+        text:
+          type: string
+        fuzz:
+          type: string
+        comment:
+          type: string
+        source:
+          type: string
+        source_name:
+          type: string
+        case_no:
+          type: string
+        agencies:
+          type: array
+          items:
+            $ref: '#/components/schemas/AgencyRef'
+        people:
+          type: array
+          items:
+            $ref: '#/components/schemas/PersonRef'
+      required:
+      - id
+      - type
+      - date
+      - text
+      - source
+      - agencies
+    PersonRef:
+      type: object
+      properties:
+        name:
+          type: string
+        sort_name:
+          type: string
+        slug:
+          type: string
+        path:
+          description: The URL for the full person record
+          type: string
+      required:
+      - name
+      - sort_name
+      - slug
+      - path
+    PersonItem:
+      allOf:
+      - $ref: '#/components/schemas/PersonRef'
+      - properties:
+          category:
+            $ref: '#/components/schemas/CategoryType'
+          skill:
+            type: string
+          govt_start_date:
+            $ref: '#/components/schemas/EdtfType'
+          govt_exit_date:
+            type: string
+          num_events:
+            type: integer
+          num_positions:
+            type: integer
+          agencies:
+            type: array
+            items:
+              $ref: '#/components/schemas/AgencyRef'
+        required:
+        - num_events
+        - num_positions
+    PersonRecord:
+      allOf:
+      - $ref: '#/components/schemas/PersonRef'
+      - properties:
+          age:
+            type: integer
+          blurb:
+            type: string
+          reporting_notes:
+            type: string
+          comment:
+            type: string
+          govt_exit_date:
+            type: string
+          govt_exit_truth:
+            $ref: '#/components/schemas/TruthType'
+          govt_exit_type:
+            $ref: '#/components/schemas/ExitType'
+          table_note:
+            type: string
+          tech_links:
+            type: string
+          linkedin:
+            type: string
+          events:
+            type: array
+            items:
+              $ref: '#/components/schemas/EventRecord'
+          positions:
+            type: array
+            items:
+              $ref: '#/components/schemas/PositionRecord'
+        required:
+        - events
+        - positions
+    PositionRecord:
+      type: object
+      properties:
+        id:
+          type: string
+        "type":
+          $ref: '#/components/schemas/PositionType'
+        agency_id:
+          type: string
+        doge_alias_id:
+          type: string
+        from_agency_id:
+          type: string
+        from_truth:
+          $ref: '#/components/schemas/TruthType'
+        start_date:
+          $ref: '#/components/schemas/EdtfType'
+        start_date_truth:
+          $ref: '#/components/schemas/TruthType'
+        end_date:
+          $ref: '#/components/schemas/EdtfType'
+        end_date_truth:
+          $ref: '#/components/schemas/TruthType'
+        end_type:
+          $ref: '#/components/schemas/ExitType'
+        sort_date:
+          type: string
+        nte_date:
+          type: string
+        nte_date_truth:
+          $ref: '#/components/schemas/TruthType'
+        signed_date:
+          type: string
+        fuzz:
+          type: string
+        appt_type_code:
+          type: string
+        appt_type:
+          type: string
+        pay_grade:
+          type: string
+        salary:
+          type: string
+        pd_code:
+          type: string
+        sge:
+          type: boolean
+        excepted:
+          type: boolean
+        title:
+          type: string
+        title_type:
+          type: string
+        series:
+          type: string
+        supervisory:
+          type: boolean
+        office:
+          type: string
+        source:
+          type: string
+        source_name:
+          type: string
+        reimbursed:
+          type: boolean
+        reimbursement_amount:
+          type: string
+        comment:
+          type: string
+        qualifications:
+          type: string
+        table_note:
+          type: string
+        replaced_by:
+          description: "The ID the position replacing this one"
+          type: string
+        agency:
+          $ref: '#/components/schemas/AgencyRef'
+        from_agency:
+          $ref: '#/components/schemas/AgencyRef'
+        person:
+          $ref: '#/components/schemas/PersonRef'
+      required:
+      - id
+      - type
+      - agency_id
+      - agency
