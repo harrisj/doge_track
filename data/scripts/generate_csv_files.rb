@@ -6,6 +6,41 @@ require_relative 'models'
 
 OUTPUT_DIR = File.join(File.dirname(__FILE__), '..', '..', 'src', 'csv')
 
+def generate_agencies_csv
+  agencies = Agency.eager(:events, :positions).order_by('id').all
+
+  CSV.open(File.join(OUTPUT_DIR, 'agencies.csv'), 'w') do |csv|
+    csv << %w[id name short_name parent_id slug num_events first_event_date last_event_date num_doge first_contact]
+
+    agencies.each do |agency|
+      if agency.events.any?
+        num_events = agency.events.count
+        first_event_date = agency.events.map(&:date).min
+        last_event_date = agency.events.map(&:date).max
+      end
+
+      if agency.positions.any?
+        positions = agency.positions.sort_by { |p| p.sort_date || p.start_date }
+        num_doge = positions.map { |pos| pos.name || pos.doge_alias_id }.uniq.count
+        first_contact = positions.first.start_date
+      end
+
+      csv << [
+        agency.id,
+        agency.name,
+        agency.short_name,
+        agency.parent_id,
+        agency.slug,
+        num_events,
+        first_event_date,
+        last_event_date,
+        num_doge,
+        first_contact
+      ]
+    end
+  end
+end
+
 def generate_people_csv
   people = Person.eager(:positions).order_by('sort_name').all
 
@@ -135,6 +170,7 @@ def generate_events_csv
 end
 
 if __FILE__ == $PROGRAM_NAME
+  generate_agencies_csv
   generate_people_csv
   generate_positions_csv
   generate_events_csv
