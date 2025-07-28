@@ -2795,9 +2795,9 @@
   start_date_truth: verified
   start_source:
   start_source_name:
-  end_date:
-  end_date_truth:
-  end_source:
+  end_date: '2025-07-25'
+  end_date_truth: reported
+  end_source: https://www.dailysignal.com/2025/07/25/major-maga-media-figure-to-take-top-position-at-one-of-doges-biggest-targets/
   end_type:
   sort_date: '2025-03-25'
   nte_date:
@@ -2827,7 +2827,7 @@
   qualifications:
   table_note: >-
     After the rest of board was ousted, Nate was named President of the agency by Marco Rubio and Pete Hegseth. Voided by court order on 2025-05-19 but
-    restored by appeals court on 2025-06-27
+    restored by appeals court on 2025-06-27. Replaced by Darren Beattie on 7/25
   replaced_by:
   same_as:
   agency:
@@ -8838,8 +8838,8 @@
   agency_id: DOD
   name: Justin Fulcher
   doge_alias_id:
-  from_agency_id: DOD
-  from_truth:
+  from_agency_id: VA
+  from_truth: guessed
   start_date: '2025-03-04'
   start_date_truth: reported
   start_source:
@@ -8890,19 +8890,16 @@
     obj_type: Agency
     path: "/agencies/defense"
   from_agency:
-    id: DOD
-    name: Department of Defense
-    slug: defense
-    page_slug: defense
-    short_name: Defense
+    id: VA
+    name: Veterans Administration
+    slug: va
+    page_slug: veterans
+    short_name: VA
     doge_base: true
-    blurb: >-
-      Due to the typical secrecy within the military, it's not always clear what DOGE has been doing within the Pentagon, especially since Secretary of
-      Defense Pete Hegseth claimed he would be hiring his own staff directly instead of accepting detailees. But DOGE has been increasingly involved in
-      cancelling contracts, especially for weapons systems that Elon Musk doesn't find cool.
+    blurb:
     parent_id:
     obj_type: Agency
-    path: "/agencies/defense"
+    path: "/agencies/veterans"
   agency_and_parent:
   - DOD
   documents: []

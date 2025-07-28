@@ -160,7 +160,7 @@
   - **Jim Hickey** (2025-02-(18)?) Senior Advisor
   - **Mike Slagh** (2025-02-(18)?)
   - **Yinon Weiss** (2025-02-(18)? - 2025-07-XX)
-  - **Justin Fulcher** (2025-03-04 - 2025-04-24) (detailed from DOD)
+  - **Justin Fulcher** (2025-03-04 - 2025-04-24) (detailed from VA)
   - **Justin Fulcher** (2025-04-25) Senior Advisor
   - **Owen West** (2025-07-XX)
 
@@ -914,7 +914,7 @@
 - people:
   - **Nate Cavanaugh** (2025-03-04 - 2025-03-24) (detailed from GSA)
   - **Kenneth Jackson** (2025-03-17) Acting President
-  - **Nate Cavanaugh** (2025-03-25) President
+  - **Nate Cavanaugh** (2025-03-25 - 2025-07-25) President
 
 # US International Development Finance Corporation
 - slug: usdfc
