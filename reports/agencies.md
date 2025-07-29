@@ -168,8 +168,8 @@
 - slug: interior
 - people:
   - **Tyler Hassen** (2025-01-(27)~ - 2025-03-07)
-  - **Stephanie Holmes** (2025-02-24) Special Advisor / Acting Chief Human Capital Officer (detailed from DOGE)
-  - **Katrine Trampe** (2025-03-05)
+  - **Stephanie Holmes** (2025-02-24 - 2025-08-XX) Special Advisor / Acting Chief Human Capital Officer (detailed from DOGE)
+  - **Katrine Trampe** (2025-03-05 - 2025-08-XX)
   - **Tyler Hassen** (2025-03-07 - 2025-04-XX) Acting Assistant Secretary of Policy, Management and Budget
   - **Matt Luby** (2025-04-17)
   - **Tyler Hassen** (2025-04-XX - 2025-08-01) Principal Deputy Assistant Secretary
@@ -436,7 +436,7 @@
   - **Josh Gruenbaum** (2025-01-24) Federal Acquisition Service Commissioner
   - **Thomas Shedd** (2025-01-24) Deputy FAS Commissioner / Administrator
   - **Kyle Schutt** (2025-02-(18)~)
-  - **Frank Schuler** (2025-02-(18)~) Senior Advisor
+  - **Frank Schuler** (2025-02-(18)~ - 2025-07-29) Senior Advisor
   - **Nate Cavanaugh** (2025-02-03)
   - **Riley Sennott** (2025-02-12)
   - **Ashley Boizelle** (2025-02-XX)

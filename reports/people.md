@@ -519,7 +519,7 @@
 - category: wrecker
 - positions:
     -  **DOGE** (2025-02-(01)~ to ??) 
-    -  **DOI** (2025-02-24 to ??) Special Advisor / Acting Chief Human Capital Officer
+    -  **DOI** (2025-02-24 to 2025-08-XX) Special Advisor / Acting Chief Human Capital Officer
         - FPPS: Federal Personnel Payroll System **[admin access]**: 2025-03-29 - ongoing
 
 # Kenneth Jackson
@@ -932,7 +932,7 @@
 # Frank Schuler
 - category: unknown
 - positions:
-    -  **GSA** (2025-02-(18)~ to ??) Senior Advisor
+    -  **GSA** (2025-02-(18)~ to 2025-07-29) Senior Advisor
 
 # Kyle Schutt
 - category: wrecker
@@ -1084,7 +1084,7 @@
 # Katrine Trampe
 - category: wrecker
 - positions:
-    -  **DOI** (2025-03-05 to ??) 
+    -  **DOI** (2025-03-05 to 2025-08-XX) 
         - FPPS: Federal Personnel Payroll System **[admin access]**: 2025-03-29 - ongoing
 
 # Cary Volpert
