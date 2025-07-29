@@ -274,7 +274,7 @@
   - **Miles Collins** (2025-02-18 - NTE 2025-06-17) Policy Advisor
   - **Thomas Shedd** (2025-03-14) Chief Information Officer
   - **Keith Sonderling** (2025-03-23) Deputy Secretary of Labor
-  - **Luke Farritor** (2025-06-XX) (detailed from GSA)
+  - **Luke Farritor** (2025-05-(09)~) (detailed from GSA)
 - systems:
     - DRA: Directory Resource Administrator
         - Marko Elez 2025-02-25 - ongoing

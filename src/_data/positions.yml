@@ -7857,6 +7857,82 @@
   agency_and_parent:
   - NSF
   documents: []
+- id: detail-gsa-dol-farritor
+  type: detailed
+  agency_id: DOL
+  name: Luke Farritor
+  doge_alias_id:
+  from_agency_id: GSA
+  from_truth: inferred
+  start_date: 2025-05-(09)~
+  start_date_truth: guessed
+  start_source:
+  start_source_name:
+  end_date:
+  end_date_truth:
+  end_source:
+  end_type:
+  sort_date: 2025-05-(09)~
+  nte_date:
+  nte_date_truth:
+  signed_date:
+  description:
+  fuzz:
+  appt_type_code:
+  appt_type:
+  pay_grade:
+  salary:
+  pd_code:
+  sge:
+  excepted:
+  title:
+  title_type:
+  series:
+  supervisory:
+  office:
+  source: https://www.wired.com/story/next-stage-doge-elon-musk/
+  source_name: Wired
+  reimbursed:
+  reimbursement_amount:
+  comment:
+  qualifications:
+  table_note: Wired Magazine reported in June was detailed to DOL, but calendar reports meeting about DOL grants on 5/09, so guessing detailed around then.
+  replaced_by:
+  same_as:
+  agency:
+    id: DOL
+    name: Department of Labor
+    slug: labor
+    page_slug: labor
+    short_name: DOL
+    doge_base: true
+    blurb: >-
+      Critics expressed early concern that DOGE's involvement with the Department of Labor was motivated by Elon's desire to shut down unionizing and identify
+      whistleblowers at his companies. However, it seems like DOGE's main interests at DOL have been several databases that track information about immigrants
+      within the US. DOL has also been a handy staging base to deploy wreckers Marko Elez and Aram Moghaddassi into the field at other agencies.
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/labor"
+  from_agency:
+    id: GSA
+    name: General Services Administration
+    slug: gsa
+    page_slug: self
+    short_name: GSA
+    doge_base: true
+    blurb: >-
+      Once a relatively obscure agency that provided shared services and procurement services for the government, GSA became an integral part of DOGE's
+      early-phase plans for taking over parts of the federal bureaucracy precisely for those reasons. From the very first day of the Trump presidency, DOGE
+      established a sizable team at GSA. Some of these were focused on drastic cost-reduction efforts like cancelling government leases or unilaterally
+      dropping the purchasing limit of government purchase cards to curtail micro-purchases by government staff. GSA was also the base for many of DOGE's
+      wrecking crews that were detailed to other agencies, with agency leadership quickly creating a walled-off enclave protected by security guards exclusively
+      for the use of DOGE staff with "A-level access."
+    parent_id:
+    obj_type: Agency
+    path: "/agencies/gsa"
+  agency_and_parent:
+  - DOL
+  documents: []
 - id: gsa-farritor-fulltime
   type: converted
   agency_id: GSA
@@ -7918,82 +7994,6 @@
     path: "/agencies/gsa"
   agency_and_parent:
   - GSA
-  documents: []
-- id: detail-gsa-dol-farritor
-  type: detailed
-  agency_id: DOL
-  name: Luke Farritor
-  doge_alias_id:
-  from_agency_id: GSA
-  from_truth: inferred
-  start_date: 2025-06-XX
-  start_date_truth: guessed
-  start_source:
-  start_source_name:
-  end_date:
-  end_date_truth:
-  end_source:
-  end_type:
-  sort_date: 2025-06-XX
-  nte_date:
-  nte_date_truth:
-  signed_date:
-  description:
-  fuzz:
-  appt_type_code:
-  appt_type:
-  pay_grade:
-  salary:
-  pd_code:
-  sge:
-  excepted:
-  title:
-  title_type:
-  series:
-  supervisory:
-  office:
-  source: https://www.wired.com/story/next-stage-doge-elon-musk/
-  source_name: Wired
-  reimbursed:
-  reimbursement_amount:
-  comment:
-  qualifications:
-  table_note: Only info I have is Wired confirmed he was detailed to Labor
-  replaced_by:
-  same_as:
-  agency:
-    id: DOL
-    name: Department of Labor
-    slug: labor
-    page_slug: labor
-    short_name: DOL
-    doge_base: true
-    blurb: >-
-      Critics expressed early concern that DOGE's involvement with the Department of Labor was motivated by Elon's desire to shut down unionizing and identify
-      whistleblowers at his companies. However, it seems like DOGE's main interests at DOL have been several databases that track information about immigrants
-      within the US. DOL has also been a handy staging base to deploy wreckers Marko Elez and Aram Moghaddassi into the field at other agencies.
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/labor"
-  from_agency:
-    id: GSA
-    name: General Services Administration
-    slug: gsa
-    page_slug: self
-    short_name: GSA
-    doge_base: true
-    blurb: >-
-      Once a relatively obscure agency that provided shared services and procurement services for the government, GSA became an integral part of DOGE's
-      early-phase plans for taking over parts of the federal bureaucracy precisely for those reasons. From the very first day of the Trump presidency, DOGE
-      established a sizable team at GSA. Some of these were focused on drastic cost-reduction efforts like cancelling government leases or unilaterally
-      dropping the purchasing limit of government purchase cards to curtail micro-purchases by government staff. GSA was also the base for many of DOGE's
-      wrecking crews that were detailed to other agencies, with agency leadership quickly creating a walled-off enclave protected by security guards exclusively
-      for the use of DOGE staff with "A-level access."
-    parent_id:
-    obj_type: Agency
-    path: "/agencies/gsa"
-  agency_and_parent:
-  - DOL
   documents: []
 - id: detail-sba-fennessy
   type: detailed

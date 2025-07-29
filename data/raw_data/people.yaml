@@ -1979,6 +1979,18 @@
     source: https://fedscoop.com/national-science-foundation-nsf-doge-grants-data-systems/
     source_name: FedScoop
     agency: NSF
+  - id: detail-gsa-dol-farritor
+    type: detailed
+    agency: DOL
+    from: GSA
+    from_truth: inferred
+    start_date: 2025-05-(09)~
+    start_date_truth: guessed
+    table_note: >-
+      Wired Magazine reported in June was detailed to DOL, but calendar reports meeting about DOL grants
+      on 5/09, so guessing detailed around then.
+    source: https://www.wired.com/story/next-stage-doge-elon-musk/
+    source_name: Wired
   - id: gsa-farritor-fulltime
     agency: GSA
     type: converted
@@ -1989,16 +2001,6 @@
     start_date: 2025-05-31
     start_date_truth: reported
     source: https://www.wired.com/story/big-balls-young-doge-converted-into-full-time-government-employees/
-    source_name: Wired
-  - id: detail-gsa-dol-farritor
-    type: detailed
-    agency: DOL
-    from: GSA
-    from_truth: inferred
-    start_date: 2025-06-XX
-    start_date_truth: guessed
-    table_note: Only info I have is Wired confirmed he was detailed to Labor
-    source: https://www.wired.com/story/next-stage-doge-elon-musk/
     source_name: Wired
 
 - name: Conor Fennessy
