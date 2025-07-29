@@ -3409,7 +3409,7 @@
   time:
   text: >-
     The WSJ reports that DOGE staff arrive at CMS HQ and are reportedly granted access to the CALM system, but sources at CMS deny they have access to HIGLAS.
-  fuzz: DOGE staff first granted access to CALM on 2/3; Luke Farritor has HIGLAS access on 1/31, other staff on 2/5
+  fuzz: DOGE staff first granted access to CALM on 2/3; Luke Farritor has HIGLAS access on 1/31, other staff on 3/5
   comment:
   source: https://www.wsj.com/politics/elon-musk-doge-medicare-medicaid-fraud-e697b162
   source_title:
@@ -3430,53 +3430,6 @@
     The WSJ reports that <a class="link-hover" href="/agencies/white-house">DOGE</a> staff arrive at <a class="link-hover" href="/agencies/health">CMS</a>
     HQ and are reportedly granted access to the CALM system, but sources at <a class="link-hover" href="/agencies/health">CMS</a> deny they have access
     to HIGLAS.
-- id: 3MdiqW9w
-  type: access
-  date: '2025-02-05'
-  sort_date: '2025-02-05'
-  time:
-  text: >-
-    Despite claims by a CMS spokesperson to the contrary, multiple DOGE staff (Edward Coristine, Marko Elez and Aram Moghaddassi) are granted access to
-    the Healthcare Integrated General Ledger Accounting System (HIGLAS) after arriving at CMS headquarters. This system tracks all payments made by Medicare,
-    among other expenditures.
-  fuzz:
-  comment:
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
-  source_name: court doc
-  case_no: 1:25-cv-00339
-  system_id: HIGLAS
-  theme: spending
-  names:
-  - Edward Coristine
-  - Marko Elez
-  - Aram Moghaddassi
-  agency_ids:
-  - CMS
-  alias_ids: []
-  names_aliases:
-  - name: Edward Coristine
-    slug: edward-coristine
-    sort_name: Coristine
-    category: wrecker
-  - name: Marko Elez
-    slug: marko-elez
-    sort_name: Elez
-    category: wrecker
-  - name: Aram Moghaddassi
-    slug: aram-mohghaddassi
-    sort_name: Moghaddassi
-    category: wrecker
-  agencies_parents:
-  - CMS
-  - HHS
-  obj_type: Event
-  linkified_text: >
-    Despite claims by a <a class="link-hover" href="/agencies/health">CMS</a> spokesperson to the contrary, multiple <a class="link-hover" href="/agencies/white-house">DOGE</a>
-    staff (<a class="link-hover" href="/wreckers/edward-coristine">Edward Coristine</a>, <a class="link-hover" href="/wreckers/marko-elez/">Marko Elez</a>
-    and <a class="link-hover" href="/wreckers/aram-moghaddassi">Aram Moghaddassi</a>) are granted access to the Healthcare Integrated General Ledger Accounting
-    System (HIGLAS) after arriving at <a class="link-hover" href="/agencies/health">CMS</a> headquarters. This system tracks all payments made by Medicare,
-    among other expenditures.
 - id: HRb5mWmM
   type: official
   date: '2025-02-05'
@@ -10557,6 +10510,51 @@
     <a class="link-hover" href="/agencies/independent#eo1">USADF</a> CFO Mathieu Zahui receives an email from <a class="link-hover" href="/wreckers/nate-cavanaugh">Nate
     Cavanaugh</a> informing him that <a class="link-hover" href="/people/enabler-staff#peter-marocco">Peter Marocco</a> would be coming to the office the
     following day in his declared capacity as Chairman of the Board.
+- id: 3MdiqW9w
+  type: access
+  date: '2025-03-05'
+  sort_date: '2025-03-05'
+  time:
+  text: >-
+    Multiple DOGE staff (Edward Coristine, Marko Elez and Aram Moghaddassi) are granted access to the Healthcare Integrated General Ledger Accounting System
+    (HIGLAS). This system tracks all payments made by Medicare, among other expenditures.
+  fuzz:
+  comment:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  source_title: AFL-CIO v. Dep't of Labor (D.D.C.)
+  source_name: court doc
+  case_no: 1:25-cv-00339
+  system_id: HIGLAS
+  theme: spending
+  names:
+  - Edward Coristine
+  - Marko Elez
+  - Aram Moghaddassi
+  agency_ids:
+  - CMS
+  alias_ids: []
+  names_aliases:
+  - name: Edward Coristine
+    slug: edward-coristine
+    sort_name: Coristine
+    category: wrecker
+  - name: Marko Elez
+    slug: marko-elez
+    sort_name: Elez
+    category: wrecker
+  - name: Aram Moghaddassi
+    slug: aram-mohghaddassi
+    sort_name: Moghaddassi
+    category: wrecker
+  agencies_parents:
+  - CMS
+  - HHS
+  obj_type: Event
+  linkified_text: >
+    Multiple <a class="link-hover" href="/agencies/white-house">DOGE</a> staff (<a class="link-hover" href="/wreckers/edward-coristine">Edward Coristine</a>,
+    <a class="link-hover" href="/wreckers/marko-elez/">Marko Elez</a> and <a class="link-hover" href="/wreckers/aram-moghaddassi">Aram Moghaddassi</a>)
+    are granted access to the Healthcare Integrated General Ledger Accounting System (HIGLAS). This system tracks all payments made by Medicare, among other
+    expenditures.
 - id: 4C16pcax
   type: access
   date: '2025-03-05'
