@@ -14,7 +14,7 @@
   <div class="sm:ml-7 md:ml-8 lg:ml-9.5 lining-nums">
     {% if doge_alias.evidence %}
     <div>
-    <div class="my-text">{{ doge_alias.evidence | linkify_text | md | strip_p }}</div>
+    <div class="my-text">{{ doge_alias.linkified_evidence | raw }}</div>
     </div>
     {% end %}
 

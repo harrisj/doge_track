@@ -67,6 +67,6 @@ Bridgetown.configure do |config|
   database_uri 'sqlite://data/doge.sqlite'
   except :sequel_tasks do
     init :bridgetown_sequel
-    Bridgetown.db.loggers << Bridgetown.logger
+    # Bridgetown.db.loggers << Bridgetown.logger
   end
 end

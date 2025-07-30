@@ -71,7 +71,7 @@ end %}
       raise "Null passed to person_link"
     else 
       if p_id.is_a?(String)
-        person = site.data.people.find {|p| p.name.downcase == p_id.downcase || p.slug == p_id || p.sort_name.downcase == p_id.downcase }
+        person = Person.where(Sequel.|({name: p_id}, {slug: p_id}, {sort_name: p_id})).first
       elsif p_id.is_a? Person
         person = p_id
       else
@@ -82,6 +82,7 @@ end %}
         display ||= person.name
         "<a class=\"link-hover\" href=\"#{person_url(person)}\">#{display}</a>".html_safe
       else
+        raise(p_id.inspect)
         display || p_id
       end
     end
@@ -109,11 +110,11 @@ end %}
 
 {% macro "find_agency" do |a_id|
     if a_id.is_a?(String)
-      site.data.agencies.find {|a| a.id == a_id || a.slug == a_id }
+      Agency.filter(Sequel.|({id: a_id}, {slug: a_id})).first
     elsif a_id.is_a? Agency
       a_id
     elsif a_id.agency_id
-      site.data.agencies.find {|a| a.id == a_id.agency_id || a.slug == a_id.agency_id }
+      Agency.where(id: a_id.agency_id).first
     else
       a_id
     end
@@ -470,11 +471,11 @@ end %}
    else
      out = text.dup
 
-      site.data.people.each do |person|
+      Person.each do |person|
         out.gsub!(/\b#{person.name}\b/, person_link(person))
       end
 
-      site.data.agencies.each do |agency|
+      Agency.each do |agency|
         out.gsub!(/\b#{agency.id}\b/, agency_link(agency)) if agency.id =~ /^[A-Z]+$/
         out.gsub!(/\b#{agency.name}\b/, agency_link(agency, agency.name))
       end

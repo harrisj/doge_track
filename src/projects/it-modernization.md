@@ -19,7 +19,7 @@ For an organization whose stated purpose is "IT modernization" and which claims 
 
 By this count, the only original work has been two websites, an email server, a few demos, a few "fixes," and one more ominous project. _Is that all there is?_ This might seem perplexing, especially since Musk has bragged repeatedly that DOGE's superpower is that its members are [working 120 hours a week](https://www.entrepreneur.com/business-news/elon-musk-says-doge-staff-are-working-120-hours-a-week/486519) and DOGE staff have clearly not been constrained by the same pesky privacy and cybersecurity rules that constrain other software development projects. Besides the obvious answer that working insane hours has been shown to reduce the quality of teamwork, I think this mystery is answered by looking at the skills of people in DOGE (_skill assignments are my own assessments_).
 
-{% skill_counts = site.data.people.map(&:skill).compact.tally %}
+{% skill_counts = Person.all.map(&:skill).compact.tally %}
 <div class="sm:w-1/4 sm:float-right mx-2">
 <table class="table table-xs table-zebra mt-0 mb-4">
   <tbody>

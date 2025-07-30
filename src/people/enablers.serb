@@ -13,7 +13,7 @@ DOGE are not a collection of super-hackers. They don't trick their way into agen
 
 At major agencies, the DOGE staff are given titles like "Senior Advisor" and situated within the Office of the Director. In the case of {{ agency_link('OPM') }} and {{ agency_link('GSA') }}, DOGE staff have taken this literally and built walled-off and guarded enclaves accessible only to DOGE employees, but even as just an org-chart designation, it provides powerful protection to DOGE staff as they work in the agency. By being in the Director's Office, they are often granted enhanced privileges but with reduced oversight. The following table illustrates how common this practice is. The DOGE Leader column presents DOGE staffers who have been named to leadership positions like agency head or CIO. The second column is a list of DOGE staff at various agencies with the documented title of "Senior Advisor" (or similar) or who report into either the agency director or the CIO (who often has delegated authority over the systems that DOGE wants access to).
 {% end %}
-{% agencies = site.data.agencies.select {|a| a.parent_id.blank?} %}
+{% agencies = Agency.where(parent_id: nil).all %}
 
 <table class="my-table-style">
 <thead>
@@ -49,7 +49,7 @@ This table only includes people who whom we have definite information about thei
 ## Acting Leadership
 
 {% end %}
-{% acting = Position.where(StringExpression.like(:title, 'acting%', case_insensitive: true)).order_by(:sort_date) %}
+{% acting = Position.where(Sequel.like(:title, 'acting%', case_insensitive: true)).order_by(:sort_date) %}
 
 <table class="my-table-style table-zebra my-2">
 <thead>
@@ -101,7 +101,7 @@ In February, OPM urged [agencies to reclassify how Chief Information Officers ar
 </thead>
 <tbody>
 {% cios.each do |pos| %}
-  {% access_granted = site.data.system_roles.select { |sr| sr.ao_name == pos.name && (sr.agency.id == pos.agency_id || sr.agency.parent_id == pos.agency_id) } %}
+  {% access_granted = SystemRole.eager_graph(:agency, :govt_system).where(ao_name: pos.name).where({Sequel[:agency][:id] => pos.agency_id}).all %}
   <tr>
     <td class="align-top">{{ person_link(pos.name) }}</td>
     <td class="align-top">{{ agency_link(pos.agency_id)}}</td>
@@ -112,6 +112,7 @@ In February, OPM urged [agencies to reclassify how Chief Information Officers ar
 {% end %}
 </tbody>
 </table>
+
 {%@ 'text' do %}
 Developing software for the federal government is different in many ways from the startup world. For instance, Privacy Act regulations have explicitly prohibited connecting systems together precisely because the American public doesn't want [a government panopticon system that gives insiders a "God" view of the public](https://www.wired.com/story/doge-collecting-immigrant-data-surveil-track/). While an agency's Privacy Office and Chief Counsel will often determine what information sharing is legally allowed, the agency's Chief Information Officer (CIO) usually oversees the technical mechanisms which ensure that compliance. Furthermore, the CIO is primarily responsible for tracking IT budgets and contracts, which makes them a tempting target to support DOGE's mission of centralizing and controlling all spending and procurement at federal agencies. CIOs are often able to order elevated access for DOGE staff with minimal oversight, making them crucial to the work that wrecker teams do. Finally, CIOs have the ability to issue Risk Acceptance Memos (RAMs) whereby they will personally accept the risk for nonstandard technologies and bypassing normal compliance processes. These "get out of jail free" cards have been used successfully in the past to right IT projects that have gone off course, but they also are easily prone to abuse in the wrong hands.
 

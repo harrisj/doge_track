@@ -145,7 +145,7 @@ namespace :generate do
   end
 
   desc 'Run all generate tasks'
-  task all: %i[data_yaml csv]
+  task all: %i[csv]
 end
 
 desc 'Run generate tasks for the content'

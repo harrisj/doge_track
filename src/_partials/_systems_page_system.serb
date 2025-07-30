@@ -66,14 +66,6 @@
   </tr>
   {% end %}
 
-
-  {% if govt_system.serves %}
-  <tr>
-  <th class="align-top">Type</th>
-  <td class="align-top">{{ govt_system.uses | agency_links }}</td>
-  </tr>
-  {% end %}
-
   <tr>
   <th class="align-top">Access</th>
   <td>

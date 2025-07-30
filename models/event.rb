@@ -10,4 +10,13 @@ class Event < Sequel::Model
   many_to_many :doge_aliases
   many_to_many :people, right_key: :name, order: :sort_name
   many_to_one :case, key: :case_no
+
+  one_to_many :questions
+
+  # FIXME: LATER
+  def names_aliases
+    []
+    # out += people
+    # out += doge_aliases
+  end
 end

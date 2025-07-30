@@ -27,4 +27,24 @@ class Person < Sequel::Model
       "/all/people##{slug}"
     end
   end
+
+  def start_date
+    return unless positions.any?
+
+    positions.first.start_date
+  end
+
+  def sort_date
+    if positions.any?
+      positions.first.sort_date
+    else
+      '2025-01-20'
+    end
+  end
+
+  def start_agency
+    return unless positions.any?
+
+    positions.first.agency_id
+  end
 end

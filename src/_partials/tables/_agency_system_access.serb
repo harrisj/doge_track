@@ -1,5 +1,5 @@
 {% import "macros" %}
-{% govt_systems = roles.group_by {|r| r.system} %}
+{% govt_systems = roles.group_by {|r| r.govt_system} %}
 
 <table class="my-table-style">
   <thead>

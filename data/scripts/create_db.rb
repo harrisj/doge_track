@@ -22,6 +22,7 @@ DB.create_table! :doge_aliases do
   string :agency_id
   string :name
   text :evidence
+  text :linkified_evidence
 end
 
 DB.create_table! :positions do

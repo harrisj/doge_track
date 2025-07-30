@@ -5,7 +5,7 @@ title: Attacking the Civil Service
 {% import 'macros' %}
 # Attacking the Civil Service
 
-Probably DOGE's biggest success so far has been their efforts to inflict "trauma" (as {{ person_link("Russell Vough") }} expressed this goal) on the federal workforce. From the first day, DOGE has staffed a large contingent at the {{ agency_link("OPM", "Office of Personnel Management") }}, with many of them coming from legal or human resources backgrounds with Musk's various companies. The work against federal employees has included by specific legal and policy actions as well as data mining to identify groups that can be more easily fired.
+Probably DOGE's biggest success so far has been their efforts to inflict "trauma" (as {{ person_link("Russell Vought") }} expressed this goal) on the federal workforce. From the first day, DOGE has staffed a large contingent at the {{ agency_link("OPM", "Office of Personnel Management") }}, with many of them coming from legal or human resources backgrounds with Musk's various companies. The work against federal employees has included by specific legal and policy actions as well as data mining to identify groups that can be more easily fired.
 
 This work has involved the following distinct strands:
 - **Firing Probationary Workers**: In the Federal government, employees who have been in a particular role for less than a year are called "probationary" and have fewer protections against dismissal. As {{ person_link("Noah Peters") }} has testified, DOGE identified early that this rule could be hacked as a way to quickly fire a large number of civil service employees. To this end, the OPM requested in the first week that DOGE should send lists of probationary employees for analysis and then pushed to have them all fired. Judges have not been as impressed by this trick, and several have ruled that OPM overstepped its bounds and had no legal basis to order these reductions.
@@ -16,5 +16,5 @@ This work has involved the following distinct strands:
 Despite many of these setbacks and haphazard roll-outs, attacking the bureaucracy has been one of DOGE's most successful projects. It has directly reduced and traumatized the workforce and indirectly has damaged how government works, with ripple effects from understaffing becoming visible months after the damage has been done. I have been using the "disruption" tag (tagged with a <i class="fa-sharp fa-solid fa-explosion"></i> icon) to record reports of DOGE's damage at agencies; the majority of these are direct results of understaffing and randomized firings.
 
 This work has probably involved access to the following systems:
-{% systems = site.data.systems.select {|s| s.theme == 'personnel'} || [] %}
+{% systems = GovtSystem.where(theme: 'personnel').all %}
 {%@ 'tables/project_systems', systems: systems %}

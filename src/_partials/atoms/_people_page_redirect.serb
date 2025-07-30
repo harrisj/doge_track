@@ -1,7 +1,7 @@
 {% import 'macros' %}
 
 {% macro 'title_for_person' do |person|
-   page = site.data.page_listing.sections.map {|s| s.pages }.flatten.find {|s| s.url.gsub(/\/?#.+$/, '') == person.path.gsub(/\/?#.+$/, '') }
+   page = site.data.page_listing.sections.map {|s| s.pages }.flatten.find {|s| s.url.gsub(/\/?#.+$/, '') == person.page_url.gsub(/\/?#.+$/, '') }
    if page
     page.title
    else

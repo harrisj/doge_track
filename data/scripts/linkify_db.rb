@@ -64,3 +64,8 @@ Person.each do |p|
   p.linkified_blurb = linkify_text(p.blurb)
   p.save_changes
 end
+
+DogeAlias.each do |a|
+  a.linkified_evidence = linkify_text(a.evidence)
+  a.save_changes
+end

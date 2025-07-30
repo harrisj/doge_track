@@ -7,7 +7,7 @@ month_separator = true if month_separator.nil?
 show_directories = true if show_directories.nil?
 %}
  
- {% if events.any? %}
+ {% if events && events.any? %}
  {% prior_row_date = Date.edtf!(events[0].date)-1 %}
 
 <table class="my-table-style mb-0 mt-0">
@@ -51,7 +51,7 @@ show_directories = true if show_directories.nil?
                 {% end %}
               {% end %}
         {% end %}
-        {% if show_directories && event.type == 'directory' %}
+        {% if false && show_directories && event.type == 'directory' %}
             {% event.names_aliases.group_by(&:category).sort_by {|c, p| p.size}.reverse.each do |category, people| %}
               {% if category == 'alias' %}
                 <div><i class="fa-sharp fa-solid fa-user-secret"></i> {{ people.map(&:alias) | alias_links }}</div>

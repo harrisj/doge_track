@@ -40,7 +40,7 @@
     </div>
     {% end %}
 
-  {% open_questions = site.data.questions.select {|q| q.name == person.name && q.answer.blank?} %}
+  {% open_questions = Question.where(name: person.name, answer: nil).all %}
   {% if open_questions.any? %}
   <div class="mt-3">
     <h3 class="mb-0 mt-0 h3">Open Questions</h3>
