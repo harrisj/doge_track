@@ -6,6 +6,7 @@
   short_name: ACHP
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#arts"
   children: []
@@ -22,6 +23,7 @@
   short_name: AmeriCorps
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#service"
   children: []
@@ -40,6 +42,7 @@
   short_name: ATF
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id: DOJ
   path: "/agencies/justice"
   children: []
@@ -55,6 +58,7 @@
   short_name: CDC
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id: HHS
   path: "/agencies/health"
   children: []
@@ -89,6 +93,7 @@
   short_name: CMS
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id: HHS
   path: "/agencies/health"
   children: []
@@ -151,6 +156,7 @@
   short_name: CIA
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path:
   children: []
@@ -172,6 +178,13 @@
     - **The Census Department** conducts the national census every 10 years (important for redistricting) as well as other important surveys of the American public.
     - **National Institute of Standards and Technologies (NIST)** sets standards for technical products in industry (and references for units of measure). It also defines the cybersecurity requirements for software used in the federal government.
     - **National Oceanic and Atmospheric Administration (NOAA)** is most prominently known for its role in weather forecasting and climate modeling. It also charts the oceans and manages fisheries around the US.
+  linkified_blurb: |
+    <a class="link-hover" href="/agencies/white-house">DOGE</a> made an early foray into the agency with a visit to the headquarters of the <a class="link-hover" href="/agencies/commerce">National Oceanic and Atmospheric Administration</a> (NOAA), but their presence at Commerce has seemed relatively muted in comparison to other agencies. However, <a class="link-hover" href="/agencies/white-house">DOGE</a> has had a staunch ally in Commerce Secretary Howard Lutnick and reseachers are getting increasingly alarmed about <a class="link-hover" href="/agencies/white-house">DOGE</a> interfering with the operations of the Census.
+
+    The <a class="link-hover" href="/agencies/commerce">Commerce Department</a> contains the following important subagencies that have been affected by DOGE:
+    - <strong>The Census Department</strong> conducts the national census every 10 years (important for redistricting) as well as other important surveys of the American public.
+    - <strong>National Institute of Standards and Technologies (NIST)</strong> sets standards for technical products in industry (and references for units of measure). It also defines the cybersecurity requirements for software used in the federal government.
+    - <strong><a class="link-hover" href="/agencies/commerce">National Oceanic and Atmospheric Administration</a> (NOAA)</strong> is most prominently known for its role in weather forecasting and climate modeling. It also charts the oceans and manages fisheries around the US.
   parent_id:
   path: "/agencies/commerce"
   children:
@@ -213,6 +226,7 @@
   short_name: CDFI Fund
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#eo2"
   children: []
@@ -234,6 +248,16 @@
     demolished USAID taking part in this effort. Their attempt at forcing mass layoffs on February 14 was stopped at only the last minute by a judge's temporary
     restraining order, and DOGE assisted with another reduction-in-force (RIF) for 80% of the agency on April 17th, only for it to be overturned by the
     same judge. Today, the CFPB is still alive, but in a precarious limbo that might make months or year to resolve.
+  linkified_blurb: >
+    After several weeks of quiet, the <a class="link-hover" href="/agencies/white-house">DOGE</a> wrecking crew descended on the <a class="link-hover" href="/agencies/cfpb">CFPB</a>
+    on a Thursday in early February. By Friday, they had been granted admin access to multiple systems with the support of acting director <a class="link-hover"
+    href="/people/leaders#russell-vought">Russell Vought</a> and had deleted the homepage for the website. By Monday, the entire workforce of the agency
+    had been place on administrative leave and blocked from accessing the building. Despite some still-lingering concerns about Musk gaining access to proprietary
+    financial data for his competitors, DOGE’s main focus at the agency was making an example of it, with many of the crew who had demolished <a class="link-hover"
+    href="/agencies/usaid">USAID</a> taking part in this effort. Their attempt at forcing mass layoffs on February 14 was stopped at only the last minute
+    by a judge’s temporary restraining order, and <a class="link-hover" href="/agencies/white-house">DOGE</a> assisted with another reduction-in-force (RIF)
+    for 80% of the agency on April 17th, only for it to be overturned by the same judge. Today, the <a class="link-hover" href="/agencies/cfpb">CFPB</a>
+    is still alive, but in a precarious limbo that might make months or year to resolve.
   parent_id:
   path: "/agencies/cfpb"
   children: []
@@ -331,6 +355,7 @@
   short_name: Census
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id: Commerce
   path: "/agencies/commerce"
   children: []
@@ -348,6 +373,7 @@
   short_name: CPSC
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#regs"
   children: []
@@ -366,6 +392,7 @@
   short_name: CPB
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#arts"
   children: []
@@ -385,6 +412,7 @@
   short_name: CBP
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id: DHS
   path: "/agencies/homeland-security"
   children: []
@@ -402,6 +430,7 @@
   short_name: CISA
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id: DHS
   path: "/agencies/homeland-security"
   children: []
@@ -427,6 +456,11 @@
     According to Secretary Brooke Collins speaking on February 14th, DOGE has been working within the agency since the beginning of February. It's clear
     why DOGE would be active within USDA - the agency not only distributes a large number of grants and is a significant regulatory entity. But there has
     been limited visibility into what DOGE has actually been doing there.
+  linkified_blurb: >
+    According to Secretary Brooke Collins speaking on February 14th, <a class="link-hover" href="/agencies/white-house">DOGE</a> has been working within
+    the agency since the beginning of February. It’s clear why <a class="link-hover" href="/agencies/white-house">DOGE</a> would be active within <a class="link-hover"
+    href="/agencies/agriculture">USDA</a> - the agency not only distributes a large number of grants and is a significant regulatory entity. But there has
+    been limited visibility into what <a class="link-hover" href="/agencies/white-house">DOGE</a> has actually been doing there.
   parent_id:
   path: "/agencies/agriculture"
   children: []
@@ -477,6 +511,11 @@
     Due to the typical secrecy within the military, it's not always clear what DOGE has been doing within the Pentagon, especially since Secretary of Defense
     Pete Hegseth claimed he would be hiring his own staff directly instead of accepting detailees. But DOGE has been increasingly involved in cancelling
     contracts, especially for weapons systems that Elon Musk doesn't find cool.
+  linkified_blurb: >
+    Due to the typical secrecy within the military, it’s not always clear what <a class="link-hover" href="/agencies/white-house">DOGE</a> has been doing
+    within the Pentagon, especially since Secretary of Defense Pete Hegseth claimed he would be hiring his own staff directly instead of accepting detailees.
+    But <a class="link-hover" href="/agencies/white-house">DOGE</a> has been increasingly involved in cancelling contracts, especially for weapons systems
+    that <a class="link-hover" href="/people/leaders#elon-musk">Elon Musk</a> doesn’t find cool.
   parent_id:
   path: "/agencies/defense"
   children:
@@ -529,6 +568,11 @@
     The Department of Interior might not seem like an important target for DOGE - the tech titans aren't as interested in extracting oil and gas or lumber
     - but the head of the DOGE team at the agency comes from an oil industry background. More recently, DOGE has been focused on getting super-user access
     for a payroll system provided as a shared service for half of the agencies in the federal government.
+  linkified_blurb: >
+    The Department of Interior might not seem like an important target for <a class="link-hover" href="/agencies/white-house">DOGE</a> - the tech titans
+    aren’t as interested in extracting oil and gas or lumber - but the head of the <a class="link-hover" href="/agencies/white-house">DOGE</a> team at the
+    agency comes from an oil industry background. More recently, <a class="link-hover" href="/agencies/white-house">DOGE</a> has been focused on getting
+    super-user access for a payroll system provided as a shared service for half of the agencies in the federal government.
   parent_id:
   path: "/agencies/interior"
   children: []
@@ -575,6 +619,7 @@
   short_name: DOGE
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id: EOP
   path: "/agencies/white-house"
   children: []
@@ -700,6 +745,15 @@
     - **Federal Emergency Management (FEMA)**: the agency for coordinating federal responses to natural disasters - **Immigration and Customs Enforcement (ICE)**: the agency that handles immigration arrests. The Trump administration is looking to dramatically expand its size and scope for detentions and deportations.
     - **Transportation Security Administration (TSA)**: this agency handles security at airports. DOGE is reportedly involved with activities in this agency, but there are no details on this.
     - **US Citizenship and Immigration Services (USCIS)**: the agency that supports legal immigration and naturalization to America has been targeted by DOGE for reductions and to create a new $5 million immigration visa.
+  linkified_blurb: |
+    Created in the wake of the September 11 attacks, the <a class="link-hover" href="/agencies/homeland-security">Department of Homeland Security</a> is a massive agency which contains variety of agencies concerned with law enforcement, immigration, disaster response and even cybersecurity.
+
+    <a class="link-hover" href="/agencies/homeland-security">DHS</a> contains the following agencies where <a class="link-hover" href="/agencies/white-house">DOGE</a> has had linked activities:
+    - <strong><a class="link-hover" href="/agencies/homeland-security">Customs and Border Patrol</a> (CPB)</strong>: the agency that secures America’s border (and can act 100 miles within from any of those borders). This is also the agency that collects tariff duties.
+    - <strong>Cybersecurity &amp; Infrastructure Security Agency (CISA)</strong>: a centralized clearinghouse and coordinator for defense of America’s physical and network infrastructure. This is also the agency that must be notified when breaches of government systems occur.
+    - <strong>Federal Emergency Management (FEMA)</strong>: the agency for coordinating federal responses to natural disasters - <strong><a class="link-hover" href="/agencies/homeland-security">Immigration and Customs Enforcement</a> (ICE)</strong>: the agency that handles immigration arrests. The Trump administration is looking to dramatically expand its size and scope for detentions and deportations.
+    - <strong><a class="link-hover" href="/agencies/homeland-security">Transportation Security Administration</a> (TSA)</strong>: this agency handles security at airports. <a class="link-hover" href="/agencies/white-house">DOGE</a> is reportedly involved with activities in this agency, but there are no details on this.
+    - <strong>US Citizenship and Immigration Services (USCIS)</strong>: the agency that supports legal immigration and naturalization to America has been targeted by <a class="link-hover" href="/agencies/white-house">DOGE</a> for reductions and to create a new $5 million immigration visa.
   parent_id:
   path: "/agencies/homeland-security"
   children:
@@ -820,6 +874,12 @@
     leadership that they are the President's lawyers and will take command from him on what to prosecute. The old DOJ would not let DOGE within ten miles
     of its operations. The current DOJ has welcomed them in, with Attorney General Pam Bondi kicking off a DOGE-style initiative to reorganize the DOJ and
     FBI.
+  linkified_blurb: >
+    One of the overarching stories of the Trump admininstration has been the destruction of the <a class="link-hover" href="/agencies/justice">Department
+    of Justice</a>’s independence and the view of new leadership that they are the President’s lawyers and will take command from him on what to prosecute.
+    The old <a class="link-hover" href="/agencies/justice">DOJ</a> would not let <a class="link-hover" href="/agencies/white-house">DOGE</a> within ten
+    miles of its operations. The current <a class="link-hover" href="/agencies/justice">DOJ</a> has welcomed them in, with Attorney General Pam Bondi kicking
+    off a DOGE-style initiative to reorganize the <a class="link-hover" href="/agencies/justice">DOJ</a> and <a class="link-hover" href="/agencies/justice">FBI</a>.
   parent_id:
   path: "/agencies/justice"
   children:
@@ -872,6 +932,14 @@
     the administration's goal of eliminating the agency without needing approval from Congress. DOGE has contributed both its antipersonnel practicea and
     a tight control over spending, axing many key contracts in February for assessing the performance of American schools. These efforts have met some resistance
     in the courts, but DOGE is very much embedded in the Trump administration's war on education.
+  linkified_blurb: >
+    A <a class="link-hover" href="/agencies/white-house">DOGE</a> delegation arrived at the <a class="link-hover" href="/agencies/education">Department
+    of Education</a> only a week after the Inauguration, and in early February there were reports of up to 10 <a class="link-hover" href="/agencies/white-house">DOGE</a>
+    staffers embedded within the agency and feeding data to an AI system for analysis. DOGE’s primary mission at the <a class="link-hover" href="/agencies/education">Department
+    of Education</a> is to support the administration’s goal of eliminating the agency without needing approval from Congress. <a class="link-hover" href="/agencies/white-house">DOGE</a>
+    has contributed both its antipersonnel practicea and a tight control over spending, axing many key contracts in February for assessing the performance
+    of American schools. These efforts have met some resistance in the courts, but <a class="link-hover" href="/agencies/white-house">DOGE</a> is very much
+    embedded in the Trump administration’s war on education.
   parent_id:
   path: "/agencies/education"
   children: []
@@ -924,6 +992,10 @@
     Despite its name, the Department of Energy isn't just a government agency in charge of energy suppy and efficiency. It actually is the agency responsible
     for America's nuclear weapon arsenal. Which is why there has been no amount of consternation that DOGE may have posted two of its engineers into systems
     that contain highly classified information.
+  linkified_blurb: >
+    Despite its name, the <a class="link-hover" href="/agencies/energy">Department of Energy</a> isn’t just a government agency in charge of energy suppy
+    and efficiency. It actually is the agency responsible for America’s nuclear weapon arsenal. Which is why there has been no amount of consternation that
+    <a class="link-hover" href="/agencies/white-house">DOGE</a> may have posted two of its engineers into systems that contain highly classified information.
   parent_id:
   path: "/agencies/energy"
   children: []
@@ -957,6 +1029,12 @@
     Critics expressed early concern that DOGE's involvement with the Department of Labor was motivated by Elon's desire to shut down unionizing and identify
     whistleblowers at his companies. However, it seems like DOGE's main interests at DOL have been several databases that track information about immigrants
     within the US. DOL has also been a handy staging base to deploy wreckers Marko Elez and Aram Moghaddassi into the field at other agencies.
+  linkified_blurb: >
+    Critics expressed early concern that DOGE’s involvement with the <a class="link-hover" href="/agencies/labor">Department of Labor</a> was motivated
+    by Elon’s desire to shut down unionizing and identify whistleblowers at his companies. However, it seems like DOGE’s main interests at <a class="link-hover"
+    href="/agencies/labor">DOL</a> have been several databases that track information about immigrants within the US. <a class="link-hover" href="/agencies/labor">DOL</a>
+    has also been a handy staging base to deploy wreckers <a class="link-hover" href="/wreckers/marko-elez/">Marko Elez</a> and <a class="link-hover" href="/wreckers/aram-moghaddassi">Aram
+    Moghaddassi</a> into the field at other agencies.
   parent_id:
   path: "/agencies/labor"
   children: []
@@ -1024,6 +1102,13 @@
     rogue engineers, so there have been a number of high-profile court cases that attempted to forestall and limit DOGE's access. Unfortunately, DOGE has
     prevailed and has also increased its access to the highly-sensitive taxpayer data at the IRS in order to support DOGE's efforts to build a total surveillance
     system for immigrants. "
+  linkified_blurb: >
+    One of DOGE’s overarching projects has been to <a href="/projects/spending-control/">seize control of federal spending</a>, so it makes sense that <a
+    class="link-hover" href="/agencies/white-house">DOGE</a> would try to infiltrate the Bureau of the Fiscal Service with <a class="link-hover" href="/agencies/treasury">Department
+    of the Treasury</a> from the start. This is highly-sensitive data to entrust to a few rogue engineers, so there have been a number of high-profile court
+    cases that attempted to forestall and limit DOGE’s access. Unfortunately, <a class="link-hover" href="/agencies/white-house">DOGE</a> has prevailed
+    and has also increased its access to the highly-sensitive taxpayer data at the <a class="link-hover" href="/agencies/treasury">IRS</a> in order to support
+    DOGE’s efforts to build a total surveillance system for immigrants.
   parent_id:
   path: "/agencies/treasury"
   children:
@@ -1120,6 +1205,13 @@
     of probationary workers and pushing the Fork in the Road. An already understaffed cohort of air-traffic controllers has been pushed to the breaking
     point, and it's DOGE's fault. Meanwhile, potential interference to redirect a communications contract to Starlink has astounded ethics experts for its
     audacity.
+  linkified_blurb: >
+    <a class="link-hover" href="/agencies/white-house">DOGE</a> became embedded early at the <a class="link-hover" href="/agencies/transportation">DOT</a>,
+    due to criticism of the <a class="link-hover" href="/agencies/transportation">FAA</a> in the wake of a deadly air collision outside of National Airport.
+    While Secretary Sean Duffy had been an early advocate of <a class="link-hover" href="/agencies/white-house">DOGE</a>, recent reports described him as
+    screaming at <a class="link-hover" href="/people/leaders#elon-musk">Elon Musk</a> about the damage caused by DOGE’s rampant firing of probationary workers
+    and pushing the Fork in the Road. An already understaffed cohort of air-traffic controllers has been pushed to the breaking point, and it’s DOGE’s fault.
+    Meanwhile, potential interference to redirect a communications contract to Starlink has astounded ethics experts for its audacity.
   parent_id:
   path: "/agencies/transportation"
   children:
@@ -1160,6 +1252,10 @@
     Long vilified by conservatives as the face of the regulatory state, the Environmental Protection Agency was of course one of DOGE's early targets. DOGE's
     main activities at the agency have been focused on reducing the agency's effectiveness through layoffs and eliminating contracts. I would expect they
     will also turn to eliminating regulations, but their activities at the agency have not been heavily covered.
+  linkified_blurb: >
+    Long vilified by conservatives as the face of the regulatory state, the <a class="link-hover" href="/agencies/epa">Environmental Protection Agency</a>
+    was of course one of DOGE’s early targets. DOGE’s main activities at the agency have been focused on reducing the agency’s effectiveness through layoffs
+    and eliminating contracts. I would expect they will also turn to eliminating regulations, but their activities at the agency have not been heavily covered.
   parent_id:
   path: "/agencies/epa"
   children: []
@@ -1206,6 +1302,11 @@
     DOGE itself is also hard to define, since it can be used interchangably to mean: - The DOGE Temporary Organization/USDS entity within the White House - Staff that have been detailed to other agencies from DOGE specifically - Staff that are detailed from other agencies besides DOGE (see [The Wreckers](/people/wreckers) for what this means) who are taking direction from DOGE leadership - Staff hired at other agencies who are following DOGE's aims.
     DOGE has attempted to use this ambiguity in legal cases (for instance, not reporting the activities Gavin Kliger and Jeremy Lewin on behalf of DOGE at the CFPB, because technically they worked for the GSA), and media can sometimes be very imprecise as well. So, when an article reports a new person at an agency is from DOGE, does that mean they report to the White House or were detailed from there? It can be hard to figure out.
     As a result, this page has a large amount of ambiguity within. Not only does it include people working for DOGE who might not be. It is also a muddled mix of various White House-affiliated staff, including people assigned directly to DOGE and people who work elsewhere in the White House.
+  linkified_blurb: |
+    One of the challenging thing about tracking reporting about <a class="link-hover" href="/agencies/white-house">DOGE</a> is that <a class="link-hover" href="/agencies/white-house">DOGE</a> itself is purposefully vague by design. When it’s time for them to threaten an agency or demand control over their systems, then it’s a firmly defined entity backed by the authority of <a class="link-hover" href="/people/leaders#elon-musk">Elon Musk</a> and also the President. When it’s time to handle pesky reporters or legal discovery demands, it’s just a vague concept located somewhere within the <a class="link-hover" href="/agencies/white-house">Executive Office of the President</a> (EOP).
+    <a class="link-hover" href="/agencies/white-house">DOGE</a> itself is also hard to define, since it can be used interchangably to mean: - The <a class="link-hover" href="/agencies/white-house">DOGE</a> Temporary Organization/USDS entity within the White House - Staff that have been detailed to other agencies from <a class="link-hover" href="/agencies/white-house">DOGE</a> specifically - Staff that are detailed from other agencies besides <a class="link-hover" href="/agencies/white-house">DOGE</a> (see <a href="/people/wreckers">The Wreckers</a> for what this means) who are taking direction from <a class="link-hover" href="/agencies/white-house">DOGE</a> leadership - Staff hired at other agencies who are following DOGE’s aims.
+    <a class="link-hover" href="/agencies/white-house">DOGE</a> has attempted to use this ambiguity in legal cases (for instance, not reporting the activities <a class="link-hover" href="/wreckers/gavin-kliger">Gavin Kliger</a> and <a class="link-hover" href="/wreckers/jeremy-lewin">Jeremy Lewin</a> on behalf of <a class="link-hover" href="/agencies/white-house">DOGE</a> at the <a class="link-hover" href="/agencies/cfpb">CFPB</a>, because technically they worked for the GSA), and media can sometimes be very imprecise as well. So, when an article reports a new person at an agency is from <a class="link-hover" href="/agencies/white-house">DOGE</a>, does that mean they report to the White House or were detailed from there? It can be hard to figure out.
+    As a result, this page has a large amount of ambiguity within. Not only does it include people working for <a class="link-hover" href="/agencies/white-house">DOGE</a> who might not be. It is also a muddled mix of various White House-affiliated staff, including people assigned directly to <a class="link-hover" href="/agencies/white-house">DOGE</a> and people who work elsewhere in the White House.
   parent_id:
   path: "/agencies/white-house"
   children:
@@ -1336,6 +1437,7 @@
   short_name: EXIM
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#regs"
   children: []
@@ -1353,6 +1455,7 @@
   short_name: FAA
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id: DOT
   path: "/agencies/transportation"
   children: []
@@ -1377,6 +1480,7 @@
   short_name: FBI
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id: DOJ
   path: "/agencies/justice"
   children: []
@@ -1395,6 +1499,7 @@
   short_name: FEC
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#regs"
   children: []
@@ -1410,6 +1515,7 @@
   short_name: FEMA
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id: DHS
   path: "/agencies/homeland-security"
   children: []
@@ -1436,6 +1542,7 @@
   short_name: FHFA
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/housing"
   children: []
@@ -1451,6 +1558,7 @@
   short_name: FCC
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#fcc"
   children: []
@@ -1469,6 +1577,7 @@
   short_name: FDIC
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#regs"
   children: []
@@ -1487,6 +1596,7 @@
   short_name: FMCS
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#eo2"
   children: []
@@ -1503,6 +1613,7 @@
   short_name: FTC
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#regs"
   children: []
@@ -1520,6 +1631,7 @@
   short_name: FDA
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id: HHS
   path: "/agencies/health"
   children: []
@@ -1556,6 +1668,14 @@
     limit of government purchase cards to curtail micro-purchases by government staff. GSA was also the base for many of DOGE's wrecking crews that were
     detailed to other agencies, with agency leadership quickly creating a walled-off enclave protected by security guards exclusively for the use of DOGE
     staff with "A-level access."
+  linkified_blurb: >
+    Once a relatively obscure agency that provided shared services and procurement services for the government, <a class="link-hover" href="/agencies/gsa">GSA</a>
+    became an integral part of DOGE’s early-phase plans for taking over parts of the federal bureaucracy precisely for those reasons. From the very first
+    day of the Trump presidency, <a class="link-hover" href="/agencies/white-house">DOGE</a> established a sizable team at <a class="link-hover" href="/agencies/gsa">GSA</a>.
+    Some of these were focused on drastic cost-reduction efforts like cancelling government leases or unilaterally dropping the purchasing limit of government
+    purchase cards to curtail micro-purchases by government staff. <a class="link-hover" href="/agencies/gsa">GSA</a> was also the base for many of DOGE’s
+    wrecking crews that were detailed to other agencies, with agency leadership quickly creating a walled-off enclave protected by security guards exclusively
+    for the use of <a class="link-hover" href="/agencies/white-house">DOGE</a> staff with “A-level access.”
   parent_id:
   path: "/agencies/gsa"
   children: []
@@ -1669,6 +1789,7 @@
   short_name: GAO
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#leg"
   children: []
@@ -1688,6 +1809,10 @@
     It has not always been easy to identify DOGE's activities within Health and Human Services. Early coverage following DOGE's activities at the children of HHS - themselves massive agencies like CDC, CMS and FDA - often missed the forest for the trees. Thankfully, government-supplied declarations in court cases like _AFL-CIO vs. DOL_ have provided details and context. HHS has been a target of every single one of DOGE's various initiatives. Early cost-cutting efforts eliminated staff at the CDC and the FDA, which also was targeted for deregulation. As the parent of Medicare and Medicaid, CMS was a natural target to be scrutinized for excessive costs, but DOGE has yet to make any wildly unsubstantiated claims there. More recently, DOGE has been using some of the HHS databases to mine for data on immigrants, and their access to the medical claims of millions of Americans should be troubling to all.
     Health and Human Services is the parent agency for several other important agencies where DOGE has also had a presence: - **Centers for Disease Control and Prevention (CDC)** do just that for disease response and management. They are headquartered in Atlanta. - **Centers for Medicare and Medicaid Services (CMS)** administers government-provided healthcare plans for millions of Americans. - **Food and Drug Administration (FDA)** is primarily responsible for ensuring the safety of many foods (except meat), medications and medical devices. - **National Institutes of Health (NIH)** are a collection of centers that fund and track research in various medical fields
     Since DOGE staff have been granted wide access to systems across all these agencies, I have collected them all on this page, but I will still try to track internal transfers.
+  linkified_blurb: |
+    It has not always been easy to identify DOGE’s activities within <a class="link-hover" href="/agencies/health">Health and Human Services</a>. Early coverage following DOGE’s activities at the children of <a class="link-hover" href="/agencies/health">HHS</a> - themselves massive agencies like <a class="link-hover" href="/agencies/health">CDC</a>, <a class="link-hover" href="/agencies/health">CMS</a> and <a class="link-hover" href="/agencies/health">FDA</a> - often missed the forest for the trees. Thankfully, government-supplied declarations in court cases like <em>AFL-CIO vs. DOL</em> have provided details and context. <a class="link-hover" href="/agencies/health">HHS</a> has been a target of every single one of DOGE’s various initiatives. Early cost-cutting efforts eliminated staff at the <a class="link-hover" href="/agencies/health">CDC</a> and the <a class="link-hover" href="/agencies/health">FDA</a>, which also was targeted for deregulation. As the parent of Medicare and Medicaid, <a class="link-hover" href="/agencies/health">CMS</a> was a natural target to be scrutinized for excessive costs, but <a class="link-hover" href="/agencies/white-house">DOGE</a> has yet to make any wildly unsubstantiated claims there. More recently, <a class="link-hover" href="/agencies/white-house">DOGE</a> has been using some of the <a class="link-hover" href="/agencies/health">HHS</a> databases to mine for data on immigrants, and their access to the medical claims of millions of Americans should be troubling to all.
+    <a class="link-hover" href="/agencies/health">Health and Human Services</a> is the parent agency for several other important agencies where <a class="link-hover" href="/agencies/white-house">DOGE</a> has also had a presence: - <strong><a class="link-hover" href="/agencies/health">Centers for Disease Control and Prevention</a> (CDC)</strong> do just that for disease response and management. They are headquartered in Atlanta. - <strong><a class="link-hover" href="/agencies/health">Centers for Medicare and Medicaid Services</a> (CMS)</strong> administers government-provided healthcare plans for millions of Americans. - <strong><a class="link-hover" href="/agencies/health">Food and Drug Administration</a> (FDA)</strong> is primarily responsible for ensuring the safety of many foods (except meat), medications and medical devices. - <strong>National Institutes of Health (NIH)</strong> are a collection of centers that fund and track research in various medical fields
+    Since <a class="link-hover" href="/agencies/white-house">DOGE</a> staff have been granted wide access to systems across all these agencies, I have collected them all on this page, but I will still try to track internal transfers.
   parent_id:
   path: "/agencies/health"
   children:
@@ -1885,6 +2010,15 @@
     American, when earlier attempts to retrieve such information at Social Security and the IRS ran into legal opposition. DOGE claims this is needed for
     the administration's anti-immigration efforts, but it's not hard to imagine many other shady scenarios for this data. Around the middle of April, DOGE
     added a third staffer at the agency who is piloting effort to use a Large Language Model (LLM) to identify housing regulations to repeal.
+  linkified_blurb: >
+    DOGE’s involvement at <a class="link-hover" href="/agencies/housing">HUD</a> has ostensibly been focused on fraud and waste rather than IT modernization.
+    At the start, the <a class="link-hover" href="/agencies/white-house">DOGE</a> staff at the agency focused on cancelling contracts, especially if it
+    could find opportunities to eliminate those focused on DEI or other initiatives to restore equity. There have also been efforts to use highly sensitive
+    <a class="link-hover" href="/agencies/housing">HUD</a> databases as a way to get access to extremely private information such as the income and wages
+    of every American, when earlier attempts to retrieve such information at Social Security and the <a class="link-hover" href="/agencies/treasury">IRS</a>
+    ran into legal opposition. <a class="link-hover" href="/agencies/white-house">DOGE</a> claims this is needed for the administration’s anti-immigration
+    efforts, but it’s not hard to imagine many other shady scenarios for this data. Around the middle of April, <a class="link-hover" href="/agencies/white-house">DOGE</a>
+    added a third staffer at the agency who is piloting effort to use a Large Language Model (LLM) to identify housing regulations to repeal.
   parent_id:
   path: "/agencies/housing"
   children: []
@@ -1935,6 +2069,7 @@
   short_name: ICE
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id: DHS
   path: "/agencies/homeland-security"
   children: []
@@ -1961,6 +2096,7 @@
   short_name: IMLS
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#eo2"
   children: []
@@ -1993,6 +2129,7 @@
   short_name: IAF
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#eo1"
   children: []
@@ -2030,6 +2167,9 @@
   blurb: >-
     The Treasury Department is where DOGE first explored its plan to achieve impoundment through controlling the mechanisms that the government uses for
     payments.
+  linkified_blurb: >
+    The Treasury Department is where <a class="link-hover" href="/agencies/white-house">DOGE</a> first explored its plan to achieve impoundment through
+    controlling the mechanisms that the government uses for payments.
   parent_id: Treasury
   path: "/agencies/treasury"
   children: []
@@ -2078,6 +2218,7 @@
   short_name: MSPB
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#mspb"
   children: []
@@ -2094,6 +2235,7 @@
   short_name: MCC
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#other"
   children: []
@@ -2113,6 +2255,7 @@
   short_name: MBDA
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#eo2"
   children: []
@@ -2139,6 +2282,12 @@
     already, observers have naturally been concerned about what sort of industrial espionage or procurement interference that DOGE might get up to. This
     fear was amplified when Musk ally Jared Isaacman was nominated to lead the agency. However, DOGE's activities at the agency have been the same severe
     cost-cutting and personnel reduction they've tried everywhere else. Not even science is safe.
+  linkified_blurb: >
+    We largely know about DOGE’s activities at <a class="link-hover" href="/agencies/nasa">NASA</a> because <a class="link-hover" href="/wreckers/other#riley-sennott">Riley
+    Sennott</a> forgot to make his calendar private. Given the vast involvement of SpaceX at <a class="link-hover" href="/agencies/nasa">NASA</a> already,
+    observers have naturally been concerned about what sort of industrial espionage or procurement interference that <a class="link-hover" href="/agencies/white-house">DOGE</a>
+    might get up to. This fear was amplified when Musk ally Jared Isaacman was nominated to lead the agency. However, DOGE’s activities at the agency have
+    been the same severe cost-cutting and personnel reduction they’ve tried everywhere else. Not even science is safe.
   parent_id:
   path: "/agencies/nasa"
   children: []
@@ -2173,6 +2322,7 @@
   short_name: Archives
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/archives"
   children: []
@@ -2189,6 +2339,7 @@
   short_name: NEA
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#arts"
   children: []
@@ -2204,6 +2355,7 @@
   short_name: NEH
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#arts"
   children: []
@@ -2232,6 +2384,7 @@
   short_name: Nat Gallery
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#arts"
   children: []
@@ -2251,6 +2404,11 @@
     and they quickly proceeded to do the same scuttling of contracts and termination of employees that they have tried at other agencies under the guide
     of "IT modernization." However, it appears they also tried to remove sensitive data from the agency, and thanks to a whistleblower, we are now able
     to see some sophisticated attacks that were made against IT resourcea at the agency.
+  linkified_blurb: >
+    <a class="link-hover" href="/agencies/white-house">DOGE</a> first arrived at this relatively small and independent agency that ensures that the union
+    rights of workers are protected at the end of February, and they quickly proceeded to do the same scuttling of contracts and termination of employees
+    that they have tried at other agencies under the guide of “IT modernization.” However, it appears they also tried to remove sensitive data from the
+    agency, and thanks to a whistleblower, we are now able to see some sophisticated attacks that were made against IT resourcea at the agency.
   parent_id:
   path: "/agencies/nlrb"
   children: []
@@ -2294,6 +2452,7 @@
   short_name: NOAA
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id: Commerce
   path: "/agencies/commerce"
   children: []
@@ -2314,6 +2473,7 @@
   short_name: NIH
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id: HHS
   path: "/agencies/health"
   children: []
@@ -2350,6 +2510,7 @@
   short_name: NIST
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id: Commerce
   path: "/agencies/commerce"
   children: []
@@ -2366,6 +2527,7 @@
   short_name: NSF
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#nsf"
   children: []
@@ -2391,6 +2553,7 @@
   short_name: NSA
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id: DOD
   path: "/agencies/defense"
   children: []
@@ -2407,6 +2570,7 @@
   short_name: NTSB
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#regs"
   children: []
@@ -2422,6 +2586,7 @@
   short_name: NRC
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#regs"
   children: []
@@ -2444,6 +2609,9 @@
   blurb: |-
     One of the ways in which DOGE surprised everybody was how it turned a relatively sleepy agency into a weapon against the entire government bureaucracy. Created by law in 1978, OPM's main role before now was to standardize government policies around personnel and to offer shared services for human capital like the federal health plans. It also tracks all the paperwork around hiring, promotions, changes and retirement. And so, for most federal staff, their main interactions with OPM were receiving paperwork they were hired, fired or retired; or picking a health plan; or looking at the rules around various practices. But, all the other aspects of human resources were handled by their own agencies. Federal staff are hired to their specific agencies, their performance rankings are defined by their agency, they're promoted by their agencies, they're paid by their agencies, they follow the HR policies of their agencies. OPM provides the guidance, but it's the agencies that implement it.
     This is why OPM's turn towards the dark side has been so confounding. Very early on, DOGE concentrated a large number of staff within OPM to capture control of the centralized databases and install a new email server to send/receive messages from every federal worker. The acting director was forced out and replaced by Charles Ezell, who then let DOGE wall off an area and keep out permanent agency staff. DOGE also brought in a slew of HR executives from startups who seemingly expected the agency to work for the entire federal government in the same way that HR operates within a single company. And so, they started acting like OPM had more centralized authority: ordering workers to the "five things" email; blasting [commands to human capital officers at other agencies](https://www.chcoc.gov/transmittals); asking for lists of workers so they could command agencies to fire probationary workers and short-cut established procedures for reductions in force. OPM used to be deliberative and formal with its rulemaking - the new OPM was fond of sending out memos to all agencies on Wednesdays demanding a response by Friday. None of this was normal; some of it was [probably illegal](https://www.npr.org/2025/03/13/nx-s1-5325959/federal-employees-court-firing). And the breach in trust has been irrevocable.
+  linkified_blurb: |
+    One of the ways in which <a class="link-hover" href="/agencies/white-house">DOGE</a> surprised everybody was how it turned a relatively sleepy agency into a weapon against the entire government bureaucracy. Created by law in 1978, OPM’s main role before now was to standardize government policies around personnel and to offer shared services for human capital like the federal health plans. It also tracks all the paperwork around hiring, promotions, changes and retirement. And so, for most federal staff, their main interactions with <a class="link-hover" href="/agencies/opm">OPM</a> were receiving paperwork they were hired, fired or retired; or picking a health plan; or looking at the rules around various practices. But, all the other aspects of human resources were handled by their own agencies. Federal staff are hired to their specific agencies, their performance rankings are defined by their agency, they’re promoted by their agencies, they’re paid by their agencies, they follow the HR policies of their agencies. <a class="link-hover" href="/agencies/opm">OPM</a> provides the guidance, but it’s the agencies that implement it.
+    This is why OPM’s turn towards the dark side has been so confounding. Very early on, <a class="link-hover" href="/agencies/white-house">DOGE</a> concentrated a large number of staff within <a class="link-hover" href="/agencies/opm">OPM</a> to capture control of the centralized databases and install a new email server to send/receive messages from every federal worker. The acting director was forced out and replaced by <a class="link-hover" href="/people/enabler-staff#charles-ezell">Charles Ezell</a>, who then let <a class="link-hover" href="/agencies/white-house">DOGE</a> wall off an area and keep out permanent agency staff. <a class="link-hover" href="/agencies/white-house">DOGE</a> also brought in a slew of HR executives from startups who seemingly expected the agency to work for the entire federal government in the same way that HR operates within a single company. And so, they started acting like <a class="link-hover" href="/agencies/opm">OPM</a> had more centralized authority: ordering workers to the “five things” email; blasting <a href="https://www.chcoc.gov/transmittals">commands to human capital officers at other agencies</a>; asking for lists of workers so they could command agencies to fire probationary workers and short-cut established procedures for reductions in force. <a class="link-hover" href="/agencies/opm">OPM</a> used to be deliberative and formal with its rulemaking - the new <a class="link-hover" href="/agencies/opm">OPM</a> was fond of sending out memos to all agencies on Wednesdays demanding a response by Friday. None of this was normal; some of it was <a href="https://www.npr.org/2025/03/13/nx-s1-5325959/federal-employees-court-firing">probably illegal</a>. And the breach in trust has been irrevocable.
   parent_id:
   path: "/agencies/opm"
   children: []
@@ -2605,6 +2773,7 @@
   short_name: Peace Corps
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#service"
   children: []
@@ -2623,6 +2792,7 @@
   short_name: SEC
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#regs"
   children: []
@@ -2645,6 +2815,10 @@
     What is going on at the Small Business Administration?
 
     Seriously. I'd like to know. DOGE showed up there remarkably early in their operations (2025-02-03). And since then, it has largely been radio silence. I know some things must have happened there - the CIO was abruptly forced out at the end of March just before DOGE announced a change to loan processing - but there just hasn't been much reported yet. Hopefully that will change in the future.
+  linkified_blurb: |
+    What is going on at the <a class="link-hover" href="/agencies/sba">Small Business Administration</a>?
+
+    Seriously. I’d like to know. <a class="link-hover" href="/agencies/white-house">DOGE</a> showed up there remarkably early in their operations (2025-02-03). And since then, it has largely been radio silence. I know some things must have happened there - the CIO was abruptly forced out at the end of March just before <a class="link-hover" href="/agencies/white-house">DOGE</a> announced a change to loan processing - but there just hasn’t been much reported yet. Hopefully that will change in the future.
   parent_id:
   path: "/agencies/sba"
   children: []
@@ -2682,6 +2856,7 @@
   short_name: Smithsonian
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#other"
   children: []
@@ -2697,6 +2872,7 @@
   short_name: SSA
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/social-security"
   children: []
@@ -2814,6 +2990,7 @@
   short_name: State
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/state"
   children: []
@@ -2845,6 +3022,7 @@
   short_name: TSA
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id: DHS
   path: "/agencies/homeland-security"
   children: []
@@ -2868,6 +3046,7 @@
   short_name: USADF
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#eo1"
   children: []
@@ -2904,6 +3083,7 @@
   short_name: Access Brd
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#other"
   children: []
@@ -2919,6 +3099,7 @@
   short_name: USAID
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/usaid"
   children: []
@@ -2978,6 +3159,7 @@
   short_name: USCIS
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id: DHS
   path: "/agencies/homeland-security"
   children: []
@@ -3007,6 +3189,7 @@
   short_name: USIP
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#eo1"
   children: []
@@ -3055,6 +3238,7 @@
   short_name: DFC
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#regs"
   children: []
@@ -3078,6 +3262,13 @@
     specific skills or because their names were next to each other in an alphabetical list?). USPS has long been a target of conservative ire, with many
     arguing it's "losing money" (as if it were a business and not a service) and calling for its privatization. DOGE's efforts at USPS will probably hew
     to their standard staffing reductions and elimination of contracts.
+  linkified_blurb: >
+    We don’t know much about what <a class="link-hover" href="/agencies/white-house">DOGE</a> is doing at <a class="link-hover" href="/agencies/usps">USPS</a>,
+    apart from the fact that <a class="link-hover" href="/wreckers/ethan-shaotran/">Ethan Shaotran</a> and <a class="link-hover" href="/wreckers/other#alex-simonpour">Alexander
+    Simonpour</a> were detailed there (because of specific skills or because their names were next to each other in an alphabetical list?). <a class="link-hover"
+    href="/agencies/usps">USPS</a> has long been a target of conservative ire, with many arguing it’s “losing money” (as if it were a business and not a
+    service) and calling for its privatization. DOGE’s efforts at <a class="link-hover" href="/agencies/usps">USPS</a> will probably hew to their standard
+    staffing reductions and elimination of contracts.
   parent_id:
   path: "/agencies/usps"
   children: []
@@ -3106,6 +3297,7 @@
   short_name: VA
   doge_base: true
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/veterans"
   children: []
@@ -3139,6 +3331,7 @@
   short_name: Global Media
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#eo2"
   children: []
@@ -3164,6 +3357,7 @@
   short_name: USICH
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#eo2"
   children: []
@@ -3178,6 +3372,7 @@
   short_name: Wilson Ctr.
   doge_base: false
   blurb:
+  linkified_blurb:
   parent_id:
   path: "/agencies/independent#eo2"
   children: []

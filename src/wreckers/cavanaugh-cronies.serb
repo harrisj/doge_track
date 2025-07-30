@@ -9,12 +9,10 @@ description: A listing of several DOGE staffers who have been affiliated with Na
 Nate Cavnaugh doesn't do his work alone. He is helped by a growing group of other DOGE members who either show up with him at agencies or handle things alone.
 {% end %}
 
-{% names = ['Justin Fox', 'Jacob Altik', 'Jack Stein', 'Jonathan Mendelson', 'Eliezer Mishory', 'Emily Bryant', 'Bridget Youngs', 'Donald Park', 'Marshall Wood'] %}
+{% names = ['Jacob Altik', 'Emily Bryant', 'Justin Fox', 'Jonathan Mendelson', 'Eliezer Mishory', 'Donald Park', 'Jack Stein', 'Marshall Wood',  'Bridget Youngs'] %}
 
 <div class="mt-5">
-{% people = site.data.people.select {|p| names.include?(p.name) }.sort_by(&:sort_name) %}
-
-{% people.each do |person| %}
-  {%@ 'sections/people_page_person', person: person %}
+{% names.each do |name| %}
+  {%@ 'sections/people_page_person', person: Person[name] %}
 {% end %}
 </div>

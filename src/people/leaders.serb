@@ -10,7 +10,7 @@ This page is a mix of people who have been identified as leadership for DOGE, al
 
 <div class="mt-5">
 <h2 class="h2">Leaders</h2>
-{% people = site.data.people.select {|p| p.category == 'leadership'}.sort_by(&:sort_name) %}
+{% people = Person.where(category: 'leadership').order_by(:sort_name) %}
 
 {% people.each do |person| %}
   {%@ 'sections/people_page_person', person: person %}
@@ -21,7 +21,7 @@ This page is a mix of people who have been identified as leadership for DOGE, al
 DOGE has also attracted a number of boosters. These are Silicon Valley-adjacent or Musk-affiliated people who have been promoting the agency's operations or even active recruitment, but do not have a connection to the daily operations within government. 
 
 <div class="mt-5">
-{% people = site.data.people.select {|p| p.category == 'booster'}.sort_by(&:sort_name) %}
+{% people = Person.where(category: 'booster').order_by(:sort_name) %}
 
 {% people.each do |person| %}
   {%@ 'sections/people_page_person', person: person %}

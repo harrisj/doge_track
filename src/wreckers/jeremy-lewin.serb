@@ -1,5 +1,4 @@
 ---
 title: Jeremy Lewin
 ---
-{% person = site.data.people.find {|p| p.name == 'Jeremy Lewin' } %}
-{%@ 'sections/people_page_person', person: person %}
+{%@ 'sections/people_page_person', person: Person['Jeremy Lewin'] %}

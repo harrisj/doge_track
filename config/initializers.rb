@@ -63,4 +63,10 @@ Bridgetown.configure do |config|
   init :"bridgetown-sitemap"
   init :"bridgetown-seo-tag"
   init :"bridgetown-quick-search"
+
+  database_uri 'sqlite://data/doge.sqlite'
+  except :sequel_tasks do
+    init :bridgetown_sequel
+    Bridgetown.db.loggers << Bridgetown.logger
+  end
 end

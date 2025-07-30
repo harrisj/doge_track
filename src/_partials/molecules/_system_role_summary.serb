@@ -1,7 +1,7 @@
 {% import 'macros' %}
 <a href="/all/systems#{{ role.govt_system_id }}">{{ role.system.name }}</a>
 <br/>
-<span class="italic">{{ role.system.description | md | strip_p }}</span> <span class="hidden sm:inline">({{ agency_link(role.agency_id) }})</span>
+<span class="italic">{{ role.govt_system.description | md | strip_p }}</span> <span class="hidden sm:inline">({{ agency_link(role.agency_id) }})</span>
 <br/>
 {%@ 'system_access_type', role: role %} access
 {% if role.last_accessed %} (last access {{ render EdtfFormat.new(role.last_accessed, :compact) }}){% end %}

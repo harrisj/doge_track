@@ -1,5 +1,4 @@
 ---
 title: Gavin Kliger
 ---
-{% person = site.data.people.find {|p| p.name == 'Gavin Kliger' } %}
-{%@ 'sections/people_page_person', person: person %}
+{%@ 'sections/people_page_person', person: Person['Gavin Kliger'] %}

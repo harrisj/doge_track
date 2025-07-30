@@ -50,3 +50,7 @@ gem 'shortuuid', '~> 0.6.0'
 gem 'sqlite3', '~> 2.6'
 
 gem 'bridgetown-quick-search', '~> 3.0'
+
+gem 'bridgetown_sequel', '~> 1.1'
+
+gem 'require_all', '~> 3.0'

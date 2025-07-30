@@ -1,5 +1,4 @@
 ---
 title: Adam Ramada
 ---
-{% person = site.data.people.find {|p| p.name == 'Adam Ramada' } %}
-{%@ 'sections/people_page_person', person: person %}
+{%@ 'sections/people_page_person', person: Person['Adam Ramada'] %}

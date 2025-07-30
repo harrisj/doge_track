@@ -11,23 +11,23 @@
 %}
 
 {% macro "lookup_person" do |name|
-    site.data.people.find { |p| p.name == name } || raise("Couldn't find person #{name}")
+    Person[name]
 end %}
 
 {% macro 'lookup_agency' do |agency_id|
-    site.data.agencies.find { |a| a.id == agency_id } || raise("Couldn't find agency #{agency_id}")
+    Agency[agency_id]
 end %}
 
 {% macro 'lookup_alias' do |alias_id|
-    site.data.aliases.find { |a| a.id == alias_id } || raise("Couldn't find alias #{alias_id}")
+    DogeAlias[alias_id]
   end %}
 
 {% macro 'lookup_event' do |event_id|
-    site.data.events.find { |e| e.id == event_id } || raise("Couldn't find event #{event_id}")
+    Event[event_id]
   end %}
 
 {% macro 'lookup_position' do |pos_id|
-    site.data.positions.find { |p| p.id == pos_id } || raise("Couldn't find position #{pos_id}")
+    Position[pos_id]
   end %}
 
 {% macro "find_person" do |p_id|

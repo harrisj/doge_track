@@ -13,6 +13,7 @@ DB.create_table! :agencies do
   string :short_name, null: false, unique: true
   boolean :doge_base, null: false, default: false
   string :blurb
+  string :linkified_blurb
   string :parent_id
 end
 
@@ -82,6 +83,7 @@ DB.create_table! :people do
   string :category, null: false, default: 'unknown'
   boolean :own_page, null: false, default: false
   string :blurb
+  string :linkified_blurb
   string :reporting_notes
   string :comment
   string :govt_exit_date
@@ -128,6 +130,7 @@ DB.create_table! :events do
   string :sort_date, null: false
   string :time
   string :text, null: false
+  string :linkified_text
   string :fuzz
   string :comment
   string :source, null: false
@@ -206,6 +209,7 @@ DB.create_table! :executive_orders do
   string :date, null: false
   string :link, null: false
   string :summary, null: false
+  string :linkified_summary
   boolean :all_agencies, null: false, default: false
   boolean :directs_doge, null: false, default: false
 end

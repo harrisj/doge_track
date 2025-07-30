@@ -1,5 +1,4 @@
 ---
 title: Nikhil Rajpal
 ---
-{% person = site.data.people.find {|p| p.name == 'Nikhil Rajpal' } %}
-{%@ 'sections/people_page_person', person: person %}
+{%@ 'sections/people_page_person', person: Person['Nikhil Rajpal'] %}

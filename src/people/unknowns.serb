@@ -10,7 +10,7 @@ There are a few DOGE staffers that have been identified in individual reports, b
 {% end %}
 
 <div class="mt-10">
-{% people = site.data.people.select {|p| p.category == 'unknown'}.sort_by(&:sort_name) %}
+{% people = Person.where(category: 'unknown').order_by(:sort_name) %}
 {% people.each do |person| %}
   {%@ 'sections/people_page_person', person: person %}
 {% end %}

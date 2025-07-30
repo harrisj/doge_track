@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'bridgetown'
-
+require 'bridgetown_sequel'
 Bridgetown.load_tasks
 
 # Run rake without specifying any command to execute a deploy build by default.
@@ -109,6 +109,7 @@ namespace :data do
   desc 'Pull in data from the YAML files into the database'
   task :populate_db do
     ruby "#{SCRIPTS_DIR}/populate_db.rb"
+    ruby "#{SCRIPTS_DIR}/linkify_db.rb"
   end
 
   task deploy_db: ['data:clean_db', 'data:create_db', 'data:populate_db']
@@ -144,7 +145,7 @@ namespace :generate do
   end
 
   desc 'Run all generate tasks'
-  task all: %i[reports data_yaml csv]
+  task all: %i[data_yaml csv]
 end
 
 desc 'Run generate tasks for the content'

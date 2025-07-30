@@ -118,10 +118,10 @@ class SystemRole < Sequel::Model
   many_to_one :doge_alias
 end
 
-# Represents an executive order
-class ExecutiveOrder < Sequel::Model
-  many_to_many :agencies
-end
+# # Represents an executive order
+# class ExecutiveOrder < Sequel::Model
+#   many_to_many :agencies
+# end
 
 # Represents a single DOGE member
 class Person < Sequel::Model

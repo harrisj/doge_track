@@ -11,7 +11,7 @@ If we can think of the [Wreckers]({{% link "people/wreckers.md" }}) as the offen
 {% end %}
 
 <div class="mt-10">
-{% people = site.data.people.select {|p| p.category == 'support'}.sort_by(&:sort_name) %}
+{% people = Person.where(category: 'support').order_by(:sort_name) %}
 
 {% people.each do |person| %}
   {%@ 'sections/people_page_person', person: person %}

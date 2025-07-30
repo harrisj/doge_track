@@ -11,7 +11,7 @@ Acting as the face of DOGE to many agencies, wreckers have proven to be both eas
 {% end %}
 
 <div class="mt-5">
-{% people = site.data.people.select {|p| p.category == 'wrecker'}.sort_by(&:sort_name) %}
+{% people = Person.where(category: 'wrecker'}.sort_by(:sort_name) %}
 
 {% people.each do |person| %}
   {% if person.custom_path %}

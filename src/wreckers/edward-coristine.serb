@@ -1,5 +1,4 @@
 ---
 title: Edward Coristine
 ---
-{% person = site.data.people.find {|p| p.name == 'Edward Coristine' } %}
-{%@ 'sections/people_page_person', person: person %}
+{%@ 'sections/people_page_person', person: Person['Edward Coristine'] %}
