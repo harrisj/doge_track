@@ -2,7 +2,7 @@
    agency_contacts = agencies.select {|a| a.parent_id.nil? }.map {|a| {id: a[:id], child_ids: a[:children].map(&:id), children: a[:children], short_name: a[:short_name], name: a[:name], first_contact: '', people: []} }
 
    agency_contacts.each do |ac|
-     positions = site.data.positions.select {|pos| pos[:agency_and_parent].include?(ac[:id]) }.sort_by(&:sort_date)
+     positions = [] # FIXME Position.where {|pos| pos[:agency_and_parent].include?(ac[:id]) }.sort_by(&:sort_date)
      next unless positions.any?
      ac[:first_contact] = positions.first[:start_date]
      ac[:sort_date] = positions.first[:sort_date]

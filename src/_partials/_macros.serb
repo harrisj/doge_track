@@ -33,7 +33,7 @@ end %}
 {% macro "find_person" do |p_id|
     if p_id.is_a?(String)
       site.data.people.find {|p| p.name.downcase == p_id || p.slug == p_id || p.sort_name.downcase == p_id.downcase }
-    elsif p_id.obj_type == 'Person'
+    elsif p_id.is_a? Person
       p_id
     elsif p_id.name
       site.data.people.find {|p| p.name == p_id.name }
@@ -72,13 +72,13 @@ end %}
     else 
       if p_id.is_a?(String)
         person = site.data.people.find {|p| p.name.downcase == p_id.downcase || p.slug == p_id || p.sort_name.downcase == p_id.downcase }
-      elsif p_id.obj_type && p_id.obj_type == 'Person'
+      elsif p_id.is_a? Person
         person = p_id
       else
         raise "Unknown object passed to person_link #{p_id.inspect}"
       end
 
-      if person && person.path && person.path != 'none'
+      if person
         display ||= person.name
         "<a class=\"link-hover\" href=\"#{person_url(person)}\">#{display}</a>".html_safe
       else
@@ -110,7 +110,7 @@ end %}
 {% macro "find_agency" do |a_id|
     if a_id.is_a?(String)
       site.data.agencies.find {|a| a.id == a_id || a.slug == a_id }
-    elsif a_id.obj_type == 'Agency'
+    elsif a_id.is_a? Agency
       a_id
     elsif a_id.agency_id
       site.data.agencies.find {|a| a.id == a_id.agency_id || a.slug == a_id.agency_id }
@@ -132,16 +132,14 @@ end %}
     elsif a_id.is_a?(String)
       agency = find_agency(a_id)
       agency_link(agency)
-    elsif a_id.key? :path
-      if a_id.key? :short_name
+    else
+      if a_id.short_name
         display ||= a_id.short_name
       else
         display ||= a_id
       end
 
-      "<a class=\"link-hover\" href=\"#{a_id.path}\">#{display}</a>".html_safe
-    else
-      a_id
+      "<a class=\"link-hover\" href=\"#{a_id.page_url}\">#{display}</a>".html_safe
     end
   end
 %}

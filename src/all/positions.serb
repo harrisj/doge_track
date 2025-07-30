@@ -7,5 +7,5 @@ description: A listing of all the positions I know of DOGE taking at every agenc
 
 {% import "macros" %}
 
-{% positions = site.data.positions.sort_by {|p| p.sort_date } %}
+{% positions = Position.order_by(:sort_date) %}
 {%@ 'tables/agency_positions', positions: positions, agency: nil %}

@@ -83,7 +83,7 @@ Finally, there are some DOGE staff who will have to depart the government in the
 Here are the current positions which have NTE dates and have not ended (either through normal reasons or because they were replaced with another positions). This does not necessarily mean that the person is still working in that position; I only have limited visibility into DOGE's staffing operations and it's not always easy to know if someone has definitively left an agency.
 {% end %}
 
-{% nte_positions = site.data.positions.select {|pos| pos.nte_date && !pos.end_date }.sort_by(&:nte_date) %}
+{% nte_positions = Position.exclude(nte_date: nil).filter(end_date: nil).order_by(:nte_date) %}
 
 <table class="my-4 table table-xs sm:table-sm md:table-md table-zebra">
  <thead>
