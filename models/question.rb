@@ -2,7 +2,7 @@
 
 require 'sequel'
 
-# FIXME
+# Represents a Question which can be linked to other objects
 class Question < Sequel::Model
   many_to_one :event
   many_to_one :agency

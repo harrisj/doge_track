@@ -13,10 +13,10 @@ class Event < Sequel::Model
 
   one_to_many :questions
 
-  # FIXME: LATER
   def names_aliases
-    []
-    # out += people
-    # out += doge_aliases
+    out = []
+    out += people
+    out += doge_aliases
+    out
   end
 end

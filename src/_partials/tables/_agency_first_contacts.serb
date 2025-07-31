@@ -3,7 +3,7 @@
    agency_contacts = agencies.map {|a| {id: a.id, child_ids: a.children.map(&:id), children: a.children, short_name: a.short_name, name: a.name, first_contact: '', people: []} }
 
    agency_contacts.each do |ac|
-     positions = [] # FIXME Position.where {|pos| pos[:agency_and_parent].include?(ac[:id]) }.sort_by(&:sort_date)
+     positions = Position.eager_graph(:person, :agency).exclude({Sequel[:positions][:name] => nil}).exclude(start_date: nil).where({Sequel[:agency][:id] => ac[:id]}).or({Sequel[:agency][:parent_id] => ac[:id]}).order(:sort_date).all
      next unless positions.any?
      ac[:first_contact] = positions.first[:start_date]
      ac[:sort_date] = positions.first[:sort_date]
