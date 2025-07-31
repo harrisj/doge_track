@@ -10,7 +10,7 @@ class Agency < Sequel::Model
   one_to_many :children, key: :parent_id, class: self
 
   one_to_many :details_from, class: :Position, key: :from_agency
-  one_to_many :positions
+  one_to_many :positions, eager_graph: %i[agency from_agency person doge_alias]
 
   one_to_many :doge_aliases
 
@@ -21,6 +21,10 @@ class Agency < Sequel::Model
   # REMOVE LATER
   def obj_type
     'Agency'
+  end
+
+  def all_agency_ids
+    [id] + children.map(&:id)
   end
 
   def all_positions
@@ -42,6 +46,13 @@ class Agency < Sequel::Model
     SystemRole.eager_graph(:agencies, :people, :doge_aliases)
               .filter({ Sequel[:agencies][:id] => id }).or({ Sequel[:agencies][:parent_id] => id })
               .all.sort_by { |x| x.date_granted || '2025-01-20' }
+  end
+
+  def all_systems
+    ids = all_agency_ids
+    GovtSystem.eager_graph(:system_roles)
+              .where({ Sequel[:system_roles][:agency_id] => ids })
+              .order(Sequel[:govt_systems][:name]).all
   end
 
   def page_url

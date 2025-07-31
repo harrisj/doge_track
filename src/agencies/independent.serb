@@ -9,7 +9,7 @@ description: A page documenting DOGE's actions to subvert and demolish small ind
 
 {% indies = Agency.filter(parent_id: nil).filter(Sequel.like(:page_slug, 'independent#%')).eager(:children).all %}
 <div class="mb-2">
-<!-- 'tables/agency_first_contacts', agencies: indies -->
+{%@ 'tables/agency_first_contacts', agencies: indies %}
 </div>
 
 Over the past decade, Congress has established multiple independent agencies that are supposed to be insulated from interference from the Executive Branch in how they operate. Many of these are small and specialized and relatively unknown to the general public. That hasn't stopped DOGE from interfering with them, in a coordinated effort with the White House that usually included the following steps:
