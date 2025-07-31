@@ -5,6 +5,8 @@ description: An alphabetical listing of all the people being tracked as part of 
 ---
 {%@ 'atoms/title', title: 'All The People' %}
 
+<p class="my-text">A list of all the people records for each person with events and positions.</p>
+
 {% people = Person.order_by('sort_name') %}
 
 {% people.each do |person| %}

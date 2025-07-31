@@ -6,8 +6,8 @@ require 'sequel'
 class Person < Sequel::Model
   one_to_many :doge_aliases, key: :name
   many_to_many :events, left_key: :name, order: :sort_date
-  one_to_many :positions, key: :name, order: :sort_date
-  one_to_many :system_roles, key: :name, order: :date_granted
+  one_to_many :positions, key: :name, order: :sort_date, eager_graph: %i[agency from_agency]
+  one_to_many :system_roles, key: :name, order: :date_granted, eager_graph: [:govt_system]
 
   def page_url
     return custom_path unless custom_path.nil?

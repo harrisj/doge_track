@@ -108,12 +108,18 @@ module Builders
       end
     end
 
+    def generate_events_json; end
+
+    def generate_systems_json; end
+
     def build
       hook :site, :post_write do |_|
         # FIXME: Don't trigger refresh in some cases?
 
         generate_agencies_json
         generate_people_json
+        generate_events_json
+        generate_systems_json
       end
     end
   end

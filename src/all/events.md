@@ -8,4 +8,6 @@ description: A comprehensive listing of all the events of DOGE staff on a single
 
 <p class="my-text">For the maximalists (and my debugging), here is a page with all of the events that happened in order.</p>
 
-{%@ 'tables/compact_event_timeline', events: site.data.events, agency_col: true, icon_col: true %}
+<div><i class="fa-sharp fa-solid fa-file-csv"></i> <a href="/csv/events.csv">Download as CSV</a></div>
+
+{%@ 'tables/compact_event_timeline', events: Event.order(:date).all, agency_col: true, icon_col: true %}

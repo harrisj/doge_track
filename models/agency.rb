@@ -33,21 +33,15 @@ class Agency < Sequel::Model
   end
 
   def all_events
-    out = events
-    children.each do |c|
-      out += c.events
-    end
-
-    out.each_with_index.sort_by { |e, idx| [Date.edtf(e[:date].to_s), idx] }.map(&:first)
+    Event.eager_graph(:agencies, :people, :doge_aliases)
+         .filter({ Sequel[:agencies][:id] => id }).or({ Sequel[:agencies][:parent_id] => id })
+         .order(:date).all
   end
 
   def all_system_roles
-    out = system_roles
-    children.each do |c|
-      out += c.system_roles
-    end
-
-    out.sort_by { |x| x.date_granted || '2025-01-20' }
+    SystemRole.eager_graph(:agencies, :people, :doge_aliases)
+              .filter({ Sequel[:agencies][:id] => id }).or({ Sequel[:agencies][:parent_id] => id })
+              .all.sort_by { |x| x.date_granted || '2025-01-20' }
   end
 
   def page_url
