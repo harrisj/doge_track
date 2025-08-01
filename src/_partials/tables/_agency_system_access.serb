@@ -1,5 +1,4 @@
 {% import "macros" %}
-{% govt_systems = roles.group_by {|r| r.system} %}
 
 <table class="my-table-style">
   <thead>
@@ -10,7 +9,8 @@
   </tr>
   </thead>
   <tbody class="">
-    {% govt_systems.each do |govt_system, sys_roles| %}
+    {% govt_systems.each do |govt_system| %}
+      {% sys_roles = govt_system.system_roles %}
       {% next unless sys_roles.any? %}
       {% min_date = sys_roles.map(&:date_granted).compact.min %}
       {% max_date = sys_roles.map(&:date_revoked).compact.max unless sys_roles.any? {|r| r.date_revoked.nil? } %}

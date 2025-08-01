@@ -11,29 +11,29 @@
 %}
 
 {% macro "lookup_person" do |name|
-    site.data.people.find { |p| p.name == name } || raise("Couldn't find person #{name}")
+    Person[name]
 end %}
 
 {% macro 'lookup_agency' do |agency_id|
-    site.data.agencies.find { |a| a.id == agency_id } || raise("Couldn't find agency #{agency_id}")
+    Agency[agency_id]
 end %}
 
 {% macro 'lookup_alias' do |alias_id|
-    site.data.aliases.find { |a| a.id == alias_id } || raise("Couldn't find alias #{alias_id}")
+    DogeAlias[alias_id]
   end %}
 
 {% macro 'lookup_event' do |event_id|
-    site.data.events.find { |e| e.id == event_id } || raise("Couldn't find event #{event_id}")
+    Event[event_id]
   end %}
 
 {% macro 'lookup_position' do |pos_id|
-    site.data.positions.find { |p| p.id == pos_id } || raise("Couldn't find position #{pos_id}")
+    Position[pos_id]
   end %}
 
 {% macro "find_person" do |p_id|
     if p_id.is_a?(String)
       site.data.people.find {|p| p.name.downcase == p_id || p.slug == p_id || p.sort_name.downcase == p_id.downcase }
-    elsif p_id.obj_type == 'Person'
+    elsif p_id.is_a? Person
       p_id
     elsif p_id.name
       site.data.people.find {|p| p.name == p_id.name }
@@ -43,45 +43,23 @@ end %}
    end
 %}
 
-{% macro "person_url" do |person|
-    if person.is_a?(String)
-      person = site.data.people.find {|p| p.name.downcase == name || p.slug == name || p.sort_name.downcase == name.downcase }
-    end
-
-    if person
-      if person.custom_path
-        person.custom_path
-      elsif person.category == 'wrecker'
-        "/wreckers/other##{person.slug}"
-      elsif person.category == 'enabler'
-        "/people/enabler-staff##{person.slug}"
-      elsif person.category == 'support'
-        "/people/support-team##{person.slug}"
-      elsif person.category == 'unknown'
-        "/people/unknowns##{person.slug}"
-      else
-        "/all/people##{person.slug}"
-      end
-    end
-  end
-%}
-
 {% macro "person_link" do |p_id, display=nil|
     if p_id.nil?
       raise "Null passed to person_link"
     else 
       if p_id.is_a?(String)
-        person = site.data.people.find {|p| p.name.downcase == p_id.downcase || p.slug == p_id || p.sort_name.downcase == p_id.downcase }
-      elsif p_id.obj_type && p_id.obj_type == 'Person'
+        person = Person.where(Sequel.|({name: p_id}, {slug: p_id}, {sort_name: p_id})).first
+      elsif p_id.is_a? Person
         person = p_id
       else
         raise "Unknown object passed to person_link #{p_id.inspect}"
       end
 
-      if person && person.path && person.path != 'none'
+      if person
         display ||= person.name
-        "<a class=\"link-hover\" href=\"#{person_url(person)}\">#{display}</a>".html_safe
+        "<a class=\"link-hover\" href=\"#{person.page_url}\">#{display}</a>".html_safe
       else
+        raise(p_id.inspect)
         display || p_id
       end
     end
@@ -109,21 +87,15 @@ end %}
 
 {% macro "find_agency" do |a_id|
     if a_id.is_a?(String)
-      site.data.agencies.find {|a| a.id == a_id || a.slug == a_id }
-    elsif a_id.obj_type == 'Agency'
+      Agency.filter(Sequel.|({id: a_id}, {slug: a_id})).first
+    elsif a_id.is_a? Agency
       a_id
     elsif a_id.agency_id
-      site.data.agencies.find {|a| a.id == a_id.agency_id || a.slug == a_id.agency_id }
+      Agency.where(id: a_id.agency_id).first
     else
       a_id
     end
    end
-%}
-
-{% macro "agency_url" do |id| 
-    agency = site.data.agencies.find {|a| a.id == id || a.slug == id }
-    agency ? agency.path : nil
-  end
 %}
 
 {% macro "agency_link" do |a_id, display=nil|
@@ -132,25 +104,14 @@ end %}
     elsif a_id.is_a?(String)
       agency = find_agency(a_id)
       agency_link(agency)
-    elsif a_id.key? :path
-      if a_id.key? :short_name
+    else
+      if a_id.short_name
         display ||= a_id.short_name
       else
         display ||= a_id
       end
 
-      "<a class=\"link-hover\" href=\"#{a_id.path}\">#{display}</a>".html_safe
-    else
-      a_id
-    end
-  end
-%}
-
-{% macro "load_agency" do |item|
-    if item && item.agency_id
-      item.agency = find_agency(item.agency_id)
-    else
-      item
+      "<a class=\"link-hover\" href=\"#{a_id.page_url}\">#{display}</a>".html_safe
     end
   end
 %}
@@ -286,22 +247,6 @@ end %}
   end
 %}
 
-{% macro "document_url" do |doc| 
-     "/documents/#{doc.file}"
-   end
-%}
-
-{% macro "doge_alias" do |doge_alias| 
-    if doge_alias.is_a?(String)
-      doge_alias
-    elsif doge_alias.id
-      doge_alias.id
-    else
-      'FIXME-ALIAS'
-    end
-   end
-%}
-
 {% macro "question_links" do |obj| 
     if obj.questions && obj.questions.any?
       questions = obj.questions.map {|q| "<a class=\"link-hover tooltip\" href=\"/questions##{q.id}\" data-tip=\"Open Question: #{q.question}\"><i class=\"fa-sharp fa-solid fa-circle-question\"></i></a>"}
@@ -311,31 +256,6 @@ end %}
     end
    end
 %}
-
-{% macro "DISABLED_position_move" do |pos| 
-  if pos.agency_id
-    raise pos.inspect if pos.agency.nil?
-    
-    out = if pos.from_agency_id
-      arrow = pos.type == 'internal' ? 'arrows-left-right' : 'arrow-right'
-      "#{agency_link(pos.from_agency_id, pos.from_agency.short_name)}#{'?' if pos.from_truth == 'guessed'} <i class=\"fa-sharp fa-solid fa-#{arrow}\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
-    elsif pos.type == 'appointed' || pos.type == 'consultant'
-      "<i class=\"fa-sharp fa-solid fa-person-to-door\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
-    elsif pos.type == 'promotion'
-      "<i class=\"fa-sharp fa-solid fa-up\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
-    elsif pos.type == 'demotion'
-      "<i class=\"fa-sharp fa-solid fa-down\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
-    elsif pos.type == 'converted'
-      "<i class=\"fa-sharp fa-solid fa-person-shelter\"></i> #{agency_link(pos.agency_id, pos.agency.short_name)}"
-    else
-      agency_link(pos.agency_id, pos.agency.short_name)
-    end
-    
-    out.html_safe
-  else
-    ''
-  end
-end %}
 
 {% macro 'position_end_type' do |pos| 
     case pos.end_type
@@ -391,92 +311,18 @@ end %}
    end
 %}
 
-{% macro 'position_summaryOLD' do |pos|
-    if pos.doge_alias_id && pos.name
-      alias_ident_str = "[as <a href=\"/people/aliases##{pos.doge_alias_id}\" class=\"link-hover\">#{pos.doge_alias_id}</a>]"
-    end
-
-    type_str = case pos.type
-      when 'other'
-        nil
-      when 'detailed'
-        if pos.from_truth != 'reported' && pos.from_truth != 'verified'
-          pos.title ? 'likely detailed as' : 'likely detailed'
-        else
-          pos.title ? 'detail to' : 'detail'
-        end
-      when 'promotion'
-        pos.title ? 'promoted to' : 'promoted'
-      when 'demotion'
-        pos.title ? 'demoted to' : 'demoted'
-      when 'converted'
-        'converted to permanent position'
-      when 'internal'
-        'internal xfer'
-      else
-        pos.type
-      end
-
-    title_str = ""
-    if pos.title
-      title_str += " **#{pos.title}**"
-
-      if pos.office
-        title_str += ", #{pos.office}"
-      end
-    end
-
-    hire_details = [
-      pos.sge ? "<abbr title=\"Special Government Employee\">SGE</abbr>" : nil,
-      pos.appt_type && pos.appt_type != 'Other' ? pos.appt_type : nil,
-      pos.nte_date ? "<abbr title=\"not to exceed\">NTE</abbr> #{pos.nte_date}" : nil,
-      pos.pay_grade,
-      pos.supervisory ? 'supervisory' : nil,
-      pos.excepted ? 'excepted' : nil ,
-      pos.salary == "$0" ? "volunteer" : nil ,
-      pos.salary && pos.salary != '$0' ? "**#{pos.salary}**" : nil,
-      pos.reimbursement_amount ? "reimbursed **#{pos.reimbursement_amount}**" : nil
-    ].compact
-
-    if hire_details.any?
-      hire_str = " (#{hire_details.join(', ')})"
-    end
-
-    if pos.table_note
-      note_str = " «_#{pos.table_note}_»"
-    end
-
-    if pos.documents.any?
-      links = pos.documents.map do |doc|
-        "<a class=\"link-hover\" href=\"#{document_url(doc)}\">#{document_type(doc)}</a>"
-      end
-      docs_str = " docs: #{links.join(', ')}"
-    end
-
-    questions_str = question_links(pos)
-
-    out_str = [alias_ident_str, type_str, title_str, hire_str, note_str, docs_str, questions_str].map {|x| x.blank? ? nil : x }.compact.join(" ")
-
-    if pos.source
-      out_str += " <span class=\"text-nowrap float-right\"><a href=\"#{pos.source}\" class=\"link-hover\"><i class=\"fa-sharp fa-solid fa-link-simple\"></i> <span class=\"italic text-2xs sm:text-xs\">#{ pos.source_name if pos.source_name }</span></a></span>"
-    end
-
-    out_str.html_safe
-   end
-%}
-
-# Don't use this a lot, it's slow! Better to pre-linkify in the data.yaml files
+# Don't use this a lot, it's slow! Better to pre-linkify in the database
 {% macro 'linkify_text' do |text|
    if text.blank?
       ''
    else
      out = text.dup
 
-      site.data.people.each do |person|
+      Person.each do |person|
         out.gsub!(/\b#{person.name}\b/, person_link(person))
       end
 
-      site.data.agencies.each do |agency|
+      Agency.each do |agency|
         out.gsub!(/\b#{agency.id}\b/, agency_link(agency)) if agency.id =~ /^[A-Z]+$/
         out.gsub!(/\b#{agency.name}\b/, agency_link(agency, agency.name))
       end

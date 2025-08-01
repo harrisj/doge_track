@@ -9,7 +9,7 @@ From the very beginning, all of DOGE's influences and responsibilities have been
 
 This page lists the executive orders that have been applicable to DOGE's actions.
 
-{% site.data.executive_orders.each do |eo| %}
+{% ExecutiveOrder.eager(:agencies).each do |eo| %}
 <table class="table table-sm lg:table-md border-4" id="eo-{{ eo.id }}">
 <tbody>
   <tr>

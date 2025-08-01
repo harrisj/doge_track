@@ -14,14 +14,14 @@
 {%@ 'tables/agency_positions', positions: agency.positions, agency: agency %}
 {% end %}
 
-{% agency_roles = site.data.system_roles.select {|sr| sr.agency && (sr.agency.id == agency.id || sr.agency.parent_id == agency.id) } || [] %}
-{% if agency_roles.any? %}
+{% agency_systems = agency.all_systems %}
+{% if agency_systems.any? %}
 <h2 class="mt-4 mb-0 text-lg sm:text-xl md:text-2xl">Systems</h2>
 
-{%@ 'tables/agency_system_access', roles: agency_roles, agency: agency %}
+{%@ 'tables/agency_system_access', govt_systems: agency_systems, agency: agency %}
 {% end %}
 
-{% agency_events = site.data.events.find_all {|e| e.agencies_parents.include? agency.id } %}
+{% agency_events = agency.all_events || [] %}
 {% if agency_events.any? %}
 <h2 class="mt-0 mb-0 text-lg sm:text-xl md:text-2xl">Events</h2>
 
@@ -29,7 +29,7 @@
 {% end %}
 </div>
 
-{% open_questions = site.data.questions.select {|q| q.agency_id == id && q.answer.blank?} %}
+{% open_questions = Question.filter(answer: nil, agency_id: id).all %}
 {% if open_questions.any? %}
 <h2 class="mt-4 mb-0 text-lg sm:text-xl md:text-2xl">Questions</h2>
   <div class="mt-3">

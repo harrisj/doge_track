@@ -8,7 +8,7 @@
 </thead>
 <tbody>
 {% systems.each do |govt_system| %}
-  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% roles = govt_system.system_roles %}
   {% next unless roles.any? %}
   <tr>
     <td class="align-top w-1/4 sm:w-1/3"><a class="link-hover" href="/all/systems#{{ govt_system.id }}">{% if govt_system.acronym %}{{ govt_system.acronym }}: {% end %}{{ govt_system.name }}</a></td>

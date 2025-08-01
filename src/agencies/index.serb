@@ -5,8 +5,9 @@ description: An overview and timeline of DOGE's activities in various federal ag
 ---
 {%@ 'atoms/title', title: 'Agency Timeline' %}
 
-{% indies, majors = site.data.agencies.partition {|a| a.page_slug =~ /^independent/ } %}
-{% majors.reject! {|a| %w[DOGE EOP].include?(a.id) } %}
+{% indies = Agency.filter(parent_id: nil).filter(Sequel.like(:page_slug, 'independent#%')).eager(:children).all %}
+{% majors = Agency.filter(parent_id: nil).exclude(Sequel.like(:page_slug, 'independent#%')).exclude(id: ['DOGE', 'EOP']).eager(:children).all %}
+
 {% major_ids = majors.map(&:id) %}
 {% independent_agency_ids = indies.map(&:id) %}
 

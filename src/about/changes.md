@@ -37,14 +37,14 @@ This is not a definitive list of all changes to the project (completists can alw
 {% if rec.positions.any? %}
 <h2 class="text-lg mt:2">Positions Added</h2>
 
-{% positions = rec.positions.map {|e_id| site.data.positions.find {|x| x.id == e_id}}.compact %}
+{% positions = rec.positions.map {|e_id| Position[e_id]}.compact %}
 {%@ 'tables/agency_positions', positions: positions, agency: nil%}
 {% end %}
 
 {% if rec.events.any? %}
 <h2 class="text-lg mt:2">Events Added</h2>
 
-{% events = rec.events.map {|e_id| site.data.events.find {|x| x.id == e_id}}.compact %}
+{% events = Event.eager_graph(:agencies, :people).where({Sequel[:events][:id] => rec.events}).order(:date).all.compact %}
 {%@ 'tables/compact_event_timeline', events: events, month_separator: false, agency_col: true %}
 {% end %}
   </div>

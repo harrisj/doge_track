@@ -10,7 +10,7 @@ This page provides details on the staff at DOGE that I have identified as [Enabl
 {% end %}
 
 <div class="mt-10">
-{% people = site.data.people.select {|p| p.category == 'enabler'}.sort_by(&:sort_name) %}
+{% people = Person.where(category: 'enabler').order_by('sort_name') %}
 
 {% people.each do |person| %}
   {%@ 'sections/people_page_person', person: person %}

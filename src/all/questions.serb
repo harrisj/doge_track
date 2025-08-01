@@ -7,20 +7,20 @@ layout: page
 {% import "macros" %}
 
 <ul class="list px-0">
-{% site.data.questions.each do |q| %}
+{% Question.eager_graph(:agency, :person, :event).all do |q| %}
 <li class="list-row m-0 p-0 pb-1 pt-0.5 gap-1">
   <div class="text-md font-serif sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl align-top"><i class="fa-sharp fa-solid fa-circle-question"></i></div>
   <div class="mt-1 sm:mt-1.5 sm:ml-0.5">
     <div class="flex flex-wrap content-center align-top leading-5 not-prose">
       <div class="flex-none pe-2">{{ render EdtfFormat.new(q.date, :iso) }}</div>
-      {% if q.agency_id %}
-        <div class="flex-none pe-2"><i class="fa-sharp fa-solid fa-building mr-1"></i>{{ agency_link(q.agency_id) }}</div>
+      {% if q.agency %}
+        <div class="flex-none pe-2"><i class="fa-sharp fa-solid fa-building mr-1"></i>{{ agency_link(q.agency) }}</div>
       {% end %}
-      {% if q.name %}
-        <div class="flex-none pe-2"><i class="fa-sharp fa-solid fa-user mr-1"></i>{{ person_link(q.name) }}</div>
+      {% if q.person %}
+        <div class="flex-none pe-2"><i class="fa-sharp fa-solid fa-user mr-1"></i>{{ person_link(q.person) }}</div>
       {% end %}
-      {% if q.alias %}
-        <div class="flex-none pe-2"><i class="fa-sharp fa-solid fa-secret-user mr-1"></i>{{ q.alias }}</div>
+      {% if q.doge_alias_id %}
+        <div class="flex-none pe-2"><i class="fa-sharp fa-solid fa-secret-user mr-1"></i>{{ q.doge_alias_id }}</div>
       {% end %}
       {% if q.event_id %}
         <div class="flex-none pe-2">Event {{ q.event_id }}</div>

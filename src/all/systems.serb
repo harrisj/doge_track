@@ -8,9 +8,9 @@ layout: page
 <section class="mb-10">
 <h2 class="h2" id="obligations">Contracting and Grants</h2>
 
-{% systems = site.data.systems.select {|s| s.category == 'obligations'} %}
+{% systems = GovtSystem.eager_graph(:system_roles).where(category: 'obligations').all %}
 {% systems.each do |govt_system| %}
-  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% roles = govt_system.system_roles %}
   {% next unless roles.any? %}
   {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
 {% end %}
@@ -19,9 +19,9 @@ layout: page
 <section class="mb-10">
 <h2 class="h2" id="payments">Payment Processing</h2>
 
-{% systems = site.data.systems.select {|s| s.category == 'payments'} %}
+{% systems = GovtSystem.eager_graph(:system_roles).where(category: 'payments').all %}
 {% systems.each do |govt_system| %}
-  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% roles = govt_system.system_roles %}
   {% next unless roles.any? %}
   {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
 {% end %}
@@ -30,9 +30,9 @@ layout: page
 <section class="mb-10">
 <h2 class="h2" id="personnel">Federal Personnel</h2>
 
-{% systems = site.data.systems.select {|s| s.category == 'personnel'} %}
+{% systems = GovtSystem.eager_graph(:system_roles).where(category: 'personnel').all %}
 {% systems.each do |govt_system| %}
-  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% roles = govt_system.system_roles %}
   {% next unless roles.any? %}
   {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
 {% end %}
@@ -41,9 +41,9 @@ layout: page
 <section class="mb-10">
 <h2 class="h2" id="security">Security</h2>
 
-{% systems = site.data.systems.select {|s| s.category == 'security'} %}
+{% systems = GovtSystem.eager_graph(:system_roles).where(category: 'security').all %}
 {% systems.each do |govt_system| %}
-  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% roles = govt_system.system_roles %}
   {% next unless roles.any? %}
   {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
 {% end %}
@@ -52,9 +52,9 @@ layout: page
 <section class="mb-10">
 <h2 class="h2" id="immigration">Immigration</h2>
 
-{% systems = site.data.systems.select {|s| s.category == 'immigration'} %}
+{% systems = GovtSystem.eager_graph(:system_roles).where(category: 'immigration').all %}
 {% systems.each do |govt_system| %}
-  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% roles = govt_system.system_roles %}
   {% next unless roles.any? %}
   {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
 {% end %}
@@ -63,9 +63,9 @@ layout: page
 <section class="mb-10">
 <h2 class="h2" id="taxes">Taxes</h2>
 
-{% systems = site.data.systems.select {|s| s.category == 'taxes'} %}
+{% systems = GovtSystem.eager_graph(:system_roles).where(category: 'taxes').all %}
 {% systems.each do |govt_system| %}
-  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% roles = govt_system.system_roles %}
   {% next unless roles.any? %}
   {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
 {% end %}
@@ -74,9 +74,9 @@ layout: page
 <section class="mb-2">
 <h2 class="h2" id="communications">Communications</h2>
 
-{% systems = site.data.systems.select {|s| s.category == 'communications'} %}
+{% systems = GovtSystem.eager_graph(:system_roles).where(category: 'communications').all %}
 {% systems.each do |govt_system| %}
-  {% roles = site.data.system_roles.select {|sr| sr.govt_system_id == govt_system.id } %}
+  {% roles = govt_system.system_roles %}
   {% next unless roles.any? %}
   {%@ 'systems_page_system', govt_system: govt_system, roles: roles %}
 {% end %}

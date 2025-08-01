@@ -10,7 +10,7 @@ description: It has always been easier to track when DOGE staff have arrived at 
 It has always been easier to track when DOGE staff have arrived at an agency vs. when they have left. For instance, when a wrecker like {{ person_link("Gavin Kliger") }} starts working at an agency, they might retain access (and an agency laptop) long after they've left the building. DOGE has also been purposefully opaque about departures, since they might puncture the aura of invulnerability they have been trying to project. But, with time and details that have emerged from reporting and court filings, we are starting to get a better picture of who has left agencies.
 {% end %}
 
-{% people_gone = site.data.people.select {|p| p.govt_exit_date }.sort_by(&:govt_exit_date) %}
+{% people_gone = Person.exclude(govt_exit_date: nil).order(:govt_exit_date).all %}
 
 <table class="my-4 table table-xs sm:table-sm md:table-md table-zebra">
   <thead>
@@ -59,7 +59,8 @@ In addition, there are some cases where we also know DOGE staff have left positi
     </tr>
   </thead>
   <tbody>
-    {% left_positions = site.data.positions.select {|pos| pos.end_date && !pos.person.govt_exit_date && pos.end_type != 'replaced' } %}
+    {% left_positions = Position.eager_graph(:person).exclude(end_date: nil).where(govt_exit_date: nil).exclude(end_type: 'replaced').all %}
+    
     {% left_positions.each do |pos| %}
     <tr>
       <td class="sm:hidden align-top"><i class="fa-sharp fa-solid {{ person_icon(pos.person) }}"></i></td>
@@ -83,7 +84,7 @@ Finally, there are some DOGE staff who will have to depart the government in the
 Here are the current positions which have NTE dates and have not ended (either through normal reasons or because they were replaced with another positions). This does not necessarily mean that the person is still working in that position; I only have limited visibility into DOGE's staffing operations and it's not always easy to know if someone has definitively left an agency.
 {% end %}
 
-{% nte_positions = site.data.positions.select {|pos| pos.nte_date && !pos.end_date }.sort_by(&:nte_date) %}
+{% nte_positions = Position.exclude(nte_date: nil).filter(end_date: nil).order_by(:nte_date) %}
 
 <table class="my-4 table table-xs sm:table-sm md:table-md table-zebra">
  <thead>

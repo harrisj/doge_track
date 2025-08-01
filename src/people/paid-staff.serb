@@ -11,6 +11,6 @@ One of the earliest lies that Elon Musk spread about DOGE was that it was staffe
 There are multiple places where salary information could be sourced from. In some cases, the exact salary was provided on an SF-50 form for new employees. In other cases, only the General Scale (GS) pay grade is provided, and I will estimate based on a possible range for that salary with the DC locality adjustment. Many of the DOGE staff with salaries are compensated extremely well, with several of them being paid the maximum amount for General Scale employees (GS-15, step 10) despite only having a few years of experience.
 {% end %}
 
-{% paid_positions = site.data.positions.select {|pos| pos.salary && pos.salary != '$0' }.sort_by(&:sort_date) %}
+{% paid_positions = Position.exclude(salary: nil).exclude(salary: '$0').order_by(:sort_date).all %}
 {%@ 'tables/agency_positions', agency: nil, positions: paid_positions %}
 
