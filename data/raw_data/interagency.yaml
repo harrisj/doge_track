@@ -32,6 +32,24 @@
   source_name: NYT
   id: 34gvpQTX
 
+- date: 2025-02-03
+  time: '12:33'
+  type: action
+  named:
+  - Edward Coristine
+  - Donald Park
+  event: >-
+    Elias Hernandez, the associate administrator for the Office of Veterans Business Development at SBA,
+    emails the director of the National Finance Center (NFC) asking for immediate admin access to the
+    mainframe for "all SBA Personnel Office Identifiers (POIs)". NFC is a shared service from USDA that
+    handles payroll for roughly 150,000 federal employees across 170 agencies including the SBA.
+  agency:
+  - SBA
+  - USDA
+  source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
+  source_name: WIRED
+  id: 1Pg4mnKv
+
 - date: 2025-02-07
   type: report
   fuzz: article just reports this as early Feb; but Musk tweets said he was informed on 2/7
@@ -725,6 +743,26 @@
   source: https://www.cnn.com/2025/06/18/politics/kristi-noem-fema-dhs-funding
   source_name: CNN
   id: 6GtPePGY
+
+- date: 2025-06-24
+  type: disruption
+  event: >-
+    Jeremy Lewin overrides many objections by staffers reviewing the grant and rushes a grant of $30 million
+    for the month of June to the Gaza Humanitarian Foundation only five days after its funding request
+    was submitted. The request was also handled by Kenneth Jackson and accumulated over 58 objections
+    from USAID staffers that GHF failed both technical and financial requirements for aid recipients.
+    GHF was hastily formed in February 2025 and has been faulted for forcing Palestinians to navigate
+    crowded militarized zones to receive aid. This has resulted in multiple mass killings near GHF sites.
+  named:
+  - Jeremy Lewin
+  - Kenneth Jackson
+  source: >-
+    https://www.reuters.com/world/middle-east/former-doge-official-rushed-grant-trump-backed-gaza-aid-group-over-staff-2025-07-09/
+  source_name: Reuters
+  agency:
+  - USAID
+  - State
+  id: 3OFYYVBv
 
 - date: 2025-06-25
   type: disruption

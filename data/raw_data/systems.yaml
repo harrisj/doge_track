@@ -326,6 +326,40 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     source_name: court doc
 
+- name: Capital Access Financial System
+  type: internal
+  id: cafs
+  acronym: CAFS
+  category: obligations
+  theme: spending
+  description: The main portal at the SBA for main portal for processing loan applications and servicing
+    loans.
+  risk: >-
+    info from loan applications, street addresses, tax IDs, additional notes from SBA investigations,
+    citizenship status, alien identification numbers
+  agency: SBA
+  pia: https://www.sba.gov/sites/default/files/2021-06/SBA%20CAFS%20PIA%20FY21.pdf
+  sorn: https://www.govinfo.gov/content/pkg/FR-2021-04-30/pdf/2021-09064.pdf
+  access:
+  - id: cafs-coristine
+    name: Edward Coristine
+    type: read
+    date_granted: 2025-02-03
+    date_grant_truth: reported
+    ao_type: cio
+    ao_truth: reported
+    source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
+    source_name: Wired
+  - id: cafs-park
+    name: Donald Park
+    type: read
+    date_granted: 2025-02-03
+    date_grant_truth: reported
+    ao_type: cio
+    ao_truth: reported
+    source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
+    source_name: Wired
+
 - name: Central Accounting Reporting System
   type: internal
   category: payments
@@ -2011,6 +2045,73 @@
       Wired reports that Miles Collins has access to the National Farmworker Jobs Program (NFJP) system,
       which provides grants to organizations that work with migrant and seasonal labor
     source: https://www.wired.com/story/doge-access-immigration-data-department-of-labor/
+    source_name: Wired
+
+- name: National Finance Center Insight
+  id: nfc-insight
+  acronym: NFC Insight
+  type: ssp
+  agency: USDA
+  category: personnel
+  theme: personnel
+  link: https://www.nfc.usda.gov/ClientServices/HR_Payroll/Initiatives/Insight/index.php
+  description: >-
+    A business intelligence system that is one of the offerings of the National Finance Center, which
+    handles payroll for 650,000 federal employees.
+  access:
+  - id: nfc-insight-sba-coristine
+    date_granted: 2025-02-03
+    date_grant_truth: reported
+    type: read
+    agency: SBA
+    ao_name: Michael Jackson
+    ao_type: deputy
+    name: Edward Coristine
+    source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
+    source_name: Wired
+  - id: nfc-insight-sba-park
+    date_granted: 2025-02-03
+    date_grant_truth: reported
+    type: read
+    agency: SBA
+    ao_name: Michael Jackson
+    ao_type: deputy
+    name: Edward Coristine
+    source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
+    source_name: Wired
+
+- name: National Finance Center Reporting Center
+  id: nfc-reports
+  acronym: NFC Reports
+  type: ssp
+  agency: USDA
+  category: personnel
+  theme: personnel
+  link: https://help.nfc.usda.gov/publications/PPSO/51825.htm
+  description: >-
+    The Reporting Center is a Web-based application page which allows managers, personnel specialists,
+    and other employees of Federal Agencies serviced by NFC to generate Administrative Reports, Financial
+    Reports, and Workforce Reports.
+  access:
+  - id: nfc-reports-sba-coristine
+    date_granted: 2025-02-03
+    date_grant_truth: reported
+    type: read
+    agency: SBA
+    ao_name: Michael Jackson
+    ao_type: deputy
+    name: Edward Coristine
+    source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
+    source_name: Wired
+  - id: nfc-reports-sba-park
+    date_granted: 2025-02-03
+    date_grant_truth: reported
+    type: read
+    agency: SBA
+    ao_name: Michael Jackson
+    ao_type: deputy
+    name: Edward Coristine
+    source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
     source_name: Wired
 
 - name: National Payment Service
