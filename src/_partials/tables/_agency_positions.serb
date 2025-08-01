@@ -41,16 +41,16 @@
       {% grouped_undated = to_agency.group_by {|pos| [pos.agency_id, pos.type, pos.from_agency_id || ''] } %}
       {% grouped_undated.sort_by {|grp, _| grp[2]}.each do |grp, positions| %}
         <tr class="font-sans">
-        <td class="align-top hide-cell-mobile"/>
         <td class="align-top">{%@ 'atoms/position_move_label', position: positions[0] %}</td>
+        <td class="align-top hide-cell-mobile"/>
         <td colspan="2" class="align-top">{{ positions.map(&:person) | people_links }}</td>
         </tr>
       {% end %}
       {% grouped_undated = from_agency.group_by {|pos| [pos.agency_id, pos.type, pos.from_agency_id || ''] } %}
       {% grouped_undated.sort_by {|grp, _| grp[0]}.each do |grp, positions| %}
         <tr class="font-sans">
-        <td class="align-top hide-cell-mobile"/>
         <td class="align-top">{%@ 'atoms/position_move_label', position: positions[0] %}</td>
+        <td class="align-top hide-cell-mobile"/>
         <td colspan="2" class="align-top">{{ positions.map(&:person) | people_links }}</td>
         </tr>
       {% end %}

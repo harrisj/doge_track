@@ -1,9 +1,9 @@
 {% unless agencies.nil? %}
 {% check_events = false
-   agency_contacts = agencies.map {|a| {id: a.id, child_ids: a.children.map(&:id), children: a.children, short_name: a.short_name, name: a.name, first_contact: '', people: []} }
+   agency_contacts = agencies.map {|a| {agency: a, id: a.id, child_ids: a.children.map(&:id), children: a.children, short_name: a.short_name, name: a.name, first_contact: '', people: []} }
 
    agency_contacts.each do |ac|
-     positions = Position.eager_graph(:person, :agency).exclude({Sequel[:positions][:name] => nil}).exclude(start_date: nil).where({Sequel[:agency][:id] => ac[:id]}).or({Sequel[:agency][:parent_id] => ac[:id]}).order(:sort_date).all
+     positions = ac[:agency].all_positions.reject {|pos| pos.name.nil? || pos.start_date.nil? }
      next unless positions.any?
      ac[:first_contact] = positions.first[:start_date]
      ac[:sort_date] = positions.first[:sort_date]

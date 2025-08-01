@@ -11,10 +11,6 @@ class DogeAlias < Sequel::Model
   many_to_many :events
 
   def category
-    if name.blank?
-      'unknown'
-    else
-      person.category
-    end
+    'alias'
   end
 end

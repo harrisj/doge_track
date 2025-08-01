@@ -17,7 +17,7 @@ def internal_link(url, display)
   "<a class=\"link-hover\" href=\"#{url}\">#{display}</a>"
 end
 
-def linkify_text(text)
+def linkify_text(text, strip_p: true)
   return nil if text.nil?
 
   out = text.dup
@@ -42,7 +42,10 @@ def linkify_text(text)
     out.gsub!(/\b#{agency.name}\b/, internal_link(agency.page_url, agency.name))
   end
 
-  Kramdown::Document.new(out).to_html.gsub(%r{</?p>}, '')
+  out = Kramdown::Document.new(out).to_html
+  out.gsub!(%r{</?p>}, '') if strip_p
+
+  out
 end
 
 ExecutiveOrder.each do |eo|
@@ -56,12 +59,12 @@ Event.each do |e|
 end
 
 Agency.each do |a|
-  a.linkified_blurb = linkify_text(a.blurb)
+  a.linkified_blurb = linkify_text(a.blurb, strip_p: false)
   a.save_changes
 end
 
 Person.each do |p|
-  p.linkified_blurb = linkify_text(p.blurb)
+  p.linkified_blurb = linkify_text(p.blurb, strip_p: false)
   p.save_changes
 end
 

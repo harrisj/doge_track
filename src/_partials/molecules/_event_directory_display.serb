@@ -1,0 +1,9 @@
+{% unidentified_aliases = event.doge_aliases.select {|d| d.name.nil? } %}
+{% names_aliases = event.people + unidentified_aliases %}
+{% names_aliases.group_by(&:category).sort_by {|c, p| p.size}.reverse.each do |category, people| %}
+  {% if category == 'alias' %}
+    <div><i class="fa-sharp fa-solid fa-user-secret"></i> {{ people.map(&:id) | alias_links }}</div>
+  {% else %}
+    <div><i class="fa-sharp fa-solid {{ person_icon(people.first) }}"></i> {{ people.map(&:name) | people_links }}</div>
+  {% end %}
+{% end %}

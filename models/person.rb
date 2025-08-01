@@ -9,6 +9,11 @@ class Person < Sequel::Model
   one_to_many :positions, key: :name, order: :sort_date, eager_graph: %i[agency from_agency]
   one_to_many :system_roles, key: :name, order: :date_granted, eager_graph: [:govt_system]
 
+  def all_events
+    event_ids = Event.select(Sequel[:events][:id]).association_join(:people).where({ Sequel[:people][:name] => name })
+    Event.eager_graph(:people, :agencies, :doge_aliases).where({ Sequel[:events][:id] => event_ids }).order(:date).all
+  end
+
   def page_url
     return custom_path unless custom_path.nil?
 

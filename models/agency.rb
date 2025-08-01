@@ -28,24 +28,24 @@ class Agency < Sequel::Model
   end
 
   def all_positions
-    out = positions
-    children.each do |c|
-      out += c.positions
-    end
+    position_ids = Position.select(Sequel[:positions][:id])
+                           .association_join(:agency)
+                           .filter({ Sequel[:agency][:id] => id })
+                           .or({ Sequel[:agency][:parent_id] => id })
 
-    out.sort_by { |x| x.start_date || '2025-01-20' }
+    Position
+      .eager_graph(:person, :agency, :from_agency, :doge_alias)
+      .where({ Sequel[:positions][:id] => position_ids })
+      .all
+      .sort_by { |x| x.start_date || '2025-01-20' }
   end
 
   def all_events
-    Event.eager_graph(:agencies, :people, :doge_aliases)
-         .filter({ Sequel[:agencies][:id] => id }).or({ Sequel[:agencies][:parent_id] => id })
-         .order(:date).all
-  end
-
-  def all_system_roles
-    SystemRole.eager_graph(:agencies, :people, :doge_aliases)
-              .filter({ Sequel[:agencies][:id] => id }).or({ Sequel[:agencies][:parent_id] => id })
-              .all.sort_by { |x| x.date_granted || '2025-01-20' }
+    event_ids = Event.select(Sequel[:events][:id])
+                     .association_join(:agencies)
+                     .filter({ Sequel[:agencies][:id] => id })
+                     .or({ Sequel[:agencies][:parent_id] => id })
+    Event.eager_graph(:people, :doge_aliases, :agencies).where({ Sequel[:events][:id] => event_ids }).order(:date).all
   end
 
   def all_systems
