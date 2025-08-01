@@ -59,7 +59,6 @@ end %}
         display ||= person.name
         "<a class=\"link-hover\" href=\"#{person.page_url}\">#{display}</a>".html_safe
       else
-        raise(p_id.inspect)
         display || p_id
       end
     end
