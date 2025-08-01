@@ -1154,16 +1154,6 @@
     Perhaps the most famous of the DOGE wreckers, Edward "Big Balls" Coristine achieved early attention for joining DOGE at the young age of 19. Previously, he had been a camp counselor and a summer intern at Neuralink, who grew up in wealth and joined up with hacking groups online, before eagerly jumping on to the DOGE bandwagon.
     However, he has also accrued a large number of hits on his wrecking spree across the federal government, starting at the GSA on Day One and then detailing to OPM and a large number of other agencies within a short amount of time; for instance, he appears to have been DOGE's vanguard within the Department of Homeland Security. Most recently, he has been linked to a team developing an online application for a $5 Million "Gold Card" Visa that has been promoted by Trump as a new revenue stream for the US.
   positions:
-  - id: detail-sba-coristine
-    agency: SBA
-    from: GSA
-    from_truth: guessed
-    title: DOGE Advisor
-    title_type: advisor
-    type: detailed
-    table_note: identified by agency FOIA as having been at the agency, guessing detailed
-    source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
-    source_name: American Oversight
   - id: gsa-edward-coristine
     agency: GSA
     type: appointed
@@ -1243,6 +1233,18 @@
     table_note: Only source is a single tweet. More info needed. Assuming detail from GSA.
     source: https://xcancel.com/lbarronlopez/status/1886491276729544809
     source_name: X.com
+  - id: detail-sba-coristine
+    agency: SBA
+    from: GSA
+    from_truth: guessed
+    title: DOGE Advisor
+    title_type: advisor
+    type: detailed
+    start_date: 2025-02-03
+    start_date_truth: reported
+    table_note: guessing detail date from system access request
+    source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
+    source_name: Wired
   - id: detail-gsa-dhs-coristine
     type: detailed
     from: GSA
@@ -4532,9 +4534,9 @@
     title_type: advisor
     agency: SBA
     comment: Reported in a tweet from the date
-    table_note: identified by agency FOIA as having been at the agency, guessing detailed
-    source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
-    source_name: American Oversight
+    table_note: guessing detail start from system access
+    source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
+    source_name: Wired
   - id: detail-exim-park
     type: detailed
     agency: EXIM
