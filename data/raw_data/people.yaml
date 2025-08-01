@@ -1159,8 +1159,8 @@
     type: appointed
     salary: "$0"
     sort_date: 2025-01-20
-    start_date: 2025-01-(20)~
-    start_date_truth: inferred
+    start_date: 2025-01-20
+    start_date_truth: verified
     end_date: 2025-05-23
     end_date_truth: reported
     end_type: replaced
@@ -1210,6 +1210,16 @@
     comment: NYT links him to USCIS, but no other info public
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
     source_name: NYT
+  - id: gsa-opm-coristine
+    type: detailed
+    start_date: 2025-01-24
+    agency: OPM
+    from: GSA
+    table_note: >-
+      no MOU to confirm and SF-50 is for GSA, but I think he was detailed from GSA to OPM on this date
+      based on appointment affadavit
+    documents:
+    - onboard-opm-employee-4
   - id: detail-gsa-usaid-coristine
     type: detailed
     agency: USAID
