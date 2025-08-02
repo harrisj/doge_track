@@ -2,14 +2,14 @@ openapi: 3.0.4
 info:
   title: DOGE Track API
   description: |-
-    This is an API for the data on dogetrack.info. Much like the site it is a series of statically-generated files so there is no API key required!
+    This is an API for the data on dogetrack.info. Since it is a series of statically-generated files, there is no API key required!
   termsOfService: https://dogetrack.info/about/this-site/
   contact:
     email: mail@jacobharr.is
   license:
-    name: CC0 Public Domain
-    url: https://creativecommons.org/public-domain/cc0/
-  version: 1.0.12
+    name: Open Data Commons Attribution License (ODC-By)
+    url: https://opendatacommons.org/licenses/by/1-0/
+  version: "0.9.0"
 externalDocs:
   description: DOGE Track
   url: https://dogetrack.info/

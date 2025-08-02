@@ -27,7 +27,7 @@ If it weren't obvious, I am not a designer or a front-end master. There is a lot
 
 ## Creating Derivative Works
 
-There are no copyrights or any licenses for the data on this site. It is completely in the public domain for you to make any derivative works, as long as you understand the risks of the data containing errors. Go wild! If you do something cool that you want to share with me, please let me know though! Maybe we can even link to it or include it as part of this site.
+There are no copyrights or any licenses for the data on this site. [The data is in the public domain with only an attribution requirement](https://opendatacommons.org/licenses/by/1-0/), and you are welcome to use it for any purpose, provided that you understand the risk of errors. For your convenience, I also have provided the [site data in several different formats](/about/downloading-data/). Go wild! If you do something cool that you want to share with me, please let me know though! Maybe we can even link to it or include it as part of this site.
 
 
 ## Contributing Money

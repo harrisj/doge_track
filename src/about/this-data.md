@@ -80,11 +80,6 @@ There is a lot in here, and you don't need to understand it all or any of it. Th
 
 But I have all my data in a database, not YAML files! What do I do?
 
-### Creating Data files
-Luckily, it's very easy to write some more code to pull data out of the database and create new files in the `_data` directory. The next step in my generation process is to run a script that connects to the database and writes out these files. Easy!
-
-Now, this might seem silly to write YAML, read it into a DB and then write more YAML, but the second set of YAML files are more oriented towards the needs of my site's templates vs. the raw source date in the original. Of course, since Bridgetown is a Ruby app and remarkably flexible, I could instead put Ruby code in the `_data` directory to pull in the data, or I could even have it call the Sqlite3 database directly, but I found myself preferring the YAML files since it made it easier to debug errors that might arise during site generation.
-
 ### Creating the Frontend
 
 If it wasn't already obvious, I consider myself more of a Backend engineer than a web designer. But, this project turned out to be a useful project for playing with some modern technologies. For this project, I learned about the following new technologies used in the front-end:
