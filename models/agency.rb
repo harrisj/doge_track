@@ -18,9 +18,12 @@ class Agency < Sequel::Model
   many_to_many :cases, right_key: :case_no, left_key: :agency_id
   many_to_many :executive_orders
 
-  # REMOVE LATER
-  def obj_type
-    'Agency'
+  def roles_by_system
+    if system_roles.any?
+      system_roles.group_by(&:govt_system)
+    else
+      []
+    end
   end
 
   def all_agency_ids

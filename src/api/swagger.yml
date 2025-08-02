@@ -16,11 +16,12 @@ externalDocs:
 servers:
 - url: https://dogetrack.info/api/
 paths:
-  /people.json:
+  /aliases.json:
     get:
-      summary: people.json
-      description: A listing of all the people in DOGE Track with summary information.
-      operationId: getPeople
+      summary: aliases.json
+      description: Information about all the DOGE aliases in the system, including evidence and
+        identifications
+      operationId: getAliases
       responses:
         '200':
           description: Successful operation
@@ -29,26 +30,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/PersonItem'
-  /people/{slug}.json:
-    get:
-      summary: people/{slug}.json
-      description: Find a person by their slug
-      operationId: getPerson
-      parameters:
-      - name: slug
-        in: path
-        description: slug of the person to return
-        required: true
-        schema:
-          type: string
-      responses:
-        '200':
-          description: successful operation
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PersonRecord'
+                  $ref: '#/components/schemas/AliasRecord'
   /agencies.json:
     get:
       summary: agencies.json
@@ -82,8 +64,71 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/AgencyItem'
+  /events.json:
+    get:
+      summary: events.json
+      description: Returns all events
+      operationId: getEvents
+      responses:
+        '200':
+          description: "Successful return"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/EventRecord'
+  /people.json:
+    get:
+      summary: people.json
+      description: A listing of all the people in DOGE Track with summary information.
+      operationId: getPeople
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PersonItem'
+  /people/{slug}.json:
+    get:
+      summary: people/{slug}.json
+      description: Find a person by their slug
+      operationId: getPerson
+      parameters:
+      - name: slug
+        in: path
+        description: slug of the person to return
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PersonRecord'
 components:
   schemas:
+    AccessType:
+      enum:
+      - source-code
+      - read
+      - read-write
+      - admin
+      - unknown
+    AoType:
+      enum:
+      - director
+      - deputy
+      - cio
+      - cto
+      - isso
+      - other
+      - unknown
     CategoryType:
       description: The categories of DOGE people
       enum:
@@ -127,6 +172,12 @@ components:
       - promotion
       - demotion
       - unknown
+    SystemType:
+      enum:
+      - internal
+      - saas
+      - ssp
+      - unknown
     ExitType:
       enum:
       - fired
@@ -135,6 +186,35 @@ components:
       - replaced
       - removed
       - unknown
+    AliasRef:
+      type: object
+      properties:
+        id:
+          type: string
+        person:
+          $ref: '#/components/schemas/PersonRef'
+      required:
+      - id
+    AliasRecord:
+      type: object
+      properties:
+        id:
+          description: "The unique ID for the alias"
+          type: string
+        evidence:
+          type: array
+          description: An array of evidence for the alias identification (each item is a string in
+            Markdown format)
+          items:
+            type: string
+        person:
+          $ref: '#/components/schemas/PersonRef'
+        agency:
+          $ref: '#/components/schemas/AgencyRef'
+      required:
+      - id
+      - evidence
+      - agency
     AgencyRef:
       type: object
       properties:
@@ -186,6 +266,10 @@ components:
             type: array
             items:
               $ref: '#/components/schemas/PositionRecord'
+          systems:
+            type: array
+            items:
+              $ref: '#/components/schemas/SystemRecord'
     EdtfType:
       type: string
       description: A date in ISO 8601 Extended Date Time Format representation
@@ -221,6 +305,10 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/PersonRef'
+        aliases:
+          type: array
+          items:
+            $ref: '#/components/schemas/AliasRef'
       required:
       - id
       - type
@@ -300,6 +388,14 @@ components:
             type: array
             items:
               $ref: '#/components/schemas/PositionRecord'
+          systems_accessed:
+            type: array
+            items:
+              $ref: '#/components/schemas/SystemAccessRecord'
+          aliases:
+            type: array
+            items:
+              type: string
         required:
         - events
         - positions
@@ -390,3 +486,144 @@ components:
       - type
       - agency_id
       - agency
+    SystemRecord:
+      type: object
+      description: Represents a single IT system in the government
+      properties:
+        id:
+          description: A unique ID for the system
+          type: string
+        acronym:
+          description: An acronym for the system. This may not be unique and might include whitespace and
+            punctuation.
+          type: string
+        name:
+          description: The name of the system
+          type: string
+        type:
+          description: The type of the system
+          $ref: '#/components/schemas/SystemType'
+        description:
+          description: A description for the system
+          type: string
+        comment:
+          description: My non-public comments about the system
+          type: string
+        category:
+          description: A category for the system
+          type: string
+        theme:
+          description: A theme representing why DOGE is accessing this system
+          type: string
+        population:
+          description: A short description of what type of people are in this system
+          type: string
+        risk:
+          description: A short description of what sort of risks might happen because of DOGE's access to
+            the system
+          type: string
+        link:
+          description: A URL for information about the system
+          type: string
+        pia:
+          description: A link to the Privacy Impact Assessment for the system if known
+          type: string
+        sorn:
+          description: A link to a System of Records Notice (SORN) for the system if known
+          type: string
+        doge_created:
+          description: True if DOGE created this system
+          type: boolean
+          default: false
+        doge_modifications:
+          description: A description of modifications that DOGE made to the system if known
+          type: string
+        agency:
+          description: If not part of an Agency record, a reference to what agency this system belongs to.
+          $ref: '#/components/schemas/AgencyRef'
+        access:
+          description: An array of system access records for this system
+          type: array
+          items:
+            $ref: '#/components/schemas/SystemAccessRecord'
+      required:
+      - id
+      - name
+      - type
+      - description
+    SystemAccessRecord:
+      type: object
+      description: Represents a single access by a DOGE member against an IT system
+      properties:
+        id:
+          description: A unique identifier for the system access
+          type: string
+        type:
+          description: The type of access being granted
+          $ref: '#/components/schemas/AccessType'
+        date_requested:
+          description: "If known, the date access was requested"
+          $ref: '#/components/schemas/EdtfType'
+        date_requested_truth:
+          $ref: '#/components/schemas/TruthType'
+        date_granted:
+          $ref: '#/components/schemas/EdtfType'
+        date_grant_truth:
+          $ref: '#/components/schemas/TruthType'
+        ao_name:
+          description: The name of the authorizing official granting access
+          type: string
+        ao_title:
+          description: The title of the authorizing official granting access"
+          type: string
+        ao_office:
+          description: The office of the authorizing official
+          type: string
+        ao_type:
+          description: The type of the authorizing official
+          $ref: '#/components/schemas/AoType'
+        ao_doge:
+          description: Set to true if access was directly authorized by a DOGE member
+          type: boolean
+        ao_truth:
+          $ref: '#/components/schemas/TruthType'
+        date_last_used:
+          description: "The date last used if provided"
+          $ref: '#/components/schemas/EdtfType'
+        date_used_truth:
+          $ref: '#/components/schemas/TruthType'
+        date_revoked:
+          description: "The date access was revoked"
+          $ref: '#/components/schemas/EdtfType'
+        date_revoked_truth:
+          $ref: '#/components/schemas/TruthType'
+        date_nte:
+          description: "The date access is not to exceed"
+          $ref: '#/components/schemas/EdtfType'
+        date_nte_truth:
+          $ref: '#/components/schemas/TruthType'
+        never_accessed:
+          description: Set to true if the grantee was reported to never have accessed the data
+          type: boolean
+        source:
+          description: The source URL for this info
+          type: string
+        source_name:
+          type: string
+        comment:
+          description: For internal comments
+          type: string
+        table_note:
+          description: Text to include in the display table
+          type: string
+        person:
+          $ref: '#/components/schemas/PersonRef'
+        agency:
+          description: The agency for the access. For SSP and SaaS applications, this might be different
+            than the system agency.
+          $ref: '#/components/schemas/AgencyRef'
+        system:
+          $ref: '#/components/schemas/SystemRecord'
+      required:
+      - id
+      - type
