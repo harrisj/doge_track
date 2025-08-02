@@ -111,6 +111,20 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PersonRecord'
+  /systems.json:
+    get:
+      summary: systems.json
+      description: A listing of all the systems in DOGE Track.
+      operationId: getSystem
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/SystemRecord'
 components:
   schemas:
     AccessType:

@@ -52,10 +52,13 @@ Finally, I have started to create a JSON API for the data. Since it is built usi
 
 Full Swagger documentation is available at [https://dogetrack.info/api/](/api/), but for now it includes the following endpoints:
 
-- [/api/people.json](/api/people.json) - a listing of all the people with links to further details
-- [/api/people/{slug}.json](/api/people/luke-farritor.json) - information about a specific person
+- [/api/aliases.json](/api/aliases.json) - all the DOGE aliases
 - [/api/agencies.json](/api/agencies.json) - a listing of all agencies with links to further details
 - [/api/agencies/{slug}.json](/api/agencies/hhs.json) - information about a specific agency
+- [/api/events.json](/api/events.json) - all of the events in the database
+- [/api/people.json](/api/people.json) - a listing of all the people with links to further details
+- [/api/people/{slug}.json](/api/people/luke-farritor.json) - information about a specific person
+- [/api/systems.json](/api/systems.json) - all the systems I know about
 
 More endpoints to be added in the future, but this is a start!
 

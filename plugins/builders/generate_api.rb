@@ -188,7 +188,13 @@ module Builders
       File.write(file, JSON.pretty_generate(out))
     end
 
-    def generate_systems_json; end
+    def generate_systems_json
+      systems = GovtSystem.eager(:system_roles).all
+      out = systems.map { |x| system_record(x) }
+
+      file = site.in_destination_dir('api', 'systems.json')
+      File.write(file, JSON.pretty_generate(out))
+    end
 
     def build
       hook :site, :post_write do |_|
