@@ -50,24 +50,24 @@ In addition, there are some cases where we also know DOGE staff have left positi
 <table class="my-4 table table-xs sm:table-sm md:table-md table-zebra">
   <thead>
     <tr>
+      <th>Exit</th>
       <th class="sm:hidden"></th>
       <th>Name</th>
       <th class="hidden sm:table-cell">Category</th>
       <th>Agency</th>
-      <th>Exit</th>
       <th>Exit Type</th>
     </tr>
   </thead>
   <tbody>
-    {% left_positions = Position.eager_graph(:person).exclude(end_date: nil).where(govt_exit_date: nil).exclude(end_type: 'replaced').all %}
+    {% left_positions = Position.eager_graph(:person).exclude(end_date: nil).where(govt_exit_date: nil).exclude(end_type: 'replaced').order(:end_date).all %}
     
     {% left_positions.each do |pos| %}
     <tr>
+      <td class="align-top">{{ EdtfFormat.new(pos.end_date, :compact ) | raw }}</td>
       <td class="sm:hidden align-top"><i class="fa-sharp fa-solid {{ person_icon(pos.person) }}"></i></td>
       <td class="align-top">{{ person_link(pos.person) }}</td>
       <td class="hidden sm:table-cell align-top"><i class="fa-sharp fa-solid {{ person_icon(pos.person) }}"></i> {{ pos.person.category | titleize }}</td>
       <td class="align-top">{{ agency_link(pos.agency_id) }}</td>
-      <td class="align-top">{{ EdtfFormat.new(pos.end_date, :compact ) | raw }}</td>
       <td class="align-top">{{ position_end_type(pos) | raw }}</td>
     </tr>
     {% end %}
