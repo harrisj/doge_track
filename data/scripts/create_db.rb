@@ -196,7 +196,6 @@ DB.create_table! :system_roles do
   string :date_revoked_truth
   string :date_nte
   string :date_nte_truth
-  string :last_accessed
   boolean :never_accessed, null: false, default: false
   string :source
   string :source_name

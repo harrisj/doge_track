@@ -730,20 +730,22 @@
     never_accessed: true
     date_granted: 2025-01-28
     date_grant_truth: verified
-    date_revoked: 2025-02-06
+    date_revoked: 2025-07-30
     date_revoked_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
     source_name: court doc
     name: Riccardo Biasini
   - id: ehri-opm-6
-    type: unknown
+    type: admin
     alias: OPM-06
     date_granted: 2025-01-28
     date_grant_truth: verified
     never_accessed: true
-    date_revoked: 2025-02-06
+    date_revoked: 2025-07-21
     date_revoked_truth: verified
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    date_last_used: 2025-06-26
+    date_used_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.141.0.pdf
     source_name: court doc
     name: Nikhil Rajpal
 
@@ -1029,7 +1031,8 @@
     name: Adam Ramada
     date_granted: 2025-02-04
     date_grant_truth: inferred
-    last_accessed: 2025-02-04
+    date_last_used: 2025-02-04
+    date_used_truth: verified
     date_revoked: 2025-03-06
     date_revoked_truth: verified
     table_note: not allowed to view PII
@@ -1190,6 +1193,17 @@
   risk: There are concerns it is an external system and did not go through a privacy review
   agency: OPM
   doge_created: true
+  access:
+  - id: gwes-opm-6
+    type: admin
+    alias: OPM-06
+    date_granted: 2025-01-30
+    date_grant_truth: verified
+    date_revoked: 2025-07-21
+    date_revoked_truth: verified
+    never_accessed: true
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.141.0.pdf
+    name: Nikhil Rajpal
 
 - name: Grant Solutions
   id: grantsolutions
@@ -2949,21 +2963,27 @@
   agency: OPM
   access:
   - id: usa-performance-opm-2
-    type: unknown
+    type: admin
     agency: OPM
     table_note: system name is listed as "USA Performance - U.S. Office of Personnel Management"
     date_granted: 2025-01-28
     date_grant_truth: verified
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    date_revoked: 2025-07-30
+    date_revoked_truth: verified
+    never_accessed: true
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.141.0.pdf
     alias: OPM-02
     name: Riccardo Biasini
   - id: usa-performance-opm-3
-    type: unknown
+    type: admin
     agency: OPM
     table_note: system name is listed as "USA Performance - U.S. Office of Personnel Management"
     date_granted: 2025-01-20
     date_grant_truth: verified
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    date_revoked: 2025-07-21
+    date_revoked_truth: verified
+    never_accessed: true
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.141.0.pdf
     alias: OPM-03
     name: Akash Bobba
   - id: usa-performance-opm-4
@@ -2976,12 +2996,15 @@
     alias: OPM-04
     name: Edward Coristine
   - id: usa-performance-opm-6
-    type: unknown
+    type: admin
     agency: OPM
     table_note: system name is listed as "USA Performance - U.S. Office of Personnel Management"
     date_granted: 2025-01-28
     date_grant_truth: verified
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    date_revoked: 2025-07-21
+    date_revoked_truth: verified
+    never_accessed: true
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.141.0.pdf
     alias: OPM-06
     name: Nikhil Rajpal
   - id: usa-performance-opm-7
@@ -3194,6 +3217,18 @@
     PII of individuals who have applied for federal jobs, including SSN, home address, and employment
     records
   agency: OPM
+  access:
+  - id: usajobs-opm-6
+    type: admin
+    alias: OPM-06
+    date_granted: 2025-01-28
+    date_grant_truth: verified
+    date_revoked: 2025-07-21
+    date_revoked_truth: verified
+    date_last_used: 2025-01-31
+    date_used_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.141.0.pdf
+    name: Nikhil Rajpal
 
 - name: USAccess
   id: usaccess
@@ -3355,9 +3390,20 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
     source_name: court doc
     name: Riccardo Biasini
+  - id: eopf-opm-3
+    type: read
+    date_granted: 2025-04-07
+    date_grant_truth: verified
+    date_revoked: 2025-07-21
+    date_revoked_truth: verified
+    date_last_used: 2025-06-26
+    date_used_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.141.0.pdf
+    alias: OPM-03
+    name: Akash Bobba
   - id: eopf-opm-6
     type: unknown
-    alias: OPM-02
+    alias: OPM-06
     never_accessed: true
     date_granted: 2025-01-28
     date_grant_truth: verified
@@ -3365,4 +3411,4 @@
     date_revoked_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
     source_name: court doc
-    name: Riccardo Biasini
+    name: Nikhil Rajpal
