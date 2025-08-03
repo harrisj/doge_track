@@ -105,6 +105,7 @@ module Builders
         h = agency_ref(a)
         h[:events] = a.events.map { |e| event_record(e) }
         h[:positions] = a.positions.map { |p| position_record(p) }
+        h[:details_from] = a.details_from.map { |p| position_record(p) }
         h[:systems] = a.roles_by_system.map do |govt_system, roles|
           s = system_record(govt_system, include_roles: false, include_agency: false)
           # Need to do this instead of all roles for a system because of SSP and SaaS services

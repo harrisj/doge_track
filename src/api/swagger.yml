@@ -280,6 +280,11 @@ components:
             type: array
             items:
               $ref: '#/components/schemas/PositionRecord'
+          details_from:
+            description: Details of staff from this agency to other agencies
+            type: array
+            items:
+              $ref: '#/components/schemas/PositionRecord'
           systems:
             type: array
             items:

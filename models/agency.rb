@@ -9,7 +9,7 @@ class Agency < Sequel::Model
   many_to_one :parent, class: self
   one_to_many :children, key: :parent_id, class: self
 
-  one_to_many :details_from, class: :Position, key: :from_agency
+  one_to_many :details_from, class: :Position, key: :from_agency_id
   one_to_many :positions, eager_graph: %i[agency from_agency person doge_alias]
 
   one_to_many :doge_aliases
