@@ -1,9 +1,15 @@
 {% if position.agency_id %}
   {% raise position.inspect if position.agency.nil? %}
   
-  <span class="md:text-nowrap">{% if position.from_agency_id %}
-    {% arrow = position.type == 'internal' ? 'arrows-left-right' : 'arrow-right' %}
-    <i class="fa-sharp fa-solid fa-{{ arrow }}"></i> {{ agency_link(position.agency_id, position.agency.short_name) }}
+  <span class="md:text-nowrap">
+  {% if position.type == 'detailed' %}
+    {% if position.agency == agency %}
+      <i class="fa-sharp fa-solid fa-arrow-left"></i> {% if position.from_agency %}{{ agency_link(position.from_agency, position.from_agency.short_name) }}{% else %}???{% end %}
+    {% else %}
+      <i class="fa-sharp fa-solid fa-arrow-right"></i> {{ agency_link(position.agency, position.agency.short_name) }}
+    {% end %}
+  {% elsif position.type == 'internal' %}
+    <i class="fa-sharp fa-solid fa-arrows-left-right"></i> {{ agency_link(position.agency, position.agency.short_name) }}
   {% elsif position.type == 'appointed' || position.type == 'consultant' %}
     <i class="fa-sharp fa-solid fa-person-to-door"></i>
   {% elsif position.type == 'promotion' %}

@@ -25,7 +25,7 @@
     case pos.type
     when 'other'
       nil
-    when 'detailed'
+    when 'detailed out as'
       if pos.from_truth != 'reported' && pos.from_truth != 'verified'
         str = "likely "
       else
@@ -33,9 +33,9 @@
       end
 
       if pos.from_agency == agency
-        str += "detailed to #{agency_link(pos.agency)}"
+        str += "detailed"
       else
-        str += "detailed from #{agency_link(pos.from_agency)}"
+        str += "detailed in"
       end
     when 'promotion'
       pos.title ? 'promoted to' : 'promoted'
