@@ -269,10 +269,12 @@
 - name: Samuel Berry
   sort_name: Berry
   slug: sam-berry
-  category: unknown
+  category: wrecker
+  skill: coder
   blurb: >-
     He was named as a member of the DOGE team at USDA in response to a FOIA request from American Oversight.
-    Otherwise, I have no other info yet.
+    Based on a name and image match from the USDA Flickr account of him being sworn in, he seems to be
+    a software developer and founder of a small web company [Ten Five Engineering](https://tenfive.engineering/about/).
   positions:
   - id: usda-berry
     agency: USDA
@@ -730,7 +732,10 @@
   blurb: >-
     Brian Burroughs was apparently introduced to GSA staff in June by Thomas Shedd and Stephen Ehikian.
     It apparently seemed “like they were looking for things for him to work on.” Until I find out what
-    those things might be, I am classifying him as an unknown.
+    those things might be, I am classifying him as an unknown. There is a Brian Burroughs who is the CTO
+    of [Business Operational Concepts], a small contracting firm that does business with the federal government
+    and GSA. It's possible he is that person, but the name is generic enough that it might be someone
+    else.
   positions:
   - id: gsa-burroughs
     type: unknown
@@ -748,7 +753,7 @@
   sort_name: Carter
   slug: joshua-carter
   linkedin: https://www.linkedin.com/in/josh-carter-cfa-caia-0a854b4b/
-  category: unknown
+  category: wrecker
   skill: analyst
   blurb: >-
     I don't have much info on this person yet, but they were named as being a Senior Advisor at the SBA,
@@ -980,6 +985,8 @@
   sort_name: Choi
   slug: yat-choi
   category: support
+  skill: coder
+  linkedin: https://www.linkedin.com/in/yat-choi/
   blurb: >-
     An Airbnb engineer working with alumni Joe Gebbia and Andrew Vilcsak on the retirement modernization
     project at the OPM, Yat Choi is also reportedly a Canadian working on a temporary visa. It true, this
@@ -1475,11 +1482,17 @@
   category: unknown
   blurb: >-
     I don't have much info on this person yet, but they were named as being a Special Advisor at the SBA,
-    which was a title also assigned to known DOGE member Aram Moghaddassi
+    which was a title also assigned to known DOGE member Aram Moghaddassi. His background does seem to
+    be as a field organizer for the Trump campaign, so while he matches the "young, eager, doesn't ask
+    questions" DOGE demographic, he probably isn't writing code.
   positions:
   - id: sba-damiano
     type: unknown
     agency: SBA
+    start_date: 2025-01-(20)~
+    sort_date: 2025-01-20
+    start_date_truth: inferred
+    start_source: https://www.signalhire.com/profiles/ethan-damiano/224958028
     title: Special Advisor
     title_type: advisor
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
@@ -2482,21 +2495,28 @@
   slug: mike-gonzalez
   age: 36
   skill: executive
-  category: unknown
+  category: support
+  linkedin: https://www.linkedin.com/in/michaelvincentgonzalez/
   blurb: >-
     Mike Gonzalez was included in a roundup by Techcrunch of 19 founders and VCs who are part of DOGE.
     He is linked to Trump administation AI czar David Sacks; both worked at the company Zenefits. He also
     founded another human resources startup.
+  govt_exit_date: 2025-06-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: opm-gonzalez
     agency: OPM
     type: appointed
     sort_date: 2025-03-15
     start_date: 2025-03-XX
-    start_date_truth: reported
+    start_date_truth: verified
+    end_date: 2025-06-XX
+    end_date_truth: verified
+    end_type: resigned
     title: Senior Advisor
     title_type: advisor
-    source: https://techcrunch.com/2025/03/26/19-founders-and-vcs-working-with-elon-musks-doge/#mike-gonzalez
+    source: https://www.linkedin.com/in/michaelvincentgonzalez/
     source_name: Techcrunch
 
 - name: Antonio Gracias
@@ -5099,7 +5119,8 @@
 - name: Frank Schuler
   sort_name: Schuler
   slug: frank-schuler
-  category: unknown
+  category: support
+  skill: executive
   govt_exit_date: 2025-07-29
   govt_exit_truth: reported
   govt_exit_type: resigned
