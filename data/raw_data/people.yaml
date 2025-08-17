@@ -5641,9 +5641,6 @@
   age: 42
   skill: executive
   category: leadership
-  govt_exit_date: 2025-05-23
-  govt_exit_truth: reported
-  govt_exit_type: resigned
   positions:
   - id: detail-doge-hhs-smith
     type: detailed
@@ -5663,6 +5660,9 @@
     start_date: 2025-02-XX
     start_date_truth: verified
     sort_date: 2025-02-01
+    end_date: 2025-05-23
+    end_date_truth: inferred
+    end_type: resigned
     comment: identified as USDS detail on 2/13 declaration
     table_note: identified as dual appointee at HHS and DOGE / detailed from USDS
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.82.3.pdf
@@ -5679,6 +5679,17 @@
     comment: All I have is his signed SF-61
     documents:
     - onboard-hhs-brad-smith
+  - id: state-brad-smith
+    agency: State
+    type: appointed
+    start_date: 2025-08-(12)~
+    start_date_truth: reported
+    sort_date: 2025-08-12
+    supervisory: true
+    table_note: some sort of leadership over global health division
+    source: >-
+      https://www.semafor.com/article/08/12/2025/former-senior-doge-official-returns-to-the-trump-administration
+    source_name: Semafor
 
 - name: John Solly
   sort_name: Solly

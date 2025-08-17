@@ -951,3 +951,46 @@
   - State
   - CPB
   id: 6MnCvHNL
+
+- date: 2025-08-12
+  type: legal
+  event: >-
+    Citing a Supreme Court shadow docket ruling as precedent, a DC Appeals Court overturned a stay from
+    February and ordered that DOGE should be allowed to access sensitive data at the Treasury Department,
+    OPM and Department of Education.
+  source: https://www.nytimes.com/2025/08/12/us/politics/appeals-court-doge-data.html
+  source_name: NYT
+  agency:
+  - Treasury
+  - IRS
+  - OPM
+  - Education
+  id: bgrnWVL6
+
+- date: 2025-08-13
+  type: interagency
+  event: >-
+    In a call hosted by the US CIO, DOGE team lead Scott Langmack shares info on an AI tool named SweetREX
+    Deregulation AI Plan Builder developed by Christoper Sweet to review agency regulations for elimination.
+    This is the same tool highlighted by DOGE in a presentation to the White House earlier in the month.
+    Agency representatives from the Environmental Protection Agency, the Department of State, and the
+    Federal Deposit Insurance Corporation are on the call. Steve Davis also was on the call despite having
+    left DOGE and asked if the tool could be open-sourced.
+  named:
+  - Scott Langmack
+  - Christopher Sweet
+  - Steve Davis
+  interagency_doge_reps:
+    HUD:
+    - Scott Langmack
+    - Christopher Sweet
+  agency:
+  - EOP
+  - DOGE
+  - EPA
+  - State
+  - FDIC
+  - HUD
+  source: https://www.wired.com/story/sweetrex-deregulation-ai-us-government-regulation-doge/
+  source_name: Wired
+  id: 6mONSb0E
