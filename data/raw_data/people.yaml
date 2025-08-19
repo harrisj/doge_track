@@ -2691,9 +2691,6 @@
   skill: executive
   category: enabler
   linkedin: https://www.linkedin.com/in/tyler-hassen-802b4a12/
-  govt_exit_date: 2025-08-01
-  govt_exit_truth: reported
-  govt_exit_type: resigned
   blurb: >-
     As a Texas oil executive with myriad investments in the field, it's clear why Tyler Hassen would want
     a senior role in the Department of the Interior even though his personal connection to Musk's orbit
@@ -2730,14 +2727,15 @@
     agency: DOI
     source: https://www.eenews.net/articles/doge-official-appointed-head-of-policy-at-interior/
     source_name: E&E News
-  - id: doi-hassan-principal
+  - id: doi-hassen-principal
     agency: DOI
     type: promotion
     start_date: 2025-04-XX
     start_date_truth: reported
     end_date: 2025-08-01
     end_date_truth: reported
-    end_type: resigned
+    end_type: replaced
+    replaced_by: doi-hassen-unknown
     end_source: https://www.nytimes.com/2025/07/25/climate/doge-interior-tyler-hassen.html
     title: Principal Deputy Assistant Secretary
     title_type: director
@@ -2746,6 +2744,15 @@
     source: >-
       https://apnews.com/article/hassen-burgum-musk-interior-energy-conflicts-830e9df68c7869e943f96c4b5e384f20
     source_name: AP
+  - id: doi-hassen-unknown
+    agency: DOI
+    type: unknown
+    start_date: 2025-08-02
+    start_date_truth: reported
+    table_note: Reportedly still at agency, but unclear in what role
+    source: >-
+      https://subscriber.politicopro.com/article/eenews/2025/08/18/doge-official-is-still-at-interior-after-expected-exit-00513599
+    source_name: E&E News
 
 - name: Jim Hickey
   sort_name: Hickey
