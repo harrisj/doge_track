@@ -22,8 +22,8 @@ systems.each do |system_hash|
 
     next unless sa[:alias]
 
-    sa[:name] = nil
-    sa[:name] = aliases_lookup[sa[:alias]] if aliases_lookup.key? sa[:alias]
+    name = aliases_lookup[sa[:alias]] if aliases_lookup.key? sa[:alias]
+    sa[:name] = name unless name.nil?
   end
 end
 
