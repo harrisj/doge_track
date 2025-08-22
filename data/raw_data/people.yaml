@@ -788,12 +788,17 @@
     agency head. Once in power, he quickly places all employees on administrative leave and starts firing
     staff and cancelling grants. Much like a vampire, if he shows up at the door of your agency, do not
     let him inside.
+  govt_exit_date: 2025-08-06
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: gsa-cavanaugh
     type: appointed
     agency: GSA
     start_date: 2025-02-03
     start_date_truth: reported
+    end_date: 2025-08-06
+    end_type: resigned
     salary: "$120,500"
     comment: >-
       Introduces Frank Schuler on a video call at GSA in February; listed in ProPublica roundup on Feb
@@ -807,7 +812,6 @@
     from_truth: guessed
     start_date: 2025-02-21
     start_date_truth: verified
-    end_date_truth: reported
     table_note: verified via court filing
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
     source_name: court doc
