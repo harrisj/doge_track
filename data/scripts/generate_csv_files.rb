@@ -139,9 +139,9 @@ def generate_positions_csv
         pos.table_note,
         pos.replaced_by,
         pos.same_as,
-        pos.person ? pos.person.govt_exit_date : nil,
-        pos.person ? pos.person.govt_exit_truth : nil,
-        pos.person ? pos.person.govt_exit_type : nil
+        pos.person&.govt_exit_date,
+        pos.person&.govt_exit_truth,
+        pos.person&.govt_exit_type
       ]
     end
   end
