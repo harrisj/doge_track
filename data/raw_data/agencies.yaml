@@ -7988,6 +7988,15 @@
       American Federation of State, County and Municipal Employees, AFL-CIO v. Social Security Administration
       (D. Md.)
     source_name: court doc
+  - date: 2025-03-17
+    type: access
+    event: >-
+      The Enterprise Data Warehouse (EDW) team at Social Security discovers that DOGE's access to the
+      EDW was not authorized through the standard process.
+    source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+    source_name: GAP
+    agency: SSA
+    id: c2iTWFbX
   - date: 2025-03-19
     type: access
     event: >-
@@ -8030,6 +8039,25 @@
     source_name: NYT
     agency: SSA
     id: 4F9jgz4j
+  - date: 2025-03-21
+    type: access
+    event: >-
+      Less than 24 hours after DOGE's access was revoked by the temporary restraining order, senior members
+      of the EDW team receive emails ordering them to restore access for two members of the DOGE team.
+      Furthermore, they were ordered to grant them additional expanded privileges.
+    source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+    source_name: GAP
+    agency: SSA
+    id: 78mrZQrX
+  - date: 2025-03-24
+    type: access
+    event: >-
+      The Social Security Administration's Office of Information Security (OIS) revokes access for DOGE
+      members again, restoring enforcement of the temporary restraining order.
+    source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+    source_name: GAP
+    agency: SSA
+    id: 77hlovkP
   - date: 2025-03-24
     type: disruption
     event: >-
@@ -8361,6 +8389,52 @@
     source_name: WSJ
     agency: SSA
     id: 7hXwZjX4
+  - date: 2025-06-10
+    type: access
+    event: >-
+      John Solly asks staff in the Social Security Administration's CIO office (then possibly under the
+      leadership of Scott Coulter or Aram Moghaddassi) to create a cloud environment to upload the NUMIDENT
+      data to. The stated reason was purported reason for the project was to improve the way that SSA
+      exchanges data.
+    named:
+    - John Solly
+    linked:
+    - Aram Moghaddassi
+    source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+    source_name: GAP
+    agency: SSA
+    id: mSeONpfj
+  - date: 2025-06-11
+    type: action
+    event: >-
+      John Solly modifies his request to instead ask to transfer NUMIDENT data to a test environment.
+      This is not entirely unheard of, but it's considered a very insecure practice to move production
+      data into a testing environment that might not be authorized for that. DOGE then amends their request
+      again to ask for full admin access to SSA's cloud environment.
+    named:
+    - John Solly
+    source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+    source_name: GAP
+    agency: SSA
+    id: 2xFYeu9H
+  - date: 2025-06-12
+    type: disruption
+    event: >-
+      A career official writes up a Risk Acceptance Request Form to share with Aram Moghaddassi and another
+      unnamed career official in the office of the CIO at Social Security about DOGE's request to have
+      administrative access to a separate Virtual Private Cloud within the Amazon Web Services infrastructure
+      at SSA. The official classifies this as high-risk due a proposal to copy NUMIDENT data to a developer
+      environment with looser access controls and security measures. DOGE developers would also be able
+      to make this data publicly accessible without following the Authority to Operate (ATO) requirements
+      for any new public services and install software not approved for operation in SSA infrastructure.
+    named:
+    - Aram Moghaddassi
+    linked:
+    - John Solly
+    source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+    source_name: GAP
+    agency: SSA
+    id: 4YbBDKKK
   - date: 2025-06-23
     type: sighting
     event: >-
@@ -8374,6 +8448,29 @@
     source: https://www.wired.com/story/big-balls-social-security-administration/
     source_name: Wired
     id: 5eFonNQd
+  - date: 2025-06-23
+    type: access
+    event: >-
+      Career staff in the Office of the CIO at Social Security approved DOGE's request to setup their
+      own separate cloud environment apart from the usual oversight and processes of cloud services at
+      SSA. They deny a request by DOGE to transfer highly-sensitive NUMIDENT data to the cloud.
+    source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+    source_name: GAP
+    agency: SSA
+    id: nRkE1RFB
+  - date: 2025-06-25
+    type: access
+    event: >-
+      Reportedly acting as a joint CIO at Social Security, Mike Russo overrides the concerns of junior
+      staff in the Office of the CIO at the Social Security Administration and approves a request by John
+      Solly to transfer NUMIDENT data into the new DOGE-controlled cloud environment.
+    named:
+    - John Solly
+    - Mike Russo
+    source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+    source_name: GAP
+    agency: SSA
+    id: 6sBdoQg6
   - date: 2025-06-28
     agency: SSA
     type: disruption
@@ -8442,6 +8539,36 @@
       https://www.govexec.com/management/2025/07/social-security-signals-potential-benefit-disruptions-fall-those-still-getting-paper-checks/406710/
     source_name: GovExec
     id: 2ckAriW2
+  - date: 2025-07-15
+    type: disruption
+    event: >-
+      Acting in his role as the CIO for Social Security Administration, Aram Moghaddassi authorizes a
+      Provisional Authority to Operate (P-ATO) for the project of moving the NUMIDENT data from Social
+      Security's controlled environment into the special cloud soley operated by DOGE. As the CIO, he
+      is allowed to assume the risk of bypassing mandatory security requirements, but not if it violates
+      federal law or puts sensitive data at risk of being stolen.
+    source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+    source_name: GAP
+    agency: SSA
+    id: 52hHHO4P
+  - date: 2025-08-11
+    type: action
+    event: >-
+      Expressing concerns that the lax security of DOGE's cloud could lead to the leak of every American's
+      social security number (and the requirement ro reissue new ones), the Chief Data Officer of the
+      Social Security Administration contacts Edward Coristine and John Solly to request information about
+      the security of DOGE's cloud. He is never granted a reply and learns that the SSA Office of General
+      Counsel (headed by DOGE member Mark Steffensen) has advised employees not to respond to his inquiries.
+    named:
+    - Edward Coristine
+    - John Solly
+    linked:
+    - Aram Moghaddassi
+    - Mark Steffensen
+    source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+    source_name: GAP
+    agency: SSA
+    id: 4wAh9b8o
 
 - name: State Department
   id: State

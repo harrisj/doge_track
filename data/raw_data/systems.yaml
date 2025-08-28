@@ -2570,8 +2570,7 @@
   agency: SSA
   access:
   - id: pssnap-ssa-9
-    type: read
-    alias: SSA-09
+    type: write
     date_granted: 2025-03-14
     date_grant_truth: verified
     comment: >-
@@ -2582,6 +2581,18 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
     source_name: court doc
     name: Payton Rehling
+  - id: pssnap-moghaddassi
+    type: read-write
+    date_granted: 2025-03-14
+    date_grant_truth: verified
+    ao_type: director
+    ao_name: Leland Dudek
+    ao_doge: true
+    name: Aram Moghaddassi
+    source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+    table_note: >-
+      "these profiles concerningly included equipment pin access and write access," the PIN would allow
+      them to make edits without it being traced to an individual
 
 - name: Physical Access Control
   id: cfpb-pac
