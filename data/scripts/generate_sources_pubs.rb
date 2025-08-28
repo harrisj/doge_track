@@ -44,6 +44,12 @@ agencies_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'agencies.ya
 interagency = YAML.unsafe_load(File.read(interagency_file), symbolize_names: true)
 agencies = YAML.unsafe_load(File.read(agencies_file), symbolize_names: true)
 
+people_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'people.yaml')
+people = YAML.unsafe_load(File.read(people_file), symbolize_names: true)
+
+systems_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'systems.yaml')
+systems = YAML.unsafe_load(File.read(systems_file), symbolize_names: true)
+
 agencies.each do |agency|
   agency[:events].each do |event|
     source_from_event!(event, sources_by_url, publishers_by_hostname)
@@ -52,6 +58,20 @@ end
 
 interagency.each do |event|
   source_from_event!(event, sources_by_url, publishers_by_hostname)
+end
+
+people.each do |person|
+  person[:positions].each do |pos|
+    source_from_event!(pos, sources_by_url, publishers_by_hostname)
+  end
+end
+
+systems.each do |system|
+  next unless system[:access]
+
+  system[:access].each do |role|
+    source_from_event!(role, sources_by_url, publishers_by_hostname)
+  end
 end
 
 out_sources_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'sources_out.yaml')

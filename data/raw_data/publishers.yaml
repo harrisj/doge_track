@@ -6,17 +6,41 @@
   slug: 404media
   hostname: 404media.co
 
+- id: 18f
+  name: 18F
+  short_name: 18F
+  slug: 18f
+  hostname: 18f.gsa.gov
+
 - id: abc-news
   name: ABC News
   short_name: ABC News
   slug: abc-news
   hostname: abcnews.go.com
 
+- id: presidency
+  name: The American Presidency Project
+  short_name: American Presidency
+  slug: presidency
+  hostname: presidency.ucsb.edu
+
+- id: ars-technica
+  name: Ars Technica
+  short_name: Ars Technica
+  slug: ars-technica
+  hostname: arstechnica.com
+
 - id: assoc-press
   name: The Associated Press
   short_name: AP
   slug: assoc-press
   hostname: apnews.com
+
+- id: afge
+  name: Association of Federal Government Employees
+  short_name: AFGE
+  slug: afge
+  hostname: afge.org
 
 - id: artnet
   name: ArtNet News
@@ -29,6 +53,12 @@
   short_name: Art News
   slug: art-news
   hostname: artnews.com
+
+- id: asis
+  name: ASIS International
+  short_name: ASIS Intl.
+  slug: asis
+  hostname: asisonline.org
 
 - id: atlantic
   name: The Atlantic
@@ -60,11 +90,17 @@
   slug: banking-journal
   hostname: bankingjournal.aba.com
 
-- id: Bloomberg
+- id: bloomberg
   name: Bloomberg
   short_name: Bloomberg
   slug: bloomberg
   hostname: bloomberg.com
+
+- id: bloomberg-govt
+  name: Bloomberg Government
+  short_name: Bloomberg
+  slug: bloomberg-govt
+  hostname: news.bgov.com
 
 - id: bloomberg-law
   name: Bloomberg Law
@@ -72,11 +108,23 @@
   slug: bloomberg-law
   hostname: news.bloomberglaw.com
 
+- id: bloomberg-tax
+  name: Bloomberg Tax
+  short_name: Bloomberg
+  slug: bloomberg-tax
+  hostname: news.bloombergtax.com
+
 - id: bluesky
   name: Bluesky
   short_name: Bluesky
   slug: bluesky
   hostname: bsky.app
+
+- id: bluesky-cdn
+  name: Bluesky
+  short_name: Bluesky
+  slug: bluesky-cdn
+  hostname: web-cdn.bsky.app
 
 - id: business-insider
   name: Business Insider
@@ -89,6 +137,24 @@
   short_name: CBS
   slug: cbs-news
   hostname: cbsnews.com
+
+- id: chronicle
+  name: The Chronicle of Higher Education
+  short_name: Chronicle Higher Ed.
+  slug: chronicle
+  hostname: chronicle.com
+
+- id: cjr
+  name: Columbia Journalism Review
+  short_name: CJR
+  slug: cjr
+  hostname: cjr.org
+
+- id: clearinghouse
+  name: Civil Rights Litigation Clearinghouse
+  short_name: Civil Rights Clearinghouse
+  slug: clearinghouse
+  hostname: clearinghouse.net
 
 - id: cloudbrain
   name: Cloudbrain
@@ -108,6 +174,12 @@
   slug: cnn
   hostname: cnn.com
 
+- id: cnn-edition
+  name: CNN
+  short_name: CNN
+  slug: cnn-edition
+  hostname: edition.cnn.com
+
 - id: cfslm
   name: Consumer Financial Services Law Monitor
   short_name: Consumer Fin. Services Law
@@ -119,6 +191,12 @@
   short_name: Common Dreams
   slug: common-dreams
   hostname: commondreams.org
+
+- id: consulting-us
+  name: Consulting.us
+  short_name: Consulting.us
+  slug: consulting-us
+  hostname: consulting.us
 
 - id: consumer-affairs
   name: Consumer Affairs
@@ -138,6 +216,12 @@
   slug: court-doc
   hostname: storage.courtlistener.com
 
+- id: crn
+  name: CRN
+  short_name: CRN
+  slug: crn
+  hostname: crn.com
+
 - id: daily-beast
   name: The Daily Beast
   short_name: Daily Beast
@@ -149,6 +233,12 @@
   short_name: Daily Yonder
   slug: daily-yonder
   hostname: dailyyonder.com
+
+- id: democracy-forward
+  name: Democracy Forward
+  short_name: Democracy Forward
+  slug: democracy-forward
+  hostname: democracyforward.org
 
 - id: documentcloud.org
   name: Document Cloud
@@ -186,6 +276,12 @@
   slug: democracy-docket
   hostname: democracydocket.com
 
+- id: democrats-science-house
+  name: Democrats on the House Committee for Science, Space and Technology
+  short_name: House Science Democrats
+  slug: democrats-science-house
+  hostname: democrats-science.house.gov
+
 - id: dropsite
   name: Dropsite News
   short_name: Dropsite
@@ -209,6 +305,12 @@
   short_name: Dept. of Energy
   slug: energy
   hostname: energy.gov
+
+- id: energy-intel
+  name: Energy Intelligence
+  short_name: Energy Intel
+  slug: energy-intel
+  hostname: energyintel.com
 
 - id: fastcompany
   name: Fast Company
@@ -252,6 +354,12 @@
   slug: financial-times
   hostname: ft.com
 
+- id: flickr
+  name: Flickr
+  short_name: Flickr
+  slug: flickr
+  hostname: flickr.com
+
 - id: forbes
   name: Forbes Magazine
   short_name: Forbes
@@ -263,6 +371,12 @@
   short_name: FOX News
   slug: fox-news
   hostname: foxnews.com
+
+- id: freq-fwd
+  name: Frequency Forward
+  short_name: Frequency Fwd
+  slug: freq-fwd
+  hostname: frequencyfwd.com
 
 - id: fulcrum
   name: Fulcrum News
@@ -282,6 +396,12 @@
   slug: govexec
   hostname: govexec.com
 
+- id: govinfo
+  name: GovInfo
+  short_name: GovInfo
+  slug: govinfo
+  hostname: govinfo.gov
+
 - id: guardian
   name: The Guardian
   short_name: Guardian
@@ -299,6 +419,12 @@
   short_name: Harvard Crimson
   slug: harvard-crimson
   hostname: thecrimson.com
+
+- id: housingwire
+  name: Housing Wire
+  short_name: Housing Wire
+  slug: housing-wire
+  hostname: housingwire.com
 
 - id: hud
   name: Department of Housing and Urban Development
@@ -324,17 +450,59 @@
   slug: the-hill
   hostname: thehill.com
 
+- id: inc
+  name: Inc.
+  short_name: Inc.
+  slug: inc
+  hostname: inc.com
+
 - id: inside-medicine
   name: Inside Medicine
   short_name: Inside Medicine
   slug: inside-medicine
   hostname: insidemedicine.substack.com
 
+- id: imls
+  name: Institute of Museum and Library Services
+  short_name: IMLS
+  slug: imls
+  hostname: imls.gov
+
+- id: independent
+  name: The Independent
+  short_name: Independent
+  slug: idependent
+  hostname: independent.co.uk
+
 - id: intercept
   name: The Intercept
   short_name: Intercept
   slug: intercept
   hostname: theintercept.com
+
+- id: investigate-midwest
+  name: Investigate Midwest
+  short_name: Investigate Midwest
+  slug: investigate-midwest
+  hostname: investigatemidwest.org
+
+- id: just-security
+  name: Just Security
+  short_name: Just Security
+  slug: just-security
+  hostname: justsecurity.org
+
+- id: klas
+  name: KLAS News
+  short_name: KLAS
+  slug: klas
+  hostname: 8newsnow.com
+
+- id: koha
+  name: Koha
+  short_name: Koha
+  slug: koha
+  hostname: koha.net
 
 - id: krebs
   name: Krebs on Security
@@ -354,6 +522,24 @@
   slug: lawfare
   hostname: lawfaremedia.org
 
+- id: linkedin
+  name: LinkedIn
+  short_name: LinkedIn
+  slug: linkedin
+  hostname: linkedin.com
+
+- id: mcclain-delaney
+  name: US Rep. April McClain-Delaney
+  short_name: Rep. McClain-Delaney
+  slug: mcclain-delaney
+  hostname: mcclaindelaney.house.gov
+
+- id: michaelrlowry
+  name: Eye on the Tropics
+  short_name: Eye on the Tropics
+  slug: michaelrlowry
+  hostname: michaelrlowry.substack.com
+
 - id: meritalk
   name: MeriTalk
   short_name: MeriTalk
@@ -365,6 +551,12 @@
   short_name: Military.com
   slug: military-com
   hostname: military.com
+
+- id: mint
+  name: Mint
+  short_name: Mint
+  slug: mint
+  hostname: livemint.com
 
 - id: msn
   name: MSN
@@ -396,6 +588,12 @@
   slug: new-republic
   hostname: newrepublic.com
 
+- id: news-nation
+  name: News Nation
+  short_name: News Nation
+  slug: news-nation
+  hostname: newsnationnow.com
+
 - id: newsweek
   name: Newsweek
   short_name: Newsweek
@@ -426,6 +624,12 @@
   slug: ny-times
   hostname: nytimes.com
 
+- id: orangeslices
+  name: Orange Slices
+  short_name: Orange Slices
+  slug: orange-slices
+  hostname: orangeslices.ai
+
 - id: politico
   name: Politico
   short_name: Politico
@@ -444,11 +648,23 @@
   slug: pro-publica
   hostname: propublica.org
 
+- id: propublica-projects
+  name: Pro Publica Projects
+  short_name: ProPublica
+  slug: pro-publica-projects
+  hostname: projects.propublica.org
+
 - id: peer
   name: Public Employees for Environmental Responsibility
   short_name: PEER
   slug: peer
   hostname: peer.org
+
+- id: pogo
+  name: Project on Government Oversight
+  short_name: POGO
+  slug: pogo
+  hostname: pogo.org
 
 - id: pubweekly
   name: Publishers Weekly
@@ -456,11 +672,23 @@
   slug: pub-weekly
   hostname: publishersweekly.com
 
+- id: rferl
+  name: Radio Free Europe / Radio Liberty
+  short_name: Radio Free Europe
+  slug: radio-free-europe
+  hostname: about.rferl.org
+
 - id: radioink
   name: Radio Ink
   short_name: Radio Ink
   slug: radio-ink
   hostname: radioink.com
+
+- id: regional-media
+  name: Regional Media News
+  short_name: Regional Media
+  slug: regional-media
+  hostname: regionalmedianews.com
 
 - id: reuters
   name: Reuters
@@ -473,6 +701,12 @@
   short_name: Rolling Stone
   slug: rolling-stone
   hostname: rollingstone.com
+
+- id: sahil-lavingia
+  name: Sahil Lavingia's blog
+  short_name: Sahil Lavingia
+  slug: sahil-lavingia
+  hostname: sahillavingia.com
 
 - id: science
   name: Science
@@ -522,11 +756,23 @@
   slug: sfchronicle
   hostname: sfchronicle.com
 
+- id: spectrum-13
+  name: Spectrum News 13
+  short_name: Spectrum News
+  slug: spectrum-13
+  hostname: mynews13.com
+
 - id: ssa
   name: Social Security Administration
   short_name: SSA
   slug: ssa
   hostname: ssa.gov
+
+- id: dept-state
+  name: US Department of State
+  short_name: State Dept.
+  slug: dept-state
+  hostname: state.gov
 
 - id: stripes
   name: Stars and Stripes
@@ -539,6 +785,12 @@
   short_name: STAT
   slug: stat-news
   hostname: statnews.com
+
+- id: taxnotes
+  name: Tax Notes
+  short_name: Tax Notes
+  slug: taxnotes
+  hostname: taxnotes.com
 
 - id: techcrunch
   name: Techcrunch
@@ -600,6 +852,12 @@
   slug: whistleblower-aid
   hostname: whistlebloweraid.org
 
+- id: gap
+  name: Government Accountability Project
+  short_name: GAP
+  slug: gap
+  hostname: whistleblower.org
+
 - id: white-house
   name: Executive Office of the President
   short_name: White House
@@ -629,3 +887,9 @@
   short_name: Yahoo
   slug: yahoo-finance
   hostname: finance.yahoo.com
+
+- id: yale-insights
+  name: Yale Insights
+  short_name: Yale Insights
+  slug: yale-insights
+  hostname: insights.som.yale.edu
