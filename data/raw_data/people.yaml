@@ -127,15 +127,15 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
   - id: detail-opm-fcc-altik
     type: detailed
-    from: OPM
-    from_truth: guessed
-    start_date: 2025-04-04
-    start_date_truth: reported
+    from: DOGE
+    from_truth: verified
+    start_date: 2025-03-18
+    start_date_truth: verified
     title_type: advisor
-    source: https://www.theverge.com/news/644031/doge-federal-communications-commission-directory
-    source_name: Verge
+    salary: "$0"
+    source: https://frequencyfwd.com/files/motion-exhibit-1-08252025.pdf
+    source_name: Frequency Forward
     office: Office of the Chairman
-    comment: Assuming he has been detailed from OPM
     agency: FCC
 
 - name: Marc Andreessen
@@ -236,11 +236,22 @@
 - name: Micaela Lopez Ballefin
   sort_name: Ballefin
   slug: micaela-lopez
-  category: unknown
+  category: wrecker
+  tech_links:
+  - Twitter
   blurb: >-
-    I don't have much info on this person yet, but they were named as being a Senior Advisor at the SBA,
-    which was a title also assigned to known DOGE members at that agency
+    After she appeared in a listing of staff with Senior Advisor titles at the Small Business Association,
+    Politico has identified her as a former employee of Twitter/X and also a Uruguayan citizen. As the
+    latter, she would normally be ineligible to work for the US government, but she has been hired as
+    a contractor at the GSA as a senior engineering manager working with Matthew Markhurst-Session and
+    Thomas Shedd.
   positions:
+  - id: gsa-lopez-ballefin
+    agency: GSA
+    type: consultant
+    supervisory: true
+    source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
+    source_name: Politico
   - id: sba-lopez-ballefin
     type: unknown
     agency: SBA
@@ -999,13 +1010,22 @@
   tech_links:
   - Airbnb
   positions:
+  - id: gsa-choi
+    type: consultant
+    agency: GSA
+    start_date: 2025-06-XX
+    start_date_truth: reported
+    sort_date: 2025-06-14
+    table_note: working for GSA as a contractor from MSI Consulting because a not an American citizen
+    source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
+    source_name: Politico
   - id: opm-choi
-    type: appointed
+    type: consultant
     agency: OPM
     start_date: 2025-06-XX
     start_date_truth: reported
     sort_date: 2025-06-15
-    table_note: reportedly a Canadian working on temp visa which would disqualify for federal role
+    table_note: a Canadian working on temp visa which would disqualify for federal role
     source: https://www.wired.com/story/next-stage-doge-elon-musk/
     source_name: Wired
 
@@ -3784,9 +3804,12 @@
   skill: analyst
   custom_path: "/wreckers/tarak-makecha"
   blurb: >-
-    Tarak Makecha is the former head of stategic planning for Tesla Energy. He has been reviewing and
-    cancelling grants for the DOJ and FBI, but recent sources have also linked him to the US Agency for
-    Global Media and grant cancellations there.
+    Tarak Makecha is the former head of stategic planning for Tesla Energy. More recently, he has been
+    listed as a vice president at Valor Equity Partners, the investment firm run by Antonio Gracias and
+    the employer of Jon Koval and Payton Rehling. Although he describes himself as a software engineer,
+    he comes from a backgroun in finance. In that capacity, he has been reviewing and cancelling grants
+    for the DOJ and FBI, but recent sources have also linked him to the US Agency for Global Media and
+    grant cancellations there.
   tech_links:
   - Tesla
   positions:
@@ -3811,6 +3834,17 @@
     table_note: Date unknown, but assuming with Kliger who was at USAGM in early March
     source: https://projects.propublica.org/elon-musk-doge-tracker/#Tarak-Makecha
     source_name: ProPublica
+  - id: detail-fcc-makecha
+    type: detailed
+    from: OPM
+    from_truth: verified
+    start_date: 2025-03-18
+    start_date_truth: verified
+    source: https://frequencyfwd.com/files/motion-exhibit-1-08252025.pdf
+    source_name: Frequency Forward
+    office: Office of the Chairman
+    table_note: listed self as detailing from OPM
+    agency: FCC
   - id: fbi-makecha
     type: detailed
     from: OPM
@@ -3826,16 +3860,6 @@
     source: https://theintercept.com/2025/04/18/doge-tesla-employee-justice-department-fbi/
     source_name: The Intercept
     agency: FBI
-  - id: detail-fcc-makecha
-    from: OPM
-    type: detailed
-    start_date: 2025-04-04
-    start_date_truth: reported
-    source: https://www.theverge.com/news/644031/doge-federal-communications-commission-directory
-    source_name: The Verge
-    office: Office of the Chairman
-    table_note: assuming detail from OPM
-    agency: FCC
 
 - name: Ted Malaska
   sort_name: Malaska
@@ -6121,13 +6145,21 @@
   blurb: >-
     Coming from Airbnb, he is working alongside fellow alumni Yat Choi and Joe Gebbia on finishing the
     project to digitize OPM's Online Retirement Application system and rush it into production as a DOGE
-    win. Like Yat Choi, he also appears to be Canadian which would disqualify him if working on some visas,
-    but it's unclear if he's also a naturalized citizen.
+    win. Like Yat Choi, he also appears to be Canadian which would disqualify him from working for the
+    federal government, so he has been hired as a contractor instead.
   positions:
+  - id: gsa-vilcsak
+    agency: GSA
+    type: consultant
+    table_note: Hired as contractor from MSI Consulting
+    source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
+    source_name: Politico
   - id: opm-vilcsak
     agency: OPM
-    type: appointed
+    type: consultant
     table_note: Named as working alongside Airbnb alumni at OPM.
+    source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
+    source_name: Politico
 
 - name: Cary Volpert
   sort_name: Volpert
@@ -6348,17 +6380,22 @@
     documents:
     - onboard-cfpb-jordan-wick
     agency: CFPB
-  - id: detail-cfpb-fcc-wick
+  - id: detail-doge-fcc-wick
     type: detailed
-    from: CFPB
-    from_truth: guessed
-    start_date: 2025-04-04
-    start_date_truth: reported
-    source: https://www.theverge.com/news/644031/doge-federal-communications-commission-directory
-    source_name: The Verge
+    from: DOGE
+    salary: "$0"
+    from_truth: verified
+    start_date: 2025-03-18
+    start_date_truth: verified
+    source: https://frequencyfwd.com/files/motion-exhibit-1-08252025.pdf
+    source_name: Frequency Forward
     office: Office of the Chairman
-    comment: Assuming he has been detailed from the CFPB
     agency: FCC
+    table_note: >-
+      MOU for detail says from DOGE to FCC, but the text says he is also detailed from OPM which will
+      bill for his services
+    documents:
+    - detail-20250318-doge-fcc-wick
 
 - name: Joanna Wischer
   slug: joanna-wischer
