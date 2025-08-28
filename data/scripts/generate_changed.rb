@@ -16,7 +16,7 @@ def load_change_log(changes)
 end
 
 def count_changed(changes)
-  changes.each do |rec|
+  changes.first(2).each do |rec|
     rec[:added] = 0
     rec[:deleted] = 0
 
@@ -36,7 +36,7 @@ def count_changed(changes)
 end
 
 def diff_people(changes)
-  changes.each do |rec|
+  changes.first(2).each do |rec|
     # puts "git diff '@{#{rec[:start].iso8601} 00:00}..@{#{rec[:end].iso8601} 23:59}' -- ./data/raw_data/people.yaml"
 
     log_output = `git diff '@{#{rec[:start].iso8601} 00:00}..@{#{rec[:end].iso8601} 23:59}' -- ./data/raw_data/people.yaml`
@@ -58,7 +58,7 @@ def diff_people(changes)
 end
 
 def diff_events(changes)
-  changes.each do |rec|
+  changes.first(2).each do |rec|
     rec[:agencies] = []
     rec[:events] = []
 
@@ -82,22 +82,19 @@ def diff_events(changes)
   end
 end
 
-changes = []
+changes_file = File.join(File.dirname(__FILE__), '..', '..', 'src', '_data', 'changes.yml')
+changes = YAML.unsafe_load_file(changes_file, symbolize_names: true)
+
 start_of_week = Date.today - Date.today.wday
 end_of_week = start_of_week + 6
 
-while start_of_week > Date.parse('2025-05-10')
-  changes.append({ start: start_of_week, end: end_of_week })
-  start_of_week -= 7
-  end_of_week -= 7
-end
+changes.unshift({ start: start_of_week, end: end_of_week }) if changes.first[:start] != start_of_week
 
 load_change_log(changes)
 count_changed(changes)
 diff_people(changes)
 diff_events(changes)
 
-changes_file = File.join(File.dirname(__FILE__), '..', '..', 'src', '_data', 'changes.yml')
 File.open(changes_file, 'w') do |file|
   out_yaml = YAML.dump(changes, line_width: 150, stringify_names: true, header: false)
   file.write(out_yaml)
