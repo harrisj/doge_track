@@ -22,7 +22,7 @@ sources.each do |source|
   publisher = publishers_by_hostname[hostname]
   raise "Couldn't find publisher for host #{hostname}" if publisher.nil?
 
-  source[:pub_id] = publisher.id
+  source[:pub_id] = publisher[:id]
 end
 
 publishers.sort_by! { |pub| pub[:id] }
