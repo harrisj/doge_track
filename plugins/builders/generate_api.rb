@@ -9,6 +9,16 @@ module Builders
       "https://dogetrack.info/api/#{path}"
     end
 
+    def source_record(source)
+      {
+        url: source.url,
+        title: source.title,
+        pub_date: source.pub_date,
+        publisher: source.publisher.name,
+        short_publisher: source.publisher.short_name
+      }
+    end
+
     def agency_ref(agency)
       {
         id: agency.id,
@@ -39,6 +49,7 @@ module Builders
       out = system_role.to_hash.except(:name, :govt_system_id, :agency_id)
       out[:person] = person_ref(system_role.person) if include_person && system_role.person
       out[:agency] = agency_ref(system_role.agency) if include_agency && system_role.agency
+      out[:sources] = system_role.sources.map { |src| source_record(src) } if system_role.sources.any?
       if include_system && system_role.govt_system
         out[:system] =
           system_record(system_role.govt_system, include_roles: false)
@@ -73,6 +84,7 @@ module Builders
         source_name: event.source_name,
         case_no: event.case_no,
         agencies: event.agencies.map { |a| agency_ref(a) },
+        sources: event.sources.map { |src| source_record(src) },
         people: event.people.map { |p| person_ref(p) },
         aliases: event.doge_aliases.map { |a| alias_ref(a) }
       }
@@ -83,6 +95,7 @@ module Builders
       out[:agency] = agency_ref(position.agency)
       out[:from_agency] = position.from_agency ? agency_ref(position.from_agency) : nil
       out[:person] = position.person ? person_ref(position.person) : nil
+      out[:sources] = position.sources.map { |src| source_record(src) }
       out
     end
 
