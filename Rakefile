@@ -72,12 +72,17 @@ namespace :data do
     ruby "#{SCRIPTS_DIR}/validate_documents_yaml.rb"
   end
 
+  desc 'Process and validate the sources and publisher YAML files'
+  task :validate_sources_yaml do
+    ruby "#{SCRIPTS_DIR}/validate_sources_yaml.rb"
+  end
+
   desc 'Process and validate the events YAML file'
   task :validate_events_yaml do
     ruby "#{SCRIPTS_DIR}/validate_events_yaml.rb"
   end
 
-  desc 'Process and validate the events YAML file'
+  desc 'Process and validate the aliases YAML file'
   task :validate_aliases_yaml do
     ruby "#{SCRIPTS_DIR}/validate_aliases_yaml.rb"
   end
@@ -98,7 +103,8 @@ namespace :data do
   end
 
   desc 'Validate all raw data YAML files'
-  task validate: %i[validate_aliases_yaml validate_documents_yaml validate_events_yaml validate_people_yaml
+  task validate: %i[validate_sources_yaml validate_aliases_yaml validate_documents_yaml
+                    validate_events_yaml validate_people_yaml
                     validate_systems_yaml validate_questions_yaml]
 
   desc 'Create an empty database for loading data'

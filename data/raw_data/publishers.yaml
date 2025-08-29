@@ -1,10 +1,5 @@
 # yaml-language-server: $schema=../schemas/publishers-file.json
-
-- id: 404media
-  name: 404 Media
-  short_name: 404 Media
-  slug: 404media
-  hostname: 404media.co
+---
 
 - id: 18f
   name: 18F
@@ -12,29 +7,17 @@
   slug: 18f
   hostname: 18f.gsa.gov
 
+- id: 404media
+  name: 404 Media
+  short_name: 404 Media
+  slug: 404media
+  hostname: 404media.co
+
 - id: abc-news
   name: ABC News
   short_name: ABC News
   slug: abc-news
   hostname: abcnews.go.com
-
-- id: presidency
-  name: The American Presidency Project
-  short_name: American Presidency
-  slug: presidency
-  hostname: presidency.ucsb.edu
-
-- id: ars-technica
-  name: Ars Technica
-  short_name: Ars Technica
-  slug: ars-technica
-  hostname: arstechnica.com
-
-- id: assoc-press
-  name: The Associated Press
-  short_name: AP
-  slug: assoc-press
-  hostname: apnews.com
 
 - id: afge
   name: Association of Federal Government Employees
@@ -42,11 +25,11 @@
   slug: afge
   hostname: afge.org
 
-- id: artnet
-  name: ArtNet News
-  short_name: ArtNet
-  slug: artnet
-  hostname: news.artnet.com
+- id: ars-technica
+  name: Ars Technica
+  short_name: Ars Technica
+  slug: ars-technica
+  hostname: arstechnica.com
 
 - id: art-news
   name: Art News
@@ -54,11 +37,23 @@
   slug: art-news
   hostname: artnews.com
 
+- id: artnet
+  name: ArtNet News
+  short_name: ArtNet
+  slug: artnet
+  hostname: news.artnet.com
+
 - id: asis
   name: ASIS International
   short_name: ASIS Intl.
   slug: asis
   hostname: asisonline.org
+
+- id: assoc-press
+  name: The Associated Press
+  short_name: AP
+  slug: assoc-press
+  hostname: apnews.com
 
 - id: atlantic
   name: The Atlantic
@@ -72,17 +67,17 @@
   slug: axios
   hostname: axios.com
 
-- id: bankdive
-  name: Banking Dive
-  short_name: Bank Dive
-  slug: banking-dive
-  hostname: bankingdive.com
-
 - id: bank-security
   name: Bank Info Security
   short_name: Bank Info Security
   slug: bank-info-security
   hostname: bankinfosecurity.com
+
+- id: bankdive
+  name: Banking Dive
+  short_name: Bank Dive
+  slug: banking-dive
+  hostname: bankingdive.com
 
 - id: banking-journal
   name: Banking Journal
@@ -138,6 +133,12 @@
   slug: cbs-news
   hostname: cbsnews.com
 
+- id: cfslm
+  name: Consumer Financial Services Law Monitor
+  short_name: Consumer Fin. Services Law
+  slug: consumer-fin-services-law
+  hostname: consumerfinancialserviceslawmonitor.com
+
 - id: chronicle
   name: The Chronicle of Higher Education
   short_name: Chronicle Higher Ed.
@@ -180,12 +181,6 @@
   slug: cnn-edition
   hostname: edition.cnn.com
 
-- id: cfslm
-  name: Consumer Financial Services Law Monitor
-  short_name: Consumer Fin. Services Law
-  slug: consumer-fin-services-law
-  hostname: consumerfinancialserviceslawmonitor.com
-
 - id: common-dreams
   name: Common Dreams
   short_name: Common Dreams
@@ -204,17 +199,17 @@
   slug: consumer-affairs
   hostname: consumeraffairs.com
 
-- id: cpb
-  name: Corporation for Public Broadcasting
-  short_name: CPB
-  slug: cpb
-  hostname: cpb.org
-
 - id: court-doc
   name: Court Document
   short_name: court doc
   slug: court-doc
   hostname: storage.courtlistener.com
+
+- id: cpb
+  name: Corporation for Public Broadcasting
+  short_name: CPB
+  slug: cpb
+  hostname: cpb.org
 
 - id: crn
   name: CRN
@@ -240,30 +235,6 @@
   slug: daily-yonder
   hostname: dailyyonder.com
 
-- id: democracy-forward
-  name: Democracy Forward
-  short_name: Democracy Forward
-  slug: democracy-forward
-  hostname: democracyforward.org
-
-- id: documentcloud.org
-  name: Document Cloud
-  short_name: Doc Cloud
-  slug: document-cloud
-  hostname: documentcloud.org
-
-- id: usda
-  name: US Department of Agriculture
-  short_name: USDA
-  slug: usda
-  hostname: usda.gov
-
-- id: fns-usda
-  name: US Department of Agriculture
-  short_name: USDA
-  slug: fns-usda
-  hostname: fns.usda.gov
-
 - id: defense
   name: Department of Defense
   short_name: Dept. of Defense
@@ -282,11 +253,29 @@
   slug: democracy-docket
   hostname: democracydocket.com
 
+- id: democracy-forward
+  name: Democracy Forward
+  short_name: Democracy Forward
+  slug: democracy-forward
+  hostname: democracyforward.org
+
 - id: democrats-science-house
   name: Democrats on the House Committee for Science, Space and Technology
   short_name: House Science Democrats
   slug: democrats-science-house
   hostname: democrats-science.house.gov
+
+- id: dept-state
+  name: US Department of State
+  short_name: State Dept.
+  slug: dept-state
+  hostname: state.gov
+
+- id: documentcloud.org
+  name: Document Cloud
+  short_name: Doc Cloud
+  slug: document-cloud
+  hostname: documentcloud.org
 
 - id: dropsite
   name: Dropsite News
@@ -318,17 +307,17 @@
   slug: energy-intel
   hostname: energyintel.com
 
-- id: fastcompany
-  name: Fast Company
-  short_name: Fast Company
-  slug: fast-company
-  hostname: fastcompany.com
-
 - id: faa
   name: Federal Aviation Authority
   short_name: FAA
   slug: faa
   hostname: faa.gov
+
+- id: fastcompany
+  name: Fast Company
+  short_name: Fast Company
+  slug: fast-company
+  hostname: fastcompany.com
 
 - id: fed-news
   name: Federal News Network
@@ -366,6 +355,12 @@
   slug: flickr
   hostname: flickr.com
 
+- id: fns-usda
+  name: US Department of Agriculture
+  short_name: USDA
+  slug: fns-usda
+  hostname: fns.usda.gov
+
 - id: forbes
   name: Forbes Magazine
   short_name: Forbes
@@ -390,11 +385,11 @@
   slug: fulcrum
   hostname: thefulcrum.us
 
-- id: gsa
-  name: General Services Administration
-  short_name: GSA
-  slug: gsa
-  hostname: gsa.gov
+- id: gap
+  name: Government Accountability Project
+  short_name: GAP
+  slug: gap
+  hostname: whistleblower.org
 
 - id: govexec
   name: GovExec
@@ -407,6 +402,12 @@
   short_name: GovInfo
   slug: govinfo
   hostname: govinfo.gov
+
+- id: gsa
+  name: General Services Administration
+  short_name: GSA
+  slug: gsa
+  hostname: gsa.gov
 
 - id: guardian
   name: The Guardian
@@ -426,6 +427,12 @@
   slug: harvard-crimson
   hostname: thecrimson.com
 
+- id: hhs
+  name: Department of Health and Human Services
+  short_name: HHS
+  slug: hhs
+  hostname: hhs.gov
+
 - id: housingwire
   name: Housing Wire
   short_name: Housing Wire
@@ -444,17 +451,11 @@
   slug: huffpost
   hostname: huffpost.com
 
-- id: hhs
-  name: Department of Health and Human Services
-  short_name: HHS
-  slug: hhs
-  hostname: hhs.gov
-
-- id: thehill
-  name: The Hill
-  short_name: The Hill
-  slug: the-hill
-  hostname: thehill.com
+- id: imls
+  name: Institute of Museum and Library Services
+  short_name: IMLS
+  slug: imls
+  hostname: imls.gov
 
 - id: inc
   name: Inc.
@@ -462,23 +463,17 @@
   slug: inc
   hostname: inc.com
 
-- id: inside-medicine
-  name: Inside Medicine
-  short_name: Inside Medicine
-  slug: inside-medicine
-  hostname: insidemedicine.substack.com
-
-- id: imls
-  name: Institute of Museum and Library Services
-  short_name: IMLS
-  slug: imls
-  hostname: imls.gov
-
 - id: independent
   name: The Independent
   short_name: Independent
   slug: idependent
   hostname: independent.co.uk
+
+- id: inside-medicine
+  name: Inside Medicine
+  short_name: Inside Medicine
+  slug: inside-medicine
+  hostname: insidemedicine.substack.com
 
 - id: intercept
   name: The Intercept
@@ -540,17 +535,17 @@
   slug: mcclain-delaney
   hostname: mcclaindelaney.house.gov
 
-- id: michaelrlowry
-  name: Eye on the Tropics
-  short_name: Eye on the Tropics
-  slug: michaelrlowry
-  hostname: michaelrlowry.substack.com
-
 - id: meritalk
   name: MeriTalk
   short_name: MeriTalk
   slug: meritalk
   hostname: meritalk.com
+
+- id: michaelrlowry
+  name: Eye on the Tropics
+  short_name: Eye on the Tropics
+  slug: michaelrlowry
+  hostname: michaelrlowry.substack.com
 
 - id: military-com
   name: Military News
@@ -636,6 +631,18 @@
   slug: orange-slices
   hostname: orangeslices.ai
 
+- id: peer
+  name: Public Employees for Environmental Responsibility
+  short_name: PEER
+  slug: peer
+  hostname: peer.org
+
+- id: pogo
+  name: Project on Government Oversight
+  short_name: POGO
+  slug: pogo
+  hostname: pogo.org
+
 - id: politico
   name: Politico
   short_name: Politico
@@ -647,6 +654,12 @@
   short_name: Politico
   slug: politico-pro
   hostname: subscriber.politicopro.com
+
+- id: presidency
+  name: The American Presidency Project
+  short_name: American Presidency
+  slug: presidency
+  hostname: presidency.ucsb.edu
 
 - id: propublica
   name: Pro Publica
@@ -660,29 +673,11 @@
   slug: pro-publica-projects
   hostname: projects.propublica.org
 
-- id: peer
-  name: Public Employees for Environmental Responsibility
-  short_name: PEER
-  slug: peer
-  hostname: peer.org
-
-- id: pogo
-  name: Project on Government Oversight
-  short_name: POGO
-  slug: pogo
-  hostname: pogo.org
-
 - id: pubweekly
   name: Publishers Weekly
   short_name: Publishers Weekly
   slug: pub-weekly
   hostname: publishersweekly.com
-
-- id: rferl
-  name: Radio Free Europe / Radio Liberty
-  short_name: Radio Free Europe
-  slug: radio-free-europe
-  hostname: about.rferl.org
 
 - id: radioink
   name: Radio Ink
@@ -701,6 +696,12 @@
   short_name: Reuters
   slug: reuters
   hostname: reuters.com
+
+- id: rferl
+  name: Radio Free Europe / Radio Liberty
+  short_name: Radio Free Europe
+  slug: radio-free-europe
+  hostname: about.rferl.org
 
 - id: rolling-stone
   name: Rolling Stone
@@ -762,6 +763,12 @@
   slug: sfchronicle
   hostname: sfchronicle.com
 
+- id: signalhire
+  name: Signalhire
+  short_name: Signalhire
+  slug: signalhire
+  hostname: signalhire.com
+
 - id: spectrum-13
   name: Spectrum News 13
   short_name: Spectrum News
@@ -774,23 +781,17 @@
   slug: ssa
   hostname: ssa.gov
 
-- id: dept-state
-  name: US Department of State
-  short_name: State Dept.
-  slug: dept-state
-  hostname: state.gov
+- id: stat
+  name: STAT News
+  short_name: STAT
+  slug: stat-news
+  hostname: statnews.com
 
 - id: stripes
   name: Stars and Stripes
   short_name: Stripes
   slug: stripes
   hostname: stripes.com
-
-- id: stat
-  name: STAT News
-  short_name: STAT
-  slug: stat-news
-  hostname: statnews.com
 
 - id: taxnotes
   name: Tax Notes
@@ -804,6 +805,12 @@
   slug: techcrunch
   hostname: techcrunch.com
 
+- id: thehill
+  name: The Hill
+  short_name: The Hill
+  slug: the-hill
+  hostname: thehill.com
+
 - id: times-india
   name: The Times of India
   short_name: Times of India
@@ -816,23 +823,17 @@
   slug: usatoday
   hostname: usatoday.com
 
+- id: usda
+  name: US Department of Agriculture
+  short_name: USDA
+  slug: usda
+  hostname: usda.gov
+
 - id: verge
   name: The Verge
   short_name: Verge
   slug: verge
   hostname: theverge.com
-
-- id: wrvo
-  name: WRVO News
-  short_name: WRVO
-  slug: wrvo
-  hostname: wrvo.org
-
-- id: wsj
-  name: The Wall Street Journal
-  short_name: WSJ
-  slug: wsj
-  hostname: wsj.com
 
 - id: wapo
   name: The Washington Post
@@ -858,12 +859,6 @@
   slug: whistleblower-aid
   hostname: whistlebloweraid.org
 
-- id: gap
-  name: Government Accountability Project
-  short_name: GAP
-  slug: gap
-  hostname: whistleblower.org
-
 - id: white-house
   name: Executive Office of the President
   short_name: White House
@@ -875,6 +870,18 @@
   short_name: Wired
   slug: wired
   hostname: wired.com
+
+- id: wrvo
+  name: WRVO News
+  short_name: WRVO
+  slug: wrvo
+  hostname: wrvo.org
+
+- id: wsj
+  name: The Wall Street Journal
+  short_name: WSJ
+  slug: wsj
+  hostname: wsj.com
 
 - id: x-com
   name: X.com
@@ -899,9 +906,3 @@
   short_name: Yale Insights
   slug: yale-insights
   hostname: insights.som.yale.edu
-
-- id: signalhire
-  name: Signalhire
-  short_name: Signalhire
-  slug: signalhire
-  hostname: signalhire.com
