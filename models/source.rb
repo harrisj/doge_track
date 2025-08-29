@@ -11,7 +11,7 @@ class Source < Sequel::Model
   many_to_many :system_roles
 
   # backward compatibility
-  def source_name
-    publisher.short_name
+  def short_name
+    publisher.short_name || 'source'
   end
 end

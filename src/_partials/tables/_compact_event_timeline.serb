@@ -1,4 +1,4 @@
-{% 
+{%
 require 'edtf'
 import 'macros'
 
@@ -6,7 +6,7 @@ icon_col = true if icon_col.nil?
 month_separator = true if month_separator.nil?
 show_directories = true if show_directories.nil?
 %}
- 
+
  {% if events && events.any? %}
  {% prior_row_date = Date.edtf!(events[0].date)-1 %}
 
@@ -49,7 +49,7 @@ show_directories = true if show_directories.nil?
           {%@ 'molecules/event_directory_display', event: event %}
         {% end %}
 
-        {% if event.source && event.source_name %} <div class="text-nowrap float-right pl-4"><a href="{{ event.source }}" class="link-hover"><i class="fa-sharp fa-solid fa-link-simple"></i>&nbsp;<span class="italic text-2xs sm:text-xs">{{ event.source_name }}</span></a></div>{% end %}
+        {%@ 'atoms/source_link', item: event %}
         </div>
       </td>
     </tr>
