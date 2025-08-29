@@ -126,8 +126,20 @@
       "type": "string"
     },
     "source": {
-      "description": "A source for the information",
-      "type": "string"
+      "description": "Source(s) for the information",
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "url"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "url"
+          }
+        }
+      ]
     },
     "source_name": {
       "description": "The name of the source",
@@ -170,10 +182,6 @@
       "type": "string"
     }
   },
-  "required": [
-    "id",
-    "agency",
-    "type"
-  ],
+  "required": ["id", "agency", "type"],
   "additionalProperties": false
 }
