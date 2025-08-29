@@ -25,6 +25,8 @@ SystemRole.unrestrict_primary_key
 Document.unrestrict_primary_key
 Question.unrestrict_primary_key
 ExecutiveOrder.unrestrict_primary_key
+Source.unrestrict_primary_key
+Publisher.unrestrict_primary_key
 
 all_events = []
 
@@ -37,7 +39,8 @@ def create_event(event_hash)
   event_hash[:date] = event_date
   event_hash[:sort_date] = Date.edtf!(event_date.to_s).to_s
 
-  e = Event.create(event_hash.except(:case_no, :named, :linked, :named_aliases, :agency, :interagency_doge_reps))
+  e = Event.create(event_hash.except(:case_no, :named, :linked, :named_aliases, :agency, :interagency_doge_reps,
+                                     :source, :source_name, :source_title))
   if event_hash.key? :case_no
     court_case = Case[event_hash[:case_no]]
     e.case = court_case
@@ -45,6 +48,11 @@ def create_event(event_hash)
 
   agency_ids = Array(event_hash[:agency])
   names = (event_hash.fetch(:named, []) + event_hash.fetch(:linked, [])).uniq
+
+  Array(event_hash[:source]).each do |src|
+    source = Source[src] || raise("Unable to find source #{src} in DB")
+    e.add_source(source)
+  end
 
   event_hash.fetch(:named_aliases, []).each do |doge_alias_id|
     a = DogeAlias[doge_alias_id]
@@ -81,6 +89,18 @@ agencies_yaml.each do |a|
   all_events += a.fetch(:events, [])
 end
 
+# Load publishers
+publishers_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'publishers.yaml'), symbolize_names: true)
+publishers_yaml.each do |p|
+  Publisher.create(p)
+end
+
+# Load sources
+sources_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'sources.yaml'), symbolize_names: true)
+sources_yaml.each do |src|
+  Source.create(src)
+end
+
 # Load Documents
 documents_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'documents.yaml'), symbolize_names: true)
 documents_yaml.each do |d|
@@ -103,8 +123,13 @@ people_yaml.each do |p_hash|
     pos_hash[:sort_date] ||= DEFAULT_POS_SORT_OTHER
 
     pos = Position.create( # .reject { |k, _| %i[from alias documents agency].include?(k) })
-      pos_hash.except(:documents)
+      pos_hash.except(:documents, :source, :source_name)
     )
+
+    Array(pos_hash[:source]).each do |src|
+      source = Source[src] || raise("Unable to find source #{src}")
+      pos.add_source(source)
+    end
 
     next unless pos_hash[:documents]
 
@@ -195,10 +220,14 @@ systems_yaml.each do |system_hash|
 
   input_hash.fetch(:access, []).each do |access_hash|
     access_hash[:govt_system_id] = s.id
-    access_hash[:source] = Array(access_hash[:source]).join(', ') if access_hash.key? :source
+    # access_hash[:source] = Array(access_hash[:source]).join(', ') if access_hash.key? :source
     access_hash.transform_keys!({ alias: :doge_alias_id, agency: :agency_id })
     access_hash[:agency_id] ||= input_hash[:agency_id]
-    SystemRole.create(access_hash)
+    role = SystemRole.create(access_hash.except(:source, :source_name))
+    Array(access_hash[:source]).each do |src|
+      source = Source[src] || raise("Unable to find source #{src}")
+      role.add_source(source)
+    end
   end
 
   # system_hash.fetch(:serves, []).each do |name|

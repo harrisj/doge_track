@@ -9,8 +9,18 @@ class Position < Sequel::Model
   many_to_one :from_agency, class: :Agency, key: :from_agency_id
   many_to_one :agency, graph_join_type: :inner
   many_to_many :documents
+  many_to_many :sources
 
   def detail?
     type == 'detailed'
+  end
+
+  # Backward compatibility
+  def source
+    sources.first&.url
+  end
+
+  def source_name
+    sources.first&.publisher&.short_name
   end
 end

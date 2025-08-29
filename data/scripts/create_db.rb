@@ -63,8 +63,6 @@ DB.create_table! :positions do
   string :series
   boolean :supervisory
   string :office
-  string :source
-  string :source_name
   boolean :reimbursed
   string :reimbursement_amount
   string :comment
@@ -134,9 +132,6 @@ DB.create_table! :events do
   string :linkified_text
   string :fuzz
   string :comment
-  string :source, null: false
-  string :source_title
-  string :source_name
   string :case_no
   string :system_id
   string :theme
@@ -197,8 +192,6 @@ DB.create_table! :system_roles do
   string :date_nte
   string :date_nte_truth
   boolean :never_accessed, null: false, default: false
-  string :source
-  string :source_name
   string :comment
   string :table_note
 end
@@ -212,6 +205,37 @@ DB.create_table! :executive_orders do
   string :linkified_summary
   boolean :all_agencies, null: false, default: false
   boolean :directs_doge, null: false, default: false
+end
+
+DB.create_table! :sources do
+  string :url, primary_key: true
+  foreign_key :pub_id, :publishers, type: :string
+  string :title
+  string :case_no
+  string :pub_date
+end
+
+DB.create_table! :publishers do
+  string :id, primary_key: true
+  string :name, null: false
+  string :short_name, null: false
+  string :slug, null: false
+  string :hostname, null: false
+end
+
+DB.create_table! :events_sources do
+  foreign_key :event_id, :events, type: :string
+  foreign_key :source_id, :sources, type: :string
+end
+
+DB.create_table! :positions_sources do
+  foreign_key :position_id, :positions, type: :string
+  foreign_key :source_id, :sources, type: :string
+end
+
+DB.create_table! :sources_system_roles do
+  foreign_key :source_id, :sources, type: :string
+  foreign_key :system_role_id, :system_roles, type: :string
 end
 
 DB.create_table! :doge_aliases_events do

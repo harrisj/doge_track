@@ -19,7 +19,7 @@ This is not a definitive list of all changes to the project (completists can alw
   </div>
   <div class="collapse-content">
 
-{% if rec.notes.any? %}
+{% if rec.notes && rec.notes.any? %}
 <ul class="leading-tight mt-0">
 {% rec.notes.each do |note| %}
 <li>{{ note | md | strip_p }}</li>

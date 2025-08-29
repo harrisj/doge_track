@@ -10,6 +10,16 @@ class Event < Sequel::Model
   many_to_many :doge_aliases
   many_to_many :people, right_key: :name, order: :sort_name
   many_to_one :case, key: :case_no
+  many_to_many :sources
 
   one_to_many :questions
+
+  # Backward compatibility
+  def source
+    sources.first&.url
+  end
+
+  def source_name
+    sources.first&.publisher&.short_name
+  end
 end
