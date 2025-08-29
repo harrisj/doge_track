@@ -10,7 +10,7 @@ class Agency < Sequel::Model
   one_to_many :children, key: :parent_id, class: self
 
   one_to_many :details_from, class: :Position, key: :from_agency_id
-  one_to_many :positions, eager_graph: %i[agency from_agency person doge_alias]
+  one_to_many :positions, eager_graph: [:agency, :from_agency, :person, :doge_alias, { sources: :publisher }]
 
   one_to_many :doge_aliases
 
@@ -48,12 +48,13 @@ class Agency < Sequel::Model
                      .association_join(:agencies)
                      .filter({ Sequel[:agencies][:id] => id })
                      .or({ Sequel[:agencies][:parent_id] => id })
-    Event.eager_graph(:people, :doge_aliases, :agencies).where({ Sequel[:events][:id] => event_ids }).order(:date).all
+    Event.eager_graph(:people, :doge_aliases, :agencies,
+                      { sources: :publisher }).where({ Sequel[:events][:id] => event_ids }).order(:date).all
   end
 
   def all_systems
     ids = all_agency_ids
-    GovtSystem.eager_graph(:system_roles)
+    GovtSystem.eager_graph(system_roles: { sources: :publisher })
               .where({ Sequel[:system_roles][:agency_id] => ids })
               .order(Sequel[:govt_systems][:name]).all
   end

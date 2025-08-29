@@ -21,7 +21,6 @@
     title_type: advisor
     table_note: Not listed as a detailee, so suggests appointed
     source: https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
-    source_name: American Oversight
   - id: dot-abrahamson
     type: appointed
     title: Senior Advisor
@@ -32,7 +31,6 @@
     table_note: start date unknown but ProPublica says "early February"
     source: >-
       https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2025/03/26/doge-assembles-a-legal-army-00251903
-    source_name: Politico
     agency: DOT
 
 - name: Justin Aimonetti
@@ -55,7 +53,6 @@
     fuzz: Report just says started sometime in February
     table_note: start date reported as "some point in February"
     source: https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
-    source_name: The Intercept
     agency: DOGE
 
 - name: Baris Akis
@@ -123,7 +120,6 @@
     start_date_truth: verified
     table_note: info in govt legal declation
     comment: Assuming detail from OPM
-    source_name: court doc
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
   - id: detail-opm-fcc-altik
     type: detailed
@@ -134,7 +130,6 @@
     title_type: advisor
     salary: "$0"
     source: https://frequencyfwd.com/files/motion-exhibit-1-08252025.pdf
-    source_name: Frequency Forward
     office: Office of the Chairman
     agency: FCC
 
@@ -171,7 +166,6 @@
     from_truth: guessed
     agency: DHS
     source: https://www.nytimes.com/2025/06/10/us/politics/airbnb-gebbia-musk-doge.html
-    source_name: NYT
     table_note: NYT reports he left OPM in April but stayed on a DHS. Unclear of timing, later appointed
       at DHS
     comment: Find more definitive info for DHS link
@@ -184,7 +178,6 @@
     end_date_truth: reported
     table_note: reportedly left OPM in April, but as at FDIC on 4/10, so maybe end of month
     source: https://www.notus.org/trump-white-house/musk-doge-allies-trump-administration-feud
-    source_name: NOTUS
     description: Exc Appt NTE
     appt_type_code: 48
     appt_type: Other
@@ -207,7 +200,6 @@
     start_date_truth: reported
     table_note: reported by media
     source: https://www.thehandbasket.co/p/doge-fdic
-    source_name: Handbasket
     agency: FDIC
 
 - name: Jennifer Balajadia
@@ -229,7 +221,6 @@
     type: appointed
     table_note: NYT links her to Education, but no other info found
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-    source_name: NYT
     sort_date: 2025-02-05
     agency: Education
 
@@ -251,14 +242,12 @@
     type: consultant
     supervisory: true
     source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
-    source_name: Politico
   - id: sba-lopez-ballefin
     type: unknown
     agency: SBA
     title: Senior Advisor
     title_type: advisor
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
-    source_name: American Oversight
 
 - name: Ankur Bansal
   sort_name: Bansal
@@ -275,7 +264,6 @@
     sort_date: 2025-05-15
     table_note: Reportedly reviewing DOT grants to cancel
     source: https://projects.propublica.org/elon-musk-doge-tracker/#Ankur-Bansal
-    source_name: ProPublica
 
 - name: Samuel Berry
   sort_name: Berry
@@ -293,7 +281,6 @@
     title: Special Advisor
     title_type: advisor
     source: https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
-    source_name: American Oversight
   - id: usda-berry-sr-advisor
     type: converted
     agency: USDA
@@ -302,7 +289,6 @@
     start_date: 2025-05-19
     start_date_truth: verified
     source: https://www.flickr.com/photos/usdagov/54530624479/in/photostream/
-    source_name: USDA Flickr
 
 - name: Sam Beyda
   sort_name: Beyda
@@ -319,7 +305,6 @@
     table_note: No other info besides this report
     source: >-
       https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
-    source_name: NBC News
     agency: DOL
 
 - name: Alexandra Beynon
@@ -344,7 +329,6 @@
     start_date_truth: guessed
     table_note: date guessed, reported as detailing from DOGE to Education
     source: https://projects.propublica.org/elon-musk-doge-tracker/#Alexandra-T--Beynon
-    source_name: ProPublica
     comment: FIXME, find earliest details of arrival; is she GSA?
   - id: detail-doge-education-alexandra-beynon
     type: detailed
@@ -354,7 +338,6 @@
     from_truth: verified
     agency: Education
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
-    source_name: court doc
     comment: Details just provided in court testimony
     table_note: info from a govt legal filing
     documents:
@@ -484,13 +467,11 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
     name: Brian Bjelde
     alias: OPM-07
-    source_name: court doc
   - id: opm-perm-employee-07
     type: converted
     agency: OPM
     start_date: 2025-01-31
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.0.pdf
-    source_name: court doc
     table_note: permanent position approved
     title: Expert
     title_type: advisor
@@ -556,7 +537,6 @@
     nte_date_truth: verified
     end_date: 2025-07-18
     end_date_truth: verified
-    end_source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.141.0.pdf
     table_note: Testimony reports plan to convert position to permanent
     end_type: resigned
     description: Exc Appt NTE
@@ -569,6 +549,7 @@
     pay_grade: ED-00
     salary: "$0"
     series: '0301'
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.141.0.pdf
     supervisory: false
     office: Office of the Director
     comment: I was able to confirm that OPM Employee 3 is Akash Bobba
@@ -1399,7 +1380,6 @@
       Was listed as CIO on May 30, but Aram took over in June. WSJ reports on removal of SSA employee
       back to NASA in June. Aram/Russo listed as co-CIOs on 6/6
     source: https://www.wsj.com/politics/policy/doge-elon-musk-left-control-92770407
-    source_name: WSJ
     supervisory: true
     documents:
     - onboard-ssa-employee-2
@@ -2122,7 +2102,6 @@
     start_date_truth: reported
     source: >-
       https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
-    source_name: Bloomberg
 
 - name: Justin Fulcher
   sort_name: Fulcher
@@ -2215,7 +2194,6 @@
     end_type: unknown
     comment: ProPublica just reports he was there in January
     source: https://projects.propublica.org/elon-musk-doge-tracker/#Mattieu-Gamache-Asselin
-    source_name: ProPublica
 
 - name: Joe Gebbia
   sort_name: Gebbia
@@ -2262,7 +2240,6 @@
     table_note: Position created in EO 14338
     source: >-
       https://www.reuters.com/world/us/trump-appoint-airbnb-co-founder-gebbia-remake-government-websites-2025-08-21/
-    source_name: Reuters
 
 - name: Derek Geissler
   sort_name: Geissler
@@ -2292,7 +2269,6 @@
       2/5.
     source: >-
       https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
-    source_name: NBC News
     agency: DOL
     from: GSA
 
@@ -2339,7 +2315,6 @@
     start_date_truth: verified
     table_note: Start month sourced from her LinkedIn
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
-    source_name: American Oversight
 
 - name: Brady Glantz
   sort_name: Glantz
@@ -2370,7 +2345,6 @@
     title_type: advisor
     office: Office of the Administrator
     source: https://www.washingtonpost.com/business/2025/06/08/doge-elon-musk-exit-trump/
-    source_name: Wash. Post
 
 - name: Amy Gleason
   sort_name: Gleason
@@ -2493,7 +2467,6 @@
     agency: SSA
     pd_code: KNX0370
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
-    source_name: court doc
     start_date: 2025-02-23
     start_date_truth: verified
     nte_date: 2026-02-22
@@ -3089,7 +3062,6 @@
     table_note: limited onboarding docs, court docs about them
     comment: All I have is the date they completed training
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.53.1.pdf
-    source_name: court doc
     documents:
     - onboard-ssa-employee-5
     name: Cole Killian
@@ -3133,7 +3105,6 @@
     from: OPM
     from_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
-    source_name: court doc
     table_note: detail in court doc
     name: Gavin Kliger
     alias: OPM-05
@@ -3250,7 +3221,6 @@
     start_date: 2025-03-(01)~
     start_date_truth: reported
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
-    source_name: court doc
     table_note: detail in court doc, date from Kliger spotted at VOA around start of March
     name: Gavin Kliger
     alias: OPM-05
@@ -4527,7 +4497,7 @@
     end_date: 2025-07-02
     end_date_truth: verified
     end_type: resigned
-    end_source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.141.0.pdf
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.141.0.pdf
     description: Exc Appt NTE
     appt_type_code: 48
     appt_type: Other
@@ -5001,10 +4971,11 @@
     end_date: 2025-07-29
     end_date_truth: reported
     end_type: resigned
-    end_source: >-
-      https://www.govexec.com/management/2025/07/doge-and-other-day-one-trump-appointees-head-exits-multiple-agencies/407075/
     comment: Details from a news article
-    source: https://www.propublica.org/article/frank-schuler-gsa-doge-syndicated-conservation-easements-tax-scam
+    source:
+    - https://www.propublica.org/article/frank-schuler-gsa-doge-syndicated-conservation-easements-tax-scam
+    - >-
+      https://www.govexec.com/management/2025/07/doge-and-other-day-one-trump-appointees-head-exits-multiple-agencies/407075/
 
 - name: Kyle Schutt
   sort_name: Schutt
@@ -5542,7 +5513,6 @@
   - id: ssa-employee-11
     type: appointed
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
-    source_name: court doc
     start_date: 2025-03-16
     start_date_truth: verified
     nte_date: 2026-03-15
@@ -5554,7 +5524,7 @@
     salary: "$162,672"
     pd_code: KNX0390
     qualifications: >
-      is a Senior Software Engineer with over ten years of experience building cloud-native geospatial 
+      is a Senior Software Engineer with over ten years of experience building cloud-native geospatial
       solutions. Adept at architecting geospatial infrastructures, implementing geospatial algorithms,
       and leading full- stack development. Experienced in collaborating with cross-functional teams to
       deliver mission-critical capabilities  and driving technical decisions and best practices.
@@ -5802,7 +5772,6 @@
     series: '0301'
     pd_code: 6A37370
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
-    source_name: court doc
     agency: OPM
     documents:
     - onboard-opm-employee-8

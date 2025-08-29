@@ -91,7 +91,7 @@ def generate_positions_csv
 
   CSV.open(File.join(OUTPUT_DIR, 'positions.csv'), 'w') do |csv|
     csv << %w[id type agency agency_parent name doge_alias_id from_agency_id from_truth start_date start_date_truth
-              start_source end_date end_date_truth end_source end_type sort_date
+              end_date end_date_truth end_type sort_date
               nte_date nte_date_truth signed_date appt_type_code appt_type pay_grade salary pd_code sge excepted title
               title_type series supervisory office source source_name reimbursed reimbursement_amount comment
               qualifications table_note replaced_by same_as person_govt_exit_date person_govt_exit_truth
@@ -109,10 +109,8 @@ def generate_positions_csv
         pos.from_truth,
         pos.start_date,
         pos.start_date_truth,
-        pos.start_source,
         pos.end_date,
         pos.end_date_truth,
-        pos.end_source,
         pos.end_type,
         pos.sort_date,
         pos.nte_date,

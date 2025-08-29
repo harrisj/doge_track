@@ -16,18 +16,20 @@ def validate_agency(agency, short_name_uniq)
   short_name_uniq.add(agency[:short_name])
 end
 
-def validate_event(event, cases)
+def validate_event(event, _cases)
   unless event[:id]
     id = SecureRandom.uuid
     event[:id] = ShortUUID.shorten(id)[0...8]
   end
 
+  event.except!(:source_name, :source_title)
+
   raise "Event #{event.inspect} has no source" unless event.key?(:source)
 
-  if event[:case_no] && !event[:source_name]
-    event[:source_name] = 'court doc'
-    event[:source_title] = cases.find { |c| c[:case_no] == event[:case_no] }.fetch(:name)
-  end
+  # if event[:case_no] && !event[:source_name]
+  #   event[:source_name] = 'court doc'
+  #   event[:source_title] = cases.find { |c| c[:case_no] == event[:case_no] }.fetch(:name)
+  # end
 
   event
 end
