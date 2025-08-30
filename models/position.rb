@@ -40,6 +40,11 @@ class Position < Sequel::Model
       Date.edtf(end_date).to_s
     else
       Date.today.to_s
+  def sort_name
+    if person
+      person.sort_name
+    else
+      "ZZZZZZ-#{doge_alias_id}"
     end
   end
 end
