@@ -32,8 +32,10 @@ In the past, I have oscillated between having one gigantic YAML file to the othe
 - `documents.yaml`: metadata and paths for documents I have cached locally
 - `interagency.yaml`: for events that represent collaboration across multiple agencies
 - `people.yaml`: information about the people each do. Each person also includes relevant positions representing time at specific agencies.
+- `publishers.yaml`: a list of all the publishers cited by sources
 - `questions.yaml`: a place for me to record questions I have that can be linked to items in the generated site
 - `roundups.yaml`: for recording the DOGE staff named by media outlets in special supplements (like the [NYT](https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html) or [ProPublica](https://projects.propublica.org/elon-musk-doge-tracker/))
+- `sources.yaml`: for collecting information on the sources used
 - `systems.yaml`: for tracking information both on federal IT systems and what access has been granted to them.
 
 ### Schema files and Validation
