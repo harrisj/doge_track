@@ -1,0 +1,46 @@
+---
+layout: page
+template_engine: serbea
+title: All Source Citations
+description: A comprehensive listing of all the source citations on a single page
+---
+{%@ 'atoms/title', title: 'All The Source Citations' %}
+
+{% undated_sources = Source.where(pub_date: nil) %}
+
+{% source_groups = Source.exclude(pub_date: nil).eager_graph(:events, :positions, :system_roles).order(:pub_date).all.reject {|src| src.title.nil? || src.pub_date.nil? }.group_by(&:pub_date) %}
+<table class="my-table-style">
+  <thead>
+      <tr>
+          <th class="max-w-1/8">Date</th>
+          <th>Articles</th>
+      </tr>
+  </thead>
+  <tbody>
+      {% source_groups.keys.sort.each do |date| %}
+      {% sources = source_groups[date] %}
+        <tr>
+            <td class="align-top"><span class="text-nowrap">{{ date }}</span></td>
+            <td class="align-top">
+                <div class="flex flex-col gap-1">
+                {% sources.each do |source| %}
+                <div>
+                    <div><a href="{{ source.url }}">{{ source.title }}</a>, <span class="italic">{{ source.publisher.name }}</span></div>
+                    {% if source.agencies.any? || source.people.any? %}
+                    <div class="ml-4 flex flex-row gap-1"><small>
+                    {% if source.agencies.any? %}
+                      <div><i class="fa-sharp fa-solid fa-building mr-1"></i>{{ source.agencies | agency_links }}</span>
+                    {% end %}
+                    {% if source.people.any? %}
+                      <span><i class="fa-sharp fa-solid fa-user mr-1"></i>{{ source.people | people_links }}</span>
+                    {% end %}
+                    </small></div>
+                    {% end %}
+                </div>
+                {% end %}
+                </div>
+            </td>
+        </tr>
+      {% end %}
+  </tbody>
+</table>
