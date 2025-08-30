@@ -1,6 +1,18 @@
 # yaml-language-server: $schema=../schemas/interagency-events-file.json
 ---
 
+- date: 2025-01-20
+  type: official
+  event: >-
+    In another executive order EO 14170, Trump declares a hiring freeze and that DOGE will work with OMB
+    and OPM to submit a plan to reduce the size of the government within 90 days
+  source: https://www.whitehouse.gov/presidential-actions/2025/01/hiring-freeze/
+  agency:
+  - DOGE
+  - OMB
+  - OPM
+  id: cSecvrNE
+
 - date: 2025-01-23
   type: interagency
   event: >-
@@ -142,6 +154,19 @@
   - OPM
   id: hocQ5vQK
 
+- date: 2025-03-05
+  type: interagency
+  event: >-
+    Complying with the demands in EO 14217, USIP leadership submits a letter to OMB asserting that USIP
+    is an independent nonprofit organization, not a federal agency and that the measures in the executive
+    order do not apply.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
+  case_no: 1:25-cv-00804
+  agency:
+  - USIP
+  - OMB
+  id: 4BC649hy
+
 - date: 2025-03-14
   type: official
   event: >-
@@ -176,7 +201,7 @@
   source: >-
     https://www.notus.org/trump-white-house/white-house-penn-funding-cut-san-jose-state-secret-internal-emails
   agency:
-  - EOP
+  - OMB
   - GSA
   id: 3lwvzoQN
 
@@ -369,6 +394,18 @@
   - CPSC
   id: 2abB0Nt3
 
+- date: 2025-04-10
+  type: interagency
+  event: >-
+    AmeriCorps' acting director submits a plan to the OPM and OMB proposing a 50% cut in the agency workforce.
+  source: https://www.washingtonpost.com/politics/2025/04/10/trump-presidency-news-tariffs/
+  theme: personnel
+  agency:
+  - AmeriCorps
+  - OPM
+  - OMB
+  id: E2XtrgBb
+
 - date: 2025-04-11
   type: disruption
   event: >-
@@ -408,7 +445,7 @@
   source: >-
     https://www.gsa.gov/real-estate/real-estate-services/for-federal-customers/use-it-act-and-occupancy-data
   agency:
-  - EOP
+  - OMB
   - GSA
   id: 4Dk4zhPh
 
@@ -460,7 +497,7 @@
     - Luke Farritor
   agency:
   - NSF
-  - EOP
+  - OMB
   source: https://www.bloomberg.com/features/2025-luke-farritor-doge/
   id: 5thSMkbE
 
@@ -899,6 +936,21 @@
   - State
   - CPB
   id: 6MnCvHNL
+
+- date: 2025-07-23
+  type: interagency
+  event: >-
+    Citing safety concerns, the head of the CFPB (Russell Vought) signs an agreement with the head of
+    the OMB (Russell Vought) to spend $4.7 milliion of the CFPB's budget from now through December to
+    provide a security detail for Russell Vought. This is the same time as the agency is facing its budget
+    being slashed in half.
+  named:
+  - Russell Vought
+  source: https://www.govexec.com/management/2025/07/russ-vought-bills-cfpb-5m-his-security-detail/406928/
+  agency:
+  - CFPB
+  - OMB
+  id: TXsbSUw4
 
 - date: 2025-08-12
   type: legal
