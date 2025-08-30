@@ -12,15 +12,15 @@ description: A comprehensive listing of all the source citations on a single pag
 <table class="my-table-style">
   <thead>
       <tr>
-          <th class="max-w-1/8">Date</th>
-          <th>Articles</th>
+          <th class="text-left my-2col-table-col1">Date</th>
+          <th class="text-left my-2col-table-col2">Articles</th>
       </tr>
   </thead>
   <tbody>
       {% source_groups.keys.sort.each do |date| %}
       {% sources = source_groups[date] %}
         <tr>
-            <td class="align-top"><span class="text-nowrap">{{ date }}</span></td>
+            <td class="align-top">{{ date }}</td>
             <td class="align-top">
                 <div class="flex flex-col gap-1">
                 {% sources.each do |source| %}
