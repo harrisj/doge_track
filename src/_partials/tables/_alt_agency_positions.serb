@@ -1,0 +1,43 @@
+{% all_positions = agency.positions + agency.details_from 
+   grouped_positions = all_positions.group_by {|pos| pos.sort_name }
+   keys = grouped_positions.keys().sort
+%}
+<table class="my-table-style">
+  <thead>
+  <tr>
+    <th class="text-left my-3col-table-col1">Name</th>
+    <th class="text-left my-3col-table-col2">Date</th>
+    <th class="text-left my-3col-table-col3">Positions</th>
+  </tr>
+  </thead>
+  <tbody>
+    {% keys.each do |key| %}
+      {% positions = grouped_positions[key].sort_by(&:sort_date) %}
+      {% person = positions[0].person %}
+      {% doge_alias = positions[0].doge_alias %}
+      {% start_date = positions[0].start_date %}
+      {% if positions.all? {|x| x.end_date }
+            end_date = positions.map(&:end_date).max
+         elsif person&.govt_exit_date
+            end_date = person.govt_exit_date
+         end   
+       %}
+      <tr>
+        <td class="align-top">{%@ 'atoms/position_person_link', position: positions[0] %}
+        <div class="only-mobile">{%@ 'atoms/date_range_label', first: start_date, last: end_date %}</div>
+        </td>
+        <td class="align-top hide-cell-mobile">{%@ 'atoms/date_range_label', first: start_date, last: end_date %}</td>
+        <td class="align-top">
+          <div class="flex flex-col space-y-2">
+          {% positions.each do |pos| %}
+            <div class="-indent-4">{%@ 'atoms/agency_position_move_label', position: pos %}{% if pos.start_date %} ({%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}){% end %} {%@ 'molecules/alt_position_summary', position: pos %}</div>
+          {% end %}
+          {% if person&.govt_exit_date %}
+          <div class="-indent-4"><i class="fa-sharp fa-solid fa-left-from-bracket"></i> <strong>Left DOGE</strong> {{ render EdtfFormat.new(person.govt_exit_date, :compact, :none) }}</div>
+          {% end %}
+          </div>
+        </td>
+      </tr>
+    {% end %}
+  </tbody>
+</table>

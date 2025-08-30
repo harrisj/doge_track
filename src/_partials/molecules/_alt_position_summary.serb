@@ -1,0 +1,60 @@
+
+{% import 'macros' %}
+
+{% macro 'hire_details' do |pos| 
+    hire_details = [
+      pos.sge ? "<abbr title=\"Special Government Employee\">SGE</abbr>" : nil,
+      pos.appt_type && pos.appt_type != 'Other' ? pos.appt_type : nil,
+      pos.nte_date ? "<abbr title=\"not to exceed\">NTE</abbr> #{pos.nte_date}" : nil,
+      pos.pay_grade,
+      pos.supervisory ? 'supervisory' : nil,
+      pos.excepted ? 'excepted' : nil ,
+      pos.salary == "$0" ? "volunteer" : nil ,
+      pos.salary && pos.salary != '$0' ? "<strong>#{pos.salary}</strong>" : nil,
+      pos.reimbursement_amount ? "reimbursed <strong>#{pos.reimbursement_amount}</strong>" : nil
+    ].compact
+
+    if hire_details.any?
+      hire_str = " (#{hire_details.join(', ')})"
+    else
+      nil
+    end
+  end
+
+  macro 'type_str' do |pos, agency|
+    case pos.type
+    when 'other'
+      nil
+    when 'detailed'
+      if pos.from_truth != 'reported' && pos.from_truth != 'verified'
+        str = "likely "
+      else
+        str = ""
+      end
+
+      if pos.from_agency == agency
+        str += "detailed to #{agency_link(pos.agency)}"
+      else
+        str += "detailed from #{agency_link(pos.from_agency)}"
+      end
+    when 'promotion'
+      pos.title ? 'promoted to' : 'promoted'
+    when 'demotion'
+      pos.title ? 'demoted to' : 'demoted'
+    when 'converted'
+      'converted to permanent position'
+    when 'internal'
+      'internal xfer'
+    else
+      pos.type
+    end
+  end
+%}
+
+{% if position.doge_alias_id && position.name %}[as <a href="/people/aliases#{{ position.doge_alias_id }}" class="link-hover">{{ position.doge_alias_id }}</a>]{% end %}
+{{ type_str(position, agency) | raw }}
+{% if position.title %}<strong>{{ position.title }}</strong>{% if position.office %}, {{ position.office }}{% end %}{% end %}
+{{ hire_details(position) | raw }}
+{% if position.table_note %}«<span class="italic">{{ position.table_note | md | strip_p }}</span>»{% end %}
+{% if position.documents.any? %}<i class="fa-sharp fa-solid fa-file"></i> {% position.documents.each_with_index do |doc, i| %}{% if i > 0 %}, {% end %}<a class="link-hover" href="{{ doc.url }}">{{ document_type(doc) }}</a>{% end %}{% end %}
+{% if position.source_name %}<a class="ml-2" href="{{ position.source }}" class="link-hover"><i class="fa-sharp fa-solid fa-link-simple"></i> <span class="italic text-2xs sm:text-xs">{{ position.source_name }}</span></a>{% end %}
