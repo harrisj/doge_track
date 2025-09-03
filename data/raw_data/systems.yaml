@@ -2780,6 +2780,32 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
     name: Payton Rehling
 
+- name: SweetREX Deregulation AI Plan Builder
+  id: sweet-rex
+  type: internal
+  category: other
+  theme: deregulation
+  description: >-
+    A custom tool developed by college student Christopher Sweet that uses AI models to analyze regulations
+    at HUD to determine which can be eliminated or reframed. DOGE is planning to use this tool at other
+    agencies as part of a drive to eliminate 50% of all regulations across the federal government.
+  risk: >-
+    No PII risks. Tool output is supposed to be validated by policy experts, but risk of eliminating important
+    regulations. It is a a Large-Language Model (LLM) so there are the usual risks of erroneous and fabricated
+    output.
+  agency: HUD
+  doge_created: true
+  access:
+  - id: sweetrex-sweet
+    name: Christopher Sweet
+    type: admin
+    table_note: There are few public details, inferring based on news reports
+    date_granted: 2025-04-XX
+    date_grant_truth: reported
+    source:
+    - https://www.wired.com/story/doge-college-student-ai-rewrite-regulations-deregulation/
+    - https://www.wired.com/story/sweetrex-deregulation-ai-us-government-regulation-doge/
+
 - name: Systematic Alien Verification for Entitlements
   id: save
   acronym: SAVE
