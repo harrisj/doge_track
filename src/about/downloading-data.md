@@ -23,8 +23,10 @@ As mentioned in the [About This Data](/about/this-data) page, this data for this
 - [exec_orders.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/exec_orders.yaml)
 - [interagency.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/interagency.yaml) (events that span agencies)
 - [people.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/people.yaml) (includes their positions at agencies)
+- [publishers.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/publishers.yaml)
 - [questions.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/questions.yaml)
 - [roundups.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/roundups.yaml) (DOGE listings from NYT, ProPublica, etc.)
+- [sources.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/sources.yaml)
 - [systems.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/systems.yaml) (includes system access records)
 
 Please note that I might revise the structure of these YAML files significantly over time (the data will of course also change), as I add new features and functionality. If you are using the data to build your own things, it might make sense to download a copy or pin to a specific commit.
@@ -48,7 +50,7 @@ This site also includes several CSV representations of the data for your conveni
 
 ## The JSON API
 
-Finally, I have started to create a JSON API for the data. Since it is built using the same heavily-cached static generation techniques as the site, there is no need for rate-limiting or an API key. 
+Finally, I have started to create a JSON API for the data. Since it is built using the same heavily-cached static generation techniques as the site, there is no need for rate-limiting or an API key.
 
 Full Swagger documentation is available at [https://dogetrack.info/api/](/api/), but for now it includes the following endpoints:
 
@@ -61,4 +63,3 @@ Full Swagger documentation is available at [https://dogetrack.info/api/](/api/),
 - [/api/systems.json](/api/systems.json) - all the systems I know about
 
 More endpoints to be added in the future, but this is a start!
-
