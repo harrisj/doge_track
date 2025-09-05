@@ -2669,25 +2669,28 @@
     type: promotion
     start_date: 2025-04-XX
     start_date_truth: reported
-    end_date: 2025-08-01
-    end_date_truth: reported
+    end_date: 2025-09-03
+    end_date_truth: verified
     end_type: replaced
     replaced_by: doi-hassen-unknown
     title: Principal Deputy Assistant Secretary
     title_type: director
     supervisory: true
-    table_note: title change allows him to avoid Senate approval/ethics rules; date of change unclear
+    table_note: >-
+      title change allows him to avoid Senate approval/ethics rules. He reported he was leaving the agency
+      on 8/1, but was seemingly still in the role until 9/3
     source:
     - >-
       https://apnews.com/article/hassen-burgum-musk-interior-energy-conflicts-830e9df68c7869e943f96c4b5e384f20
     - https://www.nytimes.com/2025/07/25/climate/doge-interior-tyler-hassen.html
+    - https://www.publicdomain.media/p/tyler-hassen-interior-doge-financial-holdings
   - id: doi-hassen-unknown
     agency: DOI
     type: unknown
-    start_date: 2025-08-02
+    start_date: 2025-09-03
     start_date_truth: reported
-    table_note: Reportedly still at agency, but unclear in what role
-    source: https://www.eenews.net/articles/doge-official-is-still-at-interior-after-expected-exit/
+    table_note: Possibly still at agency, but unclear in what role
+    source: https://www.publicdomain.media/p/tyler-hassen-interior-doge-financial-holdings
 
 - name: Jim Hickey
   sort_name: Hickey
