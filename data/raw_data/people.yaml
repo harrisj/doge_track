@@ -1537,8 +1537,18 @@
   skill: administrator
   category: enabler
   blurb: |-
-    DOGE is only able to subvert agencies when it has the explicit cooperation and support of senior leadership there. Nobody better exemplifies than Leland Dudek, who was a relatively minor supervisor within Social Security before he was placed on leave for insubordination by giving DOGE access without authorization. Soon, he was rewarded for his defiance by being named Acting Commissioner for the agency after the Trump administration fired the existing commissioner. Once elevated into that spot, he used all his powers to prioritize access for DOGE staff until a federal judge finally ordered him to stop.
-    With the appointment of Steve Bisignano to the role of Commissioner, Leland Dudek has stepped aside out of the limelight. Recent posts suggest he might be looking for opportunities outside of government.
+    DOGE is only able to subvert agencies when it has the explicit cooperation and support of senior leadership there. Nobody better
+    exemplifies than Leland Dudek, who was a relatively minor supervisor within Social Security before he was placed on leave for
+    insubordination by giving DOGE access without authorization. Soon, he was rewarded for his defiance by being named Acting
+    Commissioner for the agency after the Trump administration fired the existing commissioner.
+
+    With the appointment of Steve Bisignano to the role of Commissioner, Leland Dudek has stepped aside out of the limelight and
+    was dismissed by SSA in June. In a recent interview with ProPublica, Dudek has stated that some of his apparent blustering
+    and stumbling in the role were deliberate to wake up people to what was happening, and that he often was the leaked source
+    for articles critical of himself and DOGE.
+  govt_exit_date: 2025-06-XX
+  govt_exit_truth: reported
+  govt_exit_type: fired
   positions:
   - id: ssa-dudek-commissioner
     type: promotion
@@ -1559,10 +1569,14 @@
     agency: SSA
     start_date: 2025-05-06
     start_date_truth: reported
-    table_note: Replaced by Bisignano as confirmed commissioner
-    comment: FIXME find out what Dudek is doing at SSA
-    source: >-
+    end_date: 2025-06-XX
+    end_date_truth: reported
+    end_type: fired
+    table_note: Replaced by Bisignano as confirmed commissioner, ProPublica reports dismissed in June
+    source:
+    - >-
       https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
+    - https://www.propublica.org/article/inside-doge-social-security-takeover-leland-dudek
 
 - name: Stephen Ehikian
   sort_name: Ehikian
