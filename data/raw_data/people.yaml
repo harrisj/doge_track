@@ -4256,10 +4256,22 @@
     sort_date: 2025-06-28
     start_date: 2025-06-XX
     start_date_truth: reported
+    end_date: 2025-09-03
+    end_date_truth: verified
+    end_type: replaced
     source: https://fedscoop.com/social-security-administration-doge-chief-information-officer/
     title: Chief Information Officer
     title_type: cio
     supervisory: true
+  - id: ssa-co-cio-moghaddassi
+    agency: SSA
+    type: promotion
+    start_date: 2025-09-03
+    title: Chief Information Officer (Technology and Customer Products)
+    title_type: cio
+    supervisory: true
+    table_note: Had reportedly been in an informal co-CIO role with Mike Russo since June, now made official
+    source: https://www.ssa.gov/news/en/press/releases/2025-09-03.html
 
 - name: Justin Monroe
   sort_name: Monroe
@@ -4943,14 +4955,29 @@
     type: demotion
     start_date: 2025-03-25
     start_date_truth: reported
+    end_date: 2025-09-03
+    end_date_truth: verified
+    end_type: replaced
+    replaced_by: ssa-mike-russo-co-cio
     title: Senior Advisor
     title_type: advisor
     supervisory: false
     comment: >-
       Scott Coulter is named the new CIO at the Social Security Administration and Mike Russo is moved
       to a Senior Advisor role with a focus on modernizing systems
+    table_note: >-
+      Demoted and replaced by Scott Coulter in CIO role, he seems to be acting in a quasi co-CIO role
+      since June
     source: https://www.nextgov.com/people/2025/03/ssa-tech-shop-be-led-another-doge-associate/404031/
     agency: SSA
+  - id: ssa-mike-russo-co-cio
+    agency: SSA
+    type: promotion
+    start_date: 2025-09-03
+    title: Chief Information Officer (Core Business Functions)
+    title_type: cio
+    supervisory: true
+    source: https://www.ssa.gov/news/en/press/releases/2025-09-03.html
 
 - name: Amanda Scales
   sort_name: Scales
