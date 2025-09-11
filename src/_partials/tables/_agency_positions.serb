@@ -5,9 +5,9 @@
    else
    dated_positions = positions
    undated_positions = nil
-   end 
-   
-   grouped_data_positions = dated_positions.group_by{|pos| pos.name || pos.doge_alias_id}.sort_by {|_, positions| positions[0].sort_date }   
+   end
+
+   grouped_data_positions = dated_positions.group_by{|pos| pos.name || pos.doge_alias_id}.sort_by {|_, positions| positions[0].sort_date }
 %}
 
 <table class="my-table-style">
@@ -20,6 +20,7 @@
   </thead>
   <tbody class="">
     {% dated_positions.sort_by(&:sort_date).each do |pos| %}
+      {% next if pos.type == 'internal' %}
       <tr class="font-sans" id="{{ pos.id }}">
         <td class="align-top">
           {%@ 'atoms/position_move_label', position: pos %}
