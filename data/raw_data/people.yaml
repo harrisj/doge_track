@@ -4188,7 +4188,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: detail-sba-moghaddassi
     agency: SBA
-    from: OPM
+    from: DOL
     from_truth: guessed
     title: Special Advisor
     title_type: advisor
@@ -4901,9 +4901,10 @@
     office: NIH Business System
     source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
   - id: detail-hhs-nsf-riley
-    type: consultant
+    type: detailed
     from: HHS
     from_truth: guessed
+    title: Consultant
     start_date: 2025-04-14
     start_date_truth: reported
     comment: Showed up at the agency to do secondary round of grant reviews. Assuming a detail
@@ -4956,7 +4957,7 @@
     Bobba. The DOGE contingent eventually swelled to 11 engineers under his watch. In late March, he was
     removed from the CIO position and demoted to a Senior Advisor, reportedly because the Trump administration
     was displeased that he cooperated with a judge's order to revoke DOGE access to SSA systems. However,
-    recent reports by the _New York Times_ claim that he is effectively acting as a co-CIO with Aram Mohgaddassi
+    recent reports by the _New York Times_ claim that he is effectively acting as a co-CIO with Aram Moghaddassi
     under Frank Bisignano's leadership, so perhaps he has returned to good graces. Prior to government
     service, he was a senior executive at Shift4 Payments, which is an investor in SpaceX and a payment
     processor for Starlink.
@@ -5963,12 +5964,13 @@
     comment: Inferring from first reported access to the IDR system at CMS
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: detail-hhs-nsf-terrell
-    type: consultant
+    type: detailed
     office: Office of the Director
     from: HHS
     from_truth: inferred
     start_date: 2025-04-14
     start_date_truth: reported
+    title: Consultant
     comment: Showed up at the agency to do secondary round of grant reviews. Assuming a detail
     source: https://fedscoop.com/national-science-foundation-nsf-doge-grants-data-systems/
     agency: NSF
