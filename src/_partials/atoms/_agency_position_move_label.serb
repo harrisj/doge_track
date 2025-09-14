@@ -1,6 +1,6 @@
 {% if position.agency_id %}
   {% raise position.inspect if position.agency.nil? %}
-  
+
   <span class="md:text-nowrap">
   {% if position.type == 'detailed' %}
     {% if position.agency == agency %}

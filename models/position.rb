@@ -16,6 +16,10 @@ class Position < Sequel::Model
     type == 'detailed'
   end
 
+  def internal_xfer?
+    type == 'internal'
+  end
+
   # Backward compatibility
   def source
     sources.first&.url
@@ -40,6 +44,9 @@ class Position < Sequel::Model
       Date.edtf(end_date).to_s
     else
       Date.today.to_s
+    end
+  end
+
   def sort_name
     if person
       person.sort_name

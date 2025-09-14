@@ -1,4 +1,4 @@
-{% all_positions = agency.positions + agency.details_from 
+{% all_positions = agency.all_positions_and_details_out
    grouped_positions = all_positions.group_by {|pos| pos.sort_name }
    grouped_positions.values.each {|positions| positions.sort_by! {|pos| pos.sort_date}}
 %}
@@ -16,10 +16,11 @@
       {% doge_alias = positions[0].doge_alias %}
       {% start_date = positions[0].start_date %}
       {% if positions.all? {|x| x.end_date }
-            end_date = positions.map(&:end_date).max
+            last_position = positions.sort_by {|x| x.end_date }.last
+            end_date = last_position.end_date
          elsif person&.govt_exit_date
             end_date = person.govt_exit_date
-         end   
+         end
        %}
       <tr>
         <td class="align-top">{%@ 'atoms/position_person_link', position: positions[0] %}
@@ -33,6 +34,8 @@
           {% end %}
           {% if person&.govt_exit_date %}
           <div class="-indent-4"><i class="fa-sharp fa-solid fa-left-from-bracket"></i> <strong>Left DOGE</strong> {{ render EdtfFormat.new(person.govt_exit_date, :compact, :none) }}</div>
+          {% elsif last_position %}
+          <div class="-indent-4"><i class="fa-sharp fa-solid fa-left-from-bracket"></i> {{ position_end_type(last_position) | raw }} {{ render EdtfFormat.new(last_position.end_date, :compact, :none) }}</div>
           {% end %}
           </div>
         </td>
