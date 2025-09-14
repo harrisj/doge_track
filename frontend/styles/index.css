@@ -146,6 +146,24 @@ layer(base);
         @apply font-sans;
         @apply text-base-content;
     }
+
+    .chart-label tspan {
+        @apply font-sans text-sm;
+    }
+
+    :root {
+        --chart-background: #ffffff;
+        --chart-foreground: #2d3748;
+        --primary-series: #4299e1;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --chart-background: #1a202c;
+            --chart-foreground: #e2e8f0;
+            --primary-series: #63b3ed;
+        }
+    }
 }
 
 .prose div.highlight {

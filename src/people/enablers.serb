@@ -4,6 +4,7 @@ title: The Enablers
 description: There are a specific group of DOGE members whose main work is to be in a supervisory position where they can clear the path for other DOGE staffers to embed in the agency. I call them Enablers.
 ---
 {% import "macros" %}
+
 {%@ 'atoms/title', title: 'The Enablers' %}
 
 {%@ 'text' do %}
@@ -88,27 +89,30 @@ The Trump administration has dramatically upended this practice, using Acting Di
 In February, OPM urged [agencies to reclassify how Chief Information Officers are hired](https://www.opm.gov/media/juna3mhp/opm-memo-guidance-regarding-redesignating-ses-cio-positions-2-4-2025-final.pdf), with a rule change that makes it easier to fill the position with private sector staff. Since then, several of the DOGE crew have been named directly to the title of Chief Information Officer, giving them authority over IT resources at their agency, in a few cases after the current CIO has been ousted by agency leadership. In some cases, they have used their positions to explicitly grant access to DOGE representatives at the agency. This table only list direct authorizations that have been documented. Indirect influence has likely been more widespread.
 {% end %}
 
-{% cios = Position.where(title_type: ["cto", "cio"]).order_by(:sort_date) %}
-<table class="my-table-style table-zebra my-2">
+{%# <div id="chart"></div>
+<script src="/includes/cios_chart.js"></script> %}
+
+{% cios = Position.where(title_type: ["cto", "cio"]).order_by(:sort_date).all %}
+{% grouped_cios = cios.group_by(&:agency_id) %}
+<table class="my-table-style my-2">
 <thead>
   <tr>
-    <th>Name</th>
     <th>Agency</th>
     <th>Date</th>
-    <th>Tech Links</th>
-    <th>Access Grants</th>
+    <th>Name</th>
+    <th>Title</th>
   </tr>
 </thead>
 <tbody>
-{% cios.each do |pos| %}
-  {% access_granted = SystemRole.eager_graph(:agency, :govt_system).where(ao_name: pos.name).where({Sequel[:agency][:id] => pos.agency_id}).all %}
-  <tr>
-    <td class="align-top">{{ person_link(pos.name) }}</td>
-    <td class="align-top">{{ agency_link(pos.agency_id)}}</td>
-    <td class="align-top">{{render EdtfFormat.new(pos.start_date, :compact, :filled) }}</td>
-    <td class="align-top">{{ pos.person.tech_links }}</td>
-    <td class="align-top">{{ access_granted.map(&:name).uniq.compact | people_links }}</td>
-  </tr>
+{% grouped_cios.each do |agency_id, positions| %}
+    {% positions.each_with_index do |pos, i| %}
+    <tr>
+        {% if i == 0 %}<td class="align-top" rowspan="{{ positions.count }}">{{ agency_link(agency_id) }}</td>{% end %}
+        <td>{%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date, always_dash: true %}</td>
+        <td>{{ person_link(pos.name) }}</td>
+        <td>{{ pos.title }}</td>
+    </tr>
+    {% end %}
 {% end %}
 </tbody>
 </table>

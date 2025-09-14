@@ -10,11 +10,11 @@ var options = {
       name: '{{ name }}',
       data: [
         {% positions.each do |pos| %}
-          {
-              'x': '{{ pos.agency_id }}',
-              'y': [
-                new Date('{{ pos.chart_start_date }}').getTime(),
-                new Date('{{ pos.chart_end_date }}').getTime()
+{
+  'x': '{{ pos.agency_id }}',
+    'y': [
+      new Date('{{ pos.chart_start_date }}').getTime(),
+      {% if pos.end_date %}new Date('{{ pos.chart_end_date }}').getTime(){% else %}Date.now(){% end %}
               ]
           },
         {% end %}
@@ -24,7 +24,16 @@ var options = {
   ],
   chart: {
     height: 450,
-    type: 'rangeBar'
+    type: 'rangeBar',
+    toolbar: {
+      show: false
+    },
+    fontFamily: "Raleway, system-ui, sans-serif",
+    background: 'var(--chart-background)',
+    foreColor: 'var(--chart-foreground)',
+    zoom: {
+      enabled: false
+    }
   },
   plotOptions: {
     bar: {
@@ -34,7 +43,7 @@ var options = {
     }
   },
   xaxis: {
-    type: 'datetime'
+    type: 'datetime',
   },
   legend: {
     show: false,
