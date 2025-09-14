@@ -276,7 +276,7 @@
 - name: Samuel Berry
   sort_name: Berry
   slug: sam-berry
-  category: wrecker
+  category: enabler
   skill: coder
   blurb: >-
     He was named as a member of the DOGE team at USDA in response to a FOIA request from American Oversight.
@@ -296,7 +296,21 @@
     office: Office of the Chief Information Officer
     start_date: 2025-05-19
     start_date_truth: verified
+    end_date: 2025-09-12
+    end_date_truth: reported
+    end_type: replaced
+    replaced_by: usda-berry-cio
     source: https://www.flickr.com/photos/usdagov/54530624479/in/photostream/
+  - id: usda-berry-cio
+    type: promotion
+    agency: USDA
+    title: Chief Information Officer
+    title_type: cio
+    start_date: 2025-09-12
+    start_date_truth: reported
+    supervisory: true
+    source: >-
+      https://www.nextgov.com/people/2025/09/agriculture-taps-doge-associate-its-tech-lead-reassigning-previous-cio/408093/
 
 - name: Sam Beyda
   sort_name: Beyda

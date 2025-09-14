@@ -1303,10 +1303,22 @@
     source: https://www.propublica.org/article/forest-service-staff-fire-season
     agency: USDA
     id: bWh2ocEx
+  - date: 2025-09-12
+    type: official
+    event: >-
+      In an email to all staff, USDA announces that the existing Chief Information Officer for the agency
+      will now be moved to a new role named Chief Innovation Officer and that DOGE team member Samuel
+      Berry will be the next CIO for the agency.
+    named:
+    - Samuel Berry
+    source: >-
+      https://www.nextgov.com/people/2025/09/agriculture-taps-doge-associate-its-tech-lead-reassigning-previous-cio/408093/
+    agency: USDA
+    id: 3HMxtkeA
 
 - name: Department of Defense
   id: DOD
-  short_name: Defense
+  short_name: DOD
   slug: defense
   page_slug: defense
   blurb: >-
@@ -2673,7 +2685,7 @@
 
 - name: Department of Education
   id: Education
-  short_name: ED
+  short_name: Education
   slug: education
   page_slug: education
   blurb: >-
@@ -2825,7 +2837,7 @@
 
 - name: Department of Energy
   id: Energy
-  short_name: Energy
+  short_name: DOE
   slug: energy
   page_slug: energy
   blurb: >-
@@ -5448,10 +5460,21 @@
 
 - name: National Archives
   id: NARA
-  short_name: Archives
+  short_name: NARA
   slug: nara
-  page_slug: archives
-  events: []
+  page_slug: none
+  events:
+  - date: 2025-02-07
+    type: disruption
+    event: >-
+      President Trump dismisses the Archivist of the United States, the head of the National Archives
+      and the chief official responsible for preserving government records. Marco Rubio is named the Acting
+      Archivist.
+    source:
+    - https://www.cbsnews.com/news/trump-fires-archivist-of-the-united-states-colleen-shogan/
+    - https://www.foxnews.com/politics/rubio-named-acting-director-another-us-government-agency-report
+    agency: NARA
+    id: 4pktRrRB
 
 - name: National Design Studio
   id: NDS
