@@ -54,4 +54,4 @@
 {{ hire_details(position) | raw }}
 {% if position.table_note %}«<span class="italic">{{ position.table_note | md | strip_p }}</span>»{% end %}
 {% if position.documents.any? %}<i class="fa-sharp fa-solid fa-file"></i> {% position.documents.each_with_index do |doc, i| %}{% if i > 0 %}, {% end %}<a class="link-hover" href="{{ doc.url }}">{{ document_type(doc) }}</a>{% end %}{% end %}
-{% if position.source_name %}<a class="ml-2" href="{{ position.source }}" class="link-hover"><i class="fa-sharp fa-solid fa-link-simple"></i> <span class="italic text-2xs sm:text-xs">{{ position.source_name }}</span></a>{% end %}
+{% if position.source_name %}<small><a class="ml-2" href="{{ position.source }}" class="link-hover"><i class="fa-sharp fa-solid fa-link-simple"></i> <span class="italic text-2xs sm:text-xs">{{ position.source_name }}</span></a></small>{% end %}
