@@ -56,8 +56,7 @@
     nte_date: 2026-02-12
     nte_date_truth: verified
     reimbursed: false
-    documents:
-    - detail-20250212-opm-education-ed-1
+    source: https://www.documentcloud.org/documents/26028777-mou-20250212-opm-education-ed-1/
 
 - id: ED-02
   agency: Education
@@ -83,8 +82,7 @@
     series: '0301'
     supervisory: false
     office: Office of the Secretary
-    documents:
-    - onboard-education-employee-2
+    source: https://www.documentcloud.org/documents/26028781-onboard-education-employee-2/
 
 - id: ED-03
   agency: Education
@@ -113,8 +111,7 @@
     nte_date_truth: verified
     reimbursed: false
     comment: ED-3 is Ethan Shaotran
-    documents:
-    - detail-20250212-gsa-education-ed-3
+    source: https://www.documentcloud.org/documents/26028797-mou-20250212-gsa-education-ed-3/
 
 - id: ED-04
   agency: Education
@@ -126,7 +123,7 @@
     Further down the same document, a table lists one consultant starting on the same date unredacted
     and it's Brooks Morgan
   positions:
-  - id: onboard-education-employee-4
+  - id: education-employee-4
     type: consultant
     comment: Part-time
     start_date: 2025-02-04
@@ -135,8 +132,8 @@
     nte_date_truth: verified
     agency: Education
     salary: "$0"
-    documents:
-    - onboard-education-employee-4
+    source:
+    - https://www.documentcloud.org/documents/26028771-onboard-education-employee-4/
 
 - id: FBI-01
   agency: FBI
@@ -175,9 +172,9 @@
     office: Office of the Director
     table_note: info for alias SSA-2, who I've identified as him
     comment: I was able to confirm that OPM Employee 2 was Riccardo Biasini
-    documents:
-    - opm-foia-doge-positions
-    - onboard-opm-employee-2
+    source:
+    - https://www.documentcloud.org/documents/26028787-onboard-opm-employee-2/
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
 
 - id: OPM-03
   agency: OPM
@@ -213,13 +210,12 @@
     pay_grade: ED-00
     salary: "$0"
     series: '0301'
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.141.0.pdf
+    source:
+    - https://www.documentcloud.org/documents/26028792-onboard-opm-employee-3/
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     supervisory: false
     office: Office of the Director
     comment: I was able to confirm that OPM Employee 3 is Akash Bobba
-    documents:
-    - opm-foia-doge-positions
-    - onboard-opm-employee-3
   - id: detail-opm-ssa-opm-3
     type: detailed
     agency: SSA
@@ -229,8 +225,7 @@
     start_date: 2025-02-03
     start_date_truth: verified
     reimbursed: false
-    documents:
-    - detail-20250212-opm-education-ed-1
+    source: https://www.documentcloud.org/documents/26028790-mou-20250212-ssa-opm-education-ed-1/
 
 - id: OPM-04
   agency: OPM
@@ -271,8 +266,7 @@
     comment: This is GSA appointment
     same_as: gsa-edward-coristine
     table_note: A GSA employee too, but legal docs state dual appointment and not detail from GSA to OPM
-    documents:
-    - onboard-opm-employee-4
+    source: https://www.documentcloud.org/documents/26028768-onboard-opm-employee-4/
 
 - id: OPM-05
   agency: OPM
@@ -309,9 +303,9 @@
     supervisory: true
     office: Office of the Director
     table_note: hired at maximum salary for GS federal employee in DC
-    documents:
-    - opm-foia-doge-positions
-    - onboard-opm-employee-5
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - https://www.documentcloud.org/documents/26028815-onboard-opm-employee-5/
   - id: opm-perm-employee-5
     type: converted
     agency: OPM
@@ -330,9 +324,9 @@
     supervisory: true
     office: Office of the Director
     comment: converted from provisional to excepted position
-    documents:
-    - opm-foia-doge-positions
-    - onboard-opm-employee-5
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - https://www.documentcloud.org/documents/26028815-onboard-opm-employee-5/
   - id: opm-05-gsa
     type: detailed
     agency: GSA
@@ -368,7 +362,6 @@
     end_date: 2025-07-02
     end_date_truth: verified
     end_type: resigned
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.141.0.pdf
     description: Exc Appt NTE
     appt_type_code: 48
     appt_type: Other
@@ -382,9 +375,9 @@
     supervisory: false
     office: Office of the Director
     comment: I confirmed that OPM Employee 6 is Nikhil but have no other info
-    documents:
-    - opm-foia-doge-positions
-    - onboard-opm-employee-6
+    source:
+    - https://www.documentcloud.org/documents/26028794-onboard-opm-employee-6/
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
 
 - id: OPM-07
   name: Brian Bjelde
@@ -418,9 +411,7 @@
     series: '0301'
     salary: "$0"
     table_note: likely Schedule C
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
-    documents:
-    - onboard-opm-employee-7
+    source: https://www.documentcloud.org/documents/26028776-onboard-opm-employee-7/
   - id: opm-perm-employee-07
     type: converted
     agency: OPM
@@ -452,10 +443,8 @@
     salary: "$195,200"
     series: '0301'
     pd_code: 6A37370
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
     agency: OPM
-    documents:
-    - onboard-opm-employee-8
+    source: https://www.documentcloud.org/documents/26028778-onboard-opm-employee-8/
 
 - id: OPM-09
   agency: OPM
@@ -658,8 +647,9 @@
   positions:
   - id: ssa-employee-1
     type: appointed
-    documents:
-    - onboard-ssa-employee-1
+    source:
+    - https://www.documentcloud.org/documents/26028785-onboard-ssa-employee-1/
+    - https://www.documentcloud.org/documents/25940536-25-hq-0774-f-resumes-redacted-3/
     title: Expert
     title_type: advisor
     office: Office of the Chief Information Officer
@@ -707,9 +697,9 @@
     reimbursed: true
     comment: Followed by Employee 2 being appointed the CIO
     reimbursement_amount: hourly, maximum of $120,579
-    documents:
-    - detail-20250306-nasa-ssa-employee-2
-    - onboard-ssa-employee-2
+    source:
+    - https://www.documentcloud.org/documents/26028810-mou-20250306-nasa-ssa-employee-2/
+    - https://www.documentcloud.org/documents/26028775-onboard-ssa-employee-2/
   - id: ssa-employee-2-cio
     type: appointed
     agency: SSA
@@ -722,10 +712,10 @@
     table_note: >-
       Was listed as CIO on May 30, but Aram took over in June. WSJ reports on removal of SSA employee
       back to NASA in June. Aram/Russo listed as co-CIOs on 6/6
-    source: https://www.wsj.com/politics/policy/doge-elon-musk-left-control-92770407
     supervisory: true
-    documents:
-    - onboard-ssa-employee-2
+    source:
+    - https://www.documentcloud.org/documents/26028775-onboard-ssa-employee-2/
+    - https://www.wsj.com/politics/policy/doge-elon-musk-left-control-92770407
 
 - id: SSA-03
   agency: SSA
@@ -751,9 +741,9 @@
     reimbursed: true
     reimbursement_amount: up to $71,000
     table_note: MOU signed by Mike Russo, was this followed by being hired at SSA
-    documents:
-    - detail-20250222-dol-ssa-employee-3
-    - onboard-ssa-employee-3
+    source:
+    - https://www.documentcloud.org/documents/26028813-onboard-ssa-employee-3/
+    - https://www.documentcloud.org/documents/26028784-mou-20250222-dol-ssa-employee-3/
 
 - id: SSA-04
   agency: SSA
@@ -766,7 +756,6 @@
     type: appointed
     agency: SSA
     pd_code: KNX0370
-    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
     start_date: 2025-02-23
     start_date_truth: verified
     nte_date: 2026-02-22
@@ -783,8 +772,8 @@
       Founder, CEO and Chief Investment Officer of [REDACTED]. Over 25 years of experience in private
       equity investing.
     comment: SF-50 is a correction
-    documents:
-    - onboard-ssa-employee-4
+    source:
+    - https://www.documentcloud.org/documents/26028768-onboard-opm-employee-4/
 
 - id: SSA-05
   name: Cole Killian
@@ -810,9 +799,7 @@
     nte_date_truth: verified
     table_note: limited onboarding docs, court docs about them
     comment: All I have is the date they completed training
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.53.1.pdf
-    documents:
-    - onboard-ssa-employee-5
+    source: https://www.documentcloud.org/documents/26028773-onboard-ssa-employee-5/
 
 - id: SSA-06
   agency: SSA
@@ -835,8 +822,7 @@
     title_type: advisor
     office: Office of the CIO
     description: Excepted Appointment NTE
-    documents:
-    - onboard-ssa-employee-6
+    source: https://www.documentcloud.org/documents/26028793-onboard-ssa-employee-6/
 
 - id: SSA-07
   agency: SSA
@@ -855,9 +841,9 @@
     reimbursed: true
     reimbursement_amount: up to $71,000
     table_note: MOU signed by Mike Russo, was this followed by being hired at SSA
-    documents:
-    - detail-20250317-dol-ssa-employee-7
-    - onboard-ssa-employee-7
+    source:
+    - https://www.documentcloud.org/documents/26028803-onboard-ssa-employee-7/
+    - https://www.documentcloud.org/documents/26028769-mou-20250317-dol-ssa-employee-7/
 
 - id: SSA-08
   agency: SSA
@@ -882,9 +868,9 @@
     nte_date: 2026-02-26
     nte_date_truth: verified
     reimbursed: false
-    documents:
-    - detail-20250226-opm-ssa-employee-8
-    - onboard-ssa-employee-8
+    source:
+    - https://www.documentcloud.org/documents/26028818-mou-20250226-opm-ssa-employee-8/
+    - https://www.documentcloud.org/documents/26028783-onboard-ssa-employee-8/
 
 - id: SSA-09
   agency: SSA
@@ -911,8 +897,7 @@
     title_type: advisor
     office: Office of the CIO
     description: Excepted Appointment NTE
-    documents:
-    - onboard-ssa-employee-9
+    source: https://www.documentcloud.org/documents/26028808-onboard-ssa-employee-9/
 
 - id: SSA-10
   agency: SSA
@@ -936,8 +921,9 @@
     nte_date: 2026-02-26
     nte_date_truth: verified
     reimbursed: false
-    documents:
-    - onboard-ssa-employee-10
+    source:
+    - https://www.documentcloud.org/documents/26028814-mou-20250218-gsa-ssa-employee-10/
+    - https://www.documentcloud.org/documents/26028766-onboard-ssa-employee-10/
 
 - id: SSA-11
   agency: SSA
@@ -952,7 +938,6 @@
   positions:
   - id: ssa-employee-11
     type: appointed
-    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
     start_date: 2025-03-16
     start_date_truth: verified
     nte_date: 2026-03-15
@@ -969,5 +954,4 @@
       and leading full- stack development. Experienced in collaborating with cross-functional teams to
       deliver mission-critical capabilities  and driving technical decisions and best practices.
     agency: SSA
-    documents:
-    - onboard-ssa-employee-11
+    source: https://www.documentcloud.org/documents/26028805-onboard-ssa-employee-11/

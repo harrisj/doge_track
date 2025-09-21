@@ -50,8 +50,7 @@
 
 {% if position.doge_alias_id && position.name %}[as <a href="/people/aliases#{{ position.doge_alias_id }}" class="link-hover">{{ position.doge_alias_id }}</a>]{% end %}
 {{ type_str(position, agency) | raw }}
-{% if position.title %}<span class="font-semibold text-base-content/75">{{ position.title }}</span>{% end %}
+{% if position.title %}<span class="my-emphasis">{{ position.title }}</span>{% end %}
 {{ hire_details(position) | raw }}
 {% if position.table_note %}«<span class="italic">{{ position.table_note | md | strip_p }}</span>»{% end %}
-{% if position.documents.any? %}<i class="fa-sharp fa-solid fa-file"></i> {% position.documents.each_with_index do |doc, i| %}{% if i > 0 %}, {% end %}<a class="link-hover" href="{{ doc.url }}">{{ document_type(doc) }}</a>{% end %}{% end %}
 {%@ 'atoms/alt_source_link', sources: position.sources %}
