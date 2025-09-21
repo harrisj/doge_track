@@ -40,7 +40,7 @@ class Agency < Sequel::Model
       position_ids = position_ids.exclude(type: 'internal') unless internal_xfers
 
       @all_positions = Position
-                       .eager_graph(:person, :agency, :from_agency, :doge_alias)
+                       .eager_graph(:person, :agency, :from_agency, :doge_alias, { sources: :publisher })
                        .where({ Sequel[:positions][:id] => position_ids })
                        .all
                        .sort_by { |x| x.start_date || '2025-01-20' }
@@ -53,14 +53,16 @@ class Agency < Sequel::Model
     unless @all_positions_details
       position_ids = Position.select(Sequel[:positions][:id])
                              .association_join(:agency)
+                             .association_left_join(:from_agency)
                              .filter({ Sequel[:agency][:id] => id })
                              .or({ Sequel[:agency][:parent_id] => id })
-                             .or({ Sequel[:from_agency_id] => id })
+                             .or({ Sequel[:from_agency][:id] => id })
+                             .or({ Sequel[:from_agency][:parent_id] => id })
 
       position_ids = position_ids.exclude(type: 'internal') unless internal_xfers
 
       @all_positions_details = Position
-                               .eager_graph(:person, :agency, :from_agency, :doge_alias)
+                               .eager_graph(:person, :agency, :from_agency, :doge_alias, { sources: :publisher })
                                .where({ Sequel[:positions][:id] => position_ids })
                                .all
                                .sort_by { |x| x.start_date || '2025-01-20' }

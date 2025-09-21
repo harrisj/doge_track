@@ -5,9 +5,8 @@
 <table class="my-table-style">
   <thead>
   <tr>
-    <th class="text-left my-3col-table-col1">Name</th>
-    <th class="text-left my-3col-table-col2">Date</th>
-    <th class="text-left my-3col-table-col3">Positions</th>
+    <th class="text-left my-2col-table-col1">Name</th>
+    <th class="text-left my-2col-table-col2">Positions</th>
   </tr>
   </thead>
   <tbody>
@@ -24,19 +23,16 @@
          end
        %}
       <tr>
-        <td class="align-top">{%@ 'atoms/position_person_link', position: positions[0] %}
-        <div class="only-mobile">{%@ 'atoms/date_range_label', first: start_date, last: end_date %}</div>
-        </td>
-        <td class="align-top hide-cell-mobile">{%@ 'atoms/date_range_label', first: start_date, last: end_date %}</td>
+        <td class="align-top">{%@ 'atoms/position_person_link', position: positions[0] %}</td>
         <td class="align-top">
           <div class="flex flex-col space-y-1">
           {% positions.each do |pos| %}
-            <div class="-indent-4">{%@ 'atoms/agency_position_move_label', position: pos, agency: agency %}{% if pos.start_date %} {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}{% end %} {%@ 'molecules/alt_position_summary', position: pos, agency: agency %}</div>
+            <div>{%@ 'atoms/agency_position_move_label', position: pos, agency: agency %}{% if pos.start_date %} {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}{% else %} <em>date unknown</em>{% end %} {%@ 'molecules/alt_position_summary', position: pos, agency: agency %}</div>
           {% end %}
           {% if person&.govt_exit_date %}
-          <div class="-indent-4"><i class="fa-sharp fa-solid fa-left-from-bracket"></i> <strong>Left DOGE</strong> {{ render EdtfFormat.new(person.govt_exit_date, :compact, :none) }}</div>
-          {% elsif last_position %}
-          <div class="-indent-4"><i class="fa-sharp fa-solid fa-left-from-bracket"></i> {{ position_end_type(last_position) | raw }} {{ render EdtfFormat.new(last_position.end_date, :compact, :none) }}</div>
+          <div><i class="text-base-content/75 fa-sharp fa-solid fa-left-from-bracket"></i> <strong>Left DOGE</strong> {{ render EdtfFormat.new(person.govt_exit_date, :compact, :none) }}</div>
+          {% elsif last_position && last_position.end_date =~ /^\d{4}-\d{2}-\d{2}$/ %}
+          <div><i class="text-base-content/75 fa-sharp fa-solid fa-left-from-bracket"></i> {{ position_end_type(last_position) | raw }} {{ render EdtfFormat.new(last_position.end_date, :compact, :none) }}</div>
           {% end %}
           </div>
         </td>

@@ -93,7 +93,7 @@ def generate_positions_csv
     csv << %w[id type agency agency_parent name doge_alias_id from_agency_id from_truth start_date start_date_truth
               end_date end_date_truth end_type sort_date
               nte_date nte_date_truth signed_date appt_type_code appt_type pay_grade salary pd_code sge excepted title
-              title_type series supervisory office source source_name reimbursed reimbursement_amount comment
+              title_type series supervisory office reimbursed reimbursement_amount comment
               qualifications table_note replaced_by same_as person_govt_exit_date person_govt_exit_truth
               person_govt_exit_type]
 
@@ -128,8 +128,6 @@ def generate_positions_csv
         pos.series,
         pos.supervisory,
         pos.office,
-        pos.source,
-        pos.source_name,
         pos.reimbursed,
         pos.reimbursement_amount,
         pos.comment,
@@ -149,7 +147,7 @@ def generate_events_csv
   events = Event.eager(:people, :doge_aliases, :agencies).order_by(:sort_date).all
 
   CSV.open(File.join(OUTPUT_DIR, 'events.csv'), 'w') do |csv|
-    csv << %w[date sort_date type id text fuzz comment source source_name case_no names aliases agencies]
+    csv << %w[date sort_date type id text fuzz comment case_no names aliases agencies]
 
     events.each do |event|
       csv << [
@@ -160,8 +158,6 @@ def generate_events_csv
         event.text,
         event.fuzz,
         event.comment,
-        event.source,
-        event.source_name,
         event.case_no,
         event.people.map(&:name).uniq.join(', '),
         event.doge_aliases.map(&:id).join(', '),

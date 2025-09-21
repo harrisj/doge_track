@@ -9,4 +9,4 @@
 {% if role.ao_type %} granted by {{ ao_type_display(role) }}{% end %}
 {% if role.ao_doge && role.ao_name %} {{ person_link(role.ao_name) }}{% end %}
 {% if role.table_note %} «<em>{{ role.table_note | md | strip_p }}</em>» {% end %}
-{%@ 'atoms/source_link', item: role %}
+{%@ 'atoms/alt_source_link', sources: role.sources %}

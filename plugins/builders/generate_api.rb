@@ -80,8 +80,6 @@ module Builders
         text: event.text,
         fuzz: event.fuzz,
         comment: event.comment,
-        source: event.source,
-        source_name: event.source_name,
         case_no: event.case_no,
         agencies: event.agencies.map { |a| agency_ref(a) },
         sources: event.sources.map { |src| source_record(src) },

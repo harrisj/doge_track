@@ -2468,8 +2468,7 @@
     start_date: 2025-03-04
     start_date_truth: verified
     comment: All I have is her SF-61
-    documents:
-    - onboard-hhs-amy-gleason
+    source: https://www.documentcloud.org/documents/26028802-onboard-hhs-amy-gleason/
 
 - name: Mike Gonzalez
   sort_name: Gonzalez
@@ -4796,7 +4795,7 @@
     agency: DHS
     from: SSA
     sort_date: 2025-03-15
-    from_truth: guessed
+    from_truth: inferred
     comment: No info, but listed in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-rehling
@@ -4837,6 +4836,8 @@
     type: detailed
     start_date: 2025-04-15
     start_date_truth: reported
+    from: SSA
+    from_truth: guessed
     source: https://www.nytimes.com/2025/04/18/us/politics/doge-musk-social-security-justice-department.html
     agency: DOJ
 

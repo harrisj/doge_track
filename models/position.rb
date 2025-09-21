@@ -7,8 +7,8 @@ require 'edtf'
 class Position < Sequel::Model
   many_to_one :doge_alias
   many_to_one :person, key: :name, primary_key: :name
-  many_to_one :from_agency, class: :Agency, key: :from_agency_id
   many_to_one :agency, graph_join_type: :inner
+  many_to_one :from_agency, class: :Agency, key: :from_agency_id, graph_join_type: :left_outer
   many_to_many :documents
   many_to_many :sources
 
@@ -18,15 +18,6 @@ class Position < Sequel::Model
 
   def internal_xfer?
     type == 'internal'
-  end
-
-  # Backward compatibility
-  def source
-    sources.first&.url
-  end
-
-  def source_name
-    sources.first&.publisher&.short_name
   end
 
   def chart_start_date

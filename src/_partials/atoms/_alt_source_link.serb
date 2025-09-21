@@ -1,0 +1,10 @@
+{% if sources.any? %}
+<div class="dropdown ml-1">
+  <div tabindex="0" role="button" class="strong"> <i class="fa-sharp fa-solid fa-receipt"></i></div>
+  <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+    {% sources.each do |source| %}
+    <li class="table-xs md:table-sm lg:table-md"><a href="{{ source.url }}">{{ source.title }}</a> <span class="italic">{{ source.publisher.name }}{% if source.pub_date %}, {{ source.pub_date }}{% end %}</span></li>
+    {% end %}
+  </ul>
+</div>
+{% end %}
