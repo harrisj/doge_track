@@ -107,18 +107,6 @@ DB.create_table! :questions do
   string :event_id
 end
 
-DB.create_table! :documents do
-  string :id, primary_key: true
-  string :name
-  string :type
-  string :alias
-  string :date
-  string :source
-  string :case_no
-  string :comment
-  string :file
-end
-
 DB.create_table! :events do
   string :id, primary_key: true
   string :type, null: false
@@ -256,12 +244,6 @@ DB.create_table! :agencies_executive_orders do
   foreign_key :agency_id, :agencies, null: false, type: :string
   foreign_key :executive_order_id, :executive_orders, null: false
   unique %i[agency_id executive_order_id]
-end
-
-DB.create_table! :documents_positions do
-  foreign_key :document_id, :documents, null: false, type: :string
-  foreign_key :position_id, :positions, null: false, type: :string
-  unique %i[document_id position_id]
 end
 
 DB.create_table! :events_people do

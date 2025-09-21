@@ -22,7 +22,6 @@ Position.unrestrict_primary_key
 Case.unrestrict_primary_key
 GovtSystem.unrestrict_primary_key
 SystemRole.unrestrict_primary_key
-Document.unrestrict_primary_key
 Question.unrestrict_primary_key
 ExecutiveOrder.unrestrict_primary_key
 Source.unrestrict_primary_key
@@ -101,12 +100,6 @@ sources_yaml.each do |src|
   Source.create(src)
 end
 
-# Load Documents
-documents_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'documents.yaml'), symbolize_names: true)
-documents_yaml.each do |d|
-  Document.create(d)
-end
-
 # Load People
 people_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'people.yaml'), symbolize_names: true)
 
@@ -122,8 +115,8 @@ people_yaml.each do |p_hash|
     pos_hash[:sort_date] ||= DEFAULT_POS_SORT_APPOINTED if pos_hash[:type] == 'appointed'
     pos_hash[:sort_date] ||= DEFAULT_POS_SORT_OTHER
 
-    pos = Position.create( # .reject { |k, _| %i[from alias documents agency].include?(k) })
-      pos_hash.except(:documents, :source, :source_name)
+    pos = Position.create( # .reject { |k, _| %i[from alias agency].include?(k) })
+      pos_hash.except(:source, :source_name)
     )
 
     Array(pos_hash[:source]).each do |src|
@@ -131,14 +124,6 @@ people_yaml.each do |p_hash|
       pos.add_source(source)
     end
 
-    next unless pos_hash[:documents]
-
-    pos_hash[:documents].each do |doc_id|
-      doc = Document[doc_id]
-      raise "No document found for #{doc_id}" if doc.nil?
-
-      pos.add_document(doc)
-    end
     # if pos_hash.key? :agency
     #   a = Agency[pos_hash[:agency]]
     #   pos.agency = a
@@ -179,7 +164,7 @@ aliases_yaml.each do |alias_hash|
     pos_hash[:sort_date] ||= DEFAULT_POS_SORT_APPOINTED if pos_hash[:type] == 'appointed'
     pos_hash[:sort_date] ||= DEFAULT_POS_SORT_OTHER
 
-    Position.create(pos_hash.except(:documents))
+    Position.create(pos_hash)
   end
 end
 
