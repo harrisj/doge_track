@@ -13,9 +13,9 @@
   {% elsif position.type == 'appointed' || position.type == 'consultant' %}
     <i class="fa-sharp fa-solid fa-person-to-door"></i> {{ agency_link(position.agency_id, position.agency.short_name) }}
   {% elsif position.type == 'promotion' %}
-    <i class="fa-sharp fa-solid fa-up"></i>
+    <i class="fa-sharp fa-solid fa-arrow-up"></i>
   {% elsif position.type == 'demotion' %}
-    <i class="fa-sharp fa-solid fa-down"></i>
+    <i class="fa-sharp fa-solid fa-arrow-down"></i>
   {% elsif position.type == 'converted' %}
     <i class="fa-sharp fa-solid fa-person-shelter"></i> {{ agency_link(position.agency_id, position.agency.short_name) }}
   {% else %}

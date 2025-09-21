@@ -3,25 +3,19 @@
 <table class="my-table-style">
   <thead>
   <tr class="">
-    <th class="text-left my-3col-table-col1">Position</th>
-    <th class="text-left my-3col-table-col2">Dates</th>
-    <th class="text-left my-3col-table-col3">Notes</th>
+    <th class="text-left my-2col-table-col1">Position</th>
+    <th class="text-left my-2col-table-col2">Notes</th>
   </tr>
   </thead>
   <tbody class="">
     {% positions.each do |pos| %}
     <tr class="font-sans" id="{{ pos.id }}">
-      <td class="align-top"><div class="inline-block">{%@ 'atoms/position_move_label', position: pos %}</div>
-        <div class="only-mobile">
-          {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}
-          {%@ 'atoms/doge_exit_label', position: pos %}
-        </div>    
+      <td class="align-top"><div class="inline-block">{{ agency_link(pos.agency) }}</div></td>
+      <td class="align-top">{%@ 'atoms/position_move_label', position: pos, show_dest: false %} {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %} {%@ 'molecules/position_summary', position: pos %}
+        {% if pos.end_date && pos.end_date =~ /^\d{4}-\d{2}-\d{2}$/ %}
+          <div><i class="my-emphasis fa-sharp fa-solid fa-left-from-bracket"></i> {{ position_end_type(pos) | raw }} {{ render EdtfFormat.new(pos.end_date, :compact, :none) }}</div>
+        {% end %}
       </td>
-      <td class="align-top hide-cell-mobile">
-        {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}
-        {%@ 'atoms/doge_exit_label', position: pos %}
-      </td>
-      <td class="align-top">{%@ 'molecules/position_summary', position: pos %}</td>
     </tr>
     {% end %}
   </tbody>

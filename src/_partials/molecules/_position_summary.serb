@@ -50,4 +50,3 @@
 {% if position.title %}<strong>{{ position.title }}</strong>{% if position.office %}, {{ position.office }}{% end %}{% end %}
 {{ hire_details(position) | raw }}
 {% if position.table_note %}«<span class="italic">{{ position.table_note | md | strip_p }}</span>»{% end %}
-{%@ 'atoms/alt_source_link', sources: position.sources %}
