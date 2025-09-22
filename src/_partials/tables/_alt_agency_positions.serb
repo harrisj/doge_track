@@ -11,6 +11,7 @@
   </thead>
   <tbody>
     {% grouped_positions.values.sort_by { |positions| [positions[0].sort_date, positions[0].sort_name] }.each do |positions| %}
+      {% sources = positions.map(&:sources).flatten.compact.uniq %}
       {% person = positions[0].person %}
       {% doge_alias = positions[0].doge_alias %}
       {% start_date = positions[0].start_date %}
@@ -25,6 +26,7 @@
       <tr>
         <td class="align-top">{%@ 'atoms/position_person_link', position: positions[0] %}</td>
         <td class="align-top">
+          {%@ 'atoms/float_source_box', sources: sources %}
           <div class="flex flex-col space-y-1">
           {% positions.each do |pos| %}
             <div>{%@ 'atoms/agency_position_move_label', position: pos, agency: agency %}{% if pos.start_date %} {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}{% else %} <em>date unknown</em>{% end %} {%@ 'molecules/alt_position_summary', position: pos, agency: agency %}</div>

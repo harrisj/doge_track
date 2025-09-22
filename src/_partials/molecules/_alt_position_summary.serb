@@ -53,4 +53,3 @@
 {% if position.title %}<span class="my-emphasis">{{ position.title }}</span>{% end %}
 {{ hire_details(position) | raw }}
 {% if position.table_note %}«<span class="italic">{{ position.table_note | md | strip_p }}</span>»{% end %}
-<!-- {%@ 'atoms/alt_source_link', sources: position.sources %} -->

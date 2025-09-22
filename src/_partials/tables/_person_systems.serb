@@ -15,7 +15,9 @@
       {% if govt_system %}<div>{% if govt_system.acronym %}<abbr title="{{ govt_system.name }}">{{ govt_system.acronym }}</abbr>{% else %}{{ govt_system.name }}{% end %}</div>{% end %}
       <div>{{ agency_link(role.agency_id) }}</div>
       </td>
-      <td class="align-top my-2col-table-col2">{%@ 'molecules/person_system_role_summary', role: role %}</td>
+      <td class="align-top my-2col-table-col2">
+        {%@ 'atoms/float_source_box', sources: role.sources %}
+        {%@ 'molecules/person_system_role_summary', role: role %}</td>
     </tr>
     {% end %}
   </tbody>

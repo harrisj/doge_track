@@ -32,12 +32,12 @@ show_directories = true if show_directories.nil?
       </td>
       <td class="align-top">
         <div class="font-sans">
+        {%@ 'atoms/float_source_box', sources: event.sources %}
         {% if icon_col %}<div class="inline text-base-content/75"><i class="fa-sharp fa-solid {{ event_icon(event.type) }}"></i> <span class="hidden md:inline font-bold">{{ event_title(event.type) }}: </span></div>{% end %}
         {{ event.linkified_text | raw }}
         {% if event.fuzz %} <span class="italic">(fuzz: {{ event.fuzz | md | strip_p }})</span>{% end %}
         {% questions_str = question_links(event)%}
         {% if questions_str %}{{ questions_str | raw }}{% end %}
-        {%@ 'atoms/alt_source_link', sources: event.sources %}
         {% if event.type == 'interagency' && (event.people.any? || event.doge_aliases.any?) %}
           {%@ 'molecules/event_directory_display', event: event %}
         {% end %}
