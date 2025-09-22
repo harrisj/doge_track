@@ -20,14 +20,14 @@
       </div>
       {% end %}
 
-      <div class="mt-3">
+      <div class="mt-10">
         <h3 class="mb-0 mt-0 h3">Positions</h3>
         {%@ 'tables/person_positions', positions: person.positions %}
       </div>
     {% end %}
 
     {% if person.system_roles.any? %}
-      <div class="mt-3">
+      <div class="mt-10">
         <h3 class="mb-0 mt-0 h3">Systems</h3>
         {%@ 'tables/person_systems', roles: person.system_roles %}
       </div>
@@ -35,7 +35,7 @@
 
     {% person_events = person.all_events %}
     {% if person_events.any? %}
-    <div class="mt-3">
+    <div class="mt-10">
       <h3 class="mb-0 mt-0 h3">Events</h3>
       {%@ 'tables/compact_event_timeline', agency_col: true, events: person_events, month_separator: false, show_directories: true, always_show_date: true %}
     </div>

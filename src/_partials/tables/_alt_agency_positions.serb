@@ -2,6 +2,8 @@
    grouped_positions = all_positions.group_by {|pos| pos.sort_name }
    grouped_positions.values.each {|positions| positions.sort_by! {|pos| pos.sort_date}}
 %}
+
+{%@ 'atoms/legend_header' %}
 <table class="my-table-style">
   <thead>
   <tr>

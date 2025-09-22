@@ -10,6 +10,7 @@ show_directories = true if show_directories.nil?
  {% if events && events.any? %}
  {% prior_row_date = Date.edtf!(events[0].date)-1 %}
 
+{%@ 'atoms/legend_header' %}
 <table class="my-table-style mb-0 mt-0">
   <thead>
     <tr>
