@@ -9,7 +9,7 @@
       pos.supervisory ? 'supervisory' : nil,
       pos.excepted ? 'excepted' : nil ,
       pos.salary == "$0" ? "volunteer" : nil ,
-      pos.salary && pos.salary != '$0' ? "<strong>#{pos.salary}</strong>" : nil,
+      pos.salary && pos.salary != '$0' ? "<span class=\"font-semibold my-emphasis\">#{pos.salary}</span>" : nil,
       pos.reimbursement_amount ? "reimbursed <strong>#{pos.reimbursement_amount}</strong>" : nil
     ].compact
 
