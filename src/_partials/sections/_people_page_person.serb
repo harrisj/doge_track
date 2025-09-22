@@ -6,7 +6,7 @@
   </div>
   <div class="sm:ml-7 md:ml-8 lg:ml-9.5 lining-nums">
     <div class="my-text mb-2">
-      <div class="leading-none">{%= render("atoms/category_link", category: person.category).strip %}{% if person.skill %}, {{ person.skill }}{% end %}{% if person.age %}, age {{ person.age }}{% end %}{% if person.linkedin %} <a href="{{person.linkedin}}"><i class="fa-brands fa-linkedin"></i></a>{% end %} <a class="permalink" href="#{{person.slug}}"><i class="fa-sharp fa-solid fa-link"></i></a></div>
+      <div class="leading-none">{%= render("atoms/category_link", category: person.category).strip %}{% if person.skill %}, {{ person.skill }}{% end %}{% if person.age %}, age {{ person.age }}{% end %}{% if person.linkedin %} <a aria-label="LinkedIn profile" href="{{person.linkedin}}"><i class="fa-brands fa-linkedin"></i></a>{% end %} <a class="permalink" aria-label="Direct link to this person" href="#{{person.slug}}"><i class="fa-sharp fa-solid fa-link"></i></a></div>
       {% if person.tech_links %}<div>Tech Industry Links: {{ person.tech_links }}</div>{% end %}
       {% if person.govt_exit_date %}<div><strong>Exited govt:</strong> {{ render EdtfFormat.new(person.govt_exit_date) }}{% if person.govt_exit_type %} ({{ person.govt_exit_type}}){% end %}</div>{% end %}
       {% if person.linkified_blurb %}<div class="mb-0 mt-2 mb-2 italic">{{ person.linkified_blurb | md }}</div>{% end %}
