@@ -2,9 +2,9 @@
 <div class="float-right pl-2 pb-2">
 <div class="dropdown dropdown-left ml-1 text-sm">
   <div tabindex="0" role="button" class="strong"> <i class="fa-sharp fa-solid fa-receipt"></i></div>
-  <div class="dropdown-content bg-base-100 rounded-box border-4 z-1 pb-3 pl-5 shadow-sm text-sm divide-y-1">
+  <div class="dropdown-content bg-base-100 rounded-box z-1 pb-3 pl-5 shadow-sm text-sm divide-y-1">
     <div class="bg-base-200 -indent-4"><i class="fa-sharp fa-regular fa-receipt"></i> {% if sources.count > 1 %}Sources{% else %}Source{% end %}</div>
-    <ul class="list-none w-xs sm:w-sm md:w-md lg:w-lg xl:w-xl 2xl:w-2xl 3xl:w-3xl">
+    <ul class="list-none w-xs sm:w-sm md:w-md lg:w-lg xl:w-xl">
         {% sources.each do |source| %}
         <li class="text-xs -indent-4"><a target="_blank" href="{{ source.url }}">{{ source.title }}</a> <i class="fa-sharp fa-solid fa-up-right-from-square"></i> <span class="italic">{{ source.publisher.name }}</span>{% if source.pub_date %}, <span class="text-nowrap">{{ source.pub_date }}</span>{% end %}</li>
         {% end %}
