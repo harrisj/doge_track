@@ -1602,6 +1602,7 @@
     title: Acting Administrator
     title_type: director
     agency: GSA
+    sort_date: 2025-01-19
     start_date: 2025-01-20
     start_date_truth: reported
     end_date: 2025-07-21
@@ -5588,6 +5589,12 @@
   age: 42
   skill: executive
   category: leadership
+  blurb: >-
+    A healthcare executive who served in the first administration, Brad Smith kept a relatively low profile
+    running DOGE operations within HHS. There, he mainly was involved in organizing $67 billion in cuts
+    and the large layoffs that eliminated 10,000 positions across the various agencies within HHS. He
+    left HHS and DOGE about a week before Elon Musk's departure, but he has apparently returned in August
+    to work at the State Department.
   positions:
   - id: detail-doge-hhs-smith
     type: detailed
@@ -5611,7 +5618,8 @@
     end_date_truth: inferred
     end_type: resigned
     comment: identified as USDS detail on 2/13 declaration
-    table_note: identified as dual appointee at HHS and DOGE / detailed from USDS
+    table_note: identified as dual appointee at HHS and DOGE / resigned on 5/23 and returned to State
+      Dept in August
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.82.3.pdf
   - id: hhs-brad-smith
     agency: HHS
@@ -5622,6 +5630,7 @@
     end_date: 2025-05-23
     end_date_truth: reported
     end_type: resigned
+    table_note: resigned on 5/23 but returned to State dept in August
     comment: All I have is his signed SF-61
     source: https://www.documentcloud.org/documents/26028816-onboard-hhs-brad-smith/
   - id: state-brad-smith
