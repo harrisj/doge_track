@@ -113,8 +113,7 @@
     series: '0301'
     supervisory: false
     office: Office of the Director
-    documents:
-    - opm-foia-doge-positions
+    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
     same_as: opm-jacob-altik
     name: Jacob Altik
     alias: OPM-16
@@ -185,7 +184,7 @@
     end_date: 2025-04-(30)~
     end_date_truth: reported
     table_note: reportedly left OPM in April, but as at FDIC on 4/10, so maybe end of month
-    source: https://www.notus.org/trump-white-house/musk-doge-allies-trump-administration-feud
+    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
     description: Exc Appt NTE
     appt_type_code: 48
     appt_type: Other
@@ -198,8 +197,6 @@
     supervisory: false
     office: Office of the Director
     comment: From FOIA documents
-    documents:
-    - opm-foia-doge-positions
   - id: detail-opm-fdic-armstrong
     type: detailed
     from: OPM
@@ -359,11 +356,9 @@
     from: DOGE
     from_truth: verified
     agency: Education
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
     comment: Details just provided in court testimony
     table_note: info from a govt legal filing
-    documents:
-    - doge-staff-education-20250407
+    source: https://www.documentcloud.org/documents/26028798-doge-staff-education-20250407/
 
 - name: Riccardo Biasini
   sort_name: Biasini
@@ -404,9 +399,9 @@
     office: Office of the Director
     table_note: info for alias SSA-2, who I've identified as him
     comment: I was able to confirm that OPM Employee 2 was Riccardo Biasini
-    documents:
-    - opm-foia-doge-positions
-    - onboard-opm-employee-2
+    source:
+    - https://www.documentcloud.org/documents/26028787-onboard-opm-employee-2/
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     name: Riccardo Biasini
     alias: OPM-02
 
@@ -475,8 +470,7 @@
     series: '0301'
     supervisory: false
     office: Office of the Director
-    documents:
-    - opm-foia-doge-positions
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
     same_as: opm-brian-bjelde
     end_date: 2025-01-31
     nte_date: 2025-07-18
@@ -486,7 +480,6 @@
     replaced_by: opm-perm-employee-07
     salary: "$0"
     table_note: likely Schedule C
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
     name: Brian Bjelde
     alias: OPM-07
   - id: opm-perm-employee-07
@@ -571,13 +564,12 @@
     pay_grade: ED-00
     salary: "$0"
     series: '0301'
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.141.0.pdf
+    source:
+    - https://www.documentcloud.org/documents/26028792-onboard-opm-employee-3/
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     supervisory: false
     office: Office of the Director
     comment: I was able to confirm that OPM Employee 3 is Akash Bobba
-    documents:
-    - opm-foia-doge-positions
-    - onboard-opm-employee-3
     name: Akash Bobba
     alias: OPM-03
   - id: detail-opm-education-akash-bobba
@@ -591,8 +583,7 @@
     nte_date: 2026-02-12
     nte_date_truth: verified
     reimbursed: false
-    documents:
-    - detail-20250212-opm-education-ed-1
+    source: https://www.documentcloud.org/documents/26028777-mou-20250212-opm-education-ed-1/
     name: Akash Bobba
     alias: ED-01
   - id: detail-opm-ssa-opm-3
@@ -604,14 +595,14 @@
     start_date: 2025-02-03
     start_date_truth: verified
     reimbursed: false
-    documents:
-    - detail-20250212-opm-education-ed-1
+    source: https://www.documentcloud.org/documents/26028790-mou-20250212-ssa-opm-education-ed-1/
     name: Akash Bobba
     alias: OPM-03
   - id: ssa-employee-1
     type: appointed
-    documents:
-    - onboard-ssa-employee-1
+    source:
+    - https://www.documentcloud.org/documents/26028785-onboard-ssa-employee-1/
+    - https://www.documentcloud.org/documents/25940536-25-hq-0774-f-resumes-redacted-3/
     title: Expert
     title_type: advisor
     office: Office of the Chief Information Officer
@@ -1093,8 +1084,7 @@
     title: Policy Advisor
     title_type: advisor
     office: Office of the Secretary
-    documents:
-    - onboard-dol-miles-collins
+    source: https://www.documentcloud.org/documents/26028806-onboard-dol-miles-collins/
     agency: DOL
 
 - name: George Cooper
@@ -1139,10 +1129,10 @@
     replaced_by: irs-corcos-cio
     table_note: Start date inferred and likely earlier.
     comment: possibly earlier involvement, maybe when Gavin Kliger started there; ends when became CIO
-    source: https://www.washingtonpost.com/business/2025/03/01/doge-irs-tax-records-benefits/
+    source:
+    - https://www.washingtonpost.com/business/2025/03/01/doge-irs-tax-records-benefits/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
     agency: IRS
-    documents:
-    - gov.uscourts.nysd.636609.144.0
   - id: irs-corcos-cio
     type: promotion
     sort_date: 2025-05-06
@@ -1182,8 +1172,6 @@
     comment: >-
       Several documents have Coristine detailing from GSA, so assuming home agency. Also, not in FOIA
       release from OPM
-    source: >-
-      https://www.wired.com/story/elon-musk-lackeys-office-personnel-management-opm-neuralink-x-boring-stalin/
     nte_date: 2026-01-19
     nte_date_truth: verified
     description: Exc Appt NTE
@@ -1200,8 +1188,10 @@
     office: Immediate Office of the Administrator
     same_as: gsa-edward-coristine
     replaced_by: gsa-edward-coristine-fulltime
-    documents:
-    - onboard-opm-employee-4
+    source:
+    - >-
+      https://www.wired.com/story/elon-musk-lackeys-office-personnel-management-opm-neuralink-x-boring-stalin/
+    - https://www.documentcloud.org/documents/26028768-onboard-opm-employee-4/
     name: Edward Coristine
     alias: OPM-04
   - id: internal-dhs-tsa-coristine
@@ -1229,8 +1219,8 @@
     table_note: >-
       no MOU to confirm and SF-50 is for GSA, but I think he was detailed from GSA to OPM on this date
       based on appointment affadavit
-    documents:
-    - onboard-opm-employee-4
+    source:
+    - https://www.documentcloud.org/documents/26028768-onboard-opm-employee-4/
   - id: detail-gsa-usaid-coristine
     type: detailed
     agency: USAID
@@ -1304,8 +1294,7 @@
     from_truth: verified
     start_date: 2025-02-20
     start_date_truth: verified
-    documents:
-    - doge-staff-education-20250407
+    source: https://www.documentcloud.org/documents/26028798-doge-staff-education-20250407/
   - id: detail-gsa-hhs-edward-coristine
     type: detailed
     agency: HHS
@@ -1386,9 +1375,9 @@
     reimbursed: true
     comment: Followed by Employee 2 being appointed the CIO
     reimbursement_amount: hourly, maximum of $120,579
-    documents:
-    - detail-20250306-nasa-ssa-employee-2
-    - onboard-ssa-employee-2
+    source:
+    - https://www.documentcloud.org/documents/26028810-mou-20250306-nasa-ssa-employee-2/
+    - https://www.documentcloud.org/documents/26028775-onboard-ssa-employee-2/
     name: Scott Coulter
     alias: SSA-02
   - id: ssa-employee-2-cio
@@ -1403,10 +1392,10 @@
     table_note: >-
       Was listed as CIO on May 30, but Aram took over in June. WSJ reports on removal of SSA employee
       back to NASA in June. Aram/Russo listed as co-CIOs on 6/6
-    source: https://www.wsj.com/politics/policy/doge-elon-musk-left-control-92770407
     supervisory: true
-    documents:
-    - onboard-ssa-employee-2
+    source:
+    - https://www.documentcloud.org/documents/26028775-onboard-ssa-employee-2/
+    - https://www.wsj.com/politics/policy/doge-elon-musk-left-control-92770407
     name: Scott Coulter
     alias: SSA-02
 
@@ -1437,8 +1426,7 @@
     supervisory: true
     office: Office of the Director
     comment: Sourced from a FOIA document
-    documents:
-    - opm-foia-doge-positions
+    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
   - id: detail-opm-usaid-cromer
     type: detailed
     agency: USAID
@@ -1542,8 +1530,7 @@
     supervisory: false
     office: Office of the Director
     comment: Sources from a FOIA document
-    documents:
-    - opm-foia-doge-positions
+    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
 
 - name: Leland Dudek
   slug: leland-dudek
@@ -1615,6 +1602,7 @@
     title: Acting Administrator
     title_type: director
     agency: GSA
+    sort_date: 2025-01-19
     start_date: 2025-01-20
     start_date_truth: reported
     end_date: 2025-07-21
@@ -1632,6 +1620,7 @@
     start_date_truth: reported
     end_date: 2025-09-03
     end_date_truth: reported
+    end_type: resigned
     table_note: Had been in the Deputy Administrator role since 1/20 but serving as Acting Administrator
     supervisory: true
     source:
@@ -1716,8 +1705,8 @@
     agency: Treasury
     pay_grade: GS-11/01
     salary: "$84,601 (for 4 months)"
-    documents:
-    - onboard-treasury-marko-elez
+    source:
+    - https://www.documentcloud.org/documents/26028807-onboard-treasury-marko-elez/
   - id: dol-elez
     type: appointed
     agency: DOL
@@ -1732,8 +1721,7 @@
     series: '0301'
     pay_grade: GS-11/01
     salary: "$84,601"
-    documents:
-    - onboard-dol-marko-elez
+    source: https://www.documentcloud.org/documents/26028796-onboard-dol-marko-elez/
   - id: detail-dol-ssa-employee-7
     type: detailed
     agency: SSA
@@ -1744,9 +1732,9 @@
     reimbursed: true
     reimbursement_amount: up to $71,000
     table_note: MOU signed by Mike Russo, was this followed by being hired at SSA
-    documents:
-    - detail-20250317-dol-ssa-employee-7
-    - onboard-ssa-employee-7
+    source:
+    - https://www.documentcloud.org/documents/26028803-onboard-ssa-employee-7/
+    - https://www.documentcloud.org/documents/26028769-mou-20250317-dol-ssa-employee-7/
     name: Marko Elez
     alias: SSA-07
   - id: detail-dol-hhs-marko-elez
@@ -2045,8 +2033,7 @@
     series: '0301'
     supervisory: false
     office: Office of the Secretary
-    documents:
-    - onboard-education-employee-2
+    source: https://www.documentcloud.org/documents/26028781-onboard-education-employee-2/
     name: Conor Fennessy
     alias: ED-02
   - id: detail-education-hhs-fennessy
@@ -2283,8 +2270,8 @@
     supervisory: false
     office: Office of the Director
     comment: Sourced from a FOIAed document
-    documents:
-    - opm-foia-doge-positions
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
   - id: nds-gebbia
     agency: EOP
     type: appointed
@@ -2468,8 +2455,7 @@
     start_date: 2025-03-04
     start_date_truth: verified
     comment: All I have is her SF-61
-    documents:
-    - onboard-hhs-amy-gleason
+    source: https://www.documentcloud.org/documents/26028802-onboard-hhs-amy-gleason/
 
 - name: Mike Gonzalez
   sort_name: Gonzalez
@@ -2523,7 +2509,6 @@
     type: appointed
     agency: SSA
     pd_code: KNX0370
-    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
     start_date: 2025-02-23
     start_date_truth: verified
     nte_date: 2026-02-22
@@ -2540,8 +2525,8 @@
       Founder, CEO and Chief Investment Officer of [REDACTED]. Over 25 years of experience in private
       equity investing.
     comment: SF-50 is a correction
-    documents:
-    - onboard-ssa-employee-4
+    source:
+    - https://www.documentcloud.org/documents/26028768-onboard-opm-employee-4/
     name: Antonio Gracias
     alias: SSA-04
 
@@ -2657,8 +2642,7 @@
     supervisory: false
     office: Office of the Director
     comment: Sourced from FOIAed document
-    documents:
-    - opm-foia-doge-positions
+    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
 
 - name: Tyler Hassen
   sort_name: Hassen
@@ -2819,10 +2803,10 @@
     supervisory: true
     table_note: ended by promotion to CIO
     office: Office of the Director
-    comment: details from FOIA doucments
-    documents:
-    - opm-foia-doge-positions
-    - onboard-opm-greg-hogan
+    comment: details from FOIA documents
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - https://www.documentcloud.org/documents/26028795-onboard-opm-greg-hogan/
   - id: opm-hogan-cio
     type: promotion
     sort_date: 2025-01-21
@@ -2865,9 +2849,8 @@
     comment: details from FOIA doucments
     source:
     - https://fedscoop.com/greg-hogan-has-departed-his-role-as-opms-top-it-official/
-    documents:
-    - opm-foia-doge-positions
-    - onboard-opm-greg-hogan
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - https://www.documentcloud.org/documents/26028795-onboard-opm-greg-hogan/
 
 - name: Nicole Hollander
   slug: nicole-hollander
@@ -3137,9 +3120,7 @@
     nte_date_truth: verified
     table_note: limited onboarding docs, court docs about them
     comment: All I have is the date they completed training
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.53.1.pdf
-    documents:
-    - onboard-ssa-employee-5
+    source: https://www.documentcloud.org/documents/26028773-onboard-ssa-employee-5/
     name: Cole Killian
     alias: SSA-05
 
@@ -3208,9 +3189,9 @@
     supervisory: true
     office: Office of the Director
     table_note: hired at maximum salary for GS federal employee in DC
-    documents:
-    - opm-foia-doge-positions
-    - onboard-opm-employee-5
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - https://www.documentcloud.org/documents/26028815-onboard-opm-employee-5/
     name: Gavin Kliger
     alias: OPM-05
   - id: detail-opm-usaid-kliger
@@ -3265,9 +3246,9 @@
     supervisory: true
     office: Office of the Director
     comment: converted from provisional to excepted position
-    documents:
-    - opm-foia-doge-positions
-    - onboard-opm-employee-5
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - https://www.documentcloud.org/documents/26028815-onboard-opm-employee-5/
     name: Gavin Kliger
     alias: OPM-05
   - id: detail-opm-irs-gavin-kliger
@@ -3285,10 +3266,9 @@
     end_type: fired
     signed_date: 2025-02-19
     comment: he was forcibly removed from agency in purge by Bessent
-    source: >-
-      https://www.taxnotes.com/research/federal/legislative-documents/congressional-tax-correspondence/treasury-official-sends-memo-doge-detail-crapo/7rl0x
-    documents:
-    - gov.uscourts.nysd.636609.144.0
+    source:
+    - https://www.documentcloud.org/documents/26028809-mou-20250219-opm-irs-gavin-kliger/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
   - id: opm-05-usagm
     type: detailed
     agency: USAGM
@@ -3357,8 +3337,7 @@
     title_type: advisor
     office: Office of the CIO
     description: Excepted Appointment NTE
-    documents:
-    - onboard-ssa-employee-6
+    source: https://www.documentcloud.org/documents/26028793-onboard-ssa-employee-6/
     name: Jon Koval
     alias: SSA-06
   - id: detail-ssa-doj-koval
@@ -3410,9 +3389,9 @@
     title_type: advisor
     sge: true
     salary: "$0"
-    documents:
-    - onboard-treasury-thomas-krause
-    - gov.uscourts.nysd.636609.144.0
+    source:
+    - https://www.documentcloud.org/documents/26028786-onboard-treasury-thomas-krause/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
   - id: appoint-treasury-thomas-krause
     type: converted
     comment: Changed to a full-time position
@@ -3430,8 +3409,6 @@
     salary: "$167,603 - $195,200"
     appt_type: Schedule C
     sge: true
-    documents:
-    - gov.uscourts.nysd.636609.144.0
 
 - name: Scott Kupor
   sort_name: Kupor
@@ -3565,11 +3542,11 @@
     end_date_truth: inferred
     end_type: replaced
     replaced_by: usaid-jeremy-lewin-2
-    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.77.2.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.77.2.pdf
+    - https://www.documentcloud.org/documents/26028767-mou-20250127-gsa-usaid-lewin/
     title: Senior Advisor / Director for Strategy & Programs
     title_type: dept_head
-    documents:
-    - detail-20250127-gsa-usaid-lewin
   - id: detail-gsa-cfpb-jeremy-lewin
     type: detailed
     agency: CFPB
@@ -4166,8 +4143,7 @@
     supervisory: false
     office: Office of the Director
     comment: Sourced from a FOIAed document
-    documents:
-    - opm-foia-doge-positions
+    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
 
 - name: Aram Moghaddassi
   sort_name: Moghaddassi
@@ -4245,8 +4221,7 @@
     title: Policy Advisor
     title_type: advisor
     office: Office of the Secretary
-    documents:
-    - onboard-dol-aram-moghaddassi
+    source: https://www.documentcloud.org/documents/26028779-onboard-dol-aram-moghaddassi/
   - id: detail-dol-ssa-employee-3
     type: detailed
     agency: SSA
@@ -4257,9 +4232,9 @@
     reimbursed: true
     reimbursement_amount: up to $71,000
     table_note: MOU signed by Mike Russo, was this followed by being hired at SSA
-    documents:
-    - detail-20250222-dol-ssa-employee-3
-    - onboard-ssa-employee-3
+    source:
+    - https://www.documentcloud.org/documents/26028813-onboard-ssa-employee-3/
+    - https://www.documentcloud.org/documents/26028784-mou-20250222-dol-ssa-employee-3/
     name: Aram Moghaddassi
     alias: SSA-03
   - id: detail-dol-hhs-mohgaddassi
@@ -4335,8 +4310,7 @@
     supervisory: false
     office: Office of the Director
     comment: Sourced from FOIA documents
-    documents:
-    - opm-foia-doge-positions
+    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
   - id: detail-opm-fbi-monroe
     start_date: 2025-01-29
     start_date_truth: reported
@@ -4364,7 +4338,7 @@
     appointed to a role, since he has been detailed from Education to both the Department of the Treasury
     and FDIC in early April.
   positions:
-  - id: onboard-education-employee-4
+  - id: education-employee-4
     type: consultant
     comment: Part-time
     start_date: 2025-02-04
@@ -4373,8 +4347,8 @@
     nte_date_truth: verified
     agency: Education
     salary: "$0"
-    documents:
-    - onboard-education-employee-4
+    source:
+    - https://www.documentcloud.org/documents/26028771-onboard-education-employee-4/
     name: Brooks Morgan
     alias: ED-04
   - id: detail-education-treasury-morgan
@@ -4387,8 +4361,7 @@
     title_type: advisor
     start_date: 2025-04-09
     start_date_truth: verified
-    documents:
-    - detail-20250408-education-treasury
+    source: https://www.documentcloud.org/documents/26028801-mou-20250408-education-treasury/
   - id: detail-education-fdic-morgan
     type: detailed
     from: Education
@@ -4476,8 +4449,6 @@
     comment: NYT says he is a Senior Advisor
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
     agency: Treasury
-    documents:
-    - gov.uscourts.nysd.636609.144.0
   - id: internal-treasury-irs-newnam
     type: internal
     title: Senior Advisor
@@ -4581,8 +4552,7 @@
     supervisory: false
     office: Office of the Director
     comment: Details from a FOIA document
-    documents:
-    - opm-foia-doge-positions
+    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
 
 - name: Nikhil Rajpal
   sort_name: Rajpal
@@ -4605,7 +4575,6 @@
     end_date: 2025-07-02
     end_date_truth: verified
     end_type: resigned
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.141.0.pdf
     description: Exc Appt NTE
     appt_type_code: 48
     appt_type: Other
@@ -4619,9 +4588,9 @@
     supervisory: false
     office: Office of the Director
     comment: I confirmed that OPM Employee 6 is Nikhil but have no other info
-    documents:
-    - opm-foia-doge-positions
-    - onboard-opm-employee-6
+    source:
+    - https://www.documentcloud.org/documents/26028794-onboard-opm-employee-6/
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     name: Nikhil Rajpal
     alias: OPM-06
   - id: detail-opm-noaa-rajpal
@@ -4655,9 +4624,9 @@
     nte_date: 2026-02-26
     nte_date_truth: verified
     reimbursed: false
-    documents:
-    - detail-20250226-opm-ssa-employee-8
-    - onboard-ssa-employee-8
+    source:
+    - https://www.documentcloud.org/documents/26028818-mou-20250226-opm-ssa-employee-8/
+    - https://www.documentcloud.org/documents/26028783-onboard-ssa-employee-8/
     name: Nikhil Rajpal
     alias: SSA-08
 
@@ -4689,12 +4658,10 @@
     from: DOGE
     from_truth: verified
     type: detailed
-    documents:
-    - detail-20250212-doge-education-all
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.5_1.pdf
     signed_date: 2025-02-12
     nte_date: 2026-07-04
     nte_date_truth: verified
-    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.5_1.pdf
     comment: >-
       He reports one other USDS detailee is there, 2 Education staffers, and 2 other detailees from elsewhere
       (OPM? GSA?)
@@ -4729,8 +4696,7 @@
     start_date_truth: verified
     table_note: Was he detailed from Education after detailed from DOGE? Or has he been hired by Education
       since?
-    documents:
-    - detail-20250408-education-treasury
+    source: https://www.documentcloud.org/documents/26028801-mou-20250408-education-treasury/
   - id: detail-doge-fdic-ramada
     type: detailed
     from: DOGE
@@ -4773,8 +4739,7 @@
     supervisory: false
     office: Office of the Director
     comment: From a FOIA document
-    documents:
-    - opm-foia-doge-positions
+    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
 
 - name: Payton Rehling
   sort_name: Rehling
@@ -4796,7 +4761,7 @@
     agency: DHS
     from: SSA
     sort_date: 2025-03-15
-    from_truth: guessed
+    from_truth: inferred
     comment: No info, but listed in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-rehling
@@ -4829,14 +4794,15 @@
     title_type: advisor
     office: Office of the CIO
     description: Excepted Appointment NTE
-    documents:
-    - onboard-ssa-employee-9
+    source: https://www.documentcloud.org/documents/26028808-onboard-ssa-employee-9/
     name: Payton Rehling
     alias: SSA-09
   - id: detail-ssa-doj-rehling
     type: detailed
     start_date: 2025-04-15
     start_date_truth: reported
+    from: SSA
+    from_truth: guessed
     source: https://www.nytimes.com/2025/04/18/us/politics/doge-musk-social-security-justice-department.html
     agency: DOJ
 
@@ -5096,8 +5062,7 @@
     supervisory: true
     office: Office of the Director
     comment: Sourced from a FOIA document
-    documents:
-    - opm-foia-doge-positions
+    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
   - id: amanda-scales-demotion
     type: demotion
     agency: OPM
@@ -5112,12 +5077,10 @@
     title_type: advisor
     pay_grade: ES-00
     series: '0301'
-    table_note: >-
-      Her [LinkedIn profile](https://www.linkedin.com/in/amandascales/) says she left OPM in March. Assuming
-      it followed her demotion/replacement
+    table_note: Her LinkedIn profile says she left OPM in March. Assuming it followed her demotion/replacement
     office: Office of the Director
     source:
-    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.3.pdf
+    - https://www.documentcloud.org/documents/26028789-opm-amanda-scales/
     - https://www.linkedin.com/in/amandascales/
 
 - name: Frank Schuler
@@ -5346,8 +5309,7 @@
     nte_date_truth: verified
     reimbursed: false
     comment: ED-3 is Ethan Shaotran
-    documents:
-    - detail-20250212-gsa-education-ed-3
+    source: https://www.documentcloud.org/documents/26028797-mou-20250212-gsa-education-ed-3/
     name: Ethan Shaotran
     alias: ED-03
   - id: detail-gsa-ssa-employee-10
@@ -5361,8 +5323,9 @@
     nte_date: 2026-02-26
     nte_date_truth: verified
     reimbursed: false
-    documents:
-    - onboard-ssa-employee-10
+    source:
+    - https://www.documentcloud.org/documents/26028814-mou-20250218-gsa-ssa-employee-10/
+    - https://www.documentcloud.org/documents/26028766-onboard-ssa-employee-10/
     name: Ethan Shaotran
     alias: SSA-10
   - id: detail-gsa-usadf-ethan-shaotran
@@ -5376,8 +5339,7 @@
     nte_date: 2026-07-04
     nte_date_truth: verified
     signed_date: 2025-02-21
-    documents:
-    - detail-20250220-gsa-usadf-ethan-shaotran
+    source: https://www.documentcloud.org/documents/26028791-mou-20250220-gsa-usadf-ethan-shaotran/
   - id: detail-gsa-iaf-shaotran
     type: detailed
     from: GSA
@@ -5401,8 +5363,7 @@
     nte_date: 2025-06-15
     nte_date_truth: verified
     signed_date: 2025-03-12
-    documents:
-    - detail-20250312-gsa-usps-alex-simonpour
+    source: https://www.documentcloud.org/documents/26028812-mou-20250312-gsa-usps-ethan-shaotran/
   - id: gsa-shaotran-fulltime
     agency: GSA
     type: converted
@@ -5557,8 +5518,8 @@
     nte_date_truth: verified
     signed_date: 2025-03-12
     comment: From FOIAed document
-    documents:
-    - detail-20250312-gsa-usps-alex-simonpour
+    source:
+    - https://www.documentcloud.org/documents/26028817-mou-20250312-gsa-usps-alex-simonpour/
   - id: detail-gsa-nasa-simonpour
     type: detailed
     start_date: 2025-03-14
@@ -5628,6 +5589,12 @@
   age: 42
   skill: executive
   category: leadership
+  blurb: >-
+    A healthcare executive who served in the first administration, Brad Smith kept a relatively low profile
+    running DOGE operations within HHS. There, he mainly was involved in organizing $67 billion in cuts
+    and the large layoffs that eliminated 10,000 positions across the various agencies within HHS. He
+    left HHS and DOGE about a week before Elon Musk's departure, but he has apparently returned in August
+    to work at the State Department.
   positions:
   - id: detail-doge-hhs-smith
     type: detailed
@@ -5651,7 +5618,8 @@
     end_date_truth: inferred
     end_type: resigned
     comment: identified as USDS detail on 2/13 declaration
-    table_note: identified as dual appointee at HHS and DOGE / detailed from USDS
+    table_note: identified as dual appointee at HHS and DOGE / resigned on 5/23 and returned to State
+      Dept in August
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.82.3.pdf
   - id: hhs-brad-smith
     agency: HHS
@@ -5662,9 +5630,9 @@
     end_date: 2025-05-23
     end_date_truth: reported
     end_type: resigned
+    table_note: resigned on 5/23 but returned to State dept in August
     comment: All I have is his signed SF-61
-    documents:
-    - onboard-hhs-brad-smith
+    source: https://www.documentcloud.org/documents/26028816-onboard-hhs-brad-smith/
   - id: state-brad-smith
     agency: State
     type: appointed
@@ -5690,7 +5658,6 @@
   positions:
   - id: ssa-employee-11
     type: appointed
-    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
     start_date: 2025-03-16
     start_date_truth: verified
     nte_date: 2026-03-15
@@ -5707,8 +5674,7 @@
       and leading full- stack development. Experienced in collaborating with cross-functional teams to
       deliver mission-critical capabilities  and driving technical decisions and best practices.
     agency: SSA
-    documents:
-    - onboard-ssa-employee-11
+    source: https://www.documentcloud.org/documents/26028805-onboard-ssa-employee-11/
     name: John Solly
     alias: SSA-11
 
@@ -5741,8 +5707,7 @@
     title: Senior Advisor
     title_type: advisor
     office: Office of the Assistant Secretary
-    documents:
-    - onboard-dol-keith-sonderling
+    source: https://www.documentcloud.org/documents/26028782-onboard-dol-keith-sonderling/
   - id: imls-sonderling
     type: appointed
     start_date: 2025-03-20
@@ -5764,8 +5729,7 @@
     appt_type: Exec Appt
     salary: "$183,100"
     office: Office of the Secretary
-    documents:
-    - onboard-dol-keith-sonderling
+    source: https://www.documentcloud.org/documents/26028782-onboard-dol-keith-sonderling/
   - id: mbda-sonderling
     type: appointed
     agency: MBDA
@@ -5826,8 +5790,7 @@
     supervisory: false
     office: Office of the Director
     comment: Sourced from a FOIAed document
-    documents:
-    - opm-foia-doge-positions
+    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
   - id: fhfa-christopher-stanley
     title: Board Member, Fannie Mae/Freddie Mac
     title_type: other
@@ -5949,10 +5912,8 @@
     salary: "$195,200"
     series: '0301'
     pd_code: 6A37370
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
     agency: OPM
-    documents:
-    - onboard-opm-employee-8
+    source: https://www.documentcloud.org/documents/26028778-onboard-opm-employee-8/
     name: James Sullivan
     alias: OPM-08
   - id: opm-james-sullivan-demotion
@@ -6207,8 +6168,6 @@
     pay_grade: GS-12
     salary: "$101,401 - $131,826"
     sge: false
-    documents:
-    - gov.uscourts.nysd.636609.144.0
     agency: Treasury
 
 - name: Jordan Wick
@@ -6293,16 +6252,15 @@
     from_truth: inferred
     start_date: 2025-02-20
     start_date_truth: verified
-    documents:
-    - doge-staff-education-20250407
+    source: https://www.documentcloud.org/documents/26028798-doge-staff-education-20250407/
   - id: cfpb-jordan-wick
     type: converted
     title: Expert/Consultant
     title_type: advisor
     comment: All I have is his SF-61
     start_date: 2025-03-05
-    documents:
-    - onboard-cfpb-jordan-wick
+    source:
+    - https://www.documentcloud.org/documents/26028811-onboard-cfpb-jordan-wick/
     agency: CFPB
   - id: detail-fcc-wick
     type: detailed
@@ -6311,14 +6269,14 @@
     from_truth: verified
     start_date: 2025-03-18
     start_date_truth: verified
-    source: https://frequencyfwd.com/files/motion-exhibit-1-08252025.pdf
     office: Office of the Chairman
     agency: FCC
     table_note: >-
       MOU for detail says from DOGE to FCC, but the text says he is also detailed from OPM which will
       bill for his services
-    documents:
-    - detail-20250318-doge-fcc-wick
+    source:
+    - https://frequencyfwd.com/files/motion-exhibit-1-08252025.pdf
+    - https://www.documentcloud.org/documents/26105122-mou-20250318-doge-fcc-wick/
 
 - name: Joanna Wischer
   slug: joanna-wischer
@@ -6348,8 +6306,7 @@
     table_note: >-
       Salary range for GS-15 in DC; LinkedIn says she is working for OMB "Made in America" initiative
       since March 2025
-    documents:
-    - opm-foia-doge-positions
+    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
 
 - name: Marshall Wood
   sort_name: Wood
@@ -6422,8 +6379,7 @@
     supervisory: false
     office: Office of the Director
     comment: Sourced from FOIAed documents
-    documents:
-    - opm-foia-doge-positions
+    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
     same_as: opm-chris-young
     sort_date: 2025-02-07
     table_note: Start date guessed from system access

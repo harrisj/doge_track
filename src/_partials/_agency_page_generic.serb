@@ -9,21 +9,21 @@
 {% end %}
 
 {% if agency.all_positions.any? %}
-<h2 class="mt-4 mb-0 text-lg sm:text-xl md:text-2xl">Positions</h2>
+<h2 class="mt-10 mb-0 text-lg sm:text-xl md:text-2xl">Positions</h2>
 
-{%@ 'tables/agency_positions', positions: agency.all_positions, agency: agency %}
+{%@ 'tables/alt_agency_positions', positions: agency.all_positions, agency: agency %}
 {% end %}
 
 {% agency_systems = agency.all_systems %}
 {% if agency_systems.any? %}
-<h2 class="mt-4 mb-0 text-lg sm:text-xl md:text-2xl">Systems</h2>
+<h2 class="mt-8 mb-0 text-lg sm:text-xl md:text-2xl">Systems</h2>
 
 {%@ 'tables/agency_system_access', govt_systems: agency_systems, agency: agency %}
 {% end %}
 
 {% agency_events = agency.all_events || [] %}
 {% if agency_events.any? %}
-<h2 class="mt-0 mb-0 text-lg sm:text-xl md:text-2xl">Events</h2>
+<h2 class="mt-10 mb-0 text-lg sm:text-xl md:text-2xl">Events</h2>
 
 {%@ 'tables/compact_event_timeline', events: agency_events, icon_col: true, agency_col: true %}
 {% end %}

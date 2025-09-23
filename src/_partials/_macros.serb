@@ -46,7 +46,7 @@ end %}
 {% macro "person_link" do |p_id, display=nil|
     if p_id.nil?
       raise "Null passed to person_link"
-    else 
+    else
       if p_id.is_a?(String)
         person = Person.where(Sequel.|({name: p_id}, {slug: p_id}, {sort_name: p_id})).first
       elsif p_id.is_a? Person
@@ -70,7 +70,7 @@ end %}
   end
 %}
 
-{% macro "alias_links" do |arr| 
+{% macro "alias_links" do |arr|
     arr.compact.map {|a| alias_link(a)}.join(", ").html_safe
    end
 %}
@@ -198,7 +198,7 @@ end %}
   end
 %}
 
-{% macro 'person_icon' do |person| 
+{% macro 'person_icon' do |person|
     case person.category
     when 'booster'
       'fa-megaphone'
@@ -216,7 +216,7 @@ end %}
   end
 %}
 
-{% macro 'person_skill' do |person| 
+{% macro 'person_skill' do |person|
     if person.skill.nil?
       ''
     else
@@ -235,7 +235,7 @@ end %}
     end
    end %}
 
-{% macro "document_type" do |doc| 
+{% macro "document_type" do |doc|
     if doc.type == 'mou'
       'MOU'
     elsif doc.type == 'onboard'
@@ -246,7 +246,7 @@ end %}
   end
 %}
 
-{% macro "question_links" do |obj| 
+{% macro "question_links" do |obj|
     if obj.questions && obj.questions.any?
       questions = obj.questions.map {|q| "<a class=\"link-hover tooltip\" href=\"/questions##{q.id}\" data-tip=\"Open Question: #{q.question}\"><i class=\"fa-sharp fa-solid fa-circle-question\"></i></a>"}
       questions_str = questions.join(" ")
@@ -256,7 +256,7 @@ end %}
    end
 %}
 
-{% macro 'position_end_type' do |pos| 
+{% macro 'position_end_type' do |pos|
     case pos.end_type
     when 'detail_ended'
       'detail end'
@@ -267,7 +267,7 @@ end %}
         'replaced'
       end
     when 'fired'
-      '<i class="fa-sharp fa-regular fa-triangle-exclamation"></i> <strong>fired</strong>'
+      '<span class="font-bold my-emphasis">fired</span>'
     when 'unknown'
       nil
     when nil
@@ -278,7 +278,7 @@ end %}
   end
 %}
 
-{% macro 'system_access_type' do |role| 
+{% macro 'system_access_type' do |role|
     case role.type
     when 'admin'
       '**admin**'
@@ -288,11 +288,11 @@ end %}
       'source code'
     else
       role.type
-    end    
+    end
   end
 %}
 
-{% macro 'ao_type_display' do |role| 
+{% macro 'ao_type_display' do |role|
     case role.ao_type
       when 'director'
         'Agency Director'

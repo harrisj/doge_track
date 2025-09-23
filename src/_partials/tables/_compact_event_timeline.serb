@@ -10,12 +10,12 @@ show_directories = true if show_directories.nil?
  {% if events && events.any? %}
  {% prior_row_date = Date.edtf!(events[0].date)-1 %}
 
+{%@ 'atoms/legend_header' %}
 <table class="my-table-style mb-0 mt-0">
   <thead>
     <tr>
-      <th class="my-3col-table-col1">Agency</th>
-      <th class="my-3col-table-col2">Date</th>
-      <th class="my-3col-table-col3">Event</th>
+      <th class="my-2col-table-col1">Date</th>
+      <th class="my-2col-table-col2">Event</th>
     </tr>
   </thead>
   <tbody>
@@ -23,21 +23,18 @@ show_directories = true if show_directories.nil?
     {% parsed_date = Date.edtf(event.date) %}
     {% if month_separator && parsed_date.month > prior_row_date.month %}
     <tr>
-      <td class="text-center font-bold italic" colspan="100%">{{ parsed_date.strftime("%B %Y") }}</td>
+      <td class="text-center font-bold italic bg-base-300" colspan="100%">{{ parsed_date.strftime("%B %Y") }}</td>
     </tr>
     {% end %}
     <tr class="font-sans" id="{{ event.id }}">
-      <td class="align-top">
-        <div class="only-mobile">{{ render EdtfFormat.new(event.date, :compact) }}</div>
-        <div>{{ event.agencies | agency_links }}</div>
-      </td>
-      <td class="align-top hide-cell-mobile">
-        {{ render EdtfFormat.new(event.date, :compact) }}
-        {% prior_row_date = parsed_date %}
+    {% prior_row_date = parsed_date %}
+      <td class="align-top border-base-300">
+        {{ render EdtfFormat.new(event.date, :compact) }} {{ event.agencies | agency_links }}
       </td>
       <td class="align-top">
         <div class="font-sans">
-        {% if icon_col %}<div class="inline"><i class="fa-sharp fa-solid {{ event_icon(event.type) }}"></i> <span class="hidden md:inline font-bold">{{ event_title(event.type) }}: </span></div>{% end %}
+        {%@ 'atoms/float_source_box', sources: event.sources %}
+        {% if icon_col %}<div class="inline text-base-content/75"><i class="fa-sharp fa-solid {{ event_icon(event.type) }}"></i> <span class="hidden md:inline font-bold">{{ event_title(event.type) }}: </span></div>{% end %}
         {{ event.linkified_text | raw }}
         {% if event.fuzz %} <span class="italic">(fuzz: {{ event.fuzz | md | strip_p }})</span>{% end %}
         {% questions_str = question_links(event)%}
@@ -48,8 +45,6 @@ show_directories = true if show_directories.nil?
         {% if show_directories && event.type == 'directory' %}
           {%@ 'molecules/event_directory_display', event: event %}
         {% end %}
-
-        {%@ 'atoms/source_link', item: event %}
         </div>
       </td>
     </tr>

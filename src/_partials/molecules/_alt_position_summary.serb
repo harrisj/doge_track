@@ -4,14 +4,13 @@
 {% macro 'hire_details' do |pos|
     hire_details = [
       pos.sge ? "<abbr title=\"Special Government Employee\">SGE</abbr>" : nil,
-      pos.appt_type && pos.appt_type != 'Other' ? pos.appt_type : nil,
       pos.nte_date ? "<abbr title=\"not to exceed\">NTE</abbr> #{pos.nte_date}" : nil,
       pos.pay_grade,
       pos.supervisory ? 'supervisory' : nil,
       pos.excepted ? 'excepted' : nil ,
       pos.salary == "$0" ? "volunteer" : nil ,
       pos.salary && pos.salary != '$0' ? "<span class=\"font-semibold my-emphasis\">#{pos.salary}</span>" : nil,
-      pos.reimbursement_amount ? "reimbursed <span class=\"font-semibold my-emphasis\">#{pos.reimbursement_amount}</span>" : nil
+      pos.reimbursement_amount ? "reimbursed <strong>#{pos.reimbursement_amount}</strong>" : nil
     ].compact
 
     if hire_details.any?
@@ -21,15 +20,15 @@
     end
   end
 
-  macro 'type_str' do |pos|
+  macro 'type_str' do |pos, agency|
     case pos.type
     when 'other'
       nil
     when 'detailed'
       if pos.from_truth != 'reported' && pos.from_truth != 'verified'
-        pos.title ? 'likely detailed as' : 'likely detailed'
+        "likely detailed"
       else
-        pos.title ? 'detail to' : 'detail'
+        "detail"
       end
     when 'promotion'
       pos.title ? 'promoted to' : 'promoted'
@@ -39,15 +38,18 @@
       'converted to permanent position'
     when 'internal'
       'internal xfer'
+    when 'appointed'
+      'appointed'
+    when 'unknown'
+      'unknown start type'
     else
       pos.type
     end
   end
 %}
 
-{%@ 'atoms/float_source_box', sources: position.sources %}
 {% if position.doge_alias_id && position.name %}[as <a href="/people/aliases#{{ position.doge_alias_id }}" class="link-hover">{{ position.doge_alias_id }}</a>]{% end %}
-{{ type_str(position) | raw }}
-{% if position.title %}<span class="font-semibold my-emphasis">{{ position.title }}</span>{% if position.office %}, {{ position.office }}{% end %}{% end %}
+{{ type_str(position, agency) | raw }}
+{% if position.title %}<span class="my-emphasis">{{ position.title }}</span>{% end %}
 {{ hire_details(position) | raw }}
 {% if position.table_note %}«<span class="italic">{{ position.table_note | md | strip_p }}</span>»{% end %}

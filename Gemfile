@@ -41,6 +41,7 @@ gem 'bridgetown-seo-tag', '~> 6.0'
 gem 'bridgetown-sitemap', '~> 3.0'
 gem 'edtf', '~> 3.2'
 gem 'edtf-humanize', '~> 2.3'
+gem 'kramdown'
 gem 'nokogiri', '~> 1.18'
 gem 'racc', '~> 1.8'
 gem 'rubocop', '~> 1.75', group: :development

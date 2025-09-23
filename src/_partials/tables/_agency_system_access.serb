@@ -1,11 +1,11 @@
 {% import "macros" %}
 
+{%@ 'atoms/legend_header' %}
 <table class="my-table-style">
   <thead>
   <tr>
-    <th class="text-left my-3col-table-col1">System</th>
-    <th class="text-left my-3col-table-col2">Dates</th>
-    <th class="text-left my-3col-table-col3">Access</th>
+    <th class="text-left my-2col-table-col1">System</th>
+    <th class="text-left my-2col-table-col2">Access</th>
   </tr>
   </thead>
   <tbody class="">
@@ -17,8 +17,8 @@
       {% grouped_roles = sys_roles.group_by {|r| [r.date_granted, r.date_revoked || Date.today, r.type, r.ao_doge || '']}.sort_by {|grp| grp[0].inspect } %}
            <tr>
               <td class="align-top"><a href="/all/systems#{{ govt_system.id }}">{% if govt_system.acronym %}<abbr title="{{ govt_system.name }}">{{ govt_system.acronym }}</abbr>{% else %}{{ govt_system.name }}{% end %}</a></td>
-              <td class="align-top hide-cell-mobile">{%@ 'atoms/date_range_label', first: min_date, last: max_date, always_dash: true %}</td>
               <td class="align-top">
+                {%@ 'atoms/float_source_box', sources: sys_roles.map(&:sources).flatten.compact.uniq %}
                 <div class="bold"><a href="/all/systems#{{ govt_system.id }}">{{ govt_system.name }}</a></div>
                 {{ govt_system.description }}
 

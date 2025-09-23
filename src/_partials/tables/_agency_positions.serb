@@ -10,6 +10,7 @@
    grouped_data_positions = dated_positions.group_by{|pos| pos.name || pos.doge_alias_id}.sort_by {|_, positions| positions[0].sort_date }
 %}
 
+{%@ 'atoms/legend_header' %}
 <table class="my-table-style">
   <thead>
   <tr>

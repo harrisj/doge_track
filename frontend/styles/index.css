@@ -84,6 +84,10 @@ layer(base);
         @apply prose prose-sm prose-a:font-semibold prose-a:link-hover md:prose-base max-w-none prose-li:m-[0.1em] dark:prose-invert prose-h2:mt-1 prose-h2:mb-0.5 prose-h3:mt-1 prose-h3:mb-0.5 leading-tight;
     }
 
+    .my-emphasis {
+        @apply font-semibold text-base-content/75;
+    }
+
     .only-mobile {
         @apply md:hidden;
     }
@@ -94,15 +98,15 @@ layer(base);
 
     /* Aligned 3 Column Table where 2nd col is hidden on mobile */
     .my-table-style {
-        @apply table table-fixed md:table-auto table-xs sm:table-sm border-4 mb-0;
+        @apply table table-fixed md:table-auto table-xs md:table-sm py-5 mb-0;
     }
 
     .my-2col-table-col1 {
-        @apply w-4/16 sm:w-3/16 md:w-2/16 lg:w-2/16;
+        @apply w-3/16 sm:w-2/16 md:w-2/16 lg:w-2/16;
     }
 
     .my-2col-table-col2 {
-        @apply w-12/16 sm:w-13/16 md:w-14/16 lg:w-14/16;
+        @apply w-13/16 sm:w-14/16 md:w-14/16 lg:w-14/16;
     }
 
     .my-3col-table-col1 {
