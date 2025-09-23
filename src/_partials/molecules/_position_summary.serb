@@ -10,8 +10,8 @@
       pos.supervisory ? 'supervisory' : nil,
       pos.excepted ? 'excepted' : nil ,
       pos.salary == "$0" ? "volunteer" : nil ,
-      pos.salary && pos.salary != '$0' ? "<strong>#{pos.salary}</strong>" : nil,
-      pos.reimbursement_amount ? "reimbursed <strong>#{pos.reimbursement_amount}</strong>" : nil
+      pos.salary && pos.salary != '$0' ? "<span class=\"font-semibold my-emphasis\">#{pos.salary}</span>" : nil,
+      pos.reimbursement_amount ? "reimbursed <span class=\"font-semibold my-emphasis\">#{pos.reimbursement_amount}</span>" : nil
     ].compact
 
     if hire_details.any?
@@ -48,6 +48,6 @@
 {%@ 'atoms/float_source_box', sources: position.sources %}
 {% if position.doge_alias_id && position.name %}[as <a href="/people/aliases#{{ position.doge_alias_id }}" class="link-hover">{{ position.doge_alias_id }}</a>]{% end %}
 {{ type_str(position) | raw }}
-{% if position.title %}<strong>{{ position.title }}</strong>{% if position.office %}, {{ position.office }}{% end %}{% end %}
+{% if position.title %}<span class="font-semibold my-emphasis">{{ position.title }}</span>{% if position.office %}, {{ position.office }}{% end %}{% end %}
 {{ hire_details(position) | raw }}
 {% if position.table_note %}«<span class="italic">{{ position.table_note | md | strip_p }}</span>»{% end %}

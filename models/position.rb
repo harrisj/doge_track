@@ -45,4 +45,8 @@ class Position < Sequel::Model
       "ZZZZZZ-#{doge_alias_id}"
     end
   end
+
+  def sort_parent_agency
+    agency.parent || agency
+  end
 end

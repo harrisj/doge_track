@@ -1,5 +1,9 @@
 {% import 'macros' %}
 
+{% grouped_positions = positions.group_by(&:sort_parent_agency)
+   grouped_positions.values.each {|positions| positions.sort_by! {|pos| pos.sort_date}}
+%}
+
 {%@ 'atoms/legend_header' %}
 <table class="my-table-style">
   <thead>
@@ -9,15 +13,28 @@
   </tr>
   </thead>
   <tbody class="">
-    {% positions.each do |pos| %}
-    <tr class="font-sans" id="{{ pos.id }}">
-      <td class="align-top"><div class="inline-block">{{ agency_link(pos.agency) }}</div></td>
-      <td class="align-top">{%@ 'atoms/position_move_label', position: pos, show_dest: false %} {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %} {%@ 'molecules/position_summary', position: pos %}
-        {% if pos.end_date && pos.end_date =~ /^\d{4}-\d{2}-\d{2}$/ %}
-          <div><i class="my-emphasis fa-sharp fa-solid fa-left-from-bracket"></i> {{ position_end_type(pos) | raw }} {{ render EdtfFormat.new(pos.end_date, :compact, :none) }}</div>
-        {% end %}
-      </td>
-    </tr>
+    {% grouped_positions.values.sort_by { |positions| [positions[0].sort_date, positions[0].agency_id] }.each do |positions| %}
+      {% sources = positions.map(&:sources).flatten.compact.uniq %}
+      {% if positions&.last&.end_date
+            last_position = positions.last
+            end_date = last_position.end_date
+         end
+       %}
+       {% agency = positions[0].agency %}
+      <tr>
+        <td class="align-top">{{ agency_link(agency) }}</td>
+        <td class="align-top">
+          {%@ 'atoms/float_source_box', sources: sources %}
+          <div class="flex flex-col space-y-1">
+          {% positions.each do |pos| %}
+            <div>{%@ 'atoms/position_move_label', position: pos, agency: agency, show_dest: false %}{% if pos.start_date %} {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}{% else %} <em>date unknown</em>{% end %} {%@ 'molecules/alt_position_summary', position: pos, agency: agency %}</div>
+          {% end %}
+          {% if last_position && last_position.end_date =~ /^\d{4}-\d{2}-\d{2}$/ %}
+            <div><i class="my-emphasis fa-sharp fa-solid fa-left-from-bracket"></i> {{ position_end_type(last_position) | raw }} {{ render EdtfFormat.new(last_position.end_date, :compact, :none) }}</div>
+          {% end %}
+          </div>
+        </td>
+      </tr>
     {% end %}
   </tbody>
 </table>
