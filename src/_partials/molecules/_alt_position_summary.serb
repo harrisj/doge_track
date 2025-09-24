@@ -6,7 +6,6 @@
       pos.sge ? "<abbr title=\"Special Government Employee\">SGE</abbr>" : nil,
       pos.nte_date ? "<abbr title=\"not to exceed\">NTE</abbr> #{pos.nte_date}" : nil,
       pos.pay_grade,
-      pos.supervisory ? 'supervisory' : nil,
       pos.excepted ? 'excepted' : nil ,
       pos.salary == "$0" ? "volunteer" : nil ,
       pos.salary && pos.salary != '$0' ? "<span class=\"font-semibold my-emphasis\">#{pos.salary}</span>" : nil,

@@ -38,4 +38,10 @@ class Source < Sequel::Model
 
     @_people
   end
+
+  def sort_date
+    return Date.parse(pub_date) if pub_date
+
+    Date.today
+  end
 end

@@ -13,7 +13,7 @@
   </thead>
   <tbody>
     {% grouped_positions.values.sort_by { |positions| [positions[0].sort_date, positions[0].sort_name] }.each do |positions| %}
-      {% sources = positions.map(&:sources).flatten.compact.uniq %}
+      {% sources = positions.map(&:sources).flatten.compact.uniq.sort_by(&:sort_date) %}
       {% person = positions[0].person %}
       {% doge_alias = positions[0].doge_alias %}
       {% start_date = positions[0].start_date %}

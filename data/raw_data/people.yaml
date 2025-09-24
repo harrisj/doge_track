@@ -505,7 +505,10 @@
     type: unknown
     agency: Energy
     sort_date: 2025-06-15
-    table_note: I have no info on this yet, but he was detailed from Energy to NRC
+    table_note: Detailed from Energy to NRC, so assuming start there
+    source:
+    - >-
+      https://thehill.com/policy/energy-environment/5397152-doge-staffer-trump-reforms-nrc-nuclear-regulatory-commission/
   - id: detail-energy-nrc-blake
     type: detailed
     agency: NRC
@@ -680,8 +683,10 @@
     agency: GSA
     start_date: 2025-03-XX
     sort_date: 2025-03-25
-    table_note: linked to GSA by NYT, start date guessed
+    table_note: linked to GSA by ProPublica, start date guessed
     comment: Not verified, but NYT links to her to GSA also, so assuming she started there
+    source:
+    - https://projects.propublica.org/elon-musk-doge-tracker/
   - id: detail-doge-ftc-bryant
     type: detailed
     from: GSA
@@ -1028,7 +1033,7 @@
     sort_date: 2025-02-01
     start_date: 2025-02-XX
     agency: DOGE
-    table_note: His linkedin reports Feb 2026 as start
+    table_note: His linkedin reports Feb 2025 as start
     source: https://www.linkedin.com/in/carl-coe-912b82/
   - id: epa-coe-chief-staff
     type: converted
@@ -1315,6 +1320,7 @@
     start_date: 2025-03-05
     start_date_truth: verified
     table_note: Granted access to CMS systems on same day as detail to HHS
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: Granted access to CALM system on the same day as his detail to HHS
   - id: gsa-edward-coristine-fulltime
     agency: GSA
@@ -1668,14 +1674,14 @@
     agency: ICE
     from: DHS
     from_truth: inferred
-    comment: No other info, just mentioned in NYT roundup
+    comment: linked to ICE by NYT
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-elez
     type: internal
     agency: TSA
     from: DHS
     from_truth: inferred
-    table_note: linked to DHS by NYT, no public info
+    table_note: linked to DHS by NYT
     comment: No other info, just mentioned in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-elez
@@ -1683,7 +1689,7 @@
     agency: USCIS
     from: DHS
     from_truth: inferred
-    comment: linked to DHS by NYT, no public info
+    comment: linked to DHS by NYT
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: treasury-marko-elez
     type: appointed
@@ -1707,6 +1713,7 @@
     salary: "$84,601 (for 4 months)"
     source:
     - https://www.documentcloud.org/documents/26028807-onboard-treasury-marko-elez/
+    - https://www.npr.org/2025/02/06/nx-s1-5289337/elon-musk-doge-treasury
   - id: dol-elez
     type: appointed
     agency: DOL
@@ -1753,11 +1760,12 @@
     agency: CMS
     from: HHS
     from_truth: inferred
+    sort_date: 2025-03-06
     start_date: 2025-03-05
     start_date_truth: verified
     table_note: granted access to CMS system on date
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    comment: Reported access to system same day as start of detail to HHS
+    comment: Granted access to CMS system same day as start of detail to HHS
 
 - name: Bee Elvy
   sort_name: Elvy
@@ -1910,6 +1918,7 @@
     start_date: 2025-01-30
     start_date_truth: inferred
     table_note: date guessed from first system access at CDC
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: Guessing from first reported system access for ICE system
   - id: internal-hhs-cms-farritor
     type: internal
@@ -1920,6 +1929,7 @@
     start_date_truth: inferred
     table_note: date guessed from first system access at CMS
     comment: Guessing from first reported system access for HIGLAS
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   - id: detail-gsa-energy-luke-farritor
     type: detailed
     from: GSA
@@ -2052,6 +2062,7 @@
     start_date: 2025-03-03
     start_date_truth: inferred
     comment: Inferred from first reported access to CALM system
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   - id: detail-doi-fennessy
     type: detailed
     from: Education
@@ -2108,7 +2119,8 @@
     start_date: 2025-03-(13)~
     start_date_truth: verified
     comment: Guessing GSA based on some past reporting
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
   - id: detail-gsa-mcc-fox
     type: detailed
     agency: MCC
@@ -2334,6 +2346,10 @@
     table_note: >-
       Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting on 2/20 that many were
       veterans
+    source:
+    - https://projects.propublica.org/elon-musk-doge-tracker/
+    - >-
+      https://www.msn.com/en-us/money/companies/doge-meets-with-pentagon-officials-to-plan-cuts-at-the-biggest-u-s-department/ar-AA1zjgby
     sort_date: 2025-02-18
     office: U.S. Navy
 
@@ -2572,6 +2588,7 @@
     agency: GSA
     title: Federal Acquisition Service Commissioner
     title_type: dept_head
+    source: https://www.nextgov.com/people/2025/01/gsa-announces-new-fas-tts-leadership/402485/
     supervisory: true
 
 - name: Gavin Hamrick
@@ -2732,6 +2749,10 @@
     table_note: >-
       Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting on 2/20 that many were
       veterans. LinkedIn says Feb.
+    source:
+    - >-
+      https://www.msn.com/en-us/money/companies/doge-meets-with-pentagon-officials-to-plan-cuts-at-the-biggest-u-s-department/ar-AA1zjgby
+    - https://projects.propublica.org/elon-musk-doge-tracker/
     sort_date: 2025-02-18
     title: Senior Advisor
     title_type: advisor
@@ -3024,6 +3045,7 @@
     start_date: 2025-02-XX
     start_date_truth: guessed
     agency: GSA
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
     table_note: Assuming GSA start because linked there by ProPublica and at time, people were detailed
       from there
   - id: epa-jehling
@@ -3032,7 +3054,9 @@
     from_truth: guessed
     start_date: 2025-02-12
     start_date_truth: reported
-    source: https://www.eenews.net/articles/doge-lands-at-epa/
+    source:
+    - https://www.eenews.net/articles/doge-lands-at-epa/
+    - https://projects.propublica.org/elon-musk-doge-tracker/
     agency: EPA
 
 - name: Thomas Kiernan
@@ -3580,6 +3604,7 @@
     start_date_truth: inferred
     table_note: date inferred from access to CMS CALM system
     comment: Inferring based on first reported access to CMS CALM system
+    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   - id: usaid-jeremy-lewin-2
     type: appointed
     agency: USAID
@@ -6128,7 +6153,9 @@
     table_note: >-
       Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting on 2/20 that many were
       veterans. Reported as having left DOD in July by Wash. Post
-    source: https://projects.propublica.org/elon-musk-doge-tracker/
+    source:
+    - https://projects.propublica.org/elon-musk-doge-tracker/
+    - https://www.washingtonpost.com/national-security/2025/07/15/hegseth-doge-justin-fulcher-yinon-weiss/
 
 - name: Owen West
   slug: owen-west
