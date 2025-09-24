@@ -43,6 +43,21 @@ module Builders
       }
     end
 
+    def system_record(govt_system)
+      title = govt_system.name
+      title += " (#{govt_system.acronym})" if govt_system.acronym
+
+      {
+        id: govt_system.id,
+        type: 'System',
+        title: title,
+        content: Sanitize.fragment(govt_system.description),
+        name: govt_system.system_roles.map(&:name).uniq.join(', '),
+        agency: ([govt_system.agency_id] + govt_system.system_roles.map(&:agency_id)).uniq.join(', '),
+        url: "/all/systems##{govt_system.id}"
+      }
+    end
+
     def doc_record(document)
       return unless document.data&.title && document.data.index_for_search
 
@@ -60,6 +75,7 @@ module Builders
       out += Person.all.map { |p| person_record(p) }
       out += Agency.all.map { |a| agency_record(a) }
       out += Event.all.map { |e| event_record(e) }
+      out += GovtSystem.all.map { |s| system_record(s) }
       out += site.resources.map { |r| doc_record(r) }
       out.compact
     end
