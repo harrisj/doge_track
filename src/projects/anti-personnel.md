@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: Attacking the Civil Service
+index_for_search: true
 ---
 {% import 'macros' %}
 # Attacking the Civil Service

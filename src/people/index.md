@@ -2,6 +2,7 @@
 layout: docs
 title: Who's Involved in DOGE
 description: An alphabetical listing of all the people being tracked as part of the DOGE tracker
+index_for_search: true
 ---
 {%@ 'atoms/title', title: "Who's Involved in DOGE" %}
 

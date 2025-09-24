@@ -2,6 +2,7 @@
 title: Viral Waste
 layout: docs
 description: From the start, DOGE has claimed that its mission has involved fighting waste, fraud and abuse. This has resulted in many false alarms instead of actual fraud being found.
+index_for_search: true
 ---
 {% import 'macros' %}
 # Viral Waste

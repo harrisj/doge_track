@@ -55,3 +55,5 @@ gem 'bridgetown-quick-search', '~> 3.0'
 gem 'bridgetown_sequel', '~> 1.1'
 
 gem 'require_all', '~> 3.0'
+
+gem 'sanitize', '~> 7.0'

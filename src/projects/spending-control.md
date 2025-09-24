@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: Seizing Control of Spending
+index_for_search: true
 ---
 {% import 'macros' %}
 # Seizing Control Over Spending

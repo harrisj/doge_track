@@ -2,6 +2,7 @@
 layout: docs
 title: Important Disclaimer
 description: Despite claims they are the most transparent agency in history, DOGE is remarkably hard to keep track of. This site collects information sourced from media reports and court documents to build up a dataset of who is in DOGE and where they have been working.
+index_for_search: true
 ---
 # An Important Disclaimer
 

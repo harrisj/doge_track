@@ -2,6 +2,7 @@
 title: About This Data
 layout: docs
 description: An overview of the technical infrastructure of this site. DOGE Track pulls in data from YAML and uses the Bridgetown tool to generate a static site. The front-end is implemented with Tailwind CSS and Daisy UI, and Font Awesome provides the iconography.
+index_for_search: true
 ---
 # About This Data
 

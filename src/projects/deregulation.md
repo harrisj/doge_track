@@ -1,6 +1,7 @@
 ---
 title: Regulatory Rollback
 layout: docs
+index_for_search: true
 ---
 # Regulatory Rollback
 

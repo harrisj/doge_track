@@ -2,6 +2,7 @@
 title: How to Contribute
 layout: docs
 description: Some of the ways you can contribute to DOGE Track. My main area of need is for information, but other feedback and help is also welcome!
+index_for_search: true
 ---
 # How To Contribute
 
@@ -32,4 +33,4 @@ There are no copyrights or any licenses for the data on this site. [The data is 
 
 ## Contributing Money
 
-**Don't.** I have had a few people ask me about a tip jar, but to be honest... I just don't feel like having that conversation with the ethics lawyers to get the approval to do that. This is a simple no-frills static site, with my only expense so far just being the pro version of [Font Awesome](https://fontawesome.com/). Of course, maybe if I find myself facing massive hosting costs one day, then I might change my mind. But in the meantime, please consider donating money instead to a worthy cause near you like a food bank or legal defense fund. Also, as my many citations show, this site would also not be possible without the intrepid work of journalists at many publications. Get a subscription maybe? Even if you don't feel like supporting a major media property, there has been especially stellar work by the outlets [Rolling Stone](https://www.rollingstone.com/politics/), [Wired](https://wired.com/) and [The Handbasket](https://www.thehandbasket.co/), who could use some support and subscriptions. 
+**Don't.** I have had a few people ask me about a tip jar, but to be honest... I just don't feel like having that conversation with the ethics lawyers to get the approval to do that. This is a simple no-frills static site, with my only expense so far just being the pro version of [Font Awesome](https://fontawesome.com/). Of course, maybe if I find myself facing massive hosting costs one day, then I might change my mind. But in the meantime, please consider donating money instead to a worthy cause near you like a food bank or legal defense fund. Also, as my many citations show, this site would also not be possible without the intrepid work of journalists at many publications. Get a subscription maybe? Even if you don't feel like supporting a major media property, there has been especially stellar work by the outlets [Rolling Stone](https://www.rollingstone.com/politics/), [Wired](https://wired.com/) and [The Handbasket](https://www.thehandbasket.co/), who could use some support and subscriptions.

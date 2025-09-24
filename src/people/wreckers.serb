@@ -3,6 +3,7 @@ layout: 'page'
 title: The Wreckers
 template_engine: serbea
 description: The most well-known of DOGE's projects has been their spread into multiple agencies to quickly cancel contracts and access systems. These Wreckers (as I call them) have usually been based within OPM, GSA or DOGE itself.
+index_for_search: true
 ---
 {%@ '/atoms/title', title: "The Wreckers" %}
 
@@ -50,7 +51,7 @@ Since the beginning of March, DOGE has been moving staff to work within agencies
 
 ### Office of Personnel Management
 
-Many of the early DOGE hires were formally appointed at the Office of Personnel Management. Some technical staff at OPM were supporting the 
+Many of the early DOGE hires were formally appointed at the Office of Personnel Management. Some technical staff at OPM were supporting the
 
 {% opm_wreckers = all_wreckers.select {|w| w.start_agency == "OPM" } %}
 {%@ 'tables/wrecker_table', wreckers: opm_wreckers %}

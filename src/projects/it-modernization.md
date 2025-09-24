@@ -2,6 +2,7 @@
 title: "IT Modernization"
 layout: docs
 description: For an organization claiming to do IT Modernization, DOGE has done shipped remarkably few products so far.
+index_for_search: true
 ---
 {% import 'macros' %}
 # "IT Modernization"

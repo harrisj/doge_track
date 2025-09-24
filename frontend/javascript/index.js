@@ -1,4 +1,3 @@
-import "bridgetown-quick-search";
 import "$styles/index.css";
 import "$styles/syntax-highlighting.css";
 
@@ -10,6 +9,7 @@ import * as Turbo from "@hotwired/turbo";
 // on your <main> element for pages where you don't want any transition animation.
 //
 import "./turbo_transitions.js";
+import "./quick_search.js";
 
 // Import all JavaScript & CSS files from src/_components
 import components from "$components/**/*.{js,jsx,js.rb,css}";
