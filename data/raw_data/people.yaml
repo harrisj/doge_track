@@ -3054,9 +3054,14 @@
     from_truth: guessed
     start_date: 2025-02-12
     start_date_truth: reported
+    end_date: 2025-06-XX
+    end_date_truth: guessed
+    end_type: detail_ended
+    table_note: Reported 9/25 had left agency, assuming around/near Loving exit
     source:
     - https://www.eenews.net/articles/doge-lands-at-epa/
     - https://projects.propublica.org/elon-musk-doge-tracker/
+    - https://www.notus.org/policy/doge-environmental-protection-agency-mistakes
     agency: EPA
 
 - name: Thomas Kiernan
@@ -3116,9 +3121,12 @@
   - id: detail-doge-epa-killian
     type: detailed
     from: DOGE
-    table_note: assuming detail from DOGE
+    table_note: assuming detail from DOGE, reported 9/25 not at EPA, but assuming left around Loving exit
     start_date: 2025-02-04
     start_date_truth: reported
+    end_date: 2025-06-XX
+    end_date_truth: guessed
+    end_type: detail_ended
     title: Federal Detailee
     source: https://www.eenews.net/articles/doge-aide-pops-up-in-epa-staff-directory/
     agency: EPA
@@ -3686,13 +3694,34 @@
     she was reviewing contracts. She is a coder who has spent a decade or so working in biotech. She is
     also the sister of Coinbase CEO Brian Armstrong, who recently offered to hire any DOGE alumni, no
     questions asked.
+  linkedin: https://www.linkedin.com/in/kathrynarmstrongloving/
+  govt_exit_date: 2025-06-XX
+  govt_exit_truth: inferred
+  govt_exit_type: resigned
   positions:
+  - id: epa-loving-transition
+    agency: EPA
+    type: consultant
+    start_date: 2024-12-XX
+    start_date_truth: reported
+    end_date: 2025-01-20
+    end_type: replaced
+    replaced_by: epa-loving
+    table_note: LinkedIn reported being consultant/advisor to Zeldin from Dec 2024; assuming transition
+      role here
   - id: epa-loving
     type: unknown
-    start_date: 2025-02-12
+    start_date: 2025-01-20
     start_date_truth: reported
+    end_date: 2025-06-XX
+    end_date_truth: verified
+    end_type: resigned
+    table_note: Reported left EPA on LinkedIn. Likely at EPA from Day one based on NOTUS
     title: Federal Detailee
-    source: https://www.eenews.net/articles/doge-lands-at-epa/
+    source:
+    - https://www.eenews.net/articles/doge-lands-at-epa/
+    - https://www.linkedin.com/in/kathrynarmstrongloving/
+    - https://www.notus.org/policy/doge-environmental-protection-agency-mistakes
     agency: EPA
 
 - name: Matt Luby
