@@ -43,6 +43,24 @@
   source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
   id: 34gvpQTX
 
+- date: 2025-02-XX
+  type: interagency
+  fuzz: time is just given as February
+  event: >-
+    A whistleblower reports attending a meeting with USDS Administrator Amy Gleason, the SSA CIO Scott
+    Coulter and several other DOGE staffers at the agency. The whistleblower reports that Gleason did
+    not contribute to the meeting and was clearly not directing DOGE activities at the agency.
+  source: https://www.hsgac.senate.gov/wp-content/uploads/DOGE_REPORT_FINAL_7.pdf
+  interagency_doge_reps:
+    DOGE:
+    - Amy Gleason
+    SSA:
+    - Scott Coulter
+  agency:
+  - DOGE
+  - SSA
+  id: 2I503GMI
+
 - date: 2025-02-03
   time: '12:33'
   type: action
@@ -1077,3 +1095,17 @@
   - USCIS
   - NDS
   id: 7SZG8tnN
+
+- date: 2025-09-25
+  type: oversight
+  event: >-
+    The ranking Democratic member of the Senate Comittee on Homeland Security and Governmental Affairs
+    releases a report "Unchecked and Unaccountable" detailing DOGE security transgressions at several
+    agencies, including poor security for the NUMIDENT data at SSA and activities within GSA and OPM
+  source: https://www.hsgac.senate.gov/wp-content/uploads/DOGE_REPORT_FINAL_7.pdf
+  agency:
+  - DOGE
+  - SSA
+  - GSA
+  - OPM
+  id: 2rpHhJfr
