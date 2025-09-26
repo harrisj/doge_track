@@ -12,7 +12,7 @@ description: A comprehensive listing of all the source citations on a single pag
 <table class="my-table-style">
   <thead>
       <tr>
-          <th class="text-left my-2col-table-col1">Date</th>
+          <th class="text-left my-2col-table-col1 hide-cell-mobile">Date</th>
           <th class="text-left my-2col-table-col2">Articles</th>
       </tr>
   </thead>
@@ -20,8 +20,9 @@ description: A comprehensive listing of all the source citations on a single pag
       {% source_groups.keys.sort.each do |date| %}
       {% sources = source_groups[date] %}
         <tr>
-            <td class="align-top">{{ date }}</td>
+            <td class="align-top hide-cell-mobile">{{ date }}</td>
             <td class="align-top">
+                <div class="only-mobile font-semibold text-base">{{ date }}</div>
                 <div class="flex flex-col gap-1">
                 {% sources.each do |source| %}
                 <div>
