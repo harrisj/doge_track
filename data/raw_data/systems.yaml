@@ -3238,6 +3238,33 @@
     ao_type: deputy
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
+- name: Workforce Reshaping Tool
+  id: autorif
+  type: ssp
+  description: >-
+    The AutoRIF software tool was adapted by DOGE engineer Riccardo Biasini into a web service to help
+    automate the process of identifying staff to be laid off and conducting the operation.
+  theme: personnel
+  pia: https://www.opm.gov/information-management/privacy-policy/privacy-policy/wrt-pia.pdf
+  doge_created: true
+  access:
+  - id: autorif-holmes
+    type: read-write
+    agency: DOI
+    name: Stephanie Holmes
+    date_granted: 2025-08-XX
+    date_grant_truth: inferred
+    table_note: Reported as using AutoRIF
+    source: https://www.govexec.com/workforce/2025/09/interior-department-taking-steps-implement-layoffs/408342/
+  - id: autorif-hassen
+    type: read-write
+    agency: DOI
+    name: Tyler Hassen
+    date_granted: 2025-08-XX
+    date_grant_truth: inferred
+    table_note: Reported as using AutoRIF
+    source: https://www.govexec.com/workforce/2025/09/interior-department-taking-steps-implement-layoffs/408342/
+
 - name: eOPF
   id: eopf
   acronym: eOPF
