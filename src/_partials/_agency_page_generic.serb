@@ -5,7 +5,7 @@
 {%@ 'atoms/agency_title', agency: agency, id: agency.slug %}
 
 {% if agency.linkified_blurb %}
-  <div class="my-text">{{ agency.linkified_blurb | md  }}</div>
+  <div class="my-text">{{ agency.linkified_blurb | raw }}</div>
 {% end %}
 
 {% if agency.all_positions.any? %}
