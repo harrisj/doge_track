@@ -20,6 +20,13 @@
   <td class="align-top w-3/4">{{ govt_system.name }}</td>
   </tr>
 
+  {% if govt_system.doge_created %}
+  <tr>
+    <th class="align-top">DOGE Created</th>
+    <td class="align-top">true</td>
+  </tr>
+  {% end %}
+
   {% if govt_system.agency_id %}
   <tr>
   <th class="align-top">Agency</th>

@@ -19,7 +19,7 @@
               <td class="align-top"><a href="/all/systems#{{ govt_system.id }}">{% if govt_system.acronym %}<abbr title="{{ govt_system.name }}">{{ govt_system.acronym }}</abbr>{% else %}{{ govt_system.name }}{% end %}</a></td>
               <td class="align-top">
                 {%@ 'atoms/float_source_box', sources: sys_roles.map(&:sources).flatten.compact.uniq %}
-                <div class="bold"><a href="/all/systems#{{ govt_system.id }}">{{ govt_system.name }}</a></div>
+                <div class="bold"><a href="/all/systems#{{ govt_system.id }}">{{ govt_system.name }}</a>{% if govt_system.doge_created %} (created by DOGE){% end %}</div>
                 {{ govt_system.description }}
 
                 <div class="mt-1">
