@@ -199,7 +199,8 @@
     end_date: 2025-07-18
     end_date_truth: verified
     table_note: Testimony reports plan to convert position to permanent
-    end_type: resigned
+    end_type: replaced
+    replaced_by: opm-3-perm
     description: Exc Appt NTE
     appt_type_code: 48
     appt_type: Other
@@ -216,6 +217,14 @@
     supervisory: false
     office: Office of the Director
     comment: I was able to confirm that OPM Employee 3 is Akash Bobba
+  - id: opm-3-perm
+    type: converted
+    agency: OPM
+    table_note: Court testimony reports conversion to permanent, restored access
+    start_date: 2025-08-08
+    start_date_truth: verified
+    salary: "$0"
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.148.0.pdf
   - id: detail-opm-ssa-opm-3
     type: detailed
     agency: SSA
