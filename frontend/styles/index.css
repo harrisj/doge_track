@@ -158,6 +158,7 @@ layer(base);
     :root {
         --chart-background: #ffffff;
         --chart-foreground: #2d3748;
+        --chart-tooltip-theme: light;
         --primary-series: #4299e1;
     }
 
@@ -165,8 +166,14 @@ layer(base);
         :root {
             --chart-background: #1a202c;
             --chart-foreground: #e2e8f0;
+            --chart-tooltip-theme: dark;
             --primary-series: #63b3ed;
         }
+    }
+
+    .apexcharts-tooltip {
+        background: var(--chart-background);
+        padding: 1em;
     }
 }
 
