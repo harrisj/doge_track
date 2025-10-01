@@ -4,7 +4,7 @@ require 'json'
 
 module Builders
   # Save out a static API
-  class DumpDbFile < SiteBuilder
+  class DumpDBFile < SiteBuilder
     def build
       hook :site, :post_write do |_|
         file = site.in_destination_dir('downloads', 'dogetrack.sql.gz')

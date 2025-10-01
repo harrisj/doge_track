@@ -13,7 +13,7 @@ DOGE are not a collection of super-hackers. They don't trick their way into agen
 
 ## Acting Leadership
 
-In one of its more novel tactics, the Trump Administration has repeatedly used acting directors as the mechanisms of agency destruction. Because many agency directors require Senate confirmation before they can be appointed and this process takes time, the Vacancies Act was passed to ensure continuity of operations when during a change of administration or when an agency leadership position is vacated. This act allows the President to name people as "acting" directors or other positions who are granted full powers until a Senate-confirmed appointee can be sworn in.
+In one of its more novel tactics, the Trump Administration has repeatedly used acting directors as the mechanisms of agency destruction. Because many agency directors require Senate confirmation before they can be appointed and this process takes time, the Vacancies Act was passed to ensure continuity of operations when during a change of administration or when an agency leadership position is vacated. This act allows the President to name people as "acting" directors or other positions who are granted full powers until a Senate-confirmed appointee can be sworn in. Using this loophole, the Trump administration is able to place high-level staff in agencies without having to go through Senate confirmation.
 {% end %}
 
 {% acting = Position.where(Sequel.like(:title, 'acting%', case_insensitive: true)).order_by(:sort_date) %}

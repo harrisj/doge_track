@@ -4,7 +4,7 @@ require 'json'
 
 module Builders
   # Save out a static API
-  class GenerateApi < SiteBuilder
+  class GenerateAPI < SiteBuilder
     def api_path(path)
       "https://dogetrack.info/api/#{path}"
     end
