@@ -94,6 +94,8 @@
     agency: OPM
     date_granted: 2025-01-20
     date_grant_truth: verified
+    date_revoked: 2025-03-29
+    date_revoked_truth: inferred
     table_note: listed as grant for "Web Admin" on 1/20. Not revoked as of 2/12
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
   - id: opm-website-ezell
@@ -155,6 +157,8 @@
     agency: OPM
     date_granted: 2025-01-20
     date_grant_truth: verified
+    date_revoked: 2025-09-02
+    date_revoked_truth: inferred
     table_note: listed as grant for "Web Admin" on 1/20. Not revoked as of 2/12
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
 
@@ -449,16 +453,20 @@
     name: Amanda Scales
     date_granted: 2025-02-03
     date_grant_truth: verified
+    date_revoked: 2025-03-29
+    date_revoked_truth: inferred
     never_accessed: true
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
     agency: OPM
   - id: databricks-opm-hogan
     type: admin
-    name: Amanda Scales
+    name: Greg Hogan
     date_granted: 2025-01-28
     date_grant_truth: verified
-    never_accessed: true
+    date_revoked: 2025-09-02
+    date_revoked_truth: inferred
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
+    never_accessed: true
     agency: OPM
   - id: databricks-opm-employee-2
     type: admin
@@ -557,18 +565,24 @@
     name: Kathryn Armstrong Loving
     date_granted: 2025-02-12
     date_grant_truth: reported
+    date_revoked: 2025-06-XX
+    date_revoked_truth: inferred
     source: https://www.eenews.net/articles/doge-lands-at-epa/
   - id: eas-jehling
     type: read
     name: Erica Jehling
     date_granted: 2025-02-12
     date_grant_truth: reported
+    date_revoked: 2025-06-XX
+    date_revoked_truth: inferred
     source: https://www.eenews.net/articles/doge-lands-at-epa/
   - id: eas-killian
     type: read
     name: Cole Killian
     date_granted: 2025-02-12
     date_grant_truth: reported
+    date_revoked: 2025-06-XX
+    date_revoked_truth: inferred
     source: https://www.eenews.net/articles/doge-lands-at-epa/
 
 - name: Electronic Disability System
@@ -1080,6 +1094,8 @@
     name: Greg Hogan
     date_granted: 2025-01-20
     date_grant_truth: verified
+    date_revoked: 2025-09-02
+    date_revoked_truth: inferred
     table_note: Github Enterprise
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
     agency: OPM
@@ -1088,6 +1104,8 @@
     name: Amanda Scales
     date_granted: 2025-01-20
     date_grant_truth: verified
+    date_revoked: 2025-03-29
+    date_revoked_truth: inferred
     table_note: Github Enterprise
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
     agency: OPM
@@ -2645,6 +2663,8 @@
     type: unknown
     date_granted: 2025-01-31
     date_grant_truth: verified
+    date_revoked: 2025-03-29
+    date_revoked_truth: inferred
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
   - id: opm-stamp-ezell
     name: Charles Ezell
@@ -3018,12 +3038,13 @@
   - id: usa-performance-hogan
     type: unknown
     agency: OPM
-    name: Brian Bjelde
+    name: Greg Hogan
     table_note: system name is listed as "USA Performance - U.S. Office of Personnel Management"
     date_granted: 2025-01-20
     date_grant_truth: verified
+    date_revoked: 2025-09-02
+    date_revoked_truth: inferred
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
-    alias: OPM-07
 
 - name: USA Staffing
   id: usa-staffing
@@ -3060,6 +3081,8 @@
     date_granted: 2025-01-20
     date_grant_truth: verified
     date_last_used: 2025-02-28
+    date_revoked: 2025-03-29
+    date_revoked_truth: inferred
   - id: usastaffing-opm-2
     type: admin
     agency: OPM
