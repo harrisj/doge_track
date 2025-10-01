@@ -98,7 +98,7 @@ layer(base);
 
     /* Aligned 3 Column Table where 2nd col is hidden on mobile */
     .my-table-style {
-        @apply table table-fixed md:table-auto table-xs md:table-sm py-5 mb-0;
+        @apply table table-fixed md:table-auto table-xs md:table-sm xl:table-md py-5 mb-0;
     }
 
     .my-2col-table-col1 {
