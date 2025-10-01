@@ -2,6 +2,7 @@
   "name": "site",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "esbuild": "node esbuild.config.js --minify",
     "esbuild-dev": "node esbuild.config.js --watch",
@@ -9,8 +10,8 @@
   },
   "devDependencies": {
     "daisyui": "^5.0.35",
-    "esbuild": "^0.19.2",
-    "glob": "^10.3.3",
+    "esbuild": "^0.25.10",
+    "glob": "^11.0.3",
     "postcss": "^8.4.25",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^15.1.0",
