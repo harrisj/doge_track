@@ -26,7 +26,7 @@ description: A comprehensive listing of all the source citations on a single pag
                 <div class="flex flex-col gap-1">
                 {% sources.each do |source| %}
                 <div>
-                    <div><a href="{{ source.url }}">{{ source.title }}</a>, <span class="italic">{{ source.publisher.name }}</span></div>
+                    <div><a href="{{ source.url }}"><cite>{{ source.title }}</cite></a>, {{ source.publisher.name }}</div>
                     {% if source.agencies.any? || source.people.any? %}
                     <div class="ml-4 flex flex-row gap-1"><small>
                     {% if source.agencies.any? %}
