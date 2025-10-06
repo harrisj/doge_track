@@ -164,7 +164,12 @@ aliases_yaml.each do |alias_hash|
     pos_hash[:sort_date] ||= DEFAULT_POS_SORT_APPOINTED if pos_hash[:type] == 'appointed'
     pos_hash[:sort_date] ||= DEFAULT_POS_SORT_OTHER
 
-    Position.create(pos_hash)
+    pos = Position.create(pos_hash.except(:source))
+
+    Array(pos_hash[:source]).each do |src|
+      source = Source[src] || raise("Unable to find source #{src}")
+      pos.add_source(source)
+    end
   end
 end
 
