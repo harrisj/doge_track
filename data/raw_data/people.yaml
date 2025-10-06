@@ -1844,10 +1844,14 @@
   slug: charles-ezell
   skill: executive
   category: enabler
+  linkedin: https://www.linkedin.com/in/chuck-ezell/
   blurb: |-
     Before the Trump inauguration, Charles Ezell's title was Branch Chief for OPM's Data & Analytics division located in Macon, GA. Through circumstances currently unknown, he was named the new Acting Director for the agency on January 20th. Since then, he has used his position to be the quintessential [enabler](/people/enablers/), providing cover (and sometimes firepower) to ensure the DOGE is able to get its way within the agency. Ths included such work as immediately replacing the CIO with Greg Hogan or issuing directives asking for data on probationary workers or other data calls with ridiculously tight deadlines. At some times, even Ezell seemed like he was caught flat-footed by DOGE's plans, including the confusing rollouts for the "Fork in the Road" or the "Five Things" emails. He also has wildly overstated the control that OPM has over federal hiring and firing.
 
     He certainly has done the most work for DOGE of any acting administrator. Perhaps this is why he was still in the role months later, with nominee Scott Kupor not being confirmed by the Senate until July 9th.
+  govt_exit_date: 2025-10-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: opm-ezell
     type: promotion
@@ -1855,11 +1859,25 @@
     start_date_truth: verified
     end_date: 2025-07-09
     end_date_truth: inferred
+    end_type: replaced
+    replaced_by: opm-ezell-advisor
     table_note: Replaced by Scott Kupor's appointment
     title: Acting Director
     title_type: director
     agency: OPM
     source: https://www.govinfo.gov/content/pkg/DCPD-202500108/html/DCPD-202500108.htm
+  - id: opm-ezell-advisor
+    agency: OPM
+    type: demotion
+    start_date: 2025-07-09
+    start_date_truth: verified
+    end_date: 2025-10-XX
+    end_date_truth: reported
+    end_type: resigned
+    title: Senior Advisor
+    title_type: advisor
+    office: Office of the Director
+    source: https://www.linkedin.com/in/chuck-ezell/
 
 - name: Carter Farmer
   sort_name: Farmer

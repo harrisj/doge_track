@@ -259,13 +259,15 @@ end %}
 {% macro 'position_end_type' do |pos|
     case pos.end_type
     when 'detail_ended'
-      'detail end'
+      'detail ended'
     when 'replaced'
       if pos.replaced_by
         "<a class=\"link-hover sm:text-nowrap\" href=\"##{pos.replaced_by}\"><i class=\"fa-sharp fa-solid fa-up-right-from-square\"></i> next role</a>"
       else
         'replaced'
       end
+    when 'resigned'
+      'resigned from agency'
     when 'fired'
       '<span class="font-bold my-emphasis">fired</span>'
     when 'unknown'
@@ -322,6 +324,7 @@ end %}
       end
 
       Agency.each do |agency|
+        next unless agency.linkify
         out.gsub!(/\b#{agency.id}\b/, agency_link(agency)) if agency.id =~ /^[A-Z]+$/
         out.gsub!(/\b#{agency.name}\b/, agency_link(agency, agency.name))
       end

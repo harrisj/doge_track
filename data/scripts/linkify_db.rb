@@ -38,6 +38,8 @@ def linkify_text(text, strip_p: true)
   end
 
   Agency.each do |agency|
+    next unless agency.linkify
+
     out.gsub!(/\b#{agency.id}(?=[\s.,!])/, internal_link(agency.page_url, agency.id)) if agency.id =~ /^[A-Z]+$/
     out.gsub!(/\b#{agency.name}\b/, internal_link(agency.page_url, agency.name))
   end

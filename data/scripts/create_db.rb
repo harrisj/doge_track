@@ -15,6 +15,7 @@ DB.create_table! :agencies do
   string :blurb
   string :linkified_blurb
   string :parent_id
+  boolean :linkify, default: true, null: false
 end
 
 DB.create_table! :doge_aliases do
