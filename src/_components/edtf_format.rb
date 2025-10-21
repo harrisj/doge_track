@@ -58,11 +58,28 @@ class EdtfFormat
     end
   end
 
+  def display_uncertain
+    humanized = "Possibly #{@date.strftime('%b %d, %Y')}"
+
+    case @format
+    when :compact
+      "<abbr title=\"#{humanized}\">#{@date.strftime('%-m/%d?')}</abbr>"
+    when :compact_year
+      "<abbr title=\"#{humanized}\">#{@date.strftime('%-m/%d/%y?')}</abbr>"
+    when :iso
+      "<abbr title=\"#{humanized}\">#{@date}?</abbr>"
+    when :human
+      @date.humanize
+    end
+  end
+
   def to_s
     return '' if @date.nil?
 
     if @date.approximate?
       display_approximate
+    elsif @date.uncertain?(:day)
+      display_uncertain
     elsif @date.unspecified?(:day) || @date.unspecified?(:month)
       display_unspecified
     else

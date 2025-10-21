@@ -482,6 +482,24 @@
   - SBA
   id: 3J3t5FxO
 
+- date: 2025-04-(12)?
+  type: access
+  fuzz: >-
+    Date isn't given, assuming this is after Leland Dudek signed data sharing agreement, but it's possible
+    agreement was retroactive cover
+  event: >-
+    The Social Security Administration shares sensitive information on 100,000 people with DHS, including
+    their addresses, social security numbers, birth and death dates and bank information. Leland Dudek
+    reports this request was made via a phone call late on a Saturday night with the justification that
+    it was needed for a criminal investigation.
+  named:
+  - Leland Dudek
+  source: https://www.washingtonpost.com/politics/2025/10/20/social-security-data-doge-whistleblower/
+  agency:
+  - SSA
+  - DHS
+  id: 1edZQ68L
+
 - date: 2025-04-21
   type: official
   event: >-

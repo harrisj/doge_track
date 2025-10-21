@@ -13,4 +13,8 @@ class Event < Sequel::Model
   many_to_many :sources
 
   one_to_many :questions
+
+  def sort_date
+    Date.edtf(date)
+  end
 end

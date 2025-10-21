@@ -7,8 +7,9 @@ month_separator = true if month_separator.nil?
 show_directories = true if show_directories.nil?
 %}
 
- {% if events && events.any? %}
- {% prior_row_date = Date.edtf!(events[0].date)-1 %}
+{% if events && events.any? %}
+{% events = events.sort_by! {|e| e.sort_date} %}
+{% prior_row_date = Date.edtf!(events[0].date)-1 %}
 
 {%@ 'atoms/legend_header' %}
 <table class="my-table-style mb-0 mt-0">
