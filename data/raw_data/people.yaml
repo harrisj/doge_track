@@ -45,23 +45,24 @@
     in DOGE's shutdown efforts against small independent agencies like the Corporation for Public Broadcasting,
     acting as a point of contact between DOGE teams from the GSA and the White House through his Executive
     Office of the President (EOP) email address.
-  govt_exit_date: 2025-08-XX
+  govt_exit_date: 2025-07-30
   govt_exit_truth: verified
   govt_exit_type: resigned
   positions:
   - id: doge-aimonetti
+    agency: DOGE
     type: appointed
     start_date: 2025-02-XX
     start_date_truth: reported
-    end_date: 2025-08-XX
+    end_date: 2025-07-30
     end_date_truth: verified
     end_type: resigned
     fuzz: Report just says started sometime in February, end date from own LinkedIn
     table_note: start date reported as "some point in February"
     source:
     - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
-    - https://www.linkedin.com/in/justin-aimonetti-16a50875/
-    agency: DOGE
+    - >-
+      https://www.linkedin.com/posts/justin-aimonetti-16a50875_today-marks-the-end-of-a-chapter-an-unforgettable-activity-7356503593681670145-SO7T
 
 - name: Baris Akis
   slug: baris-akis
@@ -376,6 +377,7 @@
   slug: alexandra-beynon
   age: 36
   skill: coder
+  linkedin: https://www.linkedin.com/in/alybeynon/
   blurb: >-
     Not much is known about Alexandra Beynon's work on behalf of DOGE at the Department of Education.
     Prior to that, she worked as the head of engineering at her husband's startup company which sold guided
@@ -698,6 +700,7 @@
   slug: ashley-boizelle
   skill: lawyer
   category: support
+  linkedin: https://www.linkedin.com/in/ashley-boizelle-5836643b/
   blurb: >-
     Ashley Boizelle most recently served as lawyer within Amazon, but she worked as a counsel within the
     FCC during the first Trump administration, making her one of the few DOGE staffers with previous government
@@ -710,9 +713,16 @@
     start_date: 2025-02-XX
     start_date_truth: reported
     sort_date: 2025-02-15
-    table_note: reported by media as started in February
+    end_date: 2025-08-XX
+    end_date_truth: reported
+    end_type: replaced
+    replaced_by: eop-boizelle
+    title: Deputy General Counsel
+    table_note: reported by media as started in February, own LinkedIn says March
     fuzz: Report just says started sometime in February
-    source: https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
+    source:
+    - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
+    - https://www.linkedin.com/in/ashley-boizelle-5836643b/
     agency: DOGE
   - id: gsa-boizelle
     agency: GSA
@@ -722,6 +732,14 @@
     start_date_truth: reported
     fuzz: Just listed in March as someone on the GSA payroll
     source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
+  - id: eop-boizelle
+    type: appointed
+    agency: EOP
+    title: Senior Counsel to the President
+    office: White House Counsel's Office
+    start_date: 2025-08-XX
+    start_date_truth: reported
+    source: https://www.linkedin.com/in/ashley-boizelle-5836643b/
 
 - name: Emily Bryant
   sort_name: Bryant
@@ -2889,6 +2907,7 @@
   slug: vinay-hiremath
   skill: recruiter
   category: booster
+  linkedin: https://www.linkedin.com/in/vhiremath4/
   blurb: >-
     Identified by the New York Times as part of [DOGE's pre-inauguration recruitment push](https://www.nytimes.com/2025/01/12/us/politics/elon-musk-doge-government-trump.html),
     Vinay reportedly spent a month personally calling hundreds of people to recruit them for DOGE before
@@ -4443,12 +4462,12 @@
   - id: ssa-cio-moghaddassi
     type: promotion
     agency: SSA
-    sort_date: 2025-06-28
-    start_date: 2025-06-XX
+    start_date: 2025-06-(05)?
     start_date_truth: reported
     end_date: 2025-09-03
     end_date_truth: verified
     end_type: replaced
+    fuzz: Listed as co-CIO on 6/6 in news report
     source: https://fedscoop.com/social-security-administration-doge-chief-information-officer/
     title: Chief Information Officer
     title_type: cio
@@ -6371,6 +6390,7 @@
   age: 28
   skill: coder
   category: wrecker
+  linkedin: https://www.linkedin.com/in/jordanwick/
   custom_path: "/wreckers/jordan-wick"
   blurb: >-
     Jordan Wick is one of the few early DOGE staffers, who did not have some sort of direct link to Musk
@@ -6468,10 +6488,13 @@
     agency: FCC
     table_note: >-
       MOU for detail says from DOGE to FCC, but the text says he is also detailed from OPM which will
-      bill for his services
+      bill for his services. Despite being a CFPB staffer, they reportedly have no information about his
+      work for the FCC
     source:
     - https://frequencyfwd.com/files/motion-exhibit-1-08252025.pdf
     - https://www.documentcloud.org/documents/26105122-mou-20250318-doge-fcc-wick/
+    - >-
+      https://www.muckrock.com/foi/united-states-of-america-10/detailinghiring-arrangements-for-jeremy-lewin-consumer-financial-protection-bureau-183822/#file-1326062
 
 - name: Joanna Wischer
   slug: joanna-wischer
@@ -6540,6 +6563,7 @@
   age: 26
   skill: coder
   category: wrecker
+  linkedin: https://www.linkedin.com/in/ryan-wunderly/
   tech_links:
   - Anduril
   positions:

@@ -98,6 +98,8 @@ def generate_positions_csv
               person_govt_exit_type]
 
     positions.each do |pos|
+      raise "Missing agency for #{pos.id}" if pos.agency.nil?
+
       csv << [
         pos.id,
         pos.type,
