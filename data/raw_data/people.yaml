@@ -2883,6 +2883,7 @@
   slug: jim-hickey
   age: 42
   skill: executive
+  linkedin: https://www.linkedin.com/in/jim-hickey-32840511/
   blurb: >-
     Identified by ProPublica as one of the DOGE crew who have secretly been working at the Department
     of Defense, Jim Hickey was formerly a director at MITRE and before that a senior advisor for the Air
@@ -3645,10 +3646,11 @@
   age: 66
   blurb: >-
     According to his LinkedIn, Scott Langmack is also continuing to serve as the CEO of Kukun, a real
-    estate technology company, while he is also heading the DOGE team at HUD. At HUD, he seems to be focused
-    mostly on searching for fraud they're convinced is in the system and figuring out how to delete grants
-    from HUD. It's no coincidence that both of these missions will impact the poor and vulnerable the
-    most.
+    estate technology company, while he is also heading the DOGE team at HUD. At HUD, he seems to have
+    been focused mostly on searching for fraud they're convinced is in the system and figuring out how
+    to delete grants from HUD. It's no coincidence that both of these missions will impact the poor and
+    vulnerable the most. More recently, he moved into a new role at OMB that is looking to apply the AI-driven
+    approach to deregulation across multiple agencies
   skill: executive
   category: wrecker
   linkedin: https://www.linkedin.com/in/scottlangmack/
@@ -3659,9 +3661,22 @@
     title: Senior Advisor
     title_type: advisor
     start_date_truth: reported
-    table_note: assuming appointed
-    source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
+    end_date: 2025-07-XX
+    end_date_truth: reported
+    end_type: resigned
+    table_note: assuming appointed, LinkedIn reports move to OMB
+    source:
+    - https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
+    - https://www.linkedin.com/in/scottlangmack/
     agency: HUD
+  - id: omb-langmack
+    agency: OMB
+    type: appointed
+    start_date: 2025-08-XX
+    start_date_truth: reported
+    title: Executive Director, Deregulation AI
+    source:
+    - https://www.linkedin.com/in/scottlangmack/
 
 - name: Sahil Lavingia
   sort_name: Lavingia
@@ -3923,23 +3938,32 @@
   category: wrecker
   skill: analyst
   custom_path: "/wreckers/tarak-makecha"
+  linkedin: https://www.linkedin.com/in/tarakmakecha/
   blurb: >-
-    Tarak Makecha is the former head of stategic planning for Tesla Energy. More recently, he has been
-    listed as a vice president at Valor Equity Partners, the investment firm run by Antonio Gracias and
-    the employer of Jon Koval and Payton Rehling. Although he describes himself as a software engineer,
-    he comes from a backgroun in finance. In that capacity, he has been reviewing and cancelling grants
-    for the DOJ and FBI, but recent sources have also linked him to the US Agency for Global Media and
-    grant cancellations there.
+    Tarak Makecha is the former head of stategic planning for Tesla Energy. Although he describes himself
+    as a software engineer, he comes from a backgroun in finance. In that capacity, he has been reviewing
+    and cancelling grants for the DOJ and FBI, but recent sources have also linked him to the US Agency
+    for Global Media and grant cancellations there. His LinkedIn reports that he left working for DOGE
+    in July and is now a vice president at Valor Equity Partners, the investment firm run by Antonio Gracias
+    and the employer of Jon Koval and Payton Rehling. I'm sure that's just a coincidence.
   tech_links:
   - Tesla
   - Valor
+  govt_exit_date: 2025-07-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: opm-makecha
     type: appointed
     title: Senior Advisor
     title_type: advisor
     start_date: 2025-02-28
-    source: https://www.pogo.org/investigations/inside-the-shadowy-crew-leading-the-governments-hr-office
+    start_date_truth: verified
+    end_date: 2025-07-XX
+    end_date_truth: reported
+    source:
+    - https://www.pogo.org/investigations/inside-the-shadowy-crew-leading-the-governments-hr-office
+    - https://www.linkedin.com/in/tarakmakecha/
     comment: POGO has his resume and listing as an OPM staffer. ProPublica had financial disclosures on
       2/28
     agency: OPM
@@ -4220,12 +4244,18 @@
     sort_date: 2025-05-02
     start_date: 2025-05-(02)~
     start_date_truth: reported
+    end_date: 2025-10-31
+    end_date_truth: reported
     title: Senior Advisor
     title_type: advisor
     office: Chairman of the SEC
-    table_note: title sourced from ProPublica
-    source: >-
+    table_note: title sourced from ProPublica, reportedly not seen at agency for last few months of official
+      station
+    source:
+    - >-
       https://www.reuters.com/sustainability/boards-policy-regulation/doge-expands-presence-wall-st-regulator-sources-say-2025-05-02/
+    - >-
+      https://www.reuters.com/sustainability/boards-policy-regulation/doge-leave-top-us-markets-regulator-sources-say-2025-10-30/
     agency: SEC
 
 - name: Katie Miller
@@ -4326,8 +4356,17 @@
     sort_date: 2025-04-05
     start_date: 2025-04-(05)~
     start_date_truth: reported
+    end_date: 2025-10-31
+    end_date_truth: reported
+    title: Senior Advisor
+    title_type: advisor
+    office: Office of the Chairman
     comment: Reporting on 4/15 just says he arrived "earlier this month"
-    source: https://finance.yahoo.com/news/sec-pushes-back-doge-request-175244386.html
+    source:
+    - https://finance.yahoo.com/news/sec-pushes-back-doge-request-175244386.html
+    - >-
+      https://www.reuters.com/sustainability/boards-policy-regulation/doge-leave-top-us-markets-regulator-sources-say-2025-10-30/
+    - https://www.linkedin.com/in/eliezer-mishory/
     agency: SEC
 
 - name: Bryanne-Michelle Mlodzianowski
@@ -4691,6 +4730,13 @@
     Texas. He has been involved in efforts to discover fraud in SBA loans.
   custom_path: "/wreckers/cavanaugh-cronies#donald-park"
   positions:
+  - id: dod-park
+    type: detailed
+    from: GSA
+    from_truth: guessed
+    agency: DOD
+    office: Office of Strategic Capital
+    source: https://www.linkedin.com/in/donaldkpark/
   - id: gsa-park
     type: appointed
     sort_date: 2025-02-01
@@ -4969,6 +5015,8 @@
     run by Antonio Gracias and Jon Koval. Rehling joined the Social Security Administration DOGE team
     in February but has since been detailed to DHS and the DOJ, where he has likely been heavily involved
     in the administration's efforts to create a [surveillance system to supercharge immigration enforcement](/projects/god-view/).
+    In July 2025, he was promoted to a Vice President position at Valor, presumably as an exit from his
+    DOGE work.
   custom_path: "/wreckers/payton-rehling"
   tech_links:
   - Valor
@@ -5363,6 +5411,7 @@
   age: 37
   skill: coder
   category: wrecker
+  linkedin: https://www.linkedin.com/in/kschutt/
   blurb: >-
     Kyle Schutt is from the intersection of technologist and Republican party politics, having built an
     online fundraising platform Revv, that is frequently used by the GOP. He was also [linked to the development](https://xcancel.com/samwcyo/status/1889527715029557607)
@@ -5370,8 +5419,11 @@
     he left the database accessible to the outside world](https://www.404media.co/anyone-can-push-updates-to-the-doge-gov-website-2/),
     and his computer has been [infected with credential-stealing malware multiple times](https://cyberpress.org/stolen-credentials-from-doge-employee/).
     For its part, DOGE gave him access to a highly-sensitive database containing information on unaccompanied
-    migrant children and admin credentials at CISA.
+    migrant children and admin credentials at CISA. His LinkedIn reports that he left DHS in June 2025.
   custom_path: "/wreckers/kyle-schutt"
+  govt_exit_date: 2025-06-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: internal-dhs-cbp-schutt
     type: internal
@@ -5419,10 +5471,15 @@
     sort_date: 2025-02-18
     start_date: 2025-02-(18)~
     start_date_truth: inferred
+    end_date: 2025-06-XX
+    end_date_truth: reported
+    end_type: resigned
     salary: "$195,200"
     pay_grade: GS-15/10
     office: Office of the Deputy Administrator
-    source: https://www.wired.com/story/doge-government-salaries-elon-musk/
+    source:
+    - https://www.wired.com/story/doge-government-salaries-elon-musk/
+    - https://www.linkedin.com/in/kschutt/
   - id: detail-gsa-dhs-schutt
     type: detailed
     from: GSA
@@ -5735,12 +5792,17 @@
   age: 28
   skill: coder
   category: wrecker
+  linkedin: https://www.linkedin.com/in/alexander-simonpour-178a8a121/
   tech_links:
   - Tesla
   blurb: >-
     Alexander Simonpour is a former engineering manager at Tesla who is now working for DOGE and embedded
     among the [wrecking crew at GSA](/people/wreckers/). He was one of the three DOGE staffers who were
-    detailed from GSA to NASA in March, and he has also been involved in DOGE's efforts at the USPS.
+    detailed from GSA to NASA in March, and he has also been involved in DOGE's efforts at the USPS. His
+    LinkedIn reports that he left DOGE in August.
+  govt_exit_date: 2025-08-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: gsa-simonpour
     type: appointed
@@ -5748,7 +5810,12 @@
     start_date: 2025-03-XX
     start_date_truth: guessed
     sort_date: 2025-03-01
-    table_note: he was detailed to USPS from GSA, so assuming appointed at GSA but info unknown
+    end_date: 2025-08-XX
+    end_date_truth: reported
+    table_note: he was detailed to USPS from GSA, so assuming appointed at GSA but info unknown. Dates
+      from LinkedIn
+    source:
+    - https://www.linkedin.com/in/alexander-simonpour-178a8a121/
   - id: detail-gsa-usps-alex-simonpour
     type: detailed
     from: GSA
@@ -6107,6 +6174,7 @@
   age: 25
   category: wrecker
   skill: analyst
+  linkedin: https://www.linkedin.com/in/jack-s-221181154/
   custom_path: "/wreckers/cavanaugh-cronies#jack-stein"
   blurb: >-
     Recently an investment banking associate at Salem Partners, he is one of the newer members of Nate
@@ -6125,23 +6193,31 @@
   sort_name: Stube
   slug: brian-stube
   category: wrecker
+  linkedin: https://www.linkedin.com/in/brian-stube/
   skill: analyst
   blurb: >-
     Brian Stube was a "quant" at the the hedge fund Citadel before 2012, which is also where Adam Hoffman
-    works.
+    works. According to his LinkedIn, he left DOT in August.
+  govt_exit_date: 2025-08-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: dot-stube
     type: appointed
     name: Brian Stube
-    sort_date: 2025-05-07
-    start_date: 2025-05-(07)~
+    sort_date: 2025-03-05
+    start_date: 2025-03-XX
     start_date_truth: reported
+    end_date: 2025-08-XX
+    end_date_truth: reported
     fuzz: Appeared in the ProPublica roundup
     title: Senior Advisor to the Secretary
     title_type: advisor
     office: Office of the Secretary
     agency: DOT
-    source: https://projects.propublica.org/elon-musk-doge-tracker/
+    source:
+    - https://projects.propublica.org/elon-musk-doge-tracker/
+    - https://www.linkedin.com/in/brian-stube/
 
 - name: James Sullivan
   sort_name: Sullivan
@@ -6192,7 +6268,8 @@
   blurb: >-
     Joining DOGE sometime in early April, Christopher Sweet has been based in the Department of Housing
     and Urban Development (HUD), where he building a custom generative AI model to analyze the agency's
-    regulations and make recommendations of specific parts to cut.
+    regulations and make recommendations of specific parts to cut. More recently, his work has been moved
+    to OMB, where his tool is being used to trim regulations at multiple agencies.
   positions:
   - id: hud-sweet
     type: appointed
@@ -6396,8 +6473,9 @@
 - name: Owen West
   slug: owen-west
   sort_name: West
-  category: wrecker
+  category: leadership
   skill: analyst
+  linkedin: https://www.linkedin.com/in/owen-west-b1536b197/
   blurb: >-
     Owen West is a Marine Corps veteran and former financial analyst at Goldman Sachs. He served as an
     assistant secretary of defense in the first Trump administration and was reportedly tapped to lead
@@ -6405,6 +6483,17 @@
   positions:
   - id: dod-west
     type: appointed
+    title: Financial Strategist
+    agency: DOD
+    start_date: 2025-02-XX
+    start_date_truth: reported
+    end_date: 2025-07-XX
+    end_date_truth: reported
+    end_type: replaced
+    replaced_by: dod-west-advisor
+    source: https://www.linkedin.com/in/owen-west-b1536b197/
+  - id: dod-west-advisor
+    type: promotion
     agency: DOD
     title_type: advisor
     start_date: 2025-07-XX
@@ -6585,8 +6674,13 @@
   blurb: >-
     A former investment banking associate at Jefferies, Marshall Wood is part of the wrecking crew led
     by Nate Cavanaugh that has visited multiple independent agencies. He also is a friend of Justin Fox
-    from their days as students at the University of Virginia.
+    from their days as students at the University of Virginia. Much of DOGE's wrecking activities have
+    dissipated in recent months, and his own LinkedIn reports that he has now landed in a reward position
+    in Strategic Finance at xAI, one of Musk's companies.
   custom_path: "/wreckers/cavanaugh-cronies#marshall-wood"
+  govt_exit_date: 2025-09-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: gsa-wood
     type: appointed
@@ -6594,7 +6688,12 @@
     agency: GSA
     start_date: 2025-04-21
     start_date_truth: reported
-    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    end_date: 2025-09-XX
+    end_date_truth: reported
+    end_type: resigned
+    source:
+    - https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    - https://www.linkedin.com/in/fmarshallwood/
     comment: FIXME, find more details on when started
   - id: detail-gsa-dfc-wood
     type: detailed
@@ -6675,11 +6774,34 @@
   sort_name: Youngs
   age: 29
   category: wrecker
-  skill: coder
+  skill: analyst
   custom_path: "/wreckers/cavanaugh-cronies#bridget-youngs"
+  linkedin: https://www.linkedin.com/in/bridget-youngs/
+  blurb: >-
+    Not much is reported about Bridget Youngs' actions for DOGE. Like many of Nate Cavanaugh's wrecking
+    crew, she comes from a background in finance and investment, and is young (graduating from college
+    in 2017).
+  govt_exit_date: 2025-08-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
+  - id: dol-youngs
+    type: appointed
+    agency: DOL
+    start_date: 2025-03-XX
+    start_date_truth: reported
+    end_date: 2025-08-XX
+    end_date_truth: reported
+    table_note: >-
+      From her LinkedIn: "Lead agency actions resulting in over $5 billion in taxpayer savings, re-industrialization
+      workforce initiatives, deregulation, and platform modernization for Federal unemployment and workforce
+      visas"
+    source:
+    - https://www.linkedin.com/in/bridget-youngs/
   - id: detail-peace-corps-youngs
     type: detailed
+    from: DOL
+    from_truth: inferred
     start_date: 2025-04-04
     start_date_truth: reported
     table_note: unknown who this is and if sent to other agencies
