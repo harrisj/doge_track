@@ -3236,6 +3236,7 @@
   slug: raj-jegannathan
   age: 41
   skill: executive
+  linkedin: https://www.linkedin.com/in/raj-jegannathan-9b566242/
   blurb: >-
     A relatively new addition to the DOGE staff based in GSA, Raj is also working for his job as the vice
     president of IT for AI infrastructure and vehicle support operations at Tesla. These dual-employment
@@ -3260,6 +3261,7 @@
   slug: erica-jehling
   age: 40
   skill: administrator
+  linkedin: https://www.linkedin.com/in/erica-jehling/
   blurb: >-
     She is another SpaceX alumna; her most recent role before DOGE was as a purchasing director. She has
     been part of the EPA team and has also been linked to the GSA.
@@ -3559,6 +3561,7 @@
   age: 45
   skill: lawyer
   category: support
+  linkedin: https://www.linkedin.com/in/keenan-kmiec-6a84aa274/
   blurb: >-
     One of the DOGE team of lawyers, there aren't many public details about Keenan Kmiec's specific contributions,
     apart from testimony from Noah Peters that he discussed the idea of firing probationary employees
@@ -3888,16 +3891,21 @@
 - name: Jeremy Lichtman
   sort_name: Lichtman
   slug: jeremy-lichtman
-  category: unknown
+  category: wrecker
+  skill: analyst
+  linkedin: https://www.linkedin.com/in/jeremy-lichtman/
   blurb: >-
     He was named as a member of the DOGE team at USDA in response to a FOIA request from American Oversight.
-    Otherwise, I have no other info yet.
+    According to LinkedIn, he has held multiple positions related to shareholder activism and strategic
+    investing.
   positions:
   - id: usda-lichtman
     agency: USDA
     type: appointed
     title: Advisor on Government Efficiency
-    source: https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
+    source:
+    - https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
+    - https://www.linkedin.com/in/jeremy-lichtman/
 
 - name: Kendall Lindemann
   sort_name: Lindemann
@@ -4356,14 +4364,28 @@
   age: 35
   skill: coder
   category: enabler
+  linkedin: https://www.linkedin.com/in/clarkminor/
   tech_links:
   - Palantir
   blurb: >-
     A former head of cloud strategy at Palantir, Clark Minor was named the CIO for Health and Human Services
     in February. in that position, he is able to grant access for DOGE staff to many systems.
   positions:
-  - id: hhs-minor
+  - id: hhs-minor-cto
     type: appointed
+    agency: HHS
+    title: Chief Technology Officer
+    title_type: cto
+    start_date: 2025-02-XX
+    start_date_truth: verified
+    sort_date: 2025-02-01
+    end_date: 2025-02-14
+    end_date_truth: inferred
+    end_type: replaced
+    replaced_by: hhs-minor-cio
+    source: https://www.linkedin.com/in/clarkminor/
+  - id: hhs-minor-cio
+    type: promotion
     agency: HHS
     title: Chief Information Officer
     title_type: cio
@@ -4654,6 +4676,7 @@
   age: 39
   skill: administrator
   category: wrecker
+  linkedin: https://www.linkedin.com/in/brooksmorgan/
   blurb: >-
     The CEO of an educational startup, Brooks Morgan joined the DOGE team working within the Department
     of Education in early February. Unlike most DOGE staff who served as special government employees,
@@ -4966,13 +4989,18 @@
   age: 35
   skill: coder
   category: wrecker
+  linkedin: https://www.linkedin.com/company/bannervc/people/
   blurb: >-
     Adam Ramada is thus far the only DOGE wrecker to have testified under oath in a deposition, appearing
     as a witness in litigation brought both against the Department of Education and the Department of
-    Labor. He was detailed to both agencies directly from DOGE, but it's unclear if he's still employed
-    by the US DOGE Service or has been officially onboarded at another agency like his DOGE colleagues
-    Jordan Wick and Amy Gleason.
+    Labor. He was detailed to both agencies directly from DOGE, but it's unclear if he was still employed
+    by the US DOGE Service or was been officially onboarded at another agency like his DOGE colleagues
+    Jordan Wick and Amy Gleason. According to his LinkedIn, he has been working since August for the same
+    company (Banner VC) as fellow DOGE member Brooks Morgan.
   custom_path: "/wreckers/adam-ramada"
+  govt_exit_date: 2025-08-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: doge-adam-ramada
     type: appointed
@@ -4984,11 +5012,15 @@
   - id: detail-doge-education-adam-ramada
     start_date: 2025-01-28
     start_date_truth: verified
+    end_date: 2025-08-XX
+    end_date_truth: reported
     agency: Education
     from: DOGE
     from_truth: verified
     type: detailed
-    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.5_1.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.5_1.pdf
+    - https://www.linkedin.com/in/adam-ramada-b0836869/
     signed_date: 2025-02-12
     nte_date: 2026-07-04
     nte_date_truth: verified
@@ -5077,6 +5109,7 @@
   age: 27
   skill: coder
   category: wrecker
+  linkedin: https://www.linkedin.com/in/payton-rehling/
   blurb: >-
     Payton Rehling is a senior data engineer at Valor Equity Partners, the private equity firm that is
     run by Antonio Gracias and Jon Koval. Rehling joined the Social Security Administration DOGE team
@@ -5084,6 +5117,9 @@
     in the administration's efforts to create a [surveillance system to supercharge immigration enforcement](/projects/god-view/).
     In July 2025, he was promoted to a Vice President position at Valor, presumably as an exit from his
     DOGE work.
+  govt_exit_date: 2025-07-XX
+  govt_exit_truth: inferred
+  govt_exit_type: resigned
   custom_path: "/wreckers/payton-rehling"
   tech_links:
   - Valor
@@ -5117,6 +5153,8 @@
     type: appointed
     start_date: 2025-02-23
     start_date_truth: verified
+    end_date: 2025-07-XX
+    end_date_truth: inferred
     nte_date: 2026-02-22
     nte_date_truth: verified
     pd_code: KNX0380
@@ -5126,7 +5164,9 @@
     title_type: advisor
     office: Office of the CIO
     description: Excepted Appointment NTE
-    source: https://www.documentcloud.org/documents/26028808-onboard-ssa-employee-9/
+    source:
+    - https://www.documentcloud.org/documents/26028808-onboard-ssa-employee-9/
+    - https://www.linkedin.com/in/payton-rehling/
     name: Payton Rehling
     alias: SSA-09
   - id: detail-ssa-doj-rehling
@@ -5173,7 +5213,7 @@
   age: 33
   skill: administrator
   category: wrecker
-  linkedin: https://www.linkedin.com/in/rachel-riley-50487034/
+  linkedin: https://www.linkedin.com/in/rachel-riley-tn/
   blurb: >-
     Rachel Riley has been heavily involved in DOGE's operations within HHS, where she has worked very
     closely with Brad Smith, and she has been granted access to a wide range of databases for tracking
@@ -5619,6 +5659,7 @@
   age: 33
   skill: coder
   category: enabler
+  linkedin: https://www.linkedin.com/in/brytonshang/
   blurb: >-
     Before DOGE, Bryton was the founder of a startup to help fish farmers improve their yields. While
     his background check was still being processed, he accompanied Tyler Hassen on a [failed publicity
@@ -5910,6 +5951,7 @@
 - name: Mike Slagh
   sort_name: Slagh
   slug: mike-slagh
+  linkedin: https://www.linkedin.com/in/mslagh/
   category: wrecker
   skill: executive
   age: 40
@@ -5965,6 +6007,7 @@
   slug: brad-smith
   age: 42
   skill: executive
+  linkedin: https://www.linkedin.com/in/bradtedsmith/
   category: leadership
   blurb: >-
     A healthcare executive who served in the first administration, Brad Smith kept a relatively low profile
@@ -6402,7 +6445,7 @@
   skill: analyst
   slug: katrine-trampe
   category: wrecker
-  linkedin: https://www.linkedin.com/in/katrine-trampe-916037229/
+  linkedin: https://www.linkedin.com/in/katrinetrampe/
   blurb: >-
     Katrine came from a background working for real-estate investment firms. She also reportedly uses
     the title "Comtesse" because her father is a Count with ties to the Danish royal family. All of these
