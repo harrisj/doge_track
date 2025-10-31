@@ -18,42 +18,30 @@ Like any categorization, this is an approximation that provides useful clarity b
 
 Here are the current members of DOGE that I know about
 
-{% grouped_people = Person.order(:sort_name).all.group_by(&:category) %}
+{% people = Person.eager_graph(:positions).order(:sort_name).all %}
+
 <table class="my-table-style table-zebra">
 <thead>
   <tr>
-    <th class="align-left">Category</th>
-    <th class="align-left">People</th>
+      <th class="align-left">Name</th>
+      <th class="align-left">Category</th>
+      <th class="align-left">Start</th>
+      <th class="align-left">Status</th>
+      <th class="align-left hide-cell-mobile">Agencies</th>
   </tr>
 </thead>
 <tbody>
-  <tr>
-    <td><a class="link-hover" href="/people/leaders">Leaders</a></td>
-    <td>{% grouped_people['leadership'].each_with_index do |p, i| %}{% if i != 0%}, {% end %}<span class="sm:text-nowrap">{{ person_link(p) }}</span>{% end %}</td>
-  </tr>
-  <tr>
-    <td><a class="link-hover" href="/people/leaders">Boosters</a></td>
-    <td>{% grouped_people['booster'].each_with_index do |p, i| %}{% if i != 0%}, {% end %}<span class="sm:text-nowrap">{{ person_link(p) }}</span>{% end %}</td>
-  </tr>
-  <tr>
-    <td><a class="link-hover" href="/people/enablers">Enablers</a></td>
-    <td>{% grouped_people['enabler'].each_with_index do |p, i| %}{% if i != 0%}, {% end %}<span class="sm:text-nowrap">{{ person_link(p) }}</span>{% end %}</td>
-  </tr>
+{% people.each do |person| %}
     <tr>
-    <td><a class="link-hover" href="/people/support-team">Support Team</a></td>
-    <td>{% grouped_people['support'].each_with_index do |p, i| %}{% if i != 0%}, {% end %}<span class="sm:text-nowrap">{{ person_link(p) }}</span>{% end %}</td>
-  </tr>
-  <tr>
-    <td><a class="link-hover" href="/people/wreckers">Wreckers</a></td>
-    <td>{% grouped_people['wrecker'].each_with_index do |p, i| %}{% if i != 0%}, {% end %}<span class="sm:text-nowrap">{{ person_link(p) }}</span>{% end %}</td>
-  </tr>
-  <tr>
-    <td><a class="link-hover" href="/people/unknowns">Unknowns</a></td>
-    <td>{% grouped_people['unknown'].each_with_index do |p, i| %}{% if i != 0%}, {% end %}<span class="sm:text-nowrap">{{ person_link(p) }}</span>{% end %}</td>
-  </tr>
+        <td class="align-left align-top">{{ person_link(person) }}</td>
+        <td class="align-left align-top text-nowrap"><i class="fa-sharp fa-solid {{ person_icon(person) }}"></i> {{ person_category_link(person) }}</td>
+        <td class="align_left align-top text-nowrap">{% if person.positions.any? && person.positions.first.start_date %}<i class="fa-sharp fa-solid fa-person-to-door" aria-label="Started"></i> {{ render EdtfFormat.new(person.positions.first.start_date, :iso) }}{% elsif person.events.any? %}<i class="fa-sharp fa-solid fa-users-viewfinder" aria-label="First spotted"></i> {{ render EdtfFormat.new(person.events.first.date, :iso) }}{% end %}</td>
+        <td class="align-left align-top text-nowrap">{% if person.govt_exit_date %}<b><i class="fa-sharp fa-solid fa-left-from-bracket" aria-label="Left DOGE"></i> {{ render EdtfFormat.new(person.govt_exit_date, :iso) }}</b>{% elsif person.events.any? %}{% last_event = person.events.last %}<i class="fa-sharp fa-solid fa-users-viewfinder" aria-label="Most recently spotted"></i> {{ render EdtfFormat.new(last_event.date, :iso) }}{% end %}</td>
+        <td class="align-left align-top hide-cell-mobile">{% if person.positions.any? %}{{ person.positions.map(&:agency_id) | uniq | agency_links }}{% end %}</td>
+    </tr>
+{% end %}
 </tbody>
 </table>
-
 
 Finally, a note on some government-specific terms that you might encounter in the tables listing details on DOGE staffing:
 
