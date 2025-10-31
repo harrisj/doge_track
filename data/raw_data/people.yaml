@@ -247,6 +247,7 @@
   sort_name: Ballefin
   slug: micaela-lopez
   category: wrecker
+  linkedin: https://www.linkedin.com/in/mica-lopez/
   tech_links:
   - Twitter
   blurb: >-
@@ -558,6 +559,7 @@
   sort_name: Blake
   slug: adam-blake
   category: wrecker
+  linkedin: https://www.linkedin.com/in/adamrblake/
   positions:
   - id: energy-blake
     type: unknown
@@ -585,6 +587,7 @@
   age: 21
   skill: coder
   category: wrecker
+  linkedin: https://www.linkedin.com/in/abobba/
   custom_path: "/wreckers/akash-bobba"
   blurb: >-
     Identified early in media reports as one of six engineers picked on Elon Musk's team, Akash Bobba
@@ -854,8 +857,23 @@
     sort_date: 2025-03-15
     start_date: 2025-03-XX
     start_date_truth: verified
+    end_date: 2025-08-XX
+    end_date_truth: reported
+    end_type: replaced
+    replaced_by: sba-carter-oii
     table_note: Start month sourced from his LinkedIn
-    source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+    source:
+    - https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+    - https://www.linkedin.com/in/josh-carter-cfa-caia-0a854b4b/
+  - id: sba-carter-oii
+    type: promotion
+    agency: SBA
+    title: Associate Administrator
+    title_type: dept_head
+    office: Office of Investment and Innovation
+    start_date: 2025-08-XX
+    start_date_truth: reported
+    source: https://www.linkedin.com/in/josh-carter-cfa-caia-0a854b4b/
 
 - name: Nate Cavanaugh
   sort_name: Cavanaugh
@@ -1040,6 +1058,7 @@
   slug: alison-childs
   skill: designer
   category: support
+  linkedin: https://www.linkedin.com/in/alisonchilds/
   tech_links:
   - Twitter
   blurb: >-
@@ -1049,6 +1068,8 @@
   - id: gsa-childs
     agency: GSA
     type: appointed
+    title: Senior Advisor
+    title_type: advisor
     sort_date: 2025-05-15
     start_date: 2025-05-XX
     start_date_truth: guessed
@@ -1056,6 +1077,7 @@
     source:
     - https://projects.propublica.org/elon-musk-doge-tracker/
     - https://www.404media.co/github-is-leaking-trumps-plans-to-accelerate-ai-across-government/
+    - https://www.linkedin.com/in/alisonchilds/
     office: Technology Transformation Services
 
 - name: Yat Choi
@@ -1072,6 +1094,19 @@
   tech_links:
   - Airbnb
   positions:
+  - id: opm-choi
+    type: consultant
+    agency: OPM
+    title: Senior Technologist
+    start_date: 2025-04-XX
+    start_date_truth: reported
+    sort_date: 2025-04-15
+    table_note: >-
+      a Canadian working on temp visa which would disqualify for federal role. LinkedIn reports he worked
+      on the retirement processing modernization project
+    source:
+    - https://www.wired.com/story/next-stage-doge-elon-musk/
+    - https://www.linkedin.com/in/yat-choi/
   - id: gsa-choi
     type: consultant
     agency: GSA
@@ -1082,14 +1117,6 @@
     source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
     title: Scientific Technologist
     title_type: advisor
-  - id: opm-choi
-    type: consultant
-    agency: OPM
-    start_date: 2025-06-XX
-    start_date_truth: reported
-    sort_date: 2025-06-15
-    table_note: a Canadian working on temp visa which would disqualify for federal role
-    source: https://www.wired.com/story/next-stage-doge-elon-musk/
 
 - name: Carl Coe
   sort_name: Coe
@@ -1121,7 +1148,7 @@
     table_note: His linkedin reports Feb 2025 as start
     source: https://www.linkedin.com/in/carl-coe-912b82/
   - id: epa-coe-chief-staff
-    type: converted
+    type: promotion
     title: Chief of Staff
     title_type: dept_head
     supervisory: true
@@ -1135,6 +1162,10 @@
   slug: michael-cole
   category: wrecker
   skill: executive
+  linkedin: https://www.linkedin.com/in/michael-cole-714288b9/
+  govt_exit_date: 2025-08-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: usda-cole
     type: appointed
@@ -1142,13 +1173,19 @@
     title: Senior Team Leader on Government Efficiency
     start_date: 2025-02-10
     start_date_truth: verified
-    source: >-
+    end_date: 2025-08-XX
+    end_date_truth: reported
+    table_note: LinkedIn profile reports August departure
+    source:
+    - >-
       https://www.documentcloud.org/documents/25963272-cole-michael-appointees-2025-new-entrant-278-2025-2025-04-03/
+    - https://www.linkedin.com/in/michael-cole-714288b9/
 
 - name: Miles Collins
   sort_name: Collins
   age: 36
   slug: miles-collins
+  linkedin: https://www.linkedin.com/in/milesbcollins
   blurb: >-
     Before working for DOGE, Miles Collins worked for a financial firm and also ran a fertility clinic
     in Los Angeles. This might be his connection to Musk, who has had stridently pro-natalist politics.
@@ -1159,6 +1196,9 @@
     anti-immigrant surveillance project.
   skill: executive
   category: wrecker
+  govt_exit_date: 2025-08-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: dol-collins
     type: appointed
@@ -1174,7 +1214,12 @@
     title: Policy Advisor
     title_type: advisor
     office: Office of the Secretary
-    source: https://www.documentcloud.org/documents/26028806-onboard-dol-miles-collins/
+    table_note: >-
+      Describes self in LinkedIn as DOGE Lead at the agency and reports AI dereg effort and 20% headcount
+      reduction
+    source:
+    - https://www.documentcloud.org/documents/26028806-onboard-dol-miles-collins/
+    - https://www.linkedin.com/in/milesbcollins
     agency: DOL
 
 - name: George Cooper
@@ -1493,6 +1538,7 @@
 - name: Clayton Cromer
   sort_name: Cromer
   slug: clayton-cromer
+  linkedin: https://www.linkedin.com/in/clayton-c-8442b4180/
   skill: lawyer
   blurb: >-
     As one of the legal attack dogs within DOGE, Clayton Cromer was involved with the efforts to shut
@@ -1501,12 +1547,17 @@
     he has appeared at the DOJ, where he has been repoortedly badgering US Congressman (and former whistleblower)
     Vindman about a business that supplied assistance to Ukraine in their war.
   category: support
+  govt_exit_date: 2025-07-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: opm-cromer
     type: appointed
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
+    end_date: 2025-03-XX
+    end_date_truth: reported
     description: SES Noncareer Appt
     appt_type_code: 55
     appt_type: Senior Exec Perm
@@ -1517,7 +1568,9 @@
     supervisory: true
     office: Office of the Director
     comment: Sourced from a FOIA document
-    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - https://www.linkedin.com/in/clayton-c-8442b4180/
   - id: detail-opm-usaid-cromer
     type: detailed
     agency: USAID
@@ -1527,17 +1580,19 @@
     start_date_truth: reported
     table_note: NYT links to USAID, but need to find public reports of this
     source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
-  - id: detail-opm-doj-cromer
-    type: detailed
+  - id: opm-doj-cromer
+    type: appointed
     agency: DOJ
-    from: OPM
-    from_truth: guessed
     start_date: 2025-03-XX
-    start_date_truth: inferred
+    start_date_truth: verified
+    end_date: 2025-07-XX
+    end_date_truth: verified
     table_note: Rep. Vindman reported in early March being contacted by Cromer at the DOJ
     comment: Vindman in early March reports receiving contacts from Cromer at DOJ
-    source: >-
+    source:
+    - >-
       https://www.msn.com/en-us/news/us/dc-us-attorney-targets-ukraine-whistleblower-rep-vindman/ar-AA1AIUw3
+    - https://www.linkedin.com/in/clayton-c-8442b4180/
 
 - name: Ethan Damiano
   sort_name: Damiano
@@ -1857,6 +1912,7 @@
   sort_name: Elvy
   slug: bee-elvy
   skill: designer
+  linkedin: https://www.linkedin.com/in/beeelvy/
   tech_links:
   - Twitter
   category: support
@@ -1867,13 +1923,14 @@
   - id: gsa-elvy
     agency: GSA
     type: appointed
-    sort_date: 2025-05-15
-    start_date: 2025-05-XX
+    sort_date: 2025-04-15
+    start_date: 2025-04-XX
     start_date_truth: guessed
-    table_note: Date guessed based on reporting from ProPublica and 404 Media on ai.gov
+    table_note: Date sourced from LinkedIn
     source:
     - https://projects.propublica.org/elon-musk-doge-tracker/
     - https://www.404media.co/github-is-leaking-trumps-plans-to-accelerate-ai-across-government/
+    - https://www.linkedin.com/in/beeelvy/
     office: Technology Transformation Services
 
 - name: Charles Ezell
@@ -2336,6 +2393,7 @@
   age: 34
   skill: coder
   category: unknown
+  linkedin: https://www.linkedin.com/in/mattieuga/
   blurb: >-
     Reported as present in HHS in January by ProPublica, but there are no other details about his time
     there or what he was doing.
@@ -2618,9 +2676,6 @@
     Technologies at Procore Technologies (until leaving in February to join DOGE).
   tech_links:
   - Twitter
-  govt_exit_date: 2025-04-18
-  govt_exit_truth: guessed
-  govt_exit_type: resigned
   positions:
   - id: state-graber
     type: appointed
@@ -2636,15 +2691,26 @@
     agency: Energy
     start_date: 2025-03-13
     start_date_truth: verified
-    end_date: 2025-04-18
+    end_date: 2025-07-XX
     end_date_truth: verified
     end_type: resigned
+    table_note: Reported to have resigned on 4/18, but LinkedIN reports working into July
     title: Chief Information Officer
     title_type: cio
     supervisory: true
     source:
     - https://www.nextgov.com/people/2025/03/energy-appoints-twitter-google-alum-new-cio/403717/
     - https://www.meritalk.com/articles/energy-department-cio-graber-resigns-sources-say/
+    - https://www.linkedin.com/in/rgsec/
+  - id: nnsa-graber
+    type: appointed
+    agency: NNSA
+    start_date: 2025-07-XX
+    start_date_truth: verified
+    title: Chief Information Security Officer
+    title_type: dept_head
+    supervisory: true
+    source: https://www.linkedin.com/in/rgsec/
 
 - name: Antonio Gracias
   age: 54
@@ -2925,6 +2991,7 @@
   age: 24
   skill: analyst
   category: wrecker
+  linkedin: https://www.linkedin.com/in/adam-h-8a4b42105/
   blurb: >-
     A former staffer at the Griffin's Citadel hedge fund, he joined DOGE sometime in April and was assigned
     to a team that is using DOJ databases to assemble information on immigrants.
@@ -6291,6 +6358,7 @@
   age: 25
   skill: coder
   category: wrecker
+  linkedin: https://www.linkedin.com/in/zachary-terrell-81488b19a/
   positions:
   - id: hhs-terrell
     start_date: 2025-03-06
