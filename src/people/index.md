@@ -18,7 +18,7 @@ Like any categorization, this is an approximation that provides useful clarity b
 
 Here are the current members of DOGE that I know about
 
-{% people = Person.eager_graph(:positions).order(:sort_name).all %}
+{% people = Person.eager_graph(:positions).order(:sort_name, :sort_date).all %}
 
 <table class="my-table-style table-zebra">
 <thead>
