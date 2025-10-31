@@ -2927,8 +2927,17 @@
     A former staffer at the Griffin's Citadel hedge fund, he joined DOGE sometime in April and was assigned
     to a team that is using DOJ databases to assemble information on immigrants.
   positions:
+  - id: doge-hoffman
+    type: appointed
+    agency: DOGE
+    start_date: 2025-03-(19)~
+    start_date_truth: reported
+    source: >-
+      https://news.bgov.com/bloomberg-government-news/musks-doge-hires-ken-griffin-staffer-for-national-security-work
   - id: doj-hoffman
-    type: unknown
+    type: detailed
+    from: DOGE
+    from_truth: inferred
     start_date: 2025-04-21
     start_date_truth: reported
     source: https://www.washingtonpost.com/immigration/2025/04/21/doge-ecas-justice-immigration-courts-trump/
