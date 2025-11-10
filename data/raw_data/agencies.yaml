@@ -1316,6 +1316,16 @@
     agency: USDA
     id: 3HMxtkeA
   - date: 2025-11-03
+    type: official
+    event: >-
+      Posting from her personal account on X, the USDA Secretary asserts that the agency had uncovered
+      massive fraud in the personal data of SNAP recipients that it had collected from 27 cooperating
+      states. In an appearance on FOX News, she claims the administration had eliminated 700,000 people
+      from SNAP benefits and had arrested 118 people. She provided no other details to verify her claims.
+    source: https://www.npr.org/2025/11/04/nx-s1-5595920/snap-usda-rollins-fraud
+    agency: USDA
+    id: 7jWtvy2W
+  - date: 2025-11-03
     type: disruption
     event: >-
       An advocacy group, Grassroots Wildland Firefighters, releases a report that notes the US Forest
@@ -2991,6 +3001,22 @@
     systems that contain highly classified information.
   doge_base: true
   events:
+  - date: 2025-01-22
+    type: disruption
+    event: >-
+      The Department of Energy rescinds 394 pending job offers as part of Trump's hiring freeze. It also
+      removes almost all of its job advertisements.
+    agency: Energy
+    source: https://www.eenews.net/articles/how-the-energy-department-got-doged/
+    id: NoGHN0nZ
+  - date: 2025-01-22
+    type: disruption
+    event: >-
+      The Department of Energy rescinds 394 pending job offers as part of Trump's hiring freeze. It also
+      removes almost all of its job advertisements.
+    agency: Energy
+    source: https://www.eenews.net/articles/how-the-energy-department-got-doged/
+    id: 3HaXvxdO
   - date: 2025-02-07
     type: sighting
     fuzz: Date is approximate and unknown. Report is unconfirmed
@@ -6628,6 +6654,42 @@
     source: https://www.cbsnews.com/news/trump-administration-confuses-government-workers-email-test-message/
     agency: OPM
     id: YcNgC9Yg
+  - date: 2025-01-24
+    type: interagency
+    event: >-
+      Representing OPM, James Sullivan coordinates in an email to Department of Energy officials on several
+      DOGE-led initiatives. One messages states "as discussed over the phone, when you compile the list
+      of 69 DEI employees placed on admin leave, please share with Amanda and myself." Energy officials
+      also send a list of 1394 probationary employees to Amanda Scales, all of whom will be fired.
+    named:
+    - James Sullivan
+    - Amanda Scales
+    source: https://www.eenews.net/articles/how-the-energy-department-got-doged/
+    interagency_doge_reps:
+      OPM:
+      - James Sullivan
+      - Amanda Scales
+    agency:
+    - OPM
+    id: 7FBiV0yI
+  - date: 2025-01-24
+    type: interagency
+    event: >-
+      Representing OPM, James Sullivan coordinates in an email to Department of Energy officials on several
+      DOGE-led initiatives. One messages states "as discussed over the phone, when you compile the list
+      of 69 DEI employees placed on admin leave, please share with Amanda and myself." Energy officials
+      also send a list of 1394 probationary employees to Amanda Scales, all of whom will be fired.
+    named:
+    - James Sullivan
+    - Amanda Scales
+    source: https://www.eenews.net/articles/how-the-energy-department-got-doged/
+    interagency_doge_reps:
+      OPM:
+      - James Sullivan
+      - Amanda Scales
+    agency:
+    - OPM
+    id: 55KvMWph
   - date: 2025-01-24
     type: onboard
     event: Jacob Altik and Nikhil Rajpal start working at OPM
