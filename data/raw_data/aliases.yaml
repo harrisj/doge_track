@@ -666,6 +666,20 @@
     start_date_truth: inferred
     table_note: Start date guessed from system access
 
+- id: PeaceCorps-02
+  agency: PeaceCorps
+  evidence:
+  - Email address from USAID is detailed to Peace Corps
+  - Could be Edward Coristine, Clayton Cromer, Luke Farritor, Gavin Kliger or Jeremy Lewin
+  positions:
+  - id: peace-corps-02
+    type: detailed
+    agency: PeaceCorps
+    from: USAID
+    from_truth: verified
+    table_note: Redacted email says person detailed to Peace Corps from USAID
+    source: https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/r_9nu.fNf5II/v0
+
 - id: SSA-01
   agency: SSA
   name: Akash Bobba

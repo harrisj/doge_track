@@ -6919,8 +6919,10 @@
   govt_exit_type: resigned
   positions:
   - id: dol-youngs
-    type: appointed
+    type: detailed
     agency: DOL
+    from: GSA
+    from_truth: inferred
     start_date: 2025-03-XX
     start_date_truth: reported
     end_date: 2025-08-XX
@@ -6928,9 +6930,23 @@
     table_note: >-
       From her LinkedIn: "Lead agency actions resulting in over $5 billion in taxpayer savings, re-industrialization
       workforce initiatives, deregulation, and platform modernization for Federal unemployment and workforce
-      visas"
+      visas" but described elsewhere as from GSA, so assuming detail
     source:
     - https://www.linkedin.com/in/bridget-youngs/
+    - https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/r_9nu.fNf5II/v0
+  - id: gsa-youngs
+    type: appointed
+    agency: GSA
+    start_date: 2025-03-XX
+    start_date_truth: inferred
+    end_date: 2025-08-XX
+    end_date_truth: reported
+    title: Contract Specialist
+    title_type: advisor
+    table_note: >-
+      Emails from Peace Corps staff shared via FOIA reveal that she was detailed from GSA, this matches
+      common pattern for wreckers
+    source: https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/r_9nu.fNf5II/v0
   - id: detail-peace-corps-youngs
     type: detailed
     from: DOL
