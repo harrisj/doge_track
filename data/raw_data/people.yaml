@@ -818,17 +818,48 @@
   sort_name: Burroughs
   slug: brian-burroughs
   skill: coder
-  category: unknown
+  category: wrecker
+  age: 40
   blurb: >-
     Brian Burroughs was apparently introduced to GSA staff in June by Thomas Shedd and Stephen Ehikian.
-    It apparently seemed “like they were looking for things for him to work on.” Until I find out what
-    those things might be, I am classifying him as an unknown. There is a Brian Burroughs who is the CTO
-    of Business Operational Concepts, a small contracting firm that does business with the federal government
-    and GSA. It's possible he is that person, but the name is generic enough that it might be someone
-    else.
+    It apparently seemed “like they were looking for things for him to work on.” Before his time in DOGE,
+    he was the CTO of Business Operational Concepts, a small contracting firm that does business with
+    the federal government and GSA. Since then, ProPublica has linked his activities to other agencies.
   positions:
+  - id: commerce-burroughs
+    agency: Commerce
+    sort_date: 2025-06-16
+    type: detailed
+    from: GSA
+    from_truth: guessed
+    table_note: Linked by ProPublica
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
+  - id: opm-burroughs
+    agency: OPM
+    sort_date: 2025-06-16
+    type: detailed
+    from: GSA
+    from_truth: guessed
+    table_note: Linked by ProPublica
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
+  - id: state-burroughs
+    agency: State
+    sort_date: 2025-06-16
+    type: detailed
+    from: GSA
+    from_truth: guessed
+    table_note: Linked by ProPublica
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
+  - id: usda-burroughs
+    agency: USDA
+    sort_date: 2025-06-16
+    type: detailed
+    from: GSA
+    from_truth: guessed
+    table_note: Linked by ProPublica
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: gsa-burroughs
-    type: unknown
+    type: appointed
     agency: GSA
     sort_date: 2025-06-15
     start_date: 2025-06-XX
@@ -2238,17 +2269,56 @@
   sort_name: Fox, Joshua
   slug: joshua-fox
   skill: lawyer
-  category: unknown
+  age: 28
+  category: wrecker
   blurb: >-
-    Apart from his appearance on a leaked list of DOGE's lawyers, there isn't any public information about
-    Joshua Fox.
+    Apart from his appearance on a leaked list of DOGE's lawyers, there isn't much public information
+    about Joshua Fox. In November, ProPublica added him to their list of DOGE staffers and linked him
+    to several agencies but reported he transitioned to a General Counsel role in the White House in June
   positions:
+  - id: eop-doge
+    type: promotion
+    agency: EOP
+    title: Associate General Counsel
+    office: Executive Office of the President
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
+  - id: mcc-joshua-fox
+    agency: MCC
+    sort_date: 2025-02-16
+    type: detailed
+    from: DOGE
+    from_truth: guessed
+    table_note: Linked to agency by ProPublica
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
+  - id: noaa-joshua-fox
+    agency: NOAA
+    sort_date: 2025-02-16
+    type: detailed
+    from: DOGE
+    from_truth: guessed
+    table_note: Linked to agency by ProPublica
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
+  - id: usda-joshua-fox
+    agency: USDA
+    sort_date: 2025-02-16
+    type: detailed
+    from: DOGE
+    from_truth: guessed
+    table_note: Linked to agency by ProPublica
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: doge-joshua-fox
     type: appointed
     start_date: 2025-02-XX
+    sort_date: 2025-02-14
     start_date_truth: reported
+    end_date: 2025-06-XX
+    end_date_truth: reported
+    end_type: replaced
+    replaced_by: eop-doge
     fuzz: Report just says started sometime in February
-    source: https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
+    source:
+    - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
+    - https://projects.propublica.org/elon-musk-doge-tracker/
     agency: DOGE
 
 - name: Justin Fox
@@ -3387,6 +3457,36 @@
     source: https://www.documentcloud.org/documents/26028773-onboard-ssa-employee-5/
     name: Cole Killian
     alias: SSA-05
+
+- name: Boris Kizenko
+  sort_name: Kizenko
+  slug: boris-kizenko
+  age: 23
+  category: wrecker
+  skill: political
+  blurb: >-
+    Boris Kizenko has reportedly worked on several projects at GSA and has also been associated with the
+    SBA. Prior to DOGE, he worked as a legislative correspondent in the office of disgraced Rep. Matt
+    Gaetz and claimed as a 16-year-old in 2019 that he was denied entry into the National Honor Society
+    at his high school because he was a Trump supporter (the NHS uses GPA, leadership skills and volunteering
+    hours to determine who will be inducted).
+  positions:
+  - id: gsa-kizenko
+    agency: GSA
+    type: appointed
+    title: Senior Advisor
+    title_type: advisor
+    sort_date: 2025-02-01
+    source:
+    - https://projects.propublica.org/elon-musk-doge-tracker/
+  - id: sba-kizenko
+    agency: SBA
+    type: detailed
+    from: GSA
+    from_truth: guessed
+    sort_date: 2025-02-02
+    source:
+    - https://projects.propublica.org/elon-musk-doge-tracker/
 
 - name: Gavin Kliger
   sort_name: Kliger
@@ -6373,6 +6473,7 @@
 
 - name: Christopher Sweet
   sort_name: Sweet
+  age: 22
   slug: christopher-sweet
   category: wrecker
   linkedin: https://www.linkedin.com/in/chris16621747214/
@@ -6477,6 +6578,38 @@
     - >-
       https://www.govexec.com/management/2025/07/doge-and-other-day-one-trump-appointees-head-exits-multiple-agencies/407075/
     agency: DOI
+
+- name: Alexander Tullman
+  sort_name: Tullman
+  slug: alexander-tullman
+  age: 26
+  linkedin: https://www.linkedin.com/in/alex-tullman-685332164/
+  blurb: >-
+    A latecomer to DOGE, Alexander joined up in April at GSA and was detailed to HHS in June. His sole
+    background experience has been a stint as a finance manager at Proctor & Gamble for the 3 years prior.
+  positions:
+  - id: gsa-tullman
+    type: appointed
+    agency: GSA
+    sort_date: 2025-04-15
+    start_date: 2025-04-XX
+    start_date_truth: verified
+    title: Senior Advisor
+    title_type: advisor
+    source:
+    - https://www.linkedin.com/in/alex-tullman-685332164
+  - id: hhs-tullman
+    type: detailed
+    agency: HHS
+    from: GSA
+    from_truth: inferred
+    sort_date: 2025-07-15
+    start_date: 2025-07-XX
+    start_date_truth: verified
+    title: Senior Advisor
+    title_type: advisor
+    source:
+    - https://www.linkedin.com/in/alex-tullman-685332164
 
 - name: Andrew Vilcsak
   sort_name: Vilcsak
