@@ -4783,6 +4783,9 @@
     he was instead hired as a part-time consultant working for free. It's likely he was later formally
     appointed to a role, since he has been detailed from Education to both the Department of the Treasury
     and FDIC in early April.
+  govt_exit_date: 2025-08-04
+  govt_exit_truth: inferred
+  govt_exit_type: resigned
   positions:
   - id: education-employee-4
     type: consultant
@@ -4791,10 +4794,15 @@
     start_date_truth: verified
     nte_date: 2025-08-04
     nte_date_truth: verified
+    end_date: 2025-08-04
+    end_date_truth: guessed
+    end_type: resigned
     agency: Education
     salary: "$0"
+    table_note: likely Brooks Morgan who does report starting a new role in August
     source:
     - https://www.documentcloud.org/documents/26028771-onboard-education-employee-4/
+    - https://www.linkedin.com/in/brooksmorgan/
     name: Brooks Morgan
     alias: ED-04
   - id: detail-education-treasury-morgan
@@ -5114,6 +5122,7 @@
     start_date_truth: verified
     end_date: 2025-08-XX
     end_date_truth: reported
+    end_type: resigned
     agency: Education
     from: DOGE
     from_truth: verified
