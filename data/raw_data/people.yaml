@@ -2959,17 +2959,18 @@
   positions:
   - id: doi-hassen
     type: appointed
-    sort_date: 2025-01-27
-    start_date: 2025-01-(27)~
+    start_date: 2025-01-23
     start_date_truth: inferred
     end_date: 2025-03-07
     end_date_truth: verified
     end_type: replaced
     replaced_by: doi-hassen-acting
-    table_note: AP reports in DOI in January, inferring before water pump stunt
+    table_note: FOIA response includes email to him on first day
     agency: DOI
-    source: >-
+    source:
+    - >-
       https://apnews.com/article/hassen-burgum-musk-interior-energy-conflicts-830e9df68c7869e943f96c4b5e384f20
+    - https://cdn.muckrock.com/foia_files/2025/04/15/25-4034_Rel_575pgs_Redacted.pdf
   - id: doi-hassen-acting
     type: promotion
     start_date: 2025-03-07
@@ -3246,6 +3247,7 @@
     - https://www.govexec.com/workforce/2025/09/interior-department-taking-steps-implement-layoffs/408342/
     - >-
       https://storage.courtlistener.com/recap/gov.uscourts.cand.457131/gov.uscourts.cand.457131.62.11_3.pdf
+    - https://cdn.muckrock.com/foia_files/2025/04/15/25-4034_Rel_575pgs_Redacted.pdf
     agency: DOI
 
 - name: Kenneth Jackson
@@ -6575,17 +6577,20 @@
   - id: interior-trampe
     type: unknown
     office: Office of the Secretary
-    start_date: 2025-03-05
-    start_date_truth: reported
+    start_date: 2025-02-24
+    start_date_truth: inferred
     end_date: 2025-08-XX
     end_date_truth: reported
     end_type: resigned
-    table_note: reported on 7/29 as leaving DOI; unclear if leaving DOGE
+    table_note: >-
+      had ethics training with Stephanie Holmes, assuming same start date reported on 7/29 as leaving
+      DOI; unclear if leaving DOGE
     source:
     - >-
       https://subscriber.politicopro.com/article/eenews/2025/03/05/heres-the-people-connected-to-doge-at-interior-00213330
     - >-
       https://www.govexec.com/management/2025/07/doge-and-other-day-one-trump-appointees-head-exits-multiple-agencies/407075/
+    - https://cdn.muckrock.com/foia_files/2025/04/15/25-4034_Rel_575pgs_Redacted.pdf
     agency: DOI
 
 - name: Alexander Tullman
