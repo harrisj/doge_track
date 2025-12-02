@@ -360,9 +360,25 @@
 - name: Sam Beyda
   sort_name: Beyda
   slug: sam-beyda
-  blurb: Only public mention is a single NBC reports. More information needed.
-  category: unknown
+  blurb: >-
+    Sam Beyda has been involved with DOGE's activities since at least early February, but he has managed
+    to somehow stay under the radar, with only a single news report linking him to DOGE activities at
+    the Department of Labor. More recently, however, he has taken on a prominent role as the Deputy Chief
+    of Staff at the CDC, after serving as a policy advisor in HHS. This is a pretty impressive move, considering
+    he has no experience in public health and graduated from Columbia in 2023. Prior to DOGE, his only
+    work experience was at a company that manufactured cannabinoids, whose parent organization is led
+    by Beyda's father-in-law.
+  category: enabler
+  skill: analyst
   positions:
+  - id: hhs-beyda
+    type: appointed
+    agency: HHS
+    title: Policy Advisor
+    title_type: advisor
+    office: Deputy Secretary of HHS
+    source: https://www.wired.com/story/what-is-doge-doing-now/
+    sort_date: 2025-08-10
   - id: dol-sam-beyda
     type: unknown
     sort_date: 2025-02-13
@@ -373,6 +389,18 @@
     source: >-
       https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
     agency: DOL
+  - id: cdc-beyda
+    type: promotion
+    agency: CDC
+    title: Deputy Chief of Staff
+    title_type: dept_head
+    supervisory: true
+    sort_date: 2025-11-15
+    start_date: 2025-11-(15)~
+    start_date_truth: reported
+    source:
+    - https://www.science.org/content/article/exclusive-cdc-end-all-monkey-research
+    - https://www.wired.com/story/what-is-doge-doing-now/
 
 - name: Alexandra Beynon
   sort_name: Beynon
@@ -1134,10 +1162,12 @@
     sort_date: 2025-04-15
     table_note: >-
       a Canadian working on temp visa which would disqualify for federal role. LinkedIn reports he worked
-      on the retirement processing modernization project
+      on the retirement processing modernization project. Wired reports still involved in OPM retirement
+      work in December 2025
     source:
     - https://www.wired.com/story/next-stage-doge-elon-musk/
     - https://www.linkedin.com/in/yat-choi/
+    - https://www.wired.com/story/what-is-doge-doing-now/
   - id: gsa-choi
     type: consultant
     agency: GSA
@@ -1505,6 +1535,13 @@
     start_date_truth: verified
     fuzz: Exact start date not given by SSA spokesperson
     source: https://www.wired.com/story/big-balls-social-security-administration/
+  - id: nds-coristine
+    agency: NDS
+    type: appointed
+    start_date: 2025-09-XX
+    start_date_truth: guessed
+    fuzz: Self-identified as NDS in November, but likely started earlier
+    source: https://www.wired.com/story/what-is-doge-doing-now/
 
 - name: Scott Coulter
   sort_name: Coulter
