@@ -180,6 +180,10 @@
     "same_as": {
       "description": "For use in aliases, indicates that the position is the same as another one publicly known (the two can be merged)",
       "type": "string"
+    },
+    "mou": {
+      "description": "A link to a MOU if the position has one",
+      "type": "string"
     }
   },
   "required": ["id", "agency", "type"],

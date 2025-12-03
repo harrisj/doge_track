@@ -68,6 +68,8 @@ DB.create_table! :positions do
   string :table_note
   string :replaced_by
   string :same_as
+
+  string :mou
 end
 
 DB.create_table! :people do
