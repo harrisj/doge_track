@@ -717,6 +717,18 @@
     agency: SSA
     name: Akash Bobba
     alias: SSA-01
+  - id: usda-bobba
+    type: detailed
+    agency: USDA
+    from: SSA
+    from_truth: verified
+    reimbursed: false
+    start_date: 2025-04-29
+    start_date_truth: verified
+    nte_date: 2025-08-27
+    nte_date_truth: inferred
+    source: >-
+      https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
   - id: opm-3-perm
     type: converted
     agency: OPM
@@ -2301,6 +2313,17 @@
     start_date_truth: inferred
     table_note: Guessed because created a spreadsheet at DOI on grant cancellations around 5/07
     source: https://www.nytimes.com/2025/05/07/climate/trump-park-service-grants-cuts.html
+  - id: detail-usda-fennessy
+    type: detailed
+    agency: USDA
+    from: Education
+    from_truth: verified
+    start_date: 2025-05-15
+    start_date_truth: verified
+    nte_date: 2025-09-12
+    nte_date_truth: inferred
+    source: >-
+      https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
 
 - name: Joshua Fox
   sort_name: Fox, Joshua
@@ -2335,14 +2358,6 @@
     from_truth: guessed
     table_note: Linked to agency by ProPublica
     source: https://projects.propublica.org/elon-musk-doge-tracker/
-  - id: usda-joshua-fox
-    agency: USDA
-    sort_date: 2025-02-16
-    type: detailed
-    from: DOGE
-    from_truth: guessed
-    table_note: Linked to agency by ProPublica
-    source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: doge-joshua-fox
     type: appointed
     start_date: 2025-02-XX
@@ -2357,6 +2372,20 @@
     - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
     - https://projects.propublica.org/elon-musk-doge-tracker/
     agency: DOGE
+  - id: usda-joshua-fox
+    agency: USDA
+    start_date: 2025-04-16
+    start_date_truth: verified
+    nte_date: 2025-08-14
+    nte_date_truth: inferred
+    type: detailed
+    from: DOGE
+    from_truth: verified
+    reimbursed: false
+    source:
+    - https://projects.propublica.org/elon-musk-doge-tracker/
+    - >-
+      https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
 
 - name: Justin Fox
   sort_name: Fox, Justin
@@ -3610,14 +3639,16 @@
     from: OPM
     agency: USDA
     from_truth: verified
-    sort_date: 2025-02-01
-    start_date: 2025-02-(01)~
-    start_date_truth: inferred
+    start_date: 2025-01-29
+    start_date_truth: verified
     office: Office of the Secretary
     comment: >-
       No details, but listed in a NYT roundup and adding here. On 2/14, USDA head said they'd been there
       a couple of weeks. An email from him has the label OSEC - DC
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+    - >-
+      https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
   - id: detail-opm-cfpb-kliger
     type: detailed
     agency: CFPB
@@ -6867,20 +6898,6 @@
     start_date_truth: guessed
     table_note: guessed from govt declaration detailed from DOGE to CFPB
     comment: No details, but guessing based on government declaration had been detailed from DOGE to CFPB
-  - id: detail-usda-wick
-    type: detailed
-    from: DOGE
-    from_truth: reported
-    agency: USDA
-    sort_date: 2025-02-01
-    start_date: 2025-02-(01)~
-    start_date_truth: inferred
-    table_note: no direct confirmation, but linked to agency by NYT, and other DOGE staff there in early
-      Feb
-    comment: >-
-      No details, but listed in a NYT roundup and adding here. USDA head said DOGE had been there a couple
-      of weeks on 2/14
-    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: detail-usds-cfpb-jordan-wick
     type: detailed
     agency: CFPB
@@ -6944,6 +6961,24 @@
     - https://www.documentcloud.org/documents/26105122-mou-20250318-doge-fcc-wick/
     - >-
       https://www.muckrock.com/foi/united-states-of-america-10/detailinghiring-arrangements-for-jeremy-lewin-consumer-financial-protection-bureau-183822/#file-1326062
+  - id: detail-usda-wick
+    type: detailed
+    from: DOGE
+    from_truth: reported
+    agency: USDA
+    start_date: 2025-03-26
+    start_date_truth: verified
+    nte_date: 2025-07-24
+    nte_date_truth: inferred
+    reimbursed: false
+    table_note: MOU signed by Amy Gleason for DOGE. Date is after he was hired at CFPB.
+    comment: >-
+      No details, but listed in a NYT roundup and adding here. USDA head said DOGE had been there a couple
+      of weeks on 2/14
+    source:
+    - https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    - >-
+      https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
 
 - name: Joanna Wischer
   slug: joanna-wischer
