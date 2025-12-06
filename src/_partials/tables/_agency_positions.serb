@@ -37,7 +37,7 @@
     {% end %}
     {% if agency && undated_positions.any? %}
       <tr>
-        <td colspan="100%" class="text-center font-bold italic">No Start Date Known</a>
+        <td colspan="100%" class="text-center font-bold italic">No Start Date Known</td>
       </tr>
       {% to_agency, from_agency = undated_positions.partition {|pos| pos.agency_id == agency.id } %}
       {% grouped_undated = to_agency.group_by {|pos| [pos.agency_id, pos.type, pos.from_agency_id || ''] } %}
