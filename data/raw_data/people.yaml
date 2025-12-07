@@ -96,8 +96,8 @@
     and there are several reported cases of him attempting to browbeat independent agencies into compliance
     with administration policy. He has also been selected to be a clerk for Supreme Court Justice Neil
     Gorsuch this summer, so it's unclear how long his tenure with DOGE will last.
-  govt_exit_date: 2025-06-XX
-  govt_exit_truth: reported
+  govt_exit_date: 2025-06-27
+  govt_exit_truth: verified
   govt_exit_type: resigned
   positions:
   - id: opm-jacob-altik
@@ -125,6 +125,7 @@
     sort_date: 2025-01-31
     end_date: 2025-06-XX
     end_date_truth: reported
+    end_type: resigned
   - id: detail-opm-usadf-altik
     type: detailed
     from: OPM
@@ -536,10 +537,14 @@
     A SpaceX veteran who has spent 20 years at the company, Brian Bjelde also helped Elon Musk to drastically
     cut staff after his takeover of Twitter. It seems like Brian ia happy being a hatchet man, and he
     likely has been involved in the efforts to cut government staff, including a plan to eliminate 70%
-    of the positions at OPM.
+    of the positions at OPM. He has been keeping a low profile, but the government recently reported that
+    OPM-07 left working for the agency on 2025-05-16, so he's presumably no longer in government service.
   tech_links:
   - SpaceX
   - Twitter
+  govt_exit_date: 2025-05-16
+  govt_exit_truth: inferred
+  govt_exit_type: resigned
   positions:
   - id: opm-brian-bjelde
     type: appointed
@@ -573,7 +578,12 @@
     type: converted
     agency: OPM
     start_date: 2025-01-31
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.0.pdf
+    start_date_truth: verified
+    end_date: 2025-05-16
+    end_date_truth: verified
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
     table_note: permanent position approved
     title: Expert
     title_type: advisor
@@ -5131,6 +5141,7 @@
     source:
     - https://www.documentcloud.org/documents/26028794-onboard-opm-employee-6/
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
     name: Nikhil Rajpal
     alias: OPM-06
   - id: detail-opm-noaa-rajpal
@@ -6678,6 +6689,7 @@
     agency: DOI
 
 - name: Alexander Tullman
+  category: wrecker
   sort_name: Tullman
   slug: alexander-tullman
   age: 26

@@ -62,6 +62,7 @@ In addition, there are some cases where we also know DOGE staff have left positi
     {% left_positions = Position.eager_graph(:person).exclude(end_date: nil).where(govt_exit_date: nil).exclude(end_type: 'replaced').order(:end_date).all %}
 
     {% left_positions.each do |pos| %}
+    {% next if pos.person.nil? %}
     <tr>
       <td class="align-top">{{ EdtfFormat.new(pos.end_date, :compact ) | raw }}</td>
       <td class="sm:hidden align-top"><i class="fa-sharp fa-solid {{ person_icon(pos.person) }}"></i></td>

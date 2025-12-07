@@ -263,10 +263,13 @@
   - id: opm-04
     type: appointed
     agency: GSA
-    start_date: 2025-01-20
+    start_date: 2025-01-24
     start_date_truth: verified
-    nte_date: 2026-01-19
+    nte_date: 2025-07-23
     nte_date_truth: verified
+    end_date: 2025-05-14
+    end_date_truth: verified
+    end_type: detail_ended
     description: Exc Appt NTE
     appt_type_code: 48
     appt_type: Other
@@ -283,7 +286,9 @@
     comment: This is GSA appointment
     same_as: gsa-edward-coristine
     table_note: A GSA employee too, but legal docs state dual appointment and not detail from GSA to OPM
-    source: https://www.documentcloud.org/documents/26028768-onboard-opm-employee-4/
+    source:
+    - https://www.documentcloud.org/documents/26028768-onboard-opm-employee-4/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
 
 - id: OPM-05
   agency: OPM
@@ -395,6 +400,7 @@
     source:
     - https://www.documentcloud.org/documents/26028794-onboard-opm-employee-6/
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
 
 - id: OPM-07
   name: Brian Bjelde
@@ -433,7 +439,12 @@
     type: converted
     agency: OPM
     start_date: 2025-01-31
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.0.pdf
+    start_date_truth: verified
+    end_date: 2025-05-16
+    end_date_truth: verified
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
     table_note: permanent position approved
     title: Expert
     title_type: advisor
@@ -483,18 +494,23 @@
     sort_date: 2025-01-31
     start_date: 2025-01-(31)~
     start_date_truth: inferred
-    end_date: 2025-06-XX
-    end_date_truth: reported
+    end_date: 2025-06-06
+    end_date_truth: verified
     table_note: Start date guessed from system access. No longer in govt on 6/27
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
 
 - id: OPM-10
   agency: OPM
   evidence:
   - Granted access to USA Performance on 1/31
   - >-
-    Based on known starts, this likely could be Edward Coristine, Justin Monroe, Christopher Stanley,
-    Chris Young or Austin Raynor
+    Based on known starts, this likely could be Justin Monroe, Christopher Stanley, Chris Young or Austin
+    Raynor
+  - >-
+    Government stated still working at OPM on 12/5. This would eliminate Christopher Stanley and Chris
+    Young.
   positions:
   - id: opm-employee-10
     type: unknown
@@ -519,10 +535,13 @@
     sort_date: 2025-02-07
     start_date: 2025-02-(07)~
     start_date_truth: inferred
-    end_date: 2025-06-XX
-    end_date_truth: reported
-    table_note: Start date guessed from system access. No longer in govt on 6/27
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    end_date: 2025-03-05
+    end_date_truth: verified
+    end_type: resigned
+    table_note: Start date guessed from system access.
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
 
 - id: OPM-12
   agency: OPM
@@ -538,10 +557,13 @@
     sort_date: 2025-02-07
     start_date: 2025-02-(07)~
     start_date_truth: inferred
-    end_date: 2025-06-XX
-    end_date_truth: reported
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
-    table_note: Start date guessed from system access. No longer in govt on 6/27
+    end_date: 2025-03-05
+    end_date_truth: verified
+    end_type: resigned
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
+    table_note: Start date guessed from system access.
 
 - id: OPM-13
   agency: OPM
@@ -560,9 +582,11 @@
     sort_date: 2025-01-31
     start_date: 2025-01-(31)~
     start_date_truth: inferred
-    end_date: 2025-06-XX
-    end_date_truth: reported
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    end_date: 2025-02-16
+    end_date_truth: verified
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
     table_note: Start date guessed from system access. No longer in govt on 6/27
 
 - id: OPM-14
@@ -584,11 +608,13 @@
     agency: OPM
     sort_date: 2025-02-07
     start_date: 2025-02-(07)~
-    end_date: 2025-06-XX
-    end_date_truth: reported
+    end_date: 2025-06-06
+    end_date_truth: verified
     start_date_truth: inferred
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
-    table_note: Start date guessed from system access. No longer in govt on 6/27
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
+    table_note: Start date guessed from system access.
 
 - id: OPM-15
   agency: OPM
@@ -604,10 +630,13 @@
     sort_date: 2025-02-07
     start_date: 2025-02-(07)~
     start_date_truth: inferred
-    end_date: 2025-06-XX
-    end_date_truth: reported
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
-    table_note: Start date guessed from system access. No longer in govt on 6/27
+    end_date: 2025-03-05
+    end_date_truth: verified
+    end_type: resigned
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
+    table_note: Start date guessed from system access.
 
 - id: OPM-16
   name: Jacob Altik
@@ -632,9 +661,12 @@
     sort_date: 2025-01-31
     start_date: 2025-01-(31)~
     start_date_truth: inferred
-    end_date: 2025-06-XX
+    end_date: 2025-06-27
+    end_type: resigned
     end_date_truth: reported
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
     table_note: Start date guessed from system access. No longer in govt on 6/27
 
 - id: OPM-17
@@ -653,9 +685,12 @@
     sort_date: 2025-01-31
     start_date: 2025-01-(31)~
     start_date_truth: inferred
-    end_date: 2025-06-XX
-    end_date_truth: reported
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    end_date: 2025-06-06
+    end_date_truth: verified
+    end_type: resigned
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
     table_note: Start date guessed from system access. No longer in govt 6/27
 
 - id: OPM-18
@@ -665,6 +700,7 @@
   - >-
     Granted accces to STAMP on 2/3 (only Charles Ezell and Amanda Scales were also granted access to that)
   - Based on who we know started, likely either Joanna Wischer or Jacob Altik
+  - Stated still at agency on 12/5, so not Jacob Altik
   positions:
   - id: opm-employee-18
     type: unknown

@@ -199,19 +199,23 @@ end %}
 %}
 
 {% macro 'person_icon' do |person|
-    case person.category
-    when 'booster'
-      'fa-megaphone'
-    when 'leadership'
-      'fa-briefcase'
-    when 'enabler'
-      'fa-door-open'
-    when 'support'
-      'fa-chair-office'
-    when 'wrecker'
-      'fa-bomb'
-    else
+    if person.nil?
       'fa-circle-question'
+    else
+        case person.category
+        when 'booster'
+        'fa-megaphone'
+        when 'leadership'
+        'fa-briefcase'
+        when 'enabler'
+        'fa-door-open'
+        when 'support'
+        'fa-chair-office'
+        when 'wrecker'
+        'fa-bomb'
+        else
+        'fa-circle-question'
+        end
     end
   end
 %}
