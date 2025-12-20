@@ -508,6 +508,7 @@
 
 - id: OPM-10
   agency: OPM
+  name: Austin Raynor
   evidence:
   - Granted access to USA Performance on 1/31
   - >-
@@ -516,16 +517,23 @@
   - >-
     Government stated still working at OPM on 12/5. This would eliminate Christopher Stanley and Chris
     Young.
-  - Leaning towards this being Austin Raynor, but need more confirmation.
+  - >-
+    ["OPM-10 is a lawyer associated with DOGE. He was appointed on January 30 as a Senior Advisor in the
+    OPM Office of the Director"](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.177.0.pdf)
+  - Austin Raynor is a lawyer and Justin Monroe is not so it's Austin Raynor
   positions:
   - id: opm-employee-10
-    type: unknown
+    type: appointed
     agency: OPM
-    sort_date: 2025-01-31
-    start_date: 2025-01-(31)~
+    start_date: 2025-01-30
     start_date_truth: inferred
+    title: Senior Advisor
+    office: Office of the Director
     table_note: Start date guessed from system access
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    same_as: opm-austin-raynor
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.177.0.pdf
 
 - id: OPM-11
   agency: OPM
@@ -581,13 +589,12 @@
   - >-
     [Govt reports left position on 2025-02-16](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf)
   - That would rule out Edward Coristine. Chris Young likely OPM-14
+  - Austin Raynor is mentiond as DOGE General Counsel in June report but also Justin Monroe
   - >-
-    Austin Raynor is mentiond as DOGE General Counsel in June report, but could still be working for DOGE
-    and not at OPM
-  - Leaning towards this being Justin Monroe (but need more confirmation)
+    Identified OPM-10 as Austin Raynor, so this is either Justin Monroe or Christopher Stanley by elimination
   positions:
   - id: opm-employee-13
-    type: unknown
+    type: appointed
     agency: OPM
     sort_date: 2025-01-31
     start_date: 2025-01-(31)~
@@ -691,7 +698,7 @@
   - >-
     [Govt reports left position on 2025-06-06](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf)
   - Austin Raynor was named as a DOGE Counsel in an August news report, so can't have left in June.
-  - This leaves Chrisopher Stanley and Justin Monroe.
+  - This leaves Christopher Stanley and Justin Monroe.
   positions:
   - id: opm-employee-17
     type: unknown
@@ -726,7 +733,7 @@
     also left govt service
   - >-
     Could be either Noah Peters or Joanna Wischer; Joanna Wischer is now at an OMB position, but could
-    still be in OPM
+    still technically be in OPM, but leaning towards Noah Peters
   positions:
   - id: opm-employee-18
     type: unknown
