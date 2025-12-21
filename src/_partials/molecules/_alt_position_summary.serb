@@ -4,7 +4,7 @@
 {% macro 'hire_details' do |pos|
     hire_details = [
       pos.sge ? "<abbr title=\"Special Government Employee\">SGE</abbr>" : nil,
-      pos.nte_date ? "<abbr title=\"not to exceed\">NTE</abbr> #{pos.nte_date}" : nil,
+      pos.nte_date ? "<abbr title=\"not to exceed\">NTE</abbr> <span class=\"my-date\">#{EdtfFormat.new(pos.nte_date, :compact_year)}</span>" : nil,
       pos.pay_grade,
       pos.excepted ? 'excepted' : nil ,
       pos.salary == "$0" ? "volunteer" : nil ,

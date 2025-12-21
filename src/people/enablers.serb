@@ -33,7 +33,7 @@ In one of its more novel tactics, the Trump Administration has repeatedly used a
     <td class="align-top">{{ person_link(pos.name) }}</td>
     <td class="align-top">{{ agency_link(pos.agency_id)}}</td>
     <td class="align-top">{{ pos.title }}</td>
-    <td class="align-top">{{ render EdtfFormat.new(pos.start_date, :compact) }}{% if pos.end_date %} - {{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}</td>
+    <td class="align-top my-date">{{ render EdtfFormat.new(pos.start_date, :compact_year) }}{% if pos.end_date %} - {{ render EdtfFormat.new(pos.end_date, :compact_year) }}{% end %}</td>
   </tr>
 {% end %}
 </tbody>

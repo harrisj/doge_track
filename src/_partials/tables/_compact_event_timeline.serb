@@ -11,7 +11,6 @@ show_directories = true if show_directories.nil?
 {% events = events.sort_by! {|e| e.sort_date} %}
 {% prior_row_date = Date.edtf!(events[0].date)-1 %}
 
-{%@ 'atoms/legend_header' %}
 <table class="my-table-style mb-0 mt-0">
   <thead>
     <tr>
@@ -30,7 +29,7 @@ show_directories = true if show_directories.nil?
     <tr class="font-sans" id="{{ event.id }}">
     {% prior_row_date = parsed_date %}
       <td class="align-top border-base-300">
-        {{ render EdtfFormat.new(event.date, :compact) }} {{ event.agencies | agency_links }}
+        <span class="my-date">{{ render EdtfFormat.new(event.date, :compact_year) }} {{ event.agencies | agency_links }}</span>
       </td>
       <td class="align-top">
         <div class="font-sans">

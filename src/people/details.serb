@@ -27,19 +27,19 @@ As the table below shows, there are still many details we don't know about DOGE'
     <tr>
       <th class="w-4/16 md:w-3/16 lg:w-2/16">Agency</th>
       <th class="w-12/16 md:w-3/16 lg:w-2/16">Name</th>
-      <th class="w-auto hide-cell-mobile md:w-3/16 lg:w-3/16">Dates</th>
-      <th class="w-auto hide-cell-mobile md:w-7/16 lg:w-9/16">Notes</th>
+      <th class="w-auto hide-cell-mobile md:w-4/16 lg:w-3/16">Dates</th>
+      <th class="w-auto hide-cell-mobile md:w-6/16 lg:w-9/16">Notes</th>
     </tr>
   </thead>
   <tbody>
     {% details.each do |detail| %}
     <tr>
         <td class="align-top">{% if detail.from_agency %}{{ agency_link(detail.from_agency_id, detail.from_agency.short_name) }}{% if detail.from_truth == 'guessed' %}?{% end %} <i class="fa-sharp fa-solid fa-right"></i> {% end %}{{ agency_link(detail.agency_id, detail.agency.short_name) }}
-            <div class="only-mobile">{{ render EdtfFormat.new(detail.start_date, :compact_year) }} – <span class="text-nowrap">{% if detail.end_date %}{{ render EdtfFormat.new(detail.end_date, :compact_year) }}{% elsif detail.person&.govt_exit_date %} bef. {{ render EdtfFormat.new(detail.person.govt_exit_date, :compact_year) }}{% elsif detail.nte_date %}<abbr title="Not to Exceed">NTE</abbr> {{ render EdtfFormat.new(detail.nte_date, :compact_year) }}{% end %}</span></div>
+            <div class="only-mobile my-date">{{ render EdtfFormat.new(detail.start_date, :compact_year) }}–<span class="text-nowrap">{% if detail.end_date %}{{ render EdtfFormat.new(detail.end_date, :compact_year) }}{% elsif detail.person&.govt_exit_date %} bef. {{ render EdtfFormat.new(detail.person.govt_exit_date, :compact_year) }}{% elsif detail.nte_date %}<abbr title="Not to Exceed">NTE</abbr> {{ render EdtfFormat.new(detail.nte_date, :compact_year) }}{% end %}</span></div>
         </td>
         <td class="align-top">{% if detail.person %}{{ person_link(detail.person) }}{% else %}{{ alias_link(detail.doge_alias_id) }}{% end %}
         <div class="only-mobile">{% if detail.mou %}<a href="{{ detail.mou }}">MOU</a>{% end %} {% if detail.table_note %}<em>{{ detail.table_note | md | strip_p }}</em>{% end %}</div></td>
-        <td class="align-top hide-cell-mobile"><span class="text-nowrap">{{ render EdtfFormat.new(detail.start_date, :compact_year) }} – {% if detail.end_date %}{{ render EdtfFormat.new(detail.end_date, :compact_year) }}{% elsif detail.person&.govt_exit_date %}exit {{ render EdtfFormat.new(detail.person.govt_exit_date, :compact_year) }}{% elsif detail.nte_date %}<abbr title="Not to Exceed">NTE</abbr> {{ render EdtfFormat.new(detail.nte_date, :compact_year) }}{% end %}</span></td>
+        <td class="align-top hide-cell-mobile my-date"><span class="text-nowrap">{{ render EdtfFormat.new(detail.start_date, :compact_year) }}–{% if detail.end_date %}{{ render EdtfFormat.new(detail.end_date, :compact_year) }}{% elsif detail.person&.govt_exit_date %}exit {{ render EdtfFormat.new(detail.person.govt_exit_date, :compact_year) }}{% elsif detail.nte_date %}<abbr title="Not to Exceed">NTE</abbr> {{ render EdtfFormat.new(detail.nte_date, :compact_year) }}{% end %}</span></td>
         <td class="align-top hide-cell-mobile">{% if detail.mou %}<a href="{{ detail.mou }}">MOU</a>{% end %} {% if detail.table_note %}<em>{{ detail.table_note | md | strip_p }}</em>{% end %}</td>
     </tr>
     {% end %}

@@ -75,7 +75,7 @@ There are also a fair number of Wreckers who started at other agencies, possibly
       <td class="align-top">{{ agency_link(person.start_agency) }}</td>
       <td class="align-top">{{ person_link(person.name) }}</td>
       <td class="align-top hidden sm:table-cell">{{ person.age }}</td>
-      <td class="align-top"><nobr>{{ render EdtfFormat.new(person.start_date, :compact, :filled) }}</nobr></td>
+      <td class="align-top my-date"><nobr>{{ render EdtfFormat.new(person.start_date, :compact_year, :filled) }}</nobr></td>
       <td class="align-top hidden md:table-cell">{{ person_skill(person) }}</td>
       <td class="align-top">{% if details.any? %}{{ details | map: ->p {p.agency} | compact | uniq | agency_links }}{% end %}</td>
     </tr>

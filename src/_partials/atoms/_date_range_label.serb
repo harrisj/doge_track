@@ -1,2 +1,2 @@
 {% always_dash = false if always_dash.nil? %}
-{% if first || last %}<span class="md:text-nowrap">{{ render EdtfFormat.new(first, :compact, :none) }}{% if always_dash || last %}-{% end %}{%if last %}{{ render EdtfFormat.new(last, :compact) }}{% end %}</span>{% end %}
+{% if first || last %}<span class="md:text-nowrap my-date">{{ render EdtfFormat.new(first, :compact_year, :none) }}{% if always_dash || last %}-{% end %}{%if last %}{{ render EdtfFormat.new(last, :compact_year) }}{% end %}</span>{% end %}

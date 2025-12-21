@@ -84,6 +84,10 @@ layer(base);
         @apply prose prose-sm prose-a:font-semibold prose-a:link-hover md:prose-base max-w-none prose-li:m-[0.1em] dark:prose-invert prose-h2:mt-1 prose-h2:mb-0.5 prose-h3:mt-1 prose-h3:mb-0.5 leading-tight;
     }
 
+    .my-date {
+        @apply font-mono;
+    }
+
     .my-emphasis {
         @apply font-semibold text-base-content/75;
     }

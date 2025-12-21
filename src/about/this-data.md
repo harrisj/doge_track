@@ -69,9 +69,9 @@ There are multiple different tools in many languages for creating statically gen
 {% dated_positions.sort_by(&:sort_date).each do |pos| %}
   <tr class="font-sans" id="{{ pos.id }}">
     <td class="align-top">{%@ 'atoms/position_move_label', position: pos %}
-    <div class="sm:hidden">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% end %}</div>
+    <div class="sm:hidden my-date">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% end %}</div>
     </td>
-    <td class="align-top hidden sm:table-cell">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% end %}</td>
+    <td class="align-top hidden sm:table-cell my-date">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% end %}</td>
     <td class="align-top">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.doge_alias_id %}{{ alias_link(pos.doge_alias_id) }}{% end %}</td>
     <td class="align-top">{%@ 'molecules/position_summary', position: pos %}</td>
   </tr>

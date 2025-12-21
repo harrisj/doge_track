@@ -1,4 +1,4 @@
-{%@ 'atoms/legend_header' %}
+
 <table class="my-table-style">
 <thead>
   <tr>
@@ -30,7 +30,7 @@
         {{ agency_link(role.agency_id) }}:
       {% end %}
       {% if role.name %}{{ person_link(role.name) }}{% elsif role.doge_alias_id %}{{ alias_link(role.doge_alias_id) }}{% end %}
-      {% if role.date_revoked %}({{ render EdtfFormat.new(role.date_granted, :compact) }}-{{ render EdtfFormat.new(role.date_revoked, :compact) }}{% else %}({{ render EdtfFormat.new(role.date_granted, :compact) }}{% end %}{% if role.type != 'read' && role.type != 'unknown' %}, {%@ 'system_access_type', role: role %} access{% end %})</span>
+      {% if role.date_revoked %}(<span class="my-date">{{ render EdtfFormat.new(role.date_granted, :compact_year) }}-{{ render EdtfFormat.new(role.date_revoked, :compact_year) }}</span>{% else %}<span class="my-date">({{ render EdtfFormat.new(role.date_granted, :compact) }}</span>{% end %}{% if role.type != 'read' && role.type != 'unknown' %}, {%@ 'system_access_type', role: role %} access{% end %})</span>
       {% end %}
     </td>
   </tr>

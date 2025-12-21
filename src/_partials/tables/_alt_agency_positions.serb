@@ -34,9 +34,9 @@
             <div>{%@ 'atoms/agency_position_move_label', position: pos, agency: agency %}{% if pos.start_date %} {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}{% else %} <em>date unknown</em>{% end %} {%@ 'molecules/alt_position_summary', position: pos, agency: agency %}</div>
           {% end %}
           {% if person&.govt_exit_date %}
-          <div class="font-semibold"><span class="text-base-content/75"><i class="fa-sharp fa-solid fa-left-from-bracket"></i> Left govt</span> {{ render EdtfFormat.new(person.govt_exit_date, :compact, :none) }}</div>
+          <div class="font-semibold"><span class="text-base-content/75"><i class="fa-sharp fa-solid fa-left-from-bracket"></i> Left govt</span> <span class="my-date">{{ render EdtfFormat.new(person.govt_exit_date, :compact_year, :none) }}</span></div>
           {% elsif last_position && last_position.end_date =~ /^\d{4}-\d{2}-\d{2}$/ %}
-          <div><i class="my-emphasis fa-sharp fa-solid fa-left-from-bracket"></i> {{ position_end_type(last_position) | raw }} {{ render EdtfFormat.new(last_position.end_date, :compact, :none) }}</div>
+          <div><i class="my-emphasis fa-sharp fa-solid fa-left-from-bracket"></i> {{ position_end_type(last_position) | raw }} <span class="my-date">{{ render EdtfFormat.new(last_position.end_date, :compact_year, :none) }}</span></div>
           {% end %}
           </div>
         </td>

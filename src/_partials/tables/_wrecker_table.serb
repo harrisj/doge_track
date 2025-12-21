@@ -18,7 +18,7 @@
       <td class="align-top">{{ agency_link(person.start_agency) }}</td>
       <td class="align-top">{{ person_link(person.name) }}</td>
       <td class="align-top hidden sm:table-cell">{{ person.age }}</td>
-      <td class="align-top">{{ render EdtfFormat.new(person.start_date, :compact, :filled) }}</td>
+      <td class="align-top"><span class="my-date">{{ render EdtfFormat.new(person.start_date, :compact_year, :filled) }}</span></td>
       <td class="align-top hidden md:table-cell">{{ person_skill(person) }}</td>
       <td class="align-top">{{ details | agencies | uniq | agency_links }}</td>
     </tr>

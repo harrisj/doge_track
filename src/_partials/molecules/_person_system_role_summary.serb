@@ -5,7 +5,7 @@
 <span class="italic">{{ role.govt_system.description | md | strip_p }}</span>
 <br/>
 {%@ 'system_access_type', role: role %} access
-{% if role.date_last_used %} (last access {{ render EdtfFormat.new(role.date_last_used, :compact) }}){% end %}
+{% if role.date_last_used %} (last access <span class="my-date">{{ render EdtfFormat.new(role.date_last_used, :compact_year) }})</span>{% end %}
 {% if role.never_accessed %} (never accessed){% end %}
 {% if role.ao_type %} granted by {{ ao_type_display(role) }}{% end %}
 {% if role.ao_doge && role.ao_name %} {{ person_link(role.ao_name) }}{% end %}
