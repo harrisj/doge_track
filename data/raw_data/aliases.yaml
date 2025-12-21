@@ -685,7 +685,6 @@
     type: unknown
     agency: OPM
     same_as: opm-jacob-altik
-    sort_date: 2025-01-31
     start_date: 2025-01-(31)~
     start_date_truth: inferred
     end_date: 2025-06-27
@@ -727,6 +726,7 @@
   agency: OPM
   evidence:
   - Granted access to USA Performance on 1/24
+  - Court declaration states was appointed Senior Advisor in Office of the Director on 1/20
   - >-
     Granted accces to STAMP on 2/3 (only Charles Ezell and Amanda Scales were also granted access to that)
   - >-
@@ -745,11 +745,16 @@
     still technically be in OPM, but leaning towards Noah Peters
   positions:
   - id: opm-employee-18
-    type: unknown
+    type: appointed
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
+    title: Senior Advisor
+    title_type: advisor
+    office: Office of the Director
     table_note: Start date guessed from system access
+    source: >-
+      https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.177.0_2.pdf
 
 - id: PeaceCorps-02
   agency: PeaceCorps
