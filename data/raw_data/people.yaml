@@ -30,8 +30,13 @@
     start_date: 2025-02-XX
     start_date_truth: reported
     table_note: start date unknown but ProPublica says "early February"
-    source: >-
+    office: Office of the Secretary of Transportation
+    salary: "$185,000"
+    source:
+    - >-
       https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2025/03/26/doge-assembles-a-legal-army-00251903
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: DOT
 
 - name: Justin Aimonetti
@@ -51,19 +56,23 @@
   govt_exit_type: resigned
   positions:
   - id: doge-aimonetti
-    agency: DOGE
+    agency: GSA
     type: appointed
     start_date: 2025-02-XX
     start_date_truth: reported
     end_date: 2025-07-30
     end_date_truth: verified
     end_type: resigned
+    office: Office of the General Counsel
+    salary: "$167,503"
     fuzz: Report just says started sometime in February, end date from own LinkedIn
     table_note: start date reported as "some point in February"
     source:
     - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
     - >-
       https://www.linkedin.com/posts/justin-aimonetti-16a50875_today-marks-the-end-of-a-chapter-an-unforgettable-activity-7356503593681670145-SO7T
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Baris Akis
   slug: baris-akis
@@ -113,18 +122,21 @@
     title: Senior Advisor to the Director
     title_type: advisor
     pay_grade: GS-15
-    table_note: Salary range is for a GS-15 in DC
-    salary: "$167,603 - $195,200"
+    salary: "$195,200"
     series: '0301'
     supervisory: false
     office: Office of the Director
-    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     same_as: opm-jacob-altik
     name: Jacob Altik
     alias: OPM-16
     end_date: 2025-06-XX
     end_date_truth: reported
     end_type: resigned
+    table_note: Start date guessed from system access. No longer in govt on 6/27
   - id: detail-opm-usadf-altik
     type: detailed
     from: OPM
@@ -198,7 +210,10 @@
     end_date: 2025-04-(30)~
     end_date_truth: reported
     table_note: reportedly left OPM in April, but as at FDIC on 4/10, so maybe end of month
-    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     description: Exc Appt NTE
     appt_type_code: 48
     appt_type: Other
@@ -207,6 +222,7 @@
     title: Expert
     title_type: advisor
     pay_grade: ED-00
+    salary: "$0"
     series: '0301'
     supervisory: false
     office: Office of the Director
@@ -307,7 +323,11 @@
     agency: OMB
     start_date: 2025-01-27
     start_date_truth: verified
-    source: https://www.nextgov.com/people/2025/01/gregory-barbacia-named-federal-cio/402501/
+    salary: "$195,200"
+    source:
+    - https://www.nextgov.com/people/2025/01/gregory-barbacia-named-federal-cio/402501/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: usaid-cio-barbaccia
     type: appointed
     title: Acting Chief Information Officer
@@ -433,9 +453,13 @@
     from: DOGE
     from_truth: verified
     agency: Education
+    salary: "$0"
     comment: Details just provided in court testimony
     table_note: info from a govt legal filing
-    source: https://www.documentcloud.org/documents/26028798-doge-staff-education-20250407/
+    source:
+    - https://www.documentcloud.org/documents/26028798-doge-staff-education-20250407/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Riccardo Biasini
   sort_name: Biasini
@@ -601,11 +625,16 @@
   - id: energy-blake
     type: unknown
     agency: Energy
-    sort_date: 2025-06-15
+    sort_date: 2025-03-15
+    start_date: 2025-03-XX
     table_note: Detailed from Energy to NRC, so assuming start there
+    salary: "$167,603"
+    pay_grade: GS-15
     source:
     - >-
       https://thehill.com/policy/energy-environment/5397152-doge-staffer-trump-reforms-nrc-nuclear-regulatory-commission/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-energy-nrc-blake
     type: detailed
     agency: NRC
@@ -786,8 +815,13 @@
     start_date: 2025-02-XX
     sort_date: 2025-02-16
     start_date_truth: reported
+    salary: "$167,603"
+    pay_grade: GS-15
     fuzz: Just listed in March as someone on the GSA payroll
-    source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
+    source:
+    - https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: eop-boizelle
     type: appointed
     agency: EOP
@@ -984,11 +1018,14 @@
     start_date_truth: reported
     end_date: 2025-08-06
     end_type: resigned
-    salary: "$120,500"
+    salary: "$120,509"
     comment: >-
       Introduces Frank Schuler on a video call at GSA in February; listed in ProPublica roundup on Feb
       05; going to assume Monday start
-    source: https://www.wired.com/story/doge-government-salaries-elon-musk/
+    source:
+    - https://www.wired.com/story/doge-government-salaries-elon-musk/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-gsa-usadf-cavanaugh
     type: detailed
     from: GSA
@@ -1152,14 +1189,18 @@
     type: appointed
     title: Senior Advisor
     title_type: advisor
-    sort_date: 2025-05-15
-    start_date: 2025-05-XX
+    sort_date: 2025-03-15
+    start_date: 2025-03-XX
     start_date_truth: guessed
     table_note: Date guessed based on reporting from ProPublica and 404 Media on ai.gov
+    salary: "$167,603"
+    pay_grade: GS-15
     source:
     - https://projects.propublica.org/elon-musk-doge-tracker/
     - https://www.404media.co/github-is-leaking-trumps-plans-to-accelerate-ai-across-government/
     - https://www.linkedin.com/in/alisonchilds/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     office: Technology Transformation Services
 
 - name: Yat Choi
@@ -1239,7 +1280,12 @@
     agency: EPA
     start_date: 2025-05-02
     start_date_truth: verified
-    source: https://www.nytimes.com/2025/06/07/us/politics/trump-musk-doge-interior-epa.html
+    salary: "$167,603"
+    pay_grade: GS-15
+    source:
+    - https://www.nytimes.com/2025/06/07/us/politics/trump-musk-doge-interior-epa.html
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Michael Cole
   sort_name: Cole
@@ -1259,11 +1305,15 @@
     start_date_truth: verified
     end_date: 2025-08-XX
     end_date_truth: reported
+    office: Office of the Secretary of Agriculture
     table_note: LinkedIn profile reports August departure
+    salary: "$170,000"
     source:
     - >-
       https://www.documentcloud.org/documents/25963272-cole-michael-appointees-2025-new-entrant-278-2025-2025-04-03/
     - https://www.linkedin.com/in/michael-cole-714288b9/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Miles Collins
   sort_name: Collins
@@ -1304,6 +1354,8 @@
     source:
     - https://www.documentcloud.org/documents/26028806-onboard-dol-miles-collins/
     - https://www.linkedin.com/in/milesbcollins
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: DOL
 
 - name: George Cooper
@@ -1582,9 +1634,14 @@
   - id: nasa-coulter
     type: appointed
     agency: NASA
-    start_date: 2025-01-XX
+    start_date: 2025-02-XX
+    sort_date: 2025-02-01
     start_date_truth: inferred
-    table_note: Missing details, but Scott Coulter started at NASA and was detailed to SSA.
+    salary: "$120,579"
+    table_note: Missing details
+    source:
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-nasa-ssa-employee-2
     type: detailed
     from: NASA
@@ -1658,11 +1715,14 @@
     pay_grade: ES-00
     series: '0301'
     supervisory: true
+    salary: "$195,200"
     office: Office of the Director
     comment: Sourced from a FOIA document
     source:
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     - https://www.linkedin.com/in/clayton-c-8442b4180/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-opm-usaid-cromer
     type: detailed
     agency: USAID
@@ -1694,7 +1754,8 @@
     I don't have much info on this person yet, but they were named as being a Special Advisor at the SBA,
     which was a title also assigned to known DOGE member Aram Moghaddassi. His background does seem to
     be as a field organizer for the Trump campaign, so while he matches the "young, eager, doesn't ask
-    questions" DOGE demographic, he probably isn't writing code.
+    questions" DOGE demographic, he probably isn't writing code, especially since he hasn't been granted
+    the maximum salary and grade like most DOGE operatives.
   positions:
   - id: sba-damiano
     type: unknown
@@ -1703,10 +1764,13 @@
     sort_date: 2025-01-20
     start_date_truth: inferred
     title: Special Advisor
+    salary: "$69,923"
     title_type: advisor
     source:
     - https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
     - https://www.signalhire.com/profiles/ethan-damiano/224958028
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Steve Davis
   sort_name: Davis
@@ -1764,11 +1828,15 @@
     title: Expert
     title_type: advisor
     pay_grade: ED-00
+    salary: "$0"
     series: '0301'
     supervisory: false
     office: Office of the Director
     comment: Sources from a FOIA document
-    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Leland Dudek
   slug: leland-dudek
@@ -2016,14 +2084,17 @@
   - id: gsa-elvy
     agency: GSA
     type: appointed
-    sort_date: 2025-04-15
-    start_date: 2025-04-XX
+    sort_date: 2025-03-15
+    start_date: 2025-03-XX
     start_date_truth: guessed
     table_note: Date sourced from LinkedIn
+    salary: "$167,603"
     source:
     - https://projects.propublica.org/elon-musk-doge-tracker/
     - https://www.404media.co/github-is-leaking-trumps-plans-to-accelerate-ai-across-government/
     - https://www.linkedin.com/in/beeelvy/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     office: Technology Transformation Services
 
 - name: Charles Ezell
@@ -2418,8 +2489,12 @@
     agency: GSA
     sort_date: 2025-02-20
     start_date: 2025-03-XX
+    salary: "$167,603"
     table_note: No idea on GSA start but before 3/13
     comment: No details, but just guessing
+    office: Immediate Office of the Administrator
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-neh-justin-fox
     type: detailed
     agency: NEH
@@ -2591,10 +2666,13 @@
     pay_grade: ED-00
     series: '0301'
     supervisory: false
+    salary: "$0"
     office: Office of the Director
     comment: Sourced from a FOIAed document
     source:
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: nds-gebbia
     agency: NDS
     type: appointed
@@ -2621,11 +2699,14 @@
   positions:
   - id: gsa-geissler
     type: appointed
-    start_date: 2025-02-XX
+    start_date: 2025-01-XX
     start_date_truth: inferred
-    sort_date: 2025-02-01
+    sort_date: 2025-01-20
+    salary: "$0"
     agency: GSA
-    table_note: Assuming early Feb start from appear at DOL, being in Riley Sennott's calendar
+    office: Immediate Officer of the Administrator
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: dol-derek-geissler
     type: detailed
     sort_date: 2025-02-13
@@ -2683,8 +2764,12 @@
     title_type: advisor
     start_date: 2025-02-XX
     start_date_truth: verified
+    salary: "$195,200"
     table_note: Start month sourced from her LinkedIn
-    source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+    source:
+    - https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Brady Glantz
   sort_name: Glantz
@@ -2781,8 +2866,12 @@
     title_type: advisor
     start_date: 2025-03-04
     start_date_truth: verified
+    salary: "$0"
     comment: All I have is her SF-61
-    source: https://www.documentcloud.org/documents/26028802-onboard-hhs-amy-gleason/
+    source:
+    - https://www.documentcloud.org/documents/26028802-onboard-hhs-amy-gleason/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Mike Gonzalez
   sort_name: Gonzalez
@@ -2843,6 +2932,7 @@
     end_date: 2025-07-XX
     end_date_truth: verified
     end_type: resigned
+    salary: "$195,200"
     table_note: Reported to have resigned on 4/18, but LinkedIN reports working into July
     title: Chief Information Officer
     title_type: cio
@@ -2851,6 +2941,8 @@
     - https://www.nextgov.com/people/2025/03/energy-appoints-twitter-google-alum-new-cio/403717/
     - https://www.meritalk.com/articles/energy-department-cio-graber-resigns-sources-say/
     - https://www.linkedin.com/in/rgsec/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: nnsa-graber
     type: appointed
     agency: NNSA
@@ -2926,8 +3018,12 @@
     start_date_truth: verified
     title: Senior Advisor
     title_type: advisor
+    salary: "$167,603"
     agency: Commerce
-    source: https://www.documentcloud.org/documents/25969697-grimes-michael-d-278e278t-2025/
+    source:
+    - https://www.documentcloud.org/documents/25969697-grimes-michael-d-278e278t-2025/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Josh Gruenbaum
   sort_name: Gruenbaum
@@ -2947,9 +3043,13 @@
     start_date_truth: verified
     type: appointed
     agency: GSA
+    salary: "$183,100"
     title: Federal Acquisition Service Commissioner
     title_type: dept_head
-    source: https://www.nextgov.com/people/2025/01/gsa-announces-new-fas-tts-leadership/402485/
+    source:
+    - https://www.nextgov.com/people/2025/01/gsa-announces-new-fas-tts-leadership/402485/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     supervisory: true
 
 - name: Gavin Hamrick
@@ -2985,8 +3085,12 @@
     type: appointed
     start_date: 2025-02-XX
     start_date_truth: reported
+    salary: "$167,603"
     fuzz: Report just says started sometime in February
-    source: https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
+    source:
+    - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: DOGE
 
 - name: Christina Hanna
@@ -3013,6 +3117,7 @@
     appt_type: Other
     excepted: true
     pd_code: 6A39735
+    salary: "$0"
     title: Expert
     title_type: advisor
     pay_grade: ED-00
@@ -3020,7 +3125,10 @@
     supervisory: false
     office: Office of the Director
     comment: Sourced from FOIAed document
-    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Tyler Hassen
   sort_name: Hassen
@@ -3045,11 +3153,14 @@
     end_type: replaced
     replaced_by: doi-hassen-acting
     table_note: FOIA response includes email to him on first day
+    salary: "$142,488"
     agency: DOI
     source:
     - >-
       https://apnews.com/article/hassen-burgum-musk-interior-energy-conflicts-830e9df68c7869e943f96c4b5e384f20
     - https://cdn.muckrock.com/foia_files/2025/04/15/25-4034_Rel_575pgs_Redacted.pdf
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: doi-hassen-acting
     type: promotion
     start_date: 2025-03-07
@@ -3146,13 +3257,17 @@
     A former staffer at the Griffin's Citadel hedge fund, he joined DOGE sometime in April and was assigned
     to a team that is using DOJ databases to assemble information on immigrants.
   positions:
-  - id: doge-hoffman
+  - id: dhs-hoffman
     type: appointed
-    agency: DOGE
+    agency: DHS
     start_date: 2025-03-(19)~
     start_date_truth: reported
-    source: >-
+    salary: "$167,603"
+    source:
+    - >-
       https://news.bgov.com/bloomberg-government-news/musks-doge-hires-ken-griffin-staffer-for-national-security-work
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: doj-hoffman
     type: detailed
     from: DOGE
@@ -3287,7 +3402,11 @@
     comment: Reportedly, has left the government in the wake of Steve Davis and Elon Musk leaving
     office: Office of the Administrator
     supervisory: true
-    source: https://www.wired.com/story/nicole-hollander-top-musk-lieutenant-leaving-doge/
+    salary: "$0"
+    source:
+    - https://www.wired.com/story/nicole-hollander-top-musk-lieutenant-leaving-doge/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: GSA
 
 - name: Stephanie Holmes
@@ -3440,6 +3559,7 @@
     type: detailed
     from: GSA
     from_truth: guessed
+    salary: "$0"
     start_date: 2025-02-12
     start_date_truth: reported
     end_date: 2025-06-XX
@@ -3450,6 +3570,8 @@
     - https://www.eenews.net/articles/doge-lands-at-epa/
     - https://projects.propublica.org/elon-musk-doge-tracker/
     - https://www.notus.org/policy/doge-environmental-protection-agency-mistakes
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: EPA
 
 - name: Thomas Kiernan
@@ -3929,6 +4051,9 @@
     source:
     - https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
     - https://www.linkedin.com/in/scottlangmack/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    salary: "$167,603"
     agency: HUD
   - id: omb-langmack
     agency: OMB
@@ -3961,8 +4086,11 @@
     title: Senior Advisor
     title_type: advisor
     office: Office of the Chief of Staff
-    salary: "$0"
-    source: https://sahillavingia.com/doge
+    salary: "$27,444"
+    source:
+    - https://sahillavingia.com/doge
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: VA
   - id: irs-lavingia
     type: appointed
@@ -3995,9 +4123,12 @@
     agency: GSA
     start_date: 2025-01-20
     start_date_truth: guessed
-    salary: "$167,000"
+    salary: "$167,603"
     comment: I know he started at the GSA before 1/28
-    source: https://www.wired.com/story/doge-government-salaries-elon-musk/
+    source:
+    - https://www.wired.com/story/doge-government-salaries-elon-musk/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     table_note: salary reported by Wired
   - id: detail-usaid-jeremy-lewin
     type: detailed
@@ -4095,10 +4226,17 @@
   - id: usda-lichtman
     agency: USDA
     type: appointed
+    salary: "$142,488"
     title: Advisor on Government Efficiency
+    start_date: 2025-03-XX
+    start_date_truth: verified
+    sort_date: 2025-03-15
+    office: Office of the Secretary of Agriculture
     source:
     - https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
     - https://www.linkedin.com/in/jeremy-lichtman/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Kendall Lindemann
   sort_name: Lindemann
@@ -4160,6 +4298,7 @@
     start_date_truth: reported
     end_date: 2025-06-XX
     end_date_truth: verified
+    salary: "$0"
     end_type: resigned
     table_note: Reported left EPA on LinkedIn. Likely at EPA from Day one based on NOTUS
     title: Federal Detailee
@@ -4167,6 +4306,8 @@
     - https://www.eenews.net/articles/doge-lands-at-epa/
     - https://www.linkedin.com/in/kathrynarmstrongloving/
     - https://www.notus.org/policy/doge-environmental-protection-agency-mistakes
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: EPA
 
 - name: Matt Luby
@@ -4181,10 +4322,14 @@
   positions:
   - id: doi-luby
     type: unknown
-    start_date: 2025-04-17
+    start_date: 2025-03-XX
     start_date_truth: reported
+    salary: "$142,488"
     comment: Tyler Hassen reported to be working with Matt Luby to scrutinize grants
-    source: https://www.washingtonpost.com/climate-environment/2025/04/21/tyler-hassen-department-of-interior/
+    source:
+    - https://www.washingtonpost.com/climate-environment/2025/04/21/tyler-hassen-department-of-interior/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: DOI
 
 - name: Shaun Maguire
@@ -4221,6 +4366,16 @@
   govt_exit_truth: reported
   govt_exit_type: resigned
   positions:
+  - id: state-makecha
+    agency: State
+    type: appointed
+    start_date: 2025-01-XX
+    start_date_truth: verified
+    sort_date: 2025-01-20
+    salary: "$167,603"
+    table_note: Identified in FOIA as starting at State Dept.
+    source: >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: opm-makecha
     type: appointed
     title: Senior Advisor
@@ -4405,9 +4560,13 @@
     end_type: fired
     agency: State
     title: Director of Foreign Assistance
+    salary: "$195,200"
     title_type: director
-    source: >-
+    source:
+    - >-
       https://www.reuters.com/world/us/trump-official-who-oversaw-closure-usaid-has-left-state-department-wsj-reports-2025-04-13/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: usaid-marocco
     agency: USAID
     type: appointed
@@ -4452,7 +4611,11 @@
     agency: DHS
     start_date: 2025-03-11
     start_date_truth: reported
-    source: https://www.nextgov.com/people/2025/03/dhs-taps-antoine-mccord-top-tech-post/403727/
+    salary: "$195,200"
+    source:
+    - https://www.nextgov.com/people/2025/03/dhs-taps-antoine-mccord-top-tech-post/403727/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Paul McInery
   sort_name: McInery
@@ -4575,8 +4738,12 @@
     end_date: 2025-02-14
     end_date_truth: inferred
     end_type: replaced
+    salary: "$195,200"
     replaced_by: hhs-minor-cio
-    source: https://www.linkedin.com/in/clarkminor/
+    source:
+    - https://www.linkedin.com/in/clarkminor/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: hhs-minor-cio
     type: promotion
     agency: HHS
@@ -4584,6 +4751,8 @@
     title_type: cio
     start_date: 2025-02-14
     start_date_truth: reported
+    salary: "$195,200"
+    table_note: Salary inferred
     source: https://orangeslices.ai/hhs-it-office-recruits-new-chief-from-palantir/
   - id: detail-hhs-nih-minor
     type: internal
@@ -4617,7 +4786,11 @@
     type: unknown
     start_date: 2025-02-10
     start_date_truth: reported
-    source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
+    salary: "$162,682"
+    source:
+    - https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: HUD
 
 - name: Eliezer Mishory
@@ -4677,11 +4850,15 @@
     title: Expert
     title_type: advisor
     pay_grade: ED-00
+    salary: "$0"
     series: '0301'
     supervisory: false
     office: Office of the Director
     comment: Sourced from a FOIAed document
-    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Aram Moghaddassi
   sort_name: Moghaddassi
@@ -4846,10 +5023,14 @@
     title_type: advisor
     pay_grade: ED-00
     series: '0301'
+    salary: "$0"
     supervisory: false
     office: Office of the Director
     comment: Sourced from FOIA documents
-    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-opm-fbi-monroe
     start_date: 2025-01-29
     start_date_truth: reported
@@ -4992,11 +5173,13 @@
     sge: false
     appt_type: Schedule C
     pay_grade: GS-15
-    table_note: Salary range for GS-15 in DC, disclosure
-    salary: "$167,603 - $195,200"
+    salary: "$167,603"
     fuzz: Identity is only revealed in a court filing, using ethics training date for start date
     comment: NYT says he is a Senior Advisor
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: Treasury
   - id: internal-treasury-irs-newnam
     type: internal
@@ -5046,10 +5229,14 @@
     start_date_truth: reported
     title: Senior Advisor, DOGE
     title_type: advisor
+    salary: "$167,603"
     agency: SBA
     comment: Reported in a tweet from the date
     table_note: guessing detail start from system access
-    source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
+    source:
+    - https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-exim-park
     type: detailed
     from: GSA
@@ -5077,9 +5264,14 @@
     start_date_truth: verified
     title: Senior Advisor
     title_type: advisor
+    salary: "$167,603"
+    pay_grade: GS-15
     excepted: true
-    source: >-
+    source:
+    - >-
       https://www.documentcloud.org/documents/25950459-parkhurst-session-matthew-noncareer-ses-and-schedule-cs-new-entrant-278-2025-2025-03-04/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Noah Peters
   sort_name: Peters
@@ -5224,9 +5416,12 @@
     from: DOGE
     from_truth: verified
     type: detailed
+    salary: "$0"
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.5_1.pdf
     - https://www.linkedin.com/in/adam-ramada-b0836869/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     signed_date: 2025-02-12
     nte_date: 2026-07-04
     nte_date_truth: verified
@@ -5301,17 +5496,20 @@
     pd_code: 6A39748
     title: Senior Advisor
     title_type: advisor
-    pay_grade: GS-15
-    table_note: Salary range for GS-15 in DC
-    salary: "$167,603 - $195,200"
+    pay_grade: GS-15/10
+    salary: "$195,200"
     series: '0301'
     supervisory: false
     office: Office of the Director
     comment: From a FOIA document
-    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     same_as: opm-austin-raynor
     name: Austin Raynor
     alias: OPM-10
+    table_note: Start date guessed from system access
 
 - name: Payton Rehling
   sort_name: Rehling
@@ -5415,7 +5613,12 @@
     end_date: 2025-03-07
     end_date_truth: reported
     end_type: resigned
-    source: https://www.nextgov.com/people/2025/03/energy-cio-departs-after-short-tenure/403596/
+    pay_grade: GS-15/10
+    salary: "$195,200"
+    source:
+    - https://www.nextgov.com/people/2025/03/energy-cio-departs-after-short-tenure/403596/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Rachel Riley
   sort_name: Riley
@@ -5442,11 +5645,15 @@
     end_type: resigned
     title: Senior Advisor
     title_type: advisor
+    pay_grade: GS-15/1
+    salary: "$167,603"
     comment: Hiring information given in court filing. Politico reports gone at HHS on 10/30
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     - >-
       https://www.politico.com/news/2025/10/30/doge-holdover-who-pushed-for-deep-cuts-at-hhs-is-headed-to-the-navy-00629729
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: HHS
   - id: internal-hhs-cms-riley
     type: internal
@@ -5505,7 +5712,14 @@
     agency: USDA
     type: appointed
     title: Special Advisor
-    source: https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
+    start_date: 2025-03-XX
+    start_date_truth: verified
+    sort_date: 2025-03-15
+    salary: "$162,672"
+    source:
+    - https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Christopher Roussos
   sort_name: Roussos
@@ -5523,8 +5737,12 @@
   - id: va-roussous
     start_date: 2025-03-25
     start_date_truth: reported
-    type: unknown
-    source: https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
+    type: appointed
+    salary: "$27,444"
+    source:
+    - https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: VA
 
 - name: Marco Rubio
@@ -5603,10 +5821,15 @@
     end_date_truth: reported
     end_type: replaced
     replaced_by: ssa-mike-russo-advisor
+    salary: '195,200'
+    pay_grade: GS-15/10
     comment: Reportedly removed from CIO role for complying quickly with judge's orders to block access
     supervisory: true
-    source: >-
+    source:
+    - >-
       https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: ssa-mike-russo-advisor
     type: demotion
     start_date: 2025-03-25
@@ -5615,6 +5838,7 @@
     end_date_truth: verified
     end_type: replaced
     replaced_by: ssa-mike-russo-co-cio
+    salary: "$195,200"
     title: Senior Advisor
     title_type: advisor
     supervisory: false
@@ -5632,6 +5856,7 @@
     start_date: 2025-09-03
     title: Chief Information Officer (Core Business Functions)
     title_type: cio
+    salary: "$195,200"
     supervisory: true
     source: https://www.ssa.gov/news/en/press/releases/2025-09-03.html
 
@@ -5667,10 +5892,14 @@
     title_type: dept_head
     pay_grade: ES-00
     series: '0301'
+    salary: "$195,200"
     supervisory: true
     office: Office of the Director
     comment: Sourced from a FOIA document
-    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: amanda-scales-demotion
     type: demotion
     agency: OPM
@@ -5683,13 +5912,18 @@
     appt_type: 55-Noncareer (Senior Exec Perm)
     title: Senior Advisor
     title_type: advisor
+    salary: "$195,200"
     pay_grade: ES-00
     series: '0301'
-    table_note: Her LinkedIn profile says she left OPM in March. Assuming it followed her demotion/replacement
+    table_note: >-
+      Her LinkedIn profile says she left OPM in March. Assuming it followed her demotion/replacement,
+      assuming pay stayed same
     office: Office of the Director
     source:
     - https://www.documentcloud.org/documents/26028789-opm-amanda-scales/
     - https://www.linkedin.com/in/amandascales/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Frank Schuler
   sort_name: Schuler
@@ -5710,17 +5944,21 @@
     title: Senior Advisor
     title_type: advisor
     agency: GSA
-    sort_date: 2025-02-18
-    start_date: 2025-02-(18)~
+    sort_date: 2025-01-20
+    start_date: 2025-01-XX
     start_date_truth: reported
     end_date: 2025-07-29
     end_date_truth: reported
     end_type: resigned
+    salary: "$167,603"
+    pay_grade: GS-15/01
     comment: Details from a news article
     source:
     - https://www.propublica.org/article/frank-schuler-gsa-doge-syndicated-conservation-easements-tax-scam
     - >-
       https://www.govexec.com/management/2025/07/doge-and-other-day-one-trump-appointees-head-exits-multiple-agencies/407075/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Kyle Schutt
   sort_name: Schutt
@@ -5846,12 +6084,17 @@
   - id: gsa-sennott
     agency: GSA
     type: appointed
+    salary: "$167,603"
+    pay_grade: GS-15/01
     start_date: 2025-02-12
     start_date_truth: reported
     table_note: >-
       start inferred from [his father's article about his role](https://www.cjr.org/opinion/doge-journalism-ethics-father-son.php)
     comment: Riley Sennott's father reports that he started at GSA nine days after 2025-02-03
-    source: https://www.cjr.org/opinion/doge-journalism-ethics-father-son.php
+    source:
+    - https://www.cjr.org/opinion/doge-journalism-ethics-father-son.php
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-gsa-nasa-sennott
     type: detailed
     from: GSA
@@ -5880,13 +6123,18 @@
     involvement in regulations and oversight over America's fisheries.
   positions:
   - id: noaa-shang-cio
-    start_date: 2025-04-02
+    start_date: 2025-03-(31)~
     start_date_truth: verified
     type: appointed
     title: Senior Advisor
     title_type: advisor
+    salary: "$167,603"
+    pay_grade: GS-15/01
     office: Office of the Administrator
     agency: NOAA
+    source:
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Ethan Shaotran
   sort_name: Shaotran
@@ -6075,8 +6323,12 @@
     office: Technology Transformation Service
     start_date: 2025-01-24
     start_date_truth: reported
-    source: >-
+    salary: "$150,160"
+    source:
+    - >-
       https://federalnewsnetwork.com/people/2025/01/gsas-new-leadership-mostly-comes-from-tech-finance-sectors/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     supervisory: true
   - id: dol-shedd
     type: appointed
@@ -6134,10 +6386,14 @@
     sort_date: 2025-03-01
     end_date: 2025-08-XX
     end_date_truth: reported
+    salary: "$167,603"
+    pay_grade: GS-15/01
     table_note: he was detailed to USPS from GSA, so assuming appointed at GSA but info unknown. Dates
       from LinkedIn
     source:
     - https://www.linkedin.com/in/alexander-simonpour-178a8a121/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-gsa-usps-alex-simonpour
     type: detailed
     from: GSA
@@ -6267,7 +6523,11 @@
     end_type: resigned
     table_note: resigned on 5/23 but returned to State dept in August
     comment: All I have is his signed SF-61
-    source: https://www.documentcloud.org/documents/26028816-onboard-hhs-brad-smith/
+    salary: "$0"
+    source:
+    - https://www.documentcloud.org/documents/26028816-onboard-hhs-brad-smith/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: state-brad-smith
     agency: State
     type: appointed
@@ -6431,10 +6691,14 @@
     title_type: advisor
     pay_grade: ED-00
     series: '0301'
+    salary: "$0"
     supervisory: false
     office: Office of the Director
     comment: Sourced from a FOIAed document
-    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: fhfa-christopher-stanley
     title: Board Member, Fannie Mae/Freddie Mac
     title_type: other
@@ -6479,8 +6743,13 @@
     replaced_by: ssa-steffensen-1
     title: Senior Advisor
     title_type: advisor
+    salary: "$195,200"
+    pay_grade: GS-15/10
     office: Office of the Commissioner
-    source: https://bsky.app/profile/chrisgeidner.bsky.social/post/3lipqblfluc2h
+    source:
+    - https://bsky.app/profile/chrisgeidner.bsky.social/post/3lipqblfluc2h
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: SSA
   - id: ssa-steffensen-1
     type: promotion
@@ -6490,6 +6759,7 @@
     title_type: chief_counsel
     office: Office of the Commissioner
     table_note: promoted within two days of being appointed
+    salary: "$195,200"
     source: https://web-cdn.bsky.app/profile/chrisgeidner.bsky.social/post/3ljb6rufur22e
     agency: SSA
 
@@ -6540,9 +6810,12 @@
     title_type: advisor
     office: Office of the Secretary
     agency: DOT
+    salary: "$195,197"
     source:
     - https://projects.propublica.org/elon-musk-doge-tracker/
     - https://www.linkedin.com/in/brian-stube/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: James Sullivan
   sort_name: Sullivan
@@ -6632,7 +6905,11 @@
     start_date_truth: verified
     type: appointed
     agency: HHS
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+    salary: "$132,629"
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: internal-hhs-cms-terrell
     type: internal
     start_date: 2025-03-11
@@ -6686,6 +6963,7 @@
     end_date: 2025-08-XX
     end_date_truth: reported
     end_type: resigned
+    salary: "$0"
     table_note: >-
       had ethics training with Stephanie Holmes, assuming same start date reported on 7/29 as leaving
       DOI; unclear if leaving DOGE
@@ -6695,6 +6973,8 @@
     - >-
       https://www.govexec.com/management/2025/07/doge-and-other-day-one-trump-appointees-head-exits-multiple-agencies/407075/
     - https://cdn.muckrock.com/foia_files/2025/04/15/25-4034_Rel_575pgs_Redacted.pdf
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: DOI
 
 - name: Alexander Tullman
@@ -6775,8 +7055,13 @@
   - id: va-volpert
     start_date: 2025-03-25
     start_date_truth: reported
-    type: unknown
-    source: https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
+    type: appointed
+    salary: "$167,603"
+    pay_grade: GS-15/01
+    source:
+    - https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: VA
 
 - name: Russell Vought
@@ -6894,10 +7179,13 @@
     start_date: 2025-02-25
     start_date_truth: verified
     fuzz: Identity is only revealed in a court filing, using ethics training date as start for now
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     appt_type: Schedule C
     pay_grade: GS-12
-    salary: "$101,401 - $131,826"
+    salary: "$101,401"
     sge: false
     agency: Treasury
 
@@ -6984,8 +7272,12 @@
     title_type: advisor
     comment: All I have is his SF-61
     start_date: 2025-03-05
+    start_date_truth: verified
+    salary: "$0"
     source:
     - https://www.documentcloud.org/documents/26028811-onboard-cfpb-jordan-wick/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: CFPB
   - id: detail-fcc-wick
     type: detailed
@@ -7061,11 +7353,15 @@
     type: appointed
     start_date: 2025-03-(31)~
     start_date_truth: reported
-    table_note: Start date sourced from LinkedIn post
+    table_note: OMB position as Joanna Miller
     title: Deputy Director
     title_type: dept_head
     office: Made In America
-    source: https://www.linkedin.com/in/joanna-miller-wischer-2b4239205/
+    salary: "$142,488"
+    source:
+    - https://www.linkedin.com/in/joanna-miller-wischer-2b4239205/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
 - name: Marshall Wood
   sort_name: Wood
@@ -7128,7 +7424,11 @@
     type: appointed
     start_date: 2025-02-20
     start_date_truth: verified
-    source: https://www.politico.com/news/2025/02/20/treasury-irs-data-white-house-doge-00205391
+    salary: "$84,601"
+    source:
+    - https://www.politico.com/news/2025/02/20/treasury-irs-data-white-house-doge-00205391
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: Treasury
 
 - name: Chris Young
@@ -7156,9 +7456,13 @@
     pay_grade: ED-00
     series: '0301'
     supervisory: false
+    salary: "$0"
     office: Office of the Director
     comment: Sourced from FOIAed documents
-    source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    source:
+    - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     same_as: opm-chris-young
     sort_date: 2025-02-07
     table_note: Start date guessed from system access
