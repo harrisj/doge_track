@@ -26,11 +26,11 @@ There are multiple places where salary information could be sourced from. In som
     <tbody>
         {% paid_positions.each do |pos| %}
             <tr>
-                <td class="text-left">{{ person_link(pos.name) }}</td>
-                <td class="text-left">{{ agency_link(pos.agency_id) }}</td>
-                <td class="text-left">{{ render EdtfFormat.new(pos.start_date, :compact_year) }} – {{ render EdtfFormat.new(pos.end_date, :compact_year) }}</td>
-                <td class="text-left">{{ pos.salary }}</td>
-                <td class="text-left">{{ pos.pay_grade }}</td>
+                <td class="text-left align-top">{{ person_link(pos.name) }}</td>
+                <td class="text-left align-top">{{ agency_link(pos.agency_id) }}</td>
+                <td class="text-left align-top">{{ render EdtfFormat.new(pos.start_date, :compact_year) }} – {{ render EdtfFormat.new(pos.end_date, :compact_year) }}</td>
+                <td class="text-left align-top">{{ pos.salary }}</td>
+                <td class="text-left align-top">{{ pos.pay_grade }}</td>
             </tr>
         {% end %}
     </tbody>
