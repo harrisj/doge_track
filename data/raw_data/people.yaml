@@ -1608,10 +1608,12 @@
   - id: nds-coristine
     agency: NDS
     type: appointed
-    start_date: 2025-09-XX
+    start_date: 2025-08-(29)?
     start_date_truth: guessed
     fuzz: Self-identified as NDS in November, but likely started earlier
-    source: https://www.wired.com/story/what-is-doge-doing-now/
+    source:
+    - https://www.wired.com/story/what-is-doge-doing-now/
+    - https://www.wired.com/story/doge-operatives-joining-national-design-studio/
 
 - name: Scott Coulter
   sort_name: Coulter
@@ -3883,6 +3885,34 @@
     start_date: 2025-02-(07)~
     start_date_truth: reported
     source: https://www.propublica.org/article/elon-musk-doge-lawyers-supreme-court
+
+- name: Kaitlyn Koller
+  slug: kaitlyn-koller
+  category: support
+  linkedin: https://www.linkedin.com/in/kaitlyn-koller-7792a1228/
+  sort_name: Koller
+  blurb: >-
+    Kaitlyn Koller graduated from Marquette University in 2023 and had been involved in conservative youth
+    political organizations and been an intern for Senator Jim Risch before working with Amy Gleason at
+    USDS. More recently, she has been part of the National Design Studio, likely in a communications or
+    political role.
+  skill: political
+  positions:
+  - id: usds-koller
+    agency: DOGE
+    type: appointed
+    end_date: 2025-08-(26)~
+    end_date_truth: reported
+    source: https://www.wired.com/story/doge-operatives-joining-national-design-studio/
+  - id: nds-koller
+    agency: NDS
+    type: appointed
+    title: Senior Advisor
+    start_date: 2025-08-(26)~
+    start_date_truth: reported
+    source:
+    - https://www.wired.com/story/doge-operatives-joining-national-design-studio/
+    - https://www.notus.org/trump-white-house/silicon-valley-government-websites-national-design-studio
 
 - name: Jon Koval
   sort_name: Koval
@@ -6937,6 +6967,15 @@
     comment: Showed up at the agency to do secondary round of grant reviews. Assuming a detail
     source: https://fedscoop.com/national-science-foundation-nsf-doge-grants-data-systems/
     agency: NSF
+  - id: nds-terrell
+    type: appointed
+    agency: NDS
+    start_date: 2025-08-(29)?
+    start_date_truth: reported
+    source:
+    - https://www.wired.com/story/doge-operatives-joining-national-design-studio/
+    - https://www.notus.org/trump-white-house/silicon-valley-government-websites-national-design-studio
+    table_note: He has been linked to NDS but is still also at HHS?
   - id: hhs-terrell-cto
     type: promotion
     agency: HHS
