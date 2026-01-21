@@ -8244,6 +8244,23 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
     agency: SSA
     id: 5KzocaBU
+  - date: 2025-03-03
+    type: disruption
+    event: >-
+      An unidentified member of the DOGE team at the SSA emailed a password-protected and encrypted file
+      to DHS but also included Steve Davis at DOGE and an unidentified DOGE team member at the Department
+      of Labor (possibly Marko Elez or Aram Moghaddassi who were detailed to SSA from DOL). SSA staff
+      believes it contained sensitive PII of approximately 1000 individuals, but the Chief Information
+      Office has been unable to determine more. Notably, the CIO role for SSA has been held by a rotation
+      of several DOGE staffers since February.
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
+    named:
+    - Steve Davis
+    linked:
+    - Aram Moghaddassi
+    - Marko Elez
+    agency: SSA
+    id: 35aLkwTi
   - date: 2025-03-04
     type: sighting
     event: >-
@@ -8257,6 +8274,17 @@
     agency: SSA
     id: n33reAGA
   - date: 2025-03-07
+    type: access
+    event: >-
+      Starting from this data and continuing until March 17, members of the DOGE team at SSA were using
+      servers at Cloudflare to share SSA data (the exact product is not identified, but it could be the
+      D1 system for SQL databases). Needless to say, Cloudflare is not approved by SSA for storing sensitive
+      data, and SSA staff have been unable to determine what data was shared and if it is still hosted
+      on Cloudflare systems.
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
+    agency: SSA
+    id: 6LbNdKWk
+  - date: 2025-03-07
     type: official
     event: >-
       After political blowback causes SSA to reverse its decision to cancel some contracts for the state
@@ -8265,6 +8293,18 @@
     source: https://www.ssa.gov/news/press/releases/2025/#2025-03-07
     agency: SSA
     id: 62L1c5Ar
+  - date: 2025-03-12
+    type: access
+    event: >-
+      In an inventory of system access on March 12, SSA staff determined the following access had been
+      granted before it was revoked on March 24th. Three DOGE team members had been granted access to
+      a workforce system. Two were granted access to security systems to revoke employee access to systems
+      and facilities. Six DOGE team members were granted access to a workspace to share data among each
+      other. Two DOGE members had access to a data visualization tool which could provide PII. And two
+      DOGE employees were given expanded access to the Enterprise Data Warehouse.
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
+    agency: SSA
+    id: 6EfaSINE
   - date: 2025-03-12
     type: directory
     event: >-
@@ -8377,6 +8417,27 @@
     source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
     agency: SSA
     id: 78mrZQrX
+  - date: 2025-03-24
+    type: disruption
+    event: >-
+      After members of an unidentified political advocacy group contacted two members of the DOGE team
+      at SSA, one of the DOGE members signed a Voter Data Agreement to share data. The group was looking
+      for data to accuse states of fraud to overturn election results. The DOGE team member did not consult
+      SSA lawyers or follow any mandatory clearance procedures for sharing data with outside entities.
+      It is unclear if they sent data, but the two employees were referred for investigation of violating
+      the Hatch Act in December 2025, which forbids government officials from partisan political activities.
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
+    agency: SSA
+    id: 1ddyOe0s
+  - date: 2025-03-24
+    type: access
+    event: >-
+      An unidentified member of the DOGE team at Social Security Administration was running queries against
+      the NUMIDENT data in the Enterprise Data Warehouse the morning on the same day that access was scheduled
+      to be revoked.
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
+    agency: SSA
+    id: pObGc4eJ
   - date: 2025-03-24
     type: access
     event: >-
@@ -8931,6 +8992,19 @@
     source: https://www.nytimes.com/2025/09/24/business/social-security-customer-service.html
     agency: SSA
     id: ZqOdn19C
+  - date: 2026-01-16
+    type: legal
+    event: >-
+      In a filing in _AFL-CIO v. SSA_, the government amended several declarations that had been made
+      in Leland Dudek's testimony on March 24, 2025. For starters, although DOGE access was revoked on
+      that day, a member of DOGE was running queries against PII in the NUMIDENT database up to the moment.
+      Also, the DOGE team at SSA sent encrypted sensitive SSA data to DOGE and the Department of Labor.
+      A member of the DOGE team also signed an agreement to share information with an outside advocacy
+      group without clearing it through proper legal channels.
+    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
+    case_no: 1:25-cv-00596
+    agency: SSA
+    id: DinVXt5J
 
 - name: State Department
   id: State
