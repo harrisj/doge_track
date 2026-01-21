@@ -3806,6 +3806,9 @@
     agency: OPM
     start_date: 2025-02-18
     start_date_truth: verified
+    end_date: 2025-12-XX
+    end_date_truth: reported
+    end_type: resigned
     description: Exc Appt NTE
     appt_type_code: 44
     appt_type: Schedule C
@@ -3822,6 +3825,7 @@
     source:
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     - https://www.documentcloud.org/documents/26028815-onboard-opm-employee-5/
+    - https://www.linkedin.com/in/gavin-kliger-5a339b157/
     name: Gavin Kliger
     alias: OPM-05
   - id: detail-opm-irs-gavin-kliger
@@ -3850,7 +3854,8 @@
     from_truth: verified
     start_date: 2025-03-(01)~
     start_date_truth: reported
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
     table_note: detail in court doc, date from Kliger spotted at VOA around start of March
     name: Gavin Kliger
     alias: OPM-05
@@ -3864,6 +3869,13 @@
     comment: Title is not given, reported as starting "last week" from 2025-04-04
     source: https://www.axios.com/pro/tech-policy/2025/04/04/doge-staffers-move-into-ftc-office
     agency: FTC
+  - id: dod-kliger
+    agency: DOD
+    type: appointed
+    start_date: 2025-12-XX
+    start_date_truth: verified
+    title: Chief Data Officer
+    source: https://www.linkedin.com/in/gavin-kliger-5a339b157/
 
 - name: Keenan Kmiec
   sort_name: Kmiec
