@@ -33,6 +33,8 @@ Person.each do |person|
                   (start_date..iter_end_date).map { |x| x.strftime(key_format) }.uniq.sort
                 end
 
+  puts "#{person.name} #{person_keys}"
+
   person_keys.each do |key|
     totals[key][:count] += 1
   end

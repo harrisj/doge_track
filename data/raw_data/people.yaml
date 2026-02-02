@@ -18,6 +18,7 @@
   - id: usda-abrahamson
     agency: USDA
     type: appointed
+    sort_date: 2025-03-01
     title: Senior Advisor on Government Efficiency
     title_type: advisor
     table_note: Not listed as a detailee, so suggests appointed
@@ -272,17 +273,19 @@
     a contractor at the GSA as a senior engineering manager working with Matthew Markhurst-Session and
     Thomas Shedd.
   positions:
-  - id: gsa-lopez-ballefin
-    agency: GSA
-    type: consultant
-    supervisory: true
-    source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
   - id: sba-lopez-ballefin
     type: unknown
     agency: SBA
     title: Senior Advisor
     title_type: advisor
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+  - id: gsa-lopez-ballefin
+    agency: GSA
+    type: consultant
+    supervisory: true
+    start_date: 2025-05-XX
+    start_date_truth: guessed
+    source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
 
 - name: Ankur Bansal
   sort_name: Bansal
@@ -352,6 +355,8 @@
     type: appointed
     title: Special Advisor
     title_type: advisor
+    start_date: 2025-03-XX
+    start_date_truth: guessed
     source: https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
   - id: usda-berry-sr-advisor
     type: converted
@@ -7120,18 +7125,22 @@
     win. Like Yat Choi, he also appears to be Canadian which would disqualify him from working for the
     federal government, so he has been hired as a contractor instead.
   positions:
+  - id: opm-vilcsak
+    agency: OPM
+    type: consultant
+    sort_date: 2025-08-16
+    table_note: Named as working alongside Airbnb alumni at OPM.
+    source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
   - id: gsa-vilcsak
     agency: GSA
     type: consultant
     table_note: Hired as contractor from MSI Consulting
+    start_date: 2025-08-XX
+    start_date_truth: guessed
+    sort_date: 2025-08-15
     source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
     title: Senior Technologist
     title_type: advisor
-  - id: opm-vilcsak
-    agency: OPM
-    type: consultant
-    table_note: Named as working alongside Airbnb alumni at OPM.
-    source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
 
 - name: Cary Volpert
   sort_name: Volpert
