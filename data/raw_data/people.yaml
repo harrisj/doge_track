@@ -826,6 +826,8 @@
     office: White House Counsel's Office
     start_date: 2025-08-XX
     start_date_truth: reported
+    end_date: 2026-01-XX
+    end_date_truth: verified
     source: https://www.linkedin.com/in/ashley-boizelle-5836643b/
 
 - name: Emily Bryant
@@ -1334,6 +1336,9 @@
     appt_type: Schedule C
     start_date: 2025-02-18
     start_date_truth: verified
+    end_date: 2025-08-XX
+    end_date_truth: verified
+    end_type: resigned
     nte_date: 2025-06-17
     nte_date_truth: verified
     pd_code: '66899121'
@@ -1345,7 +1350,7 @@
     office: Office of the Secretary
     table_note: >-
       Describes self in LinkedIn as DOGE Lead at the agency and reports AI dereg effort and 20% headcount
-      reduction
+      reduction. States he was there for a 6-month appointment.
     source:
     - https://www.documentcloud.org/documents/26028806-onboard-dol-miles-collins/
     - https://www.linkedin.com/in/milesbcollins
@@ -3140,6 +3145,9 @@
     is unknown. At DOI, Hassen has been promoted into increasingly senior roles and responsibilities while
     being shunted into positions that do not require Senate confirmation or for him to address his vast
     conflicts of interest.
+  govt_exit_date: 2025-11-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: doi-hassen
     type: appointed
@@ -3197,10 +3205,14 @@
     type: unknown
     start_date: 2025-09-03
     start_date_truth: reported
-    table_note: Working on layoffs / consolidation
+    end_date: 2025-11-XX
+    end_date_truth: reported
+    end_type: resigned
+    table_note: Working on layoffs / consolidation; LinkedIn reports left in November
     source:
     - https://www.publicdomain.media/p/tyler-hassen-interior-doge-financial-holdings
     - https://www.govexec.com/workforce/2025/09/interior-department-taking-steps-implement-layoffs/408342/
+    - https://www.linkedin.com/in/tyler-hassen-802b4a12/
 
 - name: Jim Hickey
   sort_name: Hickey
@@ -3913,18 +3925,24 @@
   - id: usds-koller
     agency: DOGE
     type: appointed
+    start_date: 2025-03-XX
+    start_date_truth: reported
     end_date: 2025-08-(26)~
     end_date_truth: reported
-    source: https://www.wired.com/story/doge-operatives-joining-national-design-studio/
+    title: Senior Advisor
+    source:
+    - https://www.wired.com/story/doge-operatives-joining-national-design-studio/
+    - https://www.linkedin.com/in/kaitlyn-koller-7792a1228/
   - id: nds-koller
     agency: NDS
     type: appointed
-    title: Senior Advisor
+    title: Director of Operations
     start_date: 2025-08-(26)~
     start_date_truth: reported
     source:
     - https://www.wired.com/story/doge-operatives-joining-national-design-studio/
     - https://www.notus.org/trump-white-house/silicon-valley-government-websites-national-design-studio
+    - https://www.linkedin.com/in/kaitlyn-koller-7792a1228/
 
 - name: Jon Koval
   sort_name: Koval
@@ -4281,6 +4299,9 @@
     He was named as a member of the DOGE team at USDA in response to a FOIA request from American Oversight.
     According to LinkedIn, he has held multiple positions related to shareholder activism and strategic
     investing.
+  govt_exit_date: 2025-12-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: usda-lichtman
     agency: USDA
@@ -4289,6 +4310,9 @@
     title: Advisor on Government Efficiency
     start_date: 2025-03-XX
     start_date_truth: verified
+    end_date: 2025-12-XX
+    end_date_truth: verified
+    end_type: resigned
     sort_date: 2025-03-15
     office: Office of the Secretary of Agriculture
     source:
@@ -6921,18 +6945,26 @@
     to OMB, where his tool is being used to trim regulations at multiple agencies. Christopher Sweet is
     young and inexperienced like many of the DOGE wreckers, and is currently on a break as an undergraduate
     at the University of Chicago.
+  govt_exit_date: 2025-12-XX
+  govt_exit_truth: reported
+  govt_exit_type: resigned
   positions:
   - id: hud-sweet
     type: appointed
     sort_date: 2025-04-10
     start_date: 2025-04-(10)~
     start_date_truth: reported
+    end_date: 2025-12-XX
+    end_date_truth: reported
+    end_type: resigned
     fuzz: Date is unspecified, just sometime earlier in April
     comment: >-
       Scott Langmack sends a message that "I'd like to share with you that Chris Sweet has joined the
       HUD DOGE team with the title of special assistant, although a better title might be 'AI computer
       programming quant analyst'"
-    source: https://www.wired.com/story/doge-college-student-ai-rewrite-regulations-deregulation/
+    source:
+    - https://www.wired.com/story/doge-college-student-ai-rewrite-regulations-deregulation/
+    - https://www.linkedin.com/in/chris16621747214/
     title: Special Assistant
     agency: HUD
 
