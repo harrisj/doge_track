@@ -6,7 +6,12 @@ index_for_search: true
 ---
 {%@ 'atoms/title', title: "Who's Involved in DOGE" %}
 
-This page provides a single overview of everybody who is is my database of DOGE affiliates. To better understand the types of roles I've seen within DOGE, I have sorted them into several distinct categories of my own design. These are demarcated with specific icons in tables and text where convenient:
+DOGE is very difficult to track. The Trump Administration has used every tool at its disposal to make it difficult to see where DOGE has been staffed to a particular agency, whether they direct hires or one of DOGE's [many details](details/) of staff from one agency to go work at another. This page provides a single overview of everybody who is is my database of DOGE affiliates, sourced from news reports and court documents. The chart below of DOGE staffing levels is **grossly inaccurate** – for instance, there are likely dozens of people who have departed DOGE without leaving a public record of their exit. It does however illustrate how DOGE continues to maintain its presence in agencies, despite multiple reports over the last few months of its demise.
+
+<div id="chart"></div>
+<script src="/includes/doge_totals.js"></script>
+
+To better understand the types of roles I've seen within DOGE, I have sorted them into several distinct categories of my own design. These are demarcated with specific icons in tables and text where convenient:
 
 - <i class="fa-sharp fa-solid fa-megaphone"></i> <strong>{{ link_to "Boosters", "/people/leaders/" }}</strong> are people in DOGE's orbit who have helped with recruitment and establishing the organization.
 - <i class="fa-sharp fa-solid fa-door-open"></i> <strong>{{ link_to "Enablers", "/people/enablers/" }}</strong> are staff embedded in agencies who work to open the door for wreckers to come in. They are not always DOGE hires.
@@ -16,7 +21,7 @@ This page provides a single overview of everybody who is is my database of DOGE 
 
 Like any categorization, this is an approximation that provides useful clarity but also masks the messy nuances of reality. I have no idea if DOGE has their own internal categories and how well these map to their own. My categorization also does not account for people changing their roles over time. For instance, {{ person_link("Scott Coulter") }} originally would have been classified as a Wrecker since he was detailed into other agencies like NASA, but I have reclassified him as an Enabler since he was promoted to a Chief Information Officer at Social Security.
 
-Here are the current members of DOGE that I know about
+Here are the current members of DOGE that I know about, listed with their likely start dates if known or when they were first spotted in an agency. If they have exited the government, that date is also presented here. Otherwise, the table reports when they were last explicitly named in a news report or court filing as being present in a government role.
 
 {% people = Person.eager_graph(:positions).order(:sort_name, :sort_date).all %}
 
@@ -42,13 +47,3 @@ Here are the current members of DOGE that I know about
 {% end %}
 </tbody>
 </table>
-
-Finally, a note on some government-specific terms that you might encounter in the tables listing details on DOGE staffing:
-
-- **Detail** is the government term for when an employee (or **detailee**) of one agency goes to work at another agency
-- **Excepted** means that the person was hired on an expedited and limited authority vs. the standard impartial and slow (aka **competitive**) hiring model. Usually, excepted appointments have limitations of a few years, but they allow for greater flexibility in hiring decisions and processes.
-- A **Special Government Employee (SGE)** is someone hired on an extremely short-term basis (less than 180 days), but who, on the other hand,doesn't have to follow the standard government ethics rules.
-- The **General Scale (GS)** is a series of 15 different pay levels (each with 10 steps) that standardize government pay for employees; there also is commonly a **locality adjustment** to reflect the cost of living in the employee's area.
-- Above the GS scale, there is a **Special Executive Service (SES)** series of levels for limited numbers of high-ranking agency staff.
-- Both excepted and SGE roles usually will have a **Not To Exceed (NTE)** date which is the maximum duration a person can be in that role.
-- **Schedule C** is another exemption from the normal civil service hiring rules for political staff in policy roles who are subordinate to other appointees like agency heads.

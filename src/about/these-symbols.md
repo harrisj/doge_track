@@ -50,3 +50,15 @@ Events are also roughly categorized by type to better illustrate the type of eve
     <li><i class="fa-sharp fa-solid fa-receipt"></i> = sources</li>
     <li><i class="fa-sharp fa-solid fa-up-right-from-square"></i> = external link</li>
 </ul>
+
+## Terminology
+
+Finally, a note on some government-specific terms that you might encounter in the tables listing details on DOGE staffing:
+
+- **Detail** is the government term for when an employee (or **detailee**) of one agency goes to work at another agency
+- **Excepted** means that the person was hired on an expedited and limited authority vs. the standard impartial and slow (aka **competitive**) hiring model. Usually, excepted appointments have limitations of a few years, but they allow for greater flexibility in hiring decisions and processes.
+- A **Special Government Employee (SGE)** is someone hired on an extremely short-term basis (less than 180 days), but who, on the other hand,doesn't have to follow the standard government ethics rules.
+- The **General Scale (GS)** is a series of 15 different pay levels (each with 10 steps) that standardize government pay for employees; there also is commonly a **locality adjustment** to reflect the cost of living in the employee's area.
+- Above the GS scale, there is a **Special Executive Service (SES)** series of levels for limited numbers of high-ranking agency staff.
+- Both excepted and SGE roles usually will have a **Not To Exceed (NTE)** date which is the maximum duration a person can be in that role.
+- **Schedule C** is another exemption from the normal civil service hiring rules for political staff in policy roles who are subordinate to other appointees like agency heads.
