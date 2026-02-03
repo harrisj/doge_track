@@ -46,7 +46,7 @@ var options = {
       horizontal: true,
       barHeight: '95%',
       dataLabels: {
-        position: 'top'
+        position: 'bottom'
       }
     },
   },
@@ -67,11 +67,11 @@ var options = {
   dataLabels: {
     enabled: true,
     style: {
-        colors: ["var(--chart-foreground)"]
+        colors: ["var(--chart-background)"]
     },
     formatter: data_labeler,
     textAnchor: 'left',
-    offsetX: 10
+    offsetX: 5
   },
   colors: ["var(--chart-foreground)"],
   grid: {
@@ -83,6 +83,14 @@ var options = {
   },
   tooltip: {
     enabled: false
+  },
+  title: {
+    text: 'DOGE Staffing Per Month',
+    style: {
+      fontSize:  '14px',
+      fontWeight:  'bold',
+      fontFamily:  "Raleway"
+    }
   },
   legend: {
     show: false,
