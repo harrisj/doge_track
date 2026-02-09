@@ -15,7 +15,7 @@
         "slug": {
             "description": "A unique slug for use in URLs for this person",
             "type": "string",
-            "format": "^[a-z\\-]+$"
+            "pattern": "^[a-z\\-]+$"
         },
         "age": {
             "description": "What was their age in early 2025 when this all started",
