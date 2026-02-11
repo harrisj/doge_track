@@ -38,8 +38,14 @@ def create_event(event_hash)
   event_hash[:date] = event_date
   event_hash[:sort_date] = Date.edtf!(event_date.to_s).to_s
 
-  e = Event.create(event_hash.except(:case_no, :named, :linked, :named_aliases, :agency, :interagency_doge_reps,
-                                     :source, :source_name, :source_title))
+  begin
+    e = Event.create(event_hash.except(:case_no, :named, :linked, :named_aliases, :agency, :interagency_doge_reps,
+                                       :source, :source_name, :source_title))
+  rescue Sequel::ValidationFailed => e
+    puts "Error loading event #{event_hash.inspect}"
+    throw e
+  end
+
   if event_hash.key? :case_no
     court_case = Case[event_hash[:case_no]]
     e.case = court_case

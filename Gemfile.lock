@@ -95,11 +95,7 @@ GEM
       net-http (>= 0.5.0)
     ffi (1.17.2-aarch64-linux-gnu)
     ffi (1.17.2-aarch64-linux-musl)
-    ffi (1.17.2-arm-linux-gnu)
-    ffi (1.17.2-arm-linux-musl)
     ffi (1.17.2-arm64-darwin)
-    ffi (1.17.2-x86-linux-gnu)
-    ffi (1.17.2-x86-linux-musl)
     ffi (1.17.2-x86_64-darwin)
     ffi (1.17.2-x86_64-linux-gnu)
     ffi (1.17.2-x86_64-linux-musl)
@@ -124,21 +120,14 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.7.0)
-    mini_portile2 (2.8.9)
     minitest (5.25.5)
     net-http (0.6.0)
       uri
+    netrc (0.11.0)
     nio4r (2.7.4)
-    nokogiri (1.18.10)
-      mini_portile2 (~> 2.8.2)
-      racc (~> 1.4)
     nokogiri (1.18.10-aarch64-linux-gnu)
       racc (~> 1.4)
     nokogiri (1.18.10-aarch64-linux-musl)
-      racc (~> 1.4)
-    nokogiri (1.18.10-arm-linux-gnu)
-      racc (~> 1.4)
-    nokogiri (1.18.10-arm-linux-musl)
       racc (~> 1.4)
     nokogiri (1.18.10-arm64-darwin)
       racc (~> 1.4)
@@ -171,6 +160,12 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
+    rbi (0.3.9)
+      prism (~> 1.0)
+      rbs (>= 3.4.4)
+    rbs (3.10.3)
+      logger
+      tsort
     rdoc (6.14.2)
       erb
       psych (>= 4.0.0)
@@ -215,13 +210,25 @@ GEM
     shortuuid (0.6.0)
     signalize (1.3.1)
       concurrent-ruby (~> 1.2)
+    sorbet (0.6.12935)
+      sorbet-static (= 0.6.12935)
+    sorbet-runtime (0.6.12935)
+    sorbet-static (0.6.12935-aarch64-linux)
+    sorbet-static (0.6.12935-universal-darwin)
+    sorbet-static (0.6.12935-x86_64-linux)
+    sorbet-static-and-runtime (0.6.12935)
+      sorbet (= 0.6.12935)
+      sorbet-runtime (= 0.6.12935)
+    spoom (1.6.3)
+      erubi (>= 1.10.0)
+      prism (>= 0.28.0)
+      rbi (>= 0.3.3)
+      rexml (>= 3.2.6)
+      sorbet-static-and-runtime (>= 0.5.10187)
+      thor (>= 0.19.2)
     sqlite3 (2.7.4-aarch64-linux-gnu)
     sqlite3 (2.7.4-aarch64-linux-musl)
-    sqlite3 (2.7.4-arm-linux-gnu)
-    sqlite3 (2.7.4-arm-linux-musl)
     sqlite3 (2.7.4-arm64-darwin)
-    sqlite3 (2.7.4-x86-linux-gnu)
-    sqlite3 (2.7.4-x86-linux-musl)
     sqlite3 (2.7.4-x86_64-darwin)
     sqlite3 (2.7.4-x86_64-linux-gnu)
     sqlite3 (2.7.4-x86_64-linux-musl)
@@ -229,24 +236,35 @@ GEM
       serbea (>= 2.1)
       zeitwerk (~> 2.5)
     stringio (3.1.7)
+    tapioca (0.16.11)
+      benchmark
+      bundler (>= 2.2.25)
+      netrc (>= 0.11.0)
+      parallel (>= 1.21.0)
+      rbi (~> 0.2)
+      sorbet-static-and-runtime (>= 0.5.11087)
+      spoom (>= 1.2.0)
+      thor (>= 1.2.0)
+      yard-sorbet
     thor (1.4.0)
     tilt (2.6.1)
+    tsort (0.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
     unicode-emoji (4.1.0)
     uri (1.0.3)
+    yard (0.9.38)
+    yard-sorbet (0.9.0)
+      sorbet-runtime
+      yard
     zeitwerk (2.7.3)
 
 PLATFORMS
   aarch64-linux-gnu
   aarch64-linux-musl
-  arm-linux-gnu
-  arm-linux-musl
   arm64-darwin
-  x86-linux-gnu
-  x86-linux-musl
   x86_64-darwin
   x86_64-linux
   x86_64-linux-gnu
@@ -270,7 +288,10 @@ DEPENDENCIES
   sanitize (~> 7.0)
   sequel (~> 5.92)
   shortuuid (~> 0.6.0)
+  sorbet
+  sorbet-runtime
   sqlite3 (~> 2.6)
+  tapioca
 
 BUNDLED WITH
-   2.6.8
+  4.0.6

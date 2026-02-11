@@ -57,3 +57,7 @@ gem 'bridgetown_sequel', '~> 1.1'
 gem 'require_all', '~> 3.0'
 
 gem 'sanitize', '~> 7.0'
+
+gem 'sorbet', group: :development
+gem 'sorbet-runtime'
+gem 'tapioca', require: false, group: %i[development test]
