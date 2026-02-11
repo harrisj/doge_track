@@ -5,6 +5,7 @@ require 'edtf'
 
 # Represents a single detailing agreement between two agencies
 class Position < Sequel::Model
+  plugin :auto_validations
   many_to_one :doge_alias
   many_to_one :person, key: :name, primary_key: :name
   many_to_one :agency, graph_join_type: :inner

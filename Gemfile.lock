@@ -95,11 +95,7 @@ GEM
       net-http (>= 0.5.0)
     ffi (1.17.2-aarch64-linux-gnu)
     ffi (1.17.2-aarch64-linux-musl)
-    ffi (1.17.2-arm-linux-gnu)
-    ffi (1.17.2-arm-linux-musl)
     ffi (1.17.2-arm64-darwin)
-    ffi (1.17.2-x86-linux-gnu)
-    ffi (1.17.2-x86-linux-musl)
     ffi (1.17.2-x86_64-darwin)
     ffi (1.17.2-x86_64-linux-gnu)
     ffi (1.17.2-x86_64-linux-musl)
@@ -124,22 +120,14 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.7.0)
-    mini_portile2 (2.8.9)
     minitest (5.25.5)
     net-http (0.6.0)
       uri
     netrc (0.11.0)
     nio4r (2.7.4)
-    nokogiri (1.18.10)
-      mini_portile2 (~> 2.8.2)
-      racc (~> 1.4)
     nokogiri (1.18.10-aarch64-linux-gnu)
       racc (~> 1.4)
     nokogiri (1.18.10-aarch64-linux-musl)
-      racc (~> 1.4)
-    nokogiri (1.18.10-arm-linux-gnu)
-      racc (~> 1.4)
-    nokogiri (1.18.10-arm-linux-musl)
       racc (~> 1.4)
     nokogiri (1.18.10-arm64-darwin)
       racc (~> 1.4)
@@ -240,11 +228,7 @@ GEM
       thor (>= 0.19.2)
     sqlite3 (2.7.4-aarch64-linux-gnu)
     sqlite3 (2.7.4-aarch64-linux-musl)
-    sqlite3 (2.7.4-arm-linux-gnu)
-    sqlite3 (2.7.4-arm-linux-musl)
     sqlite3 (2.7.4-arm64-darwin)
-    sqlite3 (2.7.4-x86-linux-gnu)
-    sqlite3 (2.7.4-x86-linux-musl)
     sqlite3 (2.7.4-x86_64-darwin)
     sqlite3 (2.7.4-x86_64-linux-gnu)
     sqlite3 (2.7.4-x86_64-linux-musl)
@@ -280,11 +264,7 @@ GEM
 PLATFORMS
   aarch64-linux-gnu
   aarch64-linux-musl
-  arm-linux-gnu
-  arm-linux-musl
   arm64-darwin
-  x86-linux-gnu
-  x86-linux-musl
   x86_64-darwin
   x86_64-linux
   x86_64-linux-gnu
@@ -314,4 +294,4 @@ DEPENDENCIES
   tapioca
 
 BUNDLED WITH
-   2.6.8
+  4.0.6

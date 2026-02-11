@@ -4,6 +4,8 @@ require 'sequel'
 
 # Represents a single agency
 class Agency < Sequel::Model
+  plugin :auto_validations
+
   many_to_many :events
 
   many_to_one :parent, class: self

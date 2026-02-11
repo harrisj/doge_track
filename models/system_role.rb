@@ -4,6 +4,8 @@ require 'sequel'
 
 # Represent System Access by a single DOGE user
 class SystemRole < Sequel::Model
+  plugin :auto_validations
+
   many_to_one :govt_system
   many_to_one :agency
   many_to_one :person, key: :name

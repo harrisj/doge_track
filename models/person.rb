@@ -4,6 +4,8 @@ require 'sequel'
 
 # Represents a single DOGE member
 class Person < Sequel::Model
+  plugin :auto_validations
+
   one_to_many :doge_aliases, key: :name
   many_to_many :events, left_key: :name, order: :sort_date
   one_to_many :positions, key: :name, order: :sort_date, eager_graph: %i[agency from_agency]

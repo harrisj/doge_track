@@ -4,6 +4,8 @@ require 'sequel'
 
 # Represent a single source
 class Source < Sequel::Model
+  plugin :auto_validations
+
   many_to_one :publisher, key: :pub_id
 
   many_to_many :events
