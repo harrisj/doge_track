@@ -16,13 +16,10 @@ var options = {
       name: '{{ name }}',
       data: [
         {% positions.each do |pos| %}
-{
-  'x': '{{ pos.agency_id }}',
-    'y': [
-      new Date('{{ pos.chart_start_date }}').getTime(),
-      {% if pos.end_date %}new Date('{{ pos.chart_end_date }}').getTime(){% else %}Date.now(){% end %}
-              ]
-          },
+            {
+                'x': '{{ pos.agency_id }}',
+                'y': [new Date('{{ pos.chart_start_date }}').getTime(), {% if pos.end_date %}new Date('{{ pos.chart_end_date }}').getTime(){% else %}Date.now(){% end %}]
+            },
         {% end %}
       ]
     },
@@ -51,7 +48,12 @@ var options = {
   xaxis: {
     type: 'datetime',
     max: Date.now(),
-    min: new Date('2025-01-20').getTime()
+    min: new Date('2025-01-20').getTime(),
+    labels: {
+        format: 'MMM',
+        hideOverlappingLabels: true,
+        showDuplicates: false
+    }
   },
   title: {
     text: 'DOGE CIOs Across Government',
@@ -84,5 +86,5 @@ var options = {
     }
 };
 
-var cio_chart = new ApexCharts(document.querySelector("#chart"), options);
+var cio_chart = new ApexCharts(document.querySelector("#cio-chart"), options);
 cio_chart.render();

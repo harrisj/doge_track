@@ -4,7 +4,7 @@ layout: false
 var month_totals = {{ site.data.month_totals | jsonify | raw }};
 
 function data_labeler(val, opt) {
-  console.log(val);
+  // console.log(val);
   if (opt.dataPointIndex > 0) {
     let key = opt.w.globals.labels[opt.dataPointIndex];
     prev_key = opt.w.globals.labels[opt.dataPointIndex-1];
@@ -23,7 +23,7 @@ function data_labeler(val, opt) {
       return "" + val + " (+" + added + " -" + exit + ")";
     }
   } else {
-    return val;
+    return ""+val;
   }
 }
 
@@ -56,8 +56,6 @@ var options = {
     toolbar: {
       show: false
     },
-    fontSize:  '14px',
-    fontFamily: "Roboto Mono, ui-monospace",
     background: 'var(--chart-background)',
     foreColor: 'var(--chart-foreground)',
     zoom: {
@@ -87,7 +85,7 @@ var options = {
   title: {
     text: 'DOGE Staffing Per Month',
     style: {
-      fontSize:  '14px',
+      fontSize:  '12px',
       fontWeight:  'bold',
       fontFamily:  "Raleway"
     }
@@ -95,6 +93,29 @@ var options = {
   legend: {
     show: false,
   },
+  xaxis: {
+      axisBorder: {
+          show: false
+      },
+    labels: {
+        show: false,
+        hideOverlappingLabels: true,
+        showDuplicates: false,
+        style: {
+            fontSize: '12px',
+            fontFamily: 'Roboto Mono, ui-monospace'
+        }
+    }
+  },
+  yaxis: {
+      labels: {
+          offsetY: 3,
+          style: {
+              fontSize: '12px',
+              fontFamily: 'Roboto Mono, ui-monospace'
+          }
+      }
+  }
 };
 var monthly_chart = new ApexCharts(document.querySelector("#chart"), options);
 monthly_chart.render();

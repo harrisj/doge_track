@@ -150,15 +150,6 @@ layer(base);
         @apply border-base-100;
     }
 
-    body {
-        @apply font-sans;
-        @apply text-base-content;
-    }
-
-    .chart-label tspan {
-        @apply font-sans text-sm;
-    }
-
     :root {
         --chart-background: #ffffff;
         --chart-foreground: #2d3748;
@@ -174,7 +165,7 @@ layer(base);
             --primary-series: #63b3ed;
         }
     }
-
+    
     .apexcharts-tooltip {
         background: var(--chart-background);
         padding: 1em;
