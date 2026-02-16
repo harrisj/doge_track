@@ -3,6 +3,7 @@ title: About This Data
 layout: docs
 description: An explanation of the iconography used throughout the site to compactly present categories of information.
 index_for_search: true
+text_updated: 2026-02-02
 ---
 {% import 'macros' %}
 

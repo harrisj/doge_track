@@ -3,6 +3,7 @@ layout: docs
 title: Executive Orders
 description: DOGE has been granted its sweeping powers through multiple executive orders issued by the Trump Administration from Day One.
 index_for_search: true
+text_updated: 2025-06-21
 ---
 {%@ 'atoms/title', title: 'Executive Orders' %}
 

@@ -3,6 +3,7 @@ layout: docs
 title: Who's Involved in DOGE
 description: An alphabetical listing of all the people being tracked as part of the DOGE tracker
 index_for_search: true
+text_updated: 2026-02-02
 ---
 {%@ 'atoms/title', title: "Who's Involved in DOGE" %}
 
@@ -28,6 +29,7 @@ Here are the current members of DOGE that I know about, listed with their likely
 <table class="my-table-style table-zebra">
 <thead>
   <tr>
+      <th class="align-left"></th>
       <th class="align-left">Name</th>
       <th class="align-left">Skill</th>
       <th class="align-left">Start</th>
@@ -38,7 +40,8 @@ Here are the current members of DOGE that I know about, listed with their likely
 <tbody>
 {% people.each do |person| %}
     <tr>
-        <td class="align-left align-top"><i class="fa-sharp fa-solid {{ person_icon(person) }}"></i> {{ person_link(person) }}</td>
+        <td class="align-left align-top"><i class="fa-sharp fa-solid {{ person_icon(person) }}"></i></td>
+        <td class="align-left align-top">{{ person_link(person) }}</td>
         <td class="align-left align-top text-nowrap">{{ person_skill(person) }}</td>
         <td class="align_left align-top text-nowrap">{% if person.start_date %}<i class="fa-sharp fa-solid fa-person-to-door" aria-label="Started"></i> {{ render EdtfFormat.new(person.positions.first.start_date, :iso) }}{% if person.positions.first.start_date_truth == 'guessed' %}?{% end %}{% elsif person.events.any? %}<i class="fa-sharp fa-solid fa-users-viewfinder" aria-label="First spotted"></i> {{ render EdtfFormat.new(person.events.first.date, :iso) }}{% end %}</td>
         <td class="align-left align-top text-nowrap">{% if person.govt_exit_date %}<b><i class="fa-sharp fa-solid fa-left-from-bracket" aria-label="Left DOGE"></i> {{ render EdtfFormat.new(person.govt_exit_date, :iso) }}{% if person.govt_exit_truth == 'guessed' %}?{% end %}</b>{% elsif person.events.any? %}{% last_event = person.events.last %}<i class="fa-sharp fa-solid fa-users-viewfinder" aria-label="Most recently spotted"></i> {{ render EdtfFormat.new(last_event.date, :iso) }}{% end %}</td>

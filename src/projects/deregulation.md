@@ -2,6 +2,7 @@
 title: Regulatory Rollback
 layout: docs
 index_for_search: true
+text_updated: 2025-06-21
 ---
 # Regulatory Rollback
 

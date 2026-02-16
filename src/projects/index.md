@@ -3,6 +3,7 @@ layout: docs
 title: DOGE's Projects
 description: Behind the chaos, it's possible to discern that DOGE has been working on several distinct projects across the federal government to reduce staff, slash costs and build a "god view" of government data.
 index_for_search: true
+text_updated: 2025-06-21
 ---
 {% import 'macros' %}
 {%@ 'atoms/title', title: "DOGE's Projects" %}

@@ -3,6 +3,7 @@ title: How to Contribute
 layout: docs
 description: Some of the ways you can contribute to DOGE Track. My main area of need is for information, but other feedback and help is also welcome!
 index_for_search: true
+text_updated:  2025-09-24
 ---
 # How To Contribute
 

@@ -3,6 +3,7 @@ layout: docs
 title: What's Next?
 description: An overview of the potential next steps for the DOGE Track site in the weeks and months ahead.
 index_for_search: true
+text_updated: 2025-07-07
 ---
 # What's Next?
 
