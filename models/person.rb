@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
+require 'date'
 require 'sequel'
+require 'edtf'
 
 # Represents a single DOGE member
 class Person < Sequel::Model
@@ -38,7 +40,7 @@ class Person < Sequel::Model
   def start_date
     return unless positions.any?
 
-    positions.first.start_date
+    Date.edtf(positions.first.start_date)
   end
 
   def sort_date

@@ -12,32 +12,42 @@ key_format = '%Y-%m'
 keys = (chart_start_date..chart_end_date).map { |x| x.strftime(key_format) }.uniq.sort
 
 keys.each do |key|
-  totals[key] = { join: 0, exit: 0, count: 0 }
+  totals[key] = { join: 0, leave: 0, count: 0 }
 end
 
 Person.each do |person|
   next unless person.start_date
 
-  start_date = Date.edtf(person.start_date)
-  start_date = chart_start_date if start_date < chart_start_date
+  person_keys_set = Set[]
 
-  end_date = Date.edtf(person.govt_exit_date) if person.govt_exit_date
-  iter_end_date = end_date || chart_end_date
+  person.positions.each do |pos|
+    next unless pos.start_date
 
-  totals[start_date.strftime(key_format)][:join] += 1
-  totals[end_date.strftime(key_format)][:exit] += 1 if end_date
+    start_date = Date.edtf(pos.start_date)
+    start_date = chart_start_date if start_date < chart_start_date
 
-  person_keys = if end_date && start_date.month == end_date.month && start_date.year == end_date.year
-                  [start_date.strftime(key_format)] # the same-month flameouts
-                else
-                  (start_date..iter_end_date).map { |x| x.strftime(key_format) }.uniq.sort
-                end
+    end_date = if !pos.end_date.nil?
+                 Date.edtf(pos.end_date)
+               elsif person.govt_exit_date
+                 Date.edtf(person.govt_exit_date)
+               else
+                 chart_end_date
+               end
+
+    person_keys_set.add(start_date.strftime(key_format))
+    person_keys_set.merge((start_date..end_date).map { |x| x.strftime(key_format) }.uniq)
+  end
+
+  person_keys = person_keys_set.to_a.sort
 
   # puts "#{person.name} #{person_keys}"
 
   person_keys.each do |key|
     totals[key][:count] += 1
   end
+
+  totals[person_keys.first][:join] += 1
+  totals[person_keys.last][:leave] += 1 if person.govt_exit_date
 end
 
 totals
