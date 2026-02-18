@@ -71,7 +71,7 @@
   govt_exit_truth: verified
   govt_exit_type: resigned
   positions:
-  - id: doge-aimonetti
+  - id: gsa-aimonetti
     agency: GSA
     type: appointed
     start_date: 2025-02-XX
@@ -89,6 +89,15 @@
       https://www.linkedin.com/posts/justin-aimonetti-16a50875_today-marks-the-end-of-a-chapter-an-unforgettable-activity-7356503593681670145-SO7T
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - id: detail-doge-aimonetti
+    type: detail
+    agency: DOGE
+    from: GSA
+    start_date: 2025-02-24
+    start_date_truth: verified
+    end_date: 2025-07-26
+    end_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
 
 - name: Baris Akis
   slug: baris-akis
@@ -140,7 +149,8 @@
     salary: "$195,200"
     series: '0301'
     supervisory: false
-    office: Office of the Director
+    office: Office of the Director 2025-06-27
+    end_date_truth: reported
     source:
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     - >-
@@ -149,9 +159,18 @@
     name: Jacob Altik
     alias: OPM-16
     end_date: 2025-06-XX
-    end_date_truth: reported
     end_type: resigned
     table_note: Start date guessed from system access. No longer in govt on 6/27
+  - id: detail-opm-doge-altik
+    type: detailed
+    from: OPM
+    agency: DOGE
+    start_date: 2025-01-27
+    start_date_truth: verified
+    end_date: 2025-06-27
+    end_date_truth: verified
+    table_note: End date might just be end of detail
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-opm-usadf-altik
     type: detailed
     from: OPM
@@ -266,13 +285,29 @@
     – Jennifer "Jehn" Balajadia has been linked to the Department of Education and possibly a few other
     agencies by the _New York Times_, but actual details of her activity have been scarce.
   category: leadership
+  govt_exit_date: 2025-05-28
+  govt_exit_truth: inferred
+  govt_exit_type: resigned
   positions:
   - id: education-balajadia
-    type: appointed
+    type: detailed
     table_note: NYT links her to Education, but no other info found
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
     sort_date: 2025-02-05
     agency: Education
+    from: DOGE
+    from_truth: inferred
+  - id: doge-balajadia
+    type: appointed
+    agency: DOGE
+    start_date: 2025-01-24
+    start_date_truth: verified
+    end_date: 2025-05-28
+    end_date_truth: verified
+    end_type: resigned
+    title: Senior Advisor
+    title_type: advisor
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
 
 - name: Micaela Lopez Ballefin
   sort_name: Ballefin
@@ -455,6 +490,9 @@
     sent by Gavin Kliger. It's unclear if she has a similar role in the staffing reducations at the Department
     of Education.
   category: wrecker
+  govt_exit_date: 2025-06-13
+  govt_exit_truth: verified
+  govt_exit_type: resigned
   positions:
   - id: doge-beynon
     type: appointed
@@ -462,9 +500,17 @@
     sort_date: 2025-02-04
     start_date: 2025-02-(04)~
     start_date_truth: guessed
+    end_date: 2025-06-13
+    end_date_truth: verified
+    end_type: resigned
+    title: Senior Advisor
+    title_type: advisor
+    series: '0301'
+    pay_grade: AD-00
     table_note: date guessed, reported as detailing from DOGE to Education
-    source: https://projects.propublica.org/elon-musk-doge-tracker/
-    comment: FIXME, find earliest details of arrival; is she GSA?
+    source:
+    - https://projects.propublica.org/elon-musk-doge-tracker/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
   - id: detail-doge-education-alexandra-beynon
     type: detailed
     start_date: 2025-02-05
@@ -524,6 +570,13 @@
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     name: Riccardo Biasini
     alias: OPM-02
+  - id: detail-opm-doge-biasini
+    type: detailed
+    from: OPM
+    agency: DOGE
+    start_date: 2025-01-27
+    start_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
 
 - name: Jared Birchall
   sort_name: Birchall
@@ -721,6 +774,14 @@
     comment: I was able to confirm that OPM Employee 3 is Akash Bobba
     name: Akash Bobba
     alias: OPM-03
+  - id: detail-opm-doge-bobba
+    type: detailed
+    agency: DOGE
+    from: OPM
+    from_truth: inferred
+    start_date: 2025-01-27
+    start_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-opm-education-akash-bobba
     type: detailed
     agency: Education
@@ -814,22 +875,6 @@
   govt_exit_truth: verified
   govt_exit_type: resigned
   positions:
-  - id: doge-boizelle
-    type: appointed
-    start_date: 2025-02-XX
-    start_date_truth: reported
-    sort_date: 2025-02-15
-    end_date: 2025-08-XX
-    end_date_truth: reported
-    end_type: replaced
-    replaced_by: eop-boizelle
-    title: Deputy General Counsel
-    table_note: reported by media as started in February, own LinkedIn says March
-    fuzz: Report just says started sometime in February
-    source:
-    - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
-    - https://www.linkedin.com/in/ashley-boizelle-5836643b/
-    agency: DOGE
   - id: gsa-boizelle
     agency: GSA
     type: appointed
@@ -838,10 +883,28 @@
     start_date_truth: reported
     salary: "$167,603"
     fuzz: Just listed in March as someone on the GSA payroll
+    replaced_by: eop-boizelle
     source:
     - https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - id: doge-boizelle
+    type: detailed
+    agency: DOGE
+    from: GSA
+    from_truth: inferred
+    start_date: 2025-03-03
+    start_date_truth: verified
+    end_date: 2025-08-XX
+    end_date_truth: reported
+    end_type: replaced
+    title: Deputy General Counsel
+    table_note: reported by media as started in February, own LinkedIn says March
+    fuzz: Report just says started sometime in February
+    source:
+    - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
+    - https://www.linkedin.com/in/ashley-boizelle-5836643b/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: eop-boizelle
     type: appointed
     agency: EOP
@@ -884,10 +947,15 @@
   - id: doge-bryant
     type: appointed
     agency: DOGE
-    start_date: 2025-03-XX
-    sort_date: 2025-03-05
-    table_note: Appears in a leaked list of DOGE email addresses
-    source: https://bsky.app/profile/esqueer.net/post/3ljpyyjzfis2l
+    start_date: 2025-02-24
+    start_date_truth: verified
+    title: Senior Advisor for Technology and Efficiency
+    title_type: advisor
+    series: '0301'
+    pay_grade: AD-00
+    source:
+    - https://bsky.app/profile/esqueer.net/post/3ljpyyjzfis2l
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
   - id: gsa-bryant
     type: appointed
     agency: GSA
@@ -913,7 +981,7 @@
   slug: james-burnham
   age: 41
   govt_exit_type: resigned
-  govt_exit_date: 2025-05-29
+  govt_exit_date: 2025-06-03
   govt_exit_truth: verified
   skill: lawyer
   category: support
@@ -926,15 +994,17 @@
   - id: doge-burnham
     agency: DOGE
     type: appointed
-    sort_date: 2025-01-23
-    start_date: 2025-01-(23)~
+    sort_date: 2025-01-24
+    start_date: 2025-01-24
     start_date_truth: reported
-    end_date: 2025-05-29
+    end_date: 2025-06-03
     end_date_truth: verified
     end_type: resigned
     title: General Counsel
     table_note: NYT reported in DOGE in January, ProPublica provided title
-    source: https://www.nytimes.com/2025/01/12/us/politics/elon-musk-doge-government-trump.html
+    source:
+    - https://www.nytimes.com/2025/01/12/us/politics/elon-musk-doge-government-trump.html
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
 
 - name: Brian Burroughs
   sort_name: Burroughs
@@ -1468,6 +1538,16 @@
     Perhaps the most famous of the DOGE wreckers, Edward "Big Balls" Coristine achieved early attention for joining DOGE at the young age of 19. Previously, he had been a camp counselor and a summer intern at Neuralink, who grew up in wealth and joined up with hacking groups online, before eagerly jumping on to the DOGE bandwagon.
     However, he has also accrued a large number of hits on his wrecking spree across the federal government, starting at the GSA on Day One and then detailing to OPM and a large number of other agencies within a short amount of time; for instance, he appears to have been DOGE's vanguard within the Department of Homeland Security. Most recently, he has been linked to a team developing an online application for a $5 Million "Gold Card" Visa that has been promoted by Trump as a new revenue stream for the US.
   positions:
+  - id: detail-gsa-doge-coristine
+    type: detailed
+    agency: DOGE
+    from: GSA
+    from_truth: inferred
+    start_date: 2025-01-20
+    start_date_truth: verified
+    end_date: 2025-06-09
+    end_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: gsa-edward-coristine
     agency: GSA
     type: appointed
@@ -1842,7 +1922,7 @@
   age: 45
   category: leadership
   govt_exit_type: resigned
-  govt_exit_date: 2025-05-29
+  govt_exit_date: 2025-05-28
   govt_exit_truth: verified
   blurb: |-
     Reportedly so loyal to Elon Musk that associates have joked he would jump off a cliff if Musk asked him, Steve Davis has long been besides Musk's side at various companies, serving in senior executive roles at the Boring Company and Twitter. At Twitter, he was reportedly so dedicated to the work that he moved into the offices with his wife, Nicole Hollander, and their small child. And it is also reported that he was once so distressed by setbacks and failures that he started pulling out his own hair.
@@ -1860,10 +1940,14 @@
     agency: DOGE
     start_date: 2025-01-20
     start_date_truth: inferred
-    end_date: 2025-05-29
-    end_date_truth: reported
+    end_date: 2025-05-28
+    end_date_truth: verified
     end_type: resigned
-    source: https://www.wsj.com/us-news/steve-davis-leaves-doge-411a2d1b
+    title: Senior Advisor
+    title_type: advisor
+    source:
+    - https://www.wsj.com/us-news/steve-davis-leaves-doge-411a2d1b
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
     table_note: assuming he started on 2025-01-20
 
 - name: Stephen Duarte
@@ -2086,6 +2170,15 @@
     source:
     - https://www.documentcloud.org/documents/26028807-onboard-treasury-marko-elez/
     - https://www.npr.org/2025/02/06/nx-s1-5289337/elon-musk-doge-treasury
+  - id: doge-elez
+    type: appointed
+    agency: DOGE
+    start_date: 2025-02-10
+    start_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+    table_note: >-
+      Listed as Volunteer Employee. This seems like it was a way to keep Elez with access after resigned
+      from Treasury but before starting at DOL
   - id: dol-elez
     type: appointed
     agency: DOL
@@ -2298,6 +2391,16 @@
     title_type: advisor
     comment: Date found in a court filing
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  - id: detail-gsa-doge-farritor
+    type: detailed
+    agency: DOGE
+    from: GSA
+    from_truth: inferred
+    start_date: 2025-01-24
+    start_date_truth: verified
+    end_date: 2025-07-31
+    end_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-gsa-usaid-farritor
     type: detailed
     agency: USAID
@@ -2490,13 +2593,22 @@
     Apart from his appearance on a leaked list of DOGE's lawyers, there isn't much public information
     about Joshua Fox. In November, ProPublica added him to their list of DOGE staffers and linked him
     to several agencies but reported he transitioned to a General Counsel role in the White House in June
+  govt_exit_date: 2025-09-13
+  govt_exit_type: resigned
+  govt_exit_truth: verified
   positions:
   - id: eop-doge
     type: promotion
     agency: EOP
     title: Associate General Counsel
     office: Executive Office of the President
-    source: https://projects.propublica.org/elon-musk-doge-tracker/
+    end_date: 2025-09-13
+    end_type: resigned
+    end_date_truth: reported
+    table_note: Reported as left 9/13/25; does this mean just DOGE or EOP/govt?
+    source:
+    - https://projects.propublica.org/elon-musk-doge-tracker/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
   - id: mcc-joshua-fox
     agency: MCC
     sort_date: 2025-02-16
@@ -2673,6 +2785,14 @@
     & Murphy, "which specializes in arguing conservative causes before the U.S. Supreme Court" according
     to ProPublica.
   positions:
+  - id: detail-gsa-doge-gallagher
+    type: detailed
+    agency: DOGE
+    from: GSA
+    from_truth: inferred
+    start_date: 2025-03-03
+    start_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: gsa-gallagher
     type: appointed
     agency: GSA
@@ -3157,16 +3277,26 @@
   category: support
   positions:
   - id: doge-joshua-hanley
+    type: detailed
+    agency: DOGE
+    from: GSA
+    from_truth: inferred
+    start_date: 2025-02-24
+    start_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+  - id: gsa-joshua-hanley
+    agency: GSA
     type: appointed
-    start_date: 2025-02-XX
-    start_date_truth: reported
+    start_date: 2025-02-(24)~
+    start_date_truth: inferred
+    sort_date: 2025-02-23
     salary: "$167,603"
-    fuzz: Report just says started sometime in February
+    office: Office of General Counsel
+    pay_grade: GS-12
     source:
     - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-    agency: DOGE
 
 - name: Christina Hanna
   sort_name: Hanna
@@ -3514,13 +3644,17 @@
   positions:
   - id: doge-holmes
     type: appointed
+    title: Senior Advisor for Technology and Efficiency
+    title_type: advisor
     sort_date: 2025-02-01
     start_date: 2025-02-(01)~
     start_date_truth: reported
     comment: First mentioned in reports on 2/1
     table_note: First reported today, likely onboarded earlier in January
-    source: >-
+    source:
+    - >-
       https://www.404media.co/musks-doge-brings-in-hr-consultant-focused-on-non-woke-dei-aligned-with-our-faith/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
     agency: DOGE
   - id: detail-doge-doi-holmes
     type: detailed
@@ -3708,23 +3842,31 @@
     when he was detailed to the Social Security Administration. Perhaps he is one of the still-unidentified
     aliases there and more details of his involvement will become apparent in future court filings and
     FOIA releases.
+  govt_exit_date: 2025-06-27
+  govt_exit_type: resigned
+  govt_exit_truth: inferred
   positions:
   - id: doge-killian
     type: appointed
     start_date: 2025-01-20
-    start_date_truth: reported
+    start_date_truth: verified
+    end_date: 2025-06-27
+    end_date_truth: verified
+    end_type: resigned
     table_note: reported as interviewing USDS staff about jobs, not found in GSA or OPM lists
     comment: Listed as interviewing USDS staff on 1/21, not in GSA or OPM crew
-    source: https://www.wired.com/story/elon-musk-digital-coup-doge-data-ai/
+    source:
+    - https://www.wired.com/story/elon-musk-digital-coup-doge-data-ai/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
     agency: DOGE
   - id: detail-doge-epa-killian
     type: detailed
     from: DOGE
-    table_note: assuming detail from DOGE, reported 9/25 not at EPA, but assuming left around Loving exit
+    table_note: Reported as ending in June and left DOGE on 6/27
     start_date: 2025-02-04
     start_date_truth: reported
-    end_date: 2025-06-XX
-    end_date_truth: guessed
+    end_date: 2025-06-(27)?
+    end_date_truth: inferred
     end_type: detail_ended
     title: Federal Detailee
     source:
@@ -3981,14 +4123,20 @@
     apart from testimony from Noah Peters that he discussed the idea of firing probationary employees
     before the administration began. Like a small number of the DOGE crew, he comes from a cryptocurrency
     company and would possibly be involved with any work or policy by DOGE related to that sector.
+  govt_exit_date: 2025-02-05
+  govt_exit_type: resigned
+  govt_exit_truth: inferred
   positions:
   - id: doge-kmiec
     type: appointed
     agency: DOGE
-    sort_date: 2025-02-07
-    start_date: 2025-02-(07)~
-    start_date_truth: reported
-    source: https://www.propublica.org/article/elon-musk-doge-lawyers-supreme-court
+    start_date: 2025-01-24
+    start_date_truth: verified
+    end_date: 2025-02-05
+    end_date_truth: verified
+    source:
+    - https://www.propublica.org/article/elon-musk-doge-lawyers-supreme-court
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
 
 - name: Kaitlyn Koller
   slug: kaitlyn-koller
@@ -4005,14 +4153,18 @@
   - id: usds-koller
     agency: DOGE
     type: appointed
-    start_date: 2025-03-XX
-    start_date_truth: reported
+    title: Senior Advisor
+    title_type: advisor
+    series: '0301'
+    pay_grade: AD-00
+    start_date: 2025-04-06
+    start_date_truth: verified
     end_date: 2025-08-(26)~
     end_date_truth: reported
-    title: Senior Advisor
     source:
     - https://www.wired.com/story/doge-operatives-joining-national-design-studio/
     - https://www.linkedin.com/in/kaitlyn-koller-7792a1228/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
   - id: nds-koller
     agency: NDS
     type: appointed
@@ -4424,11 +4576,16 @@
     end_date: 2025-07-XX
     end_date_truth: verified
     end_type: resigned
+    title: Senior Advisor for Technology and Efficiency
+    title_type: advisor
+    series: '0301'
+    pay_grade: AD-00
     table_note: Departure from own LinkedIn
     agency: DOGE
     source:
     - https://www.consulting.us/news/11397/former-mckinsey-business-analyst-hired-to-musks-doge-nerd-army
     - https://www.linkedin.com/in/kendall-lindemann/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
 
 - name: Kathryn Armstrong Loving
   sort_name: Loving
@@ -5493,6 +5650,14 @@
     office: Office of the Director
     comment: Details from a FOIA document
     source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
+  - id: detail-opm-doge-peters
+    type: detailed
+    agency: DOGE
+    from: OPM
+    from_truth: inferred
+    start_date: 2025-01-24
+    start_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
 
 - name: Darshan Phillips
   sort_name: Phillips
@@ -5548,6 +5713,16 @@
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
     name: Nikhil Rajpal
     alias: OPM-06
+  - id: detail-opm-doge-rajpal
+    type: detailed
+    agency: DOGE
+    from: OPM
+    from_truth: inferred
+    start_date: 2025-01-27
+    start_date_truth: verified
+    end_date: 2025-06-09
+    end_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-opm-noaa-rajpal
     type: detailed
     from: OPM
@@ -5609,9 +5784,14 @@
     type: appointed
     start_date: 2025-01-23
     start_date_truth: verified
+    end_date: 2025-06-30
+    end_date_truth: reported
+    end_type: resigned
     comment: Details provided in sworn testimony
     agency: DOGE
-    source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.5_1.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.5_1.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-doge-education-adam-ramada
     start_date: 2025-01-28
     start_date_truth: verified
@@ -5715,6 +5895,16 @@
     name: Austin Raynor
     alias: OPM-10
     table_note: Start date guessed from system access
+  - id: detail-opm-doge-raynor
+    type: detailed
+    agency: DOGE
+    from: OPM
+    from_truth: inferred
+    start_date: 2025-02-05
+    start_date_truth: verified
+    end_date: 2025-12-19
+    end_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
 
 - name: Payton Rehling
   sort_name: Rehling
@@ -6226,6 +6416,16 @@
     agency: USCIS
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  - id: detail-gsa-doge-schutt
+    type: detailed
+    agency: DOGE
+    from: GSA
+    from_truth: inferred
+    start_date: 2025-01-27
+    start_date_truth: verified
+    end_date: 2025-06-20
+    end_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: gsa-schutt
     type: appointed
     agency: GSA
@@ -6367,6 +6567,14 @@
     start_date_truth: inferred
     comment: Position inferred from early reporting and detailing to Education
     source: https://www.wired.com/story/elon-musk-lackeys-general-services-administration/
+  - id: detail-gsa-opm-shaotran
+    type: detailed
+    agency: DOGE
+    from: GSA
+    from_truth: inferred
+    start_date: 2025-01-27
+    start_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-gsa-education-3
     type: detailed
     from: GSA
@@ -6690,6 +6898,22 @@
     left HHS and DOGE about a week before Elon Musk's departure, but he has apparently returned in August
     to work at the State Department.
   positions:
+  - id: doge-brad-smith
+    type: appointed
+    agency: DOGE
+    start_date: 2025-01-20
+    start_date_truth: verified
+    end_date: 2025-06-11
+    end_date_truth: verified
+    end_type: resigned
+    title: Senior Advisor
+    title_type: advisor
+    comment: identified as USDS detail on 2/13 declaration
+    table_note: >-
+      identified as dual appointee at HHS and DOGE / resigned on 6/11 and returned to State Dept in August.
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.82.3.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-doge-hhs-smith
     type: detailed
     agency: HHS
@@ -6702,19 +6926,6 @@
     replaced_by: hhs-brad-smith
     sort_date: 2025-02-02
     table_note: detail started before 2/13
-  - id: doge-brad-smith
-    type: appointed
-    agency: DOGE
-    start_date: 2025-02-XX
-    start_date_truth: verified
-    sort_date: 2025-02-01
-    end_date: 2025-05-23
-    end_date_truth: inferred
-    end_type: resigned
-    comment: identified as USDS detail on 2/13 declaration
-    table_note: identified as dual appointee at HHS and DOGE / resigned on 5/23 and returned to State
-      Dept in August
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.82.3.pdf
   - id: hhs-brad-smith
     agency: HHS
     type: converted
@@ -6903,6 +7114,15 @@
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - id: doge-stanley
+    type: appointed
+    agency: DOGE
+    start_date: 2025-01-31
+    start_date_truth: verified
+    title: Senior Advisor of Technology and Efficiency
+    title_type: advisor
+    table_note: Seems to have been hired at DOGE instead of detailed there from OPM
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: fhfa-christopher-stanley
     title: Board Member, Fannie Mae/Freddie Mac
     title_type: other
@@ -7466,9 +7686,15 @@
     agency: DOGE
     sort_date: 2025-01-20
     start_date: 2025-01-(20)~
+    title: Senior Advisor (Engineer)
+    title_type: advisor
+    series: '0301'
+    pay_grade: AD-00
     start_date_truth: guessed
     table_note: guessed from govt declaration detailed from DOGE to CFPB
     comment: No details, but guessing based on government declaration had been detailed from DOGE to CFPB
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
   - id: detail-usds-cfpb-jordan-wick
     type: detailed
     agency: CFPB
@@ -7708,6 +7934,16 @@
     alias: OPM-14
     end_date: 2025-06-XX
     end_date_truth: reported
+  - id: detail-opm-doge-young
+    type: detailed
+    agency: DOGE
+    from: OPM
+    from_truth: inferred
+    start_date: 2025-02-05
+    start_date_truth: verified
+    end_date: 2025-06-13
+    end_date_truth: verified
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-opm-cfpb-chris-young
     type: detailed
     agency: CFPB
