@@ -24,10 +24,10 @@
     when 'other'
       nil
     when 'detailed'
-      if pos.from_truth != 'reported' && pos.from_truth != 'verified'
+      if pos.from_truth == 'guessed'
         "likely detailed"
       else
-        "detail"
+        "detailed"
       end
     when 'promotion'
       pos.title ? 'promoted to' : 'promoted'
@@ -38,7 +38,7 @@
     when 'internal'
       'internal xfer'
     when 'appointed'
-      'appointed'
+      ''
     when 'unknown'
       'unknown start type'
     else
