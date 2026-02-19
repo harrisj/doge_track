@@ -3017,13 +3017,17 @@
     end_date: 2024-02-18
     end_date_truth: verified
     end_type: replaced
+    series: '0301'
+    pay_grade: AD-00
     replaced_by: doge-amy-gleason-director
     type: appointed
     table_note: this is Amy's role in USDS until she was named the administrator of DOGE
     comment: >-
       Amy Gleason joins the USDS, according to her sworn testimony; not sure of her title for this before
       she is named Acting Director
-    source: https://www.documentcloud.org/documents/25564597-crewvdogereconmot031425/
+    source:
+    - https://www.documentcloud.org/documents/25564597-crewvdogereconmot031425/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
     agency: DOGE
   - id: doge-hhs-gleason
     type: detailed
@@ -3042,7 +3046,11 @@
     agency: DOGE
     title: Acting Administrator, US DOGE Service and the DOGE Temporary Organization
     title_type: director
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.4.pdf
+    series: '0301'
+    pay_grade: AD-00
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.4.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
   - id: internal-hhs-cms-gleason
     type: internal
     agency: CMS
