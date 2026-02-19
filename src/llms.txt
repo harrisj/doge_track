@@ -1,0 +1,109 @@
+---
+layout: false
+---
+{% import 'macros' %}
+# DOGE Track
+
+> A website tracking the various activities across the federal government of various individuals associated with DOGE that is automatically regenerated as new data is added or changed.
+
+This is a solo project created by Jacob Harris, a software developer with a background in civic technology and data journalism. It began as a simple data collection project before being turned into a standalone website in May of 2025. The site is frequently updated as new information about DOGE staffing and activities comes to light.
+
+## What You'll Find Here
+I have been evolving my data collection over time to track the following information about DOGE's activities:
+
+- The names and placements of DOGE staff across the federal government
+- Significant events at each agency
+- Systems that have been accessed by DOGE and the possible risks
+- Court cases that are linked to DOGE activities
+- Possible identification of DOGE staff who have been masked in FOIA requests and legal documents
+- Significant records related to hiring and detailing arrangements
+
+## How It's Updated
+This site uses a custom data pipeline of my own design that has evolved over time. I do all of my edits for the [source data in YAML plaintext files](https://github.com/harrisj/doge_track/tree/main/data) which are then automatically validated through scripts and loaded into a SQLite database. If you want to work with the data directly, pulling the YAML or loading the database is the easiest way to get raw data and you are welcome to use it.
+
+Once I have loaded the data, other scripts will extract the data from the database into other YAML files that are used by my static site generator (_I know, I could have it read from the database, but I like have these files saved for debugging and version control_). When I push a version of the site upstream, these files are used to fill in data for the various pages on the site. This means that if I fix data in my source files, it should be reflected in the pages when I deploy it publicly.
+
+For your convenience, I have included a "Last Updated" date in the footer for the site. I will update the entire site at a single time, so it does not apply to specific pages only.
+
+## Reporting Errors and Omissions
+This website may be an act of journalism, but I am **not** a professional journalist. I will continue to strive to update the data and fix any errors that arise, but DOGE has made itself intentionally hard to track and some errors are almost certain to occur. All of which is to say, **use this data at your own risk**. If you are using it as the basis for further investigations or legal arguments, please double-check my work (and let me know if you find any errors). I generally will link to original sources and have also started collecting significant documents. Use those as the basis for any citations.
+
+Just remember, **this data is sometimes very messy.** DOGE has purposefully fought any attempts at transparency and has used staffing arrangements that are meant to deter tracking their movements. I often am working from second-hand news reports of rumored sightings. There are several ways in which I will indicate uncertainty and vagueness. For dates, I am using the [Extended Date Time Format](https://www.loc.gov/standards/datetime/) to indicate situations where dates are approximate (_2025-01-(23)~_) or even unknown (_2025-01-XX_). I will also sometimes flag errors with notes on tables. But there might be ambiguities that I miss or were not conveyed in the source material. Be careful of assuming a precise date or report denotes absolute certainty. Be skeptical of [data smells](https://github.com/nikeiubel/data-smells/wiki/Ensuring-Accuracy-in-Data-Journalism).
+
+## Site Overview Pages
+
+
+## DOGE's Projects
+
+- [About This Site](/about/this-site)
+- [About This Data](/about/this-data/)
+- [How to Download This Data](/about/downloading-data/)
+- [How to Contribute](/about/contributing/)
+- [Symbols & Terminology](/about/these-symbols)
+
+## What Is DOGE doing?
+
+- [Overview of DOGE Projects](/projects/)
+- [Attacking the Federal Workforce](/projects/anti-personnel)
+- [Fraud and Waste](/projects/viral-waste)
+- [Seizing Control of Spending](/projects/spending-control/)
+- [Regulatory Rollback](/projects/deregulation/)
+- [Fake IT Modernization](/projects/it-modernization)
+- [A "God View" Surveillance System](/projects/god-view)
+
+## Other Helpful Pages
+
+- [Executive Orders](/projects/exec-orders)
+- [The DOGE Timeline](/projects/timeline)
+- [Who Is In DOGE?](/people)
+- [Who is Being Paid?](/people/paid-staff)
+- [Who Has Left?](/people/who-left)
+- [What We Know About DOGE's Federal Details](/people/details)
+- [The Wreckers](/people/wreckers)
+- [Unmasked Aliases](/people/aliases)
+- [Leaders and Boosters](/people/leaders)
+- [The Support Team](/people/support-team)
+- [The Enablers](/people/enablers)
+- [Unknowns](/people/unknowns)
+
+## Individuals Affiliated with DOGE
+
+{% Person.all.each do |person| %}
+- [{{ person.name }}]({{ person.page_url }})
+{% end %}
+
+## Federal Agencies Affected
+
+{% Agency.all.each do |agency| %}
+- [{{ agency.name }}]({{ agency.page_url }})
+{% end %}
+
+## Raw Data
+
+The raw data that is used to generate the site is also available in the project's Github repository
+
+- [agencies.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/agencies.yaml)
+- [aliases.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/aliases.yaml)
+- [cases.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/cases.yaml)
+- [change_log.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/change_log.yaml)
+- [documents.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/documents.yaml)
+- [exec_orders.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/exec_orders.yaml)
+- [interagency.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/interagency.yaml) (events that span agencies)
+- [people.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/people.yaml) (includes their positions at agencies)
+- [publishers.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/publishers.yaml)
+- [questions.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/questions.yaml)
+- [roundups.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/roundups.yaml) (DOGE listings from NYT, ProPublica, etc.)
+- [sources.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/sources.yaml)
+- [systems.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/systems.yaml) (includes system access records)
+
+## API for Access
+
+Full Swagger documentation is available at [https://dogetrack.info/api/](/api/), but for now it includes the following endpoints:
+
+- [/api/aliases.json](/api/aliases.json) - all the DOGE aliases
+- [/api/agencies.json](/api/agencies.json) - a listing of all agencies with links to further details
+- [/api/agencies/{slug}.json](/api/agencies/hhs.json) - information about a specific agency
+- [/api/events.json](/api/events.json) - all of the events in the database
+- [/api/people.json](/api/people.json) - a listing of all the people with links to further details
+- [/api/people/{slug}.json](/api/people/luke-farritor.json) - information about a specific person
+- [/api/systems.json](/api/systems.json) - all the systems I know about
