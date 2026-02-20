@@ -5530,12 +5530,26 @@
     title_type: advisor
     start_date: 2025-04-XX
     start_date_truth: verified
+    end_date: 2026-01-20
+    end_date_truth: inferred
+    end_type: replaced
+    replaced_by: irs-newnam-cfo
     fuzz: Identity is only revealed in a court filing
     comment: NYT says he is a Senior Advisor
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.61.2.pdf
     agency: IRS
     from: Treasury
     from_truth: inferred
+  - id: irs-newnam-cfo
+    agency: IRS
+    type: promotion
+    title: Chief Financial Officer
+    title_type: deputy
+    start_date: 2026-01-20
+    start_date_truth: reported
+    supervisory: true
+    source: >-
+      https://news.bloombergtax.com/daily-tax-report/irs-criminal-head-exits-trump-friendly-faces-in-new-org-chart
 
 - name: Michael Novia
   sort_name: Novia
