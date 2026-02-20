@@ -389,6 +389,15 @@
     start_date_truth: verified
     source: https://www.cio.gov/about/members-and-leadership/
     table_note: Not announced, just appeared on cio.gov page some time after 9/20 and before 9/30
+  - id: gsa-tts-barbaccia
+    agency: GSA
+    type: appointed
+    start_date: 2026-02-19
+    start_date_truth: reported
+    title: Deputy FAS Commissioner / Acting Administrator, Technology Transformation Services
+    title_type: cio
+    supervisory: true
+    source: https://www.govexec.com/management/2026/02/federal-cio-tapped-dual-hatted-role-gsa/411543/
 
 - name: Samuel Berry
   sort_name: Berry
@@ -6752,17 +6761,22 @@
   - id: gsa-thomas-shedd
     type: appointed
     agency: GSA
-    title: Deputy FAS Commissioner / Administrator
+    title: Deputy FAS Commissioner / Administrator, Technology Transformation Service
     title_type: cio
     office: Technology Transformation Service
     start_date: 2025-01-24
     start_date_truth: reported
+    end_date: 2026-02-19
+    end_date_truth: reported
+    end_type: replaced
+    replaced_by: gsa-shedd-fraud
     salary: "$150,160"
     source:
     - >-
       https://federalnewsnetwork.com/people/2025/01/gsas-new-leadership-mostly-comes-from-tech-finance-sectors/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://www.govexec.com/management/2026/02/federal-cio-tapped-dual-hatted-role-gsa/411543/
     supervisory: true
   - id: dol-shedd
     type: appointed
@@ -6778,6 +6792,14 @@
     source:
     - https://www.nextgov.com/people/2025/03/tts-director-tapped-serve-labor-cio/403855/
     - https://www.nextgov.com/people/2025/08/thomas-shedd-departs-labor-cio/407195/
+  - id: gsa-shedd-fraud
+    type: demotion
+    start_date: 2026-02-19
+    start_date_truth: reported
+    agency: GSA
+    title: Senior Advisor for Fraud Prevention
+    title_type: advisor
+    supervisory: false
 
 - name: Roland Shen
   sort_name: Shen
