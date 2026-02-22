@@ -122,7 +122,6 @@ DB.create_table! :events do
   string :comment
   string :case_no
   string :system_id
-  string :theme
 end
 
 DB.create_table! :cases do

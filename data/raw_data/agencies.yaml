@@ -36,7 +36,6 @@
       Agency staff at AmeriCorps are placed on immediate administrative leave and banned from accessing
       agency systems.
     source: https://www.washingtonpost.com/nation/2025/04/16/americorps-cuts-doge-trump/
-    theme: personnel
     agency: AmeriCorps
     id: mdSXmD4G
   - date: 2025-04-25
@@ -46,7 +45,6 @@
       total grant funding) to 1,031 organizations across America. The reason given is that the grant "no
       longer effectuates agency priorities."
     source: https://www.washingtonpost.com/nation/2025/04/25/americorps-grant-cuts-doge/
-    theme: spending
     agency: AmeriCorps
     id: 3RVlVWPN
   - date: 2025-07-22
@@ -92,7 +90,6 @@
     source: >-
       https://www.economist.com/united-states/2025/03/10/how-doge-is-driving-americas-public-health-guardians-mad
     agency: CDC
-    theme: personnel
     id: RopNFssL
   - date: 2025-01-30
     type: access
@@ -114,7 +111,6 @@
     named:
     - Luke Farritor
     system: APEX
-    theme: spending
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     case_no: 1:25-cv-00339
     agency: CDC
@@ -125,7 +121,6 @@
       DOGE staff reportedly arrive at CDC HQ in Atlanta to request access to health payment systems used
       at the agency.
     source: https://www.washingtonpost.com/health/2025/02/05/doge-health-agencies-labor/
-    theme: personnel
     agency: CDC
     id: jC9DATQu
   - date: 2025-02-15
@@ -135,7 +130,6 @@
       in possible violation of federal laws governing the civil service.
     source: >-
       https://www.economist.com/united-states/2025/03/10/how-doge-is-driving-americas-public-health-guardians-mad
-    theme: personnel
     agency: CDC
     id: Ucq6WnMM
   - date: 2025-02-17
@@ -154,7 +148,6 @@
       been contacted by DOGE yet. It's unclear if this is a lie or they have been sidestepped.
     source: https://www.theatlantic.com/technology/archive/2025/02/doge-god-mode-access/681719/
     agency: CDC
-    theme: spending
     id: 5aycrTMg
   - date: 2025-02-28
     type: disruption
@@ -173,7 +166,6 @@
     source: >-
       https://www.nbcnews.com/health/health-news/cdc-pulling-back-11b-covid-funding-sent-health-departments-us-rcna198006
     agency: CDC
-    theme: spending
     id: ChWumxau
   - date: 2025-04-01
     type: disruption
@@ -301,7 +293,6 @@
     - Jeremy Lewin
     case_no: 1:25-cv-00339
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    theme: spending
     agency: CMS
     id: 2VmzIcAJ
   - date: 2025-02-05
@@ -342,7 +333,6 @@
     system: CALM
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     case_no: 1:25-cv-00339
-    theme: spending
     agency: CMS
     id: 4wVLWDce
   - date: 2025-03-03
@@ -355,7 +345,6 @@
     system: CALM
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     case_no: 1:25-cv-00339
-    theme: spending
     agency: CMS
     id: 4PyOz3TV
   - date: 2025-03-05
@@ -371,7 +360,6 @@
     system: HIGLAS
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     case_no: 1:25-cv-00339
-    theme: spending
     agency: CMS
     id: 3MdiqW9w
   - date: 2025-03-05
@@ -384,7 +372,6 @@
     system: IDR
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     case_no: 1:25-cv-00339
-    theme: spending
     agency: CMS
     id: 4C16pcax
   - date: 2025-03-05
@@ -400,7 +387,6 @@
     system: CALM
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     case_no: 1:25-cv-00339
-    theme: spending
     agency: CMS
     id: 6R6QCxBv
   - date: 2025-03-05
@@ -414,7 +400,6 @@
     system: IDR
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     case_no: 1:25-cv-00339
-    theme: spending
     agency: CMS
     id: 3vG5MUdU
   - date: 2025-03-29
@@ -7822,6 +7807,20 @@
     source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
     id: 5fdC2pM1
     agency: PeaceCorps
+  - date: 2026-02-20
+    type: official
+    event: >-
+      Speaking at the India AI Impact Summit, White House OSTP Director Micheal Kratsios announces that
+      the Peace Corps will launch a new Tech Corps initiative to promote AI worldwide. Volunteers will
+      be deployed to countries participating in the American AI Exports Program, service for 12-27 months
+      overseas. The launch includes [a new site for signups](https://www.peacecorps.gov/ways-to-serve/tech-corps/)
+      that looks like it was developed by the National Design Studio.
+    named:
+    - Michael Kratsios
+    source: >-
+      https://www.peacecorps.gov/about-the-agency/media-center/news/peace-corps-launches-tech-corps-initiative/
+    agency: PeaceCorps
+    id: 3GX4gyWM
 
 - name: Securities and Exchange Commission
   id: SEC
