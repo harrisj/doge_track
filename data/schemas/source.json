@@ -1,25 +1,28 @@
 {
-  "$id": "schemas/source",
-  "type": "object",
-  "title": "Source",
-  "description": "Information about a specific source",
-  "properties": {
-    "url": {
-      "description": "The URL for the post (used as a unique key)",
-      "type": "string"
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "Source",
+    "description": "Information about a specific source",
+    "properties": {
+        "url": {
+            "description": "The URL for the post (used as a unique key)",
+            "type": "string"
+        },
+        "pub_id": {
+            "description": "A link to the publisher for the source",
+            "type": "string"
+        },
+        "title": {
+            "description": "The title of the piece",
+            "type": "string"
+        },
+        "pub_date": {
+            "description": "When was the piece published",
+            "type": "string"
+        }
     },
-    "pub_id": {
-      "description": "A link to the publisher for the source",
-      "type": "string"
-    },
-    "title": {
-      "description": "The title of the piece",
-      "type": "string"
-    },
-    "pub_date": {
-      "description": "When was the piece published",
-      "type": "string"
-    }
-  },
-  "required": ["url", "pub_id"]
+    "required": [
+        "url",
+        "pub_id"
+    ]
 }

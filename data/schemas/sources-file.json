@@ -1,7 +1,8 @@
 {
-  "type": "array",
-  "description": "A collection of sources",
-  "items": {
-    "$ref": "source.json"
-  }
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "array",
+    "description": "A collection of sources",
+    "items": {
+        "$ref": "source.json"
+    }
 }

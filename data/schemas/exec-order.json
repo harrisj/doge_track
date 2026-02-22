@@ -1,51 +1,52 @@
 {
-  "$id": "schemas/exec-order",
-  "type": "object",
-  "title": "Executive Order",
-  "description": "Information about a single executive order that supports or directs the actions of DOGE",
-  "properties": {
-    "title": {
-      "description": "The title of the Exec Order",
-      "type": "string"
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "schemas/exec-order",
+    "type": "object",
+    "title": "Executive Order",
+    "description": "Information about a single executive order that supports or directs the actions of DOGE",
+    "properties": {
+        "title": {
+            "description": "The title of the Exec Order",
+            "type": "string"
+        },
+        "id": {
+            "description": "The number for the executive order",
+            "type": "integer"
+        },
+        "summary": {
+            "description": "A summary of the executive order",
+            "type": "string"
+        },
+        "link": {
+            "description": "A link for info on the executive order",
+            "type": "string"
+        },
+        "date": {
+            "description": "The date that the Executive Order was issued",
+            "type": "string",
+            "format": "date"
+        },
+        "directs_doge": {
+            "description": "Does the Executive Order explicitly direct DOGE to do something",
+            "type": "boolean"
+        },
+        "all_agencies": {
+            "description": "Does it direct all agencies or agency heads to do something supporting DOGE's activities?",
+            "type": "boolean"
+        },
+        "agencies": {
+            "description": "If the EO gives commands for specific agencies, they are linked here",
+            "type": "array",
+            "items": {
+                "$ref": "agency_id.json"
+            }
+        }
     },
-    "id": {
-      "description": "The number for the executive order",
-      "type": "integer"
-    },
-    "summary": {
-      "description": "A summary of the executive order",
-      "type": "string"
-    },
-    "link": {
-      "description": "A link for info on the executive order",
-      "type": "string"
-    },
-    "date": {
-      "description": "The date that the Executive Order was issued",
-      "type": "string",
-      "format": "date"
-    },
-    "directs_doge": {
-      "description": "Does the Executive Order explicitly direct DOGE to do something",
-      "type": "boolean"
-    },
-    "all_agencies": {
-      "description": "Does it direct all agencies or agency heads to do something supporting DOGE's activities?",
-      "type": "boolean"
-    },
-    "agencies": {
-      "description": "If the EO gives commands for specific agencies, they are linked here",
-      "type": "array",
-      "items": {
-        "$ref": "valid_names.json#agency_ids"
-      }
-    }
-  },
-  "required": [
-    "title",
-    "id",
-    "summary",
-    "link",
-    "date"
-  ]
+    "required": [
+        "title",
+        "id",
+        "summary",
+        "link",
+        "date"
+    ]
 }

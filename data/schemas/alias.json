@@ -1,4 +1,5 @@
 {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "schemas/alias",
     "type": "object",
     "title": "Alias",
@@ -6,17 +7,17 @@
     "properties": {
         "agency": {
             "description": "The agency where this alias applies to",
-            "$ref": "valid_names.json#agency_ids"
+            "$ref": "agency_id.json"
         },
         "name": {
             "description": "If it becomes known this is a specific person, their name goes here",
-            "$ref": "valid_names.json#people"
+            "$ref": "name.json"
         },
         "candidates": {
             "description": "If I am reasonably sure it's only a few possibilities, their names would go here",
             "type": "array",
             "items": {
-                "$ref": "valid_names.json#people"
+                "$ref": "name.json"
             }
         },
         "evidence": {

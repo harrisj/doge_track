@@ -1,5 +1,5 @@
 {
-    "$id": "schemas/person",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
     "title": "Person",
     "description": "Information about a specific DOGE-affiliated person",
@@ -23,7 +23,14 @@
         },
         "category": {
             "description": "What kind of work they are doing for DOGE",
-            "$ref": "valid_names.json#doge_categories"
+            "enum": [
+                "booster",
+                "leadership",
+                "enabler",
+                "support",
+                "wrecker",
+                "unknown"
+            ]
         },
         "own_page": {
             "description": "Do they have their own page?",
@@ -48,26 +55,51 @@
         },
         "govt_exit_type": {
             "description": "How they offboarded",
-            "$ref": "valid_names.json#offboard_types"
+            "$ref": "end_type.json"
         },
         "govt_exit_date": {
             "description": "A date when they left DOGE entirely",
             "type": "string",
-            "$ref": "valid_names.json#fuzzy_date"
+            "$ref": "fuzzy_date.json"
         },
         "govt_exit_truth": {
             "description": "Accuracy of the info",
-            "$ref": "valid_names.json#truth_types"
+            "$ref": "truth_type.json"
         },
         "skill": {
             "description": "What is their skill/role within DOGE?",
-            "$ref": "valid_names.json#skill_types"
+            "type": "string",
+            "enum": [
+                "lawyer",
+                "strategic",
+                "political",
+                "designer",
+                "administrator",
+                "analyst",
+                "coder",
+                "executive",
+                "recruiter"
+            ]
         },
         "tech_links": {
             "description": "Links to any of the usual Musk/Thiel/Andreesen-linked companies",
             "type": "array",
             "items": {
-                "$ref": "valid_names.json#tech_link_values"
+                "type": "string",
+                "enum": [
+                    "Airbnb",
+                    "Anduril",
+                    "Andreessen Horowitz",
+                    "Boring Co.",
+                    "Human Capital",
+                    "Neuralink",
+                    "Musk family",
+                    "Palantir",
+                    "SpaceX",
+                    "Tesla",
+                    "Twitter",
+                    "Valor"
+                ]
             }
         },
         "linkedin": {

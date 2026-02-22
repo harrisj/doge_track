@@ -1,61 +1,66 @@
 {
-  "$id": "schemas/agency",
-  "type": "object",
-  "title": "Agency",
-  "description": "Information about a specific agency",
-  "properties": {
-    "name": {
-      "description": "The name of the agency",
-      "type": "string"
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "Agency",
+    "description": "Information about a specific agency",
+    "properties": {
+        "name": {
+            "description": "The name of the agency",
+            "type": "string"
+        },
+        "id": {
+            "description": "An ID for the agency (usually an acronym)",
+            "$ref": "agency_id.json"
+        },
+        "parent_id": {
+            "description": "The parent agency (identified by their ID)",
+            "$ref": "agency_id.json"
+        },
+        "slug": {
+            "description": "A slug for the agency",
+            "type": "string"
+        },
+        "page_slug": {
+            "description": "The slug for the agency_page where this agency will be located (some pages might have multiple agencies)",
+            "type": "string"
+        },
+        "link": {
+            "description": "A link to an overview of the agency",
+            "type": "string",
+            "format": "uri"
+        },
+        "short_name": {
+            "description": "A short display name for the agency",
+            "type": "string"
+        },
+        "blurb": {
+            "description": "A bit of text describing the agency and DOGE's activities there",
+            "type": "string"
+        },
+        "blurb_date": {
+            "description": "When the blurb was written",
+            "type": "string",
+            "format": "date"
+        },
+        "doge_base": {
+            "description": "Is this an agency where DOGE is maintaining a permanent presence?",
+            "type": "boolean"
+        },
+        "events": {
+            "type": "array",
+            "items": {
+                "$ref": "event.json"
+            }
+        },
+        "linkify": {
+            "type": "boolean"
+        }
     },
-    "id": {
-      "description": "An ID for the agency (usually an acronym)",
-      "$ref": "valid_names.json#agency_ids"
-    },
-    "parent_id": {
-      "description": "The parent agency (identified by their ID)",
-      "$ref": "valid_names.json#agency_ids"
-    },
-    "slug": {
-      "description": "A slug for the agency",
-      "type": "string"
-    },
-    "page_slug": {
-      "description": "The slug for the agency_page where this agency will be located (some pages might have multiple agencies)",
-      "type": "string"
-    },
-    "link": {
-      "description": "A link to an overview of the agency",
-      "type": "string",
-      "format": "uri"
-    },
-    "short_name": {
-      "description": "A short display name for the agency",
-      "type": "string"
-    },
-    "blurb": {
-      "description": "A bit of text describing the agency and DOGE's activities there",
-      "type": "string"
-    },
-    "blurb_date": {
-      "description": "When the blurb was written",
-      "type": "string",
-      "format": "date"
-    },
-    "doge_base": {
-      "description": "Is this an agency where DOGE is maintaining a permanent presence?",
-      "type": "boolean"
-    },
-    "events": {
-      "type": "array",
-      "items": {
-        "$ref": "event.json"
-      }
-    },
-    "linkify": {
-      "type": "boolean"
-    }
-  },
-  "required": ["name", "id", "slug", "short_name"],
-  "additionalProperties": false
+    "required": [
+        "name",
+        "id",
+        "slug",
+        "short_name"
+    ],
+    "additionalProperties": false
 }

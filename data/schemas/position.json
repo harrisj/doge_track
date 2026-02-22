@@ -1,191 +1,215 @@
 {
-  "$id": "schemas/position",
-  "type": "object",
-  "title": "Position",
-  "description": "Information about a specific hiring appointment for a DOGE staffer",
-  "properties": {
-    "id": {
-      "description": "A unique ID for the employment term record",
-      "type": "string"
-    },
-    "name": {
-      "description": "The name of the person being hired",
-      "$ref": "valid_names.json#people"
-    },
-    "alias": {
-      "description": "If this is an aliased position, the alias references",
-      "type": "string"
-    },
-    "agency": {
-      "description": "The agency where the term of employment is",
-      "$ref": "valid_names.json#agency_ids"
-    },
-    "type": {
-      "description": "The type of position this is",
-      "$ref": "valid_names.json#position_types"
-    },
-    "from": {
-      "description": "For details, where he is detailed from",
-      "$ref": "valid_names.json#agency_ids"
-    },
-    "from_truth": {
-      "description": "How confident are we in this being the source agency for detailing/transfers",
-      "$ref": "valid_names.json#truth_types"
-    },
-    "start_date": {
-      "description": "When the term of employment started (might be approximate)",
-      "type": "string"
-    },
-    "start_date_truth": {
-      "description": "The precision for the start_date",
-      "$ref": "valid_names.json#truth_types"
-    },
-    "end_date": {
-      "description": "When the term of employment ended (if a person has left the specific role through departure, promotion or reassignment)",
-      "type": "string"
-    },
-    "end_date_truth": {
-      "description": "The precision for the end_date",
-      "$ref": "valid_names.json#truth_types"
-    },
-    "end_type": {
-      "description": "The type of departure for this position",
-      "$ref": "valid_names.json#offboard_types"
-    },
-    "nte_date": {
-      "description": "If the NTE date for the appointment is known, it will be recorded here",
-      "type": "string"
-    },
-    "nte_date_truth": {
-      "description": "The precision for the nte_date",
-      "$ref": "valid_names.json#truth_types"
-    },
-    "signed_date": {
-      "description": "For detailing agreements, when it was signed",
-      "type": "string",
-      "format": "date"
-    },
-    "description": {
-      "description": "The position description",
-      "type": "string"
-    },
-    "sort_date": {
-      "description": "Special string used for sorting if the start_date isn't set",
-      "type": "string"
-    },
-    "fuzz": {
-      "description": "For comments on the fuzziness of some data",
-      "type": "string"
-    },
-    "appt_type_code": {
-      "description": "A numeric code for the type of appointment",
-      "type": "integer"
-    },
-    "appt_type": {
-      "description": "A string description of the appointment type",
-      "type": "string"
-    },
-    "sge": {
-      "description": "Appointed as a Special Government Employee meaning bypassing ethics disclosures",
-      "type": "boolean"
-    },
-    "pay_grade": {
-      "description": "A string description of the pay scale and grade (eg, GS-15)",
-      "type": "string"
-    },
-    "salary": {
-      "description": "A string description of the salary",
-      "type": "string"
-    },
-    "pd_code": {
-      "description": "The position description identifier for this specific position",
-      "type": "string"
-    },
-    "title": {
-      "description": "The title for the position",
-      "type": "string"
-    },
-    "title_type": {
-      "description": "The type of the title",
-      "$ref": "valid_names.json#title_types"
-    },
-    "series": {
-      "description": "The series for the position",
-      "type": "string"
-    },
-    "supervisory": {
-      "description": "Boolean to indicate if the position is supervisory",
-      "type": "boolean"
-    },
-    "excepted": {
-      "description": "Boolean to indicate if the position is excepted/non-competitive",
-      "type": "boolean"
-    },
-    "office": {
-      "description": "The office where the position will report to",
-      "type": "string"
-    },
-    "source": {
-      "description": "Source(s) for the information",
-      "oneOf": [
-        {
-          "type": "string",
-          "format": "url"
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "Position",
+    "description": "Information about a specific hiring appointment for a DOGE staffer",
+    "properties": {
+        "id": {
+            "description": "A unique ID for the employment term record",
+            "type": "string"
         },
-        {
-          "type": "array",
-          "items": {
+        "name": {
+            "description": "The name of the person being hired",
+            "$ref": "name.json"
+        },
+        "alias": {
+            "description": "If this is an aliased position, the alias references",
+            "type": "string"
+        },
+        "agency": {
+            "description": "The agency where the term of employment is",
+            "$ref": "agency_id.json"
+        },
+        "type": {
             "type": "string",
-            "format": "url"
-          }
+            "description": "The type of position this is",
+            "enum": [
+                "appointed",
+                "detailed",
+                "consultant",
+                "internal",
+                "converted",
+                "promotion",
+                "demotion",
+                "unknown"
+            ]
+        },
+        "from": {
+            "description": "For details, where he is detailed from",
+            "$ref": "agency_id.json"
+        },
+        "from_truth": {
+            "description": "How confident are we in this being the source agency for detailing/transfers",
+            "$ref": "truth_type.json"
+        },
+        "start_date": {
+            "description": "When the term of employment started (might be approximate)",
+            "type": "string"
+        },
+        "start_date_truth": {
+            "description": "The precision for the start_date",
+            "$ref": "truth_type.json"
+        },
+        "end_date": {
+            "description": "When the term of employment ended (if a person has left the specific role through departure, promotion or reassignment)",
+            "type": "string"
+        },
+        "end_date_truth": {
+            "description": "The precision for the end_date",
+            "$ref": "truth_type.json"
+        },
+        "end_type": {
+            "description": "The type of departure for this position",
+            "$ref": "end_type.json"
+        },
+        "nte_date": {
+            "description": "If the NTE date for the appointment is known, it will be recorded here",
+            "type": "string"
+        },
+        "nte_date_truth": {
+            "description": "The precision for the nte_date",
+            "$ref": "truth_type.json"
+        },
+        "signed_date": {
+            "description": "For detailing agreements, when it was signed",
+            "type": "string",
+            "format": "date"
+        },
+        "description": {
+            "description": "The position description",
+            "type": "string"
+        },
+        "sort_date": {
+            "description": "Special string used for sorting if the start_date isn't set",
+            "type": "string"
+        },
+        "fuzz": {
+            "description": "For comments on the fuzziness of some data",
+            "type": "string"
+        },
+        "appt_type_code": {
+            "description": "A numeric code for the type of appointment",
+            "type": "integer"
+        },
+        "appt_type": {
+            "description": "A string description of the appointment type",
+            "type": "string"
+        },
+        "sge": {
+            "description": "Appointed as a Special Government Employee meaning bypassing ethics disclosures",
+            "type": "boolean"
+        },
+        "pay_grade": {
+            "description": "A string description of the pay scale and grade (eg, GS-15)",
+            "type": "string"
+        },
+        "salary": {
+            "description": "A string description of the salary",
+            "type": "string"
+        },
+        "pd_code": {
+            "description": "The position description identifier for this specific position",
+            "type": "string"
+        },
+        "title": {
+            "description": "The title for the position",
+            "type": "string"
+        },
+        "title_type": {
+            "description": "The type of the title",
+            "type": "string",
+            "enum": [
+                "director",
+                "cio",
+                "cto",
+                "dept_head",
+                "advisor",
+                "chief_counsel",
+                "other",
+                "unknown"
+            ]
+        },
+        "series": {
+            "description": "The series for the position",
+            "type": "string"
+        },
+        "supervisory": {
+            "description": "Boolean to indicate if the position is supervisory",
+            "type": "boolean"
+        },
+        "excepted": {
+            "description": "Boolean to indicate if the position is excepted/non-competitive",
+            "type": "boolean"
+        },
+        "office": {
+            "description": "The office where the position will report to",
+            "type": "string"
+        },
+        "source": {
+            "description": "Source(s) for the information",
+            "oneOf": [
+                {
+                    "type": "string",
+                    "format": "url"
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "format": "url"
+                    }
+                }
+            ]
+        },
+        "source_name": {
+            "description": "The name of the source",
+            "type": "string"
+        },
+        "reimbursed": {
+            "description": "Is the detail reimbursed?",
+            "type": "boolean"
+        },
+        "reimbursement_amount": {
+            "description": "If it is reimbursed, the amount of the reimbursement",
+            "type": "string"
+        },
+        "documents": {
+            "description": "A collection of sources",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "comment": {
+            "description": "For free-form comments on the record",
+            "type": "string"
+        },
+        "qualifications": {
+            "description": "Qualifications listed for the special hiring",
+            "type": "string"
+        },
+        "table_note": {
+            "description": "A short note to display in the position",
+            "type": "string",
+            "max_length": 30
+        },
+        "replaced_by": {
+            "description": "If the role was succeeded by another, give by here",
+            "type": "string"
+        },
+        "same_as": {
+            "description": "For use in aliases, indicates that the position is the same as another one publicly known (the two can be merged)",
+            "type": "string"
+        },
+        "mou": {
+            "description": "A link to a MOU if the position has one",
+            "type": "string"
         }
-      ]
     },
-    "source_name": {
-      "description": "The name of the source",
-      "type": "string"
-    },
-    "reimbursed": {
-      "description": "Is the detail reimbursed?",
-      "type": "boolean"
-    },
-    "reimbursement_amount": {
-      "description": "If it is reimbursed, the amount of the reimbursement",
-      "type": "string"
-    },
-    "documents": {
-      "description": "A collection of sources",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "comment": {
-      "description": "For free-form comments on the record",
-      "type": "string"
-    },
-    "qualifications": {
-      "description": "Qualifications listed for the special hiring",
-      "type": "string"
-    },
-    "table_note": {
-      "description": "A short note to display in the position",
-      "type": "string",
-      "max_length": 30
-    },
-    "replaced_by": {
-      "description": "If the role was succeeded by another, give by here",
-      "type": "string"
-    },
-    "same_as": {
-      "description": "For use in aliases, indicates that the position is the same as another one publicly known (the two can be merged)",
-      "type": "string"
-    },
-    "mou": {
-      "description": "A link to a MOU if the position has one",
-      "type": "string"
-    }
-  },
-  "required": ["id", "agency", "type"],
-  "additionalProperties": false
+    "required": [
+        "id",
+        "agency",
+        "type"
+    ],
+    "additionalProperties": false
 }

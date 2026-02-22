@@ -1,7 +1,8 @@
 {
-  "type": "array",
-  "description": "A list of known employment positions for DOGE staff at various agencies",
-  "items": {
-    "$ref": "position.json"
-  }
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "array",
+    "description": "A list of known employment positions for DOGE staff at various agencies",
+    "items": {
+        "$ref": "position.json"
+    }
 }

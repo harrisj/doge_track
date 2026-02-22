@@ -1,7 +1,8 @@
 {
-  "type": "array",
-  "description": "Questions that aren't yet answered (and some that are)",
-  "items": {
-    "$ref": "question.json"
-  }
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "array",
+    "description": "Questions that aren't yet answered (and some that are)",
+    "items": {
+        "$ref": "question.json"
+    }
 }

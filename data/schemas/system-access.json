@@ -1,124 +1,146 @@
 {
-  "$id": "schemas/system-access",
-  "type": "object",
-  "title": "System Access",
-  "description": "Represents specific system access granted to 1 or more people at DOGE",
-  "properties": {
-    "id": {
-      "type": "string",
-      "description": "A specific identifier for this access"
-    },
-    "name": {
-      "description": "Who of the DOGE crew was granted access",
-      "$ref": "valid_names.json#people"
-    },
-    "alias": {
-      "description": "If access was granted to an alias. This will overwrite the name field if the Alias is known",
-      "type": "string"
-    },
-    "agency": {
-      "description": "For SSP/SaaS systems, the specific agency this access was granted at",
-      "$ref": "valid_names.json#agency_ids"
-    },
-    "type": {
-      "description": "The maximum type of access granted",
-      "$ref": "valid_names.json#access_types"
-    },
-    "date_requested": {
-      "description": "The date access was first requested (if known and predates granting)",
-      "$ref": "valid_names.json#fuzzy_date"
-    },
-    "date_req_truth": {
-      "description": "Sourcing on the date_requested",
-      "$ref": "valid_names.json#truth_types"
-    },
-    "date_granted": {
-      "description": "The date access was granted",
-      "$ref": "valid_names.json#fuzzy_date"
-    },
-    "date_grant_truth": {
-      "description": "Sourcing on the date_granted",
-      "$ref": "valid_names.json#truth_types"
-    },
-    "ao_name": {
-      "description": "If known, who granted the access",
-      "type": "string"
-    },
-    "ao_type": {
-      "description": "The type of the granting position",
-      "$ref": "valid_names.json#ao_types"
-    },
-    "ao_title": {
-      "description": "The title of the authorizing officer",
-      "type": "string"
-    },
-    "ao_office": {
-      "description": "The office of the authorizing officer",
-      "type": "string"
-    },
-    "ao_doge": {
-      "description": "Is the AO a DOGE person?",
-      "type": "boolean"
-    },
-    "ao_truth": {
-      "description": "How fuzzy is this AO information",
-      "$ref": "valid_names.json#truth_types"
-    },
-    "bypassed": {
-      "description": "What procedures were skipped / staff were sidelined to provide such access",
-      "type": "string"
-    },
-    "date_last_used": {
-      "description": "The date access was granted",
-      "$ref": "valid_names.json#fuzzy_date"
-    },
-    "date_used_truth": {
-      "description": "Sourcing on the date_granted",
-      "$ref": "valid_names.json#truth_types"
-    },
-    "date_revoked": {
-      "description": "The date access was granted",
-      "$ref": "valid_names.json#fuzzy_date"
-    },
-    "date_revoked_truth": {
-      "description": "Sourcing on the date_granted",
-      "$ref": "valid_names.json#truth_types"
-    },
-    "date_nte": {
-      "description": "The date for which access grant is not to exceed. Also used for cases like court declarations where exact revocation hasn't been given",
-      "$ref": "valid_names.json#fuzzy_date"
-    },
-    "never_accessed": {
-      "description": "True if the system was reportedly never accessed",
-      "type": "boolean"
-    },
-    "date_nte_truth": {
-      "description": "Sourcing on the date_granted",
-      "$ref": "valid_names.json#truth_types"
-    },
-    "source": {
-      "description": "Source(s) for the information",
-      "oneOf": [
-        { "type": "string" },
-        {
-          "type": "array",
-          "items": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "System Access",
+    "description": "Represents specific system access granted to 1 or more people at DOGE",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "A specific identifier for this access"
+        },
+        "name": {
+            "description": "Who of the DOGE crew was granted access",
+            "$ref": "name.json"
+        },
+        "alias": {
+            "description": "If access was granted to an alias. This will overwrite the name field if the Alias is known",
             "type": "string"
-          }
+        },
+        "agency": {
+            "description": "For SSP/SaaS systems, the specific agency this access was granted at",
+            "$ref": "agency_id.json"
+        },
+        "type": {
+            "type": "string",
+            "description": "The maximum type of access granted",
+            "enum": [
+                "source-code",
+                "read",
+                "read-write",
+                "admin",
+                "unknown"
+            ]
+        },
+        "date_requested": {
+            "description": "The date access was first requested (if known and predates granting)",
+            "$ref": "fuzzy_date.json"
+        },
+        "date_req_truth": {
+            "description": "Sourcing on the date_requested",
+            "$ref": "truth_type.json"
+        },
+        "date_granted": {
+            "description": "The date access was granted",
+            "$ref": "fuzzy_date.json"
+        },
+        "date_grant_truth": {
+            "description": "Sourcing on the date_granted",
+            "$ref": "truth_type.json"
+        },
+        "ao_name": {
+            "description": "If known, who granted the access",
+            "type": "string"
+        },
+        "ao_type": {
+            "type": "string",
+            "description": "The type of the granting position",
+            "enum": [
+                "director",
+                "deputy",
+                "cio",
+                "cto",
+                "isso",
+                "other",
+                "unknown"
+            ]
+        },
+        "ao_title": {
+            "description": "The title of the authorizing officer",
+            "type": "string"
+        },
+        "ao_office": {
+            "description": "The office of the authorizing officer",
+            "type": "string"
+        },
+        "ao_doge": {
+            "description": "Is the AO a DOGE person?",
+            "type": "boolean"
+        },
+        "ao_truth": {
+            "description": "How fuzzy is this AO information",
+            "$ref": "truth_type.json"
+        },
+        "bypassed": {
+            "description": "What procedures were skipped / staff were sidelined to provide such access",
+            "type": "string"
+        },
+        "date_last_used": {
+            "description": "The date access was granted",
+            "$ref": "fuzzy_date.json"
+        },
+        "date_used_truth": {
+            "description": "Sourcing on the date_granted",
+            "$ref": "truth_type.json"
+        },
+        "date_revoked": {
+            "description": "The date access was granted",
+            "$ref": "fuzzy_date.json"
+        },
+        "date_revoked_truth": {
+            "description": "Sourcing on the date_granted",
+            "$ref": "truth_type.json"
+        },
+        "date_nte": {
+            "description": "The date for which access grant is not to exceed. Also used for cases like court declarations where exact revocation hasn't been given",
+            "$ref": "fuzzy_date.json"
+        },
+        "never_accessed": {
+            "description": "True if the system was reportedly never accessed",
+            "type": "boolean"
+        },
+        "date_nte_truth": {
+            "description": "Sourcing on the date_granted",
+            "$ref": "truth_type.json"
+        },
+        "source": {
+            "description": "Source(s) for the information",
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            ]
+        },
+        "source_name": {
+            "description": "The name of the source",
+            "type": "string"
+        },
+        "comment": {
+            "type": "string"
+        },
+        "table_note": {
+            "type": "string"
         }
-      ]
     },
-    "source_name": {
-      "description": "The name of the source",
-      "type": "string"
-    },
-    "comment": {
-      "type": "string"
-    },
-    "table_note": {
-      "type": "string"
-    }
-  },
-  "required": ["id", "type", "source"],
-  "additionalProperties": false
+    "required": [
+        "id",
+        "type",
+        "source"
+    ],
+    "additionalProperties": false
 }

@@ -1,9 +1,9 @@
 {
-  "$id": "schemas/exec-orders-file",
-  "title": "ExecOrdersFile",
-  "description": "A list of all Exec Orders that might support DOGE activities",
-  "type": "array",
-  "items": {
-    "$ref": "exec-order.json"
-  }
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "ExecOrdersFile",
+    "description": "A list of all Exec Orders that might support DOGE activities",
+    "type": "array",
+    "items": {
+        "$ref": "exec-order.json"
+    }
 }

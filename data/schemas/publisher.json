@@ -1,29 +1,35 @@
 {
-  "$id": "schemas/publisher",
-  "type": "object",
-  "title": "Posting",
-  "description": "Information about a specific publisher",
-  "properties": {
-    "id": {
-      "description": "An ID for the publisher",
-      "type": "string"
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "Posting",
+    "description": "Information about a specific publisher",
+    "properties": {
+        "id": {
+            "description": "An ID for the publisher",
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the publisher",
+            "type": "string"
+        },
+        "short_name": {
+            "description": "A short name for the site",
+            "type": "string"
+        },
+        "slug": {
+            "description": "A slug for the site",
+            "type": "string"
+        },
+        "hostname": {
+            "description": "A hostname for the publisher",
+            "type": "string"
+        }
     },
-    "name": {
-      "description": "The name of the publisher",
-      "type": "string"
-    },
-    "short_name": {
-      "description": "A short name for the site",
-      "type": "string"
-    },
-    "slug": {
-      "description": "A slug for the site",
-      "type": "string"
-    },
-    "hostname": {
-      "description": "A hostname for the publisher",
-      "type": "string"
-    }
-  },
-  "required": ["id", "name", "short_name", "hostname", "slug"]
+    "required": [
+        "id",
+        "name",
+        "short_name",
+        "hostname",
+        "slug"
+    ]
 }

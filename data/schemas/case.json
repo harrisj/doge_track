@@ -1,4 +1,5 @@
 {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "schemas/case",
     "type": "object",
     "title": "Case",
@@ -28,12 +29,12 @@
             "description": "Can be a single agency or an array of agencies affected/involved in the event",
             "anyOf": [
                 {
-                    "$ref": "valid_names.json#agency_ids"
+                    "$ref": "agency_id.json"
                 },
                 {
                     "type": "array",
                     "items": {
-                        "$ref": "valid_names.json#agency_ids"
+                        "$ref": "agency_id.json"
                     }
                 }
             ]

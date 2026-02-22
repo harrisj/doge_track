@@ -1,73 +1,73 @@
 {
-  "$id": "schemas/question",
-  "type": "object",
-  "title": "Question",
-  "description": "An open question about a person, agency or other thing",
-  "properties": {
-    "id": {
-      "description": "An auto-generated ID for the question (added as part of validation)",
-      "type": "string",
-      "maxLength": 8
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "Question",
+    "description": "An open question about a person, agency or other thing",
+    "properties": {
+        "id": {
+            "description": "An auto-generated ID for the question (added as part of validation)",
+            "type": "string",
+            "maxLength": 8
+        },
+        "question": {
+            "description": "The text of the question",
+            "type": "string"
+        },
+        "date": {
+            "description": "The date of the question",
+            "type": "string"
+        },
+        "context": {
+            "description": "A context for the question",
+            "type": "string"
+        },
+        "name": {
+            "description": "Set if the question is about a particular person",
+            "$ref": "name.json"
+        },
+        "alias": {
+            "description": "If the question is about a specific alias",
+            "type": "string"
+        },
+        "case_no": {
+            "description": "If the question is about a legal case",
+            "type": "string"
+        },
+        "agency_id": {
+            "description": "Set if the question is about a particular agency",
+            "$ref": "agency_id.json"
+        },
+        "system_id": {
+            "description": "Set if the question is about a specific computer system",
+            "type": "string"
+        },
+        "position_id": {
+            "description": "Set if the question is about a specific position",
+            "type": "string"
+        },
+        "event_id": {
+            "description": "Set if the question is about a specific event",
+            "type": "string"
+        },
+        "answer": {
+            "description": "If the question has been answered",
+            "type": "string"
+        },
+        "answer_date": {
+            "description": "The date the answer was found",
+            "type": "string"
+        },
+        "sources": {
+            "type": "array",
+            "description": "A link to one or more sources if applicable",
+            "items": {
+                "type": "string"
+            }
+        }
     },
-    "question": {
-      "description": "The text of the question",
-      "type": "string"
-    },
-    "date": {
-      "description": "The date of the question",
-      "type": "string"
-    },
-    "context": {
-      "description": "A context for the question",
-      "type": "string"
-    },
-    "name": {
-      "description": "Set if the question is about a particular person",
-      "$ref": "valid_names.json#people"
-    },
-    "alias": {
-      "description": "If the question is about a specific alias",
-      "type": "string"
-    },
-    "case_no": {
-      "description": "If the question is about a legal case",
-      "type": "string"
-    },
-    "agency_id": {
-      "description": "Set if the question is about a particular agency",
-      "$ref": "valid_names.json#agency_ids"
-    },
-    "system_id": {
-      "description": "Set if the question is about a specific computer system",
-      "type": "string"
-    },
-    "position_id": {
-      "description": "Set if the question is about a specific position",
-      "type": "string"
-    },
-    "event_id": {
-      "description": "Set if the question is about a specific event",
-      "type": "string"
-    },
-    "answer": {
-      "description": "If the question has been answered",
-      "type": "string"
-    },
-    "answer_date": {
-      "description": "The date the answer was found",
-      "type": "string"
-    },
-    "sources": {
-      "type": "array",
-      "description": "A link to one or more sources if applicable",
-      "items": {
-        "type": "string"
-      }
-    }
-  },
-  "requiredProperties": [
-    "question",
-    "question_date"
-  ],
-  "additionalProperties": false
+    "requiredProperties": [
+        "question",
+        "question_date"
+    ],
+    "additionalProperties": false
 }

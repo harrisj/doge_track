@@ -1,7 +1,8 @@
 {
-  "type": "array",
-  "description": "A list of systems that are in use at various agencies",
-  "items": {
-    "$ref": "system.json"
-  }
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "array",
+    "description": "A list of systems that are in use at various agencies",
+    "items": {
+        "$ref": "system.json"
+    }
 }
