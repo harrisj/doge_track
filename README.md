@@ -20,7 +20,7 @@ This is a [Bridgetown](https://bridgetownrb.com) project with the following spec
     - Including some agency overviews (both specific pages and collections of smaller agencies)
     - Adding some specialized descriptions for things like aliases or the DOGE wrecker teams
     - Cleaning up some of the page generation logic
-  - Adding visualations like timelines to the more table-heavy pages
+  - Adding visualizations like timelines to the more table-heavy pages
   - Filtering and reordering for event timelines
   - Government system pages (maybe grouped by function)
   - Maybe some sort of blog with updates (but the ship for that might have sailed)
@@ -29,8 +29,8 @@ This is a [Bridgetown](https://bridgetownrb.com) project with the following spec
 
 There are several ways you can help! As you might have guessed, I'm not the greatest at web design so if you have better options, I'm all for it. I am currently using the following technologies on the project:
 
-- Web Components (mostly in Liquid/HTML, but considering Lit)
-- Bulma CSS system
+- Web Components (mostly in Liquid/HTMLe)
+- Tailwind CSS
 - SASS and esbuild
 
 Nothing screams cutting edge about it, but I'm a one-person show doing this in my spare time, so "just okay" that ships is better than perfect that doesn't. If you have some bold ideas of how things should look, definitely get in touch.
