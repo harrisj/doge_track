@@ -3,7 +3,7 @@ layout: docs
 title: Who's Involved in DOGE
 description: An alphabetical listing of all the people being tracked as part of the DOGE tracker
 index_for_search: true
-text_updated: 2026-02-02
+text_updated: 2026-02-23
 ---
 {%@ 'atoms/title', title: "Who's Involved in DOGE" %}
 
@@ -15,10 +15,10 @@ DOGE is very difficult to track. The Trump Administration has used every tool at
 To better understand the types of roles I've seen within DOGE, I have sorted them into several distinct categories of my own design. These are demarcated with specific icons in tables and text where convenient:
 
 - <i class="fa-sharp fa-solid fa-megaphone"></i> <strong>{{ link_to "Boosters", "/people/leaders/" }}</strong> are people in DOGE's orbit who have helped with recruitment and establishing the organization.
-- <i class="fa-sharp fa-solid fa-door-open"></i> <strong>{{ link_to "Enablers", "/people/enablers/" }}</strong> are staff embedded in agencies who work to open the door for wreckers to come in. They are not always DOGE hires.
-- <i class="fa-sharp fa-solid fa-briefcase"></i> <strong>{{ link_to "Leaders", "/people/leaders/" }}</strong> are the identified and hidden leaders of the operation
-- <i class="fa-sharp fa-solid fa-chair-office"></i> <strong>{{ link_to "Support", "/people/support-team/" }}</strong> are the home team, largely based in DOGE and OPM and there to support operations
-- <i class="fa-sharp fa-solid fa-bomb"></i> <strong>{{ link_to "Wreckers", "/people/wreckers/" }}</strong> are the away team and the muscle, dispatched to descend on agencies to infiltrate operations, exfiltrate data and possibly destroy entirely
+- <i class="fa-sharp fa-solid fa-door-open"></i> <strong>{{ link_to "Enablers", "/people/enablers/" }}</strong> are staff embedded in agencies who work to open the door for DOGE's activities. They are not always DOGE hires.
+- <i class="fa-sharp fa-solid fa-briefcase"></i> <strong>{{ link_to "Leaders", "/people/leaders/" }}</strong> are the identified and hidden leaders of the entire DOGE operation in its various agencies
+- <i class="fa-sharp fa-solid fa-chair-office"></i> <strong>{{ link_to "Support", "/people/support-team/" }}</strong> are the home team, largely based in DOGE and OPM to support operations of other staff
+- <i class="fa-sharp fa-solid fa-bomb"></i> <strong>{{ link_to "Wreckers", "/people/wreckers/" }}</strong> are the away team and the muscle, hired into or frequently dispatched to descend on agencies to cancel grants and contracts, fire staff, exfiltrate data and possibly destroy the agency entirely
 
 Like any categorization, this is an approximation that provides useful clarity but also masks the messy nuances of reality. I have no idea if DOGE has their own internal categories and how well these map to their own. My categorization also does not account for people changing their roles over time. For instance, {{ person_link("Scott Coulter") }} originally would have been classified as a Wrecker since he was detailed into other agencies like NASA, but I have reclassified him as an Enabler since he was promoted to a Chief Information Officer at Social Security.
 
