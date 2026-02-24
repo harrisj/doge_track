@@ -2,6 +2,6 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "Valid values for the precision assessment on dates in positions",
     "$comment": "Verified = officially announced by admin / in sworn court documentation",
-    "enum": ["verified", "reported", "inferred", "guessed", "disputed"],
+    "enum": ["verified", "self_reported", "reported", "inferred", "guessed", "disputed"],
     "type": "string"
 }
