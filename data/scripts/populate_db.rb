@@ -120,6 +120,7 @@ people_yaml.each do |p_hash|
     pos_hash[:sort_date] ||= pos_hash[:start_date]
     pos_hash[:sort_date] ||= DEFAULT_POS_SORT_APPOINTED if pos_hash[:type] == 'appointed'
     pos_hash[:sort_date] ||= DEFAULT_POS_SORT_OTHER
+    pos_hash[:category] ||= 'unknown'
 
     pos = Position.create( # .reject { |k, _| %i[from alias agency].include?(k) })
       pos_hash.except(:source, :source_name)
@@ -169,6 +170,7 @@ aliases_yaml.each do |alias_hash|
     pos_hash[:sort_date] ||= pos_hash[:start_date]
     pos_hash[:sort_date] ||= DEFAULT_POS_SORT_APPOINTED if pos_hash[:type] == 'appointed'
     pos_hash[:sort_date] ||= DEFAULT_POS_SORT_OTHER
+    pos_hash[:category] ||= 'unknown'
 
     pos = Position.create(pos_hash.except(:source))
 

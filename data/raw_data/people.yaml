@@ -18,6 +18,7 @@
   - id: usda-abrahamson
     agency: USDA
     type: appointed
+    category: wrecker
     sort_date: 2025-03-01
     title: Senior Advisor on Government Efficiency
     title_type: advisor
@@ -25,6 +26,7 @@
     source: https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
   - id: dot-abrahamson
     type: appointed
+    category: support
     title: Senior Advisor
     title_type: advisor
     sort_date: 2025-02-01
@@ -49,6 +51,7 @@
   positions:
   - id: nds-adams
     type: appointed
+    category: builder
     agency: NDS
     title: Producer
     start_date: 2025-12-XX
@@ -74,6 +77,7 @@
   - id: gsa-aimonetti
     agency: GSA
     type: appointed
+    category: support
     start_date: 2025-02-XX
     start_date_truth: reported
     end_date: 2025-07-30
@@ -90,7 +94,8 @@
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-doge-aimonetti
-    type: detail
+    type: detailed
+    category: support
     agency: DOGE
     from: GSA
     start_date: 2025-02-24
@@ -136,6 +141,7 @@
   positions:
   - id: opm-jacob-altik
     type: appointed
+    category: support
     agency: OPM
     start_date: 2025-01-24
     start_date_truth: verified
@@ -163,6 +169,7 @@
     table_note: Start date guessed from system access. No longer in govt on 6/27
   - id: detail-opm-doge-altik
     type: detailed
+    category: support
     from: OPM
     agency: DOGE
     start_date: 2025-01-27
@@ -173,6 +180,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-opm-usadf-altik
     type: detailed
+    category: wrecker
     from: OPM
     from_truth: guessed
     agency: USADF
@@ -183,6 +191,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
   - id: detail-opm-fcc-altik
     type: detailed
+    category: wrecker
     from: DOGE
     from_truth: verified
     start_date: 2025-03-18
@@ -227,6 +236,7 @@
   positions:
   - id: detail-opm-dhs-armstrong
     type: detailed
+    category: support
     from: OPM
     from_truth: guessed
     agency: DHS
@@ -238,6 +248,7 @@
     comment: Find more definitive info for DHS link
   - id: opm-anthony-armstrong
     type: appointed
+    category: leadership
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
@@ -263,6 +274,7 @@
     comment: From FOIA documents
   - id: detail-opm-fdic-armstrong
     type: detailed
+    category: wrecker
     from: OPM
     from_truth: guessed
     start_date: 2025-04-10
@@ -291,6 +303,7 @@
   positions:
   - id: education-balajadia
     type: detailed
+    category: unknown
     table_note: NYT links her to Education, but no other info found
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
     sort_date: 2025-02-05
@@ -326,6 +339,7 @@
   positions:
   - id: sba-lopez-ballefin
     type: unknown
+    category: wrecker
     agency: SBA
     title: Senior Advisor
     title_type: advisor
@@ -333,6 +347,7 @@
   - id: gsa-lopez-ballefin
     agency: GSA
     type: consultant
+    category: wrecker
     supervisory: true
     start_date: 2025-05-XX
     start_date_truth: guessed
@@ -350,6 +365,7 @@
   - id: dot-bansal
     agency: DOT
     type: appointed
+    category: wrecker
     sort_date: 2025-05-15
     table_note: Reportedly reviewing DOT grants to cancel
     source: https://projects.propublica.org/elon-musk-doge-tracker/
@@ -371,6 +387,7 @@
   positions:
   - id: omb-cio-barbaccia
     type: appointed
+    category: enabler
     title: Federal Chief Information Officer
     title_type: cio
     agency: OMB
@@ -383,6 +400,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: usaid-cio-barbaccia
     type: appointed
+    category: enabler
     title: Acting Chief Information Officer
     title_type: cio
     agency: USAID
@@ -392,6 +410,7 @@
     table_note: Not announced, just appeared on cio.gov page some time after 9/20 and before 9/30
   - id: gsa-tts-barbaccia
     agency: GSA
+    category: enabler
     type: appointed
     start_date: 2026-02-19
     start_date_truth: reported
@@ -413,6 +432,7 @@
   - id: usda-berry
     agency: USDA
     type: appointed
+    category: wrecker
     title: Special Advisor
     title_type: advisor
     start_date: 2025-03-XX
@@ -420,6 +440,7 @@
     source: https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
   - id: usda-berry-sr-advisor
     type: converted
+    category: wrecker
     agency: USDA
     title: Senior Advisor on Government Efficiency
     office: Office of the Chief Information Officer
@@ -432,6 +453,7 @@
     source: https://www.flickr.com/photos/usdagov/54530624479/in/photostream/
   - id: usda-berry-cio
     type: promotion
+    category: enabler
     agency: USDA
     title: Chief Information Officer
     title_type: cio
@@ -457,6 +479,7 @@
   positions:
   - id: hhs-beyda
     type: appointed
+    category: wrecker
     agency: HHS
     title: Policy Advisor
     title_type: advisor
@@ -465,6 +488,7 @@
     sort_date: 2025-08-10
   - id: dol-sam-beyda
     type: unknown
+    category: unknown
     sort_date: 2025-02-13
     start_date: 2025-02-(13)~
     start_date_truth: reported
@@ -475,6 +499,7 @@
     agency: DOL
   - id: cdc-beyda
     type: promotion
+    category: enabler
     agency: CDC
     title: Deputy Chief of Staff
     title_type: dept_head
@@ -506,6 +531,7 @@
   positions:
   - id: doge-beynon
     type: appointed
+    category: wrecker
     agency: DOGE
     sort_date: 2025-02-04
     start_date: 2025-02-(04)~
@@ -523,6 +549,7 @@
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
   - id: detail-doge-education-alexandra-beynon
     type: detailed
+    category: wrecker
     start_date: 2025-02-05
     start_date_truth: verified
     from: DOGE
@@ -548,6 +575,7 @@
   positions:
   - id: nds-bhaloo
     type: appointed
+    category: builder
     agency: NDS
     start_date: 2026-02-06
     start_date_truth: self-reported
@@ -573,6 +601,7 @@
   positions:
   - id: opm-employee-2
     type: appointed
+    category: wrecker
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
@@ -599,6 +628,7 @@
     alias: OPM-02
   - id: detail-opm-doge-biasini
     type: detailed
+    category: unknown
     from: OPM
     agency: DOGE
     start_date: 2025-01-27
@@ -630,6 +660,7 @@
   positions:
   - id: ssa-bisignano
     type: appointed
+    category: enabler
     agency: SSA
     start_date: 2025-05-06
     start_date_truth: verified
@@ -640,6 +671,7 @@
       https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
   - id: irs-ceo-bisignano
     type: appointed
+    category: enabler
     agency: IRS
     start_date: 2025-10-06
     start_date_truth: reported
@@ -670,6 +702,7 @@
   positions:
   - id: opm-brian-bjelde
     type: appointed
+    category: support
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
@@ -698,6 +731,7 @@
     alias: OPM-07
   - id: opm-perm-employee-07
     type: converted
+    category: support
     agency: OPM
     start_date: 2025-01-31
     start_date_truth: verified
@@ -724,6 +758,7 @@
   positions:
   - id: energy-blake
     type: unknown
+    category: wrecker
     agency: Energy
     sort_date: 2025-03-15
     start_date: 2025-03-XX
@@ -736,6 +771,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-energy-nrc-blake
     type: detailed
+    category: wrecker
     agency: NRC
     from: Energy
     office: Office of the Executive Director for Operations
@@ -765,15 +801,20 @@
   positions:
   - id: detail-sba-bobba
     agency: SBA
+    sort_date: 2025-02-03
     from: OPM
     from_truth: guessed
     title: Senior Advisor
     title_type: advisor
     type: detailed
-    table_note: identified by agency FOIA as having been at the agency, guessing detailed
+    category: wrecker
+    table_note: >-
+      identified by agency FOIA as having been at the agency, guessing detailed possibly at same time
+      as other detailees
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
   - id: opm-3
     type: appointed
+    category: wrecker
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
@@ -809,10 +850,12 @@
     from_truth: inferred
     start_date: 2025-01-27
     start_date_truth: verified
+    category: support
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-opm-education-akash-bobba
     type: detailed
     agency: Education
+    category: wrecker
     from: OPM
     from_truth: verified
     signed_date: 2025-02-12
@@ -827,6 +870,7 @@
     alias: ED-01
   - id: detail-opm-ssa-opm-3
     type: detailed
+    category: wrecker
     agency: SSA
     from: OPM
     from_truth: verified
@@ -840,6 +884,7 @@
     alias: OPM-03
   - id: ssa-employee-1
     type: appointed
+    category: wrecker
     source:
     - https://www.documentcloud.org/documents/26028785-onboard-ssa-employee-1/
     - https://www.documentcloud.org/documents/25940536-25-hq-0774-f-resumes-redacted-3/
@@ -866,6 +911,7 @@
     alias: SSA-01
   - id: usda-bobba
     type: detailed
+    category: wrecker
     agency: USDA
     from: SSA
     from_truth: verified
@@ -878,6 +924,7 @@
       https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
   - id: opm-3-perm
     type: converted
+    category: wrecker
     agency: OPM
     table_note: Court testimony reports conversion to permanent, restored access
     start_date: 2025-08-08
@@ -906,6 +953,7 @@
   - id: gsa-boizelle
     agency: GSA
     type: appointed
+    category: support
     start_date: 2025-02-XX
     sort_date: 2025-02-16
     start_date_truth: reported
@@ -918,6 +966,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: doge-boizelle
     type: detailed
+    category: support
     agency: DOGE
     from: GSA
     from_truth: inferred
@@ -935,6 +984,7 @@
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: eop-boizelle
     type: appointed
+    category: support
     agency: EOP
     title: Senior Counsel to the President
     office: White House Counsel's Office
@@ -953,6 +1003,7 @@
   positions:
   - id: nds-brown
     type: appointed
+    category: builder
     agency: NDS
     title: Creative Director
     start_date: 2025-10-XX
@@ -974,6 +1025,7 @@
   positions:
   - id: doge-bryant
     type: appointed
+    category: support
     agency: DOGE
     start_date: 2025-02-24
     start_date_truth: verified
@@ -987,6 +1039,7 @@
   - id: gsa-bryant
     type: appointed
     agency: GSA
+    category: support
     start_date: 2025-03-XX
     sort_date: 2025-03-25
     table_note: linked to GSA by ProPublica, start date guessed
@@ -995,6 +1048,7 @@
     - https://projects.propublica.org/elon-musk-doge-tracker/
   - id: detail-doge-ftc-bryant
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     sort_date: 2025-03-28
@@ -1022,6 +1076,7 @@
   - id: doge-burnham
     agency: DOGE
     type: appointed
+    category: support
     sort_date: 2025-01-24
     start_date: 2025-01-24
     start_date_truth: reported
@@ -1050,6 +1105,7 @@
     agency: Commerce
     sort_date: 2025-06-16
     type: detailed
+    category: support
     from: GSA
     from_truth: guessed
     table_note: Linked by ProPublica
@@ -1058,6 +1114,7 @@
     agency: OPM
     sort_date: 2025-06-16
     type: detailed
+    category: support
     from: GSA
     from_truth: guessed
     table_note: Linked by ProPublica
@@ -1066,6 +1123,7 @@
     agency: State
     sort_date: 2025-06-16
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     table_note: Linked by ProPublica
@@ -1074,12 +1132,14 @@
     agency: USDA
     sort_date: 2025-06-16
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     table_note: Linked by ProPublica
     source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: gsa-burroughs
     type: appointed
+    category: support
     agency: GSA
     sort_date: 2025-06-15
     start_date: 2025-06-XX
@@ -1102,6 +1162,7 @@
   positions:
   - id: sba-carter
     type: appointed
+    category: wrecker
     agency: SBA
     title: Senior Advisor
     title_type: advisor
@@ -1118,6 +1179,7 @@
     - https://www.linkedin.com/in/josh-carter-cfa-caia-0a854b4b/
   - id: sba-carter-oii
     type: promotion
+    category: enabler
     agency: SBA
     title: Associate Administrator
     title_type: dept_head
@@ -1148,6 +1210,7 @@
   positions:
   - id: gsa-cavanaugh
     type: appointed
+    category: wrecker
     agency: GSA
     start_date: 2025-02-03
     start_date_truth: reported
@@ -1163,6 +1226,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-gsa-usadf-cavanaugh
     type: detailed
+    category: wrecker
     from: GSA
     agency: USADF
     from_truth: guessed
@@ -1172,6 +1236,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
   - id: detail-gsa-iaf-cavanaugh
     type: detailed
+    category: wrecker
     from: GSA
     agency: IAF
     from_truth: verified
@@ -1184,6 +1249,7 @@
     table_note: agency contact was earlier, but assuming MOU signed when Marocco seized power
   - id: detail-gsa-usip-cavanaugh
     type: detailed
+    category: wrecker
     agency: USIP
     from: GSA
     from_truth: guessed
@@ -1198,6 +1264,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.2.pdf
   - id: detail-gsa-neh-cavanaugh
     type: detailed
+    category: wrecker
     agency: NEH
     from: GSA
     from_truth: guessed
@@ -1208,6 +1275,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
   - id: detail-gsa-mcc-cavanaugh
     type: detailed
+    category: wrecker
     agency: MCC
     from: GSA
     from_truth: guessed
@@ -1218,6 +1286,7 @@
     table_note: Linked to MCC by NPR, start date guessed from disruption there
   - id: usip-cavanaugh-president
     type: appointed
+    category: wrecker
     start_date: 2025-03-25
     start_date_truth: verified
     end_date: 2025-07-25
@@ -1239,6 +1308,7 @@
     agency: USIP
   - id: imls-cavanaugh
     from: GSA
+    category: wrecker
     from_truth: guessed
     start_date: 2025-03-31
     start_date_truth: reported
@@ -1249,6 +1319,7 @@
     agency: IMLS
   - id: detail-gsa-commerce-cavanaugh
     type: detailed
+    category: wrecker
     agency: Commerce
     from: GSA
     from_truth: inferred
@@ -1261,6 +1332,7 @@
       to MBDA.
   - id: detail-gsa-mbda-cavanaugh
     type: detailed
+    category: wrecker
     agency: MBDA
     from: GSA
     start_date: 2025-04-(09)~
@@ -1270,6 +1342,7 @@
     table_note: inferred from disruptions at MBDA starting
   - id: detail-gsa-nlrb-cavanaugh
     type: detailed
+    category: wrecker
     agency: NLRB
     from: GSA
     from_truth: guessed
@@ -1280,6 +1353,7 @@
       https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
   - id: detail-gsa-dfc-cavanaugh
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     start_date: 2025-04-28
@@ -1290,6 +1364,7 @@
     agency: USDFC
   - id: detail-gsa-exim-cavanaugh
     type: detailed
+    category: wrecker
     agency: EXIM
     from: GSA
     from_truth: guessed
@@ -1299,6 +1374,7 @@
     source: https://bsky.app/profile/marisakabas.bsky.social/post/3lp5iwrmfv22y
   - id: detail-gsa-mspb-cavanaugh
     type: detailed
+    category: wrecker
     agency: MSPB
     from: GSA
     from_truth: guessed
@@ -1322,6 +1398,7 @@
   - id: gsa-childs
     agency: GSA
     type: appointed
+    category: builder
     title: Senior Advisor
     title_type: advisor
     sort_date: 2025-04-15
@@ -1353,6 +1430,7 @@
   positions:
   - id: opm-choi
     type: consultant
+    category: builder
     agency: OPM
     title: Senior Technologist
     start_date: 2025-04-XX
@@ -1368,6 +1446,7 @@
     - https://www.wired.com/story/what-is-doge-doing-now/
   - id: gsa-choi
     type: consultant
+    category: builder
     agency: GSA
     start_date: 2025-06-XX
     start_date_truth: reported
@@ -1391,6 +1470,7 @@
   positions:
   - id: coe-detail-epa
     type: detailed
+    category: wrecker
     from: DOGE
     from_truth: guessed
     start_date: 2025-02-XX
@@ -1401,6 +1481,7 @@
     agency: EPA
   - id: coe-doge
     type: appointed
+    category: support
     sort_date: 2025-02-01
     start_date: 2025-02-XX
     start_date_truth: self-reported
@@ -1409,6 +1490,7 @@
     source: https://www.linkedin.com/in/carl-coe-912b82/
   - id: epa-coe-chief-staff
     type: promotion
+    category: enabler
     title: Chief of Staff
     title_type: dept_head
     supervisory: true
@@ -1433,6 +1515,7 @@
   positions:
   - id: usda-cole
     type: appointed
+    category: wrecker
     agency: USDA
     title: Senior Team Leader on Government Efficiency
     start_date: 2025-02-10
@@ -1470,6 +1553,7 @@
   positions:
   - id: dol-collins
     type: appointed
+    category: wrecker
     appt_type: Schedule C
     start_date: 2025-02-18
     start_date_truth: verified
@@ -1525,6 +1609,7 @@
   positions:
   - id: irs-corcos
     type: consultant
+    category: wrecker
     start_date: 2025-02-28
     start_date_truth: reported
     title: Senior Advisor for Technology and Modernization
@@ -1543,6 +1628,7 @@
     agency: IRS
   - id: irs-corcos-cio
     type: promotion
+    category: enabler
     sort_date: 2025-05-06
     start_date: 2025-05-(06)~
     start_date_truth: reported
@@ -1569,6 +1655,7 @@
   positions:
   - id: detail-gsa-doge-coristine
     type: detailed
+    category: wrecker
     agency: DOGE
     from: GSA
     from_truth: inferred
@@ -1581,6 +1668,7 @@
   - id: gsa-edward-coristine
     agency: GSA
     type: appointed
+    category: wrecker
     salary: "$0"
     start_date: 2025-01-20
     start_date_truth: verified
@@ -1614,6 +1702,7 @@
     name: Edward Coristine
   - id: internal-dhs-tsa-coristine
     type: internal
+    category: wrecker
     from: DHS
     from_truth: inferred
     sort_date: 2025-02-14
@@ -1623,6 +1712,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-coristine
     type: internal
+    category: wrecker
     from: DHS
     from_truth: inferred
     agency: USCIS
@@ -1631,6 +1721,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: gsa-opm-coristine
     type: detailed
+    category: wrecker
     start_date: 2025-01-24
     agency: OPM
     from: GSA
@@ -1664,6 +1755,7 @@
     alias: OPM-04
   - id: detail-gsa-usaid-coristine
     type: detailed
+    category: wrecker
     agency: USAID
     from: GSA
     from_truth: guessed
@@ -1676,6 +1768,7 @@
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
   - id: detail-sba-coristine
     agency: SBA
+    category: wrecker
     from: GSA
     from_truth: guessed
     title: DOGE Advisor
@@ -1687,6 +1780,7 @@
     source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
   - id: detail-gsa-dhs-coristine
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     agency: DHS
@@ -1700,6 +1794,7 @@
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
   - id: internal-hhs-fema-edward-coristine
     type: internal
+    category: wrecker
     from: DHS
     from_truth: inferred
     agency: FEMA
@@ -1708,6 +1803,7 @@
     source: https://www.washingtonpost.com/climate-environment/2025/02/07/musk-trump-fema-doge/
   - id: detail-gsa-state-coristine
     type: detailed
+    category: wrecker
     agency: State
     from: GSA
     from_truth: reported
@@ -1719,6 +1815,7 @@
     source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
   - id: internal-dhs-cisa-coristine
     type: internal
+    category: wrecker
     from: DHS
     from_truth: inferred
     agency: CISA
@@ -1730,6 +1827,7 @@
     comment: Likely assigned from DHS to here
   - id: detail-doge-education-coristine
     type: detailed
+    category: wrecker
     agency: Education
     from: GSA
     from_truth: verified
@@ -1738,6 +1836,7 @@
     source: https://www.documentcloud.org/documents/26028798-doge-staff-education-20250407/
   - id: detail-gsa-hhs-edward-coristine
     type: detailed
+    category: wrecker
     agency: HHS
     from: GSA
     from_truth: guessed
@@ -1750,6 +1849,7 @@
     table_note: Date verified in court document, assuming detail from GSA
   - id: internal-hhs-cms-coristine
     type: internal
+    category: wrecker
     from_truth: inferred
     agency: CMS
     from: HHS
@@ -1760,6 +1860,7 @@
     comment: Granted access to CALM system on the same day as his detail to HHS
   - id: gsa-edward-coristine-fulltime
     agency: GSA
+    category: wrecker
     type: converted
     title: Senior Advisor
     pay_grade: GS-15
@@ -1773,6 +1874,7 @@
     source: https://www.wired.com/story/big-balls-coristine-doge-resigned-us-government/
   - id: ssa-coristine
     agency: SSA
+    category: wrecker
     type: appointed
     sge: true
     sort_date: 2025-06-23
@@ -1783,6 +1885,7 @@
   - id: nds-coristine
     agency: NDS
     type: appointed
+    category: builder
     start_date: 2025-08-(29)?
     start_date_truth: guessed
     sort_date: 2025-08-29
@@ -1807,6 +1910,7 @@
   positions:
   - id: nasa-coulter
     type: appointed
+    category: wrecker
     agency: NASA
     start_date: 2025-02-XX
     sort_date: 2025-02-01
@@ -1818,6 +1922,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-nasa-ssa-employee-2
     type: detailed
+    category: wrecker
     from: NASA
     from_truth: verified
     agency: SSA
@@ -1841,6 +1946,7 @@
     alias: SSA-02
   - id: ssa-employee-2-cio
     type: appointed
+    category: enabler
     agency: SSA
     title: Chief Information Officer
     title_type: cio
@@ -1876,6 +1982,7 @@
   positions:
   - id: opm-cromer
     type: appointed
+    category: support
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
@@ -1899,6 +2006,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-opm-usaid-cromer
     type: detailed
+    category: wrecker
     agency: USAID
     from: OPM
     from_truth: guessed
@@ -1908,6 +2016,7 @@
     source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
   - id: opm-doj-cromer
     type: appointed
+    category: wrecker
     agency: DOJ
     start_date: 2025-03-XX
     start_date_truth: self-reported
@@ -1933,6 +2042,7 @@
   positions:
   - id: sba-damiano
     type: unknown
+    category: unknown
     agency: SBA
     start_date: 2025-01-(20)~
     sort_date: 2025-01-20
@@ -1967,6 +2077,7 @@
   positions:
   - id: doge-steve-davis
     type: appointed
+    category: leadership
     agency: DOGE
     start_date: 2025-01-20
     start_date_truth: inferred
@@ -1998,6 +2109,7 @@
   positions:
   - id: opm-stephen-duarte
     type: appointed
+    category: support
     agency: OPM
     start_date: 2025-02-03
     start_date_truth: verified
@@ -2044,6 +2156,7 @@
   positions:
   - id: ssa-dudek-commissioner
     type: promotion
+    category: enabler
     title: Acting Commissioner
     title_type: director
     agency: SSA
@@ -2058,6 +2171,7 @@
       https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
   - id: ssa-dudek
     type: demotion
+    category: unknown
     agency: SSA
     start_date: 2025-05-06
     start_date_truth: reported
@@ -2091,6 +2205,7 @@
   positions:
   - id: gsa-stephen-ehikian
     type: appointed
+    category: enabler
     title: Acting Administrator
     title_type: director
     agency: GSA
@@ -2105,6 +2220,7 @@
     source: https://www.nextgov.com/people/2025/01/gsa-announces-new-fas-tts-leadership/402485/
   - id: gsa-ehikian-deputy
     type: demotion
+    category: enabler
     title: Deputy Administrator
     title_type: dept_head
     agency: GSA
@@ -2143,6 +2259,7 @@
   positions:
   - id: detail-dol-dhs-elez
     type: detailed
+    category: wrecker
     agency: DHS
     from: DOL
     from_truth: guessed
@@ -2150,6 +2267,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-cpb-elez
     type: internal
+    category: wrecker
     agency: CBP
     from: DHS
     from_truth: inferred
@@ -2157,6 +2275,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-ice-elez
     type: internal
+    category: wrecker
     agency: ICE
     from: DHS
     from_truth: inferred
@@ -2164,6 +2283,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-elez
     type: internal
+    category: wrecker
     agency: TSA
     from: DHS
     from_truth: inferred
@@ -2172,6 +2292,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-elez
     type: internal
+    category: wrecker
     agency: USCIS
     from: DHS
     from_truth: inferred
@@ -2179,6 +2300,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: treasury-marko-elez
     type: appointed
+    category: wrecker
     description: EXC APPT NTE
     start_date: 2025-01-21
     start_date_truth: verified
@@ -2202,6 +2324,7 @@
     - https://www.npr.org/2025/02/06/nx-s1-5289337/elon-musk-doge-treasury
   - id: doge-elez
     type: appointed
+    category: unknown
     agency: DOGE
     start_date: 2025-02-10
     start_date_truth: verified
@@ -2211,6 +2334,7 @@
       from Treasury but before starting at DOL
   - id: dol-elez
     type: appointed
+    category: wrecker
     agency: DOL
     start_date: 2025-02-12
     start_date_truth: inferred
@@ -2226,6 +2350,7 @@
     source: https://www.documentcloud.org/documents/26028796-onboard-dol-marko-elez/
   - id: detail-dol-ssa-employee-7
     type: detailed
+    category: wrecker
     agency: SSA
     from: DOL
     from_truth: verified
@@ -2242,6 +2367,7 @@
     alias: SSA-07
   - id: detail-dol-hhs-marko-elez
     type: detailed
+    category: wrecker
     agency: HHS
     from: DOL
     start_date: 2025-03-05
@@ -2253,6 +2379,7 @@
     comment: No documentation, reported in court filing
   - id: internal-hhs-cms-marko-elez
     type: internal
+    category: wrecker
     agency: CMS
     from: HHS
     from_truth: inferred
@@ -2278,6 +2405,7 @@
   - id: gsa-elvy
     agency: GSA
     type: appointed
+    category: builder
     sort_date: 2025-03-15
     start_date: 2025-03-XX
     start_date_truth: self-reported
@@ -2307,6 +2435,7 @@
   positions:
   - id: opm-ezell
     type: promotion
+    category: enabler
     start_date: 2025-01-20
     start_date_truth: verified
     end_date: 2025-07-09
@@ -2320,6 +2449,7 @@
     source: https://www.govinfo.gov/content/pkg/DCPD-202500108/html/DCPD-202500108.htm
   - id: opm-ezell-advisor
     agency: OPM
+    category: enabler
     type: demotion
     start_date: 2025-07-09
     start_date_truth: verified
@@ -2344,6 +2474,7 @@
   positions:
   - id: epa-cio-farmer
     type: appointed
+    category: enabler
     agency: EPA
     start_date: 2025-05-(08)~
     start_date_truth: reported
@@ -2375,6 +2506,7 @@
   positions:
   - id: detail-gsa-dhs-farritor
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     agency: DHS
@@ -2383,6 +2515,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: gsa-luke-farritor
     type: appointed
+    category: wrecker
     agency: GSA
     start_date: 2025-01-20
     start_date_truth: inferred
@@ -2391,6 +2524,7 @@
     salary: "$0"
   - id: internal-dhs-ice-farritor
     type: internal
+    category: wrecker
     from: DHS
     from_truth: inferred
     agency: ICE
@@ -2398,6 +2532,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-farritor
     type: internal
+    category: wrecker
     from: DHS
     from_truth: inferred
     agency: TSA
@@ -2405,6 +2540,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-farritor
     type: internal
+    category: wrecker
     from: DHS
     from_truth: inferred
     agency: USCIS
@@ -2412,6 +2548,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: detail-gsa-hhs-luke-farritor
     type: detailed
+    category: wrecker
     agency: HHS
     from: GSA
     from_truth: verified
@@ -2423,6 +2560,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   - id: detail-gsa-doge-farritor
     type: detailed
+    category: wrecker
     agency: DOGE
     from: GSA
     from_truth: inferred
@@ -2433,6 +2571,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-gsa-usaid-farritor
     type: detailed
+    category: wrecker
     agency: USAID
     from: GSA
     from_truth: inferred
@@ -2441,6 +2580,7 @@
     source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
   - id: internal-hhs-cdc-farritor
     type: internal
+    category: wrecker
     agency: CDC
     from: HHS
     from_truth: inferred
@@ -2451,6 +2591,7 @@
     comment: Guessing from first reported system access for ICE system
   - id: internal-hhs-cms-farritor
     type: internal
+    category: wrecker
     agency: CMS
     from: HHS
     from_truth: inferred
@@ -2461,6 +2602,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   - id: detail-gsa-energy-luke-farritor
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     agency: Energy
@@ -2470,6 +2612,7 @@
     comment: Start date was given by DOE spokesperson denying a news report
   - id: detail-gsa-cfpb-luke-farritor
     type: detailed
+    category: wrecker
     agency: CFPB
     from: GSA
     from_truth: verified
@@ -2483,6 +2626,7 @@
     comment: Details from court filing
   - id: detail-gsa-state-farritor
     type: detailed
+    category: wrecker
     agency: State
     from: GSA
     from_truth: guessed
@@ -2495,6 +2639,7 @@
     table_note: info reported by news source
   - id: internal-hhs-nih-farritor
     type: internal
+    category: wrecker
     agency: NIH
     from: HHS
     from_truth: inferred
@@ -2504,6 +2649,7 @@
     source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
   - id: detail-gsa-nsf-farritor
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     start_date: 2025-04-14
@@ -2514,6 +2660,7 @@
     agency: NSF
   - id: detail-gsa-dol-farritor
     type: detailed
+    category: wrecker
     agency: DOL
     from: GSA
     from_truth: inferred
@@ -2526,6 +2673,7 @@
   - id: gsa-farritor-fulltime
     agency: GSA
     type: converted
+    category: wrecker
     title: Senior Advisor
     pay_grade: GS-15
     table_note: Salary range for GS-15 in DC
@@ -2555,10 +2703,12 @@
     title: Senior Advisor
     title_type: advisor
     type: detailed
+    category: wrecker
     table_note: identified by agency FOIA as having been at the agency, guessing detailed
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
   - id: education-ed-2
     type: appointed
+    category: wrecker
     agency: Education
     start_date: 2025-01-31
     start_date_truth: verified
@@ -2577,6 +2727,7 @@
     alias: ED-02
   - id: detail-education-hhs-fennessy
     type: detailed
+    category: wrecker
     from: Education
     from_truth: verified
     agency: HHS
@@ -2585,6 +2736,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: internal-hhs-cms-fennessy
     type: internal
+    category: wrecker
     agency: CMS
     from: HHS
     from_truth: inferred
@@ -2594,6 +2746,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   - id: detail-doi-fennessy
     type: detailed
+    category: wrecker
     from: Education
     from_truth: guessed
     agency: DOI
@@ -2603,6 +2756,7 @@
     source: https://www.nytimes.com/2025/05/07/climate/trump-park-service-grants-cuts.html
   - id: detail-usda-fennessy
     type: detailed
+    category: wrecker
     agency: USDA
     from: Education
     from_truth: verified
@@ -2629,6 +2783,7 @@
   positions:
   - id: mcc-joshua-fox
     agency: MCC
+    category: wrecker
     sort_date: 2025-02-16
     type: detailed
     from: DOGE
@@ -2637,6 +2792,7 @@
     source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: noaa-joshua-fox
     agency: NOAA
+    category: wrecker
     sort_date: 2025-02-16
     type: detailed
     from: DOGE
@@ -2645,6 +2801,7 @@
     source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: doge-joshua-fox
     type: appointed
+    category: support
     start_date: 2025-02-XX
     sort_date: 2025-02-14
     start_date_truth: reported
@@ -2664,6 +2821,7 @@
     nte_date: 2025-08-14
     nte_date_truth: inferred
     type: detailed
+    category: wrecker
     from: DOGE
     from_truth: verified
     reimbursed: false
@@ -2673,6 +2831,7 @@
       https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
   - id: eop-doge-fox
     type: promotion
+    category: support
     agency: EOP
     title: Associate General Counsel
     office: Executive Office of the President
@@ -2701,6 +2860,7 @@
   positions:
   - id: gsa-justin-fox
     type: appointed
+    category: wrecker
     agency: GSA
     sort_date: 2025-02-20
     start_date: 2025-03-XX
@@ -2713,6 +2873,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-neh-justin-fox
     type: detailed
+    category: wrecker
     agency: NEH
     from: GSA
     from_truth: guessed
@@ -2724,6 +2885,7 @@
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
   - id: detail-gsa-mcc-fox
     type: detailed
+    category: wrecker
     agency: MCC
     from: GSA
     from_truth: guessed
@@ -2734,6 +2896,7 @@
     table_note: Linked to MCC by NPR, start date guessed from disruption there
   - id: detail-gsa-wwics-fox
     type: detailed
+    category: wrecker
     agency: WWICS
     from: GSA
     from_truth: guessed
@@ -2743,6 +2906,7 @@
     table_note: Linked to WWICS by NPR, date is first DOGE sighting at agency
   - id: detail-gsa-nlrb-fox
     type: detailed
+    category: wrecker
     agency: NLRB
     from: GSA
     from_truth: guessed
@@ -2770,6 +2934,7 @@
   positions:
   - id: va-fulcher
     type: appointed
+    category: wrecker
     agency: VA
     sort_date: 2025-02-04
     start_date: 2025-02-(04)~
@@ -2779,6 +2944,7 @@
     table_note: reported in early Feb but named later
   - id: dod-fulcher
     type: detailed
+    category: wrecker
     from: VA
     from_truth: guessed
     table_note: no info, but assuming detailed from VA
@@ -2793,6 +2959,7 @@
     agency: DOD
   - id: dod-fulcher-advisor
     type: appointed
+    category: wrecker
     start_date: 2025-04-25
     start_date_truth: reported
     end_date: 2025-07-20
@@ -2820,6 +2987,7 @@
   positions:
   - id: detail-gsa-doge-gallagher
     type: detailed
+    category: support
     agency: DOGE
     from: GSA
     from_truth: inferred
@@ -2828,6 +2996,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: gsa-gallagher
     type: appointed
+    category: support
     agency: GSA
     start_date: 2025-05-XX
     start_date_truth: guessed
@@ -2852,6 +3021,7 @@
   - id: hhs-gamache
     agency: HHS
     type: unknown
+    category: unknown
     title: Senior Advisor - DOGE
     title_type: advisor
     office: Assistant Secretary for Financial Resources
@@ -2881,6 +3051,7 @@
   - id: opm-joe-gebbia
     agency: OPM
     type: appointed
+    category: wrecker
     start_date: 2025-02-18
     start_date_truth: verified
     description: Exc Appt NTE
@@ -2903,6 +3074,7 @@
   - id: nds-gebbia
     agency: NDS
     type: appointed
+    category: leadership
     start_date: 2025-08-21
     start_date_truth: reported
     title: Chief Design Officer
@@ -2926,6 +3098,7 @@
   positions:
   - id: gsa-geissler
     type: appointed
+    category: builder
     start_date: 2025-01-XX
     start_date_truth: inferred
     sort_date: 2025-01-20
@@ -2936,6 +3109,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: dol-derek-geissler
     type: detailed
+    category: wrecker
     sort_date: 2025-02-13
     start_date: 2025-02-(13)~
     start_date_truth: reported
@@ -2960,6 +3134,7 @@
   - id: dod-george
     agency: DOD
     type: appointed
+    category: wrecker
     start_date: 2025-02-(18)?
     start_date_truth: inferred
     table_note: >-
@@ -2986,6 +3161,7 @@
   positions:
   - id: sba-gibson
     type: unknown
+    category: support
     agency: SBA
     title: Senior Advisor
     title_type: advisor
@@ -3015,6 +3191,7 @@
   positions:
   - id: faa-glantz
     type: appointed
+    category: wrecker
     agency: FAA
     start_date: 2025-02-16
     start_date_truth: reported
@@ -3054,6 +3231,7 @@
     pay_grade: AD-00
     replaced_by: doge-amy-gleason-director
     type: appointed
+    category: wrecker
     table_note: this is Amy's role in USDS until she was named the administrator of DOGE
     comment: >-
       Amy Gleason joins the USDS, according to her sworn testimony; not sure of her title for this before
@@ -3064,6 +3242,7 @@
     agency: DOGE
   - id: doge-hhs-gleason
     type: detailed
+    category: enabler
     agency: HHS
     from: DOGE
     from_truth: inferred
@@ -3076,6 +3255,7 @@
     start_date: 2025-02-18
     start_date_truth: verified
     type: promotion
+    category: leadership
     agency: DOGE
     title: Acting Administrator, US DOGE Service and the DOGE Temporary Organization
     title_type: director
@@ -3086,6 +3266,7 @@
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
   - id: internal-hhs-cms-gleason
     type: internal
+    category: enabler
     agency: CMS
     from: HHS
     from_truth: inferred
@@ -3096,6 +3277,7 @@
     comment: Start date is just her reported first access to CALM system at CMS
   - id: hhs-amy-gleason
     agency: HHS
+    category: enabler
     type: converted
     title: Expert/Consultant
     title_type: advisor
@@ -3126,6 +3308,7 @@
   - id: opm-gonzalez
     agency: OPM
     type: appointed
+    category: support
     sort_date: 2025-03-15
     start_date: 2025-03-XX
     start_date_truth: self-reported
@@ -3152,6 +3335,7 @@
   positions:
   - id: state-graber
     type: appointed
+    category: wrecker
     agency: State
     start_date: 2025-02-XX
     start_date_truth: reported
@@ -3161,6 +3345,7 @@
     source: https://www.nextgov.com/people/2025/03/energy-appoints-twitter-google-alum-new-cio/403717/
   - id: energy-graber
     type: appointed
+    category: enabler
     agency: Energy
     start_date: 2025-03-13
     start_date_truth: verified
@@ -3180,6 +3365,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: nnsa-graber
     type: appointed
+    category: enabler
     agency: NNSA
     start_date: 2025-07-XX
     start_date_truth: self-reported
@@ -3210,6 +3396,7 @@
   positions:
   - id: ssa-antonio-gracias
     type: appointed
+    category: wrecker
     agency: SSA
     pd_code: KNX0370
     start_date: 2025-02-23
@@ -3250,6 +3437,7 @@
   positions:
   - id: commerce-michael-grimes
     type: appointed
+    category: wrecker
     start_date: 2025-02-27
     start_date_truth: verified
     title: Senior Advisor
@@ -3273,6 +3461,7 @@
   positions:
   - id: nds-groot
     type: appointed
+    category: builder
     agency: NDS
     source: >-
       https://www.nextgov.com/digital-government/2026/02/new-white-house-design-team-aims-delightful-websites-changing-design-ethos-process/411560/
@@ -3282,6 +3471,7 @@
     table_note: Guessing started at NDS because identified by White House as staffer
   - id: ssa-groot
     type: detailed
+    category: builder
     agency: SSA
     from: NDS
     from_truth: guessed
@@ -3309,6 +3499,7 @@
     start_date: 2025-01-24
     start_date_truth: verified
     type: appointed
+    category: enabler
     agency: GSA
     salary: "$183,100"
     title: Federal Acquisition Service Commissioner
@@ -3332,6 +3523,7 @@
     start_date: 2025-03-31
     start_date_truth: reported
     type: detailed
+    category: wrecker
     source: https://bsky.app/profile/marisakabas.bsky.social/post/3llowvghols2b
     comment: DOGE put entire staff on admin leave and started cancelling grants, not many details
     agency: IMLS
@@ -3350,6 +3542,7 @@
   positions:
   - id: doge-joshua-hanley
     type: detailed
+    category: support
     agency: DOGE
     from: GSA
     from_truth: inferred
@@ -3359,6 +3552,7 @@
   - id: gsa-joshua-hanley
     agency: GSA
     type: appointed
+    category: support
     start_date: 2025-02-(24)~
     start_date_truth: inferred
     sort_date: 2025-02-23
@@ -3389,6 +3583,7 @@
   positions:
   - id: opm-christina-hanna
     type: appointed
+    category: support
     agency: OPM
     start_date: 2025-02-03
     start_date_truth: verified
@@ -3433,6 +3628,7 @@
   positions:
   - id: doi-hassen
     type: appointed
+    category: enabler
     start_date: 2025-01-23
     start_date_truth: inferred
     end_date: 2025-03-07
@@ -3450,6 +3646,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: doi-hassen-acting
     type: promotion
+    category: enabler
     start_date: 2025-03-07
     start_date_truth: reported
     end_date: 2025-04-XX
@@ -3465,6 +3662,7 @@
   - id: doi-hassen-principal
     agency: DOI
     type: promotion
+    category: enabler
     start_date: 2025-04-XX
     start_date_truth: reported
     end_date: 2025-09-03
@@ -3485,6 +3683,7 @@
   - id: doi-hassen-unknown
     agency: DOI
     type: unknown
+    category: wrecker
     start_date: 2025-09-03
     start_date_truth: reported
     end_date: 2025-11-XX
@@ -3510,6 +3709,7 @@
   positions:
   - id: dod-hickey
     type: appointed
+    category: wrecker
     agency: DOD
     start_date: 2025-02-(18)?
     start_date_truth: inferred
@@ -3550,6 +3750,7 @@
   positions:
   - id: dhs-hoffman
     type: appointed
+    category: wrecker
     agency: DHS
     start_date: 2025-03-(19)~
     start_date_truth: reported
@@ -3561,6 +3762,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: doj-hoffman
     type: detailed
+    category: wrecker
     from: DOGE
     from_truth: inferred
     start_date: 2025-04-21
@@ -3585,6 +3787,7 @@
   positions:
   - id: greg-hogan-opm
     type: appointed
+    category: enabler
     name: Greg Hogan
     agency: OPM
     start_date: 2025-01-20
@@ -3611,6 +3814,7 @@
     - https://www.documentcloud.org/documents/26028795-onboard-opm-greg-hogan/
   - id: opm-hogan-cio
     type: promotion
+    category: enabler
     sort_date: 2025-01-21
     start_date: 2025-01-20
     start_date_truth: reported
@@ -3630,6 +3834,7 @@
     agency: OPM
   - id: opm-hogan-cio-official
     type: promotion
+    category: enabler
     name: Greg Hogan
     agency: OPM
     start_date: 2025-02-11
@@ -3656,6 +3861,7 @@
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.177.0.pdf
   - id: nds-hogan
     agency: NDS
+    category: builder
     type: appointed
     start_date: 2025-10-XX
     start_date_truth: self-reported
@@ -3685,6 +3891,7 @@
   positions:
   - id: gsa-hollander
     type: appointed
+    category: enabler
     start_date: 2025-01-20
     start_date_truth: guessed
     end_date: 2025-05-29
@@ -3716,6 +3923,7 @@
   positions:
   - id: doge-holmes
     type: appointed
+    category: support
     title: Senior Advisor for Technology and Efficiency
     title_type: advisor
     sort_date: 2025-02-01
@@ -3730,6 +3938,7 @@
     agency: DOGE
   - id: detail-doge-doi-holmes
     type: detailed
+    category: wrecker
     from: DOGE
     from_truth: reported
     start_date: 2025-02-24
@@ -3757,6 +3966,7 @@
   positions:
   - id: state-jackson
     type: appointed
+    category: unknown
     start_date: 2025-01-XX
     start_date_truth: guessed
     sort_date: 2025-01-20
@@ -3764,6 +3974,7 @@
     table_note: I know Kenneth Jackson started at State, but I haven't found more info of when and where
   - id: usip-jackson
     type: appointed
+    category: wrecker
     start_date: 2025-03-17
     start_date_truth: reported
     end_date: 2025-03-25
@@ -3779,6 +3990,7 @@
     - https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.14.1.pdf
   - id: usaid-deputy-jackson
     type: appointed
+    category: enabler
     start_date: 2025-03-18
     start_date_truth: verified
     title: Deputy Administrator (Management and Resources)
@@ -3819,6 +4031,7 @@
   positions:
   - id: gsa-jegannathan
     type: appointed
+    category: unknown
     sort_date: 2025-04-24
     start_date: 2025-04-(24)~
     start_date_truth: reported
@@ -3843,6 +4056,7 @@
   positions:
   - id: gsa-jehling
     type: appointed
+    category: wrecker
     sort_date: 2025-02-01
     start_date: 2025-02-XX
     start_date_truth: guessed
@@ -3852,6 +4066,7 @@
       from there
   - id: epa-jehling
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     salary: "$0"
@@ -3887,6 +4102,7 @@
   positions:
   - id: faa-kiernan
     type: appointed
+    category: wrecker
     agency: FAA
     start_date: 2025-02-16
     start_date_truth: reported
@@ -3920,6 +4136,7 @@
   positions:
   - id: doge-killian
     type: appointed
+    category: wrecker
     start_date: 2025-01-20
     start_date_truth: verified
     end_date: 2025-06-27
@@ -3933,6 +4150,7 @@
     agency: DOGE
   - id: detail-doge-epa-killian
     type: detailed
+    category: wrecker
     from: DOGE
     table_note: Reported as ending in June and left DOGE on 6/27
     start_date: 2025-02-04
@@ -3947,6 +4165,7 @@
     agency: EPA
   - id: detail-doge-dol-killian
     type: detailed
+    category: wrecker
     from: DOGE
     sort_date: 2025-02-13
     start_date: 2025-02-(13)~
@@ -3958,6 +4177,7 @@
     agency: DOL
   - id: ssa-employee-5
     type: detailed
+    category: wrecker
     agency: SSA
     from: DOGE
     from_truth: verified
@@ -3981,6 +4201,7 @@
   positions:
   - id: nds-kim
     type: appointed
+    category: builder
     agency: NDS
     start_date: 2026-02-XX
     start_date_truth: self-reported
@@ -4005,6 +4226,7 @@
   - id: gsa-kizenko
     agency: GSA
     type: appointed
+    category: wrecker
     title: Senior Advisor
     title_type: advisor
     sort_date: 2025-02-01
@@ -4013,6 +4235,7 @@
   - id: sba-kizenko
     agency: SBA
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     sort_date: 2025-02-02
@@ -4039,6 +4262,7 @@
   positions:
   - id: detail-opm-dhs-kliger
     type: detailed
+    category: wrecker
     from: OPM
     agency: DHS
     from_truth: guessed
@@ -4046,6 +4270,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-kliger
     type: internal
+    category: wrecker
     from: DHS
     from_truth: inferred
     agency: TSA
@@ -4053,6 +4278,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: opm-05-gsa
     type: detailed
+    category: wrecker
     agency: GSA
     from: OPM
     from_truth: verified
@@ -4062,6 +4288,7 @@
     alias: OPM-05
   - id: opm-temp-employee-5
     type: appointed
+    category: wrecker
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
@@ -4091,6 +4318,7 @@
     alias: OPM-05
   - id: detail-opm-usaid-kliger
     type: detailed
+    category: wrecker
     agency: USAID
     from: OPM
     from_truth: verified
@@ -4099,6 +4327,7 @@
     source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
   - id: detail-opm-usda-kliger
     type: detailed
+    category: wrecker
     from: OPM
     agency: USDA
     from_truth: verified
@@ -4114,6 +4343,7 @@
       https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
   - id: detail-opm-cfpb-kliger
     type: detailed
+    category: wrecker
     agency: CFPB
     from: OPM
     from_truth: verified
@@ -4127,6 +4357,7 @@
       https://news.bloomberglaw.com/banking-law/doge-employee-leaves-cfpb-after-leading-trumps-mass-firing-plan
   - id: opm-perm-employee-5
     type: converted
+    category: wrecker
     agency: OPM
     start_date: 2025-02-18
     start_date_truth: verified
@@ -4154,6 +4385,7 @@
     alias: OPM-05
   - id: detail-opm-irs-gavin-kliger
     type: detailed
+    category: wrecker
     agency: IRS
     from: OPM
     from_truth: verified
@@ -4173,6 +4405,7 @@
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
   - id: opm-05-usagm
     type: detailed
+    category: wrecker
     agency: USAGM
     from: OPM
     from_truth: verified
@@ -4185,6 +4418,7 @@
     alias: OPM-05
   - id: detail-opm-ftc-kliger
     type: detailed
+    category: wrecker
     from: OPM
     from_truth: guessed
     sort_date: 2025-03-28
@@ -4195,6 +4429,7 @@
     agency: FTC
   - id: dod-kliger
     agency: DOD
+    category: enabler
     type: appointed
     start_date: 2025-12-XX
     start_date_truth: self-reported
@@ -4219,6 +4454,7 @@
   positions:
   - id: doge-kmiec
     type: appointed
+    category: support
     agency: DOGE
     start_date: 2025-01-24
     start_date_truth: verified
@@ -4243,6 +4479,7 @@
   - id: usds-koller
     agency: DOGE
     type: appointed
+    category: support
     title: Senior Advisor
     title_type: advisor
     series: '0301'
@@ -4258,6 +4495,7 @@
   - id: nds-koller
     agency: NDS
     type: appointed
+    category: support
     title: Director of Operations
     start_date: 2025-08-(26)~
     start_date_truth: reported
@@ -4281,6 +4519,7 @@
   positions:
   - id: ssa-employee-6
     type: appointed
+    category: wrecker
     agency: SSA
     start_date: 2025-02-23
     start_date_truth: verified
@@ -4298,6 +4537,7 @@
     alias: SSA-06
   - id: detail-ssa-doj-koval
     type: detailed
+    category: wrecker
     from: SSA
     start_date: 2025-04-15
     start_date_truth: reported
@@ -4313,6 +4553,7 @@
   positions:
   - id: ostp-kratsios
     type: appointed
+    category: enabler
     agency: EOP
     title: Director, Office of Science and Technology Program
     start_date: 2025-03-25
@@ -4338,6 +4579,7 @@
   positions:
   - id: onboard-treasury-thomas-krause
     type: consultant
+    category: wrecker
     comment: Part-time
     start_date: 2025-01-23
     start_date_truth: verified
@@ -4358,6 +4600,7 @@
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
   - id: appoint-treasury-thomas-krause
     type: converted
+    category: wrecker
     comment: Changed to a full-time position
     start_date: 2025-02-13
     start_date_truth: verified
@@ -4391,6 +4634,7 @@
   positions:
   - id: opm-kupor
     type: appointed
+    category: leadership
     agency: OPM
     start_date: 2025-07-09
     start_date_truth: verified
@@ -4427,6 +4671,7 @@
   positions:
   - id: hud-langmack
     type: appointed
+    category: wrecker
     start_date: 2025-02-10
     title: Senior Advisor
     title_type: advisor
@@ -4444,6 +4689,7 @@
     agency: HUD
   - id: omb-langmack
     agency: OMB
+    category: support
     type: appointed
     start_date: 2025-08-XX
     start_date_truth: self-reported
@@ -4470,6 +4716,7 @@
     end_type: fired
     table_note: fired for talking to media, dates from his blog
     type: appointed
+    category: wrecker
     title: Senior Advisor
     title_type: advisor
     office: Office of the Chief of Staff
@@ -4481,6 +4728,7 @@
     agency: VA
   - id: irs-lavingia
     type: appointed
+    category: wrecker
     start_date: 2025-11-XX
     start_date_truth: reported
     table_note: Reportedly a career employee at the IRS (not a political appointee)
@@ -4507,6 +4755,7 @@
   positions:
   - id: gsa-jeremy-lewin
     type: appointed
+    category: wrecker
     agency: GSA
     start_date: 2025-01-20
     start_date_truth: guessed
@@ -4539,6 +4788,7 @@
     title_type: dept_head
   - id: detail-gsa-cfpb-jeremy-lewin
     type: detailed
+    category: wrecker
     agency: CFPB
     from: GSA
     from_truth: verified
@@ -4547,6 +4797,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: detail-gsa-hhs-lewin
     type: detailed
+    category: wrecker
     agency: HHS
     from: GSA
     from_truth: guessed
@@ -4555,6 +4806,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: internal-hhs-nih-lewin
     type: internal
+    category: wrecker
     agency: NIH
     from: HHS
     from_truth: inferred
@@ -4563,6 +4815,7 @@
     source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
   - id: internal-hhs-cms-lewin
     type: internal
+    category: wrecker
     agency: CMS
     from: HHS
     from_truth: inferred
@@ -4573,6 +4826,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   - id: usaid-jeremy-lewin-2
     type: appointed
+    category: enabler
     agency: USAID
     start_date: 2025-03-18
     start_date_truth: verified
@@ -4581,6 +4835,7 @@
     title_type: dept_head
   - id: state-lewin-foreign
     type: appointed
+    category: enabler
     start_date: 2025-04-15
     start_date_truth: reported
     end_date: 2025-07-11
@@ -4592,6 +4847,7 @@
     agency: State
   - id: state-lewin-undersecretary
     agency: State
+    category: enabler
     type: promotion
     start_date: 2025-07-11
     start_date_truth: verified
@@ -4612,6 +4868,7 @@
   - id: opm-li
     agency: OPM
     type: appointed
+    category: builder
     start_date: 2025-06-XX
     start_date_truth: inferred
     table_note: >-
@@ -4637,6 +4894,7 @@
   - id: usda-lichtman
     agency: USDA
     type: appointed
+    category: wrecker
     salary: "$142,488"
     title: Advisor on Government Efficiency
     start_date: 2025-03-XX
@@ -4668,6 +4926,7 @@
   positions:
   - id: doge-lindemann
     type: appointed
+    category: leadership
     sort_date: 2025-02-10
     start_date: 2025-02-(10)~
     start_date_truth: reported
@@ -4704,17 +4963,20 @@
   - id: epa-loving-transition
     agency: EPA
     type: consultant
+    category: wrecker
     start_date: 2024-12-XX
-    start_date_truth: reported
+    start_date_truth: self-reported
     end_date: 2025-01-20
+    end_date_truth: inferred
     end_type: replaced
     replaced_by: epa-loving
     table_note: LinkedIn reported being consultant/advisor to Zeldin from Dec 2024; assuming transition
       role here
   - id: epa-loving
-    type: unknown
+    type: appointed
+    category: wrecker
     start_date: 2025-01-20
-    start_date_truth: reported
+    start_date_truth: inferred
     end_date: 2025-06-XX
     end_date_truth: self-reported
     salary: "$0"
@@ -4741,7 +5003,8 @@
     the Interior in April, but it's unclear what he was doing in the interim for DOGE (or Vivek).
   positions:
   - id: doi-luby
-    type: unknown
+    type: appointed
+    category: wrecker
     start_date: 2025-03-XX
     start_date_truth: reported
     salary: "$142,488"
@@ -4789,6 +5052,7 @@
   - id: state-makecha
     agency: State
     type: appointed
+    category: wrecker
     start_date: 2025-01-XX
     start_date_truth: verified
     sort_date: 2025-01-20
@@ -4798,6 +5062,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: opm-makecha
     type: appointed
+    category: wrecker
     title: Senior Advisor
     title_type: advisor
     start_date: 2025-02-28
@@ -4815,6 +5080,7 @@
     from: OPM
     from_truth: guessed
     type: detailed
+    category: wrecker
     sort_date: 2025-03-01
     start_date: 2025-03-(01)~
     start_date_truth: guessed
@@ -4822,6 +5088,7 @@
     source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: detail-fcc-makecha
     type: detailed
+    category: wrecker
     from: OPM
     from_truth: verified
     start_date: 2025-03-18
@@ -4832,6 +5099,7 @@
     agency: FCC
   - id: fbi-makecha
     type: detailed
+    category: wrecker
     from: OPM
     title: Senior Advisor
     title_type: advisor
@@ -4865,6 +5133,7 @@
   positions:
   - id: faa-malaska
     type: appointed
+    category: wrecker
     agency: FAA
     start_date: 2025-02-16
     start_date_truth: reported
@@ -4893,6 +5162,7 @@
   positions:
   - id: gsa-malcher
     type: appointed
+    category: support
     sort_date: 2025-04-24
     start_date: 2025-04-(24)~
     start_date_truth: reported
@@ -4900,6 +5170,7 @@
     agency: GSA
   - id: detail-gs-va-malcher
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: inferred
     title: Senior Advisor
@@ -4926,6 +5197,7 @@
   positions:
   - id: detail-opm-dhs-mangaser
     type: detailed
+    category: wrecker
     agency: DHS
     from: OPM
     start_date: 2025-04-XX
@@ -4934,6 +5206,7 @@
     table_note: Based on reports talked to TSA and CISA, assuming detail to DHS
   - id: internal-dhs-cisa-mangaser
     type: internal
+    category: wrecker
     agency: CISA
     from: DHS
     start_date: 2025-04-XX
@@ -4943,6 +5216,7 @@
     source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: internal-dhs-tsa-mangaser
     type: internal
+    category: wrecker
     agency: TSA
     from: DHS
     start_date: 2025-04-XX
@@ -4953,6 +5227,7 @@
   - id: opm-mangaser
     type: appointed
     agency: EOP
+    category: support
     title: Senior Advisor to the US Federal CIO
     title_type: advisor
     office: Office of Management and Budget
@@ -4997,6 +5272,7 @@
   - id: usaid-marocco
     agency: USAID
     type: appointed
+    category: enabler
     start_date: 2025-02-01
     start_date_truth: reported
     end_date: 2025-03-19
@@ -5005,6 +5281,7 @@
     source: https://www.nytimes.com/2025/03/19/us/politics/usaid-doge-leadership.html
   - id: iaf-marocco
     type: appointed
+    category: wrecker
     start_date: 2025-02-28
     start_date_truth: verified
     end_date: 2025-04-04
@@ -5016,6 +5293,7 @@
     agency: IAF
   - id: usadf-marocco
     type: appointed
+    category: wrecker
     agency: USADF
     title: Acting Chair of the Board
     start_date: 2025-02-28
@@ -5034,6 +5312,7 @@
   positions:
   - id: dhs-mccord
     type: appointed
+    category: enabler
     title: Chief Information Officer
     title_type: cio
     agency: DHS
@@ -5061,6 +5340,7 @@
   positions:
   - id: doi-mcinery
     type: appointed
+    category: enabler
     agency: DOI
     title: Chief Information Officer
     title_type: cio
@@ -5083,12 +5363,14 @@
   positions:
   - id: gsa-mendelson
     type: appointed
+    category: wrecker
     start_date: 2025-04-09
     start_date_truth: reported
     source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
     agency: GSA
   - id: detail-gsa-dfc-mendelson
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     start_date: 2025-04-28
@@ -5099,6 +5381,7 @@
   - id: detail-gsa-sec-mendelson
     type: detailed
     from: GSA
+    category: wrecker
     from_truth: guessed
     sort_date: 2025-05-02
     start_date: 2025-05-(02)~
@@ -5134,6 +5417,7 @@
   positions:
   - id: doge-miller
     type: appointed
+    category: leadership
     agency: DOGE
     start_date: 2025-01-20
     start_date_truth: inferred
@@ -5157,6 +5441,7 @@
   positions:
   - id: hhs-minor-cto
     type: appointed
+    category: enabler
     agency: HHS
     title: Chief Technology Officer
     title_type: cto
@@ -5174,6 +5459,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: hhs-minor-cio
     type: promotion
+    category: enabler
     agency: HHS
     title: Chief Information Officer
     title_type: cio
@@ -5184,6 +5470,7 @@
     source: https://orangeslices.ai/hhs-it-office-recruits-new-chief-from-palantir/
   - id: detail-hhs-nih-minor
     type: internal
+    category: wrecker
     agency: NIH
     from: HHS
     from_truth: inferred
@@ -5194,6 +5481,7 @@
     source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
   - id: transfer-hhs-fda-minor
     type: internal
+    category: wrecker
     agency: FDA
     from: HHS
     from_truth: inferred
@@ -5204,6 +5492,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.281208/gov.uscourts.dcd.281208.1.0_3.pdf
   - id: hhs-minor-ai
     agency: HHS
+    category: enabler
     type: appointed
     title: Acting Chief AI Officer
     title_type: other
@@ -5219,7 +5508,8 @@
   category: wrecker
   positions:
   - id: hud-mirski
-    type: unknown
+    type: appointed
+    category: wrecker
     start_date: 2025-02-10
     start_date_truth: reported
     salary: "$162,682"
@@ -5237,13 +5527,14 @@
   blurb: >-
     A perfect enacapsulation of the ethical quagmires surrounding DOGE. Prior to his current assignement,
     he was the chief regulatory officer at a prediction and betting company, for whom Donald Trump Jr.
-    is an advisor. Now he gets to undo the SEC!
+    is an advisor. Now he gets to work his ways on the SEC.
   category: wrecker
   custom_path: "/wreckers/cavanaugh-cronies#eli-mishory"
   linkedin: https://www.linkedin.com/in/eliezer-mishory/
   positions:
   - id: sec-mishory
     type: unknown
+    category: wrecker
     sort_date: 2025-04-05
     start_date: 2025-04-(05)~
     start_date_truth: reported
@@ -5280,6 +5571,7 @@
   - id: opm-bryanne-mlodzianowski
     agency: OPM
     type: appointed
+    category: support
     start_date: 2025-02-03
     start_date_truth: verified
     end_date: 2025-03-05
@@ -5324,6 +5616,7 @@
   positions:
   - id: detail-dol-dhs-mohgaddassi
     type: detailed
+    category: wrecker
     agency: DHS
     from: DOL
     from_truth: guessed
@@ -5331,6 +5624,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: detail-sba-moghaddassi
     agency: SBA
+    category: wrecker
     from: DOL
     from_truth: guessed
     title: Special Advisor
@@ -5340,6 +5634,7 @@
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
   - id: internal-dhs-cpb-mohgaddassi
     type: internal
+    category: wrecker
     agency: CBP
     from: DHS
     from_truth: inferred
@@ -5347,6 +5642,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-ice-mohgaddassi
     type: internal
+    category: wrecker
     agency: ICE
     from: DHS
     from_truth: inferred
@@ -5354,6 +5650,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-mohgaddassi
     type: internal
+    category: wrecker
     agency: TSA
     from: DHS
     from_truth: inferred
@@ -5361,6 +5658,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-mohgaddassi
     type: internal
+    category: wrecker
     agency: USCIS
     from: DHS
     from_truth: inferred
@@ -5368,6 +5666,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: dol-moghaddassi
     type: appointed
+    category: wrecker
     agency: DOL
     start_date: 2025-02-18
     start_date_truth: verified
@@ -5383,6 +5682,7 @@
     source: https://www.documentcloud.org/documents/26028779-onboard-dol-aram-moghaddassi/
   - id: detail-dol-ssa-employee-3
     type: detailed
+    category: wrecker
     agency: SSA
     from: DOL
     from_truth: verified
@@ -5399,6 +5699,7 @@
     alias: SSA-03
   - id: detail-dol-hhs-mohgaddassi
     type: detailed
+    category: wrecker
     agency: HHS
     from: DOL
     start_date: 2025-03-05
@@ -5409,6 +5710,7 @@
     comment: No documentation, reported in court filing
   - id: internal-hhs-cms-mohgaddassi
     type: internal
+    category: wrecker
     agency: CMS
     from: HHS
     from_truth: inferred
@@ -5418,6 +5720,7 @@
     comment: Reported access to system same day as start of detail to HHS
   - id: ssa-cio-moghaddassi
     type: promotion
+    category: enabler
     agency: SSA
     start_date: 2025-06-(05)?
     start_date_truth: reported
@@ -5432,6 +5735,7 @@
   - id: ssa-co-cio-moghaddassi
     agency: SSA
     type: promotion
+    category: enabler
     start_date: 2025-09-03
     title: Chief Information Officer (Technology and Customer Products)
     title_type: cio
@@ -5455,6 +5759,7 @@
   positions:
   - id: opm-justin-monroe
     type: appointed
+    category: wrecker
     agency: OPM
     start_date: 2025-01-28
     start_date_truth: verified
@@ -5478,6 +5783,7 @@
   - id: detail-opm-fbi-monroe
     start_date: 2025-01-29
     start_date_truth: reported
+    category: wrecker
     type: detailed
     agency: FBI
     from: OPM
@@ -5508,6 +5814,7 @@
   positions:
   - id: education-employee-4
     type: consultant
+    category: wrecker
     comment: Part-time
     start_date: 2025-02-04
     start_date_truth: verified
@@ -5526,6 +5833,7 @@
     alias: ED-04
   - id: detail-education-treasury-morgan
     type: detailed
+    category: wrecker
     agency: Treasury
     from: Education
     from_truth: verified
@@ -5538,6 +5846,7 @@
     source: https://www.documentcloud.org/documents/26028801-mou-20250408-education-treasury/
   - id: detail-education-fdic-morgan
     type: detailed
+    category: wrecker
     from: Education
     from_truth: guessed
     start_date: 2025-04-10
@@ -5559,6 +5868,7 @@
   positions:
   - id: eop-morse
     type: appointed
+    category: adjacent
     start_date: 2025-01-23
     start_date_truth: reported
     agency: EOP
@@ -5589,6 +5899,7 @@
   positions:
   - id: musk-doge
     type: appointed
+    category: leadership
     start_date: 2025-01-20
     start_date_truth: inferred
     end_date: 2025-05-28
@@ -5610,6 +5921,7 @@
   positions:
   - id: treasury-newnam
     type: appointed
+    category: wrecker
     title: Senior Advisor
     title_type: advisor
     start_date: 2025-03-06
@@ -5627,6 +5939,7 @@
     agency: Treasury
   - id: internal-treasury-irs-newnam
     type: internal
+    category: wrecker
     title: Senior Advisor
     title_type: advisor
     start_date: 2025-04-XX
@@ -5644,8 +5957,9 @@
   - id: irs-newnam-cfo
     agency: IRS
     type: promotion
+    category: enabler
     title: Chief Financial Officer
-    title_type: deputy
+    title_type: director
     start_date: 2026-01-20
     start_date_truth: reported
     supervisory: true
@@ -5661,6 +5975,7 @@
   positions:
   - id: nds-novia
     type: appointed
+    category: builder
     agency: NDS
     start_date: 2025-10-XX
     start_date_truth: reported
@@ -5681,6 +5996,7 @@
   positions:
   - id: dod-park
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     agency: DOD
@@ -5688,6 +6004,7 @@
     source: https://www.linkedin.com/in/donaldkpark/
   - id: gsa-park
     type: appointed
+    category: wrecker
     sort_date: 2025-02-01
     start_date: 2025-02-XX
     start_date_truth: inferred
@@ -5696,6 +6013,7 @@
     comment: Inferring detailed from GSA to SBA
   - id: sba-park
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     start_date: 2025-02-03
@@ -5712,6 +6030,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-exim-park
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     agency: EXIM
@@ -5732,6 +6051,7 @@
   positions:
   - id: gsa-parkhurst
     agency: GSA
+    category: support
     type: appointed
     start_date: 2025-03-03
     start_date_truth: verified
@@ -5755,6 +6075,7 @@
   positions:
   - id: noah-peters-opm
     type: appointed
+    category: support
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
@@ -5775,6 +6096,7 @@
     source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
   - id: detail-opm-doge-peters
     type: detailed
+    category: support
     agency: DOGE
     from: OPM
     from_truth: inferred
@@ -5791,6 +6113,7 @@
   - id: nds-phillips
     agency: NDS
     type: appointed
+    category: builder
     title: Executive Creative Director
     start_date: 2025-10-XX
     start_date_truth: self-reported
@@ -5811,6 +6134,7 @@
   positions:
   - id: opm-nikhil-rajpal
     type: appointed
+    category: wrecker
     agency: OPM
     start_date: 2025-01-24
     start_date_truth: verified
@@ -5838,6 +6162,7 @@
     alias: OPM-06
   - id: detail-opm-doge-rajpal
     type: detailed
+    category: wrecker
     agency: DOGE
     from: OPM
     from_truth: inferred
@@ -5848,6 +6173,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-opm-noaa-rajpal
     type: detailed
+    category: wrecker
     from: OPM
     from_truth: guessed
     agency: NOAA
@@ -5856,6 +6182,7 @@
     source: https://www.axios.com/2025/02/04/trump-nominates-noaa-head-neil-jacobs
   - id: detail-opm-cfpb-nikhil-rajpal
     type: detailed
+    category: wrecker
     agency: CFPB
     from: OPM
     from_truth: verified
@@ -5869,6 +6196,7 @@
     comment: Details from court filing
   - id: detail-opm-ssa-8
     type: detailed
+    category: wrecker
     from: OPM
     agency: SSA
     signed_date: 2025-02-26
@@ -5905,6 +6233,7 @@
   positions:
   - id: doge-adam-ramada
     type: appointed
+    category: wrecker
     start_date: 2025-01-23
     start_date_truth: verified
     end_date: 2025-06-30
@@ -5925,6 +6254,7 @@
     from: DOGE
     from_truth: verified
     type: detailed
+    category: wrecker
     salary: "$0"
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.5_1.pdf
@@ -5940,6 +6270,7 @@
     reimbursed: false
   - id: detail-doge-energy-adam-ramada
     type: detailed
+    category: wrecker
     from: DOGE
     from_truth: guessed
     agency: Energy
@@ -5949,6 +6280,7 @@
     comment: Start date was given by DOE spokesperson denying a news report
   - id: detail-doge-dol-ramada
     type: detailed
+    category: wrecker
     from: DOGE
     from_truth: verified
     agency: DOL
@@ -5958,6 +6290,7 @@
     comment: Testimony was on 2/6. DOGE showed up at agency on 2/5. Mentions 3 other DOGE staff there
   - id: detail-education-treasury-ramada
     type: detailed
+    category: wrecker
     agency: Treasury
     from: Education
     from_truth: verified
@@ -5972,6 +6305,7 @@
     mou: https://www.documentcloud.org/documents/26028801-mou-20250408-education-treasury/
   - id: detail-doge-fdic-ramada
     type: detailed
+    category: wrecker
     from: DOGE
     from_truth: guessed
     start_date: 2025-04-10
@@ -5993,6 +6327,7 @@
   positions:
   - id: opm-austin-raynor
     type: appointed
+    category: wrecker
     agency: OPM
     start_date: 2025-01-30
     start_date_truth: verified
@@ -6020,6 +6355,7 @@
     table_note: Start date guessed from system access
   - id: detail-opm-doge-raynor
     type: detailed
+    category: wrecker
     agency: DOGE
     from: OPM
     from_truth: inferred
@@ -6052,6 +6388,7 @@
   positions:
   - id: detail-ssa-dhs-rehling
     type: detailed
+    category: wrecker
     agency: DHS
     from: SSA
     sort_date: 2025-03-15
@@ -6060,6 +6397,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-rehling
     type: internal
+    category: wrecker
     agency: TSA
     from: DHS
     sort_date: 2025-03-15
@@ -6068,6 +6406,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-rehling
     type: internal
+    category: wrecker
     agency: USCIS
     from: DHS
     sort_date: 2025-03-15
@@ -6076,6 +6415,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: ssa-employee-9
     agency: SSA
+    category: wrecker
     type: appointed
     start_date: 2025-02-23
     start_date_truth: verified
@@ -6097,6 +6437,7 @@
     alias: SSA-09
   - id: detail-ssa-doj-rehling
     type: detailed
+    category: wrecker
     start_date: 2025-04-15
     start_date_truth: reported
     from: SSA
@@ -6124,6 +6465,7 @@
   - id: energy-ryan-riedel
     type: appointed
     agency: Energy
+    category: enabler
     title: Chief Information Officer
     title_type: cio
     start_date: 2025-02-07
@@ -6155,6 +6497,7 @@
   positions:
   - id: hhs-rachel-riley
     type: appointed
+    category: wrecker
     start_date: 2025-01-27
     start_date_truth: verified
     end_date: 2025-10-30
@@ -6173,6 +6516,7 @@
     agency: HHS
   - id: internal-hhs-cms-riley
     type: internal
+    category: wrecker
     agency: CMS
     from: HHS
     from_truth: inferred
@@ -6184,6 +6528,7 @@
     comment: Dating from first reported access to CALM
   - id: internal-hhs-nih-riley
     type: internal
+    category: wrecker
     agency: NIH
     from: HHS
     from_truth: inferred
@@ -6196,6 +6541,7 @@
     source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
   - id: detail-hhs-nsf-riley
     type: detailed
+    category: wrecker
     from: HHS
     from_truth: guessed
     title: Consultant
@@ -6206,6 +6552,7 @@
     agency: NSF
   - id: navy-riley
     type: appointed
+    category: enabler
     agency: DOD
     title: Chief of Naval Research
     office: Office of Naval Research
@@ -6226,6 +6573,7 @@
   positions:
   - id: usda-ronan
     agency: USDA
+    category: wrecker
     type: appointed
     title: Special Advisor
     start_date: 2025-03-XX
@@ -6251,6 +6599,7 @@
     VA, where he has been working with Cary Volpert to review and eliminate a large number of VA contracts.
   positions:
   - id: va-roussous
+    category: wrecker
     start_date: 2025-03-25
     start_date_truth: reported
     type: appointed
@@ -6276,6 +6625,7 @@
   positions:
   - id: state-rubio
     type: appointed
+    category: adjacent
     agency: State
     start_date: 2025-01-20
     start_date_truth: verified
@@ -6284,6 +6634,7 @@
     source: https://www.nytimes.com/2025/01/20/us/politics/marco-rubio-confirmed-secretary-of-state.html
   - id: usaid-rubio
     type: appointed
+    category: adjacent
     agency: USAID
     start_date: 2025-02-03
     start_date_truth: verified
@@ -6298,6 +6649,7 @@
     - https://www.politico.com/news/2025/08/29/rubio-usaid-closeout-vought-00536088
   - id: nara-rubio
     type: appointed
+    category: adjacent
     agency: NARA
     start_date: 2025-02-16
     start_date_truth: verified
@@ -6328,6 +6680,7 @@
   positions:
   - id: ssa-mike-russo-cio
     type: appointed
+    category: enabler
     title: Chief Information Officer
     title_type: cio
     agency: SSA
@@ -6347,6 +6700,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: ssa-mike-russo-advisor
     type: demotion
+    category: wrecker
     start_date: 2025-03-25
     start_date_truth: reported
     end_date: 2025-09-03
@@ -6368,6 +6722,7 @@
   - id: ssa-mike-russo-co-cio
     agency: SSA
     type: promotion
+    category: enabler
     start_date: 2025-09-03
     title: Chief Information Officer (Core Business Functions)
     title_type: cio
@@ -6390,6 +6745,7 @@
   positions:
   - id: amanda-scales-opm
     type: appointed
+    category: enabler
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
@@ -6415,6 +6771,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: amanda-scales-demotion
     type: demotion
+    category: unknown
     agency: OPM
     start_date: 2025-03-28
     start_date_truth: verified
@@ -6439,6 +6796,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: opm-techforce-scales
     agency: OPM
+    category: leadership
     type: appointed
     start_date: 2026-01-(28)~
     start_date_truth: reported
@@ -6461,6 +6819,7 @@
   positions:
   - id: gsa-frank-schuler
     type: appointed
+    category: wrecker
     title: Senior Advisor
     title_type: advisor
     agency: GSA
@@ -6501,6 +6860,7 @@
   positions:
   - id: internal-dhs-cbp-schutt
     type: internal
+    category: wrecker
     from: DHS
     from_truth: inferred
     sort_date: 2025-02-20
@@ -6509,6 +6869,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-fema-schutt
     type: internal
+    category: wrecker
     from: DHS
     sort_date: 2025-02-20
     from_truth: inferred
@@ -6517,6 +6878,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-ice-schutt
     type: internal
+    category: wrecker
     from: DHS
     sort_date: 2025-02-20
     from_truth: inferred
@@ -6525,6 +6887,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-schutt
     type: internal
+    category: wrecker
     from: DHS
     sort_date: 2025-02-20
     from_truth: inferred
@@ -6533,6 +6896,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-uscis-schutt
     type: internal
+    category: wrecker
     from: DHS
     sort_date: 2025-02-20
     from_truth: inferred
@@ -6541,6 +6905,7 @@
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: detail-gsa-doge-schutt
     type: detailed
+    category: wrecker
     agency: DOGE
     from: GSA
     from_truth: inferred
@@ -6551,6 +6916,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: gsa-schutt
     type: appointed
+    category: wrecker
     agency: GSA
     sort_date: 2025-02-18
     start_date: 2025-02-(18)~
@@ -6566,6 +6932,7 @@
     - https://www.linkedin.com/in/kschutt/
   - id: detail-gsa-dhs-schutt
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: inferred
     agency: DHS
@@ -6576,6 +6943,7 @@
     source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
   - id: internal-dhs-cisa-schutt
     type: detailed
+    category: wrecker
     from: DHS
     from_truth: inferred
     agency: CISA
@@ -6586,6 +6954,7 @@
     source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
   - id: detail-gsa-hhs-kyle-schutt
     type: detailed
+    category: wrecker
     agency: HHS
     from: GSA
     from_truth: guessed
@@ -6608,11 +6977,13 @@
     title: Senior Advisor
     title_type: advisor
     type: detailed
+    category: wrecker
     table_note: identified by agency FOIA as having been at the agency, guessing detailed
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
   - id: gsa-sennott
     agency: GSA
     type: appointed
+    category: wrecker
     salary: "$167,603"
     start_date: 2025-02-12
     start_date_truth: reported
@@ -6625,6 +6996,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-gsa-nasa-sennott
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     sort_date: 2025-03-14
@@ -6654,6 +7026,7 @@
     start_date: 2025-03-(31)~
     start_date_truth: verified
     type: appointed
+    category: enabler
     title: Senior Advisor
     title_type: advisor
     salary: "$167,603"
@@ -6684,6 +7057,7 @@
   positions:
   - id: gsa-ethan-shaotran
     type: appointed
+    category: wrecker
     agency: GSA
     salary: "$0"
     start_date: 2025-01-20
@@ -6692,6 +7066,7 @@
     source: https://www.wired.com/story/elon-musk-lackeys-general-services-administration/
   - id: detail-gsa-opm-shaotran
     type: detailed
+    category: wrecker
     agency: DOGE
     from: GSA
     from_truth: inferred
@@ -6700,6 +7075,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-gsa-education-3
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: verified
     agency: Education
@@ -6716,6 +7092,7 @@
     alias: ED-03
   - id: detail-gsa-ssa-employee-10
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: verified
     agency: SSA
@@ -6733,6 +7110,7 @@
     alias: SSA-10
   - id: detail-gsa-usadf-ethan-shaotran
     type: detailed
+    category: wrecker
     name: Ethan Shaotran
     from: GSA
     from_truth: verified
@@ -6746,6 +7124,7 @@
     mou: https://www.documentcloud.org/documents/26028791-mou-20250220-gsa-usadf-ethan-shaotran/
   - id: detail-gsa-iaf-shaotran
     type: detailed
+    category: wrecker
     from: GSA
     agency: IAF
     from_truth: verified
@@ -6758,6 +7137,7 @@
     table_note: agency contact was earlier, but assuming MOU signed when Marocco seized power
   - id: detail-gsa-usps-ethan-shaotran
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: verified
     agency: USPS
@@ -6771,6 +7151,7 @@
     mou: https://www.documentcloud.org/documents/26028812-mou-20250312-gsa-usps-ethan-shaotran/
   - id: gsa-shaotran-fulltime
     agency: GSA
+    category: wrecker
     type: converted
     title: Senior Advisor
     pay_grade: GS-14
@@ -6781,6 +7162,7 @@
     source: https://www.wired.com/story/big-balls-young-doge-converted-into-full-time-government-employees/
   - id: detail-gsa-dfc-shaotran
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: guessed
     start_date: 2025-04-28
@@ -6806,6 +7188,7 @@
   positions:
   - id: detail-gsa-hhs-shea
     type: detailed
+    category: wrecker
     agency: HHS
     from: GSA
     from_truth: guessed
@@ -6819,6 +7202,7 @@
     source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: gsa-shea
     type: appointed
+    category: wrecker
     agency: GSA
     start_date: 2025-05-XX
     start_date_truth: guessed
@@ -6852,6 +7236,7 @@
   positions:
   - id: gsa-thomas-shedd
     type: appointed
+    category: enabler
     agency: GSA
     title: Deputy FAS Commissioner / Administrator, Technology Transformation Service
     title_type: cio
@@ -6872,6 +7257,7 @@
     supervisory: true
   - id: dol-shedd
     type: appointed
+    category: enabler
     start_date: 2025-03-14
     start_date_truth: reported
     end_date: 2025-08-01
@@ -6886,6 +7272,7 @@
     - https://www.nextgov.com/people/2025/08/thomas-shedd-departs-labor-cio/407195/
   - id: gsa-shedd-fraud
     type: demotion
+    category: wrecker
     start_date: 2026-02-19
     start_date_truth: reported
     agency: GSA
@@ -6901,6 +7288,7 @@
   positions:
   - id: treasury-roland-shen
     type: appointed
+    category: wrecker
     start_date: 2025-04-18
     start_date_truth: reported
     office: Bureau of Fiscal Services
@@ -6928,6 +7316,7 @@
   positions:
   - id: gsa-simonpour
     type: appointed
+    category: wrecker
     agency: GSA
     start_date: 2025-03-XX
     start_date_truth: guessed
@@ -6943,6 +7332,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: detail-gsa-usps-alex-simonpour
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: verified
     agency: USPS
@@ -6958,6 +7348,7 @@
     mou: https://www.documentcloud.org/documents/26028812-mou-20250312-gsa-usps-ethan-shaotran/
   - id: detail-gsa-nasa-simonpour
     type: detailed
+    category: wrecker
     start_date: 2025-03-14
     start_date_truth: reported
     title: Advisor
@@ -6980,6 +7371,7 @@
   positions:
   - id: dod-slagh
     type: appointed
+    category: wrecker
     agency: DOD
     start_date: 2025-02-(18)?
     start_date_truth: inferred
@@ -7007,6 +7399,7 @@
   positions:
   - id: faa-smeal
     type: appointed
+    category: wrecker
     agency: FAA
     start_date: 2025-02-16
     start_date_truth: reported
@@ -7036,6 +7429,7 @@
   positions:
   - id: doge-brad-smith
     type: appointed
+    category: wrecker
     agency: DOGE
     start_date: 2025-01-20
     start_date_truth: verified
@@ -7052,6 +7446,7 @@
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-doge-hhs-smith
     type: detailed
+    category: wrecker
     agency: HHS
     from: DOGE
     start_date: 2025-02-XX
@@ -7064,6 +7459,7 @@
     table_note: detail started before 2/13
   - id: hhs-brad-smith
     agency: HHS
+    category: wrecker
     type: converted
     title: Senior Advisor
     title_type: advisor
@@ -7080,6 +7476,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: state-brad-smith
     agency: State
+    category: enabler
     type: appointed
     start_date: 2025-08-(12)~
     start_date_truth: reported
@@ -7106,6 +7503,7 @@
   positions:
   - id: ssa-employee-11
     type: appointed
+    category: wrecker
     start_date: 2025-03-16
     start_date_truth: verified
     nte_date: 2026-03-15
@@ -7148,6 +7546,7 @@
   positions:
   - id: labor-sonderling
     type: appointed
+    category: enabler
     appt_type: SES Noncareer
     agency: DOL
     start_date: 2025-01-20
@@ -7165,6 +7564,7 @@
     source: https://www.documentcloud.org/documents/26028782-onboard-dol-keith-sonderling/
   - id: imls-sonderling
     type: appointed
+    category: wrecker
     start_date: 2025-03-20
     start_date_truth: reported
     title: Acting Director
@@ -7173,6 +7573,7 @@
     agency: IMLS
   - id: labor-sonderling-secy
     type: promotion
+    category: enabler
     start_date: 2025-03-23
     start_date_truth: verified
     title: Deputy Secretary of Labor
@@ -7187,6 +7588,7 @@
     source: https://www.documentcloud.org/documents/26028782-onboard-dol-keith-sonderling/
   - id: mbda-sonderling
     type: appointed
+    category: wrecker
     agency: MBDA
     start_date: 2025-04-(17)~
     start_date_truth: reported
@@ -7203,6 +7605,7 @@
     A longtime associate of Elon Musk at Twitter and other companies, Branden Spikes reportedly spent
     a couple of months within DOGE, but there are no public details yet.
   category: unknown
+  skill: coder
   positions: []
 
 - name: Christopher Stanley
@@ -7229,6 +7632,7 @@
   positions:
   - id: opm-christopher-stanley
     type: appointed
+    category: wrecker
     name: Christopher Stanley
     agency: OPM
     start_date: 2025-01-28
@@ -7252,6 +7656,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: doge-stanley
     type: appointed
+    category: wrecker
     agency: DOGE
     start_date: 2025-01-31
     start_date_truth: verified
@@ -7274,6 +7679,7 @@
     agency: FHFA
   - id: detail-opm-doj-stanley
     type: detailed
+    category: wrecker
     from: OPM
     from_truth: guessed
     sort_date: 2025-04-02
@@ -7296,6 +7702,7 @@
   positions:
   - id: nds-steffaniak
     type: appointed
+    category: builder
     agency: NDS
     start_date: 2026-01-XX
     start_date_truth: self-reported
@@ -7310,6 +7717,7 @@
   positions:
   - id: ssa-steffensen
     type: appointed
+    category: enabler
     start_date: 2025-02-25
     start_date_truth: reported
     end_date: 2025-02-27
@@ -7327,6 +7735,7 @@
     agency: SSA
   - id: ssa-steffensen-1
     type: promotion
+    category: enabler
     start_date: 2025-02-27
     start_date_truth: reported
     title: Acting General Counsel
@@ -7351,6 +7760,7 @@
   positions:
   - id: gsa-stein
     type: appointed
+    category: wrecker
     name: Jack Stein
     agency: GSA
     start_date: 2025-04-15
@@ -7373,6 +7783,7 @@
   positions:
   - id: dot-stube
     type: appointed
+    category: wrecker
     name: Brian Stube
     sort_date: 2025-03-05
     start_date: 2025-03-XX
@@ -7405,6 +7816,7 @@
   positions:
   - id: opm-employee-08
     type: appointed
+    category: support
     start_date: 2025-01-20
     start_date_truth: verified
     appt_type: SES Noncareer
@@ -7420,6 +7832,7 @@
     alias: OPM-08
   - id: opm-james-sullivan-demotion
     type: promotion
+    category: support
     agency: OPM
     start_date: 2025-03-28
     start_date_truth: verified
@@ -7442,6 +7855,7 @@
   positions:
   - id: nds-sutch
     type: appointed
+    category: builder
     agency: NDS
     source: >-
       https://www.nextgov.com/digital-government/2026/02/new-white-house-design-team-aims-delightful-websites-changing-design-ethos-process/411560/
@@ -7466,6 +7880,7 @@
   positions:
   - id: hud-sweet
     type: appointed
+    category: wrecker
     sort_date: 2025-04-10
     start_date: 2025-04-(10)~
     start_date_truth: reported
@@ -7499,6 +7914,7 @@
   - id: hhs-terrell
     start_date: 2025-03-06
     start_date_truth: verified
+    category: wrecker
     type: appointed
     agency: HHS
     salary: "$132,629"
@@ -7508,6 +7924,7 @@
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - id: internal-hhs-cms-terrell
     type: internal
+    category: wrecker
     start_date: 2025-03-11
     start_date_truth: inferred
     agency: CMS
@@ -7517,6 +7934,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: detail-hhs-nsf-terrell
     type: detailed
+    category: wrecker
     office: Office of the Director
     from: HHS
     from_truth: inferred
@@ -7528,6 +7946,7 @@
     agency: NSF
   - id: nds-terrell
     type: appointed
+    category: builder
     agency: NDS
     start_date: 2025-08-(29)?
     start_date_truth: reported
@@ -7537,6 +7956,7 @@
     - https://www.notus.org/trump-white-house/silicon-valley-government-websites-national-design-studio
     table_note: He has been linked to NDS but is still also at HHS?
   - id: hhs-terrell-cto
+    category: enabler
     type: promotion
     agency: HHS
     title: Chief Technology Officer
@@ -7563,6 +7983,7 @@
   positions:
   - id: interior-trampe
     type: unknown
+    category: wrecker
     office: Office of the Secretary
     start_date: 2025-02-24
     start_date_truth: inferred
@@ -7596,6 +8017,7 @@
   positions:
   - id: gsa-tullman
     type: appointed
+    category: wrecker
     agency: GSA
     sort_date: 2025-04-15
     start_date: 2025-04-XX
@@ -7606,6 +8028,7 @@
     - https://www.linkedin.com/in/alex-tullman-685332164
   - id: hhs-tullman
     type: detailed
+    category: wrecker
     agency: HHS
     from: GSA
     from_truth: inferred
@@ -7633,6 +8056,7 @@
   positions:
   - id: opm-vilcsak
     agency: OPM
+    category: builder
     type: consultant
     sort_date: 2025-08-16
     table_note: Named as working alongside Airbnb alumni at OPM.
@@ -7640,6 +8064,7 @@
   - id: gsa-vilcsak
     agency: GSA
     type: consultant
+    category: builder
     table_note: Hired as contractor from MSI Consulting
     start_date: 2025-08-XX
     start_date_truth: guessed
@@ -7667,6 +8092,7 @@
     start_date: 2025-03-25
     start_date_truth: reported
     type: appointed
+    category: wrecker
     salary: "$167,603"
     source:
     - https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
@@ -7688,6 +8114,7 @@
   positions:
   - id: omb-vought
     type: appointed
+    category: adjacent
     agency: OMB
     title: Director
     start_date: 2025-02-07
@@ -7697,6 +8124,7 @@
     supervisory: true
   - id: cfpb-acting-vought
     type: appointed
+    category: enabler
     agency: CFPB
     title: Acting Director
     title_type: director
@@ -7706,6 +8134,7 @@
     source: https://www.cnn.com/2025/02/08/business/cfpb-doge-vought-x/index.html
   - id: usaid-acting-vought
     type: appointed
+    category: enabler
     agency: USAID
     title: Acting Director
     title_type: director
@@ -7730,6 +8159,7 @@
   positions:
   - id: dod-weiss
     type: appointed
+    category: wrecker
     agency: DOD
     sort_date: 2025-02-18
     start_date: 2025-02-(18)?
@@ -7757,6 +8187,7 @@
   positions:
   - id: dod-west
     type: appointed
+    category: wrecker
     title: Financial Strategist
     agency: DOD
     start_date: 2025-02-XX
@@ -7768,6 +8199,7 @@
     source: https://www.linkedin.com/in/owen-west-b1536b197/
   - id: dod-west-advisor
     type: promotion
+    category: wrecker
     agency: DOD
     title_type: advisor
     start_date: 2025-07-XX
@@ -7790,6 +8222,7 @@
   positions:
   - id: treasury-whitridge
     type: appointed
+    category: wrecker
     start_date: 2025-02-25
     start_date_truth: verified
     fuzz: Identity is only revealed in a court filing, using ethics training date as start for now
@@ -7823,6 +8256,7 @@
   positions:
   - id: detail-gsa-wick
     type: detailed
+    category: wrecker
     from: DOGE
     agency: GSA
     table_note: At the FCC, Jordan Wick asks them to send a meeting invite to a GSA address for him
@@ -7830,6 +8264,7 @@
     - https://www.documentcloud.org/documents/26379171-fcc-foia-production-3-for-frequency-forward/
   - id: detail-sba-wick
     agency: SBA
+    category: wrecker
     from: DOGE
     from_truth: guessed
     title: Special Advisor
@@ -7839,6 +8274,7 @@
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
   - id: doge-wick
     type: appointed
+    category: wrecker
     agency: DOGE
     sort_date: 2025-01-20
     start_date: 2025-01-(20)~
@@ -7853,6 +8289,7 @@
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
   - id: detail-usds-cfpb-jordan-wick
     type: detailed
+    category: wrecker
     agency: CFPB
     from: DOGE
     from_truth: verified
@@ -7868,6 +8305,7 @@
     comment: Dates provided in court documents. Converted to full position
   - id: detail-doge-dol-wick
     type: detailed
+    category: wrecker
     from: DOGE
     from_truth: inferred
     sort_date: 2025-02-13
@@ -7881,6 +8319,7 @@
     agency: DOL
   - id: detail-doge-education-wick
     type: detailed
+    category: wrecker
     agency: Education
     from: DOGE
     from_truth: inferred
@@ -7889,6 +8328,7 @@
     source: https://www.documentcloud.org/documents/26028798-doge-staff-education-20250407/
   - id: cfpb-jordan-wick
     type: converted
+    category: wrecker
     title: Expert/Consultant
     title_type: advisor
     comment: All I have is his SF-61
@@ -7902,6 +8342,7 @@
     agency: CFPB
   - id: detail-fcc-wick
     type: detailed
+    category: wrecker
     from: DOGE
     salary: "$0"
     from_truth: verified
@@ -7921,6 +8362,7 @@
       https://www.muckrock.com/foi/united-states-of-america-10/detailinghiring-arrangements-for-jeremy-lewin-consumer-financial-protection-bureau-183822/#file-1326062
   - id: detail-usda-wick
     type: detailed
+    category: wrecker
     from: DOGE
     from_truth: reported
     agency: USDA
@@ -7949,6 +8391,7 @@
   positions:
   - id: joanna-wischer-opm
     type: appointed
+    category: wrecker
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
@@ -7971,6 +8414,7 @@
   - id: wischer-omb
     agency: OMB
     type: appointed
+    category: wrecker
     start_date: 2025-03-(31)~
     start_date_truth: reported
     table_note: OMB position as Joanna Miller
@@ -8003,6 +8447,7 @@
   positions:
   - id: gsa-wood
     type: appointed
+    category: wrecker
     name: Marshall Wood
     agency: GSA
     start_date: 2025-04-21
@@ -8016,6 +8461,7 @@
     comment: FIXME, find more details on when started
   - id: detail-gsa-dfc-wood
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: reported
     start_date: 2025-04-28
@@ -8042,6 +8488,7 @@
   positions:
   - id: irs-wunderly
     type: appointed
+    category: wrecker
     start_date: 2025-02-20
     start_date_truth: verified
     salary: "$84,601"
@@ -8063,6 +8510,7 @@
   positions:
   - id: opm-chris-young
     type: appointed
+    category: wrecker
     agency: OPM
     start_date: 2025-01-30
     start_date_truth: verified
@@ -8092,6 +8540,7 @@
     end_date_truth: verified
   - id: detail-opm-doge-young
     type: detailed
+    category: wrecker
     agency: DOGE
     from: OPM
     from_truth: inferred
@@ -8103,6 +8552,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-opm-cfpb-chris-young
     type: detailed
+    category: wrecker
     agency: CFPB
     from: OPM
     from_truth: verified
@@ -8133,6 +8583,7 @@
   positions:
   - id: dol-youngs
     type: detailed
+    category: wrecker
     agency: DOL
     from: GSA
     from_truth: inferred
@@ -8150,6 +8601,7 @@
     - https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/r_9nu.fNf5II/v0
   - id: gsa-youngs
     type: appointed
+    category: wrecker
     agency: GSA
     sort_date: 2025-03-05
     start_date: 2025-03-XX
@@ -8164,6 +8616,7 @@
     source: https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/r_9nu.fNf5II/v0
   - id: detail-peace-corps-youngs
     type: detailed
+    category: wrecker
     from: DOL
     from_truth: inferred
     start_date: 2025-04-04

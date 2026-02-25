@@ -29,6 +29,7 @@ end
 DB.create_table! :positions do
   string :id, primary_key: true
   string :type, null: false
+  string :category, null: false
   string :agency_id
   string :name
   string :doge_alias_id

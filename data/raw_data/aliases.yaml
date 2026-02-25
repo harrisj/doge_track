@@ -48,6 +48,7 @@
   - id: detail-opm-education-akash-bobba
     type: detailed
     agency: Education
+    category: wrecker
     from: OPM
     from_truth: verified
     signed_date: 2025-02-12
@@ -70,6 +71,7 @@
   positions:
   - id: education-ed-2
     type: appointed
+    category: wrecker
     agency: Education
     start_date: 2025-01-31
     start_date_truth: verified
@@ -102,6 +104,7 @@
   positions:
   - id: detail-gsa-education-3
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: verified
     agency: Education
@@ -127,6 +130,7 @@
   positions:
   - id: education-employee-4
     type: consultant
+    category: wrecker
     comment: Part-time
     start_date: 2025-02-04
     start_date_truth: verified
@@ -167,6 +171,7 @@
   positions:
   - id: opm-employee-2
     type: appointed
+    category: wrecker
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
@@ -205,6 +210,7 @@
   positions:
   - id: opm-3
     type: appointed
+    category: wrecker
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
@@ -233,6 +239,7 @@
     comment: I was able to confirm that OPM Employee 3 is Akash Bobba
   - id: opm-3-perm
     type: converted
+    category: wrecker
     agency: OPM
     table_note: Court testimony reports conversion to permanent, restored access
     start_date: 2025-08-08
@@ -241,6 +248,7 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.148.0.pdf
   - id: detail-opm-ssa-opm-3
     type: detailed
+    category: wrecker
     agency: SSA
     from: OPM
     from_truth: verified
@@ -268,6 +276,7 @@
   positions:
   - id: opm-04
     type: appointed
+    category: wrecker
     agency: GSA
     start_date: 2025-01-24
     start_date_truth: verified
@@ -309,6 +318,7 @@
   positions:
   - id: opm-temp-employee-5
     type: appointed
+    category: wrecker
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
@@ -336,6 +346,7 @@
     - https://www.documentcloud.org/documents/26028815-onboard-opm-employee-5/
   - id: opm-perm-employee-5
     type: converted
+    category: wrecker
     agency: OPM
     start_date: 2025-02-18
     start_date_truth: verified
@@ -361,6 +372,7 @@
     - https://www.linkedin.com/in/gavin-kliger-5a339b157/
   - id: opm-05-gsa
     type: detailed
+    category: wrecker
     agency: GSA
     from: OPM
     from_truth: verified
@@ -368,6 +380,7 @@
     table_note: detail in court doc
   - id: opm-05-usagm
     type: detailed
+    category: wrecker
     agency: USAGM
     from: OPM
     from_truth: verified
@@ -389,6 +402,7 @@
   positions:
   - id: opm-nikhil-rajpal
     type: appointed
+    category: wrecker
     agency: OPM
     start_date: 2025-01-24
     start_date_truth: verified
@@ -428,6 +442,7 @@
   - id: opm-temp-employee-07
     same_as: opm-brian-bjelde
     type: appointed
+    category: support
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
@@ -448,6 +463,7 @@
     source: https://www.documentcloud.org/documents/26028776-onboard-opm-employee-7/
   - id: opm-perm-employee-07
     type: converted
+    category: support
     agency: OPM
     start_date: 2025-01-31
     start_date_truth: verified
@@ -473,6 +489,7 @@
   positions:
   - id: opm-employee-08
     type: appointed
+    category: support
     start_date: 2025-01-20
     start_date_truth: verified
     appt_type: SES Noncareer
@@ -533,6 +550,7 @@
   positions:
   - id: opm-employee-10
     type: appointed
+    category: support
     agency: OPM
     start_date: 2025-01-30
     start_date_truth: inferred
@@ -554,6 +572,7 @@
   positions:
   - id: opm-employee-11
     type: unknown
+    category: support
     agency: OPM
     sort_date: 2025-02-07
     start_date: 2025-02-(07)~
@@ -576,6 +595,7 @@
   positions:
   - id: opm-employee-12
     type: unknown
+    category: support
     agency: OPM
     sort_date: 2025-02-07
     start_date: 2025-02-(07)~
@@ -609,6 +629,7 @@
   positions:
   - id: opm-employee-13
     type: appointed
+    category: support
     agency: OPM
     sort_date: 2025-01-31
     start_date: 2025-01-(31)~
@@ -640,6 +661,7 @@
   positions:
   - id: opm-employee-14
     type: unknown
+    category: wrecker
     same_as: opm-chris-young
     agency: OPM
     sort_date: 2025-02-07
@@ -662,6 +684,7 @@
   positions:
   - id: opm-employee-15
     type: unknown
+    category: support
     agency: OPM
     sort_date: 2025-02-07
     start_date: 2025-02-(07)~
@@ -692,6 +715,7 @@
   positions:
   - id: opm-employee-16
     type: unknown
+    category: wrecker
     agency: OPM
     same_as: opm-jacob-altik
     start_date: 2025-01-(31)~
@@ -727,6 +751,7 @@
   positions:
   - id: opm-employee-17
     type: unknown
+    category: support
     agency: OPM
     sort_date: 2025-01-31
     start_date: 2025-01-(31)~
@@ -763,6 +788,7 @@
   positions:
   - id: opm-employee-18
     type: appointed
+    category: unknown
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
@@ -781,6 +807,7 @@
   positions:
   - id: peace-corps-02
     type: detailed
+    category: wrecker
     agency: PeaceCorps
     from: USAID
     from_truth: verified
@@ -802,6 +829,7 @@
   positions:
   - id: ssa-employee-1
     type: appointed
+    category: wrecker
     source:
     - https://www.documentcloud.org/documents/26028785-onboard-ssa-employee-1/
     - https://www.documentcloud.org/documents/25940536-25-hq-0774-f-resumes-redacted-3/
@@ -837,6 +865,7 @@
   positions:
   - id: detail-nasa-ssa-employee-2
     type: detailed
+    category: wrecker
     from: NASA
     from_truth: verified
     agency: SSA
@@ -858,6 +887,7 @@
     mou: https://www.documentcloud.org/documents/26028810-mou-20250306-nasa-ssa-employee-2/
   - id: ssa-employee-2-cio
     type: appointed
+    category: enabler
     agency: SSA
     title: Chief Information Officer
     title_type: cio
@@ -889,6 +919,7 @@
   positions:
   - id: detail-dol-ssa-employee-3
     type: detailed
+    category: wrecker
     agency: SSA
     from: DOL
     from_truth: verified
@@ -911,6 +942,7 @@
   positions:
   - id: ssa-antonio-gracias
     type: appointed
+    category: wrecker
     agency: SSA
     pd_code: KNX0370
     start_date: 2025-02-23
@@ -947,6 +979,7 @@
   positions:
   - id: ssa-employee-5
     type: detailed
+    category: wrecker
     agency: SSA
     from: DOGE
     from_truth: verified
@@ -967,6 +1000,7 @@
   positions:
   - id: ssa-employee-6
     type: appointed
+    category: wrecker
     agency: SSA
     start_date: 2025-02-23
     start_date_truth: verified
@@ -990,6 +1024,7 @@
   positions:
   - id: detail-dol-ssa-employee-7
     type: detailed
+    category: wrecker
     agency: SSA
     from: DOL
     from_truth: verified
@@ -1018,6 +1053,7 @@
   positions:
   - id: detail-opm-ssa-8
     type: detailed
+    category: wrecker
     from: OPM
     agency: SSA
     signed_date: 2025-02-26
@@ -1044,6 +1080,7 @@
   positions:
   - id: ssa-employee-9
     agency: SSA
+    category: wrecker
     type: appointed
     start_date: 2025-02-23
     start_date_truth: verified
@@ -1075,6 +1112,7 @@
   positions:
   - id: detail-gsa-ssa-employee-10
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: verified
     agency: SSA
@@ -1102,6 +1140,7 @@
   positions:
   - id: ssa-employee-11
     type: appointed
+    category: wrecker
     start_date: 2025-03-16
     start_date_truth: verified
     nte_date: 2026-03-15
