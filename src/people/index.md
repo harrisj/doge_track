@@ -22,31 +22,33 @@ To better understand the types of roles I've seen within DOGE, I have sorted the
 
 Like any categorization, this is an approximation that provides useful clarity but also masks the messy nuances of reality. I have no idea if DOGE has their own internal categories and how well these map to their own. My categorization also does not account for people changing their roles over time. For instance, {{ person_link("Scott Coulter") }} originally would have been classified as a Wrecker since he was detailed into other agencies like NASA, but I have reclassified him as an Enabler since he was promoted to a Chief Information Officer at Social Security.
 
-Here are the current members of DOGE that I know about, listed with their likely start dates if known or when they were first spotted in an agency. If they have exited the government, that date is also presented here. Otherwise, the table reports when they were last explicitly named in a news report or court filing as being present in a government role.
+Here are the current members of DOGE that I have linked to specific positions, listed with their likely start dates if known or when they were first spotted in an agency. If they have exited the government, that date is also presented here. Otherwise, the table reports when they were last explicitly named in a news report or court filing as being present in a government role.
 
-{% people = Person.eager_graph(:positions).order(:sort_name, :sort_date).all %}
+{% people = Person.eager_graph({positions: :agency}).order(:sort_date, Sequel[:agency][:name], :sort_name).all %}
 
-<table class="my-table-style table-zebra">
+{% last_key = "" %}
+<table class="table table-xs md:table-sm xl:table-md py-5 mb-0 table-zebra">
 <thead>
   <tr>
-      <th class="align-left w-[14px]"></th>
+      <th class="align-left">Start</th>
+      <th class="align-left">Agency</th>
       <th class="align-left">Name</th>
       <th class="align-left">Skill</th>
-      <th class="align-left">Start</th>
-      <th class="align-left">Status</th>
-      <th class="align-left hide-cell-mobile">Agencies</th>
+      <th class="align-left">Last Seen</th>
   </tr>
 </thead>
 <tbody>
 {% people.each do |person| %}
+    {% next unless person.positions.first.start_date %}
+    {% key = "#{person.sort_date}-#{person.positions.first.agency_id}}}" %}
     <tr>
-        <td class="align-left align-top w-[14px]"><i class="fa-sharp fa-solid {{ person_icon(person) }}"></i></td>
-        <td class="align-left align-top">{{ person_link(person) }}</td>
+        <td class="align_left align-top text-nowrap">{% if key != last_key %}<i class="fa-sharp fa-solid fa-person-to-door" aria-label="Started"></i> {{ render EdtfFormat.new(person.positions.first.sort_date, :iso) }}{% end %}</td>
+        <td class="align-left align-top">{{ agency_link(person.positions.first.agency_id) }}</td>
+        <td class="align-left align-top"><i class="fa-sharp fa-solid {{ person_icon(person) }}"></i> {{ person_link(person) }}</td>
         <td class="align-left align-top text-nowrap">{{ person_skill(person) }}</td>
-        <td class="align_left align-top text-nowrap">{% if person.start_date %}<i class="fa-sharp fa-solid fa-person-to-door" aria-label="Started"></i> {{ render EdtfFormat.new(person.positions.first.start_date, :iso) }}{% if person.positions.first.start_date_truth == 'guessed' %}?{% end %}{% elsif person.events.any? %}<i class="fa-sharp fa-solid fa-users-viewfinder" aria-label="First spotted"></i> {{ render EdtfFormat.new(person.events.first.date, :iso) }}{% end %}</td>
         <td class="align-left align-top text-nowrap">{% if person.govt_exit_date %}<b><i class="fa-sharp fa-solid fa-left-from-bracket" aria-label="Left DOGE"></i> {{ render EdtfFormat.new(person.govt_exit_date, :iso) }}{% if person.govt_exit_truth == 'guessed' %}?{% end %}</b>{% elsif person.events.any? %}{% last_event = person.events.last %}<i class="fa-sharp fa-solid fa-users-viewfinder" aria-label="Most recently spotted"></i> {{ render EdtfFormat.new(last_event.date, :iso) }}{% end %}</td>
-        <td class="align-left align-top hide-cell-mobile">{% if person.positions.any? %}{{ person.positions.map(&:agency_id) | uniq | agency_links }}{% end %}</td>
     </tr>
+    {% last_key = key %}
 {% end %}
 </tbody>
 </table>
