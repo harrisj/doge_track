@@ -33,7 +33,7 @@ Here are the current members of DOGE that I have linked to specific positions, l
       <th class="align-left">Start</th>
       <th class="align-left">Agency</th>
       <th class="align-left">Name</th>
-      <th class="align-left">Skill</th>
+      <th class="align-left hide-cell-mobile">Skill</th>
       <th class="align-left">Last Seen</th>
   </tr>
 </thead>
@@ -44,8 +44,8 @@ Here are the current members of DOGE that I have linked to specific positions, l
     <tr>
         <td class="align_left align-top text-nowrap">{% if key != last_key %}<i class="fa-sharp fa-solid fa-person-to-door" aria-label="Started"></i> {{ render EdtfFormat.new(person.positions.first.sort_date, :iso) }}{% end %}</td>
         <td class="align-left align-top">{{ agency_link(person.positions.first.agency_id) }}</td>
-        <td class="align-left align-top"><i class="fa-sharp fa-solid {{ person_icon(person) }}"></i> {{ person_link(person) }}</td>
-        <td class="align-left align-top text-nowrap">{{ person_skill(person) }}</td>
+        <td class="align-left align-top"><span class="hidden md:inline"><i class="fa-sharp fa-solid {{ person_icon(person) }}"></i> </span>{{ person_link(person) }}</td>
+        <td class="align-left align-top hide-cell-mobile">{{ person_skill(person) }}</td>
         <td class="align-left align-top text-nowrap">{% if person.govt_exit_date %}<b><i class="fa-sharp fa-solid fa-left-from-bracket" aria-label="Left DOGE"></i> {{ render EdtfFormat.new(person.govt_exit_date, :iso) }}{% if person.govt_exit_truth == 'guessed' %}?{% end %}</b>{% elsif person.events.any? %}{% last_event = person.events.last %}<i class="fa-sharp fa-solid fa-users-viewfinder" aria-label="Most recently spotted"></i> {{ render EdtfFormat.new(last_event.date, :iso) }}{% end %}</td>
     </tr>
     {% last_key = key %}
