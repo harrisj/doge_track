@@ -40,7 +40,7 @@ DOGE staff are constantly being moved around to various agencies or within organ
 Events are also roughly categorized by type to better illustrate the type of event it is.
 
 <ul class="list-none">
-  {% %w(access action directory disruption interagency legal official onboard oversight offboard report sighting).each do |type| %}
+  {% %w(access action directory disruption interagency legal official onboard oversight offboard report sighting website).each do |type| %}
     <li><i class="fa-sharp fa-solid {{ event_icon(type) }}"></i> = {{ event_title(type) }}</li>
   {% end %}
 </ul>

@@ -1015,6 +1015,20 @@
   - DHS
   id: 2qesnQ5E
 
+- date: 2025-06-13
+  type: website
+  event: >-
+    DOGE staffers working with the Department of Commerce launch an informational site for the new proposed
+    "[Trump Card](https://trumpcard.gov/)" gold visa, which would let people skip the lines for immigration
+    visas by paying $5 million in fees. It is a single-page site with bold text and an email sign-up form
+    for people who might be interested.
+  agency:
+  - DOGE
+  - Commerce
+  - State
+  source: https://trumpcard.gov/
+  id: 2WWfn1WX
+
 - date: 2025-06-18
   type: disruption
   event: >-
@@ -1363,7 +1377,7 @@
   id: 23sbV0zs
 
 - date: 2025-09-20
-  type: interagency
+  type: website
   event: >-
     The Trump administration revamps the "Gold Card Visa" site that was originally launched in June. The
     visa now will cost $1 million and be an expedited EB-1 or EB-2 visa; the original proposal has been
@@ -1371,8 +1385,10 @@
     wildly unclear and demand is inflated because sign-up is through a public web form. This website is
     the first public work of recently-formed National Design Studio, although the previous version of
     the site was built by DOGE too.
-  source: >-
+  source:
+  - >-
     https://www.forbes.com/sites/dougmelville/2025/09/20/want-to-be-american-for-1-million-the-trump-gold-card-visa-will-now-allow-entry/
+  - https://trumpcard.gov/
   agency:
   - Commerce
   - USCIS
@@ -1439,13 +1455,15 @@
   id: 1QSJQoMg
 
 - date: 2025-10-10
-  type: interagency
+  type: website
   event: >-
     Working with the White House and HHS, the National Design Studio launches the [TrumpRX](https://trumprx.gov/)
     to promote a forthcoming initiative from the White House to cap certain drug prices for private payers.
     This is the fourth website to bear the National Design Studio credit, and like the others it is a
-    single-page site with a signup form.
-  source: https://gizmodo.com/trumprx-is-a-narcissistic-ai-generated-nightmare-2000671309
+    single-page site with expandable accordion elements of text and an email signup form.
+  source:
+  - https://gizmodo.com/trumprx-is-a-narcissistic-ai-generated-nightmare-2000671309
+  - https://trumprx.gov/
   agency:
   - EOP
   - NDS
@@ -1489,11 +1507,12 @@
   id: 9BB7xvsy
 
 - date: 2025-10-29
-  type: interagency
+  type: website
   event: >-
-    The National Design Studio launches a new website safedc.gov with a single page of content and links
-    to hiring portals to various DHS agencies for people interested in working for the administration's
-    DC Task Force.
+    The National Design Studio launches a new website [safedc.gov](https://safedc.gov/) for the admnistration's
+    new DC task force. It features a single page of large bold text on a black background with a large
+    (possibly AI-generated) picture of Trump on patrol with agents, links to job listings on USA Jobs
+    and an email sign-up form. Weirdly, the NDS header also includes a clock.
   agency:
   - NDS
   - DHS
@@ -1503,6 +1522,7 @@
   - >-
     https://www.foxnews.com/politics/scoop-trump-expands-dc-crime-task-force-hiring-push-nationwide-law-enforcement
   - https://www.dezeen.com/2025/11/18/america-first-chief-design-officer-joe-gebbia-interview/
+  - https://safedc.gov/
   id: 2ACcMrux
 
 - date: 2025-11-21
@@ -1547,7 +1567,7 @@
   id: 195m4rUb
 
 - date: 2025-11-25
-  type: interagency
+  type: website
   event: >-
     The Department of Energy launches a new "Genesis Mission" to heavily use AI tools for scientific research.
     The website for this endeavor is created by the National Design Studio and features the classic hallmarks
@@ -1561,6 +1581,7 @@
   source:
   - https://xcancel.com/jgebbia/status/1993365889543025047
   - https://xcancel.com/as400495/status/1993358005132279867
+  - https://genesis.energy.gov/
   agency:
   - Energy
   - NDS
@@ -1578,26 +1599,32 @@
   id: 3Amq3rc3
 
 - date: 2025-12-10
-  type: official
-  event: >-
-    Trump officially launches the [trumpcard.gov](https://trumpcard.gov/) website, which has been modified
-    to now accept more formal online applications and a $15,000 processing fee. This change was presumably
-    made by the National Design Studio, who did the last revamp of the site originally developed by DOGE.
+  type: website
+  event: |-
+    Trump officially launches the [trumpcard.gov](https://trumpcard.gov/)
+      website, which has been modified to now accept more formal online
+      applications and a $15,000 processing fee. This change was presumably
+      made by the National Design Studio, who did the last revamp of the site
+      originally developed by DOGE. More importantly, it now has a more
+      detailed signup form that promises payment processing of the $15,000
+      processing fee as well. With this change, NDS has added a second page.
   agency:
   - NDS
   - USCIS
   - Commerce
-  source: https://apnews.com/article/trump-gold-card-website-live-us-visa-22edbd7e65d188bbf6c8ec1d5f78d11a
+  source:
+  - https://apnews.com/article/trump-gold-card-website-live-us-visa-22edbd7e65d188bbf6c8ec1d5f78d11a
+  - https://trumpcard.gov/
   id: 1tzZGLGv
 
 - date: 2025-12-15
-  type: official
+  type: website
   event: >-
     The National Design Studio and OPM launch techforce.gov, a new site recruiting technical staff for
     a 2-year term to work on technical projects within agencies, a model that sounds similar to 18F and
     USDS, which were respectively completely destroyed and hollowed out by DOGE. The site features the
     typical design of NDS websites – a single page of large bold fonts on a black background with accordion
-    elements to expand information.
+    elements to expand information. It also features AI images of a figure with a computer monitor head.
   agency:
   - NDS
   - OPM
@@ -1606,21 +1633,23 @@
   id: 7KoBqGAR
 
 - date: 2025-12-17
-  type: interagency
+  type: website
   event: >-
     The National Design Studio launches another single-page site [trumpaccounts.gov](https://trumpaccounts.gov)
     in cooperation with the US Treasury. This is to promote a program of special investment accounts that
     was passed by Congress but presented as if it's a result of Trump's personal largesse. It conveys
     a softer tone than many other of their sites, but still sticks to the same convention of a single
     page of text, with a FAQ presented as expandable accordions and a form to sign up for a mailing list.
-  source: https://www.cbsnews.com/news/bessent-unveils-trump-accounts-website-to-encourage-children-to-save/
+  source:
+  - https://www.cbsnews.com/news/bessent-unveils-trump-accounts-website-to-encourage-children-to-save/
+  - https://trumpaccounts.gov/
   agency:
   - NDS
   - Treasury
   id: 2cIWXRSG
 
 - date: 2026-01-09
-  type: official
+  type: website
   event: >-
     The National Design Studio launches [realfood.gov](https://realfood.gov/) with HHS. Evoking more of
     a nostalgic and warm tone rather than the technocratic darkness of some prior sites, it is still a
@@ -1628,6 +1657,7 @@
   source:
   - >-
     https://www.linkedin.com/posts/mattlira_americas-new-dietary-guidelines-activity-7415096828599427072-5F23/
+  - https://realfood.gov/
   agency:
   - NDS
   - HHS
@@ -1667,7 +1697,7 @@
   id: 45sTJzC9
 
 - date: 2026-02-05
-  type: official
+  type: website
   event: >-
     The [Trump RX](https://trumprx.gov/) site formally relaunches with a lookup option to find savings
     codes for various prescriptions. Like many other National Design Studio sites, it features a mix of
@@ -1680,6 +1710,7 @@
   - NDS
   source:
   - https://www.nytimes.com/2026/02/05/health/trumprx-online-drugstore-prices.html
+  - https://trumprx.gov/
   id: 6g1wCTi4
 
 - date: 2026-02-05
@@ -1727,7 +1758,7 @@
   id: 3QNUrdzX
 
 - date: 2026-02-11
-  type: official
+  type: website
   event: >-
     The CIO Council launches a new version of its website [cio.gov](http://cio.gov) which has been redesigned
     by the National Design Studio. This site also includes a new [design system](https://cio.gov/system/tokens),
