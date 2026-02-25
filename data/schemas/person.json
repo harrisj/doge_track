@@ -6,7 +6,7 @@
     "properties": {
         "name": {
             "description": "The name of the person. This is also their primary key",
-            "$ref": "valid_names.json#people"
+            "$ref": "name.json"
         },
         "sort_name": {
             "description": "Usually the last name alone, but could include an initial in case of common names. Primarily used for sorting",
