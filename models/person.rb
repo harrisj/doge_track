@@ -18,23 +18,22 @@ class Person < Sequel::Model
     Event.eager_graph(:people, :agencies, :doge_aliases).where({ Sequel[:events][:id] => event_ids }).order(:date).all
   end
 
+  def category
+    if positions.any?
+      positions.first.category
+    else
+      'adjacent'
+    end
+  end
+
+  def first_agency
+    positions.first.agency if positions.any?
+  end
+
   def page_url
     return custom_path unless custom_path.nil?
 
-    case category
-    when 'wrecker'
-      "/wreckers/other##{slug}"
-    when 'enabler'
-      "/people/enabler-staff##{slug}"
-    when 'support'
-      "/people/support-team##{slug}"
-    when 'booster', 'leadership'
-      "/people/leaders##{slug}"
-    when 'unknown'
-      "/people/unknowns##{slug}"
-    else
-      "/all/people##{slug}"
-    end
+    "/names/#{slug}"
   end
 
   def start_date
