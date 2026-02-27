@@ -41,7 +41,7 @@ Events are also roughly categorized by type to better illustrate the type of eve
 
 <ul class="list-none">
   {% %w(access action directory disruption interagency legal official onboard oversight offboard report sighting website).each do |type| %}
-    <li><i class="fa-sharp fa-solid {{ event_icon(type) }}"></i> = {{ event_title(type) }}</li>
+    <li>{{ render EventLabel.new(type, :icon) }} = {{ render EventLabel.new(type, :text) }}</li>
   {% end %}
 </ul>
 

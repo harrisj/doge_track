@@ -4,50 +4,95 @@ title: The Wreckers
 template_engine: serbea
 description: The most well-known of DOGE's projects has been their spread into multiple agencies to quickly cancel contracts and access systems. These Wreckers (as I call them) have usually been based within OPM, GSA or DOGE itself.
 index_for_search: true
-text_updated: 2025-12-06
+text_updated: 2026-02-26
 ---
 {%@ '/atoms/title', title: "The Wreckers" %}
 
-{% all_wreckers = Person.where(category: 'wrecker').order(:sort_name).all %}
-
 {%@ 'text' do %}
-From the start, DOGE has moved aggressively across the federal government to shutter agencies, cancel spending and seize data for itself. To do this, they have relied on a specific type of person that I call "Wreckers" - usually young and male, from a technical background, willing to do whatever it takes to get the job done quickly. Scratch the surface of any horror story about DOGE's conduct and you'll usually find a wrecker at the core.
+
+From the start, DOGE has moved aggressively across the federal government to
+shutter agencies, cancel spending and seize data for itself. To do this, they
+have relied on a specific type of position that I call "Wreckers" - usually
+staffed by volunteers young and male, from a technical background, willing to do
+whatever it takes to get the job done quickly and move on to the next target at
+that agency or beyond.
 
 ## The DOGE Teams
 
-In the January 20th Executive Order "[Establishing and Implementing the President's 'Department of Government Efficiency'](https://www.whitehouse.gov/presidential-actions/2025/01/establishing-and-implementing-the-presidents-department-of-government-efficiency/)" that established DOGE partially by renaming the US Digital Service, there was a section that described the formation and structure of DOGE teams that would operate at each federal agency
+In the January 20th Executive Order "[Establishing and Implementing the
+President's 'Department of Government
+Efficiency'](/projects/exec-orders/#eo-14158)" that established DOGE partially
+by renaming the US Digital Service, there was a section that described the
+formation and structure of DOGE teams that would operate at each federal agency
 
-> (c) DOGE Teams. In consultation with USDS, each Agency Head shall establish within their respective Agencies a DOGE Team of at least four employees, which may include Special Government Employees, hired or assigned within thirty days of the date of this Order. Agency Heads shall select the DOGE Team members in consultation with the USDS Administrator. Each DOGE Team will typically include one DOGE Team Lead, one engineer, one human resources specialist, and one attorney. Agency Heads shall ensure that DOGE Team Leads coordinate their work with USDS and advise their respective Agency Heads on implementing the President's DOGE Agenda.
+> (c) DOGE Teams. In consultation with USDS, each Agency Head shall establish
+> within their respective Agencies a DOGE Team of at least four employees, which
+> may include Special Government Employees, hired or assigned within thirty days
+> of the date of this Order. Agency Heads shall select the DOGE Team members in
+> consultation with the USDS Administrator. Each DOGE Team will typically
+> include one DOGE Team Lead, one engineer, one human resources specialist, and
+> one attorney. Agency Heads shall ensure that DOGE Team Leads coordinate their
+> work with USDS and advise their respective Agency Heads on implementing the
+> President's DOGE Agenda.
 
-In this executive order, the DOGE teams were simply tasked with the vague goal of "IT Modernization" to make them seem like a continuation of the work that USDS had already been doing. However, what the DOGE Teams were actually there to do was to implement the "President's DOGE agenda." At first, this was left purposefully vague and undefined, but [a flurry of various executive orders]({% link "/projects/exec-orders.md" %}) have made the goals of DOGE more clear.
+In this executive order, the DOGE teams were simply tasked with the vague goal
+of "IT Modernization" to make them seem like a continuation of the work that
+USDS had already been doing. However, what the DOGE Teams were actually there to
+do was to implement the "President's DOGE agenda." At first, this was left
+purposefully vague and undefined, but [a flurry of various executive
+orders](/projects/exec-orders) have made the goals of DOGE more clear.
 
 ## Home Bases
 
-For reasons that aren't entirely clear, DOGE chose to distribute its staff across three different starting agencies as home bases rather than basing them entirely out of USDS/DOGE and detailing them from there. One possibility is that DOGE staff were involved with early work to seize control of centralized services and databases at both the GSA and OPM, so it made sense to start them there. One of the first moves of DOGE at both GSA and OPM was to create guarded and sealed enclaves where they could work and even live in, away from scrutiny. Perhaps, it simply was a matter of the DOGE headquarters at the Eisenhower Executive Office Building not being large enough to install sofas and bunks for all.
+In some cases, Wreckers have been hired directly into the agencies where they
+are doing their work, but DOGE has relied heavily on federal detailing
+arrangements that temporarily transfer staff to other agencies. This is normally
+a mechanism that allows expert staffers (called detailees) to help as needed on
+projects. DOGE instead used it as a way to quickly deploy its wreckers across
+the entire government. So, a DOGE staffer might be detailed to the Department of
+Education one week and the CFPB the next.
 
-For a list of all the details that DOGE has used, see the [Devils in the Details](/people/details/) page.
+For reasons that aren't entirely clear at this point, DOGE in its early days
+hired staff into three different agencies and then formed teams at other
+agencies by detailing staff from these three starting points. Perhaps it made
+sense to start staff at both GSA and OPM too because their initial work was to
+seize control of centralized services and databases there first. It's also true
+that DOGE created guarded enclaves at both those agencies where they could work
+and even live in. Maybe it was just because the DOGE offices at the Eisenhower
+Executive Office Building weren't large enough to install sofas and bunks for
+all.
 
-Since the beginning of March, DOGE has started to move some of its detailed staff to other agencies. For instance, Amy Gleason was appointed at HHS and Jordan Wick at CFPB on March 5th. This was a tactical move in response to TKTK
 
-### USDS/DOGE
+For a list of all the details that DOGE has used, see the [Devils in the
+Details](/people/details/) page.
 
-Most of the DOGE staff within the DOGE agency also called the US DOGE Service and often also referred to as the EOP (for Executive Office of the President) is leadership and support for activities across the government. However, a few of the early DOGE wreckers were hired in that agency, possibly through practices related to the USDS.
+Since the beginning of March, DOGE has started to hire some of its detailed
+staff to other agencies. For instance, Amy Gleason was appointed at HHS and
+Jordan Wick at CFPB on March 5th. This has been a tactical move in response to
+courts ruling that DOGE isn't exactly real, but staff like Jordan Wick have
+continued to be detailed from DOGE despite being on staff at other agencies.
+
+### Details from USDS/DOGE
+
+Most of the staff hired at DOGE itself were either working as leadership or
+support for DOGE operations across the government. However, a few DOGE staffers
+were detailed to other agencies as well.
 
 {% doge_wreckers = all_wreckers.select {|w| w.start_agency == "DOGE" } %}
 {%@ 'tables/wrecker_table', wreckers: doge_wreckers %}
 
 Since the beginning of March, DOGE has been moving staff to work within agencies themselves, a move at least in part designed to allow the government to evade expedited discovery in the [*AFL-CIO v. DOL*](https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.51.1.pdf) case. For instance, Jordan Wick became an employee of the CFPB on March 4th, the same day that Amy Gleason and Brad Smith officially onboarded at HHS.
 
-### Office of Personnel Management
+### Details from the Office of Personnel Management
 
 Many of the early DOGE hires were formally appointed at the Office of Personnel Management. Some technical staff at OPM were supporting the
 
 {% opm_wreckers = all_wreckers.select {|w| w.start_agency == "OPM" } %}
 {%@ 'tables/wrecker_table', wreckers: opm_wreckers %}
 
-## General Services Administration
+## Details from the General Services Administration
 
-The {{ agency_link("GSA", "General Service Administration") }} is an agency that provides shared services and procurement support to other federal agencies. Early on, DOGE focused on using the GSA to force cost reductions across government - _e.g._, through cancelling building leases or restricting the use of purchase cards - but GSA has also been the home base for a growing number of wreckers, with many recent hires starting there.
+The {{ agency_link("GSA", "General Service Admin istration") }} is an agency that provides shared services and procurement support to other federal agencies. Early on, DOGE focused on using the GSA to force cost reductions across government - _e.g._, through cancelling building leases or restricting the use of purchase cards - but GSA has also been the home base for a growing number of wreckers, with many recent hires starting there.
 
 {% gsa_wreckers = all_wreckers.select {|w| w.start_agency == "GSA" } %}
 {%@ 'tables/wrecker_table', wreckers: gsa_wreckers %}
