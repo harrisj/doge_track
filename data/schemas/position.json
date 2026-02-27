@@ -18,7 +18,7 @@
         },
         "agency": {
             "description": "The agency where the term of employment is",
-            "$ref": "agency_id.json"
+            "$ref": "agency-id.json"
         },
         "type": {
             "type": "string",
@@ -40,7 +40,7 @@
         },
         "from": {
             "description": "For details, where he is detailed from",
-            "$ref": "agency_id.json"
+            "$ref": "agency-id.json"
         },
         "from_truth": {
             "description": "How confident are we in this being the source agency for detailing/transfers",
@@ -204,6 +204,19 @@
         "same_as": {
             "description": "For use in aliases, indicates that the position is the same as another one publicly known (the two can be merged)",
             "type": "string"
+        },
+        "project": {
+            "oneOf": [
+                {
+                    "$ref": "project-id.json"
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "project-id.json"
+                    }
+                }
+            ] 
         },
         "mou": {
             "description": "A link to a MOU if the position has one",

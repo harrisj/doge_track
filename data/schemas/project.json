@@ -1,0 +1,30 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "A unique short identifier for the project",
+            "$ref": "project-id.json"
+        },
+        "title": {
+            "type": "string",
+            "description": "A display title for this project"
+        },
+        "summary": {
+            "type": "string",
+            "description": "A brief summary of this project"
+        },
+        "path": {
+            "type": "string",
+            "description": "The path to the project page for it"
+        }
+    },
+    "required": [
+        "id",
+        "path",
+        "title",
+        "summary"
+    ],
+    "additionalProperties": false
+}

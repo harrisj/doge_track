@@ -28,7 +28,7 @@
         },
         "agency": {
             "description": "Which agency owns the system",
-            "$ref": "agency_id.json"
+            "$ref": "agency-id.json"
         },
         "description": {
             "description": "A description of the system",
@@ -91,7 +91,7 @@
             "description": "For SaaS tools, a list of agencies that use it as a service",
             "type": "array",
             "items": {
-                "$ref": "agency_id.json"
+                "$ref": "agency-id.json"
             }
         },
         "access": {
@@ -99,6 +99,19 @@
             "items": {
                 "$ref": "system-access.json"
             }
+        },
+        "project": {
+            "oneOf": [
+                {
+                    "$ref": "project-id.json"
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "project-id.json"
+                    }
+                }
+            ] 
         },
         "doge_created": {
             "description": "Did DOGE create this system?",

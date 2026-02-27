@@ -29,12 +29,12 @@
             "description": "Can be a single agency or an array of agencies affected/involved in the event",
             "anyOf": [
                 {
-                    "$ref": "agency_id.json"
+                    "$ref": "agency-id.json"
                 },
                 {
                     "type": "array",
                     "items": {
-                        "$ref": "agency_id.json"
+                        "$ref": "agency-id.json"
                     }
                 }
             ]

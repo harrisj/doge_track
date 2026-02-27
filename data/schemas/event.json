@@ -35,12 +35,12 @@
             "description": "Can be a single agency or an array of agencies affected/involved in the event",
             "anyOf": [
                 {
-                    "$ref": "agency_id.json"
+                    "$ref": "agency-id.json"
                 },
                 {
                     "type": "array",
                     "items": {
-                        "$ref": "agency_id.json"
+                        "$ref": "agency-id.json"
                     }
                 }
             ]
@@ -71,7 +71,7 @@
                 }
             },
             "propertyNames": {
-                "$ref": "agency_id.json"
+                "$ref": "agency-id.json"
             }
         },
         "named_aliases": {
@@ -130,6 +130,19 @@
         "case_no": {
             "description": "The relevant case_no for legal events",
             "type": "string"
+        },
+        "project": {
+            "oneOf": [
+                {
+                    "$ref": "project-id.json"
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "project-id.json"
+                    }
+                }
+            ] 
         },
         "system": {
             "description": "If the event is linked to certain systems, they will be listed here",

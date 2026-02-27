@@ -9,4 +9,6 @@ class GovtSystem < Sequel::Model
   many_to_one :agency
   one_to_many :system_roles
   # one_to_many :serves, class: :Agency, key: :agency_id
+
+  many_to_many :projects
 end

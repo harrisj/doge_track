@@ -26,6 +26,7 @@ Question.unrestrict_primary_key
 ExecutiveOrder.unrestrict_primary_key
 Source.unrestrict_primary_key
 Publisher.unrestrict_primary_key
+Project.unrestrict_primary_key
 
 all_events = []
 
@@ -40,7 +41,7 @@ def create_event(event_hash)
 
   begin
     e = Event.create(event_hash.except(:case_no, :named, :linked, :named_aliases, :agency, :interagency_doge_reps,
-                                       :source, :source_name, :source_title))
+                                       :source, :project))
   rescue Sequel::ValidationFailed => e
     puts "Error loading event #{event_hash.inspect}"
     throw e
@@ -49,6 +50,11 @@ def create_event(event_hash)
   if event_hash.key? :case_no
     court_case = Case[event_hash[:case_no]]
     e.case = court_case
+  end
+
+  Array(event_hash[:project]).each do |pj|
+    project = Project[pj] || raise("Can't find project #{pj}")
+    e.add_project(project)
   end
 
   agency_ids = Array(event_hash[:agency])
@@ -106,6 +112,12 @@ sources_yaml.each do |src|
   Source.create(src)
 end
 
+# Load projects
+projects_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'projects.yaml'), symbolize_names: true)
+projects_yaml.each do |src|
+  Project.create(src)
+end
+
 # Load People
 people_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'people.yaml'), symbolize_names: true)
 
@@ -123,12 +135,17 @@ people_yaml.each do |p_hash|
     pos_hash[:category] ||= 'unknown'
 
     pos = Position.create( # .reject { |k, _| %i[from alias agency].include?(k) })
-      pos_hash.except(:source, :source_name)
+      pos_hash.except(:source, :source_name, :project)
     )
 
     Array(pos_hash[:source]).each do |src|
       source = Source[src] || raise("Unable to find source #{src}")
       pos.add_source(source)
+    end
+
+    Array(pos_hash[:project]).each do |pj|
+      project = Project[pj] || raise("Unable to find project #{pj}")
+      pos.add_project(project)
     end
 
     # if pos_hash.key? :agency
@@ -214,7 +231,7 @@ systems_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'systems.yaml'), symbol
 systems_yaml.each do |system_hash|
   input_hash = system_hash.transform_keys(alias: :doge_alias_id, agency: :agency_id)
 
-  s = GovtSystem.create(input_hash.except(:access, :serves))
+  s = GovtSystem.create(input_hash.except(:access, :serves, :project))
 
   input_hash.fetch(:access, []).each do |access_hash|
     access_hash[:govt_system_id] = s.id
@@ -226,6 +243,11 @@ systems_yaml.each do |system_hash|
       source = Source[src] || raise("Unable to find source #{src}")
       role.add_source(source)
     end
+  end
+
+  Array(input_hash[:project]).each do |pj|
+    project = Project[pj] || raise("Unable to find project #{pj}")
+    s.add_project(project)
   end
 
   # system_hash.fetch(:serves, []).each do |name|

@@ -93,6 +93,13 @@ DB.create_table! :people do
   string :linkedin
 end
 
+DB.create_table! :projects do
+  string :id, primary_key: true
+  string :title, null: false
+  string :summary
+  string :path
+end
+
 DB.create_table! :questions do
   string :id, primary_key: true
   string :question, null: false
@@ -210,6 +217,11 @@ DB.create_table! :publishers do
   string :hostname, null: false
 end
 
+DB.create_table! :events_projects do
+  foreign_key :event_id, :events, type: :string
+  foreign_key :project_id, projects: :string
+end
+
 DB.create_table! :events_sources do
   foreign_key :event_id, :events, type: :string
   foreign_key :source_id, :sources, type: :string
@@ -218,6 +230,11 @@ end
 DB.create_table! :positions_sources do
   foreign_key :position_id, :positions, type: :string
   foreign_key :source_id, :sources, type: :string
+end
+
+DB.create_table! :positions_projects do
+  foreign_key :position_id, :positions, type: :string
+  foreign_key :project_id, :projects, type: :string
 end
 
 DB.create_table! :sources_system_roles do
@@ -264,4 +281,9 @@ DB.create_table! :doge_aliases_positions do
   foreign_key :doge_alias_id, :doge_aliases, null: false, type: :string
   foreign_key :position_id, :positions, null: false, type: :string
   unique %i[position_id doge_alias_id]
+end
+
+DB.create_table! :projects_systems do
+  foreign_key :project_id, :projects, type: :string
+  foreign_key :system_id, :systems, type: :string
 end

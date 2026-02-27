@@ -12,6 +12,7 @@ class Position < Sequel::Model
   many_to_one :from_agency, class: :Agency, key: :from_agency_id, graph_join_type: :left_outer
   many_to_many :documents
   many_to_many :sources
+  many_to_many :project
 
   def detail?
     type == 'detailed'

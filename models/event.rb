@@ -11,6 +11,7 @@ class Event < Sequel::Model
   many_to_many :people, right_key: :name, order: :sort_name
   many_to_one :case, key: :case_no
   many_to_many :sources
+  many_to_many :projects
 
   one_to_many :questions
 
