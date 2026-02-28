@@ -98,6 +98,8 @@ DB.create_table! :projects do
   string :title, null: false
   string :summary
   string :path
+  string :label_text
+  string :label_color
 end
 
 DB.create_table! :questions do

@@ -50,7 +50,7 @@ class Person < Sequel::Model
     end
   end
 
-  def start_agency
+  def first_agency_id
     return unless positions.any?
 
     positions.first.agency_id

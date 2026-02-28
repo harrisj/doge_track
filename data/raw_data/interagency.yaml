@@ -7,6 +7,7 @@
     In another executive order EO 14170, Trump declares a hiring freeze and that DOGE will work with OMB
     and OPM to submit a plan to reduce the size of the government within 90 days
   source: https://www.whitehouse.gov/presidential-actions/2025/01/hiring-freeze/
+  project: personnel
   agency:
   - DOGE
   - OMB
@@ -35,6 +36,7 @@
     The State Department issues a memo written by Peter Marocco and signed by Marco Rubio that not only
     puts a halt to future foreign aid but also insists on stop-work orders for ~6200 current grants and
     contracts at USAID.
+  project: impoundment
   named:
   - Marco Rubio
   - Peter Marocco
@@ -51,6 +53,9 @@
     DOGE-led initiatives. One messages states "as discussed over the phone, when you compile the list
     of 69 DEI employees placed on admin leave, please share with Amanda and myself." Energy officials
     also send a list of 1394 probationary employees to Amanda Scales, all of whom will be fired.
+  project:
+  - dei
+  - personnel
   named:
   - James Sullivan
   - Amanda Scales
@@ -69,6 +74,7 @@
   event: >-
     The Department of Energy consults with DOGE staff at OPM about return-to-office mandates. Clayton
     Cromer handles the exchange from OPM's side.
+  project: personnel
   named:
   - Clayton Cromer
   source: https://www.eenews.net/articles/how-the-energy-department-got-doged/
@@ -109,6 +115,7 @@
     emails the director of the National Finance Center (NFC) asking for immediate admin access to the
     mainframe for "all SBA Personnel Office Identifiers (POIs)". NFC is a shared service from USDA that
     handles payroll for roughly 150,000 federal employees across 170 agencies including the SBA.
+  project: personnel
   agency:
   - SBA
   - USDA
@@ -124,6 +131,7 @@
     appear to be dead. These discrepancies lead to Musk accusing SSA of massive fraud on his Twitter feed,
     but later analysis by SSA staff reveal these were cases of DOGE not understanding how the data was
     structured.
+  project: fraud
   source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
   agency:
   - SSA
@@ -136,6 +144,9 @@
     In a meeting on foreign aid at OMB, Russell Vought stuns staffers by asking them to cut foreign aid
     to the greatest extent possible. When told that the cuts will lead to more people dying, he reportedly
     nonchalantly replied “you could say that about any of these cuts.”
+  project:
+  - impoundment
+  - descoping
   named:
   - Russell Vought
   source: https://www.propublica.org/article/russ-vought-trump-shadow-president-omb
@@ -152,6 +163,7 @@
     to dismantle the USIP. When he was told it was independent and funded by Congress, he replied "we'll
     see what we can do."
   source: https://www.propublica.org/article/russ-vought-trump-shadow-president-omb
+  project: elimination
   agency:
   - OMB
   - USIP
@@ -163,6 +175,7 @@
     Representing DOGE and OPM, Noah Peters finalizes mass layoffs at the USDA just before Secretary Rollins
     is to be sworn in that evening. When asked later by Congress about the layoffs, she deflects and says
     it happened before she started.
+  project: personnel
   source: >-
     https://investigatemidwest.org/2025/07/16/farming-in-the-dark-brooke-rollins-leadership-doges-grip-and-the-cost-to-american-agriculture/
   interagency_doge_reps:
@@ -222,6 +235,7 @@
     the United States African Development Foundation and the United States Institute of Peace for reductions.
   source: >-
     https://www.whitehouse.gov/presidential-actions/2025/02/commencing-the-reduction-of-the-federal-bureaucracy/
+  project: elimination
   agency:
   - IAF
   - USADF
@@ -237,6 +251,10 @@
     of all employees and terminating all grants. The demand approval from the board and threaten the board
     will be fired otherwise.
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  project:
+  - elimination
+  - personnel
+  - impoundment
   agency:
   - IAF
   - GSA
@@ -258,6 +276,7 @@
     working on a "new federal daily check-in tool." A test email was sent out on the same day. They announce
     plans to debut the tool by the first week in March.
   source: https://www.washingtonpost.com/dc-md-va/2025/04/30/return-to-office-track-federal-office-occupancy/
+  project: personnel
   agency:
   - OPM
   - GSA
@@ -286,6 +305,7 @@
     enforcement now." He also requests information from Florida, claiming that ICE "has several leads
     on non-citizen voting in Florida and would like to work with Florida to investigate and prosecute
     these cases."
+  project: immigration
   named:
   - Aram Moghaddassi
   source: https://www.motherjones.com/politics/2025/11/dhs-gathering-drivers-license-save-voter-fraud-crusade/
@@ -303,6 +323,7 @@
     order do not apply.
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
   case_no: 1:25-cv-00804
+  project: elimination
   agency:
   - USIP
   - OMB
@@ -348,6 +369,7 @@
     for Scholars in the Smithsonian Institution, the Institute of Museum and Library Services, the United
     States Interagency Council on Homelessness, the Community Development Financial Institutions Fund
     and the Minority Business Development Agency for reduction actions by DOGE.
+  project: elimination
   source: >-
     https://www.whitehouse.gov/presidential-actions/2025/03/continuing-the-reduction-of-the-federal-bureaucracy/
   agency:
@@ -383,6 +405,9 @@
     because they had allowed trans athletes to participate in sports. This is very much not his area of
     responsibility at the GSA, but he is on the  Task Force to Combat Antisemitism which stripped funding
     from Columbia Univesity.
+  project:
+  - dei
+  - impoundment
   interagency_doge_reps:
     GSA:
     - Josh Gruenbaum
@@ -400,6 +425,9 @@
     GSA FAS Commissioner Josh Gruenbaum sends an email to coordinate grant freezes from DOD, DHS and the
     EPA. He includes DOGE staffers Kyle Schutt, Adam Hoffman and Kathryn Armstrong Loving as the recipients
     of these requests.
+  project:
+  - impoundment
+  - dei
   interagency_doge_reps:
     GSA:
     - Josh Gruenbaum
@@ -425,6 +453,7 @@
     detected from DOGE's activities at the agency.
   source: >-
     https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  project: oversight
   agency:
   - NLRB
   - CISA
@@ -435,6 +464,7 @@
   event: >-
     Kathryn Armstrong Loving and Erica Jehling continue to work directly with Josh Gruenbaum from the
     GSA on more grants to cancel at the EPA.
+  project: impoundment
   interagency_doge_reps:
     GSA:
     - Josh Gruenbaum
@@ -456,6 +486,7 @@
     addresses. IRS lawyers are stunned by the possible illegality and continued pressure leads to a series
     of resignations among staff in legal, privacy and IT offices within the IRS.
   source: https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
+  project: immigration
   agency:
   - IRS
   - ICE
@@ -468,6 +499,7 @@
     criticism from other DOGE staffers for attempting to shield CMS from the brunt of the layoffs. His
     aide, Rachel Riley is accused of being extraordinarily secretive with the plan.
   source: https://www.politico.com/news/2025/03/31/doge-hhs-firings-delayed-00262115
+  project: personnel
   named:
   - Brad Smith
   - Rachel Riley
@@ -487,6 +519,7 @@
     - Katie Miller
     SSA:
     - Leland Dudek
+  project: fraud
   source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
   agency:
   - SSA
@@ -499,6 +532,7 @@
     HHS issues Reduction-in-Force orders for 10,000 employees across many divisions (FDA, CDC, NIH, HHS)
     in the name of "bureaucratic realignment." Despite RFK's promises, the layoffs do include many scientists
   source: https://www.npr.org/sections/shots-health-news/2025/04/01/g-s1-57485/hhs-fda-layoffs-doge-cdc-nih/
+  project: personnel
   agency:
   - HHS
   - FDA
@@ -531,6 +565,7 @@
   event: >-
     CISA informs NLRB networking staff that they should drop any investigation and not move forward on
     any reporting of the suspicious activity at the agency.
+  project: oversight
   source: >-
     https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
   agency:
@@ -560,6 +595,7 @@
     individuals to access the shared data. AI usage must also be reviewed first by the IRS.
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278147/gov.uscourts.dcd.278147.30.1_1.pdf
   case_no: 1:25-cv-00677
+  project: immigration
   agency:
   - Treasury
   - IRS
@@ -574,6 +610,7 @@
     Social Security Administration that would allow DHS and ICE to locate immigrants who had been paying
     taxes to Social Security (despite not being able to collect it).
   source: https://www.washingtonpost.com/politics/2025/04/12/trump-immigrants-dead-social-security/
+  project: immigration
   interagency_doge_reps:
     SSA:
     - Leland Dudek
@@ -588,6 +625,7 @@
   event: >-
     Jacob Altik and Ashley Boizelle meet in the FCC headquarters with the Chief of Staff Greg Watson to
     discuss the FCC's progress on removing regulations.
+  project: deregulation
   named:
   - Jacob Altik
   - Ashley Boizelle
@@ -607,6 +645,9 @@
     Department of Health and Human Services. Specifically, it includes cutting that budget by a third
     and also consolidating various health and safety-related agencies into a new Administration for a
     Healthy America (AHA) overseen by the HHS Secretary.
+  project:
+  - descoping
+  - personnel
   source: >-
     https://natlawreview.com/article/recent-developments-consumer-product-safety-commission-potential-changes-and
   agency:
@@ -623,6 +664,7 @@
   event: >-
     AmeriCorps' acting director submits a plan to the OPM and OMB proposing a 50% cut in the agency workforce.
   source: https://www.washingtonpost.com/politics/2025/04/10/trump-presidency-news-tariffs/
+  project: personnel
   agency:
   - AmeriCorps
   - OPM
@@ -635,6 +677,7 @@
     Luke Farritor uses his admin access to lock out all government officials at multiple agencies from
     using grants.gov to issue new grants. Instead, all grants must now be sent to a new email address
     which will be reviewed by DOGE staffers before grants can be posted.
+  project: impoundment
   named:
   - Luke Farritor
   source: https://www.washingtonpost.com/politics/2025/04/11/doge-controls-federal-grant-postings/
@@ -671,6 +714,7 @@
     it was needed for a criminal investigation.
   named:
   - Leland Dudek
+  project: immigration
   source: https://www.washingtonpost.com/politics/2025/10/20/social-security-data-doge-whistleblower/
   agency:
   - SSA
@@ -683,6 +727,7 @@
     OMB issues a new memo mandating that agencies must collect daily occupancy data on all workers by
     May 4th. To support this effort, GSA unveils a website outlining methods to track federal workers,
     including mandatory daily surveys, monitoring badge usage or even video surveillance.
+  project: personnel
   source: >-
     https://www.gsa.gov/real-estate/real-estate-services/for-federal-customers/use-it-act-and-occupancy-data
   agency:
@@ -698,6 +743,9 @@
     by NASA. The next day, Simonpour relayed the request to other NASA staffers and then followed up on
     May 8th stating that the White House had imposed a 5pm deadline for the information.
   source: https://www.thecrimson.com/article/2025/7/17/grant-termination-details-doge/
+  project:
+  - impoundment
+  - dei
   interagency_doge_reps:
     GSA:
     - Josh Gruenbaum
@@ -747,6 +795,7 @@
   event: >-
     Ashley Boizelle mails the Chief of Staff (and head of the DOGE team) at FCC to ask how the agency
     handles outside comments on high-profile rulemakings and if they contract with an outside service.
+  project: deregulation
   named:
   - Ashley Boizelle
   agency:
@@ -761,6 +810,9 @@
     DOGE staff at NASA, GSA and the White House finalize a list of five NASA grants to be killed and discuss
     the language for the terminiation letters in a series of email discussions and meetings to 11pm that
     night. The agency sends a letter to Harvard the following day.
+  project:
+  - dei
+  - impoundment
   source: https://www.thecrimson.com/article/2025/7/17/grant-termination-details-doge/
   interagency_doge_reps:
     GSA:
@@ -779,6 +831,9 @@
     them to review several agency grants for termination. These terminations were reportedly "awaiting
     final greenlight from the White House."
   source: https://www.thecrimson.com/article/2025/7/17/grant-termination-details-doge/
+  project:
+  - dei
+  - impoundment
   interagency_doge_reps:
     GSA:
     - Josh Gruenbaum
@@ -797,6 +852,9 @@
     from DOD alone. The stated reasons varied but included that they no longer effectuated the administration's
     priorities or directly accusing Harvard of fostering antisemitism on campus.
   source: https://www.thecrimson.com/article/2025/7/17/grant-termination-details-doge/
+  project:
+  - dei
+  - impoundment
   agency:
   - GSA
   - DOD
@@ -812,6 +870,7 @@
     and the Trump Administration from dismantling the IMLS, MBDA and FMCS while the case is active.
   case_no: 1:25-cv-00128
   source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.60.0_1.pdf
+  project: elimination
   agency:
   - IMLS
   - MBDA
@@ -823,6 +882,7 @@
   event: >-
     A glimpse of Luke Farritor's visible calendar in a Fox News DOGE profile includes a quick sync with
     a finance department deputy at the agency and a DOGE liasion.
+  project: impoundment
   agency:
   - DOL
   - DOGE
@@ -837,6 +897,7 @@
     In a post on its X account, DOGE reports that it is working to review surveys conducted by the Census
     Bureau and claims to have already eliminated 5 surveys that include questions about alcohol consumption
     and internet usage.
+  project: descoping
   source: https://bsky.app/profile/hansilowang.bsky.social/post/3lpmvsh6byc2o
   agency:
   - DOGE
@@ -870,6 +931,7 @@
   event: >-
     In a podcast appearance, Antonio Gracias reported that the Department of Justice had requested for
     DOGE to find "10-20 cases" of alleged noncitizen voting in every state.
+  project: immigration
   named:
   - Antonio Gracias
   agency:
@@ -885,6 +947,7 @@
   fuzz: >-
     It's unclear what agency Farritor is representing here, but assuming it's DOL since other events were
     there.
+  project: immigration
   agency:
   - DOL
   - FBI
@@ -921,6 +984,7 @@
     at Treasury would have to sign off on this due to possible legal risks.
   source: https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
   fuzz: meeting date not given
+  project: immigration
   agency:
   - IRS
   - ICE
@@ -934,6 +998,7 @@
     and DOGE practiced no due diligence in correcting for that.
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.281208/gov.uscourts.dcd.281208.1.0_3.pdf
   case_no: 1:25-cv-01750
+  project: personnel
   agency:
   - HHS
   - CDC
@@ -998,6 +1063,9 @@
     DOGE from accessing Social Security data. In a setback for privacy advocates, this will allow for
     SSA to share data with DOGE and other agencies, while the case about the legality of that proceeds.
   source: https://www.nytimes.com/2025/06/06/us/politics/supreme-court-doge-social-security.html
+  project:
+  - immigration
+  - fraud
   agency:
   - DOGE
   - SSA
@@ -1010,6 +1078,8 @@
     Medicaid program in certain states that allow non-US citizens to be enrolled. This information could
     be used by ICE to target and deport immigrants who are legally collecting state benefits.
   source: https://apnews.com/article/medicaid-deportation-immigrants-trump-4e0f979e4290a4d10a067da0acca8e22
+  project:
+  - immigration
   agency:
   - CMS
   - HHS
@@ -1023,6 +1093,8 @@
     "[Trump Card](https://trumpcard.gov/)" gold visa, which would let people skip the lines for immigration
     visas by paying $5 million in fees. It is a single-page site with bold text and an email sign-up form
     for people who might be interested.
+  project:
+  - modernization
   agency:
   - DOGE
   - Commerce
@@ -1036,6 +1108,7 @@
     Following the guidance in EO 14222, DHS head Kristi Noem demands that every contract and grant worth
     more than $100,000 must be explicitly reviewed and approved by her. This particularly alarms staff
     at FEMA who warn that it will destroy the agency's ability to respond to disasters in a timely manner.
+  project: descoping
   agency:
   - DHS
   - FEMA
@@ -1071,6 +1144,7 @@
     and the Commissioner for HUD announce that they will be kicking out the National Science Foundation
     (NSF) from its Virginia headquarters and moving HUD to that location. There are no details provided
     on where NSF is expected to relocate to.
+  project: elimination
   source: >-
     https://www.govexec.com/management/2025/06/hud-move-national-science-foundation-headquarters-no-current-plan-where-relocate-nsf-employees/406315/
   agency:
@@ -1088,6 +1162,7 @@
     do not meet the legal safeguards that were listed in the Memorandum of Understanding (MOU) for this
     process, which declared that such data could only be shared for open criminal investigations.
   source: https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
+  project: immigration
   agency:
   - IRS
   - ICE
@@ -1101,6 +1176,7 @@
     "sunrise surprises" by allowing forecasters to monitor hurricanes at night. The change is expected
     to degrade the quality of hurricane forecasts.
   source: https://michaelrlowry.substack.com/p/critical-hurricane-forecast-tool
+  project: descoping
   agency:
   - NOAA
   - DOD
@@ -1114,6 +1190,7 @@
     been reversed. Instead, agencies are to return to using the tool like that did previously. This doesn't
     necessarily mean that DOGE or political appointees will not be reviewing grants, but they have no
     longer locked other users out of the system.
+  project: impoundment
   linked:
   - Luke Farritor
   agency:
@@ -1144,6 +1221,9 @@
     Ruling in the case _AFL-CIO v. DOL_, Judge Bates determines that he cannot issue a preliminary injunction
     that would prevent DOGE staffers from accessing sensitive systems at DOL and HHS. DOGE access was
     never suspended by this case.
+  project:
+  - fraud
+  - immigration
   agency:
   - DOL
   - HHS
@@ -1159,6 +1239,7 @@
   event: >-
     Ashley Boizelle mails the Chief of Staff (and head of the DOGE team) at FCC for information about
     their deregulation work at the agency.
+  project: deregulation
   named:
   - Ashley Boizelle
   agency:
@@ -1176,6 +1257,7 @@
     tool has already made determinations on 1083 decisions at HUD (using Christopher Sweet's work) and
     has also been used for 100% of deregulatory actions at the CFPB. It also states that DOGE lawyers
     James Burnham, Austin Raynor, Jacob Altik and Ashley Boizelle have vetted and endorsed the tool.
+  project: deregulation
   source: https://www.washingtonpost.com/business/2025/07/26/doge-ai-tool-cut-regulations-trump/
   linked:
   - Christopher Sweet
@@ -1199,6 +1281,7 @@
     of business on July 14, 2025. Thank you for your service to the American people." The number of affected
     employees is in the thousands, but some of the 10,000 fired in the original RIF are still protected
     by another case _New York v. Kennedy_.
+  project: personnel
   agency:
   - HHS
   - FDA
@@ -1219,6 +1302,7 @@
     all aid to Afghanistan and refused to divert the food to other emergency crises. The cost of destroying
     the biscuits will be $130,000 making this nearly a $1 million dollar loss incurred by DOGE (not to
     mention lives that will be lost).
+  project: impoundment
   named:
   - Marco Rubio
   source: >-
@@ -1236,6 +1320,7 @@
     This information, which includes the addresses and ethnicities of enrollees, will supercharge a surveillance
     machine assembled by DOGE that is being used by ICE to arrest undocumented immigrants (and others).
   source: https://apnews.com/article/immigration-medicaid-trump-ice-ab9c2267ce596089410387bfcb40eeb7
+  project: immigration
   agency:
   - DHS
   - ICE
@@ -1250,6 +1335,10 @@
     for Public Broadcasting, despite concerns from Democrats and two Senate Republicans that its cuts
     are purposefully vague and undermine Congress' role in the budget process.
   source: https://www.nytimes.com/2025/07/17/us/politics/senate-vote-trump-bill-pbs-npr-foreign-aid.html
+  project:
+  - impoundment
+  - descoping
+  - elimination
   agency:
   - USAID
   - State
@@ -1280,6 +1369,7 @@
     is detailed to the agency or just demonstrating the tool to SEC staff. Reportedly, agency staff then
     used the tool to identify thousands of regulations to cut. The list will then be reviewed by agency
     leadership and lawyers.
+  project: deregulation
   agency:
   - SEC
   - HUD
@@ -1298,6 +1388,10 @@
     February and ordered that DOGE should be allowed to access sensitive data at the Treasury Department,
     OPM and Department of Education.
   source: https://www.nytimes.com/2025/08/12/us/politics/appeals-court-doge-data.html
+  project:
+  - immigration
+  - fraud
+  - personnel
   agency:
   - Treasury
   - IRS
@@ -1318,6 +1412,9 @@
   - Scott Langmack
   - Christopher Sweet
   - Steve Davis
+  project:
+  - ai
+  - deregulation
   interagency_doge_reps:
     HUD:
     - Scott Langmack
@@ -1340,6 +1437,7 @@
     by Congress for foreign aid. This case will be taken up by the full Court, but there is the risk of
     the Trump administration practicing a "pocket recission" to eliminate the funding.
   source: https://www.nytimes.com/2025/09/09/us/politics/supreme-court-trump-foreign-aid.html
+  project: impoundment
   agency:
   - USAID
   - State
@@ -1353,6 +1451,7 @@
     email states that the deployment is secure enough that agency staff can even include procurement-sensitive
     data and "non-sensitive" PII into the chats, although sensitive PII, classified informatio and other
     confidential information should not be shared.
+  project: ai
   named:
   - Clark Minor
   source: https://www.404media.co/hhs-asks-all-employees-to-start-using-chatgpt/
@@ -1372,6 +1471,9 @@
     the team is only half the size it should be due to DOGE staffing cuts and is often forced to rent
     back space at elevated rates from landlords who were harmed by DOGE's lease-cancellation efforts.
   source: https://www.npr.org/2025/09/18/g-s1-89492/ice-immigration-raids-gsa-office-space
+  project:
+  - immigration
+  - descoping
   agency:
   - ICE
   - GSA
@@ -1386,6 +1488,7 @@
     wildly unclear and demand is inflated because sign-up is through a public web form. This website is
     the first public work of recently-formed National Design Studio, although the previous version of
     the site was built by DOGE too.
+  project: modernization
   source:
   - >-
     https://www.forbes.com/sites/dougmelville/2025/09/20/want-to-be-american-for-1-million-the-trump-gold-card-visa-will-now-allow-entry/
@@ -1403,6 +1506,9 @@
     releases a report "Unchecked and Unaccountable" detailing DOGE security transgressions at several
     agencies, including poor security for the NUMIDENT data at SSA and activities within GSA and OPM
   source: https://www.hsgac.senate.gov/wp-content/uploads/DOGE_REPORT_FINAL_7.pdf
+  project:
+  - fraud
+  - oversight
   agency:
   - DOGE
   - SSA
@@ -1419,6 +1525,7 @@
     abridgement of state ownership for elections.
   source: >-
     https://www.democracydocket.com/news-alerts/trump-administration-sued-over-massive-interagency-database-of-americans-private-information/
+  project: immigration
   agency:
   - DHS
   - SSA
@@ -1462,6 +1569,7 @@
     to promote a forthcoming initiative from the White House to cap certain drug prices for private payers.
     This is the fourth website to bear the National Design Studio credit, and like the others it is a
     single-page site with expandable accordion elements of text and an email signup form.
+  project: modernization
   source:
   - https://gizmodo.com/trumprx-is-a-narcissistic-ai-generated-nightmare-2000671309
   - https://trumprx.gov/
@@ -1482,6 +1590,7 @@
     Notes from the call with National Association of State Election Directors reported that election officials
     from both parties expressed concern about this plan not complying with state laws. They also reported
     “the developers do not seem to want to spend the time to understand election official concerns.”
+  project: immigration
   agency:
   - NDS
   - DHS
@@ -1498,6 +1607,7 @@
     by the National Design Studio and integrate with the revamped SAVE database from DHS. When asked for
     details about data retention and security, Bobba could only state that "clear data retention policies"
     would be provided to states in advance.
+  project: immigration
   named:
   - Akash Bobba
   agency:
@@ -1514,6 +1624,7 @@
     new DC task force. It features a single page of large bold text on a black background with a large
     (possibly AI-generated) picture of Trump on patrol with agents, links to job listings on USA Jobs
     and an email sign-up form. Weirdly, the NDS header also includes a clock.
+  project: modernization
   agency:
   - NDS
   - DHS
@@ -1533,6 +1644,7 @@
     finding that EO 14238 is illegal and that the Trump Administration is not allowed to shutter the small
     agencies – the IMLS, MBDA, FMCS and USICH – targeted in the executive order.
   source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.100.0_1.pdf
+  project: elimination
   agency:
   - IMLS
   - MBDA
@@ -1561,6 +1673,7 @@
     states have sued CMS over a previous order mandating these data-sharing arrangements, precisely because
     they were concerned about how the data might be used.
   source: https://public-inspection.federalregister.gov/2025-20911.pdf
+  project: immigration
   agency:
   - CMS
   - HHS
@@ -1575,6 +1688,9 @@
     of their work: bold fonts on a black background with animations all on a single page with no navigation
     and an email signup form. According to Edward Coristine's twitter account, this page took 3 weeks
     to make.
+  project:
+  - ai
+  - modernization
   named:
   - Edward Coristine
   linked:
@@ -1593,6 +1709,7 @@
   event: >-
     The State Department posts photos showing that Donald Trump's name has now been put on the US Institute
     of Peace facade, with the post acclaiming him as "the greatest dealmaker in our nation’s history."
+  project: elimination
   agency:
   - State
   - USIP
@@ -1609,6 +1726,7 @@
       originally developed by DOGE. More importantly, it now has a more
       detailed signup form that promises payment processing of the $15,000
       processing fee as well. With this change, NDS has added a second page.
+  project: modernization
   agency:
   - NDS
   - USCIS
@@ -1626,6 +1744,7 @@
     USDS, which were respectively completely destroyed and hollowed out by DOGE. The site features the
     typical design of NDS websites – a single page of large bold fonts on a black background with accordion
     elements to expand information. It also features AI images of a figure with a computer monitor head.
+  project: modernization
   agency:
   - NDS
   - OPM
@@ -1641,6 +1760,7 @@
     was passed by Congress but presented as if it's a result of Trump's personal largesse. It conveys
     a softer tone than many other of their sites, but still sticks to the same convention of a single
     page of text, with a FAQ presented as expandable accordions and a form to sign up for a mailing list.
+  project: modernization
   source:
   - https://www.cbsnews.com/news/bessent-unveils-trump-accounts-website-to-encourage-children-to-save/
   - https://trumpaccounts.gov/
@@ -1655,6 +1775,7 @@
     The National Design Studio launches [realfood.gov](https://realfood.gov/) with HHS. Evoking more of
     a nostalgic and warm tone rather than the technocratic darkness of some prior sites, it is still a
     one-page site with large bold text, expandable accordions but now also with some scrolling animation.
+  project: modernization
   source:
   - >-
     https://www.linkedin.com/posts/mattlira_americas-new-dietary-guidelines-activity-7415096828599427072-5F23/
@@ -1671,6 +1792,7 @@
     Occupational Safety and Health as part of the massive HHS reduction in force have reportedly received
     notices that their RIF notices are revoked and remain employed. The RIF is being contested in court,
     but it's unclear what led to this specific reversal.
+  project: personnel
   agency:
   - CDC
   - HHS
@@ -1689,6 +1811,9 @@
     35,000 people have applied to the administration's Tech Force initiative and they are reviewing 6,000
     applicants.
   source: https://fedscoop.com/federal-website-national-design-studio-greg-barbaccia/
+  project:
+  - ai
+  - modernization
   named:
   - Greg Barbaccia
   - Joe Gebbia
@@ -1705,6 +1830,7 @@
     Apple Store-style titles and text styling alongside gilt images of an American map and an eagle and
     bombastic language extolling Trump himself. In a first for NDS sites, it also features a site search
     to look up specific medications, each of which has their own page URL.
+  project: modernization
   agency:
   - HHS
   - CMS
@@ -1740,6 +1866,8 @@
     reductions are being driven by FEMA or DHS leadership.
   source: >-
     https://apnews.com/article/fema-staff-cuts-kristi-noem-winter-storm-fern-1b3a4ea77c6f299abda3f5046a6b24e5
+  project:
+  - personnel
   agency:
   - DHS
   - FEMA
@@ -1753,6 +1881,9 @@
     comment, the link is instead labeled as "Ask AI" but stll points to the Grok site.
   source: >-
     https://www.nextgov.com/digital-government/2026/02/trumps-nutrition-website-directs-users-elon-musks-grok/411323/
+  project:
+  - modernization
+  - ai
   agency:
   - NDS
   - HHS
@@ -1768,6 +1899,7 @@
     it has poor scores for accessibility. Nevertheless, with this launch, the National Design Studio has
     rebuilt a site with dozens of pages and has also implemented a site search for the first time.
   source: https://www.cio.gov/
+  project: modernization
   agency:
   - OMB
   - NDS
@@ -1812,6 +1944,9 @@
   event: >-
     In a tweet on his personal X account, National Design Studio member Tyler Kim confirms that the content
     on cio.gov was "almost entirely generated by our internal ai agent system [end-to-end]."
+  project:
+  - ai
+  - modernization
   named:
   - Tyler Kim
   source: https://xcancel.com/tylertaewook/status/2026398015167054042

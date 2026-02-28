@@ -18,13 +18,21 @@
         "path": {
             "type": "string",
             "description": "The path to the project page for it"
+        },
+        "label_text": {
+            "type": "string",
+            "description": "Text for a small label"
+        },
+        "label_color": {
+            "type": "string"
         }
     },
     "required": [
         "id",
         "path",
         "title",
-        "summary"
+        "summary",
+        "label_text"
     ],
     "additionalProperties": false
 }
