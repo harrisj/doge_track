@@ -1,9 +1,7 @@
 {% unidentified_aliases = event.doge_aliases.select {|d| d.name.nil? } %}
-{% names_aliases = event.people + unidentified_aliases %}
-{% names_aliases.group_by(&:category).sort_by {|c, p| p.size}.reverse.each do |category, people| %}
-  {% if category == 'alias' %}
-    <div>{{ render CategoryLabel.new('alias', :icon) }} {{ people.map(&:id) | alias_links }}</div>
-  {% else %}
-    <div>{{ render CategoryLabel.new(people.first.category, :icon) }} {{ people.map(&:name) | people_links }}</div>
-  {% end %}
+{% if unidentified_aliases.any? %}
+  <div>{{ render CategoryLabel.new('alias', :icon) }} {{ people.map(&:id) | alias_links }}</div>
+{% end %}
+{% if event.people.any? %}
+  <div>{{ render CategoryLabel.new('person', :icon) }} {{ event.people.map(&:name) | people_links }}</div>
 {% end %}

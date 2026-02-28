@@ -23,6 +23,8 @@ class CategoryLabel
       'fa-bomb'
     when 'builder'
       'fa-laptop-code'
+    when 'person'
+      'fa-person'
     else
       'fa-circle-question'
     end

@@ -84,7 +84,7 @@ class EventLabel
     when :text
       event_title
     when :responsive
-      "#{event_icon}  <span class=\"hidden md:inline font-bold\">{#{event_title}</span>"
+      "#{event_icon}  <span class=\"hidden md:inline font-bold\"> #{event_title}</span>"
     else
       "#{event_icon} #{event_title}"
     end

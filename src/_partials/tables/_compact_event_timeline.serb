@@ -34,7 +34,7 @@ show_directories = true if show_directories.nil?
       <td class="align-top">
         <div class="font-sans">
         {%@ 'atoms/float_source_box', sources: event.sources %}
-        {% if icon_col %}<div class="inline text-base-content/75">{{ render EventLabel.new(event.type, :responsive) }}: </span></div>{% end %}
+        {% if icon_col %}<div class="inline text-base-content/75">{{ render EventLabel.new(event.type, :responsive) }}: </div>{% end %}
         {{ event.linkified_text | raw }}
         {% if event.fuzz %} <span class="italic">(fuzz: {{ event.fuzz | md | strip_p }})</span>{% end %}
         {% questions_str = question_links(event)%}
