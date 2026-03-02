@@ -6,10 +6,10 @@
   id: apex
   type: internal
   category: obligations
+  project: spending
   comment: I can't find any public data on this system
   description: A relatively new (~2022) system for tracking procurement at the CDC
   agency: CDC
-  theme: spending
   access:
   - id: apex-access
     type: read
@@ -25,7 +25,7 @@
   id: agx
   acronym: AGX
   category: obligations
-  theme: spending
+  project: spending
   description: >-
     A web-based application that provides the Office of Acquisition and Grants Management with tools for
     contracting officers to use for conducting their activities
@@ -37,7 +37,7 @@
   acronym: AD
   type: saas
   category: security
-  theme: personnel
+  project: personnel
   description: A system for controlling access to other systems within an agency
   access:
   - id: ad-cfpb-kliger
@@ -72,7 +72,6 @@
   type: saas
   category: communications
   description: This is a stand-in for whatever website platform an agency is using
-  theme: it-modernization
   access:
   - id: doge-cfpb-website
     type: read-write
@@ -166,6 +165,8 @@
   type: internal
   id: afes
   acronym: AFES
+  project:
+  - fraud
   category: payments
   description: System for detecting and preventing fraud in Social Security
   population: SSA payees, SSA employees, people doing business with the SSA
@@ -178,6 +179,7 @@
   type: internal
   id: dhs-ident
   acronym: IDENT
+  project: immigration
   category: security
   description: >-
     A system storing hundreds of millions of biometric identity points, the largest such repository in
@@ -194,7 +196,7 @@
   id: asap
   acronym: ASAP
   category: payments
-  theme: spending
+  project: spending
   description: >-
     A payment system that allows recipients to draw down funds from an established bank account for that
     recipient.
@@ -215,7 +217,7 @@
   id: biis
   agency: HHS
   category: obligations
-  theme: spending
+  project: spending
   description: Used to track expenditures at HHS
   comment: Not sure what this is
   access:
@@ -233,7 +235,7 @@
   id: calm
   acronym: CALM
   category: obligations
-  theme: spending
+  project: spending
   description: System for tracking CMS acquisitions, contracts, milestones and audits.
   agency: CMS
   access:
@@ -313,7 +315,7 @@
   id: cafs
   acronym: CAFS
   category: obligations
-  theme: spending
+  project: spending
   description: The main portal at the SBA for main portal for processing loan applications and servicing
     loans.
   risk: >-
@@ -355,7 +357,6 @@
   acronym: CIS
   type: internal
   category: immigration
-  theme: panopticon
   population: >-
     Immigrants in the US who use Alien Numbers, or A-Numbers. Can include undocumented and documented
     immigrants
@@ -386,7 +387,7 @@
   acronym: COD
   type: internal
   category: payments
-  theme: spending
+  project: spending
   description: >-
     A system for disbursing grants and loans that are paid to institutions of higher education directly
     (who then provide to students)
@@ -401,7 +402,7 @@
   id: concur
   type: ssp
   category: personnel
-  theme: personnel
+  project: personnel
   description: Shared service for booking government travel
   access:
   - id: concur-cfpb-wick
@@ -425,7 +426,7 @@
   type: internal
   agency: CFPB
   category: personnel
-  theme: personnel
+  project: personnel
   description: Provides information on CFPB reporting structure
   access:
   - id: data-insight-cfpb-wick
@@ -510,6 +511,7 @@
   acronym: DMCS
   type: internal
   category: payments
+  project: spending
   description: A system used for tracking and assisting in collection of federal student loans in default
   risk: PII and details of debt amounts for individuals who have defaulted on their loans
   pia: https://www.ed.gov/sites/ed/files/2025-01/PIA_FSA_DMCS_11_22_2024.pdf
@@ -520,7 +522,7 @@
 - name: Directory Resource Administrator
   id: dra
   category: security
-  theme: personnel
+  project: personnel
   link: >-
     https://www.netiq.com/documentation/directory-and-resource-administrator-92/pdfdoc/drauserguide/drauserguide.pdf
   acronym: DRA
@@ -555,7 +557,7 @@
   acronym: EAS
   type: internal
   category: obligations
-  theme: spending
+  project: spending
   description: System used at the EPA to initiate, award, modify and track acquisition actions.
   pia: https://www.epa.gov/system/files/documents/2023-12/eas-saas-pia-final.pdf
   agency: EPA
@@ -603,7 +605,7 @@
   acronym: ELIS
   type: internal
   category: immigration
-  theme: panopticon
+  project: immigration
   description: >-
     ELIS acts as a case management system for USCIS and includes information about green cards and petitions,
     as well as details related to Temporary Protected Status and DACA applicants
@@ -648,7 +650,7 @@
   description: >-
     This system is used at HHS for managing all aspects of human-capital related tasks, including staffing
     notes and performance plans.
-  theme: personnel
+  project: personnel
   access:
   - id: ehcm-riley
     type: read
@@ -681,7 +683,7 @@
   id: ehri
   acronym: EHRI
   type: internal
-  theme: personnel
+  project: personnel
   category: personnel
   sorn: >-
     https://www.federalregister.gov/documents/2023/08/17/2023-17651/privacy-act-of-1974-system-of-records
@@ -721,7 +723,7 @@
   id: epacs
   acronym: ePACS
   type: internal
-  theme: personnel
+  project: personnel
   category: security
   link: https://catalog.data.gov/dataset/dol-enterprise-physical-access-control-system-dol-epacs-a41c6
   description: >-
@@ -747,7 +749,7 @@
   id: ecas
   acronym: ECAS
   category: immigration
-  theme: panopticon
+  project: immigration
   description: A system used by DOJ for tracking the status of immigration cases
   population: Immigrants who have interacted with the US immigration system
   risk: Names, addresses, court testimony and any prior interactions with the system
@@ -800,7 +802,7 @@
   acronym: FEMA-Go
   type: internal
   category: obligations
-  theme: spending
+  project: spending
   description: A system for managing grant program for communities affected by disasters
   risk: PII of grant recipients, including names, addresses and bank information
   link: https://go.fema.gov/
@@ -862,7 +864,7 @@
   acronym: FPPS
   type: ssp
   category: personnel
-  theme: personnel
+  project: personnel
   description: >-
     A shared service which processes payrolls for Interior, but also DOJ, Treasury, DHS, the Air Force,
     Nuclear Regulatory Commission and other agencies. Covers about half of federal personnel.
@@ -913,7 +915,7 @@
   acronym: FASS-PH
   type: internal
   category: oversight
-  theme: deregulation
+  project: deregulation
   link: https://www.hud.gov/program_offices/public_indian_housing/reac/products/fassph
   description: >-
     A database to measure the financial condition of public housing agencies and assess their ability
@@ -931,7 +933,7 @@
   acronym: FBIS
   id: fbis
   category: obligations
-  theme: spending
+  project: spending
   description: A system for tracking business operations at HHS
   link: https://www.hhs.gov/about/agencies/asa/psc/accounting/accounting-services/index.html
   agency: HHS
@@ -999,7 +1001,7 @@
   acronym: FLAG
   type: internal
   category: immigration
-  theme: panopticon
+  project: immigration
   link: https://flag.dol.gov/
   sorn: >-
     https://www.federalregister.gov/documents/2022/02/14/2022-03063/privacy-act-of-1974-system-of-records
@@ -1132,7 +1134,7 @@
   acronym: GWES
   type: internal
   category: personnel
-  theme: personnel
+  project: personnel
   pia: https://www.opm.gov/media/kfpozkad/gwes-pia.pdf
   sorn: >-
     https://www.federalregister.gov/documents/2017/12/05/2017-26107/privacy-act-of-1974-system-of-records
@@ -1168,7 +1170,7 @@
   id: grantsolutions
   type: ssp
   category: obligations
-  theme: spending
+  project: spending
   description: A shared-service provider tool for federal agencies to track grants across their entire
     lifecycles
   agency: HHS
@@ -1228,7 +1230,7 @@
   id: grants.gov
   type: ssp
   category: obligations
-  theme: spending
+  project: spending
   description: >-
     A system run and administered by HHS that is used at 18+ agencies for publishing grants, finding recipients
     and delivering funds
@@ -1285,7 +1287,7 @@
   description: >-
     This appears to be a system used at HHS for tracking acquisition and procurement efforts across the
     agency.
-  theme: spending
+  project: spending
   agency: HHS
   access:
   - id: hcas-farritor
@@ -1333,7 +1335,7 @@
     A department-wide financial management system which supports all of HHS Program Service Center's Accounting
     Services and reporting
   agency: HHS
-  theme: spending
+  project: spending
   access:
   - id: ufms-terrell
     type: read
@@ -1351,7 +1353,7 @@
   type: ssp
   acronym: HRConnect
   category: personnel
-  theme: personnel
+  project: personnel
   id: hrconnect
   description: HR system for tracking employee information
   risk: PII of CFPB employees, including SSN, home address, and employment records
@@ -1451,7 +1453,7 @@
   acronym: HIGLAS
   type: internal
   category: payments
-  theme: spending
+  project: spending
   link: https://www.cms.gov/about-cms/information-systems/higlas/higlas-architecture
   description: >-
     A single, integrated dual-entry accounting system that centralizes accounting for CMS programs, including
@@ -1558,7 +1560,7 @@
   acronym: IDR
   id: idr
   type: internal
-  theme: panopticon
+  project: immigration
   category: oversight
   description: A data warehouse that receives all Medicare claims after they have been approved for payment
   population: Anybody who has received treatment under Medicare
@@ -1632,7 +1634,7 @@
   acronym: IDIS
   type: internal
   category: oversight
-  theme: spending
+  project: spending
   description: >-
     A database for tracking all HUD programs nationwide, it includes hidden locations of domestic violence
     shelters
@@ -1652,7 +1654,7 @@
   acronym: IFMIS
   type: internal
   category: payments
-  theme: spending
+  project: spending
   agency: FEMA
   description: A system for processing all FEMA grant payments
   access:
@@ -1667,7 +1669,7 @@
   id: ipp
   acronym: IPP
   type: ssp
-  theme: spending
+  project: spending
   access:
   - id: ipp-cfpb-wick
     type: read
@@ -1687,7 +1689,7 @@
   id: loccs
   type: internal
   category: payments
-  theme: spending
+  project: spending
   link: https://www.hud.gov/sites/dfiles/CFO/documents/eLOCCS_Getting_Started_Guide-Sept_2022.pdf
   description: Handles disbursement and cash management for the majority of HUD's grant programs
   risk: Access to PII of grant recipients, including names, addresses and bank information
@@ -1713,7 +1715,7 @@
   id: mbr
   type: internal
   category: taxes
-  theme: panopticon
+  project: immigration
   description: A large record of all individuals elgible to receive social security benefits
   sorn: https://www.ssa.gov/privacy/sorn/60-0090.pdf
   agency: SSA
@@ -1767,7 +1769,7 @@
 - name: Microsoft Entra ID
   id: entra
   type: saas
-  theme: personnel
+  project: personnel
   description: >-
     A centralized identity provider used to support single-sign-on (SSO) and centralize access control
     for agencies.
@@ -1839,7 +1841,7 @@
   id: ms-office
   acronym: Office365
   type: saas
-  theme: personnel
+  project: personnel
   description: Microsoft Office 365 is used for agency email and knowledge management systems.
   access:
   - id: cisa-office-coristine
@@ -1882,7 +1884,7 @@
   acronym: NBS
   type: internal
   category: payments
-  theme: spending
+  project: spending
   description: >-
     is the central electronic business system of the NIH including the general ledger, finance, budget,
     procurement, supply, travel, and property management systems. NBS is aimed at improving data consolidation
@@ -1898,7 +1900,7 @@
   id: nih-era
   acronym: eRA
   agency: NIH
-  theme: spending
+  project: spending
   description: FIXME
   access:
   - id: era-farritor
@@ -1916,7 +1918,7 @@
   acronym: NDNH
   type: internal
   category: taxes
-  theme: panopticon
+  project: immigration
   description: A system for tracking wages and new hires that's used for child support location
   link: https://acf.gov/css/training-technical-assistance/overview-federal-parent-locator-service
   risk: Contains wage information and unemployment claims for all Americans
@@ -1954,7 +1956,7 @@
   acronym: NFJP
   type: internal
   category: immigration
-  theme: panopticon
+  project: immigration
   link: https://www.dol.gov/agencies/eta/agriculture
   sorn: >-
     https://www.federalregister.gov/documents/2016/04/29/2016-09510/privacy-act-of-1974-publication-in-full-of-all-notices-of-systems-of-records-including-several-new
@@ -1979,7 +1981,7 @@
   type: ssp
   agency: USDA
   category: personnel
-  theme: personnel
+  project: personnel
   link: https://www.nfc.usda.gov/ClientServices/HR_Payroll/Initiatives/Insight/index.php
   description: >-
     A business intelligence system that is one of the offerings of the National Finance Center, which
@@ -2010,7 +2012,7 @@
   type: ssp
   agency: USDA
   category: personnel
-  theme: personnel
+  project: personnel
   link: https://help.nfc.usda.gov/publications/PPSO/51825.htm
   description: >-
     The Reporting Center is a Web-based application page which allows managers, personnel specialists,
@@ -2041,7 +2043,7 @@
   acronym: NPS
   type: internal
   category: payments
-  theme: spending
+  project: spending
   agency: USDA
   description: >-
     A system which tracks information about payments and loans for farmers, ranchers and other agricultural
@@ -2067,7 +2069,7 @@
   acronym: NSID
   type: internal
   category: payments
-  theme: panopticon
+  project: immigration
   doge_created: true
   sorn: >-
     https://www.federalregister.gov/documents/2025/06/23/2025-11463/privacy-act-of-1974-system-of-records
@@ -2101,7 +2103,7 @@
     This appears to be a system that is used for tracking spending and procurement at the Department of
     Labor
   agency: DOL
-  theme: spending
+  project: spending
   access:
   - id: ncfms-collins
     name: Miles Collins
@@ -2150,7 +2152,7 @@
   acronym: NUMIDENT
   type: internal
   category: taxes
-  theme: spending
+  project: spending
   description: NUMIDENT files that have been extracted from SSA systems, these contain SSNs for everybody
   agency: SSA
   access:
@@ -2247,7 +2249,7 @@
     trains them for meaningful careers, and assists them with obtaining employment. Job Corps has trained
     and educated over two million individuals since 1964. DOGE may have been initially been interested
     in this system as part of its fraud investigations, but it could be valuable for surveillance on immigrants.
-  theme: panopticon
+  project: immigration
   agency: DOL
   access:
   - id: eis-collins
@@ -2275,7 +2277,7 @@
 - name: Oracle Business Intelligence
   id: obi
   acronym: OBI
-  theme: personnel
+  project: personnel
   type: saas
   access:
   - id: obi-cfpb-wick
@@ -2296,7 +2298,7 @@
   id: ebs
   acronym: EBS
   type: ssp
-  theme: spending
+  project: spending
   description: >-
     Oracle E-Business Suite is a comprehensive suite of applications for finance, order management, logistics,
     procurement, projects, manufacturing, asset lifecycle, and human capital management.
@@ -2340,7 +2342,7 @@
   acronym: PAM DB
   type: internal
   category: payments
-  theme: spending
+  project: spending
   link: https://fiscal.treasury.gov/pam/
   description: >-
     The U.S. government uses the Payment Automation Manager (PAM) to pay all bills, except payments in
@@ -2386,7 +2388,7 @@
   id: pam-fs
   type: internal
   category: payments
-  theme: spending
+  project: spending
   link: https://fiscal.treasury.gov/pam/
   description: >-
     Where payment files are transmitted from initiating agencies before they are certified and processed
@@ -2414,7 +2416,7 @@
   acronym: PMS
   type: ssp
   agency: HHS
-  theme: spending
+  project: spending
   description: A shared-services program provided by HHS for managing payments for grants
   access:
   - id: pms-admin
@@ -2456,7 +2458,7 @@
   acronym: Pegasys
   type: internal
   category: payments
-  theme: spending
+  project: spending
   description: >-
     Pegasys is the GSA core financial management system of records to make payments and record accounting
     transactions. This includes funds management (budget execution and purchasing), credit cards, accounts
@@ -2472,7 +2474,7 @@
   acronym: PSSNAP
   type: internal
   category: obligations
-  theme: spending
+  project: spending
   description: SSN application process data (Phone). This is a data extract file rather than an independent
     system.
   agency: SSA
@@ -2506,7 +2508,7 @@
   acronym: PAC
   description: Possibly a system for controlling and monitoring physical access to CFPB buildings
   category: security
-  theme: personnel
+  project: personnel
   agency: CFPB
   access:
   - id: physical-access-kliger
@@ -2524,7 +2526,7 @@
 - name: Postal Service Health benefits
   type: internal
   category: personnel
-  theme: personnel
+  project: personnel
   id: pshb
   acronym: PSHB
   description: >-
@@ -2565,7 +2567,7 @@
   id: prism
   type: ssp
   category: obligations
-  theme: spending
+  project: spending
   description: System for tracking procurement and contracting
   link: https://www.doi.gov/ibc/services/finance/financial-systems/prism
   risk: PII/CUI of contracting recipients
@@ -2619,7 +2621,7 @@
   id: reo
   type: internal
   category: immigration
-  theme: panopticon
+  project: immigration
   description: >-
     System which tracks funding provided for justice-involved youth and young adults and adults who were
     formerly incarcerated.
@@ -2691,7 +2693,7 @@
   link: https://fs-arc.my.site.com/portal/s/
   type: saas
   category: obligations
-  theme: spending
+  project: spending
   description: A system for tracking business processes within Salesforce
   access:
   - id: onearc-cfpb-wick
@@ -2712,7 +2714,7 @@
   acronym: SPS
   type: internal
   category: payments
-  theme: spending
+  project: spending
   link: https://www.fiscal.treasury.gov/sps/
   description: >-
     Used by federal government agencies to securely create, certify, and submit payments to the Fiscal
@@ -2760,7 +2762,7 @@
   acronym: SSNEC
   type: internal
   category: obligations
-  theme: panopticon
+  project: immigration
   description: >-
     The system for issuing new SSNs as well as replacement SSN cards. This system also sources the NUMIDENT
     files
@@ -2775,7 +2777,7 @@
   id: ssr
   acronym: SSR
   description: A master record used by the SSA for the Supplemental Security Income (SSI) program
-  theme: panopticon
+  project: immigration
   agency: SSA
   access:
   - id: ssr-ssa-6
@@ -2831,7 +2833,7 @@
   id: sweet-rex
   type: internal
   category: other
-  theme: deregulation
+  project: deregulation
   description: >-
     A custom tool developed by college student Christopher Sweet that uses AI models to analyze regulations
     at HUD to determine which can be eliminated or reframed. DOGE is planning to use this tool at other
@@ -2858,6 +2860,7 @@
   acronym: SAVE
   type: ssp
   category: immigration
+  project: immigration
   description: >-
     An online service for agencies to verify immigration status and naturalized/acquired U.S. citizenship
     of applicants seeking benefits or licenses.
@@ -2878,7 +2881,7 @@
   id: usa-performance
   type: ssp
   category: personnel
-  theme: personnel
+  project: personnel
   description: System tracking job performance of federal employees
   risk: >-
     social security numbers, various other PII, and information related to employee performance reviews,
@@ -3056,7 +3059,7 @@
   id: usa-staffing
   type: ssp
   category: personnel
-  theme: personnel
+  project: personnel
   description: A platform for federal agencies to recruit and onboard employees.
   sorn: >-
     https://www.federalregister.gov/documents/2021/12/01/2021-26086/privacy-act-of-1974-system-of-records
@@ -3140,7 +3143,7 @@
   acronym: USA Jobs
   type: ssp
   category: personnel
-  theme: personnel
+  project: personnel
   description: Official hiring site for the federal government
   sorn: >-
     https://www.federalregister.gov/documents/2014/03/26/2014-06593/privacy-act-of-1974-update-and-amend-system-of-records
@@ -3153,7 +3156,7 @@
   id: usaccess
   type: ssp
   description: Shared service access provider system
-  theme: personnel
+  project: personnel
   category: security
   agency: GSA
   access:
@@ -3173,7 +3176,7 @@
   id: dbis
   acronym: DBIS
   category: payments
-  theme: spending
+  project: spending
   agency: USCIS
   description: A system for tracking payments and business operations of USCIS
   access:
@@ -3203,7 +3206,7 @@
   acronym: UAC Portal
   type: internal
   category: immigration
-  theme: panopticon
+  project: immigration
   description: >-
     The UC Portal manages all medical (mental and dental health included), educational, and sponsorship
     information for UC in ORR custody
@@ -3222,7 +3225,7 @@
 
 - name: Unemployment Insurance Data and Related Records
   acronym: UI Data
-  theme: panopticon
+  project: immigration
   id: uidrr
   description: >-
     Unemployment insurance claims data from states' unemployment insurance agencies. This was explicitly
@@ -3248,7 +3251,7 @@
   id: wass
   type: internal
   category: security
-  theme: personnel
+  project: personnel
   description: System for authorizing access and setting permissions to talk to other systems at HUD
   risk: >-
     With read-write access, DOGE staff were able to grant and revoke access to other systems without oversight
@@ -3265,7 +3268,7 @@
   id: webta
   type: ssp
   description: System for tracking timecards
-  theme: personnel
+  project: personnel
   access:
   - id: webta-cfpb-wick
     type: read
@@ -3286,7 +3289,7 @@
   description: >-
     The AutoRIF software tool was adapted by DOGE engineer Riccardo Biasini into a web service to help
     automate the process of identifying staff to be laid off and conducting the operation.
-  theme: personnel
+  project: personnel
   pia: https://www.opm.gov/information-management/privacy-policy/privacy-policy/wrt-pia.pdf
   doge_created: true
   access:
@@ -3311,7 +3314,7 @@
   id: eopf
   acronym: eOPF
   category: personnel
-  theme: personnel
+  project: personnel
   risk: >-
     eOPF contains social security numbers, bank account information, dates of birth, addresses, and PII
     regarding family members

@@ -150,7 +150,6 @@ DB.create_table! :govt_systems do
   string :description
   string :comment
   string :category
-  string :theme
   string :population
   string :risk
   string :link
@@ -222,31 +221,37 @@ end
 DB.create_table! :events_projects do
   foreign_key :event_id, :events, type: :string
   foreign_key :project_id, projects: :string
+  unique %i[event_id project_id]
 end
 
 DB.create_table! :events_sources do
   foreign_key :event_id, :events, type: :string
   foreign_key :source_id, :sources, type: :string
+  unique %i[event_id source_id]
 end
 
 DB.create_table! :positions_sources do
   foreign_key :position_id, :positions, type: :string
   foreign_key :source_id, :sources, type: :string
+  unique %i[position_id source_id]
 end
 
 DB.create_table! :positions_projects do
   foreign_key :position_id, :positions, type: :string
   foreign_key :project_id, :projects, type: :string
+  unique %i[position_id project_id]
 end
 
 DB.create_table! :sources_system_roles do
   foreign_key :source_id, :sources, type: :string
   foreign_key :system_role_id, :system_roles, type: :string
+  unique %i[source_id system_role_id]
 end
 
 DB.create_table! :doge_aliases_events do
   foreign_key :doge_alias_id, :doge_aliases, type: :string
   foreign_key :event_id, :events, type: :string
+  unique %i[doge_alias_id event_id]
 end
 
 DB.create_table! :agencies_cases do
@@ -285,7 +290,8 @@ DB.create_table! :doge_aliases_positions do
   unique %i[position_id doge_alias_id]
 end
 
-DB.create_table! :projects_systems do
+DB.create_table! :govt_systems_projects do
   foreign_key :project_id, :projects, type: :string
-  foreign_key :system_id, :systems, type: :string
+  foreign_key :govt_system_id, :govt_systems, type: :string
+  unique %i[project_id govt_system_id]
 end
