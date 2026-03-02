@@ -6,7 +6,7 @@ require 'sequel'
 class Project < Sequel::Model
   plugin :auto_validations
 
-  many_to_many :events
-  many_to_many :systems
-  many_to_many :positions
+  many_to_many :events, order: :date
+  many_to_many :govt_systems, order: :name
+  many_to_many :positions, order: :sort_date
 end

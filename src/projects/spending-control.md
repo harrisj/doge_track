@@ -17,6 +17,3 @@ The other highly successful DOGE project is to centralize control over how the g
 
 The goal here is to force budgetary cutbacks even if Congress or the courts might overturn them. A grant can't be distributed if there is nobody around later to collect it, and there are [specific tactical reasons to delay payments until near the end of the fiscal year to force Congress to accept them](https://www.nytimes.com/2025/06/17/us/politics/trump-vought-congress-spending-rescission.html). It may be that many of these rejections will be restored by the courts or Congress, but DOGE's damage has already been done.
 
-This work has probably involved access to the following systems:
-{% systems = GovtSystem.where(theme: 'spending').all %}
-{%@ 'tables/project_systems', systems: systems %}

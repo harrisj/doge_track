@@ -17,6 +17,12 @@ This work has involved the following distinct strands:
 
 Despite many of these setbacks and haphazard roll-outs, attacking the bureaucracy has been one of DOGE's most successful projects. It has directly reduced and traumatized the workforce and indirectly has damaged how government works, with ripple effects from understaffing becoming visible months after the damage has been done. I have been using the "disruption" tag (tagged with a <i class="fa-sharp fa-solid fa-explosion"></i> icon) to record reports of DOGE's damage at agencies; the majority of these are direct results of understaffing and randomized firings.
 
-This work has probably involved access to the following systems:
-{% systems = GovtSystem.where(theme: 'personnel').all %}
+## System Access
+
+{% systems = Project['personnel'].govt_systems %}
 {%@ 'tables/project_systems', systems: systems %}
+
+## Related Events
+
+{% events = Project['personnel'].events %}
+{%@ 'tables/compact_event_timeline', events: events, agency_col: true, month_separator: true %}
