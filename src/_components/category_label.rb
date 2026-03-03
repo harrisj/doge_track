@@ -25,6 +25,8 @@ class CategoryLabel
       'fa-laptop-code'
     when 'person'
       'fa-person'
+    when 'project'
+      'fa-clipboard'
     else
       'fa-circle-question'
     end

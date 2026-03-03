@@ -5,6 +5,7 @@ import 'macros'
 icon_col = true if icon_col.nil?
 month_separator = true if month_separator.nil?
 show_directories = true if show_directories.nil?
+show_projects = false if show_projects.nil?
 my_agency = nil unless my_agency
 %}
 
@@ -36,7 +37,7 @@ my_agency = nil unless my_agency
       <td class="align-top">
         <div class="font-sans">
         {%@ 'atoms/float_source_box', sources: event.sources %}
-        {% if icon_col %}<div class="inline text-base-content/75">{{ render EventLabel.new(event.type, :responsive) }}: </div>{% end %}
+        {% if icon_col %}<div class="inline text-base-content/75">{{ render EventLabel.new(event.type, :responsive) }}</div>{% end %}
         {{ event.linkified_text | raw }}
         {% if event.fuzz %} <span class="italic">(fuzz: {{ event.fuzz | md | strip_p }})</span>{% end %}
         {% questions_str = question_links(event)%}
@@ -46,6 +47,9 @@ my_agency = nil unless my_agency
         {% end %}
         {% if show_directories && event.type == 'directory' %}
           {%@ 'molecules/event_directory_display', event: event %}
+        {% end %}
+        {% if show_projects && event.projects.any? %}
+          {%@ 'molecules/event_projects_display', event: event %}
         {% end %}
         </div>
       </td>

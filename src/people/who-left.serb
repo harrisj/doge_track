@@ -18,7 +18,6 @@ It has always been easier to track when DOGE staff have arrived at an agency vs.
     <tr>
       <th class="sm:hidden"></th>
       <th>Name</th>
-      <th class="hidden sm:table-cell">Category</th>
       <th>Exit</th>
       <th>Exit Type</th>
       <th>Agencies</th>
@@ -29,9 +28,7 @@ It has always been easier to track when DOGE staff have arrived at an agency vs.
       {% agency_positions = person.positions.group_by {|pos| pos.agency_id } %}
       {% agencies = agency_positions.map {|a_id, positions| {agency_id: a_id, start: positions.map(&:start_date).min, end: positions.map(&:end_date).max }} %}
     <tr>
-      <td class="sm:hidden align-top">{{ render CategoryLabel.new(person.category, :icon) }}</td>
       <td class="align-top md:text-nowrap">{{ person_link(person) }}</td>
-      <td class="hidden sm:table-cell align-top text-nowrap">{{ render CategoryLabel.new(person.category) }}</td>
       <td class="align-top my-date">{{ render EdtfFormat.new(person.govt_exit_date, :compact_year ) }}</td>
       <td class="align-top">{{ person.govt_exit_type | titleize }}</td>
       <td class="align-top md:max-w-1/3">{% agencies.each_with_index do |rec, i| %}{% if rec[:start] %} <span class="text-nowrap px-0.5">{{ agency_link(rec[:agency_id]) }} <small>({{ render EdtfFormat.new(rec[:start], :compact, :none) }}{%if false && rec[:end] %}-{{ render EdtfFormat.new(rec[:end], :compact) }}{% end %})</small></span>{% end %}{% end %}</td>

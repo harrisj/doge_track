@@ -6,10 +6,25 @@
       expenditures at government agencies. This has included activities like
       scrubbing pages from websites and cancelling grants that match certain
       keywords.
-  title: Anti-DEI Initiatives
-  label_text: DEI
+  title: Targeting DEI
+  label_text: Anti-DEI
   label_color: primary
   path: /projects/dei
+
+- id: "personnel"
+  summary: >-
+      In several executive order, the Trump Administration has sought to
+      dramatically reduce the number of people who work for the federal
+      government, and DOGE has been involved in practically every effort related
+      to that. DOGE staff conceived and executed plans to fire probationary
+      employees. They implemented the famous "five things" email. They swept into
+      small and large agencies to lock people out of their systems and buildings
+      even. They were even given veto power over hiring decisions across the
+      entire executive branch.
+  label_text: Anti-Personnel
+  label_color: accent_content
+  title: Attacking Government Personnel
+  path: /projects/anti-personnel
 
 - id: "deregulation"
   summary: >-
@@ -18,9 +33,21 @@
       identify regulations that it feels are not statutorily justified and craft
       new text for rules.
   title: Radical Deregulation
-  label_text: Regs
+  label_text: Deregulation
   label_color: secondary
   path: /projects/deregulation
+
+- id: "impunity"
+  summary: >-
+      Citing the Unitary Executive Theory, the Trump Administration has been very
+      aggressive about eliminating existing government organizations that provide
+      oversight over the executive branch and within agencies. DOGE has sometimes
+      been involved in technical efforts to evade oversight by gaining superuser
+      access to systems and bypassing security controls.
+  title: Acting with Impunity
+  label_text: Impunity
+  label_color: error
+  path: /projects/impunity
 
 - id: "elimination"
   summary: >-
@@ -44,19 +71,6 @@
   label_text: Fraud
   label_color: neutral
   path: /projects/viral-waste
-
-- id: "immigration"
-  summary: >-
-      Perhaps the most ominous project of DOGE has been their effort to create a
-      large system that aggregates data from multiple agencies like the IRS, CMS
-      and Social Security Administration to build tools for ICE to indentify
-      immigrants for arrest and deportation. This work has also involved an effort
-      to collect data about voting registration to support the administration's
-      claim that millions of immigrants have illegally voted.
-  title: Anti-immigration Technology
-  label_text: Immigration
-  label_color: info
-  path: /projects/immigration
 
 - id: "spending"
   summary: >-
@@ -88,29 +102,15 @@
   label_color: warning
   path: /projects/it-modernization
 
-- id: "impunity"
+- id: "immigration"
   summary: >-
-      Citing the Unitary Executive Theory, the Trump Administration has been very
-      aggressive about eliminating existing government organizations that provide
-      oversight over the executive branch and within agencies. DOGE has sometimes
-      been involved in technical efforts to evade oversight by gaining superuser
-      access to systems and bypassing security controls.
-  title: Evading Oversight
-  label_text: Impunity
-  label_color: error
-  path: /projects/impunity
-
-- id: "personnel"
-  summary: >-
-      In several executive order, the Trump Administration has sought to
-      dramatically reduce the number of people who work for the federal
-      government, and DOGE has been involved in practically every effort related
-      to that. DOGE staff conceived and executed plans to fire probationary
-      employees. They implemented the famous "five things" email. They swept into
-      small and large agencies to lock people out of their systems and buildings
-      even. They were even given veto power over hiring decisions across the
-      entire executive branch.
-  label_text: Personnel
-  label_color: accent_content
-  title: Attacking Government Personnel
-  path: /projects/anti-personnel
+      Perhaps the most ominous project of DOGE has been their effort to create a
+      large system that aggregates data from multiple agencies like the IRS, CMS
+      and Social Security Administration to build tools for ICE to indentify
+      immigrants for arrest and deportation. This work has also involved an effort
+      to collect data about voting registration to support the administration's
+      claim that millions of immigrants have illegally voted.
+  title: Anti-immigration Technology
+  label_text: Immigration
+  label_color: info
+  path: /projects/immigration
