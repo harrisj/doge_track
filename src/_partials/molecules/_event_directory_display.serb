@@ -1,7 +1,6 @@
-{% unidentified_aliases = event.doge_aliases.select {|d| d.name.nil? } %}
-{% if unidentified_aliases.any? %}
-  <div>{{ render CategoryLabel.new('alias', :icon) }} {{ people.map(&:id) | alias_links }}</div>
-{% end %}
-{% if event.people.any? %}
-  <div>{{ render CategoryLabel.new('person', :icon) }} {{ event.people.map(&:name) | people_links }}</div>
-{% end %}
+{% named = [] %}
+{% named += event.people if event.people.any? %}
+{% unnamed_aliases = event.doge_aliases.select {|d| d.name.nil? } %}
+{% named += unnamed_aliases if unnamed_aliases.any? %}
+
+<div>{{ render CategoryLabel.new('person', :icon) }} {% named.each_with_index do |n, i| %}{% if i > 0 %}, {% end %}{% if n.name.nil? %}{{ alias_link(n.id) }}{% else %}{{ person_link(n) }}{% end %}{% end %}</div>

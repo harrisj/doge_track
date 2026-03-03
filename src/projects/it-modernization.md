@@ -8,38 +8,69 @@ text_updated: 2025-06-21
 {% import 'macros' %}
 # "IT Modernization"
 
-For an organization whose stated purpose is "IT modernization" and which claims to be staffed with only the best and brightest software engineers, you would expect DOGE to have shipped multiple major software projects. Here are the projects I know of so far:
+In the January 20th Executive Order "[Establishing and Implementing the
+President's 'Department of Government
+Efficiency'](/projects/exec-orders/#eo-14158)" that established DOGE partially
+by renaming the US Digital Service, there was a section that described the
+formation and structure of DOGE teams that would operate at each federal agency
 
-- **Government Wide Email Server (GWES)** the first project launched by DOGE was a system for emailing every federal employee. This was the underlying system for the Fork in the Road offer as well as the later Five Things email. It was rumored that here were plans to use AI systems to analyze the responses, but reportedly the emails have just [been languishing in large mailboxes](https://www.businessinsider.com/doge-elon-musk-5-things-weekly-emails-disappearing-2025-5): unused, unread and increasingly ignored by agencies.
-- **The DOGE Website** the DOGE website was launched in early January as a placeholder site. Over time, DOGE added more functionality that represented its perspective on what was important. First, they added an organizational chart, which was backed by a [poorly secured and easily hacked database](https://www.404media.co/anyone-can-push-updates-to-the-doge-gov-website-2/). Then, they added a Wall of Receipts for canceled contracts where the [math didn't add up](https://www.npr.org/2025/02/19/nx-s1-5302705/doge-overstates-savings-federal-contracts). Lately, they have expanded it to include [regulatory savings that are actually tallies of savings to businesses instead of the public](https://www.nytimes.com/2025/05/30/us/politics/doge-cuts-elon-musk-trump.html). Somehow, the site still doesn't have a search function.
-- **Automating RIFs** DOGE has also assisted in automating the layoff process. As noted above, one of the projects that {{ person_link("Riccardo Biasini") }} has been working on at {{ agency_link("OPM") }} has been to [update an AutoRIF program to automate mass layoffs](https://www.wired.com/story/doge-autorif-mass-firing-government-workers/), originally sourced from the Pentagon. In another known example, {{ person_link("Gavin Kliger") }} updated scripts in Power Automate to send layoff notices to each fired worker at the {{ agency_link("CFPB") }}. We don't have documented examples of DOGE's involvement in similar efforts at other agencies, but I would expect them to be revealed over time.
-- **Digital Retirement** In late February, one of the cofounders of AirBnb named {{ person_link("Joe Gebbia") }} announced he had started on a project to fully digitize retirement processing at OPM and replace the existing processes that involved [pushing paper in an actual cave](https://www.washingtonpost.com/sf/national/2014/03/22/sinkhole-of-bureaucracy/). In May, they launched it to great fanfare hailing it as a "landmark move to modernize federal services" and a ["cornerstone of the DOGE effort"](https://www.opm.gov/news/opm-launches-historic-fully-online-retirement-application-system-across-federal-government.pdf). Unfortunately, it might also be a case of DOGE taking credit for [work that had already been in progress for years](https://fedscoop.com/doge-took-credit-for-his-work-now-an-opm-alum-fights-to-get-his-job-back/), with DOGE mainly just rushing the pilot to production quickly and declaring mission accomplished.
-- **Social Security Alterations** DOGE engineers have also made a few alterations to how software works at the {{ agency_link("SSA", "Social Security Administration") }}. After an initial panic about [dead people allegedly receiving benefits](https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html), DOGE stood up a multi-person team to clean the data and remove records that lack death dates and indicate unusually old people, despite past assessments that the cost and efforts of such changes was probably not worth it, given that actual fraud was negligable. Similarly, DOGE misinterpreted a statistic that 40% of fraudulent SSA claims involve a telephone call to a service center to mean that 40% of all calls were fraudulent. In response, DOGE quickly instituted new fraud checks; later analysis determined these checks had [slowed service processing by 25% and out of 110,000 claims analyzed, only 2 were possibly but not definitely fraudulent](https://www.nextgov.com/digital-government/2025/05/doge-went-looking-phone-fraud-ssa-and-found-almost-none/405346/). More perniciously, DOGE has [actively tampered with the Master Death Record to declare living immigrants dead](https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html) as a way to ruin their financial means. A former SSA staffer described this as "[the one truly totalitarian thing the agency was asked to do.](https://www.newyorker.com/magazine/2025/06/23/what-did-elon-musk-accomplish-at-doge)"
-- **AI Assistants** DOGE has also rolled out or accelerated the use of AI assistants at several places in government. In some cases, they are tools that are meant to help (and possibly replace) federal staff. For instance, GSA rolled out an [AI chatbot to assist workers](https://www.wired.com/story/gsai-chatbot-1500-federal-workers/), but staff have been unimpressed calling it "about as good as an intern." In a different example, {{ person_link("Sahil Lavingia") }} tried using AI to analyze contracts at the VA which could be terminated. ProPublica [reports the results were shoddy and misleading](https://www.propublica.org/article/inside-ai-tool-doge-veterans-affairs-contracts-sahil-lavingia). The developer defended the work saying that he was assured that a person would be reviewing the results before they were applied, but that didn't happen. Similar assurances have been made about a project by {{ person_link("Christopher Sweet") }} to [analyze and recommend HUD regulations for removal](https://www.wired.com/story/doge-college-student-ai-rewrite-regulations-deregulation/). We'll see if that happens.
-- **Trump Card** I would be remiss if this list didn't include the Trump Gold Card Visa. In April, news emerged that a DOGE team embedded within DHS and led by {{ person_link("Marko Elez") }} and {{ person_link("Edward Coristine") }} was working to implement an [application process for a $5 Million "Gold Card" immigration visa](https://www.nytimes.com/2025/04/16/us/politics/gold-card-visa-trump-musk.html). The engineering work here by DOGE was telling [existing teams at DHS to quickly ramp up a data pipeline for visa applications](https://www.washingtonpost.com/politics/2025/07/07/trump-gold-card-visa-immigration/). They did build this quickly, but it has sat idle since its launch without any applications to process. On June 12th, DOGE [launched a website with a signup for the new Trump Card waiting list](https://www.cbsnews.com/news/trump-gold-card-5-million-website/) that featured the same dark aesthetic as the DOGE website. Commerce Secretary Harold Lutnick has claimed that [70,000 people have signed up to apply for the card](https://www.ft.com/content/468b885d-679d-4419-8d6b-2a7d708d6c6e), but it's unclear how many of these are serious applicants. More importantly, this new visa would need to be approved by Congress.
-- **Untitled Anti-immigrant Data Mining Project** this is perhaps the most ominous of DOGE's software projects; it gets its [own section](/projects/panopticon).
+> (c) DOGE Teams. In consultation with USDS, each Agency Head shall establish
+> within their respective Agencies a DOGE Team of at least four employees, which
+> may include Special Government Employees, hired or assigned within thirty days
+> of the date of this Order. Agency Heads shall select the DOGE Team members in
+> consultation with the USDS Administrator. Each DOGE Team will typically
+> include one DOGE Team Lead, one engineer, one human resources specialist, and
+> one attorney. Agency Heads shall ensure that DOGE Team Leads coordinate their
+> work with USDS and advise their respective Agency Heads on implementing the
+> President's DOGE Agenda.
 
-By this count, the only original work has been two websites, an email server, a few demos, a few "fixes," and one more ominous project. _Is that all there is?_ This might seem perplexing, especially since Musk has bragged repeatedly that DOGE's superpower is that its members are [working 120 hours a week](https://www.entrepreneur.com/business-news/elon-musk-says-doge-staff-are-working-120-hours-a-week/486519) and DOGE staff have clearly not been constrained by the same pesky privacy and cybersecurity rules that constrain other software development projects. Besides the obvious answer that working insane hours has been shown to reduce the quality of teamwork, I think this mystery is answered by looking at the skills of people in DOGE (_skill assignments are my own assessments_).
+Despite the description, DOGE initially used IT Modernization as a cover for its
+activities to get a foot in the door, so that it could start its projects of
+[spending control](/projects/spending-control/) or [eliminating
+agencies](/projectes/elimination/).
 
-{% skill_counts = Person.all.map(&:skill).compact.tally %}
-<div class="sm:w-1/4 sm:float-right mx-2">
-<table class="table table-xs table-zebra mt-0 mb-4">
-  <tbody>
-    {% skill_counts.keys.sort.each do |skill| %}
-      {% count = skill_counts[skill] %}
-    <tr>
-      <td>{{ skill.titleize }}</td>
-      <td>{{ count }}</td>
-    </tr>
-    {% end %}
-  </tbody>
-</table>
-</div>
+However, DOGE has undertaken some IT modernization projects:
 
-There are a lot of lawyers and executives and a few HR administrators, of course. This follows from the [DOGE design of embedding lawyers and coders and HR representatives within agencies](/projects/exec-orders#eo-14158). What's lacking are all the other disciplines necessary for agile software development. Modern software teams will often include a product manager, a project manager (often a scrum lead) to track goals and progress in each sprint, a designer to create useful user interfaces and discuss research, data analysts to process and understand source data, subject-matter experts to understand the problem domain and business logic, infrastruture engineers to help the team deploy its software and practive DevOps. None of those skills are listed here - the analysts are financial quants from banks and the 2 designers were hired to work on a single website at GSA. There are certainly a lot of coders, but many of them are young and by all indications are used to working alone rather than as part of a team that has built a product.
+- **Government Wide Email Server (GWES)** the first project launched by DOGE was
+  a system for emailing every federal employee. This was the underlying system
+  for the Fork in the Road offer as well as the later Five Things email.
+- **The DOGE Website** the DOGE website was launched in early January as a
+  placeholder site. Over time, DOGE added more functionality that represented
+  its perspective on what was important. First, they added an organizational
+  chart, which was backed by a [poorly secured and easily hacked
+  database](https://www.404media.co/anyone-can-push-updates-to-the-doge-gov-website-2/).
+  Then, they added a Wall of Receipts for canceled contracts where the [math
+  didn't add
+  up](https://www.npr.org/2025/02/19/nx-s1-5302705/doge-overstates-savings-federal-contracts).
+  Lately, they have expanded it to include [regulatory savings that are actually
+  tallies of savings to businesses instead of the
+  public](https://www.nytimes.com/2025/05/30/us/politics/doge-cuts-elon-musk-trump.html).
+- **Automating RIFs** DOGE has also assisted in automating the layoff process for [reducing personnel](/projects/personnel/)
+- **Digital Retirement** In late February, one of the cofounders of AirBnb named
+  {{ person_link("Joe Gebbia") }} announced he had started on a project to fully
+  digitize retirement processing at OPM and replace the existing paper-based
+  processes. In May, they promoted it as a ["cornerstone of the DOGE
+  effort"](https://www.opm.gov/news/opm-launches-historic-fully-online-retirement-application-system-across-federal-government.pdf).
+  Unfortunately, it might also be a case of DOGE taking credit for [work that
+  had already been in progress for
+  years](https://fedscoop.com/doge-took-credit-for-his-work-now-an-opm-alum-fights-to-get-his-job-back/).
+- **AI Assistants** DOGE has also rolled out or accelerated the use of AI
+  assistants within several agencies. More importantly, it has been using AI to
+  suggest [regulations for removal](/projects/deregulation).
+- **Websites** Perhaps the most notable IT Modernization work lately by DOGE has
+  been launching various websites, with most of them created by the newer {{
+  agency_link("NDS") }}.
 
-In [an extended interview with Planet Money](https://www.npr.org/transcripts/1254121714), {{ person_link("Sahil Lavingia") }} reported essentially being given a laptop and occasional instructions by {{ person_link("Steve Davis") }}, but there was no coordination with DOGE as a whole or even other DOGE engineers at the VA. When he attended a monthly all-hands, he reported that Elon just used the opportunity to complain about government and not provide the direction he was hoping for:
+{% project = Project['modernization'] %}
 
->  I was expecting, like, a lot more of a plan of attack, like a sort of war room where we're like, this is what we're trying to get done. This is where we've failed. This is where we've succeeded. You know, a little bit more of, like, a team effort.
+{% if project.govt_systems.any? %}
+## System Access
 
-Of course, DOGE could possibly have partnered with existing agency staff for this work, in which case looking just at the DOGE staffing alone would be highly misleading. But the record suggests they usually have not. 18F wrote the [definitive guide to building agile software in government](https://guides.18f.org/product/); DOGE's answer was to fire them all. At Social Security, rather than lean on subject matter experts for help, DOGE CIO Mike Russo declared that [he could not trust civil servants](https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html) and farmed out the task to {{ person_link("Akash Bobba") }}. If you didn't write code and you weren't loyal to Elon Musk, you weren't valuable to DOGE.
+{%@ 'tables/project_systems', systems: project.govt_systems %}
+{% end %}
+
+{% if project.events.any? %}
+## Related Events
+
+{%@ 'tables/compact_event_timeline', events: project.events, agency_col: true, month_separator: true %}
+{% end %}

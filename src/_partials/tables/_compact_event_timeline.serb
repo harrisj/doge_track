@@ -5,6 +5,7 @@ import 'macros'
 icon_col = true if icon_col.nil?
 month_separator = true if month_separator.nil?
 show_directories = true if show_directories.nil?
+my_agency = nil unless my_agency
 %}
 
 {% if events && events.any? %}
@@ -29,7 +30,8 @@ show_directories = true if show_directories.nil?
     <tr class="font-sans" id="{{ event.id }}">
     {% prior_row_date = parsed_date %}
       <td class="align-top border-base-300">
-        <span class="my-date">{{ render EdtfFormat.new(event.date, :compact_year) }} {{ event.agencies | agency_links }}</span>
+          <div class="my-date">{{ render EdtfFormat.new(event.date, :compact_year) }}</div>
+          {% if my_agency.nil? || event.agencies != [my_agency] %}<div>{{ event.agencies | agency_links }}</div>{% end %}
       </td>
       <td class="align-top">
         <div class="font-sans">

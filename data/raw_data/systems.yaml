@@ -2152,7 +2152,7 @@
   acronym: NUMIDENT
   type: internal
   category: taxes
-  project: spending
+  project: fraud
   description: NUMIDENT files that have been extracted from SSA systems, these contain SSNs for everybody
   agency: SSA
   access:
@@ -2474,7 +2474,7 @@
   acronym: PSSNAP
   type: internal
   category: obligations
-  project: spending
+  project: fraud
   description: SSN application process data (Phone). This is a data extract file rather than an independent
     system.
   agency: SSA
@@ -2714,7 +2714,9 @@
   acronym: SPS
   type: internal
   category: payments
-  project: spending
+  project:
+  - spending
+  - fraud
   link: https://www.fiscal.treasury.gov/sps/
   description: >-
     Used by federal government agencies to securely create, certify, and submit payments to the Fiscal

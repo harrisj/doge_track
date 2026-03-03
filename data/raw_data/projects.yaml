@@ -1,15 +1,5 @@
 # yaml-language-server: $schema=../schemas/project-file.json
 ---
-- id: "ai"
-  title: Artificial Intelligence
-  summary: >-
-      The Trump Administration has been very aggressive about promoting the use of
-      AI within the federal government. DOGE staff have often been the teams
-      implementing these within agencies, sometimes evading privacy and security
-      rules in the process.
-  label_text: AI
-  path: /projects/ai
-
 - id: "dei"
   summary: >-
       DOGE has been involved in work to eliminate "pro-DEI activities, content and
@@ -18,6 +8,7 @@
       keywords.
   title: Anti-DEI Initiatives
   label_text: DEI
+  label_color: primary
   path: /projects/dei
 
 - id: "deregulation"
@@ -28,6 +19,7 @@
       new text for rules.
   title: Radical Deregulation
   label_text: Regs
+  label_color: secondary
   path: /projects/deregulation
 
 - id: "elimination"
@@ -38,6 +30,7 @@
       staffers repeatedly involved with infiltrating and eliminating agencies.
   title: Eliminating Agencies
   label_text: Elimination
+  label_color: accent
   path: /projects/elimination
 
 - id: "fraud"
@@ -49,6 +42,7 @@
       Security or the Treasury for fraud.
   title: Looking for Viral Waste and Fraud
   label_text: Fraud
+  label_color: neutral
   path: /projects/viral-waste
 
 - id: "immigration"
@@ -61,6 +55,7 @@
       claim that millions of immigrants have illegally voted.
   title: Anti-immigration Technology
   label_text: Immigration
+  label_color: info
   path: /projects/immigration
 
 - id: "spending"
@@ -72,6 +67,7 @@
       spending within agencies.
   title: Blocking Grants and Appropriated Funds
   label_text: Spending
+  label_color: success
   path: /projects/spending-control
 
 - id: "modernization"
@@ -81,13 +77,15 @@
       wreckers to enter an agency in order to fire staff and shut down all
       spending. However, there have been a few IT Modernization projects. For
       instance, DOGE has been involved in moving an OPM project to digitize
-      retirement applications forward. More recently, the National Design Studio
-      has been focused on redesigning federal websites (and launching many of its
-      own) and OPM is hoping a new Tech Force initiative will be able to replace
-      all the internal technical talent lost when DOGE eliminated 18F and much of
-      USDS.
-  title: IT Modernization
-  label_text: Modernization
+      retirement applications forward. DOGE has also been behind several
+      projects to expand AI usage within the federal government. More recently,
+      the National Design Studio has been focused on redesigning federal
+      websites (and launching many of its own) and OPM is hoping a new Tech
+      Force initiative will be able to replace all the internal technical talent
+      lost when DOGE eliminated 18F and much of USDS.
+  title: IT Modernization & AI
+  label_text: IT Modernization
+  label_color: warning
   path: /projects/it-modernization
 
 - id: "impunity"
@@ -99,6 +97,7 @@
       access to systems and bypassing security controls.
   title: Evading Oversight
   label_text: Impunity
+  label_color: error
   path: /projects/impunity
 
 - id: "personnel"
@@ -112,5 +111,6 @@
       even. They were even given veto power over hiring decisions across the
       entire executive branch.
   label_text: Personnel
+  label_color: accent_content
   title: Attacking Government Personnel
-  path: /projects/anit-personnel
+  path: /projects/anti-personnel
