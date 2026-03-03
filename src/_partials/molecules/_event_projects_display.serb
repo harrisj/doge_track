@@ -1,0 +1,1 @@
+<div class="text-base-content/75">{{ render CategoryLabel.new('project', :icon) }}&nbsp;{% event.projects.each_with_index do |project, i| %}{% if i > 0 %}, {% end %}<a href="{{ project.path }}">{{ project.label_text }}</a>{% end %}</div> 
