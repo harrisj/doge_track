@@ -27,6 +27,10 @@ layout: default
           <span><strong>On Vacation</strong> I'll update the data when I get back.</span>
         </div>
       {% end %}
+      <div role="alert" class="alert">
+          <i class="fa-sharp fa-solid fa-shovel"></i>
+          <span><strong>Renovating</strong> Testing a major restructuring.</span>
+      </div>
 
       <main class="min-h-screen mt-4 px-3">
         {{ content }}
