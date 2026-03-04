@@ -12,17 +12,6 @@ DOGE is very difficult to track. The Trump Administration has used every tool at
 <div id="chart"></div>
 <script src="/includes/doge_totals.js"></script>
 
-To better understand the types of roles I've seen within DOGE, I have sorted them into several distinct categories of my own design. These are demarcated with specific icons in tables and text where convenient:
-
-- {{ render CategoryLabel.new('adjacent', :icon) }} <strong>{{ link_to "Boosters", "/people/leaders/" }}</strong> are people in DOGE's orbit who have helped with recruitment and establishing the organization.
-- {{ render CategoryLabel.new('enabler', :icon) }} <strong>{{ link_to "Enablers", "/people/enablers/" }}</strong> are staff embedded in agencies who work to open the door for DOGE's activities. They are not always DOGE hires.
-- {{ render CategoryLabel.new('leadership', :icon) }} <strong>{{ link_to "Leaders", "/people/leaders/" }}</strong> are the identified and hidden leaders of the entire DOGE operation in its various agencies
-- {{ render CategoryLabel.new('support', :icon) }} <strong>{{ link_to "Support", "/people/support-team/" }}</strong> are the home team, largely based in DOGE and OPM to support operations of other staff
-- {{ render CategoryLabel.new('wrecker', :icon) }} <strong>{{ link_to "Wreckers", "/people/wreckers/" }}</strong> are the away team and the muscle, hired into or frequently dispatched to descend on agencies to cancel grants and contracts, fire staff, exfiltrate data and possibly destroy the agency entirely
-- {{ render CategoryLabel.new('builder', :icon) }} <strong>Builders</strong> are creating new software and websites in entities like the {{ agency_link("NDS") }} or Tech Force after the Wreckers have cleared the way.
-
-Like any categorization, this is an approximation that provides useful clarity but also masks the messy nuances of reality. I have no idea if DOGE has their own internal categories and how well these map to their own. My categorization also does not account for people changing their roles over time. For instance, {{ person_link("Scott Coulter") }} originally would have been classified as a Wrecker since he was detailed into other agencies like NASA, but I have reclassified him as an Enabler since he was promoted to a Chief Information Officer at Social Security.
-
 Here are the current members of DOGE that I have linked to specific positions, listed with their likely start dates if known or when they were first spotted in an agency. If they have exited the government, that date is also presented here. Otherwise, the table reports when they were last explicitly named in a news report or court filing as being present in a government role.
 
 {% people = Person.eager_graph({positions: :agency}).order(:sort_date, Sequel[:agency][:name], :sort_name).all %}
