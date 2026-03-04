@@ -242,6 +242,25 @@
   - USIP
   id: KMD5RgCU
 
+- date: 2025-02-19
+  type: interagency
+  event: >-
+    A staffer at the EOP emails DOGE staff to take part in a webinar about the National Environmental
+    Policy Act.
+  project: deregulation
+  agency:
+  - EOP
+  - DOT
+  - DOI
+  interagency_doge_reps:
+    DOI:
+    - Katrine Trampe
+    - Tyler Hassen
+    DOT:
+    - Daniel Abrahamson
+  source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
+  id: 3Lorb8hL
+
 - date: 2025-02-21
   type: interagency
   event: >-
@@ -268,6 +287,29 @@
   case_no: 1:25-cv-00778
   id: CuJmM2lv
 
+- date: 2025-02-21
+  type: interagency
+  event: >-
+    Several DOGE staff at HHS and DOI are involved in a large meeting related to a contract with the Office
+    of Refugee Resettlement (ORR) within HHS. Among other systems, this office maintains the Unaccompanied
+    Children Portal, which was of interest to DOGE's immigration focus.
+  named:
+  - Tyler Hassen
+  - Katrine Trampe
+  - Rachel Riley
+  interagency_doge_reps:
+    DOI:
+    - Tyler Hassen
+    - Katrine Trampe
+    HHS:
+    - Rachel Riley
+  source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
+  project: immigration
+  agency:
+  - HHS
+  - DOI
+  id: 4duo4Ba7
+
 - date: 2025-02-(26)~
   type: interagency
   fuzz: Date is just given as "Late February"
@@ -281,6 +323,47 @@
   - OPM
   - GSA
   id: 5zOTAHYX
+
+- date: 2025-02-27
+  type: interagency
+  event: >-
+    DOGE staffers at the Department of the Interior meet with Nicole Hollander from GSA about leases to
+    be cancelled.
+  interagency_doge_reps:
+    GSA:
+    - Nicole Hollander
+    DOI:
+    - Tyler Hassen
+    - Katrine Trampe
+  named:
+  - Nicole Hollander
+  - Tyler Hassen
+  - Katrine Trampe
+  agency:
+  - GSA
+  - DOI
+  source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
+  project: spending
+  id: 69tLUX4t
+
+- date: 2025-02-27
+  type: interagency
+  event: >-
+    DOGE staff at DOI invite several of their counterparts from OPM to a meeting to discuss DOI Tech Systems.
+  fuzz: A michealal@x.com is also invited. Is it meant to be Micaela Lopez Ballefin?
+  interagency_doge_reps:
+    DOI:
+    - Katrine Trampe
+    - Tyler Hassen
+    OPM:
+    - Greg Hogan
+    - Riccardo Biasini
+  agency:
+  - OPM
+  - DOI
+  source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
+  project: spending
+  id: 7Nmk2w0G
 
 - date: 2025-03-01
   type: report
@@ -314,6 +397,30 @@
   - USCIS
   - SSA
   id: 4XjaSBw5
+
+- date: 2025-03-(03)~
+  type: interagency
+  event: >-
+    DOE staff (mostly from DOGE) meet exclusively with DOGE staff from both OPM and GSA to discuss DOI's
+    data centers, cloud infrastructure and software licenses.
+  interagency_doge_reps:
+    DOI:
+    - Katrine Trampe
+    - Tyler Hassen
+    OPM:
+    - Greg Hogan
+    - Riccardo Biasini
+    GSA:
+    - Derek Geissler
+  agency:
+  - OPM
+  - GSA
+  - DOI
+  source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
+  project:
+  - spending
+  - modernization
+  id: ipGicBPJ
 
 - date: 2025-03-05
   type: interagency
