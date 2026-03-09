@@ -14,6 +14,11 @@
   tech_links:
   - Tesla
   skill: lawyer
+  connections:
+  - entity_id: tesla
+    before_doge: true
+    connection_truth: verified
+    source: https://www.linkedin.com/in/daniel-a-38574865/
   positions:
   - id: usda-abrahamson
     agency: USDA
@@ -135,6 +140,12 @@
     of the company Human Capital.
   tech_links:
   - Human Capital
+  connections:
+  - entity_id: human-capital
+    before_doge: true
+    during_doge: true
+    after_doge: true
+    connection_truth: verified
   positions: []
 
 - name: Jacob Altik
@@ -151,7 +162,7 @@
     administration. As a lawyer, he is often responsible for backing up DOGE's actions with legal threats,
     and there are several reported cases of him attempting to browbeat independent agencies into compliance
     with administration policy. He has also been selected to be a clerk for Supreme Court Justice Neil
-    Gorsuch this summer, so it's unclear how long his tenure with DOGE will last.
+    Gorsuch in the summer of 2025, so he left DOGE by the end of June 2025.
   govt_exit_date: 2025-06-27
   govt_exit_truth: verified
   govt_exit_type: resigned
@@ -226,6 +237,12 @@
   category: booster
   tech_links:
   - Andreessen Horowitz
+  connections:
+  - entity_id: andreessen
+    connection_truth: verified
+    before_doge: true
+    during_doge: true
+    after_doge: true
   blurb: >-
     According to early reports, Marc Andreesen's only direct involvement with DOGE was interviewing potential
     candidates at Mar-a-Lago in December 2024. However, he continues to be a strident booster of the effort.
@@ -250,6 +267,11 @@
   govt_exit_date: 2025-10-(07)~
   govt_exit_type: resigned
   govt_exit_truth: reported
+  connections:
+  - entity_id: mentorship-armstrong
+    before_doge: true
+    connection_truth: reported
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
   positions:
   - id: detail-opm-dhs-armstrong
     type: detailed
@@ -317,6 +339,10 @@
   govt_exit_date: 2025-05-28
   govt_exit_truth: inferred
   govt_exit_type: resigned
+  connections:
+  - entity_id: twitter
+    before_doge: true
+    connection_truth: verified
   positions:
   - id: education-balajadia
     type: detailed
@@ -1245,6 +1271,7 @@
     agency: GSA
     start_date: 2025-01-(22)~
     start_date_truth: self-reported
+    sort_date: 2025-01-22
     end_date: 2025-08-06
     end_type: resigned
     table_note: Testifies started working in early January, but formally a few days after inauguration
