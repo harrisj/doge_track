@@ -142,5 +142,13 @@
         "type",
         "source"
     ],
+    "dependentRequired": {
+        "date_requested": ["date_req_truth"],
+        "date_granted": ["date_grant_truth"],
+        "ao_type": ["ao_truth"],
+        "date_last_used": ["date_used_truth"],
+        "date_revoked": ["date_revoked_truth"],
+        "date_nte": ["date_nte_truth"]
+    },
     "additionalProperties": false
 }

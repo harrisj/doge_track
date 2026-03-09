@@ -103,6 +103,7 @@
     category: support
     agency: DOGE
     from: GSA
+    from_truth: verified
     start_date: 2025-02-24
     start_date_truth: verified
     end_date: 2025-07-26
@@ -145,6 +146,7 @@
     before_doge: true
     during_doge: true
     after_doge: true
+    source: https://www.linkedin.com/in/barisakis/
     connection_truth: verified
   positions: []
 
@@ -199,6 +201,7 @@
     type: detailed
     category: support
     from: OPM
+    from_truth: verified
     agency: DOGE
     start_date: 2025-01-27
     start_date_truth: verified
@@ -243,6 +246,7 @@
     before_doge: true
     during_doge: true
     after_doge: true
+    source: https://en.wikipedia.org/wiki/Marc_Andreessen
   blurb: >-
     According to early reports, Marc Andreesen's only direct involvement with DOGE was interviewing potential
     candidates at Mar-a-Lago in December 2024. However, he continues to be a strident booster of the effort.
@@ -339,10 +343,18 @@
   govt_exit_date: 2025-05-28
   govt_exit_truth: inferred
   govt_exit_type: resigned
+  linkedin: https://www.linkedin.com/in/jehn-balajadia-76b141247/
   connections:
   - entity_id: twitter
     before_doge: true
     connection_truth: verified
+    end_date: 2025-02-05
+    end_date_truth: inferred
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
+  - entity_id: boring
+    before_doge: true
+    connection_truth: self-reported
+    source: https://www.linkedin.com/in/jehn-balajadia-76b141247/
   positions:
   - id: education-balajadia
     type: detailed
@@ -379,6 +391,12 @@
     latter, she would normally be ineligible to work for the US government, but she has been hired as
     a contractor at the GSA as a senior engineering manager working with Matthew Markhurst-Session and
     Thomas Shedd.
+  connections:
+  - entity_id: twitter
+    before_doge: true
+    connection_truth: self-reported
+    source: https://www.linkedin.com/in/mica-lopez/
+    table_note: Head of Data Platform
   positions:
   - id: sba-lopez-ballefin
     type: unknown
@@ -404,7 +422,19 @@
     he founded SnapSaves, a startup that was later acquired.
   skill: executive
   category: wrecker
+  linkedin: https://www.linkedin.com/in/gehidyyevj/
   positions:
+  - id: doe-bansal
+    agency: Energy
+    type: appointed
+    category: wrecker
+    sort_date: 2025-06-15
+    end_date: 2025-12-XX
+    end_date_truth: self-reported
+    title: Senior Advisor
+    title_type: advisor
+    replaced_by: doe-bansal-ai
+    source: https://www.linkedin.com/in/gehidyyevj/
   - id: dot-bansal
     agency: DOT
     type: appointed
@@ -412,6 +442,30 @@
     sort_date: 2025-05-15
     table_note: Reportedly reviewing DOT grants to cancel
     source: https://projects.propublica.org/elon-musk-doge-tracker/
+  - id: nrc-bansal
+    agency: NRC
+    type: detailed
+    from: Energy
+    from_truth: inferred
+    title: Senior Advisor
+    category: wrecker
+    title_type: advisor
+    sort_date: 2025-07-11
+    start_date: 2025-07-(11)?
+    start_date_truth: guessed
+    table_note: guessing detail start similar to Adam Blake
+    source: https://www.linkedin.com/in/gehidyyevj/
+  - id: doe-bansal-ai
+    agency: Energy
+    type: promotion
+    title: Managing Director, AI Infrastructure
+    title_type: director
+    category: builder
+    sort_date: 2026-01-01
+    start_date: 2026-01-XX
+    start_date_truth: self-reported
+    project: modernization
+    source: https://www.linkedin.com/in/gehidyyevj/
 
 - name: Greg Barbaccia
   sort_name: Barbaccia
@@ -427,6 +481,15 @@
     at Palantir for ten years. He's also been placed into a highly-ranked role (Federal Chief CIO) for
     which he has very limited experience, but would allow him to coordinate and enable the work of other
     DOGE appointees to the CIO level.
+  connections:
+  - entity_id: palantir
+    connection_truth: self-reported
+    before_doge: true
+    start_date: 2010-02-XX
+    start_date_truth: self-reported
+    end_date: 2020-01-XX
+    end_date_truth: self-reported
+    source: https://www.linkedin.com/in/gjbnyc
   positions:
   - id: omb-cio-barbaccia
     type: appointed
@@ -518,6 +581,7 @@
     work experience was at a company (Day Three) that manufactured cannabinoids, whose parent organization
     is led by Beyda's father-in-law.
   category: enabler
+  college_graduation_year: 2023
   skill: analyst
   positions:
   - id: hhs-beyda
@@ -531,7 +595,7 @@
     sort_date: 2025-08-10
   - id: dol-sam-beyda
     type: unknown
-    category: unknown
+    category: wrecker
     sort_date: 2025-02-13
     start_date: 2025-02-(13)~
     start_date_truth: reported
@@ -568,6 +632,7 @@
     sent by Gavin Kliger. It's unclear if she has a similar role in the staffing reducations at the Department
     of Education.
   category: wrecker
+  college_graduation_year: 2010
   govt_exit_date: 2025-06-13
   govt_exit_truth: verified
   govt_exit_type: resigned
@@ -641,6 +706,25 @@
     for automating layoffs at agencies. As a software developer, he likely has been connected to other
     initiatives like the Fork in the Road or the Five Things emails, but he has kept a lower profile than
     other engineers.
+  college_graduation_year: 2011
+  source:
+  - https://www.linkedin.com/in/riccardobiasini/
+  - https://projects.propublica.org/elon-musk-doge-tracker/
+  connections:
+  - entity_id: boring
+    start_date: 2020-03-XX
+    start_date_truth: self-reported
+    connection_truth: self-reported
+    before_doge: true
+    during_doge: true
+    source: https://www.linkedin.com/in/riccardobiasini/
+  - entity_id: tesla
+    connection_truth: self-reported
+    end_date: 2016-04-XX
+    end_date_truth: self-reported
+    start_date: 2011-01-XX
+    start_date_truth: self-reported
+    source: https://www.linkedin.com/in/riccardobiasini/
   positions:
   - id: opm-employee-2
     type: appointed
@@ -673,6 +757,7 @@
     type: detailed
     category: unknown
     from: OPM
+    from_truth: verified
     agency: DOGE
     start_date: 2025-01-27
     start_date_truth: verified
@@ -742,6 +827,30 @@
   govt_exit_date: 2025-05-16
   govt_exit_truth: inferred
   govt_exit_type: resigned
+  connections:
+  - entity_id: spacex
+    start_date: 2003-08-XX
+    start_date_truth: self-reported
+    connection_truth: self-reported
+    before_doge: true
+    during_doge: true
+    after_doge: true
+    table_note: Listed as SVP, HR & Operations
+    source: https://www.linkedin.com/in/brianbjelde
+  - entity_id: twitter
+    after_doge: true
+    table_note: Listed as SVP, HR & Operations
+    start_date: 2025-11-XX
+    start_date_truth: self-reported
+    connection_truth: self-reported
+    source: https://www.linkedin.com/in/brianbjelde
+  - entity_id: xai
+    after_doge: true
+    table_note: Listed as SVP, HR & Operations
+    start_date: 2025-11-XX
+    start_date_truth: self-reported
+    connection_truth: self-reported
+    source: https://www.linkedin.com/in/brianbjelde
   positions:
   - id: opm-brian-bjelde
     type: appointed
@@ -805,6 +914,7 @@
     agency: Energy
     sort_date: 2025-03-15
     start_date: 2025-03-XX
+    start_date_truth: reported
     table_note: Detailed from Energy to NRC, so assuming start there
     salary: "$167,603"
     source:
@@ -817,6 +927,7 @@
     category: wrecker
     agency: NRC
     from: Energy
+    from_truth: verified
     office: Office of the Executive Director for Operations
     table_note: In charge of implementing EO 14300
     sort_date: 2025-07-11
@@ -841,6 +952,15 @@
     lieutenant of Mike Russo.
   tech_links:
   - Palantir
+  connections:
+  - entity_id: palantir
+    connection_truth: reported
+    before_doge: true
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
+  - entity_id: meta
+    connection_truth: reported
+    before_doge: true
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
   positions:
   - id: detail-sba-bobba
     agency: SBA
@@ -993,6 +1113,15 @@
   govt_exit_date: 2026-01-XX
   govt_exit_truth: self-reported
   govt_exit_type: resigned
+  connections:
+  - entity_id: amazon
+    connection_truth: self-reported
+    before_doge: true
+    start_date: 2021-07-XX
+    start_date_truth: self-reported
+    end_date: 2025-02-XX
+    end_date_truth: self-reported
+    source: https://www.linkedin.com/in/ashley-boizelle-5836643b/
   positions:
   - id: gsa-boizelle
     agency: GSA
@@ -1085,6 +1214,7 @@
     agency: GSA
     category: support
     start_date: 2025-03-XX
+    start_date_truth: reported
     sort_date: 2025-03-25
     table_note: linked to GSA by ProPublica, start date guessed
     comment: Not verified, but NYT links to her to GSA also, so assuming she started there
@@ -1116,6 +1246,24 @@
     of Justice. The New York Times mentioned his involvement with DOGE in an article from mid-January,
     and he has been listed in several subsequent media round-ups of DOGE's lawyers. He departed from his
     position a day after Elon Musk left his role.
+  linkedin: https://www.linkedin.com/in/james-burnham-2368b89/
+  college_graduation_year: 2006
+  source: https://www.linkedin.com/in/james-burnham-2368b89/
+  connections:
+  - entity_id: twitter
+    connection_truth: self-reported
+    after_doge: true
+    start_date: 2025-11-XX
+    start_date_truth: self-reported
+    table_note: General Counsel
+    source: https://www.linkedin.com/in/james-burnham-2368b89/
+  - entity_id: xai
+    connection_truth: self-reported
+    after_doge: true
+    start_date: 2025-11-XX
+    start_date_truth: self-reported
+    table_note: General Counsel
+    source: https://www.linkedin.com/in/james-burnham-2368b89/
   positions:
   - id: doge-burnham
     agency: DOGE
@@ -1253,10 +1401,12 @@
   govt_exit_type: resigned
   connections:
   - entity_id: special-inc
-    connection_truth: reported
+    after_doge: true
+    connection_truth: self-reported
     source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   - entity_id: doge-indie-wreckers
-    connection_truth: reported
+    during_doge: true
+    connection_truth: self-reported
     source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   positions:
   - id: detail-gsa-odni-cavanaugh
@@ -1273,6 +1423,7 @@
     start_date_truth: self-reported
     sort_date: 2025-01-22
     end_date: 2025-08-06
+    end_date_truth: reported
     end_type: resigned
     table_note: Testifies started working in early January, but formally a few days after inauguration
     salary: "$120,509"
@@ -1396,6 +1547,7 @@
     agency: MBDA
     from: GSA
     start_date: 2025-04-(09)~
+    start_date_truth: verified
     sort_date: 2025-04-09
     from_truth: inferred
     source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.35.4_1.pdf
@@ -1519,8 +1671,21 @@
     project at the OPM, Yat Choi is also reportedly a Canadian working on a temporary visa. It true, this
     circumstance would normally disqualify him from being a federal employee unless some special waiver
     were granted.
+  college_graduation_year: 2013
+  source:
+  - https://www.linkedin.com/in/yat-choi/
+  - https://www.wired.com/story/next-stage-doge-elon-musk/
   tech_links:
   - Airbnb
+  connections:
+  - entity_id: airbnb
+    connection_truth: self-reported
+    source: https://www.linkedin.com/in/yat-choi/
+    start_date: 2014-01-XX
+    start_date_truth: self-reported
+    end_date: 2025-03-XX
+    end_date_truth: self-reported
+    table_note: Senior Software Engineer
   positions:
   - id: opm-choi
     type: consultant
@@ -1603,6 +1768,7 @@
   category: wrecker
   skill: executive
   linkedin: https://www.linkedin.com/in/michael-cole-714288b9/
+  college_graduation_year: 1994
   govt_exit_date: 2025-08-XX
   govt_exit_truth: self-reported
   govt_exit_type: resigned
@@ -1631,6 +1797,7 @@
   age: 36
   slug: miles-collins
   linkedin: https://www.linkedin.com/in/milesbcollins
+  college_graduation_year: 2011
   blurb: >-
     Before working for DOGE, Miles Collins worked for a financial firm and also ran a fertility clinic
     in Los Angeles. This might be his connection to Musk, who has had stridently pro-natalist politics.
@@ -1746,6 +1913,16 @@
   blurb: |-
     Perhaps the most famous of the DOGE wreckers, Edward "Big Balls" Coristine achieved early attention for joining DOGE at the young age of 19. Previously, he had been a camp counselor and a summer intern at Neuralink, who grew up in wealth and joined up with hacking groups online, before eagerly jumping on to the DOGE bandwagon.
     However, he has also accrued a large number of hits on his wrecking spree across the federal government, starting at the GSA on Day One and then detailing to OPM and a large number of other agencies within a short amount of time; for instance, he appears to have been DOGE's vanguard within the Department of Homeland Security. Most recently, he has been linked to a team developing an online application for a $5 Million "Gold Card" Visa that has been promoted by Trump as a new revenue stream for the US.
+  connections:
+  - entity_id: neuralink
+    before_doge: true
+    connection_truth: self-reported
+    start_date: 2024-06-XX
+    start_date_truth: self-reported
+    end_date: 2024-09-XX
+    end_date_truth: self-reported
+    source: https://www.linkedin.com/in/bigballs/
+    table_note: Internship, Core Software
   positions:
   - id: detail-gsa-doge-coristine
     type: detailed
@@ -1819,6 +1996,7 @@
     start_date: 2025-01-24
     agency: OPM
     from: GSA
+    from_truth: inferred
     table_note: >-
       no MOU to confirm and SF-50 is for GSA, but I think he was detailed from GSA to OPM on this date
       based on appointment affadavit
@@ -1999,6 +2177,7 @@
   skill: executive
   category: enabler
   linkedin: https://www.linkedin.com/in/scott-coulter-44959249/
+  college_graduation_year: 2006
   blurb: >-
     Scott Coulter started his work for DOGE as a wrecker based in Social Security and detailed to NASA,
     but when Mike Russo was abruptly demoted as the CIO for Social Security, Scott stepped up into the
@@ -2051,6 +2230,7 @@
     start_date: 2025-03-24
     start_date_truth: verified
     end_date: 2025-06-(05)~
+    end_date_truth: reported
     end_type: removed
     table_note: >-
       Was listed as CIO on May 30, but Aram took over in June. WSJ reports on removal of SSA employee
@@ -2468,6 +2648,7 @@
     category: wrecker
     agency: HHS
     from: DOL
+    from_truth: verified
     start_date: 2025-03-05
     start_date_truth: verified
     title: Executive Engineer
@@ -3288,6 +3469,7 @@
       https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
     agency: DOL
     from: GSA
+    from_truth: inferred
 
 - name: Patrick George
   sort_name: George
@@ -4321,6 +4503,7 @@
     type: detailed
     category: wrecker
     from: DOGE
+    from_truth: inferred
     table_note: Reported as ending in June and left DOGE on 6/27
     start_date: 2025-02-04
     start_date_truth: reported
@@ -4336,6 +4519,7 @@
     type: detailed
     category: wrecker
     from: DOGE
+    from_truth: inferred
     sort_date: 2025-02-13
     start_date: 2025-02-(13)~
     start_date_truth: reported
@@ -4711,6 +4895,7 @@
     type: detailed
     category: wrecker
     from: SSA
+    from_truth: inferred
     start_date: 2025-04-15
     start_date_truth: reported
     table_note: assuming detail from SSA
@@ -4966,6 +5151,7 @@
     from_truth: verified
     title_type: advisor
     start_date: 2025-02-07
+    start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: detail-gsa-hhs-lewin
     type: detailed
@@ -5273,6 +5459,7 @@
     type: detailed
     category: wrecker
     from: OPM
+    from_truth: inferred
     title: Senior Advisor
     title_type: advisor
     office: Human Resources
@@ -5350,6 +5537,7 @@
     agency: VA
     sort_date: 2025-04-25
     start_date: 2025-04-(25)~
+    start_date_truth: reported
     source:
     - https://projects.propublica.org/elon-musk-doge-tracker/
     - https://www.linkedin.com/in/dave-m-a5314791/
@@ -5372,6 +5560,7 @@
     category: wrecker
     agency: DHS
     from: OPM
+    from_truth: guessed
     start_date: 2025-04-XX
     start_date_truth: guessed
     sort_date: 2025-04-16
@@ -5381,6 +5570,7 @@
     category: wrecker
     agency: CISA
     from: DHS
+    from_truth: reported
     start_date: 2025-04-XX
     start_date_truth: guessed
     sort_date: 2025-04-17
@@ -5391,6 +5581,7 @@
     category: wrecker
     agency: TSA
     from: DHS
+    from_truth: reported
     start_date: 2025-04-XX
     start_date_truth: guessed
     sort_date: 2025-04-17
@@ -5881,6 +6072,7 @@
     category: wrecker
     agency: HHS
     from: DOL
+    from_truth: verified
     start_date: 2025-03-05
     start_date_truth: verified
     title: Executive Engineer
@@ -5916,6 +6108,7 @@
     type: promotion
     category: enabler
     start_date: 2025-09-03
+    start_date_truth: verified
     title: Chief Information Officer (Technology and Customer Products)
     title_type: cio
     supervisory: true
@@ -6377,6 +6570,7 @@
     type: detailed
     category: wrecker
     from: OPM
+    from_truth: verified
     agency: SSA
     signed_date: 2025-02-26
     start_date: 2025-02-26
@@ -6903,6 +7097,7 @@
     type: promotion
     category: enabler
     start_date: 2025-09-03
+    start_date_truth: verified
     title: Chief Information Officer (Core Business Functions)
     title_type: cio
     salary: "$195,200"
@@ -7633,6 +7828,7 @@
     category: wrecker
     agency: HHS
     from: DOGE
+    from_truth: inferred
     start_date: 2025-02-XX
     start_date_truth: verified
     end_date: 2025-03-04
@@ -7648,6 +7844,7 @@
     title: Senior Advisor
     title_type: advisor
     start_date: 2025-03-04
+    start_date_truth: verified
     end_date: 2025-05-23
     end_date_truth: reported
     end_type: resigned
@@ -8458,6 +8655,7 @@
     type: detailed
     category: wrecker
     from: DOGE
+    from_truth: inferred
     agency: GSA
     table_note: At the FCC, Jordan Wick asks them to send a meeting invite to a GSA address for him
     source:

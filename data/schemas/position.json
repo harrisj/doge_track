@@ -153,10 +153,6 @@
             "description": "Source(s) for the information",
             "$ref": "source-ref.json"
         },
-        "source_name": {
-            "description": "The name of the source",
-            "type": "string"
-        },
         "reimbursed": {
             "description": "Is the detail reimbursed?",
             "type": "boolean"
@@ -216,5 +212,11 @@
         "agency",
         "type"
     ],
+    "dependentRequired": {
+        "start_date": ["start_date_truth"],
+        "end_date": ["end_date_truth"],
+        "nte_date": ["nte_date_truth"],
+        "from": ["from_truth"]
+    },
     "additionalProperties": false
 }

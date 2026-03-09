@@ -93,18 +93,7 @@
             }
         },
         "source": {
-            "description": "Source(s) for the information",
-            "oneOf": [
-                {
-                    "type": "string"
-                },
-                {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                }
-            ]
+            "$ref": "source-ref.json"
         },
         "type": {
             "type": "string",

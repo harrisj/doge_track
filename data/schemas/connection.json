@@ -17,10 +17,7 @@
             "type": "boolean"
         },
         "source": {
-            "oneOf": [
-                {"type": "string"},
-                {"type": "array", "items": {"type": "string"}}
-            ]
+            "$ref": "source-ref.json"
         },
         "description": {
             "type": "string"
@@ -45,5 +42,9 @@
         }
     },
     "required": ["entity_id", "source", "connection_truth"],
+    "dependentRequired": {
+        "start_date": ["start_date_truth"],
+        "end_date": ["end_date_truth"]
+    },
     "additionalProperties": false
 }

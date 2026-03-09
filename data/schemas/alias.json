@@ -5,6 +5,9 @@
     "title": "Alias",
     "description": "Information about an unidentified alias like ED-2 that would be used in court filings",
     "properties": {
+        "id": {
+            "type": "string"
+        },
         "agency": {
             "description": "The agency where this alias applies to",
             "$ref": "agency-id.json"
@@ -43,6 +46,7 @@
         }
     },
     "required": [
+        "id",
         "agency"
     ]
 }
