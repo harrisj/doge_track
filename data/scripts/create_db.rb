@@ -91,6 +91,7 @@ DB.create_table! :people do
   string :table_note
   string :tech_links
   string :linkedin
+  integer :college_graduation_year
 end
 
 DB.create_table! :projects do

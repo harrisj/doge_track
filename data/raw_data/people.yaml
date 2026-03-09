@@ -103,6 +103,23 @@
     end_date: 2025-07-26
     end_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+  - id: detail-gsa-nlrb-aimonetti
+    agency: NLRB
+    type: detailed
+    from: GSA
+    from_truth: reported
+    start_date: 2025-03-03
+    start_date_truth: inferred
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  - id: detail-gsa-usip-aimonetti
+    agency: USIP
+    type: detailed
+    from: GSA
+    from_truth: reported
+    start_date: 2025-03-04
+    start_date_truth: reported
+    table_note: Inferring from Cavanaugh start
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
 
 - name: Baris Akis
   slug: baris-akis
@@ -1208,15 +1225,29 @@
   govt_exit_date: 2025-08-06
   govt_exit_truth: reported
   govt_exit_type: resigned
+  connections:
+  - entity_id: special-inc
+    connection_truth: reported
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  - entity_id: doge-indie-wreckers
+    connection_truth: reported
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   positions:
+  - id: detail-gsa-odni-cavanaugh
+    type: detailed
+    agency: ODNI
+    from: GSA
+    from_truth: inferred
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
   - id: gsa-cavanaugh
     type: appointed
     category: wrecker
     agency: GSA
-    start_date: 2025-02-03
-    start_date_truth: reported
+    start_date: 2025-01-(22)~
+    start_date_truth: self-reported
     end_date: 2025-08-06
     end_type: resigned
+    table_note: Testifies started working in early January, but formally a few days after inauguration
     salary: "$120,509"
     comment: >-
       Introduces Frank Schuler on a video call at GSA in February; listed in ProPublica roundup on Feb
@@ -1225,6 +1256,7 @@
     - https://www.wired.com/story/doge-government-salaries-elon-musk/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
   - id: detail-gsa-usadf-cavanaugh
     type: detailed
     category: wrecker
@@ -1341,6 +1373,14 @@
     from_truth: inferred
     source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.35.4_1.pdf
     table_note: inferred from disruptions at MBDA starting
+  - id: detail-gsa-americorps-cavanaugh
+    type: detailed
+    agency: AmeriCorps
+    from: GSA
+    from_truth: self-reported
+    start_date: 2025-04-16
+    start_date_truth: inferred
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
   - id: detail-gsa-nlrb-cavanaugh
     type: detailed
     category: wrecker
@@ -1350,8 +1390,10 @@
     start_date: 2025-04-16
     table_note: Spotted by media
     start_date_truth: reported
-    source: >-
+    source:
+    - >-
       https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+    - https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   - id: detail-gsa-dfc-cavanaugh
     type: detailed
     category: wrecker
@@ -1383,6 +1425,30 @@
     start_date: 2025-05-21
     start_date_truth: reported
     source: https://bsky.app/profile/marisakabas.bsky.social/post/3lpclnw3x7s2c
+  - id: detail-gsa-dhs-cavanaugh
+    type: detailed
+    agency: DHS
+    from: GSA
+    from_truth: inferred
+    start_date: 2025-07-(01)~
+    start_date_truth: self-reported
+    end_date: 2025-08-06
+    end_date_truth: inferred
+    fuzz: Says he started working at DHS about a month before he left govt
+    project: immigration
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
+  - id: internal-dhs-ice-cavanaugh
+    type: internal
+    agency: ICE
+    from: DHS
+    from_truth: self-reported
+    start_date: 2025-07-(01)~
+    start_date_truth: self-reported
+    end_date: 2025-08-06
+    end_date_truth: inferred
+    table_note: Says he was working on a voluntary service for self-deportation for immigrants
+    project: immigration
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
 
 - name: Alison Childs
   sort_name: Childs
@@ -2786,15 +2852,6 @@
   govt_exit_type: resigned
   govt_exit_truth: verified
   positions:
-  - id: mcc-joshua-fox
-    agency: MCC
-    category: wrecker
-    sort_date: 2025-02-16
-    type: detailed
-    from: DOGE
-    from_truth: guessed
-    table_note: Linked to agency by ProPublica
-    source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: noaa-joshua-fox
     agency: NOAA
     category: wrecker
@@ -2819,6 +2876,17 @@
     - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
     - https://projects.propublica.org/elon-musk-doge-tracker/
     agency: DOGE
+  - id: mcc-joshua-fox
+    agency: MCC
+    category: wrecker
+    type: detailed
+    from: DOGE
+    from_truth: guessed
+    sort_date: 2025-03-22
+    start_date: 2025-03-(22)?
+    start_date_truth: guessed
+    table_note: Linked to agency by ProPublica
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: usda-joshua-fox
     agency: USDA
     start_date: 2025-04-16
@@ -2856,26 +2924,84 @@
   age: 27
   skill: analyst
   category: wrecker
+  college_graduation_year: 2020
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   custom_path: "/wreckers/cavanaugh-cronies#justin-fox"
   blurb: >-
     Joining GSA as a wrecker in mid-February, Justin Fox has mainly served as Nate Cavanaugh's sidekick
     for the destruction of several small independent federal agencies. Prior to his career as a visigoth,
     he worked as an analyst at several different investment firms. He was all friends in college with
-    fellow wrecker Marshall Wood.
+    fellow wrecker Marshall Wood. Since October 1, 2025, he has been the co-founder of a tech company
+    named Special with Nate Cavanaugh.
+  tech_links:
+  - Special
+  govt_exit_date: 2025-09-(15)~
+  govt_exit_type: resigned
+  govt_exit_truth: verified
+  connections:
+  - entity_id: mentorship-armstrong
+    connection_truth: self-reported
+    before_doge: true
+    during_doge: true
+    table_note: Deposition mentioned Armstrong as mentor and father of a friend
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  - entity_id: special-inc
+    connection_truth: self-reported
+    after_doge: true
+    start_date: 2025-10-01
+    start_date_truth: self-reported
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  - entity_id: doge-indie-wreckers
+    connection_truth: self-reported
+    start_date: 2025-03-03
+    start_date_truth: self-reported
+    end_date: 2025-09-(15)~
+    end_date_truth: self-reported
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   positions:
+  - id: detail-gsa-nea-fox
+    agency: NEA
+    type: detailed
+    from: GSA
+    from_truth: self-reported
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  - id: detail-gsa-iaf-fox
+    agency: IAF
+    type: detailed
+    from: GSA
+    from_truth: self-reported
+    start_date: 2025-02-28
+    start_date_truth: inferred
+    table_note: start inferred from DOGE at IAF
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   - id: gsa-justin-fox
     type: appointed
     category: wrecker
     agency: GSA
-    sort_date: 2025-02-20
-    start_date: 2025-03-XX
-    start_date_truth: inferred
+    start_date: 2025-03-03
+    start_date_truth: verified
+    title: Senior Advisor
+    title_type: advisor
+    office: Office of the Administrator
+    end_date: 2025-09-(15)~
+    end_date_truth: verified
+    end_type: resigned
     salary: "$167,603"
-    table_note: No idea on GSA start but before 3/13
+    table_note: End date is just given as "mid-September"
     comment: No details, but just guessing
-    office: Immediate Office of the Administrator
-    source: >-
+    source:
+    - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  - id: detail-gsa-usip-fox
+    agency: USIP
+    type: detailed
+    from: GSA
+    from_truth: self-reported
+    start_date: 2025-03-04
+    start_date_truth: reported
+    table_note: Inferring from Nate Cavanaugh start
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   - id: detail-neh-justin-fox
     type: detailed
     category: wrecker
@@ -2888,6 +3014,15 @@
     comment: Guessing GSA based on some past reporting
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
+  - id: detail-gsa-imls-fox
+    type: detailed
+    agency: IMLS
+    from: GSA
+    from_truth: self-reported
+    start_date: 2025-03-20
+    start_date_truth: inferred
+    table_note: start inferred from IMLS appearance
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   - id: detail-gsa-mcc-fox
     type: detailed
     category: wrecker
@@ -2897,7 +3032,9 @@
     sort_date: 2025-03-22
     start_date: 2025-03-(22)?
     start_date_truth: guessed
-    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    source:
+    - https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    - https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
     table_note: Linked to MCC by NPR, start date guessed from disruption there
   - id: detail-gsa-wwics-fox
     type: detailed
@@ -5368,6 +5505,13 @@
   category: wrecker
   skill: analyst
   custom_path: "/wreckers/cavanaugh-cronies#jonathan-mendelson"
+  connections:
+  - entity_id: doge-indie-wreckers
+    connection_truth: reported
+    during_doge: true
+    start_date: 2025-04-09
+    start_date_truth: inferred
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   positions:
   - id: gsa-mendelson
     type: appointed
@@ -7062,6 +7206,11 @@
     Security? For being part of Nate Cavanaugh's wreecking crew as they have demolished small independent
     agencies like the USIP or USADF? Was he really serving his country or greedy people with ulterior
     motives? Maybe one day he will figure it out.
+  connections:
+  - entity_id: doge-indie-wreckers
+    connection_truth: reported
+    during_doge: true
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   positions:
   - id: gsa-ethan-shaotran
     type: appointed
@@ -7765,7 +7914,22 @@
   blurb: >-
     Recently an investment banking associate at Salem Partners, he is one of the newer members of Nate
     Cavanaugh's wrecking crew that visited small agencies in April.
+  connections:
+  - entity_id: doge-indie-wreckers
+    connection_truth: reported
+    during_doge: true
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   positions:
+  - id: detail-gsa-mcc-stein
+    type: detailed
+    category: wrecker
+    agency: MCC
+    from: GSA
+    from_truth: reported
+    sort_date: 2025-03-22
+    start_date: 2025-03-(22)?
+    start_date_truth: guessed
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   - id: gsa-stein
     type: appointed
     category: wrecker
@@ -8453,7 +8617,27 @@
   govt_exit_date: 2025-09-XX
   govt_exit_truth: reported
   govt_exit_type: resigned
+  connections:
+  - entity_id: doge-indie-wreckers
+    connection_truth: reported
+    during_doge: true
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   positions:
+  - id: detail-gsa-nea-wood
+    type: detailed
+    agency: NEA
+    from: GSA
+    from_truth: self-reported
+    table_note: Nate Cavanaugh testified that Marshall Wood was the DOGE lead at NEA
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
+  - id: detail-gsa-odni-wood
+    type: detailed
+    agency: ODNI
+    from: GSA
+    from_truth: inferred
+    table_note: According to sworn testimony by Nate Cavanagh, Marshall Wood was the lead of the DOGE
+      team at ODNI
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
   - id: gsa-wood
     type: appointed
     category: wrecker

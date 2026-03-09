@@ -1,0 +1,49 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "Connection between two DOGE people",
+    "description": "Representing a connection between DOGE people",
+    "properties": {
+        "entity_id": {
+            "$ref": "entity-id.json"
+        },
+        "before_doge": {
+            "type": "boolean"
+        },
+        "after_doge": {
+            "type": "boolean"
+        },
+        "during_doge": {
+            "type": "boolean"
+        },
+        "source": {
+            "oneOf": [
+                {"type": "string"},
+                {"type": "array", "items": {"type": "string"}}
+            ]
+        },
+        "description": {
+            "type": "string"
+        },
+        "table_note": {
+            "type": "string"
+        },
+        "start_date": {
+            "$ref": "fuzzy_date.json"
+        },
+        "start_date_truth": {
+            "$ref": "truth_type.json"
+        },
+        "end_date": {
+            "$ref": "fuzzy_date.json"
+        },
+        "end_date_truth": {
+            "$ref": "truth_type.json"
+        },
+        "connection_truth": {
+            "$ref": "truth_type.json"
+        }
+    },
+    "required": ["entity_id", "source", "connection_truth"],
+    "additionalProperties": false
+}

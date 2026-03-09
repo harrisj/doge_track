@@ -22,7 +22,8 @@
         },
         "hostname": {
             "description": "A hostname for the publisher",
-            "type": "string"
+            "type": "string",
+            "format": "hostname"
         }
     },
     "required": [

@@ -42,6 +42,10 @@
             "type": "string",
             "max_length": 30
         },
+        "college_graduation_year": {
+            "type": "integer",
+            "patten": "[19|20]\\d\\d"
+        },
         "custom_path": {
             "description": "A custom path for where the name should link to",
             "type": "string"
@@ -58,6 +62,9 @@
         "govt_exit_truth": {
             "description": "Accuracy of the info",
             "$ref": "truth_type.json"
+        },
+        "source": {
+            "$ref": "source-ref.json"
         },
         "skill": {
             "description": "What is their skill/role within DOGE?",
@@ -89,10 +96,17 @@
                     "Musk family",
                     "Palantir",
                     "SpaceX",
+                    "Special",
                     "Tesla",
                     "Twitter",
                     "Valor"
                 ]
+            }
+        },
+        "connections": {
+            "type": "array",
+            "items": {
+                "$ref": "connection.json"
             }
         },
         "linkedin": {

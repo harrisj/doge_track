@@ -1,0 +1,21 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Source Reference",
+    "oneOf": [
+        {
+            "$ref": "#/$defs/source_url"
+        },
+        {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/source_url"
+            }
+        }
+    ],
+    "$defs": {
+        "source_url": {
+            "type": "string",
+            "format": "uri"
+        }
+    }
+}

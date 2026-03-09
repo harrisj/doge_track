@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "Represents an outside organization that multiple DOGE people might be affiliated with",
+    "properties": {
+        "id": {
+            "$ref": "entity-id.json"
+        },
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "business",
+                "education",
+                "personal",
+                "doge",
+                "other"
+            ]
+        },
+        "website": {
+            "type": "string"
+        }
+    },
+    "required": ["id", "title", "type"],
+    "additionalProperties": false
+}

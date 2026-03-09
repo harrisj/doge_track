@@ -81,7 +81,7 @@ def create_event(event_hash)
   end
 
   names.uniq.each do |name|
-    p = Person[name]
+    p = Person[name] || raise("Unable to find person #{name}")
     e.add_person(p)
   end
 
@@ -123,7 +123,7 @@ people_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'people.yaml'), symboliz
 
 people_yaml.each do |p_hash|
   p_hash[:tech_links] = p_hash[:tech_links].join(', ') if p_hash[:tech_links]
-  p = Person.new(p_hash.except(:positions, :alias, :category))
+  p = Person.new(p_hash.except(:positions, :alias, :category, :connections, :source))
 
   p_hash.fetch(:positions, []).each do |pos_hash|
     pos_hash.transform_keys!(alias: :doge_alias_id, from: :from_agency_id, agency: :agency_id)
