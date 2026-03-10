@@ -190,17 +190,7 @@
             "type": "string"
         },
         "project": {
-            "oneOf": [
-                {
-                    "$ref": "project-id.json"
-                },
-                {
-                    "type": "array",
-                    "items": {
-                        "$ref": "project-id.json"
-                    }
-                }
-            ] 
+            "$ref": "project-ref.json"
         },
         "mou": {
             "description": "A link to a MOU if the position has one",
@@ -214,7 +204,7 @@
     ],
     "dependentRequired": {
         "start_date": ["start_date_truth"],
-        "end_date": ["end_date_truth"],
+        "end_date": ["end_date_truth", "end_type"],
         "nte_date": ["nte_date_truth"],
         "from": ["from_truth"]
     },

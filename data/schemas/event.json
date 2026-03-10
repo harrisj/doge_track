@@ -121,17 +121,7 @@
             "type": "string"
         },
         "project": {
-            "oneOf": [
-                {
-                    "$ref": "project-id.json"
-                },
-                {
-                    "type": "array",
-                    "items": {
-                        "$ref": "project-id.json"
-                    }
-                }
-            ] 
+            "$ref": "project-ref.json"
         },
         "system": {
             "description": "If the event is linked to certain systems, they will be listed here",

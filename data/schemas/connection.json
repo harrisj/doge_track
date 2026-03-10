@@ -7,14 +7,34 @@
         "entity_id": {
             "$ref": "entity-id.json"
         },
-        "before_doge": {
-            "type": "boolean"
+        "role": {
+            "type": "string",
+            "description": "The type of the relationship with the entity",
+            "enum": [
+                "consultant",
+                "employee",
+                "founder",
+                "investor",
+                "member",
+                "leader",
+                "mentor",
+                "mentee",
+                "intern"
+            ]
         },
-        "after_doge": {
-            "type": "boolean"
+        "timeframe": {
+            "type": "string",
+            "description": "When did this connection first start?",
+            "enum": [
+                "before",
+                "after",
+                "during",
+                "unknown"
+            ]
         },
-        "during_doge": {
-            "type": "boolean"
+        "returned": {
+            "type": "boolean",
+            "description": "True if they've returned to the role after DOGE"
         },
         "source": {
             "$ref": "source-ref.json"
@@ -41,10 +61,20 @@
             "$ref": "truth_type.json"
         }
     },
-    "required": ["entity_id", "source", "connection_truth"],
+    "required": [
+        "entity_id",
+        "source",
+        "connection_truth",
+        "timeframe",
+        "role"
+    ],
     "dependentRequired": {
-        "start_date": ["start_date_truth"],
-        "end_date": ["end_date_truth"]
+        "start_date": [
+            "start_date_truth"
+        ],
+        "end_date": [
+            "end_date_truth"
+        ]
     },
     "additionalProperties": false
 }

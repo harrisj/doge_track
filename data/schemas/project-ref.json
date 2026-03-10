@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Project Reference",
+    "oneOf": [
+        {
+            "$ref": "project-id.json"
+        },
+        {
+            "type": "array",
+            "items": {
+                "$ref": "project-id.json"
+            }
+        }
+    ]
+}

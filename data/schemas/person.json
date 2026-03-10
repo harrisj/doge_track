@@ -124,5 +124,8 @@
         "name",
         "sort_name"
     ],
+    "dependentRequired": {
+        "govt_exit_date": ["govt_exit_type", "govt_exit_truth"]
+    },
     "additionalProperties": false
 }
