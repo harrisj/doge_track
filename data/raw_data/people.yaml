@@ -147,7 +147,7 @@
   - Human Capital
   connections:
   - entity_id: human-capital
-    role: founder
+    role: owner
     timeframe: before
     source: https://www.linkedin.com/in/barisakis/
     connection_truth: verified
@@ -246,7 +246,7 @@
   - Andreessen Horowitz
   connections:
   - entity_id: andreessen
-    role: founder
+    role: owner
     connection_truth: verified
     timeframe: before
     source: https://en.wikipedia.org/wiki/Marc_Andreessen
@@ -1148,6 +1148,13 @@
     end_date: 2025-02-XX
     end_date_truth: self-reported
     source: https://www.linkedin.com/in/ashley-boizelle-5836643b/
+  - entity_id: hadrian
+    role: employee
+    connection_truth: self-reported
+    timeframe: after
+    start_date: 2026-01-XX
+    start_date_truth: self-reported
+    source: https://www.linkedin.com/in/ashley-boizelle-5836643b/
   positions:
   - id: gsa-boizelle
     agency: GSA
@@ -1429,7 +1436,7 @@
   govt_exit_type: resigned
   connections:
   - entity_id: special-inc
-    role: founder
+    role: owner
     timeframe: after
     connection_truth: self-reported
     source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
@@ -3211,7 +3218,7 @@
     table_note: Deposition mentioned Armstrong as mentor and father of a friend
     source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   - entity_id: special-inc
-    role: founder
+    role: owner
     connection_truth: self-reported
     timeframe: after
     start_date: 2025-10-01
@@ -3459,7 +3466,7 @@
   - Airbnb
   connections:
   - entity_id: airbnb
-    role: founder
+    role: owner
     timeframe: before
     end_date: 2025-02-(18)~
     end_date_truth: inferred
@@ -3848,7 +3855,7 @@
     timeframe: before
     source: https://projects.propublica.org/elon-musk-doge-tracker/
   - entity_id: valor
-    role: founder
+    role: owner
     connection_truth: reported
     timeframe: before
     returned: true
@@ -5186,10 +5193,20 @@
   tech_links:
   - Andreessen Horowitz
   blurb: >-
-    A managing partner at Andreesen Horowitz, Scott Kupor was advanced by a Senate committee as the nomination
+    A managing partner at Andreessen Horowitz, Scott Kupor was advanced by a Senate committee as the nomination
     for the permanent head of the OPM to replace Charles Ezell. Now that he has finally been confirmed
     to the role in July, many expect him to be the new driver of the administration's efforts to decimate
     the federal workforce.
+  connections:
+  - entity_id: andreessen
+    role: executive
+    timeframe: before
+    start_date: 2009-07-XX
+    start_date_truth: self-reported
+    end_date: 2025-07-09
+    end_date_truth: self-reported
+    connection_truth: reported
+    source: https://www.linkedin.com/in/scottkupor/
   positions:
   - id: opm-kupor
     type: appointed
@@ -5747,6 +5764,27 @@
     Previously a financial analyst at SpaceX, he apparently has been detailed from GSA to the VA in recent
     months.
   category: wrecker
+  connections:
+  - entity_id: spacex
+    timeframe: before
+    role: employee
+    start_date: 2020-01-XX
+    start_date_truth: self-reported
+    end_date: 2022-07-XX
+    end_date_truth: self-reported
+    connection_truth: self-reported
+    table_note: Finance Manager
+    source: https://www.linkedin.com/in/dave-m-a5314791/
+  - entity_id: hadrian
+    timeframe: before
+    connection_truth: self-reported
+    role: executive
+    start_date: 2022-07-XX
+    start_date_truth: self-reported
+    end_date: 2025-02-XX
+    end_date_truth: self-reported
+    table_note: Director of Finance
+    source: https://www.linkedin.com/in/dave-m-a5314791/
   positions:
   - id: gsa-malcher
     type: appointed
@@ -5776,6 +5814,7 @@
   slug: allan-mangaser
   category: wrecker
   skill: analyst
+  linkedin: https://www.linkedin.com/in/allanmangaser/
   tech_links:
   - Palantir
   age: 44
@@ -5783,6 +5822,17 @@
     According to [ProPublica](https://projects.propublica.org/elon-musk-doge-tracker/#Allan-Mangaser),
     he previously worked for Palantir and Theorem, a financial services startup. They report he has met
     with officials from the TSA and CISA
+  connections:
+  - entity_id: palantir
+    timeframe: before
+    role: employee
+    table_note: Technical Support Lead
+    start_date: 2018-04-XX
+    start_date_truth: self-reported
+    end_date: 2022-03-XX
+    end_date_truth: self-reported
+    connection_truth: self-reported
+    source: https://www.linkedin.com/in/allanmangaser/
   positions:
   - id: detail-opm-dhs-mangaser
     type: detailed
@@ -5816,7 +5866,7 @@
     sort_date: 2025-04-17
     table_note: Reportedly met with TSA
     source: https://projects.propublica.org/elon-musk-doge-tracker/
-  - id: opm-mangaser
+  - id: omb-mangaser
     type: appointed
     agency: EOP
     category: support
@@ -5916,9 +5966,9 @@
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
 
-- name: Paul McInery
-  sort_name: McInery
-  slug: paul-mcinery
+- name: Paul McInerny
+  sort_name: McInerny
+  slug: paul-mcinerny
   category: enabler
   skill: executive
   tech_links:
@@ -5929,8 +5979,14 @@
     the new CIO of the Department of the Interior, after the previous one was forced out of the position
     for not granting Stephanie Holmes admin access to the FPDS system that manages payroll for half of
     the federal government.
+  connections:
+  - entity_id: spacex
+    connection_truth: reported
+    role: employee
+    timeframe: before
+    source: https://www.nextgov.com/people/2025/05/spacex-alum-tapped-interior-cio/405060/
   positions:
-  - id: doi-mcinery
+  - id: doi-mcinerny
     type: appointed
     category: enabler
     agency: DOI
@@ -6039,6 +6095,17 @@
   blurb: >-
     A former head of cloud strategy at Palantir, Clark Minor was named the CIO for Health and Human Services
     in February. in that position, he is able to grant access for DOGE staff to many systems.
+  connections:
+  - entity_id: palantir
+    role: employee
+    timeframe: before
+    immediate: true
+    start_date: 2011-06-XX
+    start_date_truth: self-reported
+    end_date: 2024-12-XX
+    end_date_truth: self-reported
+    connection_truth: self-reported
+    source: https://www.linkedin.com/in/clarkminor/
   positions:
   - id: hhs-minor-cto
     type: appointed
@@ -6163,12 +6230,19 @@
   blurb: >-
     The DOGE member who did HR at SpaceX. Nope, not that one. Not that one either. She actually is one
     of four HR specialists who came from SpaceX to OPM, presumably to work on ways to reduce the federal
-    workforces. All of which leaves me wondering how HR is for employees at SpaceX.
+    workforces.
   tech_links:
   - SpaceX
   govt_exit_date: 2025-03-05
   govt_exit_type: resigned
   govt_exit_truth: guessed
+  connections:
+  - entity_id: spacex
+    timeframe: before
+    role: employee
+    connection_truth: reported
+    table_note: HR Director
+    source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   positions:
   - id: opm-bryanne-mlodzianowski
     agency: OPM

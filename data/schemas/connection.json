@@ -13,9 +13,10 @@
             "enum": [
                 "consultant",
                 "employee",
-                "founder",
+                "executive",
                 "investor",
                 "member",
+                "owner",
                 "leader",
                 "mentor",
                 "mentee",
@@ -31,6 +32,10 @@
                 "during",
                 "unknown"
             ]
+        },
+        "immediate": {
+            "type": "boolean",
+            "description": "Was the role immediately before or after DOGE?"
         },
         "returned": {
             "type": "boolean",

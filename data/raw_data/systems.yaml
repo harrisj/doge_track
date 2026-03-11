@@ -522,7 +522,9 @@
 - name: Directory Resource Administrator
   id: dra
   category: security
-  project: personnel
+  project:
+  - personnel
+  - impunity
   link: >-
     https://www.netiq.com/documentation/directory-and-resource-administrator-92/pdfdoc/drauserguide/drauserguide.pdf
   acronym: DRA
@@ -723,7 +725,9 @@
   id: epacs
   acronym: ePACS
   type: internal
-  project: personnel
+  project:
+  - personnel
+  - impunity
   category: security
   link: https://catalog.data.gov/dataset/dol-enterprise-physical-access-control-system-dol-epacs-a41c6
   description: >-
@@ -1769,7 +1773,9 @@
 - name: Microsoft Entra ID
   id: entra
   type: saas
-  project: personnel
+  project:
+  - personnel
+  - impunity
   description: >-
     A centralized identity provider used to support single-sign-on (SSO) and centralize access control
     for agencies.
@@ -1841,7 +1847,9 @@
   id: ms-office
   acronym: Office365
   type: saas
-  project: personnel
+  project:
+  - personnel
+  - impunity
   description: Microsoft Office 365 is used for agency email and knowledge management systems.
   access:
   - id: cisa-office-coristine
@@ -1864,6 +1872,9 @@
   acronym: Sharepoint
   id: sharepoint
   type: saas
+  project:
+  - impunity
+  - personnel
   description: Microsoft service for sharing documents within an organization
   access:
   - id: sharepoint-kliger
@@ -2152,7 +2163,9 @@
   acronym: NUMIDENT
   type: internal
   category: taxes
-  project: fraud
+  project:
+  - fraud
+  - impunity
   description: NUMIDENT files that have been extracted from SSA systems, these contain SSNs for everybody
   agency: SSA
   access:
@@ -2508,7 +2521,10 @@
   acronym: PAC
   description: Possibly a system for controlling and monitoring physical access to CFPB buildings
   category: security
-  project: personnel
+  project:
+  - personnel
+  - elimination
+  - impunity
   agency: CFPB
   access:
   - id: physical-access-kliger
@@ -2538,6 +2554,9 @@
 - name: Power Automate
   id: power-automate
   type: saas
+  project:
+  - personnel
+  - impunity
   link: https://www.microsoft.com/en-us/power-platform/products/power-automate
   description: A Microsoft tool for automating tasks that operate on documents and providing to staff
   access:
