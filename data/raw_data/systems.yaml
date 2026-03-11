@@ -259,6 +259,7 @@
     type: read
     name: Conor Fennessy
     ao_type: cio
+    ao_truth: verified
     date_granted: 2025-02-03
     date_grant_truth: verified
     date_revoked: 2025-04-18
@@ -370,6 +371,7 @@
     ao_name: Antoine McCord
     ao_type: cio
     ao_doge: true
+    ao_truth: reported
     date_granted: 2025-03-17
     date_grant_truth: reported
   - id: uscis-cis-rehling
@@ -379,6 +381,7 @@
     ao_name: Antoine McCord
     ao_type: cio
     ao_doge: true
+    ao_truth: reported
     date_granted: 2025-03-25
     date_grant_truth: reported
 
@@ -440,6 +443,7 @@
     ao_name: Nikki L. DiPalma
     ao_office: Office of Human Capital
     ao_type: deputy
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
 
 - name: Databricks
@@ -552,6 +556,7 @@
     ao_type: deputy
     ao_name: Troy Finnegan
     ao_title: Assistant Secretary for Administration and Management
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
 
 - name: EPA Acquisition System
@@ -895,6 +900,7 @@
     ao_type: deputy
     ao_name: Jarrod Agen
     ao_title: Senior Advisor to the Secretary
+    ao_truth: verified
     bypassed: >-
       CIO, CISO, Deputy Counsel who wanted Director to sign risk-acceptance memo. They are placed on administrative
       leave
@@ -909,6 +915,7 @@
     ao_type: deputy
     ao_name: Jarrod Agen
     ao_title: Senior Advisor to the Secretary
+    ao_truth: verified
     bypassed: >-
       CIO, CISO, Deputy Counsel who wanted Director to sign risk-acceptance memo. They are placed on administrative
       leave
@@ -949,6 +956,7 @@
     date_grant_truth: verified
     ao_type: deputy
     ao_title: Assistant Secretary for Financial Resources (ASFR)
+    ao_truth: verified
     table_note: not granted access to view PII data
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
   - id: fbis-fennessy
@@ -960,6 +968,7 @@
     date_revoked_truth: verified
     ao_type: deputy
     ao_title: Assistant Secretary for Financial Resources (ASFR)
+    ao_truth: verified
     table_note: revoke date likely earlier
     comment: Revocation date not given in filing, likely earlier; not granted access to view PII data
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
@@ -970,6 +979,7 @@
     date_grant_truth: verified
     ao_type: deputy
     ao_title: Assistant Secretary for Financial Resources (ASFR)
+    ao_truth: verified
     table_note: revoke date likely earlier
     comment: only the application and not the database and was not granted access to view PII data
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
@@ -1534,6 +1544,7 @@
   - id: iron-ssa-5
     type: unknown
     date_granted: 2025-03-12
+    date_grant_truth: verified
     alias: SSA-05
     comment: >-
       Leland Dudek approves "Employee 5" access to the IRON Website to investigate people beyond a reasonable
@@ -1682,6 +1693,7 @@
     ao_type: deputy
     ao_name: Antona Bailey
     ao_office: Office of Finance and Procurement
+    ao_truth: verified
     date_granted: 2025-02-07
     date_grant_truth: verified
     date_revoked: 2025-03-28
@@ -1737,6 +1749,7 @@
     ao_name: Mike Russo
     ao_type: cio
     ao_doge: true
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
     name: Jon Koval
   - id: mbr-ssa-7
@@ -1752,6 +1765,7 @@
     ao_name: Mike Russo
     ao_type: cio
     ao_doge: true
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
     name: Marko Elez
   - id: mbr-ssa-9
@@ -1767,6 +1781,7 @@
     ao_name: Mike Russo
     ao_type: cio
     ao_doge: true
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
     name: Payton Rehling
 
@@ -2005,6 +2020,7 @@
     agency: SBA
     ao_name: Michael Jackson
     ao_type: deputy
+    ao_truth: reported
     name: Edward Coristine
     source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
   - id: nfc-insight-sba-park
@@ -2014,6 +2030,7 @@
     agency: SBA
     ao_name: Michael Jackson
     ao_type: deputy
+    ao_truth: reported
     name: Donald Park
     source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
 
@@ -2037,6 +2054,7 @@
     agency: SBA
     ao_name: Michael Jackson
     ao_type: deputy
+    ao_truth: reported
     name: Edward Coristine
     source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
   - id: nfc-reports-sba-park
@@ -2046,6 +2064,7 @@
     agency: SBA
     ao_name: Michael Jackson
     ao_type: deputy
+    ao_truth: reported
     name: Donald Park
     source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
 
@@ -2389,6 +2408,7 @@
     date_granted: 2025-02-03
     date_grant_truth: verified
     date_last_used: 2025-02-05
+    date_used_truth: verified
     date_revoked: 2025-02-06
     date_revoked_truth: verified
     ao_name: Joseph Gioeli III
@@ -2417,6 +2437,7 @@
     date_granted: 2025-02-03
     date_grant_truth: verified
     date_last_used: 2025-02-05
+    date_used_truth: verified
     date_revoked: 2025-02-06
     date_revoked_truth: verified
     ao_name: Joseph Gioeli III
@@ -2501,6 +2522,7 @@
     ao_type: director
     ao_name: Leland Dudek
     ao_doge: true
+    ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
     name: Payton Rehling
   - id: pssnap-moghaddassi
@@ -2510,6 +2532,7 @@
     ao_type: director
     ao_name: Leland Dudek
     ao_doge: true
+    ao_truth: verified
     name: Aram Moghaddassi
     source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
     table_note: >-
@@ -2727,6 +2750,7 @@
     ao_type: deputy
     ao_name: Antona Bailey
     ao_office: Office of Finance and Procurement
+    ao_truth: verified
 
 - name: Secure Payment System
   id: sps
@@ -2769,6 +2793,7 @@
     date_granted: 2025-02-05
     date_grant_truth: verified
     date_last_used: 2025-02-05
+    date_used_truth: verified
     date_revoked: 2025-02-06
     date_revoked_truth: verified
     ao_name: Joseph Gioeli III
@@ -2988,7 +3013,6 @@
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
     alias: OPM-09
-    name:
   - id: usa-performance-opm-10
     type: unknown
     agency: OPM
@@ -3111,6 +3135,7 @@
     date_granted: 2025-01-20
     date_grant_truth: verified
     date_last_used: 2025-02-28
+    date_used_truth: verified
     date_revoked: 2025-03-29
     date_revoked_truth: inferred
   - id: usastaffing-opm-2
@@ -3239,6 +3264,7 @@
   - id: uac-schutt
     type: read
     ao_type: cto
+    ao_truth: verified
     name: Kyle Schutt
     date_granted: 2025-03-21
     date_grant_truth: verified

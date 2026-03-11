@@ -7732,13 +7732,14 @@
   blurb: >-
     "I dropped out of Harvard and came here to serve my country... most of campus hates me now" is what
     Ethan Shaotran boasted about his alma mater in a recent TV interview. He dropped out of the school
-    in his senior year to join DOGE, where he was part of the initial wrecking crew formed in GSA. Why
-    would they hate him? For going to the Department of Education to destroy student loan programs under
-    the cover of fighting fraud? For being part of the same organization that has destroyed medical research
-    grants? For joining the DOGE contingents threatening to make major changes within USPS and Social
-    Security? For being part of Nate Cavanaugh's wreecking crew as they have demolished small independent
-    agencies like the USIP or USADF? Was he really serving his country or greedy people with ulterior
-    motives? Maybe one day he will figure it out.
+    in his senior year to join DOGE, where he was part of the initial wrecking crew formed in GSA. In
+    that role, he was involved in efforts to cancel grants, eliminate staff and shut down multple agencies.
+    He was even involved in efforts at some agencies to cancel grants to universities, including his alma
+    mater. According to his LinkedIn, he left government service in January 2026 and is now working on
+    Aligned, a governance platform at OpenAI.
+  govt_exit_date: 2026-01-XX
+  govt_exit_truth: self-reported
+  govt_exit_type: resigned
   connections:
   - entity_id: doge-indie-wreckers
     role: member
@@ -7753,6 +7754,9 @@
     salary: "$0"
     start_date: 2025-01-20
     start_date_truth: inferred
+    end_date: 2026-01-XX
+    end_date_truth: self-reported
+    end_type: resigned
     comment: Position inferred from early reporting and detailing to Education
     source: https://www.wired.com/story/elon-musk-lackeys-general-services-administration/
   - id: detail-gsa-opm-shaotran
@@ -8013,10 +8017,23 @@
     Alexander Simonpour is a former engineering manager at Tesla who is now working for DOGE and embedded
     among the [wrecking crew at GSA](/people/wreckers/). He was one of the three DOGE staffers who were
     detailed from GSA to NASA in March, and he has also been involved in DOGE's efforts at the USPS. His
-    LinkedIn reports that he left DOGE in August.
+    LinkedIn reports that he left DOGE in August and he has returned to a role at Tesla.
   govt_exit_date: 2025-08-XX
   govt_exit_truth: self-reported
   govt_exit_type: resigned
+  connections:
+  - entity_id: tesla
+    role: employee
+    timeframe: before
+    returned: true
+    immediate: true
+    start_date: 2015-11-XX
+    start_date_truth: self-reported
+    end_date: 2025-03-XX
+    end_date_truth: self-reported
+    connection_truth: self-reported
+    table_note: Returned to role as Staff Program Manager, Chassis & Thermal Engineering after DOGE
+    source: https://www.linkedin.com/in/alexander-simonpour-178a8a121/details/experience/
   positions:
   - id: gsa-simonpour
     type: appointed
@@ -8105,6 +8122,8 @@
   - entity_id: spacex
     role: employee
     timeframe: before
+    returned: true
+    immediate: true
     connection_truth: reported
     source: https://www.washingtonpost.com/business/2025/06/08/doge-elon-musk-exit-trump/
   positions:
@@ -8207,9 +8226,10 @@
   linkedin: https://www.linkedin.com/in/jsolly
   blurb: >-
     A software expert in cloud-native geospatial analysis, he has been working at Social Security in March
-    and apparently has not been listed on the internal directory to keep a low profile. He couldn't help
-    marking the time on his LinkedIn however, noting his DOGE career as "stealth mode” for a “key skunkswork
-    project at a major org."
+    and apparently has not been listed on the internal directory to keep a low profile. At SSA, he reportedly
+    worked on a controversial project to move sensitive NUMIDENT data of everybody's social security numbers
+    into an unsecured cloud environment. He left DOGE in September to go work for the contracting firm
+    Leidos in October as a head of their health initiatives.
   govt_exit_date: 2025-09-XX
   govt_exit_truth: self-reported
   govt_exit_type: resigned
@@ -8411,6 +8431,10 @@
   slug: braden-steffaniak
   category: wrecker
   linkedin: https://www.linkedin.com/in/bradensteffaniak/
+  blurb: >-
+    One of the software engineers who has joined the National Design Studio directly instead of cycling
+    through from DOGE. He previously worked for several finance and life insurance companies as well as
+    Boeing.
   skill: coder
   positions:
   - id: nds-steffaniak
@@ -8506,6 +8530,7 @@
   blurb: >-
     Brian Stube was a "quant" at the the hedge fund Citadel before 2012, which is also where Adam Hoffman
     works. According to his LinkedIn profile, he left DOT (and presumably DOGE) in August.
+  college_graduation_year: 2003
   govt_exit_date: 2025-08-XX
   govt_exit_truth: reported
   govt_exit_type: resigned
@@ -8635,11 +8660,13 @@
   skill: coder
   category: wrecker
   linkedin: https://www.linkedin.com/in/zachary-terrell-81488b19a/
+  college_graduation_year: 2022
   blurb: >-
     Another very recent college graduate, Zach Terrell was involved in several cryptocurrency and Web3-related
     startups before joinging the DOGE wrecking crew at HHS in March. More recently, he was elevated in
     September to the role of CTO, a position which was previously held by fellow DOGE member Clark Minor
     and which would allow him to grant access to sensitive databases and systems to other DOGE personnel.
+    He also seems to have some involvement with the National Design Studio's work.
   positions:
   - id: hhs-terrell
     start_date: 2025-03-06
@@ -8708,8 +8735,9 @@
     the title "Comtesse" because her father is a Count with ties to the Danish royal family. All of these
     are important skills that explain why she needed to be given high-level administrative access to a
     system at DOI that handles payroll for half of the federal government. More recently, she had changed
-    her LinkedIn to add the last name of Akis, suggesting she is married to fellow DOGE supporter Baris
-    Akis (but has since reverted it back).
+    her LinkedIn to add the last name of Akis, suggesting she is possibly married to fellow DOGE supporter
+    Baris Akis? Since DOGE, she has apparently returned to graduate school, seeking a degree in sustainable
+    development.
   positions:
   - id: interior-trampe
     type: unknown
@@ -8783,7 +8811,17 @@
     Coming from Airbnb, he is working alongside fellow alumni Yat Choi and Joe Gebbia on finishing the
     project to digitize OPM's Online Retirement Application system and rush it into production as a DOGE
     win. Like Yat Choi, he also appears to be Canadian which would disqualify him from working for the
-    federal government, so he has been hired as a contractor instead.
+    federal government, so he has been hired as a contractor instead. At AirBnb, he was involved in the
+    Samara project that was also Joe Gebbia's interest.
+  connections:
+  - entity_id: airbnb
+    role: employee
+    start_date: 2010-05-XX
+    start_date_truth: self-reported
+    end_date: 2017-05-XX
+    end_date_truth: self-reported
+    connection_truth: self-reported
+    source: https://www.linkedin.com/in/vilcsak
   positions:
   - id: opm-vilcsak
     agency: OPM
@@ -9182,6 +9220,14 @@
     connection_truth: reported
     timeframe: during
     source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  - entity_id: xai
+    role: employee
+    connection_truth: self-reported
+    timeframe: after
+    table_note: Strategic Finance
+    start_date: 2025-09-XX
+    start_date_truth: self-reported
+    source: https://www.linkedin.com/in/fmarshallwood/
   positions:
   - id: detail-gsa-nea-wood
     type: detailed
@@ -9332,7 +9378,8 @@
   blurb: >-
     Not much is reported about Bridget Youngs' actions for DOGE. Like many of Nate Cavanaugh's wrecking
     crew, she comes from a background in finance and investment, and is young (graduating from college
-    in 2017). She left DOGE in August to join a defense contracting startup.
+    in 2017). She left DOGE in August to found a company manufacturing electrical transformers.
+  college_graduation_year: 2017
   govt_exit_date: 2025-08-XX
   govt_exit_truth: self-reported
   govt_exit_type: resigned
