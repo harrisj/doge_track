@@ -42,6 +42,12 @@ class Person < Sequel::Model
     Date.edtf(positions.first.start_date)
   end
 
+  def end_date
+    return unless govt_exit_date
+
+    Date.edtf(govt_exit_date)
+  end
+
   def sort_date
     if positions.any?
       positions.first.sort_date
