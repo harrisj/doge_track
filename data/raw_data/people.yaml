@@ -116,6 +116,7 @@
   - id: detail-gsa-nlrb-aimonetti
     agency: NLRB
     type: detailed
+    category: wrecker
     from: GSA
     from_truth: reported
     start_date: 2025-03-03
@@ -126,6 +127,7 @@
     type: detailed
     from: GSA
     from_truth: reported
+    category: wrecker
     start_date: 2025-03-04
     start_date_truth: reported
     table_note: Inferring from Cavanaugh start
@@ -382,6 +384,7 @@
   - id: doge-balajadia
     type: appointed
     agency: DOGE
+    category: wrecker
     start_date: 2025-01-24
     start_date_truth: verified
     end_date: 2025-05-28
@@ -1451,6 +1454,7 @@
     agency: ODNI
     from: GSA
     from_truth: inferred
+    category: wrecker
     source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
   - id: gsa-cavanaugh
     type: appointed
@@ -1594,6 +1598,7 @@
     agency: AmeriCorps
     from: GSA
     from_truth: self-reported
+    category: wrecker
     start_date: 2025-04-16
     start_date_truth: inferred
     source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
@@ -1646,6 +1651,7 @@
     agency: DHS
     from: GSA
     from_truth: inferred
+    category: builder
     start_date: 2025-07-(01)~
     start_date_truth: self-reported
     end_date: 2025-08-06
@@ -1658,6 +1664,7 @@
     type: internal
     agency: ICE
     from: DHS
+    category: builder
     from_truth: self-reported
     start_date: 2025-07-(01)~
     start_date_truth: self-reported
@@ -3236,6 +3243,7 @@
   positions:
   - id: detail-gsa-nea-fox
     agency: NEA
+    category: wrecker
     type: detailed
     from: GSA
     from_truth: self-reported
@@ -3263,6 +3271,7 @@
     agency: IAF
     type: detailed
     from: GSA
+    category: wrecker
     from_truth: self-reported
     start_date: 2025-03-(04)~
     sort_date: 2025-03-04
@@ -3273,6 +3282,7 @@
     agency: USIP
     type: detailed
     from: GSA
+    category: wrecker
     from_truth: self-reported
     start_date: 2025-03-04
     start_date_truth: reported
@@ -3294,6 +3304,7 @@
     type: detailed
     agency: IMLS
     from: GSA
+    category: wrecker
     from_truth: self-reported
     start_date: 2025-03-20
     start_date_truth: inferred
@@ -3940,6 +3951,7 @@
     type: promotion
     title: Executive Director, US Investment Accelerator
     agency: Commerce
+    category: builder
     start_date: 2025-03-XX
     start_date_truth: self-reported
     end_date: 2026-02-XX
@@ -5347,6 +5359,7 @@
     type: detailed
     agency: USAID
     from: GSA
+    category: enabler
     reimbursed: false
     from_truth: verified
     start_date: 2025-01-27
@@ -5900,6 +5913,7 @@
     type: appointed
     start_date: 2025-01-20
     start_date_truth: inferred
+    category: unknown
     end_date: 2025-04-13
     end_date_truth: reported
     end_type: fired
@@ -8402,6 +8416,7 @@
     title: Board Member, Fannie Mae/Freddie Mac
     title_type: other
     type: appointed
+    category: unknown
     start_date: 2025-03-17
     start_date_truth: reported
     end_date: 2025-03-18
@@ -9236,11 +9251,13 @@
     agency: NEA
     from: GSA
     from_truth: self-reported
+    category: wrecker
     table_note: Nate Cavanaugh testified that Marshall Wood was the DOGE lead at NEA
     source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
   - id: detail-gsa-odni-wood
     type: detailed
     agency: ODNI
+    category: wrecker
     from: GSA
     from_truth: inferred
     table_note: According to sworn testimony by Nate Cavanagh, Marshall Wood was the lead of the DOGE
