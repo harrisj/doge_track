@@ -3240,15 +3240,6 @@
     from: GSA
     from_truth: self-reported
     source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-  - id: detail-gsa-iaf-fox
-    agency: IAF
-    type: detailed
-    from: GSA
-    from_truth: self-reported
-    start_date: 2025-02-28
-    start_date_truth: inferred
-    table_note: start inferred from DOGE at IAF
-    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   - id: gsa-justin-fox
     type: appointed
     category: wrecker
@@ -3268,6 +3259,16 @@
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     - https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  - id: detail-gsa-iaf-fox
+    agency: IAF
+    type: detailed
+    from: GSA
+    from_truth: self-reported
+    start_date: 2025-03-(04)~
+    sort_date: 2025-03-04
+    start_date_truth: inferred
+    table_note: start inferred from DOGE at IAF, but after start at GSA
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   - id: detail-gsa-usip-fox
     agency: USIP
     type: detailed
