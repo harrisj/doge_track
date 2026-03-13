@@ -18,14 +18,6 @@ class Person < Sequel::Model
     Event.eager_graph(:people, :agencies, :doge_aliases).where({ Sequel[:events][:id] => event_ids }).order(:date).all
   end
 
-  def category
-    if positions.any?
-      positions.first.category
-    else
-      'adjacent'
-    end
-  end
-
   def first_agency
     positions.first.agency if positions.any?
   end

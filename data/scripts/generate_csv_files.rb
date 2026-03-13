@@ -51,7 +51,7 @@ def generate_people_csv
   people = Person.eager(:positions).order_by('sort_name').all
 
   CSV.open(File.join(OUTPUT_DIR, 'people.csv'), 'w') do |csv|
-    csv << %w[name sort_name slug age start_date sort_date start_agency agencies skill category
+    csv << %w[name sort_name slug age start_date sort_date start_agency agencies skill
               blurb govt_exit_date govt_exit_truth govt_exit_type linkedin]
 
     people.each do |person|
@@ -75,7 +75,6 @@ def generate_people_csv
         start_agency,
         agencies,
         person.skill,
-        person.category,
         person.blurb,
         person.govt_exit_date,
         person.govt_exit_truth,

@@ -11,8 +11,4 @@ class DogeAlias < Sequel::Model
   one_to_many :positions
 
   many_to_many :events
-
-  def category
-    'alias'
-  end
 end

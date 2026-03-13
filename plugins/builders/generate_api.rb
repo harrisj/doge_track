@@ -136,7 +136,6 @@ module Builders
 
       out = people.map do |person|
         h = person_ref(person)
-        h[:category] = person.category
         h[:skill] = person.skill
         h[:govt_start_date] = person.positions.any? ? person.positions.first.start_date : nil
         h[:govt_exit_date] = person.govt_exit_date
