@@ -334,6 +334,38 @@
   - DOI
   id: 4duo4Ba7
 
+- date: 2025-02-22
+  type: interagency
+  event: >-
+    The Acting Director of ICE, Caleb Vitello, sends an email to a collection of DOGE staff at the IRS
+    and Treasury requesting that the IRS should provide personal information on approximately 700,000
+    individuals, including their addresses, phone numbers, employers and addresses and SSN or TIN. The
+    message is addressed to Tom Krause at Treasury and Gavin Kliger at IRS, but it also is cc'ed to Aram
+    Moghaddassi at the Department of Labor and Luke Farritor at HHS (it's unclear if they are representing
+    those agencies or just using those emails but are representing DOGE)
+  named:
+  - Tom Krause
+  - Gavin Kliger
+  - Luke Farritor
+  - Aram Moghaddassi
+  interagency_doge_reps:
+    Treasury:
+    - Tom Krause
+    IRS:
+    - Gavin Kliger
+    DOL:
+    - Aram Moghaddassi
+    HHS:
+    - Luke Farritor
+  agency:
+  - IRS
+  - Treasury
+  - DOL
+  - HHS
+  project: immigration
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277519/gov.uscourts.dcd.277519.48.3.pdf
+  id: cY1Z76G2
+
 - date: 2025-02-(26)~
   type: interagency
   fuzz: Date is just given as "Late February"
@@ -2196,3 +2228,20 @@
   - NDS
   - OMB
   id: jQFvQGdW
+
+- date: 2026-02-26
+  type: legal
+  case_no: 1:25-cv-00457
+  event: >-
+    The judge in _Center for Taxpayer Rights v. IRS_ responds to a request by the plaintiffs for expedited
+    discovery of more documents. In her ruling, she notes that she is troubled by the fact that the IRS
+    took 3 weeks to inform the court and plaintiffs about the bug that allowed ICE to present fake addresses
+    in its requests but receive records anyway. She declares that the IRS broke the law "approximately
+    42,695 times," but that the request for expedited discovery is ultimately up to the appeals court
+    hearing the case to decide.
+  project: immigration
+  source: https://www.washingtonpost.com/business/2026/02/26/irs-data-federal-judge-dhs-illegal/
+  agency:
+  - IRS
+  - ICE
+  id: 6E9zrv7x
