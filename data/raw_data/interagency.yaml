@@ -1268,6 +1268,32 @@
   - State
   id: 3OFYYVBv
 
+- date: 2025-06-24
+  type: interagency
+  event: >-
+    The acting counsel of the IRS, Andrew deMello, sends an email to DHS staff declining their request
+    for data sharing. He cites that the request made from DHS lacked information mandated by the Memorandum
+    of Understandng (MOU) between the two agencies, including why the disclosure is needed for a criminal
+    case and the identities of ICE officers making the requests along with a sworn attestation that the
+    info will only be used for judicial proceedings and not enforcement. DOGE staffers Anthony Armstrong
+    and Jon Koval are included in this communication.
+  named:
+  - Anthony Armstrong
+  - Jon Koval
+  project: immigration
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277519/gov.uscourts.dcd.277519.51.1_1.pdf
+  interagency_doge_reps:
+    DOGE:
+    - Anthony Armstrong
+    DHS:
+    - Jon Koval
+  agency:
+  - IRS
+  - DOGE
+  - DHS
+  - ICE
+  id: 5FRg2XYO
+
 - date: 2025-06-25
   type: disruption
   event: >-
@@ -1364,6 +1390,19 @@
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.87.0_2.pdf
   case_no: 1:25-cv-00339
   id: hcQYCnwZ
+
+- date: 2025-06-27
+  type: interagency
+  event: >-
+    Following up on the MOU between ICE and IRS that allowed for limited data sharing of current address
+    information for use in criminal cases, the Acting Director of ICE sends a request for data on approximately
+    1.28 million individuals.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277519/gov.uscourts.dcd.277519.66.1.pdf
+  project: immigration
+  agency:
+  - ICE
+  - IRS
+  id: jVMhFSWC
 
 - date: 2025-06-30
   type: interagency
@@ -1490,6 +1529,19 @@
   - OMB
   id: TXsbSUw4
 
+- date: 2025-08-02
+  type: interagency
+  event: >-
+    Following a newly drafting policy for information sharing between the two agencies, the IRS provides
+    the last known addresses of 47,000 taxpayers to ICE for use in immigration enforcement.
+  comment: FIXME find out reports
+  project: immigration
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277519/gov.uscourts.dcd.277519.74.0_1.pdf
+  agency:
+  - ICE
+  - IRS
+  id: TgFAKvuz
+
 - date: 2025-08-(03)~
   type: interagency
   fuzz: Date given is "a short time after" the AI task force is created
@@ -1510,6 +1562,23 @@
     - Christopher Sweet
   source: https://www.theinformation.com/articles/doge-using-ai-target-sec-regulations-cutting
   id: 6SPuXdLX
+
+- date: 2025-08-07
+  type: interagency
+  event: >-
+    Following an internal validation process, the IRS sends information on 47,289 (3.7%) individuals included
+    in the original request of 1.28 million records made by ICE. After rejecting 2.6% of the original
+    records as insufficient under the terms of the data-sharing agreement, IRS processes attempted to
+    match the rest of the records to individuals through either their Taxpayer Identification Number (usually
+    the same as their Social Security Number) or their address. Out of the matches found by the IRS, 42,695
+    records (90.3%) were retrieved with TIN matching. Regardless of which method was used, matching was
+    only allowed if ICE provided a last-known address for the individual.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277519/gov.uscourts.dcd.277519.66.1.pdf
+  project: immigration
+  agency:
+  - IRS
+  - ICE
+  id: 3dkIQZ73
 
 - date: 2025-08-12
   type: legal
@@ -1782,6 +1851,21 @@
   - USICH
   id: 7mMlUjDV
 
+- date: 2025-11-21
+  type: legal
+  event: >-
+    Judge Collen Kollar-Kotelly grants a summary judgment in _Center for Taxpayer Rights v. IRS_ giving
+    the plaintiffs temporary relief in their lawsuit to stop the IRS from sharing data in bulk with ICE.
+    The judge expressed concerns that that IRS had acted arbitrarily and carelessly in drafting a policy
+    to allow ICE to pull address data on flimsy justifications.
+  project: immigration
+  case_no: 1:25-cv-00457
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277519/gov.uscourts.dcd.277519.74.0_1.pdf
+  agency:
+  - ICE
+  - IRS
+  id: zhwmdne3
+
 - date: 2025-11-23
   type: report
   event: >-
@@ -1928,6 +2012,38 @@
   source: >-
     https://healthexec.com/topics/healthcare-management/healthcare-staffing/hhs-reinstates-hundreds-cdc-workers-fired-doge
   id: 5mueAsNb
+
+- date: 2026-01-23
+  type: interagency
+  event: >-
+    The IRS reports that it has discovered a severe error in the validation code for its data-sharing
+    of taxpayer information with ICE. The system is only supposed to share information if it matches a
+    valid prior address provided for the individual provided by ICE. Instead, the system was just checking
+    if the fields for address and zip code were just not blank, and in some cases ICE was requesting info
+    with addresses that were random information or the locations of jails and detention centers. After
+    reviewing the requests, IRS engineers confirm this affected approximately 5% of the 47,289 records
+    shared with the IRS to ICE.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277519/gov.uscourts.dcd.277519.66.1.pdf
+  project: immigration
+  agency:
+  - ICE
+  - IRS
+  id: 6em8TQ3i
+
+- date: 2026-01-26
+  type: legal
+  event: >-
+    The judge in _Center for Taxpayer Right v. IRS_ allows for a stay in the preliminary injunction against
+    the IRS. Under the terms of this stay, the IRS must notify all parties within 3 days of it it plans
+    to create a new API for retrieving taxpayer info and to notify the court formally if it receives any
+    other requests from DHS. It also allows for either party to drop the stay.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277519/gov.uscourts.dcd.277519.74.0_1.pdf
+  case_no: 1:25-cv-00457
+  agency:
+  - ICE
+  - DHS
+  - IRS
+  id: 2QXqea44
 
 - date: 2026-01-30
   type: report
