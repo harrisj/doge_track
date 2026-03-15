@@ -45,7 +45,7 @@ class Agency < Sequel::Model
                        .eager_graph(:person, :agency, :from_agency, :doge_alias, { sources: :publisher })
                        .where({ Sequel[:positions][:id] => position_ids })
                        .all
-                       .sort_by { |x| x.start_date || '2025-01-20' }
+                       .sort_by { |x| x.start_date.to_s }
     end
 
     @all_positions
@@ -67,7 +67,7 @@ class Agency < Sequel::Model
                                .eager_graph(:person, :agency, :from_agency, :doge_alias, { sources: :publisher })
                                .where({ Sequel[:positions][:id] => position_ids })
                                .all
-                               .sort_by { |x| x.start_date || '2025-01-20' }
+                               .sort_by { |x| x.start_date.to_s }
     end
 
     @all_positions_details

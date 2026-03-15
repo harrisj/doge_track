@@ -5,7 +5,12 @@ require 'edtf'
 # A class for formatting EDTF dates in standard ways
 class EdtfFormat
   def initialize(date, format = :iso, filled = :none)
-    @date = Date.edtf(date)
+    @date = if date.is_a? String
+              Date.edtf(date)
+            else
+              date
+            end
+
     @format = format
     @filled = filled
   end

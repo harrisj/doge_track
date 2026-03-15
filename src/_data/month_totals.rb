@@ -23,24 +23,16 @@ Person.each do |person|
   person.positions.each do |pos|
     next unless pos.start_date
 
-    start_date = Date.edtf(pos.start_date)
+    start_date = pos.start_date
     start_date = chart_start_date if start_date < chart_start_date
 
-    end_date = if !pos.end_date.nil?
-                 Date.edtf(pos.end_date)
-               elsif person.govt_exit_date
-                 Date.edtf(person.govt_exit_date)
-               else
-                 chart_end_date
-               end
+    end_date = pos.end_date || person.govt_exit_date || chart_end_date
 
     person_keys_set.add(start_date.strftime(key_format))
     person_keys_set.merge((start_date..end_date).map { |x| x.strftime(key_format) }.uniq)
   end
 
   person_keys = person_keys_set.to_a.sort
-
-  # puts "#{person.name} #{person_keys}"
 
   person_keys.each do |key|
     totals[key][:count] += 1

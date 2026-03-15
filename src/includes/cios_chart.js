@@ -16,9 +16,11 @@ var options = {
       name: '{{ name }}',
       data: [
         {% positions.each do |pos| %}
-            {
+            {   
+                {% start_date = pos.start_date || pos.sort_date %}
+                {% end_date = pos.end_date || Date.today %}
                 'x': '{{ pos.agency_id }}',
-                'y': [new Date('{{ pos.chart_start_date }}').getTime(), {% if pos.end_date %}new Date('{{ pos.chart_end_date }}').getTime(){% else %}Date.now(){% end %}]
+                'y': [new Date('{{ start_date }}').getTime(), {% if pos.end_date %}new Date('{{ end_date }}').getTime(){% else %}Date.now(){% end %}]
             },
         {% end %}
       ]

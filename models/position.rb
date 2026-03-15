@@ -5,7 +5,12 @@ require 'edtf'
 
 # Represents a single detailing agreement between two agencies
 class Position < Sequel::Model
+  extend EdtfLoader
+
   plugin :auto_validations
+
+  edtf_field :start_date, :end_date, :nte_date
+
   many_to_one :doge_alias
   many_to_one :person, key: :name, primary_key: :name
   many_to_one :agency, graph_join_type: :inner
@@ -20,24 +25,6 @@ class Position < Sequel::Model
 
   def internal_xfer?
     type == 'internal'
-  end
-
-  def chart_start_date
-    if start_date
-      Date.edtf(start_date).to_s
-    elsif sort_date
-      sort_date.to_s
-    else
-      ''
-    end
-  end
-
-  def chart_end_date
-    if end_date
-      Date.edtf(end_date).to_s
-    else
-      Date.today.to_s
-    end
   end
 
   def sort_name

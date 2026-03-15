@@ -10,8 +10,8 @@ my_agency = nil unless my_agency
 %}
 
 {% if events && events.any? %}
-{% events = events.sort_by! {|e| e.sort_date} %}
-{% prior_row_date = Date.edtf!(events[0].date)-1 %}
+{% events = events.sort_by! {|e| e.date.to_s } %}
+{% prior_row_date = events[0].date-1 %}
 
 <table class="my-table-style mb-0 mt-0">
   <thead>
@@ -22,14 +22,13 @@ my_agency = nil unless my_agency
   </thead>
   <tbody>
   {% events.each do |event| %}
-    {% parsed_date = Date.edtf(event.date) %}
-    {% if month_separator && parsed_date.month > prior_row_date.month %}
+    {% if month_separator && event.date.month > prior_row_date.month %}
     <tr>
-      <td class="text-center font-bold italic bg-base-300" colspan="100%">{{ parsed_date.strftime("%B %Y") }}</td>
+      <td class="text-center font-bold italic bg-base-300" colspan="100%">{{ event.date.strftime("%B %Y") }}</td>
     </tr>
     {% end %}
     <tr class="font-sans" id="{{ event.id }}">
-    {% prior_row_date = parsed_date %}
+    {% prior_row_date = event.date %}
       <td class="align-top border-base-300">
           <div class="my-date">{{ render EdtfFormat.new(event.date, :compact_year) }}</div>
           {% if my_agency.nil? || event.agencies != [my_agency] %}<div>{{ event.agencies | agency_links }}</div>{% end %}

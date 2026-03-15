@@ -4,7 +4,11 @@ require 'sequel'
 
 # Represents a single event
 class Event < Sequel::Model
+  extend EdtfLoader
+
   plugin :auto_validations
+
+  edtf_field :date
 
   many_to_many :agencies, graph_join_type: :inner
   many_to_many :doge_aliases
@@ -15,7 +19,8 @@ class Event < Sequel::Model
 
   one_to_many :questions
 
+  # FIXME
   def sort_date
-    Date.edtf(date)
+    date
   end
 end

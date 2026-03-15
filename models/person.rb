@@ -3,15 +3,21 @@
 require 'date'
 require 'sequel'
 require 'edtf'
+require_relative 'edtf_loader'
 
 # Represents a single DOGE member
 class Person < Sequel::Model
+  extend EdtfLoader
+
   plugin :auto_validations
+
+  edtf_field :start_date, :govt_exit_date
 
   one_to_many :doge_aliases, key: :name
   many_to_many :events, left_key: :name, order: :sort_date
   one_to_many :positions, key: :name, order: :sort_date, eager_graph: %i[agency from_agency]
   one_to_many :system_roles, key: :name, order: :date_granted, eager_graph: [:govt_system]
+  one_to_many :affiliations, key: :name, eager_graph: [:entity]
 
   def all_events
     event_ids = Event.select(Sequel[:events][:id]).association_join(:people).where({ Sequel[:people][:name] => name })
@@ -31,13 +37,7 @@ class Person < Sequel::Model
   def start_date
     return unless positions.any?
 
-    Date.edtf(positions.first.start_date)
-  end
-
-  def end_date
-    return unless govt_exit_date
-
-    Date.edtf(govt_exit_date)
+    positions.first.start_date
   end
 
   def sort_date
