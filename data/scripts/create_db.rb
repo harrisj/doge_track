@@ -219,9 +219,41 @@ DB.create_table! :publishers do
   string :hostname, null: false
 end
 
+DB.create_table! :entities do
+  string :id, primary_key: true
+  string :title, null: false
+  string :description
+  string :type, null: false
+  string :website
+  boolean :visible, null: false, default: true
+end
+
+DB.create_table! :affiliations do
+  string :id, primary_key: true
+  foreign_key :entity_id, :entities, type: :string
+  foreign_key :name, :people, type: :string
+  string :role, null: false
+  string :timeframe, null: false
+  boolean :immediate, null: false, default: false
+  boolean :returned, null: false, default: false
+  string :description
+  string :table_note
+  string :start_date
+  string :start_date_truth
+  string :end_date
+  string :end_date_truth
+  string :connection_truth
+end
+
+DB.create_table! :affiliations_sources do
+  foreign_key :affiliation_id, :affiliations, type: :string
+  foreign_key :source_id, :sources, type: :string
+  unique %i[affiliation_id source_id]
+end
+
 DB.create_table! :events_projects do
   foreign_key :event_id, :events, type: :string
-  foreign_key :project_id, projects: :string
+  foreign_key :project_id, :projects, type: :string
   unique %i[event_id project_id]
 end
 

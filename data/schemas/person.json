@@ -48,16 +48,16 @@
         },
         "govt_exit_type": {
             "description": "How they offboarded",
-            "$ref": "end_type.json"
+            "$ref": "end-type.json"
         },
         "govt_exit_date": {
             "description": "A date when they left DOGE entirely",
             "type": "string",
-            "$ref": "fuzzy_date.json"
+            "$ref": "fuzzy-date.json"
         },
         "govt_exit_truth": {
             "description": "Accuracy of the info",
-            "$ref": "truth_type.json"
+            "$ref": "truth-type.json"
         },
         "source": {
             "$ref": "source-ref.json"
@@ -99,10 +99,10 @@
                 ]
             }
         },
-        "connections": {
+        "affiliations": {
             "type": "array",
             "items": {
-                "$ref": "connection.json"
+                "$ref": "affiliation.json"
             }
         },
         "linkedin": {

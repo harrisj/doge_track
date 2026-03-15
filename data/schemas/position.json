@@ -44,7 +44,7 @@
         },
         "from_truth": {
             "description": "How confident are we in this being the source agency for detailing/transfers",
-            "$ref": "truth_type.json"
+            "$ref": "truth-type.json"
         },
         "start_date": {
             "description": "When the term of employment started (might be approximate)",
@@ -52,7 +52,7 @@
         },
         "start_date_truth": {
             "description": "The precision for the start_date",
-            "$ref": "truth_type.json"
+            "$ref": "truth-type.json"
         },
         "end_date": {
             "description": "When the term of employment ended (if a person has left the specific role through departure, promotion or reassignment)",
@@ -60,11 +60,11 @@
         },
         "end_date_truth": {
             "description": "The precision for the end_date",
-            "$ref": "truth_type.json"
+            "$ref": "truth-type.json"
         },
         "end_type": {
             "description": "The type of departure for this position",
-            "$ref": "end_type.json"
+            "$ref": "end-type.json"
         },
         "nte_date": {
             "description": "If the NTE date for the appointment is known, it will be recorded here",
@@ -72,7 +72,7 @@
         },
         "nte_date_truth": {
             "description": "The precision for the nte_date",
-            "$ref": "truth_type.json"
+            "$ref": "truth-type.json"
         },
         "signed_date": {
             "description": "For detailing agreements, when it was signed",

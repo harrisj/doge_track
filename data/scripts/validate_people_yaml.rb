@@ -3,6 +3,7 @@
 require 'yaml'
 require 'date'
 require 'edtf'
+require 'shortuuid'
 
 people_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'people.yaml')
 aliases_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'aliases.yaml')
@@ -43,6 +44,15 @@ people.each do |p|
         end
       else
         p[:positions].append(apos)
+      end
+    end
+  end
+
+  if p.key? :affiliations
+    p[:affiliations].each do |affil|
+      unless affil[:id]
+        id = SecureRandom.uuid
+        affil[:id] = ShortUUID.shorten(id)[0...8]
       end
     end
   end

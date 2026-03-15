@@ -1,9 +1,12 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
-    "title": "Connection between two DOGE people",
-    "description": "Representing a connection between DOGE people",
+    "title": "Affiliation",
+    "description": "Affiliation of a DOGE person to an entity",
     "properties": {
+        "id": {
+            "type": "string"
+        },
         "entity_id": {
             "$ref": "entity-id.json"
         },
@@ -52,24 +55,24 @@
             "type": "string"
         },
         "start_date": {
-            "$ref": "fuzzy_date.json"
+            "$ref": "fuzzy-date.json"
         },
         "start_date_truth": {
-            "$ref": "truth_type.json"
+            "$ref": "truth-type.json"
         },
         "end_date": {
-            "$ref": "fuzzy_date.json"
+            "$ref": "fuzzy-date.json"
         },
         "end_date_truth": {
-            "$ref": "truth_type.json"
+            "$ref": "truth-type.json"
         },
         "connection_truth": {
-            "$ref": "truth_type.json"
+            "$ref": "truth-type.json"
         }
     },
     "required": [
+        "id",
         "entity_id",
-        "source",
         "connection_truth",
         "timeframe",
         "role"

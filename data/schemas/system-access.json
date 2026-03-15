@@ -33,19 +33,19 @@
         },
         "date_requested": {
             "description": "The date access was first requested (if known and predates granting)",
-            "$ref": "fuzzy_date.json"
+            "$ref": "fuzzy-date.json"
         },
         "date_req_truth": {
             "description": "Sourcing on the date_requested",
-            "$ref": "truth_type.json"
+            "$ref": "truth-type.json"
         },
         "date_granted": {
             "description": "The date access was granted",
-            "$ref": "fuzzy_date.json"
+            "$ref": "fuzzy-date.json"
         },
         "date_grant_truth": {
             "description": "Sourcing on the date_granted",
-            "$ref": "truth_type.json"
+            "$ref": "truth-type.json"
         },
         "ao_name": {
             "description": "If known, who granted the access",
@@ -78,7 +78,7 @@
         },
         "ao_truth": {
             "description": "How fuzzy is this AO information",
-            "$ref": "truth_type.json"
+            "$ref": "truth-type.json"
         },
         "bypassed": {
             "description": "What procedures were skipped / staff were sidelined to provide such access",
@@ -86,23 +86,23 @@
         },
         "date_last_used": {
             "description": "The date access was granted",
-            "$ref": "fuzzy_date.json"
+            "$ref": "fuzzy-date.json"
         },
         "date_used_truth": {
             "description": "Sourcing on the date_granted",
-            "$ref": "truth_type.json"
+            "$ref": "truth-type.json"
         },
         "date_revoked": {
             "description": "The date access was granted",
-            "$ref": "fuzzy_date.json"
+            "$ref": "fuzzy-date.json"
         },
         "date_revoked_truth": {
             "description": "Sourcing on the date_granted",
-            "$ref": "truth_type.json"
+            "$ref": "truth-type.json"
         },
         "date_nte": {
             "description": "The date for which access grant is not to exceed. Also used for cases like court declarations where exact revocation hasn't been given",
-            "$ref": "fuzzy_date.json"
+            "$ref": "fuzzy-date.json"
         },
         "never_accessed": {
             "description": "True if the system was reportedly never accessed",
@@ -110,7 +110,7 @@
         },
         "date_nte_truth": {
             "description": "Sourcing on the date_granted",
-            "$ref": "truth_type.json"
+            "$ref": "truth-type.json"
         },
         "source": {
             "description": "Source(s) for the information",

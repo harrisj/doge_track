@@ -27,6 +27,8 @@ ExecutiveOrder.unrestrict_primary_key
 Source.unrestrict_primary_key
 Publisher.unrestrict_primary_key
 Project.unrestrict_primary_key
+Entity.unrestrict_primary_key
+Affiliation.unrestrict_primary_key
 
 all_events = []
 
@@ -118,12 +120,18 @@ projects_yaml.each do |src|
   Project.create(src)
 end
 
+# Load entities
+entities_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'entities.yaml'), symbolize_names: true)
+entities_yaml.each do |src|
+  Entity.create(src)
+end
+
 # Load People
 people_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'people.yaml'), symbolize_names: true)
 
 people_yaml.each do |p_hash|
   p_hash[:tech_links] = p_hash[:tech_links].join(', ') if p_hash[:tech_links]
-  p = Person.new(p_hash.except(:positions, :alias, :connections, :source))
+  p = Person.new(p_hash.except(:positions, :alias, :affiliations, :source))
 
   p_hash.fetch(:positions, []).each do |pos_hash|
     pos_hash.transform_keys!(alias: :doge_alias_id, from: :from_agency_id, agency: :agency_id)
@@ -160,6 +168,17 @@ people_yaml.each do |p_hash|
   end
 
   p.save_changes
+
+  p_hash.fetch(:affiliations, []).each do |a_hash|
+    affiliation = Affiliation.create(a_hash.except(:source).merge({ name: p.name }))
+
+    Array(a_hash[:source]).each do |src|
+      source = Source[src] || raise("Unable to find source #{src}")
+      affiliation.add_source(source)
+    end
+
+    affiliation.save_changes
+  end
 end
 
 aliases_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'aliases.yaml'), symbolize_names: true)
