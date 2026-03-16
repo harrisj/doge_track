@@ -45,6 +45,36 @@ module Builders
       }
     end
 
+    def project_ref(project)
+      {
+        id: project.id,
+        title: project.title,
+        path: api_path("projects/#{project.id}.json")
+      }
+    end
+
+    def project_record(project)
+      project.to_hash
+    end
+
+    def affiliation_record(affiliation)
+      out = affiliation.to_hash
+      out[:entity] = affiliation.entity.to_hash
+      out
+    end
+
+    def entity_ref(entity)
+      out = entity.to_hash
+      out[:path] = api_path("entities/#{entity.id}.json")
+      out
+    end
+
+    def entity_record(entity)
+      out = entity.to_hash
+      out[:affiliations] = entity.affiliations.map(&:to_hash)
+      out
+    end
+
     def access_record(system_role, include_person: true, include_agency: true, include_system: true)
       out = system_role.to_hash.except(:name, :govt_system_id, :agency_id)
       out[:person] = person_ref(system_role.person) if include_person && system_role.person
@@ -60,6 +90,7 @@ module Builders
 
     def system_record(govt_system, include_agency: true, include_roles: true)
       out = govt_system.to_hash.except(:agency_id)
+      out[:projects] = govt_system.projects.map { |p| project_ref(p) }
       out[:agency] = agency_ref(govt_system.agency) if include_agency && govt_system.agency
 
       if include_roles && govt_system.system_roles.any?
@@ -84,6 +115,7 @@ module Builders
         agencies: event.agencies.map { |a| agency_ref(a) },
         sources: event.sources.map { |src| source_record(src) },
         people: event.people.map { |p| person_ref(p) },
+        projects: event.projects.map { |p| project_ref(p) },
         aliases: event.doge_aliases.map { |a| alias_ref(a) }
       }
     end
@@ -154,6 +186,7 @@ module Builders
         h[:events] = person.events.map { |e| event_record(e) }
         h[:positions] = person.positions.map { |p| position_record(p) }
         h[:system_access] = person.system_roles.map { |r| access_record(r) }
+        h[:affiliations] = person.affiliations.map { |a| affiliation_record(a) }
 
         file = site.in_destination_dir('api', 'people', "#{person.slug}.json")
         FileUtils.mkdir_p(File.dirname(file))
@@ -207,6 +240,47 @@ module Builders
       File.write(file, JSON.pretty_generate(out))
     end
 
+    def generate_projects_json
+      file = site.in_destination_dir('api', 'projects.json')
+      projects = Project.eager_graph(:events, :govt_systems).all
+
+      out = projects.map do |project|
+        out = project_ref(project)
+        out[:num_events] = project.events.count
+        out[:num_systems] = project.govt_systems.count
+        out
+      end
+
+      File.write(file, JSON.pretty_generate(out))
+
+      projects.each do |project|
+        file = site.in_destination_dir('api', 'projects', "#{project.id}.json")
+        out = project_record(project)
+        out[:events] = project.events.map { |e| event_record(e) }
+        out[:systems] = project.govt_systems.map { |s| system_record(s) }
+        FileUtils.mkdir_p(File.dirname(file))
+        File.write(file, JSON.pretty_generate(out))
+      end
+    end
+
+    def generate_entities_json
+      file = site.in_destination_dir('api', 'entities.json')
+      entities = Entity.eager_graph(:affiliations).all
+
+      out = entities.map do |entity|
+        entity_ref(entity)
+      end
+
+      File.write(file, JSON.pretty_generate(out))
+
+      entities.each do |entity|
+        file = site.in_destination_dir('api', 'entities', "#{entity.id}.json")
+        out = entity_record(entity)
+        FileUtils.mkdir_p(File.dirname(file))
+        File.write(file, JSON.pretty_generate(out))
+      end
+    end
+
     def build
       hook :site, :post_write do |_|
         generate_agencies_json
@@ -214,6 +288,8 @@ module Builders
         generate_events_json
         generate_systems_json
         generate_doge_aliases_json
+        generate_projects_json
+        generate_entities_json
       end
     end
   end

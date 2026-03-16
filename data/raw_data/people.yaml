@@ -6221,6 +6221,7 @@
   affiliations:
   - entity_id: spacex
     timeframe: before
+    immediate: true
     role: employee
     connection_truth: reported
     table_note: HR Director
@@ -6468,6 +6469,16 @@
   govt_exit_date: 2025-08-04
   govt_exit_truth: inferred
   govt_exit_type: resigned
+  affiliations:
+  - entity_id: banner-vc
+    role: founder
+    timeframe: after
+    immediate: true
+    start_date: 2025-08-XX
+    start_date_truth: self-reported
+    connection_truth: self-reported
+    source: https://www.linkedin.com/in/brooksmorgan/
+    id: 4thDf1Lq
   positions:
   - id: education-employee-4
     type: consultant
@@ -6876,6 +6887,16 @@
   govt_exit_date: 2025-08-XX
   govt_exit_truth: self-reported
   govt_exit_type: resigned
+  affiliations:
+  - entity_id: banner-vc
+    role: founder
+    timeframe: after
+    immediate: true
+    start_date: 2025-08-XX
+    start_date_truth: self-reported
+    connection_truth: self-reported
+    source: https://www.linkedin.com/in/adam-ramada-b0836869/
+    id: 4yyoivTB
   positions:
   - id: doge-adam-ramada
     type: appointed
@@ -7886,6 +7907,7 @@
   - entity_id: tesla
     role: employee
     timeframe: before
+    immediate: true
     connection_truth: self-reported
     start_date: 2017-06-XX
     start_date_truth: self-reported

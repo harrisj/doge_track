@@ -234,8 +234,8 @@ DB.create_table! :affiliations do
   foreign_key :name, :people, type: :string
   string :role, null: false
   string :timeframe, null: false
-  boolean :immediate, null: false, default: false
-  boolean :returned, null: false, default: false
+  boolean :immediate
+  boolean :returned
   string :description
   string :table_note
   string :start_date
