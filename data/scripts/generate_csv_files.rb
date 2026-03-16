@@ -38,8 +38,8 @@ def generate_agencies_csv
         agency.parent_id,
         agency.slug,
         num_events,
-        first_event_date,
-        last_event_date,
+        first_event_date&.edtf,
+        last_event_date&.edtf,
         num_doge,
         first_contact
       ]
@@ -70,13 +70,13 @@ def generate_people_csv
         person.sort_name,
         person.slug,
         person.age,
-        start_date,
+        start_date&.edtf,
         sort_date,
         start_agency,
         agencies,
         person.skill,
         person.blurb,
-        person.govt_exit_date,
+        person.govt_exit_date&.edtf,
         person.govt_exit_truth,
         person.govt_exit_type,
         person.linkedin
@@ -108,13 +108,13 @@ def generate_positions_csv
         pos.doge_alias_id,
         pos.from_agency_id,
         pos.from_truth,
-        pos.start_date,
+        pos.start_date&.edtf,
         pos.start_date_truth,
-        pos.end_date,
+        pos.end_date&.edtf,
         pos.end_date_truth,
         pos.end_type,
         pos.sort_date,
-        pos.nte_date,
+        pos.nte_date&.edtf,
         pos.nte_date_truth,
         pos.signed_date,
         pos.appt_type_code,
@@ -136,7 +136,7 @@ def generate_positions_csv
         pos.table_note,
         pos.replaced_by,
         pos.same_as,
-        pos.person&.govt_exit_date,
+        pos.person&.govt_exit_date&.edtf,
         pos.person&.govt_exit_truth,
         pos.person&.govt_exit_type
       ]
@@ -152,7 +152,7 @@ def generate_events_csv
 
     events.each do |event|
       csv << [
-        event.date,
+        event.date.edtf,
         event.sort_date,
         event.type,
         event.id,

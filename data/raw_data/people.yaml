@@ -17,10 +17,11 @@
   - entity_id: tesla
     role: employee
     timeframe: before
+    immediate: true
     connection_truth: verified
     start_date: 2022-11-XX
     start_date_truth: self-reported
-    source: https://www.linkedin.com/in/daniel-a-38574865/
+    source: https://projects.propublica.org/elon-musk-doge-tracker/
     id: 65mUMVZx
   positions:
   - id: usda-abrahamson
@@ -148,6 +149,7 @@
   - entity_id: human-capital
     role: founder
     timeframe: before
+    immediate: true
     source: https://www.linkedin.com/in/barisakis/
     connection_truth: verified
     id: 9VN7iznQ
@@ -246,6 +248,7 @@
     role: founder
     connection_truth: verified
     timeframe: before
+    immediate: true
     source: https://en.wikipedia.org/wiki/Marc_Andreessen
     id: 57Ieu0EX
   blurb: >-
@@ -356,6 +359,7 @@
   - entity_id: twitter
     role: employee
     timeframe: before
+    immediate: true
     connection_truth: verified
     end_date: 2025-02-05
     end_date_truth: inferred
@@ -409,6 +413,7 @@
   - entity_id: twitter
     role: employee
     timeframe: before
+    immediate: true
     connection_truth: self-reported
     start_date: 2020-12-XX
     start_date_truth: self-reported
@@ -731,6 +736,7 @@
     start_date_truth: self-reported
     connection_truth: self-reported
     timeframe: before
+    immediate: true
     source: https://www.linkedin.com/in/riccardobiasini/
     id: 5eCoLSMg
   - entity_id: tesla
@@ -845,6 +851,7 @@
   affiliations:
   - entity_id: spacex
     role: employee
+    immediate: true
     start_date: 2003-08-XX
     start_date_truth: self-reported
     connection_truth: self-reported
@@ -855,6 +862,7 @@
   - entity_id: twitter
     role: employee
     timeframe: after
+    immediate: true
     table_note: Listed as SVP, HR & Operations
     start_date: 2025-11-XX
     start_date_truth: self-reported
@@ -864,6 +872,7 @@
   - entity_id: xai
     role: employee
     timeframe: after
+    immediate: true
     table_note: Listed as SVP, HR & Operations
     start_date: 2025-11-XX
     start_date_truth: self-reported
@@ -1138,6 +1147,7 @@
     role: employee
     connection_truth: self-reported
     timeframe: before
+    immediate: true
     start_date: 2021-07-XX
     start_date_truth: self-reported
     end_date: 2025-02-XX
@@ -1148,6 +1158,7 @@
     role: employee
     connection_truth: self-reported
     timeframe: after
+    immediate: true
     start_date: 2026-01-XX
     start_date_truth: self-reported
     source: https://www.linkedin.com/in/ashley-boizelle-5836643b/
@@ -1280,6 +1291,7 @@
     connection_truth: self-reported
     role: employee
     timeframe: after
+    immediate: true
     start_date: 2025-11-XX
     start_date_truth: self-reported
     table_note: General Counsel
@@ -1289,6 +1301,7 @@
     connection_truth: self-reported
     role: employee
     timeframe: after
+    immediate: true
     start_date: 2025-11-XX
     start_date_truth: self-reported
     table_note: General Counsel
@@ -1429,6 +1442,7 @@
   - entity_id: special-inc
     role: founder
     timeframe: after
+    immediate: true
     connection_truth: self-reported
     source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
     id: 7eIm41yw
@@ -1715,6 +1729,7 @@
   - entity_id: airbnb
     role: employee
     timeframe: before
+    immediate: true
     connection_truth: self-reported
     source: https://www.linkedin.com/in/yat-choi/
     start_date: 2014-01-XX
@@ -3195,6 +3210,7 @@
     role: founder
     connection_truth: self-reported
     timeframe: after
+    immediate: true
     start_date: 2025-10-01
     start_date_truth: self-reported
     source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
@@ -3445,6 +3461,7 @@
   - entity_id: airbnb
     role: founder
     timeframe: before
+    immediate: true
     end_date: 2025-02-(18)~
     end_date_truth: inferred
     connection_truth: reported
@@ -3833,6 +3850,7 @@
     role: founder
     connection_truth: reported
     timeframe: before
+    immediate: true
     returned: true
     source: https://projects.propublica.org/elon-musk-doge-tracker/
     id: 1vzREYCJ
@@ -3883,6 +3901,7 @@
   - entity_id: morgan-stanley
     role: employee
     timeframe: before
+    immediate: true
     connection_truth: self-reported
     start_date: 1995-05-XX
     start_date_truth: self-reported
@@ -4054,6 +4073,7 @@
     connection_truth: self-reported
     role: employee
     timeframe: before
+    immediate: true
     start_date: 2016-05-XX
     start_date_truth: self-reported
     source: https://www.linkedin.com/in/christina-hanna-75839b41/
@@ -4379,6 +4399,7 @@
   - entity_id: twitter
     role: employee
     timeframe: before
+    immediate: true
     connection_truth: reported
     start_date: 2023-04-XX
     start_date_truth: self-reported
@@ -4527,6 +4548,7 @@
   - entity_id: tesla
     role: employee
     timeframe: before
+    immediate: true
     returned: true
     table_note: VP of IT for AI Infrastructure
     start_date: 2012-10-XX
@@ -4616,6 +4638,8 @@
   - entity_id: spacex
     role: employee
     timeframe: before
+    immediate: true
+    returned: true
     connection_truth: reported
     source: https://www.washingtonpost.com/business/2025/06/08/doge-elon-musk-exit-trump/
     id: 2TpH4dy5
@@ -5038,6 +5062,7 @@
   affiliations:
   - entity_id: valor
     timeframe: before
+    immediate: true
     returned: true
     role: employee
     start_date: 2022-03-XX
@@ -5162,6 +5187,7 @@
   - entity_id: andreessen
     role: executive
     timeframe: before
+    immediate: true
     start_date: 2009-07-XX
     start_date_truth: self-reported
     end_date: 2025-07-09
@@ -5596,6 +5622,7 @@
   - entity_id: valor
     role: employee
     timeframe: after
+    immediate: true
     connection_truth: self-reported
     start_date: 2025-08-XX
     start_date_truth: self-reported
@@ -5690,6 +5717,8 @@
   - entity_id: spacex
     role: employee
     timeframe: before
+    returned: true
+    immediate: true
     connection_truth: reported
     source: https://www.washingtonpost.com/business/2025/06/08/doge-elon-musk-exit-trump/
     id: 3u5cjW8e
@@ -5735,6 +5764,7 @@
     id: 41GKm6t0
   - entity_id: hadrian
     timeframe: before
+    immediate: true
     connection_truth: self-reported
     role: executive
     start_date: 2022-07-XX
@@ -9131,6 +9161,7 @@
     role: employee
     connection_truth: self-reported
     timeframe: after
+    immediate: true
     table_note: Strategic Finance
     start_date: 2025-09-XX
     start_date_truth: self-reported
