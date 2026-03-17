@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.1.2
 info:
   title: DOGE Track API
   description: |-
@@ -371,24 +371,19 @@ components:
       properties:
         id:
           type: string
-          examples: 
-            - USDA
-            - IRS
+          example: USDA
         name:
           type: string
-          examples: 
-            - Department of Agriculture
+          example: Department of Agriculture
         short_name:
           type: string
-          examples: 
-            - Agriculture
+          example: Agriculture
         parent_id:
           type: string
         path:
           description: The location of the full record for the agency
           type: string
-          examples: 
-            - https://dogetrack.info/api/usda.json
+          example: https://dogetrack.info/api/usda.json
       required:
         - id
         - name
