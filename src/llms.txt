@@ -32,6 +32,14 @@ Just remember, **this data is sometimes very messy.** DOGE has purposefully foug
 
 ## Site Overview Pages
 
+{% site.data.page_listing.sections.each do |section| %}
+### {{ section.name }}
+
+{% section.pages.each do |page| %}
+- [{{ page.title }}]({{ page.url }})
+{% end %}
+
+{% end %}
 
 ## DOGE's Projects
 
@@ -57,7 +65,6 @@ Just remember, **this data is sometimes very messy.** DOGE has purposefully foug
 - [The DOGE Timeline](/projects/timeline)
 - [Who Is In DOGE?](/people)
 - [Who is Being Paid?](/people/paid-staff)
-- [Who Has Left?](/people/who-left)
 - [What We Know About DOGE's Federal Details](/people/details)
 - [The Wreckers](/people/wreckers)
 - [Unmasked Aliases](/people/aliases)
@@ -95,10 +102,16 @@ The raw data that is used to generate the site is also available in the project'
 - [roundups.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/roundups.yaml) (DOGE listings from NYT, ProPublica, etc.)
 - [sources.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/sources.yaml)
 - [systems.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/systems.yaml) (includes system access records)
+- [projects.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/projects.yaml)
+- [entities.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/entities.yaml)
+
+All schemas for validating the YAML can be found in [the Github schemas directory](https://github.com/harrisj/doge_track/tree/main/data/schemas)
 
 ## API for Access
 
 Full Swagger documentation is available at [https://dogetrack.info/api/](/api/), but for now it includes the following endpoints:
+
+The OpenAPI specification is available at [https://dogetrack.info/api/openapi.yaml](https://dogetrack.info/api/openapi.yaml)
 
 - [/api/aliases.json](/api/aliases.json) - all the DOGE aliases
 - [/api/agencies.json](/api/agencies.json) - a listing of all agencies with links to further details
@@ -107,3 +120,7 @@ Full Swagger documentation is available at [https://dogetrack.info/api/](/api/),
 - [/api/people.json](/api/people.json) - a listing of all the people with links to further details
 - [/api/people/{slug}.json](/api/people/luke-farritor.json) - information about a specific person
 - [/api/systems.json](/api/systems.json) - all the systems I know about
+- [/api/projects.json](/api/projects.json) - a listing of all of DOGE's projects
+- [/api/projects/{slug}.json](/api/projects/impunity.json) - information about a specific project
+- [/api/entities.json](/api/entities.json) - a listing of all of entities with affiliations
+- [/api/entities/{id}.json](/api/entities/airbnb.json) - information about a specific entity
