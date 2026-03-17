@@ -564,9 +564,16 @@
     category: wrecker
     title: Special Advisor
     title_type: advisor
-    start_date: 2025-03-XX
-    start_date_truth: guessed
-    source: https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
+    start_date: 2025-04-06
+    start_date_truth: verified
+    nte_date: 2026-04-06
+    nte_date_truth: verified
+    salary: "$170,000"
+    pay_grade: EF
+    source:
+    - https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
+    - >-
+      https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
   - id: usda-berry-sr-advisor
     type: converted
     category: wrecker
@@ -579,7 +586,11 @@
     end_date_truth: reported
     end_type: replaced
     replaced_by: usda-berry-cio
-    source: https://www.flickr.com/photos/usdagov/54530624479/in/photostream/
+    salary: "$170,000"
+    source:
+    - https://www.flickr.com/photos/usdagov/54530624479/in/photostream/
+    - >-
+      https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
   - id: usda-berry-cio
     type: promotion
     category: enabler
@@ -1827,21 +1838,43 @@
     type: appointed
     category: wrecker
     agency: USDA
-    title: Senior Team Leader on Government Efficiency
-    start_date: 2025-02-10
+    title: Senior Advisor on Government Efficiency
+    start_date: 2025-02-09
     start_date_truth: verified
-    end_date: 2025-08-XX
-    end_date_truth: self-reported
-    end_type: resigned
+    end_date: 2025-03-17
+    end_date_truth: verified
+    end_type: replaced
+    pay_grade: ES
+    series: '0301'
+    salary: "$170,000"
+    replaced_by: usda-cole-leader
     office: Office of the Secretary of Agriculture
     table_note: LinkedIn profile reports August departure
-    salary: "$170,000"
     source:
     - >-
       https://www.documentcloud.org/documents/25963272-cole-michael-appointees-2025-new-entrant-278-2025-2025-04-03/
     - https://www.linkedin.com/in/michael-cole-714288b9/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - >-
+      https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
+  - id: usda-cole-leader
+    type: promotion
+    category: wrecker
+    agency: USDA
+    title: Senior Team Leader on Government Efficiency
+    start_date: 2025-03-17
+    start_date_truth: verified
+    end_date: 2025-08-XX
+    end_date_truth: self-reported
+    pay_grade: ES
+    series: '0301'
+    salary: "$170,000"
+    office: Immediate Office of the Secretary
+    table_note: Converted to SES non-career
+    end_type: resigned
+    source: >-
+      https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
 
 - name: Miles Collins
   sort_name: Collins
@@ -5462,9 +5495,13 @@
     category: wrecker
     salary: "$142,488"
     title: Advisor on Government Efficiency
-    start_date: 2025-03-XX
+    start_date: 2025-03-17
     start_date_truth: self-reported
     end_date: 2025-12-XX
+    pd_code: '91530968'
+    series: '0301'
+    pay_grade: GS-14/01
+    excepted: true
     end_date_truth: self-reported
     end_type: resigned
     sort_date: 2025-03-15
@@ -5474,6 +5511,8 @@
     - https://www.linkedin.com/in/jeremy-lichtman/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - >-
+      https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
 
 - name: Kendall Lindemann
   sort_name: Lindemann
@@ -7239,14 +7278,20 @@
     category: wrecker
     type: appointed
     title: Special Advisor
-    start_date: 2025-03-XX
+    start_date: 2025-03-28
     start_date_truth: verified
-    sort_date: 2025-03-15
+    nte_date: 2026-03-28
+    nte_date_truth: verified
+    series: '0301'
     salary: "$162,672"
+    pay_grade: EF
+    office: Immediate Office of the Secretary
     source:
     - https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - >-
+      https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
 
 - name: Christopher Roussos
   sort_name: Roussos

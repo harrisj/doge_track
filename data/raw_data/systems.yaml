@@ -2034,6 +2034,37 @@
     name: Donald Park
     source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
 
+- name: National Finance Center Mainframe
+  id: nfc-mainframe
+  acronym: NFC
+  type: ssp
+  category: personnel
+  project: personnel
+  link: https://nfc.usda.gov/
+  description: >-
+    The National Finance Center is a shared-service provider operated by the USDA that handles payroll
+    for 590,000+ Federal employees across multiple agencies. FOIA requests suggest that DOGE already had
+    access to the NFC mainframe by mid-March for at least two people.
+  access:
+  - id: nfc-cole
+    type: read
+    name: Michael Cole
+    date_granted: 2025-02-(09)~
+    date_grant_truth: guessed
+    table_note: FOIA confirms had access on 3/12, but assuming earlier following pattern of DOGE at other
+      agencies
+    source: >-
+      https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
+  - id: nfc-kliger
+    type: read
+    name: Gavin Kliger
+    date_granted: 2025-01-(29)~
+    date_grant_truth: guessed
+    table_note: FOIA confirms had access on 3/12, but assuming earlier following pattern of DOGE at other
+      agencies
+    source: >-
+      https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
+
 - name: National Finance Center Reporting Center
   id: nfc-reports
   acronym: NFC Reports
@@ -3246,6 +3277,39 @@
     ao_truth: verified
     date_granted: 2025-03-25
     date_grant_truth: reported
+
+- name: USDA LincPass Program
+  acronym: LincPass
+  id: lincpass
+  type: internal
+  category: security
+  project:
+  - impunity
+  - personnel
+  link: >-
+    https://www.usda.gov/about-usda/general-information/staff-offices/departmental-administration/office-safety-security-and-protection-ossp/usda-lincpass-program
+  description: The name of the system used to grant access to USDA facilities and information systems.
+  risk: Access to PII of recipients, total control over system/facility access, monitoring of usage
+  agency: USDA
+  access:
+  - id: lincpass-cole
+    type: read
+    name: Michael Cole
+    date_granted: 2025-02-(09)~
+    date_grant_truth: guessed
+    table_note: FOIA confirms had access on 3/12, but assuming earlier following pattern of DOGE at other
+      agencies
+    source: >-
+      https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
+  - id: lincpass-kliger
+    type: read
+    name: Gavin Kliger
+    date_granted: 2025-01-(29)~
+    date_grant_truth: guessed
+    table_note: FOIA confirms had access on 3/12, but assuming earlier following pattern of DOGE at other
+      agencies
+    source: >-
+      https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
 
 - name: Unaccompanied Alien Children (UAC) Portal
   id: uac
