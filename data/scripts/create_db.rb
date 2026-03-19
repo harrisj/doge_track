@@ -128,6 +128,7 @@ DB.create_table! :events do
   string :time
   string :text, null: false
   string :linkified_text
+  boolean :notable, null: false, default: false
   string :fuzz
   string :comment
   string :case_no

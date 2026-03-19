@@ -88,7 +88,7 @@ def create_event(event_hash)
   end
 
   agency_ids.uniq.each do |agency_id|
-    a = Agency[agency_id]
+    a = Agency[agency_id] || raise("Unable to find agency #{agency_id}")
     e.add_agency(a)
   end
 

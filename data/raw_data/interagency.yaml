@@ -4,10 +4,11 @@
 - date: 2025-01-20
   type: official
   event: >-
-    In another executive order EO 14170, Trump declares a hiring freeze and that DOGE will work with OMB
-    and OPM to submit a plan to reduce the size of the government within 90 days
+    In Executive Order 14170, Trump declares a government-wide hiring freeze. He also orders that DOGE
+    will work with OMB and OPM to submit a plan to reduce the size of the government within 90 days
   source: https://www.whitehouse.gov/presidential-actions/2025/01/hiring-freeze/
   project: personnel
+  notable: true
   agency:
   - DOGE
   - OMB
@@ -17,10 +18,10 @@
 - date: 2025-01-(21)~
   type: interagency
   event: >-
-    Justin Fox reports that connected with him before he started work at DOGE. Besides Armstrong, Justin
-    Fox was also communicating with other DOGE members via Signal both in group chats and individually.
-    This appears to be a violation of government records laws for those other staffers who were already
-    working in the federal government.
+    Justin Fox reports that Anthony Armstrong connected with him before he started work at DOGE. Besides
+    Armstrong, Justin Fox was also communicating with other DOGE members via Signal both in group chats
+    and individually. This appears to be a violation of government records laws for those other staffers
+    who were already working in the federal government.
   source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   agency:
   - GSA
@@ -60,6 +61,7 @@
     The State Department issues a memo written by Peter Marocco and signed by Marco Rubio that not only
     puts a halt to future foreign aid but also insists on stop-work orders for ~6200 current grants and
     contracts at USAID.
+  notable: true
   project: spending
   named:
   - Marco Rubio
@@ -92,6 +94,19 @@
   - OPM
   - Energy
   id: 7FBiV0yI
+
+- date: 2025-01-24
+  type: disruption
+  event: >-
+    Treasury Chief of Staff Dan Katz sends an email stating that DOGE staff need to be given immediate
+    access to pause USAID payments issued from Treasury.
+  notable: true
+  project: spending
+  source: https://www.nytimes.com/2025/02/06/us/politics/trump-musk-usaid.html
+  agency:
+  - Treasury
+  - USAID
+  id: 9iHcDkyg
 
 - date: 2025-01-31
   type: interagency
@@ -156,6 +171,7 @@
     but later analysis by SSA staff reveal these were cases of DOGE not understanding how the data was
     structured.
   project: fraud
+  notable: true
   source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
   agency:
   - SSA
@@ -167,7 +183,10 @@
   event: >-
     In a meeting on foreign aid at OMB, Russell Vought stuns staffers by asking them to cut foreign aid
     to the greatest extent possible. When told that the cuts will lead to more people dying, he reportedly
-    nonchalantly replied “you could say that about any of these cuts.”
+    nonchalantly replied “you could say that about any of these cuts.” He also inquires about dismantling
+    the USIP completely. When told it was independent and funded by Congress, he replied, "we'll see what
+    we can do."
+  notable: true
   project:
   - spending
   - elimination
@@ -178,20 +197,8 @@
   - OMB
   - State
   - USAID
-  id: 5x6u5tTI
-
-- date: 2025-02-12
-  type: disruption
-  event: >-
-    In a meeting at the OMB, Russell Vought reportedly asks OMB staffers what options would allow them
-    to dismantle the USIP. When he was told it was independent and funded by Congress, he replied "we'll
-    see what we can do."
-  source: https://www.propublica.org/article/russ-vought-trump-shadow-president-omb
-  project: elimination
-  agency:
-  - OMB
   - USIP
-  id: 39sj0T02
+  id: 5x6u5tTI
 
 - date: 2025-02-13
   type: interagency
@@ -294,6 +301,7 @@
     of all employees and terminating all grants. The demand approval from the board and threaten the board
     will be fired otherwise.
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  notable: true
   project:
   - elimination
   - personnel
@@ -317,6 +325,7 @@
     Several DOGE staff at HHS and DOI are involved in a large meeting related to a contract with the Office
     of Refugee Resettlement (ORR) within HHS. Among other systems, this office maintains the Unaccompanied
     Children Portal, which was of interest to DOGE's immigration focus.
+  notable: true
   named:
   - Tyler Hassen
   - Katrine Trampe
@@ -348,6 +357,7 @@
   - Gavin Kliger
   - Luke Farritor
   - Aram Moghaddassi
+  notable: true
   interagency_doge_reps:
     Treasury:
     - Tom Krause
@@ -379,6 +389,23 @@
   - OPM
   - GSA
   id: 5zOTAHYX
+
+- date: 2025-02-26
+  type: disruption
+  notable: true
+  event: >-
+    The IAF President Sara Aviel learns in the morning that the Senior Procurement Executive at the Treasury
+    had been ordered by DOGE to unilaterally cancel all contracts by the end of business on the following
+    day.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.5_1.pdf
+  project:
+  - spending
+  - elimination
+  case_no: 1:25-cv-00778
+  agency:
+  - IAF
+  - Treasury
+  id: 5ATjrwp0
 
 - date: 2025-02-27
   type: interagency
@@ -445,6 +472,7 @@
     on non-citizen voting in Florida and would like to work with Florida to investigate and prosecute
     these cases."
   project: immigration
+  notable: true
   named:
   - Aram Moghaddassi
   source: https://www.motherjones.com/politics/2025/11/dhs-gathering-drivers-license-save-voter-fraud-crusade/
@@ -484,6 +512,7 @@
     Complying with the demands in EO 14217, USIP leadership submits a letter to OMB asserting that USIP
     is an independent nonprofit organization, not a federal agency and that the measures in the executive
     order do not apply.
+  notable: true
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
   case_no: 1:25-cv-00804
   project: elimination
@@ -532,6 +561,7 @@
     for Scholars in the Smithsonian Institution, the Institute of Museum and Library Services, the United
     States Interagency Council on Homelessness, the Community Development Financial Institutions Fund
     and the Minority Business Development Agency for reduction actions by DOGE.
+  notable: true
   project: elimination
   source: >-
     https://www.whitehouse.gov/presidential-actions/2025/03/continuing-the-reduction-of-the-federal-bureaucracy/
@@ -568,6 +598,7 @@
     because they had allowed trans athletes to participate in sports. This is very much not his area of
     responsibility at the GSA, but he is on the  Task Force to Combat Antisemitism which stripped funding
     from Columbia Univesity.
+  notable: true
   project:
   - dei
   - spending
@@ -648,12 +679,33 @@
     DHS staff could simply provide the names and states of potential targets and get a list of all applicable
     addresses. IRS lawyers are stunned by the possible illegality and continued pressure leads to a series
     of resignations among staff in legal, privacy and IT offices within the IRS.
+  notable: true
   source: https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
   project: immigration
   agency:
   - IRS
   - ICE
   id: CTZmHEIp
+
+- date: 2025-03-25
+  type: interagency
+  interagency_doge_reps:
+    GSA:
+    - Stephen Ehikian
+    USIP:
+    - Nate Cavanaugh
+  case_no: 1:25-cv-00804
+  event: >-
+    Nate Cavanaugh contacts the administrator of the GSA to propose transferring the USIP building to
+    them, arguing that USIP won't need a building because the statute doesn't mandate it should have one
+    or the staffing to fill it.
+  notable: true
+  project: elimination
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.15.3.pdf
+  agency:
+  - USIP
+  - GSA
+  id: mrPV8r2V
 
 - date: 2025-03-31
   type: report
@@ -677,6 +729,7 @@
     Alarmed at the viral spread of DOGE's false claim that 40% of all calls to Social Security are fraud,
     agency staff at SSA draft a public statement to correct the errors in the claim. They are specifically
     ordered by Katie Miller not to release it. She asserts "the number is 40 percent."
+  notable: true
   interagency_doge_reps:
     DOGE:
     - Katie Miller
@@ -693,7 +746,9 @@
   type: disruption
   event: >-
     HHS issues Reduction-in-Force orders for 10,000 employees across many divisions (FDA, CDC, NIH, HHS)
-    in the name of "bureaucratic realignment." Despite RFK's promises, the layoffs do include many scientists
+    in the name of "bureaucratic realignment." Despite RFK's promises to the contrary, the layoffs do
+    include many scientists
+  notable: true
   source: https://www.npr.org/sections/shots-health-news/2025/04/01/g-s1-57485/hhs-fda-layoffs-doge-cdc-nih/
   project: personnel
   agency:
@@ -726,8 +781,9 @@
 - date: 2025-04-04
   type: disruption
   event: >-
-    CISA informs NLRB networking staff that they should drop any investigation and not move forward on
-    any reporting of the suspicious activity at the agency.
+    CISA informs NLRB networking staff that they should drop any investigation into the DOGE team's cybersecurity
+    lapses and not move forward on any reporting of the suspicious activity at the agency.
+  notable: true
   project: impunity
   source: >-
     https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
@@ -742,6 +798,7 @@
     In a 2-1 vote, the 4th U.S. Circuit Court of Appeals lifted a stay against DOGE data access at the
     Treasury, OPM and Department of Education imposed in the case _American Federation of Teachers v.
     Bessent et al_.
+  notable: true
   source: https://storage.courtlistener.com/recap/gov.uscourts.ca4.178115/gov.uscourts.ca4.178115.17.0.pdf
   case_no: 8:25-cv-00430
   agency:
@@ -756,6 +813,7 @@
     The IRS and DHS execute a Memorandum of Understanding (MOU) for data sharing between both agencies.
     Although DOGE is not named specifically in this agreement, ICE is allowed to designate authorized
     individuals to access the shared data. AI usage must also be reviewed first by the IRS.
+  notable: true
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278147/gov.uscourts.dcd.278147.30.1_1.pdf
   case_no: 1:25-cv-00677
   project: immigration
@@ -772,6 +830,7 @@
     After some qualms about its legality, Leland Dudek signs two memos authorizing sharing data from the
     Social Security Administration that would allow DHS and ICE to locate immigrants who had been paying
     taxes to Social Security (despite not being able to collect it).
+  notable: true
   source: https://www.washingtonpost.com/politics/2025/04/12/trump-immigrants-dead-social-security/
   project: immigration
   interagency_doge_reps:
@@ -800,6 +859,24 @@
   - DOGE
   - FCC
   id: 46FT2h6z
+
+- date: 2025-04-09
+  type: onboard
+  event: >-
+    Adam Ramada and Brooks Morgan are part of a cohort of 9 staffers detailed from the Department of Education
+    to the Treasury, under the aegis of supporting federal student aid functions at Treasury.
+  project:
+  - immigration
+  - fraud
+  named:
+  - Adam Ramada
+  - Brooks Morgan
+  source: >-
+    https://www.supremecourt.gov/DocketPDF/24/24A1203/363201/20250613155147555_24A1203_State%20Plaintiffs%20Opp%20to%20Stay-pdfa.pdf
+  agency:
+  - Treasury
+  - Education
+  id: 4omQIu7k
 
 - date: 2025-04-10
   type: disruption
@@ -840,6 +917,7 @@
     Luke Farritor uses his admin access to lock out all government officials at multiple agencies from
     using grants.gov to issue new grants. Instead, all grants must now be sent to a new email address
     which will be reviewed by DOGE staffers before grants can be posted.
+  notable: true
   project: spending
   named:
   - Luke Farritor
@@ -875,6 +953,7 @@
     their addresses, social security numbers, birth and death dates and bank information. Leland Dudek
     reports this request was made via a phone call late on a Saturday night with the justification that
     it was needed for a criminal investigation.
+  notable: true
   named:
   - Leland Dudek
   project: immigration
@@ -883,6 +962,26 @@
   - SSA
   - DHS
   id: 1edZQ68L
+
+- date: 2025-04-16
+  type: interagency
+  event: >-
+    Three DOGE staffers – Marko Elez, Edward Coristine and Joe Gebbia – are reported to be working with
+    staff from DHS, the State Department and USCIS on implementing an application process for a $5 Million
+    "Gold Card" visa. It is unclear what agencies they are working for and how this partnership has been
+    structured.
+  notable: true
+  project: modernization
+  source: https://www.nytimes.com/2025/04/16/us/politics/gold-card-visa-trump-musk.html
+  named:
+  - Marko Elez
+  - Edward Coristine
+  - Joe Gebbia
+  agency:
+  - DOGE
+  - DHS
+  - USCIS
+  id: FMk4mRYA
 
 - date: 2025-04-21
   type: official
@@ -905,6 +1004,7 @@
     govenment, Josh Gruenbaum emails Alexander Simonpour to ask if there are grants that can be revoked
     by NASA. The next day, Simonpour relayed the request to other NASA staffers and then followed up on
     May 8th stating that the White House had imposed a 5pm deadline for the information.
+  notable: true
   source: https://www.thecrimson.com/article/2025/7/17/grant-termination-details-doge/
   project:
   - spending
@@ -943,7 +1043,7 @@
   type: interagency
   event: >-
     A glimpse of Luke Farritor's visible calendar in a Fox News DOGE profile includes a "connect" with
-    OMB about the National Science Foundation
+    OMB about the National Science Foundation.
   interagency_doge_reps:
     NSF:
     - Luke Farritor
@@ -1014,6 +1114,7 @@
     HUD, the Department of Energy and the Department of Education are all terminated. There were 200 grants
     from DOD alone. The stated reasons varied but included that they no longer effectuated the administration's
     priorities or directly accusing Harvard of fostering antisemitism on campus.
+  notable: true
   source: https://www.thecrimson.com/article/2025/7/17/grant-termination-details-doge/
   project:
   - dei
@@ -1074,6 +1175,7 @@
     delivered a blunt message that DOGE was on thin ice with the White House. She also reportedly advised
     that DOGE should strive to collaborate with Cabinet secretaries more instead of pushiing cuts or projects
     on them that they didn't want to do.
+  notable: true
   named:
   - Katie Miller
   - Elon Musk
@@ -1094,6 +1196,7 @@
   event: >-
     In a podcast appearance, Antonio Gracias reported that the Department of Justice had requested for
     DOGE to find "10-20 cases" of alleged noncitizen voting in every state.
+  notable: true
   project: immigration
   named:
   - Antonio Gracias
@@ -1129,6 +1232,7 @@
     After several DOGE staffers expressed concerns that he should not have access to government information
     or continue to direct DOGE staff, Steve Davis reportedly pushes for their firing, calling it an attempted
     coup. Sam Corcos is named as one DOGE staffer who was given the silent treatment by Davis and allies.
+  notable: true
   named:
   - Steve Davis
   - Sam Corcos
@@ -1225,6 +1329,7 @@
     In a 6-3 ruling on an emergency application, the Supreme Court rejected an injunction that prevented
     DOGE from accessing Social Security data. In a setback for privacy advocates, this will allow for
     SSA to share data with DOGE and other agencies, while the case about the legality of that proceeds.
+  notable: true
   source: https://www.nytimes.com/2025/06/06/us/politics/supreme-court-doge-social-security.html
   project:
   - immigration
@@ -1240,6 +1345,7 @@
     Medicaid staff at CMS are ordered by CMS and HHS leadership to immediately share with DHS data from
     Medicaid program in certain states that allow non-US citizens to be enrolled. This information could
     be used by ICE to target and deport immigrants who are legally collecting state benefits.
+  notable: true
   source: https://apnews.com/article/medicaid-deportation-immigrants-trump-4e0f979e4290a4d10a067da0acca8e22
   project:
   - immigration
@@ -1309,6 +1415,7 @@
     case and the identities of ICE officers making the requests along with a sworn attestation that the
     info will only be used for judicial proceedings and not enforcement. DOGE staffers Anthony Armstrong
     and Jon Koval are included in this communication.
+  notable: true
   named:
   - Anthony Armstrong
   - Jon Koval
@@ -1345,11 +1452,11 @@
 - date: 2025-06-25
   type: interagency
   event: >-
-    Although he was considered more friendly to the Trump admininstration and DOGE, Andrew DeMello, the
-    acting general counsel for the IRS refuses to turn over the addresses of 7.3 million taxpayers that
-    had been requested by ICE. He declares there are multiple legal "deficiencies" with the request that
-    do not meet the legal safeguards that were listed in the Memorandum of Understanding (MOU) for this
-    process, which declared that such data could only be shared for open criminal investigations.
+    Andrew DeMello, the acting general counsel for the IRS refuses to turn over the addresses of 7.3 million
+    taxpayers that had been requested by ICE. He declares there are multiple legal "deficiencies" with
+    the request that do not meet the legal safeguards that were listed in the Memorandum of Understanding
+    (MOU) for this process, which declared that such data could only be shared for open criminal investigations.
+  notable: true
   source: https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
   project: immigration
   agency:
@@ -1379,6 +1486,7 @@
     been reversed. Instead, agencies are to return to using the tool like that did previously. This doesn't
     necessarily mean that DOGE or political appointees will not be reviewing grants, but they have no
     longer locked other users out of the system.
+  notable: true
   project: spending
   linked:
   - Luke Farritor
@@ -1459,6 +1567,7 @@
     tool has already made determinations on 1083 decisions at HUD (using Christopher Sweet's work) and
     has also been used for 100% of deregulatory actions at the CFPB. It also states that DOGE lawyers
     James Burnham, Austin Raynor, Jacob Altik and Ashley Boizelle have vetted and endorsed the tool.
+  notable: true
   project: deregulation
   source: https://www.washingtonpost.com/business/2025/07/26/doge-ai-tool-cut-regulations-trump/
   linked:
@@ -1504,6 +1613,7 @@
     all aid to Afghanistan and refused to divert the food to other emergency crises. The cost of destroying
     the biscuits will be $130,000 making this nearly a $1 million dollar loss incurred by DOGE (not to
     mention lives that will be lost).
+  notable: true
   project: spending
   named:
   - Marco Rubio
@@ -1521,6 +1631,7 @@
     information on all 79 million enrollees in Medicaid to Immigration and Customs Enforcement (ICE).
     This information, which includes the addresses and ethnicities of enrollees, will supercharge a surveillance
     machine assembled by DOGE that is being used by ICE to arrest undocumented immigrants (and others).
+  notable: true
   source: https://apnews.com/article/immigration-medicaid-trump-ice-ab9c2267ce596089410387bfcb40eeb7
   project: immigration
   agency:
@@ -1537,6 +1648,7 @@
     for Public Broadcasting, despite concerns from Democrats and two Senate Republicans that its cuts
     are purposefully vague and undermine Congress' role in the budget process.
   source: https://www.nytimes.com/2025/07/17/us/politics/senate-vote-trump-bill-pbs-npr-foreign-aid.html
+  notable: true
   project:
   - spending
   - elimination
@@ -1560,19 +1672,6 @@
   - CFPB
   - OMB
   id: TXsbSUw4
-
-- date: 2025-08-02
-  type: interagency
-  event: >-
-    Following a newly drafting policy for information sharing between the two agencies, the IRS provides
-    the last known addresses of 47,000 taxpayers to ICE for use in immigration enforcement.
-  comment: FIXME find out reports
-  project: immigration
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277519/gov.uscourts.dcd.277519.74.0_1.pdf
-  agency:
-  - ICE
-  - IRS
-  id: TgFAKvuz
 
 - date: 2025-08-(03)~
   type: interagency
@@ -1606,6 +1705,7 @@
     records (90.3%) were retrieved with TIN matching. Regardless of which method was used, matching was
     only allowed if ICE provided a last-known address for the individual.
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277519/gov.uscourts.dcd.277519.66.1.pdf
+  notable: true
   project: immigration
   agency:
   - IRS
@@ -1660,6 +1760,24 @@
   source: https://www.wired.com/story/sweetrex-deregulation-ai-us-government-regulation-doge/
   id: 6mONSb0E
 
+- date: 2025-09-02
+  type: disruption
+  event: >-
+    A new report from the Treasury Inspector General for Tax Administration determined that only 43 out
+    of 7,315 probationary employees fired at the IRS had any documented performance issues. The termination
+    letters to staff were provided by OPM with no changes allowed. Agency staff balked at language in
+    the letter that falsely declared "performance reasons and current mission needs" were the reason for
+    terminations, and the head of IRS's Human Capital was placed on administrative leave for her refusal
+    to sign the letter.
+  notable: true
+  source: >-
+    https://www.icij.org/news/2025/09/watchdog-report-finds-overwhelming-majority-of-irs-employees-fired-by-doge-for-performance-had-no-documented-issues/
+  project: personnel
+  agency:
+  - IRS
+  - OPM
+  id: SiujR5w7
+
 - date: 2025-09-09
   type: legal
   event: >-
@@ -1667,6 +1785,7 @@
     ruling that ordered the Trump administration to immediately pay out $4 billion in funds appropriated
     by Congress for foreign aid. This case will be taken up by the full Court, but there is the risk of
     the Trump administration practicing a "pocket recission" to eliminate the funding.
+  notable: true
   source: https://www.nytimes.com/2025/09/09/us/politics/supreme-court-trump-foreign-aid.html
   project: spending
   agency:
@@ -1719,6 +1838,7 @@
     wildly unclear and demand is inflated because sign-up is through a public web form. This website is
     the first public work of recently-formed National Design Studio, although the previous version of
     the site was built by DOGE too.
+  notable: true
   project: modernization
   source:
   - >-
@@ -1785,6 +1905,7 @@
     Frank Bisignano direct authority over decision-making at the agency while also preserving some amount
     of deniability and allowing the Trump admininistration to once again sidestep the Senate confirmation
     process.
+  notable: true
   source: https://www.washingtonpost.com/business/2025/10/06/irs-ceo-social-security/
   named:
   - Frank Bisignano
@@ -1800,6 +1921,7 @@
     to promote a forthcoming initiative from the White House to cap certain drug prices for private payers.
     This is the fourth website to bear the National Design Studio credit, and like the others it is a
     single-page site with expandable accordion elements of text and an email signup form.
+  notable: true
   project: modernization
   source:
   - https://gizmodo.com/trumprx-is-a-narcissistic-ai-generated-nightmare-2000671309
@@ -1815,12 +1937,12 @@
   type: official
   event: >-
     The Trump Administration announces plans for a digital version of the existing federal voter registration
-    form that would be created by the National Design Studio and would run voter identity and citizenship
-    checks against SAVE and other DHS systems before allowing voters to register. States of course have
-    their own voter registration processes but have accepted the paper federal registration form as well.
-    Notes from the call with National Association of State Election Directors reported that election officials
-    from both parties expressed concern about this plan not complying with state laws. They also reported
-    “the developers do not seem to want to spend the time to understand election official concerns.”
+    form that would be created by the National Design Studio. The system would run voter identity and
+    citizenship checks against SAVE and other DHS systems before allowing voters to register. Notes from
+    the call with National Association of State Election Directors reported that election officials from
+    both parties expressed concern about this plan not complying with state laws. They also reported “the
+    developers do not seem to want to spend the time to understand election official concerns.”
+  notable: true
   project: immigration
   agency:
   - NDS
@@ -1848,6 +1970,18 @@
     https://www.votebeat.org/2025/10/27/trump-administration-proposes-online-federal-voter-registration-form/
   id: 9BB7xvsy
 
+- date: 2025-10-24
+  type: official
+  event: >-
+    The Trump Administration registers the domain [techforce.gov](https://techforce.gov/) and later launches
+    a password-protected site with branding for the National Design Studio on it.
+  source: https://fedscoop.com/white-house-registers-techforce-gov-domain/
+  project: modernization
+  agency:
+  - NDS
+  - OPM
+  id: 24JIYBtH
+
 - date: 2025-10-29
   type: website
   event: >-
@@ -1855,6 +1989,7 @@
     new DC task force. It features a single page of large bold text on a black background with a large
     (possibly AI-generated) picture of Trump on patrol with agents, links to job listings on USA Jobs
     and an email sign-up form. Weirdly, the NDS header also includes a clock.
+  notable: true
   project: modernization
   agency:
   - NDS
@@ -1874,6 +2009,7 @@
     Ruling in _State of Rhode Island v. Trump_, Judge Ryan Jackson grants an order for summary judgment
     finding that EO 14238 is illegal and that the Trump Administration is not allowed to shutter the small
     agencies – the IMLS, MBDA, FMCS and USICH – targeted in the executive order.
+  notable: true
   source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.100.0_1.pdf
   project: elimination
   agency:
@@ -1905,6 +2041,7 @@
     has become more decentralized and that many of its functions have now been taken over by regular agency
     staff. While this might be true for OPM, it's unclear how many DOGE staff are still working across
     the government.
+  notable: true
   source: https://www.reuters.com/world/us/doge-doesnt-exist-with-eight-months-left-its-charter-2025-11-23/
   agency:
   - OPM
@@ -1918,6 +2055,7 @@
     immigrants with ICE, using Medicaid data that has been sourced to the agency from states. Multiple
     states have sued CMS over a previous order mandating these data-sharing arrangements, precisely because
     they were concerned about how the data might be used.
+  notable: true
   source: https://public-inspection.federalregister.gov/2025-20911.pdf
   project: immigration
   agency:
@@ -1934,6 +2072,7 @@
     of their work: bold fonts on a black background with animations all on a single page with no navigation
     and an email signup form. According to Edward Coristine's twitter account, this page took 3 weeks
     to make.
+  notable: true
   project:
   - modernization
   named:
@@ -1954,6 +2093,7 @@
   event: >-
     The State Department posts photos showing that Donald Trump's name has now been put on the US Institute
     of Peace facade, with the post acclaiming him as "the greatest dealmaker in our nation’s history."
+  notable: true
   project: elimination
   agency:
   - State
@@ -1971,6 +2111,7 @@
       originally developed by DOGE. More importantly, it now has a more
       detailed signup form that promises payment processing of the $15,000
       processing fee as well. With this change, NDS has added a second page.
+  notable: true
   project: modernization
   agency:
   - NDS
@@ -1989,6 +2130,7 @@
     USDS, which were respectively completely destroyed and hollowed out by DOGE. The site features the
     typical design of NDS websites – a single page of large bold fonts on a black background with accordion
     elements to expand information. It also features AI images of a figure with a computer monitor head.
+  notable: true
   project: modernization
   agency:
   - NDS
@@ -2005,6 +2147,7 @@
     was passed by Congress but presented as if it's a result of Trump's personal largesse. It conveys
     a softer tone than many other of their sites, but still sticks to the same convention of a single
     page of text, with a FAQ presented as expandable accordions and a form to sign up for a mailing list.
+  notable: true
   project: modernization
   source:
   - https://www.cbsnews.com/news/bessent-unveils-trump-accounts-website-to-encourage-children-to-save/
@@ -2020,6 +2163,7 @@
     The National Design Studio launches [realfood.gov](https://realfood.gov/) with HHS. Evoking more of
     a nostalgic and warm tone rather than the technocratic darkness of some prior sites, it is still a
     one-page site with large bold text, expandable accordions but now also with some scrolling animation.
+  notable: true
   project: modernization
   source:
   - >-
@@ -2106,6 +2250,7 @@
     Apple Store-style titles and text styling alongside gilt images of an American map and an eagle and
     bombastic language extolling Trump himself. In a first for NDS sites, it also features a site search
     to look up specific medications, each of which has their own page URL.
+  notable: true
   project: modernization
   agency:
   - HHS
@@ -2173,6 +2318,7 @@
     found in other design systems like the [US Web Design System](https://designsystem.digital.gov/) and
     it has poor scores for accessibility. Nevertheless, with this launch, the National Design Studio has
     rebuilt a site with dozens of pages and has also implemented a site search for the first time.
+  notable: true
   source: https://www.cio.gov/
   project: modernization
   agency:
@@ -2205,6 +2351,7 @@
     Service (TTS) at GSA, replacing Thomas Shedd in the role. Shedd has seemingly been demoted to a new
     role of Senior Advisor for Fraud Prevention. Greg Barbaccia is still serving in the role of CIO for
     USAID as well.
+  notable: true
   source: https://www.govexec.com/management/2026/02/federal-cio-tapped-dual-hatted-role-gsa/411543/
   named:
   - Greg Barbaccia
@@ -2239,6 +2386,7 @@
     in its requests but receive records anyway. She declares that the IRS broke the law "approximately
     42,695 times," but that the request for expedited discovery is ultimately up to the appeals court
     hearing the case to decide.
+  notable: true
   project: immigration
   source: https://www.washingtonpost.com/business/2026/02/26/irs-data-federal-judge-dhs-illegal/
   agency:
@@ -2257,6 +2405,7 @@
     in the Department of Energy, Treasury and State have been eliminated or were sidelined from the decision
     to go to war.
   source: https://www.notus.org/trump-white-house/trump-doge-cuts-middle-eastern-oil-gas-crises
+  notable: true
   project:
   - personnel
   - elimination
@@ -2265,3 +2414,27 @@
   - Treasury
   - Energy
   id: 6QypxpY2
+
+- date: 2026-03-17
+  type: official
+  event: >-
+    Continuing on a Trump Administration plan to consolidate and centralize HR for all federal agencies
+    within OPM, Scott Kupor announces a new "Federal HR 2.0" pilot program with several agencies. Under
+    the new shared services model, OPM will take over roles like performance management, onboarding, payroll,
+    workforce planning, recruitment and hiring from agency staff. This is presented as a move for greater
+    efficiency, but it would also give OPM the centralized power to fire staff and eliminate departments
+    that DOGE wanted. The pilot for this new program will start in Fiscal Year 2027 (October).
+  source: >-
+    https://www.opm.gov/chcoc/latest-memos/modernizing-hr-services-by-establishing-the-opm-hr-shared-service-center.pdf
+  named:
+  - Scott Kupor
+  project:
+  - personnel
+  - elimination
+  agency:
+  - OPM
+  - CFPB
+  - HUD
+  - VA
+  - FHFA
+  id: 762i3tC4

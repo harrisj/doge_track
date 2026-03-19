@@ -31,6 +31,10 @@
             "type": "string",
             "description": "For making any comments about the event notes"
         },
+        "notable": {
+            "type": "boolean",
+            "description": "Event should appear in big timeline if true"
+        },
         "agency": {
             "description": "Can be a single agency or an array of agencies affected/involved in the event",
             "anyOf": [
