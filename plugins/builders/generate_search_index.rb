@@ -32,11 +32,12 @@ module Builders
     end
 
     def event_record(event)
+      agencies_list = event.agencies.map(&:short_name).join(', ')
       {
         id: event.id,
         type: 'Event',
-        title: "#{event.date} #{event.type}",
-        agency: event.agencies.map(&:short_name).join(', '),
+        title: "Event #{event.date} #{agencies_list}",
+        agency: agencies_list,
         name: (event.people.map(&:name) + event.doge_aliases.map(&:id)).join(','),
         content: Sanitize.fragment(event.linkified_text),
         url: "/all/events##{event.id}"
