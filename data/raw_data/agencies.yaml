@@ -3590,10 +3590,14 @@
   slug: energy
   page_slug: energy
   blurb: >-
-    Despite its name, the Department of Energy isn't just a government agency in charge of energy suppy
-    and efficiency. It actually is the agency responsible for America's nuclear weapon arsenal. Which
-    is why there has been no amount of consternation that DOGE may have posted two of its engineers into
-    systems that contain highly classified information.
+    DOGE has been involved in several efforts by the Trump Administration to "unleash American energy
+    dominance" through aggressive deregulation. These started at the Department of the Interior, which
+    regulates drilling and mining, but DOGE's activities at the Department of Energy have ramped up since
+    a series of executive orders in late May 2025 severely diminished the independence of the Nuclear
+    Regulatory Commission. Now, the NRC is supposed to rubber stamp the Department of Energy's directives,
+    and the Department of Energy's directive is to reduce regulations and increase support for new nuclear
+    energy startups.
+  blurb_date: 2026-03-26
   doge_base: true
   events:
   - date: 2025-01-22
@@ -3641,6 +3645,21 @@
     source: https://www.nextgov.com/people/2025/03/energy-appoints-twitter-google-alum-new-cio/403717/
     agency: Energy
     id: 2nHD9gyo
+  - date: 2025-03-17
+    type: disruption
+    event: >-
+      Acting General Counsel David Taggart at the Department of Energy issues a memo stating that all
+      DOGE spreadsheets being used to determine which grants will be cut at the agency should be designated
+      as "legal privilege" documents. This classification is meant to prevent the documents from being
+      shared in legal disclosures or FOIA responses.
+    named:
+    - David Taggart
+    source: https://www.axios.com/pro/energy-policy/2025/03/21/energy-department-memo-doge-cuts
+    project:
+    - spending
+    - impunity
+    agency: Energy
+    id: 4NFT0nBr
   - date: 2025-04-01
     type: disruption
     project: personnel
@@ -7785,7 +7804,7 @@
   id: NRC
   short_name: NRC
   slug: nrc
-  page_slug: independent#regs
+  page_slug: energy
   events:
   - date: 2025-05-20
     type: official
@@ -7812,7 +7831,7 @@
     - personnel
     agency: NRC
     id: 6oj0XhzA
-  - date: 2025-05-(23)~
+  - date: 2025-06-(02)~
     type: action
     event: >-
       In a meeting shortly after Trump signed executive orders relating to the NRC, DOGE staffer Adam
@@ -7823,7 +7842,10 @@
     named:
     - Adam Blake
     project: impunity
-    source: https://www.eenews.net/articles/doge-told-regulator-to-rubber-stamp-nuclear/
+    fuzz: Meeting date just given as "early June"
+    source:
+    - https://www.eenews.net/articles/doge-told-regulator-to-rubber-stamp-nuclear/
+    - https://www.eenews.net/articles/how-the-nrc-lost-its-independence/
     agency: NRC
     id: 2QEcj42r
   - date: 2025-06-16

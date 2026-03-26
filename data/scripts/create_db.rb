@@ -14,6 +14,7 @@ DB.create_table! :agencies do
   boolean :doge_base, null: false, default: false
   string :blurb
   string :linkified_blurb
+  date :blurb_date
   string :parent_id
   boolean :linkify, default: true, null: false
 end

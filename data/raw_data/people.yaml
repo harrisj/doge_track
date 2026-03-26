@@ -477,7 +477,9 @@
     start_date: 2025-07-(11)?
     start_date_truth: guessed
     table_note: guessing detail start similar to Adam Blake
-    source: https://www.linkedin.com/in/gehidyyevj/
+    source:
+    - https://www.linkedin.com/in/gehidyyevj/
+    - https://www.propublica.org/article/trump-nuclear-power-nrc-safety-doge-vought
   - id: doe-bansal-ai
     agency: Energy
     type: promotion
@@ -1823,6 +1825,52 @@
     - https://www.nytimes.com/2025/06/07/us/politics/trump-musk-doge-interior-epa.html
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+
+- name: Seth Cohen
+  sort_name: Cohen
+  slug: seth-cohen
+  skill: lawyer
+  linkedin: https://www.linkedin.com/in/seth-cohen-091538101/
+  age: 31
+  blurb: >-
+    Identified by ProPublica as a new DOGE representative within the Nuclear Regulatory Commission, he
+    is a lawyer with five years of work experience and 0 years of nuclear regulatory experience.
+  positions:
+  - id: energy-cohen
+    category: wrecker
+    agency: Energy
+    type: appointed
+    title: Special Counsel
+    start_date: 2025-05-XX
+    start_date_truth: self-reported
+    end_date: 2025-10-XX
+    end_date_truth: self-reported
+    end_type: replaced
+    replaced_by: energy-chief-counsel-cohen
+  - id: energy-chief-counsel-cohen
+    type: appointed
+    agency: Energy
+    category: enabler
+    title: Chief Counsel for Nuclear Policy
+    start_date: 2025-10-XX
+    start_date_truth: self-reported
+    source:
+    - https://www.propublica.org/article/trump-nuclear-power-nrc-safety-doge-vought
+    - https://www.linkedin.com/in/seth-cohen-091538101/
+  - id: nrc-cohen
+    type: detailed
+    from: Energy
+    from_truth: inferred
+    category: wrecker
+    title: Senior Advisor
+    title_type: advisor
+    agency: NRC
+    start_date: 2026-06-XX
+    start_date_truth: self-reported
+    table_note: Only given as some time in the summer of 2025
+    source:
+    - https://www.propublica.org/article/trump-nuclear-power-nrc-safety-doge-vought
+    - https://www.linkedin.com/in/seth-cohen-091538101/
 
 - name: Michael Cole
   sort_name: Cole
@@ -3448,6 +3496,15 @@
     sort_date: 2025-05-15
     table_note: Named in ProPublica roundup, start date guessed
     source: https://projects.propublica.org/elon-musk-doge-tracker/
+  - id: nrc-gallagher
+    agency: NRC
+    type: detailed
+    from: GSA
+    start_date: 2025-10-XX
+    start_date_truth: reported
+    from_truth: guessed
+    table_note: Reportedly sent to keep an eye on new rules being developed by NRC
+    source: https://www.propublica.org/article/trump-nuclear-power-nrc-safety-doge-vought
 
 - name: Mattieu Gamache-Asselin
   sort_name: Gamache-Asselin
@@ -8668,6 +8725,29 @@
     title: Special Assistant
     agency: HUD
 
+- name: David Taggart
+  sort_name: Taggart
+  slug: david-taggart
+  linkedin: https://www.linkedin.com/in/david-r-taggart-aba0123b/
+  skill: lawyer
+  positions:
+  - id: energy-taggart
+    agency: Energy
+    type: appointed
+    start_date: 2025-02-XX
+    start_date_truth: guessed
+    title: Acting General Counsel
+    category: enabler
+    source: https://www.axios.com/pro/energy-policy/2025/03/21/energy-department-memo-doge-cuts
+  - id: nrc-taggart
+    agency: NRC
+    type: appointed
+    title: Acting General Counsel
+    category: enabler
+    start_date: 2025-08-XX
+    start_date_truth: reported
+    source: https://www.propublica.org/article/trump-nuclear-power-nrc-safety-doge-vought
+
 - name: Zach Terrell
   sort_name: Terrell
   slug: zach-terrell
@@ -8854,6 +8934,38 @@
     source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
     title: Senior Technologist
     title_type: advisor
+
+- name: Sydney Volanski
+  sort_name: Volanski
+  slug: sydney-volanski
+  skill: lawyer
+  age: 30
+  linkedin: https://www.linkedin.com/in/sydney-volanski/
+  blurb: >-
+    Originally a software engineer with a degree in Computer Science from MIT, Sidney Volanski went to
+    law school afterwards to work for conservative organizations. In high school, she received national
+    fame for a campaign against the Girl Scouts for promoting “Marxists, socialists and advocates of same-sex
+    lifestyle.”
+  positions:
+  - id: eop-volanski
+    agency: EOP
+    type: appointed
+    category: wrecker
+    start_date: 2025-03-XX
+    title: Associate Counsel
+    start_date_truth: self-reported
+    sort_date: 2025-03-15
+    source: https://www.linkedin.com/in/sydney-volanski/
+  - id: nrc-volanski
+    agency: NRC
+    type: detailed
+    from: EOP
+    category: wrecker
+    from_truth: inferred
+    start_date: 2025-10-XX
+    start_date_truth: guessed
+    table_note: Just mentioned as supervising new rules at NRC starting in October
+    source: https://www.propublica.org/article/trump-nuclear-power-nrc-safety-doge-vought
 
 - name: Cary Volpert
   sort_name: Volpert
