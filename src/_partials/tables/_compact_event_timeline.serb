@@ -22,7 +22,7 @@ my_agency = nil unless my_agency
   </thead>
   <tbody>
   {% events.each do |event| %}
-    {% if month_separator && event.date.month > prior_row_date.month %}
+    {% if month_separator && (event.date.strftime("%Y-%m") > prior_row_date.strftime("%Y-%m")) %}
     <tr>
       <td class="text-center font-bold italic bg-base-300" colspan="100%">{{ event.date.strftime("%B %Y") }}</td>
     </tr>
