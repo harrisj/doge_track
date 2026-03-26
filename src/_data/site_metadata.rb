@@ -10,6 +10,6 @@
   tagline: 'Tracking the Damage to Our Government',
   email: 'mail@jacobharr.is',
   description: 'A website tracking the various activities of the DOGE wrecking crew across government that is automatically regenerated as new data is added.',
-  vacation: true,
+  vacation: false,
   generated: Time.now
 }
