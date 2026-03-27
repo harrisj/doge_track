@@ -35,25 +35,32 @@ gem 'puma', '< 7'
 # gem "nokogiri", "~> 1.13"
 
 # Or for faster parsing of HTML-only resources via Inspectors, use Nokolexbor:
-# gem "nokolexbor", "~> 0.4"
+gem 'nokolexbor', '~> 0.4'
 
+gem 'bridgetown-quick-search', '~> 3.0'
 gem 'bridgetown-seo-tag', '~> 7.0'
+gem 'bridgetown_sequel', '~> 1.1'
 gem 'bridgetown-sitemap', '~> 3.0'
 gem 'edtf', '~> 3.2'
 gem 'edtf-humanize', '~> 2.3'
 gem 'kramdown'
 gem 'nokogiri', '~> 1.18'
 gem 'racc', '~> 1.8'
-gem 'rubocop', '~> 1.75', group: :development
-gem 'rubocop-sequel', '~> 0.4.1', group: :development
+gem 'require_all', '~> 3.0'
+gem 'sanitize', '~> 7.0'
 gem 'sequel', '~> 5.92'
 gem 'shortuuid', '~> 0.6.0'
 gem 'sqlite3', '~> 2.6'
 
-gem 'bridgetown-quick-search', '~> 3.0'
+group :test do
+  gem 'minitest'
+  gem 'minitest-reporters'
+  gem 'minitest-sequel', '~> 0.3.2'
+  gem 'rack-test'
+end
 
-gem 'bridgetown_sequel', '~> 1.1'
-
-gem 'require_all', '~> 3.0'
-
-gem 'sanitize', '~> 7.0'
+group :development do
+  gem 'rubocop', '~> 1.75'
+  gem 'rubocop-minitest', '~> 0.39.1'
+  gem 'rubocop-sequel', '~> 0.4.1'
+end

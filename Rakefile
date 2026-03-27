@@ -19,6 +19,11 @@ desc 'Build the site in a test environment'
 task :test do
   ENV['BRIDGETOWN_ENV'] = 'test'
   Bridgetown::Commands::Build.start
+
+  require 'minitest/test_task'
+  Minitest::TestTask.create(:test) do |t| # add on to the test task
+    t.warning = false
+  end
 end
 
 desc 'Runs the clean command'
