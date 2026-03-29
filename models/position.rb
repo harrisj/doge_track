@@ -38,4 +38,13 @@ class Position < Sequel::Model
   def sort_parent_agency
     agency.parent || agency
   end
+
+  # Query helpers
+  def self.start_in_year_month(year, month)
+    Position.where(Sequel.like(:start_date, "#{year}-#{format('%02d', month)}%")).order_by(&:start_date)
+  end
+
+  def self.end_in_year_month(year, month)
+    Position.where(Sequel.like(:end_date, "#{year}-#{format('%02d', month)}%")).order_by(&:end_date)
+  end
 end

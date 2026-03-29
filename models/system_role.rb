@@ -11,4 +11,17 @@ class SystemRole < Sequel::Model
   many_to_one :person, key: :name
   many_to_one :doge_alias
   many_to_many :sources
+
+  # Query helpers
+  def self.granted_in_year_month(year, month)
+    SystemRole.eager_graph(:govt_system, :person,
+                           :sources).where(Sequel.like(:date_granted,
+                                                       "#{year}-#{format('%02d', month)}%")).order_by(:date_granted)
+  end
+
+  def self.revoked_in_year_month(year, month)
+    SystemRole.eager_graph(:govt_system, :person,
+                           :sources).where(Sequel.like(:date_revoked,
+                                                       "#{year}-#{format('%02d', month)}%")).order_by(:date_revoked)
+  end
 end

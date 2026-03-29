@@ -1,0 +1,6 @@
+<div class="grid grid-cols-[200px_auto] gap-2">
+  {% each_date do |rec| %}
+     <div><date>{{ rec.date }}</date></div>
+     <div>{{ render rec }}</div>
+  {% end %}
+</div>

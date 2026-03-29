@@ -1,0 +1,15 @@
+<div class="font-sans" id="{{ @event.id }}">
+  {%@ 'atoms/float_source_box', sources: @event.sources %}
+  <div class="inline text-base-content/75">{{ render EventLabel.new(@event.type, :responsive) }}</div>
+  {{ @event.linkified_text | raw }}
+  {% if @event.fuzz %} <span class="italic">(fuzz: {{ @event.fuzz | md | strip_p }})</span>{% end %}
+  {% if @event.type == 'interagency' && (@event.people.any? || @event.doge_aliases.any?) %}
+    {%@ 'molecules/event_directory_display', event: @event %}
+  {% end %}
+  {% if @event.type == 'directory' %}
+    {%@ 'molecules/event_directory_display', event: @event %}
+  {% end %}
+  {% if @event.projects.any? %}
+    {%@ 'molecules/event_projects_display', event: @event %}
+  {% end %}
+</div>
