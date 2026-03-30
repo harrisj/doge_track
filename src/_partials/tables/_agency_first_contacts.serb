@@ -10,7 +10,7 @@
      ac[:people_names] = positions.reject {|pos| pos.name.nil? }.sort_by {|pos| pos.person.sort_name }.map(&:name).uniq
    end
 
-   agency_contacts.reject!{|ac| ac[:sort_date].blank?}
+   agency_contacts.reject!{|ac| ac[:sort_date].nil?}
    agency_contacts.sort_by!{|ac| ac[:sort_date]}
    agency_contacts.each {|ac| ac[:people].sort_by!{|p| p.sort_name}}
 %}

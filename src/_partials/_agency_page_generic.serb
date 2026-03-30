@@ -2,7 +2,7 @@
 
 <div class="mb-10 mt-1">
 {% agency = find_agency(id) %}
-{%@ 'atoms/agency_title', agency: agency, id: agency.slug %}
+{%@ Atoms::AgencyTitle agency: agency %}
 
 {% if agency.linkified_blurb %}
   <div class="my-text">{{ agency.linkified_blurb | raw }}</div>

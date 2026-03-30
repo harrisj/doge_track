@@ -21,7 +21,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # If you need to upgrade/switch Bridgetown versions, change the line below
 # and then run `bundle update bridgetown`
-gem 'bridgetown', '~> 2.0.0'
+gem 'bridgetown', '~> 2.1.0'
 
 # Uncomment to add file-based dynamic routing to your project:
 # gem "bridgetown-routes", "~> 1.3.4"
@@ -57,6 +57,7 @@ group :test do
   gem 'minitest-reporters'
   gem 'minitest-sequel', '~> 0.3.2'
   gem 'rack-test'
+  gem 'rubocop-bridgetown'
 end
 
 group :development do

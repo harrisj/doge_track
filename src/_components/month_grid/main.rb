@@ -9,7 +9,7 @@ module MonthGrid
     attr_reader :first_date, :last_date, :undated
 
     def initialize(year:, month:)
-      super
+      super()
       @year = year
       @month = month
 

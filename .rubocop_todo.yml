@@ -10,6 +10,9 @@ plugins:
 - rubocop-minitest
 - rubocop-sequel
 
+require:
+- rubocop-bridgetown
+
 AllCops:
   NewCops: enable
   Exclude:

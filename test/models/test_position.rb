@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'minitest_helper'
+require_relative '../minitest_helper'
 
 class TestPositionModel < Bridgetown::Test
   # def setup

@@ -233,7 +233,7 @@ end %}
 
 # Don't use this a lot, it's slow! Better to pre-linkify in the database
 {% macro 'linkify_text' do |text|
-   if text.blank?
+   if text.nil?
       ''
    else
      out = text.dup

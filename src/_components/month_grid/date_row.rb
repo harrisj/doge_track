@@ -4,7 +4,7 @@ module MonthGrid
   # Represents a single date in the MonthGrid
   class DateRow < Bridgetown::Component
     def initialize(date:)
-      super
+      super()
       @date = date
 
       @events = []

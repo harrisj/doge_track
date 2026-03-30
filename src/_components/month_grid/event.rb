@@ -4,7 +4,7 @@ module MonthGrid
   # Represents an event in the MonthGrid
   class Event < Bridgetown::Component
     def initialize(event:)
-      super
+      super()
       @event = event
     end
   end

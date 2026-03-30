@@ -45,7 +45,7 @@ def create_event(event_hash)
     e = Event.create(event_hash.except(:case_no, :named, :linked, :named_aliases, :agency, :interagency_doge_reps,
                                        :source, :project))
   rescue Sequel::ValidationFailed => e
-    puts "Error loading event #{event_hash.inspect}"
+    Bridgetown.logger.error "Error loading event #{event_hash.inspect}"
     throw e
   end
 
