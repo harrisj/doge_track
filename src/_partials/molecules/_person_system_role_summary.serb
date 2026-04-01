@@ -1,6 +1,6 @@
 {% import 'macros' %}
 <a href="/all/systems#{{ role.govt_system_id }}">{{ role.govt_system.name }}</a>
-<span class="text-nowrap">{%@ 'atoms/date_range_label', first: role.date_granted, last: role.date_revoked %}</span>
+<span class="text-nowrap">{%@ Atoms::DateRange start_date: role.date_granted, end_date: role.date_revoked %}</span>
 <br/>
 <span class="italic">{{ role.govt_system.description | md | strip_p }}</span>
 <br/>
@@ -8,5 +8,5 @@
 {% if role.date_last_used %} (last access <span class="my-date">{{ render EdtfFormat.new(role.date_last_used, :compact_year) }})</span>{% end %}
 {% if role.never_accessed %} (never accessed){% end %}
 {% if role.ao_type %} granted by {{ ao_type_display(role) }}{% end %}
-{% if role.ao_doge && role.ao_name %} {{ person_link(role.ao_name) }}{% end %}
+{% if role.ao_doge && role.ao_name %} {%@ Atoms::PersonLink name: role.ao_name %}{% end %}
 {% if role.table_note %} «<em>{{ role.table_note | md | strip_p }}</em>» {% end %}

@@ -3,7 +3,7 @@
 require 'minitest/autorun'
 require_relative '../minitest_helper'
 
-class TestPersonLink < Minitest::Test
+class TestPersonLink < Bridgetown::Test
   def test_person_link_person
     person = Person.with_pk!('Luke Farritor')
     rendered = Bridgetown::TemplateView.render(Atoms::PersonLink.new(person: person))

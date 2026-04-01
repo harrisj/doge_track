@@ -11,7 +11,7 @@
         <tr>
         <td class="align-top">{{ person_link(positions[0].person ) }}</td>
         <td class="align-top">{% positions.sort_by {|pos| pos.start_date || '2029-01-20' }.each_with_index do |pos, i| %}
-          {% if i > 0 %}, {% end %}{{ agency_link(pos.agency) }}{% if pos.start_date %} ({%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}){% end %}
+          {% if i > 0 %}, {% end %}{{ agency_link(pos.agency) }}{% if pos.start_date %} ({%@ Atoms::DateRange start_date: pos.start_date, end_date: pos.end_date %}){% end %}
         {% end %}</td>
       </tr>
   {% end %}

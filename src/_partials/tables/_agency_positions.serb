@@ -25,11 +25,11 @@
       <tr class="font-sans" id="{{ pos.id }}">
         <td class="align-top">
           {%@ 'atoms/position_move_label', position: pos %}
-          <div class="only-mobile">{%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}</div>
+          <div class="only-mobile">{%@ Atoms::DateRange start_date: pos.start_date, end_date: pos.end_date %}</div>
           <div class="only-mobile">{%@ 'atoms/doge_exit_label', position: pos %}</div>
         </td>
         <td class="align-top hide-cell-mobile">
-          {%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date %}
+          {%@ Atoms::DateRange start_date: pos.start_date, end_date: pos.end_date %}
           {%@ 'atoms/doge_exit_label', position: pos %}
         </td>
         <td class="align-top"><div>{%@ 'atoms/position_person_link', position: pos %}</div>{%@ 'molecules/position_summary', position: pos %}</td>
