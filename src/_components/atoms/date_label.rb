@@ -27,15 +27,15 @@ module Atoms
     def display_exact
       case @format
       when :compact
-        <<~HTML
+        <<~HTML.chomp
           #{text -> { '  ' if pad? }}#{text -> { @date.strftime('%-m/%d') }}
         HTML
       when :compact_year
-        <<~HTML
+        <<~HTML.chomp
           #{text -> { '  ' if pad? }}#{text -> { @date.strftime('%-m/%d/%y') }}
         HTML
       when :iso
-        <<~HTML
+        <<~HTML.chomp
           #{text -> { '  ' if pad? }}#{text -> { @date.strftime('%Y-%m-%d') }}
         HTML
       when :human
@@ -49,15 +49,15 @@ module Atoms
       humanized = "Sometime in #{@date.strftime('%b %Y')}"
       case @format
       when :compact
-        <<~HTML
+        <<~HTML.chomp
           #{text -> { '  ' if pad? }}<abbr title="#{text -> { humanized }}">#{text -> { @date.strftime('%-m/XX') }}</abbr>
         HTML
       when :compact_year
-        <<~HTML
+        <<~HTML.chomp
           #{text -> { '  ' if pad? }}<abbr title="#{text -> { humanized }}">#{text -> { @date.strftime('%-m/XX/%y') }}</abbr>
         HTML
       when :iso
-        <<~HTML
+        <<~HTML.chomp
           #{text -> { '  ' if pad? }}<abbr title="#{text -> { humanized }}">#{text -> { @date.strftime('%Y-%m-XX') }}</abbr>
         HTML
       when :human
@@ -70,15 +70,15 @@ module Atoms
 
       case @format
       when :compact
-        <<~HTML
+        <<~HTML.chomp
           <abbr title="#{text -> { humanized }}">#{text -> { @date.strftime('c.%-m/%d') }}</abbr>
         HTML
       when :compact_year
-        <<~HTML
+        <<~HTML.chomp
           <abbr title="#{text -> { humanized }}">#{text -> { @date.strftime('c.%-m/%d/%y') }}</abbr>
         HTML
       when :iso
-        <<~HTML
+        <<~HTML.chomp
           <abbr title="#{text -> { humanized }}">#{text -> { @date.strftime('c.%-%Y-%m-%d') }}</abbr>
         HTML
       when :human
@@ -91,15 +91,15 @@ module Atoms
 
       case @format
       when :compact
-        <<~HTML
+        <<~HTML.chomp
           <abbr title="#{text -> { humanized }}">#{text -> { @date.strftime('%-m/%d?') }}</abbr>
         HTML
       when :compact_year
-        <<~HTML
+        <<~HTML.chomp
           <abbr title="#{text -> { humanized }}">#{text -> { @date.strftime('%-m/%d/%y?') }}</abbr>
         HTML
       when :iso
-        <<~HTML
+        <<~HTML.chomp
           <abbr title="#{text -> { humanized }}">#{text -> { @date }}?</abbr>
         HTML
       when :human

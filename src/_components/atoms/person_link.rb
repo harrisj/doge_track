@@ -35,7 +35,7 @@ module Atoms
       end
 
       html lambda {
-        <<~HTML
+        <<~HTML.chomp
           <a class="link-hover" href="#{text -> { @person.page_url }}">#{text -> { display_name }}</a>
         HTML
       }

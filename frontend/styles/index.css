@@ -92,8 +92,16 @@ layer(base);
         @apply font-semibold text-base-content/75;
     }
 
+    ul.inline-compact {
+        @apply flex flex-wrap list-none p-0 m-0;  
+    }
+
+    li.inline-compact {
+        @apply after:content-[',_'] last:after:content-[''];
+    }
+
     .only-mobile {
-        @apply md:hidden;
+        @aotpply md:hidden;
     }
 
     .hide-cell-mobile {

@@ -10,7 +10,7 @@ module Atoms
 
     def template
       html lambda {
-        <<~HTML
+        <<~HTML.chomp
           <div aria-label="Project: #{text -> { @project.label_text }}" class="status status-md status-#{text -> { @project.label_color }}"></div>
         HTML
       }

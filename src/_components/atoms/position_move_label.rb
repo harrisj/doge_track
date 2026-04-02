@@ -40,7 +40,7 @@ module Atoms
       return unless @position.from_agency_id
 
       html lambda {
-        <<~HTML
+        <<~HTML.chomp
           #{render AgencyLink.new(@position.from_agency)}#{text -> { '?' if @position.from_truth == 'guessed' }}#{text -> { ' ' }}
         HTML
       }
@@ -52,7 +52,7 @@ module Atoms
 
     def template
       html lambda {
-        <<~HTML
+        <<~HTML.chomp
           <span class="md:text-nowrap">#{html -> { from_agency_label }}#{html -> { move_icon }} #{html -> { destination }}</span>
         HTML
       }

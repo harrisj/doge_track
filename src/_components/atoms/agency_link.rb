@@ -29,7 +29,7 @@ module Atoms
       return text -> { '' } if @agency.nil?
 
       html lambda {
-        <<~HTML
+        <<~HTML.chomp
           <a class="link-hover" href="#{text -> { @agency.page_url }}">#{text -> { display_name }}</a>
         HTML
       }

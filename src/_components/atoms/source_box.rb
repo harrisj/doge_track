@@ -19,7 +19,7 @@ module Atoms
     def source_pub_date(source)
       return unless source.pub_date
 
-      <<~HTML
+      <<~HTML.chomp
         &nbsp;<span class="text-nowrap">#{text -> { source.pub_date }}</span>
       HTML
     end
@@ -34,7 +34,7 @@ module Atoms
       return text -> { '' } if @sources.empty?
 
       html lambda {
-        <<~HTML
+        <<~HTML.chomp
           <div class="float-right pl-2 pb-2">
             <div class="dropdown dropdown-left ml-1 text-sm">
               <div tabindex="0" role="button" aria-label="Sources"> <i class="fa-sharp fa-solid fa-receipt"></i></div>

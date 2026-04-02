@@ -15,7 +15,7 @@ module Atoms
           'detail ended'
         when 'replaced'
           if pos.replaced_by
-            <<~HTML.squish
+            <<~HTML.chomp
               <a class="link-hover sm:text-nowrap" href="##{text -> { @position.replaced_by }}">
               <i class="fa-sharp fa-solid fa-up-right-from-square"></i> next role</a>"
             HTML
@@ -25,13 +25,13 @@ module Atoms
         when 'resigned'
           'resigned from agency'
         when 'fired'
-          <<~HTML
+          <<~HTML.chomp
             <span class="font-bold my-emphasis">fired</span>
           HTML
         when 'unknown'
           ''
         else
-          <<~HTML
+          <<~HTML.chomp
             #{text -> { @position.end_type }}
           HTML
         end
