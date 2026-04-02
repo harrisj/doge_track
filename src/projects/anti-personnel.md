@@ -8,9 +8,9 @@ text_updated: 2025-06-21
 # Attacking the Civil Service
 
 Probably DOGE's biggest success so far has been their efforts to inflict
-"trauma" (as {{ person_link("Russell Vought") }} expressed this goal) on the
+"trauma" (as {%@ Atoms::PersonLink "Russell Vought" %} expressed this goal) on the
 federal workforce. From the first day, DOGE has staffed a large contingent at
-the {{ agency_link("OPM", "Office of Personnel Management") }}, with many of
+the {%@ Atoms::AgencyLink "OPM", display: "Office of Personnel Management" %}, with many of
 them coming from legal or human resources backgrounds with Musk's various
 companies. The work against federal employees has included by specific legal and
 policy actions as well as data mining to identify groups that can be more easily
@@ -20,7 +20,7 @@ This work has involved the following distinct strands:
 
 - **Firing Probationary Workers**: In the Federal government, employees who have
   been in a particular role for less than a year are called "probationary" and
-  have fewer protections against dismissal. As {{ person_link("Noah Peters") }}
+  have fewer protections against dismissal. As {%@ Atoms::PersonLink "Noah Peters" %}
   has testified, DOGE identified early that this rule could be hacked as a way
   to quickly fire a large number of civil service employees. To this end, the
   OPM requested in the first week that DOGE should send lists of probationary
@@ -30,7 +30,7 @@ This work has involved the following distinct strands:
 - **The Fork in the Road**: Copied directly from the [playbook that Elon Musk
   used at
   Twitter](https://www.wired.com/story/elon-musk-twitter-playbook-federal-government/),
-  DOGE built an email system at {{ agency_link("OPM") }} called the
+  DOGE built an email system at {%@ Atoms::AgencyLink "OPM" %} called the
   Government-Wide Email System (GWES) and used it to email every federal
   employee with an offer to take a deferred resignation offer by replying to an
   email with the word "resign." This sparked widespread confusion, with many
@@ -46,7 +46,7 @@ This work has involved the following distinct strands:
   Force or RIFs), supporting those efforts in multiple ways. This includes
   crafting the policy and instructions at the OPM and approving "emergency"
   exemptions to let agencies bypass normal procedures. One of the DOGE
-  engineers, {{ person_link("Riccardo Biasini") }}, has also been reportedly
+  engineers, {%@ Atoms::PersonLink "Riccardo Biasini" %}, has also been reportedly
   working on improving an AutoRIF package for automating the selection and
   processing of employees for layoffs. DOGE has employed RIFs regularly as a
   tactic to [completely eliminate departments and entire

@@ -11,7 +11,7 @@ module Atoms
     end
 
     def destination
-      render AgencyLink.new(agency: @agency) if @show_dest
+      render AgencyLink.new(@agency) if @show_dest
     end
 
     def move_icon
@@ -41,7 +41,7 @@ module Atoms
 
       html lambda {
         <<~HTML
-          #{render AgencyLink.new(agency: @position.from_agency)}#{text -> { '?' if @position.from_truth == 'guessed' }}#{text -> { ' ' }}
+          #{render AgencyLink.new(@position.from_agency)}#{text -> { '?' if @position.from_truth == 'guessed' }}#{text -> { ' ' }}
         HTML
       }
     end

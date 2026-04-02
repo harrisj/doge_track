@@ -16,5 +16,5 @@
     <div class="flex-none order-first sm:order-1ast"><h2 id="{{person.slug}}" class="mt-0 mb-0 text-lg sm:text-xl md:text-2xl leading-none font-title">{{ person.name }}</h2></div>
   </div>
 
-  <div>Info moved to {{ person_link(person, display=title_for_person(person)) }}</div>
+  <div>Info moved to {%@ Atoms::PersonLink person, display: title_for_person(person) %}</div>
 </div>

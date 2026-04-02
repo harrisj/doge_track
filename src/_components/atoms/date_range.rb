@@ -8,7 +8,7 @@ module Atoms
       @start_date = start_date
       @end_date = end_date
       @always_dash = always_dash
-      @format = date_format
+      @date_format = date_format
       @padding = padding
     end
 
@@ -23,7 +23,7 @@ module Atoms
 
       html lambda {
         <<~HTML
-          <span class="md:text-nowrap my-date">#{render ::EdtfFormat.new(@start_date, @date_format, @padding)}#{html -> { endash }}#{render ::EdtfFormat.new(@end_date, @date_format, @padding)}</span>
+          <span class="md:text-nowrap my-date">#{render Atoms::DateLabel.new(@start_date, date_format: @date_format, padding: @padding)}#{text -> { endash }}#{render Atoms::DateLabel.new(@end_date, date_format: @date_format, padding: @padding)}</span>
         HTML
       }
     end

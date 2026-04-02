@@ -14,8 +14,8 @@
   <tbody>
   {% wreckers.sort_by {|x| x.sort_date}.each do |person| %}
     <tr class="my-table-sm text-left">
-      <td class="align-top">{{ agency_link(person.positions[0].from_agency_id) }}</td>
-      <td class="align-top">{{ person_link(person.name) }}</td>
+      <td class="align-top">{%@ Atoms::AgencyLink person.positions[0].from_agency_id %}</td>
+      <td class="align-top">{%@ Atoms::PersonLink person.name %}</td>
       <td class="align-top hidden sm:table-cell">{{ person.age }}</td>
       <td class="align-top"><span class="my-date">{{ render EdtfFormat.new(person.start_date, :compact_year, :filled) }}</span></td>
       <td class="align-top hidden md:table-cell">{{ person_skill(person) }}</td>

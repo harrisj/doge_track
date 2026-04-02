@@ -32,7 +32,7 @@ This is not a definitive list of all changes to the project (completists can alw
 {% if rec.names.any? %}
 <h2 class="text-lg mt:2">Names Added</h2>
 
-<p>{% rec.names.each_with_index do |name, i| %}{% if i > 0 %}, {% end %}{{ person_link(name) }}{% end %}</p>
+<p>{% rec.names.each_with_index do |name, i| %}{% if i > 0 %}, {% end %}{%@ Atoms::PersonLink name, raise_miss: false %}{% end %}</p>
 {% end %}
 
 {% if rec.positions.any? %}

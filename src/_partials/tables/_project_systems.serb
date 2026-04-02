@@ -32,8 +32,8 @@
           {% if govt_system.type == 'ssp' || govt_system.type == 'saas' %}
               {{ agency_link(role.agency_id) }}:
           {% end %}
-          {% if role.name %}{{ person_link(role.name) }}{% elsif role.doge_alias_id %}{{ alias_link(role.doge_alias_id) }}{% end %}
-          {% if role.date_revoked %}(<span class="my-date">{{ render EdtfFormat.new(role.date_granted, :compact_year) }}-{{ render EdtfFormat.new(role.date_revoked, :compact_year) }}</span>{% else %}<span class="my-date">({{ render EdtfFormat.new(role.date_granted, :compact) }}</span>{% end %}{% if role.type != 'read' && role.type != 'unknown' %}, {%@ 'system_access_type', role: role %} access{% end %})
+          {% if role.name %}{%@ Atoms::PersonLink role.name %}{% elsif role.doge_alias_id %}{{ alias_link(role.doge_alias_id) }}{% end %}
+          ({%@ Atoms::DateRange start_date: role.date_granted, end_date: role.date_revoked, always_dash: true %}{% if role.type != 'read' && role.type != 'unknown' %}, {%@ 'system_access_type', role: role %} access{% end %})
       </div>
       {% end %}
     </div>

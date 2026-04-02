@@ -3,7 +3,7 @@ layout: page
 title: Agency Timeline
 description: An overview and timeline of DOGE's activities in various federal agencies.
 ---
-{%@ 'atoms/title', title: 'Agency Timeline' %}
+{%@ Atoms::Title title: 'Agency Timeline' %}
 
 {% indies = Agency.filter(parent_id: nil).filter(Sequel.like(:page_slug, 'independent#%')).eager(:children).all %}
 {% majors = Agency.filter(parent_id: nil).exclude(Sequel.like(:page_slug, 'independent#%')).exclude(id: ['DOGE', 'EOP']).eager(:children).all %}

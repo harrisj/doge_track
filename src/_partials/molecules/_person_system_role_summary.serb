@@ -8,5 +8,5 @@
 {% if role.date_last_used %} (last access <span class="my-date">{{ render EdtfFormat.new(role.date_last_used, :compact_year) }})</span>{% end %}
 {% if role.never_accessed %} (never accessed){% end %}
 {% if role.ao_type %} granted by {{ ao_type_display(role) }}{% end %}
-{% if role.ao_doge && role.ao_name %} {%@ Atoms::PersonLink name: role.ao_name %}{% end %}
+{% if role.ao_doge && role.ao_name %} {%@ Atoms::PersonLink role.ao_name %}{% end %}
 {% if role.table_note %} «<em>{{ role.table_note | md | strip_p }}</em>» {% end %}

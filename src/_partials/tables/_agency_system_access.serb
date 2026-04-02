@@ -32,7 +32,7 @@
                   {%@ Atoms::DateRange start_date: roles[0].date_granted, end_date: roles[0].date_revoked, always_dash: true %}
                   {{ names | people_links }}{% if unidentified_aliases.any? %}{% if names.any? %}, {% end %}{{ unidentified_aliases | alias_links }}{% end %}
                   {% if roles[0].type != 'unknown' %}<span>({%@ 'system_access_type', role: roles[0] %}<span class="hidden sm:inline"> access</span></span>){% end %}
-                  {% if roles[0].ao_doge %}<span>grant by {{ person_link(roles[0].ao_name) }}</span>{% end %}
+                  {% if roles[0].ao_doge && roles[0].ao_name %}<span>grant by {%@ Atoms::PersonLink roles[0].ao_name %}</span>{% end %}
                   </li>
                 {% end %}
                 </ul>

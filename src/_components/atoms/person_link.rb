@@ -3,20 +3,37 @@
 module Atoms
   # A link to a person's page
   class PersonLink < Bridgetown::Component
-    def initialize(person: nil, name: nil, display: nil)
+    def initialize(person = nil, display: nil, raise_miss: true)
       super()
-      @person = person.nil? ? Person.with_pk!(name) : person
-
-      raise 'You must provide a person or a name' if @person.nil?
-
       @display = display
+      @raise_miss = raise_miss
+
+      if person.is_a? Person
+        @person = person
+        @name = person.name
+      elsif person.is_a? String
+        @name = person
+        @person = Person[person]
+
+        raise Sequel::NoMatchingRow, "Unable to find person with name #{person}" if @person.nil? && @raise_miss
+      else
+        @person = nil
+        @name = ''
+      end
+
+      raise 'You must provide a person or a name to PersonLink' if @raise_miss && @person.nil?
     end
 
     def display_name
-      @display || @person.name
+      @display || @name
     end
 
     def template
+      if @person.nil?
+        # No person record found, return input arg as text
+        return text -> { display_name }
+      end
+
       html lambda {
         <<~HTML
           <a class="link-hover" href="#{text -> { @person.page_url }}">#{text -> { display_name }}</a>

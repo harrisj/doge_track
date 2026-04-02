@@ -4,7 +4,7 @@ template_engine: serbea
 title: All Source Citations
 description: A comprehensive listing of all the source citations on a single page
 ---
-{%@ 'atoms/title', title: 'All The Source Citations' %}
+{%@ Atoms::Title title: 'All The Source Citations' %}
 
 {% undated_sources = Source.where(pub_date: nil) %}
 

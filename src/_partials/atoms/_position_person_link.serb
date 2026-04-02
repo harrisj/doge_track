@@ -1,2 +1,2 @@
 {% import 'macros' %}
-{% if position.person %}{{ person_link(position.person) }}{% elsif position.doge_alias_id %}{{ alias_link(position.doge_alias_id) }}{% end %}
+{% if position.person %}{%@ Atoms::PersonLink position.person %}{% elsif position.doge_alias_id %}{{ alias_link(position.doge_alias_id) }}{% end %}
