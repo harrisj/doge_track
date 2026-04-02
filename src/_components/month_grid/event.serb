@@ -1,5 +1,5 @@
 <div class="font-sans" id="{{ @event.id }}">
-  {%@ 'atoms/float_source_box', sources: @event.sources %}
+  {%@ Atoms::SourceBox sources: @event.sources %}
   <div class="inline text-base-content/75">{{ render EventLabel.new(@event.type, :responsive) }}</div>
   {{ @event.linkified_text | raw }}
   {% if @event.fuzz %} <span class="italic">(fuzz: {{ @event.fuzz | md | strip_p }})</span>{% end %}

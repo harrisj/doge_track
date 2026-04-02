@@ -28,7 +28,7 @@
       <tr>
         <td class="align-top">{%@ 'atoms/position_person_link', position: positions[0] %}</td>
         <td class="align-top">
-          {%@ 'atoms/float_source_box', sources: sources %}
+          {%@ Atoms::SourceBox sources: sources %}
           <div class="flex flex-col space-y-1">
           {% positions.each do |pos| %}
             <div>{%@ 'atoms/agency_position_move_label', position: pos, agency: agency %}{% if pos.start_date %} {%@ Atoms::DateRange start_date: pos.start_date, end_date: pos.end_date %}{% else %} <em>date unknown</em>{% end %} {%@ 'molecules/alt_position_summary', position: pos, agency: agency %}</div>

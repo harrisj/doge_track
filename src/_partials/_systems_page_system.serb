@@ -77,7 +77,7 @@
   <th class="align-top">Access</th>
   <td>
     {% sources = roles.map(&:sources).flatten.compact.uniq %}
-    {%@ 'atoms/float_source_box', sources: sources %}
+    {%@ Atoms::SourceBox sources: sources %}
     <ul>
       {% roles.each do |role| %}
       <li>
