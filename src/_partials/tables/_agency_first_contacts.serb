@@ -27,10 +27,10 @@
   <tbody>
     {% agency_contacts.each do |ac| %}
     <tr>
-      <th class="align-left align-top"><span class="my-date">{{ render EdtfFormat.new(ac[:first_contact], :compact_year) }}</span></th>
+      <th class="align-left align-top"><span class="my-date">{%@ Atoms::DateLabel ac[:first_contact] %}</span></th>
       <td class="align-left align-top">{%@ Atoms::AgencyLink ac[:id] %}{% if ac[:children] %}<br/>{{ ac[:children].map(&:short_name).join(", ") }}{% end %}</td>
       <td class="align-left align-top">{{ ac[:name] }}</td>
-      <td class="align-left align-top">{{ ac[:people_names] | people_links }}</td>
+      <td class="align-left align-top">{%@ Atoms::PeopleList ac[:people_names] %}</td>
     </tr>
     {% end %}
   </tbody>

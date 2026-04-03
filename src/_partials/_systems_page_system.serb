@@ -46,7 +46,7 @@
 
   <tr>
   <th class="align-top">Description</th>
-  <td class="align-top">{{ govt_system.description | md | strip_p }}</td>
+  <td class="align-top">{%@ Atoms::Blurb govt_system.description %}</td>
   </tr>
 
   {% if govt_system.population %}
@@ -84,7 +84,7 @@
       {% if govt_system.type == 'ssp' || govt_system.type == 'saas' %}
         {%@ Atoms::AgencyLink role.agency_id %}:
       {% end %}
-      {% if role.name %}{%@ Atoms::PersonLink role.name %}{% elsif role.doge_alias_id %}{{ alias_link(role.doge_alias_id) }}{% end %}
+      {%@ Atoms::PersonOrAliasLink role.name || role.doge_alias_id %}
       {%@ Atoms::DateRange start_date: role.date_granted, end_date: role.date_revoked %}
       {% if role.type != 'read' %}
       ({%@ 'system_access_type', role: role %} access)

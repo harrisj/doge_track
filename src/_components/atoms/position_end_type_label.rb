@@ -10,11 +10,11 @@ module Atoms
 
     def template
       html lambda {
-        case pos.end_type
+        case @position.end_type
         when 'detail_ended'
           'detail ended'
         when 'replaced'
-          if pos.replaced_by
+          if @position.replaced_by
             <<~HTML.chomp
               <a class="link-hover sm:text-nowrap" href="##{text -> { @position.replaced_by }}">
               <i class="fa-sharp fa-solid fa-up-right-from-square"></i> next role</a>"

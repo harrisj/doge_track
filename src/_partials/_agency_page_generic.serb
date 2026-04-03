@@ -1,7 +1,8 @@
 {% import 'macros' %}
 
 <div class="mb-10 mt-1">
-{% agency = find_agency(id) %}
+{% agency = Agency.where(Sequel[id: id] | Sequel[slug: id]).first %}
+{% raise "No agency with ID #{id} found" if agency.nil? %}
 {%@ Atoms::AgencyTitle agency: agency %}
 
 {% if agency.linkified_blurb %}

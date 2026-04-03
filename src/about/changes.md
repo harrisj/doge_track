@@ -23,7 +23,7 @@ This is not a definitive list of all changes to the project (completists can alw
 {% if rec.notes && rec.notes.any? %}
 <ul class="leading-tight mt-0">
 {% rec.notes.each do |note| %}
-<li>{{ note | md | strip_p }}</li>
+<li>{%@ Atoms::Blurb note %}</li>
 {% end %}
 <li><a href="https://github.com/harrisj/doge_track/commits/main/?since={{ rec.start }}&until={{ rec.end }}">[View All Changes]</a></li>
 </ul>
@@ -32,7 +32,7 @@ This is not a definitive list of all changes to the project (completists can alw
 {% if rec.names.any? %}
 <h2 class="text-lg mt:2">Names Added</h2>
 
-<p>{% rec.names.each_with_index do |name, i| %}{% if i > 0 %}, {% end %}{%@ Atoms::PersonLink name, raise_miss: false %}{% end %}</p>
+<p>{%@ Atoms::PeopleList rec.names, raise_miss: false %}</p>
 {% end %}
 
 {% if rec.positions.any? %}

@@ -1,15 +1,4 @@
 
-{% macro "md" do |text|
-    text = markdownify(text).gsub('<a href=', '<a class="link-hover" href=')
-    text.html_safe
-  end
-%}
-
-{% macro "strip_p" do |text|
-    text.gsub(/<\/?p>/, '').html_safe
-  end
-%}
-
 {% macro "lookup_person" do |name|
     Person[name]
 end %}
@@ -30,111 +19,6 @@ end %}
     Position[pos_id]
   end %}
 
-{% macro "find_person" do |p_id|
-    if p_id.is_a?(String)
-      site.data.people.find {|p| p.name.downcase == p_id || p.slug == p_id || p.sort_name.downcase == p_id.downcase }
-    elsif p_id.is_a? Person
-      p_id
-    elsif p_id.name
-      site.data.people.find {|p| p.name == p_id.name }
-    else
-      a_id
-    end
-   end
-%}
-
-{% macro "person_link" do |p_id, display=nil|
-    if p_id.nil?
-      raise "Null passed to person_link"
-    else
-      if p_id.is_a?(String)
-        person = Person.where(Sequel.|({name: p_id}, {slug: p_id}, {sort_name: p_id})).first
-      elsif p_id.is_a? Person
-        person = p_id
-      else
-        raise "Unknown object passed to person_link #{p_id.inspect}"
-      end
-
-      if person
-        display ||= person.name
-        "<a class=\"link-hover\" href=\"#{person.page_url}\">#{display}</a>".html_safe
-      else
-        display || p_id
-      end
-    end
-  end
-%}
-
-{% macro "alias_link" do |alias_id|
-  "<a class=\"link-hover\" href=\"/people/aliases##{alias_id}\">#{alias_id}</a>".html_safe
-  end
-%}
-
-{% macro "alias_links" do |arr|
-    arr.compact.map {|a| alias_link(a)}.join(", ").html_safe
-   end
-%}
-
-{% macro "people" do |arr|
-    if arr.nil?
-      []
-    else
-      out = arr.map { |item| find_person(item) }.compact
-    end
-  end
-%}
-
-{% macro "find_agency" do |a_id|
-    if a_id.is_a?(String)
-      Agency.filter(Sequel.|({id: a_id}, {slug: a_id})).first
-    elsif a_id.is_a? Agency
-      a_id
-    elsif a_id.agency_id
-      Agency.where(id: a_id.agency_id).first
-    else
-      a_id
-    end
-   end
-%}
-
-{% macro "agency_link" do |a_id, display=nil|
-    if a_id.nil?
-      ""
-    elsif a_id.is_a?(String)
-      agency = find_agency(a_id)
-      agency_link(agency)
-    else
-      if a_id.short_name
-        display ||= a_id.short_name
-      else
-        display ||= a_id
-      end
-
-      "<a class=\"link-hover\" href=\"#{a_id.page_url}\">#{display}</a>".html_safe
-    end
-  end
-%}
-
-{% macro "agencies" do |arr|
-    if arr.nil?
-      []
-    else
-      out = arr.map { |item| find_agency(item) }.compact
-    end
-  end
-%}
-
-{% macro "agency_links" do |agency_list|
-    agencies(agency_list).map {|a| agency_link(a)}.compact.join(", ").html_safe
-  end
-%}
-
-{% macro "people_links" do |people_list|
-    people_list.map {|p| person_link(p)}.compact.join(", ").html_safe
-  end
-%}
-
-
 {% macro 'person_skill' do |person|
     if person.skill.nil?
       ''
@@ -152,7 +36,7 @@ end %}
     else
       ''
     end
-   end %}
+ end %}
 
 {% macro "document_type" do |doc|
     if doc.type == 'mou'
@@ -173,30 +57,6 @@ end %}
       nil
     end
    end
-%}
-
-{% macro 'position_end_type' do |pos|
-    case pos.end_type
-    when 'detail_ended'
-      'detail ended'
-    when 'replaced'
-      if pos.replaced_by
-        "<a class=\"link-hover sm:text-nowrap\" href=\"##{pos.replaced_by}\"><i class=\"fa-sharp fa-solid fa-up-right-from-square\"></i> next role</a>"
-      else
-        'replaced'
-      end
-    when 'resigned'
-      'resigned from agency'
-    when 'fired'
-      '<span class="font-bold my-emphasis">fired</span>'
-    when 'unknown'
-      nil
-    when nil
-      nil
-    else
-      pos.end_type
-   end
-  end
 %}
 
 {% macro 'system_access_type' do |role|
@@ -231,22 +91,3 @@ end %}
    end
 %}
 
-# Don't use this a lot, it's slow! Better to pre-linkify in the database
-{% macro 'linkify_text' do |text|
-   if text.nil?
-      ''
-   else
-     out = text.dup
-
-      Person.each do |person|
-        out.gsub!(/\b#{person.name}\b/, person_link(person))
-      end
-
-      Agency.each do |agency|
-        next unless agency.linkify
-        out.gsub!(/\b#{agency.id}\b/, agency_link(agency)) if agency.id =~ /^[A-Z]+$/
-        out.gsub!(/\b#{agency.name}\b/, agency_link(agency, agency.name))
-      end
-    end
-  out
-end %}

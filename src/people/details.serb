@@ -39,9 +39,9 @@ As the table below shows, there are still many details we don't know about DOGE'
             <div class="only-mobile my-date"><small>{{ render EdtfFormat.new(detail.start_date, :compact_year) }} – <span class="">{% if detail.end_date %}{{ render EdtfFormat.new(detail.end_date, :compact_year) }}{% elsif detail.person&.govt_exit_date %} bef. {{ render EdtfFormat.new(detail.person.govt_exit_date, :compact_year) }}{% elsif detail.nte_date %}<abbr title="Not to Exceed">NTE</abbr> {{ render EdtfFormat.new(detail.nte_date, :compact_year) }}{% end %}</span></small></div>
         </td>
         <td class="align-top">{%@ Atoms::PersonOrAliasLink detail.person || detail.doge_alias_id %}
-        <div class="only-mobile">{% if detail.mou %}<a href="{{ detail.mou }}">MOU</a>{% end %} {% if detail.table_note %}<em>{{ detail.table_note | md | strip_p }}</em>{% end %}</div></td>
+        <div class="only-mobile">{% if detail.mou %}<a href="{{ detail.mou }}">MOU</a>{% end %} {% if detail.table_note %}<em>{%@ Atoms::Blurb detail.table_note %}</em>{% end %}</div></td>
         <td class="align-top hide-cell-mobile my-date"><span class="text-nowrap">{%@ Atoms::DateRange start_date: detail.start_date, end_date: detail.end_date || detail.person&.govt_exit_date %}</span></td>
-        <td class="align-top hide-cell-mobile">{% if detail.mou %}<a href="{{ detail.mou }}">MOU</a>{% end %} {% if detail.table_note %}<em>{{ detail.table_note | md | strip_p }}</em>{% end %}</td>
+        <td class="align-top hide-cell-mobile">{% if detail.mou %}<a href="{{ detail.mou }}">MOU</a>{% end %} {% if detail.table_note %}<em>{%@ Atoms::Blurb detail.table_note %}</em>{% end %}</td>
     </tr>
     {% end %}
     {% if unknown_dates.any? %}
@@ -52,9 +52,9 @@ As the table below shows, there are still many details we don't know about DOGE'
             <tr>
             <td class="align-top">{% if detail.from_agency %}{%@ Atoms::AgencyLink detail.from_agency %}{% if detail.from_truth == 'guessed' %}?{% end %} <i class="fa-sharp fa-solid fa-right"></i> {% end %}{%@ Atoms::AgencyLink detail.agency %}</td>
             <td class="align-top">{%@ Atoms::PersonOrAliasLink (detail.person || detail.doge_alias_id) %}
-                <div class="only-mobile">{% if detail.mou %}<a href="{{ detail.mou }}">MOU</a>{% end %} {% if detail.table_note %}<em>{{ detail.table_note | md | strip_p }}</em>{% end %}</div></td>
+                <div class="only-mobile">{% if detail.mou %}<a href="{{ detail.mou }}">MOU</a>{% end %} {% if detail.table_note %}<em>{%@ Atoms::Blurb detail.table_note %}</em>{% end %}</div></td>
             <td class="align-top hide-cell-mobile"></td>
-            <td class="align-top hide-cell-mobile">{% if detail.mou %}<a href="{{ detail.mou }}">MOU</a>{% end %} {% if detail.table_note %}<em>{{ detail.table_note | md | strip_p }}</em>{% end %}</td>
+            <td class="align-top hide-cell-mobile">{% if detail.mou %}<a href="{{ detail.mou }}">MOU</a>{% end %} {% if detail.table_note %}<em>{%@ Atoms::Blurb detail.table_note %}</em>{% end %}</td>
             </tr>
         {% end %}
     {% end %}

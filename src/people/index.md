@@ -66,8 +66,8 @@ Here are the current members of DOGE that I have linked to specific positions, l
                         <td class="my-2col-table-col1 align-top">{{ start_date.strftime("%b %Y") }}</td>
                         <td class="my-2col-table-col2 align-top">
                         <div class="flex flex-col gap-2">
-                        {% if grouped_by_start[key] %}<div><i class="fa-sharp fa-solid fa-person-to-door" aria-label="Started"></i> {{ grouped_by_start[key] | people_links }}</div>{% end %}
-                        {% if grouped_by_end[key] %}<div><i class="fa-sharp fa-solid fa-left-from-bracket" aria-label="Left DOGE"></i> {{ grouped_by_end[key] | people_links }}</div>{% end %}
+                        {% if grouped_by_start[key] %}<div><i class="fa-sharp fa-solid fa-person-to-door" aria-label="Started"></i> {%@ Atoms::PeopleList grouped_by_start[key] %}</div>{% end %}
+                        {% if grouped_by_end[key] %}<div><i class="fa-sharp fa-solid fa-left-from-bracket" aria-label="Left DOGE"></i> {%@ Atoms::PeopleList grouped_by_end[key] %}</div>{% end %}
                         </div>
                         </td>
                     </tr>

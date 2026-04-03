@@ -34,13 +34,13 @@ This page lists the executive orders that have been applicable to DOGE's actions
   {% if specific_agencies.any? %}
   <tr>
     <th class="align-top w-2/12">Specified</th>
-    <td class="align-top w-10/12">{{ eo.agency_ids | agency_links }}</td>
+    <td class="align-top w-10/12">{%@ Atoms::AgenciesList eo.agency_ids %}</td>
   </tr>
   {% end %}
 
   <tr>
   <th class="align-top w-2/12">Summary</th>
-  <td class="align-top w-10/12">{{ eo.linkified_summary | md | strip_p }} <a class="link-hover" href="{{ eo.link }}">[full text]</a></td>
+  <td class="align-top w-10/12">{%@ Atoms::Blurb eo.linkified_summary %} <a class="link-hover" href="{{ eo.link }}">[full text]</a></td>
   </tr>
 </tbody>
 </table>

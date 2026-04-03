@@ -97,11 +97,11 @@ layer(base);
     }
 
     li.inline-compact {
-        @apply after:content-[',_'] last:after:content-[''];
+        @apply after:content-[',_'] last:after:content-[''] whitespace-pre;
     }
 
     .only-mobile {
-        @aotpply md:hidden;
+        @apply md:hidden;
     }
 
     .hide-cell-mobile {

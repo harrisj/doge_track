@@ -4,5 +4,5 @@ layout: page
 {% import 'macros' %}
 
 <div class="my-text">
-  {{ content | md }}
+  {%@ Atoms::Blurb content %}
 </div>

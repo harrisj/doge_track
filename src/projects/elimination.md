@@ -9,7 +9,7 @@ text_updated: 2025-06-21
 
 > We spent the weekend feeding USAID into the wood chipper. Could gone to some great parties. Did that instead. - Elon Musk
 
-While [anti-personnel efforts](/projects/anti-personnel/) have cut a swath across the entire federal government, DOGE has also frequented targeted specific departments and even entire agencies for elimination. Perhaps the most prominent examples of this have been the destruction of {{ agency_link("USAID") }} and thwarted dismantling of {{ agency_link("CFPB") }}, but DOGE has also targeted numerous smaller [independent agencies](/agencies/independent) for destruction as well.
+While [anti-personnel efforts](/projects/anti-personnel/) have cut a swath across the entire federal government, DOGE has also frequented targeted specific departments and even entire agencies for elimination. Perhaps the most prominent examples of this have been the destruction of {%@ Atoms::AgencyLink "USAID" %} and thwarted dismantling of {%@ Atoms::AgencyLink "CFPB" %}, but DOGE has also targeted numerous smaller [independent agencies](/agencies/independent) for destruction as well.
 
 DOGE's methods have generally followed the same script:
 

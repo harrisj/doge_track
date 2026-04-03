@@ -30,7 +30,7 @@ layout: page
       {% end %}
     </div>
     <div class="pt-1 my-text">{{ q.question }}</div>
-    <div class="pt-1 my-text italic">{{ q.context | md | strip_p }}</div>
+    <div class="pt-1 my-text italic">{%@ Atoms::Blurb q.context %}</div>
   </div>
 </li>
 {% end %}

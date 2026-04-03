@@ -141,9 +141,9 @@ were actually detailed to the agency listed below.
       <td class="align-top">{%@ Atoms::AgencyLink person_from_agency_id %}</td>
       <td class="align-top">{%@ Atoms::PersonLink person %}</td>
       <td class="align-top hidden sm:table-cell">{{ person.age }}</td>
-      <td class="align-top my-date"><nobr>{{ render EdtfFormat.new(person.start_date, :compact_year, :filled) }}</nobr></td>
+      <td class="align-top my-date"><nobr>{%@ Atoms::DateLabel person.start_date, padding: :filled %}</nobr></td>
       <td class="align-top hidden md:table-cell">{{ person_skill(person) }}</td>
-      <td class="align-top">{{ person.positions | agencies | compact | uniq | agency_links }}</td>
+      <td class="align-top">{%@ Atoms::AgenciesList person.positions.map(&:agency).compact.uniq %}</td>
     </tr>
     {% last_agency = person_from_agency_id %}
   {% end %}

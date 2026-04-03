@@ -30,7 +30,7 @@
                   {% names = roles.map(&:name).uniq.compact %}
                   {% unidentified_aliases = roles.select {|x| x.doge_alias_id }.select {|x| x.name.nil? }.map(&:doge_alias_id).uniq %}
                   {%@ Atoms::DateRange start_date: roles[0].date_granted, end_date: roles[0].date_revoked, always_dash: true %}
-                  {{ names | people_links }}{% if unidentified_aliases.any? %}{% if names.any? %}, {% end %}{{ unidentified_aliases | alias_links }}{% end %}
+                  {%@ Atoms::PeopleList names+unidentified_aliases %}
                   {% if roles[0].type != 'unknown' %}<span>({%@ 'system_access_type', role: roles[0] %}<span class="hidden sm:inline"> access</span></span>){% end %}
                   {% if roles[0].ao_doge && roles[0].ao_name %}<span>grant by {%@ Atoms::PersonLink roles[0].ao_name %}</span>{% end %}
                   </li>
