@@ -31,7 +31,7 @@
           {%@ Atoms::SourceBox sources: sources %}
           <div class="flex flex-col space-y-1">
           {% positions.each do |pos| %}
-            <div>{%@ Atoms::AgencyPositionMoveLabel position: pos, agency: agency %}{% if pos.start_date %} {%@ Atoms::DateRange start_date: pos.start_date, end_date: pos.end_date %}{% else %} <em>date unknown</em>{% end %} {%@ 'molecules/alt_position_summary', position: pos, agency: agency %}</div>
+            <div>{%@ Atoms::AgencyPositionMoveLabel position: pos, agency: agency %}{% if pos.start_date %} {%@ Atoms::DateRange start_date: pos.start_date, end_date: pos.end_date %}{% else %} <em>date unknown</em>{% end %} {%@ Molecules::PositionSummary position: pos, agency: agency %}</div>
           {% end %}
           {% if person&.govt_exit_date %}
           <div class="font-semibold"><span class="text-base-content/75"><i class="fa-sharp fa-solid fa-left-from-bracket"></i> Left govt</span> <span class="my-date">{{ render EdtfFormat.new(person.govt_exit_date, :compact_year, :none) }}</span> ({{ person.govt_exit_truth }})</div>
