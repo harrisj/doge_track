@@ -78,4 +78,6 @@ damage has been done.
 ## Related Events
 
 {% events = Project['personnel'].events %}
-{%@ 'tables/compact_event_timeline', events: events, agency_col: true, month_separator: true %}
+  
+{%@ Table::Events events %}
+

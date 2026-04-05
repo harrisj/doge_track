@@ -29,7 +29,7 @@
     {% if events.any? %}
     <div>
       <h3 class="h3 mt-5 mb-0">Events:</h3>
-      {%@ 'tables/compact_event_timeline', events: events %}
+      {%@ Table::Events events %}
     </div>
     {% end %}
 

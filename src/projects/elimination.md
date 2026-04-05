@@ -34,5 +34,6 @@ For more information on who has been involved with this work, see [The Wreckers]
 {% if project.events.any? %}
 ## Related Events
 
-{%@ 'tables/compact_event_timeline', events: project.events, agency_col: true, month_separator: true %}
+{%@ Table::Events project.events %}
+
 {% end %}

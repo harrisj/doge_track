@@ -25,5 +25,5 @@ You might notice that many of these examples are from the {%@ Atoms::AgencyLink 
 {% if project.events.any? %}
 ## Related Events
 
-{%@ 'tables/compact_event_timeline', events: project.events, agency_col: true, month_separator: true %}
+{%@ Table::Events project.events %}
 {% end %}

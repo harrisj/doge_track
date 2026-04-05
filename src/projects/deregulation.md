@@ -54,6 +54,7 @@ DOGE's work here has involved the following threads:
 
 {% if project.events.any? %}
 ## Related Events
+ 
+{%@ Table::Events project.events %}
 
-{%@ 'tables/compact_event_timeline', events: project.events, agency_col: true, month_separator: true %}
 {% end %}

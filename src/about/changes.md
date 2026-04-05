@@ -46,7 +46,7 @@ This is not a definitive list of all changes to the project (completists can alw
 <h2 class="text-lg mt:2">Events Added</h2>
 
 {% events = Event.eager_graph(:agencies, :people).where({Sequel[:events][:id] => rec.events}).order(:date).all.compact %}
-{%@ 'tables/compact_event_timeline', events: events, month_separator: false, agency_col: true %}
+{%@ Table::Events events, month_separator: false %}
 {% end %}
   </div>
 </div>

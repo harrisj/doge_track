@@ -34,7 +34,7 @@
     {% if person_events.any? %}
     <div class="mt-10">
       <h3 class="mb-0 mt-0 h3">Events</h3>
-      {%@ 'tables/compact_event_timeline', agency_col: true, events: person_events, month_separator: false, show_directories: true, always_show_date: true %}
+      {%@ Table::Events person_events, month_separator: false, show_directories: true %}
     </div>
     {% end %}
 

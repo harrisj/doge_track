@@ -1,0 +1,25 @@
+{% if @events && @events.any? %}
+{% prior_row_date = @events[0].date-1 %}
+
+<table class="my-table-style mb-0 mt-0">
+  <thead>
+    <tr>
+      <th class="my-2col-table-col1">Date</th>
+      <th class="my-2col-table-col2">Event</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% @events.each do |event| %}
+    {% if @month_separator && (event.date.strftime("%Y-%m") > prior_row_date.strftime("%Y-%m")) %}
+    <tr>
+      <td class="text-center font-bold italic bg-base-300" colspan="100%">{{ event.date.strftime("%B %Y") }}</td>
+    </tr>
+    {% end %}
+    
+    {% prior_row_date = event.date %}
+
+    {%@ Table::EventRow event, show_directories: @show_directorie, show_projects: @show_projects, agency: @agency %}
+  {% end %}
+  </tbody>
+</table>
+{% end %}
