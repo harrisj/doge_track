@@ -1,0 +1,20 @@
+<table class="table table-xs sm:table-sm table-zebra">
+  <thead>
+    <tr>
+    <th>Date</th>
+    <th>Short</th>
+    <th>Agency</th>
+    <th>DOGE Staff</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% @agency_contacts.each do |ac| %}
+    <tr>
+      <th class="align-left align-top"><span class="my-date">{%@ Atoms::DateLabel ac[:first_contact] %}</span></th>
+      <td class="align-left align-top">{%@ Atoms::AgencyLink ac[:agency] %}{% if ac[:children] %}<br/>{{ ac[:children].map(&:short_name).join(", ") }}{% end %}</td>
+      <td class="align-left align-top">{{ ac[:name] }}</td>
+      <td class="align-left align-top">{%@ Atoms::PeopleList ac[:people_names] %}</td>
+    </tr>
+    {% end %}
+  </tbody>
+</table>
