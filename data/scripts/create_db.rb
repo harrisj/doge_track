@@ -201,6 +201,7 @@ DB.create_table! :executive_orders do
   string :date, null: false
   string :link, null: false
   string :summary, null: false
+  string :short_summary, null: false
   string :linkified_summary
   boolean :all_agencies, null: false, default: false
   boolean :directs_doge, null: false, default: false

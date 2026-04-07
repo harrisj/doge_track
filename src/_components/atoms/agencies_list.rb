@@ -3,8 +3,8 @@
 module Atoms
   # A list of multiple agencies rendered in a compact style
   class AgenciesList < CompactList
-    def initialize(agencies, raise_miss: true)
-      super(agencies)
+    def initialize(agencies, raise_miss: true, style: :list)
+      super(agencies, style: style)
       @raise_miss = raise_miss
 
       return if agencies.is_a?(Array) && (agencies.all?(Agency) || agencies.all?(String))

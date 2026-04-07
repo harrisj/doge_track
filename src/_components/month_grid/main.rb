@@ -39,13 +39,19 @@ module MonthGrid
     def get_date(date)
       date = Date.edtf(date) if date.is_a? String
 
-      @days[date]
+      if date.unspecified? :day
+        @undated
+      else
+        @days[date]
+      end
     end
 
     def initialize_events
       events = ::Event.for_year_month(@year, @month)
 
       events.each do |event|
+        next if %w[onboard offboard directory].include?(event.type)
+
         get_date(event.date).add_event(event)
       end
     end
@@ -58,6 +64,8 @@ module MonthGrid
 
       positions = Position.end_in_year_month(@year, @month)
       positions.each do |pos|
+        next if pos.end_type == 'replaced'
+
         get_date(pos.end_date).add_end_position(pos)
       end
     end
@@ -69,6 +77,11 @@ module MonthGrid
       end
     end
 
-    def initialize_exec_orders; end
+    def initialize_exec_orders
+      orders = ExecutiveOrder.in_year_month(@year, @month)
+      orders.each do |order|
+        get_date(order.date).add_executive_order(order)
+      end
+    end
   end
 end

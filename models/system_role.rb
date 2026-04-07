@@ -14,14 +14,14 @@ class SystemRole < Sequel::Model
 
   # Query helpers
   def self.granted_in_year_month(year, month)
-    SystemRole.eager_graph(:govt_system, :person,
-                           :sources).where(Sequel.like(:date_granted,
-                                                       "#{year}-#{format('%02d', month)}%")).order_by(:date_granted)
+    SystemRole.eager(:govt_system, :person,
+                     :sources).where(Sequel.like(:date_granted,
+                                                 "#{year}-#{format('%02d', month)}%")).order_by(:date_granted)
   end
 
   def self.revoked_in_year_month(year, month)
-    SystemRole.eager_graph(:govt_system, :person,
-                           :sources).where(Sequel.like(:date_revoked,
-                                                       "#{year}-#{format('%02d', month)}%")).order_by(:date_revoked)
+    SystemRole.eager(:govt_system, :person,
+                     :sources).where(Sequel.like(:date_revoked,
+                                                 "#{year}-#{format('%02d', month)}%")).order_by(:date_revoked)
   end
 end

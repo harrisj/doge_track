@@ -17,6 +17,10 @@
             "description": "A summary of the executive order",
             "type": "string"
         },
+        "short_summary": {
+            "description": "A shorter version of the summary",
+            "type": "string"
+        },
         "link": {
             "description": "A link for info on the executive order",
             "type": "string"
@@ -46,6 +50,7 @@
         "title",
         "id",
         "summary",
+        "short_summary",
         "link",
         "date"
     ]

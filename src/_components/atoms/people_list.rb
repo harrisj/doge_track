@@ -3,8 +3,8 @@
 module Atoms
   # A list of multiple people or aliases rendered in a compact style
   class PeopleList < CompactList
-    def initialize(people, raise_miss: true)
-      super(people)
+    def initialize(people, raise_miss: true, style: :list)
+      super(people, style: style)
       @raise_miss = raise_miss
 
       unless people.is_a?(Array) && people.all? do |item|

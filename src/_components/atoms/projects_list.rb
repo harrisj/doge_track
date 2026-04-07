@@ -3,8 +3,8 @@
 module Atoms
   # A list of multiple agencies rendered in a compact style
   class ProjectsList < CompactList
-    def initialize(projects, raise_miss: true)
-      super(projects)
+    def initialize(projects, raise_miss: true, style: :list)
+      super(projects, style: style)
       @raise_miss = raise_miss
 
       return if projects.is_a?(Array) && projects.all?(Project)

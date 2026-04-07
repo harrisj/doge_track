@@ -1,6 +1,8 @@
-<div class="grid grid-cols-[200px_auto] gap-2">
+<div class="grid grid-cols-[80px_auto] gap-y-4 gap-x-2 text-sm">
   {% each_date do |rec| %}
-     <div><date>{{ rec.date }}</date></div>
+     <div><date>{{ rec.date.strftime("%a %-m/%d") }}</date></div>
      <div>{{ render rec }}</div>
   {% end %}
+  <div><date>Date Unknown</date></div>
+  <div>{{ render undated }}</div>
 </div>

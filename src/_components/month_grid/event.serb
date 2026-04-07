@@ -1,15 +1,14 @@
+<div>{{ render EventLabel.new(@event.type, :icon) }}</div>
 <div class="font-sans" id="{{ @event.id }}">
-  {%@ Atoms::SourceBox sources: @event.sources %}
-  <div class="inline text-base-content/75">{{ render EventLabel.new(@event.type, :responsive) }}</div>
   {{ @event.linkified_text | raw }}
   {% if @event.fuzz %} <span class="italic">(fuzz: {%@ Atoms::Blurb @event.fuzz %})</span>{% end %}
-  {% if @event.type == 'interagency' && (@event.people.any? || @event.doge_aliases.any?) %}
+  {% if false && @event.type == 'interagency' && (@event.people.any? || @event.doge_aliases.any?) %}
     {%@ 'molecules/event_directory_display', event: @event %}
   {% end %}
-  {% if @event.type == 'directory' %}
+  {% if false && @event.type == 'directory' %}
     {%@ 'molecules/event_directory_display', event: @event %}
   {% end %}
-  {% if @event.projects.any? %}
+  {% if false && @event.projects.any? %}
     {%@ 'molecules/event_projects_display', event: @event %}
   {% end %}
 </div>

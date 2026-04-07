@@ -9,10 +9,10 @@
   <div class="my-text">{{ agency.linkified_blurb | raw }}</div>
 {% end %}
 
-{% if agency.all_positions.any? %}
+{% if true %}
 <h2 class="mt-10 mb-0 text-lg sm:text-xl md:text-2xl">Positions</h2>
 
-{%@ 'tables/alt_agency_positions', positions: agency.all_positions, agency: agency %}
+{%@ Table::AgencyPositions agency: agency %}
 {% end %}
 
 {% agency_systems = agency.all_systems %}
