@@ -1,9 +1,9 @@
 <!---- {{ @date }}  ----->
 {% if any? %}
-   <div class="grid grid-cols-[18px_auto] gap-1 font-sans divide-y divide-gray-20">
-     {%@ MonthGrid::ExecutiveOrders orders: @executive_orders %}
-     {%@ MonthGrid::StartPositions positions: @start_positions %}
-     {%@ MonthGrid::EndPositions positions: @end_positions %}
+   <div class="flex flex-col font-sans divide-y divide-gray-20">
+     {%# MonthGrid::ExecutiveOrders orders: @executive_orders %}
+     {%# MonthGrid::StartPositions positions: @start_positions %}
+     {%# MonthGrid::EndPositions positions: @end_positions %}
      {% @events.each do |event| %}
        {%@ MonthGrid::Event event: event %}
      {% end %}
