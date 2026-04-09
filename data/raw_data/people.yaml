@@ -1426,6 +1426,21 @@
       if he has been hired or is consulting.
     source: https://www.wired.com/story/next-stage-doge-elon-musk/
 
+- name: John Cafazza
+  sort_name: Cafazza
+  slug: john-cafazza
+  linkedin: https://www.linkedin.com/in/johncafazza/
+  skill: designer
+  positions:
+  - id: nds-cafazza
+    type: appointed
+    agency: NDS
+    category: builder
+    start_date: 2026-04-XX
+    start_date_truth: self-reported
+    title: Senior Product Designer
+    source: https://www.linkedin.com/in/johncafazza/
+
 - name: Joshua Carter
   sort_name: Carter
   slug: joshua-carter
@@ -5723,6 +5738,10 @@
     category: wrecker
     start_date: 2025-03-XX
     start_date_truth: reported
+    end_date: 2026-03-XX
+    end_date_truth: self-reported
+    end_type: replaced
+    replaced_by: doi-luby-strategy
     salary: "$142,488"
     comment: Tyler Hassen reported to be working with Matt Luby to scrutinize grants
     source:
@@ -5730,6 +5749,13 @@
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     agency: DOI
+  - id: doi-luby-strategy
+    agency: DOI
+    type: promotion
+    category: enabler
+    start_date: 2026-03-XX
+    start_date_truth: self-reported
+    source: https://www.linkedin.com/in/mattluby/
 
 - name: Shaun Maguire
   sort_name: Maguire
@@ -8927,6 +8953,9 @@
     her LinkedIn to add the last name of Akis, suggesting she is possibly married to fellow DOGE supporter
     Baris Akis? Since DOGE, she has apparently returned to graduate school, seeking a degree in sustainable
     development.
+  govt_exit_date: 2025-08-XX
+  govt_exit_truth: inferred
+  govt_exit_type: resigned
   positions:
   - id: interior-trampe
     type: unknown
@@ -9076,17 +9105,25 @@
     he graduated from the University of Pennsylvania in 2013. Understandably, there have been concerns
     that he lacks the experience and expertise to effectively review contracts at the VA, especially since
     he is reportedly looking to aggressively cancel many of them quickly.
+  govt_exit_date: 2025-10-XX
+  govt_exit_truth: self-reported
+  govt_exit_type: resigned
   positions:
   - id: va-volpert
     start_date: 2025-03-25
     start_date_truth: reported
+    end_date: 2025-10-XX
+    end_date_truth: self-reported
+    end_type: resigned
     type: appointed
     category: wrecker
     salary: "$167,603"
+    table_note: End date inferred from LinkedIn profile
     source:
     - https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://www.linkedin.com/in/cary-volpert/
     agency: VA
 
 - name: Russell Vought
