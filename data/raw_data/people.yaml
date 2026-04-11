@@ -85,21 +85,21 @@
     agency: GSA
     type: appointed
     category: support
-    start_date: 2025-02-XX
-    start_date_truth: reported
+    start_date: 2025-02-10
+    start_date_truth: verified
     end_date: 2025-07-30
     end_date_truth: verified
     end_type: resigned
     office: Office of the General Counsel
     salary: "$167,503"
-    fuzz: Report just says started sometime in February, end date from own LinkedIn
-    table_note: start date reported as "some point in February"
+    table_note: start date derived from GSA visitor logs
     source:
     - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
     - >-
       https://www.linkedin.com/posts/justin-aimonetti-16a50875_today-marks-the-end-of-a-chapter-an-unforgettable-activity-7356503593681670145-SO7T
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
   - id: detail-doge-aimonetti
     type: detailed
     category: support
@@ -1209,16 +1209,17 @@
     agency: GSA
     type: appointed
     category: support
-    start_date: 2025-02-XX
-    sort_date: 2025-02-16
+    start_date: 2025-02-28
     start_date_truth: reported
     salary: "$167,603"
     fuzz: Just listed in March as someone on the GSA payroll
+    table_note: Receives GSA badge on 2/28
     replaced_by: eop-boizelle
     source:
     - https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
   - id: doge-boizelle
     type: detailed
     category: support
@@ -1294,13 +1295,14 @@
     type: appointed
     agency: GSA
     category: support
-    start_date: 2025-03-XX
+    start_date: 2025-03-(17)~
     start_date_truth: reported
-    sort_date: 2025-03-25
-    table_note: linked to GSA by ProPublica, start date guessed
+    sort_date: 2025-03-17
+    table_note: signs in someone as GSA employee on 3/24, assuming not new employee that day, but in March.
     comment: Not verified, but NYT links to her to GSA also, so assuming she started there
     source:
     - https://projects.propublica.org/elon-musk-doge-tracker/
+    - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
   - id: detail-doge-ftc-bryant
     type: detailed
     category: wrecker
@@ -1754,10 +1756,9 @@
     category: builder
     title: Senior Advisor
     title_type: advisor
-    sort_date: 2025-04-15
-    start_date: 2025-04-XX
-    start_date_truth: self-reported
-    table_note: Date guessed based on reporting from ProPublica and 404 Media on ai.gov
+    start_date: 2025-03-18
+    start_date_truth: inferred
+    table_note: Date guessed based on multiple sources, signed in first/only time on 3/18
     salary: "$167,603"
     source:
     - https://projects.propublica.org/elon-musk-doge-tracker/
@@ -1765,6 +1766,7 @@
     - https://www.linkedin.com/in/alisonchilds/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
     office: Technology Transformation Services
 
 - name: Yat Choi
@@ -2860,10 +2862,9 @@
     agency: GSA
     type: appointed
     category: builder
-    sort_date: 2025-03-15
-    start_date: 2025-03-XX
+    start_date: 2025-03-18
     start_date_truth: self-reported
-    table_note: Date sourced from LinkedIn
+    table_note: Month sourced from LinkedIn, signed in once on 3/18 (badging in after?)
     salary: "$167,603"
     source:
     - https://projects.propublica.org/elon-musk-doge-tracker/
@@ -2871,6 +2872,7 @@
     - https://www.linkedin.com/in/beeelvy/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
     office: Technology Transformation Services
 
 - name: Charles Ezell
@@ -3378,6 +3380,7 @@
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     - https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+    - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
   - id: detail-gsa-iaf-fox
     agency: IAF
     type: detailed
@@ -4165,6 +4168,21 @@
     in crafting the justifications given to agencies about these moves.
   skill: lawyer
   positions:
+  - id: gsa-joshua-hanley
+    agency: GSA
+    type: appointed
+    category: support
+    start_date: 2025-02-14
+    start_date_truth: inferred
+    salary: "$167,603"
+    office: Office of General Counsel
+    pay_grade: GS-12
+    table_note: At badging on 2/14, so inferring start then
+    source:
+    - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
+    - >-
+      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
   - id: doge-joshua-hanley
     type: detailed
     category: support
@@ -4173,21 +4191,8 @@
     from_truth: inferred
     start_date: 2025-02-24
     start_date_truth: verified
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
-  - id: gsa-joshua-hanley
-    agency: GSA
-    type: appointed
-    category: support
-    start_date: 2025-02-(24)~
-    start_date_truth: inferred
-    sort_date: 2025-02-23
-    salary: "$167,603"
-    office: Office of General Counsel
-    pay_grade: GS-12
     source:
-    - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
-    - >-
-      https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
 
 - name: Christina Hanna
   sort_name: Hanna
@@ -4937,6 +4942,7 @@
     sort_date: 2025-02-01
     source:
     - https://projects.propublica.org/elon-musk-doge-tracker/
+    - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
   - id: sba-kizenko
     agency: SBA
     type: detailed
@@ -7866,15 +7872,15 @@
     type: appointed
     category: wrecker
     salary: "$167,603"
-    start_date: 2025-02-12
+    start_date: 2025-02-10
     start_date_truth: reported
-    table_note: >-
-      start inferred from [his father's article about his role](https://www.cjr.org/opinion/doge-journalism-ethics-father-son.php)
+    table_note: start inferred from signing in visitor in GSA logs
     comment: Riley Sennott's father reports that he started at GSA nine days after 2025-02-03
     source:
     - https://www.cjr.org/opinion/doge-journalism-ethics-father-son.php
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
   - id: detail-gsa-nasa-sennott
     type: detailed
     category: wrecker
@@ -8990,6 +8996,9 @@
   blurb: >-
     A latecomer to DOGE, Alexander joined up in April at GSA and was detailed to HHS in June. His sole
     background experience has been a stint as a finance manager at Proctor & Gamble for the 3 years prior.
+  govt_exit_date: 2026-04-XX
+  govt_exit_truth: self-reported
+  govt_exit_type: resigned
   positions:
   - id: gsa-tullman
     type: appointed
@@ -8997,7 +9006,10 @@
     agency: GSA
     sort_date: 2025-04-15
     start_date: 2025-04-XX
-    start_date_truth: verified
+    start_date_truth: self-reported
+    end_date: 2026-04-XX
+    end_date_truth: self-reported
+    end_type: resigned
     title: Senior Advisor
     title_type: advisor
     source:
@@ -9010,7 +9022,10 @@
     from_truth: inferred
     sort_date: 2025-07-15
     start_date: 2025-07-XX
-    start_date_truth: verified
+    start_date_truth: self-reported
+    end_date: 2026-01-XX
+    end_date_truth: self-reported
+    end_type: detail_ended
     title: Senior Advisor
     title_type: advisor
     source:
@@ -9676,8 +9691,8 @@
     type: appointed
     category: wrecker
     agency: GSA
-    sort_date: 2025-03-05
-    start_date: 2025-03-XX
+    sort_date: 2025-03-24
+    start_date: 2025-03-(24)~
     start_date_truth: inferred
     end_date: 2025-08-XX
     end_date_truth: self-reported
@@ -9686,8 +9701,10 @@
     title_type: advisor
     table_note: >-
       Emails from Peace Corps staff shared via FOIA reveal that she was detailed from GSA, this matches
-      common pattern for wreckers
-    source: https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/r_9nu.fNf5II/v0
+      common pattern. Signed in once at GSA on 3/24 (may have received badge that date)
+    source:
+    - https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/r_9nu.fNf5II/v0
+    - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
   - id: detail-peace-corps-youngs
     type: detailed
     category: wrecker
