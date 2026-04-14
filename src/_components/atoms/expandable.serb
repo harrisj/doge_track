@@ -1,0 +1,6 @@
+<details class="collapse">
+  <summary class="collapse-title p-0">{{ content | raw }}</summary>
+  <div class="collapse-content text-sm p-0">
+    {{ slotted :extra }}
+  </div>
+</details>

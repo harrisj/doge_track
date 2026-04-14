@@ -3,7 +3,7 @@
 module Molecules
   # Summarizes a position into a block of text
   class PositionSummary < Bridgetown::Component
-    def initialize(position:, agency:)
+    def initialize(position:, agency: nil)
       super()
       @position = position
       @agency = agency

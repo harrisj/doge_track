@@ -55,8 +55,14 @@ module MonthGrid
     end
 
     def converts_section
-      to_position(types: ['converted'], icon: 'fa-person-shelter', verb: 'converted to permanent position',
-                  conjunction: 'as')
+      positions = @positions.select { |pos| pos.type == 'converted' }
+
+      html_map(positions) do |pos|
+        render ConversionPosition.new(pos)
+      end
+
+      # to_position(types: ['converted'], icon: 'fa-person-shelter', verb: 'converted to permanent position',
+      #            conjunction: 'as')
     end
 
     def promotions_section
@@ -68,13 +74,19 @@ module MonthGrid
     end
 
     def template
+      # html lambda {
+      #   <<~HTML
+      #     #{html -> { starts_section }}
+      #     #{html -> { details_section }}
+      #     #{html -> { converts_section }}
+      #     #{html -> { promotions_section }}
+      #     #{html -> { demotions_section }}
+      #   HTML
+      # }
+
       html lambda {
         <<~HTML
-          #{html -> { starts_section }}
-          #{html -> { details_section }}
           #{html -> { converts_section }}
-          #{html -> { promotions_section }}
-          #{html -> { demotions_section }}
         HTML
       }
     end
