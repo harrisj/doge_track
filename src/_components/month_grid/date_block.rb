@@ -2,7 +2,7 @@
 
 module MonthGrid
   # Represents a single date in the MonthGrid
-  class DateRow < Bridgetown::Component
+  class DateBlock < Bridgetown::Component
     def initialize(date:)
       super()
       @date = date

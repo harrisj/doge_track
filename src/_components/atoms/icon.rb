@@ -38,12 +38,14 @@ module Atoms
       builder: { css: 'fa-laptop-code', aria: 'Builder', text: 'Builder' },
       person: { css: 'fa-person', aria: 'Person', text: 'Person' },
 
+      exec_order: { css: 'fa-file-contract', aria: 'Executive Order', text: 'Executive Order' },
+
       external_link: { css: 'fa-up-right-from-square', aria: 'External Link', text: 'External Link' },
       internal_transfer: { css: 'fa-arrows-left-right', aria: 'Internal Transfer', text: 'Internal' },
       detailed: { css: 'fa-arrow-right', aria: 'Detailed To', text: 'Detailed To' },
       detailed_left: { css: 'fa-arrow-left', aria: 'Detailed From', text: 'Detailed From' },
       promotion: { css: 'fa-arrow-up', aria: 'Promotion', text: 'Promotion' },
-      demotion: { css: 'fa-arrown-down', aria: 'Demotion', text: 'Demotion' },
+      demotion: { css: 'fa-arrow-down', aria: 'Demotion', text: 'Demotion' },
       converted: { css: 'fa-person-shelter', aria: 'Converted to Permanent Position', text: 'Converted' },
 
       project: { css: 'fa-clipboard', aria: 'DOGE Project', text: 'Project' },

@@ -17,11 +17,11 @@ module MonthGrid
       @last_date = Date.new(@year, @month, -1)
 
       day_unknown = Date.new(@year, @month, 1).unspecified!(:month)
-      @undated = DateRow.new(date: day_unknown)
+      @undated = DateBlock.new(date: day_unknown)
 
       @days = {}
       (@first_date..@last_date).each do |date|
-        @days[date] = DateRow.new(date: date)
+        @days[date] = DateBlock.new(date: date)
       end
 
       initialize_events
@@ -78,7 +78,7 @@ module MonthGrid
     end
 
     def initialize_exec_orders
-      orders = ExecutiveOrder.in_year_month(@year, @month)
+      orders = ::ExecutiveOrder.in_year_month(@year, @month)
       orders.each do |order|
         get_date(order.date).add_executive_order(order)
       end
