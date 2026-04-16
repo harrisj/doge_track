@@ -11,7 +11,7 @@ module Builders
         add_resource :months, "#{current.strftime('%Y-%m')}.serb" do
           layout :page
           title current.strftime('%b %Y')
-          permalink "/months/#{current.strftime('%Y/%m')}/"
+          permalink "/timeline/#{current.strftime('%Y/%m')}/"
           content <<~HERE
             {%@ Atoms::Title title: "#{current.strftime('%b %Y')}" %}
             <div class="my-2">

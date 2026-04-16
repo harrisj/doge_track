@@ -8,10 +8,11 @@ module MonthGrid
   class Main < Bridgetown::Component
     attr_reader :first_date, :last_date, :undated
 
-    def initialize(year:, month:)
+    def initialize(year:, month:, agency_id: nil)
       super()
       @year = year
       @month = month
+      @agency_id = agency_id
 
       @first_date = Date.new(@year, @month, 1)
       @last_date = Date.new(@year, @month, -1)
