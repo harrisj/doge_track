@@ -50,14 +50,12 @@ module MonthGrid
     end
 
     def extra_contents
-      <<~HTML
-        <ul class="list-none">
+      extra_table <<~HTML
         #{html -> { position_extra(@position) }}
         #{html -> { title_extra(@position) }}
         #{html -> { salary_extra(@position) }}
         #{html -> { sources_extra(@position) }}
         #{html -> { table_note_extra(@position) }}
-        </ul>
       HTML
     end
   end

@@ -36,16 +36,12 @@ module MonthGrid
 
     def extra_contents
       html_map(@positions) do |position|
-        <<~HTML
-           <div>
-             <ul class="list-none">
-               #{html -> { position_extra(position) }}
-               #{html -> { title_extra(position) }}
-               #{html -> { salary_extra(position) }}
-               #{html -> { sources_extra(position) }}
-               #{html -> { table_note_extra(position) }}
-             </ul>
-          </div>
+        extra_table <<~HTML
+          #{html -> { position_extra(position) }}
+          #{html -> { title_extra(position) }}
+          #{html -> { salary_extra(position) }}
+          #{html -> { sources_extra(position) }}
+          #{html -> { table_note_extra(position) }}
         HTML
       end
     end

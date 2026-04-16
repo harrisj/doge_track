@@ -5,7 +5,9 @@
        {%@ MonthGrid::SingleExecOrder order: exec_order %}
      {% end %}
      {%@ MonthGrid::ClusterStartPositions positions: @start_positions %}
-     {%# MonthGrid::EndPositions positions: @end_positions %}
+     {% @end_positions.each do |pos| %}
+       {%@ MonthGrid::SinglePositionExit position: pos %}
+     {% end %}
      {% @events.each do |event| %}
        {%@ MonthGrid::SingleEvent event: event %}
      {% end %}

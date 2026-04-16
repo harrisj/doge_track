@@ -25,17 +25,15 @@ module MonthGrid
     end
 
     def exec_order_extra(order)
-      <<~HTML
-        <li>#{render Atoms::Icon.new('table_note')} <em>#{text -> { order.short_summary }}</em></li>
+      extra_item 'table_note', <<~HTML
+        <em>#{text -> { order.short_summary }}</em>
       HTML
     end
 
     def extra_contents
-      <<~HTML
-        <ul class="list-none">
+      extra_table <<~HTML
         #{html -> { exec_order_extra(@order) }}
         #{html -> { agencies_extra(@order) }}
-        </ul>
       HTML
     end
   end

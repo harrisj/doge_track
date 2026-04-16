@@ -53,8 +53,8 @@ module Atoms
       fuzz: { css: 'fa-question', aria: 'Fuzziness', text: 'Fuzziness' },
       source: { css: 'fa-receipt', aria: 'Source', text: 'Source' },
       table_note: { css: 'fa-asterisk', aria: 'Note', text: 'Note' },
-      salary: { css: 'fa-money-bill-1', aria: 'Salary', text: 'Salary' },
-      job_title: { css: 'fa-address-card', aria: 'Position Title', text: 'Title' }
+      salary: { css: 'fa-dollar-sign', aria: 'Salary', text: 'Salary' },
+      job_title: { css: 'fa-map-pin', aria: 'Position Title', text: 'Title' }
     }.freeze
 
     def icon_css
@@ -101,7 +101,7 @@ module Atoms
     def template
       html lambda {
         <<~HTML.rstrip
-          <i class="fa-sharp fa-solid #{text -> { icon_css }}" aria-hidden="true"#{html -> { aria_attr }}></i><span class="sr-only">#{text -> { aria }}: </span>
+          <i class="inline-block size-5 mx-auto fa-sharp fa-solid #{text -> { icon_css }}" aria-hidden="true"#{html -> { aria_attr }}></i><span class="sr-only">#{text -> { aria }}: </span>
         HTML
       }
     end

@@ -25,14 +25,12 @@ module MonthGrid
     end
 
     def extra_contents
-      <<~HTML
-        <ul class="list-none">
+      extra_table <<~HTML
         #{html -> { fuzz_extra(@event) }}
         #{html -> { sources_extra(@event) }}
         #{html -> { agencies_extra(@event) }}
         #{html -> { people_extra(@event) }}
         #{html -> { projects_extra(@event) }}
-        </ul>
       HTML
     end
   end
