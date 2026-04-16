@@ -2,7 +2,7 @@
 
 module MonthGrid
   # A collection of agency positions *
-  class GroupedAgencyPositions < DateItem
+  class GroupedAgencyStarts < DateItem
     include ExtraMixins
 
     def initialize(agency_id:, positions:)
@@ -21,10 +21,8 @@ module MonthGrid
       'appointed'
     end
 
-    def hires_summary
-      return unless @hires.any?
-
-      people = @hires.map { |pos| pos.person || pos.doge_alias }
+    def summary
+      people = @positions.map { |pos| pos.person || pos.doge_alias }
       verb = people.one? ? 'starts' : 'start'
 
       all_titles = @hires.map(&:title).uniq
@@ -32,35 +30,6 @@ module MonthGrid
 
       <<~HTML.chomp
         #{text -> { ' ' }}#{render Atoms::PeopleList.new(people, style: :sentence)} #{text -> { verb }}#{text -> { title }} at #{render Atoms::AgencyLink.new(@agency)}.
-      HTML
-    end
-
-    def details_summary
-      return unless @details.any?
-
-      grouped_from = @details.group_by(&:from_agency_id)
-
-      html_map(grouped_from) do |grp|
-        from_id, positions = grp
-        people = positions.map { |pos| pos.person || pos.doge_alias }
-
-        if from_id
-          <<~HTML.chomp
-            #{text -> { ' ' }}#{render Atoms::PeopleList.new(people, style: :sentence)} detailed from #{render Atoms::AgencyLink.new(from_id)} to #{render Atoms::AgencyLink.new(@agency)}
-          HTML
-        else
-          <<~HTML.chomp
-            #{text -> { ' ' }}#{render Atoms::PeopleList.new(people, style: :sentence)} detailed from unknown agency to #{render Atoms::AgencyLink.new(@agency)}.
-          HTML
-        end
-      end
-    end
-
-    def summary
-      raise "This shouldn't happen" if @details.empty? && @hires.empty?
-
-      <<~HTML.chomp
-        #{html -> { hires_summary }} #{html -> { details_summary }}
       HTML
     end
 

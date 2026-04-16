@@ -10,13 +10,24 @@ module MonthGrid
 
     def starts_section
       by_agency = @positions.select do |pos|
-        %w[appointed consultant detailed].include?(pos.type) && pos.person
+        %w[appointed consultant].include?(pos.type)
       end.group_by(&:agency_id)
       return unless by_agency.any?
 
       html_map(by_agency) do |grp|
         agency_id, positions = grp
-        render GroupedAgencyPositions.new(agency_id: agency_id, positions: positions)
+        render GroupedAgencyStarts.new(agency_id: agency_id, positions: positions)
+      end
+    end
+
+    def details_section
+      details = @positions.select { |pos| pos.type == 'detailed' }
+      by_agency = details.group_by { |pos| [pos.agency_id, pos.from_agency_id] }
+      return unless by_agency.any?
+
+      html_map(by_agency) do |grp|
+        agency_ids, positions = grp
+        render GroupedAgencyDetails.new(agency_id: agency_ids[0], from_agency_id: agency_ids[1], positions: positions)
       end
     end
 
@@ -48,6 +59,7 @@ module MonthGrid
       html lambda {
         <<~HTML
           #{html -> { starts_section }}
+          #{html -> { details_section }}
           #{html -> { converts_section }}
           #{html -> { promotions_section }}
           #{html -> { demotions_section }}
