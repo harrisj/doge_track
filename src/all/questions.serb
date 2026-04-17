@@ -3,7 +3,7 @@ title: All Questions
 description: A page collecting all the open questions about people, agencies, systems, etc. that I am curious about
 layout: page
 ---
-{%@ 'atoms/title', title: 'All Questions' %}
+{%@ Atoms::Title title: 'All Questions' %}
 {% import "macros" %}
 
 <ul class="list px-0">
@@ -14,10 +14,10 @@ layout: page
     <div class="flex flex-wrap content-center align-top leading-5 not-prose">
       <div class="flex-none pe-2">{{ render EdtfFormat.new(q.date, :iso) }}</div>
       {% if q.agency %}
-        <div class="flex-none pe-2"><i class="fa-sharp fa-solid fa-building mr-1"></i>{{ agency_link(q.agency) }}</div>
+        <div class="flex-none pe-2"><i class="fa-sharp fa-solid fa-building mr-1"></i>{%@ Atoms::AgencyLink q.agency %}</div>
       {% end %}
       {% if q.person %}
-        <div class="flex-none pe-2"><i class="fa-sharp fa-solid fa-user mr-1"></i>{{ person_link(q.person) }}</div>
+        <div class="flex-none pe-2"><i class="fa-sharp fa-solid fa-user mr-1"></i>{%@ Atoms::PersonLink q.person %}</div>
       {% end %}
       {% if q.doge_alias_id %}
         <div class="flex-none pe-2"><i class="fa-sharp fa-solid fa-secret-user mr-1"></i>{{ q.doge_alias_id }}</div>
@@ -30,7 +30,7 @@ layout: page
       {% end %}
     </div>
     <div class="pt-1 my-text">{{ q.question }}</div>
-    <div class="pt-1 my-text italic">{{ q.context | md | strip_p }}</div>
+    <div class="pt-1 my-text italic">{%@ Atoms::Blurb q.context %}</div>
   </div>
 </li>
 {% end %}

@@ -1,0 +1,26 @@
+<tr class="font-sans" id="{{ @event.id }}">
+  <td class="align-top border-base-300">
+    <div class="my-date">{%@ Atoms::DateLabel @event.date %}</div>
+    {% if @agency.nil? || @event.agencies != [@agency] %}<div>{%@ Atoms::AgenciesList @event.agencies %}</div>{% end %}
+  </td>
+  
+  <td class="align-top">
+    <div class="font-sans">
+      {%@ Atoms::SourceBox sources: @event.sources %}
+      <div class="inline text-base-content/75">{{ render EventLabel.new(@event.type, :responsive) }}</div>
+        {{ @event.linkified_text | raw }}
+        {% if @event.fuzz %} <span class="italic">(fuzz: {%@ Atoms::Blurb @event.fuzz %})</span>{% end %}
+        {% if @event.questions && @event.questions.any? %}{%@ Atoms::QuestionsList @event.questions %}{% end %}
+        {% if @event.type == 'interagency' %}
+          {{ people_list | safe }}
+        {% end %}
+        {% if @show_directories && @event.type == 'directory' %}
+          {{ people_list | safe }}
+        {% end %}
+        {% if @show_projects && @event.projects.any? %}
+          {{ projects_list | safe }}
+        {% end %}
+        </div>
+      </td>
+    </tr>
+ 

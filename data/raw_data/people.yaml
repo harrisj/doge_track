@@ -2580,23 +2580,6 @@
   govt_exit_truth: guessed
   govt_exit_type: resigned
   positions:
-  - id: opm-employee-15
-    type: appointed
-    category: support
-    agency: OPM
-    start_date: 2025-02-03
-    start_date_truth: verified
-    end_date: 2025-03-05
-    end_date_truth: verified
-    end_type: resigned
-    salary: "$0"
-    source:
-    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
-    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
-    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-    table_note: Start date guessed from system access.
-    name: Stephen Duarte
-    alias: OPM-15
   - id: opm-stephen-duarte
     type: appointed
     category: support
@@ -2624,6 +2607,9 @@
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    same_as: opm-stephen-duarte
+    name: Stephen Duarte
+    alias: OPM-15
 
 - name: Leland Dudek
   slug: leland-dudek

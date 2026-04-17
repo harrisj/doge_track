@@ -4,7 +4,7 @@ template_engine: serbea
 title: All Source Citations
 description: A comprehensive listing of all the source citations on a single page
 ---
-{%@ 'atoms/title', title: 'All The Source Citations' %}
+{%@ Atoms::Title title: 'All The Source Citations' %}
 
 {% undated_sources = Source.where(pub_date: nil) %}
 
@@ -26,16 +26,16 @@ description: A comprehensive listing of all the source citations on a single pag
                 <div class="flex flex-col gap-1">
                 {% sources.each do |source| %}
                 <div>
-                    <div><a href="{{ source.url }}"><cite>{{ source.title }}</cite></a>, {{ source.publisher.name }}</div>
+                    <div><aop href="{{ source.url }}"><cite>{{ source.title }}</cite></a>, {{ source.publisher.name }}</div>
                     {% if source.agencies.any? || source.people.any? %}
-                    <div class="ml-4 flex flex-row gap-1"><small>
-                    {% if source.agencies.any? %}
-                      <div><i class="fa-sharp fa-solid fa-building mr-1"></i>{{ source.agencies | agency_links }}</span>
-                    {% end %}
-                    {% if source.people.any? %}
-                      <span><i class="fa-sharp fa-solid fa-user mr-1"></i>{{ source.people | people_links }}</span>
-                    {% end %}
-                    </small></div>
+                    <ul class="inline-compact ml-4">
+                      {% if source.agencies.any? %}
+                        {% source.agencies.each do |agency| %}<li class="inline-compact">{%@ Atoms::AgencyLink agency %}</li>{% end %}
+                      {% end %}
+                      {% if source.people.any? %}
+                        {% source.people.each do |person| %}<li class="inline-compact">{%@ Atoms::PersonLink person %}</li>{% end %}
+                      {% end %}
+                    </ul></small>
                     {% end %}
                 </div>
                 {% end %}

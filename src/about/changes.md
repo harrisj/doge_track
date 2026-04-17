@@ -23,7 +23,7 @@ This is not a definitive list of all changes to the project (completists can alw
 {% if rec.notes && rec.notes.any? %}
 <ul class="leading-tight mt-0">
 {% rec.notes.each do |note| %}
-<li>{{ note | md | strip_p }}</li>
+<li>{%@ Atoms::Blurb note %}</li>
 {% end %}
 <li><a href="https://github.com/harrisj/doge_track/commits/main/?since={{ rec.start }}&until={{ rec.end }}">[View All Changes]</a></li>
 </ul>
@@ -32,7 +32,7 @@ This is not a definitive list of all changes to the project (completists can alw
 {% if rec.names.any? %}
 <h2 class="text-lg mt:2">Names Added</h2>
 
-<p>{% rec.names.each_with_index do |name, i| %}{% if i > 0 %}, {% end %}{{ person_link(name) }}{% end %}</p>
+<p>{%@ Atoms::PeopleList rec.names, raise_miss: false %}</p>
 {% end %}
 
 {% if rec.positions.any? %}
@@ -46,7 +46,7 @@ This is not a definitive list of all changes to the project (completists can alw
 <h2 class="text-lg mt:2">Events Added</h2>
 
 {% events = Event.eager_graph(:agencies, :people).where({Sequel[:events][:id] => rec.events}).order(:date).all.compact %}
-{%@ 'tables/compact_event_timeline', events: events, month_separator: false, agency_col: true %}
+{%@ Table::Events events, month_separator: false %}
 {% end %}
   </div>
 </div>

@@ -19,7 +19,7 @@
       {% elsif govt_system.type == 'saas' %}
         <abbr title="Software as a Service">SaaS</abbr>
       {% elsif govt_system.agency_id %}
-        {{ agency_link(govt_system.agency_id) }}
+        {%@ Atoms::AgencyLink govt_system.agency_id %}
       {% end %}</div>
     </td>
     <td class="align-top my-2col-table-col2">
@@ -30,10 +30,10 @@
         {% roles.each do |role| %}
         <div>
           {% if govt_system.type == 'ssp' || govt_system.type == 'saas' %}
-              {{ agency_link(role.agency_id) }}:
+              {%@ Atoms::AgencyLink role.agency_id %}:
           {% end %}
-          {% if role.name %}{{ person_link(role.name) }}{% elsif role.doge_alias_id %}{{ alias_link(role.doge_alias_id) }}{% end %}
-          {% if role.date_revoked %}(<span class="my-date">{{ render EdtfFormat.new(role.date_granted, :compact_year) }}-{{ render EdtfFormat.new(role.date_revoked, :compact_year) }}</span>{% else %}<span class="my-date">({{ render EdtfFormat.new(role.date_granted, :compact) }}</span>{% end %}{% if role.type != 'read' && role.type != 'unknown' %}, {%@ 'system_access_type', role: role %} access{% end %})
+          {%@ Atoms::PersonOrAliasLink role.name || role.doge_alias_id %}
+          ({%@ Atoms::DateRange start_date: role.date_granted, end_date: role.date_revoked, always_dash: true %}{% if role.type != 'read' && role.type != 'unknown' %}, {%@ 'system_access_type', role: role %} access{% end %})
       </div>
       {% end %}
     </div>

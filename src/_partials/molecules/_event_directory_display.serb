@@ -3,4 +3,4 @@
 {% unnamed_aliases = event.doge_aliases.select {|d| d.name.nil? } %}
 {% named += unnamed_aliases if unnamed_aliases.any? %}
 
-<div class="text-base-content/75">{{ render CategoryLabel.new('person', :icon) }}&nbsp;{% named.each_with_index do |n, i| %}{% if i > 0 %}, {% end %}{% if n.name.nil? %}{{ alias_link(n.id) }}{% else %}{{ person_link(n) }}{% end %}{% end %}</div>
+<div class="text-base-content/75">{{ render CategoryLabel.new('person', :icon) }}&nbsp;{%@ Atoms::PeopleList named %}</div>

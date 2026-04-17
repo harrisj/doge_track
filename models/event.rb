@@ -23,4 +23,9 @@ class Event < Sequel::Model
   def sort_date
     date
   end
+
+  # Query helpers
+  def self.for_year_month(year, month)
+    Event.where(Sequel.like(:date, "#{year}-#{format('%02d', month)}%")).order_by(&:date)
+  end
 end

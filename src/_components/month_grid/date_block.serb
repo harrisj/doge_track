@@ -1,0 +1,16 @@
+<!---- {{ @date }}  ----->
+{% if any? %}
+   <div class="flex flex-col font-sans divide-y-4 divide-gray-20">
+     {% @executive_orders.each do |exec_order| %}
+       {%@ MonthGrid::SingleExecOrder order: exec_order %}
+     {% end %}
+     {%@ MonthGrid::ClusterStartPositions positions: @start_positions %}
+     {%@ MonthGrid::ClusterSystemAccess grants: @system_grants, revokes: @system_revokes %}
+     {% @end_positions.each do |pos| %}
+       {%@ MonthGrid::SinglePositionExit position: pos %}
+     {% end %}
+     {% @events.each do |event| %}
+       {%@ MonthGrid::SingleEvent event: event %}
+     {% end %}
+   </div>
+{% end %}

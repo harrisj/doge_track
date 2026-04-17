@@ -1,0 +1,1 @@
+{% if @position.doge_alias_id && @position.name %}[as {%@ Atoms::AliasLink @position.doge_alias_id %}]{% end %} {{ type_str }} {% if @position.title %}<span class="my-emphasis">{{ @position.title }}</span>{% end %} {{ hire_details }} {% if @position.table_note %}«<span class="italic">{%@ Atoms::Blurb @position.table_note %}</span>»{% end %}

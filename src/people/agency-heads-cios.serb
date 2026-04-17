@@ -7,7 +7,7 @@ text_update: 2025-09-30
 ---
 {% import "macros" %}
 
-{%@ 'atoms/title', title: 'Agency Heads and CIOs' %}
+{%@ Atoms::Title title: 'Agency Heads and CIOs' %}
 
 {%@ 'text' do %}
 
@@ -33,7 +33,7 @@ go through Senate confirmation.
 
 {% end %}
 
-{% acting = Position.where(Sequel.like(:title, 'acting%', case_insensitive: true)).order_by(:sort_date) %}
+{% acting = Position.eager(:person, :agency).where(Sequel.like(:title, 'acting%', case_insensitive: true)).order_by(:sort_date) %}
 
 <table class="my-table-style table-zebra my-2">
 <thead>
@@ -47,10 +47,10 @@ go through Senate confirmation.
 <tbody>
 {% acting.each do |pos| %}
   <tr>
-    <td class="align-top">{{ person_link(pos.name) }}</td>
-    <td class="align-top">{{ agency_link(pos.agency_id)}}</td>
+    <td class="align-top">{%@ Atoms::PersonLink pos.person %}</td>
+    <td class="align-top">{%@ Atoms::AgencyLink pos.agency %}</td>
     <td class="align-top">{{ pos.title }}</td>
-    <td class="align-top my-date">{{ render EdtfFormat.new(pos.start_date, :compact_year) }}{% if pos.end_date %} - {{ render EdtfFormat.new(pos.end_date, :compact_year) }}{% end %}</td>
+    <td class="align-top my-date">{%@ Atoms::DateRange start_date: pos.start_date, end_date: pos.end_date %}</td>
   </tr>
 {% end %}
 </tbody>
@@ -64,16 +64,39 @@ The Vacancies Act does set some conditions for who can serve as acting directors
 - However, the President may direct a person serving in a different Senate-confirmed position to serve as the acting officer
 - Alternatively, the President can select a senior officer of the same agency to be acting director, provided they are at a certain high level and have been at the agency for more than 90 days
 
-In the past, Acting Directors have largely acted as custodial roles, ensuring the operations of the agency continue but usually not making any major changes, since they are filling the seat until the real director can come in. The general assumption has been that agency directors would feel some loyalty to their staff or responsibility to be good stewards of the agency that has been entrusted to their care. The standard practice before this year for government transitions has been that an agency head appointed by the previous administration resigns on Inauguration Day and their deputy or another designee identified during the Presidential transition then serves as acting director until a permanent appointee is sworn in. To give an idea, here is the list of acting officials on January 20th, almost all of whom were current acting officials.
+In the past, Acting Directors have largely acted as custodial roles, ensuring
+the operations of the agency continue but usually not making any major changes,
+since they are filling the seat until the real director can come in. The general
+assumption has been that agency directors would feel some loyalty to their staff
+or responsibility to be good stewards of the agency that has been entrusted to
+their care. The standard practice before this year for government transitions
+has been that an agency head appointed by the previous administration resigns on
+Inauguration Day and their deputy or another designee identified during the
+Presidential transition then serves as acting director until a permanent
+appointee is sworn in. To give an idea, here is the list of acting officials on
+January 20th, almost all of whom were current acting officials.
 
-The Trump administration has dramatically upended this practice, using Acting Directors as a way to significantly change or even completely demolish other agencies. For the destruction of {{ agency_link('USAID') }}, Trump fired the agency's acting head and then declared the recently appointed Secretary of State, Marco Rubio, as the new acting director. Rubio then authorized all the activities of DOGE to demolish the agency. Similarly, within hours of being sworn in as director of the OMB, {{ person_link('Russell Vought') }} was named the acting director of the {{ agency_link('CFPB') }} and ordered similar actions. This tactic has been instrumental in the DOGE takeover at many agencies - in their first acts, the acting directors usually order that DOGE staff are given superuser access and that normal processes for approval should be bypassed and staff be placed on administrative leave so they can't prevent or observe what is happening. It's a bit like a bank heist where the branch manager is spearheading the crime.
+The Trump administration has dramatically upended this practice, using Acting
+Directors as a way to significantly change or even completely demolish other
+agencies. For the destruction of {%@ Atoms::AgencyLink 'USAID' %}, Trump fired the
+agency's acting head and then declared the recently appointed Secretary of
+State, Marco Rubio, as the new acting director. Rubio then authorized all the
+activities of DOGE to demolish the agency. Similarly, within hours of being
+sworn in as director of the OMB, {%@ Atoms::PersonLink 'Russell Vought' %}
+was named the acting director of the {%@ Atoms::AgencyLink 'CFPB' %} and ordered
+similar actions. This tactic has been instrumental in the DOGE takeover at many
+agencies - in their first acts, the acting directors usually order that DOGE
+staff are given superuser access and that normal processes for approval should
+be bypassed and staff be placed on administrative leave so they can't prevent or
+observe what is happening. It's a bit like a bank heist where the branch manager
+is spearheading the crime.
 
 ## Chief Information Officers
 
 In February, OPM urged [agencies to reclassify how Chief Information Officers are hired](https://www.opm.gov/media/juna3mhp/opm-memo-guidance-regarding-redesignating-ses-cio-positions-2-4-2025-final.pdf), with a rule change that makes it easier to fill the position with private sector staff. Since then, several of the DOGE crew have been named directly to the title of Chief Information Officer, giving them authority over IT resources at their agency, in a few cases after the current CIO has been ousted by agency leadership. In some cases, they have used their positions to explicitly grant access to DOGE representatives at the agency. This table only list direct authorizations that have been documented. Indirect influence has likely been more widespread.
 {% end %}
 
-{% cios = Position.where(title_type: ["cto", "cio"]).order_by(:sort_date).all %}
+{% cios = Position.eager(:person, :agency).where(title_type: ["cto", "cio"]).order_by(:sort_date).all %}
 {% grouped_cios = cios.group_by(&:agency_id) %}
 <table class="my-table-style my-2">
 <thead>
@@ -88,9 +111,9 @@ In February, OPM urged [agencies to reclassify how Chief Information Officers ar
 {% grouped_cios.each do |agency_id, positions| %}
     {% positions.each_with_index do |pos, i| %}
     <tr>
-        {% if i == 0 %}<td class="align-top" rowspan="{{ positions.count }}">{{ agency_link(agency_id) }}</td>{% end %}
-        <td>{%@ 'atoms/date_range_label', first: pos.start_date, last: pos.end_date, always_dash: true %}</td>
-        <td>{{ person_link(pos.name) }}</td>
+        {% if i == 0 %}<td class="align-top" rowspan="{{ positions.count }}">{%@ Atoms::AgencyLink pos.agency %}</td>{% end %}
+        <td>{%@ Atoms::DateRange start_date: pos.start_date, end_date: pos.end_date, always_dash: true %}</td>
+        <td>{%@ Atoms::PersonLink pos.person %}</td>
         <td>{{ pos.title }}</td>
     </tr>
     {% end %}
@@ -123,8 +146,8 @@ they also are easily prone to abuse in the wrong hands.
 
 So, it's no surprises that DOGE's work started with replacing CIOs in some key
 agencies with people sympathetic to DOGE's aggressive actions and world view. As
-a particularly potent example oh ho, two DOGE staffers - {{ person_link('Marko
-Elez') }} and {{ person_link('Aram Moghaddassi') }} - at the Department of Labor
+a particularly potent example oh ho, two DOGE staffers - {%@ Atoms::PersonLink 'Marko
+Elez' %} and {%@ Atoms::PersonLink 'Aram Moghaddassi' %} - at the Department of Labor
 were granted access to a highly-sensitive data system belonging to the Office of
 the Inspector General. This system contained sensitive data from Unemployment
 Insurance claims that DOGE wanted to scrape to use in anti-immigration efforts.
@@ -140,4 +163,4 @@ that
 Despite the order here, this data was still considered so highly sensitive that
 DOL counsel determined that access would need to be explicitly granted by the
 agency CIO. Conveniently enough, the agency had just appointed a brand new CIO a
-week before. His name? {{ person_link('Thomas Shedd') }}. {% end %}
+week before. His name? {%@ Atoms::PersonLink 'Thomas Shedd' %}. {% end %}

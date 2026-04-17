@@ -7,7 +7,11 @@
 # versions of RuboCop, may require this file to be generated again.
 
 plugins:
+- rubocop-minitest
 - rubocop-sequel
+
+require:
+- rubocop-bridgetown
 
 AllCops:
   NewCops: enable
@@ -61,3 +65,7 @@ Layout/LineLength:
   Exclude:
   - 'src/_data/site_metadata.rb'
   - 'data/scripts/generate_changed.rb'
+
+Naming/PredicateMethod:
+  Exclude:
+  - 'test/**/test_*.rb'

@@ -3,7 +3,7 @@ layout: page
 title: Unmasked Aliases
 description: Often in court cases (or in news reports), the specific identities of DOGE staffers might be obscured with aliases like "Employee 6." However, it is possible to identify many of them through clues. This page lists all the aliases I know of and the identities of those I have been able to determine.
 ---
-{%@ 'atoms/title', title: 'Unmasked Aliases' %}
+{%@ Atoms::Title title: 'Unmasked Aliases' %}
 
 {%@ "text" do %}
 
@@ -26,7 +26,7 @@ overview of aliases.
 
 {% aliases.each do |group| %}
   {% agency_id = group[0] %}
-  {% agency = find_agency(agency_id) %}
+  {% agency = Agency.with_pk!(agency_id) %}
 
   {% group[1].each do |doge_alias| %}
     {%@ 'sections/alias_card', doge_alias: doge_alias %}

@@ -30,7 +30,7 @@
   {% if govt_system.agency_id %}
   <tr>
   <th class="align-top">Agency</th>
-  <td class="align-top">{{ agency_link(govt_system.agency_id) }}</td>
+  <td class="align-top">{%@ Atoms::AgencyLink govt_system.agency_id %}</td>
   </tr>
   {% end %}
 
@@ -46,7 +46,7 @@
 
   <tr>
   <th class="align-top">Description</th>
-  <td class="align-top">{{ govt_system.description | md | strip_p }}</td>
+  <td class="align-top">{%@ Atoms::Blurb govt_system.description %}</td>
   </tr>
 
   {% if govt_system.population %}
@@ -77,15 +77,15 @@
   <th class="align-top">Access</th>
   <td>
     {% sources = roles.map(&:sources).flatten.compact.uniq %}
-    {%@ 'atoms/float_source_box', sources: sources %}
+    {%@ Atoms::SourceBox sources: sources %}
     <ul>
       {% roles.each do |role| %}
       <li>
       {% if govt_system.type == 'ssp' || govt_system.type == 'saas' %}
-        {{ agency_link(role.agency_id) }}:
+        {%@ Atoms::AgencyLink role.agency_id %}:
       {% end %}
-      {% if role.name %}{{ person_link(role.name) }}{% elsif role.doge_alias_id %}{{ alias_link(role.doge_alias_id) }}{% end %}
-      {%@ 'atoms/date_range_label', first: role.date_granted, last: role.date_revoked %}
+      {%@ Atoms::PersonOrAliasLink role.name || role.doge_alias_id %}
+      {%@ Atoms::DateRange start_date: role.date_granted, end_date: role.date_revoked %}
       {% if role.type != 'read' %}
       ({%@ 'system_access_type', role: role %} access)
       {% end %}

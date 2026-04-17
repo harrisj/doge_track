@@ -7,9 +7,8 @@ Bridgetown.configure do |config|
   #
   # You can also modify options on the configuration object directly, like so:
   #
-  # config.autoload_paths << "models"
   #
-
+  # config.autoload_paths << "./models"
   # You can configure the inflector used by Zeitwerk. In v2.0,
   # ActiveSupport::Inflector will become the default.
   #
@@ -63,6 +62,7 @@ Bridgetown.configure do |config|
   init :"bridgetown-sitemap"
   init :"bridgetown-seo-tag"
   init :"bridgetown-quick-search"
+  init :streamlined
 
   database_uri 'sqlite://data/doge.sqlite'
   except :sequel_tasks do

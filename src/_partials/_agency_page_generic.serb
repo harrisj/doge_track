@@ -1,17 +1,18 @@
 {% import 'macros' %}
 
 <div class="mb-10 mt-1">
-{% agency = find_agency(id) %}
-{%@ 'atoms/agency_title', agency: agency, id: agency.slug %}
+{% agency = Agency.where(Sequel[id: id] | Sequel[slug: id]).first %}
+{% raise "No agency with ID #{id} found" if agency.nil? %}
+{%@ Atoms::AgencyTitle agency: agency %}
 
 {% if agency.linkified_blurb %}
   <div class="my-text">{{ agency.linkified_blurb | raw }}</div>
 {% end %}
 
-{% if agency.all_positions.any? %}
+{% if true %}
 <h2 class="mt-10 mb-0 text-lg sm:text-xl md:text-2xl">Positions</h2>
 
-{%@ 'tables/alt_agency_positions', positions: agency.all_positions, agency: agency %}
+{%@ Table::AgencyPositions agency: agency %}
 {% end %}
 
 {% agency_systems = agency.all_systems %}
@@ -25,7 +26,7 @@
 {% if agency_events.any? %}
 <h2 class="mt-10 mb-0 text-lg sm:text-xl md:text-2xl">Events</h2>
 
-{%@ 'tables/compact_event_timeline', events: agency_events, icon_col: true, agency_col: true, my_agency: agency, show_projects: true %}
+{%@ Table::Events agency_events, agency: agency, show_projects: true %}
 {% end %}
 </div>
 

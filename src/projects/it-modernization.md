@@ -47,7 +47,7 @@ However, DOGE has undertaken some IT modernization projects:
   public](https://www.nytimes.com/2025/05/30/us/politics/doge-cuts-elon-musk-trump.html).
 - **Automating RIFs** DOGE has also assisted in automating the layoff process for [reducing personnel](/projects/personnel/)
 - **Digital Retirement** In late February, one of the cofounders of AirBnb named
-  {{ person_link("Joe Gebbia") }} announced he had started on a project to fully
+  {%@ Atoms::PersonLink "Joe Gebbia" %} announced he had started on a project to fully
   digitize retirement processing at OPM and replace the existing paper-based
   processes. In May, they promoted it as a ["cornerstone of the DOGE
   effort"](https://www.opm.gov/news/opm-launches-historic-fully-online-retirement-application-system-across-federal-government.pdf).
@@ -58,8 +58,7 @@ However, DOGE has undertaken some IT modernization projects:
   assistants within several agencies. More importantly, it has been using AI to
   suggest [regulations for removal](/projects/deregulation).
 - **Websites** Perhaps the most notable IT Modernization work lately by DOGE has
-  been launching various websites, with most of them created by the newer {{
-  agency_link("NDS") }}.
+  been launching various websites, with most of them created by the newer {%@ Atoms::AgencyLink "NDS" %}.
 
 {% project = Project['modernization'] %}
 
@@ -72,5 +71,5 @@ However, DOGE has undertaken some IT modernization projects:
 {% if project.events.any? %}
 ## Related Events
 
-{%@ 'tables/compact_event_timeline', events: project.events, agency_col: true, month_separator: true %}
+{%@ Table::Events project.events %}
 {% end %}

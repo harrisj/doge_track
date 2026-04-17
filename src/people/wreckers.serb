@@ -6,7 +6,7 @@ description: The most well-known of DOGE's projects has been their spread into m
 index_for_search: true
 text_updated: 2026-02-26
 ---
-{%@ '/atoms/title', title: "The Wreckers" %}
+{%@ Atoms::Title title: "The Wreckers" %}
 
 {%@ 'text' do %}
 
@@ -81,25 +81,43 @@ were detailed to other agencies as well.
 {% doge_wreckers = Person.eager_graph(:positions).where(category: "wrecker", from_agency_id: "DOGE").order_by(:sort_name, :sort_date).all() %}
 {%@ 'tables/wrecker_table', wreckers: doge_wreckers %}
 
-Since the beginning of March, DOGE has been moving staff to work within agencies themselves, a move at least in part designed to allow the government to evade expedited discovery in the [*AFL-CIO v. DOL*](https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.51.1.pdf) case. For instance, Jordan Wick became an employee of the CFPB on March 4th, the same day that Amy Gleason and Brad Smith officially onboarded at HHS.
+Since the beginning of March, DOGE has been moving staff to work within agencies
+themselves, a move at least in part designed to allow the government to evade
+expedited discovery in the [*AFL-CIO v.
+DOL*](https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.51.1.pdf)
+case. For instance, Jordan Wick became an employee of the CFPB on March 4th, the
+same day that Amy Gleason and Brad Smith officially onboarded at HHS.
 
 ### Details from the Office of Personnel Management
 
-Many of the early DOGE hires were formally appointed at the Office of Personnel Management. Some technical staff at OPM were supporting the
+Many of the early DOGE hires were formally appointed at the Office of Personnel
+Management. Some technical staff at OPM were supporting the
 
 {% opm_wreckers = Person.eager_graph(:positions).where(category: "wrecker", from_agency_id: "OPM").order_by(:sort_name, :sort_date).all() %}
 {%@ 'tables/wrecker_table', wreckers: opm_wreckers %}
 
 ## Details from the General Services Administration
 
-The {{ agency_link("GSA", "General Service Administration") }} is an agency that provides shared services and procurement support to other federal agencies. Early on, DOGE focused on using the GSA to force cost reductions across government - _e.g._, through cancelling building leases or restricting the use of purchase cards - but GSA has also been the home base for a growing number of wreckers, with many recent hires starting there.
+The {%@ Atoms::AgencyLink "GSA", display: "General Service Administration"
+%} is an agency that provides shared services and procurement support to other
+federal agencies. Early on, DOGE focused on using the GSA to force cost
+reductions across government - _e.g._, through cancelling building leases or
+restricting the use of purchase cards - but GSA has also been the home base for
+a growing number of wreckers, with many recent hires starting there.
 
 {% gsa_wreckers = Person.eager_graph(:positions).where(category: "wrecker", from_agency_id: "GSA").order_by(:sort_name, :sort_date).all() %}
 {%@ 'tables/wrecker_table', wreckers: gsa_wreckers %}
 
 ## Other Agencies
 
-There are also a fair number of Wreckers who started at other agencies, possibly because agency policy or practices might have made it difficult to detail someone from elsewhere. Or, there might have been explicit direction from agency leadership to hire staff there. For instance, there were four Wreckers hired directly from SpaceX to work at the FAA for the short-term on the direction of the Department of Transportation head, Sean Duffy. Some of these names might also be reclassified if I am able to determine they started at GSA or OPM and were actually detailed to the agency listed below.
+There are also a fair number of Wreckers who started at other agencies, possibly
+because agency policy or practices might have made it difficult to detail
+someone from elsewhere. Or, there might have been explicit direction from agency
+leadership to hire staff there. For instance, there were four Wreckers hired
+directly from SpaceX to work at the FAA for the short-term on the direction of
+the Department of Transportation head, Sean Duffy. Some of these names might
+also be reclassified if I am able to determine they started at GSA or OPM and
+were actually detailed to the agency listed below.
 
 {% other_wreckers = Person.eager_graph(:positions).where(category: "wrecker", type: "detailed").exclude(from_agency_id: ["OPM", "GSA", "DOGE"]).order_by(:from_agency_id, :sort_date).all() %}
 
@@ -120,12 +138,12 @@ There are also a fair number of Wreckers who started at other agencies, possibly
   {% other_wreckers.each do |person|  %}
     {% person_from_agency_id = person.positions[0].from_agency_id %}
     <tr class="my-table-sm text-left {% if person_from_agency_id != last_agency %}border-t-black border-t-2{% end %}">
-      <td class="align-top">{{ agency_link(person_from_agency_id) }}</td>
-      <td class="align-top">{{ person_link(person.name) }}</td>
+      <td class="align-top">{%@ Atoms::AgencyLink person_from_agency_id %}</td>
+      <td class="align-top">{%@ Atoms::PersonLink person %}</td>
       <td class="align-top hidden sm:table-cell">{{ person.age }}</td>
-      <td class="align-top my-date"><nobr>{{ render EdtfFormat.new(person.start_date, :compact_year, :filled) }}</nobr></td>
+      <td class="align-top my-date"><nobr>{%@ Atoms::DateLabel person.start_date, padding: :filled %}</nobr></td>
       <td class="align-top hidden md:table-cell">{{ person_skill(person) }}</td>
-      <td class="align-top">{{ person.positions | agencies | compact | uniq | agency_links }}</td>
+      <td class="align-top">{%@ Atoms::AgenciesList person.positions.map(&:agency).compact.uniq %}</td>
     </tr>
     {% last_agency = person_from_agency_id %}
   {% end %}

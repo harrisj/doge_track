@@ -3,7 +3,7 @@ layout: page
 title: Agency Timeline
 description: An overview and timeline of DOGE's activities in various federal agencies.
 ---
-{%@ 'atoms/title', title: 'Agency Timeline' %}
+{%@ Atoms::Title title: 'Agency Timeline' %}
 
 {% indies = Agency.filter(parent_id: nil).filter(Sequel.like(:page_slug, 'independent#%')).eager(:children).all %}
 {% majors = Agency.filter(parent_id: nil).exclude(Sequel.like(:page_slug, 'independent#%')).exclude(id: ['DOGE', 'EOP']).eager(:children).all %}
@@ -17,7 +17,7 @@ description: An overview and timeline of DOGE's activities in various federal ag
 {% end %}
 
 <div class="mt-2">
-{%@ 'tables/agency_first_contacts', agencies: majors %}
+{%@ Table::AgencyFirstContacts agencies: majors %}
 </div>
 </section>
 
@@ -29,6 +29,6 @@ The second fork of DOGE's project has been to harrass and shutdown multiple inde
 {% end %}
 
 <div class="mt-2">
-{%@ 'tables/agency_first_contacts', agencies: indies %}
+{%@ Table::AgencyFirstContacts agencies: indies %}
 </div>
 </section>

@@ -33,14 +33,14 @@ DOGE's work here has involved the following threads:
   processes.
 - **Stop-Work and Snitch Lines** If you can't remove a regulation, you can
   always suspend enforcement. Early on, DOGE set the template for this tactic at
-  the {{ agency_link("CFPB") }}, with agency leadership setting up a special
+  the {%@ Atoms::AgencyLink "CFPB" %}, with agency leadership setting up a special
   "snitch line" email address for the public to report if agency staff were
   still working.
 - **Elimination** DOGE has frequently claimed that it's allowed to [eliminate
   agencies for not being statutorily compliant](/projects/elimination/), and
   many regulations are derived from statute. That said, DOGE still tried to
-  eliminate the {{ agency_link("CFPB") }}, mainly because {{
-  person_link("Russell Vought") }} harbored an intense dislike for it, and I
+  eliminate the {%@ Atoms::AgencyLink "CFPB" %}, mainly because {%@
+  Atoms::PersonLink "Russell Vought" %} harbored an intense dislike for it, and I
   would expect one goal of deregulation is to also eliminate more personnel and
   departments.
 
@@ -54,6 +54,7 @@ DOGE's work here has involved the following threads:
 
 {% if project.events.any? %}
 ## Related Events
+ 
+{%@ Table::Events project.events %}
 
-{%@ 'tables/compact_event_timeline', events: project.events, agency_col: true, month_separator: true %}
 {% end %}

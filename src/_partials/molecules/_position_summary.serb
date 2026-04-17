@@ -45,9 +45,9 @@
   end
 %}
 
-{%@ 'atoms/float_source_box', sources: position.sources %}
+{%@ Atoms::SourceBox sources: position.sources %}
 {% if position.doge_alias_id && position.name %}[as <a href="/people/aliases#{{ position.doge_alias_id }}" class="link-hover">{{ position.doge_alias_id }}</a>]{% end %}
 {{ type_str(position) | raw }}
 {% if position.title %}<span class="font-semibold my-emphasis">{{ position.title }}</span>{% if position.office %}, {{ position.office }}{% end %}{% end %}
 {{ hire_details(position) | raw }}
-{% if position.table_note %}«<span class="italic">{{ position.table_note | md | strip_p }}</span>»{% end %}
+{% if position.table_note %}«<span class="italic">{%@ Atoms::Blurb position.table_note %}</span>»{% end %}

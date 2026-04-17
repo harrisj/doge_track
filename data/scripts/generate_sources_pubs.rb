@@ -18,7 +18,7 @@ def source_from_event!(event, sources_by_url, publishers_by_hostname)
   publisher = publishers_by_hostname[host]
 
   unless publisher
-    puts "No publisher for #{host}"
+    Bridgetown.logger.info "No publisher found for #{host}"
     return
   end
 
