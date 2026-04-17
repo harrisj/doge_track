@@ -110,7 +110,7 @@ module MonthGrid
       return unless govt_system
 
       extra_item 'access', <<~HTML.chomp
-        #{text -> { govt_system.name }}
+        #{render Atoms::SystemLink.new(govt_system, expanded: true)}
       HTML
     end
 
@@ -120,7 +120,7 @@ module MonthGrid
       system_role = grants.first
 
       extra_item 'system_grant', <<~HTML.chomp
-        #{text -> { system_role.type }}, #{render Atoms::DateRange.new(start_date: system_role.date_granted, end_date: system_role.date_revoked)} #{render Atoms::PeopleList.new(grants.map(&:person), style: :comma)}
+        #{text -> { system_role.type }} #{render Atoms::DateRange.new(start_date: system_role.date_granted, end_date: system_role.date_revoked)} #{render Atoms::PeopleList.new(grants.map(&:person), style: :comma)}
       HTML
     end
   end

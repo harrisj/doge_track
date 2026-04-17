@@ -3,13 +3,15 @@
 module Atoms
   # A link to an agency's page
   class SystemLink < Bridgetown::Component
-    def initialize(govt_system, raise_miss: true)
+    def initialize(govt_system, expanded: false, raise_miss: true)
       super()
 
       if govt_system.nil? && raise_miss
         raise ArgumentError,
-              'AliasLink: you must provide a GovtSystem object or an ID or acronym'
+              'SystemLink: you must provide a GovtSystem object or an ID or acronym'
       end
+
+      @expanded = expanded
 
       if govt_system.is_a?(GovtSystem)
         @govt_system = govt_system
@@ -29,12 +31,20 @@ module Atoms
       @govt_system.acronym || @govt_system.name
     end
 
+    def expanded_text
+      return unless @expanded && @govt_system.acronym && @govt_system.acronym != @govt_system.name
+
+      <<~HTML
+        #{text -> { ': ' }}#{text -> { @govt_system.name }}
+      HTML
+    end
+
     def template
       return text -> { '' } if @govt_system.nil?
 
       html lambda {
         <<~HTML.chomp
-          <a class="link-hover" href="/all/systems##{text -> { @govt_system.id }}" title="#{text -> { @govt_system.name }}">#{text -> { display_name }}</a>
+          <a class="link-hover" href="/all/systems##{text -> { @govt_system.id }}" title="#{text -> { @govt_system.name }}">#{text -> { display_name }}</a>#{text -> { expanded_text }}
         HTML
       }
     end

@@ -5,10 +5,11 @@ module MonthGrid
   class GroupedSystemRevokes < DateItem
     include ExtraMixins
 
-    def initialize(agency:, govt_system:, system_revokes:)
+    def initialize(agency:, name:, access_class:, system_revokes:)
       super()
       @agency = agency
-      @govt_system = govt_system
+      @name = name
+      @access_class = access_class
       @system_revokes = system_revokes
     end
 
@@ -21,33 +22,34 @@ module MonthGrid
     end
 
     def summary
-      people = @system_revokes.map { |g| g.person || g.doge_alias }.uniq
-      admin = @system_revokes.any? { |g| %w[admin read_write].include?(g.type) }
+      verb = "has #{@access_class} access revoked for"
 
-      access = admin ? 'elevated access' : 'access'
-      verb = "has #{access} revoked for"
+      if @system_revokes.one?
+        <<~HTML.chomp
+          #{render Atoms::PersonLink.new(@name)} #{text -> { verb }} #{render Atoms::SystemLink.new(@system_revokes.first.govt_system)} at #{render Atoms::AgencyLink.new(@agency)}.
+        HTML
+      else
+        <<~HTML.chomp
+          #{render Atoms::PersonLink.new(@name)} #{text -> { verb }} #{text -> { @system_revokes.count }} systems at #{render Atoms::AgencyLink.new(@agency)}.
+        HTML
+      end
+    end
 
-      <<~HTML.chomp
-        #{render Atoms::PeopleList.new(people, style: :sentence)} #{text -> { verb }} #{render Atoms::SystemLink.new(@govt_system)} at #{render Atoms::AgencyLink.new(@agency)}.
+    def system_access_extra(system_role)
+      extra_item 'system_grant', <<~HTML.chomp
+        #{text -> { system_role.type }}, #{render Atoms::DateRange.new(start_date: system_role.date_granted, end_date: system_role.date_revoked)} #{render Atoms::PersonLink.new(system_role.name)}
       HTML
     end
 
     def extra_contents
-      by_type = @system_revokes.group_by { |g| [g.type, g.date_granted] }
-
-      extra_table <<~HTML
-        #{html -> { system_name_extra(@govt_system) }}
-
-        #{html_map(by_type) do |grp|
-          _, grants = grp
-          grants.map(&:person)
-
-          access_type_extra(grants)
-        end }
-
-        #{html -> { table_note_extra(@govt_system.description) }}
-        #{html -> { projects_extra(@govt_system) }}
-      HTML
+      html_map(@system_revokes) do |grant|
+        extra_table <<~HTML
+          #{html -> { system_name_extra(grant.govt_system) }}
+          #{html -> { system_access_extra(grant) }}
+          #{html -> { table_note_extra(grant.govt_system.description) }}
+          #{html -> { projects_extra(grant.govt_system) }}
+        HTML
+      end
     end
   end
 end

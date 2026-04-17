@@ -16,6 +16,14 @@ class SystemRole < Sequel::Model
     self[:agency] || govt_system&.agency
   end
 
+  def access_class
+    if %w[admin read-write].include?(type)
+      'elevated'
+    else
+      'basic'
+    end
+  end
+
   # Query helpers
   def self.granted_in_year_month(year, month)
     SystemRole.eager(:govt_system, :person,
