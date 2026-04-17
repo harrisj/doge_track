@@ -58,7 +58,7 @@ module MonthGrid
         #{html -> { title_extra(@position) }}
         #{html -> { salary_extra(@position) }}
         #{html -> { sources_extra(@position) }}
-        #{html -> { table_note_extra(@position) }}
+        #{html -> { table_note_extra(@position.table_note) }}
       HTML
     end
   end

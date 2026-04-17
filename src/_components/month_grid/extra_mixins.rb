@@ -37,10 +37,16 @@ module MonthGrid
     end
 
     def people_extra(item)
-      return unless item.people.any?
+      people = if item.is_a?(Array)
+                 item
+               else
+                 item.people
+               end
+
+      return unless people.any?
 
       extra_item 'person', <<~HTML.chomp
-        #{render Atoms::PeopleList.new(item.people, style: :comma)}
+        #{render Atoms::PeopleList.new(people, style: :comma)}
       HTML
     end
 
@@ -62,11 +68,11 @@ module MonthGrid
       end
     end
 
-    def table_note_extra(item)
-      return unless item.table_note
+    def table_note_extra(text)
+      return unless text
 
       extra_item 'table_note', <<~HTML.chomp
-        <span class="italic">#{text -> { item.table_note }}</span>
+        <span class="italic">#{text -> { text }}</span>
       HTML
     end
 
@@ -97,6 +103,24 @@ module MonthGrid
 
       extra_item 'salary', <<~HTML.chomp
         #{text -> { salary }}#{html -> { ' (<abbr title="Special Government Employee">SGE</abbr>)' if position.sge }}
+      HTML
+    end
+
+    def system_name_extra(govt_system)
+      return unless govt_system
+
+      extra_item 'access', <<~HTML.chomp
+        #{text -> { govt_system.name }}
+      HTML
+    end
+
+    def access_type_extra(grants)
+      return if grants.empty?
+
+      system_role = grants.first
+
+      extra_item 'system_grant', <<~HTML.chomp
+        #{text -> { system_role.type }}, #{render Atoms::DateRange.new(start_date: system_role.date_granted, end_date: system_role.date_revoked)} #{render Atoms::PeopleList.new(grants.map(&:person), style: :comma)}
       HTML
     end
   end

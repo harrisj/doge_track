@@ -54,7 +54,9 @@ module Atoms
       source: { css: 'fa-receipt', aria: 'Source', text: 'Source' },
       table_note: { css: 'fa-asterisk', aria: 'Note', text: 'Note' },
       salary: { css: 'fa-dollar-sign', aria: 'Salary', text: 'Salary' },
-      job_title: { css: 'fa-map-pin', aria: 'Position Title', text: 'Title' }
+      job_title: { css: 'fa-map-pin', aria: 'Position Title', text: 'Title' },
+      system_grant: { css: 'fa-display', area: 'Access Grant', text: 'Access Grant' },
+      system_revoke: { css: 'fa-display-slash', area: 'Access Revoked', text: 'Access Revoked' }
     }.freeze
 
     def icon_css

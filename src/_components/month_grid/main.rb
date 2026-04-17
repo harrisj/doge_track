@@ -74,7 +74,12 @@ module MonthGrid
     def initialize_system_roles
       roles = SystemRole.granted_in_year_month(@year, @month)
       roles.each do |role|
-        get_date(role.date_granted).add_system_grant(@year)
+        get_date(role.date_granted).add_system_grant(role)
+      end
+
+      roles = SystemRole.revoked_in_year_month(@year, @month)
+      roles.each do |role|
+        get_date(role.date_revoked).add_system_revoke(role)
       end
     end
 

@@ -9,8 +9,6 @@ module MonthGrid
       super()
       @agency = Agency.with_pk!(agency_id)
       @positions = positions
-
-      @details, @hires = @positions.partition { |pos| pos.type == 'detailed' }
     end
 
     def id
@@ -25,7 +23,7 @@ module MonthGrid
       people = @positions.map { |pos| pos.person || pos.doge_alias }
       verb = people.one? ? 'starts' : 'start'
 
-      all_titles = @hires.map(&:title).uniq
+      all_titles = @positions.map(&:title).uniq
       title = all_titles.one? ? " as #{all_titles[0]}" : ''
 
       <<~HTML.chomp
@@ -40,7 +38,7 @@ module MonthGrid
           #{html -> { title_extra(position) }}
           #{html -> { salary_extra(position) }}
           #{html -> { sources_extra(position) }}
-          #{html -> { table_note_extra(position) }}
+          #{html -> { table_note_extra(position.table_note) }}
         HTML
       end
     end
