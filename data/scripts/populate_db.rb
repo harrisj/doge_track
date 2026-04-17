@@ -197,6 +197,11 @@ aliases_yaml.each do |alias_hash|
 
   a.save_changes
 
+  Array(alias_hash[:source]).each do |src|
+    source = Source[src] || raise("Unable to find source #{src}")
+    a.add_source(source)
+  end
+
   # Positions with names have already been loaded
   next if a.name
 

@@ -11,4 +11,5 @@ class DogeAlias < Sequel::Model
   one_to_many :positions
 
   many_to_many :events
+  many_to_many :sources
 end

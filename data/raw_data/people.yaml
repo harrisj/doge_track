@@ -212,7 +212,9 @@
     end_date_truth: verified
     end_type: resigned
     table_note: End date might just be end of detail
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   - id: detail-opm-usadf-altik
     type: detailed
     category: wrecker
@@ -306,14 +308,14 @@
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
-    end_date: 2025-04-(30)~
-    end_date_truth: reported
-    end_type: unknown
-    table_note: reportedly left OPM in April, but as at FDIC on 4/10, so maybe end of month
+    end_date: 2025-06-06
+    end_date_truth: verified
+    end_type: resigned
     source:
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
     description: Exc Appt NTE
     appt_type_code: 48
     appt_type: Other
@@ -327,6 +329,17 @@
     supervisory: false
     office: Office of the Director
     comment: From FOIA documents
+    same_as: opm-anthony-armstrong
+    name: Anthony Armstrong
+    alias: OPM-09
+  - id: doge-armstrong
+    type: appointed
+    category: leadership
+    agency: DOGE
+    start_date: 2025-01-27
+    start_date_truth: verified
+    salary: "$0"
+    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   - id: detail-opm-fdic-armstrong
     type: detailed
     category: wrecker
@@ -798,7 +811,9 @@
     agency: DOGE
     start_date: 2025-01-27
     start_date_truth: verified
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
 
 - name: Jared Birchall
   sort_name: Birchall
@@ -1046,7 +1061,7 @@
       identified by agency FOIA as having been at the agency, guessing detailed possibly at same time
       as other detailees
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
-  - id: opm-3
+  - id: opm-03
     type: appointed
     category: wrecker
     agency: OPM
@@ -1164,8 +1179,12 @@
     table_note: Court testimony reports conversion to permanent, restored access
     start_date: 2025-08-08
     start_date_truth: verified
+    end_date: 2026-03-07
+    end_date_truth: verified
     salary: "$0"
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.148.0.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.148.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
     name: Akash Bobba
     alias: OPM-03
 
@@ -2112,7 +2131,9 @@
     end_date: 2025-06-09
     end_date_truth: verified
     end_type: unknown
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   - id: gsa-edward-coristine
     agency: GSA
     type: appointed
@@ -2559,6 +2580,23 @@
   govt_exit_truth: guessed
   govt_exit_type: resigned
   positions:
+  - id: opm-employee-15
+    type: appointed
+    category: support
+    agency: OPM
+    start_date: 2025-02-03
+    start_date_truth: verified
+    end_date: 2025-03-05
+    end_date_truth: verified
+    end_type: resigned
+    salary: "$0"
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
+    table_note: Start date guessed from system access.
+    name: Stephen Duarte
+    alias: OPM-15
   - id: opm-stephen-duarte
     type: appointed
     category: support
@@ -4252,11 +4290,15 @@
     supervisory: false
     office: Office of the Director
     comment: Sourced from FOIAed document
-    table_note: Likely 1 of 3 unidentified OPM aliases who started in Feb and left in March 2025
     source:
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
+    same_as: opm-christina-hanna
+    table_note: Start date guessed from system access.
+    name: Christina Hanna
+    alias: OPM-12
 
 - name: Tyler Hassen
   sort_name: Hassen
@@ -5070,8 +5112,8 @@
     agency: OPM
     start_date: 2025-02-18
     start_date_truth: verified
-    end_date: 2025-12-XX
-    end_date_truth: reported
+    end_date: 2025-12-27
+    end_date_truth: verified
     end_type: resigned
     description: Exc Appt NTE
     appt_type_code: 44
@@ -5090,6 +5132,7 @@
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     - https://www.documentcloud.org/documents/26028815-onboard-opm-employee-5/
     - https://www.linkedin.com/in/gavin-kliger-5a339b157/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
     name: Gavin Kliger
     alias: OPM-05
   - id: detail-opm-irs-gavin-kliger
@@ -6441,10 +6484,14 @@
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    same_as: opm-bryanne-mlodzianowski
+    name: Bryanne-Michelle Mlodzianowski
+    alias: OPM-11
 
 - name: Aram Moghaddassi
   sort_name: Moghaddassi
   slug: aram-mohghaddassi
+  linkedin: https://www.linkedin.com/in/aramog/
   age: 26
   skill: coder
   tech_links:
@@ -6457,6 +6504,9 @@
     immigration. His hiring arrangements at DOL were finally made public, revealing that he was hired
     and then immediately detailed to SSA, where he has continued to work past his original projected end
     of term in June. So, there are still a lot of questions about what he has been up to.
+  govt_exit_date: 2026-01-XX
+  govt_exit_truth: self-reported
+  govt_exit_type: resigned
   positions:
   - id: detail-dol-dhs-mohgaddassi
     type: detailed
@@ -6583,11 +6633,16 @@
     category: enabler
     start_date: 2025-09-03
     start_date_truth: verified
+    end_date: 2026-01-XX
+    end_date_truth: self-reported
     title: Chief Information Officer (Technology and Customer Products)
     title_type: cio
     supervisory: true
     table_note: Had reportedly been in an informal co-CIO role with Mike Russo since June, now made official
-    source: https://www.ssa.gov/news/en/press/releases/2025-09-03.html
+    source:
+    - https://www.ssa.gov/news/en/press/releases/2025-09-03.html
+    - https://www.wired.com/story/where-the-doge-operatives-are-now/
+    - https://www.linkedin.com/in/aramog/
 
 - name: Justin Monroe
   sort_name: Monroe
@@ -6639,6 +6694,24 @@
     office: Office of the Director
     source: >-
       https://www.nbcnews.com/politics/national-security/people-ties-musk-top-fbi-critic-are-advising-fbi-director-rcna189567
+  - id: opm-employee-17
+    type: unknown
+    category: support
+    agency: OPM
+    sort_date: 2025-01-31
+    start_date: 2025-01-(31)~
+    start_date_truth: inferred
+    end_date: 2025-06-06
+    end_date_truth: verified
+    end_type: resigned
+    salary: "$0"
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
+    table_note: Start date guessed from system access. No longer in govt 6/06
+    name: Justin Monroe
+    alias: OPM-17
 
 - name: Brooks Morgan
   sort_name: Morgan
@@ -6940,15 +7013,31 @@
     office: Office of the Director
     comment: Details from a FOIA document
     source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
+  - id: opm-employee-18
+    type: appointed
+    category: unknown
+    agency: OPM
+    start_date: 2025-01-20
+    start_date_truth: verified
+    title: Senior Advisor
+    title_type: advisor
+    office: Office of the Director
+    table_note: Start date guessed from system access
+    source: >-
+      https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.177.0_2.pdf
+    name: Noah Peters
+    alias: OPM-18
   - id: detail-opm-doge-peters
     type: detailed
     category: support
     agency: DOGE
     from: OPM
-    from_truth: inferred
+    from_truth: verified
     start_date: 2025-01-24
     start_date_truth: verified
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
 
 - name: Darshan Phillips
   sort_name: Phillips
@@ -7010,11 +7099,11 @@
     series: '0301'
     supervisory: false
     office: Office of the Director
-    comment: I confirmed that OPM Employee 6 is Nikhil but have no other info
     source:
     - https://www.documentcloud.org/documents/26028794-onboard-opm-employee-6/
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
     name: Nikhil Rajpal
     alias: OPM-06
   - id: detail-opm-doge-rajpal
@@ -7190,6 +7279,9 @@
     OPM. He previously has clerked for Supreme Court Justice Clarence Thomas and has served as a senior
     lawyer at the Pacific Foundation, a libertarian organization. As a lawyer in DOGE's team at OPM, he
     probably has worked closely with Noah Peters and Keenan Kmiec.
+  govt_exit_date: 2025-12-22
+  govt_exit_truth: verified
+  govt_exit_type: resigned
   positions:
   - id: opm-austin-raynor
     type: appointed
@@ -7219,6 +7311,8 @@
     name: Austin Raynor
     alias: OPM-10
     table_note: Start date guessed from system access
+    end_date: 2025-12-22
+    end_date_truth: verified
   - id: detail-opm-doge-raynor
     type: detailed
     category: wrecker
@@ -7230,7 +7324,9 @@
     end_date: 2025-12-19
     end_date_truth: verified
     end_type: detail_ended
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
 
 - name: Payton Rehling
   sort_name: Rehling
@@ -8586,6 +8682,12 @@
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    end_date: 2025-02-16
+    end_date_truth: verified
+    end_type: resigned
+    same_as: opm-christopher-stanley
+    table_note: Start date guessed from system access.
+    alias: OPM-13
   - id: doge-stanley
     type: appointed
     category: wrecker
@@ -8595,7 +8697,9 @@
     title: Senior Advisor of Technology and Efficiency
     title_type: advisor
     table_note: Seems to have been hired at DOGE instead of detailed there from OPM
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   - id: fhfa-christopher-stanley
     title: Board Member, Fannie Mae/Freddie Mac
     title_type: other

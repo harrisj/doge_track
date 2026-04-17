@@ -16,6 +16,9 @@
             "description": "If it becomes known this is a specific person, their name goes here",
             "$ref": "name.json"
         },
+        "name_truth": {
+            "$ref": "truth-type.json"
+        },
         "candidates": {
             "description": "If I am reasonably sure it's only a few possibilities, their names would go here",
             "type": "array",
@@ -43,10 +46,17 @@
             "items": {
                 "$ref": "position.json"
             }
+        },
+        "source": {
+            "description": "Source(s) for the information",
+            "$ref": "source-ref.json"
         }
     },
     "required": [
         "id",
         "agency"
-    ]
+    ],
+    "dependentRequired": {
+        "name": ["name_truth", "source"]
+    }
 }

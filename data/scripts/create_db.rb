@@ -23,6 +23,7 @@ DB.create_table! :doge_aliases do
   string :id, primary_key: true
   string :agency_id
   string :name
+  string :name_truth
   text :evidence
   text :linkified_evidence
 end
@@ -287,6 +288,12 @@ DB.create_table! :doge_aliases_events do
   foreign_key :doge_alias_id, :doge_aliases, type: :string
   foreign_key :event_id, :events, type: :string
   unique %i[doge_alias_id event_id]
+end
+
+DB.create_table! :doge_aliases_sources do
+  foreign_key :doge_alias_id, :doge_aliases, type: :string
+  foreign_key :source_id, :sources, type: :string
+  unique %i[doge_alias_id source_id]
 end
 
 DB.create_table! :agencies_cases do

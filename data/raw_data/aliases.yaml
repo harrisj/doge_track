@@ -4,6 +4,8 @@
 - id: CFPB-01
   agency: CFPB
   name: Gavin Kliger
+  name_truth: inferred
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   evidence:
   - >-
     A declaration from [AFL-CIO vs. DOL](https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf)
@@ -19,6 +21,8 @@
 - id: CFPB-02
   agency: CFPB
   name: Jeremy Lewin
+  name_truth: inferred
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   evidence:
   - >-
     A declaration from [AFL-CIO vs. DOL](https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf)
@@ -34,6 +38,10 @@
 - id: ED-01
   agency: Education
   name: Akash Bobba
+  name_truth: inferred
+  source:
+  - https://www.documentcloud.org/documents/26028777-mou-20250212-opm-education-ed-1/
+  - https://www.documentcloud.org/documents/26028810-mou-20250306-nasa-ssa-employee-2/
   evidence:
   - Detail agreement from OPM is signed on 2025-02-12
   - >-
@@ -63,6 +71,9 @@
 - id: ED-02
   agency: Education
   name: Conor Fennessy
+  name_truth: inferred
+  source:
+  - https://www.documentcloud.org/documents/26028781-onboard-education-employee-2/
   evidence:
   - Onboarded by appointment as a Senior Advisor on 2025-01-31 with a salary of $195K
   - >-
@@ -90,6 +101,8 @@
 - id: ED-03
   agency: Education
   name: Ethan Shaotran
+  name_truth: inferred
+  source: https://www.documentcloud.org/documents/26028797-mou-20250212-gsa-education-ed-3/
   evidence:
   - >-
     Detail from GSA was signed on 2025-02-12 for an SGE position so it is not reimbursed and for a maximum
@@ -121,6 +134,8 @@
 - id: ED-04
   agency: Education
   name: Brooks Morgan
+  name_truth: inferred
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
   evidence:
   - >-
     This is the only consultant position listed in [this legal document](https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf)
@@ -149,6 +164,7 @@
 - id: FBI-01
   agency: FBI
   name: Justin Monroe
+  name_truth: reported
   evidence:
   - This person isn't named in the original NBC News report
   - But they're identified specifically in a ProPublica roundup as being this person
@@ -156,6 +172,8 @@
 - id: OPM-01
   agency: OPM
   name: Greg Hogan
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
   evidence:
   - >-
     ["OPM’s former CIO Greg Hogan...[was] formerly designated as OPM-1"](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf)
@@ -163,6 +181,8 @@
 - id: OPM-02
   agency: OPM
   name: Riccardo Biasini
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   evidence:
   - Onboarded on 2025-01-20 as a volunteer SGE
   - PD Number 6A39741 in redacted documents matches one for Riccard Biasini in a FOIA release from OPM
@@ -198,6 +218,8 @@
 - id: OPM-03
   agency: OPM
   name: Akash Bobba
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   evidence:
   - >-
     This is the same person as ED-1 because there is a detail document that appears with two diff redacted
@@ -208,7 +230,7 @@
   - >-
     [He has also been appointed to SSA, which pays his salary, and DOE](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf)
   positions:
-  - id: opm-3
+  - id: opm-03
     type: appointed
     category: wrecker
     agency: OPM
@@ -244,8 +266,12 @@
     table_note: Court testimony reports conversion to permanent, restored access
     start_date: 2025-08-08
     start_date_truth: verified
+    end_date: 2026-03-07
+    end_date_truth: verified
     salary: "$0"
-    source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.148.0.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.148.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   - id: detail-opm-ssa-opm-3
     type: detailed
     category: wrecker
@@ -262,6 +288,8 @@
 - id: OPM-04
   agency: OPM
   name: Edward Coristine
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   evidence:
   - SF-50 is for GSA appointment on 2025-01-20
   - Appointed as an expert at OPM on 2025-01-24
@@ -308,6 +336,8 @@
 - id: OPM-05
   agency: OPM
   name: Gavin Kliger
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   evidence:
   - Onboarded on 2025-01-20 as a provisional appt not to exceed 2025-05-20
   - Senior Advisor to the Director for IT
@@ -350,8 +380,8 @@
     agency: OPM
     start_date: 2025-02-18
     start_date_truth: verified
-    end_date: 2025-12-XX
-    end_date_truth: reported
+    end_date: 2025-12-27
+    end_date_truth: verified
     end_type: resigned
     description: Exc Appt NTE
     appt_type_code: 44
@@ -370,6 +400,7 @@
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     - https://www.documentcloud.org/documents/26028815-onboard-opm-employee-5/
     - https://www.linkedin.com/in/gavin-kliger-5a339b157/
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   - id: opm-05-gsa
     type: detailed
     category: wrecker
@@ -393,6 +424,8 @@
 - id: OPM-06
   agency: OPM
   name: Nikhil Rajpal
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   evidence:
   - Onboarded on 2025-01-24 as a vounteer SGE with a term not to exceed 2025-07-22
   - This is likely one of the other young DOGE crew like Jordan Wick or Luke Farritor, etc.
@@ -421,14 +454,16 @@
     series: '0301'
     supervisory: false
     office: Office of the Director
-    comment: I confirmed that OPM Employee 6 is Nikhil but have no other info
     source:
     - https://www.documentcloud.org/documents/26028794-onboard-opm-employee-6/
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
 
 - id: OPM-07
   name: Brian Bjelde
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   agency: OPM
   evidence:
   - On January 16, 2025, FSEM received 's new hire package
@@ -483,6 +518,7 @@
 - id: OPM-08
   agency: OPM
   name: James Sullivan
+  name_truth: verified
   evidence:
   - PD code matches his name in FOIAed list of OPM new hires
   - Title and start date also match
@@ -505,6 +541,9 @@
 
 - id: OPM-09
   agency: OPM
+  name: Anthony Armstrong
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   evidence:
   - Granted access to USA Performance on 1/31, likely started just before
   - >-
@@ -522,20 +561,23 @@
   - id: opm-employee-09
     type: unknown
     agency: OPM
-    sort_date: 2025-01-31
-    start_date: 2025-01-(31)~
-    start_date_truth: inferred
+    start_date: 2025-01-20
+    start_date_truth: verified
     end_date: 2025-06-06
     end_date_truth: verified
     end_type: resigned
-    table_note: Start date guessed from system access.
+    salary: "$0"
+    same_as: opm-anthony-armstrong
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
 
 - id: OPM-10
   agency: OPM
   name: Austin Raynor
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   evidence:
   - Granted access to USA Performance on 1/31, likely started on 1/30
   - >-
@@ -554,7 +596,9 @@
     category: support
     agency: OPM
     start_date: 2025-01-30
-    start_date_truth: inferred
+    start_date_truth: verified
+    end_date: 2025-12-22
+    end_date_truth: verified
     title: Senior Advisor
     office: Office of the Director
     table_note: Start date guessed from system access
@@ -562,9 +606,13 @@
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.177.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
 
 - id: OPM-11
   agency: OPM
+  name: Bryanne-Michelle Mlodzianowski
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   evidence:
   - Granted access to USA Perfomance on 2/7
   - Based on start, likely could be Bryanne-Michelle Mlodzianowski, Christina Hanna or Stephen Duarte
@@ -572,12 +620,12 @@
     [Govt reports left position on 2025-03-05](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf)
   positions:
   - id: opm-employee-11
-    type: unknown
+    type: appointed
     category: support
     agency: OPM
-    sort_date: 2025-02-07
-    start_date: 2025-02-(07)~
-    start_date_truth: inferred
+    same_as: opm-bryanne-mlodzianowski
+    start_date: 2025-02-03
+    start_date_truth: verified
     end_date: 2025-03-05
     end_date_truth: verified
     end_type: resigned
@@ -588,6 +636,9 @@
 
 - id: OPM-12
   agency: OPM
+  name: Christina Hanna
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   evidence:
   - Granted access to USA Performance on 2/7
   - Based on start, likely could be Bryanne-Michelle Mlodzianowski, Christina Hanna or Stephen Duarte
@@ -595,22 +646,26 @@
     [Govt reports left position on 2025-03-05](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf)
   positions:
   - id: opm-employee-12
-    type: unknown
+    type: appointed
     category: support
     agency: OPM
-    sort_date: 2025-02-07
-    start_date: 2025-02-(07)~
+    start_date: 2025-02-03
     start_date_truth: inferred
     end_date: 2025-03-05
     end_date_truth: verified
     end_type: resigned
+    same_as: opm-christina-hanna
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
     table_note: Start date guessed from system access.
 
 - id: OPM-13
   agency: OPM
+  name: Christopher Stanley
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   evidence:
   - Granted access to USA Performance on 1/31
   - >-
@@ -632,19 +687,22 @@
     type: appointed
     category: support
     agency: OPM
-    sort_date: 2025-01-31
-    start_date: 2025-01-(31)~
-    start_date_truth: inferred
+    start_date: 2025-01-28
+    start_date_truth: verified
     end_date: 2025-02-16
     end_date_truth: verified
     end_type: resigned
+    same_as: opm-christopher-stanley
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
     table_note: Start date guessed from system access.
 
 - id: OPM-14
   name: Chris Young
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   agency: OPM
   evidence:
   - Granted access to USA Performance on 2/7
@@ -661,23 +719,26 @@
     [Govt reports left position on 2025-06-06](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf)
   positions:
   - id: opm-employee-14
-    type: unknown
+    type: appointed
     category: wrecker
     same_as: opm-chris-young
     agency: OPM
-    sort_date: 2025-02-07
-    start_date: 2025-02-(07)~
+    start_date: 2025-01-30
+    start_date_truth: inferred
     end_date: 2025-06-06
     end_date_truth: verified
     end_type: resigned
-    start_date_truth: inferred
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
     table_note: Start date guessed from system access.
 
 - id: OPM-15
   agency: OPM
+  name: Stephen Duarte
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   evidence:
   - Granted access to USA Performance on 2/7
   - Based on start, likely could be Bryanne-Michelle Mlodzianowski, Christina Hanna or Stephen Duarte
@@ -685,22 +746,25 @@
     [Govt reports left position on 2025-03-05](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf)
   positions:
   - id: opm-employee-15
-    type: unknown
+    type: appointed
     category: support
     agency: OPM
-    sort_date: 2025-02-07
-    start_date: 2025-02-(07)~
-    start_date_truth: inferred
+    start_date: 2025-02-03
+    start_date_truth: verified
     end_date: 2025-03-05
     end_date_truth: verified
     end_type: resigned
+    salary: "$0"
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
     table_note: Start date guessed from system access.
 
 - id: OPM-16
   name: Jacob Altik
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   agency: OPM
   evidence:
   - Granted access to USA Performance on 1/31
@@ -716,22 +780,26 @@
     [Govt reports left position on 2025-06-27](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf)
   positions:
   - id: opm-employee-16
-    type: unknown
+    type: appointed
     category: wrecker
     agency: OPM
     same_as: opm-jacob-altik
-    start_date: 2025-01-(31)~
-    start_date_truth: inferred
+    start_date: 2025-01-24
+    start_date_truth: verified
     end_date: 2025-06-27
     end_type: resigned
     end_date_truth: reported
+    table_note: Paid position
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
-    table_note: Start date guessed from system access. No longer in govt on 6/27
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
 
 - id: OPM-17
   agency: OPM
+  name: Justin Monroe
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   evidence:
   - Granted access to USA Performance on 1/31
   - >-
@@ -761,13 +829,18 @@
     end_date: 2025-06-06
     end_date_truth: verified
     end_type: resigned
+    salary: "$0"
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
+    - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
     table_note: Start date guessed from system access. No longer in govt 6/06
 
 - id: OPM-18
   agency: OPM
+  name: Noah Peters
+  name_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   evidence:
   - Granted access to USA Performance on 1/24
   - Court declaration states was appointed Senior Advisor in Office of the Director on 1/20
