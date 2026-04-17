@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module MonthGrid
+module Grid
   # An individual item
   class DateItem < Bridgetown::Component
     def id

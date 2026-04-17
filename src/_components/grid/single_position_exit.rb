@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module MonthGrid
+module Grid
   # Represents a single position
   class SinglePositionExit < DateItem
     include ExtraMixins

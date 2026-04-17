@@ -1,0 +1,16 @@
+<!---- {{ @date }}  ----->
+{% if any? %}
+   <div class="flex flex-col font-sans divide-y-4 divide-gray-20">
+     {% @executive_orders.each do |exec_order| %}
+       {%@ Grid::SingleExecOrder order: exec_order %}
+     {% end %}
+     {%@ Grid::ClusterStartPositions positions: @start_positions %}
+     {%@ Grid::ClusterSystemAccess grants: @system_grants, revokes: @system_revokes %}
+     {% @end_positions.each do |pos| %}
+       {%@ Grid::SinglePositionExit position: pos %}
+     {% end %}
+     {% @events.each do |event| %}
+       {%@ Grid::SingleEvent event: event %}
+     {% end %}
+   </div>
+{% end %}

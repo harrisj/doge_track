@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module MonthGrid
+module Grid
   # A representation of the start positions
   class ClusterSystemAccess < Bridgetown::Component
     def initialize(grants:, revokes:)

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module MonthGrid
+module Grid
   # Represents a single date in the MonthGrid
   class DateBlock < Bridgetown::Component
     def initialize(date:)

@@ -1,14 +1,13 @@
 # frozen_string_literal: true
 
-module MonthGrid
+module Grid
   # A collection of agency positions *
-  class GroupedAgencyDetails < DateItem
+  class GroupedAgencyStarts < DateItem
     include ExtraMixins
 
-    def initialize(agency_id:, from_agency_id:, positions:)
+    def initialize(agency_id:, positions:)
       super()
       @agency = Agency.with_pk!(agency_id)
-      @from_agency = from_agency_id ? Agency.with_pk!(from_agency_id) : nil
       @positions = positions
     end
 
@@ -17,21 +16,19 @@ module MonthGrid
     end
 
     def icon_id
-      'detailed'
+      'appointed'
     end
 
     def summary
       people = @positions.map { |pos| pos.person || pos.doge_alias }
+      verb = people.one? ? 'starts' : 'start'
 
-      if @from_agency
-        <<~HTML.chomp
-          #{text -> { ' ' }}#{render Atoms::PeopleList.new(people, style: :sentence)} detailed from #{render Atoms::AgencyLink.new(@from_agency)} to #{render Atoms::AgencyLink.new(@agency)}
-        HTML
-      else
-        <<~HTML.chomp
-          #{text -> { ' ' }}#{render Atoms::PeopleList.new(people, style: :sentence)} detailed from unknown agency to #{render Atoms::AgencyLink.new(@agency)}.
-        HTML
-      end
+      all_titles = @positions.map(&:title).uniq
+      title = all_titles.one? ? " as #{all_titles[0]}" : ''
+
+      <<~HTML.chomp
+        #{text -> { ' ' }}#{render Atoms::PeopleList.new(people, style: :sentence)} #{text -> { verb }}#{text -> { title }} at #{render Atoms::AgencyLink.new(@agency)}.
+      HTML
     end
 
     def extra_contents

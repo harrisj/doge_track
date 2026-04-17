@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module MonthGrid
+module Grid
   # A representation of the start positions
   class ClusterStartPositions < Bridgetown::Component
     def initialize(positions:)

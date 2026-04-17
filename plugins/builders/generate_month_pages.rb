@@ -15,7 +15,7 @@ module Builders
           content <<~HERE
             {%@ Atoms::Title title: "#{current.strftime('%b %Y')}" %}
             <div class="my-2">
-            {%@ MonthGrid::Main year: #{current.year}, month: #{current.month} %}
+            {%@ Grid::Month year: #{current.year}, month: #{current.month} %}
             </div>
           HERE
         end

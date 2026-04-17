@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module MonthGrid
+module Grid
   # Represents an event in the MonthGrid
   class SingleEvent < DateItem
     include ExtraMixins

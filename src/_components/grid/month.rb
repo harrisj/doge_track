@@ -3,9 +3,9 @@
 require 'edtf'
 
 # Helper for representing a combined of all Month stuff
-module MonthGrid
+module Grid
   # Main class
-  class Main < Bridgetown::Component
+  class Month < Bridgetown::Component
     attr_reader :first_date, :last_date, :undated
 
     def initialize(year:, month:, agency_id: nil)

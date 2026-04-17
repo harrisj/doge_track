@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module MonthGrid
+module Grid
   # Extra mixins
   module ExtraMixins
     def extra_table(body)

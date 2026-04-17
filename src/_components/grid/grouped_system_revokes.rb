@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module MonthGrid
+module Grid
   # A collection of agency positions *
   class GroupedSystemRevokes < DateItem
     include ExtraMixins
