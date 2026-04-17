@@ -5,10 +5,10 @@ module MonthGrid
   class GroupedSystemGrants < DateItem
     include ExtraMixins
 
-    def initialize(agency:, name:, access_class:, system_grants:)
+    def initialize(agency:, people:, access_class:, system_grants:)
       super()
       @agency = agency
-      @name = name
+      @people = people
       @access_class = access_class
       @system_grants = system_grants
     end
@@ -22,15 +22,18 @@ module MonthGrid
     end
 
     def summary
-      verb = "is granted #{@access_class} access to"
+      verb_start = @people.one? ? 'is' : 'are'
+      verb = "#{verb_start} granted #{@access_class} access to"
 
-      if @system_grants.one?
+      systems = @system_grants.map(&:govt_system).uniq
+
+      if systems.one?
         <<~HTML.chomp
-          #{render Atoms::PersonLink.new(@name)} #{text -> { verb }} #{render Atoms::SystemLink.new(@system_grants.first.govt_system)} at #{render Atoms::AgencyLink.new(@agency)}.
+          #{render Atoms::PeopleList.new(@people, style: :sentence)} #{text -> { verb }} #{render Atoms::SystemLink.new(systems.first)} at #{render Atoms::AgencyLink.new(@agency)}.
         HTML
       else
         <<~HTML.chomp
-          #{render Atoms::PersonLink.new(@name)} #{text -> { verb }} #{text -> { @system_grants.count }} systems at #{render Atoms::AgencyLink.new(@agency)}.
+          #{render Atoms::PeopleList.new(@people, style: :sentence)} #{text -> { verb }} #{text -> { systems.count }} systems at #{render Atoms::AgencyLink.new(@agency)}.
         HTML
       end
     end
@@ -42,12 +45,20 @@ module MonthGrid
     end
 
     def extra_contents
-      html_map(@system_grants) do |grant|
+      grouped = @system_grants.group_by(&:govt_system)
+
+      html_map(grouped) do |grp|
+        govt_system, grants = grp
+
         extra_table <<~HTML
-          #{html -> { system_name_extra(grant.govt_system) }}
-          #{html -> { system_access_extra(grant) }}
-          #{html -> { table_note_extra(grant.govt_system.description) }}
-          #{html -> { projects_extra(grant.govt_system) }}
+          #{html -> { system_name_extra(govt_system) }}
+          #{html_map(grants) do |grant|
+            <<~HTML
+              #{html -> { system_access_extra(grant) }}
+            HTML
+          end }
+          #{html -> { table_note_extra(govt_system.description) }}
+          #{html -> { projects_extra(govt_system) }}
         HTML
       end
     end
