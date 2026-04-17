@@ -6,7 +6,7 @@
     {% @positions.each do |pos| %}
       <div>{%@ Atoms::AgencyPositionMoveLabel position: pos, agency: @agency %}{% if pos.start_date %} {%@ Atoms::DateRange start_date: pos.start_date, end_date: pos.end_date %}{% else %} <em>date unknown</em>{% end %} {%@ Molecules::PositionSummary position: pos, agency: @agency %}</div>{% end %}
         {% if @person&.govt_exit_date %}
-          <div class="font-semibold"><span class="text-base-content/75"><i class="fa-sharp fa-solid fa-left-from-bracket"></i> Left govt</span> <span class="my-date">{%@ Atoms::DateLabel @person.govt_exit_date %}</span> ({{ @person.govt_exit_truth }})</div>
+          <div class="font-semibold"><span class="text-base-content/75">{%@ Atoms::Icon 'offboard' %} Left govt</span> <span class="my-date">{%@ Atoms::DateLabel @person.govt_exit_date %}</span> ({{ @person.govt_exit_truth }})</div>
         {% elsif @last_position && @last_position.end_date.to_s =~ /^\d{4}-\d{2}-\d{2}$/ %}
           <div><i class="my-emphasis fa-sharp fa-solid fa-left-from-bracket"></i> {%@ Atoms::PositionEndTypeLabel position: @last_position %} <span class="my-date">{%@ Atoms::DateLabel @last_position.end_date %}</span></div>
         {% end %}

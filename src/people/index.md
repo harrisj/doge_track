@@ -35,11 +35,11 @@ Here are the current members of DOGE that I have linked to specific positions, l
             {% next unless person.positions.first.start_date %}
             {% key = "#{person.sort_date}-#{person.positions.first.agency_id}}}" %}
             <tr>
-                <td class="align_left align-top text-nowrap">{% if key != last_key %}<i class="fa-sharp fa-solid fa-person-to-door" aria-label="Started"></i> {{ render EdtfFormat.new(person.positions.first.sort_date, :iso) }}{% end %}</td>
+                <td class="align_left align-top text-nowrap">{% if key != last_key %}{%@ Atoms::Icon 'appointed'%} {%@ Atoms::DateLabel person.positions.first.sort_date, date_format: :iso %}{% end %}</td>
                 <td class="align-left align-top">{%@ Atoms::AgencyLink person.positions.first.agency_id %}</td>
                 <td class="align-left align-top">{%@ Atoms::PersonLink person %}</td>
                 <td class="align-left align-top hide-cell-mobile">{{ person_skill(person) }}</td>
-                <td class="align-left align-top text-nowrap">{% if person.govt_exit_date %}<b><i class="fa-sharp fa-solid fa-left-from-bracket" aria-label="Left DOGE"></i> {{ render EdtfFormat.new(person.govt_exit_date, :iso) }}{% if person.govt_exit_truth == 'guessed' %}?{% end %}</b>{% elsif person.events.any? %}{% last_event = person.events.last %}<i class="fa-sharp fa-solid fa-users-viewfinder" aria-label="Most recently spotted"></i> {{ render EdtfFormat.new(last_event.date, :iso) }}{% end %}</td>
+                <td class="align-left align-top text-nowrap">{% if person.govt_exit_date %}<b>{%@ Atoms::Icon 'offboard' %} {%@ Atoms::DateLabel person.govt_exit_date, date_format: :iso %}{% if person.govt_exit_truth == 'guessed' %}?{% end %}</b>{% elsif person.events.any? %}{% last_event = person.events.last %}{%@ Atoms::Icon 'sighting' %} {%@ Atoms::DateLabel last_event.date, date_format: :iso %}{% end %}</td>
             </tr>
             {% last_key = key %}
         {% end %}
@@ -66,8 +66,8 @@ Here are the current members of DOGE that I have linked to specific positions, l
                         <td class="my-2col-table-col1 align-top">{{ start_date.strftime("%b %Y") }}</td>
                         <td class="my-2col-table-col2 align-top">
                         <div class="flex flex-col gap-2">
-                        {% if grouped_by_start[key] %}<div><i class="fa-sharp fa-solid fa-person-to-door" aria-label="Started"></i> {%@ Atoms::PeopleList grouped_by_start[key] %}</div>{% end %}
-                        {% if grouped_by_end[key] %}<div><i class="fa-sharp fa-solid fa-left-from-bracket" aria-label="Left DOGE"></i> {%@ Atoms::PeopleList grouped_by_end[key] %}</div>{% end %}
+                        {% if grouped_by_start[key] %}<div>{%@ Atoms::Icon 'onboarded' %} {%@ Atoms::PeopleList grouped_by_start[key] %}</div>{% end %}
+                        {% if grouped_by_end[key] %}<div>{%@ Atoms::Icon 'offboard' %} {%@ Atoms::PeopleList grouped_by_end[key] %}</div>{% end %}
                         </div>
                         </td>
                     </tr>
