@@ -173,8 +173,6 @@ src_yaml = <<~LISTING
           short_title: Independents
     - name: Everything Pages
       pages:
-        - url: /all/people/
-          title: All the People
         - url: /all/events/
           title: All the Events
         - url: /all/positions/

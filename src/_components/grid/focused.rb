@@ -36,11 +36,11 @@ module Grid
 
     def initialize_days
       if @agency
-        events = @agency.events
+        events = @agency.all_events
         positions = @agency.all_positions_and_details_out
-        system_roles = @agency.system_roles
+        system_roles = @agency.all_systems.map(&:system_roles).flatten
       elsif @person
-        events = @person.events
+        events = @person.all_events
         positions = @person.positions
         system_roles = @person.system_roles
       elsif @project

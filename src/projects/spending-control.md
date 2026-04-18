@@ -20,17 +20,11 @@ The goal here is to force budgetary cutbacks even if Congress or the courts migh
 
 {% project = Project['spending'] %}
 
-{% if project.govt_systems.any? %}
-## System Access
-
-{%@ 'tables/project_systems', systems: project.govt_systems %}
-{% end %}
-
 {% if project.events.any? %}
 ## Related Events
 
-
-{%@ Table::Events project.events %}
-
+<div class="not-prose">
+{%@ Grid::Focused project: project %}
+</div>
 
 {% end %}

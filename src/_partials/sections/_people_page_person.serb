@@ -30,11 +30,10 @@
       </div>
     {% end %}
 
-    {% person_events = person.all_events %}
-    {% if person_events.any? %}
+    {% if person.events.any? %}
     <div class="mt-10">
       <h3 class="mb-0 mt-0 h3">Events</h3>
-      {%@ Table::Events person_events, month_separator: false, show_directories: true %}
+      {%@ Grid::Focused person: person %}
     </div>
     {% end %}
 
