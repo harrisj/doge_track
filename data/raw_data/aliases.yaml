@@ -821,21 +821,20 @@
     however.
   positions:
   - id: opm-employee-17
-    type: unknown
+    type: appointed
     category: support
     agency: OPM
-    sort_date: 2025-01-31
-    start_date: 2025-01-(31)~
-    start_date_truth: inferred
+    start_date: 2025-01-28
+    start_date_truth: verified
     end_date: 2025-06-06
     end_date_truth: verified
     end_type: resigned
     salary: "$0"
+    same_as: opm-justin-monroe
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-    table_note: Start date guessed from system access. No longer in govt 6/06
 
 - id: OPM-18
   agency: OPM
@@ -871,6 +870,7 @@
     title: Senior Advisor
     title_type: advisor
     office: Office of the Director
+    same_as: noah-peters-opm
     table_note: Start date guessed from system access
     source: >-
       https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.177.0_2.pdf
