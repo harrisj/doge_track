@@ -1,0 +1,9 @@
+<div class="align-right mb-1 italic">Click any item to expand its details</div>
+
+<div class="grid grid-cols-1 md:grid-cols-[80px_auto] gap-y-4 gap-x-2 text-sm">  
+  {% each_date do |rec| %}
+     {% next unless rec.any? %}
+     <div class="text-lg md:text-sm font-mono"><date>{%@ Atoms::DateLabel rec.date %}</date></div>
+     <div>{{ render rec }}</div>
+  {% end %}
+</div>
