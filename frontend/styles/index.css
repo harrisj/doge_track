@@ -72,6 +72,18 @@ layer(base);
         @apply text-lg;
     }
 
+    .data-grid {
+        @apply grid grid-cols-[min-content_1fr] gap-y-4 gap-x-5 py-5 mb-0 text-xs md:text-sm xl:table-md;
+    }
+
+    .data-grid-span {
+        @apply mt-3 mb-3 col-span-2
+    }
+    
+    .data-grid-title {
+        @apply mt-3 mb-3 col-span-2 text-lg sm:text-xl md:text-2xl;
+    }
+    
     .font-title {
         font-family: "Special Elite", serif;
     }

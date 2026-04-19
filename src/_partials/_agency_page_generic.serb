@@ -9,30 +9,8 @@
   <div class="my-text">{{ agency.linkified_blurb | raw }}</div>
 {% end %}
 
-{% if true %}
-<h2 class="mt-10 mb-0 text-lg sm:text-xl md:text-2xl">Positions</h2>
-
-{%@ Table::AgencyPositions agency: agency %}
-{% end %}
-
-{% agency_systems = agency.all_systems %}
-{% if agency_systems.any? %}
-<h2 class="mt-8 mb-0 text-lg sm:text-xl md:text-2xl">Systems</h2>
-
-{%@ 'tables/agency_system_access', govt_systems: agency_systems, agency: agency %}
-{% end %}
-
-{% if agency.events.any? %}
-<h2 class="mt-10 mb-0 text-lg sm:text-xl md:text-2xl">Events</h2>
-
+<div class="data-grid">
+{%@ Grid::AgencyPositions agency: agency %}
+{%@ Grid::AgencySystems agency: agency %}
 {%@ Grid::Focused agency: agency %}
-{% end %}
 </div>
-
-{% open_questions = Question.filter(answer: nil, agency_id: id).all %}
-{% if open_questions.any? %}
-<h2 class="mt-4 mb-0 text-lg sm:text-xl md:text-2xl">Questions</h2>
-  <div class="mt-3">
-    {%@ 'questions_list', questions: open_questions %}
-  </div>
-{% end %}

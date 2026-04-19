@@ -30,22 +30,6 @@ module Grid
       HTML
     end
 
-    def extra_section
-      contents = extra_contents
-
-      if contents
-        <<~HTML
-          <div class="collapse-content text-sm p-0">
-            <div class="ml-[25px] pt-1 flex flex-col gap-y-3">
-               #{html -> { contents }}
-            </div>
-          </div>
-        HTML
-      else
-        html -> { '' }
-      end
-    end
-
     def template
       html lambda {
         <<~HTML

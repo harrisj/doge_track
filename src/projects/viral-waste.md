@@ -19,7 +19,7 @@ You might notice that many of these examples are from the {%@ Atoms::AgencyLink 
 {% if project.events.any? %}
 ## Related Events
 
-<div class="not-prose">
+ <div class="not-prose">
 {%@ Grid::Focused project: project %}
 </div>
 {% end %}

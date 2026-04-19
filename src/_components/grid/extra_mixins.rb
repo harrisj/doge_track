@@ -5,7 +5,7 @@ module Grid
   module ExtraMixins
     def extra_table(body)
       <<~HTML
-        <table class="table-fixed">
+        <table class="table-fixed text-xs md:text-sm xl:table-md">
           #{html -> { body }}
         </table>
       HTML
@@ -63,7 +63,7 @@ module Grid
 
       html_map(item.sources) do |source|
         extra_item 'source', <<~HTML
-          <a target="_blank" href="#{text -> { source.url }}">#{text -> { source.title }}</a><small> <em>#{text -> { source.publisher.name }}</em>,&nbsp;#{html -> { render Atoms::DateLabel.new(source.pub_date) }}</small>
+          <small><a target="_blank" href="#{text -> { source.url }}"><cite>#{text -> { source.title }}</cite></a> #{text -> { source.publisher.name }},&nbsp;#{html -> { render Atoms::DateLabel.new(source.pub_date) }}</small>
         HTML
       end
     end
@@ -122,6 +122,22 @@ module Grid
       extra_item 'system_grant', <<~HTML.chomp
         #{text -> { system_role.type }} #{render Atoms::DateRange.new(start_date: system_role.date_granted, end_date: system_role.date_revoked)} #{render Atoms::PeopleList.new(grants.map(&:person), style: :comma)}
       HTML
+    end
+
+    def extra_section
+      contents = extra_contents
+
+      if contents
+        <<~HTML
+          <div class="collapse-content text-sm p-0">
+            <div class="ml-[25px] pt-1 flex flex-col gap-y-3">
+               #{html -> { contents }}
+            </div>
+          </div>
+        HTML
+      else
+        html -> { '' }
+      end
     end
   end
 end
