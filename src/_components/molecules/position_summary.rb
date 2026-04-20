@@ -14,10 +14,13 @@ module Molecules
       when 'other'
         nil
       when 'detailed'
-        if @position.from_truth == 'guessed'
-          'likely detailed'
+        detail_type = @position.from_truth == 'guessed' ? 'likely detailed' : 'detailed'
+        if @position.from_agency && @position.agency == @agency
+          html -> { "#{text -> { detail_type }} from #{render Atoms::AgencyLink.new(@position.from_agency)}" }
+        elsif @position.from_agency && @position.from_agency == @agency
+          html -> { "#{text -> { detail_type }} to #{render Atoms::AgencyLink.new(@position.agency)}" }
         else
-          'detailed'
+          detail_type
         end
       when 'promotion'
         @position.title ? 'promoted to' : 'promoted'

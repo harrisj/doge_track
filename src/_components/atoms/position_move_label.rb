@@ -3,11 +3,12 @@
 module Atoms
   # Renders a move label for a position
   class PositionMoveLabel < Bridgetown::Component
-    def initialize(position:, show_dest: true)
+    def initialize(position:, show_dest: true, show_from: true)
       super()
       @position = position
       @agency = @position.agency
       @show_dest = show_dest
+      @show_from = show_from
     end
 
     def destination
@@ -37,7 +38,7 @@ module Atoms
     end
 
     def from_agency_label
-      return unless @position.from_agency_id
+      return unless @show_from && @position.from_agency_id
 
       html lambda {
         <<~HTML.chomp

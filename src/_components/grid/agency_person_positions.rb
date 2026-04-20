@@ -17,11 +17,13 @@ module Grid
 
       if @person.is_a?(Person) && @person&.govt_exit_date
         <<~HTML
-          <div class="font-semibold"><span class="text-base-content/75">#{render Atoms::Icon.new('offboard')} Left govt</span> <span class="my-date">#{render Atoms::DateLabel.new(@person.govt_exit_date)}</span> (#{text -> { @person.govt_exit_truth }})</div>
+          <div>#{render Atoms::Icon.new('offboard')}</div>
+          <div>Left govt <span class="my-date">#{render Atoms::DateLabel.new(@person.govt_exit_date)}</span> (#{text -> { @person.govt_exit_truth }})</div>
         HTML
       elsif @last_position && @last_position.end_date.to_s =~ /^\d{4}-\d{2}-\d{2}$/
         <<~HTML
-          <div>#{render Atoms::Icon.new('offboard')} #{render Atoms::PositionEndTypeLabel.new(position: last_position)} <span class="my-date">#{render Atoms::DateLabel.new(last_position.end_date)}</span></div>
+          <div>#{render Atoms::Icon.new('offboard')}</div>
+          <div>#{render Atoms::PositionEndTypeLabel.new(position: last_position)} <span class="my-date">#{render Atoms::DateLabel.new(last_position.end_date)}</span></div>
         HTML
       end
     end
@@ -49,10 +51,11 @@ module Grid
         <<~HTML
            <details class="collapse">
              <summary class="collapse-title p-0">
-               <div class="flex flex-col space-y-0.5">
+               <div class="grid grid-cols-[18px_auto] gap-x-1 p-0 min-h-0">
               #{ html_map(@positions) do |pos|
                    <<~HTML
-                     <div>#{render Atoms::AgencyPositionMoveLabel.new(position: pos, agency: @agency)} #{html -> { position_date_range(pos) }} #{render Molecules::PositionSummary.new(position: pos, agency: @agency)}</div>
+                     <div>#{render Atoms::AgencyPositionMoveLabel.new(position: pos, agency: @agency, icon_only: true)}</div>
+                     <div>#{html -> { position_date_range(pos) }} #{render Molecules::PositionSummary.new(position: pos, agency: @agency)}</div>
                    HTML
                  end
               }

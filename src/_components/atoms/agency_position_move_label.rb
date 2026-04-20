@@ -3,10 +3,11 @@
 module Atoms
   # Renders a move label for a position
   class AgencyPositionMoveLabel < Bridgetown::Component
-    def initialize(position:, agency:)
+    def initialize(position:, agency:, icon_only: false)
       super()
       @position = position
       @agency = agency
+      @icon_only = icon_only
     end
 
     def destination
@@ -38,6 +39,8 @@ module Atoms
     end
 
     def left_agency_label
+      return if @icon_only
+
       unless @position.type == 'detailed' && (@position.agency == @agency || @position.agency.parent == @agency) \
              && @position.agency != @agency
         return
@@ -51,6 +54,8 @@ module Atoms
     end
 
     def right_agency_label
+      return if @icon_only
+
       if @position.type == 'detailed'
         if @position.agency == @agency || @position.agency.parent == @agency
           if @position.from_agency_id
