@@ -9,11 +9,13 @@ module Grid
     end
 
     def template
-      html lambda {
-        <<~HTML
-          <div class="text-xs italic">#{render Atoms::Icon.new('info')} Click items to expand</div>
-        HTML
-      }
+      html -> { ' ' }
+
+      # html lambda {
+      #   <<~HTML
+      #     <div class="text-xs italic">#{render Atoms::Icon.new('info')} Click items to expand</div>
+      #   HTML
+      # }
     end
   end
 end
