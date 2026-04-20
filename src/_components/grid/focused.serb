@@ -2,6 +2,6 @@
 
 {% each_date do |rec| %}
    {% next unless rec.any? %}
-   <div class="font-mono"><date>{%@ Atoms::DateLabel rec.date %}</date></div>
+   <div>{%@ Atoms::DateLabel rec.date %}</div>
    <div class="">{{ render rec }}</div>
 {% end %}

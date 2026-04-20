@@ -90,7 +90,7 @@ module Grid
            <summary class="collapse-title p-0">
               <div class="flex flex-col space-y-0.5">
                 <div>#{html -> { system_title }}#{text -> { ' (created by DOGE)' if @govt_system.doge_created }}</div>
-                <div>#{render Atoms::DateRange.new(start_date: @min_date, end_date: @max_date)} #{text -> { user_count }}</div>
+                <div>#{render Atoms::DateRange.new(start_date: @min_date, end_date: @max_date)} <strong>#{text -> { user_count }}</strong></div>
                 #{text -> { @govt_system.description }}
               </div>
            </summary>

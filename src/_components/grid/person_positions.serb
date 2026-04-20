@@ -1,7 +1,4 @@
-<div class="data-grid-title flex justify-between items-end">
-  <h2>Positions</h2>
-  {%@ Grid::Legend :positions %}
-</div>
+<h2 class="data-grid-title">Positions</h2>
 
 {% each_agency do |agency, positions| %}
    <div>{%@ Atoms::AgencyLink agency %}</div>

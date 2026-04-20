@@ -6,6 +6,6 @@
   {% end %}
 
   {% if undated.any? %}
-    <div><date>Date Unknown</date></div>
+    <div><date>{{ @undated.date.strftime("%-m") }}/XX</date></div>
     <div>{{ render undated }}</div>
   {% end %}
