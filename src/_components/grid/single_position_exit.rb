@@ -38,7 +38,7 @@ module Grid
       return unless @position.person && @position.person.govt_exit_date == @position.end_date
 
       <<~HTML.rstrip
-        <span class="font-semibold"> (exits govt. service)</class>
+        <span class="font-semibold"> (exits govt. service)</span>
       HTML
     end
 

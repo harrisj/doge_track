@@ -19,11 +19,19 @@ module Grid
       ''
     end
 
+    def id_attr
+      return unless id
+
+      <<~HTML.rstrip
+        id="#{text -> { id }}"
+      HTML
+    end
+
     def summary_section
       <<~HTML
         <div class="grid grid-cols-[18px_auto] gap-x-1 p-0 min-h-0">
           <div>#{html -> { icon }}</div>
-          <div class="font-sans" id="#{text -> { id }}">
+          <div class="font-sans" #{html -> { id_attr }}>
               #{html -> { summary }}
           </div>
         </div>

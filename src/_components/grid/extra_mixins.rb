@@ -24,7 +24,7 @@ module Grid
       return unless item.fuzz
 
       extra_item 'question', <<~HTML.chomp
-        <span class="italic">Fuzz: #{render Atoms::Blurb.new(item.fuzz)}
+        <span class="italic">Fuzz: #{render Atoms::Blurb.new(item.fuzz)}</span>
       HTML
     end
 
@@ -125,19 +125,13 @@ module Grid
     end
 
     def extra_section
-      contents = extra_contents
-
-      if contents
-        <<~HTML
-          <div class="collapse-content text-sm p-0">
-            <div class="ml-[25px] pt-1 flex flex-col gap-y-3">
-               #{html -> { contents }}
-            </div>
+      <<~HTML
+        <div class="collapse-content text-sm p-0">
+          <div class="ml-[25px] pt-1 flex flex-col gap-y-3">
+             #{html -> { extra_contents }}
           </div>
-        HTML
-      else
-        html -> { '' }
-      end
+        </div>
+      HTML
     end
   end
 end
