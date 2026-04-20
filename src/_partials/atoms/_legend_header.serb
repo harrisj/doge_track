@@ -1,1 +1,8 @@
-<div class="float-right text-xs italic">click <i class="fa-sharp fa-solid fa-receipt"></i> for sources; <a href="/about/these-symbols/">full legend</a></div>
+<div class="float-right text-xs">
+  <details class="collapse">
+    <summary class="collapse-title">{%@ Atoms::Icon 'info' %} Click items to expand details</summary>
+    <div class="collapse-content">
+      Symbols explained in <a href="/about/these-symbols/">full legend</a>
+    </div>
+</details>
+</div>

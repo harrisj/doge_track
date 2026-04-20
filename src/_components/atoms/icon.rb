@@ -57,7 +57,9 @@ module Atoms
       salary: { css: 'fa-dollar-sign', aria: 'Salary', text: 'Salary' },
       job_title: { css: 'fa-map-pin', aria: 'Position Title', text: 'Title' },
       system_grant: { css: 'fa-display', area: 'Access Grant', text: 'Access Grant' },
-      system_revoke: { css: 'fa-display-slash', area: 'Access Revoked', text: 'Access Revoked' }
+      system_revoke: { css: 'fa-display-slash', aria: 'Access Revoked', text: 'Access Revoked' },
+
+      info: { css: 'fa-circle-info', aria: 'Information', text: 'Information' }
     }.freeze
 
     def icon_css

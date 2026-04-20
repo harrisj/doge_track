@@ -9,6 +9,7 @@
   <div class="my-text">{{ agency.linkified_blurb | raw }}</div>
 {% end %}
 
+{%@ 'atoms/legend_header' %}
 <div class="data-grid">
 {%@ Grid::AgencyPositions agency: agency %}
 {%@ Grid::AgencySystems agency: agency %}
