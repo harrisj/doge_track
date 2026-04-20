@@ -191,7 +191,7 @@ timeline_section = data['sections'].find { |section| section['name'] == "DOGE's 
 raise 'Unable to find the timeline section' if timeline_section.nil?
 
 current = Date.parse('2025-01-20')
-today = Date.today
+today = Event.max_date
 end_date = (Date.new(today.year, today.month, 1) >> 1) - 1
 
 while current <= end_date

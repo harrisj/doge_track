@@ -5,7 +5,7 @@ module Builders
   class GenerateMonthPages < SiteBuilder
     def build
       current = Date.parse('2025-01-20')
-      today = Date.today
+      today = Event.max_date
       end_date = (Date.new(today.year, today.month, 1) >> 1) - 1
 
       while current <= end_date
