@@ -27,9 +27,9 @@ module Grid
     def extra_contents
       extra_table <<~HTML
         #{html -> { fuzz_extra(@event) }}
+        #{html -> { people_extra(@event) }}
         #{html -> { sources_extra(@event) }}
         #{html -> { agencies_extra(@event) }}
-        #{html -> { people_extra(@event) }}
         #{html -> { projects_extra(@event) }}
       HTML
     end

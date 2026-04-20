@@ -8,7 +8,7 @@ module Builders
         add_resource :names, "#{person.slug}.md" do
           layout :page
           title person.name
-          content "{%@ 'sections/people_page_person', person: Person['#{person.name}'] %}"
+          content "{%@ 'person_page', person: Person['#{person.name}'] %}"
         end
       end
     end

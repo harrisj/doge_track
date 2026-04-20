@@ -21,6 +21,7 @@ module Atoms
       milestone: { css: 'fa-map-pin', aria: 'Milestone', text: 'Milestone' },
       official: { css: 'fa-landmark', aria: 'Official Action', text: 'Official Action' },
       agency: { css: 'fa-landmark', aria: 'Agency', text: 'Agency' },
+      onboard: { css: 'fa-person-to-door', aria: 'Onboarding', text: 'Onboarding' },
       onboarding: { css: 'fa-person-to-door', aria: 'Onboarding', text: 'Onboarding' },
       appointed: { css: 'fa-person-to-door', aria: 'Appointed', text: 'Appointed' },
       oversight: { css: 'fa-microscope', aria: 'Oversight', text: 'Oversight' },

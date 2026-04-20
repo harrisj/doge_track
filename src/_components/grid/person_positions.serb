@@ -1,0 +1,6 @@
+<h2 class="data-grid-title">Positions</h2>
+
+{% each_agency do |agency, positions| %}
+   <div>{%@ Atoms::AgencyLink agency %}</div>
+   <div class="">{%@ Grid::PersonPositionsAgency agency: agency, person: @person, positions: positions %}</div>
+{% end %}

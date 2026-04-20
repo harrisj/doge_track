@@ -1,0 +1,26 @@
+{%@ Atoms::Title title: person.name %}
+
+<div class="my-text leading-nums">
+  <div class="leading-none">{% if person.skill %}{{ person.skill | titleize }}{% end %}{% if person.age %}, age {{ person.age }}{% end %}{% if person.linkedin %} <a aria-label="LinkedIn profile" href="{{person.linkedin}}"><i class="fa-brands fa-linkedin"></i></a>{% end %} <a class="permalink" aria-label="Direct link to this person" href="#{{person.slug}}"><i class="fa-sharp fa-solid fa-link"></i></a></div>
+  {% if person.tech_links %}<div>Tech Industry Links: {{ person.tech_links }}</div>{% end %}
+  {% if person.govt_exit_date %}<div><strong>Exited govt:</strong> <span class="my-date">{{ render EdtfFormat.new(person.govt_exit_date, :compact_year) }}</span>{% if person.govt_exit_type %} ({{ person.govt_exit_truth}}){% end %}</div>{% end %}
+  {% if person.linkified_blurb %}<div class="mb-0 mt-2 mb-2">{%@ Atoms::Blurb person.linkified_blurb %}</div>{% end %}
+</div>
+
+<div class="data-grid">
+{% if person.positions.any? %}
+  {%@ Grid::PersonPositions person: person %}
+{% end %}
+
+{% if person.events.any? %}
+   {%@ Grid::Focused person: person %}
+{% end %}
+
+{% open_questions = Question.where(name: person.name, answer: nil).all %}
+{% if open_questions.any? %}
+<div class="data-grid-span">
+    <h3 class="h3">Open Questions</h3>
+    {%@ 'questions_list', questions: open_questions %}
+  </div>
+{% end %}
+</div>
