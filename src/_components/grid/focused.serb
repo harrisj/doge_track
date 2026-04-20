@@ -1,4 +1,4 @@
-<h2 class="data-grid-title">Events</h2>
+{% if @title %}<h2 class="data-grid-title">Events</h2>{% end %}
 
 {% each_date do |rec| %}
    {% next unless rec.any? %}

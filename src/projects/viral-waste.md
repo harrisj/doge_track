@@ -16,10 +16,7 @@ You might notice that many of these examples are from the {%@ Atoms::AgencyLink 
 
 {% project = Project['fraud'] %}
 
-{% if project.events.any? %}
-## Related Events
-
- <div class="not-prose">
+<div class="data-grid not-prose">
+{%@ Grid::ProjectSystems project: project %}
 {%@ Grid::Focused project: project %}
 </div>
-{% end %}

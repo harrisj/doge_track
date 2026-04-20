@@ -5,10 +5,11 @@ module Grid
   class SystemRoles < Bridgetown::Component
     include ExtraMixins
 
-    def initialize(govt_system:)
+    def initialize(govt_system:, expanded: false)
       super()
       @govt_system = govt_system
       @system_roles = govt_system.system_roles
+      @expanded = expanded
 
       @min_date = @system_roles.map(&:date_granted).compact.min
       @max_date = @system_roles.map(&:date_revoked).compact.max unless @system_roles.any? { |r| r.date_revoked.nil? }
@@ -72,6 +73,14 @@ module Grid
       end
     end
 
+    def system_title
+      if @expanded
+        html -> { render Atoms::SystemLink.new(@govt_system, expanded: true) }
+      else
+        text -> { @govt_system.name }
+      end
+    end
+
     def template
       return unless @system_roles.any?
 
@@ -80,7 +89,7 @@ module Grid
           <details class="collapse">
            <summary class="collapse-title p-0">
               <div class="flex flex-col space-y-0.5">
-                <div class="bold">#{text -> { @govt_system.name }}#{text -> { ' (created by DOGE)' if @govt_system.doge_created }}</div>
+                <div>#{html -> { system_title }}#{text -> { ' (created by DOGE)' if @govt_system.doge_created }}</div>
                 <div>#{render Atoms::DateRange.new(start_date: @min_date, end_date: @max_date)} #{text -> { user_count }}</div>
                 #{text -> { @govt_system.description }}
               </div>

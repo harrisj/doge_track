@@ -10,7 +10,7 @@ module Grid
 
     def starts_section
       by_agency = @positions.select do |pos|
-        %w[appointed consultant].include?(pos.type)
+        %w[appointed consultant unknown].include?(pos.type)
       end.group_by(&:agency_id)
       return unless by_agency.any?
 

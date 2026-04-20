@@ -11,5 +11,6 @@ description: A comprehensive listing of all the events of DOGE staff on a single
 <div><i class="fa-sharp fa-solid fa-file-csv"></i> <a href="/csv/events.csv">Download as CSV</a></div>
 {% events = Event.eager_graph(:people, :doge_aliases, :agencies).order(:date).all %}
 
-{%@ Table::Events events %}
-
+<div class="data-grid not-prose">
+{%@ Grid::Focused events: events %}
+</div>

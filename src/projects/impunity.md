@@ -21,11 +21,7 @@ departments can be sidelined.
 
 {% project = Project['impunity'] %}
 
-{% if project.events.any? %}
-## Related Events
-
-<div>
+<div class="data-grid not-prose">
+{%@ Grid::ProjectSystems project: project %}
 {%@ Grid::Focused project: project %}
 </div>
-
-{% end %}

@@ -177,8 +177,6 @@ src_yaml = <<~LISTING
           title: All the Events
         - url: /all/positions/
           title: All the Staffing Moves
-        - url: /all/systems/
-          title: All the Systems
         - url: /all/sources/
           title: All the Source Citations
         - url: /all/questions/
@@ -193,7 +191,8 @@ timeline_section = data['sections'].find { |section| section['name'] == "DOGE's 
 raise 'Unable to find the timeline section' if timeline_section.nil?
 
 current = Date.parse('2025-01-20')
-end_date = Date.today
+today = Date.today
+end_date = (Date.new(today.year, today.month, 1) >> 1) - 1
 
 while current <= end_date
   timeline_section['pages'].append({

@@ -28,12 +28,8 @@ currently unclear if they were given the directive to eliminate grants based on
 their descriptions or that guidance was developed internally by DOGE leadership.
 
 {% project = Project['dei'] %}
-
-{% if project.events.any? %}
-## Related Events
-
-<div class="not-prose">
+<div class="data-grid not-prose">
+{%@ Grid::ProjectSystems project: project %}
 {%@ Grid::Focused project: project %}
 </div>
 
-{% end %}

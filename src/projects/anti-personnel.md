@@ -70,9 +70,8 @@ reduced and traumatized the workforce and indirectly has damaged how government
 works, with ripple effects from understaffing becoming visible months after the
 damage has been done.
 
-## Related Events
-
-<div class="not-prose">
-{%@ Grid::Focused project: Project['personnel'] %}
+{% project = Project['personnel'] %}
+<div class="data-grid not-prose">
+{%@ Grid::ProjectSystems project: project %}
+{%@ Grid::Focused project: project %}
 </div>
-

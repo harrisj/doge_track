@@ -62,11 +62,7 @@ However, DOGE has undertaken some IT modernization projects:
 
 {% project = Project['modernization'] %}
 
-{% if project.events.any? %}
-## Related Events
-
-<div class="not-prose">
+<div class="data-grid not-prose">
+{%@ Grid::ProjectSystems project: project %}
 {%@ Grid::Focused project: project %}
 </div>
-
-{% end %}

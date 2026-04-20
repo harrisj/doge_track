@@ -63,7 +63,7 @@ module Grid
 
       html_map(item.sources) do |source|
         extra_item 'source', <<~HTML
-          <small><a target="_blank" href="#{text -> { source.url }}"><cite>#{text -> { source.title }}</cite></a> #{text -> { source.publisher.name }},&nbsp;#{html -> { render Atoms::DateLabel.new(source.pub_date) }}</small>
+          <a target="_blank" href="#{text -> { source.url }}"><cite>#{text -> { source.title }}</cite></a> <small>#{text -> { source.publisher.name }},&nbsp;#{html -> { render Atoms::DateLabel.new(source.pub_date) }}</small>
         HTML
       end
     end
