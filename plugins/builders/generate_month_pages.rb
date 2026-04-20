@@ -13,12 +13,11 @@ module Builders
           layout :page
           title current.strftime('%b %Y')
           permalink "/timeline/#{current.strftime('%Y/%m')}/"
-          content <<~HERE
+          content <<~TEXT
             {%@ Atoms::Title title: "#{current.strftime('%b %Y')}" %}
-            <div class="my-2">
-            {%@ Grid::Month year: #{current.year}, month: #{current.month} %}
-            </div>
-          HERE
+
+            {%@ 'month_page', year: #{current.year}, month: #{current.month} %}
+          TEXT
         end
 
         current >>= 1

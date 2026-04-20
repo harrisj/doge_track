@@ -7,8 +7,6 @@
   {% if person.linkified_blurb %}<div class="mb-0 mt-2 mb-2">{%@ Atoms::Blurb person.linkified_blurb %}</div>{% end %}
 </div>
 
-{%@ 'atoms/legend_header' %}
-
 <div class="data-grid">
 {% if person.positions.any? %}
   {%@ Grid::PersonPositions person: person %}

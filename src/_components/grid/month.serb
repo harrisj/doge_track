@@ -1,6 +1,4 @@
-<div class="align-right mb-1 italic">Click any item to expand its details</div>
 
-<div class="data-grid">
   {% each_date do |rec| %}
      {% next unless rec.any? %}
      <div class="md:text-nowrap"><date>{{ rec.date.strftime("%a %-m/%d") }}</date></div>
@@ -11,4 +9,3 @@
     <div><date>Date Unknown</date></div>
     <div>{{ render undated }}</div>
   {% end %}
-</div>
