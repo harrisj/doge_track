@@ -31,6 +31,9 @@
     sort_date: 2025-03-01
     title: Senior Advisor on Government Efficiency
     title_type: advisor
+    project:
+    - deregulation
+    - spending
     table_note: Not listed as a detailee, so suggests appointed
     source: https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
   - id: dot-abrahamson
@@ -44,6 +47,7 @@
     table_note: start date unknown but ProPublica says "early February"
     office: Office of the Secretary of Transportation
     salary: "$185,000"
+    project: deregulation
     source:
     - >-
       https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2025/03/26/doge-assembles-a-legal-army-00251903
@@ -92,6 +96,8 @@
     end_type: resigned
     office: Office of the General Counsel
     salary: "$167,503"
+    project:
+    - elimination
     table_note: start date derived from GSA visitor logs
     source:
     - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
@@ -111,11 +117,13 @@
     end_date: 2025-07-26
     end_date_truth: verified
     end_type: resigned
+    project: elimination
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-gsa-nlrb-aimonetti
     agency: NLRB
     type: detailed
     category: wrecker
+    project: deregulation
     from: GSA
     from_truth: reported
     start_date: 2025-03-03
@@ -126,6 +134,7 @@
     type: detailed
     from: GSA
     from_truth: reported
+    project: elimination
     category: wrecker
     start_date: 2025-03-04
     start_date_truth: reported
@@ -182,6 +191,7 @@
     appt_type_code: 44
     appt_type: Schedule C
     excepted: true
+    project: personnel
     pd_code: PMGS31263
     title: Senior Advisor to the Director
     title_type: advisor
@@ -206,6 +216,7 @@
     from: OPM
     from_truth: verified
     agency: DOGE
+    project: personnel
     start_date: 2025-01-27
     start_date_truth: verified
     end_date: 2025-06-27
@@ -225,6 +236,7 @@
     start_date_truth: verified
     table_note: info in govt legal declation
     comment: Assuming detail from OPM
+    project: elimination
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
   - id: detail-opm-fcc-altik
     type: detailed
@@ -234,6 +246,7 @@
     start_date: 2025-03-18
     start_date_truth: verified
     title_type: advisor
+    project: deregulation
     salary: "$0"
     source: https://frequencyfwd.com/files/motion-exhibit-1-08252025.pdf
     office: Office of the Chairman
@@ -296,6 +309,7 @@
     from: OPM
     from_truth: guessed
     agency: DHS
+    project: immigration
     source:
     - https://www.nytimes.com/2025/06/10/us/politics/airbnb-gebbia-musk-doge.html
     - https://www.cfodive.com/news/musk-taps-morgan-stanley-doge-alum-xai-finance-chief-reports/802262/
@@ -311,6 +325,7 @@
     end_date: 2025-06-06
     end_date_truth: verified
     end_type: resigned
+    project: personnel
     source:
     - https://www.documentcloud.org/documents/26028780-opm-new-hires/
     - >-
@@ -338,6 +353,7 @@
     agency: DOGE
     start_date: 2025-01-27
     start_date_truth: verified
+    project: personnel
     salary: "$0"
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   - id: detail-opm-fdic-armstrong
@@ -345,6 +361,7 @@
     category: wrecker
     from: OPM
     from_truth: guessed
+    project: deregulation
     start_date: 2025-04-10
     start_date_truth: reported
     table_note: reported by media
@@ -392,6 +409,9 @@
     category: wrecker
     table_note: NYT links her to Education, but no other info found
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+    project:
+    - spending
+    - deregulation
     sort_date: 2025-02-05
     agency: Education
     from: DOGE
@@ -404,6 +424,7 @@
     start_date_truth: verified
     end_date: 2025-05-28
     end_date_truth: verified
+    project: deregulation
     end_type: resigned
     title: Senior Advisor
     title_type: advisor
@@ -435,8 +456,13 @@
     id: 6ygkgXpA
   positions:
   - id: sba-lopez-ballefin
-    type: unknown
+    type: detailed
+    from: GSA
+    from_truth: guessed
     category: wrecker
+    project:
+    - deregulation
+    - spending
     agency: SBA
     title: Senior Advisor
     title_type: advisor
@@ -445,7 +471,10 @@
     agency: GSA
     type: consultant
     category: wrecker
-    supervisory: true
+    supervisory: false
+    project:
+    - deregulation
+    - spending
     start_date: 2025-05-XX
     start_date_truth: guessed
     source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
@@ -463,6 +492,7 @@
     agency: Energy
     type: appointed
     category: wrecker
+    project: deregulation
     sort_date: 2025-06-15
     end_date: 2025-12-XX
     end_date_truth: self-reported
@@ -476,6 +506,7 @@
     type: appointed
     category: wrecker
     sort_date: 2025-05-15
+    project: spending
     table_note: Reportedly reviewing DOT grants to cancel
     source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: nrc-bansal
@@ -486,6 +517,7 @@
     title: Senior Advisor
     category: wrecker
     title_type: advisor
+    project: deregulation
     sort_date: 2025-07-11
     start_date: 2025-07-(11)?
     start_date_truth: guessed
@@ -498,11 +530,11 @@
     type: promotion
     title: Managing Director, AI Infrastructure
     title_type: director
+    project: modernization
     category: builder
     sort_date: 2026-01-01
     start_date: 2026-01-XX
     start_date_truth: self-reported
-    project: modernization
     source: https://www.linkedin.com/in/gehidyyevj/
 
 - name: Greg Barbaccia
@@ -535,6 +567,7 @@
     category: enabler
     title: Federal Chief Information Officer
     title_type: cio
+    project: modernization
     agency: OMB
     start_date: 2025-01-27
     start_date_truth: verified
@@ -549,6 +582,7 @@
     title: Acting Chief Information Officer
     title_type: cio
     agency: USAID
+    project: modernization
     start_date: 2025-09-(25)~
     start_date_truth: verified
     source: https://www.cio.gov/about/members-and-leadership/
@@ -559,6 +593,7 @@
     type: appointed
     start_date: 2026-02-19
     start_date_truth: reported
+    project: modernization
     title: Deputy FAS Commissioner / Acting Administrator, Technology Transformation Services
     title_type: cio
     supervisory: true
@@ -579,6 +614,9 @@
     category: wrecker
     title: Special Advisor
     title_type: advisor
+    project:
+    - spending
+    - deregulation
     start_date: 2025-04-06
     start_date_truth: verified
     nte_date: 2026-04-06
@@ -600,6 +638,9 @@
     end_date: 2025-09-12
     end_date_truth: reported
     end_type: replaced
+    project:
+    - spending
+    - deregulation
     replaced_by: usda-berry-cio
     salary: "$170,000"
     source:
@@ -614,6 +655,9 @@
     title_type: cio
     start_date: 2025-09-12
     start_date_truth: reported
+    project:
+    - modernization
+    - impunity
     supervisory: true
     source: >-
       https://www.nextgov.com/people/2025/09/agriculture-taps-doge-associate-its-tech-lead-reassigning-previous-cio/408093/
@@ -638,6 +682,7 @@
     agency: HHS
     title: Policy Advisor
     title_type: advisor
+    project: spending
     office: Deputy Secretary of HHS
     source: https://www.wired.com/story/what-is-doge-doing-now/
     sort_date: 2025-08-10
@@ -647,6 +692,7 @@
     sort_date: 2025-02-13
     start_date: 2025-02-(13)~
     start_date_truth: reported
+    project: spending
     comment: 3 other DOGE staff besides Ramada at agency on 2/5.
     table_note: No other info besides this report
     source: >-
@@ -659,6 +705,9 @@
     title: Deputy Chief of Staff
     title_type: dept_head
     supervisory: true
+    project:
+    - spending
+    - impunity
     sort_date: 2025-11-15
     start_date: 2025-11-(15)~
     start_date_truth: reported
@@ -694,6 +743,7 @@
     end_date: 2025-06-13
     end_date_truth: verified
     end_type: resigned
+    project: personnel
     title: Senior Advisor
     title_type: advisor
     series: '0301'
@@ -709,6 +759,7 @@
     start_date_truth: verified
     from: DOGE
     from_truth: verified
+    project: personnel
     agency: Education
     salary: "$0"
     comment: Details just provided in court testimony
@@ -730,6 +781,7 @@
   - id: nds-bhaloo
     type: appointed
     category: builder
+    project: modernization
     agency: NDS
     start_date: 2026-02-06
     start_date_truth: self-reported
@@ -808,6 +860,7 @@
     category: unknown
     from: OPM
     from_truth: verified
+    project: personnel
     agency: DOGE
     start_date: 2025-01-27
     start_date_truth: verified
@@ -842,6 +895,9 @@
     agency: SSA
     start_date: 2025-05-06
     start_date_truth: verified
+    project:
+    - personnel
+    - modernization
     title: Commissioner
     title_type: director
     supervisory: true
@@ -853,6 +909,7 @@
     agency: IRS
     start_date: 2025-10-06
     start_date_truth: reported
+    project: modernization
     title: Chief Executive Officer
     source: https://www.washingtonpost.com/business/2025/10/06/irs-ceo-social-security/
     table_note: Technically, position doesn't exist and Scott Bessent is acting commissioner, but will
@@ -881,6 +938,7 @@
     type: appointed
     category: builder
     agency: NDS
+    project: modernization
     title: Member of Technical Staff
     start_date: 2026-03-XX
     start_date_truth: self-reported
@@ -942,6 +1000,7 @@
     agency: OPM
     start_date: 2025-01-20
     start_date_truth: verified
+    project: personnel
     description: Exc Appt NTE
     appt_type_code: 48
     appt_type: Other
@@ -999,6 +1058,7 @@
     sort_date: 2025-03-15
     start_date: 2025-03-XX
     start_date_truth: reported
+    project: deregulation
     table_note: Detailed from Energy to NRC, so assuming start there
     salary: "$167,603"
     source:
@@ -1012,6 +1072,7 @@
     agency: NRC
     from: Energy
     from_truth: verified
+    project: deregulation
     office: Office of the Executive Director for Operations
     table_note: In charge of implementing EO 14300
     sort_date: 2025-07-11
@@ -1055,6 +1116,9 @@
     from_truth: guessed
     title: Senior Advisor
     title_type: advisor
+    project:
+    - spending
+    - fraud
     type: detailed
     category: wrecker
     table_note: >-
@@ -1100,6 +1164,8 @@
     start_date: 2025-01-27
     start_date_truth: verified
     category: support
+    project:
+    - fraud
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - id: detail-opm-education-akash-bobba
     type: detailed
@@ -1169,6 +1235,7 @@
     start_date_truth: verified
     nte_date: 2025-08-27
     nte_date_truth: inferred
+    project: spending
     table_note: Detail is from SSA not OPM, because SSA employee at this point
     source: >-
       https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
@@ -1181,6 +1248,7 @@
     start_date_truth: verified
     end_date: 2026-03-07
     end_date_truth: verified
+    end_type: resigned
     salary: "$0"
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.148.0.pdf
@@ -1232,6 +1300,7 @@
     start_date_truth: reported
     salary: "$167,603"
     fuzz: Just listed in March as someone on the GSA payroll
+    project: deregulation
     table_note: Receives GSA badge on 2/28
     replaced_by: eop-boizelle
     source:
@@ -1250,6 +1319,7 @@
     end_date: 2025-08-XX
     end_date_truth: self-reported
     end_type: replaced
+    project: deregulation
     title: Deputy General Counsel
     table_note: reported by media as started in February, own LinkedIn says March
     fuzz: Report just says started sometime in February
@@ -1268,6 +1338,7 @@
     end_date: 2026-01-XX
     end_date_truth: self-reported
     end_type: resigned
+    project: deregulation
     source: https://www.linkedin.com/in/ashley-boizelle-5836643b/
 
 - name: Nate Brown
@@ -1282,6 +1353,7 @@
     title: Chief Creative Officer
     start_date: 2025-10-XX
     start_date_truth: self-reported
+    project: modernization
     source:
     - https://www.linkedin.com/in/notnatebrown/
     - https://www.wired.com/story/edward-coristine-nick-shirley-fraud-videos/
@@ -1305,6 +1377,7 @@
     start_date_truth: verified
     title: Senior Advisor for Technology and Efficiency
     title_type: advisor
+    project: personnel
     series: '0301'
     pay_grade: AD-00
     source:
@@ -1317,6 +1390,7 @@
     start_date: 2025-03-(17)~
     start_date_truth: reported
     sort_date: 2025-03-17
+    project: personnel
     table_note: signs in someone as GSA employee on 3/24, assuming not new employee that day, but in March.
     comment: Not verified, but NYT links to her to GSA also, so assuming she started there
     source:
@@ -1382,6 +1456,9 @@
     end_date: 2025-06-03
     end_date_truth: verified
     end_type: resigned
+    project:
+    - deregulation
+    - elimination
     title: General Counsel
     table_note: NYT reported in DOGE in January, ProPublica provided title
     source:
@@ -1406,6 +1483,7 @@
     category: support
     from: GSA
     from_truth: guessed
+    project: spending
     table_note: Linked by ProPublica
     source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: opm-burroughs
@@ -1415,6 +1493,7 @@
     category: support
     from: GSA
     from_truth: guessed
+    project: spending
     table_note: Linked by ProPublica
     source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: state-burroughs
@@ -1425,6 +1504,7 @@
     from: GSA
     from_truth: guessed
     table_note: Linked by ProPublica
+    project: spending
     source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: usda-burroughs
     agency: USDA
@@ -1433,6 +1513,7 @@
     category: wrecker
     from: GSA
     from_truth: guessed
+    project: spending
     table_note: Linked by ProPublica
     source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: gsa-burroughs
@@ -1442,6 +1523,7 @@
     sort_date: 2025-06-15
     start_date: 2025-06-XX
     start_date_truth: reported
+    project: spending
     table_note: >-
       Not many details besides start date "in June." Because he is a former IT consultant, I'm not sure
       if he has been hired or is consulting.
@@ -1459,6 +1541,7 @@
     category: builder
     start_date: 2026-04-XX
     start_date_truth: self-reported
+    project: modernization
     title: Senior Product Designer
     source: https://www.linkedin.com/in/johncafazza/
 
@@ -1485,6 +1568,7 @@
     end_date_truth: self-reported
     end_type: replaced
     replaced_by: sba-carter-oii
+    project: spending
     table_note: Start month sourced from his LinkedIn
     source:
     - https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
@@ -1496,6 +1580,9 @@
     title: Associate Administrator
     title_type: dept_head
     office: Office of Investment and Innovation
+    project:
+    - modernization
+    - impunity
     start_date: 2025-08-XX
     start_date_truth: self-reported
     source: https://www.linkedin.com/in/josh-carter-cfa-caia-0a854b4b/
@@ -1549,11 +1636,12 @@
     end_date: 2025-08-06
     end_date_truth: reported
     end_type: resigned
+    project:
+    - dei
+    - elimination
+    - spending
     table_note: Testifies started working in early January, but formally a few days after inauguration
     salary: "$120,509"
-    comment: >-
-      Introduces Frank Schuler on a video call at GSA in February; listed in ProPublica roundup on Feb
-      05; going to assume Monday start
     source:
     - https://www.wired.com/story/doge-government-salaries-elon-musk/
     - >-
@@ -1568,6 +1656,10 @@
     start_date: 2025-02-21
     start_date_truth: verified
     table_note: verified via court filing
+    project:
+    - dei
+    - elimination
+    - spending
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
   - id: detail-gsa-iaf-cavanaugh
     type: detailed
@@ -1580,6 +1672,9 @@
     end_date: 2025-04-04
     end_date_truth: verified
     end_type: removed
+    project:
+    - spending
+    - elimination
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
     table_note: agency contact was earlier, but assuming MOU signed when Marocco seized power
   - id: detail-gsa-usip-cavanaugh
@@ -1588,6 +1683,8 @@
     agency: USIP
     from: GSA
     from_truth: guessed
+    project:
+    - elimination
     table_note: verified via court filing
     comment: Assuming this based on reports and where he is based. Becomes president of USIP next
     start_date: 2025-03-04
@@ -1601,6 +1698,9 @@
     type: detailed
     category: wrecker
     agency: NEH
+    project:
+    - spending
+    - dei
     from: GSA
     from_truth: guessed
     sort_date: 2025-03-13
@@ -1612,6 +1712,10 @@
     type: detailed
     category: wrecker
     agency: MCC
+    project:
+    - spending
+    - elimination
+    - dei
     from: GSA
     from_truth: guessed
     sort_date: 2025-03-22
@@ -1622,6 +1726,7 @@
   - id: usip-cavanaugh-president
     type: appointed
     category: wrecker
+    project: elimination
     start_date: 2025-03-25
     start_date_truth: verified
     end_date: 2025-07-25
@@ -1647,6 +1752,9 @@
     from_truth: guessed
     start_date: 2025-03-31
     start_date_truth: reported
+    project:
+    - spending
+    - dei
     type: detailed
     source: https://bsky.app/profile/marisakabas.bsky.social/post/3llowvghols2b
     table_note: Based on initial reports
@@ -1674,6 +1782,10 @@
     start_date_truth: verified
     sort_date: 2025-04-09
     from_truth: inferred
+    project:
+    - spending
+    - elimination
+    - dei
     source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.35.4_1.pdf
     table_note: inferred from disruptions at MBDA starting
   - id: detail-gsa-americorps-cavanaugh
@@ -1681,6 +1793,9 @@
     agency: AmeriCorps
     from: GSA
     from_truth: self-reported
+    project:
+    - spending
+    - personnel
     category: wrecker
     start_date: 2025-04-16
     start_date_truth: inferred
@@ -1689,6 +1804,7 @@
     type: detailed
     category: wrecker
     agency: NLRB
+    project: deregulation
     from: GSA
     from_truth: guessed
     start_date: 2025-04-16
@@ -1703,6 +1819,9 @@
     category: wrecker
     from: GSA
     from_truth: guessed
+    project:
+    - spending
+    - elimination
     start_date: 2025-04-28
     start_date_truth: reported
     table_note: Spotted by media
@@ -1715,6 +1834,7 @@
     agency: EXIM
     from: GSA
     from_truth: guessed
+    project: spending
     table_note: Reported by media
     start_date: 2025-05-14
     start_date_truth: reported
@@ -1725,6 +1845,8 @@
     agency: MSPB
     from: GSA
     from_truth: guessed
+    project:
+    - personnel
     table_note: Email cited mentioned he was from DOGE, but assuming detail from GSA
     start_date: 2025-05-21
     start_date_truth: reported
@@ -1754,8 +1876,8 @@
     end_date: 2025-08-06
     end_date_truth: inferred
     end_type: detail_ended
-    table_note: Says he was working on a voluntary service for self-deportation for immigrants
     project: immigration
+    table_note: Says he was working on a voluntary service for self-deportation for immigrants
     source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
 
 - name: Alison Childs
@@ -1775,6 +1897,7 @@
     category: builder
     title: Senior Advisor
     title_type: advisor
+    project: modernization
     start_date: 2025-03-18
     start_date_truth: inferred
     table_note: Date guessed based on multiple sources, signed in first/only time on 3/18
@@ -1826,6 +1949,7 @@
     start_date: 2025-04-XX
     start_date_truth: self-reported
     sort_date: 2025-04-15
+    project: modernization
     table_note: >-
       a Canadian working on temp visa which would disqualify for federal role. LinkedIn reports he worked
       on the retirement processing modernization project. Wired reports still involved in OPM retirement
@@ -1840,6 +1964,7 @@
     agency: GSA
     start_date: 2025-06-XX
     start_date_truth: reported
+    project: modernization
     sort_date: 2025-06-14
     table_note: working for GSA as a contractor from MSI Consulting because a not an American citizen
     source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
@@ -1865,6 +1990,9 @@
     start_date: 2025-02-XX
     start_date_truth: guessed
     sort_date: 2025-02-20
+    project:
+    - deregulation
+    - personnel
     table_note: Carl Coe, who currently leads the Department of Government Efficiency (DOGE) at DOE
     source: https://www.energy.gov/articles/doe-announces-new-leadership-tackle-challenges-growing-energy-demand
     agency: EPA
@@ -1875,6 +2003,9 @@
     start_date: 2025-02-XX
     start_date_truth: self-reported
     agency: DOGE
+    project:
+    - deregulation
+    - personnel
     table_note: His linkedin reports Feb 2025 as start
     source: https://www.linkedin.com/in/carl-coe-912b82/
   - id: epa-coe-chief-staff
@@ -1883,6 +2014,9 @@
     title: Chief of Staff
     title_type: dept_head
     supervisory: true
+    project:
+    - personnel
+    - deregulation
     agency: EPA
     start_date: 2025-05-02
     start_date_truth: verified
@@ -1912,6 +2046,7 @@
     end_date: 2025-10-XX
     end_date_truth: self-reported
     end_type: replaced
+    project: deregulation
     replaced_by: energy-chief-counsel-cohen
   - id: nrc-cohen
     type: detailed
@@ -1921,6 +2056,7 @@
     title: Senior Advisor
     title_type: advisor
     agency: NRC
+    project: deregulation
     start_date: 2025-06-XX
     start_date_truth: self-reported
     table_note: Only given as some time in the summer of 2025
@@ -1934,6 +2070,7 @@
     title: Chief Counsel for Nuclear Policy
     start_date: 2025-10-XX
     start_date_truth: self-reported
+    project: deregulation
     source:
     - https://www.propublica.org/article/trump-nuclear-power-nrc-safety-doge-vought
     - https://www.linkedin.com/in/seth-cohen-091538101/
@@ -1958,6 +2095,9 @@
     end_date: 2025-03-17
     end_date_truth: verified
     end_type: replaced
+    project:
+    - spending
+    - personnel
     pay_grade: ES
     series: '0301'
     salary: "$170,000"
@@ -1981,6 +2121,7 @@
     start_date_truth: verified
     end_date: 2025-08-XX
     end_date_truth: self-reported
+    project: spending
     pay_grade: ES
     series: '0301'
     salary: "$170,000"
@@ -2018,6 +2159,10 @@
     end_date: 2025-08-XX
     end_date_truth: self-reported
     end_type: resigned
+    project:
+    - personnel
+    - immigration
+    - spending
     nte_date: 2025-06-17
     nte_date_truth: verified
     pd_code: '66899121'
@@ -2075,6 +2220,10 @@
     end_date: 2025-05-(06)~
     end_date_truth: inferred
     end_type: replaced
+    project:
+    - modernization
+    - personnel
+    - spending
     replaced_by: irs-corcos-cio
     table_note: Start date inferred and likely earlier.
     comment: possibly earlier involvement, maybe when Gavin Kliger started there; ends when became CIO
@@ -2091,6 +2240,10 @@
     title: Chief Information Officer
     title_type: cio
     table_note: Date is approximate per reports. Will update as new details emerge.
+    project:
+    - modernization
+    - personnel
+    - impunity
     comment: Date is approximate
     source: https://fedscoop.com/doge-sam-corcos-treasury-chief-information-officer/
     agency: IRS
@@ -2131,6 +2284,10 @@
     end_date: 2025-06-09
     end_date_truth: verified
     end_type: unknown
+    project:
+    - modernization
+    - personnel
+    - fraud
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
@@ -2176,6 +2333,7 @@
     from_truth: inferred
     sort_date: 2025-02-14
     agency: TSA
+    project: immigration
     table_note: NYT links him to TSA, but no other info public
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -2185,6 +2343,7 @@
     from: DHS
     from_truth: inferred
     agency: USCIS
+    project: immigration
     sort_date: 2025-02-14
     comment: NYT links him to USCIS, but no other info public
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -2195,6 +2354,7 @@
     agency: OPM
     from: GSA
     from_truth: inferred
+    project: personnel
     table_note: >-
       no MOU to confirm and SF-50 is for GSA, but I think he was detailed from GSA to OPM on this date
       based on appointment affadavit
@@ -2229,6 +2389,8 @@
     agency: USAID
     from: GSA
     from_truth: guessed
+    project:
+    - elimination
     start_date: 2025-01-27
     start_date_truth: reported
     title: Senior Advisor
@@ -2241,6 +2403,9 @@
     category: wrecker
     from: GSA
     from_truth: guessed
+    project:
+    - spending
+    - fraud
     title: DOGE Advisor
     title_type: advisor
     type: detailed
@@ -2253,6 +2418,9 @@
     category: wrecker
     from: GSA
     from_truth: guessed
+    project:
+    - immigration
+    - spending
     agency: DHS
     title: Senior Advisor
     title_type: advisor
@@ -2267,6 +2435,8 @@
     category: wrecker
     from: DHS
     from_truth: inferred
+    project:
+    - spending
     agency: FEMA
     start_date: 2025-02-05
     start_date_truth: reported
@@ -2279,6 +2449,7 @@
     from_truth: reported
     start_date: 2025-02-10
     start_date_truth: reported
+    project: spending
     title: Senior Advisor
     title_type: advisor
     office: Bureau of Diplomatic Technology
@@ -2288,6 +2459,9 @@
     category: wrecker
     from: DHS
     from_truth: inferred
+    project:
+    - spending
+    - modernization
     agency: CISA
     start_date: 2025-02-19
     start_date_truth: reported
@@ -2301,6 +2475,9 @@
     agency: Education
     from: GSA
     from_truth: verified
+    project:
+    - spending
+    - deregulation
     start_date: 2025-02-20
     start_date_truth: verified
     source: https://www.documentcloud.org/documents/26028798-doge-staff-education-20250407/
@@ -2308,6 +2485,9 @@
     type: detailed
     category: wrecker
     agency: HHS
+    project:
+    - spending
+    - fraud
     from: GSA
     from_truth: guessed
     start_date: 2025-03-05
@@ -2322,6 +2502,9 @@
     category: wrecker
     from_truth: inferred
     agency: CMS
+    project:
+    - spending
+    - fraud
     from: HHS
     start_date: 2025-03-05
     start_date_truth: verified
@@ -2334,6 +2517,9 @@
     type: converted
     title: Senior Advisor
     pay_grade: GS-15
+    project:
+    - spending
+    - fraud
     table_note: Salary range for GS-15 in DC
     salary: "$167,603 - $195,200"
     start_date: 2025-05-31
@@ -2347,6 +2533,10 @@
     category: wrecker
     type: appointed
     sge: true
+    project:
+    - fraud
+    - immigration
+    - modernization
     sort_date: 2025-06-23
     start_date: 2025-06-(23)~
     start_date_truth: verified
@@ -2358,6 +2548,7 @@
     category: builder
     title: Director of Engineering
     title_type: director
+    project: modernization
     supervisory: true
     start_date: 2025-08-(29)?
     start_date_truth: guessed
@@ -2391,6 +2582,9 @@
     start_date_truth: inferred
     salary: "$120,579"
     table_note: Missing details
+    project:
+    - spending
+    - personnel
     source:
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
@@ -2463,6 +2657,7 @@
     end_date: 2025-03-XX
     end_date_truth: self-reported
     end_type: resigned
+    project: personnel
     description: SES Noncareer Appt
     appt_type_code: 55
     appt_type: Senior Exec Perm
@@ -2485,6 +2680,7 @@
     agency: USAID
     from: OPM
     from_truth: guessed
+    project: elimination
     start_date: 2025-01-27
     start_date_truth: reported
     table_note: NYT links to USAID, but need to find public reports of this
@@ -2498,6 +2694,7 @@
     end_date: 2025-07-XX
     end_date_truth: self-reported
     end_type: unknown
+    project: impunity
     table_note: Rep. Vindman reported in early March being contacted by Cromer at the DOJ
     comment: Vindman in early March reports receiving contacts from Cromer at DOJ
     source:
@@ -2558,6 +2755,7 @@
     end_date: 2025-05-28
     end_date_truth: verified
     end_type: resigned
+    project: impunity
     title: Senior Advisor
     title_type: advisor
     source:
@@ -2589,6 +2787,7 @@
     end_date: 2025-03-05
     end_date_truth: guessed
     end_type: resigned
+    project: personnel
     description: Exc Appt NTE
     appt_type_code: 48
     appt_type: Other
@@ -2635,6 +2834,7 @@
     title: Acting Commissioner
     title_type: director
     agency: SSA
+    project: impunity
     start_date: 2025-02-16
     start_date_truth: verified
     end_date: 2025-05-06
@@ -2653,6 +2853,7 @@
     end_date: 2025-06-XX
     end_date_truth: reported
     end_type: fired
+    project: impunity
     table_note: Replaced by Bisignano as confirmed commissioner, ProPublica reports dismissed in June
     source:
     - >-
@@ -2683,6 +2884,7 @@
     title: Acting Administrator
     title_type: director
     agency: GSA
+    project: impunity
     sort_date: 2025-01-20
     start_date: 2025-01-20
     start_date_truth: reported
@@ -2694,6 +2896,7 @@
     source: https://www.nextgov.com/people/2025/01/gsa-announces-new-fas-tts-leadership/402485/
   - id: gsa-ehikian-deputy
     type: demotion
+    project: impunity
     category: enabler
     title: Deputy Administrator
     title_type: dept_head
@@ -2732,14 +2935,16 @@
   - id: detail-dol-dhs-elez
     type: detailed
     category: wrecker
+    project: immigration
     agency: DHS
     from: DOL
     from_truth: guessed
     comment: No other info, just mentioned in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - id: internal-dhs-cpb-elez
+  - id: internal-dhs-cbp-elez
     type: internal
     category: wrecker
+    project: immigration
     agency: CBP
     from: DHS
     from_truth: inferred
@@ -2748,6 +2953,7 @@
   - id: internal-dhs-ice-elez
     type: internal
     category: wrecker
+    project: immigration
     agency: ICE
     from: DHS
     from_truth: inferred
@@ -2765,6 +2971,7 @@
   - id: internal-dhs-uscis-elez
     type: internal
     category: wrecker
+    project: immigration
     agency: USCIS
     from: DHS
     from_truth: inferred
@@ -2774,6 +2981,9 @@
     type: appointed
     category: wrecker
     description: EXC APPT NTE
+    project:
+    - spending
+    - fraud
     start_date: 2025-01-21
     start_date_truth: verified
     nte_date: 2025-05-25
@@ -2798,6 +3008,7 @@
     type: appointed
     category: unknown
     agency: DOGE
+    project: impunity
     start_date: 2025-02-10
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
@@ -2808,6 +3019,9 @@
     type: appointed
     category: wrecker
     agency: DOL
+    project:
+    - immigration
+    - spending
     start_date: 2025-02-12
     start_date_truth: inferred
     nte_date: 2025-06-11
@@ -2843,6 +3057,9 @@
     agency: HHS
     from: DOL
     from_truth: verified
+    project:
+    - fraud
+    - spending
     start_date: 2025-03-05
     start_date_truth: verified
     title: Executive Engineer
@@ -2856,6 +3073,9 @@
     agency: CMS
     from: HHS
     from_truth: inferred
+    project:
+    - spending
+    - fraud
     sort_date: 2025-03-06
     start_date: 2025-03-05
     start_date_truth: verified
@@ -2886,6 +3106,7 @@
     agency: GSA
     type: appointed
     category: builder
+    project: modernization
     start_date: 2025-03-18
     start_date_truth: self-reported
     table_note: Month sourced from LinkedIn, signed in once on 3/18 (badging in after?)
@@ -2920,6 +3141,7 @@
     end_date: 2025-07-09
     end_date_truth: inferred
     end_type: replaced
+    project: impunity
     replaced_by: opm-ezell-advisor
     table_note: Replaced by Scott Kupor's appointment
     title: Acting Director
@@ -2935,6 +3157,7 @@
     end_date: 2025-10-XX
     end_date_truth: self-reported
     end_type: resigned
+    project: impunity
     title: Senior Advisor
     title_type: advisor
     office: Office of the Director
@@ -2954,6 +3177,7 @@
     type: appointed
     category: enabler
     agency: EPA
+    project: impunity
     start_date: 2025-05-(08)~
     start_date_truth: reported
     sort_date: 2025-05-04
@@ -2997,6 +3221,7 @@
     from: GSA
     from_truth: guessed
     agency: DHS
+    project: immigration
     table_note: linked to DHS by NYT, no other info
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -3014,6 +3239,7 @@
     category: wrecker
     from: DHS
     from_truth: inferred
+    project: immigration
     agency: ICE
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -3030,6 +3256,7 @@
     category: wrecker
     from: DHS
     from_truth: inferred
+    project: immigration
     agency: USCIS
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -3038,6 +3265,9 @@
     category: wrecker
     agency: HHS
     from: GSA
+    project:
+    - fraud
+    - spending
     from_truth: verified
     start_date: 2025-01-21
     start_date_truth: verified
@@ -3053,6 +3283,7 @@
     from_truth: inferred
     start_date: 2025-01-24
     start_date_truth: verified
+    project: impunity
     end_date: 2025-07-31
     end_date_truth: verified
     end_type: detail_ended
@@ -3061,6 +3292,7 @@
     type: detailed
     category: wrecker
     agency: USAID
+    project: elimination
     from: GSA
     from_truth: inferred
     start_date: 2025-01-27
@@ -3070,6 +3302,9 @@
     type: internal
     category: wrecker
     agency: CDC
+    project:
+    - fraud
+    - spending
     from: HHS
     from_truth: inferred
     start_date: 2025-01-30
@@ -3093,6 +3328,9 @@
     category: wrecker
     from: GSA
     from_truth: guessed
+    project:
+    - spending
+    - personnel
     agency: Energy
     sort_date: 2025-02-04
     start_date: 2025-02-(04)~
@@ -3102,6 +3340,7 @@
     type: detailed
     category: wrecker
     agency: CFPB
+    project: elimination
     from: GSA
     from_truth: verified
     start_date: 2025-02-07
@@ -3118,6 +3357,9 @@
     agency: State
     from: GSA
     from_truth: guessed
+    project:
+    - personnel
+    - spending
     start_date: 2025-02-10
     start_date_truth: reported
     title: Senior Advisor
@@ -3129,6 +3371,7 @@
     type: internal
     category: wrecker
     agency: NIH
+    project: spending
     from: HHS
     from_truth: inferred
     start_date: 2025-02-24
@@ -3140,6 +3383,9 @@
     category: wrecker
     from: GSA
     from_truth: guessed
+    project:
+    - spending
+    - dei
     start_date: 2025-04-14
     start_date_truth: reported
     table_note: arrived at agency to do secondary round of grant reviews with other DOGE staff at HHS.
@@ -3150,6 +3396,7 @@
     type: detailed
     category: wrecker
     agency: DOL
+    project: spending
     from: GSA
     from_truth: inferred
     start_date: 2025-05-(09)~
@@ -3163,6 +3410,7 @@
     type: converted
     category: wrecker
     title: Senior Advisor
+    project: spending
     pay_grade: GS-15
     table_note: Salary range for GS-15 in DC
     salary: "$167,603 - $195,200"
@@ -3189,6 +3437,9 @@
     title: Senior Advisor
     title_type: advisor
     type: detailed
+    project:
+    - spending
+    - fraud
     category: wrecker
     table_note: identified by agency FOIA as having been at the agency, guessing detailed
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
@@ -3216,6 +3467,10 @@
     category: wrecker
     from: Education
     from_truth: verified
+    project:
+    - spending
+    - deregulation
+    - dei
     agency: HHS
     start_date: 2025-02-20
     start_date_truth: verified
@@ -3239,6 +3494,9 @@
     start_date: 2025-05-(01)?
     start_date_truth: inferred
     table_note: Guessed because created a spreadsheet at DOI on grant cancellations around 5/07
+    project:
+    - spending
+    - dei
     source: https://www.nytimes.com/2025/05/07/climate/trump-park-service-grants-cuts.html
   - id: detail-usda-fennessy
     type: detailed
@@ -3250,6 +3508,9 @@
     start_date_truth: verified
     nte_date: 2025-09-12
     nte_date_truth: inferred
+    project:
+    - spending
+    - dei
     source: >-
       https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
 
@@ -3299,6 +3560,7 @@
     sort_date: 2025-03-22
     start_date: 2025-03-(22)?
     start_date_truth: guessed
+    project: elimination
     table_note: Linked to agency by ProPublica
     source: https://projects.propublica.org/elon-musk-doge-tracker/
   - id: usda-joshua-fox
@@ -3309,6 +3571,9 @@
     nte_date_truth: inferred
     type: detailed
     category: wrecker
+    project:
+    - spending
+    - deregulation
     from: DOGE
     from_truth: verified
     reimbursed: false
@@ -3382,6 +3647,9 @@
     agency: NEA
     category: wrecker
     type: detailed
+    project:
+    - spending
+    - personnel
     from: GSA
     from_truth: self-reported
     source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
@@ -3394,6 +3662,9 @@
     title: Senior Advisor
     title_type: advisor
     office: Office of the Administrator
+    project:
+    - spending
+    - personnel
     end_date: 2025-09-(15)~
     end_date_truth: verified
     end_type: resigned
@@ -3410,6 +3681,7 @@
     type: detailed
     from: GSA
     category: wrecker
+    project: elimination
     from_truth: self-reported
     start_date: 2025-03-(04)~
     sort_date: 2025-03-04
@@ -3420,6 +3692,7 @@
     agency: USIP
     type: detailed
     from: GSA
+    project: elimination
     category: wrecker
     from_truth: self-reported
     start_date: 2025-03-04
@@ -3429,6 +3702,10 @@
   - id: detail-neh-justin-fox
     type: detailed
     category: wrecker
+    project:
+    - spending
+    - dei
+    - elimination
     agency: NEH
     from: GSA
     from_truth: guessed
@@ -3442,6 +3719,9 @@
     type: detailed
     agency: IMLS
     from: GSA
+    project:
+    - spending
+    - dei
     category: wrecker
     from_truth: self-reported
     start_date: 2025-03-20
@@ -3454,6 +3734,9 @@
     agency: MCC
     from: GSA
     from_truth: guessed
+    project:
+    - spending
+    - elimination
     sort_date: 2025-03-22
     start_date: 2025-03-(22)?
     start_date_truth: guessed
@@ -3465,6 +3748,7 @@
     type: detailed
     category: wrecker
     agency: WWICS
+    project: elimination
     from: GSA
     from_truth: guessed
     start_date: 2025-03-31
@@ -3474,6 +3758,7 @@
   - id: detail-gsa-nlrb-fox
     type: detailed
     category: wrecker
+    project: deregulation
     agency: NLRB
     from: GSA
     from_truth: guessed
@@ -3505,6 +3790,10 @@
     sort_date: 2025-02-04
     start_date: 2025-02-(04)~
     start_date_truth: reported
+    project:
+    - spending
+    - fraud
+    - personnel
     source: >-
       https://www.military.com/daily-news/2025/02/05/elon-musk-aide-now-working-va-and-accessing-its-computer-systems.html
     table_note: reported in early Feb but named later
@@ -3516,6 +3805,7 @@
     table_note: no info, but assuming detailed from VA
     start_date: 2025-03-04
     start_date_truth: reported
+    project: personnel
     end_date: 2025-04-24
     end_date_truth: reported
     end_type: replaced
@@ -3531,6 +3821,7 @@
     end_date: 2025-07-20
     end_date_truth: verified
     end_type: resigned
+    project: personnel
     title: Senior Advisor
     title_type: advisor
     office: Office of the Secretary
@@ -3573,6 +3864,7 @@
     type: detailed
     from: GSA
     category: wrecker
+    project: deregulation
     start_date: 2025-10-XX
     start_date_truth: reported
     from_truth: guessed
@@ -3639,6 +3931,7 @@
     start_date: 2025-02-18
     start_date_truth: verified
     description: Exc Appt NTE
+    project: modernization
     appt_type_code: 48
     appt_type: Other
     excepted: true
@@ -3663,6 +3956,7 @@
     start_date_truth: reported
     title: Chief Design Officer
     title_type: dept_head
+    project: modernization
     office: National Design Studio
     table_note: Position created in EO 14338
     source: >-
@@ -3684,6 +3978,7 @@
     category: builder
     start_date: 2025-01-XX
     start_date_truth: inferred
+    project: modernization
     sort_date: 2025-01-20
     salary: "$0"
     agency: GSA
@@ -3693,6 +3988,9 @@
   - id: dol-derek-geissler
     type: detailed
     category: wrecker
+    project:
+    - spending
+    - personnel
     sort_date: 2025-02-13
     start_date: 2025-02-(13)~
     start_date_truth: reported
@@ -3720,6 +4018,9 @@
     category: wrecker
     start_date: 2025-02-(18)?
     start_date_truth: inferred
+    project:
+    - spending
+    - personnel
     table_note: >-
       Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting on 2/20 that many were
       veterans
@@ -3788,6 +4089,7 @@
     end_date: 2025-06-02
     end_date_truth: reported
     end_type: fired
+    project: modernization
     title: Senior Advisor
     title_type: advisor
     office: Office of the Administrator
@@ -3818,6 +4120,7 @@
     pay_grade: AD-00
     replaced_by: doge-amy-gleason-director
     type: appointed
+    project: impunity
     category: wrecker
     table_note: this is Amy's role in USDS until she was named the administrator of DOGE
     comment: >-
@@ -3836,6 +4139,9 @@
     start_date: 2025-02-XX
     start_date_truth: guessed
     sort_date: 2025-02-15
+    project:
+    - spending
+    - modernization
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     table_note: assuming a detail from DOGE to HHS
   - id: doge-amy-gleason-director
@@ -3846,6 +4152,7 @@
     agency: DOGE
     title: Acting Administrator, US DOGE Service and the DOGE Temporary Organization
     title_type: director
+    project: impunity
     series: '0301'
     pay_grade: AD-00
     source:
@@ -3870,6 +4177,9 @@
     title_type: advisor
     start_date: 2025-03-04
     start_date_truth: verified
+    project:
+    - spending
+    - modernization
     salary: "$0"
     comment: All I have is her SF-61
     source:
@@ -3901,6 +4211,7 @@
     end_date: 2025-06-XX
     end_date_truth: self-reported
     end_type: resigned
+    project: personnel
     title: Senior Advisor
     title_type: advisor
     source: https://www.linkedin.com/in/michaelvincentgonzalez/
@@ -3949,6 +4260,9 @@
     end_date: 2025-07-XX
     end_date_truth: self-reported
     end_type: resigned
+    project:
+    - spending
+    - impunity
     salary: "$195,200"
     table_note: Reported to have resigned on 4/18, but LinkedIN reports working into July
     title: Chief Information Officer
@@ -3967,6 +4281,7 @@
     start_date: 2025-07-XX
     start_date_truth: self-reported
     title: Chief Information Security Officer
+    project: impunity
     title_type: dept_head
     supervisory: true
     source: https://www.linkedin.com/in/rgsec/
@@ -4083,6 +4398,9 @@
     end_date: 2025-05-XX
     end_date_truth: self-reported
     end_type: replaced
+    project:
+    - spending
+    - personnel
     replaced_by: commerce-grimes-invest-accelerator
     title: Senior Advisor
     title_type: advisor
@@ -4098,6 +4416,7 @@
     title: Executive Director, US Investment Accelerator
     agency: Commerce
     category: builder
+    project: modernization
     start_date: 2025-03-XX
     start_date_truth: self-reported
     end_date: 2026-02-XX
@@ -4120,6 +4439,7 @@
     agency: NDS
     source: >-
       https://www.nextgov.com/digital-government/2026/02/new-white-house-design-team-aims-delightful-websites-changing-design-ethos-process/411560/
+    project: modernization
     start_date: 2025-07-XX
     start_date_truth: guessed
     sort_date: 2025-07-01
@@ -4130,6 +4450,7 @@
     agency: SSA
     from: NDS
     from_truth: guessed
+    project: modernization
     title: IT Cybersecurity Expert
     start_date: 2025-07-XX
     start_date_truth: self-reported
@@ -4158,6 +4479,9 @@
     salary: "$183,100"
     title: Federal Acquisition Service Commissioner
     title_type: dept_head
+    project:
+    - spending
+    - impunity
     source:
     - https://www.nextgov.com/people/2025/01/gsa-announces-new-fas-tts-leadership/402485/
     - >-
@@ -4177,6 +4501,9 @@
     start_date_truth: reported
     type: detailed
     category: wrecker
+    project:
+    - elimination
+    - spending
     source: https://bsky.app/profile/marisakabas.bsky.social/post/3llowvghols2b
     comment: DOGE put entire staff on admin leave and started cancelling grants, not many details
     agency: IMLS
@@ -4202,6 +4529,7 @@
     office: Office of General Counsel
     pay_grade: GS-12
     table_note: At badging on 2/14, so inferring start then
+    project: spending
     source:
     - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
     - >-
@@ -4213,6 +4541,7 @@
     agency: DOGE
     from: GSA
     from_truth: inferred
+    project: spending
     start_date: 2025-02-24
     start_date_truth: verified
     source:
@@ -4258,6 +4587,7 @@
     type: appointed
     category: support
     agency: OPM
+    project: personnel
     start_date: 2025-02-03
     start_date_truth: verified
     end_date: 2025-03-05
@@ -4307,6 +4637,10 @@
     category: enabler
     start_date: 2025-01-23
     start_date_truth: inferred
+    project:
+    - spending
+    - personnel
+    - impunity
     end_date: 2025-03-07
     end_date_truth: verified
     end_type: replaced
@@ -4329,6 +4663,10 @@
     end_date_truth: reported
     end_type: replaced
     replaced_by: doi-hassan-principal
+    project:
+    - spending
+    - personnel
+    - impunity
     title: Acting Assistant Secretary of Policy, Management and Budget
     title_type: dept_head
     table_note: ended with title change to Principal Deputy Assistant Secretary
@@ -4344,6 +4682,10 @@
     end_date: 2025-09-03
     end_date_truth: verified
     end_type: replaced
+    project:
+    - spending
+    - personnel
+    - impunity
     replaced_by: doi-hassen-unknown
     title: Principal Deputy Assistant Secretary
     title_type: director
@@ -4365,6 +4707,10 @@
     end_date: 2025-11-XX
     end_date_truth: self-reported
     end_type: resigned
+    project:
+    - spending
+    - personnel
+    - impunity
     table_note: Working on layoffs / consolidation; LinkedIn reports left in November
     source:
     - https://www.publicdomain.media/p/tyler-hassen-interior-doge-financial-holdings
@@ -4427,6 +4773,7 @@
     agency: DHS
     start_date: 2025-03-(19)~
     start_date_truth: reported
+    project: immigration
     salary: "$167,603"
     source:
     - >-
@@ -4436,6 +4783,7 @@
   - id: doj-hoffman
     type: detailed
     category: wrecker
+    project: immigration
     from: DOGE
     from_truth: inferred
     start_date: 2025-04-21
@@ -4468,6 +4816,9 @@
     category: enabler
     name: Greg Hogan
     agency: OPM
+    project:
+    - personnel
+    - impunity
     start_date: 2025-01-20
     start_date_truth: verified
     end_date: 2025-01-20
@@ -4499,6 +4850,9 @@
     end_date: 2025-02-11
     end_date_truth: verified
     end_type: replaced
+    project:
+    - personnel
+    - impunity
     replaced_by: opm-hogan-cio-official
     table_note: testified he started as Senior Advisor but was made Acting CIO same day. Made permanent
       CIO on 2/11
@@ -4520,6 +4874,9 @@
     end_date: 2025-09-02
     end_date_truth: reported
     end_type: resigned
+    project:
+    - personnel
+    - impunity
     description: SES Noncareer Appt
     appt_type_code: 55
     appt_type: SES Noncareer
@@ -4543,6 +4900,7 @@
     type: appointed
     start_date: 2025-10-XX
     start_date_truth: self-reported
+    project: modernization
     title: Hacker in Residence
     source: https://www.linkedin.com/in/greghogan/
 
@@ -4585,6 +4943,7 @@
     end_date: 2025-05-29
     end_date_truth: reported
     end_type: resigned
+    project: spending
     comment: Reportedly, has left the government in the wake of Steve Davis and Elon Musk leaving
     office: Office of the Administrator
     supervisory: true
@@ -4616,6 +4975,7 @@
     sort_date: 2025-02-01
     start_date: 2025-02-(01)~
     start_date_truth: reported
+    project: personnel
     comment: First mentioned in reports on 2/1
     table_note: First reported today, likely onboarded earlier in January
     source:
@@ -4633,6 +4993,7 @@
     end_date: 2025-09-(29)~
     end_date_truth: verified
     end_type: resigned
+    project: personnel
     table_note: reported on 7/29 as leaving DOI; but still at DOI in Sept; new Chief HCO appointed 9/29
     title: Special Advisor / Acting Chief Human Capital Officer
     title_type: dept_head
@@ -4670,6 +5031,7 @@
     category: builder
     type: appointed
     title: Design Director, Founding Design Partner
+    project: modernization
     start_date: 2025-09-XX
     start_date_truth: self-reported
     source: https://www.linkedin.com/in/aaron-jackson-5387b89b/
@@ -4694,6 +5056,7 @@
     end_date: 2025-03-25
     end_date_truth: verified
     end_type: removed
+    project: elimination
     title: Acting President
     title_type: director
     agency: USIP
@@ -4709,6 +5072,9 @@
     start_date_truth: verified
     title: Deputy Administrator (Management and Resources)
     title_type: dept_head
+    project:
+    - elimination
+    - impunity
     supervisory: true
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.77.2.pdf
     agency: USAID
@@ -4792,6 +5158,9 @@
     sort_date: 2025-02-01
     start_date: 2025-02-XX
     start_date_truth: guessed
+    project:
+    - spending
+    - deregulation
     agency: GSA
     source: https://projects.propublica.org/elon-musk-doge-tracker/
     table_note: Assuming GSA start because linked there by ProPublica and at time, people were detailed
@@ -4801,6 +5170,9 @@
     category: wrecker
     from: GSA
     from_truth: guessed
+    project:
+    - spending
+    - deregulation
     salary: "$0"
     start_date: 2025-02-12
     start_date_truth: reported
@@ -4844,6 +5216,7 @@
     type: appointed
     category: wrecker
     agency: FAA
+    project: modernization
     start_date: 2025-02-16
     start_date_truth: reported
     nte_date: 2025-02-20
@@ -4879,6 +5252,7 @@
     start_date_truth: verified
     end_date: 2025-06-27
     end_date_truth: verified
+    project: personnel
     end_type: resigned
     table_note: reported as interviewing USDS staff about jobs, not found in GSA or OPM lists
     comment: Listed as interviewing USDS staff on 1/21, not in GSA or OPM crew
@@ -4896,6 +5270,9 @@
     start_date_truth: reported
     end_date: 2025-06-(27)?
     end_date_truth: inferred
+    project:
+    - spending
+    - deregulation
     end_type: detail_ended
     title: Federal Detailee
     source:
@@ -4910,6 +5287,9 @@
     sort_date: 2025-02-13
     start_date: 2025-02-(13)~
     start_date_truth: reported
+    project:
+    - spending
+    - deregulation
     comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on
       2/5.
     source: >-
@@ -4941,6 +5321,7 @@
   - id: nds-kim
     type: appointed
     category: builder
+    project: modernization
     agency: NDS
     start_date: 2026-02-XX
     start_date_truth: self-reported
@@ -4968,6 +5349,9 @@
     title: Senior Advisor
     title_type: advisor
     sort_date: 2025-02-01
+    project:
+    - spending
+    - fraud
     source:
     - https://projects.propublica.org/elon-musk-doge-tracker/
     - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
@@ -4977,6 +5361,9 @@
     category: wrecker
     from: GSA
     from_truth: guessed
+    project:
+    - spending
+    - fraud
     sort_date: 2025-02-02
     source:
     - https://projects.propublica.org/elon-musk-doge-tracker/
@@ -5002,6 +5389,7 @@
     category: wrecker
     from: OPM
     agency: DHS
+    project: immigration
     from_truth: guessed
     comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -5057,6 +5445,7 @@
     type: detailed
     category: wrecker
     agency: USAID
+    project: elimination
     from: OPM
     from_truth: verified
     start_date: 2025-01-27
@@ -5067,6 +5456,9 @@
     category: wrecker
     from: OPM
     agency: USDA
+    project:
+    - spending
+    - personnel
     from_truth: verified
     start_date: 2025-01-29
     start_date_truth: verified
@@ -5089,6 +5481,9 @@
     end_date: 2025-05-08
     end_date_truth: verified
     end_type: fired
+    project:
+    - elimination
+    - personnel
     title_type: advisor
     source: >-
       https://news.bloomberglaw.com/banking-law/doge-employee-leaves-cfpb-after-leading-trumps-mass-firing-plan
@@ -5127,6 +5522,7 @@
     agency: IRS
     from: OPM
     from_truth: verified
+    project: fraud
     reimbursed: true
     start_date: 2025-02-19
     start_date_truth: verified
@@ -5162,6 +5558,9 @@
     sort_date: 2025-03-28
     start_date: 2025-03-(28)~
     start_date_truth: reported
+    project:
+    - personnel
+    - deregulation
     comment: Title is not given, reported as starting "last week" from 2025-04-04
     source: https://www.axios.com/pro/tech-policy/2025/04/04/doge-staffers-move-into-ftc-office
     agency: FTC
@@ -5172,6 +5571,7 @@
     start_date: 2025-12-XX
     start_date_truth: self-reported
     title: Chief Data Officer
+    project: modernization
     fuzz: His press release says appointed in 3/2026, but LinkedIn says he's been in the role since December
     source:
     - https://www.linkedin.com/in/gavin-kliger-5a339b157/
@@ -5201,6 +5601,7 @@
     end_date: 2025-02-05
     end_date_truth: verified
     end_type: resigned
+    project: personnel
     source:
     - https://www.propublica.org/article/elon-musk-doge-lawyers-supreme-court
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
@@ -5242,6 +5643,7 @@
     start_date: 2025-08-(26)~
     start_date_truth: reported
     sort_date: 2025-08-26
+    project: modernization
     source:
     - https://www.wired.com/story/doge-operatives-joining-national-design-studio/
     - https://www.notus.org/trump-white-house/silicon-valley-government-websites-national-design-studio
@@ -5295,6 +5697,9 @@
     start_date: 2025-04-15
     start_date_truth: reported
     table_note: assuming detail from SSA
+    project:
+    - fraud
+    - immigration
     source: https://www.nytimes.com/2025/04/18/us/politics/doge-musk-social-security-justice-department.html
     agency: DOJ
 
@@ -5332,6 +5737,9 @@
     type: consultant
     category: wrecker
     comment: Part-time
+    project:
+    - spending
+    - fraud
     start_date: 2025-01-23
     start_date_truth: verified
     end_date: 2025-02-12
@@ -5353,6 +5761,9 @@
     type: converted
     category: wrecker
     comment: Changed to a full-time position
+    project:
+    - spending
+    - fraud
     start_date: 2025-02-13
     start_date_truth: verified
     nte_date: 2025-07-03
@@ -5398,6 +5809,7 @@
     type: appointed
     category: leadership
     agency: OPM
+    project: personnel
     start_date: 2025-07-09
     start_date_truth: verified
     title: Director
@@ -5439,6 +5851,10 @@
     end_date: 2025-07-XX
     end_date_truth: self-reported
     end_type: resigned
+    project:
+    - spending
+    - fraud
+    - deregulation
     table_note: assuming appointed, LinkedIn reports move to OMB
     source:
     - https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
@@ -5454,6 +5870,7 @@
     start_date: 2025-08-XX
     start_date_truth: self-reported
     title: Executive Director, Deregulation AI
+    project: deregulation
     source:
     - https://www.linkedin.com/in/scottlangmack/
 
@@ -5480,6 +5897,9 @@
     end_date_truth: verified
     end_type: fired
     table_note: fired for talking to media, dates from his blog
+    project:
+    - spending
+    - fraud
     type: appointed
     category: wrecker
     title: Senior Advisor
@@ -5497,6 +5917,7 @@
     start_date: 2025-11-XX
     start_date_truth: reported
     table_note: Reportedly a career employee at the IRS (not a political appointee)
+    project: modernization
     agency: IRS
     source: https://www.wired.com/story/big-interview-event-sahil-lavingia/
 
@@ -5533,6 +5954,10 @@
     type: detailed
     agency: USAID
     from: GSA
+    project:
+    - elimination
+    - spending
+    - personnel
     category: wrecker
     reimbursed: false
     from_truth: verified
@@ -5553,6 +5978,7 @@
   - id: detail-gsa-cfpb-jeremy-lewin
     type: detailed
     category: wrecker
+    project: elimination
     agency: CFPB
     from: GSA
     from_truth: verified
@@ -5563,6 +5989,9 @@
   - id: detail-gsa-hhs-lewin
     type: detailed
     category: wrecker
+    project:
+    - spending
+    - fraud
     agency: HHS
     from: GSA
     from_truth: guessed
@@ -5593,6 +6022,7 @@
     type: appointed
     category: enabler
     agency: USAID
+    project: elimination
     start_date: 2025-03-18
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.77.2.pdf
@@ -5607,6 +6037,7 @@
     end_date_truth: verified
     end_type: replaced
     replaced_by: state-lewin-undersecretary
+    project: spending
     title: Acting Head of Foreign Assistance
     title_type: dept_head
     agency: State
@@ -5614,6 +6045,7 @@
     agency: State
     category: enabler
     type: promotion
+    project: spending
     start_date: 2025-07-11
     start_date_truth: verified
     title: Under Secretary for Foreign Assistance, Humanitarian Affairs and Religious Freedom
@@ -5635,6 +6067,7 @@
     category: builder
     start_date: 2025-06-XX
     start_date_truth: inferred
+    project: modernization
     table_note: >-
       Left prior job in May, December blog post said working past 6 months on OPM project to digitize
       paper retirements. Although lists job as NDS, this should be an OPM role.
@@ -5659,6 +6092,9 @@
     type: appointed
     category: wrecker
     salary: "$142,488"
+    project:
+    - spending
+    - fraud
     title: Advisor on Government Efficiency
     start_date: 2025-03-17
     start_date_truth: self-reported
@@ -5701,6 +6137,7 @@
     end_date: 2025-07-XX
     end_date_truth: self-reported
     end_type: resigned
+    project: impunity
     title: Senior Advisor for Technology and Efficiency
     title_type: advisor
     series: '0301'
@@ -5736,6 +6173,9 @@
     end_date: 2025-01-20
     end_date_truth: inferred
     end_type: replaced
+    project:
+    - spending
+    - dei
     replaced_by: epa-loving
     table_note: LinkedIn reported being consultant/advisor to Zeldin from Dec 2024; assuming transition
       role here
@@ -5750,6 +6190,9 @@
     end_type: resigned
     table_note: Reported left EPA on LinkedIn. Likely at EPA from Day one based on NOTUS
     title: Federal Detailee
+    project:
+    - spending
+    - dei
     source:
     - https://www.eenews.net/articles/doge-lands-at-epa/
     - https://www.linkedin.com/in/kathrynarmstrongloving/
@@ -5779,6 +6222,7 @@
     replaced_by: doi-luby-strategy
     salary: "$142,488"
     comment: Tyler Hassen reported to be working with Matt Luby to scrutinize grants
+    project: spending
     source:
     - https://www.washingtonpost.com/climate-environment/2025/04/21/tyler-hassen-department-of-interior/
     - >-
@@ -5866,6 +6310,7 @@
     end_date: 2025-07-XX
     end_date_truth: self-reported
     end_type: resigned
+    project: personnel
     source:
     - https://www.pogo.org/investigations/inside-the-shadowy-crew-leading-the-governments-hr-office
     - https://www.linkedin.com/in/tarakmakecha/
@@ -5876,6 +6321,7 @@
     agency: USAGM
     from: OPM
     from_truth: guessed
+    project: elimination
     type: detailed
     category: wrecker
     sort_date: 2025-03-01
@@ -5889,6 +6335,7 @@
     from: OPM
     from_truth: verified
     start_date: 2025-03-18
+    project: deregulation
     start_date_truth: verified
     source: https://frequencyfwd.com/files/motion-exhibit-1-08252025.pdf
     office: Office of the Chairman
@@ -5899,6 +6346,7 @@
     category: wrecker
     from: OPM
     from_truth: inferred
+    project: immigration
     title: Senior Advisor
     title_type: advisor
     office: Human Resources
@@ -5941,6 +6389,7 @@
   - id: faa-malaska
     type: appointed
     category: wrecker
+    project: modernization
     agency: FAA
     start_date: 2025-02-16
     start_date_truth: reported
@@ -6076,6 +6525,7 @@
     category: support
     title: Senior Advisor to the US Federal CIO
     title_type: advisor
+    project: spending
     office: Office of Management and Budget
     start_date: 2025-04-XX
     sort_date: 2025-04-15
@@ -6110,6 +6560,7 @@
     title: Director of Foreign Assistance
     salary: "$195,200"
     title_type: director
+    project: elimination
     source:
     - >-
       https://www.reuters.com/world/us/trump-official-who-oversaw-closure-usaid-has-left-state-department-wsj-reports-2025-04-13/
@@ -6119,6 +6570,7 @@
     agency: USAID
     type: appointed
     category: enabler
+    project: elimination
     start_date: 2025-02-01
     start_date_truth: reported
     end_date: 2025-03-19
@@ -6133,6 +6585,7 @@
     end_date: 2025-04-04
     end_date_truth: inferred
     end_type: removed
+    project: elimination
     table_note: Assuming removed with Sara Aviel reinstatement by court order
     title: President/CEO
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
@@ -6142,6 +6595,7 @@
     category: wrecker
     agency: USADF
     title: Acting Chair of the Board
+    project: elimination
     start_date: 2025-02-28
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
@@ -6163,6 +6617,9 @@
     agency: DHS
     start_date: 2025-03-11
     start_date_truth: reported
+    project:
+    - modernization
+    - impunity
     salary: "$195,200"
     source:
     - https://www.nextgov.com/people/2025/03/dhs-taps-antoine-mccord-top-tech-post/403727/
@@ -6193,6 +6650,9 @@
     type: appointed
     category: enabler
     agency: DOI
+    project:
+    - modernization
+    - impunity
     title: Chief Information Officer
     title_type: cio
     start_date: 2025-05-05
@@ -6233,6 +6693,9 @@
     from_truth: guessed
     start_date: 2025-04-28
     start_date_truth: reported
+    project:
+    - elimination
+    - spending
     source: >-
       https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
     agency: USDFC
@@ -6247,6 +6710,7 @@
     end_date: 2025-10-31
     end_date_truth: reported
     end_type: detail_ended
+    project: deregulation
     title: Senior Advisor
     title_type: advisor
     office: Chairman of the SEC
@@ -6283,6 +6747,7 @@
     end_date_truth: verified
     end_type: resigned
     table_note: no public details on when she started with DOGE, but date inferred
+    project: impunity
 
 - name: Clark Minor
   sort_name: Minor
@@ -6381,6 +6846,9 @@
     start_date: 2025-02-10
     start_date_truth: reported
     salary: "$162,682"
+    project:
+    - spending
+    - fraud
     source:
     - https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
     - >-
@@ -6410,6 +6878,7 @@
     title: Senior Advisor
     title_type: advisor
     office: Office of the Chairman
+    project: deregulation
     comment: Reporting on 4/15 just says he arrived "earlier this month"
     source:
     - >-
@@ -6452,6 +6921,7 @@
     end_date: 2025-03-05
     end_date_truth: guessed
     end_type: resigned
+    project: personnel
     description: Exc Appt NTE
     appt_type_code: 48
     appt_type: Other
@@ -6500,6 +6970,7 @@
     agency: DHS
     from: DOL
     from_truth: guessed
+    project: immigration
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: detail-sba-moghaddassi
@@ -6510,6 +6981,9 @@
     title: Special Advisor
     title_type: advisor
     type: detailed
+    project:
+    - spending
+    - fraud
     table_note: identified by agency FOIA as having been at the agency, guessing detailed
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
   - id: internal-dhs-cpb-mohgaddassi
@@ -6518,6 +6992,7 @@
     agency: CBP
     from: DHS
     from_truth: inferred
+    project: immigration
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-ice-mohgaddassi
@@ -6526,6 +7001,7 @@
     agency: ICE
     from: DHS
     from_truth: inferred
+    project: immigration
     comment: No details, but reported in NYT roundup. Assuming detailed from DOL
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
   - id: internal-dhs-tsa-mohgaddassi
@@ -6558,6 +7034,10 @@
     salary: "$84,601"
     title: Policy Advisor
     title_type: advisor
+    project:
+    - spending
+    - fraud
+    - immigration
     office: Office of the Secretary
     source: https://www.documentcloud.org/documents/26028779-onboard-dol-aram-moghaddassi/
   - id: detail-dol-ssa-employee-3
@@ -6585,6 +7065,9 @@
     from_truth: verified
     start_date: 2025-03-05
     start_date_truth: verified
+    project:
+    - spending
+    - fraud
     title: Executive Engineer
     title_type: advisor
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
@@ -6608,6 +7091,9 @@
     end_date: 2025-09-03
     end_date_truth: verified
     end_type: replaced
+    project:
+    - immigration
+    - impunity
     fuzz: Listed as co-CIO on 6/6 in news report
     source: https://fedscoop.com/social-security-administration-doge-chief-information-officer/
     title: Chief Information Officer
@@ -6621,6 +7107,10 @@
     start_date_truth: verified
     end_date: 2026-01-XX
     end_date_truth: self-reported
+    end_type: resigned
+    project:
+    - immigration
+    - impunity
     title: Chief Information Officer (Technology and Customer Products)
     title_type: cio
     supervisory: true
@@ -6660,6 +7150,7 @@
     series: '0301'
     salary: "$0"
     supervisory: false
+    project: immigration
     office: Office of the Director
     comment: Sourced from FOIA documents
     source:
@@ -6677,6 +7168,7 @@
     start_date_truth: reported
     category: wrecker
     type: detailed
+    project: immigration
     agency: FBI
     from: OPM
     from_truth: guessed
@@ -6743,6 +7235,9 @@
     title_type: advisor
     start_date: 2025-04-09
     start_date_truth: verified
+    project:
+    - spending
+    - fraud
     mou: https://www.documentcloud.org/documents/26028801-mou-20250408-education-treasury/
     source: https://www.documentcloud.org/documents/26028801-mou-20250408-education-treasury/
   - id: detail-education-fdic-morgan
@@ -6752,6 +7247,7 @@
     from_truth: guessed
     start_date: 2025-04-10
     start_date_truth: reported
+    project: deregulation
     source: https://www.thehandbasket.co/p/doge-fdic
     agency: FDIC
 
@@ -6771,6 +7267,9 @@
     category: adjacent
     start_date: 2025-01-23
     start_date_truth: reported
+    project:
+    - elimination
+    - impunity
     agency: EOP
     title: Deputy Assistant to the President / Deputy Director of Presidential Personnel
     title_type: dept_head
@@ -6804,6 +7303,10 @@
     end_date: 2025-05-28
     end_date_truth: verified
     end_type: resigned
+    project:
+    - impunity
+    - fraud
+    - personnel
     agency: DOGE
 
 - name: Todd Newnam
@@ -6829,6 +7332,9 @@
     pay_grade: GS-15
     salary: "$167,603"
     fuzz: Identity is only revealed in a court filing, using ethics training date for start date
+    project:
+    - spending
+    - fraud
     comment: NYT says he is a Senior Advisor
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
@@ -6860,6 +7366,9 @@
     title_type: director
     start_date: 2026-01-20
     start_date_truth: reported
+    project:
+    - modernization
+    - impunity
     supervisory: true
     source: >-
       https://news.bloombergtax.com/daily-tax-report/irs-criminal-head-exits-trump-friendly-faces-in-new-org-chart
@@ -6874,6 +7383,7 @@
     type: appointed
     category: builder
     agency: NDS
+    project: modernization
     start_date: 2025-10-XX
     start_date_truth: reported
     source: https://www.linkedin.com/in/mnovia/
@@ -6913,6 +7423,9 @@
     from_truth: guessed
     start_date: 2025-02-03
     start_date_truth: reported
+    project:
+    - spending
+    - fraud
     title: Senior Advisor, DOGE
     title_type: advisor
     salary: "$167,603"
@@ -6929,6 +7442,9 @@
     from: GSA
     from_truth: guessed
     agency: EXIM
+    project:
+    - spending
+    - fraud
     start_date: 2025-05-14
     start_date_truth: reported
     source: https://bsky.app/profile/marisakabas.bsky.social/post/3lp5iwrmfv22y
@@ -6984,6 +7500,7 @@
     salary: "$167,603 - $195,200"
     series: '0301'
     supervisory: false
+    project: personnel
     office: Office of the Director
     comment: Details from a FOIA document
     source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
@@ -7026,6 +7543,7 @@
     type: appointed
     category: builder
     title: Executive Creative Director
+    project: modernization
     start_date: 2025-10-XX
     start_date_truth: self-reported
     source: https://www.linkedin.com/in/darshan-phillips/
@@ -7085,6 +7603,9 @@
     type: detailed
     category: wrecker
     from: OPM
+    project:
+    - spending
+    - personnel
     from_truth: guessed
     agency: NOAA
     start_date: 2025-02-04
@@ -7095,6 +7616,8 @@
     category: wrecker
     agency: CFPB
     from: OPM
+    project:
+    - elimination
     from_truth: verified
     start_date: 2025-02-07
     start_date_truth: verified
@@ -7169,6 +7692,9 @@
     end_date: 2025-08-XX
     end_date_truth: self-reported
     end_type: resigned
+    project:
+    - fraud
+    - spending
     agency: Education
     from: DOGE
     from_truth: verified
@@ -7193,6 +7719,7 @@
     from: DOGE
     from_truth: guessed
     agency: Energy
+    project: deregulation
     sort_date: 2025-02-04
     start_date: 2025-02-(04)~
     start_date_truth: disputed
@@ -7203,6 +7730,9 @@
     from: DOGE
     from_truth: verified
     agency: DOL
+    project:
+    - spending
+    - immigration
     start_date: 2025-02-05
     start_date_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.16.1.pdf
@@ -7214,6 +7744,9 @@
     from: Education
     from_truth: verified
     reimbursed: false
+    project:
+    - spending
+    - fraud
     title: Senior Treasury Advisor
     title_type: advisor
     start_date: 2025-04-09
@@ -7227,6 +7760,7 @@
     category: wrecker
     from: DOGE
     from_truth: guessed
+    project: deregulation
     start_date: 2025-04-10
     start_date_truth: reported
     source: https://www.thehandbasket.co/p/doge-fdic
@@ -7276,6 +7810,7 @@
     table_note: Start date guessed from system access
     end_date: 2025-12-22
     end_date_truth: verified
+    end_type: resigned
   - id: detail-opm-doge-raynor
     type: detailed
     category: wrecker
@@ -7315,6 +7850,7 @@
     category: wrecker
     agency: DHS
     from: SSA
+    project: immigration
     sort_date: 2025-03-15
     from_truth: inferred
     comment: No info, but listed in NYT roundup
@@ -7367,6 +7903,9 @@
     start_date_truth: reported
     from: SSA
     from_truth: guessed
+    project:
+    - immigration
+    - fraud
     source: https://www.nytimes.com/2025/04/18/us/politics/doge-musk-social-security-justice-department.html
     agency: DOJ
 
@@ -7397,6 +7936,7 @@
     end_date: 2025-03-07
     end_date_truth: reported
     end_type: resigned
+    project: impunity
     salary: "$195,200"
     source:
     - https://www.nextgov.com/people/2025/03/energy-cio-departs-after-short-tenure/403596/
@@ -7426,6 +7966,9 @@
     end_date: 2025-10-30
     end_date_truth: reported
     end_type: resigned
+    project:
+    - spending
+    - personnel
     title: Senior Advisor
     title_type: advisor
     salary: "$167,603"
@@ -7480,6 +8023,7 @@
     title: Chief of Naval Research
     office: Office of Naval Research
     supervisory: true
+    project: modernization
     title_type: dept_head
     start_date: 2025-10-(30)?
     start_date_truth: reported
@@ -7531,6 +8075,7 @@
     start_date_truth: reported
     type: appointed
     salary: "$27,444"
+    project: spending
     source:
     - https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
     - >-
@@ -7569,6 +8114,7 @@
     end_type: resigned
     title: Acting Administrator
     title_type: director
+    project: elimination
     source:
     - >-
       https://www.state.gov/secretary-marco-rubio-appointed-as-acting-administrator-for-the-united-states-agency-for-international-development-usaid/
@@ -7581,6 +8127,7 @@
     start_date_truth: verified
     title: Acting Archivist
     title_type: director
+    project: impunity
     source:
     - https://www.washingtonpost.com/politics/2025/02/16/trump-national-archives/
     - https://washingtonmonthly.com/2025/03/05/trump-fired-the-archivist-of-the-united-states/
@@ -7615,6 +8162,9 @@
     end_date_truth: reported
     end_type: replaced
     replaced_by: ssa-mike-russo-advisor
+    project:
+    - fraud
+    - impunity
     salary: '195,200'
     comment: Reportedly removed from CIO role for complying quickly with judge's orders to block access
     supervisory: true
@@ -7632,6 +8182,9 @@
     end_date_truth: verified
     end_type: replaced
     replaced_by: ssa-mike-russo-co-cio
+    project:
+    - fraud
+    - impunity
     salary: "$195,200"
     title: Senior Advisor
     title_type: advisor
@@ -7652,6 +8205,9 @@
     start_date_truth: verified
     title: Chief Information Officer (Core Business Functions)
     title_type: cio
+    project:
+    - fraud
+    - impunity
     salary: "$195,200"
     supervisory: true
     source: https://www.ssa.gov/news/en/press/releases/2025-09-03.html
@@ -7669,6 +8225,7 @@
     start_date: 2026-03-09
     start_date_truth: self-reported
     table_note: Post announcing move on Friday before
+    project: modernization
     type: appointed
     title: Design Engineer
     source: https://www.linkedin.com/feed/update/urn:li:activity:7435693207788830720/
@@ -7707,6 +8264,7 @@
     pd_code: GAPMES00905
     title: Chief of Staff
     title_type: dept_head
+    project: personnel
     pay_grade: ES-00
     series: '0301'
     salary: "$195,200"
@@ -7733,6 +8291,7 @@
     title_type: advisor
     salary: "$195,200"
     pay_grade: ES-00
+    project: personnel
     series: '0301'
     table_note: >-
       Her LinkedIn profile says she left OPM in March. Assuming it followed her demotion/replacement,
@@ -7749,6 +8308,7 @@
     type: appointed
     start_date: 2026-01-(28)~
     start_date_truth: reported
+    project: personnel
     table_note: Own LinkedIn reports back at OPM for Tech Force recruitment and staffing
     source: https://www.linkedin.com/feed/update/urn:li:activity:7422277036867588096/
 
@@ -7819,6 +8379,9 @@
     from: DHS
     sort_date: 2025-02-20
     from_truth: inferred
+    project:
+    - spending
+    - fraud
     agency: FEMA
     comment: No details, but in NYT roundup
     source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
@@ -7925,6 +8488,9 @@
     type: detailed
     category: wrecker
     table_note: identified by agency FOIA as having been at the agency, guessing detailed
+    project:
+    - spending
+    - fraud
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
   - id: gsa-sennott
     agency: GSA
@@ -7949,6 +8515,7 @@
     start_date: 2025-03-(14)~
     title: Senior Advisor
     start_date_truth: reported
+    project: spending
     source: https://www.businessinsider.com/tesla-employee-alexander-simonpour-nasa-doge-team-2025-3
     agency: NASA
 
@@ -7976,6 +8543,7 @@
     title_type: advisor
     salary: "$167,603"
     office: Office of the Administrator
+    project: spending
     agency: NOAA
     source:
     - >-
@@ -8071,6 +8639,7 @@
     agency: USADF
     start_date: 2025-02-20
     start_date_truth: verified
+    project: elimination
     nte_date: 2026-07-04
     nte_date_truth: verified
     signed_date: 2025-02-21
@@ -8079,6 +8648,7 @@
   - id: detail-gsa-iaf-shaotran
     type: detailed
     category: wrecker
+    project: elimination
     from: GSA
     agency: IAF
     from_truth: verified
@@ -8094,6 +8664,9 @@
     category: wrecker
     from: GSA
     from_truth: verified
+    project:
+    - spending
+    - personnel
     agency: USPS
     reimbursed: false
     start_date: 2025-03-12
@@ -8119,6 +8692,7 @@
     category: wrecker
     from: GSA
     from_truth: guessed
+    project: elimination
     start_date: 2025-04-28
     start_date_truth: reported
     source: >-
@@ -8147,6 +8721,7 @@
     from_truth: guessed
     start_date: 2025-05-XX
     start_date_truth: guessed
+    project: spending
     sort_date: 2025-05-17
     end_date: 2025-06-07
     end_date_truth: guessed
@@ -8208,6 +8783,10 @@
     title: Deputy FAS Commissioner / Administrator, Technology Transformation Service
     title_type: cio
     office: Technology Transformation Service
+    project:
+    - impunity
+    - modernization
+    - personnel
     start_date: 2025-01-24
     start_date_truth: reported
     end_date: 2026-02-19
@@ -8230,6 +8809,9 @@
     end_date: 2025-08-01
     end_date_truth: reported
     end_type: resigned
+    project:
+    - impunity
+    - immigration
     agency: DOL
     title: Chief Information Officer
     title_type: cio
@@ -8243,6 +8825,9 @@
     start_date: 2026-02-19
     start_date_truth: reported
     agency: GSA
+    project:
+    - impunity
+    - modernization
     title: Senior Advisor for Fraud Prevention
     title_type: advisor
     supervisory: false
@@ -8316,6 +8901,9 @@
     from: GSA
     from_truth: verified
     agency: USPS
+    project:
+    - spending
+    - personnel
     reimbursed: false
     start_date: 2025-03-07
     start_date_truth: verified
@@ -8331,6 +8919,9 @@
     category: wrecker
     start_date: 2025-03-14
     start_date_truth: reported
+    project:
+    - spending
+    - personnel
     title: Advisor
     source: https://www.businessinsider.com/tesla-employee-alexander-simonpour-nasa-doge-team-2025-3
     agency: NASA
@@ -8395,6 +8986,7 @@
     end_date: 2025-06-02
     end_date_truth: reported
     end_type: fired
+    project: modernization
     title: Senior Advisor
     title_type: advisor
     office: Office of the Administrator
@@ -8447,6 +9039,9 @@
     end_date: 2025-03-04
     end_date_truth: verified
     end_type: replaced
+    project:
+    - spending
+    - personnel
     replaced_by: hhs-brad-smith
     sort_date: 2025-02-02
     table_note: detail started before 2/13
@@ -8461,6 +9056,9 @@
     end_date: 2025-05-23
     end_date_truth: reported
     end_type: resigned
+    project:
+    - spending
+    - personnel
     table_note: resigned on 5/23 but returned to State dept in August
     comment: All I have is his signed SF-61
     salary: "$0"
@@ -8477,6 +9075,9 @@
     sort_date: 2025-08-12
     supervisory: true
     table_note: some sort of leadership over global health division
+    project:
+    - spending
+    - personnel
     source: >-
       https://www.semafor.com/article/08/12/2025/former-senior-doge-official-returns-to-the-trump-administration
 
@@ -8560,6 +9161,7 @@
     category: wrecker
     start_date: 2025-03-20
     start_date_truth: reported
+    project: elimination
     title: Acting Director
     title_type: director
     source: https://news.artnet.com/art-world/doge-imls-institute-museum-library-services-2623286
@@ -8583,6 +9185,7 @@
     type: appointed
     category: wrecker
     agency: MBDA
+    project: elimination
     start_date: 2025-04-(17)~
     start_date_truth: reported
     title: Acting Undersecretary
@@ -8673,6 +9276,7 @@
     end_date: 2025-03-18
     end_date_truth: reported
     end_type: resigned
+    project: impunity
     table_note: resigned abruptly the day after being appointed
     comment: Chris Stanley spent one day on the board before resigning
     source: https://www.housingwire.com/articles/doge-fannie-mae-board-member-christopher-stanley-resignation/
@@ -8685,6 +9289,7 @@
     sort_date: 2025-04-02
     start_date: 2025-04-(02)~
     start_date_truth: reported
+    project: immigration
     title: Senior Advisor
     title_type: advisor
     office: Deputy Attorney General
@@ -8709,6 +9314,7 @@
     agency: NDS
     start_date: 2026-01-XX
     start_date_truth: self-reported
+    project: modernization
     source: https://www.linkedin.com/in/bradensteffaniak/
     title: Software Engineer
 
@@ -8727,6 +9333,7 @@
     end_type: replaced
     replaced_by: ssa-steffensen-1
     title: Senior Advisor
+    project: impunity
     title_type: advisor
     salary: "$195,200"
     office: Office of the Commissioner
@@ -8742,6 +9349,7 @@
     start_date_truth: reported
     title: Acting General Counsel
     title_type: chief_counsel
+    project: impunity
     office: Office of the Commissioner
     table_note: promoted within two days of being appointed
     salary: "$195,200"
@@ -8770,6 +9378,7 @@
     category: wrecker
     agency: MCC
     from: GSA
+    project: elimination
     from_truth: reported
     sort_date: 2025-03-22
     start_date: 2025-03-(22)?
@@ -8810,6 +9419,7 @@
     end_type: resigned
     fuzz: Appeared in the ProPublica roundup
     title: Senior Advisor to the Secretary
+    project: spending
     title_type: advisor
     office: Office of the Secretary
     agency: DOT
@@ -8862,6 +9472,7 @@
     series: '0301'
     supervisory: false
     office: Office of the Director
+    project: personnel
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.3.pdf
 
 - name: Caelin Sutch
@@ -8877,6 +9488,7 @@
     title: Member of the Technical Staff
     start_date: 2025-10-XX
     start_date_truth: self-reported
+    project: modernization
     agency: NDS
     source:
     - >-
@@ -8909,6 +9521,7 @@
     end_date: 2025-12-XX
     end_date_truth: reported
     end_type: resigned
+    project: deregulation
     fuzz: Date is unspecified, just sometime earlier in April
     comment: >-
       Scott Langmack sends a message that "I'd like to share with you that Chris Sweet has joined the
@@ -8932,6 +9545,10 @@
     start_date: 2025-02-XX
     start_date_truth: guessed
     title: Acting General Counsel
+    project:
+    - impunity
+    - deregulation
+    - spending
     category: enabler
     source: https://www.axios.com/pro/energy-policy/2025/03/21/energy-department-memo-doge-cuts
   - id: nrc-taggart
@@ -8941,6 +9558,10 @@
     category: enabler
     start_date: 2025-08-XX
     start_date_truth: reported
+    project:
+    - impunity
+    - deregulation
+    - spending
     source: https://www.propublica.org/article/trump-nuclear-power-nrc-safety-doge-vought
 
 - name: Zach Terrell
@@ -8964,6 +9585,7 @@
     type: appointed
     agency: HHS
     salary: "$132,629"
+    project: spending
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     - >-
@@ -8997,6 +9619,7 @@
     start_date: 2025-08-(29)?
     start_date_truth: reported
     sort_date: 2025-08-29
+    project: modernization
     source:
     - https://www.wired.com/story/doge-operatives-joining-national-design-studio/
     - https://www.notus.org/trump-white-house/silicon-valley-government-websites-national-design-studio
@@ -9007,6 +9630,7 @@
     agency: HHS
     title: Chief Technology Officer
     supervisory: true
+    project: impunity
     title_type: cto
     start_date: 2025-09-(01)~
     start_date_truth: reported
@@ -9039,6 +9663,7 @@
     end_date: 2025-08-XX
     end_date_truth: reported
     end_type: resigned
+    project: personnel
     salary: "$0"
     table_note: >-
       invited to meeting on 2/12, assuming start on Monday that week; reported on 7/29 as leaving DOI;
@@ -9093,6 +9718,7 @@
     end_date: 2026-01-XX
     end_date_truth: self-reported
     end_type: detail_ended
+    project: spending
     title: Senior Advisor
     title_type: advisor
     source:
@@ -9129,6 +9755,7 @@
     type: consultant
     sort_date: 2025-08-16
     table_note: Named as working alongside Airbnb alumni at OPM.
+    project: modernization
     source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
   - id: gsa-vilcsak
     agency: GSA
@@ -9171,6 +9798,7 @@
     from_truth: inferred
     start_date: 2025-10-XX
     start_date_truth: guessed
+    project: deregulation
     table_note: Just mentioned as supervising new rules at NRC starting in October
     source: https://www.propublica.org/article/trump-nuclear-power-nrc-safety-doge-vought
 
@@ -9200,6 +9828,7 @@
     type: appointed
     category: wrecker
     salary: "$167,603"
+    project: spending
     table_note: End date inferred from LinkedIn profile
     source:
     - https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
@@ -9228,6 +9857,9 @@
     start_date_truth: verified
     title_type: director
     office: Office of Management and Budget
+    project:
+    - impunity
+    - spending
     supervisory: true
   - id: cfpb-acting-vought
     type: appointed
@@ -9238,6 +9870,9 @@
     supervisory: true
     start_date: 2025-02-08
     start_date_truth: verified
+    project:
+    - impunity
+    - elimination
     source: https://www.cnn.com/2025/02/08/business/cfpb-doge-vought-x/index.html
   - id: usaid-acting-vought
     type: appointed
@@ -9248,6 +9883,9 @@
     supervisory: true
     start_date: 2025-08-29
     start_date_truth: verified
+    project:
+    - impunity
+    - elimination
     source: https://www.politico.com/news/2025/08/29/rubio-usaid-closeout-vought-00536088
 
 - name: Aldous Waites
@@ -9268,6 +9906,7 @@
     title: Engineer
     start_date: 2026-03-XX
     start_date_truth: self-reported
+    project: modernization
     source: https://www.linkedin.com/in/aldouswaites/
 
 - name: Yinon Weiss
@@ -9358,6 +9997,8 @@
     appt_type: Schedule C
     pay_grade: GS-12
     salary: "$101,401"
+    project:
+    - fraud
     sge: false
     agency: Treasury
 
@@ -9393,6 +10034,9 @@
     title: Special Advisor
     title_type: advisor
     type: detailed
+    project:
+    - spending
+    - fraud
     table_note: identified by agency FOIA as having been at the agency, guessing detailed
     source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
   - id: doge-wick
@@ -9423,6 +10067,7 @@
     end_type: replaced
     title_type: advisor
     replaced_by: cfpb-jordan-wick
+    project: elimination
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
     table_note: detail ended because he became a full-time CFPB employee on 3/5
     comment: Dates provided in court documents. Converted to full position
@@ -9434,6 +10079,7 @@
     sort_date: 2025-02-13
     start_date: 2025-02-(13)~
     start_date_truth: reported
+    project: personnel
     comment: >-
       No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5. But
       was part of CFPB assault.
@@ -9452,6 +10098,7 @@
   - id: cfpb-jordan-wick
     type: converted
     category: wrecker
+    project: spending
     title: Expert/Consultant
     title_type: advisor
     comment: All I have is his SF-61
@@ -9473,6 +10120,7 @@
     start_date_truth: verified
     office: Office of the Chairman
     agency: FCC
+    project: deregulation
     table_note: >-
       MOU for detail says from DOGE to FCC, but the text says he is also detailed from OPM which will
       bill for his services. Despite being a CFPB staffer, they reportedly have no information about his
@@ -9493,6 +10141,9 @@
     start_date_truth: verified
     nte_date: 2025-07-24
     nte_date_truth: inferred
+    project:
+    - spending
+    - deregulation
     reimbursed: false
     table_note: MOU signed by Amy Gleason for DOGE. Date is after he was hired at CFPB.
     comment: >-
@@ -9587,6 +10238,9 @@
     agency: NEA
     from: GSA
     from_truth: self-reported
+    project:
+    - spending
+    - dei
     category: wrecker
     table_note: Nate Cavanaugh testified that Marshall Wood was the DOGE lead at NEA
     source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
@@ -9616,6 +10270,7 @@
   - id: detail-gsa-dfc-wood
     type: detailed
     category: wrecker
+    project: elimination
     from: GSA
     from_truth: reported
     start_date: 2025-04-28
@@ -9645,6 +10300,9 @@
     start_date: 2025-02-20
     start_date_truth: verified
     salary: "$84,601"
+    project:
+    - spending
+    - fraud
     source:
     - https://www.politico.com/news/2025/02/20/treasury-irs-data-white-house-doge-00205391
     - >-
@@ -9710,6 +10368,7 @@
     agency: CFPB
     from: OPM
     from_truth: verified
+    project: elimination
     start_date: 2025-02-07
     start_date_truth: verified
     end_date: 2025-06-06
@@ -9718,7 +10377,6 @@
     table_note: >-
       Identified as OPM-14; govt testified on 6/27 no longer a govt employee, inferring date from end
       of OPM service
-    comment: FIXME
 
 - name: Bridget Youngs
   slug: bridget-youngs
@@ -9747,6 +10405,9 @@
     end_date: 2025-08-XX
     end_date_truth: self-reported
     end_type: detail_ended
+    project:
+    - spending
+    - deregulation
     table_note: >-
       From her LinkedIn: "Lead agency actions resulting in over $5 billion in taxpayer savings, re-industrialization
       workforce initiatives, deregulation, and platform modernization for Federal unemployment and workforce
@@ -9777,6 +10438,9 @@
     category: wrecker
     from: DOL
     from_truth: inferred
+    project:
+    - spending
+    - personnel
     start_date: 2025-04-04
     start_date_truth: reported
     table_note: unknown who this is and if sent to other agencies
