@@ -15,7 +15,7 @@ module Grid
     def exit_label
       last_position = @positions.last
 
-      if @person.is_a?(Person) && @person&.govt_exit_date
+      if @person.is_a?(Person) && @person&.govt_exit_date && !last_position.detail?
         <<~HTML
           <div>#{render Atoms::Icon.new('offboard')}</div>
           <div>Left govt <span class="my-date">#{render Atoms::DateLabel.new(@person.govt_exit_date)}</span> (#{text -> { @person.govt_exit_truth }})</div>
@@ -55,7 +55,7 @@ module Grid
               #{ html_map(@positions) do |pos|
                    <<~HTML
                      <div>#{render Atoms::PositionMoveLabel.new(position: pos, show_from: false, show_dest: false)}</div>
-                     <div>#{html -> { position_date_range(pos) }} #{render Molecules::PositionSummary.new(position: pos, agency: @agency)}</div>
+                     <div id="#{text -> { pos.id }}">#{html -> { position_date_range(pos) }} #{render Molecules::PositionSummary.new(position: pos, agency: @agency)}</div>
                    HTML
                  end
               }
