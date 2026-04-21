@@ -18,7 +18,7 @@ module Grid
       if @person.is_a?(Person) && @person&.govt_exit_date
         <<~HTML
           <div>#{render Atoms::Icon.new('offboard')}</div>
-          <div>Left govt</span> <span class="my-date">#{render Atoms::DateLabel.new(@person.govt_exit_date)}</span> (#{text -> { @person.govt_exit_truth }})</div>
+          <div>Left govt <span class="my-date">#{render Atoms::DateLabel.new(@person.govt_exit_date)}</span> (#{text -> { @person.govt_exit_truth }})</div>
         HTML
       elsif @last_position && @last_position.end_date.to_s =~ /^\d{4}-\d{2}-\d{2}$/
         <<~HTML

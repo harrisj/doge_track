@@ -45,8 +45,8 @@ module Atoms
       internal_transfer: { css: 'fa-arrows-left-right', aria: 'Internal Transfer', text: 'Internal' },
       detailed: { css: 'fa-arrow-right', aria: 'Detailed To', text: 'Detailed To' },
       detailed_left: { css: 'fa-arrow-left', aria: 'Detailed From', text: 'Detailed From' },
-      promotion: { css: 'fa-arrow-up', aria: 'Promotion', text: 'Promotion' },
-      demotion: { css: 'fa-arrow-down', aria: 'Demotion', text: 'Demotion' },
+      promotion: { css: 'fa-arrow-up-to-bracket', aria: 'Promotion', text: 'Promotion' },
+      demotion: { css: 'fa-arrow-down-to-bracket', aria: 'Demotion', text: 'Demotion' },
       converted: { css: 'fa-person-shelter', aria: 'Converted to Permanent Position', text: 'Converted' },
 
       project: { css: 'fa-clipboard', aria: 'DOGE Project', text: 'Project' },

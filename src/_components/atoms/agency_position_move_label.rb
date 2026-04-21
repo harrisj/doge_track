@@ -18,22 +18,16 @@ module Atoms
       html lambda {
         if @position.type == 'detailed'
           if @position.agency == @agency || @position.agency.parent == @agency
-            '<i class="fa-sharp fa-solid fa-arrow-left"></i>'
+            render Atoms::Icon.new('detailed_left')
           else
-            '<i class="fa-sharp fa-solid fa-arrow-right"></i>'
+            render Atoms::Icon.new('detailed')
           end
         elsif @position.type == 'internal'
-          '<i class="fa-sharp fa-solid fa-arrows-left-right"></i>'
+          render Atoms::Icon.new('internal_transfer')
         elsif %w[appointed consultant].include?(@position.type)
-          '<i class="fa-sharp fa-solid fa-person-to-door"></i>'
-        elsif @position.type == 'promotion'
-          '<i class="fa-sharp fa-solid fa-arrow-up"></i>'
-        elsif @position.type == 'demotion'
-          '<i class="fa-sharp fa-solid fa-arrow-down"></i>'
-        elsif @position.type == 'converted'
-          '<i class="fa-sharp fa-solid fa-person-shelter"></i>'
+          render Atoms::Icon.new('appointed')
         else
-          ''
+          render Atoms::Icon.new(@position.type)
         end
       }
     end

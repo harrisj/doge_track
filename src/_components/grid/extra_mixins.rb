@@ -5,7 +5,7 @@ module Grid
   module ExtraMixins
     def extra_table(body)
       <<~HTML
-        <table class="table-fixed text-xs md:text-sm xl:table-md">
+        <table class="table-fixed text-xs md:text-sm xl:text-md">
           #{html -> { body }}
         </table>
       HTML
@@ -13,7 +13,7 @@ module Grid
 
     def extra_item(icon, body)
       <<~HTML
-        <tr>
+        <tr class="p-0">
           <td class="align-top align-center w-[22px]">#{render Atoms::Icon.new(icon)}</td>
           <td class="align-top align-left">#{html -> { body }}</td>
         </tr>
