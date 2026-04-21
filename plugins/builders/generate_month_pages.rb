@@ -13,6 +13,7 @@ module Builders
           layout :page
           title current.strftime('%b %Y')
           permalink "/timeline/#{current.strftime('%Y/%m')}/"
+          index_for_search true
           content <<~TEXT
             {%@ Atoms::Title title: "#{current.strftime('%b %Y')}" %}
 

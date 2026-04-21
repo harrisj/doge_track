@@ -17,6 +17,67 @@ module Builders
       }
     end
 
+    def position_verb(position)
+      case position.type
+      when 'other'
+        ''
+      when 'detailed'
+        detail_type = position.from_truth == 'guessed' ? 'likely detailed' : 'detailed'
+        if position.from_agency
+          "#{detail_type} from #{position.from_agency.short_name} to #{position.agency.short_name}"
+        else
+          detail_type
+        end
+      when 'promotion'
+        position.title ? 'promoted to' : 'promoted'
+      when 'demotion'
+        position.title ? 'demoted to' : 'demoted'
+      when 'converted'
+        'converted to permanent position'
+      when 'internal'
+        'internal xfer'
+      when 'unknown'
+        'unknown start type'
+      else
+        'started'
+      end
+    end
+
+    def position_record(position)
+      return unless position.name
+
+      verb = position_verb(verb)
+
+      out = [verb, position.title]
+
+      out << position.pay_grade
+      out << 'excepted' if position.excepted
+
+      if position.salary
+        out << if position.salary == '$0'
+                 'volunteer'
+               else
+                 position.salary
+               end
+      end
+
+      out.append(position.reimbursement_amount) if position.reimbursement_amount
+
+      out.compact!
+      return unless out.any?
+
+      summary = out.join(', ')
+
+      {
+        id: position.id,
+        title: "#{position.name} #{verb}",
+        type: 'Position',
+        agency: position.agency.short_name,
+        content: summary,
+        url: "/names/#{position.person.slug}##{position.id}"
+      }
+    end
+
     def agency_record(agency)
       title = agency.name
       title += " (#{agency.short_name})" if agency.short_name =~ /^[A-Z]+$/
@@ -36,11 +97,11 @@ module Builders
       {
         id: event.id,
         type: 'Event',
-        title: "Event #{event.date} #{agencies_list}",
+        title: "#{event.type.titleize} #{event.date} #{agencies_list}",
         agency: agencies_list,
         name: (event.people.map(&:name) + event.doge_aliases.map(&:id)).join(','),
         content: Sanitize.fragment(event.linkified_text),
-        url: "/all/events##{event.id}"
+        url: "/timeline/##{event.date.strftime('%Y/%-m')}"
       }
     end
 
@@ -55,7 +116,7 @@ module Builders
         content: Sanitize.fragment(govt_system.description),
         name: govt_system.system_roles.map(&:name).uniq.join(', '),
         agency: ([govt_system.agency_id] + govt_system.system_roles.map(&:agency_id)).uniq.join(', '),
-        url: "/all/systems##{govt_system.id}"
+        url: govt_system.page_url
       }
     end
 
@@ -74,6 +135,7 @@ module Builders
     def generate_out
       out = []
       out += Person.all.map { |p| person_record(p) }
+      out += Position.all.map { |p| position_record(p) }
       out += Agency.all.map { |a| agency_record(a) }
       out += Event.all.map { |e| event_record(e) }
       out += GovtSystem.all.map { |s| system_record(s) }
