@@ -9,7 +9,7 @@ module Grid
       super()
       @agency = agency
       @person = person
-      @positions = positions
+      @positions = positions.reject { |pos| pos.type == 'internal' }
     end
 
     def exit_label

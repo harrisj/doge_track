@@ -2763,6 +2763,24 @@
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
     table_note: assuming he started on 2025-01-20
 
+- name: James DeBrock
+  sort_name: DeBrock
+  slug: james-debrock
+  linkedin: https://www.linkedin.com/in/jamesdebrock/
+  blurb: >-
+    A new addition to the National Design Studio, he previously work on advertising campaigns like the
+    iPhone 17.
+  positions:
+  - id: nds-debrock
+    type: appointed
+    category: builder
+    project: modernization
+    agency: NDS
+    title: Interactive Designer
+    start_date: 2026-04-XX
+    start_date_truth: self-reported
+    source: https://www.linkedin.com/in/jamesdebrock/
+
 - name: Stephen Duarte
   sort_name: Duarte
   slug: stephen-duarte
@@ -6220,6 +6238,8 @@
     end_date_truth: self-reported
     end_type: replaced
     replaced_by: doi-luby-strategy
+    title: Senior Advisor
+    title_type: advisor
     salary: "$142,488"
     comment: Tyler Hassen reported to be working with Matt Luby to scrutinize grants
     project: spending
@@ -6227,6 +6247,7 @@
     - https://www.washingtonpost.com/climate-environment/2025/04/21/tyler-hassen-department-of-interior/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://www.linkedin.com/in/mattluby/
     agency: DOI
   - id: doi-luby-strategy
     agency: DOI
@@ -6234,6 +6255,7 @@
     category: enabler
     start_date: 2026-03-XX
     start_date_truth: self-reported
+    title: Chief Strategy Officer
     source: https://www.linkedin.com/in/mattluby/
 
 - name: Shaun Maguire
@@ -6547,6 +6569,9 @@
     from the State Department after the damage was complete. It would be comically ironic, if it didn't
     mean the loss of hundreds of valuable people in USAID and [hundreds of thousands of deaths](https://www.bu.edu/sph/news/articles/2025/tracking-anticipated-deaths-from-usaid-funding-cuts/)
     worldwide.
+  govt_exit_date: 2025-04-13
+  govt_exit_truth: reported
+  govt_exit_type: fired
   positions:
   - id: state-marocco
     type: appointed
@@ -6558,7 +6583,7 @@
     end_type: fired
     agency: State
     title: Director of Foreign Assistance
-    salary: "$195,200"
+    salary: "$195,2200"
     title_type: director
     project: elimination
     source:
@@ -7132,6 +7157,9 @@
     to DOGE, he was a SpaceX employee.
   tech_links:
   - SpaceX
+  govt_exit_date: 2025-06-06
+  govt_exit_truth: verified
+  govt_exit_type: resigned
   positions:
   - id: opm-justin-monroe
     type: appointed
@@ -9365,6 +9393,9 @@
   blurb: >-
     Recently an investment banking associate at Salem Partners, he is one of the newer members of Nate
     Cavanaugh's wrecking crew that visited small agencies in April.
+  govt_exit_date: 2026-04-XX
+  govt_exit_truth: self-reported
+  govt_exit_type: resigned
   affiliations:
   - entity_id: doge-indie-wreckers
     role: member
@@ -9391,8 +9422,37 @@
     agency: GSA
     start_date: 2025-04-15
     start_date_truth: reported
-    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
-    comment: FIXME, find more details on when started
+    end_date: 2025-07-XX
+    end_date_truth: self-reported
+    end_type: resigned
+    title: Senior Advisor
+    title_type: advisor
+    source:
+    - https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    - https://www.linkedin.com/in/jack-s-221181154/
+  - id: sba-stein
+    type: appointed
+    agency: SBA
+    category: wrecker
+    start_date: 2025-07-XX
+    start_date_truth: self-reported
+    end_date: 2026-04-XX
+    end_date_truth: self-reported
+    end_type: resigned
+    title: Senior Advisor
+    title_type: advisor
+    source: https://www.linkedin.com/in/jack-s-221181154/
+  - id: dod-stein
+    type: appointed
+    agency: DOD
+    category: wrecker
+    title: Senior Advisor
+    title_type: advisor
+    start_date: 2025-09-XX
+    start_date_truth: self-reported
+    end_date: 2026-04-XX
+    end_date_truth: self-reported
+    source: https://www.linkedin.com/in/jack-s-221181154/
 
 - name: Brian Stube
   sort_name: Stube
@@ -10446,3 +10506,20 @@
     table_note: unknown who this is and if sent to other agencies
     source: https://www.theguardian.com/us-news/2025/apr/04/elon-musk-doge-peace-corps
     agency: PeaceCorps
+
+- name: Abdulwahab Omira
+  sort_name: omira
+  slug: abdulwahab-omira
+  skill: coder
+  linkedin: https://www.linkedin.com/in/a-omira/
+  college_graduation_year: 2023
+  positions:
+  - id: nds-omira
+    type: appointed
+    agency: NDS
+    category: builder
+    title: Design Engineer
+    project: modernization
+    start_date: 2026-04-20
+    start_date_truth: self-reported
+    source: https://www.linkedin.com/feed/update/urn:li:activity:7451247118167474176/

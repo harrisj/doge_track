@@ -14,7 +14,7 @@ DOGE is very difficult to track. The Trump Administration has used every tool at
 
 Here are the current members of DOGE that I have linked to specific positions, listed with their likely start dates if known or when they were first spotted in an agency. If they have exited the government, that date is also presented here. Otherwise, the table reports when they were last explicitly named in a news report or court filing as being present in a government role.
 
-<div class="tabs tabs-border">
+<div class="tabs tabs-border mt-10">
   <input type="radio" name="people-tabs" class="tab" aria-label="Starts By Date" checked="checked" />
   <div class="tab-content">
     {% people = Person.eager_graph({positions: :agency}).order(:sort_date, Sequel[:agency][:name], :sort_name).all %}
@@ -66,8 +66,8 @@ Here are the current members of DOGE that I have linked to specific positions, l
                         <td class="my-2col-table-col1 align-top">{{ start_date.strftime("%b %Y") }}</td>
                         <td class="my-2col-table-col2 align-top">
                         <div class="flex flex-col gap-2">
-                        {% if grouped_by_start[key] %}<div>{%@ Atoms::Icon 'onboarded' %} {%@ Atoms::PeopleList grouped_by_start[key] %}</div>{% end %}
-                        {% if grouped_by_end[key] %}<div>{%@ Atoms::Icon 'offboard' %} {%@ Atoms::PeopleList grouped_by_end[key] %}</div>{% end %}
+                        {% if grouped_by_start[key] %}<div>{%@ Atoms::Icon 'onboard' %} {%@ Atoms::PeopleList grouped_by_start[key], style: :comma %}</div>{% end %}
+                        {% if grouped_by_end[key] %}<div>{%@ Atoms::Icon 'offboard' %} {%@ Atoms::PeopleList grouped_by_end[key], style: :comma %}</div>{% end %}
                         </div>
                         </td>
                     </tr>
