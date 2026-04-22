@@ -6438,7 +6438,11 @@
   - SpaceX
   blurb: >-
     Previously a financial analyst at SpaceX, he apparently has been detailed from GSA to the VA in recent
-    months.
+    months. In March 2026, he left DOGE and joined Valor Equity Partners as a Vice President, making him
+    another ex-DOGE staffer rewarded with a role at that company.
+  govt_exit_date: 2026-03-XX
+  govt_exit_truth: self-reported
+  govt_exit_type: resigned
   affiliations:
   - entity_id: spacex
     timeframe: before
@@ -6463,6 +6467,15 @@
     table_note: Director of Finance
     source: https://www.linkedin.com/in/dave-m-a5314791/
     id: 6FNaKtfi
+  - entity_id: valor
+    timeframe: after
+    immediate: true
+    connection_truth: self-reported
+    role: executive
+    start_date: 2026-03-XX
+    start_date_truth: self-reported
+    source: https://www.linkedin.com/in/dave-m-a5314791/
+    id: 2zYV1PQ2
   positions:
   - id: gsa-malcher
     type: appointed
@@ -6470,6 +6483,8 @@
     sort_date: 2025-04-24
     start_date: 2025-04-(24)~
     start_date_truth: reported
+    end_date: 2026-03-XX
+    end_date_truth: self-reported
     source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
     agency: GSA
   - id: detail-gs-va-malcher
@@ -6483,6 +6498,8 @@
     sort_date: 2025-04-25
     start_date: 2025-04-(25)~
     start_date_truth: reported
+    end_date: 2026-03-XX
+    end_date_truth: self-reported
     source:
     - https://projects.propublica.org/elon-musk-doge-tracker/
     - https://www.linkedin.com/in/dave-m-a5314791/
@@ -10058,9 +10075,22 @@
     agency: DOD
     title_type: advisor
     start_date: 2025-07-XX
-    start_date_truth: reported
+    start_date_truth: self-reported
+    end_date: 2026-03-XX
+    end_date_truth: self-reported
     sort_date: 2025-07-15
-    source: https://www.washingtonpost.com/national-security/2025/07/15/hegseth-doge-justin-fulcher-yinon-weiss/
+    source:
+    - https://www.washingtonpost.com/national-security/2025/07/15/hegseth-doge-justin-fulcher-yinon-weiss/
+    - https://www.linkedin.com/in/owen-west-b1536b197/
+  - id: dod-lead-west
+    agency: DOD
+    type: promotion
+    category: wrecker
+    title: Team Lead
+    start_date: 2026-03-XX
+    start_date_truth: self-reported
+    sort_date: 2026-03-15
+    source: https://www.linkedin.com/in/owen-west-b1536b197/
 
 - name: Linda Whitridge
   slug: linda-whitridge
