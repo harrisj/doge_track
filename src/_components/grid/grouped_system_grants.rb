@@ -33,7 +33,7 @@ module Grid
         HTML
       else
         <<~HTML.chomp
-          #{render Atoms::PeopleList.new(@people, style: :sentence)} #{text -> { verb }} #{text -> { systems.count }} systems at #{render Atoms::AgencyLink.new(@agency)}.
+          #{render Atoms::PeopleList.new(@people, style: :sentence)} #{text -> { verb }} <strong>#{text -> { systems.count }} systems</strong> at #{render Atoms::AgencyLink.new(@agency)}.
         HTML
       end
     end

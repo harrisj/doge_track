@@ -15,12 +15,15 @@ module Grid
     def exit_label
       last_position = @positions.last
 
-      if @person.is_a?(Person) && @person&.govt_exit_date && !last_position.detail?
+      return if last_position.nil?
+
+      if @person.is_a?(Person) && @person&.govt_exit_date && !last_position.detail? \
+         && (last_position.end_date.nil? || last_position.end_date >= @person&.govt_exit_date)
         <<~HTML
           <div>#{render Atoms::Icon.new('offboard')}</div>
           <div>Left govt <span class="my-date">#{render Atoms::DateLabel.new(@person.govt_exit_date)}</span> (#{text -> { @person.govt_exit_truth }})</div>
         HTML
-      elsif @last_position && @last_position.end_date.to_s =~ /^\d{4}-\d{2}-\d{2}$/
+      elsif last_position.end_date && last_position.end_date.to_s =~ /^\d{4}-\d{2}-\d{2}$/
         <<~HTML
           <div>#{render Atoms::Icon.new('offboard')}</div>
           <div>#{render Atoms::PositionEndTypeLabel.new(position: last_position)} <span class="my-date">#{render Atoms::DateLabel.new(last_position.end_date)}</span></div>
