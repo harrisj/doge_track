@@ -3,7 +3,7 @@
 module Atoms
   # A link to a person's page
   class PersonLink < Bridgetown::Component
-    def initialize(person = nil, display: nil, raise_miss: true)
+    def initialize(person, display: nil, raise_miss: true)
       super()
       @display = display
       @raise_miss = raise_miss
@@ -15,13 +15,13 @@ module Atoms
         @name = person
         @person = Person[person]
 
-        raise Sequel::NoMatchingRow, "Unable to find person with name #{person}" if @person.nil? && @raise_miss
+        raise Sequel::NoMatchingRow, "Unable to find person with name #{person.inspect}" if @person.nil? && @raise_miss
       else
         @person = nil
         @name = ''
       end
 
-      raise 'You must provide a person or a name to PersonLink' if @raise_miss && @person.nil?
+      raise "You must provide a person or a name to PersonLink: #{person.inspect}" if @raise_miss && @person.nil?
     end
 
     def display_name

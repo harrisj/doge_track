@@ -21,6 +21,7 @@ module Atoms
       milestone: { css: 'fa-map-pin', aria: 'Milestone', text: 'Milestone' },
       official: { css: 'fa-landmark', aria: 'Official Action', text: 'Official Action' },
       agency: { css: 'fa-landmark', aria: 'Agency', text: 'Agency' },
+      onboard: { css: 'fa-person-to-door', aria: 'Onboarding', text: 'Onboarding' },
       onboarding: { css: 'fa-person-to-door', aria: 'Onboarding', text: 'Onboarding' },
       appointed: { css: 'fa-person-to-door', aria: 'Appointed', text: 'Appointed' },
       oversight: { css: 'fa-microscope', aria: 'Oversight', text: 'Oversight' },
@@ -44,8 +45,8 @@ module Atoms
       internal_transfer: { css: 'fa-arrows-left-right', aria: 'Internal Transfer', text: 'Internal' },
       detailed: { css: 'fa-arrow-right', aria: 'Detailed To', text: 'Detailed To' },
       detailed_left: { css: 'fa-arrow-left', aria: 'Detailed From', text: 'Detailed From' },
-      promotion: { css: 'fa-arrow-up', aria: 'Promotion', text: 'Promotion' },
-      demotion: { css: 'fa-arrow-down', aria: 'Demotion', text: 'Demotion' },
+      promotion: { css: 'fa-arrow-up-to-bracket', aria: 'Promotion', text: 'Promotion' },
+      demotion: { css: 'fa-arrow-down-to-bracket', aria: 'Demotion', text: 'Demotion' },
       converted: { css: 'fa-person-shelter', aria: 'Converted to Permanent Position', text: 'Converted' },
 
       project: { css: 'fa-clipboard', aria: 'DOGE Project', text: 'Project' },
@@ -56,7 +57,9 @@ module Atoms
       salary: { css: 'fa-dollar-sign', aria: 'Salary', text: 'Salary' },
       job_title: { css: 'fa-map-pin', aria: 'Position Title', text: 'Title' },
       system_grant: { css: 'fa-display', area: 'Access Grant', text: 'Access Grant' },
-      system_revoke: { css: 'fa-display-slash', area: 'Access Revoked', text: 'Access Revoked' }
+      system_revoke: { css: 'fa-display-slash', aria: 'Access Revoked', text: 'Access Revoked' },
+
+      info: { css: 'fa-circle-info', aria: 'Information', text: 'Information' }
     }.freeze
 
     def icon_css

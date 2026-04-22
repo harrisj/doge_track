@@ -3,15 +3,18 @@ title: Independent Agencies
 layout: page
 description: A page documenting DOGE's actions to subvert and demolish small independent agencies that are supposed to be protected from the president
 ---
-{% import 'macros' %}
-{%@ 'text' do %}
-# The Independent Agencies
+{%@ Atoms::Title title: 'The Independent Agencies' %}
 
 {% indies = Agency.filter(parent_id: nil).filter(Sequel.like(:page_slug, 'independent#%')).eager(:children).all %}
-<div class="mb-2">
+
+<div class="data-grid">
+
+<div class="mb-2 data-grid-span">
 {%@ Table::AgencyFirstContacts agencies: indies %}
 </div>
 
+<div class="data-grid-span">
+{%@ 'text' do %}
 Over the past decade, Congress has established multiple independent agencies that are supposed to be insulated from interference from the Executive Branch in how they operate. Many of these are small and specialized and relatively unknown to the general public. That hasn't stopped DOGE from interfering with them, in a coordinated effort with the White House that usually included the following steps:
 
 - President Trump will issue an executive order targeting one or more independent agencies by name (_e.g._, [this executive order that targeted the USIP, USADF and IAF](https://www.whitehouse.gov/presidential-actions/2025/02/commencing-the-reduction-of-the-federal-bureaucracy/)). This is meant to provide the legal cover.
@@ -29,78 +32,97 @@ DOGE honed its moves against independent agencies by first attacking {%@ Atoms::
 The pattern of assaulting independent agencies began with an Executive Order ["Commencing the Reduction of the Federal Bureaucracy"](https://www.presidency.ucsb.edu/documents/executive-order-14217-commencing-the-reduction-the-federal-bureaucracy) issued on 2025-02-19 that mandated that "The non-statutory components and functions of the following governmental entities shall be eliminated to the maximum extent consistent with applicable law" for the Presidio Trust, Inter-American Foundation, United States African Development Foundation and US Institute of Peace. This was followed by DOGE taking over the various agencies.
 
 It started with the US African Development Foundation and the Inter-American Foundation. Both are small independent agencies established by Congress to invest in projects in the developing world. Thanks to litigation, we have some visibility into how events unfolded.
+{% end %}
+</div>
 
-{% events = Event.eager_graph(:agencies, :people).where(agency_id: ['IAF', 'USADF']).order_by(:date).all %}
-{%@ Table::Events events, month_separator: false %}
+{%@ Grid::Focused indies: %w[IAF USADF], title: false %}
 
+<div class="data-grid-span">
+{%@ 'text' do %}
 The next target outlined in the executive order was the US Institute of Peace. Thanks to testimony entered in the lawsuit of _United States Institute of Peace v. Jackson (D.D.C.)_, we have a remarkably detailed timeline for the DOGE assault on the US Institute of Peace:
+{% end %}
+</div>
 
-{% events = Event.eager_graph(:agencies, :people).where(agency_id: ['USIP']).order_by(:date).all %}
-{%@ Table::Events events, month_separator: false %}
+{%@ Grid::Focused indies: %w[USIP], title: false %}
 
+<div class="data-grid-span">
+{%@ 'text' do %}
 ### 3/14: "Continuing the Reduction of the Federal Bureaucracy"  {#eo2}
 
 In another executive order ["Continuing the Reduction of the Federal Bureaucracy"](https://www.presidency.ucsb.edu/documents/executive-order-14238-continuing-the-reduction-the-federal-bureaucracy), the Trump administration amplified the tactics of the first order, both by widening the number of agencies being examined and reducing the timeframes for their compliance. This order targeted the Federal Mediation and Conciliation Service, the United States Agency for Global Media (aka Voice of America), the Woodrow Wilson International Center for Scholars in the Smithsonian Institution, the Institute of Museum and Library Services, the United States Interagency Council on Homelessness, the Community Development Financial Institutions Fund; and the Minority Business Development Agency.
+{% end %}
+</div>
 
-{% events = Event.eager_graph(:agencies, :people).where(agency_id: %w[FMCS USAGM IMLS USICH CDFIF MBDA WWICS]).all %}
-{%@ Table::Events events, month_separator: false %}
+{%@ Grid::Focused indies: %w[FMCS USAGM IMLS USICH CDFIF MBDA WWICS], title: false %}
 
+<div class="data-grid-span">
+{%@ 'text' do %}
 From there, it's just been open season on every independent agency from DOGE. Here are the attacks grouped by agency types.
 
 ### Targeting the Arts  {#arts}
 
 The arts have been a natural target for DOGE, which shares the Trump Administration's disdain for supporting the arts, unless it's the creation of statues for a garden of American heroes. To be clear, there have been many assaults on arts organizations outside of DOGE's involvement - just recently, Trump has attempted to oust the head of the National Portrait Gallery for instance - but there have been a few organizations that have seen DOGE target them specifically:
+{% end %}
+</div>
 
-{% events = Event.eager_graph(:agencies, :people).where(agency_id: %w[NEH CPB ACHP NEA Smithsonian NationalGallery]).order_by(:date).all %}
-{%@ Table::Events events, month_separator: false %}
+{%@ Grid::Focused indies: %w[NEH CPB ACHP NEA Smithsonian NationalGallery], title: false %}
 
+<div class="data-grid-span">
+{%@ 'text' do %}
 ### Finance and Regulations {#regs}
 
 DOGE has also attempted to target several financial and trade regulatory agencies
+{% end %}
+</div>
 
-{% events = Event.eager_graph(:agencies, :people).where(agency_id: %w[FDIC SEC EXIM DFC FTC CPSC NTSB FEC FCC NRC]).order_by(:date).all %}
-{%@ Table::Events events, month_separator: false %}
+{%@ Grid::Focused indies: %w[FDIC SEC EXIM DFC FTC CPSC NTSB FEC FCC NRC], title: false %}
 
-
+<div class="data-grid-span">
+{%@ 'text' do %}
 ### National Science Foundation {#nsf}
 
 The National Science Foundation has also found itself under the thumb of DOGE, with {%@ Atoms::PersonLink 'Luke Farritor' %} leading a delegation of people from HHS to scrutinize all their funding. Their target is to cut all grant funding by 55%, which will have a catastrophic effect on science in America.
+{% end %}
+</div>
 
-{% events = Event.eager_graph(:agencies, :people).where(agency_id: %w[NSF]).order_by(:date).all %}
-{%@ Table::Events events, month_separator: false %}
+{%@ Grid::Focused indies: %w[NSF], title: false %}
 
-
+<div class="data-grid-span">
+{%@ 'text' do %}
 ### Service Organizations {#service}
 
 Service organizations have also been a focus of the Trump Administration's ire. Recently, there have been moves to shut down the funding and staffing for the Peace Corps and the AmeriCorps, with vague allegations of fraud used as a cover for sweeping reductions.
+{% end %}
+</div>
 
-{% events = Event.eager_graph(:agencies, :people).where(agency_id: %w[PeaceCorps AmeriCorps]).order_by(:date).all %}
-{%@ Table::Events events, month_separator: false %}
+{%@ Grid::Focused indies: %w[PeaceCorps AmeriCorps], title: false %}
 
-
+<div class="data-grid-span">
+{%@ 'text' do %}
 ### Legislative Branch Agencies {#leg}
 
 In one of DOGE's most bizarre turns, thet have attempted to embed DOGE teams into the Library of Congress and Government Accountability Office (GAO). The problem is that both of these are legislative branch agencies and thus well outside the authority of DOGE to police them or shut them down.
+{% end %}
+</div>
 
-{% events = Event.eager_graph(:agencies, :people).where(agency_id: %w[LOC GAO]).order_by(:date).all %}
-{%@ Table::Events events, month_separator: false %}
+{%@ Grid::Focused indies: %w[LOC GAO], title: false %}
 
-
+<div class="data-grid-span">
 ### Merit System Protection Board {#mspb}
 
 Finally, DOGE has picked up its original mission of harrassing federal workers by attempting to shut down the Merit System Protection Board (MSPB), which ensures that government personnel rules are fairly enforced.
+</div>
 
-{% events = Event.eager_graph(:agencies, :people).where(agency_id: %w[MSPB]).order_by(:date).all %}
-{%@ Table::Events events, month_separator: false %}
+{%@ Grid::Focused indies: %w[MSPB], title: false %}
 
-
+<div class="data-grid-span">
+{%@ 'text' do %}
 ### Everybody Else {#other}
+{% end %}
+</div>
 
 {% independent_agency_ids = indies.map(&:id) %}
-{% remaining_ids = independent_agency_ids - %w[USIP USADF IAF FMCS USAGM WWICS IMLS USICH CDFIF MBDA NEH CPB ACHP FDIC SEC EXIM FEC NRC DFC FTC CPSC NTSB NSF PeaceCorps AmeriCorps MSPB LOC GAO NationalGallery NEA Smithsonian FCC]%}
-{% events = Event.eager_graph(:agencies, :people).where(agency_id: remaining_ids).order_by(:date).all %}
-{% if events.any? %}
-{%@ Table::Events events, month_separator: false %}
+{% remaining_ids = independent_agency_ids - %w[USIP USADF IAF FMCS USAGM WWICS IMLS USICH CDFIF MBDA NEH CPB ACHP FDIC SEC EXIM FEC NRC DFC FTC CPSC NTSB NSF PeaceCorps AmeriCorps MSPB LOC GAO NationalGallery NEA Smithsonian FCC] %}
 
-{% end %}
-{% end %}
+{%@ Grid::Focused indies: remaining_ids, title: false %}
+</div>

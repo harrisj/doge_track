@@ -52,12 +52,17 @@ Metrics/CyclomaticComplexity:
 Metrics/MethodLength:
   Max: 60
 
+Metrics/ParameterLists:
+  Exclude:
+  - 'src/_components/grid/focused.rb'
+
 # Offense count: 4
 # Configuration parameters: AllowedMethods, AllowedPatterns.
 Metrics/PerceivedComplexity:
   Max: 35
 
 Metrics/ClassLength:
+  Max: 250
   Exclude:
   - 'plugins/builders/generate_api.rb'
 

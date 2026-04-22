@@ -28,4 +28,9 @@ class Event < Sequel::Model
   def self.for_year_month(year, month)
     Event.where(Sequel.like(:date, "#{year}-#{format('%02d', month)}%")).order_by(&:date)
   end
+
+  # Max date
+  def self.max_date
+    Date.parse(Event.max(:date))
+  end
 end

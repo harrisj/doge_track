@@ -44,7 +44,7 @@ module Atoms
 
       html lambda {
         <<~HTML.chomp
-          <a class="link-hover" href="/all/systems##{text -> { @govt_system.id }}" title="#{text -> { @govt_system.name }}">#{text -> { display_name }}</a>#{text -> { expanded_text }}
+          <a class="link-hover" href="#{text -> { @govt_system.page_url }}" title="#{text -> { @govt_system.name }}">#{text -> { display_name }}</a>#{text -> { expanded_text }}
         HTML
       }
     end

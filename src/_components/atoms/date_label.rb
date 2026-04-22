@@ -79,7 +79,7 @@ module Atoms
         HTML
       when :iso
         <<~HTML.chomp
-          <abbr title="#{text -> { humanized }}">#{text -> { @date.strftime('c.%-%Y-%m-%d') }}</abbr>
+          <abbr title="#{text -> { humanized }}">#{text -> { @date.strftime('c.%Y-%m-%d') }}</abbr>
         HTML
       when :human
         text -> { @date.humanize }

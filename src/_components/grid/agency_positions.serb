@@ -1,0 +1,9 @@
+<div class="data-grid-title flex justify-between items-end">
+<h2>People</h2>
+{%@ Grid::Legend %}
+</div>
+
+{% each_person do |person, positions| %}
+   <div class="font-mono"><date>{%@ Atoms::PersonOrAliasLink person %}</date></div>
+   <div class="">{%@ Grid::AgencyPersonPositions agency: @agency, person: person, positions: positions %}</div>
+{% end %}

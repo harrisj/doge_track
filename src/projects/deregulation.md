@@ -46,15 +46,7 @@ DOGE's work here has involved the following threads:
 
 {% project = Project['deregulation'] %}
 
-{% if project.govt_systems.any? %}
-## System Access
-
-{%@ 'tables/project_systems', systems: project.govt_systems %}
-{% end %}
-
-{% if project.events.any? %}
-## Related Events
- 
-{%@ Table::Events project.events %}
-
-{% end %}
+<div class="data-grid not-prose">
+{%@ Grid::ProjectSystems project: project %}
+{%@ Grid::Focused project: project %}
+</div>

@@ -8,13 +8,22 @@ module Grid
   class Focused < Bridgetown::Component
     attr_reader :undated
 
-    def initialize(agency: nil, person: nil, project: nil)
+    def initialize(agency: nil, person: nil, project: nil, events: nil, positions: nil, indies: nil, title: true)
       super()
       @agency = agency
       @person = person
       @project = project
 
-      raise ArgumentError, 'You must provide an agency_id, name or project' unless @agency || @person || @project
+      @events = events
+      @positions = positions
+      @indies = indies
+
+      @title = title
+
+      unless @agency || @person || @project || @events || @positions || @indies
+        raise ArgumentError,
+              'You must provide an agency_id, name or project'
+      end
 
       @days = {}
 
@@ -36,17 +45,29 @@ module Grid
 
     def initialize_days
       if @agency
-        events = @agency.events
+        events = @agency.all_events
         positions = @agency.all_positions_and_details_out
-        system_roles = @agency.system_roles
+        system_roles = @agency.all_systems.map(&:system_roles).flatten
       elsif @person
-        events = @person.events
+        events = @person.all_events
         positions = @person.positions
         system_roles = @person.system_roles
       elsif @project
         events = @project.events
         positions = @project.positions
         system_roles = @project.govt_systems.map(&:system_roles).flatten
+      elsif @events
+        events = @events
+        positions = []
+        system_roles = []
+      elsif @positions
+        events = []
+        positions = @positions
+        system_roles = []
+      elsif @indies
+        events = Event.eager_graph(:agencies, :people).where(agency_id: @indies).order_by(:date).all
+        positions = Position.where(agency_id: @indies)
+        system_roles = []
       else
         raise "This shouldn't happen"
       end
@@ -58,7 +79,7 @@ module Grid
 
     def initialize_events(events)
       events.each do |event|
-        next if %w[onboard offboard directory].include?(event.type)
+        # next if %w[onboard offboard directory].include?(event.type)
 
         get_date(event.date).add_event(event)
       end

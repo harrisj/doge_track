@@ -72,6 +72,22 @@ layer(base);
         @apply text-lg;
     }
 
+    .data-grid {
+        @apply grid grid-cols-[min-content_1fr] gap-y-4 gap-x-2 sm:gap-x-3 md:gap-x-5 py-5 mb-0 text-xs md:text-sm;
+    }
+
+    .data-grid-span {
+        @apply mt-3 mb-3 col-span-2
+    }
+    
+    .data-grid-title {
+        @apply mt-2 col-span-2 text-lg sm:text-xl md:text-2xl;
+    }
+
+    .data-grid-row-layout {
+        @apply grid grid-cols-[18px_auto] gap-x-1 p-0 min-h-0;
+    }
+    
     .font-title {
         font-family: "Special Elite", serif;
     }
@@ -81,7 +97,7 @@ layer(base);
     }
 
     .my-text {
-        @apply prose prose-sm prose-a:font-semibold prose-a:link-hover md:prose-base max-w-none prose-li:m-[0.1em] dark:prose-invert prose-h2:mt-1 prose-h2:mb-0.5 prose-h3:mt-1 prose-h3:mb-0.5 leading-tight;
+        @apply prose prose-sm prose-a:font-semibold prose-a:link-hover max-w-none prose-li:m-[0.1em] dark:prose-invert prose-h2:mt-1 prose-h2:mb-0.5 prose-h3:mt-1 prose-h3:mb-0.5 leading-tight;
     }
 
     .my-date {

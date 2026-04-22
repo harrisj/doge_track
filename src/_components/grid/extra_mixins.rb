@@ -5,7 +5,7 @@ module Grid
   module ExtraMixins
     def extra_table(body)
       <<~HTML
-        <table class="table-fixed">
+        <table class="table-fixed text-xs md:text-sm xl:text-md">
           #{html -> { body }}
         </table>
       HTML
@@ -13,7 +13,7 @@ module Grid
 
     def extra_item(icon, body)
       <<~HTML
-        <tr>
+        <tr class="p-0">
           <td class="align-top align-center w-[22px]">#{render Atoms::Icon.new(icon)}</td>
           <td class="align-top align-left">#{html -> { body }}</td>
         </tr>
@@ -24,7 +24,7 @@ module Grid
       return unless item.fuzz
 
       extra_item 'question', <<~HTML.chomp
-        <span class="italic">Fuzz: #{render Atoms::Blurb.new(item.fuzz)}
+        <span class="italic">Fuzz: #{render Atoms::Blurb.new(item.fuzz)}</span>
       HTML
     end
 
@@ -63,7 +63,7 @@ module Grid
 
       html_map(item.sources) do |source|
         extra_item 'source', <<~HTML
-          <a target="_blank" href="#{text -> { source.url }}">#{text -> { source.title }}</a><small> <em>#{text -> { source.publisher.name }}</em>,&nbsp;#{html -> { render Atoms::DateLabel.new(source.pub_date) }}</small>
+          <a target="_blank" href="#{text -> { source.url }}"><cite>#{text -> { source.title }}</cite></a> <small>#{text -> { source.publisher.name }},&nbsp;#{html -> { render Atoms::DateLabel.new(source.pub_date) }}</small>
         HTML
       end
     end
@@ -121,6 +121,16 @@ module Grid
 
       extra_item 'system_grant', <<~HTML.chomp
         #{text -> { system_role.type }} #{render Atoms::DateRange.new(start_date: system_role.date_granted, end_date: system_role.date_revoked)} #{render Atoms::PeopleList.new(grants.map(&:person), style: :comma)}
+      HTML
+    end
+
+    def extra_section
+      <<~HTML
+        <div class="collapse-content text-sm p-0">
+          <div class="ml-[25px] pt-1 flex flex-col gap-y-3">
+             #{html -> { extra_contents }}
+          </div>
+        </div>
       HTML
     end
   end

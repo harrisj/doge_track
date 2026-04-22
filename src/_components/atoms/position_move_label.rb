@@ -3,11 +3,12 @@
 module Atoms
   # Renders a move label for a position
   class PositionMoveLabel < Bridgetown::Component
-    def initialize(position:, show_dest: true)
+    def initialize(position:, show_dest: true, show_from: true)
       super()
       @position = position
       @agency = @position.agency
       @show_dest = show_dest
+      @show_from = show_from
     end
 
     def destination
@@ -18,26 +19,20 @@ module Atoms
       html lambda {
         if @position.from_agency_id
           if @position.type == 'internal'
-            '<i class="fa-sharp fa-solid fa-arrows-left-right"></i>'
+            render Atoms::Icon.new('internal_transfer')
           else
-            '<i class="fa-sharp fa-solid fa-arrow-right"></i>'
+            render Atoms::Icon.new('detailed')
           end
         elsif %w[appointed consultant].include?(@position.type)
-          '<i class="fa-sharp fa-solid fa-person-to-door"></i>'
-        elsif @position.type == 'promotion'
-          '<i class="fa-sharp fa-solid fa-arrow-up"></i>'
-        elsif @position.type == 'demotion'
-          '<i class="fa-sharp fa-solid fa-arrow-down"></i>'
-        elsif @position.type == 'converted'
-          '<i class="fa-sharp fa-solid fa-person-shelter"></i>'
+          render Atoms::Icon.new('appointed')
         else
-          ''
+          render Atoms::Icon.new(@position.type)
         end
       }
     end
 
     def from_agency_label
-      return unless @position.from_agency_id
+      return unless @show_from && @position.from_agency_id
 
       html lambda {
         <<~HTML.chomp

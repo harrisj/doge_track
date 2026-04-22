@@ -268,6 +268,7 @@
     start_date_truth: verified
     end_date: 2026-03-07
     end_date_truth: verified
+    end_type: resigned
     salary: "$0"
     source:
     - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.148.0.pdf
@@ -893,6 +894,7 @@
 - id: SSA-01
   agency: SSA
   name: Akash Bobba
+  name_truth: inferred
   evidence:
   - Appointed to position as "Expert" on 2025-02-10
   - Appointment is as Expert with a salary of $90K
@@ -932,6 +934,7 @@
 - id: SSA-02
   agency: SSA
   name: Scott Coulter
+  name_truth: inferred
   evidence:
   - Employees is detailed from NASA to SSA on 2025-02-18
   - Scott Coulter is identified at NASA on 2025-03-14
@@ -983,6 +986,7 @@
 - id: SSA-03
   agency: SSA
   name: Aram Moghaddassi
+  name_truth: inferred
   evidence:
   - Employee is detailed from DOL to SSA on a reimbursed basis (ie, not a volunteer SGE) on 2025-02-22
   - Marko Elez and Aram Moghaddassi are both DOL-based and seemingly paid
@@ -1013,6 +1017,7 @@
 - id: SSA-04
   agency: SSA
   name: Antonio Gracias
+  name_truth: inferred
   evidence:
   - >-
     [NPR has done analysis on docs to identify directly](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)
@@ -1043,6 +1048,7 @@
 
 - id: SSA-05
   name: Cole Killian
+  name_truth: inferred
   agency: SSA
   evidence:
   - Onboarded as a volunteer on 2025-02-18 as a detail from the DOGE service
@@ -1071,6 +1077,7 @@
 - id: SSA-06
   agency: SSA
   name: Jon Koval
+  name_truth: inferred
   evidence:
   - >-
     [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)
@@ -1095,6 +1102,7 @@
 - id: SSA-07
   agency: SSA
   name: Marko Elez
+  name_truth: inferred
   evidence:
   - >-
     [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)
@@ -1118,6 +1126,7 @@
 - id: SSA-08
   agency: SSA
   name: Nikhil Rajpal
+  name_truth: inferred
   evidence:
   - Detailed from OPM to SSA on 2025-02-26
   - His duties currently relate to improper payments and death data.
@@ -1148,6 +1157,7 @@
 - id: SSA-09
   agency: SSA
   name: Payton Rehling
+  name_truth: inferred
   evidence:
   - >-
     [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)
@@ -1181,6 +1191,7 @@
 - id: SSA-10
   agency: SSA
   name: Ethan Shaotran
+  name_truth: inferred
   evidence:
   - Onboarded as a volunteer on 2025-02-18 as a detail from the GSA
   - >-
@@ -1209,6 +1220,7 @@
 - id: SSA-11
   agency: SSA
   name: John Solly
+  name_truth: inferred
   evidence:
   - Started as a paid staffer at SSA on 2025-03-16
   - Has 10 years of software development experience in geospatial software

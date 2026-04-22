@@ -11,4 +11,10 @@ class GovtSystem < Sequel::Model
   # one_to_many :serves, class: :Agency, key: :agency_id
 
   many_to_many :projects
+
+  def page_url
+    return unless agency
+
+    "#{agency.page_url}##{id}"
+  end
 end
