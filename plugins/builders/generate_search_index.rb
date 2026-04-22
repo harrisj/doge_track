@@ -18,6 +18,8 @@ module Builders
     end
 
     def position_verb(position)
+      return '' if position.nil?
+
       case position.type
       when 'other'
         ''
