@@ -4,6 +4,6 @@
 </div>
 
 {% each_person do |person, positions| %}
-   <div class="font-mono"><date>{%@ Atoms::PersonOrAliasLink person %}</date></div>
+   <div>{%@ Atoms::PersonOrAliasLink person %}</div>
    <div class="">{%@ Grid::AgencyPersonPositions agency: @agency, person: person, positions: positions %}</div>
 {% end %}
