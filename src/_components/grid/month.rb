@@ -65,7 +65,7 @@ module Grid
 
       positions = Position.end_in_year_month(@year, @month)
       positions.each do |pos|
-        next if pos.end_type == 'replaced'
+        next if pos.end_type == 'replaced' || pos.type == 'internal'
 
         get_date(pos.end_date).add_end_position(pos)
       end
