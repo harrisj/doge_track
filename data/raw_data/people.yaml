@@ -1807,7 +1807,9 @@
     type: detailed
     category: wrecker
     agency: NLRB
-    project: deregulation
+    project:
+    - deregulation
+    - personnel
     from: GSA
     from_truth: verified
     start_date: 2025-04-16
@@ -3783,7 +3785,9 @@
   - id: detail-gsa-nlrb-fox
     type: detailed
     category: wrecker
-    project: deregulation
+    project:
+    - deregulation
+    - personnel
     agency: NLRB
     from: GSA
     from_truth: guessed
@@ -4933,6 +4937,19 @@
     project: modernization
     title: Hacker in Residence
     source: https://www.linkedin.com/in/greghogan/
+  - id: login-hogan
+    agency: GSA
+    type: detailed
+    from: NDS
+    from_truth: inferred
+    category: enabler
+    project: modernization
+    title: Acting Assistant Commissioner, Login.gov
+    start_date: 2026-04-27
+    start_date_truth: reported
+    table_note: Will be working for Greg Barbaccia who send in email he's been detailed
+    source: >-
+      https://www.nextgov.com/digital-government/2026/04/gsa-taps-greg-hogan-head-governments-identity-proofing-service-logingov/413149/
 
 - name: Nicole Hollander
   slug: nicole-hollander
