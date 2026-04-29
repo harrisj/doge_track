@@ -7564,16 +7564,30 @@
   - date: 2025-04-16
     type: sighting
     event: >-
-      Justin Fox and Nate Cavanaugh are reportedly detailed from the GSA to work at the NLRB over the
-      next few months.
+      Justin Fox and Nate Cavanaugh are detailed from the GSA to work at the NLRB over the next few months.
+      They meet with the Chairman, Acting Senior Counsel and other senior board members. The DOGE staff
+      requested access to 7 HR systems at NLRB.
+    project:
+    - personnel
     named:
     - Justin Fox
     - Nate Cavanaugh
     comment: Date is from an NPR piece
-    source: >-
+    source:
+    - >-
       https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+    - https://files.gao.gov/reports/GAO-26-108774/index.html
     agency: NLRB
     id: eCQoxNRz
+  - date: 2025-04-24
+    type: access
+    event: >-
+      The NLRB authorized the creation of accounts for 2 of the 7 HR systems and rejected access for the
+      other 5. Despite creating accounts for the DOGE staff, they did not ever pick up their NLRB laptops
+      and did not access the accounts.
+    source: https://files.gao.gov/reports/GAO-26-108774/index.html
+    agency: NLRB
+    id: Bi1mWUuS
   - date: 2025-05-15
     type: oversight
     event: >-
@@ -7593,6 +7607,26 @@
     source: https://www.npr.org/2025/06/16/nx-s1-5435330/congress-doge-nlrb-whistleblower-github
     agency: NLRB
     id: 6w8Oownm
+  - date: 2025-07-25
+    type: offboard
+    event: >-
+      The DOGE staff detailed to NLRB end their detail at the agency. During the entire time, they never
+      picked up their work laptops nor did they access 2 systems they were authorized for. That access
+      is revoked.
+    project: personnel
+    source: https://files.gao.gov/reports/GAO-26-108774/index.html
+    agency: NLRB
+    id: 6PJa9uN4
+  - date: 2026-04-28
+    type: oversight
+    event: >-
+      The Government Accountability Office releases a report of an investigation in DOGE activities at
+      the agency. It found that GSA detailed two staffers to NLRB and they did not access any agency IT
+      systems there. It does also mention that a whistleblower reported illegal access in March 2025,
+      but that is being investigated by the agency Inspector General
+    agency: NLRB
+    source: https://files.gao.gov/reports/GAO-26-108774/index.html
+    id: 1ykqIXgg
 
 - name: National Oceanic and Atmospheric Administration
   id: NOAA

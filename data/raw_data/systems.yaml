@@ -847,6 +847,26 @@
       CIO, CISO, Deputy Counsel who wanted Director to sign risk-acceptance memo. They are placed on administrative
       leave
     source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
+  - id: fpps-nlrb-cavanaugh
+    type: admin
+    agency: NLRB
+    name: Nate Cavanaugh
+    date_granted: 2025-04-25
+    date_grant_truth: verified
+    never_accessed: true
+    date_revoked: 2025-07-25
+    date_revoked_truth: verified
+    source: https://files.gao.gov/reports/GAO-26-108774/index.html
+  - id: fpps-nlrb-fox
+    type: read
+    agency: NLRB
+    name: Justin Fox
+    date_granted: 2025-04-25
+    date_grant_truth: verified
+    never_accessed: true
+    date_revoked: 2025-07-25
+    date_revoked_truth: verified
+    source: https://files.gao.gov/reports/GAO-26-108774/index.html
 
 - name: Financial Assessment of Public Housing
   id: fass-ph
@@ -3441,6 +3461,7 @@
   acronym: eOPF
   category: personnel
   project: personnel
+  type: ssp
   risk: >-
     eOPF contains social security numbers, bank account information, dates of birth, addresses, and PII
     regarding family members
@@ -3479,3 +3500,23 @@
     date_revoked_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.78.2.pdf
     name: Nikhil Rajpal
+  - id: eopf-nlrb-cavanaugh
+    name: Nate Cavanaugh
+    agency: NLRB
+    type: admin
+    never_accessed: true
+    date_granted: 2026-04-25
+    date_grant_truth: verified
+    date_revoked: 2025-07-25
+    date_revoked_truth: verified
+    source: https://files.gao.gov/reports/GAO-26-108774/index.html
+  - id: eopf-nlrb-fox
+    name: Justin Fox
+    type: read
+    agency: NLRB
+    never_accessed: true
+    date_granted: 2026-04-25
+    date_grant_truth: verified
+    date_revoked: 2025-07-25
+    date_revoked_truth: verified
+    source: https://files.gao.gov/reports/GAO-26-108774/index.html

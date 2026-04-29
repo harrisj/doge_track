@@ -1809,14 +1809,18 @@
     agency: NLRB
     project: deregulation
     from: GSA
-    from_truth: guessed
+    from_truth: verified
     start_date: 2025-04-16
+    start_date_truth: verified
+    end_date: 2025-07-25
+    end_date_truth: verified
+    end_type: detail_ended
     table_note: Spotted by media
-    start_date_truth: reported
     source:
     - >-
       https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
     - https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+    - https://files.gao.gov/reports/GAO-26-108774/index.html
   - id: detail-gsa-dfc-cavanaugh
     type: detailed
     category: wrecker
@@ -3784,9 +3788,14 @@
     from: GSA
     from_truth: guessed
     start_date: 2025-04-16
-    start_date_truth: reported
-    source: >-
+    start_date_truth: verified
+    end_date: 2025-07-25
+    end_date_truth: verified
+    end_type: detail_ended
+    source:
+    - >-
       https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+    - https://files.gao.gov/reports/GAO-26-108774/index.html
 
 - name: Justin Fulcher
   sort_name: Fulcher
