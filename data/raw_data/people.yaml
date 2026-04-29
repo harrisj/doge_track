@@ -119,16 +119,6 @@
     end_type: resigned
     project: elimination
     source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
-  - id: detail-gsa-nlrb-aimonetti
-    agency: NLRB
-    type: detailed
-    category: wrecker
-    project: deregulation
-    from: GSA
-    from_truth: reported
-    start_date: 2025-03-03
-    start_date_truth: inferred
-    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   - id: detail-gsa-usip-aimonetti
     agency: USIP
     type: detailed
@@ -139,6 +129,21 @@
     start_date: 2025-03-04
     start_date_truth: reported
     table_note: Inferring from Cavanaugh start
+    source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  - id: detail-gsa-nlrb-aimonetti
+    agency: NLRB
+    type: detailed
+    category: wrecker
+    project: deregulation
+    from: GSA
+    from_truth: reported
+    start_date: 2025-04-16
+    start_date_truth: reported
+    end_date: 2025-07-25
+    end_date_truth: inferred
+    table_note: >-
+      Mentioned by Justin Fox as working with other NLRB DOGE staff, but not listed by GAO as detailed
+      there, so maybe not
     source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
 
 - name: Baris Akis
@@ -3790,7 +3795,7 @@
     - personnel
     agency: NLRB
     from: GSA
-    from_truth: guessed
+    from_truth: verified
     start_date: 2025-04-16
     start_date_truth: verified
     end_date: 2025-07-25
