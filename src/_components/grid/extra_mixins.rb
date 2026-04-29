@@ -120,7 +120,7 @@ module Grid
       system_role = grants.first
 
       extra_item 'system_grant', <<~HTML.chomp
-        #{text -> { system_role.type }} #{render Atoms::DateRange.new(start_date: system_role.date_granted, end_date: system_role.date_revoked)} #{render Atoms::PeopleList.new(grants.map(&:person), style: :comma)}
+        #{text -> { system_role.type }} #{render Atoms::DateRange.new(start_date: system_role.date_granted, end_date: system_role.date_revoked)} #{render Atoms::PeopleList.new(grants.map(&:person), style: :comma)}#{text -> { ' (never used)' if system.role.never_accessed }}
       HTML
     end
 

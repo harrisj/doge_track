@@ -40,7 +40,7 @@ module Grid
 
     def system_access_extra(system_role)
       extra_item 'system_grant', <<~HTML.chomp
-        #{text -> { system_role.type }}, #{render Atoms::DateRange.new(start_date: system_role.date_granted, end_date: system_role.date_revoked)} #{render Atoms::PersonLink.new(system_role.name)}
+        #{text -> { system_role.type }}, #{render Atoms::DateRange.new(start_date: system_role.date_granted, end_date: system_role.date_revoked)} #{render Atoms::PersonLink.new(system_role.name)}#{text -> { ' (never used)' if system_role.never_accessed }}
       HTML
     end
 
