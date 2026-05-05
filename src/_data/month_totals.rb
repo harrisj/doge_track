@@ -38,6 +38,8 @@ Person.each do |person|
     totals[key][:count] += 1
   end
 
+  # puts("#{person.name} #{person_keys.inspect}")
+
   totals[person_keys.first][:join] += 1
   totals[person_keys.last][:leave] += 1 if person.govt_exit_date
 end

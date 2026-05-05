@@ -4525,12 +4525,17 @@
     Josh Gruenbaum is another DOGE member who comes from the world of private equity and mergers & acquisitions,
     having worked at KKR & Co and Moelis. At the GSA, he was appointed as commissioner over the Federal
     Acquisition Service (FAS) at GSA, giving him oversight over all the ways in which GSA procures _stuff_,
-    whether it's office supplies or custom software. He is the direct supervisor of Thomas Shedd and he
-    himself reports to Stephen Ehikian who also is in DOGE.
+    whether it's office supplies or custom software. He wasthe direct supervisor of Thomas Shedd and he
+    himself reported to Stephen Ehikian who also is in DOGE. He reportedly has left GSA in April, but
+    may still be working in the administration.
   positions:
   - id: gsa-josh-gruenbaum
     start_date: 2025-01-24
     start_date_truth: verified
+    end_date: 2026-04-17
+    end_date_truth: reported
+    end_type: replaced
+    replaced_by: gsa-gruenbaum-advisor
     type: appointed
     category: enabler
     agency: GSA
@@ -4544,7 +4549,26 @@
     - https://www.nextgov.com/people/2025/01/gsa-announces-new-fas-tts-leadership/402485/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://federalnewsnetwork.com/people/2026/04/gruenbaum-leaving-as-gsa-fas-commissioner/
     supervisory: true
+  - id: detail-gsa-eop-gruenbaum
+    type: detailed
+    agency: EOP
+    from: GSA
+    from_truth: reported
+    start_date: 2026-04-17
+    start_date_truth: reported
+    table_note: Serving in Board of Peace focusing on reconstruction in Gaza
+    source: >-
+      https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2026/04/20/former-doge-at-the-white-house-00881970
+  - id: gsa-gruenbaum-advisor
+    type: demotion
+    agency: GSA
+    title: Senior Advisor
+    start_date: 2026-04-17
+    start_date_truth: reported
+    source: >-
+      https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2026/04/20/former-doge-at-the-white-house-00881970
 
 - name: Gavin Hamrick
   sort_name: Hamrick
@@ -6124,7 +6148,7 @@
     project: spending
     start_date: 2025-07-11
     start_date_truth: verified
-    title: Under Secretary for Foreign Assistance, Humanitarian Affairs and Religious Freedom
+    title: Acting Undersecretary for Foreign Assistance, Humanitarian Affairs and Religious Freedom
     source: https://www.state.gov/biographies/jeremy-p-lewin/
     supervisory: true
 
