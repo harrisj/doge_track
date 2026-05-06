@@ -8637,6 +8637,10 @@
   age: 26
   slug: riley-sennott
   skill: coder
+  linkedin: https://www.linkedin.com/in/riley-sennott/
+  govt_exit_date: 2025-09-XX
+  govt_exit_truth: inferred
+  govt_exit_type: resigned
   positions:
   - id: detail-sba-sennott
     agency: SBA
@@ -8658,13 +8662,17 @@
     salary: "$167,603"
     start_date: 2025-02-10
     start_date_truth: reported
-    table_note: start inferred from signing in visitor in GSA logs
+    end_date: 2025-09-XX
+    end_date_truth: inferred
+    end_type: resigned
+    table_note: start inferred from signing in visitor in GSA logs, end inferred from LinkedIn
     comment: Riley Sennott's father reports that he started at GSA nine days after 2025-02-03
     source:
     - https://www.cjr.org/opinion/doge-journalism-ethics-father-son.php
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
+    - https://www.linkedin.com/in/riley-sennott/
   - id: detail-gsa-nasa-sennott
     type: detailed
     category: wrecker
