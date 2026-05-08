@@ -123,7 +123,7 @@ end
 # Load entities
 entities_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'entities.yaml'), symbolize_names: true)
 entities_yaml.each do |src|
-  Entity.create(src)
+  Entity.create(src.except('source')) # Not processing these yet
 end
 
 # Load People

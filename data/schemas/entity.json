@@ -29,6 +29,10 @@
         },
         "visible": {
             "type": "boolean"
+        },
+        "source": {
+            "description": "Source(s) for the information",
+            "$ref": "source-ref.json"
         }
     },
     "required": [
