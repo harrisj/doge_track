@@ -52,7 +52,7 @@ Here are the current members of DOGE that I have linked to specific positions, l
         {% grouped_by_start = Person.all.reject {|p| p.start_date.nil? }.group_by {|p| p.start_date.strftime("%Y-%m") } %}
         {% grouped_by_end = Person.all.reject {|p| p.govt_exit_date.nil? }.group_by {|p| p.govt_exit_date.strftime("%Y-%m") } %}
 
-        {% start_date = Date.new(2025, 1, 20) %}
+        {% start_date = Date.new(2025, 1, 1) %}
         {% current_date = Date.today %}
         <table class="my-table-style">
             <thead>
