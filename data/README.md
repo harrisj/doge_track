@@ -257,7 +257,7 @@ As well as some join tables for representing many-to-many relationships:
 
 For a primary key, I generate an 8-character short UUID as part of the events preprocessing. That can be used to reference the event going forward and for joining against things.
 
-If you want to create the sqlite table, just run the following command `scripts/create_sqlite_db` and it'll completely recreate a database at `doge.sqlite` for you to play with.
+If you want to create the sqlite table, just run the following command `scripts/create_sqlite_db` and it'll completely recreate a database at `doge.db` for you to play with.
 
 ## Next Big Steps
 

@@ -64,7 +64,7 @@ Bridgetown.configure do |config|
   init :"bridgetown-quick-search"
   init :streamlined
 
-  database_uri 'sqlite://data/doge.sqlite'
+  database_uri 'sqlite://data/doge.db'
   except :sequel_tasks do
     init :bridgetown_sequel
     # Bridgetown.db.loggers << Bridgetown.logger

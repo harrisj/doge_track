@@ -61,7 +61,7 @@ SCRIPTS_DIR = 'data/scripts'
 namespace :data do
   desc 'Delete the SQLite database'
   task :clean_db do
-    sh 'rm -f data/doge.sqlite'
+    sh 'rm -f data/doge.db'
   end
 
   desc 'Delete all the pregenerated API files'
