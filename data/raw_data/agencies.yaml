@@ -3760,6 +3760,17 @@
     source: https://www.notus.org/climate-environment/trump-administration-nuclear-waste-cleanup-team-staff
     agency: Energy
     id: 7CHQLM4P
+  - date: 2026-05-29
+    type: report
+    event: >-
+      As a result of DOGE's deferred resignation program and other staffing reductions, two nuclear waste
+      sites in New Mexico are operating with vacancy rates of 48% or higher. Nationwide, the environmental
+      cleanup division has lost 400 workers over the last two years, for a vacancy rate of 45%.
+    agency: Energy
+    source: >-
+      https://www.santafenewmexican.com/news/environment/report-doge-resignation-program-led-to-high-nuclear-cleanup-vacancies-in-new-mexico/article_7fc9d23f-cac1-4d6f-9fec-52a03a484add.html
+    project: personnel
+    id: 2gHFS29T
 
 - name: Department of Labor
   id: DOL
@@ -7737,6 +7748,19 @@
     - https://files.gao.gov/reports/GAO-26-108774/index.html
     agency: NLRB
     id: eCQoxNRz
+  - date: 2025-04-19
+    type: action
+    event: >-
+      Two days after a whistleblower, Dan Berulis, went public with allegations that DOGE had hacked and
+      stolen data from the NLRB, Elon Musk posts a tweet that claims the whistleblower was deliberately
+      false. A few hours after the tweet, Berulis discovered after a crash that the brake lines on his
+      car had been cut and the airbag was also tampered with to not deploy in a crash. This followed an
+      earlier threatening note as well as surveillance photos of him walking his dog.
+    project: impunity
+    source: >-
+      https://gizmodo.com/doge-whistleblower-had-his-brakes-cut-hours-after-elon-put-him-on-blast-suit-alleges-2000766724
+    agency: NLRB
+    id: 6fTpgxaj
   - date: 2025-04-24
     type: access
     event: >-
@@ -9705,6 +9729,26 @@
     - https://www.propublica.org/article/inside-doge-social-security-takeover-leland-dudek
     agency: SSA
     id: 3ttBbSnR
+  - date: 2025-02-(25)~
+    type: disruption
+    event: >-
+      A whistleblower at SSA, Jeremiah Schofield, is summoned to the first of 4 subsequent meetings with
+      DOGE staff. These meetings are not scheduled in SSA systems to avoid any records. They also took
+      place in an unused portion of the building. Both a SSA security guard and private security were
+      on hand to prevent access by other staff. He met with Antonio Gracias, Jon Koval and Peyton Rehling,
+      all of whom appeared to have access to sensitive systems and were using nonstandard and possibly
+      personal laptops. All three identified themselves as volunteers and said their purpose at the agency
+      was to identify fraud and people who should not have social security numbers.
+    project:
+    - fraud
+    - immigration
+    source: https://www.hsgac.senate.gov/wp-content/uploads/2026-6-4-Blumenthal-Warren-Letter-to-Jon-Koval.pdf
+    named:
+    - Antonio Gracias
+    - Jon Koval
+    - Payton Rehling
+    agency: SSA
+    id: 7bLPTF5b
   - date: 2025-02-26
     type: onboard
     event: One more unidentified DOGE staffer, SSA-08, is detailed to SSA from OPM.
@@ -9746,6 +9790,24 @@
     source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
     agency: SSA
     id: 5KzocaBU
+  - date: 2025-03-XX
+    type: disruption
+    event: >-
+      A DOGE team at SSA consisting of Antonio Gracias, Jon Koval and Payton Rehling continues to meet
+      with SSA staff to discuss fraud. They become focused on records in the NUMIDENT system that have
+      no death date. Despite explanations from SSA Staff that the missing death dates do not indicate
+      fraud, the DOGE team insists that the death dates be corrected. This continues to be a top priority
+      for the White House and Elon Musk.
+    project:
+    - fraud
+    - immigration
+    named:
+    - Antonio Gracias
+    - Jon Koval
+    - Payton Rehling
+    source: https://www.hsgac.senate.gov/wp-content/uploads/2026-6-4-Blumenthal-Warren-Letter-to-Jon-Koval.pdf
+    agency: SSA
+    id: 2MSy9N4n
   - date: 2025-03-03
     type: disruption
     event: >-
@@ -10158,17 +10220,43 @@
     agency: SSA
     id: jkdURxvu
   - date: 2025-04-08
+    type: disruption
+    event: >-
+      Frustrated at the resistance by SSA staff to DHS' request, the CIO Scott Coulter orders staff at
+      the Office of Analytics and Improvements to make the changes to NUMIDENT to declare 6000+ immigrants
+      in the system as dead. When OAI took several days to analyze the data set, he reportedly stated
+      that he was getting direct calls from the White House and that he would have John Solly do the task
+      instead (despite a restraining order against DOGE access to NUMIDENT). In their analysis, OAI found
+      ~40 cases with data discrepancies in their matching. The team was directed to send that list to
+      Aram Moghaddassi at a DHS email address.
+    named:
+    - Scott Coulter
+    - Aram Moghaddassi
+    - John Solly
+    interagency_doge_reps:
+      SSA:
+      - Scott Coulter
+      - John Solly
+      DHS:
+      - Aram Moghaddassi
+    source: https://www.hsgac.senate.gov/wp-content/uploads/2026-6-4-Blumenthal-Warren-Letter-to-Jon-Koval.pdf
+    project: immigration
+    agency: SSA
+    id: 6E4RRi7I
+  - date: 2025-04-08
     type: access
     event: >-
       Aram Moghaddassi adds 6300 names of suspected immigrants to the "death master file" as a way of
       forcing them to "self-deport" by making it impossible to use financial products. This list included
-      the names of 7 minors.
+      the names of 7 minors. All are given the death date of March 8, 2025.
     notable: true
     named:
     - Aram Moghaddassi
     - Scott Coulter
     project: immigration
-    source: https://www.nytimes.com/2025/04/10/us/politics/migrants-deport-social-security-doge.html
+    source:
+    - https://www.nytimes.com/2025/04/10/us/politics/migrants-deport-social-security-doge.html
+    - https://www.hsgac.senate.gov/wp-content/uploads/2026-6-4-Blumenthal-Warren-Letter-to-Jon-Koval.pdf
     agency: SSA
     id: H45eMwSg
   - date: 2025-04-10
