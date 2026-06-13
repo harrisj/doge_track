@@ -4615,6 +4615,9 @@
     This doesn't mean necessarily that he was detailed to that agency; but it does indicate some role
     in crafting the justifications given to agencies about these moves.
   skill: lawyer
+  govt_exit_date: 2025-09-XX
+  govt_exit_type: resigned
+  govt_exit_truth: inferred
   positions:
   - id: gsa-joshua-hanley
     agency: GSA
@@ -4622,16 +4625,21 @@
     category: support
     start_date: 2025-02-14
     start_date_truth: inferred
+    end_date: 2025-09-XX
+    end_date_truth: inferred
+    end_type: resigned
     salary: "$167,603"
     office: Office of General Counsel
     pay_grade: GS-12
-    table_note: At badging on 2/14, so inferring start then
+    table_note: >-
+      At badging on 2/14, so inferring start then; reported as SCOTUS clerk for 2025 (term starts in October)
     project: spending
     source:
     - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
     - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
+    - https://www.law.virginia.edu/news/202507/josh-hanley-21-clerk-us-supreme-court
   - id: doge-joshua-hanley
     type: detailed
     category: support
