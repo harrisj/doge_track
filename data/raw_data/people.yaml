@@ -140,6 +140,7 @@
     start_date: 2025-04-16
     start_date_truth: reported
     end_date: 2025-07-25
+    end_type: resigned
     end_date_truth: inferred
     table_note: >-
       Mentioned by Justin Fox as working with other NLRB DOGE staff, but not listed by GAO as detailed
@@ -3280,6 +3281,15 @@
     connection_truth: self-reported
     source: https://www.linkedin.com/in/luke-farritor/
     id: 4JAaaJlL
+  - entity_id: stealth-ai-startup
+    role: founder
+    start_date: 2026-06-XX
+    timeframe: after
+    immediate: true
+    start_date_truth: reported
+    connection_truth: reported
+    source: https://www.vanityfair.com/story/doge-defense-startups
+    id: G2IrRJ1L
   positions:
   - id: detail-gsa-dhs-farritor
     type: detailed
@@ -4567,6 +4577,7 @@
     - https://federalnewsnetwork.com/people/2026/04/gruenbaum-leaving-as-gsa-fas-commissioner/
     supervisory: true
   - id: detail-gsa-eop-gruenbaum
+    category: builder
     type: detailed
     agency: EOP
     from: GSA
@@ -4578,6 +4589,7 @@
       https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2026/04/20/former-doge-at-the-white-house-00881970
   - id: gsa-gruenbaum-advisor
     type: demotion
+    category: wrecker
     agency: GSA
     title: Senior Advisor
     start_date: 2026-04-17
@@ -5501,6 +5513,16 @@
     pulled out five different laptops from his bag to show the various agencies he had been granted access
     to. He has since left a few of those positions – or very possibly been fired – but he still has his
     fingers in a lot of pies, and the collection of laptops to prove it.
+  affiliations:
+  - entity_id: stealth-ai-startup
+    role: founder
+    start_date: 2026-06-XX
+    timeframe: after
+    immediate: true
+    start_date_truth: reported
+    connection_truth: reported
+    source: https://www.vanityfair.com/story/doge-defense-startups
+    id: 4z26vDkJ
   positions:
   - id: detail-opm-dhs-kliger
     type: detailed
@@ -9629,6 +9651,15 @@
     timeframe: during
     source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
     id: 4wCI1PyZ
+  - entity_id: stealth-ai-startup
+    role: founder
+    start_date: 2026-06-XX
+    timeframe: after
+    immediate: true
+    start_date_truth: reported
+    connection_truth: reported
+    source: https://www.vanityfair.com/story/doge-defense-startups
+    id: 1AoP5Am0
   positions:
   - id: detail-gsa-mcc-stein
     type: detailed
