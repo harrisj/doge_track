@@ -7034,7 +7034,12 @@
   sort_name: Mirski
   slug: michael-mirski
   age: 32
-  skill: coder
+  skill: analyst
+  blurb: >-
+    An investor and an analyst, he joined DOGE's team at HUD, which raised concerns about conflicts of
+    interest because he is an investor in a real-estate company. His own LinkedIn reports that he departed
+    from DOGE sometime in 2025, lasting less than a year.
+  linkedin: https://www.linkedin.com/in/mirski/
   positions:
   - id: hud-mirski
     type: appointed
@@ -7075,7 +7080,7 @@
     end_date_truth: reported
     end_type: detail_ended
     title: Senior Advisor
-    title_type: advisor
+    title_type: adisor
     office: Office of the Chairman
     project: deregulation
     comment: Reporting on 4/15 just says he arrived "earlier this month"
@@ -8801,7 +8806,11 @@
     release more water from reservoirs in Northern California as a publicity stunt about the wildfires
     much further south in LA. Since April, he has been serving as a senior advisor at the NOAA, where
     he likely has been reviewing contracts and programs for termination. This role would also give him
-    involvement in regulations and oversight over America's fisheries.
+    involvement in regulations and oversight over America's fisheries. His LinkedIn reported he left government
+    service after 1 year and 1 month.
+  govt_exit_date: 2026-04-XX
+  govt_exit_type: resigned
+  govt_exit_truth: inferred
   positions:
   - id: noaa-shang-cio
     start_date: 2025-03-(31)~
@@ -8817,6 +8826,21 @@
     source:
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - id: commerce-shang-ai
+    agency: Commerce
+    type: appointed
+    category: builder
+    title: Founder and Executive Director, National AI Center
+    start_date: 2026-01-XX
+    start_date_truth: inferred
+    end_date: 2026-02-05
+    end_date_truth: inferred
+    end_type: resigned
+    source:
+    - https://www.linkedin.com/in/brytonshang/
+    - >-
+      https://orangeslices.ai/bryton-shang-now-founder-executive-director-commerce-department-national-ai-center/
+    - https://bciu.org/working-toward-a-shared-vision-for-american-ai-tech-exported-around-the-globe/
 
 - name: Ethan Shaotran
   sort_name: Shaotran
