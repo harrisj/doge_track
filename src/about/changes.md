@@ -2,6 +2,7 @@
 title: What's Changed
 layout: docs
 text_updated: 2025-09-21
+index_for_search: false
 ---
 # What's Changed?
 

@@ -2037,6 +2037,9 @@
     low profile, even as other DOGE staffers like Cole Killian and Kathryn Armstrong Loving showed up
     in media reports. At the EPA, his primary focus would be on reducing the effectiveness of the agency
     through eliminating staff and whittling down regulations.
+  govt_exit_date: 2026-07-31
+  govt_exit_type: resigned
+  govt_exit_truth: reported
   positions:
   - id: coe-detail-epa
     type: detailed
@@ -2076,11 +2079,15 @@
     agency: EPA
     start_date: 2025-05-02
     start_date_truth: verified
+    end_date: 2026-07-31
+    end_date_truth: reported
+    end_type: resigned
     salary: "$167,603"
     source:
     - https://www.nytimes.com/2025/06/07/us/politics/trump-musk-doge-interior-epa.html
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://www.eenews.net/articles/coe-out-as-doe-chief-of-staff/
 
 - name: Seth Cohen
   sort_name: Cohen
@@ -3005,6 +3012,21 @@
     since then DOGE has added several other members linked to racist and extremist content online. Upon
     rejoning DOGE, Marko Elez was placed with Aram Moghaddassi on a team inside of the Department of Labor,
     and the two are frequently sent on reimburable details to other agencies like SSA or DHS.
+  govt_exit_type: resigned
+  govt_exit_date: 2026-04-XX
+  govt_exit_truth: reported
+  affiliations:
+  - entity_id: cathedral
+    role: founder
+    timeframe: after
+    immediate: true
+    start_date: 2026-04-XX
+    start_date_truth: guessed
+    connection_truth: reported
+    source:
+    - https://www.wired.com/story/where-the-doge-operatives-are-now/
+    - https://thenextweb.com/news/cathedral-doge-alumni-military-cyber-startup-1-4-billion
+    id: 1oSO8VaD
   positions:
   - id: detail-dol-dhs-elez
     type: detailed
@@ -3098,6 +3120,9 @@
     - spending
     start_date: 2025-02-12
     start_date_truth: inferred
+    end_date: 2026-03-XX
+    end_date_truth: inferred
+    end_type: resigned
     nte_date: 2025-06-11
     nte_date_truth: verified
     title: Policy Advisor
@@ -3107,7 +3132,10 @@
     series: '0301'
     pay_grade: GS-11/01
     salary: "$84,601"
-    source: https://www.documentcloud.org/documents/26028796-onboard-dol-marko-elez/
+    source:
+    - https://www.documentcloud.org/documents/26028796-onboard-dol-marko-elez/
+    - https://www.wired.com/story/where-the-doge-operatives-are-now/
+    - https://thenextweb.com/news/cathedral-doge-alumni-military-cyber-startup-1-4-billion
   - id: detail-dol-ssa-employee-7
     type: detailed
     category: wrecker
@@ -3277,6 +3305,9 @@
     to completely lock out agency staff from being able to disburse funds, freezing millions in grants
     and making him directly responsible for likely [hundreds of thousands of deaths](https://www.bu.edu/sph/news/articles/2025/tracking-anticipated-deaths-from-usaid-funding-cuts/)
     worldwide.
+  govt_exit_date: 2026-04-XX
+  govt_exit_truth: guessed
+  govt_exit_type: resigned
   affiliations:
   - entity_id: spacex
     role: intern
@@ -3288,14 +3319,17 @@
     connection_truth: self-reported
     source: https://www.linkedin.com/in/luke-farritor/
     id: 4JAaaJlL
-  - entity_id: stealth-ai-startup
+  - entity_id: cathedral
     role: founder
-    start_date: 2026-06-XX
+    start_date: 2026-04-XX
+    start_date_truth: reported
     timeframe: after
     immediate: true
-    start_date_truth: reported
     connection_truth: reported
-    source: https://www.vanityfair.com/story/doge-defense-startups
+    source:
+    - https://www.vanityfair.com/story/doge-defense-startups
+    - https://www.wired.com/story/where-the-doge-operatives-are-now/
+    - https://thenextweb.com/news/cathedral-doge-alumni-military-cyber-startup-1-4-billion
     id: G2IrRJ1L
   positions:
   - id: detail-gsa-dhs-farritor
@@ -3314,6 +3348,10 @@
     agency: GSA
     start_date: 2025-01-20
     start_date_truth: inferred
+    end_date: 2025-05-30
+    end_type: replaced
+    end_date_truth: reported
+    replaced_by: gsa-farritor-fulltime
     table_note: verified as detailed from GSA to HHS on 1/21, so assuming onboarded on 1/20
     comment: Luke is detailed to HHS from GSA on 2025-01-21, so date here is inferred
     salary: "$0"
@@ -5525,9 +5563,9 @@
   govt_exit_type: resigned
   govt_exit_truth: self-reported
   affiliations:
-  - entity_id: stealth-ai-startup
+  - entity_id: cathedral
     role: founder
-    start_date: 2026-06-XX
+    start_date: 2026-04-XX
     timeframe: after
     immediate: true
     start_date_truth: reported
@@ -9689,14 +9727,16 @@
     timeframe: during
     source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
     id: 4wCI1PyZ
-  - entity_id: stealth-ai-startup
+  - entity_id: cathedral
     role: founder
-    start_date: 2026-06-XX
+    start_date: 2026-04-XX
     timeframe: after
     immediate: true
     start_date_truth: reported
     connection_truth: reported
-    source: https://www.vanityfair.com/story/doge-defense-startups
+    source:
+    - https://www.vanityfair.com/story/doge-defense-startups
+    - https://thenextweb.com/news/cathedral-doge-alumni-military-cyber-startup-1-4-billion
     id: 1AoP5Am0
   positions:
   - id: detail-gsa-mcc-stein
