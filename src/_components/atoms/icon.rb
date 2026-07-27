@@ -106,7 +106,7 @@ module Atoms
     def template
       html lambda {
         <<~HTML.rstrip
-          <i class="inline-block size-5 mx-auto fa-sharp fa-solid #{text -> { icon_css }}" aria-hidden="true"#{html -> { aria_attr }}></i><span class="sr-only">#{text -> { aria }}: </span>
+          <i class="fa-sharp fa-solid #{text -> { icon_css }} fa-fw" aria-hidden="true"#{html -> { aria_attr }}></i><span class="sr-only">#{text -> { aria }}: </span>
         HTML
       }
     end
