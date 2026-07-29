@@ -93,7 +93,7 @@ module Builders
       title = agency.name
       title += " (#{agency.short_name})" if agency.short_name =~ /^[A-Z]+$/
 
-      num_people = agency.all_positions.map(&:name).uniq.count
+      num_people = agency.all_positions(internal_xfers: true).map(&:name).uniq.count
       num_events = agency.all_events.count
       num_systems = agency.all_systems.count
 
