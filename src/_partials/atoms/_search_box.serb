@@ -1,0 +1,31 @@
+  <!-- Relative container holds search and the absolute dropdown -->
+  <div class="flex gap-2 relative">
+    <div class="form-control">
+      <!-- daisyUI input container acting as a unified field wrapper -->
+      <label class="input input-bordered flex items-center gap-2 w-48 md:w-64">
+        <!-- Font Awesome Magnifying Glass Icon -->
+        <i class="fa-solid fa-magnifying-glass text-base-content/60"></i>
+        <input 
+          type="text" 
+          id="navbar-search" 
+          placeholder="Type to search..." 
+          class="grow border-none p-0 focus:outline-none bg-transparent text-base-content" 
+          autocomplete="off"
+          role="combobox"
+          aria-expanded="false"
+          aria-autocomplete="list"
+          aria-controls="search-results-menu"
+        />
+      </label>
+    </div>
+    
+    <!-- Dynamic Results Dropdown Menu -->
+    <ul 
+      id="search-results-menu" 
+      role="listbox"
+      aria-label="Search results"
+      class="hidden menu bg-base-100 rounded-box border border-base-200 absolute top-14 right-0 w-80 md:w-96 p-2 shadow-xl z-50 overflow-y-auto"
+    >
+      <!-- Generated elements injected via JavaScript -->
+    </ul>
+  </div>
