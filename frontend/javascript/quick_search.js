@@ -1,223 +1,254 @@
-/* Use in your app by simply adding to your app's index.js:
+import lunr from "lunr";
 
-import "bridgetown-quick-search"
-*/
-import { LitElement, css, html } from "lit";
-import { unsafeHTML } from "lit/directives/unsafe-html.js";
-import SearchEngine from "./search_engine";
+const JSON_URL = "/search-index.json";
 
-export class BridgetownSearchForm extends LitElement {
-  static {
-    customElements.define("bridgetown-search-form", this);
-  }
+function previewTemplate(query, text, length) {
+    if (length == null) length = 300;
+    const padding = length / 2;
+    let output;
 
-  render() {
-    return html`<form><slot name="input"></slot></form>
-      <slot></slot>`;
-  }
+    if (length) {
+        // Get sorted locations of all the words in the search query
+        const textToSearch = text.toLowerCase();
+        const wordLocations = query
+            .toLowerCase()
+            .split(" ")
+            .map((word) => {
+                return textToSearch.indexOf(word);
+            })
+            .filter((location) => location != -1)
+            .sort((a, b) => {
+                return a - b;
+            });
 
-  firstUpdated() {
-    this.querySelector("input").addEventListener(
-      "input",
-      this.handleChange.bind(this),
-    );
-  }
+        // Grab the first location and back up a bit
+        // Then go past second location or just use the length
+        if (wordLocations[1]) {
+            length = Math.min(wordLocations[1] - wordLocations[0], length);
+        }
 
-  handleChange(e) {
-    const target = e.currentTarget;
-    clearTimeout(this.debounce);
-
-    this.debounce = setTimeout(() => {
-      this.querySelector("bridgetown-search-results").showResultsForQuery(
-        target.value,
-      );
-    }, 250);
-  }
-}
-
-export class BridgetownSearchResults extends LitElement {
-  static properties = {
-    theme: { type: String },
-    results: { type: Array },
-    snippetLength: { type: Number },
-    displayCollection: { type: Boolean },
-  };
-
-  static styles = css`
-    :host {
-      display: block;
-      position: absolute;
-      margin: 0;
-      margin-top: 1px;
-      padding: 0;
-      width: 94vw;
-      max-width: 550px;
-      font-weight: 400;
-      font-size: 1rem;
-      font-style: normal;
-      text-transform: initial;
-      z-index: 9999;
-      background: transparent;
-    }
-    [part="inner"] {
-      margin: 0;
-      list-style-type: none;
-      padding: 0.8em 1.2em;
-      background: var(--background, #ffffff);
-      color: var(--text-color, #333333);
-      display: none;
-      border-radius: var(--border-radius, 10px);
-      border-top-left-radius: var(--border-corner-radius, 4px);
-      max-height: 50vh;
-      overflow: auto;
-      overflow-x: hidden;
-      box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
-    }
-    [part="inner"].show {
-      display: block;
-    }
-    [part="inner"].dark-theme {
-      background: var(--background-dark, #222222);
-      color: var(--text-color-dark, #dddddd);
-    }
-
-    ul > a {
-      margin-top: 1.5em;
-      margin-bottom: 0;
-    }
-    ul > a:first-of-type {
-      margin-top: 0;
-    }
-    li {
-      margin: 0;
-      padding: 0;
-    }
-
-    h1 {
-      font-size: 1em;
-      font-weight: 400;
-      font-style: normal;
-      margin-top: 0;
-      margin-bottom: 0.5em;
-      padding-bottom: 3px;
-      border-bottom: 1px solid var(--divider-color, #cccccc);
-      color: var(--link-color, #000000);
-    }
-    h1 a {
-      display: block;
-    }
-    [part="inner"].dark-theme h1 {
-      color: var(--link-color-dark, #ffffff);
-      border-bottom: 1px solid var(--divider-color-dark, #444444);
-    }
-    a {
-      color: inherit;
-      text-decoration: none;
-      display: block;
-    }
-    p {
-      margin-top: 0;
-      margin-bottom: 1em;
-      word-wrap: break-word;
-    }
-    li p {
-      font-size: 0.8em;
-    }
-    p strong {
-      color: var(--link-color, #000000);
-    }
-    [part="inner"].dark-theme p strong {
-      color: var(--link-color-dark, #ffffff);
-    }
-    p#no-results {
-      margin-top: 0.5em;
-    }
-  `;
-
-  static {
-    customElements.define("bridgetown-search-results", this);
-  }
-
-  constructor() {
-    super();
-    this.results = [];
-    this.snippetLength = 142;
-    this.displayCollection = false;
-  }
-
-  connectedCallback() {
-    super.connectedCallback();
-    this.fetchSearchIndex();
-
-    window.addEventListener("resize", () => {
-      window.requestAnimationFrame(this.repositionIfNecessary.bind(this));
-      //      clearTimeout(this.resizeDebounce)
-      //      this.resizeDebounce = setTimeout(() => {
-      //        this.repositionIfNecessary()
-      //      }, 100)
-    });
-  }
-
-  async fetchSearchIndex() {
-    const response = await fetch(`/search-index.json`);
-    this.searchIndex = await response.json();
-
-    this.searchEngine = new SearchEngine();
-    this.searchEngine.generateIndex(this.searchIndex);
-  }
-
-  showResultsForQuery(query) {
-    this.latestQuery = query;
-    if (query && query.length > 1) {
-      this.showResults = true;
-      this.results = this.searchEngine
-        .performSearch(query, this.snippetLength, this.displayCollection)
-        .slice(0, 10);
+        output = text.substr(
+            Math.max(0, wordLocations[0] - padding),
+            length + padding,
+        );
     } else {
-      this.showResults = false;
-    }
-    this.requestUpdate();
-  }
-
-  render() {
-    this.repositionIfNecessary();
-
-    let resultsStatus = "";
-    if (this.results.length == 0) {
-      resultsStatus = html`<p id="no-results">
-        No results found for "<strong>${this.latestQuery}</strong>"
-      </p>`;
+        output = text;
     }
 
-    const theme = this.theme == "dark" ? "dark" : "light";
-
-    return html`<ul
-      part="inner"
-      class="${theme}-theme ${this.showResults ? "show" : ""}"
-    >
-      ${resultsStatus}
-      ${this.results.map((result) => {
-        return html`
-          <a part="inner-link" href="${result.url}">
-            <li>
-              <h1>${unsafeHTML(result.heading)}</h1>
-              <p>${unsafeHTML(result.preview)}</p>
-            </li>
-          </a>
-        `;
-      })}
-    </ul>`;
-  }
-
-  repositionIfNecessary() {
-    this.style.transform = `translateX(0px)`;
-
-    const rect = this.getBoundingClientRect();
-    const fullWidth = window.innerWidth - rect.width;
-    const offsetWidth = fullWidth - rect.x;
-
-    if (rect.x + rect.width > window.innerWidth) {
-      this.style.transform = `translateX(${offsetWidth}px)`;
+    if (!text.startsWith(output)) {
+        output = "…" + output;
     }
-  }
+    if (!text.endsWith(output)) {
+        output = output + "…";
+    }
+
+    query
+        .toLowerCase()
+        .split(" ")
+        .forEach((word) => {
+            if (word != "") {
+                output = output.replace(
+                    new RegExp(`(${word.replace(/[\.\*\+\(\)]/g, "")})`, "ig"),
+                    `<strong>$1</strong>`,
+                );
+            }
+        });
+
+    return output;
 }
+
+document.addEventListener("DOMContentLoaded", async () => {
+    // Application Data States
+    let documents = [];
+    let docLookup = {};
+    let lunrIndex = null;
+    let activeIndex = -1; // -1 means focus is strictly on the text input
+
+    const searchInput = document.getElementById("navbar-search");
+    const resultsMenu = document.getElementById("search-results-menu");
+
+    // 1. Fetch JSON Data Asynchronously from Endpoint
+    async function initialization() {
+        try {
+            // Replace with your real JSON file endpoint URL path
+            const response = await fetch(JSON_URL);
+            if (!response.ok) throw new Error("Network error pulling file.");
+
+            documents = await response.json();
+
+            // Build internal quick dictionary lookup mapping
+            documents.forEach((doc) => {
+                docLookup[doc.id] = doc;
+            });
+
+            // Build Lunr Search Engine Instance
+            lunrIndex = lunr(function () {
+                this.pipeline.remove(lunr.stemmer);
+                this.searchPipeline.remove(lunr.stemmer);
+
+                this.ref("id");
+                this.field("id");
+                this.field("title", { boost: 20 });
+                this.field("alt_title", { boost: 20 });
+                this.field("agency", { boost: 5 });
+                this.field("name", { boost: 5 });
+                this.field("url");
+                this.field("content");
+
+                documents.forEach((doc) => {
+                    this.add(doc);
+                }, this);
+            });
+        } catch (error) {
+            console.error("Failed initialization process:", error);
+        }
+    }
+
+    // Execute initialization payload immediately
+    await initialization();
+
+    // 2. Input Monitoring Logic
+    searchInput.addEventListener("input", (e) => {
+        const query = e.target.value.trim();
+        activeIndex = -1; // Reset highlight pointer anytime typing shifts context
+
+        if (query.length < 2 || !lunrIndex) {
+            clearResults();
+            return;
+        }
+
+        const matches = lunrIndex.search(`${query}*`);
+
+        // Define your minimum relevance threshold
+        const minScore = 1;
+        const filteredMatches = matches
+            .filter((item) => item.score >= minScore)
+            .slice(0, 5);
+
+        renderResults(query, filteredMatches);
+    });
+
+    // 3. Clear UI Elements safely
+    function clearResults() {
+        resultsMenu.innerHTML = "";
+        resultsMenu.classList.add("hidden");
+        searchInput.setAttribute("aria-expanded", "false");
+        activeIndex = -1;
+    }
+
+    // 4. Dom Dynamic Generation Template
+    function renderResults(query, results) {
+        resultsMenu.innerHTML = "";
+
+        if (results.length === 0) {
+            resultsMenu.innerHTML = `<li class="disabled"><span class="text-base-content/80 py-2 px-3">No pages found</span></li>`;
+            resultsMenu.classList.remove("hidden");
+            searchInput.setAttribute("aria-expanded", "true");
+            return;
+        }
+
+        results.forEach((result, idx) => {
+            const doc = docLookup[result.ref];
+            const li = document.createElement("li");
+            li.setAttribute("role", "option");
+            li.setAttribute("id", `search-item-${idx}`);
+
+            if (doc.type == "Page" || doc.type == "Event") {
+                content = previewTemplate(query, doc.content, 120);
+            } else {
+                content = doc.content;
+            }
+
+            // We embed anchor paths explicitly inside custom markup definitions
+            li.innerHTML = `
+        <a href="${doc.url}" tabindex="-1" class="flex flex-col items-start gap-0.5 py-2 px-3 rounded-md transition-colors duration-150">
+        <span class="font-medium text-sm text-base-content title-element">${doc.icon_html} ${doc.title}</span>
+          <span class="text-xs text-base-content/80 font-mono url-element">${content}</span>
+        </a>
+      `;
+            resultsMenu.appendChild(li);
+        });
+
+        resultsMenu.classList.remove("hidden");
+        searchInput.setAttribute("aria-expanded", "true");
+    }
+
+    // 5. Intercept Key Navigation Commands
+    searchInput.addEventListener("keydown", (e) => {
+        // Collect non-disabled item links rendered inside results
+        const listItems = resultsMenu.querySelectorAll("li:not(.disabled)");
+        if (listItems.length === 0) return;
+
+        switch (e.key) {
+            case "ArrowDown":
+                e.preventDefault();
+                activeIndex =
+                    activeIndex + 1 >= listItems.length ? 0 : activeIndex + 1;
+                updateItemVisualFocus(listItems);
+                break;
+
+            case "ArrowUp":
+                e.preventDefault();
+                activeIndex =
+                    activeIndex - 1 < 0
+                        ? listItems.length - 1
+                        : activeIndex - 1;
+                updateItemVisualFocus(listItems);
+                break;
+
+            case "Enter":
+                // If an item is active via keyboard selection, go to its link
+                if (activeIndex >= 0 && activeIndex < listItems.length) {
+                    e.preventDefault();
+                    const targetAnchor =
+                        listItems[activeIndex].querySelector("a");
+                    if (targetAnchor)
+                        window.location.href =
+                            targetAnchor.getAttribute("href");
+                }
+                break;
+
+            case "Escape":
+                e.preventDefault();
+                clearResults();
+                searchInput.blur();
+                break;
+        }
+    });
+
+    // 6. Manage Active Selection Visual Highlights
+    function updateItemVisualFocus(items) {
+        items.forEach((item, idx) => {
+            const anchor = item.querySelector("a");
+            if (idx === activeIndex) {
+                // Use daisyUI focus classes explicitly
+                anchor.classList.add("bg-base-200", "text-base-content");
+                item.setAttribute("aria-selected", "true");
+                searchInput.setAttribute("aria-activedescendant", item.id);
+
+                // Scroll the element into view safely if overflow list container gets scrolled past
+                item.scrollIntoView({ block: "nearest" });
+            } else {
+                anchor.classList.remove("bg-base-200");
+                item.removeAttribute("aria-selected");
+            }
+        });
+    }
+
+    // 7. Click Dismiss Handling
+    document.addEventListener("click", (e) => {
+        if (
+            !searchInput.contains(e.target) &&
+            !resultsMenu.contains(e.target)
+        ) {
+            clearResults();
+        }
+    });
+
+    searchInput.addEventListener("focus", () => {
+        if (searchInput.value.trim().length >= 2) {
+            resultsMenu.classList.remove("hidden");
+            searchInput.setAttribute("aria-expanded", "true");
+        }
+    });
+});

@@ -1,14 +1,11 @@
     <div class="navbar bg-neutral text-neutral-content py-0 w-full sticky top-0 z-50">
       <div class="flex-none">
-        <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+        <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost text-neutral-content">
           <i class="fa-sharp fa-solid fa-bars"></i>
         </label>
       </div>
       <div class="mx-2 mt-[4px] flex-1 px-2 text-sm sm:text-md md:text-lg font-title"><a href="/">DOGE Track</a></div>
-      <div class="flex-right w-40">
-        <label class="input text-base-content input-xs sm:input-sm">
-        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-        {%= liquid_render "bridgetown_quick_search/search", placeholder: 'search', input_class: "input text-base-content" %}
-        </label>
-      </div>
+
+        {%@ "atoms/search_box" %}
+
     </div>

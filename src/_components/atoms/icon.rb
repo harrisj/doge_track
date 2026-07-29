@@ -3,12 +3,11 @@
 module Atoms
   # A simple FontAwesome icon
   class Icon < Bridgetown::Component
-    def initialize(name, aria: true, label: false, width: '[18px]')
+    def initialize(name, aria: true, label: false)
       super()
       @name = name
       @aria = aria
       @label = label
-      @width = width
     end
 
     ICONS = {
@@ -64,13 +63,14 @@ module Atoms
 
     def icon_css
       return @name if @name =~ /^fa-/
+      return '' if @name.nil?
 
       rec = ICONS[@name.to_sym]
       rec ? rec[:css] : 'fa-circle-question'
     end
 
     def aria
-      return nil unless @aria
+      return nil unless @aria && @name
 
       @aria_cached ||= if @aria.is_a?(String)
                          @aria
