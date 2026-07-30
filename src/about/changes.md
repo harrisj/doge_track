@@ -12,6 +12,7 @@ This is not a definitive list of all changes to the project (completists can alw
 {% seen_events = [] %}
 
 {% site.data.changes.each do |rec| %}
+{% next if rec.added == 0 && rec.deleted == 0 %}
 <div class="collapse bg-base-100 border border-base-300">
   <input type="radio" name="change-log-accordion"/>
 
