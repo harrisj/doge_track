@@ -5,42 +5,41 @@ require 'date'
 
 LOOKBACK_WEEKS = 12
 
-WEEK_CHANGES = {}.freeze
 CHANGES_FILE = File.join(File.dirname(__FILE__), '..', '..', 'src', '_data', 'changes.yml')
 
 # git log -p --since="2025-06-10" --until="2025-06-12" ./data/raw_data/people.yaml | grep 'id:'
 # git log -p --since="2025-06-10" --until="2025-06-12" ./data/raw_data/agencies.yaml | grep 'id:'
 
-def load_changes
+def load_changes(week_changes)
   changes = YAML.unsafe_load_file(CHANGES_FILE, symbolize_names: true)
   changes.each do |rec|
-    WEEK_CHANGES[rec[:start]] = rec
+    week_changes[rec[:start]] = rec
   end
 end
 
-def load_change_log
+def load_change_log(week_changes)
   change_log_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'change_log.yaml')
   change_log = YAML.unsafe_load_file(change_log_file, symbolize_names: true)
   change_log.each do |rec|
     raise "Fix #{rec[:week]} to be a Sunday" unless rec[:week].wday.zero?
 
-    WEEK_CHANGES[rec[:week]] ||= { start: rec[:week], end: rec[:week] + 6 }
-    WEEK_CHANGES[rec[:week]][:notes] = rec[:notes]
+    week_changes[rec[:week]] ||= { start: rec[:week], end: rec[:week] + 6 }
+    week_changes[rec[:week]][:notes] = rec[:notes]
   end
 end
 
-def load_missing_weeks
+def load_missing_weeks(week_changes)
   start_of_week = Date.today - Date.today.wday
 
   (0..LOOKBACK_WEEKS).each do |wk|
     key = start_of_week - (7 * wk)
-    WEEK_CHANGES[key] ||= { start: key, end: key + 6 }
+    week_changes[key] ||= { start: key, end: key + 6 }
   end
 end
 
-def count_changed
-  WEEK_CHANGES.keys.sort.reverse.first(LOOKBACK_WEEKS).each do |key|
-    rec = WEEK_CHANGES[key]
+def count_changed(week_changes)
+  week_changes.keys.sort.reverse.first(LOOKBACK_WEEKS).each do |key|
+    rec = week_changes[key]
     rec[:added] = 0
     rec[:deleted] = 0
 
@@ -59,9 +58,9 @@ def count_changed
   end
 end
 
-def diff_people
-  WEEK_CHANGES.keys.sort.reverse.first(LOOKBACK_WEEKS).each do |key|
-    rec = WEEK_CHANGES[key]
+def diff_people(week_changes)
+  week_changes.keys.sort.reverse.first(LOOKBACK_WEEKS).each do |key|
+    rec = week_changes[key]
     # puts "git diff '@{#{rec[:start].iso8601} 00:00}..@{#{rec[:end].iso8601} 23:59}' -- ./data/raw_data/people.yaml"
 
     log_output = `git diff '@{#{rec[:start].iso8601} 00:00}..@{#{rec[:end].iso8601} 23:59}' -- ./data/raw_data/people.yaml`
@@ -82,9 +81,9 @@ def diff_people
   end
 end
 
-def diff_events
-  WEEK_CHANGES.keys.sort.reverse.first(LOOKBACK_WEEKS).each do |key|
-    rec = WEEK_CHANGES[key]
+def diff_events(week_changes)
+  week_changes.keys.sort.reverse.first(LOOKBACK_WEEKS).each do |key|
+    rec = week_changes[key]
     rec[:agencies] = []
     rec[:events] = []
 
@@ -108,15 +107,16 @@ def diff_events
   end
 end
 
-load_changes
-load_change_log
-load_missing_weeks
+week_changes = {}
+load_changes(week_changes)
+load_change_log(week_changes)
+load_missing_weeks(week_changes)
 
-count_changed
-diff_people
-diff_events
+count_changed(week_changes)
+diff_people(week_changes)
+diff_events(week_changes)
 
-out_changes = WEEK_CHANGES.keys.sort.reverse.map { |k| WEEK_CHANGES[k] }
+out_changes = week_changes.keys.sort.reverse.map { |k| week_changes[k] }
 
 File.open(CHANGES_FILE, 'w') do |file|
   out_yaml = YAML.dump(out_changes, line_width: 150, stringify_names: true, header: false)
