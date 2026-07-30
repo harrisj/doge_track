@@ -2,6 +2,13 @@ import lunr from "lunr";
 
 const JSON_URL = "/search-index.json";
 
+import Swup from "swup";
+import SwupA11yPlugin from "@swup/a11y-plugin";
+
+const swup = new Swup({
+    plugins: [new SwupA11yPlugin()],
+});
+
 function previewTemplate(query, text, length) {
     if (length == null) length = 300;
     const padding = length / 2;
@@ -57,8 +64,8 @@ function previewTemplate(query, text, length) {
     return output;
 }
 
-document.addEventListener("DOMContentLoaded", async () => {
-    // Application Data States
+// Separate initialization function
+async function initializeSearch() {
     let documents = [];
     let docLookup = {};
     let lunrIndex = null;
@@ -67,10 +74,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     const searchInput = document.getElementById("navbar-search");
     const resultsMenu = document.getElementById("search-results-menu");
 
-    // 1. Fetch JSON Data Asynchronously from Endpoint
     async function initialization() {
         try {
-            // Replace with your real JSON file endpoint URL path
             const response = await fetch(JSON_URL);
             if (!response.ok) throw new Error("Network error pulling file.");
 
@@ -99,6 +104,26 @@ document.addEventListener("DOMContentLoaded", async () => {
                     this.add(doc);
                 }, this);
             });
+
+            // Add event listeners for search input
+            searchInput.addEventListener("input", (e) => {
+                const query = e.target.value.trim();
+                activeIndex = -1; // Reset highlight pointer anytime typing shifts context
+
+                if (query.length < 2 || !lunrIndex) {
+                    clearResults();
+                    return;
+                }
+
+                const matches = lunrIndex.search(`${query}*`);
+
+                const minScore = 1;
+                const filteredMatches = matches
+                    .filter((item) => item.score >= minScore)
+                    .slice(0, 5);
+
+                renderResults(query, filteredMatches);
+            });
         } catch (error) {
             console.error("Failed initialization process:", error);
         }
@@ -107,28 +132,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Execute initialization payload immediately
     await initialization();
 
-    // 2. Input Monitoring Logic
-    searchInput.addEventListener("input", (e) => {
-        const query = e.target.value.trim();
-        activeIndex = -1; // Reset highlight pointer anytime typing shifts context
-
-        if (query.length < 2 || !lunrIndex) {
-            clearResults();
-            return;
-        }
-
-        const matches = lunrIndex.search(`${query}*`);
-
-        // Define your minimum relevance threshold
-        const minScore = 1;
-        const filteredMatches = matches
-            .filter((item) => item.score >= minScore)
-            .slice(0, 5);
-
-        renderResults(query, filteredMatches);
-    });
-
-    // 3. Clear UI Elements safely
     function clearResults() {
         resultsMenu.innerHTML = "";
         resultsMenu.classList.add("hidden");
@@ -136,7 +139,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         activeIndex = -1;
     }
 
-    // 4. Dom Dynamic Generation Template
     function renderResults(query, results) {
         resultsMenu.innerHTML = "";
 
@@ -159,10 +161,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                 content = doc.content;
             }
 
-            // We embed anchor paths explicitly inside custom markup definitions
             li.innerHTML = `
         <a href="${doc.url}" tabindex="-1" class="flex flex-col items-start gap-0.5 py-2 px-3 rounded-md transition-colors duration-150">
-        <span class="font-medium text-sm text-base-content title-element">${doc.icon_html} ${doc.title}</span>
+          <span class="font-medium text-sm text-base-content title-element">${doc.icon_html} ${doc.title}</span>
           <span class="text-xs text-base-content/80 font-mono url-element">${content}</span>
         </a>
       `;
@@ -173,9 +174,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         searchInput.setAttribute("aria-expanded", "true");
     }
 
-    // 5. Intercept Key Navigation Commands
+    // Intercept Key Navigation Commands
     searchInput.addEventListener("keydown", (e) => {
-        // Collect non-disabled item links rendered inside results
         const listItems = resultsMenu.querySelectorAll("li:not(.disabled)");
         if (listItems.length === 0) return;
 
@@ -197,7 +197,6 @@ document.addEventListener("DOMContentLoaded", async () => {
                 break;
 
             case "Enter":
-                // If an item is active via keyboard selection, go to its link
                 if (activeIndex >= 0 && activeIndex < listItems.length) {
                     e.preventDefault();
                     const targetAnchor =
@@ -216,17 +215,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     });
 
-    // 6. Manage Active Selection Visual Highlights
     function updateItemVisualFocus(items) {
         items.forEach((item, idx) => {
             const anchor = item.querySelector("a");
             if (idx === activeIndex) {
-                // Use daisyUI focus classes explicitly
                 anchor.classList.add("bg-base-200", "text-base-content");
                 item.setAttribute("aria-selected", "true");
                 searchInput.setAttribute("aria-activedescendant", item.id);
-
-                // Scroll the element into view safely if overflow list container gets scrolled past
                 item.scrollIntoView({ block: "nearest" });
             } else {
                 anchor.classList.remove("bg-base-200");
@@ -235,7 +230,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     }
 
-    // 7. Click Dismiss Handling
     document.addEventListener("click", (e) => {
         if (
             !searchInput.contains(e.target) &&
@@ -251,4 +245,25 @@ document.addEventListener("DOMContentLoaded", async () => {
             searchInput.setAttribute("aria-expanded", "true");
         }
     });
+}
+
+swup.hooks.on("content:replace", () => {
+    const searchInput = document.querySelector("#navbar-search");
+    const resultsContainer = document.querySelector("#search-results-menu");
+
+    if (searchInput) searchInput.value = "";
+    if (resultsContainer) resultsContainer.innerHTML = "";
+});
+
+// Attach the initialization function to both DOMContentLoaded and turbolinks:load
+document.addEventListener("DOMContentLoaded", initializeSearch);
+
+document.addEventListener("DOMContentLoaded", () => {
+    // console.log("DOMContentLoaded event fired");
+    initializeSearch();
+});
+
+swup.hooks.on("page:view", (visit) => {
+    // console.log("Swup page:view fired");
+    initializeSearch();
 });

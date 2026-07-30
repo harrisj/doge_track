@@ -31,6 +31,7 @@ layer(base);
 
     h1 {
         font-family: "Special Elite", serif;
+        margin-top: 20px;
     }
 
     date {
@@ -77,9 +78,9 @@ layer(base);
     }
 
     .data-grid-span {
-        @apply mt-3 mb-3 col-span-2
+        @apply mt-3 mb-3 col-span-2;
     }
-    
+
     .data-grid-title {
         @apply mt-2 col-span-2 text-lg sm:text-xl md:text-2xl;
     }
@@ -87,7 +88,7 @@ layer(base);
     .data-grid-row-layout {
         @apply grid grid-cols-[18px_auto] gap-x-1 p-0 min-h-0;
     }
-    
+
     .font-title {
         font-family: "Special Elite", serif;
     }
@@ -109,7 +110,7 @@ layer(base);
     }
 
     ul.inline-compact {
-        @apply flex flex-wrap list-none p-0 m-0;  
+        @apply flex flex-wrap list-none p-0 m-0;
     }
 
     li.inline-compact {
@@ -189,7 +190,7 @@ layer(base);
             --primary-series: #63b3ed;
         }
     }
-    
+
     .apexcharts-tooltip {
         background: var(--chart-background);
         padding: 1em;
@@ -237,5 +238,14 @@ layer(base);
     --font-sans: "Raleway", system-ui, sans-serif;
     --font-mono: "Roboto Mono", "ui-monospace";
 }
+
+/* Swup */
+/* html.is-changing .transition-fade { */
+/*     transition: opacity 0.25s; */
+/*     opacity: 1; */
+/* } */
+/* html.is-animating .transition-fade { */
+/*     opacity: 0; */
+/* } */
 
 /* Set up Tailwind imports */
