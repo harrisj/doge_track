@@ -15,12 +15,12 @@ layout: default
 
 <div class="drawer">
   <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-  <div class="drawer-content flex flex-col">
+  <div id="swup" class="drawer-content flex flex-col transition-fade">
     <!-- Navbar -->
     {%@ 'sections/navbar' %}
 
     <!-- Page content here -->
-    <div class="md:container md:max-w-5xl md:mx-auto px-0 sm:px-2">
+    <div id="main-container" class="md:container md:max-w-5xl md:mx-auto px-0 sm:px-2">
       {% if site.metadata.vacation%}
         <div role="alert" class="alert alert-success">
           <i class="fa-sharp fa-solid fa-island-tropical"></i>
@@ -28,7 +28,7 @@ layout: default
         </div>
       {% end %}
 
-      <main id="swup" class="min-h-screen mt-4 px-3">
+      <main class="min-h-screen mt-4 px-3">
         {{ content }}
       </main>
 

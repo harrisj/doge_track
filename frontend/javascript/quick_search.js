@@ -1,13 +1,8 @@
 import lunr from "lunr";
 
+import { swup } from "./swup.js";
+
 const JSON_URL = "/search-index.json";
-
-import Swup from "swup";
-import SwupA11yPlugin from "@swup/a11y-plugin";
-
-const swup = new Swup({
-    plugins: [new SwupA11yPlugin()],
-});
 
 function previewTemplate(query, text, length) {
     if (length == null) length = 300;
