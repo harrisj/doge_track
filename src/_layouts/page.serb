@@ -30,11 +30,12 @@ layout: default
 
       <main id="swup" class="min-h-screen mt-4 px-3 transition-fade">
         {{ content }}
+
+        {% if page_index %}
+            {%@ 'sections/bottom_nav', prev_pg: prev_pg, next_pg: next_pg %}
+        {% end %}
       </main>
 
-    {% if page_index %}
-      {%@ 'sections/bottom_nav', prev_pg: prev_pg, next_pg: next_pg %}
-    {% end %}
   </div>
 
       {%@ 'sections/footer', metadata: site.metadata %}
