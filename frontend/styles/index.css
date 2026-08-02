@@ -248,4 +248,11 @@ html.is-animating .transition-fade {
     opacity: 0;
 }
 
+.navbar i.fa-solid,
+.navbar i.fa-sharp {
+    display: inline-block;
+    width: 1.25rem; /* Matches font-size footprint */
+    height: 1.25rem;
+}
+
 /* Set up Tailwind imports */

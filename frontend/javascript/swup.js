@@ -1,7 +1,16 @@
 import Swup from "swup";
 import SwupA11yPlugin from "@swup/a11y-plugin";
+import SwupScriptsPlugin from "@swup/scripts-plugin";
 
 export const swup = new Swup({
-    plugins: [new SwupA11yPlugin()],
+    plugins: [
+        new SwupA11yPlugin(),
+        new SwupScriptsPlugin({
+            // Exclude Font Awesome or global scripts from re-running
+            exclude: (script) =>
+                script.src.includes("fontawesome") ||
+                script.src.includes("search"),
+        }),
+    ],
     linkToSelf: "navigate",
 });
