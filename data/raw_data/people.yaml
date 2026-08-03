@@ -6910,6 +6910,9 @@
     at the SEC and the USDFC so far, which is concerning considering he comes from a background in venture
     capital and investment banking. Prior to DOGE, he was an investor in the Silicon Valley VC firm Accel.
   skill: analyst
+  govt_exit_date: 2025-12-XX
+  govt_exit_type: resigned
+  govt_exit_truth: reported
   affiliations:
   - entity_id: doge-indie-wreckers
     role: member
@@ -6919,13 +6922,27 @@
     start_date_truth: inferred
     source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
     id: 7bOE34Ta
+  - entity_id: polymarket
+    role: employee
+    connection_truth: reported
+    timeframe: adter
+    immediate: true
+    start_date: 2025-12-XX
+    start_date_truth: reported
+    source: https://www.wired.com/story/doge-veterans-are-landing-big-jobs-at-prediction-markets/
+    id: 4RMN548U
   positions:
   - id: gsa-mendelson
     type: appointed
     category: wrecker
     start_date: 2025-04-09
     start_date_truth: reported
-    source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    end_date: 2025-12-XX
+    end_type: resigned
+    end_date_truth: reported
+    source:
+    - https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+    - https://www.wired.com/story/doge-veterans-are-landing-big-jobs-at-prediction-markets/
     agency: GSA
   - id: detail-gsa-dfc-mendelson
     type: detailed
@@ -7114,6 +7131,15 @@
   govt_exit_date: 2025-10-31
   govt_exit_truth: guessed
   govt_exit_type: resigned
+  affiliations:
+  - entity_id: novig
+    start_date: 2026-06-XX
+    start_date_truth: reported
+    connection_truth: reported
+    source: https://www.wired.com/story/doge-veterans-are-landing-big-jobs-at-prediction-markets/
+    timeframe: after
+    role: employee
+    id: 1wAgSYIG
   positions:
   - id: sec-mishory
     type: unknown
