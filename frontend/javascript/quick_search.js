@@ -59,6 +59,8 @@ function previewTemplate(query, text, length) {
     return output;
 }
 
+let searchIndexLoaded = false;
+
 // Separate initialization function
 async function initializeSearch() {
     let documents = [];
@@ -71,54 +73,59 @@ async function initializeSearch() {
 
     async function initialization() {
         try {
-            const response = await fetch(JSON_URL);
-            if (!response.ok) throw new Error("Network error pulling file.");
+            if (!searchIndexLoaded) {
+                const response = await fetch(JSON_URL);
+                if (!response.ok)
+                    throw new Error("Network error pulling file.");
 
-            documents = await response.json();
+                documents = await response.json();
 
-            // Build internal quick dictionary lookup mapping
-            documents.forEach((doc) => {
-                docLookup[doc.id] = doc;
-            });
-
-            // Build Lunr Search Engine Instance
-            lunrIndex = lunr(function () {
-                this.pipeline.remove(lunr.stemmer);
-                this.searchPipeline.remove(lunr.stemmer);
-
-                this.ref("id");
-                this.field("id");
-                this.field("title", { boost: 20 });
-                this.field("alt_title", { boost: 20 });
-                this.field("agency", { boost: 5 });
-                this.field("name", { boost: 5 });
-                this.field("url");
-                this.field("content");
-
+                // Build internal quick dictionary lookup mapping
                 documents.forEach((doc) => {
-                    this.add(doc);
-                }, this);
-            });
+                    docLookup[doc.id] = doc;
+                });
 
-            // Add event listeners for search input
-            searchInput.addEventListener("input", (e) => {
-                const query = e.target.value.trim();
-                activeIndex = -1; // Reset highlight pointer anytime typing shifts context
+                // Build Lunr Search Engine Instance
+                lunrIndex = lunr(function () {
+                    this.pipeline.remove(lunr.stemmer);
+                    this.searchPipeline.remove(lunr.stemmer);
 
-                if (query.length < 2 || !lunrIndex) {
-                    clearResults();
-                    return;
-                }
+                    this.ref("id");
+                    this.field("id");
+                    this.field("title", { boost: 20 });
+                    this.field("alt_title", { boost: 20 });
+                    this.field("agency", { boost: 5 });
+                    this.field("name", { boost: 5 });
+                    this.field("url");
+                    this.field("content");
 
-                const matches = lunrIndex.search(`${query}*`);
+                    documents.forEach((doc) => {
+                        this.add(doc);
+                    }, this);
+                });
 
-                const minScore = 1;
-                const filteredMatches = matches
-                    .filter((item) => item.score >= minScore)
-                    .slice(0, 5);
+                // Add event listeners for search input
+                searchInput.addEventListener("input", (e) => {
+                    const query = e.target.value.trim();
+                    activeIndex = -1; // Reset highlight pointer anytime typing shifts context
 
-                renderResults(query, filteredMatches);
-            });
+                    if (query.length < 2 || !lunrIndex) {
+                        clearResults();
+                        return;
+                    }
+
+                    const matches = lunrIndex.search(`${query}*`);
+
+                    const minScore = 1;
+                    const filteredMatches = matches
+                        .filter((item) => item.score >= minScore)
+                        .slice(0, 5);
+
+                    renderResults(query, filteredMatches);
+                });
+
+                searchIndexLoaded = true;
+            }
         } catch (error) {
             console.error("Failed initialization process:", error);
         }
@@ -260,5 +267,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 swup.hooks.on("page:view", (visit) => {
     // console.log("Swup page:view fired");
-    initializeSearch();
+    clearResults();
 });
