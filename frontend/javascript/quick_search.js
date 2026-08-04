@@ -267,5 +267,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 swup.hooks.on("page:view", (visit) => {
     // console.log("Swup page:view fired");
-    clearResults();
+    initializeSearch();
 });

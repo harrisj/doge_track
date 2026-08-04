@@ -14,3 +14,9 @@ export const swup = new Swup({
     ],
     linkToSelf: "navigate",
 });
+
+swup.hooks.on("content:replace", () => {
+    if (window.FontAwesome && typeof window.FontAwesome.redraw === "function") {
+        window.FontAwesome.redraw();
+    }
+});
