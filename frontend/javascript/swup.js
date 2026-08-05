@@ -20,3 +20,7 @@ swup.hooks.on("content:replace", () => {
         window.FontAwesome.redraw();
     }
 });
+
+swup.hooks.on("visit:start", () => {
+    document.getElementById("my-drawer-3").checked = false;
+});
