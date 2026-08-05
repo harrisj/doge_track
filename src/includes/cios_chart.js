@@ -88,5 +88,6 @@ var options = {
     }
 };
 
-var cio_chart = new ApexCharts(document.querySelector("#cio-chart"), options);
-cio_chart.render();
+// FIXME: Diabled for now
+// var cio_chart = new ApexCharts(document.querySelector("#cio-chart"), options);
+// cio_chart.render();

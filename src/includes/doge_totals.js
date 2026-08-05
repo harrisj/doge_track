@@ -116,6 +116,8 @@ var options = {
           }
       }
   }
-};
-var monthly_chart = new ApexCharts(document.querySelector("#chart"), options);
-monthly_chart.render();
+        };
+
+    // FIXME: Disabled for now
+// var monthly_chart = new ApexCharts(document.querySelector("#chart"), options);
+// monthly_chart.render();
