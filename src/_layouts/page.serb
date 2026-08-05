@@ -20,7 +20,7 @@ layout: default
     {%@ 'sections/navbar' %}
 
     <!-- Page content here -->
-    <div class="md:container md:max-w-5xl md:mx-auto px-0 sm:px-2">
+    <div class="md:container md:max-w-5xl md:mx-auto px-0 sm:px-2 pt-16">
       {% if site.metadata.vacation%}
         <div role="alert" class="alert alert-success">
           <i class="fa-sharp fa-solid fa-island-tropical"></i>
