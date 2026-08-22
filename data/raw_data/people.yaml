@@ -590,6 +590,9 @@
     at Palantir for ten years. He's also been placed into a highly-ranked role (Federal Chief CIO) for
     which he has very limited experience, but would allow him to coordinate and enable the work of other
     DOGE appointees to the CIO level.
+  govt_exit_date: 2026-08-31
+  govt_exit_type: resigned
+  govt_exit_truth: reported
   affiliations:
   - entity_id: palantir
     role: employee
@@ -611,11 +614,15 @@
     agency: OMB
     start_date: 2025-01-27
     start_date_truth: verified
+    end_date: 2026-08-31
+    end_date_truth: reported
+    end_type: resigned
     salary: "$195,200"
     source:
     - https://www.nextgov.com/people/2025/01/gregory-barbacia-named-federal-cio/402501/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://fedscoop.com/federal-cio-greg-barbaccia-leaving-government/
   - id: usaid-cio-barbaccia
     type: appointed
     category: enabler
@@ -633,6 +640,9 @@
     type: appointed
     start_date: 2026-02-19
     start_date_truth: reported
+    end_date: 2026-08-31
+    end_type: resigned
+    end_date_truth: inferred
     project: modernization
     title: Deputy FAS Commissioner / Acting Administrator, Technology Transformation Services
     title_type: cio
@@ -6878,6 +6888,9 @@
     the new CIO of the Department of the Interior, after the previous one was forced out of the position
     for not granting Stephanie Holmes admin access to the FPDS system that manages payroll for half of
     the federal government.
+  govt_exit_date: 2026-07-02
+  govt_exit_type: resigned
+  govt_exit_truth: reported
   affiliations:
   - entity_id: spacex
     connection_truth: reported
@@ -6897,7 +6910,12 @@
     title_type: cio
     start_date: 2025-05-05
     start_date_truth: reported
-    source: https://www.nextgov.com/people/2025/05/spacex-alum-tapped-interior-cio/405060/
+    end_date: 2026-07-02
+    end_type: resigned
+    end_date_truth: reported
+    source:
+    - https://www.nextgov.com/people/2025/05/spacex-alum-tapped-interior-cio/405060/
+    - https://www.nextgov.com/people/2026/07/interior-cio-paul-mcinerny-exits-position/414612/
     supervisory: true
 
 - name: Jonathan Mendelson
@@ -7057,9 +7075,15 @@
     title_type: cio
     start_date: 2025-02-14
     start_date_truth: reported
+    end_date: 2026-07-28
+    end_date_truth: reported
+    end_type: replaced
+    replaced_by: hhs-minor-advisor
     salary: "$195,200"
     table_note: Salary inferred
-    source: https://orangeslices.ai/hhs-it-office-recruits-new-chief-from-palantir/
+    source:
+    - https://orangeslices.ai/hhs-it-office-recruits-new-chief-from-palantir/
+    - https://fedscoop.com/clark-minor-out-as-health-human-services-it-chief/
   - id: detail-hhs-nih-minor
     type: internal
     category: wrecker
@@ -7090,7 +7114,19 @@
     title_type: other
     start_date: 2025-08-XX
     start_date_truth: self-reported
+    end_date: 2026-07-28
+    end_date_truth: inferred
+    end_type: removed
     source: https://www.linkedin.com/in/clarkminor/
+  - id: hhs-minor-advisor
+    agency: HHS
+    category: enabler
+    type: demotion
+    title: Senior Advisor
+    start_date: 2026-07-28
+    start_date_truth: reported
+    table_note: Reported to be staying on as an advisor
+    source: https://fedscoop.com/clark-minor-out-as-health-human-services-it-chief/
 
 - name: Michael Mirski
   sort_name: Mirski
