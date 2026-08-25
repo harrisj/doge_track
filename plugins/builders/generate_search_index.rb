@@ -146,10 +146,10 @@ module Builders
     end
 
     def doc_record(document)
-      return unless document.data&.title && document.data.index_for_search
+      return unless document.data&.title && document.data.index_for_search && document.data.description
 
-      html_doc = Nokogiri::HTML(document.content)
-      html_doc.css('div.not-prose').remove
+      # html_doc = Nokogiri::HTML(document.content)
+      # html_doc.css('div.not-prose').remove
 
       {
         id: document.data.slug,
@@ -157,7 +157,7 @@ module Builders
         title: document.data.title,
         icon: 'website',
         url: document.relative_url,
-        content: Sanitize.fragment(html_doc.to_html)
+        content: document.data.description
       }
     end
 
