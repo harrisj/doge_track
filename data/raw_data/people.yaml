@@ -6690,6 +6690,7 @@
     start_date_truth: reported
     end_date: 2026-03-XX
     end_date_truth: self-reported
+    end_type: resigned
     source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
     agency: GSA
   - id: detail-gs-va-malcher
@@ -6705,6 +6706,7 @@
     start_date_truth: reported
     end_date: 2026-03-XX
     end_date_truth: self-reported
+    end_type: resigned
     source:
     - https://projects.propublica.org/elon-musk-doge-tracker/
     - https://www.linkedin.com/in/dave-m-a5314791/
@@ -6943,7 +6945,7 @@
   - entity_id: polymarket
     role: employee
     connection_truth: reported
-    timeframe: adter
+    timeframe: after
     immediate: true
     start_date: 2025-12-XX
     start_date_truth: reported
@@ -7187,7 +7189,7 @@
     end_date_truth: reported
     end_type: detail_ended
     title: Senior Advisor
-    title_type: adisor
+    title_type: advisor
     office: Office of the Chairman
     project: deregulation
     comment: Reporting on 4/15 just says he arrived "earlier this month"
@@ -9256,6 +9258,7 @@
     start_date_truth: reported
     end_date: 2025-10-XX
     end_date_truth: self-reported
+    end_type: resigned
     office: Bureau of Fiscal Services
     agency: Treasury
     source:
@@ -9851,6 +9854,7 @@
     start_date_truth: self-reported
     end_date: 2026-04-XX
     end_date_truth: self-reported
+    end_type: resigned
     source: https://www.linkedin.com/in/jack-s-221181154/
 
 - name: Brian Stube
@@ -10186,10 +10190,11 @@
 - name: Sully Vickers
   sort_name: Vickers
   slug: sully-vickers
-  skill: code
+  skill: coder
   linkedin: https://www.linkedin.com/in/sully-vickers-432b7a246/
   positions:
   - id: nds-vickers
+    category: builder
     agency: NDS
     title: Cybersecurity
     type: appointed
@@ -10443,6 +10448,7 @@
     start_date_truth: self-reported
     end_date: 2026-03-XX
     end_date_truth: self-reported
+    end_type: resigned
     sort_date: 2025-07-15
     source:
     - https://www.washingtonpost.com/national-security/2025/07/15/hegseth-doge-justin-fulcher-yinon-weiss/
