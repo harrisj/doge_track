@@ -6869,6 +6869,9 @@
     agency: DHS
     start_date: 2025-03-11
     start_date_truth: reported
+    end_date: 2026-08-31
+    end_date_truth: reported
+    end_type: resigned
     project:
     - modernization
     - impunity
@@ -6877,6 +6880,7 @@
     - https://www.nextgov.com/people/2025/03/dhs-taps-antoine-mccord-top-tech-post/403727/
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://federalnewsnetwork.com/cio-news/2026/08/dhs-expected-to-tap-doge-staffer-as-next-cio/
 
 - name: Paul McInerny
   sort_name: McInerny
@@ -8736,10 +8740,8 @@
     he left the database accessible to the outside world](https://www.404media.co/anyone-can-push-updates-to-the-doge-gov-website-2/),
     and his computer has been [infected with credential-stealing malware multiple times](https://cyberpress.org/stolen-credentials-from-doge-employee/).
     For its part, DOGE gave him access to a highly-sensitive database containing information on unaccompanied
-    migrant children and admin credentials at CISA. His LinkedIn reports that he left DHS in June 2025.
-  govt_exit_date: 2025-06-XX
-  govt_exit_truth: self-reported
-  govt_exit_type: resigned
+    migrant children and admin credentials at CISA. His LinkedIn reports that he left DHS in June 2025,
+    but he has been appointed as the new Acting CIO in August 2026, to replace Antoine McCord.
   positions:
   - id: internal-dhs-cbp-schutt
     type: internal
@@ -8826,6 +8828,9 @@
     sort_date: 2025-02-19
     start_date: 2025-02-(19)~
     start_date_truth: reported
+    end_date: 2025-06-XX
+    end_date_truth: inferred
+    end_type: detail_ended
     comment: No details on this, but mentioned in NYT roundup. Assuming detail from GSA
     source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
   - id: internal-dhs-cisa-schutt
@@ -8836,6 +8841,9 @@
     agency: CISA
     start_date: 2025-02-19
     start_date_truth: reported
+    end_date: 2025-06-XX
+    end_date_truth: inferred
+    end_type: detail_ended
     title: Senior Advisor
     title_type: advisor
     source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
@@ -8847,8 +8855,21 @@
     from_truth: guessed
     start_date: 2025-03-14
     start_date_truth: verified
+    end_date: 2025-06-XX
+    end_type: detail_ended
+    end_date_truth: inferred
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
     comment: No documentation, dates reported in court filing
+  - id: dhs-cio-schutt
+    type: appointed
+    title: Acting CIO
+    title_type: cio
+    category: enabler
+    agency: DHS
+    start_date: 2026-08-31
+    start_date_truth: reported
+    supervisory: true
+    source: https://federalnewsnetwork.com/cio-news/2026/08/dhs-expected-to-tap-doge-staffer-as-next-cio/
 
 - name: Riley Sennott
   sort_name: Sennott
