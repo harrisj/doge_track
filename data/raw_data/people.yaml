@@ -640,14 +640,16 @@
     type: appointed
     start_date: 2026-02-19
     start_date_truth: reported
-    end_date: 2026-08-31
+    end_date: 2026-08-24
     end_type: resigned
     end_date_truth: inferred
     project: modernization
-    title: Deputy FAS Commissioner / Acting Administrator, Technology Transformation Services
+    title: Acting Administrator, Technology Transformation Services
     title_type: cio
     supervisory: true
-    source: https://www.govexec.com/management/2026/02/federal-cio-tapped-dual-hatted-role-gsa/411543/
+    source:
+    - https://www.govexec.com/management/2026/02/federal-cio-tapped-dual-hatted-role-gsa/411543/
+    - https://fedscoop.com/sam-corcos-gsa-management-treasury-doge/
 
 - name: Samuel Berry
   sort_name: Berry
@@ -2326,7 +2328,9 @@
     category: enabler
     start_date: 2026-08-24
     start_date_truth: reported
-    title: Acting Director of TTS, Acting Asst Commissioner of Login.gov
+    title: Acting Administrator, Technology Transformation Services
+    title_type: cio
+    table_note: Also the Deputy FAS Commissioner and Assistant Commissioner of Login.gov
     source: https://fedscoop.com/sam-corcos-gsa-management-treasury-doge/
 
 - name: Edward Coristine
