@@ -16,12 +16,12 @@ var options = {
       name: '{{ name }}',
       data: [
         {% positions.each do |pos| %}
-            {   
-                {% start_date = pos.start_date || pos.sort_date %}
-                {% end_date = pos.end_date || Date.today %}
-                'x': '{{ pos.agency_id }}',
-                'y': [new Date('{{ start_date }}').getTime(), {% if pos.end_date %}new Date('{{ end_date }}').getTime(){% else %}Date.now(){% end %}]
-            },
+        {   
+          {% start_date = pos.start_date || pos.sort_date %}
+          {% end_date = pos.end_date || Date.today %}
+          'x': '{{ pos.agency_id }}',
+          'y': [new Date('{{ start_date }}').getTime(), {% if pos.end_date %}new Date('{{ end_date }}').getTime(){% else %}Date.now(){% end %}]
+        },
         {% end %}
       ]
     },
@@ -52,17 +52,17 @@ var options = {
     max: Date.now(),
     min: new Date('2025-01-20').getTime(),
     labels: {
-        format: 'MMM',
-        hideOverlappingLabels: true,
-        showDuplicates: false
+      format: 'MMM',
+      hideOverlappingLabels: true,
+      showDuplicates: false
     }
   },
   title: {
     text: 'DOGE CIOs Across Government',
     style: {
-      fontSize:  '14px',
-      fontWeight:  'bold',
-      fontFamily:  "Raleway"
+      fontSize: '14px',
+      fontWeight: 'bold',
+      fontFamily: "Raleway"
     }
   },
   legend: {
@@ -70,24 +70,53 @@ var options = {
   },
   colors: ['#008FFB', '#00E396', '#FEB019', '#FF4560', '#3F51B5', '#4CAF50', '#546E7A', '#D4526E', '#A5978B', '#81D4FA', '#662E9B', '#90EE7E'],
   tooltip: {
-            theme: 'var(--chart-tooltip-theme)',
-            custom: function(opts) {
-              const fromDate = new Date(opts.y1).toISOString().split('T')[0];
-              const toDate = sameDay(new Date(opts.y2), new Date(Date.now())) ? 'today' : new Date(opts.y2).toISOString().split('T')[0];
+    theme: 'var(--chart-tooltip-theme)',
+    custom: function(opts) {
+      const fromDate = new Date(opts.y1).toISOString().split('T')[0];
+      const toDate = sameDay(new Date(opts.y2), new Date(Date.now())) ? 'today' : new Date(opts.y2).toISOString().split('T')[0];
 
-              const w = opts.ctx.w
-              let ylabel =
-                w.config.series[opts.seriesIndex].data?.[opts.dataPointIndex]?.x
-              let seriesName = w.config.series[opts.seriesIndex].name
-                ? w.config.series[opts.seriesIndex].name
-                : ''
-              const color = w.globals.colors[opts.seriesIndex]
+      const w = opts.ctx.w;
+      let ylabel = w.config.series[opts.seriesIndex].data?.[opts.dataPointIndex]?.x;
+      let seriesName = w.config.series[opts.seriesIndex].name ? w.config.series[opts.seriesIndex].name : '';
 
-              return '<strong>' + seriesName + ' (' + ylabel + ')</strong>\n' + fromDate + ' to ' + toDate;
-            }
+      return '<strong>' + seriesName + ' (' + ylabel + ')</strong><br>' + fromDate + ' to ' + toDate;
     }
+  }
 };
 
-// FIXME: Diabled for now
-// var cio_chart = new ApexCharts(document.querySelector("#cio-chart"), options);
-// cio_chart.render();
+(function() {
+  const initChart = () => {
+    const container = document.querySelector("#cio-chart");
+    if (!container) return;
+
+    // Cleanup any existing instance on this element
+    if (container._apexChartInstance && typeof container._apexChartInstance.destroy === 'function') {
+      container._apexChartInstance.destroy();
+    }
+
+    try {
+      container._apexChartInstance = new ApexCharts(container, options);
+      container._apexChartInstance.render();
+      
+      // Trigger resize to ensure dimensions are correct after DOM/layout settled
+      window.dispatchEvent(new Event('resize'));
+    } catch (e) {
+      console.error("ApexCharts initialization failed:", e);
+    }
+  };
+
+  const pollForElement = () => {
+    let attempts = 0;
+    const interval = setInterval(() => {
+      attempts++;
+      if (document.querySelector("#cio-chart") || attempts > 20) {
+        clearInterval(interval);
+        if (document.querySelector("#cio-chart")) {
+          initChart();
+        }
+      }
+    }, 50);
+  };
+
+  pollForElement();
+})();
