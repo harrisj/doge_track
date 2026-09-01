@@ -68,7 +68,7 @@ var options = {
   legend: {
     show: false,
   },
-  colors: ['#008FFB', '#00E396', '#FEB019', '#FF4560', '#3F51B5', '#4CAF50', '#546E7A', '#D4526E', '#A5978B', '#81D4FA', '#662E9B', '#90EE7E'],
+  colors: ['#b33f3f', '#b36b3f', '#b3953f', '#7ca34d', '#54a64d', '#4da661', '#4aa6a6', '#4aa68d', '#4a8ba6', '#4a6ba6', '#5c4db3', '#8b4db3', '#a64db3', '#b34db3', '#b34db8', '#b34d7d', '#8a5e4e', '#a67c52', '#52a67c', '#527ca6', '#a6527c', '#8b3d7d', '#7d4e8a', '#5c6b7d'],
   tooltip: {
     theme: 'var(--chart-tooltip-theme)',
     custom: function(opts) {
