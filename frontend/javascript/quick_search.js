@@ -4,6 +4,10 @@ import { swup } from "./swup.js";
 
 const JSON_URL = "/search-index.json";
 
+function getIconHtml(cssClass) {
+    return `<i class="fa-sharp fa-solid ${cssClass} fa-fw" aria-hidden="true"></i>`;
+}
+
 function previewTemplate(query, text, length) {
     if (length == null) length = 300;
     const padding = length / 2;
@@ -165,7 +169,7 @@ async function initializeSearch() {
 
             li.innerHTML = `
         <a href="${doc.url}" tabindex="-1" class="flex flex-col items-start gap-0.5 py-2 px-3 rounded-md transition-colors duration-150">
-          <span class="font-medium text-sm text-base-content title-element">${doc.icon_html} ${doc.title}</span>
+          <span class="font-medium text-sm text-base-content title-element">${getIconHtml(doc.ic)} ${doc.title}</span>
           <span class="text-xs text-base-content/80 font-mono url-element">${content}</span>
         </a>
       `;
@@ -173,7 +177,7 @@ async function initializeSearch() {
         });
 
         resultsMenu.classList.remove("hidden");
-        searchInput.setAttribute("aria-expanded", "true");
+        resultsMenu.setAttribute("aria-expanded", "true");
     }
 
     // Intercept Key Navigation Commands

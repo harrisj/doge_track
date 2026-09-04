@@ -176,10 +176,13 @@ module Builders
       hook :site, :post_write do |_|
         out = generate_out
         out.each do |rec|
-          rec[:icon_html] = Bridgetown::TemplateView.render(Atoms::Icon.new(rec[:icon]))
+          if rec[:icon]
+            rec[:ic] = Atoms::Icon.new(rec[:icon]).icon_css
+            rec.delete(:icon)
+          end
         end
         file = site.in_destination_dir('search-index.json')
-        File.write(file, JSON.pretty_generate(out))
+        File.write(file, JSON.generate(out))
       end
     end
   end
