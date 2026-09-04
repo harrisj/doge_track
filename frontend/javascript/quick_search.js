@@ -4,6 +4,13 @@ import { swup } from "./swup.js";
 
 const JSON_URL = "/search-index.json";
 
+// Module scope state - persists across Swup navigations
+let documents = [];
+let docLookup = {};
+let lunrIndex = null;
+let activeIndex = -1;
+let searchIndexLoaded = false;
+
 function getIconHtml(cssClass) {
     return `<i class="fa-sharp fa-solid ${cssClass} fa-fw" aria-hidden="true"></i>`;
 }
@@ -14,7 +21,6 @@ function previewTemplate(query, text, length) {
     let output;
 
     if (length) {
-        // Get sorted locations of all the words in the search query
         const textToSearch = text.toLowerCase();
         const wordLocations = query
             .toLowerCase()
@@ -27,8 +33,6 @@ function previewTemplate(query, text, length) {
                 return a - b;
             });
 
-        // Grab the first location and back up a bit
-        // Then go past second location or just use the length
         if (wordLocations[1]) {
             length = Math.min(wordLocations[1] - wordLocations[0], length);
         }
@@ -63,89 +67,62 @@ function previewTemplate(query, text, length) {
     return output;
 }
 
-let searchIndexLoaded = false;
+/**
+ * Loads the search index and builds the Lunr index once.
+ */
+async function loadSearchData() {
+    if (searchIndexLoaded) return;
 
-// Separate initialization function
-async function initializeSearch() {
-    let documents = [];
-    let docLookup = {};
-    let lunrIndex = null;
-    let activeIndex = -1; // -1 means focus is strictly on the text input
+    try {
+        const response = await fetch(JSON_URL);
+        if (!response.ok) throw new Error("Network error pulling file.");
 
-    const searchInput = document.getElementById("navbar-search");
-    const resultsMenu = document.getElementById("search-results-menu");
+        documents = await response.json();
 
-    async function initialization() {
-        try {
-            if (!searchIndexLoaded) {
-                const response = await fetch(JSON_URL);
-                if (!response.ok)
-                    throw new Error("Network error pulling file.");
+        documents.forEach((doc) => {
+            docLookup[doc.id] = doc;
+        });
 
-                documents = await response.json();
+        lunrIndex = lunr(function () {
+            this.pipeline.remove(lunr.stemmer);
+            this.searchPipeline.remove(lunr.stemmer);
 
-                // Build internal quick dictionary lookup mapping
-                documents.forEach((doc) => {
-                    docLookup[doc.id] = doc;
-                });
+            this.ref("id");
+            this.field("id");
+            this.field("title", { boost: 20 });
+            this.field("alt_title", { boost: 20 });
+            this.field("agency", { boost: 5 });
+            this.field("name", { boost: 5 });
+            this.field("url");
+            this.field("content");
 
-                // Build Lunr Search Engine Instance
-                lunrIndex = lunr(function () {
-                    this.pipeline.remove(lunr.stemmer);
-                    this.searchPipeline.remove(lunr.stemmer);
+            documents.forEach((doc) => {
+                this.add(doc);
+            });
+        });
 
-                    this.ref("id");
-                    this.field("id");
-                    this.field("title", { boost: 20 });
-                    this.field("alt_title", { boost: 20 });
-                    this.field("agency", { boost: 5 });
-                    this.field("name", { boost: 5 });
-                    this.field("url");
-                    this.field("content");
-
-                    documents.forEach((doc) => {
-                        this.add(doc);
-                    }, this);
-                });
-
-                // Add event listeners for search input
-                searchInput.addEventListener("input", (e) => {
-                    const query = e.target.value.trim();
-                    activeIndex = -1; // Reset highlight pointer anytime typing shifts context
-
-                    if (query.length < 2 || !lunrIndex) {
-                        clearResults();
-                        return;
-                    }
-
-                    const matches = lunrIndex.search(`${query}*`);
-
-                    const minScore = 1;
-                    const filteredMatches = matches
-                        .filter((item) => item.score >= minScore)
-                        .slice(0, 5);
-
-                    renderResults(query, filteredMatches);
-                });
-
-                searchIndexLoaded = true;
-            }
-        } catch (error) {
-            console.error("Failed initialization process:", error);
-        }
+        searchIndexLoaded = true;
+    } catch (error) {
+        console.error("Failed to load search index:", error);
+        throw error;
     }
+}
 
-    // Execute initialization payload immediately
-    await initialization();
+/**
+ * Attaches event listeners to the search elements.
+ */
+function attachEventListeners(searchInput, resultsMenu) {
+    // Prevent duplicate listeners if element is persisted via Swup
+    if (searchInput._searchListenersAttached) return;
 
-    function clearResults() {
+    const clearResults = () => {
         resultsMenu.innerHTML = "";
         resultsMenu.classList.add("hidden");
         searchInput.setAttribute("aria-expanded", "false");
         activeIndex = -1;
-    }
+    };
 
-    function renderResults(query, results) {
+    const renderResults = (query, results) => {
         resultsMenu.innerHTML = "";
 
         if (results.length === 0) {
@@ -157,73 +134,37 @@ async function initializeSearch() {
 
         results.forEach((result, idx) => {
             const doc = docLookup[result.ref];
+            if (!doc) return;
+
             const li = document.createElement("li");
             li.setAttribute("role", "option");
             li.setAttribute("id", `search-item-${idx}`);
 
-            if (doc.type == "Page" || doc.type == "Event") {
+            let content = "";
+            if (doc.type === "Page" || doc.type === "Event") {
                 content = previewTemplate(query, doc.content, 120);
             } else {
                 content = doc.content;
             }
 
             li.innerHTML = `
-        <a href="${doc.url}" tabindex="-1" class="flex flex-col items-start gap-0.5 py-2 px-3 rounded-md transition-colors duration-150">
-          <span class="font-medium text-sm text-base-content title-element">${getIconHtml(doc.ic)} ${doc.title}</span>
-          <span class="text-xs text-base-content/80 font-mono url-element">${content}</span>
-        </a>
-      `;
+                <a href="${doc.url}" tabindex="-1" class="flex flex-col items-start gap-0.5 py-2 px-3 rounded-md transition-colors duration-150">
+                  <span class="font-medium text-sm text-base-content title-element"><i class="fa-sharp fa-solid ${doc.ic || ''} fa-fw" aria-hidden="true"></i> ${doc.title}</span>
+                  <span class="text-xs text-base-content/80 font-mono url-element">${content}</span>
+                </a>
+            `;
             resultsMenu.appendChild(li);
         });
 
         resultsMenu.classList.remove("hidden");
         resultsMenu.setAttribute("aria-expanded", "true");
-    }
+    };
 
-    // Intercept Key Navigation Commands
-    searchInput.addEventListener("keydown", (e) => {
-        const listItems = resultsMenu.querySelectorAll("li:not(.disabled)");
-        if (listItems.length === 0) return;
-
-        switch (e.key) {
-            case "ArrowDown":
-                e.preventDefault();
-                activeIndex =
-                    activeIndex + 1 >= listItems.length ? 0 : activeIndex + 1;
-                updateItemVisualFocus(listItems);
-                break;
-
-            case "ArrowUp":
-                e.preventDefault();
-                activeIndex =
-                    activeIndex - 1 < 0
-                        ? listItems.length - 1
-                        : activeIndex - 1;
-                updateItemVisualFocus(listItems);
-                break;
-
-            case "Enter":
-                if (activeIndex >= 0 && activeIndex < listItems.length) {
-                    e.preventDefault();
-                    const targetAnchor =
-                        listItems[activeIndex].querySelector("a");
-                    if (targetAnchor)
-                        window.location.href =
-                            targetAnchor.getAttribute("href");
-                }
-                break;
-
-            case "Escape":
-                e.preventDefault();
-                clearResults();
-                searchInput.blur();
-                break;
-        }
-    });
-
-    function updateItemVisualFocus(items) {
+    const updateItemVisualFocus = (items) => {
         items.forEach((item, idx) => {
             const anchor = item.querySelector("a");
+            if (!anchor) return;
+
             if (idx === activeIndex) {
                 anchor.classList.add("bg-base-200", "text-base-content");
                 item.setAttribute("aria-selected", "true");
@@ -234,14 +175,53 @@ async function initializeSearch() {
                 item.removeAttribute("aria-selected");
             }
         });
-    }
+    };
 
-    document.addEventListener("click", (e) => {
-        if (
-            !searchInput.contains(e.target) &&
-            !resultsMenu.contains(e.target)
-        ) {
+    searchInput.addEventListener("input", (e) => {
+        const query = e.target.value.trim();
+        activeIndex = -1;
+
+        if (query.length < 2 || !lunrIndex) {
             clearResults();
+            return;
+        }
+
+        const matches = lunrIndex.search(`${query}*`);
+        const minScore = 1;
+        const filteredMatches = matches
+            .filter((item) => item.score >= minScore)
+            .slice(0, 5);
+
+        renderResults(query, filteredMatches);
+    });
+
+    searchInput.addEventListener("keydown", (e) => {
+        const listItems = resultsMenu.querySelectorAll("li:not(.disabled)");
+        if (listItems.length === 0) return;
+
+        switch (e.key) {
+            case "ArrowDown":
+                e.preventDefault();
+                activeIndex = activeIndex + 1 >= listItems.length ? 0 : activeIndex + 1;
+                updateItemVisualFocus(listItems);
+                break;
+            case "ArrowUp":
+                e.preventDefault();
+                activeIndex = activeIndex - 1 < 0 ? listItems.length - 1 : activeIndex - 1;
+                updateItemVisualFocus(listItems);
+                break;
+            case "Enter":
+                if (activeIndex >= 0 && activeIndex < listItems.length) {
+                    e.preventDefault();
+                    const targetAnchor = listItems[activeIndex].querySelector("a");
+                    if (targetAnchor) window.location.href = targetAnchor.getAttribute("href");
+                }
+                break;
+            case "Escape":
+                e.preventDefault();
+                clearResults();
+                searchInput.blur();
+                break;
         }
     });
 
@@ -251,25 +231,47 @@ async function initializeSearch() {
             searchInput.setAttribute("aria-expanded", "true");
         }
     });
+
+    document.addEventListener("click", (e) => {
+        if (!searchInput.contains(e.target) && !resultsMenu.contains(e.target)) {
+            clearResults();
+        }
+    });
+
+    // Mark as attached to prevent duplicate listeners on persisted elements
+    searchInput._searchListenersAttached = true;
 }
 
+/**
+ * Main initialization function that can be called multiple times (on load and after Swup navigation).
+ */
+async function initSearch() {
+    try {
+        await loadSearchData();
+
+        const searchInput = document.getElementById("navbar-search");
+        const resultsMenu = document.getElementById("search-results-menu");
+
+        if (searchInput && resultsMenu) {
+            attachEventListeners(searchInput, resultsMenu);
+        }
+    } catch (err) {
+        console.error("Search initialization failed:", err);
+    }
+}
+
+// Initial load
+document.addEventListener("DOMContentLoaded", initSearch);
+
+// Swup: Reset UI on content replacement and re-init listeners for new DOM if necessary
 swup.hooks.on("content:replace", () => {
     const searchInput = document.querySelector("#navbar-search");
     const resultsContainer = document.querySelector("#search-results-menu");
 
     if (searchInput) searchInput.value = "";
     if (resultsContainer) resultsContainer.innerHTML = "";
-});
 
-// Attach the initialization function to both DOMContentLoaded and turbolinks:load
-document.addEventListener("DOMContentLoaded", initializeSearch);
-
-document.addEventListener("DOMContentLoaded", () => {
-    // console.log("DOMContentLoaded event fired");
-    initializeSearch();
-});
-
-swup.hooks.on("page:view", (visit) => {
-    // console.log("Swup page:view fired");
-    initializeSearch();
+    // Re-init to catch new elements if the navbar was swapped, 
+    // or re-attach listeners if they were part of a non-persisted container.
+    initSearch();
 });
