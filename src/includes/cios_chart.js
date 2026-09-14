@@ -52,7 +52,7 @@ var options = {
     max: Date.now(),
     min: new Date('2025-01-20').getTime(),
     labels: {
-      format: 'MMM',
+      format: 'MM/yy',
       hideOverlappingLabels: true,
       showDuplicates: false
     }
