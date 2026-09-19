@@ -4812,6 +4812,7 @@
     is unknown. At DOI, Hassen has been promoted into increasingly senior roles and responsibilities while
     being shunted into positions that do not require Senate confirmation or for him to address his vast
     conflicts of interest.
+  college_graduation_year: 2005
   govt_exit_date: 2025-11-XX
   govt_exit_truth: self-reported
   govt_exit_type: resigned
@@ -4829,7 +4830,6 @@
     end_date_truth: verified
     end_type: replaced
     replaced_by: doi-hassen-acting
-    table_note: FOIA response includes email to him on first day
     salary: "$142,488"
     agency: DOI
     source:
@@ -4838,6 +4838,7 @@
     - https://cdn.muckrock.com/foia_files/2025/04/15/25-4034_Rel_575pgs_Redacted.pdf
     - >-
       https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+    - https://www.wsj.com/opinion/doge-works-lets-keep-it-going-d5356363
   - id: doi-hassen-acting
     type: promotion
     category: enabler
@@ -7826,6 +7827,33 @@
     start_date: 2025-05-14
     start_date_truth: reported
     source: https://bsky.app/profile/marisakabas.bsky.social/post/3lp5iwrmfv22y
+
+- name: Ryan Parker
+  sort_name: Parker
+  slug: ryan-parker
+  skill: coder
+  linkedin: https://www.linkedin.com/in/ryanisparker/
+  college_graduation_year: 2019
+  positions:
+  - id: treasury-parker
+    type: appointed
+    agency: Treasury
+    title: AI Engineer
+    project: modernization
+    start_date: 2026-05-XX
+    start_date_truth: self-reported
+    source: https://www.linkedin.com/in/ryanisparker/
+    category: builder
+  - id: detail-treasury-gsa-parker
+    type: detailed
+    agency: GSA
+    from: Treasury
+    title: AI Engineer
+    project: modernization
+    start_date: 2026-09-XX
+    start_date_truth: inferred
+    table_note: Inferring start based on taking over USWDS
+    source: https://github.com/uswds/uswds/issues/6189
 
 - name: Matthew Parkhurst
   sort_name: Parkhurst
