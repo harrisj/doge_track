@@ -259,11 +259,10 @@ async function initSearch() {
         console.error("Search initialization failed:", err);
     }
 }
-
-// Initial load
-document.addEventListener("DOMContentLoaded", initSearch);
-
-// Swup: Reset UI on content replacement and re-init listeners for new DOM if necessary
+// Swup: Initial load initialization - runs after DOM is loaded AND Font Awesome script has loaded
+window.addEventListener("load", () => {
+    initSearch();
+});
 swup.hooks.on("content:replace", () => {
     const searchInput = document.querySelector("#navbar-search");
     const resultsContainer = document.querySelector("#search-results-menu");
