@@ -182,7 +182,7 @@
     type: disruption
     event: >-
       After rescinding 300 past layoffs, the head of human resources at CDC emails Rachel Riley to share
-      that the plan going forward will be to fire one person for every singer person who returns to the
+      that the plan going forward will be to fire one person for every single person who returns to the
       agency.
     source: https://www.govexec.com/workforce/2025/05/CDC-cut-one-employee-each-it-recalling-layoffs/405336/
     project: personnel
@@ -269,37 +269,6 @@
   parent_id: HHS
   doge_base: true
   events:
-  - date: 2025-01-31
-    type: access
-    event: >-
-      Luke Farritor is granted read access to the Healthcare Integrated General Ledger Accounting System
-      (HIGLAS) which centralizes payments for CMS medical claims
-    project: spending
-    named:
-    - Luke Farritor
-    system: HIGLAS
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    case_no: 1:25-cv-00339
-    agency: CMS
-    id: 6aacfCAk
-  - date: 2025-02-03
-    type: access
-    event: >-
-      Multiple DOGE staff (Luke Farritor, Rachel Riley, Conor Fennessy and Jeremy Lewin) at CMS are granted
-      read-only access to the CMS Acquisition Lifestye Management System (CALM) which tracks CMS aquisitions
-      and contracts.
-    notable: true
-    project: spending
-    system: CALM
-    named:
-    - Luke Farritor
-    - Rachel Riley
-    - Conor Fennessy
-    - Jeremy Lewin
-    case_no: 1:25-cv-00339
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    agency: CMS
-    id: 2VmzIcAJ
   - date: 2025-02-05
     type: report
     event: >-
@@ -329,109 +298,6 @@
       https://abcnews.go.com/Politics/key-musk-doge-adviser-meets-leaders-medicare-agency/story?id=118843035
     agency: CMS
     id: 5cr9YjJj
-  - date: 2025-02-24
-    type: access
-    event: >-
-      Amy Gleason is granted read access to the CMS Acquisition Lifestye Management System (CALM), which
-      tracks CMS aquisitions and contracts.
-    project: spending
-    named:
-    - Amy Gleason
-    system: CALM
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    case_no: 1:25-cv-00339
-    agency: CMS
-    id: 4wVLWDce
-  - date: 2025-03-03
-    type: access
-    event: >-
-      Jeremy Lewin is granted read access to the CMS Acquisition Lifestye Management System (CALM) which
-      tracks CMS aquisitions and contracts.
-    project: spending
-    named:
-    - Jeremy Lewin
-    system: CALM
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    case_no: 1:25-cv-00339
-    agency: CMS
-    id: 4PyOz3TV
-  - date: 2025-03-05
-    type: access
-    event: >-
-      Multiple DOGE staff (Edward Coristine, Marko Elez and Aram Moghaddassi) are granted access to the
-      Healthcare Integrated General Ledger Accounting System (HIGLAS). This system tracks all payments
-      made by Medicare, among other expenditures.
-    project: spending
-    named:
-    - Edward Coristine
-    - Marko Elez
-    - Aram Moghaddassi
-    system: HIGLAS
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    case_no: 1:25-cv-00339
-    agency: CMS
-    id: 3MdiqW9w
-  - date: 2025-03-05
-    type: access
-    event: >-
-      Luke Farritor is granted read access to the Integrated Data Repository (IDR), a data warehouse of
-      all Medicare claims.
-    named:
-    - Luke Farritor
-    system: IDR
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    case_no: 1:25-cv-00339
-    agency: CMS
-    id: 4C16pcax
-  - date: 2025-03-05
-    type: access
-    event: >-
-      A second wave of DOGE members detailed to HHS (Edward Coristine, Marko Elez and Aram Moghaddassi)
-      are granted read access to the CMS Acquisition Lifestye Management System (CALM), which tracks CMS
-      aquisitions and contracts
-    notable: true
-    project: spending
-    named:
-    - Edward Coristine
-    - Marko Elez
-    - Aram Moghaddassi
-    system: CALM
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    case_no: 1:25-cv-00339
-    agency: CMS
-    id: 6R6QCxBv
-  - date: 2025-03-05
-    type: access
-    event: >-
-      Edward Coristine, Zach Terrell, Aram Moghaddassi and Marko Elez are also granted read access to
-      the Integrated Data Repository (IDR), a data warehouse of all Medicare claims.
-    named:
-    - Aram Moghaddassi
-    - Marko Elez
-    system: IDR
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    case_no: 1:25-cv-00339
-    agency: CMS
-    id: 3vG5MUdU
-  - date: 2025-03-29
-    type: legal
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-    case_no: 1:25-cv-00339
-    event: >-
-      In a legal filing, the DOJ identifies 4 DOGE staffers - Edward Coristine, Marko Elez, Luke Farritor
-      and Amy Gleason - as present at CMS. It omits the names of several other staffers with access to
-      the CALM system.
-    named:
-    - Edward Coristine
-    - Marko Elez
-    - Luke Farritor
-    - Amy Gleason
-    linked:
-    - Aram Moghaddassi
-    - Zach Terrell
-    - Jeremy Lewin
-    agency: CMS
-    id: iDxrzxfp
   - date: 2025-04-07
     type: disruption
     event: >-
