@@ -71,15 +71,16 @@ var options = {
   colors: ['#b33f3f', '#b36b3f', '#b3953f', '#7ca34d', '#54a64d', '#4da661', '#4aa6a6', '#4aa68d', '#4a8ba6', '#4a6ba6', '#5c4db3', '#8b4db3', '#a64db3', '#b34db3', '#b34db8', '#b34d7d', '#8a5e4e', '#a67c52', '#52a67c', '#527ca6', '#a6527c', '#8b3d7d', '#7d4e8a', '#5c6b7d'],
   tooltip: {
     theme: 'var(--chart-tooltip-theme)',
-    custom: function(opts) {
-      const fromDate = new Date(opts.y1).toISOString().split('T')[0];
-      const toDate = sameDay(new Date(opts.y2), new Date(Date.now())) ? 'today' : new Date(opts.y2).toISOString().split('T')[0];
+      custom: function({series, seriesIndex, dataPointIndex, w}) {
+        const y0 = series[0][dataPointIndex]
+        const y1 = series[1][dataPointIndex]
+        const fromDate = new Date(y0).toISOString().split('T')[0];
+        const toDate = sameDay(new Date(y1), new Date(Date.now())) ? 'today' : new Date(y1).toISOString().split('T')[0];
 
-      const w = opts.ctx.w;
-      let ylabel = w.config.series[opts.seriesIndex].data?.[opts.dataPointIndex]?.x;
-      let seriesName = w.config.series[opts.seriesIndex].name ? w.config.series[opts.seriesIndex].name : '';
+        let ylabel = w.config.series[seriesIndex].data?.[dataPointIndex]?.x;
+        let seriesName = w.config.series[seriesIndex].name ? w.config.series[seriesIndex].name : '';
 
-      return '<strong>' + seriesName + ' (' + ylabel + ')</strong><br>' + fromDate + ' to ' + toDate;
+        return '<strong>' + seriesName + ' (' + ylabel + ')</strong><br>' + fromDate + ' to ' + toDate;
     }
   }
 };
