@@ -1956,20 +1956,6 @@
     source: https://www.nytimes.com/2025/03/31/us/politics/doge-musk-federal-payroll.html
     agency: DOI
     id: AGxssd5s
-  - date: 2025-03-28
-    type: interagency
-    interagency_doge_reps:
-      DOI:
-      - Katrine Trampe
-      IRS:
-      - Gavin Kliger
-    event: >-
-      After the CIO and CISO are sidelined, Gavin Kliger joins a call with Katrine Trampe to pressure
-      a senior advisor in human resources at DOI to direct them to the system owner for FPPS.
-    project: personnel
-    source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
-    agency: DOI
-    id: e4rwFTP2
   - date: 2025-03-29
     type: access
     event: >-
@@ -6424,6 +6410,23 @@
     the mechanisms that the government uses for payments.
   doge_base: true
   events:
+  - date: 2025-02-13
+    type: sighting
+    event: >-
+      Gavin Kliger arrives at the IRS without any prior notice. Neither IRS security or staff at Treasury
+      were aware of his plans, and OPM was unaware of any arrangements to detail him there. He is escorted
+      to IRS Human Capital, where he brusquely announces he is there to root out fraud and waste at the
+      IRS.
+    project:
+    - fraud
+    - spending
+    - impunity
+    source: >-
+      https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
+    named:
+    - Gavin Kliger
+    agency: IRS
+    id: 2oFpQacA
   - date: 2025-02-16
     type: access
     event: >-
@@ -6440,8 +6443,14 @@
     type: official
     event: >-
       A White House official confirms that one DOGE staffer will be working with an IRS employee assigned
-      to him to access IRS systems.
-    source: https://www.politico.com/news/2025/02/17/elon-musk-doge-irs-00204579
+      to him to access IRS systems. A formal detailing agreement is finally drafted for Gavin Kliger to
+      work at the agency.
+    named:
+    - Gavin Kliger
+    source:
+    - https://www.politico.com/news/2025/02/17/elon-musk-doge-irs-00204579
+    - >-
+      https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
     agency: IRS
     id: LeZFKdaU
   - date: 2025-02-18
@@ -6506,6 +6515,18 @@
     agency: IRS
     id: QfW2MVvJ
   - date: 2025-02-28
+    type: disruption
+    event: >-
+      Doug O'Donnell, the Acting Commissioner of the IRS, is forced to resign after refusing to send an
+      email to the agency's 6700 probationary employees that they were being fired for poor performance.
+      He is replaced by Melanie Krause, the agency's Chief Operating Officer who was more amenable to
+      DOGE's demands.
+    project: personnel
+    source: >-
+      https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
+    agency: IRS
+    id: 53cqEfCk
+  - date: 2025-02-28
     type: official
     named:
     - Gavin Kliger
@@ -6513,9 +6534,14 @@
     event: >-
       Gavin Kliger and Sam Corcos, DOGE representatives embedded at the IRS, on Friday asked IRS lawyers
       to assist in creating an "omnibus" agreement with other federal agencies that would allow a broad
-      swath of federal officials to cross-reference benefits rolls with taxpayer data.
+      swath of federal officials to cross-reference benefits rolls with taxpayer data. This request is
+      supported by the newly installed acting commissioner of the agency, Melanie Krause, but it alarms
+      other agency staff who view the project as highly illegal.
     notable: true
-    source: https://www.washingtonpost.com/business/2025/03/01/doge-irs-tax-records-benefits/
+    source:
+    - https://www.washingtonpost.com/business/2025/03/01/doge-irs-tax-records-benefits/
+    - >-
+      https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
     project:
     - fraud
     - immigration
@@ -6544,6 +6570,18 @@
     project: impunity
     agency: IRS
     id: BY87i4Uw
+  - date: 2025-03-10
+    type: disruption
+    event: >-
+      The head of Human Capital at the IRS is warned that Gavin Kliger is looking for her office to fire
+      her. He was reportedly angry that she had blocked his demands to see contractor data that included
+      sensitive taxpayer information and had also slowed an attempt to fast-track a procurement to Palantir.
+    named:
+    - Gavin Kliger
+    source: >-
+      https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
+    agency: IRS
+    id: 2qlHlB5I
   - date: 2025-03-13
     type: disruption
     event: >-
@@ -6576,6 +6614,19 @@
     - impunity
     agency: IRS
     id: QH5hBz4D
+  - date: 2025-04-08
+    type: disruption
+    event: >-
+      The recently-installed Acting Commissioner of the IRS, Melanie Krause, resigns and leaks a story
+      to the _Post_ that it was over her resistance to the data-sharing plan with DHS and ICE. Her staff
+      allege it's because she would have been revealed as a backer of the plan.
+    project: immigration
+    source:
+    - https://www.washingtonpost.com/business/2025/04/08/irs-dhs-tax-data-immigrants/
+    - >-
+      https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
+    agency: IRS
+    id: 16yV0wOn
   - date: 2025-04-08
     type: disruption
     event: >-

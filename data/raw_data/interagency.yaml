@@ -638,6 +638,23 @@
   - modernization
   id: ipGicBPJ
 
+- date: 2025-03-03
+  type: disruption
+  event: >-
+    Gavin Kliger summons multiple top leaders at the IRS to a meeting where he proclaims to staff that
+    the agency needs to explore ways to share its data with other agencies. He doesn't explicitly mention
+    DHS or ICE in this meeting, but DOGE was already working to provide that data to them.
+  named:
+  - Gavin Kliger
+  project: immigration
+  source: >-
+    https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
+  agency:
+  - IRS
+  - DHS
+  - ICE
+  id: 2WJYQD7F
+
 - date: 2025-03-05
   type: interagency
   event: >-
@@ -804,21 +821,6 @@
   - EPA
   id: 5SAkewbh
 
-- date: 2025-03-(25)~
-  type: interagency
-  event: >-
-    At a meeting on data sharing, an official from ICE requests that the IRS should create a service where
-    DHS staff could simply provide the names and states of potential targets and get a list of all applicable
-    addresses. IRS lawyers are stunned by the possible illegality and continued pressure leads to a series
-    of resignations among staff in legal, privacy and IT offices within the IRS.
-  notable: true
-  source: https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
-  project: immigration
-  agency:
-  - IRS
-  - ICE
-  id: CTZmHEIp
-
 - date: 2025-03-25
   type: interagency
   interagency_doge_reps:
@@ -838,6 +840,43 @@
   - USIP
   - GSA
   id: mrPV8r2V
+
+- date: 2025-03-27
+  type: interagency
+  event: >-
+    At a meeting on data sharing, an official from the "ICE Innovation Lab" requests that the IRS should
+    create a service where DHS staff could simply provide the names and states of potential targets and
+    get a list of all applicable addresses. IRS lawyers are stunned by the possible illegality and continued
+    pressure leads to a series of resignations among staff in legal, privacy and IT offices within the
+    IRS.
+  notable: true
+  source:
+  - https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
+  - >-
+    https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
+  project: immigration
+  agency:
+  - IRS
+  - ICE
+  id: CTZmHEIp
+
+- date: 2025-03-28
+  type: interagency
+  interagency_doge_reps:
+    DOI:
+    - Katrine Trampe
+    IRS:
+    - Gavin Kliger
+  event: >-
+    After the CIO and CISO at the DOI are sidelined, Gavin Kliger calls into a meeting from the IRS to
+    help Katrine Trampe pressure a senior advisor in human resources to give the DOGE team access to the
+    FPPS payroll system at DOI.
+  project: personnel
+  source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
+  agency:
+  - DOI
+  - IRS
+  id: e4rwFTP2
 
 - date: 2025-03-31
   type: report
