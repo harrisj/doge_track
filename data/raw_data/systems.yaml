@@ -579,6 +579,27 @@
     date_granted: 2025-03-25
     date_grant_truth: reported
 
+- name: Electronic Research Administration
+  id: ERA
+  acronym: ERA
+  type: ssp
+  category: obligations
+  description: >-
+    A cloud-based federal shared service managed by the National Institute of Health that supports the
+    full federal grants lifecycle—from application to closeout—for both research and nonresearch grants
+  agency: NIH
+  access:
+  - id: era-noaa-b
+    type: read
+    agency: NOAA
+    alias: NOAA-B
+    source: https://www.gao.gov/assets/gao-26-108192.pdf
+  - id: era-noaa-c
+    type: read
+    agency: NOAA
+    alias: NOAA-C
+    source: https://www.gao.gov/assets/gao-26-108192.pdf
+
 - name: Electronic Wage Reporting System
   id: ewr
   acronym: EWR
@@ -1131,6 +1152,23 @@
     date_granted: 2025-02-28
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+
+- name: Grants Enterprise Management Solutions
+  id: GEMS
+  category: obligations
+  acronym: GEMS
+  project: spending
+  agency: Commerce
+  description: A system that provides a centralized hub for Commerce’s grant administration activitie
+  access:
+  - id: gems-noaa-b
+    type: read
+    alias: NOAA-B
+    source: https://www.gao.gov/assets/gao-26-108192.pdf
+  - id: gems-noaa-c
+    type: read
+    alias: NOAA-C
+    source: https://www.gao.gov/assets/gao-26-108192.pdf
 
 - name: Grants.gov
   id: grants.gov
@@ -2721,6 +2759,16 @@
     date_granted: 2025-02-28
     date_grant_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+  - id: prism-noaa-b
+    agency: NOAA
+    type: read
+    alias: NOAA-B
+    source: https://www.gao.gov/assets/gao-26-108192.pdf
+  - id: prism-noaa-c
+    agency: NOAA
+    type: read
+    alias: NOAA-C
+    source: https://www.gao.gov/assets/gao-26-108192.pdf
   - id: prism-cfpb-wick
     type: read
     agency: CFPB
@@ -2734,6 +2782,15 @@
     ao_office: Office of Finance and Procurement
     ao_truth: verified
     source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+  - id: prism-sec-mishory
+    type: read
+    name: Eliezer Mishory
+    agency: SEC
+    date_granted: 2025-03-31
+    date_grant_truth: inferred
+    date_revoked: 2025-10-31
+    date_revoked_truth: inferred
+    source: https://www.gao.gov/assets/gao-26-108192.pdf
 
 - name: Reentry Employment Opportunities
   acronym: REO

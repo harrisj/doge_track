@@ -3494,8 +3494,11 @@
     end_date: 2025-03-04
     end_date_truth: verified
     end_type: detail_ended
+    title: Tech Support
     title_type: advisor
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+    - https://www.gao.gov/assets/gao-26-108192.pdf
     comment: Details from court filing
   - id: detail-gsa-state-farritor
     type: detailed
@@ -5699,9 +5702,13 @@
     project:
     - elimination
     - personnel
+    title: Senior Advisor for Technology and Delivery
     title_type: advisor
-    source: >-
+    comment: Employee B in GAO report
+    source:
+    - >-
       https://news.bloomberglaw.com/banking-law/doge-employee-leaves-cfpb-after-leading-trumps-mass-firing-plan
+    - https://www.gao.gov/assets/gao-26-108192.pdf
   - id: opm-perm-employee-5
     type: converted
     category: wrecker
@@ -6224,10 +6231,13 @@
     agency: CFPB
     from: GSA
     from_truth: verified
+    title: Senior Advisor
     title_type: advisor
     start_date: 2025-02-07
     start_date_truth: verified
-    source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+    source:
+    - https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+    - https://www.gao.gov/assets/gao-26-108192.pdf
   - id: detail-gsa-hhs-lewin
     type: detailed
     category: wrecker
@@ -7013,6 +7023,29 @@
     - https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
     - https://www.wired.com/story/doge-veterans-are-landing-big-jobs-at-prediction-markets/
     agency: GSA
+  - id: detail-gsa-sec-mendelson
+    type: detailed
+    from: GSA
+    category: wrecker
+    from_truth: guessed
+    start_date: 2025-04-25
+    start_date_truth: reported
+    end_date: 2025-10-31
+    end_date_truth: reported
+    end_type: detail_ended
+    project: deregulation
+    title: Advisor
+    title_type: advisor
+    office: Chairman of the SEC
+    table_note: title sourced from ProPublica, reportedly not seen at agency for last few months of official
+      station
+    source:
+    - >-
+      https://www.reuters.com/sustainability/boards-policy-regulation/doge-expands-presence-wall-st-regulator-sources-say-2025-05-02/
+    - >-
+      https://www.reuters.com/sustainability/boards-policy-regulation/doge-leave-top-us-markets-regulator-sources-say-2025-10-30/
+    - https://www.gao.gov/assets/gao-26-108192.pdf
+    agency: SEC
   - id: detail-gsa-dfc-mendelson
     type: detailed
     category: wrecker
@@ -7026,29 +7059,6 @@
     source: >-
       https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
     agency: USDFC
-  - id: detail-gsa-sec-mendelson
-    type: detailed
-    from: GSA
-    category: wrecker
-    from_truth: guessed
-    sort_date: 2025-05-02
-    start_date: 2025-05-(02)~
-    start_date_truth: reported
-    end_date: 2025-10-31
-    end_date_truth: reported
-    end_type: detail_ended
-    project: deregulation
-    title: Senior Advisor
-    title_type: advisor
-    office: Chairman of the SEC
-    table_note: title sourced from ProPublica, reportedly not seen at agency for last few months of official
-      station
-    source:
-    - >-
-      https://www.reuters.com/sustainability/boards-policy-regulation/doge-expands-presence-wall-st-regulator-sources-say-2025-05-02/
-    - >-
-      https://www.reuters.com/sustainability/boards-policy-regulation/doge-leave-top-us-markets-regulator-sources-say-2025-10-30/
-    agency: SEC
 
 - name: Katie Miller
   sort_name: Miller
@@ -7229,10 +7239,9 @@
     id: 1wAgSYIG
   positions:
   - id: sec-mishory
-    type: unknown
+    type: appointed
     category: wrecker
-    sort_date: 2025-04-05
-    start_date: 2025-04-(05)~
+    start_date: 2025-03-31
     start_date_truth: reported
     end_date: 2025-10-31
     end_date_truth: reported
@@ -7241,13 +7250,13 @@
     title_type: advisor
     office: Office of the Chairman
     project: deregulation
-    comment: Reporting on 4/15 just says he arrived "earlier this month"
     source:
     - >-
       https://www.reuters.com/world/us/us-sec-leaders-push-back-musks-doge-seeks-broad-access-source-says-2025-04-15/
     - >-
       https://www.reuters.com/sustainability/boards-policy-regulation/doge-leave-top-us-markets-regulator-sources-say-2025-10-30/
     - https://www.linkedin.com/in/eliezer-mishory/
+    - https://www.gao.gov/assets/gao-26-108192.pdf
     agency: SEC
 
 - name: Bryanne-Michelle Mlodzianowski
@@ -11056,6 +11065,9 @@
     end_date: 2025-06-06
     end_date_truth: inferred
     end_type: detail_ended
+    title: Special Government Employee
+    source: https://www.gao.gov/assets/gao-26-108192.pdf
+    title_type: advisor
     table_note: >-
       Identified as OPM-14; govt testified on 6/27 no longer a govt employee, inferring date from end
       of OPM service
