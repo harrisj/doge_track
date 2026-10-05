@@ -79,6 +79,7 @@ DB.create_table! :people do
   string :name, primary_key: true
   string :sort_name, null: false
   string :slug, null: false, unique: true
+  string :association, null: false, default: 'confirmed'
   string :custom_path
   integer :age
   string :skill

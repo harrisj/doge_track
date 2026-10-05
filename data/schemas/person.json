@@ -114,6 +114,10 @@
             "items": {
                 "$ref": "position.json"
             }
+        },
+        "association": {
+            "description": "Person's association level",
+            "$ref": "association.json"
         }
     },
     "required": [
