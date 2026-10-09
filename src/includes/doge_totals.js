@@ -3,43 +3,41 @@ layout: false
 ---
 var month_totals = {{ site.data.month_totals | jsonify | raw }};
 
-function data_labeler(val, opt) {
-  if (opt.dataPointIndex > 0) {
-    let key = opt.w.globals.labels[opt.dataPointIndex];
-    let prev_key = opt.w.globals.labels[opt.dataPointIndex - 1];
+// function data_labeler(val, opt) {
+//   if (opt.dataPointIndex > 0) {
+//     let key = opt.w.globals.labels[opt.dataPointIndex];
+//     let prev_key = opt.w.globals.labels[opt.dataPointIndex - 1];
 
-    val = month_totals[key]["count"];
-    let added = month_totals[key]["join"];
-    let exit = month_totals[prev_key]["exit"];
+//     val = month_totals[key]["count"];
+//     let added = month_totals[key]["join"];
+//     let exit = month_totals[prev_key]["exit"];
 
-    if (added == 0 && exit == 0) {
-      return "" + val;
-    } else if (added > 0 && exit == 0) {
-      return "" + val + " (+" + added + ")";
-    } else if (added == 0 && exit > 0) {
-      return "" + val + " (-" + exit + ")";
-    } else {
-      return "" + val + " (+" + added + " -" + exit + ")";
-    }
-  } else {
-    return "" + val;
-  }
-}
+//     if (added == 0 && exit == 0) {
+//       return "" + val;
+//     } else if (added > 0 && exit == 0) {
+//       return "" + val + " (+" + added + ")";
+//     } else if (added == 0 && exit > 0) {
+//       return "" + val + " (-" + exit + ")";
+//     } else {
+//       return "" + val + " (+" + added + " -" + exit + ")";
+//     }
+//   } else {
+//     return "" + val;
+//   }
+// }
 
 {% totals = site.data.month_totals %}
 var options = {
-  series: [{
-    name: "DOGE Staffing",
-    data: [
-      {% totals.keys.sort.each do |key| %}
-        {% total = totals[key] %}
-        {
-          x: '{{ key }}',
-          y: {{ total['count'] }}
-        },
-      {% end %}
-    ],
-  }],
+  series: [
+    {
+      name: "DOGE",
+        data: [{% totals.keys.sort.each do |key| %}{{ totals[key]['count_doge'] }}, {% end %}]
+    },
+    {
+      name: "NDS",
+        data: [{% totals.keys.sort.each do |key| %}{{ totals[key]['count_nds'] }}, {% end %}]
+    }
+  ],
   plotOptions: {
     bar: {
       horizontal: true,
@@ -51,7 +49,8 @@ var options = {
   },
   chart: {
     height: "400px",
-    type: 'bar',
+      type: 'bar',
+      stacked: true,
     toolbar: {
       show: false
     },
@@ -62,7 +61,7 @@ var options = {
     }
   },
   dataLabels: {
-    enabled: true,
+    enabled: false,
     style: {
       colors: ["var(--chart-foreground)"]
     },
@@ -78,10 +77,10 @@ var options = {
     }
   },
   tooltip: {
-    enabled: false
+    enabled: true
   },
   title: {
-    text: 'DOGE Staffing Per Month',
+      text: 'DOGE/NDS Staffing Per Month',
     style: {
       fontSize: '18px',
       fontWeight: 'bold',
@@ -91,7 +90,15 @@ var options = {
   legend: {
     show: false,
   },
+  fill: {
+      // type: ['solid', 'pattern'],
+      opacity: [1, 0.65],
+    // pattern: {
+    //   style: ['solid', 'verticalLines'], // string or array of strings
+    // },
+  },
   xaxis: {
+      categories: [{% totals.keys.sort.each do |key| %}"{{ key }}",{% end %}],    
     axisBorder: {
       show: false
     },
