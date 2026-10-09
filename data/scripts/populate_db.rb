@@ -131,6 +131,10 @@ people_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'people.yaml'), symboliz
 
 people_yaml.each do |p_hash|
   p_hash[:tech_links] = p_hash[:tech_links].join(', ') if p_hash[:tech_links]
+  # If association is not set in YAML (blank/nil) and the person has no positions, set to "auxiliary"
+  # t
+  # Otherwise rely on DB default "confirmed" (which sets "confirmed" for people with positions)
+  p_hash[:association] ||= 'auxiliary' if p_hash[:positions].empty?
   p = Person.new(p_hash.except(:positions, :alias, :affiliations, :source))
 
   p_hash.fetch(:positions, []).each do |pos_hash|

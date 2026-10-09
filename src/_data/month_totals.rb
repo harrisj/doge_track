@@ -27,7 +27,7 @@ keys.each do |key|
   }
 end
 
-Person.all.each do |person|
+Person.exclude(association: 'auxiliary').all.each do |person|
   next unless person.start_date
 
   overall_keys_set = Set.new # months from all positions (overall timeline)
