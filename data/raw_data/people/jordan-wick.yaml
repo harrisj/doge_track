@@ -1,148 +1,164 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Jordan Wick
-:sort_name: Wick
-:slug: jordan-wick
-:age: 28
-:skill: coder
-:linkedin: https://www.linkedin.com/in/jordanwick/
-:blurb: Jordan Wick is one of the few early DOGE staffers, who did not have some sort
-  of direct link to Musk or one of his companies, having worked as an engineer at
-  autonomous car company Waymo. He also is a cofounder of a vague civic-technology-with-AI-or-something
-  startup named Accelerate SF with early DOGE booster Anthony Jancso; this is likely
-  what brought him into DOGE. In DOGE itself, he has kept a relatively low profile,
-  but he worked alongside Luke Farritor and Gavin Kliger in DOGE's takeover of the
-  CFPB, and he has stayed on as a full-time staffer at the agency since March 5th,
-  even as he has been deployed elsewhere.
-:positions:
-- :id: detail-gsa-wick
-  :type: detailed
-  :category: wrecker
-  :from: DOGE
-  :from_truth: inferred
-  :agency: GSA
-  :table_note: At the FCC, Jordan Wick asks them to send a meeting invite to a GSA
-    address for him
-  :source:
+name: Jordan Wick
+sort_name: Wick
+slug: jordan-wick
+age: 28
+skill: coder
+linkedin: https://www.linkedin.com/in/jordanwick/
+blurb: >-
+  Jordan Wick is one of the few early DOGE staffers, who did not have some sort of direct link to Musk
+  or one of his companies, having worked as an engineer at autonomous car company Waymo. He also is a
+  cofounder of a vague civic-technology-with-AI-or-something startup named Accelerate SF with early DOGE
+  booster Anthony Jancso; this is likely what brought him into DOGE. In DOGE itself, he has kept a relatively
+  low profile, but he worked alongside Luke Farritor and Gavin Kliger in DOGE's takeover of the CFPB,
+  and he has stayed on as a full-time staffer at the agency since March 5th, even as he has been deployed
+  elsewhere.
+positions:
+
+- id: detail-gsa-wick
+  type: detailed
+  category: wrecker
+  from: DOGE
+  from_truth: inferred
+  agency: GSA
+  table_note: At the FCC, Jordan Wick asks them to send a meeting invite to a GSA address for him
+  source:
   - https://www.documentcloud.org/documents/26379171-fcc-foia-production-3-for-frequency-forward/
-- :id: detail-sba-wick
-  :agency: SBA
-  :category: wrecker
-  :from: DOGE
-  :from_truth: guessed
-  :title: Special Advisor
-  :title_type: advisor
-  :type: detailed
-  :project:
+
+- id: detail-sba-wick
+  agency: SBA
+  category: wrecker
+  from: DOGE
+  from_truth: guessed
+  title: Special Advisor
+  title_type: advisor
+  type: detailed
+  project:
   - spending
   - fraud
-  :table_note: identified by agency FOIA as having been at the agency, guessing detailed
-  :source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
-- :id: doge-wick
-  :type: appointed
-  :category: wrecker
-  :agency: DOGE
-  :sort_date: 2025-01-20
-  :start_date: 2025-01-(20)~
-  :title: Senior Advisor (Engineer)
-  :title_type: advisor
-  :series: '0301'
-  :pay_grade: AD-00
-  :start_date_truth: guessed
-  :table_note: guessed from govt declaration detailed from DOGE to CFPB
-  :comment: No details, but guessing based on government declaration had been detailed
-    from DOGE to CFPB
-  :source:
+  table_note: identified by agency FOIA as having been at the agency, guessing detailed
+  source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+
+- id: doge-wick
+  type: appointed
+  category: wrecker
+  agency: DOGE
+  sort_date: 2025-01-20
+  start_date: 2025-01-(20)~
+  title: Senior Advisor (Engineer)
+  title_type: advisor
+  series: '0301'
+  pay_grade: AD-00
+  start_date_truth: guessed
+  table_note: guessed from govt declaration detailed from DOGE to CFPB
+  comment: No details, but guessing based on government declaration had been detailed from DOGE to CFPB
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
-- :id: detail-usds-cfpb-jordan-wick
-  :type: detailed
-  :category: wrecker
-  :agency: CFPB
-  :from: DOGE
-  :from_truth: verified
-  :start_date: 2025-02-07
-  :start_date_truth: verified
-  :end_date: 2025-03-04
-  :end_date_truth: verified
-  :end_type: replaced
-  :title_type: advisor
-  :replaced_by: cfpb-jordan-wick
-  :project: elimination
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
-  :table_note: detail ended because he became a full-time CFPB employee on 3/5
-  :comment: Dates provided in court documents. Converted to full position
-- :id: detail-doge-dol-wick
-  :type: detailed
-  :category: wrecker
-  :from: DOGE
-  :from_truth: inferred
-  :sort_date: 2025-02-13
-  :start_date: 2025-02-(13)~
-  :start_date_truth: reported
-  :project: personnel
-  :comment: No other information besides this report. 3 other DOGE staff besides Ramada
-    at agency on 2/5. But was part of CFPB assault.
-  :source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
-  :agency: DOL
-- :id: detail-doge-education-wick
-  :type: detailed
-  :category: wrecker
-  :agency: Education
-  :from: DOGE
-  :from_truth: inferred
-  :start_date: 2025-02-20
-  :start_date_truth: verified
-  :source: https://www.documentcloud.org/documents/26028798-doge-staff-education-20250407/
-- :id: cfpb-jordan-wick
-  :type: converted
-  :category: wrecker
-  :project: spending
-  :title: Expert/Consultant
-  :title_type: advisor
-  :comment: All I have is his SF-61
-  :start_date: 2025-03-05
-  :start_date_truth: verified
-  :salary: "$0"
-  :source:
+
+- id: detail-usds-cfpb-jordan-wick
+  type: detailed
+  category: wrecker
+  agency: CFPB
+  from: DOGE
+  from_truth: verified
+  start_date: 2025-02-07
+  start_date_truth: verified
+  end_date: 2025-03-04
+  end_date_truth: verified
+  end_type: replaced
+  title_type: advisor
+  replaced_by: cfpb-jordan-wick
+  project: elimination
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+  table_note: detail ended because he became a full-time CFPB employee on 3/5
+  comment: Dates provided in court documents. Converted to full position
+
+- id: detail-doge-dol-wick
+  type: detailed
+  category: wrecker
+  from: DOGE
+  from_truth: inferred
+  sort_date: 2025-02-13
+  start_date: 2025-02-(13)~
+  start_date_truth: reported
+  project: personnel
+  comment: >-
+    No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5. But
+    was part of CFPB assault.
+  source: >-
+    https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
+  agency: DOL
+
+- id: detail-doge-education-wick
+  type: detailed
+  category: wrecker
+  agency: Education
+  from: DOGE
+  from_truth: inferred
+  start_date: 2025-02-20
+  start_date_truth: verified
+  source: https://www.documentcloud.org/documents/26028798-doge-staff-education-20250407/
+
+- id: cfpb-jordan-wick
+  type: converted
+  category: wrecker
+  project: spending
+  title: Expert/Consultant
+  title_type: advisor
+  comment: All I have is his SF-61
+  start_date: 2025-03-05
+  start_date_truth: verified
+  salary: "$0"
+  source:
   - https://www.documentcloud.org/documents/26028811-onboard-cfpb-jordan-wick/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-  :agency: CFPB
-- :id: detail-fcc-wick
-  :type: detailed
-  :category: wrecker
-  :from: DOGE
-  :salary: "$0"
-  :from_truth: verified
-  :start_date: 2025-03-18
-  :start_date_truth: verified
-  :office: Office of the Chairman
-  :agency: FCC
-  :project: deregulation
-  :table_note: MOU for detail says from DOGE to FCC, but the text says he is also
-    detailed from OPM which will bill for his services. Despite being a CFPB staffer,
-    they reportedly have no information about his work for the FCC
-  :mou: https://www.documentcloud.org/documents/26105122-mou-20250318-doge-fcc-wick/
-  :source:
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  agency: CFPB
+
+- id: detail-fcc-wick
+  type: detailed
+  category: wrecker
+  from: DOGE
+  salary: "$0"
+  from_truth: verified
+  start_date: 2025-03-18
+  start_date_truth: verified
+  office: Office of the Chairman
+  agency: FCC
+  project: deregulation
+  table_note: >-
+    MOU for detail says from DOGE to FCC, but the text says he is also detailed from OPM which will bill
+    for his services. Despite being a CFPB staffer, they reportedly have no information about his work
+    for the FCC
+  mou: https://www.documentcloud.org/documents/26105122-mou-20250318-doge-fcc-wick/
+  source:
   - https://frequencyfwd.com/files/motion-exhibit-1-08252025.pdf
   - https://www.documentcloud.org/documents/26105122-mou-20250318-doge-fcc-wick/
-  - https://www.muckrock.com/foi/united-states-of-america-10/detailinghiring-arrangements-for-jeremy-lewin-consumer-financial-protection-bureau-183822/#file-1326062
-- :id: detail-usda-wick
-  :type: detailed
-  :category: wrecker
-  :from: DOGE
-  :from_truth: reported
-  :agency: USDA
-  :start_date: 2025-03-26
-  :start_date_truth: verified
-  :nte_date: 2025-07-24
-  :nte_date_truth: inferred
-  :project:
+  - >-
+    https://www.muckrock.com/foi/united-states-of-america-10/detailinghiring-arrangements-for-jeremy-lewin-consumer-financial-protection-bureau-183822/#file-1326062
+
+- id: detail-usda-wick
+  type: detailed
+  category: wrecker
+  from: DOGE
+  from_truth: reported
+  agency: USDA
+  start_date: 2025-03-26
+  start_date_truth: verified
+  nte_date: 2025-07-24
+  nte_date_truth: inferred
+  project:
   - spending
   - deregulation
-  :reimbursed: false
-  :table_note: MOU signed by Amy Gleason for DOGE. Date is after he was hired at CFPB.
-  :comment: No details, but listed in a NYT roundup and adding here. USDA head said
-    DOGE had been there a couple of weeks on 2/14
-  :mou: https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
-  :source:
+  reimbursed: false
+  table_note: MOU signed by Amy Gleason for DOGE. Date is after he was hired at CFPB.
+  comment: >-
+    No details, but listed in a NYT roundup and adding here. USDA head said DOGE had been there a couple
+    of weeks on 2/14
+  mou: >-
+    https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
+  source:
   - https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  - https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
+  - >-
+    https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/

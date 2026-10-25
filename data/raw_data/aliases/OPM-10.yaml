@@ -1,32 +1,42 @@
+# yaml-language-server: $schema=../schemas/aliases-file.json
 ---
-:id: OPM-10
-:agency: OPM
-:name: Austin Raynor
-:name_truth: verified
-:source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-:evidence:
+id: OPM-10
+agency: OPM
+name: Austin Raynor
+name_truth: verified
+source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
+evidence:
+
 - Granted access to USA Performance on 1/31, likely started on 1/30
-- Based on known starts, this likely could be Justin Monroe, Christopher Stanley,
-  Chris Young or Austin Raynor
-- Government stated still working at OPM on 12/5. This would eliminate Christopher
-  Stanley and Chris Young. Justin Monroe's status unknown.
-- '["OPM-10 is a lawyer associated with DOGE. He was appointed on January 30 as a
-  Senior Advisor in the OPM Office of the Director"](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.177.0.pdf)'
+
+- >-
+  Based on known starts, this likely could be Justin Monroe, Christopher Stanley, Chris Young or Austin
+  Raynor
+
+- >-
+  Government stated still working at OPM on 12/5. This would eliminate Christopher Stanley and Chris Young.
+  Justin Monroe's status unknown.
+
+- >-
+  ["OPM-10 is a lawyer associated with DOGE. He was appointed on January 30 as a Senior Advisor in the
+  OPM Office of the Director"](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.177.0.pdf)
+
 - Austin Raynor is a lawyer and Justin Monroe is not so it's Austin Raynor
-:positions:
-- :id: opm-employee-10
-  :type: appointed
-  :category: support
-  :agency: OPM
-  :start_date: 2025-01-30
-  :start_date_truth: verified
-  :end_date: 2025-12-22
-  :end_date_truth: verified
-  :title: Senior Advisor
-  :office: Office of the Director
-  :table_note: Start date guessed from system access
-  :same_as: opm-austin-raynor
-  :source:
+positions:
+
+- id: opm-employee-10
+  type: appointed
+  category: support
+  agency: OPM
+  start_date: 2025-01-30
+  start_date_truth: verified
+  end_date: 2025-12-22
+  end_date_truth: verified
+  title: Senior Advisor
+  office: Office of the Director
+  table_note: Start date guessed from system access
+  same_as: opm-austin-raynor
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.177.0.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf

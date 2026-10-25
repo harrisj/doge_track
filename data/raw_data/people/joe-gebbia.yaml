@@ -1,61 +1,68 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Joe Gebbia
-:sort_name: Gebbia
-:slug: joe-gebbia
-:age: 43
-:skill: executive
-:blurb: Joe Gebbia is very much a known person – he is a co-founder of AirBnB and
-  has appeared among the DOGE staff on several television interviews. He started in
-  February at OPM, where he has worked to accelerate a Biden-era project to modernize
-  retirement claims processing. More recently, he has been part of an inter-agency
-  collaboration between DHS, State and USCIS to develop a $5 Million "Gold Card" immigration
+name: Joe Gebbia
+sort_name: Gebbia
+slug: joe-gebbia
+age: 43
+skill: executive
+blurb: >-
+  Joe Gebbia is very much a known person – he is a co-founder of AirBnB and has appeared among the DOGE
+  staff on several television interviews. He started in February at OPM, where he has worked to accelerate
+  a Biden-era project to modernize retirement claims processing. More recently, he has been part of an
+  inter-agency collaboration between DHS, State and USCIS to develop a $5 Million "Gold Card" immigration
   visa.
-:tech_links:
+tech_links:
+
 - Airbnb
-:affiliations:
-- :entity_id: airbnb
-  :role: founder
-  :timeframe: before
-  :immediate: true
-  :end_date: 2025-02-(18)~
-  :end_date_truth: inferred
-  :connection_truth: reported
-  :table_note: Co-founder of AirBnb
-  :source: https://projects.propublica.org/elon-musk-doge-tracker/
-  :id: 4KCgvLuP
-:positions:
-- :id: opm-joe-gebbia
-  :agency: OPM
-  :type: appointed
-  :category: wrecker
-  :start_date: 2025-02-18
-  :start_date_truth: verified
-  :description: Exc Appt NTE
-  :project: modernization
-  :appt_type_code: 48
-  :appt_type: Other
-  :excepted: true
-  :pd_code: 6A39752
-  :title: Expert
-  :title_type: advisor
-  :pay_grade: ED-00
-  :series: '0301'
-  :supervisory: false
-  :salary: "$0"
-  :office: Office of the Director
-  :comment: Sourced from a FOIAed document
-  :source:
+affiliations:
+
+- entity_id: airbnb
+  role: founder
+  timeframe: before
+  immediate: true
+  end_date: 2025-02-(18)~
+  end_date_truth: inferred
+  connection_truth: reported
+  table_note: Co-founder of AirBnb
+  source: https://projects.propublica.org/elon-musk-doge-tracker/
+  id: 4KCgvLuP
+positions:
+
+- id: opm-joe-gebbia
+  agency: OPM
+  type: appointed
+  category: wrecker
+  start_date: 2025-02-18
+  start_date_truth: verified
+  description: Exc Appt NTE
+  project: modernization
+  appt_type_code: 48
+  appt_type: Other
+  excepted: true
+  pd_code: 6A39752
+  title: Expert
+  title_type: advisor
+  pay_grade: ED-00
+  series: '0301'
+  supervisory: false
+  salary: "$0"
+  office: Office of the Director
+  comment: Sourced from a FOIAed document
+  source:
   - https://www.documentcloud.org/documents/26028780-opm-new-hires/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-- :id: nds-gebbia
-  :agency: NDS
-  :type: appointed
-  :category: leadership
-  :start_date: 2025-08-21
-  :start_date_truth: reported
-  :title: Chief Design Officer
-  :title_type: dept_head
-  :project: modernization
-  :office: National Design Studio
-  :table_note: Position created in EO 14338
-  :source: https://www.reuters.com/world/us/trump-appoint-airbnb-co-founder-gebbia-remake-government-websites-2025-08-21/
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+
+- id: nds-gebbia
+  agency: NDS
+  type: appointed
+  category: leadership
+  start_date: 2025-08-21
+  start_date_truth: reported
+  title: Chief Design Officer
+  title_type: dept_head
+  project: modernization
+  office: National Design Studio
+  table_note: Position created in EO 14338
+  source: >-
+    https://www.reuters.com/world/us/trump-appoint-airbnb-co-founder-gebbia-remake-government-websites-2025-08-21/

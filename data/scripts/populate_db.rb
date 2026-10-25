@@ -286,7 +286,7 @@ systems_yaml.each do |system_hash|
   # s.save
 end
 
-interagency_events = YAML.unsafe_load_file(File.join(YAML_DIR, 'interagency.yaml'), symbolize_names: true)
+interagency_events = YAML.unsafe_load_file(File.join(YAML_DIR, 'agencies', 'interagency.yaml'), symbolize_names: true)
 all_events += interagency_events
 
 sorted_events = all_events.each_with_index.sort_by { |e, idx| [Date.edtf(e[:date].to_s), idx] }.map(&:first)

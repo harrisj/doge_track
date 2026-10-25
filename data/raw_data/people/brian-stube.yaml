@@ -1,35 +1,38 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Brian Stube
-:sort_name: Stube
-:slug: brian-stube
-:linkedin: https://www.linkedin.com/in/brian-stube/
-:skill: analyst
-:blurb: Brian Stube was a "quant" at the the hedge fund Citadel before 2012, which
-  is also where Adam Hoffman works. According to his LinkedIn profile, he left DOT
-  (and presumably DOGE) in August.
-:college_graduation_year: 2003
-:govt_exit_date: 2025-08-XX
-:govt_exit_truth: reported
-:govt_exit_type: resigned
-:positions:
-- :id: dot-stube
-  :type: appointed
-  :category: wrecker
-  :name: Brian Stube
-  :sort_date: 2025-03-05
-  :start_date: 2025-03-XX
-  :start_date_truth: reported
-  :end_date: 2025-08-XX
-  :end_date_truth: reported
-  :end_type: resigned
-  :fuzz: Appeared in the ProPublica roundup
-  :title: Senior Advisor to the Secretary
-  :project: spending
-  :title_type: advisor
-  :office: Office of the Secretary
-  :agency: DOT
-  :salary: "$195,197"
-  :source:
+name: Brian Stube
+sort_name: Stube
+slug: brian-stube
+linkedin: https://www.linkedin.com/in/brian-stube/
+skill: analyst
+blurb: >-
+  Brian Stube was a "quant" at the the hedge fund Citadel before 2012, which is also where Adam Hoffman
+  works. According to his LinkedIn profile, he left DOT (and presumably DOGE) in August.
+college_graduation_year: 2003
+govt_exit_date: 2025-08-XX
+govt_exit_truth: reported
+govt_exit_type: resigned
+positions:
+
+- id: dot-stube
+  type: appointed
+  category: wrecker
+  name: Brian Stube
+  sort_date: 2025-03-05
+  start_date: 2025-03-XX
+  start_date_truth: reported
+  end_date: 2025-08-XX
+  end_date_truth: reported
+  end_type: resigned
+  fuzz: Appeared in the ProPublica roundup
+  title: Senior Advisor to the Secretary
+  project: spending
+  title_type: advisor
+  office: Office of the Secretary
+  agency: DOT
+  salary: "$195,197"
+  source:
   - https://projects.propublica.org/elon-musk-doge-tracker/
   - https://www.linkedin.com/in/brian-stube/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring

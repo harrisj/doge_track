@@ -1,81 +1,92 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Corporation for Public Broadcasting
-:id: CPB
-:slug: cpb
-:short_name: CPB
-:page_slug: independent#arts
-:events:
-- :date: 2025-04-28
-  :type: disruption
-  :event: Three members of the board for the Corporation for Public Broadcasting receive
-    an email from Trent Morse at the White House informing them that they have been
-    fired. This renders the board inert without quorum.
-  :project: impunity
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.279991/gov.uscourts.dcd.279991.2.2.pdf
-  :case_no: 1:25-cv-01305
-  :agency: CPB
-  :id: 607kaJsp
-  :named:
+name: Corporation for Public Broadcasting
+id: CPB
+slug: cpb
+short_name: CPB
+page_slug: independent#arts
+events:
+
+- date: 2025-04-28
+  type: disruption
+  event: >-
+    Three members of the board for the Corporation for Public Broadcasting receive an email from Trent
+    Morse at the White House informing them that they have been fired. This renders the board inert without
+    quorum.
+  project: impunity
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.279991/gov.uscourts.dcd.279991.2.2.pdf
+  case_no: 1:25-cv-01305
+  agency: CPB
+  id: 607kaJsp
+  named:
   - Trent Morse
-- :date: 2025-04-29
-  :type: interagency
-  :event: Nate Cavanaugh sends an email to the two remaining members of the CPB board
-    requesting a meeting. He describes a DOGE team at GSA and cc's several other members
-    of DOGE
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.279991/gov.uscourts.dcd.279991.12.1.pdf
-  :case_no: 1:25-cv-01305
-  :interagency_doge_reps:
-    :GSA:
+
+- date: 2025-04-29
+  type: legal
+  event: >-
+    Citing as evidence the harm inflicted by DOGE against the USIP, the Corporation for Public Broadcasting
+    receives a temporary restraining order from a judge until its case can be heard in May.
+  source: https://radioink.com/2025/04/29/federal-court-halts-trump-move-to-fire-three-cpb-directors/
+  agency: CPB
+  id: 22DlvADs
+
+- date: 2025-04-29
+  type: interagency
+  event: >-
+    Nate Cavanaugh sends an email to the two remaining members of the CPB board requesting a meeting.
+    He describes a DOGE team at GSA and cc's several other members of DOGE
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.279991/gov.uscourts.dcd.279991.12.1.pdf
+  case_no: 1:25-cv-01305
+  interagency_doge_reps:
+    GSA:
     - Nate Cavanaugh
     - Justin Fox
     - Jonathan Mendelson
-    :DOGE:
+    DOGE:
     - Justin Aimonetti
-  :agency: CPB
-  :id: 4p1Gdjkg
-- :date: 2025-04-29
-  :type: legal
-  :event: Citing as evidence the harm inflicted by DOGE against the USIP, the Corporation
-    for Public Broadcasting receives a temporary restraining order from a judge until
-    its case can be heard in May.
-  :source: https://radioink.com/2025/04/29/federal-court-halts-trump-move-to-fire-three-cpb-directors/
-  :agency: CPB
-  :id: 22DlvADs
-- :date: 2025-05-01
-  :type: official
-  :event: Trump issues an executive order commanding that Corporation for Public Broadcasting
-    should cease any financial support for PBS and NPR, despite CPB being an independent
-    agency.
-  :notable: true
-  :project:
+  agency: CPB
+  id: 4p1Gdjkg
+
+- date: 2025-05-01
+  type: official
+  event: >-
+    Trump issues an executive order commanding that Corporation for Public Broadcasting should cease any
+    financial support for PBS and NPR, despite CPB being an independent agency.
+  notable: true
+  project:
   - spending
-  :source: https://www.whitehouse.gov/presidential-actions/2025/05/ending-taxpayer-subsidization-of-biased-media/
-  :agency: CPB
-  :id: 6mAF9PCM
-- :date: 2025-08-01
-  :type: disruption
-  :agency: CPB
-  :event: The Corporation for Public Broadcasting issues a press release announcing
-    that it has commenced an orderly wind-down due to the elimination of funding from
-    both the recissions package as well as the budget for next year. A majority of
-    staff will be let go on the September 30, 2026 with a small team retained for
-    final closedown in January 2026. This is frankly a heartbreaking outcome for an
-    agency that has served America for almost 60 years.
-  :notable: true
-  :project:
+  source: >-
+    https://www.whitehouse.gov/presidential-actions/2025/05/ending-taxpayer-subsidization-of-biased-media/
+  agency: CPB
+  id: 6mAF9PCM
+
+- date: 2025-08-01
+  type: disruption
+  agency: CPB
+  event: >-
+    The Corporation for Public Broadcasting issues a press release announcing that it has commenced an
+    orderly wind-down due to the elimination of funding from both the recissions package as well as the
+    budget for next year. A majority of staff will be let go on the September 30, 2026 with a small team
+    retained for final closedown in January 2026. This is frankly a heartbreaking outcome for an agency
+    that has served America for almost 60 years.
+  notable: true
+  project:
   - elimination
   - personnel
-  :source: https://cpb.org/pressroom/Corporation-Public-Broadcasting-Addresses-Operations-Following-Loss-Federal-Funding
-  :id: 2Cj197Lv
-- :date: 2026-01-05
-  :type: disruption
-  :event: The board of directors votes to formally dissolve the Corporation for Public
-    Broadcasting, ending its 58 year history of providing funding for PBS, NPR and
-    local TV and radio stations. This was the inevitable outcome after Congress codified
-    the elimination of funding for the agency.
-  :project:
+  source: >-
+    https://cpb.org/pressroom/Corporation-Public-Broadcasting-Addresses-Operations-Following-Loss-Federal-Funding
+  id: 2Cj197Lv
+
+- date: 2026-01-05
+  type: disruption
+  event: >-
+    The board of directors votes to formally dissolve the Corporation for Public Broadcasting, ending
+    its 58 year history of providing funding for PBS, NPR and local TV and radio stations. This was the
+    inevitable outcome after Congress codified the elimination of funding for the agency.
+  project:
   - elimination
   - personnel
-  :source: https://www.huffpost.com/entry/latest-news-trump-maduro_n_695bb603e4b0d6beb5fd9469/liveblog_695c153ce4b0d6beb5fe025f
-  :agency: CPB
-  :id: 3S3bejKu
+  source: >-
+    https://www.huffpost.com/entry/latest-news-trump-maduro_n_695bb603e4b0d6beb5fd9469/liveblog_695c153ce4b0d6beb5fe025f
+  agency: CPB
+  id: 3S3bejKu

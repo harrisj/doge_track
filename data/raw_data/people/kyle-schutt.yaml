@@ -1,148 +1,158 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Kyle Schutt
-:sort_name: Schutt
-:slug: kyle-schutt
-:age: 37
-:skill: coder
-:linkedin: https://www.linkedin.com/in/kschutt/
-:blurb: Kyle Schutt is from the intersection of technologist and Republican party
-  politics, having built an online fundraising platform Revv, that is frequently used
-  by the GOP. He was also [linked to the development](https://xcancel.com/samwcyo/status/1889527715029557607)
-  of DOGE's website [doge.gov](https://doge.gov/), which was [hacked and vandalized
-  at launch because he left the database accessible to the outside world](https://www.404media.co/anyone-can-push-updates-to-the-doge-gov-website-2/),
+name: Kyle Schutt
+sort_name: Schutt
+slug: kyle-schutt
+age: 37
+skill: coder
+linkedin: https://www.linkedin.com/in/kschutt/
+blurb: >-
+  Kyle Schutt is from the intersection of technologist and Republican party politics, having built an
+  online fundraising platform Revv, that is frequently used by the GOP. He was also [linked to the development](https://xcancel.com/samwcyo/status/1889527715029557607)
+  of DOGE's website [doge.gov](https://doge.gov/), which was [hacked and vandalized at launch because
+  he left the database accessible to the outside world](https://www.404media.co/anyone-can-push-updates-to-the-doge-gov-website-2/),
   and his computer has been [infected with credential-stealing malware multiple times](https://cyberpress.org/stolen-credentials-from-doge-employee/).
-  For its part, DOGE gave him access to a highly-sensitive database containing information
-  on unaccompanied migrant children and admin credentials at CISA. His LinkedIn reports
-  that he left DHS in June 2025, but he has been appointed as the new Acting CIO in
-  August 2026, to replace Antoine McCord.
-:positions:
-- :id: internal-dhs-cbp-schutt
-  :type: internal
-  :category: wrecker
-  :from: DHS
-  :from_truth: inferred
-  :sort_date: 2025-02-20
-  :agency: CBP
-  :comment: No details, but in NYT roundup
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: internal-dhs-fema-schutt
-  :type: internal
-  :category: wrecker
-  :from: DHS
-  :sort_date: 2025-02-20
-  :from_truth: inferred
-  :project:
+  For its part, DOGE gave him access to a highly-sensitive database containing information on unaccompanied
+  migrant children and admin credentials at CISA. His LinkedIn reports that he left DHS in June 2025,
+  but he has been appointed as the new Acting CIO in August 2026, to replace Antoine McCord.
+positions:
+
+- id: internal-dhs-cbp-schutt
+  type: internal
+  category: wrecker
+  from: DHS
+  from_truth: inferred
+  sort_date: 2025-02-20
+  agency: CBP
+  comment: No details, but in NYT roundup
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: internal-dhs-fema-schutt
+  type: internal
+  category: wrecker
+  from: DHS
+  sort_date: 2025-02-20
+  from_truth: inferred
+  project:
   - spending
   - fraud
-  :agency: FEMA
-  :comment: No details, but in NYT roundup
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: internal-dhs-ice-schutt
-  :type: internal
-  :category: wrecker
-  :from: DHS
-  :sort_date: 2025-02-20
-  :from_truth: inferred
-  :agency: ICE
-  :comment: No details, but in NYT roundup
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: internal-dhs-tsa-schutt
-  :type: internal
-  :category: wrecker
-  :from: DHS
-  :sort_date: 2025-02-20
-  :from_truth: inferred
-  :agency: TSA
-  :comment: No details, but in NYT roundup
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: internal-dhs-uscis-schutt
-  :type: internal
-  :category: wrecker
-  :from: DHS
-  :sort_date: 2025-02-20
-  :from_truth: inferred
-  :agency: USCIS
-  :comment: No details, but in NYT roundup
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: detail-gsa-doge-schutt
-  :type: detailed
-  :category: wrecker
-  :agency: DOGE
-  :from: GSA
-  :from_truth: inferred
-  :start_date: 2025-01-27
-  :start_date_truth: verified
-  :end_date: 2025-06-20
-  :end_date_truth: verified
-  :end_type: detail_ended
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
-- :id: gsa-schutt
-  :type: appointed
-  :category: wrecker
-  :agency: GSA
-  :sort_date: 2025-01-27
-  :start_date: 2025-01-(27)~
-  :start_date_truth: inferred
-  :end_date: 2025-06-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :salary: "$195,200"
-  :pay_grade: GS-15/10
-  :office: Office of the Deputy Administrator
-  :table_note: detailed to DOGE on 1/27, so either that day or earlier.
-  :source:
+  agency: FEMA
+  comment: No details, but in NYT roundup
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: internal-dhs-ice-schutt
+  type: internal
+  category: wrecker
+  from: DHS
+  sort_date: 2025-02-20
+  from_truth: inferred
+  agency: ICE
+  comment: No details, but in NYT roundup
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: internal-dhs-tsa-schutt
+  type: internal
+  category: wrecker
+  from: DHS
+  sort_date: 2025-02-20
+  from_truth: inferred
+  agency: TSA
+  comment: No details, but in NYT roundup
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: internal-dhs-uscis-schutt
+  type: internal
+  category: wrecker
+  from: DHS
+  sort_date: 2025-02-20
+  from_truth: inferred
+  agency: USCIS
+  comment: No details, but in NYT roundup
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: detail-gsa-doge-schutt
+  type: detailed
+  category: wrecker
+  agency: DOGE
+  from: GSA
+  from_truth: inferred
+  start_date: 2025-01-27
+  start_date_truth: verified
+  end_date: 2025-06-20
+  end_date_truth: verified
+  end_type: detail_ended
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+
+- id: gsa-schutt
+  type: appointed
+  category: wrecker
+  agency: GSA
+  sort_date: 2025-01-27
+  start_date: 2025-01-(27)~
+  start_date_truth: inferred
+  end_date: 2025-06-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  salary: "$195,200"
+  pay_grade: GS-15/10
+  office: Office of the Deputy Administrator
+  table_note: detailed to DOGE on 1/27, so either that day or earlier.
+  source:
   - https://www.wired.com/story/doge-government-salaries-elon-musk/
   - https://www.linkedin.com/in/kschutt/
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
-- :id: detail-gsa-dhs-schutt
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: inferred
-  :agency: DHS
-  :sort_date: 2025-02-19
-  :start_date: 2025-02-(19)~
-  :start_date_truth: reported
-  :end_date: 2025-06-XX
-  :end_date_truth: inferred
-  :end_type: detail_ended
-  :comment: No details on this, but mentioned in NYT roundup. Assuming detail from
-    GSA
-  :source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
-- :id: internal-dhs-cisa-schutt
-  :type: internal
-  :category: wrecker
-  :from: DHS
-  :from_truth: inferred
-  :agency: CISA
-  :start_date: 2025-02-19
-  :start_date_truth: reported
-  :end_date: 2025-06-XX
-  :end_date_truth: inferred
-  :end_type: detail_ended
-  :title: Senior Advisor
-  :title_type: advisor
-  :source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
-- :id: detail-gsa-hhs-kyle-schutt
-  :type: detailed
-  :category: wrecker
-  :agency: HHS
-  :from: GSA
-  :from_truth: guessed
-  :start_date: 2025-03-14
-  :start_date_truth: verified
-  :end_date: 2025-06-XX
-  :end_type: detail_ended
-  :end_date_truth: inferred
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :comment: No documentation, dates reported in court filing
-- :id: dhs-cio-schutt
-  :type: appointed
-  :title: Acting CIO
-  :title_type: cio
-  :category: enabler
-  :agency: DHS
-  :start_date: 2026-08-31
-  :start_date_truth: reported
-  :supervisory: true
-  :source: https://federalnewsnetwork.com/cio-news/2026/08/dhs-expected-to-tap-doge-staffer-as-next-cio/
+
+- id: detail-gsa-dhs-schutt
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: inferred
+  agency: DHS
+  sort_date: 2025-02-19
+  start_date: 2025-02-(19)~
+  start_date_truth: reported
+  end_date: 2025-06-XX
+  end_date_truth: inferred
+  end_type: detail_ended
+  comment: No details on this, but mentioned in NYT roundup. Assuming detail from GSA
+  source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
+
+- id: internal-dhs-cisa-schutt
+  type: internal
+  category: wrecker
+  from: DHS
+  from_truth: inferred
+  agency: CISA
+  start_date: 2025-02-19
+  start_date_truth: reported
+  end_date: 2025-06-XX
+  end_date_truth: inferred
+  end_type: detail_ended
+  title: Senior Advisor
+  title_type: advisor
+  source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
+
+- id: detail-gsa-hhs-kyle-schutt
+  type: detailed
+  category: wrecker
+  agency: HHS
+  from: GSA
+  from_truth: guessed
+  start_date: 2025-03-14
+  start_date_truth: verified
+  end_date: 2025-06-XX
+  end_type: detail_ended
+  end_date_truth: inferred
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  comment: No documentation, dates reported in court filing
+
+- id: dhs-cio-schutt
+  type: appointed
+  title: Acting CIO
+  title_type: cio
+  category: enabler
+  agency: DHS
+  start_date: 2026-08-31
+  start_date_truth: reported
+  supervisory: true
+  source: https://federalnewsnetwork.com/cio-news/2026/08/dhs-expected-to-tap-doge-staffer-as-next-cio/

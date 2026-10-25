@@ -1,46 +1,49 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Noah Peters
-:sort_name: Peters
-:slug: noah-peters
-:age: 39
-:skill: lawyer
-:linkedin: https://www.linkedin.com/in/noah-peters-66939025/
-:positions:
-- :id: noah-peters-opm
-  :type: appointed
-  :category: support
-  :agency: OPM
-  :start_date: 2025-01-20
-  :start_date_truth: verified
-  :description: Exc Appt NTE
-  :appt_type_code: 44
-  :appt_type: Schedule C
-  :excepted: true
-  :pd_code: 6A38859
-  :title: Senior Advisor
-  :title_type: advisor
-  :pay_grade: GS-15
-  :table_note: Salary range for GS-15 in DC
-  :salary: "$167,603 - $195,200"
-  :series: '0301'
-  :supervisory: false
-  :project: personnel
-  :office: Office of the Director
-  :comment: Details from a FOIA document
-  :source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
-  :same_as: noah-peters-opm
-  :name: Noah Peters
-  :alias: OPM-18
-- :id: detail-opm-doge-peters
-  :type: detailed
-  :category: support
-  :agency: DOGE
-  :from: OPM
-  :from_truth: verified
-  :start_date: 2025-01-24
-  :start_date_truth: verified
-  :table_note: Noah Peters disputes this in a sworn disposition.
-  :source:
+name: Noah Peters
+sort_name: Peters
+slug: noah-peters
+age: 39
+skill: lawyer
+linkedin: https://www.linkedin.com/in/noah-peters-66939025/
+positions:
+
+- id: noah-peters-opm
+  type: appointed
+  category: support
+  agency: OPM
+  start_date: 2025-01-20
+  start_date_truth: verified
+  description: Exc Appt NTE
+  appt_type_code: 44
+  appt_type: Schedule C
+  excepted: true
+  pd_code: 6A38859
+  title: Senior Advisor
+  title_type: advisor
+  pay_grade: GS-15
+  table_note: Salary range for GS-15 in DC
+  salary: "$167,603 - $195,200"
+  series: '0301'
+  supervisory: false
+  project: personnel
+  office: Office of the Director
+  comment: Details from a FOIA document
+  source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
+  same_as: noah-peters-opm
+  name: Noah Peters
+  alias: OPM-18
+
+- id: detail-opm-doge-peters
+  type: detailed
+  category: support
+  agency: DOGE
+  from: OPM
+  from_truth: verified
+  start_date: 2025-01-24
+  start_date_truth: verified
+  table_note: Noah Peters disputes this in a sworn disposition.
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.238.0.pdf

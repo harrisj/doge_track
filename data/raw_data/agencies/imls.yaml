@@ -1,159 +1,184 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Institute for Museum and Library Services
-:id: IMLS
-:short_name: IMLS
-:slug: imls
-:page_slug: independent#eo2
-:events:
-- :date: 2025-03-19
-  :type: sighting
-  :event: IMLS staff learn that DOGE is planning to visit their headquarters following
-    day; most make plans to attend as a show of solidarity.
-  :source: https://news.artnet.com/art-world/doge-imls-institute-museum-library-services-2623286
-  :agency: IMLS
-  :id: MGBmJGfA
-- :date: 2025-03-20
-  :type: sighting
-  :event: DOGE arrives at IMLS HQ and are startled to find most of the staff there.
-    The DOGE representatives quickly swear in Keith Sonderling as acting director
-    of IMLS and then leave.
-  :project: elimination
-  :named:
+name: Institute for Museum and Library Services
+id: IMLS
+short_name: IMLS
+slug: imls
+page_slug: independent#eo2
+events:
+
+- date: 2025-03-19
+  type: sighting
+  event: >-
+    IMLS staff learn that DOGE is planning to visit their headquarters following day; most make plans
+    to attend as a show of solidarity.
+  source: https://news.artnet.com/art-world/doge-imls-institute-museum-library-services-2623286
+  agency: IMLS
+  id: MGBmJGfA
+
+- date: 2025-03-20
+  type: official
+  project: elimination
+  event: >-
+    After being sworn in as the acting director of the IMLS, Keith Sonderling issues a statement that
+    he "will revitalize IMLS and restore focus on patriotism, ensuring we preserve our country's core
+    values, promote American exceptionalism and cultivate love of country in future generations."
+  named:
   - Keith Sonderling
-  :source: https://news.artnet.com/art-world/doge-imls-institute-museum-library-services-2623286
-  :agency: IMLS
-  :id: nTUfmAV8
-- :date: 2025-03-20
-  :type: official
-  :project: elimination
-  :event: After being sworn in as the acting director of the IMLS, Keith Sonderling
-    issues a statement that he "will revitalize IMLS and restore focus on patriotism,
-    ensuring we preserve our country's core values, promote American exceptionalism
-    and cultivate love of country in future generations."
-  :named:
+  source: >-
+    https://www.imls.gov/news/keith-e-sonderling-sworn-acting-director-institute-museum-and-library-services
+  agency: IMLS
+  id: 4AvImwGO
+
+- date: 2025-03-20
+  type: sighting
+  event: >-
+    DOGE arrives at IMLS HQ and are startled to find most of the staff there. The DOGE representatives
+    quickly swear in Keith Sonderling as acting director of IMLS and then leave.
+  project: elimination
+  named:
   - Keith Sonderling
-  :source: https://www.imls.gov/news/keith-e-sonderling-sworn-acting-director-institute-museum-and-library-services
-  :agency: IMLS
-  :id: 4AvImwGO
-- :date: 2025-03-31
-  :type: disruption
-  :event: DOGE wrecker Nate Cavanaugh returns to the IMLS and notifies the entire
-    staff of the agency that they are being put on administrative leave up to 90 days
-    effective immediately.
-  :notable: true
-  :project: elimination
-  :named:
+  source: https://news.artnet.com/art-world/doge-imls-institute-museum-library-services-2623286
+  agency: IMLS
+  id: nTUfmAV8
+
+- date: 2025-03-31
+  type: access
+  event: >-
+    DOGE gains admin access to IMLS systems for monitoring its grants and sending emails. The person is
+    not named, but this is likely Nate Cavanaugh.
+  project: spending
+  source: https://news.artnet.com/art-world/doge-decimates-institute-museum-library-services-imls-2626543
+  named:
   - Nate Cavanaugh
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.1.1_2.pdf
-  :case_no: 1:25-cv-00128
-  :agency: IMLS
-  :id: oGkzQb5Y
-- :date: 2025-03-31
-  :type: access
-  :event: DOGE gains admin access to IMLS systems for monitoring its grants and sending
-    emails. The person is not named, but this is likely Nate Cavanaugh.
-  :project: spending
-  :source: https://news.artnet.com/art-world/doge-decimates-institute-museum-library-services-imls-2626543
-  :named:
+  agency: IMLS
+  id: 2WDroWS4
+
+- date: 2025-03-31
+  type: disruption
+  event: >-
+    DOGE runs a process to send out emails cancelling all 900 open awards from IMLS to museums across
+    the country.
+  source: https://news.artnet.com/art-world/doge-decimates-institute-museum-library-services-imls-2626543
+  notable: true
+  project: spending
+  agency: IMLS
+  linked:
   - Nate Cavanaugh
-  :agency: IMLS
-  :id: 2WDroWS4
-- :date: 2025-03-31
-  :type: disruption
-  :event: DOGE runs a process to send out emails cancelling all 900 open awards from
-    IMLS to museums across the country.
-  :source: https://news.artnet.com/art-world/doge-decimates-institute-museum-library-services-imls-2626543
-  :notable: true
-  :project: spending
-  :agency: IMLS
-  :linked:
+  id: CK2DtEca
+
+- date: 2025-03-31
+  type: disruption
+  event: >-
+    DOGE wrecker Nate Cavanaugh returns to the IMLS and notifies the entire staff of the agency that they
+    are being put on administrative leave up to 90 days effective immediately.
+  notable: true
+  project: elimination
+  named:
   - Nate Cavanaugh
-  :id: CK2DtEca
-- :date: 2025-04-02
-  :type: disruption
-  :event: DOGE continues its destruction of IMLS by terminating 15 IMLS grants listed
-    under its "Grants to States" program.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.35.3_1.pdf
-  :notable: true
-  :project: spending
-  :case_no: 1:25-cv-00128
-  :agency: IMLS
-  :id: 1IOyNuWv
-- :date: 2025-04-09
-  :type: disruption
-  :event: DOGE terminates most of the remaining grants from IMLS (over 1000 in total).
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.35.3_1.pdf
-  :case_no: 1:25-cv-00128
-  :agency: IMLS
-  :id: 6W6tefIG
-- :date: 2025-05-13
-  :type: legal
-  :case_no: 1:25-cv-00128
-  :event: Ruling in _Rhode Island v. Trump et al_, Judge John McConnell Jr. ordered
-    a preliminary injunction declaring that IMLS grants must be processed and staff
-    brought back.
-  :source: https://www.publishersweekly.com/pw/by-topic/industry-news/libraries/article/98040-results-vary-in-legal-efforts-to-restore-imls.html
-  :project:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.1.1_2.pdf
+  case_no: 1:25-cv-00128
+  agency: IMLS
+  id: oGkzQb5Y
+
+- date: 2025-04-02
+  type: disruption
+  event: >-
+    DOGE continues its destruction of IMLS by terminating 15 IMLS grants listed under its "Grants to States"
+    program.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.35.3_1.pdf
+  notable: true
+  project: spending
+  case_no: 1:25-cv-00128
+  agency: IMLS
+  id: 1IOyNuWv
+
+- date: 2025-04-09
+  type: disruption
+  event: DOGE terminates most of the remaining grants from IMLS (over 1000 in total).
+  source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.35.3_1.pdf
+  case_no: 1:25-cv-00128
+  agency: IMLS
+  id: 6W6tefIG
+
+- date: 2025-05-13
+  type: legal
+  case_no: 1:25-cv-00128
+  event: >-
+    Ruling in _Rhode Island v. Trump et al_, Judge John McConnell Jr. ordered a preliminary injunction
+    declaring that IMLS grants must be processed and staff brought back.
+  source: >-
+    https://www.publishersweekly.com/pw/by-topic/industry-news/libraries/article/98040-results-vary-in-legal-efforts-to-restore-imls.html
+  project:
   - spending
   - elimination
   - personnel
-  :agency: IMLS
-  :id: 3ydapTY9
-- :date: 2025-05-19
-  :type: disruption
-  :event: Although IMLS staff are returned to their positions by court order, employees
-    complain that the email "reinforced attempts to eliminate staff through trauma,
-    force, and malicious compliance."
-  :source: https://www.publishersweekly.com/pw/by-topic/industry-news/libraries/article/98040-results-vary-in-legal-efforts-to-restore-imls.html
-  :project:
+  agency: IMLS
+  id: 3ydapTY9
+
+- date: 2025-05-19
+  type: disruption
+  event: >-
+    Although IMLS staff are returned to their positions by court order, employees complain that the email
+    "reinforced attempts to eliminate staff through trauma, force, and malicious compliance."
+  source: >-
+    https://www.publishersweekly.com/pw/by-topic/industry-news/libraries/article/98040-results-vary-in-legal-efforts-to-restore-imls.html
+  project:
   - personnel
   - elimination
-  :agency: IMLS
-  :id: 5DmuzV7m
-- :date: 2025-06-06
-  :type: legal
-  :event: Ruling in _ALA v. Sonderling_, Judge Richard Leon declines to grant the
-    preliminary injunction sought by plaintiffs, suggesting that the US Court of Federal
-    Claims might be the more appropriate venue for the case, since it involves federal
-    contracts.
-  :source: https://www.publishersweekly.com/pw/by-topic/industry-news/libraries/article/98040-results-vary-in-legal-efforts-to-restore-imls.html
-  :project: spending
-  :agency: IMLS
-  :id: 2F8Zc4RQ
-- :date: 2025-06-12
-  :type: legal
-  :case_no: 1:25-cv-00128
-  :event: The plaintiffs in _Rhode Island v. Trump et al_ file an amended complaint
-    asking the court to rule that the IMLS closure was unconstitutional and violated
-    the Administrative Procedures Act. As part of this filing, they issued summons
-    to Keith Sonderling, Donald Trump, Howard Lutnick and Russell Vought. They have
-    60 days to respond, pushing the nest phase of the trial to August.
-  :named:
+  agency: IMLS
+  id: 5DmuzV7m
+
+- date: 2025-06-06
+  type: legal
+  event: >-
+    Ruling in _ALA v. Sonderling_, Judge Richard Leon declines to grant the preliminary injunction sought
+    by plaintiffs, suggesting that the US Court of Federal Claims might be the more appropriate venue
+    for the case, since it involves federal contracts.
+  source: >-
+    https://www.publishersweekly.com/pw/by-topic/industry-news/libraries/article/98040-results-vary-in-legal-efforts-to-restore-imls.html
+  project: spending
+  agency: IMLS
+  id: 2F8Zc4RQ
+
+- date: 2025-06-12
+  type: legal
+  case_no: 1:25-cv-00128
+  event: >-
+    The plaintiffs in _Rhode Island v. Trump et al_ file an amended complaint asking the court to rule
+    that the IMLS closure was unconstitutional and violated the Administrative Procedures Act. As part
+    of this filing, they issued summons to Keith Sonderling, Donald Trump, Howard Lutnick and Russell
+    Vought. They have 60 days to respond, pushing the nest phase of the trial to August.
+  named:
   - Keith Sonderling
   - Russell Vought
-  :source: https://www.publishersweekly.com/pw/by-topic/industry-news/libraries/article/98040-results-vary-in-legal-efforts-to-restore-imls.html
-  :agency: IMLS
-  :id: 63bcnWEC
-- :date: 2025-06-16
-  :type: oversight
-  :event: The GAO determines that the executive branch violated _The Impoundment Act
-    of 1974_ when it prevented agency functions, including withholding funds that
-    were not eligible for cancellation under any circumstances. The GAO general counsel
-    Edda Emmanuelli Perez noted that GAO had reached out to IMLS for information,
+  source: >-
+    https://www.publishersweekly.com/pw/by-topic/industry-news/libraries/article/98040-results-vary-in-legal-efforts-to-restore-imls.html
+  agency: IMLS
+  id: 63bcnWEC
+
+- date: 2025-06-16
+  type: oversight
+  event: >-
+    The GAO determines that the executive branch violated _The Impoundment Act of 1974_ when it prevented
+    agency functions, including withholding funds that were not eligible for cancellation under any circumstances.
+    The GAO general counsel Edda Emmanuelli Perez noted that GAO had reached out to IMLS for information,
     requesting responses on May 5 and May 12 but were not replied to.
-  :notable: true
-  :source: https://www.publishersweekly.com/pw/by-topic/industry-news/libraries/article/98040-results-vary-in-legal-efforts-to-restore-imls.html
-  :project: spending
-  :agency: IMLS
-  :id: 7f4qUKyi
-- :date: 2025-12-03
-  :type: official
-  :event: After a November 21 federal court decision ruled against them, IMLS announces
-    it has reinstated all federal grants to libraries. The official statement just
-    states however "Upon further review, the Institute of Museum and Library Services
-    has reinstated all federal grants."
-  :notable: true
-  :source: https://www.ala.org/news/2025/12/ala-welcomes-reinstatement-all-federal-imls-grants-libraries
-  :project: spending
-  :agency: IMLS
-  :id: 7IT9mdp8
+  notable: true
+  source: >-
+    https://www.publishersweekly.com/pw/by-topic/industry-news/libraries/article/98040-results-vary-in-legal-efforts-to-restore-imls.html
+  project: spending
+  agency: IMLS
+  id: 7f4qUKyi
+
+- date: 2025-12-03
+  type: official
+  event: >-
+    After a November 21 federal court decision ruled against them, IMLS announces it has reinstated all
+    federal grants to libraries. The official statement just states however "Upon further review, the
+    Institute of Museum and Library Services has reinstated all federal grants."
+  notable: true
+  source: https://www.ala.org/news/2025/12/ala-welcomes-reinstatement-all-federal-imls-grants-libraries
+  project: spending
+  agency: IMLS
+  id: 7IT9mdp8

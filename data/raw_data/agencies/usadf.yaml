@@ -1,204 +1,231 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: U.S. African Development Foundation
-:id: USADF
-:short_name: USADF
-:slug: usadf
-:page_slug: independent#eo1
-:events:
-- :date: 2025-02-19
-  :type: report
-  :event: USADF board member Ward Brehm becomes aware that his agency is going to
-    be targeted by DOGE for elimination.
-  :project: elimination
-  :case_no: 1:25-cv-00660
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.2.pdf
-  :agency: USADF
-  :id: mPJA8JnY
-- :date: 2025-02-20
-  :type: sighting
-  :event: Chris Young meets with USADF leadership at their HQ to "introduce DOGE to
-    the agency" and informs them that 2 engineers would be assigned to the agency.
-  :named:
+name: U.S. African Development Foundation
+id: USADF
+short_name: USADF
+slug: usadf
+page_slug: independent#eo1
+events:
+
+- date: 2025-02-19
+  type: report
+  event: >-
+    USADF board member Ward Brehm becomes aware that his agency is going to be targeted by DOGE for elimination.
+  project: elimination
+  case_no: 1:25-cv-00660
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.2.pdf
+  agency: USADF
+  id: mPJA8JnY
+
+- date: 2025-02-20
+  type: sighting
+  event: >-
+    Chris Young meets with USADF leadership at their HQ to "introduce DOGE to the agency" and informs
+    them that 2 engineers would be assigned to the agency.
+  named:
   - Chris Young
-  :case_no: 1:25-cv-00660
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
-  :agency: USADF
-  :id: Q7jFqwLD
-- :date: 2025-02-21
-  :type: sighting
-  :event: Ethan Shaotran, Jacob Altik, and Nate Cavanaugh arrive at the agency and
-    demand that a Memorandum of Understanding (MOU) must be signed for their detail
-    assignment.
-  :named:
-  - Ethan Shaotran
-  - Jacob Altik
-  - Nate Cavanaugh
-  :case_no: 1:25-cv-00660
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
-  :agency: USADF
-  :id: 7v7sVWG5
-- :date: 2025-02-21
-  :type: disruption
-  :event: Once the MOU is signed, DOGE staff reveal their real purpose is to conduct
-    a massive reduction in agency staff and scope and demand they must file a RIF
-    plan by February 24th.
-  :project: elimination
-  :named:
-  - Ethan Shaotran
-  - Jacob Altik
-  - Nate Cavanaugh
-  :case_no: 1:25-cv-00660
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
-  :agency: USADF
-  :id: dtakM5hM
-- :date: 2025-02-21
-  :type: access
-  :event: Nate Cavanaugh and Jacob Altik then demanded immediate access to USADF systems
-    including financial records and payment and human resources systems. They were
-    told they had to go through standard clearance process.
-  :project:
-  - spending
-  - elimination
-  :named:
-  - Jacob Altik
-  - Nate Cavanaugh
-  :case_no: 1:25-cv-00660
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
-  :agency: USADF
-  :id: QFXkX5nW
-- :date: 2025-02-21
-  :type: disruption
-  :event: Jacob Altik demands waivers to exempt DOGE staff from background checks.
-    He also threatens to fire the USADF board if DOGE's demands are not met.
-  :notable: true
-  :project:
+  case_no: 1:25-cv-00660
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+  agency: USADF
+  id: Q7jFqwLD
+
+- date: 2025-02-21
+  type: disruption
+  event: >-
+    Jacob Altik demands waivers to exempt DOGE staff from background checks. He also threatens to fire
+    the USADF board if DOGE's demands are not met.
+  notable: true
+  project:
   - impunity
   - elimination
-  :named:
+  named:
   - Jacob Altik
-  :case_no: 1:25-cv-00660
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
-  :agency: USADF
-  :id: 7aypySNW
-- :date: 2025-02-21
-  :type: official
-  :event: The USADF general cousel revokes their participation in the Memorandum of
-    Understanding signed between USADF and DOGE. He declares the  MOU was created
-    under false pretenses that DOGE would be assisting the agency in "IT modernization."
-  :notable: true
-  :project:
+  case_no: 1:25-cv-00660
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+  agency: USADF
+  id: 7aypySNW
+
+- date: 2025-02-21
+  type: sighting
+  event: >-
+    Ethan Shaotran, Jacob Altik, and Nate Cavanaugh arrive at the agency and demand that a Memorandum
+    of Understanding (MOU) must be signed for their detail assignment.
+  named:
+  - Ethan Shaotran
+  - Jacob Altik
+  - Nate Cavanaugh
+  case_no: 1:25-cv-00660
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+  agency: USADF
+  id: 7v7sVWG5
+
+- date: 2025-02-21
+  type: access
+  event: >-
+    Nate Cavanaugh and Jacob Altik then demanded immediate access to USADF systems including financial
+    records and payment and human resources systems. They were told they had to go through standard clearance
+    process.
+  project:
+  - spending
+  - elimination
+  named:
+  - Jacob Altik
+  - Nate Cavanaugh
+  case_no: 1:25-cv-00660
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+  agency: USADF
+  id: QFXkX5nW
+
+- date: 2025-02-21
+  type: disruption
+  event: >-
+    Once the MOU is signed, DOGE staff reveal their real purpose is to conduct a massive reduction in
+    agency staff and scope and demand they must file a RIF plan by February 24th.
+  project: elimination
+  named:
+  - Ethan Shaotran
+  - Jacob Altik
+  - Nate Cavanaugh
+  case_no: 1:25-cv-00660
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+  agency: USADF
+  id: dtakM5hM
+
+- date: 2025-02-21
+  type: official
+  event: >-
+    The USADF general cousel revokes their participation in the Memorandum of Understanding signed between
+    USADF and DOGE. He declares the  MOU was created under false pretenses that DOGE would be assisting
+    the agency in "IT modernization."
+  notable: true
+  project:
   - elimination
   - modernization
-  :case_no: 1:25-cv-00660
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
-  :agency: USADF
-  :id: kSet7QgF
-- :date: 2025-02-24
-  :type: disruption
-  :event: USADF President/CEO Ward Brehm receives an email from White House Deputy
-    Director of Personnel Trent Morse notifying him that he is now removed from tbe
-    board.
-  :notable: true
-  :project: elimination
-  :named:
+  case_no: 1:25-cv-00660
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+  agency: USADF
+  id: kSet7QgF
+
+- date: 2025-02-24
+  type: disruption
+  event: >-
+    USADF President/CEO Ward Brehm receives an email from White House Deputy Director of Personnel Trent
+    Morse notifying him that he is now removed from tbe board.
+  notable: true
+  project: elimination
+  named:
   - Trent Morse
-  :case_no: 1:25-cv-00660
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
-  :agency: USADF
-  :id: NrAucFtb
-- :date: 2025-02-28
-  :type: disruption
-  :event: USADF Managing Director of Finance Mathieu Zahui receives an email from
-    White House Deputy Director of Personnel Trent Morse informing him the USADF is
-    now "boardless" and naming Peter Marocco as acting chair. Zahui informs them that
-    the appointment would require senate confirmation first.
-  :project: impunity
-  :case_no: 1:25-cv-00660
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
-  :agency: USADF
-  :named:
+  case_no: 1:25-cv-00660
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+  agency: USADF
+  id: NrAucFtb
+
+- date: 2025-02-28
+  type: disruption
+  event: >-
+    USADF Managing Director of Finance Mathieu Zahui receives an email from White House Deputy Director
+    of Personnel Trent Morse informing him the USADF is now "boardless" and naming Peter Marocco as acting
+    chair. Zahui informs them that the appointment would require senate confirmation first.
+  project: impunity
+  case_no: 1:25-cv-00660
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+  agency: USADF
+  named:
   - Trent Morse
-  :id: M6gCSNxa
-- :date: 2025-03-03
-  :type: report
-  :event: Defying the White House, USADF board member Ward Brehm is elected by the
-    existing board of the USADF as President/CEO of USADF.
-  :case_no: 1:25-cv-00660
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.2.pdf
-  :agency: USADF
-  :id: 3W8Pu6iy
-- :date: 2025-03-04
-  :type: disruption
-  :event: USADF CFO Mathieu Zahui receives an email from Nate Cavanaugh informing
-    him that Peter Marocco would be coming to the office the following day in his
-    declared capacity as Chairman of the Board.
-  :named:
+  id: M6gCSNxa
+
+- date: 2025-03-03
+  type: report
+  event: >-
+    Defying the White House, USADF board member Ward Brehm is elected by the existing board of the USADF
+    as President/CEO of USADF.
+  case_no: 1:25-cv-00660
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.2.pdf
+  agency: USADF
+  id: 3W8Pu6iy
+
+- date: 2025-03-04
+  type: disruption
+  event: >-
+    USADF CFO Mathieu Zahui receives an email from Nate Cavanaugh informing him that Peter Marocco would
+    be coming to the office the following day in his declared capacity as Chairman of the Board.
+  named:
   - Nate Cavanaugh
   - Peter Marocco
-  :case_no: 1:25-cv-00660
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.2.pdf
-  :agency: USADF
-  :id: HBHAt2jo
-- :date: 2025-03-05
-  :type: disruption
-  :event: Nate Cavanaugh sends Ward Brehm an email demanding to know by what authority
-    he is the President/CFO of USADF.
-  :named:
+  case_no: 1:25-cv-00660
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.2.pdf
+  agency: USADF
+  id: HBHAt2jo
+
+- date: 2025-03-05
+  type: disruption
+  event: >-
+    Nate Cavanaugh sends Ward Brehm an email demanding to know by what authority he is the President/CFO
+    of USADF.
+  named:
   - Nate Cavanaugh
-  :case_no: 1:25-cv-00660
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.2.pdf
-  :agency: USADF
-  :id: 5XqG48jY
-- :date: 2025-03-05
-  :type: disruption
-  :event: Jacob Altik and Ethan Shaotran are rebuffed by agency leadership when attempting
-    to enter the agency headquarters.
-  :named:
+  case_no: 1:25-cv-00660
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.2.pdf
+  agency: USADF
+  id: 5XqG48jY
+
+- date: 2025-03-05
+  type: disruption
+  event: >-
+    Jacob Altik and Ethan Shaotran are rebuffed by agency leadership when attempting to enter the agency
+    headquarters.
+  named:
   - Jacob Altik
   - Ethan Shaotran
-  :case_no: 1:25-cv-00660
-  :source: https://www.thedailybeast.com/elon-musks-doge-goons-in-tense-standoff-video-unmasked/
-  :agency: USADF
-  :id: 7QXxV37g
-- :date: 2025-03-06
-  :type: disruption
-  :event: DOGE staff Jacob Altik and Ethan Shaotran return to the agency joined by
-    Nate Cavanaugh and US marshals to force their way into the agency.
-  :notable: true
-  :named:
+  case_no: 1:25-cv-00660
+  source: https://www.thedailybeast.com/elon-musks-doge-goons-in-tense-standoff-video-unmasked/
+  agency: USADF
+  id: 7QXxV37g
+
+- date: 2025-03-06
+  type: disruption
+  event: >-
+    DOGE staff Jacob Altik and Ethan Shaotran return to the agency joined by Nate Cavanaugh and US marshals
+    to force their way into the agency.
+  notable: true
+  named:
   - Jacob Altik
   - Ethan Shaotran
   - Nate Cavanaugh
-  :source: https://www.thedailybeast.com/elon-musks-doge-goons-in-tense-standoff-video-unmasked/
-  :agency: USADF
-  :id: moEAf65R
-- :date: 2025-03-10
-  :type: onboard
-  :event: The Trump administration nominates Laken Rapier and Russell Vought to be
-    on the board of the USADF.
-  :named:
+  source: https://www.thedailybeast.com/elon-musks-doge-goons-in-tense-standoff-video-unmasked/
+  agency: USADF
+  id: moEAf65R
+
+- date: 2025-03-10
+  type: onboard
+  event: The Trump administration nominates Laken Rapier and Russell Vought to be on the board of the
+    USADF.
+  named:
   - Russell Vought
-  :source: https://www.senate.gov/legislative/LIS/executive_calendar/xcalv.pdf
-  :agency: USADF
-  :id: fnPuKCNX
-- :date: 2025-06-10
-  :type: legal
-  :event: Ruling in _Brehm v. Marocco_, Judge Leon denies the plaintiff's request
-    for a temporary restraining order, finding that Trump was likely within the bounds
-    of the law when he removed board members of the USADF.
-  :project: impunity
-  :case_no: 1:25-cv-00660
-  :source: https://clearinghouse.net/case/46200/
-  :agency: USADF
-  :id: 7SKDJ6RT
-- :date: 2025-07-01
-  :type: legal
-  :case_no: 1:25-cv-01631
-  :notable: true
-  :event: A federal judge grants a preliminary injunction ruling that Trump violated
-    federal laws when he appointed Peter Marocco as the head of the USADF, meaning
-    that all of his subsequent actions to dismantle the agency should be considered
-    null and void.
-  :source: https://clearinghouse.net/case/46623/
-  :agency: USADF
-  :id: 46C7TmBl
+  source: https://www.senate.gov/legislative/LIS/executive_calendar/xcalv.pdf
+  agency: USADF
+  id: fnPuKCNX
+
+- date: 2025-06-10
+  type: legal
+  event: >-
+    Ruling in _Brehm v. Marocco_, Judge Leon denies the plaintiff's request for a temporary restraining
+    order, finding that Trump was likely within the bounds of the law when he removed board members of
+    the USADF.
+  project: impunity
+  case_no: 1:25-cv-00660
+  source: https://clearinghouse.net/case/46200/
+  agency: USADF
+  id: 7SKDJ6RT
+
+- date: 2025-07-01
+  type: legal
+  case_no: 1:25-cv-01631
+  notable: true
+  event: >-
+    A federal judge grants a preliminary injunction ruling that Trump violated federal laws when he appointed
+    Peter Marocco as the head of the USADF, meaning that all of his subsequent actions to dismantle the
+    agency should be considered null and void.
+  source: https://clearinghouse.net/case/46623/
+  agency: USADF
+  id: 46C7TmBl

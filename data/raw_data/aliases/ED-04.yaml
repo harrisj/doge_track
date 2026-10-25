@@ -1,28 +1,34 @@
+# yaml-language-server: $schema=../schemas/aliases-file.json
 ---
-:id: ED-04
-:agency: Education
-:name: Brooks Morgan
-:name_truth: inferred
-:source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
-:evidence:
-- This is the only consultant position listed in [this legal document](https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf)
-- Further down the same document, a table lists one consultant starting on the same
-  date unredacted and it's Brooks Morgan
-:positions:
-- :id: education-employee-4
-  :type: consultant
-  :category: wrecker
-  :comment: Part-time
-  :start_date: 2025-02-04
-  :start_date_truth: verified
-  :nte_date: 2025-08-04
-  :nte_date_truth: verified
-  :end_date: 2025-08-04
-  :end_date_truth: guessed
-  :end_type: resigned
-  :agency: Education
-  :salary: "$0"
-  :table_note: likely Brooks Morgan who does report starting a new role in August
-  :source:
+id: ED-04
+agency: Education
+name: Brooks Morgan
+name_truth: inferred
+source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf
+evidence:
+
+- >-
+  This is the only consultant position listed in [this legal document](https://storage.courtlistener.com/recap/gov.uscourts.dcd.277216/gov.uscourts.dcd.277216.32.1.pdf)
+
+- >-
+  Further down the same document, a table lists one consultant starting on the same date unredacted and
+  it's Brooks Morgan
+positions:
+
+- id: education-employee-4
+  type: consultant
+  category: wrecker
+  comment: Part-time
+  start_date: 2025-02-04
+  start_date_truth: verified
+  nte_date: 2025-08-04
+  nte_date_truth: verified
+  end_date: 2025-08-04
+  end_date_truth: guessed
+  end_type: resigned
+  agency: Education
+  salary: "$0"
+  table_note: likely Brooks Morgan who does report starting a new role in August
+  source:
   - https://www.documentcloud.org/documents/26028771-onboard-education-employee-4/
   - https://www.linkedin.com/in/brooksmorgan/

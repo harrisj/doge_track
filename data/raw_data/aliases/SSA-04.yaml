@@ -1,30 +1,35 @@
+# yaml-language-server: $schema=../schemas/aliases-file.json
 ---
-:id: SSA-04
-:agency: SSA
-:name: Antonio Gracias
-:name_truth: inferred
-:evidence:
-- "[NPR has done analysis on docs to identify directly](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
-:positions:
-- :id: ssa-antonio-gracias
-  :type: appointed
-  :category: wrecker
-  :agency: SSA
-  :pd_code: KNX0370
-  :start_date: 2025-02-23
-  :start_date_truth: verified
-  :nte_date: 2026-02-22
-  :nte_date_truth: verified
-  :end_date: 2025-07-01
-  :end_date_truth: verified
-  :end_type: resigned
-  :title: Expert
-  :pay_grade: ED-00
-  :salary: "$0"
-  :series: '0301'
-  :office: Office of the Chief Information Officer
-  :qualifications: Founder, CEO and Chief Investment Officer of [REDACTED]. Over 25
-    years of experience in private equity investing.
-  :comment: SF-50 is a correction
-  :source:
+id: SSA-04
+agency: SSA
+name: Antonio Gracias
+name_truth: inferred
+evidence:
+
+- >-
+  [NPR has done analysis on docs to identify directly](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)
+positions:
+
+- id: ssa-antonio-gracias
+  type: appointed
+  category: wrecker
+  agency: SSA
+  pd_code: KNX0370
+  start_date: 2025-02-23
+  start_date_truth: verified
+  nte_date: 2026-02-22
+  nte_date_truth: verified
+  end_date: 2025-07-01
+  end_date_truth: verified
+  end_type: resigned
+  title: Expert
+  pay_grade: ED-00
+  salary: "$0"
+  series: '0301'
+  office: Office of the Chief Information Officer
+  qualifications: >-
+    Founder, CEO and Chief Investment Officer of [REDACTED]. Over 25 years of experience in private equity
+    investing.
+  comment: SF-50 is a correction
+  source:
   - https://www.documentcloud.org/documents/26028768-onboard-opm-employee-4/

@@ -1,24 +1,27 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Baris Akis
-:slug: baris-akis
-:sort_name: Akis
-:skill: recruiter
-:association: auxiliary
-:linkedin: https://www.linkedin.com/in/barisakis/
-:blurb: Baris Akis was a booster for DOGE before it even formally existed, and he
-  has been linked to its activities at the IRS, Treasury and OPM by the _New York
-  Times_. As a non-US citizen (he has a green card), Mr. Akis is not formally a part
-  of DOGE, but he was identified as leading operations as recently as March alongside
-  fellow Musk loyalists Anthony Armstrong and Steve Davis. He is the president and
-  co-founder of the company Human Capital.
-:tech_links:
+name: Baris Akis
+slug: baris-akis
+sort_name: Akis
+skill: recruiter
+association: auxiliary
+linkedin: https://www.linkedin.com/in/barisakis/
+blurb: >-
+  Baris Akis was a booster for DOGE before it even formally existed, and he has been linked to its activities
+  at the IRS, Treasury and OPM by the _New York Times_. As a non-US citizen (he has a green card), Mr.
+  Akis is not formally a part of DOGE, but he was identified as leading operations as recently as March
+  alongside fellow Musk loyalists Anthony Armstrong and Steve Davis. He is the president and co-founder
+  of the company Human Capital.
+tech_links:
+
 - Human Capital
-:affiliations:
-- :entity_id: human-capital
-  :role: founder
-  :timeframe: before
-  :immediate: true
-  :source: https://www.linkedin.com/in/barisakis/
-  :connection_truth: verified
-  :id: 9VN7iznQ
-:positions: []
+affiliations:
+
+- entity_id: human-capital
+  role: founder
+  timeframe: before
+  immediate: true
+  source: https://www.linkedin.com/in/barisakis/
+  connection_truth: verified
+  id: 9VN7iznQ
+positions: []

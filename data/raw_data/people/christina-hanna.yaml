@@ -1,67 +1,75 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Christina Hanna
-:sort_name: Hanna
-:slug: christina-hanna
-:age: 39
-:skill: administrator
-:blurb: Before DOGE, Christina Hanna worked at both SpaceX and for Elon Musk personally
-  as an HR manager. Her activities at OPM since her start have not been publicly disclosed.
-:tech_links:
+name: Christina Hanna
+sort_name: Hanna
+slug: christina-hanna
+age: 39
+skill: administrator
+blurb: >-
+  Before DOGE, Christina Hanna worked at both SpaceX and for Elon Musk personally as an HR manager. Her
+  activities at OPM since her start have not been publicly disclosed.
+tech_links:
+
 - SpaceX
+
 - Musk family
-:linkedin: https://www.linkedin.com/in/christina-hanna-75839b41/
-:govt_exit_date: 2025-03-05
-:govt_exit_truth: verified
-:govt_exit_type: resigned
-:affiliations:
-- :entity_id: spacex
-  :connection_truth: self-reported
-  :role: employee
-  :timeframe: before
-  :immediate: true
-  :start_date: 2016-05-XX
-  :start_date_truth: self-reported
-  :source: https://www.linkedin.com/in/christina-hanna-75839b41/
-  :id: J8sqiosv
-- :entity_id: amazon
-  :timeframe: before
-  :connection_truth: self-reported
-  :role: employee
-  :start_date: 2013-06-XX
-  :start_date_truth: self-reported
-  :end_date: 2016-05-XX
-  :end_date_truth: self-reported
-  :source: https://www.linkedin.com/in/christina-hanna-75839b41/
-  :id: 4poPcbev
-:positions:
-- :id: opm-christina-hanna
-  :type: appointed
-  :category: support
-  :agency: OPM
-  :project: personnel
-  :start_date: 2025-02-03
-  :start_date_truth: verified
-  :end_date: 2025-03-05
-  :end_date_truth: guessed
-  :end_type: resigned
-  :description: Exc Appt NTE
-  :appt_type_code: 48
-  :appt_type: Other
-  :excepted: true
-  :pd_code: 6A39735
-  :salary: "$0"
-  :title: Expert
-  :title_type: advisor
-  :pay_grade: ED-00
-  :series: '0301'
-  :supervisory: false
-  :office: Office of the Director
-  :comment: Sourced from FOIAed document
-  :source:
+linkedin: https://www.linkedin.com/in/christina-hanna-75839b41/
+govt_exit_date: 2025-03-05
+govt_exit_truth: verified
+govt_exit_type: resigned
+affiliations:
+
+- entity_id: spacex
+  connection_truth: self-reported
+  role: employee
+  timeframe: before
+  immediate: true
+  start_date: 2016-05-XX
+  start_date_truth: self-reported
+  source: https://www.linkedin.com/in/christina-hanna-75839b41/
+  id: J8sqiosv
+
+- entity_id: amazon
+  timeframe: before
+  connection_truth: self-reported
+  role: employee
+  start_date: 2013-06-XX
+  start_date_truth: self-reported
+  end_date: 2016-05-XX
+  end_date_truth: self-reported
+  source: https://www.linkedin.com/in/christina-hanna-75839b41/
+  id: 4poPcbev
+positions:
+
+- id: opm-christina-hanna
+  type: appointed
+  category: support
+  agency: OPM
+  project: personnel
+  start_date: 2025-02-03
+  start_date_truth: verified
+  end_date: 2025-03-05
+  end_date_truth: guessed
+  end_type: resigned
+  description: Exc Appt NTE
+  appt_type_code: 48
+  appt_type: Other
+  excepted: true
+  pd_code: 6A39735
+  salary: "$0"
+  title: Expert
+  title_type: advisor
+  pay_grade: ED-00
+  series: '0301'
+  supervisory: false
+  office: Office of the Director
+  comment: Sourced from FOIAed document
+  source:
   - https://www.documentcloud.org/documents/26028780-opm-new-hires/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-  :same_as: opm-christina-hanna
-  :table_note: Start date guessed from system access.
-  :name: Christina Hanna
-  :alias: OPM-12
+  same_as: opm-christina-hanna
+  table_note: Start date guessed from system access.
+  name: Christina Hanna
+  alias: OPM-12

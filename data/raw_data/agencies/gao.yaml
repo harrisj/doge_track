@@ -1,28 +1,33 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Government Accountability Office
-:id: GAO
-:slug: gao
-:short_name: GAO
-:page_slug: independent#leg
-:events:
-- :date: 2025-05-13
-  :type: sighting
-  :event: Justin Fox emails GAO (cc'ing Nate Cavanaugh) to schedule a call to get
-    a DOGE team assigned to the GAO. This is despite the GAO being located in the
-    legislative branch and thus not answerable to the President.
-  :notable: true
-  :named:
+name: Government Accountability Office
+id: GAO
+slug: gao
+short_name: GAO
+page_slug: independent#leg
+events:
+
+- date: 2025-05-13
+  type: sighting
+  event: >-
+    Justin Fox emails GAO (cc'ing Nate Cavanaugh) to schedule a call to get a DOGE team assigned to the
+    GAO. This is despite the GAO being located in the legislative branch and thus not answerable to the
+    President.
+  notable: true
+  named:
   - Justin Fox
   - Nate Cavanaugh
-  :source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
-  :agency: GAO
-  :id: 4puong1Y
-- :date: 2025-05-16
-  :type: official
-  :event: A GAO spokesman confirms that DOGE had attempted to assign a team to the
-    agency but had been rebuffed by agency leadership.
-  :notable: true
-  :project: impunity
-  :agency: GAO
-  :source: https://www.nytimes.com/2025/05/16/us/politics/doge-musk-gao-accountability-office.html
-  :id: 3QZhm9bF
+  source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+  agency: GAO
+  id: 4puong1Y
+
+- date: 2025-05-16
+  type: official
+  event: >-
+    A GAO spokesman confirms that DOGE had attempted to assign a team to the agency but had been rebuffed
+    by agency leadership.
+  notable: true
+  project: impunity
+  agency: GAO
+  source: https://www.nytimes.com/2025/05/16/us/politics/doge-musk-gao-accountability-office.html
+  id: 3QZhm9bF

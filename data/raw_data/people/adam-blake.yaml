@@ -1,33 +1,39 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Adam Blake
-:sort_name: Blake
-:slug: adam-blake
-:skill: executive
-:linkedin: https://www.linkedin.com/in/adamrblake/
-:positions:
-- :id: energy-blake
-  :type: unknown
-  :category: wrecker
-  :agency: Energy
-  :sort_date: 2025-03-15
-  :start_date: 2025-03-XX
-  :start_date_truth: reported
-  :project: deregulation
-  :table_note: Detailed from Energy to NRC, so assuming start there
-  :salary: "$167,603"
-  :source:
-  - https://thehill.com/policy/energy-environment/5397152-doge-staffer-trump-reforms-nrc-nuclear-regulatory-commission/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-- :id: detail-energy-nrc-blake
-  :type: detailed
-  :category: wrecker
-  :agency: NRC
-  :from: Energy
-  :from_truth: verified
-  :project: deregulation
-  :office: Office of the Executive Director for Operations
-  :table_note: In charge of implementing EO 14300
-  :sort_date: 2025-07-11
-  :start_date: 2025-07-(11)?
-  :start_date_truth: reported
-  :source: https://thehill.com/policy/energy-environment/5397152-doge-staffer-trump-reforms-nrc-nuclear-regulatory-commission/
+name: Adam Blake
+sort_name: Blake
+slug: adam-blake
+skill: executive
+linkedin: https://www.linkedin.com/in/adamrblake/
+positions:
+
+- id: energy-blake
+  type: unknown
+  category: wrecker
+  agency: Energy
+  sort_date: 2025-03-15
+  start_date: 2025-03-XX
+  start_date_truth: reported
+  project: deregulation
+  table_note: Detailed from Energy to NRC, so assuming start there
+  salary: "$167,603"
+  source:
+  - >-
+    https://thehill.com/policy/energy-environment/5397152-doge-staffer-trump-reforms-nrc-nuclear-regulatory-commission/
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+
+- id: detail-energy-nrc-blake
+  type: detailed
+  category: wrecker
+  agency: NRC
+  from: Energy
+  from_truth: verified
+  project: deregulation
+  office: Office of the Executive Director for Operations
+  table_note: In charge of implementing EO 14300
+  sort_date: 2025-07-11
+  start_date: 2025-07-(11)?
+  start_date_truth: reported
+  source: >-
+    https://thehill.com/policy/energy-environment/5397152-doge-staffer-trump-reforms-nrc-nuclear-regulatory-commission/

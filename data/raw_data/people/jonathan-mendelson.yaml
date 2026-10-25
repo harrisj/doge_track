@@ -1,79 +1,87 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Jonathan Mendelson
-:sort_name: Mendelson
-:slug: jonathan-mendelson
-:linkedin: https://www.linkedin.com/in/mendelsonjonathan/
-:blurb: An April addition to the DOGE lineup, Jonathan Mendelson has been part of
-  Nate Cavanaugh's wrecking crew that visits small independent executive agencies
-  to subvert and destroy them. He has been spotted at the SEC and the USDFC so far,
-  which is concerning considering he comes from a background in venture capital and
-  investment banking. Prior to DOGE, he was an investor in the Silicon Valley VC firm
-  Accel.
-:skill: analyst
-:govt_exit_date: 2025-12-XX
-:govt_exit_type: resigned
-:govt_exit_truth: reported
-:affiliations:
-- :entity_id: doge-indie-wreckers
-  :role: member
-  :connection_truth: reported
-  :timeframe: during
-  :start_date: 2025-04-09
-  :start_date_truth: inferred
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-  :id: 7bOE34Ta
-- :entity_id: polymarket
-  :role: employee
-  :connection_truth: reported
-  :timeframe: after
-  :immediate: true
-  :start_date: 2025-12-XX
-  :start_date_truth: reported
-  :source: https://www.wired.com/story/doge-veterans-are-landing-big-jobs-at-prediction-markets/
-  :id: 4RMN548U
-:positions:
-- :id: gsa-mendelson
-  :type: appointed
-  :category: wrecker
-  :start_date: 2025-04-09
-  :start_date_truth: reported
-  :end_date: 2025-12-XX
-  :end_type: resigned
-  :end_date_truth: reported
-  :source:
+name: Jonathan Mendelson
+sort_name: Mendelson
+slug: jonathan-mendelson
+linkedin: https://www.linkedin.com/in/mendelsonjonathan/
+blurb: >-
+  An April addition to the DOGE lineup, Jonathan Mendelson has been part of Nate Cavanaugh's wrecking
+  crew that visits small independent executive agencies to subvert and destroy them. He has been spotted
+  at the SEC and the USDFC so far, which is concerning considering he comes from a background in venture
+  capital and investment banking. Prior to DOGE, he was an investor in the Silicon Valley VC firm Accel.
+skill: analyst
+govt_exit_date: 2025-12-XX
+govt_exit_type: resigned
+govt_exit_truth: reported
+affiliations:
+
+- entity_id: doge-indie-wreckers
+  role: member
+  connection_truth: reported
+  timeframe: during
+  start_date: 2025-04-09
+  start_date_truth: inferred
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  id: 7bOE34Ta
+
+- entity_id: polymarket
+  role: employee
+  connection_truth: reported
+  timeframe: after
+  immediate: true
+  start_date: 2025-12-XX
+  start_date_truth: reported
+  source: https://www.wired.com/story/doge-veterans-are-landing-big-jobs-at-prediction-markets/
+  id: 4RMN548U
+positions:
+
+- id: gsa-mendelson
+  type: appointed
+  category: wrecker
+  start_date: 2025-04-09
+  start_date_truth: reported
+  end_date: 2025-12-XX
+  end_type: resigned
+  end_date_truth: reported
+  source:
   - https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
   - https://www.wired.com/story/doge-veterans-are-landing-big-jobs-at-prediction-markets/
-  :agency: GSA
-- :id: detail-gsa-sec-mendelson
-  :type: detailed
-  :from: GSA
-  :category: wrecker
-  :from_truth: guessed
-  :start_date: 2025-04-25
-  :start_date_truth: reported
-  :end_date: 2025-10-31
-  :end_date_truth: reported
-  :end_type: detail_ended
-  :project: deregulation
-  :title: Advisor
-  :title_type: advisor
-  :office: Chairman of the SEC
-  :table_note: title sourced from ProPublica, reportedly not seen at agency for last
-    few months of official station
-  :source:
-  - https://www.reuters.com/sustainability/boards-policy-regulation/doge-expands-presence-wall-st-regulator-sources-say-2025-05-02/
-  - https://www.reuters.com/sustainability/boards-policy-regulation/doge-leave-top-us-markets-regulator-sources-say-2025-10-30/
+  agency: GSA
+
+- id: detail-gsa-sec-mendelson
+  type: detailed
+  from: GSA
+  category: wrecker
+  from_truth: guessed
+  start_date: 2025-04-25
+  start_date_truth: reported
+  end_date: 2025-10-31
+  end_date_truth: reported
+  end_type: detail_ended
+  project: deregulation
+  title: Advisor
+  title_type: advisor
+  office: Chairman of the SEC
+  table_note: title sourced from ProPublica, reportedly not seen at agency for last few months of official
+    station
+  source:
+  - >-
+    https://www.reuters.com/sustainability/boards-policy-regulation/doge-expands-presence-wall-st-regulator-sources-say-2025-05-02/
+  - >-
+    https://www.reuters.com/sustainability/boards-policy-regulation/doge-leave-top-us-markets-regulator-sources-say-2025-10-30/
   - https://www.gao.gov/assets/gao-26-108192.pdf
-  :agency: SEC
-- :id: detail-gsa-dfc-mendelson
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: guessed
-  :start_date: 2025-04-28
-  :start_date_truth: reported
-  :project:
+  agency: SEC
+
+- id: detail-gsa-dfc-mendelson
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: guessed
+  start_date: 2025-04-28
+  start_date_truth: reported
+  project:
   - elimination
   - spending
-  :source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
-  :agency: USDFC
+  source: >-
+    https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+  agency: USDFC

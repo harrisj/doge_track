@@ -1,119 +1,128 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Adam Ramada
-:sort_name: Ramada
-:slug: adam-ramada
-:age: 35
-:skill: coder
-:linkedin: https://www.linkedin.com/in/adam-ramada-b0836869/
-:blurb: Adam Ramada is thus far the only DOGE wrecker to have testified under oath
-  in a deposition, appearing as a witness in litigation brought both against the Department
-  of Education and the Department of Labor. He was detailed to both agencies directly
-  from DOGE, but it's unclear if he was still employed by the US DOGE Service or was
-  been officially onboarded at another agency like his DOGE colleagues Jordan Wick
-  and Amy Gleason. According to his LinkedIn, he has been working since August for
-  the same company (Banner VC) as fellow DOGE member Brooks Morgan.
-:govt_exit_date: 2025-08-XX
-:govt_exit_truth: self-reported
-:govt_exit_type: resigned
-:affiliations:
-- :entity_id: banner-vc
-  :role: founder
-  :timeframe: after
-  :immediate: true
-  :start_date: 2025-08-XX
-  :start_date_truth: self-reported
-  :connection_truth: self-reported
-  :source: https://www.linkedin.com/in/adam-ramada-b0836869/
-  :id: 4yyoivTB
-:positions:
-- :id: doge-adam-ramada
-  :type: appointed
-  :category: wrecker
-  :start_date: 2025-01-23
-  :start_date_truth: verified
-  :end_date: 2025-06-30
-  :end_date_truth: reported
-  :end_type: resigned
-  :comment: Details provided in sworn testimony
-  :agency: DOGE
-  :source:
+name: Adam Ramada
+sort_name: Ramada
+slug: adam-ramada
+age: 35
+skill: coder
+linkedin: https://www.linkedin.com/in/adam-ramada-b0836869/
+blurb: >-
+  Adam Ramada is thus far the only DOGE wrecker to have testified under oath in a deposition, appearing
+  as a witness in litigation brought both against the Department of Education and the Department of Labor.
+  He was detailed to both agencies directly from DOGE, but it's unclear if he was still employed by the
+  US DOGE Service or was been officially onboarded at another agency like his DOGE colleagues Jordan Wick
+  and Amy Gleason. According to his LinkedIn, he has been working since August for the same company (Banner
+  VC) as fellow DOGE member Brooks Morgan.
+govt_exit_date: 2025-08-XX
+govt_exit_truth: self-reported
+govt_exit_type: resigned
+affiliations:
+
+- entity_id: banner-vc
+  role: founder
+  timeframe: after
+  immediate: true
+  start_date: 2025-08-XX
+  start_date_truth: self-reported
+  connection_truth: self-reported
+  source: https://www.linkedin.com/in/adam-ramada-b0836869/
+  id: 4yyoivTB
+positions:
+
+- id: doge-adam-ramada
+  type: appointed
+  category: wrecker
+  start_date: 2025-01-23
+  start_date_truth: verified
+  end_date: 2025-06-30
+  end_date_truth: reported
+  end_type: resigned
+  comment: Details provided in sworn testimony
+  agency: DOGE
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.5_1.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
-- :id: detail-doge-education-adam-ramada
-  :start_date: 2025-01-28
-  :start_date_truth: verified
-  :end_date: 2025-08-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :project:
+
+- id: detail-doge-education-adam-ramada
+  start_date: 2025-01-28
+  start_date_truth: verified
+  end_date: 2025-08-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  project:
   - fraud
   - spending
-  :agency: Education
-  :from: DOGE
-  :from_truth: verified
-  :type: detailed
-  :category: wrecker
-  :salary: "$0"
-  :source:
+  agency: Education
+  from: DOGE
+  from_truth: verified
+  type: detailed
+  category: wrecker
+  salary: "$0"
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.5_1.pdf
   - https://www.linkedin.com/in/adam-ramada-b0836869/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-  :signed_date: 2025-02-12
-  :nte_date: 2026-07-04
-  :nte_date_truth: verified
-  :comment: He reports one other USDS detailee is there, 2 Education staffers, and
-    2 other detailees from elsewhere (OPM? GSA?)
-  :reimbursed: false
-- :id: detail-doge-energy-adam-ramada
-  :type: detailed
-  :category: wrecker
-  :from: DOGE
-  :from_truth: guessed
-  :agency: Energy
-  :project: deregulation
-  :sort_date: 2025-02-04
-  :start_date: 2025-02-(04)~
-  :start_date_truth: disputed
-  :comment: Start date was given by DOE spokesperson denying a news report
-- :id: detail-doge-dol-ramada
-  :type: detailed
-  :category: wrecker
-  :from: DOGE
-  :from_truth: verified
-  :agency: DOL
-  :project:
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  signed_date: 2025-02-12
+  nte_date: 2026-07-04
+  nte_date_truth: verified
+  comment: >-
+    He reports one other USDS detailee is there, 2 Education staffers, and 2 other detailees from elsewhere
+    (OPM? GSA?)
+  reimbursed: false
+
+- id: detail-doge-energy-adam-ramada
+  type: detailed
+  category: wrecker
+  from: DOGE
+  from_truth: guessed
+  agency: Energy
+  project: deregulation
+  sort_date: 2025-02-04
+  start_date: 2025-02-(04)~
+  start_date_truth: disputed
+  comment: Start date was given by DOE spokesperson denying a news report
+
+- id: detail-doge-dol-ramada
+  type: detailed
+  category: wrecker
+  from: DOGE
+  from_truth: verified
+  agency: DOL
+  project:
   - spending
   - immigration
-  :start_date: 2025-02-05
-  :start_date_truth: verified
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.16.1.pdf
-  :comment: Testimony was on 2/6. DOGE showed up at agency on 2/5. Mentions 3 other
-    DOGE staff there
-- :id: detail-education-treasury-ramada
-  :type: detailed
-  :category: wrecker
-  :agency: Treasury
-  :from: Education
-  :from_truth: verified
-  :reimbursed: false
-  :project:
+  start_date: 2025-02-05
+  start_date_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.16.1.pdf
+  comment: Testimony was on 2/6. DOGE showed up at agency on 2/5. Mentions 3 other DOGE staff there
+
+- id: detail-education-treasury-ramada
+  type: detailed
+  category: wrecker
+  agency: Treasury
+  from: Education
+  from_truth: verified
+  reimbursed: false
+  project:
   - spending
   - fraud
-  :title: Senior Treasury Advisor
-  :title_type: advisor
-  :start_date: 2025-04-09
-  :start_date_truth: verified
-  :table_note: Was he detailed from Education after detailed from DOGE? Or has he
-    been hired by Education since?
-  :source: https://www.documentcloud.org/documents/26028801-mou-20250408-education-treasury/
-  :mou: https://www.documentcloud.org/documents/26028801-mou-20250408-education-treasury/
-- :id: detail-doge-fdic-ramada
-  :type: detailed
-  :category: wrecker
-  :from: DOGE
-  :from_truth: guessed
-  :project: deregulation
-  :start_date: 2025-04-10
-  :start_date_truth: reported
-  :source: https://www.thehandbasket.co/p/doge-fdic
-  :agency: FDIC
+  title: Senior Treasury Advisor
+  title_type: advisor
+  start_date: 2025-04-09
+  start_date_truth: verified
+  table_note: Was he detailed from Education after detailed from DOGE? Or has he been hired by Education
+    since?
+  source: https://www.documentcloud.org/documents/26028801-mou-20250408-education-treasury/
+  mou: https://www.documentcloud.org/documents/26028801-mou-20250408-education-treasury/
+
+- id: detail-doge-fdic-ramada
+  type: detailed
+  category: wrecker
+  from: DOGE
+  from_truth: guessed
+  project: deregulation
+  start_date: 2025-04-10
+  start_date_truth: reported
+  source: https://www.thehandbasket.co/p/doge-fdic
+  agency: FDIC

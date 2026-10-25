@@ -1,41 +1,45 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Ted Malaska
-:sort_name: Malaska
-:slug: ted-malaska
-:skill: coder
-:blurb: One of the four SpaceX engineers who were brought into the FAA on an ad hoc
-  basis, he was only approved to work for 4 days at the agency. It seems like that
-  term was extended however, only to be revoked in the wake of Elon Musk's departure.
-  Ted was also named in several reports where he promised to steamroll any federal
-  staff who got in his way.
-:tech_links:
+name: Ted Malaska
+sort_name: Malaska
+slug: ted-malaska
+skill: coder
+blurb: >-
+  One of the four SpaceX engineers who were brought into the FAA on an ad hoc basis, he was only approved
+  to work for 4 days at the agency. It seems like that term was extended however, only to be revoked in
+  the wake of Elon Musk's departure. Ted was also named in several reports where he promised to steamroll
+  any federal staff who got in his way.
+tech_links:
+
 - SpaceX
-:govt_exit_date: 2025-06-02
-:govt_exit_truth: reported
-:govt_exit_type: fired
-:affiliations:
-- :entity_id: spacex
-  :role: employee
-  :timeframe: before
-  :returned: true
-  :immediate: true
-  :connection_truth: reported
-  :source: https://www.washingtonpost.com/business/2025/06/08/doge-elon-musk-exit-trump/
-  :id: 3u5cjW8e
-:positions:
-- :id: faa-malaska
-  :type: appointed
-  :category: wrecker
-  :project: modernization
-  :agency: FAA
-  :start_date: 2025-02-16
-  :start_date_truth: reported
-  :nte_date: 2025-02-20
-  :nte_date_truth: verified
-  :end_date: 2025-06-02
-  :end_date_truth: reported
-  :end_type: fired
-  :title: Senior Advisor
-  :title_type: advisor
-  :office: Office of the Administrator
-  :source: https://www.washingtonpost.com/business/2025/06/08/doge-elon-musk-exit-trump/
+govt_exit_date: 2025-06-02
+govt_exit_truth: reported
+govt_exit_type: fired
+affiliations:
+
+- entity_id: spacex
+  role: employee
+  timeframe: before
+  returned: true
+  immediate: true
+  connection_truth: reported
+  source: https://www.washingtonpost.com/business/2025/06/08/doge-elon-musk-exit-trump/
+  id: 3u5cjW8e
+positions:
+
+- id: faa-malaska
+  type: appointed
+  category: wrecker
+  project: modernization
+  agency: FAA
+  start_date: 2025-02-16
+  start_date_truth: reported
+  nte_date: 2025-02-20
+  nte_date_truth: verified
+  end_date: 2025-06-02
+  end_date_truth: reported
+  end_type: fired
+  title: Senior Advisor
+  title_type: advisor
+  office: Office of the Administrator
+  source: https://www.washingtonpost.com/business/2025/06/08/doge-elon-musk-exit-trump/

@@ -1,59 +1,63 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Austin Raynor
-:sort_name: Raynor
-:slug: austin-raynor
-:age: 36
-:skill: lawyer
-:blurb: Austin Raynor is another one of the conservative lawyers who have been part
-  of DOGE's operations at OPM. He previously has clerked for Supreme Court Justice
-  Clarence Thomas and has served as a senior lawyer at the Pacific Foundation, a libertarian
-  organization. As a lawyer in DOGE's team at OPM, he probably has worked closely
-  with Noah Peters and Keenan Kmiec.
-:govt_exit_date: 2025-12-22
-:govt_exit_truth: verified
-:govt_exit_type: resigned
-:positions:
-- :id: opm-austin-raynor
-  :type: appointed
-  :category: wrecker
-  :agency: OPM
-  :start_date: 2025-01-30
-  :start_date_truth: verified
-  :nte_date: 2025-07-22
-  :nte_date_truth: verified
-  :description: Provisional Appt NTE
-  :appt_type_code: 48
-  :appt_type: Other
-  :excepted: true
-  :pd_code: 6A39748
-  :title: Senior Advisor
-  :title_type: advisor
-  :salary: "$195,200"
-  :series: '0301'
-  :supervisory: false
-  :office: Office of the Director
-  :comment: From a FOIA document
-  :source:
+name: Austin Raynor
+sort_name: Raynor
+slug: austin-raynor
+age: 36
+skill: lawyer
+blurb: >-
+  Austin Raynor is another one of the conservative lawyers who have been part of DOGE's operations at
+  OPM. He previously has clerked for Supreme Court Justice Clarence Thomas and has served as a senior
+  lawyer at the Pacific Foundation, a libertarian organization. As a lawyer in DOGE's team at OPM, he
+  probably has worked closely with Noah Peters and Keenan Kmiec.
+govt_exit_date: 2025-12-22
+govt_exit_truth: verified
+govt_exit_type: resigned
+positions:
+
+- id: opm-austin-raynor
+  type: appointed
+  category: wrecker
+  agency: OPM
+  start_date: 2025-01-30
+  start_date_truth: verified
+  nte_date: 2025-07-22
+  nte_date_truth: verified
+  description: Provisional Appt NTE
+  appt_type_code: 48
+  appt_type: Other
+  excepted: true
+  pd_code: 6A39748
+  title: Senior Advisor
+  title_type: advisor
+  salary: "$195,200"
+  series: '0301'
+  supervisory: false
+  office: Office of the Director
+  comment: From a FOIA document
+  source:
   - https://www.documentcloud.org/documents/26028780-opm-new-hires/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-  :same_as: opm-austin-raynor
-  :name: Austin Raynor
-  :alias: OPM-10
-  :table_note: Start date guessed from system access
-  :end_date: 2025-12-22
-  :end_date_truth: verified
-  :end_type: resigned
-- :id: detail-opm-doge-raynor
-  :type: detailed
-  :category: wrecker
-  :agency: DOGE
-  :from: OPM
-  :from_truth: inferred
-  :start_date: 2025-02-05
-  :start_date_truth: verified
-  :end_date: 2025-12-19
-  :end_date_truth: verified
-  :end_type: detail_ended
-  :source:
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  same_as: opm-austin-raynor
+  name: Austin Raynor
+  alias: OPM-10
+  table_note: Start date guessed from system access
+  end_date: 2025-12-22
+  end_date_truth: verified
+  end_type: resigned
+
+- id: detail-opm-doge-raynor
+  type: detailed
+  category: wrecker
+  agency: DOGE
+  from: OPM
+  from_truth: inferred
+  start_date: 2025-02-05
+  start_date_truth: verified
+  end_date: 2025-12-19
+  end_date_truth: verified
+  end_type: detail_ended
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf

@@ -1,49 +1,55 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Cybersecurity and Infrastructure Security Agency
-:id: CISA
-:short_name: CISA
-:slug: cisa
-:parent_id: DHS
-:page_slug: homeland-security
-:doge_base: true
-:events:
-- :date: 2025-02-19
-  :type: access
-  :event: Edward Coristine and Kyle Schutt are reportedly given elevated access to
-    CISA systems, including documents and staff emails.
-  :notable: true
-  :project: impunity
-  :named:
+name: Cybersecurity and Infrastructure Security Agency
+id: CISA
+short_name: CISA
+slug: cisa
+parent_id: DHS
+page_slug: homeland-security
+doge_base: true
+events:
+
+- date: 2025-02-19
+  type: access
+  event: >-
+    Edward Coristine and Kyle Schutt are reportedly given elevated access to CISA systems, including documents
+    and staff emails.
+  notable: true
+  project: impunity
+  named:
   - Edward Coristine
   - Kyle Schutt
-  :source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
-  :agency: CISA
-  :id: WQKuTEAj
-- :date: 2025-03-11
-  :type: disruption
-  :event: DOGE has fired more than a hundred employees at CISA, including many "red
-    team" staffers who simulate real-world attacks as well as the Cyber Incident Response
-    Team (CIRT).
-  :project: personnel
-  :source: https://techcrunch.com/2025/03/11/doge-axes-cisa-red-team-staffers-amid-ongoing-federal-cuts/
-  :agency: CISA
-  :id: 2ulCnCr8
-- :date: 2025-05-12
-  :type: disruption
-  :event: CISA announces that it will cease posting many cybersecurity alerts on its
-    website and instead only send them to email or X. After a public outcry, it reverses
-    this decision.
-  :source: https://www.bankinfosecurity.com/cisa-planned-to-kill-gov-alerts-then-reversed-course-a-28391
-  :agency: CISA
-  :id: 1tBAJ7d7
-- :date: 2026-03-10
-  :type: disruption
-  :event: In the wake of DOGE's cuts last year in CISA, cybersecurity individuals
-    in private industry express alarm at the lack of outreach and communication from
-    the agency compared to last year, especially since the war with Iran will likely
-    result in cyberattacks.
-  :notable: true
-  :source: https://www.cnn.com/2026/03/10/politics/doge-government-spending-cuts-iran-war
-  :project: spending
-  :agency: CISA
-  :id: 11ao1qkC
+  source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
+  agency: CISA
+  id: WQKuTEAj
+
+- date: 2025-03-11
+  type: disruption
+  event: >-
+    DOGE has fired more than a hundred employees at CISA, including many "red team" staffers who simulate
+    real-world attacks as well as the Cyber Incident Response Team (CIRT).
+  project: personnel
+  source: https://techcrunch.com/2025/03/11/doge-axes-cisa-red-team-staffers-amid-ongoing-federal-cuts/
+  agency: CISA
+  id: 2ulCnCr8
+
+- date: 2025-05-12
+  type: disruption
+  event: >-
+    CISA announces that it will cease posting many cybersecurity alerts on its website and instead only
+    send them to email or X. After a public outcry, it reverses this decision.
+  source: https://www.bankinfosecurity.com/cisa-planned-to-kill-gov-alerts-then-reversed-course-a-28391
+  agency: CISA
+  id: 1tBAJ7d7
+
+- date: 2026-03-10
+  type: disruption
+  event: >-
+    In the wake of DOGE's cuts last year in CISA, cybersecurity individuals in private industry express
+    alarm at the lack of outreach and communication from the agency compared to last year, especially
+    since the war with Iran will likely result in cyberattacks.
+  notable: true
+  source: https://www.cnn.com/2026/03/10/politics/doge-government-spending-cuts-iran-war
+  project: spending
+  agency: CISA
+  id: 11ao1qkC

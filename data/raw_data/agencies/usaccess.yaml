@@ -1,14 +1,17 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: U.S. Access Board
-:id: USAccess
-:short_name: Access Brd
-:slug: usaccess
-:page_slug: independent#other
-:events:
-- :date: 2025-04-22
-  :type: sighting
-  :event: THe U.S. Access Board reports that the agency had a cordial meeting with
-    DOGE and that additional meetings are expected in the future
-  :source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
-  :agency: USAccess
-  :id: 2oGmeHjW
+name: U.S. Access Board
+id: USAccess
+short_name: Access Brd
+slug: usaccess
+page_slug: independent#other
+events:
+
+- date: 2025-04-22
+  type: sighting
+  event: >-
+    THe U.S. Access Board reports that the agency had a cordial meeting with DOGE and that additional
+    meetings are expected in the future
+  source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+  agency: USAccess
+  id: 2oGmeHjW

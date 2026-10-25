@@ -1,26 +1,29 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Patricia Gibson
-:sort_name: Gibson
-:slug: patricia-gibson
-:linkedin: https://www.linkedin.com/in/patriciagibsondc/
-:association: possible
-:blurb: I don't have much info on this person yet, but they were named as being a
-  Senior Advisor at the SBA, which was a title also assigned to known DOGE members
-  at that agency. I know that she worked at SBA as a Senior Advisor in the previous
-  Trump administration, so this might be a false alarm, but her LinkedIn listed her
-  current role just as "Organizational Development Consultant" which seems like DOGE's
-  evasion. However, this is looking like a false alarm.
-:positions:
-- :id: sba-gibson
-  :type: unknown
-  :category: support
-  :agency: SBA
-  :title: Senior Advisor
-  :title_type: advisor
-  :start_date: 2025-02-XX
-  :start_date_truth: self-reported
-  :salary: "$195,200"
-  :table_note: Start month sourced from her LinkedIn
-  :source:
+name: Patricia Gibson
+sort_name: Gibson
+slug: patricia-gibson
+linkedin: https://www.linkedin.com/in/patriciagibsondc/
+association: possible
+blurb: >-
+  I don't have much info on this person yet, but they were named as being a Senior Advisor at the SBA,
+  which was a title also assigned to known DOGE members at that agency. I know that she worked at SBA
+  as a Senior Advisor in the previous Trump administration, so this might be a false alarm, but her LinkedIn
+  listed her current role just as "Organizational Development Consultant" which seems like DOGE's evasion.
+  However, this is looking like a false alarm.
+positions:
+
+- id: sba-gibson
+  type: unknown
+  category: support
+  agency: SBA
+  title: Senior Advisor
+  title_type: advisor
+  start_date: 2025-02-XX
+  start_date_truth: self-reported
+  salary: "$195,200"
+  table_note: Start month sourced from her LinkedIn
+  source:
   - https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring

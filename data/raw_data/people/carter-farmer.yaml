@@ -1,23 +1,26 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Carter Farmer
-:sort_name: Farmer
-:slug: carter-farmer
-:skill: coder
-:linkedin: https://www.linkedin.com/in/carterfarmer/
-:association: auxiliary
-:blurb: A former director of IT Systems and Solutions at the USIP, he apparently joined
-  up with DOGE after they took over and destroyed that agency. Since  then, he has
-  been named the new CIO of the Environmental Protection Agency, presumably providing
-  access and support for DOGE teams within the agency.
-:positions:
-- :id: epa-cio-farmer
-  :type: appointed
-  :category: enabler
-  :agency: EPA
-  :project: impunity
-  :start_date: 2025-05-(08)~
-  :start_date_truth: reported
-  :sort_date: 2025-05-04
-  :title: Chief Information Officer
-  :title_type: cio
-  :source: https://federalnewsnetwork.com/cio-news/2025/05/federal-cio-outlines-16-operating-principles-for-it-leaders/
+name: Carter Farmer
+sort_name: Farmer
+slug: carter-farmer
+skill: coder
+linkedin: https://www.linkedin.com/in/carterfarmer/
+association: auxiliary
+blurb: >-
+  A former director of IT Systems and Solutions at the USIP, he apparently joined up with DOGE after they
+  took over and destroyed that agency. Since  then, he has been named the new CIO of the Environmental
+  Protection Agency, presumably providing access and support for DOGE teams within the agency.
+positions:
+
+- id: epa-cio-farmer
+  type: appointed
+  category: enabler
+  agency: EPA
+  project: impunity
+  start_date: 2025-05-(08)~
+  start_date_truth: reported
+  sort_date: 2025-05-04
+  title: Chief Information Officer
+  title_type: cio
+  source: >-
+    https://federalnewsnetwork.com/cio-news/2025/05/federal-cio-outlines-16-operating-principles-for-it-leaders/

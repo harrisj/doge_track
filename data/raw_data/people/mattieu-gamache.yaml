@@ -1,28 +1,31 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Mattieu Gamache-Asselin
-:sort_name: Gamache-Asselin
-:slug: mattieu-gamache
-:age: 34
-:skill: coder
-:association: possible
-:linkedin: https://www.linkedin.com/in/mattieuga/
-:blurb: Reported as present in HHS in January by ProPublica, but there are no other
-  details about his time there or what he was doing.
-:govt_exit_date: 2025-01-XX
-:govt_exit_truth: inferred
-:govt_exit_type: unknown
-:positions:
-- :id: hhs-gamache
-  :agency: HHS
-  :type: unknown
-  :category: unknown
-  :title: Senior Advisor - DOGE
-  :title_type: advisor
-  :office: Assistant Secretary for Financial Resources
-  :start_date: 2025-01-XX
-  :start_date_truth: reported
-  :end_date: 2025-01-XX
-  :end_date_truth: reported
-  :end_type: unknown
-  :comment: ProPublica just reports he was there in January
-  :source: https://projects.propublica.org/elon-musk-doge-tracker/
+name: Mattieu Gamache-Asselin
+sort_name: Gamache-Asselin
+slug: mattieu-gamache
+age: 34
+skill: coder
+association: possible
+linkedin: https://www.linkedin.com/in/mattieuga/
+blurb: >-
+  Reported as present in HHS in January by ProPublica, but there are no other details about his time there
+  or what he was doing.
+govt_exit_date: 2025-01-XX
+govt_exit_truth: inferred
+govt_exit_type: unknown
+positions:
+
+- id: hhs-gamache
+  agency: HHS
+  type: unknown
+  category: unknown
+  title: Senior Advisor - DOGE
+  title_type: advisor
+  office: Assistant Secretary for Financial Resources
+  start_date: 2025-01-XX
+  start_date_truth: reported
+  end_date: 2025-01-XX
+  end_date_truth: reported
+  end_type: unknown
+  comment: ProPublica just reports he was there in January
+  source: https://projects.propublica.org/elon-musk-doge-tracker/

@@ -1,28 +1,35 @@
+# yaml-language-server: $schema=../schemas/aliases-file.json
 ---
-:id: SSA-10
-:agency: SSA
-:name: Ethan Shaotran
-:name_truth: inferred
-:evidence:
+id: SSA-10
+agency: SSA
+name: Ethan Shaotran
+name_truth: inferred
+evidence:
+
 - Onboarded as a volunteer on 2025-02-18 as a detail from the GSA
-- Flick testimony - Employee 10, a software engineer, was detailed from the Office
-  of the Administrator at the General Services Administration to SSA"
+
+- >-
+  Flick testimony - Employee 10, a software engineer, was detailed from the Office of the Administrator
+  at the General Services Administration to SSA"
+
 - Ethan Shaotran was also detailed from GSA to USADF as an unpaid GSE on 2025-02-21
+
 - Ethan Shaotran is identified for the first time at SSA on 2025-02-20
-:positions:
-- :id: detail-gsa-ssa-employee-10
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: verified
-  :agency: SSA
-  :signed_date: 2025-02-18
-  :start_date: 2025-02-18
-  :start_date_truth: verified
-  :nte_date: 2026-02-26
-  :nte_date_truth: verified
-  :reimbursed: false
-  :source:
+positions:
+
+- id: detail-gsa-ssa-employee-10
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: verified
+  agency: SSA
+  signed_date: 2025-02-18
+  start_date: 2025-02-18
+  start_date_truth: verified
+  nte_date: 2026-02-26
+  nte_date_truth: verified
+  reimbursed: false
+  source:
   - https://www.documentcloud.org/documents/26028814-mou-20250218-gsa-ssa-employee-10/
   - https://www.documentcloud.org/documents/26028766-onboard-ssa-employee-10/
-  :mou: https://www.documentcloud.org/documents/26028814-mou-20250218-gsa-ssa-employee-10/
+  mou: https://www.documentcloud.org/documents/26028814-mou-20250218-gsa-ssa-employee-10/

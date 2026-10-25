@@ -1,38 +1,41 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Christopher Sweet
-:sort_name: Sweet
-:age: 22
-:slug: christopher-sweet
-:skill: coder
-:linkedin: https://www.linkedin.com/in/chris16621747214/
-:college_graduation_year: 2026
-:blurb: Joining DOGE sometime in early April, Christopher Sweet has been based in
-  the Department of Housing and Urban Development (HUD), where he building a custom
-  generative AI model to analyze the agency's regulations and make recommendations
-  of specific parts to cut. More recently, his work has been moved to OMB, where his
-  tool is being used to trim regulations at multiple agencies. Christopher Sweet is
-  young and inexperienced like many of the DOGE wreckers, and is currently on a break
-  as an undergraduate at the University of Chicago.
-:govt_exit_date: 2025-12-XX
-:govt_exit_truth: reported
-:govt_exit_type: resigned
-:positions:
-- :id: hud-sweet
-  :type: appointed
-  :category: wrecker
-  :sort_date: 2025-04-10
-  :start_date: 2025-04-(10)~
-  :start_date_truth: reported
-  :end_date: 2025-12-XX
-  :end_date_truth: reported
-  :end_type: resigned
-  :project: deregulation
-  :fuzz: Date is unspecified, just sometime earlier in April
-  :comment: Scott Langmack sends a message that "I'd like to share with you that Chris
-    Sweet has joined the HUD DOGE team with the title of special assistant, although
-    a better title might be 'AI computer programming quant analyst'"
-  :source:
+name: Christopher Sweet
+sort_name: Sweet
+age: 22
+slug: christopher-sweet
+skill: coder
+linkedin: https://www.linkedin.com/in/chris16621747214/
+college_graduation_year: 2026
+blurb: >-
+  Joining DOGE sometime in early April, Christopher Sweet has been based in the Department of Housing
+  and Urban Development (HUD), where he building a custom generative AI model to analyze the agency's
+  regulations and make recommendations of specific parts to cut. More recently, his work has been moved
+  to OMB, where his tool is being used to trim regulations at multiple agencies. Christopher Sweet is
+  young and inexperienced like many of the DOGE wreckers, and is currently on a break as an undergraduate
+  at the University of Chicago.
+govt_exit_date: 2025-12-XX
+govt_exit_truth: reported
+govt_exit_type: resigned
+positions:
+
+- id: hud-sweet
+  type: appointed
+  category: wrecker
+  sort_date: 2025-04-10
+  start_date: 2025-04-(10)~
+  start_date_truth: reported
+  end_date: 2025-12-XX
+  end_date_truth: reported
+  end_type: resigned
+  project: deregulation
+  fuzz: Date is unspecified, just sometime earlier in April
+  comment: >-
+    Scott Langmack sends a message that "I'd like to share with you that Chris Sweet has joined the HUD
+    DOGE team with the title of special assistant, although a better title might be 'AI computer programming
+    quant analyst'"
+  source:
   - https://www.wired.com/story/doge-college-student-ai-rewrite-regulations-deregulation/
   - https://www.linkedin.com/in/chris16621747214/
-  :title: Special Assistant
-  :agency: HUD
+  title: Special Assistant
+  agency: HUD

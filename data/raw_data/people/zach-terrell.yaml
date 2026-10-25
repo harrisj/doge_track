@@ -1,73 +1,78 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Zach Terrell
-:sort_name: Terrell
-:slug: zach-terrell
-:age: 25
-:skill: coder
-:linkedin: https://www.linkedin.com/in/zachary-terrell-81488b19a/
-:college_graduation_year: 2022
-:blurb: Another very recent college graduate, Zach Terrell was involved in several
-  cryptocurrency and Web3-related startups before joinging the DOGE wrecking crew
-  at HHS in March. More recently, he was elevated in September to the role of CTO,
-  a position which was previously held by fellow DOGE member Clark Minor and which
-  would allow him to grant access to sensitive databases and systems to other DOGE
-  personnel. He also seems to have some involvement with the National Design Studio's
-  work.
-:positions:
-- :id: hhs-terrell
-  :start_date: 2025-03-06
-  :start_date_truth: verified
-  :category: wrecker
-  :type: appointed
-  :agency: HHS
-  :salary: "$132,629"
-  :project: spending
-  :source:
+name: Zach Terrell
+sort_name: Terrell
+slug: zach-terrell
+age: 25
+skill: coder
+linkedin: https://www.linkedin.com/in/zachary-terrell-81488b19a/
+college_graduation_year: 2022
+blurb: >-
+  Another very recent college graduate, Zach Terrell was involved in several cryptocurrency and Web3-related
+  startups before joinging the DOGE wrecking crew at HHS in March. More recently, he was elevated in September
+  to the role of CTO, a position which was previously held by fellow DOGE member Clark Minor and which
+  would allow him to grant access to sensitive databases and systems to other DOGE personnel. He also
+  seems to have some involvement with the National Design Studio's work.
+positions:
+
+- id: hhs-terrell
+  start_date: 2025-03-06
+  start_date_truth: verified
+  category: wrecker
+  type: appointed
+  agency: HHS
+  salary: "$132,629"
+  project: spending
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-- :id: internal-hhs-cms-terrell
-  :type: internal
-  :category: wrecker
-  :start_date: 2025-03-11
-  :start_date_truth: inferred
-  :agency: CMS
-  :from: HHS
-  :from_truth: inferred
-  :comment: Inferring from first reported access to the IDR system at CMS
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
-- :id: detail-hhs-nsf-terrell
-  :type: detailed
-  :category: wrecker
-  :office: Office of the Director
-  :from: HHS
-  :from_truth: inferred
-  :start_date: 2025-04-14
-  :start_date_truth: reported
-  :title: Consultant
-  :comment: Showed up at the agency to do secondary round of grant reviews. Assuming
-    a detail
-  :source: https://fedscoop.com/national-science-foundation-nsf-doge-grants-data-systems/
-  :agency: NSF
-- :id: nds-terrell
-  :type: appointed
-  :category: builder
-  :agency: NDS
-  :start_date: 2025-08-(29)?
-  :start_date_truth: reported
-  :sort_date: 2025-08-29
-  :project: modernization
-  :source:
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+
+- id: internal-hhs-cms-terrell
+  type: internal
+  category: wrecker
+  start_date: 2025-03-11
+  start_date_truth: inferred
+  agency: CMS
+  from: HHS
+  from_truth: inferred
+  comment: Inferring from first reported access to the IDR system at CMS
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+
+- id: detail-hhs-nsf-terrell
+  type: detailed
+  category: wrecker
+  office: Office of the Director
+  from: HHS
+  from_truth: inferred
+  start_date: 2025-04-14
+  start_date_truth: reported
+  title: Consultant
+  comment: Showed up at the agency to do secondary round of grant reviews. Assuming a detail
+  source: https://fedscoop.com/national-science-foundation-nsf-doge-grants-data-systems/
+  agency: NSF
+
+- id: nds-terrell
+  type: appointed
+  category: builder
+  agency: NDS
+  start_date: 2025-08-(29)?
+  start_date_truth: reported
+  sort_date: 2025-08-29
+  project: modernization
+  source:
   - https://www.wired.com/story/doge-operatives-joining-national-design-studio/
   - https://www.notus.org/trump-white-house/silicon-valley-government-websites-national-design-studio
-  :table_note: He has been linked to NDS but is still also at HHS?
-- :id: hhs-terrell-cto
-  :category: enabler
-  :type: promotion
-  :agency: HHS
-  :title: Chief Technology Officer
-  :supervisory: true
-  :project: impunity
-  :title_type: cto
-  :start_date: 2025-09-(01)~
-  :start_date_truth: reported
-  :source: https://fedscoop.com/hhs-has-new-doge-affiliated-technology-chief-cto/
+  table_note: He has been linked to NDS but is still also at HHS?
+
+- id: hhs-terrell-cto
+  category: enabler
+  type: promotion
+  agency: HHS
+  title: Chief Technology Officer
+  supervisory: true
+  project: impunity
+  title_type: cto
+  start_date: 2025-09-(01)~
+  start_date_truth: reported
+  source: https://fedscoop.com/hhs-has-new-doge-affiliated-technology-chief-cto/

@@ -1,30 +1,39 @@
+# yaml-language-server: $schema=../schemas/aliases-file.json
 ---
-:id: ED-03
-:agency: Education
-:name: Ethan Shaotran
-:name_truth: inferred
-:source: https://www.documentcloud.org/documents/26028797-mou-20250212-gsa-education-ed-3/
-:evidence:
-- Detail from GSA was signed on 2025-02-12 for an SGE position so it is not reimbursed
-  and for a maximum of 135 days from start of SGE term
+id: ED-03
+agency: Education
+name: Ethan Shaotran
+name_truth: inferred
+source: https://www.documentcloud.org/documents/26028797-mou-20250212-gsa-education-ed-3/
+evidence:
+
+- >-
+  Detail from GSA was signed on 2025-02-12 for an SGE position so it is not reimbursed and for a maximum
+  of 135 days from start of SGE term
+
 - Position at GSA is listed as Software Engineer (Consultant)
-- In a separate document in the release, Ethan Shaotran is listed as being from GSA
-  on 2025-02-03 and Edward Coristine on 2025-02-20
-- IN the case of ED-1, the detail agreement seems to have been signed after the start
-  date; very likely here as well
-:positions:
-- :id: detail-gsa-education-3
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: verified
-  :agency: Education
-  :signed_date: 2025-02-03
-  :start_date: 2025-02-12
-  :start_date_truth: verified
-  :nte_date: 2026-02-26
-  :nte_date_truth: verified
-  :reimbursed: false
-  :comment: ED-3 is Ethan Shaotran
-  :source: https://www.documentcloud.org/documents/26028797-mou-20250212-gsa-education-ed-3/
-  :mou: https://www.documentcloud.org/documents/26028797-mou-20250212-gsa-education-ed-3/
+
+- >-
+  In a separate document in the release, Ethan Shaotran is listed as being from GSA on 2025-02-03 and
+  Edward Coristine on 2025-02-20
+
+- >-
+  IN the case of ED-1, the detail agreement seems to have been signed after the start date; very likely
+  here as well
+positions:
+
+- id: detail-gsa-education-3
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: verified
+  agency: Education
+  signed_date: 2025-02-03
+  start_date: 2025-02-12
+  start_date_truth: verified
+  nte_date: 2026-02-26
+  nte_date_truth: verified
+  reimbursed: false
+  comment: ED-3 is Ethan Shaotran
+  source: https://www.documentcloud.org/documents/26028797-mou-20250212-gsa-education-ed-3/
+  mou: https://www.documentcloud.org/documents/26028797-mou-20250212-gsa-education-ed-3/

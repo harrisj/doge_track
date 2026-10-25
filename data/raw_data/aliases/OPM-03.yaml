@@ -1,69 +1,80 @@
+# yaml-language-server: $schema=../schemas/aliases-file.json
 ---
-:id: OPM-03
-:agency: OPM
-:name: Akash Bobba
-:name_truth: verified
-:source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-:evidence:
-- This is the same person as ED-1 because there is a detail document that appears
-  with two diff redacted names
+id: OPM-03
+agency: OPM
+name: Akash Bobba
+name_truth: verified
+source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
+evidence:
+
+- >-
+  This is the same person as ED-1 because there is a detail document that appears with two diff redacted
+  names
+
 - Detail to SSA is signed on 2025-02-12
+
 - PD number 6A39740 = one listed for Akash Bobba
+
 - See evidence that ED-1 is Akash Bobba
-- "[He has also been appointed to SSA, which pays his salary, and DOE](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf)"
-:positions:
-- :id: opm-03
-  :type: appointed
-  :category: wrecker
-  :agency: OPM
-  :start_date: 2025-01-20
-  :start_date_truth: verified
-  :nte_date: 2025-07-18
-  :nte_date_truth: verified
-  :end_date: 2025-07-18
-  :end_date_truth: verified
-  :table_note: Testimony reports plan to convert position to permanent
-  :end_type: replaced
-  :replaced_by: opm-3-perm
-  :description: Exc Appt NTE
-  :appt_type_code: 48
-  :appt_type: Other
-  :excepted: true
-  :pd_code: 6A39740
-  :title: Expert
-  :title_type: advisor
-  :pay_grade: ED-00
-  :salary: "$0"
-  :series: '0301'
-  :source:
+
+- >-
+  [He has also been appointed to SSA, which pays his salary, and DOE](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf)
+positions:
+
+- id: opm-03
+  type: appointed
+  category: wrecker
+  agency: OPM
+  start_date: 2025-01-20
+  start_date_truth: verified
+  nte_date: 2025-07-18
+  nte_date_truth: verified
+  end_date: 2025-07-18
+  end_date_truth: verified
+  table_note: Testimony reports plan to convert position to permanent
+  end_type: replaced
+  replaced_by: opm-3-perm
+  description: Exc Appt NTE
+  appt_type_code: 48
+  appt_type: Other
+  excepted: true
+  pd_code: 6A39740
+  title: Expert
+  title_type: advisor
+  pay_grade: ED-00
+  salary: "$0"
+  series: '0301'
+  source:
   - https://www.documentcloud.org/documents/26028792-onboard-opm-employee-3/
   - https://www.documentcloud.org/documents/26028780-opm-new-hires/
-  :supervisory: false
-  :office: Office of the Director
-  :comment: I was able to confirm that OPM Employee 3 is Akash Bobba
-- :id: opm-3-perm
-  :type: converted
-  :category: wrecker
-  :agency: OPM
-  :table_note: Court testimony reports conversion to permanent, restored access
-  :start_date: 2025-08-08
-  :start_date_truth: verified
-  :end_date: 2026-03-07
-  :end_date_truth: verified
-  :end_type: resigned
-  :salary: "$0"
-  :source:
+  supervisory: false
+  office: Office of the Director
+  comment: I was able to confirm that OPM Employee 3 is Akash Bobba
+
+- id: opm-3-perm
+  type: converted
+  category: wrecker
+  agency: OPM
+  table_note: Court testimony reports conversion to permanent, restored access
+  start_date: 2025-08-08
+  start_date_truth: verified
+  end_date: 2026-03-07
+  end_date_truth: verified
+  end_type: resigned
+  salary: "$0"
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.148.0.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-- :id: detail-opm-ssa-opm-3
-  :type: detailed
-  :category: wrecker
-  :agency: SSA
-  :from: OPM
-  :from_truth: verified
-  :signed_date: 2025-02-12
-  :start_date: 2025-02-03
-  :start_date_truth: verified
-  :reimbursed: false
-  :source: https://www.documentcloud.org/documents/26028790-mou-20250212-ssa-opm-education-ed-1/
-  :mou: https://www.documentcloud.org/documents/26028790-mou-20250212-ssa-opm-education-ed-1/
+
+- id: detail-opm-ssa-opm-3
+  type: detailed
+  category: wrecker
+  agency: SSA
+  from: OPM
+  from_truth: verified
+  signed_date: 2025-02-12
+  start_date: 2025-02-03
+  start_date_truth: verified
+  reimbursed: false
+  source: https://www.documentcloud.org/documents/26028790-mou-20250212-ssa-opm-education-ed-1/
+  mou: https://www.documentcloud.org/documents/26028790-mou-20250212-ssa-opm-education-ed-1/

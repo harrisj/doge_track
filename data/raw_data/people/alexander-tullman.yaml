@@ -1,45 +1,48 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Alexander Tullman
-:sort_name: Tullman
-:slug: alexander-tullman
-:age: 26
-:skill: analyst
-:linkedin: https://www.linkedin.com/in/alex-tullman-685332164/
-:blurb: A latecomer to DOGE, Alexander joined up in April at GSA and was detailed
-  to HHS in June. His sole background experience has been a stint as a finance manager
-  at Proctor & Gamble for the 3 years prior.
-:govt_exit_date: 2026-04-XX
-:govt_exit_truth: self-reported
-:govt_exit_type: resigned
-:positions:
-- :id: gsa-tullman
-  :type: appointed
-  :category: wrecker
-  :agency: GSA
-  :sort_date: 2025-04-15
-  :start_date: 2025-04-XX
-  :start_date_truth: self-reported
-  :end_date: 2026-04-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :title: Senior Advisor
-  :title_type: advisor
-  :source:
+name: Alexander Tullman
+sort_name: Tullman
+slug: alexander-tullman
+age: 26
+skill: analyst
+linkedin: https://www.linkedin.com/in/alex-tullman-685332164/
+blurb: >-
+  A latecomer to DOGE, Alexander joined up in April at GSA and was detailed to HHS in June. His sole background
+  experience has been a stint as a finance manager at Proctor & Gamble for the 3 years prior.
+govt_exit_date: 2026-04-XX
+govt_exit_truth: self-reported
+govt_exit_type: resigned
+positions:
+
+- id: gsa-tullman
+  type: appointed
+  category: wrecker
+  agency: GSA
+  sort_date: 2025-04-15
+  start_date: 2025-04-XX
+  start_date_truth: self-reported
+  end_date: 2026-04-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  title: Senior Advisor
+  title_type: advisor
+  source:
   - https://www.linkedin.com/in/alex-tullman-685332164
-- :id: hhs-tullman
-  :type: detailed
-  :category: wrecker
-  :agency: HHS
-  :from: GSA
-  :from_truth: inferred
-  :sort_date: 2025-07-15
-  :start_date: 2025-07-XX
-  :start_date_truth: self-reported
-  :end_date: 2026-01-XX
-  :end_date_truth: self-reported
-  :end_type: detail_ended
-  :project: spending
-  :title: Senior Advisor
-  :title_type: advisor
-  :source:
+
+- id: hhs-tullman
+  type: detailed
+  category: wrecker
+  agency: HHS
+  from: GSA
+  from_truth: inferred
+  sort_date: 2025-07-15
+  start_date: 2025-07-XX
+  start_date_truth: self-reported
+  end_date: 2026-01-XX
+  end_date_truth: self-reported
+  end_type: detail_ended
+  project: spending
+  title: Senior Advisor
+  title_type: advisor
+  source:
   - https://www.linkedin.com/in/alex-tullman-685332164

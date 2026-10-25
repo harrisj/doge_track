@@ -1,62 +1,68 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Justin Fulcher
-:sort_name: Fulcher
-:slug: justin-fulcher
-:age: 32
-:skill: coder
-:linkedin: https://www.linkedin.com/in/mrjustinfulcher/
-:blurb: Justin Fulcher is a programmer and entrepeneur, whose last project was a telehealth
-  startup called RingMD (although there are [some questions about its success and
-  his life story](https://www.forbes.com/sites/davidjeans/2025/03/04/pentagon-doge-official-justin-fulcher/)).
-  Justin started his work for DOGE as an employee working within the VA and keeping
-  a low profile. More recently, he has moved over to the Department of Defense, where
-  he is a Special Advisor in Pete Hegseth's office.
-:govt_exit_date: 2025-07-20
-:govt_exit_truth: verified
-:govt_exit_type: resigned
-:positions:
-- :id: va-fulcher
-  :type: appointed
-  :category: wrecker
-  :agency: VA
-  :sort_date: 2025-02-04
-  :start_date: 2025-02-(04)~
-  :start_date_truth: reported
-  :project:
+name: Justin Fulcher
+sort_name: Fulcher
+slug: justin-fulcher
+age: 32
+skill: coder
+linkedin: https://www.linkedin.com/in/mrjustinfulcher/
+blurb: >-
+  Justin Fulcher is a programmer and entrepeneur, whose last project was a telehealth startup called RingMD
+  (although there are [some questions about its success and his life story](https://www.forbes.com/sites/davidjeans/2025/03/04/pentagon-doge-official-justin-fulcher/)).
+  Justin started his work for DOGE as an employee working within the VA and keeping a low profile. More
+  recently, he has moved over to the Department of Defense, where he is a Special Advisor in Pete Hegseth's
+  office.
+govt_exit_date: 2025-07-20
+govt_exit_truth: verified
+govt_exit_type: resigned
+positions:
+
+- id: va-fulcher
+  type: appointed
+  category: wrecker
+  agency: VA
+  sort_date: 2025-02-04
+  start_date: 2025-02-(04)~
+  start_date_truth: reported
+  project:
   - spending
   - fraud
   - personnel
-  :source: https://www.military.com/daily-news/2025/02/05/elon-musk-aide-now-working-va-and-accessing-its-computer-systems.html
-  :table_note: reported in early Feb but named later
-- :id: dod-fulcher
-  :type: detailed
-  :category: wrecker
-  :from: VA
-  :from_truth: guessed
-  :table_note: no info, but assuming detailed from VA
-  :start_date: 2025-03-04
-  :start_date_truth: reported
-  :project: personnel
-  :end_date: 2025-04-24
-  :end_date_truth: reported
-  :end_type: replaced
-  :replaced_by: dod-fulcher-advisor
-  :comment: Assuming this position replace by Senior Advisor role
-  :source: https://www.forbes.com/sites/davidjeans/2025/03/04/pentagon-doge-official-justin-fulcher/
-  :agency: DOD
-- :id: dod-fulcher-advisor
-  :type: appointed
-  :category: wrecker
-  :start_date: 2025-04-25
-  :start_date_truth: reported
-  :end_date: 2025-07-20
-  :end_date_truth: verified
-  :end_type: resigned
-  :project: personnel
-  :title: Senior Advisor
-  :title_type: advisor
-  :office: Office of the Secretary
-  :source:
-  - https://news.bloombergtax.com/international-trade/hegseth-taps-doge-staffer-as-senior-adviser-after-staff-exodus
+  source: >-
+    https://www.military.com/daily-news/2025/02/05/elon-musk-aide-now-working-va-and-accessing-its-computer-systems.html
+  table_note: reported in early Feb but named later
+
+- id: dod-fulcher
+  type: detailed
+  category: wrecker
+  from: VA
+  from_truth: guessed
+  table_note: no info, but assuming detailed from VA
+  start_date: 2025-03-04
+  start_date_truth: reported
+  project: personnel
+  end_date: 2025-04-24
+  end_date_truth: reported
+  end_type: replaced
+  replaced_by: dod-fulcher-advisor
+  comment: Assuming this position replace by Senior Advisor role
+  source: https://www.forbes.com/sites/davidjeans/2025/03/04/pentagon-doge-official-justin-fulcher/
+  agency: DOD
+
+- id: dod-fulcher-advisor
+  type: appointed
+  category: wrecker
+  start_date: 2025-04-25
+  start_date_truth: reported
+  end_date: 2025-07-20
+  end_date_truth: verified
+  end_type: resigned
+  project: personnel
+  title: Senior Advisor
+  title_type: advisor
+  office: Office of the Secretary
+  source:
+  - >-
+    https://news.bloombergtax.com/international-trade/hegseth-taps-doge-staffer-as-senior-adviser-after-staff-exodus
   - https://www.nytimes.com/2025/07/20/us/politics/hegseth-aide-resigns-pentagon-justin-fulcher.html
-  :agency: DOD
+  agency: DOD

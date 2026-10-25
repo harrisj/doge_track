@@ -1,78 +1,85 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Mike Russo
-:sort_name: Russo
-:slug: mike-russo
-:age: 67
-:skill: executive
-:blurb: Reportedly a favorite of incoming SSA commissioner Frank Bisignano, Mike Russo
-  was named the CIO of Social Security in early February and immediately advocated
-  for the expedited onboarding of Akash Bobba. The DOGE contingent eventually swelled
-  to 11 engineers under his watch. In late March, he was removed from the CIO position
-  and demoted to a Senior Advisor, reportedly because the Trump administration was
-  displeased that he cooperated with a judge's order to revoke DOGE access to SSA
-  systems. However, recent reports by the _New York Times_ claim that he is effectively
-  acting as a co-CIO with Aram Moghaddassi under Frank Bisignano's leadership, so
-  perhaps he has returned to good graces. Prior to government service, he was a senior
-  executive at Shift4 Payments, which is an investor in SpaceX and a payment processor
+name: Mike Russo
+sort_name: Russo
+slug: mike-russo
+age: 67
+skill: executive
+blurb: >-
+  Reportedly a favorite of incoming SSA commissioner Frank Bisignano, Mike Russo was named the CIO of
+  Social Security in early February and immediately advocated for the expedited onboarding of Akash Bobba.
+  The DOGE contingent eventually swelled to 11 engineers under his watch. In late March, he was removed
+  from the CIO position and demoted to a Senior Advisor, reportedly because the Trump administration was
+  displeased that he cooperated with a judge's order to revoke DOGE access to SSA systems. However, recent
+  reports by the _New York Times_ claim that he is effectively acting as a co-CIO with Aram Moghaddassi
+  under Frank Bisignano's leadership, so perhaps he has returned to good graces. Prior to government service,
+  he was a senior executive at Shift4 Payments, which is an investor in SpaceX and a payment processor
   for Starlink.
-:tech_links:
+tech_links:
+
 - SpaceX
-:positions:
-- :id: ssa-mike-russo-cio
-  :type: appointed
-  :category: enabler
-  :title: Chief Information Officer
-  :title_type: cio
-  :agency: SSA
-  :start_date: 2025-01-31
-  :start_date_truth: reported
-  :end_date: 2025-03-24
-  :end_date_truth: reported
-  :end_type: replaced
-  :replaced_by: ssa-mike-russo-advisor
-  :project:
+positions:
+
+- id: ssa-mike-russo-cio
+  type: appointed
+  category: enabler
+  title: Chief Information Officer
+  title_type: cio
+  agency: SSA
+  start_date: 2025-01-31
+  start_date_truth: reported
+  end_date: 2025-03-24
+  end_date_truth: reported
+  end_type: replaced
+  replaced_by: ssa-mike-russo-advisor
+  project:
   - fraud
   - impunity
-  :salary: '195,200'
-  :comment: Reportedly removed from CIO role for complying quickly with judge's orders
-    to block access
-  :supervisory: true
-  :source:
-  - https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-- :id: ssa-mike-russo-advisor
-  :type: demotion
-  :category: wrecker
-  :start_date: 2025-03-25
-  :start_date_truth: reported
-  :end_date: 2025-09-03
-  :end_date_truth: verified
-  :end_type: replaced
-  :replaced_by: ssa-mike-russo-co-cio
-  :project:
+  salary: '195,200'
+  comment: Reportedly removed from CIO role for complying quickly with judge's orders to block access
+  supervisory: true
+  source:
+  - >-
+    https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+
+- id: ssa-mike-russo-advisor
+  type: demotion
+  category: wrecker
+  start_date: 2025-03-25
+  start_date_truth: reported
+  end_date: 2025-09-03
+  end_date_truth: verified
+  end_type: replaced
+  replaced_by: ssa-mike-russo-co-cio
+  project:
   - fraud
   - impunity
-  :salary: "$195,200"
-  :title: Senior Advisor
-  :title_type: advisor
-  :supervisory: false
-  :comment: Scott Coulter is named the new CIO at the Social Security Administration
-    and Mike Russo is moved to a Senior Advisor role with a focus on modernizing systems
-  :table_note: Demoted and replaced by Scott Coulter in CIO role, he seems to be acting
-    in a quasi co-CIO role since June
-  :source: https://www.nextgov.com/people/2025/03/ssa-tech-shop-be-led-another-doge-associate/404031/
-  :agency: SSA
-- :id: ssa-mike-russo-co-cio
-  :agency: SSA
-  :type: promotion
-  :category: enabler
-  :start_date: 2025-09-03
-  :start_date_truth: verified
-  :title: Chief Information Officer (Core Business Functions)
-  :title_type: cio
-  :project:
+  salary: "$195,200"
+  title: Senior Advisor
+  title_type: advisor
+  supervisory: false
+  comment: >-
+    Scott Coulter is named the new CIO at the Social Security Administration and Mike Russo is moved to
+    a Senior Advisor role with a focus on modernizing systems
+  table_note: >-
+    Demoted and replaced by Scott Coulter in CIO role, he seems to be acting in a quasi co-CIO role since
+    June
+  source: https://www.nextgov.com/people/2025/03/ssa-tech-shop-be-led-another-doge-associate/404031/
+  agency: SSA
+
+- id: ssa-mike-russo-co-cio
+  agency: SSA
+  type: promotion
+  category: enabler
+  start_date: 2025-09-03
+  start_date_truth: verified
+  title: Chief Information Officer (Core Business Functions)
+  title_type: cio
+  project:
   - fraud
   - impunity
-  :salary: "$195,200"
-  :supervisory: true
-  :source: https://www.ssa.gov/news/en/press/releases/2025-09-03.html
+  salary: "$195,200"
+  supervisory: true
+  source: https://www.ssa.gov/news/en/press/releases/2025-09-03.html

@@ -1,29 +1,32 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Darshan Phillips
-:sort_name: Phillips
-:slug: darshan-phillips
-:skill: designer
-:college_graduation_year: 2004
-:affiliations:
-- :entity_id: instrument
-  :timeframe: before
-  :role: executive
-  :immediate: true
-  :table_note: Executive Creative Director
-  :start_date: 2017-04-XX
-  :start_date_truth: self-reported
-  :end_date: 2025-10-XX
-  :end_date_truth: self-reported
-  :connection_truth: self-reported
-  :source: https://www.linkedin.com/in/darshan-phillips/
-  :id: 1Pw4OJ9Q
-:positions:
-- :id: nds-phillips
-  :agency: NDS
-  :type: appointed
-  :category: builder
-  :title: Executive Creative Director
-  :project: modernization
-  :start_date: 2025-10-XX
-  :start_date_truth: self-reported
-  :source: https://www.linkedin.com/in/darshan-phillips/
+name: Darshan Phillips
+sort_name: Phillips
+slug: darshan-phillips
+skill: designer
+college_graduation_year: 2004
+affiliations:
+
+- entity_id: instrument
+  timeframe: before
+  role: executive
+  immediate: true
+  table_note: Executive Creative Director
+  start_date: 2017-04-XX
+  start_date_truth: self-reported
+  end_date: 2025-10-XX
+  end_date_truth: self-reported
+  connection_truth: self-reported
+  source: https://www.linkedin.com/in/darshan-phillips/
+  id: 1Pw4OJ9Q
+positions:
+
+- id: nds-phillips
+  agency: NDS
+  type: appointed
+  category: builder
+  title: Executive Creative Director
+  project: modernization
+  start_date: 2025-10-XX
+  start_date_truth: self-reported
+  source: https://www.linkedin.com/in/darshan-phillips/

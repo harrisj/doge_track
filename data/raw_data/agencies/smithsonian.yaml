@@ -1,20 +1,23 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: The Smithsonian Institution
-:id: Smithsonian
-:short_name: Smithsonian
-:slug: smithsonian
-:page_slug: independent#other
-:events:
-- :date: 2025-01-29
-  :type: disruption
-  :event: The Smithsonian Institution announces it is closing a diversity office and
-    freezing all federal hiring. It is not a federal agency, but most of its funding
-    comes from Congressional appropriaions and two-thirds of its staff are federal
-    workers.
-  :notable: true
-  :project:
+name: The Smithsonian Institution
+id: Smithsonian
+short_name: Smithsonian
+slug: smithsonian
+page_slug: independent#other
+events:
+
+- date: 2025-01-29
+  type: disruption
+  event: >-
+    The Smithsonian Institution announces it is closing a diversity office and freezing all federal hiring.
+    It is not a federal agency, but most of its funding comes from Congressional appropriaions and two-thirds
+    of its staff are federal workers.
+  notable: true
+  project:
   - dei
   - personnel
-  :source: https://www.npr.org/2025/01/29/nx-s1-5279225/smithsonian-diversity-office-president-trump-executive-order
-  :agency: Smithsonian
-  :id: 2VbieCgy
+  source: >-
+    https://www.npr.org/2025/01/29/nx-s1-5279225/smithsonian-diversity-office-president-trump-executive-order
+  agency: Smithsonian
+  id: 2VbieCgy

@@ -1,207 +1,237 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Department of the Treasury
-:id: Treasury
-:short_name: Treas.
-:slug: treasury
-:page_slug: treasury
-:doge_base: true
-:blurb: 'One of DOGE''s overarching projects has been to [seize control of federal
-  spending](/projects/spending-control/), so it makes sense that DOGE would try to
-  infiltrate the Bureau of the Fiscal Service with Department of the Treasury from
-  the start. This is highly-sensitive data to entrust to a few rogue engineers, so
-  there have been a number of high-profile court cases that attempted to forestall
-  and limit DOGE''s access. Unfortunately, DOGE has prevailed and has also increased
-  its access to the highly-sensitive taxpayer data at the IRS in order to support
-  DOGE''s efforts to build a total surveillance system for immigrants. '
-:events:
-- :date: 2025-01-08
-  :type: official
-  :event: The leader of the Trump transition team for the Treasury Department sends
-    an email requesting that Thomas Krause be incuded on the "day 1 team, to lead
-    on Fiscal Services modernization efforts."
-  :project: modernization
-  :named:
+name: Department of the Treasury
+id: Treasury
+short_name: Treas.
+slug: treasury
+page_slug: treasury
+doge_base: true
+blurb: "One of DOGE's overarching projects has been to [seize control of federal spending](/projects/spending-control/),
+  so it makes sense that DOGE would try to infiltrate the Bureau of the Fiscal Service with Department
+  of the Treasury from the start. This is highly-sensitive data to entrust to a few rogue engineers, so
+  there have been a number of high-profile court cases that attempted to forestall and limit DOGE's access.
+  Unfortunately, DOGE has prevailed and has also increased its access to the highly-sensitive taxpayer
+  data at the IRS in order to support DOGE's efforts to build a total surveillance system for immigrants. "
+events:
+
+- date: 2025-01-08
+  type: official
+  event: >-
+    The leader of the Trump transition team for the Treasury Department sends an email requesting that
+    Thomas Krause be incuded on the "day 1 team, to lead on Fiscal Services modernization efforts."
+  project: modernization
+  named:
   - Tom Krause
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.48.1.pdf#page=13
-  :case_no: 1:25-cv-00313
-  :agency: Treasury
-  :id: UsAfrk26
-- :date: 2025-01-28
-  :type: access
-  :event: Marko Elez is provided with a laptop from Treasury with with copies of the
-    source code for the PAM, SPS, and ASAP systems in a separate, secure coding environment
-    known as a "secure code repository" or "sandbox."
-  :notable: true
-  :named:
+  source: >-
+    https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.48.1.pdf#page=13
+  case_no: 1:25-cv-00313
+  agency: Treasury
+  id: UsAfrk26
+
+- date: 2025-01-28
+  type: access
+  event: >-
+    Marko Elez is provided with a laptop from Treasury with with copies of the source code for the PAM,
+    SPS, and ASAP systems in a separate, secure coding environment known as a "secure code repository"
+    or "sandbox."
+  notable: true
+  named:
   - Marko Elez
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.3_1.pdf
-  :case_no: 8:25-cv-00430
-  :agency: Treasury
-  :id: hRNeze4y
-- :date: 2025-02-04
-  :type: oversight
-  :event: Treasury Secretary Scott Bessent writes a letter to Congress about Tom Krause
-    having read-only access but doesn't mention Marko Elez in his letter.
-  :named:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.27.3_1.pdf
+  case_no: 8:25-cv-00430
+  agency: Treasury
+  id: hRNeze4y
+
+- date: 2025-02-04
+  type: oversight
+  event: >-
+    Treasury Secretary Scott Bessent writes a letter to Congress about Tom Krause having read-only access
+    but doesn't mention Marko Elez in his letter.
+  named:
   - Tom Krause
-  :source: https://www.wired.com/story/elon-musk-digital-coup-doge-data-ai/
-  :agency: Treasury
-  :id: cYi6UvfL
-- :date: 2025-02-06
-  :type: legal
-  :event: Judge Colleen Kollar-Kotelly issues a ruling stating that DOGE should be
-    granted only read access to government systems at Treasury.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.12.1_1.pdf
-  :case_no: 1:25-cv-00313
-  :agency: Treasury
-  :id: jym62UJR
-- :date: 2025-02-06
-  :type: offboard
-  :event: After the _Wall Street Journal_ reported on a series of racist tweets from
-    his account, Marko Elez resigned from his position at DOGE.
-  :source: https://www.npr.org/2025/02/06/nx-s1-5289337/elon-musk-doge-treasury
-  :agency: Treasury
-  :id: 5NwRFYL0
-- :date: 2025-02-10
-  :type: disruption
-  :event: A legal affadavit states a BFS payment was presented to the State Department
-    as one to not process after it was reviewed by DOGE staff at Treasury.
-  :project:
+  source: https://www.wired.com/story/elon-musk-digital-coup-doge-data-ai/
+  agency: Treasury
+  id: cYi6UvfL
+
+- date: 2025-02-06
+  type: offboard
+  event: >-
+    After the _Wall Street Journal_ reported on a series of racist tweets from his account, Marko Elez
+    resigned from his position at DOGE.
+  source: https://www.npr.org/2025/02/06/nx-s1-5289337/elon-musk-doge-treasury
+  agency: Treasury
+  id: 5NwRFYL0
+
+- date: 2025-02-06
+  type: legal
+  event: >-
+    Judge Colleen Kollar-Kotelly issues a ruling stating that DOGE should be granted only read access
+    to government systems at Treasury.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.12.1_1.pdf
+  case_no: 1:25-cv-00313
+  agency: Treasury
+  id: jym62UJR
+
+- date: 2025-02-10
+  type: disruption
+  event: >-
+    A legal affadavit states a BFS payment was presented to the State Department as one to not process
+    after it was reviewed by DOGE staff at Treasury.
+  project:
   - fraud
-  :source: https://www.washingtonpost.com/business/2025/02/11/doge-treasury-access-marko-elez/
-  :agency: Treasury
-  :id: 3GDPSTGi
-- :date: 2025-02-11
-  :type: access
-  :event: A legal affadavit from a Treasury employee states that Marko Elez was accidentally
-    given edit access to Bureau of the Fiscal Service systems but that he did not
-    use it.
-  :named:
+  source: https://www.washingtonpost.com/business/2025/02/11/doge-treasury-access-marko-elez/
+  agency: Treasury
+  id: 3GDPSTGi
+
+- date: 2025-02-11
+  type: access
+  event: >-
+    A legal affadavit from a Treasury employee states that Marko Elez was accidentally given edit access
+    to Bureau of the Fiscal Service systems but that he did not use it.
+  named:
   - Marko Elez
-  :source: https://www.washingtonpost.com/business/2025/02/11/doge-treasury-access-marko-elez/
-  :agency: Treasury
-  :id: imugC2ds
-- :date: 2025-02-19
-  :type: official
-  :event: Treasury Secretary Scott Bessent says only one person from DOGE is "looking
-    at an outdated IT system, that's all they're doing." Given that Marko Elez had
-    resigned, this is likely a reference to Ryan Wunderly.
-  :project: modernization
-  :linked:
+  source: https://www.washingtonpost.com/business/2025/02/11/doge-treasury-access-marko-elez/
+  agency: Treasury
+  id: imugC2ds
+
+- date: 2025-02-19
+  type: official
+  event: >-
+    Treasury Secretary Scott Bessent says only one person from DOGE is "looking at an outdated IT system,
+    that's all they're doing." Given that Marko Elez had resigned, this is likely a reference to Ryan
+    Wunderly.
+  project: modernization
+  linked:
   - Ryan Wunderly
-  :source: https://www.bloomberg.com/news/articles/2025-02-19/bessent-says-doge-effort-has-saved-estimated-50-billion-so-far
-  :agency: Treasury
-  :id: g9AZFmPH
-- :date: 2025-02-20
-  :type: onboard
-  :event: John York, a senior counselor to Bessent, wrote in a sworn statement that
-    Ryan Wunderly would take over Marko Elez's work at the BFS.
-  :named:
+  source: >-
+    https://www.bloomberg.com/news/articles/2025-02-19/bessent-says-doge-effort-has-saved-estimated-50-billion-so-far
+  agency: Treasury
+  id: g9AZFmPH
+
+- date: 2025-02-20
+  type: onboard
+  event: >-
+    John York, a senior counselor to Bessent, wrote in a sworn statement that Ryan Wunderly would take
+    over Marko Elez's work at the BFS.
+  named:
   - Marko Elez
   - Ryan Wunderly
-  :source: https://www.politico.com/news/2025/02/20/treasury-irs-data-white-house-doge-00205391
-  :agency: Treasury
-  :id: 8RFcA4gh
-- :date: 2025-03-24
-  :type: legal
-  :event: Ruling in _American Federation of Teachers et al v. Bessent et al_, Judge
-    Boardman issues a preliminary injunction against DOGE access to internal systems
-    at the Departoment of the Treasury where the justification for access was "the
-    DOGE agenda" (i.e., all of them)
-  :named:
+  source: https://www.politico.com/news/2025/02/20/treasury-irs-data-white-house-doge-00205391
+  agency: Treasury
+  id: 8RFcA4gh
+
+- date: 2025-03-24
+  type: legal
+  event: >-
+    Ruling in _American Federation of Teachers et al v. Bessent et al_, Judge Boardman issues a preliminary
+    injunction against DOGE access to internal systems at the Departoment of the Treasury where the justification
+    for access was "the DOGE agenda" (i.e., all of them)
+  named:
   - Tom Krause
   - Ryan Wunderly
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.69.0.pdf
-  :case_no: 8:25-cv-00430
-  :agency: Treasury
-  :id: Z7E6ai2u
-- :date: 2025-03-25
-  :type: official
-  :event: President Trump issues an executive order mandating that all payments flow
-    through Treasury and that agencies must modify SORNs to share data with Treasury
-    as "routine use"
-  :source: https://www.whitehouse.gov/presidential-actions/2025/03/protecting-americas-bank-account-against-fraud-waste-and-abuse/
-  :agency: Treasury
-  :id: kqJsJLcA
-- :date: 2025-04-11
-  :type: directory
-  :event: In a legal filing, the government describes the DOGE team at Treasury of
-    consisting of six people, some previously unknown as DOGE associates.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.61.2.pdf
-  :case_no: 1:25-cv-00313
-  :named:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.69.0.pdf
+  case_no: 8:25-cv-00430
+  agency: Treasury
+  id: Z7E6ai2u
+
+- date: 2025-03-25
+  type: official
+  event: >-
+    President Trump issues an executive order mandating that all payments flow through Treasury and that
+    agencies must modify SORNs to share data with Treasury as "routine use"
+  source: >-
+    https://www.whitehouse.gov/presidential-actions/2025/03/protecting-americas-bank-account-against-fraud-waste-and-abuse/
+  agency: Treasury
+  id: kqJsJLcA
+
+- date: 2025-04-11
+  type: directory
+  event: >-
+    In a legal filing, the government describes the DOGE team at Treasury of consisting of six people,
+    some previously unknown as DOGE associates.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.61.2.pdf
+  case_no: 1:25-cv-00313
+  named:
   - Tom Krause
   - Todd Newnam
   - Ryan Wunderly
   - Linda Whitridge
   - Sam Corcos
   - Gavin Kliger
-  :agency: Treasury
-  :id: hRNyXeoy
-- :date: 2025-04-12
-  :type: legal
-  :event: Judge Vargas rules in _New York et al vs. Donald Trump_ that Ryan Wunderly
-    should be granted access to Treasury systems.
-  :named:
+  agency: Treasury
+  id: hRNyXeoy
+
+- date: 2025-04-12
+  type: legal
+  event: >-
+    Judge Vargas rules in _New York et al vs. Donald Trump_ that Ryan Wunderly should be granted access
+    to Treasury systems.
+  named:
   - Ryan Wunderly
-  :case_no: 1:25-cv-01144
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.139.0.pdf
-  :agency: Treasury
-  :id: 7AvfSN6g
-- :date: 2025-04-18
-  :type: onboard
-  :event: A new DOGE staffer (Roland Shen) who works for the payments startup Ramp
-    is reportedly also granted access to BFS systems.
-  :named:
+  case_no: 1:25-cv-01144
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.139.0.pdf
+  agency: Treasury
+  id: 7AvfSN6g
+
+- date: 2025-04-18
+  type: onboard
+  event: >-
+    A new DOGE staffer (Roland Shen) who works for the payments startup Ramp is reportedly also granted
+    access to BFS systems.
+  named:
   - Roland Shen
-  :source: https://www.msn.com/en-us/money/companies/rampin-up-baby-that-thiel-start-up-hunting-the-motherlode-contract-is-inside-treasury/ar-AA1DesOc
-  :agency: Treasury
-  :id: 85e3G4Rn
-- :date: 2025-05-26
-  :type: legal
-  :event: 'Judge Vargas, ruling in _New York v. Donald Trump_ lifted restrictions
-    on DOGE staff accessing Treasury systems, saying that the government had demonstrated
-    it was following proper procedures. '
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.156.0.pdf
-  :linked:
+  source: >-
+    https://www.msn.com/en-us/money/companies/rampin-up-baby-that-thiel-start-up-hunting-the-motherlode-contract-is-inside-treasury/ar-AA1DesOc
+  agency: Treasury
+  id: 85e3G4Rn
+
+- date: 2025-05-26
+  type: legal
+  event: "Judge Vargas, ruling in _New York v. Donald Trump_ lifted restrictions on DOGE staff accessing
+    Treasury systems, saying that the government had demonstrated it was following proper procedures. "
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.156.0.pdf
+  linked:
   - Tom Krause
   - Linda Whitridge
   - Sam Corcos
   - Todd Newnam
   - Ryan Wunderly
-  :case_no: 1:25-cv-01144
-  :agency: Treasury
-  :id: onhIeTZy
-- :date: 2025-06-06
-  :type: offboard
-  :event: Tom Krause resigns his position at Treasury and exits government service,
-    according to an email that he sent to employees at the Cloud Software Group, the
-    company which he was simultaneously running. He departed Treasury a month before
-    his SGE status would have required him to leave.
-  :named:
+  case_no: 1:25-cv-01144
+  agency: Treasury
+  id: onhIeTZy
+
+- date: 2025-06-06
+  type: offboard
+  event: >-
+    Tom Krause resigns his position at Treasury and exits government service, according to an email that
+    he sent to employees at the Cloud Software Group, the company which he was simultaneously running.
+    He departed Treasury a month before his SGE status would have required him to leave.
+  named:
   - Tom Krause
-  :agency: Treasury
-  :source: https://www.crn.com/news/cloud/2025/citrix-parent-ceo-krause-leaves-doge-us-treasury-post
-  :id: 3suHuULH
-- :date: 2026-04-28
-  :type: oversight
-  :event: The Government Accountability Office releases a report detailing its investigation
-    into DOGE's system access at the Treasury Department. It found that the agency
-    did not properly follow all of its requirements for security training and controls
-    before granting access. It only covers DOGE activities by Tom Krause and Marko
-    Elez at the agency and does not investigate later staff assigned to the agency.
-  :source: https://files.gao.gov/reports/GAO-26-108131/index.html
-  :agency: Treasury
-  :id: 4E3KdUOk
-- :date: 2026-06-10
-  :type: oversight
-  :event: The Inspector General for the Treasury concludes a 10-month investigation
-    that found no evidence of the payments fraud that was alleged by Elon Musk. Instead,
-    it seems like Musk misinterpreted some incorrect TINs as direct proof of fraud,
-    despite no futher evidence. This accusation of fraud was also the impetus for
-    DOGE's investigations into SSA which produced their own false accusations.
-  :notable: true
-  :source: https://www.politico.com/news/2026/06/10/treasury-watchdog-musk-payment-fraud-00957212
-  :agency:
+  agency: Treasury
+  source: https://www.crn.com/news/cloud/2025/citrix-parent-ceo-krause-leaves-doge-us-treasury-post
+  id: 3suHuULH
+
+- date: 2026-04-28
+  type: oversight
+  event: >-
+    The Government Accountability Office releases a report detailing its investigation into DOGE's system
+    access at the Treasury Department. It found that the agency did not properly follow all of its requirements
+    for security training and controls before granting access. It only covers DOGE activities by Tom Krause
+    and Marko Elez at the agency and does not investigate later staff assigned to the agency.
+  source: https://files.gao.gov/reports/GAO-26-108131/index.html
+  agency: Treasury
+  id: 4E3KdUOk
+
+- date: 2026-06-10
+  type: oversight
+  event: >-
+    The Inspector General for the Treasury concludes a 10-month investigation that found no evidence of
+    the payments fraud that was alleged by Elon Musk. Instead, it seems like Musk misinterpreted some
+    incorrect TINs as direct proof of fraud, despite no futher evidence. This accusation of fraud was
+    also the impetus for DOGE's investigations into SSA which produced their own false accusations.
+  notable: true
+  source: https://www.politico.com/news/2026/06/10/treasury-watchdog-musk-payment-fraud-00957212
+  agency:
   - Treasury
-  :id: 1O5ud8rZ
+  id: 1O5ud8rZ

@@ -1,29 +1,32 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Yinon Weiss
-:sort_name: Weiss
-:slug: yinon-weiss
-:age: 47
-:skill: coder
-:linkedin: https://www.linkedin.com/in/yweiss/
-:govt_exit_date: 2025-07-XX
-:govt_exit_truth: reported
-:govt_exit_type: resigned
-:blurb: A former Army Special Forces captain, Yinon Weiss is the founder of a startup
-  that sells software for automobile repair shops.
-:positions:
-- :id: dod-weiss
-  :type: appointed
-  :category: wrecker
-  :agency: DOD
-  :sort_date: 2025-02-18
-  :start_date: 2025-02-(18)?
-  :start_date_truth: inferred
-  :end_date: 2025-07-XX
-  :end_date_truth: reported
-  :end_type: resigned
-  :table_note: Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting
-    on 2/20 that many were veterans. Reported as having left DOD in July by Wash.
-    Post
-  :source:
+name: Yinon Weiss
+sort_name: Weiss
+slug: yinon-weiss
+age: 47
+skill: coder
+linkedin: https://www.linkedin.com/in/yweiss/
+govt_exit_date: 2025-07-XX
+govt_exit_truth: reported
+govt_exit_type: resigned
+blurb: >-
+  A former Army Special Forces captain, Yinon Weiss is the founder of a startup that sells software for
+  automobile repair shops.
+positions:
+
+- id: dod-weiss
+  type: appointed
+  category: wrecker
+  agency: DOD
+  sort_date: 2025-02-18
+  start_date: 2025-02-(18)?
+  start_date_truth: inferred
+  end_date: 2025-07-XX
+  end_date_truth: reported
+  end_type: resigned
+  table_note: >-
+    Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting on 2/20 that many were
+    veterans. Reported as having left DOD in July by Wash. Post
+  source:
   - https://projects.propublica.org/elon-musk-doge-tracker/
   - https://www.washingtonpost.com/national-security/2025/07/15/hegseth-doge-justin-fulcher-yinon-weiss/

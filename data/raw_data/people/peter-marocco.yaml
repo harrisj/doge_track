@@ -1,69 +1,75 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Peter Marocco
-:sort_name: Marocco
-:slug: peter-marocco
-:skill: political
-:blurb: A veteran of the first Trump administration, he was reportedly placed on administrative
-  leave in 2020 for establishing a pattern in a division of USAID that he ran where
-  he would unilaterally freeze or revoke grants that he felt didn't reflect administration
-  priorities. When employees spoke up about it, he would then accuse them of insubordination
-  and attempt to get them suspended or fired. He sounds like a really nice guy, so
-  it's probably not surprising that placing him in charge of USAID this year led to
-  the rapid destruction of the agency. And it's also possibly why he himself was reportedly
-  ousted from the State Department after the damage was complete. It would be comically
-  ironic, if it didn't mean the loss of hundreds of valuable people in USAID and [hundreds
-  of thousands of deaths](https://www.bu.edu/sph/news/articles/2025/tracking-anticipated-deaths-from-usaid-funding-cuts/)
+name: Peter Marocco
+sort_name: Marocco
+slug: peter-marocco
+skill: political
+blurb: >-
+  A veteran of the first Trump administration, he was reportedly placed on administrative leave in 2020
+  for establishing a pattern in a division of USAID that he ran where he would unilaterally freeze or
+  revoke grants that he felt didn't reflect administration priorities. When employees spoke up about it,
+  he would then accuse them of insubordination and attempt to get them suspended or fired. He sounds like
+  a really nice guy, so it's probably not surprising that placing him in charge of USAID this year led
+  to the rapid destruction of the agency. And it's also possibly why he himself was reportedly ousted
+  from the State Department after the damage was complete. It would be comically ironic, if it didn't
+  mean the loss of hundreds of valuable people in USAID and [hundreds of thousands of deaths](https://www.bu.edu/sph/news/articles/2025/tracking-anticipated-deaths-from-usaid-funding-cuts/)
   worldwide.
-:govt_exit_date: 2025-04-13
-:govt_exit_truth: reported
-:govt_exit_type: fired
-:positions:
-- :id: state-marocco
-  :type: appointed
-  :start_date: 2025-01-20
-  :start_date_truth: inferred
-  :category: unknown
-  :end_date: 2025-04-13
-  :end_date_truth: reported
-  :end_type: fired
-  :agency: State
-  :title: Director of Foreign Assistance
-  :salary: "$195,2200"
-  :title_type: director
-  :project: elimination
-  :source:
-  - https://www.reuters.com/world/us/trump-official-who-oversaw-closure-usaid-has-left-state-department-wsj-reports-2025-04-13/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-- :id: usaid-marocco
-  :agency: USAID
-  :type: appointed
-  :category: enabler
-  :project: elimination
-  :start_date: 2025-02-01
-  :start_date_truth: reported
-  :end_date: 2025-03-19
-  :end_date_truth: reported
-  :end_type: resigned
-  :source: https://www.nytimes.com/2025/03/19/us/politics/usaid-doge-leadership.html
-- :id: iaf-marocco
-  :type: appointed
-  :category: wrecker
-  :start_date: 2025-02-28
-  :start_date_truth: verified
-  :end_date: 2025-04-04
-  :end_date_truth: inferred
-  :end_type: removed
-  :project: elimination
-  :table_note: Assuming removed with Sara Aviel reinstatement by court order
-  :title: President/CEO
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
-  :agency: IAF
-- :id: usadf-marocco
-  :type: appointed
-  :category: wrecker
-  :agency: USADF
-  :title: Acting Chair of the Board
-  :project: elimination
-  :start_date: 2025-02-28
-  :start_date_truth: verified
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+govt_exit_date: 2025-04-13
+govt_exit_truth: reported
+govt_exit_type: fired
+positions:
+
+- id: state-marocco
+  type: appointed
+  start_date: 2025-01-20
+  start_date_truth: inferred
+  category: unknown
+  end_date: 2025-04-13
+  end_date_truth: reported
+  end_type: fired
+  agency: State
+  title: Director of Foreign Assistance
+  salary: "$195,2200"
+  title_type: director
+  project: elimination
+  source:
+  - >-
+    https://www.reuters.com/world/us/trump-official-who-oversaw-closure-usaid-has-left-state-department-wsj-reports-2025-04-13/
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+
+- id: usaid-marocco
+  agency: USAID
+  type: appointed
+  category: enabler
+  project: elimination
+  start_date: 2025-02-01
+  start_date_truth: reported
+  end_date: 2025-03-19
+  end_date_truth: reported
+  end_type: resigned
+  source: https://www.nytimes.com/2025/03/19/us/politics/usaid-doge-leadership.html
+
+- id: iaf-marocco
+  type: appointed
+  category: wrecker
+  start_date: 2025-02-28
+  start_date_truth: verified
+  end_date: 2025-04-04
+  end_date_truth: inferred
+  end_type: removed
+  project: elimination
+  table_note: Assuming removed with Sara Aviel reinstatement by court order
+  title: President/CEO
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+  agency: IAF
+
+- id: usadf-marocco
+  type: appointed
+  category: wrecker
+  agency: USADF
+  title: Acting Chair of the Board
+  project: elimination
+  start_date: 2025-02-28
+  start_date_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf

@@ -1,25 +1,31 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: National Security Agency
-:id: NSA
-:short_name: NSA
-:slug: nsa
-:page_slug: defense
-:parent_id: DOD
-:events:
-- :date: 2025-03-12
-  :type: interagency
-  :event: Elon Musk visits the National Security Agency (NSA) to meet with its top
-    administrator, General Timothy Haugh
-  :interagency_doge_reps:
-    :DOGE:
+name: National Security Agency
+id: NSA
+short_name: NSA
+slug: nsa
+page_slug: defense
+parent_id: DOD
+events:
+
+- date: 2025-03-12
+  type: interagency
+  event: >-
+    Elon Musk visits the National Security Agency (NSA) to meet with its top administrator, General Timothy
+    Haugh
+  interagency_doge_reps:
+    DOGE:
     - Elon Musk
-  :source: https://www.wsj.com/politics/national-security/elon-musk-made-secret-visit-to-u-s-spy-agency-9b0b64e2?mod=hp_lead_pos5
-  :agency: NSA
-  :id: QZojvztE
-- :date: 2025-04-02
-  :type: disruption
-  :event: The head and deputy leader of the NSA are both relieved of their command
-    by Defense Secretary Pete Hegseth.
-  :source: https://www.nytimes.com/2025/04/03/us/politics/nsa-cyber-command-chief-fired.html
-  :agency: NSA
-  :id: ATa2VGxh
+  source: >-
+    https://www.wsj.com/politics/national-security/elon-musk-made-secret-visit-to-u-s-spy-agency-9b0b64e2?mod=hp_lead_pos5
+  agency: NSA
+  id: QZojvztE
+
+- date: 2025-04-02
+  type: disruption
+  event: >-
+    The head and deputy leader of the NSA are both relieved of their command by Defense Secretary Pete
+    Hegseth.
+  source: https://www.nytimes.com/2025/04/03/us/politics/nsa-cyber-command-chief-fired.html
+  agency: NSA
+  id: ATa2VGxh

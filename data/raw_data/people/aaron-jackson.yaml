@@ -1,28 +1,31 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Aaron Jackson
-:sort_name: Jackson, Aaron
-:slug: aaron-jackson
-:skill: designer
-:linkedin: https://www.linkedin.com/in/aaron-jackson-5387b89b/
-:college_graduation_year: 2011
-:affiliations:
-- :entity_id: instrument
-  :timeframe: before
-  :role: employee
-  :start_date: 2016-11-XX
-  :start_date_truth: self-reported
-  :end_date: 2021-03-XX
-  :end_date_truth: self-reported
-  :connection_truth: self-reported
-  :source: https://www.linkedin.com/in/aaron-jackson-5387b89b/
-  :id: xui4XUtm
-:positions:
-- :id: nds-jackson
-  :agency: NDS
-  :category: builder
-  :type: appointed
-  :title: Design Director, Founding Design Partner
-  :project: modernization
-  :start_date: 2025-09-XX
-  :start_date_truth: self-reported
-  :source: https://www.linkedin.com/in/aaron-jackson-5387b89b/
+name: Aaron Jackson
+sort_name: Jackson, Aaron
+slug: aaron-jackson
+skill: designer
+linkedin: https://www.linkedin.com/in/aaron-jackson-5387b89b/
+college_graduation_year: 2011
+affiliations:
+
+- entity_id: instrument
+  timeframe: before
+  role: employee
+  start_date: 2016-11-XX
+  start_date_truth: self-reported
+  end_date: 2021-03-XX
+  end_date_truth: self-reported
+  connection_truth: self-reported
+  source: https://www.linkedin.com/in/aaron-jackson-5387b89b/
+  id: xui4XUtm
+positions:
+
+- id: nds-jackson
+  agency: NDS
+  category: builder
+  type: appointed
+  title: Design Director, Founding Design Partner
+  project: modernization
+  start_date: 2025-09-XX
+  start_date_truth: self-reported
+  source: https://www.linkedin.com/in/aaron-jackson-5387b89b/

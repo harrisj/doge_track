@@ -1,32 +1,37 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Ryan Riedel
-:sort_name: Riedel
-:slug: ryan-riedel
-:age: 37
-:skill: coder
-:govt_exit_date: 2025-03-07
-:govt_exit_truth: reported
-:govt_exit_type: resigned
-:blurb: Before being named to the role of Chief Information Officer at the Department
-  of Energy, Ryan Riedel was a lead network security engineer at SpaceX. After initially
-  granting elevated access to Adam Ramada and Luke Farritor, he lasted for about a
-  month in the role before resigning and presumably leaving government service.
-:tech_links:
+name: Ryan Riedel
+sort_name: Riedel
+slug: ryan-riedel
+age: 37
+skill: coder
+govt_exit_date: 2025-03-07
+govt_exit_truth: reported
+govt_exit_type: resigned
+blurb: >-
+  Before being named to the role of Chief Information Officer at the Department of Energy, Ryan Riedel
+  was a lead network security engineer at SpaceX. After initially granting elevated access to Adam Ramada
+  and Luke Farritor, he lasted for about a month in the role before resigning and presumably leaving government
+  service.
+tech_links:
+
 - SpaceX
-:positions:
-- :id: energy-ryan-riedel
-  :type: appointed
-  :agency: Energy
-  :category: enabler
-  :title: Chief Information Officer
-  :title_type: cio
-  :start_date: 2025-02-07
-  :start_date_truth: reported
-  :end_date: 2025-03-07
-  :end_date_truth: reported
-  :end_type: resigned
-  :project: impunity
-  :salary: "$195,200"
-  :source:
+positions:
+
+- id: energy-ryan-riedel
+  type: appointed
+  agency: Energy
+  category: enabler
+  title: Chief Information Officer
+  title_type: cio
+  start_date: 2025-02-07
+  start_date_truth: reported
+  end_date: 2025-03-07
+  end_date_truth: reported
+  end_type: resigned
+  project: impunity
+  salary: "$195,200"
+  source:
   - https://www.nextgov.com/people/2025/03/energy-cio-departs-after-short-tenure/403596/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring

@@ -1,62 +1,66 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Carl Coe
-:sort_name: Coe
-:slug: carl-coe
-:skill: executive
-:linkedin: https://www.linkedin.com/in/carl-coe-912b82/
-:blurb: Carl Coe has been the leader of the DOGE team embedded within the EPA, where
-  he has kept a remarkably low profile, even as other DOGE staffers like Cole Killian
-  and Kathryn Armstrong Loving showed up in media reports. At the EPA, his primary
-  focus would be on reducing the effectiveness of the agency through eliminating staff
-  and whittling down regulations.
-:govt_exit_date: 2026-07-31
-:govt_exit_type: resigned
-:govt_exit_truth: reported
-:positions:
-- :id: coe-detail-epa
-  :type: detailed
-  :category: wrecker
-  :from: DOGE
-  :from_truth: guessed
-  :start_date: 2025-02-XX
-  :start_date_truth: guessed
-  :sort_date: 2025-02-20
-  :project:
+name: Carl Coe
+sort_name: Coe
+slug: carl-coe
+skill: executive
+linkedin: https://www.linkedin.com/in/carl-coe-912b82/
+blurb: >-
+  Carl Coe has been the leader of the DOGE team embedded within the EPA, where he has kept a remarkably
+  low profile, even as other DOGE staffers like Cole Killian and Kathryn Armstrong Loving showed up in
+  media reports. At the EPA, his primary focus would be on reducing the effectiveness of the agency through
+  eliminating staff and whittling down regulations.
+govt_exit_date: 2026-07-31
+govt_exit_type: resigned
+govt_exit_truth: reported
+positions:
+
+- id: coe-detail-epa
+  type: detailed
+  category: wrecker
+  from: DOGE
+  from_truth: guessed
+  start_date: 2025-02-XX
+  start_date_truth: guessed
+  sort_date: 2025-02-20
+  project:
   - deregulation
   - personnel
-  :table_note: Carl Coe, who currently leads the Department of Government Efficiency
-    (DOGE) at DOE
-  :source: https://www.energy.gov/articles/doe-announces-new-leadership-tackle-challenges-growing-energy-demand
-  :agency: EPA
-- :id: coe-doge
-  :type: appointed
-  :category: support
-  :sort_date: 2025-02-01
-  :start_date: 2025-02-XX
-  :start_date_truth: self-reported
-  :agency: DOGE
-  :project:
+  table_note: Carl Coe, who currently leads the Department of Government Efficiency (DOGE) at DOE
+  source: https://www.energy.gov/articles/doe-announces-new-leadership-tackle-challenges-growing-energy-demand
+  agency: EPA
+
+- id: coe-doge
+  type: appointed
+  category: support
+  sort_date: 2025-02-01
+  start_date: 2025-02-XX
+  start_date_truth: self-reported
+  agency: DOGE
+  project:
   - deregulation
   - personnel
-  :table_note: His linkedin reports Feb 2025 as start
-  :source: https://www.linkedin.com/in/carl-coe-912b82/
-- :id: epa-coe-chief-staff
-  :type: promotion
-  :category: enabler
-  :title: Chief of Staff
-  :title_type: dept_head
-  :supervisory: true
-  :project:
+  table_note: His linkedin reports Feb 2025 as start
+  source: https://www.linkedin.com/in/carl-coe-912b82/
+
+- id: epa-coe-chief-staff
+  type: promotion
+  category: enabler
+  title: Chief of Staff
+  title_type: dept_head
+  supervisory: true
+  project:
   - personnel
   - deregulation
-  :agency: EPA
-  :start_date: 2025-05-02
-  :start_date_truth: verified
-  :end_date: 2026-07-31
-  :end_date_truth: reported
-  :end_type: resigned
-  :salary: "$167,603"
-  :source:
+  agency: EPA
+  start_date: 2025-05-02
+  start_date_truth: verified
+  end_date: 2026-07-31
+  end_date_truth: reported
+  end_type: resigned
+  salary: "$167,603"
+  source:
   - https://www.nytimes.com/2025/06/07/us/politics/trump-musk-doge-interior-epa.html
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - https://www.eenews.net/articles/coe-out-as-doe-chief-of-staff/

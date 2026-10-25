@@ -1,15 +1,17 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Sully Vickers
-:sort_name: Vickers
-:slug: sully-vickers
-:skill: coder
-:linkedin: https://www.linkedin.com/in/sully-vickers-432b7a246/
-:positions:
-- :id: nds-vickers
-  :category: builder
-  :agency: NDS
-  :title: Cybersecurity
-  :type: appointed
-  :start_date: 2026-07-17
-  :start_date_truth: self-reported
-  :source: https://www.linkedin.com/feed/update/urn:li:activity:7484103310795390976/
+name: Sully Vickers
+sort_name: Vickers
+slug: sully-vickers
+skill: coder
+linkedin: https://www.linkedin.com/in/sully-vickers-432b7a246/
+positions:
+
+- id: nds-vickers
+  category: builder
+  agency: NDS
+  title: Cybersecurity
+  type: appointed
+  start_date: 2026-07-17
+  start_date_truth: self-reported
+  source: https://www.linkedin.com/feed/update/urn:li:activity:7484103310795390976/

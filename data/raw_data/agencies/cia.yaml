@@ -1,16 +1,18 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Central Intelligence Agency
-:id: CIA
-:short_name: CIA
-:slug: cia
-:page_slug: none
-:events:
-- :date: 2025-03-31
-  :type: interagency
-  :event: Elon Musk visits the CIA at the invitation of its director, John Ratcliffe.
-  :interagency_doge_reps:
-    :DOGE:
+name: Central Intelligence Agency
+id: CIA
+short_name: CIA
+slug: cia
+page_slug: none
+events:
+
+- date: 2025-03-31
+  type: interagency
+  event: Elon Musk visits the CIA at the invitation of its director, John Ratcliffe.
+  interagency_doge_reps:
+    DOGE:
     - Elon Musk
-  :source: https://www.washingtonpost.com/national-security/2025/03/31/elon-musk-cia-doge/
-  :agency: CIA
-  :id: EvqS5mPP
+  source: https://www.washingtonpost.com/national-security/2025/03/31/elon-musk-cia-doge/
+  agency: CIA
+  id: EvqS5mPP

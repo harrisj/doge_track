@@ -1,70 +1,76 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Ross Graber
-:sort_name: Graber
-:slug: ross-graber
-:skill: executive
-:linkedin: https://www.linkedin.com/in/rgsec/
-:blurb: After reportedly assisting DOGE at the State Department, Ross Graber was named
-  into the position of Chief Information Officer at the Department of Energy when
-  Ryan Riedel suddenly departed. And then after two months, he suddenly resigned from
-  the role as well. Prior to DOGE, he had been a security manager at Yahoo, Google
-  and then Twitter before moving into the role of Senior Director of Security Technologies
+name: Ross Graber
+sort_name: Graber
+slug: ross-graber
+skill: executive
+linkedin: https://www.linkedin.com/in/rgsec/
+blurb: >-
+  After reportedly assisting DOGE at the State Department, Ross Graber was named into the position of
+  Chief Information Officer at the Department of Energy when Ryan Riedel suddenly departed. And then after
+  two months, he suddenly resigned from the role as well. Prior to DOGE, he had been a security manager
+  at Yahoo, Google and then Twitter before moving into the role of Senior Director of Security Technologies
   at Procore Technologies (until leaving in February to join DOGE).
-:tech_links:
+tech_links:
+
 - Twitter
-:affiliations:
-- :entity_id: twitter
-  :role: employee
-  :timeframe: before
-  :connection_truth: self-reported
-  :start_date: 2013-10-XX
-  :start_date_truth: self-reported
-  :end_date: 2017-09-XX
-  :end_date_truth: self-reported
-  :source: https://www.linkedin.com/in/rgsec/
-  :id: dnUsAEO0
-:positions:
-- :id: state-graber
-  :type: appointed
-  :category: wrecker
-  :agency: State
-  :start_date: 2025-02-XX
-  :start_date_truth: reported
-  :end_date: 2025-03-13
-  :end_date_truth: verified
-  :end_type: resigned
-  :source: https://www.nextgov.com/people/2025/03/energy-appoints-twitter-google-alum-new-cio/403717/
-- :id: energy-graber
-  :type: appointed
-  :category: enabler
-  :agency: Energy
-  :start_date: 2025-03-13
-  :start_date_truth: verified
-  :end_date: 2025-07-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :project:
+affiliations:
+
+- entity_id: twitter
+  role: employee
+  timeframe: before
+  connection_truth: self-reported
+  start_date: 2013-10-XX
+  start_date_truth: self-reported
+  end_date: 2017-09-XX
+  end_date_truth: self-reported
+  source: https://www.linkedin.com/in/rgsec/
+  id: dnUsAEO0
+positions:
+
+- id: state-graber
+  type: appointed
+  category: wrecker
+  agency: State
+  start_date: 2025-02-XX
+  start_date_truth: reported
+  end_date: 2025-03-13
+  end_date_truth: verified
+  end_type: resigned
+  source: https://www.nextgov.com/people/2025/03/energy-appoints-twitter-google-alum-new-cio/403717/
+
+- id: energy-graber
+  type: appointed
+  category: enabler
+  agency: Energy
+  start_date: 2025-03-13
+  start_date_truth: verified
+  end_date: 2025-07-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  project:
   - spending
   - impunity
-  :salary: "$195,200"
-  :table_note: Reported to have resigned on 4/18, but LinkedIN reports working into
-    July
-  :title: Chief Information Officer
-  :title_type: cio
-  :supervisory: true
-  :source:
+  salary: "$195,200"
+  table_note: Reported to have resigned on 4/18, but LinkedIN reports working into July
+  title: Chief Information Officer
+  title_type: cio
+  supervisory: true
+  source:
   - https://www.nextgov.com/people/2025/03/energy-appoints-twitter-google-alum-new-cio/403717/
   - https://www.meritalk.com/articles/energy-department-cio-graber-resigns-sources-say/
   - https://www.linkedin.com/in/rgsec/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-- :id: nnsa-graber
-  :type: appointed
-  :category: enabler
-  :agency: NNSA
-  :start_date: 2025-07-XX
-  :start_date_truth: self-reported
-  :title: Chief Information Security Officer
-  :project: impunity
-  :title_type: dept_head
-  :supervisory: true
-  :source: https://www.linkedin.com/in/rgsec/
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+
+- id: nnsa-graber
+  type: appointed
+  category: enabler
+  agency: NNSA
+  start_date: 2025-07-XX
+  start_date_truth: self-reported
+  title: Chief Information Security Officer
+  project: impunity
+  title_type: dept_head
+  supervisory: true
+  source: https://www.linkedin.com/in/rgsec/

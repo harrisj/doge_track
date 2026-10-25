@@ -1,175 +1,191 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Justin Fox
-:sort_name: Fox, Justin
-:slug: justin-fox
-:age: 27
-:skill: analyst
-:college_graduation_year: 2020
-:source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-:blurb: Joining GSA as a wrecker in mid-February, Justin Fox has mainly served as
-  Nate Cavanaugh's sidekick for the destruction of several small independent federal
-  agencies. Prior to his career as a visigoth, he worked as an analyst at several
-  different investment firms. He was all friends in college with fellow wrecker Marshall
-  Wood. Since October 1, 2025, he has been the co-founder of a tech company named
-  Special with Nate Cavanaugh.
-:tech_links:
+name: Justin Fox
+sort_name: Fox, Justin
+slug: justin-fox
+age: 27
+skill: analyst
+college_graduation_year: 2020
+source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+blurb: >-
+  Joining GSA as a wrecker in mid-February, Justin Fox has mainly served as Nate Cavanaugh's sidekick
+  for the destruction of several small independent federal agencies. Prior to his career as a visigoth,
+  he worked as an analyst at several different investment firms. He was all friends in college with fellow
+  wrecker Marshall Wood. Since October 1, 2025, he has been the co-founder of a tech company named Special
+  with Nate Cavanaugh.
+tech_links:
+
 - Special
-:govt_exit_date: 2025-09-(15)~
-:govt_exit_type: resigned
-:govt_exit_truth: verified
-:affiliations:
-- :entity_id: mentorship-armstrong
-  :role: mentee
-  :connection_truth: self-reported
-  :timeframe: before
-  :table_note: Deposition mentioned Armstrong as mentor and father of a friend
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-  :id: Ugvqe4uu
-- :entity_id: special-inc
-  :role: founder
-  :connection_truth: self-reported
-  :timeframe: after
-  :immediate: true
-  :start_date: 2025-10-01
-  :start_date_truth: self-reported
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-  :id: ERp811R5
-- :entity_id: doge-indie-wreckers
-  :role: member
-  :timeframe: during
-  :connection_truth: self-reported
-  :start_date: 2025-03-03
-  :start_date_truth: self-reported
-  :end_date: 2025-09-(15)~
-  :end_date_truth: self-reported
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-  :id: 5lfEuwMd
-:positions:
-- :id: detail-gsa-nea-fox
-  :agency: NEA
-  :category: wrecker
-  :type: detailed
-  :project:
+govt_exit_date: 2025-09-(15)~
+govt_exit_type: resigned
+govt_exit_truth: verified
+affiliations:
+
+- entity_id: mentorship-armstrong
+  role: mentee
+  connection_truth: self-reported
+  timeframe: before
+  table_note: Deposition mentioned Armstrong as mentor and father of a friend
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  id: Ugvqe4uu
+
+- entity_id: special-inc
+  role: founder
+  connection_truth: self-reported
+  timeframe: after
+  immediate: true
+  start_date: 2025-10-01
+  start_date_truth: self-reported
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  id: ERp811R5
+
+- entity_id: doge-indie-wreckers
+  role: member
+  timeframe: during
+  connection_truth: self-reported
+  start_date: 2025-03-03
+  start_date_truth: self-reported
+  end_date: 2025-09-(15)~
+  end_date_truth: self-reported
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  id: 5lfEuwMd
+positions:
+
+- id: detail-gsa-nea-fox
+  agency: NEA
+  category: wrecker
+  type: detailed
+  project:
   - spending
   - personnel
-  :from: GSA
-  :from_truth: self-reported
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-- :id: gsa-justin-fox
-  :type: appointed
-  :category: wrecker
-  :agency: GSA
-  :start_date: 2025-03-03
-  :start_date_truth: verified
-  :title: Senior Advisor
-  :title_type: advisor
-  :office: Office of the Administrator
-  :project:
+  from: GSA
+  from_truth: self-reported
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+
+- id: gsa-justin-fox
+  type: appointed
+  category: wrecker
+  agency: GSA
+  start_date: 2025-03-03
+  start_date_truth: verified
+  title: Senior Advisor
+  title_type: advisor
+  office: Office of the Administrator
+  project:
   - spending
   - personnel
-  :end_date: 2025-09-(15)~
-  :end_date_truth: verified
-  :end_type: resigned
-  :salary: "$167,603"
-  :table_note: End date is just given as "mid-September"
-  :comment: No details, but just guessing
-  :source:
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  end_date: 2025-09-(15)~
+  end_date_truth: verified
+  end_type: resigned
+  salary: "$167,603"
+  table_note: End date is just given as "mid-September"
+  comment: No details, but just guessing
+  source:
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
-- :id: detail-gsa-iaf-fox
-  :agency: IAF
-  :type: detailed
-  :from: GSA
-  :category: wrecker
-  :project: elimination
-  :from_truth: self-reported
-  :start_date: 2025-03-(04)~
-  :sort_date: 2025-03-04
-  :start_date_truth: inferred
-  :table_note: start inferred from DOGE at IAF, but after start at GSA
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-- :id: detail-gsa-usip-fox
-  :agency: USIP
-  :type: detailed
-  :from: GSA
-  :project: elimination
-  :category: wrecker
-  :from_truth: self-reported
-  :start_date: 2025-03-04
-  :start_date_truth: reported
-  :table_note: Inferring from Nate Cavanaugh start
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-- :id: detail-neh-justin-fox
-  :type: detailed
-  :category: wrecker
-  :project:
+
+- id: detail-gsa-iaf-fox
+  agency: IAF
+  type: detailed
+  from: GSA
+  category: wrecker
+  project: elimination
+  from_truth: self-reported
+  start_date: 2025-03-(04)~
+  sort_date: 2025-03-04
+  start_date_truth: inferred
+  table_note: start inferred from DOGE at IAF, but after start at GSA
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+
+- id: detail-gsa-usip-fox
+  agency: USIP
+  type: detailed
+  from: GSA
+  project: elimination
+  category: wrecker
+  from_truth: self-reported
+  start_date: 2025-03-04
+  start_date_truth: reported
+  table_note: Inferring from Nate Cavanaugh start
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+
+- id: detail-neh-justin-fox
+  type: detailed
+  category: wrecker
+  project:
   - spending
   - dei
   - elimination
-  :agency: NEH
-  :from: GSA
-  :from_truth: guessed
-  :sort_date: 2025-03-13
-  :start_date: 2025-03-(13)~
-  :start_date_truth: verified
-  :comment: Guessing GSA based on some past reporting
-  :source:
+  agency: NEH
+  from: GSA
+  from_truth: guessed
+  sort_date: 2025-03-13
+  start_date: 2025-03-(13)~
+  start_date_truth: verified
+  comment: Guessing GSA based on some past reporting
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
-- :id: detail-gsa-imls-fox
-  :type: detailed
-  :agency: IMLS
-  :from: GSA
-  :project:
+
+- id: detail-gsa-imls-fox
+  type: detailed
+  agency: IMLS
+  from: GSA
+  project:
   - spending
   - dei
-  :category: wrecker
-  :from_truth: self-reported
-  :start_date: 2025-03-20
-  :start_date_truth: inferred
-  :table_note: start inferred from IMLS appearance
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-- :id: detail-gsa-mcc-fox
-  :type: detailed
-  :category: wrecker
-  :agency: MCC
-  :from: GSA
-  :from_truth: guessed
-  :project:
+  category: wrecker
+  from_truth: self-reported
+  start_date: 2025-03-20
+  start_date_truth: inferred
+  table_note: start inferred from IMLS appearance
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+
+- id: detail-gsa-mcc-fox
+  type: detailed
+  category: wrecker
+  agency: MCC
+  from: GSA
+  from_truth: guessed
+  project:
   - spending
   - elimination
-  :sort_date: 2025-03-22
-  :start_date: 2025-03-(22)?
-  :start_date_truth: guessed
-  :source:
+  sort_date: 2025-03-22
+  start_date: 2025-03-(22)?
+  start_date_truth: guessed
+  source:
   - https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
   - https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-  :table_note: Linked to MCC by NPR, start date guessed from disruption there
-- :id: detail-gsa-wwics-fox
-  :type: detailed
-  :category: wrecker
-  :agency: WWICS
-  :project: elimination
-  :from: GSA
-  :from_truth: guessed
-  :start_date: 2025-03-31
-  :start_date_truth: reported
-  :source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
-  :table_note: Linked to WWICS by NPR, date is first DOGE sighting at agency
-- :id: detail-gsa-nlrb-fox
-  :type: detailed
-  :category: wrecker
-  :project:
+  table_note: Linked to MCC by NPR, start date guessed from disruption there
+
+- id: detail-gsa-wwics-fox
+  type: detailed
+  category: wrecker
+  agency: WWICS
+  project: elimination
+  from: GSA
+  from_truth: guessed
+  start_date: 2025-03-31
+  start_date_truth: reported
+  source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+  table_note: Linked to WWICS by NPR, date is first DOGE sighting at agency
+
+- id: detail-gsa-nlrb-fox
+  type: detailed
+  category: wrecker
+  project:
   - deregulation
   - personnel
-  :agency: NLRB
-  :from: GSA
-  :from_truth: verified
-  :start_date: 2025-04-16
-  :start_date_truth: verified
-  :end_date: 2025-07-25
-  :end_date_truth: verified
-  :end_type: detail_ended
-  :source:
-  - https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+  agency: NLRB
+  from: GSA
+  from_truth: verified
+  start_date: 2025-04-16
+  start_date_truth: verified
+  end_date: 2025-07-25
+  end_date_truth: verified
+  end_type: detail_ended
+  source:
+  - >-
+    https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
   - https://files.gao.gov/reports/GAO-26-108774/index.html

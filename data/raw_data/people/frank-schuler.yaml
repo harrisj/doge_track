@@ -1,31 +1,36 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Frank Schuler
-:sort_name: Schuler
-:slug: frank-schuler
-:skill: executive
-:govt_exit_date: 2025-07-29
-:govt_exit_truth: reported
-:govt_exit_type: resigned
-:blurb: A former partner in a real-estate investment firm in Atlanta, Frank Schuler
-  was mentioned as one of Stephen Ehikian's pending appointments on January 20th.
-  He wasn't sighted in GSA until mid-February, when he appeared in a meeting and was
-  introduced by Nate Cavanaugh. It's unclear what he is doing for DOGE inside of GSA.
-:positions:
-- :id: gsa-frank-schuler
-  :type: appointed
-  :category: wrecker
-  :title: Senior Advisor
-  :title_type: advisor
-  :agency: GSA
-  :sort_date: 2025-01-20
-  :start_date: 2025-01-XX
-  :start_date_truth: reported
-  :end_date: 2025-07-29
-  :end_date_truth: reported
-  :end_type: resigned
-  :salary: "$167,603"
-  :comment: Details from a news article
-  :source:
+name: Frank Schuler
+sort_name: Schuler
+slug: frank-schuler
+skill: executive
+govt_exit_date: 2025-07-29
+govt_exit_truth: reported
+govt_exit_type: resigned
+blurb: >-
+  A former partner in a real-estate investment firm in Atlanta, Frank Schuler was mentioned as one of
+  Stephen Ehikian's pending appointments on January 20th. He wasn't sighted in GSA until mid-February,
+  when he appeared in a meeting and was introduced by Nate Cavanaugh. It's unclear what he is doing for
+  DOGE inside of GSA.
+positions:
+
+- id: gsa-frank-schuler
+  type: appointed
+  category: wrecker
+  title: Senior Advisor
+  title_type: advisor
+  agency: GSA
+  sort_date: 2025-01-20
+  start_date: 2025-01-XX
+  start_date_truth: reported
+  end_date: 2025-07-29
+  end_date_truth: reported
+  end_type: resigned
+  salary: "$167,603"
+  comment: Details from a news article
+  source:
   - https://www.propublica.org/article/frank-schuler-gsa-doge-syndicated-conservation-easements-tax-scam
-  - https://www.govexec.com/management/2025/07/doge-and-other-day-one-trump-appointees-head-exits-multiple-agencies/407075/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.govexec.com/management/2025/07/doge-and-other-day-one-trump-appointees-head-exits-multiple-agencies/407075/
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring

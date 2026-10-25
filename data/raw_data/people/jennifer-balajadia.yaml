@@ -1,62 +1,69 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Jennifer Balajadia
-:sort_name: Balajadia
-:slug: jennifer-balajadia
-:age: 36
-:skill: administrator
-:tech_links:
+name: Jennifer Balajadia
+sort_name: Balajadia
+slug: jennifer-balajadia
+age: 36
+skill: administrator
+tech_links:
+
 - Musk family
+
 - Twitter
-:blurb: An longtime personal assistant to Elon Musk – who reportedly once told a Twitter
-  employee that "Elon is special in this world. It is our job to protect him and make
-  sure what he wants to have happen" – Jennifer "Jehn" Balajadia has been linked to
-  the Department of Education and possibly a few other agencies by the _New York Times_,
-  but actual details of her activity have been scarce.
-:govt_exit_date: 2025-05-28
-:govt_exit_truth: inferred
-:govt_exit_type: resigned
-:linkedin: https://www.linkedin.com/in/jehn-balajadia-76b141247/
-:affiliations:
-- :entity_id: twitter
-  :role: employee
-  :timeframe: before
-  :immediate: true
-  :connection_truth: verified
-  :end_date: 2025-02-05
-  :end_date_truth: inferred
-  :source: https://projects.propublica.org/elon-musk-doge-tracker/
-  :id: 2XIOrtvV
-- :entity_id: boring
-  :role: employee
-  :timeframe: before
-  :connection_truth: self-reported
-  :start_date: 2017-11-XX
-  :start_date_truth: self-reported
-  :source: https://www.linkedin.com/in/jehn-balajadia-76b141247/
-  :id: 4uidHaKc
-:positions:
-- :id: education-balajadia
-  :type: detailed
-  :category: wrecker
-  :table_note: NYT links her to Education, but no other info found
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  :project:
+blurb: >-
+  An longtime personal assistant to Elon Musk – who reportedly once told a Twitter employee that "Elon
+  is special in this world. It is our job to protect him and make sure what he wants to have happen" –
+  Jennifer "Jehn" Balajadia has been linked to the Department of Education and possibly a few other agencies
+  by the _New York Times_, but actual details of her activity have been scarce.
+govt_exit_date: 2025-05-28
+govt_exit_truth: inferred
+govt_exit_type: resigned
+linkedin: https://www.linkedin.com/in/jehn-balajadia-76b141247/
+affiliations:
+
+- entity_id: twitter
+  role: employee
+  timeframe: before
+  immediate: true
+  connection_truth: verified
+  end_date: 2025-02-05
+  end_date_truth: inferred
+  source: https://projects.propublica.org/elon-musk-doge-tracker/
+  id: 2XIOrtvV
+
+- entity_id: boring
+  role: employee
+  timeframe: before
+  connection_truth: self-reported
+  start_date: 2017-11-XX
+  start_date_truth: self-reported
+  source: https://www.linkedin.com/in/jehn-balajadia-76b141247/
+  id: 4uidHaKc
+positions:
+
+- id: education-balajadia
+  type: detailed
+  category: wrecker
+  table_note: NYT links her to Education, but no other info found
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  project:
   - spending
   - deregulation
-  :sort_date: 2025-02-05
-  :agency: Education
-  :from: DOGE
-  :from_truth: inferred
-- :id: doge-balajadia
-  :type: appointed
-  :agency: DOGE
-  :category: wrecker
-  :start_date: 2025-01-24
-  :start_date_truth: verified
-  :end_date: 2025-05-28
-  :end_date_truth: verified
-  :project: deregulation
-  :end_type: resigned
-  :title: Senior Advisor
-  :title_type: advisor
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+  sort_date: 2025-02-05
+  agency: Education
+  from: DOGE
+  from_truth: inferred
+
+- id: doge-balajadia
+  type: appointed
+  agency: DOGE
+  category: wrecker
+  start_date: 2025-01-24
+  start_date_truth: verified
+  end_date: 2025-05-28
+  end_date_truth: verified
+  project: deregulation
+  end_type: resigned
+  title: Senior Advisor
+  title_type: advisor
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf

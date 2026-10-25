@@ -1,39 +1,45 @@
+# yaml-language-server: $schema=../schemas/aliases-file.json
 ---
-:id: OPM-06
-:agency: OPM
-:name: Nikhil Rajpal
-:name_truth: verified
-:source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-:evidence:
+id: OPM-06
+agency: OPM
+name: Nikhil Rajpal
+name_truth: verified
+source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
+evidence:
+
 - Onboarded on 2025-01-24 as a vounteer SGE with a term not to exceed 2025-07-22
-- This is likely one of the other young DOGE crew like Jordan Wick or Luke Farritor,
-  etc.
+
+- This is likely one of the other young DOGE crew like Jordan Wick or Luke Farritor, etc.
+
 - Detailed to the U.S. Department of Commerce, the Consumer Financial Protection Bureau
+
 - Has also been detailed to the SSA during the course of his appointment at OPM
+
 - PD 6A39738 listed on hiring forms = Nikhil Rajpal on FOIAed list of OPM positions
-:positions:
-- :id: opm-nikhil-rajpal
-  :type: appointed
-  :category: wrecker
-  :agency: OPM
-  :start_date: 2025-01-24
-  :start_date_truth: verified
-  :end_date: 2025-07-02
-  :end_date_truth: verified
-  :end_type: resigned
-  :description: Exc Appt NTE
-  :appt_type_code: 48
-  :appt_type: Other
-  :excepted: true
-  :pd_code: 6A39738
-  :title: Expert
-  :title_type: advisor
-  :pay_grade: ED-00
-  :salary: "$0"
-  :series: '0301'
-  :supervisory: false
-  :office: Office of the Director
-  :source:
+positions:
+
+- id: opm-nikhil-rajpal
+  type: appointed
+  category: wrecker
+  agency: OPM
+  start_date: 2025-01-24
+  start_date_truth: verified
+  end_date: 2025-07-02
+  end_date_truth: verified
+  end_type: resigned
+  description: Exc Appt NTE
+  appt_type_code: 48
+  appt_type: Other
+  excepted: true
+  pd_code: 6A39738
+  title: Expert
+  title_type: advisor
+  pay_grade: ED-00
+  salary: "$0"
+  series: '0301'
+  supervisory: false
+  office: Office of the Director
+  source:
   - https://www.documentcloud.org/documents/26028794-onboard-opm-employee-6/
   - https://www.documentcloud.org/documents/26028780-opm-new-hires/
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf

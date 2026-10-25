@@ -1,35 +1,41 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Bee Elvy
-:sort_name: Elvy
-:slug: bee-elvy
-:skill: designer
-:linkedin: https://www.linkedin.com/in/beeelvy/
-:tech_links:
+name: Bee Elvy
+sort_name: Elvy
+slug: bee-elvy
+skill: designer
+linkedin: https://www.linkedin.com/in/beeelvy/
+tech_links:
+
 - Twitter
-:blurb: According to ProPublica, he has been hired at GSA to work on [a website promoting
-  use of AI within the government](https://www.404media.co/github-is-leaking-trumps-plans-to-accelerate-ai-across-government/)
-:affiliations:
-- :entity_id: twitter
-  :role: consultant
-  :timeframe: before
-  :connection_truth: self-reported
-  :table_note: Did branding work for Twitter as consultant
-  :source: https://www.linkedin.com/in/beeelvy/
-  :id: 4HHE039k
-:positions:
-- :id: gsa-elvy
-  :agency: GSA
-  :type: appointed
-  :category: builder
-  :project: modernization
-  :start_date: 2025-03-18
-  :start_date_truth: self-reported
-  :table_note: Month sourced from LinkedIn, signed in once on 3/18 (badging in after?)
-  :salary: "$167,603"
-  :source:
+blurb: >-
+  According to ProPublica, he has been hired at GSA to work on [a website promoting use of AI within the
+  government](https://www.404media.co/github-is-leaking-trumps-plans-to-accelerate-ai-across-government/)
+affiliations:
+
+- entity_id: twitter
+  role: consultant
+  timeframe: before
+  connection_truth: self-reported
+  table_note: Did branding work for Twitter as consultant
+  source: https://www.linkedin.com/in/beeelvy/
+  id: 4HHE039k
+positions:
+
+- id: gsa-elvy
+  agency: GSA
+  type: appointed
+  category: builder
+  project: modernization
+  start_date: 2025-03-18
+  start_date_truth: self-reported
+  table_note: Month sourced from LinkedIn, signed in once on 3/18 (badging in after?)
+  salary: "$167,603"
+  source:
   - https://projects.propublica.org/elon-musk-doge-tracker/
   - https://www.404media.co/github-is-leaking-trumps-plans-to-accelerate-ai-across-government/
   - https://www.linkedin.com/in/beeelvy/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
-  :office: Technology Transformation Services
+  office: Technology Transformation Services

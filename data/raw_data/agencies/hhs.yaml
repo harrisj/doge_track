@@ -1,10 +1,11 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Health and Human Services
-:id: HHS
-:slug: hhs
-:short_name: HHS
-:page_slug: health
-:blurb: |-
+name: Health and Human Services
+id: HHS
+slug: hhs
+short_name: HHS
+page_slug: health
+blurb: |-
   It has not always been easy to identify DOGE's activities within Health and Human Services. Early coverage following DOGE's activities at the children of HHS - themselves massive agencies like CDC, CMS and FDA - often missed the forest for the trees. Thankfully, government-supplied declarations in court cases like _AFL-CIO vs. DOL_ have provided details and context. HHS has been a target of every single one of DOGE's various initiatives. Early cost-cutting efforts eliminated staff at the CDC and the FDA, which also was targeted for deregulation. As the parent of Medicare and Medicaid, CMS was a natural target to be scrutinized for excessive costs, but DOGE has yet to make any wildly unsubstantiated claims there. More recently, DOGE has been using some of the HHS databases to mine for data on immigrants, and their access to the medical claims of millions of Americans should be troubling to all.
   Health and Human Services is the parent agency for several other important agencies where DOGE has also had a presence:
 
@@ -14,196 +15,219 @@
   - **National Institutes of Health (NIH)** are a collection of centers that fund and track research in various medical fields
 
   Since DOGE staff have been granted wide access to systems across all these agencies, I have collected them all on this page, but I will still try to track internal transfers.
-:doge_base: true
-:events:
-- :date: 2025-03-XX
-  :type: access
-  :event: In a response to a Trump EO on tracking grants, the DOGE team is granted
-    approval by HHS CIO Clark Minor to build an API to retrieved data from the Payment
-    Management System system.
-  :project:
+doge_base: true
+events:
+
+- date: 2025-03-XX
+  type: access
+  event: >-
+    In a response to a Trump EO on tracking grants, the DOGE team is granted approval by HHS CIO Clark
+    Minor to build an API to retrieved data from the Payment Management System system.
+  project:
   - spending
   - fraud
-  :named:
+  named:
   - Clark Minor
-  :comment: deposition by Jennifer Wendel on 4/08
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.82.4.pdf
-  :case_no: 1:25-cv-00339
-  :agency: HHS
-  :id: 3NJpZuhN
-- :date: 2025-03-03
-  :type: access
-  :event: DOGE staff attempt to access NDNH, "a system within a broader government
-    database created to help enforce child support payments, which pulls a vast trove
-    of information, including income data linked to nearly all workers," potentially
-    as an alternative data source for the data they wanted to pull from the IRS. This
-    attempt is refused by agency staff.
-  :notable: true
-  :project: immigration
-  :source: https://www.washingtonpost.com/business/2025/03/06/doge-hhs-ssa-data/
-  :agency: HHS
-  :id: ceaPKABV
-- :date: 2025-03-08
-  :type: disruption
-  :event: The federal staff who objected to DOGE getting access to NDNH are reportedly
-    "no longer with the agency."
-  :notable: true
-  :source: https://www.washingtonpost.com/business/2025/03/08/hhs-doge-child-support
-  :project:
+  comment: deposition by Jennifer Wendel on 4/08
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.82.4.pdf
+  case_no: 1:25-cv-00339
+  agency: HHS
+  id: 3NJpZuhN
+
+- date: 2025-03-03
+  type: access
+  event: >-
+    DOGE staff attempt to access NDNH, "a system within a broader government database created to help
+    enforce child support payments, which pulls a vast trove of information, including income data linked
+    to nearly all workers," potentially as an alternative data source for the data they wanted to pull
+    from the IRS. This attempt is refused by agency staff.
+  notable: true
+  project: immigration
+  source: https://www.washingtonpost.com/business/2025/03/06/doge-hhs-ssa-data/
+  agency: HHS
+  id: ceaPKABV
+
+- date: 2025-03-08
+  type: disruption
+  event: >-
+    The federal staff who objected to DOGE getting access to NDNH are reportedly "no longer with the agency."
+  notable: true
+  source: https://www.washingtonpost.com/business/2025/03/08/hhs-doge-child-support
+  project:
   - immigration
   - impunity
-  :agency: HHS
-  :id: 8SdCKCzM
-- :date: 2025-03-13
-  :type: directory
-  :event: As later reported in a declaration in _AFL-CIO et al. vs. Department of
-    Labor_, HHS employee Mark Samburg finds DOGE staff at the agency listed in an
-    online directory as Executive Engineers (and Rachel Riley as a Senior Advisor).
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.53.4.pdf
-  :case_no: 1:25-cv-00339
-  :named:
+  agency: HHS
+  id: 8SdCKCzM
+
+- date: 2025-03-13
+  type: directory
+  event: >-
+    As later reported in a declaration in _AFL-CIO et al. vs. Department of Labor_, HHS employee Mark
+    Samburg finds DOGE staff at the agency listed in an online directory as Executive Engineers (and Rachel
+    Riley as a Senior Advisor).
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.53.4.pdf
+  case_no: 1:25-cv-00339
+  named:
   - Edward Coristine
   - Marko Elez
   - Luke Farritor
   - Aram Moghaddassi
   - Rachel Riley
-  :agency: HHS
-  :id: oTHjD2hg
-- :date: 2025-03-27
-  :type: official
-  :event: HHS announces a large reorganization, reducing HHS from 28 to 15 divisions
-    and eliminating 20,000 jobs (or 25% of total). The URL slug of the press release
-    includes the word "DOGE" in it.
-  :project:
+  agency: HHS
+  id: oTHjD2hg
+
+- date: 2025-03-27
+  type: official
+  event: >-
+    HHS announces a large reorganization, reducing HHS from 28 to 15 divisions and eliminating 20,000
+    jobs (or 25% of total). The URL slug of the press release includes the word "DOGE" in it.
+  project:
   - personnel
   - elimination
-  :source: https://www.hhs.gov/about/news/hhs-restructuring-doge.html
-  :agency: HHS
-  :id: 2bWLrWRv
-- :date: 2025-03-28
-  :type: report
-  :event: During an interview, the head of HHS Robert F. Kennedy, Jr. reports that
-    DOGE created the new organizational chart for the agency ahead of mass firings.
-    He also claims "we're not cutting scientists."
-  :source: https://www.newsnationnow.com/cuomo-show/rfk-defends-hhs-job-cuts/
-  :notable: true
-  :project:
+  source: https://www.hhs.gov/about/news/hhs-restructuring-doge.html
+  agency: HHS
+  id: 2bWLrWRv
+
+- date: 2025-03-28
+  type: report
+  event: >-
+    During an interview, the head of HHS Robert F. Kennedy, Jr. reports that DOGE created the new organizational
+    chart for the agency ahead of mass firings. He also claims "we're not cutting scientists."
+  source: https://www.newsnationnow.com/cuomo-show/rfk-defends-hhs-job-cuts/
+  notable: true
+  project:
   - personnel
   - elimination
-  :agency: HHS
-  :id: RgFJHEtV
-- :date: 2025-03-29
-  :type: directory
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :case_no: 1:25-cv-00339
-  :event: In response to a discovery request made in _AFL-CIO vs. DOL_, the government
-    provides an incomplete list of DOGE staff who have worked at HHS.
-  :named:
+  agency: HHS
+  id: RgFJHEtV
+
+- date: 2025-03-29
+  type: directory
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.4.pdf
+  case_no: 1:25-cv-00339
+  event: >-
+    In a court declaration in _AFL-CIO vs. DOL_, counsel for the plaintiffs Alexa Milton provides the
+    names of two DOGE staffers at HHS who were not included in the government's list of staffers provided
+    as part of legal discovery.
+  named:
+  - Conor Fennessy
+  - Jeremy Lewin
+  agency: HHS
+  id: 2JU9Todn
+
+- date: 2025-03-29
+  type: directory
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  case_no: 1:25-cv-00339
+  event: >-
+    In response to a discovery request made in _AFL-CIO vs. DOL_, the government provides an incomplete
+    list of DOGE staff who have worked at HHS.
+  named:
   - Edward Coristine
   - Marko Elez
   - Luke Farritor
   - Amy Gleason
   - Kyle Schutt
-  :agency: HHS
-  :id: KhdnaQWS
-- :date: 2025-03-29
-  :type: directory
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.4.pdf
-  :case_no: 1:25-cv-00339
-  :event: In a court declaration in _AFL-CIO vs. DOL_, counsel for the plaintiffs
-    Alexa Milton provides the names of two DOGE staffers at HHS who were not included
-    in the government's list of staffers provided as part of legal discovery.
-  :named:
-  - Conor Fennessy
-  - Jeremy Lewin
-  :agency: HHS
-  :id: 2JU9Todn
-- :date: 2025-04-01
-  :type: report
-  :event: In a group chat within HHS system, Amy Gleason attempts to distance herself
-    from the mass layoffs caused by DOGE by claiming she is just the USDS administrator
-    only and has nothing to do with how the DOGE teams operate.
-  :notable: true
-  :project: personnel
-  :source: https://www.sfchronicle.com/politics/article/doge-amy-gleason-group-chat-20258581.php
-  :named:
+  agency: HHS
+  id: KhdnaQWS
+
+- date: 2025-04-01
+  type: report
+  event: >-
+    In a group chat within HHS system, Amy Gleason attempts to distance herself from the mass layoffs
+    caused by DOGE by claiming she is just the USDS administrator only and has nothing to do with how
+    the DOGE teams operate.
+  notable: true
+  project: personnel
+  source: https://www.sfchronicle.com/politics/article/doge-amy-gleason-group-chat-20258581.php
+  named:
   - Amy Gleason
-  :agency: HHS
-  :id: mXTHtBac
-- :date: 2025-05-14
-  :type: official
-  :event: Testifying before a House committee, HHS Secretary Robert Kennedy Jr. described
-    DOGE's role in their layoffs as "Elon Musk gave us help in figuring out where
-    there was waste, fraud and abuse in the department, but it was up to me to make
-    the decision."
-  :named:
+  agency: HHS
+  id: mXTHtBac
+
+- date: 2025-05-14
+  type: official
+  event: >-
+    Testifying before a House committee, HHS Secretary Robert Kennedy Jr. described DOGE's role in their
+    layoffs as "Elon Musk gave us help in figuring out where there was waste, fraud and abuse in the department,
+    but it was up to me to make the decision."
+  named:
   - Elon Musk
-  :agency: HHS
-  :source: https://www.washingtonpost.com/health/2025/05/14/rfk-jr-congress-testimony/
-  :id: obOu9SpT
-- :date: 2025-07-06
-  :type: disruption
-  :event: The head of HHS, Robert F. Kennedy Jr., sends a "DEI Whistle-blower Questionnaire"
-    to all staff which is really just a thinly-veiled invitation for federal coworkers
-    to snitch on their colleagues.
-  :notable: true
-  :project:
+  agency: HHS
+  source: https://www.washingtonpost.com/health/2025/05/14/rfk-jr-congress-testimony/
+  id: obOu9SpT
+
+- date: 2025-07-06
+  type: disruption
+  event: >-
+    The head of HHS, Robert F. Kennedy Jr., sends a "DEI Whistle-blower Questionnaire" to all staff which
+    is really just a thinly-veiled invitation for federal coworkers to snitch on their colleagues.
+  notable: true
+  project:
   - dei
   - personnel
-  :source: https://www.rollingstone.com/politics/politics-features/trump-administration-government-employees-snitch-1235381036/
-  :agency: HHS
-  :id: 6ivxCK11
-- :date: 2025-07-10
-  :type: official
-  :event: HHS issues a press release announces that it is cracking down on ensuring
-    that benefits are not being provided to undocumented immigrants, including Head
-    Start among its list of programs that will be receiving greater scrutiny. This
-    policy shift will also likely be used to justify increased information sharing
-    between HHS and ICE.
-  :notable: true
-  :project: immigration
-  :source: https://www.hhs.gov/press-room/prwora-hhs-bans-illegal-aliens-accessing-taxpayer-funded-programs.html
-  :agency: HHS
-  :id: 6EA733IH
-- :date: 2025-07-11
-  :type: disruption
-  :event: After DOGE imposed its "Defend the Spend" restrictions on reviewing grants,
-    HHS is struggling to review and approve a billion-dollar backlog of delayed grants
-    by the end of the fiscal year in September. This issues have been compounded by
-    mass layoffs, also led by DOGE. Applicants may be forced to apply only within
-    a two-week window and some parts of the agency like the Administration for Children
-    and Families have reportedly asked departed staff to come back or are hiring contractors
-    to resolve the mess.
-  :notable: true
-  :project:
+  source: >-
+    https://www.rollingstone.com/politics/politics-features/trump-administration-government-employees-snitch-1235381036/
+  agency: HHS
+  id: 6ivxCK11
+
+- date: 2025-07-10
+  type: official
+  event: >-
+    HHS issues a press release announces that it is cracking down on ensuring that benefits are not being
+    provided to undocumented immigrants, including Head Start among its list of programs that will be
+    receiving greater scrutiny. This policy shift will also likely be used to justify increased information
+    sharing between HHS and ICE.
+  notable: true
+  project: immigration
+  source: >-
+    https://www.hhs.gov/press-room/prwora-hhs-bans-illegal-aliens-accessing-taxpayer-funded-programs.html
+  agency: HHS
+  id: 6EA733IH
+
+- date: 2025-07-11
+  type: disruption
+  event: >-
+    After DOGE imposed its "Defend the Spend" restrictions on reviewing grants, HHS is struggling to review
+    and approve a billion-dollar backlog of delayed grants by the end of the fiscal year in September.
+    This issues have been compounded by mass layoffs, also led by DOGE. Applicants may be forced to apply
+    only within a two-week window and some parts of the agency like the Administration for Children and
+    Families have reportedly asked departed staff to come back or are hiring contractors to resolve the
+    mess.
+  notable: true
+  project:
   - spending
-  :source: https://www.cbsnews.com/news/hhs-facing-billion-dollar-backlog-of-delayed-grants-after-doge/
-  :agency: HHS
-  :id: rFRviJbc
-- :date: 2025-09-(01)~
-  :type: disruption
-  :event: Zach Terrell is named as the new Chief Technology Officer at HHS. He reportedly
-    is also continuing to hold a role at NSF, supervising DOGE activities there.
-  :project: impunity
-  :named:
+  source: https://www.cbsnews.com/news/hhs-facing-billion-dollar-backlog-of-delayed-grants-after-doge/
+  agency: HHS
+  id: rFRviJbc
+
+- date: 2025-09-(01)~
+  type: disruption
+  event: >-
+    Zach Terrell is named as the new Chief Technology Officer at HHS. He reportedly is also continuing
+    to hold a role at NSF, supervising DOGE activities there.
+  project: impunity
+  named:
   - Zach Terrell
-  :source: https://fedscoop.com/hhs-has-new-doge-affiliated-technology-chief-cto/
-  :agency: HHS
-  :id: 3f0CTiZl
-- :date: 2025-09-30
-  :type: disruption
-  :event: The day before the beginning of the 2025 federal government shutdown, HHS
-    proposes eliminating 8,000 jobs at the suggestion of Russell Vought, who wants
-    to use the shutdown to inflict pain. HHS eventually lays off 1760 positions on
-    October 10th, but was later revised to 954 after HHS blamed a coding error for
-    firing too many people. Initially, HHS refuses to identify the creator for the
-    layoff proposal within HHS, but it's eventually revealed to be Rachel Riley.
-  :project: personnel
-  :agency: HHS
-  :named:
+  source: https://fedscoop.com/hhs-has-new-doge-affiliated-technology-chief-cto/
+  agency: HHS
+  id: 3f0CTiZl
+
+- date: 2025-09-30
+  type: disruption
+  event: >-
+    The day before the beginning of the 2025 federal government shutdown, HHS proposes eliminating 8,000
+    jobs at the suggestion of Russell Vought, who wants to use the shutdown to inflict pain. HHS eventually
+    lays off 1760 positions on October 10th, but was later revised to 954 after HHS blamed a coding error
+    for firing too many people. Initially, HHS refuses to identify the creator for the layoff proposal
+    within HHS, but it's eventually revealed to be Rachel Riley.
+  project: personnel
+  agency: HHS
+  named:
   - Russell Vought
   - Rachel Riley
-  :source:
+  source:
   - https://www.politico.com/news/2025/10/25/hhs-shutdown-layoffs-doge-vought-00620786
-  - https://www.politico.com/news/2025/10/30/doge-holdover-who-pushed-for-deep-cuts-at-hhs-is-headed-to-the-navy-00629729
-  :id: 3doW3EB5
+  - >-
+    https://www.politico.com/news/2025/10/30/doge-holdover-who-pushed-for-deep-cuts-at-hhs-is-headed-to-the-navy-00629729
+  id: 3doW3EB5

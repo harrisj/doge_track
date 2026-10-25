@@ -1,298 +1,320 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Nate Cavanaugh
-:sort_name: Cavanaugh
-:slug: nate-cavanaugh
-:age: 28
-:skill: coder
-:blurb: A former tech entrepeneur, Nate Cavanaugh was initially spotted as one of
-  the DOGE staffers interviewing GSA federal staff to determine layoffs. Since March
-  however, he has been the de facto leader of DOGE's [sustained attacks against multiple
-  independent agencies](/agencies/independent) such as the NEH or IMLS. These attacks
-  begin with Nate offering IT Modernization assistance from the GSA and then escalate
-  through the White House firing agency leadership and naming Nate (or an associate)
-  as the new acting agency head. Once in power, he quickly places all employees on
-  administrative leave and starts firing staff and cancelling grants. Much like a
-  vampire, if he shows up at the door of your agency, do not let him inside.
-:govt_exit_date: 2025-08-06
-:govt_exit_truth: reported
-:govt_exit_type: resigned
-:affiliations:
-- :entity_id: special-inc
-  :role: founder
-  :timeframe: after
-  :immediate: true
-  :connection_truth: self-reported
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-  :id: 7eIm41yw
-- :entity_id: doge-indie-wreckers
-  :role: leader
-  :timeframe: during
-  :connection_truth: self-reported
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-  :id: 1XpPB3pS
-:positions:
-- :id: detail-gsa-odni-cavanaugh
-  :type: detailed
-  :agency: ODNI
-  :from: GSA
-  :from_truth: inferred
-  :category: wrecker
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
-- :id: gsa-cavanaugh
-  :type: appointed
-  :category: wrecker
-  :agency: GSA
-  :start_date: 2025-01-(22)~
-  :start_date_truth: self-reported
-  :sort_date: 2025-01-22
-  :end_date: 2025-08-06
-  :end_date_truth: reported
-  :end_type: resigned
-  :project:
+name: Nate Cavanaugh
+sort_name: Cavanaugh
+slug: nate-cavanaugh
+age: 28
+skill: coder
+blurb: >-
+  A former tech entrepeneur, Nate Cavanaugh was initially spotted as one of the DOGE staffers interviewing
+  GSA federal staff to determine layoffs. Since March however, he has been the de facto leader of DOGE's
+  [sustained attacks against multiple independent agencies](/agencies/independent) such as the NEH or
+  IMLS. These attacks begin with Nate offering IT Modernization assistance from the GSA and then escalate
+  through the White House firing agency leadership and naming Nate (or an associate) as the new acting
+  agency head. Once in power, he quickly places all employees on administrative leave and starts firing
+  staff and cancelling grants. Much like a vampire, if he shows up at the door of your agency, do not
+  let him inside.
+govt_exit_date: 2025-08-06
+govt_exit_truth: reported
+govt_exit_type: resigned
+affiliations:
+
+- entity_id: special-inc
+  role: founder
+  timeframe: after
+  immediate: true
+  connection_truth: self-reported
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  id: 7eIm41yw
+
+- entity_id: doge-indie-wreckers
+  role: leader
+  timeframe: during
+  connection_truth: self-reported
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  id: 1XpPB3pS
+positions:
+
+- id: detail-gsa-odni-cavanaugh
+  type: detailed
+  agency: ODNI
+  from: GSA
+  from_truth: inferred
+  category: wrecker
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
+
+- id: gsa-cavanaugh
+  type: appointed
+  category: wrecker
+  agency: GSA
+  start_date: 2025-01-(22)~
+  start_date_truth: self-reported
+  sort_date: 2025-01-22
+  end_date: 2025-08-06
+  end_date_truth: reported
+  end_type: resigned
+  project:
   - dei
   - elimination
   - spending
-  :table_note: Testifies started working in early January, but formally a few days
-    after inauguration
-  :salary: "$120,509"
-  :source:
+  table_note: Testifies started working in early January, but formally a few days after inauguration
+  salary: "$120,509"
+  source:
   - https://www.wired.com/story/doge-government-salaries-elon-musk/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
-- :id: detail-gsa-usadf-cavanaugh
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :agency: USADF
-  :from_truth: guessed
-  :start_date: 2025-02-21
-  :start_date_truth: verified
-  :table_note: verified via court filing
-  :project:
+
+- id: detail-gsa-usadf-cavanaugh
+  type: detailed
+  category: wrecker
+  from: GSA
+  agency: USADF
+  from_truth: guessed
+  start_date: 2025-02-21
+  start_date_truth: verified
+  table_note: verified via court filing
+  project:
   - dei
   - elimination
   - spending
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
-- :id: detail-gsa-iaf-cavanaugh
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :agency: IAF
-  :from_truth: verified
-  :start_date: 2025-02-28
-  :start_date_truth: inferred
-  :end_date: 2025-04-04
-  :end_date_truth: verified
-  :end_type: removed
-  :project:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+
+- id: detail-gsa-iaf-cavanaugh
+  type: detailed
+  category: wrecker
+  from: GSA
+  agency: IAF
+  from_truth: verified
+  start_date: 2025-02-28
+  start_date_truth: inferred
+  end_date: 2025-04-04
+  end_date_truth: verified
+  end_type: removed
+  project:
   - spending
   - elimination
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
-  :table_note: agency contact was earlier, but assuming MOU signed when Marocco seized
-    power
-- :id: detail-gsa-usip-cavanaugh
-  :type: detailed
-  :category: wrecker
-  :agency: USIP
-  :from: GSA
-  :from_truth: guessed
-  :project:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  table_note: agency contact was earlier, but assuming MOU signed when Marocco seized power
+
+- id: detail-gsa-usip-cavanaugh
+  type: detailed
+  category: wrecker
+  agency: USIP
+  from: GSA
+  from_truth: guessed
+  project:
   - elimination
-  :table_note: verified via court filing
-  :comment: Assuming this based on reports and where he is based. Becomes president
-    of USIP next
-  :start_date: 2025-03-04
-  :start_date_truth: reported
-  :end_date: 2025-03-24
-  :end_date_truth: verified
-  :end_type: replaced
-  :replaced_by: usip-cavanaugh-president
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.2.pdf
-- :id: detail-gsa-neh-cavanaugh
-  :type: detailed
-  :category: wrecker
-  :agency: NEH
-  :project:
+  table_note: verified via court filing
+  comment: Assuming this based on reports and where he is based. Becomes president of USIP next
+  start_date: 2025-03-04
+  start_date_truth: reported
+  end_date: 2025-03-24
+  end_date_truth: verified
+  end_type: replaced
+  replaced_by: usip-cavanaugh-president
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.2.pdf
+
+- id: detail-gsa-neh-cavanaugh
+  type: detailed
+  category: wrecker
+  agency: NEH
+  project:
   - spending
   - dei
-  :from: GSA
-  :from_truth: guessed
-  :sort_date: 2025-03-13
-  :start_date: 2025-03-(13)~
-  :start_date_truth: verified
-  :table_note: Verified via court filing
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
-- :id: detail-gsa-mcc-cavanaugh
-  :type: detailed
-  :category: wrecker
-  :agency: MCC
-  :project:
+  from: GSA
+  from_truth: guessed
+  sort_date: 2025-03-13
+  start_date: 2025-03-(13)~
+  start_date_truth: verified
+  table_note: Verified via court filing
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.641679/gov.uscourts.nysd.641679.1.0.pdf
+
+- id: detail-gsa-mcc-cavanaugh
+  type: detailed
+  category: wrecker
+  agency: MCC
+  project:
   - spending
   - elimination
   - dei
-  :from: GSA
-  :from_truth: guessed
-  :sort_date: 2025-03-22
-  :start_date: 2025-03-(22)?
-  :start_date_truth: guessed
-  :source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
-  :table_note: Linked to MCC by NPR, start date guessed from disruption there
-- :id: usip-cavanaugh-president
-  :type: appointed
-  :category: wrecker
-  :project: elimination
-  :start_date: 2025-03-25
-  :start_date_truth: verified
-  :end_date: 2025-07-25
-  :end_date_truth: reported
-  :end_type: removed
-  :title: Acting President
-  :title_type: director
-  :table_note: After the rest of board was ousted, Nate was named President of the
-    agency by Marco Rubio and Pete Hegseth. Voided by court order on 2025-05-19 but
-    restored by appeals court on 2025-06-27. Replaced by Darren Beattie on 7/25
-  :comment: Nate Cavanaugh is named the new President of USIP by the two remaining
-    members of the board, Marco Rubio and Pete Hegseth, and he is authorized to transfer
-    all assets to the GSA
-  :source:
+  from: GSA
+  from_truth: guessed
+  sort_date: 2025-03-22
+  start_date: 2025-03-(22)?
+  start_date_truth: guessed
+  source: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+  table_note: Linked to MCC by NPR, start date guessed from disruption there
+
+- id: usip-cavanaugh-president
+  type: appointed
+  category: wrecker
+  project: elimination
+  start_date: 2025-03-25
+  start_date_truth: verified
+  end_date: 2025-07-25
+  end_date_truth: reported
+  end_type: removed
+  title: Acting President
+  title_type: director
+  table_note: >-
+    After the rest of board was ousted, Nate was named President of the agency by Marco Rubio and Pete
+    Hegseth. Voided by court order on 2025-05-19 but restored by appeals court on 2025-06-27. Replaced
+    by Darren Beattie on 7/25
+  comment: >-
+    Nate Cavanaugh is named the new President of USIP by the two remaining members of the board, Marco
+    Rubio and Pete Hegseth, and he is authorized to transfer all assets to the GSA
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.14.1.pdf
-  - https://www.dailysignal.com/2025/07/25/major-maga-media-figure-to-take-top-position-at-one-of-doges-biggest-targets/
-  :agency: USIP
-- :id: imls-cavanaugh
-  :from: GSA
-  :category: wrecker
-  :from_truth: guessed
-  :start_date: 2025-03-31
-  :start_date_truth: reported
-  :project:
+  - >-
+    https://www.dailysignal.com/2025/07/25/major-maga-media-figure-to-take-top-position-at-one-of-doges-biggest-targets/
+  agency: USIP
+
+- id: imls-cavanaugh
+  from: GSA
+  category: wrecker
+  from_truth: guessed
+  start_date: 2025-03-31
+  start_date_truth: reported
+  project:
   - spending
   - dei
-  :type: detailed
-  :source: https://bsky.app/profile/marisakabas.bsky.social/post/3llowvghols2b
-  :table_note: Based on initial reports
-  :comment: DOGE put entire staff on admin leave and started cancelling grants, not
-    many details.
-  :agency: IMLS
-- :id: detail-gsa-commerce-cavanaugh
-  :type: detailed
-  :category: wrecker
-  :agency: Commerce
-  :from: GSA
-  :from_truth: inferred
-  :sort_date: 2025-04-09
-  :start_date: 2025-04-(09)~
-  :start_date_truth: guessed
-  :source: https://www.commerce.senate.gov/services/files/F6A7EAB6-BACE-4A67-A64D-688BA38A0726
-  :table_note: Senate Democrats note that Cavanaugh has a commerce email address.
-    Guessing date is around detail to MBDA.
-- :id: detail-gsa-mbda-cavanaugh
-  :type: detailed
-  :category: wrecker
-  :agency: MBDA
-  :from: GSA
-  :start_date: 2025-04-(09)~
-  :start_date_truth: verified
-  :sort_date: 2025-04-09
-  :from_truth: inferred
-  :project:
+  type: detailed
+  source: https://bsky.app/profile/marisakabas.bsky.social/post/3llowvghols2b
+  table_note: Based on initial reports
+  comment: DOGE put entire staff on admin leave and started cancelling grants, not many details.
+  agency: IMLS
+
+- id: detail-gsa-commerce-cavanaugh
+  type: detailed
+  category: wrecker
+  agency: Commerce
+  from: GSA
+  from_truth: inferred
+  sort_date: 2025-04-09
+  start_date: 2025-04-(09)~
+  start_date_truth: guessed
+  source: https://www.commerce.senate.gov/services/files/F6A7EAB6-BACE-4A67-A64D-688BA38A0726
+  table_note: >-
+    Senate Democrats note that Cavanaugh has a commerce email address. Guessing date is around detail
+    to MBDA.
+
+- id: detail-gsa-mbda-cavanaugh
+  type: detailed
+  category: wrecker
+  agency: MBDA
+  from: GSA
+  start_date: 2025-04-(09)~
+  start_date_truth: verified
+  sort_date: 2025-04-09
+  from_truth: inferred
+  project:
   - spending
   - elimination
   - dei
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.35.4_1.pdf
-  :table_note: inferred from disruptions at MBDA starting
-- :id: detail-gsa-americorps-cavanaugh
-  :type: detailed
-  :agency: AmeriCorps
-  :from: GSA
-  :from_truth: self-reported
-  :project:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.rid.59257/gov.uscourts.rid.59257.35.4_1.pdf
+  table_note: inferred from disruptions at MBDA starting
+
+- id: detail-gsa-americorps-cavanaugh
+  type: detailed
+  agency: AmeriCorps
+  from: GSA
+  from_truth: self-reported
+  project:
   - spending
   - personnel
-  :category: wrecker
-  :start_date: 2025-04-16
-  :start_date_truth: inferred
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
-- :id: detail-gsa-nlrb-cavanaugh
-  :type: detailed
-  :category: wrecker
-  :agency: NLRB
-  :project:
+  category: wrecker
+  start_date: 2025-04-16
+  start_date_truth: inferred
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
+
+- id: detail-gsa-nlrb-cavanaugh
+  type: detailed
+  category: wrecker
+  agency: NLRB
+  project:
   - deregulation
   - personnel
-  :from: GSA
-  :from_truth: verified
-  :start_date: 2025-04-16
-  :start_date_truth: verified
-  :end_date: 2025-07-25
-  :end_date_truth: verified
-  :end_type: detail_ended
-  :table_note: Spotted by media
-  :source:
-  - https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+  from: GSA
+  from_truth: verified
+  start_date: 2025-04-16
+  start_date_truth: verified
+  end_date: 2025-07-25
+  end_date_truth: verified
+  end_type: detail_ended
+  table_note: Spotted by media
+  source:
+  - >-
+    https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
   - https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
   - https://files.gao.gov/reports/GAO-26-108774/index.html
-- :id: detail-gsa-dfc-cavanaugh
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: guessed
-  :project:
+
+- id: detail-gsa-dfc-cavanaugh
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: guessed
+  project:
   - spending
   - elimination
-  :start_date: 2025-04-28
-  :start_date_truth: reported
-  :table_note: Spotted by media
-  :source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
-  :agency: USDFC
-- :id: detail-gsa-exim-cavanaugh
-  :type: detailed
-  :category: wrecker
-  :agency: EXIM
-  :from: GSA
-  :from_truth: guessed
-  :project: spending
-  :table_note: Reported by media
-  :start_date: 2025-05-14
-  :start_date_truth: reported
-  :source: https://bsky.app/profile/marisakabas.bsky.social/post/3lp5iwrmfv22y
-- :id: detail-gsa-mspb-cavanaugh
-  :type: detailed
-  :category: wrecker
-  :agency: MSPB
-  :from: GSA
-  :from_truth: guessed
-  :project:
+  start_date: 2025-04-28
+  start_date_truth: reported
+  table_note: Spotted by media
+  source: >-
+    https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+  agency: USDFC
+
+- id: detail-gsa-exim-cavanaugh
+  type: detailed
+  category: wrecker
+  agency: EXIM
+  from: GSA
+  from_truth: guessed
+  project: spending
+  table_note: Reported by media
+  start_date: 2025-05-14
+  start_date_truth: reported
+  source: https://bsky.app/profile/marisakabas.bsky.social/post/3lp5iwrmfv22y
+
+- id: detail-gsa-mspb-cavanaugh
+  type: detailed
+  category: wrecker
+  agency: MSPB
+  from: GSA
+  from_truth: guessed
+  project:
   - personnel
-  :table_note: Email cited mentioned he was from DOGE, but assuming detail from GSA
-  :start_date: 2025-05-21
-  :start_date_truth: reported
-  :source: https://bsky.app/profile/marisakabas.bsky.social/post/3lpclnw3x7s2c
-- :id: detail-gsa-dhs-cavanaugh
-  :type: detailed
-  :agency: DHS
-  :from: GSA
-  :from_truth: inferred
-  :category: builder
-  :start_date: 2025-07-(01)~
-  :start_date_truth: self-reported
-  :end_date: 2025-08-06
-  :end_date_truth: inferred
-  :end_type: detail_ended
-  :fuzz: Says he started working at DHS about a month before he left govt
-  :project: immigration
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
-- :id: internal-dhs-ice-cavanaugh
-  :type: internal
-  :agency: ICE
-  :from: DHS
-  :category: builder
-  :from_truth: self-reported
-  :start_date: 2025-07-(01)~
-  :start_date_truth: self-reported
-  :end_date: 2025-08-06
-  :end_date_truth: inferred
-  :end_type: detail_ended
-  :project: immigration
-  :table_note: Says he was working on a voluntary service for self-deportation for
-    immigrants
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
+  table_note: Email cited mentioned he was from DOGE, but assuming detail from GSA
+  start_date: 2025-05-21
+  start_date_truth: reported
+  source: https://bsky.app/profile/marisakabas.bsky.social/post/3lpclnw3x7s2c
+
+- id: detail-gsa-dhs-cavanaugh
+  type: detailed
+  agency: DHS
+  from: GSA
+  from_truth: inferred
+  category: builder
+  start_date: 2025-07-(01)~
+  start_date_truth: self-reported
+  end_date: 2025-08-06
+  end_date_truth: inferred
+  end_type: detail_ended
+  fuzz: Says he started working at DHS about a month before he left govt
+  project: immigration
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
+
+- id: internal-dhs-ice-cavanaugh
+  type: internal
+  agency: ICE
+  from: DHS
+  category: builder
+  from_truth: self-reported
+  start_date: 2025-07-(01)~
+  start_date_truth: self-reported
+  end_date: 2025-08-06
+  end_date_truth: inferred
+  end_type: detail_ended
+  project: immigration
+  table_note: Says he was working on a voluntary service for self-deportation for immigrants
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf

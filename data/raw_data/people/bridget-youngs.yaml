@@ -1,69 +1,73 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Bridget Youngs
-:slug: bridget-youngs
-:sort_name: Youngs
-:age: 29
-:skill: analyst
-:linkedin: https://www.linkedin.com/in/bridget-youngs/
-:blurb: Not much is reported about Bridget Youngs' actions for DOGE. Like many of
-  Nate Cavanaugh's wrecking crew, she comes from a background in finance and investment,
-  and is young (graduating from college in 2017). She left DOGE in August to found
-  a company manufacturing electrical transformers.
-:college_graduation_year: 2017
-:govt_exit_date: 2025-08-XX
-:govt_exit_truth: self-reported
-:govt_exit_type: resigned
-:positions:
-- :id: dol-youngs
-  :type: detailed
-  :category: wrecker
-  :agency: DOL
-  :from: GSA
-  :from_truth: inferred
-  :sort_date: 2025-03-15
-  :start_date: 2025-03-XX
-  :start_date_truth: reported
-  :end_date: 2025-08-XX
-  :end_date_truth: self-reported
-  :end_type: detail_ended
-  :project:
+name: Bridget Youngs
+slug: bridget-youngs
+sort_name: Youngs
+age: 29
+skill: analyst
+linkedin: https://www.linkedin.com/in/bridget-youngs/
+blurb: >-
+  Not much is reported about Bridget Youngs' actions for DOGE. Like many of Nate Cavanaugh's wrecking
+  crew, she comes from a background in finance and investment, and is young (graduating from college in
+  2017). She left DOGE in August to found a company manufacturing electrical transformers.
+college_graduation_year: 2017
+govt_exit_date: 2025-08-XX
+govt_exit_truth: self-reported
+govt_exit_type: resigned
+positions:
+
+- id: dol-youngs
+  type: detailed
+  category: wrecker
+  agency: DOL
+  from: GSA
+  from_truth: inferred
+  sort_date: 2025-03-15
+  start_date: 2025-03-XX
+  start_date_truth: reported
+  end_date: 2025-08-XX
+  end_date_truth: self-reported
+  end_type: detail_ended
+  project:
   - spending
   - deregulation
-  :table_note: 'From her LinkedIn: "Lead agency actions resulting in over $5 billion
-    in taxpayer savings, re-industrialization workforce initiatives, deregulation,
-    and platform modernization for Federal unemployment and workforce visas" but described
-    elsewhere as from GSA, so assuming detail'
-  :source:
+  table_note: >-
+    From her LinkedIn: "Lead agency actions resulting in over $5 billion in taxpayer savings, re-industrialization
+    workforce initiatives, deregulation, and platform modernization for Federal unemployment and workforce
+    visas" but described elsewhere as from GSA, so assuming detail
+  source:
   - https://www.linkedin.com/in/bridget-youngs/
   - https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/r_9nu.fNf5II/v0
-- :id: gsa-youngs
-  :type: appointed
-  :category: wrecker
-  :agency: GSA
-  :sort_date: 2025-03-24
-  :start_date: 2025-03-(24)~
-  :start_date_truth: inferred
-  :end_date: 2025-08-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :title: Contract Specialist
-  :title_type: advisor
-  :table_note: Emails from Peace Corps staff shared via FOIA reveal that she was detailed
-    from GSA, this matches common pattern. Signed in once at GSA on 3/24 (may have
-    received badge that date)
-  :source:
+
+- id: gsa-youngs
+  type: appointed
+  category: wrecker
+  agency: GSA
+  sort_date: 2025-03-24
+  start_date: 2025-03-(24)~
+  start_date_truth: inferred
+  end_date: 2025-08-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  title: Contract Specialist
+  title_type: advisor
+  table_note: >-
+    Emails from Peace Corps staff shared via FOIA reveal that she was detailed from GSA, this matches
+    common pattern. Signed in once at GSA on 3/24 (may have received badge that date)
+  source:
   - https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/r_9nu.fNf5II/v0
   - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
-- :id: detail-peace-corps-youngs
-  :type: detailed
-  :category: wrecker
-  :from: DOL
-  :from_truth: inferred
-  :project:
+
+- id: detail-peace-corps-youngs
+  type: detailed
+  category: wrecker
+  from: DOL
+  from_truth: inferred
+  project:
   - spending
   - personnel
-  :start_date: 2025-04-04
-  :start_date_truth: reported
-  :table_note: unknown who this is and if sent to other agencies
-  :source: https://www.theguardian.com/us-news/2025/apr/04/elon-musk-doge-peace-corps
-  :agency: PeaceCorps
+  start_date: 2025-04-04
+  start_date_truth: reported
+  table_note: unknown who this is and if sent to other agencies
+  source: https://www.theguardian.com/us-news/2025/apr/04/elon-musk-doge-peace-corps
+  agency: PeaceCorps

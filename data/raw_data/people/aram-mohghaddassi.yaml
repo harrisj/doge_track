@@ -1,178 +1,191 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Aram Moghaddassi
-:sort_name: Moghaddassi
-:slug: aram-mohghaddassi
-:linkedin: https://www.linkedin.com/in/aramog/
-:age: 26
-:skill: coder
-:tech_links:
+name: Aram Moghaddassi
+sort_name: Moghaddassi
+slug: aram-mohghaddassi
+linkedin: https://www.linkedin.com/in/aramog/
+age: 26
+skill: coder
+tech_links:
+
 - Neuralink
+
 - Twitter
-:blurb: A former employee at both X and Neuralink, Aram Moghaddassi arrived as a hire
-  at the Department of Labor in February and has been detailed to other agencies like
-  Social Security or DHS to work at important projects for Musk, whether it's trying
-  to detect fraud at SSA or building a surveillance state for immigration. His hiring
-  arrangements at DOL were finally made public, revealing that he was hired and then
-  immediately detailed to SSA, where he has continued to work past his original projected
-  end of term in June. So, there are still a lot of questions about what he has been
-  up to.
-:govt_exit_date: 2026-01-XX
-:govt_exit_truth: self-reported
-:govt_exit_type: resigned
-:positions:
-- :id: detail-dol-dhs-mohgaddassi
-  :type: detailed
-  :category: wrecker
-  :agency: DHS
-  :from: DOL
-  :from_truth: guessed
-  :project: immigration
-  :comment: No details, but reported in NYT roundup. Assuming detailed from DOL
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: detail-sba-moghaddassi
-  :agency: SBA
-  :category: wrecker
-  :from: DOL
-  :from_truth: guessed
-  :title: Special Advisor
-  :title_type: advisor
-  :type: detailed
-  :project:
+blurb: >-
+  A former employee at both X and Neuralink, Aram Moghaddassi arrived as a hire at the Department of Labor
+  in February and has been detailed to other agencies like Social Security or DHS to work at important
+  projects for Musk, whether it's trying to detect fraud at SSA or building a surveillance state for immigration.
+  His hiring arrangements at DOL were finally made public, revealing that he was hired and then immediately
+  detailed to SSA, where he has continued to work past his original projected end of term in June. So,
+  there are still a lot of questions about what he has been up to.
+govt_exit_date: 2026-01-XX
+govt_exit_truth: self-reported
+govt_exit_type: resigned
+positions:
+
+- id: detail-dol-dhs-mohgaddassi
+  type: detailed
+  category: wrecker
+  agency: DHS
+  from: DOL
+  from_truth: guessed
+  project: immigration
+  comment: No details, but reported in NYT roundup. Assuming detailed from DOL
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: detail-sba-moghaddassi
+  agency: SBA
+  category: wrecker
+  from: DOL
+  from_truth: guessed
+  title: Special Advisor
+  title_type: advisor
+  type: detailed
+  project:
   - spending
   - fraud
-  :table_note: identified by agency FOIA as having been at the agency, guessing detailed
-  :source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
-- :id: internal-dhs-cpb-mohgaddassi
-  :type: internal
-  :category: wrecker
-  :agency: CBP
-  :from: DHS
-  :from_truth: inferred
-  :project: immigration
-  :comment: No details, but reported in NYT roundup. Assuming detailed from DOL
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: internal-dhs-ice-mohgaddassi
-  :type: internal
-  :category: wrecker
-  :agency: ICE
-  :from: DHS
-  :from_truth: inferred
-  :project: immigration
-  :comment: No details, but reported in NYT roundup. Assuming detailed from DOL
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: internal-dhs-tsa-mohgaddassi
-  :type: internal
-  :category: wrecker
-  :agency: TSA
-  :from: DHS
-  :from_truth: inferred
-  :comment: No details, but reported in NYT roundup. Assuming detailed from DOL
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: internal-dhs-uscis-mohgaddassi
-  :type: internal
-  :category: wrecker
-  :agency: USCIS
-  :from: DHS
-  :from_truth: inferred
-  :comment: No details, but reported in NYT roundup. Assuming detailed from DOL
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: dol-moghaddassi
-  :type: appointed
-  :category: wrecker
-  :agency: DOL
-  :start_date: 2025-02-18
-  :start_date_truth: verified
-  :nte_date: 2025-06-17
-  :nte_date_truth: verified
-  :appt_type: Schedule C
-  :pd_code: '66899120'
-  :pay_grade: GS-11/01
-  :salary: "$84,601"
-  :title: Policy Advisor
-  :title_type: advisor
-  :project:
+  table_note: identified by agency FOIA as having been at the agency, guessing detailed
+  source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+
+- id: internal-dhs-cpb-mohgaddassi
+  type: internal
+  category: wrecker
+  agency: CBP
+  from: DHS
+  from_truth: inferred
+  project: immigration
+  comment: No details, but reported in NYT roundup. Assuming detailed from DOL
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: internal-dhs-ice-mohgaddassi
+  type: internal
+  category: wrecker
+  agency: ICE
+  from: DHS
+  from_truth: inferred
+  project: immigration
+  comment: No details, but reported in NYT roundup. Assuming detailed from DOL
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: internal-dhs-tsa-mohgaddassi
+  type: internal
+  category: wrecker
+  agency: TSA
+  from: DHS
+  from_truth: inferred
+  comment: No details, but reported in NYT roundup. Assuming detailed from DOL
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: internal-dhs-uscis-mohgaddassi
+  type: internal
+  category: wrecker
+  agency: USCIS
+  from: DHS
+  from_truth: inferred
+  comment: No details, but reported in NYT roundup. Assuming detailed from DOL
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: dol-moghaddassi
+  type: appointed
+  category: wrecker
+  agency: DOL
+  start_date: 2025-02-18
+  start_date_truth: verified
+  nte_date: 2025-06-17
+  nte_date_truth: verified
+  appt_type: Schedule C
+  pd_code: '66899120'
+  pay_grade: GS-11/01
+  salary: "$84,601"
+  title: Policy Advisor
+  title_type: advisor
+  project:
   - spending
   - fraud
   - immigration
-  :office: Office of the Secretary
-  :source: https://www.documentcloud.org/documents/26028779-onboard-dol-aram-moghaddassi/
-- :id: detail-dol-ssa-employee-3
-  :type: detailed
-  :category: wrecker
-  :agency: SSA
-  :from: DOL
-  :from_truth: verified
-  :start_date: 2025-02-22
-  :start_date_truth: verified
-  :reimbursed: true
-  :reimbursement_amount: up to $71,000
-  :table_note: MOU signed by Mike Russo, was this followed by being hired at SSA
-  :source:
+  office: Office of the Secretary
+  source: https://www.documentcloud.org/documents/26028779-onboard-dol-aram-moghaddassi/
+
+- id: detail-dol-ssa-employee-3
+  type: detailed
+  category: wrecker
+  agency: SSA
+  from: DOL
+  from_truth: verified
+  start_date: 2025-02-22
+  start_date_truth: verified
+  reimbursed: true
+  reimbursement_amount: up to $71,000
+  table_note: MOU signed by Mike Russo, was this followed by being hired at SSA
+  source:
   - https://www.documentcloud.org/documents/26028813-onboard-ssa-employee-3/
   - https://www.documentcloud.org/documents/26028784-mou-20250222-dol-ssa-employee-3/
-  :mou: https://www.documentcloud.org/documents/26028784-mou-20250222-dol-ssa-employee-3/
-  :name: Aram Moghaddassi
-  :alias: SSA-03
-- :id: detail-dol-hhs-mohgaddassi
-  :type: detailed
-  :category: wrecker
-  :agency: HHS
-  :from: DOL
-  :from_truth: verified
-  :start_date: 2025-03-05
-  :start_date_truth: verified
-  :project:
+  mou: https://www.documentcloud.org/documents/26028784-mou-20250222-dol-ssa-employee-3/
+  name: Aram Moghaddassi
+  alias: SSA-03
+
+- id: detail-dol-hhs-mohgaddassi
+  type: detailed
+  category: wrecker
+  agency: HHS
+  from: DOL
+  from_truth: verified
+  start_date: 2025-03-05
+  start_date_truth: verified
+  project:
   - spending
   - fraud
-  :title: Executive Engineer
-  :title_type: advisor
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :comment: No documentation, reported in court filing
-- :id: internal-hhs-cms-mohgaddassi
-  :type: internal
-  :category: wrecker
-  :agency: CMS
-  :from: HHS
-  :from_truth: inferred
-  :start_date: 2025-03-05
-  :start_date_truth: verified
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :comment: Reported access to system same day as start of detail to HHS
-- :id: ssa-cio-moghaddassi
-  :type: promotion
-  :category: enabler
-  :agency: SSA
-  :start_date: 2025-06-(05)?
-  :start_date_truth: reported
-  :end_date: 2025-09-03
-  :end_date_truth: verified
-  :end_type: replaced
-  :project:
+  title: Executive Engineer
+  title_type: advisor
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  comment: No documentation, reported in court filing
+
+- id: internal-hhs-cms-mohgaddassi
+  type: internal
+  category: wrecker
+  agency: CMS
+  from: HHS
+  from_truth: inferred
+  start_date: 2025-03-05
+  start_date_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  comment: Reported access to system same day as start of detail to HHS
+
+- id: ssa-cio-moghaddassi
+  type: promotion
+  category: enabler
+  agency: SSA
+  start_date: 2025-06-(05)?
+  start_date_truth: reported
+  end_date: 2025-09-03
+  end_date_truth: verified
+  end_type: replaced
+  project:
   - immigration
   - impunity
-  :fuzz: Listed as co-CIO on 6/6 in news report
-  :source: https://fedscoop.com/social-security-administration-doge-chief-information-officer/
-  :title: Chief Information Officer
-  :title_type: cio
-  :supervisory: true
-- :id: ssa-co-cio-moghaddassi
-  :agency: SSA
-  :type: promotion
-  :category: enabler
-  :start_date: 2025-09-03
-  :start_date_truth: verified
-  :end_date: 2026-01-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :project:
+  fuzz: Listed as co-CIO on 6/6 in news report
+  source: https://fedscoop.com/social-security-administration-doge-chief-information-officer/
+  title: Chief Information Officer
+  title_type: cio
+  supervisory: true
+
+- id: ssa-co-cio-moghaddassi
+  agency: SSA
+  type: promotion
+  category: enabler
+  start_date: 2025-09-03
+  start_date_truth: verified
+  end_date: 2026-01-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  project:
   - immigration
   - impunity
-  :title: Chief Information Officer (Technology and Customer Products)
-  :title_type: cio
-  :supervisory: true
-  :table_note: Had reportedly been in an informal co-CIO role with Mike Russo since
-    June, now made official
-  :source:
+  title: Chief Information Officer (Technology and Customer Products)
+  title_type: cio
+  supervisory: true
+  table_note: Had reportedly been in an informal co-CIO role with Mike Russo since June, now made official
+  source:
   - https://www.ssa.gov/news/en/press/releases/2025-09-03.html
   - https://www.wired.com/story/where-the-doge-operatives-are-now/
   - https://www.linkedin.com/in/aramog/

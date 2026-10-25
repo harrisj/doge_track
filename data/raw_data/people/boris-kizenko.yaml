@@ -1,38 +1,41 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Boris Kizenko
-:sort_name: Kizenko
-:slug: boris-kizenko
-:age: 23
-:skill: political
-:blurb: Boris Kizenko has reportedly worked on several projects at GSA and has also
-  been associated with the SBA. Prior to DOGE, he worked as a legislative correspondent
-  in the office of disgraced Rep. Matt Gaetz and claimed as a 16-year-old in 2019
-  that he was denied entry into the National Honor Society at his high school because
-  he was a Trump supporter (the NHS uses GPA, leadership skills and volunteering hours
+name: Boris Kizenko
+sort_name: Kizenko
+slug: boris-kizenko
+age: 23
+skill: political
+blurb: >-
+  Boris Kizenko has reportedly worked on several projects at GSA and has also been associated with the
+  SBA. Prior to DOGE, he worked as a legislative correspondent in the office of disgraced Rep. Matt Gaetz
+  and claimed as a 16-year-old in 2019 that he was denied entry into the National Honor Society at his
+  high school because he was a Trump supporter (the NHS uses GPA, leadership skills and volunteering hours
   to determine who will be inducted).
-:positions:
-- :id: gsa-kizenko
-  :agency: GSA
-  :type: appointed
-  :category: wrecker
-  :title: Senior Advisor
-  :title_type: advisor
-  :sort_date: 2025-02-01
-  :project:
+positions:
+
+- id: gsa-kizenko
+  agency: GSA
+  type: appointed
+  category: wrecker
+  title: Senior Advisor
+  title_type: advisor
+  sort_date: 2025-02-01
+  project:
   - spending
   - fraud
-  :source:
+  source:
   - https://projects.propublica.org/elon-musk-doge-tracker/
   - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
-- :id: sba-kizenko
-  :agency: SBA
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: guessed
-  :project:
+
+- id: sba-kizenko
+  agency: SBA
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: guessed
+  project:
   - spending
   - fraud
-  :sort_date: 2025-02-02
-  :source:
+  sort_date: 2025-02-02
+  source:
   - https://projects.propublica.org/elon-musk-doge-tracker/

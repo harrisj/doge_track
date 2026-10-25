@@ -1,33 +1,41 @@
+# yaml-language-server: $schema=../schemas/aliases-file.json
 ---
-:id: OPM-16
-:name: Jacob Altik
-:name_truth: verified
-:source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-:agency: OPM
-:evidence:
+id: OPM-16
+name: Jacob Altik
+name_truth: verified
+source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
+agency: OPM
+evidence:
+
 - Granted access to USA Performance on 1/31
-- Based on known starts, this likely could be Edward Coristine, Justin Monroe, Christopher
-  Stanley, Chris Young or Austin Raynor
-- According to [Judge Cote ruling](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf).
-  OPM-16 is a lawyer associated with DOGE. Similar to OPM14, he is identified in the
-  Feleke declaration as having been involved in the termination of the employment
-  of individuals at USADF.
-- Chris Young is only other OPM person linked to USADF, but he is already identified
-  as OPM-14
-- "[Govt reports left position on 2025-06-27](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf)"
-:positions:
-- :id: opm-employee-16
-  :type: appointed
-  :category: wrecker
-  :agency: OPM
-  :same_as: opm-jacob-altik
-  :start_date: 2025-01-24
-  :start_date_truth: verified
-  :end_date: 2025-06-27
-  :end_type: resigned
-  :end_date_truth: reported
-  :table_note: Paid position
-  :source:
+
+- >-
+  Based on known starts, this likely could be Edward Coristine, Justin Monroe, Christopher Stanley, Chris
+  Young or Austin Raynor
+
+- >-
+  According to [Judge Cote ruling](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf).
+  OPM-16 is a lawyer associated with DOGE. Similar to OPM14, he is identified in the Feleke declaration
+  as having been involved in the termination of the employment of individuals at USADF.
+
+- Chris Young is only other OPM person linked to USADF, but he is already identified as OPM-14
+
+- >-
+  [Govt reports left position on 2025-06-27](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf)
+positions:
+
+- id: opm-employee-16
+  type: appointed
+  category: wrecker
+  agency: OPM
+  same_as: opm-jacob-altik
+  start_date: 2025-01-24
+  start_date_truth: verified
+  end_date: 2025-06-27
+  end_type: resigned
+  end_date_truth: reported
+  table_note: Paid position
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf

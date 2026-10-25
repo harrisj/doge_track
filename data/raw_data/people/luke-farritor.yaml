@@ -1,257 +1,275 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Luke Farritor
-:sort_name: Farritor
-:slug: luke-farritor
-:age: 23
-:skill: coder
-:linkedin: https://www.linkedin.com/in/luke-farritor/
-:tech_links:
+name: Luke Farritor
+sort_name: Farritor
+slug: luke-farritor
+age: 23
+skill: coder
+linkedin: https://www.linkedin.com/in/luke-farritor/
+tech_links:
+
 - SpaceX
-:blurb: Although he doesn't have the same brash presence as his collegues Edward Coristine
-  or Gavin Kliger, Luke Farritor has proven to be one of the most ruthless operatives
-  among the DOGE wreckers. From the start, he has been dispatched to multiple agencies
-  from the GSA with the sole purpose of seizing control of their spending mechanisms
-  (through grants or direct expenditures). At HHS, he has admin control of Grants.gov,
-  which is used by 18 agencies to issue grants. And, at USAID, he worked with Gavin
-  Kliger to completely lock out agency staff from being able to disburse funds, freezing
-  millions in grants and making him directly responsible for likely [hundreds of thousands
-  of deaths](https://www.bu.edu/sph/news/articles/2025/tracking-anticipated-deaths-from-usaid-funding-cuts/)
+blurb: >-
+  Although he doesn't have the same brash presence as his collegues Edward Coristine or Gavin Kliger,
+  Luke Farritor has proven to be one of the most ruthless operatives among the DOGE wreckers. From the
+  start, he has been dispatched to multiple agencies from the GSA with the sole purpose of seizing control
+  of their spending mechanisms (through grants or direct expenditures). At HHS, he has admin control of
+  Grants.gov, which is used by 18 agencies to issue grants. And, at USAID, he worked with Gavin Kliger
+  to completely lock out agency staff from being able to disburse funds, freezing millions in grants and
+  making him directly responsible for likely [hundreds of thousands of deaths](https://www.bu.edu/sph/news/articles/2025/tracking-anticipated-deaths-from-usaid-funding-cuts/)
   worldwide.
-:govt_exit_date: 2026-04-XX
-:govt_exit_truth: guessed
-:govt_exit_type: resigned
-:affiliations:
-- :entity_id: spacex
-  :role: intern
-  :timeframe: before
-  :start_date: 2023-01-XX
-  :start_date_truth: self-reported
-  :end_date: 2023-07-XX
-  :end_date_truth: self-reported
-  :connection_truth: self-reported
-  :source: https://www.linkedin.com/in/luke-farritor/
-  :id: 4JAaaJlL
-- :entity_id: cathedral
-  :role: founder
-  :start_date: 2026-04-XX
-  :start_date_truth: reported
-  :timeframe: after
-  :immediate: true
-  :connection_truth: reported
-  :source:
+govt_exit_date: 2026-04-XX
+govt_exit_truth: guessed
+govt_exit_type: resigned
+affiliations:
+
+- entity_id: spacex
+  role: intern
+  timeframe: before
+  start_date: 2023-01-XX
+  start_date_truth: self-reported
+  end_date: 2023-07-XX
+  end_date_truth: self-reported
+  connection_truth: self-reported
+  source: https://www.linkedin.com/in/luke-farritor/
+  id: 4JAaaJlL
+
+- entity_id: cathedral
+  role: founder
+  start_date: 2026-04-XX
+  start_date_truth: reported
+  timeframe: after
+  immediate: true
+  connection_truth: reported
+  source:
   - https://www.vanityfair.com/story/doge-defense-startups
   - https://www.wired.com/story/where-the-doge-operatives-are-now/
   - https://thenextweb.com/news/cathedral-doge-alumni-military-cyber-startup-1-4-billion
-  :id: G2IrRJ1L
-:positions:
-- :id: detail-gsa-dhs-farritor
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: guessed
-  :agency: DHS
-  :project: immigration
-  :table_note: linked to DHS by NYT, no other info
-  :comment: No details, but in NYT roundup
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: gsa-luke-farritor
-  :type: appointed
-  :category: wrecker
-  :agency: GSA
-  :start_date: 2025-01-20
-  :start_date_truth: inferred
-  :end_date: 2025-05-30
-  :end_type: replaced
-  :end_date_truth: reported
-  :replaced_by: gsa-farritor-fulltime
-  :table_note: verified as detailed from GSA to HHS on 1/21, so assuming onboarded
-    on 1/20
-  :comment: Luke is detailed to HHS from GSA on 2025-01-21, so date here is inferred
-  :salary: "$0"
-- :id: internal-dhs-ice-farritor
-  :type: internal
-  :category: wrecker
-  :from: DHS
-  :from_truth: inferred
-  :project: immigration
-  :agency: ICE
-  :comment: No details, but in NYT roundup
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: internal-dhs-tsa-farritor
-  :type: internal
-  :category: wrecker
-  :from: DHS
-  :from_truth: inferred
-  :agency: TSA
-  :comment: No details, but in NYT roundup
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: internal-dhs-uscis-farritor
-  :type: internal
-  :category: wrecker
-  :from: DHS
-  :from_truth: inferred
-  :project: immigration
-  :agency: USCIS
-  :comment: No details, but in NYT roundup
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: detail-gsa-hhs-luke-farritor
-  :type: detailed
-  :category: wrecker
-  :agency: HHS
-  :from: GSA
-  :project:
+  id: G2IrRJ1L
+positions:
+
+- id: detail-gsa-dhs-farritor
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: guessed
+  agency: DHS
+  project: immigration
+  table_note: linked to DHS by NYT, no other info
+  comment: No details, but in NYT roundup
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: gsa-luke-farritor
+  type: appointed
+  category: wrecker
+  agency: GSA
+  start_date: 2025-01-20
+  start_date_truth: inferred
+  end_date: 2025-05-30
+  end_type: replaced
+  end_date_truth: reported
+  replaced_by: gsa-farritor-fulltime
+  table_note: verified as detailed from GSA to HHS on 1/21, so assuming onboarded on 1/20
+  comment: Luke is detailed to HHS from GSA on 2025-01-21, so date here is inferred
+  salary: "$0"
+
+- id: internal-dhs-ice-farritor
+  type: internal
+  category: wrecker
+  from: DHS
+  from_truth: inferred
+  project: immigration
+  agency: ICE
+  comment: No details, but in NYT roundup
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: internal-dhs-tsa-farritor
+  type: internal
+  category: wrecker
+  from: DHS
+  from_truth: inferred
+  agency: TSA
+  comment: No details, but in NYT roundup
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: internal-dhs-uscis-farritor
+  type: internal
+  category: wrecker
+  from: DHS
+  from_truth: inferred
+  project: immigration
+  agency: USCIS
+  comment: No details, but in NYT roundup
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: detail-gsa-hhs-luke-farritor
+  type: detailed
+  category: wrecker
+  agency: HHS
+  from: GSA
+  project:
   - fraud
   - spending
-  :from_truth: verified
-  :start_date: 2025-01-21
-  :start_date_truth: verified
-  :title: Executive Engineer
-  :title_type: advisor
-  :comment: Date found in a court filing
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-- :id: detail-gsa-doge-farritor
-  :type: detailed
-  :category: wrecker
-  :agency: DOGE
-  :from: GSA
-  :from_truth: inferred
-  :start_date: 2025-01-24
-  :start_date_truth: verified
-  :project: impunity
-  :end_date: 2025-07-31
-  :end_date_truth: verified
-  :end_type: detail_ended
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
-- :id: detail-gsa-usaid-farritor
-  :type: detailed
-  :category: wrecker
-  :agency: USAID
-  :project: elimination
-  :from: GSA
-  :from_truth: inferred
-  :start_date: 2025-01-27
-  :start_date_truth: reported
-  :source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
-- :id: internal-hhs-cdc-farritor
-  :type: internal
-  :category: wrecker
-  :agency: CDC
-  :project:
+  from_truth: verified
+  start_date: 2025-01-21
+  start_date_truth: verified
+  title: Executive Engineer
+  title_type: advisor
+  comment: Date found in a court filing
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+
+- id: detail-gsa-doge-farritor
+  type: detailed
+  category: wrecker
+  agency: DOGE
+  from: GSA
+  from_truth: inferred
+  start_date: 2025-01-24
+  start_date_truth: verified
+  project: impunity
+  end_date: 2025-07-31
+  end_date_truth: verified
+  end_type: detail_ended
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+
+- id: detail-gsa-usaid-farritor
+  type: detailed
+  category: wrecker
+  agency: USAID
+  project: elimination
+  from: GSA
+  from_truth: inferred
+  start_date: 2025-01-27
+  start_date_truth: reported
+  source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
+
+- id: internal-hhs-cdc-farritor
+  type: internal
+  category: wrecker
+  agency: CDC
+  project:
   - fraud
   - spending
-  :from: HHS
-  :from_truth: inferred
-  :start_date: 2025-01-30
-  :start_date_truth: inferred
-  :table_note: date guessed from first system access at CDC
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :comment: Guessing from first reported system access for ICE system
-- :id: internal-hhs-cms-farritor
-  :type: internal
-  :category: wrecker
-  :agency: CMS
-  :from: HHS
-  :from_truth: inferred
-  :start_date: 2025-01-31
-  :start_date_truth: inferred
-  :table_note: date guessed from first system access at CMS
-  :comment: Guessing from first reported system access for HIGLAS
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-- :id: detail-gsa-energy-luke-farritor
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: guessed
-  :project:
+  from: HHS
+  from_truth: inferred
+  start_date: 2025-01-30
+  start_date_truth: inferred
+  table_note: date guessed from first system access at CDC
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  comment: Guessing from first reported system access for ICE system
+
+- id: internal-hhs-cms-farritor
+  type: internal
+  category: wrecker
+  agency: CMS
+  from: HHS
+  from_truth: inferred
+  start_date: 2025-01-31
+  start_date_truth: inferred
+  table_note: date guessed from first system access at CMS
+  comment: Guessing from first reported system access for HIGLAS
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+
+- id: detail-gsa-energy-luke-farritor
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: guessed
+  project:
   - spending
   - personnel
-  :agency: Energy
-  :sort_date: 2025-02-04
-  :start_date: 2025-02-(04)~
-  :start_date_truth: disputed
-  :comment: Start date was given by DOE spokesperson denying a news report
-- :id: detail-gsa-cfpb-luke-farritor
-  :type: detailed
-  :category: wrecker
-  :agency: CFPB
-  :project: elimination
-  :from: GSA
-  :from_truth: verified
-  :start_date: 2025-02-07
-  :start_date_truth: verified
-  :end_date: 2025-03-04
-  :end_date_truth: verified
-  :end_type: detail_ended
-  :title: Tech Support
-  :title_type: advisor
-  :source:
+  agency: Energy
+  sort_date: 2025-02-04
+  start_date: 2025-02-(04)~
+  start_date_truth: disputed
+  comment: Start date was given by DOE spokesperson denying a news report
+
+- id: detail-gsa-cfpb-luke-farritor
+  type: detailed
+  category: wrecker
+  agency: CFPB
+  project: elimination
+  from: GSA
+  from_truth: verified
+  start_date: 2025-02-07
+  start_date_truth: verified
+  end_date: 2025-03-04
+  end_date_truth: verified
+  end_type: detail_ended
+  title: Tech Support
+  title_type: advisor
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
   - https://www.gao.gov/assets/gao-26-108192.pdf
-  :comment: Details from court filing
-- :id: detail-gsa-state-farritor
-  :type: detailed
-  :category: wrecker
-  :agency: State
-  :from: GSA
-  :from_truth: guessed
-  :project:
+  comment: Details from court filing
+
+- id: detail-gsa-state-farritor
+  type: detailed
+  category: wrecker
+  agency: State
+  from: GSA
+  from_truth: guessed
+  project:
   - personnel
   - spending
-  :start_date: 2025-02-10
-  :start_date_truth: reported
-  :title: Senior Advisor
-  :title_type: advisor
-  :office: Bureau of Diplomatic Technology
-  :source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
-  :table_note: info reported by news source
-- :id: internal-hhs-nih-farritor
-  :type: internal
-  :category: wrecker
-  :agency: NIH
-  :project: spending
-  :from: HHS
-  :from_truth: inferred
-  :start_date: 2025-02-24
-  :start_date_truth: reported
-  :office: NIH Business System
-  :source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
-- :id: detail-gsa-nsf-farritor
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: guessed
-  :project:
+  start_date: 2025-02-10
+  start_date_truth: reported
+  title: Senior Advisor
+  title_type: advisor
+  office: Bureau of Diplomatic Technology
+  source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
+  table_note: info reported by news source
+
+- id: internal-hhs-nih-farritor
+  type: internal
+  category: wrecker
+  agency: NIH
+  project: spending
+  from: HHS
+  from_truth: inferred
+  start_date: 2025-02-24
+  start_date_truth: reported
+  office: NIH Business System
+  source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
+
+- id: detail-gsa-nsf-farritor
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: guessed
+  project:
   - spending
   - dei
-  :start_date: 2025-04-14
-  :start_date_truth: reported
-  :table_note: arrived at agency to do secondary round of grant reviews with other
-    DOGE staff at HHS.
-  :comment: Showed up at the agency to do secondary round of grant reviews. Detail
-    from HHS?
-  :source: https://fedscoop.com/national-science-foundation-nsf-doge-grants-data-systems/
-  :agency: NSF
-- :id: detail-gsa-dol-farritor
-  :type: detailed
-  :category: wrecker
-  :agency: DOL
-  :project: spending
-  :from: GSA
-  :from_truth: inferred
-  :start_date: 2025-05-(09)~
-  :start_date_truth: guessed
-  :table_note: Wired Magazine reported in June was detailed to DOL, but calendar reports
-    meeting about DOL grants on 5/09, so guessing detailed around then.
-  :source: https://www.wired.com/story/next-stage-doge-elon-musk/
-- :id: gsa-farritor-fulltime
-  :agency: GSA
-  :type: converted
-  :category: wrecker
-  :title: Senior Advisor
-  :project: spending
-  :pay_grade: GS-15
-  :table_note: Salary range for GS-15 in DC
-  :salary: "$167,603 - $195,200"
-  :start_date: 2025-05-31
-  :start_date_truth: reported
-  :source: https://www.wired.com/story/big-balls-young-doge-converted-into-full-time-government-employees/
+  start_date: 2025-04-14
+  start_date_truth: reported
+  table_note: arrived at agency to do secondary round of grant reviews with other DOGE staff at HHS.
+  comment: Showed up at the agency to do secondary round of grant reviews. Detail from HHS?
+  source: https://fedscoop.com/national-science-foundation-nsf-doge-grants-data-systems/
+  agency: NSF
+
+- id: detail-gsa-dol-farritor
+  type: detailed
+  category: wrecker
+  agency: DOL
+  project: spending
+  from: GSA
+  from_truth: inferred
+  start_date: 2025-05-(09)~
+  start_date_truth: guessed
+  table_note: >-
+    Wired Magazine reported in June was detailed to DOL, but calendar reports meeting about DOL grants
+    on 5/09, so guessing detailed around then.
+  source: https://www.wired.com/story/next-stage-doge-elon-musk/
+
+- id: gsa-farritor-fulltime
+  agency: GSA
+  type: converted
+  category: wrecker
+  title: Senior Advisor
+  project: spending
+  pay_grade: GS-15
+  table_note: Salary range for GS-15 in DC
+  salary: "$167,603 - $195,200"
+  start_date: 2025-05-31
+  start_date_truth: reported
+  source: https://www.wired.com/story/big-balls-young-doge-converted-into-full-time-government-employees/

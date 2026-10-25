@@ -1,24 +1,28 @@
+# yaml-language-server: $schema=../schemas/aliases-file.json
 ---
-:id: SSA-06
-:agency: SSA
-:name: Jon Koval
-:name_truth: inferred
-:evidence:
-- "[NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)"
-:positions:
-- :id: ssa-employee-6
-  :type: appointed
-  :category: wrecker
-  :agency: SSA
-  :start_date: 2025-02-23
-  :start_date_truth: verified
-  :nte_date: 2026-02-22
-  :nte_date_truth: verified
-  :pd_code: KNX0360
-  :pay_grade: ED-00
-  :salary: "$0"
-  :title: Expert
-  :title_type: advisor
-  :office: Office of the CIO
-  :description: Excepted Appointment NTE
-  :source: https://www.documentcloud.org/documents/26028793-onboard-ssa-employee-6/
+id: SSA-06
+agency: SSA
+name: Jon Koval
+name_truth: inferred
+evidence:
+
+- >-
+  [NPR has done analysis on docs to identify](https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting)
+positions:
+
+- id: ssa-employee-6
+  type: appointed
+  category: wrecker
+  agency: SSA
+  start_date: 2025-02-23
+  start_date_truth: verified
+  nte_date: 2026-02-22
+  nte_date_truth: verified
+  pd_code: KNX0360
+  pay_grade: ED-00
+  salary: "$0"
+  title: Expert
+  title_type: advisor
+  office: Office of the CIO
+  description: Excepted Appointment NTE
+  source: https://www.documentcloud.org/documents/26028793-onboard-ssa-employee-6/

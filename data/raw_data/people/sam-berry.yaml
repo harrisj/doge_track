@@ -1,60 +1,67 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Samuel Berry
-:sort_name: Berry
-:slug: sam-berry
-:skill: coder
-:blurb: He was named as a member of the DOGE team at USDA in response to a FOIA request
-  from American Oversight. Based on a name and image match from the USDA Flickr account
-  of him being sworn in, he seems to be a software developer and founder of a small
-  web company [Ten Five Engineering](https://tenfive.engineering/about/).
-:positions:
-- :id: usda-berry
-  :agency: USDA
-  :type: appointed
-  :category: wrecker
-  :title: Special Advisor
-  :title_type: advisor
-  :project:
+name: Samuel Berry
+sort_name: Berry
+slug: sam-berry
+skill: coder
+blurb: >-
+  He was named as a member of the DOGE team at USDA in response to a FOIA request from American Oversight.
+  Based on a name and image match from the USDA Flickr account of him being sworn in, he seems to be a
+  software developer and founder of a small web company [Ten Five Engineering](https://tenfive.engineering/about/).
+positions:
+
+- id: usda-berry
+  agency: USDA
+  type: appointed
+  category: wrecker
+  title: Special Advisor
+  title_type: advisor
+  project:
   - spending
   - deregulation
-  :start_date: 2025-04-06
-  :start_date_truth: verified
-  :nte_date: 2026-04-06
-  :nte_date_truth: verified
-  :salary: "$170,000"
-  :pay_grade: EF
-  :source:
+  start_date: 2025-04-06
+  start_date_truth: verified
+  nte_date: 2026-04-06
+  nte_date_truth: verified
+  salary: "$170,000"
+  pay_grade: EF
+  source:
   - https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
-  - https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
-- :id: usda-berry-sr-advisor
-  :type: converted
-  :category: wrecker
-  :agency: USDA
-  :title: Senior Advisor on Government Efficiency
-  :office: Office of the Chief Information Officer
-  :start_date: 2025-05-19
-  :start_date_truth: verified
-  :end_date: 2025-09-12
-  :end_date_truth: reported
-  :end_type: replaced
-  :project:
+  - >-
+    https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
+
+- id: usda-berry-sr-advisor
+  type: converted
+  category: wrecker
+  agency: USDA
+  title: Senior Advisor on Government Efficiency
+  office: Office of the Chief Information Officer
+  start_date: 2025-05-19
+  start_date_truth: verified
+  end_date: 2025-09-12
+  end_date_truth: reported
+  end_type: replaced
+  project:
   - spending
   - deregulation
-  :replaced_by: usda-berry-cio
-  :salary: "$170,000"
-  :source:
+  replaced_by: usda-berry-cio
+  salary: "$170,000"
+  source:
   - https://www.flickr.com/photos/usdagov/54530624479/in/photostream/
-  - https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
-- :id: usda-berry-cio
-  :type: promotion
-  :category: enabler
-  :agency: USDA
-  :title: Chief Information Officer
-  :title_type: cio
-  :start_date: 2025-09-12
-  :start_date_truth: reported
-  :project:
+  - >-
+    https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
+
+- id: usda-berry-cio
+  type: promotion
+  category: enabler
+  agency: USDA
+  title: Chief Information Officer
+  title_type: cio
+  start_date: 2025-09-12
+  start_date_truth: reported
+  project:
   - modernization
   - impunity
-  :supervisory: true
-  :source: https://www.nextgov.com/people/2025/09/agriculture-taps-doge-associate-its-tech-lead-reassigning-previous-cio/408093/
+  supervisory: true
+  source: >-
+    https://www.nextgov.com/people/2025/09/agriculture-taps-doge-associate-its-tech-lead-reassigning-previous-cio/408093/

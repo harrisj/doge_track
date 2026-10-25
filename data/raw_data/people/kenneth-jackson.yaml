@@ -1,44 +1,48 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Kenneth Jackson
-:sort_name: Jackson, Kenneth
-:slug: kenneth-jackson
-:association: auxiliary
-:positions:
-- :id: state-jackson
-  :type: appointed
-  :category: unknown
-  :start_date: 2025-01-XX
-  :start_date_truth: guessed
-  :sort_date: 2025-01-20
-  :agency: State
-  :table_note: I know Kenneth Jackson started at State, but I haven't found more info
-    of when and where
-- :id: usip-jackson
-  :type: appointed
-  :category: wrecker
-  :start_date: 2025-03-17
-  :start_date_truth: reported
-  :end_date: 2025-03-25
-  :end_date_truth: verified
-  :end_type: removed
-  :project: elimination
-  :title: Acting President
-  :title_type: director
-  :agency: USIP
-  :supervisory: true
-  :source:
-  - https://www.washingtonpost.com/national-security/2025/03/18/doge-institute-of-peace-takeover-musk-trump/
+name: Kenneth Jackson
+sort_name: Jackson, Kenneth
+slug: kenneth-jackson
+association: auxiliary
+positions:
+
+- id: state-jackson
+  type: appointed
+  category: unknown
+  start_date: 2025-01-XX
+  start_date_truth: guessed
+  sort_date: 2025-01-20
+  agency: State
+  table_note: I know Kenneth Jackson started at State, but I haven't found more info of when and where
+
+- id: usip-jackson
+  type: appointed
+  category: wrecker
+  start_date: 2025-03-17
+  start_date_truth: reported
+  end_date: 2025-03-25
+  end_date_truth: verified
+  end_type: removed
+  project: elimination
+  title: Acting President
+  title_type: director
+  agency: USIP
+  supervisory: true
+  source:
+  - >-
+    https://www.washingtonpost.com/national-security/2025/03/18/doge-institute-of-peace-takeover-musk-trump/
   - https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.14.1.pdf
-- :id: usaid-deputy-jackson
-  :type: appointed
-  :category: enabler
-  :start_date: 2025-03-18
-  :start_date_truth: verified
-  :title: Deputy Administrator (Management and Resources)
-  :title_type: dept_head
-  :project:
+
+- id: usaid-deputy-jackson
+  type: appointed
+  category: enabler
+  start_date: 2025-03-18
+  start_date_truth: verified
+  title: Deputy Administrator (Management and Resources)
+  title_type: dept_head
+  project:
   - elimination
   - impunity
-  :supervisory: true
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.77.2.pdf
-  :agency: USAID
+  supervisory: true
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.77.2.pdf
+  agency: USAID

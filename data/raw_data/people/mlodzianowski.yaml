@@ -1,55 +1,59 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Bryanne-Michelle Mlodzianowski
-:sort_name: Mlodzianowski
-:slug: mlodzianowski
-:age: 40
-:skill: administrator
-:blurb: The DOGE member who did HR at SpaceX. Nope, not that one. Not that one either.
-  She actually is one of four HR specialists who came from SpaceX to OPM, presumably
-  to work on ways to reduce the federal workforces.
-:tech_links:
+name: Bryanne-Michelle Mlodzianowski
+sort_name: Mlodzianowski
+slug: mlodzianowski
+age: 40
+skill: administrator
+blurb: >-
+  The DOGE member who did HR at SpaceX. Nope, not that one. Not that one either. She actually is one of
+  four HR specialists who came from SpaceX to OPM, presumably to work on ways to reduce the federal workforces.
+tech_links:
+
 - SpaceX
-:govt_exit_date: 2025-03-05
-:govt_exit_type: resigned
-:govt_exit_truth: verified
-:affiliations:
-- :entity_id: spacex
-  :timeframe: before
-  :immediate: true
-  :role: employee
-  :connection_truth: reported
-  :table_note: HR Director
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-  :id: 7D1AOFbl
-:positions:
-- :id: opm-bryanne-mlodzianowski
-  :agency: OPM
-  :type: appointed
-  :category: support
-  :start_date: 2025-02-03
-  :start_date_truth: verified
-  :end_date: 2025-03-05
-  :end_date_truth: guessed
-  :end_type: resigned
-  :project: personnel
-  :description: Exc Appt NTE
-  :appt_type_code: 48
-  :appt_type: Other
-  :excepted: true
-  :pd_code: 6A39750
-  :title: Expert
-  :title_type: advisor
-  :pay_grade: ED-00
-  :salary: "$0"
-  :series: '0301'
-  :supervisory: false
-  :office: Office of the Director
-  :comment: Sourced from a FOIAed document
-  :table_note: Likely 1 of 3 unidentified OPM aliases who started in Feb and left
-    in March 2025
-  :source:
+govt_exit_date: 2025-03-05
+govt_exit_type: resigned
+govt_exit_truth: verified
+affiliations:
+
+- entity_id: spacex
+  timeframe: before
+  immediate: true
+  role: employee
+  connection_truth: reported
+  table_note: HR Director
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+  id: 7D1AOFbl
+positions:
+
+- id: opm-bryanne-mlodzianowski
+  agency: OPM
+  type: appointed
+  category: support
+  start_date: 2025-02-03
+  start_date_truth: verified
+  end_date: 2025-03-05
+  end_date_truth: guessed
+  end_type: resigned
+  project: personnel
+  description: Exc Appt NTE
+  appt_type_code: 48
+  appt_type: Other
+  excepted: true
+  pd_code: 6A39750
+  title: Expert
+  title_type: advisor
+  pay_grade: ED-00
+  salary: "$0"
+  series: '0301'
+  supervisory: false
+  office: Office of the Director
+  comment: Sourced from a FOIAed document
+  table_note: Likely 1 of 3 unidentified OPM aliases who started in Feb and left in March 2025
+  source:
   - https://www.documentcloud.org/documents/26028780-opm-new-hires/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-  :same_as: opm-bryanne-mlodzianowski
-  :name: Bryanne-Michelle Mlodzianowski
-  :alias: OPM-11
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  same_as: opm-bryanne-mlodzianowski
+  name: Bryanne-Michelle Mlodzianowski
+  alias: OPM-11

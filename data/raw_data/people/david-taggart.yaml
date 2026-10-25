@@ -1,31 +1,34 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: David Taggart
-:sort_name: Taggart
-:slug: david-taggart
-:linkedin: https://www.linkedin.com/in/david-r-taggart-aba0123b/
-:skill: lawyer
-:positions:
-- :id: energy-taggart
-  :agency: Energy
-  :type: appointed
-  :start_date: 2025-02-XX
-  :start_date_truth: guessed
-  :title: Acting General Counsel
-  :project:
+name: David Taggart
+sort_name: Taggart
+slug: david-taggart
+linkedin: https://www.linkedin.com/in/david-r-taggart-aba0123b/
+skill: lawyer
+positions:
+
+- id: energy-taggart
+  agency: Energy
+  type: appointed
+  start_date: 2025-02-XX
+  start_date_truth: guessed
+  title: Acting General Counsel
+  project:
   - impunity
   - deregulation
   - spending
-  :category: enabler
-  :source: https://www.axios.com/pro/energy-policy/2025/03/21/energy-department-memo-doge-cuts
-- :id: nrc-taggart
-  :agency: NRC
-  :type: appointed
-  :title: Acting General Counsel
-  :category: enabler
-  :start_date: 2025-08-XX
-  :start_date_truth: reported
-  :project:
+  category: enabler
+  source: https://www.axios.com/pro/energy-policy/2025/03/21/energy-department-memo-doge-cuts
+
+- id: nrc-taggart
+  agency: NRC
+  type: appointed
+  title: Acting General Counsel
+  category: enabler
+  start_date: 2025-08-XX
+  start_date_truth: reported
+  project:
   - impunity
   - deregulation
   - spending
-  :source: https://www.propublica.org/article/trump-nuclear-power-nrc-safety-doge-vought
+  source: https://www.propublica.org/article/trump-nuclear-power-nrc-safety-doge-vought

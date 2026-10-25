@@ -1,16 +1,19 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Federal Election Commission
-:id: FEC
-:short_name: FEC
-:slug: fec
-:page_slug: independent#regs
-:events:
-- :date: 2025-04-30
-  :type: disruption
-  :event: FEC staffers receive an email stating they will be required to send daily
-    updates of their location as part of a new Daily Occupancy Tool that will possibly
-    be rolled out later across the entire government by the GSA.
-  :project: personnel
-  :source: https://www.washingtonpost.com/dc-md-va/2025/04/30/return-to-office-track-federal-office-occupancy/
-  :agency: FEC
-  :id: 7BDIH39X
+name: Federal Election Commission
+id: FEC
+short_name: FEC
+slug: fec
+page_slug: independent#regs
+events:
+
+- date: 2025-04-30
+  type: disruption
+  event: >-
+    FEC staffers receive an email stating they will be required to send daily updates of their location
+    as part of a new Daily Occupancy Tool that will possibly be rolled out later across the entire government
+    by the GSA.
+  project: personnel
+  source: https://www.washingtonpost.com/dc-md-va/2025/04/30/return-to-office-track-federal-office-occupancy/
+  agency: FEC
+  id: 7BDIH39X

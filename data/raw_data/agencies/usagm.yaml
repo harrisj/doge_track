@@ -1,113 +1,133 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: US Agency for Global Media
-:id: USAGM
-:short_name: USAGM
-:slug: usagm
-:page_slug: independent#eo2
-:events:
-- :date: 2025-03-(01)~
-  :type: sighting
-  :event: Gavin Kliger is reportedly spotted inside the headquarters for Voice of
-    America.
-  :named:
+name: US Agency for Global Media
+id: USAGM
+short_name: USAGM
+slug: usagm
+page_slug: independent#eo2
+events:
+
+- date: 2025-03-(01)~
+  type: sighting
+  event: Gavin Kliger is reportedly spotted inside the headquarters for Voice of America.
+  named:
   - Gavin Kliger
-  :source: https://www.axios.com/2025/03/16/trump-guts-voice-america-rf-europe
-  :agency: USAGM
-  :id: 72in3sZp
-- :date: 2025-03-15
-  :type: disruption
-  :event: In response to Trump's second executive order against independent agencies
-    (EO 14238), virtually the entire staff of Voice of America (more than 1300 people)
-    are placed on indefinite admininstrative leave.
-  :notable: true
-  :project: elimination
-  :source: https://www.politico.com/news/2025/03/15/trump-media-voice-of-america-00003119
-  :agency: USAGM
-  :id: 4hiplHwp
-- :date: 2025-03-15
-  :type: disruption
-  :event: In response to Trump's executive order targeting independent agencies, Trump's
-    senior advisor at the agency, Kari Lake, sends out termination notices for all
-    grants to Radio Free Europe/Radio Liberty, Radio Free Asia and the Middle East
-    Broadcasting Networks. It is unclear if she has the authority to issue such terminations.
-  :notable: true
-  :project: elimination
-  :source: https://www.npr.org/2025/03/15/nx-s1-5329244/bloody-saturday-voiceofamerica-radio-free-asia-europe-trump-kari-lake
-  :agency: USAGM
-  :id: 2gnayKDY
-- :date: 2025-05-02
-  :type: disruption
-  :event: Radio Free Asia announces it is laying off 90% of its staff and stopping
-    many of its language services due to the loss of funding after USAGM head Kari
-    Lake terminated all grants in March.
-  :project: elimination
-  :source: https://www.npr.org/2025/05/02/nx-s1-5385314/radio-free-asia-announces-mass-layoffs-amid-funding-fight-with-trump-administration
-  :agency: USAGM
-  :id: 30TWoPlt
-- :date: 2025-05-15
-  :type: disruption
-  :event: The US Agency for Global Media starts sending termination notices to contractors,
-    some of whom are on J1 visas and would be forced to leave the country within 30
-    days.
-  :project: elimination
-  :source: https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2025/05/15/will-scotus-throw-doge-a-bone-00352724
-  :agency: USAGM
-  :id: 3mVJbIEe
-- :date: 2025-06-06
-  :type: disruption
-  :event: Analysis by a USAGM grantee based on public data reveals that China has
-    expanded its own propaganda and programming to counter the void left by the closure
-    of Radio Free Asia.
-  :source: https://www.msn.com/en-us/news/world/chinese-propaganda-surges-as-the-us-defunds-radio-free-asia/ar-AA1GcIy1
-  :agency: USAGM
-  :id: 5ZVq4pHh
-- :date: 2025-06-14
-  :type: report
-  :event: Surprised by Israel's strikes on Iran and unable to counter Iranian programming,
-    the Voice of America orders all of its Farsi-speaking members in the Voice of
-    America's Persian wing immediately back to work. All of them had been on enforced
-    administrative leave for several months.
-  :source: https://www.politico.com/news/2025/06/13/voa-persian-service-iran-israel-00406092
-  :agency: USAGM
-  :id: 7GI672HF
-- :date: 2025-07-02
-  :type: legal
-  :event: A judge grants a request for a temporary restraining order by Radio Free
-    Europe/Radio Liberty and orders the USAGM to immediately disburse the appropriated
-    funds for the month of June that it had withheld.
-  :project: spending
-  :source: https://about.rferl.org/article/in-latest-legal-win-us-district-court-orders-usagm-to-release-rfe-rl-funding-for-june/
-  :agency: USAGM
-  :id: rGN58xuG
-- :date: 2025-09-29
-  :type: legal
-  :case_no: 1:25-cv-00887
-  :event: Ruling in _Widakuswara v. Lake_, Judge Lambeth declares that the government
-    must pause its layoff plans at the US Agency for Global Media and lambasted the
-    administration for showing a "concerning disrepect" for the court's preliminary
-    injunction
-  :notable: true
-  :project: elimination
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278809/gov.uscourts.dcd.278809.100.0.pdf
-  :agency: USAGM
-  :id: 3UMN6nbf
-- :date: 2026-03-08
-  :type: legal
-  :event: Judge Royce Lambeth rules that USAGM administrator Kari Lake had violated
-    both the Constitution and the statutes governing the agency. He declared all of
-    Lake's actions as null and void after she took over leadership of the agency.
-  :notable: true
-  :project: elimination
-  :source: https://www.npr.org/2026/03/08/nx-s1-5741594/u-s-judge-kari-lake-broke-law-voice-of-america
-  :agency: USAGM
-  :id: 1nDYhmUy
-- :date: 2026-03-17
-  :type: legal
-  :event: A federal judge rules that USAGM must reinstate by Monday all of the 1,042
-    employees who had been put on indefinite administrative leave as a prelude to
-    eliminating the agency, declaring Kari Lake's actions to destroy the agency as
-    "arbitrary and capricious."
-  :project: elimination
-  :source: https://www.npr.org/2026/03/17/nx-s1-5751162/voice-of-america-lawsuit-kari-lake
-  :agency: USAGM
-  :id: 3LpBFmcD
+  source: https://www.axios.com/2025/03/16/trump-guts-voice-america-rf-europe
+  agency: USAGM
+  id: 72in3sZp
+
+- date: 2025-03-15
+  type: disruption
+  event: >-
+    In response to Trump's executive order targeting independent agencies, Trump's senior advisor at the
+    agency, Kari Lake, sends out termination notices for all grants to Radio Free Europe/Radio Liberty,
+    Radio Free Asia and the Middle East Broadcasting Networks. It is unclear if she has the authority
+    to issue such terminations.
+  notable: true
+  project: elimination
+  source: >-
+    https://www.npr.org/2025/03/15/nx-s1-5329244/bloody-saturday-voiceofamerica-radio-free-asia-europe-trump-kari-lake
+  agency: USAGM
+  id: 2gnayKDY
+
+- date: 2025-03-15
+  type: disruption
+  event: >-
+    In response to Trump's second executive order against independent agencies (EO 14238), virtually the
+    entire staff of Voice of America (more than 1300 people) are placed on indefinite admininstrative
+    leave.
+  notable: true
+  project: elimination
+  source: https://www.politico.com/news/2025/03/15/trump-media-voice-of-america-00003119
+  agency: USAGM
+  id: 4hiplHwp
+
+- date: 2025-05-02
+  type: disruption
+  event: >-
+    Radio Free Asia announces it is laying off 90% of its staff and stopping many of its language services
+    due to the loss of funding after USAGM head Kari Lake terminated all grants in March.
+  project: elimination
+  source: >-
+    https://www.npr.org/2025/05/02/nx-s1-5385314/radio-free-asia-announces-mass-layoffs-amid-funding-fight-with-trump-administration
+  agency: USAGM
+  id: 30TWoPlt
+
+- date: 2025-05-15
+  type: disruption
+  event: >-
+    The US Agency for Global Media starts sending termination notices to contractors, some of whom are
+    on J1 visas and would be forced to leave the country within 30 days.
+  project: elimination
+  source: >-
+    https://www.politico.com/newsletters/west-wing-playbook-remaking-government/2025/05/15/will-scotus-throw-doge-a-bone-00352724
+  agency: USAGM
+  id: 3mVJbIEe
+
+- date: 2025-06-06
+  type: disruption
+  event: >-
+    Analysis by a USAGM grantee based on public data reveals that China has expanded its own propaganda
+    and programming to counter the void left by the closure of Radio Free Asia.
+  source: >-
+    https://www.msn.com/en-us/news/world/chinese-propaganda-surges-as-the-us-defunds-radio-free-asia/ar-AA1GcIy1
+  agency: USAGM
+  id: 5ZVq4pHh
+
+- date: 2025-06-14
+  type: report
+  event: >-
+    Surprised by Israel's strikes on Iran and unable to counter Iranian programming, the Voice of America
+    orders all of its Farsi-speaking members in the Voice of America's Persian wing immediately back to
+    work. All of them had been on enforced administrative leave for several months.
+  source: https://www.politico.com/news/2025/06/13/voa-persian-service-iran-israel-00406092
+  agency: USAGM
+  id: 7GI672HF
+
+- date: 2025-07-02
+  type: legal
+  event: >-
+    A judge grants a request for a temporary restraining order by Radio Free Europe/Radio Liberty and
+    orders the USAGM to immediately disburse the appropriated funds for the month of June that it had
+    withheld.
+  project: spending
+  source: >-
+    https://about.rferl.org/article/in-latest-legal-win-us-district-court-orders-usagm-to-release-rfe-rl-funding-for-june/
+  agency: USAGM
+  id: rGN58xuG
+
+- date: 2025-09-29
+  type: legal
+  case_no: 1:25-cv-00887
+  event: >-
+    Ruling in _Widakuswara v. Lake_, Judge Lambeth declares that the government must pause its layoff
+    plans at the US Agency for Global Media and lambasted the administration for showing a "concerning
+    disrepect" for the court's preliminary injunction
+  notable: true
+  project: elimination
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278809/gov.uscourts.dcd.278809.100.0.pdf
+  agency: USAGM
+  id: 3UMN6nbf
+
+- date: 2026-03-08
+  type: legal
+  event: >-
+    Judge Royce Lambeth rules that USAGM administrator Kari Lake had violated both the Constitution and
+    the statutes governing the agency. He declared all of Lake's actions as null and void after she took
+    over leadership of the agency.
+  notable: true
+  project: elimination
+  source: https://www.npr.org/2026/03/08/nx-s1-5741594/u-s-judge-kari-lake-broke-law-voice-of-america
+  agency: USAGM
+  id: 1nDYhmUy
+
+- date: 2026-03-17
+  type: legal
+  event: >-
+    A federal judge rules that USAGM must reinstate by Monday all of the 1,042 employees who had been
+    put on indefinite administrative leave as a prelude to eliminating the agency, declaring Kari Lake's
+    actions to destroy the agency as "arbitrary and capricious."
+  project: elimination
+  source: https://www.npr.org/2026/03/17/nx-s1-5751162/voice-of-america-lawsuit-kari-lake
+  agency: USAGM
+  id: 3LpBFmcD

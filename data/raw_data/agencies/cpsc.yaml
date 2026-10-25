@@ -1,28 +1,37 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Consumer Product Safety Commission
-:id: CPSC
-:slug: cpsc
-:page_slug: independent#regs
-:short_name: CPSC
-:events:
-- :date: 2025-05-08
-  :type: sighting
-  :event: Unnamed DOGE members are reportedly refused entry to the CPSC by its commissioners.
-  :source: https://www.msn.com/en-us/news/us/three-us-consumer-product-safety-commissioners-have-been-fired-by-trump-what-to-know/ar-AA1EuFVM
-  :agency: CPSC
-  :id: gPWQ1A2y
-- :date: 2025-05-08
-  :type: disruption
-  :project: impunity
-  :event: Trump abruptly fires three Democratic members of the board of the CPSC,
-    eliminating quorum for the board and rendering the agency leadership inert.
-  :source: https://www.msn.com/en-us/news/us/three-us-consumer-product-safety-commissioners-have-been-fired-by-trump-what-to-know/ar-AA1EuFVM
-  :agency: CPSC
-  :id: 4oxeRmz2
-- :date: 2025-05-09
-  :type: sighting
-  :event: With the board now fired, DOGE staff are granted access to the Consumer
-    Product Safety Commission headquarters and onboarded into the agency.
-  :source: https://www.msn.com/en-us/news/us/three-us-consumer-product-safety-commissioners-have-been-fired-by-trump-what-to-know/ar-AA1EuFVM
-  :agency: CPSC
-  :id: 4ZxhrZFr
+name: Consumer Product Safety Commission
+id: CPSC
+slug: cpsc
+page_slug: independent#regs
+short_name: CPSC
+events:
+
+- date: 2025-05-08
+  type: disruption
+  project: impunity
+  event: >-
+    Trump abruptly fires three Democratic members of the board of the CPSC, eliminating quorum for the
+    board and rendering the agency leadership inert.
+  source: >-
+    https://www.msn.com/en-us/news/us/three-us-consumer-product-safety-commissioners-have-been-fired-by-trump-what-to-know/ar-AA1EuFVM
+  agency: CPSC
+  id: 4oxeRmz2
+
+- date: 2025-05-08
+  type: sighting
+  event: Unnamed DOGE members are reportedly refused entry to the CPSC by its commissioners.
+  source: >-
+    https://www.msn.com/en-us/news/us/three-us-consumer-product-safety-commissioners-have-been-fired-by-trump-what-to-know/ar-AA1EuFVM
+  agency: CPSC
+  id: gPWQ1A2y
+
+- date: 2025-05-09
+  type: sighting
+  event: >-
+    With the board now fired, DOGE staff are granted access to the Consumer Product Safety Commission
+    headquarters and onboarded into the agency.
+  source: >-
+    https://www.msn.com/en-us/news/us/three-us-consumer-product-safety-commissioners-have-been-fired-by-trump-what-to-know/ar-AA1EuFVM
+  agency: CPSC
+  id: 4ZxhrZFr

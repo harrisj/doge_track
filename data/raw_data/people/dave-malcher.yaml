@@ -1,78 +1,85 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Dave Malcher
-:sort_name: Malcher
-:slug: dave-malcher
-:age: 31
-:skill: analyst
-:linkedin: https://www.linkedin.com/in/dave-m-a5314791/
-:tech_links:
+name: Dave Malcher
+sort_name: Malcher
+slug: dave-malcher
+age: 31
+skill: analyst
+linkedin: https://www.linkedin.com/in/dave-m-a5314791/
+tech_links:
+
 - SpaceX
-:blurb: Previously a financial analyst at SpaceX, he apparently has been detailed
-  from GSA to the VA in recent months. In March 2026, he left DOGE and joined Valor
-  Equity Partners as a Vice President, making him another ex-DOGE staffer rewarded
-  with a role at that company.
-:govt_exit_date: 2026-03-XX
-:govt_exit_truth: self-reported
-:govt_exit_type: resigned
-:affiliations:
-- :entity_id: spacex
-  :timeframe: before
-  :role: employee
-  :start_date: 2020-01-XX
-  :start_date_truth: self-reported
-  :end_date: 2022-07-XX
-  :end_date_truth: self-reported
-  :connection_truth: self-reported
-  :table_note: Finance Manager
-  :source: https://www.linkedin.com/in/dave-m-a5314791/
-  :id: 41GKm6t0
-- :entity_id: hadrian
-  :timeframe: before
-  :immediate: true
-  :connection_truth: self-reported
-  :role: executive
-  :start_date: 2022-07-XX
-  :start_date_truth: self-reported
-  :end_date: 2025-02-XX
-  :end_date_truth: self-reported
-  :table_note: Director of Finance
-  :source: https://www.linkedin.com/in/dave-m-a5314791/
-  :id: 6FNaKtfi
-- :entity_id: valor
-  :timeframe: after
-  :immediate: true
-  :connection_truth: self-reported
-  :role: executive
-  :start_date: 2026-03-XX
-  :start_date_truth: self-reported
-  :source: https://www.linkedin.com/in/dave-m-a5314791/
-  :id: 2zYV1PQ2
-:positions:
-- :id: gsa-malcher
-  :type: appointed
-  :category: support
-  :sort_date: 2025-04-24
-  :start_date: 2025-04-(24)~
-  :start_date_truth: reported
-  :end_date: 2026-03-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
-  :agency: GSA
-- :id: detail-gs-va-malcher
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: inferred
-  :title: Senior Advisor
-  :title_type: advisor
-  :agency: VA
-  :sort_date: 2025-04-25
-  :start_date: 2025-04-(25)~
-  :start_date_truth: reported
-  :end_date: 2026-03-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :source:
+blurb: >-
+  Previously a financial analyst at SpaceX, he apparently has been detailed from GSA to the VA in recent
+  months. In March 2026, he left DOGE and joined Valor Equity Partners as a Vice President, making him
+  another ex-DOGE staffer rewarded with a role at that company.
+govt_exit_date: 2026-03-XX
+govt_exit_truth: self-reported
+govt_exit_type: resigned
+affiliations:
+
+- entity_id: spacex
+  timeframe: before
+  role: employee
+  start_date: 2020-01-XX
+  start_date_truth: self-reported
+  end_date: 2022-07-XX
+  end_date_truth: self-reported
+  connection_truth: self-reported
+  table_note: Finance Manager
+  source: https://www.linkedin.com/in/dave-m-a5314791/
+  id: 41GKm6t0
+
+- entity_id: hadrian
+  timeframe: before
+  immediate: true
+  connection_truth: self-reported
+  role: executive
+  start_date: 2022-07-XX
+  start_date_truth: self-reported
+  end_date: 2025-02-XX
+  end_date_truth: self-reported
+  table_note: Director of Finance
+  source: https://www.linkedin.com/in/dave-m-a5314791/
+  id: 6FNaKtfi
+
+- entity_id: valor
+  timeframe: after
+  immediate: true
+  connection_truth: self-reported
+  role: executive
+  start_date: 2026-03-XX
+  start_date_truth: self-reported
+  source: https://www.linkedin.com/in/dave-m-a5314791/
+  id: 2zYV1PQ2
+positions:
+
+- id: gsa-malcher
+  type: appointed
+  category: support
+  sort_date: 2025-04-24
+  start_date: 2025-04-(24)~
+  start_date_truth: reported
+  end_date: 2026-03-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  source: https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
+  agency: GSA
+
+- id: detail-gs-va-malcher
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: inferred
+  title: Senior Advisor
+  title_type: advisor
+  agency: VA
+  sort_date: 2025-04-25
+  start_date: 2025-04-(25)~
+  start_date_truth: reported
+  end_date: 2026-03-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  source:
   - https://projects.propublica.org/elon-musk-doge-tracker/
   - https://www.linkedin.com/in/dave-m-a5314791/

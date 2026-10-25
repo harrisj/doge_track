@@ -1,82 +1,86 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Cole Killian
-:sort_name: Killian
-:slug: cole-killian
-:age: 24
-:skill: coder
-:blurb: Gautier "Cole" Killian was identified early as one of the initial DOGE employees,
-  and there are reports of him interviewing USDS staff about their roles as early
-  as January 21st. He was also spotted in a few of the early wrecking crew raids,
-  but he has largely fallen off the radar since the end of February, when he was detailed
-  to the Social Security Administration. Perhaps he is one of the still-unidentified
-  aliases there and more details of his involvement will become apparent in future
-  court filings and FOIA releases.
-:govt_exit_date: 2025-06-27
-:govt_exit_type: resigned
-:govt_exit_truth: inferred
-:positions:
-- :id: doge-killian
-  :type: appointed
-  :category: wrecker
-  :start_date: 2025-01-20
-  :start_date_truth: verified
-  :end_date: 2025-06-27
-  :end_date_truth: verified
-  :project: personnel
-  :end_type: resigned
-  :table_note: reported as interviewing USDS staff about jobs, not found in GSA or
-    OPM lists
-  :comment: Listed as interviewing USDS staff on 1/21, not in GSA or OPM crew
-  :source:
+name: Cole Killian
+sort_name: Killian
+slug: cole-killian
+age: 24
+skill: coder
+blurb: >-
+  Gautier "Cole" Killian was identified early as one of the initial DOGE employees, and there are reports
+  of him interviewing USDS staff about their roles as early as January 21st. He was also spotted in a
+  few of the early wrecking crew raids, but he has largely fallen off the radar since the end of February,
+  when he was detailed to the Social Security Administration. Perhaps he is one of the still-unidentified
+  aliases there and more details of his involvement will become apparent in future court filings and FOIA
+  releases.
+govt_exit_date: 2025-06-27
+govt_exit_type: resigned
+govt_exit_truth: inferred
+positions:
+
+- id: doge-killian
+  type: appointed
+  category: wrecker
+  start_date: 2025-01-20
+  start_date_truth: verified
+  end_date: 2025-06-27
+  end_date_truth: verified
+  project: personnel
+  end_type: resigned
+  table_note: reported as interviewing USDS staff about jobs, not found in GSA or OPM lists
+  comment: Listed as interviewing USDS staff on 1/21, not in GSA or OPM crew
+  source:
   - https://www.wired.com/story/elon-musk-digital-coup-doge-data-ai/
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
-  :agency: DOGE
-- :id: detail-doge-epa-killian
-  :type: detailed
-  :category: wrecker
-  :from: DOGE
-  :from_truth: inferred
-  :table_note: Reported as ending in June and left DOGE on 6/27
-  :start_date: 2025-02-04
-  :start_date_truth: reported
-  :end_date: 2025-06-(27)?
-  :end_date_truth: inferred
-  :project:
+  agency: DOGE
+
+- id: detail-doge-epa-killian
+  type: detailed
+  category: wrecker
+  from: DOGE
+  from_truth: inferred
+  table_note: Reported as ending in June and left DOGE on 6/27
+  start_date: 2025-02-04
+  start_date_truth: reported
+  end_date: 2025-06-(27)?
+  end_date_truth: inferred
+  project:
   - spending
   - deregulation
-  :end_type: detail_ended
-  :title: Federal Detailee
-  :source:
+  end_type: detail_ended
+  title: Federal Detailee
+  source:
   - https://www.eenews.net/articles/doge-aide-pops-up-in-epa-staff-directory/
   - https://www.notus.org/policy/doge-environmental-protection-agency-mistakes
-  :agency: EPA
-- :id: detail-doge-dol-killian
-  :type: detailed
-  :category: wrecker
-  :from: DOGE
-  :from_truth: inferred
-  :sort_date: 2025-02-13
-  :start_date: 2025-02-(13)~
-  :start_date_truth: reported
-  :project:
+  agency: EPA
+
+- id: detail-doge-dol-killian
+  type: detailed
+  category: wrecker
+  from: DOGE
+  from_truth: inferred
+  sort_date: 2025-02-13
+  start_date: 2025-02-(13)~
+  start_date_truth: reported
+  project:
   - spending
   - deregulation
-  :comment: No other information besides this report. 3 other DOGE staff besides Ramada
-    at agency on 2/5.
-  :source: https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
-  :agency: DOL
-- :id: ssa-employee-5
-  :type: detailed
-  :category: wrecker
-  :agency: SSA
-  :from: DOGE
-  :from_truth: verified
-  :start_date: 2025-02-18
-  :start_date_truth: verified
-  :nte_date: 2026-07-04
-  :nte_date_truth: verified
-  :table_note: limited onboarding docs, court docs about them
-  :comment: All I have is the date they completed training
-  :source: https://www.documentcloud.org/documents/26028773-onboard-ssa-employee-5/
-  :name: Cole Killian
-  :alias: SSA-05
+  comment: No other information besides this report. 3 other DOGE staff besides Ramada at agency on 2/5.
+  source: >-
+    https://www.nbcnews.com/tech/security/doge-software-approval-alarms-labor-department-employees-data-security-rcna191583
+  agency: DOL
+
+- id: ssa-employee-5
+  type: detailed
+  category: wrecker
+  agency: SSA
+  from: DOGE
+  from_truth: verified
+  start_date: 2025-02-18
+  start_date_truth: verified
+  nte_date: 2026-07-04
+  nte_date_truth: verified
+  table_note: limited onboarding docs, court docs about them
+  comment: All I have is the date they completed training
+  source: https://www.documentcloud.org/documents/26028773-onboard-ssa-employee-5/
+  name: Cole Killian
+  alias: SSA-05

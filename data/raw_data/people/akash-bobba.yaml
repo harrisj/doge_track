@@ -1,176 +1,190 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Akash Bobba
-:sort_name: Bobba
-:slug: akash-bobba
-:age: 21
-:skill: coder
-:linkedin: https://www.linkedin.com/in/abobba/
-:blurb: Identified early in media reports as one of six engineers picked on Elon Musk's
-  team, Akash Bobba was a prolific wrecker from the start, including an unusual detailing
-  document where we as assigned to OPM, Education and Social Security simultaneously.
-  Initially, he served as a volunteer, but he been on the payroll at the Social Security
-  Administration since early February, where has been a trusted lieutenant of Mike
-  Russo.
-:govt_exit_date: 2026-03-07
-:govt_exit_truth: guessed
-:govt_exit_type: resigned
-:tech_links:
+name: Akash Bobba
+sort_name: Bobba
+slug: akash-bobba
+age: 21
+skill: coder
+linkedin: https://www.linkedin.com/in/abobba/
+blurb: >-
+  Identified early in media reports as one of six engineers picked on Elon Musk's team, Akash Bobba was
+  a prolific wrecker from the start, including an unusual detailing document where we as assigned to OPM,
+  Education and Social Security simultaneously. Initially, he served as a volunteer, but he been on the
+  payroll at the Social Security Administration since early February, where has been a trusted lieutenant
+  of Mike Russo.
+govt_exit_date: 2026-03-07
+govt_exit_truth: guessed
+govt_exit_type: resigned
+tech_links:
+
 - Palantir
-:affiliations:
-- :entity_id: palantir
-  :role: intern
-  :connection_truth: reported
-  :timeframe: before
-  :source: https://projects.propublica.org/elon-musk-doge-tracker/
-  :id: 3MJwUTvH
-- :entity_id: meta
-  :role: intern
-  :connection_truth: reported
-  :timeframe: before
-  :source: https://projects.propublica.org/elon-musk-doge-tracker/
-  :id: 4bBGdAQ2
-:positions:
-- :id: detail-sba-bobba
-  :agency: SBA
-  :sort_date: 2025-02-03
-  :from: OPM
-  :from_truth: guessed
-  :title: Senior Advisor
-  :title_type: advisor
-  :project:
+affiliations:
+
+- entity_id: palantir
+  role: intern
+  connection_truth: reported
+  timeframe: before
+  source: https://projects.propublica.org/elon-musk-doge-tracker/
+  id: 3MJwUTvH
+
+- entity_id: meta
+  role: intern
+  connection_truth: reported
+  timeframe: before
+  source: https://projects.propublica.org/elon-musk-doge-tracker/
+  id: 4bBGdAQ2
+positions:
+
+- id: detail-sba-bobba
+  agency: SBA
+  sort_date: 2025-02-03
+  from: OPM
+  from_truth: guessed
+  title: Senior Advisor
+  title_type: advisor
+  project:
   - spending
   - fraud
-  :type: detailed
-  :category: wrecker
-  :table_note: identified by agency FOIA as having been at the agency, guessing detailed
-    possibly at same time as other detailees
-  :source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
-- :id: opm-03
-  :type: appointed
-  :category: wrecker
-  :agency: OPM
-  :start_date: 2025-01-20
-  :start_date_truth: verified
-  :nte_date: 2025-07-18
-  :nte_date_truth: verified
-  :end_date: 2025-07-18
-  :end_date_truth: verified
-  :table_note: Testimony reports plan to convert position to permanent
-  :end_type: replaced
-  :replaced_by: opm-3-perm
-  :description: Exc Appt NTE
-  :appt_type_code: 48
-  :appt_type: Other
-  :excepted: true
-  :pd_code: 6A39740
-  :title: Expert
-  :title_type: advisor
-  :pay_grade: ED-00
-  :salary: "$0"
-  :series: '0301'
-  :source:
+  type: detailed
+  category: wrecker
+  table_note: >-
+    identified by agency FOIA as having been at the agency, guessing detailed possibly at same time as
+    other detailees
+  source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+
+- id: opm-03
+  type: appointed
+  category: wrecker
+  agency: OPM
+  start_date: 2025-01-20
+  start_date_truth: verified
+  nte_date: 2025-07-18
+  nte_date_truth: verified
+  end_date: 2025-07-18
+  end_date_truth: verified
+  table_note: Testimony reports plan to convert position to permanent
+  end_type: replaced
+  replaced_by: opm-3-perm
+  description: Exc Appt NTE
+  appt_type_code: 48
+  appt_type: Other
+  excepted: true
+  pd_code: 6A39740
+  title: Expert
+  title_type: advisor
+  pay_grade: ED-00
+  salary: "$0"
+  series: '0301'
+  source:
   - https://www.documentcloud.org/documents/26028792-onboard-opm-employee-3/
   - https://www.documentcloud.org/documents/26028780-opm-new-hires/
-  :supervisory: false
-  :office: Office of the Director
-  :comment: I was able to confirm that OPM Employee 3 is Akash Bobba
-  :name: Akash Bobba
-  :alias: OPM-03
-- :id: detail-opm-doge-bobba
-  :type: detailed
-  :agency: DOGE
-  :from: OPM
-  :from_truth: inferred
-  :start_date: 2025-01-27
-  :start_date_truth: verified
-  :category: support
-  :project:
+  supervisory: false
+  office: Office of the Director
+  comment: I was able to confirm that OPM Employee 3 is Akash Bobba
+  name: Akash Bobba
+  alias: OPM-03
+
+- id: detail-opm-doge-bobba
+  type: detailed
+  agency: DOGE
+  from: OPM
+  from_truth: inferred
+  start_date: 2025-01-27
+  start_date_truth: verified
+  category: support
+  project:
   - fraud
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
-- :id: detail-opm-education-akash-bobba
-  :type: detailed
-  :agency: Education
-  :category: wrecker
-  :from: OPM
-  :from_truth: verified
-  :signed_date: 2025-02-12
-  :start_date: 2025-02-03
-  :start_date_truth: verified
-  :nte_date: 2026-02-12
-  :nte_date_truth: verified
-  :reimbursed: false
-  :source: https://www.documentcloud.org/documents/26028777-mou-20250212-opm-education-ed-1/
-  :mou: https://www.documentcloud.org/documents/26028810-mou-20250306-nasa-ssa-employee-2/
-  :name: Akash Bobba
-  :alias: ED-01
-- :id: detail-opm-ssa-opm-3
-  :type: detailed
-  :category: wrecker
-  :agency: SSA
-  :from: OPM
-  :from_truth: verified
-  :signed_date: 2025-02-12
-  :start_date: 2025-02-03
-  :start_date_truth: verified
-  :reimbursed: false
-  :source: https://www.documentcloud.org/documents/26028790-mou-20250212-ssa-opm-education-ed-1/
-  :mou: https://www.documentcloud.org/documents/26028790-mou-20250212-ssa-opm-education-ed-1/
-  :name: Akash Bobba
-  :alias: OPM-03
-- :id: ssa-employee-1
-  :type: appointed
-  :category: wrecker
-  :source:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+
+- id: detail-opm-education-akash-bobba
+  type: detailed
+  agency: Education
+  category: wrecker
+  from: OPM
+  from_truth: verified
+  signed_date: 2025-02-12
+  start_date: 2025-02-03
+  start_date_truth: verified
+  nte_date: 2026-02-12
+  nte_date_truth: verified
+  reimbursed: false
+  source: https://www.documentcloud.org/documents/26028777-mou-20250212-opm-education-ed-1/
+  mou: https://www.documentcloud.org/documents/26028810-mou-20250306-nasa-ssa-employee-2/
+  name: Akash Bobba
+  alias: ED-01
+
+- id: detail-opm-ssa-opm-3
+  type: detailed
+  category: wrecker
+  agency: SSA
+  from: OPM
+  from_truth: verified
+  signed_date: 2025-02-12
+  start_date: 2025-02-03
+  start_date_truth: verified
+  reimbursed: false
+  source: https://www.documentcloud.org/documents/26028790-mou-20250212-ssa-opm-education-ed-1/
+  mou: https://www.documentcloud.org/documents/26028790-mou-20250212-ssa-opm-education-ed-1/
+  name: Akash Bobba
+  alias: OPM-03
+
+- id: ssa-employee-1
+  type: appointed
+  category: wrecker
+  source:
   - https://www.documentcloud.org/documents/26028785-onboard-ssa-employee-1/
   - https://www.documentcloud.org/documents/25940536-25-hq-0774-f-resumes-redacted-3/
-  :title: Expert
-  :title_type: advisor
-  :office: Office of the Chief Information Officer
-  :pd_code: KNX0350
-  :start_date: 2025-02-09
-  :start_date_truth: verified
-  :nte_date: 2026-02-08
-  :nte_date_truth: verified
-  :description: EXC APPT NTE
-  :appt_type_code: 171
-  :pay_grade: ED-00
-  :series: '0301'
-  :supervisory: false
-  :salary: "$90,025"
-  :qualifications: Hands-on software engineer that is an expert in modern computer
-    programming languages, cloud and other infrastructure, AI, etc. 5 years of experience
-    using numerous computer code languages, leadership of teams in technical, software
-    design, and infrastructure areas.
-  :agency: SSA
-  :name: Akash Bobba
-  :alias: SSA-01
-- :id: usda-bobba
-  :type: detailed
-  :category: wrecker
-  :agency: USDA
-  :from: SSA
-  :from_truth: verified
-  :reimbursed: false
-  :start_date: 2025-04-29
-  :start_date_truth: verified
-  :nte_date: 2025-08-27
-  :nte_date_truth: inferred
-  :project: spending
-  :table_note: Detail is from SSA not OPM, because SSA employee at this point
-  :source: https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
-- :id: opm-3-perm
-  :type: converted
-  :category: wrecker
-  :agency: OPM
-  :table_note: Court testimony reports conversion to permanent, restored access
-  :start_date: 2025-08-08
-  :start_date_truth: verified
-  :end_date: 2026-03-07
-  :end_date_truth: verified
-  :end_type: resigned
-  :salary: "$0"
-  :source:
+  title: Expert
+  title_type: advisor
+  office: Office of the Chief Information Officer
+  pd_code: KNX0350
+  start_date: 2025-02-09
+  start_date_truth: verified
+  nte_date: 2026-02-08
+  nte_date_truth: verified
+  description: EXC APPT NTE
+  appt_type_code: 171
+  pay_grade: ED-00
+  series: '0301'
+  supervisory: false
+  salary: "$90,025"
+  qualifications: >-
+    Hands-on software engineer that is an expert in modern computer programming languages, cloud and other
+    infrastructure, AI, etc. 5 years of experience using numerous computer code languages, leadership
+    of teams in technical, software design, and infrastructure areas.
+  agency: SSA
+  name: Akash Bobba
+  alias: SSA-01
+
+- id: usda-bobba
+  type: detailed
+  category: wrecker
+  agency: USDA
+  from: SSA
+  from_truth: verified
+  reimbursed: false
+  start_date: 2025-04-29
+  start_date_truth: verified
+  nte_date: 2025-08-27
+  nte_date_truth: inferred
+  project: spending
+  table_note: Detail is from SSA not OPM, because SSA employee at this point
+  source: >-
+    https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
+
+- id: opm-3-perm
+  type: converted
+  category: wrecker
+  agency: OPM
+  table_note: Court testimony reports conversion to permanent, restored access
+  start_date: 2025-08-08
+  start_date_truth: verified
+  end_date: 2026-03-07
+  end_date_truth: verified
+  end_type: resigned
+  salary: "$0"
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.148.0.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-  :name: Akash Bobba
-  :alias: OPM-03
+  name: Akash Bobba
+  alias: OPM-03

@@ -1,45 +1,48 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: James Sullivan
-:sort_name: Sullivan
-:slug: james-sullivan
-:skill: administrator
-:blurb: A veteran of the first Trump Administration, James Sullivan might not have
-  been considered DOGE before by any media organizations. But he was hired with the
-  Senior Advisor title and on 3/28, he took over as the Chief of Staff at OPM from
-  Amanda Scales. He also is one of the redacted identies in court filings from the
-  OPM. So, I think he counts? James has mainly been involved in coordinating layoffs
-  at various agencies from his position at OPM.
-:positions:
-- :id: opm-employee-08
-  :type: appointed
-  :category: support
-  :start_date: 2025-01-20
-  :start_date_truth: verified
-  :appt_type: SES Noncareer
-  :title: Senior Advisor to the Director
-  :title_type: advisor
-  :pay_grade: ES-00
-  :salary: "$195,200"
-  :series: '0301'
-  :pd_code: 6A37370
-  :agency: OPM
-  :source: https://www.documentcloud.org/documents/26028778-onboard-opm-employee-8/
-  :name: James Sullivan
-  :alias: OPM-08
-- :id: opm-james-sullivan-promotion
-  :type: promotion
-  :category: support
-  :agency: OPM
-  :start_date: 2025-03-28
-  :start_date_truth: verified
-  :description: SES Noncareer Appt
-  :appt_type_code: 55
-  :appt_type: 55-Noncareer (Senior Exec Perm)
-  :title: Chief of Staff
-  :title_type: advisor
-  :pay_grade: ES-00
-  :series: '0301'
-  :supervisory: false
-  :office: Office of the Director
-  :project: personnel
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.3.pdf
+name: James Sullivan
+sort_name: Sullivan
+slug: james-sullivan
+skill: administrator
+blurb: >-
+  A veteran of the first Trump Administration, James Sullivan might not have been considered DOGE before
+  by any media organizations. But he was hired with the Senior Advisor title and on 3/28, he took over
+  as the Chief of Staff at OPM from Amanda Scales. He also is one of the redacted identies in court filings
+  from the OPM. So, I think he counts? James has mainly been involved in coordinating layoffs at various
+  agencies from his position at OPM.
+positions:
+
+- id: opm-employee-08
+  type: appointed
+  category: support
+  start_date: 2025-01-20
+  start_date_truth: verified
+  appt_type: SES Noncareer
+  title: Senior Advisor to the Director
+  title_type: advisor
+  pay_grade: ES-00
+  salary: "$195,200"
+  series: '0301'
+  pd_code: 6A37370
+  agency: OPM
+  source: https://www.documentcloud.org/documents/26028778-onboard-opm-employee-8/
+  name: James Sullivan
+  alias: OPM-08
+
+- id: opm-james-sullivan-promotion
+  type: promotion
+  category: support
+  agency: OPM
+  start_date: 2025-03-28
+  start_date_truth: verified
+  description: SES Noncareer Appt
+  appt_type_code: 55
+  appt_type: 55-Noncareer (Senior Exec Perm)
+  title: Chief of Staff
+  title_type: advisor
+  pay_grade: ES-00
+  series: '0301'
+  supervisory: false
+  office: Office of the Director
+  project: personnel
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.3.pdf

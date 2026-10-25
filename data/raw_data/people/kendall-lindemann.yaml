@@ -1,33 +1,36 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Kendall Lindemann
-:sort_name: Lindemann
-:slug: kendall-lindemann
-:age: 24
-:skill: analyst
-:blurb: Coming to DOGE from McKinsey, she has also been the person to testify in a
-  deposition as a DOGE representative in a court case.
-:linkedin: https://www.linkedin.com/in/kendall-lindemann/
-:govt_exit_date: 2025-07-XX
-:govt_exit_truth: self-reported
-:govt_exit_type: resigned
-:positions:
-- :id: doge-lindemann
-  :type: appointed
-  :category: leadership
-  :sort_date: 2025-02-10
-  :start_date: 2025-02-(10)~
-  :start_date_truth: reported
-  :end_date: 2025-07-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :project: impunity
-  :title: Senior Advisor for Technology and Efficiency
-  :title_type: advisor
-  :series: '0301'
-  :pay_grade: AD-00
-  :table_note: Departure from own LinkedIn
-  :agency: DOGE
-  :source:
+name: Kendall Lindemann
+sort_name: Lindemann
+slug: kendall-lindemann
+age: 24
+skill: analyst
+blurb: >-
+  Coming to DOGE from McKinsey, she has also been the person to testify in a deposition as a DOGE representative
+  in a court case.
+linkedin: https://www.linkedin.com/in/kendall-lindemann/
+govt_exit_date: 2025-07-XX
+govt_exit_truth: self-reported
+govt_exit_type: resigned
+positions:
+
+- id: doge-lindemann
+  type: appointed
+  category: leadership
+  sort_date: 2025-02-10
+  start_date: 2025-02-(10)~
+  start_date_truth: reported
+  end_date: 2025-07-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  project: impunity
+  title: Senior Advisor for Technology and Efficiency
+  title_type: advisor
+  series: '0301'
+  pay_grade: AD-00
+  table_note: Departure from own LinkedIn
+  agency: DOGE
+  source:
   - https://www.consulting.us/news/11397/former-mckinsey-business-analyst-hired-to-musks-doge-nerd-army
   - https://www.linkedin.com/in/kendall-lindemann/
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf

@@ -1,32 +1,37 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Adam Hoffman
-:sort_name: Hoffman
-:slug: adam-hoffman
-:age: 24
-:skill: analyst
-:linkedin: https://www.linkedin.com/in/adam-h-8a4b42105/
-:blurb: A former staffer at the Griffin's Citadel hedge fund, he joined DOGE sometime
-  in April and was assigned to a team that is using DOJ databases to assemble information
-  on immigrants.
-:positions:
-- :id: dhs-hoffman
-  :type: appointed
-  :category: wrecker
-  :agency: DHS
-  :start_date: 2025-03-(19)~
-  :start_date_truth: reported
-  :project: immigration
-  :salary: "$167,603"
-  :source:
-  - https://news.bgov.com/bloomberg-government-news/musks-doge-hires-ken-griffin-staffer-for-national-security-work
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-- :id: doj-hoffman
-  :type: detailed
-  :category: wrecker
-  :project: immigration
-  :from: DOGE
-  :from_truth: inferred
-  :start_date: 2025-04-21
-  :start_date_truth: reported
-  :source: https://www.washingtonpost.com/immigration/2025/04/21/doge-ecas-justice-immigration-courts-trump/
-  :agency: DOJ
+name: Adam Hoffman
+sort_name: Hoffman
+slug: adam-hoffman
+age: 24
+skill: analyst
+linkedin: https://www.linkedin.com/in/adam-h-8a4b42105/
+blurb: >-
+  A former staffer at the Griffin's Citadel hedge fund, he joined DOGE sometime in April and was assigned
+  to a team that is using DOJ databases to assemble information on immigrants.
+positions:
+
+- id: dhs-hoffman
+  type: appointed
+  category: wrecker
+  agency: DHS
+  start_date: 2025-03-(19)~
+  start_date_truth: reported
+  project: immigration
+  salary: "$167,603"
+  source:
+  - >-
+    https://news.bgov.com/bloomberg-government-news/musks-doge-hires-ken-griffin-staffer-for-national-security-work
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+
+- id: doj-hoffman
+  type: detailed
+  category: wrecker
+  project: immigration
+  from: DOGE
+  from_truth: inferred
+  start_date: 2025-04-21
+  start_date_truth: reported
+  source: https://www.washingtonpost.com/immigration/2025/04/21/doge-ecas-justice-immigration-courts-trump/
+  agency: DOJ

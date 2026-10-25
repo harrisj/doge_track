@@ -1,73 +1,78 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Scott Coulter
-:sort_name: Coulter
-:slug: scott-coulter
-:age: 40
-:skill: executive
-:linkedin: https://www.linkedin.com/in/scott-coulter-44959249/
-:college_graduation_year: 2006
-:blurb: Scott Coulter started his work for DOGE as a wrecker based in Social Security
-  and detailed to NASA, but when Mike Russo was abruptly demoted as the CIO for Social
-  Security, Scott stepped up into the role. Recently, however, the _New York Times_
-  reported that Aram Mohgaddassi and Mike Russo were acting informally as co-CIOs
-  within Social Security, leading to questions if Scott Coulter is still there or
-  if he's just occupying a figurehead role.
-:positions:
-- :id: nasa-coulter
-  :type: appointed
-  :category: wrecker
-  :agency: NASA
-  :start_date: 2025-02-XX
-  :sort_date: 2025-02-01
-  :start_date_truth: inferred
-  :salary: "$120,579"
-  :table_note: Missing details
-  :project:
+name: Scott Coulter
+sort_name: Coulter
+slug: scott-coulter
+age: 40
+skill: executive
+linkedin: https://www.linkedin.com/in/scott-coulter-44959249/
+college_graduation_year: 2006
+blurb: >-
+  Scott Coulter started his work for DOGE as a wrecker based in Social Security and detailed to NASA,
+  but when Mike Russo was abruptly demoted as the CIO for Social Security, Scott stepped up into the role.
+  Recently, however, the _New York Times_ reported that Aram Mohgaddassi and Mike Russo were acting informally
+  as co-CIOs within Social Security, leading to questions if Scott Coulter is still there or if he's just
+  occupying a figurehead role.
+positions:
+
+- id: nasa-coulter
+  type: appointed
+  category: wrecker
+  agency: NASA
+  start_date: 2025-02-XX
+  sort_date: 2025-02-01
+  start_date_truth: inferred
+  salary: "$120,579"
+  table_note: Missing details
+  project:
   - spending
   - personnel
-  :source:
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-- :id: detail-nasa-ssa-employee-2
-  :type: detailed
-  :category: wrecker
-  :from: NASA
-  :from_truth: verified
-  :agency: SSA
-  :start_date: 2025-02-18
-  :start_date_truth: verified
-  :nte_date: 2026-02-18
-  :nte_date_truth: verified
-  :end_date: 2025-03-23
-  :end_date_truth: verified
-  :end_type: replaced
-  :replaced_by: ssa-employee-2-cio
-  :signed_date: 2025-03-06
-  :reimbursed: true
-  :comment: Followed by Employee 2 being appointed the CIO
-  :reimbursement_amount: hourly, maximum of $120,579
-  :source:
+  source:
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+
+- id: detail-nasa-ssa-employee-2
+  type: detailed
+  category: wrecker
+  from: NASA
+  from_truth: verified
+  agency: SSA
+  start_date: 2025-02-18
+  start_date_truth: verified
+  nte_date: 2026-02-18
+  nte_date_truth: verified
+  end_date: 2025-03-23
+  end_date_truth: verified
+  end_type: replaced
+  replaced_by: ssa-employee-2-cio
+  signed_date: 2025-03-06
+  reimbursed: true
+  comment: Followed by Employee 2 being appointed the CIO
+  reimbursement_amount: hourly, maximum of $120,579
+  source:
   - https://www.documentcloud.org/documents/26028810-mou-20250306-nasa-ssa-employee-2/
   - https://www.documentcloud.org/documents/26028775-onboard-ssa-employee-2/
-  :mou: https://www.documentcloud.org/documents/26028810-mou-20250306-nasa-ssa-employee-2/
-  :name: Scott Coulter
-  :alias: SSA-02
-- :id: ssa-employee-2-cio
-  :type: appointed
-  :category: enabler
-  :agency: SSA
-  :title: Chief Information Officer
-  :title_type: cio
-  :start_date: 2025-03-24
-  :start_date_truth: verified
-  :end_date: 2025-06-(05)~
-  :end_date_truth: reported
-  :end_type: removed
-  :table_note: Was listed as CIO on May 30, but Aram took over in June. WSJ reports
-    on removal of SSA employee back to NASA in June. Aram/Russo listed as co-CIOs
-    on 6/6
-  :supervisory: true
-  :source:
+  mou: https://www.documentcloud.org/documents/26028810-mou-20250306-nasa-ssa-employee-2/
+  name: Scott Coulter
+  alias: SSA-02
+
+- id: ssa-employee-2-cio
+  type: appointed
+  category: enabler
+  agency: SSA
+  title: Chief Information Officer
+  title_type: cio
+  start_date: 2025-03-24
+  start_date_truth: verified
+  end_date: 2025-06-(05)~
+  end_date_truth: reported
+  end_type: removed
+  table_note: >-
+    Was listed as CIO on May 30, but Aram took over in June. WSJ reports on removal of SSA employee back
+    to NASA in June. Aram/Russo listed as co-CIOs on 6/6
+  supervisory: true
+  source:
   - https://www.documentcloud.org/documents/26028775-onboard-ssa-employee-2/
   - https://www.wsj.com/politics/policy/doge-elon-musk-left-control-92770407
-  :name: Scott Coulter
-  :alias: SSA-02
+  name: Scott Coulter
+  alias: SSA-02

@@ -1,15 +1,17 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Michael Kratsios
-:sort_name: Kratsios
-:slug: michael-kratsios
-:association: auxiliary
-:skill: executive
-:positions:
-- :id: ostp-kratsios
-  :type: appointed
-  :category: enabler
-  :agency: EOP
-  :title: Director, Office of Science and Technology Program
-  :start_date: 2025-03-25
-  :start_date_truth: reported
-  :source: https://fedscoop.com/senate-confirms-michael-kratsios-white-house-ostp-director/
+name: Michael Kratsios
+sort_name: Kratsios
+slug: michael-kratsios
+association: auxiliary
+skill: executive
+positions:
+
+- id: ostp-kratsios
+  type: appointed
+  category: enabler
+  agency: EOP
+  title: Director, Office of Science and Technology Program
+  start_date: 2025-03-25
+  start_date_truth: reported
+  source: https://fedscoop.com/senate-confirms-michael-kratsios-white-house-ostp-director/

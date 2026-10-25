@@ -1,97 +1,104 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Anthony Armstrong
-:sort_name: Armstrong
-:slug: anthony-armstrong
-:age: 57
-:skill: executive
-:blurb: Anthony Armstrong comes to DOGE from the world of finance, where he worked
-  on Musk's acquisition of Twitter as a bank executive at Morgan Stanley. Since joining
-  DOGE at OPM, he has mostly operated quietly in a support role, but in April he was
-  spotted at the FDIC, and I would expect him to be involved with DOGE's work against
-  other independent financial entities. Although he has a relatively modest title,
-  recently departed DOGE member Sahil Lavingia indicated that he was running operations
-  for teams across government with Baris Akis and Steve Davis. Reportedly, he left
-  his OPM position in April but continues to coordinate DOGE from within DHS. More
-  recently, he was named to the position of CFO for Musk's xAI – just another example
-  of the revolving door for Musk associates to cycle through DOGE and into reward
+name: Anthony Armstrong
+sort_name: Armstrong
+slug: anthony-armstrong
+age: 57
+skill: executive
+blurb: >-
+  Anthony Armstrong comes to DOGE from the world of finance, where he worked on Musk's acquisition of
+  Twitter as a bank executive at Morgan Stanley. Since joining DOGE at OPM, he has mostly operated quietly
+  in a support role, but in April he was spotted at the FDIC, and I would expect him to be involved with
+  DOGE's work against other independent financial entities. Although he has a relatively modest title,
+  recently departed DOGE member Sahil Lavingia indicated that he was running operations for teams across
+  government with Baris Akis and Steve Davis. Reportedly, he left his OPM position in April but continues
+  to coordinate DOGE from within DHS. More recently, he was named to the position of CFO for Musk's xAI
+  – just another example of the revolving door for Musk associates to cycle through DOGE and into reward
   positions in his companies.
-:govt_exit_date: 2025-10-(07)~
-:govt_exit_type: resigned
-:govt_exit_truth: reported
-:affiliations:
-- :entity_id: morgan-stanley
-  :connection_truth: reported
-  :role: employee
-  :timeframe: before
-  :source: https://projects.propublica.org/elon-musk-doge-tracker/
-  :id: 761I10Tx
-- :entity_id: mentorship-armstrong
-  :role: mentor
-  :timeframe: before
-  :connection_truth: reported
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
-  :id: goSigEfp
-:positions:
-- :id: detail-opm-dhs-armstrong
-  :type: detailed
-  :category: support
-  :from: OPM
-  :from_truth: guessed
-  :agency: DHS
-  :project: immigration
-  :source:
+govt_exit_date: 2025-10-(07)~
+govt_exit_type: resigned
+govt_exit_truth: reported
+affiliations:
+
+- entity_id: morgan-stanley
+  connection_truth: reported
+  role: employee
+  timeframe: before
+  source: https://projects.propublica.org/elon-musk-doge-tracker/
+  id: 761I10Tx
+
+- entity_id: mentorship-armstrong
+  role: mentor
+  timeframe: before
+  connection_truth: reported
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-2.pdf
+  id: goSigEfp
+positions:
+
+- id: detail-opm-dhs-armstrong
+  type: detailed
+  category: support
+  from: OPM
+  from_truth: guessed
+  agency: DHS
+  project: immigration
+  source:
   - https://www.nytimes.com/2025/06/10/us/politics/airbnb-gebbia-musk-doge.html
   - https://www.cfodive.com/news/musk-taps-morgan-stanley-doge-alum-xai-finance-chief-reports/802262/
-  :table_note: NYT reports he left OPM in April but stayed on a DHS. Unclear of timing,
-    later appointed at DHS
-  :comment: Find more definitive info for DHS link
-- :id: opm-anthony-armstrong
-  :type: appointed
-  :category: leadership
-  :agency: OPM
-  :start_date: 2025-01-20
-  :start_date_truth: verified
-  :end_date: 2025-06-06
-  :end_date_truth: verified
-  :end_type: resigned
-  :project: personnel
-  :source:
+  table_note: NYT reports he left OPM in April but stayed on a DHS. Unclear of timing, later appointed
+    at DHS
+  comment: Find more definitive info for DHS link
+
+- id: opm-anthony-armstrong
+  type: appointed
+  category: leadership
+  agency: OPM
+  start_date: 2025-01-20
+  start_date_truth: verified
+  end_date: 2025-06-06
+  end_date_truth: verified
+  end_type: resigned
+  project: personnel
+  source:
   - https://www.documentcloud.org/documents/26028780-opm-new-hires/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-  :description: Exc Appt NTE
-  :appt_type_code: 48
-  :appt_type: Other
-  :excepted: true
-  :pd_code: 6A39742
-  :title: Expert
-  :title_type: advisor
-  :pay_grade: ED-00
-  :salary: "$0"
-  :series: '0301'
-  :supervisory: false
-  :office: Office of the Director
-  :comment: From FOIA documents
-  :same_as: opm-anthony-armstrong
-  :name: Anthony Armstrong
-  :alias: OPM-09
-- :id: doge-armstrong
-  :type: appointed
-  :category: leadership
-  :agency: DOGE
-  :start_date: 2025-01-27
-  :start_date_truth: verified
-  :project: personnel
-  :salary: "$0"
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-- :id: detail-opm-fdic-armstrong
-  :type: detailed
-  :category: wrecker
-  :from: OPM
-  :from_truth: guessed
-  :project: deregulation
-  :start_date: 2025-04-10
-  :start_date_truth: reported
-  :table_note: reported by media
-  :source: https://www.thehandbasket.co/p/doge-fdic
-  :agency: FDIC
+  description: Exc Appt NTE
+  appt_type_code: 48
+  appt_type: Other
+  excepted: true
+  pd_code: 6A39742
+  title: Expert
+  title_type: advisor
+  pay_grade: ED-00
+  salary: "$0"
+  series: '0301'
+  supervisory: false
+  office: Office of the Director
+  comment: From FOIA documents
+  same_as: opm-anthony-armstrong
+  name: Anthony Armstrong
+  alias: OPM-09
+
+- id: doge-armstrong
+  type: appointed
+  category: leadership
+  agency: DOGE
+  start_date: 2025-01-27
+  start_date_truth: verified
+  project: personnel
+  salary: "$0"
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
+
+- id: detail-opm-fdic-armstrong
+  type: detailed
+  category: wrecker
+  from: OPM
+  from_truth: guessed
+  project: deregulation
+  start_date: 2025-04-10
+  start_date_truth: reported
+  table_note: reported by media
+  source: https://www.thehandbasket.co/p/doge-fdic
+  agency: FDIC

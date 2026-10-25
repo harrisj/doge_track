@@ -1,72 +1,77 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Brooks Morgan
-:sort_name: Morgan
-:slug: brooks-morgan
-:age: 39
-:skill: administrator
-:linkedin: https://www.linkedin.com/in/brooksmorgan/
-:blurb: The CEO of an educational startup, Brooks Morgan joined the DOGE team working
-  within the Department of Education in early February. Unlike most DOGE staff who
-  served as special government employees, he was instead hired as a part-time consultant
-  working for free. It's likely he was later formally appointed to a role, since he
-  has been detailed from Education to both the Department of the Treasury and FDIC
+name: Brooks Morgan
+sort_name: Morgan
+slug: brooks-morgan
+age: 39
+skill: administrator
+linkedin: https://www.linkedin.com/in/brooksmorgan/
+blurb: >-
+  The CEO of an educational startup, Brooks Morgan joined the DOGE team working within the Department
+  of Education in early February. Unlike most DOGE staff who served as special government employees, he
+  was instead hired as a part-time consultant working for free. It's likely he was later formally appointed
+  to a role, since he has been detailed from Education to both the Department of the Treasury and FDIC
   in early April.
-:govt_exit_date: 2025-08-04
-:govt_exit_truth: inferred
-:govt_exit_type: resigned
-:affiliations:
-- :entity_id: banner-vc
-  :role: founder
-  :timeframe: after
-  :immediate: true
-  :start_date: 2025-08-XX
-  :start_date_truth: self-reported
-  :connection_truth: self-reported
-  :source: https://www.linkedin.com/in/brooksmorgan/
-  :id: 4thDf1Lq
-:positions:
-- :id: education-employee-4
-  :type: consultant
-  :category: wrecker
-  :comment: Part-time
-  :start_date: 2025-02-04
-  :start_date_truth: verified
-  :nte_date: 2025-08-04
-  :nte_date_truth: verified
-  :end_date: 2025-08-04
-  :end_date_truth: guessed
-  :end_type: resigned
-  :agency: Education
-  :salary: "$0"
-  :table_note: likely Brooks Morgan who does report starting a new role in August
-  :source:
+govt_exit_date: 2025-08-04
+govt_exit_truth: inferred
+govt_exit_type: resigned
+affiliations:
+
+- entity_id: banner-vc
+  role: founder
+  timeframe: after
+  immediate: true
+  start_date: 2025-08-XX
+  start_date_truth: self-reported
+  connection_truth: self-reported
+  source: https://www.linkedin.com/in/brooksmorgan/
+  id: 4thDf1Lq
+positions:
+
+- id: education-employee-4
+  type: consultant
+  category: wrecker
+  comment: Part-time
+  start_date: 2025-02-04
+  start_date_truth: verified
+  nte_date: 2025-08-04
+  nte_date_truth: verified
+  end_date: 2025-08-04
+  end_date_truth: guessed
+  end_type: resigned
+  agency: Education
+  salary: "$0"
+  table_note: likely Brooks Morgan who does report starting a new role in August
+  source:
   - https://www.documentcloud.org/documents/26028771-onboard-education-employee-4/
   - https://www.linkedin.com/in/brooksmorgan/
-  :name: Brooks Morgan
-  :alias: ED-04
-- :id: detail-education-treasury-morgan
-  :type: detailed
-  :category: wrecker
-  :agency: Treasury
-  :from: Education
-  :from_truth: verified
-  :reimbursed: false
-  :title: Senior Treasury Advisor
-  :title_type: advisor
-  :start_date: 2025-04-09
-  :start_date_truth: verified
-  :project:
+  name: Brooks Morgan
+  alias: ED-04
+
+- id: detail-education-treasury-morgan
+  type: detailed
+  category: wrecker
+  agency: Treasury
+  from: Education
+  from_truth: verified
+  reimbursed: false
+  title: Senior Treasury Advisor
+  title_type: advisor
+  start_date: 2025-04-09
+  start_date_truth: verified
+  project:
   - spending
   - fraud
-  :mou: https://www.documentcloud.org/documents/26028801-mou-20250408-education-treasury/
-  :source: https://www.documentcloud.org/documents/26028801-mou-20250408-education-treasury/
-- :id: detail-education-fdic-morgan
-  :type: detailed
-  :category: wrecker
-  :from: Education
-  :from_truth: guessed
-  :start_date: 2025-04-10
-  :start_date_truth: reported
-  :project: deregulation
-  :source: https://www.thehandbasket.co/p/doge-fdic
-  :agency: FDIC
+  mou: https://www.documentcloud.org/documents/26028801-mou-20250408-education-treasury/
+  source: https://www.documentcloud.org/documents/26028801-mou-20250408-education-treasury/
+
+- id: detail-education-fdic-morgan
+  type: detailed
+  category: wrecker
+  from: Education
+  from_truth: guessed
+  start_date: 2025-04-10
+  start_date_truth: reported
+  project: deregulation
+  source: https://www.thehandbasket.co/p/doge-fdic
+  agency: FDIC

@@ -1,46 +1,51 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Sahil Lavingia
-:sort_name: Lavingia
-:slug: shail-lavingia
-:age: 32
-:blurb: |-
+name: Sahil Lavingia
+sort_name: Lavingia
+slug: shail-lavingia
+age: 32
+blurb: |-
   A tech founder who created the site Gumroad, Sahil Lavingia showed up late to DOGE, with the goal of helping veterans at the VA. Despite displaying a remarkable and sometimes frankly infuriating naivete about both DOGE's real mission and how civic technology operated before, his [blog post about his experiences](https://sahillavingia.com/doge) has given us the best view of how DOGE actually operated. Sadly, it's also what got him fired from the "most transparent organization in government."
   More recently, the IRS apparently hired him back into government in November, at the direction of Sam Corcos, reportedly as a career employee in the nonpartisan civil service. He reportedly is working on online accounts at the IRS.
-:skill: coder
-:linkedin: https://www.linkedin.com/in/sahillavingia/
-:affiliations:
-- :entity_id: boomerang
-  :role: member
-  :timeframe: after
-  :connection_truth: verified
-  :id: IgSM3oll
-:positions:
-- :id: va-lavingia
-  :start_date: 2025-03-17
-  :start_date_truth: verified
-  :end_date: 2025-05-09
-  :end_date_truth: verified
-  :end_type: fired
-  :table_note: fired for talking to media, dates from his blog
-  :project:
+skill: coder
+linkedin: https://www.linkedin.com/in/sahillavingia/
+affiliations:
+
+- entity_id: boomerang
+  role: member
+  timeframe: after
+  connection_truth: verified
+  id: IgSM3oll
+positions:
+
+- id: va-lavingia
+  start_date: 2025-03-17
+  start_date_truth: verified
+  end_date: 2025-05-09
+  end_date_truth: verified
+  end_type: fired
+  table_note: fired for talking to media, dates from his blog
+  project:
   - spending
   - fraud
-  :type: appointed
-  :category: wrecker
-  :title: Senior Advisor
-  :title_type: advisor
-  :office: Office of the Chief of Staff
-  :salary: "$27,444"
-  :source:
+  type: appointed
+  category: wrecker
+  title: Senior Advisor
+  title_type: advisor
+  office: Office of the Chief of Staff
+  salary: "$27,444"
+  source:
   - https://sahillavingia.com/doge
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-  :agency: VA
-- :id: irs-lavingia
-  :type: appointed
-  :category: wrecker
-  :start_date: 2025-11-XX
-  :start_date_truth: reported
-  :table_note: Reportedly a career employee at the IRS (not a political appointee)
-  :project: modernization
-  :agency: IRS
-  :source: https://www.wired.com/story/big-interview-event-sahil-lavingia/
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  agency: VA
+
+- id: irs-lavingia
+  type: appointed
+  category: wrecker
+  start_date: 2025-11-XX
+  start_date_truth: reported
+  table_note: Reportedly a career employee at the IRS (not a political appointee)
+  project: modernization
+  agency: IRS
+  source: https://www.wired.com/story/big-interview-event-sahil-lavingia/

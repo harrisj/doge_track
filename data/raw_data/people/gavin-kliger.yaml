@@ -1,235 +1,246 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Gavin Kliger
-:sort_name: Kliger
-:slug: gavin-kliger
-:age: 25
-:skill: coder
-:college_graduation_year: 2020
-:linkedin: https://www.linkedin.com/in/gavin-kliger-5a339b157/
-:blurb: A poster boy for DOGE's wanton cruelty and destruction, Gavin Kliger is a
-  software developer with five years of experience who has shown a particular flair
-  for being the face of DOGE's abuse of federal personnel. At USAID, he was the one
-  who locked staff out of the building. At CFPB, he vandalized the website and later
-  returned to run a marathon 36-hour prep session for massive layoffs where he reportedly
-  screamed at staff to work even harder at laying off their colleagues. Arriving at
-  the IRS, he reportedly pulled out five different laptops from his bag to show the
-  various agencies he had been granted access to. Gavin Kliger eventually pivoted
-  to a role of Chief Data Officer at the Pentagon, where he reportedly worked out
-  the partnerships between AI companies and the military. In April, he left government
-  service to build out an AI startup with Luke Farritor and Marshall Wood.
-:govt_exit_date: 2026-04-XX
-:govt_exit_type: resigned
-:govt_exit_truth: self-reported
-:affiliations:
-- :entity_id: cathedral
-  :role: founder
-  :start_date: 2026-04-XX
-  :timeframe: after
-  :immediate: true
-  :start_date_truth: reported
-  :connection_truth: reported
-  :source: https://www.vanityfair.com/story/doge-defense-startups
-  :id: 4z26vDkJ
-:positions:
-- :id: detail-opm-dhs-kliger
-  :type: detailed
-  :category: wrecker
-  :from: OPM
-  :agency: DHS
-  :project: immigration
-  :from_truth: guessed
-  :comment: No details, but listed in a NYT roundup and adding here. Assuming detail
-    from OPM.
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: internal-dhs-tsa-kliger
-  :type: internal
-  :category: wrecker
-  :from: DHS
-  :from_truth: inferred
-  :agency: TSA
-  :comment: No details, but listed in a NYT roundup and adding here. Assuming detail
-    from OPM.
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: opm-05-gsa
-  :type: detailed
-  :category: wrecker
-  :agency: GSA
-  :from: OPM
-  :from_truth: verified
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
-  :table_note: detail in court doc
-  :name: Gavin Kliger
-  :alias: OPM-05
-- :id: opm-temp-employee-5
-  :type: appointed
-  :category: wrecker
-  :agency: OPM
-  :start_date: 2025-01-20
-  :start_date_truth: verified
-  :nte_date: 2025-05-20
-  :nte_date_truth: verified
-  :end_date: 2025-02-18
-  :end_date_truth: verified
-  :end_type: replaced
-  :replaced_by: opm-perm-employee-5
-  :description: Provisional Appt NTE
-  :appt_type_code: 44
-  :appt_type: Schedule C
-  :excepted: true
-  :pd_code: 6A38025
-  :title: Senior Advisor to the Director for Information Technology
-  :title_type: advisor
-  :pay_grade: GS-15
-  :salary: "$195,200"
-  :series: '0301'
-  :supervisory: true
-  :office: Office of the Director
-  :table_note: hired at maximum salary for GS federal employee in DC
-  :source:
+name: Gavin Kliger
+sort_name: Kliger
+slug: gavin-kliger
+age: 25
+skill: coder
+college_graduation_year: 2020
+linkedin: https://www.linkedin.com/in/gavin-kliger-5a339b157/
+blurb: >-
+  A poster boy for DOGE's wanton cruelty and destruction, Gavin Kliger is a software developer with five
+  years of experience who has shown a particular flair for being the face of DOGE's abuse of federal personnel.
+  At USAID, he was the one who locked staff out of the building. At CFPB, he vandalized the website and
+  later returned to run a marathon 36-hour prep session for massive layoffs where he reportedly screamed
+  at staff to work even harder at laying off their colleagues. Arriving at the IRS, he reportedly pulled
+  out five different laptops from his bag to show the various agencies he had been granted access to.
+  Gavin Kliger eventually pivoted to a role of Chief Data Officer at the Pentagon, where he reportedly
+  worked out the partnerships between AI companies and the military. In April, he left government service
+  to build out an AI startup with Luke Farritor and Marshall Wood.
+govt_exit_date: 2026-04-XX
+govt_exit_type: resigned
+govt_exit_truth: self-reported
+affiliations:
+
+- entity_id: cathedral
+  role: founder
+  start_date: 2026-04-XX
+  timeframe: after
+  immediate: true
+  start_date_truth: reported
+  connection_truth: reported
+  source: https://www.vanityfair.com/story/doge-defense-startups
+  id: 4z26vDkJ
+positions:
+
+- id: detail-opm-dhs-kliger
+  type: detailed
+  category: wrecker
+  from: OPM
+  agency: DHS
+  project: immigration
+  from_truth: guessed
+  comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: internal-dhs-tsa-kliger
+  type: internal
+  category: wrecker
+  from: DHS
+  from_truth: inferred
+  agency: TSA
+  comment: No details, but listed in a NYT roundup and adding here. Assuming detail from OPM.
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: opm-05-gsa
+  type: detailed
+  category: wrecker
+  agency: GSA
+  from: OPM
+  from_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+  table_note: detail in court doc
+  name: Gavin Kliger
+  alias: OPM-05
+
+- id: opm-temp-employee-5
+  type: appointed
+  category: wrecker
+  agency: OPM
+  start_date: 2025-01-20
+  start_date_truth: verified
+  nte_date: 2025-05-20
+  nte_date_truth: verified
+  end_date: 2025-02-18
+  end_date_truth: verified
+  end_type: replaced
+  replaced_by: opm-perm-employee-5
+  description: Provisional Appt NTE
+  appt_type_code: 44
+  appt_type: Schedule C
+  excepted: true
+  pd_code: 6A38025
+  title: Senior Advisor to the Director for Information Technology
+  title_type: advisor
+  pay_grade: GS-15
+  salary: "$195,200"
+  series: '0301'
+  supervisory: true
+  office: Office of the Director
+  table_note: hired at maximum salary for GS federal employee in DC
+  source:
   - https://www.documentcloud.org/documents/26028780-opm-new-hires/
   - https://www.documentcloud.org/documents/26028815-onboard-opm-employee-5/
-  :name: Gavin Kliger
-  :alias: OPM-05
-- :id: detail-opm-usaid-kliger
-  :type: detailed
-  :category: wrecker
-  :agency: USAID
-  :project: elimination
-  :from: OPM
-  :from_truth: verified
-  :start_date: 2025-01-27
-  :start_date_truth: reported
-  :source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
-- :id: detail-opm-usda-kliger
-  :type: detailed
-  :category: wrecker
-  :from: OPM
-  :agency: USDA
-  :project:
+  name: Gavin Kliger
+  alias: OPM-05
+
+- id: detail-opm-usaid-kliger
+  type: detailed
+  category: wrecker
+  agency: USAID
+  project: elimination
+  from: OPM
+  from_truth: verified
+  start_date: 2025-01-27
+  start_date_truth: reported
+  source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
+
+- id: detail-opm-usda-kliger
+  type: detailed
+  category: wrecker
+  from: OPM
+  agency: USDA
+  project:
   - spending
   - personnel
-  :from_truth: verified
-  :start_date: 2025-01-29
-  :start_date_truth: verified
-  :office: Office of the Secretary
-  :comment: No details, but listed in a NYT roundup and adding here. On 2/14, USDA
-    head said they'd been there a couple of weeks. An email from him has the label
-    OSEC - DC
-  :source:
+  from_truth: verified
+  start_date: 2025-01-29
+  start_date_truth: verified
+  office: Office of the Secretary
+  comment: >-
+    No details, but listed in a NYT roundup and adding here. On 2/14, USDA head said they'd been there
+    a couple of weeks. An email from him has the label OSEC - DC
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
-  - https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
-- :id: detail-opm-cfpb-kliger
-  :type: detailed
-  :category: wrecker
-  :agency: CFPB
-  :from: OPM
-  :from_truth: verified
-  :start_date: 2025-02-07
-  :start_date_truth: verified
-  :end_date: 2025-05-08
-  :end_date_truth: verified
-  :end_type: fired
-  :project:
+  - >-
+    https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
+
+- id: detail-opm-cfpb-kliger
+  type: detailed
+  category: wrecker
+  agency: CFPB
+  from: OPM
+  from_truth: verified
+  start_date: 2025-02-07
+  start_date_truth: verified
+  end_date: 2025-05-08
+  end_date_truth: verified
+  end_type: fired
+  project:
   - elimination
   - personnel
-  :title: Senior Advisor for Technology and Delivery
-  :title_type: advisor
-  :comment: Employee B in GAO report
-  :source:
-  - https://news.bloomberglaw.com/banking-law/doge-employee-leaves-cfpb-after-leading-trumps-mass-firing-plan
+  title: Senior Advisor for Technology and Delivery
+  title_type: advisor
+  comment: Employee B in GAO report
+  source:
+  - >-
+    https://news.bloomberglaw.com/banking-law/doge-employee-leaves-cfpb-after-leading-trumps-mass-firing-plan
   - https://www.gao.gov/assets/gao-26-108192.pdf
-- :id: detail-opm-irs-gavin-kliger
-  :type: detailed
-  :category: wrecker
-  :agency: IRS
-  :from: OPM
-  :from_truth: verified
-  :project: fraud
-  :reimbursed: true
-  :start_date: 2025-02-13
-  :start_date_truth: verified
-  :nte_date: 2025-06-19
-  :nte_date_truth: inferred
-  :end_date: 2025-04-17
-  :end_date_truth: reported
-  :end_type: fired
-  :signed_date: 2025-02-19
-  :table_note: Arrived at agency before formal detail was signed
-  :comment: he was forcibly removed from agency in purge by Bessent
-  :mou: https://www.documentcloud.org/documents/26028809-mou-20250219-opm-irs-gavin-kliger/
-  :source:
+
+- id: detail-opm-irs-gavin-kliger
+  type: detailed
+  category: wrecker
+  agency: IRS
+  from: OPM
+  from_truth: verified
+  project: fraud
+  reimbursed: true
+  start_date: 2025-02-13
+  start_date_truth: verified
+  nte_date: 2025-06-19
+  nte_date_truth: inferred
+  end_date: 2025-04-17
+  end_date_truth: reported
+  end_type: fired
+  signed_date: 2025-02-19
+  table_note: Arrived at agency before formal detail was signed
+  comment: he was forcibly removed from agency in purge by Bessent
+  mou: https://www.documentcloud.org/documents/26028809-mou-20250219-opm-irs-gavin-kliger/
+  source:
   - https://www.documentcloud.org/documents/26028809-mou-20250219-opm-irs-gavin-kliger/
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.144.0.pdf
-- :id: opm-perm-employee-5
-  :type: converted
-  :category: wrecker
-  :agency: OPM
-  :start_date: 2025-02-18
-  :start_date_truth: verified
-  :end_date: 2025-12-27
-  :end_date_truth: verified
-  :end_type: resigned
-  :description: Exc Appt NTE
-  :appt_type_code: 44
-  :appt_type: Schedule C
-  :excepted: true
-  :pd_code: 6A38025
-  :title: Senior Advisor to the Director for Information Technology
-  :title_type: advisor
-  :pay_grade: GS-15
-  :salary: "$195,200"
-  :series: '0301'
-  :supervisory: true
-  :office: Office of the Director
-  :comment: converted from provisional to excepted position
-  :source:
+
+- id: opm-perm-employee-5
+  type: converted
+  category: wrecker
+  agency: OPM
+  start_date: 2025-02-18
+  start_date_truth: verified
+  end_date: 2025-12-27
+  end_date_truth: verified
+  end_type: resigned
+  description: Exc Appt NTE
+  appt_type_code: 44
+  appt_type: Schedule C
+  excepted: true
+  pd_code: 6A38025
+  title: Senior Advisor to the Director for Information Technology
+  title_type: advisor
+  pay_grade: GS-15
+  salary: "$195,200"
+  series: '0301'
+  supervisory: true
+  office: Office of the Director
+  comment: converted from provisional to excepted position
+  source:
   - https://www.documentcloud.org/documents/26028780-opm-new-hires/
   - https://www.documentcloud.org/documents/26028815-onboard-opm-employee-5/
   - https://www.linkedin.com/in/gavin-kliger-5a339b157/
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-  :name: Gavin Kliger
-  :alias: OPM-05
-- :id: opm-05-usagm
-  :type: detailed
-  :category: wrecker
-  :agency: USAGM
-  :from: OPM
-  :from_truth: verified
-  :start_date: 2025-03-(01)~
-  :start_date_truth: reported
-  :source:
+  name: Gavin Kliger
+  alias: OPM-05
+
+- id: opm-05-usagm
+  type: detailed
+  category: wrecker
+  agency: USAGM
+  from: OPM
+  from_truth: verified
+  start_date: 2025-03-(01)~
+  start_date_truth: reported
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
-  :table_note: detail in court doc, date from Kliger spotted at VOA around start of
-    March
-  :name: Gavin Kliger
-  :alias: OPM-05
-- :id: detail-opm-ftc-kliger
-  :type: detailed
-  :category: wrecker
-  :from: OPM
-  :from_truth: guessed
-  :sort_date: 2025-03-28
-  :start_date: 2025-03-(28)~
-  :start_date_truth: reported
-  :project:
+  table_note: detail in court doc, date from Kliger spotted at VOA around start of March
+  name: Gavin Kliger
+  alias: OPM-05
+
+- id: detail-opm-ftc-kliger
+  type: detailed
+  category: wrecker
+  from: OPM
+  from_truth: guessed
+  sort_date: 2025-03-28
+  start_date: 2025-03-(28)~
+  start_date_truth: reported
+  project:
   - personnel
   - deregulation
-  :comment: Title is not given, reported as starting "last week" from 2025-04-04
-  :source: https://www.axios.com/pro/tech-policy/2025/04/04/doge-staffers-move-into-ftc-office
-  :agency: FTC
-- :id: dod-kliger
-  :agency: DOD
-  :category: enabler
-  :type: appointed
-  :start_date: 2025-12-XX
-  :start_date_truth: self-reported
-  :end_date: 2026-04-XX
-  :end_type: resigned
-  :end_date_truth: self-reported
-  :title: Chief Data Officer
-  :project: modernization
-  :fuzz: His press release says appointed in 3/2026, but LinkedIn says he's been in
-    the role since December
-  :source:
+  comment: Title is not given, reported as starting "last week" from 2025-04-04
+  source: https://www.axios.com/pro/tech-policy/2025/04/04/doge-staffers-move-into-ftc-office
+  agency: FTC
+
+- id: dod-kliger
+  agency: DOD
+  category: enabler
+  type: appointed
+  start_date: 2025-12-XX
+  start_date_truth: self-reported
+  end_date: 2026-04-XX
+  end_type: resigned
+  end_date_truth: self-reported
+  title: Chief Data Officer
+  project: modernization
+  fuzz: His press release says appointed in 3/2026, but LinkedIn says he's been in the role since December
+  source:
   - https://www.linkedin.com/in/gavin-kliger-5a339b157/
   - https://xcancel.com/DoWCTO/status/2029935768001495370

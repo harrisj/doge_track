@@ -4,13 +4,18 @@ require 'yaml'
 require 'date'
 require 'edtf'
 require 'shortuuid'
+require 'fileutils'
 
-people_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'people.yaml')
-aliases_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'aliases.yaml')
-out_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'processed_people.yaml')
+PEOPLE_DIR = File.join(File.dirname(__FILE__), '..', 'raw_data', 'people')
+ALIASES_DIR = File.join(File.dirname(__FILE__), '..', 'raw_data', 'aliases')
 
-aliases = YAML.unsafe_load_file(aliases_file, symbolize_names: true)
-people = YAML.unsafe_load_file(people_file, symbolize_names: true)
+# Load all aliases from directory
+alias_files = Dir[File.join(ALIASES_DIR, '*.yaml')]
+aliases = alias_files.map { |f| YAML.unsafe_load_file(f, symbolize_names: true) }.flatten
+
+# Load all people from directory
+people_files = Dir[File.join(PEOPLE_DIR, '*.yaml')]
+people = people_files.map { |f| YAML.unsafe_load_file(f, symbolize_names: true) }.flatten
 
 named_aliases = aliases.select { |a| a[:name] && a[:positions] }
 named_alias_positions = named_aliases.map do |a|
@@ -75,10 +80,17 @@ end
 
 out = people.sort_by { |p| p[:sort_name] }
 
-File.open(out_file, 'w') do |file|
+# Write each processed person back to their individual file
+out.each do |p|
+  slug = p[:slug]
+  if slug.nil?
+    Bridgetown.logger.info "Warning: person #{p[:name]} has no slug, skipping file write"
+    next
+  end
+  person_file = File.join(PEOPLE_DIR, "#{slug}.yaml")
   schema_hdr = "# yaml-language-server: $schema=../schemas/people-file.json\n"
-  out_yaml = YAML.dump(out, line_width: 100, stringify_names: true, header: false)
-  file.write(schema_hdr, out_yaml.gsub(/^- /, "\n- "))
+  out_yaml = YAML.dump(p, line_width: 100, stringify_names: true, header: false)
+  File.open(person_file, 'w') do |file|
+    file.write(schema_hdr, out_yaml.gsub(/^- /, "\n- "))
+  end
 end
-
-File.rename(out_file, people_file)

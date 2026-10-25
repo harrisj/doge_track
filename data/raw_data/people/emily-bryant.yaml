@@ -1,52 +1,54 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Emily Bryant
-:sort_name: Bryant
-:slug: emily-bryant
-:age: 23
-:skill: recruiter
-:blurb: A relatively new arrival to DOGE. My only information on her is a sighting
-  on the DOGE team at the FTC. ProPublica did report that she has an email address
-  at both GSA and EOP, so I am assuming she started there and was detailed outward.
-  In a recent podcast, Antonio Gracias said that "[Baris Akis] and Emily do the recruiting."
-  Is it possibly her?
-:positions:
-- :id: doge-bryant
-  :type: appointed
-  :category: support
-  :agency: DOGE
-  :start_date: 2025-02-24
-  :start_date_truth: verified
-  :title: Senior Advisor for Technology and Efficiency
-  :title_type: advisor
-  :project: personnel
-  :series: '0301'
-  :pay_grade: AD-00
-  :source:
+name: Emily Bryant
+sort_name: Bryant
+slug: emily-bryant
+age: 23
+skill: recruiter
+blurb: >-
+  A relatively new arrival to DOGE. My only information on her is a sighting on the DOGE team at the FTC.
+  ProPublica did report that she has an email address at both GSA and EOP, so I am assuming she started
+  there and was detailed outward. In a recent podcast, Antonio Gracias said that "[Baris Akis] and Emily
+  do the recruiting." Is it possibly her?
+positions:
+
+- id: doge-bryant
+  type: appointed
+  category: support
+  agency: DOGE
+  start_date: 2025-02-24
+  start_date_truth: verified
+  title: Senior Advisor for Technology and Efficiency
+  title_type: advisor
+  project: personnel
+  series: '0301'
+  pay_grade: AD-00
+  source:
   - https://bsky.app/profile/esqueer.net/post/3ljpyyjzfis2l
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
-- :id: gsa-bryant
-  :type: appointed
-  :agency: GSA
-  :category: support
-  :start_date: 2025-03-(17)~
-  :start_date_truth: reported
-  :sort_date: 2025-03-17
-  :project: personnel
-  :table_note: signs in someone as GSA employee on 3/24, assuming not new employee
-    that day, but in March.
-  :comment: Not verified, but NYT links to her to GSA also, so assuming she started
-    there
-  :source:
+
+- id: gsa-bryant
+  type: appointed
+  agency: GSA
+  category: support
+  start_date: 2025-03-(17)~
+  start_date_truth: reported
+  sort_date: 2025-03-17
+  project: personnel
+  table_note: signs in someone as GSA employee on 3/24, assuming not new employee that day, but in March.
+  comment: Not verified, but NYT links to her to GSA also, so assuming she started there
+  source:
   - https://projects.propublica.org/elon-musk-doge-tracker/
   - https://www.documentcloud.org/documents/28032460-gsa-visitor-logs
-- :id: detail-doge-ftc-bryant
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: guessed
-  :sort_date: 2025-03-28
-  :start_date: 2025-03-(28)~
-  :start_date_truth: reported
-  :table_note: limited info, 2025-04-04 report stated she started "last week"
-  :source: https://www.axios.com/pro/tech-policy/2025/04/04/doge-staffers-move-into-ftc-office
-  :agency: FTC
+
+- id: detail-doge-ftc-bryant
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: guessed
+  sort_date: 2025-03-28
+  start_date: 2025-03-(28)~
+  start_date_truth: reported
+  table_note: limited info, 2025-04-04 report stated she started "last week"
+  source: https://www.axios.com/pro/tech-policy/2025/04/04/doge-staffers-move-into-ftc-office
+  agency: FTC

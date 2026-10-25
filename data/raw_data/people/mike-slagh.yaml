@@ -1,22 +1,25 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Mike Slagh
-:sort_name: Slagh
-:slug: mike-slagh
-:linkedin: https://www.linkedin.com/in/mslagh/
-:skill: executive
-:age: 40
-:blurb: The founder of a company that apparently connects defense contractors with
-  government buyers. Before that, he was the founder of a company that did job training
-  for veterans. It's unclear where he is working inside of the Pentagon. He served
-  in the Navy.
-:positions:
-- :id: dod-slagh
-  :type: appointed
-  :category: wrecker
-  :agency: DOD
-  :start_date: 2025-02-(18)?
-  :start_date_truth: inferred
-  :table_note: Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting
-    on 2/20 that many were veterans
-  :sort_date: 2025-02-18
-  :source: https://projects.propublica.org/elon-musk-doge-tracker/
+name: Mike Slagh
+sort_name: Slagh
+slug: mike-slagh
+linkedin: https://www.linkedin.com/in/mslagh/
+skill: executive
+age: 40
+blurb: >-
+  The founder of a company that apparently connects defense contractors with government buyers. Before
+  that, he was the founder of a company that did job training for veterans. It's unclear where he is working
+  inside of the Pentagon. He served in the Navy.
+positions:
+
+- id: dod-slagh
+  type: appointed
+  category: wrecker
+  agency: DOD
+  start_date: 2025-02-(18)?
+  start_date_truth: inferred
+  table_note: >-
+    Start date inferred from reports of DOGE meeting 2/18 and Hegseth reporting on 2/20 that many were
+    veterans
+  sort_date: 2025-02-18
+  source: https://projects.propublica.org/elon-musk-doge-tracker/

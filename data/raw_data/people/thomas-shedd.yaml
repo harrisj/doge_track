@@ -1,98 +1,106 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Thomas Shedd
-:sort_name: Shedd
-:slug: thomas-shedd
-:age: 28
-:skill: coder
-:linkedin: https://www.linkedin.com/in/thomasshedd/
-:blurb: When he was named the Deputy Administrator of FAS (under Josh Gruenbaum) and
-  the head of GSA's innovative Technology Transformation Service (which includes 18F
-  and login.gov), the press releases touted his most recent experience, 8 years of
-  being a software developer at Tesla. It turns out that was his only experience,
-  and he hasn't ever been a senior executive or worked within government before. Instead,
-  his main skills seem to be a loyalty to Musk and a willingness to destroy the parts
-  of the agency in his care if asked. To this end, he has eliminated 18F and tried
-  to gain admin access to services like Notify.gov or Login.gov, that would give him
-  unprecedented control over government services. He also has been a big booster of
-  replacing staff with AI. Since March, he has also been serving as the CIO at the
-  Department of Labor, an arrangement that largely seems to exist so he can grant
-  access for sensitive systems to DOGE staff.
-:govt_exit_date: 2026-02-XX
-:govt_exit_type: resigned
-:govt_exit_truth: self-reported
-:tech_links:
+name: Thomas Shedd
+sort_name: Shedd
+slug: thomas-shedd
+age: 28
+skill: coder
+linkedin: https://www.linkedin.com/in/thomasshedd/
+blurb: >-
+  When he was named the Deputy Administrator of FAS (under Josh Gruenbaum) and the head of GSA's innovative
+  Technology Transformation Service (which includes 18F and login.gov), the press releases touted his
+  most recent experience, 8 years of being a software developer at Tesla. It turns out that was his only
+  experience, and he hasn't ever been a senior executive or worked within government before. Instead,
+  his main skills seem to be a loyalty to Musk and a willingness to destroy the parts of the agency in
+  his care if asked. To this end, he has eliminated 18F and tried to gain admin access to services like
+  Notify.gov or Login.gov, that would give him unprecedented control over government services. He also
+  has been a big booster of replacing staff with AI. Since March, he has also been serving as the CIO
+  at the Department of Labor, an arrangement that largely seems to exist so he can grant access for sensitive
+  systems to DOGE staff.
+govt_exit_date: 2026-02-XX
+govt_exit_type: resigned
+govt_exit_truth: self-reported
+tech_links:
+
 - Tesla
-:affiliations:
-- :entity_id: tesla
-  :role: employee
-  :timeframe: before
-  :immediate: true
-  :connection_truth: self-reported
-  :start_date: 2017-06-XX
-  :start_date_truth: self-reported
-  :end_date: 2025-01-(20)~
-  :end_date_truth: inferred
-  :table_note: Software Engineering Integration Manager. "Software, cameras & teams
-    that run the vehicle and battery factories."
-  :source: https://www.linkedin.com/in/thomasshedd/
-  :id: 2BVH14sv
-:positions:
-- :id: gsa-thomas-shedd
-  :type: appointed
-  :category: enabler
-  :agency: GSA
-  :title: Deputy FAS Commissioner / Administrator, Technology Transformation Service
-  :title_type: cio
-  :office: Technology Transformation Service
-  :project:
+affiliations:
+
+- entity_id: tesla
+  role: employee
+  timeframe: before
+  immediate: true
+  connection_truth: self-reported
+  start_date: 2017-06-XX
+  start_date_truth: self-reported
+  end_date: 2025-01-(20)~
+  end_date_truth: inferred
+  table_note: >-
+    Software Engineering Integration Manager. "Software, cameras & teams that run the vehicle and battery
+    factories."
+  source: https://www.linkedin.com/in/thomasshedd/
+  id: 2BVH14sv
+positions:
+
+- id: gsa-thomas-shedd
+  type: appointed
+  category: enabler
+  agency: GSA
+  title: Deputy FAS Commissioner / Administrator, Technology Transformation Service
+  title_type: cio
+  office: Technology Transformation Service
+  project:
   - impunity
   - modernization
   - personnel
-  :start_date: 2025-01-24
-  :start_date_truth: reported
-  :end_date: 2026-02-19
-  :end_date_truth: reported
-  :end_type: replaced
-  :replaced_by: gsa-shedd-fraud
-  :salary: "$150,160"
-  :source:
-  - https://federalnewsnetwork.com/people/2025/01/gsas-new-leadership-mostly-comes-from-tech-finance-sectors/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  start_date: 2025-01-24
+  start_date_truth: reported
+  end_date: 2026-02-19
+  end_date_truth: reported
+  end_type: replaced
+  replaced_by: gsa-shedd-fraud
+  salary: "$150,160"
+  source:
+  - >-
+    https://federalnewsnetwork.com/people/2025/01/gsas-new-leadership-mostly-comes-from-tech-finance-sectors/
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - https://www.govexec.com/management/2026/02/federal-cio-tapped-dual-hatted-role-gsa/411543/
-  :supervisory: true
-- :id: dol-shedd
-  :type: appointed
-  :category: enabler
-  :start_date: 2025-03-14
-  :start_date_truth: reported
-  :end_date: 2025-08-01
-  :end_date_truth: reported
-  :end_type: resigned
-  :project:
+  supervisory: true
+
+- id: dol-shedd
+  type: appointed
+  category: enabler
+  start_date: 2025-03-14
+  start_date_truth: reported
+  end_date: 2025-08-01
+  end_date_truth: reported
+  end_type: resigned
+  project:
   - impunity
   - immigration
-  :agency: DOL
-  :title: Chief Information Officer
-  :title_type: cio
-  :supervisory: true
-  :source:
+  agency: DOL
+  title: Chief Information Officer
+  title_type: cio
+  supervisory: true
+  source:
   - https://www.nextgov.com/people/2025/03/tts-director-tapped-serve-labor-cio/403855/
   - https://www.nextgov.com/people/2025/08/thomas-shedd-departs-labor-cio/407195/
-- :id: gsa-shedd-fraud
-  :type: demotion
-  :category: wrecker
-  :start_date: 2026-02-19
-  :start_date_truth: reported
-  :end_date: 2026-02-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :agency: GSA
-  :project:
+
+- id: gsa-shedd-fraud
+  type: demotion
+  category: wrecker
+  start_date: 2026-02-19
+  start_date_truth: reported
+  end_date: 2026-02-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  agency: GSA
+  project:
   - impunity
   - modernization
-  :title: Senior Advisor for Fraud Prevention
-  :title_type: advisor
-  :supervisory: false
-  :source:
+  title: Senior Advisor for Fraud Prevention
+  title_type: advisor
+  supervisory: false
+  source:
   - https://www.govexec.com/management/2026/02/federal-cio-tapped-dual-hatted-role-gsa/411543/
   - https://www.linkedin.com/in/thomasshedd/

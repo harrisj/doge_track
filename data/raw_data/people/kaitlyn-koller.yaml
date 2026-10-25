@@ -1,42 +1,46 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Kaitlyn Koller
-:slug: kaitlyn-koller
-:linkedin: https://www.linkedin.com/in/kaitlyn-koller-7792a1228/
-:sort_name: Koller
-:blurb: Kaitlyn Koller graduated from Marquette University in 2023 and had been involved
-  in conservative youth political organizations and been an intern for Senator Jim
-  Risch before working with Amy Gleason at USDS. More recently, she has been part
-  of the National Design Studio, likely in a communications or political role.
-:skill: political
-:college_graduation_year: 2023
-:positions:
-- :id: usds-koller
-  :agency: DOGE
-  :type: appointed
-  :category: support
-  :title: Senior Advisor
-  :title_type: advisor
-  :series: '0301'
-  :pay_grade: AD-00
-  :start_date: 2025-04-06
-  :start_date_truth: verified
-  :end_date: 2025-08-(26)~
-  :end_date_truth: reported
-  :end_type: resigned
-  :source:
+name: Kaitlyn Koller
+slug: kaitlyn-koller
+linkedin: https://www.linkedin.com/in/kaitlyn-koller-7792a1228/
+sort_name: Koller
+blurb: >-
+  Kaitlyn Koller graduated from Marquette University in 2023 and had been involved in conservative youth
+  political organizations and been an intern for Senator Jim Risch before working with Amy Gleason at
+  USDS. More recently, she has been part of the National Design Studio, likely in a communications or
+  political role.
+skill: political
+college_graduation_year: 2023
+positions:
+
+- id: usds-koller
+  agency: DOGE
+  type: appointed
+  category: support
+  title: Senior Advisor
+  title_type: advisor
+  series: '0301'
+  pay_grade: AD-00
+  start_date: 2025-04-06
+  start_date_truth: verified
+  end_date: 2025-08-(26)~
+  end_date_truth: reported
+  end_type: resigned
+  source:
   - https://www.wired.com/story/doge-operatives-joining-national-design-studio/
   - https://www.linkedin.com/in/kaitlyn-koller-7792a1228/
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
-- :id: nds-koller
-  :agency: NDS
-  :type: appointed
-  :category: support
-  :title: Director of Operations
-  :start_date: 2025-08-(26)~
-  :start_date_truth: reported
-  :sort_date: 2025-08-26
-  :project: modernization
-  :source:
+
+- id: nds-koller
+  agency: NDS
+  type: appointed
+  category: support
+  title: Director of Operations
+  start_date: 2025-08-(26)~
+  start_date_truth: reported
+  sort_date: 2025-08-26
+  project: modernization
+  source:
   - https://www.wired.com/story/doge-operatives-joining-national-design-studio/
   - https://www.notus.org/trump-white-house/silicon-valley-government-websites-national-design-studio
   - https://www.linkedin.com/in/kaitlyn-koller-7792a1228/

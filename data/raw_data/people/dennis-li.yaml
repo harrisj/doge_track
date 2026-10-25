@@ -1,21 +1,24 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Dennis Li
-:sort_name: Li
-:slug: dennis-li
-:skill: coder
-:linkedin: https://www.linkedin.com/in/lidennis/
-:blurb: A member of the National Design Studio who has been involved with the retirement
-  modernization work at OPM.
-:positions:
-- :id: opm-li
-  :agency: OPM
-  :type: appointed
-  :category: builder
-  :start_date: 2025-06-XX
-  :start_date_truth: inferred
-  :project: modernization
-  :table_note: Left prior job in May, December blog post said working past 6 months
-    on OPM project to digitize paper retirements. Although lists job as NDS, this
-    should be an OPM role.
-  :source:
+name: Dennis Li
+sort_name: Li
+slug: dennis-li
+skill: coder
+linkedin: https://www.linkedin.com/in/lidennis/
+blurb: >-
+  A member of the National Design Studio who has been involved with the retirement modernization work
+  at OPM.
+positions:
+
+- id: opm-li
+  agency: OPM
+  type: appointed
+  category: builder
+  start_date: 2025-06-XX
+  start_date_truth: inferred
+  project: modernization
+  table_note: >-
+    Left prior job in May, December blog post said working past 6 months on OPM project to digitize paper
+    retirements. Although lists job as NDS, this should be an OPM role.
+  source:
   - https://www.linkedin.com/in/lidennis/

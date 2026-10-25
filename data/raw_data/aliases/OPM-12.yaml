@@ -1,27 +1,32 @@
+# yaml-language-server: $schema=../schemas/aliases-file.json
 ---
-:id: OPM-12
-:agency: OPM
-:name: Christina Hanna
-:name_truth: verified
-:source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-:evidence:
+id: OPM-12
+agency: OPM
+name: Christina Hanna
+name_truth: verified
+source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
+evidence:
+
 - Granted access to USA Performance on 2/7
-- Based on start, likely could be Bryanne-Michelle Mlodzianowski, Christina Hanna
-  or Stephen Duarte
-- "[Govt reports left position on 2025-03-05](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf)"
-:positions:
-- :id: opm-employee-12
-  :type: appointed
-  :category: support
-  :agency: OPM
-  :start_date: 2025-02-03
-  :start_date_truth: inferred
-  :end_date: 2025-03-05
-  :end_date_truth: verified
-  :end_type: resigned
-  :same_as: opm-christina-hanna
-  :source:
+
+- Based on start, likely could be Bryanne-Michelle Mlodzianowski, Christina Hanna or Stephen Duarte
+
+- >-
+  [Govt reports left position on 2025-03-05](https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf)
+positions:
+
+- id: opm-employee-12
+  type: appointed
+  category: support
+  agency: OPM
+  start_date: 2025-02-03
+  start_date_truth: inferred
+  end_date: 2025-03-05
+  end_date_truth: verified
+  end_type: resigned
+  same_as: opm-christina-hanna
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-  :table_note: Start date guessed from system access.
+  table_note: Start date guessed from system access.

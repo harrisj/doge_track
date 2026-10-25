@@ -1,46 +1,50 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Scott Langmack
-:sort_name: Langmack
-:slug: scott-langmack
-:age: 66
-:blurb: According to his LinkedIn, Scott Langmack is also continuing to serve as the
-  CEO of Kukun, a real estate technology company, while he is also heading the DOGE
-  team at HUD. At HUD, he seems to have been focused mostly on searching for fraud
-  they're convinced is in the system and figuring out how to delete grants from HUD.
-  It's no coincidence that both of these missions will impact the poor and vulnerable
-  the most. More recently, he moved into a new role at OMB that is looking to apply
-  the AI-driven approach to deregulation across multiple agencies
-:skill: executive
-:linkedin: https://www.linkedin.com/in/scottlangmack/
-:positions:
-- :id: hud-langmack
-  :type: appointed
-  :category: wrecker
-  :start_date: 2025-02-10
-  :title: Senior Advisor
-  :title_type: advisor
-  :start_date_truth: reported
-  :end_date: 2025-07-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :project:
+name: Scott Langmack
+sort_name: Langmack
+slug: scott-langmack
+age: 66
+blurb: >-
+  According to his LinkedIn, Scott Langmack is also continuing to serve as the CEO of Kukun, a real estate
+  technology company, while he is also heading the DOGE team at HUD. At HUD, he seems to have been focused
+  mostly on searching for fraud they're convinced is in the system and figuring out how to delete grants
+  from HUD. It's no coincidence that both of these missions will impact the poor and vulnerable the most.
+  More recently, he moved into a new role at OMB that is looking to apply the AI-driven approach to deregulation
+  across multiple agencies
+skill: executive
+linkedin: https://www.linkedin.com/in/scottlangmack/
+positions:
+
+- id: hud-langmack
+  type: appointed
+  category: wrecker
+  start_date: 2025-02-10
+  title: Senior Advisor
+  title_type: advisor
+  start_date_truth: reported
+  end_date: 2025-07-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  project:
   - spending
   - fraud
   - deregulation
-  :table_note: assuming appointed, LinkedIn reports move to OMB
-  :source:
+  table_note: assuming appointed, LinkedIn reports move to OMB
+  source:
   - https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
   - https://www.linkedin.com/in/scottlangmack/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-  :salary: "$167,603"
-  :agency: HUD
-- :id: omb-langmack
-  :agency: OMB
-  :category: support
-  :type: appointed
-  :start_date: 2025-08-XX
-  :start_date_truth: self-reported
-  :title: Executive Director, Deregulation AI
-  :project: deregulation
-  :source:
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  salary: "$167,603"
+  agency: HUD
+
+- id: omb-langmack
+  agency: OMB
+  category: support
+  type: appointed
+  start_date: 2025-08-XX
+  start_date_truth: self-reported
+  title: Executive Director, Deregulation AI
+  project: deregulation
+  source:
   - https://www.linkedin.com/in/scottlangmack/

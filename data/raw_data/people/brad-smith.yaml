@@ -1,87 +1,95 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Brad Smith
-:sort_name: Smith
-:slug: brad-smith
-:age: 42
-:skill: executive
-:linkedin: https://www.linkedin.com/in/bradtedsmith/
-:blurb: A healthcare executive who served in the first administration, Brad Smith
-  kept a relatively low profile running DOGE operations within HHS. There, he mainly
-  was involved in organizing $67 billion in cuts and the large layoffs that eliminated
-  10,000 positions across the various agencies within HHS. He left HHS and DOGE about
-  a week before Elon Musk's departure, but he has apparently returned in August to
+name: Brad Smith
+sort_name: Smith
+slug: brad-smith
+age: 42
+skill: executive
+linkedin: https://www.linkedin.com/in/bradtedsmith/
+blurb: >-
+  A healthcare executive who served in the first administration, Brad Smith kept a relatively low profile
+  running DOGE operations within HHS. There, he mainly was involved in organizing $67 billion in cuts
+  and the large layoffs that eliminated 10,000 positions across the various agencies within HHS. He left
+  HHS and DOGE about a week before Elon Musk's departure, but he has apparently returned in August to
   work at the State Department.
-:affiliations:
-- :entity_id: boomerang
-  :role: member
-  :timeframe: after
-  :connection_truth: verified
-  :id: 46Wz0DP9
-:positions:
-- :id: doge-brad-smith
-  :type: appointed
-  :category: wrecker
-  :agency: DOGE
-  :start_date: 2025-01-20
-  :start_date_truth: verified
-  :end_date: 2025-06-11
-  :end_date_truth: verified
-  :end_type: resigned
-  :title: Senior Advisor
-  :title_type: advisor
-  :comment: identified as USDS detail on 2/13 declaration
-  :table_note: identified as dual appointee at HHS and DOGE / resigned on 6/11 and
-    returned to State Dept in August.
-  :source:
+affiliations:
+
+- entity_id: boomerang
+  role: member
+  timeframe: after
+  connection_truth: verified
+  id: 46Wz0DP9
+positions:
+
+- id: doge-brad-smith
+  type: appointed
+  category: wrecker
+  agency: DOGE
+  start_date: 2025-01-20
+  start_date_truth: verified
+  end_date: 2025-06-11
+  end_date_truth: verified
+  end_type: resigned
+  title: Senior Advisor
+  title_type: advisor
+  comment: identified as USDS detail on 2/13 declaration
+  table_note: >-
+    identified as dual appointee at HHS and DOGE / resigned on 6/11 and returned to State Dept in August.
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.82.3.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
-- :id: detail-doge-hhs-smith
-  :type: detailed
-  :category: wrecker
-  :agency: HHS
-  :from: DOGE
-  :from_truth: inferred
-  :start_date: 2025-02-XX
-  :start_date_truth: verified
-  :end_date: 2025-03-04
-  :end_date_truth: verified
-  :end_type: replaced
-  :project:
+
+- id: detail-doge-hhs-smith
+  type: detailed
+  category: wrecker
+  agency: HHS
+  from: DOGE
+  from_truth: inferred
+  start_date: 2025-02-XX
+  start_date_truth: verified
+  end_date: 2025-03-04
+  end_date_truth: verified
+  end_type: replaced
+  project:
   - spending
   - personnel
-  :replaced_by: hhs-brad-smith
-  :sort_date: 2025-02-02
-  :table_note: detail started before 2/13
-- :id: hhs-brad-smith
-  :agency: HHS
-  :category: wrecker
-  :type: converted
-  :title: Senior Advisor
-  :title_type: advisor
-  :start_date: 2025-03-04
-  :start_date_truth: verified
-  :end_date: 2025-05-23
-  :end_date_truth: reported
-  :end_type: resigned
-  :project:
+  replaced_by: hhs-brad-smith
+  sort_date: 2025-02-02
+  table_note: detail started before 2/13
+
+- id: hhs-brad-smith
+  agency: HHS
+  category: wrecker
+  type: converted
+  title: Senior Advisor
+  title_type: advisor
+  start_date: 2025-03-04
+  start_date_truth: verified
+  end_date: 2025-05-23
+  end_date_truth: reported
+  end_type: resigned
+  project:
   - spending
   - personnel
-  :table_note: resigned on 5/23 but returned to State dept in August
-  :comment: All I have is his signed SF-61
-  :salary: "$0"
-  :source:
+  table_note: resigned on 5/23 but returned to State dept in August
+  comment: All I have is his signed SF-61
+  salary: "$0"
+  source:
   - https://www.documentcloud.org/documents/26028816-onboard-hhs-brad-smith/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-- :id: state-brad-smith
-  :agency: State
-  :category: enabler
-  :type: appointed
-  :start_date: 2025-08-(12)~
-  :start_date_truth: reported
-  :sort_date: 2025-08-12
-  :supervisory: true
-  :table_note: some sort of leadership over global health division
-  :project:
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+
+- id: state-brad-smith
+  agency: State
+  category: enabler
+  type: appointed
+  start_date: 2025-08-(12)~
+  start_date_truth: reported
+  sort_date: 2025-08-12
+  supervisory: true
+  table_note: some sort of leadership over global health division
+  project:
   - spending
   - personnel
-  :source: https://www.semafor.com/article/08/12/2025/former-senior-doge-official-returns-to-the-trump-administration
+  source: >-
+    https://www.semafor.com/article/08/12/2025/former-senior-doge-official-returns-to-the-trump-administration

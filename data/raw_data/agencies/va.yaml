@@ -1,152 +1,175 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Veterans Administration
-:id: VA
-:short_name: VA
-:slug: va
-:page_slug: veterans
-:doge_base: true
-:events:
-- :date: 2025-02-04
-  :type: access
-  :event: A representative from DOGE was given access to contracting systems as well
-    as information on VA operations and information technology systems.
-  :fuzz: not named, but likely Justin Fulcher
-  :comment: likely Justin Fulcher
-  :source: https://www.military.com/daily-news/2025/02/05/elon-musk-aide-now-working-va-and-accessing-its-computer-systems.html
-  :linked:
+name: Veterans Administration
+id: VA
+short_name: VA
+slug: va
+page_slug: veterans
+doge_base: true
+events:
+
+- date: 2025-02-04
+  type: access
+  event: >-
+    A representative from DOGE was given access to contracting systems as well as information on VA operations
+    and information technology systems.
+  fuzz: not named, but likely Justin Fulcher
+  comment: likely Justin Fulcher
+  source: >-
+    https://www.military.com/daily-news/2025/02/05/elon-musk-aide-now-working-va-and-accessing-its-computer-systems.html
+  linked:
   - Justin Fulcher
-  :agency: VA
-  :id: aTnKGs75
-- :date: 2025-02-10
-  :type: disruption
-  :event: A day after a conservative activist flagged the DOGE account on X about
-    it, DOGE posts on its X.com account that it has removed gender identity options
-    from a specific online form at the VA.
-  :project:
+  agency: VA
+  id: aTnKGs75
+
+- date: 2025-02-10
+  type: disruption
+  event: >-
+    A day after a conservative activist flagged the DOGE account on X about it, DOGE posts on its X.com
+    account that it has removed gender identity options from a specific online form at the VA.
+  project:
   - dei
-  :source: https://www.nytimes.com/2025/02/26/us/politics/elon-musk-doge-x-accounts-activists.html
-  :agency: VA
-  :id: MDH97ZzS
-- :date: 2025-02-14
-  :type: directory
-  :named:
+  source: https://www.nytimes.com/2025/02/26/us/politics/elon-musk-doge-x-accounts-activists.html
+  agency: VA
+  id: MDH97ZzS
+
+- date: 2025-02-14
+  type: directory
+  named:
   - Justin Fulcher
-  :event: Bloomberg publishes some background information on Justin Fulcher, the DOGE
-    staffer working quietly at the VA, which questions the details of his backstory.
-  :source: https://www.livemint.com/companies/news/musks-top-doge-staffer-at-va-worked-quietly-before-its-layoffs-11739553094269.html
-  :agency: VA
-  :id: 2yiCepF3
-- :date: 2025-02-18
-  :type: oversight
-  :event: Senate Democrats send a letter to VA Secretary demanding more information
-    about DOGE's activities there.
-  :source: https://fedscoop.com/veterans-affairs-data-doge-elon-musk/
-  :agency: VA
-  :id: GAFoNPPJ
-- :date: 2025-02-25
-  :type: official
-  :event: VA Secretary Doug Collins posts a message to X claiming that DOGE had found
-    nearly $2 billion in contracts that could be eliminated. This figure will turn
-    out to include important contracts that should not have been cancelled and need
-    to be hastily restored.
-  :notable: true
-  :project: spending
-  :source: https://www.nytimes.com/2025/07/14/us/politics/va-savings-cuts-doge.html
-  :agency: VA
-  :id: 3TsSOGLO
-- :date: 2025-02-26
-  :type: disruption
-  :event: A day after posting it had found contracts to cancel, a top V.A. contracting
-    official sends an agency-wide email "PLEASE HALT ALL CONTRACT TERMINATIONS THAT
-    ARE IN PROGRESS" as leadership was re-considering the scope of its contract cancellations.
-  :project: spending
-  :source: https://www.nytimes.com/2025/07/14/us/politics/va-savings-cuts-doge.html
-  :agency: VA
-  :id: 1j9VkghD
-- :date: 2025-03-25
-  :source: https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
-  :type: directory
-  :event: Tech staffers and contractors noticed a new DOGE staffer, Sahil Lavingia,
-    was pushing code to a repo in the VA's Github instance. He also appeared to be
-    using an AI tool to write code. This later turns out to be code that is reviewing
-    contracts to be terminated.
-  :notable: true
-  :project:
+  event: >-
+    Bloomberg publishes some background information on Justin Fulcher, the DOGE staffer working quietly
+    at the VA, which questions the details of his backstory.
+  source: >-
+    https://www.livemint.com/companies/news/musks-top-doge-staffer-at-va-worked-quietly-before-its-layoffs-11739553094269.html
+  agency: VA
+  id: 2yiCepF3
+
+- date: 2025-02-18
+  type: oversight
+  event: >-
+    Senate Democrats send a letter to VA Secretary demanding more information about DOGE's activities
+    there.
+  source: https://fedscoop.com/veterans-affairs-data-doge-elon-musk/
+  agency: VA
+  id: GAFoNPPJ
+
+- date: 2025-02-25
+  type: official
+  event: >-
+    VA Secretary Doug Collins posts a message to X claiming that DOGE had found nearly $2 billion in contracts
+    that could be eliminated. This figure will turn out to include important contracts that should not
+    have been cancelled and need to be hastily restored.
+  notable: true
+  project: spending
+  source: https://www.nytimes.com/2025/07/14/us/politics/va-savings-cuts-doge.html
+  agency: VA
+  id: 3TsSOGLO
+
+- date: 2025-02-26
+  type: disruption
+  event: >-
+    A day after posting it had found contracts to cancel, a top V.A. contracting official sends an agency-wide
+    email "PLEASE HALT ALL CONTRACT TERMINATIONS THAT ARE IN PROGRESS" as leadership was re-considering
+    the scope of its contract cancellations.
+  project: spending
+  source: https://www.nytimes.com/2025/07/14/us/politics/va-savings-cuts-doge.html
+  agency: VA
+  id: 1j9VkghD
+
+- date: 2025-03-25
+  source: https://www.wired.com/story/doge-department-of-veterans-affairs-ai/
+  type: directory
+  event: >-
+    Tech staffers and contractors noticed a new DOGE staffer, Sahil Lavingia, was pushing code to a repo
+    in the VA's Github instance. He also appeared to be using an AI tool to write code. This later turns
+    out to be code that is reviewing contracts to be terminated.
+  notable: true
+  project:
   - modernization
   - spending
-  :named:
+  named:
   - Sahil Lavingia
   - Cary Volpert
   - Christopher Roussos
   - Justin Fulcher
   - Payton Rehling
   - Jon Koval
-  :agency: VA
-  :id: ja9gwcUS
-- :date: 2025-05-08
-  :type: report
-  :event: Fast Company runs an interview with Sahil Lavingia, who is promptly fired
-    by DOGE the following day.
-  :source: https://www.fastcompany.com/91330297/doge-sahil-lavignia-gumroad
-  :named:
+  agency: VA
+  id: ja9gwcUS
+
+- date: 2025-05-08
+  type: report
+  event: Fast Company runs an interview with Sahil Lavingia, who is promptly fired by DOGE the following
+    day.
+  source: https://www.fastcompany.com/91330297/doge-sahil-lavignia-gumroad
+  named:
   - Sahil Lavingia
-  :agency: VA
-  :id: 520nNb7r
-- :date: 2025-05-13
-  :type: disruption
-  :event: A new memo from the acting principal director for acquisitions at the VA
-    declares that all new contracts for information technology and professional services
-    or any other contract for more than $10 million must be approved first by either
-    Christopher Roussos or Cary Volpert. In addition, they are now required to send
-    weekly reports to both of the DOGE representatives.
-  :notable: true
-  :project: spending
-  :named:
+  agency: VA
+  id: 520nNb7r
+
+- date: 2025-05-13
+  type: disruption
+  event: >-
+    A new memo from the acting principal director for acquisitions at the VA declares that all new contracts
+    for information technology and professional services or any other contract for more than $10 million
+    must be approved first by either Christopher Roussos or Cary Volpert. In addition, they are now required
+    to send weekly reports to both of the DOGE representatives.
+  notable: true
+  project: spending
+  named:
   - Cary Volpert
   - Christopher Roussos
-  :agency: VA
-  :source: https://federalnewsnetwork.com/veterans-affairs/2025/05/va-sets-new-rules-for-contracts-worth-more-than-10-million/
-  :id: 20Efrh5C
-- :date: 2025-06-06
-  :type: report
-  :event: ProPublica analyzes public code by Sahil Lavingia for an AI-powered tool
-    to evaluate contracts at the VA and determine which ones are "munchable" (meaning
-    they should be canceled). The analysis finds the AI was given poor instructions
-    and lacks context to correctly make these decisions.
-  :project:
+  agency: VA
+  source: >-
+    https://federalnewsnetwork.com/veterans-affairs/2025/05/va-sets-new-rules-for-contracts-worth-more-than-10-million/
+  id: 20Efrh5C
+
+- date: 2025-06-06
+  type: report
+  event: >-
+    ProPublica analyzes public code by Sahil Lavingia for an AI-powered tool to evaluate contracts at
+    the VA and determine which ones are "munchable" (meaning they should be canceled). The analysis finds
+    the AI was given poor instructions and lacks context to correctly make these decisions.
+  project:
   - spending
   - modernization
-  :named:
+  named:
   - Sahil Lavingia
-  :source: https://www.propublica.org/article/inside-ai-tool-doge-veterans-affairs-contracts-sahil-lavingia
-  :agency: VA
-  :id: 7C9WQbvz
-- :date: 2025-06-25
-  :agency: VA
-  :type: oversight
-  :event: Democratic Congressman Mark Takano sends an angry letter to Secretary Collins
-    of the VA demanding answers about DOGE activities including if they have installed
-    spyware on agency machines, if they have been piloting AI, and if they have accessed
-    medical records. He also asks for detailed information on DOGE staff at the agency.
-  :project:
+  source: https://www.propublica.org/article/inside-ai-tool-doge-veterans-affairs-contracts-sahil-lavingia
+  agency: VA
+  id: 7C9WQbvz
+
+- date: 2025-06-25
+  agency: VA
+  type: oversight
+  event: >-
+    Democratic Congressman Mark Takano sends an angry letter to Secretary Collins of the VA demanding
+    answers about DOGE activities including if they have installed spyware on agency machines, if they
+    have been piloting AI, and if they have accessed medical records. He also asks for detailed information
+    on DOGE staff at the agency.
+  project:
   - personnel
   - modernization
-  :named:
+  named:
   - Justin Fulcher
   - Sahil Lavingia
   - Christopher Roussos
   - Payton Rehling
   - Cary Volpert
   - Jon Koval
-  :source: https://www.stripes.com/veterans/2025-06-27/veterans-spyware-doge-18265276.html
-  :id: 5h6D4Qhp
-- :date: 2025-07-07
-  :type: disruption
-  :event: An unidentified DOGE team member used the official DOGE VA account on X.com
-    to send a direct message ridiculing a Republican donor who had proposed the imaginary
-    "DOGE Dividend Check" for turning against Musk and  creating an anti-Musk SuperPAC.
-    According to the administration, that person no longer works for the VA.
-  :project: impunity
-  :source: https://www.politico.com/news/2025/07/07/white-house-looks-into-rogue-musk-loyalist-who-used-a-doge-account-to-dm-anti-elon-activist-00441688
-  :agency: VA
-  :id: 2lsi7ErJ
+  source: https://www.stripes.com/veterans/2025-06-27/veterans-spyware-doge-18265276.html
+  id: 5h6D4Qhp
+
+- date: 2025-07-07
+  type: disruption
+  event: >-
+    An unidentified DOGE team member used the official DOGE VA account on X.com to send a direct message
+    ridiculing a Republican donor who had proposed the imaginary "DOGE Dividend Check" for turning against
+    Musk and  creating an anti-Musk SuperPAC. According to the administration, that person no longer works
+    for the VA.
+  project: impunity
+  source: >-
+    https://www.politico.com/news/2025/07/07/white-house-looks-into-rogue-musk-loyalist-who-used-a-doge-account-to-dm-anti-elon-activist-00441688
+  agency: VA
+  id: 2lsi7ErJ

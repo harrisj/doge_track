@@ -1,187 +1,205 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Inter-American Foundation
-:id: IAF
-:short_name: IAF
-:page_slug: independent#eo1
-:slug: iaf
-:events:
-- :date: 2025-02-20
-  :type: sighting
-  :event: IAF President Sara Aviel learns that DOGE will be visiting her agency. That
-    afternoon, she meets Nate Cavanaugh and Ethan Shaotran who both introduce themselves
-    as GSA employees. They showed little interest in a discussion on efficiency initiatives
-    at the agency and stated they just wanted access to systems.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
-  :named:
+name: Inter-American Foundation
+id: IAF
+short_name: IAF
+page_slug: independent#eo1
+slug: iaf
+events:
+
+- date: 2025-02-20
+  type: sighting
+  event: >-
+    IAF President Sara Aviel learns that DOGE will be visiting her agency. That afternoon, she meets Nate
+    Cavanaugh and Ethan Shaotran who both introduce themselves as GSA employees. They showed little interest
+    in a discussion on efficiency initiatives at the agency and stated they just wanted access to systems.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  named:
   - Nate Cavanaugh
   - Ethan Shaotran
-  :case_no: 1:25-cv-00778
-  :agency: IAF
-  :id: 431d9XI3
-- :date: 2025-02-21
-  :type: disruption
-  :event: IAF CEO Sara Aviel confirms to a friend at USADF that DOGE plans to dismantle
-    the agency.
-  :project: elimination
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
-  :case_no: 1:25-cv-00660
-  :agency: IAF
-  :id: 3GLAQY5f
-- :date: 2025-02-24
-  :type: report
-  :event: The IAF President Sara Aviel confers with the board of the IAF and aliies
-    in Congress who inform her that a Reduction-in-Force (RIF) layoff would be in
-    contravention of appropriations already enacted into law.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
-  :case_no: 1:25-cv-00778
-  :agency: IAF
-  :id: 5BH8pXk4
-- :date: 2025-02-24
-  :type: disruption
-  :notable: true
-  :event: The IAF President Sara Aviel joins a call with Nate Cavanaugh and Jacob
-    Altik, who claim that all but one of the board members have been terminated. They
-    demand that Aviel approves DOGE's plan for the agency – which she declines to
-    do – and that she sign a Memorandum of Understanding (MOU) assigning a DOGE member
-    to the agency and granting them access to systems. After the call, she confirms
-    that no board members had received a termination notice.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
-  :project:
+  case_no: 1:25-cv-00778
+  agency: IAF
+  id: 431d9XI3
+
+- date: 2025-02-21
+  type: disruption
+  event: IAF CEO Sara Aviel confirms to a friend at USADF that DOGE plans to dismantle the agency.
+  project: elimination
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+  case_no: 1:25-cv-00660
+  agency: IAF
+  id: 3GLAQY5f
+
+- date: 2025-02-24
+  type: disruption
+  notable: true
+  event: >-
+    The IAF President Sara Aviel joins a call with Nate Cavanaugh and Jacob Altik, who claim that all
+    but one of the board members have been terminated. They demand that Aviel approves DOGE's plan for
+    the agency – which she declines to do – and that she sign a Memorandum of Understanding (MOU) assigning
+    a DOGE member to the agency and granting them access to systems. After the call, she confirms that
+    no board members had received a termination notice.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  project:
   - elimination
   - impunity
-  :case_no: 1:25-cv-00778
-  :agency: IAF
-  :id: 2qZVmknt
-- :date: 2025-02-26
-  :type: disruption
-  :event: IAF President Sara Aviel receives an email from White House Deputy Director
-    of Presidential Personnel Trent Morse informing her that President Trump has now
-    terminated her position.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.6_1.pdf
-  :project:
+  case_no: 1:25-cv-00778
+  agency: IAF
+  id: 2qZVmknt
+
+- date: 2025-02-24
+  type: report
+  event: >-
+    The IAF President Sara Aviel confers with the board of the IAF and aliies in Congress who inform her
+    that a Reduction-in-Force (RIF) layoff would be in contravention of appropriations already enacted
+    into law.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  case_no: 1:25-cv-00778
+  agency: IAF
+  id: 5BH8pXk4
+
+- date: 2025-02-26
+  type: disruption
+  event: >-
+    IAF President Sara Aviel receives an email from White House Deputy Director of Presidential Personnel
+    Trent Morse informing her that President Trump has now terminated her position.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.6_1.pdf
+  project:
   - spending
   - elimination
-  :case_no: 1:25-cv-00778
-  :agency: IAF
-  :id: 1x0KLZpR
-- :date: 2025-02-28
-  :type: disruption
-  :event: White House Deputy Trent Morse sends an email to the office director at
-    the IAF which states that Peter Marocco has been appointed the acting Chairman
-    for the agency.
-  :named:
+  case_no: 1:25-cv-00778
+  agency: IAF
+  id: 1x0KLZpR
+
+- date: 2025-02-28
+  type: disruption
+  event: >-
+    White House Deputy Trent Morse sends an email to the office director at the IAF which states that
+    Peter Marocco has been appointed the acting Chairman for the agency.
+  named:
   - Trent Morse
   - Peter Marocco
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.9_1.pdf
-  :case_no: 1:25-cv-00778
-  :agency: IAF
-  :id: 3bCDhPDD
-- :date: 2025-02-28
-  :type: disruption
-  :event: Peter Marocco convenes an emergency board meeting (where the emergency is
-    that Trump issued an executive order), asserting that means he can avoid the mandatory
-    1-week notification to the board of the agency. In attendance at the meeting are
-    Ethan Shaotran and Nate Cavanaugh. This is where he declares himself the new President
-    and Acting CIO of the IAF.
-  :notable: true
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.10_1.pdf
-  :case_no: 1:25-cv-00778
-  :agency: IAF
-  :named:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.9_1.pdf
+  case_no: 1:25-cv-00778
+  agency: IAF
+  id: 3bCDhPDD
+
+- date: 2025-02-28
+  type: disruption
+  event: >-
+    Peter Marocco convenes an emergency board meeting (where the emergency is that Trump issued an executive
+    order), asserting that means he can avoid the mandatory 1-week notification to the board of the agency.
+    In attendance at the meeting are Ethan Shaotran and Nate Cavanaugh. This is where he declares himself
+    the new President and Acting CIO of the IAF.
+  notable: true
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.10_1.pdf
+  case_no: 1:25-cv-00778
+  agency: IAF
+  named:
   - Peter Marocco
   - Ethan Shaotran
   - Nate Cavanaugh
-  :id: 6VRWYSuW
-- :date: 2025-03-04
-  :type: disruption
-  :notable: true
-  :event: Peter Marocco announces himself to staff at IAF as President/CEO. He then
-    begins immediately dismantling all contracts and places all staff on administrative
-    leave for 30 days to prevent them from interfering or monitoring DOGE's actions
-    at the agency.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
-  :project:
+  id: 6VRWYSuW
+
+- date: 2025-03-04
+  type: disruption
+  event: DOGE takes the Inter-American Foundation's website offline.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  project: elimination
+  case_no: 1:25-cv-00778
+  agency: IAF
+  id: 3od3PFqF
+
+- date: 2025-03-04
+  type: disruption
+  event: >-
+    Peter Marocco sends emails to all grantees terminating all of IAF's existing grants except for a single
+    one that was almost completely disbursed by that point.
+  named:
+  - Peter Marocco
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  project:
+  - elimination
+  - spending
+  case_no: 1:25-cv-00778
+  agency: IAF
+  id: 7jnfoDik
+
+- date: 2025-03-04
+  type: disruption
+  event: >-
+    DOGE brags on its X account that the Inter-American Foundation (IAF) has been reduced to a single
+    employee.
+  source: https://xcancel.com/DOGE/status/1897023739960680843
+  notable: true
+  project:
+  - elimination
+  agency: IAF
+  id: XfnndZuf
+
+- date: 2025-03-04
+  type: disruption
+  notable: true
+  event: >-
+    Peter Marocco announces himself to staff at IAF as President/CEO. He then begins immediately dismantling
+    all contracts and places all staff on administrative leave for 30 days to prevent them from interfering
+    or monitoring DOGE's actions at the agency.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278118/gov.uscourts.dcd.278118.7.3.pdf
+  project:
   - spending
   - elimination
   - impunity
-  :case_no: 1:25-cv-00778
-  :agency: IAF
-  :named:
+  case_no: 1:25-cv-00778
+  agency: IAF
+  named:
   - Peter Marocco
-  :id: kdrdnrsa
-- :date: 2025-03-04
-  :type: disruption
-  :event: DOGE brags on its X account that the Inter-American Foundation (IAF) has
-    been reduced to a single employee.
-  :source: https://xcancel.com/DOGE/status/1897023739960680843
-  :notable: true
-  :project:
-  - elimination
-  :agency: IAF
-  :id: XfnndZuf
-- :date: 2025-03-04
-  :type: disruption
-  :event: DOGE takes the Inter-American Foundation's website offline.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
-  :project: elimination
-  :case_no: 1:25-cv-00778
-  :agency: IAF
-  :id: 3od3PFqF
-- :date: 2025-03-04
-  :type: disruption
-  :event: Peter Marocco sends emails to all grantees terminating all of IAF's existing
-    grants except for a single one that was almost completely disbursed by that point.
-  :named:
-  - Peter Marocco
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
-  :project:
-  - elimination
-  - spending
-  :case_no: 1:25-cv-00778
-  :agency: IAF
-  :id: 7jnfoDik
-- :date: 2025-03-(05)~
-  :type: disruption
-  :event: Peter Marocco names the remaining single employee not on admininstrative
-    leave at the agency, the Chief Information Security Officer, as the new President
-    of the Inter-American Foundation.
-  :notable: true
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
-  :project: elimination
-  :case_no: 1:25-cv-00778
-  :agency: IAF
-  :id: 3FMvKeDT
-- :date: 2025-03-10
-  :type: onboard
-  :event: The Trump Administration nominates Kenneth Jackson and Russell Vought to
-    be on the board of the IAF.
-  :named:
+  id: kdrdnrsa
+
+- date: 2025-03-(05)~
+  type: disruption
+  event: >-
+    Peter Marocco names the remaining single employee not on admininstrative leave at the agency, the
+    Chief Information Security Officer, as the new President of the Inter-American Foundation.
+  notable: true
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  project: elimination
+  case_no: 1:25-cv-00778
+  agency: IAF
+  id: 3FMvKeDT
+
+- date: 2025-03-10
+  type: onboard
+  event: The Trump Administration nominates Kenneth Jackson and Russell Vought to be on the board of the
+    IAF.
+  named:
   - Kenneth Jackson
   - Russell Vought
-  :source: https://www.senate.gov/legislative/LIS/executive_calendar/xcalv.pdf
-  :agency: IAF
-  :id: gpJzqYTy
-- :date: 2025-04-04
-  :type: legal
-  :event: A judge grants an injunction and orders that IAF President Sara Aviel must
-    be reinstated as the president of the IAF while her lawsuit proceeds against the
-    administration.
-  :source: https://thehill.com/regulation/court-battles/5233012-inter-american-foundation-trump-blocked/
-  :project: elimination
-  :case_no: 1:25-cv-00778
-  :agency: IAF
-  :id: 5X4SGtZV
-- :date: 2025-04-04
-  :type: legal
-  :event: Sara Aviel discovers that a `team@iaf.gov` created for the use of Ethan
-    Shaotran and Nate Cavanaugh had deactivated the admin access for the remaining
-    IAF employee the day before Aviel's return by orders of a court as President of
-    the agency.
-  :named:
+  source: https://www.senate.gov/legislative/LIS/executive_calendar/xcalv.pdf
+  agency: IAF
+  id: gpJzqYTy
+
+- date: 2025-04-04
+  type: legal
+  event: >-
+    A judge grants an injunction and orders that IAF President Sara Aviel must be reinstated as the president
+    of the IAF while her lawsuit proceeds against the administration.
+  source: https://thehill.com/regulation/court-battles/5233012-inter-american-foundation-trump-blocked/
+  project: elimination
+  case_no: 1:25-cv-00778
+  agency: IAF
+  id: 5X4SGtZV
+
+- date: 2025-04-04
+  type: legal
+  event: >-
+    Sara Aviel discovers that a `team@iaf.gov` created for the use of Ethan Shaotran and Nate Cavanaugh
+    had deactivated the admin access for the remaining IAF employee the day before Aviel's return by orders
+    of a court as President of the agency.
+  named:
   - Ethan Shaotran
   - Nate Cavanaugh
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
-  :project: personnel
-  :case_no: 1:25-cv-00778
-  :agency: IAF
-  :id: 6dgqQSWL
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  project: personnel
+  case_no: 1:25-cv-00778
+  agency: IAF
+  id: 6dgqQSWL

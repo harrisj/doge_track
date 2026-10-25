@@ -1,22 +1,25 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: National Archives
-:id: NARA
-:short_name: NARA
-:slug: nara
-:page_slug: independent#nara
-:events:
-- :date: 2025-02-07
-  :type: disruption
-  :event: President Trump dismisses the Archivist of the United States, the head of
-    the National Archives and the chief official responsible for preserving government
-    records. Marco Rubio is named the Acting Archivist.
-  :notable: true
-  :named:
+name: National Archives
+id: NARA
+short_name: NARA
+slug: nara
+page_slug: independent#nara
+events:
+
+- date: 2025-02-07
+  type: disruption
+  event: >-
+    President Trump dismisses the Archivist of the United States, the head of the National Archives and
+    the chief official responsible for preserving government records. Marco Rubio is named the Acting
+    Archivist.
+  notable: true
+  named:
   - Marco Rubio
-  :project:
+  project:
   - impunity
-  :source:
+  source:
   - https://www.cbsnews.com/news/trump-fires-archivist-of-the-united-states-colleen-shogan/
   - https://www.foxnews.com/politics/rubio-named-acting-director-another-us-government-agency-report
-  :agency: NARA
-  :id: 4pktRrRB
+  agency: NARA
+  id: 4pktRrRB

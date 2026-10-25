@@ -1,131 +1,151 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Environmental Protection Agency
-:id: EPA
-:short_name: EPA
-:slug: epa
-:page_slug: epa
-:blurb: Long vilified by conservatives as the face of the regulatory state, the Environmental
-  Protection Agency was of course one of DOGE's early targets. DOGE's main activities
-  at the agency have been focused on reducing the agency's effectiveness through layoffs
-  and eliminating contracts. I would expect they will also turn to eliminating regulations,
-  but their activities at the agency have not been heavily covered.
-:doge_base: true
-:events:
-- :date: 2025-02-04
-  :type: sighting
-  :event: Cole Killian appears in an EPA internal directory as a "Federal Detailee"
-    (under his legal name Gautier Killian).
-  :named:
+name: Environmental Protection Agency
+id: EPA
+short_name: EPA
+slug: epa
+page_slug: epa
+blurb: >-
+  Long vilified by conservatives as the face of the regulatory state, the Environmental Protection Agency
+  was of course one of DOGE's early targets. DOGE's main activities at the agency have been focused on
+  reducing the agency's effectiveness through layoffs and eliminating contracts. I would expect they will
+  also turn to eliminating regulations, but their activities at the agency have not been heavily covered.
+doge_base: true
+events:
+
+- date: 2025-02-04
+  type: sighting
+  event: >-
+    Cole Killian appears in an EPA internal directory as a "Federal Detailee" (under his legal name Gautier
+    Killian).
+  named:
   - Cole Killian
-  :source: https://www.eenews.net/articles/doge-aide-pops-up-in-epa-staff-directory/
-  :agency: EPA
-  :id: EP9BFiD7
-- :date: 2025-02-07
-  :type: disruption
-  :project: personnel
-  :event: 168 employees who worked on environmental justice at the EPA are placed
-    on indefinite administrative leave.
-  :source: https://subscriber.politicopro.com/article/eenews/2025/02/07/epas-environmental-justice-office-in-tatters-00203091
-  :agency: EPA
-  :id: 4ufoGsXw
-- :date: 2025-02-11
-  :type: disruption
-  :event: Kathryn Armstrong Loving sends the EPA administrator a list of contracts
-    that DOGE wants to eliminate and she includes Cole Killian on her message.
-  :project: spending
-  :named:
+  source: https://www.eenews.net/articles/doge-aide-pops-up-in-epa-staff-directory/
+  agency: EPA
+  id: EP9BFiD7
+
+- date: 2025-02-07
+  type: disruption
+  project: personnel
+  event: >-
+    168 employees who worked on environmental justice at the EPA are placed on indefinite administrative
+    leave.
+  source: >-
+    https://subscriber.politicopro.com/article/eenews/2025/02/07/epas-environmental-justice-office-in-tatters-00203091
+  agency: EPA
+  id: 4ufoGsXw
+
+- date: 2025-02-11
+  type: disruption
+  event: >-
+    Kathryn Armstrong Loving sends the EPA administrator a list of contracts that DOGE wants to eliminate
+    and she includes Cole Killian on her message.
+  project: spending
+  named:
   - Kathryn Armstrong Loving
   - Cole Killian
-  :source: https://www.eenews.net/articles/legal-docs-show-doge-at-work-inside-epa/
-  :agency: EPA
-  :id: 47eCWG67
-- :date: 2025-02-14
-  :type: disruption
-  :event: 388 probationary employees are fired at the EPA.
-  :project: personnel
-  :source: https://www.eenews.net/articles/epa-pushes-out-almost-500-probationary-employees/
-  :agency: EPA
-  :id: Keg9aWVE
-- :date: 2025-03-03
-  :type: disruption
-  :agency: EPA
-  :project: impunity
-  :event: The EPA takes its staff directory offline after it had been used to identify
-    new political appointees and DOGE staffers that were detailed to the agency.
-  :source: https://www.eenews.net/articles/epa-takes-down-its-staff-directory/
-  :id: hZZSlAHP
-- :date: 2025-03-04
-  :type: official
-  :event: Erica Jehling pushes for the cancellation of 21 grants at the EPA to reduce
-    greenhouse gas emissions in construction materials, so that she can post a tweet
-    on the EPA X.com account to celebrate it. She cc's Kathryn Armstrong Loving on
-    her emails coordinating the cancellations.
-  :notable: true
-  :project: spending
-  :named:
+  source: https://www.eenews.net/articles/legal-docs-show-doge-at-work-inside-epa/
+  agency: EPA
+  id: 47eCWG67
+
+- date: 2025-02-14
+  type: disruption
+  event: 388 probationary employees are fired at the EPA.
+  project: personnel
+  source: https://www.eenews.net/articles/epa-pushes-out-almost-500-probationary-employees/
+  agency: EPA
+  id: Keg9aWVE
+
+- date: 2025-03-03
+  type: disruption
+  agency: EPA
+  project: impunity
+  event: >-
+    The EPA takes its staff directory offline after it had been used to identify new political appointees
+    and DOGE staffers that were detailed to the agency.
+  source: https://www.eenews.net/articles/epa-takes-down-its-staff-directory/
+  id: hZZSlAHP
+
+- date: 2025-03-04
+  type: official
+  event: >-
+    Erica Jehling pushes for the cancellation of 21 grants at the EPA to reduce greenhouse gas emissions
+    in construction materials, so that she can post a tweet on the EPA X.com account to celebrate it.
+    She cc's Kathryn Armstrong Loving on her emails coordinating the cancellations.
+  notable: true
+  project: spending
+  named:
   - Erica Jehling
   - Kathryn Armstrong Loving
-  :agency: EPA
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.scd.301710/gov.uscourts.scd.301710.109.2_2.pdf
-  :case_no: 2:25-cv-02152
-  :id: 4Yfmasz5
-- :date: 2025-03-27
-  :type: interagency
-  :event: The EPA administrator's public calendar includes a "Meeting w/ Elon Musk
-    West Wing 221" at 6:30pm. Musk reportedly did not attend.
-  :interagency_doge_reps:
-    :DOGE: Elon Musk
-  :agency: EPA
-  :source: https://www.eenews.net/articles/zeldin-schedule-shows-doge-huddle-mobile-van-media-hits/
-  :id: 6oE47sYI
-- :date: 2025-04-08
-  :type: report
-  :event: Employees at the EPA report being told by Trump-appointed officials that
-    DOGE was using AI to monitor communication tools (including Microsoft Teams) for
-    anti-Trump or anti-Musk language.
-  :notable: true
-  :project:
+  agency: EPA
+  source: https://storage.courtlistener.com/recap/gov.uscourts.scd.301710/gov.uscourts.scd.301710.109.2_2.pdf
+  case_no: 2:25-cv-02152
+  id: 4Yfmasz5
+
+- date: 2025-03-27
+  type: interagency
+  event: >-
+    The EPA administrator's public calendar includes a "Meeting w/ Elon Musk West Wing 221" at 6:30pm.
+    Musk reportedly did not attend.
+  interagency_doge_reps:
+    DOGE: Elon Musk
+  agency: EPA
+  source: https://www.eenews.net/articles/zeldin-schedule-shows-doge-huddle-mobile-van-media-hits/
+  id: 6oE47sYI
+
+- date: 2025-04-08
+  type: report
+  event: >-
+    Employees at the EPA report being told by Trump-appointed officials that DOGE was using AI to monitor
+    communication tools (including Microsoft Teams) for anti-Trump or anti-Musk language.
+  notable: true
+  project:
   - modernization
   - personnel
-  :source: https://www.reuters.com/technology/artificial-intelligence/musks-doge-using-ai-snoop-us-federal-workers-sources-say-2025-04-08/
-  :agency: EPA
-  :id: XsVQoQhn
-- :date: 2025-05-02
-  :type: official
-  :event: Carl Coe, the leader of the DOGE team at the EPA, is named as the Chief
-    of Staff at the EPA.
-  :named:
+  source: >-
+    https://www.reuters.com/technology/artificial-intelligence/musks-doge-using-ai-snoop-us-federal-workers-sources-say-2025-04-08/
+  agency: EPA
+  id: XsVQoQhn
+
+- date: 2025-05-02
+  type: official
+  event: Carl Coe, the leader of the DOGE team at the EPA, is named as the Chief of Staff at the EPA.
+  named:
   - Carl Coe
-  :source: https://www.energy.gov/articles/doe-announces-new-leadership-tackle-challenges-growing-energy-demand
-  :agency: EPA
-  :id: 6JGAVDbu
-- :date: 2025-06-30
-  :type: report
-  :event: More than 270 employees at the EPA sign a public letter condemning the Trump
-    administration and agency head Lee Zeldin for politicizing the agency and dismantling
-    its effectiveness.
-  :source: https://www.nytimes.com/2025/06/30/climate/epa-employees-warning-letter.html
-  :agency: EPA
-  :id: RWByC6oC
-- :date: 2025-07-03
-  :type: disruption
-  :event: The Environmental Protection Agency places 144 employees on administrative
-    leave and threatens to open an investigation over them signing an open letter
-    criticizing the agency's actions.
-  :project: personnel
-  :source: https://www.nytimes.com/2025/07/03/climate/epa-letter-administrative-leave.html
-  :agency: EPA
-  :id: 6ZRvs4q6
-- :date: 2026-03-12
-  :type: oversight
-  :event: The Inspector General for the EPA releases a report faulting the agency
-    for firing too much of its workforce so that it is unable to handle the growing
-    backlog of grants. The Trump administration countered that there should be a complementary
-    reduction in grants to match, but that has not happened so far.
-  :notable: true
-  :project:
+  source: https://www.energy.gov/articles/doe-announces-new-leadership-tackle-challenges-growing-energy-demand
+  agency: EPA
+  id: 6JGAVDbu
+
+- date: 2025-06-30
+  type: report
+  event: >-
+    More than 270 employees at the EPA sign a public letter condemning the Trump administration and agency
+    head Lee Zeldin for politicizing the agency and dismantling its effectiveness.
+  source: https://www.nytimes.com/2025/06/30/climate/epa-employees-warning-letter.html
+  agency: EPA
+  id: RWByC6oC
+
+- date: 2025-07-03
+  type: disruption
+  event: >-
+    The Environmental Protection Agency places 144 employees on administrative leave and threatens to
+    open an investigation over them signing an open letter criticizing the agency's actions.
+  project: personnel
+  source: https://www.nytimes.com/2025/07/03/climate/epa-letter-administrative-leave.html
+  agency: EPA
+  id: 6ZRvs4q6
+
+- date: 2026-03-12
+  type: oversight
+  event: >-
+    The Inspector General for the EPA releases a report faulting the agency for firing too much of its
+    workforce so that it is unable to handle the growing backlog of grants. The Trump administration countered
+    that there should be a complementary reduction in grants to match, but that has not happened so far.
+  notable: true
+  project:
   - spending
   - personnel
-  :source: https://www.govexec.com/workforce/2026/03/epa-says-it-will-slash-workload-after-ig-flags-slashed-workforce-overburdened/412100/
-  :agency: EPA
-  :id: 78dyWhBs
+  source: >-
+    https://www.govexec.com/workforce/2026/03/epa-says-it-will-slash-workload-after-ig-flags-slashed-workforce-overburdened/412100/
+  agency: EPA
+  id: 78dyWhBs

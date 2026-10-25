@@ -1,45 +1,50 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Andrew Vilcsak
-:sort_name: Vilcsak
-:slug: andrew-vilcsak
-:skill: coder
-:linkedin: https://www.linkedin.com/in/vilcsak/
-:tech_links:
+name: Andrew Vilcsak
+sort_name: Vilcsak
+slug: andrew-vilcsak
+skill: coder
+linkedin: https://www.linkedin.com/in/vilcsak/
+tech_links:
+
 - Airbnb
-:blurb: Coming from Airbnb, he is working alongside fellow alumni Yat Choi and Joe
-  Gebbia on finishing the project to digitize OPM's Online Retirement Application
-  system and rush it into production as a DOGE win. Like Yat Choi, he also appears
-  to be Canadian which would disqualify him from working for the federal government,
-  so he has been hired as a contractor instead. At AirBnb, he was involved in the
-  Samara project that was also Joe Gebbia's interest.
-:affiliations:
-- :entity_id: airbnb
-  :timeframe: before
-  :role: employee
-  :start_date: 2010-05-XX
-  :start_date_truth: self-reported
-  :end_date: 2017-05-XX
-  :end_date_truth: self-reported
-  :connection_truth: self-reported
-  :source: https://www.linkedin.com/in/vilcsak
-  :id: 3mHAueTI
-:positions:
-- :id: opm-vilcsak
-  :agency: OPM
-  :category: builder
-  :type: consultant
-  :sort_date: 2025-08-16
-  :table_note: Named as working alongside Airbnb alumni at OPM.
-  :project: modernization
-  :source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
-- :id: gsa-vilcsak
-  :agency: GSA
-  :type: consultant
-  :category: builder
-  :table_note: Hired as contractor from MSI Consulting
-  :start_date: 2025-08-XX
-  :start_date_truth: guessed
-  :sort_date: 2025-08-15
-  :source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
-  :title: Senior Technologist
-  :title_type: advisor
+blurb: >-
+  Coming from Airbnb, he is working alongside fellow alumni Yat Choi and Joe Gebbia on finishing the project
+  to digitize OPM's Online Retirement Application system and rush it into production as a DOGE win. Like
+  Yat Choi, he also appears to be Canadian which would disqualify him from working for the federal government,
+  so he has been hired as a contractor instead. At AirBnb, he was involved in the Samara project that
+  was also Joe Gebbia's interest.
+affiliations:
+
+- entity_id: airbnb
+  timeframe: before
+  role: employee
+  start_date: 2010-05-XX
+  start_date_truth: self-reported
+  end_date: 2017-05-XX
+  end_date_truth: self-reported
+  connection_truth: self-reported
+  source: https://www.linkedin.com/in/vilcsak
+  id: 3mHAueTI
+positions:
+
+- id: opm-vilcsak
+  agency: OPM
+  category: builder
+  type: consultant
+  sort_date: 2025-08-16
+  table_note: Named as working alongside Airbnb alumni at OPM.
+  project: modernization
+  source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
+
+- id: gsa-vilcsak
+  agency: GSA
+  type: consultant
+  category: builder
+  table_note: Hired as contractor from MSI Consulting
+  start_date: 2025-08-XX
+  start_date_truth: guessed
+  sort_date: 2025-08-15
+  source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
+  title: Senior Technologist
+  title_type: advisor

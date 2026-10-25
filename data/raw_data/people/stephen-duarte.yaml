@@ -1,47 +1,50 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Stephen Duarte
-:sort_name: Duarte
-:slug: stephen-duarte
-:age: 32
-:blurb: Like three other new DOGE staffers who started early t OPM, Stephen Duarte
-  was previously a HR specialist at SpaceX. He reportedly has worked closely with
-  Brian Bjelde.
-:skill: administrator
-:linkedin: https://www.linkedin.com/in/stephenduarteboisestateeastbay/
-:tech_links:
+name: Stephen Duarte
+sort_name: Duarte
+slug: stephen-duarte
+age: 32
+blurb: >-
+  Like three other new DOGE staffers who started early t OPM, Stephen Duarte was previously a HR specialist
+  at SpaceX. He reportedly has worked closely with Brian Bjelde.
+skill: administrator
+linkedin: https://www.linkedin.com/in/stephenduarteboisestateeastbay/
+tech_links:
+
 - SpaceX
-:govt_exit_date: 2025-03-05
-:govt_exit_truth: verified
-:govt_exit_type: resigned
-:positions:
-- :id: opm-stephen-duarte
-  :type: appointed
-  :category: support
-  :agency: OPM
-  :start_date: 2025-02-03
-  :start_date_truth: verified
-  :end_date: 2025-03-05
-  :end_date_truth: guessed
-  :end_type: resigned
-  :project: personnel
-  :description: Exc Appt NTE
-  :appt_type_code: 48
-  :appt_type: Other
-  :excepted: true
-  :pd_code: 6A39749
-  :title: Expert
-  :title_type: advisor
-  :pay_grade: ED-00
-  :salary: "$0"
-  :series: '0301'
-  :supervisory: false
-  :office: Office of the Director
-  :comment: Sources from a FOIA document
-  :table_note: Likely 1 of 3 unidentified OPM aliases who started in Feb and left
-    in March 2025
-  :source:
+govt_exit_date: 2025-03-05
+govt_exit_truth: verified
+govt_exit_type: resigned
+positions:
+
+- id: opm-stephen-duarte
+  type: appointed
+  category: support
+  agency: OPM
+  start_date: 2025-02-03
+  start_date_truth: verified
+  end_date: 2025-03-05
+  end_date_truth: guessed
+  end_type: resigned
+  project: personnel
+  description: Exc Appt NTE
+  appt_type_code: 48
+  appt_type: Other
+  excepted: true
+  pd_code: 6A39749
+  title: Expert
+  title_type: advisor
+  pay_grade: ED-00
+  salary: "$0"
+  series: '0301'
+  supervisory: false
+  office: Office of the Director
+  comment: Sources from a FOIA document
+  table_note: Likely 1 of 3 unidentified OPM aliases who started in Feb and left in March 2025
+  source:
   - https://www.documentcloud.org/documents/26028780-opm-new-hires/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-  :same_as: opm-stephen-duarte
-  :name: Stephen Duarte
-  :alias: OPM-15
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  same_as: opm-stephen-duarte
+  name: Stephen Duarte
+  alias: OPM-15

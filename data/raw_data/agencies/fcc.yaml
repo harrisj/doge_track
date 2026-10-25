@@ -1,70 +1,81 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Federal Communications Commission
-:id: FCC
-:short_name: FCC
-:slug: fcc
-:page_slug: independent#regs
-:doge_base: true
-:events:
-- :date: 2025-03-18
-  :type: onboard
-  :event: Tarak Makecha, Jordan Wick and Jacob Altik are onboarded at the FCC. Jordan
-    and Jacob are detailees while Tarak is listed as a consultant offering his services
-    for free.
-  :source: https://frequencyfwd.com/files/motion-exhibit-1-08252025.pdf
-  :agency: FCC
-  :id: 20cqZoQi
-- :date: 2025-04-01
-  :type: action
-  :event: Jordan Wick sends a data file of FCC orders to the Chief Counsel to review.
-    In response, the counsel says "I have a quasi-personal FCC data issue I’d love
-    to discuss over lunch (on me)."
-  :named:
+name: Federal Communications Commission
+id: FCC
+short_name: FCC
+slug: fcc
+page_slug: independent#regs
+doge_base: true
+events:
+
+- date: 2025-03-18
+  type: onboard
+  event: >-
+    Tarak Makecha, Jordan Wick and Jacob Altik are onboarded at the FCC. Jordan and Jacob are detailees
+    while Tarak is listed as a consultant offering his services for free.
+  source: https://frequencyfwd.com/files/motion-exhibit-1-08252025.pdf
+  agency: FCC
+  id: 20cqZoQi
+
+- date: 2025-04-01
+  type: action
+  event: >-
+    Jordan Wick sends a data file of FCC orders to the Chief Counsel to review. In response, the counsel
+    says "I have a quasi-personal FCC data issue I’d love to discuss over lunch (on me)."
+  named:
   - Jordan Wick
-  :agency: FCC
-  :source: https://www.documentcloud.org/documents/26379171-fcc-foia-production-3-for-frequency-forward/
-  :id: FAkPvc8R
-- :date: 2025-04-04
-  :type: sighting
-  :event: Tarak Makecha, Jordan Wick and Jacob Altik are listed in the public directory
-    of FCC staff and listed as associated with the Office of the Chairman at the FCC.
-  :named:
+  agency: FCC
+  source: https://www.documentcloud.org/documents/26379171-fcc-foia-production-3-for-frequency-forward/
+  id: FAkPvc8R
+
+- date: 2025-04-04
+  type: sighting
+  event: >-
+    Tarak Makecha, Jordan Wick and Jacob Altik are listed in the public directory of FCC staff and listed
+    as associated with the Office of the Chairman at the FCC.
+  named:
   - Tarak Makecha
   - Jordan Wick
   - Jacob Altik
-  :source: https://www.theverge.com/news/644031/doge-federal-communications-commission-directory
-  :agency: FCC
-  :id: FTRMb3dA
-- :date: 2025-04-28
-  :type: action
-  :event: Jordan Wick sends an email to the FCC General Counsel asking for data on
-    National Environmental Policy Act (NEPA) reviews for cell phone tower installations.
-    He then asks to meet with a technical contributor about the feasibility of adding
-    a new feature to their review tracking software. Narrowing environmental review
-    is a Trump administration priority.
-  :project: deregulation
-  :named:
+  source: https://www.theverge.com/news/644031/doge-federal-communications-commission-directory
+  agency: FCC
+  id: FTRMb3dA
+
+- date: 2025-04-28
+  type: action
+  event: >-
+    Jordan Wick sends an email to the FCC General Counsel asking for data on National Environmental Policy
+    Act (NEPA) reviews for cell phone tower installations. He then asks to meet with a technical contributor
+    about the feasibility of adding a new feature to their review tracking software. Narrowing environmental
+    review is a Trump administration priority.
+  project: deregulation
+  named:
   - Jordan Wick
-  :agency: FCC
-  :source: https://www.documentcloud.org/documents/26379171-fcc-foia-production-3-for-frequency-forward/
-  :id: 4sMjNqRN
-- :date: 2025-08-26
-  :type: legal
-  :event: Ruling in _Burleigh v. FCC_, Judge Amy Berman Jackson denies a preliminary
-    injunction that would compel the FCC to make all documents about DOGE activities
-    available for FOIA by October 10th. Nevertheless, the judge ordered DOGE to provide
-    more details on its activities at the agency, expressing concern at the skimpy
-    35 pages of documentation that the agency had provided so far.
-  :project: impunity
-  :source: https://arstechnica.com/tech-policy/2025/08/judge-unhappy-with-fccs-vague-and-uninformative-response-to-doge-lawsuit/
-  :agency: FCC
-  :id: 6hskWxfd
-- :date: 2026-06-25
-  :type: legal
-  :event: The advocacy group Frequency Forward filed a motion accusing the FCC of
-    failing to comply with court orders to respond to FOIA request and alleging that
-    the FCC chairman has been using Signal to avoid government record-keeping requirements.
-  :source: https://arstechnica.com/tech-policy/2026/06/fcc-accused-of-hiding-chairman-carrs-messages-with-doge-and-musk/
-  :project: impunity
-  :agency: FCC
-  :id: 2y8MK6Px
+  agency: FCC
+  source: https://www.documentcloud.org/documents/26379171-fcc-foia-production-3-for-frequency-forward/
+  id: 4sMjNqRN
+
+- date: 2025-08-26
+  type: legal
+  event: >-
+    Ruling in _Burleigh v. FCC_, Judge Amy Berman Jackson denies a preliminary injunction that would compel
+    the FCC to make all documents about DOGE activities available for FOIA by October 10th. Nevertheless,
+    the judge ordered DOGE to provide more details on its activities at the agency, expressing concern
+    at the skimpy 35 pages of documentation that the agency had provided so far.
+  project: impunity
+  source: >-
+    https://arstechnica.com/tech-policy/2025/08/judge-unhappy-with-fccs-vague-and-uninformative-response-to-doge-lawsuit/
+  agency: FCC
+  id: 6hskWxfd
+
+- date: 2026-06-25
+  type: legal
+  event: >-
+    The advocacy group Frequency Forward filed a motion accusing the FCC of failing to comply with court
+    orders to respond to FOIA request and alleging that the FCC chairman has been using Signal to avoid
+    government record-keeping requirements.
+  source: >-
+    https://arstechnica.com/tech-policy/2026/06/fcc-accused-of-hiding-chairman-carrs-messages-with-doge-and-musk/
+  project: impunity
+  agency: FCC
+  id: 2y8MK6Px

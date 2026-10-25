@@ -392,20 +392,6 @@
   id: 1u9rCt0H
 
 - date: 2025-02-19
-  type: official
-  event: >-
-    Trump issues EO 14217, which explicitly targets the Presidio Trust, the Inter-American Foundation,
-    the United States African Development Foundation and the United States Institute of Peace for reductions.
-  source: >-
-    https://www.whitehouse.gov/presidential-actions/2025/02/commencing-the-reduction-of-the-federal-bureaucracy/
-  project: elimination
-  agency:
-  - IAF
-  - USADF
-  - USIP
-  id: KMD5RgCU
-
-- date: 2025-02-19
   type: interagency
   event: >-
     A staffer at the EOP emails DOGE staff to take part in a webinar about the National Environmental
@@ -423,6 +409,44 @@
     - Daniel Abrahamson
   source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
   id: 3Lorb8hL
+
+- date: 2025-02-19
+  type: official
+  event: >-
+    Trump issues EO 14217, which explicitly targets the Presidio Trust, the Inter-American Foundation,
+    the United States African Development Foundation and the United States Institute of Peace for reductions.
+  source: >-
+    https://www.whitehouse.gov/presidential-actions/2025/02/commencing-the-reduction-of-the-federal-bureaucracy/
+  project: elimination
+  agency:
+  - IAF
+  - USADF
+  - USIP
+  id: KMD5RgCU
+
+- date: 2025-02-21
+  type: interagency
+  event: >-
+    Several DOGE staff at HHS and DOI are involved in a large meeting related to a contract with the Office
+    of Refugee Resettlement (ORR) within HHS. Among other systems, this office maintains the Unaccompanied
+    Children Portal, which was of interest to DOGE's immigration focus.
+  notable: true
+  named:
+  - Tyler Hassen
+  - Katrine Trampe
+  - Rachel Riley
+  interagency_doge_reps:
+    DOI:
+    - Tyler Hassen
+    - Katrine Trampe
+    HHS:
+    - Rachel Riley
+  source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
+  project: immigration
+  agency:
+  - HHS
+  - DOI
+  id: 4duo4Ba7
 
 - date: 2025-02-21
   type: interagency
@@ -450,30 +474,6 @@
     - Jacob Altik
   case_no: 1:25-cv-00778
   id: CuJmM2lv
-
-- date: 2025-02-21
-  type: interagency
-  event: >-
-    Several DOGE staff at HHS and DOI are involved in a large meeting related to a contract with the Office
-    of Refugee Resettlement (ORR) within HHS. Among other systems, this office maintains the Unaccompanied
-    Children Portal, which was of interest to DOGE's immigration focus.
-  notable: true
-  named:
-  - Tyler Hassen
-  - Katrine Trampe
-  - Rachel Riley
-  interagency_doge_reps:
-    DOI:
-    - Tyler Hassen
-    - Katrine Trampe
-    HHS:
-    - Rachel Riley
-  source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
-  project: immigration
-  agency:
-  - HHS
-  - DOI
-  id: 4duo4Ba7
 
 - date: 2025-02-22
   type: interagency
@@ -508,20 +508,6 @@
   source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277519/gov.uscourts.dcd.277519.48.3.pdf
   id: cY1Z76G2
 
-- date: 2025-02-(26)~
-  type: interagency
-  fuzz: Date is just given as "Late February"
-  event: >-
-    During a call of human capital officers led by OPM, a representative for the GSA announces they are
-    working on a "new federal daily check-in tool." A test email was sent out on the same day. They announce
-    plans to debut the tool by the first week in March.
-  source: https://www.washingtonpost.com/dc-md-va/2025/04/30/return-to-office-track-federal-office-occupancy/
-  project: personnel
-  agency:
-  - OPM
-  - GSA
-  id: 5zOTAHYX
-
 - date: 2025-02-26
   type: disruption
   notable: true
@@ -538,6 +524,20 @@
   - IAF
   - Treasury
   id: 5ATjrwp0
+
+- date: 2025-02-(26)~
+  type: interagency
+  fuzz: Date is just given as "Late February"
+  event: >-
+    During a call of human capital officers led by OPM, a representative for the GSA announces they are
+    working on a "new federal daily check-in tool." A test email was sent out on the same day. They announce
+    plans to debut the tool by the first week in March.
+  source: https://www.washingtonpost.com/dc-md-va/2025/04/30/return-to-office-track-federal-office-occupancy/
+  project: personnel
+  agency:
+  - OPM
+  - GSA
+  id: 5zOTAHYX
 
 - date: 2025-02-27
   type: interagency
@@ -580,22 +580,6 @@
   project: spending
   id: 7Nmk2w0G
 
-- date: 2025-03-01
-  type: report
-  comment: Actual start date in March unknown
-  event: >-
-    The Government Accountability Office (GAO) starts an audit of how DOGE has handled data at several
-    agencies.
-  source: https://www.wired.com/story/gao-audit-elon-musk-doge-government-agencies/
-  agency:
-  - DOL
-  - Education
-  - DHS
-  - Treasury
-  - SSA
-  - OPM
-  id: hocQ5vQK
-
 - date: 2025-03-XX
   type: official
   event: >-
@@ -613,6 +597,39 @@
   - USCIS
   - SSA
   id: 4XjaSBw5
+
+- date: 2025-03-01
+  type: report
+  comment: Actual start date in March unknown
+  event: >-
+    The Government Accountability Office (GAO) starts an audit of how DOGE has handled data at several
+    agencies.
+  source: https://www.wired.com/story/gao-audit-elon-musk-doge-government-agencies/
+  agency:
+  - DOL
+  - Education
+  - DHS
+  - Treasury
+  - SSA
+  - OPM
+  id: hocQ5vQK
+
+- date: 2025-03-03
+  type: disruption
+  event: >-
+    Gavin Kliger summons multiple top leaders at the IRS to a meeting where he proclaims to staff that
+    the agency needs to explore ways to share its data with other agencies. He doesn't explicitly mention
+    DHS or ICE in this meeting, but DOGE was already working to provide that data to them.
+  named:
+  - Gavin Kliger
+  project: immigration
+  source: >-
+    https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
+  agency:
+  - IRS
+  - DHS
+  - ICE
+  id: 2WJYQD7F
 
 - date: 2025-03-(03)~
   type: interagency
@@ -637,23 +654,6 @@
   - spending
   - modernization
   id: ipGicBPJ
-
-- date: 2025-03-03
-  type: disruption
-  event: >-
-    Gavin Kliger summons multiple top leaders at the IRS to a meeting where he proclaims to staff that
-    the agency needs to explore ways to share its data with other agencies. He doesn't explicitly mention
-    DHS or ICE in this meeting, but DOGE was already working to provide that data to them.
-  named:
-  - Gavin Kliger
-  project: immigration
-  source: >-
-    https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
-  agency:
-  - IRS
-  - DHS
-  - ICE
-  id: 2WJYQD7F
 
 - date: 2025-03-05
   type: interagency
@@ -963,20 +963,19 @@
   - CISA
   id: 2SR8EJa8
 
-- date: 2025-04-07
-  type: legal
+- date: 2025-04-(07)~
+  type: interagency
   event: >-
-    In a 2-1 vote, the 4th U.S. Circuit Court of Appeals lifted a stay against DOGE data access at the
-    Treasury, OPM and Department of Education imposed in the case _American Federation of Teachers v.
-    Bessent et al_.
-  notable: true
-  source: https://storage.courtlistener.com/recap/gov.uscourts.ca4.178115/gov.uscourts.ca4.178115.17.0.pdf
-  case_no: 8:25-cv-00430
+    Kristi Noem sends a memo asking for SSA cooperation to identify immigrants with social security numbers
+    and disenroll them. The memo alleges that immigrants can only have social security numbers illegally;
+    however, there are many valid reasons why a noncitizen might have one.
+  project: immigration
+  source: https://www.hsgac.senate.gov/wp-content/uploads/2026-6-4-Blumenthal-Warren-Letter-to-Jon-Koval.pdf
   agency:
-  - Treasury
-  - OPM
-  - Education
-  id: aLxLCzjS
+  - SSA
+  - DHS
+  - ICE
+  id: 6YQL8AD8
 
 - date: 2025-04-07
   type: interagency
@@ -995,19 +994,20 @@
   - ICE
   id: UaUYi68M
 
-- date: 2025-04-(07)~
-  type: interagency
+- date: 2025-04-07
+  type: legal
   event: >-
-    Kristi Noem sends a memo asking for SSA cooperation to identify immigrants with social security numbers
-    and disenroll them. The memo alleges that immigrants can only have social security numbers illegally;
-    however, there are many valid reasons why a noncitizen might have one.
-  project: immigration
-  source: https://www.hsgac.senate.gov/wp-content/uploads/2026-6-4-Blumenthal-Warren-Letter-to-Jon-Koval.pdf
+    In a 2-1 vote, the 4th U.S. Circuit Court of Appeals lifted a stay against DOGE data access at the
+    Treasury, OPM and Department of Education imposed in the case _American Federation of Teachers v.
+    Bessent et al_.
+  notable: true
+  source: https://storage.courtlistener.com/recap/gov.uscourts.ca4.178115/gov.uscourts.ca4.178115.17.0.pdf
+  case_no: 8:25-cv-00430
   agency:
-  - SSA
-  - DHS
-  - ICE
-  id: 6YQL8AD8
+  - Treasury
+  - OPM
+  - Education
+  id: aLxLCzjS
 
 - date: 2025-04-07
   type: interagency
@@ -1379,6 +1379,19 @@
   source: https://www.bloomberg.com/features/2025-luke-farritor-doge/
   id: 2HBdee67
 
+- date: 2025-05-20
+  type: disruption
+  event: >-
+    In a post on its X account, DOGE reports that it is working to review surveys conducted by the Census
+    Bureau and claims to have already eliminated 5 surveys that include questions about alcohol consumption
+    and internet usage.
+  project: elimination
+  source: https://bsky.app/profile/hansilowang.bsky.social/post/3lpmvsh6byc2o
+  agency:
+  - DOGE
+  - Census
+  id: 3zmjW3zT
+
 - date: 2025-05-(20)~
   type: interagency
   event: >-
@@ -1394,19 +1407,6 @@
   - DHS
   - SSA
   id: 7VwO7Cne
-
-- date: 2025-05-20
-  type: disruption
-  event: >-
-    In a post on its X account, DOGE reports that it is working to review surveys conducted by the Census
-    Bureau and claims to have already eliminated 5 surveys that include questions about alcohol consumption
-    and internet usage.
-  project: elimination
-  source: https://bsky.app/profile/hansilowang.bsky.social/post/3lpmvsh6byc2o
-  agency:
-  - DOGE
-  - Census
-  id: 3zmjW3zT
 
 - date: 2025-05-22
   type: interagency
@@ -1467,22 +1467,6 @@
   id: 4hatylun
 
 - date: 2025-06-XX
-  type: report
-  event: >-
-    After several DOGE staffers expressed concerns that he should not have access to government information
-    or continue to direct DOGE staff, Steve Davis reportedly pushes for their firing, calling it an attempted
-    coup. Sam Corcos is named as one DOGE staffer who was given the silent treatment by Davis and allies.
-  notable: true
-  named:
-  - Steve Davis
-  - Sam Corcos
-  source: https://www.wsj.com/politics/policy/doge-elon-musk-left-control-92770407
-  agency:
-  - DOGE
-  - Treasury
-  id: 4nZTdaoY
-
-- date: 2025-06-XX
   type: interagency
   event: >-
     A lawyer at ICE proposes expanding the original data sharing MOU between the agency to also support
@@ -1497,21 +1481,21 @@
   - ICE
   id: 4KKta0mn
 
-- date: 2025-06-03
-  type: legal
+- date: 2025-06-XX
+  type: report
   event: >-
-    HHS employees from multiple agencies who were fired in the recent Reduction-in-Force at the agency
-    file a class action lawsuit claiming that the data used for the retention register was fatally flawed
-    and DOGE practiced no due diligence in correcting for that.
-  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.281208/gov.uscourts.dcd.281208.1.0_3.pdf
-  case_no: 1:25-cv-01750
-  project: personnel
+    After several DOGE staffers expressed concerns that he should not have access to government information
+    or continue to direct DOGE staff, Steve Davis reportedly pushes for their firing, calling it an attempted
+    coup. Sam Corcos is named as one DOGE staffer who was given the silent treatment by Davis and allies.
+  notable: true
+  named:
+  - Steve Davis
+  - Sam Corcos
+  source: https://www.wsj.com/politics/policy/doge-elon-musk-left-control-92770407
   agency:
-  - HHS
-  - CDC
-  - CMS
-  - FDA
-  id: 5Gti8aTf
+  - DOGE
+  - Treasury
+  id: 4nZTdaoY
 
 - date: 2025-06-03
   type: interagency
@@ -1529,21 +1513,21 @@
   - GSA
   id: 3MBTHcZ5
 
-- date: 2025-06-05
-  type: action
+- date: 2025-06-03
+  type: legal
   event: >-
-    Despite having left DOGE a week prior, Steve Davis reportedly holds a meeting with DOGE staff hosted
-    on the sixth floor of the GSA headquarters. At the meeting, he reportedly proposes a "DOGE 2.0" which
-    would be more collaborative with agency heads.
-  named:
-  - Steve Davis
-  linked:
-  - Stephen Ehikian
-  source: https://www.politico.com/news/2025/07/14/doge-lead-steve-davis-did-not-go-quietly-00452257
+    HHS employees from multiple agencies who were fired in the recent Reduction-in-Force at the agency
+    file a class action lawsuit claiming that the data used for the retention register was fatally flawed
+    and DOGE practiced no due diligence in correcting for that.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.281208/gov.uscourts.dcd.281208.1.0_3.pdf
+  case_no: 1:25-cv-01750
+  project: personnel
   agency:
-  - DOGE
-  - GSA
-  id: 7aqPkVR2
+  - HHS
+  - CDC
+  - CMS
+  - FDA
+  id: 5Gti8aTf
 
 - date: 2025-06-(05)~
   type: disruption
@@ -1563,21 +1547,21 @@
   source: https://www.politico.com/news/2025/07/14/doge-lead-steve-davis-did-not-go-quietly-00452257
   id: 1nLi50HW
 
-- date: 2025-06-06
-  type: legal
+- date: 2025-06-05
+  type: action
   event: >-
-    In a 6-3 ruling on an emergency application, the Supreme Court rejected an injunction that prevented
-    DOGE from accessing Social Security data. In a setback for privacy advocates, this will allow for
-    SSA to share data with DOGE and other agencies, while the case about the legality of that proceeds.
-  notable: true
-  source: https://www.nytimes.com/2025/06/06/us/politics/supreme-court-doge-social-security.html
-  project:
-  - immigration
-  - fraud
+    Despite having left DOGE a week prior, Steve Davis reportedly holds a meeting with DOGE staff hosted
+    on the sixth floor of the GSA headquarters. At the meeting, he reportedly proposes a "DOGE 2.0" which
+    would be more collaborative with agency heads.
+  named:
+  - Steve Davis
+  linked:
+  - Stephen Ehikian
+  source: https://www.politico.com/news/2025/07/14/doge-lead-steve-davis-did-not-go-quietly-00452257
   agency:
   - DOGE
-  - SSA
-  id: 5RHujvBq
+  - GSA
+  id: 7aqPkVR2
 
 - date: 2025-06-06
   type: access
@@ -1594,6 +1578,22 @@
   - HHS
   - DHS
   id: 2qesnQ5E
+
+- date: 2025-06-06
+  type: legal
+  event: >-
+    In a 6-3 ruling on an emergency application, the Supreme Court rejected an injunction that prevented
+    DOGE from accessing Social Security data. In a setback for privacy advocates, this will allow for
+    SSA to share data with DOGE and other agencies, while the case about the legality of that proceeds.
+  notable: true
+  source: https://www.nytimes.com/2025/06/06/us/politics/supreme-court-doge-social-security.html
+  project:
+  - immigration
+  - fraud
+  agency:
+  - DOGE
+  - SSA
+  id: 5RHujvBq
 
 - date: 2025-06-13
   type: website
@@ -1705,20 +1705,6 @@
   id: 3cyyrMrH
 
 - date: 2025-06-26
-  type: disruption
-  event: >-
-    The Department of Defense announced that it would immediately stop ingesting and sharing data from
-    3 microwave-imaging satellites with NOAA's National Hurricane Center. This imaging is used to prevent
-    "sunrise surprises" by allowing forecasters to monitor hurricanes at night. The change is expected
-    to degrade the quality of hurricane forecasts.
-  source: https://michaelrlowry.substack.com/p/critical-hurricane-forecast-tool
-  project: elimination
-  agency:
-  - NOAA
-  - DOD
-  id: 7lpMwcEg
-
-- date: 2025-06-26
   type: official
   event: >-
     In an email to agency partners, the operators of grants.gov declare that the revised mechanism added
@@ -1751,6 +1737,20 @@
   - SBA
   source: https://www.washingtonpost.com/politics/2025/06/27/doge-loses-control-federal-grants/
   id: 5FtSVXWx
+
+- date: 2025-06-26
+  type: disruption
+  event: >-
+    The Department of Defense announced that it would immediately stop ingesting and sharing data from
+    3 microwave-imaging satellites with NOAA's National Hurricane Center. This imaging is used to prevent
+    "sunrise surprises" by allowing forecasters to monitor hurricanes at night. The change is expected
+    to degrade the quality of hurricane forecasts.
+  source: https://michaelrlowry.substack.com/p/critical-hurricane-forecast-tool
+  project: elimination
+  agency:
+  - NOAA
+  - DOD
+  id: 7lpMwcEg
 
 - date: 2025-06-27
   type: legal
@@ -1826,25 +1826,6 @@
 - date: 2025-07-14
   type: disruption
   event: >-
-    Declaring that a Supreme Court shadown docket ruling on July 8th gave them the go-ahead, HHS declares
-    a Reduction-in-Force that was initiated on April 1st is still in effect by sending affected employees
-    a messages stating "You are hereby notified that you are officially separated from HHS at the close
-    of business on July 14, 2025. Thank you for your service to the American people." The number of affected
-    employees is in the thousands, but some of the 10,000 fired in the original RIF are still protected
-    by another case _New York v. Kennedy_.
-  project: personnel
-  agency:
-  - HHS
-  - FDA
-  - CDC
-  - CMS
-  - NIH
-  source: https://www.cnn.com/2025/07/14/health/hhs-layoffs-supreme-court
-  id: 6jAlgVJa
-
-- date: 2025-07-14
-  type: disruption
-  event: >-
     Months after the destruction of USAID and folding in some of its staff and responsibilities into the
     US Department of State, the Trump administration incinerates 500 million tons of emergency food biscuits
     worth $800,000 rather than sending it to Afghanistan and Pakistan, where it could have fed 1.5 million
@@ -1863,6 +1844,25 @@
   - USAID
   - State
   id: 2JQwgqr4
+
+- date: 2025-07-14
+  type: disruption
+  event: >-
+    Declaring that a Supreme Court shadown docket ruling on July 8th gave them the go-ahead, HHS declares
+    a Reduction-in-Force that was initiated on April 1st is still in effect by sending affected employees
+    a messages stating "You are hereby notified that you are officially separated from HHS at the close
+    of business on July 14, 2025. Thank you for your service to the American people." The number of affected
+    employees is in the thousands, but some of the 10,000 fired in the original RIF are still protected
+    by another case _New York v. Kennedy_.
+  project: personnel
+  agency:
+  - HHS
+  - FDA
+  - CDC
+  - CMS
+  - NIH
+  source: https://www.cnn.com/2025/07/14/health/hhs-layoffs-supreme-court
+  id: 6jAlgVJa
 
 - date: 2025-07-16
   type: access
@@ -2526,6 +2526,21 @@
   id: 45sTJzC9
 
 - date: 2026-02-05
+  type: legal
+  event: >-
+    A federal judge ruled that Elon Musk and senior State Department officials must sit for depositions
+    about their roles in dismantling USAID. The judge cited the lack of documentation and no cooperation
+    from other State Department staff as the reason there was "no alternative" to ordering the depositions.
+  source: https://www.axios.com/2026/02/05/state-department-elon-musk-doge
+  named:
+  - Elon Musk
+  agency:
+  - USAID
+  - DOGE
+  - State
+  id: 5Iofd56K
+
+- date: 2026-02-05
   type: website
   event: >-
     The [Trump RX](https://trumprx.gov/) site formally relaunches with a lookup option to find savings
@@ -2543,21 +2558,6 @@
   - https://www.nytimes.com/2026/02/05/health/trumprx-online-drugstore-prices.html
   - https://trumprx.gov/
   id: 6g1wCTi4
-
-- date: 2026-02-05
-  type: legal
-  event: >-
-    A federal judge ruled that Elon Musk and senior State Department officials must sit for depositions
-    about their roles in dismantling USAID. The judge cited the lack of documentation and no cooperation
-    from other State Department staff as the reason there was "no alternative" to ordering the depositions.
-  source: https://www.axios.com/2026/02/05/state-department-elon-musk-doge
-  named:
-  - Elon Musk
-  agency:
-  - USAID
-  - DOGE
-  - State
-  id: 5Iofd56K
 
 - date: 2026-02-06
   type: disruption
@@ -2794,6 +2794,22 @@
   id: 4ltOeNew
 
 - date: 2026-04-20
+  type: oversight
+  event: >-
+    USAID (currently under the leadership of Russell Vought) files a report to Congress that it currently
+    has $19 billion in unallocated funds that it intends to use for closing out the agency. This amount
+    is almost half of what the State Department has budgeted for foreign assistance, even after those
+    operations were consolidated into a single agency.
+  project: spending
+  linked:
+  - Russell Vought
+  source: https://thehill.com/policy/international/5870587-usaid-funds-19b-closeout/
+  agency:
+  - State
+  - USAID
+  id: 3SiM9Lc5
+
+- date: 2026-04-20
   type: disruption
   event: >-
     GSA announced plans to sell the headquarters of OPM and immediate plans where GSA will temporarily
@@ -2809,22 +2825,6 @@
   - GSA
   - OPM
   id: 3XMPR59A
-
-- date: 2026-04-20
-  type: oversight
-  event: >-
-    USAID (currently under the leadership of Russell Vought) files a report to Congress that it currently
-    has $19 billion in unallocated funds that it intends to use for closing out the agency. This amount
-    is almost half of what the State Department has budgeted for foreign assistance, even after those
-    operations were consolidated into a single agency.
-  project: spending
-  linked:
-  - Russell Vought
-  source: https://thehill.com/policy/international/5870587-usaid-funds-19b-closeout/
-  agency:
-  - State
-  - USAID
-  id: 3SiM9Lc5
 
 - date: 2026-04-23
   type: official
@@ -2936,6 +2936,21 @@
   id: 2lTe1AHS
 
 - date: 2026-07-23
+  type: legal
+  event: >-
+    In a sworn deposition on this date, Noah Peters testifies that a previous document stating that he
+    had been detailed to DOGE was false, and he has only ever worked for OPM. He also testifies that he
+    has never had and never used a DOGE-affiliated email address. His name and an EOP email were included
+    in a leaked but unverified list of DOGE employees on March 3, 2025.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.238.0.pdf
+  named:
+  - Noah Peters
+  agency:
+  - OPM
+  - DOGE
+  id: 5KJR0GZE
+
+- date: 2026-07-23
   type: offboard
   event: >-
     The government reports in a legal filing that Riccardo Biasini's appointment at OPM has been terminated,
@@ -2950,21 +2965,6 @@
   - DOGE
   - OPM
   id: 6khUixTO
-
-- date: 2026-07-23
-  type: legal
-  event: >-
-    In a sworn deposition on this date, Noah Peters testifies that a previous document stating that he
-    had been detailed to DOGE was false, and he has only ever worked for OPM. He also testifies that he
-    has never had and never used a DOGE-affiliated email address. His name and an EOP email were included
-    in a leaked but unverified list of DOGE employees on March 3, 2025.
-  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.238.0.pdf
-  named:
-  - Noah Peters
-  agency:
-  - OPM
-  - DOGE
-  id: 5KJR0GZE
 
 - date: 2026-08-03
   type: official

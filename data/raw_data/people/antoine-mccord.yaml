@@ -1,29 +1,32 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Antoine McCord
-:sort_name: McCord
-:slug: antoine-mccord
-:skill: executive
-:blurb: A former Marine with a background in intelligence, McCord was named as the
-  CIO for DHS the same week as the DOGE delegation started there. He has been a frequent
-  enabler of their access to various systems and is reportedly also very excited about
-  the application of AI at the agency.
-:positions:
-- :id: dhs-mccord
-  :type: appointed
-  :category: enabler
-  :title: Chief Information Officer
-  :title_type: cio
-  :agency: DHS
-  :start_date: 2025-03-11
-  :start_date_truth: reported
-  :end_date: 2026-08-31
-  :end_date_truth: reported
-  :end_type: resigned
-  :project:
+name: Antoine McCord
+sort_name: McCord
+slug: antoine-mccord
+skill: executive
+blurb: >-
+  A former Marine with a background in intelligence, McCord was named as the CIO for DHS the same week
+  as the DOGE delegation started there. He has been a frequent enabler of their access to various systems
+  and is reportedly also very excited about the application of AI at the agency.
+positions:
+
+- id: dhs-mccord
+  type: appointed
+  category: enabler
+  title: Chief Information Officer
+  title_type: cio
+  agency: DHS
+  start_date: 2025-03-11
+  start_date_truth: reported
+  end_date: 2026-08-31
+  end_date_truth: reported
+  end_type: resigned
+  project:
   - modernization
   - impunity
-  :salary: "$195,200"
-  :source:
+  salary: "$195,200"
+  source:
   - https://www.nextgov.com/people/2025/03/dhs-taps-antoine-mccord-top-tech-post/403727/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - https://federalnewsnetwork.com/cio-news/2026/08/dhs-expected-to-tap-doge-staffer-as-next-cio/

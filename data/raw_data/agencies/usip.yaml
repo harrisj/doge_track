@@ -1,333 +1,379 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: US Institute of Peace
-:id: USIP
-:short_name: USIP
-:slug: usip
-:page_slug: independent#eo1
-:events:
-- :date: 2025-02-24
-  :type: interagency
-  :event: USIP leadership meets with DOGE staffers James Burnham, Jacob Altik and
-    Nate Cavanaugh to explain the history and legal status of the small independent
-    executive branch agency and why it should not need to respond to DOGE's demands.
-  :notable: true
-  :named:
+name: US Institute of Peace
+id: USIP
+short_name: USIP
+slug: usip
+page_slug: independent#eo1
+events:
+
+- date: 2025-02-24
+  type: interagency
+  event: >-
+    USIP leadership meets with DOGE staffers James Burnham, Jacob Altik and Nate Cavanaugh to explain
+    the history and legal status of the small independent executive branch agency and why it should not
+    need to respond to DOGE's demands.
+  notable: true
+  named:
   - James Burnham
   - Jacob Altik
   - Nate Cavanaugh
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
-  :case_no: 1:25-cv-00804
-  :agency: USIP
-  :id: JZFwZjbm
-- :date: 2025-02-24
-  :type: report
-  :event: The DOGE delegation counters to USIP leadership with their belief that minimum
-    statutory size of agency is "a Board of Directors and a president, reports to
-    Congress and the Executive branch, and expenses incident to the Board of Directors"
-    and says they will regroup and return.
-  :project: elimination
-  :named:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
+  case_no: 1:25-cv-00804
+  agency: USIP
+  id: JZFwZjbm
+
+- date: 2025-02-24
+  type: report
+  event: >-
+    The DOGE delegation counters to USIP leadership with their belief that minimum statutory size of agency
+    is "a Board of Directors and a president, reports to Congress and the Executive branch, and expenses
+    incident to the Board of Directors" and says they will regroup and return.
+  project: elimination
+  named:
   - James Burnham
   - Jacob Altik
   - Nate Cavanaugh
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
-  :case_no: 1:25-cv-00804
-  :agency: USIP
-  :id: R722EMkS
-- :date: 2025-03-08
-  :type: sighting
-  :event: USIP President George Moose becomes aware that DOGE is conducting some sort
-    of reconnaisance with respect to USIP's security operations and the contractor
-    who handles physical security at their building.
-  :notable: true
-  :project: elimination
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
-  :case_no: 1:25-cv-00804
-  :agency: USIP
-  :id: 8DQvc2a6
-- :date: 2025-03-09
-  :type: disruption
-  :event: After receiving inquiries from the DOGE staff, the head of USIP security
-    emailed them information about the private security firm that manages access to
-    the HQ building.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.34.1.pdf
-  :case_no: 1:25-cv-00804
-  :named:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
+  case_no: 1:25-cv-00804
+  agency: USIP
+  id: R722EMkS
+
+- date: 2025-03-08
+  type: sighting
+  event: >-
+    USIP President George Moose becomes aware that DOGE is conducting some sort of reconnaisance with
+    respect to USIP's security operations and the contractor who handles physical security at their building.
+  notable: true
+  project: elimination
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
+  case_no: 1:25-cv-00804
+  agency: USIP
+  id: 8DQvc2a6
+
+- date: 2025-03-09
+  type: disruption
+  event: >-
+    After receiving inquiries from the DOGE staff, the head of USIP security emailed them information
+    about the private security firm that manages access to the HQ building.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.34.1.pdf
+  case_no: 1:25-cv-00804
+  named:
   - Nate Cavanaugh
   - James Burnham
   - Jacob Altik
-  :agency: USIP
-  :id: 3hmKgSFY
-- :date: 2025-03-14
-  :type: disruption
-  :event: Various members of the USIP board report receiving emails from the White
-    House saying they are terminated from their positions.
-  :project: impunity
-  :fuzz: sender isn't named, but assuming it's Trent Morse.
-  :linked:
+  agency: USIP
+  id: 3hmKgSFY
+
+- date: 2025-03-14
+  type: disruption
+  event: >-
+    DOGE members Kenneth Jackson, Jacob Altik and Nate Cavanaugh show up at USIP building with 2 other
+    people who claim to be FBI agents. They are refused entry. The DOGE delegation attempts to present
+    a document firing the USIP president.
+  notable: true
+  project: impunity
+  named:
+  - Kenneth Jackson
+  - Jacob Altik
+  - Nate Cavanaugh
+  source: >-
+    https://www.washingtonpost.com/national-security/2025/03/18/doge-institute-of-peace-takeover-musk-trump/
+  agency: USIP
+  id: HQEKVVXw
+
+- date: 2025-03-14
+  type: disruption
+  event: >-
+    Various members of the USIP board report receiving emails from the White House saying they are terminated
+    from their positions.
+  project: impunity
+  fuzz: sender isn't named, but assuming it's Trent Morse.
+  linked:
   - Trent Morse
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
-  :case_no: 1:25-cv-00804
-  :agency: USIP
-  :id: aqE3KGWn
-- :date: 2025-03-14
-  :type: disruption
-  :event: DOGE members Kenneth Jackson, Jacob Altik and Nate Cavanaugh show up at
-    USIP building with 2 other people who claim to be FBI agents. They are refused
-    entry. The DOGE delegation attempts to present a document firing the USIP president.
-  :notable: true
-  :project: impunity
-  :named:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
+  case_no: 1:25-cv-00804
+  agency: USIP
+  id: aqE3KGWn
+
+- date: 2025-03-16
+  type: disruption
+  event: >-
+    At 6pm, all Inter-Con staff are removed from the building, all keycard access is revoked and all physical
+    keys accounted for except for a single one held by the Inter-Con account manager for USIP
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.2.2.pdf
+  case_no: 1:25-cv-00804
+  agency: USIP
+  id: L3bniPgw
+
+- date: 2025-03-16
+  type: disruption
+  event: >-
+    Concerned that private contracting staff might be coerced by DOGE, the Chief Security Officer suspends
+    the contract for building security contractor Inter-Con after being contacted by the FBI agents on
+    the phone.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.2.2.pdf
+  agency: USIP
+  case_no: 1:25-cv-00804
+  id: VQeFmzx2
+
+- date: 2025-03-16
+  type: disruption
+  event: >-
+    The Chief of the Criminal Division of the U.S. Attorney's Office for the District of Columbia, Johnathan
+    Hornok, and two FBI special agents call USIP's outside counsel, Mr. Foote, on the phone stating that
+    they had suspicion of criminal behavior occuring at USIP.
+  project: impunity
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
+  case_no: 1:25-cv-00804
+  agency: USIP
+  id: aGS3jz8M
+
+- date: 2025-03-16
+  type: disruption
+  event: >-
+    Two FBI agents visited a senior USIP security official at his home unannounced to ask about gaining
+    entry to the building, possibly through pressuring the the Institute's security contractor
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
+  case_no: 1:25-cv-00804
+  agency: USIP
+  id: fq2CQ8JW
+
+- date: 2025-03-17
+  type: disruption
+  event: >-
+    DOGE members Kenneth Jackson, Jacob Altik and Nate Cavanaugh remove staff and president of the USIP
+    with the help of Office of the U.S. Attorney for the District of Columbia, the FBI and D.C. police.
+    Kenneth Jackson is named Acting President.
+  notable: true
+  project: elimination
+  named:
   - Kenneth Jackson
   - Jacob Altik
   - Nate Cavanaugh
-  :source: https://www.washingtonpost.com/national-security/2025/03/18/doge-institute-of-peace-takeover-musk-trump/
-  :agency: USIP
-  :id: HQEKVVXw
-- :date: 2025-03-16
-  :type: disruption
-  :event: Two FBI agents visited a senior USIP security official at his home unannounced
-    to ask about gaining entry to the building, possibly through pressuring the the
-    Institute's security contractor
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
-  :case_no: 1:25-cv-00804
-  :agency: USIP
-  :id: fq2CQ8JW
-- :date: 2025-03-16
-  :type: disruption
-  :event: The Chief of the Criminal Division of the U.S. Attorney's Office for the
-    District of Columbia, Johnathan Hornok, and two FBI special agents call USIP's
-    outside counsel, Mr. Foote, on the phone stating that they had suspicion of criminal
-    behavior occuring at USIP.
-  :project: impunity
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
-  :case_no: 1:25-cv-00804
-  :agency: USIP
-  :id: aGS3jz8M
-- :date: 2025-03-16
-  :type: disruption
-  :event: Concerned that private contracting staff might be coerced by DOGE, the Chief
-    Security Officer suspends the contract for building security contractor Inter-Con
-    after being contacted by the FBI agents on the phone.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.2.2.pdf
-  :agency: USIP
-  :case_no: 1:25-cv-00804
-  :id: VQeFmzx2
-- :date: 2025-03-16
-  :type: disruption
-  :event: At 6pm, all Inter-Con staff are removed from the building, all keycard access
-    is revoked and all physical keys accounted for except for a single one held by
-    the Inter-Con account manager for USIP
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.2.2.pdf
-  :case_no: 1:25-cv-00804
-  :agency: USIP
-  :id: L3bniPgw
-- :date: 2025-03-17
-  :type: disruption
-  :event: At 2:30pm, the Inter-Con account manager and employees attempt to enter
-    the building with key cards and are denied. They then use the single physical
-    key still in their possession to enter the building.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.2.2.pdf
-  :case_no: 1:25-cv-00804
-  :agency: USIP
-  :id: aCSPino3
-- :date: 2025-03-17
-  :type: disruption
-  :event: At 2:59pm, the USIP Security Chief calls DC police and institutes a high-level
-    lockdown for the building. He observes with the security cameras that DOGE staff
-    are attempting to gain entry on various doors.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.2.2.pdf
-  :case_no: 1:25-cv-00804
-  :agency: USIP
-  :id: i2mnVSPK
-- :date: 2025-03-17
-  :type: disruption
-  :event: Asked by USIP leadership on why they are assisting DOGE in accessing the
-    building, the Vice President of Inter-Con concedes that DOGE threatened to cancel
-    every single one of their federal contracts if they didn't comply.
-  :project: impunity
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.2.2.pdf
-  :case_no: 1:25-cv-00804
-  :agency: USIP
-  :id: Wn9hmCbb
-- :date: 2025-03-17
-  :type: disruption
-  :event: USIP President George Moose reports being present when four Inter-Con employees
-    entered the USIP building without permission.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
-  :case_no: 1:25-cv-00804
-  :agency: USIP
-  :id: 9A3FaYQB
-- :date: 2025-03-17
-  :type: disruption
-  :event: DOGE members Kenneth Jackson, Jacob Altik and Nate Cavanaugh remove staff
-    and president of the USIP with the help of Office of the U.S. Attorney for the
-    District of Columbia, the FBI and D.C. police. Kenneth Jackson is named Acting
-    President.
-  :notable: true
-  :project: elimination
-  :named:
-  - Kenneth Jackson
-  - Jacob Altik
-  - Nate Cavanaugh
-  :source:
-  - https://www.washingtonpost.com/national-security/2025/03/18/doge-institute-of-peace-takeover-musk-trump/
+  source:
+  - >-
+    https://www.washingtonpost.com/national-security/2025/03/18/doge-institute-of-peace-takeover-musk-trump/
   - https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
-  :agency: USIP
-  :id: 6itXQAa6
-- :date: 2025-03-17
-  :type: access
-  :event: Various USIP staff report receiving messages from DOGE staff asking them
-    for employee lists and access to computer systems at the agency.
-  :project: personnel
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
-  :case_no: 1:25-cv-00804
-  :agency: USIP
-  :id: nEGenYbj
-- :date: 2025-03-19
-  :type: disruption
-  :event: DOGE-affiliated staff start removing interior signage from the USIP building.
-  :project: elimination
-  :source: https://bsky.app/profile/marisakabas.bsky.social/post/3lkqia7po5c2a
-  :agency: USIP
-  :id: ERdvx9PE
-- :date: 2025-03-19
-  :type: legal
-  :event: Judge Beryl Howell presides over an emergency hearing, but doesn't grant
-    USIP a temporary restraining order against DOGE's takeover of the agency.
-  :case_no: 1:25-cv-00804
-  :source: https://bsky.app/profile/annabower.bsky.social/post/3lkqsbbysck2n
-  :agency: USIP
-  :id: M4hzjE85
-- :date: 2025-03-20
-  :type: disruption
-  :event: The USIP website is taken offline.
-  :project: elimination
-  :source: https://bsky.app/profile/marisakabas.bsky.social/post/3lkskjyhqkk2p
-  :agency: USIP
-  :id: cNrE379u
-- :date: 2025-03-25
-  :type: disruption
-  :event: The remaining board of the USIP – Marco Rubio and Mike Hegseth – terminate
-    Kenneth Jackson as the acting president of the USIP and appoint Nate Cavanaugh
-    to the position. The resolution also authorizes Nate Cavanaugh to dispose of the
-    building belonging to the USIP.
-  :notable: true
-  :project: elimination
-  :named:
+  agency: USIP
+  id: 6itXQAa6
+
+- date: 2025-03-17
+  type: disruption
+  event: >-
+    USIP President George Moose reports being present when four Inter-Con employees entered the USIP building
+    without permission.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
+  case_no: 1:25-cv-00804
+  agency: USIP
+  id: 9A3FaYQB
+
+- date: 2025-03-17
+  type: disruption
+  event: >-
+    Asked by USIP leadership on why they are assisting DOGE in accessing the building, the Vice President
+    of Inter-Con concedes that DOGE threatened to cancel every single one of their federal contracts if
+    they didn't comply.
+  project: impunity
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.2.2.pdf
+  case_no: 1:25-cv-00804
+  agency: USIP
+  id: Wn9hmCbb
+
+- date: 2025-03-17
+  type: disruption
+  event: >-
+    At 2:30pm, the Inter-Con account manager and employees attempt to enter the building with key cards
+    and are denied. They then use the single physical key still in their possession to enter the building.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.2.2.pdf
+  case_no: 1:25-cv-00804
+  agency: USIP
+  id: aCSPino3
+
+- date: 2025-03-17
+  type: disruption
+  event: >-
+    At 2:59pm, the USIP Security Chief calls DC police and institutes a high-level lockdown for the building.
+    He observes with the security cameras that DOGE staff are attempting to gain entry on various doors.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.2.2.pdf
+  case_no: 1:25-cv-00804
+  agency: USIP
+  id: i2mnVSPK
+
+- date: 2025-03-17
+  type: access
+  event: >-
+    Various USIP staff report receiving messages from DOGE staff asking them for employee lists and access
+    to computer systems at the agency.
+  project: personnel
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.1.2_1.pdf
+  case_no: 1:25-cv-00804
+  agency: USIP
+  id: nEGenYbj
+
+- date: 2025-03-19
+  type: disruption
+  event: DOGE-affiliated staff start removing interior signage from the USIP building.
+  project: elimination
+  source: https://bsky.app/profile/marisakabas.bsky.social/post/3lkqia7po5c2a
+  agency: USIP
+  id: ERdvx9PE
+
+- date: 2025-03-19
+  type: legal
+  event: >-
+    Judge Beryl Howell presides over an emergency hearing, but doesn't grant USIP a temporary restraining
+    order against DOGE's takeover of the agency.
+  case_no: 1:25-cv-00804
+  source: https://bsky.app/profile/annabower.bsky.social/post/3lkqsbbysck2n
+  agency: USIP
+  id: M4hzjE85
+
+- date: 2025-03-20
+  type: disruption
+  event: The USIP website is taken offline.
+  project: elimination
+  source: https://bsky.app/profile/marisakabas.bsky.social/post/3lkskjyhqkk2p
+  agency: USIP
+  id: cNrE379u
+
+- date: 2025-03-25
+  type: disruption
+  event: >-
+    The remaining board of the USIP – Marco Rubio and Mike Hegseth – terminate Kenneth Jackson as the
+    acting president of the USIP and appoint Nate Cavanaugh to the position. The resolution also authorizes
+    Nate Cavanaugh to dispose of the building belonging to the USIP.
+  notable: true
+  project: elimination
+  named:
   - Marco Rubio
   - Kenneth Jackson
   - Nate Cavanaugh
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.14.1.pdf
-  :agency: USIP
-  :id: 1BuYblWM
-- :date: 2025-03-28
-  :type: disruption
-  :event: Almost all USIP HQ staff (200-300 people) receive termination notices sent
-    late on a Friday night.
-  :notable: true
-  :project: elimination
-  :source: https://www.washingtonpost.com/national-security/2025/03/29/doge-usip-peace-institute-fired/
-  :agency: USIP
-  :id: F84Anwi8
-- :date: 2025-03-31
-  :type: official
-  :event: In a viral post on X, DOGE calls out what it sees as wasteful spending of
-    the USIP. This includes a $132,000 grant to Mohammad Halimi, a former member of
-    the Taliban who later switched sides and worked for the US and Afghan government.
-    He is now living in exile as a vocal critic, but DOGE accused USIP of "funding
-    the Taliban" by giving him a grant.
-  :project:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.14.1.pdf
+  agency: USIP
+  id: 1BuYblWM
+
+- date: 2025-03-28
+  type: disruption
+  event: Almost all USIP HQ staff (200-300 people) receive termination notices sent late on a Friday night.
+  notable: true
+  project: elimination
+  source: https://www.washingtonpost.com/national-security/2025/03/29/doge-usip-peace-institute-fired/
+  agency: USIP
+  id: F84Anwi8
+
+- date: 2025-03-31
+  type: official
+  event: >-
+    In a viral post on X, DOGE calls out what it sees as wasteful spending of the USIP. This includes
+    a $132,000 grant to Mohammad Halimi, a former member of the Taliban who later switched sides and worked
+    for the US and Afghan government. He is now living in exile as a vocal critic, but DOGE accused USIP
+    of "funding the Taliban" by giving him a grant.
+  project:
   - elimination
   - spending
-  :source: https://www.propublica.org/article/doge-musk-mohammad-halimi-institute-peace-taliban
-  :agency: USIP
-  :id: 61OS0hFN
-- :date: 2025-04-01
-  :type: disruption
-  :event: The Defendants in the USIP lawsuit learn that GSA will be leasing the building
-    to the Department of Labor. This is after Nate Cavanaugh transferred its ownership
-    to the GSA.
-  :case_no: 1:25-cv-00804
-  :project: elimination
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.34.1.pdf
-  :agency: USIP
-  :id: 1SIWo0cR
-- :date: 2025-04-(09)~
-  :type: disruption
-  :event: After DOGE's claim that USIP had funded the Taliban is picked up by the
-    Afghan press, family members of exiled ex-Taliban critic Mohammad Halimi are arrested
-    by the Taliban and beaten in prison.
-  :source: https://www.propublica.org/article/doge-musk-mohammad-halimi-institute-peace-taliban
-  :agency: USIP
-  :id: 7lmemlNx
-- :date: 2025-05-01
-  :type: disruption
-  :event: Appearing on an interview with DOGE by Fox host Jesse Watters in his capacity
-    as USIP President, Nate Cavanaugh repeats the claim that USIP was directly funding
-    the Taliban through its grant to Mohammad Halimi. He makes similar distorted claims
-    about other USIP spending.
-  :named:
+  source: https://www.propublica.org/article/doge-musk-mohammad-halimi-institute-peace-taliban
+  agency: USIP
+  id: 61OS0hFN
+
+- date: 2025-04-01
+  type: disruption
+  event: >-
+    The Defendants in the USIP lawsuit learn that GSA will be leasing the building to the Department of
+    Labor. This is after Nate Cavanaugh transferred its ownership to the GSA.
+  case_no: 1:25-cv-00804
+  project: elimination
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278529/gov.uscourts.dcd.278529.34.1.pdf
+  agency: USIP
+  id: 1SIWo0cR
+
+- date: 2025-04-(09)~
+  type: disruption
+  event: >-
+    After DOGE's claim that USIP had funded the Taliban is picked up by the Afghan press, family members
+    of exiled ex-Taliban critic Mohammad Halimi are arrested by the Taliban and beaten in prison.
+  source: https://www.propublica.org/article/doge-musk-mohammad-halimi-institute-peace-taliban
+  agency: USIP
+  id: 7lmemlNx
+
+- date: 2025-05-01
+  type: disruption
+  event: >-
+    Appearing on an interview with DOGE by Fox host Jesse Watters in his capacity as USIP President, Nate
+    Cavanaugh repeats the claim that USIP was directly funding the Taliban through its grant to Mohammad
+    Halimi. He makes similar distorted claims about other USIP spending.
+  named:
   - Nate Cavanaugh
-  :source: https://www.propublica.org/article/doge-musk-mohammad-halimi-institute-peace-taliban
-  :agency: USIP
-  :id: 5mWMD8Bz
-- :date: 2025-05-19
-  :type: legal
-  :event: The judge presiding over the USIP's lawsuit against the Trump administration
-    rules that the firing of the agency's board was illegal, rendering all subsequent
-    actions taken by Nate Cavanaugh as President null and void.
-  :notable: true
-  :named:
+  source: https://www.propublica.org/article/doge-musk-mohammad-halimi-institute-peace-taliban
+  agency: USIP
+  id: 5mWMD8Bz
+
+- date: 2025-05-19
+  type: legal
+  event: >-
+    The judge presiding over the USIP's lawsuit against the Trump administration rules that the firing
+    of the agency's board was illegal, rendering all subsequent actions taken by Nate Cavanaugh as President
+    null and void.
+  notable: true
+  named:
   - Nate Cavanaugh
-  :case_no: 1:25-cv-00804
-  :source: https://apnews.com/article/trump-doge-institute-of-peace-lawsuit-39d79077c8fa5336634d518f30a9a807
-  :agency: USIP
-  :id: 3ryF6bdi
-- :date: 2025-05-21
-  :type: official
-  :event: The US Institute of Peace reatakes control of its headquarters and leadership
-    re-enters the premises for the first time since being escorted out in DOGE's takeover.
-  :comment: Should I have some sort of restoration event?
-  :source: https://apnews.com/article/trump-musk-doge-institute-of-peace-headquarters-df9dc7d4b1ea744db647527a4b28d807
-  :agency: USIP
-  :id: 4t43UI0F
-- :date: 2025-05-21
-  :type: report
-  :event: Staff cleaning the USIP HQ after it is reclaimed by its owners find discarded
-    marijuana, presumably left by DOGE staffers. It is currently illegal for federal
-    workers to smoke pot, and especially so within government facilities.
-  :project: impunity
-  :source: https://www.economist.com/united-states/2025/06/02/elon-musks-failure-in-government
-  :agency: USIP
-  :id: 5hBdVW6l
-- :date: 2025-06-27
-  :type: legal
-  :event: A federal appeals court issues a stay on a lower-court ruling that blocked
-    DOGE from taking over the USIP. In their ruling, the appeals panel noted that
-    President Trump would face "irreparable harm from not being able to fully exercise
-    his executive powers," should the injunction be allowed to stand. This restores
-    Nate Cavanaugh as President of the USIP.
-  :linked:
+  case_no: 1:25-cv-00804
+  source: https://apnews.com/article/trump-doge-institute-of-peace-lawsuit-39d79077c8fa5336634d518f30a9a807
+  agency: USIP
+  id: 3ryF6bdi
+
+- date: 2025-05-21
+  type: official
+  event: >-
+    The US Institute of Peace reatakes control of its headquarters and leadership re-enters the premises
+    for the first time since being escorted out in DOGE's takeover.
+  comment: Should I have some sort of restoration event?
+  source: >-
+    https://apnews.com/article/trump-musk-doge-institute-of-peace-headquarters-df9dc7d4b1ea744db647527a4b28d807
+  agency: USIP
+  id: 4t43UI0F
+
+- date: 2025-05-21
+  type: report
+  event: >-
+    Staff cleaning the USIP HQ after it is reclaimed by its owners find discarded marijuana, presumably
+    left by DOGE staffers. It is currently illegal for federal workers to smoke pot, and especially so
+    within government facilities.
+  project: impunity
+  source: https://www.economist.com/united-states/2025/06/02/elon-musks-failure-in-government
+  agency: USIP
+  id: 5hBdVW6l
+
+- date: 2025-06-27
+  type: legal
+  event: >-
+    A federal appeals court issues a stay on a lower-court ruling that blocked DOGE from taking over the
+    USIP. In their ruling, the appeals panel noted that President Trump would face "irreparable harm from
+    not being able to fully exercise his executive powers," should the injunction be allowed to stand.
+    This restores Nate Cavanaugh as President of the USIP.
+  linked:
   - Nate Cavanaugh
-  :source: https://apnews.com/article/trump-doge-institute-of-peace-1ef3d3d5307a8421d9490d41b40f4c70
-  :agency: USIP
-  :id: 21WYwOWC
-- :date: 2025-07-12
-  :type: disruption
-  :event: Almost all USIP staff receive an email on Saturday telling them they are
-    terminated effective immediately.
-  :project: elimination
-  :source: https://www.cnn.com/2025/07/12/politics/us-institute-of-peace-employees-experience-mass-firings
-  :named:
+  source: https://apnews.com/article/trump-doge-institute-of-peace-1ef3d3d5307a8421d9490d41b40f4c70
+  agency: USIP
+  id: 21WYwOWC
+
+- date: 2025-07-12
+  type: disruption
+  event: >-
+    Almost all USIP staff receive an email on Saturday telling them they are terminated effective immediately.
+  project: elimination
+  source: https://www.cnn.com/2025/07/12/politics/us-institute-of-peace-employees-experience-mass-firings
+  named:
   - Nate Cavanaugh
-  :agency: USIP
-  :id: 6RIjlGF4
-- :date: 2025-07-21
-  :type: report
-  :event: The head of security for the US Institute of Peace sits for an interview
-    discussing how he was betrayed by the security contractor for the agency and taking
-    back custody of the building after the May 21st court ruling.
-  :source: https://www.asisonline.org/security-management-magazine/articles/2025/07/USIP/reviving-security/
-  :agency: USIP
-  :id: 6woiuaP3
+  agency: USIP
+  id: 6RIjlGF4
+
+- date: 2025-07-21
+  type: report
+  event: >-
+    The head of security for the US Institute of Peace sits for an interview discussing how he was betrayed
+    by the security contractor for the agency and taking back custody of the building after the May 21st
+    court ruling.
+  source: https://www.asisonline.org/security-management-magazine/articles/2025/07/USIP/reviving-security/
+  agency: USIP
+  id: 6woiuaP3

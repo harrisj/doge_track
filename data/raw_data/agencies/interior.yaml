@@ -1,326 +1,368 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Department of the Interior
-:id: DOI
-:short_name: DOI
-:slug: interior
-:page_slug: interior
-:blurb: The Department of Interior might not seem like an important target for DOGE
-  - the tech titans aren't as interested in extracting oil and gas or lumber - but
-  the head of the DOGE team at the agency comes from an oil industry background. More
-  recently, DOGE has been focused on getting super-user access for a payroll system
-  provided as a shared service for half of the agencies in the federal government.
-:doge_base: true
-:events:
-- :date: 2025-01-28
-  :type: disruption
-  :event: Two DOGE staffers – Tyler Hassen and Bryton Shang – show up an Army Corp
-    of Engineers dam in California and attempt to turn on water pumps to drain more
-    wate one of California's reservoirs to help fight fires in LA. This dam fed water
-    to central California, far away from the LA wildfires the water was supposed to
-    help.
-  :notable: true
-  :named:
+name: Department of the Interior
+id: DOI
+short_name: DOI
+slug: interior
+page_slug: interior
+blurb: >-
+  The Department of Interior might not seem like an important target for DOGE - the tech titans aren't
+  as interested in extracting oil and gas or lumber - but the head of the DOGE team at the agency comes
+  from an oil industry background. More recently, DOGE has been focused on getting super-user access for
+  a payroll system provided as a shared service for half of the agencies in the federal government.
+doge_base: true
+events:
+
+- date: 2025-01-28
+  type: disruption
+  event: >-
+    Two DOGE staffers – Tyler Hassen and Bryton Shang – show up an Army Corp of Engineers dam in California
+    and attempt to turn on water pumps to drain more wate one of California's reservoirs to help fight
+    fires in LA. This dam fed water to central California, far away from the LA wildfires the water was
+    supposed to help.
+  notable: true
+  named:
   - Tyler Hassen
   - Bryton Shang
-  :source: https://www.cnn.com/2025/03/07/climate/trump-doge-california-water/index.html
-  :agency: DOI
-  :id: eSiT2dsb
-- :date: 2025-01-(30)~
-  :type: disruption
-  :event: Tyler Hassen conducts a review of every single contract and grant from DOI
-    and sends action items for review directly to Secretary Burgum.
-  :project: spending
-  :source: https://apnews.com/article/hassen-burgum-musk-interior-energy-conflicts-830e9df68c7869e943f96c4b5e384f20
-  :agency: DOI
-  :id: 4j2BznnH
-- :date: 2025-02-16
-  :type: official
-  :event: Tyler Hassen sets up the DOGE_DOI account on X.com
-  :source: https://app.box.com/s/lsz7uil9ti9e98lkuz5vrahfekjk8pa5
-  :named:
+  source: https://www.cnn.com/2025/03/07/climate/trump-doge-california-water/index.html
+  agency: DOI
+  id: eSiT2dsb
+
+- date: 2025-01-(30)~
+  type: disruption
+  event: >-
+    Tyler Hassen conducts a review of every single contract and grant from DOI and sends action items
+    for review directly to Secretary Burgum.
+  project: spending
+  source: >-
+    https://apnews.com/article/hassen-burgum-musk-interior-energy-conflicts-830e9df68c7869e943f96c4b5e384f20
+  agency: DOI
+  id: 4j2BznnH
+
+- date: 2025-02-16
+  type: official
+  event: Tyler Hassen sets up the DOGE_DOI account on X.com
+  source: https://app.box.com/s/lsz7uil9ti9e98lkuz5vrahfekjk8pa5
+  named:
   - Tyler Hassen
-  :agency: DOI
-  :id: 5HPUHwgp
-- :date: 2025-02-17
-  :type: disruption
-  :event: Katrine Trampe and Tyler Hassen are invited to a series of meetings related
-    to reviewing contracts at the Department of the Interior.
-  :source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
-  :project: spending
-  :named:
+  agency: DOI
+  id: 5HPUHwgp
+
+- date: 2025-02-17
+  type: disruption
+  event: >-
+    Katrine Trampe and Tyler Hassen are invited to a series of meetings related to reviewing contracts
+    at the Department of the Interior.
+  source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
+  project: spending
+  named:
   - Katrine Trampe
   - Tyler Hassen
-  :agency: DOI
-  :id: 4dAavCHE
-- :date: 2025-02-21
-  :type: disruption
-  :event: Katrine Trampe kicks off a series of meetings to discuss "workforce efficiency"
-    for various bureaus at the Department of the Interior.
-  :project: personnel
-  :named:
+  agency: DOI
+  id: 4dAavCHE
+
+- date: 2025-02-21
+  type: disruption
+  event: >-
+    Katrine Trampe kicks off a series of meetings to discuss "workforce efficiency" for various bureaus
+    at the Department of the Interior.
+  project: personnel
+  named:
   - Katrine Trampe
-  :source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
-  :agency: DOI
-  :id: 6hjJVZRp
-- :date: 2025-02-24
-  :type: access
-  :event: Stephanie Holmes requests full admin access to the Federal Personnel Payroll
-    System (FPPS) system to process actions for herself as well as DOGE members Katrine
-    Trampe and Tyler Hassen. This is a shared service provided by DOI which handles
-    payroll for approximately half of the federal government.
-  :notable: true
-  :project: personnel
-  :source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
-  :named:
+  source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
+  agency: DOI
+  id: 6hjJVZRp
+
+- date: 2025-02-24
+  type: access
+  event: >-
+    Stephanie Holmes requests full admin access to the Federal Personnel Payroll System (FPPS) system
+    to process actions for herself as well as DOGE members Katrine Trampe and Tyler Hassen. This is a
+    shared service provided by DOI which handles payroll for approximately half of the federal government.
+  notable: true
+  project: personnel
+  source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
+  named:
   - Stephanie Holmes
   - Katrine Trampe
   - Tyler Hassen
-  :agency: DOI
-  :id: j8cpRtDP
-- :date: 2025-02-25
-  :type: action
-  :project:
+  agency: DOI
+  id: j8cpRtDP
+
+- date: 2025-02-25
+  type: action
+  project:
   - fraud
   - personnel
-  :event: Citing concerns that there is fraud in the federal payroll, the DOGE team
-    at the Department of the Interior meets with the Interior Business Center Team
-    to discuss their request to receive a log audit of all employee names, positions
-    and hire dates as well as total pay for each pay period.
-  :named:
+  event: >-
+    Citing concerns that there is fraud in the federal payroll, the DOGE team at the Department of the
+    Interior meets with the Interior Business Center Team to discuss their request to receive a log audit
+    of all employee names, positions and hire dates as well as total pay for each pay period.
+  named:
   - Tyler Hassen
   - Katrine Trampe
   - Stephanie Holmes
-  :source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
-  :agency: DOI
-  :id: 5ewDyv9T
-- :date: 2025-02-27
-  :type: access
-  :event: Stephanie Holmes' request for admin access to the FPPS system is approved
-    Senior Advisor to the Secretary of the Interior, Jarrod Agen.
-  :project: personnel
-  :source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
-  :named:
+  source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
+  agency: DOI
+  id: 5ewDyv9T
+
+- date: 2025-02-27
+  type: access
+  event: >-
+    Stephanie Holmes' request for admin access to the FPPS system is approved Senior Advisor to the Secretary
+    of the Interior, Jarrod Agen.
+  project: personnel
+  source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
+  named:
   - Stephanie Holmes
-  :agency: DOI
-  :id: TNkATrog
-- :date: 2025-02-28
-  :type: disruption
-  :project: spending
-  :event: Officials at the US Fish and Wildlife Service meet with Katrine Trampe and
-    Tyler Hassen to show them their system for reviewing and processing contracts
-    and to identify ways for both to start approving new contracts for the organization.
-  :named:
+  agency: DOI
+  id: TNkATrog
+
+- date: 2025-02-28
+  type: disruption
+  project: spending
+  event: >-
+    Officials at the US Fish and Wildlife Service meet with Katrine Trampe and Tyler Hassen to show them
+    their system for reviewing and processing contracts and to identify ways for both to start approving
+    new contracts for the organization.
+  named:
   - Tyler Hassen
   - Katrine Trampe
-  :source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
-  :agency: DOI
-  :id: 2t1ENBWF
-- :date: 2025-03-04
-  :type: disruption
-  :event: DOGE boasts in a tweet that 27% more water was released by the Bureau of
-    Reclamation in February compared to January (unclear if this adjusts for different
-    lengths of months).
-  :source: https://xcancel.com/DOGE/status/1896948512975433787
-  :agency: DOI
-  :id: 2kfvoFQv
-- :date: 2025-03-27
-  :type: disruption
-  :event: After being provided with access to FPPS, Stephanie Holmes raises concerns
-    to DOI leadership that she has not yet been granted full admin access to FPPS.
-    The agency CIO is concerned enough about the security implications that he will
-    only allow it if the Secretary of the Interior signs off on a memo outlining the
-    risks. Stephanie Holmes refuses to convey the message to Secretary Burgum.
-  :notable: true
-  :source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
-  :project:
+  source: https://app.box.com/s/qssl82lj3j5iv1smqh1fgsk770xdfw5u
+  agency: DOI
+  id: 2t1ENBWF
+
+- date: 2025-03-04
+  type: disruption
+  event: >-
+    DOGE boasts in a tweet that 27% more water was released by the Bureau of Reclamation in February compared
+    to January (unclear if this adjusts for different lengths of months).
+  source: https://xcancel.com/DOGE/status/1896948512975433787
+  agency: DOI
+  id: 2kfvoFQv
+
+- date: 2025-03-27
+  type: disruption
+  event: >-
+    After being provided with access to FPPS, Stephanie Holmes raises concerns to DOI leadership that
+    she has not yet been granted full admin access to FPPS. The agency CIO is concerned enough about the
+    security implications that he will only allow it if the Secretary of the Interior signs off on a memo
+    outlining the risks. Stephanie Holmes refuses to convey the message to Secretary Burgum.
+  notable: true
+  source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
+  project:
   - personnel
-  :named:
+  named:
   - Stephanie Holmes
-  :agency: DOI
-  :id: 3iSCE7j5
-- :date: 2025-03-28
-  :type: disruption
-  :event: Tyler Hassen places the CIO and CISO at the Department of the Interior on
-    admininstrative leave under investigation for raising alarm about DOGE's access
-    and delaying Stephanie Holmes from having admin access to the FPPS system, which
-    gives her visibility into payroll for half of the federal government.
-  :notable: true
-  :project:
+  agency: DOI
+  id: 3iSCE7j5
+
+- date: 2025-03-28
+  type: disruption
+  event: >-
+    Tyler Hassen places the CIO and CISO at the Department of the Interior on admininstrative leave under
+    investigation for raising alarm about DOGE's access and delaying Stephanie Holmes from having admin
+    access to the FPPS system, which gives her visibility into payroll for half of the federal government.
+  notable: true
+  project:
   - personnel
   - impunity
-  :named:
+  named:
   - Tyler Hassen
-  :source: https://www.nytimes.com/2025/03/31/us/politics/doge-musk-federal-payroll.html
-  :agency: DOI
-  :id: AGxssd5s
-- :date: 2025-03-29
-  :type: access
-  :event: Stephanie Holmes and Katrine Trampe are given full admin access to the Federal
-    Personnel Payroll System (FPPS) which handles the payroll processing for approximately
-    half of the federal government.
-  :notable: true
-  :project: personnel
-  :source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
-  :agency: DOI
-  :id: c1sryptv
-- :date: 2025-04-01
-  :type: official
-  :event: The manager of the DOI's labor relations branch initiates an investigation
-    of the DOI's CIO, Deputy CIO, Associate Solicitor and a Special Advisor to HR
-    over their attempts to prevent DOGE from having admin access to FPPS.
-  :project: impunity
-  :source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
-  :agency: DOI
-  :id: Acsi6Z5A
-- :date: 2025-04-17
-  :type: disruption
-  :event: The Washington Posts reports that both Tyler Hassen and Matt Luby are scrutinizing
-    all grants at the Department of the Interior. They also requested a list of all
-    grants going to Maine, perhaps to punish the state for its governor's defiance
-    of Trump.
-  :project: spending
-  :named:
+  source: https://www.nytimes.com/2025/03/31/us/politics/doge-musk-federal-payroll.html
+  agency: DOI
+  id: AGxssd5s
+
+- date: 2025-03-29
+  type: access
+  event: >-
+    Stephanie Holmes and Katrine Trampe are given full admin access to the Federal Personnel Payroll System
+    (FPPS) which handles the payroll processing for approximately half of the federal government.
+  notable: true
+  project: personnel
+  source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
+  agency: DOI
+  id: c1sryptv
+
+- date: 2025-04-01
+  type: official
+  event: >-
+    The manager of the DOI's labor relations branch initiates an investigation of the DOI's CIO, Deputy
+    CIO, Associate Solicitor and a Special Advisor to HR over their attempts to prevent DOGE from having
+    admin access to FPPS.
+  project: impunity
+  source: https://peer.org/wp-content/uploads/2025/04/4_15_25_Report-of-the-Investigation.pdf
+  agency: DOI
+  id: Acsi6Z5A
+
+- date: 2025-04-17
+  type: disruption
+  event: >-
+    The Washington Posts reports that both Tyler Hassen and Matt Luby are scrutinizing all grants at the
+    Department of the Interior. They also requested a list of all grants going to Maine, perhaps to punish
+    the state for its governor's defiance of Trump.
+  project: spending
+  named:
   - Tyler Hassen
   - Matt Luby
-  :source: https://www.washingtonpost.com/climate-environment/2025/04/21/tyler-hassen-department-of-interior/
-  :agency: DOI
-  :id: WnVuBFwT
-- :date: 2025-04-17
-  :type: official
-  :event: The Secretary of the Interior formally designates that Tyler Hassen is in
-    charge of implementing cuts to the agency and reorganizing its offices and areas
-    of responsibility.
-  :project:
+  source: https://www.washingtonpost.com/climate-environment/2025/04/21/tyler-hassen-department-of-interior/
+  agency: DOI
+  id: WnVuBFwT
+
+- date: 2025-04-17
+  type: official
+  event: >-
+    The Secretary of the Interior formally designates that Tyler Hassen is in charge of implementing cuts
+    to the agency and reorganizing its offices and areas of responsibility.
+  project:
   - personnel
   - elimination
-  :named:
+  named:
   - Tyler Hassen
-  :source: https://www.washingtonpost.com/climate-environment/2025/04/21/tyler-hassen-department-of-interior/
-  :agency: DOI
-  :id: f5MfXn7G
-- :date: 2025-05-02
-  :type: disruption
-  :event: Stephanie Holmes, in her role as acting chief human capital officers, sends
-    an email ordering DOI staff to stop by May 28 from doing any detail work they
-    were doing to cover for DOGE staffing cuts at the agency.
-  :named:
+  source: https://www.washingtonpost.com/climate-environment/2025/04/21/tyler-hassen-department-of-interior/
+  agency: DOI
+  id: f5MfXn7G
+
+- date: 2025-05-02
+  type: disruption
+  event: >-
+    Stephanie Holmes, in her role as acting chief human capital officers, sends an email ordering DOI
+    staff to stop by May 28 from doing any detail work they were doing to cover for DOGE staffing cuts
+    at the agency.
+  named:
   - Stephanie Holmes
-  :source: https://www.politico.com/news/2025/05/24/interior-department-land-bureau-pushes-against-doge-00360303
-  :agency: DOI
-  :id: yenHvAv5
-- :date: 2025-05-05
-  :type: official
-  :event: DOI extends its freeze on issuing any new regulations out to June 4th.
-  :project: deregulation
-  :source: https://www.federalregister.gov/documents/2025/05/05/2025-07725/practices-before-the-department-of-the-interior-delay-of-effective-date
-  :agency: DOI
-  :id: 7456Y62T
-- :date: 2025-05-07
-  :type: disruption
-  :event: A spreadsheet created by Conor Fennessy outlines a reported $26 million
-    in grant reductions for programs in the National Parks, including those identified
-    as "DEI" or studying climate change. It also axes a popular Scientists in Parks
-    program, that provides educational opportunities for early-career scientists and
-    students. A $400K project to make a park accessible for children with disabilities
-    was also targeted because it was "DEI."
-  :notable: true
-  :project:
+  source: >-
+    https://www.politico.com/news/2025/05/24/interior-department-land-bureau-pushes-against-doge-00360303
+  agency: DOI
+  id: yenHvAv5
+
+- date: 2025-05-05
+  type: official
+  event: DOI extends its freeze on issuing any new regulations out to June 4th.
+  project: deregulation
+  source: >-
+    https://www.federalregister.gov/documents/2025/05/05/2025-07725/practices-before-the-department-of-the-interior-delay-of-effective-date
+  agency: DOI
+  id: 7456Y62T
+
+- date: 2025-05-07
+  type: disruption
+  event: >-
+    A spreadsheet created by Conor Fennessy outlines a reported $26 million in grant reductions for programs
+    in the National Parks, including those identified as "DEI" or studying climate change. It also axes
+    a popular Scientists in Parks program, that provides educational opportunities for early-career scientists
+    and students. A $400K project to make a park accessible for children with disabilities was also targeted
+    because it was "DEI."
+  notable: true
+  project:
   - dei
   - spending
-  :agency: DOI
-  :named:
+  agency: DOI
+  named:
   - Conor Fennessy
-  :source: https://www.nytimes.com/2025/05/07/climate/trump-park-service-grants-cuts.html
-  :id: 6muY9B4b
-- :date: 2025-05-26
-  :type: disruption
-  :source: https://www.washingtonpost.com/climate-environment/2025/05/27/bureau-land-management-doge-nedd/
-  :event: After Politico published a report that included an email from a 30-year
-    veteran of the Bureau of Land Management which told staff to ignore instructions
-    from Stephanie Holmes that they weren't allow to sub in for empty roles, he is
-    escorted out of the building by security.
-  :project: impunity
-  :agency: DOI
-  :id: 6ozDhEa2
-- :date: 2025-06-06
-  :type: directory
-  :event: An article in the _New York Times_ reports that both Tyler Hassen and Stephanie
-    Holmes are still active at the DOI.
-  :named:
+  source: https://www.nytimes.com/2025/05/07/climate/trump-park-service-grants-cuts.html
+  id: 6muY9B4b
+
+- date: 2025-05-26
+  type: disruption
+  source: https://www.washingtonpost.com/climate-environment/2025/05/27/bureau-land-management-doge-nedd/
+  event: >-
+    After Politico published a report that included an email from a 30-year veteran of the Bureau of Land
+    Management which told staff to ignore instructions from Stephanie Holmes that they weren't allow to
+    sub in for empty roles, he is escorted out of the building by security.
+  project: impunity
+  agency: DOI
+  id: 6ozDhEa2
+
+- date: 2025-06-06
+  type: directory
+  event: >-
+    An article in the _New York Times_ reports that both Tyler Hassen and Stephanie Holmes are still active
+    at the DOI.
+  named:
   - Tyler Hassen
   - Stephanie Holmes
-  :source: https://www.nytimes.com/2025/06/07/us/politics/trump-musk-doge-interior-epa.html
-  :agency: DOI
-  :id: 6XoiI5HX
-- :date: 2025-07-09
-  :type: oversight
-  :event: Ranking Democrats on the House Natural Resources Committee send a letter
-    expressing concern and urging the Secretary of the Department of the Interior
-    to immediately revoke DOGE's access to the FPPS system that handles payroll for
-    large parts of the US government.
-  :named:
+  source: https://www.nytimes.com/2025/06/07/us/politics/trump-musk-doge-interior-epa.html
+  agency: DOI
+  id: 6XoiI5HX
+
+- date: 2025-07-09
+  type: oversight
+  event: >-
+    Ranking Democrats on the House Natural Resources Committee send a letter expressing concern and urging
+    the Secretary of the Department of the Interior to immediately revoke DOGE's access to the FPPS system
+    that handles payroll for large parts of the US government.
+  named:
   - Tyler Hassen
   - Katrine Trampe
   - Stephanie Holmes
-  :source: https://democrats-naturalresources.house.gov/media/press-releases/huffman-trahan-demand-answers-on-doges-unchecked-access-to-sensitive-doi-data-amid-growing-security-concerns
-  :agency: DOI
-  :id: 6iuch0vH
-- :date: 2025-08-18
-  :type: report
-  :event: Despite announcing that he would be leaving the agency on August 1st, Tyler
-    Hassen is still reportedly working at the Department of the Interior. It is unclear
-    what his title is and where his work is focused, but he is still there.
-  :named:
+  source: >-
+    https://democrats-naturalresources.house.gov/media/press-releases/huffman-trahan-demand-answers-on-doges-unchecked-access-to-sensitive-doi-data-amid-growing-security-concerns
+  agency: DOI
+  id: 6iuch0vH
+
+- date: 2025-08-18
+  type: report
+  event: >-
+    Despite announcing that he would be leaving the agency on August 1st, Tyler Hassen is still reportedly
+    working at the Department of the Interior. It is unclear what his title is and where his work is focused,
+    but he is still there.
+  named:
   - Tyler Hassen
-  :source: https://www.eenews.net/articles/doge-official-is-still-at-interior-after-expected-exit/
-  :agency: DOI
-  :id: 5W8Rkc4L
-- :date: 2025-09-02
-  :type: oversight
-  :event: Democrats on the House Committe on Natural Resources send a letter to the
-    Secretary of the Interior requesting information about the activities of Tyler
-    Hassen at the agency including his financial disclosure forms, communications
-    with the ethics office and daily calendar.
-  :source: https://www.publicdomain.media/p/tyler-hassen-interior-doge-financial-holdings
-  :named:
+  source: https://www.eenews.net/articles/doge-official-is-still-at-interior-after-expected-exit/
+  agency: DOI
+  id: 5W8Rkc4L
+
+- date: 2025-09-02
+  type: oversight
+  event: >-
+    Democrats on the House Committe on Natural Resources send a letter to the Secretary of the Interior
+    requesting information about the activities of Tyler Hassen at the agency including his financial
+    disclosure forms, communications with the ethics office and daily calendar.
+  source: https://www.publicdomain.media/p/tyler-hassen-interior-doge-financial-holdings
+  named:
   - Tyler Hassen
-  :agency: DOI
-  :id: 3kPlq8tx
-- :date: 2025-09-03
-  :type: offboard
-  :event: A day after receiving the letter from House Democrats, the Secretary of
-    the Interior amends his prior order naming Tyler Hassen to the position of Principal
-    Deputy Assistant Secretary to instead be filled by another person at the agency
-    not affiliated with DOGE. It's unclear if this means that Tyler Hassen is out
-    of the agency or is just in a different role.
-  :linked:
+  agency: DOI
+  id: 3kPlq8tx
+
+- date: 2025-09-03
+  type: offboard
+  event: >-
+    A day after receiving the letter from House Democrats, the Secretary of the Interior amends his prior
+    order naming Tyler Hassen to the position of Principal Deputy Assistant Secretary to instead be filled
+    by another person at the agency not affiliated with DOGE. It's unclear if this means that Tyler Hassen
+    is out of the agency or is just in a different role.
+  linked:
   - Tyler Hassen
-  :source: https://www.publicdomain.media/p/tyler-hassen-interior-doge-financial-holdings
-  :agency: DOI
-  :id: 3PgtmNdL
-- :date: 2025-09-24
-  :type: disruption
-  :event: The Department of Interior is reportedly planning another round of layoffs
-    for mid-October. This follows the loss of 7500 employees (nearly 11% of its workforce)
-    already. The agency is reported to be using the AutoRIF software developed at
-    OPM to run the process, and it is being run by Stephanie Holmes and Tyler Hassen,
-    who did not leave the agency in August as previously reported.
-  :project: personnel
-  :named:
+  source: https://www.publicdomain.media/p/tyler-hassen-interior-doge-financial-holdings
+  agency: DOI
+  id: 3PgtmNdL
+
+- date: 2025-09-24
+  type: disruption
+  event: >-
+    The Department of Interior is reportedly planning another round of layoffs for mid-October. This follows
+    the loss of 7500 employees (nearly 11% of its workforce) already. The agency is reported to be using
+    the AutoRIF software developed at OPM to run the process, and it is being run by Stephanie Holmes
+    and Tyler Hassen, who did not leave the agency in August as previously reported.
+  project: personnel
+  named:
   - Stephanie Holmes
   - Tyler Hassen
-  :linked:
+  linked:
   - Riccardo Biasini
-  :source: https://www.govexec.com/workforce/2025/09/interior-department-taking-steps-implement-layoffs/408342/
-  :agency: DOI
-  :id: 4VlDcI1U
-- :date: 2025-11-04
-  :type: legal
-  :event: In a court filing, the Department of Interior reveals that it has frozen
-    its plans to imminently layoff more employees.
-  :project: personnel
-  :linked:
+  source: https://www.govexec.com/workforce/2025/09/interior-department-taking-steps-implement-layoffs/408342/
+  agency: DOI
+  id: 4VlDcI1U
+
+- date: 2025-11-04
+  type: legal
+  event: >-
+    In a court filing, the Department of Interior reveals that it has frozen its plans to imminently layoff
+    more employees.
+  project: personnel
+  linked:
   - Stephanie Holmes
-  :source: https://www.eenews.net/articles/interior-freezes-layoff-plans/
-  :agency: DOI
-  :id: 1IaUVenD
+  source: https://www.eenews.net/articles/interior-freezes-layoff-plans/
+  agency: DOI
+  id: 1IaUVenD

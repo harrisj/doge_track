@@ -3,11 +3,13 @@
 require 'yaml'
 require 'date'
 require 'edtf'
+require 'fileutils'
 
-aliases_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'aliases.yaml')
-out_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'processed_aliases.yaml')
+ALIASES_DIR = File.join(File.dirname(__FILE__), '..', 'raw_data', 'aliases')
 
-aliases = YAML.unsafe_load_file(aliases_file, symbolize_names: true)
+# Load all aliases from directory
+alias_files = Dir[File.join(ALIASES_DIR, '*.yaml')]
+aliases = alias_files.map { |f| YAML.unsafe_load_file(f, symbolize_names: true) }.flatten
 
 named_by_agency = {}
 
@@ -37,10 +39,17 @@ end
 
 out = aliases.sort_by { |a| a[:id] }
 
-File.open(out_file, 'w') do |file|
+# Write each processed alias back to its individual file
+out.each do |a|
+  slug = a[:slug] || a[:id]
+  if slug.nil?
+    Bridgetown.logger.info 'Warning: alias has no slug or id, skipping file write'
+    next
+  end
+  alias_file = File.join(ALIASES_DIR, "#{slug}.yaml")
   schema_hdr = "# yaml-language-server: $schema=../schemas/aliases-file.json\n"
-  out_yaml = YAML.dump(out, line_width: 100, stringify_names: true, header: false)
-  file.write(schema_hdr, out_yaml.gsub(/^- /, "\n- "))
+  out_yaml = YAML.dump(a, line_width: 100, stringify_names: true, header: false)
+  File.open(alias_file, 'w') do |file|
+    file.write(schema_hdr, out_yaml.gsub(/^- /, "\n- "))
+  end
 end
-
-File.rename(out_file, aliases_file)

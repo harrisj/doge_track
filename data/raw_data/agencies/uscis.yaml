@@ -1,30 +1,34 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: US Citizenship & Immigration Services
-:id: USCIS
-:short_name: USCIS
-:slug: uscis
-:parent_id: DHS
-:page_slug: homeland-security
-:events:
-- :date: 2025-03-28
-  :type: access
-  :event: USCIS CIO William McElhaney sends a message to DHS Deputy Secretary asking
-    them to review access that was granted to DOGE staffers Kyle Schutt, Edward Coristine,
-    Aram Moghaddassi and Payton Rehling.
-  :named:
+name: US Citizenship & Immigration Services
+id: USCIS
+short_name: USCIS
+slug: uscis
+parent_id: DHS
+page_slug: homeland-security
+events:
+
+- date: 2025-03-28
+  type: access
+  event: >-
+    USCIS CIO William McElhaney sends a message to DHS Deputy Secretary asking them to review access that
+    was granted to DOGE staffers Kyle Schutt, Edward Coristine, Aram Moghaddassi and Payton Rehling.
+  named:
   - Kyle Schutt
   - Edward Coristine
   - Aram Moghaddassi
   - Payton Rehling
-  :source: https://fedscoop.com/doge-granted-access-to-naturalization-immigration-it-systems/
-  :agency: USCIS
-  :id: 89o3v6YJ
-- :date: 2025-05-22
-  :type: official
-  :event: Brian Broderick of USCIS joins a call of the election committee of the National
-    Association of Secretaries of State to expand the SAVE database to also include
-    driver license and passport information.
-  :project: immigration
-  :source: https://www.documentcloud.org/documents/26279276-texas-secretary-of-state-records-seeking-records-regarding-executive-order-14248/
-  :agency: USCIS
-  :id: pv7iUAOV
+  source: https://fedscoop.com/doge-granted-access-to-naturalization-immigration-it-systems/
+  agency: USCIS
+  id: 89o3v6YJ
+
+- date: 2025-05-22
+  type: official
+  event: >-
+    Brian Broderick of USCIS joins a call of the election committee of the National Association of Secretaries
+    of State to expand the SAVE database to also include driver license and passport information.
+  project: immigration
+  source: >-
+    https://www.documentcloud.org/documents/26279276-texas-secretary-of-state-records-seeking-records-regarding-executive-order-14248/
+  agency: USCIS
+  id: pv7iUAOV

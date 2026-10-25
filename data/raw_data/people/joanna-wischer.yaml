@@ -1,42 +1,47 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Joanna Wischer
-:slug: joanna-wischer
-:sort_name: Wischer
-:skill: administrator
-:linkedin: https://www.linkedin.com/in/joanna-miller-wischer-2b4239205/
-:positions:
-- :id: joanna-wischer-opm
-  :type: appointed
-  :category: wrecker
-  :agency: OPM
-  :start_date: 2025-01-20
-  :start_date_truth: verified
-  :description: Exc Appt NTE
-  :appt_type_code: 44
-  :appt_type: Schedule C
-  :excepted: true
-  :pd_code: 6A36647
-  :title: Senior Advisor to the Director
-  :title_type: advisor
-  :salary: "$167,603 - $195,200"
-  :series: '0301'
-  :supervisory: false
-  :office: Office of the Director
-  :comment: Sourced from a FOIA document; listed as Joanna Miller
-  :table_note: Salary range for GS-15 in DC; LinkedIn says she is working for OMB
-    "Made in America" initiative since March 2025
-  :source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
-- :id: wischer-omb
-  :agency: OMB
-  :type: appointed
-  :category: wrecker
-  :start_date: 2025-03-(31)~
-  :start_date_truth: reported
-  :table_note: OMB position as Joanna Miller
-  :title: Deputy Director
-  :title_type: dept_head
-  :office: Made In America
-  :salary: "$142,488"
-  :source:
+name: Joanna Wischer
+slug: joanna-wischer
+sort_name: Wischer
+skill: administrator
+linkedin: https://www.linkedin.com/in/joanna-miller-wischer-2b4239205/
+positions:
+
+- id: joanna-wischer-opm
+  type: appointed
+  category: wrecker
+  agency: OPM
+  start_date: 2025-01-20
+  start_date_truth: verified
+  description: Exc Appt NTE
+  appt_type_code: 44
+  appt_type: Schedule C
+  excepted: true
+  pd_code: 6A36647
+  title: Senior Advisor to the Director
+  title_type: advisor
+  salary: "$167,603 - $195,200"
+  series: '0301'
+  supervisory: false
+  office: Office of the Director
+  comment: Sourced from a FOIA document; listed as Joanna Miller
+  table_note: >-
+    Salary range for GS-15 in DC; LinkedIn says she is working for OMB "Made in America" initiative since
+    March 2025
+  source: https://www.documentcloud.org/documents/26028780-opm-new-hires/
+
+- id: wischer-omb
+  agency: OMB
+  type: appointed
+  category: wrecker
+  start_date: 2025-03-(31)~
+  start_date_truth: reported
+  table_note: OMB position as Joanna Miller
+  title: Deputy Director
+  title_type: dept_head
+  office: Made In America
+  salary: "$142,488"
+  source:
   - https://www.linkedin.com/in/joanna-miller-wischer-2b4239205/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring

@@ -1,427 +1,478 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Social Security Administration
-:id: SSA
-:short_name: SSA
-:slug: ssa
-:doge_base: true
-:page_slug: social-security
-:events:
-- :date: 2024-12-(15)~
-  :type: interagency
-  :fuzz: Date is just given as "mid-December"
-  :event: A contractor at the Social Security Administration arranges an introduction
-    for Leland Dudek to meet Steve Davis.
-  :named:
+name: Social Security Administration
+id: SSA
+short_name: SSA
+slug: ssa
+doge_base: true
+page_slug: social-security
+events:
+
+- date: 2024-12-(15)~
+  type: interagency
+  fuzz: Date is just given as "mid-December"
+  event: >-
+    A contractor at the Social Security Administration arranges an introduction for Leland Dudek to meet
+    Steve Davis.
+  named:
   - Leland Dudek
   - Steve Davis
-  :source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
-  :agency: SSA
-  :id: 2AXaug8A
-- :date: 2025-01-30
-  :type: interagency
-  :event: Leland Dudek reaches out to Tiffany Flick, the Associate Director of Budget,
-    Facilities and Security to inform her that Mike Russo and Scott Coulter would
-    be onboarding for DOGE. He was a mid-level employee at the time who would not
-    normally be coordinating inter-agency details like this.
-  :interagency_doge_reps:
-    :SSA:
+  source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
+  agency: SSA
+  id: 2AXaug8A
+
+- date: 2025-01-30
+  type: interagency
+  event: >-
+    Leland Dudek reaches out to Tiffany Flick, the Associate Director of Budget, Facilities and Security
+    to inform her that Mike Russo and Scott Coulter would be onboarding for DOGE. He was a mid-level employee
+    at the time who would not normally be coordinating inter-agency details like this.
+  interagency_doge_reps:
+    SSA:
     - Leland Dudek
-    :DOGE:
+    DOGE:
     - Mike Russo
     - Scott Coulter
-  :source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
-  :agency: SSA
-  :id: FP9n4cfD
-- :date: 2025-02-03
-  :type: onboard
-  :event: Mike Russo officially joins the agency as its new CIO. He then immediately
-    requests that Akash Bobba should be rapidly onboarded into the agency (but there
-    are issues with Bobba's background check).
-  :notable: true
-  :project: impunity
-  :named:
+  source: >-
+    https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
+  agency: SSA
+  id: FP9n4cfD
+
+- date: 2025-02-03
+  type: onboard
+  event: >-
+    Unidentified employee SSA-01 starts working at the SSA with the title of Expert and an annual salary
+    of $90,025.
+  named_aliases:
+  - SSA-01
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+  agency: SSA
+  id: 3cN52Ps5
+
+- date: 2025-02-03
+  type: onboard
+  event: >-
+    Mike Russo officially joins the agency as its new CIO. He then immediately requests that Akash Bobba
+    should be rapidly onboarded into the agency (but there are issues with Bobba's background check).
+  notable: true
+  project: impunity
+  named:
   - Mike Russo
   - Akash Bobba
-  :source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
-  :agency: SSA
-  :id: jUkabBTs
-- :date: 2025-02-03
-  :type: onboard
-  :event: Unidentified employee SSA-01 starts working at the SSA with the title of
-    Expert and an annual salary of $90,025.
-  :named_aliases:
-  - SSA-01
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
-  :agency: SSA
-  :id: 3cN52Ps5
-- :date: 2025-02-09
-  :type: official
-  :notable: true
-  :event: Elon Musk posts more tweets claiming to have discovered sources of "massive
-    fraud" within the SSA. These appear to be a misunderstanding of how erroneous
-    records that exist in the SSA database are already filtered out from receiving
-    benefits. Instead, he assumed that all erroneous records had received benefits
-    and thus this was the massive fraud.
-  :project: fraud
-  :source: https://xcancel.com/elonmusk/status/1888484555092312466
-  :named:
+  source: >-
+    https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
+  agency: SSA
+  id: jUkabBTs
+
+- date: 2025-02-09
+  type: official
+  notable: true
+  event: >-
+    Elon Musk posts more tweets claiming to have discovered sources of "massive fraud" within the SSA.
+    These appear to be a misunderstanding of how erroneous records that exist in the SSA database are
+    already filtered out from receiving benefits. Instead, he assumed that all erroneous records had received
+    benefits and thus this was the massive fraud.
+  project: fraud
+  source: https://xcancel.com/elonmusk/status/1888484555092312466
+  named:
   - Elon Musk
-  :agency: SSA
-  :id: 4jWM1sc2
-- :date: 2025-02-10
-  :type: report
-  :event: Mike Russo summons his new ally Leland Dudek to his office and asks him
-    to explain data discrepancies identified by Elon Musk. Leland convenes a team
-    of dozens of SSA engineers who review the data from the Treasury department and
-    document fallacies of DOGE's reasoning in a memo. Mike Russo rejects the memo's
-    conclusions by declaring that DOGE would not trust career civil servants and demanding
-    that Akash Bobba must do his own analysis.
-  :notable: true
-  :project: fraud
-  :named:
+  agency: SSA
+  id: 4jWM1sc2
+
+- date: 2025-02-10
+  type: report
+  event: >-
+    Mike Russo summons his new ally Leland Dudek to his office and asks him to explain data discrepancies
+    identified by Elon Musk. Leland convenes a team of dozens of SSA engineers who review the data from
+    the Treasury department and document fallacies of DOGE's reasoning in a memo. Mike Russo rejects the
+    memo's conclusions by declaring that DOGE would not trust career civil servants and demanding that
+    Akash Bobba must do his own analysis.
+  notable: true
+  project: fraud
+  named:
   - Leland Dudek
   - Mike Russo
   - Akash Bobba
-  :source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
-  :agency: SSA
-  :id: 4QdEVdg4
-- :date: 2025-02-10
-  :type: disruption
-  :event: Mike Russo and the DOGE chief of staff Steve Davis both demand that Akash
-    Bobba be onboarded at Social Security Administration before midnight, bypassing
-    the usual background security checks.
-  :project: impunity
-  :named:
+  source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
+  agency: SSA
+  id: 4QdEVdg4
+
+- date: 2025-02-10
+  type: disruption
+  event: >-
+    Mike Russo and the DOGE chief of staff Steve Davis both demand that Akash Bobba be onboarded at Social
+    Security Administration before midnight, bypassing the usual background security checks.
+  project: impunity
+  named:
   - Mike Russo
   - Steve Davis
   - Akash Bobba
-  :source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
-  :agency: SSA
-  :id: MDr4Wvod
-- :date: 2025-02-10
-  :type: sighting
-  :event: CIO Mike Russo convenes his own internal informational group in SSA where
-    he has conversations with DOGE staff at other agencies about novel ideas for sharing
-    sensitive SSA data. He does not inform Acting SSA Director, Michelle King.
-  :project:
-  - impunity
-  - fraud
-  :source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
-  :named:
-  - Leland Dudek
-  - Mike Russo
-  :agency: SSA
-  :id: hDrQoTQT
-- :date: 2025-02-10
-  :type: official
-  :event: According to the testimony of a whistleblower, the nominatee for agency
-    director, Frank Bisignano, orders through back channels that agency leadership
-    must onboard Mark Steffensen as an attorney at the SSA. He reportedly had coerced
-    senior SSA leadership to not hire anybody into roles without his explicit approval.
-  :notable: true
-  :project: impunity
-  :named:
+  source: >-
+    https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
+  agency: SSA
+  id: MDr4Wvod
+
+- date: 2025-02-10
+  type: official
+  event: >-
+    According to the testimony of a whistleblower, the nominatee for agency director, Frank Bisignano,
+    orders through back channels that agency leadership must onboard Mark Steffensen as an attorney at
+    the SSA. He reportedly had coerced senior SSA leadership to not hire anybody into roles without his
+    explicit approval.
+  notable: true
+  project: impunity
+  named:
   - Mark Steffensen
   - Frank Bisignano
-  :source: https://www.finance.senate.gov/imo/media/doc/ssa_whistleblower_statement.pdf
-  :agency: SSA
-  :id: fFM8X63i
-- :date: 2025-02-14
-  :type: official
-  :event: Leland Dudek is placed on administrative leave and is placed under investigation
-    that he committed inappropriate actions to assist DOGE's activities at the agency.
-  :case_no: 1:25-cv-00596
-  :named:
+  source: https://www.finance.senate.gov/imo/media/doc/ssa_whistleblower_statement.pdf
+  agency: SSA
+  id: fFM8X63i
+
+- date: 2025-02-10
+  type: sighting
+  event: >-
+    CIO Mike Russo convenes his own internal informational group in SSA where he has conversations with
+    DOGE staff at other agencies about novel ideas for sharing sensitive SSA data. He does not inform
+    Acting SSA Director, Michelle King.
+  project:
+  - impunity
+  - fraud
+  source: >-
+    https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
+  named:
   - Leland Dudek
-  :source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
-  :agency: SSA
-  :id: 2RMnQzW6
-- :date: 2025-02-15
-  :type: access
-  :event: SSA IT staff express concern to Acting Commissioner Michelle King that Akash
-    Bobba is accessing highly sensitive data provided by SSA remotely from an insecure
-    location (the DOGE enclave within OPM). This is in violation of the terms of his
-    signed access agreement.
-  :notable: true
-  :project: impunity
-  :source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
-  :case_no: 1:25-cv-00596
-  :named:
-  - Akash Bobba
-  :agency: SSA
-  :id: 7nTYjRY5
-- :date: 2025-02-15
-  :type: disruption
-  :event: Frustrated with the questions and concerns raised by Akash Bobba about technical
-    issues with the sandbox NUMIDENT data, Mike Russo complains directly to the Chief
-    CIO in the office of the OMB.
-  :project: impunity
-  :source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
-  :named:
+  - Mike Russo
+  agency: SSA
+  id: hDrQoTQT
+
+- date: 2025-02-14
+  type: official
+  event: >-
+    Leland Dudek is placed on administrative leave and is placed under investigation that he committed
+    inappropriate actions to assist DOGE's activities at the agency.
+  case_no: 1:25-cv-00596
+  named:
+  - Leland Dudek
+  source: >-
+    https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
+  agency: SSA
+  id: 2RMnQzW6
+
+- date: 2025-02-15
+  type: disruption
+  event: >-
+    Frustrated with the questions and concerns raised by Akash Bobba about technical issues with the sandbox
+    NUMIDENT data, Mike Russo complains directly to the Chief CIO in the office of the OMB.
+  project: impunity
+  source: >-
+    https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
+  named:
   - Mike Russo
   - Akash Bobba
-  :case_no: 1:25-cv-00596
-  :agency: SSA
-  :id: 2yiF5Rth
-- :date: 2025-02-16
-  :type: disruption
-  :event: The acting director of the Social Security Administration, Michelle King,
-    receives an email from the White House that she has been fired and Leland Dudek
-    is now the Acting Commissioner.
-  :notable: true
-  :project: impunity
-  :source: https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
-  :named:
-  - Leland Dudek
-  :agency: SSA
-  :id: bNXkArR5
-- :date: 2025-02-16
-  :type: official
-  :event: 'Elon Musk posts a tweet claiming that DOGE had uncovered fraud of millions
-    of people older than 120 who were collecting social security payments: "Maybe
-    Twilight is real and there are a lot of vampires collecting Social Security."
-    This data issue is real, but there is no indication that millions of people were
-    receiving improper payments'
-  :notable: true
-  :named:
+  case_no: 1:25-cv-00596
+  agency: SSA
+  id: 2yiF5Rth
+
+- date: 2025-02-15
+  type: access
+  event: >-
+    SSA IT staff express concern to Acting Commissioner Michelle King that Akash Bobba is accessing highly
+    sensitive data provided by SSA remotely from an insecure location (the DOGE enclave within OPM). This
+    is in violation of the terms of his signed access agreement.
+  notable: true
+  project: impunity
+  source: >-
+    https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
+  case_no: 1:25-cv-00596
+  named:
+  - Akash Bobba
+  agency: SSA
+  id: 7nTYjRY5
+
+- date: 2025-02-16
+  type: official
+  event: >-
+    Elon Musk posts a tweet claiming that DOGE had uncovered fraud of millions of people older than 120
+    who were collecting social security payments: "Maybe Twilight is real and there are a lot of vampires
+    collecting Social Security." This data issue is real, but there is no indication that millions of
+    people were receiving improper payments
+  notable: true
+  named:
   - Elon Musk
-  :source: https://xcancel.com/elonmusk/status/1891350795452654076
-  :project: fraud
-  :agency: SSA
-  :id: 2yM6UK4i
-- :date: 2025-02-18
-  :type: onboard
-  :event: Multiple unidentified DOGE staffers start working at SSA on the same day.
-    SSA-02 is detailed from NASA. SSA-07 is detailed from the DOL. SSA-10 arrives
-    from the GSA, and SSA-05 is detailed from DOGE itself.
-  :named_aliases:
+  source: https://xcancel.com/elonmusk/status/1891350795452654076
+  project: fraud
+  agency: SSA
+  id: 2yM6UK4i
+
+- date: 2025-02-16
+  type: disruption
+  event: >-
+    The acting director of the Social Security Administration, Michelle King, receives an email from the
+    White House that she has been fired and Leland Dudek is now the Acting Commissioner.
+  notable: true
+  project: impunity
+  source: >-
+    https://www.washingtonpost.com/documents/e08aeb0c-ec70-4235-91a0-290da92067b5.pdf?itid=lk_inline_manual_5
+  named:
+  - Leland Dudek
+  agency: SSA
+  id: bNXkArR5
+
+- date: 2025-02-18
+  type: onboard
+  event: >-
+    Multiple unidentified DOGE staffers start working at SSA on the same day. SSA-02 is detailed from
+    NASA. SSA-07 is detailed from the DOL. SSA-10 arrives from the GSA, and SSA-05 is detailed from DOGE
+    itself.
+  named_aliases:
   - SSA-07
   - SSA-02
   - SSA-10
   - SSA-05
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
-  :agency: SSA
-  :id: 2j2L2gpw
-- :date: 2025-02-19
-  :type: official
-  :event: SSA CIO Mike Russo emails Leland Dudek request access to SSA's Enterprise
-    Data Warehouse (EDW) for several "members of [his] team." This includes access
-    to the NUMIDENT list of all social security records, Master Beneficiary Record
-    (MBR) and Supplemental Security Record (SSR) master records, as well as copies
-    of SSA payment files which SSA transmits to the Department of the Treasury's Bureau
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+  agency: SSA
+  id: 2j2L2gpw
+
+- date: 2025-02-19
+  type: official
+  event: >-
+    SSA CIO Mike Russo emails Leland Dudek request access to SSA's Enterprise Data Warehouse (EDW) for
+    several "members of [his] team." This includes access to the NUMIDENT list of all social security
+    records, Master Beneficiary Record (MBR) and Supplemental Security Record (SSR) master records, as
+    well as copies of SSA payment files which SSA transmits to the Department of the Treasury's Bureau
     of the Fiscal Service (BFS) for payment.
-  :notable: true
-  :project:
+  notable: true
+  project:
   - fraud
   - spending
-  :named:
+  named:
   - Leland Dudek
   - Mike Russo
-  :case_no: 1:25-cv-00596
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-  :agency: SSA
-  :id: GVnA5vun
-- :date: 2025-02-20
-  :type: directory
-  :source: https://www.thehandbasket.co/p/leland-dudek-ssa-doge
-  :event: Several DOGE staffers working at the agency are identified by Social Security
-    Works (a nonprofit advocacy group).
-  :named:
+  case_no: 1:25-cv-00596
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
+  agency: SSA
+  id: GVnA5vun
+
+- date: 2025-02-20
+  type: directory
+  source: https://www.thehandbasket.co/p/leland-dudek-ssa-doge
+  event: >-
+    Several DOGE staffers working at the agency are identified by Social Security Works (a nonprofit advocacy
+    group).
+  named:
   - Leland Dudek
   - Ethan Shaotran
   - Nikhil Rajpal
   - Cole Killian
   - Marko Elez
-  :agency: SSA
-  :id: 2mX9HegN
-- :date: 2025-02-22
-  :type: onboard
-  :event: Unidentfied alias SSA-03 is detailed over from the Department of Labor
-  :named_aliases:
+  agency: SSA
+  id: 2mX9HegN
+
+- date: 2025-02-22
+  type: onboard
+  event: Unidentfied alias SSA-03 is detailed over from the Department of Labor
+  named_aliases:
   - SSA-03
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
-  :agency: SSA
-  :id: 41kLYAxx
-- :date: 2025-02-23
-  :type: onboard
-  :event: Social Security Administration onboards 3 more unidentified DOGE staffers
-    – SSA-06, SSA-04, and SSA-09 – as volunteers with the title of Expert.
-  :named_aliases:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+  agency: SSA
+  id: 41kLYAxx
+
+- date: 2025-02-23
+  type: onboard
+  event: >-
+    Social Security Administration onboards 3 more unidentified DOGE staffers – SSA-06, SSA-04, and SSA-09
+    – as volunteers with the title of Expert.
+  named_aliases:
   - SSA-06
   - SSA-04
   - SSA-09
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
-  :agency: SSA
-  :id: 5cMzKdBH
-- :date: 2025-02-24
-  :type: disruption
-  :event: The Social Security Administration eliminates an internal team of technologists
-    called the Office of Transformation that was working to modernize SSA processes.
-    Although officially made by Leland Dudek, this direction was given by Scott Coulter.
-  :project: impunity
-  :named:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+  agency: SSA
+  id: 5cMzKdBH
+
+- date: 2025-02-24
+  type: disruption
+  event: >-
+    The Social Security Administration eliminates an internal team of technologists called the Office
+    of Transformation that was working to modernize SSA processes. Although officially made by Leland
+    Dudek, this direction was given by Scott Coulter.
+  project: impunity
+  named:
   - Leland Dudek
   - Scott Coulter
-  :source:
+  source:
   - https://www.ssa.gov/news/en/press/releases/2025-02-24.html
   - https://www.propublica.org/article/inside-doge-social-security-takeover-leland-dudek
-  :agency: SSA
-  :id: 3ttBbSnR
-- :date: 2025-02-(25)~
-  :type: disruption
-  :event: A whistleblower at SSA, Jeremiah Schofield, is summoned to the first of
-    4 subsequent meetings with DOGE staff. These meetings are not scheduled in SSA
-    systems to avoid any records. They also took place in an unused portion of the
-    building. Both a SSA security guard and private security were on hand to prevent
-    access by other staff. He met with Antonio Gracias, Jon Koval and Peyton Rehling,
-    all of whom appeared to have access to sensitive systems and were using nonstandard
-    and possibly personal laptops. All three identified themselves as volunteers and
-    said their purpose at the agency was to identify fraud and people who should not
-    have social security numbers.
-  :project:
+  agency: SSA
+  id: 3ttBbSnR
+
+- date: 2025-02-(25)~
+  type: disruption
+  event: >-
+    A whistleblower at SSA, Jeremiah Schofield, is summoned to the first of 4 subsequent meetings with
+    DOGE staff. These meetings are not scheduled in SSA systems to avoid any records. They also took place
+    in an unused portion of the building. Both a SSA security guard and private security were on hand
+    to prevent access by other staff. He met with Antonio Gracias, Jon Koval and Peyton Rehling, all of
+    whom appeared to have access to sensitive systems and were using nonstandard and possibly personal
+    laptops. All three identified themselves as volunteers and said their purpose at the agency was to
+    identify fraud and people who should not have social security numbers.
+  project:
   - fraud
   - immigration
-  :source: https://www.hsgac.senate.gov/wp-content/uploads/2026-6-4-Blumenthal-Warren-Letter-to-Jon-Koval.pdf
-  :named:
+  source: https://www.hsgac.senate.gov/wp-content/uploads/2026-6-4-Blumenthal-Warren-Letter-to-Jon-Koval.pdf
+  named:
   - Antonio Gracias
   - Jon Koval
   - Payton Rehling
-  :agency: SSA
-  :id: 7bLPTF5b
-- :date: 2025-02-26
-  :type: onboard
-  :event: One more unidentified DOGE staffer, SSA-08, is detailed to SSA from OPM.
-  :named_aliases:
+  agency: SSA
+  id: 7bLPTF5b
+
+- date: 2025-02-26
+  type: onboard
+  event: One more unidentified DOGE staffer, SSA-08, is detailed to SSA from OPM.
+  named_aliases:
   - SSA-08
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
-  :agency: SSA
-  :id: 4yjSK6Ou
-- :date: 2025-02-27
-  :type: disruption
-  :event: Ethan Shaotran contacts Leland Dudek to inform him that DOGE had identified
-    roughly 3 dozen federal contracts in Maine as "nonessential" and that "we should
-    cancel them" as retribution for the Maine governor publicly countering abuse from
-    the President over transgender athletes. Two of those contracts are for Social
-    Security services in the State.
-  :notable: true
-  :project:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.5_3.pdf
+  agency: SSA
+  id: 4yjSK6Ou
+
+- date: 2025-02-27
+  type: disruption
+  event: >-
+    Ethan Shaotran contacts Leland Dudek to inform him that DOGE had identified roughly 3 dozen federal
+    contracts in Maine as "nonessential" and that "we should cancel them" as retribution for the Maine
+    governor publicly countering abuse from the President over transgender athletes. Two of those contracts
+    are for Social Security services in the State.
+  notable: true
+  project:
   - dei
   - spending
-  :named:
+  named:
   - Leland Dudek
   - Ethan Shaotran
-  :source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
-  :agency: SSA
-  :id: 4Xh3hZ2F
-- :date: 2025-02-28
-  :type: official
-  :event: Via email, SSA-05 at the DOGE team at SSA requests and receives approval
-    from Leland Dudek to run a program to identify unrealistically old people in the
-    SSA database. Scott Coulter is cc'ed on the approval.
-  :project: fraud
-  :named:
+  source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
+  agency: SSA
+  id: 4Xh3hZ2F
+
+- date: 2025-02-28
+  type: official
+  event: >-
+    Via email, SSA-05 at the DOGE team at SSA requests and receives approval from Leland Dudek to run
+    a program to identify unrealistically old people in the SSA database. Scott Coulter is cc'ed on the
+    approval.
+  project: fraud
+  named:
   - Leland Dudek
   - Scott Coulter
-  :named_aliases:
+  named_aliases:
   - SSA-05
-  :case_no: 1:25-cv-00596
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-  :agency: SSA
-  :id: 5KzocaBU
-- :date: 2025-03-XX
-  :type: disruption
-  :event: A DOGE team at SSA consisting of Antonio Gracias, Jon Koval and Payton Rehling
-    continues to meet with SSA staff to discuss fraud. They become focused on records
-    in the NUMIDENT system that have no death date. Despite explanations from SSA
-    Staff that the missing death dates do not indicate fraud, the DOGE team insists
-    that the death dates be corrected. This continues to be a top priority for the
-    White House and Elon Musk.
-  :project:
+  case_no: 1:25-cv-00596
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
+  agency: SSA
+  id: 5KzocaBU
+
+- date: 2025-03-XX
+  type: disruption
+  event: >-
+    A DOGE team at SSA consisting of Antonio Gracias, Jon Koval and Payton Rehling continues to meet with
+    SSA staff to discuss fraud. They become focused on records in the NUMIDENT system that have no death
+    date. Despite explanations from SSA Staff that the missing death dates do not indicate fraud, the
+    DOGE team insists that the death dates be corrected. This continues to be a top priority for the White
+    House and Elon Musk.
+  project:
   - fraud
   - immigration
-  :named:
+  named:
   - Antonio Gracias
   - Jon Koval
   - Payton Rehling
-  :source: https://www.hsgac.senate.gov/wp-content/uploads/2026-6-4-Blumenthal-Warren-Letter-to-Jon-Koval.pdf
-  :agency: SSA
-  :id: 2MSy9N4n
-- :date: 2025-03-03
-  :type: disruption
-  :event: An unidentified member of the DOGE team at the SSA emailed a password-protected
-    and encrypted file to DHS but also included Steve Davis at DOGE and an unidentified
-    DOGE team member at the Department of Labor (possibly Marko Elez or Aram Moghaddassi
-    who were detailed to SSA from DOL). SSA staff believes it contained sensitive
-    PII of approximately 1000 individuals, but the Chief Information Office has been
-    unable to determine more. Notably, the CIO role for SSA has been held by a rotation
-    of several DOGE staffers since February.
-  :notable: true
-  :project: immigration
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
-  :named:
+  source: https://www.hsgac.senate.gov/wp-content/uploads/2026-6-4-Blumenthal-Warren-Letter-to-Jon-Koval.pdf
+  agency: SSA
+  id: 2MSy9N4n
+
+- date: 2025-03-03
+  type: disruption
+  event: >-
+    An unidentified member of the DOGE team at the SSA emailed a password-protected and encrypted file
+    to DHS but also included Steve Davis at DOGE and an unidentified DOGE team member at the Department
+    of Labor (possibly Marko Elez or Aram Moghaddassi who were detailed to SSA from DOL). SSA staff believes
+    it contained sensitive PII of approximately 1000 individuals, but the Chief Information Office has
+    been unable to determine more. Notably, the CIO role for SSA has been held by a rotation of several
+    DOGE staffers since February.
+  notable: true
+  project: immigration
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
+  named:
   - Steve Davis
-  :linked:
+  linked:
   - Aram Moghaddassi
   - Marko Elez
-  :agency: SSA
-  :id: 35aLkwTi
-- :date: 2025-03-04
-  :type: sighting
-  :event: In a meeting, Dudek stresses again that DOGE will make mistakes and also
-    admits "I am receiving decisions that are made without my input. I have to effectuate
-    those decisions," suggesting DOGE is in charge at the agency.
-  :source: https://www.washingtonpost.com/politics/2025/03/06/doge-is-driving-social-security-cuts-will-make-mistakes-acting-head-says-privately/
-  :named:
+  agency: SSA
+  id: 35aLkwTi
+
+- date: 2025-03-04
+  type: sighting
+  event: >-
+    In a meeting, Dudek stresses again that DOGE will make mistakes and also admits "I am receiving decisions
+    that are made without my input. I have to effectuate those decisions," suggesting DOGE is in charge
+    at the agency.
+  source: >-
+    https://www.washingtonpost.com/politics/2025/03/06/doge-is-driving-social-security-cuts-will-make-mistakes-acting-head-says-privately/
+  named:
   - Leland Dudek
-  :agency: SSA
-  :id: n33reAGA
-- :date: 2025-03-07
-  :type: access
-  :event: Starting from this data and continuing until March 17, members of the DOGE
-    team at SSA were using servers at Cloudflare to share SSA data (the exact product
-    is not identified, but it could be the D1 system for SQL databases). Needless
-    to say, Cloudflare is not approved by SSA for storing sensitive data, and SSA
-    staff have been unable to determine what data was shared and if it is still hosted
-    on Cloudflare systems.
-  :notable: true
-  :project:
+  agency: SSA
+  id: n33reAGA
+
+- date: 2025-03-07
+  type: official
+  event: >-
+    After political blowback causes SSA to reverse its decision to cancel some contracts for the state
+    of Maine, Leland Dudek posts an offical apology claiming it was his decision to cancel the contracts.
+    This is a deliberate misdirection from DOGE's role in the action.
+  notable: true
+  source: https://www.ssa.gov/news/press/releases/2025/#2025-03-07
+  agency: SSA
+  id: 62L1c5Ar
+
+- date: 2025-03-07
+  type: access
+  event: >-
+    Starting from this data and continuing until March 17, members of the DOGE team at SSA were using
+    servers at Cloudflare to share SSA data (the exact product is not identified, but it could be the
+    D1 system for SQL databases). Needless to say, Cloudflare is not approved by SSA for storing sensitive
+    data, and SSA staff have been unable to determine what data was shared and if it is still hosted on
+    Cloudflare systems.
+  notable: true
+  project:
   - impunity
   - fraud
   - immigration
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
-  :agency: SSA
-  :id: 6LbNdKWk
-- :date: 2025-03-07
-  :type: official
-  :event: After political blowback causes SSA to reverse its decision to cancel some
-    contracts for the state of Maine, Leland Dudek posts an offical apology claiming
-    it was his decision to cancel the contracts. This is a deliberate misdirection
-    from DOGE's role in the action.
-  :notable: true
-  :source: https://www.ssa.gov/news/press/releases/2025/#2025-03-07
-  :agency: SSA
-  :id: 62L1c5Ar
-- :date: 2025-03-12
-  :type: access
-  :event: In an inventory of system access on March 12, SSA staff determined the following
-    access had been granted before it was revoked on March 24th. Three DOGE team members
-    had been granted access to a workforce system. Two were granted access to security
-    systems to revoke employee access to systems and facilities. Six DOGE team members
-    were granted access to a workspace to share data among each other. Two DOGE members
-    had access to a data visualization tool which could provide PII. And two DOGE
-    employees were given expanded access to the Enterprise Data Warehouse.
-  :notable: true
-  :project: personnel
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
-  :agency: SSA
-  :id: 6EfaSINE
-- :date: 2025-03-12
-  :type: directory
-  :event: 'In a sworn declaration, Florence Felix-Lawson notes "the SSA DOGE Team
-    currently consists of ten SSA employees: four SSA special government employees
-    (Employees 1, 4, 6, and 9) and six detailees to SSA from other government agencies
-    and offices (Employees 2, 3, 5, 7, 8, and 10)"'
-  :named_aliases:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
+  agency: SSA
+  id: 6LbNdKWk
+
+- date: 2025-03-12
+  type: access
+  event: >-
+    In an inventory of system access on March 12, SSA staff determined the following access had been granted
+    before it was revoked on March 24th. Three DOGE team members had been granted access to a workforce
+    system. Two were granted access to security systems to revoke employee access to systems and facilities.
+    Six DOGE team members were granted access to a workspace to share data among each other. Two DOGE
+    members had access to a data visualization tool which could provide PII. And two DOGE employees were
+    given expanded access to the Enterprise Data Warehouse.
+  notable: true
+  project: personnel
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
+  agency: SSA
+  id: 6EfaSINE
+
+- date: 2025-03-12
+  type: directory
+  event: >-
+    In a sworn declaration, Florence Felix-Lawson notes "the SSA DOGE Team currently consists of ten SSA
+    employees: four SSA special government employees (Employees 1, 4, 6, and 9) and six detailees to SSA
+    from other government agencies and offices (Employees 2, 3, 5, 7, 8, and 10)"
+  named_aliases:
   - SSA-01
   - SSA-02
   - SSA-03
@@ -432,24 +483,29 @@
   - SSA-08
   - SSA-09
   - SSA-10
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.53.1.pdf
-  :case_no: 1:25-cv-00339
-  :agency: SSA
-  :id: 7mtGbnRJ
-- :date: 2025-03-12
-  :type: disruption
-  :event: Multiple SSA employees told ProPublica, their tech systems now seem to be
-    crashing nearly every day, leading to more delays in serving beneficiaries.
-  :source: https://www.propublica.org/article/recording-reveals-leland-dudek-thoughts-trump-doge-social-security
-  :agency: SSA
-  :project: fraud
-  :id: THR2ZpQK
-- :date: 2025-03-13
-  :source: https://www.wired.com/story/doge-operatives-access-social-security-administration/
-  :type: directory
-  :event: Wired reports that 10 DOGE staffers are currently visible in the Microsoft
-    Teams directory of all employees at SSA
-  :named:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.53.1.pdf
+  case_no: 1:25-cv-00339
+  agency: SSA
+  id: 7mtGbnRJ
+
+- date: 2025-03-12
+  type: disruption
+  event: >-
+    Multiple SSA employees told ProPublica, their tech systems now seem to be crashing nearly every day,
+    leading to more delays in serving beneficiaries.
+  source: >-
+    https://www.propublica.org/article/recording-reveals-leland-dudek-thoughts-trump-doge-social-security
+  agency: SSA
+  project: fraud
+  id: THR2ZpQK
+
+- date: 2025-03-13
+  source: https://www.wired.com/story/doge-operatives-access-social-security-administration/
+  type: directory
+  event: >-
+    Wired reports that 10 DOGE staffers are currently visible in the Microsoft Teams directory of all
+    employees at SSA
+  named:
   - Akash Bobba
   - Scott Coulter
   - Marko Elez
@@ -460,851 +516,949 @@
   - Nikhil Rajpal
   - Payton Rehling
   - Ethan Shaotran
-  :agency: SSA
-  :id: fPNqSkT8
-- :date: 2025-03-14
-  :type: access
-  :event: Leland Dudek grants approval for SSA-05 to run the proposed tool for modifying
-    the death data records to eliminate implausibly old people. DOGE was convinced
-    these data errors were a massive source of fraud, despite evidence to the contrary
-    from SSA staff and concerns that correcting the data would be a waste of time.
-  :notable: true
-  :project: fraud
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-  :case_no: 1:25-cv-00596
-  :named_aliases:
+  agency: SSA
+  id: fPNqSkT8
+
+- date: 2025-03-14
+  type: access
+  event: >-
+    Leland Dudek grants approval for SSA-05 to run the proposed tool for modifying the death data records
+    to eliminate implausibly old people. DOGE was convinced these data errors were a massive source of
+    fraud, despite evidence to the contrary from SSA staff and concerns that correcting the data would
+    be a waste of time.
+  notable: true
+  project: fraud
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
+  case_no: 1:25-cv-00596
+  named_aliases:
   - SSA-05
-  :agency: SSA
-  :id: SYJpQj5D
-- :date: 2025-03-17
-  :type: access
-  :event: The Enterprise Data Warehouse (EDW) team at Social Security discovers that
-    DOGE's access to the EDW was not authorized through the standard process.
-  :source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
-  :project: impunity
-  :agency: SSA
-  :id: c2iTWFbX
-- :date: 2025-03-19
-  :type: access
-  :event: Leland Dudek approves access for "Employee 9" of the DOGE team at SSA to
-    view some additional schemas in the PSSNAP database of Social Security Applications
-    conducted over the phone.
-  :named_aliases:
+  agency: SSA
+  id: SYJpQj5D
+
+- date: 2025-03-17
+  type: access
+  event: >-
+    The Enterprise Data Warehouse (EDW) team at Social Security discovers that DOGE's access to the EDW
+    was not authorized through the standard process.
+  source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+  project: impunity
+  agency: SSA
+  id: c2iTWFbX
+
+- date: 2025-03-19
+  type: access
+  event: >-
+    Leland Dudek approves access for "Employee 9" of the DOGE team at SSA to view some additional schemas
+    in the PSSNAP database of Social Security Applications conducted over the phone.
+  named_aliases:
   - SSA-09
-  :comment: Name redacted in court filing
-  :project: fraud
-  :case_no: 1:25-cv-00596
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
-  :agency: SSA
-  :id: Pej3DDWx
-- :date: 2025-03-20
-  :type: legal
-  :event: In a ruling for _AFL-CIO vs. SSA_, Judge Hollander grants a temporary restraining
-    order enjoining DOGE from having any access to SSA systems or installing any software
-    as well as ordering them to delete any data in their possession.
-  :project:
+  comment: Name redacted in court filing
+  project: fraud
+  case_no: 1:25-cv-00596
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.121.3.pdf
+  agency: SSA
+  id: Pej3DDWx
+
+- date: 2025-03-20
+  type: disruption
+  event: >-
+    Leland Dudek threatens to shut down the entire Social Security Administration instead of complying
+    with the court order to block access for DOGE. He reportedly reaches this conclusion based on the
+    advice of two unnamed senior DOGE leaders.
+  notable: true
+  project:
   - impunity
   - fraud
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.48.0.pdf
-  :case_no: 1:25-cv-00596
-  :agency: SSA
-  :id: 6M6gitcg
-- :date: 2025-03-20
-  :type: disruption
-  :event: Leland Dudek threatens to shut down the entire Social Security Administration
-    instead of complying with the court order to block access for DOGE. He reportedly
-    reaches this conclusion based on the advice of two unnamed senior DOGE leaders.
-  :notable: true
-  :project:
-  - impunity
-  - fraud
-  :named:
+  named:
   - Leland Dudek
-  :source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
-  :agency: SSA
-  :id: 4F9jgz4j
-- :date: 2025-03-21
-  :type: access
-  :event: Less than 24 hours after DOGE's access was revoked by the temporary restraining
-    order, senior members of the EDW team receive emails ordering them to restore
-    access for two members of the DOGE team. Furthermore, they were ordered to grant
-    them additional expanded privileges.
-  :project: impunity
-  :source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
-  :agency: SSA
-  :id: 78mrZQrX
-- :date: 2025-03-24
-  :type: disruption
-  :event: After members of an unidentified political advocacy group contacted two
-    members of the DOGE team at SSA, one of the DOGE members signed a Voter Data Agreement
-    to share data. The group was looking for data to accuse states of fraud to overturn
-    election results. The DOGE team member did not consult SSA lawyers or follow any
-    mandatory clearance procedures for sharing data with outside entities. It is unclear
-    if they sent data, but the two employees were referred for investigation of violating
-    the Hatch Act in December 2025, which forbids government officials from partisan
-    political activities.
-  :notable: true
-  :project:
+  source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
+  agency: SSA
+  id: 4F9jgz4j
+
+- date: 2025-03-20
+  type: legal
+  event: >-
+    In a ruling for _AFL-CIO vs. SSA_, Judge Hollander grants a temporary restraining order enjoining
+    DOGE from having any access to SSA systems or installing any software as well as ordering them to
+    delete any data in their possession.
+  project:
+  - impunity
+  - fraud
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.48.0.pdf
+  case_no: 1:25-cv-00596
+  agency: SSA
+  id: 6M6gitcg
+
+- date: 2025-03-21
+  type: access
+  event: >-
+    Less than 24 hours after DOGE's access was revoked by the temporary restraining order, senior members
+    of the EDW team receive emails ordering them to restore access for two members of the DOGE team. Furthermore,
+    they were ordered to grant them additional expanded privileges.
+  project: impunity
+  source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+  agency: SSA
+  id: 78mrZQrX
+
+- date: 2025-03-24
+  type: disruption
+  event: >-
+    After members of an unidentified political advocacy group contacted two members of the DOGE team at
+    SSA, one of the DOGE members signed a Voter Data Agreement to share data. The group was looking for
+    data to accuse states of fraud to overturn election results. The DOGE team member did not consult
+    SSA lawyers or follow any mandatory clearance procedures for sharing data with outside entities. It
+    is unclear if they sent data, but the two employees were referred for investigation of violating the
+    Hatch Act in December 2025, which forbids government officials from partisan political activities.
+  notable: true
+  project:
   - impunity
   - immigration
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
-  :agency: SSA
-  :id: 1ddyOe0s
-- :date: 2025-03-24
-  :type: access
-  :event: An unidentified member of the DOGE team at Social Security Administration
-    was running queries against the NUMIDENT data in the Enterprise Data Warehouse
-    the morning on the same day that access was scheduled to be revoked.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
-  :agency: SSA
-  :id: pObGc4eJ
-- :date: 2025-03-24
-  :type: access
-  :event: The Social Security Administration's Office of Information Security (OIS)
-    revokes access for DOGE members again, restoring enforcement of the temporary
-    restraining order.
-  :source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
-  :agency: SSA
-  :id: 77hlovkP
-- :date: 2025-03-24
-  :type: disruption
-  :event: Mike Russo is abruptly removed from his CIO position by the Trump administration.
-    This is rumored to be retribution for complying quickly with the judicial ruling
-    to remove DOGE access.
-  :named:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
+  agency: SSA
+  id: 1ddyOe0s
+
+- date: 2025-03-24
+  type: access
+  event: >-
+    The Social Security Administration's Office of Information Security (OIS) revokes access for DOGE
+    members again, restoring enforcement of the temporary restraining order.
+  source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+  agency: SSA
+  id: 77hlovkP
+
+- date: 2025-03-24
+  type: disruption
+  event: >-
+    Mike Russo is abruptly removed from his CIO position by the Trump administration. This is rumored
+    to be retribution for complying quickly with the judicial ruling to remove DOGE access.
+  named:
   - Mike Russo
-  :source: https://www.washingtonpost.com/politics/2025/04/15/doge-social-security-data-judge/
-  :agency: SSA
-  :id: JwRuCtBS
-- :date: 2025-03-25
-  :type: disruption
-  :event: 'An unidentified DOGE staffer at SSA sends an email to an outside voter
-    advocacy group sharing some SSA data related to elections. The email continues:
-    "We have spent many hours on many aspects of REDACTED elections" and asking the
-    recipient to reach out if they have any theories about past elections that they
-    would like to discuss further, concluding with the statement "We live for this!"'
-  :source: https://www.democracydocket.com/news-alerts/exclusive-new-records-show-paper-trail-of-doge-voter-data-pact-with-election-deniers/
-  :project: immigration
-  :agency: SSA
-  :id: 6HVWPcEZ
-- :date: 2025-03-26
-  :type: disruption
-  :event: During his confirmation hearing, Frank Bisignano, the nominee to run the
-    agency, confirms that he had coordinated with Michael Russo but denied a whistleblower
-    report that he had ordered the appointment of other DOGE staff there.
-  :project: impunity
-  :named:
+  source: https://www.washingtonpost.com/politics/2025/04/15/doge-social-security-data-judge/
+  agency: SSA
+  id: JwRuCtBS
+
+- date: 2025-03-24
+  type: access
+  event: >-
+    An unidentified member of the DOGE team at Social Security Administration was running queries against
+    the NUMIDENT data in the Enterprise Data Warehouse the morning on the same day that access was scheduled
+    to be revoked.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
+  agency: SSA
+  id: pObGc4eJ
+
+- date: 2025-03-25
+  type: disruption
+  event: >-
+    An unidentified DOGE staffer at SSA sends an email to an outside voter advocacy group sharing some
+    SSA data related to elections. The email continues: "We have spent many hours on many aspects of REDACTED
+    elections" and asking the recipient to reach out if they have any theories about past elections that
+    they would like to discuss further, concluding with the statement "We live for this!"
+  source: >-
+    https://www.democracydocket.com/news-alerts/exclusive-new-records-show-paper-trail-of-doge-voter-data-pact-with-election-deniers/
+  project: immigration
+  agency: SSA
+  id: 6HVWPcEZ
+
+- date: 2025-03-26
+  type: disruption
+  event: >-
+    During his confirmation hearing, Frank Bisignano, the nominee to run the agency, confirms that he
+    had coordinated with Michael Russo but denied a whistleblower report that he had ordered the appointment
+    of other DOGE staff there.
+  project: impunity
+  named:
   - Leland Dudek
   - Mike Russo
   - Frank Bisignano
-  :source: https://thehill.com/homenews/5212751-sen-wyden-questions-bisignano/
-  :agency: SSA
-  :id: akUHUm4h
-- :date: 2025-03-27
-  :type: disruption
-  :event: The Social Security Administration ends a Biden-era rule that limited clawbacks
-    for overpayments to 10% per check (to prior policy of taking entire checks).
-  :project: fraud
-  :source: https://www.cbsnews.com/news/social-security-benefits-clawback-overpayment-100-percent-march-27-doge/
-  :agency: SSA
-  :id: iS2sD8AU
-- :date: 2025-03-27
-  :type: access
-  :event: In a sworn declaration, Leland Dudek justifies access to PII in SSA records
-    for SSA-01, SSA-05, SSA-08 and SSA-09 on the DOGE team. This access is granted
-    through the SSA's Enterprise Data Warehouse (EDW) system. He asserts that DOGE
-    staff are being granted only the minimum levels of schema access required.
-  :project: fraud
-  :named_aliases:
+  source: https://thehill.com/homenews/5212751-sen-wyden-questions-bisignano/
+  agency: SSA
+  id: akUHUm4h
+
+- date: 2025-03-27
+  type: disruption
+  event: >-
+    In an interview on FOX News, Aram Moghaddassi mangles a statistic that 40% of fraud involved a call
+    to a service center to change direct deposit information. He instead announces that 40% of all calls
+    to the SSA are fraudlent. The claim is amplified across conservative media and the White House refuses
+    to correct.
+  notable: true
+  source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
+  named:
+  - Aram Moghaddassi
+  project: fraud
+  agency: SSA
+  id: 3IbH1H53
+
+- date: 2025-03-27
+  type: access
+  event: >-
+    In a sworn declaration, Leland Dudek justifies access to PII in SSA records for SSA-01, SSA-05, SSA-08
+    and SSA-09 on the DOGE team. This access is granted through the SSA's Enterprise Data Warehouse (EDW)
+    system. He asserts that DOGE staff are being granted only the minimum levels of schema access required.
+  project: fraud
+  named_aliases:
   - SSA-01
   - SSA-05
   - SSA-08
   - SSA-09
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.62.1.pdf
-  :named:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.62.1.pdf
+  named:
   - Leland Dudek
-  :agency: SSA
-  :id: aympP8hu
-- :date: 2025-03-27
-  :type: disruption
-  :event: In an interview on FOX News, Aram Moghaddassi mangles a statistic that 40%
-    of fraud involved a call to a service center to change direct deposit information.
-    He instead announces that 40% of all calls to the SSA are fraudlent. The claim
-    is amplified across conservative media and the White House refuses to correct.
-  :notable: true
-  :source: https://www.nytimes.com/2025/06/16/us/politics/doge-social-security.html
-  :named:
+  agency: SSA
+  id: aympP8hu
+
+- date: 2025-03-27
+  type: disruption
+  event: >-
+    The Social Security Administration ends a Biden-era rule that limited clawbacks for overpayments to
+    10% per check (to prior policy of taking entire checks).
+  project: fraud
+  source: >-
+    https://www.cbsnews.com/news/social-security-benefits-clawback-overpayment-100-percent-march-27-doge/
+  agency: SSA
+  id: iS2sD8AU
+
+- date: 2025-03-28
+  type: official
+  event: >-
+    As part of an interview on Fox News, Aram Moghaddassi spreads an incorrect statistic that states 40%
+    of all phones calls to SSA are from people committing fraud.
+  project: fraud
+  named:
   - Aram Moghaddassi
-  :project: fraud
-  :agency: SSA
-  :id: 3IbH1H53
-- :date: 2025-03-28
-  :type: disruption
-  :event: Reports emerge that DOGE is planning to rewrite the entire COBOL codebase
-    for Social Security to Java in months using generative AI.
-  :notable: true
-  :project:
-  - modernization
-  :named:
-  - Steve Davis
-  :source: https://www.wired.com/story/doge-rebuild-social-security-administration-cobol-benefits/
-  :agency: SSA
-  :id: jMMy9Nk9
-- :date: 2025-03-28
-  :type: disruption
-  :event: The Deputy CIO for Infrastructure/IT at SSA acknowledges an increased number
-    of network crashes due to a newly-introduced fraud checking system created and
-    rushed into production by DOGE.
-  :project:
+  source: https://www.washingtonpost.com/politics/2025/04/08/vance-social-security-fraud-false/
+  agency: SSA
+  id: A7EUkX2p
+
+- date: 2025-03-28
+  type: disruption
+  event: >-
+    The Deputy CIO for Infrastructure/IT at SSA acknowledges an increased number of network crashes due
+    to a newly-introduced fraud checking system created and rushed into production by DOGE.
+  project:
   - fraud
   - modernization
-  :source: https://www.washingtonpost.com/politics/2025/04/07/social-security-website-crashes-musk-trump/
-  :agency: SSA
-  :id: dUcMFmWb
-- :date: 2025-03-28
-  :type: official
-  :event: As part of an interview on Fox News, Aram Moghaddassi spreads an incorrect
-    statistic that states 40% of all phones calls to SSA are from people committing
-    fraud.
-  :project: fraud
-  :named:
-  - Aram Moghaddassi
-  :source: https://www.washingtonpost.com/politics/2025/04/08/vance-social-security-fraud-false/
-  :agency: SSA
-  :id: A7EUkX2p
-- :date: 2025-03-30
-  :type: disruption
-  :event: During campaign rallies in Wisconsin, Elon Musk and Antonio Gracias publish
-    a chart claiming to show an increase in social security numbers being granted
-    to noncitizens as evidence of voting fraud or benefits fraud by immigrants. The
-    problem is that these numbers are necessary for immigrants to work in roles, and
-    are used for paying taxes rather than receiving benefits, and the statistics were
-    from a program to replace a more cumbersome process for assigning SSN IDs. Based
-    on this interpretation, the Trump Administration argued for a change where applicants
-    would have to instead visit an already overstretched field office, a change that
-    is likely to both reduce tax income from immigrant workers and increase the per-person
-    cost from $8 to $51,000.
-  :notable: true
-  :project: fraud
-  :named:
+  source: https://www.washingtonpost.com/politics/2025/04/07/social-security-website-crashes-musk-trump/
+  agency: SSA
+  id: dUcMFmWb
+
+- date: 2025-03-28
+  type: disruption
+  event: >-
+    Reports emerge that DOGE is planning to rewrite the entire COBOL codebase for Social Security to Java
+    in months using generative AI.
+  notable: true
+  project:
+  - modernization
+  named:
+  - Steve Davis
+  source: https://www.wired.com/story/doge-rebuild-social-security-administration-cobol-benefits/
+  agency: SSA
+  id: jMMy9Nk9
+
+- date: 2025-03-30
+  type: disruption
+  event: >-
+    During campaign rallies in Wisconsin, Elon Musk and Antonio Gracias publish a chart claiming to show
+    an increase in social security numbers being granted to noncitizens as evidence of voting fraud or
+    benefits fraud by immigrants. The problem is that these numbers are necessary for immigrants to work
+    in roles, and are used for paying taxes rather than receiving benefits, and the statistics were from
+    a program to replace a more cumbersome process for assigning SSN IDs. Based on this interpretation,
+    the Trump Administration argued for a change where applicants would have to instead visit an already
+    overstretched field office, a change that is likely to both reduce tax income from immigrant workers
+    and increase the per-person cost from $8 to $51,000.
+  notable: true
+  project: fraud
+  named:
   - Antonio Gracias
   - Elon Musk
-  :source: https://www.washingtonpost.com/politics/2025/04/01/elon-musk-social-security-immigrants/
-  :agency: SSA
-  :id: BETG9iZr
-- :date: 2025-04-02
-  :type: disruption
-  :event: In an interview on Fox, Antonio Gracias makes misleading claims that DOGE
-    had discovered widespread voting fraud through joining social security data and
-    state voter rolls.
-  :notable: true
-  :project:
+  source: https://www.washingtonpost.com/politics/2025/04/01/elon-musk-social-security-immigrants/
+  agency: SSA
+  id: BETG9iZr
+
+- date: 2025-04-02
+  type: disruption
+  event: >-
+    In an interview on Fox, Antonio Gracias makes misleading claims that DOGE had discovered widespread
+    voting fraud through joining social security data and state voter rolls.
+  notable: true
+  project:
   - fraud
   - immigration
-  :named:
+  named:
   - Antonio Gracias
-  :agency: SSA
-  :source: https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting
-  :id: iUYtxUSw
-- :date: 2025-04-03
-  :type: disruption
-  :event: Social Security employees received an offer from the human resources department
-    for voluntary reassignments to "mission-critical" front-line roles in call services
-    and hearing offices to replace staff that were eliminated.
-  :project: personnel
-  :source: https://www.washingtonpost.com/politics/2025/04/04/social-security-layoffs-trump-musk/
-  :agency: SSA
-  :id: WQ7BVkDi
-- :date: 2025-04-04
-  :type: disruption
-  :event: DOGE staffers at SSA declare the need for widespread Reductions-in-Force
-    (RIFs) at the agency, despite a previous reduction in staffing of 7000 people
-    and notable degradations in service. Among other cuts, they suggest removing 800
-    people from the IT department of 4000.
-  :notable: true
-  :source: https://www.washingtonpost.com/politics/2025/04/04/social-security-layoffs-trump-musk/
-  :project:
+  agency: SSA
+  source: https://www.npr.org/2025/04/11/nx-s1-5352470/doge-musk-social-security-voting
+  id: iUYtxUSw
+
+- date: 2025-04-03
+  type: disruption
+  event: >-
+    Social Security employees received an offer from the human resources department for voluntary reassignments
+    to "mission-critical" front-line roles in call services and hearing offices to replace staff that
+    were eliminated.
+  project: personnel
+  source: https://www.washingtonpost.com/politics/2025/04/04/social-security-layoffs-trump-musk/
+  agency: SSA
+  id: WQ7BVkDi
+
+- date: 2025-04-04
+  type: disruption
+  event: >-
+    DOGE staffers at SSA declare the need for widespread Reductions-in-Force (RIFs) at the agency, despite
+    a previous reduction in staffing of 7000 people and notable degradations in service. Among other cuts,
+    they suggest removing 800 people from the IT department of 4000.
+  notable: true
+  source: https://www.washingtonpost.com/politics/2025/04/04/social-security-layoffs-trump-musk/
+  project:
   - elimination
   - personnel
-  :agency: SSA
-  :id: KqoNYw6T
-- :date: 2025-04-07
-  :type: disruption
-  :event: The Post confirms with multiple source that Social Security's website has
-    crashed repeatedly in recent weeks, with outages ranging from 20 minutes to an
-    entire day. They speculate this is due to the introduction of an expanded fraud
-    check system created by DOGE that wasn't tested for scalability before being deployed.
-  :project:
+  agency: SSA
+  id: KqoNYw6T
+
+- date: 2025-04-07
+  type: disruption
+  event: >-
+    The Post confirms with multiple source that Social Security's website has crashed repeatedly in recent
+    weeks, with outages ranging from 20 minutes to an entire day. They speculate this is due to the introduction
+    of an expanded fraud check system created by DOGE that wasn't tested for scalability before being
+    deployed.
+  project:
   - fraud
   - modernization
-  :source: https://www.washingtonpost.com/politics/2025/04/07/social-security-website-crashes-musk-trump/
-  :agency: SSA
-  :id: jkdURxvu
-- :date: 2025-04-08
-  :type: disruption
-  :event: Frustrated at the resistance by SSA staff to DHS' request, the CIO Scott
-    Coulter orders staff at the Office of Analytics and Improvements to make the changes
-    to NUMIDENT to declare 6000+ immigrants in the system as dead. When OAI took several
-    days to analyze the data set, he reportedly stated that he was getting direct
-    calls from the White House and that he would have John Solly do the task instead
-    (despite a restraining order against DOGE access to NUMIDENT). In their analysis,
-    OAI found ~40 cases with data discrepancies in their matching. The team was directed
-    to send that list to Aram Moghaddassi at a DHS email address.
-  :named:
+  source: https://www.washingtonpost.com/politics/2025/04/07/social-security-website-crashes-musk-trump/
+  agency: SSA
+  id: jkdURxvu
+
+- date: 2025-04-08
+  type: disruption
+  event: >-
+    Frustrated at the resistance by SSA staff to DHS' request, the CIO Scott Coulter orders staff at the
+    Office of Analytics and Improvements to make the changes to NUMIDENT to declare 6000+ immigrants in
+    the system as dead. When OAI took several days to analyze the data set, he reportedly stated that
+    he was getting direct calls from the White House and that he would have John Solly do the task instead
+    (despite a restraining order against DOGE access to NUMIDENT). In their analysis, OAI found ~40 cases
+    with data discrepancies in their matching. The team was directed to send that list to Aram Moghaddassi
+    at a DHS email address.
+  named:
   - Scott Coulter
   - Aram Moghaddassi
   - John Solly
-  :interagency_doge_reps:
-    :SSA:
+  interagency_doge_reps:
+    SSA:
     - Scott Coulter
     - John Solly
-    :DHS:
+    DHS:
     - Aram Moghaddassi
-  :source: https://www.hsgac.senate.gov/wp-content/uploads/2026-6-4-Blumenthal-Warren-Letter-to-Jon-Koval.pdf
-  :project: immigration
-  :agency: SSA
-  :id: 6E4RRi7I
-- :date: 2025-04-08
-  :type: access
-  :event: Aram Moghaddassi adds 6300 names of suspected immigrants to the "death master
-    file" as a way of forcing them to "self-deport" by making it impossible to use
-    financial products. This list included the names of 7 minors. All are given the
-    death date of March 8, 2025.
-  :notable: true
-  :named:
+  source: https://www.hsgac.senate.gov/wp-content/uploads/2026-6-4-Blumenthal-Warren-Letter-to-Jon-Koval.pdf
+  project: immigration
+  agency: SSA
+  id: 6E4RRi7I
+
+- date: 2025-04-08
+  type: access
+  event: >-
+    Aram Moghaddassi adds 6300 names of suspected immigrants to the "death master file" as a way of forcing
+    them to "self-deport" by making it impossible to use financial products. This list included the names
+    of 7 minors. All are given the death date of March 8, 2025.
+  notable: true
+  named:
   - Aram Moghaddassi
   - Scott Coulter
-  :project: immigration
-  :source:
+  project: immigration
+  source:
   - https://www.nytimes.com/2025/04/10/us/politics/migrants-deport-social-security-doge.html
   - https://www.hsgac.senate.gov/wp-content/uploads/2026-6-4-Blumenthal-Warren-Letter-to-Jon-Koval.pdf
-  :agency: SSA
-  :id: H45eMwSg
-- :date: 2025-04-10
-  :type: disruption
-  :event: Greg Pearre, a senior career executive overseeing technologists at the SSA,
-    is forced out of his office by security guards after clashing with CIO Scott Coulter
-    and calling his plan to forcibly declare immigrants dead both illegal and cruel.
-  :notable: true
-  :project:
+  agency: SSA
+  id: H45eMwSg
+
+- date: 2025-04-10
+  type: access
+  event: >-
+    102 more names of living people are added to the Master Death File at SSA to destroy their ability
+    to participate in society and to "self-deport" as a result.
+  project: immigration
+  named:
+  - Scott Coulter
+  linked:
+  - Aram Moghaddassi
+  source: https://www.washingtonpost.com/politics/2025/04/12/trump-immigrants-dead-social-security/
+  agency: SSA
+  id: 73c95ZcV
+
+- date: 2025-04-10
+  type: disruption
+  event: >-
+    Greg Pearre, a senior career executive overseeing technologists at the SSA, is forced out of his office
+    by security guards after clashing with CIO Scott Coulter and calling his plan to forcibly declare
+    immigrants dead both illegal and cruel.
+  notable: true
+  project:
   - immigration
   - impunity
-  :named:
+  named:
   - Scott Coulter
-  :linked:
+  linked:
   - Aram Moghaddassi
-  :source: https://www.washingtonpost.com/politics/2025/04/12/trump-immigrants-dead-social-security/
-  :agency: SSA
-  :id: g6zvQNcw
-- :date: 2025-04-10
-  :type: access
-  :event: 102 more names of living people are added to the Master Death File at SSA
-    to destroy their ability to participate in society and to "self-deport" as a result.
-  :project: immigration
-  :named:
-  - Scott Coulter
-  :linked:
-  - Aram Moghaddassi
-  :source: https://www.washingtonpost.com/politics/2025/04/12/trump-immigrants-dead-social-security/
-  :agency: SSA
-  :id: 73c95ZcV
-- :date: 2025-04-11
-  :type: disruption
-  :event: The Social Security Agency is reportedly shifting all its official communications
-    exclusively to X.
-  :source: https://www.wired.com/story/social-security-administration-regional-office-elon-musk-x/
-  :agency: SSA
-  :id: 2w5BGWW3
-- :date: 2025-04-14
-  :type: legal
-  :case_no: 1:25-cv-00596
-  :event: The Trump Administration files a formal motion to protect the identities
-    of DOGE staff at the agency in filings. This explains the redactions of DOGE names
-    in filings.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.134.0.pdf
-  :agency: SSA
-  :id: MCmDjbX8
-- :date: 2025-04-17
-  :type: access
-  :event: Social Security introduces a new AI chatbot to help with general agency
-    tasks but built from general OpenAI models and not trained on SSA data or content.
-  :project: modernization
-  :source: https://www.nextgov.com/artificial-intelligence/2025/04/ssa-rolling-out-new-chatbot-employees/404658/
-  :agency: SSA
-  :id: SH9bwWog
-- :date: 2025-04-18
-  :type: disruption
-  :event: Some immigrants have been forced to prove they aren't dead after being added
-    to the Master Death File in an attempt to force them to "self-deport." The White
-    House had falsely claimed nobody was really declared dead.
-  :project: immigration
-  :linked:
+  source: https://www.washingtonpost.com/politics/2025/04/12/trump-immigrants-dead-social-security/
+  agency: SSA
+  id: g6zvQNcw
+
+- date: 2025-04-11
+  type: disruption
+  event: The Social Security Agency is reportedly shifting all its official communications exclusively
+    to X.
+  source: https://www.wired.com/story/social-security-administration-regional-office-elon-musk-x/
+  agency: SSA
+  id: 2w5BGWW3
+
+- date: 2025-04-14
+  type: legal
+  case_no: 1:25-cv-00596
+  event: >-
+    The Trump Administration files a formal motion to protect the identities of DOGE staff at the agency
+    in filings. This explains the redactions of DOGE names in filings.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.134.0.pdf
+  agency: SSA
+  id: MCmDjbX8
+
+- date: 2025-04-17
+  type: access
+  event: >-
+    Social Security introduces a new AI chatbot to help with general agency tasks but built from general
+    OpenAI models and not trained on SSA data or content.
+  project: modernization
+  source: >-
+    https://www.nextgov.com/artificial-intelligence/2025/04/ssa-rolling-out-new-chatbot-employees/404658/
+  agency: SSA
+  id: SH9bwWog
+
+- date: 2025-04-18
+  type: disruption
+  event: >-
+    Some immigrants have been forced to prove they aren't dead after being added to the Master Death File
+    in an attempt to force them to "self-deport." The White House had falsely claimed nobody was really
+    declared dead.
+  project: immigration
+  linked:
   - Aram Moghaddassi
   - Scott Coulter
-  :source: https://www.washingtonpost.com/politics/2025/04/18/immigrants-dead-social-security-alive/
-  :agency: SSA
-  :id: Tb3wbZWT
-- :date: 2025-04-23
-  :type: access
-  :event: DOGE has reportedly added 10 million records into the Death Master File
-    since March, both as part of addressing errors in the NUMIDENT files as well as
-    deliberate effort to harm immigrants from being able to interact with the financial
-    industry. As a reuslt, some very alive Americans have been declared dead by DOGE.
-  :notable: true
-  :project:
+  source: https://www.washingtonpost.com/politics/2025/04/18/immigrants-dead-social-security-alive/
+  agency: SSA
+  id: Tb3wbZWT
+
+- date: 2025-04-23
+  type: access
+  event: >-
+    DOGE has reportedly added 10 million records into the Death Master File since March, both as part
+    of addressing errors in the NUMIDENT files as well as deliberate effort to harm immigrants from being
+    able to interact with the financial industry. As a reuslt, some very alive Americans have been declared
+    dead by DOGE.
+  notable: true
+  project:
   - fraud
   - immigration
-  :source: https://www.washingtonpost.com/politics/2025/04/23/dead-social-security-doge-musk/
-  :agency: SSA
-  :id: enUTyZZ7
-- :date: 2025-04-(30)~
-  :type: disruption
-  :event: Social Security introduces a new AI-based agent for handling phone calls
-    to 350 field offices in the Southeast and Northeast regions. It frustrates many
-    users attempting to reach an actual person for assistance.
-  :project: modernization
-  :source: https://www.washingtonpost.com/politics/2025/05/16/doge-social-security-musk-trump-cuts/
-  :agency: SSA
-  :id: PBTtNmMD
-- :date: 2025-05-06
-  :type: official
-  :event: Frank Bisignano is confirmed by the Senate to be the new Commissioner of
-    the Social Security Administration, replacing Leland Dudek who was serving as
-    the acting commissioner.
-  :named:
+  source: https://www.washingtonpost.com/politics/2025/04/23/dead-social-security-doge-musk/
+  agency: SSA
+  id: enUTyZZ7
+
+- date: 2025-04-(30)~
+  type: disruption
+  event: >-
+    Social Security introduces a new AI-based agent for handling phone calls to 350 field offices in the
+    Southeast and Northeast regions. It frustrates many users attempting to reach an actual person for
+    assistance.
+  project: modernization
+  source: https://www.washingtonpost.com/politics/2025/05/16/doge-social-security-musk-trump-cuts/
+  agency: SSA
+  id: PBTtNmMD
+
+- date: 2025-05-06
+  type: official
+  event: >-
+    Frank Bisignano is confirmed by the Senate to be the new Commissioner of the Social Security Administration,
+    replacing Leland Dudek who was serving as the acting commissioner.
+  named:
   - Frank Bisignano
-  :linked:
+  linked:
   - Leland Dudek
-  :source: https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
-  :agency: SSA
-  :id: 76GQmOLo
-- :date: 2025-05-14
-  :type: disruption
-  :event: Due to DOGE imposing a government-wide restriction on expense cards, many
-    of the Social Security offices are in disarray, unable to do common office tasks
-    like buying paper for printers or shredding documents. There are a few shared
-    purchase cards for the agency, but fewer than a dozen staff in SSA are able to
-    authorize office expenses for all 1300 field offices.
-  :notable: true
-  :project: spending
-  :source: https://www.washingtonpost.com/politics/2025/05/16/doge-social-security-musk-trump-cuts/
-  :agency: SSA
-  :id: 8cf4dBxA
-- :date: 2025-05-16
-  :type: disruption
-  :event: An internal report at Social Security analyzes new fraud detection mechanisms
-    that were mandated by DOGE for all phone claims. According to analysis, only 2
-    out of 110,000 claims made were possibly but not certainly fraudultent, and adding
-    the system has slowed claims processing by 25% and degraded service overall.
-  :notable: true
-  :project: fraud
-  :source: https://www.nextgov.com/digital-government/2025/05/doge-went-looking-phone-fraud-ssa-and-found-almost-none/405346/
-  :agency: SSA
-  :id: 528Ro1KK
-- :date: 2025-06-(05)~
-  :type: report
-  :event: Frank Bisignano is granted permission to remove any DOGE staff at his agency.
-    According to the report, "Bisignano parted ways with one DOGE staffer from SSA,
-    who in June moved to the National Aeronautics and Space Administration." The date
-    and person isn't named, but the CIO replacement at SSA and NASA connection suggest
-    it's Scott Coulter who was removed in early June.
-  :notable: true
-  :project: impunity
-  :named:
+  source: >-
+    https://apnews.com/article/social-security-administration-bisignano-trump-doge-7ec043009064a58be57ce1465dec0481
+  agency: SSA
+  id: 76GQmOLo
+
+- date: 2025-05-14
+  type: disruption
+  event: >-
+    Due to DOGE imposing a government-wide restriction on expense cards, many of the Social Security offices
+    are in disarray, unable to do common office tasks like buying paper for printers or shredding documents.
+    There are a few shared purchase cards for the agency, but fewer than a dozen staff in SSA are able
+    to authorize office expenses for all 1300 field offices.
+  notable: true
+  project: spending
+  source: https://www.washingtonpost.com/politics/2025/05/16/doge-social-security-musk-trump-cuts/
+  agency: SSA
+  id: 8cf4dBxA
+
+- date: 2025-05-16
+  type: disruption
+  event: >-
+    An internal report at Social Security analyzes new fraud detection mechanisms that were mandated by
+    DOGE for all phone claims. According to analysis, only 2 out of 110,000 claims made were possibly
+    but not certainly fraudultent, and adding the system has slowed claims processing by 25% and degraded
+    service overall.
+  notable: true
+  project: fraud
+  source: >-
+    https://www.nextgov.com/digital-government/2025/05/doge-went-looking-phone-fraud-ssa-and-found-almost-none/405346/
+  agency: SSA
+  id: 528Ro1KK
+
+- date: 2025-06-(05)~
+  type: report
+  event: >-
+    Frank Bisignano is granted permission to remove any DOGE staff at his agency. According to the report,
+    "Bisignano parted ways with one DOGE staffer from SSA, who in June moved to the National Aeronautics
+    and Space Administration." The date and person isn't named, but the CIO replacement at SSA and NASA
+    connection suggest it's Scott Coulter who was removed in early June.
+  notable: true
+  project: impunity
+  named:
   - Frank Bisignano
-  :linked:
+  linked:
   - Scott Coulter
-  :source: https://www.wsj.com/politics/policy/doge-elon-musk-left-control-92770407
-  :agency: SSA
-  :id: 3jzcZqoH
-- :date: 2025-06-06
-  :type: disruption
-  :event: The SSA website takes down for maintenance a page that provided service
-    metrics. When it is restored after several weeks, certain metrics that would have
-    shown the impact of DOGE like average phone wait times are no longer provided.
-  :project: impunity
-  :source: https://www.washingtonpost.com/politics/2025/06/20/social-security-wait-times-cuts/
-  :agency: SSA
-  :id: 32ULtG04
-- :date: 2025-06-06
-  :type: sighting
-  :event: A report in the _New York Times_ suggests that Mike Russo and Aram Moghaddassi
-    have essentially been acting as joint CIOs at the agency.
-  :project: impunity
-  :source: https://www.nytimes.com/2025/06/07/us/politics/trump-musk-doge-interior-epa.html
-  :named:
+  source: https://www.wsj.com/politics/policy/doge-elon-musk-left-control-92770407
+  agency: SSA
+  id: 3jzcZqoH
+
+- date: 2025-06-06
+  type: sighting
+  event: >-
+    A report in the _New York Times_ suggests that Mike Russo and Aram Moghaddassi have essentially been
+    acting as joint CIOs at the agency.
+  project: impunity
+  source: https://www.nytimes.com/2025/06/07/us/politics/trump-musk-doge-interior-epa.html
+  named:
   - Mike Russo
   - Aram Moghaddassi
-  :agency: SSA
-  :id: 10KZKaAF
-- :date: 2025-06-09
-  :type: report
-  :event: In a recent interview with the _Wall Street Journal_, the new head of SSA,
-    Frank Bisignano, states that "DOGE personnel, including eight engineers, are integral
-    to getting the job done"
-  :source: https://www.wsj.com/politics/policy/social-security-chief-says-musks-doge-figures-heavily-in-agencys-plans-45cc0f35
-  :agency: SSA
-  :id: 7hXwZjX4
-- :date: 2025-06-10
-  :type: access
-  :event: John Solly asks staff in the Social Security Administration's CIO office
-    (then possibly under the leadership of Scott Coulter or Aram Moghaddassi) to create
-    a cloud environment to upload the NUMIDENT data to. The stated reason was purported
-    reason for the project was to improve the way that SSA exchanges data.
-  :notable: true
-  :project:
+  agency: SSA
+  id: 10KZKaAF
+
+- date: 2025-06-06
+  type: disruption
+  event: >-
+    The SSA website takes down for maintenance a page that provided service metrics. When it is restored
+    after several weeks, certain metrics that would have shown the impact of DOGE like average phone wait
+    times are no longer provided.
+  project: impunity
+  source: https://www.washingtonpost.com/politics/2025/06/20/social-security-wait-times-cuts/
+  agency: SSA
+  id: 32ULtG04
+
+- date: 2025-06-09
+  type: report
+  event: >-
+    In a recent interview with the _Wall Street Journal_, the new head of SSA, Frank Bisignano, states
+    that "DOGE personnel, including eight engineers, are integral to getting the job done"
+  source: >-
+    https://www.wsj.com/politics/policy/social-security-chief-says-musks-doge-figures-heavily-in-agencys-plans-45cc0f35
+  agency: SSA
+  id: 7hXwZjX4
+
+- date: 2025-06-10
+  type: access
+  event: >-
+    John Solly asks staff in the Social Security Administration's CIO office (then possibly under the
+    leadership of Scott Coulter or Aram Moghaddassi) to create a cloud environment to upload the NUMIDENT
+    data to. The stated reason was purported reason for the project was to improve the way that SSA exchanges
+    data.
+  notable: true
+  project:
   - impunity
   - immigration
-  :named:
+  named:
   - John Solly
-  :linked:
+  linked:
   - Aram Moghaddassi
-  :source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
-  :agency: SSA
-  :id: mSeONpfj
-- :date: 2025-06-11
-  :type: action
-  :event: John Solly modifies his request to instead ask to transfer NUMIDENT data
-    to a test environment. This is not entirely unheard of, but it's considered a
-    very insecure practice to move production data into a testing environment that
-    might not be authorized for that. DOGE then amends their request again to ask
-    for full admin access to SSA's cloud environment.
-  :notable: true
-  :project: impunity
-  :named:
+  source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+  agency: SSA
+  id: mSeONpfj
+
+- date: 2025-06-11
+  type: action
+  event: >-
+    John Solly modifies his request to instead ask to transfer NUMIDENT data to a test environment. This
+    is not entirely unheard of, but it's considered a very insecure practice to move production data into
+    a testing environment that might not be authorized for that. DOGE then amends their request again
+    to ask for full admin access to SSA's cloud environment.
+  notable: true
+  project: impunity
+  named:
   - John Solly
-  :source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
-  :agency: SSA
-  :id: 2xFYeu9H
-- :date: 2025-06-12
-  :type: disruption
-  :event: A career official writes up a Risk Acceptance Request Form to share with
-    Aram Moghaddassi and another unnamed career official in the office of the CIO
-    at Social Security about DOGE's request to have administrative access to a separate
-    Virtual Private Cloud within the Amazon Web Services infrastructure at SSA. The
-    official classifies this as high-risk due a proposal to copy NUMIDENT data to
-    a developer environment with looser access controls and security measures. DOGE
-    developers would also be able to make this data publicly accessible without following
-    the Authority to Operate (ATO) requirements for any new public services and install
-    software not approved for operation in SSA infrastructure.
-  :notable: true
-  :project:
+  source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+  agency: SSA
+  id: 2xFYeu9H
+
+- date: 2025-06-12
+  type: disruption
+  event: >-
+    A career official writes up a Risk Acceptance Request Form to share with Aram Moghaddassi and another
+    unnamed career official in the office of the CIO at Social Security about DOGE's request to have administrative
+    access to a separate Virtual Private Cloud within the Amazon Web Services infrastructure at SSA. The
+    official classifies this as high-risk due a proposal to copy NUMIDENT data to a developer environment
+    with looser access controls and security measures. DOGE developers would also be able to make this
+    data publicly accessible without following the Authority to Operate (ATO) requirements for any new
+    public services and install software not approved for operation in SSA infrastructure.
+  notable: true
+  project:
   - fraud
   - impunity
-  :named:
+  named:
   - Aram Moghaddassi
-  :linked:
+  linked:
   - John Solly
-  :source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
-  :agency: SSA
-  :id: 4YbBDKKK
-- :date: 2025-06-16
-  :type: report
-  :event: The Chief Information Security Officer (CISO) for SSA sends an email to
-    Aram Moghaddassi with his assessment that moving NUMIDENT data to the cloud would
-    be at an unacceptably high risk for being hacked or stolen (computed on a 1-5
-    scale with a 3 for probability of risk and 5 for the impact of this risk)
-  :project:
+  source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+  agency: SSA
+  id: 4YbBDKKK
+
+- date: 2025-06-16
+  type: report
+  event: >-
+    The Chief Information Security Officer (CISO) for SSA sends an email to Aram Moghaddassi with his
+    assessment that moving NUMIDENT data to the cloud would be at an unacceptably high risk for being
+    hacked or stolen (computed on a 1-5 scale with a 3 for probability of risk and 5 for the impact of
+    this risk)
+  project:
   - fraud
   - impunity
-  :named:
+  named:
   - Aram Moghaddassi
-  :source: https://www.hsgac.senate.gov/wp-content/uploads/DOGE_REPORT_FINAL_7.pdf
-  :agency: SSA
-  :id: g74bzA3z
-- :date: 2025-06-23
-  :type: sighting
-  :event: Edward Coristine is reportedly sighted at the Woodlawn, MD location of the
-    Social Security Administration alongside Aram Moghaddassi. It is later confirmed
-    that he is now working as a Special Government Employee (SGE) for the agency after
-    he had resigned his position at GSA.
-  :notable: true
-  :named:
+  source: https://www.hsgac.senate.gov/wp-content/uploads/DOGE_REPORT_FINAL_7.pdf
+  agency: SSA
+  id: g74bzA3z
+
+- date: 2025-06-23
+  type: sighting
+  event: >-
+    Edward Coristine is reportedly sighted at the Woodlawn, MD location of the Social Security Administration
+    alongside Aram Moghaddassi. It is later confirmed that he is now working as a Special Government Employee
+    (SGE) for the agency after he had resigned his position at GSA.
+  notable: true
+  named:
   - Aram Moghaddassi
   - Edward Coristine
-  :agency: SSA
-  :source: https://www.wired.com/story/big-balls-social-security-administration/
-  :id: 5eFonNQd
-- :date: 2025-06-23
-  :type: access
-  :event: Career staff in the Office of the CIO at Social Security approved DOGE's
-    request to setup their own separate cloud environment apart from the usual oversight
-    and processes of cloud services at SSA. They deny a request by DOGE to transfer
-    highly-sensitive NUMIDENT data to the cloud.
-  :source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
-  :agency: SSA
-  :id: nRkE1RFB
-- :date: 2025-06-25
-  :type: access
-  :event: Reportedly acting as a joint CIO at Social Security, Mike Russo overrides
-    the concerns of junior staff in the Office of the CIO at the Social Security Administration
-    and approves a request by John Solly to transfer NUMIDENT data into the new DOGE-controlled
-    cloud environment.
-  :notable: true
-  :project:
+  agency: SSA
+  source: https://www.wired.com/story/big-balls-social-security-administration/
+  id: 5eFonNQd
+
+- date: 2025-06-23
+  type: access
+  event: >-
+    Career staff in the Office of the CIO at Social Security approved DOGE's request to setup their own
+    separate cloud environment apart from the usual oversight and processes of cloud services at SSA.
+    They deny a request by DOGE to transfer highly-sensitive NUMIDENT data to the cloud.
+  source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+  agency: SSA
+  id: nRkE1RFB
+
+- date: 2025-06-25
+  type: access
+  event: >-
+    Reportedly acting as a joint CIO at Social Security, Mike Russo overrides the concerns of junior staff
+    in the Office of the CIO at the Social Security Administration and approves a request by John Solly
+    to transfer NUMIDENT data into the new DOGE-controlled cloud environment.
+  notable: true
+  project:
   - fraud
   - impunity
-  :named:
+  named:
   - John Solly
   - Mike Russo
-  :source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
-  :agency: SSA
-  :id: 6sBdoQg6
-- :date: 2025-06-28
-  :agency: SSA
-  :type: disruption
-  :event: According to a page update on the Federal CIO site, Aram Moghaddassi is
-    named the new CIO of the Social Security Administration, making him the third
-    DOGE-affiliated CIO in a row at the agency. This follows on reports that he had
-    been acting in a co-CIO role with former CIO Mike Russo. He replaces Scott Coulter
-    who was the CIO as recently as late May.
-  :notable: true
-  :project: impunity
-  :source: https://fedscoop.com/social-security-administration-doge-chief-information-officer/
-  :named:
+  source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+  agency: SSA
+  id: 6sBdoQg6
+
+- date: 2025-06-28
+  agency: SSA
+  type: disruption
+  event: >-
+    According to a page update on the Federal CIO site, Aram Moghaddassi is named the new CIO of the Social
+    Security Administration, making him the third DOGE-affiliated CIO in a row at the agency. This follows
+    on reports that he had been acting in a co-CIO role with former CIO Mike Russo. He replaces Scott
+    Coulter who was the CIO as recently as late May.
+  notable: true
+  project: impunity
+  source: https://fedscoop.com/social-security-administration-doge-chief-information-officer/
+  named:
   - Aram Moghaddassi
   - Mike Russo
   - Scott Coulter
-  :id: 6yPCBgrt
-- :date: 2025-06-30
-  :agency: SSA
-  :type: disruption
-  :event: Due to staffing cuts, there is now an average of 1 SSA worker per 1480 benficiaries,
-    or almost triple the ratio in 1967. This is a direct result of DOGE-driven cuts
-    reducing agency staffing by 7000 since January
-  :project: personnel
-  :source: https://www.afge.org/article/due-to-doge-cuts-1-ssa-employee-is-expected-to-serve-1480-beneficiaries/
-  :id: 3y58APCa
-- :date: 2025-07-01
-  :type: offboard
-  :event: In response to a letter from the American Federation of Teachers union to
-    nine public pension funds who are investors, Valor Equity Partners confirms that
-    Antonio Gracias was working for Valor the entire time he was in DOGE and also
-    reports that he left DOGE on July 1st. It's unclear what the status of other Valor
-    employees embedded in DOGE, Jon Koval and Payton Rehling, are.
-  :named:
+  id: 6yPCBgrt
+
+- date: 2025-06-30
+  agency: SSA
+  type: disruption
+  event: >-
+    Due to staffing cuts, there is now an average of 1 SSA worker per 1480 benficiaries, or almost triple
+    the ratio in 1967. This is a direct result of DOGE-driven cuts reducing agency staffing by 7000 since
+    January
+  project: personnel
+  source: >-
+    https://www.afge.org/article/due-to-doge-cuts-1-ssa-employee-is-expected-to-serve-1480-beneficiaries/
+  id: 3y58APCa
+
+- date: 2025-07-01
+  type: offboard
+  event: >-
+    In response to a letter from the American Federation of Teachers union to nine public pension funds
+    who are investors, Valor Equity Partners confirms that Antonio Gracias was working for Valor the entire
+    time he was in DOGE and also reports that he left DOGE on July 1st. It's unclear what the status of
+    other Valor employees embedded in DOGE, Jon Koval and Payton Rehling, are.
+  named:
   - Antonio Gracias
-  :linked:
+  linked:
   - Jon Koval
   - Payton Rehling
-  :source: https://www.nbcnews.com/politics/doge/high-ranking-doge-official-elon-musk-ally-antonio-gracias-left-governm-rcna220611
-  :agency: SSA
-  :id: 544M8JM9
-- :date: 2025-07-02
-  :type: disruption
-  :event: An analysis by a news organization finds that wait times on calls to Social
-    Security routinely exceed 3 hours, with the system also frequently hanging up
-    on people after 2 hours and promising a callback that never arrives. The Social
-    Security website misleadingly reports the average wait time as 18 minutes.
-  :project: personnel
-  :source: https://www.8newsnow.com/investigators/social-security-call-wait-times-can-exceed-3-hours-after-doge-cuts/
-  :agency: SSA
-  :id: 6gNKgovS
-- :date: 2025-07-14
-  :type: disruption
-  :agency: SSA
-  :event: The Social Security Administration begins to warn approximately half a million
-    Americans who still receive their benefits by paper check that they will need
-    to call the Treasury Department themselves and request a waiver to still receive
-    paper checks. Those who have not had their waivers processed by the end of September
-    may experience a delay in receiving benefits even if their waiver application
+  source: >-
+    https://www.nbcnews.com/politics/doge/high-ranking-doge-official-elon-musk-ally-antonio-gracias-left-governm-rcna220611
+  agency: SSA
+  id: 544M8JM9
+
+- date: 2025-07-02
+  type: disruption
+  event: >-
+    An analysis by a news organization finds that wait times on calls to Social Security routinely exceed
+    3 hours, with the system also frequently hanging up on people after 2 hours and promising a callback
+    that never arrives. The Social Security website misleadingly reports the average wait time as 18 minutes.
+  project: personnel
+  source: >-
+    https://www.8newsnow.com/investigators/social-security-call-wait-times-can-exceed-3-hours-after-doge-cuts/
+  agency: SSA
+  id: 6gNKgovS
+
+- date: 2025-07-14
+  type: disruption
+  agency: SSA
+  event: >-
+    The Social Security Administration begins to warn approximately half a million Americans who still
+    receive their benefits by paper check that they will need to call the Treasury Department themselves
+    and request a waiver to still receive paper checks. Those who have not had their waivers processed
+    by the end of September may experience a delay in receiving benefits even if their waiver application
     is pending. This action is being taken to comply with EO 14247.
-  :project: fraud
-  :source: https://www.govexec.com/management/2025/07/social-security-signals-potential-benefit-disruptions-fall-those-still-getting-paper-checks/406710/
-  :id: 2ckAriW2
-- :date: 2025-07-15
-  :type: disruption
-  :event: Acting in his role as the CIO for Social Security Administration, Aram Moghaddassi
-    authorizes a Provisional Authority to Operate (P-ATO) for the project of moving
-    the NUMIDENT data from Social Security's controlled environment into the special
-    cloud soley operated by DOGE. As the CIO, he is allowed to assume the risk of
-    bypassing mandatory security requirements, but not if it violates federal law
-    or puts sensitive data at risk of being stolen. According to the testimony of
-    several whistleblowers, the cloud project is reportedly being run by Edward Coristine.
-  :notable: true
-  :project:
+  project: fraud
+  source: >-
+    https://www.govexec.com/management/2025/07/social-security-signals-potential-benefit-disruptions-fall-those-still-getting-paper-checks/406710/
+  id: 2ckAriW2
+
+- date: 2025-07-15
+  type: disruption
+  event: >-
+    Acting in his role as the CIO for Social Security Administration, Aram Moghaddassi authorizes a Provisional
+    Authority to Operate (P-ATO) for the project of moving the NUMIDENT data from Social Security's controlled
+    environment into the special cloud soley operated by DOGE. As the CIO, he is allowed to assume the
+    risk of bypassing mandatory security requirements, but not if it violates federal law or puts sensitive
+    data at risk of being stolen. According to the testimony of several whistleblowers, the cloud project
+    is reportedly being run by Edward Coristine.
+  notable: true
+  project:
   - fraud
   - impunity
-  :source:
+  source:
   - https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
   - https://www.hsgac.senate.gov/wp-content/uploads/DOGE_REPORT_FINAL_7.pdf
-  :agency: SSA
-  :id: 52hHHO4P
-- :date: 2025-08-11
-  :type: action
-  :event: Expressing concerns that the lax security of DOGE's cloud could lead to
-    the leak of every American's social security number (and the requirement ro reissue
-    new ones), the Chief Data Officer of the Social Security Administration contacts
-    Edward Coristine and John Solly to request information about the security of DOGE's
-    cloud. He is never granted a reply and learns that the SSA Office of General Counsel
-    (headed by DOGE member Mark Steffensen) has advised employees not to respond to
-    his inquiries.
-  :project:
+  agency: SSA
+  id: 52hHHO4P
+
+- date: 2025-08-11
+  type: action
+  event: >-
+    Expressing concerns that the lax security of DOGE's cloud could lead to the leak of every American's
+    social security number (and the requirement ro reissue new ones), the Chief Data Officer of the Social
+    Security Administration contacts Edward Coristine and John Solly to request information about the
+    security of DOGE's cloud. He is never granted a reply and learns that the SSA Office of General Counsel
+    (headed by DOGE member Mark Steffensen) has advised employees not to respond to his inquiries.
+  project:
   - fraud
   - impunity
-  :named:
+  named:
   - Edward Coristine
   - John Solly
-  :linked:
+  linked:
   - Aram Moghaddassi
   - Mark Steffensen
-  :source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
-  :agency: SSA
-  :id: 4wAh9b8o
-- :date: 2025-08-18
-  :type: oversight
-  :project: impunity
-  :event: In a letter to the Democrats on the Senate Finance Committee, the Acting
-    Inspector General for the Social Security Administration reports she has no intention
-    of investigating how DOGE added individuals to the Death Master File. She states
-    that DOGE was directed to do this change by Leland Dudek. also reports that the
-    changes were reverted in June 2025 under the order of Frank Bisignano.
-  :source: https://www.finance.senate.gov/imo/media/doc/ssa_oig_letter_to_us_senate_committee_on_finance_ranking_member_wyden_on_death_master_file_-_18_august_25pdf.pdf
-  :named:
+  source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+  agency: SSA
+  id: 4wAh9b8o
+
+- date: 2025-08-18
+  type: oversight
+  project: impunity
+  event: >-
+    In a letter to the Democrats on the Senate Finance Committee, the Acting Inspector General for the
+    Social Security Administration reports she has no intention of investigating how DOGE added individuals
+    to the Death Master File. She states that DOGE was directed to do this change by Leland Dudek. also
+    reports that the changes were reverted in June 2025 under the order of Frank Bisignano.
+  source: >-
+    https://www.finance.senate.gov/imo/media/doc/ssa_oig_letter_to_us_senate_committee_on_finance_ranking_member_wyden_on_death_master_file_-_18_august_25pdf.pdf
+  named:
   - Leland Dudek
   - Frank Bisignano
-  :linked:
+  linked:
   - Aram Moghaddassi
-  :agency: SSA
-  :id: 1EVh7z4W
-- :date: 2025-08-26
-  :type: oversight
-  :event: The Chief Data Officer of the Social Security Administration, Charles Borges,
-    submits a public whistleblower complaint alleging that DOGE cut corners and skirted
-    mandatory IT oversight in order to copy sensitive NUMIDENT data of the social
-    security numbers of all Americans into a private cloud environment that only they
-    controlled.
-  :notable: true
-  :project:
+  agency: SSA
+  id: 1EVh7z4W
+
+- date: 2025-08-26
+  type: oversight
+  event: >-
+    The Chief Data Officer of the Social Security Administration, Charles Borges, submits a public whistleblower
+    complaint alleging that DOGE cut corners and skirted mandatory IT oversight in order to copy sensitive
+    NUMIDENT data of the social security numbers of all Americans into a private cloud environment that
+    only they controlled.
+  notable: true
+  project:
   - fraud
   - impunity
-  :source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
-  :agency: SSA
-  :id: 77QILRRh
-- :date: 2025-08-29
-  :type: disruption
-  :event: Reporting that retaliation and abuse have made it impossible for him to
-    do his job, whistleblower Charles Borges resigns from his position at the Social
-    Security Administration. Retaliation against whistleblowers is a prohibited personnel
-    practice for federal staff, but it can be difficult to prove and enforce.
-  :project: impunity
-  :source: https://abcnews.go.com/Technology/wireStory/social-security-whistleblower-claims-doge-mishandled-americans-sensitive-125113165
-  :agency: SSA
-  :id: 1Lu0kHJ5
-- :date: 2025-09-03
-  :type: official
-  :event: Commissioner Frank Bisignano issues a press release announcing the new leadership
-    structure for the Social Security Administration. This officially confirms the
-    reports that DOGE members Aram Moghaddassi and Mike Russo had effectively been
-    acting as co-CIOs, with Mr. Moghaddassi named to the title of Chief Information
-    Officer (Technology and Customer Products) and Mr. Russo to Chief Information
-    Officer (Core Business Functions)
-  :notable: true
-  :project: impunity
-  :named:
+  source: https://whistleblower.org/wp-content/uploads/2025/08/08-26-2025-Borges-Disclosure-Sanitized.pdf
+  agency: SSA
+  id: 77QILRRh
+
+- date: 2025-08-29
+  type: disruption
+  event: >-
+    Reporting that retaliation and abuse have made it impossible for him to do his job, whistleblower
+    Charles Borges resigns from his position at the Social Security Administration. Retaliation against
+    whistleblowers is a prohibited personnel practice for federal staff, but it can be difficult to prove
+    and enforce.
+  project: impunity
+  source: >-
+    https://abcnews.go.com/Technology/wireStory/social-security-whistleblower-claims-doge-mishandled-americans-sensitive-125113165
+  agency: SSA
+  id: 1Lu0kHJ5
+
+- date: 2025-09-03
+  type: official
+  event: >-
+    Commissioner Frank Bisignano issues a press release announcing the new leadership structure for the
+    Social Security Administration. This officially confirms the reports that DOGE members Aram Moghaddassi
+    and Mike Russo had effectively been acting as co-CIOs, with Mr. Moghaddassi named to the title of
+    Chief Information Officer (Technology and Customer Products) and Mr. Russo to Chief Information Officer
+    (Core Business Functions)
+  notable: true
+  project: impunity
+  named:
   - Frank Bisignano
   - Aram Moghaddassi
   - Mike Russo
-  :source: https://www.ssa.gov/news/en/press/releases/2025-09-03.html
-  :agency: SSA
-  :id: 475zG3y4
-- :date: 2025-09-10
-  :type: oversight
-  :event: The Republican Chairman of the Senate Finance Committee sends a letter to
-    the Social Security Administration asking about the whistleblower's claims that
-    NUMIDENT data was carelessly uploaded to the cloud by DOGE staffer. Coming from
-    the Republican Mike Crapo, this possibly indicates a rare bipartisan concern about
-    DOGE's activities at the agency.
-  :source: https://www.nytimes.com/2025/09/10/us/politics/doge-social-security-republicans.html
-  :agency: SSA
-  :id: 7hsajiKA
-- :date: 2025-09-16
-  :type: oversight
-  :event: SSA Commissioner Frank Bisignano replies to the letter from the Senate Finance
-    Committee about the allegations of the whistleblower. He claims that all proper
-    procedures were followed and that DOGE did not transfer data to a private cloud
-    within the SSA Amazon Web Services accounts.
-  :project: impunity
-  :named:
+  source: https://www.ssa.gov/news/en/press/releases/2025-09-03.html
+  agency: SSA
+  id: 475zG3y4
+
+- date: 2025-09-10
+  type: oversight
+  event: >-
+    The Republican Chairman of the Senate Finance Committee sends a letter to the Social Security Administration
+    asking about the whistleblower's claims that NUMIDENT data was carelessly uploaded to the cloud by
+    DOGE staffer. Coming from the Republican Mike Crapo, this possibly indicates a rare bipartisan concern
+    about DOGE's activities at the agency.
+  source: https://www.nytimes.com/2025/09/10/us/politics/doge-social-security-republicans.html
+  agency: SSA
+  id: 7hsajiKA
+
+- date: 2025-09-16
+  type: oversight
+  event: >-
+    SSA Commissioner Frank Bisignano replies to the letter from the Senate Finance Committee about the
+    allegations of the whistleblower. He claims that all proper procedures were followed and that DOGE
+    did not transfer data to a private cloud within the SSA Amazon Web Services accounts.
+  project: impunity
+  named:
   - Frank Bisignano
-  :source: https://www.finance.senate.gov/imo/media/doc/letter_from_commissioner_bisignano_to_chairman_crapo_091625.pdf
-  :agency: SSA
-  :id: 12UEgdwW
-- :date: 2025-09-24
-  :type: report
-  :event: The _New York Times_ reports on how the DOGE-led staffing cuts and technology
-    changes have led to poor service, low morale and increased wait times for the
-    public. In many field offices, the average wait for an appointment is now six
-    weeks.
-  :project:
+  source: >-
+    https://www.finance.senate.gov/imo/media/doc/letter_from_commissioner_bisignano_to_chairman_crapo_091625.pdf
+  agency: SSA
+  id: 12UEgdwW
+
+- date: 2025-09-24
+  type: report
+  event: >-
+    The _New York Times_ reports on how the DOGE-led staffing cuts and technology changes have led to
+    poor service, low morale and increased wait times for the public. In many field offices, the average
+    wait for an appointment is now six weeks.
+  project:
   - personnel
   - modernization
-  :linked:
+  linked:
   - Frank Bisignano
-  :source: https://www.nytimes.com/2025/09/24/business/social-security-customer-service.html
-  :agency: SSA
-  :id: ZqOdn19C
-- :date: 2026-01-09
-  :type: oversight
-  :event: A whistleblower files a complaint alleging that a member of DOGE who left
-    SSA in October to work for a private contractor had illegally retained their agency
-    laptop and highly-sensitive data. The complaint alleges the unnnamed person had
-    unredacted copies of the NUMIDENT database and the Master Death Files and that
-    they boasted of "God-level" access to SSA data. The DOGE member reportedly wanted
-    assistance to move data from a thumb drive to their personal equipment so they
-    could scrub the data of personal identifiers and use for a company project. When
-    informed by agency personnel that this would be highly illegal, the person allegedly
-    said they would be able to receive a full presidential pardon if they did anything
-    wrong. Although unnamed in the original reporting, he is revealed to be John Solly.
-  :notable: true
-  :source:
+  source: https://www.nytimes.com/2025/09/24/business/social-security-customer-service.html
+  agency: SSA
+  id: ZqOdn19C
+
+- date: 2026-01-09
+  type: oversight
+  event: >-
+    A whistleblower files a complaint alleging that a member of DOGE who left SSA in October to work for
+    a private contractor had illegally retained their agency laptop and highly-sensitive data. The complaint
+    alleges the unnnamed person had unredacted copies of the NUMIDENT database and the Master Death Files
+    and that they boasted of "God-level" access to SSA data. The DOGE member reportedly wanted assistance
+    to move data from a thumb drive to their personal equipment so they could scrub the data of personal
+    identifiers and use for a company project. When informed by agency personnel that this would be highly
+    illegal, the person allegedly said they would be able to receive a full presidential pardon if they
+    did anything wrong. Although unnamed in the original reporting, he is revealed to be John Solly.
+  notable: true
+  source:
   - https://www.washingtonpost.com/politics/2026/03/10/social-security-data-breach-doge-2/
   - https://www.wired.com/story/john-solly-doge-operative-accused-social-security-data-leidos/
-  :project: impunity
-  :named:
+  project: impunity
+  named:
   - John Solly
-  :agency: SSA
-  :id: 23E73xAV
-- :date: 2026-01-16
-  :type: legal
-  :event: In a filing in _AFL-CIO v. SSA_, the government amended several declarations
-    that had been made in Leland Dudek's testimony on March 24, 2025. For starters,
-    although DOGE access was revoked on that day, a member of DOGE was running queries
-    against PII in the NUMIDENT database up to the moment. Also, the DOGE team at
-    SSA sent encrypted sensitive SSA data to DOGE and the Department of Labor. A member
-    of the DOGE team also signed an agreement to share information with an outside
-    advocacy group without clearing it through proper legal channels.
-  :notable: true
-  :project:
+  agency: SSA
+  id: 23E73xAV
+
+- date: 2026-01-16
+  type: legal
+  event: >-
+    In a filing in _AFL-CIO v. SSA_, the government amended several declarations that had been made in
+    Leland Dudek's testimony on March 24, 2025. For starters, although DOGE access was revoked on that
+    day, a member of DOGE was running queries against PII in the NUMIDENT database up to the moment. Also,
+    the DOGE team at SSA sent encrypted sensitive SSA data to DOGE and the Department of Labor. A member
+    of the DOGE team also signed an agreement to share information with an outside advocacy group without
+    clearing it through proper legal channels.
+  notable: true
+  project:
   - impunity
   - fraud
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
-  :case_no: 1:25-cv-00596
-  :agency: SSA
-  :id: DinVXt5J
-- :date: 2026-04-14
-  :type: legal
-  :event: In response to "alarming" developments about DOGE's handling of sensitive
-    data and collaboration with an outsider advocacy group to share voter data, a
-    judge lifted a pause on a case and granted the plaintiffs' request for discovery.
-    This could force SSA and DOGE to hand over documents, emails and even provide
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.577321/gov.uscourts.mdd.577321.197.0.pdf
+  case_no: 1:25-cv-00596
+  agency: SSA
+  id: DinVXt5J
+
+- date: 2026-04-14
+  type: legal
+  event: >-
+    In response to "alarming" developments about DOGE's handling of sensitive data and collaboration with
+    an outsider advocacy group to share voter data, a judge lifted a pause on a case and granted the plaintiffs'
+    request for discovery. This could force SSA and DOGE to hand over documents, emails and even provide
     testimony under oath about their activities.
-  :source: https://www.democracydocket.com/news-alerts/court-orders-probe-of-doges-secret-voter-data-deal/
-  :project:
+  source: https://www.democracydocket.com/news-alerts/court-orders-probe-of-doges-secret-voter-data-deal/
+  project:
   - immigration
   - impunity
-  :agency: SSA
-  :id: 7kYrhp6v
-- :date: 2026-07-22
-  :type: oversight
-  :event: Senators Sheldon Whitehouse and Ron Wyden send a letter to Frank Bisignano
-    demanding an audit of DOGE access to systems that he had promised to deliver during
-    his confirmation hearings. The letter sets a deadline of July 31st, which is also
-    ignored.
-  :source: https://www.whitehouse.senate.gov/wp-content/uploads/2026/07/20260722-Letter-from-Sens.-Whitehouse-and-Wyden-to-SSA-re-DOGE.pdf
-  :project:
+  agency: SSA
+  id: 7kYrhp6v
+
+- date: 2026-07-22
+  type: oversight
+  event: >-
+    Senators Sheldon Whitehouse and Ron Wyden send a letter to Frank Bisignano demanding an audit of DOGE
+    access to systems that he had promised to deliver during his confirmation hearings. The letter sets
+    a deadline of July 31st, which is also ignored.
+  source: >-
+    https://www.whitehouse.senate.gov/wp-content/uploads/2026/07/20260722-Letter-from-Sens.-Whitehouse-and-Wyden-to-SSA-re-DOGE.pdf
+  project:
   - impunity
-  :named:
+  named:
   - Frank Bisignano
-  :agency: SSA
-  :id: 43oxpcpe
+  agency: SSA
+  id: 43oxpcpe

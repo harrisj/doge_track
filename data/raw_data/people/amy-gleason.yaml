@@ -1,91 +1,98 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Amy Gleason
-:sort_name: Gleason
-:slug: amy-gleason
-:age: 53
-:blurb: Amy Gleason was suddenly thrusted into the public spotlight on Feb. 18, 2025
-  when the White House Press Secretary identified her as the Administrator of DOGE.
-  Conveniently, she was on vacation in Mexico at the time, so the press was unable
-  to clarify if she was also blindsided by the news. Since then, she has gamely testified
-  for a few times as the administrator of DOGE, but since early March she has largely
-  resumed working full-time as an official employee within HHS, where she had started
-  work in January 2025 for the US Digital Service. Nobody in DOGE seems to even be
-  pretending anymore that she is running things.
-:skill: coder
-:linkedin: https://www.linkedin.com/in/gleasonamy/
-:positions:
-- :id: doge-amy-gleason
-  :start_date: 2024-12-30
-  :start_date_truth: verified
-  :end_date: 2024-02-18
-  :end_date_truth: verified
-  :end_type: replaced
-  :series: '0301'
-  :pay_grade: AD-00
-  :replaced_by: doge-amy-gleason-director
-  :type: appointed
-  :project: impunity
-  :category: wrecker
-  :table_note: this is Amy's role in USDS until she was named the administrator of
-    DOGE
-  :comment: Amy Gleason joins the USDS, according to her sworn testimony; not sure
-    of her title for this before she is named Acting Director
-  :source:
+name: Amy Gleason
+sort_name: Gleason
+slug: amy-gleason
+age: 53
+blurb: >-
+  Amy Gleason was suddenly thrusted into the public spotlight on Feb. 18, 2025 when the White House Press
+  Secretary identified her as the Administrator of DOGE. Conveniently, she was on vacation in Mexico at
+  the time, so the press was unable to clarify if she was also blindsided by the news. Since then, she
+  has gamely testified for a few times as the administrator of DOGE, but since early March she has largely
+  resumed working full-time as an official employee within HHS, where she had started work in January
+  2025 for the US Digital Service. Nobody in DOGE seems to even be pretending anymore that she is running
+  things.
+skill: coder
+linkedin: https://www.linkedin.com/in/gleasonamy/
+positions:
+
+- id: doge-amy-gleason
+  start_date: 2024-12-30
+  start_date_truth: verified
+  end_date: 2024-02-18
+  end_date_truth: verified
+  end_type: replaced
+  series: '0301'
+  pay_grade: AD-00
+  replaced_by: doge-amy-gleason-director
+  type: appointed
+  project: impunity
+  category: wrecker
+  table_note: this is Amy's role in USDS until she was named the administrator of DOGE
+  comment: >-
+    Amy Gleason joins the USDS, according to her sworn testimony; not sure of her title for this before
+    she is named Acting Director
+  source:
   - https://www.documentcloud.org/documents/25564597-crewvdogereconmot031425/
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
-  :agency: DOGE
-- :id: doge-hhs-gleason
-  :type: detailed
-  :category: enabler
-  :agency: HHS
-  :from: DOGE
-  :from_truth: inferred
-  :start_date: 2025-02-XX
-  :start_date_truth: guessed
-  :sort_date: 2025-02-15
-  :project:
+  agency: DOGE
+
+- id: doge-hhs-gleason
+  type: detailed
+  category: enabler
+  agency: HHS
+  from: DOGE
+  from_truth: inferred
+  start_date: 2025-02-XX
+  start_date_truth: guessed
+  sort_date: 2025-02-15
+  project:
   - spending
   - modernization
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :table_note: assuming a detail from DOGE to HHS
-- :id: doge-amy-gleason-director
-  :start_date: 2025-02-18
-  :start_date_truth: verified
-  :type: promotion
-  :category: leadership
-  :agency: DOGE
-  :title: Acting Administrator, US DOGE Service and the DOGE Temporary Organization
-  :title_type: director
-  :project: impunity
-  :series: '0301'
-  :pay_grade: AD-00
-  :source:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  table_note: assuming a detail from DOGE to HHS
+
+- id: doge-amy-gleason-director
+  start_date: 2025-02-18
+  start_date_truth: verified
+  type: promotion
+  category: leadership
+  agency: DOGE
+  title: Acting Administrator, US DOGE Service and the DOGE Temporary Organization
+  title_type: director
+  project: impunity
+  series: '0301'
+  pay_grade: AD-00
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.4.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf
-- :id: internal-hhs-cms-gleason
-  :type: internal
-  :category: enabler
-  :agency: CMS
-  :from: HHS
-  :from_truth: inferred
-  :sort_date: 2025-02-24
-  :start_date: 2025-02-(24)~
-  :start_date_truth: inferred
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :comment: Start date is just her reported first access to CALM system at CMS
-- :id: hhs-amy-gleason
-  :agency: HHS
-  :category: enabler
-  :type: converted
-  :title: Expert/Consultant
-  :title_type: advisor
-  :start_date: 2025-03-04
-  :start_date_truth: verified
-  :project:
+
+- id: internal-hhs-cms-gleason
+  type: internal
+  category: enabler
+  agency: CMS
+  from: HHS
+  from_truth: inferred
+  sort_date: 2025-02-24
+  start_date: 2025-02-(24)~
+  start_date_truth: inferred
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  comment: Start date is just her reported first access to CALM system at CMS
+
+- id: hhs-amy-gleason
+  agency: HHS
+  category: enabler
+  type: converted
+  title: Expert/Consultant
+  title_type: advisor
+  start_date: 2025-03-04
+  start_date_truth: verified
+  project:
   - spending
   - modernization
-  :salary: "$0"
-  :comment: All I have is her SF-61
-  :source:
+  salary: "$0"
+  comment: All I have is her SF-61
+  source:
   - https://www.documentcloud.org/documents/26028802-onboard-hhs-amy-gleason/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring

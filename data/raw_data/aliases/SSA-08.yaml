@@ -1,30 +1,38 @@
+# yaml-language-server: $schema=../schemas/aliases-file.json
 ---
-:id: SSA-08
-:agency: SSA
-:name: Nikhil Rajpal
-:name_truth: inferred
-:evidence:
+id: SSA-08
+agency: SSA
+name: Nikhil Rajpal
+name_truth: inferred
+evidence:
+
 - Detailed from OPM to SSA on 2025-02-26
+
 - His duties currently relate to improper payments and death data.
-- On 3/13, Wired reported that 10 staffers were visible at SSA Teams Directory. They
-  were Akash Bobba, Marko Elez, Luke Farritor, Cole Killian, Jon Koval, Nikhil Rajpal,
-  Payton Rehling, Ethan Shaotran, Antonio Gracias, Scott Coulter
+
+- >-
+  On 3/13, Wired reported that 10 staffers were visible at SSA Teams Directory. They were Akash Bobba,
+  Marko Elez, Luke Farritor, Cole Killian, Jon Koval, Nikhil Rajpal, Payton Rehling, Ethan Shaotran, Antonio
+  Gracias, Scott Coulter
+
 - Of this list, only Akash Bobba and Nikhil Rajpal wre hired from OPM
+
 - Akash Bobba has already been identified
-:positions:
-- :id: detail-opm-ssa-8
-  :type: detailed
-  :category: wrecker
-  :from: OPM
-  :from_truth: verified
-  :agency: SSA
-  :signed_date: 2025-02-26
-  :start_date: 2025-02-26
-  :start_date_truth: verified
-  :nte_date: 2026-02-26
-  :nte_date_truth: verified
-  :reimbursed: false
-  :source:
+positions:
+
+- id: detail-opm-ssa-8
+  type: detailed
+  category: wrecker
+  from: OPM
+  from_truth: verified
+  agency: SSA
+  signed_date: 2025-02-26
+  start_date: 2025-02-26
+  start_date_truth: verified
+  nte_date: 2026-02-26
+  nte_date_truth: verified
+  reimbursed: false
+  source:
   - https://www.documentcloud.org/documents/26028818-mou-20250226-opm-ssa-employee-8/
   - https://www.documentcloud.org/documents/26028783-onboard-ssa-employee-8/
-  :mou: https://www.documentcloud.org/documents/26028818-mou-20250226-opm-ssa-employee-8/
+  mou: https://www.documentcloud.org/documents/26028818-mou-20250226-opm-ssa-employee-8/

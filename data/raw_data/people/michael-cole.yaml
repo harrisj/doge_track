@@ -1,52 +1,59 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Michael Cole
-:sort_name: Cole
-:slug: michael-cole
-:skill: executive
-:linkedin: https://www.linkedin.com/in/michael-cole-714288b9/
-:college_graduation_year: 1994
-:govt_exit_date: 2025-08-XX
-:govt_exit_truth: self-reported
-:govt_exit_type: resigned
-:positions:
-- :id: usda-cole
-  :type: appointed
-  :category: wrecker
-  :agency: USDA
-  :title: Senior Advisor on Government Efficiency
-  :start_date: 2025-02-09
-  :start_date_truth: verified
-  :end_date: 2025-03-17
-  :end_date_truth: verified
-  :end_type: replaced
-  :project:
+name: Michael Cole
+sort_name: Cole
+slug: michael-cole
+skill: executive
+linkedin: https://www.linkedin.com/in/michael-cole-714288b9/
+college_graduation_year: 1994
+govt_exit_date: 2025-08-XX
+govt_exit_truth: self-reported
+govt_exit_type: resigned
+positions:
+
+- id: usda-cole
+  type: appointed
+  category: wrecker
+  agency: USDA
+  title: Senior Advisor on Government Efficiency
+  start_date: 2025-02-09
+  start_date_truth: verified
+  end_date: 2025-03-17
+  end_date_truth: verified
+  end_type: replaced
+  project:
   - spending
   - personnel
-  :pay_grade: ES
-  :series: '0301'
-  :salary: "$170,000"
-  :replaced_by: usda-cole-leader
-  :office: Office of the Secretary of Agriculture
-  :table_note: LinkedIn profile reports August departure
-  :source:
-  - https://www.documentcloud.org/documents/25963272-cole-michael-appointees-2025-new-entrant-278-2025-2025-04-03/
+  pay_grade: ES
+  series: '0301'
+  salary: "$170,000"
+  replaced_by: usda-cole-leader
+  office: Office of the Secretary of Agriculture
+  table_note: LinkedIn profile reports August departure
+  source:
+  - >-
+    https://www.documentcloud.org/documents/25963272-cole-michael-appointees-2025-new-entrant-278-2025-2025-04-03/
   - https://www.linkedin.com/in/michael-cole-714288b9/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-  - https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
-- :id: usda-cole-leader
-  :type: promotion
-  :category: wrecker
-  :agency: USDA
-  :title: Senior Team Leader on Government Efficiency
-  :start_date: 2025-03-17
-  :start_date_truth: verified
-  :end_date: 2025-08-XX
-  :end_date_truth: self-reported
-  :project: spending
-  :pay_grade: ES
-  :series: '0301'
-  :salary: "$170,000"
-  :office: Immediate Office of the Secretary
-  :table_note: Converted to SES non-career
-  :end_type: resigned
-  :source: https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
+
+- id: usda-cole-leader
+  type: promotion
+  category: wrecker
+  agency: USDA
+  title: Senior Team Leader on Government Efficiency
+  start_date: 2025-03-17
+  start_date_truth: verified
+  end_date: 2025-08-XX
+  end_date_truth: self-reported
+  project: spending
+  pay_grade: ES
+  series: '0301'
+  salary: "$170,000"
+  office: Immediate Office of the Secretary
+  table_note: Converted to SES non-career
+  end_type: resigned
+  source: >-
+    https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/

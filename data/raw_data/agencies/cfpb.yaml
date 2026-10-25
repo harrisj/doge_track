@@ -1,571 +1,634 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Consumer Financial Protection Bureau
-:id: CFPB
-:short_name: CFPB
-:page_slug: self
-:slug: cfpb
-:blurb: After several weeks of quiet, the DOGE wrecking crew descended on the CFPB
-  on a Thursday in early February. By Friday, they had been granted admin access to
-  multiple systems with the support of acting director Russell Vought and had deleted
-  the homepage for the website. By Monday, the entire workforce of the agency had
-  been place on administrative leave and blocked from accessing the building. Despite
-  some still-lingering concerns about Musk gaining access to proprietary financial
-  data for his competitors, DOGE's main focus at the agency was making an example
-  of it, with many of the crew who had demolished USAID taking part in this effort.
-  Their attempt at forcing mass layoffs on February 14 was stopped at only the last
-  minute by a judge's temporary restraining order, and DOGE assisted with another
-  reduction-in-force (RIF) for 80% of the agency on April 17th, only for it to be
-  overturned by the same judge. Today, the CFPB is still alive, but in a precarious
-  limbo that might make months or year to resolve.
-:doge_base: true
-:events:
-- :date: 2025-02-01
-  :type: disruption
-  :event: Trump fires Rohit Chopra, the independent director of the CFPB. The deputy
-    director of the CFPB, Zixta Martinez, assumes the role of acting director.
-  :project:
+name: Consumer Financial Protection Bureau
+id: CFPB
+short_name: CFPB
+page_slug: self
+slug: cfpb
+blurb: >-
+  After several weeks of quiet, the DOGE wrecking crew descended on the CFPB on a Thursday in early February.
+  By Friday, they had been granted admin access to multiple systems with the support of acting director
+  Russell Vought and had deleted the homepage for the website. By Monday, the entire workforce of the
+  agency had been place on administrative leave and blocked from accessing the building. Despite some
+  still-lingering concerns about Musk gaining access to proprietary financial data for his competitors,
+  DOGE's main focus at the agency was making an example of it, with many of the crew who had demolished
+  USAID taking part in this effort. Their attempt at forcing mass layoffs on February 14 was stopped at
+  only the last minute by a judge's temporary restraining order, and DOGE assisted with another reduction-in-force
+  (RIF) for 80% of the agency on April 17th, only for it to be overturned by the same judge. Today, the
+  CFPB is still alive, but in a precarious limbo that might make months or year to resolve.
+doge_base: true
+events:
+
+- date: 2025-02-01
+  type: disruption
+  event: >-
+    Trump fires Rohit Chopra, the independent director of the CFPB. The deputy director of the CFPB, Zixta
+    Martinez, assumes the role of acting director.
+  project:
   - elimination
   - deregulation
-  :source: https://www.npr.org/2025/02/01/nx-s1-5254186/cfpb-consumer-financial-protection-cfpb-trump-chopra
-  :agency: CFPB
-  :id: 27lMkSeZ
-- :date: 2025-02-03
-  :type: official
-  :event: Treasury Secretary Scott Bessent is named the acting director of the CFPB
-    and orders staff to immediately halt all work pending review.
-  :source: https://www.npr.org/2025/02/03/nx-s1-5285356/treasury-secretary-bessent-acting-cfpb-director
-  :project:
+  source: https://www.npr.org/2025/02/01/nx-s1-5254186/cfpb-consumer-financial-protection-cfpb-trump-chopra
+  agency: CFPB
+  id: 27lMkSeZ
+
+- date: 2025-02-03
+  type: official
+  event: >-
+    Treasury Secretary Scott Bessent is named the acting director of the CFPB and orders staff to immediately
+    halt all work pending review.
+  source: https://www.npr.org/2025/02/03/nx-s1-5285356/treasury-secretary-bessent-acting-cfpb-director
+  project:
   - personnel
   - elimination
-  :agency: CFPB
-  :id: ZkrnYESM
-- :date: 2025-02-06
-  :type: onboard
-  :event: A DOGE team consisting of Luke Farritor, Jeremy Lewin, Nikhil Rajpal, Gavin
-    Kliger and Chris Young enters the CFPB headquarters and is given equipment and
-    onboarded with a quick session on privacy policies in force at the CFPB.
-  :notable: true
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :named:
+  agency: CFPB
+  id: ZkrnYESM
+
+- date: 2025-02-06
+  type: onboard
+  event: >-
+    A DOGE team consisting of Luke Farritor, Jeremy Lewin, Nikhil Rajpal, Gavin Kliger and Chris Young
+    enters the CFPB headquarters and is given equipment and onboarded with a quick session on privacy
+    policies in force at the CFPB.
+  notable: true
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  named:
   - Luke Farritor
   - Jeremy Lewin
   - Nikhil Rajpal
   - Gavin Kliger
   - Chris Young
-  :agency: CFPB
-  :id: R9JtW4eJ
-- :date: 2025-02-07
-  :type: disruption
-  :event: Elon Musk posts a tweet "CFPB RIP" with a tombstone emoji
-  :named:
+  agency: CFPB
+  id: R9JtW4eJ
+
+- date: 2025-02-07
+  type: official
+  event: >-
+    OMB director Russell Vought is named the new acting head of the CFPB. The CFPB Chief Legal Counsel
+    is also replaced by Mark Paoletta, a close associate of Russell Vought.
+  source: https://www.cnn.com/2025/02/08/business/cfpb-doge-vought-x/index.html
+  named:
+  - Russell Vought
+  agency: CFPB
+  id: 1pcExqWx
+
+- date: 2025-02-07
+  type: disruption
+  event: >-
+    The CFPB homepage is deleted and returns a HTTP 404 Not Found error (the rest of the site remains
+    online). The CFPB social media account on X is also deleted. These actions are likely taken by Gavin
+    Kliger, who was granted admin access to the website.
+  fuzz: Gavin Kliger access named in later court documents
+  named:
+  - Gavin Kliger
+  source: >-
+    https://www.forbes.com/sites/eriksherman/2025/02/09/consumer-financial-protection-bureau-adds-error-message-to-home-page/
+  agency: CFPB
+  id: 2fUJZPvu
+
+- date: 2025-02-07
+  type: action
+  event: >-
+    DOGE staff are granted global admin access to various CFPB systems without completing all the mandated
+    training or agreeing to CFPB's acceptable use policy for IT systems. This includes a system that allows
+    them to grant or revoke access to other IT systems at the CFPB.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.38.5.pdf
+  project: impunity
+  case_no: 1:25-cv-00381
+  agency: CFPB
+  id: SG9PVcaS
+
+- date: 2025-02-07
+  type: disruption
+  event: Elon Musk posts a tweet "CFPB RIP" with a tombstone emoji
+  named:
   - Elon Musk
-  :project:
+  project:
   - elimination
   - deregulation
-  :source: https://news.bloomberglaw.com/banking-law/musks-doge-descends-on-consumer-financial-protection-bureau
-  :agency: CFPB
-  :id: fHLJXQSP
-- :date: 2025-02-07
-  :type: official
-  :event: OMB director Russell Vought is named the new acting head of the CFPB. The
-    CFPB Chief Legal Counsel is also replaced by Mark Paoletta, a close associate
-    of Russell Vought.
-  :source: https://www.cnn.com/2025/02/08/business/cfpb-doge-vought-x/index.html
-  :named:
-  - Russell Vought
-  :agency: CFPB
-  :id: 1pcExqWx
-- :date: 2025-02-07
-  :type: action
-  :event: DOGE staff are granted global admin access to various CFPB systems without
-    completing all the mandated training or agreeing to CFPB's acceptable use policy
-    for IT systems. This includes a system that allows them to grant or revoke access
-    to other IT systems at the CFPB.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.38.5.pdf
-  :project: impunity
-  :case_no: 1:25-cv-00381
-  :agency: CFPB
-  :id: SG9PVcaS
-- :date: 2025-02-07
-  :type: disruption
-  :event: The CFPB homepage is deleted and returns a HTTP 404 Not Found error (the
-    rest of the site remains online). The CFPB social media account on X is also deleted.
-    These actions are likely taken by Gavin Kliger, who was granted admin access to
-    the website.
-  :fuzz: Gavin Kliger access named in later court documents
-  :named:
-  - Gavin Kliger
-  :source: https://www.forbes.com/sites/eriksherman/2025/02/09/consumer-financial-protection-bureau-adds-error-message-to-home-page/
-  :agency: CFPB
-  :id: 2fUJZPvu
-- :date: 2025-02-10
-  :type: disruption
-  :event: 'In an email sent to all staff, Russell Vought orders the CFPB''s headquarters
-    to be indefinitely closed. He also orders: "Please do not perform any work tasks.
-    If there are any urgent matters, please alert me through Mark Paoletta, Chief
-    Legal Officer, to get approval in writing before performing any work task. Otherwise,
-    employees should stand down from performing any work task."'
-  :notable: true
-  :project:
+  source: >-
+    https://news.bloomberglaw.com/banking-law/musks-doge-descends-on-consumer-financial-protection-bureau
+  agency: CFPB
+  id: fHLJXQSP
+
+- date: 2025-02-10
+  type: disruption
+  event: >-
+    In an email sent to all staff, Russell Vought orders the CFPB's headquarters to be indefinitely closed.
+    He also orders: "Please do not perform any work tasks. If there are any urgent matters, please alert
+    me through Mark Paoletta, Chief Legal Officer, to get approval in writing before performing any work
+    task. Otherwise, employees should stand down from performing any work task."
+  notable: true
+  project:
   - elimination
   - deregulation
-  :named:
+  named:
   - Russell Vought
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
-  :case_no: 1:25-cv-00381
-  :agency: CFPB
-  :id: 18lnDiaG
-- :date: 2025-02-11
-  :type: disruption
-  :event: Approximately 85 probationary employees at the CFPB are fired without cause.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
-  :project: personnel
-  :case_no: 1:25-cv-00381
-  :agency: CFPB
-  :id: 5y3w31WF
-- :date: 2025-02-11
-  :type: disruption
-  :event: CFPB Contracting Officers (COs) are ordered to terminate the vast majority
-    of CFPB's contracts over the weekend (“We need to get these Termination Notifications
-    out ASAP.”) This includes "Enforcement (102 contracts), Supervision (16 contracts),
-    External Affairs (3 contracts), Consumer Response (20 contracts), Office of Director
-    (33 contracts), and Legal Division (all except 2 contracts)."
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
-  :case_no: 1:25-cv-00381
-  :project:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
+  case_no: 1:25-cv-00381
+  agency: CFPB
+  id: 18lnDiaG
+
+- date: 2025-02-11
+  type: disruption
+  event: Approximately 85 probationary employees at the CFPB are fired without cause.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
+  project: personnel
+  case_no: 1:25-cv-00381
+  agency: CFPB
+  id: 5y3w31WF
+
+- date: 2025-02-11
+  type: disruption
+  event: >-
+    CFPB Contracting Officers (COs) are ordered to terminate the vast majority of CFPB's contracts over
+    the weekend (“We need to get these Termination Notifications out ASAP.”) This includes "Enforcement
+    (102 contracts), Supervision (16 contracts), External Affairs (3 contracts), Consumer Response (20
+    contracts), Office of Director (33 contracts), and Legal Division (all except 2 contracts)."
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
+  case_no: 1:25-cv-00381
+  project:
   - spending
   - elimination
-  :agency: CFPB
-  :id: Ku4aQCfT
-- :date: 2025-02-12
-  :type: disruption
-  :event: Adam Martinez, CFPB COO, includes DOGE representatives Jordan Wick and Chris
-    Young in emails hiring OPM for consulting on Reduction-in-Force (RIF) planning
-    for the CFPB. CFPB agrees to pay OPM $171,925 for these services.
-  :named:
+  agency: CFPB
+  id: Ku4aQCfT
+
+- date: 2025-02-12
+  type: disruption
+  event: >-
+    Adam Martinez, CFPB COO, includes DOGE representatives Jordan Wick and Chris Young in emails hiring
+    OPM for consulting on Reduction-in-Force (RIF) planning for the CFPB. CFPB agrees to pay OPM $171,925
+    for these services.
+  named:
   - Jordan Wick
   - Chris Young
-  :project:
+  project:
   - personnel
   - elimination
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
-  :case_no: 1:25-cv-00381
-  :agency: CFPB
-  :id: HnJrpqPY
-- :date: 2025-02-13
-  :type: disruption
-  :event: The CFPB RIF team, including Adam Martinez meets with Jordan Wick, Jeremy
-    Lewin, and OPM officials on a video call. Jeremy Lewin and Jordan Wick talk off
-    screen with Acting Director Russell Vought, and Wick tells the group that they
-    want formal RIF notices to go out no later than February 14. The team receives
-    a template from OPM for firing 1200 employees "at night on the 13th."
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
-  :case_no: 1:25-cv-00381
-  :named:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
+  case_no: 1:25-cv-00381
+  agency: CFPB
+  id: HnJrpqPY
+
+- date: 2025-02-13
+  type: disruption
+  event: >-
+    CFPB leadership authorizes the creation of an email account for the public to snitch on if CFPB staff
+    are engaged in any enforcement or supervision actions in violation of the stop-work order. They also
+    create an account on X for this service.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
+  case_no: 1:25-cv-00381
+  agency: CFPB
+  id: 2DACs2Yb
+
+- date: 2025-02-13
+  type: disruption
+  event: >-
+    The CFPB RIF team, including Adam Martinez meets with Jordan Wick, Jeremy Lewin, and OPM officials
+    on a video call. Jeremy Lewin and Jordan Wick talk off screen with Acting Director Russell Vought,
+    and Wick tells the group that they want formal RIF notices to go out no later than February 14. The
+    team receives a template from OPM for firing 1200 employees "at night on the 13th."
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
+  case_no: 1:25-cv-00381
+  named:
   - Jordan Wick
   - Jeremy Lewin
   - Russell Vought
-  :project:
+  project:
   - personnel
   - elimination
   - deregulation
-  :agency: CFPB
-  :id: DbgzC9iA
-- :date: 2025-02-13
-  :type: disruption
-  :event: CFPB leadership authorizes the creation of an email account for the public
-    to snitch on if CFPB staff are engaged in any enforcement or supervision actions
-    in violation of the stop-work order. They also create an account on X for this
-    service.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
-  :case_no: 1:25-cv-00381
-  :agency: CFPB
-  :id: 2DACs2Yb
-- :date: 2025-02-14
-  :type: disruption
-  :event: The CFPB's videos are removed from its YouTube channel.
-  :project: elimination
-  :source: https://www.theverge.com/news/613567/trump-youtube-videos-cfpb
-  :agency: CFPB
-  :id: jvA4LYFX
-- :date: 2025-02-14
-  :type: legal
-  :event: The judge, Amy Berman-Jackson grants a temporary restraining order against
-    CFPB leadership until a hearing for a preliminary injunction to prevent them from
-    shuttering the agency by eliminating staff and canceling all contracts. DOGE and
-    CFPB leadership had been racing to eliminate 1175 positions before the restraining
-    order was announced.
-  :notable: true
-  :case_no: 1:25-cv-00381
-  :project:
+  agency: CFPB
+  id: DbgzC9iA
+
+- date: 2025-02-14
+  type: legal
+  event: >-
+    The judge, Amy Berman-Jackson grants a temporary restraining order against CFPB leadership until a
+    hearing for a preliminary injunction to prevent them from shuttering the agency by eliminating staff
+    and canceling all contracts. DOGE and CFPB leadership had been racing to eliminate 1175 positions
+    before the restraining order was announced.
+  notable: true
+  case_no: 1:25-cv-00381
+  project:
   - personnel
   - deregulation
-  :source: https://www.bankingdive.com/news/cfpb-1175-layoffs-race-court-order-martinez-pfaff/742050/
-  :agency: CFPB
-  :id: 2XHMUAB3
-- :date: 2025-02-18
-  :type: disruption
-  :event: An employee requests to repair the CFPB homepage that was purposefully deleted
-    by DOGE. That action is refused by order of Russell Vought. Other work is allowed
-    for digital teams.
-  :named:
+  source: https://www.bankingdive.com/news/cfpb-1175-layoffs-race-court-order-martinez-pfaff/742050/
+  agency: CFPB
+  id: 2XHMUAB3
+
+- date: 2025-02-14
+  type: disruption
+  event: The CFPB's videos are removed from its YouTube channel.
+  project: elimination
+  source: https://www.theverge.com/news/613567/trump-youtube-videos-cfpb
+  agency: CFPB
+  id: jvA4LYFX
+
+- date: 2025-02-18
+  type: disruption
+  event: >-
+    An employee requests to repair the CFPB homepage that was purposefully deleted by DOGE. That action
+    is refused by order of Russell Vought. Other work is allowed for digital teams.
+  named:
   - Russell Vought
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.38.6.pdf
-  :case_no: 1:25-cv-00381
-  :agency: CFPB
-  :id: ifPsztJp
-- :date: 2025-02-20
-  :type: disruption
-  :event: At an internal planning meeting for the temporarily paused Reduction In
-    Force, CFPB COO Adam Martinez confirms the White House plan was to completely
-    end the CFPB within 30 days. The plan was to reduce the CFPB to "five guys and
-    a phone," ie to the minimum number of positions that were mandated by the text
-    of Dodd-Frank (the bill that created the CFPB). Staff were informed there was
-    no need to abide by federal data retention regulations because there would be
-    nothing left of the agency to maintain.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
-  :project:
-  - elimination
-  - deregulation
-  :case_no: 1:25-cv-00381
-  :agency: CFPB
-  :id: 7N8VIAaB
-- :date: 2025-02-20
-  :type: disruption
-  :event: Jordan Wick emails Russell Vought asking for approval to cut an additional
-    $8.4 million of contracts at the CFPB
-  :named:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.38.6.pdf
+  case_no: 1:25-cv-00381
+  agency: CFPB
+  id: ifPsztJp
+
+- date: 2025-02-20
+  type: disruption
+  event: >-
+    Jordan Wick emails Russell Vought asking for approval to cut an additional $8.4 million of contracts
+    at the CFPB
+  named:
   - Jordan Wick
   - Russell Vought
-  :project:
+  project:
   - spending
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
-  :case_no: 1:25-cv-00381
-  :agency: CFPB
-  :id: 3K2zYRLK
-- :date: 2025-03-02
-  :type: official
-  :event: The night before the hearing for a preliminary injunction in _NTEU v. Vought_,
-    Chief Legal Officer Mark Paoletta sends out an email to all staff telling them
-    that they should have known all along that the stop work order wasn't meant to
-    cover statutorily mandated work. This seems like a blatant attempt to spin the
-    narrative and claim the agency has not been stopped from performing its statutory
-    duties. In her later ruling, Judge Amy Berman Jackson describes this move as "[insulting]
-    the reader's intelligence when he feigns surprise that few employees were working."
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
-  :case_no: 1:25-cv-00381
-  :agency: CFPB
-  :id: 6GZYJl9P
-- :date: 2025-03-03
-  :type: legal
-  :event: In a hearing for a preliminary injunction, Judge Amy Berman Jackson expresses
-    fears that CFPB will be "choked out of its very existence" while the litigation
-    progresses. Concerned with misleading answers from the admininistration's lawyers,
-    she orders a evidentiary hearing in a week and continues the restraining order
-    against layoffs.
-  :notable: true
-  :project:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
+  case_no: 1:25-cv-00381
+  agency: CFPB
+  id: 3K2zYRLK
+
+- date: 2025-02-20
+  type: disruption
+  event: >-
+    At an internal planning meeting for the temporarily paused Reduction In Force, CFPB COO Adam Martinez
+    confirms the White House plan was to completely end the CFPB within 30 days. The plan was to reduce
+    the CFPB to "five guys and a phone," ie to the minimum number of positions that were mandated by the
+    text of Dodd-Frank (the bill that created the CFPB). Staff were informed there was no need to abide
+    by federal data retention regulations because there would be nothing left of the agency to maintain.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
+  project:
   - elimination
   - deregulation
-  :case_no: 1:25-cv-00381
-  :source: https://lawandcrime.com/high-profile/choked-out-of-its-very-existence-judge-fears-trump-will-dismantle-consumer-financial-protection-bureau-completely-before-she-can-stop-him/
-  :agency: CFPB
-  :id: 6rKuMudb
-- :date: 2025-03-04
-  :type: offboard
-  :event: Luke Farritor officially offboards from the CFPB and all of his system access
-    is revoked. The reason given is that his detail had ended.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :case_no: 1:25-cv-00339
-  :named:
-  - Luke Farritor
-  :agency: CFPB
-  :id: TwWSFLuZ
-- :date: 2025-03-04
-  :type: onboard
-  :event: Jordan Wick is converted from a detailee to a full employee of the CFPB.
-    This is in accordance with a DOGE strategy to avoid disclosure in _CREW v. DOGE_
-    by moving DOGE staff into other agencies.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :case_no: 1:25-cv-00339
-  :named:
+  case_no: 1:25-cv-00381
+  agency: CFPB
+  id: 7N8VIAaB
+
+- date: 2025-03-02
+  type: official
+  event: >-
+    The night before the hearing for a preliminary injunction in _NTEU v. Vought_, Chief Legal Officer
+    Mark Paoletta sends out an email to all staff telling them that they should have known all along that
+    the stop work order wasn't meant to cover statutorily mandated work. This seems like a blatant attempt
+    to spin the narrative and claim the agency has not been stopped from performing its statutory duties.
+    In her later ruling, Judge Amy Berman Jackson describes this move as "[insulting] the reader's intelligence
+    when he feigns surprise that few employees were working."
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
+  case_no: 1:25-cv-00381
+  agency: CFPB
+  id: 6GZYJl9P
+
+- date: 2025-03-03
+  type: legal
+  event: >-
+    In a hearing for a preliminary injunction, Judge Amy Berman Jackson expresses fears that CFPB will
+    be "choked out of its very existence" while the litigation progresses. Concerned with misleading answers
+    from the admininistration's lawyers, she orders a evidentiary hearing in a week and continues the
+    restraining order against layoffs.
+  notable: true
+  project:
+  - elimination
+  - deregulation
+  case_no: 1:25-cv-00381
+  source: >-
+    https://lawandcrime.com/high-profile/choked-out-of-its-very-existence-judge-fears-trump-will-dismantle-consumer-financial-protection-bureau-completely-before-she-can-stop-him/
+  agency: CFPB
+  id: 6rKuMudb
+
+- date: 2025-03-04
+  type: onboard
+  event: >-
+    Jordan Wick is converted from a detailee to a full employee of the CFPB. This is in accordance with
+    a DOGE strategy to avoid disclosure in _CREW v. DOGE_ by moving DOGE staff into other agencies.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  case_no: 1:25-cv-00339
+  named:
   - Jordan Wick
-  :agency: CFPB
-  :id: 3adk09oY
-- :date: 2025-03-21
-  :type: offboard
-  :event: Nikhil Rajpal officially offboards from the CFPB, reportedly because his
-    detail has ended. In a later court filing, CFPB reveals that he was not granted
-    any system access nor did he perform any actions during his time at the CFPB.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :case_no: 1:25-cv-00339
-  :named:
+  agency: CFPB
+  id: 3adk09oY
+
+- date: 2025-03-04
+  type: offboard
+  event: >-
+    Luke Farritor officially offboards from the CFPB and all of his system access is revoked. The reason
+    given is that his detail had ended.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  case_no: 1:25-cv-00339
+  named:
+  - Luke Farritor
+  agency: CFPB
+  id: TwWSFLuZ
+
+- date: 2025-03-21
+  type: offboard
+  event: >-
+    Nikhil Rajpal officially offboards from the CFPB, reportedly because his detail has ended. In a later
+    court filing, CFPB reveals that he was not granted any system access nor did he perform any actions
+    during his time at the CFPB.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  case_no: 1:25-cv-00339
+  named:
   - Nikhil Rajpal
-  :agency: CFPB
-  :id: 4q7ANp6B
-- :date: 2025-03-28
-  :type: legal
-  :event: In a sweeping ruling, judge Amy Berman Jackson grants a preliminary injunction
-    for the National Treasury Employees Union (NTEU) against Russell Vought, the acting
-    CFPB director. In her ruling, she declares that it is plain that the administration
-    intended to destroy the agency and she found significant parts of its testimony
-    unreliable. In her injunction, she orders the admininistration must refrain from
-    any firing any employee of the CFPB, restore any contracts that were in place
-    before February 11th, reinstate all probationary employees that were fired, ensure
-    that no agency data is deleted and rescind the stop-work order. It is immediately
-    appealed by the administration.
-  :notable: true
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
-  :case_no: 1:25-cv-00381
-  :project:
+  agency: CFPB
+  id: 4q7ANp6B
+
+- date: 2025-03-28
+  type: legal
+  event: >-
+    In a sweeping ruling, judge Amy Berman Jackson grants a preliminary injunction for the National Treasury
+    Employees Union (NTEU) against Russell Vought, the acting CFPB director. In her ruling, she declares
+    that it is plain that the administration intended to destroy the agency and she found significant
+    parts of its testimony unreliable. In her injunction, she orders the admininistration must refrain
+    from any firing any employee of the CFPB, restore any contracts that were in place before February
+    11th, reinstate all probationary employees that were fired, ensure that no agency data is deleted
+    and rescind the stop-work order. It is immediately appealed by the administration.
+  notable: true
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.87.0_2.pdf
+  case_no: 1:25-cv-00381
+  project:
   - elimination
   - personnel
-  :agency: CFPB
-  :id: 26OEuzWQ
-- :date: 2025-04-10
-  :type: official
-  :event: Gavin Kliger receives a warning from the CFPB Ethics Office that his stock
-    holdings present serious concerns about possible conflicts of interest. He is
-    required to divest himself of prohibited holdings by May 8th and excuse himself
-    from decisions that might affect his holdings immediately.
-  :named:
+  agency: CFPB
+  id: 26OEuzWQ
+
+- date: 2025-04-10
+  type: official
+  event: >-
+    Gavin Kliger receives a warning from the CFPB Ethics Office that his stock holdings present serious
+    concerns about possible conflicts of interest. He is required to divest himself of prohibited holdings
+    by May 8th and excuse himself from decisions that might affect his holdings immediately.
+  named:
   - Gavin Kliger
-  :agency: CFPB
-  :source: https://www.propublica.org/article/cfpb-gavin-kliger-doge-conflict-of-interest-consumer-financial-protection-bureau
-  :id: nAPDT6yN
-- :date: 2025-04-11
-  :type: legal
-  :event: A three-judge appeal panel for the DC Circuit issues a ruling on the appeal
-    for Judge Amy Berman Jackson's preliminary injunction in _NTEU v. Vought_. The
-    appeals court stays a measure that prevent CFPB leadership from enforcing work
-    stoppages for non-statutory work. It also allows CFPB leadership to perform a
-    reduction-in-force, provided that they conduct a "particularized assessment" for
-    the process.
-  :source: https://www.consumerfinancialserviceslawmonitor.com/wp-content/uploads/sites/880/2025/04/NTEU-v.-CFPB-April-11.pdf
-  :project:
+  agency: CFPB
+  source: >-
+    https://www.propublica.org/article/cfpb-gavin-kliger-doge-conflict-of-interest-consumer-financial-protection-bureau
+  id: nAPDT6yN
+
+- date: 2025-04-11
+  type: legal
+  event: >-
+    A three-judge appeal panel for the DC Circuit issues a ruling on the appeal for Judge Amy Berman Jackson's
+    preliminary injunction in _NTEU v. Vought_. The appeals court stays a measure that prevent CFPB leadership
+    from enforcing work stoppages for non-statutory work. It also allows CFPB leadership to perform a
+    reduction-in-force, provided that they conduct a "particularized assessment" for the process.
+  source: >-
+    https://www.consumerfinancialserviceslawmonitor.com/wp-content/uploads/sites/880/2025/04/NTEU-v.-CFPB-April-11.pdf
+  project:
   - personnel
-  :case_no: 1:25-cv-00381
-  :agency: CFPB
-  :id: 55f6Ur4o
-- :date: 2025-04-12
-  :type: interagency
-  :event: CFPB leadership under Russell Vought uses the opening granted by the appeals
-    court to attempt another massive RIF. Emailing from his USAID email account, Jeremy
-    Lewin kicks off the process by providing Gavin Kliger and Adam Martinez with a
-    letter to use for RIFs at the CFPB.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.128.2_1.pdf
-  :case_no: 1:25-cv-00381
-  :project:
+  case_no: 1:25-cv-00381
+  agency: CFPB
+  id: 55f6Ur4o
+
+- date: 2025-04-12
+  type: interagency
+  event: >-
+    CFPB leadership under Russell Vought uses the opening granted by the appeals court to attempt another
+    massive RIF. Emailing from his USAID email account, Jeremy Lewin kicks off the process by providing
+    Gavin Kliger and Adam Martinez with a letter to use for RIFs at the CFPB.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.128.2_1.pdf
+  case_no: 1:25-cv-00381
+  project:
   - personnel
   - elimination
   - deregulation
-  :interagency_doge_reps:
-    :CFPB: Gavin Kliger
-    :USAID: Jeremy Lewin
-  :agency: CFPB
-  :id: 3XxWRrBu
-- :date: 2025-04-12
-  :type: interagency
-  :event: 'Emailing this time from his CFPB account, Jeremy Lewin shares the documentation
-    for the upcoming CFPB RIF with DOGE staff posted at several agencies (Zach Terrell
-    and Alexandra Beynon). He also includes DOGE staff at CFPB: Gavin Kliger, Chris
-    Young and Jordan Wick. It''s unclear if they are representing their individual
-    agencies or are just taking part as DOGE members in the conversation.'
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.137.1_1.pdf
-  :case_no: 1:25-cv-00381
-  :interagency_doge_reps:
-    :CFPB:
+  interagency_doge_reps:
+    CFPB: Gavin Kliger
+    USAID: Jeremy Lewin
+  agency: CFPB
+  id: 3XxWRrBu
+
+- date: 2025-04-12
+  type: interagency
+  event: >-
+    Gavin Kliger begins working with Adam Martinez of CFPB and Jeremy Lewin at USAID on the infrastructure
+    to automate a massive RIF at the CFPB. This includes scripts to send termination letters to each employee.
+  project:
+  - personnel
+  - elimination
+  interagency_doge_reps:
+    CFPB: Gavin Kliger
+    USAID: Jeremy Lewin
+  case_no: 1:25-cv-00381
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
+  agency: CFPB
+  id: 7a5wZUiM
+
+- date: 2025-04-12
+  type: interagency
+  event: >-
+    Emailing this time from his CFPB account, Jeremy Lewin shares the documentation for the upcoming CFPB
+    RIF with DOGE staff posted at several agencies (Zach Terrell and Alexandra Beynon). He also includes
+    DOGE staff at CFPB: Gavin Kliger, Chris Young and Jordan Wick. It's unclear if they are representing
+    their individual agencies or are just taking part as DOGE members in the conversation.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.137.1_1.pdf
+  case_no: 1:25-cv-00381
+  interagency_doge_reps:
+    CFPB:
     - Gavin Kliger
     - Jeremy Lewin
     - Chris Young
     - Jordan Wick
-    :HHS: Zach Terrell
-    :Education: Alexandra Beynon
-  :agency: CFPB
-  :id: MXinRonY
-- :date: 2025-04-12
-  :type: official
-  :event: Jeremy Lewin emails CFPB leadership asking for full global admininstrative
-    access for Entra and HRConnect to be restored for the DOGE engineers Gavin Kliger
-    and Jordan Wick. Weirdly, this list includes Luke Farritor who offboarded at CFPB
-    on 2025-03-04. This request is denied by the agency CIO.
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.137.1_1.pdf
-  :case_no: 1:25-cv-00381
-  :named:
+    HHS: Zach Terrell
+    Education: Alexandra Beynon
+  agency: CFPB
+  id: MXinRonY
+
+- date: 2025-04-12
+  type: official
+  event: >-
+    Jeremy Lewin emails CFPB leadership asking for full global admininstrative access for Entra and HRConnect
+    to be restored for the DOGE engineers Gavin Kliger and Jordan Wick. Weirdly, this list includes Luke
+    Farritor who offboarded at CFPB on 2025-03-04. This request is denied by the agency CIO.
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.137.1_1.pdf
+  case_no: 1:25-cv-00381
+  named:
   - Gavin Kliger
   - Jeremy Lewin
   - Jordan Wick
-  :linked:
+  linked:
   - Luke Farritor
-  :agency: CFPB
-  :id: YpiseeEG
-- :date: 2025-04-12
-  :type: interagency
-  :event: Gavin Kliger begins working with Adam Martinez of CFPB and Jeremy Lewin
-    at USAID on the infrastructure to automate a massive RIF at the CFPB. This includes
-    scripts to send termination letters to each employee.
-  :project:
-  - personnel
-  - elimination
-  :interagency_doge_reps:
-    :CFPB: Gavin Kliger
-    :USAID: Jeremy Lewin
-  :case_no: 1:25-cv-00381
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
-  :agency: CFPB
-  :id: 7a5wZUiM
-- :date: 2025-04-13
-  :type: access
-  :event: In an email, CFPB CIO Chris Chilbert reports that Gavin Kliger has been
-    granted access to Ops HC - Prod to build the RIF automation. He also asks to confirm
-    that Gavin Kliger should have his access immediately revoked to systems that let
-    him deactivate employee email accounts or lock them out of their laptops.
-  :case_no: 1:25-cv-00381
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.128.4_1.pdf
-  :named:
-  - Gavin Kliger
-  :agency: CFPB
-  :comment: FIXME, see what those systems are
-  :id: N4uZjCyt
-- :date: 2025-04-13
-  :type: interagency
-  :event: Jeremy Lewin has a followup Teams call with CFPB chief legal counsel Mark
-    Paoletta to plan for the upcoming massive RIF at the CFPB
-  :project:
+  agency: CFPB
+  id: YpiseeEG
+
+- date: 2025-04-13
+  type: interagency
+  event: >-
+    Jeremy Lewin has a followup Teams call with CFPB chief legal counsel Mark Paoletta to plan for the
+    upcoming massive RIF at the CFPB
+  project:
   - elimination
   - personnel
-  :case_no: 1:25-cv-00381
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
-  :interagency_doge_reps:
-    :USAID: Jeremy Lewin
-  :agency: CFPB
-  :id: 32sfy2H5
-- :date: 2025-04-13
-  :type: access
-  :event: In an email, CFPB CIO Chris Chilbert informs Gavin Kliger that he will not
-    be granted global admin access for his requests.
-  :case_no: 1:25-cv-00381
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
-  :named:
-  - Gavin Kliger
-  :agency: CFPB
-  :id: YvnoXfWE
-- :date: 2025-04-13
-  :type: interagency
-  :event: Adam Martinez responds in the affirmative to an email (contents redacted
-    in court filings) requesting items/access for unspecified people to conduct the
-    RIF. Several DOGE staffers (Ashley Boizelle and Steve Davis as well as Gavin Kliger
-    and Jeremy Lewin) are also cc'ed on the message
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.137.1_1.pdf
-  :case_no: 1:25-cv-00381
-  :interagency_doge_reps:
-    :DOGE:
+  case_no: 1:25-cv-00381
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
+  interagency_doge_reps:
+    USAID: Jeremy Lewin
+  agency: CFPB
+  id: 32sfy2H5
+
+- date: 2025-04-13
+  type: interagency
+  event: >-
+    Adam Martinez responds in the affirmative to an email (contents redacted in court filings) requesting
+    items/access for unspecified people to conduct the RIF. Several DOGE staffers (Ashley Boizelle and
+    Steve Davis as well as Gavin Kliger and Jeremy Lewin) are also cc'ed on the message
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.137.1_1.pdf
+  case_no: 1:25-cv-00381
+  interagency_doge_reps:
+    DOGE:
     - Ashley Boizelle
     - Steve Davis
-    :CFPB:
+    CFPB:
     - Gavin Kliger
     - Jeremy Lewin
-  :agency: CFPB
-  :id: 7dbzTENK
-- :date: 2025-04-16
-  :type: interagency
-  :event: Noah Peters at OPM denies the CFPB request made by Adam Martinez as well
-    as Jeremy Lewin and Gavin Kliger to conduct an "emergency" RIF at the CFPB which
-    would only give employees 30 days before their termination.
-  :project:
+  agency: CFPB
+  id: 7dbzTENK
+
+- date: 2025-04-13
+  type: access
+  event: >-
+    In an email, CFPB CIO Chris Chilbert reports that Gavin Kliger has been granted access to Ops HC -
+    Prod to build the RIF automation. He also asks to confirm that Gavin Kliger should have his access
+    immediately revoked to systems that let him deactivate employee email accounts or lock them out of
+    their laptops.
+  case_no: 1:25-cv-00381
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.128.4_1.pdf
+  named:
+  - Gavin Kliger
+  agency: CFPB
+  comment: FIXME, see what those systems are
+  id: N4uZjCyt
+
+- date: 2025-04-13
+  type: access
+  event: >-
+    In an email, CFPB CIO Chris Chilbert informs Gavin Kliger that he will not be granted global admin
+    access for his requests.
+  case_no: 1:25-cv-00381
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
+  named:
+  - Gavin Kliger
+  agency: CFPB
+  id: YvnoXfWE
+
+- date: 2025-04-16
+  type: interagency
+  event: >-
+    Noah Peters at OPM denies the CFPB request made by Adam Martinez as well as Jeremy Lewin and Gavin
+    Kliger to conduct an "emergency" RIF at the CFPB which would only give employees 30 days before their
+    termination.
+  project:
   - elimination
   - personnel
-  :case_no: 1:25-cv-00381
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
-  :interagency_doge_reps:
-    :OPM: Noah Peters
-    :USAID: Jeremy Lewin
-    :CFPB: Gavin Kliger
-  :agency: CFPB
-  :id: aaJegvbd
-- :date: 2025-04-17
-  :type: disruption
-  :event: CFPB conducts a massive Reduction-in-Force, eliminating 1483 positions and
-    retaining only 207 people to perform its duties. This is larger than the planned
-    RIF in February that was blocked by Judge Amy Berman-Jackson. It is immediately
-    appealed.
-  :project:
+  case_no: 1:25-cv-00381
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.131.1.pdf
+  interagency_doge_reps:
+    OPM: Noah Peters
+    USAID: Jeremy Lewin
+    CFPB: Gavin Kliger
+  agency: CFPB
+  id: aaJegvbd
+
+- date: 2025-04-17
+  type: disruption
+  event: >-
+    According to sworn testimony by Alex Doe, Gavin Kliger forces the entire CFPB team to work for 36
+    hours straight and subjects them to frequent verbal abuse in an attempt to eliminate most of the staff
+    at the agency in mass layoffs.
+  notable: true
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.111.0.pdf
+  case_no: 1:25-cv-00381
+  named:
+  - Gavin Kliger
+  agency: CFPB
+  id: dHm7PvDq
+
+- date: 2025-04-17
+  type: disruption
+  event: >-
+    CFPB conducts a massive Reduction-in-Force, eliminating 1483 positions and retaining only 207 people
+    to perform its duties. This is larger than the planned RIF in February that was blocked by Judge Amy
+    Berman-Jackson. It is immediately appealed.
+  project:
   - personnel
   - elimination
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.109.0_4.pdf
-  :case_no: 1:25-cv-00381
-  :agency: CFPB
-  :id: fZotJY5V
-- :date: 2025-04-17
-  :type: disruption
-  :event: According to sworn testimony by Alex Doe, Gavin Kliger forces the entire
-    CFPB team to work for 36 hours straight and subjects them to frequent verbal abuse
-    in an attempt to eliminate most of the staff at the agency in mass layoffs.
-  :notable: true
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.111.0.pdf
-  :case_no: 1:25-cv-00381
-  :named:
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277287/gov.uscourts.dcd.277287.109.0_4.pdf
+  case_no: 1:25-cv-00381
+  agency: CFPB
+  id: fZotJY5V
+
+- date: 2025-04-18
+  type: legal
+  event: >-
+    Judge Amy Berman Jackson immediately blocks the RIF for CFPB employees. She expressed skepticism that
+    CFPB leadership a particularized assessment and suggests that they seemed to be "thumbing their nose"
+    at her and the appeals court.
+  source: https://www.npr.org/2025/04/17/nx-s1-5368206/cfpb-layoffs-rif
+  case_no: 1:25-cv-00381
+  agency: CFPB
+  id: 3iqrt0hZ
+
+- date: 2025-05-01
+  type: legal
+  event: >-
+    The D.C. Circuit appeals panel modifies its initial stay of the preliminary injunction that had allowed
+    RIFs after a particularized assessment. In light of the recent attempted RIF, they decide to disallow
+    any RIFs while the appeal of the injunction is being considered. CFPB staff remain at work, but lacking
+    direction from leadership and still barred from many work actions.
+  source: >-
+    https://bankingjournal.aba.com/2025/05/d-c-circuit-panel-modifies-its-partial-stay-bars-cfpb-mass-layoffs/
+  agency: CFPB
+  id: gHQolQlg
+
+- date: 2025-05-08
+  type: offboard
+  named:
   - Gavin Kliger
-  :agency: CFPB
-  :id: dHm7PvDq
-- :date: 2025-04-18
-  :type: legal
-  :event: Judge Amy Berman Jackson immediately blocks the RIF for CFPB employees.
-    She expressed skepticism that CFPB leadership a particularized assessment and
-    suggests that they seemed to be "thumbing their nose" at her and the appeals court.
-  :source: https://www.npr.org/2025/04/17/nx-s1-5368206/cfpb-layoffs-rif
-  :case_no: 1:25-cv-00381
-  :agency: CFPB
-  :id: 3iqrt0hZ
-- :date: 2025-05-01
-  :type: legal
-  :event: The D.C. Circuit appeals panel modifies its initial stay of the preliminary
-    injunction that had allowed RIFs after a particularized assessment. In light of
-    the recent attempted RIF, they decide to disallow any RIFs while the appeal of
-    the injunction is being considered. CFPB staff remain at work, but lacking direction
-    from leadership and still barred from many work actions.
-  :source: https://bankingjournal.aba.com/2025/05/d-c-circuit-panel-modifies-its-partial-stay-bars-cfpb-mass-layoffs/
-  :agency: CFPB
-  :id: gHQolQlg
-- :date: 2025-05-08
-  :type: offboard
-  :named:
-  - Gavin Kliger
-  :event: Gavin Kliger leaves the CFPB, officially because his detail had ended but
-    his departure date is also the day he would be in violation of ethics rules for
-    having not sold stock holdings prohibited to CFBP staff.
-  :source: https://news.bloomberglaw.com/banking-law/doge-employee-leaves-cfpb-after-leading-trumps-mass-firing-plan
-  :project: impunity
-  :agency: CFPB
-  :id: 5o5MwpMZ
-- :date: 2025-05-13
-  :type: disruption
-  :event: The CFPB, still under the acting leadership of Russell Vought, withdraws
-    a rule proposed in December that would limit the ability of data brokers to sell
-    sensitive information by placing them under the oversight of the Fair Credit Reporting
-    Act (FCRA).
-  :project: deregulation
-  :source: https://www.wired.com/story/cfpb-quietly-kills-rule-to-shield-americans-from-data-brokers/
-  :named:
+  event: >-
+    Gavin Kliger leaves the CFPB, officially because his detail had ended but his departure date is also
+    the day he would be in violation of ethics rules for having not sold stock holdings prohibited to
+    CFBP staff.
+  source: >-
+    https://news.bloomberglaw.com/banking-law/doge-employee-leaves-cfpb-after-leading-trumps-mass-firing-plan
+  project: impunity
+  agency: CFPB
+  id: 5o5MwpMZ
+
+- date: 2025-05-13
+  type: disruption
+  event: >-
+    The CFPB, still under the acting leadership of Russell Vought, withdraws a rule proposed in December
+    that would limit the ability of data brokers to sell sensitive information by placing them under the
+    oversight of the Fair Credit Reporting Act (FCRA).
+  project: deregulation
+  source: https://www.wired.com/story/cfpb-quietly-kills-rule-to-shield-americans-from-data-brokers/
+  named:
   - Russell Vought
-  :agency: CFPB
-  :id: 7cif37rv
-- :date: 2025-07-04
-  :type: disruption
-  :event: Trump signs the Big Beautiful Bill into law. Among other regressive measures,
-    it slashes the cap on the that the CFPB can pull from by 46% to a maximum of 6.5%
-    of the Federal Reserve operating budget.
-  :project: elimination
-  :source: https://www.consumeraffairs.com/news/trumps-big-bill-slashes-consumer-watchdog-cfpbs-budget-nearly-in-half-070825.html
-  :agency: CFPB
-  :id: 2CURMRwe
-- :date: 2025-07-14
-  :type: report
-  :event: Although the building is still somewhat in use and staff are being paid,
-    CFPB staff report that the agency has been mostly inoperable for six months and
-    unable to perform its mission to protect the public.
-  :source: https://www.msn.com/en-us/money/companies/employees-at-the-nations-consumer-financial-watchdog-say-its-become-toothless-under-trump/ar-AA1IDEjb
-  :project:
+  agency: CFPB
+  id: 7cif37rv
+
+- date: 2025-07-04
+  type: disruption
+  event: >-
+    Trump signs the Big Beautiful Bill into law. Among other regressive measures, it slashes the cap on
+    the that the CFPB can pull from by 46% to a maximum of 6.5% of the Federal Reserve operating budget.
+  project: elimination
+  source: >-
+    https://www.consumeraffairs.com/news/trumps-big-bill-slashes-consumer-watchdog-cfpbs-budget-nearly-in-half-070825.html
+  agency: CFPB
+  id: 2CURMRwe
+
+- date: 2025-07-14
+  type: report
+  event: >-
+    Although the building is still somewhat in use and staff are being paid, CFPB staff report that the
+    agency has been mostly inoperable for six months and unable to perform its mission to protect the
+    public.
+  source: >-
+    https://www.msn.com/en-us/money/companies/employees-at-the-nations-consumer-financial-watchdog-say-its-become-toothless-under-trump/ar-AA1IDEjb
+  project:
   - elimination
-  :agency: CFPB
-  :id: 5k3dMxFA
+  agency: CFPB
+  id: 5k3dMxFA

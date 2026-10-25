@@ -1,190 +1,205 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Marko Elez
-:sort_name: Elez
-:slug: marko-elez
-:age: 25
-:skill: coder
-:tech_links:
+name: Marko Elez
+sort_name: Elez
+slug: marko-elez
+age: 25
+skill: coder
+tech_links:
+
 - Twitter
+
 - SpaceX
-:blurb: Marko Elez first appeared as the only DOGE member who was authorized to access
-  confidential systems at the Bureau of Fiscal Services within the Treasury Department,
-  a development which was swiftly blocked for a while by lawsuits. During that time,
-  he also became the only DOGE member to resign his position, when various past racist
-  tweets of his were discovered by the _Wall Street Journal_. He was quickly reinstated
-  by Elon Musk with the support of J.D. Vance, who saw nothing wrong with his speech;
-  indeed, since then DOGE has added several other members linked to racist and extremist
-  content online. Upon rejoning DOGE, Marko Elez was placed with Aram Moghaddassi
-  on a team inside of the Department of Labor, and the two are frequently sent on
-  reimburable details to other agencies like SSA or DHS.
-:govt_exit_type: resigned
-:govt_exit_date: 2026-04-XX
-:govt_exit_truth: reported
-:affiliations:
-- :entity_id: cathedral
-  :role: founder
-  :timeframe: after
-  :immediate: true
-  :start_date: 2026-04-XX
-  :start_date_truth: guessed
-  :connection_truth: reported
-  :source:
+blurb: >-
+  Marko Elez first appeared as the only DOGE member who was authorized to access confidential systems
+  at the Bureau of Fiscal Services within the Treasury Department, a development which was swiftly blocked
+  for a while by lawsuits. During that time, he also became the only DOGE member to resign his position,
+  when various past racist tweets of his were discovered by the _Wall Street Journal_. He was quickly
+  reinstated by Elon Musk with the support of J.D. Vance, who saw nothing wrong with his speech; indeed,
+  since then DOGE has added several other members linked to racist and extremist content online. Upon
+  rejoning DOGE, Marko Elez was placed with Aram Moghaddassi on a team inside of the Department of Labor,
+  and the two are frequently sent on reimburable details to other agencies like SSA or DHS.
+govt_exit_type: resigned
+govt_exit_date: 2026-04-XX
+govt_exit_truth: reported
+affiliations:
+
+- entity_id: cathedral
+  role: founder
+  timeframe: after
+  immediate: true
+  start_date: 2026-04-XX
+  start_date_truth: guessed
+  connection_truth: reported
+  source:
   - https://www.wired.com/story/where-the-doge-operatives-are-now/
   - https://thenextweb.com/news/cathedral-doge-alumni-military-cyber-startup-1-4-billion
-  :id: 1oSO8VaD
-:positions:
-- :id: detail-dol-dhs-elez
-  :type: detailed
-  :category: wrecker
-  :project: immigration
-  :agency: DHS
-  :from: DOL
-  :from_truth: guessed
-  :comment: No other info, just mentioned in NYT roundup
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: internal-dhs-cbp-elez
-  :type: internal
-  :category: wrecker
-  :project: immigration
-  :agency: CBP
-  :from: DHS
-  :from_truth: inferred
-  :comment: No other info, just mentioned in NYT roundup
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: internal-dhs-ice-elez
-  :type: internal
-  :category: wrecker
-  :project: immigration
-  :agency: ICE
-  :from: DHS
-  :from_truth: inferred
-  :comment: linked to ICE by NYT
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: internal-dhs-tsa-elez
-  :type: internal
-  :category: wrecker
-  :agency: TSA
-  :from: DHS
-  :from_truth: inferred
-  :table_note: linked to DHS by NYT
-  :comment: No other info, just mentioned in NYT roundup
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: internal-dhs-uscis-elez
-  :type: internal
-  :category: wrecker
-  :project: immigration
-  :agency: USCIS
-  :from: DHS
-  :from_truth: inferred
-  :comment: linked to DHS by NYT
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: treasury-marko-elez
-  :type: appointed
-  :category: wrecker
-  :description: EXC APPT NTE
-  :project:
+  id: 1oSO8VaD
+positions:
+
+- id: detail-dol-dhs-elez
+  type: detailed
+  category: wrecker
+  project: immigration
+  agency: DHS
+  from: DOL
+  from_truth: guessed
+  comment: No other info, just mentioned in NYT roundup
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: internal-dhs-cbp-elez
+  type: internal
+  category: wrecker
+  project: immigration
+  agency: CBP
+  from: DHS
+  from_truth: inferred
+  comment: No other info, just mentioned in NYT roundup
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: internal-dhs-ice-elez
+  type: internal
+  category: wrecker
+  project: immigration
+  agency: ICE
+  from: DHS
+  from_truth: inferred
+  comment: linked to ICE by NYT
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: internal-dhs-tsa-elez
+  type: internal
+  category: wrecker
+  agency: TSA
+  from: DHS
+  from_truth: inferred
+  table_note: linked to DHS by NYT
+  comment: No other info, just mentioned in NYT roundup
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: internal-dhs-uscis-elez
+  type: internal
+  category: wrecker
+  project: immigration
+  agency: USCIS
+  from: DHS
+  from_truth: inferred
+  comment: linked to DHS by NYT
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: treasury-marko-elez
+  type: appointed
+  category: wrecker
+  description: EXC APPT NTE
+  project:
   - spending
   - fraud
-  :start_date: 2025-01-21
-  :start_date_truth: verified
-  :nte_date: 2025-05-25
-  :nte_date_truth: verified
-  :end_date: 2025-02-06
-  :end_date_truth: verified
-  :end_type: resigned
-  :table_note: Abruptly resigned when past racist tweets were reported. I think the
-    pay here is to the NTE date, since his later detail to SSA from DOL is reimbursed
-    at $71k a quarter
-  :title: Special Advisor (IT&M)
-  :title_type: advisor
-  :pd_code: 66893097 C00424
-  :office: Office of the Chief of Staff
-  :agency: Treasury
-  :pay_grade: GS-11/01
-  :salary: "$84,601 (for 4 months)"
-  :source:
+  start_date: 2025-01-21
+  start_date_truth: verified
+  nte_date: 2025-05-25
+  nte_date_truth: verified
+  end_date: 2025-02-06
+  end_date_truth: verified
+  end_type: resigned
+  table_note: >-
+    Abruptly resigned when past racist tweets were reported. I think the pay here is to the NTE date,
+    since his later detail to SSA from DOL is reimbursed at $71k a quarter
+  title: Special Advisor (IT&M)
+  title_type: advisor
+  pd_code: 66893097 C00424
+  office: Office of the Chief of Staff
+  agency: Treasury
+  pay_grade: GS-11/01
+  salary: "$84,601 (for 4 months)"
+  source:
   - https://www.documentcloud.org/documents/26028807-onboard-treasury-marko-elez/
   - https://www.npr.org/2025/02/06/nx-s1-5289337/elon-musk-doge-treasury
-- :id: doge-elez
-  :type: appointed
-  :category: unknown
-  :agency: DOGE
-  :project: impunity
-  :start_date: 2025-02-10
-  :start_date_truth: verified
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
-  :table_note: Listed as Volunteer Employee. This seems like it was a way to keep
-    Elez with access after resigned from Treasury but before starting at DOL
-- :id: dol-elez
-  :type: appointed
-  :category: wrecker
-  :agency: DOL
-  :project:
+
+- id: doge-elez
+  type: appointed
+  category: unknown
+  agency: DOGE
+  project: impunity
+  start_date: 2025-02-10
+  start_date_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+  table_note: >-
+    Listed as Volunteer Employee. This seems like it was a way to keep Elez with access after resigned
+    from Treasury but before starting at DOL
+
+- id: dol-elez
+  type: appointed
+  category: wrecker
+  agency: DOL
+  project:
   - immigration
   - spending
-  :start_date: 2025-02-12
-  :start_date_truth: inferred
-  :end_date: 2026-03-XX
-  :end_date_truth: inferred
-  :end_type: resigned
-  :nte_date: 2025-06-11
-  :nte_date_truth: verified
-  :title: Policy Advisor
-  :title_type: advisor
-  :office: Office of the Secretary
-  :pd_code: '66899208'
-  :series: '0301'
-  :pay_grade: GS-11/01
-  :salary: "$84,601"
-  :source:
+  start_date: 2025-02-12
+  start_date_truth: inferred
+  end_date: 2026-03-XX
+  end_date_truth: inferred
+  end_type: resigned
+  nte_date: 2025-06-11
+  nte_date_truth: verified
+  title: Policy Advisor
+  title_type: advisor
+  office: Office of the Secretary
+  pd_code: '66899208'
+  series: '0301'
+  pay_grade: GS-11/01
+  salary: "$84,601"
+  source:
   - https://www.documentcloud.org/documents/26028796-onboard-dol-marko-elez/
   - https://www.wired.com/story/where-the-doge-operatives-are-now/
   - https://thenextweb.com/news/cathedral-doge-alumni-military-cyber-startup-1-4-billion
-- :id: detail-dol-ssa-employee-7
-  :type: detailed
-  :category: wrecker
-  :agency: SSA
-  :from: DOL
-  :from_truth: verified
-  :start_date: 2025-02-18
-  :start_date_truth: verified
-  :reimbursed: true
-  :reimbursement_amount: up to $71,000
-  :table_note: MOU signed by Mike Russo, was this followed by being hired at SSA
-  :source:
+
+- id: detail-dol-ssa-employee-7
+  type: detailed
+  category: wrecker
+  agency: SSA
+  from: DOL
+  from_truth: verified
+  start_date: 2025-02-18
+  start_date_truth: verified
+  reimbursed: true
+  reimbursement_amount: up to $71,000
+  table_note: MOU signed by Mike Russo, was this followed by being hired at SSA
+  source:
   - https://www.documentcloud.org/documents/26028803-onboard-ssa-employee-7/
   - https://www.documentcloud.org/documents/26028769-mou-20250317-dol-ssa-employee-7/
-  :mou: https://www.documentcloud.org/documents/26028769-mou-20250317-dol-ssa-employee-7/
-  :name: Marko Elez
-  :alias: SSA-07
-- :id: detail-dol-hhs-marko-elez
-  :type: detailed
-  :category: wrecker
-  :agency: HHS
-  :from: DOL
-  :from_truth: verified
-  :project:
+  mou: https://www.documentcloud.org/documents/26028769-mou-20250317-dol-ssa-employee-7/
+  name: Marko Elez
+  alias: SSA-07
+
+- id: detail-dol-hhs-marko-elez
+  type: detailed
+  category: wrecker
+  agency: HHS
+  from: DOL
+  from_truth: verified
+  project:
   - fraud
   - spending
-  :start_date: 2025-03-05
-  :start_date_truth: verified
-  :title: Executive Engineer
-  :title_type: advisor
-  :table_note: date/source in court filing
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :comment: No documentation, reported in court filing
-- :id: internal-hhs-cms-marko-elez
-  :type: internal
-  :category: wrecker
-  :agency: CMS
-  :from: HHS
-  :from_truth: inferred
-  :project:
+  start_date: 2025-03-05
+  start_date_truth: verified
+  title: Executive Engineer
+  title_type: advisor
+  table_note: date/source in court filing
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  comment: No documentation, reported in court filing
+
+- id: internal-hhs-cms-marko-elez
+  type: internal
+  category: wrecker
+  agency: CMS
+  from: HHS
+  from_truth: inferred
+  project:
   - spending
   - fraud
-  :sort_date: 2025-03-06
-  :start_date: 2025-03-05
-  :start_date_truth: verified
-  :table_note: granted access to CMS system on date
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :comment: Granted access to CMS system same day as start of detail to HHS
+  sort_date: 2025-03-06
+  start_date: 2025-03-05
+  start_date_truth: verified
+  table_note: granted access to CMS system on date
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  comment: Granted access to CMS system same day as start of detail to HHS

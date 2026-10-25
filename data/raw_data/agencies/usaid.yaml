@@ -1,439 +1,489 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: US Agency for International Development
-:id: USAID
-:short_name: USAID
-:slug: usaid
-:page_slug: usaid
-:events:
-- :date: 2025-01-20
-  :type: official
-  :event: President Trump signs executive order EO 14169 that places a 90-day halt
-    on foreign aid, but it's unclear to USAID staff if that applies to just new disbursements
-    or existing grants.
-  :project:
+name: US Agency for International Development
+id: USAID
+short_name: USAID
+slug: usaid
+page_slug: usaid
+events:
+
+- date: 2025-01-20
+  type: official
+  event: >-
+    President Trump signs executive order EO 14169 that places a 90-day halt on foreign aid, but it's
+    unclear to USAID staff if that applies to just new disbursements or existing grants.
+  project:
   - spending
-  :source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
-  :agency: USAID
-  :id: 1cYzVrAV
-- :date: 2025-01-24
-  :type: report
-  :event: Senior USAID staff meet with Trump administration officials to explain that
-    USAID is not defying a freeze on all foreign aid, but that payments in progress
-    can take a while to be processed. They hope this explanation will satisfy Peter
-    Marocco.
-  :notable: true
-  :project: spending
-  :source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
-  :agency: USAID
-  :id: 1LD8L7Na
-- :date: 2025-01-27
-  :type: onboard
-  :event: Still convinced that USAID is deliberately committing insubordination against
-    the executive order, Peter Marocco arrives at USAID with DOGE staffers Luke Farritor,
-    Edward Coristine and Clayton Cromer to audit USAID's accounts.
-  :notable: true
-  :project: spending
-  :named:
+  source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+  agency: USAID
+  id: 1cYzVrAV
+
+- date: 2025-01-24
+  type: report
+  event: >-
+    Senior USAID staff meet with Trump administration officials to explain that USAID is not defying a
+    freeze on all foreign aid, but that payments in progress can take a while to be processed. They hope
+    this explanation will satisfy Peter Marocco.
+  notable: true
+  project: spending
+  source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+  agency: USAID
+  id: 1LD8L7Na
+
+- date: 2025-01-27
+  type: onboard
+  event: >-
+    Still convinced that USAID is deliberately committing insubordination against the executive order,
+    Peter Marocco arrives at USAID with DOGE staffers Luke Farritor, Edward Coristine and Clayton Cromer
+    to audit USAID's accounts.
+  notable: true
+  project: spending
+  named:
   - Peter Marocco
   - Luke Farritor
   - Edward Coristine
   - Clayton Cromer
-  :source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
-  :agency: USAID
-  :id: 4PFoynfJ
-- :date: 2025-01-27
-  :type: disruption
-  :event: After the arrival of DOGE in the agency, senior staff are summoned to a
-    meeting with Gavin Kliger and Luke Farritor. The DOGE team then presented agency
-    leadership with a list of 57 employees involved with payments to be placed on
-    immediate administrative leave and locked out of system access. The list reportedly
-    made little sense and involved many staff not involved with payments.
-  :notable: true
-  :project:
+  source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+  agency: USAID
+  id: 4PFoynfJ
+
+- date: 2025-01-27
+  type: disruption
+  event: >-
+    After the arrival of DOGE in the agency, senior staff are summoned to a meeting with Gavin Kliger
+    and Luke Farritor. The DOGE team then presented agency leadership with a list of 57 employees involved
+    with payments to be placed on immediate administrative leave and locked out of system access. The
+    list reportedly made little sense and involved many staff not involved with payments.
+  notable: true
+  project:
   - spending
   - personnel
-  :named:
+  named:
   - Gavin Kliger
   - Luke Farritor
-  :source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
-  :agency: USAID
-  :id: WR9Xb7Ar
-- :date: 2025-01-28
-  :type: official
-  :event: The White House press secretary reports the astounding statistic that USAID
-    spent $50 million on condoms for the Gaza Strip. This figure was actually for
-    a variety of family planning services (largely birth control medication) and,
-    more importantly, it was for the Gaza province in Mozambique.
-  :notable: true
-  :source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
-  :agency: USAID
-  :project: fraud
-  :id: 6y0l38w8
-- :date: 2025-01-30
-  :type: report
-  :event: DOGE presents their evidence that the employees should be placed on leave
-    based on a single email analysis made by Luke Farritor and sent to other DOGE
-    members. "I could be wrong. My numbers could be off." he writes, but the conclusions
-    are not questioned or checked.
-  :project:
-  - personnel
-  :named:
-  - Luke Farritor
-  :source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
-  :agency: USAID
-  :id: 7Bwt01Ed
-- :date: 2025-01-30
-  :type: disruption
-  :event: After USAID's director of labor relations pushed back against the push to
-    suspend and fire the employees, he threatens to report it to the Office of Special
-    Counsel and emails the employees saying he has no grounds to keep them on leave.
-    As a result, Clayton Cromer commands security staff to forcibly remove him from
-    the building.
-  :project: impunity
-  :named:
+  source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
+  agency: USAID
+  id: WR9Xb7Ar
+
+- date: 2025-01-28
+  type: official
+  event: >-
+    The White House press secretary reports the astounding statistic that USAID spent $50 million on condoms
+    for the Gaza Strip. This figure was actually for a variety of family planning services (largely birth
+    control medication) and, more importantly, it was for the Gaza province in Mozambique.
+  notable: true
+  source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+  agency: USAID
+  project: fraud
+  id: 6y0l38w8
+
+- date: 2025-01-30
+  type: disruption
+  event: >-
+    After USAID's director of labor relations pushed back against the push to suspend and fire the employees,
+    he threatens to report it to the Office of Special Counsel and emails the employees saying he has
+    no grounds to keep them on leave. As a result, Clayton Cromer commands security staff to forcibly
+    remove him from the building.
+  project: impunity
+  named:
   - Clayton Cromer
-  :source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
-  :agency: USAID
-  :id: 1cz7UamT
-- :date: 2025-01-30
-  :type: disruption
-  :event: Jeremy Lewin and Elon Musk order the acting head of USAID to comply with
-    orders to lock every USAID employee worldwide out of all email and other communication
-    systems. He refuses, stating that a sudden loss of access could get aid workers
-    killed.
-  :notable: true
-  :project:
+  source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+  agency: USAID
+  id: 1cz7UamT
+
+- date: 2025-01-30
+  type: disruption
+  event: >-
+    Luke Farritor and Gavin Kliger demand that all senior managers at USAID be stripped of their power
+    to authorize payments - and that they alone become the only authorizers.
+  notable: true
+  project: spending
+  named:
+  - Luke Farritor
+  - Gavin Kliger
+  source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
+  agency: USAID
+  id: 2Soci5N2
+
+- date: 2025-01-30
+  type: report
+  event: >-
+    DOGE presents their evidence that the employees should be placed on leave based on a single email
+    analysis made by Luke Farritor and sent to other DOGE members. "I could be wrong. My numbers could
+    be off." he writes, but the conclusions are not questioned or checked.
+  project:
+  - personnel
+  named:
+  - Luke Farritor
+  source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+  agency: USAID
+  id: 7Bwt01Ed
+
+- date: 2025-01-30
+  type: disruption
+  event: >-
+    Jeremy Lewin and Elon Musk order the acting head of USAID to comply with orders to lock every USAID
+    employee worldwide out of all email and other communication systems. He refuses, stating that a sudden
+    loss of access could get aid workers killed.
+  notable: true
+  project:
   - elimination
   - impunity
-  :named:
+  named:
   - Jeremy Lewin
   - Elon Musk
   - Peter Marocco
-  :source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
-  :agency: USAID
-  :id: wT1UbmGQ
-- :date: 2025-01-30
-  :type: disruption
-  :event: Luke Farritor and Gavin Kliger demand that all senior managers at USAID
-    be stripped of their power to authorize payments - and that they alone become
-    the only authorizers.
-  :notable: true
-  :project: spending
-  :named:
-  - Luke Farritor
-  - Gavin Kliger
-  :source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
-  :agency: USAID
-  :id: 2Soci5N2
-- :date: 2025-02-01
-  :type: disruption
-  :event: The acting head of the USAID, Jason Gray, is removed and replaced by Marco
-    Rubio. Rubio then resigns and names Peter Marocco the Acting Deputy Administrator
-    for the agency, giving him absolute power to force his demands.
-  :notable: true
-  :project: impunity
-  :named:
+  source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+  agency: USAID
+  id: wT1UbmGQ
+
+- date: 2025-02-01
+  type: report
+  event: >-
+    DOGE staff arrive at USAID HQ hoping to work within the administrator's suite at USAID, but their
+    badges were not properly coded to provide access. The DOGE staff reportedly concluded this meant agency
+    staff were keeping them out and could not be trusted.
+  project: impunity
+  source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+  agency: USAID
+  id: 48h1YV1D
+
+- date: 2025-02-01
+  type: disruption
+  event: Approximately 2000 USAID email accounts are deactivated without warning.
+  source: >-
+    https://fedscoop.com/usaid-website-goes-dark-staff-emails-deactivated-amid-doge-takeover-source-says/
+  project: elimination
+  agency: USAID
+  id: 4uRgma5h
+
+- date: 2025-02-01
+  type: disruption
+  event: >-
+    The acting head of the USAID, Jason Gray, is removed and replaced by Marco Rubio. Rubio then resigns
+    and names Peter Marocco the Acting Deputy Administrator for the agency, giving him absolute power
+    to force his demands.
+  notable: true
+  project: impunity
+  named:
   - Marco Rubio
   - Peter Marocco
-  :source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
-  :agency: USAID
-  :id: 5uaSIHkZ
-- :date: 2025-02-01
-  :type: disruption
-  :event: THe USAID Director of Security and their deputy are placed on administrative
-    leave for reportedly trying to prevent DOGE from accessing personnel files and
-    classified data.
-  :notable: true
-  :project:
+  source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
+  agency: USAID
+  id: 5uaSIHkZ
+
+- date: 2025-02-01
+  type: disruption
+  event: >-
+    THe USAID Director of Security and their deputy are placed on administrative leave for reportedly
+    trying to prevent DOGE from accessing personnel files and classified data.
+  notable: true
+  project:
   - personnel
   - impunity
-  :source: https://www.nbcnews.com/politics/national-security/usaid-security-leaders-removed-refusing-elon-musks-doge-employees-acce-rcna190357
-  :agency: USAID
-  :id: JM9cFsgE
-- :date: 2025-02-01
-  :type: disruption
-  :event: The main USAID website and 6 other related websites are taken offline by
-    DOGE.
-  :source: https://www.wired.com/story/us-government-websites-are-disappearing-in-real-time/
-  :project: elimination
-  :agency: USAID
-  :id: K5Ry8Q4a
-- :date: 2025-02-01
-  :type: report
-  :event: DOGE staff arrive at USAID HQ hoping to work within the administrator's
-    suite at USAID, but their badges were not properly coded to provide access. The
-    DOGE staff reportedly concluded this meant agency staff were keeping them out
-    and could not be trusted.
-  :project: impunity
-  :source: https://www.nytimes.com/2025/06/22/us/politics/usaid-cuts-doge.html
-  :agency: USAID
-  :id: 48h1YV1D
-- :date: 2025-02-01
-  :type: disruption
-  :event: Approximately 2000 USAID email accounts are deactivated without warning.
-  :source: https://fedscoop.com/usaid-website-goes-dark-staff-emails-deactivated-amid-doge-takeover-source-says/
-  :project: elimination
-  :agency: USAID
-  :id: 4uRgma5h
-- :date: 2025-02-02
-  :type: disruption
-  :event: Elon Musk posts a series of tweets calling USAID evil and saying it is "time
-    for it to die."
-  :notable: true
-  :source: https://www.nbcnews.com/politics/doge/elon-musk-boosted-false-usaid-conspiracy-theories-global-aid-rcna190646
-  :project: elimination
-  :agency: USAID
-  :id: bejcmPHZ
-- :date: 2025-02-03
-  :type: disruption
-  :event: Elon Musk tweets that he and President Trump are shutting down USAID, bragging
-    he had fed the agency "into the wood chipper"
-  :notable: true
-  :project: elimination
-  :source: https://www.nbcnews.com/politics/politics-news/elon-musk-says-trump-are-shutting-usaid-rcna190388
-  :agency: USAID
-  :id: G92wpTpH
-- :date: 2025-02-04
-  :type: disruption
-  :event: All USAID staff are informed by email they will soon be placed on indefinite
-    administrative leave. The message is sent from the USAID email address of Gavin
-    Kliger.
-  :project: elimination
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.111.1.pdf
-  :case_no: 8:25-cv-00462
-  :agency: USAID
-  :id: HduG4YuE
-- :date: 2025-02-07
-  :type: disruption
-  :event: DOGE posts a tweet boasting about the removal of signage on the headquarters
-    for USAID.
-  :project: elimination
-  :source: https://xcancel.com/DOGE/status/1887959408555995416#m
-  :agency: USAID
-  :id: h2LuoY4U
-- :date: 2025-02-07
-  :type: disruption
-  :event: All USAID staff are placed on indefinite administrative leave, as a way
-    of locking them out of systems and keeping them out of the way of DOGE's activities
-    at the agency.
-  :project:
+  source: >-
+    https://www.nbcnews.com/politics/national-security/usaid-security-leaders-removed-refusing-elon-musks-doge-employees-acce-rcna190357
+  agency: USAID
+  id: JM9cFsgE
+
+- date: 2025-02-01
+  type: disruption
+  event: The main USAID website and 6 other related websites are taken offline by DOGE.
+  source: https://www.wired.com/story/us-government-websites-are-disappearing-in-real-time/
+  project: elimination
+  agency: USAID
+  id: K5Ry8Q4a
+
+- date: 2025-02-02
+  type: disruption
+  event: Elon Musk posts a series of tweets calling USAID evil and saying it is "time for it to die."
+  notable: true
+  source: >-
+    https://www.nbcnews.com/politics/doge/elon-musk-boosted-false-usaid-conspiracy-theories-global-aid-rcna190646
+  project: elimination
+  agency: USAID
+  id: bejcmPHZ
+
+- date: 2025-02-03
+  type: disruption
+  event: >-
+    Elon Musk tweets that he and President Trump are shutting down USAID, bragging he had fed the agency
+    "into the wood chipper"
+  notable: true
+  project: elimination
+  source: https://www.nbcnews.com/politics/politics-news/elon-musk-says-trump-are-shutting-usaid-rcna190388
+  agency: USAID
+  id: G92wpTpH
+
+- date: 2025-02-04
+  type: disruption
+  event: >-
+    All USAID staff are informed by email they will soon be placed on indefinite administrative leave.
+    The message is sent from the USAID email address of Gavin Kliger.
+  project: elimination
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.111.1.pdf
+  case_no: 8:25-cv-00462
+  agency: USAID
+  id: HduG4YuE
+
+- date: 2025-02-07
+  type: disruption
+  event: >-
+    All USAID staff are placed on indefinite administrative leave, as a way of locking them out of systems
+    and keeping them out of the way of DOGE's activities at the agency.
+  project:
   - elimination
   - impunity
-  :source: https://www.nbcnews.com/politics/politics-news/usaid-reduce-foreign-service-officers-trump-cuts-federal-government-rcna191122
-  :agency: USAID
-  :id: dJnZqbb4
-- :date: 2025-02-09
-  :type: disruption
-  :event: Using their admin access, Gavin Kliger and Luke Farritor completely disable
-    accounts for all other USAID staff on the agency's system for creating and tracking
-    payments. They now have absolute control.
-  :notable: true
-  :project:
+  source: >-
+    https://www.nbcnews.com/politics/politics-news/usaid-reduce-foreign-service-officers-trump-cuts-federal-government-rcna191122
+  agency: USAID
+  id: dJnZqbb4
+
+- date: 2025-02-07
+  type: disruption
+  event: DOGE posts a tweet boasting about the removal of signage on the headquarters for USAID.
+  project: elimination
+  source: https://xcancel.com/DOGE/status/1887959408555995416#m
+  agency: USAID
+  id: h2LuoY4U
+
+- date: 2025-02-09
+  type: disruption
+  event: >-
+    Using their admin access, Gavin Kliger and Luke Farritor completely disable accounts for all other
+    USAID staff on the agency's system for creating and tracking payments. They now have absolute control.
+  notable: true
+  project:
   - elimination
   - impunity
-  :named:
+  named:
   - Gavin Kliger
   - Luke Farritor
-  :source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
-  :agency: USAID
-  :id: 6eXUJiZM
-- :date: 2025-02-11
-  :type: disruption
-  :event: The USAID Inspector General is fired by the White House after releasing
-    a report critical of DOGE's actions at the agency.
-  :notable: true
-  :project: impunity
-  :source: https://www.cnn.com/2025/02/11/politics/usaid-inspector-general-fired-trump/index.html
-  :agency: USAID
-  :id: bwTxGSiq
-- :date: 2025-02-17
-  :type: disruption
-  :event: A USAID official under Trump testifies that "changes in the process by which
-    payments can be made and approved by the Agency over the past weeks" in the payment
-    system were causing certain allowance statements to be delayed.
-  :project: spending
-  :source: https://abcnews.go.com/US/usaid-official-system-delayed-payments-staffers/story?id=118759911
-  :agency: USAID
-  :id: iEaZoYn2
-- :date: 2025-02-20
-  :type: report
-  :event: Trump political appointees and DOGE staffers hold an impromptu celebration
-    of their work on the one-month anniversary of Trump's inauguration, complete with
-    a celebratory cake, in the agency's new temporary offices where senior staff are
-    isolated from the remaining career employees by a "moat" of 90 empty desks.
-  :notable: true
-  :project: impunity
-  :source: https://www.propublica.org/article/usaid-cholera-deaths-trump-humanitarian-aid-cuts-south-sudan
-  :linked:
+  source: https://www.washingtonpost.com/opinions/2025/02/24/musk-doge-usaid-cuts-dc/
+  agency: USAID
+  id: 6eXUJiZM
+
+- date: 2025-02-11
+  type: disruption
+  event: >-
+    The USAID Inspector General is fired by the White House after releasing a report critical of DOGE's
+    actions at the agency.
+  notable: true
+  project: impunity
+  source: https://www.cnn.com/2025/02/11/politics/usaid-inspector-general-fired-trump/index.html
+  agency: USAID
+  id: bwTxGSiq
+
+- date: 2025-02-17
+  type: disruption
+  event: >-
+    A USAID official under Trump testifies that "changes in the process by which payments can be made
+    and approved by the Agency over the past weeks" in the payment system were causing certain allowance
+    statements to be delayed.
+  project: spending
+  source: https://abcnews.go.com/US/usaid-official-system-delayed-payments-staffers/story?id=118759911
+  agency: USAID
+  id: iEaZoYn2
+
+- date: 2025-02-20
+  type: report
+  event: >-
+    Trump political appointees and DOGE staffers hold an impromptu celebration of their work on the one-month
+    anniversary of Trump's inauguration, complete with a celebratory cake, in the agency's new temporary
+    offices where senior staff are isolated from the remaining career employees by a "moat" of 90 empty
+    desks.
+  notable: true
+  project: impunity
+  source: https://www.propublica.org/article/usaid-cholera-deaths-trump-humanitarian-aid-cuts-south-sudan
+  linked:
   - Peter Marocco
   - Jeremy Lewin
-  :agency: USAID
-  :id: 4r9H2fp4
-- :date: 2025-02-23
-  :type: disruption
-  :event: Employees at USAID receive emails with a "Specific Notice of a RIF" effective
-    in 60 days and signed by Peter Marocco. Many employees had already been placed
-    on administrative leave.
-  :notable: true
-  :project: elimination
-  :case_no: 8:25-cv-00462
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.111.1.pdf
-  :named:
+  agency: USAID
+  id: 4r9H2fp4
+
+- date: 2025-02-23
+  type: disruption
+  event: >-
+    Employees at USAID receive emails with a "Specific Notice of a RIF" effective in 60 days and signed
+    by Peter Marocco. Many employees had already been placed on administrative leave.
+  notable: true
+  project: elimination
+  case_no: 8:25-cv-00462
+  source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.111.1.pdf
+  named:
   - Peter Marocco
-  :agency: USAID
-  :id: 60ZEU148
-- :date: 2025-02-27
-  :type: disruption
-  :event: In a meeting the day after a federal judge ordered USAID to release funding
-    for humanitarian operations, Jeremy Lewin, not yet in charge of programs at the
-    agency, told senior staff that he viewed the legal rulings as a license to dispense
-    with some of the formal reviews for unfreezing operations. One of the attendees
-    took his remarks to mean he had no intention of unfreezing anything.
-  :project: impunity
-  :named:
+  agency: USAID
+  id: 60ZEU148
+
+- date: 2025-02-27
+  type: disruption
+  event: >-
+    In a meeting the day after a federal judge ordered USAID to release funding for humanitarian operations,
+    Jeremy Lewin, not yet in charge of programs at the agency, told senior staff that he viewed the legal
+    rulings as a license to dispense with some of the formal reviews for unfreezing operations. One of
+    the attendees took his remarks to mean he had no intention of unfreezing anything.
+  project: impunity
+  named:
   - Jeremy Lewin
-  :source: https://www.propublica.org/article/usaid-cholera-deaths-trump-humanitarian-aid-cuts-south-sudan
-  :agency: USAID
-  :id: 2jEu6jrf
-- :date: 2025-02-28
-  :type: disruption
-  :event: USAID staff working late and trying to keep programs operational notice
-    changes being made to a spreadsheet of USAID operations, with an agency head Joel
-    Borkert marking rows as green, yellow and red. Given the recent program cuts,
-    staff interpreted this to mean he was looking for more programs to eliminate.
-    The spreadsheet was assembled by DOGE staff by querying program management databases
-    and had little detail about what the programs actually accomplished. USAID staff
-    raced upstairs and convinced Borkert to save a few programs from termination.
-  :project:
+  source: https://www.propublica.org/article/usaid-cholera-deaths-trump-humanitarian-aid-cuts-south-sudan
+  agency: USAID
+  id: 2jEu6jrf
+
+- date: 2025-02-28
+  type: disruption
+  event: >-
+    USAID staff working late and trying to keep programs operational notice changes being made to a spreadsheet
+    of USAID operations, with an agency head Joel Borkert marking rows as green, yellow and red. Given
+    the recent program cuts, staff interpreted this to mean he was looking for more programs to eliminate.
+    The spreadsheet was assembled by DOGE staff by querying program management databases and had little
+    detail about what the programs actually accomplished. USAID staff raced upstairs and convinced Borkert
+    to save a few programs from termination.
+  project:
   - spending
-  :source: https://www.propublica.org/article/usaid-cholera-deaths-trump-humanitarian-aid-cuts-south-sudan
-  :agency: USAID
-  :id: AufXX8p7
-- :date: 2025-03-01
-  :type: disruption
-  :event: Reviewing the spreadsheet, Jeremy Lewin orders that 151 additional awards
-    must be terminated, writing that he would "have strong objections to these awards
-    being turned on." Emailing later at 11:30pm, Peter Marocco also states the reactivations
-    were far too broad and indicating more programs to be terminated.
-  :project: spending
-  :linked:
+  source: https://www.propublica.org/article/usaid-cholera-deaths-trump-humanitarian-aid-cuts-south-sudan
+  agency: USAID
+  id: AufXX8p7
+
+- date: 2025-03-01
+  type: disruption
+  event: >-
+    Reviewing the spreadsheet, Jeremy Lewin orders that 151 additional awards must be terminated, writing
+    that he would "have strong objections to these awards being turned on." Emailing later at 11:30pm,
+    Peter Marocco also states the reactivations were far too broad and indicating more programs to be
+    terminated.
+  project: spending
+  linked:
   - Jeremy Lewin
   - Peter Marocco
-  :source: https://www.propublica.org/article/usaid-cholera-deaths-trump-humanitarian-aid-cuts-south-sudan
-  :agency: USAID
-  :id: 3nuRsGpc
-- :date: 2025-03-10
-  :type: official
-  :event: Posting from his account on X, Marco Rubio announces that the 6-week program
-    review at USAID had concluded and 83% of programs (approximately 5200 contracts)
-    had been cancelled. Only about 1000 awards were being continued.
-  :notable: true
-  :project: spending
-  :source: https://xcancel.com/marcorubio/status/1899021361797816325
-  :named:
+  source: https://www.propublica.org/article/usaid-cholera-deaths-trump-humanitarian-aid-cuts-south-sudan
+  agency: USAID
+  id: 3nuRsGpc
+
+- date: 2025-03-10
+  type: official
+  event: >-
+    Posting from his account on X, Marco Rubio announces that the 6-week program review at USAID had concluded
+    and 83% of programs (approximately 5200 contracts) had been cancelled. Only about 1000 awards were
+    being continued.
+  notable: true
+  project: spending
+  source: https://xcancel.com/marcorubio/status/1899021361797816325
+  named:
   - Marco Rubio
-  :agency: USAID
-  :id: 1kexCx1f
-- :date: 2025-03-19
-  :type: official
-  :event: Peter Marocco says that he will be succeeded at the agency by Jeremy Lewin
-    and Kenneth Jackson, serving in deputy roles.
-  :named:
+  agency: USAID
+  id: 1kexCx1f
+
+- date: 2025-03-19
+  type: official
+  event: >-
+    Peter Marocco says that he will be succeeded at the agency by Jeremy Lewin and Kenneth Jackson, serving
+    in deputy roles.
+  named:
   - Peter Marocco
   - Jeremy Lewin
   - Kenneth Jackson
-  :source: https://www.nytimes.com/2025/03/19/us/politics/usaid-doge-leadership.html
-  :agency: USAID
-  :id: DnzAaqdz
-- :date: 2025-03-26
-  :type: disruption
-  :event: The IT department at USAID has been reduced from 100 to only 5 staffers
-    – 3 IT operations employees, a project manager, and a single contracting officer.
-    All employees focused on compliance and security are on administrative leave and
-    a team to coordinate the transfer of IT assets from USAID to the Department of
-    State was disbanded by Jeremy Lewin.
-  :notable: true
-  :project:
+  source: https://www.nytimes.com/2025/03/19/us/politics/usaid-doge-leadership.html
+  agency: USAID
+  id: DnzAaqdz
+
+- date: 2025-03-26
+  type: disruption
+  event: >-
+    The IT department at USAID has been reduced from 100 to only 5 staffers – 3 IT operations employees,
+    a project manager, and a single contracting officer. All employees focused on compliance and security
+    are on administrative leave and a team to coordinate the transfer of IT assets from USAID to the Department
+    of State was disbanded by Jeremy Lewin.
+  notable: true
+  project:
   - elimination
-  :named:
+  named:
   - Jeremy Lewin
-  :agency: USAID
-  :source: https://fedscoop.com/usaids-information-technology-team-is-down-to-five-members/
-  :id: 6xjZ7HV3
-- :date: 2025-03-28
-  :type: disruption
-  :event: Almost all of the remaining 900 USAID employees are terminated by email
-    from Jeremy Lewin with RIFs that will go into effect either in July or September.
-  :notable: true
-  :project: elimination
-  :named:
+  agency: USAID
+  source: https://fedscoop.com/usaids-information-technology-team-is-down-to-five-members/
+  id: 6xjZ7HV3
+
+- date: 2025-03-28
+  type: disruption
+  event: >-
+    Almost all of the remaining 900 USAID employees are terminated by email from Jeremy Lewin with RIFs
+    that will go into effect either in July or September.
+  notable: true
+  project: elimination
+  named:
   - Jeremy Lewin
-  :source: https://www.npr.org/sections/goats-and-soda/2025/03/28/g-s1-56968/usaid-terminates-nearly-all-its-remaining-employees
-  :agency: USAID
-  :id: 8mDKCq9a
-- :date: 2025-04-08
-  :type: disruption
-  :event: After Rubio and the Trump administration promised to keep many lifesaving
-    humanitarian grant programs active, almost all of them are slashed over the weekend.
-    Some of the cut programs are then restored later. In one example, Peter Marocco
-    ordered staff to comply with White House orders to stop all funds to Afghanistan.
-    In other cases, Jeremy Lewin appears to have been involved with the alterations.
-    USAID staff are not informed directly of these changes but find out from aid organizations
-    whose funds have been affected.
-  :notable: true
-  :project:
+  source: >-
+    https://www.npr.org/sections/goats-and-soda/2025/03/28/g-s1-56968/usaid-terminates-nearly-all-its-remaining-employees
+  agency: USAID
+  id: 8mDKCq9a
+
+- date: 2025-04-08
+  type: disruption
+  event: >-
+    After Rubio and the Trump administration promised to keep many lifesaving humanitarian grant programs
+    active, almost all of them are slashed over the weekend. Some of the cut programs are then restored
+    later. In one example, Peter Marocco ordered staff to comply with White House orders to stop all funds
+    to Afghanistan. In other cases, Jeremy Lewin appears to have been involved with the alterations. USAID
+    staff are not informed directly of these changes but find out from aid organizations whose funds have
+    been affected.
+  notable: true
+  project:
   - elimination
   - spending
-  :named:
+  named:
   - Jeremy Lewin
   - Peter Marocco
-  :source: https://www.nytimes.com/2025/04/09/us/politics/usaid-cuts.html
-  :agency: USAID
-  :id: 7dyfN7Hx
-- :date: 2025-07-01
-  :type: disruption
-  :event: Under the direction of Marco Rubio, USAID officially ceases all operations
-    for foreign aid. A study in the medical journal _Lancet_ suggests that the end
-    of USAID will lead to [14 million deaths worldwide by 2030, with 4.5 million of
-    those being children under that age of 5](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01186-9/fulltext).
-  :notable: true
-  :project:
+  source: https://www.nytimes.com/2025/04/09/us/politics/usaid-cuts.html
+  agency: USAID
+  id: 7dyfN7Hx
+
+- date: 2025-07-01
+  type: disruption
+  event: >-
+    Under the direction of Marco Rubio, USAID officially ceases all operations for foreign aid. A study
+    in the medical journal _Lancet_ suggests that the end of USAID will lead to [14 million deaths worldwide
+    by 2030, with 4.5 million of those being children under that age of 5](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01186-9/fulltext).
+  notable: true
+  project:
   - elimination
   - spending
-  :source: https://www.cnn.com/2025/07/01/politics/us-aid-elimination-study-14-million-deaths
-  :agency: USAID
-  :id: 1BnDlVM6
-- :date: 2025-08-29
-  :type: disruption
-  :event: Marco Rubio announces on TruthSocial that Russell Vought has been named
-    as the new Acting Administrator of USAID to "oversee the closeout" of the agency
-    after much of its staff was fired, certain responsibilities were absorbed into
-    the State Department and grants were slashed
-  :named:
+  source: https://www.cnn.com/2025/07/01/politics/us-aid-elimination-study-14-million-deaths
+  agency: USAID
+  id: 1BnDlVM6
+
+- date: 2025-08-29
+  type: disruption
+  event: >-
+    Marco Rubio announces on TruthSocial that Russell Vought has been named as the new Acting Administrator
+    of USAID to "oversee the closeout" of the agency after much of its staff was fired, certain responsibilities
+    were absorbed into the State Department and grants were slashed
+  named:
   - Marco Rubio
   - Russell Vought
-  :source: https://www.politico.com/news/2025/08/29/rubio-usaid-closeout-vought-00536088
-  :agency: USAID
-  :id: 3pUxtnKh
-- :date: 2025-09-(25)~
-  :type: onboard
-  :event: In a move that apparently hasn't been publicly announced everywhere, Federal
-    Chief CIO Greg Barbaccia is listed as the Acting CIO for USAID on the CIO.gov
-    page
-  :named:
+  source: https://www.politico.com/news/2025/08/29/rubio-usaid-closeout-vought-00536088
+  agency: USAID
+  id: 3pUxtnKh
+
+- date: 2025-09-(25)~
+  type: onboard
+  event: >-
+    In a move that apparently hasn't been publicly announced everywhere, Federal Chief CIO Greg Barbaccia
+    is listed as the Acting CIO for USAID on the CIO.gov page
+  named:
   - Greg Barbaccia
-  :source: https://www.cio.gov/about/members-and-leadership/
-  :agency: USAID
-  :id: 5j1JtCO2
-- :date: 2026-03-04
-  :type: legal
-  :event: An appeals court blocked a ruling by a judge that would have compelled Elon
-    Musk and other senior officials at USAID to testify under oath, finding that the
-    lower court had "abused its discretion" in ordering the testimony.
-  :named:
+  source: https://www.cio.gov/about/members-and-leadership/
+  agency: USAID
+  id: 5j1JtCO2
+
+- date: 2026-03-04
+  type: legal
+  event: >-
+    An appeals court blocked a ruling by a judge that would have compelled Elon Musk and other senior
+    officials at USAID to testify under oath, finding that the lower court had "abused its discretion"
+    in ordering the testimony.
+  named:
   - Elon Musk
   - Jeremy Lewin
   - Peter Marocco
-  :source: https://news.bgov.com/litigation/elon-musk-deposition-blocked-by-appeals-court-in-doge-fight
-  :agency: USAID
-  :id: 3u0f37Uw
+  source: https://news.bgov.com/litigation/elon-musk-deposition-blocked-by-appeals-court-in-doge-fight
+  agency: USAID
+  id: 3u0f37Uw

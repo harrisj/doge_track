@@ -1,81 +1,89 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Jack Stein
-:sort_name: Stein
-:slug: jack-stein
-:age: 25
-:skill: analyst
-:linkedin: https://www.linkedin.com/in/jack-s-221181154/
-:blurb: Recently an investment banking associate at Salem Partners, he is one of the
-  newer members of Nate Cavanaugh's wrecking crew that visited small agencies in April.
-:govt_exit_date: 2026-04-XX
-:govt_exit_truth: self-reported
-:govt_exit_type: resigned
-:affiliations:
-- :entity_id: doge-indie-wreckers
-  :role: member
-  :connection_truth: reported
-  :timeframe: during
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-  :id: 4wCI1PyZ
-- :entity_id: cathedral
-  :role: founder
-  :start_date: 2026-04-XX
-  :timeframe: after
-  :immediate: true
-  :start_date_truth: reported
-  :connection_truth: reported
-  :source:
+name: Jack Stein
+sort_name: Stein
+slug: jack-stein
+age: 25
+skill: analyst
+linkedin: https://www.linkedin.com/in/jack-s-221181154/
+blurb: >-
+  Recently an investment banking associate at Salem Partners, he is one of the newer members of Nate Cavanaugh's
+  wrecking crew that visited small agencies in April.
+govt_exit_date: 2026-04-XX
+govt_exit_truth: self-reported
+govt_exit_type: resigned
+affiliations:
+
+- entity_id: doge-indie-wreckers
+  role: member
+  connection_truth: reported
+  timeframe: during
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  id: 4wCI1PyZ
+
+- entity_id: cathedral
+  role: founder
+  start_date: 2026-04-XX
+  timeframe: after
+  immediate: true
+  start_date_truth: reported
+  connection_truth: reported
+  source:
   - https://www.vanityfair.com/story/doge-defense-startups
   - https://thenextweb.com/news/cathedral-doge-alumni-military-cyber-startup-1-4-billion
-  :id: 1AoP5Am0
-:positions:
-- :id: detail-gsa-mcc-stein
-  :type: detailed
-  :category: wrecker
-  :agency: MCC
-  :from: GSA
-  :project: elimination
-  :from_truth: reported
-  :sort_date: 2025-03-22
-  :start_date: 2025-03-(22)?
-  :start_date_truth: guessed
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-- :id: gsa-stein
-  :type: appointed
-  :category: wrecker
-  :name: Jack Stein
-  :agency: GSA
-  :start_date: 2025-04-15
-  :start_date_truth: reported
-  :end_date: 2025-07-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :title: Senior Advisor
-  :title_type: advisor
-  :source:
+  id: 1AoP5Am0
+positions:
+
+- id: detail-gsa-mcc-stein
+  type: detailed
+  category: wrecker
+  agency: MCC
+  from: GSA
+  project: elimination
+  from_truth: reported
+  sort_date: 2025-03-22
+  start_date: 2025-03-(22)?
+  start_date_truth: guessed
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+
+- id: gsa-stein
+  type: appointed
+  category: wrecker
+  name: Jack Stein
+  agency: GSA
+  start_date: 2025-04-15
+  start_date_truth: reported
+  end_date: 2025-07-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  title: Senior Advisor
+  title_type: advisor
+  source:
   - https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
   - https://www.linkedin.com/in/jack-s-221181154/
-- :id: sba-stein
-  :type: appointed
-  :agency: SBA
-  :category: wrecker
-  :start_date: 2025-07-XX
-  :start_date_truth: self-reported
-  :end_date: 2026-04-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :title: Senior Advisor
-  :title_type: advisor
-  :source: https://www.linkedin.com/in/jack-s-221181154/
-- :id: dod-stein
-  :type: appointed
-  :agency: DOD
-  :category: wrecker
-  :title: Senior Advisor
-  :title_type: advisor
-  :start_date: 2025-09-XX
-  :start_date_truth: self-reported
-  :end_date: 2026-04-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :source: https://www.linkedin.com/in/jack-s-221181154/
+
+- id: sba-stein
+  type: appointed
+  agency: SBA
+  category: wrecker
+  start_date: 2025-07-XX
+  start_date_truth: self-reported
+  end_date: 2026-04-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  title: Senior Advisor
+  title_type: advisor
+  source: https://www.linkedin.com/in/jack-s-221181154/
+
+- id: dod-stein
+  type: appointed
+  agency: DOD
+  category: wrecker
+  title: Senior Advisor
+  title_type: advisor
+  start_date: 2025-09-XX
+  start_date_truth: self-reported
+  end_date: 2026-04-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  source: https://www.linkedin.com/in/jack-s-221181154/

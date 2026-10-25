@@ -1,37 +1,40 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Raj Jegannathan
-:sort_name: Jegannathan
-:slug: raj-jegannathan
-:age: 41
-:skill: executive
-:linkedin: https://www.linkedin.com/in/raj-jegannathan-9b566242/
-:blurb: A relatively new addition to the DOGE staff based in GSA, Raj is also working
-  for his job as the vice president of IT for AI infrastructure and vehicle support
-  operations at Tesla. These dual-employment scenarios would be unthinkable in other
-  presidential admininstrations; for DOGE, they're routine. Jegannathan is "working
-  closely with senior political leadership at the GSA on federal acquisition efforts,"
-  according to [ProPublica](https://projects.propublica.org/elon-musk-doge-tracker/#Rajasekar-Jegannathan)
-:affiliations:
-- :entity_id: tesla
-  :role: employee
-  :timeframe: before
-  :immediate: true
-  :returned: true
-  :table_note: VP of IT for AI Infrastructure
-  :start_date: 2012-10-XX
-  :start_date_truth: self-reported
-  :connection_truth: reported
-  :source: https://www.linkedin.com/in/raj-jegannathan-9b566242/
-  :id: 2olcVjPG
-:positions:
-- :id: gsa-jegannathan
-  :type: appointed
-  :category: unknown
-  :sort_date: 2025-04-24
-  :start_date: 2025-04-(24)~
-  :start_date_truth: reported
-  :source:
+name: Raj Jegannathan
+sort_name: Jegannathan
+slug: raj-jegannathan
+age: 41
+skill: executive
+linkedin: https://www.linkedin.com/in/raj-jegannathan-9b566242/
+blurb: >-
+  A relatively new addition to the DOGE staff based in GSA, Raj is also working for his job as the vice
+  president of IT for AI infrastructure and vehicle support operations at Tesla. These dual-employment
+  scenarios would be unthinkable in other presidential admininstrations; for DOGE, they're routine. Jegannathan
+  is "working closely with senior political leadership at the GSA on federal acquisition efforts," according
+  to [ProPublica](https://projects.propublica.org/elon-musk-doge-tracker/#Rajasekar-Jegannathan)
+affiliations:
+
+- entity_id: tesla
+  role: employee
+  timeframe: before
+  immediate: true
+  returned: true
+  table_note: VP of IT for AI Infrastructure
+  start_date: 2012-10-XX
+  start_date_truth: self-reported
+  connection_truth: reported
+  source: https://www.linkedin.com/in/raj-jegannathan-9b566242/
+  id: 2olcVjPG
+positions:
+
+- id: gsa-jegannathan
+  type: appointed
+  category: unknown
+  sort_date: 2025-04-24
+  start_date: 2025-04-(24)~
+  start_date_truth: reported
+  source:
   - https://www.wired.com/story/elon-musk-doge-mystery-general-services-administration/
   - https://projects.propublica.org/elon-musk-doge-tracker/
-  :title: Data Engineer
-  :agency: GSA
+  title: Data Engineer
+  agency: GSA

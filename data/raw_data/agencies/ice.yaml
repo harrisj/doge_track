@@ -1,19 +1,21 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Immigration and Customs Enforcement
-:id: ICE
-:short_name: ICE
-:parent_id: DHS
-:slug: ice
-:doge_base: true
-:page_slug: homeland-security
-:events:
-- :date: 2025-06-04
-  :type: disruption
-  :event: A $47 million dollar contract for expanding a major immigration facility
-    in Georgia is paused pending review by DOGE under a new policy that requires review
-    for any DHS contract worth more than $20 million. Previously, DHS had been exempt
-    from such spending controls by DOGE.
-  :project: spending
-  :source: https://www.washingtonpost.com/business/2025/06/04/ice-detention-georgia-geo/
-  :agency: ICE
-  :id: JVRX7BOe
+name: Immigration and Customs Enforcement
+id: ICE
+short_name: ICE
+parent_id: DHS
+slug: ice
+doge_base: true
+page_slug: homeland-security
+events:
+
+- date: 2025-06-04
+  type: disruption
+  event: >-
+    A $47 million dollar contract for expanding a major immigration facility in Georgia is paused pending
+    review by DOGE under a new policy that requires review for any DHS contract worth more than $20 million.
+    Previously, DHS had been exempt from such spending controls by DOGE.
+  project: spending
+  source: https://www.washingtonpost.com/business/2025/06/04/ice-detention-georgia-geo/
+  agency: ICE
+  id: JVRX7BOe

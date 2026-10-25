@@ -1,37 +1,41 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Mark Steffensen
-:sort_name: Steffensen
-:slug: mark-steffensen
-:skill: lawyer
-:positions:
-- :id: ssa-steffensen
-  :type: appointed
-  :category: enabler
-  :start_date: 2025-02-25
-  :start_date_truth: reported
-  :end_date: 2025-02-27
-  :end_date_truth: reported
-  :end_type: replaced
-  :replaced_by: ssa-steffensen-1
-  :title: Senior Advisor
-  :project: impunity
-  :title_type: advisor
-  :salary: "$195,200"
-  :office: Office of the Commissioner
-  :source:
+name: Mark Steffensen
+sort_name: Steffensen
+slug: mark-steffensen
+skill: lawyer
+positions:
+
+- id: ssa-steffensen
+  type: appointed
+  category: enabler
+  start_date: 2025-02-25
+  start_date_truth: reported
+  end_date: 2025-02-27
+  end_date_truth: reported
+  end_type: replaced
+  replaced_by: ssa-steffensen-1
+  title: Senior Advisor
+  project: impunity
+  title_type: advisor
+  salary: "$195,200"
+  office: Office of the Commissioner
+  source:
   - https://bsky.app/profile/chrisgeidner.bsky.social/post/3lipqblfluc2h
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-  :agency: SSA
-- :id: ssa-steffensen-1
-  :type: promotion
-  :category: enabler
-  :start_date: 2025-02-27
-  :start_date_truth: reported
-  :title: Acting General Counsel
-  :title_type: chief_counsel
-  :project: impunity
-  :office: Office of the Commissioner
-  :table_note: promoted within two days of being appointed
-  :salary: "$195,200"
-  :source: https://web-cdn.bsky.app/profile/chrisgeidner.bsky.social/post/3ljb6rufur22e
-  :agency: SSA
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  agency: SSA
+
+- id: ssa-steffensen-1
+  type: promotion
+  category: enabler
+  start_date: 2025-02-27
+  start_date_truth: reported
+  title: Acting General Counsel
+  title_type: chief_counsel
+  project: impunity
+  office: Office of the Commissioner
+  table_note: promoted within two days of being appointed
+  salary: "$195,200"
+  source: https://web-cdn.bsky.app/profile/chrisgeidner.bsky.social/post/3ljb6rufur22e
+  agency: SSA

@@ -1,82 +1,89 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Joshua Fox
-:sort_name: Fox, Joshua
-:slug: joshua-fox
-:skill: lawyer
-:age: 28
-:blurb: Apart from his appearance on a leaked list of DOGE's lawyers, there isn't
-  much public information about Joshua Fox. In November, ProPublica added him to their
-  list of DOGE staffers and linked him to several agencies but reported he transitioned
-  to a General Counsel role in the White House in June
-:govt_exit_date: 2025-09-13
-:govt_exit_type: resigned
-:govt_exit_truth: verified
-:positions:
-- :id: noaa-joshua-fox
-  :agency: NOAA
-  :category: wrecker
-  :sort_date: 2025-02-16
-  :type: detailed
-  :from: DOGE
-  :from_truth: guessed
-  :table_note: Linked to agency by ProPublica
-  :source: https://projects.propublica.org/elon-musk-doge-tracker/
-- :id: doge-joshua-fox
-  :type: appointed
-  :category: support
-  :start_date: 2025-02-XX
-  :sort_date: 2025-02-14
-  :start_date_truth: reported
-  :end_date: 2025-06-XX
-  :end_date_truth: reported
-  :end_type: replaced
-  :replaced_by: eop-doge
-  :fuzz: Report just says started sometime in February
-  :source:
+name: Joshua Fox
+sort_name: Fox, Joshua
+slug: joshua-fox
+skill: lawyer
+age: 28
+blurb: >-
+  Apart from his appearance on a leaked list of DOGE's lawyers, there isn't much public information about
+  Joshua Fox. In November, ProPublica added him to their list of DOGE staffers and linked him to several
+  agencies but reported he transitioned to a General Counsel role in the White House in June
+govt_exit_date: 2025-09-13
+govt_exit_type: resigned
+govt_exit_truth: verified
+positions:
+
+- id: noaa-joshua-fox
+  agency: NOAA
+  category: wrecker
+  sort_date: 2025-02-16
+  type: detailed
+  from: DOGE
+  from_truth: guessed
+  table_note: Linked to agency by ProPublica
+  source: https://projects.propublica.org/elon-musk-doge-tracker/
+
+- id: doge-joshua-fox
+  type: appointed
+  category: support
+  start_date: 2025-02-XX
+  sort_date: 2025-02-14
+  start_date_truth: reported
+  end_date: 2025-06-XX
+  end_date_truth: reported
+  end_type: replaced
+  replaced_by: eop-doge
+  fuzz: Report just says started sometime in February
+  source:
   - https://theintercept.com/2025/03/05/leaked-list-musk-doge-lawyers/
   - https://projects.propublica.org/elon-musk-doge-tracker/
-  :agency: DOGE
-- :id: mcc-joshua-fox
-  :agency: MCC
-  :category: wrecker
-  :type: detailed
-  :from: DOGE
-  :from_truth: guessed
-  :sort_date: 2025-03-22
-  :start_date: 2025-03-(22)?
-  :start_date_truth: guessed
-  :project: elimination
-  :table_note: Linked to agency by ProPublica
-  :source: https://projects.propublica.org/elon-musk-doge-tracker/
-- :id: usda-joshua-fox
-  :agency: USDA
-  :start_date: 2025-04-16
-  :start_date_truth: verified
-  :nte_date: 2025-08-14
-  :nte_date_truth: inferred
-  :type: detailed
-  :category: wrecker
-  :project:
+  agency: DOGE
+
+- id: mcc-joshua-fox
+  agency: MCC
+  category: wrecker
+  type: detailed
+  from: DOGE
+  from_truth: guessed
+  sort_date: 2025-03-22
+  start_date: 2025-03-(22)?
+  start_date_truth: guessed
+  project: elimination
+  table_note: Linked to agency by ProPublica
+  source: https://projects.propublica.org/elon-musk-doge-tracker/
+
+- id: usda-joshua-fox
+  agency: USDA
+  start_date: 2025-04-16
+  start_date_truth: verified
+  nte_date: 2025-08-14
+  nte_date_truth: inferred
+  type: detailed
+  category: wrecker
+  project:
   - spending
   - deregulation
-  :from: DOGE
-  :from_truth: verified
-  :reimbursed: false
-  :source:
+  from: DOGE
+  from_truth: verified
+  reimbursed: false
+  source:
   - https://projects.propublica.org/elon-musk-doge-tracker/
-  - https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
-- :id: eop-doge-fox
-  :type: promotion
-  :category: support
-  :agency: EOP
-  :title: Associate General Counsel
-  :office: Executive Office of the President
-  :start_date: 2025-06-XX
-  :start_date_truth: self-reported
-  :end_date: 2025-09-13
-  :end_type: resigned
-  :end_date_truth: reported
-  :table_note: Reported as left 9/13/25; does this mean just DOGE or EOP/govt?
-  :source:
+  - >-
+    https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/
+
+- id: eop-doge-fox
+  type: promotion
+  category: support
+  agency: EOP
+  title: Associate General Counsel
+  office: Executive Office of the President
+  start_date: 2025-06-XX
+  start_date_truth: self-reported
+  end_date: 2025-09-13
+  end_type: resigned
+  end_date_truth: reported
+  table_note: Reported as left 9/13/25; does this mean just DOGE or EOP/govt?
+  source:
   - https://projects.propublica.org/elon-musk-doge-tracker/
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.1.pdf

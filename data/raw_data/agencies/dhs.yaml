@@ -1,10 +1,11 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Department of Homeland Security
-:id: DHS
-:short_name: DHS
-:slug: dhs
-:page_slug: homeland-security
-:blurb: |
+name: Department of Homeland Security
+id: DHS
+short_name: DHS
+slug: dhs
+page_slug: homeland-security
+blurb: |
   Created in the wake of the September 11 attacks, the Department of Homeland Security is a massive agency which contains variety of agencies concerned with law enforcement, immigration, disaster response and even cybersecurity.
 
   DHS contains the following agencies where DOGE has had linked activities:
@@ -13,135 +14,153 @@
   - **Federal Emergency Management (FEMA)**: the agency for coordinating federal responses to natural disasters - **Immigration and Customs Enforcement (ICE)**: the agency that handles immigration arrests. The Trump administration is looking to dramatically expand its size and scope for detentions and deportations.
   - **Transportation Security Administration (TSA)**: this agency handles security at airports. DOGE is reportedly involved with activities in this agency, but there are no details on this.
   - **US Citizenship and Immigration Services (USCIS)**: the agency that supports legal immigration and naturalization to America has been targeted by DOGE for reductions and to create a new $5 million immigration visa.
-:doge_base: true
-:events:
-- :date: 2025-02-08
-  :type: disruption
-  :project: dei
-  :event: The DOGE social media account on X boasts about deleting a page of LGBTQI+
-    resources that was part of the DHS website.
-  :source: https://www.newsweek.com/doge-account-calls-attention-removing-lgbtq-web-page-2028440
-  :agency: DHS
-  :id: dLc2F3xm
-- :date: 2025-02-10
-  :type: sighting
-  :named:
-  - Edward Coristine
-  :event: Edward Coristine appears in an online DHS staff directory with the title
-    of Senior Advisor.
-  :source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
-  :agency: DHS
-  :id: bJckd7pu
-- :date: 2025-02-10
-  :type: report
-  :event: In a meeting providing him with an overview of DHS programs, Kyle Schutt
-    stuns federal staff in the Office of Civil Rights by declaring one of their programs
-    (CRCL) looks like money laundering.
-  :project: elimination
-  :named:
+doge_base: true
+events:
+
+- date: 2025-02-08
+  type: disruption
+  project: dei
+  event: >-
+    The DOGE social media account on X boasts about deleting a page of LGBTQI+ resources that was part
+    of the DHS website.
+  source: https://www.newsweek.com/doge-account-calls-attention-removing-lgbtq-web-page-2028440
+  agency: DHS
+  id: dLc2F3xm
+
+- date: 2025-02-10
+  type: report
+  event: >-
+    In a meeting providing him with an overview of DHS programs, Kyle Schutt stuns federal staff in the
+    Office of Civil Rights by declaring one of their programs (CRCL) looks like money laundering.
+  project: elimination
+  named:
   - Kyle Schutt
-  :source: https://www.politico.com/news/2025/03/29/doge-marco-elez-software-engineer-us-payroll-00259303
-  :agency: DHS
-  :id: BGZKY6go
-- :date: 2025-02-26
-  :type: report
-  :event: Republican lawmakers on the U.S. House Committee on Homeland Security unanimously
-    opposed a resolution of inquiry into DOGE activities at DHS.
-  :project: impunity
-  :source: https://www.bankinfosecurity.com/house-committee-blocks-probe-into-doge-access-to-dhs-systems-a-27608
-  :agency: DHS
-  :id: EAo8rM7V
-- :date: 2025-03-XX
-  :type: disruption
-  :event: Kyle Schutt and Edward Coristine repeatedly pressure staff over the next
-    two months at DHS to use Grok, a chatbot from Elon Musk's xAI, despite the fact
-    it had not been approved for use in the agency. A DHS spokesperson later denied
-    the allegations.
-  :project: modernization
-  :source: https://www.reuters.com/sustainability/boards-policy-regulation/musks-doge-expanding-his-grok-ai-us-government-raising-conflict-concerns-2025-05-23/
-  :comment: DOGE staff told DHS officials over the last two months to use Grok even
-    though it had not been approved for use at the sprawling agency
-  :named:
+  source: https://www.politico.com/news/2025/03/29/doge-marco-elez-software-engineer-us-payroll-00259303
+  agency: DHS
+  id: BGZKY6go
+
+- date: 2025-02-10
+  type: sighting
+  named:
+  - Edward Coristine
+  event: Edward Coristine appears in an online DHS staff directory with the title of Senior Advisor.
+  source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
+  agency: DHS
+  id: bJckd7pu
+
+- date: 2025-02-26
+  type: report
+  event: >-
+    Republican lawmakers on the U.S. House Committee on Homeland Security unanimously opposed a resolution
+    of inquiry into DOGE activities at DHS.
+  project: impunity
+  source: >-
+    https://www.bankinfosecurity.com/house-committee-blocks-probe-into-doge-access-to-dhs-systems-a-27608
+  agency: DHS
+  id: EAo8rM7V
+
+- date: 2025-03-XX
+  type: disruption
+  event: >-
+    Kyle Schutt and Edward Coristine repeatedly pressure staff over the next two months at DHS to use
+    Grok, a chatbot from Elon Musk's xAI, despite the fact it had not been approved for use in the agency.
+    A DHS spokesperson later denied the allegations.
+  project: modernization
+  source: >-
+    https://www.reuters.com/sustainability/boards-policy-regulation/musks-doge-expanding-his-grok-ai-us-government-raising-conflict-concerns-2025-05-23/
+  comment: >-
+    DOGE staff told DHS officials over the last two months to use Grok even though it had not been approved
+    for use at the sprawling agency
+  named:
   - Kyle Schutt
   - Edward Coristine
-  :agency: DHS
-  :id: 4ZZrgRGx
-- :date: 2025-03-21
-  :type: disruption
-  :event: The Trump administration eliminates the DHS Office for Civil Rights and
-    Civil Liberties and two ombudsman offices responsible for investigating allegations
-    of abuse from immigrants. This also includes the CRCL program that was characterized
-    as "money laundering" by DOGE staffer Kyle Schutt.
-  :notable: true
-  :project:
+  agency: DHS
+  id: 4ZZrgRGx
+
+- date: 2025-03-21
+  type: disruption
+  event: >-
+    The Trump administration eliminates the DHS Office for Civil Rights and Civil Liberties and two ombudsman
+    offices responsible for investigating allegations of abuse from immigrants. This also includes the
+    CRCL program that was characterized as "money laundering" by DOGE staffer Kyle Schutt.
+  notable: true
+  project:
   - dei
   - immigration
-  :source: https://www.nytimes.com/2025/03/21/us/politics/trump-civil-rights-homeland-security-deportations.html
-  :linked:
+  source: >-
+    https://www.nytimes.com/2025/03/21/us/politics/trump-civil-rights-homeland-security-deportations.html
+  linked:
   - Kyle Schutt
-  :agency: DHS
-  :id: EfkJdKiY
-- :date: 2025-04-11
-  :type: directory
-  :event: Politico profiles a DOGE immigration task force that is located within DHS
-    but has contacts with DOGE staff at other agencies. It includes multiple DOGE
-    staffers detailed from various agencies.
-  :notable: true
-  :source: https://www.politico.com/news/2025/04/11/doge-immigration-taskforce-00287327
-  :project: immigration
-  :named:
+  agency: DHS
+  id: EfkJdKiY
+
+- date: 2025-04-11
+  type: directory
+  event: >-
+    Politico profiles a DOGE immigration task force that is located within DHS but has contacts with DOGE
+    staff at other agencies. It includes multiple DOGE staffers detailed from various agencies.
+  notable: true
+  source: https://www.politico.com/news/2025/04/11/doge-immigration-taskforce-00287327
+  project: immigration
+  named:
   - Antonio Gracias
   - Kyle Schutt
   - Edward Coristine
   - Marko Elez
   - Payton Rehling
   - Aram Moghaddassi
-  :agency: DHS
-  :id: VXSiUz7f
-- :date: 2025-05-06
-  :type: sighting
-  :event: DOGE staff are reportedly working within the Office of Biometric Management
-    (OBIM) at DHS which oversees the biometric systems IDENT and HART, giving them
-    access to the largest database of biometric identifiers in the world.
-  :notable: true
-  :source: https://fedscoop.com/doge-arrives-at-homeland-security-biometrics-operations/
-  :project: immigration
-  :agency: DHS
-  :id: 1OvaP6aP
-- :date: 2025-05-12
-  :agency: DHS
-  :type: access
-  :event: The Department of Homeland Security issues a subpoena to the state of California
-    and Los Angeles County to demand records from a cash assistance program for immigrants
-    (CAPI).
-  :project: immigration
-  :source: https://www.cbsnews.com/news/homeland-security-subpoenas-california-immigrant-assistance-program/
-  :id: 6v58lA7s
-- :date: 2025-05-23
-  :type: disruption
-  :event: Reuters reports that DOGE staffers Kyle Schutt and Edward Coristine have
-    attempted to gain access to DHS employee emails in recent months and ordered staff
-    to train AI to identify communications suggesting an employee is not "loyal" to
-    Trump's political agenda. Given earlier reports, the AI in question is like xAi's
-    "Grok" AI system.
-  :notable: true
-  :project:
+  agency: DHS
+  id: VXSiUz7f
+
+- date: 2025-05-06
+  type: sighting
+  event: >-
+    DOGE staff are reportedly working within the Office of Biometric Management (OBIM) at DHS which oversees
+    the biometric systems IDENT and HART, giving them access to the largest database of biometric identifiers
+    in the world.
+  notable: true
+  source: https://fedscoop.com/doge-arrives-at-homeland-security-biometrics-operations/
+  project: immigration
+  agency: DHS
+  id: 1OvaP6aP
+
+- date: 2025-05-12
+  agency: DHS
+  type: access
+  event: >-
+    The Department of Homeland Security issues a subpoena to the state of California and Los Angeles County
+    to demand records from a cash assistance program for immigrants (CAPI).
+  project: immigration
+  source: https://www.cbsnews.com/news/homeland-security-subpoenas-california-immigrant-assistance-program/
+  id: 6v58lA7s
+
+- date: 2025-05-23
+  type: disruption
+  event: >-
+    Reuters reports that DOGE staffers Kyle Schutt and Edward Coristine have attempted to gain access
+    to DHS employee emails in recent months and ordered staff to train AI to identify communications suggesting
+    an employee is not "loyal" to Trump's political agenda. Given earlier reports, the AI in question
+    is like xAi's "Grok" AI system.
+  notable: true
+  project:
   - modernization
   - personnel
-  :source: https://www.reuters.com/sustainability/boards-policy-regulation/musks-doge-expanding-his-grok-ai-us-government-raising-conflict-concerns-2025-05-23/
-  :named:
+  source: >-
+    https://www.reuters.com/sustainability/boards-policy-regulation/musks-doge-expanding-his-grok-ai-us-government-raising-conflict-concerns-2025-05-23/
+  named:
   - Kyle Schutt
   - Edward Coristine
-  :agency: DHS
-  :id: 395o34d5
-- :date: 2026-09-08
-  :type: legal
-  :event: The Department of Homeland Security filed an emergency appeal to the Supreme
-    Court's shadow docket, asking for a stay against a lower court ruling that blocked
-    the use of Social Security Numbers and other information that was merged into
-    the SAVE system by DOGE. DHS claimed that not being able to use the system would
-    "threaten the integrity of the upcoming election."
-  :project: immigration
-  :source: https://www.washingtonsun.com/courts/dhs-supreme-court-database
-  :agency: DHS
-  :id: 1caSQlAi
+  agency: DHS
+  id: 395o34d5
+
+- date: 2026-09-08
+  type: legal
+  event: >-
+    The Department of Homeland Security filed an emergency appeal to the Supreme Court's shadow docket,
+    asking for a stay against a lower court ruling that blocked the use of Social Security Numbers and
+    other information that was merged into the SAVE system by DOGE. DHS claimed that not being able to
+    use the system would "threaten the integrity of the upcoming election."
+  project: immigration
+  source: https://www.washingtonsun.com/courts/dhs-supreme-court-database
+  agency: DHS
+  id: 1caSQlAi

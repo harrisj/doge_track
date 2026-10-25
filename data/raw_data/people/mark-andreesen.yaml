@@ -1,20 +1,23 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Marc Andreessen
-:sort_name: Andreessen
-:slug: mark-andreesen
-:skill: recruiter
-:tech_links:
+name: Marc Andreessen
+sort_name: Andreessen
+slug: mark-andreesen
+skill: recruiter
+tech_links:
+
 - Andreessen Horowitz
-:association: auxiliary
-:affiliations:
-- :entity_id: andreessen
-  :role: founder
-  :connection_truth: verified
-  :timeframe: before
-  :immediate: true
-  :source: https://en.wikipedia.org/wiki/Marc_Andreessen
-  :id: 57Ieu0EX
-:blurb: According to early reports, Marc Andreesen's only direct involvement with
-  DOGE was interviewing potential candidates at Mar-a-Lago in December 2024. However,
-  he continues to be a strident booster of the effort.
-:positions: []
+association: auxiliary
+affiliations:
+
+- entity_id: andreessen
+  role: founder
+  connection_truth: verified
+  timeframe: before
+  immediate: true
+  source: https://en.wikipedia.org/wiki/Marc_Andreessen
+  id: 57Ieu0EX
+blurb: >-
+  According to early reports, Marc Andreesen's only direct involvement with DOGE was interviewing potential
+  candidates at Mar-a-Lago in December 2024. However, he continues to be a strident booster of the effort.
+positions: []

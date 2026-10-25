@@ -1,64 +1,70 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Michael Grimes
-:sort_name: Grimes
-:slug: michael-grimes
-:age: 58
-:skill: executive
-:blurb: Michael Grimes is one of the two members of DOGE who came to the agency from
-  Morgan Stanley, the investment bank that coordinated Musk's takeover of Twitter.
-  At Commerce, he has kept a relatively low profile, but there were some reports of
-  him subjecting staff in the [CHIPS for America program](https://www.nist.gov/chips)
+name: Michael Grimes
+sort_name: Grimes
+slug: michael-grimes
+age: 58
+skill: executive
+blurb: >-
+  Michael Grimes is one of the two members of DOGE who came to the agency from Morgan Stanley, the investment
+  bank that coordinated Musk's takeover of Twitter. At Commerce, he has kept a relatively low profile,
+  but there were some reports of him subjecting staff in the [CHIPS for America program](https://www.nist.gov/chips)
   to DOGE-style interviews.
-:linkedin: https://www.linkedin.com/in/michaeldgrimes/
-:tech_links:
+linkedin: https://www.linkedin.com/in/michaeldgrimes/
+tech_links:
+
 - Twitter
-:govt_exit_date: 2026-02-XX
-:govt_exit_truth: self-reported
-:govt_exit_type: resigned
-:affiliations:
-- :entity_id: morgan-stanley
-  :role: employee
-  :timeframe: before
-  :immediate: true
-  :connection_truth: self-reported
-  :start_date: 1995-05-XX
-  :start_date_truth: self-reported
-  :end_date: 2025-02-XX
-  :end_date_truth: self-reported
-  :table_note: Chairman, Investment Banking Division
-  :returned: true
-  :source: https://www.linkedin.com/in/michaeldgrimes/
-  :id: 23Vc6usZ
-:positions:
-- :id: commerce-michael-grimes
-  :type: appointed
-  :category: wrecker
-  :start_date: 2025-02-27
-  :start_date_truth: verified
-  :end_date: 2025-05-XX
-  :end_date_truth: self-reported
-  :end_type: replaced
-  :project:
+govt_exit_date: 2026-02-XX
+govt_exit_truth: self-reported
+govt_exit_type: resigned
+affiliations:
+
+- entity_id: morgan-stanley
+  role: employee
+  timeframe: before
+  immediate: true
+  connection_truth: self-reported
+  start_date: 1995-05-XX
+  start_date_truth: self-reported
+  end_date: 2025-02-XX
+  end_date_truth: self-reported
+  table_note: Chairman, Investment Banking Division
+  returned: true
+  source: https://www.linkedin.com/in/michaeldgrimes/
+  id: 23Vc6usZ
+positions:
+
+- id: commerce-michael-grimes
+  type: appointed
+  category: wrecker
+  start_date: 2025-02-27
+  start_date_truth: verified
+  end_date: 2025-05-XX
+  end_date_truth: self-reported
+  end_type: replaced
+  project:
   - spending
   - personnel
-  :replaced_by: commerce-grimes-invest-accelerator
-  :title: Senior Advisor
-  :title_type: advisor
-  :salary: "$167,603"
-  :agency: Commerce
-  :source:
+  replaced_by: commerce-grimes-invest-accelerator
+  title: Senior Advisor
+  title_type: advisor
+  salary: "$167,603"
+  agency: Commerce
+  source:
   - https://www.documentcloud.org/documents/25969697-grimes-michael-d-278e278t-2025/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - https://www.linkedin.com/in/michaeldgrimes/
-- :id: commerce-grimes-invest-accelerator
-  :type: promotion
-  :title: Executive Director, US Investment Accelerator
-  :agency: Commerce
-  :category: builder
-  :project: modernization
-  :start_date: 2025-03-XX
-  :start_date_truth: self-reported
-  :end_date: 2026-02-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :source: https://www.linkedin.com/in/michaeldgrimes/
+
+- id: commerce-grimes-invest-accelerator
+  type: promotion
+  title: Executive Director, US Investment Accelerator
+  agency: Commerce
+  category: builder
+  project: modernization
+  start_date: 2025-03-XX
+  start_date_truth: self-reported
+  end_date: 2026-02-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  source: https://www.linkedin.com/in/michaeldgrimes/

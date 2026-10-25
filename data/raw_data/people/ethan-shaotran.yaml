@@ -1,158 +1,170 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Ethan Shaotran
-:sort_name: Shaotran
-:slug: ethan-shaotran
-:age: 22
-:skill: coder
-:linkedin: https://www.linkedin.com/in/shaotran/
-:blurb: '"I dropped out of Harvard and came here to serve my country... most of campus
-  hates me now" is what Ethan Shaotran boasted about his alma mater in a recent TV
-  interview. He dropped out of the school in his senior year to join DOGE, where he
-  was part of the initial wrecking crew formed in GSA. In that role, he was involved
-  in efforts to cancel grants, eliminate staff and shut down multple agencies. He
-  was even involved in efforts at some agencies to cancel grants to universities,
-  including his alma mater. According to his LinkedIn, he left government service
-  in January 2026 and is now working on Aligned, a governance platform at OpenAI.'
-:govt_exit_date: 2026-01-XX
-:govt_exit_truth: self-reported
-:govt_exit_type: resigned
-:affiliations:
-- :entity_id: doge-indie-wreckers
-  :role: member
-  :connection_truth: reported
-  :timeframe: during
-  :source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
-  :id: zIiikulk
-- :entity_id: blitz
-  :role: founder
-  :connection_truth: reported
-  :timeframe: after
-  :source: https://www.wired.com/story/doges-ethan-shaotran-is-now-running-a-defense-tech-startup/
-  :start_date: 2026-02-12
-  :start_date_truth: reported
-  :id: 1eDtzYTV
-:positions:
-- :id: gsa-ethan-shaotran
-  :type: appointed
-  :category: wrecker
-  :agency: GSA
-  :salary: "$0"
-  :start_date: 2025-01-20
-  :start_date_truth: inferred
-  :end_date: 2026-01-XX
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :comment: Position inferred from early reporting and detailing to Education
-  :source: https://www.wired.com/story/elon-musk-lackeys-general-services-administration/
-- :id: detail-gsa-opm-shaotran
-  :type: detailed
-  :category: wrecker
-  :agency: DOGE
-  :from: GSA
-  :from_truth: inferred
-  :start_date: 2025-01-27
-  :start_date_truth: verified
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
-- :id: detail-gsa-education-3
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: verified
-  :agency: Education
-  :signed_date: 2025-02-03
-  :start_date: 2025-02-12
-  :start_date_truth: verified
-  :nte_date: 2026-02-26
-  :nte_date_truth: verified
-  :reimbursed: false
-  :comment: ED-3 is Ethan Shaotran
-  :source: https://www.documentcloud.org/documents/26028797-mou-20250212-gsa-education-ed-3/
-  :mou: https://www.documentcloud.org/documents/26028797-mou-20250212-gsa-education-ed-3/
-  :name: Ethan Shaotran
-  :alias: ED-03
-- :id: detail-gsa-ssa-employee-10
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: verified
-  :agency: SSA
-  :signed_date: 2025-02-18
-  :start_date: 2025-02-18
-  :start_date_truth: verified
-  :nte_date: 2026-02-26
-  :nte_date_truth: verified
-  :reimbursed: false
-  :source:
+name: Ethan Shaotran
+sort_name: Shaotran
+slug: ethan-shaotran
+age: 22
+skill: coder
+linkedin: https://www.linkedin.com/in/shaotran/
+blurb: >-
+  "I dropped out of Harvard and came here to serve my country... most of campus hates me now" is what
+  Ethan Shaotran boasted about his alma mater in a recent TV interview. He dropped out of the school in
+  his senior year to join DOGE, where he was part of the initial wrecking crew formed in GSA. In that
+  role, he was involved in efforts to cancel grants, eliminate staff and shut down multple agencies. He
+  was even involved in efforts at some agencies to cancel grants to universities, including his alma mater.
+  According to his LinkedIn, he left government service in January 2026 and is now working on Aligned,
+  a governance platform at OpenAI.
+govt_exit_date: 2026-01-XX
+govt_exit_truth: self-reported
+govt_exit_type: resigned
+affiliations:
+
+- entity_id: doge-indie-wreckers
+  role: member
+  connection_truth: reported
+  timeframe: during
+  source: https://www.historians.org/wp-content/uploads/2026/03/248-1.pdf
+  id: zIiikulk
+
+- entity_id: blitz
+  role: founder
+  connection_truth: reported
+  timeframe: after
+  source: https://www.wired.com/story/doges-ethan-shaotran-is-now-running-a-defense-tech-startup/
+  start_date: 2026-02-12
+  start_date_truth: reported
+  id: 1eDtzYTV
+positions:
+
+- id: gsa-ethan-shaotran
+  type: appointed
+  category: wrecker
+  agency: GSA
+  salary: "$0"
+  start_date: 2025-01-20
+  start_date_truth: inferred
+  end_date: 2026-01-XX
+  end_date_truth: self-reported
+  end_type: resigned
+  comment: Position inferred from early reporting and detailing to Education
+  source: https://www.wired.com/story/elon-musk-lackeys-general-services-administration/
+
+- id: detail-gsa-opm-shaotran
+  type: detailed
+  category: wrecker
+  agency: DOGE
+  from: GSA
+  from_truth: inferred
+  start_date: 2025-01-27
+  start_date_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+
+- id: detail-gsa-education-3
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: verified
+  agency: Education
+  signed_date: 2025-02-03
+  start_date: 2025-02-12
+  start_date_truth: verified
+  nte_date: 2026-02-26
+  nte_date_truth: verified
+  reimbursed: false
+  comment: ED-3 is Ethan Shaotran
+  source: https://www.documentcloud.org/documents/26028797-mou-20250212-gsa-education-ed-3/
+  mou: https://www.documentcloud.org/documents/26028797-mou-20250212-gsa-education-ed-3/
+  name: Ethan Shaotran
+  alias: ED-03
+
+- id: detail-gsa-ssa-employee-10
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: verified
+  agency: SSA
+  signed_date: 2025-02-18
+  start_date: 2025-02-18
+  start_date_truth: verified
+  nte_date: 2026-02-26
+  nte_date_truth: verified
+  reimbursed: false
+  source:
   - https://www.documentcloud.org/documents/26028814-mou-20250218-gsa-ssa-employee-10/
   - https://www.documentcloud.org/documents/26028766-onboard-ssa-employee-10/
-  :mou: https://www.documentcloud.org/documents/26028814-mou-20250218-gsa-ssa-employee-10/
-  :name: Ethan Shaotran
-  :alias: SSA-10
-- :id: detail-gsa-usadf-ethan-shaotran
-  :type: detailed
-  :category: wrecker
-  :name: Ethan Shaotran
-  :from: GSA
-  :from_truth: verified
-  :agency: USADF
-  :start_date: 2025-02-20
-  :start_date_truth: verified
-  :project: elimination
-  :nte_date: 2026-07-04
-  :nte_date_truth: verified
-  :signed_date: 2025-02-21
-  :source: https://www.documentcloud.org/documents/26028791-mou-20250220-gsa-usadf-ethan-shaotran/
-  :mou: https://www.documentcloud.org/documents/26028791-mou-20250220-gsa-usadf-ethan-shaotran/
-- :id: detail-gsa-iaf-shaotran
-  :type: detailed
-  :category: wrecker
-  :project: elimination
-  :from: GSA
-  :agency: IAF
-  :from_truth: verified
-  :start_date: 2025-02-28
-  :start_date_truth: inferred
-  :end_date: 2025-04-04
-  :end_type: removed
-  :end_date_truth: verified
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
-  :table_note: agency contact was earlier, but assuming MOU signed when Marocco seized
-    power
-- :id: detail-gsa-usps-ethan-shaotran
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: verified
-  :project:
+  mou: https://www.documentcloud.org/documents/26028814-mou-20250218-gsa-ssa-employee-10/
+  name: Ethan Shaotran
+  alias: SSA-10
+
+- id: detail-gsa-usadf-ethan-shaotran
+  type: detailed
+  category: wrecker
+  name: Ethan Shaotran
+  from: GSA
+  from_truth: verified
+  agency: USADF
+  start_date: 2025-02-20
+  start_date_truth: verified
+  project: elimination
+  nte_date: 2026-07-04
+  nte_date_truth: verified
+  signed_date: 2025-02-21
+  source: https://www.documentcloud.org/documents/26028791-mou-20250220-gsa-usadf-ethan-shaotran/
+  mou: https://www.documentcloud.org/documents/26028791-mou-20250220-gsa-usadf-ethan-shaotran/
+
+- id: detail-gsa-iaf-shaotran
+  type: detailed
+  category: wrecker
+  project: elimination
+  from: GSA
+  agency: IAF
+  from_truth: verified
+  start_date: 2025-02-28
+  start_date_truth: inferred
+  end_date: 2025-04-04
+  end_type: removed
+  end_date_truth: verified
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278466/gov.uscourts.dcd.278466.35.2_1.pdf
+  table_note: agency contact was earlier, but assuming MOU signed when Marocco seized power
+
+- id: detail-gsa-usps-ethan-shaotran
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: verified
+  project:
   - spending
   - personnel
-  :agency: USPS
-  :reimbursed: false
-  :start_date: 2025-03-12
-  :start_date_truth: verified
-  :nte_date: 2025-06-15
-  :nte_date_truth: verified
-  :signed_date: 2025-03-12
-  :source: https://www.documentcloud.org/documents/26028812-mou-20250312-gsa-usps-ethan-shaotran/
-  :mou: https://www.documentcloud.org/documents/26028812-mou-20250312-gsa-usps-ethan-shaotran/
-- :id: gsa-shaotran-fulltime
-  :agency: GSA
-  :category: wrecker
-  :type: converted
-  :title: Senior Advisor
-  :pay_grade: GS-14
-  :table_note: Salary range for GS-14 in DC
-  :salary: "$142,488 - $185,234"
-  :start_date: 2025-04-10
-  :start_date_truth: reported
-  :source: https://www.wired.com/story/big-balls-young-doge-converted-into-full-time-government-employees/
-- :id: detail-gsa-dfc-shaotran
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: guessed
-  :project: elimination
-  :start_date: 2025-04-28
-  :start_date_truth: reported
-  :source: https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
-  :agency: USDFC
+  agency: USPS
+  reimbursed: false
+  start_date: 2025-03-12
+  start_date_truth: verified
+  nte_date: 2025-06-15
+  nte_date_truth: verified
+  signed_date: 2025-03-12
+  source: https://www.documentcloud.org/documents/26028812-mou-20250312-gsa-usps-ethan-shaotran/
+  mou: https://www.documentcloud.org/documents/26028812-mou-20250312-gsa-usps-ethan-shaotran/
+
+- id: gsa-shaotran-fulltime
+  agency: GSA
+  category: wrecker
+  type: converted
+  title: Senior Advisor
+  pay_grade: GS-14
+  table_note: Salary range for GS-14 in DC
+  salary: "$142,488 - $185,234"
+  start_date: 2025-04-10
+  start_date_truth: reported
+  source: https://www.wired.com/story/big-balls-young-doge-converted-into-full-time-government-employees/
+
+- id: detail-gsa-dfc-shaotran
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: guessed
+  project: elimination
+  start_date: 2025-04-28
+  start_date_truth: reported
+  source: >-
+    https://www.politico.com/news/2025/04/28/doge-us-foreign-aid-agency-first-trump-administration-00314510
+  agency: USDFC

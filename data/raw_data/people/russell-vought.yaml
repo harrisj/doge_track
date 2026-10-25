@@ -1,51 +1,56 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Russell Vought
-:sort_name: Vought
-:slug: russell-vought
-:association: auxiliary
-:skill: executive
-:blurb: It seems a bit weird to associate Russell Vought with DOGE, given his background
-  in the first Trump administration and the Heritage Foundation. However, it's become
-  increasingly clear that Vought has been a force directing the actions of DOGE, including
-  its initial strategy of targeting agency personnel and budgets. Since Musk's departure,
-  he has inherited unequivocal control over the group from his perch at OMB.
-:positions:
-- :id: omb-vought
-  :type: appointed
-  :category: adjacent
-  :agency: OMB
-  :title: Director
-  :start_date: 2025-02-07
-  :start_date_truth: verified
-  :title_type: director
-  :office: Office of Management and Budget
-  :project:
+name: Russell Vought
+sort_name: Vought
+slug: russell-vought
+association: auxiliary
+skill: executive
+blurb: >-
+  It seems a bit weird to associate Russell Vought with DOGE, given his background in the first Trump
+  administration and the Heritage Foundation. However, it's become increasingly clear that Vought has
+  been a force directing the actions of DOGE, including its initial strategy of targeting agency personnel
+  and budgets. Since Musk's departure, he has inherited unequivocal control over the group from his perch
+  at OMB.
+positions:
+
+- id: omb-vought
+  type: appointed
+  category: adjacent
+  agency: OMB
+  title: Director
+  start_date: 2025-02-07
+  start_date_truth: verified
+  title_type: director
+  office: Office of Management and Budget
+  project:
   - impunity
   - spending
-  :supervisory: true
-- :id: cfpb-acting-vought
-  :type: appointed
-  :category: enabler
-  :agency: CFPB
-  :title: Acting Director
-  :title_type: director
-  :supervisory: true
-  :start_date: 2025-02-08
-  :start_date_truth: verified
-  :project:
+  supervisory: true
+
+- id: cfpb-acting-vought
+  type: appointed
+  category: enabler
+  agency: CFPB
+  title: Acting Director
+  title_type: director
+  supervisory: true
+  start_date: 2025-02-08
+  start_date_truth: verified
+  project:
   - impunity
   - elimination
-  :source: https://www.cnn.com/2025/02/08/business/cfpb-doge-vought-x/index.html
-- :id: usaid-acting-vought
-  :type: appointed
-  :category: enabler
-  :agency: USAID
-  :title: Acting Director
-  :title_type: director
-  :supervisory: true
-  :start_date: 2025-08-29
-  :start_date_truth: verified
-  :project:
+  source: https://www.cnn.com/2025/02/08/business/cfpb-doge-vought-x/index.html
+
+- id: usaid-acting-vought
+  type: appointed
+  category: enabler
+  agency: USAID
+  title: Acting Director
+  title_type: director
+  supervisory: true
+  start_date: 2025-08-29
+  start_date_truth: verified
+  project:
   - impunity
   - elimination
-  :source: https://www.politico.com/news/2025/08/29/rubio-usaid-closeout-vought-00536088
+  source: https://www.politico.com/news/2025/08/29/rubio-usaid-closeout-vought-00536088

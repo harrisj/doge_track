@@ -1,251 +1,304 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: National Labor Relations Board
-:id: NLRB
-:short_name: NLRB
-:slug: nlrb
-:page_slug: nlrb
-:blurb: DOGE first arrived at this relatively small and independent agency that ensures
-  that the union rights of workers are protected at the end of February, and they
-  quickly proceeded to do the same scuttling of contracts and termination of employees
-  that they have tried at other agencies under the guide of "IT modernization." However,
-  it appears they also tried to remove sensitive data from the agency, and thanks
-  to a whistleblower, we are now able to see some sophisticated attacks that were
-  made against IT resources at the agency.
-:events:
-- :date: 2025-01-27
-  :type: disruption
-  :event: President Trump illegally fires the National Labor Relations Board (NLRB)
-    Chair Gwynne Wilcox and General Counsel Jennifer Abruzzo from the agency's board.
-    This leaves the agency without quorum to act.
-  :notable: true
-  :project: impunity
-  :source: https://thefulcrum.us/business-democracy/department-of-labor-doge
-  :agency: NLRB
-  :id: gC3dPbGm
-- :date: 2025-02-20
-  :type: disruption
-  :event: Employees at the NLRB are alarmed to see that DOGE has claimed on its website
-    that it has cancelled the lease for their office in Buffalo, NY.
-  :project: spending
-  :source: https://www.huffpost.com/entry/nlrb-office-lease-doge-wall-of-receipts_n_67b76046e4b05145b9c4ca05
-  :agency: NLRB
-  :id: hi8dBSUn
-- :date: 2025-02-(24)~
-  :type: sighting
-  :fuzz: The testimony only mentions that this communication happened sometime during
-    that week
-  :event: Staffers at the NLRB are informed that DOGE will be arriving at the agency
-    the following week and that they have questions about the agency's network architecture.
-  :source: https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
-  :agency: NLRB
-  :id: Gjp7Za9k
-- :date: 2025-02-28
-  :type: disruption
-  :event: After a journalist posts info that Jordan Wick's github profile is public,
-    a staffer an NLRB notices a project of his named NxGenBdoorExtract. The name seems
-    to indicate it's a tool for exfiltrating data from a sensitive NLRB system named
-    NxGen.
-  :notable: true
-  :project: impunity
-  :named:
+name: National Labor Relations Board
+id: NLRB
+short_name: NLRB
+slug: nlrb
+page_slug: nlrb
+blurb: >-
+  DOGE first arrived at this relatively small and independent agency that ensures that the union rights
+  of workers are protected at the end of February, and they quickly proceeded to do the same scuttling
+  of contracts and termination of employees that they have tried at other agencies under the guide of
+  "IT modernization." However, it appears they also tried to remove sensitive data from the agency, and
+  thanks to a whistleblower, we are now able to see some sophisticated attacks that were made against
+  IT resources at the agency.
+events:
+
+- date: 2025-01-27
+  type: disruption
+  event: >-
+    President Trump illegally fires the National Labor Relations Board (NLRB) Chair Gwynne Wilcox and
+    General Counsel Jennifer Abruzzo from the agency's board. This leaves the agency without quorum to
+    act.
+  notable: true
+  project: impunity
+  source: https://thefulcrum.us/business-democracy/department-of-labor-doge
+  agency: NLRB
+  id: gC3dPbGm
+
+- date: 2025-02-20
+  type: disruption
+  event: >-
+    Employees at the NLRB are alarmed to see that DOGE has claimed on its website that it has cancelled
+    the lease for their office in Buffalo, NY.
+  project: spending
+  source: https://www.huffpost.com/entry/nlrb-office-lease-doge-wall-of-receipts_n_67b76046e4b05145b9c4ca05
+  agency: NLRB
+  id: hi8dBSUn
+
+- date: 2025-02-(24)~
+  type: sighting
+  fuzz: The testimony only mentions that this communication happened sometime during that week
+  event: >-
+    Staffers at the NLRB are informed that DOGE will be arriving at the agency the following week and
+    that they have questions about the agency's network architecture.
+  source: >-
+    https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  agency: NLRB
+  id: Gjp7Za9k
+
+- date: 2025-02-28
+  type: disruption
+  event: >-
+    After a journalist posts info that Jordan Wick's github profile is public, a staffer an NLRB notices
+    a project of his named NxGenBdoorExtract. The name seems to indicate it's a tool for exfiltrating
+    data from a sensitive NLRB system named NxGen.
+  notable: true
+  project: impunity
+  named:
   - Jordan Wick
-  :source: https://www.wrvo.org/2025-04-15/a-whistleblowers-disclosure-details-how-doge-may-have-taken-sensitive-labor-data
-  :agency: NLRB
-  :id: Tfm8WCy5
-- :date: 2025-03-03
-  :type: sighting
-  :event: A black SUV and police escort bring DOGE staff to the NLRB. The DOGE staff
-    weren't introduced and didn't interact with IT staff directly.
-  :source: https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
-  :agency: NLRB
-  :id: YGXGph6H
-- :date: 2025-03-03
-  :type: access
-  :event: The NLRB Assistant CIO conveys instructions that there are to be no logs
-    or records made of accounts that are created for DOGE staff and they are to be
-    given "tenant"-level accounts with read/write/admin for all systems as part of
-    their auditing work. This level of access exceed existing permissions that would
-    normally be used by auditors.
-  :notable: true
-  :project: impunity
-  :source: https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
-  :agency: NLRB
-  :id: JX2L2qyH
-- :date: 2025-03-04
-  :type: disruption
-  :event: NLRB network staff notice the existence of an anomalous container on their
-    network that could be performing unauthorized actions. Its storage tokens have
-    been expired, deterring analysis of what resources it might have accessed.
-  :source: https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
-  :agency: NLRB
-  :id: FcsxtUH6
-- :date: 2025-03-05
-  :type: disruption
-  :event: NLRB network staff discover that a security tool for watching network traffic
-    within their cloud environment was manually deactivated and was not logging the
-    creation of new network nodes.
-  :source: https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
-  :project: impunity
-  :agency: NLRB
-  :id: BbaC77YN
-- :date: 2025-03-05
-  :type: disruption
-  :event: A NLRB network staffer notices a large spike in outgoing network traffic
-    from their network with no corresponding incoming traffic (as might be the case
-    for web traffic hitting the website). He also sees a surge in DNS requests which
-    might be used to hide tunnels for stealing data.
-  :source: https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
-  :project: impunity
-  :agency: NLRB
-  :id: ciCnnoWL
-- :date: 2025-03-06
-  :type: disruption
-  :event: NLRB network staff an account a DOGE-specific name `DogeSA_2d5c3e0446f9@nlrb.microsoft.com`
-    that was recently created and then deleted. It seems to have been configured to
-    allow automated scripts to access NLRB's cloud.
-  :source: https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
-  :project: impunity
-  :agency: NLRB
-  :id: AwZqKm8V
-- :date: 2025-03-06
-  :type: disruption
-  :event: After various users reported login problems to the service desk, networking
-    staff at NLRB discover that certain conditional access policies had been updated
-    without their awareness. This change was later confirmed to not be the result
-    of any scheduled maintenance.
-  :source: https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
-  :project: impunity
-  :agency: NLRB
-  :id: h7dbfrDa
-- :date: 2025-03-07
-  :type: disruption
-  :event: Networking staff at NLRB discovered that 3 Github libraries were downloaded
-    in the prior 30 days by DOGE staff at the agency which could be used for scraping
-    high volumes of data and obscuring the source requests.
-  :notable: true
-  :source: https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
-  :project: impunity
-  :agency: NLRB
-  :id: E8dm99Qt
-- :date: 2025-03-07
-  :type: disruption
-  :event: Networking staff at NLRB makes a determination that 10GB of data was likly
-    exfiltrated from the NxGen case management system and then outwards from NLRB.
-    Given that this volume of data is likely compressed, it could represent an even
-    larger amount of source data stolen.
-  :notable: true
-  :source: https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
-  :project: impunity
-  :agency: NLRB
-  :id: 7dYjooeh
-- :date: 2025-03-11
-  :type: disruption
-  :event: NLRB networking staff notice another surge in system utilization for the
-    NxGen system. This coincides with multiple attempts to connect to the system from
-    an IP address in Russia. Alarmingly, the Russian access is attempting to use an
-    account that was created only 15 minutes earlier by DOGE engineers at the agency.
-  :source: https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
-  :project: impunity
-  :agency: NLRB
-  :id: Z4dqQQ9k
-- :date: 2025-03-13
-  :type: disruption
-  :event: NLRB networking staff detect another large transfer of data from NLRB systems
-    to an external endpoint.
-  :source: https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
-  :project: impunity
-  :agency: NLRB
-  :id: brAMUrRM
-- :date: 2025-03-19
-  :type: disruption
-  :event: NLRB networking staff observe a spike in billing records from their cloud
-    provider which are seemingly related to systems that are no longer in operation.
-    These likely indicate resources that were short-lived or deleted to cover up tracks.
-  :source: https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
-  :project: impunity
-  :agency: NLRB
-  :id: bw2Rw3Hj
-- :date: 2025-04-14
-  :type: disruption
-  :event: On the day that NPR published a story with the claims of a whistleblower
-    at the NLRB, the Deputy CIO of the agency, Eric Mark, suspends administrative
-    access for all employees, locking the IT staff out of their ability to continue
-    monitoring DOGE's actions at the agency.
-  :notable: true
-  :source: https://krebsonsecurity.com/2025/04/whistleblower-doge-siphoned-nlrb-case-data/
-  :project: impunity
-  :agency: NLRB
-  :id: 7x2jXvup
-- :date: 2025-04-16
-  :type: sighting
-  :event: Justin Fox and Nate Cavanaugh are detailed from the GSA to work at the NLRB
-    over the next few months. They meet with the Chairman, Acting Senior Counsel and
-    other senior board members. The DOGE staff requested access to 7 HR systems at
-    NLRB.
-  :project:
+  source: >-
+    https://www.wrvo.org/2025-04-15/a-whistleblowers-disclosure-details-how-doge-may-have-taken-sensitive-labor-data
+  agency: NLRB
+  id: Tfm8WCy5
+
+- date: 2025-03-03
+  type: access
+  event: >-
+    The NLRB Assistant CIO conveys instructions that there are to be no logs or records made of accounts
+    that are created for DOGE staff and they are to be given "tenant"-level accounts with read/write/admin
+    for all systems as part of their auditing work. This level of access exceed existing permissions that
+    would normally be used by auditors.
+  notable: true
+  project: impunity
+  source: >-
+    https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  agency: NLRB
+  id: JX2L2qyH
+
+- date: 2025-03-03
+  type: sighting
+  event: >-
+    A black SUV and police escort bring DOGE staff to the NLRB. The DOGE staff weren't introduced and
+    didn't interact with IT staff directly.
+  source: >-
+    https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  agency: NLRB
+  id: YGXGph6H
+
+- date: 2025-03-04
+  type: disruption
+  event: >-
+    NLRB network staff notice the existence of an anomalous container on their network that could be performing
+    unauthorized actions. Its storage tokens have been expired, deterring analysis of what resources it
+    might have accessed.
+  source: >-
+    https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  agency: NLRB
+  id: FcsxtUH6
+
+- date: 2025-03-05
+  type: disruption
+  event: >-
+    NLRB network staff discover that a security tool for watching network traffic within their cloud environment
+    was manually deactivated and was not logging the creation of new network nodes.
+  source: >-
+    https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  project: impunity
+  agency: NLRB
+  id: BbaC77YN
+
+- date: 2025-03-05
+  type: disruption
+  event: >-
+    A NLRB network staffer notices a large spike in outgoing network traffic from their network with no
+    corresponding incoming traffic (as might be the case for web traffic hitting the website). He also
+    sees a surge in DNS requests which might be used to hide tunnels for stealing data.
+  source: >-
+    https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  project: impunity
+  agency: NLRB
+  id: ciCnnoWL
+
+- date: 2025-03-06
+  type: disruption
+  event: >-
+    NLRB network staff an account a DOGE-specific name `DogeSA_2d5c3e0446f9@nlrb.microsoft.com` that was
+    recently created and then deleted. It seems to have been configured to allow automated scripts to
+    access NLRB's cloud.
+  source: >-
+    https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  project: impunity
+  agency: NLRB
+  id: AwZqKm8V
+
+- date: 2025-03-06
+  type: disruption
+  event: >-
+    After various users reported login problems to the service desk, networking staff at NLRB discover
+    that certain conditional access policies had been updated without their awareness. This change was
+    later confirmed to not be the result of any scheduled maintenance.
+  source: >-
+    https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  project: impunity
+  agency: NLRB
+  id: h7dbfrDa
+
+- date: 2025-03-07
+  type: disruption
+  event: >-
+    Networking staff at NLRB makes a determination that 10GB of data was likly exfiltrated from the NxGen
+    case management system and then outwards from NLRB. Given that this volume of data is likely compressed,
+    it could represent an even larger amount of source data stolen.
+  notable: true
+  source: >-
+    https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  project: impunity
+  agency: NLRB
+  id: 7dYjooeh
+
+- date: 2025-03-07
+  type: disruption
+  event: >-
+    Networking staff at NLRB discovered that 3 Github libraries were downloaded in the prior 30 days by
+    DOGE staff at the agency which could be used for scraping high volumes of data and obscuring the source
+    requests.
+  notable: true
+  source: >-
+    https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  project: impunity
+  agency: NLRB
+  id: E8dm99Qt
+
+- date: 2025-03-11
+  type: disruption
+  event: >-
+    NLRB networking staff notice another surge in system utilization for the NxGen system. This coincides
+    with multiple attempts to connect to the system from an IP address in Russia. Alarmingly, the Russian
+    access is attempting to use an account that was created only 15 minutes earlier by DOGE engineers
+    at the agency.
+  source: >-
+    https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  project: impunity
+  agency: NLRB
+  id: Z4dqQQ9k
+
+- date: 2025-03-13
+  type: disruption
+  event: >-
+    NLRB networking staff detect another large transfer of data from NLRB systems to an external endpoint.
+  source: >-
+    https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  project: impunity
+  agency: NLRB
+  id: brAMUrRM
+
+- date: 2025-03-19
+  type: disruption
+  event: >-
+    NLRB networking staff observe a spike in billing records from their cloud provider which are seemingly
+    related to systems that are no longer in operation. These likely indicate resources that were short-lived
+    or deleted to cover up tracks.
+  source: >-
+    https://whistlebloweraid.org/wp-content/uploads/2025/04/2025_0414_Berulis-Disclosure-HELP-and-Oversight-with-Exhibits.pdf
+  project: impunity
+  agency: NLRB
+  id: bw2Rw3Hj
+
+- date: 2025-04-14
+  type: disruption
+  event: >-
+    On the day that NPR published a story with the claims of a whistleblower at the NLRB, the Deputy CIO
+    of the agency, Eric Mark, suspends administrative access for all employees, locking the IT staff out
+    of their ability to continue monitoring DOGE's actions at the agency.
+  notable: true
+  source: https://krebsonsecurity.com/2025/04/whistleblower-doge-siphoned-nlrb-case-data/
+  project: impunity
+  agency: NLRB
+  id: 7x2jXvup
+
+- date: 2025-04-16
+  type: sighting
+  event: >-
+    Justin Fox and Nate Cavanaugh are detailed from the GSA to work at the NLRB over the next few months.
+    They meet with the Chairman, Acting Senior Counsel and other senior board members. The DOGE staff
+    requested access to 7 HR systems at NLRB.
+  project:
   - personnel
-  :named:
+  named:
   - Justin Fox
   - Nate Cavanaugh
-  :comment: Date is from an NPR piece
-  :source:
-  - https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
+  comment: Date is from an NPR piece
+  source:
+  - >-
+    https://news.bloomberglaw.com/daily-labor-report/labor-boards-doge-detailees-connected-to-agency-take-downs
   - https://files.gao.gov/reports/GAO-26-108774/index.html
-  :agency: NLRB
-  :id: eCQoxNRz
-- :date: 2025-04-19
-  :type: action
-  :event: Two days after a whistleblower, Dan Berulis, went public with allegations
-    that DOGE had hacked and stolen data from the NLRB, Elon Musk posts a tweet that
-    claims the whistleblower was deliberately false. A few hours after the tweet,
-    Berulis discovered after a crash that the brake lines on his car had been cut
-    and the airbag was also tampered with to not deploy in a crash. This followed
-    an earlier threatening note as well as surveillance photos of him walking his
-    dog.
-  :project: impunity
-  :source: https://gizmodo.com/doge-whistleblower-had-his-brakes-cut-hours-after-elon-put-him-on-blast-suit-alleges-2000766724
-  :agency: NLRB
-  :id: 6fTpgxaj
-- :date: 2025-04-24
-  :type: access
-  :event: The NLRB authorized the creation of accounts for 2 of the 7 HR systems and
-    rejected access for the other 5. Despite creating accounts for the DOGE staff,
-    they did not ever pick up their NLRB laptops and did not access the accounts.
-  :source: https://files.gao.gov/reports/GAO-26-108774/index.html
-  :agency: NLRB
-  :id: Bi1mWUuS
-- :date: 2025-05-15
-  :type: oversight
-  :event: The NLRB confirms that its Inspector General is looking into the allegations
-    of improper network access and data theft by DOGE.
-  :project: impunity
-  :source: https://fedscoop.com/national-labor-relations-board-watchdog-investigating-doge-potential-data-breach/
-  :agency: NLRB
-  :id: 5KA5f7HR
-- :date: 2025-06-16
-  :type: oversight
-  :event: The top Democrat on the House Oversight Committee sends a letter to Microsoft
-    requesting access and information about Jordan Wick's now-private Github account,
-    specifically requesting to see details about the NxGenBdoorExtract program.
-  :source: https://www.npr.org/2025/06/16/nx-s1-5435330/congress-doge-nlrb-whistleblower-github
-  :agency: NLRB
-  :id: 6w8Oownm
-- :date: 2025-07-25
-  :type: offboard
-  :event: The DOGE staff detailed to NLRB end their detail at the agency. During the
-    entire time, they never picked up their work laptops nor did they access 2 systems
-    they were authorized for. That access is revoked.
-  :project: personnel
-  :source: https://files.gao.gov/reports/GAO-26-108774/index.html
-  :agency: NLRB
-  :id: 6PJa9uN4
-- :date: 2026-04-28
-  :type: oversight
-  :event: The Government Accountability Office releases a report of an investigation
-    in DOGE activities at the agency. It found that GSA detailed two staffers to NLRB
-    and they did not access any agency IT systems there. It does also mention that
-    a whistleblower reported illegal access in March 2025, but that is being investigated
-    by the agency Inspector General
-  :agency: NLRB
-  :source: https://files.gao.gov/reports/GAO-26-108774/index.html
-  :id: 1ykqIXgg
+  agency: NLRB
+  id: eCQoxNRz
+
+- date: 2025-04-19
+  type: action
+  event: >-
+    Two days after a whistleblower, Dan Berulis, went public with allegations that DOGE had hacked and
+    stolen data from the NLRB, Elon Musk posts a tweet that claims the whistleblower was deliberately
+    false. A few hours after the tweet, Berulis discovered after a crash that the brake lines on his car
+    had been cut and the airbag was also tampered with to not deploy in a crash. This followed an earlier
+    threatening note as well as surveillance photos of him walking his dog.
+  project: impunity
+  source: >-
+    https://gizmodo.com/doge-whistleblower-had-his-brakes-cut-hours-after-elon-put-him-on-blast-suit-alleges-2000766724
+  agency: NLRB
+  id: 6fTpgxaj
+
+- date: 2025-04-24
+  type: access
+  event: >-
+    The NLRB authorized the creation of accounts for 2 of the 7 HR systems and rejected access for the
+    other 5. Despite creating accounts for the DOGE staff, they did not ever pick up their NLRB laptops
+    and did not access the accounts.
+  source: https://files.gao.gov/reports/GAO-26-108774/index.html
+  agency: NLRB
+  id: Bi1mWUuS
+
+- date: 2025-05-15
+  type: oversight
+  event: >-
+    The NLRB confirms that its Inspector General is looking into the allegations of improper network access
+    and data theft by DOGE.
+  project: impunity
+  source: >-
+    https://fedscoop.com/national-labor-relations-board-watchdog-investigating-doge-potential-data-breach/
+  agency: NLRB
+  id: 5KA5f7HR
+
+- date: 2025-06-16
+  type: oversight
+  event: >-
+    The top Democrat on the House Oversight Committee sends a letter to Microsoft requesting access and
+    information about Jordan Wick's now-private Github account, specifically requesting to see details
+    about the NxGenBdoorExtract program.
+  source: https://www.npr.org/2025/06/16/nx-s1-5435330/congress-doge-nlrb-whistleblower-github
+  agency: NLRB
+  id: 6w8Oownm
+
+- date: 2025-07-25
+  type: offboard
+  event: >-
+    The DOGE staff detailed to NLRB end their detail at the agency. During the entire time, they never
+    picked up their work laptops nor did they access 2 systems they were authorized for. That access is
+    revoked.
+  project: personnel
+  source: https://files.gao.gov/reports/GAO-26-108774/index.html
+  agency: NLRB
+  id: 6PJa9uN4
+
+- date: 2026-04-28
+  type: oversight
+  event: >-
+    The Government Accountability Office releases a report of an investigation in DOGE activities at the
+    agency. It found that GSA detailed two staffers to NLRB and they did not access any agency IT systems
+    there. It does also mention that a whistleblower reported illegal access in March 2025, but that is
+    being investigated by the agency Inspector General
+  agency: NLRB
+  source: https://files.gao.gov/reports/GAO-26-108774/index.html
+  id: 1ykqIXgg

@@ -1,40 +1,45 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Sam Smeal
-:sort_name: Smeal
-:slug: sam-smeal
-:age: 29
-:skill: coder
-:blurb: One of the four SpaceX engineers who were brought into the FAA on an ad hoc
-  basis, he was only approved to work for 4 days at the agency. That term was apparently
-  extended until June 2, when their access was abruptly revoked.
-:tech_links:
+name: Sam Smeal
+sort_name: Smeal
+slug: sam-smeal
+age: 29
+skill: coder
+blurb: >-
+  One of the four SpaceX engineers who were brought into the FAA on an ad hoc basis, he was only approved
+  to work for 4 days at the agency. That term was apparently extended until June 2, when their access
+  was abruptly revoked.
+tech_links:
+
 - SpaceX
-:govt_exit_date: 2025-06-02
-:govt_exit_truth: reported
-:govt_exit_type: fired
-:affiliations:
-- :entity_id: spacex
-  :role: employee
-  :timeframe: before
-  :returned: true
-  :immediate: true
-  :connection_truth: reported
-  :source: https://www.washingtonpost.com/business/2025/06/08/doge-elon-musk-exit-trump/
-  :id: 1YGl7mbn
-:positions:
-- :id: faa-smeal
-  :type: appointed
-  :category: wrecker
-  :agency: FAA
-  :start_date: 2025-02-16
-  :start_date_truth: reported
-  :nte_date: 2025-02-20
-  :nte_date_truth: verified
-  :end_date: 2025-06-02
-  :end_date_truth: reported
-  :end_type: fired
-  :project: modernization
-  :title: Senior Advisor
-  :title_type: advisor
-  :office: Office of the Administrator
-  :source: https://www.washingtonpost.com/business/2025/06/08/doge-elon-musk-exit-trump/
+govt_exit_date: 2025-06-02
+govt_exit_truth: reported
+govt_exit_type: fired
+affiliations:
+
+- entity_id: spacex
+  role: employee
+  timeframe: before
+  returned: true
+  immediate: true
+  connection_truth: reported
+  source: https://www.washingtonpost.com/business/2025/06/08/doge-elon-musk-exit-trump/
+  id: 1YGl7mbn
+positions:
+
+- id: faa-smeal
+  type: appointed
+  category: wrecker
+  agency: FAA
+  start_date: 2025-02-16
+  start_date_truth: reported
+  nte_date: 2025-02-20
+  nte_date_truth: verified
+  end_date: 2025-06-02
+  end_date_truth: reported
+  end_type: fired
+  project: modernization
+  title: Senior Advisor
+  title_type: advisor
+  office: Office of the Administrator
+  source: https://www.washingtonpost.com/business/2025/06/08/doge-elon-musk-exit-trump/

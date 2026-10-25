@@ -1,158 +1,179 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Department of Energy
-:id: Energy
-:short_name: DOE
-:slug: energy
-:page_slug: energy
-:blurb: DOGE has been involved in several efforts by the Trump Administration to "unleash
-  American energy dominance" through aggressive deregulation. These started at the
-  Department of the Interior, which regulates drilling and mining, but DOGE's activities
-  at the Department of Energy have ramped up since a series of executive orders in
-  late May 2025 severely diminished the independence of the Nuclear Regulatory Commission.
-  Now, the NRC is supposed to rubber stamp the Department of Energy's directives,
-  and the Department of Energy's directive is to reduce regulations and increase support
-  for new nuclear energy startups.
-:blurb_date: 2026-03-26
-:doge_base: true
-:events:
-- :date: 2025-01-22
-  :type: disruption
-  :event: The Department of Energy rescinds 394 pending job offers as part of Trump's
-    hiring freeze. It also removes almost all of its job advertisements.
-  :project: personnel
-  :agency: Energy
-  :source: https://www.eenews.net/articles/how-the-energy-department-got-doged/
-  :id: NoGHN0nZ
-- :date: 2025-02-07
-  :type: sighting
-  :fuzz: Date is approximate and unknown. Report is unconfirmed
-  :event: DOGE staffers Luke Farritor and Adam Ramada arrive at the Department of
-    Energy and are onboarded.According to Dept. of Energy spokesperson, DOGE staff
-    departed the agency within a few days of arrival, but other reporting suggests
-    they were still active and granted access to sensitive systems in the coming months.
-  :source: https://www.npr.org/2025/04/28/nx-s1-5378684/doge-energy-department-nuclear-secrets-access
-  :named:
+name: Department of Energy
+id: Energy
+short_name: DOE
+slug: energy
+page_slug: energy
+blurb: >-
+  DOGE has been involved in several efforts by the Trump Administration to "unleash American energy dominance"
+  through aggressive deregulation. These started at the Department of the Interior, which regulates drilling
+  and mining, but DOGE's activities at the Department of Energy have ramped up since a series of executive
+  orders in late May 2025 severely diminished the independence of the Nuclear Regulatory Commission. Now,
+  the NRC is supposed to rubber stamp the Department of Energy's directives, and the Department of Energy's
+  directive is to reduce regulations and increase support for new nuclear energy startups.
+blurb_date: 2026-03-26
+doge_base: true
+events:
+
+- date: 2025-01-22
+  type: disruption
+  event: >-
+    The Department of Energy rescinds 394 pending job offers as part of Trump's hiring freeze. It also
+    removes almost all of its job advertisements.
+  project: personnel
+  agency: Energy
+  source: https://www.eenews.net/articles/how-the-energy-department-got-doged/
+  id: NoGHN0nZ
+
+- date: 2025-02-07
+  type: sighting
+  fuzz: Date is approximate and unknown. Report is unconfirmed
+  event: >-
+    DOGE staffers Luke Farritor and Adam Ramada arrive at the Department of Energy and are onboarded.According
+    to Dept. of Energy spokesperson, DOGE staff departed the agency within a few days of arrival, but
+    other reporting suggests they were still active and granted access to sensitive systems in the coming
+    months.
+  source: https://www.npr.org/2025/04/28/nx-s1-5378684/doge-energy-department-nuclear-secrets-access
+  named:
   - Luke Farritor
   - Adam Ramada
-  :agency: Energy
-  :id: 9ApmChVN
-- :date: 2025-02-10
-  :type: sighting
-  :event: Adam Ramada shows up in the Department of Energy's online directory, along
-    with Luke Farritor. There also is reportedly a third DOGE staffer at the agency.
-  :named:
+  agency: Energy
+  id: 9ApmChVN
+
+- date: 2025-02-10
+  type: sighting
+  event: >-
+    Adam Ramada shows up in the Department of Energy's online directory, along with Luke Farritor. There
+    also is reportedly a third DOGE staffer at the agency.
+  named:
   - Luke Farritor
   - Adam Ramada
-  :source: https://www.eenews.net/articles/third-doge-official-crops-up-at-energy-department/
-  :agency: Energy
-  :id: 7JabZmub
-- :date: 2025-03-13
-  :type: onboard
-  :project: impunity
-  :event: After reportedly supporting DOGE activities in the State Department, Ross
-    Graber is named as the new CIO for the Department of Energy
-  :named:
+  source: https://www.eenews.net/articles/third-doge-official-crops-up-at-energy-department/
+  agency: Energy
+  id: 7JabZmub
+
+- date: 2025-03-13
+  type: onboard
+  project: impunity
+  event: >-
+    After reportedly supporting DOGE activities in the State Department, Ross Graber is named as the new
+    CIO for the Department of Energy
+  named:
   - Ross Graber
-  :source: https://www.nextgov.com/people/2025/03/energy-appoints-twitter-google-alum-new-cio/403717/
-  :agency: Energy
-  :id: 2nHD9gyo
-- :date: 2025-03-17
-  :type: disruption
-  :event: Acting General Counsel David Taggart at the Department of Energy issues
-    a memo stating that all DOGE spreadsheets being used to determine which grants
-    will be cut at the agency should be designated as "legal privilege" documents.
-    This classification is meant to prevent the documents from being shared in legal
-    disclosures or FOIA responses.
-  :named:
+  source: https://www.nextgov.com/people/2025/03/energy-appoints-twitter-google-alum-new-cio/403717/
+  agency: Energy
+  id: 2nHD9gyo
+
+- date: 2025-03-17
+  type: disruption
+  event: >-
+    Acting General Counsel David Taggart at the Department of Energy issues a memo stating that all DOGE
+    spreadsheets being used to determine which grants will be cut at the agency should be designated as
+    "legal privilege" documents. This classification is meant to prevent the documents from being shared
+    in legal disclosures or FOIA responses.
+  named:
   - David Taggart
-  :source: https://www.axios.com/pro/energy-policy/2025/03/21/energy-department-memo-doge-cuts
-  :project:
+  source: https://www.axios.com/pro/energy-policy/2025/03/21/energy-department-memo-doge-cuts
+  project:
   - spending
   - impunity
-  :agency: Energy
-  :id: 4NFT0nBr
-- :date: 2025-04-01
-  :type: disruption
-  :project: personnel
-  :event: Employees at the Department of Energy are sent an email offering for them
-    to enroll in a new separate deferred resignation plan.
-  :source: https://www.nytimes.com/2025/04/01/us/politics/federal-layoff-buyout-offers.html
-  :agency: Energy
-  :id: 6ZDshcKF
-- :date: 2025-04-28
-  :type: offboard
-  :project: impunity
-  :event: Ross Graber abruptly resigns as the CIO of the Department of Energy, making
-    him the second DOGE pick to be named to and exit the role. The responsibilities
-    of CIO are reverted back to the agency's Deputy CIO, who had been serving in the
-    role after Ryan Riedel's departure.
-  :named:
-  - Ross Graber
-  :source: https://www.meritalk.com/articles/energy-department-cio-graber-resigns-sources-say/
-  :agency: Energy
-  :id: 7Erwy5gK
-- :date: 2025-04-28
-  :type: access
-  :event: Luke Farritor and Adam Ramada reportedly have had accounts for several weeks
-    on systems and networks that handle classified material about nuclear weapons.
-    This contradicts agency reports they had departed the agency within a few days
-    of arrival.
-  :source: https://www.npr.org/2025/04/28/nx-s1-5378684/doge-energy-department-nuclear-secrets-access
-  :named:
+  agency: Energy
+  id: 4NFT0nBr
+
+- date: 2025-04-01
+  type: disruption
+  project: personnel
+  event: >-
+    Employees at the Department of Energy are sent an email offering for them to enroll in a new separate
+    deferred resignation plan.
+  source: https://www.nytimes.com/2025/04/01/us/politics/federal-layoff-buyout-offers.html
+  agency: Energy
+  id: 6ZDshcKF
+
+- date: 2025-04-28
+  type: access
+  event: >-
+    Luke Farritor and Adam Ramada reportedly have had accounts for several weeks on systems and networks
+    that handle classified material about nuclear weapons. This contradicts agency reports they had departed
+    the agency within a few days of arrival.
+  source: https://www.npr.org/2025/04/28/nx-s1-5378684/doge-energy-department-nuclear-secrets-access
+  named:
   - Luke Farritor
   - Adam Ramada
-  :agency: Energy
-  :id: 2ZH8rMfL
-- :date: 2025-08-28
-  :type: disruption
-  :event: As a direct result of DOGE-driven cuts, the Department of Energy announces
-    that it has to delay a regular report tracking shipments of uranium fuel and completely
-    suspend a report on photovoltaic panels. The department that tracks such reports
-    lost more than 100 people out of its 350-person workforce this year. These reports
-    are not as critical as other Energy reports, but the damage to data collection
+  agency: Energy
+  id: 2ZH8rMfL
+
+- date: 2025-04-28
+  type: offboard
+  project: impunity
+  event: >-
+    Ross Graber abruptly resigns as the CIO of the Department of Energy, making him the second DOGE pick
+    to be named to and exit the role. The responsibilities of CIO are reverted back to the agency's Deputy
+    CIO, who had been serving in the role after Ryan Riedel's departure.
+  named:
+  - Ross Graber
+  source: https://www.meritalk.com/articles/energy-department-cio-graber-resigns-sources-say/
+  agency: Energy
+  id: 7Erwy5gK
+
+- date: 2025-08-28
+  type: disruption
+  event: >-
+    As a direct result of DOGE-driven cuts, the Department of Energy announces that it has to delay a
+    regular report tracking shipments of uranium fuel and completely suspend a report on photovoltaic
+    panels. The department that tracks such reports lost more than 100 people out of its 350-person workforce
+    this year. These reports are not as critical as other Energy reports, but the damage to data collection
     and reporting is making energy traders nervous.
-  :notable: true
-  :project: personnel
-  :source: https://www.bloomberg.com/news/articles/2025-08-28/key-us-energy-data-delayed-or-suspended-as-doge-staff-cuts-bite
-  :agency: Energy
-  :id: 5A3UQf9H
-- :date: 2026-03-30
-  :type: action
-  :event: The Department of Energy promoted a "milestone test case" where a team at
-    the Department of Energy used AI to convert a safety analysis document into a
-    208-page license application. The process normally takes 4-6 weeks but was condensed
-    into a single day.
-  :project: modernization
-  :source: https://fedscoop.com/energy-department-national-labs-ai-nuclear-regulatory-experiment/
-  :agency: Energy
-  :id: oavQj5Jz
-- :date: 2026-04-14
-  :type: official
-  :event: Speaking at an AI conference, Carl Coe states that the Department of Energy
-    will need to request significantly more funding to deliver on its goals for the
-    Genesis Mission AI project.
-  :named:
+  notable: true
+  project: personnel
+  source: >-
+    https://www.bloomberg.com/news/articles/2025-08-28/key-us-energy-data-delayed-or-suspended-as-doge-staff-cuts-bite
+  agency: Energy
+  id: 5A3UQf9H
+
+- date: 2026-03-30
+  type: action
+  event: >-
+    The Department of Energy promoted a "milestone test case" where a team at the Department of Energy
+    used AI to convert a safety analysis document into a 208-page license application. The process normally
+    takes 4-6 weeks but was condensed into a single day.
+  project: modernization
+  source: https://fedscoop.com/energy-department-national-labs-ai-nuclear-regulatory-experiment/
+  agency: Energy
+  id: oavQj5Jz
+
+- date: 2026-04-14
+  type: official
+  event: >-
+    Speaking at an AI conference, Carl Coe states that the Department of Energy will need to request significantly
+    more funding to deliver on its goals for the Genesis Mission AI project.
+  named:
   - Carl Coe
-  :source: https://fedscoop.com/doe-genesis-mission-funding-challenges-aitalks/
-  :project: modernization
-  :agency: Energy
-  :id: 8VBMDkGo
-- :date: 2026-05-19
-  :type: disruption
-  :event: A year after DOGE-led reductions and the "fork in the road" email, the Office
-    of Environmental Management at the Department of Energy is operating with roughly
-    half of its expected workforce. This office handles the cleanup of nuclear waste.
-  :project: personnel
-  :source: https://www.notus.org/climate-environment/trump-administration-nuclear-waste-cleanup-team-staff
-  :agency: Energy
-  :id: 7CHQLM4P
-- :date: 2026-05-29
-  :type: report
-  :event: As a result of DOGE's deferred resignation program and other staffing reductions,
-    two nuclear waste sites in New Mexico are operating with vacancy rates of 48%
-    or higher. Nationwide, the environmental cleanup division has lost 400 workers
-    over the last two years, for a vacancy rate of 45%.
-  :agency: Energy
-  :source: https://www.santafenewmexican.com/news/environment/report-doge-resignation-program-led-to-high-nuclear-cleanup-vacancies-in-new-mexico/article_7fc9d23f-cac1-4d6f-9fec-52a03a484add.html
-  :project: personnel
-  :id: 2gHFS29T
+  source: https://fedscoop.com/doe-genesis-mission-funding-challenges-aitalks/
+  project: modernization
+  agency: Energy
+  id: 8VBMDkGo
+
+- date: 2026-05-19
+  type: disruption
+  event: >-
+    A year after DOGE-led reductions and the "fork in the road" email, the Office of Environmental Management
+    at the Department of Energy is operating with roughly half of its expected workforce. This office
+    handles the cleanup of nuclear waste.
+  project: personnel
+  source: https://www.notus.org/climate-environment/trump-administration-nuclear-waste-cleanup-team-staff
+  agency: Energy
+  id: 7CHQLM4P
+
+- date: 2026-05-29
+  type: report
+  event: >-
+    As a result of DOGE's deferred resignation program and other staffing reductions, two nuclear waste
+    sites in New Mexico are operating with vacancy rates of 48% or higher. Nationwide, the environmental
+    cleanup division has lost 400 workers over the last two years, for a vacancy rate of 45%.
+  agency: Energy
+  source: >-
+    https://www.santafenewmexican.com/news/environment/report-doge-resignation-program-led-to-high-nuclear-cleanup-vacancies-in-new-mexico/article_7fc9d23f-cac1-4d6f-9fec-52a03a484add.html
+  project: personnel
+  id: 2gHFS29T

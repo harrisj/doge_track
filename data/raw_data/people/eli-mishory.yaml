@@ -1,42 +1,47 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Eliezer Mishory
-:sort_name: Mishory
-:slug: eli-mishory
-:age: 41
-:skill: lawyer
-:blurb: A perfect enacapsulation of the ethical quagmires surrounding DOGE. Prior
-  to his current assignement, he was the chief regulatory officer at a prediction
-  and betting company, for whom Donald Trump Jr. is an advisor. Now he gets to work
-  his ways on the SEC.
-:linkedin: https://www.linkedin.com/in/eliezer-mishory/
-:govt_exit_date: 2025-10-31
-:govt_exit_truth: guessed
-:govt_exit_type: resigned
-:affiliations:
-- :entity_id: novig
-  :start_date: 2026-06-XX
-  :start_date_truth: reported
-  :connection_truth: reported
-  :source: https://www.wired.com/story/doge-veterans-are-landing-big-jobs-at-prediction-markets/
-  :timeframe: after
-  :role: employee
-  :id: 1wAgSYIG
-:positions:
-- :id: sec-mishory
-  :type: appointed
-  :category: wrecker
-  :start_date: 2025-03-31
-  :start_date_truth: reported
-  :end_date: 2025-10-31
-  :end_date_truth: reported
-  :end_type: detail_ended
-  :title: Senior Advisor
-  :title_type: advisor
-  :office: Office of the Chairman
-  :project: deregulation
-  :source:
-  - https://www.reuters.com/world/us/us-sec-leaders-push-back-musks-doge-seeks-broad-access-source-says-2025-04-15/
-  - https://www.reuters.com/sustainability/boards-policy-regulation/doge-leave-top-us-markets-regulator-sources-say-2025-10-30/
+name: Eliezer Mishory
+sort_name: Mishory
+slug: eli-mishory
+age: 41
+skill: lawyer
+blurb: >-
+  A perfect enacapsulation of the ethical quagmires surrounding DOGE. Prior to his current assignement,
+  he was the chief regulatory officer at a prediction and betting company, for whom Donald Trump Jr. is
+  an advisor. Now he gets to work his ways on the SEC.
+linkedin: https://www.linkedin.com/in/eliezer-mishory/
+govt_exit_date: 2025-10-31
+govt_exit_truth: guessed
+govt_exit_type: resigned
+affiliations:
+
+- entity_id: novig
+  start_date: 2026-06-XX
+  start_date_truth: reported
+  connection_truth: reported
+  source: https://www.wired.com/story/doge-veterans-are-landing-big-jobs-at-prediction-markets/
+  timeframe: after
+  role: employee
+  id: 1wAgSYIG
+positions:
+
+- id: sec-mishory
+  type: appointed
+  category: wrecker
+  start_date: 2025-03-31
+  start_date_truth: reported
+  end_date: 2025-10-31
+  end_date_truth: reported
+  end_type: detail_ended
+  title: Senior Advisor
+  title_type: advisor
+  office: Office of the Chairman
+  project: deregulation
+  source:
+  - >-
+    https://www.reuters.com/world/us/us-sec-leaders-push-back-musks-doge-seeks-broad-access-source-says-2025-04-15/
+  - >-
+    https://www.reuters.com/sustainability/boards-policy-regulation/doge-leave-top-us-markets-regulator-sources-say-2025-10-30/
   - https://www.linkedin.com/in/eliezer-mishory/
   - https://www.gao.gov/assets/gao-26-108192.pdf
-  :agency: SEC
+  agency: SEC

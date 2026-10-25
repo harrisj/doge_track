@@ -1,31 +1,33 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Linda Whitridge
-:slug: linda-whitridge
-:sort_name: Whitridge
-:skill: administrator
-:blurb: There aren't many public details about Linda Whitridge that provide clues
-  to what she is doing for DOGE at the IRS. Her ethics disclosures have revealed that
-  she owns shares of Intuit (who make TurboTax) which is a glaring conflict of interest
-  for someone in her role. Before DOGE, she had been a crossfit trainer and anti-mask
-  advocate in Greenwich, Connecticut and apparently has known Tom Krause since attending
-  Princeton together with him. These are all very relevant skills for a GS-12 position
-  at Treasury paying over $100,000 a year.
-:positions:
-- :id: treasury-whitridge
-  :type: appointed
-  :category: wrecker
-  :start_date: 2025-02-25
-  :start_date_truth: verified
-  :fuzz: Identity is only revealed in a court filing, using ethics training date as
-    start for now
-  :source:
+name: Linda Whitridge
+slug: linda-whitridge
+sort_name: Whitridge
+skill: administrator
+blurb: >-
+  There aren't many public details about Linda Whitridge that provide clues to what she is doing for DOGE
+  at the IRS. Her ethics disclosures have revealed that she owns shares of Intuit (who make TurboTax)
+  which is a glaring conflict of interest for someone in her role. Before DOGE, she had been a crossfit
+  trainer and anti-mask advocate in Greenwich, Connecticut and apparently has known Tom Krause since attending
+  Princeton together with him. These are all very relevant skills for a GS-12 position at Treasury paying
+  over $100,000 a year.
+positions:
+
+- id: treasury-whitridge
+  type: appointed
+  category: wrecker
+  start_date: 2025-02-25
+  start_date_truth: verified
+  fuzz: Identity is only revealed in a court filing, using ethics training date as start for now
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
   - https://bsky.app/profile/jsweetli.bsky.social/post/3ljv4pmturc2f
-  :appt_type: Schedule C
-  :pay_grade: GS-12
-  :salary: "$101,401"
-  :project:
+  appt_type: Schedule C
+  pay_grade: GS-12
+  salary: "$101,401"
+  project:
   - fraud
-  :sge: false
-  :agency: Treasury
+  sge: false
+  agency: Treasury

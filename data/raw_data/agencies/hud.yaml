@@ -1,167 +1,185 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Housing and Urban Development
-:id: HUD
-:short_name: HUD
-:page_slug: housing
-:slug: hud
-:blurb: DOGE's involvement at HUD has ostensibly been focused on fraud and waste rather
-  than IT modernization. At the start, the DOGE staff at the agency focused on cancelling
-  contracts, especially if it could find opportunities to eliminate those focused
-  on DEI or other initiatives to restore equity. There have also been efforts to use
-  highly sensitive HUD databases as a way to get access to extremely private information
-  such as the income and wages of every American, when earlier attempts to retrieve
-  such information at Social Security and the IRS ran into legal opposition. DOGE
-  claims this is needed for the administration's anti-immigration efforts, but it's
-  not hard to imagine many other shady scenarios for this data. Around the middle
-  of April, DOGE added a third staffer at the agency who is piloting effort to use
-  a Large Language Model (LLM) to identify housing regulations to repeal.
-:doge_base: true
-:events:
-- :date: 2025-01-26
-  :type: disruption
-  :event: Spurred by rumors there would be a funding freeze, HUD grantees drew their
-    funds early at 5x normal rate, accounting for $1.5 billion in grant expenditures
-    in total.
-  :project: spending
-  :source: https://www.wired.com/story/elon-musk-digital-coup-doge-data-ai/
-  :agency: HUD
-  :id: Ykzp8vjp
-- :date: 2025-02-10
-  :type: sighting
-  :event: Multiple employees at HUD receive an email from new DOGE staffer Scott Langmack
-    asking them to list every contract at HUD and whether it is critical to HUD's
-    mission and/or has DEI components.
-  :notable: true
-  :project:
+name: Housing and Urban Development
+id: HUD
+short_name: HUD
+page_slug: housing
+slug: hud
+blurb: >-
+  DOGE's involvement at HUD has ostensibly been focused on fraud and waste rather than IT modernization.
+  At the start, the DOGE staff at the agency focused on cancelling contracts, especially if it could find
+  opportunities to eliminate those focused on DEI or other initiatives to restore equity. There have also
+  been efforts to use highly sensitive HUD databases as a way to get access to extremely private information
+  such as the income and wages of every American, when earlier attempts to retrieve such information at
+  Social Security and the IRS ran into legal opposition. DOGE claims this is needed for the administration's
+  anti-immigration efforts, but it's not hard to imagine many other shady scenarios for this data. Around
+  the middle of April, DOGE added a third staffer at the agency who is piloting effort to use a Large
+  Language Model (LLM) to identify housing regulations to repeal.
+doge_base: true
+events:
+
+- date: 2025-01-26
+  type: disruption
+  event: >-
+    Spurred by rumors there would be a funding freeze, HUD grantees drew their funds early at 5x normal
+    rate, accounting for $1.5 billion in grant expenditures in total.
+  project: spending
+  source: https://www.wired.com/story/elon-musk-digital-coup-doge-data-ai/
+  agency: HUD
+  id: Ykzp8vjp
+
+- date: 2025-02-10
+  type: sighting
+  event: >-
+    Multiple employees at HUD receive an email from new DOGE staffer Scott Langmack asking them to list
+    every contract at HUD and whether it is critical to HUD's mission and/or has DEI components.
+  notable: true
+  project:
   - dei
   - spending
-  :named:
+  named:
   - Scott Langmack
-  :source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
-  :agency: HUD
-  :id: TjkvD7jk
-- :date: 2025-02-13
-  :type: official
-  :event: HUD issues a press release reporting that it has launched a "DOGE Task Force"
-    comprising both DOGE personnel and HUD staffers.
-  :source: https://www.hud.gov/news/hud-no-25-030
-  :agency: HUD
-  :id: 5PimPow9
-- :date: 2025-02-26
-  :type: access
-  :event: Wired reports that DOGE staff were given read-only access to some systems
-    and read-write access to payment systems within HUD, as well as the centralized
-    authorization system that would allow the team to grant or revoke access to other
-    systems.
-  :notable: true
-  :project:
+  source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
+  agency: HUD
+  id: TjkvD7jk
+
+- date: 2025-02-13
+  type: official
+  event: >-
+    HUD issues a press release reporting that it has launched a "DOGE Task Force" comprising both DOGE
+    personnel and HUD staffers.
+  source: https://www.hud.gov/news/hud-no-25-030
+  agency: HUD
+  id: 5PimPow9
+
+- date: 2025-02-26
+  type: sighting
+  event: >-
+    There is reportedly a 6-person DOGE team working at HUD, with 4 of the staff identified as existing
+    HUD employees and Michael Mirski and Scott Langmack as the representatives from DOGE.
+  source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
+  named:
+  - Michael Mirski
+  - Scott Langmack
+  agency: HUD
+  id: F3UCNb8e
+
+- date: 2025-02-26
+  type: access
+  event: >-
+    Wired reports that DOGE staff were given read-only access to some systems and read-write access to
+    payment systems within HUD, as well as the centralized authorization system that would allow the team
+    to grant or revoke access to other systems.
+  notable: true
+  project:
   - spending
   - impunity
-  :source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
-  :agency: HUD
-  :id: VTVuHtEb
-- :date: 2025-02-26
-  :type: sighting
-  :event: There is reportedly a 6-person DOGE team working at HUD, with 4 of the staff
-    identified as existing HUD employees and Michael Mirski and Scott Langmack as
-    the representatives from DOGE.
-  :source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
-  :named:
-  - Michael Mirski
-  - Scott Langmack
-  :agency: HUD
-  :id: F3UCNb8e
-- :date: 2025-04-01
-  :type: official
-  :event: HUD staff receive an email from HUD HR offering a new "Fork in the Road"
-    offer for deferred resignation, open until April 11.
-  :project: personnel
-  :source: https://bsky.app/profile/davelevitan.bsky.social/post/3llqvwtc5lq2v
-  :agency: HUD
-  :id: TiFFik6v
-- :date: 2025-04-(10)~
-  :type: onboard
-  :fuzz: Date is unspecified, just sometime earlier in April
-  :event: Scott Langmack sends a message to HUD staff announcing that "I'd like to
-    share with you that Chris Sweet has joined the HUD DOGE team with the title of
-    special assistant, although a better title might be 'AI computer programming quant
-    analyst.'"
-  :source: https://www.wired.com/story/doge-college-student-ai-rewrite-regulations-deregulation/
-  :named:
+  source: https://www.wired.com/story/doge-hud-systems-access-ai-proptech-real-estate-mobile-home/
+  agency: HUD
+  id: VTVuHtEb
+
+- date: 2025-04-01
+  type: official
+  event: >-
+    HUD staff receive an email from HUD HR offering a new "Fork in the Road" offer for deferred resignation,
+    open until April 11.
+  project: personnel
+  source: https://bsky.app/profile/davelevitan.bsky.social/post/3llqvwtc5lq2v
+  agency: HUD
+  id: TiFFik6v
+
+- date: 2025-04-(10)~
+  type: onboard
+  fuzz: Date is unspecified, just sometime earlier in April
+  event: >-
+    Scott Langmack sends a message to HUD staff announcing that "I'd like to share with you that Chris
+    Sweet has joined the HUD DOGE team with the title of special assistant, although a better title might
+    be 'AI computer programming quant analyst.'"
+  source: https://www.wired.com/story/doge-college-student-ai-rewrite-regulations-deregulation/
+  named:
   - Christopher Sweet
   - Scott Langmack
-  :project: modernization
-  :agency: HUD
-  :id: mBJqiHKW
-- :date: 2025-04-15
-  :type: disruption
-  :event: Michael Mirski is named as leading a DOGE effort at HUD to identify and
-    target households that include undocumented immigrants. These could then be referred
-    to the surveillance system that is being built by DOGE at DHS for immigration
-    enforcement.
-  :notable: true
-  :project: immigration
-  :source: https://www.msn.com/en-us/politics/government/doge-is-collecting-federal-data-to-remove-immigrants-from-housing-jobs/ar-AA1CWQ57
-  :named:
-  - Michael Mirski
-  :agency: HUD
-  :id: AsjWbK8C
-- :date: 2025-04-(15)~
-  :type: access
-  :fuzz: Date is unspecified, just sometime earlier in April
-  :event: Christopher Sweet is reported to be using an AI model to analyze HUD regulations
-    and suggest revisions. These are presented to HUD staff for review in a large
-    spreadsheet. It is not clear how the AI system is making these determinations.
-  :notable: true
-  :project:
+  project: modernization
+  agency: HUD
+  id: mBJqiHKW
+
+- date: 2025-04-(15)~
+  type: access
+  fuzz: Date is unspecified, just sometime earlier in April
+  event: >-
+    Christopher Sweet is reported to be using an AI model to analyze HUD regulations and suggest revisions.
+    These are presented to HUD staff for review in a large spreadsheet. It is not clear how the AI system
+    is making these determinations.
+  notable: true
+  project:
   - modernization
   - deregulation
-  :source: https://www.wired.com/story/doge-college-student-ai-rewrite-regulations-deregulation/
-  :named:
+  source: https://www.wired.com/story/doge-college-student-ai-rewrite-regulations-deregulation/
+  named:
   - Christopher Sweet
-  :agency: HUD
-  :id: 4jNjj3vF
-- :date: 2025-04-(20)~
-  :type: interagency
-  :fuzz: Date is unspecified, just sometime earlier in April
-  :event: In a meeting between HUD and DOGE, Jacob Altik says they are planning to
-    use Christopher Sweet's AI model analyzing regulations at HUD to review the entire
-    Code of Federal regulations for regulations to review.
-  :project:
+  agency: HUD
+  id: 4jNjj3vF
+
+- date: 2025-04-15
+  type: disruption
+  event: >-
+    Michael Mirski is named as leading a DOGE effort at HUD to identify and target households that include
+    undocumented immigrants. These could then be referred to the surveillance system that is being built
+    by DOGE at DHS for immigration enforcement.
+  notable: true
+  project: immigration
+  source: >-
+    https://www.msn.com/en-us/politics/government/doge-is-collecting-federal-data-to-remove-immigrants-from-housing-jobs/ar-AA1CWQ57
+  named:
+  - Michael Mirski
+  agency: HUD
+  id: AsjWbK8C
+
+- date: 2025-04-(20)~
+  type: interagency
+  fuzz: Date is unspecified, just sometime earlier in April
+  event: >-
+    In a meeting between HUD and DOGE, Jacob Altik says they are planning to use Christopher Sweet's AI
+    model analyzing regulations at HUD to review the entire Code of Federal regulations for regulations
+    to review.
+  project:
   - modernization
   - deregulation
-  :source: https://www.wired.com/story/doge-college-student-ai-rewrite-regulations-deregulation/
-  :interagency_doge_reps:
-    :DOGE:
+  source: https://www.wired.com/story/doge-college-student-ai-rewrite-regulations-deregulation/
+  interagency_doge_reps:
+    DOGE:
     - Jacob Altik
-    :HUD:
+    HUD:
     - Christopher Sweet
-  :agency: HUD
-  :id: Q4hkKRZT
-- :date: 2025-07-(01)~
-  :type: action
-  :event: Christopher Sweet participates in a meeting at HUD to discuss more permanent
-    hosting options for the AI deregulation tool which had been running internally.
-    This could be the precursor to providing it as a service to other agencies.
-  :project:
+  agency: HUD
+  id: Q4hkKRZT
+
+- date: 2025-07-(01)~
+  type: action
+  event: >-
+    Christopher Sweet participates in a meeting at HUD to discuss more permanent hosting options for the
+    AI deregulation tool which had been running internally. This could be the precursor to providing it
+    as a service to other agencies.
+  project:
   - modernization
   - deregulation
-  :named:
+  named:
   - Christopher Sweet
-  :fuzz: Meeting reported as in week of 2025-06-30
-  :source: https://www.wired.com/story/next-stage-doge-elon-musk/
-  :agency: HUD
-  :id: XTCC1TGA
-- :date: 2025-08-26
-  :type: other
-  :event: At the request of Christopher Sweet, Scott Langmack sends a message to the
-    University of Chicago requesting that Sweet's work at the agency be counted for
-    college credit. He describes it as “graduate-level, multi-disciplinary research
-    producing real-world outputs that are already influencing federal regulatory reform."
-    It is unclear if the University accepted this or not.
-  :named:
+  fuzz: Meeting reported as in week of 2025-06-30
+  source: https://www.wired.com/story/next-stage-doge-elon-musk/
+  agency: HUD
+  id: XTCC1TGA
+
+- date: 2025-08-26
+  type: other
+  event: >-
+    At the request of Christopher Sweet, Scott Langmack sends a message to the University of Chicago requesting
+    that Sweet's work at the agency be counted for college credit. He describes it as “graduate-level,
+    multi-disciplinary research producing real-world outputs that are already influencing federal regulatory
+    reform." It is unclear if the University accepted this or not.
+  named:
   - Christopher Sweet
   - Scott Langmack
-  :source: https://www.wired.com/story/doge-affiliate-asked-for-college-credits-for-participating-in-takeover/
-  :agency: HUD
-  :id: 6VTVqih4
+  source: https://www.wired.com/story/doge-affiliate-asked-for-college-credits-for-participating-in-takeover/
+  agency: HUD
+  id: 6VTVqih4

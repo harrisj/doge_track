@@ -1,59 +1,67 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Yat Choi
-:sort_name: Choi
-:slug: yat-choi
-:skill: coder
-:linkedin: https://www.linkedin.com/in/yat-choi/
-:blurb: An Airbnb engineer working with alumni Joe Gebbia and Andrew Vilcsak on the
-  retirement modernization project at the OPM, Yat Choi is also reportedly a Canadian
-  working on a temporary visa. It true, this circumstance would normally disqualify
-  him from being a federal employee unless some special waiver were granted.
-:college_graduation_year: 2013
-:source:
+name: Yat Choi
+sort_name: Choi
+slug: yat-choi
+skill: coder
+linkedin: https://www.linkedin.com/in/yat-choi/
+blurb: >-
+  An Airbnb engineer working with alumni Joe Gebbia and Andrew Vilcsak on the retirement modernization
+  project at the OPM, Yat Choi is also reportedly a Canadian working on a temporary visa. It true, this
+  circumstance would normally disqualify him from being a federal employee unless some special waiver
+  were granted.
+college_graduation_year: 2013
+source:
+
 - https://www.linkedin.com/in/yat-choi/
+
 - https://www.wired.com/story/next-stage-doge-elon-musk/
-:tech_links:
+tech_links:
+
 - Airbnb
-:affiliations:
-- :entity_id: airbnb
-  :role: employee
-  :timeframe: before
-  :immediate: true
-  :connection_truth: self-reported
-  :source: https://www.linkedin.com/in/yat-choi/
-  :start_date: 2014-01-XX
-  :start_date_truth: self-reported
-  :end_date: 2025-03-XX
-  :end_date_truth: self-reported
-  :table_note: Senior Software Engineer
-  :id: 2s7mhchY
-:positions:
-- :id: opm-choi
-  :type: consultant
-  :category: builder
-  :agency: OPM
-  :title: Senior Technologist
-  :start_date: 2025-04-XX
-  :start_date_truth: self-reported
-  :sort_date: 2025-04-15
-  :project: modernization
-  :table_note: a Canadian working on temp visa which would disqualify for federal
-    role. LinkedIn reports he worked on the retirement processing modernization project.
-    Wired reports still involved in OPM retirement work in December 2025
-  :source:
+affiliations:
+
+- entity_id: airbnb
+  role: employee
+  timeframe: before
+  immediate: true
+  connection_truth: self-reported
+  source: https://www.linkedin.com/in/yat-choi/
+  start_date: 2014-01-XX
+  start_date_truth: self-reported
+  end_date: 2025-03-XX
+  end_date_truth: self-reported
+  table_note: Senior Software Engineer
+  id: 2s7mhchY
+positions:
+
+- id: opm-choi
+  type: consultant
+  category: builder
+  agency: OPM
+  title: Senior Technologist
+  start_date: 2025-04-XX
+  start_date_truth: self-reported
+  sort_date: 2025-04-15
+  project: modernization
+  table_note: >-
+    a Canadian working on temp visa which would disqualify for federal role. LinkedIn reports he worked
+    on the retirement processing modernization project. Wired reports still involved in OPM retirement
+    work in December 2025
+  source:
   - https://www.wired.com/story/next-stage-doge-elon-musk/
   - https://www.linkedin.com/in/yat-choi/
   - https://www.wired.com/story/what-is-doge-doing-now/
-- :id: gsa-choi
-  :type: consultant
-  :category: builder
-  :agency: GSA
-  :start_date: 2025-06-XX
-  :start_date_truth: reported
-  :project: modernization
-  :sort_date: 2025-06-14
-  :table_note: working for GSA as a contractor from MSI Consulting because a not an
-    American citizen
-  :source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
-  :title: Scientific Technologist
-  :title_type: advisor
+
+- id: gsa-choi
+  type: consultant
+  category: builder
+  agency: GSA
+  start_date: 2025-06-XX
+  start_date_truth: reported
+  project: modernization
+  sort_date: 2025-06-14
+  table_note: working for GSA as a contractor from MSI Consulting because a not an American citizen
+  source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
+  title: Scientific Technologist
+  title_type: advisor

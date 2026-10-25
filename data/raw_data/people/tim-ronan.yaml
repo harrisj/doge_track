@@ -1,24 +1,29 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Timothy Ronan
-:sort_name: Ronan
-:slug: tim-ronan
-:blurb: He was named as a member of the DOGE team at USDA in response to a FOIA request
-  from American Oversight. Otherwise, I have no other info yet.
-:positions:
-- :id: usda-ronan
-  :agency: USDA
-  :category: wrecker
-  :type: appointed
-  :title: Special Advisor
-  :start_date: 2025-03-28
-  :start_date_truth: verified
-  :nte_date: 2026-03-28
-  :nte_date_truth: verified
-  :series: '0301'
-  :salary: "$162,672"
-  :pay_grade: EF
-  :office: Immediate Office of the Secretary
-  :source:
+name: Timothy Ronan
+sort_name: Ronan
+slug: tim-ronan
+blurb: >-
+  He was named as a member of the DOGE team at USDA in response to a FOIA request from American Oversight.
+  Otherwise, I have no other info yet.
+positions:
+
+- id: usda-ronan
+  agency: USDA
+  category: wrecker
+  type: appointed
+  title: Special Advisor
+  start_date: 2025-03-28
+  start_date_truth: verified
+  nte_date: 2026-03-28
+  nte_date_truth: verified
+  series: '0301'
+  salary: "$162,672"
+  pay_grade: EF
+  office: Immediate Office of the Secretary
+  source:
   - https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-  - https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/

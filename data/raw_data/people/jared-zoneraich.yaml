@@ -1,16 +1,18 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Jared Zoneraich
-:slug: jared-zoneraich
-:sort_name: Zoneraich
-:college_graduation_year: 2020
-:linkedin: https://www.linkedin.com/in/imjaredz/
-:skill: coder
-:positions:
-- :id: nds-zoneraich
-  :type: appointed
-  :agency: NDS
-  :category: builder
-  :start_date: 2026-09-XX
-  :start_date_truth: self-reported
-  :source: https://www.linkedin.com/in/imjaredz/
-  :title: Member of the Technical Staff
+name: Jared Zoneraich
+slug: jared-zoneraich
+sort_name: Zoneraich
+college_graduation_year: 2020
+linkedin: https://www.linkedin.com/in/imjaredz/
+skill: coder
+positions:
+
+- id: nds-zoneraich
+  type: appointed
+  agency: NDS
+  category: builder
+  start_date: 2026-09-XX
+  start_date_truth: self-reported
+  source: https://www.linkedin.com/in/imjaredz/
+  title: Member of the Technical Staff

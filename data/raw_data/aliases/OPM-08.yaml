@@ -1,24 +1,29 @@
+# yaml-language-server: $schema=../schemas/aliases-file.json
 ---
-:id: OPM-08
-:agency: OPM
-:name: James Sullivan
-:name_truth: verified
-:evidence:
+id: OPM-08
+agency: OPM
+name: James Sullivan
+name_truth: verified
+evidence:
+
 - PD code matches his name in FOIAed list of OPM new hires
+
 - Title and start date also match
+
 - '"James Sullivan (formerly known as OPM-8)" in a ruling by Judge Cote'
-:positions:
-- :id: opm-employee-08
-  :type: appointed
-  :category: support
-  :start_date: 2025-01-20
-  :start_date_truth: verified
-  :appt_type: SES Noncareer
-  :title: Senior Advisor to the Director
-  :title_type: advisor
-  :pay_grade: ES-00
-  :salary: "$195,200"
-  :series: '0301'
-  :pd_code: 6A37370
-  :agency: OPM
-  :source: https://www.documentcloud.org/documents/26028778-onboard-opm-employee-8/
+positions:
+
+- id: opm-employee-08
+  type: appointed
+  category: support
+  start_date: 2025-01-20
+  start_date_truth: verified
+  appt_type: SES Noncareer
+  title: Senior Advisor to the Director
+  title_type: advisor
+  pay_grade: ES-00
+  salary: "$195,200"
+  series: '0301'
+  pd_code: 6A37370
+  agency: OPM
+  source: https://www.documentcloud.org/documents/26028778-onboard-opm-employee-8/

@@ -1,443 +1,505 @@
+# yaml-language-server: $schema=../schemas/agencies-file.json
 ---
-:name: Internal Revenue Service
-:id: IRS
-:short_name: IRS
-:slug: irs
-:parent_id: Treasury
-:page_slug: treasury
-:blurb: The Treasury Department is where DOGE first explored its plan to achieve impoundment
-  through controlling the mechanisms that the government uses for payments.
-:doge_base: true
-:events:
-- :date: 2025-02-13
-  :type: sighting
-  :event: Gavin Kliger arrives at the IRS without any prior notice. Neither IRS security
-    or staff at Treasury were aware of his plans, and OPM was unaware of any arrangements
-    to detail him there. He is escorted to IRS Human Capital, where he brusquely announces
-    he is there to root out fraud and waste at the IRS.
-  :project:
+name: Internal Revenue Service
+id: IRS
+short_name: IRS
+slug: irs
+parent_id: Treasury
+page_slug: treasury
+blurb: >-
+  The Treasury Department is where DOGE first explored its plan to achieve impoundment through controlling
+  the mechanisms that the government uses for payments.
+doge_base: true
+events:
+
+- date: 2025-02-13
+  type: sighting
+  event: >-
+    Gavin Kliger arrives at the IRS without any prior notice. Neither IRS security or staff at Treasury
+    were aware of his plans, and OPM was unaware of any arrangements to detail him there. He is escorted
+    to IRS Human Capital, where he brusquely announces he is there to root out fraud and waste at the
+    IRS.
+  project:
   - fraud
   - spending
   - impunity
-  :source: https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
-  :named:
+  source: >-
+    https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
+  named:
   - Gavin Kliger
-  :agency: IRS
-  :id: 2oFpQacA
-- :date: 2025-02-16
-  :type: access
-  :event: The White House pressures the IRS to sign a Memorandum of Understanding
-    (MOU) granting DOGE expanded access to internal systems at the agency which contain
-    confidential taxpayer information.
-  :notable: true
-  :source: https://www.washingtonpost.com/business/2025/02/16/doge-irs-access-taxpayer-data/
-  :project:
+  agency: IRS
+  id: 2oFpQacA
+
+- date: 2025-02-16
+  type: access
+  event: >-
+    The White House pressures the IRS to sign a Memorandum of Understanding (MOU) granting DOGE expanded
+    access to internal systems at the agency which contain confidential taxpayer information.
+  notable: true
+  source: https://www.washingtonpost.com/business/2025/02/16/doge-irs-access-taxpayer-data/
+  project:
   - fraud
   - immigration
-  :agency: IRS
-  :id: QjJjk5mu
-- :date: 2025-02-17
-  :type: official
-  :event: A White House official confirms that one DOGE staffer will be working with
-    an IRS employee assigned to him to access IRS systems. A formal detailing agreement
-    is finally drafted for Gavin Kliger to work at the agency.
-  :named:
+  agency: IRS
+  id: QjJjk5mu
+
+- date: 2025-02-17
+  type: official
+  event: >-
+    A White House official confirms that one DOGE staffer will be working with an IRS employee assigned
+    to him to access IRS systems. A formal detailing agreement is finally drafted for Gavin Kliger to
+    work at the agency.
+  named:
   - Gavin Kliger
-  :source:
+  source:
   - https://www.politico.com/news/2025/02/17/elon-musk-doge-irs-00204579
-  - https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
-  :agency: IRS
-  :id: LeZFKdaU
-- :date: 2025-02-18
-  :type: legal
-  :event: Privacy advocates sue to stop DOGE from gaining acess to IRS systems which
-    contain highly sensitive data about taxpayers.
-  :source: https://www.npr.org/2025/02/18/nx-s1-5300826/doge-irs-lawsuit-taxpayers-data
-  :agency: IRS
-  :id: PZkRFvLG
-- :date: 2025-02-20
-  :type: interagency
-  :event: The White House and Treasury Department come to an agreement for a Memorandum
-    of Understanding about how DOGE access to IRS systems will be structured.
-  :notable: true
-  :source: https://www.politico.com/news/2025/02/20/treasury-irs-data-white-house-doge-00205391
-  :project:
-  - fraud
-  - immigration
-  :agency: IRS
-  :id: Fwq6uees
-- :date: 2025-02-20
-  :type: legal
-  :event: In a court filing, Treasury says it is adding two more DOGE staffers to
-    its roster who will be exclusively focused on working at the IRS.
-  :linked:
+  - >-
+    https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
+  agency: IRS
+  id: LeZFKdaU
+
+- date: 2025-02-18
+  type: legal
+  event: >-
+    Privacy advocates sue to stop DOGE from gaining acess to IRS systems which contain highly sensitive
+    data about taxpayers.
+  source: https://www.npr.org/2025/02/18/nx-s1-5300826/doge-irs-lawsuit-taxpayers-data
+  agency: IRS
+  id: PZkRFvLG
+
+- date: 2025-02-20
+  type: legal
+  event: >-
+    In a court filing, Treasury says it is adding two more DOGE staffers to its roster who will be exclusively
+    focused on working at the IRS.
+  linked:
   - Ryan Wunderly
   - Gavin Kliger
-  :source: https://www.politico.com/news/2025/02/20/treasury-irs-data-white-house-doge-00205391
-  :agency: IRS
-  :id: EjrSMk9d
-- :date: 2025-02-20
-  :type: access
-  :event: Facing a revolt over privacy concerns by staff at the IRS, The Treasury
-    Department agrees to block Gavin Kliger from the IDRS system and provide him only
-    with anonymized data.
-  :source: https://www.washingtonpost.com/business/2025/02/20/doge-irs-taxpayer-data-privacy/
-  :named:
-  - Gavin Kliger
-  :agency: IRS
-  :id: MD9eHvgr
-- :date: 2025-02-21
-  :type: interagency
-  :event: The Memorandum of Understanding (MOU) between the IRS and DOGE is formally
-    signed. It reportedly will not let DOGE access individual tax returns.
-  :source: https://www.nytimes.com/2025/02/21/us/politics/irs-doge-gavin-kliger.html
-  :project:
+  source: https://www.politico.com/news/2025/02/20/treasury-irs-data-white-house-doge-00205391
+  agency: IRS
+  id: EjrSMk9d
+
+- date: 2025-02-20
+  type: interagency
+  event: >-
+    The White House and Treasury Department come to an agreement for a Memorandum of Understanding about
+    how DOGE access to IRS systems will be structured.
+  notable: true
+  source: https://www.politico.com/news/2025/02/20/treasury-irs-data-white-house-doge-00205391
+  project:
   - fraud
   - immigration
-  :agency: IRS
-  :id: PuLGSMRa
-- :date: 2025-02-25
-  :type: access
-  :event: The Post reports that DOGE staffers Gavin Kliger and Sam Corcos are being
-    granted access to only anonymized data from IDRS as was specified in an earlier
-    MOU.
-  :source: https://www.washingtonpost.com/business/2025/02/25/elon-musk-doge-data-privacy-security/
-  :project: fraud
-  :agency: IRS
-  :id: QfW2MVvJ
-- :date: 2025-02-28
-  :type: disruption
-  :event: Doug O'Donnell, the Acting Commissioner of the IRS, is forced to resign
-    after refusing to send an email to the agency's 6700 probationary employees that
-    they were being fired for poor performance. He is replaced by Melanie Krause,
-    the agency's Chief Operating Officer who was more amenable to DOGE's demands.
-  :project: personnel
-  :source: https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
-  :agency: IRS
-  :id: 53cqEfCk
-- :date: 2025-02-28
-  :type: official
-  :named:
+  agency: IRS
+  id: Fwq6uees
+
+- date: 2025-02-20
+  type: access
+  event: >-
+    Facing a revolt over privacy concerns by staff at the IRS, The Treasury Department agrees to block
+    Gavin Kliger from the IDRS system and provide him only with anonymized data.
+  source: https://www.washingtonpost.com/business/2025/02/20/doge-irs-taxpayer-data-privacy/
+  named:
+  - Gavin Kliger
+  agency: IRS
+  id: MD9eHvgr
+
+- date: 2025-02-21
+  type: interagency
+  event: >-
+    The Memorandum of Understanding (MOU) between the IRS and DOGE is formally signed. It reportedly will
+    not let DOGE access individual tax returns.
+  source: https://www.nytimes.com/2025/02/21/us/politics/irs-doge-gavin-kliger.html
+  project:
+  - fraud
+  - immigration
+  agency: IRS
+  id: PuLGSMRa
+
+- date: 2025-02-25
+  type: access
+  event: >-
+    The Post reports that DOGE staffers Gavin Kliger and Sam Corcos are being granted access to only anonymized
+    data from IDRS as was specified in an earlier MOU.
+  source: https://www.washingtonpost.com/business/2025/02/25/elon-musk-doge-data-privacy-security/
+  project: fraud
+  agency: IRS
+  id: QfW2MVvJ
+
+- date: 2025-02-28
+  type: disruption
+  event: >-
+    Doug O'Donnell, the Acting Commissioner of the IRS, is forced to resign after refusing to send an
+    email to the agency's 6700 probationary employees that they were being fired for poor performance.
+    He is replaced by Melanie Krause, the agency's Chief Operating Officer who was more amenable to DOGE's
+    demands.
+  project: personnel
+  source: >-
+    https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
+  agency: IRS
+  id: 53cqEfCk
+
+- date: 2025-02-28
+  type: official
+  named:
   - Gavin Kliger
   - Sam Corcos
-  :event: Gavin Kliger and Sam Corcos, DOGE representatives embedded at the IRS, on
-    Friday asked IRS lawyers to assist in creating an "omnibus" agreement with other
-    federal agencies that would allow a broad swath of federal officials to cross-reference
-    benefits rolls with taxpayer data. This request is supported by the newly installed
-    acting commissioner of the agency, Melanie Krause, but it alarms other agency
+  event: >-
+    Gavin Kliger and Sam Corcos, DOGE representatives embedded at the IRS, on Friday asked IRS lawyers
+    to assist in creating an "omnibus" agreement with other federal agencies that would allow a broad
+    swath of federal officials to cross-reference benefits rolls with taxpayer data. This request is supported
+    by the newly installed acting commissioner of the agency, Melanie Krause, but it alarms other agency
     staff who view the project as highly illegal.
-  :notable: true
-  :source:
+  notable: true
+  source:
   - https://www.washingtonpost.com/business/2025/03/01/doge-irs-tax-records-benefits/
-  - https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
-  :project:
+  - >-
+    https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
+  project:
   - fraud
   - immigration
-  :agency: IRS
-  :id: Np7Nfyaw
-- :date: 2025-03-XX
-  :type: disruption
-  :event: Several days after meeting with lobbyists from the tax software prep industry's
-    Free File Inc. coalition led by Intuit, Sam Corcos abruptly reverses his prior
-    course and makes the case to Treasury Secretary Scott Bessent that the IRS' Direct
-    File program for free tax filing should be shut down.
-  :notable: true
-  :named:
+  agency: IRS
+  id: Np7Nfyaw
+
+- date: 2025-03-XX
+  type: disruption
+  event: >-
+    Several days after meeting with lobbyists from the tax software prep industry's Free File Inc. coalition
+    led by Intuit, Sam Corcos abruptly reverses his prior course and makes the case to Treasury Secretary
+    Scott Bessent that the IRS' Direct File program for free tax filing should be shut down.
+  notable: true
+  named:
   - Sam Corcos
-  :agency: IRS
-  :source: https://www.wired.com/story/doge-direct-file-chopping-block/
-  :id: 3x1dbLva
-- :date: 2025-03-03
-  :type: disruption
-  :event: The head of HR, Traci DiMartini, for the IRS is placed on administrative
-    leave reportedly for refusing to bring in employees over the weekend to onboard
-    Sam Corcos outside of the usual hiring processes and schedule.
-  :notable: true
-  :source: https://newrepublic.com/post/192478/irs-chief-revenge-fired-doge
-  :project: impunity
-  :agency: IRS
-  :id: BY87i4Uw
-- :date: 2025-03-10
-  :type: disruption
-  :event: The head of Human Capital at the IRS is warned that Gavin Kliger is looking
-    for her office to fire her. He was reportedly angry that she had blocked his demands
-    to see contractor data that included sensitive taxpayer information and had also
-    slowed an attempt to fast-track a procurement to Palantir.
-  :named:
+  agency: IRS
+  source: https://www.wired.com/story/doge-direct-file-chopping-block/
+  id: 3x1dbLva
+
+- date: 2025-03-03
+  type: disruption
+  event: >-
+    The head of HR, Traci DiMartini, for the IRS is placed on administrative leave reportedly for refusing
+    to bring in employees over the weekend to onboard Sam Corcos outside of the usual hiring processes
+    and schedule.
+  notable: true
+  source: https://newrepublic.com/post/192478/irs-chief-revenge-fired-doge
+  project: impunity
+  agency: IRS
+  id: BY87i4Uw
+
+- date: 2025-03-10
+  type: disruption
+  event: >-
+    The head of Human Capital at the IRS is warned that Gavin Kliger is looking for her office to fire
+    her. He was reportedly angry that she had blocked his demands to see contractor data that included
+    sensitive taxpayer information and had also slowed an attempt to fast-track a procurement to Palantir.
+  named:
   - Gavin Kliger
-  :source: https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
-  :agency: IRS
-  :id: 2qlHlB5I
-- :date: 2025-03-13
-  :type: disruption
-  :event: The acting chief counsel of the IRS, William Paul, is removed from his role
-    and replaced by Andrew De Mello, who is seen as more supportive of DOGE's work
-    at the agency.
-  :source: https://www.cbsnews.com/news/andrew-de-mello-irs-william-paul-doge-trump/
-  :project: impunity
-  :agency: IRS
-  :id: ZTm4qbrC
-- :date: 2025-03-28
-  :type: disruption
-  :event: DOGE abruptly places 50 technologists working at the IRS on administrative
-    leave. This is a common tactic used by DOGE to prevent federal staff from monitoring
-    or checking DOGE's actions at the agencies and is often a precursor to firing
-    them.
-  :notable: true
-  :source: https://www.wired.com/story/doge-hackathon-irs-data-palantir/
-  :project: impunity
-  :agency: IRS
-  :id: 7aQsK6pd
-- :date: 2025-04-03
-  :type: disruption
-  :event: Multiple senior technological positions at the IRS are terminated. These
-    include director of cybersecurity architecture and implementation, deputy chief
-    information security officer, and acting director of security risk management.
-  :source: https://www.wired.com/story/doge-hackathon-irs-data-palantir/
-  :project:
+  source: >-
+    https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
+  agency: IRS
+  id: 2qlHlB5I
+
+- date: 2025-03-13
+  type: disruption
+  event: >-
+    The acting chief counsel of the IRS, William Paul, is removed from his role and replaced by Andrew
+    De Mello, who is seen as more supportive of DOGE's work at the agency.
+  source: https://www.cbsnews.com/news/andrew-de-mello-irs-william-paul-doge-trump/
+  project: impunity
+  agency: IRS
+  id: ZTm4qbrC
+
+- date: 2025-03-28
+  type: disruption
+  event: >-
+    DOGE abruptly places 50 technologists working at the IRS on administrative leave. This is a common
+    tactic used by DOGE to prevent federal staff from monitoring or checking DOGE's actions at the agencies
+    and is often a precursor to firing them.
+  notable: true
+  source: https://www.wired.com/story/doge-hackathon-irs-data-palantir/
+  project: impunity
+  agency: IRS
+  id: 7aQsK6pd
+
+- date: 2025-04-03
+  type: disruption
+  event: >-
+    Multiple senior technological positions at the IRS are terminated. These include director of cybersecurity
+    architecture and implementation, deputy chief information security officer, and acting director of
+    security risk management.
+  source: https://www.wired.com/story/doge-hackathon-irs-data-palantir/
+  project:
   - personnel
   - impunity
-  :agency: IRS
-  :id: QH5hBz4D
-- :date: 2025-04-08
-  :type: disruption
-  :event: The recently-installed Acting Commissioner of the IRS, Melanie Krause, resigns
-    and leaks a story to the _Post_ that it was over her resistance to the data-sharing
-    plan with DHS and ICE. Her staff allege it's because she would have been revealed
-    as a backer of the plan.
-  :project: immigration
-  :source:
+  agency: IRS
+  id: QH5hBz4D
+
+- date: 2025-04-08
+  type: disruption
+  event: >-
+    The recently-installed Acting Commissioner of the IRS, Melanie Krause, resigns and leaks a story to
+    the _Post_ that it was over her resistance to the data-sharing plan with DHS and ICE. Her staff allege
+    it's because she would have been revealed as a backer of the plan.
+  project: immigration
+  source:
   - https://www.washingtonpost.com/business/2025/04/08/irs-dhs-tax-data-immigrants/
-  - https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
-  :agency: IRS
-  :id: 16yV0wOn
-- :date: 2025-04-08
-  :type: disruption
-  :event: DOGE engineers kick off a hackathon at IRS with some senior IRS developers
-    and representatives of the company Palantir to create a \"Mega API\" of IRS data.
-    Palantir is also involved with efforts to build surveillance systems for ICE to
-    use against immigrants.
-  :notable: true
-  :source: https://www.wired.com/story/palantir-doge-irs-mega-api-data/
-  :project:
+  - >-
+    https://www.theguardian.com/us-news/2026/oct/03/elon-is-my-prophet-how-musks-doge-team-took-a-wrecking-ball-to-washington
+  agency: IRS
+  id: 16yV0wOn
+
+- date: 2025-04-08
+  type: disruption
+  event: >-
+    DOGE engineers kick off a hackathon at IRS with some senior IRS developers and representatives of
+    the company Palantir to create a \"Mega API\" of IRS data. Palantir is also involved with efforts
+    to build surveillance systems for ICE to use against immigrants.
+  notable: true
+  source: https://www.wired.com/story/palantir-doge-irs-mega-api-data/
+  project:
   - immigration
-  :named:
+  named:
   - Sam Corcos
   - Gavin Kliger
-  :agency: IRS
-  :id: fxfRqKPJ
-- :date: 2025-04-10
-  :type: disruption
-  :event: The hackathon to create a "Mega API" at the IRS concludes. DOGE engineers
-    are reportedly confident they will be able to deploy it in 30 days. It is unclear
-    if it was ever deployed.
-  :source: https://www.wired.com/story/palantir-doge-irs-mega-api-data/
-  :named:
+  agency: IRS
+  id: fxfRqKPJ
+
+- date: 2025-04-10
+  type: disruption
+  event: >-
+    The hackathon to create a "Mega API" at the IRS concludes. DOGE engineers are reportedly confident
+    they will be able to deploy it in 30 days. It is unclear if it was ever deployed.
+  source: https://www.wired.com/story/palantir-doge-irs-mega-api-data/
+  named:
   - Sam Corcos
-  :agency: IRS
-  :id: dL72Svcf
-- :date: 2025-04-17
-  :type: disruption
-  :event: Although it has not made the decision public, the DOGE team at the IRS reportedly
-    formally decided to end the newly popular Direct File program, which provides
-    a free filing alternative for income taxes.
-  :source: https://apnews.com/article/irs-direct-file-tax-returns-free-trump-4bb0bca02fab9b3d06ae6f45ac67b7ab
-  :agency: IRS
-  :id: 3UzNppej
-- :date: 2025-05-07
-  :type: disruption
-  :event: After two months of DOGE-directed cuts, IRS has lost 3600 (31% of that workforce)
-    of the workers who perform audits at the agency. This will drastically reduce
-    the ability of the IRS to detect tax cheating and fraud.
-  :notable: true
-  :source: https://www.cbsnews.com/news/irs-doge-cuts-layoffs-31-percent-auditors-tax-revenue-impact/
-  :project: personnel
-  :agency: IRS
-  :id: 5GGqzxaQ
-- :date: 2025-05-08
-  :type: disruption
-  :event: IRS Input Correction Operation employees working at the Kansas City office
-    receive notifications they must work on Saturdays for 2 weekends in May to handle
-    the growing backlog of tax returns due to an overall reduction in IRS staff.
-  :source: https://www.independent.co.uk/news/world/americas/us-politics/irs-mandatory-overtime-tax-returns-doge-b2747028.html
-  :project: personnel
-  :agency: IRS
-  :id: 7OPjt5xy
-- :date: 2025-05-15
-  :type: oversight
-  :event: The ranking Democratic member of the House Committee on Oversight and Government
-    Reform sends a letter requesting that the IRS Inspector General investigate the
-    circumstances of the "hackathon."
-  :source: https://fedscoop.com/wp-content/uploads/sites/5/2025/05/2025-05-15.GEC-to-TIGTA-re-IRS-Tech.pdf
-  :agency: IRS
-  :id: 5CqG0eNe
-- :date: 2025-05-29
-  :type: oversight
-  :event: During a briefing to the Ways and Means Committee representatives and staff,
-    DOGE members say they are very excited about the possibility of using AI to interface
-    with and modernize legacy COBOL systems at the IRS.
-  :notable: true
-  :source: https://gwenmoore.house.gov/uploadedfiles/final-_moore_delbene_letter_to_irs_on_ai_coding.pdf
-  :project:
+  agency: IRS
+  id: dL72Svcf
+
+- date: 2025-04-17
+  type: disruption
+  event: >-
+    Although it has not made the decision public, the DOGE team at the IRS reportedly formally decided
+    to end the newly popular Direct File program, which provides a free filing alternative for income
+    taxes.
+  source: https://apnews.com/article/irs-direct-file-tax-returns-free-trump-4bb0bca02fab9b3d06ae6f45ac67b7ab
+  agency: IRS
+  id: 3UzNppej
+
+- date: 2025-05-07
+  type: disruption
+  event: >-
+    After two months of DOGE-directed cuts, IRS has lost 3600 (31% of that workforce) of the workers who
+    perform audits at the agency. This will drastically reduce the ability of the IRS to detect tax cheating
+    and fraud.
+  notable: true
+  source: https://www.cbsnews.com/news/irs-doge-cuts-layoffs-31-percent-auditors-tax-revenue-impact/
+  project: personnel
+  agency: IRS
+  id: 5GGqzxaQ
+
+- date: 2025-05-08
+  type: disruption
+  event: >-
+    IRS Input Correction Operation employees working at the Kansas City office receive notifications they
+    must work on Saturdays for 2 weekends in May to handle the growing backlog of tax returns due to an
+    overall reduction in IRS staff.
+  source: >-
+    https://www.independent.co.uk/news/world/americas/us-politics/irs-mandatory-overtime-tax-returns-doge-b2747028.html
+  project: personnel
+  agency: IRS
+  id: 7OPjt5xy
+
+- date: 2025-05-15
+  type: oversight
+  event: >-
+    The ranking Democratic member of the House Committee on Oversight and Government Reform sends a letter
+    requesting that the IRS Inspector General investigate the circumstances of the "hackathon."
+  source: https://fedscoop.com/wp-content/uploads/sites/5/2025/05/2025-05-15.GEC-to-TIGTA-re-IRS-Tech.pdf
+  agency: IRS
+  id: 5CqG0eNe
+
+- date: 2025-05-29
+  type: oversight
+  event: >-
+    During a briefing to the Ways and Means Committee representatives and staff, DOGE members say they
+    are very excited about the possibility of using AI to interface with and modernize legacy COBOL systems
+    at the IRS.
+  notable: true
+  source: https://gwenmoore.house.gov/uploadedfiles/final-_moore_delbene_letter_to_irs_on_ai_coding.pdf
+  project:
   - modernization
-  :agency: IRS
-  :id: 13Zj3dEB
-- :date: 2025-06-27
-  :type: disruption
-  :event: Two days after preventing a data sharing request from ICE due to concerns
-    it would break the law, the acting counself for the IRS is fired and removed from
-    his job. The Acting Counsel had replaced the prior agency counsel because he was
-    considered more friendly to Trump's interests.
-  :source: https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
-  :notable: true
-  :project:
+  agency: IRS
+  id: 13Zj3dEB
+
+- date: 2025-06-27
+  type: disruption
+  event: >-
+    Two days after preventing a data sharing request from ICE due to concerns it would break the law,
+    the acting counself for the IRS is fired and removed from his job. The Acting Counsel had replaced
+    the prior agency counsel because he was considered more friendly to Trump's interests.
+  source: https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
+  notable: true
+  project:
   - impunity
   - immigration
-  :agency:
+  agency:
   - IRS
-  :id: ECAU4796
-- :date: 2025-07-15
-  :type: report
-  :event: Reporting on DOGE's efforts to import IRS data into immigration enforcement
-    databases, ProPublica reports that 7.3 million addresses requested by ICE have
-    still not yet been shared with the agency by the IRS. IRS staff do not believe
-    that ICE has 7 million open investigations and are concerned that outdated or
-    inaccurate information in the dataset could lead to false arrests and detentions.
-    However, IRS is still building this system and is targeting a late July launch
-    date.
-  :source: https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
-  :notable: true
-  :project: immigration
-  :agency:
+  id: ECAU4796
+
+- date: 2025-07-15
+  type: report
+  event: >-
+    Reporting on DOGE's efforts to import IRS data into immigration enforcement databases, ProPublica
+    reports that 7.3 million addresses requested by ICE have still not yet been shared with the agency
+    by the IRS. IRS staff do not believe that ICE has 7 million open investigations and are concerned
+    that outdated or inaccurate information in the dataset could lead to false arrests and detentions.
+    However, IRS is still building this system and is targeting a late July launch date.
+  source: https://www.propublica.org/article/trump-irs-share-tax-records-ice-dhs-deportations
+  notable: true
+  project: immigration
+  agency:
   - IRS
-  :id: V6Rntzya
-- :date: 2025-08-08
-  :type: disruption
-  :event: The IRS Commissioner, Billy Long, is reportedly ousted by the Trump Administration
-    after refusing to fully comply with a DHS request for confidential taxpayer information
-    on 40,000 names of suspected undocumented immigrants. This request was for addresses
-    as well as if they had claimed the Earned Income Tax Credit for low-income filers.
-    Long announced he will be nominated to be the US Ambassador to Iceland, making
-    him the sixth IRS commissioner to leave or be removed from the agency this year.
+  id: V6Rntzya
+
+- date: 2025-08-08
+  type: access
+  event: >-
+    The IRS begins sharing more sensitive data on taxpayers. Under the agreement with DHS, IRS had promised
+    to share information on taxpayers under active criminal investigation, but DHS then requested information
+    on 1.23 million individuals. The IRS was only able to return information on less than 5% of this request,
+    angering the Trump White House and reportedly leading to Long's dismissal.
+  source: https://edition.cnn.com/2025/08/08/politics/irs-dhs-share-taxpayer-data-undocumented-immigrants
+  project: immigration
+  notable: true
+  agency: IRS
+  id: 2TTIw2VB
+
+- date: 2025-08-08
+  type: disruption
+  event: >-
+    The IRS Commissioner, Billy Long, is reportedly ousted by the Trump Administration after refusing
+    to fully comply with a DHS request for confidential taxpayer information on 40,000 names of suspected
+    undocumented immigrants. This request was for addresses as well as if they had claimed the Earned
+    Income Tax Credit for low-income filers. Long announced he will be nominated to be the US Ambassador
+    to Iceland, making him the sixth IRS commissioner to leave or be removed from the agency this year.
     Treasury Secretary Scott Bessent will run the agency in an acting capacity.
-  :source: https://www.washingtonpost.com/business/2025/08/09/trump-administration-irs-data-dispute/
-  :notable: true
-  :project: immigration
-  :agency: IRS
-  :id: 2ckg0H3e
-- :date: 2025-08-08
-  :type: access
-  :event: The IRS begins sharing more sensitive data on taxpayers. Under the agreement
-    with DHS, IRS had promised to share information on taxpayers under active criminal
-    investigation, but DHS then requested information on 1.23 million individuals.
-    The IRS was only able to return information on less than 5% of this request, angering
-    the Trump White House and reportedly leading to Long's dismissal.
-  :source: https://edition.cnn.com/2025/08/08/politics/irs-dhs-share-taxpayer-data-undocumented-immigrants
-  :project: immigration
-  :notable: true
-  :agency: IRS
-  :id: 2TTIw2VB
-- :date: 2025-11-(15)~
-  :type: disruption
-  :event: Under the direction of Sam Corcos, the IRS has rolled out coding tests hosted
-    on the site HackerRack to its technical staff to assess their "technical proficiency."
-    This is likely the precursor to restructuring and layoffs within the agency's
-    8500-person IT division. When asked about the purpose of the tests in an all-hands
-    meeting, IRS leadership refused to answer.
-  :notable: true
-  :named:
+  source: https://www.washingtonpost.com/business/2025/08/09/trump-administration-irs-data-dispute/
+  notable: true
+  project: immigration
+  agency: IRS
+  id: 2ckg0H3e
+
+- date: 2025-11-(15)~
+  type: disruption
+  event: >-
+    Under the direction of Sam Corcos, the IRS has rolled out coding tests hosted on the site HackerRack
+    to its technical staff to assess their "technical proficiency." This is likely the precursor to restructuring
+    and layoffs within the agency's 8500-person IT division. When asked about the purpose of the tests
+    in an all-hands meeting, IRS leadership refused to answer.
+  notable: true
+  named:
   - Sam Corcos
-  :source: https://www.wired.com/story/what-is-doge-doing-now/
-  :project: personnel
-  :agency: IRS
-  :id: 2fkNjdsb
-- :date: 2025-12-08
-  :type: official
-  :event: Sahil Lavingia shares a revision to the IRS homepage's look and feel which
-    makes it look more like LinkedIn or similar. Design critics note that it has 3
-    different Sign In buttons, which Sahil states it will save the user time depending
-    on where their cursor is.
-  :named:
+  source: https://www.wired.com/story/what-is-doge-doing-now/
+  project: personnel
+  agency: IRS
+  id: 2fkNjdsb
+
+- date: 2025-12-08
+  type: official
+  event: >-
+    Sahil Lavingia shares a revision to the IRS homepage's look and feel which makes it look more like
+    LinkedIn or similar. Design critics note that it has 3 different Sign In buttons, which Sahil states
+    it will save the user time depending on where their cursor is.
+  named:
   - Sahil Lavingia
-  :agency: IRS
-  :project: modernization
-  :source: https://xcancel.com/shl/status/1998146563517100463
-  :id: 2YUAIakk
-- :date: 2025-12-10
-  :type: oversight
-  :event: Democrats on the House Ways and Means Committee send a letter to Scott Bessent
-    asking for more information about DOGE's possible use of AI to interface with
-    and modernize COBOL code running at the IRS. They receive no reply.
-  :notable: true
-  :source: https://gwenmoore.house.gov/uploadedfiles/final-_moore_delbene_letter_to_irs_on_ai_coding.pdf
-  :project:
+  agency: IRS
+  project: modernization
+  source: https://xcancel.com/shl/status/1998146563517100463
+  id: 2YUAIakk
+
+- date: 2025-12-10
+  type: oversight
+  event: >-
+    Democrats on the House Ways and Means Committee send a letter to Scott Bessent asking for more information
+    about DOGE's possible use of AI to interface with and modernize COBOL code running at the IRS. They
+    receive no reply.
+  notable: true
+  source: https://gwenmoore.house.gov/uploadedfiles/final-_moore_delbene_letter_to_irs_on_ai_coding.pdf
+  project:
   - modernization
-  :agency: IRS
-  :id: 3uqaeaYO
-- :date: 2025-12-16
-  :type: official
-  :event: Acting in his role as CIO for the Treasury, Sam Corcos approves spending
-    up to $1.5 million on up to 3000 licenses for ChatGPT at the agency, with more
-    than $500,000 already obligated.
-  :notable: true
-  :named:
+  agency: IRS
+  id: 3uqaeaYO
+
+- date: 2025-12-16
+  type: official
+  event: >-
+    Acting in his role as CIO for the Treasury, Sam Corcos approves spending up to $1.5 million on up
+    to 3000 licenses for ChatGPT at the agency, with more than $500,000 already obligated.
+  notable: true
+  named:
   - Sam Corcos
-  :project: modernization
-  :source: https://www.fastcompany.com/91461459/doge-treasury-chatgpt
-  :agency: IRS
-  :id: 4nN6gpXw
-- :date: 2026-01-20
-  :type: disruption
-  :event: Acting IRS CEO Frank Bisignano announces a major shake-up for leadership
-    at the IRS, which had already been struggling with vacancies after DOGE-driven
-    reductions last year. Bisignano has announced he will be co-leading tax compliance
-    at the agency. He also promoted DOGE team lead Tom Newnam to the role of Chief
-    Financial Officer, giving him oversight over procurement, facilities and privacy
-    at the agency.
-  :notable: true
-  :project: impunity
-  :named:
+  project: modernization
+  source: https://www.fastcompany.com/91461459/doge-treasury-chatgpt
+  agency: IRS
+  id: 4nN6gpXw
+
+- date: 2026-01-20
+  type: disruption
+  event: >-
+    Acting IRS CEO Frank Bisignano announces a major shake-up for leadership at the IRS, which had already
+    been struggling with vacancies after DOGE-driven reductions last year. Bisignano has announced he
+    will be co-leading tax compliance at the agency. He also promoted DOGE team lead Tom Newnam to the
+    role of Chief Financial Officer, giving him oversight over procurement, facilities and privacy at
+    the agency.
+  notable: true
+  project: impunity
+  named:
   - Frank Bisignano
   - Todd Newnam
-  :source: https://news.bloombergtax.com/daily-tax-report/irs-criminal-head-exits-trump-friendly-faces-in-new-org-chart
-  :agency: IRS
-  :id: 3JN9Fp76
-- :date: 2026-02-18
-  :type: disruption
-  :event: Speaking at an industry conference, the CIO for the IRS reported that the
-    agency has lost nearly 40% of its IT staff and nearly 80% of its IT executives
-    as a result of DOGE's various actions to target staffing in the federal government.
-  :notable: true
-  :project: personnel
-  :source: https://federalnewsnetwork.com/workforce/2026/02/irs-cio-says-agency-lost-40-of-tech-workers-last-year/
-  :agency: IRS
-  :id: 6dNHTMV8
-- :date: 2026-02-19
-  :type: official
-  :event: Speaking at an industry event, Todd Newnam talked about how the IRS is going
-    to operate with a 25% smaller workforce. This includes eliminating some offices
-    and allowing for more remote work, as well as the promise that more of the agency's
-    operations will be self-service.
-  :project:
+  source: >-
+    https://news.bloombergtax.com/daily-tax-report/irs-criminal-head-exits-trump-friendly-faces-in-new-org-chart
+  agency: IRS
+  id: 3JN9Fp76
+
+- date: 2026-02-18
+  type: disruption
+  event: >-
+    Speaking at an industry conference, the CIO for the IRS reported that the agency has lost nearly 40%
+    of its IT staff and nearly 80% of its IT executives as a result of DOGE's various actions to target
+    staffing in the federal government.
+  notable: true
+  project: personnel
+  source: >-
+    https://federalnewsnetwork.com/workforce/2026/02/irs-cio-says-agency-lost-40-of-tech-workers-last-year/
+  agency: IRS
+  id: 6dNHTMV8
+
+- date: 2026-02-19
+  type: official
+  event: >-
+    Speaking at an industry event, Todd Newnam talked about how the IRS is going to operate with a 25%
+    smaller workforce. This includes eliminating some offices and allowing for more remote work, as well
+    as the promise that more of the agency's operations will be self-service.
+  project:
   - personnel
   - spending
-  :named:
+  named:
   - Todd Newnam
-  :source: https://federalnewsnetwork.com/workforce/2026/02/irs-looks-to-shrink-office-space-after-losing-a-quarter-of-its-workforce-last-year/
-  :agency: IRS
-  :id: 3iC9nV7d
-- :date: 2026-05-18
-  :type: disruption
-  :event: In response to the Trump organization suing the IRS about a leak of Trump's
-    tax returns, Trump's former personal lawyer signs a settlement in his role as
-    the Acting Attorney General to create a new "anti-weaponization fund" that consists
-    of 5 members to be appointed by him and which will distribute funds to political
-    allies who claim they have been targeted by the government. The settlement is
-    also signed by Frank Bisignano in his role as Acting Chief Executive Officer of
-    the IRS.
-  :source: https://www.documentcloud.org/documents/28132728-sdfl-settlement-signed/
-  :named:
+  source: >-
+    https://federalnewsnetwork.com/workforce/2026/02/irs-looks-to-shrink-office-space-after-losing-a-quarter-of-its-workforce-last-year/
+  agency: IRS
+  id: 3iC9nV7d
+
+- date: 2026-05-18
+  type: disruption
+  event: >-
+    In response to the Trump organization suing the IRS about a leak of Trump's tax returns, Trump's former
+    personal lawyer signs a settlement in his role as the Acting Attorney General to create a new "anti-weaponization
+    fund" that consists of 5 members to be appointed by him and which will distribute funds to political
+    allies who claim they have been targeted by the government. The settlement is also signed by Frank
+    Bisignano in his role as Acting Chief Executive Officer of the IRS.
+  source: https://www.documentcloud.org/documents/28132728-sdfl-settlement-signed/
+  named:
   - Frank Bisignano
-  :agency: IRS
-  :project: impunity
-  :id: 3DuF184G
+  agency: IRS
+  project: impunity
+  id: 3DuF184G

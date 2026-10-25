@@ -1,309 +1,331 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Edward Coristine
-:sort_name: Coristine
-:slug: edward-coristine
-:age: 19
-:skill: coder
-:linkedin: https://www.linkedin.com/in/bigballs/
-:tech_links:
+name: Edward Coristine
+sort_name: Coristine
+slug: edward-coristine
+age: 19
+skill: coder
+linkedin: https://www.linkedin.com/in/bigballs/
+tech_links:
+
 - Neuralink
-:blurb: |-
+blurb: |-
   Perhaps the most famous of the DOGE wreckers, Edward "Big Balls" Coristine achieved early attention for joining DOGE at the young age of 19. Previously, he had been a camp counselor and a summer intern at Neuralink, who grew up in wealth and joined up with hacking groups online, before eagerly jumping on to the DOGE bandwagon.
   However, he has also accrued a large number of hits on his wrecking spree across the federal government, starting at the GSA on Day One and then detailing to OPM and a large number of other agencies within a short amount of time; for instance, he appears to have been DOGE's vanguard within the Department of Homeland Security. Most recently, he has been linked to a team developing an online application for a $5 Million "Gold Card" Visa that has been promoted by Trump as a new revenue stream for the US.
-:affiliations:
-- :entity_id: neuralink
-  :role: intern
-  :timeframe: before
-  :connection_truth: self-reported
-  :start_date: 2024-06-XX
-  :start_date_truth: self-reported
-  :end_date: 2024-09-XX
-  :end_date_truth: self-reported
-  :source: https://www.linkedin.com/in/bigballs/
-  :table_note: Internship, Core Software
-  :id: 5xkccZ3Z
-:positions:
-- :id: detail-gsa-doge-coristine
-  :type: detailed
-  :category: wrecker
-  :agency: DOGE
-  :from: GSA
-  :from_truth: inferred
-  :sort_date: 2025-01-21
-  :start_date: 2025-01-20
-  :start_date_truth: verified
-  :end_date: 2025-06-09
-  :end_date_truth: verified
-  :end_type: unknown
-  :project:
+affiliations:
+
+- entity_id: neuralink
+  role: intern
+  timeframe: before
+  connection_truth: self-reported
+  start_date: 2024-06-XX
+  start_date_truth: self-reported
+  end_date: 2024-09-XX
+  end_date_truth: self-reported
+  source: https://www.linkedin.com/in/bigballs/
+  table_note: Internship, Core Software
+  id: 5xkccZ3Z
+positions:
+
+- id: detail-gsa-doge-coristine
+  type: detailed
+  category: wrecker
+  agency: DOGE
+  from: GSA
+  from_truth: inferred
+  sort_date: 2025-01-21
+  start_date: 2025-01-20
+  start_date_truth: verified
+  end_date: 2025-06-09
+  end_date_truth: verified
+  end_type: unknown
+  project:
   - modernization
   - personnel
   - fraud
-  :source:
+  source:
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-- :id: gsa-edward-coristine
-  :agency: GSA
-  :type: appointed
-  :category: wrecker
-  :salary: "$0"
-  :start_date: 2025-01-20
-  :start_date_truth: verified
-  :end_date: 2025-05-23
-  :end_date_truth: reported
-  :end_type: replaced
-  :table_note: Start date and agency inferred from later reporting
-  :comment: Several documents have Coristine detailing from GSA, so assuming home
-    agency. Also, not in FOIA release from OPM
-  :nte_date: 2026-01-19
-  :nte_date_truth: verified
-  :description: Exc Appt NTE
-  :appt_type_code: 48
-  :appt_type: Other
-  :excepted: true
-  :sge: true
-  :pd_code: X0A1614
-  :title: Senior Advisor
-  :title_type: advisor
-  :pay_grade: EF-00
-  :series: '0301'
-  :supervisory: false
-  :office: Immediate Office of the Administrator
-  :same_as: gsa-edward-coristine
-  :replaced_by: gsa-edward-coristine-fulltime
-  :source:
-  - https://www.wired.com/story/elon-musk-lackeys-office-personnel-management-opm-neuralink-x-boring-stalin/
+
+- id: gsa-edward-coristine
+  agency: GSA
+  type: appointed
+  category: wrecker
+  salary: "$0"
+  start_date: 2025-01-20
+  start_date_truth: verified
+  end_date: 2025-05-23
+  end_date_truth: reported
+  end_type: replaced
+  table_note: Start date and agency inferred from later reporting
+  comment: >-
+    Several documents have Coristine detailing from GSA, so assuming home agency. Also, not in FOIA release
+    from OPM
+  nte_date: 2026-01-19
+  nte_date_truth: verified
+  description: Exc Appt NTE
+  appt_type_code: 48
+  appt_type: Other
+  excepted: true
+  sge: true
+  pd_code: X0A1614
+  title: Senior Advisor
+  title_type: advisor
+  pay_grade: EF-00
+  series: '0301'
+  supervisory: false
+  office: Immediate Office of the Administrator
+  same_as: gsa-edward-coristine
+  replaced_by: gsa-edward-coristine-fulltime
+  source:
+  - >-
+    https://www.wired.com/story/elon-musk-lackeys-office-personnel-management-opm-neuralink-x-boring-stalin/
   - https://www.documentcloud.org/documents/26028768-onboard-opm-employee-4/
-  :name: Edward Coristine
-- :id: internal-dhs-tsa-coristine
-  :type: internal
-  :category: wrecker
-  :from: DHS
-  :from_truth: inferred
-  :sort_date: 2025-02-14
-  :agency: TSA
-  :project: immigration
-  :table_note: NYT links him to TSA, but no other info public
-  :comment: No details, but in NYT roundup
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: internal-dhs-uscis-coristine
-  :type: internal
-  :category: wrecker
-  :from: DHS
-  :from_truth: inferred
-  :agency: USCIS
-  :project: immigration
-  :sort_date: 2025-02-14
-  :comment: NYT links him to USCIS, but no other info public
-  :source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
-- :id: gsa-opm-coristine
-  :type: detailed
-  :category: wrecker
-  :start_date: 2025-01-24
-  :agency: OPM
-  :from: GSA
-  :from_truth: inferred
-  :project: personnel
-  :table_note: no MOU to confirm and SF-50 is for GSA, but I think he was detailed
-    from GSA to OPM on this date based on appointment affadavit
-  :source:
+  name: Edward Coristine
+
+- id: internal-dhs-tsa-coristine
+  type: internal
+  category: wrecker
+  from: DHS
+  from_truth: inferred
+  sort_date: 2025-02-14
+  agency: TSA
+  project: immigration
+  table_note: NYT links him to TSA, but no other info public
+  comment: No details, but in NYT roundup
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: internal-dhs-uscis-coristine
+  type: internal
+  category: wrecker
+  from: DHS
+  from_truth: inferred
+  agency: USCIS
+  project: immigration
+  sort_date: 2025-02-14
+  comment: NYT links him to USCIS, but no other info public
+  source: https://www.nytimes.com/interactive/2025/02/27/us/politics/doge-staff-list.html
+
+- id: gsa-opm-coristine
+  type: detailed
+  category: wrecker
+  start_date: 2025-01-24
+  agency: OPM
+  from: GSA
+  from_truth: inferred
+  project: personnel
+  table_note: >-
+    no MOU to confirm and SF-50 is for GSA, but I think he was detailed from GSA to OPM on this date based
+    on appointment affadavit
+  source:
   - https://www.documentcloud.org/documents/26028768-onboard-opm-employee-4/
-  :start_date_truth: verified
-  :nte_date: 2025-07-23
-  :nte_date_truth: verified
-  :end_date: 2025-05-14
-  :end_date_truth: verified
-  :end_type: detail_ended
-  :description: Exc Appt NTE
-  :appt_type_code: 48
-  :appt_type: Other
-  :excepted: true
-  :sge: true
-  :pd_code: X0A1614
-  :title: Senior Advisor
-  :title_type: advisor
-  :pay_grade: EF-00
-  :salary: "$0"
-  :series: '0301'
-  :supervisory: false
-  :office: Immediate Office of the Administrator
-  :comment: This is GSA appointment
-  :same_as: gsa-opm-coristine
-  :name: Edward Coristine
-  :alias: OPM-04
-- :id: detail-gsa-usaid-coristine
-  :type: detailed
-  :category: wrecker
-  :agency: USAID
-  :from: GSA
-  :from_truth: guessed
-  :project:
+  start_date_truth: verified
+  nte_date: 2025-07-23
+  nte_date_truth: verified
+  end_date: 2025-05-14
+  end_date_truth: verified
+  end_type: detail_ended
+  description: Exc Appt NTE
+  appt_type_code: 48
+  appt_type: Other
+  excepted: true
+  sge: true
+  pd_code: X0A1614
+  title: Senior Advisor
+  title_type: advisor
+  pay_grade: EF-00
+  salary: "$0"
+  series: '0301'
+  supervisory: false
+  office: Immediate Office of the Administrator
+  comment: This is GSA appointment
+  same_as: gsa-opm-coristine
+  name: Edward Coristine
+  alias: OPM-04
+
+- id: detail-gsa-usaid-coristine
+  type: detailed
+  category: wrecker
+  agency: USAID
+  from: GSA
+  from_truth: guessed
+  project:
   - elimination
-  :start_date: 2025-01-27
-  :start_date_truth: reported
-  :title: Senior Advisor
-  :title_type: advisor
-  :office: Office of the CIO
-  :table_note: Date at USAID reported by NYT
-  :source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
-- :id: detail-sba-coristine
-  :agency: SBA
-  :category: wrecker
-  :from: GSA
-  :from_truth: guessed
-  :project:
+  start_date: 2025-01-27
+  start_date_truth: reported
+  title: Senior Advisor
+  title_type: advisor
+  office: Office of the CIO
+  table_note: Date at USAID reported by NYT
+  source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
+
+- id: detail-sba-coristine
+  agency: SBA
+  category: wrecker
+  from: GSA
+  from_truth: guessed
+  project:
   - spending
   - fraud
-  :title: DOGE Advisor
-  :title_type: advisor
-  :type: detailed
-  :start_date: 2025-02-03
-  :start_date_truth: reported
-  :table_note: guessing detail date from system access request
-  :source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
-- :id: detail-gsa-dhs-coristine
-  :type: detailed
-  :category: wrecker
-  :from: GSA
-  :from_truth: guessed
-  :project:
+  title: DOGE Advisor
+  title_type: advisor
+  type: detailed
+  start_date: 2025-02-03
+  start_date_truth: reported
+  table_note: guessing detail date from system access request
+  source: https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
+
+- id: detail-gsa-dhs-coristine
+  type: detailed
+  category: wrecker
+  from: GSA
+  from_truth: guessed
+  project:
   - immigration
   - spending
-  :agency: DHS
-  :title: Senior Advisor
-  :title_type: advisor
-  :sort_date: 2025-02-04
-  :start_date: 2025-02-(04)~
-  :start_date_truth: reported
-  :table_note: Date unverified, but assuming predates sighting at FEMA
-  :comment: Reported by the Post, I'm going to assume this predated the FEMA access
-  :source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
-- :id: internal-hhs-fema-edward-coristine
-  :type: internal
-  :category: wrecker
-  :from: DHS
-  :from_truth: inferred
-  :project:
+  agency: DHS
+  title: Senior Advisor
+  title_type: advisor
+  sort_date: 2025-02-04
+  start_date: 2025-02-(04)~
+  start_date_truth: reported
+  table_note: Date unverified, but assuming predates sighting at FEMA
+  comment: Reported by the Post, I'm going to assume this predated the FEMA access
+  source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
+
+- id: internal-hhs-fema-edward-coristine
+  type: internal
+  category: wrecker
+  from: DHS
+  from_truth: inferred
+  project:
   - spending
-  :agency: FEMA
-  :start_date: 2025-02-05
-  :start_date_truth: reported
-  :source: https://www.washingtonpost.com/climate-environment/2025/02/07/musk-trump-fema-doge/
-- :id: detail-gsa-state-coristine
-  :type: detailed
-  :category: wrecker
-  :agency: State
-  :from: GSA
-  :from_truth: reported
-  :start_date: 2025-02-10
-  :start_date_truth: reported
-  :project: spending
-  :title: Senior Advisor
-  :title_type: advisor
-  :office: Bureau of Diplomatic Technology
-  :source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
-- :id: internal-dhs-cisa-coristine
-  :type: internal
-  :category: wrecker
-  :from: DHS
-  :from_truth: inferred
-  :project:
+  agency: FEMA
+  start_date: 2025-02-05
+  start_date_truth: reported
+  source: https://www.washingtonpost.com/climate-environment/2025/02/07/musk-trump-fema-doge/
+
+- id: detail-gsa-state-coristine
+  type: detailed
+  category: wrecker
+  agency: State
+  from: GSA
+  from_truth: reported
+  start_date: 2025-02-10
+  start_date_truth: reported
+  project: spending
+  title: Senior Advisor
+  title_type: advisor
+  office: Bureau of Diplomatic Technology
+  source: https://www.washingtonpost.com/business/2025/02/10/musk-doge-state-department-surrogate/
+
+- id: internal-dhs-cisa-coristine
+  type: internal
+  category: wrecker
+  from: DHS
+  from_truth: inferred
+  project:
   - spending
   - modernization
-  :agency: CISA
-  :start_date: 2025-02-19
-  :start_date_truth: reported
-  :title: Senior Advisor
-  :title_type: advisor
-  :source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
-  :comment: Likely assigned from DHS to here
-- :id: detail-doge-education-coristine
-  :type: detailed
-  :category: wrecker
-  :agency: Education
-  :from: GSA
-  :from_truth: verified
-  :project:
+  agency: CISA
+  start_date: 2025-02-19
+  start_date_truth: reported
+  title: Senior Advisor
+  title_type: advisor
+  source: https://www.wired.com/story/doge-cisa-coristine-cybersecurity/
+  comment: Likely assigned from DHS to here
+
+- id: detail-doge-education-coristine
+  type: detailed
+  category: wrecker
+  agency: Education
+  from: GSA
+  from_truth: verified
+  project:
   - spending
   - deregulation
-  :start_date: 2025-02-20
-  :start_date_truth: verified
-  :source: https://www.documentcloud.org/documents/26028798-doge-staff-education-20250407/
-- :id: detail-gsa-hhs-edward-coristine
-  :type: detailed
-  :category: wrecker
-  :agency: HHS
-  :project:
+  start_date: 2025-02-20
+  start_date_truth: verified
+  source: https://www.documentcloud.org/documents/26028798-doge-staff-education-20250407/
+
+- id: detail-gsa-hhs-edward-coristine
+  type: detailed
+  category: wrecker
+  agency: HHS
+  project:
   - spending
   - fraud
-  :from: GSA
-  :from_truth: guessed
-  :start_date: 2025-03-05
-  :start_date_truth: verified
-  :title: Executive Engineer
-  :title_type: advisor
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :comment: No document provided, date reported in court filing
-  :table_note: Date verified in court document, assuming detail from GSA
-- :id: internal-hhs-cms-coristine
-  :type: internal
-  :category: wrecker
-  :from_truth: inferred
-  :agency: CMS
-  :project:
+  from: GSA
+  from_truth: guessed
+  start_date: 2025-03-05
+  start_date_truth: verified
+  title: Executive Engineer
+  title_type: advisor
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  comment: No document provided, date reported in court filing
+  table_note: Date verified in court document, assuming detail from GSA
+
+- id: internal-hhs-cms-coristine
+  type: internal
+  category: wrecker
+  from_truth: inferred
+  agency: CMS
+  project:
   - spending
   - fraud
-  :from: HHS
-  :start_date: 2025-03-05
-  :start_date_truth: verified
-  :table_note: Granted access to CMS systems on same day as detail to HHS
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :comment: Granted access to CALM system on the same day as his detail to HHS
-- :id: gsa-edward-coristine-fulltime
-  :agency: GSA
-  :category: wrecker
-  :type: converted
-  :title: Senior Advisor
-  :pay_grade: GS-15
-  :project:
+  from: HHS
+  start_date: 2025-03-05
+  start_date_truth: verified
+  table_note: Granted access to CMS systems on same day as detail to HHS
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  comment: Granted access to CALM system on the same day as his detail to HHS
+
+- id: gsa-edward-coristine-fulltime
+  agency: GSA
+  category: wrecker
+  type: converted
+  title: Senior Advisor
+  pay_grade: GS-15
+  project:
   - spending
   - fraud
-  :table_note: Salary range for GS-15 in DC
-  :salary: "$167,603 - $195,200"
-  :start_date: 2025-05-31
-  :start_date_truth: reported
-  :end_date: 2025-06-23
-  :end_date_truth: reported
-  :end_type: resigned
-  :source: https://www.wired.com/story/big-balls-coristine-doge-resigned-us-government/
-- :id: ssa-coristine
-  :agency: SSA
-  :category: wrecker
-  :type: appointed
-  :sge: true
-  :project:
+  table_note: Salary range for GS-15 in DC
+  salary: "$167,603 - $195,200"
+  start_date: 2025-05-31
+  start_date_truth: reported
+  end_date: 2025-06-23
+  end_date_truth: reported
+  end_type: resigned
+  source: https://www.wired.com/story/big-balls-coristine-doge-resigned-us-government/
+
+- id: ssa-coristine
+  agency: SSA
+  category: wrecker
+  type: appointed
+  sge: true
+  project:
   - fraud
   - immigration
   - modernization
-  :sort_date: 2025-06-23
-  :start_date: 2025-06-(23)~
-  :start_date_truth: verified
-  :fuzz: Exact start date not given by SSA spokesperson
-  :source: https://www.wired.com/story/big-balls-social-security-administration/
-- :id: nds-coristine
-  :agency: NDS
-  :type: appointed
-  :category: builder
-  :title: Director of Engineering
-  :title_type: director
-  :project: modernization
-  :supervisory: true
-  :start_date: 2025-08-(29)?
-  :start_date_truth: guessed
-  :sort_date: 2025-08-29
-  :fuzz: Self-identified as NDS in November, but likely started earlier. Gives title
-    in NDS blog post.
-  :source:
+  sort_date: 2025-06-23
+  start_date: 2025-06-(23)~
+  start_date_truth: verified
+  fuzz: Exact start date not given by SSA spokesperson
+  source: https://www.wired.com/story/big-balls-social-security-administration/
+
+- id: nds-coristine
+  agency: NDS
+  type: appointed
+  category: builder
+  title: Director of Engineering
+  title_type: director
+  project: modernization
+  supervisory: true
+  start_date: 2025-08-(29)?
+  start_date_truth: guessed
+  sort_date: 2025-08-29
+  fuzz: Self-identified as NDS in November, but likely started earlier. Gives title in NDS blog post.
+  source:
   - https://www.wired.com/story/what-is-doge-doing-now/
   - https://www.wired.com/story/doge-operatives-joining-national-design-studio/
   - https://ndstudio.gov/posts/accessibility-matters

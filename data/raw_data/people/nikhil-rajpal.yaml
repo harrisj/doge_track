@@ -1,100 +1,107 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Nikhil Rajpal
-:sort_name: Rajpal
-:slug: nikhil-rajpal
-:age: 30
-:skill: coder
-:blurb: An arrival to DOGE from Twitter, Nikhil Rajpal was a visible member in early
-  Wrecker raids (including a foray into NOAA's headquarter just outside of DC). Since
-  mid-February, he has been exclusively based within the DOGE team at the Social Security
-  Administration, which might explain the recent radio silence about his activities.
-:govt_exit_date: 2025-07-02
-:govt_exit_type: resigned
-:govt_exit_truth: guessed
-:positions:
-- :id: opm-nikhil-rajpal
-  :type: appointed
-  :category: wrecker
-  :agency: OPM
-  :start_date: 2025-01-24
-  :start_date_truth: verified
-  :end_date: 2025-07-02
-  :end_date_truth: verified
-  :end_type: resigned
-  :description: Exc Appt NTE
-  :appt_type_code: 48
-  :appt_type: Other
-  :excepted: true
-  :pd_code: 6A39738
-  :title: Expert
-  :title_type: advisor
-  :pay_grade: ED-00
-  :salary: "$0"
-  :series: '0301'
-  :supervisory: false
-  :office: Office of the Director
-  :source:
+name: Nikhil Rajpal
+sort_name: Rajpal
+slug: nikhil-rajpal
+age: 30
+skill: coder
+blurb: >-
+  An arrival to DOGE from Twitter, Nikhil Rajpal was a visible member in early Wrecker raids (including
+  a foray into NOAA's headquarter just outside of DC). Since mid-February, he has been exclusively based
+  within the DOGE team at the Social Security Administration, which might explain the recent radio silence
+  about his activities.
+govt_exit_date: 2025-07-02
+govt_exit_type: resigned
+govt_exit_truth: guessed
+positions:
+
+- id: opm-nikhil-rajpal
+  type: appointed
+  category: wrecker
+  agency: OPM
+  start_date: 2025-01-24
+  start_date_truth: verified
+  end_date: 2025-07-02
+  end_date_truth: verified
+  end_type: resigned
+  description: Exc Appt NTE
+  appt_type_code: 48
+  appt_type: Other
+  excepted: true
+  pd_code: 6A39738
+  title: Expert
+  title_type: advisor
+  pay_grade: ED-00
+  salary: "$0"
+  series: '0301'
+  supervisory: false
+  office: Office of the Director
+  source:
   - https://www.documentcloud.org/documents/26028794-onboard-opm-employee-6/
   - https://www.documentcloud.org/documents/26028780-opm-new-hires/
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
-  :name: Nikhil Rajpal
-  :alias: OPM-06
-- :id: detail-opm-doge-rajpal
-  :type: detailed
-  :category: wrecker
-  :agency: DOGE
-  :from: OPM
-  :from_truth: inferred
-  :start_date: 2025-01-27
-  :start_date_truth: verified
-  :end_date: 2025-06-09
-  :end_date_truth: verified
-  :end_type: detail_ended
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
-- :id: detail-opm-noaa-rajpal
-  :type: detailed
-  :category: wrecker
-  :from: OPM
-  :project:
+  name: Nikhil Rajpal
+  alias: OPM-06
+
+- id: detail-opm-doge-rajpal
+  type: detailed
+  category: wrecker
+  agency: DOGE
+  from: OPM
+  from_truth: inferred
+  start_date: 2025-01-27
+  start_date_truth: verified
+  end_date: 2025-06-09
+  end_date_truth: verified
+  end_type: detail_ended
+  source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+
+- id: detail-opm-noaa-rajpal
+  type: detailed
+  category: wrecker
+  from: OPM
+  project:
   - spending
   - personnel
-  :from_truth: guessed
-  :agency: NOAA
-  :start_date: 2025-02-04
-  :start_date_truth: reported
-  :source: https://www.axios.com/2025/02/04/trump-nominates-noaa-head-neil-jacobs
-- :id: detail-opm-cfpb-nikhil-rajpal
-  :type: detailed
-  :category: wrecker
-  :agency: CFPB
-  :from: OPM
-  :project:
+  from_truth: guessed
+  agency: NOAA
+  start_date: 2025-02-04
+  start_date_truth: reported
+  source: https://www.axios.com/2025/02/04/trump-nominates-noaa-head-neil-jacobs
+
+- id: detail-opm-cfpb-nikhil-rajpal
+  type: detailed
+  category: wrecker
+  agency: CFPB
+  from: OPM
+  project:
   - elimination
-  :from_truth: verified
-  :start_date: 2025-02-07
-  :start_date_truth: verified
-  :end_date: 2025-03-21
-  :end_date_truth: verified
-  :end_type: detail_ended
-  :title_type: advisor
-  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
-  :comment: Details from court filing
-- :id: detail-opm-ssa-8
-  :type: detailed
-  :category: wrecker
-  :from: OPM
-  :from_truth: verified
-  :agency: SSA
-  :signed_date: 2025-02-26
-  :start_date: 2025-02-26
-  :start_date_truth: verified
-  :nte_date: 2026-02-26
-  :nte_date_truth: verified
-  :reimbursed: false
-  :source:
+  from_truth: verified
+  start_date: 2025-02-07
+  start_date_truth: verified
+  end_date: 2025-03-21
+  end_date_truth: verified
+  end_type: detail_ended
+  title_type: advisor
+  source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+  comment: Details from court filing
+
+- id: detail-opm-ssa-8
+  type: detailed
+  category: wrecker
+  from: OPM
+  from_truth: verified
+  agency: SSA
+  signed_date: 2025-02-26
+  start_date: 2025-02-26
+  start_date_truth: verified
+  nte_date: 2026-02-26
+  nte_date_truth: verified
+  reimbursed: false
+  source:
   - https://www.documentcloud.org/documents/26028818-mou-20250226-opm-ssa-employee-8/
   - https://www.documentcloud.org/documents/26028783-onboard-ssa-employee-8/
-  :mou: https://www.documentcloud.org/documents/26028818-mou-20250226-opm-ssa-employee-8/
-  :name: Nikhil Rajpal
-  :alias: SSA-08
+  mou: https://www.documentcloud.org/documents/26028818-mou-20250226-opm-ssa-employee-8/
+  name: Nikhil Rajpal
+  alias: SSA-08

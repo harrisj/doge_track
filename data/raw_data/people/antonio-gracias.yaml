@@ -1,72 +1,83 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Antonio Gracias
-:age: 54
-:sort_name: Gracias
-:slug: antonio-gracias
-:skill: executive
-:blurb: Antonio Gracias has had a longtime connection with Elon Musk as an early investor
-  in both Tesla and SpaceX, and he has also sat on the boards of both companies. He
-  also was involved with Musk's purchase of Twitter. He has been stationed as part
-  of the DOGE team within Social Security Administration, since late February. Over
-  the last few months, he has regularly appeared on friendly media outlets to describe
+name: Antonio Gracias
+age: 54
+sort_name: Gracias
+slug: antonio-gracias
+skill: executive
+blurb: >-
+  Antonio Gracias has had a longtime connection with Elon Musk as an early investor in both Tesla and
+  SpaceX, and he has also sat on the boards of both companies. He also was involved with Musk's purchase
+  of Twitter. He has been stationed as part of the DOGE team within Social Security Administration, since
+  late February. Over the last few months, he has regularly appeared on friendly media outlets to describe
   alleged instances of fraud within SSA.
-:govt_exit_date: 2025-07-01
-:govt_exit_truth: verified
-:govt_exit_type: resigned
-:tech_links:
+govt_exit_date: 2025-07-01
+govt_exit_truth: verified
+govt_exit_type: resigned
+tech_links:
+
 - Tesla
+
 - SpaceX
+
 - Twitter
+
 - Valor
-:affiliations:
-- :entity_id: tesla
-  :role: investor
-  :connection_truth: reported
-  :timeframe: before
-  :source: https://projects.propublica.org/elon-musk-doge-tracker/
-  :id: 2Jh7BOKi
-- :entity_id: spacex
-  :role: investor
-  :connection_truth: reported
-  :timeframe: before
-  :source: https://projects.propublica.org/elon-musk-doge-tracker/
-  :id: 35iSqheL
-- :entity_id: twitter
-  :role: investor
-  :connection_truth: reported
-  :timeframe: before
-  :source: https://projects.propublica.org/elon-musk-doge-tracker/
-  :id: 7kwPnYJC
-- :entity_id: valor
-  :role: founder
-  :connection_truth: reported
-  :timeframe: before
-  :immediate: true
-  :returned: true
-  :source: https://projects.propublica.org/elon-musk-doge-tracker/
-  :id: 1vzREYCJ
-:positions:
-- :id: ssa-antonio-gracias
-  :type: appointed
-  :category: wrecker
-  :agency: SSA
-  :pd_code: KNX0370
-  :start_date: 2025-02-23
-  :start_date_truth: verified
-  :nte_date: 2026-02-22
-  :nte_date_truth: verified
-  :end_date: 2025-07-01
-  :end_date_truth: verified
-  :end_type: resigned
-  :title: Expert
-  :pay_grade: ED-00
-  :salary: "$0"
-  :series: '0301'
-  :office: Office of the Chief Information Officer
-  :qualifications: Founder, CEO and Chief Investment Officer of [REDACTED]. Over 25
-    years of experience in private equity investing.
-  :comment: SF-50 is a correction
-  :source:
+affiliations:
+
+- entity_id: tesla
+  role: investor
+  connection_truth: reported
+  timeframe: before
+  source: https://projects.propublica.org/elon-musk-doge-tracker/
+  id: 2Jh7BOKi
+
+- entity_id: spacex
+  role: investor
+  connection_truth: reported
+  timeframe: before
+  source: https://projects.propublica.org/elon-musk-doge-tracker/
+  id: 35iSqheL
+
+- entity_id: twitter
+  role: investor
+  connection_truth: reported
+  timeframe: before
+  source: https://projects.propublica.org/elon-musk-doge-tracker/
+  id: 7kwPnYJC
+
+- entity_id: valor
+  role: founder
+  connection_truth: reported
+  timeframe: before
+  immediate: true
+  returned: true
+  source: https://projects.propublica.org/elon-musk-doge-tracker/
+  id: 1vzREYCJ
+positions:
+
+- id: ssa-antonio-gracias
+  type: appointed
+  category: wrecker
+  agency: SSA
+  pd_code: KNX0370
+  start_date: 2025-02-23
+  start_date_truth: verified
+  nte_date: 2026-02-22
+  nte_date_truth: verified
+  end_date: 2025-07-01
+  end_date_truth: verified
+  end_type: resigned
+  title: Expert
+  pay_grade: ED-00
+  salary: "$0"
+  series: '0301'
+  office: Office of the Chief Information Officer
+  qualifications: >-
+    Founder, CEO and Chief Investment Officer of [REDACTED]. Over 25 years of experience in private equity
+    investing.
+  comment: SF-50 is a correction
+  source:
   - https://www.documentcloud.org/documents/26028768-onboard-opm-employee-4/
-  :name: Antonio Gracias
-  :alias: SSA-04
+  name: Antonio Gracias
+  alias: SSA-04

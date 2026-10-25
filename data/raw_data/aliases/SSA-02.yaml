@@ -1,52 +1,60 @@
+# yaml-language-server: $schema=../schemas/aliases-file.json
 ---
-:id: SSA-02
-:agency: SSA
-:name: Scott Coulter
-:name_truth: inferred
-:evidence:
+id: SSA-02
+agency: SSA
+name: Scott Coulter
+name_truth: inferred
+evidence:
+
 - Employees is detailed from NASA to SSA on 2025-02-18
+
 - Scott Coulter is identified at NASA on 2025-03-14
+
 - Scott Coulter is identified at SSA on 2025-03-13
+
 - Signed SF-61 as CIO of SSA on 2025-03-24
+
 - Scott Coulter was named the CIO of SSA on 2025-03-24
-:positions:
-- :id: detail-nasa-ssa-employee-2
-  :type: detailed
-  :category: wrecker
-  :from: NASA
-  :from_truth: verified
-  :agency: SSA
-  :start_date: 2025-02-18
-  :start_date_truth: verified
-  :nte_date: 2026-02-18
-  :nte_date_truth: verified
-  :end_date: 2025-03-23
-  :end_date_truth: verified
-  :end_type: replaced
-  :replaced_by: ssa-employee-2-cio
-  :signed_date: 2025-03-06
-  :reimbursed: true
-  :comment: Followed by Employee 2 being appointed the CIO
-  :reimbursement_amount: hourly, maximum of $120,579
-  :source:
+positions:
+
+- id: detail-nasa-ssa-employee-2
+  type: detailed
+  category: wrecker
+  from: NASA
+  from_truth: verified
+  agency: SSA
+  start_date: 2025-02-18
+  start_date_truth: verified
+  nte_date: 2026-02-18
+  nte_date_truth: verified
+  end_date: 2025-03-23
+  end_date_truth: verified
+  end_type: replaced
+  replaced_by: ssa-employee-2-cio
+  signed_date: 2025-03-06
+  reimbursed: true
+  comment: Followed by Employee 2 being appointed the CIO
+  reimbursement_amount: hourly, maximum of $120,579
+  source:
   - https://www.documentcloud.org/documents/26028810-mou-20250306-nasa-ssa-employee-2/
   - https://www.documentcloud.org/documents/26028775-onboard-ssa-employee-2/
-  :mou: https://www.documentcloud.org/documents/26028810-mou-20250306-nasa-ssa-employee-2/
-- :id: ssa-employee-2-cio
-  :type: appointed
-  :category: enabler
-  :agency: SSA
-  :title: Chief Information Officer
-  :title_type: cio
-  :start_date: 2025-03-24
-  :start_date_truth: verified
-  :end_date: 2025-06-(05)~
-  :end_date_truth: reported
-  :end_type: removed
-  :table_note: Was listed as CIO on May 30, but Aram took over in June. WSJ reports
-    on removal of SSA employee back to NASA in June. Aram/Russo listed as co-CIOs
-    on 6/6
-  :supervisory: true
-  :source:
+  mou: https://www.documentcloud.org/documents/26028810-mou-20250306-nasa-ssa-employee-2/
+
+- id: ssa-employee-2-cio
+  type: appointed
+  category: enabler
+  agency: SSA
+  title: Chief Information Officer
+  title_type: cio
+  start_date: 2025-03-24
+  start_date_truth: verified
+  end_date: 2025-06-(05)~
+  end_date_truth: reported
+  end_type: removed
+  table_note: >-
+    Was listed as CIO on May 30, but Aram took over in June. WSJ reports on removal of SSA employee back
+    to NASA in June. Aram/Russo listed as co-CIOs on 6/6
+  supervisory: true
+  source:
   - https://www.documentcloud.org/documents/26028775-onboard-ssa-employee-2/
   - https://www.wsj.com/politics/policy/doge-elon-musk-left-control-92770407

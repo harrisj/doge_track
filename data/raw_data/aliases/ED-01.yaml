@@ -1,31 +1,41 @@
+# yaml-language-server: $schema=../schemas/aliases-file.json
 ---
-:id: ED-01
-:agency: Education
-:name: Akash Bobba
-:name_truth: inferred
-:source:
+id: ED-01
+agency: Education
+name: Akash Bobba
+name_truth: inferred
+source:
+
 - https://www.documentcloud.org/documents/26028777-mou-20250212-opm-education-ed-1/
+
 - https://www.documentcloud.org/documents/26028810-mou-20250306-nasa-ssa-employee-2/
-:evidence:
+evidence:
+
 - Detail agreement from OPM is signed on 2025-02-12
-- This person appears in a detail from OPM to SSA, but also a detail from SSA back
-  to OPM and Education
-- This is the same person as OPM-3 because there is a detail document that appears
-  with two diff redacted names
-- In a separate document in filing from OPM, Akash Bobba is listed as the only person
-  from OPM and with a start date of 2025-02-03
-:positions:
-- :id: detail-opm-education-akash-bobba
-  :type: detailed
-  :agency: Education
-  :category: wrecker
-  :from: OPM
-  :from_truth: verified
-  :signed_date: 2025-02-12
-  :start_date: 2025-02-03
-  :start_date_truth: verified
-  :nte_date: 2026-02-12
-  :nte_date_truth: verified
-  :reimbursed: false
-  :source: https://www.documentcloud.org/documents/26028777-mou-20250212-opm-education-ed-1/
-  :mou: https://www.documentcloud.org/documents/26028810-mou-20250306-nasa-ssa-employee-2/
+
+- >-
+  This person appears in a detail from OPM to SSA, but also a detail from SSA back to OPM and Education
+
+- >-
+  This is the same person as OPM-3 because there is a detail document that appears with two diff redacted
+  names
+
+- >-
+  In a separate document in filing from OPM, Akash Bobba is listed as the only person from OPM and with
+  a start date of 2025-02-03
+positions:
+
+- id: detail-opm-education-akash-bobba
+  type: detailed
+  agency: Education
+  category: wrecker
+  from: OPM
+  from_truth: verified
+  signed_date: 2025-02-12
+  start_date: 2025-02-03
+  start_date_truth: verified
+  nte_date: 2026-02-12
+  nte_date_truth: verified
+  reimbursed: false
+  source: https://www.documentcloud.org/documents/26028777-mou-20250212-opm-education-ed-1/
+  mou: https://www.documentcloud.org/documents/26028810-mou-20250306-nasa-ssa-employee-2/

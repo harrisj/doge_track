@@ -1,49 +1,53 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Micaela Lopez Ballefin
-:sort_name: Ballefin
-:slug: micaela-lopez
-:skill: coder
-:linkedin: https://www.linkedin.com/in/mica-lopez/
-:tech_links:
+name: Micaela Lopez Ballefin
+sort_name: Ballefin
+slug: micaela-lopez
+skill: coder
+linkedin: https://www.linkedin.com/in/mica-lopez/
+tech_links:
+
 - Twitter
-:blurb: After she appeared in a listing of staff with Senior Advisor titles at the
-  Small Business Association, Politico has identified her as a former employee of
-  Twitter/X and also a Uruguayan citizen. As the latter, she would normally be ineligible
-  to work for the US government, but she has been hired as a contractor at the GSA
-  as a senior engineering manager working with Matthew Markhurst-Session and Thomas
-  Shedd.
-:affiliations:
-- :entity_id: twitter
-  :role: employee
-  :timeframe: before
-  :immediate: true
-  :connection_truth: self-reported
-  :start_date: 2020-12-XX
-  :start_date_truth: self-reported
-  :source: https://www.linkedin.com/in/mica-lopez/
-  :table_note: Head of Data Platform
-  :id: 6ygkgXpA
-:positions:
-- :id: sba-lopez-ballefin
-  :type: detailed
-  :from: GSA
-  :from_truth: guessed
-  :category: wrecker
-  :project:
+blurb: >-
+  After she appeared in a listing of staff with Senior Advisor titles at the Small Business Association,
+  Politico has identified her as a former employee of Twitter/X and also a Uruguayan citizen. As the latter,
+  she would normally be ineligible to work for the US government, but she has been hired as a contractor
+  at the GSA as a senior engineering manager working with Matthew Markhurst-Session and Thomas Shedd.
+affiliations:
+
+- entity_id: twitter
+  role: employee
+  timeframe: before
+  immediate: true
+  connection_truth: self-reported
+  start_date: 2020-12-XX
+  start_date_truth: self-reported
+  source: https://www.linkedin.com/in/mica-lopez/
+  table_note: Head of Data Platform
+  id: 6ygkgXpA
+positions:
+
+- id: sba-lopez-ballefin
+  type: detailed
+  from: GSA
+  from_truth: guessed
+  category: wrecker
+  project:
   - deregulation
   - spending
-  :agency: SBA
-  :title: Senior Advisor
-  :title_type: advisor
-  :source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
-- :id: gsa-lopez-ballefin
-  :agency: GSA
-  :type: consultant
-  :category: wrecker
-  :supervisory: false
-  :project:
+  agency: SBA
+  title: Senior Advisor
+  title_type: advisor
+  source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+
+- id: gsa-lopez-ballefin
+  agency: GSA
+  type: consultant
+  category: wrecker
+  supervisory: false
+  project:
   - deregulation
   - spending
-  :start_date: 2025-05-XX
-  :start_date_truth: guessed
-  :source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792
+  start_date: 2025-05-XX
+  start_date_truth: guessed
+  source: https://www.politico.com/news/2025/08/26/the-foreigners-working-for-doge-00525792

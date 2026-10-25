@@ -1,58 +1,62 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Jon Koval
-:sort_name: Koval
-:slug: jon-koval
-:age: 27
-:skill: executive
-:linkedin: https://www.linkedin.com/in/jon-koval/
-:blurb: Jon Koval is a vice president at Valor Equity Partners, the private-equity
-  firm operated by Antonio Gracias. He has been working alongside Gracias at the SSA,
-  but recently he was detailed to the DOJ to help build up DOGE's immigrant-tracking
-  panopticon. He has kept a relatively low profile online, but I am assuming he returned
-  to Valor at the same time as his peers from the company.
-:govt_exit_date: 2025-07-XX
-:govt_exit_truth: guessed
-:govt_exit_type: resigned
-:affiliations:
-- :entity_id: valor
-  :timeframe: before
-  :immediate: true
-  :returned: true
-  :role: employee
-  :start_date: 2022-03-XX
-  :start_date_truth: self-reported
-  :source: https://www.linkedin.com/in/jon-koval/
-  :connection_truth: verified
-  :id: 6Ngdo86w
-:positions:
-- :id: ssa-employee-6
-  :type: appointed
-  :category: wrecker
-  :agency: SSA
-  :start_date: 2025-02-23
-  :start_date_truth: verified
-  :nte_date: 2026-02-22
-  :nte_date_truth: verified
-  :pd_code: KNX0360
-  :pay_grade: ED-00
-  :salary: "$0"
-  :title: Expert
-  :title_type: advisor
-  :office: Office of the CIO
-  :description: Excepted Appointment NTE
-  :source: https://www.documentcloud.org/documents/26028793-onboard-ssa-employee-6/
-  :name: Jon Koval
-  :alias: SSA-06
-- :id: detail-ssa-doj-koval
-  :type: detailed
-  :category: wrecker
-  :from: SSA
-  :from_truth: inferred
-  :start_date: 2025-04-15
-  :start_date_truth: reported
-  :table_note: assuming detail from SSA
-  :project:
+name: Jon Koval
+sort_name: Koval
+slug: jon-koval
+age: 27
+skill: executive
+linkedin: https://www.linkedin.com/in/jon-koval/
+blurb: >-
+  Jon Koval is a vice president at Valor Equity Partners, the private-equity firm operated by Antonio
+  Gracias. He has been working alongside Gracias at the SSA, but recently he was detailed to the DOJ to
+  help build up DOGE's immigrant-tracking panopticon. He has kept a relatively low profile online, but
+  I am assuming he returned to Valor at the same time as his peers from the company.
+govt_exit_date: 2025-07-XX
+govt_exit_truth: guessed
+govt_exit_type: resigned
+affiliations:
+
+- entity_id: valor
+  timeframe: before
+  immediate: true
+  returned: true
+  role: employee
+  start_date: 2022-03-XX
+  start_date_truth: self-reported
+  source: https://www.linkedin.com/in/jon-koval/
+  connection_truth: verified
+  id: 6Ngdo86w
+positions:
+
+- id: ssa-employee-6
+  type: appointed
+  category: wrecker
+  agency: SSA
+  start_date: 2025-02-23
+  start_date_truth: verified
+  nte_date: 2026-02-22
+  nte_date_truth: verified
+  pd_code: KNX0360
+  pay_grade: ED-00
+  salary: "$0"
+  title: Expert
+  title_type: advisor
+  office: Office of the CIO
+  description: Excepted Appointment NTE
+  source: https://www.documentcloud.org/documents/26028793-onboard-ssa-employee-6/
+  name: Jon Koval
+  alias: SSA-06
+
+- id: detail-ssa-doj-koval
+  type: detailed
+  category: wrecker
+  from: SSA
+  from_truth: inferred
+  start_date: 2025-04-15
+  start_date_truth: reported
+  table_note: assuming detail from SSA
+  project:
   - fraud
   - immigration
-  :source: https://www.nytimes.com/2025/04/18/us/politics/doge-musk-social-security-justice-department.html
-  :agency: DOJ
+  source: https://www.nytimes.com/2025/04/18/us/politics/doge-musk-social-security-justice-department.html
+  agency: DOJ

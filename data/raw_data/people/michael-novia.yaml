@@ -1,16 +1,18 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Michael Novia
-:sort_name: Novia
-:slug: michael-novia
-:skill: designer
-:linkedin: https://www.linkedin.com/in/mnovia/
-:positions:
-- :id: nds-novia
-  :type: appointed
-  :category: builder
-  :agency: NDS
-  :project: modernization
-  :start_date: 2025-10-XX
-  :start_date_truth: reported
-  :source: https://www.linkedin.com/in/mnovia/
-  :title: Creative Director
+name: Michael Novia
+sort_name: Novia
+slug: michael-novia
+skill: designer
+linkedin: https://www.linkedin.com/in/mnovia/
+positions:
+
+- id: nds-novia
+  type: appointed
+  category: builder
+  agency: NDS
+  project: modernization
+  start_date: 2025-10-XX
+  start_date_truth: reported
+  source: https://www.linkedin.com/in/mnovia/
+  title: Creative Director

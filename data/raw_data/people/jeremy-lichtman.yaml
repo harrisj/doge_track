@@ -1,38 +1,43 @@
+# yaml-language-server: $schema=../schemas/people-file.json
 ---
-:name: Jeremy Lichtman
-:sort_name: Lichtman
-:slug: jeremy-lichtman
-:skill: analyst
-:linkedin: https://www.linkedin.com/in/jeremy-lichtman/
-:blurb: He was named as a member of the DOGE team at USDA in response to a FOIA request
-  from American Oversight. According to LinkedIn, he has held multiple positions related
-  to shareholder activism and strategic investing.
-:govt_exit_date: 2025-12-XX
-:govt_exit_truth: self-reported
-:govt_exit_type: resigned
-:positions:
-- :id: usda-lichtman
-  :agency: USDA
-  :type: appointed
-  :category: wrecker
-  :salary: "$142,488"
-  :project:
+name: Jeremy Lichtman
+sort_name: Lichtman
+slug: jeremy-lichtman
+skill: analyst
+linkedin: https://www.linkedin.com/in/jeremy-lichtman/
+blurb: >-
+  He was named as a member of the DOGE team at USDA in response to a FOIA request from American Oversight.
+  According to LinkedIn, he has held multiple positions related to shareholder activism and strategic
+  investing.
+govt_exit_date: 2025-12-XX
+govt_exit_truth: self-reported
+govt_exit_type: resigned
+positions:
+
+- id: usda-lichtman
+  agency: USDA
+  type: appointed
+  category: wrecker
+  salary: "$142,488"
+  project:
   - spending
   - fraud
-  :title: Advisor on Government Efficiency
-  :start_date: 2025-03-17
-  :start_date_truth: self-reported
-  :end_date: 2025-12-XX
-  :pd_code: '91530968'
-  :series: '0301'
-  :pay_grade: GS-14/01
-  :excepted: true
-  :end_date_truth: self-reported
-  :end_type: resigned
-  :sort_date: 2025-03-15
-  :office: Office of the Secretary of Agriculture
-  :source:
+  title: Advisor on Government Efficiency
+  start_date: 2025-03-17
+  start_date_truth: self-reported
+  end_date: 2025-12-XX
+  pd_code: '91530968'
+  series: '0301'
+  pay_grade: GS-14/01
+  excepted: true
+  end_date_truth: self-reported
+  end_type: resigned
+  sort_date: 2025-03-15
+  office: Office of the Secretary of Agriculture
+  source:
   - https://www.documentcloud.org/documents/25998790-usda-records-concerning-doge-teams-at-the-agency/
   - https://www.linkedin.com/in/jeremy-lichtman/
-  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
-  - https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
+  - >-
+    https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  - >-
+    https://www.documentcloud.org/documents/27886044-2025-osec-08587-f-final-responsive-document-set_redacted/
