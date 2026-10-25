@@ -1,0 +1,102 @@
+---
+:name: Clark Minor
+:sort_name: Minor
+:slug: clark-minor
+:age: 35
+:skill: coder
+:linkedin: https://www.linkedin.com/in/clarkminor/
+:tech_links:
+- Palantir
+:blurb: A former head of cloud strategy at Palantir, Clark Minor was named the CIO
+  for Health and Human Services in February. in that position, he is able to grant
+  access for DOGE staff to many systems.
+:affiliations:
+- :entity_id: palantir
+  :role: employee
+  :timeframe: before
+  :immediate: true
+  :start_date: 2011-06-XX
+  :start_date_truth: self-reported
+  :end_date: 2024-12-XX
+  :end_date_truth: self-reported
+  :connection_truth: self-reported
+  :source: https://www.linkedin.com/in/clarkminor/
+  :id: 1217uhh6
+:positions:
+- :id: hhs-minor-cto
+  :type: appointed
+  :category: enabler
+  :agency: HHS
+  :title: Chief Technology Officer
+  :title_type: cto
+  :start_date: 2025-02-XX
+  :start_date_truth: self-reported
+  :sort_date: 2025-02-01
+  :end_date: 2025-02-14
+  :end_date_truth: inferred
+  :end_type: replaced
+  :salary: "$195,200"
+  :replaced_by: hhs-minor-cio
+  :source:
+  - https://www.linkedin.com/in/clarkminor/
+  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+- :id: hhs-minor-cio
+  :type: promotion
+  :category: enabler
+  :agency: HHS
+  :title: Chief Information Officer
+  :title_type: cio
+  :start_date: 2025-02-14
+  :start_date_truth: reported
+  :end_date: 2026-07-28
+  :end_date_truth: reported
+  :end_type: replaced
+  :replaced_by: hhs-minor-advisor
+  :salary: "$195,200"
+  :table_note: Salary inferred
+  :source:
+  - https://orangeslices.ai/hhs-it-office-recruits-new-chief-from-palantir/
+  - https://fedscoop.com/clark-minor-out-as-health-human-services-it-chief/
+- :id: detail-hhs-nih-minor
+  :type: internal
+  :category: wrecker
+  :agency: NIH
+  :from: HHS
+  :from_truth: inferred
+  :start_date: 2025-02-24
+  :start_date_truth: reported
+  :table_note: date inferred from system access
+  :office: NIH Business System
+  :source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
+- :id: transfer-hhs-fda-minor
+  :type: internal
+  :category: wrecker
+  :agency: FDA
+  :from: HHS
+  :from_truth: inferred
+  :sort_date: 2025-02-25
+  :start_date: 2025-02-(25)~
+  :start_date_truth: inferred
+  :table_note: mentioned as meeting with FDA staff in late Feb/early March
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.281208/gov.uscourts.dcd.281208.1.0_3.pdf
+- :id: hhs-minor-ai
+  :agency: HHS
+  :category: enabler
+  :type: appointed
+  :title: Acting Chief AI Officer
+  :title_type: other
+  :start_date: 2025-08-XX
+  :start_date_truth: self-reported
+  :end_date: 2026-07-28
+  :end_date_truth: inferred
+  :end_type: removed
+  :source: https://www.linkedin.com/in/clarkminor/
+- :id: hhs-minor-advisor
+  :agency: HHS
+  :category: enabler
+  :type: demotion
+  :title: Senior Advisor
+  :start_date: 2026-07-28
+  :start_date_truth: reported
+  :table_note: Reported to be staying on as an advisor
+  :source: https://fedscoop.com/clark-minor-out-as-health-human-services-it-chief/

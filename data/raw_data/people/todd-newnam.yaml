@@ -1,0 +1,63 @@
+---
+:name: Todd Newnam
+:sort_name: Newnam
+:slug: todd-newnam
+:skill: executive
+:blurb: One of the newer DOGE staffers who have been assigned to the IRS, Todd Newnam
+  was the CEO of an IT Consulting firm located in South Carolina. Prior to that, he
+  was associated with the Carlyle Group. His financial disclosure reveal that he also
+  owns shares of Intuit, the maker of TurboTax, which is concerning form someone being
+  given oversight powers at the IRS.
+:age: 42
+:positions:
+- :id: treasury-newnam
+  :type: appointed
+  :category: wrecker
+  :title: Senior Advisor
+  :title_type: advisor
+  :start_date: 2025-03-06
+  :start_date_truth: verified
+  :sge: false
+  :appt_type: Schedule C
+  :pay_grade: GS-15
+  :salary: "$167,603"
+  :fuzz: Identity is only revealed in a court filing, using ethics training date for
+    start date
+  :project:
+  - spending
+  - fraud
+  :comment: NYT says he is a Senior Advisor
+  :source:
+  - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636609/gov.uscourts.nysd.636609.147.0.pdf
+  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  :agency: Treasury
+- :id: internal-treasury-irs-newnam
+  :type: internal
+  :category: wrecker
+  :title: Senior Advisor
+  :title_type: advisor
+  :start_date: 2025-04-XX
+  :start_date_truth: verified
+  :end_date: 2026-01-20
+  :end_date_truth: inferred
+  :end_type: replaced
+  :replaced_by: irs-newnam-cfo
+  :fuzz: Identity is only revealed in a court filing
+  :comment: NYT says he is a Senior Advisor
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277055/gov.uscourts.dcd.277055.61.2.pdf
+  :agency: IRS
+  :from: Treasury
+  :from_truth: inferred
+- :id: irs-newnam-cfo
+  :agency: IRS
+  :type: promotion
+  :category: enabler
+  :title: Chief Financial Officer
+  :title_type: director
+  :start_date: 2026-01-20
+  :start_date_truth: reported
+  :project:
+  - modernization
+  - impunity
+  :supervisory: true
+  :source: https://news.bloombergtax.com/daily-tax-report/irs-criminal-head-exits-trump-friendly-faces-in-new-org-chart

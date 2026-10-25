@@ -1,0 +1,96 @@
+---
+:name: Conor Fennessy
+:sort_name: Fennessy
+:slug: conor-fennessy
+:age: 32
+:skill: analyst
+:blurb: There aren't many public details about Conor Fennessy, except that he apparently
+  has a background in finance. Whatever his story, he joined up early with DOGE, starting
+  as a part-time consultant at the Department of Education before heading over to
+  HHS and then the Department of the Interior. His main specialization seems to be
+  reviewing grants for cancellation if they match certain _verboten_ topics like climate
+  change or "DEI."
+:positions:
+- :id: detail-sba-fennessy
+  :agency: SBA
+  :from: Education
+  :from_truth: guessed
+  :title: Senior Advisor
+  :title_type: advisor
+  :type: detailed
+  :project:
+  - spending
+  - fraud
+  :category: wrecker
+  :table_note: identified by agency FOIA as having been at the agency, guessing detailed
+  :source: https://www.documentcloud.org/documents/25998948-sba-response-to-american-oversight-foia-request/
+- :id: education-ed-2
+  :type: appointed
+  :category: wrecker
+  :agency: Education
+  :start_date: 2025-01-31
+  :start_date_truth: verified
+  :appt_type_code: 44
+  :appt_type: Regular C
+  :pd_code: DBGS61164
+  :title: Senior Advisor
+  :title_type: advisor
+  :pay_grade: GS-15/6
+  :salary: "$195,200"
+  :series: '0301'
+  :supervisory: false
+  :office: Office of the Secretary
+  :source: https://www.documentcloud.org/documents/26028781-onboard-education-employee-2/
+  :name: Conor Fennessy
+  :alias: ED-02
+- :id: detail-education-hhs-fennessy
+  :type: detailed
+  :category: wrecker
+  :from: Education
+  :from_truth: verified
+  :project:
+  - spending
+  - deregulation
+  - dei
+  :agency: HHS
+  :start_date: 2025-02-20
+  :start_date_truth: verified
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+- :id: internal-hhs-cms-fennessy
+  :type: internal
+  :category: wrecker
+  :agency: CMS
+  :from: HHS
+  :from_truth: inferred
+  :start_date: 2025-03-03
+  :start_date_truth: inferred
+  :comment: Inferred from first reported access to CALM system
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+- :id: detail-doi-fennessy
+  :type: detailed
+  :category: wrecker
+  :from: Education
+  :from_truth: guessed
+  :agency: DOI
+  :start_date: 2025-05-(01)?
+  :start_date_truth: inferred
+  :table_note: Guessed because created a spreadsheet at DOI on grant cancellations
+    around 5/07
+  :project:
+  - spending
+  - dei
+  :source: https://www.nytimes.com/2025/05/07/climate/trump-park-service-grants-cuts.html
+- :id: detail-usda-fennessy
+  :type: detailed
+  :category: wrecker
+  :agency: USDA
+  :from: Education
+  :from_truth: verified
+  :start_date: 2025-05-15
+  :start_date_truth: verified
+  :nte_date: 2025-09-12
+  :nte_date_truth: inferred
+  :project:
+  - spending
+  - dei
+  :source: https://www.documentcloud.org/documents/26071597-usda-records-reflecting-doge-economy-act-funding-transfers/

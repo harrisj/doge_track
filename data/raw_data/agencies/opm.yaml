@@ -1,0 +1,843 @@
+---
+:name: Office of Personnel Management
+:id: OPM
+:short_name: OPM
+:slug: opm
+:page_slug: self
+:blurb: |-
+  One of the ways in which DOGE surprised everybody was how it turned a relatively sleepy agency into a weapon against the entire government bureaucracy. Created by law in 1978, OPM's main role before now was to standardize government policies around personnel and to offer shared services for human capital like the federal health plans. It also tracks all the paperwork around hiring, promotions, changes and retirement. And so, for most federal staff, their main interactions with OPM were receiving paperwork they were hired, fired or retired; or picking a health plan; or looking at the rules around various practices. But, all the other aspects of human resources were handled by their own agencies. Federal staff are hired to their specific agencies, their performance rankings are defined by their agency, they're promoted by their agencies, they're paid by their agencies, they follow the HR policies of their agencies. OPM provides the guidance, but it's the agencies that implement it.
+
+  This is why OPM's turn towards the dark side has been so confounding. Very early on, DOGE concentrated a large number of staff within OPM to capture control of the centralized databases and install a new email server to send/receive messages from every federal worker. The acting director was forced out and replaced by Charles Ezell, who then let DOGE wall off an area and keep out permanent agency staff. DOGE also brought in a slew of HR executives from startups who seemingly expected the agency to work for the entire federal government in the same way that HR operates within a single company. And so, they started acting like OPM had more centralized authority: ordering workers to the "five things" email; blasting [commands to human capital officers at other agencies](https://www.chcoc.gov/transmittals); asking for lists of workers so they could command agencies to fire probationary workers and short-cut established procedures for reductions in force. OPM used to be deliberative and formal with its rulemaking - the new OPM was fond of sending out memos to all agencies on Wednesdays demanding a response by Friday. None of this was normal; some of it was [probably illegal](https://www.npr.org/2025/03/13/nx-s1-5325959/federal-employees-court-firing). And the breach in trust has been irrevocable.
+:doge_base: true
+:events:
+- :date: 2025-01-(16)~
+  :type: action
+  :event: According to his later sworn testimony, Noah Peters meets with Keenan Kmiec
+    to outline his plan on how to use administrative leave to sideline federal employees
+    from being able to do their work and counter or monitor DOGE's activities at their
+    agencies.
+  :project:
+  - personnel
+  - impunity
+  :fuzz: Date is approximate in deposition
+  :named:
+  - Noah Peters
+  - Keenan Kmiec
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.cand.444883/gov.uscourts.cand.444883.188.1.pdf
+  :case_no: 3:25-cv-01780
+  :agency: OPM
+  :id: KLhbExN5
+- :date: 2025-01-(16)~
+  :type: action
+  :event: Noah Peters receives a formal job offer to work at OPM. He describes it
+    in a court disposition as being very general and vague.
+  :fuzz: Date is approximate in deposition
+  :named:
+  - Noah Peters
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.cand.444883/gov.uscourts.cand.444883.188.1.pdf
+  :case_no: 3:25-cv-01780
+  :agency: OPM
+  :id: VkGMhZUR
+- :date: 2025-01-(16)~
+  :type: action
+  :event: Noah Peters starts drafting two memos for OPM. One concerns temporary authorities
+    for Schedule C and the other is on how to handle both probationary employees and
+    admininstrative leave. These are to be issued on January 20th.
+  :project: personnel
+  :fuzz: Date is approximate in deposition
+  :named:
+  - Noah Peters
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.cand.444883/gov.uscourts.cand.444883.188.1.pdf
+  :case_no: 3:25-cv-01780
+  :agency: OPM
+  :id: JLTME6KA
+- :date: 2025-01-17
+  :type: action
+  :event: Noah Peters recalls that he met with Amanda Scales and Brian Bjelde on this
+    day to plan for their upcoming first day at OPM.
+  :named:
+  - Noah Peters
+  - Amanda Scales
+  - Brian Bjelde
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.cand.444883/gov.uscourts.cand.444883.188.1.pdf
+  :case_no: 3:25-cv-01780
+  :agency: OPM
+  :id: JQXwpLN5
+- :date: 2025-01-20
+  :type: disruption
+  :event: Acting OPM Director Charles Ezell replaces existing CIO Melvin Brown with
+    DOGE ally Greg Hogan, who will serve as the Acting CIO.
+  :named:
+  - Charles Ezell
+  - Greg Hogan
+  :project: personnel
+  :source: https://www.muskwatch.com/p/musk-associates-given-unfettered
+  :agency: OPM
+  :id: GSsFm4n8
+- :date: 2025-01-20
+  :type: directory
+  :event: Multiple DOGE staff start working at OPM and are listed as part of the Office
+    of the Director.
+  :agency: OPM
+  :named:
+  - Anthony Armstrong
+  - Riccardo Biasini
+  - Brian Bjelde
+  - Akash Bobba
+  - Gavin Kliger
+  - Noah Peters
+  - Amanda Scales
+  - Joanna Wischer
+  :source: https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers
+  :project: personnel
+  :id: 4F5kEan6
+- :date: 2025-01-20
+  :type: sighting
+  :event: The DOGE team moves into a secure office within OPM, installing sofa beds
+    and armed security to prevent other staff from entry.
+  :notable: true
+  :source: https://www.reuters.com/world/us/musk-aides-lock-government-workers-out-computer-systems-us-agency-sources-say-2025-01-31/
+  :project: impunity
+  :agency: OPM
+  :id: BbMpQoge
+- :date: 2025-01-20
+  :type: access
+  :event: IT staff at OPM are pulled into a "911-esque call" requesting that "a political
+    team" of 6 individuals must be given access to OPM systems. These include Charles
+    Ezell, Greg Hogan, and Amanda Scales, as well as unidentified employees OPM-03,
+    OPM-05 and OPM-07. These DOGE staffers are granted administrative access to USAJOBS,
+    USA Staffing, and USA Performance systems.
+  :notable: true
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf
+  :project:
+  - personnel
+  - impunity
+  :named:
+  - Charles Ezell
+  - Greg Hogan
+  - Amanda Scales
+  :named_aliases:
+  - OPM-03
+  - OPM-05
+  - OPM-07
+  :case_no: 1:25-cv-01237
+  :agency: OPM
+  :id: DAe2NKHp
+- :date: 2025-01-20
+  :agency: OPM
+  :type: disruption
+  :event: Career IT staff in the Office of the CIO at OPM report that their database
+    access was completely revoked by DOGE staff working at the agency.
+  :notable: true
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf
+  :project: impunity
+  :case_no: 1:25-cv-01237
+  :id: 592OFjrH
+- :date: 2025-01-23
+  :type: official
+  :event: OPM sends out a first test email to all federal staff from its new Government-Wide
+    Email System (GWES).
+  :source: https://www.cbsnews.com/news/trump-administration-confuses-government-workers-email-test-message/
+  :project: personnel
+  :agency: OPM
+  :id: YcNgC9Yg
+- :date: 2025-01-24
+  :type: onboard
+  :event: Jacob Altik and Nikhil Rajpal start working at OPM
+  :agency: OPM
+  :named:
+  - Jacob Altik
+  - Nikhil Rajpal
+  :source: https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers
+  :id: 58t4DLaO
+- :date: 2025-01-26
+  :type: official
+  :event: OPM sends a second test email from its new Government-Wide Email System
+    (GWES) to all government employees.
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.276820/gov.uscourts.dcd.276820.1.0.pdf
+  :project: personnel
+  :case_no: 1:25-cv-00234
+  :agency: OPM
+  :id: 6aVWvZQH
+- :date: 2025-01-27
+  :type: access
+  :event: Charles Ezell sends an email to OPM IT staff stating that OPM-02, OPM-04,
+    and OPM-06 "urgently" need access to several sensitive systems within the agency.
+  :named:
+  - Charles Ezell
+  :project: impunity
+  :named_aliases:
+  - OPM-02
+  - OPM-04
+  - OPM-06
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf
+  :case_no: 1:25-cv-01237
+  :agency: OPM
+  :id: 6SWKtlSa
+- :date: 2025-01-27
+  :type: disruption
+  :event: A member of the OPM union posts a Reddit message reportedly from an OPM
+    employee which states that the email server is a piece of outside equipment and
+    the its goal is to generate lists of all govt employees in order to send massive
+    firing notices later.
+  :named:
+  - Amanda Scales
+  :project: personnel
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.276820/gov.uscourts.dcd.276820.1.0.pdf
+  :case_no: 1:25-cv-00234
+  :agency: OPM
+  :id: UBodNip9
+- :date: 2025-01-27
+  :type: legal
+  :event: Two anonymous federal employees file a class action lawsuit against OPM
+    for launching the new email system without conducting a Privacy Impact Assessment
+    for the new system
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.276820/gov.uscourts.dcd.276820.1.0.pdf
+  :case_no: 1:25-cv-00234
+  :agency: OPM
+  :id: QiLxs5iA
+- :date: 2025-01-28
+  :type: official
+  :event: OPM sends out the "Fork in the Road" email to all federal employees offering
+    them a chance to resign, in exchange for six month of administrative leave and
+    protection from termination.
+  :notable: true
+  :source: https://www.wired.com/story/doge-hr-elon-musk-resignation-fork-road-leaked-staff-meeting/
+  :project: personnel
+  :agency: OPM
+  :id: 7ASZnW7s
+- :date: 2025-01-28
+  :type: directory
+  :event: Wired Magazine provides an early listing of which Musk-affiliated DOGE staff
+    now have positions at OPM.
+  :fuzz: didn't name Coristine or Bobba bc of their ages, but later confirmed as them
+  :comment: This report originally did not mention Edward Coristine or Akash Bobba
+    by name because of their ages, but Wired revealed it later
+  :linked:
+  - Edward Coristine
+  - Akash Bobba
+  :named:
+  - Amanda Scales
+  - Riccardo Biasini
+  - Noah Peters
+  - Joanna Wischer
+  :source: https://www.wired.com/story/elon-musk-lackeys-office-personnel-management-opm-neuralink-x-boring-stalin/
+  :agency: OPM
+  :id: 3GL4CR65
+- :date: 2025-01-28
+  :type: onboard
+  :event: Justin Monroe and Christopher Stanley start working at OPM as a volunteers
+    with the job title of Expert.
+  :named:
+  - Justin Monroe
+  - Christopher Stanley
+  :source: https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers
+  :agency: OPM
+  :id: 1KTKczl5
+- :date: 2025-01-28
+  :type: access
+  :event: OPM grants OPM-02, OPM-04, and OPM-06 full administrative access to the
+    systems USAJOBS, USA Staffing, USA Performance, eOPF, and EHRI. This access included
+    “[c]ode read and write permissions.”
+  :named_aliases:
+  - OPM-02
+  - OPM-04
+  - OPM-06
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf
+  :case_no: 1:25-cv-01237
+  :agency: OPM
+  :id: 2v67bjVr
+- :date: 2025-01-30
+  :type: onboard
+  :event: Austin Raynor and Chris Young start working at OPM.
+  :named:
+  - Austin Raynor
+  - Chris Young
+  :source: https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers
+  :agency: OPM
+  :id: 3tG7l53P
+- :date: 2025-01-31
+  :type: disruption
+  :event: Federal employees at OPM report they are locked out of access to key systems
+    by DOGE and OPM leadership.
+  :project: impunity
+  :named:
+  - Charles Ezell
+  - Amanda Scales
+  - Riccardo Biasini
+  :source: https://www.reuters.com/world/us/musk-aides-lock-government-workers-out-computer-systems-us-agency-sources-say-2025-01-31/
+  :agency: OPM
+  :id: GmvBm6qi
+- :date: 2025-02-XX
+  :type: disruption
+  :event: Unnamed engineers working for DOGE within OPM reportedly used Meta's Llama
+    AI model running locally on OPM servers to analyze responses to the "Fork in the
+    Road" resignation offer.
+  :source: https://www.wired.com/story/doge-used-meta-ai-model-review-fork-emails-from-federal-workers/
+  :project:
+  - personnel
+  - modernization
+  :agency: OPM
+  :linked:
+  - Riccardo Biasini
+  :id: 5N97IVsN
+- :date: 2025-02-03
+  :type: report
+  :event: Brian Bjelde holds a meeting with senior staff at OPM, directing them to
+    prepare plans to eliminate 70% of the agency's workforce at some unspecified point
+    in the future. They are also told to identify 30% of staff that could be eliminated
+    in the near term.
+  :notable: true
+  :project:
+  - personnel
+  - elimination
+  :named:
+  - Brian Bjelde
+  :source: https://www.cnn.com/politics/live-news/trump-tariffs-presidency-news-02-03-25#cm6pc1pkt001v3b6ms777chnl
+  :agency: OPM
+  :id: 3N9M9fo1
+- :date: 2025-02-03
+  :type: onboard
+  :event: Several more DOGE staffers (Stephen Duarte, Christina Hanna, Bryanne-Michelle
+    Mlodzianowski) start working at OPM. All of them come from HR backgrounds in Musk-affiliated
+    companies.
+  :named:
+  - Stephen Duarte
+  - Christina Hanna
+  - Bryanne-Michelle Mlodzianowski
+  :agency: OPM
+  :source: https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers
+  :id: 15xKjpfm
+- :date: 2025-02-05
+  :type: legal
+  :event: OPM attests the Government-Wide Email System runs only on agency systems
+    (and is not hosted in an external provider, which would be a violation of federal
+    IT policy).
+  :source: https://www.msn.com/en-us/news/us/controversial-opm-email-server-operates-entirely-on-government-computers-agency-says/ar-AA1yujjr
+  :case_no: 1:25-cv-00234
+  :agency: OPM
+  :id: ANRquZpT
+- :date: 2025-02-05
+  :type: official
+  :event: OPM issues a Privacy Impact Assessment for its Government-Wide Email System
+    (GWES) which states responses to its messages are voluntary, brief and do not
+    include identifying information from federal staffers.
+  :source: https://fedscoop.com/wp-content/uploads/sites/5/2025/03/2025-02-05_-_11-1_-_D_-_Ex._A_-_PIA.pdf
+  :agency: OPM
+  :id: dv9APoYU
+- :date: 2025-02-06
+  :type: legal
+  :event: DOGE member and lawyer Jacob Altik joins the legal defense team for the
+    administration in _Jane Does 1-2 v. Office of Personnel Management (D.D.C.)_ without
+    revealing he is an DOGE staffer who is working for OPM.
+  :named:
+  - Jacob Altik
+  :source: https://fedscoop.com/doge-lawyer-opm-email-lawsuit-jacob-altik/
+  :case_no: 1:25-cv-00234
+  :agency: OPM
+  :id: PZtsBGTa
+- :date: 2025-02-06
+  :type: legal
+  :event: The judge in _Jane Does 1-2 v. Office of Personnel Management (D.D.C.)_
+    dismisses the motion for a temporary restraining order against the OPM email system
+    since there is now a Privacy Impact Assessment available for it.
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.276820/gov.uscourts.dcd.276820.1.0.pdf
+  :case_no: 1:25-cv-00234
+  :agency: OPM
+  :id: GMWmrZzw
+- :date: 2025-02-06
+  :type: access
+  :event: Career IT staff in the Office of the CIO at OPM have their database access
+    restored by order of the CIO Greg Hogan. It is unclear who ordered the original
+    revocation of access and what changes have happened in the interim.
+  :notable: true
+  :project: impunity
+  :named:
+  - Greg Hogan
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf
+  :case_no: 1:25-cv-01237
+  :agency: OPM
+  :id: 39TYKG04
+- :date: 2025-02-12
+  :type: directory
+  :event: In a FOIA request, Democracy Forward names DOGE staff known to be at OPM
+    at that time.
+  :source: https://democracyforward.org/wp-content/uploads/2025/03/Compl.-DF-v.-OPM-OMB-RIF-plans.pdf
+  :case_no: 1:25-cv-00858
+  :named:
+  - Charles Ezell
+  - Amanda Scales
+  - Anthony Armstrong
+  - Riccardo Biasini
+  - Brian Bjelde
+  - Noah Peters
+  - Greg Hogan
+  - Stephanie Holmes
+  - Christina Hanna
+  - Stephen Duarte
+  - Bryanne-Michelle Mlodzianowski
+  - Joanna Wischer
+  - Justin Monroe
+  - Jacob Altik
+  - Austin Raynor
+  - Edward Coristine
+  - Akash Bobba
+  - Gavin Kliger
+  - Nikhil Rajpal
+  :agency: OPM
+  :id: 9CEKeLm7
+- :date: 2025-02-18
+  :type: onboard
+  :event: Former AirBnb executive Joe Gebbia starts working at OPM as a volunteer
+    with the job title of Expert.
+  :named:
+  - Joe Gebbia
+  :agency: OPM
+  :source: https://www.bloomberg.com/news/newsletters/2025-05-02/here-are-the-job-titles-and-salary-ranges-of-some-doge-staffers
+  :id: 54lcWZTH
+- :date: 2025-02-18
+  :type: disruption
+  :event: A CNN reporter shares that his FOIA request to OPM was replied to with the
+    message "they just fired the whole privacy team."
+  :notable: true
+  :project: impunity
+  :source: https://www.commondreams.org/news/cnn-foia-office-of-personnel-management
+  :agency: OPM
+  :id: M6hmMgLQ
+- :date: 2025-02-24
+  :type: official
+  :event: After Elon Musk threatens on X that employees must complete a list of 5
+    accomplishments every week and send it to OPM or risk termination, OPM hastily
+    sends out an email to all federal staff requesting that list (without the threat)
+    to every government employee. Widespread confusion occurs at many agencies about
+    the legality and wisdom of this exercise.
+  :notable: true
+  :project: personnel
+  :source: https://www.justsecurity.org/108229/what-just-happened-musk-email-federal-employees/
+  :agency: OPM
+  :id: DCwQyaxn
+- :date: 2025-02-25
+  :type: report
+  :event: DOGE engineer Ricardo Biasini is reported to be working on updating an "AutoRIF"
+    software package sourced from the Department of Defense that can be used to automate
+    Reduction-in-Force (RIF) processes at federal agencies.
+  :notable: true
+  :project: personnel
+  :named:
+  - Riccardo Biasini
+  :source: https://www.wired.com/story/doge-autorif-mass-firing-government-workers/
+  :agency: OPM
+  :id: C3QCySiU
+- :date: 2025-02-27
+  :type: official
+  :event: Joe Gebbia announces on his social media account that he will be working
+    on a project at OPM to modernize retirement processing and move it away from paper
+    records currently stored at a cave in Pennsylvania.
+  :notable: true
+  :project: modernization
+  :named:
+  - Joe Gebbia
+  :source: https://xcancel.com/jgebbia/status/1895217230314410144
+  :agency: OPM
+  :id: 5Xrxtox9
+- :date: 2025-02-28
+  :type: official
+  :event: OPM quietly amends the Privacy Impact Assessment for its Government-Wide
+    Email System (GWES) to remove declarations that responses are voluntary. This
+    is after it had to concede that federal staff did not have to reply to the Five
+    Things email because of the PIA.
+  :project: personnel
+  :source: https://fedscoop.com/opm-email-privacy-assessment-swap-ongoing-litigation/
+  :agency: OPM
+  :id: KmPPf5LW
+- :date: 2025-02-28
+  :type: legal
+  :event: Judge Alsup ruling in _AFL-CIO vs. OPM (N.D. Cal.)_ issues a temporary restraining
+    order that termination of probationary workers at 6 agencies was unlawful and
+    that they should be restored to work immediately.
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.cand.444883/gov.uscourts.cand.444883.45.0.pdf
+  :project: personnel
+  :case_no: 3:25-cv-01780
+  :agency: OPM
+  :id: SMxkBWdJ
+- :date: 2025-03-01
+  :type: official
+  :event: All government employees receive a second email telling them they must list
+    their accomplishments every Monday by 11:59pm. This does not contain a threat
+    of termination, but it is also no longer reported as an optional exercise. Staff
+    working on confidential or classified activities are supposed to reply to the
+    email but redact their work.
+  :notable: true
+  :project: personnel
+  :source: https://www.npr.org/2025/03/01/g-s1-51490/federal-workers-new-email-accomplishments
+  :agency: OPM
+  :id: LPZ7jQ9g
+- :date: 2025-03-04
+  :type: official
+  :event: In response to recent court rulings that determined that OPM exceeded its
+    authority, OPM quietly revises its initial memo that required all federal agencies
+    to send lists of probationary employees to the agency. It also downplays suggestions
+    that the lists should be used for deciding staffing levels.
+  :source: https://www.fiercehealthcare.com/regulatory/mass-layoffs-hhs-cdc-cuts-1300-probationary-workers-reports-say
+  :project: personnel
+  :agency: OPM
+  :id: TWrU2GNa
+- :date: 2025-03-05
+  :type: offboard
+  :event: Three early DOGE staffers – OPM-11, OPM-12 and OPM-15 – leave their positions
+    at OPM and presumably government service.
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
+  :fuzz: I'm pretty sure this is Christina Hanna, Stephen Hanna and Bryanne-Michelle
+    Mlodzianowski, but not sure which is which alias
+  :named_aliases:
+  - OPM-11
+  - OPM-12
+  - OPM-15
+  :agency: OPM
+  :id: 4Wp9Xjic
+- :date: 2025-03-10
+  :type: oversight
+  :event: The OPM Inspector General responds to questions from Democrats in Congress
+    by stating his office will start investigating DOGE's email server and its IT
+    practices at the agency.
+  :project: impunity
+  :source: https://fedscoop.com/opm-inspector-general-doge-access-it-systems/
+  :agency: OPM
+  :id: MZdm5f9r
+- :date: 2025-03-18
+  :type: legal
+  :event: A lawyer for the plaintiffs accuses the Department of Justice of deliberately
+    misrepresenting Jacob Altik's participation in the defense "perhaps to preserve
+    the illusion that OPM's counsel were ignorant of what OPM was doing with the Government-Wide
+    Email System, or perhaps to obscure the role of DOGE and the White House in this
+    case."
+  :named:
+  - Jacob Altik
+  :source: https://fedscoop.com/doge-lawyer-opm-email-lawsuit-jacob-altik/
+  :case_no: 1:25-cv-00234
+  :agency: OPM
+  :id: QmyxpRJR
+- :date: 2025-03-20
+  :type: official
+  :event: President Trump issues an executive order that orders OPM to redefine regulations
+    so that it would give them more power to directly terminate employees at other
+    agencies.
+  :project: personnel
+  :source: https://www.whitehouse.gov/presidential-actions/2025/03/strengthening-the-suitability-and-fitness-of-the-federal-workforce/
+  :agency: OPM
+  :id: LVXz3mXK
+- :date: 2025-03-24
+  :type: legal
+  :case_no: 8:25-cv-00430
+  :event: Ruling in _American Federation of Teachers et al v. Bessent et al_, Judge
+    Boardman issues a preliminary injunction against access by DOGE staff to internal
+    systems at OPM by DOGE. However, he still allows access for DOGE-affiliated leadership
+    at the agency including Charles Ezell, Amanda Scales and Greg Hogan.
+  :notable: true
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576070/gov.uscourts.mdd.576070.69.0.pdf
+  :named:
+  - Charles Ezell
+  - Amanda Scales
+  - Greg Hogan
+  :agency: OPM
+  :id: FoSzFb5k
+- :date: 2025-03-28
+  :type: action
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.97.3.pdf
+  :case_no: 1:25-cv-01237
+  :named:
+  - Amanda Scales
+  - James Sullivan
+  :event: For reasons that aren't entirely clear, Amanda Scales is replaced as the
+    Chief of Staff at OPM by James Sullivan. Amanda changes to a Senior Advisor position
+    at the agency.
+  :notable: true
+  :fuzz: Amanda Scales reports on her LinkedIn that she left DOGE in March, so this
+    might have been the cause
+  :agency: OPM
+  :id: 4JJspL6C
+- :date: 2025-04-03
+  :type: oversight
+  :event: Scott Kupor, the nominee to lead OPM, assured senators in a confirmation
+    hearing that he believes strongly in data privacy and respecting the humanity
+    and dignity of the federal workforce.
+  :named:
+  - Scott Kupor
+  :source: https://fedscoop.com/opm-nominee-scott-kupor-data-privacy-doge/
+  :agency: OPM
+  :id: JbY96QGM
+- :date: 2025-04-11
+  :type: legal
+  :event: The plaintiffs in _AFGE, AFL-CIO, et. al vs. OPM_ file a motion asking for
+    the testimony of Noah Peters to be disregarded because they argue it is misleading
+    and possibly fabricated in certain parts.
+  :project: impunity
+  :case_no: 3:25-cv-01780
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.cand.444883/gov.uscourts.cand.444883.197.0.pdf
+  :named:
+  - Noah Peters
+  :agency: OPM
+  :id: jY8TJybS
+- :date: 2025-05-09
+  :type: disruption
+  :event: OPM is reportedly poised to launch a rebranded version of the formerly-named
+    AutoRIF software for automating the process of designating staff for mass layoffs.
+    It was modernized and given a web interface by DOGE engineer Riccardo Biasini.
+  :project: personnel
+  :source: https://www.reuters.com/business/world-at-work/doge-led-software-revamp-speed-us-job-cuts-even-musk-steps-back-2025-05-08/
+  :comment: He's not named in this article, but tagging Biasini since he was linked
+    to it earlier
+  :linked:
+  - Riccardo Biasini
+  :agency: OPM
+  :id: 3FJ5yaAx
+- :date: 2025-05-09
+  :type: official
+  :event: OPM reports it will rolling out a Online Retirement Application (ORA) system
+    which replaces the paper-based system for federal departments served by the National
+    Finance Center and Interior Business Center. This was a program originally started
+    in the Biden Administration that is being accelerated without pilot programs.
+  :notable: true
+  :project: modernization
+  :source: https://www.newsweek.com/doge-major-retirement-change-2070002
+  :linked:
+  - Joe Gebbia
+  :agency: OPM
+  :id: 3jUop1qX
+- :date: 2025-05-30
+  :type: legal
+  :event: The judge in _AFL-CIO vs. OPM_ examines Greg Hogan on the stand and asks
+    if he had followed [the principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege)
+    in providing system access to DOGE. The judge's questions indicated that she seemed
+    to be leaning towards a issuing a preliminary injunction against DOGE's "chaotic"
+    access to systems at OPM.
+  :agency: OPM
+  :project: impunity
+  :named:
+  - Greg Hogan
+  :source: https://federalnewsnetwork.com/litigation/2025/05/judge-hits-out-at-chaotic-doge-move-into-opm-systems/
+  :case_no: 1:25-cv-01237
+  :id: tvAusFx6
+- :date: 2025-06-09
+  :type: legal
+  :case_no: 1:25-cv-01237
+  :event: Judge Cote, presiding over AFGE v. OPM, grants a preliminary injunction
+    against DOGE having access to systems at OPM and orders them to destroy any information
+    they have copied. She finds that OPM failed to follow proper procedures for granting
+    access.
+  :notable: true
+  :agency: OPM
+  :project: impunity
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.121.0.pdf
+  :id: 657iS0Kg
+- :date: 2025-06-24
+  :type: directory
+  :event: In a status report for _AFGE, AFL-CIO v. OPM_, the government reports that
+    multiple DOGE staff at OPM have left the government by this date. Of course, their
+    actual departure dates might be earlier, but it's a direct acknowledgment of multiple
+    staff departures in the preceding months.
+  :named_aliases:
+  - OPM-09
+  - OPM-11
+  - OPM-12
+  - OPM-13
+  - OPM-14
+  - OPM-15
+  - OPM-16
+  - OPM-17
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.138.0.pdf
+  :agency: OPM
+  :id: 3mh1G4gc
+- :date: 2025-07-09
+  :type: onboard
+  :event: Scott Kupor is confirmed by the Senate to be the new Director of OPM, replacing
+    Charles Ezell who had been serving in an acting capacity since January 20th.
+  :notable: true
+  :named:
+  - Scott Kupor
+  - Charles Ezell
+  :source: https://federalnewsnetwork.com/congress/2025/07/senate-confirms-new-opm-director-to-take-the-reins-on-federal-workforce-overhauls/
+  :agency: OPM
+  :id: VYuB4LF0
+- :date: 2025-07-16
+  :type: offboard
+  :event: OPM-03 reaches the Not-To-Exceed (NTE) date for the special government employee
+    status and is removed from access at the agency.
+  :named_aliases:
+  - OPM-03
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.148.0.pdf
+  :agency: OPM
+  :id: 4Mqx8kvM
+- :date: 2025-07-21
+  :type: disruption
+  :event: Scott Kupor states that he expects to eliminate roughly 1000 positions at
+    OPM (or about a third of its staff) by the end of the year.
+  :notable: true
+  :project: personnel
+  :named:
+  - Scott Kupor
+  :source: https://www.washingtonpost.com/politics/2025/07/21/opm-lose-about-1000-jobs-director-says/
+  :agency: OPM
+  :id: 3BJrr1L0
+- :date: 2025-08-04
+  :type: directory
+  :event: In a report about DOGE's continued work on OPM's Online Retirement Application
+    (ORA) continuing to move ahead, _Politico_ identifies DOGE staff that are working
+    on the project under Joe Gebbia.
+  :project: modernization
+  :named:
+  - Joe Gebbia
+  - Akash Bobba
+  - James Sullivan
+  - Yat Choi
+  - Andrew Vilcsak
+  :source: https://www.politico.com/news/2025/08/04/doge-government-retirement-00493140
+  :agency: OPM
+  :id: knTvcIUR
+- :date: 2025-08-06
+  :type: disruption
+  :event: OPM announces the end of the requirement that all federal workers must send
+    in a weekly "Five Things" email describing their work the prior work. OPM director
+    Scott Kupor announced the change in a meeting with all human capital officials
+    across the government.
+  :notable: true
+  :project: personnel
+  :named:
+  - Scott Kupor
+  :source: https://www.reuters.com/legal/litigation/trump-administration-formally-axes-elon-musks-five-things-email-2025-08-05/
+  :agency: OPM
+  :id: tB5r9X6D
+- :date: 2025-08-08
+  :type: onboard
+  :event: Special government employee OPM-03 is converted to a permanent position
+    within the agency, still unpaid.
+  :named_aliases:
+  - OPM-03
+  :fuzz: Date from report on system access restoration
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.148.0.pdf
+  :agency: OPM
+  :id: hfohz2fQ
+- :date: 2025-09-(02)~
+  :type: offboard
+  :event: Greg Hogan has reportedly departed from his role as Chief Information Officer
+    at OPM. He had held it from the first day of the Trump Administration when the
+    acting CIO was demoted by Charles Ezell.
+  :named:
+  - Greg Hogan
+  :source: https://fedscoop.com/greg-hogan-has-departed-his-role-as-opms-top-it-official/
+  :agency: OPM
+  :id: 7XEDYGGH
+- :date: 2025-09-03
+  :type: report
+  :event: In an interview with Axios, Scott Kupor claims that he was not involved
+    with any of DOGE's actions at OPM before he was appointed (indeed, he says he
+    was locked out of the agency until he was appointed). Despite being an employee
+    of Andreesen Horowitz, he states only March Andreesen and Ben Horowitz were in
+    communication with Elon Musk.
+  :named:
+  - Scott Kupor
+  :source: https://www.axios.com/2025/09/03/musk-ai-doge-scott-kupor-opm
+  :agency: OPM
+  :id: 66Lo1dj8
+- :date: 2025-09-12
+  :type: legal
+  :event: Ruling in _AFGE, AFL-CIO v. OPM_, Judge William Alsup finds that OPM's mass
+    firing of probationary employees was illegal. However, he does not order that
+    fired employees should be reinstated to their positions, since it has been months
+    since the action and the Supreme Court would be likely to overrule. Instead, he
+    has enjoined OPM from conducting similar actions in the future and ordered them
+    to amend the records to note that employees were not terminated due to performance
+    reasons (as the government falsely claimed in many dismissal letters).
+  :notable: true
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.cand.444883/gov.uscourts.cand.444883.261.0.pdf
+  :project: personnel
+  :case_no: 3:25-cv-01780
+  :agency: OPM
+  :id: 5VkcKBeb
+- :date: 2025-11-24
+  :type: disruption
+  :event: Revising earlier dire estimates even higher, OPM head Scott Kupor reports
+    that the US government will eliminate 317,000 jobs in 2025. He also reports that
+    it will hire 68,000 new employees this year.
+  :notable: true
+  :project: personnel
+  :named:
+  - Scott Kupor
+  :source: https://www.reuters.com/legal/litigation/us-government-shed-317000-workers-this-year-trumps-hr-chief-says-2025-11-24/
+  :agency: OPM
+  :id: 3gmeqs7D
+- :date: 2025-12-05
+  :type: legal
+  :event: The government files a motion to dismiss the case in _AFGE, AFL-CIO v. OPM_
+    arguing that the PII risk cited in the complaint is now no longer an issue because
+    many DOGE staff have left and the few remaining have had access revoked or moderated.
+    Although the bulk of the provided exhibits are under seal, it does provide a more
+    detailed listing of when various DOGE staff have left OPM and who is still remaining.
+  :project: impunity
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.164.0.pdf
+  :case_no: 1:25-cv-01237
+  :agency: OPM
+  :id: 3PiC4XB3
+- :date: 2025-12-05
+  :agency: OPM
+  :type: directory
+  :event: A legal filing from the government states that only 5 DOGE staffers – OPM-02,
+    OPM-03, OPM-05, OPM-10 and OPM-18 – are still working at the agency. OPM-02 is
+    reporting directly to Scott Kupor.
+  :named_aliases:
+  - OPM-02
+  - OPM-03
+  - OPM-05
+  - OPM-10
+  - OPM-18
+  :source:
+  - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.163.0.pdf
+  - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.164.0.pdf
+  :id: rez1AgwK
+- :date: 2025-12-10
+  :type: disruption
+  :event: The head of OPM, Scott Kupor, reports that 317,000 federal workers have
+    left their jobs this year as a result of DOGE's actions and Trump administration
+    policies. He asserts that the vast majority of departures were voluntary.
+  :project: personnel
+  :source: https://www.msn.com/en-us/money/markets/federal-workforce-s-toll-after-a-year-of-doge-and-trump-317-000/ar-AA1S6s6z
+  :named:
+  - Scott Kupor
+  :agency: OPM
+  :id: 2xE0jDx6
+- :date: 2026-01-28
+  :type: onboard
+  :event: In a post on LinkedIn, Amanda Scales announces she has returned to a role
+    at OPM, overseeing the recruitment and hiring for the new Tech Force initiative
+    to bring in technical staff from Silicon Valley companies into federal service
+    for 2-year terms.
+  :notable: true
+  :source: https://www.linkedin.com/feed/update/urn:li:activity:7422277036867588096/
+  :project:
+  - personnel
+  - modernization
+  :named:
+  - Amanda Scales
+  :agency: OPM
+  :id: 2p9aK01I
+- :date: 2026-05-05
+  :type: official
+  :event: Noah Peters writes an op-ed defending a proposed regulation that would move
+    the appeals process for reductions in force (RIFs) from the MSPB to OPM. He is
+    described as a Senior Advisor at the agency.
+  :named:
+  - Noah Peters
+  :source: https://news.bloomberglaw.com/legal-exchange-insights-and-commentary/opm-reduction-in-force-appeals-transfer-is-lawful-and-necessary
+  :agency: OPM
+  :id: 5Yg6glwJ
+- :date: 2026-10-22
+  :type: legal
+  :event: Ruling in _AFL-CIO v. OPM_, Judge Denise Cote ruled that OPM violated federal
+    laws on privacy and cybersecurity when it shared records on millions of federal
+    employees with DOGE staff. She notes that at this point, even "the defendents
+    barely defend its legality." The government had instead argued that the case was
+    moot and any further injunction was unnecessary since DOGE's formal presence had
+    almost completely waned.
+  :source: https://federalnewsnetwork.com/litigation/2026/10/opm-unlawfully-let-doge-access-sensitive-federal-employee-data-judge-rules/
+  :agency: OPM
+  :id: 56n3aPIV

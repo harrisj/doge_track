@@ -1,0 +1,115 @@
+---
+:name: Tarak Makecha
+:sort_name: Makecha
+:slug: tarak-makecha
+:age: 38
+:skill: analyst
+:linkedin: https://www.linkedin.com/in/tarakmakecha/
+:blurb: Tarak Makecha is the former head of stategic planning for Tesla Energy. Although
+  he describes himself as a software engineer, he comes from a backgroun in finance.
+  In that capacity, he has been reviewing and cancelling grants for the DOJ and FBI,
+  but recent sources have also linked him to the US Agency for Global Media and grant
+  cancellations there. His LinkedIn reports that he left working for DOGE in July
+  and is now a vice president at Valor Equity Partners, the investment firm run by
+  Antonio Gracias and the employer of Jon Koval and Payton Rehling. I'm sure that's
+  just a coincidence.
+:tech_links:
+- Tesla
+- Valor
+:govt_exit_date: 2025-07-XX
+:govt_exit_truth: self-reported
+:govt_exit_type: resigned
+:affiliations:
+- :entity_id: tesla
+  :role: employee
+  :timeframe: before
+  :connection_truth: self-reported
+  :start_date: 2017-10-XX
+  :start_date_truth: self-reported
+  :end_date: 2019-11-XX
+  :end_date_truth: self-reported
+  :table_note: Head of Strategic Planning, Tesla Energy
+  :source: https://www.linkedin.com/in/tarakmakecha/
+  :id: 64pvXSgE
+- :entity_id: valor
+  :role: employee
+  :timeframe: after
+  :immediate: true
+  :connection_truth: self-reported
+  :start_date: 2025-08-XX
+  :start_date_truth: self-reported
+  :table_note: VP, National Security Technology Investments
+  :source: https://www.linkedin.com/in/tarakmakecha/
+  :id: 1wKVgNE0
+:positions:
+- :id: state-makecha
+  :agency: State
+  :type: appointed
+  :category: wrecker
+  :start_date: 2025-01-XX
+  :start_date_truth: verified
+  :sort_date: 2025-01-20
+  :salary: "$167,603"
+  :table_note: Identified in FOIA as starting at State Dept.
+  :source: https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+- :id: opm-makecha
+  :type: appointed
+  :category: wrecker
+  :title: Senior Advisor
+  :title_type: advisor
+  :start_date: 2025-02-28
+  :start_date_truth: verified
+  :end_date: 2025-07-XX
+  :end_date_truth: self-reported
+  :end_type: resigned
+  :project: personnel
+  :source:
+  - https://www.pogo.org/investigations/inside-the-shadowy-crew-leading-the-governments-hr-office
+  - https://www.linkedin.com/in/tarakmakecha/
+  :comment: POGO has his resume and listing as an OPM staffer. ProPublica had financial
+    disclosures on 2/28
+  :agency: OPM
+- :id: detail-usagm-makecha
+  :agency: USAGM
+  :from: OPM
+  :from_truth: guessed
+  :project: elimination
+  :type: detailed
+  :category: wrecker
+  :sort_date: 2025-03-01
+  :start_date: 2025-03-(01)~
+  :start_date_truth: guessed
+  :table_note: Date unknown, but assuming with Kliger who was at USAGM in early March
+  :source: https://projects.propublica.org/elon-musk-doge-tracker/
+- :id: detail-fcc-makecha
+  :type: detailed
+  :category: wrecker
+  :from: OPM
+  :from_truth: verified
+  :start_date: 2025-03-18
+  :project: deregulation
+  :start_date_truth: verified
+  :source: https://frequencyfwd.com/files/motion-exhibit-1-08252025.pdf
+  :office: Office of the Chairman
+  :table_note: listed self as detailing from OPM
+  :agency: FCC
+- :id: fbi-makecha
+  :type: detailed
+  :category: wrecker
+  :from: OPM
+  :from_truth: inferred
+  :project: immigration
+  :title: Senior Advisor
+  :title_type: advisor
+  :office: Human Resources
+  :sort_date: 2025-03-30
+  :start_date: 2025-03-(30)~
+  :start_date_truth: guessed
+  :end_date: 2025-07-XX
+  :end_date_truth: inferred
+  :end_type: detail_ended
+  :comment: Tarak Makacha has reportedly shown up in FBI directories as a Senior Advisor
+    to the agency's executive assistant director for human resources. He reportedly
+    has been there since the end of March
+  :source: https://theintercept.com/2025/04/18/doge-tesla-employee-justice-department-fbi/
+  :agency: FBI

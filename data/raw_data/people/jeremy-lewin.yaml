@@ -1,0 +1,150 @@
+---
+:name: Jeremy Lewin
+:sort_name: Lewin
+:slug: jeremy-lewin
+:age: 28
+:skill: lawyer
+:blurb: Jeremy Lewin is unusual among the most prolific wreckers because he is a lawyer
+  and not a programmer. He also came from [a more progressive background than many
+  of the DOGE crew](https://www.thehandbasket.co/p/doge-jeremy-lewin), which makes
+  his recent heel turn all the more astonishing. Since joining DOGE, Mr. Lewin has
+  been part of some of the more odious aspects of DOGE's takedown of USAID and attempted
+  elimination of the CFPB. Under the wing of DOGE ally, he has been rapidly promoted
+  upward in the eviscerated remnants of USAID and the remnants of a similar foreign-aid
+  operation within the Department of State. Despite these new positions, he still
+  finds time to participate in DOGE activities; recent documents from the NTEU's lawsuit
+  against Russell Vought include Lewin emailing instructions to Gavin Kliger on how
+  to conduct an attempted reduction-in-force at the CFPB in April.
+:positions:
+- :id: gsa-jeremy-lewin
+  :type: appointed
+  :category: wrecker
+  :agency: GSA
+  :start_date: 2025-01-20
+  :start_date_truth: guessed
+  :salary: "$167,603"
+  :comment: I know he started at the GSA before 1/28
+  :source:
+  - https://www.wired.com/story/doge-government-salaries-elon-musk/
+  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  :table_note: salary reported by Wired
+- :id: detail-usaid-jeremy-lewin
+  :type: detailed
+  :agency: USAID
+  :from: GSA
+  :project:
+  - elimination
+  - spending
+  - personnel
+  :category: wrecker
+  :reimbursed: false
+  :from_truth: verified
+  :start_date: 2025-01-27
+  :start_date_truth: verified
+  :end_date: 2025-03-18
+  :nte_date: 2025-07-25
+  :nte_date_truth: verified
+  :end_date_truth: inferred
+  :end_type: replaced
+  :replaced_by: usaid-jeremy-lewin-2
+  :source:
+  - https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.77.2.pdf
+  - https://www.documentcloud.org/documents/26028767-mou-20250127-gsa-usaid-lewin/
+  :mou: https://www.documentcloud.org/documents/26028767-mou-20250127-gsa-usaid-lewin/
+  :title: Senior Advisor / Director for Strategy & Programs
+  :title_type: dept_head
+- :id: detail-gsa-cfpb-jeremy-lewin
+  :type: detailed
+  :category: wrecker
+  :project: elimination
+  :agency: CFPB
+  :from: GSA
+  :from_truth: verified
+  :title: Senior Advisor
+  :title_type: advisor
+  :start_date: 2025-02-07
+  :start_date_truth: verified
+  :source:
+  - https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+  - https://www.gao.gov/assets/gao-26-108192.pdf
+- :id: detail-gsa-hhs-lewin
+  :type: detailed
+  :category: wrecker
+  :project:
+  - spending
+  - fraud
+  :agency: HHS
+  :from: GSA
+  :from_truth: guessed
+  :start_date: 2025-02-21
+  :start_date_truth: verified
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+- :id: internal-hhs-nih-lewin
+  :type: internal
+  :category: wrecker
+  :agency: NIH
+  :from: HHS
+  :from_truth: inferred
+  :start_date: 2025-02-24
+  :start_date_truth: reported
+  :source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
+- :id: internal-hhs-cms-lewin
+  :type: internal
+  :category: wrecker
+  :agency: CMS
+  :from: HHS
+  :from_truth: inferred
+  :start_date: 2025-03-03
+  :start_date_truth: inferred
+  :table_note: date inferred from access to CMS CALM system
+  :comment: Inferring based on first reported access to CMS CALM system
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf
+- :id: usaid-jeremy-lewin-2
+  :type: appointed
+  :category: enabler
+  :agency: USAID
+  :project: elimination
+  :start_date: 2025-03-18
+  :start_date_truth: verified
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.mdd.576293/gov.uscourts.mdd.576293.77.2.pdf
+  :title: Deputy Administrator(Policy and Programming) / COO
+  :title_type: dept_head
+- :id: state-lewin-foreign
+  :type: appointed
+  :category: enabler
+  :start_date: 2025-04-15
+  :start_date_truth: reported
+  :end_date: 2025-07-11
+  :end_date_truth: verified
+  :end_type: replaced
+  :replaced_by: state-lewin-undersecretary
+  :project: spending
+  :title: Acting Head of Foreign Assistance
+  :title_type: dept_head
+  :agency: State
+- :id: state-lewin-undersecretary
+  :agency: State
+  :category: enabler
+  :type: promotion
+  :project: spending
+  :start_date: 2025-07-11
+  :start_date_truth: verified
+  :end_date: 2026-08-24
+  :end_date_truth: inferred
+  :end_type: replaced
+  :replaced_by: state-lewin-policy
+  :title: Acting Undersecretary for Foreign Assistance, Humanitarian Affairs and Religious
+    Freedom
+  :source: https://www.state.gov/biographies/jeremy-p-lewin/
+  :supervisory: true
+- :id: state-lewin-policy
+  :agency: State
+  :category: enabler
+  :type: promotion
+  :project: spending
+  :start_date: 2026-08-24
+  :start_date_truth: reported
+  :title: Director of Policy Planning
+  :title_type: director
+  :supervisory: true
+  :source: https://subscriber.politicopro.com/article/2026/08/former-doge-official-becomes-top-rubio-aide-01054152

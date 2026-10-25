@@ -1,0 +1,71 @@
+---
+:name: Chris Young
+:sort_name: Young
+:slug: chris-young
+:age: 36
+:skill: executive
+:govt_exit_date: 2025-06-06
+:govt_exit_truth: verified
+:govt_exit_type: resigned
+:positions:
+- :id: opm-chris-young
+  :type: appointed
+  :category: wrecker
+  :agency: OPM
+  :start_date: 2025-01-30
+  :start_date_truth: verified
+  :description: Exc Appt NTE
+  :appt_type_code: 48
+  :appt_type: Other
+  :excepted: true
+  :pd_code: 6A39737
+  :title: Expert
+  :title_type: advisor
+  :pay_grade: ED-00
+  :series: '0301'
+  :supervisory: false
+  :salary: "$0"
+  :office: Office of the Director
+  :comment: Sourced from FOIAed documents
+  :source:
+  - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  :same_as: opm-chris-young
+  :sort_date: 2025-02-07
+  :table_note: Start date guessed from system access
+  :name: Chris Young
+  :alias: OPM-14
+  :end_date: 2025-06-06
+  :end_date_truth: verified
+  :end_type: resigned
+- :id: detail-opm-doge-young
+  :type: detailed
+  :category: wrecker
+  :agency: DOGE
+  :from: OPM
+  :from_truth: inferred
+  :start_date: 2025-02-05
+  :start_date_truth: verified
+  :end_date: 2025-06-06
+  :end_date_truth: verified
+  :end_type: detail_ended
+  :table_note: Detail is listed as ending on 6/13, but assumed ended on 6/6 when left
+    OPM
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.642287/gov.uscourts.nysd.642287.122.2.pdf
+- :id: detail-opm-cfpb-chris-young
+  :type: detailed
+  :category: wrecker
+  :agency: CFPB
+  :from: OPM
+  :from_truth: verified
+  :project: elimination
+  :start_date: 2025-02-07
+  :start_date_truth: verified
+  :end_date: 2025-06-06
+  :end_date_truth: inferred
+  :end_type: detail_ended
+  :title: Special Government Employee
+  :source: https://www.gao.gov/assets/gao-26-108192.pdf
+  :title_type: advisor
+  :table_note: Identified as OPM-14; govt testified on 6/27 no longer a govt employee,
+    inferring date from end of OPM service

@@ -1,0 +1,86 @@
+---
+:name: Rachel Riley
+:sort_name: Riley
+:slug: rachel-riley
+:age: 33
+:skill: administrator
+:linkedin: https://www.linkedin.com/in/rachel-riley-tn/
+:blurb: Rachel Riley has been heavily involved in DOGE's operations within HHS, where
+  she has worked very closely with Brad Smith, and she has been granted access to
+  a wide range of databases for tracking contracts and operations. Before DOGE, she
+  worked for McKinsey and Associates in government policy in Atlanta, which would
+  place her in good proximity to the CDC. In September, she pushed for a massive wave
+  of firings at HHS that were eventually overruled, with Rachel herself apparently
+  ousted by the end of October. However, it seems like is being placed over the office
+  of naval research as a reward, despite her lack of experience with the navy.
+:positions:
+- :id: hhs-rachel-riley
+  :type: appointed
+  :category: wrecker
+  :start_date: 2025-01-27
+  :start_date_truth: verified
+  :end_date: 2025-10-30
+  :end_date_truth: reported
+  :end_type: resigned
+  :project:
+  - spending
+  - personnel
+  :title: Senior Advisor
+  :title_type: advisor
+  :salary: "$167,603"
+  :comment: Hiring information given in court filing. Politico reports gone at HHS
+    on 10/30
+  :source:
+  - https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.80.5.pdf
+  - https://www.politico.com/news/2025/10/30/doge-holdover-who-pushed-for-deep-cuts-at-hhs-is-headed-to-the-navy-00629729
+  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+  :agency: HHS
+- :id: internal-hhs-cms-riley
+  :type: internal
+  :category: wrecker
+  :agency: CMS
+  :from: HHS
+  :from_truth: inferred
+  :start_date: 2025-02-03
+  :start_date_truth: inferred
+  :end_date: 2025-10-30
+  :end_date_truth: reported
+  :end_type: resigned
+  :comment: Dating from first reported access to CALM
+- :id: internal-hhs-nih-riley
+  :type: internal
+  :category: wrecker
+  :agency: NIH
+  :from: HHS
+  :from_truth: inferred
+  :start_date: 2025-02-24
+  :start_date_truth: reported
+  :end_date: 2025-10-30
+  :end_date_truth: reported
+  :end_type: resigned
+  :office: NIH Business System
+  :source: https://www.wired.com/story/doge-is-inside-the-national-institutes-of-health-nih/
+- :id: detail-hhs-nsf-riley
+  :type: detailed
+  :category: wrecker
+  :from: HHS
+  :from_truth: guessed
+  :title: Consultant
+  :start_date: 2025-04-14
+  :start_date_truth: reported
+  :comment: Showed up at the agency to do secondary round of grant reviews. Assuming
+    a detail
+  :source: https://fedscoop.com/national-science-foundation-nsf-doge-grants-data-systems/
+  :agency: NSF
+- :id: navy-riley
+  :type: appointed
+  :category: enabler
+  :agency: DOD
+  :title: Chief of Naval Research
+  :office: Office of Naval Research
+  :supervisory: true
+  :project: modernization
+  :title_type: dept_head
+  :start_date: 2025-10-(30)?
+  :start_date_truth: reported
+  :source: https://www.thebulwark.com/p/scoop-trump-replaces-admiral-office-naval-research-rothenhaus-riley-doge

@@ -1,0 +1,90 @@
+---
+:id: OPM-05
+:agency: OPM
+:name: Gavin Kliger
+:name_truth: verified
+:source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
+:evidence:
+- Onboarded on 2025-01-20 as a provisional appt not to exceed 2025-05-20
+- Senior Advisor to the Director for IT
+- PD 6A38025 = matches for Gavin Kliger in a FOIA release
+- GS-15/10 with pay of $195,200
+- Converted to an excepted appointment on 2025-02-18
+- Has been detailed to the GSA, the IRS, USAID, USDA, and the U.S. Agency for Global
+  Media
+:positions:
+- :id: opm-temp-employee-5
+  :type: appointed
+  :category: wrecker
+  :agency: OPM
+  :start_date: 2025-01-20
+  :start_date_truth: verified
+  :nte_date: 2025-05-20
+  :nte_date_truth: verified
+  :end_date: 2025-02-18
+  :end_date_truth: verified
+  :end_type: replaced
+  :replaced_by: opm-perm-employee-5
+  :description: Provisional Appt NTE
+  :appt_type_code: 44
+  :appt_type: Schedule C
+  :excepted: true
+  :pd_code: 6A38025
+  :title: Senior Advisor to the Director for Information Technology
+  :title_type: advisor
+  :pay_grade: GS-15
+  :salary: "$195,200"
+  :series: '0301'
+  :supervisory: true
+  :office: Office of the Director
+  :table_note: hired at maximum salary for GS federal employee in DC
+  :source:
+  - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+  - https://www.documentcloud.org/documents/26028815-onboard-opm-employee-5/
+- :id: opm-perm-employee-5
+  :type: converted
+  :category: wrecker
+  :agency: OPM
+  :start_date: 2025-02-18
+  :start_date_truth: verified
+  :end_date: 2025-12-27
+  :end_date_truth: verified
+  :end_type: resigned
+  :description: Exc Appt NTE
+  :appt_type_code: 44
+  :appt_type: Schedule C
+  :excepted: true
+  :pd_code: 6A38025
+  :title: Senior Advisor to the Director for Information Technology
+  :title_type: advisor
+  :pay_grade: GS-15
+  :salary: "$195,200"
+  :series: '0301'
+  :supervisory: true
+  :office: Office of the Director
+  :comment: converted from provisional to excepted position
+  :source:
+  - https://www.documentcloud.org/documents/26028780-opm-new-hires/
+  - https://www.documentcloud.org/documents/26028815-onboard-opm-employee-5/
+  - https://www.linkedin.com/in/gavin-kliger-5a339b157/
+  - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.211.5.pdf
+- :id: opm-05-gsa
+  :type: detailed
+  :category: wrecker
+  :agency: GSA
+  :from: OPM
+  :from_truth: verified
+  :source: https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+  :table_note: detail in court doc
+- :id: opm-05-usagm
+  :type: detailed
+  :category: wrecker
+  :agency: USAGM
+  :from: OPM
+  :from_truth: verified
+  :start_date: 2025-03-(01)~
+  :start_date_truth: reported
+  :source:
+  - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.96.0.pdf
+  :table_note: detail in court doc, date from Kliger spotted at VOA around start of
+    March

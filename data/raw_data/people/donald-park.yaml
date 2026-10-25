@@ -1,0 +1,59 @@
+---
+:name: Donald Park
+:sort_name: Park
+:slug: donald-park
+:age: 45
+:skill: analyst
+:linkedin: https://www.linkedin.com/in/donaldkpark/
+:blurb: Mr. Park is the cofounder of a private equity company named Ionic Partners
+  and located in Austin, Texas. He has been involved in efforts to discover fraud
+  in SBA loans.
+:positions:
+- :id: dod-park
+  :type: detailed
+  :category: wrecker
+  :from: GSA
+  :from_truth: guessed
+  :agency: DOD
+  :office: Office of Strategic Capital
+  :source: https://www.linkedin.com/in/donaldkpark/
+- :id: gsa-park
+  :type: appointed
+  :category: wrecker
+  :sort_date: 2025-02-01
+  :start_date: 2025-02-XX
+  :start_date_truth: inferred
+  :agency: GSA
+  :table_note: assuming hired at GSA
+  :comment: Inferring detailed from GSA to SBA
+- :id: sba-park
+  :type: detailed
+  :category: wrecker
+  :from: GSA
+  :from_truth: guessed
+  :start_date: 2025-02-03
+  :start_date_truth: reported
+  :project:
+  - spending
+  - fraud
+  :title: Senior Advisor, DOGE
+  :title_type: advisor
+  :salary: "$167,603"
+  :agency: SBA
+  :comment: Reported in a tweet from the date
+  :table_note: guessing detail start from system access
+  :source:
+  - https://www.wired.com/story/edward-coristine-big-balls-doge-federal-pay-roll-system/
+  - https://www.bloomberg.com/news/newsletters/2026-01-09/data-reveals-details-about-doge-government-hiring
+- :id: detail-exim-park
+  :type: detailed
+  :category: wrecker
+  :from: GSA
+  :from_truth: guessed
+  :agency: EXIM
+  :project:
+  - spending
+  - fraud
+  :start_date: 2025-05-14
+  :start_date_truth: reported
+  :source: https://bsky.app/profile/marisakabas.bsky.social/post/3lp5iwrmfv22y
