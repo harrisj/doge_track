@@ -13,7 +13,7 @@ require_all File.join(File.dirname(__FILE__), '..', '..', 'models')
 OUTPUT_DIR = File.join(File.dirname(__FILE__), '..', '..', 'src', 'csv')
 
 def generate_agencies_csv
-  agencies = Agency.eager(:events, :positions).order_by('id').all
+  agencies = Agency.eager(:events, :positions).order_by(:id).all
 
   CSV.open(File.join(OUTPUT_DIR, 'agencies.csv'), 'w') do |csv|
     csv << %w[id name short_name parent_id slug num_events first_event_date last_event_date num_doge first_contact]
@@ -48,7 +48,7 @@ def generate_agencies_csv
 end
 
 def generate_people_csv
-  people = Person.eager(:positions).order_by('sort_name').all
+  people = Person.eager(:positions).order_by(:sort_name).all
 
   CSV.open(File.join(OUTPUT_DIR, 'people.csv'), 'w') do |csv|
     csv << %w[name sort_name slug age start_date sort_date start_agency agencies skill
@@ -86,7 +86,7 @@ def generate_people_csv
 end
 
 def generate_positions_csv
-  positions = Position.eager(:person, :agency).order_by('id').all
+  positions = Position.eager(:person, :agency).order_by(:id).all
 
   CSV.open(File.join(OUTPUT_DIR, 'positions.csv'), 'w') do |csv|
     csv << %w[id type agency agency_parent name doge_alias_id from_agency_id from_truth start_date start_date_truth

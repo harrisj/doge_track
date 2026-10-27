@@ -96,10 +96,12 @@ def create_event(event_hash)
 end
 
 # Load Agencies
-agencies_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'agencies.yaml'), symbolize_names: true)
-agencies_yaml.each do |a|
-  Agency.create(a.except(:events))
-  all_events += a.fetch(:events, [])
+agencies_dir = File.join(YAML_DIR, 'agencies')
+Dir.glob(File.join(agencies_dir, '*.yaml')).each do |agency_file|
+  agency_data = YAML.unsafe_load_file(agency_file, symbolize_names: true)
+  # agency_data should be a hash (one agency)
+  Agency.create(agency_data.except(:events))
+  all_events += agency_data.fetch(:events, [])
 end
 
 # Load publishers
@@ -127,9 +129,10 @@ entities_yaml.each do |src|
 end
 
 # Load People
-people_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'people.yaml'), symbolize_names: true)
+people_dir = File.join(YAML_DIR, 'people')
+Dir.glob(File.join(people_dir, '*.yaml')).each do |person_file|
+  p_hash = YAML.unsafe_load_file(person_file, symbolize_names: true)
 
-people_yaml.each do |p_hash|
   p_hash[:tech_links] = p_hash[:tech_links].join(', ') if p_hash[:tech_links]
   # If association is not set in YAML (blank/nil) and the person has no positions, set to "auxiliary"
   # t
@@ -185,8 +188,10 @@ people_yaml.each do |p_hash|
   end
 end
 
-aliases_yaml = YAML.unsafe_load_file(File.join(YAML_DIR, 'aliases.yaml'), symbolize_names: true)
-aliases_yaml.each do |alias_hash|
+aliases_dir = File.join(YAML_DIR, 'aliases')
+Dir.glob(File.join(aliases_dir, '*.yaml')).each do |alias_file|
+  alias_hash = YAML.unsafe_load_file(alias_file, symbolize_names: true)
+
   a = DogeAlias.new(alias_hash.slice(:id))
 
   agency = Agency[alias_hash[:agency]]
@@ -286,7 +291,7 @@ systems_yaml.each do |system_hash|
   # s.save
 end
 
-interagency_events = YAML.unsafe_load_file(File.join(YAML_DIR, 'agencies', 'interagency.yaml'), symbolize_names: true)
+interagency_events = YAML.unsafe_load_file(File.join(YAML_DIR, 'interagency.yaml'), symbolize_names: true)
 all_events += interagency_events
 
 sorted_events = all_events.each_with_index.sort_by { |e, idx| [Date.edtf(e[:date].to_s), idx] }.map(&:first)

@@ -10,7 +10,7 @@ SCRIPTS_DIR = File.join(File.dirname(__FILE__), '..', 'scripts')
 
 CASES_DIR = File.join(SCRIPTS_DIR, '..', 'raw_data', 'cases')
 AGENCIES_DIR = File.join(SCRIPTS_DIR, '..', 'raw_data', 'agencies')
-INTERAGENCY_FILE = File.join(AGENCIES_DIR, 'interagency.yaml')
+INTERAGENCY_FILE = File.join(SCRIPTS_DIR, '..', 'raw_data', 'interagency.yaml')
 
 cases_files = Dir[File.join(CASES_DIR, '*.yaml')]
 cases = cases_files.map { |f| YAML.unsafe_load_file(f, symbolize_names: true) }.flatten
@@ -97,7 +97,7 @@ agencies.each do |a|
   end
 
   agent_file = File.join(AGENCIES_DIR, "#{slug}.yaml")
-  schema_hdr = "# yaml-language-server: $schema=../schemas/agencies-file.json\n"
+  schema_hdr = "# yaml-language-server: $schema=../../schemas/agency.json\n"
   out_yaml = YAML.dump(a, line_width: 100, stringify_names: true, header: false)
   File.open(agent_file, 'w') do |file|
     file.write(schema_hdr, out_yaml.gsub(/^- /, "\n- "))

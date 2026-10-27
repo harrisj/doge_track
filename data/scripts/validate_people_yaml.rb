@@ -88,7 +88,7 @@ out.each do |p|
     next
   end
   person_file = File.join(PEOPLE_DIR, "#{slug}.yaml")
-  schema_hdr = "# yaml-language-server: $schema=../schemas/people-file.json\n"
+  schema_hdr = "# yaml-language-server: $schema=../../schemas/person.json\n"
   out_yaml = YAML.dump(p, line_width: 100, stringify_names: true, header: false)
   File.open(person_file, 'w') do |file|
     file.write(schema_hdr, out_yaml.gsub(/^- /, "\n- "))

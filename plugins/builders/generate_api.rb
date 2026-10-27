@@ -131,7 +131,7 @@ module Builders
 
     def generate_agencies_json
       file = site.in_destination_dir('api', 'agencies.json')
-      agencies = Agency.eager(:events, :positions).order_by('id').all
+      agencies = Agency.eager(:events, :positions).order_by(:id).all
 
       out = agencies.map do |a|
         h = agency_ref(a)

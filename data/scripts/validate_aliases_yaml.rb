@@ -47,7 +47,7 @@ out.each do |a|
     next
   end
   alias_file = File.join(ALIASES_DIR, "#{slug}.yaml")
-  schema_hdr = "# yaml-language-server: $schema=../schemas/aliases-file.json\n"
+  schema_hdr = "# yaml-language-server: $schema=../../schemas/alias.json\n"
   out_yaml = YAML.dump(a, line_width: 100, stringify_names: true, header: false)
   File.open(alias_file, 'w') do |file|
     file.write(schema_hdr, out_yaml.gsub(/^- /, "\n- "))

@@ -5,9 +5,16 @@ require 'date'
 require 'edtf'
 
 systems_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'systems.yaml')
-aliases_file = File.join(File.dirname(__FILE__), '..', 'raw_data', 'aliases.yaml')
+aliases_dir = File.join(File.dirname(__FILE__), '..', 'raw_data', 'aliases')
 
-aliases = YAML.unsafe_load_file(aliases_file, symbolize_names: true)
+# Load all alias files from the directory
+aliases = []
+if Dir.exist?(aliases_dir)
+  Dir.glob(File.join(aliases_dir, '*.yaml')).each do |f|
+    aliases << YAML.unsafe_load_file(f, symbolize_names: true)
+  end
+end
+
 systems = YAML.unsafe_load_file(systems_file, symbolize_names: true)
 
 aliases_lookup = {}
