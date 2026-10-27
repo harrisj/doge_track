@@ -17,14 +17,14 @@ There is no requirement to tell me if you are using the data, but I hope you wou
 
 As mentioned in the [About This Data](/about/this-data) page, this data for this site is maintained as a series of YAML files which are processed and imported into a database which is used to generate the site. These files can be retrieved directly from the [Github repo](https://github.com/harrisj/doge_track/data), but for convenience the direct file downloads are below:
 
-- [agencies.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/agencies.yaml)
-- [aliases.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/aliases.yaml)
+- [agencies/](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/agencies/)
+- [aliases/](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/aliases/)
 - [cases.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/cases.yaml)
 - [change_log.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/change_log.yaml)
 - [documents.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/documents.yaml)
 - [exec_orders.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/exec_orders.yaml)
 - [interagency.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/interagency.yaml) (events that span agencies)
-- [people.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/people.yaml) (includes their positions at agencies)
+- [people/](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/people/) (includes their positions at agencies)
 - [publishers.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/publishers.yaml)
 - [questions.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/questions.yaml)
 - [roundups.yaml](https://raw.githubusercontent.com/harrisj/doge_track/refs/heads/main/data/raw_data/roundups.yaml) (DOGE listings from NYT, ProPublica, etc.)
