@@ -18,7 +18,7 @@ Here are the current members of DOGE that I have linked to specific positions, l
 <div class="tabs tabs-border mt-10">
   <input type="radio" name="people-tabs" class="tab" aria-label="Starts By Date" checked="checked" />
   <div class="tab-content">
-    {% people = Person.eager_graph({positions: :agency}).order(:sort_date, Sequel[:agency][:name], :sort_name).all %}
+    {% people = Person.exclude(association: 'auxiliary').eager_graph({positions: :agency}).order(:sort_date, Sequel[:agency][:name], :sort_name).all %}
 
     {% last_key = "" %}
     <table class="table table-xs md:table-sm xl:table-md py-5 mb-0 table-zebra">
@@ -50,8 +50,8 @@ Here are the current members of DOGE that I have linked to specific positions, l
 
   <input type="radio" name="people-tabs" class="tab" aria-label="Changes by Month"/>
     <div class="tab-content">
-        {% grouped_by_start = Person.all.reject {|p| p.start_date.nil? }.group_by {|p| p.start_date.strftime("%Y-%m") } %}
-        {% grouped_by_end = Person.all.reject {|p| p.govt_exit_date.nil? }.group_by {|p| p.govt_exit_date.strftime("%Y-%m") } %}
+        {% grouped_by_start = Person.exclude(association: 'auxiliary').all.reject {|p| p.start_date.nil? }.group_by {|p| p.start_date.strftime("%Y-%m") } %}
+        {% grouped_by_end = Person.exclude(association: 'auxiliary').all.reject {|p| p.govt_exit_date.nil? }.group_by {|p| p.govt_exit_date.strftime("%Y-%m") } %}
 
         {% start_date = Date.new(2025, 1, 1) %}
         {% current_date = Date.today %}
