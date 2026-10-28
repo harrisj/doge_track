@@ -75,4 +75,23 @@ positions:
   title_type: cto
   start_date: 2025-09-(01)~
   start_date_truth: reported
-  source: https://fedscoop.com/hhs-has-new-doge-affiliated-technology-chief-cto/
+  end_date: 2026-07-28
+  end_date_truth: guessed
+  end_type: replaced
+  replaced_by: hhs-terrell-advisor-demotion
+  source:
+  - https://fedscoop.com/hhs-has-new-doge-affiliated-technology-chief-cto/
+  - >-
+    https://fedscoop.com/records-show-white-house-doge-involvement-in-national-science-foundation-grant-terminations/
+
+- id: hhs-terrell-advisor-demotion
+  category: wrecker
+  type: demotion
+  agency: HHS
+  title: Special Advisor to the CIO
+  title_type: advisor
+  start_date: 2026-07-28
+  start_date_truth: guessed
+  table_note: Reported later he is no longer CTO, guessing linked to Clark Minor departure
+  source: >-
+    https://fedscoop.com/records-show-white-house-doge-involvement-in-national-science-foundation-grant-terminations/
