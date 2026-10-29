@@ -3,12 +3,26 @@
 require 'yaml'
 require 'date'
 
-LOOKBACK_WEEKS = 12
+LOOKBACK_WEEKS = 1
+
+SPLIT_START = Date.parse('2026-10-25')
+SPLIT_BASE = 'afe019892e9b45dc5d2b9243bf7fc058b42fd45f'
 
 CHANGES_FILE = File.join(File.dirname(__FILE__), '..', '..', 'src', '_data', 'changes.yml')
 
 # git log -p --since="2025-06-10" --until="2025-06-12" ./data/raw_data/people.yaml | grep 'id:'
 # git log -p --since="2025-06-10" --until="2025-06-12" ./data/raw_data/agencies.yaml | grep 'id:'
+
+# Diffs from the start of the week, or from the post-split tree when the
+# week contains the file split. Diffing against the pre-split tree makes the
+# mechanical move of whole files into per-agency directories read as a full
+# rewrite, so every agency/event/person shows up as new.
+def week_diff_base(key)
+  end_date = key + 6
+  return SPLIT_BASE if SPLIT_START.between?(key, end_date)
+
+  "@{#{key.iso8601} 00:00}"
+end
 
 def load_changes(week_changes)
   changes = YAML.unsafe_load_file(CHANGES_FILE, symbolize_names: true)
@@ -44,7 +58,7 @@ def count_changed(week_changes)
     rec[:deleted] = 0
 
     # puts "git diff --numstat '@{#{rec[:start].iso8601} 00:00}..@{#{rec[:end].iso8601} 23:59}'"
-    log_output = `git diff --numstat '@{#{rec[:start].iso8601} 00:00}..@{#{rec[:end].iso8601} 23:59}'`
+    log_output = `git diff --numstat '#{week_diff_base(rec[:start])}..@{#{rec[:end].iso8601} 23:59}'`
     log_output.each_line do |l|
       next unless (match = l.match(/^(\d+)\s+(\d+)\s+([^\s]+)$/))
 
@@ -63,15 +77,20 @@ def diff_people(week_changes)
     rec = week_changes[key]
     # puts "git diff '@{#{rec[:start].iso8601} 00:00}..@{#{rec[:end].iso8601} 23:59}' -- ./data/raw_data/people.yaml"
 
-    log_output = `git diff '@{#{rec[:start].iso8601} 00:00}..@{#{rec[:end].iso8601} 23:59}' -- ./data/raw_data/people.yaml`
+    use_dir = rec[:start] >= SPLIT_START
+    log_output = if use_dir
+                   `git diff '#{week_diff_base(rec[:start])}..@{#{rec[:end].iso8601} 23:59}' -- ./data/raw_data/people/`
+                 else
+                   `git diff '#{week_diff_base(rec[:start])}..@{#{rec[:end].iso8601} 23:59}' -- ./data/raw_data/people.yaml`
+                 end
     rec[:positions] = []
     rec[:names] = []
     log_output.each_line do |l|
-      if l =~ /^\+\s+- id: /
-        id = l.gsub(/^\+\s+- id: /, '').strip
+      if l =~ /^\+\s*- id: /
+        id = l.sub(/^\+\s*- id: /, '').strip
         rec[:positions].append(id)
-      elsif l =~ /^\+- name: /
-        name = l.gsub(/^\+- name: /, '').strip
+      elsif l =~ /^\+\s*-?\s*name: /
+        name = l.sub(/^\+\s*-?\s*name: /, '').strip
         rec[:names].append(name)
       end
     end
@@ -87,12 +106,22 @@ def diff_events(week_changes)
     rec[:agencies] = []
     rec[:events] = []
 
-    ['agencies.yaml', 'interagency.yaml'].each do |file|
-      log_output = `git diff '@{#{rec[:start].iso8601} 00:00}..@{#{rec[:end].iso8601} 23:59}' -- ./data/raw_data/#{file}`
+    use_dir = rec[:start] >= SPLIT_START
+    files = if use_dir
+              ['./data/raw_data/agencies/', './data/raw_data/interagency.yaml']
+            else
+              ['agencies.yaml', 'interagency.yaml']
+            end
+    files.each do |spec|
+      log_output = if use_dir
+                     `git diff '#{week_diff_base(rec[:start])}..@{#{rec[:end].iso8601} 23:59}' -- #{spec}`
+                   else
+                     `git diff '#{week_diff_base(rec[:start])}..@{#{rec[:end].iso8601} 23:59}' -- ./data/raw_data/#{spec}`
+                   end
       log_output.each_line do |l|
-        next unless l =~ /^\+\s+id: /
+        next unless l =~ /^\+\s*-?\s*id: /
 
-        id = l.gsub(/^\+\s+id: /, '').strip
+        id = l.sub(/^\+\s*-?\s*id: /, '').strip
 
         if id.size == 8
           rec[:events].append(id)
