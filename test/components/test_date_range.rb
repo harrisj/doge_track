@@ -11,6 +11,11 @@ class TestDateRange < Bridgetown::Test
       ::Atoms::DateRange.new(start_date: start_date, end_date: end_date)
     end
 
+    before do
+      @site = Bridgetown::Site.new(Bridgetown::Current.preloaded_configuration)
+      Bridgetown::Current.site = @site
+    end
+
     it 'is not null' do
       expect(subject).wont_be_nil
     end
@@ -18,7 +23,7 @@ class TestDateRange < Bridgetown::Test
     it 'uses the compact date/year format' do
       rendered = Bridgetown::TemplateView.render(subject).call
 
-      expect(rendered).must_equal '<span class="md:text-nowrap my-date"></span>'
+      expect(rendered).must_equal '<span class="md:text-nowrap my-date">10/01/25-10/07/25</span>'
     end
   end
 end

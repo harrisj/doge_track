@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'bridgetown'
+Bridgetown::Current.preloaded_configuration = Bridgetown.configuration
 require 'bridgetown_sequel'
 Bridgetown.load_tasks
 
@@ -16,7 +17,7 @@ task deploy: [:clean, 'frontend:build', 'data:deploy_db'] do
 end
 
 desc 'Build the site in a test environment'
-task :test do
+task :test_site do
   ENV['BRIDGETOWN_ENV'] = 'test'
   Bridgetown::Commands::Build.start
 end
