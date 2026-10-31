@@ -322,18 +322,6 @@ DB.create_table! :events_people do
   unique %i[name event_id]
 end
 
-DB.create_table! :people_positions do
-  foreign_key :name, :people, null: false, type: :string
-  foreign_key :position_id, :positions, null: false, type: :string
-  unique %i[name position_id]
-end
-
-DB.create_table! :doge_aliases_positions do
-  foreign_key :doge_alias_id, :doge_aliases, null: false, type: :string
-  foreign_key :position_id, :positions, null: false, type: :string
-  unique %i[position_id doge_alias_id]
-end
-
 DB.create_table! :govt_systems_projects do
   foreign_key :project_id, :projects, type: :string
   foreign_key :govt_system_id, :govt_systems, type: :string
