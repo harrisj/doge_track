@@ -59,9 +59,22 @@ positions:
   title_type: cio
   start_date: 2025-09-12
   start_date_truth: reported
+  end_date: 2026-09-14
+  end_date_truth: reported
+  end_type: replaced
+  replaced_by: usda-berry-farmer
   project:
   - modernization
   - impunity
   supervisory: true
   source: >-
     https://www.nextgov.com/people/2025/09/agriculture-taps-doge-associate-its-tech-lead-reassigning-previous-cio/408093/
+
+- id: usda-berry-farmer
+  type: demotion
+  category: builder
+  agency: USDA
+  start_date: 2026-09-14
+  start_date_truth: reported
+  table_note: Unknown role with One Farmer, One File initiative
+  source: https://fedscoop.com/sam-berry-usda-cio-one-farmer-one-file/
