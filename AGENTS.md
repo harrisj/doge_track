@@ -76,7 +76,8 @@ The YAML scripts are the source of truth and are used to completely rebuild the
 database on any load. Any alterations made to the database will not persist. The
 primary purpose of the database is for building pages and doing analysis.
 
-The database is at `data/doge.db` When possible, use the Sqlite MCP to query the database instead of using bash CLI commands.
+The database is at `data/doge.db` When possible, use the Sqlite MCP to query the
+database instead of using bash CLI commands.
 
 ### Core Tables
 | Table | Key Columns | Notes |
