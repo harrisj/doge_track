@@ -3,7 +3,7 @@
 require 'yaml'
 require 'date'
 
-LOOKBACK_WEEKS = 1
+LOOKBACK_WEEKS = 2
 
 SPLIT_START = Date.parse('2026-10-25')
 SPLIT_BASE = 'afe019892e9b45dc5d2b9243bf7fc058b42fd45f'
