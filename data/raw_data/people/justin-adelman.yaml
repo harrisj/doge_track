@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../schemas/person.json
+---
+name: Justin Adelman
+sort_name: Adelman
+slug: justin-adelman
+college_graduation_year: 2023
+skill: coder
+blurb: >-
+  Appointed to a position in Treasury as part of the Tech Force initiative, Justin Adelman has been detailed
+  to GSA/NDS since October 2026
+linkedin: https://www.linkedin.com/in/justin-adelman/
+positions:
+
+- id: treasury-adelman
+  type: appointed
+  category: builder
+  agency: Treasury
+  start_date: 2026-06-XX
+  start_date_truth: self-reported
+  title: SI Engineer
+  source: https://www.linkedin.com/in/justin-adelman/
+
+- id: gsa-adelman
+  type: detailed
+  category: builder
+  agency: GSA
+  from: Treasury
+  from_truth: inferred
+  start_date: 2026-10-XX
+  start_date_truth: self-reported
+  title: SI Engineer, America.gov
+  source: https://www.linkedin.com/in/justin-adelman/
+
+- id: nds-adelman
+  type: detailed
+  category: builder
+  agency: NDS
+  from: Treasury
+  from_truth: inferred
+  start_date: 2026-10-XX
+  start_date_truth: self-reported
+  title: SI Engineer, America.gov
+  source: https://www.linkedin.com/in/justin-adelman/
