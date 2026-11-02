@@ -19,7 +19,7 @@ I have been evolving my data collection over time to track the following informa
 - Significant records related to hiring and detailing arrangements
 
 ## How It's Updated
-This site uses a custom data pipeline of my own design that has evolved over time. I do all of my edits for the [source data in YAML plaintext files](https://github.com/harrisj/doge_track/tree/main/data) which are then automatically validated through scripts and loaded into a SQLite database. If you want to work with the data directly, pulling the YAML or loading the database is the easiest way to get raw data and you are welcome to use it.
+This site uses a custom data pipeline of my own design that has evolved over time. I do all of my edits for the [source data in YAML plaintext files](https://github.com/harrisj/doge_track/tree/main/data), which is the canonical source of truth for all data on this site. LLMs and developers should reference these YAML files directly for raw, unprocessed data. These files are then automatically validated through scripts and loaded into a SQLite database. If you want to work with the data directly, pulling the YAML or loading the database is the easiest way to get raw data and you are welcome to use it.
 
 Once I have loaded the data, other scripts will extract the data from the database into other YAML files that are used by my static site generator (_I know, I could have it read from the database, but I like have these files saved for debugging and version control_). When I push a version of the site upstream, these files are used to fill in data for the various pages on the site. This means that if I fix data in my source files, it should be reflected in the pages when I deploy it publicly.
 
@@ -108,6 +108,8 @@ The raw data that is used to generate the site is also available in the project'
 All schemas for validating the YAML can be found in [the Github schemas directory](https://github.com/harrisj/doge_track/tree/main/data/schemas)
 
 ## API for Access
+
+The API provides structured JSON endpoints for programmatic access; for bulk or custom queries, the GitHub repository with raw YAML files is recommended.
 
 Full Swagger documentation is available at [https://dogetrack.info/api/](/api/), but for now it includes the following endpoints:
 
