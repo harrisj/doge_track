@@ -7,8 +7,22 @@ skill: lawyer
 linkedin: https://www.linkedin.com/in/seth-cohen-091538101/
 age: 31
 blurb: >-
-  Identified by ProPublica as a new DOGE representative within the Nuclear Regulatory Commission, he is
-  a lawyer with five years of work experience and 0 years of nuclear regulatory experience.
+  Identified by ProPublica as a new DOGE representative within the Nuclear Regulatory Commission, he was
+  a lawyer with five years of work experience and 0 years of nuclear regulatory experience. He recently
+  left government service to found an energy startup with fellow DOGE member Adam Blake
+govt_exit_date: 2026-06-XX
+govt_exit_type: resigned
+govt_exit_truth: self-reported
+affiliations:
+
+- entity_id: mavria
+  role: founder
+  start_date: 2026-06-XX
+  start_date_truth: self-reported
+  connection_truth: self-reported
+  timeframe: after
+  immediate: true
+  id: 1JlJU6Fx
 positions:
 
 - id: energy-cohen
@@ -47,6 +61,9 @@ positions:
   title: Chief Counsel for Nuclear Policy
   start_date: 2025-10-XX
   start_date_truth: self-reported
+  end_date: 2026-06-XX
+  end_date_truth: self-reported
+  end_type: resigned
   project: deregulation
   source:
   - https://www.propublica.org/article/trump-nuclear-power-nrc-safety-doge-vought
