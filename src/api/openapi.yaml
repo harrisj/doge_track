@@ -116,7 +116,7 @@ paths:
     get:
       summary: systems.json
       description: A listing of all the systems in DOGE Track.
-      operationId: getSystem
+      operationId: getSystems
       responses:
         "200":
           description: Successful operation
@@ -192,6 +192,44 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/EntityRecord"
+  /systems/{id}.json:
+    get:
+      summary: systems/{id}.json
+      description: Find a system by its ID
+      operationId: getSystem
+      parameters:
+        - name: id
+          in: path
+          description: ID of the system to return
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SystemRecord"
+  /events/{id}.json:
+    get:
+      summary: events/{id}.json
+      description: Find an event by its ID
+      operationId: getEvent
+      parameters:
+        - name: id
+          in: path
+          description: ID of the event to return
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EventRecord"
 components:
   schemas:
     AccessType:
@@ -243,9 +281,9 @@ components:
         - oversight
         - access
         - official
-        - milestone
         - other
         - report
+        - website
     PositionType:
       enum:
         - appointed
@@ -362,6 +400,9 @@ components:
           $ref: "#/components/schemas/PersonRef"
         agency:
           $ref: "#/components/schemas/AgencyRef"
+        name_truth:
+          type: string
+          description: The truth assessment for the alias name, if known
       required:
         - id
         - evidence
@@ -380,6 +421,9 @@ components:
           example: Agriculture
         parent_id:
           type: string
+        slug:
+          type: string
+          description: The unique slug for the agency
         path:
           description: The location of the full record for the agency
           type: string
@@ -388,6 +432,7 @@ components:
         - id
         - name
         - short_name
+        - slug
         - path
     AgencyItem:
       allOf:
@@ -449,7 +494,7 @@ components:
     EntityItem:
       type: object
       allOf:
-        - $ref: "#/components/schemas/AgencyRef"
+        - $ref: "#/components/schemas/EntityRef"
         - type: object
           properties:
             path:
@@ -486,18 +531,23 @@ components:
         sort_date:
           type: string
           description: A date in ISO 8601 format
+        time:
+          type: string
+          description: The time of day the event occurred, if known
         text:
           type: string
+        linkified_text:
+          type: string
+          description: The event text with internal record links resolved
+        notable:
+          type: boolean
         fuzz:
           type: string
         comment:
           type: string
-        sources:
-          description: The sources for this info
-          type: array
-          items:
-            $ref: "#/components/schemas/SourceRecord"
         case_no:
+          type: string
+        system_id:
           type: string
         agencies:
           type: array
@@ -507,20 +557,15 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/PersonRef"
-        aliases:
+        doge_aliases:
           type: array
           items:
             $ref: "#/components/schemas/AliasRef"
-        projects:
-          type: array
-          items:
-            $ref: "#/components/schemas/ProjectRef"
       required:
         - id
         - type
         - date
         - text
-        - source
         - agencies
     PersonRef:
       type: object
@@ -555,6 +600,10 @@ components:
               type: integer
             num_positions:
               type: integer
+            systems_accessed:
+              type: array
+              items:
+                $ref: "#/components/schemas/SystemAccessRecord"
             agencies:
               type: array
               items:
@@ -813,6 +862,11 @@ components:
         doge_modifications:
           description: A description of modifications that DOGE made to the system if known
           type: string
+        projects:
+          description: An array of project references for this system
+          type: array
+          items:
+            $ref: "#/components/schemas/ProjectRef"
         agency:
           description: If not part of an Agency record, a reference to what agency this system belongs to.
           $ref: "#/components/schemas/AgencyRef"
@@ -836,6 +890,9 @@ components:
         type:
           description: The type of access being granted
           $ref: "#/components/schemas/AccessType"
+        doge_alias_id:
+          description: The DOGE alias of the person granted access, if known
+          type: string
         date_requested:
           description: "If known, the date access was requested"
           $ref: "#/components/schemas/EdtfType"
@@ -862,6 +919,9 @@ components:
           type: boolean
         ao_truth:
           $ref: "#/components/schemas/TruthType"
+        bypassed:
+          description: Set to true if the access was bypassed or not enforced
+          type: boolean
         date_last_used:
           description: "The date last used if provided"
           $ref: "#/components/schemas/EdtfType"

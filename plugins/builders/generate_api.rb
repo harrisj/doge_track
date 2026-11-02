@@ -25,6 +25,7 @@ module Builders
         name: agency.name,
         short_name: agency.short_name,
         parent_id: agency.parent_id,
+        slug: agency.slug,
         path: api_path("agencies/#{agency.slug}.json")
       }
     end
@@ -132,12 +133,13 @@ module Builders
     def generate_agencies_json
       file = site.in_destination_dir('api', 'agencies.json')
       agencies = Agency.eager(:events, :positions).order_by(:id).all
+      doge_base_ids = Agency.select(:id).where(doge_base: true).map(&:id)
 
       out = agencies.map do |a|
         h = agency_ref(a)
         h[:num_events] = a.events.count
         h[:num_positions] = a.positions.count
-        h[:num_doge] = a.positions.map { |p| p.name || p.doge_alias_id }.uniq.count
+        h[:num_doge] = a.positions.count { |p| doge_base_ids.include?(p.agency_id) || p.doge_alias_id }
         h
       end
 
@@ -185,7 +187,7 @@ module Builders
         h[:aliases] = person.doge_aliases.map(&:id)
         h[:events] = person.events.map { |e| event_record(e) }
         h[:positions] = person.positions.map { |p| position_record(p) }
-        h[:system_access] = person.system_roles.map { |r| access_record(r) }
+        h[:systems_accessed] = person.system_roles.map { |r| access_record(r) }
         h[:affiliations] = person.affiliations.map { |a| affiliation_record(a) }
 
         file = site.in_destination_dir('api', 'people', "#{person.slug}.json")
@@ -195,14 +197,14 @@ module Builders
     end
 
     def generate_events_json
-      # by_month = {}
-      events = Event.eager(:agencies, :people, :doge_aliases).order_by('date').all
+      events = Event.eager(:agencies, :people, :doge_aliases, :sources).order_by('date').all
 
       out = events.map do |event|
         h = event.to_hash
         h[:people] = event.people.map { |p| person_ref(p) }
         h[:agencies] = event.agencies.map { |a| agency_ref(a) }
         h[:doge_aliases] = event.doge_aliases.map { |a| alias_ref(a) }
+        h[:sources] = event.sources.map { |src| source_record(src) }
 
         # by_month_key = date.strftime("%Y-%m")
         # by_month[by_month_key] ||= []
@@ -214,6 +216,12 @@ module Builders
       file = site.in_destination_dir('api', 'events.json')
       FileUtils.mkdir_p(File.dirname(file))
       File.write(file, JSON.pretty_generate(out))
+
+      events.each_with_index do |event, i|
+        file = site.in_destination_dir('api', 'events', "#{event.id}.json")
+        FileUtils.mkdir_p(File.dirname(file))
+        File.write(file, JSON.pretty_generate(out[i]))
+      end
     end
 
     def generate_doge_aliases_json
@@ -237,6 +245,31 @@ module Builders
       out = systems.map { |x| system_record(x) }
 
       file = site.in_destination_dir('api', 'systems.json')
+      File.write(file, JSON.pretty_generate(out))
+
+      systems.each do |x|
+        file = site.in_destination_dir('api', 'systems', "#{x.id}.json")
+        FileUtils.mkdir_p(File.dirname(file))
+        File.write(file, JSON.pretty_generate(system_record(x)))
+      end
+    end
+
+    def generate_index_json
+      out = {
+        name: 'DOGE Track API',
+        collections: {
+          agencies: { path: api_path('agencies.json'), count: Agency.count },
+          people: { path: api_path('people.json'), count: Person.count },
+          events: { path: api_path('events.json'), count: Event.count },
+          systems: { path: api_path('systems.json'), count: GovtSystem.count },
+          projects: { path: api_path('projects.json'), count: Project.count },
+          entities: { path: api_path('entities.json'), count: Entity.count },
+          aliases: { path: api_path('aliases.json'), count: DogeAlias.count }
+        }
+      }
+
+      file = site.in_destination_dir('api', 'index.json')
+      FileUtils.mkdir_p(File.dirname(file))
       File.write(file, JSON.pretty_generate(out))
     end
 
@@ -290,6 +323,7 @@ module Builders
         generate_doge_aliases_json
         generate_projects_json
         generate_entities_json
+        generate_index_json
       end
     end
   end
