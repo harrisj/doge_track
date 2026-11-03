@@ -9,7 +9,7 @@ module EdtfLoader
       define_method(field) do
         return if values[field].nil?
 
-        Date.edtf(values[field])
+        EDTF.parse(values[field])
       end
     end
   end

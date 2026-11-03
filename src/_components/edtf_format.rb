@@ -6,7 +6,7 @@ require 'edtf'
 class EdtfFormat
   def initialize(date, format = :iso, filled = :none)
     @date = if date.is_a? String
-              Date.edtf(date)
+              EDTF.parse(date)
             else
               date
             end

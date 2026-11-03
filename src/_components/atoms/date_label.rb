@@ -8,7 +8,7 @@ module Atoms
     def initialize(date, date_format: :compact_year, padding: :none)
       super()
       @date = if date.is_a? String
-                ::Date.edtf(date)
+                ::EDTF.parse(date)
               else
                 date
               end

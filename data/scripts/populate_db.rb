@@ -58,7 +58,7 @@ def create_event(event_hash)
 
   event_hash.transform_keys!(event: :text, system: :system_id)
   event_hash[:date] = event_date
-  event_hash[:sort_date] = Date.edtf!(event_date.to_s).to_s
+  event_hash[:sort_date] = EDTF.parse!(event_date.to_s).to_s
 
   begin
     e = Event.create(event_hash.except(:case_no, :named, :linked, :named_aliases, :agency, :interagency_doge_reps,
@@ -285,7 +285,7 @@ load_systems
 
 all_events += load_interagency_events
 
-sorted_events = all_events.each_with_index.sort_by { |e, idx| [Date.edtf(e[:date].to_s), idx] }.map(&:first)
+sorted_events = all_events.each_with_index.sort_by { |e, idx| [EDTF.parse(e[:date].to_s), idx] }.map(&:first)
 
 sorted_events.each do |event|
   create_event(event)

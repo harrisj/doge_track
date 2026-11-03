@@ -61,7 +61,7 @@ def validate_agency_events(agencies)
 end
 
 def sort_events(events)
-  events.sort_by { |event| [Date.edtf(event[:date].to_s), event[:id]] }
+  events.sort_by { |event| [EDTF.parse(event[:date].to_s), event[:id]] }
 end
 
 def split_events(sorted_events, agencies)

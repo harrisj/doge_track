@@ -38,7 +38,7 @@ module Grid
     end
 
     def get_date(date)
-      date = Date.edtf(date) if date.is_a? String
+      date = EDTF.parse(date) if date.is_a? String
 
       if date.unspecified? :day
         @undated
