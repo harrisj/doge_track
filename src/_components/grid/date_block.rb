@@ -25,8 +25,8 @@ module Grid
     end
 
     def <=>(other)
-      self_date = date
-      other_date = other.date
+      self_date = date.is_a?(EDTF::Interval) ? date.min : date
+      other_date = other.date.is_a?(EDTF::Interval) ? other.date.min : other.date
 
       if self_date.year != other_date.year
         self_date.year <=> other_date.year

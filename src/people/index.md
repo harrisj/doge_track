@@ -36,11 +36,11 @@ Here are the current members of DOGE that I have linked to specific positions, l
             {% next unless person.positions.first.start_date %}
             {% key = "#{person.sort_date}-#{person.positions.first.agency_id}}}" %}
             <tr>
-                <td class="align_left align-top text-nowrap">{% if key != last_key %}{%@ Atoms::Icon 'appointed'%} {%@ Atoms::DateLabel person.positions.first.sort_date, date_format: :iso %}{% end %}</td>
+                <td class="align_left align-top text-nowrap">{% if key != last_key %}{%@ Atoms::Icon 'appointed'%} {%@ Atoms::DateLabel person.positions.first.sort_date, date_format: :iso, interval_display: :start %}{% end %}</td>
                 <td class="align-left align-top">{%@ Atoms::AgencyLink person.positions.first.agency_id %}</td>
                 <td class="align-left align-top">{%@ Atoms::PersonLink person %}</td>
                 <td class="align-left align-top hide-cell-mobile">{{ person_skill(person) }}</td>
-                <td class="align-left align-top text-nowrap">{% if person.govt_exit_date %}<b>{%@ Atoms::Icon 'offboard' %} {%@ Atoms::DateLabel person.govt_exit_date, date_format: :iso %}{% if person.govt_exit_truth == 'guessed' %}?{% end %}</b>{% elsif person.events.any? %}{% last_event = person.events.last %}{%@ Atoms::Icon 'sighting' %} {%@ Atoms::DateLabel last_event.date, date_format: :iso %}{% end %}</td>
+                <td class="align-left align-top text-nowrap">{% if person.govt_exit_date %}<b>{%@ Atoms::Icon 'offboard' %} {%@ Atoms::DateLabel person.govt_exit_date, date_format: :iso, interval_display: :end %}{% if person.govt_exit_truth == 'guessed' %}?{% end %}</b>{% elsif person.events.any? %}{% last_event = person.events.last %}{%@ Atoms::Icon 'sighting' %} {%@ Atoms::DateLabel last_event.date, date_format: :iso, interval_display: :end %}{% end %}</td>
             </tr>
             {% last_key = key %}
         {% end %}
@@ -50,8 +50,8 @@ Here are the current members of DOGE that I have linked to specific positions, l
 
   <input type="radio" name="people-tabs" class="tab" aria-label="Changes by Month"/>
     <div class="tab-content">
-        {% grouped_by_start = Person.exclude(association: 'auxiliary').all.reject {|p| p.start_date.nil? }.group_by {|p| p.start_date.strftime("%Y-%m") } %}
-        {% grouped_by_end = Person.exclude(association: 'auxiliary').all.reject {|p| p.govt_exit_date.nil? }.group_by {|p| p.govt_exit_date.strftime("%Y-%m") } %}
+        {% grouped_by_start = Person.exclude(association: 'auxiliary').all.reject {|p| p.start_date.nil? }.group_by {|p| p.positions.first.min_date_interval_to_date(:start_date).strftime("%Y-%m") } %}
+        {% grouped_by_end = Person.exclude(association: 'auxiliary').all.reject {|p| p.govt_exit_date.nil? }.group_by {|p| p.max_date_interval_to_date.strftime("%Y-%m") } %}
 
         {% start_date = Date.new(2025, 1, 1) %}
         {% current_date = Date.today %}

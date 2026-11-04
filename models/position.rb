@@ -2,6 +2,7 @@
 
 require 'sequel'
 require 'edtf'
+require_relative 'dt_utils'
 
 # Represents a single detailing agreement between two agencies
 class Position < Sequel::Model
@@ -46,5 +47,16 @@ class Position < Sequel::Model
 
   def self.end_in_year_month(year, month)
     Position.where(Sequel.like(:end_date, "#{year}-#{format('%02d', month)}%")).order_by(&:end_date)
+  end
+
+  # Interval helper methods
+  def min_date_interval_to_date(field = :start_date)
+    field_value = values[field]
+    DtUtils.parse_interval(field_value)&.first
+  end
+
+  def max_date_interval_to_date(field = :end_date)
+    field_value = values[field]
+    DtUtils.parse_interval(field_value)&.last
   end
 end

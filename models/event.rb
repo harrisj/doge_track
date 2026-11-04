@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'sequel'
+require_relative 'dt_utils'
 
 # Represents a single event
 class Event < Sequel::Model
@@ -32,5 +33,16 @@ class Event < Sequel::Model
   # Max date
   def self.max_date
     Date.parse(Event.max(:date))
+  end
+
+  # Interval helper methods
+  def min_date_interval_to_date(field = :date)
+    field_value = values[field]
+    DtUtils.parse_interval(field_value)&.first
+  end
+
+  def max_date_interval_to_date(field = :date)
+    field_value = values[field]
+    DtUtils.parse_interval(field_value)&.last
   end
 end

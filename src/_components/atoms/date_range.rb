@@ -23,7 +23,7 @@ module Atoms
 
       html lambda {
         <<~HTML.chomp
-          <span class="md:text-nowrap my-date">#{render Atoms::DateLabel.new(@start_date, date_format: @date_format, padding: @padding)}#{text -> { endash }}#{render Atoms::DateLabel.new(@end_date, date_format: @date_format, padding: @padding)}</span>
+          <span class="md:text-nowrap my-date">#{render Atoms::DateLabel.new(@start_date, date_format: @date_format, interval_display: :start, padding: @padding)}#{text -> { endash }}#{render Atoms::DateLabel.new(@end_date, date_format: @date_format, interval_display: :end, padding: @padding)}</span>
         HTML
       }
     end

@@ -39,12 +39,23 @@ module Grid
 
     def get_date(date)
       date = EDTF.parse(date) if date.is_a? String
+      date = date.min if date.is_a?(EDTF::Interval) && date.min
 
       if date.unspecified? :day
         @undated
       else
-        @days[date]
+        @days[day_key(date)] || @undated
       end
+    end
+
+    private
+
+    # Approximate EDTF dates hash differently than the plain Date keys we
+    # store, so normalize before looking up.
+    def day_key(date)
+      return date unless date.is_a?(Date) && date.approximate?
+
+      Date.new(date.year, date.month, date.day)
     end
 
     def initialize_events

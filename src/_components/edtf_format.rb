@@ -19,16 +19,33 @@ class EdtfFormat
     @filled == :filled
   end
 
-  def display_exact
+  def display_exact(date = @date)
+    date ||= @date
     case @format
     when :compact
-      "#{'  ' if fill?}#{@date.strftime('%-m/%d')}"
+      "#{'  ' if fill?}#{date.strftime('%-m/%d')}"
     when :compact_year
-      "#{'  ' if fill?}#{@date.strftime('%-m/%d/%y')}"
+      "#{'  ' if fill?}#{date.strftime('%-m/%d/%y')}"
     when :iso
-      "#{'  ' if fill?}#{@date.strftime('%Y-%m-%d')}"
+      "#{'  ' if fill?}#{date.strftime('%Y-%m-%d')}"
     when :human
-      @date.humanize
+      date.humanize
+    end
+  end
+
+  def display_interval
+    min_date = @date.min
+    max_date = @date.max
+    return '' if min_date.nil? && max_date.nil?
+
+    min_date ||= max_date
+    max_date ||= min_date
+    return display_exact(min_date) if min_date == max_date
+
+    if @format == :human
+      "from #{display_exact(min_date)} to #{display_exact(max_date)}"
+    else
+      "#{display_exact(min_date)}–#{display_exact(max_date)}"
     end
   end
 
@@ -38,11 +55,11 @@ class EdtfFormat
     humanized = "Sometime in #{@date.strftime('%b %Y')}"
     case @format
     when :compact
-      "#{'  ' if fill?}<abbr title=\"#{humanized}\">#{@date.strftime('%-m/XX')}</abbr>"
+      "#{'  ' if fill?}<abbr title=\"#{humanized}\">#{@date.strftime('%-m/XX')}</abbr>"
     when :compact_year
-      "#{'  ' if fill?}<abbr title=\"#{humanized}\">#{@date.strftime('%-m/XX/%y')}</abbr>"
+      "#{'  ' if fill?}<abbr title=\"#{humanized}\">#{@date.strftime('%-m/XX/%y')}</abbr>"
     when :iso
-      "#{'  ' if fill?}<abbr title=\"#{humanized}\">#{@date.strftime('%Y-%m-XX')}</abbr>"
+      "#{'  ' if fill?}<abbr title=\"#{humanized}\">#{@date.strftime('%Y-%m-XX')}</abbr>"
     when :human
       @date.humanize
     end
@@ -81,7 +98,9 @@ class EdtfFormat
   def to_s
     return '' if @date.nil?
 
-    if @date.approximate?
+    if @date.is_a?(EDTF::Interval)
+      display_interval
+    elsif @date.approximate?
       display_approximate
     elsif @date.uncertain?(:day)
       display_uncertain

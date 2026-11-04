@@ -2,6 +2,6 @@
 
 {% each_date do |rec| %}
    {% next unless rec.any? %}
-   <div>{%@ Atoms::DateLabel rec.date %}</div>
+   <div>{%@ Atoms::DateLabel rec.date, interval_display: :end %}</div>
    <div class="">{{ render rec }}</div>
 {% end %}

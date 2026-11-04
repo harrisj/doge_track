@@ -4,6 +4,7 @@ require 'date'
 require 'sequel'
 require 'edtf'
 require_relative 'edtf_loader'
+require_relative 'dt_utils'
 
 # Represents a single DOGE member
 class Person < Sequel::Model
@@ -52,5 +53,16 @@ class Person < Sequel::Model
     return unless positions.any?
 
     positions.first.agency_id
+  end
+
+  # Interval helper methods
+  def min_date_interval_to_date(field = :govt_exit_date)
+    field_value = values[field]
+    DtUtils.parse_interval(field_value)&.first
+  end
+
+  def max_date_interval_to_date(field = :govt_exit_date)
+    field_value = values[field]
+    DtUtils.parse_interval(field_value)&.last
   end
 end

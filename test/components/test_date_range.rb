@@ -26,4 +26,23 @@ class TestDateRange < Bridgetown::Test
       expect(rendered).must_equal '<span class="md:text-nowrap my-date">10/01/25-10/07/25</span>'
     end
   end
+
+  describe 'interval rendering' do
+    subject do
+      start_date = '2025-01-20/2025-12-31'
+      end_date = nil
+      ::Atoms::DateRange.new(start_date: start_date, end_date: end_date)
+    end
+
+    before do
+      @site = Bridgetown::Site.new(Bridgetown::Current.preloaded_configuration)
+      Bridgetown::Current.site = @site
+    end
+
+    it 'renders the interval range' do
+      rendered = Bridgetown::TemplateView.render(subject).call
+
+      expect(rendered).must_equal '<span class="md:text-nowrap my-date">≥1/20/25</span>'
+    end
+  end
 end

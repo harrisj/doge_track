@@ -2,14 +2,24 @@
 
 require 'json'
 require 'sanitize'
+require 'edtf'
 
 module Builders
   # Save out a static API
   class GenerateSearchIndex < SiteBuilder
+    def format_date(value, format = '%-m/%d/%y')
+      return nil if value.nil?
+
+      date = value.is_a?(EDTF::Interval) ? (value.min || value.max) : value
+      return nil if date.nil?
+
+      date.strftime(format)
+    end
+
     def person_record(person)
       first_agency = person.first_agency&.id
-      start_date = person.start_date&.strftime('%-m/%d/%y')
-      end_date = person.govt_exit_date ? person.govt_exit_date.strftime('%-m/%d/%y') : ''
+      start_date = format_date(person.start_date)
+      end_date = format_date(person.govt_exit_date) || ''
       agency_count = person.positions.filter { |p| p.agency.parent.nil? }.map(&:agency_id).uniq.count
       other_agency_str = first_agency && agency_count > 1 ? "(+#{agency_count - 1} other agencies)" : nil
       date_range = start_date ? "#{start_date}-#{end_date}" : nil
@@ -120,7 +130,7 @@ module Builders
         agency: agencies_list,
         name: (event.people.map(&:name) + event.doge_aliases.map(&:id)).join(','),
         content: Sanitize.fragment(event.linkified_text),
-        url: "/timeline/#{event.date.strftime('%Y/%m')}##{event.id}"
+        url: "/timeline/#{format_date(event.date, '%Y/%m')}##{event.id}"
       }
     end
 
