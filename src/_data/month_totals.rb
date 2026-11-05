@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
-require './data/scripts/models'
+require_relative '../../models/person'
 require 'date'
+require 'edtf'
 
 # Chart date range for month totals calculation
 chart_start_date = Date.parse('2025-01-20')
@@ -37,8 +38,13 @@ Person.exclude(association: 'auxiliary').all.each do |person|
     next unless pos.start_date
 
     start_date = pos.start_date
+    start_date = pos.min_interval_to_date(:start_date) || chart_start_date if start_date.is_a?(EDTF::Interval)
     start_date = chart_start_date if start_date < chart_start_date
-    end_date = pos.end_date || person.govt_exit_date || chart_end_date
+
+    end_date = pos.end_date
+    end_date = pos.max_date_interval_to_date(:end_date) if end_date.is_a?(EDTF::Interval)
+    end_date ||= person.govt_exit_date || chart_end_date
+    end_date = chart_end_date if end_date > chart_end_date
 
     # Overall months
     overall_keys_set.add(start_date.strftime(key_format))

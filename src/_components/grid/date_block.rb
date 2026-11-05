@@ -24,9 +24,21 @@ module Grid
       || @system_revokes.any? || @executive_orders.any?
     end
 
+    # Intervals can have open/unknown bounds (eg. "../2025-12-31"), which makes
+    # #min return nil. Fall back to the other bound so sorting never sees nil.
+    def sort_date_value
+      return @date unless @date.is_a?(EDTF::Interval)
+
+      @date.max || @date.min
+    end
+
     def <=>(other)
-      self_date = date.is_a?(EDTF::Interval) ? date.min : date
-      other_date = other.date.is_a?(EDTF::Interval) ? other.date.min : other.date
+      self_date = sort_date_value
+      other_date = other.sort_date_value
+
+      return 0 if self_date.nil? && other_date.nil?
+      return -1 if self_date.nil?
+      return 1 if other_date.nil?
 
       if self_date.year != other_date.year
         self_date.year <=> other_date.year
