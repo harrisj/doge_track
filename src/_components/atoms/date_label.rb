@@ -33,9 +33,9 @@ module Atoms
           # Interval has open/unspecified bounds; use available bound for single-date display
           single_date = min_date || max_date
           if single_date && min_date
-            "≥#{display_single_date(single_date)}"
+            display_abbr(single_date, interval_description(min_date), '≥')
           elsif single_date && max_date
-            "≤#{display_single_date(single_date)}"
+            display_abbr(single_date, interval_description(nil, max_date), '≤')
           else
             # Both nil: nothing to display
             ''
@@ -111,21 +111,37 @@ module Atoms
     end
 
     def display_interval(min_date, max_date)
+      description = interval_description(min_date, max_date)
       case @format
       when :compact
         <<~HTML.chomp
-          #{text -> { min_date.strftime('%-m/%d') }}–#{text -> { max_date.strftime('%-m/%d') }}
+          <abbr title="#{text -> { description }}">#{text -> { min_date.strftime('%-m/%d') }}–#{text -> { max_date.strftime('%-m/%d') }}</abbr>
         HTML
       when :compact_year
         <<~HTML.chomp
-          #{text -> { min_date.strftime('%-m/%d/%y') }}–#{text -> { max_date.strftime('%-m/%d/%y') }}
+          <abbr title="#{text -> { description }}">#{text -> { min_date.strftime('%-m/%d/%y') }}–#{text -> { max_date.strftime('%-m/%d/%y') }}</abbr>
         HTML
       when :iso
         <<~HTML.chomp
-          #{text -> { min_date.strftime('%Y-%m-%d') }}–#{text -> { max_date.strftime('%Y-%m-%d') }}
+          <abbr title="#{text -> { description }}">#{text -> { min_date.strftime('%Y-%m-%d') }}–#{text -> { max_date.strftime('%Y-%m-%d') }}</abbr>
         HTML
       when :human
-        text -> { "from #{@date.strftime('%b %d, %Y')} to #{@date.strftime('%b %d, %Y')}" }
+        interval_text = "from #{min_date.strftime('%b %d, %Y')} to #{max_date.strftime('%b %d, %Y')}"
+        "<abbr title=\"#{description}\">#{interval_text}</abbr>"
+      end
+    end
+
+    def display_abbr(single_date, description, prefix)
+      "<abbr title=\"#{description}\">#{prefix}#{display_single_date(single_date)}</abbr>"
+    end
+
+    def interval_description(min_date, max_date = nil)
+      if min_date && max_date
+        "Unknown day between #{min_date.strftime('%b %d, %Y')} and #{max_date.strftime('%b %d, %Y')}"
+      elsif min_date
+        "On or after #{min_date.strftime('%b %d, %Y')}"
+      else
+        "On or before #{max_date.strftime('%b %d, %Y')}"
       end
     end
 
