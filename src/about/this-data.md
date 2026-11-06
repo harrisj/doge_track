@@ -101,8 +101,9 @@ tools to assist in maintenance and debugging. These are LLMs that I mostly run
 locally on my laptop, with the occasional assist from a very large model running
 on [inference.coop](https://inference.coop). I use LLMs sparingly for specific
 purposes and have selected models that meet my ethical requirements for
-sourcing. For more details, you can read about my [Local LLM Stack in a post on
-my personal site](https://jacobharr.is/personal/local-llm-stack.html).
+sourcing. All agents operate within an external sandbox that limits their access
+and operations. For more details, you can read about my [Local LLM Stack in a
+post on my personal site](https://jacobharr.is/personal/local-llm-stack.html).
 
 I use the LLM agent strictly for drudgery work that I do not want to do on my own but that would benefit the site. Some recent examples:
 
@@ -113,10 +114,16 @@ I use the LLM agent strictly for drudgery work that I do not want to do on my ow
 - Analyze and fix the static API and ensure that the OpenAPI.yaml spec for it is correct.
 - Create a CLI tool for adding new events
 
-I will **never** use LLMs for creative tasks (like writing blurbs or designing
-the site's look and layout) or for any data tasks related to sourcing data and
-adding it to the site's data. The risks of LLMs fabricating events and data will
-always be unacceptably large, and I want to ensure that any mistakes or errors
-in the data are solely my own.
+I will **never** let agents merge commits and push new code up to the site by
+themselves. I will continue to explicitly review and approve all proposed
+changes. I will also **never** use LLMs for creative tasks (like writing blurbs
+or designing the site's look and layout) or for any data tasks related to
+sourcing data and adding it to the site's data. The risks of LLMs fabricating
+events and data will always be unacceptably large, and I want to ensure that any
+mistakes or errors in the data are solely my own.
 
-I will try to disclose in the git commit when I have used an LLM for a specific task.
+I will try to disclose in the git commit when I have used an LLM for a specific
+task. I have also uploaded the
+[AGENTS.md](https://github.com/harrisj/doge_track/blob/main/AGENTS.md) used by
+LLM agents on the site and will continue to refine its operation and
+constraints.
