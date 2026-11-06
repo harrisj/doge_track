@@ -93,3 +93,30 @@ If it wasn't already obvious, I consider myself more of a Backend engineer than 
 - [Render Cloud Application Platform](https://render.com/)
 
 And that's it. As always, this project will remain open source, with [the code available on my Github](https://github.com/harrisj/doge_track).
+
+## AI Usage Disclosure
+
+As part of the maintenance and development of this site, I have been using LLM
+tools to assist in maintenance and debugging. These are LLMs that I mostly run
+locally on my laptop, with the occasional assist from a very large model running
+on [inference.coop](https://inference.coop). I use LLMs sparingly for specific
+purposes and have selected models that meet my ethical requirements for
+sourcing. For more details, you can read about my [Local LLM Stack in a post on
+my personal site](https://jacobharr.is/personal/local-llm-stack.html).
+
+I use the LLM agent strictly for drudgery work that I do not want to do on my own but that would benefit the site. Some recent examples:
+
+- Help me implement a change to the EDTF date logic to support date ranges (for when we only know a possible range of dates for an event)
+- Analyze why the site is exhibiting a weird blinking behavior when rendering on Chrome
+- Help me add tests for some of my existing components so I can provide them to others
+- Find any blurbs where I am talking about a person who left as if they're still in DOGE
+- Analyze and fix the static API and ensure that the OpenAPI.yaml spec for it is correct.
+- Create a CLI tool for adding new events
+
+I will **never** use LLMs for creative tasks (like writing blurbs or designing
+the site's look and layout) or for any data tasks related to sourcing data and
+adding it to the site's data. The risks of LLMs fabricating events and data will
+always be unacceptably large, and I want to ensure that any mistakes or errors
+in the data are solely my own.
+
+I will try to disclose in the git commit when I have used an LLM for a specific task.
