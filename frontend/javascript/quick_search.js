@@ -260,8 +260,24 @@ async function initSearch() {
     }
 }
 // Swup: Initial load initialization - runs after DOM is loaded AND Font Awesome script has loaded
+// Defer the heavy Lunr index build until the browser is idle so it doesn't block Swup's
+// initialization or the initial render. Runs once per initial site load.
+let initialSearchInitQueued = false;
+
+function queueInitialSearchInit() {
+    if (initialSearchInitQueued) return;
+    initialSearchInitQueued = true;
+
+    const start = () => initSearch();
+    if (typeof window.requestIdleCallback === "function") {
+        window.requestIdleCallback(start);
+    } else {
+        window.setTimeout(start, 1);
+    }
+}
+
 window.addEventListener("load", () => {
-    initSearch();
+    queueInitialSearchInit();
 });
 swup.hooks.on("content:replace", () => {
     const searchInput = document.querySelector("#navbar-search");
