@@ -1,8 +1,8 @@
 ---
 - start: 2026-11-01
   end: 2026-11-07
-  added: 283
-  deleted: 35
+  added: 708
+  deleted: 304
   positions:
   - treasury-adelman
   - gsa-adelman
@@ -14,6 +14,8 @@
   agencies: []
   events:
   - 5F6sCJE2
+  notes:
+  - Added support to represent EDTF dates as ranges (eg, ../2025-12-31 for some day on or before)
 - start: 2026-10-25
   end: 2026-10-31
   notes:
