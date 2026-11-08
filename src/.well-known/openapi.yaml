@@ -825,7 +825,8 @@ components:
           type: string
         type:
           description: The type of the system
-          $ref: "#/components/schemas/SystemType"
+          allOf:
+            - $ref: "#/components/schemas/SystemType"
         description:
           description: A description for the system
           type: string
@@ -869,7 +870,8 @@ components:
             $ref: "#/components/schemas/ProjectRef"
         agency:
           description: If not part of an Agency record, a reference to what agency this system belongs to.
-          $ref: "#/components/schemas/AgencyRef"
+          allOf:
+            - $ref: "#/components/schemas/AgencyRef"
         access:
           description: An array of system access records for this system
           type: array
@@ -889,13 +891,15 @@ components:
           type: string
         type:
           description: The type of access being granted
-          $ref: "#/components/schemas/AccessType"
+          allOf:
+            - $ref: "#/components/schemas/AccessType"
         doge_alias_id:
           description: The DOGE alias of the person granted access, if known
           type: string
         date_requested:
           description: "If known, the date access was requested"
-          $ref: "#/components/schemas/EdtfType"
+          allOf:
+            - $ref: "#/components/schemas/EdtfType"
         date_requested_truth:
           $ref: "#/components/schemas/TruthType"
         date_granted:
@@ -913,7 +917,8 @@ components:
           type: string
         ao_type:
           description: The type of the authorizing official
-          $ref: "#/components/schemas/AoType"
+          allOf:
+            - $ref: "#/components/schemas/AoType"
         ao_doge:
           description: Set to true if access was directly authorized by a DOGE member
           type: boolean
@@ -924,17 +929,20 @@ components:
           type: boolean
         date_last_used:
           description: "The date last used if provided"
-          $ref: "#/components/schemas/EdtfType"
+          allOf:
+            - $ref: "#/components/schemas/EdtfType"
         date_used_truth:
           $ref: "#/components/schemas/TruthType"
         date_revoked:
           description: "The date access was revoked"
-          $ref: "#/components/schemas/EdtfType"
+          allOf:
+            - $ref: "#/components/schemas/EdtfType"
         date_revoked_truth:
           $ref: "#/components/schemas/TruthType"
         date_nte:
           description: "The date access is not to exceed"
-          $ref: "#/components/schemas/EdtfType"
+          allOf:
+            - $ref: "#/components/schemas/EdtfType"
         date_nte_truth:
           $ref: "#/components/schemas/TruthType"
         never_accessed:
@@ -957,7 +965,8 @@ components:
           description:
             The agency for the access. For SSP and SaaS applications, this might be different
             than the system agency.
-          $ref: "#/components/schemas/AgencyRef"
+          allOf:
+            - $ref: "#/components/schemas/AgencyRef"
         system:
           $ref: "#/components/schemas/SystemRecord"
       required:
