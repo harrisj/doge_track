@@ -2,6 +2,7 @@
   <nav class="grid grid-flow-col gap-8">
     <div>Built: {{ metadata.generated | date_to_string }}</div>
     <a href="/about/this-site">About This Site</a>
+    <a href="/api">API</a>
     <a href="https://github.com/harrisj/doge_track">Source Code</a>
     <a href="https://jacobharr.is/">About Me</a>
   </nav>
