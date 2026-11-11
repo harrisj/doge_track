@@ -16,6 +16,42 @@ externalDocs:
 servers:
   - url: https://dogetrack.info/api/
 paths:
+  /index.json:
+    get:
+      summary: index.json
+      description: An index of the API collections with counts of each collection.
+      operationId: getIndex
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiIndex"
+              example:
+                name: DOGE Track API
+                collections:
+                  agencies:
+                    path: https://dogetrack.info/api/agencies.json
+                    count: 85
+                  people:
+                    path: https://dogetrack.info/api/people.json
+                    count: 195
+                  events:
+                    path: https://dogetrack.info/api/events.json
+                    count: 1121
+                  systems:
+                    path: https://dogetrack.info/api/systems.json
+                    count: 116
+                  projects:
+                    path: https://dogetrack.info/api/projects.json
+                    count: 9
+                  entities:
+                    path: https://dogetrack.info/api/entities.json
+                    count: 29
+                  aliases:
+                    path: https://dogetrack.info/api/aliases.json
+                    count: 39
   /aliases.json:
     get:
       summary: aliases.json
@@ -32,6 +68,23 @@ paths:
                 type: array
                 items:
                   $ref: "#/components/schemas/AliasRecord"
+              example:
+                - id: CFPB-01
+                  evidence:
+                    - "A declaration from [AFL-CIO vs. DOL](https://storage.courtlistener.com/recap/gov.uscourts.dcd.277150/gov.uscourts.dcd.277150.73.2.pdf) outlines access granted to CFPB staff"
+                  person:
+                    name: Gavin Kliger
+                    sort_name: Kliger
+                    slug: gavin-kliger
+                    path: https://dogetrack.info/api/people/gavin-kliger.json
+                  agency:
+                    id: CFPB
+                    name: Consumer Financial Protection Bureau
+                    short_name: CFPB
+                    parent_id: null
+                    slug: cfpb
+                    path: https://dogetrack.info/api/agencies/cfpb.json
+                  name_truth: null
   /agencies.json:
     get:
       summary: agencies.json
@@ -45,7 +98,17 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/AgencyRecord"
+                  $ref: "#/components/schemas/AgencyItem"
+              example:
+                - id: ACHP
+                  name: Advisory Council on Historic Preservation
+                  short_name: ACHP
+                  parent_id: null
+                  slug: achp
+                  path: https://dogetrack.info/api/agencies/achp.json
+                  num_events: 2
+                  num_positions: 0
+                  num_doge: 0
   /agencies/{slug}.json:
     get:
       summary: agencies/{slug}.json
@@ -54,7 +117,7 @@ paths:
       parameters:
         - name: slug
           in: path
-          description: id of the agency to return
+          description: slug of the agency to return
           required: true
           schema:
             type: string
@@ -64,7 +127,66 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/AgencyItem"
+                $ref: "#/components/schemas/AgencyRecord"
+              example:
+                id: ACHP
+                name: Advisory Council on Historic Preservation
+                short_name: ACHP
+                parent_id: null
+                slug: achp
+                path: https://dogetrack.info/api/agencies/achp.json
+                events:
+                  - id: "6sYzWZML"
+                    type: official
+                    date: "2025-04-17"
+                    sort_date: "2025-04-17"
+                    text: DOGE contacts the leadership of ACHP requesting a meeting for the following week with a new DOGE team that will be assigned to the agency.
+                    fuzz: null
+                    comment: null
+                    case_no: null
+                    agencies:
+                      - id: ACHP
+                        name: Advisory Council on Historic Preservation
+                        short_name: ACHP
+                        parent_id: null
+                        slug: achp
+                        path: https://dogetrack.info/api/agencies/achp.json
+                    sources:
+                      - url: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+                        title: DOGE has tried to embed beyond the executive branch. Some targets have pushed back
+                        pub_date: "2025-05-20"
+                        publisher: National Public Radio
+                        short_publisher: NPR
+                    people: []
+                    projects: []
+                    aliases: []
+                  - id: "7BTc0SXi"
+                    type: sighting
+                    date: "2025-04-23"
+                    sort_date: "2025-04-23"
+                    text: After an initial video call, DOGE representatives arrive at the agency offices of the Advisory Council on Historic Preservation.
+                    fuzz: null
+                    comment: null
+                    case_no: null
+                    agencies:
+                      - id: ACHP
+                        name: Advisory Council on Historic Preservation
+                        short_name: ACHP
+                        parent_id: null
+                        slug: achp
+                        path: https://dogetrack.info/api/agencies/achp.json
+                    sources:
+                      - url: https://www.npr.org/2025/05/17/nx-s1-5401392/doge-federal-agency-nonprofits-cpb-usip-vera-institute
+                        title: DOGE has tried to embed beyond the executive branch. Some targets have pushed back
+                        pub_date: "2025-05-20"
+                        publisher: National Public Radio
+                        short_publisher: NPR
+                    people: []
+                    projects: []
+                    aliases: []
+                positions: []
+                details_from: []
+                systems: []
   /events.json:
     get:
       summary: events.json
@@ -79,6 +201,38 @@ paths:
                 type: array
                 items:
                   $ref: "#/components/schemas/EventRecord"
+              example:
+                - id: "1I9c0qJj"
+                  type: sighting
+                  date: "2024-11-15"
+                  sort_date: "2024-11-15"
+                  time: null
+                  text: 'Elon Musk and Russell Vought meet each other for the first time at Mar-a-Lago. They reportedly got along very well, with "both on the same wavelength in terms of taking the most extreme action possible."'
+                  notable: true
+                  fuzz: null
+                  comment: null
+                  case_no: null
+                  system_id: null
+                  people:
+                    - name: Elon Musk
+                      sort_name: Musk
+                      slug: elon-musk
+                      path: https://dogetrack.info/api/people/elon-musk.json
+                  agencies:
+                    - id: DOGE
+                      name: Department of Government Efficiency
+                      short_name: DOGE
+                      parent_id: EOP
+                      slug: doge
+                      path: https://dogetrack.info/api/agencies/doge.json
+                  sources:
+                    - url: https://www.propublica.org/article/russ-vought-trump-shadow-president-omb
+                      title: The Shadow President
+                      pub_date: "2025-10-17"
+                      publisher: Pro Publica
+                      short_publisher: ProPublica
+                  projects: []
+                  aliases: []
   /people.json:
     get:
       summary: people.json
@@ -93,6 +247,24 @@ paths:
                 type: array
                 items:
                   $ref: "#/components/schemas/PersonItem"
+              example:
+                - name: Aaron Jackson
+                  sort_name: Jackson, Aaron
+                  slug: aaron-jackson
+                  path: https://dogetrack.info/api/people/aaron-jackson.json
+                  skill: designer
+                  govt_start_date: "2025-09-01"
+                  govt_exit_date: null
+                  num_events: 0
+                  num_positions: 1
+                  agencies:
+                    - id: NDS
+                      name: National Design Studio
+                      short_name: NDS
+                      parent_id: null
+                      slug: nds
+                      path: https://dogetrack.info/api/agencies/nds.json
+                  systems_accessed: []
   /people/{slug}.json:
     get:
       summary: people/{slug}.json
@@ -112,6 +284,30 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/PersonRecord"
+              example:
+                name: Branden Spikes
+                sort_name: Spikes
+                slug: branden-spikes
+                association: possible
+                custom_path: null
+                age: null
+                skill: coder
+                own_page: false
+                blurb: A longtime associate of Elon Musk at Twitter and other companies, Branden Spikes reportedly spent a couple of months within DOGE, but there are no public details yet.
+                reporting_notes: null
+                comment: null
+                govt_exit_date: null
+                govt_exit_truth: null
+                govt_exit_type: null
+                table_note: null
+                tech_links: null
+                linkedin: https://www.linkedin.com/in/brandenspikes/
+                college_graduation_year: null
+                aliases: []
+                events: []
+                positions: []
+                systems_accessed: []
+                affiliations: []
   /systems.json:
     get:
       summary: systems.json
@@ -126,6 +322,33 @@ paths:
                 type: array
                 items:
                   $ref: "#/components/schemas/SystemRecord"
+              example:
+                - id: apex
+                  acronym: APEX
+                  name: Acquisition Performance and Execution
+                  type: internal
+                  description: 'A relatively new (~2022) system for tracking procurement at the CDC'
+                  comment: null
+                  category: obligations
+                  population: null
+                  risk: null
+                  link: null
+                  pia: null
+                  sorn: null
+                  doge_created: false
+                  doge_modifications: null
+                  projects:
+                    - id: spending
+                      title: Blocking Grants and Appropriated Funds
+                      path: https://dogetrack.info/api/projects/spending.json
+                  agency:
+                    id: CDC
+                    name: Centers for Disease Control and Prevention
+                    short_name: CDC
+                    parent_id: HHS
+                    slug: cdc
+                    path: https://dogetrack.info/api/agencies/cdc.json
+                  access: []
   /projects.json:
     get:
       summary: projects.json
@@ -140,10 +363,16 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/ProjectItem'
+              example:
+                - id: personnel
+                  title: Attacking Government Personnel
+                  path: https://dogetrack.info/api/projects/personnel.json
+                  num_events: 181
+                  num_systems: 29
   /projects/{id}.json:
     get:
       summary: projects/{id}.json
-      description: Find a person by their slug
+      description: Find a project by its ID
       operationId: getProject
       parameters:
         - name: id
@@ -159,6 +388,59 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ProjectRecord"
+              example:
+                id: dei
+                title: Targeting DEI
+                summary: 'DOGE has been involved in work to eliminate "pro-DEI activities, content and expenditures at government agencies. This has included activities like scrubbing pages from websites and cancelling grants that match certain keywords.'
+                path: /projects/dei
+                label_text: Anti-DEI
+                label_color: primary
+                events:
+                  - id: "7FBiV0yI"
+                    type: interagency
+                    date: "2025-01-24"
+                    sort_date: "2025-01-24"
+                    text: Representing OPM, James Sullivan coordinates in an email to Department of Energy officials on several DOGE-led initiatives. One messages states "as discussed over the phone, when you compile the list of 69 DEI employees placed on admin leave, please share with Amanda and myself." Energy officials also send a list of 1394 probationary employees to Amanda Scales, all of whom will be fired.
+                    fuzz: null
+                    comment: null
+                    case_no: null
+                    agencies:
+                      - id: OPM
+                        name: Office of Personnel Management
+                        short_name: OPM
+                        parent_id: null
+                        slug: opm
+                        path: https://dogetrack.info/api/agencies/opm.json
+                      - id: Energy
+                        name: Department of Energy
+                        short_name: DOE
+                        parent_id: null
+                        slug: energy
+                        path: https://dogetrack.info/api/agencies/energy.json
+                    sources:
+                      - url: https://www.eenews.net/articles/how-the-energy-department-got-doged/
+                        title: How the Energy Department got DOGE'd
+                        pub_date: "2025-11-07"
+                        publisher: E&E News
+                        short_publisher: E&E News
+                    people:
+                      - name: Amanda Scales
+                        sort_name: Scales
+                        slug: amanda-scales
+                        path: https://dogetrack.info/api/people/amanda-scales.json
+                      - name: James Sullivan
+                        sort_name: Sullivan
+                        slug: james-sullivan
+                        path: https://dogetrack.info/api/people/james-sullivan.json
+                    projects:
+                      - id: dei
+                        title: Targeting DEI
+                        path: https://dogetrack.info/api/projects/dei.json
+                      - id: personnel
+                        title: Attacking Government Personnel
+                        path: https://dogetrack.info/api/projects/personnel.json
+                    aliases: []
+                systems: []
   /entities.json:
     get:
       summary: entities.json
@@ -173,6 +455,14 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/EntityItem'
+              example:
+                - id: airbnb
+                  title: AirBnb
+                  description: null
+                  type: business
+                  website: null
+                  visible: true
+                  path: https://dogetrack.info/api/entities/airbnb.json
   /entities/{id}.json:
     get:
       summary: entities/{id}.json
@@ -192,6 +482,15 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/EntityRecord"
+              example:
+                id: anthropic
+                title: Anthropic
+                description: null
+                type: business
+                website: null
+                visible: true
+                path: https://dogetrack.info/api/entities/anthropic.json
+                affiliations: []
   /systems/{id}.json:
     get:
       summary: systems/{id}.json
@@ -211,6 +510,33 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/SystemRecord"
+              example:
+                - id: apex
+                  acronym: APEX
+                  name: Acquisition Performance and Execution
+                  type: internal
+                  description: 'A relatively new (~2022) system for tracking procurement at the CDC'
+                  comment: null
+                  category: obligations
+                  population: null
+                  risk: null
+                  link: null
+                  pia: null
+                  sorn: null
+                  doge_created: false
+                  doge_modifications: null
+                  projects:
+                    - id: spending
+                      title: Blocking Grants and Appropriated Funds
+                      path: https://dogetrack.info/api/projects/spending.json
+                  agency:
+                    id: CDC
+                    name: Centers for Disease Control and Prevention
+                    short_name: CDC
+                    parent_id: HHS
+                    slug: cdc
+                    path: https://dogetrack.info/api/agencies/cdc.json
+                  access: []
   /events/{id}.json:
     get:
       summary: events/{id}.json
@@ -230,6 +556,38 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/EventRecord"
+              example:
+                - id: "1I9c0qJj"
+                  type: sighting
+                  date: "2024-11-15"
+                  sort_date: "2024-11-15"
+                  time: null
+                  text: 'Elon Musk and Russell Vought meet each other for the first time at Mar-a-Lago. They reportedly got along very well, with "both on the same wavelength in terms of taking the most extreme action possible."'
+                  notable: true
+                  fuzz: null
+                  comment: null
+                  case_no: null
+                  system_id: null
+                  people:
+                    - name: Elon Musk
+                      sort_name: Musk
+                      slug: elon-musk
+                      path: https://dogetrack.info/api/people/elon-musk.json
+                  agencies:
+                    - id: DOGE
+                      name: Department of Government Efficiency
+                      short_name: DOGE
+                      parent_id: EOP
+                      slug: doge
+                      path: https://dogetrack.info/api/agencies/doge.json
+                  sources:
+                    - url: https://www.propublica.org/article/russ-vought-trump-shadow-president-omb
+                      title: The Shadow President
+                      pub_date: "2025-10-17"
+                      publisher: Pro Publica
+                      short_publisher: ProPublica
+                  projects: []
+                  aliases: []
 components:
   schemas:
     AccessType:
@@ -259,10 +617,23 @@ components:
         - support
         - wrecker
         - unknown
+        - adjacent
+        - builder
+        - communications
+        - immigration
+        - obligations
+        - other
+        - oversight
+        - payments
+        - personnel
+        - scientific
+        - security
+        - taxes
     TruthType:
       description: Valid values for the precision assessment on dates in positions.
       enum:
         - verified
+        - self-reported
         - reported
         - inferred
         - guessed
@@ -346,11 +717,9 @@ components:
         immediate:
           type: boolean
           description: True if the affiliation was immediately before or affter DOGE
-        sources:
-          description: The sources for this info
-          type: array
-          items:
-            $ref: "#/components/schemas/SourceRecord"
+        description:
+          type: string
+          description: A description of the affiliation
         returned:
           type: boolean
           description: True if returned back to affiliation after time in DOGE
@@ -470,6 +839,25 @@ components:
               type: array
               items:
                 $ref: "#/components/schemas/SystemRecord"
+    ApiIndex:
+      type: object
+      description: An index of the API collections with counts of each collection.
+      properties:
+        name:
+          type: string
+          description: The name of the API
+        collections:
+          type: object
+          description: The collections available in the API
+          additionalProperties:
+            type: object
+            properties:
+              path:
+                type: string
+                description: The path to the collection
+              count:
+                type: integer
+                description: The number of items in the collection
     EdtfType:
       type: string
       description: A date in ISO 8601 Extended Date Time Format representation
@@ -513,11 +901,9 @@ components:
     EntityType:
       enum:
         - business
-        - education
         - personal
         - doge
         - behavior
-        - industry
         - other
     EventRecord:
       type: object
@@ -561,6 +947,11 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/AliasRef"
+        sources:
+          description: The sources for this event
+          type: array
+          items:
+            $ref: "#/components/schemas/SourceRecord"
       required:
         - id
         - type
@@ -588,8 +979,6 @@ components:
       allOf:
         - $ref: "#/components/schemas/PersonRef"
         - properties:
-            category:
-              $ref: "#/components/schemas/CategoryType"
             skill:
               type: string
             govt_start_date:
@@ -615,10 +1004,28 @@ components:
       allOf:
         - $ref: "#/components/schemas/PersonRef"
         - properties:
+            association:
+              type: string
+            custom_path:
+              type: string
             age:
               type: integer
+            skill:
+              type: string
+            own_page:
+              type: boolean
             blurb:
               type: string
+            govt_start_date:
+              $ref: "#/components/schemas/EdtfType"
+            college_graduation_year:
+              type: integer
+            linkified_blurb:
+              type: string
+            affiliations:
+              type: array
+              items:
+                $ref: "#/components/schemas/AffiliationRecord"
             reporting_notes:
               type: string
             comment:
@@ -784,6 +1191,17 @@ components:
             label_text:
               type: string
               description: A label for the project in events, etc.
+            label_color:
+              type: string
+              description: A color for the project label in events, etc.
+            events:
+              type: array
+              items:
+                $ref: "#/components/schemas/EventRecord"
+            systems:
+              type: array
+              items:
+                $ref: "#/components/schemas/SystemRecord"
     SourceRecord:
       type: object
       description: Information about a single source
@@ -835,9 +1253,6 @@ components:
           type: string
         category:
           description: A category for the system
-          type: string
-        theme:
-          description: A theme representing why DOGE is accessing this system
           type: string
         population:
           description: A short description of what type of people are in this system
@@ -900,7 +1315,7 @@ components:
           description: "If known, the date access was requested"
           allOf:
             - $ref: "#/components/schemas/EdtfType"
-        date_requested_truth:
+        date_req_truth:
           $ref: "#/components/schemas/TruthType"
         date_granted:
           $ref: "#/components/schemas/EdtfType"
