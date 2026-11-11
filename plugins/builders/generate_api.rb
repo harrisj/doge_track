@@ -137,7 +137,7 @@ module Builders
 
       out = agencies.map do |a|
         h = agency_ref(a)
-        h[:num_events] = a.events.count
+        h[:num_events] = a.all_events.count
         h[:num_positions] = a.positions.count
         h[:num_doge] = a.positions.count { |p| doge_base_ids.include?(p.agency_id) || p.doge_alias_id }
         h
@@ -148,13 +148,15 @@ module Builders
       # Now write each agency
       agencies.each do |a|
         h = agency_ref(a)
-        h[:events] = a.events.map { |e| event_record(e) }
+        h[:events] = a.all_events.map { |e| event_record(e) }
         h[:positions] = a.positions.map { |p| position_record(p) }
         h[:details_from] = a.details_from.map { |p| position_record(p) }
-        h[:systems] = a.roles_by_system.map do |govt_system, roles|
+        h[:systems] = a.all_systems.map do |govt_system|
           s = system_record(govt_system, include_roles: false, include_agency: false)
           # Need to do this instead of all roles for a system because of SSP and SaaS services
-          s[:access] = roles.map { |x| access_record(x, include_system: false, include_agency: false) }
+          s[:access] = govt_system.system_roles.map do |x|
+            access_record(x, include_system: false, include_agency: false)
+          end
           s
         end
 
