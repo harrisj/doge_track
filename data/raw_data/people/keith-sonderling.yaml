@@ -44,11 +44,14 @@ positions:
   source: https://news.artnet.com/art-world/doge-imls-institute-museum-library-services-2623286
   agency: IMLS
 
-- id: labor-sonderling-secy
+- id: labor-sonderling-deputy-secy
   type: promotion
   category: enabler
   start_date: 2025-03-23
   start_date_truth: verified
+  end_date: 2026-04-20
+  end_type: replaced
+  replaced_by: labor-sonderling-acting-secy
   title: Deputy Secretary of Labor
   title_type: dept_head
   supervisory: true
@@ -71,3 +74,28 @@ positions:
   supervisory: true
   source: https://www.commerce.senate.gov/services/files/F6A7EAB6-BACE-4A67-A64D-688BA38A0726
   table_note: Nate Cavanaugh sent out grant rejections under the authority of Sonderling as Acting Undersecretary
+
+- id: labor-sonderling-acting-secy
+  agency: DOL
+  type: promotion
+  category: enabler
+  start_date: 2026-04-20
+  start_date_truth: reported
+  end_date: 2026-10-02
+  end_type: replaced
+  replaced_by: labor-sonderling-secy
+  title: Acting Secretary of Labor
+  title_type: director
+  supervisory: true
+  source: https://www.nytimes.com/2026/04/21/business/economy/labor-secretary-trump.html
+
+- id: labor-sonderling-secy
+  agency: DOL
+  type: promotion
+  category: enabler
+  start_date: 2026-10-02
+  start_date_truth: verified
+  title: Secretary of Labor
+  title_type: director
+  supervisory: true
+  source: https://www.dol.gov/index.php/newsroom/releases/osec/osec20261009
