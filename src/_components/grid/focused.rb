@@ -38,7 +38,7 @@ module Grid
       date = EDTF.parse(date) if date.is_a? String
       key = date.edtf
 
-      @days[key] = DateBlock.new(date: date) if @days[key].nil?
+      @days[key] = DateBlock.new(date: date, agency_id: @agency&.id) if @days[key].nil?
 
       @days[key]
     end

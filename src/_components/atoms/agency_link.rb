@@ -3,7 +3,7 @@
 module Atoms
   # A link to an agency's page
   class AgencyLink < Bridgetown::Component
-    def initialize(agency = nil, display: nil, raise_miss: true)
+    def initialize(agency = nil, display: nil, raise_miss: true, link: true)
       super()
 
       raise ArgumentError, 'AgencyLink: you must provide an agency or a name' if agency.nil? && raise_miss
@@ -18,6 +18,7 @@ module Atoms
         @agency = nil
       end
 
+      @link = link
       @display = display
     end
 
@@ -28,11 +29,15 @@ module Atoms
     def template
       return text -> { '' } if @agency.nil?
 
-      html lambda {
-        <<~HTML.chomp
-          <a class="link-hover" href="#{text -> { @agency.page_url }}">#{text -> { display_name }}</a>
-        HTML
-      }
+      if @link
+        html lambda {
+          <<~HTML.chomp
+            <a class="link-hover" href="#{text -> { @agency.page_url }}">#{text -> { display_name }}</a>
+          HTML
+        }
+      else
+        text -> { display_name }
+      end
     end
   end
 end

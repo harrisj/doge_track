@@ -10,7 +10,7 @@
        {%@ Grid::SinglePositionExit position: pos %}
      {% end %}
      {% @events.each do |event| %}
-       {%@ Grid::SingleEvent event: event %}
+       {%@ Grid::SingleEvent event: event, exclude_agency_id: @agency_id %}
      {% end %}
    </div>
 {% end %}

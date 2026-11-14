@@ -5,9 +5,10 @@ module Grid
   class DateBlock < Bridgetown::Component
     include Comparable
 
-    def initialize(date:)
+    def initialize(date:, agency_id: nil)
       super()
       @date = date
+      @agency_id = agency_id
 
       @events = []
       @start_positions = []
