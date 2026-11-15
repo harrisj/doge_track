@@ -260,4 +260,14 @@ details[open] .collapse-indicator i {
     rotate: 90deg;
 }
 
+/* Hide inline agencies label when the <details> is expanded */
+details[open] .agencies-inline {
+    display: none;
+}
+
+/* Dim icons inside expanded sections */
+details .collapse-content .fa-sharp {
+    opacity: 0.7;
+}
+
 /* Set up Tailwind imports */

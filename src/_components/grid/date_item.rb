@@ -29,10 +29,13 @@ module Grid
 
     def summary_section
       <<~HTML
-        <div class="grid grid-cols-[18px_auto] gap-x-1 p-0 min-h-0">
+        <div class="grid grid-cols-[18px_auto] gap-x-1 items-start">
           <div>#{html -> { icon }}</div>
-          <div class="font-sans" #{html -> { id_attr }}>
-              #{html -> { summary }}
+          <div class="flex items-start gap-x-1">
+            <div class="font-sans" #{html -> { id_attr }}>#{html -> { summary }}</div>
+            <div class="collapse-indicator">
+              <i class="fa-sharp fa-regular fa-chevron-right fa-50 open:rotate-90" aria-hidden="true"></i>
+            </div>
           </div>
         </div>
       HTML

@@ -54,7 +54,8 @@ module Grid
         <<~HTML
            <details class="collapse">
              <summary class="collapse-title p-0">
-               <div class="grid grid-cols-[18px_auto] gap-x-1 p-0 min-h-">
+              <div class="flex items-start justify-between gap-x-1">
+                <div class="grid grid-cols-[18px_auto] gap-x-1 p-0 flex-1">
               #{ html_map(@positions) do |pos|
                    <<~HTML
                      <div>#{render Atoms::PositionMoveLabel.new(position: pos, show_from: false, show_dest: false)}</div>
@@ -63,7 +64,10 @@ module Grid
                  end
               }
               #{html -> { exit_label }}
-          </div></summary>
+                </div>
+                #{html -> { chevron }}
+              </div>
+           </summary>
 
             #{html -> { extra_section }}
           </details>

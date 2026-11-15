@@ -51,7 +51,8 @@ module Grid
         <<~HTML
            <details class="collapse">
              <summary class="collapse-title p-0">
-               <div class="grid grid-cols-[18px_auto] gap-x-1 p-0 min-h-0">
+              <div class="flex items-start gap-x-1">
+                <div class="grid grid-cols-[18px_auto] gap-x-1 p-0 flex-1">
               #{ html_map(@positions) do |pos|
                    <<~HTML
                      <div>#{render Atoms::AgencyPositionMoveLabel.new(position: pos, agency: @agency, icon_only: true)}</div>
@@ -60,7 +61,10 @@ module Grid
                  end
               }
               #{html -> { exit_label }}
-          </div></summary>
+                </div>
+                #{html -> { chevron }}
+              </div>
+           </summary>
 
             #{html -> { extra_section }}
           </details>

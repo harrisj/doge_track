@@ -1,6 +1,6 @@
 <!---- {{ @date }}  ----->
 {% if any? %}
-   <div class="flex flex-col font-sans divide-y-4 divide-gray-20">
+   <div class="flex flex-col font-sans gap-1">
      {% @executive_orders.each do |exec_order| %}
        {%@ Grid::SingleExecOrder order: exec_order %}
      {% end %}

@@ -118,16 +118,23 @@ module Grid
       return if grants.empty?
 
       system_role = grants.first
-
       extra_item 'system_grant', <<~HTML.chomp
         #{text -> { system_role.type }} #{render Atoms::DateRange.new(start_date: system_role.date_granted, end_date: system_role.date_revoked)} #{render Atoms::PeopleList.new(grants.map(&:person), style: :comma)}#{text -> { ' (never used)' if system.role.never_accessed }}
+      HTML
+    end
+
+    def chevron
+      <<~HTML
+        <div class="collapse-indicator">
+          <i class="fa-sharp fa-regular fa-chevron-right fa-50 open:rotate-90" aria-hidden="true"></i>
+        </div>
       HTML
     end
 
     def extra_section
       <<~HTML
         <div class="collapse-content text-sm p-0">
-          <div class="ml-[25px] pt-1 flex flex-col gap-y-3">
+          <div class="pt-1 pl-[22px] flex flex-col gap-y-3">
              #{html -> { extra_contents }}
           </div>
         </div>

@@ -88,10 +88,13 @@ module Grid
         <<~HTML.chomp
           <details class="collapse">
            <summary class="collapse-title p-0">
-              <div class="flex flex-col space-y-0.5">
-                <div>#{html -> { system_title }}#{text -> { ' (created by DOGE)' if @govt_system.doge_created }}</div>
-                <div>#{render Atoms::DateRange.new(start_date: @min_date, end_date: @max_date)} <strong>#{text -> { user_count }}</strong></div>
-                #{text -> { @govt_system.description }}
+              <div class="flex items-start justify-between gap-x-1">
+                <div class="flex flex-col space-y-0.5">
+                  <div>#{html -> { system_title }}#{text -> { ' (created by DOGE)' if @govt_system.doge_created }}</div>
+                  <div>#{render Atoms::DateRange.new(start_date: @min_date, end_date: @max_date)} <strong>#{text -> { user_count }}</strong></div>
+                  #{text -> { @govt_system.description }}
+                </div>
+                #{html -> { chevron }}
               </div>
            </summary>
            #{html -> { extra_section }}

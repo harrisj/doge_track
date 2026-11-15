@@ -25,7 +25,7 @@ module Grid
 
       html lambda {
         <<~HTML.chomp
-          <small>&nbsp;#{render Atoms::Icon.new('agency')}&nbsp;#{render Atoms::AgenciesList.new(@event.agencies, style: :comma, link: false)}</small>
+          <small class="agencies-inline">&nbsp;#{render Atoms::Icon.new('agency')}&nbsp;#{render Atoms::AgenciesList.new(@event.agencies, style: :comma, link: false)}</small>
         HTML
       }
     end
