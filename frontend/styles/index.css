@@ -255,4 +255,9 @@ html.swup-ready html.is-animating .transition-fade {
     height: 1.25rem;
 }
 
+/* Rotate the collapse caret down when the parent <details> is open */
+details[open] .collapse-indicator i {
+    rotate: 90deg;
+}
+
 /* Set up Tailwind imports */

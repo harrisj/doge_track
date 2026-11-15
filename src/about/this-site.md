@@ -13,7 +13,7 @@ As someone who has spent the past decade of my live in Civic Tech, this has been
 
 ## What You'll Find Here
 
-This is the public-facing version of a <a href="https://github.com/harrisj/doge_track">deeper data-collection project that I have been working on since early February</a>. I have been evolving my data collection over time to track the following information about DOGE's activities:
+This is the public-facing version of a [deeper data-collection project that I have been working on since early February 2025](https://github.com/harrisj/doge_track). I have been evolving my data collection over time to track the following information about DOGE's activities:
 
 - The names and placements of DOGE staff across the federal government
 - Significant events at each agency

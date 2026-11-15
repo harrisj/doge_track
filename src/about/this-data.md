@@ -63,24 +63,9 @@ Once I have the database loaded, I can use it for queries. To make things easier
 ## Site Generation
 This site is a mix of written content and tables built directly from the data. Between updates, there is no reason to change any of the pages, so there is no need to keep a server with a database running all the time. Instead, this is what they call a statically generated site. Whenever I make an alteration to the table, the code regenerates all the pages and then replaces them on a content delivery network.
 
-There are multiple different tools in many languages for creating statically generated sites. I am using a different tool for [my personal site](https://jacobharr.is/), for instance. That site uses a tool called [Jekyll](https://jekyllrb.com/) and this site uses a new successor to it called [Bridgetown](https://bridgetownrb.com/). Both allow me to define templates that can pull in data. For instance, this is how I am displaying a row in the positions table:
+There are multiple different tools in many languages for creating statically generated sites. I am using a different tool for [my personal site](https://jacobharr.is/), for instance. That site uses a tool called [Jekyll](https://jekyllrb.com/) and this site uses a new successor to it called [Bridgetown](https://bridgetownrb.com/). Both allow me to define templates that can pull in data. 
 
-{% raw %}
-```ruby
-{% dated_positions.sort_by(&:sort_date).each do |pos| %}
-  <tr class="font-sans" id="{{ pos.id }}">
-    <td class="align-top">{%@ 'atoms/position_move_label', position: pos %}
-    <div class="sm:hidden my-date">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% end %}</div>
-    </td>
-    <td class="align-top hidden sm:table-cell my-date">{% if pos.start_date || pos.end_date %}{{ render EdtfFormat.new(pos.start_date, :compact, :none) }}{%if pos.end_date %}-{{ render EdtfFormat.new(pos.end_date, :compact) }}{% end %}{% end %}</td>
-    <td class="align-top">{% if pos.person %}{{ person_link(pos.person) }}{% elsif pos.doge_alias_id %}{{ alias_link(pos.doge_alias_id) }}{% end %}</td>
-    <td class="align-top">{%@ 'molecules/position_summary', position: pos %}</td>
-  </tr>
-{% end %}
-```
-{% endraw %}
-
-There is a lot in here, and you don't need to understand it all or any of it. The only important thing to know is that I can define templates that check data and can spit out HTML based on what's in the data. One of the my favorite aspects of Jekyll and Bridgetown is that you can place arbitrary YAML files in a `_data` file and use that in your templates within the `site.data.*` namespace. For instance, [my resume is a large YAML file](https://github.com/harrisj/harrisj.github.io/blob/master/_data/cv.yml). This approach is what I needed for my new site.
+There is a lot of technical complexity in here, and you don't need to understand it all or any of it. The only important thing to know is that I can define templates that check data and can spit out HTML based on what's in the data. One of the my favorite aspects of Jekyll and Bridgetown is that you can place arbitrary YAML files in a `_data` file and use that in your templates within the `site.data.*` namespace. For instance, [my resume is a large YAML file](https://github.com/harrisj/harrisj.github.io/blob/master/_data/cv.yml). This approach is what I needed for my new site.
 
 But I have all my data in a database, not YAML files! What do I do?
 
