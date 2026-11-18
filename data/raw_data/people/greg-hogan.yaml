@@ -87,7 +87,8 @@ positions:
   start_date_truth: verified
   end_date: 2025-09-02
   end_date_truth: reported
-  end_type: resigned
+  end_type: replaced
+  replaced_by: opm-hogan-after-cio
   project:
   - personnel
   - impunity
@@ -108,6 +109,20 @@ positions:
   - https://www.documentcloud.org/documents/26028780-opm-new-hires/
   - https://www.documentcloud.org/documents/26028795-onboard-opm-greg-hogan/
   - https://storage.courtlistener.com/recap/gov.uscourts.nysd.636793/gov.uscourts.nysd.636793.177.0.pdf
+
+- id: opm-hogan-after-cio
+  agency: OPM
+  type: demotion
+  title: Expert
+  title_type: advisor
+  start_date: 2025-09-02
+  start_date_truth: inferred
+  category: wrecker
+  end_date: 2025-11-29
+  end_date_truth: verified
+  end_type: resigned
+  source:
+  - https://www.documentcloud.org/documents/28922708-opm-sf-50s-for-doge-staff-at-agency/
 
 - id: nds-hogan
   agency: NDS
