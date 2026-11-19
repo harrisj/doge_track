@@ -17,31 +17,63 @@ def internal_link(url, display)
   "<a class=\"link-hover\" href=\"#{url}\">#{display}</a>"
 end
 
+def linkers_eo
+  ExecutiveOrder.all.map do |eo|
+    [
+      Regexp.new("\\bEO #{Regexp.escape(eo.id.to_s)}\\b"),
+      internal_link("/projects/exec-orders/#eo-#{eo.id}", "EO #{eo.id}")
+    ]
+  end
+end
+
+def linkers_people
+  Person.all.sort_by { |p| -p.name.length }.map do |p|
+    [
+      Regexp.new("\\b#{Regexp.escape(p.name)}\\b"),
+      internal_link(p.page_url, p.name)
+    ]
+  end
+end
+
+def linkers_agencies
+  Agency.where(linkify: true).all.sort_by { |a| -a.name.length }.flat_map do |a|
+    [
+      [Regexp.new("\\b#{Regexp.escape(a.id)}(?=[\\s.,!])"), internal_link(a.page_url, a.id)],
+      [Regexp.new("\\b#{Regexp.escape(a.name)}\\b"), internal_link(a.page_url, a.name)]
+    ]
+  end
+end
+
+def linkers_aliases
+  people = Person.all.to_h { |p| [p.name, p] }
+  DogeAlias.where(name: people.keys).map do |a|
+    person = people[a.name]
+    next unless person
+
+    replacement = "#{a.id} (#{internal_link(person.page_url, person.name)})"
+    [
+      Regexp.new("\\b#{Regexp.escape(a.id)}\\b"),
+      replacement
+    ]
+  end.compact
+end
+
+# Build matchers ONCE, longest token first so longer names win over substrings.
+# Tokens are Regexp.escape'd so names with regex metacharacters (`.`, `+`, etc.)
+# match literally instead of breaking the pattern.
+LINKERS = {
+  eo: linkers_eo,
+  people: linkers_people,
+  agencies: linkers_agencies,
+  aliases: linkers_aliases
+}.freeze
+
 def linkify_text(text, strip_p: true)
   return nil if text.nil?
 
   out = text.dup
-
-  ExecutiveOrder.each do |eo|
-    out.gsub!(/\bEO #{eo.id}\b/, internal_link("/projects/exec-orders/#eo-#{eo.id}", "EO #{eo.id}"))
-  end
-
-  Person.each do |person|
-    out.gsub!(/\b#{person.name}\b/, internal_link(person.page_url, person.name))
-  end
-
-  DogeAlias.each do |doge_alias|
-    if doge_alias.person
-      out.gsub!(/\b#{doge_alias.id}\b/,
-                "#{doge_alias.id} (#{internal_link(doge_alias.person.page_url, doge_alias.person.name)})")
-    end
-  end
-
-  Agency.each do |agency|
-    next unless agency.linkify
-
-    out.gsub!(/\b#{agency.id}(?=[\s.,!])/, internal_link(agency.page_url, agency.id)) if agency.id =~ /^[A-Z]+$/
-    out.gsub!(/\b#{agency.name}\b/, internal_link(agency.page_url, agency.name))
+  %i[eo people agencies aliases].each do |cat|
+    LINKERS[cat].each { |re, rep| out.gsub!(re, rep) }
   end
 
   out = Kramdown::Document.new(out).to_html
@@ -50,27 +82,10 @@ def linkify_text(text, strip_p: true)
   out
 end
 
-ExecutiveOrder.each do |eo|
-  eo.linkified_summary = linkify_text(eo.summary)
-  eo.save_changes
-end
-
-Event.each do |e|
-  e.linkified_text = linkify_text(e.text)
-  e.save_changes
-end
-
-Agency.each do |a|
-  a.linkified_blurb = linkify_text(a.blurb, strip_p: false)
-  a.save_changes
-end
-
-Person.each do |p|
-  p.linkified_blurb = linkify_text(p.blurb, strip_p: false)
-  p.save_changes
-end
-
-DogeAlias.each do |a|
-  a.linkified_evidence = linkify_text(a.evidence)
-  a.save_changes
+DB.transaction do
+  ExecutiveOrder.all.each { |eo| eo.update(linkified_summary: linkify_text(eo.summary)) }
+  Event.all.each { |e| e.update(linkified_text: linkify_text(e.text)) }
+  Agency.all.each { |a| a.update(linkified_blurb: linkify_text(a.blurb, strip_p: false)) }
+  Person.all.each { |p| p.update(linkified_blurb: linkify_text(p.blurb, strip_p: false)) }
+  DogeAlias.all.each { |a| a.update(linkified_evidence: linkify_text(a.evidence)) }
 end
