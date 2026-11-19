@@ -78,6 +78,8 @@ module Grid
       positions.each do |pos|
         next if pos.end_type == 'replaced' || pos.type == 'internal'
 
+        raise "Bad end_date in position #{pos.id}" if pos.end_date.nil?
+
         get_date(pos.end_date).add_end_position(pos)
       end
     end
