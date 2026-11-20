@@ -37,8 +37,10 @@ module Grid
     def govt_exit_clause
       return unless @position.person && @position.person.govt_exit_date == @position.end_date
 
+      suffix = ->(count) { " month#{'s' unless count == 1}" }
+
       <<~HTML.rstrip
-        <span class="font-semibold"> (exits govt. service)</span>
+        <span class="font-semibold"> (exits govt. service#{text -> { ", #{text -> { @position.person.months_in_govt }}#{text -> { suffix.call(@position.person.months_in_govt) }}" }})</span>
       HTML
     end
 

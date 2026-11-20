@@ -17,11 +17,13 @@ module Grid
 
       return if last_position.nil?
 
+      suffix = ->(count) { " month#{'s' unless count == 1}" }
+
       if @person.is_a?(Person) && @person&.govt_exit_date && !last_position.detail? \
          && (last_position.end_date.nil? || last_position.end_date >= @person&.govt_exit_date)
         <<~HTML
           <div>#{render Atoms::Icon.new('offboard')}</div>
-          <div>Left govt <span class="my-date">#{render Atoms::DateLabel.new(@person.govt_exit_date, interval_display: :end)}</span> (#{text -> { @person.govt_exit_truth }})</div>
+          <div>Left govt <span class="my-date">#{render Atoms::DateLabel.new(@person.govt_exit_date, interval_display: :end)}</span> (#{text -> { @person.govt_exit_truth }}, #{text -> { @person.months_in_govt }}#{text -> { suffix.call(@person.months_in_govt) }})</div>
         HTML
       elsif last_position.end_date && last_position.end_date.to_s =~ /^\d{4}-\d{2}-\d{2}$/
         <<~HTML

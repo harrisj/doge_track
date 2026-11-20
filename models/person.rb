@@ -65,4 +65,30 @@ class Person < Sequel::Model
     field_value = values[field]
     DtUtils.parse_interval(field_value)&.last
   end
+
+  # Total number of distinct calendar months across all positions.
+  # Uses the union of position month-keys so gaps (e.g. a person who left
+  # and returned) are not counted toward service time.
+  # Returns nil when there is no position start date to anchor on.
+  def months_in_govt
+    return unless positions.any? && start_date
+
+    key_format = '%Y-%m'
+    month_keys = Set.new
+
+    positions.each do |pos|
+      next unless pos.start_date
+
+      start_date = pos.start_date
+      start_date = pos.min_interval_to_date(:start_date) if start_date.is_a?(EDTF::Interval)
+      month_keys.add(start_date.strftime(key_format))
+      end_date = pos.end_date
+      end_date = pos.max_date_interval_to_date(:end_date) if end_date.is_a?(EDTF::Interval)
+      next unless end_date
+
+      month_keys.merge((start_date..end_date).map { |x| x.strftime(key_format) }.uniq)
+    end
+
+    month_keys.size
+  end
 end
