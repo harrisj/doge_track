@@ -32,6 +32,7 @@ DB.create_table! :positions do
   string :id, primary_key: true
   string :type, null: false
   string :category, null: false
+  string :work_schedule, null: false, default: 'full_time'
   string :agency_id
   string :name
   string :doge_alias_id

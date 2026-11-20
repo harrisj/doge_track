@@ -12,6 +12,10 @@ class Position < Sequel::Model
 
   edtf_field :start_date, :end_date, :nte_date
 
+  before_validation do
+    self[:work_schedule] ||= 'full_time'
+  end
+
   many_to_one :doge_alias
   many_to_one :person, key: :name, primary_key: :name
   many_to_one :agency, graph_join_type: :inner

@@ -38,6 +38,15 @@
             "type": "string",
             "$ref": "category.json"
         },
+        "work_schedule": {
+            "description": "The schedule for the position",
+            "type": "string",
+            "enum": [
+                "full_time",
+                "part_time",
+                "intermittent"
+            ]
+        },
         "from": {
             "description": "For details, where he is detailed from",
             "$ref": "agency-id.json"
