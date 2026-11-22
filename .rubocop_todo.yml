@@ -25,6 +25,7 @@ AllCops:
   - 'config/initializers.rb'
   - 'config.ru'
 
+
 # Offense count: 1
 # Configuration parameters: AllowComments, AllowNil.
 Lint/SuppressedException:
@@ -74,6 +75,7 @@ Layout/LineLength:
   Exclude:
   - 'src/_data/site_metadata.rb'
   - 'data/scripts/generate_changed.rb'
+  - 'test/components/test_date_range.rb'
 
 Naming/PredicateMethod:
   Exclude:

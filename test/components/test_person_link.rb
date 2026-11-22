@@ -1,41 +1,43 @@
 # frozen_string_literal: true
 
 require_relative '../minitest_helper'
+require_relative '../../src/_components/atoms/person_link'
 
 class TestPersonLink < Bridgetown::Test
-  # def test_person_link_person
-  #   person = ::Person.with_pk!('Luke Farritor')
-  #   rendered = Bridgetown::TemplateView.render(::Atoms::PersonLink.new(person: person))
+  before do
+    @site = Bridgetown::Site.new(Bridgetown::Current.preloaded_configuration)
+    Bridgetown::Current.site = @site
+  end
 
-  #   assert_equal '<a class="link-hover" href="/names/luke-farritor">Luke Farritor</a>', rendered.call
-  # end
+  it 'links to a person by record' do
+    person = ::Person.first
+    rendered = render_component(::Atoms::PersonLink.new(person))
 
-  # def test_person_link_display; end
+    expect(rendered).must_equal %(<a class="link-hover" href="#{person.page_url}">#{person.name}</a>)
+  end
 
-  # def test_person_link_name
-  #   person = ::Person.with_pk!('Luke Farritor')
-  #   rendered = Bridgetown::TemplateView.render(::Atoms::PersonLink.new(name: person.name))
+  it 'looks up a person by name' do
+    person = ::Person.first
+    rendered = render_component(::Atoms::PersonLink.new(person.name))
 
-  #   assert_equal '<a class="link-hover" href="/names/luke-farritor">Luke Farritor</a>', rendered.call
-  # end
+    expect(rendered).must_equal %(<a class="link-hover" href="#{person.page_url}">#{person.name}</a>)
+  end
 
-  # def test_person_link_name_no_raise
-  #   name = "Bob Fakename"
-  #   rendered = Bridgetown::TemplateView.render(::Atoms::PersonLink.new(name: name))
+  it 'uses a custom display name' do
+    person = ::Person.first
+    rendered = render_component(::Atoms::PersonLink.new(person, display: 'Custom'))
 
-  #   assert_equal name, rendered.call
-  # end
+    expect(rendered).must_equal %(<a class="link-hover" href="#{person.page_url}">Custom</a>)
+  end
 
-  # def test_person_link_no_name_or_person
-  #   assert_raises do
-  #     ::Atoms::PersonLink.new()
-  #   end
-  # end
+  it 'returns the raw name as text when no person is found' do
+    rendered = render_component(::Atoms::PersonLink.new('Nobody Here', raise_miss: false))
 
-  # def test_person_link_no_args_no_raise
-  #   template = ::Atoms::PersonLink.new(raise_miss: false)
-  #   rendered = Bridgetown::TemplateView.render(::Atoms::PersonLink.new(person: person))
+    expect(rendered).must_equal 'Nobody Here'
+  end
 
-  #   assert_equal '', rendered
-  # end
+  it 'raises for a missing name when raise_miss is true' do
+    expect { ::Atoms::PersonLink.new('Nobody Here', raise_miss: true) }
+      .must_raise(Sequel::NoMatchingRow)
+  end
 end
