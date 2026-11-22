@@ -24,6 +24,7 @@ end
 
 require 'minitest/test_task'
 Minitest::TestTask.create(:test) do |t| # add on to the test task
+  ENV['BRIDGEOWN_ENV'] = 'test'
   t.warning = false
 end
 
