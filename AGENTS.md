@@ -20,7 +20,7 @@
 | `bundle exec bt data:validate` | Validate all raw YAML files | Runs all YAML validators in order |
 | `bundle exec bt data:validate:people_yaml` | Validate people + aliases YAML | Depends on `validate_aliases_yaml` |
 | `bundle exec bt data:validate:systems_yaml` | Validate systems YAML | Depends on `validate_aliases_yaml` |
-| `bundle exec bt generate:api_data` | Build `src/api/` JSON files from DB | Generates `agencies.json` + per-agency JSON |
+| `bundle exec bt generate:api_data` | Build API JSON via the `GenerateAPI` plugin builder (post_write hook) | Writes to `output/api/` (agencies, aliases, entities, events, people, projects, systems + `index.json`); **not** `src/api/` |
 | `bundle exec bt generate:csv` | Generate CSV files in `src/csv/` | Agencies, people, positions, events |
 | `bundle exec bt generate:changed` | Build weekly changes summary in `src/_data/changes.yml` | Looks at git history, last 12 weeks |
 | `bundle exec bt generate` | Run all generate tasks | Currently just CSV |
@@ -28,7 +28,7 @@
 | `bundle exec bt frontend:dev` | Watch frontend assets during development | Runs `yarn run esbuild-dev` |
 | `bundle exec bt test` | Run full test suite | Sets `BRIDGETOWN_ENV=test` |
 | `bundle exec bt data/scripts/populate_db.rb` | Direct script: load YAML → DB | Same as `data:populate_db` |
-| `bundle exec bt data/scripts/generate_api_json.rb` | Direct script: DB → API JSON | Same as `generate:api_data` |
+| ~~`bundle exec bt data/scripts/generate_api_json.rb`~~ | ⚠️ does not exist — API is built by `plugins/builders/generate_api.rb` (post_write hook), not a data script | Do not run |
 | `bundle exec bt data/scripts/generate_csv_files.rb` | Direct script: DB → CSV files | Same as `generate:csv` |
 | `bundle exec bt data/scripts/linkify_db.rb` | Direct script: add internal links to DB text fields | Called by `populate_db` |
 | `bundle exec bt data/scripts/validate_people_yaml.rb` | Normalize + sort person YAML files | Ensures slugs, sorts positions, assigns IDs |
@@ -43,11 +43,11 @@
 ```
 raw YAML in data/raw_data/
         ↓ (data:validate + data:populate_db)
-data/doge.db (SQLite, 12 tables, Sequel ORM)
+data/doge.db (SQLite, 28 tables, Sequel ORM)
         ↓ (linkify_db.rb)
 DB fields linkified (blurb, text, evidence, summary)
         ↓ (generate:api_data, generate:csv, site pages)
-src/api/*.json, src/csv/*.csv, output/
+output/api/*.json, src/csv/*.csv, output/
         ↓
 Bridgetown static site pages
 ```
@@ -65,6 +65,14 @@ Bridgetown static site pages
 - `data/raw_data/entities.yaml` — general entities
 - `data/raw_data/exec_orders.yaml` — executive orders
 - `data/raw_data/questions.yaml` — Q&A records
+- `data/raw_data/roundups.yaml` — media roundup listings (NYT, ProPublica, etc.)
+- `data/raw_data/doge_teams.yaml` — DOGE team rosters by agency
+- `data/raw_data/themes.yaml` — editorial themes (e.g. `personnel`, `spending`)
+- `data/raw_data/tracks.yaml` — work streams (e.g. `personnel`, `fraud`)
+- `data/raw_data/documents.yaml` — document references (validated only, not loaded)
+- `data/raw_data/change_log.yaml` — weekly changelog, read by `generate_changed.rb`
+
+DB-loaded YAML (processed by `populate_db.rb`): agencies, people, aliases, cases, questions, exec orders, systems, publishers, sources, projects, entities, interagency. The rest (`roundups`, `doge_teams`, `themes`, `tracks`, `documents`, `change_log`) are consumed by static-site builders or docs only — they do **not** enter the database.
 
 All YAML files are processed through a series of `data/scripts/validate_*.rb` scripts before database population.
 
@@ -139,35 +147,65 @@ The `populate_db.rb` script coordinates loading all YAML data and building relat
 
 3. **Dates might not match** - this is an inherently messy dataset. There may be cases where we know specific dates for a person's departure from an agency or the government but not know when they ended a detail to another agency. Those dates will be kept null, even though we know an upper bound for the detail to end.
 
-4. **Truth settings** - for dates and a few other fields, it is important to look at the associated `_truth` field (eg. `end_date_truth`). In order of declining confidence, its values can be `verified`, `self-reported`, `reported`, `inferred` and `guessed`.
+4. **Truth settings** — for dates and a few other fields, it is important to look at the associated `_truth` field (eg. `end_date_truth`). In order of declining confidence, its values can be `verified`, `self-reported`, `reported`, `inferred` and `guessed`.
 
-4. **Interagency events** — Events with multiple agencies are stored in `interagency.yaml` and reassigned during population. The script separates them and only assigns to the interagency file if they truly span >1 agency.
+5. **Interagency events** — Events with multiple agencies are stored in `interagency.yaml` and reassigned during population. The script separates them and only assigns to the interagency file if they truly span >1 agency.
 
-5. **Person positions & aliases** — A person's YAML file may omit positions that are instead defined in an alias YAML. The `validate_people_yaml.rb` script merges alias positions back into the person record.
+6. **Person positions & aliases** — A person's YAML file may omit positions that are instead defined in an alias YAML. The `validate_people_yaml.rb` script merges alias positions back into the person record.
 
-6. **DOGE base agencies** — The `doge_base` boolean on agencies flags which agencies are DOGE-controlled. Used for filtering in site generation.
+7. **DOGE base agencies** — The `doge_base` boolean on agencies flags which agencies are DOGE-controlled. Used for filtering in site generation.
 
-7. **Linkified fields** — After `linkify_db.rb` runs, fields like `linkified_blurb`, `linkified_text`, `linkified_evidence`, `linkified_summary` contain HTML with internal anchor links. These are consumed by Bridgetown's site rendering.
+8. **Linkified fields** — After `linkify_db.rb` runs, fields like `linkified_blurb`, `linkified_text`, `linkified_evidence`, `linkified_summary` contain HTML with internal anchor links. These are consumed by Bridgetown's site rendering.
 
-8. **Rake task ordering matters** — `data:rebuild_db` runs `data:validate` first, then `data:clean_db`, then `data:create_db`, then `data:populate_db` (which calls `linkify_db.rb`). Do not skip validation if adding/editing YAML.
+9. **Rake task ordering matters** — `data:rebuild_db` runs `data:validate` first, then `data:clean_db`, then `data:create_db`, then `data:populate_db` (which calls `linkify_db.rb`). Do not skip validation if adding/editing YAML.
 
-9. **`generate:changed` uses git history** — The script checks `git diff` for the last 12 weeks to determine what changed. It will not work correctly if git is not available or if the repo is shallow.
+10. **`generate:changed` uses git history** — The script checks `git diff` for the last 12 weeks to determine what changed. It will not work correctly if git is not available or if the repo is shallow.
 
-10. **API JSON generation** — `generate:api_data` outputs a flat `agencies.json` and one `agencies/<slug>.json` per agency. Each agency file includes its events with embedded agency/person/alias data.
+11. **API JSON generation** — `generate:api_data` outputs API JSON via a plugin builder (post_write hook) to `output/api/`. Each agency file includes its events with embedded agency/person/alias data.
 
-11. **CSV generation** — `generate:csv` outputs 4 files: `agencies.csv`, `people.csv`, `positions.csv`, `events.csv`. Used by site data tables and for bulk analysis.
+12. **CSV generation** — `generate:csv` outputs 4 files: `agencies.csv`, `people.csv`, `positions.csv`, `events.csv`. Used by site data tables and for bulk analysis.
 
-12. **`src/_data/changes.yml`** — Generated by `generate:changed`, consumed by site to show recent updates.
+13. **`src/_data/changes.yml`** — Generated by `generate:changed`, consumed by site to show recent updates.
 
-13. **Puma configuration** — `config/puma.rb` sets workers/threads based on `BRIDGETOWN_CONCURRENCY` and `BRIDGETOWN_MAX_THREADS`. Preload app is enabled.
+14. **Puma configuration** — `config/puma.rb` sets workers/threads based on `BRIDGETOWN_CONCURRENCY` and `BRIDGETOWN_MAX_THREADS`. Preload app is enabled.
 
-14. **Bridgetown plugins** — Enabled: `bridgetown-sitemap`, `bridgetown-seo-tag`, `bridgetown-routes` (commented out), `nokolexbor`, `sanitize`, `edtf`, `sequel`, `shortuuid`, `edtf-humanize`, `kramdown`, `sanitize`.
+15. **Bridgetown plugins** — Enabled: `bridgetown-sitemap`, `bridgetown-seo-tag`, `streamlined`, and `bridgetown_sequel` (DB access). See `config/initializers.rb`.
 
-15. **Frontend bundling** — Uses esbuild with custom plugins for glob imports, PostCSS, Sass. Config in `esbuild.config.js` and `esbuild.defaults.js`.
+16. **Frontend bundling** — Uses esbuild with custom plugins for glob imports, PostCSS, Sass. Config in `esbuild.config.js` and `esbuild.defaults.js`.
 
-16. **Validation scripts are idempotent** — Running `validate_people_yaml.rb` multiple times is safe; it sorts positions and writes back consistently.
+17. **Validation scripts are idempotent** — Running `validate_people_yaml.rb` multiple times is safe; it sorts positions and writes back consistently.
+
+18. **`data:populate_db` chains linkify** — The task runs `populate_db.rb` then `linkify_db.rb` automatically. `linkify_db.rb` adds `linkified_*` HTML fields (internal anchor links) to blurb/text/evidence/summary.
+
+19. **`regenerate` is the full rebuild** — `regenerate` = `data:rebuild_db` + `generate`. Use it for a complete clean rebuild of pages, API, and CSV. The documented `data:rebuild_db` alone only rebuilds the DB (no site/API/CSV).
+
+20. **`generate:changed` vs `changed`** — `generate:changed` runs the script; the `changed` task is an alias. Both write `src/_data/changes.yml` from the last 12 weeks of git history.
 
 ---
+
+## Build Builders / Plugins
+
+Static-site generation is driven by `plugins/builders/*`, all subclassing `SiteBuilder` (see `plugins/site_builder.rb`). They register hooks (e.g. `post_write`) or add static resources:
+
+- `generate_api.rb` — API JSON to `output/api/` (post_write hook)
+- `generate_search_index.rb` — `output/search-index.json` powering site search
+- `generate_month_pages.rb` — static `/months/YYYY-MM/` pages
+- `generate_name_pages.rb` — per-person pages
+- `generate_reports.rb` — ⚠️ **broken**: references `data/scripts/generate_reports.rb`, which does not exist; the `generate:reports` task will fail
+- `tailwind_jit.rb` — writes a JIT refresh file to trigger Tailwind on frontend changes
+- `accessible_code_blocks.rb`, `dump_db_file.rb` — build-time helpers
+
+`config/initializers.rb` enables plugins: `bridgetown-sitemap`, `bridgetown-seo-tag`, `streamlined`, and `bridgetown_sequel` (DB access).
+
+## Testing
+
+Tests use Minitest (`minitest-reporters`). Run with `bundle exec rake test` (sets `BRIDGEOWN_ENV=test`).
+
+- `test/minitest_helper.rb` — `render_component` helper + `Bridgetown::Test` base; a `before` block sets `Bridgetown::Current.site`
+- `test/support/data_scripts.rb` — sandbox harness: copies a script to a temp dir and points it at a throwaway DB, so data-script tests never touch `data/doge.db`
+- Component tests live in `test/components/`; data-script tests in `test/`
+
+**Key constraint: the DB is read-only in tests.** `populate_db`/`create_db` are not run in the suite, so there is no `Position.create`/`Position.delete`/`Agency.create`. Test against existing real data instead of creating rows. The `edtf` gem logs informational `parentheses are legacy syntax` warnings during test runs — not failures.
 
 ## Recommended Daily Workflow
 
@@ -222,17 +260,18 @@ data/
 │   ├── documents.yaml
 │   └── schemas/           # JSON schemas for each type
 └── scripts/                # Ruby scripts for data processing
+    ├── models.rb             # Sequel bootstrapping (DB_PATH + require_all) used by all scripts
     ├── populate_db.rb
-    ├── generate_api_json.rb
+    ├── generate_api_json.rb  # ⚠️ referenced by AGENTS.md but does NOT exist; API is built by plugins/builders/generate_api.rb
     ├── generate_csv_files.rb
     ├── generate_changed.rb
     ├── generate_sources_pubs.rb
     ├── linkify_db.rb
     ├── validate_*.rb
     └── create_db.rb
-models/                     # Sequel models (12 files)
+models/                     # Sequel models (28 tables in DB)
 src/
-├── api/                   # Generated JSON API (from generate:api_data)
+├── api/                   # Placeholder (only index.html); real API JSON goes to output/api/
 ├── csv/                   # Generated CSV files (from generate:csv)
 ├── _data/                # YAML data for site (e.g., changes.yml)
 └── ...                    # Liquid templates, components, etc.
