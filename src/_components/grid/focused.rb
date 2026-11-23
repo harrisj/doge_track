@@ -87,6 +87,11 @@ module Grid
 
     def initialize_positions(positions)
       positions.each do |pos|
+        # Skip internal transfers: they're excluded from the positions grid
+        # (person_positions_agency.rb), so adding them here only produces an
+        # empty date block. Keep the two grids consistent.
+        next if pos.type == 'internal'
+
         get_date(pos.start_date).add_start_position(pos) if pos.start_date
         get_date(pos.end_date).add_end_position(pos) if pos.end_date && pos.end_type != 'replaced'
       end

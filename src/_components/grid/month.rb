@@ -71,6 +71,10 @@ module Grid
     def initialize_positions
       positions = Position.start_in_year_month(@year, @month)
       positions.each do |pos|
+        # Skip internal transfers on start_date: they're excluded from the
+        # positions grid, so adding them here only produces an empty date block.
+        next if pos.type == 'internal'
+
         get_date(pos.start_date).add_start_position(pos)
       end
 
